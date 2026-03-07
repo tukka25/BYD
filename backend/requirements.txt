@@ -1,0 +1,17 @@
+fastapi
+uvicorn
+pydantic-settings
+python-multipart
+langchain
+langchain-community
+langchain-core
+langgraph
+pandas
+matplotlib
+seaborn
+plotly
+# For running local models (optional, depending on setup)
+# transformers
+# torch
+# accelerate
+# bitsandbytes
