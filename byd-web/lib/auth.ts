@@ -5,6 +5,7 @@ export interface AuthUser {
 }
 
 const SESSION_KEY = "promptdash_session_user";
+const TOKEN_KEY = "promptdash_access_token";
 
 function normalizeEmail(email: string): string {
   return email.trim().toLowerCase();
@@ -28,20 +29,21 @@ export function loadCurrentUser(): AuthUser | null {
   }
 }
 
-export function loginUser(name: string, email: string): AuthUser {
-  const nextUser: AuthUser = {
-    id: buildUserId(email),
-    name: name.trim() || "User",
-    email: normalizeEmail(email),
-  };
+export function saveSession(user: AuthUser, accessToken: string): AuthUser {
   if (typeof window !== "undefined") {
-    window.localStorage.setItem(SESSION_KEY, JSON.stringify(nextUser));
+    window.localStorage.setItem(SESSION_KEY, JSON.stringify(user));
+    window.localStorage.setItem(TOKEN_KEY, accessToken);
   }
-  return nextUser;
+  return user;
+}
+
+export function getAccessToken(): string | null {
+  if (typeof window === "undefined") return null;
+  return window.localStorage.getItem(TOKEN_KEY);
 }
 
 export function logoutUser(): void {
   if (typeof window === "undefined") return;
   window.localStorage.removeItem(SESSION_KEY);
+  window.localStorage.removeItem(TOKEN_KEY);
 }
-

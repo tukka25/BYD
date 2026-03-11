@@ -3,39 +3,38 @@
 import Link from "next/link";
 import { ChangeEvent, useEffect, useMemo, useState } from "react";
 import { useRouter } from "next/navigation";
-import { AuthUser, loadCurrentUser, logoutUser } from "@/lib/auth";
+import { AuthUser, getAccessToken, loadCurrentUser, logoutUser } from "@/lib/auth";
+import { authorizedFetch, BackendDataSource, mapBackendDataSource } from "@/lib/backend";
 import {
-  bytesToSize,
-  createId,
   DataSource,
-  loadDataSources,
-  saveDataSources,
 } from "@/lib/data-sources";
 
 interface DbFormState {
   name: string;
+  dbType: string;
   host: string;
   port: string;
   database: string;
-}
-
-function getExtension(filename: string): string {
-  const parts = filename.split(".");
-  if (parts.length < 2) return "";
-  return parts[parts.length - 1].toLowerCase();
+  username: string;
+  password: string;
 }
 
 export default function DataSourcesPage() {
   const router = useRouter();
   const [user, setUser] = useState<AuthUser | null>(null);
+  const [token, setToken] = useState<string | null>(null);
   const [sources, setSources] = useState<DataSource[]>([]);
   const [isHydrated, setIsHydrated] = useState(false);
   const [isAddingDb, setIsAddingDb] = useState(false);
+  const [error, setError] = useState<string | null>(null);
   const [dbForm, setDbForm] = useState<DbFormState>({
     name: "",
+    dbType: "postgresql",
     host: "localhost",
     port: "5432",
     database: "",
+    username: "",
+    password: "",
   });
 
   const fileSources = useMemo(
@@ -49,57 +48,96 @@ export default function DataSourcesPage() {
 
   useEffect(() => {
     const currentUser = loadCurrentUser();
-    if (!currentUser) {
+    const currentToken = getAccessToken();
+    if (!currentUser || !currentToken) {
       router.replace("/login");
       return;
     }
     setUser(currentUser);
-    setSources(loadDataSources(currentUser.id));
+    setToken(currentToken);
     setIsHydrated(true);
+    authorizedFetch<BackendDataSource[]>("/api/v1/data-sources", currentToken)
+      .then((items) => setSources(items.map(mapBackendDataSource)))
+      .catch((err) => setError(err instanceof Error ? err.message : "Failed to load data sources"));
   }, [router]);
 
-  function persist(nextSources: DataSource[]) {
-    if (!user) return;
-    setSources(nextSources);
-    saveDataSources(user.id, nextSources);
+  async function refreshSources(activeToken: string) {
+    const items = await authorizedFetch<BackendDataSource[]>("/api/v1/data-sources", activeToken);
+    setSources(items.map(mapBackendDataSource));
   }
 
-  function handleUpload(event: ChangeEvent<HTMLInputElement>) {
+  async function handleUpload(event: ChangeEvent<HTMLInputElement>) {
+    if (!token) return;
     const files = Array.from(event.target.files ?? []);
     if (!files.length) return;
 
-    const newSources = files.map((file) => ({
-      id: createId("file"),
-      name: file.name,
-      type: "file" as const,
-      createdAt: new Date().toISOString(),
-      extension: getExtension(file.name),
-      sizeLabel: bytesToSize(file.size),
-    }));
-
-    persist([...newSources, ...sources]);
-    event.target.value = "";
+    try {
+      for (const file of files) {
+        const formData = new FormData();
+        formData.append("file", file);
+        const response = await fetch(
+          `${process.env.NEXT_PUBLIC_API_BASE_URL ?? "http://localhost:8000"}/api/v1/data-sources/upload`,
+          {
+          method: "POST",
+          headers: { Authorization: `Bearer ${token}` },
+          body: formData,
+          },
+        );
+        if (!response.ok) {
+          const body = (await response.json().catch(() => null)) as { detail?: string } | null;
+          throw new Error(body?.detail ?? `Upload failed (${response.status})`);
+        }
+      }
+      await refreshSources(token);
+      event.target.value = "";
+      setError(null);
+    } catch (err) {
+      setError(err instanceof Error ? err.message : "Failed to upload file");
+    }
   }
 
-  function removeSource(id: string) {
-    persist(sources.filter((source) => source.id !== id));
+  async function removeSource(id: string) {
+    if (!token) return;
+    try {
+      await authorizedFetch<void>(`/api/v1/data-sources/${id}`, token, { method: "DELETE" });
+      await refreshSources(token);
+      setError(null);
+    } catch (err) {
+      setError(err instanceof Error ? err.message : "Failed to remove data source");
+    }
   }
 
-  function addDbConnection() {
-    if (!dbForm.name.trim()) return;
-    const connection: DataSource = {
-      id: createId("db"),
-      name: dbForm.name.trim(),
-      type: "db",
-      createdAt: new Date().toISOString(),
-      status: "connected",
-      host: dbForm.host.trim() || "localhost",
-      port: dbForm.port.trim() || "5432",
-      database: dbForm.database.trim(),
-    };
-    persist([connection, ...sources]);
-    setDbForm({ name: "", host: "localhost", port: "5432", database: "" });
-    setIsAddingDb(false);
+  async function addDbConnection() {
+    if (!token || !dbForm.name.trim()) return;
+    try {
+      await authorizedFetch<BackendDataSource>("/api/v1/data-sources/db-connection", token, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          display_name: dbForm.name.trim(),
+          db_type: dbForm.dbType.trim() || "postgresql",
+          db_host: dbForm.host.trim() || "localhost",
+          db_port: Number(dbForm.port.trim() || "5432"),
+          db_name: dbForm.database.trim(),
+          db_username: dbForm.username.trim(),
+          db_password: dbForm.password,
+        }),
+      });
+      await refreshSources(token);
+      setDbForm({
+        name: "",
+        dbType: "postgresql",
+        host: "localhost",
+        port: "5432",
+        database: "",
+        username: "",
+        password: "",
+      });
+      setIsAddingDb(false);
+      setError(null);
+    } catch (err) {
+      setError(err instanceof Error ? err.message : "Failed to add connection");
+    }
   }
 
   function handleLogout() {
@@ -137,6 +175,9 @@ export default function DataSourcesPage() {
       </header>
 
       <main className="mx-auto max-w-6xl space-y-6 px-6 pb-12 pt-8">
+        {error ? (
+          <p className="rounded-xl border border-red-200 bg-red-50 p-3 text-sm text-red-700">{error}</p>
+        ) : null}
         <section className="rounded-3xl border border-zinc-200 bg-white/85 p-6 shadow-xl">
           <h1 className="font-heading text-3xl font-bold">Data Sources</h1>
           <p className="mt-2 text-sm text-zinc-600">
@@ -211,6 +252,12 @@ export default function DataSourcesPage() {
                 className="h-10 rounded-lg border border-zinc-300 px-3 text-sm outline-none ring-blue-500/30 focus:ring-4"
               />
               <input
+                value={dbForm.dbType}
+                onChange={(event) => setDbForm((prev) => ({ ...prev, dbType: event.target.value }))}
+                placeholder="DB type (postgresql)"
+                className="h-10 rounded-lg border border-zinc-300 px-3 text-sm outline-none ring-blue-500/30 focus:ring-4"
+              />
+              <input
                 value={dbForm.host}
                 onChange={(event) => setDbForm((prev) => ({ ...prev, host: event.target.value }))}
                 placeholder="Host"
@@ -228,6 +275,23 @@ export default function DataSourcesPage() {
                   setDbForm((prev) => ({ ...prev, database: event.target.value }))
                 }
                 placeholder="Database name"
+                className="h-10 rounded-lg border border-zinc-300 px-3 text-sm outline-none ring-blue-500/30 focus:ring-4"
+              />
+              <input
+                value={dbForm.username}
+                onChange={(event) =>
+                  setDbForm((prev) => ({ ...prev, username: event.target.value }))
+                }
+                placeholder="Username"
+                className="h-10 rounded-lg border border-zinc-300 px-3 text-sm outline-none ring-blue-500/30 focus:ring-4"
+              />
+              <input
+                type="password"
+                value={dbForm.password}
+                onChange={(event) =>
+                  setDbForm((prev) => ({ ...prev, password: event.target.value }))
+                }
+                placeholder="Password"
                 className="h-10 rounded-lg border border-zinc-300 px-3 text-sm outline-none ring-blue-500/30 focus:ring-4"
               />
               <button
@@ -274,4 +338,3 @@ export default function DataSourcesPage() {
     </div>
   );
 }
-

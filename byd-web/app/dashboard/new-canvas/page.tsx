@@ -109,14 +109,17 @@ export default function DashboardCanvasPage() {
     setCharts((prev) => [{ id: chartId, prompt, isLoading: true }, ...prev]);
 
     try {
-      const baseUrl = process.env.NEXT_PUBLIC_API_BASE_URL ?? "http://localhost:8000";
-      const response = await fetch(`${baseUrl}/api/v1/dashboard/generate`, {
+      const response = await fetch("/api/dashboard/generate", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ prompt }),
       });
 
-      if (!response.ok) throw new Error(`Request failed (${response.status})`);
+      if (!response.ok) {
+        const fallback = `Request failed (${response.status})`;
+        const body = (await response.json().catch(() => null)) as { detail?: string } | null;
+        throw new Error(body?.detail ?? fallback);
+      }
       const data = (await response.json()) as { dashboard_html?: string };
 
       setCharts((prev) =>
@@ -345,4 +348,3 @@ export default function DashboardCanvasPage() {
     </div>
   );
 }
-

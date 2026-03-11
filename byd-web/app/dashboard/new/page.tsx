@@ -3,11 +3,10 @@
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
-import { AuthUser, loadCurrentUser, logoutUser } from "@/lib/auth";
+import { AuthUser, getAccessToken, loadCurrentUser, logoutUser } from "@/lib/auth";
+import { authorizedFetch, BackendDataSource, mapBackendDataSource } from "@/lib/backend";
 import {
   DataSource,
-  loadDataSources,
-  loadSelectedSourceIds,
   saveSelectedSourceIds,
 } from "@/lib/data-sources";
 
@@ -15,19 +14,24 @@ export default function CreateDashboardPage() {
   const router = useRouter();
   const [isHydrated, setIsHydrated] = useState(false);
   const [user, setUser] = useState<AuthUser | null>(null);
+  const [token, setToken] = useState<string | null>(null);
   const [sources, setSources] = useState<DataSource[]>([]);
   const [selectedIds, setSelectedIds] = useState<string[]>([]);
+  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     const currentUser = loadCurrentUser();
-    if (!currentUser) {
+    const currentToken = getAccessToken();
+    if (!currentUser || !currentToken) {
       router.replace("/login");
       return;
     }
 
     setUser(currentUser);
-    setSources(loadDataSources(currentUser.id));
-    setSelectedIds(loadSelectedSourceIds(currentUser.id));
+    setToken(currentToken);
+    authorizedFetch<BackendDataSource[]>("/api/v1/data-sources", currentToken)
+      .then((items) => setSources(items.map(mapBackendDataSource)))
+      .catch((err) => setError(err instanceof Error ? err.message : "Failed to load sources"));
     setIsHydrated(true);
   }, [router]);
 
@@ -37,10 +41,22 @@ export default function CreateDashboardPage() {
     );
   }
 
-  function handleCreateDashboard() {
-    if (!selectedIds.length || !user) return;
-    saveSelectedSourceIds(user.id, selectedIds);
-    router.push("/dashboard/new-canvas");
+  async function handleCreateDashboard() {
+    if (!selectedIds.length || !user || !token) return;
+    try {
+      const created = await authorizedFetch<{ id: string }>("/api/v1/dashboard", token, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          title: "Untitled Dashboard",
+          data_source_ids: selectedIds,
+        }),
+      });
+      saveSelectedSourceIds(user.id, selectedIds);
+      router.push(`/dashboard/new-canvas?dashboardId=${created.id}`);
+    } catch (err) {
+      setError(err instanceof Error ? err.message : "Failed to create dashboard");
+    }
   }
 
   function handleLogout() {
@@ -78,6 +94,9 @@ export default function CreateDashboardPage() {
       </header>
 
       <main className="mx-auto max-w-6xl px-6 pb-12 pt-8">
+        {error ? (
+          <p className="mb-4 rounded-xl border border-red-200 bg-red-50 p-3 text-sm text-red-700">{error}</p>
+        ) : null}
         <section className="rounded-3xl border border-zinc-200 bg-white/85 p-6 shadow-xl">
           <h1 className="font-heading text-3xl font-bold">Create New Dashboard</h1>
           <p className="mt-2 text-sm text-zinc-600">
@@ -151,4 +170,3 @@ export default function CreateDashboardPage() {
     </div>
   );
 }
-
