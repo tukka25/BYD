@@ -2,6 +2,12 @@ fastapi
 uvicorn
 pydantic-settings
 python-multipart
+sqlalchemy>=2.0
+psycopg2-binary
+python-jose[cryptography]
+passlib[bcrypt]
+cryptography
+email-validator
 langchain
 langchain-community
 langchain-core
@@ -10,6 +16,9 @@ pandas
 matplotlib
 seaborn
 plotly
+langchain-ollama
+openpyxl==3.1.5
+
 # For running local models (optional, depending on setup)
 # transformers
 # torch
