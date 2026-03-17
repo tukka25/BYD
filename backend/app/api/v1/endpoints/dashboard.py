@@ -1,9 +1,28 @@
-from fastapi import APIRouter, HTTPException
+from fastapi import APIRouter, Depends, HTTPException, status
 from pydantic import BaseModel
 from typing import Optional, Dict, Any
-from app.services.graph_agent import run_agent
+import asyncio
+import json
+import logging
+import time
+from sqlalchemy.orm import Session
+
+from app.api.dependencies import get_current_user
+from app.core.config import get_settings
+from app.core.database import get_db
+from app.models.dashboard import Dashboard
+from app.models.data_source import DataSource
+from app.models.user import User
+from app.schemas.dashboard import (
+    DashboardCreateRequest,
+    DashboardResponse as DashboardRecordResponse,
+    DashboardUpdateRequest,
+)
+from app.services.agents.workflow import run_agent_workflow
 
 router = APIRouter()
+logger = logging.getLogger(__name__)
+settings = get_settings()
 
 class DashboardRequest(BaseModel):
     prompt: str
@@ -13,32 +32,193 @@ class DashboardResponse(BaseModel):
     dashboard_html: str
     metadata: Dict[str, Any]
 
+
+def _dashboard_to_response(dashboard: Dashboard) -> DashboardRecordResponse:
+    return DashboardRecordResponse(
+        id=dashboard.id,
+        user_id=dashboard.user_id,
+        title=dashboard.title,
+        description=dashboard.description,
+        data_source_ids=[ds.id for ds in dashboard.data_sources],
+        created_at=dashboard.created_at,
+        updated_at=dashboard.updated_at,
+    )
+
+
+@router.post("", response_model=DashboardRecordResponse, status_code=status.HTTP_201_CREATED)
+def create_dashboard(
+    payload: DashboardCreateRequest,
+    current_user: User = Depends(get_current_user),
+    db: Session = Depends(get_db),
+):
+    linked_sources: list[DataSource] = []
+    if payload.data_source_ids:
+        linked_sources = (
+            db.query(DataSource)
+            .filter(
+                DataSource.user_id == current_user.id,
+                DataSource.id.in_(payload.data_source_ids),
+            )
+            .all()
+        )
+        if len(linked_sources) != len(set(payload.data_source_ids)):
+            raise HTTPException(
+                status_code=status.HTTP_400_BAD_REQUEST,
+                detail="One or more data_source_ids are invalid or not owned by the current user",
+            )
+
+    dashboard = Dashboard(
+        user_id=current_user.id,
+        title=payload.title.strip(),
+        description=payload.description,
+    )
+    dashboard.data_sources = linked_sources
+    db.add(dashboard)
+    db.commit()
+    db.refresh(dashboard)
+    return _dashboard_to_response(dashboard)
+
+
+@router.get("", response_model=list[DashboardRecordResponse])
+def list_dashboards(
+    current_user: User = Depends(get_current_user),
+    db: Session = Depends(get_db),
+):
+    dashboards = (
+        db.query(Dashboard)
+        .filter(Dashboard.user_id == current_user.id)
+        .order_by(Dashboard.created_at.desc())
+        .all()
+    )
+    return [_dashboard_to_response(dashboard) for dashboard in dashboards]
+
+
+@router.get("/{dashboard_id}", response_model=DashboardRecordResponse)
+def get_dashboard(
+    dashboard_id: str,
+    current_user: User = Depends(get_current_user),
+    db: Session = Depends(get_db),
+):
+    dashboard = (
+        db.query(Dashboard)
+        .filter(Dashboard.id == dashboard_id, Dashboard.user_id == current_user.id)
+        .first()
+    )
+    if not dashboard:
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Dashboard not found")
+    return _dashboard_to_response(dashboard)
+
+
+@router.put("/{dashboard_id}", response_model=DashboardRecordResponse)
+def update_dashboard(
+    dashboard_id: str,
+    payload: DashboardUpdateRequest,
+    current_user: User = Depends(get_current_user),
+    db: Session = Depends(get_db),
+):
+    dashboard = (
+        db.query(Dashboard)
+        .filter(Dashboard.id == dashboard_id, Dashboard.user_id == current_user.id)
+        .first()
+    )
+    if not dashboard:
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Dashboard not found")
+
+    if payload.title is not None:
+        dashboard.title = payload.title.strip()
+    if payload.description is not None:
+        dashboard.description = payload.description
+
+    if payload.data_source_ids is not None:
+        linked_sources = []
+        if payload.data_source_ids:
+            linked_sources = (
+                db.query(DataSource)
+                .filter(
+                    DataSource.user_id == current_user.id,
+                    DataSource.id.in_(payload.data_source_ids),
+                )
+                .all()
+            )
+            if len(linked_sources) != len(set(payload.data_source_ids)):
+                raise HTTPException(
+                    status_code=status.HTTP_400_BAD_REQUEST,
+                    detail="One or more data_source_ids are invalid or not owned by the current user",
+                )
+        dashboard.data_sources = linked_sources
+
+    db.commit()
+    db.refresh(dashboard)
+    return _dashboard_to_response(dashboard)
+
 @router.post("/generate", response_model=DashboardResponse)
 async def generate_dashboard(request: DashboardRequest):
     """
-    Generate a dashboard based on the user prompt using SLM.
+    Generate a dashboard based on the user prompt using the multi-agent workflow.
     """
     try:
-        # Run the agent
-        result = run_agent(request.prompt)
-        
-        # Extract the image from the execution output
-        output = result.get("output", "")
-        # Look for the marker
-        import re
-        match = re.search(r"IMAGE_BASE64:(.*)", output)
-        if match:
-            img_base64 = match.group(1).strip()
-            html_content = f'<img src="data:image/png;base64,{img_base64}" alt="Generated Graph" />'
+        started_at = time.perf_counter()
+        logger.info("[dashboard/generate] start prompt=%s", request.prompt[:150])
+        workflow_call = asyncio.to_thread(
+            run_agent_workflow,
+            request.prompt,
+            request.data_source or "",
+        )
+        if settings.WORKFLOW_TIMEOUT_SECONDS and settings.WORKFLOW_TIMEOUT_SECONDS > 0:
+            result = await asyncio.wait_for(
+                workflow_call,
+                timeout=settings.WORKFLOW_TIMEOUT_SECONDS,
+            )
         else:
+            result = await workflow_call
+        workflow_error = result.get("error")
+        if workflow_error:
+            logger.warning("[dashboard/generate] workflow error: %s", workflow_error)
+            raise HTTPException(status_code=400, detail=workflow_error)
+
+        execution_result = result.get("execution_result", {})
+        figure = execution_result.get("figure")
+        if not figure:
+            output = execution_result.get("output", "")
             html_content = f"<div>No graph generated. Output: {output}</div>"
-            
+        else:
+            figure_json = json.dumps(figure)
+            html_content = f"""
+<div id="promptdash-chart" style="width:100%;height:100%;min-height:420px;"></div>
+<script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+<script>
+  (function() {{
+    const fig = {figure_json};
+    Plotly.newPlot("promptdash-chart", fig.data, fig.layout || {{}}, {{responsive: true}});
+  }})();
+</script>
+"""
+
+        elapsed = time.perf_counter() - started_at
+        logger.info("[dashboard/generate] success in %.2fs", elapsed)
         return {
             "dashboard_html": html_content,
             "metadata": {
-                "model": "qwen:3b-8b (simulated)",
-                "agent_steps": [m.content for m in result.get("messages", [])]
+                "model": "qwen2.5:3b (workflow)",
+                "plan": result.get("plan", {}),
+                "data_context": result.get("data_context", {}),
+                "agent_steps": [m.content for m in result.get("messages", [])],
             }
         }
+    except asyncio.TimeoutError as exc:
+        logger.error(
+            "[dashboard/generate] timed out after %ss",
+            settings.WORKFLOW_TIMEOUT_SECONDS,
+        )
+        raise HTTPException(
+            status_code=504,
+            detail=(
+                f"Workflow timed out after {settings.WORKFLOW_TIMEOUT_SECONDS}s. "
+                "Check Ollama availability/model load and backend logs."
+            ),
+        ) from exc
+    except HTTPException:
+        raise
     except Exception as e:
+        logger.exception("[dashboard/generate] unhandled error")
         raise HTTPException(status_code=500, detail=str(e))
