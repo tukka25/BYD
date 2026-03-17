@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "skills": {
+    "langchain-architecture": {
+      "source": "wshobson/agents",
+      "sourceType": "github",
+      "computedHash": "8bcb9750c6e564da50f8a6b4e8a9b60030a48a1323e5dee64c37469d3192c683"
+    }
+  }
+}
