@@ -41,6 +41,7 @@ htmlcov/
 backend/.env
 backend/venv/
 backend/__pycache__/
+backend/uploads/
 
 # BYD Project Specific
 terminals/
