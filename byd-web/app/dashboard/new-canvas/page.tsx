@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { ChangeEvent, FormEvent, useEffect, useMemo, useState } from "react";
+import { ChangeEvent, FormEvent, useEffect, useMemo, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import { AuthUser, loadCurrentUser, logoutUser } from "@/lib/auth";
 import {
@@ -37,6 +37,9 @@ export default function DashboardCanvasPage() {
   const [isComposerOpen, setIsComposerOpen] = useState(false);
   const [promptInput, setPromptInput] = useState("");
   const [charts, setCharts] = useState<ChartCard[]>([]);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const inFlightRef = useRef(false);
+  const pendingPromptKeysRef = useRef<Set<string>>(new Set());
 
   const selectedSources = useMemo(
     () => allSources.filter((source) => selectedSourceIds.includes(source.id)),
@@ -100,9 +103,16 @@ export default function DashboardCanvasPage() {
 
   async function submitPrompt(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
+    if (inFlightRef.current) return;
     const prompt = promptInput.trim();
     if (!prompt) return;
+    const promptKey = prompt.toLowerCase().replace(/\s+/g, " ").trim();
+    if (pendingPromptKeysRef.current.has(promptKey)) return;
 
+    inFlightRef.current = true;
+    pendingPromptKeysRef.current.add(promptKey);
+    setIsSubmitting(true);
+    const requestId = createId("req");
     const chartId = createId("chart");
     setPromptInput("");
     setIsComposerOpen(false);
@@ -112,7 +122,7 @@ export default function DashboardCanvasPage() {
       const response = await fetch("/api/dashboard/generate", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ prompt }),
+        body: JSON.stringify({ prompt, request_id: requestId }),
       });
 
       if (!response.ok) {
@@ -145,6 +155,10 @@ export default function DashboardCanvasPage() {
             : chart,
         ),
       );
+    } finally {
+      inFlightRef.current = false;
+      pendingPromptKeysRef.current.delete(promptKey);
+      setIsSubmitting(false);
     }
   }
 
@@ -299,10 +313,14 @@ export default function DashboardCanvasPage() {
                     </div>
                   ) : null}
                   {!chart.isLoading && !chart.error && chart.html ? (
-                    <div
-                      className="overflow-auto rounded-xl border border-zinc-200 p-3"
-                      dangerouslySetInnerHTML={{ __html: chart.html }}
-                    />
+                    <div className="overflow-hidden rounded-xl border border-zinc-200">
+                      <iframe
+                        title={`chart-${chart.id}`}
+                        srcDoc={chart.html}
+                        className="h-[520px] w-full"
+                        sandbox="allow-scripts allow-same-origin"
+                      />
+                    </div>
                   ) : null}
                 </article>
               ))}
@@ -337,9 +355,10 @@ export default function DashboardCanvasPage() {
               </button>
               <button
                 type="submit"
+                disabled={isSubmitting || !promptInput.trim()}
                 className="inline-flex h-10 items-center rounded-lg bg-blue-600 px-4 text-sm font-semibold text-white hover:bg-blue-700"
               >
-                Send to Backend
+                {isSubmitting ? "Generating..." : "Send to Backend"}
               </button>
             </div>
           </form>

@@ -140,14 +140,21 @@ def coding_node(state: AgentState):
     started_at = time.perf_counter()
     plan = state["plan"]
     data_context = state["data_context"]
+    source_decision = state.get("source_decision", {})
+    dataframe_plan = source_decision.get("dataframe_plan", {})
     logger.info(
-        "[workflow/chartist] start viz_type=%s columns=%s",
+        "[workflow/chartist] start viz_type=%s columns=%s selected_columns=%s",
         plan.get("visualization_type"),
         len(data_context.get("columns", [])),
+        len(dataframe_plan.get("selected_columns", [])) if isinstance(dataframe_plan, dict) else 0,
     )
     
-    code = chartist.generate_code(plan, data_context)
-    
+    code = chartist.generate_code(
+        plan,
+        data_context,
+        dataframe_plan=dataframe_plan if isinstance(dataframe_plan, dict) else {},
+    )
+    print(f"code: {code}")
     elapsed = time.perf_counter() - started_at
     logger.info("[workflow/chartist] done in %.2fs code_length=%s", elapsed, len(code))
 
@@ -219,12 +226,12 @@ def run_agent_workflow(
     """
     
     # Temporary test defaults as requested.
-    test_file = "/app/uploads/slm_analysis.xlsx"
+    test_file = "/app/uploads/abu_dhabi_population_density.csv"
     forced_selected_source = test_file
     forced_available_sources = [
         {
-            "id": "slm_analysis.xlsx",
-            "name": "slm_analysis.xlsx",
+            "id": "abu_dhabi_population_density.csv",
+            "name": "abu_dhabi_population_density.csv",
             "type": "file",
             "path": test_file,
         }

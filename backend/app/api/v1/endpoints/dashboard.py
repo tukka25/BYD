@@ -27,6 +27,7 @@ settings = get_settings()
 class DashboardRequest(BaseModel):
     prompt: str
     data_source: Optional[str] = None # path to CSV or similar
+    request_id: Optional[str] = None
 
 class DashboardResponse(BaseModel):
     dashboard_html: str
@@ -158,7 +159,11 @@ async def generate_dashboard(request: DashboardRequest):
     """
     try:
         started_at = time.perf_counter()
-        logger.info("[dashboard/generate] start prompt=%s", request.prompt[:150])
+        logger.info(
+            "[dashboard/generate] start request_id=%s prompt=%s",
+            request.request_id or "-",
+            request.prompt[:150],
+        )
         workflow_call = asyncio.to_thread(
             run_agent_workflow,
             request.prompt,
@@ -195,10 +200,15 @@ async def generate_dashboard(request: DashboardRequest):
 """
 
         elapsed = time.perf_counter() - started_at
-        logger.info("[dashboard/generate] success in %.2fs", elapsed)
+        logger.info(
+            "[dashboard/generate] success request_id=%s in %.2fs",
+            request.request_id or "-",
+            elapsed,
+        )
         return {
             "dashboard_html": html_content,
             "metadata": {
+                "request_id": request.request_id,
                 "model": "qwen2.5:3b (workflow)",
                 "plan": result.get("plan", {}),
                 "data_context": result.get("data_context", {}),

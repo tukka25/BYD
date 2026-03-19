@@ -20,7 +20,7 @@ class DataDetective:
     2) Tool-calling dataframe builder agent
     """
 
-    AUTO_PICK_THRESHOLD = 0.55
+    AUTO_PICK_THRESHOLD = 0.35
 
     def __init__(self, data_dir: str = "data", llm=None, use_cli_validation: bool = True):
         self.data_dir = Path(data_dir)
@@ -237,8 +237,8 @@ class DataDetective:
             required_fields_for_next_step=required_fields,
             thread_id="detective-dataframe-builder-stage",
         )
-        print(f"dataframe_builder_run: {dataframe_builder_run}")
         step2 = dataframe_builder_run.get("structured_output", {}) or {}
+        print(f"dataframe_builder_run: {step2}")
         confidence = float(step2.get("confidence", step1.get("confidence", 0.0)) or 0.0)
         selected_columns = [str(v) for v in step2.get("selected_columns", [])]
         missing_fields = [str(v) for v in step2.get("missing_fields", [])]

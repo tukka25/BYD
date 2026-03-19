@@ -41,37 +41,52 @@ Hard rules:
 
 Output:
 Return only JSON with keys:
-- chosen_source
-- confidence
-- checked_sources
-- rationale
-- required_fields_for_next_step
+- chosen_source: string
+- confidence: number (0..1)
+- checked_sources: string[]
+- rationale: string
+- required_fields_for_next_step: string[]
 """.strip()
 
 DATAFRAME_BUILDER_PROMPT = """You are DataFrameBuilder, a strict tool-calling agent.
 
-Task:
-1) Inspect chosen_source using tools.
-2) Build a dataframe generation plan from chosen_source and required_fields_for_next_step.
-3) Use build_dataframe_load_plan to produce the concrete loading/query plan.
-4) Return only JSON.
+Goal:
+Prepare a dataframe loading plan that can be consumed by the Plotly visualization agent.
 
-Rules:
-- Always call read_source_headers first.
-- Then call build_dataframe_load_plan.
-- If fields are missing, include them and still return best possible df plan.
-- For DB sources, include SQL query.
-- For CSV/Excel sources, include pandas loading code.
-
-Output JSON keys:
+Inputs you receive:
 - chosen_source
-- dataframe_schema
-- selected_columns
-- missing_fields
-- df_query_or_code
-- load_type
-- confidence
-- rationale
+- required_fields_for_next_step
+- query (user goal + plan context)
+
+Mandatory tool sequence:
+1) Call read_source_headers(chosen_source) first.
+2) Analyze headers/sample and map required_fields_for_next_step to real columns.
+3) Call build_dataframe_load_plan(chosen_source, required_fields, sample_rows).
+4) Use tool outputs only; do not invent columns.
+
+Behavior requirements:
+- If chosen_source cannot be read, return low confidence and clear rationale.
+- If some fields are missing, keep best possible selected columns and list missing_fields.
+- For DB source: prefer sql_query in output.
+- For CSV/Excel source: prefer pandas_code in output.
+- Keep output concise and machine-friendly for the next agent.
+
+Output JSON keys (strict):
+- chosen_source: string
+- dataframe_schema: object<string, string> (column -> dtype)
+- selected_columns: string[]
+- missing_fields: string[]
+- load_type: "sql" | "csv" | "excel" | "unknown"
+- df_query_or_code: string (SQL query or pandas loading code)
+- plotly_ready_spec: object with keys:
+  - x
+  - y
+  - color
+  - group_by
+  - aggregation
+  - chart_hint
+- confidence: number (0..1)
+- rationale: string
 """.strip()
 
 
@@ -90,6 +105,7 @@ class DataFrameBuildDecision(BaseModel):
     missing_fields: List[str] = Field(default_factory=list)
     df_query_or_code: str = Field(default="")
     load_type: str = Field(default="")
+    plotly_ready_spec: Dict[str, Any] = Field(default_factory=dict)
     confidence: float = Field(default=0.0, ge=0.0, le=1.0)
     rationale: str = Field(default="")
 
@@ -122,6 +138,39 @@ class ColoredDetectiveCallback(BaseCallbackHandler):
 
     def on_tool_error(self, error: BaseException, **kwargs: Any) -> None:
         print(f"{Color.RED}[Tool error] {error}{Color.RESET}")
+
+
+def _coerce_str_list(values: Any) -> List[str]:
+    """
+    Convert mixed LLM outputs into stable list[str].
+    Handles cases like:
+    - ["file.csv", "db:sales"]
+    - [{"source": "file.csv"}, {"name": "sales.csv"}]
+    - [{"path": "/app/uploads/file.csv"}]
+    """
+    if not isinstance(values, list):
+        return []
+
+    out: List[str] = []
+    for item in values:
+        if isinstance(item, str):
+            v = item.strip()
+            if v:
+                out.append(v)
+            continue
+        if isinstance(item, dict):
+            for key in ("source", "name", "path", "id"):
+                raw = item.get(key)
+                if isinstance(raw, str) and raw.strip():
+                    out.append(raw.strip())
+                    break
+            continue
+        raw = str(item).strip()
+        if raw:
+            out.append(raw)
+
+    # Deduplicate preserving order
+    return list(dict.fromkeys(out))
 
 
 def _print_tool_trace_from_messages(messages: List[BaseMessage]) -> None:
@@ -183,9 +232,11 @@ def validate_detective_decision(run_result: Dict[str, Any]) -> DetectiveDecision
         return DetectiveDecision(
             chosen_source=str(payload.get("chosen_source", "")),
             confidence=float(payload.get("confidence", 0.0) or 0.0),
-            checked_sources=list(payload.get("checked_sources", []) or []),
+            checked_sources=_coerce_str_list(payload.get("checked_sources", [])),
             rationale=str(payload.get("rationale", "invalid_or_partial_schema_from_agent")),
-            required_fields_for_next_step=list(payload.get("required_fields_for_next_step", []) or []),
+            required_fields_for_next_step=_coerce_str_list(
+                payload.get("required_fields_for_next_step", [])
+            ),
         )
 
 
@@ -197,10 +248,11 @@ def validate_dataframe_build_decision(run_result: Dict[str, Any]) -> DataFrameBu
         return DataFrameBuildDecision(
             chosen_source=str(payload.get("chosen_source", "")),
             dataframe_schema=dict(payload.get("dataframe_schema", {}) or {}),
-            selected_columns=list(payload.get("selected_columns", []) or []),
-            missing_fields=list(payload.get("missing_fields", []) or []),
+            selected_columns=_coerce_str_list(payload.get("selected_columns", [])),
+            missing_fields=_coerce_str_list(payload.get("missing_fields", [])),
             df_query_or_code=str(payload.get("df_query_or_code", "")),
             load_type=str(payload.get("load_type", "")),
+            plotly_ready_spec=dict(payload.get("plotly_ready_spec", {}) or {}),
             confidence=float(payload.get("confidence", 0.0) or 0.0),
             rationale=str(payload.get("rationale", "invalid_or_partial_schema_from_agent")),
         )

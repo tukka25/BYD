@@ -6,6 +6,7 @@ import plotly.graph_objects as go
 import json
 import logging
 import traceback
+import re
 from typing import Dict, Any, Optional
 
 class SafeExecutor:
@@ -25,6 +26,47 @@ class SafeExecutor:
             'go': go,
             'json': json
         }
+        self.blocked_patterns = [
+            r"\bimport\s+os\b",
+            r"\bimport\s+subprocess\b",
+            r"\bfrom\s+os\s+import\b",
+            r"\bfrom\s+subprocess\s+import\b",
+            r"\bopen\(",
+            r"\beval\(",
+            r"\bexec\(",
+            r"\b__import__\(",
+        ]
+
+    def _sanitize_code(self, code: str) -> str:
+        """
+        Normalize generated output into executable Python.
+        Handles markdown fences, smart quotes, and leading prose.
+        """
+        if not code:
+            return ""
+
+        code = code.replace("“", "\"").replace("”", "\"").replace("’", "'").replace("‘", "'")
+
+        fenced = re.findall(r"```(?:python)?\s*(.*?)```", code, flags=re.DOTALL | re.IGNORECASE)
+        if fenced:
+            code = fenced[0]
+
+        lines = code.splitlines()
+        start_idx = 0
+        for idx, line in enumerate(lines):
+            stripped = line.strip()
+            if re.match(r"^(import |from |df\[|fig\s*=|[A-Za-z_]\w*\s*=|if |for |while |try:|except |print\(|#)", stripped):
+                start_idx = idx
+                break
+        code = "\n".join(lines[start_idx:]).strip()
+        return code
+
+    def _is_safe_code(self, code: str) -> Optional[str]:
+        lowered = code.lower()
+        for pattern in self.blocked_patterns:
+            if re.search(pattern, lowered):
+                return f"Blocked unsafe pattern: {pattern}"
+        return None
     
     def execute(self, code: str, dataframe: pd.DataFrame) -> Dict[str, Any]:
         """
@@ -41,8 +83,10 @@ class SafeExecutor:
         redirected_output = sys.stdout = StringIO()
         
         try:
-            # Clean code if it contains markdown blocks
-            code = code.replace("```python", "").replace("```", "").strip()
+            code = self._sanitize_code(code)
+            safety_error = self._is_safe_code(code)
+            if safety_error:
+                return {"success": False, "error": safety_error}
             
             exec(code, exec_globals)
             

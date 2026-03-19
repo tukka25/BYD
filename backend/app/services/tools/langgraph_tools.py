@@ -190,7 +190,7 @@ class BuildDataFramePlanInput(BaseModel):
     )
     sample_rows: int = Field(
         default=200,
-        ge=10,
+        ge=1,
         le=5000,
         description="Target row count for dataframe preview/load",
     )
