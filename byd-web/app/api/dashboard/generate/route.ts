@@ -3,7 +3,7 @@ import { NextRequest, NextResponse } from "next/server";
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 // Used by platforms that support route handler max duration (e.g. Vercel).
-export const maxDuration = 300;
+export const maxDuration = 9000;
 
 export async function POST(request: NextRequest) {
   try {
@@ -14,55 +14,39 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ detail: "Prompt is required" }, { status: 400 });
     }
 
-    const timeoutMs = Number(process.env.BACKEND_GENERATE_TIMEOUT_MS ?? 300000);
-    const backendCandidates = Array.from(
-      new Set(
-        [
-          process.env.BACKEND_API_URL,
-          process.env.NEXT_PUBLIC_API_BASE_URL,
-          "http://localhost:8000",
-          "http://127.0.0.1:8000",
-          "http://host.docker.internal:8000",
-          "http://api:8000",
-        ]
-          .map((v) => (v || "").trim())
-          .filter(Boolean),
-      ),
-    );
+    const timeoutMs = Number(process.env.BACKEND_GENERATE_TIMEOUT_MS ?? 900000);
+    const backendUrl = (
+      process.env.BACKEND_API_URL ||
+      process.env.NEXT_PUBLIC_API_BASE_URL ||
+      "http://127.0.0.1:8000"
+    ).trim();
 
-    let response: Response | null = null;
-    const errors: string[] = [];
-    for (const backendUrl of backendCandidates) {
-      const controller = new AbortController();
-      const timeout = setTimeout(() => controller.abort(), timeoutMs);
-      try {
-        response = await fetch(`${backendUrl}/api/v1/dashboard/generate`, {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ prompt, request_id: requestId }),
-          cache: "no-store",
-          signal: controller.signal,
-        });
-        clearTimeout(timeout);
-        if (response) {
-          break;
-        }
-      } catch (err) {
-        clearTimeout(timeout);
-        const msg = err instanceof Error ? `${err.name}: ${err.message}` : "Unknown error";
-        errors.push(`${backendUrl} -> ${msg}`);
-      }
-    }
-
-    if (!response) {
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), timeoutMs);
+    let response: Response;
+    try {
+      // Important: do not retry this POST to multiple hosts, or we may start duplicate runs.
+      response = await fetch(`${backendUrl}/api/v1/dashboard/generate`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ prompt, request_id: requestId }),
+        cache: "no-store",
+        signal: controller.signal,
+      });
+    } catch (err) {
+      const isAbort = err instanceof Error && err.name === "AbortError";
       return NextResponse.json(
         {
-          detail:
-            "Cannot reach backend API. Set BACKEND_API_URL and restart frontend. Tried: " +
-            errors.join(" | "),
+          detail: isAbort
+            ? `Dashboard generation timed out in frontend proxy after ${timeoutMs}ms.`
+            : `Cannot reach backend API. Set BACKEND_API_URL and restart frontend. Tried: ${backendUrl} -> ${
+                err instanceof Error ? `${err.name}: ${err.message}` : "Unknown error"
+              }`,
         },
-        { status: 503 },
+        { status: isAbort ? 504 : 503 },
       );
+    } finally {
+      clearTimeout(timeout);
     }
 
     const text = await response.text();

@@ -1,0 +1,39 @@
+<svg width="1240" height="320" viewBox="0 0 1240 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="pd-lockup-bg" x1="28" y1="20" x2="228" y2="228" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#D8DEE8" />
+      <stop offset="1" stop-color="#C8D1DF" />
+    </linearGradient>
+    <filter id="pd-lockup-shadow" x="0" y="0" width="280" height="280" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="8" dy="10" stdDeviation="10" flood-color="#A3B1C6" flood-opacity="0.45" />
+    </filter>
+  </defs>
+
+  <g filter="url(#pd-lockup-shadow)">
+    <rect x="24" y="24" width="220" height="220" rx="62" fill="url(#pd-lockup-bg)" />
+    <rect x="24" y="24" width="220" height="220" rx="62" stroke="#B4BECC" stroke-width="3" />
+  </g>
+
+  <path
+    d="M123 64L88 148H129L111 212L181 116H140L158 64H123Z"
+    fill="#FF4757"
+    stroke="#2D3436"
+    stroke-width="6"
+    stroke-linejoin="round"
+  />
+
+  <circle cx="85" cy="85" r="7" fill="#22C55E" />
+  <circle cx="85" cy="85" r="12" stroke="#22C55E" stroke-opacity="0.35" stroke-width="4" />
+
+  <text
+    x="290"
+    y="170"
+    fill="#2D3436"
+    font-family="'Space Grotesk', 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif"
+    font-size="112"
+    font-weight="800"
+    letter-spacing="-1.4"
+  >
+    Prompt Dash
+  </text>
+</svg>

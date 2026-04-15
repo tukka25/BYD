@@ -147,48 +147,56 @@ export default function DataSourcesPage() {
 
   if (!isHydrated || !user) {
     return (
-      <main className="flex min-h-screen items-center justify-center bg-zinc-50 text-zinc-600">
+      <main className="app-shell flex items-center justify-center text-foreground-muted">
         Loading...
       </main>
     );
   }
 
   return (
-    <div className="min-h-screen bg-[radial-gradient(circle_at_top,#dbeafe_0%,#f8fafc_45%,#f8fafc_100%)] text-zinc-900">
-      <header className="mx-auto flex h-16 w-full max-w-6xl items-center px-6">
-        <Link href="/" className="font-heading text-xl font-bold text-blue-700">
+    <div className="app-shell pb-12">
+      <header className="border-b border-[#bcc6d4] bg-[linear-gradient(180deg,#d8dee8_0%,#cdd6e3_100%)] shadow-[inset_0_1px_0_rgba(255,255,255,0.8),0_8px_18px_rgba(163,177,198,0.35)]">
+        <div className="mx-auto flex h-[5.5rem] w-full max-w-6xl items-center px-6">
+        <Link href="/" className="text-embossed font-heading text-xl font-extrabold uppercase tracking-[0.04em]">
           PromptDash
         </Link>
         <nav className="ml-auto flex items-center gap-2 text-sm">
-          <Link href="/dashboard/new" className="rounded-lg px-3 py-2 hover:bg-white/70">
+          <Link
+            href="/dashboard/new"
+            className="inline-flex min-h-10 items-center justify-center rounded-lg border border-[#adb7c4] bg-[#cfd7e3] px-3 py-2 text-xs font-bold uppercase tracking-[0.05em] text-[#2d3436] transition hover:bg-[#c5cedb]"
+          >
             Create Dashboard
           </Link>
-          <span className="rounded-lg bg-blue-100 px-3 py-2 text-blue-700">Data Sources</span>
+          <span className="inline-flex min-h-10 items-center justify-center rounded-lg border border-[#adb7c4] bg-[#bcc7d6] px-3 py-2 text-xs font-bold uppercase tracking-[0.05em] text-[#2d3436]">
+            Data Sources
+          </span>
           <button
             type="button"
             onClick={handleLogout}
-            className="rounded-lg border border-zinc-300 bg-white px-3 py-2 hover:bg-zinc-50"
+            className="inline-flex min-h-10 items-center justify-center rounded-lg border border-[#adb7c4] bg-[#cfd7e3] px-3 py-2 text-xs font-bold uppercase tracking-[0.05em] text-[#2d3436] transition hover:bg-[#c5cedb]"
           >
             Logout
           </button>
         </nav>
+        </div>
       </header>
 
       <main className="mx-auto max-w-6xl space-y-6 px-6 pb-12 pt-8">
         {error ? (
-          <p className="rounded-xl border border-red-200 bg-red-50 p-3 text-sm text-red-700">{error}</p>
+          <p className="rounded-xl border border-[#ff9faa] bg-[#ffd8dd] p-3 text-sm text-[#a12d39]">{error}</p>
         ) : null}
-        <section className="rounded-3xl border border-zinc-200 bg-white/85 p-6 shadow-xl">
-          <h1 className="font-heading text-3xl font-bold">Data Sources</h1>
-          <p className="mt-2 text-sm text-zinc-600">
+        <section className="industrial-panel screw-corners p-6">
+          <p className="label-tech">Source Registry</p>
+          <h1 className="text-embossed mt-2 font-heading text-3xl font-extrabold">Data Sources</h1>
+          <p className="mt-2 text-sm text-foreground-muted">
             User: {user.email}. These sources belong only to this account.
           </p>
         </section>
 
-        <section className="rounded-3xl border border-zinc-200 bg-white/85 p-6 shadow-xl">
+        <section className="industrial-panel screw-corners p-6">
           <div className="mb-4 flex items-center justify-between">
-            <h2 className="font-heading text-xl font-semibold">Files</h2>
-            <label className="inline-flex h-10 cursor-pointer items-center rounded-xl bg-zinc-900 px-4 text-sm font-medium text-white hover:bg-zinc-800">
+            <h2 className="text-embossed font-heading text-xl font-bold">Files</h2>
+            <label className="btn-industrial-secondary min-h-10 cursor-pointer px-4 text-xs">
               Upload files
               <input
                 type="file"
@@ -201,7 +209,7 @@ export default function DataSourcesPage() {
           </div>
 
           {fileSources.length === 0 ? (
-            <p className="rounded-xl border border-dashed border-zinc-300 p-6 text-sm text-zinc-500">
+            <p className="rounded-xl border border-dashed border-[#adb7c4] p-6 text-sm text-foreground-muted">
               No uploaded files yet.
             </p>
           ) : (
@@ -209,11 +217,11 @@ export default function DataSourcesPage() {
               {fileSources.map((source) => (
                 <li
                   key={source.id}
-                  className="flex items-center justify-between rounded-xl border border-zinc-200 bg-white p-4"
+                  className="industrial-card flex items-center justify-between p-4"
                 >
                   <div>
                     <p className="text-sm font-semibold">{source.name}</p>
-                    <p className="text-xs text-zinc-500">
+                    <p className="font-mono text-xs text-foreground-muted">
                       {source.sizeLabel ?? "Unknown size"} •{" "}
                       {new Date(source.createdAt).toLocaleDateString()}
                     </p>
@@ -221,7 +229,7 @@ export default function DataSourcesPage() {
                   <button
                     type="button"
                     onClick={() => removeSource(source.id)}
-                    className="rounded-lg px-3 py-1.5 text-xs font-semibold text-red-600 hover:bg-red-50"
+                    className="rounded-md px-3 py-1.5 text-xs font-bold uppercase tracking-[0.05em] text-accent transition hover:bg-[#ffd8dd]"
                   >
                     Remove
                   </button>
@@ -231,43 +239,43 @@ export default function DataSourcesPage() {
           )}
         </section>
 
-        <section className="rounded-3xl border border-zinc-200 bg-white/85 p-6 shadow-xl">
+        <section className="industrial-panel screw-corners p-6">
           <div className="mb-4 flex items-center justify-between">
-            <h2 className="font-heading text-xl font-semibold">Database Connections</h2>
+            <h2 className="text-embossed font-heading text-xl font-bold">Database Connections</h2>
             <button
               type="button"
               onClick={() => setIsAddingDb((prev) => !prev)}
-              className="inline-flex h-10 items-center rounded-xl border border-zinc-300 bg-white px-4 text-sm font-medium hover:bg-zinc-50"
+              className="btn-industrial-secondary min-h-10 px-4 text-xs"
             >
               {isAddingDb ? "Cancel" : "Add connection"}
             </button>
           </div>
 
           {isAddingDb ? (
-            <div className="mb-4 grid gap-3 rounded-xl border border-zinc-200 bg-white p-4 md:grid-cols-2">
+            <div className="industrial-card mb-4 grid gap-3 p-4 md:grid-cols-2">
               <input
                 value={dbForm.name}
                 onChange={(event) => setDbForm((prev) => ({ ...prev, name: event.target.value }))}
                 placeholder="Connection name"
-                className="h-10 rounded-lg border border-zinc-300 px-3 text-sm outline-none ring-blue-500/30 focus:ring-4"
+                className="industrial-input min-h-10"
               />
               <input
                 value={dbForm.dbType}
                 onChange={(event) => setDbForm((prev) => ({ ...prev, dbType: event.target.value }))}
                 placeholder="DB type (postgresql)"
-                className="h-10 rounded-lg border border-zinc-300 px-3 text-sm outline-none ring-blue-500/30 focus:ring-4"
+                className="industrial-input min-h-10"
               />
               <input
                 value={dbForm.host}
                 onChange={(event) => setDbForm((prev) => ({ ...prev, host: event.target.value }))}
                 placeholder="Host"
-                className="h-10 rounded-lg border border-zinc-300 px-3 text-sm outline-none ring-blue-500/30 focus:ring-4"
+                className="industrial-input min-h-10"
               />
               <input
                 value={dbForm.port}
                 onChange={(event) => setDbForm((prev) => ({ ...prev, port: event.target.value }))}
                 placeholder="Port"
-                className="h-10 rounded-lg border border-zinc-300 px-3 text-sm outline-none ring-blue-500/30 focus:ring-4"
+                className="industrial-input min-h-10"
               />
               <input
                 value={dbForm.database}
@@ -275,7 +283,7 @@ export default function DataSourcesPage() {
                   setDbForm((prev) => ({ ...prev, database: event.target.value }))
                 }
                 placeholder="Database name"
-                className="h-10 rounded-lg border border-zinc-300 px-3 text-sm outline-none ring-blue-500/30 focus:ring-4"
+                className="industrial-input min-h-10"
               />
               <input
                 value={dbForm.username}
@@ -283,7 +291,7 @@ export default function DataSourcesPage() {
                   setDbForm((prev) => ({ ...prev, username: event.target.value }))
                 }
                 placeholder="Username"
-                className="h-10 rounded-lg border border-zinc-300 px-3 text-sm outline-none ring-blue-500/30 focus:ring-4"
+                className="industrial-input min-h-10"
               />
               <input
                 type="password"
@@ -292,12 +300,12 @@ export default function DataSourcesPage() {
                   setDbForm((prev) => ({ ...prev, password: event.target.value }))
                 }
                 placeholder="Password"
-                className="h-10 rounded-lg border border-zinc-300 px-3 text-sm outline-none ring-blue-500/30 focus:ring-4"
+                className="industrial-input min-h-10"
               />
               <button
                 type="button"
                 onClick={addDbConnection}
-                className="inline-flex h-10 items-center justify-center rounded-lg bg-blue-600 px-4 text-sm font-semibold text-white hover:bg-blue-700"
+                className="btn-industrial-primary min-h-10 px-4 text-xs"
               >
                 Save Connection
               </button>
@@ -305,7 +313,7 @@ export default function DataSourcesPage() {
           ) : null}
 
           {dbSources.length === 0 ? (
-            <p className="rounded-xl border border-dashed border-zinc-300 p-6 text-sm text-zinc-500">
+            <p className="rounded-xl border border-dashed border-[#adb7c4] p-6 text-sm text-foreground-muted">
               No database connections yet.
             </p>
           ) : (
@@ -313,11 +321,11 @@ export default function DataSourcesPage() {
               {dbSources.map((source) => (
                 <li
                   key={source.id}
-                  className="flex items-center justify-between rounded-xl border border-zinc-200 bg-white p-4"
+                  className="industrial-card flex items-center justify-between p-4"
                 >
                   <div>
                     <p className="text-sm font-semibold">{source.name}</p>
-                    <p className="text-xs text-zinc-500">
+                    <p className="font-mono text-xs text-foreground-muted">
                       {source.host}:{source.port}
                       {source.database ? ` • ${source.database}` : ""}
                     </p>
@@ -325,7 +333,7 @@ export default function DataSourcesPage() {
                   <button
                     type="button"
                     onClick={() => removeSource(source.id)}
-                    className="rounded-lg px-3 py-1.5 text-xs font-semibold text-red-600 hover:bg-red-50"
+                    className="rounded-md px-3 py-1.5 text-xs font-bold uppercase tracking-[0.05em] text-accent transition hover:bg-[#ffd8dd]"
                   >
                     Remove
                   </button>
