@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "skills": {
+    "ai-artist": {
+      "source": "binhmuc/autobot-review",
+      "sourceType": "github",
+      "computedHash": "a8cd1d4ac88db340b6406678468d9325506f3a32db0868c98534ae4d6ff16936"
+    },
+    "logo-design-guide": {
+      "source": "inferen-sh/skills",
+      "sourceType": "github",
+      "computedHash": "88b6dab119da5e33c7a669f53cb3416ce1655f29c080c646c7e21cecd9198a81"
+    },
+    "scrapy-web-scraping": {
+      "source": "mindrally/skills",
+      "sourceType": "github",
+      "computedHash": "81ef1d3ae4058dcd39dafec2e77f81797e6134911f9252973e0cf534c1afe6ab"
+    }
+  }
+}

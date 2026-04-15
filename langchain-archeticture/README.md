@@ -28,7 +28,7 @@ This folder contains a LangGraph/LangChain tool-calling architecture for datasou
 from app.services.qwen_slm import LocalQwenChatModel
 from langchain_archeticture.detective_graph import build_detective_agent, run_detective
 
-llm = LocalQwenChatModel(model="qwen3:8b")
+llm = LocalQwenChatModel(model="qwen3.5:4b")
 agent = build_detective_agent(llm, data_dir="backend/uploads", db_url="")
 result = run_detective(agent, query="monthly sales by region")
 ```
