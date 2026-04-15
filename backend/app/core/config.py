@@ -7,9 +7,8 @@ class Settings(BaseSettings):
     """Application settings."""
     API_V1_STR: str = "/api/v1"
     PROJECT_NAME: str = "PromptDash API"
-    MODEL_NAME: str = "qwen:3b-8b"
     OLLAMA_BASE_URL: str = "http://localhost:11434"
-    OLLAMA_MODEL: str = "qwen3:8b"
+    OLLAMA_MODEL: str = "qwen3.5:4b"
     OLLAMA_TIMEOUT_SECONDS: int = 9000
     # Set to 0 to disable endpoint-level timeout.
     WORKFLOW_TIMEOUT_SECONDS: int = 0

@@ -209,7 +209,7 @@ async def generate_dashboard(request: DashboardRequest):
             "dashboard_html": html_content,
             "metadata": {
                 "request_id": request.request_id,
-                "model": "qwen2.5:3b (workflow)",
+                "model": f"{settings.OLLAMA_MODEL} (workflow)",
                 "plan": result.get("plan", {}),
                 "data_context": result.get("data_context", {}),
                 "agent_steps": [m.content for m in result.get("messages", [])],
