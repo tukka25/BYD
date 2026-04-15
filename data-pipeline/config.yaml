@@ -1,0 +1,45 @@
+paths:
+  seed_input: web-crawler/dataset/plotly_qwen_train.jsonl
+  eval_input: web-crawler/dataset/plotly_qwen_val.jsonl
+  work_dir: data-pipeline/runs/default
+
+split:
+  holdout_ratio: 0.10
+  random_seed: 42
+
+generation:
+  target_synth_per_seed: 2.5
+  rephrase_ratio: 0.60
+  max_generation_retries: 3
+  answer_aug_validation_regen_attempts: 2
+  test_max_rephrases: null
+  test_max_answer_aug: null
+  rephrase_workers: 4
+  answer_aug_workers: 4
+
+models:
+  rephrase_model: gpt-5.4-mini
+  answer_aug_model: gpt-5.4-mini
+  fallback_model: o3-mini
+
+openai:
+  temperature_rephrase: 0.5
+  temperature_answer_aug: 0.7
+  max_tokens_rephrase: 1000
+  max_tokens_answer_aug: 2000
+  max_requests_per_minute: 120
+
+validation:
+  require_plotly_import: true
+  require_figure_variable: true
+  require_render_call: true
+  min_code_chars: 80
+  max_code_chars: 12000
+  min_rephrase_chars: 20
+  max_rephrase_chars: 800
+  intent_min_keyword_overlap: 0.70
+  max_user_similarity: 0.98
+
+export:
+  output_file: plotly_qwen_train_synthetic_mix.jsonl
+  include_seed_rows: true
