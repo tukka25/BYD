@@ -1,0 +1,241 @@
+sessionStartDate,platform,gameMode,region,sessionDurationMinutes,matchesPlayed,inGameRevenue,playerRating
+2024-01-05,iOS,Casual,Asia Pacific,476.29,7,346.34,1.46
+2024-10-22,Android,Story,Middle East,316.97,50,324.77,4.04
+2024-01-27,Nintendo Switch,Co-op,Asia Pacific,316.4,8,430.65,2.28
+2024-12-08,Nintendo Switch,Casual,Latin America,418.88,36,233.8,0.67
+2024-08-15,iOS,Co-op,North America,382.51,57,169.66,0.12
+2025-04-16,Nintendo Switch,Casual,Asia Pacific,120.61,21,105.15,2.98
+2025-02-01,iOS,Story,Asia Pacific,17.31,51,286.68,3.21
+2025-01-24,Xbox,Co-op,North America,97.52,4,410.75,1.95
+2024-02-27,Android,Co-op,Asia Pacific,210.64,29,167.98,1.11
+2024-11-25,PlayStation,Story,Europe,118.98,16,305.07,4.92
+2024-12-29,Nintendo Switch,Story,Middle East,247.31,5,225.96,2.79
+2025-05-30,Xbox,Co-op,North America,328.9,48,410.26,3.57
+2024-12-07,iOS,Ranked,Asia Pacific,415.65,29,312.91,0.83
+2024-05-18,PC,Ranked,Latin America,50.83,43,490.63,2.98
+2024-10-06,Nintendo Switch,Casual,North America,91.7,29,261.54,1.28
+2024-10-01,PC,Co-op,Europe,199.28,60,284.47,3.94
+2024-12-01,Xbox,Story,Middle East,168.76,32,193.45,3.01
+2024-09-11,Nintendo Switch,Co-op,Middle East,111.28,42,176.88,1.85
+2025-01-09,Xbox,Casual,Europe,57.71,44,335.86,2.22
+2025-04-20,Xbox,Ranked,Latin America,257.67,57,235.97,1.7
+2024-04-24,iOS,Co-op,North America,393.39,21,295.32,2.13
+2025-04-13,PlayStation,Co-op,Latin America,474.41,16,196.97,3.38
+2024-08-10,PC,Casual,Middle East,472.88,56,264.42,1.79
+2025-05-02,Xbox,Ranked,Europe,189.97,43,348.79,4.79
+2024-12-30,Xbox,Ranked,Latin America,327.05,13,359.28,4.69
+2024-05-31,iOS,Battle Royale,North America,99.94,36,138.52,2.97
+2025-05-15,Nintendo Switch,Ranked,North America,304.31,18,299.14,0.39
+2024-09-30,PlayStation,Casual,North America,456.17,22,203.68,4.73
+2024-09-15,Android,Story,Europe,437.8,8,167.49,2.43
+2024-03-04,Nintendo Switch,Ranked,North America,139.73,9,294.4,4.41
+2025-06-11,PC,Story,North America,418.09,45,482.94,0.79
+2025-05-23,Nintendo Switch,Co-op,Middle East,410.68,29,388.45,3.03
+2024-11-30,iOS,Co-op,Europe,229.59,54,161.78,3.55
+2024-03-31,Nintendo Switch,Ranked,Middle East,56.89,44,115.22,4.74
+2024-03-01,Android,Story,Europe,423.33,35,72.98,2.79
+2024-11-20,PC,Story,Europe,151.01,13,490.63,3.34
+2025-05-29,PC,Story,Latin America,92.75,42,494.96,4.16
+2025-02-14,PC,Story,Middle East,300.36,31,307.92,3.52
+2024-01-26,Xbox,Story,Asia Pacific,328.74,44,342.37,3.11
+2024-09-23,iOS,Co-op,North America,88.03,57,209.26,2.4
+2025-01-05,Android,Co-op,Asia Pacific,369.39,44,487.79,4.95
+2024-06-24,Xbox,Casual,Europe,206.1,15,424.0,4.6
+2024-03-13,iOS,Ranked,Middle East,354.9,31,381.61,2.96
+2025-04-28,Xbox,Ranked,Middle East,75.12,22,100.73,3.39
+2024-09-05,iOS,Co-op,Asia Pacific,127.89,35,104.0,4.18
+2025-01-15,PC,Battle Royale,Latin America,477.37,4,122.39,2.4
+2024-01-11,Android,Battle Royale,Asia Pacific,195.08,53,236.59,4.67
+2025-03-06,Nintendo Switch,Ranked,Latin America,258.54,55,195.84,0.58
+2024-12-10,Xbox,Battle Royale,Europe,441.51,40,60.07,4.32
+2024-04-17,Nintendo Switch,Battle Royale,North America,246.58,44,108.21,1.48
+2025-01-07,Nintendo Switch,Casual,Middle East,135.09,42,70.2,3.28
+2024-10-09,Xbox,Ranked,Asia Pacific,110.7,23,84.92,4.67
+2024-07-11,iOS,Co-op,Middle East,237.75,56,61.43,0.08
+2024-09-11,Nintendo Switch,Ranked,Asia Pacific,324.71,30,99.0,2.31
+2024-06-18,PlayStation,Story,Europe,397.28,35,55.72,0.01
+2025-04-21,PC,Story,Europe,213.18,41,56.9,3.46
+2024-03-01,PlayStation,Co-op,Latin America,282.31,29,76.64,1.91
+2025-04-23,Android,Ranked,Europe,227.23,48,398.17,3.57
+2024-08-04,Nintendo Switch,Co-op,Asia Pacific,110.67,45,144.82,1.52
+2024-06-08,PC,Story,Asia Pacific,52.21,26,259.48,3.26
+2025-02-14,Nintendo Switch,Ranked,Europe,416.42,38,237.36,2.84
+2025-05-02,PC,Battle Royale,Middle East,477.17,44,455.45,2.47
+2025-04-12,Android,Ranked,Latin America,219.85,35,331.26,0.94
+2024-06-03,iOS,Story,Europe,43.36,14,240.83,2.83
+2024-11-20,Xbox,Ranked,Asia Pacific,103.1,19,141.57,4.26
+2025-06-13,Nintendo Switch,Battle Royale,North America,417.05,55,374.3,4.73
+2024-07-17,PC,Battle Royale,Latin America,245.72,7,66.46,3.35
+2024-03-08,PlayStation,Battle Royale,Europe,177.67,28,417.33,4.43
+2025-06-12,PlayStation,Ranked,Latin America,239.71,43,498.11,3.73
+2024-05-19,PC,Ranked,Europe,226.4,51,359.17,1.97
+2024-02-29,Nintendo Switch,Ranked,North America,72.32,17,243.02,4.73
+2024-10-12,Xbox,Story,Latin America,425.25,55,32.15,3.47
+2025-01-29,Nintendo Switch,Story,Asia Pacific,451.85,46,439.07,1.39
+2025-05-07,Xbox,Ranked,Middle East,247.6,27,94.38,2.26
+2024-08-08,PlayStation,Casual,Middle East,19.71,44,40.49,3.2
+2024-04-26,Android,Ranked,Asia Pacific,80.72,17,65.05,1.24
+2024-11-18,Android,Ranked,Latin America,450.64,42,424.46,1.25
+2025-03-11,Xbox,Battle Royale,Latin America,63.03,17,396.5,2.99
+2024-03-24,PlayStation,Battle Royale,Latin America,130.83,33,424.66,2.96
+2024-03-30,Android,Co-op,Asia Pacific,227.15,46,279.38,1.58
+2024-08-05,Nintendo Switch,Co-op,Asia Pacific,407.37,47,14.81,0.22
+2025-06-11,Xbox,Casual,North America,360.4,11,59.17,4.72
+2024-07-08,Xbox,Story,Europe,345.23,21,29.2,3.57
+2024-11-09,PC,Casual,North America,334.84,4,260.44,4.38
+2024-03-18,PlayStation,Battle Royale,North America,23.05,56,82.04,4.09
+2024-07-06,iOS,Battle Royale,Asia Pacific,154.09,42,261.34,0.37
+2024-02-29,Nintendo Switch,Story,Middle East,125.01,14,259.32,4.2
+2024-06-28,PC,Ranked,North America,106.71,27,220.01,2.54
+2024-06-19,PC,Co-op,North America,379.88,20,385.91,1.53
+2024-06-20,Nintendo Switch,Story,North America,246.35,56,235.46,4.45
+2025-05-23,Android,Casual,Middle East,157.28,21,263.33,0.57
+2024-01-31,PlayStation,Story,Latin America,473.79,26,98.6,2.59
+2025-01-06,PC,Co-op,Asia Pacific,372.29,38,470.75,4.9
+2024-07-26,iOS,Casual,North America,85.64,45,97.12,4.59
+2025-03-05,PlayStation,Story,Asia Pacific,11.4,13,149.72,1.5
+2024-06-14,PlayStation,Battle Royale,Europe,81.27,13,381.27,2.84
+2025-01-18,Xbox,Battle Royale,Latin America,194.25,56,294.89,2.35
+2024-06-04,iOS,Ranked,Europe,319.72,22,154.54,0.22
+2024-08-09,PlayStation,Co-op,Europe,210.87,22,40.42,2.76
+2024-02-09,Nintendo Switch,Story,Middle East,264.16,38,390.32,0.72
+2024-01-17,Nintendo Switch,Battle Royale,Middle East,115.24,39,424.88,2.61
+2024-05-07,iOS,Story,Europe,225.65,21,86.39,2.3
+2024-07-06,iOS,Ranked,Europe,21.35,17,94.18,3.26
+2025-06-19,PlayStation,Co-op,Middle East,170.17,11,355.04,0.31
+2024-05-07,Xbox,Ranked,Europe,124.11,31,11.77,0.13
+2025-05-11,Android,Story,Europe,57.4,49,263.57,0.09
+2024-10-01,Nintendo Switch,Story,Europe,446.8,58,483.47,1.88
+2024-03-18,Xbox,Ranked,Latin America,376.67,51,389.04,4.68
+2025-01-24,PC,Ranked,Middle East,138.93,29,286.43,3.11
+2025-05-02,Nintendo Switch,Battle Royale,North America,211.03,57,471.84,4.84
+2024-08-31,Nintendo Switch,Ranked,Latin America,4.65,48,239.17,3.78
+2024-04-20,Android,Casual,Europe,51.04,42,439.28,3.23
+2024-08-22,Android,Ranked,Middle East,269.02,9,339.44,3.59
+2024-12-14,PC,Casual,Europe,429.83,4,116.41,1.09
+2024-06-21,Android,Casual,Latin America,372.72,10,233.88,3.18
+2024-06-29,Xbox,Battle Royale,Middle East,340.5,57,482.45,3.71
+2025-06-20,Nintendo Switch,Battle Royale,Latin America,399.52,47,418.42,4.85
+2025-03-04,Android,Battle Royale,Middle East,244.17,60,302.34,1.66
+2024-10-09,Xbox,Co-op,Middle East,387.98,31,255.4,2.6
+2025-04-21,Xbox,Casual,Asia Pacific,243.08,36,13.55,1.97
+2024-07-12,Xbox,Ranked,Asia Pacific,450.7,9,466.94,3.94
+2024-04-24,Android,Co-op,Middle East,417.89,49,425.6,0.1
+2024-05-24,Nintendo Switch,Story,Latin America,450.47,32,423.84,3.69
+2024-10-05,iOS,Co-op,Latin America,203.61,48,154.7,4.41
+2024-07-22,Android,Casual,Europe,367.72,2,315.68,1.4
+2025-04-18,Xbox,Battle Royale,North America,472.81,5,337.48,4.43
+2024-08-01,Xbox,Ranked,North America,212.6,59,392.08,1.04
+2024-08-29,Nintendo Switch,Casual,North America,50.15,59,89.95,4.88
+2024-12-31,Xbox,Casual,Asia Pacific,208.96,57,232.13,0.81
+2024-10-23,PC,Battle Royale,North America,139.53,10,218.59,2.55
+2024-09-16,PC,Casual,Asia Pacific,36.29,26,202.37,0.75
+2025-05-02,PC,Battle Royale,Europe,168.03,17,77.44,3.74
+2024-07-15,iOS,Casual,North America,221.38,26,222.97,1.83
+2025-01-06,PC,Story,Asia Pacific,144.41,30,261.01,3.11
+2024-11-02,PlayStation,Casual,Europe,197.82,12,288.83,4.86
+2024-09-13,Xbox,Ranked,North America,453.71,5,105.68,2.09
+2024-11-12,Nintendo Switch,Casual,Latin America,466.0,32,196.72,4.66
+2024-10-13,Nintendo Switch,Battle Royale,Middle East,321.75,23,62.79,3.83
+2024-09-16,Xbox,Ranked,Europe,311.0,55,340.26,1.39
+2025-04-04,Android,Co-op,Latin America,347.25,55,108.53,1.29
+2024-03-08,iOS,Battle Royale,Asia Pacific,63.47,49,176.41,2.15
+2024-01-24,Nintendo Switch,Ranked,Asia Pacific,277.42,54,201.93,3.0
+2025-02-13,PlayStation,Story,Middle East,478.56,22,236.9,4.31
+2024-01-27,Xbox,Story,North America,443.42,9,14.46,0.39
+2024-10-16,PlayStation,Battle Royale,North America,84.76,31,118.72,4.34
+2024-05-26,PlayStation,Battle Royale,Latin America,451.9,32,418.12,1.87
+2025-02-17,Xbox,Casual,Latin America,13.96,50,405.92,1.75
+2025-01-13,Android,Battle Royale,Middle East,211.49,41,77.43,3.72
+2024-08-21,Android,Co-op,Middle East,351.07,48,479.61,3.9
+2024-12-01,PC,Ranked,North America,153.28,24,393.78,1.15
+2024-04-15,PC,Casual,Middle East,211.38,31,426.78,4.58
+2025-01-17,PlayStation,Ranked,Latin America,330.61,35,313.05,4.07
+2024-10-13,Xbox,Casual,Middle East,367.07,18,180.82,0.1
+2024-05-23,PC,Ranked,North America,365.66,7,487.34,0.0
+2025-04-30,iOS,Casual,Europe,194.74,45,371.59,2.48
+2024-07-23,Nintendo Switch,Co-op,Latin America,461.21,52,494.86,3.99
+2024-09-05,Nintendo Switch,Ranked,Latin America,249.13,42,163.41,0.55
+2024-09-26,PC,Story,North America,477.31,19,145.56,0.34
+2024-03-19,PlayStation,Ranked,Europe,209.87,21,374.32,4.49
+2024-01-05,PC,Ranked,Europe,96.79,47,361.9,0.9
+2024-07-14,Xbox,Story,Latin America,1.33,22,7.04,3.18
+2024-07-04,Xbox,Casual,Middle East,211.55,35,101.81,0.92
+2024-10-29,PC,Story,Middle East,116.02,4,33.85,0.81
+2025-06-14,iOS,Battle Royale,Latin America,181.24,31,323.06,3.89
+2024-01-02,Android,Casual,Middle East,206.12,47,249.18,4.54
+2024-03-20,PC,Co-op,Europe,102.7,40,291.52,2.1
+2024-05-12,Android,Battle Royale,Asia Pacific,317.25,13,7.92,4.64
+2024-08-31,Xbox,Casual,Latin America,111.75,42,52.25,1.35
+2025-01-07,Nintendo Switch,Ranked,Asia Pacific,111.35,11,401.03,0.08
+2024-08-04,PlayStation,Battle Royale,North America,460.22,25,339.44,1.19
+2024-03-03,Nintendo Switch,Ranked,Europe,131.96,15,427.26,0.67
+2024-04-20,PlayStation,Casual,Europe,351.22,58,481.9,2.53
+2025-01-24,iOS,Battle Royale,North America,273.81,21,405.51,0.77
+2024-08-28,Nintendo Switch,Co-op,Europe,71.36,43,359.87,2.92
+2024-08-02,iOS,Battle Royale,Latin America,317.69,30,186.72,1.79
+2024-09-13,Android,Co-op,Asia Pacific,330.51,58,210.33,4.9
+2024-04-02,PlayStation,Story,Asia Pacific,434.34,55,127.44,0.01
+2025-03-02,Xbox,Story,North America,153.66,32,127.73,0.25
+2024-03-19,Android,Battle Royale,Middle East,178.74,31,93.74,3.29
+2025-04-27,iOS,Battle Royale,Europe,352.99,4,68.01,4.1
+2025-01-12,PlayStation,Co-op,Asia Pacific,294.61,6,185.63,2.13
+2024-04-28,Android,Ranked,Latin America,368.16,22,196.56,3.79
+2025-04-25,Nintendo Switch,Ranked,Europe,415.23,6,444.45,0.35
+2024-03-21,Android,Battle Royale,Latin America,132.54,58,196.13,3.13
+2024-06-08,Xbox,Co-op,Middle East,106.38,56,429.63,4.38
+2025-03-05,Android,Story,Europe,206.94,14,35.93,1.08
+2025-02-20,Xbox,Story,Latin America,414.04,3,445.36,0.01
+2025-04-10,Android,Battle Royale,North America,468.65,11,341.24,3.12
+2024-12-08,PC,Ranked,Europe,259.47,18,222.67,1.32
+2024-01-06,Nintendo Switch,Casual,Europe,271.86,58,478.67,3.76
+2024-10-25,iOS,Casual,North America,168.23,56,2.71,2.66
+2025-05-20,PC,Story,Asia Pacific,14.24,17,459.05,1.35
+2024-02-20,Nintendo Switch,Story,Middle East,260.14,15,206.27,0.82
+2024-03-10,Xbox,Co-op,Middle East,286.1,6,263.75,1.2
+2024-02-05,PlayStation,Story,Latin America,437.76,22,7.23,4.1
+2024-09-18,Nintendo Switch,Casual,North America,11.58,59,187.19,0.69
+2024-08-11,Nintendo Switch,Casual,Latin America,88.03,55,168.66,0.4
+2024-08-01,iOS,Ranked,Latin America,139.94,23,438.0,2.2
+2025-02-10,iOS,Casual,North America,398.31,17,150.31,3.65
+2024-02-14,Nintendo Switch,Ranked,Europe,349.33,48,210.01,1.48
+2024-08-04,Android,Co-op,Asia Pacific,73.61,17,427.45,4.38
+2025-01-18,Nintendo Switch,Co-op,Latin America,245.96,11,440.05,1.69
+2024-08-28,iOS,Co-op,Asia Pacific,394.26,14,366.28,0.8
+2024-04-19,iOS,Battle Royale,Middle East,409.21,25,353.53,2.27
+2024-10-23,PlayStation,Battle Royale,Europe,397.35,22,125.0,4.98
+2025-05-14,Nintendo Switch,Ranked,Middle East,124.12,5,258.4,4.32
+2024-05-10,Nintendo Switch,Ranked,Asia Pacific,129.6,39,256.05,3.59
+2024-09-29,Xbox,Story,Asia Pacific,398.4,14,455.51,4.29
+2025-04-17,Nintendo Switch,Story,Europe,342.75,53,319.38,3.23
+2025-01-16,Xbox,Casual,Asia Pacific,48.08,27,107.79,0.04
+2025-05-23,PC,Casual,Asia Pacific,464.35,45,34.62,3.01
+2024-08-16,PC,Co-op,North America,348.77,25,191.18,0.97
+2024-02-02,Xbox,Casual,Middle East,336.26,55,299.34,0.51
+2024-12-27,Android,Casual,Asia Pacific,27.87,59,81.85,1.61
+2024-07-19,iOS,Story,Latin America,325.96,60,41.88,1.96
+2024-01-05,Nintendo Switch,Battle Royale,Asia Pacific,251.05,40,1.67,4.85
+2024-03-05,Android,Story,Europe,204.16,35,76.99,3.06
+2024-04-06,PC,Casual,Europe,425.24,35,36.54,4.6
+2024-12-10,Xbox,Co-op,Middle East,336.86,31,328.15,2.24
+2024-12-16,iOS,Story,Middle East,380.44,14,456.2,0.72
+2024-02-10,Xbox,Battle Royale,Asia Pacific,284.31,9,164.07,2.23
+2024-01-11,Nintendo Switch,Casual,Latin America,301.12,7,245.59,4.38
+2025-05-30,iOS,Co-op,Latin America,335.82,45,82.45,4.48
+2024-03-11,PC,Co-op,Middle East,259.21,40,188.75,3.73
+2025-02-08,iOS,Ranked,Asia Pacific,2.98,15,11.64,3.21
+2024-05-31,PlayStation,Battle Royale,Europe,390.97,31,343.58,1.24
+2024-10-28,iOS,Ranked,Middle East,455.41,10,139.66,1.09
+2025-01-23,Xbox,Casual,North America,77.72,34,300.89,2.42
+2025-04-08,PC,Casual,North America,477.57,53,39.99,2.6
+2024-06-04,Android,Story,Middle East,291.76,50,489.02,0.02
+2024-11-05,Xbox,Battle Royale,Europe,215.68,34,68.38,2.2
+2024-03-19,PlayStation,Casual,Middle East,168.98,39,377.12,2.62
+2025-01-25,iOS,Battle Royale,Latin America,240.32,17,415.06,3.65
+2025-04-14,Nintendo Switch,Battle Royale,Asia Pacific,332.18,38,236.04,3.5
+2025-05-07,Android,Casual,Asia Pacific,79.29,31,447.19,2.81
+2024-09-04,Android,Story,North America,355.9,10,8.79,0.83
+2024-05-07,Xbox,Ranked,Middle East,109.88,42,88.56,0.13
+2025-06-03,PC,Ranked,Europe,1.07,52,45.19,2.04
+2024-12-29,iOS,Story,Asia Pacific,146.95,23,194.83,3.26
+2025-06-19,Xbox,Casual,Asia Pacific,142.0,10,434.06,2.3

@@ -1,0 +1,241 @@
+reading_date,site_name,energy_source,building_zone,total_energy_consumed_kwh,peak_demand_kw,energy_cost_usd,carbon_emissions_kg
+2024-05-22,South Warehouse,wind_power,loading_dock,2137.84,1718.07,22336.42,67205.18
+2024-01-19,West Office Campus,grid_electricity,server_room,216814.15,4427.9,48232.71,26547.84
+2024-03-30,East Distribution Center,solar_pv,server_room,199504.03,3436.29,2424.4,71108.96
+2024-02-15,Riverside Factory,natural_gas,production_floor,47818.72,6413.7,45730.91,86504.24
+2024-08-01,North Plant,wind_power,server_room,184848.64,7945.83,12982.77,57399.85
+2025-02-27,North Plant,diesel_backup,cafeteria,134904.67,6038.24,26154.82,68837.13
+2024-07-10,North Plant,natural_gas,server_room,154735.92,5537.73,30426.03,81003.32
+2024-06-11,North Plant,grid_electricity,production_floor,155162.35,5519.11,40868.82,77914.37
+2025-06-17,North Plant,solar_pv,office_area,143333.17,1288.39,33094.79,13857.03
+2024-11-23,East Distribution Center,diesel_backup,cafeteria,39449.32,11622.9,10918.44,20826.37
+2024-04-27,East Distribution Center,grid_electricity,warehouse_storage,150481.21,11818.29,24788.56,2128.87
+2024-04-02,Central Data Hub,natural_gas,warehouse_storage,9040.69,5806.43,35663.06,41792.42
+2024-10-18,North Plant,diesel_backup,production_floor,67580.53,181.29,7715.65,51922.23
+2024-03-30,Riverside Factory,solar_pv,warehouse_storage,100841.25,7023.95,36861.1,67809.57
+2025-04-08,East Distribution Center,solar_pv,office_area,180399.16,9081.22,2260.78,46225.01
+2024-12-16,South Warehouse,diesel_backup,warehouse_storage,59157.07,1701.53,53212.04,23770.92
+2024-09-25,Central Data Hub,wind_power,server_room,107053.52,1911.92,42805.09,34193.62
+2024-11-10,West Office Campus,grid_electricity,production_floor,124148.11,6659.09,44371.36,27298.87
+2024-06-05,South Warehouse,solar_pv,office_area,114755.56,7822.73,9785.73,24622.64
+2024-12-11,East Distribution Center,diesel_backup,warehouse_storage,192331.45,11080.1,11498.14,61611.35
+2024-10-17,North Plant,solar_pv,warehouse_storage,207324.14,4394.1,28888.51,19380.17
+2024-07-18,North Plant,grid_electricity,cafeteria,19606.29,11016.25,6671.05,5967.46
+2024-11-08,Riverside Factory,wind_power,warehouse_storage,175080.42,8354.8,37214.48,67056.15
+2024-01-02,North Plant,wind_power,cafeteria,237480.86,11431.21,48892.55,69121.18
+2024-10-09,South Warehouse,diesel_backup,cafeteria,48945.97,1973.3,54127.6,51584.67
+2025-05-30,North Plant,grid_electricity,loading_dock,139485.67,10702.85,38799.14,50461.22
+2025-03-15,North Plant,solar_pv,production_floor,163943.99,11840.92,55541.13,84772.17
+2025-01-14,North Plant,natural_gas,loading_dock,124391.88,10776.45,2560.08,53637.88
+2025-04-05,Riverside Factory,solar_pv,server_room,127153.69,6312.24,59024.78,77978.88
+2025-03-02,South Warehouse,natural_gas,warehouse_storage,50941.02,7886.42,13115.95,24982.4
+2024-12-24,North Plant,solar_pv,cafeteria,123461.57,5723.98,14124.29,74856.49
+2024-10-21,North Plant,natural_gas,loading_dock,205882.49,456.84,12554.92,28621.68
+2025-05-07,Central Data Hub,grid_electricity,production_floor,181972.05,2331.8,56771.81,15683.21
+2024-11-15,Riverside Factory,natural_gas,warehouse_storage,223922.09,2312.03,35623.95,52094.05
+2024-03-22,South Warehouse,wind_power,warehouse_storage,53080.5,10226.98,15419.3,33895.65
+2024-11-20,South Warehouse,diesel_backup,cafeteria,163665.96,4385.41,51128.1,75182.86
+2024-01-31,Central Data Hub,natural_gas,production_floor,27147.47,3942.53,44710.56,68089.61
+2025-04-02,West Office Campus,diesel_backup,cafeteria,15267.03,8740.4,26915.93,16386.53
+2024-01-19,South Warehouse,solar_pv,production_floor,148630.31,3751.8,16265.61,29300.22
+2024-12-11,West Office Campus,natural_gas,warehouse_storage,558.97,8495.26,27930.63,53191.59
+2024-08-09,West Office Campus,natural_gas,production_floor,19313.65,4746.75,34560.71,33784.74
+2024-04-03,North Plant,natural_gas,server_room,94741.19,7585.15,1968.66,43170.22
+2024-01-13,North Plant,diesel_backup,office_area,86332.28,2067.98,7691.4,79307.83
+2025-01-31,Central Data Hub,natural_gas,office_area,228880.17,1828.32,23289.79,28404.68
+2024-02-28,Central Data Hub,natural_gas,cafeteria,80312.77,2534.5,8127.14,66405.11
+2024-04-01,Riverside Factory,natural_gas,loading_dock,184291.19,4545.76,26200.91,67467.72
+2024-10-15,East Distribution Center,natural_gas,server_room,227963.78,9628.75,44572.89,32567.55
+2024-03-24,Riverside Factory,grid_electricity,loading_dock,23432.64,3365.63,24265.92,50147.7
+2025-03-17,West Office Campus,grid_electricity,loading_dock,103441.03,10568.81,35330.89,72730.9
+2025-06-13,West Office Campus,grid_electricity,cafeteria,215485.0,1889.31,29702.68,80286.7
+2024-01-05,Riverside Factory,solar_pv,cafeteria,131644.76,11859.71,55497.11,75967.69
+2024-12-06,Riverside Factory,natural_gas,warehouse_storage,28249.56,5031.93,54810.72,52259.85
+2024-08-17,West Office Campus,natural_gas,cafeteria,73540.44,2868.83,12574.33,25428.38
+2025-03-06,West Office Campus,diesel_backup,warehouse_storage,191125.34,6191.22,37353.15,45444.16
+2024-12-11,South Warehouse,natural_gas,server_room,84391.86,7453.32,48410.64,29854.85
+2024-07-20,Central Data Hub,natural_gas,warehouse_storage,110202.39,3718.63,59847.06,9002.64
+2025-04-10,Riverside Factory,diesel_backup,production_floor,210095.51,9662.54,38470.87,35619.59
+2024-02-06,North Plant,solar_pv,loading_dock,183069.17,3017.78,485.37,35980.11
+2024-08-10,East Distribution Center,wind_power,loading_dock,80638.14,3116.55,28257.81,29537.88
+2024-03-11,North Plant,diesel_backup,production_floor,203683.14,10311.52,40787.55,79398.14
+2024-12-22,North Plant,wind_power,production_floor,214569.35,2029.49,58975.65,27381.6
+2025-01-23,South Warehouse,wind_power,server_room,228266.18,11880.94,27316.28,76363.48
+2024-12-28,North Plant,solar_pv,production_floor,79124.68,5997.86,41285.79,16488.1
+2024-07-21,South Warehouse,natural_gas,office_area,224330.7,7779.08,18497.86,74218.41
+2024-10-26,Central Data Hub,wind_power,cafeteria,196675.6,8694.46,19102.18,67890.48
+2024-01-06,East Distribution Center,wind_power,loading_dock,73616.61,204.77,5668.93,21355.43
+2024-10-17,Central Data Hub,solar_pv,office_area,126343.05,10885.14,55147.56,20733.68
+2025-04-16,North Plant,grid_electricity,office_area,94337.58,4149.67,26774.05,65888.26
+2024-08-23,South Warehouse,wind_power,loading_dock,23152.65,11118.35,36402.5,43900.41
+2024-01-27,North Plant,grid_electricity,office_area,142550.06,4100.15,38737.7,50343.43
+2024-11-04,North Plant,wind_power,office_area,157435.31,7167.12,58317.27,31019.69
+2024-05-18,South Warehouse,wind_power,warehouse_storage,195930.2,1045.77,31339.97,33633.87
+2025-05-11,North Plant,grid_electricity,production_floor,102214.08,3499.77,25912.6,4041.58
+2024-08-13,West Office Campus,grid_electricity,office_area,176924.99,5307.42,16173.35,40585.02
+2024-10-24,Central Data Hub,wind_power,loading_dock,248536.93,2939.38,43011.62,2742.31
+2025-03-28,North Plant,grid_electricity,cafeteria,7696.01,2746.03,892.54,77280.73
+2024-05-14,West Office Campus,diesel_backup,cafeteria,210789.51,3543.11,35783.54,82901.72
+2024-06-08,Central Data Hub,grid_electricity,loading_dock,116482.41,4683.21,23257.18,76893.62
+2024-08-23,West Office Campus,natural_gas,cafeteria,135725.03,6092.94,14053.2,85147.34
+2024-12-06,West Office Campus,diesel_backup,server_room,115147.65,6622.93,9541.09,75799.98
+2024-11-07,Central Data Hub,solar_pv,production_floor,22123.17,4907.76,49567.24,80420.49
+2024-10-31,South Warehouse,solar_pv,server_room,170387.67,4798.22,26055.4,25090.52
+2025-03-19,South Warehouse,natural_gas,cafeteria,212687.77,117.32,5125.52,78053.22
+2024-09-23,North Plant,diesel_backup,warehouse_storage,177616.02,5489.16,16953.31,37263.95
+2025-01-01,South Warehouse,diesel_backup,production_floor,93073.86,10338.15,33829.75,47683.93
+2024-07-13,North Plant,solar_pv,cafeteria,194056.03,2748.63,57601.09,14047.24
+2025-02-25,North Plant,wind_power,loading_dock,205317.92,6227.23,46105.97,80960.13
+2024-04-19,West Office Campus,solar_pv,office_area,226655.09,10957.79,45528.81,45466.12
+2025-06-17,Riverside Factory,solar_pv,warehouse_storage,84979.95,6049.46,54784.49,72508.02
+2025-02-22,Central Data Hub,diesel_backup,server_room,196611.51,10223.78,32808.34,24051.27
+2024-06-13,North Plant,grid_electricity,office_area,227136.48,7812.85,8390.88,41124.02
+2024-11-21,Riverside Factory,wind_power,loading_dock,19187.63,2216.86,11139.93,30018.0
+2025-04-22,Riverside Factory,wind_power,loading_dock,49448.03,3982.83,153.92,22837.85
+2025-03-31,East Distribution Center,grid_electricity,loading_dock,155198.09,3666.72,35732.72,78520.09
+2025-02-21,Central Data Hub,grid_electricity,office_area,162879.96,3544.38,10072.69,7700.01
+2025-06-20,West Office Campus,wind_power,production_floor,63049.49,8100.52,7975.22,35849.92
+2024-02-19,South Warehouse,wind_power,cafeteria,89029.51,5907.6,17362.77,71527.46
+2024-01-18,East Distribution Center,grid_electricity,loading_dock,180857.77,5213.71,10884.35,70680.28
+2024-02-15,West Office Campus,grid_electricity,server_room,33138.46,7526.36,50634.15,54230.97
+2024-06-04,Central Data Hub,solar_pv,production_floor,178721.09,8051.19,35518.33,39746.35
+2025-05-30,Riverside Factory,diesel_backup,office_area,78831.7,3999.94,5429.63,29601.33
+2025-05-03,South Warehouse,diesel_backup,production_floor,132487.31,4145.29,50725.09,38878.07
+2024-03-23,West Office Campus,diesel_backup,warehouse_storage,109992.62,8819.36,38784.53,79716.82
+2024-01-19,Central Data Hub,grid_electricity,cafeteria,18108.78,6095.01,8564.24,8345.03
+2025-04-12,North Plant,diesel_backup,warehouse_storage,151009.11,10080.71,13746.55,40725.74
+2025-04-19,North Plant,diesel_backup,production_floor,227145.72,9304.57,37600.86,74920.77
+2025-02-01,North Plant,natural_gas,loading_dock,209042.44,2221.68,31329.8,84314.59
+2024-06-03,West Office Campus,natural_gas,warehouse_storage,212111.88,5685.17,2541.81,35821.14
+2024-11-08,Riverside Factory,natural_gas,office_area,160067.15,5476.49,35083.52,19576.69
+2025-01-31,West Office Campus,grid_electricity,office_area,62603.81,6716.69,46451.15,15549.59
+2024-03-19,South Warehouse,diesel_backup,production_floor,104347.95,4202.54,50909.23,69777.0
+2024-04-02,North Plant,natural_gas,warehouse_storage,107033.6,4302.31,58908.64,80233.74
+2024-12-06,South Warehouse,grid_electricity,server_room,155651.36,60.97,23647.13,13300.78
+2024-05-03,West Office Campus,diesel_backup,cafeteria,4037.86,2872.58,17528.97,76222.96
+2025-05-22,East Distribution Center,grid_electricity,server_room,118914.67,5907.4,29269.34,34427.58
+2024-12-23,Riverside Factory,solar_pv,cafeteria,28472.65,4401.64,12701.46,26569.43
+2024-04-24,East Distribution Center,natural_gas,cafeteria,31670.78,7248.9,40519.76,40908.93
+2024-10-05,Riverside Factory,diesel_backup,cafeteria,2588.2,2631.56,31506.63,36414.88
+2025-02-18,Central Data Hub,wind_power,cafeteria,133494.41,2954.44,45975.28,70635.02
+2025-03-18,Riverside Factory,diesel_backup,loading_dock,52289.13,11670.3,38368.8,51829.16
+2024-07-29,Central Data Hub,natural_gas,loading_dock,154045.49,6611.46,48559.88,65016.9
+2025-03-16,East Distribution Center,wind_power,office_area,245682.39,8058.28,38936.28,48303.5
+2025-01-18,Central Data Hub,natural_gas,server_room,104100.19,5952.01,43124.46,14570.26
+2025-01-07,Central Data Hub,diesel_backup,loading_dock,27009.18,9297.53,9028.34,82587.16
+2024-06-11,North Plant,solar_pv,office_area,10260.32,9734.02,11478.82,79244.61
+2024-01-01,Central Data Hub,natural_gas,server_room,156239.2,2113.38,49569.14,85957.68
+2024-01-23,East Distribution Center,diesel_backup,cafeteria,104531.53,6484.61,42628.57,54138.4
+2025-04-06,East Distribution Center,wind_power,server_room,173102.61,2937.9,29783.67,62042.93
+2025-01-25,North Plant,wind_power,office_area,206151.23,8842.67,4440.7,50275.6
+2024-05-11,East Distribution Center,natural_gas,production_floor,108772.19,5393.45,24319.68,69314.93
+2024-04-11,South Warehouse,diesel_backup,loading_dock,109616.62,2348.58,39939.6,84548.61
+2025-03-07,Riverside Factory,diesel_backup,warehouse_storage,35562.64,1149.98,6668.61,25733.61
+2024-05-19,West Office Campus,natural_gas,office_area,124888.8,1367.68,50970.3,59896.82
+2024-01-14,North Plant,grid_electricity,server_room,165947.04,2186.58,24162.62,57624.27
+2024-03-06,East Distribution Center,diesel_backup,server_room,68356.9,3116.84,25068.67,73897.39
+2024-05-26,Central Data Hub,solar_pv,loading_dock,25142.88,5726.19,46867.95,55491.59
+2024-06-30,Central Data Hub,grid_electricity,loading_dock,118664.88,2653.88,21160.33,76348.61
+2024-01-02,South Warehouse,solar_pv,loading_dock,105063.51,11867.98,22846.94,20591.7
+2025-04-14,North Plant,solar_pv,office_area,140281.42,1838.09,16263.5,479.35
+2025-05-23,Riverside Factory,diesel_backup,loading_dock,33492.97,4878.51,22639.96,59495.44
+2024-02-26,North Plant,solar_pv,office_area,79786.48,4481.21,45453.65,42108.87
+2025-01-07,North Plant,natural_gas,server_room,42281.62,9460.65,18303.89,80297.8
+2025-01-10,Riverside Factory,solar_pv,loading_dock,7849.23,2788.23,46273.63,69582.54
+2024-08-03,North Plant,wind_power,warehouse_storage,224296.6,1246.61,13450.46,68233.64
+2025-03-16,North Plant,grid_electricity,server_room,96685.05,8888.48,3856.12,14352.68
+2024-04-18,East Distribution Center,solar_pv,loading_dock,148897.66,10358.29,49920.56,80144.19
+2025-02-12,Riverside Factory,diesel_backup,office_area,53556.42,9707.89,40936.49,73850.36
+2024-04-28,West Office Campus,solar_pv,production_floor,212931.85,1719.41,21420.32,55681.73
+2025-04-20,East Distribution Center,solar_pv,warehouse_storage,85031.12,11165.21,38702.27,37427.44
+2024-05-05,Central Data Hub,solar_pv,warehouse_storage,160299.75,9242.77,11487.8,19127.55
+2024-11-24,South Warehouse,wind_power,server_room,126805.6,4269.21,9441.54,30696.85
+2024-04-28,North Plant,wind_power,warehouse_storage,146404.65,5077.16,16856.17,42625.61
+2024-11-25,North Plant,solar_pv,office_area,132435.39,2480.84,4328.13,86392.75
+2024-06-08,East Distribution Center,diesel_backup,loading_dock,159444.09,11058.84,52008.09,55914.3
+2025-06-06,Central Data Hub,diesel_backup,loading_dock,142905.04,7529.66,1832.14,33323.26
+2025-03-10,West Office Campus,natural_gas,warehouse_storage,194584.17,5462.08,58363.73,54508.39
+2024-04-16,East Distribution Center,solar_pv,server_room,80215.69,2899.43,52045.12,33296.38
+2024-04-15,East Distribution Center,wind_power,production_floor,161137.99,2218.0,34165.33,26635.01
+2025-02-27,Central Data Hub,solar_pv,server_room,126128.32,589.79,21906.46,14460.74
+2024-01-06,South Warehouse,wind_power,server_room,161671.5,8298.54,41373.78,60960.11
+2025-02-12,East Distribution Center,wind_power,warehouse_storage,160204.67,9192.28,33173.58,42740.09
+2025-03-03,North Plant,natural_gas,loading_dock,174046.55,7597.53,10990.49,63944.86
+2025-04-18,Riverside Factory,solar_pv,loading_dock,144570.35,418.43,12869.54,16995.55
+2025-01-16,Central Data Hub,solar_pv,loading_dock,36590.0,7365.07,41950.53,65963.93
+2024-11-15,Central Data Hub,solar_pv,production_floor,2572.76,6758.06,46213.24,63558.61
+2024-10-16,South Warehouse,wind_power,warehouse_storage,88966.75,8218.23,40227.19,24125.21
+2025-05-03,East Distribution Center,grid_electricity,server_room,94864.52,1780.06,1875.3,7731.59
+2024-01-28,West Office Campus,solar_pv,loading_dock,32419.51,493.6,51297.94,12167.28
+2024-10-26,Central Data Hub,grid_electricity,cafeteria,112357.4,1824.77,55517.89,8804.78
+2025-01-21,East Distribution Center,solar_pv,office_area,189970.67,3046.46,38204.81,67756.2
+2025-01-15,North Plant,grid_electricity,production_floor,161627.08,5139.02,56392.37,33988.67
+2024-11-06,North Plant,diesel_backup,production_floor,120226.77,9048.04,58752.79,70922.25
+2024-03-09,Riverside Factory,wind_power,cafeteria,99136.67,10997.79,9790.0,13442.41
+2024-08-30,Riverside Factory,natural_gas,office_area,127313.69,8256.04,28116.99,59915.87
+2024-03-12,West Office Campus,diesel_backup,warehouse_storage,226581.2,1246.9,59152.53,25607.84
+2025-02-02,East Distribution Center,wind_power,cafeteria,248678.03,7992.46,24032.96,35179.4
+2025-02-03,West Office Campus,natural_gas,warehouse_storage,88565.52,5371.6,42157.81,48711.57
+2024-04-30,South Warehouse,solar_pv,server_room,165535.32,7305.82,9978.58,5016.65
+2024-05-25,East Distribution Center,diesel_backup,warehouse_storage,85144.79,8946.82,35729.53,5760.63
+2024-06-20,Central Data Hub,natural_gas,loading_dock,190371.79,2539.27,52619.23,49190.86
+2024-09-01,North Plant,grid_electricity,office_area,211360.71,892.87,16855.23,21014.91
+2024-12-05,East Distribution Center,natural_gas,warehouse_storage,146758.57,342.94,30853.22,81562.59
+2025-06-15,West Office Campus,solar_pv,cafeteria,59757.22,9275.97,48944.47,59750.07
+2025-04-24,North Plant,natural_gas,production_floor,166990.98,10781.46,28762.59,75985.04
+2024-07-26,East Distribution Center,natural_gas,cafeteria,153106.36,5498.41,55662.0,84571.82
+2024-07-25,South Warehouse,wind_power,server_room,211063.87,7631.45,54645.39,48511.18
+2024-06-27,Riverside Factory,natural_gas,server_room,237400.64,5807.23,51113.94,33092.45
+2024-06-04,Central Data Hub,solar_pv,production_floor,154086.12,5721.81,57881.06,3331.04
+2024-02-06,West Office Campus,wind_power,warehouse_storage,50952.1,1699.17,10292.83,85685.07
+2024-08-19,North Plant,wind_power,server_room,150403.8,1702.97,20281.82,16212.61
+2025-03-02,North Plant,solar_pv,office_area,191434.87,386.74,1295.91,49757.86
+2025-06-17,Riverside Factory,grid_electricity,warehouse_storage,44198.04,5143.35,58287.51,83457.62
+2024-01-03,North Plant,natural_gas,production_floor,100018.32,3423.75,50872.48,39067.85
+2024-10-06,East Distribution Center,wind_power,production_floor,68454.59,5296.39,2076.07,82103.32
+2025-05-18,Central Data Hub,diesel_backup,cafeteria,111443.32,9312.14,13097.12,40112.52
+2024-01-27,Central Data Hub,grid_electricity,production_floor,46260.83,11846.75,37350.58,72021.26
+2024-06-16,South Warehouse,wind_power,cafeteria,127898.21,5660.33,38359.66,37692.06
+2024-01-12,Riverside Factory,grid_electricity,production_floor,241709.99,9336.77,29794.55,60553.05
+2024-03-11,West Office Campus,grid_electricity,cafeteria,17014.3,4168.5,44305.62,62210.71
+2024-04-21,Central Data Hub,natural_gas,warehouse_storage,14228.23,5816.04,29317.78,30784.83
+2024-01-03,North Plant,solar_pv,loading_dock,60516.77,3089.17,45500.49,50690.61
+2025-05-10,East Distribution Center,diesel_backup,loading_dock,235379.22,6458.57,7864.14,75265.37
+2024-10-30,North Plant,natural_gas,warehouse_storage,61780.81,10958.91,5351.9,69185.97
+2024-04-29,East Distribution Center,grid_electricity,office_area,44633.86,10264.41,59145.05,40718.85
+2024-07-31,Central Data Hub,solar_pv,office_area,82584.87,8387.79,17069.83,88494.05
+2024-03-30,South Warehouse,grid_electricity,office_area,147463.99,5242.85,53535.35,35407.0
+2024-03-14,North Plant,diesel_backup,cafeteria,20600.39,6665.17,48173.77,54891.52
+2024-04-29,North Plant,natural_gas,production_floor,239847.7,8450.27,38282.49,79492.67
+2025-01-18,West Office Campus,natural_gas,production_floor,138812.81,10654.37,5273.75,9512.14
+2024-09-08,East Distribution Center,solar_pv,server_room,160849.97,8767.51,21466.69,29260.17
+2024-04-14,South Warehouse,diesel_backup,cafeteria,60996.81,2434.21,43867.31,86450.57
+2025-06-01,East Distribution Center,solar_pv,cafeteria,248.93,6678.68,59489.74,40764.24
+2025-02-17,Central Data Hub,grid_electricity,server_room,127452.18,6031.19,30284.65,36537.76
+2024-04-11,Central Data Hub,grid_electricity,loading_dock,133419.97,9425.24,25460.38,39938.67
+2025-01-17,Riverside Factory,natural_gas,office_area,133893.97,4332.3,41657.34,30125.54
+2024-10-10,West Office Campus,natural_gas,server_room,102198.41,11697.73,42331.14,73364.77
+2024-01-09,South Warehouse,solar_pv,server_room,65907.33,11649.42,54902.49,524.14
+2025-06-15,East Distribution Center,wind_power,warehouse_storage,25981.96,1535.63,49603.56,73733.87
+2024-05-16,West Office Campus,grid_electricity,cafeteria,132891.09,6232.95,12122.73,11474.51
+2025-04-23,Riverside Factory,natural_gas,warehouse_storage,73405.35,3432.52,47791.25,58199.71
+2024-10-23,Central Data Hub,solar_pv,cafeteria,28233.55,4773.92,43278.36,340.73
+2025-04-29,South Warehouse,natural_gas,production_floor,167014.64,8146.61,45535.9,17524.35
+2024-08-06,East Distribution Center,wind_power,office_area,196191.36,8713.1,55651.98,50314.29
+2024-03-17,Central Data Hub,solar_pv,loading_dock,138048.29,3294.85,42596.97,86222.13
+2024-12-11,South Warehouse,diesel_backup,cafeteria,30301.25,8802.13,50867.88,80865.81
+2024-03-25,North Plant,natural_gas,office_area,232219.8,7659.36,56434.03,1010.76
+2024-12-03,West Office Campus,diesel_backup,office_area,60625.85,76.17,59973.34,66387.11
+2025-02-18,East Distribution Center,wind_power,production_floor,239469.51,5359.97,21701.76,28601.71
+2024-04-26,Central Data Hub,diesel_backup,server_room,163748.39,5345.24,51407.38,89981.1
+2024-01-23,Central Data Hub,wind_power,warehouse_storage,80788.14,4033.24,3446.78,23523.95
+2024-10-18,Central Data Hub,wind_power,server_room,167217.54,2948.44,52655.89,70761.04
+2024-07-06,South Warehouse,grid_electricity,loading_dock,156665.12,4439.82,20191.88,79470.15
+2024-03-01,South Warehouse,grid_electricity,warehouse_storage,225002.0,7614.87,3868.64,59755.02
+2024-11-27,Riverside Factory,wind_power,server_room,244273.08,9141.33,28622.05,20076.53
+2024-03-11,Riverside Factory,solar_pv,production_floor,97195.37,4780.27,32015.09,29240.77
+2024-03-18,North Plant,diesel_backup,cafeteria,22212.14,5381.42,51123.77,88565.38
+2024-04-27,Central Data Hub,diesel_backup,cafeteria,157527.3,115.67,23602.1,85669.12
+2024-11-18,North Plant,grid_electricity,production_floor,110335.09,9215.37,58689.03,64991.67
+2024-12-17,West Office Campus,diesel_backup,server_room,158813.5,9493.09,5988.03,43746.91
+2025-04-10,Riverside Factory,wind_power,office_area,127521.3,1147.5,32477.97,40747.25

@@ -1,0 +1,241 @@
+cargo_handling_date,cargo_terminal_code,cargo_type,cargo_direction,cargo_vessel_calls,cargo_tonnage,cargo_container_count,cargo_dwell_hours
+2025-04-13,T3-Container,Reefer,Transshipment,18,22924.38,6309,116.01
+2025-05-06,T3-Container,Containerized,Import,37,9540.17,3950,116.79
+2024-04-21,T3-Container,Reefer,Transshipment,28,10581.04,3069,152.73
+2024-01-25,T5-Liquid,Break Bulk,Export,15,50189.97,4107,147.05
+2024-11-02,T4-Bulk,Break Bulk,Import,32,66051.19,5368,191.68
+2025-06-21,T4-Bulk,Roll-on Roll-off,Transshipment,17,44507.44,52,78.04
+2025-06-09,T1-North,Reefer,Transshipment,17,85184.78,6076,199.76
+2025-04-05,T1-North,Bulk Dry,Transshipment,8,848.22,3087,27.55
+2024-06-24,T1-North,Bulk Dry,Export,19,68900.47,6376,215.92
+2024-10-09,T5-Liquid,Bulk Dry,Import,28,14312.32,2725,168.01
+2024-07-02,T4-Bulk,Containerized,Import,30,76208.07,3356,151.1
+2024-02-11,T4-Bulk,Break Bulk,Export,2,43970.8,2060,124.04
+2025-02-10,T4-Bulk,Containerized,Export,20,39672.42,2205,130.88
+2024-09-02,T3-Container,Liquid Bulk,Import,3,48942.9,2935,192.33
+2025-05-29,T2-South,Roll-on Roll-off,Import,25,37550.01,604,89.54
+2024-11-09,T1-North,Break Bulk,Export,17,73671.59,990,136.15
+2024-11-20,T5-Liquid,Bulk Dry,Transshipment,20,36338.76,2245,56.62
+2025-04-18,T2-South,Containerized,Transshipment,7,79566.15,2108,121.17
+2024-01-17,T1-North,Break Bulk,Export,38,5973.77,3296,31.02
+2024-06-28,T5-Liquid,Break Bulk,Transshipment,36,13447.47,896,67.0
+2024-12-12,T1-North,Liquid Bulk,Transshipment,19,67377.43,815,230.38
+2024-06-22,T4-Bulk,Liquid Bulk,Export,1,45076.86,696,127.41
+2025-03-18,T4-Bulk,Break Bulk,Export,32,26025.47,4901,223.8
+2024-05-03,T4-Bulk,Break Bulk,Transshipment,9,77687.36,1053,37.02
+2024-12-05,T5-Liquid,Liquid Bulk,Transshipment,36,40308.33,5457,36.74
+2024-04-28,T5-Liquid,Containerized,Transshipment,14,88863.67,2381,132.79
+2024-08-27,T3-Container,Liquid Bulk,Import,36,62063.47,4112,27.35
+2024-12-05,T5-Liquid,Bulk Dry,Transshipment,18,44134.65,5264,208.13
+2024-02-18,T3-Container,Containerized,Transshipment,34,36860.17,4866,164.74
+2025-05-29,T5-Liquid,Break Bulk,Import,20,39476.38,5377,68.48
+2024-12-16,T5-Liquid,Roll-on Roll-off,Import,23,61949.45,1678,173.64
+2025-03-01,T2-South,Bulk Dry,Transshipment,39,3007.18,6115,2.9
+2024-09-13,T1-North,Liquid Bulk,Export,32,14010.98,5855,97.37
+2025-06-15,T1-North,Roll-on Roll-off,Transshipment,22,83860.7,3794,119.37
+2024-01-22,T3-Container,Bulk Dry,Export,1,67336.05,2046,127.54
+2024-01-07,T3-Container,Break Bulk,Transshipment,4,21744.47,4094,215.78
+2025-02-19,T4-Bulk,Bulk Dry,Import,1,93520.22,252,184.64
+2025-03-26,T1-North,Bulk Dry,Import,36,55178.8,2273,23.44
+2024-11-07,T3-Container,Bulk Dry,Import,40,79831.72,675,183.93
+2024-12-18,T4-Bulk,Roll-on Roll-off,Export,19,30807.65,1207,175.72
+2024-05-16,T2-South,Bulk Dry,Export,7,239.19,3317,199.15
+2025-02-08,T5-Liquid,Liquid Bulk,Transshipment,0,65363.63,1055,31.83
+2025-03-07,T1-North,Containerized,Import,37,53324.13,2641,122.38
+2024-01-19,T5-Liquid,Roll-on Roll-off,Import,24,35702.67,1453,72.04
+2024-07-22,T5-Liquid,Liquid Bulk,Import,12,83653.47,2677,213.08
+2024-10-16,T2-South,Reefer,Export,27,15005.33,2786,191.01
+2024-10-01,T4-Bulk,Bulk Dry,Transshipment,24,35667.94,1478,206.24
+2024-02-22,T4-Bulk,Roll-on Roll-off,Import,30,6410.57,5503,72.34
+2024-05-19,T3-Container,Break Bulk,Transshipment,10,14263.44,4666,97.72
+2024-07-01,T5-Liquid,Roll-on Roll-off,Export,20,87934.86,6191,132.83
+2024-05-07,T4-Bulk,Bulk Dry,Transshipment,28,45172.78,4385,134.48
+2024-02-27,T2-South,Reefer,Export,12,3055.66,22,218.43
+2025-06-16,T3-Container,Roll-on Roll-off,Import,11,52127.85,2681,146.66
+2024-10-13,T1-North,Bulk Dry,Transshipment,19,36882.08,1478,218.26
+2024-08-20,T1-North,Reefer,Import,21,43226.81,471,47.37
+2024-07-19,T3-Container,Liquid Bulk,Import,2,64523.71,5343,183.89
+2024-05-06,T1-North,Break Bulk,Import,39,32084.78,2582,136.71
+2024-10-25,T5-Liquid,Liquid Bulk,Import,25,37929.84,5624,38.72
+2024-06-21,T5-Liquid,Break Bulk,Export,35,86720.47,390,213.56
+2024-05-09,T4-Bulk,Break Bulk,Import,7,5688.05,3920,125.55
+2024-03-19,T5-Liquid,Containerized,Transshipment,24,53471.66,4061,38.12
+2025-04-29,T2-South,Containerized,Export,1,27890.51,137,194.83
+2024-08-28,T2-South,Reefer,Transshipment,18,52392.85,372,150.65
+2024-10-16,T3-Container,Reefer,Transshipment,8,70779.76,240,48.02
+2024-02-28,T3-Container,Reefer,Import,21,55149.26,6336,124.65
+2025-03-04,T3-Container,Containerized,Import,39,91316.84,4391,69.98
+2024-04-29,T5-Liquid,Containerized,Export,25,66000.31,1327,37.09
+2024-05-14,T5-Liquid,Reefer,Export,26,59277.96,235,91.02
+2024-11-25,T3-Container,Containerized,Import,28,50483.52,3144,45.03
+2024-04-08,T3-Container,Liquid Bulk,Export,30,39003.9,934,5.41
+2025-05-01,T4-Bulk,Roll-on Roll-off,Export,4,11887.14,2069,42.07
+2025-02-23,T2-South,Liquid Bulk,Transshipment,34,67251.67,5222,96.35
+2024-03-14,T2-South,Bulk Dry,Export,11,73480.46,5076,178.35
+2024-04-19,T4-Bulk,Containerized,Export,39,1156.74,1823,208.83
+2025-01-13,T1-North,Liquid Bulk,Transshipment,21,67320.75,5674,97.97
+2024-04-13,T1-North,Containerized,Import,4,16930.89,6258,105.83
+2025-05-12,T5-Liquid,Break Bulk,Import,3,18269.11,6319,23.71
+2025-01-20,T3-Container,Containerized,Export,27,12335.46,1883,117.04
+2024-02-06,T1-North,Containerized,Import,37,60106.8,3875,35.3
+2024-10-20,T2-South,Liquid Bulk,Export,27,21619.11,784,235.41
+2024-10-05,T1-North,Containerized,Transshipment,21,48418.65,2215,16.64
+2024-10-10,T1-North,Reefer,Import,16,125.42,5254,72.72
+2024-09-26,T2-South,Containerized,Import,37,75924.49,3089,79.17
+2024-08-08,T2-South,Liquid Bulk,Transshipment,36,45472.09,124,81.95
+2024-03-24,T5-Liquid,Reefer,Transshipment,6,32238.96,844,227.4
+2025-01-23,T2-South,Roll-on Roll-off,Export,33,2833.43,1281,26.14
+2024-05-18,T2-South,Break Bulk,Transshipment,27,85661.76,6097,47.13
+2024-12-11,T1-North,Containerized,Import,15,54540.45,744,35.59
+2024-01-15,T3-Container,Containerized,Import,29,64439.18,5853,148.73
+2025-05-03,T1-North,Reefer,Import,19,27138.42,3278,107.57
+2024-05-27,T2-South,Break Bulk,Transshipment,32,74750.64,1695,170.84
+2024-10-07,T1-North,Roll-on Roll-off,Transshipment,24,75155.5,1571,220.77
+2024-09-04,T3-Container,Roll-on Roll-off,Import,15,86453.24,2675,153.72
+2025-01-05,T1-North,Bulk Dry,Export,31,3554.12,4829,89.99
+2024-09-22,T1-North,Break Bulk,Export,22,91808.22,1880,153.0
+2024-05-05,T2-South,Break Bulk,Transshipment,22,57245.28,2864,166.94
+2024-12-01,T2-South,Break Bulk,Import,30,41604.36,63,208.39
+2024-01-22,T1-North,Roll-on Roll-off,Import,13,63176.46,1987,22.95
+2024-06-05,T4-Bulk,Containerized,Export,35,5456.38,2894,131.22
+2024-06-11,T4-Bulk,Liquid Bulk,Transshipment,22,45820.6,5712,215.93
+2024-05-18,T1-North,Liquid Bulk,Import,7,4030.66,5612,106.83
+2024-06-03,T5-Liquid,Liquid Bulk,Import,19,83251.72,2466,92.13
+2025-04-06,T4-Bulk,Containerized,Transshipment,9,19591.8,1320,120.99
+2024-11-29,T4-Bulk,Break Bulk,Import,2,18286.54,2270,239.39
+2024-10-08,T5-Liquid,Liquid Bulk,Transshipment,30,36344.68,5591,59.91
+2025-05-29,T5-Liquid,Reefer,Transshipment,20,69323.1,6106,84.63
+2024-09-02,T4-Bulk,Bulk Dry,Transshipment,35,70126.42,1639,218.95
+2024-06-28,T4-Bulk,Roll-on Roll-off,Export,27,33025.7,1971,171.66
+2024-09-26,T1-North,Containerized,Transshipment,22,5132.45,3883,129.3
+2024-10-31,T4-Bulk,Break Bulk,Export,23,45158.32,117,100.05
+2024-12-27,T5-Liquid,Bulk Dry,Import,12,6181.09,5128,78.2
+2024-02-24,T4-Bulk,Bulk Dry,Import,2,18073.79,4096,117.13
+2025-02-19,T4-Bulk,Bulk Dry,Import,21,78007.24,3670,124.43
+2025-01-25,T5-Liquid,Containerized,Import,25,73250.28,4706,15.33
+2025-01-20,T5-Liquid,Roll-on Roll-off,Export,18,86070.75,1686,101.33
+2024-10-07,T3-Container,Roll-on Roll-off,Export,11,75155.98,2912,17.66
+2025-06-14,T2-South,Roll-on Roll-off,Export,36,43729.42,4316,65.8
+2025-01-24,T5-Liquid,Reefer,Transshipment,37,2535.42,5947,46.44
+2024-02-15,T5-Liquid,Bulk Dry,Transshipment,34,83713.99,3093,238.92
+2024-07-27,T4-Bulk,Bulk Dry,Export,38,66214.2,2102,13.5
+2024-01-23,T4-Bulk,Break Bulk,Import,1,3574.39,5454,226.03
+2024-08-16,T3-Container,Containerized,Transshipment,23,13910.21,5238,144.1
+2024-10-23,T1-North,Bulk Dry,Transshipment,25,79544.32,3801,39.23
+2025-01-13,T4-Bulk,Bulk Dry,Transshipment,35,59602.29,3614,209.41
+2024-06-19,T1-North,Containerized,Transshipment,40,89360.53,4895,24.29
+2025-05-09,T2-South,Bulk Dry,Transshipment,23,22517.63,5712,98.66
+2025-01-06,T1-North,Bulk Dry,Import,18,65525.78,3782,124.17
+2024-11-10,T5-Liquid,Bulk Dry,Import,32,42887.19,671,67.21
+2024-05-07,T5-Liquid,Reefer,Import,31,46091.91,457,200.75
+2024-12-26,T1-North,Liquid Bulk,Import,26,28295.06,592,222.14
+2024-06-09,T3-Container,Reefer,Transshipment,31,34451.0,2553,219.78
+2024-11-19,T3-Container,Liquid Bulk,Export,1,26592.28,2070,235.91
+2025-02-18,T2-South,Containerized,Import,14,49183.0,2823,10.68
+2025-01-08,T4-Bulk,Bulk Dry,Export,37,4676.46,5545,73.97
+2024-01-01,T5-Liquid,Bulk Dry,Import,37,73126.91,976,41.62
+2025-04-25,T2-South,Liquid Bulk,Transshipment,5,49020.33,762,37.98
+2025-06-15,T3-Container,Roll-on Roll-off,Transshipment,29,13994.14,5380,185.7
+2024-07-31,T5-Liquid,Roll-on Roll-off,Import,33,19891.76,6186,225.57
+2025-05-16,T1-North,Containerized,Import,5,87689.11,2029,163.34
+2024-11-24,T1-North,Bulk Dry,Transshipment,20,26640.57,2152,235.19
+2024-12-21,T5-Liquid,Bulk Dry,Import,21,77003.47,1965,22.76
+2025-01-07,T3-Container,Bulk Dry,Export,27,42630.5,1442,212.66
+2024-10-29,T5-Liquid,Liquid Bulk,Import,20,20715.58,1695,42.99
+2024-06-28,T5-Liquid,Break Bulk,Import,24,29917.37,1502,203.34
+2024-07-26,T5-Liquid,Bulk Dry,Export,10,15349.73,120,136.83
+2024-11-15,T5-Liquid,Liquid Bulk,Transshipment,17,65412.96,2407,8.3
+2024-06-11,T2-South,Bulk Dry,Transshipment,25,53049.2,4305,219.45
+2024-01-30,T2-South,Roll-on Roll-off,Export,9,46776.22,5098,144.72
+2025-01-11,T3-Container,Liquid Bulk,Export,22,56455.54,208,147.53
+2024-06-02,T4-Bulk,Break Bulk,Export,6,861.96,5840,238.22
+2025-05-03,T3-Container,Bulk Dry,Export,37,27255.15,4334,220.51
+2025-02-01,T5-Liquid,Roll-on Roll-off,Export,28,29871.38,62,147.21
+2025-02-25,T4-Bulk,Break Bulk,Import,37,16676.79,3454,54.71
+2025-05-21,T4-Bulk,Liquid Bulk,Import,28,65007.95,37,155.24
+2024-09-09,T3-Container,Bulk Dry,Export,13,81591.39,3144,135.84
+2025-01-04,T5-Liquid,Roll-on Roll-off,Transshipment,14,68448.11,1125,177.18
+2024-02-01,T5-Liquid,Containerized,Export,36,20838.12,326,34.53
+2024-03-19,T3-Container,Reefer,Export,12,3811.69,5998,222.8
+2024-02-21,T5-Liquid,Break Bulk,Transshipment,32,25976.16,3531,100.79
+2024-02-10,T4-Bulk,Bulk Dry,Transshipment,17,71030.63,2888,133.23
+2024-05-22,T4-Bulk,Bulk Dry,Import,17,66642.28,4280,146.52
+2024-07-07,T5-Liquid,Reefer,Transshipment,2,77654.0,846,65.24
+2025-02-17,T1-North,Liquid Bulk,Import,23,81118.31,5314,213.94
+2025-04-07,T2-South,Roll-on Roll-off,Export,36,33145.3,61,201.87
+2025-05-26,T5-Liquid,Containerized,Export,20,7766.72,5834,22.72
+2024-11-07,T3-Container,Liquid Bulk,Transshipment,1,36797.25,1245,35.04
+2024-06-22,T3-Container,Liquid Bulk,Import,27,26208.3,3845,24.08
+2024-01-22,T2-South,Roll-on Roll-off,Import,10,27648.98,1728,107.26
+2024-04-04,T3-Container,Liquid Bulk,Export,30,15320.25,3317,115.9
+2025-05-17,T2-South,Liquid Bulk,Import,38,80042.7,1243,9.92
+2024-02-11,T1-North,Break Bulk,Transshipment,8,13979.43,2427,225.16
+2024-05-21,T4-Bulk,Break Bulk,Export,2,9725.44,3251,221.54
+2025-04-29,T3-Container,Liquid Bulk,Transshipment,9,13019.59,3931,157.36
+2024-04-10,T5-Liquid,Reefer,Export,26,61966.29,3192,143.65
+2025-04-24,T4-Bulk,Break Bulk,Export,24,58843.12,6450,27.71
+2024-03-12,T5-Liquid,Roll-on Roll-off,Export,13,48864.92,3855,231.14
+2024-09-06,T2-South,Roll-on Roll-off,Export,1,53984.01,665,79.46
+2024-09-10,T2-South,Reefer,Transshipment,34,66288.54,2887,117.04
+2024-01-22,T2-South,Containerized,Import,29,8056.6,633,75.22
+2024-10-15,T4-Bulk,Roll-on Roll-off,Export,4,43084.7,5479,34.08
+2024-03-24,T5-Liquid,Liquid Bulk,Import,21,231.98,1712,4.84
+2024-02-06,T5-Liquid,Roll-on Roll-off,Transshipment,3,42972.41,1926,148.67
+2025-06-01,T2-South,Reefer,Transshipment,8,2727.81,6378,182.73
+2025-06-23,T2-South,Bulk Dry,Transshipment,14,54551.65,3171,99.91
+2025-04-19,T5-Liquid,Liquid Bulk,Transshipment,40,8228.6,610,29.7
+2025-03-14,T3-Container,Roll-on Roll-off,Export,21,84969.3,2273,148.62
+2025-03-07,T4-Bulk,Roll-on Roll-off,Export,2,38677.02,4501,44.24
+2024-08-18,T1-North,Containerized,Transshipment,10,66259.5,4181,168.08
+2024-01-01,T3-Container,Roll-on Roll-off,Import,11,17993.01,325,97.31
+2024-09-11,T1-North,Reefer,Import,17,8347.75,4963,204.36
+2025-02-25,T4-Bulk,Roll-on Roll-off,Transshipment,31,15977.97,1421,217.44
+2024-06-28,T3-Container,Containerized,Export,12,83399.53,5894,178.53
+2025-04-25,T1-North,Reefer,Import,7,42495.29,3391,190.31
+2025-02-27,T3-Container,Break Bulk,Import,26,48914.49,4621,142.35
+2024-04-17,T5-Liquid,Reefer,Import,26,74597.44,3288,54.9
+2025-06-12,T5-Liquid,Liquid Bulk,Export,12,9094.52,3139,37.8
+2024-07-29,T2-South,Reefer,Export,29,23477.76,4035,205.6
+2024-12-17,T3-Container,Liquid Bulk,Transshipment,7,85291.89,6050,221.58
+2025-03-06,T4-Bulk,Roll-on Roll-off,Import,12,81336.07,6430,111.72
+2024-02-01,T4-Bulk,Roll-on Roll-off,Import,3,75732.62,5344,98.23
+2024-01-13,T1-North,Reefer,Transshipment,9,3164.26,84,21.83
+2024-07-13,T5-Liquid,Roll-on Roll-off,Export,14,79838.58,4960,157.3
+2024-07-03,T1-North,Reefer,Import,6,21922.14,6175,209.13
+2025-01-23,T2-South,Containerized,Transshipment,39,61524.06,3407,162.79
+2024-08-22,T1-North,Bulk Dry,Import,8,67776.41,4563,30.6
+2025-02-19,T2-South,Reefer,Import,6,33585.87,2872,106.2
+2024-01-13,T2-South,Containerized,Transshipment,27,90632.64,3720,100.9
+2024-01-08,T3-Container,Liquid Bulk,Export,25,52653.12,65,62.34
+2024-12-02,T3-Container,Containerized,Transshipment,23,89928.36,1209,176.21
+2024-03-01,T5-Liquid,Containerized,Export,22,3062.42,6243,115.36
+2024-11-07,T4-Bulk,Bulk Dry,Import,5,66027.89,491,141.51
+2024-06-27,T2-South,Liquid Bulk,Transshipment,22,85225.53,5887,210.11
+2025-02-11,T3-Container,Liquid Bulk,Export,34,17695.68,721,162.17
+2024-07-30,T2-South,Reefer,Import,39,39535.37,1046,208.71
+2024-07-21,T4-Bulk,Liquid Bulk,Import,12,74407.54,6034,142.86
+2024-10-10,T1-North,Containerized,Transshipment,27,78783.45,4376,150.47
+2024-03-18,T3-Container,Liquid Bulk,Export,22,53347.62,601,138.14
+2024-06-12,T2-South,Bulk Dry,Export,19,67610.83,703,121.62
+2024-06-14,T2-South,Roll-on Roll-off,Transshipment,12,62645.56,2175,15.72
+2024-09-21,T4-Bulk,Bulk Dry,Import,22,58056.95,5098,99.56
+2024-07-06,T1-North,Bulk Dry,Transshipment,18,755.13,583,60.84
+2024-02-03,T5-Liquid,Liquid Bulk,Transshipment,15,87813.56,608,153.77
+2024-01-26,T3-Container,Bulk Dry,Export,17,43275.29,3863,237.03
+2025-04-10,T2-South,Liquid Bulk,Transshipment,25,41400.03,3879,21.74
+2025-01-23,T4-Bulk,Liquid Bulk,Import,11,57398.63,2216,106.42
+2025-03-08,T4-Bulk,Reefer,Import,29,9844.88,2317,130.28
+2024-10-17,T2-South,Reefer,Export,36,30033.38,5400,67.33
+2024-09-18,T3-Container,Break Bulk,Transshipment,17,41720.44,2824,70.99
+2024-11-10,T1-North,Roll-on Roll-off,Export,37,2286.31,2146,37.6
+2024-01-22,T3-Container,Liquid Bulk,Export,34,45836.71,2853,92.83
+2025-04-05,T4-Bulk,Break Bulk,Import,5,61609.27,2610,224.37
+2024-06-05,T4-Bulk,Liquid Bulk,Import,4,3000.89,1443,56.88
+2025-02-03,T2-South,Roll-on Roll-off,Transshipment,17,73039.44,1737,93.18
+2025-03-14,T3-Container,Liquid Bulk,Transshipment,32,92682.29,3777,13.5
+2025-05-15,T5-Liquid,Bulk Dry,Import,27,31040.35,924,96.79
+2024-08-12,T4-Bulk,Roll-on Roll-off,Export,12,35085.81,3215,21.94
+2024-12-18,T4-Bulk,Break Bulk,Export,18,29051.03,1315,106.94
+2024-06-26,T2-South,Roll-on Roll-off,Import,38,24768.44,3918,168.71
+2024-03-26,T5-Liquid,Break Bulk,Export,36,39719.12,763,117.64
+2024-12-21,T4-Bulk,Liquid Bulk,Export,19,51964.84,2514,226.68

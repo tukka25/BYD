@@ -1,0 +1,241 @@
+attendanceDate,schoolName,gradeLevel,attendanceStatus,enrolledStudents,attendedStudents,attendanceRatePct
+2025-06-18,Harbor View School,Grade 2,Excused,312,304,63.76
+2024-09-10,Harbor View School,Grade 8,Early Dismissal,345,337,11.03
+2024-11-21,Harbor View School,Grade 2,Absent,2,396,28.36
+2025-01-25,Harbor View School,Grade 6,Absent,181,384,33.11
+2024-08-02,Riverside Middle,Grade 1,Early Dismissal,365,129,76.58
+2024-05-08,Harbor View School,Grade 1,Excused,16,203,25.73
+2024-05-18,Lincoln Elementary,Grade 6,Early Dismissal,101,46,83.99
+2024-05-21,Maple Grove Academy,Kindergarten,Excused,120,24,2.29
+2024-05-08,Oakwood High,Grade 4,Present,252,157,52.79
+2024-11-13,Harbor View School,Kindergarten,Tardy,25,108,98.26
+2024-08-22,Lincoln Elementary,Grade 2,Tardy,261,87,22.88
+2024-04-03,Lincoln Elementary,Grade 5,Tardy,187,334,74.81
+2024-04-18,Harbor View School,Grade 3,Present,141,308,93.56
+2025-03-03,Lincoln Elementary,Grade 4,Tardy,277,348,98.63
+2024-09-15,Harbor View School,Grade 8,Excused,268,117,32.86
+2024-05-11,Riverside Middle,Kindergarten,Absent,2,370,23.16
+2024-02-13,Riverside Middle,Grade 3,Early Dismissal,366,173,69.6
+2024-09-05,Maple Grove Academy,Kindergarten,Absent,350,111,68.42
+2024-11-01,Oakwood High,Kindergarten,Absent,58,399,45.33
+2024-10-17,Maple Grove Academy,Grade 5,Excused,76,389,13.52
+2024-09-17,Oakwood High,Grade 1,Excused,409,362,27.24
+2025-05-30,Riverside Middle,Grade 2,Absent,329,336,95.43
+2024-06-05,Lincoln Elementary,Grade 1,Tardy,368,397,93.13
+2024-12-22,Riverside Middle,Kindergarten,Tardy,227,26,17.72
+2024-03-08,Harbor View School,Grade 3,Early Dismissal,318,30,11.33
+2025-05-16,Riverside Middle,Grade 8,Tardy,290,39,37.94
+2024-03-25,Harbor View School,Grade 8,Tardy,91,336,54.36
+2024-11-05,Lincoln Elementary,Grade 7,Tardy,176,12,61.33
+2024-10-12,Harbor View School,Grade 1,Absent,214,69,39.39
+2024-05-12,Harbor View School,Grade 4,Excused,368,97,51.08
+2024-03-04,Riverside Middle,Grade 4,Absent,153,38,45.13
+2024-08-27,Maple Grove Academy,Grade 3,Excused,279,355,97.07
+2025-05-26,Maple Grove Academy,Grade 2,Absent,91,36,19.34
+2025-02-04,Summit Charter,Grade 7,Present,398,305,57.85
+2024-07-31,Summit Charter,Grade 5,Early Dismissal,252,35,0.17
+2024-01-27,Lincoln Elementary,Grade 2,Tardy,148,203,59.72
+2024-06-04,Harbor View School,Grade 1,Excused,28,357,77.84
+2025-04-06,Maple Grove Academy,Grade 3,Early Dismissal,116,276,90.31
+2024-06-13,Harbor View School,Grade 6,Present,300,339,29.94
+2024-08-26,Riverside Middle,Grade 1,Tardy,48,120,84.54
+2024-01-08,Summit Charter,Grade 7,Tardy,94,385,63.73
+2024-08-21,Harbor View School,Grade 2,Excused,347,273,47.43
+2024-09-26,Summit Charter,Grade 5,Absent,249,30,46.91
+2024-12-02,Riverside Middle,Grade 2,Absent,55,217,87.99
+2024-01-07,Riverside Middle,Grade 7,Absent,304,7,60.38
+2024-11-17,Harbor View School,Grade 6,Early Dismissal,240,103,74.36
+2024-10-02,Harbor View School,Grade 5,Tardy,65,415,49.17
+2025-05-26,Oakwood High,Grade 2,Tardy,30,98,64.19
+2025-06-03,Harbor View School,Grade 2,Present,52,414,23.07
+2024-12-02,Harbor View School,Grade 1,Absent,43,87,31.0
+2024-09-01,Summit Charter,Grade 2,Absent,196,411,23.25
+2025-05-26,Maple Grove Academy,Grade 8,Present,172,69,91.95
+2024-05-17,Riverside Middle,Grade 8,Absent,77,180,64.12
+2024-10-04,Summit Charter,Grade 1,Absent,344,51,54.13
+2024-08-03,Lincoln Elementary,Grade 4,Tardy,372,181,83.43
+2025-04-17,Summit Charter,Grade 8,Present,212,367,65.4
+2024-12-23,Riverside Middle,Grade 8,Early Dismissal,137,338,59.89
+2024-05-05,Lincoln Elementary,Grade 1,Present,97,291,91.97
+2025-02-02,Maple Grove Academy,Grade 6,Excused,5,236,87.09
+2025-03-06,Lincoln Elementary,Grade 6,Tardy,222,264,85.21
+2024-01-08,Lincoln Elementary,Grade 2,Tardy,251,176,19.43
+2024-11-30,Summit Charter,Grade 6,Absent,207,375,97.89
+2024-02-16,Lincoln Elementary,Grade 7,Early Dismissal,93,91,34.83
+2024-07-26,Oakwood High,Grade 4,Early Dismissal,79,14,60.04
+2024-06-08,Oakwood High,Grade 1,Present,167,193,23.81
+2024-10-26,Riverside Middle,Grade 8,Excused,206,300,44.67
+2025-02-22,Maple Grove Academy,Grade 7,Early Dismissal,86,113,62.05
+2024-03-15,Maple Grove Academy,Grade 1,Early Dismissal,15,189,55.19
+2024-11-14,Maple Grove Academy,Grade 3,Absent,379,192,21.52
+2024-11-24,Harbor View School,Grade 8,Early Dismissal,99,291,21.48
+2024-07-31,Summit Charter,Grade 2,Excused,345,195,24.66
+2024-08-27,Harbor View School,Grade 8,Absent,181,172,50.3
+2024-02-01,Riverside Middle,Grade 4,Excused,5,65,41.58
+2024-07-17,Summit Charter,Grade 2,Absent,260,176,30.71
+2024-10-29,Oakwood High,Grade 2,Present,163,405,97.78
+2024-07-27,Summit Charter,Grade 6,Excused,375,373,35.57
+2024-02-03,Riverside Middle,Grade 6,Present,312,253,11.52
+2024-07-22,Harbor View School,Kindergarten,Excused,213,227,92.46
+2024-12-08,Riverside Middle,Grade 4,Early Dismissal,151,134,8.81
+2024-03-19,Maple Grove Academy,Grade 3,Excused,218,166,69.6
+2024-06-18,Lincoln Elementary,Grade 4,Tardy,185,270,71.06
+2025-01-27,Riverside Middle,Grade 5,Present,29,76,82.45
+2025-01-03,Riverside Middle,Grade 5,Excused,337,197,90.41
+2025-02-02,Maple Grove Academy,Grade 6,Present,412,171,74.5
+2025-04-10,Oakwood High,Grade 2,Tardy,267,156,76.74
+2024-11-29,Summit Charter,Grade 4,Tardy,146,312,81.57
+2024-02-09,Riverside Middle,Kindergarten,Early Dismissal,388,19,16.59
+2025-06-05,Harbor View School,Grade 1,Excused,420,396,76.19
+2025-06-15,Oakwood High,Kindergarten,Tardy,153,126,99.78
+2024-10-01,Oakwood High,Grade 8,Absent,232,150,79.25
+2024-08-03,Summit Charter,Grade 3,Absent,418,27,78.4
+2024-05-19,Harbor View School,Grade 2,Tardy,314,21,15.27
+2024-08-23,Harbor View School,Grade 7,Early Dismissal,187,328,19.98
+2024-04-17,Lincoln Elementary,Grade 1,Excused,296,200,33.57
+2024-03-22,Summit Charter,Grade 8,Absent,371,364,15.23
+2024-07-04,Oakwood High,Grade 5,Tardy,94,353,40.6
+2025-04-13,Maple Grove Academy,Grade 2,Excused,117,197,24.27
+2024-09-25,Summit Charter,Kindergarten,Tardy,30,89,54.99
+2024-03-24,Harbor View School,Grade 8,Early Dismissal,112,138,86.34
+2024-02-04,Summit Charter,Grade 5,Excused,278,22,78.55
+2024-04-19,Riverside Middle,Grade 2,Excused,148,346,53.85
+2024-08-21,Maple Grove Academy,Grade 4,Excused,295,36,96.14
+2025-05-17,Lincoln Elementary,Kindergarten,Present,167,364,17.41
+2025-05-12,Lincoln Elementary,Grade 7,Absent,324,99,0.18
+2024-08-10,Riverside Middle,Grade 2,Tardy,347,213,7.62
+2025-02-19,Summit Charter,Grade 3,Tardy,221,250,75.54
+2024-06-20,Maple Grove Academy,Grade 7,Excused,34,228,76.79
+2024-12-28,Oakwood High,Grade 5,Early Dismissal,183,143,16.53
+2025-04-02,Summit Charter,Grade 4,Excused,406,66,16.43
+2024-04-12,Summit Charter,Grade 1,Excused,374,121,73.1
+2024-03-09,Riverside Middle,Grade 5,Excused,403,305,24.41
+2024-04-16,Riverside Middle,Grade 6,Excused,115,65,97.9
+2024-11-07,Oakwood High,Grade 3,Early Dismissal,85,351,6.71
+2024-12-27,Maple Grove Academy,Grade 1,Absent,207,212,19.06
+2024-09-20,Maple Grove Academy,Kindergarten,Excused,101,87,28.08
+2024-10-12,Maple Grove Academy,Kindergarten,Absent,64,370,37.39
+2024-03-06,Maple Grove Academy,Grade 6,Absent,383,50,6.42
+2024-10-04,Maple Grove Academy,Kindergarten,Tardy,257,149,61.32
+2025-06-17,Riverside Middle,Grade 5,Excused,295,369,81.04
+2024-01-28,Oakwood High,Kindergarten,Tardy,110,139,92.92
+2024-07-28,Maple Grove Academy,Kindergarten,Excused,252,225,99.12
+2024-10-03,Harbor View School,Kindergarten,Absent,325,298,64.88
+2025-05-05,Harbor View School,Grade 2,Excused,395,45,69.67
+2024-05-21,Oakwood High,Grade 6,Early Dismissal,312,62,25.76
+2024-03-19,Oakwood High,Grade 3,Absent,122,344,99.28
+2025-05-06,Lincoln Elementary,Grade 3,Excused,64,131,40.96
+2025-05-01,Lincoln Elementary,Grade 4,Absent,416,124,83.82
+2024-06-06,Summit Charter,Grade 7,Present,372,319,37.7
+2024-10-19,Summit Charter,Grade 5,Tardy,143,228,4.04
+2025-02-09,Maple Grove Academy,Grade 6,Excused,266,181,36.64
+2024-08-07,Harbor View School,Grade 1,Present,277,10,38.22
+2024-05-29,Summit Charter,Grade 6,Tardy,218,39,83.33
+2024-11-07,Harbor View School,Grade 5,Tardy,246,190,20.0
+2025-01-07,Harbor View School,Kindergarten,Absent,336,159,99.65
+2024-11-11,Harbor View School,Grade 2,Tardy,142,64,62.1
+2025-02-07,Lincoln Elementary,Kindergarten,Excused,362,326,97.95
+2024-11-19,Summit Charter,Grade 4,Early Dismissal,264,236,92.56
+2025-03-13,Maple Grove Academy,Grade 4,Tardy,354,244,17.84
+2024-02-02,Oakwood High,Grade 3,Early Dismissal,160,133,88.88
+2025-04-01,Summit Charter,Grade 7,Absent,174,309,72.96
+2025-04-10,Oakwood High,Grade 3,Excused,315,77,83.71
+2024-08-28,Summit Charter,Grade 3,Absent,245,276,67.59
+2024-12-11,Oakwood High,Grade 1,Absent,99,252,35.56
+2024-02-05,Summit Charter,Grade 4,Early Dismissal,263,9,20.97
+2024-08-17,Oakwood High,Grade 5,Early Dismissal,382,269,76.88
+2025-02-07,Harbor View School,Grade 6,Absent,176,261,69.52
+2024-04-15,Summit Charter,Kindergarten,Tardy,329,234,1.74
+2024-12-05,Summit Charter,Kindergarten,Early Dismissal,343,218,95.52
+2024-07-30,Lincoln Elementary,Grade 1,Excused,14,330,99.94
+2024-06-08,Summit Charter,Kindergarten,Excused,217,362,24.79
+2024-08-22,Maple Grove Academy,Grade 4,Excused,154,363,92.22
+2024-03-24,Harbor View School,Grade 6,Early Dismissal,329,63,5.99
+2024-05-15,Harbor View School,Grade 4,Present,16,168,38.04
+2025-05-16,Maple Grove Academy,Grade 6,Absent,138,390,86.1
+2025-04-29,Maple Grove Academy,Grade 4,Absent,271,328,76.46
+2024-05-13,Lincoln Elementary,Grade 5,Excused,313,69,28.21
+2024-12-05,Lincoln Elementary,Grade 3,Tardy,90,377,98.08
+2024-04-16,Maple Grove Academy,Grade 2,Early Dismissal,258,8,88.24
+2024-12-15,Harbor View School,Grade 8,Tardy,35,178,24.82
+2025-01-30,Harbor View School,Grade 4,Early Dismissal,401,112,2.06
+2025-04-03,Maple Grove Academy,Grade 6,Absent,346,19,61.7
+2024-01-14,Harbor View School,Grade 1,Early Dismissal,356,127,14.9
+2025-05-31,Riverside Middle,Grade 5,Present,236,165,17.28
+2025-02-28,Riverside Middle,Kindergarten,Early Dismissal,107,80,53.66
+2024-02-15,Riverside Middle,Grade 2,Tardy,30,71,7.38
+2024-07-06,Harbor View School,Grade 2,Excused,286,256,39.42
+2024-08-12,Harbor View School,Kindergarten,Present,251,275,36.56
+2024-06-10,Summit Charter,Kindergarten,Excused,2,295,87.91
+2024-10-14,Riverside Middle,Kindergarten,Present,243,222,36.22
+2024-11-28,Oakwood High,Grade 5,Tardy,320,29,56.49
+2024-12-06,Summit Charter,Grade 2,Early Dismissal,412,125,10.06
+2024-09-22,Oakwood High,Grade 4,Early Dismissal,413,354,14.02
+2025-04-30,Maple Grove Academy,Kindergarten,Present,306,368,0.78
+2024-11-02,Riverside Middle,Grade 8,Present,264,398,54.52
+2024-07-06,Maple Grove Academy,Kindergarten,Tardy,197,241,73.62
+2024-11-22,Lincoln Elementary,Grade 8,Absent,44,334,51.18
+2024-07-17,Oakwood High,Grade 2,Present,317,299,85.72
+2024-12-31,Riverside Middle,Grade 6,Early Dismissal,306,309,67.96
+2024-05-16,Maple Grove Academy,Grade 7,Present,244,168,57.65
+2024-03-23,Harbor View School,Grade 3,Early Dismissal,150,48,86.28
+2024-01-11,Summit Charter,Kindergarten,Absent,327,342,39.8
+2024-01-27,Riverside Middle,Kindergarten,Early Dismissal,305,391,25.52
+2024-10-29,Lincoln Elementary,Grade 7,Early Dismissal,363,71,95.59
+2025-06-09,Oakwood High,Grade 2,Tardy,198,151,30.89
+2025-04-27,Riverside Middle,Grade 3,Early Dismissal,102,325,21.93
+2025-03-09,Lincoln Elementary,Grade 3,Excused,335,390,49.75
+2024-08-15,Oakwood High,Grade 5,Absent,234,314,76.2
+2024-05-24,Summit Charter,Grade 5,Absent,139,220,45.47
+2024-09-08,Maple Grove Academy,Grade 7,Tardy,165,259,37.58
+2024-12-29,Riverside Middle,Grade 8,Present,304,226,83.2
+2025-05-29,Oakwood High,Grade 5,Present,43,391,60.25
+2025-05-11,Oakwood High,Grade 2,Early Dismissal,332,128,25.82
+2025-04-12,Maple Grove Academy,Grade 6,Tardy,325,124,80.16
+2025-04-21,Summit Charter,Kindergarten,Tardy,23,261,90.4
+2025-04-04,Maple Grove Academy,Grade 6,Absent,225,256,63.68
+2024-07-22,Riverside Middle,Grade 1,Early Dismissal,362,96,16.81
+2024-11-25,Riverside Middle,Grade 6,Absent,405,313,87.62
+2025-05-20,Riverside Middle,Grade 8,Absent,93,163,24.19
+2024-09-22,Riverside Middle,Grade 8,Tardy,335,139,39.84
+2024-11-12,Summit Charter,Grade 2,Absent,17,276,77.83
+2025-05-05,Maple Grove Academy,Grade 5,Present,181,108,58.59
+2024-02-24,Oakwood High,Grade 4,Tardy,334,92,51.19
+2024-01-12,Lincoln Elementary,Grade 6,Absent,344,187,39.2
+2024-11-14,Summit Charter,Grade 8,Present,198,51,59.45
+2025-03-28,Harbor View School,Grade 1,Present,13,363,10.37
+2024-10-25,Lincoln Elementary,Grade 4,Tardy,349,413,50.52
+2024-04-23,Harbor View School,Grade 3,Present,52,381,14.06
+2025-04-07,Lincoln Elementary,Grade 6,Present,2,57,80.19
+2024-07-29,Summit Charter,Kindergarten,Excused,3,242,13.15
+2024-07-01,Riverside Middle,Grade 8,Early Dismissal,179,166,35.3
+2025-06-09,Summit Charter,Grade 3,Excused,369,314,2.71
+2024-07-18,Maple Grove Academy,Grade 5,Present,388,414,7.08
+2024-10-22,Summit Charter,Kindergarten,Tardy,329,297,46.6
+2025-05-27,Harbor View School,Grade 4,Absent,129,299,18.63
+2025-04-08,Harbor View School,Grade 5,Tardy,233,225,80.15
+2024-12-31,Lincoln Elementary,Grade 7,Absent,248,115,38.84
+2024-02-11,Lincoln Elementary,Kindergarten,Absent,226,352,73.08
+2024-11-04,Maple Grove Academy,Grade 2,Tardy,370,397,27.02
+2024-05-25,Harbor View School,Grade 4,Tardy,85,373,30.74
+2025-01-17,Lincoln Elementary,Grade 7,Absent,255,347,10.23
+2024-02-20,Harbor View School,Grade 1,Tardy,59,190,36.87
+2024-11-29,Maple Grove Academy,Grade 4,Tardy,410,145,93.94
+2025-02-11,Lincoln Elementary,Grade 6,Tardy,177,380,30.19
+2024-09-01,Oakwood High,Grade 1,Excused,373,45,36.87
+2024-04-13,Harbor View School,Grade 6,Present,377,88,73.06
+2024-01-01,Riverside Middle,Grade 7,Present,325,342,25.58
+2024-06-30,Summit Charter,Grade 8,Excused,354,75,79.77
+2024-07-13,Riverside Middle,Grade 8,Excused,84,343,29.55
+2024-04-17,Oakwood High,Grade 6,Present,256,366,50.94
+2025-04-23,Harbor View School,Grade 6,Tardy,41,232,67.82
+2024-05-19,Oakwood High,Kindergarten,Absent,158,324,62.67
+2024-04-17,Riverside Middle,Grade 8,Excused,215,52,31.61
+2025-04-03,Harbor View School,Grade 7,Present,305,19,94.92
+2024-05-09,Summit Charter,Grade 6,Absent,102,7,55.52
+2024-07-15,Summit Charter,Grade 5,Absent,207,59,31.56
+2024-05-14,Lincoln Elementary,Kindergarten,Absent,24,135,39.46
+2024-06-25,Riverside Middle,Grade 1,Absent,353,356,60.57
+2024-10-30,Oakwood High,Grade 1,Absent,390,415,69.75
+2025-06-06,Harbor View School,Grade 7,Excused,130,290,17.19
+2024-12-25,Lincoln Elementary,Grade 6,Tardy,293,171,15.94

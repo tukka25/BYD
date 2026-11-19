@@ -1,0 +1,241 @@
+Reading Date,Site Name,Energy Source,Building Zone,Energy Consumed KWh,Peak Demand KW,Energy Cost USD,Carbon Emissions Tons
+2024-12-26,Central Factory,Solar,Cooling,85497.97,4632.41,18997.45,486.55
+2024-03-07,East Office Campus,Diesel Generator,Loading Dock,178756.54,5037.71,33003.21,529.99
+2025-03-18,West Data Center,Solar,Cooling,58600.71,1736.93,48863.27,450.05
+2024-05-19,North Plant,Solar,Office,237848.52,8162.84,57145.06,495.54
+2024-12-25,West Data Center,Wind,Office,242183.88,13789.96,20574.48,368.19
+2024-08-07,South Warehouse,Natural Gas,Cooling,111299.04,13762.62,30115.64,195.64
+2024-02-17,East Office Campus,Natural Gas,Warehouse,3069.69,8771.75,32252.25,672.58
+2025-06-07,North Plant,Grid Electricity,Warehouse,225971.35,10829.56,41279.09,463.98
+2024-10-15,West Data Center,Natural Gas,Production,3254.17,9047.66,47053.95,893.84
+2024-03-28,South Warehouse,Diesel Generator,Warehouse,34982.74,5187.3,17476.73,451.82
+2025-06-20,Central Factory,Grid Electricity,Cooling,215567.65,3313.93,44918.4,69.05
+2025-04-07,Riverside Depot,Solar,Cooling,227630.92,14282.8,25019.89,451.1
+2024-01-10,North Plant,Grid Electricity,Production,214396.03,1079.15,9352.17,752.76
+2024-03-29,Riverside Depot,Natural Gas,Utilities,64744.51,5321.33,26307.62,872.03
+2024-02-24,South Warehouse,Natural Gas,Utilities,241704.86,542.86,44803.45,359.33
+2024-07-01,Central Factory,Natural Gas,Office,177320.12,4945.02,31937.72,685.27
+2024-08-05,Central Factory,Diesel Generator,Production,70817.19,8902.17,28057.51,864.75
+2024-12-31,Riverside Depot,Wind,Warehouse,30777.61,215.96,1384.22,810.32
+2025-01-31,West Data Center,Grid Electricity,Utilities,44586.28,433.04,50129.7,798.34
+2024-11-28,Riverside Depot,Solar,Office,15624.88,2774.97,30712.82,630.12
+2024-08-26,North Plant,Grid Electricity,Loading Dock,213578.63,14810.25,18581.89,719.2
+2025-05-30,South Warehouse,Solar,Production,202248.28,1457.37,49178.2,526.78
+2024-07-21,North Plant,Grid Electricity,Utilities,220081.36,2337.67,22712.08,565.52
+2024-08-10,West Data Center,Grid Electricity,Cooling,247151.73,13832.76,47837.26,542.3
+2024-08-04,North Plant,Solar,Loading Dock,165516.5,13051.51,1546.92,729.34
+2025-05-22,East Office Campus,Grid Electricity,Loading Dock,8293.03,7777.54,53642.83,816.97
+2025-06-17,South Warehouse,Diesel Generator,Cooling,58378.47,5164.82,21029.36,181.28
+2025-05-15,South Warehouse,Natural Gas,Office,37434.72,5904.85,42740.88,872.64
+2024-11-12,Central Factory,Grid Electricity,Loading Dock,145907.17,1256.02,15390.04,815.47
+2025-01-21,North Plant,Grid Electricity,Loading Dock,119366.0,6708.96,15701.9,198.13
+2024-08-10,West Data Center,Solar,Office,233109.62,4065.66,20260.54,567.67
+2024-01-11,Riverside Depot,Grid Electricity,Warehouse,98077.45,1180.34,12864.19,246.46
+2024-11-15,Riverside Depot,Solar,Production,15110.97,2093.88,2039.67,36.99
+2025-03-06,West Data Center,Wind,Loading Dock,5957.1,11993.55,22627.5,787.45
+2024-02-28,Riverside Depot,Diesel Generator,Office,202652.96,13080.43,885.09,374.65
+2025-05-01,Central Factory,Grid Electricity,Loading Dock,158806.39,5481.65,7142.03,575.65
+2024-10-20,Central Factory,Diesel Generator,Production,47692.38,11511.14,43003.62,532.92
+2024-10-09,Riverside Depot,Wind,Loading Dock,226615.48,13102.93,38719.05,755.03
+2025-04-05,West Data Center,Natural Gas,Office,139721.58,12579.69,20458.84,29.2
+2024-04-16,South Warehouse,Natural Gas,Loading Dock,151981.55,974.17,4665.72,134.69
+2025-06-07,Central Factory,Natural Gas,Loading Dock,230155.22,4116.22,50757.72,134.25
+2024-04-07,Riverside Depot,Solar,Utilities,12647.73,10632.21,40077.78,452.61
+2025-02-04,East Office Campus,Diesel Generator,Cooling,211062.09,5139.97,898.63,481.65
+2025-04-01,East Office Campus,Wind,Production,244501.29,8403.2,12257.36,474.09
+2024-12-18,East Office Campus,Solar,Utilities,69270.88,13610.38,43608.77,692.47
+2024-02-17,East Office Campus,Wind,Office,135274.69,55.5,12205.54,761.76
+2025-01-08,South Warehouse,Diesel Generator,Cooling,105897.76,14329.32,14971.18,494.38
+2024-10-21,Riverside Depot,Solar,Cooling,17132.22,7833.66,6608.02,763.33
+2025-06-19,East Office Campus,Solar,Loading Dock,126087.59,14390.85,23855.89,782.44
+2024-04-19,South Warehouse,Natural Gas,Office,223893.09,8369.58,40609.3,31.95
+2024-04-28,West Data Center,Diesel Generator,Utilities,39221.4,8276.58,48442.18,619.54
+2024-06-11,Riverside Depot,Grid Electricity,Office,53568.69,11346.7,38285.97,695.78
+2025-03-28,South Warehouse,Wind,Cooling,136685.02,10877.48,8647.39,767.17
+2025-06-11,North Plant,Wind,Utilities,11152.86,3106.9,51821.87,244.5
+2025-06-06,Central Factory,Solar,Utilities,61493.21,11867.2,13960.57,554.81
+2024-05-29,West Data Center,Diesel Generator,Production,113159.98,5038.18,58655.99,473.04
+2025-01-20,East Office Campus,Natural Gas,Production,191827.93,11199.64,50880.11,479.54
+2025-01-04,West Data Center,Natural Gas,Utilities,70225.25,2779.18,2865.9,892.83
+2024-06-20,Riverside Depot,Natural Gas,Cooling,40523.11,10624.51,40931.85,694.92
+2025-02-18,South Warehouse,Natural Gas,Utilities,18534.62,7612.2,618.5,869.88
+2024-12-20,East Office Campus,Solar,Office,212739.92,2751.81,17710.66,328.0
+2024-06-04,West Data Center,Diesel Generator,Production,192569.21,8321.74,36209.5,148.54
+2024-07-05,East Office Campus,Natural Gas,Production,56528.76,1533.01,49390.01,261.39
+2024-03-20,Riverside Depot,Grid Electricity,Office,100374.09,5821.68,20623.27,825.05
+2024-08-03,North Plant,Natural Gas,Utilities,105960.05,9906.39,45340.76,712.34
+2025-02-20,East Office Campus,Grid Electricity,Loading Dock,195065.48,3655.39,17543.41,759.37
+2024-11-12,Central Factory,Diesel Generator,Warehouse,89808.03,13439.17,54078.19,163.66
+2024-09-01,North Plant,Diesel Generator,Office,54307.99,11045.52,10974.19,415.6
+2025-03-26,Central Factory,Grid Electricity,Warehouse,231321.64,942.78,11590.94,613.46
+2024-06-04,East Office Campus,Natural Gas,Cooling,129080.97,7343.97,8300.65,820.96
+2024-04-11,East Office Campus,Natural Gas,Production,124780.33,11695.31,44752.34,131.88
+2024-04-24,North Plant,Natural Gas,Office,188780.46,1409.09,59568.33,38.8
+2024-08-24,South Warehouse,Natural Gas,Warehouse,114159.89,3295.78,25168.86,547.55
+2025-06-15,West Data Center,Natural Gas,Utilities,175961.49,4804.36,39866.16,592.21
+2024-10-25,North Plant,Solar,Cooling,45580.5,5409.95,50267.46,270.56
+2024-12-15,Central Factory,Natural Gas,Office,77633.51,258.62,59216.73,272.21
+2025-03-30,West Data Center,Wind,Warehouse,118545.57,5938.52,10750.1,76.17
+2024-10-09,North Plant,Wind,Office,158610.83,7638.66,49992.31,763.76
+2024-11-04,Central Factory,Grid Electricity,Office,172076.07,4896.53,2437.69,551.81
+2024-03-02,Central Factory,Grid Electricity,Office,20385.5,3878.37,30212.52,838.4
+2024-06-07,South Warehouse,Diesel Generator,Warehouse,27999.29,2159.98,46698.49,607.81
+2025-05-07,Central Factory,Diesel Generator,Cooling,231786.55,11624.4,43196.3,229.69
+2025-02-04,North Plant,Solar,Loading Dock,209096.95,11104.98,14251.26,132.94
+2024-06-28,East Office Campus,Diesel Generator,Utilities,30183.73,12837.1,35420.43,548.37
+2024-11-19,West Data Center,Grid Electricity,Utilities,71680.56,3383.75,6023.36,660.42
+2025-03-03,North Plant,Diesel Generator,Cooling,47259.28,8333.89,8328.9,341.14
+2024-01-29,West Data Center,Grid Electricity,Utilities,149694.86,9927.51,19113.0,633.98
+2025-05-03,South Warehouse,Natural Gas,Production,70325.98,7062.18,229.39,575.36
+2024-05-27,North Plant,Natural Gas,Production,139995.9,8551.17,57270.69,20.65
+2024-04-21,East Office Campus,Wind,Cooling,21527.02,6107.53,49058.46,895.18
+2025-05-02,South Warehouse,Grid Electricity,Warehouse,6997.98,1234.79,18726.05,874.93
+2025-06-12,Central Factory,Diesel Generator,Production,53176.36,12871.54,54119.02,364.27
+2024-03-31,Riverside Depot,Wind,Cooling,120755.14,9891.25,32481.47,278.78
+2025-04-27,North Plant,Grid Electricity,Warehouse,166347.73,4348.3,4545.6,552.03
+2024-10-23,Central Factory,Solar,Utilities,195908.17,1559.63,23778.63,22.27
+2024-11-01,Central Factory,Wind,Utilities,84924.22,11182.39,21980.87,441.95
+2024-09-11,Riverside Depot,Natural Gas,Office,101999.1,6066.85,40111.78,493.73
+2025-01-26,North Plant,Grid Electricity,Production,153260.21,4645.64,53543.49,763.17
+2024-11-15,Riverside Depot,Wind,Cooling,236909.08,8695.48,34650.1,732.82
+2024-05-29,West Data Center,Wind,Utilities,1191.76,6319.42,34020.53,531.87
+2024-03-11,Central Factory,Diesel Generator,Utilities,82051.68,9173.4,5721.94,129.41
+2025-01-25,South Warehouse,Grid Electricity,Production,181512.03,14665.21,919.9,260.66
+2024-07-15,Central Factory,Diesel Generator,Production,227379.66,2619.32,19370.09,301.98
+2024-08-20,Central Factory,Grid Electricity,Warehouse,219531.33,14595.07,1200.76,82.76
+2025-06-06,East Office Campus,Grid Electricity,Office,92878.38,10150.96,22716.03,308.59
+2024-06-24,North Plant,Natural Gas,Office,7758.3,4363.51,17597.5,125.11
+2024-02-18,South Warehouse,Solar,Warehouse,321.56,13655.95,27916.1,295.98
+2025-01-11,Riverside Depot,Natural Gas,Loading Dock,38934.53,10324.03,10362.79,118.75
+2025-03-13,West Data Center,Wind,Production,6539.55,1462.69,20248.25,411.02
+2024-07-25,Central Factory,Wind,Utilities,3803.81,14639.08,2744.62,607.33
+2025-04-13,Central Factory,Solar,Warehouse,43473.93,13343.31,1942.84,637.83
+2025-01-15,Riverside Depot,Solar,Loading Dock,105101.46,12392.11,41839.94,838.34
+2024-05-03,Riverside Depot,Diesel Generator,Production,137614.8,12347.35,16177.37,697.61
+2025-04-04,West Data Center,Diesel Generator,Warehouse,220938.31,5457.59,10421.54,198.31
+2024-10-03,Central Factory,Wind,Production,118498.58,2024.56,20324.96,569.6
+2024-05-26,South Warehouse,Natural Gas,Utilities,171707.77,10273.94,54457.44,761.51
+2024-12-29,West Data Center,Grid Electricity,Production,200308.57,9978.26,11760.83,317.01
+2024-04-21,Central Factory,Grid Electricity,Office,80793.45,3019.46,23968.05,475.76
+2024-07-04,Central Factory,Diesel Generator,Loading Dock,180364.28,7564.92,18057.41,71.44
+2024-06-21,West Data Center,Wind,Production,173048.47,7603.03,11248.92,554.14
+2024-05-02,Central Factory,Grid Electricity,Office,24167.91,11414.45,48598.42,136.93
+2024-08-16,North Plant,Natural Gas,Office,202443.16,6937.69,15782.03,745.75
+2025-06-17,North Plant,Solar,Office,95602.97,11674.35,22365.59,486.84
+2025-01-28,South Warehouse,Solar,Production,54660.13,7071.37,47260.51,285.99
+2024-12-21,Central Factory,Grid Electricity,Cooling,39143.05,11534.68,43579.77,331.08
+2024-08-24,South Warehouse,Grid Electricity,Office,233699.95,216.33,7651.61,69.08
+2024-12-14,South Warehouse,Wind,Utilities,70360.13,14603.44,43879.77,36.72
+2025-01-09,Central Factory,Grid Electricity,Cooling,193902.31,2453.38,59823.59,126.51
+2024-04-07,South Warehouse,Grid Electricity,Office,205970.99,1851.85,15501.56,102.88
+2025-06-21,Riverside Depot,Solar,Warehouse,233767.88,10193.49,6460.24,796.36
+2024-03-24,East Office Campus,Diesel Generator,Loading Dock,151977.53,7432.04,9012.57,470.37
+2024-05-06,South Warehouse,Diesel Generator,Production,45143.12,5746.05,11468.85,279.08
+2024-07-25,West Data Center,Natural Gas,Office,24812.33,8909.03,51917.34,257.69
+2025-02-13,East Office Campus,Grid Electricity,Utilities,17731.77,374.34,34184.93,39.8
+2024-03-25,Central Factory,Wind,Utilities,180966.84,6253.23,3956.2,545.83
+2024-09-14,West Data Center,Solar,Cooling,199774.77,14898.7,3531.98,693.16
+2025-05-13,Riverside Depot,Diesel Generator,Warehouse,196902.03,10719.71,46127.83,891.11
+2024-08-13,Riverside Depot,Grid Electricity,Office,31469.23,6739.64,55153.8,461.07
+2025-04-22,East Office Campus,Grid Electricity,Cooling,106608.39,7609.88,44638.65,71.32
+2024-11-20,Riverside Depot,Natural Gas,Loading Dock,8448.7,14921.99,9003.27,353.48
+2025-03-12,Central Factory,Diesel Generator,Office,80622.1,13127.35,37983.89,882.82
+2024-03-04,East Office Campus,Diesel Generator,Office,105609.9,5744.63,51767.15,216.17
+2024-08-01,West Data Center,Solar,Production,84978.94,10497.49,53204.15,169.63
+2024-06-19,South Warehouse,Diesel Generator,Loading Dock,216273.41,9535.07,43045.14,800.9
+2024-08-12,Riverside Depot,Natural Gas,Cooling,247545.35,2012.63,33625.78,799.88
+2024-05-27,South Warehouse,Natural Gas,Cooling,101724.49,13731.17,2974.64,323.23
+2024-07-29,East Office Campus,Diesel Generator,Utilities,86813.79,2672.6,57630.07,864.39
+2024-11-25,West Data Center,Diesel Generator,Warehouse,215583.27,3984.77,57056.53,639.48
+2024-09-10,North Plant,Wind,Utilities,8020.04,3490.93,33068.73,548.68
+2024-05-01,West Data Center,Solar,Loading Dock,197877.4,10871.24,22618.06,599.64
+2024-05-14,Central Factory,Natural Gas,Utilities,22519.7,801.57,22955.85,55.9
+2024-01-26,North Plant,Solar,Office,56119.57,726.52,15951.25,831.82
+2024-01-01,North Plant,Diesel Generator,Warehouse,218294.33,4435.26,42706.48,281.03
+2024-01-22,Riverside Depot,Diesel Generator,Cooling,44504.93,8565.4,22421.47,393.66
+2024-05-26,Riverside Depot,Grid Electricity,Loading Dock,110097.31,5886.61,7933.8,479.45
+2025-02-22,West Data Center,Wind,Cooling,96134.91,412.01,20625.31,235.42
+2025-06-04,North Plant,Grid Electricity,Warehouse,46229.03,1571.73,37573.18,149.78
+2025-01-04,Central Factory,Solar,Cooling,109695.54,1843.98,47218.71,757.62
+2024-04-16,Riverside Depot,Natural Gas,Utilities,159820.88,774.17,24455.64,673.37
+2025-04-03,East Office Campus,Solar,Loading Dock,169907.91,4426.63,27615.96,828.76
+2024-03-22,East Office Campus,Grid Electricity,Office,1614.94,540.76,35439.32,247.03
+2024-12-31,East Office Campus,Diesel Generator,Production,79848.39,1176.47,14828.42,869.31
+2024-02-24,South Warehouse,Natural Gas,Office,185610.36,6232.08,36449.16,692.74
+2024-01-29,East Office Campus,Solar,Production,74984.54,8565.88,15227.42,688.9
+2024-07-01,South Warehouse,Natural Gas,Utilities,194692.34,14424.44,39567.74,652.1
+2025-01-13,South Warehouse,Natural Gas,Production,84051.0,8965.33,48709.25,79.48
+2024-11-22,North Plant,Diesel Generator,Utilities,182407.28,10382.84,20252.56,759.28
+2024-10-22,Riverside Depot,Solar,Office,50471.1,11955.05,54858.08,194.5
+2024-03-25,Riverside Depot,Diesel Generator,Production,241565.02,1957.32,58898.67,394.25
+2025-06-03,Riverside Depot,Natural Gas,Production,125803.85,6540.21,37001.21,501.91
+2025-04-08,West Data Center,Solar,Warehouse,221998.87,4840.85,3854.57,863.84
+2024-05-04,West Data Center,Solar,Loading Dock,39594.19,3856.51,27090.65,1.15
+2025-03-12,West Data Center,Diesel Generator,Cooling,190461.97,1418.77,24612.07,88.85
+2024-02-12,East Office Campus,Diesel Generator,Office,101110.48,9189.69,31332.54,467.66
+2024-04-17,South Warehouse,Diesel Generator,Loading Dock,93473.02,6765.73,12259.07,219.62
+2025-03-25,South Warehouse,Grid Electricity,Office,184287.01,5719.42,52629.22,764.99
+2025-02-16,Central Factory,Natural Gas,Loading Dock,136507.23,14287.75,7726.5,676.68
+2024-08-16,North Plant,Grid Electricity,Production,232667.93,7591.22,32334.34,588.44
+2024-07-06,South Warehouse,Diesel Generator,Loading Dock,19469.79,6888.32,48520.24,854.0
+2024-09-10,Central Factory,Wind,Office,2816.6,13631.18,12991.2,770.18
+2025-03-03,West Data Center,Grid Electricity,Production,45850.43,14122.91,17637.19,565.38
+2025-01-22,North Plant,Grid Electricity,Utilities,178662.5,2826.19,41139.44,88.42
+2024-10-31,Central Factory,Natural Gas,Loading Dock,112888.16,3580.5,25639.21,124.75
+2024-04-08,West Data Center,Natural Gas,Cooling,179157.02,6801.22,38511.35,523.38
+2024-02-13,Central Factory,Wind,Office,238535.27,5470.14,20617.75,46.77
+2024-08-31,Central Factory,Solar,Production,123476.09,380.66,55781.2,848.48
+2024-10-17,West Data Center,Solar,Loading Dock,177228.5,12556.89,56254.52,763.24
+2025-03-09,North Plant,Solar,Cooling,30886.57,10749.23,12721.51,266.58
+2024-10-26,South Warehouse,Diesel Generator,Loading Dock,202237.76,7411.22,35318.99,804.17
+2024-11-16,West Data Center,Grid Electricity,Loading Dock,50721.85,8845.01,40853.48,557.85
+2024-04-28,North Plant,Natural Gas,Office,239052.84,3052.79,6187.34,477.18
+2025-05-02,West Data Center,Grid Electricity,Cooling,224431.69,8486.25,23971.41,533.46
+2024-06-28,North Plant,Diesel Generator,Office,191375.31,3861.53,55586.96,880.2
+2025-04-12,North Plant,Wind,Office,59009.27,13832.71,39167.16,460.82
+2025-01-04,West Data Center,Natural Gas,Production,222646.44,3258.15,33802.95,17.21
+2024-05-27,Central Factory,Solar,Loading Dock,173924.98,5155.8,49229.79,422.69
+2024-09-27,South Warehouse,Diesel Generator,Utilities,153114.32,10713.88,19263.48,143.98
+2025-03-05,South Warehouse,Natural Gas,Utilities,29903.14,3784.82,45271.05,781.95
+2024-03-07,South Warehouse,Natural Gas,Loading Dock,188506.72,13084.85,14347.87,776.8
+2024-12-09,East Office Campus,Natural Gas,Office,211206.8,4180.5,28074.82,11.49
+2024-06-01,Central Factory,Natural Gas,Office,147074.44,12469.12,56000.08,594.06
+2024-03-06,South Warehouse,Wind,Production,60078.78,14207.87,12650.76,248.27
+2024-09-15,North Plant,Grid Electricity,Warehouse,28753.76,2701.01,46117.33,862.92
+2024-05-22,North Plant,Wind,Loading Dock,182162.09,7231.03,15280.8,163.49
+2024-03-09,South Warehouse,Grid Electricity,Production,23298.47,2115.21,41617.29,153.11
+2025-02-11,Central Factory,Wind,Cooling,176136.1,1882.93,27388.96,721.61
+2025-01-16,Central Factory,Diesel Generator,Utilities,168583.23,952.75,19483.45,874.38
+2025-04-01,Central Factory,Wind,Cooling,830.95,11008.61,6050.34,333.39
+2024-12-25,South Warehouse,Natural Gas,Utilities,126484.13,4132.18,38074.3,710.99
+2024-03-24,Central Factory,Solar,Warehouse,132089.28,5761.35,26826.84,74.46
+2025-02-02,Central Factory,Natural Gas,Warehouse,123776.05,6284.39,25.96,440.49
+2025-01-15,East Office Campus,Solar,Cooling,50451.12,8142.82,7036.38,688.14
+2024-07-24,West Data Center,Natural Gas,Loading Dock,32680.53,5725.0,16535.16,569.66
+2024-06-24,South Warehouse,Natural Gas,Cooling,161655.39,12832.92,26236.97,564.89
+2025-05-06,Riverside Depot,Wind,Warehouse,175151.17,9673.07,7749.82,766.48
+2024-04-09,Central Factory,Natural Gas,Utilities,105243.73,2497.3,25282.46,47.2
+2024-03-08,Riverside Depot,Diesel Generator,Warehouse,9244.88,3117.37,22888.81,92.38
+2024-02-23,East Office Campus,Diesel Generator,Warehouse,214768.76,6001.23,47497.91,650.55
+2025-06-09,South Warehouse,Natural Gas,Office,50866.41,7134.43,48661.08,304.58
+2024-02-23,Central Factory,Grid Electricity,Production,48528.39,6886.05,28549.65,19.75
+2024-06-25,East Office Campus,Natural Gas,Loading Dock,119929.23,12013.92,31414.75,288.49
+2024-09-06,North Plant,Wind,Production,235291.85,5782.89,9467.7,521.88
+2025-03-09,East Office Campus,Solar,Loading Dock,66358.56,11956.67,12064.19,675.29
+2024-03-03,East Office Campus,Natural Gas,Production,79227.81,974.86,35726.25,278.24
+2024-07-10,Central Factory,Solar,Warehouse,112819.8,1080.82,38375.51,212.88
+2024-11-23,Riverside Depot,Solar,Warehouse,170711.21,13102.4,27140.25,815.09
+2024-12-14,North Plant,Wind,Utilities,214859.17,6575.92,8201.47,62.8
+2025-03-21,South Warehouse,Diesel Generator,Office,26169.49,859.26,25741.38,748.44
+2024-02-01,East Office Campus,Diesel Generator,Office,176246.81,1783.0,44864.41,34.67
+2024-08-16,South Warehouse,Diesel Generator,Warehouse,242387.59,2541.93,45392.67,859.51
+2025-04-23,South Warehouse,Natural Gas,Production,183590.86,8555.44,14601.68,868.53
+2024-11-30,East Office Campus,Natural Gas,Loading Dock,77375.16,8616.33,29563.53,621.86
+2025-05-12,South Warehouse,Solar,Warehouse,31441.26,5761.0,10674.98,875.58
+2025-03-27,East Office Campus,Grid Electricity,Warehouse,38512.16,1731.67,7688.31,130.82
+2025-06-04,East Office Campus,Grid Electricity,Production,51924.83,260.15,23104.3,436.63
+2025-03-21,North Plant,Diesel Generator,Office,82931.2,13609.16,43435.91,795.61
+2024-09-27,Central Factory,Natural Gas,Production,231516.38,6569.62,35471.03,820.13
+2024-06-18,East Office Campus,Wind,Utilities,8807.34,8687.22,18412.04,57.38
+2024-07-25,West Data Center,Natural Gas,Production,187566.5,10425.17,52922.48,810.68
+2024-11-01,South Warehouse,Diesel Generator,Loading Dock,51089.84,6411.55,54640.53,740.44

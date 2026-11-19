@@ -1,0 +1,241 @@
+scorecard_review_date,scorecard_supplier_name,scorecard_region,scorecard_commodity_type,scorecard_on_time_delivery_rate,scorecard_defect_rate,scorecard_total_order_value,scorecard_overall_score
+2024-01-31,Meridian Chemicals SA,Latin America,Packaging,67.7,8.27,2146193.84,39.61
+2025-06-18,Meridian Chemicals SA,Middle East,Raw Metals,11.47,3.25,1995957.64,71.35
+2024-08-30,Redwood Logistics Partners,Latin America,Raw Metals,5.85,5.05,607985.63,13.04
+2025-02-26,Summit Plastics GmbH,East Asia,Electronics,0.98,8.29,2284652.42,62.42
+2024-11-10,Redwood Logistics Partners,Latin America,Packaging,53.55,12.77,1084697.65,8.54
+2024-12-07,Ironbridge Fasteners Ltd,East Asia,Chemicals,69.56,3.42,515965.78,67.23
+2025-04-25,Meridian Chemicals SA,East Asia,Electronics,56.4,12.09,775983.86,57.71
+2024-10-24,Pacific Textile Group,East Asia,Plastics,39.67,9.17,1338491.51,10.1
+2024-07-26,Meridian Chemicals SA,North America,Electronics,68.01,10.49,312889.68,79.88
+2025-02-22,Redwood Logistics Partners,Middle East,Chemicals,50.55,2.6,2313275.89,14.79
+2025-06-05,Apex Components Ltd,East Asia,Packaging,86.05,9.63,2005927.54,54.36
+2024-06-01,Pacific Textile Group,Eastern Europe,Textiles,14.94,3.75,1115132.04,79.32
+2024-08-12,Northwind Metals Co,East Asia,Packaging,27.78,0.82,1957653.22,25.34
+2024-02-24,Ironbridge Fasteners Ltd,Middle East,Plastics,83.19,4.03,1336864.89,58.12
+2024-11-07,Ironbridge Fasteners Ltd,South Asia,Chemicals,58.25,0.42,484229.63,85.52
+2025-01-10,Harbor Packaging Inc,East Asia,Packaging,55.32,14.18,908079.79,35.28
+2024-12-04,Apex Components Ltd,South Asia,Plastics,84.87,4.96,367598.83,48.88
+2024-08-04,Apex Components Ltd,North America,Raw Metals,39.38,11.97,272033.92,27.41
+2024-04-04,Pacific Textile Group,East Asia,Raw Metals,37.4,7.47,2275542.54,90.04
+2024-02-14,Redwood Logistics Partners,North America,Plastics,60.7,10.38,1172386.39,38.5
+2025-05-12,Apex Components Ltd,Eastern Europe,Plastics,83.74,5.93,1064653.89,60.25
+2024-11-09,Pacific Textile Group,Latin America,Raw Metals,41.82,10.24,74103.58,38.69
+2024-09-23,Northwind Metals Co,Middle East,Electronics,29.21,2.18,810216.02,66.46
+2024-03-08,Harbor Packaging Inc,Middle East,Electronics,5.38,0.16,1228591.09,22.53
+2025-02-21,Meridian Chemicals SA,South Asia,Plastics,10.48,6.51,2132587.72,8.66
+2024-01-03,Harbor Packaging Inc,East Asia,Electronics,88.71,10.82,705329.12,73.83
+2024-02-04,Northwind Metals Co,Western Europe,Packaging,7.41,14.87,1779873.74,28.97
+2024-01-01,Meridian Chemicals SA,Western Europe,Raw Metals,42.73,7.88,624965.03,25.93
+2024-01-16,Meridian Chemicals SA,Middle East,Textiles,14.09,0.71,982174.47,15.74
+2024-02-04,Apex Components Ltd,South Asia,Packaging,0.88,8.28,120134.61,74.5
+2024-12-13,Northwind Metals Co,Middle East,Chemicals,34.2,2.84,1316982.1,10.2
+2025-05-30,Pacific Textile Group,Middle East,Textiles,75.83,4.15,1967274.2,18.33
+2025-04-26,Harbor Packaging Inc,Western Europe,Plastics,22.45,13.43,94313.98,89.67
+2024-01-30,Apex Components Ltd,Latin America,Packaging,76.52,8.33,1589983.38,64.97
+2025-01-27,Redwood Logistics Partners,North America,Raw Metals,63.68,4.51,1645282.54,11.75
+2025-05-04,Ironbridge Fasteners Ltd,North America,Packaging,90.18,13.26,1690243.7,95.48
+2024-03-14,Harbor Packaging Inc,Eastern Europe,Electronics,91.01,13.76,779728.55,77.46
+2024-01-27,Harbor Packaging Inc,Eastern Europe,Textiles,62.08,5.92,2041464.0,19.89
+2025-06-16,Redwood Logistics Partners,Latin America,Chemicals,97.16,14.9,515655.59,54.53
+2025-05-11,Apex Components Ltd,Middle East,Packaging,6.4,13.45,2228311.34,9.04
+2025-01-18,Northwind Metals Co,Eastern Europe,Textiles,84.49,10.28,1641470.53,11.99
+2025-01-05,Summit Plastics GmbH,Middle East,Plastics,16.78,10.12,183814.83,49.93
+2024-09-14,Harbor Packaging Inc,Eastern Europe,Raw Metals,65.24,5.64,1560651.1,42.73
+2024-07-15,Harbor Packaging Inc,Middle East,Textiles,54.71,1.95,1411948.91,73.3
+2024-11-17,Meridian Chemicals SA,Latin America,Chemicals,46.35,2.03,2092484.28,89.6
+2024-02-21,Harbor Packaging Inc,North America,Raw Metals,80.95,9.22,121120.7,77.9
+2024-05-20,Pacific Textile Group,Latin America,Electronics,50.51,8.08,1384172.44,5.97
+2025-04-16,Meridian Chemicals SA,South Asia,Packaging,79.3,2.39,434029.83,84.72
+2025-05-23,Pacific Textile Group,Eastern Europe,Plastics,32.45,12.8,981304.04,63.55
+2024-06-01,Pacific Textile Group,Western Europe,Chemicals,77.44,8.21,1698459.52,1.3
+2024-03-25,Pacific Textile Group,North America,Chemicals,72.56,1.28,2017555.14,7.39
+2024-10-08,Pacific Textile Group,Western Europe,Chemicals,30.12,2.18,529508.63,97.92
+2024-05-29,Northwind Metals Co,Eastern Europe,Plastics,40.02,14.04,1090533.33,49.23
+2024-08-15,Redwood Logistics Partners,East Asia,Raw Metals,54.14,12.98,373758.19,39.32
+2024-07-30,Apex Components Ltd,Middle East,Plastics,39.28,12.37,1770695.3,84.52
+2025-02-19,Pacific Textile Group,North America,Chemicals,62.32,12.7,292542.83,76.33
+2024-10-05,Apex Components Ltd,North America,Electronics,4.29,12.1,2214311.43,23.52
+2025-03-02,Harbor Packaging Inc,Middle East,Electronics,44.2,5.38,1426237.5,95.02
+2024-05-18,Redwood Logistics Partners,South Asia,Raw Metals,40.6,7.81,2059765.17,8.32
+2024-01-13,Pacific Textile Group,Latin America,Chemicals,78.35,1.81,594209.58,13.0
+2024-06-22,Pacific Textile Group,North America,Packaging,50.96,4.3,1860989.51,70.42
+2024-06-02,Redwood Logistics Partners,South Asia,Plastics,86.64,2.73,392404.6,62.98
+2025-02-14,Pacific Textile Group,South Asia,Packaging,67.82,6.34,1409350.88,83.86
+2024-03-28,Harbor Packaging Inc,North America,Packaging,59.77,13.97,2358824.28,5.41
+2024-02-13,Redwood Logistics Partners,East Asia,Chemicals,93.0,12.5,1513622.34,10.02
+2024-05-25,Redwood Logistics Partners,East Asia,Chemicals,90.99,13.58,827329.41,30.2
+2024-12-30,Harbor Packaging Inc,Eastern Europe,Chemicals,80.9,12.57,49119.29,97.49
+2024-01-16,Apex Components Ltd,South Asia,Packaging,39.61,11.98,1012813.53,49.27
+2025-03-26,Harbor Packaging Inc,North America,Electronics,67.04,10.45,1052398.62,56.02
+2025-04-07,Apex Components Ltd,Western Europe,Packaging,14.32,0.03,2077631.44,1.78
+2024-09-11,Ironbridge Fasteners Ltd,Latin America,Electronics,6.09,0.69,2177375.91,23.92
+2024-05-23,Harbor Packaging Inc,North America,Plastics,47.78,11.56,1474847.62,54.63
+2024-10-17,Pacific Textile Group,East Asia,Textiles,92.53,14.9,660636.81,33.46
+2024-01-31,Summit Plastics GmbH,Western Europe,Packaging,76.54,14.03,177008.02,67.34
+2024-09-04,Redwood Logistics Partners,North America,Packaging,2.88,14.43,2392593.71,20.11
+2024-12-28,Meridian Chemicals SA,South Asia,Packaging,11.7,8.72,2441039.33,64.13
+2024-10-13,Redwood Logistics Partners,South Asia,Plastics,86.64,9.08,598691.84,27.45
+2025-05-22,Ironbridge Fasteners Ltd,South Asia,Textiles,68.93,13.82,899045.02,4.73
+2024-06-04,Apex Components Ltd,Western Europe,Plastics,23.19,12.29,1687941.93,4.56
+2024-01-10,Redwood Logistics Partners,North America,Packaging,23.85,8.8,383262.31,25.4
+2025-05-27,Pacific Textile Group,South Asia,Textiles,63.75,6.55,2421329.13,25.18
+2025-01-29,Redwood Logistics Partners,Middle East,Chemicals,77.49,14.28,1744908.97,72.12
+2024-07-12,Pacific Textile Group,Middle East,Packaging,60.76,0.08,1525484.91,46.0
+2024-05-06,Apex Components Ltd,Eastern Europe,Chemicals,89.77,1.45,302297.41,81.35
+2025-01-08,Pacific Textile Group,Latin America,Textiles,98.86,1.47,295187.23,80.31
+2025-06-21,Northwind Metals Co,Eastern Europe,Textiles,17.3,5.23,2326819.69,40.79
+2024-07-06,Ironbridge Fasteners Ltd,South Asia,Packaging,93.48,2.42,1047285.13,19.57
+2025-06-23,Pacific Textile Group,South Asia,Plastics,2.58,10.85,1014609.16,42.28
+2025-01-26,Pacific Textile Group,Western Europe,Chemicals,99.1,6.59,2063698.19,68.49
+2024-08-20,Redwood Logistics Partners,South Asia,Electronics,71.04,11.5,1744263.25,72.72
+2024-03-26,Ironbridge Fasteners Ltd,South Asia,Textiles,29.38,12.67,36025.69,13.4
+2024-07-24,Pacific Textile Group,Western Europe,Raw Metals,60.88,4.43,1340526.82,40.39
+2024-01-28,Harbor Packaging Inc,East Asia,Textiles,17.96,2.56,1595966.63,34.94
+2025-02-07,Pacific Textile Group,Latin America,Packaging,39.64,6.3,586991.92,40.08
+2024-11-18,Apex Components Ltd,Eastern Europe,Plastics,89.02,14.7,229789.42,51.6
+2024-04-17,Apex Components Ltd,Western Europe,Raw Metals,87.25,7.24,2088632.43,33.8
+2024-09-25,Pacific Textile Group,Eastern Europe,Electronics,76.93,12.35,1348190.15,69.56
+2024-09-25,Northwind Metals Co,Middle East,Electronics,58.07,4.21,721624.87,64.03
+2024-12-22,Apex Components Ltd,North America,Chemicals,75.49,2.73,1770365.63,77.02
+2024-01-15,Harbor Packaging Inc,Eastern Europe,Raw Metals,58.06,1.23,2419831.59,81.21
+2024-06-12,Pacific Textile Group,East Asia,Textiles,64.66,11.21,971914.11,3.08
+2024-07-31,Northwind Metals Co,Eastern Europe,Chemicals,84.03,7.59,1932720.35,82.41
+2024-06-18,Harbor Packaging Inc,Latin America,Plastics,99.02,2.07,1848181.68,42.47
+2024-03-22,Northwind Metals Co,East Asia,Packaging,62.72,11.06,1032657.64,91.07
+2024-03-28,Pacific Textile Group,Middle East,Textiles,71.47,12.46,1187807.62,44.71
+2024-11-20,Meridian Chemicals SA,East Asia,Raw Metals,25.91,6.66,1654070.87,17.87
+2024-12-14,Pacific Textile Group,Latin America,Textiles,76.68,14.46,258656.76,18.23
+2025-02-28,Redwood Logistics Partners,Eastern Europe,Plastics,30.27,3.3,57268.81,10.05
+2024-11-21,Ironbridge Fasteners Ltd,East Asia,Plastics,41.99,11.91,1979210.97,46.63
+2024-05-28,Redwood Logistics Partners,Latin America,Chemicals,38.91,5.09,1769380.24,63.82
+2025-04-08,Meridian Chemicals SA,North America,Plastics,26.25,13.95,2491273.13,48.54
+2025-03-20,Northwind Metals Co,Latin America,Textiles,72.28,13.14,2394371.39,95.39
+2024-11-04,Ironbridge Fasteners Ltd,East Asia,Raw Metals,26.28,9.52,1476067.66,56.85
+2025-03-09,Northwind Metals Co,Eastern Europe,Packaging,92.07,10.46,259352.71,36.55
+2024-02-21,Summit Plastics GmbH,Latin America,Plastics,84.99,13.56,1377989.59,6.5
+2025-01-12,Harbor Packaging Inc,Western Europe,Packaging,84.5,5.01,444216.3,79.4
+2025-04-01,Northwind Metals Co,South Asia,Textiles,3.8,13.28,924510.86,92.45
+2025-01-11,Harbor Packaging Inc,Western Europe,Textiles,71.81,0.42,1261629.78,55.1
+2025-04-27,Harbor Packaging Inc,East Asia,Textiles,38.18,4.77,2275007.38,19.78
+2025-04-12,Redwood Logistics Partners,Latin America,Textiles,23.07,10.55,177858.33,96.61
+2025-02-11,Northwind Metals Co,Western Europe,Chemicals,18.3,1.12,394549.65,48.29
+2025-03-11,Apex Components Ltd,Middle East,Plastics,52.88,1.53,1895145.9,23.94
+2024-06-12,Harbor Packaging Inc,East Asia,Electronics,59.04,4.0,1794075.81,43.07
+2025-03-25,Ironbridge Fasteners Ltd,Middle East,Packaging,79.21,14.37,1246155.0,9.02
+2025-06-16,Redwood Logistics Partners,North America,Plastics,45.78,5.27,322455.37,87.67
+2024-05-27,Meridian Chemicals SA,Latin America,Raw Metals,89.87,1.41,383951.97,54.02
+2025-06-09,Northwind Metals Co,Middle East,Packaging,39.61,7.67,1556483.23,39.65
+2024-02-28,Summit Plastics GmbH,South Asia,Chemicals,6.74,5.07,318078.5,41.12
+2025-03-04,Harbor Packaging Inc,Latin America,Plastics,3.47,9.16,308336.78,62.97
+2025-02-22,Meridian Chemicals SA,North America,Electronics,76.25,11.58,1268744.89,84.36
+2024-01-31,Harbor Packaging Inc,Western Europe,Chemicals,99.44,5.02,199675.35,58.89
+2024-06-04,Harbor Packaging Inc,Latin America,Raw Metals,37.65,6.81,539714.52,12.52
+2024-03-23,Pacific Textile Group,Eastern Europe,Plastics,39.23,13.02,1348105.47,10.26
+2024-08-24,Harbor Packaging Inc,Western Europe,Plastics,2.0,3.11,1984343.5,79.49
+2024-04-09,Pacific Textile Group,East Asia,Chemicals,24.27,9.54,1755107.71,69.96
+2024-04-06,Northwind Metals Co,Middle East,Raw Metals,37.78,10.85,1531533.99,19.68
+2025-02-07,Redwood Logistics Partners,Eastern Europe,Chemicals,6.21,13.76,539036.48,66.5
+2024-11-06,Meridian Chemicals SA,Middle East,Electronics,28.5,5.02,1513987.91,22.41
+2025-01-09,Ironbridge Fasteners Ltd,Eastern Europe,Plastics,24.76,2.81,1523931.96,86.71
+2024-04-17,Meridian Chemicals SA,Latin America,Chemicals,26.57,10.65,942249.09,73.96
+2025-02-23,Meridian Chemicals SA,South Asia,Chemicals,70.49,7.43,2231127.35,88.76
+2024-07-25,Redwood Logistics Partners,Middle East,Textiles,19.47,11.46,2271909.23,13.28
+2024-11-23,Northwind Metals Co,East Asia,Plastics,14.37,14.45,73996.88,36.45
+2024-07-14,Northwind Metals Co,Eastern Europe,Chemicals,65.64,11.69,1470889.68,36.0
+2024-12-22,Apex Components Ltd,Western Europe,Packaging,63.38,6.75,37826.29,68.95
+2024-05-11,Summit Plastics GmbH,Western Europe,Packaging,33.0,6.36,1069938.09,82.29
+2024-09-18,Pacific Textile Group,North America,Textiles,83.72,2.38,2097756.17,82.35
+2024-09-22,Redwood Logistics Partners,Latin America,Electronics,87.95,1.52,1964885.37,20.03
+2024-01-08,Apex Components Ltd,South Asia,Textiles,63.65,10.41,1128155.25,40.56
+2024-12-08,Northwind Metals Co,North America,Raw Metals,49.83,2.2,1061406.55,78.3
+2024-01-03,Apex Components Ltd,Middle East,Textiles,0.17,11.76,43036.64,28.3
+2024-04-18,Ironbridge Fasteners Ltd,North America,Textiles,37.94,4.21,641741.05,97.18
+2024-04-13,Meridian Chemicals SA,Western Europe,Raw Metals,35.22,13.56,540379.21,70.3
+2024-09-29,Ironbridge Fasteners Ltd,South Asia,Chemicals,91.93,7.24,1757346.86,44.64
+2024-11-24,Meridian Chemicals SA,North America,Electronics,52.34,7.88,574716.28,1.62
+2025-06-07,Northwind Metals Co,East Asia,Electronics,31.73,11.74,386603.88,67.04
+2024-03-16,Northwind Metals Co,Eastern Europe,Textiles,48.68,4.54,1935172.43,6.58
+2024-04-04,Apex Components Ltd,Latin America,Raw Metals,8.47,2.57,899592.04,51.32
+2025-05-08,Redwood Logistics Partners,Middle East,Raw Metals,46.19,10.66,2419773.37,28.17
+2024-07-17,Pacific Textile Group,East Asia,Packaging,43.67,12.56,1024128.79,16.57
+2025-02-15,Harbor Packaging Inc,North America,Electronics,66.92,5.04,847479.67,34.75
+2025-01-30,Harbor Packaging Inc,Eastern Europe,Raw Metals,79.38,2.13,1486831.71,36.03
+2025-01-21,Apex Components Ltd,North America,Textiles,10.61,12.27,2165002.5,81.62
+2025-05-15,Meridian Chemicals SA,East Asia,Textiles,88.76,11.5,1628248.44,81.95
+2024-09-22,Northwind Metals Co,Western Europe,Chemicals,83.9,7.58,1431021.93,95.24
+2024-10-24,Apex Components Ltd,North America,Raw Metals,5.1,14.86,570211.67,54.63
+2024-03-30,Apex Components Ltd,Middle East,Textiles,92.33,1.87,339894.99,3.82
+2024-08-11,Harbor Packaging Inc,Eastern Europe,Plastics,82.34,9.52,1238184.35,94.39
+2025-05-14,Redwood Logistics Partners,Western Europe,Electronics,25.59,8.56,878951.1,51.58
+2024-04-28,Summit Plastics GmbH,Latin America,Chemicals,76.46,13.25,2360069.66,21.84
+2024-05-28,Summit Plastics GmbH,North America,Textiles,21.98,10.57,879469.53,29.79
+2024-11-14,Northwind Metals Co,Western Europe,Plastics,8.32,3.73,241673.34,67.05
+2025-01-02,Pacific Textile Group,Western Europe,Textiles,79.3,13.76,455383.23,50.9
+2024-09-04,Apex Components Ltd,Western Europe,Raw Metals,86.94,9.97,647719.12,39.21
+2024-11-13,Apex Components Ltd,East Asia,Plastics,16.72,0.05,1846144.09,99.04
+2025-05-12,Redwood Logistics Partners,East Asia,Raw Metals,26.14,12.92,1677921.12,75.94
+2024-09-18,Northwind Metals Co,North America,Raw Metals,37.23,6.41,269410.91,75.85
+2025-03-01,Meridian Chemicals SA,North America,Textiles,41.01,6.42,893104.05,4.94
+2025-04-30,Meridian Chemicals SA,Latin America,Plastics,27.56,13.72,2084248.4,18.27
+2025-03-31,Apex Components Ltd,East Asia,Plastics,71.84,3.1,1159357.83,67.6
+2024-11-09,Ironbridge Fasteners Ltd,South Asia,Textiles,20.74,11.47,501136.04,58.7
+2024-08-06,Northwind Metals Co,Eastern Europe,Electronics,53.33,0.09,2196920.19,97.92
+2024-02-29,Redwood Logistics Partners,East Asia,Chemicals,0.07,14.42,2145650.71,64.12
+2024-12-05,Ironbridge Fasteners Ltd,Latin America,Textiles,79.99,12.53,2449079.89,3.04
+2025-05-05,Ironbridge Fasteners Ltd,South Asia,Plastics,7.56,14.18,1766490.68,56.86
+2024-11-28,Meridian Chemicals SA,North America,Plastics,55.08,12.79,2027609.9,4.97
+2024-11-03,Harbor Packaging Inc,Latin America,Textiles,21.4,2.16,1154632.0,69.13
+2024-11-30,Summit Plastics GmbH,Western Europe,Plastics,3.73,6.76,1844789.95,65.09
+2025-01-21,Ironbridge Fasteners Ltd,East Asia,Raw Metals,42.05,0.27,220967.62,84.25
+2024-11-03,Pacific Textile Group,South Asia,Plastics,96.52,9.72,2377434.15,54.13
+2025-03-12,Apex Components Ltd,Latin America,Packaging,51.54,12.93,1813119.4,98.53
+2025-05-08,Northwind Metals Co,Middle East,Chemicals,82.8,6.98,477034.29,28.88
+2024-01-12,Summit Plastics GmbH,Western Europe,Chemicals,80.04,4.14,2009796.64,32.33
+2024-09-20,Meridian Chemicals SA,North America,Textiles,7.46,6.4,1633561.22,28.83
+2024-04-10,Northwind Metals Co,Eastern Europe,Chemicals,90.03,8.07,2219496.64,68.39
+2025-01-09,Northwind Metals Co,East Asia,Electronics,17.56,5.31,496343.57,82.79
+2024-10-16,Harbor Packaging Inc,Latin America,Raw Metals,94.88,9.97,191992.26,51.41
+2025-03-15,Ironbridge Fasteners Ltd,Western Europe,Chemicals,12.92,7.99,167816.7,89.9
+2024-07-11,Ironbridge Fasteners Ltd,Middle East,Plastics,82.01,5.81,1533195.38,86.13
+2025-05-15,Meridian Chemicals SA,Middle East,Chemicals,18.15,9.51,1343842.23,68.24
+2024-05-01,Meridian Chemicals SA,Latin America,Electronics,66.78,7.84,122396.13,67.09
+2025-03-16,Northwind Metals Co,Eastern Europe,Textiles,75.47,3.79,678844.51,78.06
+2024-07-21,Harbor Packaging Inc,South Asia,Packaging,86.86,0.65,2345453.86,24.95
+2024-06-13,Redwood Logistics Partners,Latin America,Plastics,28.2,14.4,803672.35,90.88
+2024-07-31,Ironbridge Fasteners Ltd,South Asia,Textiles,25.19,2.67,2214670.53,91.47
+2024-07-18,Summit Plastics GmbH,Western Europe,Electronics,66.04,11.62,21365.15,18.14
+2025-05-21,Pacific Textile Group,Eastern Europe,Textiles,4.96,0.94,2424418.45,83.54
+2024-11-24,Pacific Textile Group,Latin America,Textiles,18.55,15.0,1928449.94,54.91
+2024-12-22,Apex Components Ltd,South Asia,Raw Metals,57.85,11.13,31657.2,96.47
+2024-08-02,Pacific Textile Group,East Asia,Raw Metals,14.39,5.42,1114106.6,74.92
+2025-03-03,Ironbridge Fasteners Ltd,North America,Plastics,30.12,0.59,1609214.44,53.2
+2025-03-11,Northwind Metals Co,North America,Electronics,95.24,0.8,1688083.07,46.43
+2024-08-10,Ironbridge Fasteners Ltd,Latin America,Plastics,25.03,1.02,1221894.67,90.21
+2024-12-01,Northwind Metals Co,North America,Raw Metals,86.89,10.97,1275720.56,68.63
+2025-04-03,Harbor Packaging Inc,East Asia,Raw Metals,1.86,0.76,1167054.57,51.6
+2024-10-21,Summit Plastics GmbH,Eastern Europe,Plastics,63.33,1.12,44868.8,62.05
+2025-03-09,Redwood Logistics Partners,East Asia,Packaging,72.89,2.88,2357324.94,87.01
+2024-03-05,Summit Plastics GmbH,North America,Raw Metals,93.56,12.02,2317639.65,83.98
+2024-06-20,Apex Components Ltd,South Asia,Plastics,28.69,12.18,598373.91,36.24
+2024-07-24,Apex Components Ltd,Eastern Europe,Raw Metals,1.44,9.18,2297726.81,6.93
+2024-12-10,Harbor Packaging Inc,East Asia,Packaging,89.42,2.53,2051682.49,92.81
+2025-02-01,Apex Components Ltd,Eastern Europe,Plastics,29.71,5.86,2470472.49,36.84
+2024-08-03,Northwind Metals Co,Latin America,Textiles,78.62,11.86,138530.31,22.4
+2025-02-28,Pacific Textile Group,Eastern Europe,Raw Metals,9.4,7.58,2252728.76,17.47
+2024-09-05,Apex Components Ltd,Eastern Europe,Packaging,93.96,7.58,2273172.17,90.33
+2024-06-25,Redwood Logistics Partners,South Asia,Electronics,94.51,2.3,627972.43,36.66
+2024-11-03,Northwind Metals Co,Eastern Europe,Raw Metals,30.44,1.24,821800.37,37.72
+2025-05-21,Pacific Textile Group,Latin America,Chemicals,62.64,11.48,1374304.82,27.12
+2024-07-17,Northwind Metals Co,South Asia,Raw Metals,22.32,12.05,1416104.66,36.76
+2024-04-20,Meridian Chemicals SA,East Asia,Packaging,9.17,12.27,1747949.41,3.41
+2024-02-01,Harbor Packaging Inc,Middle East,Packaging,9.86,12.48,160552.84,65.34
+2024-03-14,Redwood Logistics Partners,Latin America,Raw Metals,52.06,5.83,1320802.86,44.12
+2025-01-31,Apex Components Ltd,East Asia,Electronics,16.38,3.53,1113606.02,80.03
+2024-07-12,Redwood Logistics Partners,South Asia,Electronics,73.67,10.82,1524624.32,18.27
+2025-03-04,Pacific Textile Group,Western Europe,Packaging,34.57,8.47,127714.68,55.53
+2024-09-17,Ironbridge Fasteners Ltd,Latin America,Textiles,3.95,8.2,1213304.22,7.49
+2024-03-18,Summit Plastics GmbH,North America,Textiles,9.8,10.48,2440754.06,59.68
+2024-09-08,Redwood Logistics Partners,Eastern Europe,Textiles,29.76,2.24,647882.46,30.82
+2025-04-12,Pacific Textile Group,Middle East,Textiles,10.25,6.85,2285721.6,79.55
+2024-10-15,Apex Components Ltd,Western Europe,Chemicals,71.96,9.98,550392.48,18.8

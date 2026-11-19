@@ -1,0 +1,241 @@
+scorecard_review_date,scorecard_supplier_region,scorecard_commodity_group,scorecard_performance_tier,scorecard_on_time_delivery_pct,scorecard_defect_rate_pct,scorecard_avg_lead_time_days
+2025-06-17,Africa,Chemicals,Strategic,69.38,9.65,40
+2024-03-09,South America,Electronic Components,Approved,10.07,6.3,110
+2024-11-30,Middle East,Raw Materials,Conditional,47.69,0.36,96
+2024-02-07,Middle East,Office Supplies,Strategic,99.03,3.83,61
+2024-03-18,Eastern Europe,Machined Parts,Probation,86.59,0.36,50
+2024-03-03,North America,Electronic Components,Probation,41.03,9.17,107
+2024-06-19,Middle East,Packaging,Approved,75.18,9.4,17
+2024-07-19,South America,Chemicals,Strategic,27.45,6.37,78
+2024-02-28,North America,Electronic Components,Strategic,94.27,4.86,83
+2025-03-27,Eastern Europe,Machined Parts,Conditional,18.88,2.98,116
+2024-12-20,East Asia,Chemicals,Preferred,91.78,4.49,57
+2024-09-30,Western Europe,Chemicals,Preferred,85.22,5.26,109
+2024-08-31,South America,Chemicals,Conditional,55.89,7.09,54
+2025-05-25,South America,Electronic Components,Conditional,82.31,2.07,110
+2024-12-07,Middle East,Logistics Services,Conditional,16.23,2.38,11
+2024-04-25,North America,Logistics Services,Strategic,71.99,1.41,15
+2024-08-01,South America,Machined Parts,Probation,55.77,5.81,8
+2024-04-04,North America,Chemicals,Strategic,43.99,1.84,40
+2025-01-05,Middle East,Packaging,Conditional,30.26,9.08,100
+2025-03-12,North America,Packaging,Conditional,25.99,6.99,16
+2024-09-09,Western Europe,Machined Parts,Conditional,13.52,7.46,43
+2024-10-08,Eastern Europe,Office Supplies,Strategic,32.36,9.98,96
+2024-04-25,South America,Machined Parts,Conditional,83.21,3.85,3
+2024-03-23,East Asia,Machined Parts,Approved,96.27,9.97,105
+2025-05-07,South Asia,Office Supplies,Conditional,7.04,5.07,3
+2024-03-13,East Asia,Packaging,Conditional,6.29,3.94,70
+2024-08-15,Middle East,Electronic Components,Conditional,84.89,6.53,80
+2024-09-26,East Asia,Machined Parts,Conditional,24.03,3.83,82
+2024-12-22,Western Europe,Chemicals,Approved,41.46,2.11,66
+2024-11-14,South Asia,Electronic Components,Approved,27.67,2.11,110
+2025-06-13,Middle East,Logistics Services,Preferred,30.62,7.15,69
+2024-12-03,Africa,Electronic Components,Approved,4.74,5.28,25
+2024-06-23,Middle East,Logistics Services,Probation,34.03,2.04,7
+2025-01-22,East Asia,Machined Parts,Approved,64.68,1.96,27
+2024-03-15,South America,Machined Parts,Strategic,78.72,7.17,47
+2024-05-28,Eastern Europe,Raw Materials,Probation,16.92,6.71,57
+2025-02-24,Middle East,Logistics Services,Preferred,41.6,0.3,87
+2024-12-19,South America,Electronic Components,Strategic,48.12,2.17,111
+2025-02-13,Eastern Europe,Electronic Components,Probation,75.23,8.23,70
+2024-04-05,North America,Logistics Services,Preferred,92.14,7.37,108
+2024-05-23,Eastern Europe,Logistics Services,Strategic,75.87,3.01,52
+2025-06-01,Western Europe,Machined Parts,Approved,39.51,0.99,103
+2024-05-27,North America,Machined Parts,Strategic,65.21,0.53,108
+2025-05-27,Western Europe,Logistics Services,Preferred,98.65,8.15,6
+2024-11-02,East Asia,Raw Materials,Strategic,55.86,7.32,102
+2024-03-03,Middle East,Machined Parts,Conditional,23.64,7.71,9
+2024-03-25,Africa,Logistics Services,Conditional,83.5,3.14,52
+2025-02-02,South Asia,Chemicals,Conditional,43.79,6.61,66
+2024-05-26,South America,Machined Parts,Strategic,44.3,6.26,1
+2024-11-17,Western Europe,Logistics Services,Preferred,87.38,8.4,96
+2024-02-16,North America,Machined Parts,Conditional,52.77,2.98,67
+2024-05-15,Africa,Logistics Services,Preferred,6.48,3.31,42
+2025-03-01,Eastern Europe,Electronic Components,Approved,52.84,3.15,80
+2025-02-14,Middle East,Raw Materials,Probation,37.47,8.09,106
+2025-01-16,Africa,Raw Materials,Preferred,71.02,4.19,7
+2024-06-03,North America,Office Supplies,Probation,45.14,4.98,69
+2024-01-19,South America,Chemicals,Probation,93.58,9.92,11
+2024-09-29,East Asia,Office Supplies,Strategic,35.88,3.41,33
+2024-06-29,South America,Office Supplies,Preferred,77.34,4.63,62
+2025-02-05,East Asia,Chemicals,Approved,29.83,8.17,39
+2024-06-29,South America,Electronic Components,Probation,31.86,3.78,43
+2024-10-29,Western Europe,Raw Materials,Preferred,38.5,3.11,39
+2025-01-29,South America,Packaging,Conditional,42.62,5.39,24
+2024-08-09,Eastern Europe,Packaging,Strategic,17.42,1.12,82
+2024-07-26,South Asia,Raw Materials,Preferred,67.81,4.1,99
+2024-10-18,Africa,Logistics Services,Approved,90.19,8.61,100
+2024-02-01,East Asia,Raw Materials,Probation,39.06,1.92,118
+2024-12-17,South Asia,Machined Parts,Conditional,26.34,2.52,101
+2024-09-15,Eastern Europe,Chemicals,Probation,88.06,7.77,91
+2024-10-22,North America,Machined Parts,Preferred,11.16,3.18,45
+2025-02-17,East Asia,Electronic Components,Strategic,16.85,9.42,89
+2024-07-11,Eastern Europe,Chemicals,Strategic,47.21,8.71,35
+2024-09-09,Western Europe,Packaging,Strategic,56.33,0.77,58
+2024-11-13,Eastern Europe,Raw Materials,Preferred,88.09,1.15,16
+2024-06-20,South America,Logistics Services,Probation,52.44,6.69,8
+2025-03-10,East Asia,Electronic Components,Preferred,27.91,4.97,38
+2024-06-24,Africa,Logistics Services,Probation,79.87,4.12,13
+2025-04-05,South Asia,Raw Materials,Preferred,26.03,2.15,26
+2024-02-16,North America,Chemicals,Strategic,36.97,8.33,54
+2024-02-23,South Asia,Raw Materials,Preferred,23.36,7.04,79
+2025-04-16,Western Europe,Electronic Components,Preferred,60.28,3.13,36
+2025-03-04,Western Europe,Raw Materials,Conditional,0.25,4.46,97
+2024-01-13,South Asia,Logistics Services,Probation,60.08,9.74,8
+2024-04-26,East Asia,Machined Parts,Preferred,21.43,6.17,79
+2024-04-17,Africa,Electronic Components,Strategic,82.09,2.73,107
+2024-05-23,East Asia,Machined Parts,Conditional,7.95,0.81,74
+2025-04-10,Africa,Packaging,Conditional,99.74,9.03,60
+2025-05-18,North America,Electronic Components,Conditional,71.31,6.99,72
+2024-10-16,Western Europe,Office Supplies,Strategic,31.79,0.89,77
+2024-04-12,Africa,Machined Parts,Conditional,86.2,1.59,65
+2024-01-08,East Asia,Office Supplies,Preferred,58.02,6.39,26
+2024-07-08,North America,Machined Parts,Conditional,78.71,9.6,10
+2025-03-06,Middle East,Raw Materials,Preferred,12.71,5.2,90
+2025-03-01,Africa,Logistics Services,Strategic,27.26,7.94,38
+2025-02-20,Western Europe,Machined Parts,Conditional,20.45,1.87,47
+2025-01-11,Middle East,Machined Parts,Conditional,83.49,1.21,41
+2024-05-26,Africa,Packaging,Preferred,98.98,6.52,87
+2024-02-02,Eastern Europe,Electronic Components,Probation,76.1,9.52,9
+2025-05-26,Western Europe,Office Supplies,Approved,70.47,4.02,97
+2025-06-22,Middle East,Logistics Services,Strategic,40.36,2.77,96
+2025-05-29,Western Europe,Chemicals,Strategic,26.46,3.58,98
+2025-01-27,East Asia,Machined Parts,Conditional,3.8,4.64,87
+2024-02-25,South America,Logistics Services,Approved,51.58,4.69,43
+2024-11-02,Middle East,Raw Materials,Conditional,16.39,1.69,60
+2024-12-14,Western Europe,Electronic Components,Preferred,83.38,6.54,61
+2024-10-15,North America,Raw Materials,Conditional,45.77,1.62,34
+2024-04-30,Middle East,Chemicals,Probation,89.91,6.94,18
+2024-03-23,South Asia,Packaging,Strategic,25.58,4.09,86
+2024-02-26,Eastern Europe,Office Supplies,Approved,85.72,0.56,66
+2024-04-02,North America,Office Supplies,Preferred,65.89,4.18,119
+2024-07-19,South America,Chemicals,Preferred,12.68,2.18,79
+2024-01-28,Africa,Chemicals,Strategic,0.74,1.56,100
+2024-05-07,Eastern Europe,Electronic Components,Probation,40.03,8.86,101
+2024-10-02,North America,Machined Parts,Approved,48.75,5.25,30
+2024-12-15,East Asia,Raw Materials,Conditional,47.79,5.48,10
+2024-08-27,South Asia,Logistics Services,Probation,54.14,1.13,58
+2025-01-26,South Asia,Machined Parts,Probation,31.79,7.49,63
+2025-04-30,South Asia,Logistics Services,Strategic,96.73,0.39,52
+2025-05-03,Middle East,Electronic Components,Approved,67.85,5.9,120
+2025-05-24,South Asia,Chemicals,Strategic,96.28,9.94,113
+2025-03-21,North America,Machined Parts,Approved,55.05,9.39,30
+2024-11-07,Eastern Europe,Logistics Services,Conditional,1.45,4.05,3
+2025-02-02,South America,Machined Parts,Strategic,25.73,0.69,42
+2024-10-05,Middle East,Raw Materials,Preferred,58.84,4.49,7
+2024-01-16,Africa,Packaging,Preferred,87.79,6.39,58
+2025-03-23,South Asia,Machined Parts,Approved,51.46,6.02,76
+2024-12-25,South America,Chemicals,Approved,98.37,7.67,96
+2025-04-15,East Asia,Electronic Components,Approved,33.22,3.83,90
+2024-05-31,North America,Raw Materials,Approved,11.85,6.42,35
+2024-12-03,North America,Packaging,Probation,67.8,5.47,49
+2024-05-28,Eastern Europe,Chemicals,Strategic,40.27,1.39,56
+2024-06-27,Western Europe,Packaging,Preferred,97.82,7.02,62
+2024-08-16,Western Europe,Office Supplies,Conditional,14.8,8.11,63
+2025-05-26,East Asia,Chemicals,Preferred,67.66,9.09,98
+2025-04-11,North America,Packaging,Probation,30.56,9.29,19
+2024-02-03,South America,Raw Materials,Conditional,60.04,2.31,91
+2024-10-12,Middle East,Logistics Services,Conditional,80.76,9.81,58
+2024-09-28,South America,Electronic Components,Conditional,10.57,0.31,106
+2024-07-23,Africa,Chemicals,Probation,85.04,3.56,114
+2025-06-23,Western Europe,Chemicals,Strategic,46.57,5.33,21
+2024-03-14,East Asia,Machined Parts,Approved,31.3,4.05,116
+2025-01-19,Africa,Chemicals,Conditional,15.32,6.81,96
+2024-03-13,Eastern Europe,Office Supplies,Probation,56.69,8.7,79
+2024-11-24,East Asia,Logistics Services,Approved,51.88,3.0,95
+2024-07-19,East Asia,Electronic Components,Strategic,56.04,5.38,25
+2024-03-22,East Asia,Machined Parts,Strategic,15.8,6.71,61
+2024-05-10,North America,Packaging,Conditional,55.15,9.24,49
+2024-02-27,East Asia,Chemicals,Preferred,42.46,0.9,44
+2024-03-20,Africa,Office Supplies,Conditional,95.34,4.13,119
+2024-04-28,East Asia,Logistics Services,Probation,76.92,5.61,43
+2025-05-31,East Asia,Electronic Components,Strategic,40.34,0.78,9
+2024-05-04,South America,Electronic Components,Approved,42.72,2.15,120
+2024-10-30,Middle East,Machined Parts,Strategic,18.99,1.02,65
+2024-04-11,Middle East,Packaging,Conditional,84.9,8.97,80
+2025-04-15,East Asia,Chemicals,Probation,95.53,1.19,84
+2024-04-07,South America,Chemicals,Probation,86.87,5.32,53
+2024-03-23,Middle East,Machined Parts,Preferred,17.05,5.78,66
+2024-01-16,Western Europe,Machined Parts,Preferred,70.16,2.66,10
+2024-05-25,East Asia,Packaging,Approved,78.59,1.34,66
+2024-11-24,Western Europe,Electronic Components,Probation,37.0,7.6,1
+2025-01-26,North America,Logistics Services,Conditional,54.63,8.41,44
+2024-03-08,South Asia,Machined Parts,Approved,77.38,0.04,76
+2024-02-17,South Asia,Raw Materials,Conditional,51.55,0.8,14
+2025-01-27,Eastern Europe,Chemicals,Preferred,21.63,1.33,37
+2025-05-23,Eastern Europe,Office Supplies,Conditional,2.02,1.56,64
+2024-07-02,North America,Machined Parts,Preferred,14.13,4.36,109
+2025-06-16,South America,Raw Materials,Approved,65.2,8.22,69
+2024-03-16,South Asia,Raw Materials,Approved,42.64,5.47,92
+2024-01-23,North America,Electronic Components,Approved,94.48,8.17,68
+2025-06-03,Middle East,Raw Materials,Conditional,96.01,6.38,22
+2024-07-27,Eastern Europe,Office Supplies,Approved,89.85,4.0,52
+2025-02-19,Eastern Europe,Chemicals,Strategic,73.1,6.91,100
+2024-10-18,Middle East,Machined Parts,Conditional,23.6,3.47,104
+2024-06-26,South Asia,Office Supplies,Strategic,14.65,9.45,99
+2024-04-13,South America,Logistics Services,Strategic,7.44,4.31,25
+2025-02-10,East Asia,Packaging,Probation,95.74,6.72,48
+2025-05-21,North America,Logistics Services,Conditional,39.61,2.26,1
+2025-03-06,Africa,Chemicals,Conditional,95.7,2.63,46
+2024-09-06,Africa,Logistics Services,Strategic,53.23,3.08,40
+2024-03-25,Africa,Machined Parts,Probation,66.15,4.91,91
+2024-10-02,East Asia,Logistics Services,Preferred,60.79,5.63,118
+2024-05-10,Middle East,Chemicals,Preferred,88.46,2.96,81
+2024-05-21,South Asia,Logistics Services,Approved,1.95,4.1,71
+2024-10-30,South Asia,Logistics Services,Probation,67.03,8.86,30
+2024-04-07,North America,Logistics Services,Strategic,7.19,6.56,100
+2025-03-27,Africa,Raw Materials,Approved,89.63,2.74,8
+2024-04-05,Africa,Packaging,Probation,28.09,7.0,110
+2024-08-08,Africa,Chemicals,Strategic,85.1,7.7,80
+2024-04-18,Africa,Chemicals,Approved,76.44,1.46,4
+2025-05-20,Eastern Europe,Chemicals,Preferred,26.34,5.4,36
+2024-06-29,Western Europe,Raw Materials,Probation,19.8,4.13,33
+2024-09-13,East Asia,Office Supplies,Strategic,52.0,0.61,90
+2024-04-02,Africa,Raw Materials,Strategic,27.85,6.15,112
+2025-03-15,South America,Packaging,Approved,92.54,6.73,104
+2024-02-05,Eastern Europe,Office Supplies,Probation,10.16,8.93,55
+2024-06-06,North America,Logistics Services,Probation,37.49,5.29,3
+2024-10-09,North America,Chemicals,Approved,46.59,2.76,84
+2024-08-02,Western Europe,Electronic Components,Strategic,34.52,6.63,91
+2024-12-16,Western Europe,Packaging,Conditional,82.8,3.73,16
+2024-09-08,South Asia,Raw Materials,Strategic,34.99,5.53,87
+2025-04-26,East Asia,Machined Parts,Strategic,43.19,8.88,110
+2024-11-22,Western Europe,Chemicals,Probation,47.22,9.47,73
+2025-04-10,Eastern Europe,Chemicals,Probation,28.17,9.97,96
+2025-03-06,Eastern Europe,Logistics Services,Strategic,60.63,2.29,13
+2025-03-18,Africa,Machined Parts,Preferred,13.52,1.83,47
+2025-02-20,Middle East,Office Supplies,Approved,77.09,0.01,116
+2024-12-26,Eastern Europe,Chemicals,Approved,64.57,7.39,31
+2024-01-01,Western Europe,Raw Materials,Strategic,15.82,8.11,115
+2024-04-08,Africa,Machined Parts,Preferred,14.61,0.89,86
+2024-12-23,North America,Machined Parts,Strategic,1.39,6.15,27
+2024-12-28,Middle East,Electronic Components,Probation,87.52,0.64,42
+2024-07-04,East Asia,Machined Parts,Approved,88.38,4.16,59
+2024-08-24,North America,Logistics Services,Approved,22.4,0.54,35
+2024-03-19,Western Europe,Machined Parts,Preferred,76.49,6.74,76
+2024-07-24,Africa,Packaging,Preferred,65.73,2.68,70
+2024-04-30,Eastern Europe,Chemicals,Preferred,88.88,2.65,21
+2024-11-30,Eastern Europe,Machined Parts,Approved,99.94,2.18,47
+2025-04-22,Western Europe,Chemicals,Strategic,39.68,8.85,86
+2024-06-18,Western Europe,Office Supplies,Preferred,2.08,1.29,37
+2025-05-21,Middle East,Raw Materials,Preferred,18.73,0.22,62
+2024-09-28,North America,Electronic Components,Strategic,50.3,2.46,98
+2024-03-15,Middle East,Packaging,Strategic,92.46,0.38,118
+2024-04-07,Africa,Office Supplies,Strategic,39.4,2.76,108
+2024-09-29,South Asia,Chemicals,Approved,69.81,7.28,66
+2024-06-29,Western Europe,Office Supplies,Preferred,8.69,2.04,115
+2024-12-03,East Asia,Office Supplies,Approved,76.23,6.74,32
+2024-08-07,East Asia,Chemicals,Strategic,16.88,4.62,110
+2024-04-26,North America,Raw Materials,Approved,53.5,7.69,23
+2024-08-25,Africa,Logistics Services,Conditional,18.71,0.11,34
+2024-03-18,South America,Chemicals,Conditional,60.13,1.05,115
+2024-11-21,South Asia,Packaging,Approved,23.52,2.38,73
+2025-01-17,Africa,Chemicals,Probation,30.4,4.66,110
+2024-08-22,South Asia,Office Supplies,Conditional,29.52,7.95,28
+2024-08-07,North America,Machined Parts,Probation,82.48,1.24,4
+2024-04-01,Eastern Europe,Logistics Services,Strategic,77.74,1.78,118
+2024-11-06,Western Europe,Office Supplies,Probation,28.79,3.07,93
+2025-04-09,Africa,Logistics Services,Conditional,86.82,4.27,82
+2024-06-06,Western Europe,Packaging,Approved,70.96,7.33,30
+2025-02-26,South Asia,Machined Parts,Probation,21.31,6.58,44
+2024-04-16,East Asia,Office Supplies,Conditional,84.65,0.8,61

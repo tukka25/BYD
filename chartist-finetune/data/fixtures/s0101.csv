@@ -1,0 +1,241 @@
+shipment_pickup_date,shipment_carrier_name,shipment_transport_mode,shipment_origin_region,shipment_gross_weight_kg,shipment_distance_km,shipment_freight_cost_usd,shipment_package_count
+2025-06-01,FedEx Freight,Air Freight,Midwest,35925.44,59.55,17748.02,1659
+2024-11-28,Saia,Rail,Northeast,37713.76,2700.36,6809.78,965
+2024-04-09,Schneider National,LTL,West Coast,38785.69,1004.64,17389.9,397
+2024-04-04,Schneider National,Rail,Southeast,1208.55,3677.44,10737.91,879
+2024-03-18,UPS Freight,Truckload,Southeast,15869.34,2347.12,9647.91,2201
+2024-11-28,XPO Logistics,Intermodal,Pacific Northwest,2163.76,2005.33,14830.77,1774
+2024-02-27,UPS Freight,LTL,Northeast,27314.93,533.52,18110.62,851
+2024-07-20,Old Dominion,LTL,Northeast,7753.46,897.8,16195.78,169
+2024-01-23,Schneider National,Air Freight,Pacific Northwest,5849.09,1585.49,11889.12,1616
+2024-07-17,J.B. Hunt,Ocean FCL,Southeast,36230.62,2623.36,12435.28,1303
+2024-09-27,XPO Logistics,Truckload,West Coast,33122.34,1927.47,18150.85,354
+2025-03-04,J.B. Hunt,LTL,Northeast,3449.02,1297.81,9794.4,2143
+2024-02-03,Saia,LTL,Midwest,32835.38,2906.45,7748.02,1392
+2025-06-02,Schneider National,Ocean FCL,Southwest,44496.49,987.47,6679.82,456
+2024-03-21,UPS Freight,Intermodal,Midwest,44428.43,4486.04,6955.93,1770
+2024-03-12,J.B. Hunt,Intermodal,Southeast,3118.52,2397.96,9706.13,538
+2025-03-25,XPO Logistics,Air Freight,Mountain West,19032.24,4309.11,3806.58,1155
+2024-08-06,UPS Freight,Ocean FCL,Mountain West,39080.01,2579.24,11514.98,1824
+2025-04-19,FedEx Freight,Ocean FCL,Pacific Northwest,4227.93,689.13,8591.02,520
+2024-07-03,Schneider National,Ocean FCL,Northeast,34191.0,180.53,10629.61,1330
+2025-03-02,UPS Freight,Ocean FCL,Mountain West,17193.75,2325.77,2425.27,2151
+2024-03-20,XPO Logistics,Rail,West Coast,14615.48,2986.53,12589.29,949
+2025-05-28,FedEx Freight,Truckload,Southeast,23476.11,1265.9,12313.95,2271
+2024-05-28,Schneider National,Truckload,Southeast,18713.56,1418.91,17255.3,1222
+2024-04-17,XPO Logistics,Rail,Mountain West,10500.02,3492.67,14655.08,2207
+2024-07-03,XPO Logistics,Ocean FCL,West Coast,11771.92,3291.48,303.38,1712
+2024-08-11,FedEx Freight,LTL,Pacific Northwest,29816.53,4179.99,8875.4,1392
+2024-07-25,XPO Logistics,Air Freight,Mountain West,24248.95,1477.86,9849.2,2028
+2025-02-08,Saia,Rail,Southeast,21388.88,3579.41,16664.24,991
+2025-06-01,UPS Freight,Truckload,Midwest,10134.28,827.41,11615.54,2365
+2024-02-15,UPS Freight,Air Freight,Southeast,12435.48,3548.38,434.94,267
+2024-12-02,Schneider National,Rail,Midwest,11179.42,3427.68,16836.04,1156
+2024-01-25,UPS Freight,Truckload,West Coast,17945.69,183.87,2213.26,70
+2025-04-13,Saia,LTL,Pacific Northwest,13689.86,2760.45,4414.41,27
+2025-03-11,Old Dominion,Air Freight,Pacific Northwest,33767.6,1957.95,16256.58,1676
+2025-02-10,UPS Freight,Air Freight,Mountain West,25543.41,41.13,7300.76,1834
+2025-06-08,FedEx Freight,Ocean FCL,Southeast,4058.9,725.1,14824.96,1425
+2024-04-21,Old Dominion,LTL,West Coast,34323.53,1158.08,13596.43,704
+2024-08-09,Schneider National,Air Freight,Pacific Northwest,2847.22,3330.61,9165.16,2149
+2025-03-15,XPO Logistics,Ocean FCL,Mountain West,40858.59,736.96,7120.09,1182
+2024-11-22,Schneider National,Ocean FCL,Northeast,26523.55,2382.45,13464.45,1185
+2025-02-17,Saia,Intermodal,Northeast,43282.66,2806.62,4902.6,1281
+2024-04-25,Saia,Intermodal,Northeast,9492.56,3857.51,1622.55,2287
+2025-04-10,Old Dominion,Intermodal,Pacific Northwest,13705.81,2815.34,1555.66,1461
+2024-01-01,Schneider National,Truckload,Mountain West,5513.91,1677.71,3791.56,1758
+2024-06-15,J.B. Hunt,Air Freight,Northeast,32420.5,2446.5,6612.0,994
+2024-02-28,Schneider National,Rail,West Coast,7897.2,587.86,6969.72,366
+2024-03-11,Schneider National,Air Freight,Midwest,18320.06,1355.57,8096.11,2090
+2024-01-30,UPS Freight,Air Freight,Southwest,21659.11,914.14,9953.82,671
+2025-05-04,Saia,Intermodal,Northeast,26903.97,841.93,3941.02,1740
+2025-01-22,UPS Freight,Air Freight,Pacific Northwest,8278.9,842.16,6136.87,2161
+2025-02-10,UPS Freight,Truckload,Northeast,43998.97,2753.92,13582.02,154
+2024-05-29,XPO Logistics,Intermodal,Southwest,22045.79,3270.61,4408.39,1378
+2025-04-15,XPO Logistics,Rail,West Coast,35103.44,1407.84,6183.43,95
+2024-10-19,Schneider National,Rail,Midwest,36281.94,854.32,6401.9,1123
+2024-06-26,XPO Logistics,Ocean FCL,Pacific Northwest,40089.97,2533.66,11729.26,1337
+2024-03-30,XPO Logistics,Intermodal,Mountain West,20465.07,2760.06,6560.17,136
+2024-04-01,Saia,Truckload,West Coast,40764.78,370.64,7359.09,280
+2025-04-26,FedEx Freight,Air Freight,Mountain West,10272.24,370.8,12535.94,608
+2025-02-05,FedEx Freight,LTL,Southeast,18887.23,4426.05,15474.85,123
+2024-06-08,Old Dominion,LTL,Mountain West,42548.12,4431.39,4574.51,750
+2024-07-15,UPS Freight,Ocean FCL,Pacific Northwest,40272.61,2021.56,3916.29,2361
+2024-12-31,J.B. Hunt,LTL,Midwest,18283.43,2064.13,17347.82,1625
+2024-06-09,Old Dominion,Ocean FCL,Mountain West,18610.68,483.34,15050.08,1392
+2024-11-12,XPO Logistics,Rail,Southwest,28488.21,1178.13,1610.36,918
+2024-03-29,FedEx Freight,Rail,Northeast,37833.54,4218.81,1069.47,1441
+2025-04-12,Old Dominion,LTL,Mountain West,19884.02,1497.29,2386.86,561
+2024-05-02,UPS Freight,LTL,Southwest,985.55,1751.77,6068.87,1588
+2024-01-07,Schneider National,Ocean FCL,Southwest,12016.86,4255.28,3035.23,320
+2024-08-14,XPO Logistics,Ocean FCL,Pacific Northwest,26619.59,1611.69,14545.39,348
+2024-01-12,Old Dominion,LTL,Mountain West,21246.62,2388.49,9740.52,2205
+2024-12-29,Schneider National,Air Freight,Northeast,13198.68,4372.69,13504.01,1237
+2024-11-19,Old Dominion,Ocean FCL,West Coast,1533.14,1167.0,1903.61,1201
+2025-03-11,UPS Freight,Intermodal,Southeast,32439.3,229.7,2260.66,1954
+2024-03-11,XPO Logistics,Truckload,West Coast,10583.84,2880.58,18079.72,1364
+2024-01-25,J.B. Hunt,Truckload,Northeast,6503.55,634.5,6693.91,1594
+2024-10-06,Schneider National,Intermodal,Southeast,11408.79,2914.16,14998.22,1230
+2025-06-03,Schneider National,Ocean FCL,Northeast,10659.98,1252.78,10695.63,461
+2024-08-26,UPS Freight,Intermodal,Southwest,18620.65,4144.56,14227.14,989
+2024-01-09,FedEx Freight,Ocean FCL,Mountain West,10969.17,4183.29,6861.92,1213
+2025-02-06,J.B. Hunt,Rail,Mountain West,7603.31,1604.5,10031.04,1952
+2024-05-11,Saia,Truckload,West Coast,15484.44,2268.22,4843.86,831
+2024-09-01,Schneider National,Ocean FCL,Southwest,7103.63,1661.29,17715.64,1911
+2024-09-01,Old Dominion,Air Freight,West Coast,16336.29,812.2,3413.38,1679
+2024-04-11,J.B. Hunt,Ocean FCL,Midwest,14974.3,3362.93,17839.45,2357
+2025-06-10,Saia,Rail,Southwest,18341.59,3629.23,12117.68,1936
+2024-06-27,J.B. Hunt,Truckload,Midwest,24495.0,67.74,10761.31,2079
+2025-02-03,XPO Logistics,Rail,Northeast,7354.48,1595.89,13020.02,236
+2024-12-10,J.B. Hunt,LTL,Pacific Northwest,31790.89,2616.83,6738.6,171
+2024-07-23,J.B. Hunt,Intermodal,Northeast,18417.73,2989.78,17929.99,634
+2024-08-08,XPO Logistics,Rail,Southwest,13630.09,292.25,17755.43,1685
+2025-05-28,UPS Freight,Truckload,Mountain West,40535.58,3107.45,15588.96,1108
+2024-02-26,UPS Freight,Air Freight,Mountain West,13252.87,790.2,991.35,2178
+2024-10-12,Schneider National,Rail,Midwest,20612.45,536.91,10796.77,857
+2025-02-19,UPS Freight,Air Freight,Southeast,9617.07,2662.14,4124.26,1363
+2024-12-19,Schneider National,LTL,Southwest,10281.49,602.6,14659.86,71
+2024-09-09,J.B. Hunt,Ocean FCL,Northeast,3242.82,4047.24,7485.95,1526
+2024-09-09,UPS Freight,Truckload,Northeast,39076.99,23.51,5527.24,1916
+2025-06-21,UPS Freight,Ocean FCL,Southwest,14308.5,3973.97,10967.62,2259
+2024-06-19,Old Dominion,Ocean FCL,Mountain West,14523.18,3000.95,18134.16,2228
+2025-05-26,J.B. Hunt,LTL,Pacific Northwest,7513.97,4233.19,8560.85,2262
+2024-10-16,FedEx Freight,Ocean FCL,Mountain West,11813.07,2884.92,1121.57,61
+2024-04-15,XPO Logistics,LTL,Southeast,25765.57,1977.78,349.19,262
+2024-11-11,J.B. Hunt,Rail,Pacific Northwest,23325.63,2040.55,4305.3,668
+2024-04-20,UPS Freight,Air Freight,Northeast,43748.58,3688.81,17592.92,1029
+2024-02-15,J.B. Hunt,Truckload,Midwest,44970.27,2956.7,11044.13,682
+2024-08-11,Saia,LTL,Southeast,19740.13,2457.07,502.55,1577
+2024-01-27,XPO Logistics,Rail,Pacific Northwest,4085.74,3354.03,11433.2,532
+2024-08-17,XPO Logistics,Ocean FCL,Pacific Northwest,12680.18,3642.32,9336.34,682
+2025-05-31,XPO Logistics,Rail,Pacific Northwest,956.28,219.25,392.45,1145
+2025-06-15,Schneider National,Rail,Southwest,5106.31,1253.49,17000.14,793
+2024-01-19,UPS Freight,Intermodal,West Coast,28363.93,3861.27,1831.53,440
+2024-04-23,Old Dominion,Air Freight,Pacific Northwest,36732.87,4310.41,1553.08,1327
+2024-02-06,Schneider National,Air Freight,Midwest,16501.5,2765.63,11568.27,391
+2024-10-16,XPO Logistics,LTL,Northeast,3147.48,3706.91,17422.5,1000
+2025-02-22,Schneider National,Ocean FCL,West Coast,44783.91,976.86,7528.36,726
+2025-01-25,J.B. Hunt,LTL,Mountain West,41620.08,3396.67,9865.35,1630
+2024-06-28,Old Dominion,Ocean FCL,Southwest,9751.61,1605.59,6133.22,2046
+2024-02-05,FedEx Freight,Truckload,Northeast,40950.3,3828.76,8183.14,1097
+2024-05-29,Saia,Truckload,West Coast,34865.33,2358.27,15884.15,687
+2024-01-01,Schneider National,Ocean FCL,Southeast,7317.48,2188.31,10270.08,718
+2024-10-28,XPO Logistics,Air Freight,Midwest,7004.06,2458.36,7045.57,1104
+2024-12-18,Schneider National,Truckload,Northeast,7867.82,1508.61,18289.06,1384
+2025-06-12,J.B. Hunt,Ocean FCL,Northeast,40243.91,1588.95,6514.55,697
+2025-02-07,FedEx Freight,Truckload,West Coast,35918.1,792.67,8462.86,2076
+2024-11-24,Schneider National,Air Freight,Southeast,33367.81,1649.34,15469.29,1634
+2025-04-05,XPO Logistics,Ocean FCL,West Coast,32286.87,385.87,18023.72,1837
+2024-10-05,J.B. Hunt,LTL,Southwest,3134.63,1241.3,7075.09,188
+2024-11-03,UPS Freight,Intermodal,Midwest,32305.57,1637.68,17177.4,1061
+2024-10-23,UPS Freight,LTL,Pacific Northwest,36862.57,1067.12,17565.63,1115
+2024-07-20,FedEx Freight,LTL,Midwest,33578.19,972.96,10385.47,3
+2024-09-26,J.B. Hunt,Truckload,Midwest,39552.76,2411.16,960.88,2227
+2024-06-17,FedEx Freight,Ocean FCL,Southeast,17209.58,845.38,1053.2,344
+2024-07-14,FedEx Freight,Rail,Pacific Northwest,42740.83,704.65,13299.59,57
+2025-04-22,Schneider National,Intermodal,Mountain West,24093.97,4146.29,15342.77,120
+2024-03-28,J.B. Hunt,Air Freight,Midwest,43854.69,1896.49,10209.92,1892
+2024-05-16,J.B. Hunt,LTL,Southwest,1574.51,1674.53,7055.7,1480
+2024-03-23,J.B. Hunt,Intermodal,Midwest,36251.86,3110.17,13628.23,440
+2025-05-18,Schneider National,Ocean FCL,West Coast,41842.65,3651.87,14324.5,1786
+2024-06-14,XPO Logistics,Intermodal,Mountain West,9125.29,4258.12,5944.13,1372
+2024-08-05,Saia,Intermodal,Mountain West,32346.21,1377.42,4666.45,745
+2024-10-13,Saia,Ocean FCL,West Coast,10298.19,2051.87,9299.08,1034
+2025-04-11,XPO Logistics,Truckload,West Coast,18160.09,3045.16,4341.25,1855
+2024-06-05,Old Dominion,Intermodal,West Coast,38299.3,3919.08,9229.11,2160
+2024-01-06,FedEx Freight,Rail,Southeast,42077.02,353.48,10999.98,1894
+2025-06-13,J.B. Hunt,Ocean FCL,Southeast,35393.11,3077.53,8674.58,1643
+2025-04-23,J.B. Hunt,Rail,Southeast,15381.62,4170.56,3525.88,2179
+2024-12-21,Saia,Ocean FCL,Midwest,26313.81,1538.69,700.13,957
+2024-03-29,Schneider National,Ocean FCL,Midwest,37929.14,3561.28,12768.01,1931
+2025-01-30,UPS Freight,Truckload,Northeast,31659.52,143.3,6527.38,165
+2025-03-30,Schneider National,Truckload,Northeast,569.98,3177.9,6699.34,2093
+2024-12-16,Schneider National,Rail,Pacific Northwest,31445.68,3391.37,15889.79,443
+2025-02-12,UPS Freight,Rail,Northeast,24660.02,2730.13,9988.57,1915
+2025-06-04,Schneider National,Rail,Midwest,9009.93,2319.5,13083.47,1779
+2024-05-05,J.B. Hunt,Rail,Midwest,21393.95,2532.06,3041.72,355
+2025-06-11,J.B. Hunt,Intermodal,Midwest,34057.17,2201.4,1935.9,1876
+2024-04-07,FedEx Freight,Air Freight,Midwest,23443.38,1405.71,13949.12,191
+2024-11-11,FedEx Freight,Intermodal,Southwest,18675.55,3071.41,15356.59,276
+2025-05-23,Schneider National,Truckload,Mountain West,28490.92,3774.45,9876.02,1029
+2024-12-12,J.B. Hunt,Rail,Northeast,21656.3,4459.88,16644.37,1104
+2024-04-21,Schneider National,Air Freight,Southwest,7573.86,2181.86,14232.91,1435
+2025-06-16,XPO Logistics,Truckload,Southwest,9708.36,2612.85,4550.9,1999
+2024-10-17,J.B. Hunt,Truckload,Southeast,20348.16,4317.59,3236.65,1216
+2024-05-30,Saia,Truckload,Mountain West,24276.99,190.54,13374.29,1893
+2025-03-13,J.B. Hunt,Truckload,Northeast,21048.51,1462.84,17403.38,473
+2024-02-04,XPO Logistics,Intermodal,Mountain West,15410.11,3830.29,4571.67,1051
+2024-02-05,FedEx Freight,LTL,Mountain West,35809.07,2152.29,15518.61,2010
+2025-06-06,Saia,Intermodal,Southwest,33897.01,2564.56,5840.8,684
+2024-01-04,Old Dominion,Ocean FCL,Mountain West,44599.57,4136.77,10612.76,988
+2024-03-29,Old Dominion,Truckload,Mountain West,20399.68,2051.37,15045.6,1257
+2025-05-30,J.B. Hunt,Truckload,Southeast,22220.94,627.52,6592.71,897
+2024-07-04,Schneider National,Truckload,Pacific Northwest,14919.02,2206.08,12828.09,2327
+2024-07-16,FedEx Freight,Rail,Mountain West,40632.94,1330.15,16840.39,2331
+2025-02-02,J.B. Hunt,Intermodal,Pacific Northwest,5568.84,1437.34,1166.77,1774
+2024-11-06,Schneider National,Truckload,Pacific Northwest,25062.69,232.38,86.75,1293
+2025-03-04,XPO Logistics,Ocean FCL,Pacific Northwest,29557.65,1905.13,3366.12,1209
+2024-08-11,FedEx Freight,Air Freight,Northeast,9539.03,299.68,1283.26,882
+2025-02-17,UPS Freight,Ocean FCL,West Coast,11147.29,4394.9,3743.69,1928
+2024-04-03,Saia,Truckload,Southeast,42817.56,3192.62,1427.43,2226
+2024-08-18,XPO Logistics,Ocean FCL,Southwest,10978.86,1690.9,9961.8,1071
+2025-02-15,Schneider National,Truckload,Southeast,11086.43,213.22,5601.19,1116
+2024-03-28,Old Dominion,Truckload,West Coast,26362.82,632.52,486.41,1934
+2025-02-24,Schneider National,Intermodal,Mountain West,18299.99,618.76,14556.93,708
+2024-09-05,Old Dominion,Ocean FCL,Midwest,9162.5,2914.83,4843.72,2264
+2025-03-12,Saia,Rail,Northeast,22247.12,1924.93,9315.42,665
+2024-07-17,FedEx Freight,Truckload,Northeast,31038.69,332.02,8136.4,85
+2024-07-07,Schneider National,Truckload,Pacific Northwest,16815.52,3225.86,17206.0,1899
+2025-01-11,FedEx Freight,Ocean FCL,Midwest,24237.68,2241.11,3271.66,668
+2025-06-02,Saia,Rail,Northeast,7638.12,3227.04,7705.57,131
+2025-05-14,FedEx Freight,Air Freight,West Coast,34818.0,2457.51,18025.05,915
+2024-03-03,Schneider National,Rail,Pacific Northwest,4620.54,2449.01,256.42,2316
+2024-03-09,Schneider National,Truckload,West Coast,15568.98,4149.0,7816.18,2370
+2025-01-10,Schneider National,Air Freight,Midwest,30794.01,1193.05,15503.46,1377
+2024-02-02,UPS Freight,Air Freight,West Coast,13683.21,143.75,9873.93,1108
+2024-12-03,FedEx Freight,Truckload,Southwest,25297.0,377.11,2394.9,122
+2024-07-10,FedEx Freight,Ocean FCL,Southwest,38380.69,2532.44,2182.69,1563
+2024-05-09,FedEx Freight,Truckload,Pacific Northwest,11760.81,2127.91,9251.09,1306
+2025-05-07,Old Dominion,Rail,West Coast,27766.68,3503.04,5931.22,14
+2024-02-23,UPS Freight,Truckload,Southwest,1680.08,864.57,4991.5,1016
+2024-03-23,Saia,LTL,Midwest,13933.94,2897.5,7482.83,96
+2024-01-09,Old Dominion,Truckload,West Coast,43512.38,2062.44,11365.9,1413
+2024-07-10,Saia,Rail,West Coast,5627.45,3215.98,6196.95,476
+2024-07-16,Old Dominion,Truckload,Southeast,15552.83,348.5,8870.89,512
+2025-02-14,Saia,Intermodal,Northeast,36480.43,4208.22,17840.92,551
+2024-01-13,Schneider National,Rail,Southwest,9919.98,4087.39,18438.32,2068
+2024-10-02,Schneider National,Air Freight,Northeast,38137.63,1093.04,5692.04,200
+2025-03-22,Old Dominion,Truckload,Southwest,33340.03,1500.88,354.95,636
+2024-07-19,XPO Logistics,Air Freight,Southwest,6587.52,3831.72,14175.37,335
+2024-05-08,XPO Logistics,Air Freight,Southwest,17242.83,3793.31,10764.57,2178
+2024-08-28,Old Dominion,Truckload,Pacific Northwest,15482.94,2078.5,13639.25,1868
+2025-01-01,Old Dominion,Truckload,Northeast,413.61,1008.53,15445.48,1470
+2024-01-07,FedEx Freight,Truckload,Pacific Northwest,12731.81,2838.47,12770.47,294
+2025-03-17,UPS Freight,Air Freight,Northeast,2595.33,812.18,8525.57,470
+2024-01-13,Schneider National,Truckload,Southeast,23035.85,472.25,7409.88,2364
+2024-07-22,UPS Freight,Rail,Southeast,35616.39,3591.24,16048.08,1939
+2024-01-30,Old Dominion,LTL,Southwest,3462.82,3331.44,15507.6,1472
+2024-11-04,UPS Freight,Ocean FCL,Midwest,31764.91,1926.78,3658.02,47
+2024-03-22,Schneider National,Truckload,Midwest,21205.94,3989.98,3569.9,974
+2025-04-23,J.B. Hunt,Truckload,West Coast,21859.32,1162.98,3309.18,760
+2024-08-08,Schneider National,Intermodal,West Coast,17073.79,3082.46,4316.54,1941
+2024-07-25,J.B. Hunt,Ocean FCL,Southeast,29167.89,1734.39,12290.92,2018
+2025-03-26,Old Dominion,Ocean FCL,Northeast,18373.07,767.38,4516.82,2377
+2025-05-29,Old Dominion,Air Freight,Southeast,33388.68,4075.7,15620.31,823
+2025-03-26,Schneider National,Intermodal,Mountain West,38913.8,356.66,12884.92,2114
+2024-03-21,Old Dominion,LTL,Southeast,27116.57,2319.38,11717.59,2020
+2024-11-15,Saia,LTL,Mountain West,26703.18,1889.58,10053.27,2033
+2025-01-17,XPO Logistics,Truckload,Northeast,37077.6,3044.58,15540.17,1423
+2024-05-26,Saia,LTL,Southeast,21326.41,1788.82,3972.64,2210
+2024-06-04,FedEx Freight,Truckload,West Coast,15970.02,2857.73,4876.77,937
+2024-07-20,Saia,Rail,West Coast,5138.69,1947.19,15987.87,1136
+2025-02-05,Saia,LTL,Southwest,35587.45,39.25,1094.36,2251
+2025-03-31,XPO Logistics,LTL,Northeast,18518.94,4146.3,15460.91,2065
+2024-11-01,Old Dominion,Ocean FCL,Northeast,6864.21,1101.43,10494.0,777
+2024-11-28,Schneider National,Ocean FCL,Southwest,20149.99,4120.55,8359.14,833
+2024-11-09,Old Dominion,LTL,Southeast,31364.47,1396.41,4372.88,924
+2024-08-08,Saia,Intermodal,Northeast,15083.62,25.22,9658.34,1650
+2024-03-14,XPO Logistics,Truckload,Mountain West,16605.0,4209.3,17729.39,2284
+2024-02-25,Schneider National,Ocean FCL,Midwest,26975.66,3906.29,11972.29,1160
+2024-01-19,J.B. Hunt,Air Freight,Southeast,31119.63,1537.11,2699.35,1397
+2024-10-07,FedEx Freight,LTL,West Coast,41693.55,3664.08,10184.19,2234

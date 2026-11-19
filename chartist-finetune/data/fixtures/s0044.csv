@@ -1,0 +1,241 @@
+scorecardDate,supplierName,commodityType,region,onTimeDeliveryRate,defectRatePct,orderFillRate,totalSpend,leadTimeDays
+2024-11-01,Greenleaf Packaging,Electronics,South Asia,19.76,11.17,82.19,605601.52,85
+2025-03-11,BlueRiver Plastics,Raw Materials,East Asia,98.81,12.36,63.58,1099855.9,49
+2024-09-11,Ironclad Fasteners,Packaging,North America,2.33,3.6,76.77,983095.28,55
+2025-06-16,Ironclad Fasteners,Electronics,Eastern Europe,82.19,14.34,78.64,2275213.98,108
+2024-08-06,Pacifica Electronics,Electronics,Latin America,73.72,10.65,83.98,22699.33,35
+2025-01-03,Apex Components,Logistics Services,Western Europe,42.39,13.81,73.34,441846.02,42
+2025-06-12,Apex Components,Electronics,East Asia,42.2,11.39,95.92,301224.75,50
+2025-01-24,Greenleaf Packaging,Electronics,North America,8.21,1.56,82.49,375368.52,25
+2025-05-27,Greenleaf Packaging,Raw Materials,Latin America,54.25,7.22,86.62,2199355.75,6
+2024-02-12,Ironclad Fasteners,Packaging,Western Europe,19.8,4.88,55.24,748457.22,24
+2024-01-03,Greenleaf Packaging,Machined Parts,Eastern Europe,28.42,13.5,62.77,1670165.37,6
+2024-06-15,BlueRiver Plastics,Electronics,Latin America,48.18,4.37,56.04,2140403.03,25
+2024-05-31,Summit Logistics Co,Electronics,Western Europe,84.16,11.94,98.11,866798.69,3
+2024-10-30,Greenleaf Packaging,Machined Parts,Western Europe,23.87,4.83,72.27,181677.67,110
+2024-05-22,Ironclad Fasteners,Raw Materials,Western Europe,45.5,12.67,91.37,2186026.99,43
+2025-06-06,Northwind Metals,Packaging,Eastern Europe,56.05,11.61,92.34,666735.42,16
+2025-04-24,BlueRiver Plastics,Chemicals,Eastern Europe,4.92,2.65,54.13,1879010.31,102
+2024-04-30,Ironclad Fasteners,Chemicals,North America,90.75,1.25,95.1,1943090.28,111
+2025-03-29,Apex Components,Machined Parts,Western Europe,39.93,9.86,65.37,2141820.62,46
+2024-07-07,Apex Components,Electronics,Eastern Europe,52.34,4.03,80.48,550516.49,85
+2025-03-15,Northwind Metals,Electronics,Latin America,84.59,6.66,93.17,2031460.38,8
+2024-04-12,Northwind Metals,Electronics,Latin America,73.81,2.14,74.95,1101410.36,105
+2024-09-24,Summit Logistics Co,Machined Parts,South Asia,78.54,14.45,70.92,1547786.45,18
+2024-01-31,Apex Components,Raw Materials,East Asia,65.04,10.62,87.38,804232.06,71
+2024-04-02,Pacifica Electronics,Chemicals,South Asia,48.45,14.22,85.33,696385.12,65
+2024-06-24,Summit Logistics Co,Chemicals,South Asia,95.35,11.84,72.65,1571118.13,57
+2025-01-19,Summit Logistics Co,Logistics Services,East Asia,68.83,5.44,56.96,7907.92,97
+2024-05-30,Northwind Metals,Raw Materials,Western Europe,28.72,5.29,79.17,414919.87,15
+2025-03-15,Summit Logistics Co,Raw Materials,Western Europe,39.54,4.12,72.99,961931.04,97
+2024-06-17,Ironclad Fasteners,Packaging,Latin America,35.33,9.82,54.79,1470611.86,86
+2024-03-04,BlueRiver Plastics,Logistics Services,North America,35.13,6.97,99.31,178927.48,95
+2024-01-02,Apex Components,Chemicals,Latin America,86.5,7.57,60.7,7585.55,38
+2024-11-21,Greenleaf Packaging,Packaging,South Asia,56.08,0.62,67.55,1925678.08,30
+2024-01-17,BlueRiver Plastics,Chemicals,Western Europe,17.95,9.54,76.84,1492385.93,112
+2024-05-15,Ironclad Fasteners,Logistics Services,Western Europe,42.45,11.08,84.03,228712.09,74
+2024-05-02,Pacifica Electronics,Raw Materials,North America,61.69,8.43,83.79,1707515.17,52
+2024-09-16,Greenleaf Packaging,Logistics Services,South Asia,54.77,9.3,82.35,229409.58,98
+2025-04-14,Greenleaf Packaging,Machined Parts,North America,16.87,2.92,75.45,2048707.75,16
+2024-08-16,Northwind Metals,Electronics,South Asia,35.17,0.79,85.85,1719834.14,32
+2025-05-10,Apex Components,Logistics Services,North America,41.75,3.27,98.26,1677493.59,89
+2024-05-29,Summit Logistics Co,Machined Parts,East Asia,16.78,7.32,95.52,1292626.06,43
+2025-02-03,BlueRiver Plastics,Packaging,Latin America,96.06,5.75,50.71,1214457.6,88
+2024-05-27,Summit Logistics Co,Chemicals,North America,5.84,5.88,67.26,205247.46,90
+2025-04-26,Summit Logistics Co,Chemicals,North America,32.99,6.17,77.37,1406009.26,24
+2024-03-20,BlueRiver Plastics,Packaging,Latin America,67.39,2.67,96.44,1145427.25,38
+2024-07-30,Greenleaf Packaging,Packaging,South Asia,68.87,1.68,74.46,524756.43,96
+2024-02-03,Northwind Metals,Logistics Services,Eastern Europe,11.91,7.16,81.12,904384.56,30
+2025-05-03,Northwind Metals,Raw Materials,South Asia,99.14,11.15,89.34,861862.32,2
+2025-03-28,Apex Components,Logistics Services,North America,6.05,0.39,69.31,889173.17,93
+2024-07-09,Northwind Metals,Raw Materials,Eastern Europe,83.56,1.3,78.99,12970.98,16
+2024-12-02,Summit Logistics Co,Raw Materials,East Asia,10.17,9.83,99.66,6008.25,52
+2024-04-05,Northwind Metals,Electronics,South Asia,23.03,3.32,90.31,720666.99,68
+2025-02-22,Ironclad Fasteners,Electronics,Latin America,58.68,11.97,78.59,2125008.22,62
+2024-09-09,Apex Components,Packaging,East Asia,45.44,0.31,61.64,1524728.64,112
+2024-03-25,Pacifica Electronics,Machined Parts,Latin America,58.01,5.05,98.65,1511141.39,92
+2024-09-10,BlueRiver Plastics,Packaging,South Asia,54.63,7.23,82.02,1324504.12,63
+2025-06-06,Ironclad Fasteners,Logistics Services,South Asia,88.17,8.74,88.32,1550471.09,48
+2025-05-30,Apex Components,Chemicals,Latin America,47.18,6.23,85.02,74660.96,60
+2025-01-31,BlueRiver Plastics,Raw Materials,Western Europe,92.57,3.69,91.08,1242632.31,54
+2024-10-16,Ironclad Fasteners,Machined Parts,South Asia,45.92,3.48,79.65,1269783.38,81
+2024-01-16,Summit Logistics Co,Electronics,Western Europe,10.86,9.15,54.13,1374186.37,103
+2024-03-20,BlueRiver Plastics,Electronics,Eastern Europe,66.82,3.61,70.17,2111661.09,29
+2025-01-05,BlueRiver Plastics,Logistics Services,North America,77.43,0.94,72.49,1838842.36,119
+2025-01-12,Summit Logistics Co,Logistics Services,Western Europe,30.4,9.49,52.54,499420.74,68
+2024-01-31,Pacifica Electronics,Raw Materials,South Asia,58.05,9.8,99.4,1142501.32,49
+2024-05-24,Apex Components,Logistics Services,North America,78.25,12.84,86.76,798375.93,86
+2024-04-30,Greenleaf Packaging,Machined Parts,Latin America,99.48,6.44,61.65,1932161.8,57
+2024-10-14,Apex Components,Machined Parts,South Asia,18.73,10.46,76.82,1388096.18,96
+2024-10-11,Summit Logistics Co,Raw Materials,Latin America,27.82,9.29,51.25,1469818.98,22
+2025-06-20,Apex Components,Packaging,Western Europe,30.01,6.8,68.51,421509.48,110
+2024-06-15,BlueRiver Plastics,Electronics,East Asia,31.13,12.86,77.47,1666931.35,22
+2024-08-18,Pacifica Electronics,Machined Parts,East Asia,38.72,9.51,94.94,2269896.54,112
+2025-03-24,BlueRiver Plastics,Packaging,North America,95.41,6.47,65.02,1465577.59,52
+2024-02-13,Northwind Metals,Machined Parts,Latin America,14.15,1.17,63.36,1920733.77,54
+2025-06-09,Pacifica Electronics,Packaging,North America,4.76,3.29,91.94,1500116.35,85
+2024-12-13,Northwind Metals,Chemicals,South Asia,42.58,4.37,53.29,2261309.73,55
+2024-07-14,Northwind Metals,Packaging,North America,8.55,4.41,74.32,562879.32,16
+2024-05-25,Greenleaf Packaging,Machined Parts,Latin America,27.67,6.35,71.31,2331907.42,58
+2024-11-02,Apex Components,Logistics Services,North America,12.29,12.64,72.69,492838.97,88
+2024-03-06,Ironclad Fasteners,Chemicals,North America,4.38,3.75,69.36,2469664.79,43
+2024-10-01,Greenleaf Packaging,Electronics,Western Europe,93.82,13.71,52.49,1925494.61,57
+2024-10-16,Ironclad Fasteners,Chemicals,South Asia,18.68,13.52,59.38,1120053.68,3
+2025-06-19,Greenleaf Packaging,Raw Materials,East Asia,71.49,13.52,97.52,1963139.85,26
+2024-03-15,Summit Logistics Co,Chemicals,East Asia,81.17,11.07,54.54,2128619.07,79
+2025-01-12,BlueRiver Plastics,Machined Parts,North America,19.71,11.16,86.05,587708.23,91
+2024-11-14,Ironclad Fasteners,Raw Materials,Western Europe,92.72,11.67,78.62,2447411.04,109
+2024-07-31,Northwind Metals,Packaging,Latin America,94.73,5.28,64.45,2497409.93,70
+2025-02-03,Greenleaf Packaging,Electronics,Latin America,82.65,9.56,50.24,2039256.67,68
+2024-12-22,Apex Components,Machined Parts,Latin America,70.86,13.6,70.03,2399584.86,49
+2024-07-19,Northwind Metals,Chemicals,Latin America,16.0,12.2,88.75,872315.68,60
+2025-03-14,Apex Components,Electronics,North America,35.52,13.32,54.62,1441719.38,7
+2025-06-08,BlueRiver Plastics,Raw Materials,East Asia,52.81,6.04,87.76,848385.02,9
+2024-05-20,Northwind Metals,Machined Parts,East Asia,19.2,9.12,97.22,1195767.01,74
+2025-03-08,BlueRiver Plastics,Logistics Services,South Asia,46.3,6.57,71.47,217832.06,3
+2024-10-25,Apex Components,Chemicals,East Asia,65.48,0.19,53.1,2336252.31,65
+2024-10-02,Greenleaf Packaging,Chemicals,Western Europe,59.93,8.53,77.3,1296207.71,67
+2025-04-03,Greenleaf Packaging,Raw Materials,Eastern Europe,21.06,14.37,93.05,562610.63,31
+2025-01-13,Ironclad Fasteners,Raw Materials,East Asia,36.46,2.98,84.41,514242.65,49
+2024-01-15,Greenleaf Packaging,Logistics Services,South Asia,31.97,5.77,94.96,446750.79,54
+2024-08-22,Pacifica Electronics,Raw Materials,Western Europe,81.01,2.34,70.22,1802489.95,53
+2024-06-12,Summit Logistics Co,Electronics,Latin America,56.17,11.85,82.4,17479.62,66
+2024-09-10,Greenleaf Packaging,Chemicals,Eastern Europe,74.33,4.75,95.46,657956.57,101
+2025-06-18,Ironclad Fasteners,Electronics,East Asia,47.6,9.06,72.45,720957.74,66
+2025-03-10,Summit Logistics Co,Machined Parts,Latin America,61.98,0.66,69.81,1926920.47,48
+2025-04-13,Ironclad Fasteners,Electronics,North America,79.03,11.48,91.58,1970924.94,46
+2025-04-08,Apex Components,Electronics,Western Europe,28.05,10.38,71.0,2428709.14,12
+2024-05-31,Apex Components,Logistics Services,Latin America,78.71,8.28,55.25,639118.97,77
+2024-07-28,Northwind Metals,Chemicals,Western Europe,81.57,7.74,96.27,1447023.44,66
+2024-11-03,BlueRiver Plastics,Logistics Services,Eastern Europe,29.86,8.52,75.83,146643.62,62
+2024-12-27,BlueRiver Plastics,Chemicals,Western Europe,67.76,10.14,57.17,196207.39,106
+2024-09-01,Summit Logistics Co,Machined Parts,East Asia,76.28,1.03,63.62,2361420.21,93
+2025-01-13,Pacifica Electronics,Logistics Services,South Asia,0.95,3.45,72.84,714653.04,114
+2024-07-21,BlueRiver Plastics,Packaging,Western Europe,74.82,7.55,85.55,194931.9,56
+2025-03-25,Summit Logistics Co,Raw Materials,Western Europe,67.03,4.01,90.98,1647325.45,4
+2025-01-13,Apex Components,Raw Materials,East Asia,72.52,5.81,86.29,2060399.25,109
+2024-12-29,Summit Logistics Co,Electronics,East Asia,27.64,6.59,57.93,337950.6,34
+2025-02-13,Pacifica Electronics,Electronics,Western Europe,2.53,11.32,78.51,1894942.12,120
+2025-03-23,Summit Logistics Co,Raw Materials,South Asia,78.48,1.47,98.44,784226.49,44
+2024-03-27,Apex Components,Logistics Services,North America,74.49,5.24,85.9,429378.84,104
+2024-02-14,Ironclad Fasteners,Chemicals,Latin America,37.54,8.64,76.63,2290929.75,114
+2024-05-17,Summit Logistics Co,Electronics,North America,68.87,10.96,65.34,1753459.85,6
+2024-02-25,Northwind Metals,Raw Materials,Eastern Europe,20.41,6.36,92.13,467675.11,92
+2024-10-20,Apex Components,Raw Materials,Latin America,99.43,13.49,87.89,1144867.78,19
+2024-01-13,Apex Components,Raw Materials,North America,20.06,9.11,71.54,134237.05,27
+2024-09-02,Apex Components,Electronics,Western Europe,8.73,10.32,92.87,2100252.94,75
+2024-06-21,Summit Logistics Co,Chemicals,South Asia,11.42,12.06,58.05,694129.79,58
+2025-06-06,Apex Components,Electronics,Western Europe,64.22,3.14,62.61,112802.48,48
+2024-06-30,Summit Logistics Co,Packaging,North America,93.7,7.7,67.23,1625197.73,102
+2024-07-12,Greenleaf Packaging,Machined Parts,North America,50.81,10.54,67.88,2164869.02,45
+2025-06-19,Pacifica Electronics,Logistics Services,North America,8.85,3.32,67.53,1644635.75,96
+2025-01-26,Ironclad Fasteners,Packaging,North America,14.42,11.01,68.49,616399.18,29
+2024-04-29,Northwind Metals,Packaging,Latin America,71.74,13.04,77.19,1476035.95,115
+2024-11-23,Summit Logistics Co,Raw Materials,Eastern Europe,77.1,8.62,85.37,1975539.36,7
+2024-11-02,Northwind Metals,Logistics Services,North America,85.91,2.24,92.99,530019.83,80
+2025-01-08,Summit Logistics Co,Logistics Services,East Asia,39.33,6.83,85.49,1765635.71,51
+2024-10-03,Summit Logistics Co,Machined Parts,East Asia,3.38,7.54,99.86,1813602.66,59
+2025-06-08,Greenleaf Packaging,Logistics Services,Eastern Europe,25.7,1.66,81.01,1833404.29,81
+2024-05-02,Northwind Metals,Packaging,Western Europe,20.31,9.77,62.7,2175864.87,117
+2024-07-06,Ironclad Fasteners,Chemicals,East Asia,11.68,6.3,94.79,268032.07,73
+2024-09-21,Greenleaf Packaging,Packaging,South Asia,28.02,5.26,88.14,714708.46,61
+2025-04-14,Northwind Metals,Raw Materials,Eastern Europe,40.13,2.85,86.73,1789763.49,94
+2024-05-21,Greenleaf Packaging,Raw Materials,South Asia,17.37,13.33,73.59,2046375.78,79
+2024-03-11,Greenleaf Packaging,Chemicals,Latin America,70.31,2.45,79.54,617007.38,119
+2024-01-09,Apex Components,Logistics Services,Latin America,92.5,2.51,59.08,903037.86,9
+2024-11-21,Northwind Metals,Raw Materials,South Asia,45.91,4.05,56.22,2072449.58,82
+2024-05-14,Ironclad Fasteners,Electronics,North America,75.03,14.59,55.99,1036366.19,39
+2025-06-20,Pacifica Electronics,Raw Materials,Eastern Europe,21.61,7.12,66.86,1945915.45,118
+2025-03-15,BlueRiver Plastics,Packaging,East Asia,5.1,4.33,89.7,2070826.59,6
+2024-03-23,Pacifica Electronics,Raw Materials,East Asia,20.33,11.03,82.29,511136.37,94
+2024-06-21,Greenleaf Packaging,Machined Parts,Western Europe,95.45,14.08,60.95,1943312.85,69
+2024-10-09,Apex Components,Machined Parts,Eastern Europe,59.27,13.94,89.7,2028125.76,87
+2024-02-18,Northwind Metals,Chemicals,North America,95.53,0.76,84.44,2020473.72,75
+2024-05-06,Apex Components,Packaging,Eastern Europe,82.37,4.86,56.56,726310.46,104
+2024-09-23,Summit Logistics Co,Packaging,Latin America,66.09,1.09,62.98,72074.27,54
+2024-08-13,Northwind Metals,Packaging,Latin America,16.57,14.85,90.2,298387.05,72
+2024-11-19,Pacifica Electronics,Packaging,East Asia,87.97,5.0,91.99,532617.11,57
+2025-03-05,Greenleaf Packaging,Packaging,Western Europe,27.55,2.19,63.32,1144770.85,58
+2024-01-31,Summit Logistics Co,Packaging,South Asia,59.23,2.51,92.43,1324069.61,17
+2024-04-10,Apex Components,Packaging,Western Europe,85.93,13.96,62.17,1407360.04,28
+2024-03-01,Apex Components,Electronics,North America,78.01,14.88,66.7,366517.77,56
+2025-04-05,Ironclad Fasteners,Machined Parts,Latin America,88.74,6.76,65.41,2497358.11,103
+2024-04-01,Greenleaf Packaging,Chemicals,East Asia,78.67,8.09,56.05,2434043.57,24
+2025-01-26,Summit Logistics Co,Chemicals,Latin America,35.03,11.18,55.01,393343.98,14
+2024-03-05,Northwind Metals,Logistics Services,North America,97.24,11.93,53.61,466332.61,62
+2024-07-21,Pacifica Electronics,Machined Parts,North America,6.6,1.75,51.6,840007.63,14
+2024-04-12,Summit Logistics Co,Packaging,East Asia,12.3,7.89,97.29,1888095.04,78
+2024-06-30,Summit Logistics Co,Packaging,Latin America,63.32,6.35,61.02,557536.54,109
+2024-03-10,Apex Components,Machined Parts,Eastern Europe,51.95,1.02,95.98,1131071.91,49
+2024-08-14,Ironclad Fasteners,Raw Materials,East Asia,1.4,11.44,84.07,18803.35,32
+2024-10-04,Ironclad Fasteners,Raw Materials,Latin America,73.73,5.71,86.48,46650.92,21
+2024-03-19,Northwind Metals,Machined Parts,Eastern Europe,31.48,2.23,75.91,865530.84,14
+2024-03-19,Greenleaf Packaging,Raw Materials,North America,51.94,4.2,85.58,2191937.18,55
+2024-04-18,Ironclad Fasteners,Electronics,South Asia,49.3,4.79,68.63,1502584.72,85
+2025-04-28,Greenleaf Packaging,Machined Parts,North America,19.12,10.82,66.84,1852759.13,37
+2025-03-07,Pacifica Electronics,Packaging,North America,76.46,4.07,66.34,2355415.3,41
+2024-09-19,Greenleaf Packaging,Chemicals,East Asia,12.49,1.54,58.32,1179709.14,65
+2024-02-29,Pacifica Electronics,Raw Materials,Western Europe,44.44,3.09,58.51,1408293.49,28
+2024-06-19,Apex Components,Electronics,East Asia,65.54,1.42,69.74,584476.46,112
+2024-04-10,BlueRiver Plastics,Machined Parts,North America,13.6,11.26,88.85,2020688.62,105
+2024-07-31,Greenleaf Packaging,Machined Parts,Eastern Europe,90.01,6.6,97.29,2401775.42,72
+2025-05-24,Summit Logistics Co,Chemicals,Western Europe,42.14,5.41,58.95,506180.06,114
+2024-07-13,Summit Logistics Co,Electronics,Eastern Europe,77.33,9.31,66.47,440956.29,38
+2025-02-03,Pacifica Electronics,Raw Materials,Western Europe,55.13,10.13,87.63,962449.82,82
+2025-01-23,Ironclad Fasteners,Packaging,Western Europe,80.91,7.59,73.49,2395765.92,35
+2024-10-10,Pacifica Electronics,Electronics,South Asia,86.15,11.24,54.52,1828073.94,33
+2024-07-23,Pacifica Electronics,Raw Materials,East Asia,94.34,5.46,93.48,2460755.29,26
+2025-02-23,Greenleaf Packaging,Logistics Services,South Asia,18.44,1.43,92.63,203376.24,26
+2024-03-22,Summit Logistics Co,Packaging,North America,90.91,2.82,60.79,1793589.16,6
+2024-05-09,Ironclad Fasteners,Machined Parts,South Asia,63.32,13.11,81.02,1948017.27,60
+2024-10-15,Apex Components,Packaging,East Asia,52.87,1.43,82.95,614314.17,64
+2024-06-07,Pacifica Electronics,Packaging,Eastern Europe,51.45,12.21,96.59,248110.31,44
+2025-02-21,BlueRiver Plastics,Logistics Services,Eastern Europe,96.58,0.01,66.9,797262.69,31
+2024-10-29,Pacifica Electronics,Logistics Services,North America,8.2,1.63,73.17,836557.35,113
+2025-03-25,Greenleaf Packaging,Logistics Services,Eastern Europe,5.61,12.36,50.8,711877.46,79
+2024-10-08,Greenleaf Packaging,Electronics,Western Europe,36.39,7.36,88.26,1688796.83,63
+2024-12-30,Pacifica Electronics,Electronics,South Asia,20.63,3.75,91.5,1762096.36,60
+2024-11-24,BlueRiver Plastics,Machined Parts,Latin America,77.53,9.33,50.63,1837436.03,23
+2024-12-24,Apex Components,Logistics Services,Western Europe,79.49,3.51,99.73,1728808.33,13
+2024-11-18,Summit Logistics Co,Logistics Services,Latin America,94.25,12.61,98.07,991700.65,113
+2024-11-24,Northwind Metals,Logistics Services,East Asia,6.89,4.43,98.1,1115797.42,88
+2024-01-22,Pacifica Electronics,Raw Materials,East Asia,74.11,8.17,59.66,115715.08,115
+2025-03-12,Ironclad Fasteners,Packaging,South Asia,56.9,8.28,78.94,57694.08,51
+2025-03-10,Summit Logistics Co,Electronics,South Asia,56.11,12.4,99.07,452104.18,33
+2024-05-17,Summit Logistics Co,Logistics Services,East Asia,50.75,10.75,79.74,2390445.73,25
+2025-05-27,BlueRiver Plastics,Electronics,North America,37.47,8.1,75.66,548258.65,76
+2025-03-26,Ironclad Fasteners,Electronics,South Asia,13.52,3.15,56.61,1509133.69,97
+2024-01-12,Northwind Metals,Electronics,East Asia,23.32,1.25,52.72,541345.26,54
+2024-11-13,Pacifica Electronics,Packaging,East Asia,84.17,10.45,87.09,271564.54,55
+2024-09-16,Summit Logistics Co,Machined Parts,Eastern Europe,0.76,8.36,78.92,792922.94,53
+2024-09-08,Northwind Metals,Chemicals,Western Europe,85.63,14.55,87.81,1487885.01,4
+2025-05-20,Apex Components,Packaging,East Asia,59.4,13.22,91.37,236285.4,110
+2024-05-12,Northwind Metals,Packaging,Latin America,84.75,10.96,70.03,1915106.71,5
+2024-02-03,Apex Components,Raw Materials,Latin America,41.73,14.43,90.17,1730562.17,97
+2024-09-09,Ironclad Fasteners,Machined Parts,Eastern Europe,78.27,2.09,58.76,192139.14,61
+2024-09-15,BlueRiver Plastics,Logistics Services,Latin America,18.08,13.62,73.17,148871.88,87
+2024-01-14,BlueRiver Plastics,Packaging,North America,18.73,1.28,60.76,2493559.22,104
+2024-06-14,Ironclad Fasteners,Raw Materials,Eastern Europe,91.01,3.29,76.35,210097.99,77
+2024-04-20,Apex Components,Machined Parts,Latin America,59.88,4.0,84.19,1485560.59,103
+2024-11-24,Greenleaf Packaging,Logistics Services,Western Europe,41.83,7.89,83.71,815318.05,66
+2024-11-06,Apex Components,Machined Parts,South Asia,72.35,13.22,69.47,1225878.48,24
+2024-10-02,Summit Logistics Co,Machined Parts,Eastern Europe,69.24,10.62,84.22,333333.08,40
+2025-02-23,Northwind Metals,Machined Parts,North America,10.71,4.18,88.38,570504.78,75
+2025-05-10,Northwind Metals,Electronics,Latin America,26.92,0.26,64.61,2299878.99,49
+2024-10-14,Ironclad Fasteners,Electronics,East Asia,58.59,5.89,54.36,1689468.52,97
+2025-05-28,Ironclad Fasteners,Electronics,East Asia,34.39,7.72,79.73,88711.08,103
+2024-05-12,Summit Logistics Co,Logistics Services,Eastern Europe,58.17,6.71,84.81,1648758.42,113
+2024-07-10,Apex Components,Packaging,North America,86.59,11.37,68.43,1309034.82,41
+2024-04-03,Northwind Metals,Logistics Services,South Asia,28.85,5.31,77.59,2272217.86,11
+2024-11-26,Northwind Metals,Raw Materials,Eastern Europe,38.89,6.46,79.52,789921.95,25
+2024-04-06,Greenleaf Packaging,Packaging,Latin America,5.95,11.78,99.93,1965982.45,37
+2024-11-19,Ironclad Fasteners,Machined Parts,East Asia,99.76,14.56,98.33,1503905.53,38
+2024-06-26,Pacifica Electronics,Raw Materials,South Asia,65.6,4.83,89.58,2045034.99,77
+2024-07-09,Greenleaf Packaging,Logistics Services,Eastern Europe,26.3,0.57,55.28,2269629.4,43
+2024-05-03,BlueRiver Plastics,Machined Parts,Eastern Europe,82.26,12.21,95.48,1104829.53,92
+2024-01-11,BlueRiver Plastics,Raw Materials,Latin America,89.67,2.41,84.63,1790236.36,9
+2024-01-23,Apex Components,Packaging,Latin America,93.85,9.1,76.26,878335.86,42
+2025-02-02,Summit Logistics Co,Logistics Services,Eastern Europe,56.76,12.54,63.74,1212396.82,112
+2025-01-24,Greenleaf Packaging,Raw Materials,Latin America,60.8,7.18,58.72,1064329.64,97
+2025-03-24,Apex Components,Logistics Services,East Asia,54.06,0.13,61.57,202522.04,31
+2025-05-06,Ironclad Fasteners,Logistics Services,Eastern Europe,82.94,8.91,70.42,1947488.09,114

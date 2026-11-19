@@ -1,0 +1,241 @@
+visitDate,clinicSite,visitType,providerSpecialty,patientsSeen,avgWaitMinutes,noShowCount,totalRevenue
+2025-02-03,Eastview Pediatrics,New Patient,Pediatrics,119,184.69,46,65907.68
+2025-04-08,Eastview Pediatrics,Telehealth,Family Medicine,84,15.18,52,51736.12
+2025-06-18,Lakeshore Specialty,Telehealth,Dermatology,77,113.24,22,44068.78
+2025-01-26,Lakeshore Specialty,Walk-In,Cardiology,165,202.5,9,21988.02
+2025-05-14,Riverside Family Care,Walk-In,Internal Medicine,152,76.89,35,26420.93
+2025-01-29,Downtown Main,Follow-Up,Internal Medicine,142,83.94,8,75232.4
+2024-11-25,Westgate Urgent,Telehealth,Dermatology,84,33.23,59,72257.83
+2024-12-20,Lakeshore Specialty,Follow-Up,Family Medicine,14,23.44,58,9643.45
+2024-04-06,Riverside Family Care,New Patient,Internal Medicine,72,136.51,57,25381.46
+2024-07-03,Eastview Pediatrics,Walk-In,Dermatology,106,108.1,34,24059.74
+2024-08-06,Westgate Urgent,Walk-In,Orthopedics,21,105.64,55,45186.62
+2025-05-04,Eastview Pediatrics,Procedure,Pediatrics,120,56.05,19,27111.05
+2024-05-06,Westgate Urgent,Procedure,Family Medicine,156,57.55,9,42520.18
+2024-12-29,Lakeshore Specialty,Walk-In,Orthopedics,165,185.3,7,6573.84
+2025-01-20,Northside Outpatient,New Patient,Internal Medicine,55,59.04,31,72140.85
+2025-01-21,Westgate Urgent,Procedure,Orthopedics,87,209.1,5,50020.58
+2024-12-21,Eastview Pediatrics,New Patient,Dermatology,154,21.43,12,10850.35
+2025-05-04,Lakeshore Specialty,Telehealth,Internal Medicine,17,90.91,25,29490.16
+2024-09-18,Eastview Pediatrics,New Patient,Pediatrics,85,173.29,15,69453.02
+2024-01-02,Northside Outpatient,Walk-In,Orthopedics,33,8.29,11,66851.43
+2024-04-16,Eastview Pediatrics,Follow-Up,Pediatrics,56,77.67,0,40219.88
+2025-05-28,Northside Outpatient,New Patient,Cardiology,2,81.65,13,76319.42
+2024-03-09,Riverside Family Care,Follow-Up,Pediatrics,13,172.56,22,11098.87
+2025-01-19,Lakeshore Specialty,New Patient,Internal Medicine,135,151.89,33,30405.19
+2024-10-26,Lakeshore Specialty,Telehealth,Cardiology,112,218.72,10,25078.97
+2025-04-10,Riverside Family Care,Telehealth,Orthopedics,54,130.45,26,59177.49
+2025-02-05,Westgate Urgent,New Patient,Pediatrics,43,40.29,24,6868.63
+2025-02-07,Downtown Main,Walk-In,Pediatrics,48,142.69,24,76519.29
+2024-01-10,Riverside Family Care,Follow-Up,Dermatology,104,168.25,23,33246.86
+2024-01-11,Eastview Pediatrics,Walk-In,Orthopedics,63,123.63,38,7783.17
+2025-01-24,Westgate Urgent,New Patient,Pediatrics,98,169.94,2,81606.37
+2025-05-23,Northside Outpatient,New Patient,Family Medicine,61,98.81,40,16579.29
+2024-10-06,Westgate Urgent,Telehealth,Dermatology,91,197.48,45,3741.83
+2025-03-07,Lakeshore Specialty,New Patient,Cardiology,142,48.24,55,10722.65
+2024-03-18,Eastview Pediatrics,Follow-Up,Dermatology,42,96.32,24,12790.51
+2025-01-07,Lakeshore Specialty,Walk-In,Orthopedics,46,71.21,6,31390.49
+2024-02-02,Westgate Urgent,Telehealth,Pediatrics,96,112.67,42,87043.49
+2024-01-15,Lakeshore Specialty,New Patient,Cardiology,168,112.57,52,29893.7
+2024-08-17,Eastview Pediatrics,Follow-Up,Cardiology,114,224.46,21,94543.46
+2024-03-08,Riverside Family Care,Procedure,Pediatrics,101,177.51,45,49616.53
+2024-11-10,Riverside Family Care,Procedure,Orthopedics,26,216.13,26,3227.2
+2024-11-19,Northside Outpatient,Procedure,Cardiology,134,24.61,39,48431.95
+2024-09-04,Eastview Pediatrics,Procedure,Pediatrics,60,234.67,35,12481.5
+2024-03-28,Eastview Pediatrics,Follow-Up,Internal Medicine,138,163.38,5,81010.79
+2024-08-29,Westgate Urgent,Telehealth,Cardiology,46,1.39,21,9093.08
+2024-09-30,Westgate Urgent,Telehealth,Family Medicine,105,146.32,13,50091.93
+2025-05-06,Northside Outpatient,Telehealth,Pediatrics,155,142.06,59,88991.24
+2024-09-24,Westgate Urgent,Walk-In,Internal Medicine,99,100.16,49,77813.13
+2024-06-24,Westgate Urgent,Procedure,Cardiology,76,74.76,36,86753.13
+2024-01-30,Northside Outpatient,Follow-Up,Dermatology,127,227.13,40,63779.29
+2025-02-15,Downtown Main,Follow-Up,Orthopedics,93,223.39,24,40537.31
+2024-11-28,Eastview Pediatrics,Procedure,Orthopedics,83,15.46,58,46670.24
+2024-11-07,Lakeshore Specialty,Telehealth,Orthopedics,127,146.53,18,70951.43
+2024-12-15,Lakeshore Specialty,Telehealth,Internal Medicine,62,49.8,57,53549.53
+2025-04-10,Lakeshore Specialty,Walk-In,Dermatology,59,159.58,35,21948.95
+2024-06-19,Riverside Family Care,New Patient,Orthopedics,127,188.48,3,85770.39
+2024-11-15,Westgate Urgent,Procedure,Orthopedics,76,115.71,32,71822.04
+2024-03-11,Riverside Family Care,Telehealth,Internal Medicine,121,90.87,6,42339.22
+2024-08-13,Lakeshore Specialty,Telehealth,Orthopedics,52,95.21,21,93461.21
+2025-01-20,Westgate Urgent,Follow-Up,Pediatrics,29,209.65,8,50707.3
+2024-05-15,Downtown Main,Procedure,Internal Medicine,79,105.31,26,59625.93
+2025-03-22,Lakeshore Specialty,New Patient,Dermatology,70,32.9,57,17014.74
+2024-06-03,Lakeshore Specialty,Telehealth,Pediatrics,150,227.18,43,33132.43
+2024-11-02,Riverside Family Care,New Patient,Pediatrics,28,229.4,2,90925.45
+2025-03-12,Northside Outpatient,New Patient,Cardiology,63,193.25,37,51413.65
+2025-06-08,Eastview Pediatrics,Procedure,Family Medicine,95,137.23,14,15991.28
+2024-03-30,Lakeshore Specialty,Telehealth,Orthopedics,167,37.29,21,43256.74
+2025-01-03,Downtown Main,Procedure,Orthopedics,145,117.88,45,60005.04
+2024-04-13,Northside Outpatient,Telehealth,Pediatrics,66,224.35,48,3544.94
+2024-04-29,Riverside Family Care,Telehealth,Pediatrics,164,129.5,18,61654.0
+2024-04-28,Westgate Urgent,Follow-Up,Orthopedics,144,53.75,11,75192.16
+2025-03-11,Lakeshore Specialty,Follow-Up,Dermatology,14,20.63,58,3144.94
+2024-08-02,Westgate Urgent,Telehealth,Pediatrics,73,162.57,29,14740.72
+2024-11-16,Lakeshore Specialty,Telehealth,Dermatology,49,172.44,42,5900.11
+2025-04-29,Westgate Urgent,New Patient,Orthopedics,62,91.72,7,34304.61
+2025-01-13,Riverside Family Care,Follow-Up,Pediatrics,152,34.15,23,13818.79
+2024-09-24,Riverside Family Care,Follow-Up,Family Medicine,64,22.44,23,7811.29
+2025-02-13,Riverside Family Care,Telehealth,Internal Medicine,70,200.25,38,60150.4
+2024-02-22,Eastview Pediatrics,Walk-In,Pediatrics,179,197.71,23,26188.79
+2025-06-14,Riverside Family Care,New Patient,Pediatrics,44,26.97,7,83301.37
+2025-03-25,Northside Outpatient,Follow-Up,Orthopedics,36,34.46,13,67388.62
+2025-06-15,Lakeshore Specialty,New Patient,Dermatology,91,53.2,20,67701.26
+2025-02-18,Downtown Main,Walk-In,Dermatology,125,138.16,34,78444.83
+2025-06-10,Lakeshore Specialty,Telehealth,Cardiology,27,93.89,51,79637.99
+2025-06-17,Riverside Family Care,New Patient,Family Medicine,172,147.64,40,77332.66
+2024-08-29,Northside Outpatient,Telehealth,Dermatology,75,85.37,30,14564.27
+2025-04-20,Westgate Urgent,Procedure,Internal Medicine,69,65.06,11,65985.31
+2025-05-25,Northside Outpatient,Follow-Up,Dermatology,79,27.95,45,64553.46
+2025-06-11,Northside Outpatient,Follow-Up,Internal Medicine,154,21.82,9,19828.14
+2024-09-23,Lakeshore Specialty,New Patient,Pediatrics,95,53.42,8,46648.18
+2025-01-25,Lakeshore Specialty,Telehealth,Dermatology,129,16.87,4,92969.82
+2024-11-26,Downtown Main,Procedure,Family Medicine,98,78.92,37,37850.53
+2024-09-01,Lakeshore Specialty,Procedure,Family Medicine,17,165.85,45,34234.58
+2025-01-15,Westgate Urgent,Walk-In,Pediatrics,135,68.61,29,13430.85
+2024-01-21,Lakeshore Specialty,New Patient,Family Medicine,102,150.41,14,93623.29
+2024-06-13,Eastview Pediatrics,Procedure,Pediatrics,97,83.84,31,47341.08
+2025-05-21,Downtown Main,Walk-In,Dermatology,106,122.75,17,53582.22
+2024-06-03,Eastview Pediatrics,Procedure,Internal Medicine,68,232.98,31,76370.32
+2025-02-25,Downtown Main,Walk-In,Orthopedics,108,69.54,45,79059.77
+2024-12-22,Riverside Family Care,Follow-Up,Internal Medicine,97,153.45,57,52826.41
+2025-01-29,Eastview Pediatrics,Procedure,Family Medicine,128,141.62,53,275.47
+2024-10-04,Riverside Family Care,New Patient,Internal Medicine,60,116.87,15,41999.09
+2025-01-24,Riverside Family Care,New Patient,Dermatology,5,194.57,34,7295.79
+2024-08-26,Riverside Family Care,Telehealth,Pediatrics,146,79.79,50,71138.92
+2024-09-05,Lakeshore Specialty,Follow-Up,Cardiology,40,108.85,48,5176.61
+2024-07-26,Eastview Pediatrics,New Patient,Dermatology,169,125.87,9,7203.0
+2024-05-24,Downtown Main,Follow-Up,Cardiology,8,165.99,8,47993.33
+2024-01-09,Lakeshore Specialty,Procedure,Family Medicine,176,53.94,10,33463.49
+2024-07-25,Lakeshore Specialty,New Patient,Internal Medicine,136,19.47,15,69639.32
+2025-06-11,Lakeshore Specialty,New Patient,Pediatrics,5,43.55,41,50307.28
+2025-05-29,Lakeshore Specialty,Procedure,Orthopedics,33,155.56,1,43384.91
+2024-10-09,Riverside Family Care,Procedure,Cardiology,70,112.47,14,710.42
+2024-05-12,Westgate Urgent,Follow-Up,Pediatrics,101,227.7,46,48869.93
+2024-06-13,Downtown Main,Walk-In,Orthopedics,2,96.9,21,35575.18
+2024-05-23,Northside Outpatient,Follow-Up,Orthopedics,135,103.69,47,76255.29
+2024-02-18,Downtown Main,New Patient,Internal Medicine,34,159.41,55,14858.55
+2025-04-20,Northside Outpatient,Procedure,Cardiology,174,2.08,39,53810.72
+2024-01-09,Northside Outpatient,New Patient,Orthopedics,166,184.36,53,88630.8
+2024-07-25,Riverside Family Care,Telehealth,Pediatrics,169,74.83,16,50931.5
+2024-11-06,Lakeshore Specialty,New Patient,Orthopedics,118,239.62,16,42395.63
+2024-04-08,Northside Outpatient,New Patient,Pediatrics,118,170.55,52,70189.88
+2024-06-11,Northside Outpatient,Telehealth,Pediatrics,135,40.0,31,22109.17
+2024-03-12,Riverside Family Care,Walk-In,Dermatology,37,229.71,32,39037.37
+2024-03-23,Lakeshore Specialty,New Patient,Family Medicine,87,39.61,17,84898.81
+2025-01-03,Westgate Urgent,Procedure,Family Medicine,142,92.0,8,74713.53
+2024-09-18,Northside Outpatient,New Patient,Orthopedics,16,31.59,16,55733.35
+2024-01-13,Eastview Pediatrics,New Patient,Family Medicine,153,101.54,1,50105.17
+2024-04-05,Eastview Pediatrics,Telehealth,Orthopedics,104,186.04,29,39006.52
+2024-11-11,Lakeshore Specialty,Procedure,Pediatrics,123,70.16,33,77363.01
+2025-05-31,Northside Outpatient,New Patient,Internal Medicine,156,227.05,58,87288.66
+2024-10-13,Westgate Urgent,Telehealth,Pediatrics,98,152.46,9,66776.08
+2024-06-11,Eastview Pediatrics,Telehealth,Pediatrics,148,133.13,32,70695.53
+2024-08-08,Lakeshore Specialty,Follow-Up,Internal Medicine,140,202.9,27,12588.77
+2024-11-23,Northside Outpatient,Telehealth,Cardiology,112,47.08,32,52234.36
+2025-05-12,Lakeshore Specialty,Walk-In,Internal Medicine,41,127.74,7,80050.15
+2024-01-30,Riverside Family Care,Telehealth,Cardiology,56,131.56,15,45818.87
+2024-08-16,Lakeshore Specialty,New Patient,Dermatology,170,108.46,27,34167.88
+2024-12-24,Eastview Pediatrics,Procedure,Pediatrics,171,47.17,28,8331.71
+2024-09-09,Downtown Main,Telehealth,Internal Medicine,169,82.3,26,94608.72
+2024-05-15,Eastview Pediatrics,Procedure,Dermatology,131,102.17,40,5321.15
+2024-08-03,Riverside Family Care,Telehealth,Pediatrics,131,223.17,29,58888.76
+2024-10-10,Northside Outpatient,New Patient,Internal Medicine,138,206.38,23,65460.5
+2025-01-13,Eastview Pediatrics,Telehealth,Orthopedics,102,238.24,16,90160.69
+2024-07-11,Lakeshore Specialty,Follow-Up,Internal Medicine,142,167.45,31,77485.79
+2025-03-18,Riverside Family Care,New Patient,Pediatrics,25,34.06,19,27592.15
+2025-01-21,Riverside Family Care,Follow-Up,Family Medicine,161,54.93,60,88630.4
+2024-06-29,Westgate Urgent,Telehealth,Pediatrics,95,140.14,42,71067.85
+2024-07-15,Downtown Main,New Patient,Family Medicine,78,162.51,16,8717.12
+2025-06-01,Westgate Urgent,Telehealth,Pediatrics,86,225.97,12,62178.95
+2024-04-25,Westgate Urgent,Walk-In,Cardiology,178,130.25,3,84461.29
+2025-03-14,Eastview Pediatrics,Walk-In,Orthopedics,167,166.81,49,86580.86
+2024-06-06,Eastview Pediatrics,New Patient,Family Medicine,11,79.15,10,93139.33
+2024-02-23,Downtown Main,Telehealth,Internal Medicine,36,31.84,50,33876.73
+2024-01-15,Downtown Main,Telehealth,Internal Medicine,117,36.56,3,41242.75
+2024-07-27,Eastview Pediatrics,Telehealth,Dermatology,73,182.68,8,61845.85
+2025-01-26,Riverside Family Care,New Patient,Internal Medicine,45,235.64,31,89861.61
+2025-06-10,Downtown Main,Follow-Up,Orthopedics,78,8.75,27,50207.9
+2024-10-09,Riverside Family Care,Follow-Up,Internal Medicine,134,236.04,14,66026.96
+2024-10-15,Northside Outpatient,Procedure,Orthopedics,101,206.42,23,8305.83
+2025-02-04,Northside Outpatient,Telehealth,Dermatology,92,129.61,24,42184.17
+2025-03-28,Westgate Urgent,New Patient,Family Medicine,47,58.84,50,10504.08
+2025-01-19,Eastview Pediatrics,Telehealth,Dermatology,175,181.71,36,69715.34
+2024-09-05,Northside Outpatient,Telehealth,Orthopedics,89,113.48,54,66166.08
+2024-12-25,Northside Outpatient,New Patient,Pediatrics,103,110.36,52,60126.87
+2025-05-05,Eastview Pediatrics,Telehealth,Internal Medicine,56,227.12,40,21797.17
+2024-03-12,Westgate Urgent,Procedure,Pediatrics,9,54.17,29,51489.02
+2025-03-29,Downtown Main,Walk-In,Orthopedics,34,130.79,38,81435.59
+2024-10-27,Northside Outpatient,Walk-In,Family Medicine,34,36.69,10,65113.11
+2024-07-10,Downtown Main,New Patient,Internal Medicine,2,212.97,54,12193.69
+2024-07-23,Westgate Urgent,Telehealth,Dermatology,180,137.23,49,44550.3
+2025-02-07,Downtown Main,Telehealth,Pediatrics,90,179.45,13,77307.03
+2024-09-26,Westgate Urgent,Follow-Up,Cardiology,52,50.18,25,72187.08
+2024-09-02,Downtown Main,New Patient,Internal Medicine,55,238.35,20,49140.93
+2024-03-15,Northside Outpatient,Telehealth,Dermatology,24,224.06,45,27081.81
+2025-01-08,Downtown Main,Telehealth,Family Medicine,78,20.77,38,54156.27
+2024-06-08,Downtown Main,New Patient,Pediatrics,95,196.85,43,30982.8
+2024-03-31,Downtown Main,Telehealth,Pediatrics,73,38.25,54,88042.03
+2024-02-25,Downtown Main,Telehealth,Cardiology,148,216.88,16,85006.65
+2024-08-17,Westgate Urgent,Telehealth,Family Medicine,123,44.49,23,72656.81
+2024-09-19,Riverside Family Care,Walk-In,Dermatology,62,92.2,7,89365.63
+2025-03-02,Eastview Pediatrics,Telehealth,Pediatrics,26,169.05,30,84132.33
+2024-11-02,Northside Outpatient,Follow-Up,Internal Medicine,36,8.36,14,74760.6
+2024-01-05,Lakeshore Specialty,Walk-In,Dermatology,125,36.51,27,5305.95
+2024-04-10,Northside Outpatient,Follow-Up,Family Medicine,21,65.88,45,12867.66
+2024-10-08,Westgate Urgent,Follow-Up,Family Medicine,61,173.03,51,65192.93
+2024-05-21,Westgate Urgent,Procedure,Cardiology,166,54.02,1,51247.98
+2024-01-21,Northside Outpatient,Follow-Up,Internal Medicine,43,227.16,47,26656.37
+2025-05-23,Eastview Pediatrics,Procedure,Cardiology,123,52.58,35,68173.48
+2025-03-14,Northside Outpatient,Telehealth,Cardiology,124,86.13,43,46499.12
+2024-03-11,Eastview Pediatrics,Follow-Up,Family Medicine,3,211.73,51,49586.31
+2024-06-23,Northside Outpatient,Follow-Up,Internal Medicine,28,21.14,32,27233.73
+2024-08-20,Northside Outpatient,New Patient,Family Medicine,56,128.65,10,78713.78
+2024-03-27,Lakeshore Specialty,New Patient,Dermatology,87,128.33,4,79480.69
+2024-12-21,Downtown Main,Follow-Up,Family Medicine,145,196.31,56,16317.63
+2024-01-07,Downtown Main,Walk-In,Dermatology,3,39.61,21,2400.45
+2024-06-08,Riverside Family Care,Walk-In,Family Medicine,98,99.14,53,83516.73
+2024-02-29,Riverside Family Care,Walk-In,Cardiology,83,152.39,58,68833.1
+2025-01-18,Downtown Main,Follow-Up,Family Medicine,51,137.73,7,52201.33
+2025-01-21,Westgate Urgent,Follow-Up,Orthopedics,10,61.75,10,39917.88
+2024-01-14,Westgate Urgent,Follow-Up,Dermatology,126,85.82,21,94788.49
+2024-01-28,Eastview Pediatrics,Procedure,Orthopedics,166,56.89,50,38550.79
+2024-08-25,Riverside Family Care,Procedure,Pediatrics,104,216.05,49,83224.99
+2024-05-26,Lakeshore Specialty,Procedure,Pediatrics,54,31.34,4,63795.08
+2024-05-30,Westgate Urgent,Follow-Up,Dermatology,8,129.68,13,54345.69
+2025-02-01,Lakeshore Specialty,Follow-Up,Orthopedics,159,197.01,30,62238.38
+2024-03-15,Downtown Main,Telehealth,Orthopedics,71,69.01,15,74313.97
+2025-02-20,Riverside Family Care,Procedure,Internal Medicine,37,177.84,9,36787.66
+2025-03-13,Northside Outpatient,Procedure,Pediatrics,94,227.3,55,76953.67
+2024-10-09,Downtown Main,Walk-In,Internal Medicine,119,80.96,34,4348.92
+2025-02-11,Eastview Pediatrics,Telehealth,Internal Medicine,51,17.34,35,64244.4
+2024-12-17,Downtown Main,Walk-In,Family Medicine,168,169.54,33,53382.34
+2024-04-18,Eastview Pediatrics,Follow-Up,Cardiology,168,216.98,57,68684.53
+2025-02-15,Eastview Pediatrics,Telehealth,Family Medicine,24,200.52,44,62541.75
+2024-12-28,Riverside Family Care,Walk-In,Family Medicine,38,111.33,42,79973.58
+2025-04-02,Downtown Main,Walk-In,Dermatology,94,165.15,7,67416.73
+2025-04-07,Northside Outpatient,Procedure,Orthopedics,105,186.2,39,93340.67
+2024-03-01,Eastview Pediatrics,Walk-In,Cardiology,67,182.89,32,94010.6
+2024-08-16,Westgate Urgent,Procedure,Family Medicine,150,169.87,11,25331.31
+2024-05-15,Downtown Main,Walk-In,Pediatrics,141,35.38,20,55118.15
+2024-04-11,Riverside Family Care,Walk-In,Pediatrics,133,154.94,57,25501.51
+2025-06-22,Eastview Pediatrics,Walk-In,Family Medicine,131,200.6,27,9753.49
+2024-05-04,Westgate Urgent,Procedure,Cardiology,2,201.73,39,35261.86
+2024-04-01,Westgate Urgent,New Patient,Internal Medicine,111,157.83,20,10467.08
+2024-08-10,Eastview Pediatrics,Telehealth,Family Medicine,59,113.12,26,36583.5
+2025-03-23,Lakeshore Specialty,Procedure,Dermatology,33,113.63,52,26173.79
+2024-05-14,Lakeshore Specialty,Follow-Up,Pediatrics,72,171.05,24,6178.49
+2024-09-19,Downtown Main,New Patient,Family Medicine,103,59.96,12,45628.89
+2024-03-07,Lakeshore Specialty,Follow-Up,Cardiology,29,193.31,54,44231.34
+2025-06-11,Lakeshore Specialty,Follow-Up,Orthopedics,134,22.03,27,22988.2
+2024-09-29,Riverside Family Care,Walk-In,Internal Medicine,139,138.97,51,49621.31
+2024-08-29,Riverside Family Care,New Patient,Family Medicine,107,156.22,27,21024.74
+2024-01-26,Lakeshore Specialty,Procedure,Cardiology,47,89.77,2,28002.52
+2025-05-11,Downtown Main,Telehealth,Orthopedics,130,97.74,18,9403.58
+2024-05-20,Lakeshore Specialty,Follow-Up,Dermatology,122,164.32,43,57104.04
+2024-02-29,Westgate Urgent,New Patient,Dermatology,165,117.63,57,83285.77
+2025-03-26,Lakeshore Specialty,Follow-Up,Family Medicine,100,148.6,33,52337.8
+2024-09-21,Riverside Family Care,New Patient,Pediatrics,61,120.44,56,92896.12
+2024-03-11,Northside Outpatient,Walk-In,Dermatology,9,56.82,3,9281.12
+2024-03-10,Eastview Pediatrics,New Patient,Internal Medicine,134,138.17,56,39046.47
+2025-05-24,Northside Outpatient,Follow-Up,Internal Medicine,73,129.61,42,25098.46

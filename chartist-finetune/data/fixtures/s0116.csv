@@ -1,0 +1,241 @@
+snapshotDate,propertyType,cityZone,tenureType,monthlyRentAmount,purchasePriceAmount,grossYieldPercent,vacancyDaysCount
+2025-01-22,Detached,University District,Leasehold,856.66,1154806.21,11.4,161
+2025-06-22,Studio,Industrial Fringe,Shared Ownership,6494.52,1321954.53,4.7,107
+2024-12-19,Detached,University District,Leasehold,8983.59,812748.95,9.18,43
+2025-04-06,Studio,Suburban,Freehold,4281.28,1589682.65,4.34,136
+2025-05-18,Terraced,University District,Freehold,9187.19,104693.54,6.72,159
+2024-04-27,Detached,Waterfront,Freehold,6936.39,2165472.94,1.92,35
+2025-06-15,OneBedroom,Waterfront,Shared Ownership,877.64,1028960.73,8.12,162
+2025-06-13,Townhouse,University District,Build to Rent,1272.29,296225.82,9.7,39
+2025-01-08,Detached,Industrial Fringe,Build to Rent,3936.01,1082836.74,7.24,4
+2024-08-08,Studio,University District,Leasehold,1692.39,1043729.07,2.59,5
+2025-03-27,OneBedroom,CityCentre,Leasehold,3982.37,1786427.06,13.94,67
+2025-05-22,Townhouse,University District,Build to Rent,1865.99,990582.09,3.8,85
+2024-10-23,Terraced,University District,Freehold,1243.17,539773.71,8.33,167
+2024-04-30,OneBedroom,Uptown,Freehold,1953.09,2405869.88,3.8,177
+2024-01-26,Terraced,Industrial Fringe,Shared Ownership,9149.2,2451198.59,10.23,70
+2024-06-13,OneBedroom,University District,Build to Rent,4953.05,1240308.0,5.44,101
+2024-05-26,TwoBedroom,Uptown,Freehold,8345.03,1560349.93,6.23,121
+2025-05-29,ThreeBedroom,Industrial Fringe,Leasehold,3770.78,926500.89,8.68,95
+2024-10-31,TwoBedroom,CityCentre,Leasehold,8856.19,1156893.33,6.64,132
+2024-03-19,TwoBedroom,Suburban,Freehold,6531.2,598378.69,2.65,56
+2024-10-10,Townhouse,Uptown,Freehold,7024.12,1145532.77,10.46,84
+2024-10-06,TwoBedroom,Industrial Fringe,Leasehold,6778.53,1904392.61,6.83,97
+2025-01-30,OneBedroom,University District,Build to Rent,2383.69,2052890.14,3.43,175
+2024-07-13,Terraced,Industrial Fringe,Freehold,8229.19,2275166.78,11.98,109
+2025-02-18,OneBedroom,CityCentre,Shared Ownership,3766.54,1834328.14,3.61,158
+2025-04-10,TwoBedroom,CityCentre,Freehold,975.87,1005186.55,12.47,165
+2025-04-14,TwoBedroom,Uptown,Freehold,2607.48,1973335.19,9.1,86
+2024-02-12,Terraced,CityCentre,Leasehold,7184.26,716482.83,11.12,150
+2024-04-24,TwoBedroom,Suburban,Shared Ownership,7208.21,644538.09,10.14,115
+2024-02-26,Townhouse,Uptown,Build to Rent,2187.56,975744.05,13.84,32
+2025-03-06,Detached,Industrial Fringe,Freehold,5114.11,1245922.8,13.97,9
+2024-09-24,OneBedroom,Waterfront,Leasehold,9463.37,2033565.87,13.0,64
+2024-03-23,TwoBedroom,University District,Leasehold,8211.22,1766435.21,2.56,85
+2025-02-14,ThreeBedroom,Uptown,Shared Ownership,516.45,196981.93,13.54,110
+2025-02-11,ThreeBedroom,University District,Leasehold,6836.24,432475.85,13.59,92
+2024-03-15,Townhouse,University District,Leasehold,5252.03,2301555.06,10.37,74
+2024-05-18,Studio,University District,Build to Rent,4055.85,297270.51,4.1,161
+2024-11-22,Townhouse,Industrial Fringe,Leasehold,5356.59,1159225.32,8.59,95
+2024-08-26,Detached,Industrial Fringe,Build to Rent,928.18,2322171.65,12.26,26
+2024-08-08,ThreeBedroom,Industrial Fringe,Leasehold,4109.07,1214448.3,12.16,149
+2025-01-25,Detached,University District,Build to Rent,6211.65,708400.77,4.25,154
+2025-02-01,Detached,CityCentre,Shared Ownership,2467.46,1396076.5,10.71,0
+2025-02-11,TwoBedroom,Uptown,Leasehold,9489.84,1167060.58,5.85,113
+2024-09-04,Terraced,Uptown,Freehold,7528.52,242268.41,8.59,77
+2025-02-11,Terraced,Waterfront,Shared Ownership,7891.6,1298458.04,4.12,153
+2024-05-21,ThreeBedroom,CityCentre,Shared Ownership,1030.21,399806.54,4.13,7
+2024-11-15,Townhouse,University District,Shared Ownership,8632.12,400407.49,9.13,18
+2024-10-01,Detached,Uptown,Build to Rent,2949.19,1638973.24,7.29,87
+2025-01-22,OneBedroom,CityCentre,Shared Ownership,2151.09,1140592.15,10.38,28
+2025-03-06,Detached,University District,Shared Ownership,1374.58,411583.44,7.92,49
+2024-06-28,OneBedroom,Waterfront,Freehold,8244.76,100435.09,5.96,74
+2024-06-23,Detached,Industrial Fringe,Build to Rent,1742.37,705222.13,5.37,125
+2024-04-14,TwoBedroom,Waterfront,Freehold,4978.55,1215399.95,13.31,75
+2025-01-23,Detached,CityCentre,Freehold,8174.24,1332963.56,3.38,120
+2025-02-20,OneBedroom,Suburban,Build to Rent,9233.49,1691066.52,3.97,156
+2024-12-29,Studio,Industrial Fringe,Shared Ownership,8997.72,2449065.1,4.29,69
+2024-08-03,Townhouse,Uptown,Shared Ownership,4045.13,743619.41,13.86,117
+2024-08-10,ThreeBedroom,Uptown,Build to Rent,2382.93,704391.7,8.24,137
+2025-06-12,TwoBedroom,University District,Shared Ownership,1308.42,2311718.81,12.29,6
+2024-11-26,Terraced,Industrial Fringe,Leasehold,6464.58,514239.68,13.76,4
+2024-04-15,OneBedroom,Waterfront,Shared Ownership,6052.75,637448.23,2.47,83
+2024-03-20,Townhouse,CityCentre,Leasehold,7357.36,1207245.56,5.15,127
+2025-02-04,Detached,Uptown,Shared Ownership,8116.78,1001127.2,7.03,45
+2025-03-07,OneBedroom,Uptown,Freehold,4337.62,376647.5,9.72,1
+2025-03-07,Studio,Suburban,Build to Rent,7677.61,2276556.81,5.8,135
+2024-01-22,Townhouse,Industrial Fringe,Shared Ownership,7330.72,1457436.13,8.31,43
+2024-02-21,TwoBedroom,CityCentre,Freehold,3609.59,87832.84,2.67,117
+2024-05-22,Detached,Industrial Fringe,Freehold,775.17,438058.11,11.94,66
+2025-03-24,Townhouse,CityCentre,Build to Rent,7529.17,2222692.03,10.41,75
+2024-11-03,Detached,Waterfront,Shared Ownership,5058.07,796144.88,10.24,174
+2024-05-01,Terraced,Uptown,Leasehold,4116.05,432028.32,8.06,157
+2024-03-24,Studio,Waterfront,Freehold,4792.01,1975488.48,6.2,69
+2024-05-06,TwoBedroom,Uptown,Freehold,514.49,2048182.45,12.14,33
+2024-03-28,ThreeBedroom,University District,Build to Rent,6794.81,2309442.73,10.75,121
+2024-12-24,TwoBedroom,CityCentre,Shared Ownership,2483.76,1602511.96,6.53,151
+2025-02-15,TwoBedroom,Waterfront,Build to Rent,3049.76,1113906.07,9.22,76
+2025-02-21,Townhouse,Waterfront,Shared Ownership,4893.3,1479189.73,8.22,45
+2024-09-25,OneBedroom,Suburban,Shared Ownership,5329.28,1442403.97,11.58,33
+2025-04-27,TwoBedroom,Suburban,Shared Ownership,7593.81,1920018.8,5.81,70
+2024-02-27,Townhouse,Industrial Fringe,Shared Ownership,954.8,308846.04,8.76,17
+2024-04-28,ThreeBedroom,University District,Freehold,7008.76,865577.89,5.3,8
+2024-10-18,OneBedroom,Uptown,Leasehold,7883.84,2369620.08,3.82,170
+2024-09-15,OneBedroom,CityCentre,Leasehold,5066.27,2264847.05,3.67,51
+2025-01-26,Detached,Industrial Fringe,Shared Ownership,1854.5,1378413.83,2.69,15
+2024-09-28,Terraced,Suburban,Freehold,4510.54,2406656.03,11.37,130
+2024-04-19,Terraced,Waterfront,Freehold,3518.92,2171848.98,2.61,166
+2024-03-29,Detached,CityCentre,Build to Rent,5093.47,1132054.42,8.61,94
+2025-03-29,TwoBedroom,Suburban,Shared Ownership,5597.76,2475574.05,12.3,155
+2024-06-02,Studio,CityCentre,Build to Rent,574.38,352976.74,2.03,56
+2024-01-12,OneBedroom,Suburban,Leasehold,9404.97,362854.47,11.2,11
+2024-05-11,TwoBedroom,Suburban,Leasehold,4547.63,476814.42,12.64,95
+2024-09-03,OneBedroom,Uptown,Shared Ownership,5449.19,1468385.39,13.86,130
+2025-01-04,ThreeBedroom,Waterfront,Build to Rent,1884.97,1408182.73,13.72,28
+2024-11-05,Townhouse,Industrial Fringe,Build to Rent,6150.89,2053409.98,13.3,15
+2025-04-10,TwoBedroom,Industrial Fringe,Freehold,7201.63,1762413.84,6.38,62
+2025-05-02,Terraced,Suburban,Build to Rent,7631.77,541429.33,8.32,41
+2025-04-29,OneBedroom,CityCentre,Build to Rent,3535.61,584276.07,13.2,68
+2024-03-07,Terraced,CityCentre,Build to Rent,7003.71,1658928.82,8.3,59
+2024-11-05,ThreeBedroom,Suburban,Shared Ownership,8549.63,816043.61,5.39,164
+2024-09-05,Terraced,Uptown,Leasehold,8695.24,1724327.37,6.87,121
+2024-06-21,OneBedroom,University District,Shared Ownership,2792.44,2475236.81,12.8,154
+2025-02-05,Townhouse,Suburban,Freehold,7421.04,1568497.87,7.29,97
+2024-06-23,OneBedroom,University District,Shared Ownership,656.33,317546.16,5.92,50
+2024-03-01,Detached,Industrial Fringe,Shared Ownership,9124.81,1444807.21,8.03,46
+2024-01-02,Townhouse,CityCentre,Freehold,5873.25,1007441.34,11.96,176
+2024-02-18,OneBedroom,University District,Leasehold,4473.37,2115048.32,11.74,150
+2024-09-08,TwoBedroom,University District,Freehold,9247.11,2351234.45,8.73,177
+2024-11-05,OneBedroom,Uptown,Leasehold,7685.33,2027118.9,3.46,95
+2024-05-25,Detached,Suburban,Shared Ownership,1324.34,568772.08,8.49,164
+2024-09-13,Terraced,CityCentre,Shared Ownership,6765.95,696614.3,3.83,67
+2025-02-06,OneBedroom,University District,Freehold,5884.77,893618.47,4.35,0
+2024-09-12,OneBedroom,Suburban,Leasehold,5367.05,1929478.73,3.98,76
+2025-01-10,TwoBedroom,University District,Build to Rent,3764.35,2169086.23,8.05,85
+2025-02-22,Townhouse,Industrial Fringe,Freehold,3232.8,411886.44,3.75,82
+2024-04-03,Terraced,Uptown,Freehold,5603.44,1994930.68,1.95,166
+2024-12-26,Townhouse,Uptown,Shared Ownership,5559.66,1411020.72,3.43,149
+2024-05-01,Studio,CityCentre,Build to Rent,4473.4,1006582.77,5.15,2
+2024-10-04,TwoBedroom,CityCentre,Shared Ownership,9157.85,1526566.41,6.54,76
+2024-10-29,OneBedroom,Suburban,Shared Ownership,4845.2,824054.29,1.73,172
+2024-11-23,TwoBedroom,Uptown,Leasehold,8732.11,746103.93,2.65,21
+2024-09-05,Townhouse,Industrial Fringe,Leasehold,3893.51,1155860.96,11.62,69
+2024-03-10,ThreeBedroom,CityCentre,Freehold,8734.76,1145129.05,12.89,112
+2024-11-20,Townhouse,Uptown,Shared Ownership,4998.65,2253698.78,12.52,176
+2024-02-26,Detached,Uptown,Shared Ownership,7605.35,177449.86,7.77,16
+2024-10-18,OneBedroom,Uptown,Freehold,8027.73,1010041.35,3.44,174
+2025-05-16,OneBedroom,CityCentre,Build to Rent,3366.42,2487699.4,5.11,29
+2024-08-26,Studio,Waterfront,Shared Ownership,7436.88,2004682.36,8.95,44
+2024-09-17,ThreeBedroom,Suburban,Leasehold,2946.0,97790.16,8.18,75
+2024-04-15,Townhouse,Uptown,Shared Ownership,1788.21,1535346.78,13.45,11
+2024-11-22,OneBedroom,University District,Build to Rent,5873.47,2404511.52,7.95,80
+2024-07-20,TwoBedroom,University District,Build to Rent,3951.14,1085021.39,6.84,17
+2024-04-30,Studio,Uptown,Leasehold,4028.23,2459664.59,5.42,142
+2024-09-26,OneBedroom,Suburban,Leasehold,4616.57,991733.31,7.25,51
+2024-07-30,Studio,Waterfront,Shared Ownership,1074.41,1217388.69,12.66,82
+2024-09-11,Townhouse,Waterfront,Shared Ownership,5210.78,1990122.02,13.89,149
+2024-06-02,Studio,Uptown,Build to Rent,6802.3,1804345.24,9.5,169
+2025-01-21,Townhouse,Suburban,Leasehold,7575.72,1746117.18,6.06,23
+2024-05-08,TwoBedroom,Waterfront,Freehold,2724.92,1854314.79,13.63,6
+2024-02-21,Studio,Uptown,Leasehold,7984.14,1850476.25,11.16,135
+2024-01-21,Terraced,Suburban,Build to Rent,8626.93,957221.05,12.74,5
+2024-11-25,TwoBedroom,Uptown,Leasehold,3594.83,178957.17,2.16,140
+2025-03-29,Studio,University District,Freehold,7754.91,695085.4,12.93,96
+2024-09-28,Townhouse,Suburban,Leasehold,9130.09,2267402.91,5.41,137
+2025-04-22,Terraced,Waterfront,Shared Ownership,8562.65,444725.84,13.8,12
+2024-11-15,Studio,CityCentre,Shared Ownership,3382.54,2266489.37,13.61,104
+2024-08-01,Studio,Uptown,Shared Ownership,4889.78,788937.86,9.59,130
+2024-01-06,ThreeBedroom,Waterfront,Shared Ownership,5733.23,2271560.17,13.26,126
+2025-04-19,OneBedroom,CityCentre,Build to Rent,3881.48,2394385.88,7.33,68
+2025-04-27,Townhouse,Uptown,Shared Ownership,1217.87,1735489.68,12.2,92
+2024-03-04,TwoBedroom,Industrial Fringe,Freehold,3117.83,2078898.12,4.23,35
+2025-02-02,Terraced,University District,Leasehold,4004.91,1807226.46,4.61,68
+2024-08-21,Terraced,Waterfront,Shared Ownership,4881.88,1842271.04,3.33,2
+2024-08-14,TwoBedroom,Industrial Fringe,Shared Ownership,1926.57,2043421.9,3.51,174
+2024-07-22,Detached,CityCentre,Build to Rent,5614.41,863184.08,8.54,178
+2024-01-20,OneBedroom,CityCentre,Leasehold,1750.51,1076043.33,2.86,20
+2024-08-16,Terraced,Industrial Fringe,Build to Rent,6846.34,1082075.27,8.03,7
+2024-08-29,OneBedroom,CityCentre,Build to Rent,2308.46,1714877.14,9.44,18
+2025-05-06,Studio,Waterfront,Freehold,1124.93,390219.21,9.2,150
+2024-10-01,OneBedroom,Uptown,Freehold,7317.7,235158.58,12.25,6
+2024-08-09,OneBedroom,CityCentre,Build to Rent,6529.51,558421.25,6.98,139
+2025-04-24,Studio,University District,Build to Rent,5534.98,499093.74,12.9,120
+2024-02-21,Detached,CityCentre,Shared Ownership,4462.11,786409.59,1.66,176
+2024-02-26,OneBedroom,Industrial Fringe,Build to Rent,1135.32,2096641.98,9.66,96
+2024-12-02,Studio,University District,Freehold,2388.56,2157258.27,9.11,77
+2024-01-01,Detached,Industrial Fringe,Build to Rent,2588.25,820867.64,6.91,163
+2024-11-17,Studio,CityCentre,Shared Ownership,4904.49,2348332.45,3.64,11
+2024-07-17,TwoBedroom,University District,Shared Ownership,1008.16,1106960.74,1.8,42
+2024-07-22,TwoBedroom,University District,Leasehold,9271.86,565013.94,3.86,8
+2024-04-08,Studio,CityCentre,Shared Ownership,8657.75,2400623.74,9.69,159
+2025-03-18,Studio,Uptown,Freehold,5174.44,682928.5,8.76,41
+2024-01-06,Studio,CityCentre,Build to Rent,1365.59,2329009.92,5.34,92
+2024-09-13,Studio,CityCentre,Build to Rent,556.95,1750597.88,7.57,66
+2024-03-01,Terraced,Uptown,Leasehold,3859.74,1495875.36,1.79,10
+2024-08-08,TwoBedroom,University District,Build to Rent,5271.78,2471469.56,8.2,125
+2024-07-20,Studio,Waterfront,Build to Rent,9268.74,789087.76,9.31,53
+2025-04-24,Studio,Uptown,Build to Rent,8900.62,2088981.31,10.15,126
+2025-02-16,Detached,Industrial Fringe,Shared Ownership,4286.08,504501.44,9.21,19
+2024-08-01,TwoBedroom,Uptown,Shared Ownership,5145.94,104488.49,9.0,25
+2024-02-22,OneBedroom,University District,Shared Ownership,4861.3,1923704.41,4.06,82
+2025-02-24,TwoBedroom,Suburban,Leasehold,1940.82,1195808.46,3.28,3
+2024-03-05,Detached,University District,Shared Ownership,7494.35,829809.1,8.62,11
+2024-11-29,TwoBedroom,Suburban,Leasehold,8998.23,2101807.15,10.47,82
+2025-06-06,Studio,University District,Leasehold,4709.17,453934.34,5.01,58
+2024-10-10,Terraced,Waterfront,Shared Ownership,702.03,1084889.79,7.21,171
+2025-03-01,Detached,Uptown,Leasehold,3908.74,1596608.47,11.22,1
+2025-06-09,OneBedroom,Uptown,Shared Ownership,3448.42,1701673.17,13.31,140
+2025-01-02,Terraced,Uptown,Build to Rent,5141.36,2406549.27,5.57,129
+2025-05-22,TwoBedroom,Suburban,Build to Rent,6400.97,532632.34,4.09,161
+2025-02-08,Terraced,Waterfront,Build to Rent,3064.49,1483321.42,12.38,96
+2024-01-09,Terraced,University District,Leasehold,7010.36,2027915.62,9.28,77
+2024-02-14,OneBedroom,Waterfront,Freehold,7299.26,1941961.99,5.56,132
+2024-12-01,ThreeBedroom,CityCentre,Shared Ownership,2419.33,649500.18,10.91,45
+2024-06-24,Studio,Industrial Fringe,Build to Rent,6041.38,471431.69,12.35,105
+2024-03-16,TwoBedroom,Industrial Fringe,Freehold,4817.5,1097837.79,7.52,120
+2025-05-28,TwoBedroom,CityCentre,Leasehold,1087.22,2497132.02,13.84,178
+2025-05-27,Detached,Suburban,Leasehold,5273.0,2322459.29,7.28,177
+2024-11-07,ThreeBedroom,Industrial Fringe,Leasehold,3358.66,1915094.14,13.72,20
+2024-07-05,TwoBedroom,Waterfront,Leasehold,1943.28,1892021.84,9.0,122
+2024-03-14,ThreeBedroom,University District,Freehold,4781.22,2080292.87,9.4,107
+2025-03-11,TwoBedroom,Suburban,Leasehold,6525.5,1947635.11,1.63,38
+2024-06-01,TwoBedroom,Industrial Fringe,Leasehold,4687.17,238831.64,11.22,154
+2024-07-28,Townhouse,University District,Freehold,2931.17,799001.37,5.3,34
+2024-02-06,Terraced,Suburban,Build to Rent,3534.2,853967.79,9.29,33
+2024-06-29,Terraced,Uptown,Freehold,7481.27,1360331.08,5.99,119
+2024-11-27,TwoBedroom,Uptown,Build to Rent,7053.03,1787357.12,2.65,91
+2025-03-16,ThreeBedroom,CityCentre,Build to Rent,8061.08,612108.0,7.71,140
+2025-05-20,ThreeBedroom,CityCentre,Build to Rent,5719.07,1352006.03,12.09,97
+2024-06-12,Detached,Industrial Fringe,Leasehold,4209.09,2083940.46,3.78,130
+2024-11-18,Detached,CityCentre,Build to Rent,6675.26,1648560.04,9.22,99
+2024-10-17,OneBedroom,CityCentre,Freehold,4440.32,1158924.4,1.77,78
+2025-02-19,OneBedroom,Industrial Fringe,Shared Ownership,2040.88,1618272.77,9.89,146
+2025-05-09,Studio,Waterfront,Build to Rent,3443.02,1279828.48,3.13,123
+2024-11-21,ThreeBedroom,Waterfront,Build to Rent,6911.82,1666384.63,2.5,41
+2025-06-18,Detached,Suburban,Leasehold,3368.9,1976645.24,2.3,133
+2025-02-16,Detached,Industrial Fringe,Build to Rent,9480.55,1053704.94,10.64,34
+2024-11-25,Townhouse,University District,Build to Rent,9426.17,2094901.14,7.31,175
+2024-08-23,ThreeBedroom,Industrial Fringe,Build to Rent,1303.47,101640.37,3.63,138
+2025-04-27,TwoBedroom,Suburban,Build to Rent,5598.26,1692911.29,6.2,179
+2024-10-26,OneBedroom,University District,Build to Rent,7174.37,1188215.76,4.82,124
+2025-04-08,Detached,Waterfront,Build to Rent,4261.88,276076.82,12.34,48
+2025-01-23,Detached,University District,Freehold,4537.43,438024.56,6.37,51
+2024-03-16,Townhouse,Uptown,Shared Ownership,9139.03,1680208.06,13.63,55
+2024-08-03,Terraced,University District,Build to Rent,2300.93,1702779.23,5.81,95
+2024-02-10,Detached,Uptown,Build to Rent,7255.8,513416.25,13.86,163
+2024-09-28,Terraced,Uptown,Leasehold,5035.86,776242.48,4.94,116
+2024-10-03,Terraced,Industrial Fringe,Build to Rent,3488.13,1412238.55,7.57,26
+2024-02-17,OneBedroom,University District,Freehold,5201.18,702977.59,10.71,69
+2024-12-26,TwoBedroom,Suburban,Freehold,8824.26,1576959.07,9.15,35
+2024-10-19,Studio,University District,Shared Ownership,7807.57,228007.57,11.56,62
+2025-04-13,Detached,Waterfront,Shared Ownership,9105.16,2266158.28,5.87,103
+2024-01-05,Townhouse,Industrial Fringe,Leasehold,1477.72,1739747.22,5.8,116
+2024-02-15,ThreeBedroom,Suburban,Leasehold,7937.96,2243808.47,3.17,125
+2024-08-02,Studio,Uptown,Freehold,8914.28,1005139.18,13.19,13
+2024-05-09,OneBedroom,University District,Leasehold,9004.15,472755.84,13.78,96
+2024-10-02,Terraced,Uptown,Freehold,3887.53,330496.32,9.09,45
+2024-12-06,Detached,Uptown,Leasehold,6768.08,1049955.55,2.88,146
+2024-10-14,Detached,Industrial Fringe,Freehold,2166.23,2053884.7,2.74,137
+2025-01-23,Detached,Industrial Fringe,Shared Ownership,7717.8,1054800.73,4.34,56
+2024-02-12,Townhouse,Suburban,Shared Ownership,6685.67,423274.31,10.01,26
+2024-09-17,Detached,Waterfront,Build to Rent,4944.67,140151.39,4.11,111

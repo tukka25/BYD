@@ -1,0 +1,241 @@
+Incident Date,Road Type,Weather Condition,Severity Level,Vehicles Involved,Injury Count,Response Time Minutes
+2025-01-30,Rural Road,Clear,Serious,6,16,5.47
+2024-08-14,Local Street,Clear,Minor,10,16,60.11
+2024-04-13,Highway,Clear,Moderate,2,16,69.18
+2025-05-09,Arterial Road,Sleet,Moderate,10,20,33.92
+2024-02-17,Rural Road,Clear,Fatal,5,17,144.94
+2024-10-06,Local Street,Sleet,Serious,7,19,83.4
+2024-04-10,Rural Road,Snow,Minor,9,13,57.66
+2025-03-28,Expressway,Fog,Minor,11,19,165.68
+2024-01-19,Rural Road,Snow,Fatal,3,9,78.61
+2024-07-20,Local Street,Clear,Minor,2,16,146.2
+2024-08-15,Local Street,Fog,Serious,4,18,89.99
+2024-11-03,Arterial Road,Clear,Serious,2,18,14.52
+2024-07-02,Rural Road,Snow,Fatal,12,15,154.32
+2024-07-24,Local Street,Fog,Minor,11,3,78.84
+2024-03-10,Expressway,Sleet,Serious,10,0,142.47
+2024-06-24,Highway,Fog,Minor,2,2,50.18
+2024-12-18,Rural Road,Sleet,Fatal,2,2,92.39
+2024-11-09,Expressway,Fog,Moderate,7,4,45.11
+2024-10-01,Rural Road,High Winds,Fatal,5,11,75.83
+2024-12-29,Highway,High Winds,Fatal,5,4,91.28
+2024-08-06,Arterial Road,Sleet,Fatal,11,18,76.65
+2025-04-04,Local Street,High Winds,Serious,3,5,125.52
+2025-03-21,Expressway,High Winds,Fatal,7,6,32.14
+2024-05-14,Expressway,Fog,Minor,8,12,122.6
+2025-05-09,Highway,Rain,Moderate,5,5,27.18
+2025-01-20,Local Street,High Winds,Minor,6,10,155.44
+2024-02-27,Rural Road,Fog,Serious,11,7,156.72
+2025-01-18,Rural Road,Fog,Minor,1,4,114.63
+2024-12-05,Arterial Road,High Winds,Moderate,11,16,49.34
+2025-04-14,Rural Road,Snow,Moderate,8,19,44.14
+2024-06-20,Rural Road,Snow,Fatal,5,10,168.8
+2024-05-06,Highway,Sleet,Moderate,11,19,142.45
+2024-04-16,Arterial Road,High Winds,Minor,5,3,80.18
+2025-05-15,Local Street,Fog,Minor,4,8,133.35
+2024-01-06,Highway,Snow,Fatal,3,1,105.83
+2024-03-02,Local Street,Sleet,Serious,2,5,134.55
+2024-03-15,Rural Road,High Winds,Moderate,8,3,99.45
+2024-08-21,Local Street,Snow,Fatal,5,15,83.41
+2024-06-09,Expressway,Clear,Moderate,12,4,162.72
+2025-05-19,Expressway,Fog,Serious,5,0,30.23
+2024-02-20,Local Street,Sleet,Minor,1,8,130.07
+2024-10-06,Arterial Road,Rain,Moderate,3,13,142.11
+2024-03-22,Arterial Road,Rain,Fatal,2,19,77.67
+2024-06-06,Rural Road,Clear,Moderate,8,17,82.53
+2025-03-21,Highway,Sleet,Fatal,10,3,133.69
+2024-09-27,Rural Road,Snow,Moderate,5,10,65.2
+2024-02-20,Local Street,Snow,Serious,2,6,171.68
+2024-09-16,Expressway,Sleet,Moderate,6,0,105.53
+2024-04-22,Arterial Road,Clear,Moderate,2,3,71.82
+2024-12-05,Expressway,Sleet,Serious,1,9,27.5
+2024-07-09,Highway,Rain,Moderate,4,19,155.13
+2024-09-14,Arterial Road,Fog,Moderate,9,0,64.66
+2025-04-26,Rural Road,Clear,Minor,5,18,78.75
+2025-05-01,Rural Road,High Winds,Serious,4,14,108.13
+2024-11-11,Rural Road,Fog,Moderate,2,8,61.54
+2024-08-07,Arterial Road,High Winds,Moderate,11,6,129.76
+2024-08-25,Rural Road,High Winds,Moderate,5,18,69.87
+2024-06-21,Expressway,High Winds,Serious,8,11,143.38
+2025-04-24,Rural Road,High Winds,Minor,2,10,29.95
+2025-04-25,Local Street,Fog,Serious,10,18,133.94
+2024-12-27,Rural Road,High Winds,Fatal,5,2,150.12
+2025-05-12,Arterial Road,Rain,Fatal,4,19,61.6
+2024-08-30,Local Street,Fog,Serious,6,18,123.95
+2024-09-12,Rural Road,Fog,Serious,7,18,175.42
+2024-05-03,Rural Road,Clear,Serious,9,15,170.42
+2025-03-24,Arterial Road,Fog,Moderate,9,3,55.93
+2025-02-13,Rural Road,Snow,Minor,2,16,12.97
+2024-05-13,Expressway,Sleet,Fatal,11,11,144.44
+2025-03-09,Arterial Road,Fog,Serious,9,8,30.33
+2024-10-18,Rural Road,High Winds,Minor,8,2,122.5
+2024-02-28,Arterial Road,Clear,Minor,1,12,82.65
+2025-02-25,Rural Road,Fog,Moderate,6,5,26.41
+2024-10-07,Arterial Road,Clear,Serious,10,3,40.51
+2025-03-21,Rural Road,Sleet,Fatal,4,9,132.9
+2025-01-17,Rural Road,Clear,Moderate,2,2,146.95
+2024-03-19,Highway,Clear,Minor,8,8,42.99
+2024-08-19,Highway,Clear,Serious,5,14,97.72
+2024-11-18,Local Street,Clear,Serious,6,4,30.46
+2025-03-17,Rural Road,Rain,Moderate,9,7,58.2
+2024-10-18,Local Street,High Winds,Fatal,2,17,153.39
+2024-07-08,Local Street,Clear,Fatal,4,15,158.5
+2024-10-12,Arterial Road,Sleet,Moderate,11,3,136.89
+2024-12-11,Rural Road,Rain,Serious,7,16,44.98
+2025-02-03,Arterial Road,Sleet,Fatal,10,17,6.1
+2024-01-30,Highway,Sleet,Serious,7,10,79.42
+2024-05-18,Highway,Sleet,Serious,8,4,149.05
+2024-05-19,Arterial Road,Sleet,Moderate,11,8,68.24
+2024-03-08,Rural Road,High Winds,Fatal,8,16,154.19
+2024-12-01,Arterial Road,Fog,Fatal,6,3,27.41
+2025-04-16,Expressway,Rain,Fatal,6,15,22.52
+2025-04-19,Expressway,Rain,Serious,2,13,15.24
+2024-11-14,Expressway,Rain,Minor,4,20,2.99
+2025-05-18,Local Street,High Winds,Serious,10,10,16.97
+2025-06-02,Arterial Road,Clear,Moderate,6,16,40.67
+2025-05-13,Arterial Road,Sleet,Fatal,4,17,21.52
+2024-01-17,Rural Road,Rain,Minor,2,14,109.98
+2024-06-05,Highway,Rain,Moderate,7,9,77.84
+2024-08-11,Expressway,Clear,Moderate,9,11,107.03
+2024-06-05,Highway,Sleet,Fatal,10,19,165.81
+2024-08-04,Highway,High Winds,Serious,10,13,41.91
+2024-04-10,Local Street,Rain,Moderate,4,6,71.75
+2025-04-14,Arterial Road,Fog,Serious,11,14,12.98
+2024-10-07,Rural Road,Snow,Fatal,8,16,163.19
+2024-06-15,Local Street,Fog,Minor,9,0,109.17
+2025-03-22,Local Street,Clear,Fatal,12,17,74.03
+2024-10-21,Expressway,High Winds,Serious,5,3,73.66
+2024-08-28,Local Street,Sleet,Serious,5,2,32.65
+2025-02-10,Rural Road,Snow,Serious,2,4,117.47
+2024-04-14,Local Street,Rain,Fatal,2,16,109.05
+2024-06-26,Rural Road,Sleet,Moderate,3,5,175.82
+2025-03-25,Local Street,Rain,Fatal,3,2,100.78
+2024-09-28,Rural Road,Fog,Serious,8,19,171.94
+2024-04-14,Local Street,Sleet,Moderate,7,13,139.31
+2024-07-10,Arterial Road,Clear,Moderate,5,16,125.03
+2024-07-03,Rural Road,Rain,Minor,12,1,134.8
+2024-09-02,Rural Road,Fog,Fatal,6,7,40.92
+2024-07-17,Local Street,High Winds,Serious,2,17,129.25
+2025-04-22,Local Street,Sleet,Minor,3,7,149.86
+2025-06-15,Arterial Road,Snow,Moderate,5,7,54.15
+2024-05-21,Expressway,Fog,Moderate,5,6,144.77
+2024-02-18,Local Street,Clear,Fatal,6,16,82.54
+2024-11-21,Expressway,Snow,Moderate,1,19,168.94
+2024-01-10,Highway,High Winds,Minor,7,14,148.12
+2025-05-30,Rural Road,High Winds,Minor,8,6,33.98
+2024-10-15,Rural Road,Clear,Minor,7,9,117.14
+2025-01-24,Arterial Road,Sleet,Moderate,4,3,169.44
+2024-12-26,Arterial Road,Sleet,Minor,11,9,164.81
+2025-04-20,Local Street,Snow,Minor,6,3,133.6
+2024-09-20,Local Street,Snow,Fatal,3,16,146.72
+2024-03-22,Rural Road,Snow,Fatal,10,10,53.9
+2024-01-02,Expressway,Clear,Fatal,5,6,53.06
+2025-01-04,Local Street,Fog,Serious,9,2,140.38
+2025-03-30,Expressway,Clear,Minor,9,19,87.88
+2024-09-21,Highway,Fog,Serious,11,17,152.76
+2025-02-08,Expressway,Clear,Moderate,4,12,64.44
+2024-07-30,Rural Road,Fog,Fatal,2,13,114.81
+2024-04-30,Expressway,Rain,Fatal,11,18,156.34
+2024-02-06,Rural Road,High Winds,Serious,10,11,83.79
+2024-08-11,Local Street,Clear,Serious,6,19,6.62
+2024-03-24,Rural Road,Sleet,Serious,8,17,105.49
+2024-10-28,Highway,Fog,Serious,11,3,58.56
+2024-02-08,Rural Road,Snow,Moderate,12,7,92.87
+2024-12-28,Local Street,Snow,Serious,6,5,71.2
+2025-03-04,Local Street,Clear,Serious,9,16,172.05
+2025-05-02,Local Street,High Winds,Minor,11,6,80.28
+2025-04-16,Local Street,Rain,Moderate,5,9,11.1
+2024-08-31,Arterial Road,Rain,Minor,8,9,84.53
+2024-10-27,Local Street,Snow,Serious,9,11,114.85
+2024-01-03,Highway,Snow,Minor,4,2,43.86
+2024-04-11,Local Street,Snow,Serious,7,17,176.61
+2025-05-30,Expressway,Snow,Moderate,10,5,124.97
+2024-01-25,Local Street,Clear,Moderate,4,6,25.28
+2024-08-16,Local Street,Clear,Moderate,2,12,76.91
+2024-11-21,Expressway,Fog,Serious,11,7,29.06
+2025-05-30,Local Street,Snow,Moderate,9,9,130.27
+2024-01-11,Highway,Fog,Fatal,3,17,135.51
+2024-03-28,Highway,Sleet,Serious,6,4,149.47
+2024-10-31,Arterial Road,Sleet,Minor,1,9,172.33
+2025-01-17,Expressway,Clear,Fatal,3,4,39.5
+2024-05-19,Highway,Sleet,Minor,9,17,104.94
+2024-09-19,Arterial Road,Clear,Minor,4,10,21.25
+2024-06-16,Arterial Road,Rain,Moderate,6,3,151.15
+2025-03-01,Expressway,Snow,Minor,2,11,103.53
+2024-08-07,Expressway,High Winds,Serious,6,4,55.69
+2025-06-02,Rural Road,Rain,Minor,9,18,82.18
+2025-05-12,Local Street,Sleet,Moderate,8,10,42.45
+2024-08-26,Rural Road,Sleet,Fatal,11,18,141.74
+2024-04-14,Highway,Snow,Minor,11,20,51.61
+2024-06-13,Arterial Road,Sleet,Moderate,10,2,175.55
+2024-01-24,Arterial Road,Clear,Fatal,4,13,40.83
+2024-11-03,Local Street,Fog,Fatal,2,13,39.75
+2025-04-23,Expressway,Fog,Fatal,8,16,9.05
+2025-03-08,Arterial Road,Rain,Serious,10,14,96.24
+2024-06-27,Local Street,Fog,Fatal,8,18,99.57
+2025-02-04,Arterial Road,High Winds,Fatal,9,18,30.44
+2025-04-13,Local Street,High Winds,Fatal,3,18,168.9
+2024-03-29,Arterial Road,Snow,Moderate,2,18,45.36
+2024-02-27,Arterial Road,High Winds,Serious,8,1,68.7
+2024-06-04,Expressway,Fog,Fatal,1,10,56.68
+2024-07-14,Rural Road,Clear,Serious,5,10,43.09
+2025-03-29,Expressway,Rain,Serious,11,19,63.66
+2025-01-29,Expressway,High Winds,Minor,11,18,142.08
+2024-07-30,Expressway,Sleet,Serious,2,18,117.09
+2024-11-16,Highway,High Winds,Moderate,2,8,169.32
+2025-03-20,Expressway,Snow,Fatal,7,12,39.36
+2024-05-04,Expressway,Fog,Fatal,9,11,153.62
+2024-05-19,Local Street,High Winds,Moderate,7,9,161.69
+2024-07-07,Local Street,Clear,Fatal,11,4,54.87
+2024-02-17,Rural Road,Fog,Moderate,4,7,36.67
+2024-11-26,Highway,High Winds,Serious,11,20,155.52
+2024-03-01,Rural Road,Rain,Serious,2,8,22.99
+2025-06-02,Rural Road,Clear,Moderate,5,17,79.21
+2024-09-22,Rural Road,Fog,Minor,12,2,18.7
+2025-04-15,Local Street,Sleet,Minor,6,16,177.11
+2025-01-27,Rural Road,High Winds,Serious,9,2,19.92
+2024-08-30,Rural Road,High Winds,Serious,7,20,97.66
+2024-10-12,Arterial Road,Sleet,Minor,10,4,133.75
+2024-02-14,Rural Road,Snow,Serious,7,16,158.54
+2024-08-19,Highway,Sleet,Minor,10,15,60.05
+2024-10-02,Local Street,Clear,Fatal,1,8,37.67
+2025-05-17,Rural Road,Clear,Serious,8,7,52.47
+2024-05-06,Expressway,Sleet,Serious,11,10,37.34
+2024-08-16,Arterial Road,Fog,Minor,9,17,9.56
+2024-09-24,Rural Road,High Winds,Serious,3,8,43.1
+2024-09-18,Local Street,Fog,Minor,1,6,59.67
+2024-10-21,Expressway,Sleet,Fatal,10,15,53.98
+2025-05-14,Rural Road,High Winds,Serious,3,10,55.82
+2024-10-11,Highway,Rain,Minor,7,13,59.08
+2024-06-14,Local Street,Rain,Fatal,11,6,171.3
+2024-05-30,Highway,Clear,Serious,7,16,50.48
+2025-03-22,Arterial Road,Snow,Fatal,4,11,144.94
+2024-03-27,Rural Road,Clear,Serious,7,3,17.4
+2025-05-15,Local Street,Snow,Fatal,8,3,71.7
+2024-06-13,Arterial Road,Rain,Fatal,4,10,48.04
+2024-06-08,Highway,Sleet,Serious,10,17,158.89
+2025-02-08,Expressway,Sleet,Minor,8,9,78.55
+2024-08-18,Rural Road,Fog,Fatal,8,1,99.71
+2025-03-07,Expressway,Clear,Moderate,5,6,98.66
+2025-02-06,Local Street,High Winds,Moderate,6,3,120.52
+2024-03-16,Highway,High Winds,Minor,5,17,140.1
+2024-09-06,Highway,Fog,Moderate,10,17,110.97
+2025-02-03,Highway,Fog,Minor,5,2,59.47
+2024-03-23,Arterial Road,Fog,Minor,1,13,14.29
+2024-12-17,Expressway,Rain,Minor,4,2,108.2
+2024-07-16,Highway,Snow,Moderate,6,15,161.84
+2024-03-19,Expressway,Fog,Fatal,3,2,7.87
+2025-01-01,Rural Road,Rain,Moderate,4,9,123.56
+2025-02-15,Rural Road,Rain,Fatal,4,8,100.57
+2025-01-29,Highway,Sleet,Moderate,4,12,46.52
+2024-02-10,Rural Road,Snow,Moderate,2,12,110.27
+2024-11-17,Rural Road,High Winds,Serious,11,18,84.84
+2024-04-01,Local Street,Sleet,Serious,11,8,176.75
+2025-03-28,Arterial Road,Fog,Serious,4,3,72.51
+2024-06-12,Local Street,Sleet,Fatal,11,11,150.19
+2024-12-28,Rural Road,High Winds,Moderate,5,1,154.63
+2024-05-22,Local Street,Rain,Fatal,2,7,147.62
+2024-10-11,Arterial Road,Fog,Moderate,5,3,175.38
+2024-01-27,Arterial Road,High Winds,Serious,9,18,120.85
+2025-02-04,Local Street,Clear,Serious,4,2,53.78
+2024-06-07,Expressway,Rain,Minor,8,9,88.18

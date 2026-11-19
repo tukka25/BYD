@@ -1,0 +1,241 @@
+stay_date,property_name,room_type,booking_channel,rooms_available,rooms_sold,average_daily_rate,total_revenue
+2024-03-12,Old Town Boutique,Family Room,Corporate Contract,45,229,104.06,424973.17
+2025-04-17,Downtown Grand Suites,Deluxe Suite,Online Travel Agency,410,249,245.82,79540.07
+2024-05-26,Airport Express Inn,Standard King,Group Booking,168,181,889.09,64289.88
+2024-03-26,Mountain Lodge,Standard King,Corporate Contract,316,45,497.19,401539.12
+2024-04-04,Mountain Lodge,Deluxe Suite,Group Booking,334,109,322.01,363522.38
+2024-11-22,Downtown Grand Suites,Standard King,Walk-In,417,328,239.78,22380.71
+2025-03-19,Downtown Grand Suites,Standard Double,Corporate Contract,249,53,602.45,261681.23
+2024-07-13,Mountain Lodge,Executive Suite,Online Travel Agency,78,212,356.65,135313.08
+2024-12-08,Old Town Boutique,Deluxe Suite,Corporate Contract,233,331,84.7,182158.32
+2024-10-04,Old Town Boutique,Standard Double,Online Travel Agency,366,357,1163.78,515393.84
+2024-03-04,Old Town Boutique,Executive Suite,Online Travel Agency,314,439,225.64,334453.01
+2024-06-12,Airport Express Inn,Executive Suite,Group Booking,102,309,294.51,513779.79
+2025-06-06,Downtown Grand Suites,Family Room,Online Travel Agency,409,200,314.47,241272.32
+2025-01-11,Harbor View Hotel,Deluxe Suite,Walk-In,224,61,990.28,521039.93
+2024-04-24,Old Town Boutique,Deluxe Suite,Mobile App,162,387,332.03,267343.46
+2024-07-30,Old Town Boutique,Deluxe Suite,Mobile App,444,444,645.7,428389.77
+2024-08-01,Mountain Lodge,Standard Double,Online Travel Agency,127,105,495.94,223194.83
+2024-04-07,Old Town Boutique,Standard King,Direct Website,200,175,988.14,66184.82
+2024-07-24,Airport Express Inn,Standard Double,Online Travel Agency,154,141,932.96,531293.45
+2024-10-28,Harbor View Hotel,Executive Suite,Group Booking,307,201,907.99,213620.37
+2024-03-24,Mountain Lodge,Deluxe Suite,Mobile App,225,149,1068.6,194993.25
+2025-04-10,Lakeside Resort,Deluxe Suite,Direct Website,95,260,775.54,396444.95
+2025-02-13,Airport Express Inn,Deluxe Suite,Corporate Contract,410,75,268.46,176045.9
+2024-06-19,Mountain Lodge,Executive Suite,Mobile App,135,49,554.34,81252.89
+2025-04-12,Lakeside Resort,Family Room,Corporate Contract,447,19,1069.25,109188.37
+2024-01-02,Old Town Boutique,Executive Suite,Mobile App,375,439,445.73,176682.61
+2024-10-14,Airport Express Inn,Standard King,Online Travel Agency,112,208,611.37,530576.91
+2025-04-20,Old Town Boutique,Standard Double,Walk-In,90,330,52.63,220881.56
+2024-02-11,Old Town Boutique,Deluxe Suite,Group Booking,103,205,673.55,247329.83
+2025-05-01,Downtown Grand Suites,Standard Double,Corporate Contract,390,189,508.69,410241.56
+2024-02-21,Harbor View Hotel,Family Room,Mobile App,372,361,595.43,164780.1
+2025-04-01,Mountain Lodge,Family Room,Mobile App,141,311,890.45,419409.21
+2024-11-15,Airport Express Inn,Family Room,Walk-In,423,107,454.97,226375.03
+2024-12-24,Mountain Lodge,Standard King,Mobile App,184,51,727.79,393780.35
+2024-04-18,Downtown Grand Suites,Standard Double,Mobile App,90,164,835.78,516991.74
+2024-06-23,Harbor View Hotel,Standard King,Walk-In,223,239,170.35,209594.62
+2024-03-18,Airport Express Inn,Standard Double,Mobile App,335,330,443.59,287235.94
+2024-09-13,Lakeside Resort,Deluxe Suite,Mobile App,94,309,182.29,135093.68
+2024-01-18,Harbor View Hotel,Executive Suite,Online Travel Agency,84,193,376.92,401160.4
+2024-02-23,Mountain Lodge,Executive Suite,Corporate Contract,196,244,80.39,195205.27
+2024-02-04,Mountain Lodge,Deluxe Suite,Group Booking,259,244,1078.84,446109.88
+2025-05-07,Lakeside Resort,Family Room,Group Booking,446,409,788.13,403938.94
+2025-01-23,Old Town Boutique,Standard King,Walk-In,268,23,415.6,18374.14
+2024-03-11,Mountain Lodge,Deluxe Suite,Online Travel Agency,362,234,1061.46,344983.86
+2024-05-27,Airport Express Inn,Standard King,Group Booking,202,48,314.72,234257.48
+2025-01-15,Downtown Grand Suites,Deluxe Suite,Mobile App,122,13,530.39,334563.28
+2024-12-26,Airport Express Inn,Executive Suite,Group Booking,74,152,802.1,361389.44
+2025-02-09,Lakeside Resort,Family Room,Mobile App,72,328,556.37,249052.23
+2024-10-14,Airport Express Inn,Deluxe Suite,Online Travel Agency,227,232,732.73,71686.29
+2024-02-13,Harbor View Hotel,Executive Suite,Mobile App,450,241,960.24,334563.44
+2025-01-22,Airport Express Inn,Deluxe Suite,Online Travel Agency,76,261,917.0,37451.52
+2024-08-18,Lakeside Resort,Executive Suite,Online Travel Agency,182,357,349.67,380117.8
+2025-04-27,Mountain Lodge,Standard King,Direct Website,132,332,1196.41,241005.88
+2024-01-23,Harbor View Hotel,Deluxe Suite,Group Booking,65,166,573.57,1724.47
+2024-03-20,Harbor View Hotel,Executive Suite,Corporate Contract,394,354,1094.61,131742.89
+2025-01-24,Harbor View Hotel,Family Room,Corporate Contract,311,16,421.28,129713.52
+2024-07-14,Harbor View Hotel,Standard King,Mobile App,264,89,850.61,50452.37
+2024-02-04,Mountain Lodge,Standard King,Group Booking,225,445,283.34,226186.47
+2024-08-17,Airport Express Inn,Deluxe Suite,Group Booking,316,8,513.53,221540.36
+2025-02-22,Lakeside Resort,Deluxe Suite,Online Travel Agency,348,92,479.11,301946.84
+2024-06-28,Lakeside Resort,Family Room,Online Travel Agency,291,410,886.41,261818.42
+2024-08-07,Downtown Grand Suites,Family Room,Walk-In,375,204,600.45,63376.37
+2024-08-05,Lakeside Resort,Deluxe Suite,Corporate Contract,226,376,651.13,124885.59
+2024-01-14,Downtown Grand Suites,Deluxe Suite,Group Booking,180,285,1191.12,446335.11
+2025-02-10,Downtown Grand Suites,Family Room,Mobile App,144,350,173.85,102557.78
+2025-02-06,Downtown Grand Suites,Standard King,Mobile App,332,406,119.28,131801.63
+2025-04-14,Lakeside Resort,Standard King,Online Travel Agency,218,112,681.96,520330.75
+2024-01-19,Airport Express Inn,Standard Double,Group Booking,160,35,484.38,488517.72
+2025-03-24,Harbor View Hotel,Deluxe Suite,Direct Website,80,326,530.05,168247.22
+2024-04-09,Airport Express Inn,Executive Suite,Direct Website,383,5,208.07,40734.47
+2024-01-17,Harbor View Hotel,Executive Suite,Corporate Contract,374,114,162.78,51156.65
+2025-06-10,Airport Express Inn,Executive Suite,Walk-In,430,193,672.73,17848.92
+2024-09-05,Downtown Grand Suites,Family Room,Mobile App,283,385,986.44,257242.28
+2025-03-23,Downtown Grand Suites,Standard Double,Corporate Contract,316,59,279.8,217287.05
+2024-12-29,Old Town Boutique,Family Room,Group Booking,315,73,180.28,30095.54
+2025-05-29,Lakeside Resort,Executive Suite,Direct Website,217,17,429.32,405216.78
+2024-03-26,Mountain Lodge,Executive Suite,Online Travel Agency,109,178,180.02,371237.07
+2024-06-06,Lakeside Resort,Standard Double,Walk-In,404,107,522.23,18443.26
+2024-12-07,Mountain Lodge,Executive Suite,Direct Website,274,135,1040.9,130364.55
+2025-02-05,Harbor View Hotel,Family Room,Group Booking,427,237,525.77,40322.81
+2024-06-24,Old Town Boutique,Deluxe Suite,Corporate Contract,123,312,945.89,461382.51
+2024-02-08,Mountain Lodge,Family Room,Group Booking,349,72,595.32,219971.99
+2024-12-06,Lakeside Resort,Family Room,Corporate Contract,308,138,749.74,98722.4
+2025-06-12,Mountain Lodge,Standard King,Group Booking,217,220,1187.38,402669.96
+2024-06-14,Harbor View Hotel,Family Room,Group Booking,164,343,173.91,474597.85
+2024-02-12,Lakeside Resort,Family Room,Group Booking,58,257,633.51,192920.41
+2024-06-08,Downtown Grand Suites,Standard Double,Group Booking,273,87,633.77,246139.29
+2025-03-13,Harbor View Hotel,Deluxe Suite,Direct Website,125,353,520.49,319569.19
+2024-05-19,Downtown Grand Suites,Deluxe Suite,Corporate Contract,359,32,219.1,517679.93
+2025-03-23,Downtown Grand Suites,Family Room,Online Travel Agency,374,182,756.14,153521.24
+2025-05-26,Harbor View Hotel,Deluxe Suite,Online Travel Agency,88,317,1169.74,406995.91
+2025-01-03,Old Town Boutique,Standard King,Direct Website,93,260,1166.68,129399.83
+2024-03-12,Old Town Boutique,Deluxe Suite,Online Travel Agency,398,84,724.55,407483.15
+2024-05-30,Harbor View Hotel,Family Room,Mobile App,178,264,844.63,469427.43
+2024-09-06,Old Town Boutique,Standard Double,Online Travel Agency,413,214,1174.66,371821.26
+2024-06-28,Old Town Boutique,Family Room,Group Booking,304,158,869.72,15656.96
+2024-03-26,Lakeside Resort,Family Room,Group Booking,48,73,1021.06,6163.37
+2024-12-19,Old Town Boutique,Deluxe Suite,Mobile App,409,387,300.42,330179.04
+2024-05-05,Mountain Lodge,Family Room,Corporate Contract,40,259,1092.77,17562.97
+2024-05-23,Old Town Boutique,Standard Double,Direct Website,439,223,664.45,234509.43
+2025-02-17,Old Town Boutique,Deluxe Suite,Corporate Contract,213,221,974.48,440639.8
+2024-08-26,Old Town Boutique,Family Room,Corporate Contract,186,403,867.12,498892.42
+2024-07-20,Old Town Boutique,Executive Suite,Direct Website,81,431,225.55,186150.37
+2024-10-11,Downtown Grand Suites,Standard King,Mobile App,401,200,1038.94,139143.21
+2024-06-04,Lakeside Resort,Standard Double,Mobile App,300,244,1176.11,365039.41
+2025-06-08,Old Town Boutique,Standard Double,Online Travel Agency,209,18,716.27,405051.79
+2025-04-21,Mountain Lodge,Standard King,Online Travel Agency,168,413,1098.16,63574.04
+2024-01-28,Lakeside Resort,Family Room,Walk-In,189,74,717.1,333391.92
+2025-02-16,Harbor View Hotel,Deluxe Suite,Walk-In,162,182,188.04,268401.5
+2024-03-16,Old Town Boutique,Family Room,Walk-In,128,266,719.4,291460.77
+2024-09-02,Lakeside Resort,Standard King,Corporate Contract,205,29,1015.46,428673.19
+2025-05-28,Lakeside Resort,Standard King,Online Travel Agency,159,178,74.72,180001.95
+2025-03-16,Downtown Grand Suites,Standard King,Direct Website,297,399,582.81,231305.12
+2024-03-18,Lakeside Resort,Standard Double,Group Booking,110,285,511.18,320096.05
+2024-10-01,Lakeside Resort,Deluxe Suite,Direct Website,345,19,300.26,169336.55
+2024-08-20,Lakeside Resort,Deluxe Suite,Group Booking,257,29,723.77,124152.89
+2024-03-22,Old Town Boutique,Standard King,Corporate Contract,275,278,1018.3,166615.61
+2024-03-30,Airport Express Inn,Standard Double,Direct Website,49,332,446.35,536941.23
+2025-03-13,Old Town Boutique,Executive Suite,Online Travel Agency,427,421,495.84,277875.54
+2025-01-24,Lakeside Resort,Standard King,Mobile App,289,395,602.39,150458.51
+2024-01-08,Airport Express Inn,Family Room,Walk-In,143,181,912.27,295451.84
+2024-12-11,Lakeside Resort,Executive Suite,Mobile App,167,146,436.93,191098.66
+2024-12-10,Mountain Lodge,Executive Suite,Walk-In,49,8,58.62,141106.59
+2024-07-26,Old Town Boutique,Standard King,Walk-In,203,347,814.07,258056.33
+2024-06-16,Mountain Lodge,Standard King,Walk-In,239,165,454.92,462137.71
+2024-07-12,Mountain Lodge,Family Room,Direct Website,402,437,775.36,408124.51
+2025-05-06,Airport Express Inn,Family Room,Direct Website,141,205,963.22,244940.49
+2024-08-15,Harbor View Hotel,Standard Double,Online Travel Agency,385,348,887.5,98679.85
+2025-03-06,Lakeside Resort,Standard King,Online Travel Agency,421,46,306.58,282539.1
+2024-04-14,Harbor View Hotel,Family Room,Online Travel Agency,359,254,271.27,57029.27
+2024-03-25,Lakeside Resort,Standard Double,Direct Website,408,252,705.96,101844.3
+2024-06-03,Lakeside Resort,Deluxe Suite,Online Travel Agency,296,192,1004.21,295309.89
+2024-04-16,Lakeside Resort,Deluxe Suite,Corporate Contract,66,305,518.15,21462.56
+2024-04-28,Downtown Grand Suites,Family Room,Walk-In,327,383,446.92,262077.38
+2025-02-22,Lakeside Resort,Family Room,Corporate Contract,312,137,1151.86,517045.74
+2024-02-28,Lakeside Resort,Executive Suite,Online Travel Agency,114,220,363.8,141751.02
+2025-02-04,Old Town Boutique,Deluxe Suite,Direct Website,80,148,227.73,483066.61
+2025-04-21,Airport Express Inn,Standard Double,Mobile App,77,222,162.45,133929.42
+2024-02-18,Mountain Lodge,Standard Double,Online Travel Agency,57,44,603.72,220221.84
+2025-03-19,Downtown Grand Suites,Family Room,Walk-In,134,97,457.82,120562.95
+2024-02-28,Mountain Lodge,Family Room,Mobile App,433,161,980.57,309138.06
+2024-04-02,Old Town Boutique,Standard Double,Group Booking,102,322,758.71,388574.25
+2025-02-23,Airport Express Inn,Standard Double,Mobile App,311,308,1041.94,94535.08
+2025-04-13,Downtown Grand Suites,Family Room,Corporate Contract,246,301,656.85,160883.35
+2024-03-30,Mountain Lodge,Family Room,Mobile App,398,371,1087.34,14192.19
+2025-01-06,Old Town Boutique,Executive Suite,Mobile App,326,329,477.88,408969.95
+2024-06-29,Mountain Lodge,Standard Double,Walk-In,85,172,411.64,519990.56
+2024-02-25,Downtown Grand Suites,Standard King,Corporate Contract,379,65,178.45,15743.04
+2024-09-03,Lakeside Resort,Standard Double,Walk-In,81,68,927.04,126062.38
+2024-10-26,Airport Express Inn,Executive Suite,Mobile App,283,70,827.42,439272.87
+2024-01-14,Downtown Grand Suites,Executive Suite,Mobile App,47,257,1179.08,320963.76
+2025-03-16,Lakeside Resort,Deluxe Suite,Corporate Contract,138,422,468.76,12.64
+2024-08-31,Airport Express Inn,Deluxe Suite,Online Travel Agency,95,419,645.7,185345.81
+2024-05-25,Airport Express Inn,Deluxe Suite,Direct Website,404,436,1010.47,135098.3
+2025-02-14,Old Town Boutique,Standard Double,Mobile App,208,93,1025.87,401279.35
+2025-04-26,Airport Express Inn,Deluxe Suite,Online Travel Agency,371,389,159.72,402696.83
+2024-04-03,Airport Express Inn,Standard King,Group Booking,42,210,1013.37,452287.74
+2024-11-05,Harbor View Hotel,Deluxe Suite,Corporate Contract,431,56,816.68,517637.61
+2024-01-12,Lakeside Resort,Family Room,Group Booking,199,120,515.13,280431.73
+2024-07-09,Mountain Lodge,Standard Double,Online Travel Agency,93,150,462.25,113654.51
+2024-02-27,Mountain Lodge,Deluxe Suite,Mobile App,444,347,371.72,64383.17
+2025-03-22,Airport Express Inn,Standard Double,Direct Website,158,138,85.54,75461.43
+2024-10-02,Lakeside Resort,Standard King,Direct Website,407,298,871.17,153022.86
+2024-07-15,Old Town Boutique,Family Room,Corporate Contract,229,120,878.61,469916.56
+2024-06-29,Harbor View Hotel,Standard Double,Direct Website,359,173,240.28,116458.07
+2025-06-05,Lakeside Resort,Family Room,Walk-In,40,344,1018.32,496389.11
+2025-01-29,Airport Express Inn,Standard King,Walk-In,46,382,1176.31,97669.35
+2024-03-22,Lakeside Resort,Standard King,Direct Website,111,124,835.4,230484.61
+2025-02-18,Lakeside Resort,Executive Suite,Walk-In,55,165,1124.27,92610.75
+2024-09-10,Old Town Boutique,Family Room,Group Booking,107,147,254.53,101229.04
+2024-04-03,Old Town Boutique,Family Room,Mobile App,355,287,1139.48,392439.8
+2025-01-30,Harbor View Hotel,Deluxe Suite,Online Travel Agency,260,143,742.31,144116.94
+2024-01-05,Downtown Grand Suites,Standard Double,Walk-In,411,225,873.23,270901.83
+2024-12-25,Old Town Boutique,Executive Suite,Online Travel Agency,200,274,1085.16,300244.71
+2024-05-01,Mountain Lodge,Standard Double,Direct Website,225,234,878.35,101356.86
+2025-03-31,Downtown Grand Suites,Standard Double,Walk-In,162,409,349.6,35371.88
+2024-01-04,Mountain Lodge,Family Room,Corporate Contract,291,32,364.0,537314.25
+2025-05-10,Downtown Grand Suites,Deluxe Suite,Direct Website,292,406,716.05,289626.88
+2025-01-09,Harbor View Hotel,Standard Double,Walk-In,411,79,432.07,494174.89
+2025-02-20,Old Town Boutique,Deluxe Suite,Walk-In,44,412,293.54,40205.74
+2025-01-23,Lakeside Resort,Family Room,Mobile App,312,325,353.68,78226.31
+2024-03-21,Downtown Grand Suites,Standard King,Mobile App,379,371,541.73,388988.38
+2025-04-30,Lakeside Resort,Executive Suite,Online Travel Agency,427,110,105.92,390410.24
+2024-05-07,Airport Express Inn,Standard Double,Walk-In,175,190,726.85,513444.75
+2024-02-13,Airport Express Inn,Executive Suite,Online Travel Agency,110,402,717.69,179509.59
+2024-05-12,Downtown Grand Suites,Executive Suite,Online Travel Agency,57,430,451.74,198624.38
+2024-07-13,Old Town Boutique,Standard King,Online Travel Agency,217,45,633.24,318944.75
+2024-07-12,Old Town Boutique,Family Room,Online Travel Agency,289,301,404.65,469759.78
+2024-12-20,Old Town Boutique,Deluxe Suite,Online Travel Agency,233,227,117.41,495475.68
+2024-06-06,Harbor View Hotel,Family Room,Online Travel Agency,402,435,302.84,130185.87
+2024-08-28,Downtown Grand Suites,Executive Suite,Direct Website,312,55,371.35,86872.7
+2024-05-08,Downtown Grand Suites,Family Room,Online Travel Agency,64,62,969.78,242101.44
+2024-09-10,Airport Express Inn,Family Room,Group Booking,356,175,842.32,424416.18
+2024-02-04,Airport Express Inn,Deluxe Suite,Walk-In,156,349,1173.46,260008.23
+2024-04-28,Old Town Boutique,Standard King,Online Travel Agency,337,149,300.09,314815.49
+2025-01-11,Lakeside Resort,Executive Suite,Mobile App,446,70,103.46,341838.15
+2024-07-26,Airport Express Inn,Standard King,Mobile App,298,51,267.21,324444.5
+2024-03-16,Mountain Lodge,Executive Suite,Group Booking,131,235,326.28,390364.78
+2024-06-07,Airport Express Inn,Standard Double,Direct Website,359,132,1035.53,303814.17
+2025-06-10,Airport Express Inn,Standard King,Walk-In,340,359,1144.3,86868.43
+2024-11-05,Airport Express Inn,Family Room,Online Travel Agency,204,88,843.51,281404.69
+2025-01-01,Harbor View Hotel,Deluxe Suite,Corporate Contract,334,257,365.82,409999.26
+2024-03-05,Downtown Grand Suites,Family Room,Walk-In,353,33,310.13,133046.52
+2024-01-13,Lakeside Resort,Deluxe Suite,Group Booking,91,88,1080.55,516183.3
+2024-12-11,Harbor View Hotel,Executive Suite,Direct Website,392,367,1188.64,329704.62
+2025-03-03,Downtown Grand Suites,Deluxe Suite,Corporate Contract,408,149,911.01,284054.05
+2025-05-10,Mountain Lodge,Family Room,Corporate Contract,366,424,785.64,73735.26
+2024-04-30,Downtown Grand Suites,Executive Suite,Walk-In,148,84,591.58,249916.84
+2024-10-05,Mountain Lodge,Standard Double,Corporate Contract,339,99,568.83,153310.21
+2025-06-21,Lakeside Resort,Executive Suite,Group Booking,345,57,489.72,11314.82
+2024-12-09,Downtown Grand Suites,Standard Double,Group Booking,350,368,757.86,465485.0
+2024-08-27,Downtown Grand Suites,Standard Double,Walk-In,382,360,818.06,195332.3
+2024-03-18,Airport Express Inn,Deluxe Suite,Online Travel Agency,331,135,877.19,314664.79
+2025-03-20,Airport Express Inn,Standard Double,Direct Website,377,367,869.6,99476.62
+2024-09-27,Downtown Grand Suites,Family Room,Direct Website,93,323,1091.1,319305.06
+2024-07-30,Downtown Grand Suites,Deluxe Suite,Corporate Contract,111,346,907.36,133159.47
+2024-04-11,Airport Express Inn,Family Room,Corporate Contract,351,87,967.9,505588.64
+2024-08-30,Harbor View Hotel,Executive Suite,Online Travel Agency,100,186,664.46,355768.42
+2024-09-10,Lakeside Resort,Deluxe Suite,Walk-In,91,90,631.06,229189.5
+2025-05-17,Lakeside Resort,Standard Double,Group Booking,211,142,667.58,57752.91
+2024-12-14,Harbor View Hotel,Deluxe Suite,Walk-In,244,293,121.92,485223.23
+2024-01-15,Downtown Grand Suites,Family Room,Direct Website,412,278,835.66,212909.78
+2024-02-28,Harbor View Hotel,Executive Suite,Corporate Contract,438,156,392.42,246980.65
+2024-02-29,Harbor View Hotel,Executive Suite,Mobile App,430,131,661.12,14386.01
+2024-06-27,Airport Express Inn,Standard King,Corporate Contract,272,353,531.84,106641.35
+2024-03-24,Lakeside Resort,Standard King,Walk-In,43,41,934.25,354479.65
+2024-06-04,Mountain Lodge,Standard Double,Online Travel Agency,57,337,611.92,227601.38
+2024-02-05,Lakeside Resort,Family Room,Online Travel Agency,399,239,472.63,73941.09
+2025-05-24,Lakeside Resort,Executive Suite,Group Booking,387,114,604.06,289341.91
+2024-09-11,Airport Express Inn,Standard King,Corporate Contract,82,397,336.49,31742.12
+2024-11-17,Old Town Boutique,Standard Double,Corporate Contract,265,60,1044.98,338759.34
+2024-05-14,Harbor View Hotel,Deluxe Suite,Group Booking,429,21,1014.54,138255.73
+2024-02-06,Airport Express Inn,Standard Double,Direct Website,215,141,86.84,59895.75
+2024-08-23,Downtown Grand Suites,Family Room,Direct Website,378,411,389.4,103579.7
+2025-02-13,Harbor View Hotel,Executive Suite,Walk-In,365,126,711.35,477700.14
+2024-12-23,Harbor View Hotel,Standard King,Walk-In,245,431,785.19,403588.25
+2024-08-14,Downtown Grand Suites,Family Room,Corporate Contract,149,267,331.49,67708.46
+2025-02-14,Lakeside Resort,Family Room,Corporate Contract,436,400,973.55,429418.45
+2024-11-15,Lakeside Resort,Standard King,Group Booking,388,343,417.18,446510.13
+2024-09-21,Downtown Grand Suites,Executive Suite,Direct Website,248,283,602.47,82766.71

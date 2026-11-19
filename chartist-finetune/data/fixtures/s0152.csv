@@ -1,0 +1,241 @@
+visitDate,clinicSite,visitType,providerSpecialty,patientsSeen,avgWaitMinutes,noShowCount,totalRevenue
+2024-08-03,Downtown,Urgent Care,Dermatology,71,72.24,21,13932.13
+2024-09-19,Eastgate,Telehealth,Family Medicine,81,27.64,6,23547.9
+2025-04-20,Northside,Follow-Up,Dermatology,12,36.53,10,68438.5
+2024-03-16,Downtown,New Patient,Cardiology,39,76.86,37,60202.48
+2024-10-26,Northside,Urgent Care,Dermatology,130,92.19,25,49684.26
+2024-09-05,Northside,Procedure,Orthopedics,45,7.71,22,5306.15
+2024-12-18,Medical Plaza,Urgent Care,Pediatrics,11,71.49,1,39252.51
+2025-03-22,Eastgate,Procedure,Family Medicine,19,49.35,28,49010.69
+2024-06-22,Riverside,New Patient,Orthopedics,72,31.2,10,24316.06
+2024-03-16,Riverside,New Patient,Pediatrics,96,73.83,25,46115.13
+2025-06-04,Westpark,New Patient,Pediatrics,69,49.27,27,44249.06
+2024-01-15,Northside,New Patient,Family Medicine,115,82.28,0,53669.89
+2025-05-19,Riverside,New Patient,Dermatology,12,45.23,31,31019.68
+2024-04-12,Westpark,Telehealth,Family Medicine,31,33.13,12,65318.05
+2024-06-30,Westpark,Procedure,Family Medicine,163,83.37,38,61977.27
+2024-01-31,Downtown,Follow-Up,Orthopedics,35,83.46,29,38604.65
+2024-01-29,Medical Plaza,Procedure,Dermatology,64,44.64,6,52211.74
+2024-05-12,Westpark,New Patient,Pediatrics,3,33.43,2,26265.09
+2025-06-09,Medical Plaza,Procedure,Orthopedics,106,80.02,30,27937.04
+2024-08-03,Northside,Procedure,Dermatology,105,64.32,21,43287.67
+2024-11-18,Northside,New Patient,Internal Medicine,164,24.83,20,21222.56
+2025-05-09,Riverside,Urgent Care,Orthopedics,32,13.82,9,10918.26
+2024-06-05,Eastgate,Telehealth,Cardiology,172,74.25,26,23066.7
+2024-09-14,Eastgate,Urgent Care,Cardiology,43,23.35,31,21539.85
+2024-06-28,Westpark,Procedure,Internal Medicine,66,31.65,10,58807.04
+2025-01-18,Westpark,Follow-Up,Internal Medicine,105,17.2,14,63585.84
+2024-06-23,Northside,Urgent Care,Pediatrics,153,73.59,29,13710.9
+2024-07-09,Medical Plaza,New Patient,Cardiology,7,52.94,31,57237.42
+2024-08-04,Eastgate,Telehealth,Internal Medicine,102,20.54,26,23805.69
+2024-01-30,Eastgate,Telehealth,Cardiology,82,55.16,24,71090.55
+2024-08-28,Northside,Urgent Care,Pediatrics,119,27.18,18,36664.35
+2024-01-31,Downtown,New Patient,Family Medicine,115,21.09,17,48056.61
+2025-04-22,Medical Plaza,New Patient,Dermatology,64,40.28,1,47315.61
+2024-11-19,Riverside,Follow-Up,Internal Medicine,72,30.82,16,1470.57
+2025-06-06,Riverside,New Patient,Pediatrics,37,70.25,1,28811.53
+2025-06-06,Medical Plaza,Follow-Up,Dermatology,26,25.35,11,2475.42
+2024-06-20,Medical Plaza,New Patient,Family Medicine,154,79.36,15,3826.38
+2025-05-31,Downtown,Urgent Care,Orthopedics,123,60.06,19,73118.57
+2024-06-28,Medical Plaza,Procedure,Family Medicine,3,9.43,22,1780.56
+2024-06-05,Eastgate,Urgent Care,Internal Medicine,140,63.01,21,11729.68
+2024-04-29,Medical Plaza,Procedure,Family Medicine,85,18.31,15,23869.63
+2025-05-04,Medical Plaza,Urgent Care,Orthopedics,5,86.28,24,29518.62
+2024-02-10,Eastgate,Procedure,Internal Medicine,36,94.29,16,7966.61
+2024-01-18,Medical Plaza,Follow-Up,Pediatrics,34,14.77,15,51929.98
+2024-09-24,Northside,Telehealth,Family Medicine,109,12.56,37,37081.16
+2024-12-17,Riverside,Procedure,Dermatology,120,53.08,9,32793.33
+2024-06-19,Medical Plaza,Telehealth,Dermatology,74,26.59,19,18133.28
+2024-07-28,Downtown,New Patient,Orthopedics,147,56.84,2,34593.04
+2024-10-28,Northside,New Patient,Family Medicine,90,18.2,28,63932.9
+2024-02-02,Downtown,New Patient,Orthopedics,157,12.34,11,55040.63
+2024-12-03,Westpark,Telehealth,Internal Medicine,51,51.18,25,35269.93
+2024-03-04,Downtown,New Patient,Internal Medicine,129,52.54,23,53538.29
+2024-03-17,Westpark,Urgent Care,Pediatrics,144,93.89,40,14904.18
+2024-11-27,Northside,New Patient,Orthopedics,120,44.27,10,49334.65
+2024-08-20,Downtown,Urgent Care,Family Medicine,177,61.92,28,67806.93
+2024-01-16,Westpark,New Patient,Cardiology,167,65.85,26,33168.39
+2024-03-30,Downtown,Telehealth,Pediatrics,42,38.0,36,54856.01
+2024-08-21,Northside,New Patient,Cardiology,175,24.95,40,27549.87
+2024-10-07,Northside,New Patient,Cardiology,139,85.68,38,72675.55
+2024-12-26,Eastgate,Procedure,Dermatology,33,94.76,20,42125.69
+2024-09-02,Westpark,Follow-Up,Internal Medicine,126,35.51,15,2121.99
+2025-03-26,Eastgate,Follow-Up,Internal Medicine,32,16.88,32,31174.26
+2024-08-05,Downtown,Procedure,Pediatrics,137,88.24,3,6428.8
+2024-02-05,Downtown,Procedure,Pediatrics,84,10.92,35,47276.01
+2024-12-03,Westpark,Procedure,Cardiology,25,24.73,25,21179.67
+2024-02-23,Westpark,Urgent Care,Family Medicine,128,6.69,27,28541.63
+2025-05-25,Medical Plaza,Procedure,Pediatrics,132,39.58,20,71288.19
+2024-10-20,Westpark,New Patient,Orthopedics,158,9.03,2,29375.95
+2024-12-12,Northside,Telehealth,Orthopedics,9,43.61,8,16961.58
+2024-08-09,Eastgate,Urgent Care,Orthopedics,12,81.49,18,68318.93
+2024-03-20,Eastgate,Telehealth,Pediatrics,80,46.91,37,31693.88
+2025-04-03,Eastgate,Procedure,Dermatology,36,20.69,16,6570.47
+2025-05-05,Northside,New Patient,Dermatology,61,57.31,36,9991.36
+2025-06-16,Westpark,Follow-Up,Pediatrics,9,51.28,13,29629.18
+2025-04-05,Riverside,Follow-Up,Pediatrics,58,45.69,5,59499.63
+2025-03-04,Westpark,New Patient,Family Medicine,21,12.2,33,5586.12
+2024-09-09,Riverside,Follow-Up,Pediatrics,152,59.4,19,39354.97
+2025-05-19,Medical Plaza,Telehealth,Pediatrics,105,76.44,37,17022.73
+2024-11-09,Riverside,New Patient,Pediatrics,62,54.12,20,47091.27
+2024-06-07,Riverside,Telehealth,Orthopedics,83,94.6,35,37994.66
+2024-10-29,Medical Plaza,Procedure,Pediatrics,42,60.74,20,4696.41
+2024-05-01,Riverside,New Patient,Pediatrics,59,24.53,9,20277.77
+2024-01-15,Riverside,Procedure,Orthopedics,1,72.65,30,37861.97
+2024-01-30,Northside,Follow-Up,Orthopedics,89,78.6,5,20045.78
+2025-02-02,Downtown,Urgent Care,Family Medicine,129,73.44,39,59245.65
+2024-07-21,Medical Plaza,Follow-Up,Internal Medicine,150,29.79,17,25547.69
+2024-06-22,Downtown,Follow-Up,Dermatology,9,62.6,14,65951.15
+2025-06-04,Downtown,Telehealth,Orthopedics,61,51.32,29,47981.56
+2024-09-20,Downtown,Follow-Up,Dermatology,103,36.36,28,60004.44
+2025-04-16,Eastgate,Procedure,Family Medicine,13,21.33,30,1877.12
+2025-03-31,Westpark,New Patient,Family Medicine,165,77.38,26,72219.05
+2025-05-19,Westpark,Telehealth,Cardiology,148,23.44,2,73718.19
+2024-08-17,Downtown,Follow-Up,Pediatrics,106,59.3,24,5704.52
+2024-04-12,Downtown,Telehealth,Pediatrics,168,25.15,22,32352.34
+2024-10-15,Northside,New Patient,Dermatology,148,44.39,23,36532.59
+2025-04-06,Downtown,Follow-Up,Orthopedics,91,65.57,12,10744.85
+2024-04-09,Medical Plaza,Follow-Up,Dermatology,34,13.96,22,25362.16
+2025-05-12,Riverside,Urgent Care,Orthopedics,34,94.53,9,36867.74
+2024-02-06,Eastgate,Follow-Up,Family Medicine,5,36.05,8,32750.18
+2025-01-22,Downtown,Telehealth,Orthopedics,158,64.13,3,60516.45
+2024-10-11,Medical Plaza,Urgent Care,Pediatrics,169,34.17,5,69841.58
+2025-03-15,Downtown,Procedure,Cardiology,63,21.63,22,53022.09
+2024-07-16,Northside,New Patient,Pediatrics,139,83.04,19,22540.06
+2024-12-06,Eastgate,Procedure,Cardiology,41,8.27,26,63265.8
+2025-01-03,Riverside,Urgent Care,Orthopedics,160,68.52,22,18727.62
+2025-04-27,Northside,Urgent Care,Orthopedics,52,82.17,5,53260.53
+2024-03-02,Eastgate,Urgent Care,Pediatrics,5,52.24,31,73129.51
+2024-10-20,Downtown,Follow-Up,Orthopedics,66,8.28,17,47448.93
+2024-02-26,Medical Plaza,Procedure,Dermatology,90,63.21,1,52265.43
+2025-02-22,Northside,Follow-Up,Dermatology,174,90.67,7,6069.25
+2024-01-02,Medical Plaza,Procedure,Pediatrics,71,64.14,6,62402.78
+2024-06-25,Downtown,Follow-Up,Internal Medicine,98,72.62,31,23999.04
+2024-10-02,Eastgate,Urgent Care,Pediatrics,142,88.61,27,14733.94
+2025-04-10,Downtown,Telehealth,Orthopedics,137,17.08,28,39661.33
+2025-01-14,Eastgate,Procedure,Pediatrics,116,94.68,13,3785.43
+2025-06-23,Riverside,Telehealth,Pediatrics,129,89.54,32,50944.66
+2025-04-02,Northside,Follow-Up,Orthopedics,84,8.42,31,17430.08
+2024-04-23,Northside,New Patient,Cardiology,70,44.05,8,23919.92
+2024-07-28,Westpark,Follow-Up,Pediatrics,64,32.04,4,50798.22
+2024-01-29,Westpark,New Patient,Family Medicine,73,85.29,13,13372.31
+2024-06-08,Eastgate,New Patient,Family Medicine,38,38.58,3,8732.8
+2025-06-12,Riverside,Procedure,Dermatology,75,76.8,34,16289.67
+2024-10-25,Downtown,Follow-Up,Internal Medicine,77,10.69,14,49001.02
+2025-06-18,Eastgate,Procedure,Pediatrics,58,89.81,31,53290.01
+2024-10-08,Eastgate,Follow-Up,Orthopedics,128,44.92,20,70306.23
+2024-12-02,Northside,New Patient,Pediatrics,131,84.83,33,20856.07
+2025-02-08,Westpark,New Patient,Pediatrics,111,45.87,2,57091.17
+2025-01-28,Riverside,Follow-Up,Orthopedics,101,21.34,24,72604.76
+2024-05-15,Northside,Telehealth,Orthopedics,175,19.99,13,59087.94
+2024-02-27,Eastgate,New Patient,Orthopedics,95,22.91,28,71165.61
+2024-08-14,Northside,Telehealth,Dermatology,12,25.84,26,32557.31
+2025-02-07,Eastgate,Urgent Care,Orthopedics,130,39.37,35,27373.07
+2025-03-03,Northside,Telehealth,Orthopedics,29,13.16,5,41629.92
+2024-03-17,Riverside,Procedure,Dermatology,39,20.89,34,51081.47
+2025-06-02,Eastgate,Telehealth,Internal Medicine,143,46.68,23,45674.65
+2024-12-06,Eastgate,Follow-Up,Orthopedics,153,17.23,34,44802.23
+2024-01-14,Eastgate,Telehealth,Orthopedics,8,8.59,16,73593.06
+2025-04-25,Medical Plaza,New Patient,Family Medicine,40,6.19,36,42975.17
+2024-04-20,Eastgate,Follow-Up,Family Medicine,174,47.77,4,13367.13
+2024-04-02,Riverside,Urgent Care,Internal Medicine,31,84.14,19,36914.79
+2025-01-11,Eastgate,Follow-Up,Internal Medicine,53,24.38,1,21308.83
+2024-08-27,Westpark,Procedure,Pediatrics,95,55.84,32,65194.93
+2024-03-06,Medical Plaza,New Patient,Family Medicine,166,29.8,19,72939.6
+2024-08-12,Westpark,Procedure,Internal Medicine,65,41.22,4,29257.24
+2024-12-13,Riverside,Follow-Up,Family Medicine,124,68.42,39,70785.22
+2025-05-25,Riverside,Urgent Care,Family Medicine,94,14.66,11,46768.66
+2024-02-26,Downtown,New Patient,Internal Medicine,27,27.56,15,4061.26
+2024-08-23,Eastgate,Urgent Care,Family Medicine,60,57.44,34,56517.66
+2025-05-28,Downtown,Urgent Care,Family Medicine,28,57.38,7,11188.81
+2024-02-18,Eastgate,Telehealth,Internal Medicine,133,47.06,32,60539.86
+2024-02-29,Riverside,Telehealth,Dermatology,114,64.78,27,35304.94
+2024-10-31,Northside,Urgent Care,Dermatology,173,75.08,11,43524.35
+2025-02-27,Riverside,Urgent Care,Cardiology,63,29.65,26,12527.14
+2024-02-04,Riverside,Telehealth,Pediatrics,125,32.85,24,2442.5
+2025-02-01,Riverside,New Patient,Pediatrics,167,78.74,12,72276.47
+2025-02-17,Riverside,Follow-Up,Orthopedics,149,62.12,1,35611.12
+2024-01-20,Downtown,Telehealth,Orthopedics,108,57.37,14,28055.57
+2024-04-08,Eastgate,Follow-Up,Family Medicine,21,88.03,25,9298.21
+2024-04-08,Riverside,Procedure,Dermatology,111,51.1,24,18370.14
+2024-03-05,Northside,Urgent Care,Dermatology,168,29.39,16,2902.41
+2024-04-04,Riverside,Procedure,Internal Medicine,17,23.81,39,59480.68
+2024-09-10,Downtown,Follow-Up,Internal Medicine,113,83.86,24,34593.45
+2024-01-11,Westpark,Urgent Care,Pediatrics,18,33.85,34,22020.1
+2024-05-30,Medical Plaza,Telehealth,Orthopedics,134,65.43,21,51422.76
+2024-04-27,Medical Plaza,Urgent Care,Pediatrics,39,22.28,37,32884.46
+2024-04-22,Downtown,Urgent Care,Cardiology,67,27.66,1,33407.3
+2025-04-20,Medical Plaza,Urgent Care,Orthopedics,29,6.3,5,33711.66
+2024-07-22,Riverside,Follow-Up,Internal Medicine,13,47.3,36,30506.83
+2024-01-21,Downtown,Follow-Up,Orthopedics,79,64.2,26,32068.3
+2024-07-08,Downtown,New Patient,Cardiology,72,9.21,0,61384.09
+2024-08-11,Westpark,Procedure,Orthopedics,7,43.16,40,24168.52
+2024-06-12,Northside,Follow-Up,Internal Medicine,14,37.08,10,10345.78
+2024-02-15,Riverside,Telehealth,Pediatrics,61,70.6,32,39390.72
+2024-11-30,Westpark,Procedure,Dermatology,114,84.23,13,40234.08
+2024-12-04,Westpark,New Patient,Orthopedics,122,25.44,15,50677.57
+2024-03-28,Medical Plaza,New Patient,Pediatrics,91,66.57,23,4556.55
+2025-03-04,Medical Plaza,Urgent Care,Internal Medicine,17,78.81,11,38479.3
+2025-03-31,Eastgate,Urgent Care,Internal Medicine,164,72.44,34,1083.63
+2024-03-11,Riverside,New Patient,Dermatology,178,19.03,4,2608.09
+2024-08-23,Eastgate,Follow-Up,Pediatrics,101,13.71,27,55550.34
+2024-02-17,Northside,Telehealth,Dermatology,149,22.17,6,29898.66
+2025-04-18,Eastgate,Telehealth,Family Medicine,103,83.34,13,15857.22
+2024-08-24,Downtown,Follow-Up,Orthopedics,155,24.76,20,24440.88
+2024-04-25,Northside,Urgent Care,Family Medicine,26,22.75,32,31502.22
+2024-07-15,Northside,Telehealth,Family Medicine,95,89.09,28,21621.71
+2025-04-12,Riverside,New Patient,Dermatology,75,92.93,23,69675.59
+2024-05-10,Westpark,Urgent Care,Orthopedics,66,28.82,39,32696.07
+2025-02-04,Northside,Urgent Care,Internal Medicine,148,75.6,26,54630.97
+2024-07-07,Downtown,Follow-Up,Dermatology,144,90.13,10,70812.23
+2024-06-20,Eastgate,Telehealth,Internal Medicine,148,12.63,30,32585.05
+2025-01-12,Downtown,New Patient,Pediatrics,89,11.87,22,23614.56
+2024-07-31,Northside,New Patient,Orthopedics,76,36.17,22,70254.23
+2024-03-04,Eastgate,New Patient,Orthopedics,130,25.36,16,56561.23
+2025-05-16,Riverside,Follow-Up,Internal Medicine,48,86.13,8,2985.57
+2025-02-11,Medical Plaza,New Patient,Family Medicine,55,51.46,22,49922.11
+2024-12-13,Northside,New Patient,Pediatrics,138,91.94,7,21062.27
+2024-04-27,Medical Plaza,Follow-Up,Orthopedics,129,81.9,15,2656.26
+2024-02-16,Medical Plaza,Follow-Up,Internal Medicine,93,57.82,32,10171.04
+2025-05-17,Riverside,Procedure,Dermatology,140,78.28,5,18523.46
+2024-11-12,Eastgate,Follow-Up,Pediatrics,3,7.09,34,6312.75
+2025-06-22,Eastgate,Urgent Care,Pediatrics,4,35.1,9,74235.03
+2024-03-07,Eastgate,Follow-Up,Internal Medicine,2,91.22,24,63799.94
+2024-10-10,Downtown,New Patient,Dermatology,161,27.77,31,23547.02
+2025-01-15,Eastgate,Follow-Up,Internal Medicine,27,10.62,9,4443.86
+2024-07-04,Eastgate,Procedure,Internal Medicine,26,64.7,34,1008.3
+2024-09-17,Riverside,Follow-Up,Internal Medicine,170,72.41,1,9359.08
+2025-03-21,Downtown,Procedure,Orthopedics,46,11.78,9,16324.53
+2024-06-09,Downtown,Telehealth,Internal Medicine,130,42.8,28,484.89
+2024-03-08,Northside,Telehealth,Orthopedics,32,34.56,9,45761.57
+2024-03-12,Medical Plaza,Procedure,Pediatrics,157,13.51,2,14278.37
+2024-10-08,Downtown,Follow-Up,Family Medicine,97,58.56,12,41764.0
+2025-05-27,Westpark,Telehealth,Internal Medicine,92,64.13,22,46927.56
+2024-04-29,Downtown,Procedure,Pediatrics,24,56.25,23,56218.57
+2024-08-07,Westpark,New Patient,Internal Medicine,0,71.08,2,50484.46
+2024-06-25,Downtown,Follow-Up,Pediatrics,167,84.79,26,45355.2
+2025-05-17,Riverside,Procedure,Pediatrics,53,13.26,22,66105.78
+2025-04-03,Eastgate,Urgent Care,Cardiology,58,76.45,36,70849.64
+2024-01-13,Medical Plaza,Telehealth,Cardiology,22,37.43,4,55024.35
+2024-02-20,Downtown,Urgent Care,Internal Medicine,161,70.27,9,26173.77
+2024-03-01,Medical Plaza,New Patient,Pediatrics,140,21.4,34,10907.37
+2024-10-01,Riverside,Follow-Up,Orthopedics,43,85.18,29,7683.39
+2024-04-16,Downtown,Follow-Up,Family Medicine,46,62.72,12,57350.86
+2024-08-21,Riverside,Urgent Care,Orthopedics,169,15.02,18,10205.34
+2024-12-04,Westpark,Procedure,Cardiology,120,67.19,2,55621.11
+2025-04-28,Northside,Telehealth,Family Medicine,113,11.67,0,34830.8
+2024-01-19,Eastgate,Follow-Up,Pediatrics,28,83.46,37,5295.57
+2024-10-09,Riverside,New Patient,Family Medicine,63,65.91,2,7421.23
+2024-12-01,Northside,Urgent Care,Pediatrics,54,14.21,38,13175.64
+2024-12-23,Northside,Follow-Up,Cardiology,139,51.38,13,6068.81
+2024-10-17,Northside,Follow-Up,Orthopedics,93,6.9,8,876.05
+2024-07-11,Downtown,Urgent Care,Family Medicine,150,30.47,10,70236.98
+2024-09-02,Riverside,Follow-Up,Cardiology,2,63.69,24,15248.45
+2025-02-05,Eastgate,Procedure,Cardiology,93,25.25,37,38875.31
+2025-04-02,Westpark,New Patient,Family Medicine,79,90.86,25,57206.97
+2025-02-03,Riverside,Procedure,Family Medicine,83,63.54,4,18398.96
+2025-04-10,Eastgate,Procedure,Internal Medicine,42,39.98,2,28030.9
+2024-08-16,Riverside,New Patient,Dermatology,23,76.95,35,13702.68
+2024-03-25,Medical Plaza,Telehealth,Pediatrics,52,42.25,21,67733.89
+2024-09-20,Medical Plaza,Urgent Care,Orthopedics,10,49.59,0,65885.09
+2024-02-23,Riverside,Urgent Care,Family Medicine,162,29.65,38,71914.97

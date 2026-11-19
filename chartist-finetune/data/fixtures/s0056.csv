@@ -1,0 +1,241 @@
+shipmentDate,carrierName,transportMode,originRegion,shipmentWeightKg,transitDays,freightCost,palletCount
+2025-05-20,SaiaLTL,Intermodal,Southwest,18730.63,1,12211.8,3
+2025-05-19,JBHuntIntermodal,FTL,Pacific Northwest,30250.55,5,14375.93,17
+2025-03-27,FedExFreight,Drayage,Northeast,19794.65,20,15473.88,18
+2025-02-28,FedExFreight,FTL,Pacific Northwest,24516.82,7,622.58,9
+2025-05-21,SchneiderNational,FTL,Northeast,36516.34,18,14890.43,18
+2025-03-07,XPOLogistics,Air,Southwest,13882.78,6,1606.68,2
+2024-09-08,SchneiderNational,Air,West,40375.68,17,15232.35,13
+2024-11-04,SchneiderNational,Drayage,Southeast,30750.57,18,5772.07,8
+2024-09-29,SaiaLTL,FTL,West,32078.51,10,10297.05,16
+2024-06-22,FedExFreight,LTL,Southeast,24861.61,19,9535.0,14
+2024-08-26,FedExFreight,Air,Midwest,7886.31,15,17403.73,26
+2025-04-22,SaiaLTL,FTL,West,18345.97,3,3707.58,7
+2024-01-15,SaiaLTL,FTL,Midwest,41008.54,2,14403.12,13
+2025-06-14,FedExFreight,Intermodal,Southeast,20880.28,4,4914.85,22
+2025-04-03,ODFLCarriers,LTL,Northeast,12850.98,2,13658.64,15
+2024-01-12,JBHuntIntermodal,LTL,Midwest,19857.78,3,2785.05,15
+2024-10-17,SaiaLTL,LTL,Southwest,6304.1,3,7531.98,10
+2024-01-05,SaiaLTL,Drayage,Northeast,33714.13,2,3920.49,17
+2025-04-19,SaiaLTL,LTL,Southeast,23706.19,16,14980.74,23
+2024-03-10,JBHuntIntermodal,LTL,West,6969.94,11,2009.85,4
+2024-08-18,ODFLCarriers,Air,Southeast,20020.89,15,6363.48,19
+2025-04-06,JBHuntIntermodal,FTL,Southeast,24654.35,6,774.18,10
+2025-01-20,SchneiderNational,Drayage,Northeast,14058.04,12,9804.38,22
+2024-02-14,JBHuntIntermodal,Intermodal,Southeast,19009.91,17,4899.46,14
+2024-12-04,XPOLogistics,LTL,West,34911.76,4,16322.5,9
+2024-01-20,FedExFreight,Drayage,West,4743.71,3,519.15,12
+2025-06-10,JBHuntIntermodal,Drayage,Pacific Northwest,22245.37,13,13649.75,8
+2024-04-29,SaiaLTL,Air,Southwest,16127.57,7,18383.81,18
+2025-05-03,XPOLogistics,Drayage,Southwest,32311.59,5,10757.99,7
+2025-02-19,ODFLCarriers,LTL,Southeast,19827.25,18,2343.67,3
+2024-12-08,XPOLogistics,Drayage,West,40205.62,3,16640.35,25
+2024-12-22,FedExFreight,Intermodal,West,7413.04,2,14442.08,6
+2024-12-24,SaiaLTL,FTL,Northeast,36368.64,16,14804.46,19
+2025-03-05,JBHuntIntermodal,FTL,Pacific Northwest,15591.25,1,11749.33,23
+2025-05-10,SchneiderNational,LTL,Southeast,18289.89,5,8572.99,24
+2024-03-12,ODFLCarriers,LTL,Southwest,32432.28,2,7579.51,6
+2024-05-11,SchneiderNational,Air,West,2984.55,19,11404.92,2
+2024-11-17,JBHuntIntermodal,Drayage,Midwest,12239.94,4,14017.01,10
+2025-03-06,ODFLCarriers,Air,Southeast,36418.14,19,17752.38,10
+2024-10-19,ODFLCarriers,FTL,Pacific Northwest,34889.3,21,1836.53,2
+2024-05-09,XPOLogistics,FTL,Pacific Northwest,29608.09,15,15736.2,7
+2024-10-30,JBHuntIntermodal,Drayage,Southwest,36711.69,11,3116.19,7
+2025-02-18,FedExFreight,Air,Midwest,33822.2,17,2018.17,13
+2025-05-17,ODFLCarriers,Air,Pacific Northwest,28937.0,7,6378.93,9
+2024-04-05,JBHuntIntermodal,LTL,Southwest,37676.97,5,13472.77,2
+2024-12-31,JBHuntIntermodal,Air,Northeast,19607.03,7,17534.69,23
+2025-05-08,FedExFreight,Intermodal,Northeast,19331.57,13,5769.98,5
+2025-03-03,JBHuntIntermodal,Intermodal,Southeast,25802.79,12,12717.36,15
+2025-06-13,ODFLCarriers,Drayage,Southwest,36866.96,20,11779.24,20
+2024-04-30,SchneiderNational,FTL,West,27778.0,14,9608.22,17
+2024-12-18,SchneiderNational,LTL,Southwest,7967.96,9,9724.59,13
+2024-05-30,JBHuntIntermodal,LTL,Northeast,37996.49,13,16667.9,17
+2025-03-13,ODFLCarriers,Air,Northeast,12519.12,5,12096.52,10
+2025-04-21,JBHuntIntermodal,FTL,Pacific Northwest,2420.68,18,2028.86,11
+2024-08-13,ODFLCarriers,LTL,Southeast,6672.07,8,3551.92,5
+2025-04-12,XPOLogistics,Air,Northeast,39691.79,9,6258.64,21
+2025-05-21,XPOLogistics,Air,Southeast,16222.05,2,16282.37,2
+2025-04-02,SchneiderNational,Drayage,West,14349.14,10,11693.79,14
+2024-10-01,JBHuntIntermodal,Air,Northeast,21965.19,2,11105.04,23
+2024-01-23,SchneiderNational,Drayage,Midwest,40160.97,10,960.51,14
+2024-05-04,JBHuntIntermodal,Intermodal,West,40860.04,6,7572.51,3
+2024-02-03,JBHuntIntermodal,Air,Southeast,12382.26,15,9544.76,20
+2025-03-24,XPOLogistics,FTL,West,16471.03,18,9066.29,3
+2025-06-23,SchneiderNational,LTL,Midwest,33219.68,15,5824.84,16
+2025-04-12,FedExFreight,FTL,Midwest,32076.75,19,12197.67,6
+2024-12-28,FedExFreight,Air,Southeast,34248.36,15,13616.59,17
+2025-05-14,FedExFreight,Air,Midwest,27440.87,6,6517.19,1
+2024-07-19,FedExFreight,LTL,Southeast,20541.79,19,6175.65,13
+2024-02-22,FedExFreight,Air,Midwest,7102.23,8,7875.78,18
+2025-05-05,SchneiderNational,FTL,Pacific Northwest,36302.49,4,5837.88,25
+2025-05-17,FedExFreight,Intermodal,West,2653.69,16,16458.89,4
+2025-04-27,SchneiderNational,Intermodal,Northeast,18760.46,8,16126.79,9
+2024-05-27,FedExFreight,Air,West,14677.19,3,1315.34,5
+2024-03-06,SchneiderNational,Intermodal,Southeast,6216.74,5,17350.41,21
+2024-04-09,FedExFreight,Intermodal,Southwest,10726.91,12,14765.61,14
+2024-11-21,FedExFreight,FTL,Northeast,24695.15,18,13975.41,3
+2024-08-05,JBHuntIntermodal,Drayage,West,3476.68,8,14137.54,13
+2024-09-24,SaiaLTL,Air,Pacific Northwest,5883.49,13,6410.63,20
+2024-01-09,FedExFreight,Intermodal,Midwest,5848.33,8,11354.07,24
+2024-11-04,SchneiderNational,Intermodal,Pacific Northwest,29974.32,16,9883.95,6
+2024-08-29,SaiaLTL,FTL,Southeast,12027.43,7,3439.52,14
+2025-05-25,JBHuntIntermodal,Air,Southwest,34629.13,20,298.21,25
+2024-10-14,ODFLCarriers,Intermodal,Midwest,17623.96,16,472.83,10
+2024-04-03,SchneiderNational,Intermodal,Northeast,17612.97,13,8585.98,2
+2024-10-24,ODFLCarriers,LTL,Southeast,14341.47,9,11173.21,9
+2024-10-13,ODFLCarriers,Drayage,Southeast,1919.82,11,11428.13,19
+2024-01-18,SchneiderNational,LTL,West,5134.2,7,13663.56,2
+2024-10-27,SchneiderNational,Intermodal,Southwest,37565.01,17,13568.18,24
+2025-03-17,XPOLogistics,Intermodal,Southeast,32194.45,8,9451.77,15
+2025-01-06,SchneiderNational,Intermodal,West,1399.72,12,15385.1,1
+2024-04-20,ODFLCarriers,Intermodal,Northeast,38527.09,7,6434.95,3
+2024-02-25,ODFLCarriers,Intermodal,Southwest,30708.35,14,6879.61,20
+2024-11-25,SaiaLTL,LTL,Southeast,5194.12,21,4856.15,10
+2024-07-04,SaiaLTL,Drayage,Midwest,7679.53,13,2641.51,4
+2024-09-22,ODFLCarriers,Intermodal,Southwest,20171.09,2,6402.72,7
+2025-01-27,FedExFreight,Intermodal,Pacific Northwest,36341.8,18,2320.34,18
+2024-04-17,JBHuntIntermodal,FTL,West,31478.26,19,14092.22,16
+2025-03-28,JBHuntIntermodal,Drayage,Southwest,13295.4,18,13413.3,3
+2024-02-21,XPOLogistics,Air,Southwest,40739.08,9,14529.93,2
+2024-05-18,ODFLCarriers,Intermodal,Southeast,39430.38,19,4856.72,4
+2024-04-03,SchneiderNational,Intermodal,Southeast,3115.7,15,6917.52,14
+2025-05-29,JBHuntIntermodal,Air,West,14133.84,12,9667.2,8
+2024-04-19,FedExFreight,Air,Midwest,31463.44,10,11160.29,17
+2024-08-10,XPOLogistics,Drayage,Midwest,14692.44,13,7188.02,25
+2024-11-26,XPOLogistics,Drayage,Midwest,26189.19,4,1035.74,18
+2024-10-23,FedExFreight,Air,Midwest,15631.68,13,16819.7,18
+2024-12-12,XPOLogistics,LTL,Southeast,29781.03,20,18010.91,19
+2025-01-23,SaiaLTL,Drayage,Southwest,16818.82,18,6798.98,4
+2025-01-29,XPOLogistics,LTL,Pacific Northwest,12634.45,18,5803.74,3
+2024-08-12,XPOLogistics,LTL,Midwest,28654.25,19,17213.85,15
+2024-12-07,SchneiderNational,LTL,Midwest,30852.07,7,10902.44,2
+2024-04-21,SaiaLTL,LTL,Northeast,8275.66,16,16384.81,22
+2024-05-04,FedExFreight,Drayage,Northeast,16304.44,12,8722.75,6
+2025-05-01,SchneiderNational,FTL,Pacific Northwest,3189.18,12,4223.04,19
+2024-03-20,ODFLCarriers,Drayage,Northeast,36233.06,13,13773.71,11
+2024-12-02,SchneiderNational,Drayage,Northeast,18819.07,14,7699.14,26
+2024-10-08,SaiaLTL,LTL,Midwest,11915.98,19,12244.63,4
+2024-05-29,JBHuntIntermodal,LTL,Midwest,14144.55,3,9398.87,8
+2025-05-01,SaiaLTL,Drayage,Midwest,16317.05,2,13025.31,19
+2024-11-08,XPOLogistics,Intermodal,Southwest,9223.89,7,4964.07,9
+2025-06-22,FedExFreight,Intermodal,Midwest,20051.9,20,9332.45,17
+2024-01-04,XPOLogistics,Intermodal,Pacific Northwest,3957.53,21,5239.61,6
+2024-02-21,SchneiderNational,LTL,Northeast,23252.8,7,18153.77,2
+2024-02-19,SchneiderNational,Drayage,West,20685.72,6,13550.97,14
+2024-01-13,ODFLCarriers,Intermodal,West,10894.86,7,1618.12,18
+2025-06-08,ODFLCarriers,Drayage,Southeast,28539.65,6,728.69,4
+2025-03-13,ODFLCarriers,Intermodal,Southeast,29036.67,9,1164.27,23
+2025-04-01,SaiaLTL,FTL,Southeast,29629.24,2,13186.92,6
+2024-06-15,ODFLCarriers,Air,Southeast,12412.13,10,802.24,5
+2024-12-19,SaiaLTL,Air,Midwest,22977.06,3,5906.43,22
+2025-03-02,FedExFreight,Intermodal,Northeast,5199.93,1,14854.37,23
+2025-05-10,ODFLCarriers,Intermodal,Southwest,28406.6,13,2122.29,7
+2025-03-08,SchneiderNational,Drayage,Southeast,38277.64,7,2269.5,17
+2025-05-01,SchneiderNational,Drayage,Midwest,28320.85,14,4490.64,20
+2024-12-17,FedExFreight,LTL,Midwest,7293.07,10,12257.46,19
+2024-07-11,XPOLogistics,LTL,Northeast,5705.07,13,11178.7,25
+2024-10-31,SaiaLTL,Drayage,Northeast,8281.01,8,7234.03,4
+2024-01-13,XPOLogistics,Air,Pacific Northwest,33867.86,8,14062.98,7
+2024-04-07,SaiaLTL,Air,West,16445.84,8,10863.36,21
+2024-10-19,XPOLogistics,Intermodal,Northeast,29325.22,14,6404.92,11
+2024-02-01,ODFLCarriers,FTL,Midwest,1942.53,10,17820.6,22
+2024-10-08,SchneiderNational,FTL,Northeast,40347.5,13,492.69,5
+2024-03-17,SaiaLTL,FTL,Midwest,14916.74,12,3905.6,17
+2024-10-01,FedExFreight,Air,Southeast,35672.72,3,16152.43,14
+2024-03-09,JBHuntIntermodal,FTL,Midwest,9854.28,5,10479.36,22
+2024-03-15,ODFLCarriers,Drayage,Northeast,12325.18,1,874.92,12
+2024-06-27,XPOLogistics,LTL,West,38399.05,21,12881.19,2
+2024-09-29,SchneiderNational,FTL,Southwest,30458.81,3,14530.53,26
+2024-01-15,FedExFreight,Drayage,Southwest,15990.01,6,11904.96,5
+2025-01-23,ODFLCarriers,LTL,West,22987.09,20,6352.32,21
+2024-02-09,XPOLogistics,LTL,Southwest,16456.81,16,6253.36,12
+2024-09-16,ODFLCarriers,Drayage,Pacific Northwest,28869.9,6,16160.32,17
+2025-05-05,SaiaLTL,Drayage,Midwest,29887.7,16,17254.14,18
+2024-02-13,ODFLCarriers,LTL,Southwest,108.76,17,17356.11,4
+2024-01-19,SaiaLTL,Air,Southeast,17981.19,10,15671.84,26
+2024-09-27,ODFLCarriers,Air,Midwest,25918.42,6,12049.32,13
+2024-11-24,FedExFreight,FTL,West,37449.62,6,8224.93,16
+2025-02-09,FedExFreight,Air,Southwest,3927.71,10,1338.16,10
+2025-04-24,JBHuntIntermodal,FTL,Southwest,20849.03,19,7880.69,6
+2024-09-10,FedExFreight,Drayage,West,38731.29,3,10979.86,10
+2024-12-22,SchneiderNational,FTL,Southwest,30157.8,8,15548.8,24
+2024-04-14,SaiaLTL,Drayage,Northeast,31272.76,9,9177.54,25
+2024-01-17,SchneiderNational,Intermodal,Midwest,16790.92,10,7621.56,5
+2024-03-31,SaiaLTL,LTL,Midwest,21638.07,16,10500.14,15
+2024-06-25,SaiaLTL,Intermodal,Northeast,7660.34,14,13479.47,6
+2025-05-17,SchneiderNational,FTL,Pacific Northwest,15884.45,14,15149.91,24
+2024-12-04,FedExFreight,Drayage,Midwest,28210.17,2,14707.75,6
+2025-06-18,FedExFreight,LTL,Southwest,4483.39,8,12566.51,17
+2024-04-18,XPOLogistics,FTL,West,9633.34,4,16107.4,2
+2024-12-30,FedExFreight,Air,Pacific Northwest,10002.75,6,6915.75,2
+2025-03-21,FedExFreight,Air,Midwest,18994.91,2,1469.16,25
+2024-06-13,FedExFreight,FTL,Midwest,15323.86,12,12014.8,15
+2025-01-09,SchneiderNational,FTL,Southwest,38778.02,7,11928.75,9
+2025-03-03,JBHuntIntermodal,Intermodal,Southwest,37842.06,14,12491.26,16
+2024-02-28,ODFLCarriers,FTL,Pacific Northwest,27391.0,14,14170.19,15
+2025-03-03,JBHuntIntermodal,LTL,Pacific Northwest,10693.23,6,17679.12,22
+2024-12-05,SchneiderNational,FTL,Pacific Northwest,21220.99,3,8948.54,2
+2024-03-28,SaiaLTL,Intermodal,West,21944.02,3,2368.59,10
+2024-11-28,SchneiderNational,Intermodal,Southwest,7361.11,12,10566.76,16
+2024-09-30,XPOLogistics,FTL,Midwest,2760.89,21,17950.8,7
+2025-04-30,SchneiderNational,LTL,West,28362.7,2,1700.84,26
+2024-11-28,SaiaLTL,Intermodal,West,25998.29,16,6782.33,24
+2025-01-22,SchneiderNational,Drayage,Southeast,14933.13,6,16676.87,11
+2024-12-03,SchneiderNational,FTL,Northeast,3137.06,21,1204.51,17
+2024-12-19,SaiaLTL,Intermodal,West,20821.46,14,6465.67,25
+2025-03-27,ODFLCarriers,Intermodal,Northeast,26504.65,6,3962.04,6
+2024-09-26,ODFLCarriers,FTL,Pacific Northwest,25314.16,9,9017.99,25
+2025-06-11,JBHuntIntermodal,Intermodal,Midwest,29944.33,7,2672.35,8
+2024-02-04,JBHuntIntermodal,Air,Pacific Northwest,19878.06,6,7331.03,14
+2024-04-27,ODFLCarriers,Intermodal,Southeast,39596.23,16,4604.49,19
+2024-11-21,XPOLogistics,Air,Southwest,38229.66,2,934.79,9
+2025-03-02,JBHuntIntermodal,Intermodal,Southwest,32530.44,13,15694.44,11
+2025-05-08,FedExFreight,LTL,Pacific Northwest,5718.48,5,9492.92,5
+2025-01-05,SchneiderNational,LTL,West,39797.82,3,17282.55,4
+2024-11-05,JBHuntIntermodal,FTL,Midwest,3326.47,9,2308.32,23
+2024-07-22,ODFLCarriers,Drayage,West,31954.67,6,690.59,16
+2024-12-31,SaiaLTL,Drayage,Pacific Northwest,30521.91,10,13964.19,6
+2024-11-17,XPOLogistics,FTL,Midwest,27779.86,17,4211.55,19
+2025-05-22,XPOLogistics,Intermodal,Pacific Northwest,40958.08,16,4718.0,16
+2025-06-03,ODFLCarriers,Intermodal,Southwest,36205.47,5,4189.86,4
+2025-02-20,ODFLCarriers,LTL,Midwest,14672.23,12,8314.25,4
+2025-03-31,SaiaLTL,Air,West,17578.91,7,12158.41,17
+2024-04-30,FedExFreight,Intermodal,Midwest,29920.43,13,7268.09,15
+2025-05-23,FedExFreight,Drayage,West,3808.94,6,765.77,4
+2024-05-16,FedExFreight,LTL,West,27833.07,20,11667.14,23
+2024-01-01,ODFLCarriers,LTL,Midwest,29009.2,10,635.72,23
+2024-08-27,SchneiderNational,Drayage,West,27422.78,8,6087.31,15
+2025-05-05,SaiaLTL,Drayage,Southwest,15317.13,18,8384.19,13
+2024-11-30,XPOLogistics,Air,Northeast,14870.16,5,17027.19,15
+2024-10-10,ODFLCarriers,LTL,Northeast,29069.86,7,18224.19,21
+2025-02-10,XPOLogistics,Intermodal,Southeast,14632.63,10,16253.02,26
+2025-04-03,XPOLogistics,Air,Pacific Northwest,22679.5,4,5815.78,10
+2025-02-05,SchneiderNational,Intermodal,Northeast,1440.92,13,14752.7,10
+2024-06-17,ODFLCarriers,Drayage,Northeast,20634.72,2,3950.57,18
+2024-03-15,JBHuntIntermodal,Air,Southeast,13656.88,12,13703.34,2
+2024-08-09,SchneiderNational,Intermodal,Midwest,5990.73,18,4971.87,15
+2025-04-02,XPOLogistics,Intermodal,West,6370.49,20,9426.92,4
+2024-10-13,ODFLCarriers,LTL,West,31995.61,6,9457.27,8
+2025-05-31,FedExFreight,LTL,Southeast,1662.75,10,9642.75,5
+2025-03-20,JBHuntIntermodal,Drayage,Southeast,30848.59,8,15539.2,20
+2024-10-07,SchneiderNational,Air,West,31859.37,11,4942.89,2
+2025-06-05,ODFLCarriers,Air,Midwest,22874.37,9,10185.37,7
+2024-02-28,ODFLCarriers,FTL,Midwest,13212.13,20,10831.78,14
+2025-01-16,ODFLCarriers,FTL,Southwest,24306.72,19,6020.24,8
+2025-03-23,JBHuntIntermodal,Drayage,Southwest,36339.26,16,15073.21,6
+2025-04-11,XPOLogistics,Drayage,Midwest,1813.64,5,7233.48,4
+2024-04-16,JBHuntIntermodal,Intermodal,Southeast,13455.56,13,7290.74,2
+2024-12-23,SaiaLTL,Air,Pacific Northwest,39893.01,9,2881.15,2
+2024-06-04,JBHuntIntermodal,Intermodal,West,5883.22,3,17254.24,24
+2024-12-13,ODFLCarriers,LTL,West,814.91,8,7463.38,8
+2025-02-08,SaiaLTL,FTL,Southeast,24842.22,7,288.48,18
+2024-07-20,SaiaLTL,Intermodal,Southwest,24941.6,19,14948.84,3
+2025-02-21,SaiaLTL,FTL,Southeast,6041.53,19,13572.4,10
+2024-02-21,JBHuntIntermodal,LTL,Midwest,28155.83,18,10950.14,7
+2024-01-13,XPOLogistics,LTL,West,20758.77,9,17089.17,5
+2025-05-10,SaiaLTL,Intermodal,Pacific Northwest,36159.36,12,11398.96,14
+2024-09-26,SchneiderNational,FTL,Pacific Northwest,39921.13,15,8739.22,19
+2025-02-20,SaiaLTL,FTL,West,10881.66,15,18337.55,4
+2024-10-30,ODFLCarriers,Intermodal,Southeast,13983.32,3,17212.07,17
+2024-04-08,FedExFreight,Air,Southwest,3522.01,18,715.36,16

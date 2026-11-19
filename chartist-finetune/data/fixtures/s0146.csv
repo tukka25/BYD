@@ -1,0 +1,241 @@
+shipDate,carrierName,transportMode,originRegion,shipmentWeightKg,transitDays,freightCost
+2025-05-29,Yellow Corporation,Less-Than-Truckload,Midwest,16096.35,19,1465.78
+2024-05-16,Saia,Less-Than-Truckload,Midwest,16069.26,1,6370.86
+2024-09-11,Saia,Intermodal Rail,West Coast,19146.89,15,17176.25
+2024-10-11,UPS Freight,Full Truckload,Southeast,16206.78,21,7895.23
+2024-10-12,XPO Logistics,Air Freight,Northeast,4593.6,20,14233.99
+2025-02-14,Yellow Corporation,Air Freight,Southeast,20556.56,19,17189.51
+2024-07-28,UPS Freight,Ocean Container,Southeast,14661.27,8,6229.54
+2024-12-08,Old Dominion,Full Truckload,Northeast,22434.83,13,8956.4
+2024-12-15,XPO Logistics,Air Freight,Pacific Northwest,16029.44,15,9121.36
+2024-04-20,J.B. Hunt,Intermodal Rail,West Coast,10426.14,12,160.51
+2024-01-11,UPS Freight,Full Truckload,Southeast,17172.27,5,1815.21
+2024-01-25,Estes Express,Air Freight,Southwest,10750.28,19,18325.45
+2025-04-25,Estes Express,Ocean Container,Midwest,21391.87,7,947.58
+2024-10-09,Estes Express,Less-Than-Truckload,Northeast,4277.4,14,4132.47
+2024-09-16,Saia,Less-Than-Truckload,Pacific Northwest,20063.44,8,7095.75
+2024-04-18,UPS Freight,Full Truckload,Pacific Northwest,2375.45,5,6297.62
+2024-05-05,UPS Freight,Full Truckload,Northeast,16986.65,11,5758.6
+2024-11-15,Saia,Intermodal Rail,Midwest,19136.11,15,10408.72
+2024-06-06,UPS Freight,Full Truckload,Southeast,14155.15,4,13242.27
+2024-01-21,Saia,Ocean Container,West Coast,4648.66,17,17402.18
+2024-11-27,UPS Freight,Intermodal Rail,Midwest,9560.21,1,12191.01
+2025-03-12,Yellow Corporation,Intermodal Rail,Pacific Northwest,16120.53,12,18444.38
+2024-02-29,UPS Freight,Full Truckload,Northeast,7798.6,16,8072.57
+2024-07-22,FedEx Freight,Ocean Container,Southwest,22294.11,17,9833.06
+2024-04-22,Saia,Full Truckload,Midwest,8304.55,5,366.35
+2024-06-18,Estes Express,Less-Than-Truckload,Midwest,15171.6,19,6196.17
+2024-10-02,XPO Logistics,Intermodal Rail,Southwest,18180.48,2,4566.54
+2024-12-23,Estes Express,Full Truckload,Northeast,2578.49,6,5888.99
+2024-08-14,Saia,Air Freight,Southwest,22880.41,2,11999.28
+2025-05-06,Old Dominion,Air Freight,Southwest,12606.98,18,2474.51
+2024-10-15,J.B. Hunt,Less-Than-Truckload,West Coast,6346.11,7,5490.37
+2024-04-23,Yellow Corporation,Intermodal Rail,Midwest,12444.47,5,17206.81
+2025-03-13,UPS Freight,Less-Than-Truckload,Midwest,21864.93,16,16471.11
+2024-10-21,Old Dominion,Air Freight,Pacific Northwest,5327.69,16,2992.05
+2025-05-30,XPO Logistics,Air Freight,Southwest,21973.45,14,7788.83
+2025-05-14,Estes Express,Air Freight,Southwest,9528.03,13,2959.88
+2024-07-04,UPS Freight,Ocean Container,Midwest,1144.56,20,11921.89
+2024-05-31,J.B. Hunt,Air Freight,West Coast,19288.15,7,8573.08
+2025-05-31,FedEx Freight,Intermodal Rail,Pacific Northwest,5395.08,15,7490.94
+2024-03-27,Saia,Air Freight,West Coast,14228.21,17,12167.18
+2024-01-03,J.B. Hunt,Full Truckload,Northeast,10443.11,17,17083.93
+2024-07-04,J.B. Hunt,Intermodal Rail,Pacific Northwest,3700.22,14,1290.56
+2024-04-15,Yellow Corporation,Intermodal Rail,West Coast,18857.04,15,3766.13
+2024-04-19,Estes Express,Air Freight,Southwest,18034.12,6,8859.53
+2025-05-19,Saia,Full Truckload,Southwest,7927.37,7,10850.9
+2025-01-06,Estes Express,Air Freight,Midwest,6297.45,12,4691.56
+2024-05-13,Estes Express,Less-Than-Truckload,Northeast,19812.36,4,15760.38
+2024-08-07,XPO Logistics,Full Truckload,Southwest,40.73,14,4480.68
+2024-04-14,XPO Logistics,Less-Than-Truckload,Southwest,20583.97,11,9050.76
+2025-06-04,FedEx Freight,Ocean Container,Northeast,2047.65,7,15932.2
+2024-01-18,Estes Express,Intermodal Rail,Pacific Northwest,7071.62,18,15145.76
+2024-10-13,Yellow Corporation,Intermodal Rail,Southwest,1212.9,3,7852.16
+2024-10-22,Saia,Full Truckload,Southwest,17981.78,18,1588.58
+2024-06-24,XPO Logistics,Less-Than-Truckload,Southwest,8407.35,12,1291.77
+2024-01-06,UPS Freight,Ocean Container,West Coast,12418.74,15,16872.94
+2025-02-23,Old Dominion,Less-Than-Truckload,Northeast,1045.99,20,16064.31
+2025-01-21,Estes Express,Air Freight,Pacific Northwest,4596.7,15,17088.07
+2025-05-27,Estes Express,Intermodal Rail,West Coast,18249.96,5,764.02
+2025-05-21,Old Dominion,Full Truckload,West Coast,2545.76,10,13544.02
+2024-09-29,J.B. Hunt,Intermodal Rail,Pacific Northwest,3193.85,21,2625.19
+2025-03-02,Saia,Intermodal Rail,Northeast,9504.13,7,17931.58
+2024-08-28,Estes Express,Full Truckload,West Coast,17895.21,3,2922.93
+2024-01-24,Old Dominion,Intermodal Rail,Northeast,23993.94,17,14817.1
+2024-12-05,Estes Express,Intermodal Rail,Southeast,6857.89,13,11476.01
+2024-04-08,Estes Express,Ocean Container,Southwest,15990.34,2,13391.76
+2024-10-07,FedEx Freight,Full Truckload,West Coast,23262.41,20,11597.67
+2025-05-17,Saia,Intermodal Rail,Northeast,22268.48,1,10084.96
+2024-11-14,UPS Freight,Ocean Container,Southeast,6606.08,10,5166.6
+2024-04-23,FedEx Freight,Air Freight,Northeast,4723.99,20,6858.25
+2024-03-18,UPS Freight,Ocean Container,Southwest,23692.31,6,12791.34
+2025-06-18,Saia,Intermodal Rail,Southwest,18050.83,18,7896.51
+2025-02-20,J.B. Hunt,Air Freight,Southwest,13890.21,12,11023.03
+2024-11-15,FedEx Freight,Ocean Container,Northeast,2174.04,4,14980.3
+2024-11-27,Old Dominion,Less-Than-Truckload,Southeast,13958.13,10,8787.38
+2024-11-22,UPS Freight,Intermodal Rail,Southwest,1742.58,14,10453.68
+2025-05-27,XPO Logistics,Full Truckload,Southwest,16377.64,15,6169.78
+2024-02-13,Saia,Air Freight,Southeast,17169.64,16,8582.5
+2025-04-23,Saia,Intermodal Rail,West Coast,6662.02,2,11757.78
+2025-02-28,Yellow Corporation,Air Freight,Pacific Northwest,1244.77,4,1711.98
+2024-04-17,UPS Freight,Intermodal Rail,Midwest,3560.66,14,17729.96
+2024-12-02,Estes Express,Full Truckload,Midwest,894.63,19,14895.75
+2025-05-28,Old Dominion,Air Freight,Pacific Northwest,22153.34,11,2034.01
+2024-06-26,J.B. Hunt,Air Freight,Southeast,30.4,20,10357.82
+2024-04-02,UPS Freight,Ocean Container,Southwest,22473.22,15,13723.33
+2025-02-20,FedEx Freight,Less-Than-Truckload,West Coast,5393.0,5,7512.77
+2024-11-27,UPS Freight,Less-Than-Truckload,Pacific Northwest,5214.83,10,304.48
+2025-04-02,Old Dominion,Full Truckload,Northeast,4665.64,13,2345.72
+2025-02-26,Saia,Ocean Container,Southwest,998.2,7,9297.98
+2025-01-26,UPS Freight,Intermodal Rail,Southwest,1336.2,2,13043.52
+2024-08-24,FedEx Freight,Full Truckload,Midwest,21240.73,8,3375.79
+2024-09-30,Old Dominion,Intermodal Rail,Southeast,5240.33,8,9338.36
+2025-04-19,J.B. Hunt,Less-Than-Truckload,West Coast,7159.4,15,18224.11
+2024-03-25,J.B. Hunt,Intermodal Rail,Northeast,10809.57,17,5062.91
+2024-10-29,Yellow Corporation,Intermodal Rail,Midwest,13964.56,13,16873.61
+2025-06-22,Saia,Full Truckload,Northeast,17232.58,18,11323.17
+2024-04-28,Old Dominion,Ocean Container,Northeast,19014.4,10,10558.41
+2025-06-14,Estes Express,Less-Than-Truckload,Pacific Northwest,3219.46,10,4933.4
+2024-01-24,XPO Logistics,Full Truckload,Pacific Northwest,1969.74,17,13085.06
+2024-08-01,Saia,Full Truckload,Southwest,6914.56,18,13127.88
+2025-03-30,XPO Logistics,Full Truckload,Pacific Northwest,6159.6,2,9901.21
+2025-01-09,XPO Logistics,Air Freight,Southwest,17835.23,13,6482.89
+2024-10-09,UPS Freight,Ocean Container,Midwest,23663.12,11,14575.29
+2025-03-25,Yellow Corporation,Air Freight,Midwest,22920.04,20,12351.53
+2025-06-05,UPS Freight,Air Freight,Southeast,4000.44,12,1337.36
+2024-09-07,J.B. Hunt,Full Truckload,Pacific Northwest,3215.68,16,4384.2
+2024-07-19,J.B. Hunt,Ocean Container,Midwest,12656.27,19,2389.69
+2024-01-28,FedEx Freight,Less-Than-Truckload,West Coast,17553.5,4,11718.99
+2025-01-11,Old Dominion,Intermodal Rail,Southeast,19324.4,8,17242.25
+2024-08-11,XPO Logistics,Full Truckload,Northeast,3044.42,18,4365.65
+2025-01-02,Estes Express,Less-Than-Truckload,Midwest,3644.4,4,152.0
+2025-03-22,Estes Express,Less-Than-Truckload,Southwest,18473.91,12,14825.14
+2024-02-04,UPS Freight,Less-Than-Truckload,Northeast,12598.52,17,13743.83
+2025-02-22,FedEx Freight,Intermodal Rail,West Coast,17379.28,12,10139.35
+2024-09-17,Saia,Intermodal Rail,Midwest,1971.67,18,8142.79
+2025-03-25,Old Dominion,Intermodal Rail,Southwest,20435.77,11,8791.82
+2025-04-02,Estes Express,Full Truckload,West Coast,7012.22,8,11006.42
+2024-06-15,Estes Express,Less-Than-Truckload,Northeast,9699.95,7,567.1
+2024-05-09,Old Dominion,Intermodal Rail,Midwest,6568.19,7,15122.16
+2024-07-25,Yellow Corporation,Air Freight,Midwest,17893.8,18,5744.85
+2024-12-02,FedEx Freight,Ocean Container,Southeast,12430.04,11,12796.63
+2024-09-17,Old Dominion,Less-Than-Truckload,Pacific Northwest,2093.99,17,14163.81
+2025-01-23,XPO Logistics,Full Truckload,Midwest,5557.24,20,17633.96
+2024-05-29,Old Dominion,Intermodal Rail,Southwest,3085.77,18,10611.85
+2024-01-12,FedEx Freight,Intermodal Rail,Midwest,3006.91,14,17383.49
+2024-07-27,Saia,Air Freight,West Coast,5293.62,12,1846.86
+2024-11-13,Estes Express,Intermodal Rail,Pacific Northwest,11607.6,6,16213.37
+2024-03-03,J.B. Hunt,Full Truckload,Northeast,11450.93,8,4390.33
+2024-01-02,J.B. Hunt,Ocean Container,Southwest,1422.12,8,10706.43
+2024-06-15,Yellow Corporation,Air Freight,Pacific Northwest,17991.49,12,13860.89
+2024-07-22,UPS Freight,Ocean Container,Midwest,6730.84,5,14828.73
+2025-04-10,J.B. Hunt,Ocean Container,Southeast,4160.78,8,13247.41
+2024-03-22,XPO Logistics,Less-Than-Truckload,Northeast,8965.71,6,9524.25
+2024-03-07,J.B. Hunt,Full Truckload,Midwest,4474.12,3,3508.43
+2025-01-09,Saia,Intermodal Rail,Southeast,15185.24,8,13718.36
+2024-09-16,Yellow Corporation,Ocean Container,Southwest,1258.0,8,6085.81
+2024-01-06,Yellow Corporation,Ocean Container,Northeast,22282.05,3,1260.27
+2024-12-06,J.B. Hunt,Full Truckload,Southwest,9939.13,6,7967.78
+2025-06-17,Old Dominion,Ocean Container,Pacific Northwest,10962.51,10,14404.61
+2024-05-18,Old Dominion,Intermodal Rail,Pacific Northwest,488.32,17,9913.27
+2024-06-08,UPS Freight,Intermodal Rail,Pacific Northwest,17007.11,13,4017.79
+2024-08-06,Yellow Corporation,Air Freight,Northeast,5121.0,3,539.61
+2025-05-26,XPO Logistics,Intermodal Rail,Northeast,18455.54,9,9495.22
+2024-07-25,FedEx Freight,Air Freight,Pacific Northwest,5453.16,20,12297.43
+2024-03-28,Saia,Less-Than-Truckload,Northeast,17391.05,11,16434.81
+2024-04-29,FedEx Freight,Air Freight,Southwest,6628.4,2,17007.94
+2024-04-16,J.B. Hunt,Full Truckload,Northeast,9889.77,8,18063.56
+2024-07-22,Saia,Intermodal Rail,Northeast,21248.51,8,10894.83
+2024-02-19,Old Dominion,Less-Than-Truckload,Southwest,15221.58,21,16326.43
+2024-11-15,Yellow Corporation,Ocean Container,Southwest,11610.94,14,15055.56
+2024-04-11,Yellow Corporation,Full Truckload,West Coast,1592.79,13,3684.19
+2024-04-12,FedEx Freight,Full Truckload,Midwest,2574.36,7,4364.2
+2024-01-17,Estes Express,Ocean Container,West Coast,6989.49,13,15002.49
+2024-06-14,UPS Freight,Intermodal Rail,Southwest,14921.38,19,10894.62
+2024-08-25,Old Dominion,Air Freight,Southwest,22549.17,4,9102.63
+2025-03-16,Yellow Corporation,Less-Than-Truckload,West Coast,12886.66,15,10374.08
+2024-06-13,XPO Logistics,Ocean Container,West Coast,22059.35,9,13986.42
+2024-08-04,J.B. Hunt,Full Truckload,Pacific Northwest,13455.98,6,2721.07
+2025-06-01,Estes Express,Air Freight,Southwest,14845.48,13,2199.94
+2024-11-06,J.B. Hunt,Less-Than-Truckload,Northeast,9474.98,5,4874.2
+2025-03-02,Estes Express,Intermodal Rail,Midwest,3331.57,5,11479.04
+2024-10-13,Yellow Corporation,Air Freight,Northeast,7649.42,10,494.65
+2024-07-05,Old Dominion,Intermodal Rail,West Coast,15696.76,4,17891.15
+2024-12-16,UPS Freight,Full Truckload,Southwest,1787.55,6,1841.13
+2024-06-01,XPO Logistics,Ocean Container,Pacific Northwest,20534.59,9,3731.52
+2024-07-15,UPS Freight,Full Truckload,Southeast,17542.25,2,13629.06
+2024-09-03,J.B. Hunt,Full Truckload,West Coast,20087.3,8,16831.33
+2024-05-13,Estes Express,Intermodal Rail,Southwest,11479.02,5,8310.86
+2025-05-04,Saia,Air Freight,Southwest,7779.19,15,369.11
+2024-12-24,UPS Freight,Ocean Container,Southeast,18226.07,16,5136.76
+2024-02-19,XPO Logistics,Full Truckload,Northeast,20454.99,14,18185.74
+2025-01-14,Saia,Air Freight,Northeast,20054.58,21,1132.71
+2024-12-30,Saia,Less-Than-Truckload,Midwest,1851.72,13,18378.13
+2025-06-16,XPO Logistics,Full Truckload,Southeast,11464.31,2,3833.25
+2024-05-29,UPS Freight,Ocean Container,Southwest,15953.2,18,13184.44
+2024-05-09,XPO Logistics,Full Truckload,Northeast,18982.89,11,16529.29
+2025-04-26,UPS Freight,Less-Than-Truckload,West Coast,20891.02,2,3013.02
+2025-03-05,UPS Freight,Intermodal Rail,Southeast,12207.24,15,1292.31
+2024-07-25,Yellow Corporation,Full Truckload,Southwest,10028.07,17,12565.12
+2025-06-12,FedEx Freight,Intermodal Rail,Southeast,20462.81,6,3350.96
+2024-02-26,Estes Express,Full Truckload,Northeast,20436.72,5,13949.58
+2025-06-22,Estes Express,Less-Than-Truckload,Pacific Northwest,21797.54,9,7292.47
+2024-02-01,Estes Express,Ocean Container,West Coast,20733.08,7,8979.22
+2024-09-17,Yellow Corporation,Less-Than-Truckload,Midwest,8163.3,15,15383.03
+2024-03-28,Yellow Corporation,Full Truckload,Pacific Northwest,17686.22,10,16901.58
+2025-01-26,FedEx Freight,Air Freight,Midwest,9633.82,5,16254.18
+2025-06-01,Saia,Air Freight,Pacific Northwest,16263.79,7,13314.23
+2024-01-28,XPO Logistics,Less-Than-Truckload,Northeast,11368.44,15,6906.27
+2025-03-21,FedEx Freight,Intermodal Rail,Midwest,18980.18,7,5091.91
+2025-04-08,FedEx Freight,Less-Than-Truckload,Midwest,23168.36,17,8025.42
+2024-01-26,Estes Express,Air Freight,Southeast,3343.96,16,14130.29
+2024-03-07,J.B. Hunt,Intermodal Rail,Southeast,2451.52,13,7548.43
+2025-02-27,FedEx Freight,Less-Than-Truckload,Pacific Northwest,10763.71,5,1920.05
+2024-08-19,Yellow Corporation,Full Truckload,West Coast,9851.97,10,2157.86
+2024-01-20,FedEx Freight,Full Truckload,Midwest,13795.64,10,16377.49
+2024-02-13,UPS Freight,Full Truckload,Pacific Northwest,10372.06,18,10641.63
+2024-05-24,Yellow Corporation,Ocean Container,Midwest,21412.38,11,341.69
+2025-05-02,J.B. Hunt,Full Truckload,Midwest,12579.36,16,8968.81
+2024-08-13,FedEx Freight,Full Truckload,Southwest,10329.93,16,6581.98
+2024-02-26,UPS Freight,Less-Than-Truckload,Northeast,17416.08,13,626.69
+2024-02-09,FedEx Freight,Intermodal Rail,Southeast,21997.12,17,949.11
+2025-02-09,Estes Express,Full Truckload,West Coast,3366.99,12,14569.94
+2024-09-08,Yellow Corporation,Intermodal Rail,Midwest,17500.04,7,1695.37
+2024-05-01,Estes Express,Full Truckload,Southwest,3347.56,15,8927.51
+2024-07-08,FedEx Freight,Ocean Container,West Coast,10240.44,16,12479.89
+2024-03-16,Saia,Less-Than-Truckload,Midwest,15282.71,13,13823.53
+2024-02-24,Saia,Ocean Container,Northeast,21674.15,11,5221.43
+2025-05-13,FedEx Freight,Less-Than-Truckload,Pacific Northwest,8910.51,17,7997.46
+2024-10-26,Estes Express,Less-Than-Truckload,West Coast,4460.62,16,6601.88
+2024-10-17,Yellow Corporation,Full Truckload,West Coast,14340.6,4,16181.71
+2024-10-20,Estes Express,Full Truckload,West Coast,20857.63,11,13620.71
+2024-01-11,Yellow Corporation,Less-Than-Truckload,Pacific Northwest,4658.74,15,486.28
+2024-04-30,Old Dominion,Intermodal Rail,West Coast,758.9,8,8316.45
+2024-08-29,J.B. Hunt,Ocean Container,Midwest,13716.21,17,7366.17
+2024-01-10,XPO Logistics,Intermodal Rail,Southeast,8650.17,11,7939.28
+2024-12-18,Old Dominion,Less-Than-Truckload,Southwest,20445.98,16,6037.07
+2025-04-20,UPS Freight,Air Freight,Southwest,21445.26,3,1303.1
+2024-08-12,XPO Logistics,Less-Than-Truckload,Southwest,21688.3,11,13343.04
+2024-01-28,Estes Express,Full Truckload,Southwest,22790.72,17,6581.01
+2024-12-19,Estes Express,Ocean Container,Southwest,10371.65,19,17930.72
+2024-10-22,FedEx Freight,Intermodal Rail,Pacific Northwest,15957.21,15,11973.01
+2025-02-18,J.B. Hunt,Intermodal Rail,Southwest,6548.82,16,10092.5
+2024-04-24,Saia,Full Truckload,Northeast,10021.9,17,1135.44
+2024-03-23,XPO Logistics,Ocean Container,West Coast,7483.02,16,4053.41
+2024-06-23,UPS Freight,Less-Than-Truckload,Northeast,14611.85,8,5321.42
+2025-03-30,FedEx Freight,Intermodal Rail,West Coast,11045.44,3,3760.34
+2025-04-21,UPS Freight,Full Truckload,Southeast,2346.39,6,2289.96
+2024-09-13,XPO Logistics,Intermodal Rail,Southwest,6510.51,2,13385.24
+2024-09-27,Estes Express,Ocean Container,Northeast,1666.94,20,12688.85
+2024-02-20,UPS Freight,Less-Than-Truckload,West Coast,1875.38,16,13530.53
+2024-10-03,J.B. Hunt,Air Freight,Northeast,1171.52,8,5506.03
+2024-11-08,Estes Express,Full Truckload,Pacific Northwest,848.13,20,13846.84
+2025-05-29,Estes Express,Intermodal Rail,Pacific Northwest,9749.11,2,17285.6
+2025-01-18,Yellow Corporation,Full Truckload,West Coast,9770.87,4,2390.96
+2024-02-16,Saia,Ocean Container,Pacific Northwest,1730.27,9,15904.91
+2024-09-22,UPS Freight,Air Freight,West Coast,21272.81,21,16925.5
+2025-01-10,XPO Logistics,Air Freight,West Coast,19129.91,6,17788.39
+2024-07-26,J.B. Hunt,Less-Than-Truckload,Pacific Northwest,20319.54,9,10242.26
+2024-07-01,Saia,Ocean Container,Northeast,8674.75,2,10458.77
+2024-01-16,UPS Freight,Air Freight,Southwest,4048.23,7,10271.53
+2025-05-11,XPO Logistics,Less-Than-Truckload,Southwest,2872.47,11,7149.88

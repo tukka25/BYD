@@ -1,0 +1,241 @@
+stay_date,property_name,room_type,booking_channel,rooms_available,rooms_sold,average_daily_rate,total_revenue
+2024-02-27,Harbor View Hotel,Family Room,Group Booking,333,49,69.81,225263.42
+2025-06-09,Mountain Pass Lodge,Accessible Room,Online Travel Agency,249,248,249.5,154942.29
+2024-03-23,Harbor View Hotel,Executive Suite,Corporate Account,341,119,503.25,70872.26
+2025-03-04,Downtown Grand Suites,Executive Suite,Group Booking,378,351,659.61,143990.59
+2024-03-11,Airport Express Inn,Accessible Room,Group Booking,80,275,378.48,330385.96
+2024-02-24,Lakeside Resort,Standard Queen,Mobile App,328,301,585.52,201090.51
+2024-08-10,City Center Boutique,Executive Suite,Online Travel Agency,172,282,171.04,24445.96
+2024-08-03,Harbor View Hotel,Accessible Room,Wholesale Partner,90,265,640.1,245424.02
+2024-01-07,City Center Boutique,Standard Queen,Phone Reservation,200,393,108.29,350803.07
+2024-11-15,City Center Boutique,Deluxe Suite,Online Travel Agency,192,56,414.39,192497.65
+2024-08-06,City Center Boutique,Family Room,Wholesale Partner,326,141,177.04,298026.14
+2025-01-06,Mountain Pass Lodge,Standard Queen,Group Booking,264,276,226.22,51799.28
+2024-01-28,Downtown Grand Suites,Standard Queen,Online Travel Agency,91,290,553.14,68038.33
+2024-06-06,Downtown Grand Suites,Standard Queen,Direct Website,347,200,877.38,352364.01
+2024-10-01,Lakeside Resort,Deluxe Suite,Phone Reservation,219,110,242.57,6530.94
+2025-02-18,Downtown Grand Suites,Standard Queen,Group Booking,350,218,234.51,30332.82
+2025-05-23,City Center Boutique,Executive Suite,Phone Reservation,19,93,270.42,160689.75
+2024-03-10,City Center Boutique,Executive Suite,Group Booking,197,218,262.31,274293.81
+2025-05-09,Mountain Pass Lodge,Accessible Room,Group Booking,242,235,391.99,330671.08
+2024-11-01,Harbor View Hotel,Deluxe Suite,Mobile App,107,276,329.84,75919.56
+2024-08-21,Downtown Grand Suites,Accessible Room,Phone Reservation,246,322,393.44,340596.44
+2024-11-02,Lakeside Resort,Family Room,Group Booking,331,207,502.48,125880.63
+2025-05-01,City Center Boutique,Standard Queen,Wholesale Partner,123,274,242.16,313281.58
+2025-02-27,Downtown Grand Suites,Deluxe Suite,Group Booking,10,53,866.84,102373.07
+2024-06-28,Harbor View Hotel,Executive Suite,Corporate Account,28,381,476.97,271495.73
+2024-11-22,Lakeside Resort,Family Room,Mobile App,130,62,699.67,307901.39
+2025-01-24,Lakeside Resort,Standard Queen,Online Travel Agency,336,5,873.62,348359.88
+2025-06-13,City Center Boutique,Family Room,Direct Website,276,170,762.7,191186.36
+2025-05-29,City Center Boutique,Accessible Room,Phone Reservation,369,241,638.03,138995.44
+2025-01-15,Airport Express Inn,Executive Suite,Online Travel Agency,159,385,341.5,25253.84
+2025-01-17,Lakeside Resort,Standard Queen,Mobile App,334,41,844.44,202511.29
+2024-12-21,Lakeside Resort,Deluxe Suite,Phone Reservation,307,6,257.46,261665.43
+2024-04-14,City Center Boutique,Deluxe Suite,Group Booking,341,143,403.68,105023.94
+2024-05-21,City Center Boutique,Standard Queen,Corporate Account,289,57,161.19,208286.49
+2024-04-11,Harbor View Hotel,Deluxe Suite,Phone Reservation,48,27,516.43,59703.42
+2024-02-28,Airport Express Inn,Standard Queen,Corporate Account,114,65,727.78,256179.68
+2024-10-26,Airport Express Inn,Accessible Room,Phone Reservation,58,131,444.37,140119.96
+2025-05-18,Lakeside Resort,Standard Queen,Mobile App,179,157,453.33,352986.83
+2025-02-27,Mountain Pass Lodge,Standard King,Wholesale Partner,158,116,547.1,188945.14
+2024-01-26,Airport Express Inn,Accessible Room,Mobile App,196,88,693.03,156142.85
+2024-09-02,City Center Boutique,Accessible Room,Phone Reservation,215,384,116.1,159310.02
+2024-03-20,Downtown Grand Suites,Executive Suite,Corporate Account,352,272,631.58,56458.95
+2024-10-17,Harbor View Hotel,Standard King,Wholesale Partner,210,153,438.22,192649.28
+2024-03-13,Airport Express Inn,Accessible Room,Wholesale Partner,43,157,588.63,80907.11
+2024-08-24,Harbor View Hotel,Family Room,Group Booking,257,100,319.51,201850.21
+2024-05-29,Mountain Pass Lodge,Executive Suite,Online Travel Agency,88,352,442.09,296609.27
+2024-04-21,Harbor View Hotel,Family Room,Group Booking,317,267,333.34,59058.48
+2025-04-06,Lakeside Resort,Standard King,Wholesale Partner,345,307,506.13,184574.79
+2024-01-28,City Center Boutique,Standard King,Corporate Account,68,367,523.76,187640.58
+2025-04-20,Mountain Pass Lodge,Executive Suite,Online Travel Agency,324,25,277.32,247303.56
+2024-01-22,Lakeside Resort,Deluxe Suite,Phone Reservation,365,43,148.67,205604.65
+2024-06-21,Lakeside Resort,Standard Queen,Direct Website,393,142,419.53,295464.15
+2024-05-29,Airport Express Inn,Executive Suite,Online Travel Agency,91,384,799.8,209298.63
+2024-09-30,Downtown Grand Suites,Family Room,Phone Reservation,347,21,723.17,287093.04
+2024-03-17,Lakeside Resort,Deluxe Suite,Direct Website,213,277,779.42,131579.1
+2025-04-05,Airport Express Inn,Standard Queen,Wholesale Partner,281,17,829.97,197520.65
+2024-12-09,Airport Express Inn,Standard King,Wholesale Partner,219,12,764.04,224127.88
+2024-02-19,City Center Boutique,Standard King,Corporate Account,243,287,166.54,229052.72
+2024-02-14,Mountain Pass Lodge,Executive Suite,Phone Reservation,56,158,360.45,341912.41
+2024-07-23,Airport Express Inn,Family Room,Group Booking,81,36,86.0,280330.18
+2025-02-14,Downtown Grand Suites,Family Room,Phone Reservation,61,134,434.36,316497.58
+2024-09-30,Downtown Grand Suites,Family Room,Group Booking,380,251,726.4,292677.81
+2024-03-19,Harbor View Hotel,Executive Suite,Online Travel Agency,296,301,308.18,335054.29
+2024-02-12,Mountain Pass Lodge,Executive Suite,Phone Reservation,88,283,662.38,174259.52
+2024-01-04,Harbor View Hotel,Accessible Room,Direct Website,246,315,767.39,242592.36
+2024-08-22,Airport Express Inn,Standard King,Group Booking,95,228,543.6,302788.51
+2025-03-24,City Center Boutique,Accessible Room,Phone Reservation,344,48,320.31,259845.01
+2024-10-01,City Center Boutique,Standard King,Online Travel Agency,380,128,557.91,325101.73
+2024-03-14,City Center Boutique,Family Room,Direct Website,117,211,382.4,177692.09
+2024-09-19,Downtown Grand Suites,Family Room,Direct Website,177,374,358.85,190288.36
+2024-11-10,Harbor View Hotel,Deluxe Suite,Online Travel Agency,18,166,574.22,66096.89
+2025-02-01,Harbor View Hotel,Deluxe Suite,Group Booking,118,15,324.5,136502.07
+2025-01-07,Mountain Pass Lodge,Deluxe Suite,Phone Reservation,95,40,866.79,339158.16
+2024-01-16,Mountain Pass Lodge,Deluxe Suite,Group Booking,106,122,681.28,2274.3
+2024-04-30,Harbor View Hotel,Executive Suite,Corporate Account,371,112,117.21,190865.72
+2024-10-28,Mountain Pass Lodge,Accessible Room,Wholesale Partner,257,311,299.99,170352.03
+2024-09-25,Airport Express Inn,Deluxe Suite,Group Booking,228,227,507.95,173503.4
+2025-01-16,Airport Express Inn,Standard Queen,Group Booking,298,393,691.14,1965.68
+2024-11-27,Airport Express Inn,Accessible Room,Mobile App,113,334,100.72,33481.11
+2024-12-18,Lakeside Resort,Accessible Room,Online Travel Agency,84,347,641.73,164543.01
+2025-04-02,City Center Boutique,Accessible Room,Wholesale Partner,142,161,620.24,266267.08
+2024-07-03,Airport Express Inn,Deluxe Suite,Phone Reservation,87,334,809.89,67241.07
+2024-01-28,Downtown Grand Suites,Standard King,Group Booking,167,21,773.62,212985.27
+2025-02-28,Downtown Grand Suites,Standard King,Mobile App,232,281,392.28,325747.42
+2024-11-06,Airport Express Inn,Standard Queen,Group Booking,12,70,725.97,272097.14
+2024-12-05,Harbor View Hotel,Deluxe Suite,Direct Website,350,227,392.56,317289.18
+2024-08-28,Airport Express Inn,Standard King,Corporate Account,163,364,732.51,240361.73
+2024-11-25,Mountain Pass Lodge,Accessible Room,Mobile App,329,396,869.65,58786.46
+2025-03-17,Harbor View Hotel,Accessible Room,Phone Reservation,212,143,234.54,47634.13
+2025-01-07,Airport Express Inn,Executive Suite,Phone Reservation,341,243,61.42,342693.55
+2024-05-13,Mountain Pass Lodge,Executive Suite,Phone Reservation,19,317,249.47,236078.07
+2025-02-08,Downtown Grand Suites,Family Room,Mobile App,30,199,777.83,7180.43
+2024-05-24,Harbor View Hotel,Executive Suite,Group Booking,198,297,718.51,215101.53
+2024-02-25,Downtown Grand Suites,Family Room,Phone Reservation,69,372,536.71,16653.08
+2025-05-27,City Center Boutique,Standard Queen,Group Booking,143,364,763.24,173193.44
+2024-09-18,Mountain Pass Lodge,Executive Suite,Wholesale Partner,175,290,182.79,113179.86
+2024-08-03,Downtown Grand Suites,Standard Queen,Wholesale Partner,254,115,139.68,281569.72
+2025-05-31,Harbor View Hotel,Standard King,Direct Website,134,278,526.93,354629.81
+2024-08-26,City Center Boutique,Standard Queen,Phone Reservation,156,16,827.22,339258.99
+2025-02-18,Airport Express Inn,Accessible Room,Group Booking,294,211,152.07,181261.42
+2024-09-29,Mountain Pass Lodge,Executive Suite,Mobile App,38,204,305.26,267635.86
+2025-05-26,Downtown Grand Suites,Family Room,Direct Website,186,159,419.29,102016.81
+2024-04-01,Harbor View Hotel,Family Room,Wholesale Partner,80,11,468.68,131171.55
+2024-08-01,Airport Express Inn,Standard Queen,Group Booking,153,186,90.66,343049.41
+2024-03-18,Lakeside Resort,Standard Queen,Online Travel Agency,307,321,897.81,85626.25
+2025-06-23,Downtown Grand Suites,Deluxe Suite,Phone Reservation,357,220,805.05,310709.59
+2024-05-28,Mountain Pass Lodge,Accessible Room,Corporate Account,35,146,165.84,296316.99
+2024-09-17,Downtown Grand Suites,Standard Queen,Mobile App,146,379,823.3,239138.44
+2024-07-24,Lakeside Resort,Standard King,Wholesale Partner,107,236,430.78,341269.99
+2024-08-20,Airport Express Inn,Standard King,Corporate Account,49,146,662.99,28997.69
+2025-06-15,Downtown Grand Suites,Standard King,Mobile App,185,87,483.72,242431.1
+2025-03-30,City Center Boutique,Family Room,Wholesale Partner,395,35,728.6,101096.71
+2024-05-30,Downtown Grand Suites,Accessible Room,Wholesale Partner,22,358,658.13,324177.35
+2024-11-06,Mountain Pass Lodge,Deluxe Suite,Mobile App,159,72,852.22,106092.19
+2024-06-01,Mountain Pass Lodge,Accessible Room,Wholesale Partner,109,176,619.6,347703.25
+2024-06-07,Lakeside Resort,Family Room,Direct Website,210,191,110.27,349470.43
+2024-03-22,Harbor View Hotel,Standard King,Wholesale Partner,152,88,354.01,4098.06
+2025-03-25,Lakeside Resort,Family Room,Direct Website,233,278,714.9,200574.07
+2024-01-06,Harbor View Hotel,Standard King,Online Travel Agency,318,16,894.72,79825.9
+2024-01-22,City Center Boutique,Family Room,Wholesale Partner,167,113,225.99,87559.9
+2024-05-07,Lakeside Resort,Executive Suite,Corporate Account,386,51,112.67,66914.36
+2024-07-10,Mountain Pass Lodge,Executive Suite,Corporate Account,108,353,184.05,42791.69
+2025-06-18,Airport Express Inn,Deluxe Suite,Group Booking,312,246,797.71,45586.65
+2025-05-08,Lakeside Resort,Accessible Room,Mobile App,260,329,175.58,232659.12
+2024-01-30,Harbor View Hotel,Accessible Room,Phone Reservation,386,203,239.3,150186.85
+2024-01-04,Downtown Grand Suites,Deluxe Suite,Corporate Account,228,189,416.32,4601.89
+2024-01-16,Airport Express Inn,Accessible Room,Phone Reservation,388,299,490.53,185116.93
+2025-05-10,Harbor View Hotel,Deluxe Suite,Direct Website,246,282,251.66,25575.64
+2024-12-30,Mountain Pass Lodge,Executive Suite,Direct Website,264,242,442.27,354109.57
+2025-01-28,Lakeside Resort,Executive Suite,Phone Reservation,205,362,693.81,271827.71
+2024-04-09,Harbor View Hotel,Accessible Room,Corporate Account,248,89,520.39,92548.83
+2025-04-19,Lakeside Resort,Family Room,Direct Website,393,367,858.02,46122.85
+2024-04-16,Airport Express Inn,Family Room,Phone Reservation,194,312,111.22,61383.59
+2024-03-19,City Center Boutique,Standard King,Direct Website,83,338,807.25,35146.38
+2024-08-16,Airport Express Inn,Standard Queen,Corporate Account,71,272,856.37,205903.21
+2024-02-13,Harbor View Hotel,Executive Suite,Direct Website,50,30,407.45,246765.85
+2025-04-08,Downtown Grand Suites,Executive Suite,Direct Website,256,205,779.56,240852.54
+2024-12-03,Lakeside Resort,Accessible Room,Wholesale Partner,266,344,631.2,189846.99
+2025-03-03,Lakeside Resort,Standard Queen,Wholesale Partner,251,86,384.04,107721.13
+2025-02-08,Harbor View Hotel,Family Room,Mobile App,129,301,493.52,272361.33
+2024-01-09,Mountain Pass Lodge,Family Room,Direct Website,391,18,517.78,60306.58
+2025-03-04,City Center Boutique,Deluxe Suite,Wholesale Partner,228,211,327.49,314214.38
+2024-05-08,Mountain Pass Lodge,Standard Queen,Direct Website,289,394,788.08,119515.52
+2024-06-21,Lakeside Resort,Executive Suite,Wholesale Partner,169,242,487.47,88135.9
+2024-02-18,Downtown Grand Suites,Deluxe Suite,Group Booking,171,93,773.81,95708.39
+2024-07-20,Mountain Pass Lodge,Standard Queen,Wholesale Partner,239,371,364.99,247462.96
+2025-03-21,Lakeside Resort,Family Room,Online Travel Agency,48,132,580.29,113390.85
+2024-12-13,Lakeside Resort,Accessible Room,Corporate Account,232,305,577.11,240918.43
+2024-09-20,Mountain Pass Lodge,Deluxe Suite,Online Travel Agency,15,303,82.89,144367.83
+2024-12-23,Mountain Pass Lodge,Executive Suite,Phone Reservation,288,206,778.49,229926.09
+2025-04-26,Lakeside Resort,Standard King,Group Booking,167,307,526.62,133398.21
+2024-10-21,Airport Express Inn,Standard Queen,Mobile App,69,51,365.12,205105.74
+2024-11-15,Airport Express Inn,Executive Suite,Mobile App,277,199,145.51,329146.84
+2024-07-21,Harbor View Hotel,Standard King,Mobile App,72,296,769.79,164219.06
+2025-04-18,City Center Boutique,Deluxe Suite,Corporate Account,120,229,179.19,190529.62
+2024-10-22,City Center Boutique,Standard King,Corporate Account,100,77,167.25,87765.14
+2024-09-24,Mountain Pass Lodge,Accessible Room,Online Travel Agency,157,175,521.53,337881.01
+2025-04-24,Mountain Pass Lodge,Standard King,Corporate Account,348,133,793.79,123086.83
+2024-03-30,Downtown Grand Suites,Standard Queen,Direct Website,145,107,592.52,265553.42
+2024-03-18,Mountain Pass Lodge,Executive Suite,Wholesale Partner,277,340,855.25,232024.22
+2024-04-09,Lakeside Resort,Deluxe Suite,Group Booking,129,213,252.76,58108.49
+2024-03-30,Lakeside Resort,Deluxe Suite,Online Travel Agency,38,218,778.89,306559.79
+2025-05-10,Mountain Pass Lodge,Accessible Room,Corporate Account,305,102,703.7,128477.05
+2024-08-29,Airport Express Inn,Standard Queen,Phone Reservation,334,163,820.04,207957.86
+2024-11-29,Lakeside Resort,Accessible Room,Group Booking,395,4,740.06,222768.51
+2024-10-11,Mountain Pass Lodge,Standard Queen,Mobile App,283,287,67.57,308006.19
+2024-04-10,Mountain Pass Lodge,Standard King,Wholesale Partner,398,163,512.47,151894.72
+2024-10-29,Downtown Grand Suites,Family Room,Phone Reservation,327,214,300.81,181038.71
+2025-02-11,Airport Express Inn,Standard Queen,Phone Reservation,300,254,672.79,242804.61
+2024-04-24,Downtown Grand Suites,Standard King,Phone Reservation,176,85,494.46,222815.88
+2024-06-30,City Center Boutique,Deluxe Suite,Mobile App,271,35,508.23,84311.93
+2024-03-06,Airport Express Inn,Family Room,Corporate Account,176,336,877.28,232637.1
+2024-06-09,Downtown Grand Suites,Deluxe Suite,Mobile App,61,121,847.36,141541.97
+2024-04-03,Harbor View Hotel,Family Room,Online Travel Agency,339,194,145.17,246767.36
+2025-05-19,Harbor View Hotel,Accessible Room,Mobile App,294,316,765.98,225495.3
+2024-01-02,City Center Boutique,Family Room,Phone Reservation,225,234,818.04,22896.22
+2024-08-19,City Center Boutique,Executive Suite,Corporate Account,68,288,178.6,225949.12
+2024-01-19,Lakeside Resort,Standard Queen,Mobile App,164,8,488.54,63390.16
+2025-02-27,Lakeside Resort,Accessible Room,Phone Reservation,317,32,320.27,80808.0
+2025-06-07,Lakeside Resort,Executive Suite,Wholesale Partner,77,199,201.8,340166.07
+2024-06-30,Downtown Grand Suites,Standard King,Direct Website,259,58,862.19,179701.26
+2024-05-18,City Center Boutique,Accessible Room,Group Booking,207,94,183.91,264466.75
+2024-01-06,City Center Boutique,Deluxe Suite,Mobile App,36,156,670.9,198298.32
+2025-03-01,Harbor View Hotel,Executive Suite,Online Travel Agency,76,123,639.46,223935.85
+2025-05-26,City Center Boutique,Accessible Room,Group Booking,54,274,464.99,197306.47
+2025-05-09,Lakeside Resort,Deluxe Suite,Wholesale Partner,286,302,284.04,252374.32
+2024-06-06,Downtown Grand Suites,Standard Queen,Group Booking,394,309,689.53,278895.96
+2024-11-14,Downtown Grand Suites,Standard Queen,Mobile App,103,265,548.18,72710.52
+2024-02-19,Downtown Grand Suites,Standard King,Phone Reservation,87,195,342.74,298701.4
+2024-06-04,Harbor View Hotel,Executive Suite,Group Booking,77,30,885.06,340270.4
+2024-03-27,Lakeside Resort,Standard King,Direct Website,282,322,291.59,220665.14
+2024-12-04,Airport Express Inn,Accessible Room,Online Travel Agency,256,399,460.12,199499.61
+2024-07-06,Mountain Pass Lodge,Executive Suite,Phone Reservation,171,341,501.68,302039.29
+2024-05-02,Lakeside Resort,Executive Suite,Wholesale Partner,117,149,152.73,155790.72
+2024-07-04,City Center Boutique,Standard King,Direct Website,238,194,561.24,232216.8
+2025-02-13,Lakeside Resort,Executive Suite,Mobile App,39,178,664.27,159140.03
+2024-12-11,Downtown Grand Suites,Executive Suite,Online Travel Agency,91,374,732.22,256223.88
+2025-02-19,Airport Express Inn,Accessible Room,Group Booking,382,85,452.94,7717.84
+2024-05-29,Airport Express Inn,Standard King,Online Travel Agency,206,119,501.19,278942.69
+2024-03-25,Harbor View Hotel,Executive Suite,Phone Reservation,109,91,652.74,120534.24
+2024-03-15,Airport Express Inn,Accessible Room,Mobile App,216,292,257.09,201894.06
+2024-11-26,Lakeside Resort,Family Room,Direct Website,200,142,60.44,237326.87
+2024-04-12,Airport Express Inn,Standard Queen,Group Booking,279,274,830.14,100176.97
+2025-05-05,Harbor View Hotel,Accessible Room,Mobile App,172,29,831.45,141425.04
+2024-05-16,Harbor View Hotel,Deluxe Suite,Mobile App,276,264,293.1,112720.33
+2025-06-08,Downtown Grand Suites,Accessible Room,Online Travel Agency,56,280,544.51,22651.15
+2025-05-18,Lakeside Resort,Accessible Room,Online Travel Agency,204,395,105.85,162632.53
+2024-11-19,City Center Boutique,Standard Queen,Group Booking,181,357,498.27,281400.77
+2024-12-10,Downtown Grand Suites,Accessible Room,Phone Reservation,289,192,615.19,328591.46
+2025-03-30,Harbor View Hotel,Accessible Room,Corporate Account,218,50,257.53,350704.26
+2024-12-30,Mountain Pass Lodge,Deluxe Suite,Mobile App,42,225,329.47,88900.9
+2024-08-20,Harbor View Hotel,Standard Queen,Corporate Account,174,244,333.03,88570.04
+2025-06-12,City Center Boutique,Accessible Room,Direct Website,278,32,812.02,80086.99
+2025-06-12,Downtown Grand Suites,Family Room,Phone Reservation,32,344,295.56,143778.16
+2024-02-08,Harbor View Hotel,Deluxe Suite,Mobile App,23,312,274.35,63557.11
+2024-06-09,Downtown Grand Suites,Standard King,Direct Website,290,174,895.77,325415.42
+2024-06-29,Mountain Pass Lodge,Standard King,Group Booking,359,395,438.77,224030.48
+2024-04-30,City Center Boutique,Deluxe Suite,Phone Reservation,82,361,289.77,17635.35
+2024-03-22,Downtown Grand Suites,Standard King,Phone Reservation,237,108,194.24,342304.69
+2024-01-04,City Center Boutique,Standard Queen,Online Travel Agency,176,261,135.42,210899.45
+2025-06-16,Airport Express Inn,Accessible Room,Direct Website,382,353,250.89,31878.14
+2025-01-15,Mountain Pass Lodge,Executive Suite,Wholesale Partner,74,160,438.74,87201.99
+2025-01-28,Lakeside Resort,Standard King,Direct Website,177,368,733.24,240658.31
+2024-11-05,City Center Boutique,Standard King,Group Booking,21,67,500.85,102703.96
+2024-08-24,City Center Boutique,Family Room,Group Booking,155,262,878.38,157227.0
+2025-06-14,Downtown Grand Suites,Standard Queen,Wholesale Partner,288,385,391.23,178325.57
+2025-04-15,Downtown Grand Suites,Standard Queen,Direct Website,22,248,201.94,17050.7
+2025-04-11,Mountain Pass Lodge,Standard King,Mobile App,30,330,262.66,293697.66
+2025-01-03,Mountain Pass Lodge,Executive Suite,Direct Website,348,395,716.74,349509.97
+2024-07-25,Mountain Pass Lodge,Standard King,Online Travel Agency,201,233,222.04,323857.63
+2024-03-28,Harbor View Hotel,Executive Suite,Corporate Account,373,25,497.26,15887.01
+2025-02-12,City Center Boutique,Standard Queen,Wholesale Partner,299,294,203.57,318959.02
+2025-05-26,Lakeside Resort,Family Room,Direct Website,100,5,563.19,42887.87
+2024-01-21,Downtown Grand Suites,Executive Suite,Phone Reservation,107,57,507.11,76923.33
+2024-11-22,Mountain Pass Lodge,Standard Queen,Mobile App,349,342,779.14,294397.79
+2024-09-08,Harbor View Hotel,Deluxe Suite,Online Travel Agency,38,392,491.03,114127.62
+2024-11-23,Mountain Pass Lodge,Family Room,Wholesale Partner,181,94,515.76,49439.56
+2025-02-16,Downtown Grand Suites,Family Room,Corporate Account,110,251,100.73,178968.11
+2024-05-17,Mountain Pass Lodge,Family Room,Direct Website,395,314,738.12,293723.34
+2024-12-04,City Center Boutique,Accessible Room,Online Travel Agency,72,243,132.88,21804.0

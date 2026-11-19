@@ -1,0 +1,241 @@
+ticket_created_date,ticket_priority,ticket_channel,ticket_status,ticket_resolution_hours,ticket_satisfaction_score,ticket_reopen_count
+2024-06-10,High,Phone,Reopened,46.36,2,4
+2025-06-18,Low,Phone,Resolved,609.05,1,5
+2024-03-13,Low,Mobile App,Closed,680.99,3,5
+2024-10-16,High,Web Form,New,269.94,3,5
+2025-04-25,Urgent,Email,Pending,490.25,3,4
+2024-09-20,High,Social Media,Resolved,253.95,2,9
+2025-02-22,High,Email,Open,508.0,4,5
+2024-11-15,Medium,Social Media,New,673.27,4,9
+2025-04-07,Medium,Mobile App,Reopened,308.27,2,2
+2025-01-04,Low,Email,Reopened,3.81,2,9
+2025-03-20,High,Live Chat,Closed,530.54,5,10
+2024-10-07,Urgent,Live Chat,Resolved,408.37,4,10
+2024-11-09,Medium,Phone,Pending,168.3,5,7
+2024-03-22,Medium,Email,Open,442.35,5,7
+2024-12-16,Urgent,Social Media,Open,14.61,4,8
+2024-10-20,Low,Email,Open,540.61,2,1
+2025-05-08,Urgent,Social Media,Open,588.95,5,1
+2025-04-25,High,Live Chat,Open,391.72,5,8
+2024-12-09,Medium,Web Form,Open,114.58,2,9
+2025-06-01,Medium,Social Media,Closed,262.89,3,7
+2024-04-19,Low,Live Chat,Open,548.41,2,9
+2024-09-30,Urgent,Email,New,631.67,5,7
+2024-07-19,Urgent,Email,Resolved,323.28,2,3
+2024-10-28,High,Web Form,Reopened,596.14,4,1
+2025-06-15,Low,Email,Closed,411.6,1,5
+2024-03-24,Urgent,Phone,Resolved,536.5,5,9
+2025-02-03,Low,Social Media,Closed,717.53,4,7
+2024-01-02,Urgent,Social Media,New,687.26,2,10
+2025-04-22,Low,Phone,Closed,166.13,2,7
+2025-02-27,High,Web Form,Resolved,268.49,5,3
+2024-06-19,Medium,Mobile App,Closed,376.47,2,0
+2024-05-17,Medium,Email,Pending,431.79,2,2
+2024-05-06,Medium,Mobile App,Reopened,469.53,2,6
+2024-02-18,Urgent,Social Media,Pending,323.9,5,5
+2025-03-15,High,Social Media,Closed,546.96,4,8
+2024-04-24,High,Email,Reopened,335.15,3,5
+2025-05-26,Urgent,Mobile App,Pending,437.18,3,8
+2024-05-05,Low,Web Form,Open,559.92,3,1
+2024-02-01,Urgent,Mobile App,Pending,603.66,1,2
+2024-08-19,Urgent,Live Chat,Resolved,473.54,3,5
+2024-07-11,Medium,Email,Closed,713.1,2,6
+2025-03-10,Urgent,Phone,Open,214.22,2,7
+2025-01-06,Urgent,Social Media,Pending,433.04,4,9
+2024-01-30,Urgent,Web Form,Open,346.54,4,9
+2024-06-08,Urgent,Live Chat,New,98.98,3,9
+2024-04-11,High,Phone,Closed,267.76,3,3
+2025-04-28,High,Social Media,Pending,359.21,1,8
+2024-09-30,High,Mobile App,New,264.29,3,6
+2025-04-17,Low,Phone,Reopened,600.73,5,5
+2024-06-23,Low,Mobile App,Reopened,142.92,4,5
+2025-05-29,Urgent,Web Form,Reopened,139.75,2,8
+2024-11-04,Low,Social Media,Pending,240.27,4,1
+2024-12-21,Urgent,Live Chat,Reopened,445.59,4,5
+2025-05-13,Medium,Phone,Pending,47.39,4,4
+2024-01-10,Urgent,Email,New,157.67,2,5
+2025-02-22,Medium,Social Media,Pending,94.42,1,9
+2024-05-15,Urgent,Web Form,Closed,632.23,3,5
+2024-10-11,Low,Social Media,Open,718.37,2,2
+2024-06-22,High,Web Form,New,125.25,5,9
+2024-01-02,Medium,Phone,New,24.91,2,6
+2024-07-06,High,Live Chat,Resolved,33.75,3,7
+2024-11-24,Low,Email,Closed,620.36,3,1
+2025-01-09,Urgent,Live Chat,Resolved,71.4,3,7
+2024-01-15,Medium,Mobile App,Reopened,291.94,4,9
+2024-01-03,Medium,Mobile App,Pending,515.12,5,8
+2024-05-05,Low,Mobile App,Closed,83.94,4,9
+2024-12-31,Urgent,Phone,Closed,131.59,2,4
+2024-11-04,Urgent,Mobile App,Pending,607.92,3,6
+2025-01-15,Low,Web Form,Resolved,232.64,3,8
+2024-09-20,High,Email,Closed,383.27,4,6
+2025-03-01,Low,Mobile App,Open,333.42,2,2
+2024-07-17,High,Social Media,Resolved,251.1,4,7
+2024-10-11,Urgent,Web Form,Resolved,486.22,3,9
+2025-02-08,High,Phone,Pending,233.59,5,8
+2025-02-18,Medium,Web Form,New,86.91,4,6
+2024-04-20,High,Social Media,Closed,446.45,3,9
+2025-02-20,Urgent,Social Media,Pending,476.03,5,2
+2024-10-22,Medium,Phone,Closed,501.43,2,3
+2024-08-31,Low,Live Chat,Open,179.17,3,5
+2024-04-04,High,Web Form,Resolved,1.46,2,8
+2025-04-01,High,Live Chat,Open,215.15,4,5
+2024-09-04,Low,Live Chat,Closed,549.68,2,6
+2024-04-30,High,Email,Resolved,692.0,3,4
+2025-01-30,High,Web Form,Reopened,433.31,3,3
+2024-08-12,Low,Phone,Reopened,472.71,3,4
+2024-07-23,Medium,Social Media,Reopened,84.4,2,7
+2025-05-07,Urgent,Live Chat,Reopened,109.05,4,4
+2024-11-23,Low,Email,Resolved,547.88,2,1
+2025-05-04,Medium,Web Form,New,125.63,3,8
+2025-03-04,Urgent,Phone,Closed,195.46,3,9
+2024-02-04,Low,Social Media,Open,455.02,5,6
+2024-09-07,High,Mobile App,New,337.72,3,6
+2024-01-11,Medium,Mobile App,Pending,587.62,1,1
+2024-01-17,Urgent,Phone,Pending,395.85,2,2
+2025-02-03,Medium,Live Chat,Resolved,629.06,4,5
+2024-05-28,Urgent,Web Form,Resolved,302.72,2,9
+2024-02-07,Urgent,Live Chat,Open,158.12,4,7
+2024-12-01,Urgent,Social Media,New,7.52,2,5
+2024-09-29,High,Mobile App,Resolved,273.62,3,1
+2024-04-27,Low,Web Form,Closed,311.28,3,5
+2024-11-06,Urgent,Social Media,Pending,117.71,3,1
+2024-11-18,Urgent,Mobile App,Pending,267.16,4,4
+2025-05-27,Urgent,Email,New,660.15,2,8
+2024-05-11,Urgent,Live Chat,Open,186.35,2,4
+2024-09-20,Urgent,Social Media,Reopened,256.4,3,4
+2024-07-26,Low,Live Chat,Closed,9.81,4,5
+2025-02-04,Medium,Phone,Reopened,604.77,1,1
+2024-01-23,Low,Phone,Reopened,152.75,1,3
+2024-06-21,Medium,Web Form,Resolved,271.51,3,7
+2025-05-31,High,Phone,Closed,373.43,3,6
+2024-12-18,Medium,Live Chat,New,549.61,2,5
+2024-01-26,High,Live Chat,New,439.8,4,5
+2024-05-21,Low,Phone,Resolved,683.18,5,2
+2025-05-11,Medium,Web Form,Open,94.9,4,5
+2025-01-16,Urgent,Mobile App,New,319.41,3,2
+2024-05-02,Medium,Live Chat,New,86.1,4,9
+2025-04-21,Medium,Mobile App,Closed,49.18,4,7
+2024-07-21,Medium,Mobile App,Resolved,99.25,3,7
+2024-07-09,Medium,Live Chat,Open,466.63,3,8
+2024-04-22,Medium,Phone,Closed,700.1,3,3
+2025-05-19,Medium,Email,Resolved,253.86,2,6
+2024-10-12,High,Email,Open,592.19,3,8
+2024-07-24,Low,Social Media,Reopened,23.33,2,10
+2025-06-08,Medium,Social Media,New,351.39,4,1
+2025-02-10,Medium,Web Form,New,4.33,1,8
+2024-07-24,Low,Email,Pending,286.13,1,9
+2025-02-08,Medium,Phone,Reopened,660.94,3,2
+2024-01-20,Medium,Mobile App,Pending,1.41,4,4
+2024-12-29,Low,Social Media,Reopened,46.86,5,1
+2024-07-15,Urgent,Social Media,Pending,318.44,2,7
+2025-04-13,Medium,Web Form,Resolved,494.43,3,4
+2024-05-26,Low,Phone,New,308.49,2,5
+2024-02-22,High,Mobile App,Resolved,122.78,3,9
+2024-07-09,Low,Phone,Pending,226.46,2,5
+2024-08-18,Urgent,Email,Reopened,231.1,5,10
+2024-05-08,Urgent,Email,Pending,286.05,3,5
+2024-11-24,Low,Web Form,Reopened,522.13,3,6
+2024-01-27,Low,Phone,Reopened,481.4,2,2
+2024-02-25,Low,Live Chat,Resolved,504.1,3,7
+2024-09-01,Medium,Social Media,Reopened,520.69,5,5
+2025-01-03,Low,Email,Resolved,513.01,2,7
+2025-02-12,Medium,Live Chat,Pending,385.87,4,5
+2024-08-19,High,Live Chat,Pending,60.08,4,4
+2024-08-23,Low,Social Media,Resolved,402.07,5,6
+2025-01-16,Urgent,Email,New,655.72,3,7
+2024-03-01,Low,Mobile App,Closed,108.01,4,2
+2025-01-30,Medium,Web Form,New,500.08,3,6
+2025-06-02,High,Phone,Pending,434.33,3,8
+2024-08-11,High,Live Chat,Pending,627.91,3,0
+2024-02-17,High,Web Form,Pending,658.21,1,3
+2025-05-06,Low,Social Media,New,389.77,2,3
+2025-03-03,Urgent,Mobile App,Reopened,561.25,3,2
+2024-01-08,Medium,Phone,Open,433.46,4,3
+2025-03-27,Urgent,Phone,New,56.08,3,5
+2024-04-22,Urgent,Mobile App,Resolved,657.0,3,2
+2024-12-09,High,Live Chat,Pending,90.58,4,3
+2024-06-29,Medium,Social Media,Reopened,373.63,3,5
+2024-02-04,Medium,Web Form,Open,168.37,4,10
+2025-01-20,Low,Mobile App,Open,189.87,4,4
+2025-04-17,High,Mobile App,Pending,704.63,2,3
+2025-02-23,Medium,Social Media,Pending,103.2,3,8
+2024-09-07,Urgent,Phone,Closed,347.34,4,10
+2025-05-10,Low,Email,Pending,642.83,1,3
+2024-05-18,Low,Social Media,Pending,411.7,2,8
+2025-01-06,Low,Email,New,573.22,2,9
+2024-08-01,Medium,Email,Closed,297.48,2,2
+2024-11-20,Medium,Mobile App,Open,319.51,2,0
+2024-01-31,Medium,Social Media,Closed,602.0,3,1
+2025-02-26,High,Social Media,New,677.22,3,9
+2025-01-19,Low,Live Chat,Pending,234.33,4,7
+2025-05-12,Low,Web Form,Reopened,132.27,2,9
+2025-02-17,Urgent,Mobile App,Closed,303.3,5,8
+2024-02-18,Urgent,Web Form,Resolved,201.45,4,7
+2025-04-17,High,Phone,Reopened,382.51,2,3
+2025-06-05,Low,Mobile App,Reopened,446.5,3,5
+2024-12-30,Low,Mobile App,Pending,36.55,3,0
+2024-06-08,Medium,Email,Pending,620.37,2,10
+2024-03-16,Low,Social Media,Closed,298.1,3,5
+2024-01-15,Low,Social Media,Pending,702.4,3,8
+2024-11-02,Low,Phone,Resolved,234.75,2,9
+2025-03-28,High,Web Form,Resolved,330.87,1,7
+2024-07-05,Low,Social Media,Open,689.18,2,3
+2025-06-03,High,Web Form,Reopened,540.56,3,9
+2024-10-27,High,Social Media,Pending,295.36,5,8
+2025-04-03,Low,Phone,Closed,88.8,3,10
+2024-12-12,Low,Live Chat,New,325.17,1,3
+2024-10-14,Medium,Phone,Closed,95.64,5,6
+2024-04-21,High,Live Chat,Closed,380.53,2,4
+2024-06-04,Urgent,Web Form,Pending,461.76,3,1
+2024-05-23,Medium,Live Chat,Closed,285.3,4,8
+2025-03-08,Urgent,Phone,Reopened,676.53,2,5
+2024-04-19,Low,Mobile App,New,184.96,2,6
+2024-04-09,High,Email,Open,571.88,3,10
+2024-07-20,Urgent,Phone,New,209.11,1,9
+2024-08-11,Medium,Phone,New,315.82,1,4
+2024-07-06,Medium,Email,Closed,294.32,4,10
+2024-07-31,Low,Social Media,New,5.75,3,8
+2025-05-18,High,Email,Reopened,362.59,3,1
+2024-12-05,Medium,Social Media,Reopened,118.12,1,2
+2024-02-03,Medium,Web Form,Closed,176.86,5,8
+2025-03-14,Low,Email,New,565.23,3,0
+2024-06-29,Low,Live Chat,Reopened,595.72,2,5
+2024-02-25,Low,Mobile App,Open,152.38,2,1
+2024-07-23,Urgent,Mobile App,Open,616.2,1,2
+2025-04-03,Medium,Live Chat,Closed,708.73,1,3
+2024-08-27,Medium,Live Chat,Reopened,394.98,3,5
+2025-06-15,Low,Social Media,New,569.08,5,2
+2024-05-12,Low,Live Chat,Closed,355.58,4,2
+2025-01-14,Urgent,Mobile App,Reopened,165.93,1,0
+2024-08-01,Medium,Live Chat,Closed,460.06,1,1
+2024-04-02,Low,Live Chat,Open,424.31,3,8
+2024-09-09,Low,Mobile App,Closed,701.37,2,6
+2024-02-01,High,Web Form,New,530.03,2,7
+2025-06-10,Low,Web Form,Pending,307.42,2,1
+2025-05-23,High,Mobile App,New,357.88,2,2
+2024-02-22,Medium,Social Media,Reopened,383.11,4,1
+2025-06-11,Medium,Social Media,Pending,233.22,2,4
+2024-05-07,Low,Email,Pending,162.35,4,8
+2025-05-12,Low,Web Form,Open,543.47,3,1
+2024-06-05,Low,Phone,New,689.56,1,6
+2025-05-17,Low,Web Form,New,676.82,3,3
+2025-02-10,Medium,Web Form,Pending,218.62,1,7
+2024-05-04,Medium,Live Chat,Reopened,259.65,1,2
+2024-01-16,Urgent,Email,Open,151.76,1,9
+2024-06-11,Urgent,Email,Open,619.1,5,0
+2024-04-12,Low,Live Chat,Reopened,509.36,4,8
+2024-12-21,Medium,Email,Reopened,2.81,2,4
+2024-08-05,Medium,Email,Open,72.4,3,1
+2025-05-17,High,Web Form,Resolved,279.57,2,3
+2025-05-11,Low,Live Chat,Open,360.22,4,10
+2025-05-06,Medium,Email,New,542.22,5,9
+2024-12-05,High,Live Chat,Resolved,251.66,2,5
+2024-09-09,Urgent,Web Form,Closed,459.34,3,7
+2024-04-02,Medium,Phone,Pending,104.3,2,3
+2024-06-24,Urgent,Email,Reopened,388.59,2,8
+2024-09-30,High,Social Media,New,242.2,2,9
+2024-12-10,Urgent,Phone,Closed,232.44,2,7
+2024-09-06,Medium,Web Form,New,394.6,2,8
+2025-04-02,Low,Web Form,Pending,190.39,2,3
+2024-02-22,Urgent,Live Chat,Reopened,36.15,2,7

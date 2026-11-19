@@ -1,0 +1,241 @@
+throughputDate,terminalName,cargoType,shiftCode,containerMoves,tonnageHandled,vesselBerthHours,demurrageCharges
+2024-04-04,North Container Terminal,Liquid Bulk,Night,1175,66085.65,10.75,112972.02
+2024-06-24,Central General Cargo,Dry Bulk,Evening,952,7669.77,16.18,146393.08
+2024-07-31,West Liquid Terminal,Roll-On Roll-Off,Night,1109,17014.11,20.53,7399.83
+2024-01-15,Central General Cargo,Break Bulk,Night,642,62612.46,8.87,146917.63
+2025-06-09,North Container Terminal,Break Bulk,Day,738,42709.4,3.05,205274.32
+2024-01-30,West Liquid Terminal,Roll-On Roll-Off,Night,1128,32119.31,16.34,154355.77
+2025-05-30,South Bulk Terminal,Break Bulk,Day,274,20378.33,21.97,219850.65
+2025-06-18,East Ro-Ro Berth,Containerized,Evening,1073,8842.86,20.11,54139.14
+2025-05-25,West Liquid Terminal,Containerized,Day,331,66776.38,22.2,56939.97
+2025-04-11,West Liquid Terminal,Refrigerated,Day,329,44039.52,19.61,26112.4
+2025-06-06,North Container Terminal,Containerized,Evening,52,84963.42,7.48,113329.18
+2024-10-24,North Container Terminal,Refrigerated,Evening,974,3124.22,22.98,173550.02
+2024-05-03,West Liquid Terminal,Liquid Bulk,Evening,549,40104.44,0.51,104410.57
+2025-06-06,South Bulk Terminal,Break Bulk,Day,963,37386.24,20.58,207988.48
+2025-04-28,North Container Terminal,Roll-On Roll-Off,Day,344,10946.89,9.31,229025.83
+2025-06-19,North Container Terminal,Dry Bulk,Evening,963,44232.63,8.37,7764.08
+2024-01-28,South Bulk Terminal,Refrigerated,Evening,1071,17744.15,1.88,70797.27
+2024-07-31,Central General Cargo,Refrigerated,Evening,331,68157.62,6.34,190237.73
+2024-10-04,East Ro-Ro Berth,Containerized,Day,1067,59345.08,11.3,156866.71
+2024-06-21,South Bulk Terminal,Break Bulk,Day,845,41160.91,12.38,104580.92
+2025-05-29,North Container Terminal,Roll-On Roll-Off,Night,374,49463.6,15.79,112719.62
+2025-01-01,East Ro-Ro Berth,Refrigerated,Day,256,31928.17,19.94,89061.13
+2024-11-06,South Bulk Terminal,Containerized,Night,200,63947.21,17.2,206091.62
+2024-01-12,Central General Cargo,Dry Bulk,Day,918,20013.78,14.95,230056.96
+2024-08-14,South Bulk Terminal,Break Bulk,Day,1104,13910.15,11.66,18003.11
+2024-11-02,East Ro-Ro Berth,Roll-On Roll-Off,Day,97,17257.84,23.28,45169.33
+2024-08-27,South Bulk Terminal,Containerized,Night,405,23213.29,15.55,62577.78
+2025-02-24,South Bulk Terminal,Refrigerated,Day,963,46638.98,0.8,82746.28
+2024-07-21,South Bulk Terminal,Containerized,Night,1028,11622.19,18.85,135387.47
+2024-11-21,West Liquid Terminal,Refrigerated,Day,82,24172.99,20.07,193327.83
+2024-02-23,South Bulk Terminal,Containerized,Day,416,73684.23,23.73,45571.07
+2024-11-05,East Ro-Ro Berth,Containerized,Night,129,60205.72,6.3,2962.12
+2024-06-27,West Liquid Terminal,Liquid Bulk,Day,466,5822.99,7.23,149097.98
+2024-10-09,South Bulk Terminal,Refrigerated,Day,678,12009.35,6.22,90280.04
+2025-01-31,Central General Cargo,Containerized,Evening,1036,27301.0,15.53,198589.33
+2024-04-23,Central General Cargo,Liquid Bulk,Evening,88,47773.88,21.01,173203.96
+2025-06-15,North Container Terminal,Dry Bulk,Night,1076,22718.45,11.83,111520.13
+2024-08-20,Central General Cargo,Dry Bulk,Evening,618,55202.03,3.29,137606.76
+2025-03-26,Central General Cargo,Roll-On Roll-Off,Day,1178,65790.21,22.57,201496.79
+2024-03-01,East Ro-Ro Berth,Liquid Bulk,Night,999,15274.74,19.07,12050.36
+2025-03-05,Central General Cargo,Dry Bulk,Day,731,64489.4,16.33,207518.22
+2024-06-07,East Ro-Ro Berth,Roll-On Roll-Off,Day,373,33197.01,11.01,61750.11
+2024-02-11,Central General Cargo,Dry Bulk,Day,312,65605.0,2.88,156796.86
+2024-09-27,East Ro-Ro Berth,Break Bulk,Day,417,60069.49,9.76,133908.46
+2024-07-17,East Ro-Ro Berth,Liquid Bulk,Evening,11,72659.49,1.27,19266.94
+2024-01-01,Central General Cargo,Containerized,Day,143,28697.51,1.66,11140.55
+2024-04-23,East Ro-Ro Berth,Dry Bulk,Night,834,75913.56,16.07,10054.34
+2024-10-21,Central General Cargo,Roll-On Roll-Off,Evening,547,84790.85,13.35,179989.2
+2024-01-18,North Container Terminal,Dry Bulk,Day,130,43029.58,17.91,246712.32
+2025-06-23,Central General Cargo,Dry Bulk,Night,184,84438.12,16.52,146816.87
+2024-11-09,Central General Cargo,Roll-On Roll-Off,Night,444,47237.65,15.15,169803.12
+2025-05-08,North Container Terminal,Containerized,Night,172,84498.76,11.45,65238.77
+2024-12-07,Central General Cargo,Refrigerated,Night,684,46260.26,18.75,100008.1
+2025-06-14,West Liquid Terminal,Refrigerated,Evening,155,68701.22,4.76,65799.72
+2025-02-09,West Liquid Terminal,Break Bulk,Night,682,22037.26,6.37,226505.78
+2025-06-01,East Ro-Ro Berth,Break Bulk,Night,419,80947.29,9.01,47506.63
+2024-12-20,South Bulk Terminal,Dry Bulk,Evening,538,38222.7,0.41,22285.55
+2024-09-12,North Container Terminal,Containerized,Night,760,36388.59,19.08,126133.02
+2025-03-05,East Ro-Ro Berth,Containerized,Evening,1196,1398.06,8.5,249580.53
+2024-11-06,Central General Cargo,Refrigerated,Day,1141,35423.41,15.25,14078.08
+2024-07-07,North Container Terminal,Refrigerated,Evening,876,75366.21,2.92,51097.72
+2024-02-10,Central General Cargo,Roll-On Roll-Off,Day,352,61532.39,15.46,46517.73
+2024-08-22,South Bulk Terminal,Containerized,Night,745,75128.52,23.27,181636.56
+2024-02-06,West Liquid Terminal,Dry Bulk,Night,347,58.62,13.54,98244.88
+2024-10-01,South Bulk Terminal,Liquid Bulk,Evening,780,82441.13,5.04,118947.33
+2024-04-13,East Ro-Ro Berth,Dry Bulk,Day,1030,82954.72,8.21,81986.24
+2024-09-04,South Bulk Terminal,Liquid Bulk,Evening,113,67836.35,6.88,132660.08
+2024-04-18,East Ro-Ro Berth,Dry Bulk,Evening,247,53826.15,20.47,96230.15
+2024-01-17,South Bulk Terminal,Dry Bulk,Night,797,40601.2,18.28,216222.22
+2024-04-21,Central General Cargo,Dry Bulk,Night,502,36098.92,1.94,140053.11
+2025-05-12,East Ro-Ro Berth,Dry Bulk,Night,618,31475.8,6.82,108949.23
+2024-12-28,West Liquid Terminal,Dry Bulk,Evening,984,10179.49,17.04,156387.78
+2025-04-24,Central General Cargo,Break Bulk,Day,380,40874.02,19.38,192469.59
+2024-02-11,West Liquid Terminal,Dry Bulk,Night,873,28453.83,10.39,54608.33
+2024-11-16,North Container Terminal,Dry Bulk,Day,1181,17546.68,21.81,202147.01
+2024-09-27,Central General Cargo,Break Bulk,Day,151,84937.51,20.35,29899.56
+2024-12-15,East Ro-Ro Berth,Break Bulk,Day,927,28923.78,20.59,34890.47
+2024-01-21,North Container Terminal,Dry Bulk,Night,970,26150.47,1.45,237327.1
+2025-01-25,West Liquid Terminal,Refrigerated,Day,953,11.91,20.97,14419.11
+2024-09-23,North Container Terminal,Break Bulk,Day,279,686.61,22.9,19191.03
+2025-04-01,West Liquid Terminal,Break Bulk,Day,235,10223.9,10.93,165785.15
+2025-06-15,South Bulk Terminal,Containerized,Day,758,61123.46,1.2,72749.0
+2024-10-26,Central General Cargo,Containerized,Evening,511,9601.02,8.65,120036.69
+2024-07-19,Central General Cargo,Dry Bulk,Night,688,35603.34,10.75,43441.33
+2024-04-25,East Ro-Ro Berth,Liquid Bulk,Evening,742,83981.32,11.0,17529.07
+2025-05-04,North Container Terminal,Liquid Bulk,Night,380,65444.61,5.57,229607.25
+2025-03-13,East Ro-Ro Berth,Liquid Bulk,Day,57,81650.29,19.73,98765.38
+2024-09-16,West Liquid Terminal,Roll-On Roll-Off,Evening,710,14227.28,0.09,138570.86
+2024-02-20,Central General Cargo,Break Bulk,Evening,159,4861.92,21.13,144793.34
+2025-05-08,Central General Cargo,Dry Bulk,Night,59,20578.24,12.43,163680.69
+2025-03-12,South Bulk Terminal,Containerized,Evening,194,13247.85,13.29,216015.17
+2025-06-23,South Bulk Terminal,Break Bulk,Evening,928,43374.09,22.6,187035.74
+2024-10-02,West Liquid Terminal,Refrigerated,Day,637,59531.46,9.47,87965.57
+2024-11-26,Central General Cargo,Refrigerated,Day,642,18719.69,13.63,238001.97
+2024-01-08,North Container Terminal,Roll-On Roll-Off,Day,658,59771.85,21.37,99632.2
+2024-10-11,Central General Cargo,Refrigerated,Night,256,55113.95,7.52,103414.75
+2024-10-31,North Container Terminal,Liquid Bulk,Evening,1130,50645.04,6.34,33692.27
+2024-03-05,East Ro-Ro Berth,Break Bulk,Night,382,57170.68,2.6,195482.72
+2024-05-16,West Liquid Terminal,Containerized,Evening,768,13765.41,4.46,121908.06
+2024-02-25,South Bulk Terminal,Break Bulk,Day,961,48511.55,9.49,167516.19
+2024-04-01,South Bulk Terminal,Dry Bulk,Day,294,68467.37,21.85,57109.79
+2024-10-21,South Bulk Terminal,Liquid Bulk,Evening,1025,60150.11,1.63,14449.4
+2025-02-27,South Bulk Terminal,Containerized,Day,991,77427.24,2.36,24921.52
+2024-06-26,Central General Cargo,Refrigerated,Night,457,12402.89,22.74,209114.73
+2024-07-06,South Bulk Terminal,Break Bulk,Evening,1126,39588.08,0.51,108191.44
+2025-03-05,North Container Terminal,Refrigerated,Evening,493,53554.74,10.43,134296.03
+2024-01-02,South Bulk Terminal,Liquid Bulk,Evening,272,43334.24,6.56,123841.19
+2024-11-27,North Container Terminal,Roll-On Roll-Off,Night,646,44733.58,18.02,85701.96
+2025-02-06,East Ro-Ro Berth,Containerized,Evening,317,11062.53,21.85,135777.45
+2024-01-09,West Liquid Terminal,Refrigerated,Night,839,50984.62,6.4,4773.18
+2024-05-31,South Bulk Terminal,Dry Bulk,Night,427,48165.99,7.55,39546.64
+2024-02-15,South Bulk Terminal,Liquid Bulk,Evening,275,41679.81,21.39,165983.84
+2024-08-01,North Container Terminal,Liquid Bulk,Day,521,64121.57,13.49,177387.13
+2024-02-17,Central General Cargo,Containerized,Evening,408,30902.98,7.35,160.25
+2025-05-21,Central General Cargo,Dry Bulk,Evening,1120,36223.92,13.55,31182.62
+2024-06-03,South Bulk Terminal,Break Bulk,Night,176,42493.98,10.15,133728.97
+2024-08-23,West Liquid Terminal,Break Bulk,Day,162,13301.05,3.68,112360.39
+2024-04-06,North Container Terminal,Break Bulk,Night,276,2889.24,20.75,89041.26
+2024-01-20,North Container Terminal,Liquid Bulk,Evening,1022,44242.89,4.88,99661.18
+2024-08-23,Central General Cargo,Liquid Bulk,Evening,78,22306.61,23.32,232460.88
+2024-02-08,South Bulk Terminal,Dry Bulk,Day,218,81462.88,12.38,152882.86
+2024-03-04,West Liquid Terminal,Containerized,Day,737,7351.56,2.31,98032.38
+2024-08-31,Central General Cargo,Liquid Bulk,Evening,703,26384.96,20.85,214252.76
+2024-08-20,South Bulk Terminal,Refrigerated,Evening,186,77060.36,8.65,6246.33
+2025-04-23,Central General Cargo,Break Bulk,Day,684,81127.24,5.73,233087.86
+2024-10-16,North Container Terminal,Liquid Bulk,Evening,649,71626.17,15.92,33426.56
+2025-03-01,East Ro-Ro Berth,Refrigerated,Night,261,51609.38,4.52,203711.11
+2024-07-09,East Ro-Ro Berth,Break Bulk,Night,1158,52227.36,4.33,73794.99
+2025-01-24,East Ro-Ro Berth,Roll-On Roll-Off,Day,217,13924.66,4.63,185945.56
+2024-12-07,South Bulk Terminal,Containerized,Evening,1037,51112.7,17.07,48087.48
+2024-01-13,North Container Terminal,Dry Bulk,Evening,1067,58229.41,17.4,222076.33
+2024-08-14,Central General Cargo,Refrigerated,Day,307,51096.49,4.67,71863.39
+2025-01-27,West Liquid Terminal,Containerized,Evening,1153,60824.58,5.79,220493.02
+2025-02-10,East Ro-Ro Berth,Dry Bulk,Evening,485,23484.52,23.95,223285.21
+2025-06-12,North Container Terminal,Liquid Bulk,Evening,440,8294.31,1.0,164943.3
+2025-05-25,Central General Cargo,Refrigerated,Evening,556,82324.06,15.38,9262.83
+2024-06-08,North Container Terminal,Liquid Bulk,Night,190,52002.66,21.79,473.74
+2024-04-17,East Ro-Ro Berth,Dry Bulk,Evening,717,70741.94,10.69,41588.8
+2024-10-07,Central General Cargo,Roll-On Roll-Off,Day,359,79754.68,4.79,42692.26
+2025-01-07,North Container Terminal,Dry Bulk,Day,162,22256.12,9.24,232627.19
+2024-06-30,East Ro-Ro Berth,Roll-On Roll-Off,Day,1163,68423.59,9.81,179405.24
+2024-04-13,Central General Cargo,Liquid Bulk,Day,545,59078.65,9.92,222948.48
+2025-05-12,North Container Terminal,Liquid Bulk,Evening,911,37484.08,6.02,11169.02
+2025-04-06,West Liquid Terminal,Roll-On Roll-Off,Night,1010,1848.94,23.7,175803.06
+2025-02-27,North Container Terminal,Break Bulk,Evening,335,18581.79,2.38,220270.93
+2024-06-12,East Ro-Ro Berth,Containerized,Day,856,72293.35,10.91,19969.01
+2024-08-08,Central General Cargo,Containerized,Night,906,57714.91,12.67,224793.09
+2024-10-14,West Liquid Terminal,Liquid Bulk,Day,1166,71463.85,11.65,181989.0
+2024-11-14,East Ro-Ro Berth,Dry Bulk,Night,1078,5588.59,12.93,195250.9
+2024-06-05,South Bulk Terminal,Roll-On Roll-Off,Evening,823,49542.38,3.48,200172.05
+2024-03-08,South Bulk Terminal,Refrigerated,Day,96,9276.36,11.72,35221.52
+2024-04-14,South Bulk Terminal,Liquid Bulk,Evening,76,58436.8,12.35,30132.88
+2024-10-11,South Bulk Terminal,Refrigerated,Evening,696,1888.7,18.5,57516.14
+2025-05-19,South Bulk Terminal,Roll-On Roll-Off,Day,367,43320.63,4.77,206874.73
+2024-06-11,East Ro-Ro Berth,Dry Bulk,Night,403,31345.13,23.65,102109.76
+2024-01-16,North Container Terminal,Refrigerated,Day,637,53464.53,5.83,108692.31
+2024-10-22,Central General Cargo,Dry Bulk,Evening,1120,46235.5,18.52,207668.93
+2025-01-30,Central General Cargo,Refrigerated,Evening,43,7261.81,19.41,187071.38
+2025-06-23,North Container Terminal,Break Bulk,Day,1122,26544.21,2.22,225956.95
+2024-05-06,North Container Terminal,Roll-On Roll-Off,Night,269,19013.19,15.7,66690.85
+2024-12-16,South Bulk Terminal,Break Bulk,Day,62,65864.77,8.78,195112.55
+2024-07-16,East Ro-Ro Berth,Dry Bulk,Night,1181,21147.06,10.42,79229.4
+2025-03-03,East Ro-Ro Berth,Refrigerated,Day,1164,9167.85,10.78,217463.38
+2025-04-23,East Ro-Ro Berth,Liquid Bulk,Night,726,30202.92,4.24,131623.01
+2024-12-17,East Ro-Ro Berth,Roll-On Roll-Off,Day,570,30520.77,15.32,178414.73
+2024-11-02,South Bulk Terminal,Roll-On Roll-Off,Night,193,83611.09,16.56,98858.32
+2024-08-28,North Container Terminal,Dry Bulk,Day,153,14479.81,10.82,199344.6
+2025-06-12,Central General Cargo,Break Bulk,Evening,318,67422.15,4.44,48513.12
+2025-04-27,Central General Cargo,Break Bulk,Night,260,50945.2,9.67,244873.01
+2025-03-16,West Liquid Terminal,Liquid Bulk,Day,583,348.51,8.88,40532.45
+2024-05-01,South Bulk Terminal,Liquid Bulk,Night,986,34920.1,11.89,77644.97
+2024-08-15,South Bulk Terminal,Liquid Bulk,Night,73,29574.64,7.32,76387.37
+2024-05-24,Central General Cargo,Containerized,Evening,1121,56270.92,12.57,156336.36
+2024-07-16,North Container Terminal,Roll-On Roll-Off,Evening,242,4607.67,2.47,169926.08
+2024-09-10,West Liquid Terminal,Refrigerated,Night,10,57775.84,13.02,26515.34
+2025-03-01,South Bulk Terminal,Liquid Bulk,Evening,140,68967.86,1.43,29986.62
+2025-04-09,West Liquid Terminal,Containerized,Night,143,55081.29,13.75,63744.9
+2024-11-05,South Bulk Terminal,Break Bulk,Night,77,73041.58,11.87,190704.91
+2024-12-03,East Ro-Ro Berth,Roll-On Roll-Off,Night,791,28145.23,0.69,176251.66
+2025-03-14,South Bulk Terminal,Containerized,Day,263,61264.72,18.9,78849.11
+2025-06-19,West Liquid Terminal,Break Bulk,Day,639,80524.42,13.19,174700.95
+2025-06-11,East Ro-Ro Berth,Dry Bulk,Day,693,72859.7,7.33,19084.26
+2024-10-28,North Container Terminal,Dry Bulk,Day,753,26369.61,12.58,116516.86
+2024-10-19,North Container Terminal,Refrigerated,Night,682,60284.11,9.99,13306.75
+2024-02-06,West Liquid Terminal,Refrigerated,Day,1034,55890.51,18.58,153118.01
+2024-07-06,South Bulk Terminal,Refrigerated,Day,834,484.26,11.74,217744.69
+2024-07-08,West Liquid Terminal,Containerized,Day,1196,68432.61,14.84,211490.1
+2024-02-22,West Liquid Terminal,Roll-On Roll-Off,Evening,413,10489.12,4.32,10735.35
+2025-03-06,East Ro-Ro Berth,Roll-On Roll-Off,Day,336,3986.36,1.47,191938.05
+2024-03-01,North Container Terminal,Containerized,Night,1124,28295.57,1.07,149427.2
+2024-02-16,South Bulk Terminal,Dry Bulk,Night,309,8112.04,13.66,10025.45
+2025-06-09,Central General Cargo,Containerized,Night,1153,28227.0,3.42,122653.36
+2025-02-24,South Bulk Terminal,Roll-On Roll-Off,Evening,843,30216.14,4.45,221621.27
+2024-11-10,South Bulk Terminal,Liquid Bulk,Day,569,22327.0,4.84,229368.13
+2024-01-12,East Ro-Ro Berth,Containerized,Day,104,28578.68,8.36,122570.83
+2024-02-11,North Container Terminal,Liquid Bulk,Night,930,21490.22,4.51,176265.61
+2025-06-15,South Bulk Terminal,Refrigerated,Night,565,71369.2,1.13,43736.64
+2025-02-27,North Container Terminal,Break Bulk,Day,176,33036.83,17.74,222683.31
+2024-10-30,East Ro-Ro Berth,Refrigerated,Day,444,37324.85,0.39,46403.43
+2024-03-15,East Ro-Ro Berth,Liquid Bulk,Night,414,17210.59,11.44,160195.8
+2025-02-01,North Container Terminal,Containerized,Day,299,16675.45,2.21,244797.84
+2024-07-01,South Bulk Terminal,Dry Bulk,Day,1188,4219.33,9.93,82567.7
+2025-04-09,East Ro-Ro Berth,Break Bulk,Night,296,77667.3,7.06,33926.0
+2024-05-13,West Liquid Terminal,Liquid Bulk,Night,783,13325.38,19.23,164875.39
+2024-06-18,North Container Terminal,Refrigerated,Day,939,23698.58,18.64,229501.77
+2024-03-25,Central General Cargo,Dry Bulk,Night,512,47029.81,2.74,39405.75
+2024-10-04,North Container Terminal,Roll-On Roll-Off,Night,655,52841.41,7.21,57038.09
+2024-09-28,Central General Cargo,Dry Bulk,Night,757,21487.35,21.21,153150.56
+2025-03-24,Central General Cargo,Dry Bulk,Evening,106,66308.51,23.05,243123.83
+2025-02-17,North Container Terminal,Dry Bulk,Evening,659,16478.79,19.55,234293.74
+2024-07-20,South Bulk Terminal,Containerized,Day,296,51597.12,16.42,113820.98
+2024-05-07,East Ro-Ro Berth,Break Bulk,Evening,277,80009.93,14.27,184314.06
+2024-05-17,East Ro-Ro Berth,Dry Bulk,Day,755,37601.74,11.47,74883.08
+2024-02-03,West Liquid Terminal,Dry Bulk,Day,412,26962.01,16.86,87953.47
+2024-01-15,West Liquid Terminal,Break Bulk,Night,1059,57765.28,8.43,200579.9
+2024-11-09,North Container Terminal,Roll-On Roll-Off,Night,906,47707.59,0.36,49699.33
+2024-02-27,West Liquid Terminal,Liquid Bulk,Evening,941,81218.49,18.74,67517.09
+2024-04-09,East Ro-Ro Berth,Roll-On Roll-Off,Evening,96,23785.12,10.53,96219.13
+2024-07-09,Central General Cargo,Refrigerated,Evening,130,43884.75,17.75,16431.85
+2024-03-26,Central General Cargo,Break Bulk,Day,875,23727.23,4.29,144195.81
+2024-11-08,Central General Cargo,Containerized,Night,47,44232.39,7.24,122340.8
+2024-06-23,West Liquid Terminal,Dry Bulk,Evening,742,1819.01,6.75,29904.94
+2024-07-06,South Bulk Terminal,Liquid Bulk,Night,87,3183.54,11.02,247895.02
+2024-01-16,Central General Cargo,Liquid Bulk,Day,547,50691.86,3.98,119338.39
+2024-11-14,South Bulk Terminal,Break Bulk,Evening,866,80435.95,1.61,108756.28
+2025-03-31,Central General Cargo,Roll-On Roll-Off,Evening,724,41337.07,19.94,124524.07
+2025-04-26,East Ro-Ro Berth,Refrigerated,Day,597,73705.07,6.44,141942.43
+2024-03-30,South Bulk Terminal,Refrigerated,Day,245,57530.91,0.26,229371.94
+2024-02-01,South Bulk Terminal,Dry Bulk,Evening,1140,8756.1,10.09,44889.99
+2025-04-20,Central General Cargo,Roll-On Roll-Off,Night,620,25035.39,5.35,23429.43
+2024-01-18,South Bulk Terminal,Liquid Bulk,Night,55,30309.14,5.43,152839.38
+2024-10-18,Central General Cargo,Containerized,Evening,452,80638.52,16.13,204305.11
+2025-02-15,South Bulk Terminal,Roll-On Roll-Off,Evening,1148,27022.61,11.57,15702.16
+2025-03-07,North Container Terminal,Dry Bulk,Night,848,57696.58,7.85,208179.75
+2024-11-12,South Bulk Terminal,Break Bulk,Night,339,54629.14,20.91,64918.9
+2024-01-18,East Ro-Ro Berth,Refrigerated,Evening,421,18961.64,12.66,111798.86
+2024-11-27,West Liquid Terminal,Refrigerated,Day,29,58432.31,1.68,365.91
+2025-03-18,Central General Cargo,Break Bulk,Day,97,70040.08,2.26,61092.62
+2024-09-11,Central General Cargo,Break Bulk,Day,410,80620.54,13.42,226018.56
+2024-08-07,North Container Terminal,Refrigerated,Night,54,39855.29,16.08,70416.15

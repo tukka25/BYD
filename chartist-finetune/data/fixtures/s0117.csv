@@ -1,0 +1,241 @@
+Invoice Date,Project Phase,Cost Type,Vendor Region,Invoice Amount,Labor Hours,Change Order Count
+2025-01-07,Roofing,Materials,Southwest,29919.65,509,10
+2024-09-19,Roofing,Permits,Northeast,480933.67,13,9
+2024-07-18,Site Preparation,Overhead,Southwest,121851.33,635,3
+2024-06-18,Electrical,Equipment Rental,Southeast,22939.07,85,6
+2024-06-15,Plumbing,Permits,Midwest,92090.95,822,7
+2024-11-16,Site Preparation,Equipment Rental,Mountain West,360921.76,43,11
+2024-01-27,Foundation,Overhead,Midwest,143626.8,553,11
+2024-10-17,Roofing,Materials,Northeast,5690.97,732,1
+2024-11-21,Foundation,Overhead,Northeast,314707.16,326,12
+2025-03-19,Finishing,Labor,Southeast,437486.12,849,6
+2025-04-20,Plumbing,Overhead,Southwest,155472.82,503,8
+2024-03-31,Electrical,Overhead,West Coast,238020.83,474,7
+2025-02-13,Site Preparation,Materials,West Coast,30308.25,596,5
+2025-03-01,Electrical,Labor,Southwest,389936.22,887,7
+2024-03-20,Site Preparation,Subcontractor,Southwest,399138.47,32,12
+2025-05-04,Site Preparation,Permits,Northeast,398029.04,15,12
+2024-07-12,Foundation,Overhead,Southeast,105877.18,578,8
+2024-03-22,Framing,Equipment Rental,West Coast,396942.31,860,12
+2024-04-15,Site Preparation,Overhead,West Coast,341357.48,234,6
+2024-12-10,Plumbing,Equipment Rental,Midwest,7309.91,195,2
+2025-02-21,Site Preparation,Permits,West Coast,379641.04,156,6
+2024-01-12,Finishing,Labor,Mountain West,411427.44,549,5
+2024-06-06,Plumbing,Labor,Midwest,76634.2,669,2
+2024-08-26,Framing,Materials,Northeast,65575.3,642,4
+2025-01-24,Plumbing,Permits,Northeast,363805.45,220,11
+2024-02-27,Roofing,Materials,Midwest,270087.99,945,2
+2024-12-19,Foundation,Materials,Northeast,88777.93,382,3
+2024-06-28,Electrical,Overhead,Northeast,75223.41,183,3
+2025-01-28,Finishing,Overhead,Southwest,227083.7,134,3
+2025-06-16,Site Preparation,Subcontractor,Midwest,459171.89,891,7
+2025-02-09,Foundation,Materials,Midwest,380832.94,489,6
+2024-09-05,Electrical,Equipment Rental,Southwest,188019.51,820,9
+2025-03-27,Site Preparation,Subcontractor,Southwest,251568.56,391,6
+2024-06-06,Site Preparation,Labor,Southeast,38614.86,774,7
+2025-01-27,Roofing,Permits,Northeast,362321.59,573,13
+2024-10-13,Electrical,Subcontractor,Mountain West,315221.87,106,5
+2024-10-13,Electrical,Overhead,West Coast,154429.99,563,9
+2025-01-05,Electrical,Subcontractor,West Coast,337006.28,626,3
+2024-03-25,Framing,Materials,Midwest,35979.55,482,8
+2024-02-16,Roofing,Subcontractor,Northeast,181015.21,926,7
+2024-01-04,Plumbing,Subcontractor,West Coast,306697.0,865,7
+2025-01-15,Roofing,Materials,Southeast,158762.06,3,6
+2024-04-28,Roofing,Labor,Northeast,421819.47,378,13
+2025-02-21,Framing,Overhead,Northeast,268398.57,46,13
+2024-10-03,Foundation,Overhead,West Coast,4977.16,500,5
+2024-07-12,Framing,Materials,Southeast,210625.4,688,11
+2024-04-12,Framing,Overhead,Southeast,211344.02,562,1
+2025-02-06,Roofing,Permits,Southwest,259154.91,72,8
+2024-10-13,Roofing,Subcontractor,Southeast,87628.14,883,9
+2024-10-18,Framing,Labor,Mountain West,395342.34,825,13
+2024-03-28,Finishing,Materials,Southwest,379645.84,248,10
+2024-12-17,Finishing,Equipment Rental,Northeast,193843.48,605,1
+2025-01-25,Site Preparation,Materials,Southwest,449164.89,566,8
+2024-09-25,Foundation,Labor,Mountain West,128306.29,923,13
+2025-03-14,Finishing,Overhead,West Coast,265698.98,689,14
+2025-01-28,Foundation,Labor,Southwest,406388.19,325,4
+2024-04-13,Site Preparation,Permits,West Coast,143736.27,839,12
+2024-09-14,Roofing,Permits,Midwest,355666.04,427,8
+2024-10-26,Electrical,Equipment Rental,Southwest,182662.29,304,12
+2024-03-02,Finishing,Subcontractor,Southeast,229746.66,241,10
+2024-07-16,Foundation,Permits,Midwest,459914.06,724,5
+2024-06-20,Foundation,Materials,Mountain West,96812.1,594,2
+2025-06-02,Electrical,Permits,West Coast,441369.63,527,4
+2025-01-11,Site Preparation,Permits,Northeast,8554.1,154,6
+2024-01-15,Site Preparation,Equipment Rental,Mountain West,157936.05,674,3
+2025-06-08,Site Preparation,Permits,West Coast,87109.7,919,5
+2024-04-20,Plumbing,Subcontractor,Northeast,170637.0,919,7
+2024-08-28,Electrical,Equipment Rental,Mountain West,329604.98,258,1
+2025-06-10,Roofing,Materials,Midwest,253348.05,710,3
+2024-12-30,Foundation,Subcontractor,Mountain West,410459.52,557,13
+2025-06-15,Roofing,Labor,Northeast,298139.16,72,13
+2024-11-30,Foundation,Subcontractor,Midwest,46060.13,931,6
+2025-03-08,Framing,Equipment Rental,Southeast,279477.71,823,10
+2024-02-24,Framing,Equipment Rental,Southeast,470669.93,904,8
+2024-01-14,Foundation,Permits,Northeast,268803.92,886,10
+2025-02-19,Site Preparation,Subcontractor,Southwest,283933.35,36,10
+2025-05-05,Electrical,Materials,Mountain West,88512.25,887,3
+2024-03-07,Framing,Overhead,West Coast,280652.65,861,11
+2024-03-20,Finishing,Overhead,Northeast,54911.6,521,7
+2024-01-29,Electrical,Equipment Rental,Mountain West,159124.99,755,4
+2025-03-20,Site Preparation,Overhead,Southwest,80331.78,651,4
+2024-08-06,Electrical,Materials,West Coast,249435.94,460,7
+2025-03-09,Roofing,Subcontractor,Mountain West,280657.36,355,6
+2024-01-06,Foundation,Equipment Rental,West Coast,357897.43,663,3
+2024-12-28,Roofing,Labor,Mountain West,64068.98,899,12
+2024-12-24,Roofing,Equipment Rental,Mountain West,367588.49,774,8
+2025-01-04,Plumbing,Permits,Northeast,379234.25,491,8
+2024-10-23,Foundation,Labor,Northeast,226121.38,82,4
+2025-02-11,Foundation,Labor,West Coast,38594.96,555,6
+2025-06-01,Finishing,Permits,Midwest,118066.45,458,7
+2024-07-01,Framing,Permits,Southeast,232795.83,693,11
+2024-05-29,Roofing,Subcontractor,Southwest,40519.12,688,6
+2024-11-03,Plumbing,Equipment Rental,Mountain West,28231.37,754,14
+2024-04-14,Site Preparation,Overhead,Midwest,164749.12,929,6
+2024-01-04,Finishing,Materials,Northeast,220754.6,397,3
+2024-03-04,Site Preparation,Subcontractor,Northeast,236203.62,730,2
+2025-05-19,Finishing,Subcontractor,Mountain West,388358.98,768,6
+2025-05-29,Framing,Overhead,Southeast,111114.97,466,1
+2024-03-10,Finishing,Overhead,Southwest,26740.09,590,4
+2025-02-14,Framing,Overhead,Northeast,443405.97,757,3
+2024-04-19,Plumbing,Materials,Northeast,191654.3,239,3
+2024-03-05,Finishing,Labor,Southeast,80136.45,798,1
+2025-03-25,Framing,Equipment Rental,Northeast,324816.07,510,8
+2024-01-13,Site Preparation,Labor,Southeast,272419.84,16,9
+2025-02-14,Finishing,Permits,Midwest,409005.82,457,0
+2025-04-21,Electrical,Subcontractor,Northeast,225554.61,777,1
+2024-02-01,Finishing,Permits,Mountain West,161758.37,855,1
+2024-04-18,Finishing,Permits,West Coast,33876.44,25,7
+2024-05-12,Framing,Materials,Midwest,279978.28,436,5
+2024-04-12,Foundation,Overhead,Southeast,120883.75,191,2
+2024-08-07,Plumbing,Subcontractor,Southwest,417268.7,890,1
+2024-07-14,Framing,Labor,West Coast,281871.99,440,10
+2024-09-12,Roofing,Subcontractor,West Coast,455039.35,400,9
+2025-03-31,Foundation,Equipment Rental,Southeast,430763.26,201,7
+2024-11-05,Plumbing,Subcontractor,Northeast,54000.88,949,1
+2024-03-16,Plumbing,Subcontractor,Southwest,263910.33,377,1
+2024-07-14,Electrical,Permits,Southwest,480391.2,570,3
+2024-03-25,Electrical,Labor,Midwest,294107.7,557,13
+2024-08-22,Plumbing,Permits,Mountain West,221207.28,883,9
+2024-03-01,Plumbing,Labor,Southwest,179053.32,247,1
+2024-09-10,Plumbing,Subcontractor,Midwest,415301.21,725,10
+2025-05-11,Plumbing,Permits,Midwest,325990.67,541,1
+2024-01-10,Framing,Overhead,Southeast,11040.83,278,6
+2025-02-09,Electrical,Materials,Northeast,211613.98,750,1
+2024-06-04,Plumbing,Overhead,West Coast,394318.42,608,8
+2024-10-13,Framing,Permits,Mountain West,467643.06,672,6
+2024-04-19,Plumbing,Overhead,Mountain West,19740.49,615,9
+2024-03-12,Foundation,Subcontractor,Northeast,365429.08,138,3
+2025-06-13,Framing,Materials,Southwest,362554.03,577,13
+2025-01-08,Site Preparation,Permits,Midwest,371557.56,562,11
+2025-02-18,Foundation,Permits,Northeast,477272.9,871,6
+2025-03-05,Framing,Materials,West Coast,444793.81,165,9
+2024-04-22,Roofing,Subcontractor,Northeast,106238.49,373,7
+2025-03-25,Finishing,Subcontractor,Mountain West,412851.61,48,1
+2024-07-07,Site Preparation,Overhead,Southeast,468478.51,654,6
+2024-08-27,Foundation,Permits,Northeast,86515.9,821,6
+2025-01-03,Finishing,Subcontractor,Southwest,100931.76,474,5
+2025-06-10,Roofing,Equipment Rental,Southeast,271993.36,800,1
+2024-06-01,Framing,Materials,Southwest,18226.26,367,9
+2024-04-25,Roofing,Permits,Southwest,392798.89,656,9
+2024-04-09,Framing,Materials,Northeast,191777.09,232,7
+2024-12-23,Roofing,Materials,Midwest,144829.71,29,6
+2024-07-14,Roofing,Overhead,Mountain West,15915.08,313,9
+2024-07-16,Electrical,Labor,Southeast,166547.98,627,12
+2024-10-06,Electrical,Materials,Northeast,460834.8,523,4
+2024-01-21,Framing,Permits,Northeast,421896.74,319,10
+2024-06-03,Site Preparation,Permits,Northeast,12983.3,176,4
+2024-12-20,Framing,Labor,Southeast,222508.61,746,4
+2024-05-01,Foundation,Materials,Midwest,369788.89,923,1
+2025-02-25,Foundation,Materials,Southeast,241043.19,693,5
+2024-10-08,Plumbing,Permits,Southeast,427993.84,817,2
+2024-10-23,Finishing,Permits,Southeast,132291.86,262,10
+2024-06-29,Site Preparation,Overhead,Northeast,292326.63,651,2
+2025-04-13,Foundation,Labor,Northeast,362014.9,670,12
+2024-05-29,Site Preparation,Materials,Southwest,87867.01,412,5
+2024-11-02,Plumbing,Labor,Mountain West,367396.15,515,10
+2025-01-30,Site Preparation,Labor,Southeast,141711.52,2,7
+2024-05-03,Finishing,Labor,Mountain West,249249.61,897,10
+2024-04-05,Site Preparation,Equipment Rental,West Coast,218840.09,755,9
+2024-03-16,Roofing,Materials,Northeast,461494.16,493,10
+2024-12-27,Roofing,Overhead,Southwest,328017.26,679,6
+2025-03-06,Site Preparation,Permits,Mountain West,446197.63,784,0
+2024-12-03,Finishing,Permits,Southwest,51985.91,283,7
+2025-06-14,Site Preparation,Labor,Southeast,206250.03,21,8
+2024-04-27,Foundation,Equipment Rental,Southwest,28180.4,883,1
+2024-08-17,Plumbing,Overhead,Northeast,459843.6,609,11
+2024-10-26,Framing,Permits,Southeast,104845.12,680,13
+2025-01-30,Site Preparation,Equipment Rental,Midwest,83671.67,430,8
+2024-02-18,Framing,Subcontractor,Southeast,108387.68,321,6
+2025-01-19,Foundation,Labor,Southwest,328276.5,734,8
+2024-05-21,Finishing,Permits,Northeast,479847.91,797,5
+2024-05-19,Roofing,Permits,West Coast,214669.69,467,11
+2025-03-31,Foundation,Materials,Southwest,26342.62,407,7
+2024-07-02,Roofing,Permits,West Coast,105507.61,861,2
+2025-01-20,Electrical,Labor,Mountain West,319494.41,877,10
+2025-01-08,Roofing,Overhead,Southeast,328637.3,398,4
+2025-04-18,Finishing,Labor,Northeast,428718.22,148,2
+2025-02-23,Roofing,Subcontractor,Midwest,444860.94,855,9
+2025-03-02,Electrical,Overhead,Northeast,156436.96,784,3
+2024-01-07,Site Preparation,Overhead,Southwest,337031.3,491,13
+2025-01-12,Foundation,Labor,Midwest,352371.9,553,9
+2025-02-22,Foundation,Permits,West Coast,467019.96,279,8
+2025-06-17,Plumbing,Materials,Southwest,422403.85,845,9
+2025-03-20,Electrical,Equipment Rental,Mountain West,183855.01,491,1
+2024-12-27,Plumbing,Materials,Southeast,417111.66,677,8
+2024-04-25,Roofing,Materials,Southwest,266544.72,410,5
+2025-01-12,Finishing,Materials,Southwest,320664.33,550,8
+2024-10-31,Foundation,Equipment Rental,West Coast,345775.53,569,2
+2025-06-05,Site Preparation,Materials,Southeast,84670.03,277,10
+2024-08-03,Framing,Labor,Northeast,139327.74,105,6
+2024-01-13,Plumbing,Permits,Southeast,209561.54,732,4
+2024-06-01,Foundation,Equipment Rental,West Coast,69556.2,216,3
+2025-06-05,Finishing,Materials,Mountain West,410243.61,542,4
+2024-01-06,Foundation,Equipment Rental,West Coast,410449.82,801,5
+2024-02-02,Finishing,Labor,Southwest,66552.21,177,8
+2025-06-02,Site Preparation,Permits,Southwest,380736.46,392,7
+2024-12-02,Framing,Equipment Rental,West Coast,127467.88,723,2
+2024-06-05,Site Preparation,Labor,Mountain West,413591.35,385,2
+2024-06-02,Framing,Labor,West Coast,394078.93,581,9
+2025-01-29,Foundation,Equipment Rental,Midwest,62644.98,613,13
+2024-06-30,Framing,Overhead,Mountain West,169617.4,452,2
+2024-03-13,Finishing,Subcontractor,Midwest,448152.16,803,6
+2025-06-19,Plumbing,Subcontractor,West Coast,2855.17,11,6
+2025-02-16,Roofing,Permits,Midwest,234306.71,728,1
+2025-04-20,Electrical,Equipment Rental,Southeast,254720.72,98,4
+2024-12-14,Roofing,Materials,Mountain West,25777.12,425,8
+2025-04-25,Roofing,Equipment Rental,Mountain West,246424.36,211,3
+2024-01-31,Roofing,Subcontractor,Mountain West,333549.48,2,3
+2025-02-13,Site Preparation,Labor,Mountain West,121409.6,586,1
+2024-09-06,Plumbing,Labor,Southeast,8903.34,160,6
+2025-03-23,Site Preparation,Materials,West Coast,39498.97,207,8
+2025-02-14,Finishing,Labor,Southwest,74123.37,360,10
+2024-03-12,Framing,Permits,West Coast,202903.36,440,12
+2024-06-15,Roofing,Materials,Midwest,233038.29,799,9
+2024-05-19,Electrical,Permits,Southeast,473307.88,720,13
+2024-09-09,Finishing,Permits,West Coast,59832.81,163,0
+2024-03-07,Finishing,Subcontractor,West Coast,299721.35,115,13
+2024-01-05,Site Preparation,Overhead,Southeast,360415.62,21,10
+2025-01-03,Framing,Labor,Southwest,78185.9,619,12
+2024-02-04,Foundation,Materials,Midwest,428174.83,663,11
+2024-06-13,Finishing,Materials,Southwest,172165.32,498,13
+2024-07-31,Plumbing,Labor,Mountain West,484608.46,775,9
+2024-07-19,Electrical,Labor,Southwest,445614.71,63,1
+2024-11-29,Framing,Equipment Rental,Mountain West,122209.97,888,1
+2025-03-11,Site Preparation,Materials,Mountain West,108506.77,689,11
+2024-06-11,Electrical,Subcontractor,Midwest,15680.43,610,7
+2024-07-29,Roofing,Permits,Midwest,175106.51,11,13
+2025-04-15,Plumbing,Materials,Northeast,310002.32,217,9
+2025-01-13,Electrical,Materials,Midwest,163207.43,731,2
+2025-05-06,Plumbing,Subcontractor,Midwest,347592.93,781,9
+2024-02-28,Foundation,Materials,West Coast,180840.77,361,13
+2025-03-07,Plumbing,Overhead,Southwest,289306.81,572,14
+2025-01-23,Electrical,Subcontractor,Southeast,19412.08,464,12
+2024-06-21,Framing,Materials,Mountain West,356363.28,82,11
+2024-06-12,Finishing,Materials,Southeast,328865.34,437,5
+2024-06-09,Finishing,Overhead,Southwest,252068.23,590,8
+2024-12-14,Roofing,Materials,Southeast,80673.88,822,2
+2024-07-18,Foundation,Labor,Northeast,371747.62,863,10
+2024-02-14,Foundation,Equipment Rental,Southeast,468591.83,299,7
+2024-06-05,Finishing,Equipment Rental,Southeast,126206.08,316,8

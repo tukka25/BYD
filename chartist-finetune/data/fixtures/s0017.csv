@@ -1,0 +1,241 @@
+clinic_visit_date,clinic_department,clinic_visit_type,clinic_site_region,clinic_patients_seen,clinic_avg_wait_minutes,clinic_no_show_count
+2025-03-06,Dermatology,Urgent Care,Central,228,52.91,30
+2025-03-01,Dermatology,Telehealth,East,232,18.41,10
+2024-12-03,Dermatology,New Patient,South,35,7.24,46
+2025-06-01,Family Medicine,Telehealth,North,28,84.37,33
+2024-06-11,Pediatrics,New Patient,West,19,14.51,54
+2025-04-08,Oncology,Urgent Care,North,133,153.5,48
+2024-06-18,Oncology,Follow-Up,South,18,37.93,2
+2025-06-04,Pediatrics,New Patient,East,73,126.63,34
+2024-06-19,Orthopedics,Urgent Care,North,164,129.12,14
+2024-04-10,Oncology,Telehealth,South,147,35.71,45
+2025-02-13,Family Medicine,New Patient,West,208,119.9,45
+2025-06-09,Cardiology,Follow-Up,North,122,91.86,36
+2024-11-21,Cardiology,Follow-Up,North,244,81.06,45
+2024-01-16,Pediatrics,Follow-Up,Central,127,147.19,27
+2024-02-06,Dermatology,Telehealth,East,64,69.75,3
+2024-01-30,Pediatrics,Follow-Up,East,128,14.96,40
+2024-05-15,Dermatology,New Patient,West,17,171.37,4
+2024-12-21,Dermatology,Telehealth,East,200,55.37,20
+2024-03-07,Oncology,New Patient,Central,229,170.79,43
+2024-12-30,Oncology,Telehealth,South,170,78.19,24
+2024-11-22,Pediatrics,Telehealth,North,44,46.09,23
+2025-04-10,Pediatrics,Urgent Care,North,74,150.51,13
+2025-02-16,Cardiology,New Patient,South,44,146.03,56
+2025-04-27,Orthopedics,New Patient,South,163,65.76,6
+2025-05-07,Orthopedics,Follow-Up,East,31,112.76,45
+2024-02-13,Cardiology,Follow-Up,West,111,62.9,26
+2024-08-02,Pediatrics,Telehealth,West,20,59.18,37
+2024-07-05,Family Medicine,Follow-Up,West,86,34.75,34
+2024-04-23,Cardiology,New Patient,South,20,132.84,9
+2024-09-01,Pediatrics,Telehealth,West,120,23.42,29
+2024-10-02,Orthopedics,Telehealth,East,53,173.63,28
+2024-01-23,Pediatrics,New Patient,South,86,166.53,12
+2024-12-07,Oncology,New Patient,West,24,88.04,36
+2024-08-19,Dermatology,Telehealth,South,244,62.41,42
+2024-05-23,Cardiology,Telehealth,East,223,89.62,21
+2024-03-08,Oncology,Follow-Up,East,189,18.52,38
+2024-08-19,Cardiology,Telehealth,North,89,132.54,51
+2024-03-15,Family Medicine,Follow-Up,West,22,132.1,57
+2025-05-02,Orthopedics,Follow-Up,West,166,149.13,18
+2025-03-16,Oncology,New Patient,South,152,40.81,49
+2025-02-27,Family Medicine,Follow-Up,West,182,101.66,52
+2024-02-19,Dermatology,Urgent Care,East,112,149.28,36
+2025-01-16,Oncology,Urgent Care,West,88,84.34,20
+2024-11-14,Pediatrics,Follow-Up,North,129,22.35,28
+2024-11-05,Oncology,Telehealth,East,24,10.91,57
+2025-03-16,Dermatology,Follow-Up,South,237,69.86,31
+2025-03-23,Pediatrics,Telehealth,East,142,118.1,8
+2024-05-26,Pediatrics,Urgent Care,West,124,47.11,41
+2024-10-05,Cardiology,Telehealth,West,231,153.49,57
+2024-11-10,Oncology,New Patient,South,3,134.36,34
+2025-01-23,Orthopedics,Telehealth,Central,25,129.07,46
+2024-04-16,Family Medicine,New Patient,Central,17,156.4,39
+2024-10-18,Orthopedics,Follow-Up,East,124,16.54,23
+2024-08-01,Orthopedics,Urgent Care,North,209,101.86,22
+2024-01-19,Family Medicine,Urgent Care,East,182,110.62,40
+2024-08-20,Cardiology,Follow-Up,Central,72,89.29,13
+2025-05-04,Pediatrics,Telehealth,South,152,96.44,0
+2024-06-04,Pediatrics,Urgent Care,North,150,148.71,52
+2024-02-13,Oncology,New Patient,West,101,137.84,7
+2025-04-06,Oncology,Telehealth,East,126,108.48,10
+2024-01-07,Orthopedics,New Patient,South,121,114.49,58
+2025-01-25,Cardiology,New Patient,Central,168,103.25,1
+2025-05-12,Family Medicine,Follow-Up,South,114,10.77,11
+2024-09-16,Orthopedics,Follow-Up,South,135,31.88,38
+2024-05-07,Oncology,Telehealth,East,174,45.3,18
+2024-09-01,Family Medicine,Urgent Care,East,200,171.78,23
+2024-02-09,Pediatrics,New Patient,West,106,11.6,3
+2024-06-29,Family Medicine,New Patient,East,239,111.65,21
+2024-06-05,Dermatology,Urgent Care,West,200,56.09,0
+2025-05-30,Cardiology,Follow-Up,South,208,93.74,7
+2025-03-31,Dermatology,Follow-Up,South,4,38.04,10
+2025-04-07,Pediatrics,Follow-Up,North,157,135.24,18
+2024-02-17,Pediatrics,Follow-Up,South,249,52.25,29
+2024-08-29,Orthopedics,Telehealth,Central,97,81.19,53
+2024-04-03,Pediatrics,Follow-Up,East,241,46.63,18
+2025-04-18,Family Medicine,Urgent Care,North,0,9.77,53
+2024-11-30,Orthopedics,Urgent Care,North,156,63.19,3
+2024-03-14,Dermatology,Follow-Up,North,34,96.02,38
+2025-05-31,Pediatrics,Urgent Care,North,155,115.55,24
+2024-10-28,Pediatrics,Urgent Care,Central,130,145.48,58
+2024-01-25,Family Medicine,Telehealth,North,160,178.99,7
+2024-02-25,Pediatrics,New Patient,West,186,86.58,52
+2024-02-11,Cardiology,Telehealth,East,87,97.93,47
+2024-01-15,Orthopedics,Follow-Up,West,135,104.98,37
+2024-06-21,Orthopedics,Telehealth,East,158,94.02,27
+2024-04-14,Family Medicine,Telehealth,West,90,144.58,23
+2025-04-25,Orthopedics,New Patient,South,53,138.41,26
+2024-04-03,Orthopedics,Follow-Up,South,98,19.88,27
+2024-02-20,Oncology,Urgent Care,West,17,136.42,60
+2024-07-12,Cardiology,Urgent Care,East,226,127.47,53
+2025-06-14,Cardiology,Urgent Care,West,231,88.01,9
+2024-11-22,Cardiology,New Patient,South,33,28.66,44
+2025-02-20,Family Medicine,New Patient,East,154,115.98,39
+2025-02-18,Oncology,New Patient,South,57,105.44,13
+2025-01-29,Oncology,Telehealth,West,235,30.05,29
+2024-08-23,Orthopedics,Telehealth,East,34,131.47,48
+2025-03-25,Dermatology,Telehealth,East,215,96.67,25
+2025-05-17,Dermatology,New Patient,East,56,6.73,20
+2024-03-08,Pediatrics,New Patient,East,211,31.43,15
+2024-06-07,Oncology,Telehealth,East,70,124.65,33
+2025-04-12,Cardiology,Urgent Care,North,44,53.17,32
+2025-03-05,Cardiology,New Patient,South,32,47.45,52
+2025-02-26,Pediatrics,Urgent Care,North,33,59.03,43
+2024-05-21,Pediatrics,Follow-Up,East,139,166.31,41
+2024-08-30,Orthopedics,Follow-Up,South,109,173.96,32
+2024-09-15,Family Medicine,New Patient,North,10,45.49,2
+2024-12-30,Cardiology,Urgent Care,South,206,153.41,8
+2024-05-31,Pediatrics,Follow-Up,East,149,30.39,29
+2024-12-09,Orthopedics,Follow-Up,East,130,50.79,60
+2024-05-17,Family Medicine,New Patient,East,32,87.37,13
+2024-11-30,Oncology,New Patient,West,212,83.68,8
+2024-12-30,Oncology,Urgent Care,North,63,99.15,13
+2025-04-04,Cardiology,Follow-Up,North,55,12.96,16
+2025-01-24,Pediatrics,New Patient,West,143,151.66,44
+2024-12-31,Dermatology,Urgent Care,Central,211,113.53,11
+2025-06-05,Orthopedics,Telehealth,North,175,88.85,46
+2025-05-27,Family Medicine,Follow-Up,East,137,153.8,49
+2024-10-12,Family Medicine,Follow-Up,Central,12,48.56,44
+2025-05-13,Dermatology,Urgent Care,South,3,58.99,17
+2024-12-31,Pediatrics,Telehealth,East,3,48.48,59
+2025-05-31,Family Medicine,Follow-Up,South,22,90.54,26
+2024-12-12,Dermatology,Follow-Up,East,72,151.21,48
+2025-05-16,Orthopedics,Follow-Up,Central,113,160.77,28
+2024-10-25,Pediatrics,Urgent Care,South,167,51.02,17
+2025-04-02,Dermatology,Urgent Care,West,66,122.16,24
+2024-12-17,Dermatology,New Patient,East,58,130.73,42
+2025-05-19,Cardiology,Urgent Care,East,187,113.76,47
+2024-03-03,Family Medicine,New Patient,South,161,43.3,22
+2025-01-29,Orthopedics,Urgent Care,Central,201,60.24,42
+2024-02-21,Dermatology,New Patient,West,84,70.47,12
+2024-11-25,Orthopedics,Follow-Up,North,72,90.04,36
+2024-04-07,Oncology,Urgent Care,East,167,71.3,27
+2024-03-15,Orthopedics,Telehealth,North,148,77.93,37
+2024-06-15,Oncology,Follow-Up,Central,156,159.16,57
+2024-10-22,Cardiology,Urgent Care,South,31,16.45,34
+2025-01-24,Cardiology,Telehealth,East,80,138.26,50
+2024-05-13,Cardiology,Telehealth,East,28,22.08,51
+2025-05-25,Oncology,Telehealth,Central,169,120.25,19
+2024-07-07,Cardiology,Follow-Up,North,53,167.02,43
+2024-11-24,Cardiology,Urgent Care,West,21,17.82,8
+2025-01-21,Dermatology,Telehealth,Central,97,138.11,21
+2025-04-18,Oncology,Telehealth,South,156,151.49,22
+2024-07-11,Oncology,Telehealth,North,160,41.96,12
+2024-05-05,Cardiology,Telehealth,East,99,67.52,25
+2024-04-09,Dermatology,New Patient,East,70,25.6,40
+2025-02-06,Dermatology,Urgent Care,Central,51,154.01,38
+2024-05-04,Family Medicine,New Patient,West,131,102.44,22
+2025-01-11,Dermatology,Urgent Care,West,20,74.5,45
+2025-03-16,Dermatology,Follow-Up,North,21,66.17,31
+2024-09-02,Pediatrics,Telehealth,East,244,120.71,22
+2024-06-06,Pediatrics,Telehealth,North,232,24.55,15
+2025-03-30,Pediatrics,Follow-Up,West,94,157.9,20
+2024-05-30,Family Medicine,Urgent Care,West,174,153.22,48
+2024-04-25,Dermatology,New Patient,East,189,50.78,16
+2024-11-24,Orthopedics,Urgent Care,South,194,171.92,12
+2024-12-05,Oncology,Follow-Up,South,14,113.9,59
+2024-11-11,Family Medicine,Urgent Care,North,219,75.98,22
+2024-06-02,Oncology,Telehealth,West,142,145.87,29
+2024-05-19,Family Medicine,Follow-Up,West,50,64.53,4
+2024-12-25,Dermatology,Urgent Care,North,170,32.61,11
+2024-03-31,Oncology,Urgent Care,North,101,28.46,13
+2024-06-01,Cardiology,Follow-Up,West,129,173.11,32
+2024-04-15,Cardiology,Telehealth,East,104,25.51,48
+2024-05-17,Pediatrics,Telehealth,North,58,130.61,12
+2025-05-04,Family Medicine,New Patient,West,34,17.23,54
+2025-04-05,Pediatrics,Follow-Up,South,138,146.72,37
+2024-10-22,Orthopedics,Telehealth,East,40,166.36,30
+2025-01-10,Dermatology,Urgent Care,West,120,175.16,2
+2024-04-17,Pediatrics,New Patient,North,164,81.09,34
+2024-03-22,Family Medicine,Urgent Care,North,125,126.15,44
+2024-02-27,Oncology,Telehealth,West,28,78.54,2
+2024-07-28,Oncology,Urgent Care,Central,114,160.97,34
+2024-12-20,Oncology,Follow-Up,West,142,130.12,8
+2024-12-31,Oncology,New Patient,North,65,124.43,12
+2024-06-30,Pediatrics,Telehealth,West,181,118.29,49
+2024-03-23,Cardiology,Follow-Up,West,172,20.71,57
+2024-02-03,Orthopedics,Follow-Up,Central,69,57.84,49
+2024-05-27,Orthopedics,Telehealth,West,106,51.47,38
+2025-03-26,Dermatology,Telehealth,Central,82,145.51,34
+2024-07-14,Dermatology,New Patient,West,26,78.19,52
+2025-02-08,Family Medicine,New Patient,South,202,53.87,55
+2024-06-13,Cardiology,Telehealth,South,38,168.27,6
+2024-11-12,Orthopedics,Follow-Up,East,206,42.7,48
+2024-12-19,Dermatology,Urgent Care,South,71,166.97,14
+2025-05-11,Dermatology,New Patient,Central,193,150.39,22
+2025-05-23,Pediatrics,Follow-Up,North,37,101.0,45
+2024-11-24,Oncology,Follow-Up,North,244,106.59,9
+2024-08-23,Cardiology,Follow-Up,South,30,98.22,7
+2025-06-22,Cardiology,Follow-Up,East,106,83.09,54
+2025-03-16,Oncology,Follow-Up,Central,101,127.95,53
+2025-03-06,Pediatrics,Telehealth,West,117,156.1,20
+2025-05-09,Pediatrics,New Patient,South,235,167.22,49
+2025-03-03,Orthopedics,Follow-Up,East,106,49.06,6
+2024-02-16,Oncology,Urgent Care,East,239,108.53,47
+2024-11-16,Orthopedics,Follow-Up,East,91,32.38,34
+2024-05-21,Pediatrics,Telehealth,North,143,178.61,53
+2024-05-12,Dermatology,Follow-Up,North,63,137.7,35
+2024-12-30,Family Medicine,Telehealth,North,225,29.27,13
+2025-03-08,Pediatrics,Urgent Care,East,208,170.3,48
+2025-06-03,Orthopedics,New Patient,Central,13,100.37,46
+2024-12-18,Orthopedics,New Patient,South,79,149.53,58
+2024-12-28,Cardiology,Telehealth,Central,247,126.08,28
+2024-04-20,Family Medicine,Telehealth,West,188,117.12,53
+2025-01-25,Oncology,Telehealth,South,138,120.11,30
+2024-08-16,Family Medicine,New Patient,North,240,163.33,12
+2024-07-25,Family Medicine,Telehealth,South,66,178.25,40
+2024-03-31,Pediatrics,Follow-Up,East,135,48.76,49
+2024-05-20,Pediatrics,New Patient,West,67,150.91,10
+2024-07-18,Cardiology,Telehealth,North,158,48.41,13
+2025-03-11,Orthopedics,Urgent Care,East,198,127.76,32
+2024-11-17,Pediatrics,Urgent Care,West,231,167.42,45
+2024-05-20,Family Medicine,Telehealth,West,177,179.8,17
+2025-02-24,Dermatology,New Patient,Central,6,153.32,35
+2025-02-17,Cardiology,Follow-Up,North,91,49.23,10
+2025-05-28,Family Medicine,Urgent Care,Central,25,118.65,13
+2024-08-03,Oncology,Follow-Up,West,92,11.48,36
+2025-04-08,Dermatology,Follow-Up,East,52,103.12,19
+2024-12-03,Oncology,Follow-Up,Central,79,174.29,3
+2024-12-17,Cardiology,Telehealth,North,223,17.66,30
+2024-03-18,Pediatrics,Telehealth,West,11,167.65,15
+2024-07-15,Pediatrics,Urgent Care,Central,69,143.0,45
+2024-10-03,Dermatology,Urgent Care,South,80,53.69,41
+2024-02-29,Orthopedics,Follow-Up,North,238,98.31,30
+2024-12-26,Dermatology,New Patient,Central,156,14.94,14
+2025-05-29,Cardiology,Telehealth,South,61,51.73,37
+2024-12-22,Dermatology,Follow-Up,East,108,98.11,54
+2024-08-02,Cardiology,Follow-Up,Central,158,92.36,0
+2025-01-07,Oncology,New Patient,East,234,106.64,33
+2025-02-11,Orthopedics,New Patient,South,168,41.37,30
+2024-09-18,Cardiology,Follow-Up,South,244,162.55,29
+2024-07-21,Oncology,Telehealth,South,172,21.89,1
+2024-02-05,Family Medicine,Urgent Care,West,166,67.83,4
+2024-03-05,Family Medicine,New Patient,North,202,13.61,14
+2024-09-10,Family Medicine,Urgent Care,North,27,123.45,33
+2025-06-21,Orthopedics,Follow-Up,North,143,22.3,34
+2024-03-27,Oncology,New Patient,East,191,95.53,25
+2024-09-09,Pediatrics,Telehealth,North,239,61.49,36
+2025-03-05,Cardiology,Follow-Up,East,177,133.42,37
+2025-06-04,Cardiology,Telehealth,East,129,25.25,41
+2024-10-11,Cardiology,New Patient,West,62,167.56,31

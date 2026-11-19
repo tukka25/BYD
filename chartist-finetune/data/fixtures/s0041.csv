@@ -1,0 +1,241 @@
+session_start_date,session_platform,session_region,session_game_mode,session_duration_minutes,session_in_game_purchase_usd,session_player_kill_count
+2025-01-18,Xbox Series X,North America,Ranked,351,177.23,6
+2024-12-21,Android Mobile,Europe,Battle Royale,143,46.72,12
+2025-02-01,Android Mobile,Latin America,Casual,465,147.35,26
+2024-09-11,iOS Mobile,Middle East,Casual,188,4.87,17
+2025-04-27,Nintendo Switch,North America,Ranked,213,11.49,72
+2024-08-22,PC,Asia Pacific,Casual,130,195.85,32
+2024-03-18,PlayStation 5,Latin America,Custom Lobby,404,139.79,65
+2024-08-06,PlayStation 5,Asia Pacific,Battle Royale,198,182.1,46
+2024-09-21,Xbox Series X,Europe,Ranked,156,13.27,16
+2024-02-13,Android Mobile,Middle East,Ranked,290,161.12,65
+2024-05-20,Nintendo Switch,Europe,Co-op,26,194.32,28
+2024-11-12,Android Mobile,Latin America,Co-op,344,18.19,41
+2024-04-25,PC,North America,Casual,217,119.56,67
+2025-05-12,PlayStation 5,Asia Pacific,Battle Royale,29,56.38,40
+2024-01-23,PlayStation 5,Africa,Casual,2,175.83,69
+2025-03-31,iOS Mobile,Europe,Co-op,304,71.75,9
+2025-05-09,PlayStation 5,Middle East,Tournament,476,90.12,26
+2024-10-02,iOS Mobile,Europe,Custom Lobby,306,19.53,65
+2025-05-30,Nintendo Switch,North America,Ranked,114,165.33,30
+2024-08-10,PlayStation 5,Asia Pacific,Tournament,422,168.32,21
+2024-01-31,Xbox Series X,Africa,Ranked,256,73.91,27
+2025-04-14,iOS Mobile,Africa,Battle Royale,236,102.46,35
+2025-02-06,Nintendo Switch,Africa,Battle Royale,225,134.4,54
+2024-07-05,Android Mobile,Africa,Custom Lobby,472,177.77,41
+2024-07-10,Android Mobile,Africa,Tournament,93,185.99,24
+2025-03-18,Android Mobile,Middle East,Casual,233,124.28,16
+2024-09-12,Android Mobile,Asia Pacific,Tournament,146,144.51,2
+2025-01-12,Nintendo Switch,Latin America,Ranked,55,101.47,66
+2024-08-05,PlayStation 5,Latin America,Casual,458,131.09,60
+2024-02-28,Android Mobile,Middle East,Custom Lobby,478,96.03,32
+2025-01-26,Android Mobile,North America,Custom Lobby,430,155.09,62
+2024-05-15,Nintendo Switch,Asia Pacific,Custom Lobby,98,41.22,64
+2024-12-07,iOS Mobile,North America,Co-op,146,87.38,18
+2025-06-12,Xbox Series X,Europe,Custom Lobby,417,44.77,6
+2024-08-07,iOS Mobile,North America,Tournament,57,151.5,5
+2024-01-26,Xbox Series X,Europe,Casual,225,87.96,26
+2024-10-11,iOS Mobile,Africa,Custom Lobby,131,181.38,8
+2024-06-17,Android Mobile,North America,Casual,376,64.73,63
+2024-06-13,PlayStation 5,Latin America,Ranked,391,115.72,52
+2024-01-14,PlayStation 5,North America,Custom Lobby,25,124.73,22
+2024-11-29,Nintendo Switch,Middle East,Custom Lobby,116,78.42,47
+2025-06-20,Xbox Series X,Latin America,Battle Royale,239,115.86,23
+2024-02-02,PC,Asia Pacific,Co-op,412,12.69,27
+2025-06-05,PC,Africa,Battle Royale,104,71.2,6
+2024-05-31,PlayStation 5,Middle East,Tournament,97,126.87,53
+2024-10-17,PlayStation 5,Middle East,Battle Royale,437,44.59,32
+2024-03-28,Nintendo Switch,Asia Pacific,Co-op,467,102.29,3
+2025-06-18,Xbox Series X,Middle East,Ranked,266,132.91,4
+2024-09-04,iOS Mobile,Europe,Casual,233,186.59,51
+2024-06-07,PC,Europe,Ranked,276,181.86,64
+2025-02-13,PC,Europe,Custom Lobby,174,98.63,0
+2024-02-02,PC,Asia Pacific,Tournament,212,157.18,45
+2025-01-28,PC,North America,Battle Royale,175,57.37,15
+2024-11-09,Xbox Series X,Asia Pacific,Battle Royale,406,57.0,6
+2024-10-06,PlayStation 5,Africa,Co-op,19,2.43,41
+2024-05-12,Android Mobile,Middle East,Co-op,110,181.0,28
+2024-04-19,iOS Mobile,Middle East,Casual,442,50.1,25
+2024-07-22,PlayStation 5,North America,Ranked,432,4.85,9
+2024-01-22,Nintendo Switch,Africa,Co-op,172,44.4,24
+2024-07-26,Xbox Series X,Asia Pacific,Battle Royale,173,48.62,13
+2025-01-16,PC,Africa,Tournament,227,188.85,74
+2025-05-14,Nintendo Switch,Africa,Casual,319,170.38,55
+2024-03-30,Xbox Series X,Africa,Custom Lobby,411,52.26,49
+2025-02-16,Nintendo Switch,Asia Pacific,Co-op,306,102.41,15
+2025-02-01,Xbox Series X,Latin America,Tournament,294,143.11,30
+2024-01-08,iOS Mobile,Latin America,Custom Lobby,210,198.75,56
+2025-01-13,Nintendo Switch,North America,Ranked,364,124.55,70
+2025-04-21,iOS Mobile,Europe,Tournament,78,125.43,70
+2025-03-02,Xbox Series X,Europe,Custom Lobby,338,102.28,67
+2025-04-28,PC,Europe,Battle Royale,111,38.22,23
+2024-05-27,Nintendo Switch,Latin America,Co-op,237,154.09,24
+2024-04-12,iOS Mobile,Asia Pacific,Battle Royale,480,82.29,46
+2024-08-06,Xbox Series X,Africa,Custom Lobby,371,144.37,52
+2024-07-29,Android Mobile,Europe,Co-op,123,71.49,48
+2024-05-23,Nintendo Switch,North America,Custom Lobby,411,147.17,50
+2024-10-23,PC,Middle East,Custom Lobby,420,137.58,34
+2024-12-04,Xbox Series X,Middle East,Battle Royale,429,114.98,55
+2024-04-10,PlayStation 5,Asia Pacific,Co-op,167,181.97,13
+2025-04-27,PlayStation 5,Europe,Co-op,58,196.43,29
+2024-03-04,Xbox Series X,Africa,Battle Royale,158,141.96,14
+2024-11-18,PlayStation 5,Middle East,Tournament,142,141.55,2
+2024-12-09,Xbox Series X,Latin America,Casual,342,133.96,42
+2025-05-21,PlayStation 5,Latin America,Tournament,406,22.87,1
+2024-03-09,Android Mobile,Asia Pacific,Battle Royale,187,165.7,4
+2025-02-05,PC,North America,Battle Royale,464,73.21,20
+2025-06-01,PC,Africa,Co-op,233,179.27,67
+2024-11-21,PC,Latin America,Custom Lobby,242,6.42,31
+2024-01-01,iOS Mobile,Africa,Co-op,319,34.24,37
+2024-03-28,PlayStation 5,Middle East,Battle Royale,334,155.78,37
+2025-01-02,PC,Latin America,Co-op,384,160.19,40
+2024-11-01,Xbox Series X,Africa,Co-op,134,78.43,10
+2025-02-04,iOS Mobile,Middle East,Ranked,459,145.69,31
+2024-04-16,Nintendo Switch,Europe,Battle Royale,332,36.85,51
+2024-12-20,iOS Mobile,Latin America,Casual,77,116.33,54
+2025-04-26,Android Mobile,North America,Co-op,117,138.03,16
+2025-06-14,PlayStation 5,North America,Custom Lobby,434,178.4,21
+2024-02-03,PC,Africa,Ranked,100,47.38,25
+2024-02-15,PC,Europe,Co-op,170,153.13,36
+2024-07-20,Nintendo Switch,Africa,Casual,424,86.13,30
+2024-12-18,PC,Africa,Custom Lobby,346,185.56,18
+2025-05-18,Android Mobile,Middle East,Battle Royale,219,4.32,39
+2025-01-20,iOS Mobile,Latin America,Tournament,327,20.77,43
+2024-01-24,PC,Latin America,Battle Royale,195,27.61,16
+2024-12-05,Xbox Series X,Asia Pacific,Casual,437,44.32,30
+2025-01-21,Android Mobile,Latin America,Casual,329,197.38,71
+2024-06-08,PC,Europe,Ranked,126,56.28,14
+2025-01-30,Android Mobile,North America,Co-op,450,179.91,37
+2025-01-13,Android Mobile,Latin America,Ranked,329,105.41,57
+2024-12-24,Xbox Series X,Middle East,Casual,278,18.86,37
+2024-12-14,iOS Mobile,Middle East,Ranked,321,139.75,66
+2024-10-28,Android Mobile,Europe,Battle Royale,24,123.75,33
+2024-05-31,iOS Mobile,Africa,Tournament,407,118.01,48
+2024-04-27,PlayStation 5,Asia Pacific,Battle Royale,356,75.75,74
+2024-03-26,Nintendo Switch,Asia Pacific,Battle Royale,133,16.87,64
+2024-02-19,PC,Asia Pacific,Ranked,294,60.62,28
+2025-04-06,PlayStation 5,Latin America,Ranked,211,110.78,55
+2025-03-09,PlayStation 5,Europe,Battle Royale,165,64.72,51
+2025-01-05,PlayStation 5,Asia Pacific,Co-op,452,1.75,41
+2024-07-08,iOS Mobile,Europe,Battle Royale,470,15.35,32
+2025-02-22,Nintendo Switch,North America,Battle Royale,405,68.23,12
+2024-02-28,Android Mobile,Asia Pacific,Custom Lobby,325,126.32,74
+2024-12-26,Nintendo Switch,Latin America,Ranked,408,137.9,54
+2024-05-07,PC,Asia Pacific,Casual,119,91.25,37
+2024-10-16,Xbox Series X,North America,Ranked,240,97.24,69
+2024-12-29,PC,Latin America,Battle Royale,219,192.08,16
+2024-12-06,PC,North America,Casual,370,71.95,23
+2024-09-28,PlayStation 5,Africa,Co-op,85,149.8,65
+2025-01-31,Nintendo Switch,Europe,Custom Lobby,350,142.22,37
+2024-04-06,Xbox Series X,Middle East,Tournament,105,106.01,9
+2024-09-16,PlayStation 5,Asia Pacific,Co-op,118,163.9,22
+2025-04-12,Xbox Series X,Europe,Casual,74,12.84,22
+2024-01-04,Android Mobile,Africa,Battle Royale,27,25.44,15
+2024-05-27,iOS Mobile,Asia Pacific,Ranked,60,45.47,19
+2024-02-08,Android Mobile,North America,Custom Lobby,322,38.85,50
+2024-01-14,iOS Mobile,Asia Pacific,Casual,116,63.23,33
+2025-06-14,Xbox Series X,Asia Pacific,Custom Lobby,48,159.85,40
+2024-08-23,PC,Asia Pacific,Ranked,52,46.78,61
+2025-06-10,PlayStation 5,Europe,Battle Royale,11,177.08,42
+2024-01-28,PC,Asia Pacific,Ranked,260,5.29,16
+2025-01-30,Nintendo Switch,Latin America,Custom Lobby,172,26.44,69
+2024-09-06,PC,Asia Pacific,Ranked,334,20.42,70
+2024-02-03,iOS Mobile,Middle East,Battle Royale,60,15.98,42
+2024-03-08,Android Mobile,Middle East,Tournament,149,85.65,51
+2025-04-04,PlayStation 5,Latin America,Custom Lobby,145,191.72,23
+2024-04-11,Nintendo Switch,Middle East,Co-op,212,18.96,72
+2024-05-29,PC,Middle East,Ranked,353,144.26,32
+2024-07-14,iOS Mobile,Latin America,Tournament,417,184.07,45
+2024-05-02,PC,Asia Pacific,Battle Royale,162,157.32,12
+2024-04-02,iOS Mobile,Africa,Casual,108,159.03,59
+2024-05-14,Xbox Series X,Europe,Casual,368,107.71,44
+2024-11-20,Android Mobile,Middle East,Tournament,256,128.75,65
+2024-02-24,PlayStation 5,Africa,Ranked,142,35.18,13
+2025-01-26,Xbox Series X,Latin America,Casual,202,82.01,54
+2024-04-17,Nintendo Switch,Middle East,Custom Lobby,82,144.18,42
+2025-03-13,Android Mobile,Europe,Tournament,147,11.65,63
+2024-11-14,iOS Mobile,Europe,Co-op,281,103.1,37
+2025-05-27,PlayStation 5,Africa,Casual,294,196.79,63
+2024-12-28,PlayStation 5,Middle East,Co-op,434,52.63,15
+2024-05-27,iOS Mobile,Europe,Custom Lobby,127,41.87,47
+2024-06-21,Nintendo Switch,North America,Battle Royale,197,68.83,54
+2024-12-05,Nintendo Switch,Asia Pacific,Ranked,289,115.76,31
+2025-06-02,iOS Mobile,Asia Pacific,Custom Lobby,273,191.6,37
+2025-02-24,PlayStation 5,North America,Tournament,241,76.73,14
+2024-02-13,PC,North America,Casual,102,1.55,10
+2024-12-18,PlayStation 5,Africa,Tournament,149,88.87,65
+2024-06-10,Xbox Series X,Latin America,Battle Royale,130,155.25,26
+2024-07-16,Android Mobile,Middle East,Tournament,384,108.57,42
+2024-04-29,Nintendo Switch,Africa,Casual,435,154.04,16
+2024-07-06,iOS Mobile,Europe,Battle Royale,17,176.29,39
+2025-02-04,Nintendo Switch,North America,Ranked,158,117.95,47
+2024-09-21,PC,Europe,Co-op,42,133.02,14
+2025-01-07,PlayStation 5,Asia Pacific,Battle Royale,170,132.98,21
+2024-11-29,Xbox Series X,North America,Custom Lobby,334,113.57,42
+2024-08-12,Xbox Series X,North America,Casual,120,136.58,32
+2024-02-05,iOS Mobile,Latin America,Custom Lobby,475,185.0,33
+2025-01-12,Nintendo Switch,Africa,Tournament,379,53.55,26
+2024-04-17,Xbox Series X,Latin America,Casual,36,105.23,48
+2024-10-21,iOS Mobile,Middle East,Ranked,136,16.95,45
+2024-08-04,Xbox Series X,North America,Casual,109,172.31,19
+2024-03-04,Nintendo Switch,Africa,Ranked,271,0.7,11
+2024-05-25,Android Mobile,Latin America,Co-op,459,20.49,41
+2024-09-05,Android Mobile,Africa,Ranked,339,33.11,66
+2024-10-18,Android Mobile,Africa,Co-op,390,119.6,55
+2025-04-28,Android Mobile,North America,Ranked,134,175.11,73
+2025-02-25,PC,Europe,Ranked,197,80.98,63
+2024-01-11,Android Mobile,Europe,Battle Royale,405,60.58,72
+2024-11-03,PC,Middle East,Battle Royale,286,162.69,46
+2024-04-17,Xbox Series X,Latin America,Custom Lobby,291,66.63,16
+2024-03-14,PC,Africa,Tournament,104,12.8,68
+2024-08-27,Android Mobile,Middle East,Custom Lobby,42,166.4,61
+2025-05-29,Android Mobile,Europe,Custom Lobby,278,30.22,68
+2024-01-05,Android Mobile,Africa,Ranked,109,41.04,23
+2024-03-05,iOS Mobile,Asia Pacific,Battle Royale,200,38.52,0
+2025-04-10,iOS Mobile,Africa,Custom Lobby,357,184.81,65
+2025-05-13,Xbox Series X,Asia Pacific,Custom Lobby,435,94.17,54
+2024-10-25,Android Mobile,Middle East,Custom Lobby,159,3.8,42
+2025-06-16,PC,Middle East,Custom Lobby,313,33.53,53
+2024-01-02,Xbox Series X,North America,Tournament,43,188.29,65
+2024-04-26,Nintendo Switch,Asia Pacific,Tournament,432,150.51,33
+2024-12-11,Nintendo Switch,North America,Battle Royale,369,166.39,64
+2024-12-04,PC,Europe,Tournament,410,176.05,48
+2024-04-04,Android Mobile,North America,Custom Lobby,79,85.81,65
+2024-01-05,PC,Middle East,Tournament,217,174.87,13
+2024-04-17,PC,Europe,Co-op,465,107.29,27
+2024-07-13,Nintendo Switch,Asia Pacific,Co-op,113,20.97,46
+2025-06-22,Xbox Series X,North America,Custom Lobby,30,130.9,19
+2024-05-03,Nintendo Switch,Asia Pacific,Ranked,147,128.06,41
+2025-05-14,Xbox Series X,Europe,Casual,334,126.42,1
+2024-11-09,Xbox Series X,Middle East,Tournament,193,173.13,28
+2024-04-28,Xbox Series X,North America,Casual,225,68.83,61
+2024-02-12,Nintendo Switch,Latin America,Battle Royale,278,57.23,45
+2024-05-15,PC,Latin America,Tournament,345,105.84,61
+2024-12-20,Android Mobile,Middle East,Ranked,245,153.16,72
+2024-12-21,PlayStation 5,Middle East,Tournament,343,92.92,64
+2025-02-21,Xbox Series X,Asia Pacific,Casual,154,113.3,38
+2024-10-20,PlayStation 5,Africa,Casual,150,94.5,63
+2025-04-05,Android Mobile,Latin America,Battle Royale,47,69.18,33
+2024-08-31,Android Mobile,Europe,Custom Lobby,97,136.38,30
+2024-06-17,Nintendo Switch,Latin America,Battle Royale,344,155.59,27
+2024-07-23,PC,Asia Pacific,Custom Lobby,445,66.03,51
+2024-05-22,iOS Mobile,Africa,Casual,260,67.35,34
+2024-11-02,Android Mobile,Latin America,Tournament,437,194.17,14
+2024-11-01,PlayStation 5,Latin America,Co-op,76,41.41,56
+2025-03-06,iOS Mobile,North America,Ranked,380,111.39,39
+2024-10-12,PlayStation 5,Europe,Tournament,184,8.5,57
+2024-04-22,PlayStation 5,North America,Co-op,331,193.47,31
+2024-10-15,Android Mobile,Asia Pacific,Ranked,398,82.15,12
+2025-05-11,PlayStation 5,Middle East,Tournament,364,38.11,46
+2025-06-07,PlayStation 5,Asia Pacific,Co-op,182,188.1,25
+2024-07-04,Xbox Series X,Latin America,Casual,179,45.97,45
+2024-12-04,PC,Africa,Battle Royale,211,59.99,40
+2024-09-30,PC,Europe,Tournament,247,37.22,67
+2024-01-19,PlayStation 5,North America,Custom Lobby,37,171.48,25
+2024-04-24,PlayStation 5,Asia Pacific,Custom Lobby,221,78.29,12
+2025-06-13,Xbox Series X,Europe,Tournament,357,20.97,29
+2024-11-17,Xbox Series X,Africa,Tournament,332,15.53,0
+2024-05-10,PlayStation 5,Middle East,Battle Royale,307,70.4,30
+2024-06-23,Nintendo Switch,Africa,Battle Royale,334,126.36,1
+2024-12-30,iOS Mobile,North America,Battle Royale,429,170.62,70
+2025-02-18,Xbox Series X,Middle East,Battle Royale,380,116.39,58

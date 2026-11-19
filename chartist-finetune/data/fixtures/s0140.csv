@@ -1,0 +1,241 @@
+applicationDate,candidateSource,jobFamily,pipelineStage,applicantCount,daysToFill,costPerHire,offerSalary
+2024-09-27,LinkedIn,Engineering,Interview,484,173,15362.78,232843.58
+2024-04-21,Careers Site,Finance,Interview,140,71,7295.71,237734.98
+2025-05-22,LinkedIn,Customer Success,Rejected,280,43,17767.7,203011.6
+2025-01-14,Referral,Marketing,Applied,34,119,250.24,39091.89
+2025-01-05,Referral,Marketing,Applied,68,128,17120.13,74788.37
+2025-01-06,Careers Site,Finance,Offer Accepted,27,100,19647.58,102167.46
+2025-04-16,Campus Event,Sales,Rejected,63,152,2658.5,128697.7
+2025-01-06,Referral,Engineering,Offer Accepted,499,23,7812.12,235660.44
+2024-09-24,Job Board,Engineering,Offer Extended,181,80,2373.67,224706.39
+2024-12-23,Referral,Operations,Applied,490,46,15154.08,115997.15
+2024-11-09,Careers Site,Customer Success,Offer Extended,43,108,16596.82,120161.88
+2024-03-07,Campus Event,Finance,Rejected,476,31,11825.53,196971.26
+2025-02-08,Referral,Sales,Interview,344,34,5545.16,194989.77
+2024-04-03,Referral,Customer Success,Screening,484,109,2373.29,88344.23
+2025-01-16,LinkedIn,Sales,Offer Extended,393,90,7263.13,159340.11
+2024-06-18,Campus Event,Operations,Screening,256,158,13401.65,75320.52
+2024-08-10,Careers Site,Finance,Offer Extended,188,94,4117.97,50004.68
+2024-04-21,Referral,Operations,Offer Extended,266,136,9748.78,208208.33
+2025-05-27,Campus Event,Marketing,Applied,494,104,12549.65,166950.77
+2024-02-02,LinkedIn,Customer Success,Offer Extended,377,139,18809.48,178693.03
+2025-01-21,Careers Site,Engineering,Offer Accepted,268,79,1841.31,224377.75
+2024-07-17,LinkedIn,Finance,Offer Extended,64,23,18150.9,122321.4
+2024-05-26,Campus Event,Marketing,Interview,291,81,19190.68,173457.35
+2024-12-31,Referral,Sales,Screening,252,18,21978.5,94295.35
+2024-06-18,Careers Site,Engineering,Applied,258,95,8438.22,192870.55
+2024-11-26,Careers Site,Marketing,Offer Accepted,435,126,17035.04,148911.2
+2024-05-10,Careers Site,Operations,Rejected,342,101,13503.07,107057.45
+2024-04-23,Job Board,Customer Success,Screening,90,19,4661.0,45140.22
+2024-12-10,Careers Site,Engineering,Screening,116,70,11877.95,232815.0
+2025-04-08,Campus Event,Sales,Offer Extended,23,7,12353.31,172593.64
+2024-12-29,Careers Site,Marketing,Applied,150,103,15657.46,226462.72
+2024-05-28,Recruiter Sourced,Engineering,Applied,308,84,8644.69,202499.21
+2024-01-08,Referral,Finance,Offer Accepted,19,139,14815.02,201687.45
+2025-05-07,Careers Site,Marketing,Offer Extended,297,81,21095.26,121575.21
+2024-02-10,Campus Event,Marketing,Interview,31,37,11815.25,224055.2
+2024-10-24,Recruiter Sourced,Operations,Screening,313,16,7650.97,212653.03
+2024-08-26,LinkedIn,Operations,Applied,404,48,6924.9,192801.9
+2025-06-05,Recruiter Sourced,Operations,Rejected,42,129,22004.66,68497.5
+2024-09-06,Recruiter Sourced,Marketing,Screening,43,129,24602.65,55910.3
+2024-06-18,Careers Site,Finance,Rejected,444,65,924.92,88884.12
+2024-03-06,Referral,Operations,Screening,87,67,9426.33,227988.48
+2024-06-23,Careers Site,Marketing,Screening,289,163,4591.09,183548.66
+2024-05-14,Recruiter Sourced,Marketing,Screening,401,140,20672.88,218123.01
+2025-04-25,Careers Site,Finance,Screening,499,86,17461.12,153232.1
+2025-06-16,Careers Site,Sales,Screening,326,69,2539.01,235482.83
+2024-01-03,Careers Site,Engineering,Screening,262,83,19903.0,109000.59
+2024-05-16,Job Board,Customer Success,Offer Accepted,423,23,10380.58,84546.87
+2025-05-10,Job Board,Marketing,Rejected,71,70,4582.66,225895.83
+2025-06-04,Referral,Finance,Rejected,474,147,17607.64,40870.66
+2024-04-08,Campus Event,Marketing,Rejected,305,173,23145.57,146268.69
+2024-02-08,Referral,Operations,Rejected,418,142,3126.19,222816.22
+2025-03-28,Recruiter Sourced,Customer Success,Interview,6,59,18047.52,84174.99
+2024-06-02,Referral,Marketing,Offer Accepted,39,76,15287.91,173383.64
+2024-06-05,Job Board,Marketing,Applied,7,128,18041.1,138129.56
+2024-10-20,Referral,Operations,Interview,377,91,3665.46,39494.01
+2024-02-11,Job Board,Finance,Offer Extended,239,126,24014.68,110439.53
+2024-08-15,Job Board,Sales,Offer Accepted,111,174,15146.52,244368.95
+2024-11-11,Referral,Engineering,Rejected,29,65,21372.3,76539.65
+2024-04-14,Job Board,Marketing,Offer Extended,319,158,6803.12,159699.56
+2024-03-09,LinkedIn,Engineering,Interview,219,100,15425.89,189277.49
+2024-10-22,Referral,Finance,Interview,288,147,6929.45,108144.91
+2024-09-23,LinkedIn,Sales,Offer Accepted,120,59,2388.16,111212.54
+2024-02-13,Job Board,Engineering,Interview,285,172,11844.99,67874.29
+2025-06-16,Careers Site,Customer Success,Rejected,90,30,10085.18,114334.75
+2024-03-18,Referral,Sales,Offer Accepted,339,165,6545.87,237402.04
+2024-06-29,Job Board,Marketing,Rejected,272,39,3985.82,239403.31
+2025-02-28,Job Board,Sales,Offer Accepted,338,17,16879.85,248520.33
+2024-12-20,Recruiter Sourced,Marketing,Applied,155,105,1936.26,214771.92
+2024-03-04,Job Board,Customer Success,Screening,370,109,24733.12,83052.99
+2024-06-28,Referral,Customer Success,Applied,467,155,22667.99,212073.48
+2024-06-24,Campus Event,Customer Success,Offer Extended,154,159,18249.19,127828.4
+2024-09-04,Referral,Customer Success,Interview,481,106,12662.7,91126.24
+2025-02-04,Careers Site,Customer Success,Offer Accepted,446,36,4599.13,131257.54
+2024-03-14,Job Board,Customer Success,Screening,175,132,13093.32,145949.52
+2024-05-06,Job Board,Sales,Offer Extended,477,64,22236.18,109561.18
+2024-08-28,LinkedIn,Customer Success,Applied,17,129,19201.06,86274.95
+2024-12-27,Recruiter Sourced,Customer Success,Offer Accepted,245,123,12939.88,202644.27
+2025-02-11,LinkedIn,Finance,Offer Extended,323,123,16117.8,173647.58
+2025-03-12,Careers Site,Marketing,Interview,251,75,13183.54,243617.51
+2025-01-08,LinkedIn,Customer Success,Screening,6,170,22598.05,238205.21
+2024-03-07,Recruiter Sourced,Operations,Offer Accepted,476,94,14119.32,196311.49
+2024-03-21,Campus Event,Operations,Offer Accepted,405,87,13993.06,118399.79
+2024-09-25,LinkedIn,Sales,Rejected,140,93,8695.28,51865.74
+2024-12-22,Referral,Sales,Applied,359,50,6615.83,72810.07
+2024-09-08,LinkedIn,Marketing,Rejected,50,52,12375.19,66173.6
+2024-06-18,Careers Site,Marketing,Applied,346,149,4754.53,157068.85
+2024-09-02,Job Board,Finance,Offer Extended,293,165,22115.06,198027.14
+2024-11-24,Campus Event,Sales,Offer Extended,281,28,11927.37,158353.97
+2025-04-19,Careers Site,Operations,Offer Extended,476,82,24345.26,244512.72
+2024-02-21,Referral,Operations,Applied,381,52,14157.35,197402.74
+2024-10-31,LinkedIn,Marketing,Applied,123,56,18135.16,124430.45
+2024-11-22,LinkedIn,Operations,Applied,290,100,17388.36,76560.06
+2025-06-15,Recruiter Sourced,Sales,Rejected,420,31,1487.1,213139.12
+2025-02-25,Job Board,Customer Success,Interview,267,79,8395.9,113381.56
+2025-04-10,Referral,Operations,Interview,55,26,13439.12,101096.9
+2024-04-26,Job Board,Customer Success,Rejected,394,142,17644.02,47765.24
+2025-04-01,LinkedIn,Operations,Applied,326,26,16819.97,126437.95
+2024-10-14,Careers Site,Sales,Offer Extended,342,15,8440.74,197467.27
+2024-11-06,Campus Event,Finance,Interview,315,133,8486.62,110759.81
+2024-02-07,LinkedIn,Engineering,Applied,51,167,1329.76,138932.91
+2024-01-31,Campus Event,Customer Success,Offer Accepted,213,49,20262.32,92120.69
+2024-08-27,Careers Site,Operations,Offer Accepted,210,23,10685.9,153615.45
+2024-07-16,Referral,Sales,Screening,237,107,9160.15,72701.07
+2024-09-14,Recruiter Sourced,Engineering,Offer Accepted,432,178,21477.14,219233.45
+2025-02-17,Referral,Engineering,Screening,49,41,13556.73,176228.17
+2025-05-12,Campus Event,Engineering,Interview,262,133,9983.68,157401.26
+2024-10-18,LinkedIn,Customer Success,Offer Accepted,265,159,18446.66,85992.94
+2024-07-14,Recruiter Sourced,Operations,Offer Accepted,341,8,8621.48,53473.16
+2025-02-12,Recruiter Sourced,Engineering,Offer Extended,155,37,13370.58,128055.67
+2024-09-03,Recruiter Sourced,Engineering,Screening,448,135,17941.85,75147.7
+2025-02-01,Recruiter Sourced,Customer Success,Screening,236,18,23961.27,138864.27
+2024-09-12,Careers Site,Marketing,Rejected,293,10,22189.97,200646.65
+2024-08-17,Campus Event,Sales,Rejected,29,36,24955.91,163926.57
+2024-06-19,Recruiter Sourced,Operations,Interview,375,79,17675.26,153850.88
+2024-06-19,Careers Site,Finance,Rejected,20,171,16571.35,48161.0
+2024-10-04,Recruiter Sourced,Marketing,Offer Extended,243,31,1727.73,238869.16
+2025-04-30,Referral,Customer Success,Screening,345,38,14930.01,60930.72
+2024-03-22,Referral,Engineering,Interview,310,42,4498.27,118648.78
+2025-01-21,Careers Site,Engineering,Offer Accepted,381,156,405.17,246391.98
+2024-05-11,Careers Site,Finance,Offer Extended,247,82,3354.11,77806.91
+2024-05-02,Careers Site,Customer Success,Applied,188,37,1052.32,245197.91
+2025-04-20,Campus Event,Marketing,Offer Accepted,88,122,13824.91,212895.25
+2024-02-11,LinkedIn,Engineering,Applied,9,80,22261.37,73826.35
+2024-03-17,Careers Site,Customer Success,Interview,493,174,20385.46,123489.39
+2024-08-01,Referral,Engineering,Screening,232,156,12866.69,124433.93
+2024-12-13,Recruiter Sourced,Operations,Offer Accepted,57,159,11229.15,242601.69
+2024-06-13,Careers Site,Marketing,Interview,412,111,24657.83,81713.93
+2024-06-24,Recruiter Sourced,Customer Success,Offer Accepted,215,51,1337.57,96035.99
+2024-07-26,LinkedIn,Operations,Rejected,480,55,1149.58,80677.65
+2025-05-23,Referral,Operations,Rejected,103,67,475.37,167255.94
+2024-04-27,Campus Event,Customer Success,Offer Accepted,450,87,23961.63,137459.56
+2025-06-13,LinkedIn,Sales,Interview,279,18,849.72,232365.12
+2024-04-22,Recruiter Sourced,Customer Success,Offer Extended,360,135,15025.49,79211.31
+2025-04-26,LinkedIn,Operations,Screening,472,112,23992.62,159201.02
+2024-04-17,Referral,Finance,Screening,258,55,24498.92,163256.39
+2024-11-11,Job Board,Finance,Applied,255,60,8737.58,64334.32
+2024-04-03,Careers Site,Operations,Offer Extended,226,130,11059.62,169082.12
+2024-11-11,Careers Site,Sales,Rejected,429,160,21264.42,108535.02
+2024-10-19,Campus Event,Customer Success,Offer Extended,259,61,8128.29,221793.07
+2024-03-23,Campus Event,Sales,Screening,377,25,20457.28,211856.56
+2024-05-14,LinkedIn,Operations,Offer Extended,6,61,1827.38,146098.67
+2024-03-08,Referral,Engineering,Applied,442,71,11386.56,218911.67
+2025-06-05,Job Board,Engineering,Rejected,263,91,23326.82,117349.62
+2024-02-19,Referral,Sales,Rejected,431,50,6705.47,157249.76
+2025-05-20,Job Board,Customer Success,Interview,359,72,11031.23,50405.93
+2024-04-17,Campus Event,Marketing,Rejected,439,9,24410.68,129748.41
+2025-04-29,Campus Event,Sales,Offer Extended,160,119,10052.77,193754.65
+2024-11-11,Job Board,Operations,Interview,263,134,20169.79,85617.38
+2025-05-18,Referral,Marketing,Offer Extended,498,72,719.82,102528.88
+2025-02-03,Job Board,Finance,Applied,105,51,2959.8,195609.94
+2024-01-05,LinkedIn,Engineering,Offer Accepted,5,82,17102.85,139026.14
+2024-03-30,LinkedIn,Sales,Interview,166,139,6320.78,121065.56
+2025-01-29,Careers Site,Finance,Screening,419,130,21556.09,188587.89
+2025-02-11,Campus Event,Marketing,Interview,418,166,22053.15,144790.59
+2025-01-16,Careers Site,Customer Success,Offer Accepted,433,62,16700.32,59710.79
+2025-02-14,Careers Site,Sales,Rejected,498,178,6364.55,151187.68
+2024-10-02,Job Board,Finance,Rejected,120,130,15530.91,92227.54
+2024-03-13,LinkedIn,Engineering,Interview,92,165,3992.35,135271.71
+2025-02-22,Careers Site,Customer Success,Offer Accepted,341,37,24999.97,168744.89
+2025-01-12,LinkedIn,Engineering,Interview,206,6,11960.51,231808.96
+2025-01-03,Campus Event,Marketing,Rejected,405,153,24063.55,193377.63
+2025-02-23,LinkedIn,Operations,Interview,244,102,8026.73,116126.13
+2025-06-13,Recruiter Sourced,Engineering,Interview,74,116,12960.65,40007.24
+2024-07-29,Careers Site,Sales,Screening,134,172,20393.83,203640.47
+2024-09-25,Careers Site,Operations,Interview,254,156,15666.4,84590.07
+2025-03-07,Job Board,Finance,Offer Extended,486,154,10166.75,164348.12
+2024-07-26,Referral,Customer Success,Interview,144,164,8684.17,89629.07
+2024-03-20,Job Board,Operations,Applied,185,18,5914.64,118054.94
+2024-05-30,Referral,Customer Success,Interview,49,70,24818.97,170645.38
+2024-05-27,LinkedIn,Marketing,Screening,86,68,24274.28,74768.35
+2025-03-18,Job Board,Marketing,Offer Extended,338,45,15789.38,59280.62
+2024-06-01,Job Board,Customer Success,Screening,335,148,11220.12,164603.64
+2024-07-13,Careers Site,Operations,Screening,228,77,19212.95,219594.34
+2024-04-11,Careers Site,Marketing,Applied,433,133,8350.09,223216.24
+2025-03-23,Campus Event,Operations,Offer Extended,190,160,432.03,158325.1
+2024-05-01,Referral,Operations,Rejected,270,32,23036.66,215169.61
+2025-05-27,Referral,Sales,Interview,263,117,14568.5,146888.32
+2025-01-14,Recruiter Sourced,Finance,Applied,27,84,19923.98,53627.68
+2025-02-02,Referral,Finance,Offer Accepted,132,72,21365.49,151167.88
+2024-11-20,Careers Site,Operations,Offer Extended,348,151,19454.46,40022.45
+2025-04-16,Campus Event,Operations,Rejected,64,46,9598.24,117518.21
+2024-04-23,Recruiter Sourced,Sales,Rejected,17,103,11755.6,249078.52
+2025-04-21,Job Board,Finance,Offer Accepted,177,157,12154.24,85331.34
+2025-02-23,Careers Site,Finance,Applied,50,85,16173.47,50072.84
+2024-12-19,Job Board,Sales,Offer Accepted,223,146,20120.69,222484.27
+2025-02-11,Campus Event,Engineering,Applied,241,166,21132.48,232559.31
+2024-07-03,Recruiter Sourced,Customer Success,Applied,498,8,18332.07,244405.47
+2024-08-30,Job Board,Sales,Screening,267,28,5065.49,131250.84
+2024-06-01,Campus Event,Customer Success,Screening,266,64,14233.81,122267.59
+2024-10-18,LinkedIn,Marketing,Rejected,259,22,7556.09,84646.05
+2024-10-02,Recruiter Sourced,Sales,Applied,276,42,16912.13,88079.25
+2025-01-12,Recruiter Sourced,Engineering,Rejected,362,84,12281.54,240924.58
+2025-02-15,Recruiter Sourced,Engineering,Offer Accepted,54,23,3056.13,81571.99
+2024-01-14,Campus Event,Sales,Rejected,83,41,20532.58,114136.52
+2024-02-11,Campus Event,Finance,Offer Extended,16,38,9793.87,155655.28
+2024-12-29,Careers Site,Engineering,Interview,202,92,20403.91,65746.19
+2024-02-29,Job Board,Finance,Offer Extended,238,129,11220.36,86136.01
+2025-02-18,Campus Event,Customer Success,Offer Extended,387,137,4568.48,238182.23
+2025-03-20,Careers Site,Sales,Rejected,275,36,2495.97,80625.07
+2024-05-27,Referral,Operations,Applied,70,146,16822.48,214291.72
+2024-02-06,Campus Event,Marketing,Offer Extended,397,123,19164.62,171613.31
+2024-03-04,Careers Site,Engineering,Applied,156,40,1129.39,67824.69
+2024-08-03,Referral,Engineering,Rejected,271,36,22284.02,67982.76
+2025-04-26,Referral,Operations,Rejected,122,160,10032.16,52557.07
+2024-01-26,LinkedIn,Marketing,Offer Extended,453,93,13062.83,146188.94
+2025-02-09,LinkedIn,Customer Success,Screening,227,9,22505.08,95887.58
+2024-04-12,Careers Site,Operations,Rejected,20,169,22953.22,171674.68
+2024-10-18,Recruiter Sourced,Operations,Screening,70,114,15340.23,55586.31
+2025-05-02,Recruiter Sourced,Operations,Offer Extended,278,165,24936.71,111833.11
+2024-01-12,Campus Event,Marketing,Applied,315,89,7257.43,160460.99
+2024-05-04,LinkedIn,Engineering,Rejected,299,125,6215.25,169415.09
+2025-06-21,LinkedIn,Sales,Offer Accepted,481,118,4555.53,177845.68
+2024-11-03,Job Board,Operations,Offer Extended,211,54,276.92,121549.5
+2024-08-08,Referral,Operations,Rejected,417,130,15872.81,180544.24
+2025-02-13,Recruiter Sourced,Marketing,Offer Accepted,288,173,20883.44,118496.38
+2025-06-13,Recruiter Sourced,Customer Success,Offer Accepted,326,140,11110.43,166512.12
+2024-12-09,Recruiter Sourced,Finance,Offer Extended,214,33,9783.92,116535.89
+2024-02-03,Recruiter Sourced,Sales,Offer Extended,298,175,6391.07,162088.56
+2024-02-11,Recruiter Sourced,Customer Success,Applied,399,64,18637.34,134745.96
+2025-05-22,Recruiter Sourced,Marketing,Offer Extended,499,158,9115.04,186370.69
+2025-01-29,Campus Event,Sales,Interview,208,39,24042.38,107587.81
+2025-02-11,Campus Event,Operations,Applied,259,95,8426.8,138259.58
+2024-02-18,Campus Event,Marketing,Offer Accepted,319,147,7953.9,130398.09
+2025-02-15,Careers Site,Marketing,Interview,31,86,562.25,46276.4
+2025-06-04,Campus Event,Finance,Offer Accepted,30,161,13608.12,138851.96
+2024-01-13,Recruiter Sourced,Operations,Screening,493,25,18139.86,235785.29
+2024-01-10,Careers Site,Finance,Rejected,200,22,603.95,73133.96
+2025-05-19,Campus Event,Engineering,Offer Extended,321,63,15232.43,221481.49
+2024-01-24,Referral,Engineering,Interview,241,35,20304.19,158518.17
+2025-04-22,LinkedIn,Sales,Offer Accepted,293,120,4029.17,231494.39
+2025-05-06,Job Board,Engineering,Offer Extended,102,11,21742.9,146658.47
+2024-08-30,Careers Site,Customer Success,Offer Accepted,363,48,4005.48,136363.65
+2025-06-10,Recruiter Sourced,Operations,Offer Accepted,175,129,8757.53,165677.05
+2024-11-28,Recruiter Sourced,Customer Success,Offer Extended,421,124,6466.91,74493.86
+2025-01-10,Referral,Customer Success,Offer Accepted,367,173,16933.83,169113.43
+2024-11-30,LinkedIn,Sales,Screening,188,43,14730.27,101542.05
+2025-03-17,Campus Event,Customer Success,Offer Extended,287,105,15539.14,124636.26
+2024-01-27,Campus Event,Operations,Offer Accepted,162,76,15568.39,50369.75
+2025-04-19,LinkedIn,Finance,Offer Extended,377,6,12859.9,47094.01
+2025-01-19,Campus Event,Engineering,Interview,367,90,24129.63,225255.71

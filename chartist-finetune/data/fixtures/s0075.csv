@@ -1,0 +1,241 @@
+Claim Date,Claim Type,Policy Region,Claim Status,Claim Amount,Paid Amount,Days To Settle
+2025-03-25,Property Water Damage,Southwest,Denied,225306.17,39059.95,226
+2024-02-06,Other,Northeast,Open,74952.07,45013.23,396
+2025-02-05,Windstorm,Southwest,Approved,61634.93,174576.18,115
+2024-09-30,Property Fire,Southwest,Closed,157452.58,125186.17,181
+2024-08-01,Windstorm,Northeast,Open,181436.64,114732.79,538
+2024-05-31,Windstorm,Northeast,Open,39096.93,46212.85,278
+2025-05-05,Auto Theft,Southeast,Closed,12556.55,208263.13,324
+2024-09-22,Other,Pacific Northwest,Closed,208123.04,138579.97,343
+2024-12-10,Other,West,Denied,175458.09,53333.3,456
+2024-07-01,Auto Theft,Midwest,Denied,212440.72,47719.86,455
+2024-05-20,Property Water Damage,Northeast,Under Review,51568.61,90913.34,176
+2024-12-08,Property Water Damage,West,Open,43196.05,39666.17,456
+2024-02-05,Auto Theft,Northeast,Closed,61778.24,203818.73,479
+2025-03-04,Auto Theft,Pacific Northwest,Denied,45820.38,126890.8,30
+2024-02-17,Windstorm,Pacific Northwest,Approved,36132.64,36890.39,514
+2024-04-30,Other,Southeast,Closed,174343.33,181977.1,151
+2024-07-30,Liability,West,Approved,202275.08,121383.28,73
+2025-04-25,Medical,Northeast,Under Review,223677.33,33909.37,45
+2025-02-15,Medical,Southwest,Approved,171185.18,151323.37,415
+2025-05-25,Liability,Northeast,Under Review,67331.55,145841.23,334
+2025-04-14,Windstorm,Southwest,Denied,97711.64,31696.67,208
+2025-05-15,Auto Theft,Southwest,Open,29944.28,105314.34,508
+2024-02-19,Property Water Damage,West,Under Review,34443.94,6747.23,408
+2025-04-29,Auto Theft,Southwest,Denied,240200.21,204870.28,522
+2024-10-10,Property Fire,Northeast,Closed,135181.61,224863.06,162
+2025-04-23,Other,West,Open,240360.24,141759.83,339
+2025-01-20,Auto Collision,Southeast,Open,115245.67,164954.47,362
+2024-03-01,Liability,Southwest,Under Review,166280.66,91237.61,136
+2024-03-11,Auto Theft,Southwest,Open,115594.52,106280.67,397
+2024-08-25,Other,West,Closed,69570.67,112331.36,440
+2024-05-18,Windstorm,Southeast,Closed,233277.54,55619.08,231
+2024-12-20,Auto Theft,Pacific Northwest,Under Review,5608.17,35283.37,414
+2024-08-17,Auto Collision,Southeast,Open,72059.55,137825.51,439
+2024-11-20,Other,Northeast,Under Review,187134.33,9636.94,374
+2024-12-18,Property Water Damage,Pacific Northwest,Approved,239959.27,76638.49,66
+2024-02-06,Other,Southeast,Under Review,77128.03,178064.53,459
+2024-04-10,Property Water Damage,West,Open,3779.45,173352.83,411
+2024-09-28,Property Water Damage,West,Under Review,9817.94,132611.33,332
+2025-06-08,Liability,Midwest,Open,39035.68,88781.34,433
+2025-01-18,Auto Theft,Midwest,Denied,215079.28,14556.51,194
+2025-02-05,Property Fire,Midwest,Approved,42326.01,230180.23,314
+2024-07-15,Other,West,Denied,134057.65,199565.41,241
+2024-09-08,Property Water Damage,Northeast,Under Review,27351.04,95066.7,111
+2024-12-24,Auto Collision,West,Under Review,164551.97,152077.65,224
+2024-04-03,Windstorm,Pacific Northwest,Approved,21162.9,44802.75,117
+2024-07-03,Property Fire,Southeast,Under Review,109165.02,153184.64,75
+2025-05-06,Medical,West,Approved,135231.21,191587.37,403
+2024-06-27,Medical,Southeast,Denied,69924.34,175520.94,146
+2024-12-18,Auto Collision,Southwest,Closed,65316.84,200132.22,52
+2025-02-20,Medical,Southwest,Approved,165968.28,2408.29,335
+2024-08-11,Windstorm,Southeast,Open,53765.53,208326.13,87
+2024-05-02,Property Water Damage,Southwest,Denied,153019.92,107739.9,535
+2024-06-03,Medical,Northeast,Denied,22285.05,131979.5,370
+2024-01-17,Medical,Southwest,Under Review,173038.97,231179.37,462
+2025-05-02,Liability,Northeast,Denied,116464.44,71400.83,478
+2024-12-10,Property Water Damage,Northeast,Approved,222538.39,55947.1,93
+2025-06-04,Auto Theft,Pacific Northwest,Under Review,240006.7,9516.23,144
+2025-01-09,Other,Southwest,Denied,170593.46,82629.66,443
+2025-02-08,Auto Collision,Midwest,Denied,104795.6,198141.62,23
+2025-03-29,Auto Collision,Southwest,Closed,68927.57,66153.19,107
+2024-06-10,Property Fire,Northeast,Approved,185017.16,90475.93,473
+2025-05-18,Property Fire,Southeast,Open,193634.08,203458.42,113
+2025-02-16,Property Water Damage,Southeast,Closed,137513.43,236603.79,231
+2025-01-19,Windstorm,Northeast,Denied,154420.32,164940.71,244
+2024-09-14,Property Water Damage,Southeast,Approved,137560.41,5382.74,238
+2024-06-26,Liability,Southwest,Denied,202237.4,142174.34,305
+2024-08-01,Windstorm,West,Under Review,202660.03,32969.52,192
+2024-10-22,Other,Southwest,Denied,204231.82,230851.43,67
+2025-02-26,Windstorm,Pacific Northwest,Closed,93602.33,90587.21,242
+2025-01-27,Auto Collision,Northeast,Approved,103058.93,197033.99,61
+2024-05-14,Medical,Northeast,Approved,201236.35,212985.71,74
+2024-05-18,Property Water Damage,Southwest,Denied,117595.15,184464.35,95
+2024-02-28,Property Fire,Southeast,Approved,145810.47,69635.25,449
+2025-02-06,Windstorm,Pacific Northwest,Approved,120301.78,239491.69,66
+2024-01-17,Liability,Midwest,Under Review,225000.49,128989.79,296
+2024-06-16,Property Water Damage,Pacific Northwest,Denied,10870.7,54978.09,482
+2024-10-20,Liability,West,Under Review,81523.72,34914.12,520
+2024-07-13,Property Fire,Pacific Northwest,Denied,70182.68,37255.75,216
+2024-03-03,Property Water Damage,Midwest,Open,246806.12,223036.05,21
+2024-10-16,Property Fire,Midwest,Open,153761.4,118067.46,506
+2024-08-08,Auto Theft,Pacific Northwest,Open,177484.16,217730.4,441
+2024-05-10,Medical,Southeast,Approved,187888.32,61856.58,404
+2024-06-09,Windstorm,Southwest,Closed,187200.43,32393.9,237
+2024-05-08,Other,Midwest,Closed,34189.9,10716.32,71
+2025-01-05,Auto Theft,Pacific Northwest,Closed,177753.84,106354.15,539
+2025-02-05,Windstorm,Pacific Northwest,Denied,248946.74,236666.09,66
+2024-08-03,Medical,Southwest,Closed,82871.51,206919.45,427
+2024-05-11,Auto Theft,Southwest,Open,213771.06,239430.7,137
+2024-06-18,Auto Theft,Southwest,Under Review,227715.48,59772.65,361
+2024-03-26,Auto Collision,Southeast,Closed,12789.25,161119.25,72
+2025-06-23,Auto Collision,Midwest,Open,70523.27,167987.0,460
+2024-09-18,Windstorm,Northeast,Open,76151.46,94356.41,504
+2025-02-05,Medical,Northeast,Denied,205494.52,181412.28,201
+2024-09-12,Property Fire,West,Approved,31283.07,46999.27,411
+2024-01-05,Liability,West,Closed,174342.69,180353.14,454
+2024-11-08,Windstorm,Southeast,Closed,11258.52,37526.04,186
+2025-02-17,Auto Theft,Southwest,Under Review,40763.83,67984.88,8
+2024-05-06,Liability,Northeast,Closed,13538.32,211720.87,258
+2024-04-28,Auto Theft,Midwest,Under Review,48233.74,124685.6,108
+2025-01-02,Property Fire,Pacific Northwest,Open,59993.09,82704.33,394
+2024-02-02,Auto Theft,Midwest,Approved,150421.41,220465.92,75
+2024-12-01,Medical,Northeast,Closed,7969.56,49158.37,396
+2024-07-30,Liability,Pacific Northwest,Closed,24409.46,228220.44,414
+2025-04-27,Auto Collision,West,Denied,201359.78,57141.83,318
+2025-02-06,Auto Collision,Pacific Northwest,Open,10524.12,4665.14,18
+2024-06-02,Windstorm,Pacific Northwest,Closed,75648.11,72083.53,275
+2025-06-15,Property Fire,Southwest,Open,114884.9,10034.97,344
+2025-03-10,Auto Theft,Southwest,Under Review,87993.59,49314.07,248
+2024-07-30,Liability,Midwest,Under Review,180044.38,39685.26,476
+2024-04-30,Medical,Midwest,Denied,82605.29,60580.52,59
+2024-03-03,Property Water Damage,Midwest,Open,166251.0,88215.83,302
+2024-06-01,Windstorm,Northeast,Closed,232338.1,5323.53,24
+2024-01-15,Auto Collision,Northeast,Under Review,215180.88,200365.54,20
+2025-04-09,Medical,Southeast,Open,111338.15,86020.23,73
+2024-04-28,Property Fire,Pacific Northwest,Under Review,224749.47,19341.18,500
+2025-01-22,Auto Collision,Southeast,Denied,11084.62,135158.82,329
+2024-03-26,Windstorm,West,Under Review,238854.98,113874.88,110
+2024-09-14,Auto Theft,Southeast,Closed,170556.78,73494.95,310
+2025-01-16,Other,Pacific Northwest,Under Review,247620.06,144028.22,225
+2025-04-29,Medical,West,Denied,118404.53,196830.32,540
+2025-01-04,Property Fire,Northeast,Open,77346.79,136634.48,130
+2024-05-20,Other,Pacific Northwest,Under Review,226858.78,238715.75,150
+2024-08-08,Property Fire,Midwest,Approved,100001.78,67664.86,203
+2025-03-08,Medical,Southwest,Open,99145.57,155609.82,226
+2024-10-07,Medical,Midwest,Under Review,197400.3,184413.42,21
+2025-02-12,Other,Southwest,Open,46437.09,183316.32,482
+2024-08-03,Liability,Southeast,Under Review,135217.03,186308.94,414
+2024-02-27,Medical,Midwest,Denied,203900.65,98335.95,289
+2024-10-10,Auto Theft,Southeast,Under Review,148136.98,29115.84,252
+2024-02-09,Property Fire,Southwest,Closed,206829.07,190745.23,412
+2025-05-06,Property Water Damage,Midwest,Under Review,188654.89,54754.46,385
+2024-09-19,Other,Southwest,Denied,165460.29,86459.83,97
+2024-06-14,Auto Theft,Midwest,Open,46382.57,238503.81,76
+2024-02-08,Auto Collision,Northeast,Approved,130778.55,95603.85,523
+2025-05-19,Auto Collision,Southeast,Open,182022.74,152263.86,97
+2024-02-03,Property Fire,Southwest,Under Review,53260.56,35227.67,523
+2024-05-03,Other,Pacific Northwest,Denied,28020.72,73801.89,519
+2024-10-02,Property Fire,Midwest,Closed,19142.54,131823.37,475
+2024-10-14,Auto Collision,West,Open,159781.44,217395.65,102
+2024-11-25,Windstorm,Northeast,Open,155376.37,10570.54,18
+2025-01-09,Other,Midwest,Denied,99775.64,110482.28,97
+2024-06-15,Property Water Damage,Northeast,Approved,202202.66,53339.14,71
+2024-06-26,Property Fire,Midwest,Denied,203305.62,84943.75,335
+2025-04-04,Auto Collision,Southeast,Closed,67367.22,91849.52,432
+2025-01-23,Property Fire,West,Approved,16288.11,169648.53,175
+2024-10-27,Auto Theft,Southwest,Closed,88921.61,197732.3,327
+2025-01-06,Auto Theft,Pacific Northwest,Denied,179911.05,144797.95,327
+2024-05-29,Other,Southeast,Open,127086.11,81372.14,269
+2025-06-16,Medical,Southeast,Open,83520.67,214341.36,345
+2025-04-01,Windstorm,Southwest,Under Review,126849.72,201161.74,202
+2025-02-20,Property Water Damage,West,Under Review,101509.6,42841.81,188
+2024-03-04,Property Fire,Northeast,Denied,8090.26,49923.38,539
+2025-04-19,Auto Collision,Pacific Northwest,Under Review,214651.67,21318.77,43
+2025-05-02,Property Fire,Midwest,Under Review,170312.69,118183.0,296
+2024-09-19,Windstorm,Southeast,Closed,240184.73,39730.73,393
+2024-02-11,Auto Collision,Northeast,Under Review,127727.18,162419.53,182
+2025-02-19,Property Fire,Northeast,Closed,57784.48,219474.67,480
+2024-03-06,Windstorm,West,Approved,169838.19,172892.7,262
+2024-02-12,Auto Theft,Pacific Northwest,Approved,201434.81,163792.09,3
+2025-01-27,Property Fire,Pacific Northwest,Approved,32073.12,146358.68,455
+2025-05-29,Windstorm,Midwest,Closed,169981.58,152380.05,478
+2024-08-18,Windstorm,Midwest,Denied,182548.93,122821.82,197
+2025-06-07,Other,Southeast,Denied,42813.86,124331.08,184
+2025-01-06,Other,Northeast,Closed,230261.51,122497.55,162
+2024-11-13,Auto Theft,Pacific Northwest,Denied,38650.22,30071.98,200
+2024-10-21,Medical,Northeast,Under Review,103071.77,133154.78,241
+2024-01-13,Auto Theft,Pacific Northwest,Denied,115600.98,15725.53,415
+2025-02-05,Property Water Damage,Southwest,Approved,124711.35,210247.2,187
+2024-08-03,Property Fire,Northeast,Approved,132187.62,116958.99,519
+2024-12-02,Property Fire,Southwest,Under Review,222388.28,195692.46,4
+2025-04-16,Other,Northeast,Under Review,180783.54,200689.88,89
+2024-12-25,Other,Southeast,Denied,146666.47,203941.31,159
+2025-02-16,Liability,West,Open,50517.3,221575.61,117
+2024-11-15,Other,Northeast,Closed,125968.43,144960.1,174
+2025-02-13,Property Fire,Midwest,Closed,146548.87,161640.87,484
+2024-07-20,Windstorm,Northeast,Closed,11692.78,60893.46,409
+2025-02-03,Auto Collision,Southwest,Open,241251.87,37587.64,173
+2024-10-04,Medical,Pacific Northwest,Denied,153654.12,231833.06,538
+2024-12-30,Auto Theft,West,Under Review,151399.07,210130.57,396
+2025-02-03,Other,Southwest,Closed,150213.55,203797.56,186
+2024-11-21,Auto Collision,Southwest,Closed,206793.37,153760.54,321
+2024-07-15,Auto Theft,Midwest,Denied,180020.82,200774.95,34
+2024-09-19,Auto Theft,Northeast,Under Review,179189.51,123818.13,526
+2024-06-09,Auto Collision,Pacific Northwest,Denied,201914.54,118907.78,11
+2025-03-07,Auto Collision,West,Denied,145361.87,147636.27,78
+2024-05-07,Other,Midwest,Approved,227669.95,217568.04,115
+2025-05-06,Medical,Pacific Northwest,Open,161154.11,181508.24,362
+2024-08-28,Liability,Pacific Northwest,Open,245015.85,161166.32,333
+2024-06-30,Property Fire,Southeast,Open,230140.99,80846.03,444
+2025-02-19,Auto Theft,West,Closed,159213.28,142612.36,463
+2025-06-17,Liability,Pacific Northwest,Closed,23703.48,102139.77,284
+2024-01-03,Windstorm,Pacific Northwest,Approved,123789.6,235491.68,378
+2025-06-02,Windstorm,Midwest,Denied,29860.13,20006.55,313
+2025-01-23,Windstorm,Southeast,Denied,20639.12,237214.05,396
+2024-04-20,Property Fire,Pacific Northwest,Closed,37699.71,49148.22,177
+2025-06-15,Property Water Damage,Southwest,Under Review,101093.87,213441.35,101
+2025-04-02,Property Water Damage,Pacific Northwest,Open,178940.85,230729.43,449
+2024-10-19,Property Fire,Southwest,Open,82639.79,206452.47,61
+2024-01-11,Other,Southeast,Open,149258.07,117007.12,72
+2024-11-22,Liability,West,Approved,208577.94,22157.19,372
+2025-01-30,Liability,Southeast,Approved,50522.91,150595.09,87
+2024-10-11,Auto Collision,Southeast,Denied,149448.7,211927.23,435
+2024-03-07,Windstorm,Midwest,Denied,201095.47,45704.5,469
+2024-06-30,Liability,Midwest,Closed,163197.55,34176.59,218
+2024-12-01,Property Fire,Southwest,Denied,190084.27,189458.01,168
+2025-03-26,Windstorm,Southwest,Denied,153286.97,124653.19,365
+2024-08-15,Windstorm,Pacific Northwest,Denied,113720.17,18077.49,290
+2024-01-03,Other,West,Under Review,163120.87,216370.31,276
+2024-04-23,Liability,West,Open,233622.5,119991.46,12
+2024-11-01,Property Water Damage,Southwest,Open,144388.79,85625.8,81
+2024-08-13,Windstorm,Southwest,Open,56498.69,10661.63,89
+2025-03-05,Other,Pacific Northwest,Closed,242973.11,177820.93,38
+2024-09-11,Property Water Damage,West,Open,2592.14,238634.75,381
+2025-05-08,Property Water Damage,Northeast,Approved,102199.24,129995.02,407
+2024-07-10,Property Water Damage,Pacific Northwest,Denied,227226.79,67749.35,226
+2024-02-28,Auto Collision,Southwest,Approved,181144.74,233403.51,459
+2024-10-18,Auto Theft,Southeast,Approved,203289.33,90826.1,237
+2024-07-23,Property Water Damage,West,Closed,26134.5,161469.72,399
+2024-09-02,Auto Collision,Southeast,Under Review,87741.58,210127.49,151
+2024-07-24,Auto Collision,West,Approved,190859.12,124047.78,49
+2025-04-23,Liability,Midwest,Denied,104238.63,77527.53,437
+2024-04-05,Medical,Northeast,Approved,114413.56,191115.03,32
+2025-01-15,Property Fire,Midwest,Closed,108243.62,217985.53,412
+2025-04-29,Auto Collision,Southwest,Denied,165557.1,196605.21,149
+2024-11-11,Liability,Southwest,Closed,120408.77,99128.12,341
+2024-05-01,Auto Theft,Southeast,Under Review,161570.64,126791.14,524
+2025-05-10,Auto Theft,West,Under Review,24397.68,38623.74,134
+2024-11-06,Property Water Damage,Southeast,Closed,120060.1,222500.17,62
+2024-05-31,Windstorm,Northeast,Under Review,168203.81,55282.05,256
+2024-07-06,Medical,Southwest,Closed,196254.02,189464.55,18
+2024-08-07,Property Water Damage,Pacific Northwest,Denied,246946.78,24708.04,526
+2024-11-14,Other,Southwest,Approved,20684.7,138110.13,83
+2025-06-16,Other,Southwest,Denied,169548.06,35143.23,182
+2025-05-29,Other,Southwest,Approved,196816.98,42360.36,535
+2024-02-23,Windstorm,Pacific Northwest,Denied,28887.1,107025.13,149
+2024-05-13,Auto Theft,Southeast,Under Review,19526.61,136435.84,188
+2024-01-14,Other,Midwest,Approved,81506.18,221275.11,42
+2024-09-12,Other,Southwest,Denied,242793.99,90880.98,334
+2024-01-24,Property Water Damage,Southwest,Under Review,80619.5,94626.78,231
+2024-05-02,Property Fire,Northeast,Under Review,88052.73,22653.01,211

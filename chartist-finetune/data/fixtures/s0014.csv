@@ -1,0 +1,241 @@
+inspectionDate,productLine,defectType,shiftName,unitsInspected,defectCount,defectRatePct,reworkCostUsd
+2025-05-29,Assembly A,Label Misprint,Morning,781,168,5.95,8855.5
+2025-03-28,Injection Molding,Scratch,Night,3763,397,15.6,11730.72
+2024-11-20,Electronics,Label Misprint,Afternoon,2763,330,24.68,307.5
+2024-01-04,Machining,Label Misprint,Night,1976,70,11.81,3523.88
+2024-07-28,Machining,Dimensional Variance,Afternoon,4369,340,0.32,9656.48
+2024-05-04,Assembly A,Label Misprint,Night,4779,115,9.22,9860.87
+2024-02-11,Electronics,Dimensional Variance,Morning,1601,155,0.16,8337.36
+2024-03-02,Assembly A,Scratch,Night,3164,67,2.87,17245.57
+2024-09-04,Assembly B,Dimensional Variance,Afternoon,1490,248,22.53,7629.96
+2025-01-21,Injection Molding,Porosity,Morning,4186,281,11.47,12761.26
+2024-11-24,Assembly A,Solder Bridge,Morning,2020,42,5.5,3826.43
+2024-06-16,Assembly B,Dimensional Variance,Morning,996,397,20.84,10311.12
+2024-08-09,Assembly A,Solder Bridge,Morning,1045,349,24.63,13591.41
+2024-11-05,Assembly A,Porosity,Morning,2589,338,11.27,10385.41
+2025-03-14,Assembly A,Missing Component,Afternoon,3192,303,5.34,13296.03
+2024-01-29,Electronics,Label Misprint,Morning,282,280,13.83,9135.58
+2024-10-30,Packaging,Scratch,Night,3711,280,9.54,6964.25
+2024-06-06,Machining,Contamination,Morning,2151,19,8.57,12533.48
+2024-05-22,Electronics,Missing Component,Afternoon,928,15,9.38,8452.36
+2025-05-29,Machining,Dimensional Variance,Night,4752,439,7.84,11344.23
+2025-03-31,Assembly B,Contamination,Morning,2473,52,11.22,15589.64
+2025-05-05,Electronics,Porosity,Morning,3826,380,11.15,16495.88
+2024-05-16,Packaging,Porosity,Afternoon,2113,202,16.72,4551.45
+2024-07-07,Injection Molding,Missing Component,Morning,2574,266,6.17,16185.04
+2024-02-06,Packaging,Label Misprint,Night,1374,362,7.44,5357.82
+2025-01-04,Machining,Missing Component,Morning,432,279,1.66,4921.59
+2024-02-09,Assembly A,Porosity,Afternoon,3848,70,18.22,17498.52
+2024-09-01,Electronics,Porosity,Night,3283,18,12.88,9726.13
+2024-08-03,Assembly A,Missing Component,Night,813,388,11.39,4438.24
+2024-10-01,Electronics,Porosity,Night,2638,438,16.5,6045.74
+2024-03-19,Assembly A,Porosity,Night,4167,376,0.51,12817.77
+2024-10-31,Electronics,Dimensional Variance,Night,429,361,4.76,13269.22
+2025-04-14,Assembly B,Scratch,Morning,3516,189,16.18,14170.42
+2025-02-21,Packaging,Porosity,Afternoon,4066,342,8.74,17434.2
+2025-03-26,Electronics,Missing Component,Morning,1398,99,4.17,16670.8
+2024-10-07,Packaging,Missing Component,Afternoon,431,82,24.78,7956.77
+2024-08-19,Electronics,Solder Bridge,Night,1698,23,18.81,7133.7
+2025-03-01,Injection Molding,Missing Component,Afternoon,2383,423,1.51,479.24
+2024-12-02,Machining,Porosity,Afternoon,828,292,9.97,14324.24
+2024-04-01,Assembly B,Porosity,Afternoon,1736,61,17.25,15327.99
+2024-05-31,Assembly A,Porosity,Morning,4481,222,24.15,6262.24
+2025-06-04,Assembly B,Missing Component,Night,3878,225,21.48,10147.05
+2025-04-26,Assembly A,Missing Component,Afternoon,1240,5,0.02,1844.83
+2024-03-03,Injection Molding,Scratch,Afternoon,3546,353,17.54,13235.95
+2024-07-26,Packaging,Solder Bridge,Night,2253,225,2.8,8723.95
+2025-02-15,Machining,Contamination,Morning,1622,337,0.12,12309.07
+2024-04-16,Electronics,Solder Bridge,Afternoon,4743,431,13.85,14980.26
+2024-10-27,Packaging,Scratch,Morning,4552,393,14.43,8123.72
+2025-05-13,Injection Molding,Scratch,Night,3643,196,16.35,11137.28
+2024-02-02,Assembly A,Solder Bridge,Afternoon,1570,402,20.84,15011.25
+2025-05-21,Packaging,Dimensional Variance,Night,2572,210,6.9,12012.65
+2024-09-11,Assembly B,Porosity,Morning,3396,152,24.08,15075.98
+2024-09-17,Machining,Contamination,Afternoon,4515,388,11.33,8305.11
+2024-09-20,Injection Molding,Label Misprint,Morning,1532,137,15.19,3397.61
+2024-03-27,Electronics,Solder Bridge,Night,1498,7,13.51,16554.45
+2025-06-04,Assembly B,Missing Component,Night,3727,398,0.26,6090.99
+2024-05-05,Packaging,Dimensional Variance,Afternoon,4159,401,7.53,7043.03
+2024-07-31,Machining,Solder Bridge,Night,2500,47,21.94,8863.89
+2025-02-13,Machining,Dimensional Variance,Night,3738,15,22.47,5144.54
+2024-04-10,Assembly A,Scratch,Morning,661,274,9.0,10964.13
+2024-03-18,Electronics,Missing Component,Night,4875,72,11.8,6951.94
+2024-08-20,Injection Molding,Porosity,Afternoon,846,409,12.83,11044.33
+2024-08-28,Machining,Porosity,Night,1356,258,5.17,2153.22
+2024-06-20,Machining,Porosity,Afternoon,3304,11,15.3,7533.92
+2024-10-22,Assembly B,Solder Bridge,Afternoon,1343,444,5.48,18318.54
+2024-08-29,Electronics,Missing Component,Afternoon,1599,288,18.2,6254.79
+2024-02-06,Assembly A,Porosity,Afternoon,3189,206,19.67,9756.35
+2025-04-20,Machining,Missing Component,Night,2875,182,1.16,7633.34
+2024-10-18,Assembly A,Scratch,Morning,929,234,13.18,285.86
+2024-02-04,Machining,Contamination,Afternoon,2092,219,11.54,17578.87
+2024-05-19,Electronics,Dimensional Variance,Night,3744,65,21.78,8670.27
+2024-01-17,Packaging,Scratch,Morning,2276,50,14.77,7017.81
+2024-05-20,Assembly B,Contamination,Afternoon,2227,271,6.3,6377.31
+2024-12-13,Injection Molding,Contamination,Afternoon,3716,148,21.18,6165.29
+2025-04-03,Assembly A,Porosity,Morning,1603,7,22.77,5991.21
+2025-06-02,Assembly A,Dimensional Variance,Morning,1280,160,2.53,16513.57
+2024-05-12,Machining,Missing Component,Afternoon,615,17,20.8,8190.13
+2024-03-11,Packaging,Label Misprint,Morning,3252,143,13.29,12110.08
+2024-12-20,Machining,Scratch,Afternoon,129,448,12.98,2795.71
+2025-01-11,Assembly B,Contamination,Afternoon,1041,140,2.67,13832.34
+2024-05-13,Assembly B,Solder Bridge,Night,1665,11,9.44,18480.56
+2024-01-18,Packaging,Dimensional Variance,Morning,1570,187,6.19,10436.38
+2025-03-22,Machining,Scratch,Night,201,100,5.13,7788.76
+2024-09-20,Injection Molding,Label Misprint,Afternoon,4730,19,17.22,4124.2
+2024-07-16,Injection Molding,Solder Bridge,Night,3377,188,9.11,6036.08
+2024-08-29,Machining,Contamination,Night,221,254,24.93,14263.27
+2024-11-09,Packaging,Solder Bridge,Morning,1250,354,6.08,16722.36
+2024-10-22,Assembly A,Label Misprint,Night,3287,208,9.29,5850.32
+2024-05-25,Packaging,Dimensional Variance,Night,3006,427,11.3,7023.43
+2024-07-09,Machining,Dimensional Variance,Morning,4639,195,24.6,9776.92
+2024-04-21,Injection Molding,Missing Component,Night,1387,325,12.19,10587.9
+2024-05-26,Packaging,Label Misprint,Morning,937,363,9.04,1414.94
+2024-07-13,Assembly B,Label Misprint,Night,793,297,4.2,338.62
+2025-03-22,Assembly A,Solder Bridge,Afternoon,4637,249,0.82,14895.93
+2024-11-18,Assembly A,Missing Component,Night,1632,28,1.68,118.06
+2025-03-11,Assembly B,Porosity,Night,4621,279,8.66,6871.18
+2025-05-17,Assembly B,Porosity,Afternoon,3852,90,2.72,10255.94
+2024-03-16,Packaging,Missing Component,Morning,4467,288,1.7,6660.88
+2024-05-02,Machining,Missing Component,Morning,2297,262,13.06,16707.23
+2024-06-30,Assembly B,Label Misprint,Afternoon,2815,263,13.56,11611.38
+2024-12-27,Packaging,Scratch,Morning,2442,447,8.11,16847.36
+2024-10-12,Assembly A,Dimensional Variance,Night,4195,391,4.15,12081.05
+2024-04-29,Assembly B,Solder Bridge,Morning,737,145,7.65,2273.42
+2024-11-21,Injection Molding,Contamination,Afternoon,725,109,14.81,9656.6
+2025-05-06,Electronics,Porosity,Night,4550,230,14.99,11606.03
+2025-02-06,Packaging,Label Misprint,Night,1622,1,23.62,9393.38
+2024-11-29,Electronics,Missing Component,Night,1660,312,7.3,11943.84
+2024-02-13,Packaging,Contamination,Morning,1219,205,3.12,14634.08
+2024-06-18,Assembly A,Label Misprint,Afternoon,4097,420,12.52,10068.04
+2025-04-03,Assembly A,Dimensional Variance,Morning,4292,350,20.66,3716.45
+2024-03-09,Injection Molding,Porosity,Morning,556,311,11.03,17121.55
+2025-04-15,Electronics,Label Misprint,Morning,4996,320,13.96,15754.76
+2025-05-20,Packaging,Label Misprint,Morning,235,53,5.36,9894.33
+2025-06-19,Electronics,Label Misprint,Afternoon,4886,318,23.17,16031.91
+2025-02-21,Packaging,Dimensional Variance,Morning,1075,203,8.69,17617.45
+2025-04-15,Electronics,Missing Component,Afternoon,2179,266,7.96,6524.32
+2024-04-14,Machining,Scratch,Morning,3128,383,17.45,4445.19
+2025-03-18,Assembly A,Missing Component,Night,4726,115,4.02,6241.91
+2025-05-23,Electronics,Contamination,Night,1813,290,6.14,17529.41
+2024-03-04,Packaging,Scratch,Morning,4673,238,18.76,18294.57
+2024-02-11,Assembly A,Solder Bridge,Night,3149,5,0.15,14766.4
+2025-03-27,Injection Molding,Scratch,Afternoon,1384,106,14.85,6321.77
+2025-05-30,Assembly A,Contamination,Afternoon,3951,83,17.68,16962.58
+2024-04-04,Packaging,Missing Component,Night,2966,212,12.02,17327.69
+2024-08-09,Machining,Contamination,Morning,4145,407,20.63,9873.71
+2024-07-31,Assembly B,Scratch,Afternoon,2239,7,18.63,14099.98
+2024-12-29,Injection Molding,Dimensional Variance,Afternoon,4513,28,23.33,8661.44
+2025-02-09,Packaging,Missing Component,Night,470,372,4.68,8743.67
+2025-03-22,Electronics,Solder Bridge,Afternoon,4815,423,20.18,2460.9
+2024-10-26,Injection Molding,Solder Bridge,Night,3022,178,12.49,16757.62
+2024-01-05,Packaging,Label Misprint,Morning,2824,42,21.96,1117.51
+2025-05-26,Machining,Label Misprint,Night,3278,116,9.6,9129.24
+2025-02-03,Injection Molding,Scratch,Afternoon,3079,321,6.22,16517.59
+2024-01-08,Electronics,Missing Component,Morning,4435,263,10.29,9007.15
+2024-02-17,Machining,Porosity,Afternoon,2043,162,1.95,1456.89
+2025-02-23,Assembly A,Contamination,Afternoon,2592,62,17.89,6090.53
+2025-06-12,Machining,Solder Bridge,Night,4392,181,12.48,2762.91
+2024-05-01,Packaging,Scratch,Night,2384,221,3.08,3174.89
+2024-08-30,Assembly A,Label Misprint,Morning,745,381,0.72,8932.43
+2025-04-28,Injection Molding,Contamination,Morning,1481,424,24.72,2573.99
+2024-06-25,Injection Molding,Label Misprint,Night,4413,277,10.15,987.38
+2025-04-23,Electronics,Missing Component,Night,3529,408,1.83,4490.27
+2024-07-31,Packaging,Contamination,Afternoon,4913,72,22.94,7356.2
+2024-12-07,Assembly B,Dimensional Variance,Night,565,170,12.78,9625.89
+2024-03-24,Packaging,Missing Component,Night,2060,388,13.56,3651.58
+2024-02-26,Packaging,Missing Component,Night,2538,60,12.64,5589.11
+2025-02-12,Injection Molding,Scratch,Afternoon,3891,54,3.44,7097.48
+2024-09-30,Injection Molding,Label Misprint,Afternoon,1111,95,14.66,30.26
+2024-05-16,Assembly A,Label Misprint,Morning,1459,154,20.28,17186.64
+2024-03-02,Assembly A,Scratch,Afternoon,4340,281,14.41,9019.44
+2025-02-28,Assembly A,Scratch,Afternoon,4521,36,18.07,15386.01
+2024-04-10,Assembly A,Solder Bridge,Night,1136,336,10.36,3646.7
+2025-02-17,Injection Molding,Dimensional Variance,Afternoon,2042,62,8.51,17541.27
+2024-06-19,Assembly A,Scratch,Night,2252,265,23.14,13991.96
+2025-01-30,Assembly A,Solder Bridge,Morning,3663,18,4.83,4352.89
+2024-08-03,Injection Molding,Solder Bridge,Night,1238,290,22.19,10656.02
+2025-01-18,Injection Molding,Scratch,Morning,4590,155,18.02,15133.52
+2024-10-09,Machining,Porosity,Night,3471,369,23.75,2953.36
+2025-03-11,Packaging,Scratch,Morning,1917,320,14.08,17418.08
+2024-08-09,Machining,Contamination,Night,2203,214,8.1,10789.56
+2024-12-24,Machining,Scratch,Morning,172,299,19.83,18296.32
+2024-12-26,Assembly A,Missing Component,Morning,2686,445,6.42,1569.8
+2024-01-28,Machining,Dimensional Variance,Morning,3102,437,2.82,12576.69
+2024-06-06,Machining,Missing Component,Morning,1010,273,4.86,10744.39
+2024-01-03,Assembly B,Missing Component,Morning,1089,56,9.78,11402.71
+2024-01-29,Assembly B,Solder Bridge,Afternoon,3758,7,4.8,16396.84
+2025-04-05,Assembly A,Solder Bridge,Morning,3440,67,1.97,12518.98
+2025-04-02,Assembly A,Missing Component,Night,797,137,9.74,10360.09
+2025-01-08,Assembly A,Porosity,Morning,266,240,8.76,18336.91
+2025-04-28,Assembly B,Missing Component,Afternoon,1280,147,4.88,3700.12
+2025-03-23,Injection Molding,Porosity,Morning,2856,41,0.84,6018.74
+2025-02-03,Electronics,Porosity,Night,3859,421,7.46,1796.71
+2024-10-16,Packaging,Contamination,Night,4906,211,8.59,7668.41
+2024-07-30,Packaging,Missing Component,Morning,2746,279,18.71,13818.19
+2024-02-27,Electronics,Scratch,Afternoon,2129,285,5.48,17957.22
+2024-02-16,Electronics,Label Misprint,Afternoon,254,364,16.77,6460.42
+2024-12-13,Assembly A,Contamination,Night,2110,227,3.63,4509.37
+2025-06-06,Packaging,Scratch,Afternoon,1912,177,19.82,11863.83
+2024-06-04,Assembly A,Solder Bridge,Morning,4727,303,11.49,4528.21
+2024-10-18,Injection Molding,Scratch,Night,3059,390,24.65,5821.43
+2024-02-27,Injection Molding,Contamination,Night,3549,310,24.85,14450.13
+2025-03-28,Machining,Contamination,Afternoon,3198,297,24.09,9684.31
+2024-10-18,Assembly A,Contamination,Afternoon,722,18,9.78,18441.78
+2024-08-24,Packaging,Solder Bridge,Morning,3976,429,8.22,884.77
+2025-05-16,Injection Molding,Dimensional Variance,Morning,4511,340,23.83,16712.02
+2024-06-02,Assembly A,Contamination,Afternoon,1418,166,6.99,16245.71
+2024-11-04,Assembly B,Dimensional Variance,Morning,3446,52,20.29,7112.18
+2024-04-03,Assembly B,Porosity,Night,623,317,19.91,1265.71
+2024-06-29,Electronics,Contamination,Night,3237,235,10.76,11541.64
+2024-11-30,Injection Molding,Scratch,Morning,3048,217,3.93,17367.07
+2025-02-18,Packaging,Missing Component,Night,4737,23,12.44,3428.55
+2024-11-10,Electronics,Scratch,Morning,4933,321,15.92,2444.62
+2025-02-18,Assembly A,Contamination,Afternoon,1415,4,9.88,14325.24
+2024-04-06,Assembly A,Label Misprint,Night,3130,422,19.9,11328.08
+2024-02-05,Injection Molding,Porosity,Morning,899,224,20.19,17069.19
+2025-05-04,Assembly A,Dimensional Variance,Afternoon,2137,247,18.0,5803.2
+2025-05-17,Assembly B,Missing Component,Morning,2652,150,8.41,17886.27
+2025-01-26,Assembly B,Porosity,Afternoon,1531,15,2.56,6837.73
+2024-12-16,Packaging,Contamination,Night,4659,135,10.15,10477.58
+2024-12-20,Electronics,Missing Component,Morning,3672,90,13.21,7391.21
+2025-03-12,Assembly B,Missing Component,Night,2555,265,1.17,4891.27
+2024-07-18,Assembly A,Missing Component,Morning,525,64,1.81,3338.62
+2024-09-04,Assembly B,Scratch,Morning,3060,42,17.81,1833.45
+2024-09-16,Injection Molding,Dimensional Variance,Afternoon,1332,291,13.23,9272.82
+2024-07-28,Assembly B,Contamination,Afternoon,4223,69,8.2,12738.15
+2025-02-13,Packaging,Missing Component,Night,2156,342,10.99,7088.15
+2025-03-22,Assembly B,Dimensional Variance,Night,4615,321,11.91,16160.86
+2024-11-28,Packaging,Contamination,Night,380,204,14.15,14790.82
+2024-03-31,Electronics,Label Misprint,Afternoon,2082,383,11.66,15171.65
+2024-04-20,Packaging,Missing Component,Morning,1898,391,10.16,13226.55
+2024-03-25,Packaging,Dimensional Variance,Morning,1172,242,11.14,17080.64
+2024-07-08,Packaging,Dimensional Variance,Afternoon,4430,427,8.49,16043.61
+2025-03-18,Electronics,Contamination,Night,3684,334,10.16,7441.73
+2024-12-15,Injection Molding,Dimensional Variance,Night,2487,240,0.74,7934.81
+2024-02-20,Machining,Porosity,Night,4325,301,16.73,11415.38
+2025-02-11,Assembly B,Missing Component,Night,2576,197,4.86,12882.11
+2024-08-13,Assembly B,Label Misprint,Night,4726,156,13.91,9476.89
+2024-08-10,Packaging,Porosity,Morning,739,332,23.77,5751.33
+2024-08-21,Injection Molding,Porosity,Afternoon,3377,306,18.49,7951.13
+2024-02-28,Injection Molding,Contamination,Morning,3183,27,20.46,652.69
+2024-03-15,Injection Molding,Label Misprint,Afternoon,247,396,10.68,6587.88
+2024-04-04,Packaging,Missing Component,Night,506,181,14.13,2597.24
+2024-06-16,Electronics,Contamination,Morning,1059,357,24.9,6038.9
+2024-03-27,Assembly A,Dimensional Variance,Morning,2361,302,2.65,15675.61
+2024-08-30,Machining,Dimensional Variance,Night,3447,71,24.02,10797.48
+2024-10-31,Assembly A,Porosity,Afternoon,4240,279,17.16,2716.47
+2024-01-16,Electronics,Dimensional Variance,Night,3138,243,5.89,4138.94
+2025-02-11,Assembly A,Label Misprint,Morning,2026,345,8.02,6358.41
+2024-04-20,Assembly A,Contamination,Afternoon,2266,121,20.62,16245.69
+2024-05-30,Assembly A,Dimensional Variance,Night,232,222,15.68,11699.14
+2024-06-02,Injection Molding,Contamination,Night,2362,134,18.48,433.85
+2024-07-22,Injection Molding,Label Misprint,Afternoon,3175,279,10.81,5786.89
+2024-02-21,Electronics,Solder Bridge,Morning,1991,306,19.75,10121.09
+2024-10-23,Packaging,Porosity,Morning,499,107,19.12,13346.68
+2024-10-14,Injection Molding,Contamination,Night,529,384,22.57,15182.15
+2024-04-20,Assembly A,Solder Bridge,Morning,2660,416,1.27,8907.32
+2024-10-21,Injection Molding,Missing Component,Morning,4399,379,12.58,7064.48
+2024-09-09,Injection Molding,Contamination,Afternoon,2029,421,8.92,10241.59
+2024-06-26,Assembly B,Solder Bridge,Morning,4273,392,14.29,4203.82
+2024-09-22,Injection Molding,Missing Component,Morning,3696,144,23.62,10946.13

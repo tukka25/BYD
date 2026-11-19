@@ -1,0 +1,241 @@
+sales_order_date,sales_plan_tier,sales_billing_region,sales_payment_method,sales_seat_count,sales_discount_pct,sales_total_amount
+2025-01-05,Growth,Europe,Credit Card,1630,18.83,26307.27
+2024-04-28,Growth,Asia Pacific,Invoice,997,25.11,2876.17
+2024-07-15,Business,Latin America,PayPal,1554,17.21,43137.63
+2024-05-20,Growth,Asia Pacific,ACH,1393,37.29,9322.36
+2025-06-11,Enterprise,North America,ACH,1691,22.03,17548.15
+2024-01-27,Business,Latin America,Wire Transfer,760,11.05,9225.79
+2024-02-03,Business,Latin America,PayPal,1239,29.4,7030.44
+2024-10-17,Business,Latin America,Credit Card,2128,3.24,5917.07
+2025-02-27,Starter,Middle East and Africa,ACH,303,33.31,36016.03
+2024-10-19,Business,Asia Pacific,Invoice,711,34.43,41293.11
+2025-06-11,Free Trial,North America,Wire Transfer,377,18.64,33478.5
+2025-03-02,Growth,Europe,Wire Transfer,351,34.65,1364.28
+2025-05-21,Free Trial,North America,ACH,1962,31.1,5355.69
+2025-05-07,Enterprise,Europe,ACH,258,25.08,41542.87
+2024-07-06,Starter,North America,ACH,1563,39.41,34304.15
+2024-07-20,Free Trial,Europe,PayPal,977,1.3,29234.14
+2024-10-05,Starter,Asia Pacific,ACH,2419,32.68,39696.62
+2024-06-24,Starter,Asia Pacific,PayPal,342,35.91,11072.04
+2024-05-02,Business,Middle East and Africa,Credit Card,2389,0.65,10763.88
+2024-12-20,Growth,Middle East and Africa,Credit Card,1345,24.83,4474.17
+2024-03-12,Business,Latin America,ACH,2108,7.72,20686.75
+2025-04-29,Free Trial,Asia Pacific,Invoice,1524,9.74,9577.31
+2025-03-25,Business,Europe,PayPal,1896,26.14,33104.85
+2024-12-17,Free Trial,Asia Pacific,PayPal,1409,12.69,48570.54
+2024-06-09,Growth,Asia Pacific,PayPal,1751,7.84,34640.49
+2025-02-27,Starter,Europe,ACH,1731,21.47,12875.42
+2024-08-10,Starter,Latin America,PayPal,126,0.8,3317.34
+2025-04-17,Starter,Asia Pacific,Credit Card,1976,15.15,21638.01
+2024-09-12,Enterprise,Europe,Wire Transfer,1666,7.14,22756.29
+2024-04-13,Starter,Asia Pacific,ACH,1665,15.61,21458.88
+2024-11-12,Enterprise,Asia Pacific,ACH,1937,20.26,26971.61
+2024-11-25,Enterprise,Asia Pacific,ACH,1782,5.31,42373.2
+2025-06-23,Growth,Latin America,Invoice,228,36.15,47616.12
+2025-05-25,Free Trial,Asia Pacific,Credit Card,1672,31.85,30172.75
+2024-10-01,Business,Middle East and Africa,ACH,193,19.68,33133.25
+2025-03-18,Enterprise,North America,Credit Card,744,12.86,9069.53
+2024-12-21,Starter,Middle East and Africa,PayPal,992,22.73,9780.92
+2024-05-01,Free Trial,Latin America,Invoice,2202,27.18,13267.04
+2025-01-04,Business,Middle East and Africa,ACH,1187,38.08,18520.11
+2024-10-21,Growth,Latin America,Invoice,177,8.15,8417.22
+2024-02-10,Starter,Middle East and Africa,Credit Card,1785,34.86,7465.74
+2025-04-15,Enterprise,Middle East and Africa,Invoice,2136,3.15,11763.34
+2025-06-13,Enterprise,Asia Pacific,Wire Transfer,2054,21.76,7587.82
+2025-03-08,Starter,Europe,Credit Card,737,21.29,35356.74
+2024-11-22,Starter,Europe,Credit Card,858,0.88,18641.32
+2024-01-19,Starter,Latin America,Credit Card,1723,12.96,6912.46
+2024-09-11,Enterprise,Europe,Invoice,2490,15.09,32412.72
+2024-02-20,Growth,Latin America,Credit Card,783,23.65,31718.92
+2025-01-29,Business,Europe,ACH,401,33.79,6323.7
+2025-02-15,Starter,Latin America,Invoice,157,36.36,22836.61
+2024-03-28,Business,Europe,PayPal,498,16.12,42947.66
+2025-02-19,Growth,Asia Pacific,PayPal,964,33.31,34714.66
+2024-02-28,Starter,North America,Wire Transfer,959,9.22,46081.79
+2024-03-05,Growth,Latin America,Invoice,1601,27.73,12222.26
+2024-09-18,Starter,Asia Pacific,Wire Transfer,45,30.1,43032.66
+2024-03-01,Enterprise,North America,Invoice,1233,6.0,22155.08
+2025-01-08,Enterprise,Asia Pacific,Wire Transfer,1398,22.87,16286.24
+2024-09-20,Business,Latin America,Wire Transfer,459,12.35,10868.03
+2024-05-23,Business,Asia Pacific,Invoice,1424,25.92,20261.36
+2024-07-22,Enterprise,Asia Pacific,Invoice,685,3.7,25192.07
+2024-09-29,Starter,Latin America,PayPal,1877,39.34,7117.23
+2024-01-27,Starter,North America,Invoice,443,8.87,48223.32
+2025-03-25,Free Trial,North America,Invoice,304,4.39,30057.18
+2024-10-27,Growth,Latin America,Wire Transfer,1400,28.41,6421.27
+2024-11-07,Business,Latin America,Credit Card,406,35.21,35319.57
+2025-03-20,Free Trial,Europe,Invoice,1127,6.66,46694.14
+2024-05-04,Enterprise,Europe,Credit Card,2402,6.21,22659.62
+2024-02-21,Starter,Middle East and Africa,Credit Card,1081,13.33,45751.1
+2025-05-25,Free Trial,Europe,Credit Card,221,33.59,15841.38
+2024-08-23,Free Trial,Asia Pacific,Credit Card,1069,17.28,2633.18
+2024-02-21,Growth,Asia Pacific,PayPal,2441,32.6,18016.86
+2024-05-30,Business,Middle East and Africa,Credit Card,1029,28.65,25854.35
+2024-07-29,Business,Middle East and Africa,Credit Card,970,10.15,9507.08
+2024-08-10,Starter,Latin America,ACH,1433,7.39,33311.51
+2024-04-01,Free Trial,Asia Pacific,Wire Transfer,919,19.66,47695.03
+2024-04-05,Business,Asia Pacific,Invoice,2479,27.41,43510.92
+2024-04-04,Enterprise,North America,Wire Transfer,523,6.13,38248.47
+2024-07-13,Free Trial,Latin America,Credit Card,812,26.77,30606.38
+2024-11-14,Enterprise,Middle East and Africa,PayPal,1451,5.65,23390.08
+2024-03-20,Enterprise,Middle East and Africa,Credit Card,1565,39.08,32748.82
+2024-11-11,Enterprise,Europe,ACH,2148,21.74,11630.81
+2025-01-15,Business,Europe,PayPal,952,18.03,22501.08
+2024-12-12,Starter,Asia Pacific,ACH,936,1.58,34724.91
+2024-12-07,Starter,Asia Pacific,ACH,151,30.21,22145.91
+2025-06-11,Business,Middle East and Africa,Invoice,914,16.59,31628.4
+2024-07-21,Enterprise,Latin America,PayPal,1107,30.24,44714.71
+2024-07-09,Starter,Middle East and Africa,PayPal,2205,7.44,35352.64
+2024-08-19,Enterprise,Latin America,ACH,608,6.72,26949.41
+2024-07-24,Enterprise,Asia Pacific,ACH,1789,18.8,34139.25
+2024-01-26,Business,Asia Pacific,PayPal,1488,39.32,48664.87
+2025-02-08,Starter,Asia Pacific,Invoice,1662,37.13,39953.61
+2024-08-06,Starter,North America,PayPal,1590,13.62,9757.21
+2024-09-26,Growth,Middle East and Africa,Wire Transfer,2209,37.33,11551.46
+2025-03-27,Business,Europe,ACH,1556,7.1,45498.23
+2024-09-09,Business,Middle East and Africa,PayPal,2155,33.11,19520.82
+2024-08-31,Business,Latin America,PayPal,523,5.26,34488.3
+2024-02-14,Enterprise,Latin America,PayPal,2259,16.31,13323.84
+2025-04-02,Business,Asia Pacific,Credit Card,895,34.05,14330.08
+2024-09-12,Enterprise,North America,ACH,2364,20.77,27351.92
+2025-01-06,Business,Latin America,Invoice,138,16.67,5419.11
+2024-07-11,Free Trial,Middle East and Africa,Invoice,1953,1.19,4075.07
+2024-02-07,Growth,Middle East and Africa,Wire Transfer,2086,14.28,12330.69
+2024-10-20,Business,Europe,Wire Transfer,1716,10.39,20936.27
+2024-11-07,Business,Asia Pacific,PayPal,812,9.54,39206.21
+2024-05-12,Free Trial,Middle East and Africa,Invoice,2062,39.85,6307.41
+2024-01-24,Business,Europe,PayPal,606,35.63,30327.78
+2024-07-15,Growth,Asia Pacific,Wire Transfer,2145,0.67,14196.11
+2024-04-01,Business,Latin America,Credit Card,2465,7.25,36046.19
+2024-03-15,Business,Middle East and Africa,Wire Transfer,359,34.41,39908.32
+2024-01-23,Starter,Asia Pacific,Wire Transfer,1454,35.66,46985.44
+2024-12-22,Starter,Middle East and Africa,Credit Card,1614,32.77,47834.9
+2024-12-12,Business,Asia Pacific,Wire Transfer,2336,6.42,31093.31
+2024-03-13,Free Trial,Europe,Credit Card,1981,6.96,39451.25
+2024-10-03,Enterprise,Europe,PayPal,2150,27.5,21938.92
+2024-09-03,Business,North America,PayPal,1305,16.59,21552.68
+2025-06-18,Enterprise,Middle East and Africa,Wire Transfer,2493,8.27,2096.88
+2024-12-24,Business,Europe,Invoice,2185,19.08,43825.23
+2025-06-15,Free Trial,Europe,Credit Card,973,16.97,34002.48
+2024-08-13,Starter,Europe,Invoice,1964,13.4,41792.16
+2024-01-15,Business,North America,Credit Card,1508,19.5,537.22
+2024-03-31,Starter,Middle East and Africa,PayPal,1201,23.79,36505.71
+2024-08-24,Starter,North America,Wire Transfer,1778,13.94,3381.51
+2024-07-25,Growth,Latin America,ACH,944,13.46,8459.67
+2024-03-08,Business,Middle East and Africa,Credit Card,1182,16.61,42391.75
+2024-12-11,Starter,Asia Pacific,Invoice,2287,0.16,21308.68
+2025-06-11,Free Trial,North America,Credit Card,1884,33.47,21901.11
+2024-01-23,Free Trial,Middle East and Africa,Invoice,713,5.78,13000.41
+2025-03-25,Free Trial,Middle East and Africa,ACH,413,27.4,49026.65
+2024-01-27,Growth,Latin America,Invoice,2145,26.01,18253.37
+2024-05-08,Starter,North America,Credit Card,722,8.34,48760.2
+2024-01-23,Enterprise,Europe,PayPal,270,26.54,28751.2
+2024-11-16,Business,Asia Pacific,Credit Card,416,16.55,38934.91
+2024-11-07,Growth,Latin America,ACH,1120,38.05,48531.59
+2024-05-26,Growth,Latin America,Invoice,4,14.27,23195.27
+2025-05-01,Starter,Asia Pacific,Invoice,1864,31.85,45451.31
+2024-03-27,Growth,Latin America,Credit Card,1628,13.49,18712.87
+2024-01-30,Free Trial,Asia Pacific,PayPal,714,11.06,4484.36
+2024-03-10,Business,Latin America,Invoice,2148,26.76,48771.41
+2024-07-10,Enterprise,Asia Pacific,Wire Transfer,1632,28.22,30031.47
+2024-07-10,Free Trial,Middle East and Africa,Wire Transfer,1608,35.55,20854.44
+2024-08-06,Growth,North America,Invoice,1506,7.58,26790.7
+2025-05-04,Free Trial,Middle East and Africa,PayPal,958,6.26,24527.22
+2024-05-23,Growth,Asia Pacific,ACH,469,21.77,41592.75
+2025-03-30,Enterprise,Middle East and Africa,ACH,122,2.74,30782.27
+2025-01-21,Business,Asia Pacific,Credit Card,1290,36.58,44534.94
+2025-04-13,Enterprise,Asia Pacific,Wire Transfer,1745,17.17,18803.27
+2024-11-25,Free Trial,Asia Pacific,Invoice,2142,32.69,29734.4
+2025-06-12,Starter,Middle East and Africa,ACH,1992,29.05,44813.36
+2025-04-06,Enterprise,Middle East and Africa,PayPal,1334,9.47,9513.77
+2025-06-10,Enterprise,Middle East and Africa,Invoice,1694,0.92,36793.03
+2025-04-17,Growth,Latin America,Invoice,843,0.36,14522.15
+2025-04-17,Starter,Asia Pacific,Credit Card,2328,0.04,34228.04
+2024-12-24,Business,Europe,PayPal,1942,18.18,18848.64
+2025-01-30,Enterprise,Latin America,Wire Transfer,1623,18.49,8415.17
+2024-04-14,Enterprise,Asia Pacific,ACH,1293,21.22,37416.55
+2024-09-19,Starter,Latin America,Wire Transfer,279,32.09,43587.68
+2024-07-08,Enterprise,Latin America,PayPal,1101,29.94,4591.05
+2024-01-07,Business,Middle East and Africa,Invoice,813,34.14,17261.23
+2024-09-02,Starter,Latin America,PayPal,643,10.44,29709.15
+2025-01-04,Starter,Latin America,Invoice,272,39.67,30088.25
+2024-05-07,Growth,Europe,PayPal,1102,33.12,48777.7
+2025-05-03,Business,North America,ACH,160,36.37,11404.24
+2024-07-01,Free Trial,North America,ACH,1856,24.72,550.57
+2024-10-06,Starter,Europe,ACH,1821,1.78,12032.53
+2024-10-21,Business,Asia Pacific,Credit Card,768,39.71,43916.36
+2024-10-11,Free Trial,Europe,Wire Transfer,1507,36.0,34563.95
+2024-10-28,Enterprise,Middle East and Africa,Invoice,1104,8.76,31646.66
+2024-04-07,Growth,Latin America,PayPal,985,12.66,48696.37
+2024-01-25,Free Trial,Asia Pacific,Invoice,1517,18.69,7487.14
+2025-02-09,Free Trial,Latin America,Invoice,2105,18.23,44471.17
+2025-04-10,Free Trial,Europe,PayPal,2289,4.29,34217.81
+2024-12-08,Business,North America,PayPal,1328,39.75,35053.29
+2025-02-18,Starter,Asia Pacific,Wire Transfer,1860,27.23,23958.31
+2025-01-17,Starter,Europe,PayPal,2053,30.96,26835.55
+2024-12-19,Business,North America,Wire Transfer,1517,34.97,22194.94
+2024-03-28,Starter,North America,ACH,982,14.95,47465.01
+2025-02-16,Starter,Europe,Invoice,430,15.31,32092.06
+2024-06-25,Business,North America,Credit Card,1261,26.68,35903.06
+2024-10-09,Business,Latin America,Wire Transfer,2050,10.17,1373.15
+2024-11-15,Starter,Middle East and Africa,Credit Card,2152,33.8,24054.32
+2025-04-04,Growth,Asia Pacific,Invoice,2163,8.29,28770.46
+2025-04-21,Starter,Europe,Wire Transfer,1507,28.35,29548.5
+2024-07-04,Growth,North America,PayPal,1075,12.1,35810.65
+2024-11-29,Starter,North America,ACH,969,19.37,1976.32
+2024-07-28,Business,Middle East and Africa,ACH,1722,9.66,46862.29
+2024-08-20,Starter,Latin America,Wire Transfer,1467,23.56,24196.55
+2025-05-11,Free Trial,Asia Pacific,Credit Card,472,39.3,34608.67
+2025-04-04,Enterprise,Latin America,Credit Card,2227,31.11,36954.67
+2025-06-14,Enterprise,Asia Pacific,Wire Transfer,1717,31.64,19853.65
+2024-12-11,Starter,North America,Invoice,1823,24.12,31722.73
+2024-03-26,Starter,Middle East and Africa,ACH,1820,10.64,19310.94
+2024-04-11,Business,Middle East and Africa,ACH,2050,31.76,31808.7
+2024-09-05,Growth,Asia Pacific,ACH,2053,24.55,20478.76
+2025-04-26,Growth,Asia Pacific,Credit Card,1581,0.09,39891.47
+2024-01-19,Enterprise,Latin America,Invoice,1445,23.78,24115.09
+2024-08-19,Free Trial,Latin America,PayPal,1239,13.79,16275.43
+2024-05-25,Enterprise,North America,Credit Card,1763,1.5,40227.59
+2024-09-03,Business,Europe,Invoice,2039,8.68,28100.44
+2024-12-06,Free Trial,Europe,ACH,515,11.72,9124.05
+2025-04-26,Starter,Latin America,PayPal,1755,3.37,16735.05
+2024-11-13,Starter,Asia Pacific,ACH,673,14.67,9637.76
+2024-01-11,Business,Europe,Invoice,1520,16.37,46000.68
+2024-11-16,Business,North America,PayPal,1810,24.37,1663.12
+2025-01-01,Starter,Europe,ACH,2029,34.99,15867.52
+2024-06-28,Enterprise,Europe,ACH,725,11.16,32041.08
+2024-09-15,Growth,Latin America,Invoice,1199,14.29,3564.23
+2025-01-08,Free Trial,Asia Pacific,PayPal,840,36.08,32825.51
+2024-04-06,Business,Middle East and Africa,Wire Transfer,338,15.44,20175.57
+2024-03-05,Business,Middle East and Africa,ACH,657,0.88,6012.43
+2024-08-22,Starter,Middle East and Africa,Wire Transfer,2239,33.08,9044.25
+2024-08-26,Starter,Latin America,ACH,929,7.21,37622.99
+2024-02-02,Enterprise,Middle East and Africa,Wire Transfer,1677,30.93,911.63
+2024-10-04,Business,Latin America,PayPal,1603,21.71,11753.52
+2024-07-08,Growth,Asia Pacific,Invoice,2123,3.89,48626.35
+2025-02-24,Business,Middle East and Africa,Credit Card,1290,28.46,3527.74
+2025-05-20,Starter,North America,ACH,798,28.36,43460.88
+2024-05-26,Business,Europe,ACH,1570,12.49,40187.78
+2024-02-08,Starter,Middle East and Africa,ACH,989,32.14,2215.41
+2024-11-30,Free Trial,Asia Pacific,PayPal,2041,4.69,8938.7
+2025-01-07,Starter,North America,Invoice,79,31.67,3888.15
+2024-06-03,Starter,North America,PayPal,1990,29.33,20353.48
+2024-11-16,Growth,Asia Pacific,Credit Card,1941,2.54,1089.37
+2025-03-04,Starter,North America,Invoice,1069,1.94,47792.43
+2025-05-05,Growth,North America,Invoice,2391,20.88,19804.95
+2024-01-22,Starter,North America,PayPal,1483,30.84,38339.79
+2025-02-24,Free Trial,Middle East and Africa,ACH,1846,38.08,1298.91
+2024-04-18,Starter,Middle East and Africa,PayPal,845,30.35,29809.9
+2024-03-28,Business,Middle East and Africa,ACH,1795,35.52,22510.72
+2025-04-18,Growth,Latin America,ACH,1506,15.65,8960.72
+2024-11-24,Free Trial,North America,ACH,1243,8.22,10979.28
+2025-04-03,Business,North America,Invoice,529,9.65,20048.72
+2024-05-09,Free Trial,Europe,Credit Card,322,15.37,46067.68
+2024-01-12,Growth,Europe,Invoice,476,22.7,39129.37
+2024-10-24,Business,Middle East and Africa,Invoice,2347,3.05,25041.97
+2024-10-25,Starter,Europe,Wire Transfer,1505,19.54,9630.84
+2025-06-06,Business,Europe,ACH,2250,19.19,29842.15
+2024-10-05,Enterprise,Europe,ACH,9,7.91,30222.48
+2024-04-30,Starter,Asia Pacific,PayPal,44,15.37,13598.32
+2024-04-03,Business,Middle East and Africa,Invoice,1098,24.76,47052.87
+2024-08-10,Enterprise,Asia Pacific,PayPal,377,37.72,48486.03

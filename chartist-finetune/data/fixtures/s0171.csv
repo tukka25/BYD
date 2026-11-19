@@ -1,0 +1,241 @@
+Harvest Date,Crop Type,Soil Type,Irrigation Method,Yield Tonnes Per Hectare,Plot Area Hectares,Fertilizer Kilograms
+2024-08-17,Soybeans,Sandy Loam,Rainfed,2.77,103.69,58.16
+2024-12-29,Canola,Clay,Rainfed,9.07,104.32,174.94
+2025-05-08,Spring Barley,Clay,Furrow,13.18,83.39,442.94
+2024-11-23,Spring Barley,Clay,Sprinkler,8.21,35.14,152.34
+2024-01-02,Winter Wheat,Silt Loam,Rainfed,6.22,32.25,301.62
+2024-02-10,Corn,Loam,Center Pivot,12.59,34.26,336.5
+2024-08-05,Soybeans,Sandy Loam,Drip,11.97,17.45,141.4
+2024-03-13,Sunflower,Clay,Furrow,8.89,108.31,52.17
+2025-03-01,Winter Wheat,Loam,Drip,13.31,14.77,344.26
+2024-10-23,Canola,Silt Loam,Center Pivot,1.27,13.32,263.51
+2025-02-14,Winter Wheat,Clay Loam,Furrow,10.98,43.58,68.31
+2025-06-22,Canola,Clay,Sprinkler,7.69,103.92,12.3
+2024-06-22,Corn,Clay Loam,Sprinkler,6.25,56.77,184.85
+2024-05-18,Canola,Sandy Loam,Rainfed,12.01,31.22,387.18
+2024-04-03,Canola,Clay Loam,Rainfed,12.7,38.32,60.51
+2024-02-07,Corn,Clay Loam,Sprinkler,9.1,104.0,108.39
+2025-03-23,Canola,Loam,Furrow,3.52,78.01,362.41
+2024-07-10,Corn,Loam,Center Pivot,8.1,74.37,341.87
+2024-02-11,Winter Wheat,Loam,Rainfed,4.63,54.87,41.72
+2024-06-11,Canola,Silt Loam,Drip,7.72,68.17,304.89
+2025-04-17,Corn,Clay Loam,Rainfed,12.13,113.38,370.23
+2025-06-03,Spring Barley,Sandy Loam,Drip,1.85,18.31,414.01
+2024-04-27,Canola,Clay,Drip,8.7,31.98,77.12
+2025-05-12,Winter Wheat,Silt Loam,Drip,11.91,10.49,149.33
+2024-05-10,Soybeans,Silt Loam,Drip,7.27,15.48,193.21
+2024-03-29,Soybeans,Silt Loam,Sprinkler,2.35,53.31,330.51
+2025-04-05,Soybeans,Clay Loam,Rainfed,10.53,11.7,146.13
+2025-06-08,Spring Barley,Clay Loam,Furrow,8.13,39.27,10.29
+2024-05-23,Spring Barley,Silt Loam,Center Pivot,4.39,18.25,448.71
+2025-03-26,Winter Wheat,Loam,Sprinkler,12.07,71.53,309.82
+2024-04-12,Soybeans,Loam,Center Pivot,1.81,52.84,36.74
+2024-04-28,Soybeans,Silt Loam,Furrow,7.82,105.16,85.55
+2024-03-29,Canola,Silt Loam,Center Pivot,2.98,44.8,73.64
+2025-06-14,Corn,Silt Loam,Center Pivot,5.31,24.2,281.06
+2024-07-02,Canola,Sandy Loam,Drip,5.01,64.38,28.1
+2024-07-18,Soybeans,Silt Loam,Sprinkler,2.47,8.02,146.95
+2024-04-08,Soybeans,Loam,Furrow,5.93,60.18,57.39
+2025-05-29,Sunflower,Silt Loam,Furrow,1.98,105.9,44.29
+2025-04-11,Winter Wheat,Sandy Loam,Drip,3.84,24.07,166.32
+2024-07-01,Soybeans,Clay Loam,Furrow,5.76,55.82,295.33
+2024-04-18,Corn,Clay,Rainfed,11.82,81.97,16.33
+2024-03-06,Winter Wheat,Loam,Rainfed,11.48,3.08,243.06
+2024-01-23,Corn,Sandy Loam,Center Pivot,7.32,1.93,94.69
+2024-05-23,Spring Barley,Silt Loam,Drip,12.21,6.22,407.15
+2024-07-08,Soybeans,Clay,Drip,2.68,4.99,5.13
+2024-04-11,Canola,Silt Loam,Drip,4.27,37.41,132.51
+2024-02-24,Canola,Clay Loam,Sprinkler,12.04,67.79,445.06
+2025-03-25,Spring Barley,Sandy Loam,Sprinkler,3.76,91.27,159.52
+2024-11-21,Corn,Sandy Loam,Furrow,10.55,68.43,391.03
+2024-11-14,Spring Barley,Clay Loam,Rainfed,5.35,0.3,334.33
+2024-11-25,Sunflower,Loam,Furrow,1.62,103.8,366.63
+2024-04-16,Corn,Silt Loam,Drip,4.41,29.14,75.32
+2024-03-26,Spring Barley,Sandy Loam,Furrow,6.42,77.95,263.93
+2024-01-05,Sunflower,Clay Loam,Center Pivot,7.91,42.0,399.35
+2024-05-15,Corn,Clay,Center Pivot,5.56,115.16,306.67
+2025-05-24,Spring Barley,Sandy Loam,Sprinkler,13.97,93.19,242.46
+2024-11-07,Winter Wheat,Clay Loam,Sprinkler,4.96,78.44,248.91
+2025-02-18,Sunflower,Clay Loam,Furrow,13.19,113.61,122.96
+2025-04-16,Corn,Clay,Drip,0.87,90.71,441.3
+2025-02-14,Sunflower,Clay,Sprinkler,3.38,40.79,143.15
+2024-06-06,Soybeans,Sandy Loam,Rainfed,6.58,99.21,109.2
+2024-05-23,Canola,Silt Loam,Furrow,1.87,117.93,343.68
+2025-02-07,Spring Barley,Clay Loam,Sprinkler,8.63,107.53,55.28
+2025-02-06,Corn,Clay,Furrow,7.56,69.44,97.25
+2025-02-01,Winter Wheat,Silt Loam,Furrow,7.6,27.08,268.32
+2024-01-13,Winter Wheat,Clay Loam,Center Pivot,13.81,71.45,326.7
+2025-06-10,Canola,Clay,Center Pivot,6.0,88.51,432.14
+2024-03-03,Sunflower,Sandy Loam,Rainfed,6.66,83.98,199.82
+2024-05-09,Corn,Loam,Furrow,10.88,3.06,32.68
+2024-06-22,Winter Wheat,Clay,Sprinkler,12.47,35.31,166.03
+2024-10-23,Winter Wheat,Silt Loam,Sprinkler,5.76,99.86,1.27
+2025-06-10,Winter Wheat,Clay Loam,Furrow,1.38,87.41,422.67
+2024-04-17,Canola,Loam,Drip,13.08,32.43,180.68
+2024-09-01,Spring Barley,Silt Loam,Furrow,9.57,15.61,7.36
+2024-01-20,Corn,Sandy Loam,Furrow,11.24,42.22,283.78
+2024-08-28,Sunflower,Clay,Center Pivot,1.52,73.87,174.93
+2025-03-03,Canola,Clay Loam,Center Pivot,9.98,34.97,395.19
+2024-01-13,Corn,Clay Loam,Center Pivot,8.41,27.45,28.0
+2025-05-26,Corn,Clay,Sprinkler,2.63,89.96,357.39
+2024-03-09,Spring Barley,Sandy Loam,Rainfed,6.37,39.98,34.44
+2024-06-15,Canola,Loam,Rainfed,3.31,76.2,307.5
+2024-01-22,Winter Wheat,Sandy Loam,Furrow,10.9,8.52,427.48
+2025-04-06,Winter Wheat,Clay Loam,Drip,9.52,31.79,154.43
+2024-01-11,Canola,Sandy Loam,Furrow,2.65,68.33,446.64
+2024-10-25,Winter Wheat,Sandy Loam,Furrow,7.98,102.93,89.93
+2025-05-10,Winter Wheat,Silt Loam,Sprinkler,10.39,113.58,29.09
+2024-05-04,Spring Barley,Clay,Rainfed,6.93,21.96,437.28
+2024-05-17,Winter Wheat,Silt Loam,Rainfed,9.09,40.18,285.79
+2024-02-04,Sunflower,Clay Loam,Furrow,7.09,39.84,385.2
+2025-02-01,Spring Barley,Clay Loam,Furrow,9.15,75.81,207.39
+2024-10-01,Canola,Clay Loam,Rainfed,2.16,19.43,171.05
+2024-12-28,Winter Wheat,Clay Loam,Rainfed,3.19,68.53,372.91
+2024-05-28,Sunflower,Clay,Drip,11.04,91.32,346.54
+2025-03-04,Canola,Loam,Center Pivot,9.6,74.22,408.9
+2024-12-24,Soybeans,Loam,Sprinkler,5.67,78.17,259.74
+2024-08-01,Canola,Sandy Loam,Center Pivot,7.3,73.17,26.79
+2025-05-15,Sunflower,Clay Loam,Rainfed,6.22,87.34,435.43
+2025-01-28,Sunflower,Clay,Center Pivot,11.71,50.02,176.61
+2025-02-03,Spring Barley,Silt Loam,Drip,6.98,71.11,332.62
+2025-04-20,Sunflower,Loam,Furrow,11.34,10.19,129.68
+2024-02-21,Sunflower,Sandy Loam,Sprinkler,8.33,4.26,318.68
+2025-02-12,Soybeans,Clay,Furrow,6.13,94.8,224.63
+2024-01-30,Corn,Sandy Loam,Center Pivot,9.58,95.13,249.44
+2025-06-08,Spring Barley,Silt Loam,Sprinkler,9.01,99.01,334.31
+2024-10-22,Sunflower,Sandy Loam,Drip,12.76,23.01,182.47
+2024-11-18,Soybeans,Sandy Loam,Drip,3.75,14.24,32.97
+2024-03-05,Winter Wheat,Sandy Loam,Furrow,7.01,24.97,180.29
+2025-03-17,Canola,Silt Loam,Rainfed,12.38,111.71,97.31
+2024-02-10,Soybeans,Clay,Drip,11.8,60.8,115.58
+2025-03-06,Corn,Sandy Loam,Drip,9.14,54.28,209.38
+2025-04-05,Soybeans,Clay Loam,Sprinkler,4.83,62.79,219.87
+2024-11-05,Soybeans,Loam,Furrow,9.25,74.17,228.7
+2025-05-01,Soybeans,Clay,Rainfed,8.0,46.88,283.02
+2025-04-22,Canola,Silt Loam,Sprinkler,11.81,76.22,231.32
+2024-10-26,Soybeans,Clay Loam,Furrow,4.62,48.3,422.16
+2024-12-12,Spring Barley,Clay,Center Pivot,1.74,32.63,109.48
+2024-05-21,Canola,Silt Loam,Furrow,5.61,72.0,163.57
+2025-02-06,Corn,Loam,Drip,5.71,1.24,105.93
+2024-02-18,Spring Barley,Clay,Drip,3.62,8.34,362.51
+2025-04-11,Spring Barley,Clay,Sprinkler,4.91,7.16,360.09
+2025-05-26,Soybeans,Sandy Loam,Rainfed,7.68,89.54,163.31
+2024-08-28,Canola,Clay,Center Pivot,8.66,101.49,86.23
+2024-10-06,Canola,Loam,Furrow,1.48,53.55,167.61
+2025-01-03,Corn,Sandy Loam,Sprinkler,12.44,94.98,246.94
+2025-05-19,Corn,Silt Loam,Center Pivot,11.98,82.39,65.75
+2024-09-27,Winter Wheat,Loam,Center Pivot,3.92,5.58,409.2
+2024-11-16,Sunflower,Silt Loam,Drip,6.36,112.92,420.31
+2024-04-06,Corn,Loam,Center Pivot,3.17,68.88,129.98
+2024-08-20,Canola,Clay,Center Pivot,11.07,28.85,374.11
+2024-03-02,Soybeans,Clay,Rainfed,5.1,89.86,169.27
+2024-01-08,Soybeans,Clay,Drip,4.31,9.11,217.45
+2024-05-23,Winter Wheat,Loam,Center Pivot,2.07,106.25,182.57
+2024-12-27,Sunflower,Loam,Drip,0.5,75.7,188.36
+2024-11-03,Canola,Silt Loam,Sprinkler,4.09,71.34,273.23
+2024-09-13,Sunflower,Silt Loam,Furrow,3.87,80.61,417.12
+2024-10-25,Soybeans,Loam,Center Pivot,12.03,82.66,55.74
+2024-02-13,Canola,Clay,Drip,7.4,75.33,142.05
+2025-05-19,Winter Wheat,Sandy Loam,Sprinkler,4.31,104.48,135.76
+2024-07-19,Spring Barley,Clay,Drip,13.19,117.83,71.04
+2025-04-03,Sunflower,Loam,Rainfed,8.79,77.99,346.46
+2024-12-28,Soybeans,Loam,Furrow,1.25,106.53,332.39
+2024-06-06,Corn,Clay,Furrow,11.25,83.29,219.55
+2025-01-15,Soybeans,Sandy Loam,Rainfed,13.48,34.94,218.05
+2024-01-09,Soybeans,Clay,Center Pivot,2.31,9.45,35.48
+2025-04-08,Soybeans,Loam,Sprinkler,12.23,24.99,361.16
+2024-04-17,Spring Barley,Silt Loam,Rainfed,10.33,113.82,322.65
+2025-01-25,Corn,Silt Loam,Drip,5.38,43.01,341.25
+2024-07-08,Soybeans,Silt Loam,Center Pivot,13.75,22.42,200.51
+2024-07-06,Sunflower,Clay,Center Pivot,11.8,57.67,307.91
+2024-11-30,Winter Wheat,Clay,Sprinkler,6.56,108.98,412.46
+2024-05-05,Soybeans,Clay Loam,Drip,11.89,66.11,190.19
+2024-01-18,Soybeans,Sandy Loam,Drip,8.35,95.59,363.43
+2024-01-20,Soybeans,Clay,Rainfed,12.26,109.82,238.18
+2025-02-19,Soybeans,Clay Loam,Furrow,1.84,51.32,375.26
+2024-01-25,Canola,Sandy Loam,Center Pivot,9.52,39.38,94.57
+2025-01-22,Canola,Silt Loam,Rainfed,2.29,60.94,189.95
+2024-07-13,Winter Wheat,Clay Loam,Rainfed,5.61,78.42,276.86
+2025-05-02,Soybeans,Silt Loam,Sprinkler,9.48,119.87,151.1
+2025-02-20,Soybeans,Loam,Sprinkler,1.93,18.62,308.95
+2025-04-11,Soybeans,Sandy Loam,Center Pivot,7.66,27.46,273.8
+2024-05-13,Soybeans,Clay Loam,Rainfed,1.45,70.96,118.81
+2024-12-01,Soybeans,Clay Loam,Rainfed,12.05,12.98,315.81
+2024-08-28,Winter Wheat,Sandy Loam,Center Pivot,6.03,65.18,8.1
+2025-04-09,Canola,Silt Loam,Center Pivot,8.59,29.74,348.8
+2024-02-18,Winter Wheat,Loam,Center Pivot,12.83,22.25,6.01
+2024-11-02,Canola,Loam,Center Pivot,10.78,26.23,1.66
+2024-07-20,Soybeans,Sandy Loam,Rainfed,6.32,40.56,357.92
+2024-06-26,Corn,Clay,Furrow,13.04,35.53,379.68
+2024-09-10,Canola,Clay,Rainfed,8.86,8.19,86.15
+2025-01-04,Sunflower,Silt Loam,Center Pivot,8.72,106.13,163.78
+2024-08-02,Winter Wheat,Sandy Loam,Furrow,13.61,51.71,70.44
+2025-01-27,Soybeans,Clay Loam,Furrow,10.58,57.02,335.43
+2024-11-14,Sunflower,Silt Loam,Center Pivot,13.7,15.36,259.09
+2024-10-28,Canola,Sandy Loam,Sprinkler,5.36,24.22,343.1
+2024-11-16,Winter Wheat,Silt Loam,Center Pivot,4.33,112.89,304.23
+2024-07-13,Corn,Sandy Loam,Sprinkler,2.17,65.25,248.61
+2025-04-20,Soybeans,Loam,Center Pivot,6.38,39.33,194.08
+2024-05-29,Soybeans,Clay Loam,Drip,1.75,14.45,102.4
+2024-05-14,Soybeans,Silt Loam,Rainfed,10.68,117.94,273.02
+2024-04-07,Corn,Silt Loam,Center Pivot,3.04,42.78,420.28
+2024-01-10,Sunflower,Sandy Loam,Rainfed,11.15,92.51,420.15
+2025-02-03,Corn,Loam,Sprinkler,7.0,69.99,46.33
+2025-05-26,Canola,Loam,Rainfed,12.0,107.72,22.28
+2025-01-28,Soybeans,Clay,Center Pivot,5.13,86.44,349.76
+2024-02-02,Soybeans,Loam,Center Pivot,6.52,5.63,379.94
+2024-04-29,Winter Wheat,Clay,Center Pivot,2.19,62.76,193.16
+2024-09-11,Sunflower,Silt Loam,Rainfed,12.79,61.53,211.74
+2025-05-25,Spring Barley,Clay,Drip,9.77,113.78,320.52
+2025-06-12,Winter Wheat,Silt Loam,Drip,11.69,91.67,68.53
+2024-10-27,Corn,Sandy Loam,Drip,11.4,87.18,395.31
+2024-10-01,Canola,Clay Loam,Furrow,10.83,110.87,307.86
+2024-12-31,Sunflower,Loam,Drip,3.89,51.92,335.64
+2025-02-11,Soybeans,Clay,Sprinkler,13.02,111.99,38.05
+2024-04-30,Spring Barley,Sandy Loam,Furrow,11.26,30.17,295.04
+2025-06-21,Spring Barley,Silt Loam,Rainfed,8.59,23.27,342.89
+2024-04-13,Soybeans,Clay,Furrow,12.47,60.25,177.56
+2024-08-25,Sunflower,Clay,Sprinkler,8.54,32.11,66.03
+2025-04-06,Soybeans,Silt Loam,Center Pivot,9.03,0.79,295.23
+2025-01-19,Winter Wheat,Loam,Rainfed,13.65,62.15,155.34
+2024-03-26,Soybeans,Clay,Rainfed,7.25,72.81,46.13
+2024-07-11,Spring Barley,Clay,Furrow,0.77,38.51,56.9
+2024-03-30,Winter Wheat,Clay,Center Pivot,11.62,56.7,331.99
+2024-04-08,Winter Wheat,Sandy Loam,Center Pivot,13.46,109.77,212.49
+2025-06-11,Spring Barley,Silt Loam,Sprinkler,8.64,58.86,371.44
+2024-08-24,Winter Wheat,Silt Loam,Furrow,12.01,84.72,292.81
+2024-10-13,Spring Barley,Sandy Loam,Rainfed,2.57,5.3,340.35
+2025-03-25,Canola,Clay,Center Pivot,6.45,106.35,201.37
+2024-01-09,Sunflower,Loam,Sprinkler,13.98,37.95,381.08
+2025-06-14,Canola,Sandy Loam,Sprinkler,11.47,33.31,445.27
+2025-03-10,Sunflower,Silt Loam,Sprinkler,10.73,73.28,198.03
+2024-12-07,Winter Wheat,Clay,Rainfed,3.34,81.52,326.02
+2025-05-18,Canola,Sandy Loam,Rainfed,4.22,67.85,348.93
+2024-08-27,Spring Barley,Silt Loam,Sprinkler,13.73,55.64,65.85
+2025-01-09,Soybeans,Silt Loam,Drip,3.77,1.56,119.74
+2025-06-13,Sunflower,Silt Loam,Center Pivot,1.64,94.39,388.16
+2025-03-16,Soybeans,Loam,Center Pivot,6.0,89.19,360.76
+2025-03-09,Canola,Loam,Center Pivot,1.42,99.03,103.31
+2024-08-09,Canola,Clay Loam,Rainfed,8.65,66.56,17.33
+2024-05-16,Spring Barley,Sandy Loam,Drip,9.19,105.97,310.7
+2025-05-06,Corn,Clay Loam,Drip,11.27,58.76,152.13
+2025-04-23,Winter Wheat,Loam,Center Pivot,13.38,23.37,36.49
+2024-07-04,Sunflower,Clay Loam,Furrow,0.86,56.47,29.77
+2024-01-06,Spring Barley,Silt Loam,Furrow,8.76,96.22,61.45
+2025-05-17,Spring Barley,Clay Loam,Sprinkler,0.82,60.09,132.19
+2024-08-12,Soybeans,Sandy Loam,Center Pivot,2.07,66.78,80.49
+2024-07-13,Canola,Sandy Loam,Sprinkler,5.11,95.25,68.71
+2024-02-11,Winter Wheat,Clay,Center Pivot,6.67,97.79,343.41
+2025-03-31,Winter Wheat,Silt Loam,Furrow,6.53,89.69,277.1
+2025-04-02,Corn,Sandy Loam,Furrow,12.84,54.57,389.34
+2025-05-23,Spring Barley,Clay,Furrow,2.27,99.84,273.94
+2024-03-02,Winter Wheat,Silt Loam,Furrow,3.37,73.14,380.27
+2024-12-28,Spring Barley,Sandy Loam,Drip,4.2,114.17,45.9
+2024-02-03,Soybeans,Loam,Center Pivot,3.82,47.01,179.53
+2024-01-07,Spring Barley,Clay Loam,Center Pivot,6.07,105.54,370.62
+2024-08-28,Canola,Clay,Drip,7.55,88.79,361.15
+2024-06-29,Sunflower,Silt Loam,Center Pivot,6.2,85.14,294.68
+2025-03-03,Spring Barley,Sandy Loam,Rainfed,6.27,101.73,397.69
+2024-01-20,Spring Barley,Clay,Furrow,13.98,84.6,353.11
+2024-04-12,Sunflower,Loam,Drip,9.15,61.17,361.28
+2024-03-22,Soybeans,Silt Loam,Rainfed,2.53,68.25,48.19

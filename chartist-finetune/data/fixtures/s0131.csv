@@ -1,0 +1,241 @@
+game_session_start_date,game_session_platform,game_session_region,game_session_mode,game_session_duration_minutes,game_session_player_count,game_session_revenue_amount,game_session_xp_earned
+2025-01-31,Android,Europe,Tournament,190.52,92,279.44,19684
+2024-06-01,iOS,Asia Pacific,Casual,128.68,68,241.48,24059
+2024-07-11,Xbox,North America,Competitive,162.12,8,396.86,16193
+2025-05-06,Android,Middle East,Custom Match,79.27,49,365.3,14371
+2024-02-26,iOS,North America,Competitive,24.05,5,437.72,2580
+2025-03-18,Xbox,Latin America,Competitive,230.8,38,296.08,4664
+2025-03-16,PC,Middle East,Co-op,93.13,80,444.67,16642
+2024-06-06,Xbox,Asia Pacific,Casual,22.04,9,4.68,7821
+2024-09-28,PC,Africa,Casual,68.03,16,344.56,5520
+2025-03-26,Nintendo Switch,Europe,Custom Match,67.21,97,425.41,9477
+2024-03-25,Android,Africa,Custom Match,37.7,64,493.95,11286
+2025-05-03,iOS,Asia Pacific,Competitive,41.28,8,415.41,7059
+2025-03-25,Xbox,Latin America,Competitive,190.11,38,382.56,20689
+2024-06-02,PC,Europe,Casual,187.78,52,214.43,4538
+2025-03-24,Nintendo Switch,North America,Co-op,154.45,79,486.82,6111
+2025-04-27,Android,Middle East,Casual,56.36,55,354.86,19651
+2024-08-20,iOS,Middle East,Casual,162.32,82,416.73,19066
+2024-08-03,Nintendo Switch,Middle East,Co-op,164.13,52,74.12,14418
+2024-02-24,PlayStation,North America,Custom Match,91.03,44,428.79,13454
+2024-11-05,PC,Middle East,Tournament,108.8,95,26.34,12323
+2024-05-23,PC,Latin America,Tournament,215.32,39,424.25,15818
+2024-04-13,PC,Europe,Tournament,55.5,51,386.76,6611
+2024-08-22,Android,Latin America,Competitive,28.45,27,205.29,20415
+2025-03-27,Nintendo Switch,Asia Pacific,Ranked,76.15,40,417.26,21110
+2024-12-10,Android,Europe,Ranked,29.26,17,116.02,15359
+2025-04-23,Android,Middle East,Casual,85.43,47,362.35,12729
+2024-01-13,PlayStation,Africa,Competitive,117.86,3,242.38,13102
+2024-09-14,PlayStation,Latin America,Custom Match,215.88,38,209.83,4019
+2024-09-19,Nintendo Switch,Latin America,Tournament,157.34,29,334.91,18739
+2024-10-23,PC,Africa,Custom Match,35.55,56,36.99,13249
+2025-04-18,iOS,Africa,Co-op,52.21,40,449.11,18184
+2024-04-22,Xbox,Middle East,Casual,63.45,40,43.6,14572
+2024-06-05,Android,Europe,Casual,88.17,90,124.8,18628
+2025-03-05,PC,North America,Tournament,236.79,18,474.76,21093
+2024-02-21,PlayStation,Europe,Ranked,180.3,77,389.27,18613
+2024-02-06,Xbox,Latin America,Casual,111.54,49,270.83,13652
+2025-01-24,PlayStation,North America,Ranked,11.31,63,132.59,23077
+2025-05-18,Android,Europe,Tournament,24.54,52,212.14,5211
+2024-12-24,Xbox,Asia Pacific,Competitive,84.08,7,215.6,24896
+2024-07-27,Xbox,Middle East,Competitive,239.36,68,424.86,6686
+2025-03-27,Xbox,Middle East,Tournament,200.03,63,83.34,10701
+2024-08-14,Android,North America,Ranked,203.27,79,452.55,23741
+2024-06-07,Android,Europe,Co-op,17.2,37,268.85,6692
+2024-05-23,PC,Middle East,Co-op,228.96,36,170.81,20033
+2024-11-28,PlayStation,Europe,Competitive,132.55,87,362.08,2373
+2025-06-16,PlayStation,Asia Pacific,Co-op,27.59,3,151.65,1010
+2024-06-09,Nintendo Switch,Europe,Competitive,119.45,34,53.33,17864
+2024-10-23,Nintendo Switch,Africa,Custom Match,203.63,73,393.75,12716
+2024-08-05,PC,Middle East,Custom Match,236.43,33,330.56,11337
+2024-06-12,Xbox,Middle East,Competitive,217.99,92,47.62,3215
+2024-12-20,iOS,Latin America,Custom Match,67.11,84,293.54,5850
+2024-07-22,Android,Europe,Casual,129.57,39,245.44,7279
+2024-01-15,iOS,North America,Custom Match,196.99,69,431.59,19177
+2025-02-26,Android,North America,Co-op,10.73,69,366.46,1385
+2024-07-19,Android,Middle East,Competitive,170.21,66,186.28,20471
+2025-01-09,Xbox,North America,Co-op,75.74,78,156.19,12686
+2025-05-25,Xbox,Latin America,Custom Match,87.09,64,305.58,1944
+2024-10-24,Android,North America,Custom Match,22.42,12,46.79,9952
+2024-08-16,Xbox,Europe,Ranked,214.73,81,88.52,12245
+2024-08-10,PC,Asia Pacific,Ranked,14.54,52,245.67,5248
+2025-04-11,Android,Europe,Custom Match,84.49,44,392.1,20954
+2024-02-19,PC,Latin America,Co-op,70.21,5,226.82,19747
+2025-04-10,PC,Africa,Competitive,96.66,19,283.56,10696
+2024-10-24,PC,Europe,Casual,4.03,11,359.73,21690
+2024-04-12,iOS,Middle East,Ranked,14.14,63,156.13,24747
+2024-10-12,iOS,Asia Pacific,Competitive,151.94,58,25.71,2621
+2025-02-03,Nintendo Switch,North America,Ranked,71.08,17,213.76,4955
+2025-06-23,PC,Latin America,Casual,155.74,40,364.65,9483
+2025-02-09,iOS,Africa,Ranked,13.88,33,20.81,6332
+2024-08-14,Xbox,Middle East,Casual,90.85,29,247.01,18426
+2024-04-24,iOS,Africa,Custom Match,102.43,52,459.96,10379
+2025-03-11,PC,Europe,Ranked,185.26,70,10.49,11608
+2024-03-10,PlayStation,Africa,Tournament,38.63,3,427.51,1627
+2024-11-18,Android,Latin America,Co-op,66.03,1,289.76,20788
+2025-01-16,Xbox,Africa,Ranked,74.12,78,162.67,19663
+2025-03-07,PC,North America,Casual,87.05,31,76.9,16480
+2024-04-12,Xbox,Latin America,Co-op,113.15,44,199.13,4685
+2024-12-15,iOS,Asia Pacific,Casual,166.73,90,7.72,8427
+2024-01-27,iOS,Asia Pacific,Co-op,134.45,56,148.49,19625
+2024-04-09,PlayStation,Asia Pacific,Co-op,166.76,35,405.73,16113
+2024-12-05,PC,Asia Pacific,Co-op,95.19,74,46.94,4803
+2024-08-09,Android,North America,Casual,81.4,44,250.05,19724
+2024-06-03,Nintendo Switch,Europe,Tournament,225.46,18,31.56,6803
+2024-09-12,PlayStation,Europe,Co-op,194.06,67,82.01,9008
+2025-04-20,iOS,Asia Pacific,Custom Match,101.51,23,426.62,20073
+2024-11-22,Nintendo Switch,Asia Pacific,Custom Match,70.58,59,149.79,10360
+2025-06-12,Nintendo Switch,Latin America,Casual,45.09,90,339.9,7065
+2024-05-22,iOS,Middle East,Co-op,219.11,82,474.61,18730
+2024-11-16,Android,North America,Ranked,111.84,3,426.92,4803
+2025-05-19,PlayStation,Europe,Casual,169.64,78,165.81,7078
+2024-10-30,iOS,Latin America,Tournament,124.23,41,426.41,7751
+2025-05-31,Nintendo Switch,Middle East,Casual,182.06,86,1.49,5748
+2025-04-22,Android,North America,Casual,78.21,39,235.5,6288
+2024-10-29,Android,Middle East,Competitive,188.16,56,473.21,16130
+2024-09-11,iOS,Latin America,Competitive,164.49,86,124.46,4575
+2025-06-07,iOS,Africa,Tournament,144.86,21,77.43,363
+2024-10-30,PC,Europe,Casual,182.49,63,233.64,19913
+2024-09-07,Xbox,Europe,Casual,162.26,74,360.24,9725
+2025-04-30,Nintendo Switch,Asia Pacific,Tournament,192.78,39,97.38,6924
+2025-01-25,PlayStation,Asia Pacific,Casual,108.34,69,59.53,7840
+2024-10-25,PC,North America,Ranked,35.61,12,108.17,18770
+2025-02-10,Android,Europe,Tournament,58.9,36,43.18,13010
+2025-05-05,Xbox,Asia Pacific,Custom Match,105.6,87,236.5,16185
+2024-01-19,PC,Africa,Casual,229.37,18,183.19,10530
+2024-05-20,Xbox,Europe,Tournament,235.58,31,411.02,8958
+2024-11-26,iOS,Africa,Competitive,17.16,64,482.3,16700
+2024-12-30,PC,Middle East,Co-op,174.65,26,0.7,1707
+2024-02-23,PlayStation,Middle East,Custom Match,41.93,5,31.36,16996
+2025-04-23,Nintendo Switch,Asia Pacific,Tournament,180.08,41,139.16,19100
+2024-11-25,PlayStation,Asia Pacific,Casual,67.68,96,267.22,14305
+2024-11-05,PC,North America,Competitive,43.23,42,209.26,14134
+2024-06-06,PC,Asia Pacific,Ranked,99.49,10,109.94,11175
+2024-04-10,iOS,Latin America,Co-op,201.12,3,171.48,10369
+2025-04-15,iOS,Middle East,Tournament,132.57,90,175.39,8595
+2025-02-26,PlayStation,Latin America,Co-op,109.02,38,90.03,13224
+2024-08-11,Xbox,Europe,Casual,74.07,47,197.53,18092
+2024-08-13,PlayStation,Europe,Custom Match,66.64,58,169.04,1656
+2024-03-30,PlayStation,North America,Co-op,51.55,88,235.36,11098
+2025-02-02,Android,Europe,Co-op,151.53,30,139.35,19266
+2024-03-29,PlayStation,North America,Custom Match,163.27,94,180.97,1529
+2024-07-21,Nintendo Switch,Middle East,Competitive,5.92,32,220.95,16005
+2025-03-18,Nintendo Switch,North America,Co-op,113.65,89,170.84,23623
+2025-03-14,Nintendo Switch,Europe,Custom Match,147.07,50,362.41,24369
+2024-04-15,Xbox,Latin America,Ranked,85.14,85,312.87,10758
+2024-02-06,Android,Africa,Competitive,154.93,4,239.2,24910
+2025-04-18,Nintendo Switch,North America,Ranked,167.57,82,252.79,22230
+2024-08-12,Xbox,Asia Pacific,Tournament,44.15,78,320.55,8500
+2025-01-18,PC,North America,Ranked,83.5,89,172.14,6985
+2025-04-29,Android,North America,Ranked,148.0,11,179.78,15688
+2025-01-15,Xbox,North America,Competitive,143.87,59,23.68,6017
+2024-10-21,Nintendo Switch,Latin America,Co-op,45.61,26,178.19,12476
+2024-06-08,PC,Middle East,Casual,91.99,36,120.92,19298
+2025-04-26,PlayStation,Latin America,Ranked,206.12,39,293.81,15702
+2025-01-29,Android,Europe,Ranked,119.61,53,186.53,18492
+2024-11-02,Android,Asia Pacific,Custom Match,222.26,67,220.05,4656
+2024-05-23,PC,Middle East,Custom Match,171.7,35,368.52,22865
+2024-10-24,Nintendo Switch,Europe,Ranked,60.62,2,452.07,9044
+2024-03-14,PlayStation,Europe,Co-op,167.55,92,204.32,10553
+2025-05-03,PC,Europe,Custom Match,3.28,73,395.5,2219
+2024-03-27,Nintendo Switch,Asia Pacific,Tournament,212.49,96,352.0,12475
+2024-05-29,iOS,Latin America,Ranked,49.64,86,40.71,3080
+2024-06-09,Xbox,Middle East,Co-op,36.6,96,19.27,17879
+2025-02-28,PC,Europe,Casual,172.95,69,222.7,21249
+2024-01-24,PC,Europe,Casual,179.11,52,137.99,8959
+2024-08-15,Nintendo Switch,Africa,Ranked,100.83,61,271.85,21046
+2024-11-14,Xbox,Europe,Competitive,30.07,53,299.43,645
+2024-08-08,PC,Middle East,Ranked,196.15,13,354.55,130
+2025-05-09,Nintendo Switch,Middle East,Co-op,182.9,7,102.07,6549
+2025-04-03,Xbox,Europe,Ranked,88.38,22,353.76,9026
+2024-12-16,PlayStation,Latin America,Tournament,206.21,15,358.05,498
+2024-12-28,Xbox,Africa,Competitive,128.99,53,253.63,15358
+2024-11-10,iOS,Africa,Competitive,19.55,12,90.97,10489
+2024-09-25,iOS,Latin America,Ranked,154.68,80,363.12,6331
+2025-04-08,Android,Asia Pacific,Casual,172.0,21,14.38,17310
+2024-09-24,iOS,Africa,Casual,214.67,40,28.1,8182
+2025-06-11,iOS,Africa,Casual,50.31,41,236.7,3083
+2024-04-29,Nintendo Switch,Latin America,Casual,177.26,47,109.36,23076
+2025-05-24,PC,North America,Ranked,230.55,34,176.13,23081
+2024-02-13,PC,Africa,Co-op,45.91,26,496.95,3342
+2024-01-16,Nintendo Switch,Latin America,Competitive,209.97,33,72.3,7282
+2024-11-28,Android,Middle East,Custom Match,177.11,93,308.5,3987
+2025-03-08,iOS,Latin America,Competitive,192.29,54,224.54,3763
+2025-05-16,Android,Middle East,Co-op,75.49,4,378.56,18927
+2024-11-08,iOS,Europe,Casual,109.21,10,497.0,24859
+2024-01-07,Xbox,Asia Pacific,Custom Match,18.86,40,216.24,1490
+2024-12-25,Android,Europe,Tournament,101.69,31,362.33,2258
+2024-06-11,Android,Asia Pacific,Casual,27.52,64,169.08,19808
+2024-05-23,PC,North America,Casual,28.87,88,144.42,8133
+2024-07-26,iOS,North America,Tournament,54.11,27,209.41,10542
+2024-12-08,Nintendo Switch,Latin America,Casual,189.09,18,11.57,217
+2025-01-06,Android,Africa,Ranked,24.57,51,386.93,6852
+2024-03-11,Xbox,Middle East,Casual,151.96,17,366.46,13132
+2025-01-25,Nintendo Switch,Latin America,Co-op,12.96,77,94.54,11472
+2024-12-01,iOS,Middle East,Casual,151.45,18,11.81,3231
+2024-02-29,Nintendo Switch,Asia Pacific,Tournament,184.57,98,139.79,22401
+2024-06-07,iOS,Asia Pacific,Casual,194.55,79,78.72,10443
+2024-10-03,Android,Africa,Casual,56.19,38,334.8,8121
+2025-02-07,Nintendo Switch,Europe,Custom Match,190.41,14,433.32,22124
+2025-05-19,Nintendo Switch,Latin America,Custom Match,76.22,35,453.29,18679
+2024-04-19,iOS,Asia Pacific,Competitive,182.85,78,272.4,21638
+2025-05-31,PC,Latin America,Competitive,129.48,20,466.78,23441
+2025-02-07,Nintendo Switch,Europe,Casual,39.96,77,202.69,24741
+2025-06-16,iOS,Latin America,Co-op,192.34,22,214.73,15912
+2024-12-26,PC,Latin America,Co-op,198.88,47,165.79,6948
+2024-11-28,Android,North America,Casual,198.48,26,142.36,7793
+2024-07-30,iOS,Latin America,Casual,163.41,43,130.9,617
+2025-03-25,iOS,Middle East,Competitive,68.78,17,191.89,16323
+2024-10-16,Xbox,North America,Competitive,30.48,24,325.17,3620
+2024-02-22,iOS,Latin America,Tournament,92.67,40,158.83,14128
+2024-04-17,iOS,Middle East,Custom Match,21.15,75,476.59,22923
+2024-02-26,iOS,Africa,Casual,165.73,23,416.76,1846
+2024-06-02,Xbox,Latin America,Casual,43.87,34,162.12,9241
+2024-11-24,PC,Africa,Co-op,216.85,45,257.15,18013
+2024-02-03,Xbox,Africa,Co-op,129.41,96,374.22,17419
+2025-02-26,Nintendo Switch,Africa,Custom Match,22.04,99,183.05,20627
+2024-04-07,iOS,Africa,Competitive,102.08,97,118.46,9562
+2024-10-28,Xbox,Europe,Co-op,45.07,62,275.06,205
+2025-01-18,iOS,North America,Co-op,50.49,35,389.12,9719
+2024-10-28,PC,Europe,Co-op,95.82,18,444.99,19921
+2025-02-16,Nintendo Switch,Latin America,Co-op,74.33,17,490.64,2128
+2024-10-31,Nintendo Switch,Asia Pacific,Casual,147.94,64,414.92,16817
+2024-11-22,Xbox,Africa,Custom Match,67.59,11,42.85,14267
+2024-12-01,PC,Africa,Custom Match,135.56,48,243.75,23913
+2025-02-14,PlayStation,Asia Pacific,Ranked,70.45,100,79.04,17351
+2024-07-09,Xbox,Latin America,Competitive,98.03,8,218.86,21706
+2024-11-02,Android,Europe,Co-op,214.78,49,20.62,19650
+2024-02-18,Xbox,Africa,Co-op,114.66,50,402.46,7251
+2024-03-09,iOS,Latin America,Competitive,133.95,63,60.5,1492
+2025-03-02,PlayStation,Middle East,Casual,39.53,69,318.16,5748
+2024-06-17,PC,Africa,Competitive,28.37,65,345.6,13866
+2024-09-06,Nintendo Switch,Middle East,Casual,203.43,82,170.66,22788
+2024-02-22,Xbox,Africa,Custom Match,214.68,67,334.95,17210
+2025-01-15,Android,North America,Ranked,196.52,48,340.24,22790
+2025-06-19,PlayStation,North America,Custom Match,118.92,74,181.39,24818
+2024-07-08,iOS,Middle East,Competitive,155.64,73,395.14,12562
+2025-05-24,Xbox,North America,Tournament,9.77,41,118.37,23992
+2024-07-03,Android,Africa,Ranked,196.73,13,427.92,6212
+2024-05-19,PlayStation,Europe,Custom Match,208.4,44,138.3,2935
+2025-02-27,iOS,North America,Tournament,24.79,58,8.18,13268
+2024-11-05,Nintendo Switch,Asia Pacific,Tournament,138.62,49,271.07,4171
+2025-01-18,PC,Africa,Custom Match,22.14,39,352.18,7541
+2024-05-07,Nintendo Switch,Asia Pacific,Co-op,179.31,7,424.17,3997
+2024-04-30,PlayStation,North America,Casual,70.8,22,149.42,3866
+2025-03-01,Android,North America,Tournament,32.2,63,104.96,20493
+2025-01-31,PlayStation,Middle East,Competitive,142.38,33,51.8,1501
+2024-01-16,Xbox,Africa,Ranked,228.38,18,215.64,14710
+2024-02-21,PlayStation,North America,Co-op,165.74,52,311.0,3852
+2025-04-05,Android,Latin America,Co-op,15.45,2,66.61,16961
+2024-02-09,PC,Europe,Ranked,131.62,38,80.76,10371
+2025-01-15,PC,North America,Competitive,221.26,77,468.97,16124
+2024-08-22,iOS,Asia Pacific,Ranked,126.45,42,498.32,20834
+2024-03-28,iOS,Latin America,Tournament,82.89,12,416.58,23353
+2025-01-18,Xbox,North America,Casual,183.4,14,23.71,21775
+2025-01-27,Nintendo Switch,Europe,Custom Match,193.06,97,91.77,22810
+2024-09-15,Android,Middle East,Tournament,126.34,56,40.75,19259
+2025-01-11,PC,North America,Casual,116.74,22,439.37,13879
+2024-11-22,iOS,Asia Pacific,Casual,36.1,44,153.33,6320
+2024-06-07,PlayStation,Middle East,Ranked,210.99,2,480.21,5018
+2025-03-24,Android,North America,Tournament,85.18,18,439.18,2544
+2025-02-02,PlayStation,Africa,Ranked,74.87,72,335.06,1999

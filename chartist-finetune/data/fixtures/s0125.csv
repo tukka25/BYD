@@ -1,0 +1,241 @@
+shipment_arrival_date,shipment_terminal,shipment_cargo_type,shipment_direction,shipment_teu_count,shipment_gross_weight_tonnes,shipment_dwell_days
+2024-10-14,Ro-Ro Berth,Refrigerated,Import,1455,138601.2,16.51
+2024-02-08,Dry Bulk Terminal,Vehicles,Transshipment,9477,15548.14,11.05
+2025-04-26,Ro-Ro Berth,Refrigerated,Transshipment,9287,18049.06,5.35
+2024-05-06,Ro-Ro Berth,Liquid Bulk,Import,5668,52182.09,3.74
+2024-05-08,Liquid Bulk Jetty,Refrigerated,Export,10261,146413.55,8.19
+2024-12-14,Container Terminal A,Containers,Transshipment,3806,19130.09,23.61
+2025-03-04,Container Terminal B,Dry Bulk,Transshipment,2571,126088.32,44.28
+2025-03-15,Container Terminal A,Vehicles,Import,2420,88916.32,9.18
+2025-01-27,Container Terminal B,Dry Bulk,Import,3062,111686.51,19.65
+2024-01-03,Ro-Ro Berth,Liquid Bulk,Transshipment,5973,82949.58,33.64
+2025-02-03,Container Terminal A,Refrigerated,Transshipment,3270,83716.13,20.64
+2024-11-17,Liquid Bulk Jetty,Break Bulk,Transshipment,4607,47328.28,26.64
+2025-05-19,Ro-Ro Berth,Break Bulk,Import,8918,26115.26,27.96
+2024-05-10,Liquid Bulk Jetty,Vehicles,Import,6867,86735.14,0.69
+2024-04-07,Container Terminal B,Break Bulk,Transshipment,100,7918.34,9.83
+2024-04-24,General Cargo Wharf,Vehicles,Import,3727,127570.84,38.39
+2024-08-21,Ro-Ro Berth,Vehicles,Import,9317,122752.74,39.65
+2024-11-26,Dry Bulk Terminal,Vehicles,Import,10971,81830.6,5.48
+2024-09-28,Container Terminal B,Break Bulk,Export,8570,57406.11,44.86
+2024-11-14,Liquid Bulk Jetty,Containers,Transshipment,11113,123522.34,32.87
+2025-03-05,Dry Bulk Terminal,Break Bulk,Export,1921,3805.02,34.67
+2024-04-21,Container Terminal A,Vehicles,Transshipment,2870,64983.21,17.48
+2024-08-16,Dry Bulk Terminal,Vehicles,Export,2627,86617.44,14.86
+2025-03-06,Ro-Ro Berth,Dry Bulk,Export,4273,65276.42,30.76
+2024-02-15,Liquid Bulk Jetty,Liquid Bulk,Transshipment,11218,101424.95,4.78
+2024-04-02,Ro-Ro Berth,Containers,Export,293,142688.57,1.35
+2025-03-07,Container Terminal B,Refrigerated,Export,4711,75956.3,13.15
+2025-06-17,Liquid Bulk Jetty,Containers,Import,10545,90994.81,44.96
+2024-11-17,General Cargo Wharf,Dry Bulk,Transshipment,6991,1658.53,16.95
+2024-01-25,General Cargo Wharf,Break Bulk,Transshipment,3714,142767.55,16.18
+2025-06-05,Dry Bulk Terminal,Break Bulk,Transshipment,8359,91657.19,11.99
+2024-08-07,Container Terminal B,Break Bulk,Transshipment,8402,33385.96,12.78
+2024-03-22,General Cargo Wharf,Liquid Bulk,Export,837,89524.79,10.09
+2024-09-23,Ro-Ro Berth,Vehicles,Export,7395,135181.2,11.69
+2024-05-13,Container Terminal A,Liquid Bulk,Export,4055,22597.01,9.54
+2024-07-24,Ro-Ro Berth,Vehicles,Import,9966,81570.24,34.33
+2024-02-19,Container Terminal A,Dry Bulk,Export,11381,31769.68,5.86
+2024-07-28,Container Terminal B,Liquid Bulk,Import,1938,137992.14,35.91
+2024-07-21,Dry Bulk Terminal,Break Bulk,Export,3517,4189.69,30.44
+2024-06-05,Ro-Ro Berth,Dry Bulk,Export,4039,142636.13,37.6
+2025-04-12,Ro-Ro Berth,Dry Bulk,Transshipment,6666,83686.98,32.31
+2024-01-23,Container Terminal A,Refrigerated,Import,566,94052.82,5.04
+2025-03-06,Container Terminal B,Containers,Transshipment,10548,69307.58,16.32
+2024-02-03,Container Terminal B,Break Bulk,Export,8339,149826.96,35.03
+2024-05-09,Ro-Ro Berth,Refrigerated,Transshipment,2242,34728.94,30.3
+2025-05-31,Container Terminal B,Refrigerated,Import,6435,132406.56,19.26
+2024-12-29,General Cargo Wharf,Liquid Bulk,Import,4557,143635.63,4.82
+2024-05-28,Container Terminal B,Containers,Transshipment,11734,76405.69,26.28
+2025-03-22,Liquid Bulk Jetty,Refrigerated,Transshipment,2271,98848.74,32.1
+2025-01-31,Liquid Bulk Jetty,Liquid Bulk,Transshipment,727,125607.27,11.64
+2025-02-28,Liquid Bulk Jetty,Containers,Import,2017,69186.88,15.84
+2024-03-11,Liquid Bulk Jetty,Dry Bulk,Export,1813,83848.6,28.9
+2025-04-15,General Cargo Wharf,Liquid Bulk,Transshipment,3592,55313.15,16.75
+2024-08-06,Ro-Ro Berth,Liquid Bulk,Export,11401,75165.41,33.94
+2024-08-07,Dry Bulk Terminal,Liquid Bulk,Export,4291,134130.76,43.9
+2024-05-31,Container Terminal B,Containers,Transshipment,2824,39136.33,43.11
+2025-02-14,Ro-Ro Berth,Liquid Bulk,Transshipment,2498,110692.23,9.98
+2024-12-27,Container Terminal A,Dry Bulk,Export,6213,103669.47,9.72
+2025-03-01,Ro-Ro Berth,Break Bulk,Import,9984,33965.2,10.83
+2024-10-16,Dry Bulk Terminal,Break Bulk,Export,4304,23668.79,18.85
+2024-03-18,Liquid Bulk Jetty,Dry Bulk,Import,10324,135603.83,24.9
+2024-07-02,Liquid Bulk Jetty,Liquid Bulk,Transshipment,1602,31.97,26.7
+2024-05-30,Container Terminal A,Containers,Transshipment,5505,143927.65,36.64
+2024-08-05,General Cargo Wharf,Containers,Import,6316,36517.07,27.12
+2024-01-09,Container Terminal B,Break Bulk,Transshipment,9625,22443.29,3.36
+2025-04-09,Container Terminal B,Vehicles,Import,11907,82019.23,16.7
+2024-05-24,Dry Bulk Terminal,Break Bulk,Transshipment,10297,47476.57,9.06
+2025-04-03,Ro-Ro Berth,Vehicles,Transshipment,136,82425.43,26.12
+2024-03-16,Liquid Bulk Jetty,Containers,Transshipment,10770,87718.9,32.05
+2024-07-10,Dry Bulk Terminal,Containers,Import,2766,21313.49,42.84
+2024-01-03,Liquid Bulk Jetty,Containers,Transshipment,6738,87308.7,35.02
+2025-05-25,Container Terminal B,Break Bulk,Transshipment,11137,52354.26,27.96
+2024-12-15,Ro-Ro Berth,Liquid Bulk,Export,8018,117188.08,25.43
+2024-12-22,Container Terminal A,Break Bulk,Export,9520,38249.77,7.44
+2024-07-25,Dry Bulk Terminal,Containers,Transshipment,10509,94568.36,40.95
+2024-04-26,Ro-Ro Berth,Break Bulk,Transshipment,1855,65971.27,25.7
+2025-04-08,Liquid Bulk Jetty,Liquid Bulk,Import,9289,105678.27,35.55
+2025-01-03,Liquid Bulk Jetty,Liquid Bulk,Import,10349,15942.9,9.1
+2024-08-20,Dry Bulk Terminal,Vehicles,Export,11626,33091.99,40.88
+2024-11-03,Container Terminal B,Refrigerated,Import,2922,114410.72,28.63
+2024-03-21,General Cargo Wharf,Containers,Transshipment,803,36351.07,6.23
+2025-04-08,Liquid Bulk Jetty,Vehicles,Transshipment,7600,64045.25,16.17
+2025-05-08,Dry Bulk Terminal,Vehicles,Transshipment,8293,51873.76,4.52
+2025-03-12,Ro-Ro Berth,Containers,Import,4305,140474.74,36.61
+2025-03-26,Container Terminal B,Break Bulk,Import,11139,1591.0,23.27
+2024-05-19,Ro-Ro Berth,Break Bulk,Export,5026,93689.92,25.5
+2024-12-11,Container Terminal B,Liquid Bulk,Import,444,11937.79,20.58
+2025-05-30,Liquid Bulk Jetty,Refrigerated,Import,6927,7481.45,17.65
+2024-03-15,Dry Bulk Terminal,Break Bulk,Export,10980,24087.77,17.94
+2024-03-26,Ro-Ro Berth,Dry Bulk,Export,10435,130734.51,20.62
+2024-09-19,General Cargo Wharf,Vehicles,Export,1131,50187.72,10.98
+2024-10-11,Ro-Ro Berth,Containers,Export,3492,134485.27,30.46
+2024-04-08,Ro-Ro Berth,Vehicles,Import,977,96716.92,4.91
+2024-06-13,Dry Bulk Terminal,Liquid Bulk,Transshipment,10290,118669.44,28.8
+2024-05-05,Dry Bulk Terminal,Containers,Transshipment,7648,85187.63,2.45
+2025-01-12,Ro-Ro Berth,Dry Bulk,Export,1967,80851.15,14.57
+2025-02-01,General Cargo Wharf,Vehicles,Export,10817,13054.12,29.42
+2024-10-14,General Cargo Wharf,Dry Bulk,Import,271,111875.4,19.4
+2024-04-15,Container Terminal B,Dry Bulk,Export,10616,39848.87,19.78
+2024-07-21,Container Terminal B,Dry Bulk,Export,5770,25965.32,25.77
+2024-02-29,Container Terminal A,Refrigerated,Export,439,126497.08,39.03
+2024-01-24,General Cargo Wharf,Break Bulk,Import,10057,46331.2,22.84
+2025-02-19,Dry Bulk Terminal,Refrigerated,Import,6815,9122.45,9.03
+2024-10-21,General Cargo Wharf,Liquid Bulk,Export,4489,112690.11,23.21
+2025-01-28,General Cargo Wharf,Vehicles,Import,10180,87888.55,11.7
+2024-01-14,Dry Bulk Terminal,Vehicles,Export,10107,130256.73,20.49
+2024-12-10,General Cargo Wharf,Liquid Bulk,Import,6967,19761.1,21.19
+2024-04-12,General Cargo Wharf,Containers,Import,4342,66589.68,20.71
+2024-12-05,Container Terminal B,Break Bulk,Import,4810,110169.03,4.3
+2025-02-19,Container Terminal B,Vehicles,Export,4128,17549.82,34.0
+2024-05-26,Container Terminal A,Liquid Bulk,Transshipment,10441,29235.47,12.09
+2025-02-14,Ro-Ro Berth,Refrigerated,Import,11598,86002.45,5.28
+2025-01-19,Container Terminal A,Liquid Bulk,Transshipment,717,142084.62,1.94
+2024-05-21,Liquid Bulk Jetty,Break Bulk,Export,8117,143716.09,33.96
+2025-03-19,Liquid Bulk Jetty,Vehicles,Transshipment,7802,88177.48,36.9
+2025-05-11,Container Terminal A,Containers,Export,3175,90504.64,38.88
+2025-05-19,Dry Bulk Terminal,Refrigerated,Export,6926,12717.67,21.91
+2025-02-24,Ro-Ro Berth,Liquid Bulk,Export,1246,50276.08,2.51
+2024-01-20,Container Terminal A,Containers,Export,8916,131853.9,16.44
+2024-06-18,Ro-Ro Berth,Vehicles,Transshipment,10564,114483.62,7.66
+2024-10-06,General Cargo Wharf,Refrigerated,Export,3666,72360.84,44.98
+2024-12-03,Container Terminal A,Liquid Bulk,Import,2677,45987.49,14.82
+2024-07-02,Container Terminal B,Vehicles,Import,3645,131285.53,15.04
+2024-06-21,Container Terminal B,Liquid Bulk,Import,5685,89111.79,1.95
+2024-06-30,Container Terminal A,Containers,Transshipment,9014,31818.01,37.97
+2025-03-31,Dry Bulk Terminal,Vehicles,Import,7419,75829.36,13.73
+2024-11-25,Liquid Bulk Jetty,Vehicles,Export,10093,77707.51,11.51
+2025-05-28,Container Terminal B,Liquid Bulk,Export,3462,76610.12,22.19
+2024-06-29,Container Terminal A,Vehicles,Import,5610,45963.0,0.45
+2024-08-01,Container Terminal B,Break Bulk,Export,9949,22116.67,10.45
+2024-06-08,Container Terminal A,Break Bulk,Transshipment,5816,110475.81,2.07
+2025-04-19,Liquid Bulk Jetty,Containers,Export,10903,137401.3,44.56
+2024-09-26,Dry Bulk Terminal,Liquid Bulk,Transshipment,5289,10588.69,19.25
+2025-03-07,General Cargo Wharf,Containers,Export,1305,38172.57,36.93
+2024-12-09,General Cargo Wharf,Dry Bulk,Transshipment,8615,72498.47,14.43
+2024-10-01,Container Terminal B,Dry Bulk,Import,7578,52781.43,25.19
+2024-11-06,Dry Bulk Terminal,Vehicles,Import,11983,9983.7,25.99
+2024-05-06,General Cargo Wharf,Containers,Import,11618,96110.04,40.58
+2024-08-14,Liquid Bulk Jetty,Break Bulk,Transshipment,4229,56884.86,33.09
+2024-04-04,Ro-Ro Berth,Liquid Bulk,Export,11471,50148.2,25.3
+2024-02-05,Container Terminal B,Refrigerated,Transshipment,7618,100461.95,36.64
+2024-10-12,Liquid Bulk Jetty,Break Bulk,Import,3590,79558.23,5.32
+2025-06-01,Ro-Ro Berth,Dry Bulk,Transshipment,4595,71904.4,8.18
+2025-05-18,General Cargo Wharf,Liquid Bulk,Transshipment,2794,129428.26,11.57
+2024-11-02,Container Terminal B,Refrigerated,Transshipment,5392,99784.0,17.39
+2024-08-04,Container Terminal B,Dry Bulk,Import,5930,123509.96,2.74
+2024-11-25,Dry Bulk Terminal,Dry Bulk,Import,10343,50692.17,2.62
+2024-09-09,Liquid Bulk Jetty,Vehicles,Transshipment,8467,77375.7,38.13
+2024-04-24,Dry Bulk Terminal,Break Bulk,Export,9733,35605.15,25.99
+2024-09-09,Liquid Bulk Jetty,Break Bulk,Transshipment,11408,118810.37,38.26
+2024-11-25,Container Terminal A,Break Bulk,Export,9235,144475.3,39.06
+2025-01-12,Liquid Bulk Jetty,Liquid Bulk,Transshipment,3998,12379.71,5.9
+2024-01-08,General Cargo Wharf,Dry Bulk,Import,7433,24811.56,15.9
+2025-03-12,General Cargo Wharf,Break Bulk,Import,3549,24862.0,27.56
+2025-01-09,Container Terminal A,Dry Bulk,Export,9177,13087.0,32.43
+2024-03-16,Ro-Ro Berth,Dry Bulk,Import,11450,140967.03,7.41
+2024-01-21,General Cargo Wharf,Refrigerated,Transshipment,5629,71314.31,1.36
+2024-03-05,Dry Bulk Terminal,Break Bulk,Export,1009,104285.09,9.21
+2024-07-31,Container Terminal A,Liquid Bulk,Export,357,78923.66,22.17
+2024-08-25,Dry Bulk Terminal,Containers,Transshipment,7736,144004.5,21.72
+2025-01-01,Container Terminal A,Dry Bulk,Transshipment,458,91731.56,8.18
+2024-12-08,Liquid Bulk Jetty,Refrigerated,Transshipment,1860,95896.77,2.38
+2025-01-12,Container Terminal A,Vehicles,Transshipment,7504,116848.12,8.94
+2024-09-15,Liquid Bulk Jetty,Vehicles,Transshipment,11007,91707.17,18.17
+2024-09-02,Liquid Bulk Jetty,Dry Bulk,Import,7287,107135.57,42.44
+2025-06-12,Container Terminal A,Vehicles,Export,11367,52014.69,2.64
+2024-03-28,Container Terminal A,Break Bulk,Transshipment,2929,26938.25,13.92
+2024-02-18,Container Terminal B,Refrigerated,Export,5899,22422.78,4.22
+2025-01-17,Container Terminal B,Containers,Import,3688,11321.43,4.17
+2024-05-22,Dry Bulk Terminal,Dry Bulk,Transshipment,858,106902.68,22.92
+2024-08-17,Liquid Bulk Jetty,Break Bulk,Transshipment,1631,73601.12,44.3
+2024-01-17,Ro-Ro Berth,Containers,Import,1662,101894.83,40.74
+2024-05-01,Ro-Ro Berth,Liquid Bulk,Import,11922,123056.85,27.76
+2024-01-06,General Cargo Wharf,Liquid Bulk,Export,6871,35557.08,18.42
+2024-12-04,Container Terminal A,Break Bulk,Transshipment,6055,110447.12,9.2
+2025-05-07,General Cargo Wharf,Dry Bulk,Export,3930,113354.98,29.4
+2024-12-20,Ro-Ro Berth,Containers,Import,4769,128692.59,40.57
+2024-01-22,Liquid Bulk Jetty,Refrigerated,Import,10637,19929.96,19.58
+2024-07-10,Dry Bulk Terminal,Containers,Transshipment,4092,119627.43,1.6
+2025-04-28,Container Terminal A,Containers,Export,6667,142152.65,26.81
+2024-04-17,Container Terminal A,Refrigerated,Transshipment,916,24425.65,21.05
+2024-06-18,Dry Bulk Terminal,Dry Bulk,Export,5188,112268.75,39.1
+2025-04-28,Container Terminal B,Dry Bulk,Export,11434,33047.48,18.64
+2024-10-11,Ro-Ro Berth,Dry Bulk,Transshipment,5635,141245.88,15.45
+2025-05-23,Container Terminal B,Vehicles,Transshipment,10290,1222.93,43.8
+2025-02-17,Container Terminal B,Refrigerated,Transshipment,5668,117331.84,33.26
+2024-08-27,Liquid Bulk Jetty,Vehicles,Transshipment,18,91482.44,15.4
+2025-05-23,Liquid Bulk Jetty,Break Bulk,Import,1536,64008.36,42.22
+2024-05-27,Container Terminal A,Liquid Bulk,Import,9878,113408.94,40.62
+2024-01-29,Ro-Ro Berth,Refrigerated,Import,6232,41160.98,8.19
+2024-02-01,General Cargo Wharf,Containers,Import,5780,100992.8,38.71
+2025-01-10,Liquid Bulk Jetty,Refrigerated,Transshipment,7717,55455.19,25.56
+2024-10-06,Ro-Ro Berth,Containers,Import,2412,75467.01,41.87
+2024-01-02,Dry Bulk Terminal,Dry Bulk,Export,915,73059.31,29.96
+2024-04-28,Container Terminal B,Break Bulk,Transshipment,1563,96427.03,28.06
+2025-06-22,Container Terminal A,Break Bulk,Transshipment,6466,147147.88,27.81
+2024-05-23,Ro-Ro Berth,Liquid Bulk,Import,1062,18588.2,14.58
+2025-02-03,Container Terminal A,Dry Bulk,Export,7692,172.2,3.2
+2025-06-19,Dry Bulk Terminal,Vehicles,Export,7584,46860.81,9.35
+2025-02-18,Container Terminal B,Liquid Bulk,Transshipment,4766,798.96,23.45
+2025-06-02,General Cargo Wharf,Containers,Export,8207,134420.25,0.29
+2025-01-29,Dry Bulk Terminal,Dry Bulk,Import,11795,49231.89,34.9
+2024-01-08,Dry Bulk Terminal,Vehicles,Export,6923,109017.0,33.82
+2025-05-06,Ro-Ro Berth,Dry Bulk,Transshipment,7054,17578.64,31.13
+2024-02-02,Ro-Ro Berth,Refrigerated,Export,4229,25864.22,39.08
+2024-11-05,Liquid Bulk Jetty,Containers,Import,5671,338.83,40.97
+2024-03-30,Container Terminal B,Refrigerated,Import,5513,7692.38,2.55
+2024-06-30,Liquid Bulk Jetty,Dry Bulk,Transshipment,6271,34190.59,35.52
+2025-03-02,General Cargo Wharf,Refrigerated,Import,6564,54108.43,33.15
+2024-02-25,Container Terminal B,Containers,Import,115,75693.96,11.94
+2024-06-21,Container Terminal A,Vehicles,Transshipment,5135,125393.23,10.24
+2024-07-06,Liquid Bulk Jetty,Vehicles,Import,9219,96981.05,44.82
+2024-08-29,Dry Bulk Terminal,Containers,Export,11564,15457.49,35.95
+2024-06-23,Container Terminal A,Containers,Transshipment,11648,48261.58,24.67
+2024-03-15,Ro-Ro Berth,Liquid Bulk,Export,9977,149474.26,9.62
+2024-02-10,General Cargo Wharf,Dry Bulk,Export,1453,70696.93,16.34
+2024-04-07,Container Terminal B,Dry Bulk,Import,568,27104.82,15.98
+2024-01-12,Ro-Ro Berth,Vehicles,Transshipment,9364,10153.36,32.65
+2025-03-31,General Cargo Wharf,Vehicles,Import,6100,108415.04,19.02
+2024-04-24,General Cargo Wharf,Refrigerated,Import,3681,121241.0,35.34
+2025-01-27,Ro-Ro Berth,Dry Bulk,Export,7242,143334.76,31.73
+2024-06-21,Liquid Bulk Jetty,Refrigerated,Transshipment,7590,47417.92,7.94
+2024-03-24,General Cargo Wharf,Liquid Bulk,Import,809,5864.71,29.62
+2025-04-07,Dry Bulk Terminal,Refrigerated,Import,2355,47570.29,7.77
+2025-04-15,Dry Bulk Terminal,Containers,Export,11843,55451.78,26.55
+2025-02-21,Dry Bulk Terminal,Break Bulk,Transshipment,7749,72619.69,13.13
+2025-06-01,Container Terminal A,Refrigerated,Import,1153,57364.67,18.68
+2024-04-14,Dry Bulk Terminal,Dry Bulk,Import,3985,124574.62,15.28
+2024-07-10,Container Terminal A,Refrigerated,Export,9950,70272.66,20.45
+2024-02-22,Dry Bulk Terminal,Break Bulk,Export,4415,48330.76,44.1
+2025-05-18,Ro-Ro Berth,Vehicles,Export,7408,139864.46,20.54
+2025-04-23,Container Terminal B,Vehicles,Import,4442,32012.74,10.24
+2025-02-23,Container Terminal B,Vehicles,Transshipment,5321,132369.08,32.37
+2025-05-19,Liquid Bulk Jetty,Break Bulk,Export,6159,36356.34,44.54
+2025-05-18,Dry Bulk Terminal,Refrigerated,Import,10859,115634.5,5.18
+2024-12-22,Ro-Ro Berth,Containers,Transshipment,7450,120495.31,43.65
+2024-06-09,Ro-Ro Berth,Vehicles,Export,2084,60581.7,6.34
+2025-04-28,Container Terminal B,Refrigerated,Transshipment,10703,130416.23,10.0
+2025-02-03,General Cargo Wharf,Refrigerated,Export,2001,76928.57,5.4
+2025-01-02,General Cargo Wharf,Refrigerated,Export,10646,56379.25,25.51

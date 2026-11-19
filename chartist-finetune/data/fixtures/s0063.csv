@@ -1,0 +1,241 @@
+Appointment Date,Clinic Location,Appointment Type,Provider Specialty,Visit Status,Wait Time Minutes,Visit Duration Minutes,Patient Copay Amount
+2024-05-07,Riverside Health Campus,Follow Up,Cardiology,Cancelled,163,66,3.92
+2024-04-03,Westgate Family Practice,Annual Physical,Dermatology,Scheduled,45,88,197.33
+2024-09-28,Northside Medical Center,Follow Up,Cardiology,Cancelled,160,117,173.69
+2025-04-18,Downtown Clinic,Annual Physical,Dermatology,Cancelled,92,119,34.4
+2024-04-22,Riverside Health Campus,Annual Physical,Dermatology,Completed,178,46,233.72
+2025-05-31,Westgate Family Practice,Initial Consult,Dermatology,Rescheduled,114,81,169.67
+2025-03-13,Riverside Health Campus,Annual Physical,Cardiology,Scheduled,4,64,34.57
+2025-05-28,Riverside Health Campus,Initial Consult,Dermatology,Rescheduled,142,76,130.45
+2024-05-09,Northside Medical Center,Follow Up,Orthopedics,No Show,133,84,244.59
+2024-10-01,Downtown Clinic,Initial Consult,Dermatology,Cancelled,53,75,31.13
+2024-03-01,Riverside Health Campus,Follow Up,Dermatology,Scheduled,78,10,52.74
+2024-11-19,Northside Medical Center,Initial Consult,Family Medicine,Scheduled,19,34,141.66
+2024-06-27,Westgate Family Practice,Initial Consult,Dermatology,Scheduled,66,18,175.16
+2024-06-11,Riverside Health Campus,Initial Consult,Family Medicine,Cancelled,43,65,27.65
+2025-05-15,Westgate Family Practice,Initial Consult,Dermatology,Cancelled,120,43,215.69
+2024-10-22,Westgate Family Practice,Initial Consult,Family Medicine,Rescheduled,147,43,227.64
+2025-05-26,Northside Medical Center,Initial Consult,Dermatology,Completed,24,60,201.35
+2024-06-17,Westgate Family Practice,Initial Consult,Family Medicine,Cancelled,39,27,162.55
+2024-11-24,Westgate Family Practice,Procedure,Cardiology,Scheduled,92,108,134.38
+2024-09-27,Riverside Health Campus,Lab Review,Family Medicine,Completed,105,21,185.23
+2025-01-29,Northside Medical Center,Initial Consult,Cardiology,No Show,102,103,41.73
+2024-06-20,Northside Medical Center,Follow Up,Cardiology,Scheduled,127,19,58.98
+2024-12-16,Downtown Clinic,Procedure,Cardiology,No Show,114,26,81.88
+2024-04-06,Northside Medical Center,Follow Up,Orthopedics,Completed,46,107,136.71
+2024-02-12,Riverside Health Campus,Lab Review,Family Medicine,Completed,81,42,244.51
+2025-05-29,Riverside Health Campus,Lab Review,Family Medicine,Cancelled,133,44,149.68
+2025-04-09,Downtown Clinic,Initial Consult,Cardiology,Rescheduled,22,112,15.63
+2025-05-22,Northside Medical Center,Initial Consult,Cardiology,Cancelled,90,81,123.26
+2025-05-23,Northside Medical Center,Lab Review,Cardiology,Rescheduled,153,98,119.31
+2024-01-13,Westgate Family Practice,Lab Review,Dermatology,Cancelled,88,76,73.41
+2024-10-21,Northside Medical Center,Annual Physical,Orthopedics,Scheduled,52,31,92.73
+2024-05-29,Northside Medical Center,Lab Review,Family Medicine,Rescheduled,33,38,1.67
+2025-03-01,Downtown Clinic,Follow Up,Cardiology,Cancelled,28,102,160.83
+2025-05-26,Riverside Health Campus,Annual Physical,Family Medicine,No Show,164,66,127.16
+2024-07-19,Riverside Health Campus,Annual Physical,Dermatology,Rescheduled,176,102,190.45
+2024-12-10,Riverside Health Campus,Annual Physical,Family Medicine,Cancelled,149,117,223.32
+2024-12-27,Northside Medical Center,Follow Up,Cardiology,Scheduled,29,42,132.7
+2024-11-24,Riverside Health Campus,Annual Physical,Dermatology,Completed,106,43,51.94
+2024-09-25,Westgate Family Practice,Annual Physical,Family Medicine,Scheduled,138,43,93.9
+2024-03-09,Downtown Clinic,Procedure,Family Medicine,Completed,69,47,179.36
+2024-12-11,Northside Medical Center,Initial Consult,Dermatology,No Show,54,51,112.46
+2025-02-19,Downtown Clinic,Follow Up,Family Medicine,Scheduled,50,92,177.8
+2024-08-02,Westgate Family Practice,Lab Review,Family Medicine,Completed,120,15,174.19
+2024-12-23,Riverside Health Campus,Initial Consult,Orthopedics,Scheduled,87,64,63.81
+2024-02-17,Riverside Health Campus,Annual Physical,Orthopedics,No Show,72,37,227.64
+2024-04-17,Downtown Clinic,Lab Review,Cardiology,Rescheduled,28,11,76.5
+2024-08-05,Westgate Family Practice,Follow Up,Family Medicine,Cancelled,173,106,48.76
+2025-03-22,Riverside Health Campus,Annual Physical,Dermatology,Scheduled,53,104,13.96
+2025-04-05,Downtown Clinic,Lab Review,Dermatology,Scheduled,105,10,92.83
+2024-02-21,Northside Medical Center,Procedure,Cardiology,Scheduled,150,108,49.61
+2024-10-31,Westgate Family Practice,Procedure,Orthopedics,Rescheduled,180,92,116.43
+2024-01-04,Riverside Health Campus,Annual Physical,Orthopedics,Cancelled,126,55,175.63
+2025-04-29,Northside Medical Center,Lab Review,Orthopedics,Scheduled,42,40,141.11
+2024-06-29,Westgate Family Practice,Initial Consult,Dermatology,Cancelled,147,43,217.13
+2025-04-09,Westgate Family Practice,Initial Consult,Family Medicine,No Show,107,54,181.39
+2025-04-13,Northside Medical Center,Annual Physical,Dermatology,Cancelled,7,71,175.32
+2024-09-29,Riverside Health Campus,Procedure,Orthopedics,Cancelled,8,27,67.43
+2024-09-10,Westgate Family Practice,Initial Consult,Cardiology,Scheduled,33,85,73.34
+2025-04-06,Westgate Family Practice,Follow Up,Dermatology,Rescheduled,96,74,204.96
+2024-06-21,Westgate Family Practice,Lab Review,Family Medicine,Scheduled,53,10,237.0
+2024-02-20,Downtown Clinic,Initial Consult,Family Medicine,No Show,81,44,159.3
+2025-06-22,Westgate Family Practice,Initial Consult,Orthopedics,Cancelled,125,87,19.57
+2024-01-12,Riverside Health Campus,Procedure,Orthopedics,Cancelled,71,22,202.84
+2025-01-09,Downtown Clinic,Initial Consult,Cardiology,Rescheduled,22,54,119.23
+2024-10-17,Riverside Health Campus,Annual Physical,Cardiology,Rescheduled,126,27,26.88
+2025-02-20,Downtown Clinic,Initial Consult,Dermatology,Rescheduled,90,92,219.67
+2024-02-05,Riverside Health Campus,Follow Up,Family Medicine,Rescheduled,145,56,12.88
+2024-10-01,Riverside Health Campus,Initial Consult,Cardiology,No Show,77,109,187.9
+2024-03-18,Riverside Health Campus,Lab Review,Orthopedics,Rescheduled,172,16,12.51
+2025-05-11,Riverside Health Campus,Lab Review,Dermatology,Scheduled,122,61,176.05
+2024-11-06,Riverside Health Campus,Initial Consult,Dermatology,Scheduled,112,49,162.34
+2025-02-03,Downtown Clinic,Procedure,Dermatology,Cancelled,87,96,36.09
+2024-12-08,Riverside Health Campus,Procedure,Cardiology,Completed,62,108,35.01
+2025-01-10,Downtown Clinic,Procedure,Dermatology,Cancelled,136,84,135.62
+2024-08-24,Downtown Clinic,Follow Up,Cardiology,Scheduled,153,77,216.47
+2024-09-06,Downtown Clinic,Initial Consult,Cardiology,Cancelled,116,39,146.52
+2024-08-13,Downtown Clinic,Lab Review,Family Medicine,Rescheduled,82,119,38.78
+2024-05-23,Westgate Family Practice,Procedure,Orthopedics,No Show,60,10,221.19
+2025-04-14,Downtown Clinic,Lab Review,Cardiology,Rescheduled,41,51,238.72
+2024-05-15,Northside Medical Center,Lab Review,Dermatology,Scheduled,142,28,25.42
+2024-12-21,Downtown Clinic,Procedure,Cardiology,Cancelled,78,50,77.52
+2024-12-20,Westgate Family Practice,Initial Consult,Family Medicine,No Show,128,24,0.76
+2024-09-16,Riverside Health Campus,Lab Review,Dermatology,Scheduled,9,120,79.8
+2024-10-04,Riverside Health Campus,Initial Consult,Dermatology,Rescheduled,68,59,97.5
+2024-05-04,Downtown Clinic,Annual Physical,Cardiology,Cancelled,86,120,83.3
+2024-04-16,Downtown Clinic,Annual Physical,Orthopedics,No Show,49,25,80.06
+2024-07-08,Downtown Clinic,Procedure,Family Medicine,Rescheduled,84,48,31.11
+2024-08-27,Riverside Health Campus,Annual Physical,Cardiology,Completed,24,108,114.07
+2024-09-24,Westgate Family Practice,Annual Physical,Family Medicine,Scheduled,102,29,92.5
+2024-01-07,Downtown Clinic,Follow Up,Cardiology,Scheduled,84,119,83.44
+2025-02-27,Riverside Health Campus,Procedure,Family Medicine,Rescheduled,106,17,79.56
+2025-05-13,Riverside Health Campus,Initial Consult,Cardiology,No Show,88,107,189.3
+2024-04-14,Downtown Clinic,Procedure,Orthopedics,Completed,44,103,13.75
+2024-08-18,Riverside Health Campus,Annual Physical,Dermatology,Scheduled,20,112,213.3
+2024-07-31,Riverside Health Campus,Lab Review,Dermatology,Completed,153,30,36.52
+2024-05-15,Riverside Health Campus,Annual Physical,Cardiology,Cancelled,50,72,101.96
+2025-05-07,Downtown Clinic,Procedure,Family Medicine,Completed,146,103,117.31
+2025-02-07,Riverside Health Campus,Annual Physical,Family Medicine,Completed,22,77,38.51
+2025-03-30,Northside Medical Center,Follow Up,Cardiology,No Show,68,25,81.9
+2024-11-08,Downtown Clinic,Lab Review,Family Medicine,Scheduled,86,104,26.88
+2025-03-22,Northside Medical Center,Lab Review,Cardiology,Rescheduled,38,86,10.75
+2024-05-20,Northside Medical Center,Lab Review,Cardiology,Rescheduled,147,64,66.17
+2024-04-25,Westgate Family Practice,Annual Physical,Cardiology,Completed,121,52,224.69
+2025-04-06,Downtown Clinic,Follow Up,Cardiology,No Show,149,23,77.04
+2025-02-23,Northside Medical Center,Lab Review,Cardiology,Cancelled,5,45,206.12
+2024-07-09,Downtown Clinic,Procedure,Family Medicine,Completed,156,104,82.78
+2024-08-10,Northside Medical Center,Follow Up,Cardiology,Rescheduled,29,53,40.96
+2024-05-13,Westgate Family Practice,Initial Consult,Orthopedics,Rescheduled,125,19,51.53
+2024-07-27,Downtown Clinic,Follow Up,Dermatology,Cancelled,124,113,163.29
+2024-01-14,Northside Medical Center,Procedure,Family Medicine,Rescheduled,52,68,193.67
+2025-05-06,Downtown Clinic,Annual Physical,Orthopedics,Completed,37,77,95.16
+2024-08-27,Riverside Health Campus,Initial Consult,Orthopedics,Completed,111,111,149.15
+2025-02-22,Downtown Clinic,Lab Review,Family Medicine,No Show,71,66,80.07
+2024-11-28,Downtown Clinic,Follow Up,Family Medicine,No Show,101,95,181.39
+2024-01-29,Riverside Health Campus,Annual Physical,Family Medicine,Scheduled,87,75,66.61
+2024-05-12,Downtown Clinic,Procedure,Dermatology,Completed,111,40,41.4
+2024-12-04,Riverside Health Campus,Lab Review,Cardiology,Rescheduled,37,25,146.37
+2024-01-20,Northside Medical Center,Initial Consult,Family Medicine,No Show,73,109,209.23
+2024-12-24,Riverside Health Campus,Annual Physical,Dermatology,Rescheduled,91,103,212.72
+2024-11-18,Downtown Clinic,Follow Up,Orthopedics,Completed,46,92,194.32
+2024-02-12,Westgate Family Practice,Procedure,Orthopedics,Cancelled,175,109,70.39
+2024-04-19,Westgate Family Practice,Procedure,Cardiology,No Show,131,72,47.63
+2024-10-14,Riverside Health Campus,Initial Consult,Dermatology,Scheduled,10,69,173.51
+2025-02-11,Northside Medical Center,Lab Review,Cardiology,Rescheduled,157,39,24.99
+2024-06-22,Riverside Health Campus,Annual Physical,Family Medicine,Completed,173,40,4.53
+2024-07-01,Riverside Health Campus,Annual Physical,Family Medicine,No Show,25,52,37.35
+2025-05-17,Riverside Health Campus,Lab Review,Family Medicine,Cancelled,69,95,148.81
+2024-01-04,Riverside Health Campus,Annual Physical,Dermatology,Scheduled,25,93,146.62
+2024-02-26,Westgate Family Practice,Follow Up,Cardiology,Scheduled,155,82,95.74
+2024-11-03,Riverside Health Campus,Lab Review,Cardiology,Cancelled,1,13,199.97
+2024-12-22,Riverside Health Campus,Annual Physical,Orthopedics,Cancelled,7,17,183.64
+2025-03-28,Downtown Clinic,Initial Consult,Family Medicine,Rescheduled,114,84,98.75
+2024-11-28,Riverside Health Campus,Procedure,Family Medicine,Scheduled,143,15,209.38
+2024-02-09,Westgate Family Practice,Initial Consult,Family Medicine,Completed,117,98,128.77
+2024-04-13,Downtown Clinic,Follow Up,Family Medicine,No Show,174,36,56.42
+2024-05-12,Westgate Family Practice,Annual Physical,Dermatology,Scheduled,171,77,181.71
+2024-04-17,Riverside Health Campus,Annual Physical,Dermatology,No Show,45,41,85.66
+2025-05-16,Westgate Family Practice,Initial Consult,Dermatology,Cancelled,146,17,177.89
+2024-09-06,Downtown Clinic,Procedure,Orthopedics,Scheduled,151,83,246.78
+2025-01-11,Downtown Clinic,Annual Physical,Orthopedics,Scheduled,166,17,100.74
+2024-10-13,Downtown Clinic,Lab Review,Dermatology,Rescheduled,8,116,176.79
+2024-08-15,Northside Medical Center,Initial Consult,Dermatology,Cancelled,173,114,216.05
+2025-06-08,Northside Medical Center,Annual Physical,Orthopedics,No Show,163,30,49.0
+2024-01-24,Westgate Family Practice,Follow Up,Family Medicine,Cancelled,156,85,172.6
+2025-06-17,Westgate Family Practice,Lab Review,Orthopedics,No Show,6,91,124.94
+2025-06-17,Westgate Family Practice,Initial Consult,Family Medicine,Cancelled,105,44,37.73
+2025-02-13,Northside Medical Center,Annual Physical,Cardiology,Rescheduled,123,11,119.05
+2024-11-12,Northside Medical Center,Lab Review,Orthopedics,No Show,163,111,47.83
+2025-04-05,Riverside Health Campus,Lab Review,Dermatology,Rescheduled,11,38,47.45
+2024-02-28,Downtown Clinic,Follow Up,Orthopedics,Rescheduled,73,15,119.11
+2025-05-10,Westgate Family Practice,Annual Physical,Cardiology,Cancelled,78,43,245.45
+2025-04-17,Downtown Clinic,Initial Consult,Family Medicine,Scheduled,84,62,102.38
+2025-03-12,Downtown Clinic,Lab Review,Family Medicine,Cancelled,163,89,28.14
+2025-05-25,Westgate Family Practice,Lab Review,Dermatology,Cancelled,171,40,99.91
+2024-12-27,Riverside Health Campus,Annual Physical,Cardiology,Rescheduled,99,33,135.79
+2025-06-13,Downtown Clinic,Procedure,Dermatology,Scheduled,37,104,121.33
+2024-07-13,Riverside Health Campus,Follow Up,Family Medicine,Completed,179,80,203.6
+2025-02-20,Westgate Family Practice,Procedure,Family Medicine,Rescheduled,66,37,161.32
+2024-02-22,Westgate Family Practice,Annual Physical,Cardiology,Scheduled,20,37,50.69
+2024-11-23,Downtown Clinic,Initial Consult,Dermatology,Scheduled,15,88,110.19
+2024-01-26,Riverside Health Campus,Annual Physical,Dermatology,Cancelled,36,120,219.64
+2025-05-31,Northside Medical Center,Follow Up,Dermatology,Rescheduled,139,38,20.79
+2024-06-11,Northside Medical Center,Annual Physical,Dermatology,Cancelled,101,76,43.0
+2025-04-22,Westgate Family Practice,Follow Up,Family Medicine,Completed,27,79,110.01
+2024-09-10,Westgate Family Practice,Procedure,Dermatology,Rescheduled,105,71,65.3
+2024-01-09,Northside Medical Center,Initial Consult,Orthopedics,Scheduled,171,11,218.26
+2024-07-08,Downtown Clinic,Initial Consult,Dermatology,Rescheduled,49,119,4.23
+2024-06-22,Northside Medical Center,Follow Up,Family Medicine,Rescheduled,153,119,204.71
+2024-01-27,Riverside Health Campus,Initial Consult,Dermatology,Rescheduled,125,79,160.69
+2025-05-10,Downtown Clinic,Procedure,Cardiology,Cancelled,38,109,137.02
+2024-12-14,Northside Medical Center,Annual Physical,Orthopedics,Cancelled,85,63,131.62
+2025-02-09,Northside Medical Center,Lab Review,Family Medicine,No Show,129,104,41.08
+2025-03-29,Northside Medical Center,Initial Consult,Orthopedics,Scheduled,100,11,117.3
+2025-01-02,Northside Medical Center,Initial Consult,Dermatology,Rescheduled,156,114,90.74
+2025-04-11,Northside Medical Center,Annual Physical,Orthopedics,Scheduled,146,20,115.69
+2025-05-09,Riverside Health Campus,Initial Consult,Family Medicine,Cancelled,73,47,29.44
+2024-07-24,Northside Medical Center,Initial Consult,Dermatology,Scheduled,22,21,238.56
+2024-08-11,Westgate Family Practice,Follow Up,Family Medicine,No Show,131,74,160.23
+2024-10-28,Westgate Family Practice,Lab Review,Orthopedics,Scheduled,140,64,223.7
+2025-06-05,Downtown Clinic,Procedure,Family Medicine,No Show,106,13,214.4
+2024-07-03,Riverside Health Campus,Procedure,Family Medicine,Completed,110,107,188.57
+2024-06-26,Downtown Clinic,Procedure,Orthopedics,Scheduled,175,22,78.72
+2024-05-21,Northside Medical Center,Initial Consult,Dermatology,No Show,9,97,243.71
+2024-09-15,Downtown Clinic,Initial Consult,Family Medicine,No Show,9,99,135.24
+2024-02-01,Riverside Health Campus,Follow Up,Dermatology,Rescheduled,86,57,207.67
+2025-02-09,Riverside Health Campus,Initial Consult,Family Medicine,Scheduled,21,36,213.34
+2024-06-12,Northside Medical Center,Procedure,Orthopedics,Completed,172,94,197.91
+2024-01-12,Riverside Health Campus,Annual Physical,Cardiology,Completed,57,105,19.35
+2024-09-04,Northside Medical Center,Follow Up,Dermatology,Cancelled,175,118,229.41
+2024-09-07,Riverside Health Campus,Follow Up,Dermatology,Completed,137,51,73.0
+2024-05-05,Northside Medical Center,Initial Consult,Orthopedics,Cancelled,88,115,168.0
+2024-09-15,Riverside Health Campus,Annual Physical,Dermatology,Scheduled,49,115,226.41
+2024-10-19,Westgate Family Practice,Procedure,Family Medicine,Completed,121,103,146.99
+2024-02-19,Northside Medical Center,Annual Physical,Cardiology,Cancelled,81,72,233.98
+2025-01-19,Northside Medical Center,Lab Review,Cardiology,Cancelled,52,110,50.1
+2024-04-06,Downtown Clinic,Procedure,Cardiology,Rescheduled,102,80,134.04
+2024-04-19,Downtown Clinic,Initial Consult,Dermatology,Scheduled,154,45,23.13
+2024-11-22,Northside Medical Center,Lab Review,Cardiology,Scheduled,130,85,142.29
+2025-02-02,Northside Medical Center,Lab Review,Cardiology,Cancelled,98,93,157.7
+2025-03-29,Downtown Clinic,Initial Consult,Dermatology,Completed,89,113,141.06
+2024-02-08,Downtown Clinic,Annual Physical,Dermatology,No Show,113,114,67.37
+2025-01-15,Westgate Family Practice,Annual Physical,Family Medicine,No Show,113,28,154.63
+2025-01-07,Riverside Health Campus,Annual Physical,Orthopedics,Completed,41,30,171.89
+2024-08-11,Downtown Clinic,Follow Up,Cardiology,Rescheduled,38,65,64.77
+2024-04-12,Downtown Clinic,Annual Physical,Cardiology,Scheduled,32,39,24.1
+2024-06-07,Downtown Clinic,Annual Physical,Family Medicine,Completed,9,14,10.78
+2024-09-27,Northside Medical Center,Follow Up,Orthopedics,Completed,119,10,235.06
+2025-05-31,Northside Medical Center,Procedure,Cardiology,Completed,31,49,205.11
+2025-04-13,Northside Medical Center,Follow Up,Dermatology,Cancelled,67,111,156.17
+2024-04-06,Westgate Family Practice,Procedure,Dermatology,Completed,175,30,31.13
+2024-10-26,Downtown Clinic,Lab Review,Dermatology,Cancelled,100,52,214.87
+2024-06-18,Northside Medical Center,Follow Up,Orthopedics,Completed,16,18,115.67
+2024-03-09,Northside Medical Center,Initial Consult,Dermatology,Cancelled,27,61,59.5
+2024-01-01,Westgate Family Practice,Lab Review,Orthopedics,No Show,113,75,114.21
+2025-06-07,Northside Medical Center,Follow Up,Family Medicine,No Show,138,74,65.15
+2024-12-10,Riverside Health Campus,Annual Physical,Orthopedics,Completed,38,23,39.48
+2025-05-10,Westgate Family Practice,Procedure,Orthopedics,No Show,129,80,76.51
+2025-02-03,Riverside Health Campus,Follow Up,Cardiology,No Show,172,73,204.31
+2024-10-17,Downtown Clinic,Follow Up,Family Medicine,Cancelled,141,20,236.01
+2024-10-17,Downtown Clinic,Follow Up,Dermatology,No Show,3,66,4.36
+2024-04-16,Northside Medical Center,Procedure,Cardiology,Completed,15,109,158.95
+2024-05-05,Northside Medical Center,Procedure,Cardiology,Cancelled,113,98,21.59
+2025-02-22,Downtown Clinic,Annual Physical,Dermatology,Cancelled,58,73,168.19
+2024-10-27,Riverside Health Campus,Annual Physical,Family Medicine,Scheduled,128,45,114.93
+2025-03-05,Northside Medical Center,Lab Review,Cardiology,Completed,133,110,201.54
+2024-10-22,Downtown Clinic,Initial Consult,Cardiology,Completed,12,16,95.08
+2024-02-24,Westgate Family Practice,Procedure,Orthopedics,Cancelled,91,93,220.51
+2025-04-14,Westgate Family Practice,Initial Consult,Family Medicine,Cancelled,148,64,205.19
+2024-05-08,Downtown Clinic,Annual Physical,Cardiology,Cancelled,120,14,67.74
+2024-10-28,Downtown Clinic,Lab Review,Cardiology,Rescheduled,109,50,38.68
+2024-10-31,Riverside Health Campus,Follow Up,Orthopedics,No Show,9,79,143.29
+2024-11-09,Northside Medical Center,Initial Consult,Dermatology,Rescheduled,52,88,199.88
+2025-01-01,Downtown Clinic,Follow Up,Family Medicine,Scheduled,48,48,239.59
+2024-09-13,Downtown Clinic,Annual Physical,Family Medicine,Scheduled,119,15,185.26
+2024-04-07,Riverside Health Campus,Procedure,Family Medicine,Completed,131,28,130.0
+2025-01-06,Riverside Health Campus,Procedure,Orthopedics,Scheduled,143,55,192.54
+2024-08-10,Riverside Health Campus,Lab Review,Family Medicine,No Show,172,29,26.64
+2024-02-19,Westgate Family Practice,Lab Review,Cardiology,Scheduled,4,27,12.18
+2025-05-22,Westgate Family Practice,Procedure,Cardiology,No Show,58,77,242.28
+2025-05-19,Riverside Health Campus,Lab Review,Orthopedics,Completed,112,84,67.94

@@ -1,0 +1,241 @@
+inspectionDate,productLine,defectType,shiftCode,unitsInspected,defectCount,defectRatePct,reworkCostUsd
+2024-10-26,Assembly,Dimensional Variance,Evening,3048,363,8.47,25382.23
+2024-07-26,Injection Molding,Scratch,Day,911,273,16.72,26004.66
+2024-04-11,Assembly,Discoloration,Evening,3493,37,22.3,34806.17
+2024-05-06,Packaging,Dimensional Variance,Night,1448,34,21.43,28018.99
+2025-01-21,Machining,Burr,Day,3398,355,6.07,12257.24
+2025-04-29,Injection Molding,Dimensional Variance,Night,1891,77,10.94,2956.48
+2025-04-08,Electronics,Discoloration,Day,3990,374,21.41,21239.64
+2025-04-26,Electronics,Dimensional Variance,Evening,50,217,22.39,12824.47
+2024-07-10,Electronics,Burr,Night,4667,237,15.77,20112.74
+2025-02-23,Machining,Burr,Day,2032,84,18.98,40554.04
+2024-04-24,Stamping,Scratch,Evening,632,358,14.35,2060.22
+2025-03-03,Stamping,Dimensional Variance,Night,1115,233,13.21,4060.31
+2024-04-20,Packaging,Crack,Night,725,48,20.19,39917.6
+2025-05-06,Electronics,Missing Component,Evening,1604,44,17.23,5811.58
+2025-01-01,Injection Molding,Dimensional Variance,Night,2169,164,10.82,42432.64
+2024-07-12,Assembly,Burr,Evening,2589,28,15.57,14835.07
+2025-05-29,Machining,Burr,Night,1945,110,11.46,35649.5
+2025-05-10,Electronics,Missing Component,Night,3157,351,10.07,2164.17
+2025-03-07,Assembly,Discoloration,Day,4051,252,3.9,42006.07
+2024-06-03,Machining,Missing Component,Night,3324,264,3.99,21214.47
+2025-02-11,Assembly,Porosity,Evening,956,119,22.83,8263.21
+2024-04-14,Assembly,Scratch,Night,488,252,6.55,6026.44
+2024-10-05,Packaging,Discoloration,Night,1022,311,18.42,2886.81
+2025-06-04,Packaging,Crack,Night,4724,174,22.07,5143.78
+2024-12-31,Assembly,Crack,Day,4034,285,11.01,1393.98
+2024-01-26,Machining,Scratch,Evening,264,40,16.52,4502.94
+2025-06-22,Machining,Burr,Night,1745,372,14.76,41245.5
+2024-12-07,Packaging,Porosity,Night,3197,11,23.54,1085.57
+2025-03-19,Injection Molding,Porosity,Day,3289,141,4.81,9882.66
+2025-05-19,Electronics,Missing Component,Day,262,260,0.71,1506.4
+2024-08-03,Machining,Missing Component,Day,222,395,16.97,1246.27
+2025-02-08,Assembly,Missing Component,Day,2841,44,13.73,46104.03
+2025-01-05,Stamping,Porosity,Day,2730,326,16.96,37249.56
+2025-03-01,Electronics,Discoloration,Night,915,373,19.84,44774.22
+2025-02-01,Stamping,Porosity,Evening,4703,79,19.27,19318.51
+2024-07-08,Injection Molding,Burr,Day,4600,215,22.99,20417.19
+2024-04-04,Machining,Missing Component,Night,4774,172,4.09,43330.53
+2024-04-17,Packaging,Discoloration,Day,1046,98,16.78,36782.05
+2024-01-04,Stamping,Discoloration,Day,1064,186,17.48,25473.42
+2025-01-09,Packaging,Crack,Evening,2139,278,2.53,12523.54
+2024-02-28,Electronics,Burr,Evening,3729,21,17.96,15163.41
+2024-07-19,Assembly,Missing Component,Night,3807,140,23.93,8678.18
+2024-10-19,Packaging,Dimensional Variance,Day,521,326,17.19,19298.88
+2024-11-06,Injection Molding,Missing Component,Day,579,27,19.4,42537.35
+2025-03-11,Machining,Missing Component,Evening,3716,199,3.98,892.52
+2025-05-10,Injection Molding,Crack,Evening,1652,214,0.94,32384.8
+2024-12-19,Assembly,Burr,Day,2438,372,14.39,28468.3
+2024-06-21,Electronics,Discoloration,Night,3914,66,6.0,47127.36
+2024-09-23,Electronics,Discoloration,Night,3281,70,9.96,11467.63
+2025-03-18,Machining,Porosity,Night,732,186,6.48,146.14
+2024-02-05,Assembly,Crack,Day,4808,261,13.33,20306.3
+2025-02-23,Packaging,Discoloration,Evening,3809,388,2.89,17795.04
+2024-09-14,Assembly,Discoloration,Evening,3533,337,24.17,36376.76
+2024-01-29,Packaging,Burr,Night,3883,246,15.76,47973.35
+2024-01-14,Machining,Dimensional Variance,Evening,1312,366,23.05,35195.17
+2025-06-07,Machining,Crack,Night,4695,45,9.69,22635.73
+2025-01-12,Packaging,Porosity,Evening,767,116,22.69,14205.58
+2024-09-13,Assembly,Porosity,Night,532,234,15.54,33191.13
+2024-05-26,Electronics,Porosity,Day,1820,104,9.16,3797.32
+2024-04-01,Assembly,Porosity,Night,952,362,3.49,7964.04
+2024-10-26,Machining,Porosity,Day,140,379,20.89,16118.8
+2024-08-03,Packaging,Missing Component,Night,1688,306,15.14,12889.28
+2025-05-14,Machining,Porosity,Day,4989,300,6.76,20292.04
+2024-07-16,Assembly,Porosity,Night,1082,287,2.01,8383.28
+2025-01-21,Electronics,Missing Component,Evening,1632,298,10.33,91.5
+2024-05-14,Assembly,Crack,Night,648,125,13.97,29939.99
+2024-10-16,Machining,Scratch,Evening,1501,65,22.59,292.74
+2024-01-28,Injection Molding,Burr,Night,1417,94,4.74,45983.34
+2024-09-13,Electronics,Burr,Day,3259,137,7.64,38204.06
+2024-09-09,Injection Molding,Missing Component,Evening,4860,99,13.34,36907.32
+2024-08-10,Injection Molding,Scratch,Evening,1412,141,19.73,47108.46
+2025-04-11,Assembly,Dimensional Variance,Evening,1301,339,12.25,39499.85
+2024-01-04,Assembly,Discoloration,Evening,1308,316,24.97,966.97
+2025-03-20,Machining,Burr,Evening,3032,129,0.19,6666.19
+2025-03-20,Machining,Burr,Night,1202,47,15.49,29168.36
+2025-06-13,Stamping,Burr,Night,2745,98,4.67,20886.57
+2024-08-22,Assembly,Dimensional Variance,Evening,1352,162,0.21,354.9
+2025-06-09,Machining,Dimensional Variance,Night,752,196,2.69,24505.36
+2025-01-15,Injection Molding,Crack,Day,3138,241,14.74,43929.01
+2024-02-20,Electronics,Scratch,Day,2610,395,20.36,40641.06
+2024-10-14,Packaging,Dimensional Variance,Evening,572,193,12.46,11014.99
+2024-03-17,Electronics,Dimensional Variance,Night,3326,42,17.51,16076.82
+2025-05-08,Machining,Dimensional Variance,Day,3557,278,15.18,15868.24
+2025-05-06,Packaging,Dimensional Variance,Night,3518,258,1.56,15318.35
+2024-02-13,Stamping,Porosity,Night,2052,110,13.01,21982.44
+2024-06-06,Electronics,Burr,Night,168,351,13.29,38941.42
+2025-02-26,Injection Molding,Dimensional Variance,Night,2267,137,11.7,39820.46
+2024-11-10,Electronics,Scratch,Night,4719,218,3.99,39670.93
+2025-01-30,Packaging,Burr,Day,3876,400,19.45,45331.11
+2024-10-24,Electronics,Burr,Night,2134,14,23.02,17529.08
+2025-02-11,Machining,Missing Component,Evening,2872,30,18.4,41582.9
+2024-04-29,Injection Molding,Missing Component,Night,4264,213,13.28,33970.77
+2025-05-10,Machining,Porosity,Night,4742,382,3.18,21664.72
+2024-09-15,Packaging,Porosity,Day,1766,386,5.75,38490.83
+2024-07-21,Packaging,Crack,Day,2522,333,11.16,47847.81
+2025-02-03,Assembly,Dimensional Variance,Night,4420,94,2.56,9622.14
+2024-07-23,Injection Molding,Dimensional Variance,Evening,2337,62,13.41,8588.06
+2024-11-22,Machining,Discoloration,Evening,2136,75,18.67,47860.06
+2024-01-24,Machining,Discoloration,Night,82,103,13.32,10891.89
+2024-05-27,Electronics,Scratch,Night,1388,85,6.38,16772.03
+2025-02-04,Packaging,Missing Component,Night,1532,304,20.38,29825.97
+2025-05-17,Machining,Missing Component,Evening,1012,264,23.56,47455.41
+2024-12-06,Stamping,Crack,Night,3516,191,20.38,6261.59
+2024-04-01,Assembly,Porosity,Day,3046,115,6.17,21827.84
+2025-02-15,Packaging,Discoloration,Evening,4879,234,3.15,22322.46
+2024-06-25,Electronics,Crack,Day,3358,237,18.61,36571.85
+2025-05-21,Injection Molding,Burr,Evening,2305,143,10.76,29386.34
+2024-03-28,Packaging,Porosity,Evening,2005,124,19.91,41954.25
+2025-06-22,Machining,Crack,Evening,2605,265,11.15,35166.93
+2025-02-21,Machining,Porosity,Night,4931,105,10.12,45714.33
+2024-02-06,Electronics,Missing Component,Evening,1984,242,0.52,47728.1
+2024-11-15,Assembly,Porosity,Evening,177,176,7.4,1645.81
+2025-03-16,Injection Molding,Burr,Evening,1662,168,3.28,13716.45
+2024-04-16,Machining,Dimensional Variance,Evening,594,285,20.12,41853.37
+2024-10-02,Injection Molding,Scratch,Evening,2026,348,20.54,44225.69
+2024-06-17,Injection Molding,Porosity,Evening,4425,215,6.98,35875.39
+2024-08-04,Electronics,Burr,Day,1192,334,22.07,29222.36
+2024-12-07,Stamping,Dimensional Variance,Day,2101,152,14.54,10186.76
+2024-06-06,Stamping,Burr,Day,2828,389,9.88,37378.85
+2025-05-01,Injection Molding,Crack,Night,4821,50,1.87,25269.72
+2024-10-09,Machining,Discoloration,Day,3187,298,10.59,22332.42
+2024-03-30,Machining,Discoloration,Evening,262,165,22.52,26196.89
+2024-09-03,Electronics,Crack,Day,1700,291,15.34,29767.54
+2024-07-07,Packaging,Burr,Night,4942,203,18.3,39262.07
+2025-03-01,Packaging,Porosity,Night,2138,261,24.24,46827.87
+2024-04-03,Stamping,Burr,Evening,1579,347,8.68,26098.47
+2025-02-23,Packaging,Missing Component,Day,3118,357,21.23,39145.95
+2024-03-27,Machining,Crack,Night,423,32,21.33,15328.71
+2024-10-24,Injection Molding,Dimensional Variance,Day,2907,386,12.58,6692.19
+2024-01-27,Machining,Burr,Evening,1061,135,19.71,4961.56
+2024-08-30,Machining,Porosity,Evening,3436,397,6.85,16298.61
+2025-05-30,Electronics,Dimensional Variance,Day,2758,6,12.49,1361.98
+2024-08-03,Packaging,Porosity,Night,1752,109,11.35,47854.97
+2024-05-27,Injection Molding,Discoloration,Evening,4389,68,2.87,41506.01
+2024-03-15,Packaging,Discoloration,Evening,4000,47,7.6,38566.99
+2024-04-09,Injection Molding,Scratch,Day,4891,260,7.78,8485.2
+2024-05-01,Stamping,Missing Component,Night,2535,16,0.39,33985.53
+2025-03-24,Electronics,Burr,Evening,3236,118,5.47,41153.36
+2025-05-01,Packaging,Missing Component,Day,3594,270,9.56,3542.23
+2024-09-23,Machining,Discoloration,Night,1027,84,22.25,25400.75
+2025-03-03,Injection Molding,Dimensional Variance,Night,4332,59,1.51,47723.29
+2024-03-28,Electronics,Dimensional Variance,Night,3320,102,15.51,23891.34
+2024-11-01,Assembly,Missing Component,Day,4618,213,2.08,36970.11
+2024-02-05,Electronics,Discoloration,Day,3495,385,19.93,22312.9
+2024-07-14,Packaging,Missing Component,Evening,2734,394,3.34,42891.36
+2025-04-14,Machining,Burr,Night,2046,140,2.22,38688.46
+2025-04-07,Packaging,Discoloration,Day,330,362,23.36,1315.38
+2024-06-14,Packaging,Crack,Night,3799,13,12.55,38027.75
+2025-01-12,Machining,Dimensional Variance,Evening,1999,196,21.54,12137.95
+2024-12-01,Machining,Crack,Evening,3614,315,3.27,33275.76
+2024-06-08,Injection Molding,Scratch,Evening,1469,116,20.68,21815.09
+2025-04-20,Injection Molding,Burr,Evening,3924,249,19.28,31685.96
+2025-01-29,Injection Molding,Dimensional Variance,Day,2000,297,9.06,13590.06
+2025-02-13,Electronics,Dimensional Variance,Day,993,39,10.01,37283.95
+2024-08-10,Electronics,Missing Component,Night,3996,60,12.65,33689.74
+2024-03-08,Machining,Porosity,Night,1337,164,2.43,20992.37
+2024-05-10,Machining,Missing Component,Night,2046,304,9.38,19169.02
+2025-04-23,Stamping,Burr,Evening,4761,175,23.81,23916.65
+2024-08-08,Stamping,Missing Component,Evening,4216,0,12.33,30202.83
+2025-01-26,Assembly,Scratch,Night,470,130,13.99,46922.78
+2024-12-06,Injection Molding,Discoloration,Night,1923,142,20.43,21694.83
+2025-02-27,Machining,Porosity,Night,2309,102,11.57,47887.7
+2024-09-15,Stamping,Dimensional Variance,Evening,3967,193,18.87,21741.44
+2025-06-05,Packaging,Dimensional Variance,Night,3847,172,0.27,7932.5
+2024-06-25,Packaging,Discoloration,Evening,614,270,0.14,5895.99
+2024-02-10,Assembly,Porosity,Day,1735,295,22.78,44454.46
+2025-03-05,Injection Molding,Dimensional Variance,Day,3027,299,17.16,6196.57
+2024-10-16,Stamping,Scratch,Day,3297,102,18.7,40668.1
+2025-01-10,Stamping,Dimensional Variance,Night,3519,363,10.99,12889.85
+2024-10-09,Injection Molding,Scratch,Evening,1060,276,17.04,44691.57
+2024-12-18,Stamping,Crack,Day,3229,71,12.85,29832.67
+2024-03-01,Stamping,Scratch,Evening,4979,367,3.71,28001.35
+2024-03-08,Machining,Porosity,Night,3751,256,16.19,31387.8
+2025-02-02,Packaging,Missing Component,Day,3118,95,12.81,12867.9
+2025-04-16,Machining,Crack,Evening,3879,220,21.54,42491.66
+2025-06-16,Packaging,Missing Component,Day,3860,308,20.31,10131.4
+2024-01-13,Electronics,Crack,Night,4669,328,6.75,29157.62
+2024-12-03,Machining,Dimensional Variance,Evening,4093,186,8.09,39381.7
+2025-05-07,Injection Molding,Missing Component,Night,4689,116,15.62,29115.54
+2024-10-11,Injection Molding,Discoloration,Evening,3312,265,15.44,37487.94
+2025-04-08,Injection Molding,Crack,Day,2694,395,16.04,13087.58
+2024-04-08,Packaging,Crack,Evening,1667,189,11.84,6273.37
+2025-05-18,Stamping,Dimensional Variance,Day,4987,395,14.01,29810.36
+2025-03-01,Assembly,Discoloration,Night,3190,397,16.15,47369.64
+2024-08-03,Injection Molding,Missing Component,Evening,3090,324,11.35,39653.03
+2025-04-19,Electronics,Crack,Day,1537,177,1.02,17511.83
+2024-04-05,Assembly,Discoloration,Night,4610,55,12.82,34195.46
+2024-11-24,Assembly,Discoloration,Day,4672,306,19.17,18673.81
+2024-08-25,Injection Molding,Dimensional Variance,Day,4753,316,10.73,32665.53
+2024-05-14,Packaging,Missing Component,Night,1697,190,9.99,13642.65
+2024-11-16,Injection Molding,Scratch,Day,4363,177,13.15,40715.89
+2024-12-25,Injection Molding,Discoloration,Day,2767,34,2.13,23810.09
+2024-02-26,Electronics,Missing Component,Evening,4825,3,4.44,6289.04
+2024-01-24,Assembly,Discoloration,Day,3497,171,7.56,37234.21
+2024-02-21,Electronics,Burr,Evening,1932,250,4.34,32724.03
+2024-03-18,Injection Molding,Porosity,Night,4933,348,4.06,29269.3
+2025-03-01,Injection Molding,Missing Component,Day,3317,136,19.69,14546.79
+2024-01-28,Electronics,Scratch,Evening,4674,119,22.48,10147.69
+2024-09-12,Assembly,Scratch,Evening,1708,112,15.17,1121.09
+2024-04-21,Packaging,Crack,Evening,2234,58,2.58,22269.95
+2025-04-09,Machining,Porosity,Day,2231,323,5.32,2433.86
+2024-02-03,Machining,Discoloration,Day,3767,38,9.65,42022.02
+2024-05-01,Stamping,Scratch,Evening,3483,4,11.18,19727.42
+2024-09-11,Machining,Missing Component,Day,694,129,18.4,19242.38
+2024-12-01,Machining,Discoloration,Night,1038,325,22.86,10644.99
+2024-05-04,Machining,Crack,Evening,2885,0,10.81,14656.37
+2024-07-12,Assembly,Missing Component,Night,1478,169,14.83,5181.81
+2024-07-16,Electronics,Porosity,Night,2815,284,19.05,19119.01
+2025-06-21,Machining,Discoloration,Evening,2886,131,7.7,6055.19
+2024-02-13,Packaging,Scratch,Evening,1730,239,21.19,19872.8
+2025-01-04,Stamping,Porosity,Night,477,341,6.23,4779.59
+2025-02-28,Machining,Dimensional Variance,Evening,1831,351,23.35,8670.32
+2024-10-07,Injection Molding,Scratch,Night,2367,195,20.52,32161.78
+2024-06-23,Assembly,Porosity,Night,2018,7,3.24,14985.13
+2024-01-26,Electronics,Crack,Day,1719,99,17.18,5686.21
+2025-02-09,Packaging,Burr,Day,4154,98,16.19,36155.81
+2024-02-10,Injection Molding,Crack,Evening,2244,175,2.82,364.27
+2024-05-29,Assembly,Scratch,Day,615,218,23.43,15845.47
+2024-09-09,Injection Molding,Discoloration,Day,335,269,15.4,25081.31
+2024-03-15,Assembly,Dimensional Variance,Day,1083,397,13.2,11803.61
+2024-06-25,Injection Molding,Dimensional Variance,Night,640,29,22.71,45164.46
+2024-08-10,Injection Molding,Missing Component,Evening,2685,265,17.39,34554.64
+2025-06-11,Stamping,Burr,Evening,3725,235,17.56,34820.34
+2024-12-29,Injection Molding,Discoloration,Night,1306,368,19.88,7414.25
+2024-01-05,Packaging,Discoloration,Evening,1853,86,12.71,46250.2
+2025-03-04,Injection Molding,Burr,Day,3980,67,7.15,24392.96
+2024-01-11,Injection Molding,Porosity,Night,4384,10,21.85,4043.6
+2024-01-21,Stamping,Discoloration,Night,1982,307,16.48,27176.27
+2025-02-15,Packaging,Burr,Night,3611,243,19.48,42518.53
+2024-08-30,Packaging,Discoloration,Day,2290,99,11.96,41624.44
+2024-02-10,Machining,Crack,Evening,4243,89,13.4,28344.83
+2024-10-11,Electronics,Burr,Evening,4472,379,10.63,11204.59
+2024-01-13,Packaging,Dimensional Variance,Night,3505,388,2.35,26295.49
+2025-06-20,Electronics,Crack,Evening,1308,279,23.47,17934.35
+2024-12-23,Assembly,Discoloration,Evening,4176,38,12.69,18835.24
+2024-06-23,Stamping,Missing Component,Day,4791,395,21.96,38201.62
+2025-02-17,Packaging,Dimensional Variance,Night,4341,128,8.74,27488.82
+2024-03-05,Injection Molding,Dimensional Variance,Evening,2297,10,3.34,16354.17
+2025-03-06,Packaging,Burr,Day,2615,214,9.89,25071.26
+2024-04-21,Stamping,Dimensional Variance,Day,2078,233,9.35,15876.37

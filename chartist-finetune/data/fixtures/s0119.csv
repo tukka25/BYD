@@ -1,0 +1,241 @@
+loan_origination_date,loan_product_type,loan_region,loan_status,loan_principal_amount,loan_interest_rate,loan_term_months
+2024-10-02,Small Business,West,Current,547085.09,13.8,357
+2024-06-15,Small Business,Midwest,90 Days Late,505993.28,9.26,50
+2024-11-02,Small Business,Southeast,90 Days Late,374320.39,35.33,117
+2025-04-20,Home Equity,Midwest,Paid Off,132089.27,20.94,203
+2025-05-29,Personal,Pacific Northwest,Current,363286.4,5.46,255
+2024-05-11,Student,Northeast,Paid Off,506297.29,30.85,125
+2024-12-08,Student,West,90 Days Late,98712.27,22.9,78
+2024-04-22,Personal,Southeast,90 Days Late,40735.22,15.22,25
+2024-11-28,Small Business,West,30 Days Late,460897.67,34.96,172
+2025-04-01,Mortgage,Northeast,Current,405940.79,28.79,360
+2025-06-13,Home Equity,Pacific Northwest,Charged Off,321392.18,27.73,139
+2024-03-16,Home Equity,Pacific Northwest,Current,208718.18,26.51,95
+2024-06-04,Auto,Southwest,90 Days Late,151730.68,31.54,276
+2024-06-13,Small Business,Pacific Northwest,90 Days Late,161211.31,23.1,88
+2024-07-22,Auto,Southwest,Charged Off,265807.26,30.46,332
+2024-03-15,Student,Pacific Northwest,90 Days Late,382661.92,35.85,300
+2025-02-22,Small Business,Northeast,Charged Off,102028.84,31.21,297
+2024-10-11,Student,Midwest,90 Days Late,127479.72,20.47,272
+2025-06-08,Mortgage,Southeast,Charged Off,481237.77,24.62,189
+2025-05-14,Student,Pacific Northwest,90 Days Late,168697.3,13.82,327
+2024-11-12,Mortgage,Northeast,Current,388752.86,18.52,352
+2024-10-15,Small Business,Pacific Northwest,60 Days Late,233605.35,34.89,132
+2024-12-11,Personal,West,Paid Off,239364.54,6.77,93
+2024-05-25,Small Business,Northeast,30 Days Late,295504.62,2.82,303
+2025-05-02,Personal,West,Paid Off,503849.97,15.63,230
+2025-05-28,Student,Southeast,30 Days Late,95850.94,29.2,171
+2025-02-06,Auto,Midwest,60 Days Late,121681.01,35.58,204
+2024-08-15,Personal,Northeast,Current,533576.15,5.32,333
+2025-03-24,Home Equity,Southwest,30 Days Late,571115.57,25.0,283
+2024-05-20,Auto,Southeast,90 Days Late,303580.61,8.11,130
+2024-12-17,Home Equity,Midwest,30 Days Late,269734.77,25.58,312
+2024-10-29,Small Business,Southeast,Paid Off,435373.03,26.37,241
+2025-01-09,Small Business,West,Charged Off,264546.71,10.49,223
+2025-05-23,Personal,Pacific Northwest,90 Days Late,597692.22,9.95,270
+2025-01-07,Student,Pacific Northwest,60 Days Late,58987.64,33.79,287
+2025-04-22,Home Equity,Pacific Northwest,60 Days Late,14683.51,11.48,88
+2024-02-23,Personal,Southeast,30 Days Late,489439.15,21.92,326
+2024-08-31,Mortgage,Southwest,90 Days Late,454874.0,20.16,132
+2024-10-14,Personal,Southwest,90 Days Late,527237.3,35.49,65
+2024-04-21,Mortgage,Midwest,90 Days Late,169330.02,26.65,21
+2024-01-16,Mortgage,Southwest,Paid Off,274028.27,19.48,201
+2024-10-11,Personal,Northeast,Paid Off,512222.6,12.49,305
+2024-05-24,Student,West,90 Days Late,645650.57,22.82,347
+2024-01-05,Student,Southwest,30 Days Late,704437.94,31.74,348
+2024-09-01,Mortgage,Northeast,30 Days Late,340273.95,22.8,277
+2025-01-03,Personal,West,Paid Off,506529.03,9.07,264
+2025-06-06,Auto,Northeast,Current,666961.87,19.65,273
+2024-02-19,Mortgage,Southwest,Current,134527.81,9.59,44
+2025-05-12,Personal,Southwest,60 Days Late,36027.86,20.91,162
+2024-03-28,Student,West,Current,325319.88,13.72,301
+2024-08-24,Mortgage,Northeast,Charged Off,249042.87,7.53,70
+2025-03-31,Small Business,Pacific Northwest,Current,382812.56,16.52,346
+2025-02-28,Home Equity,West,90 Days Late,537854.96,32.76,224
+2024-03-24,Personal,Southwest,Current,338262.4,15.94,215
+2024-08-01,Home Equity,Northeast,Current,434130.64,22.98,69
+2024-09-07,Personal,Southeast,90 Days Late,749556.52,24.44,320
+2024-04-30,Small Business,Southeast,Current,411851.89,6.46,53
+2024-01-20,Small Business,West,Current,544976.91,22.97,211
+2025-06-07,Personal,Pacific Northwest,Charged Off,35056.21,15.81,154
+2024-07-30,Auto,Northeast,30 Days Late,481361.67,16.02,115
+2025-03-02,Mortgage,Northeast,60 Days Late,301474.46,6.33,56
+2024-07-16,Mortgage,Northeast,Charged Off,606230.98,24.57,219
+2025-04-02,Small Business,Pacific Northwest,60 Days Late,493649.31,23.9,29
+2024-03-15,Personal,Southwest,Charged Off,366956.19,34.15,249
+2025-04-09,Small Business,Northeast,90 Days Late,145453.49,32.47,340
+2024-05-27,Mortgage,Southeast,30 Days Late,108334.22,8.41,212
+2025-02-11,Mortgage,Southeast,90 Days Late,128710.71,24.36,187
+2024-08-21,Student,Midwest,Current,183824.38,4.11,344
+2024-04-23,Personal,Southeast,Current,113769.56,11.39,193
+2025-05-14,Auto,Southeast,Current,100375.61,34.83,146
+2024-11-20,Mortgage,Southwest,Current,9355.29,23.01,232
+2025-04-04,Home Equity,Midwest,30 Days Late,701060.89,20.56,245
+2024-02-17,Home Equity,Northeast,Paid Off,144268.34,23.78,68
+2025-02-08,Mortgage,West,30 Days Late,693886.82,5.8,344
+2024-11-13,Auto,Northeast,Current,725170.87,18.91,114
+2024-01-31,Student,Southwest,90 Days Late,90681.77,5.02,252
+2024-10-22,Mortgage,Midwest,Current,421594.53,12.86,263
+2024-09-21,Home Equity,Northeast,Charged Off,272369.68,25.95,265
+2025-03-07,Home Equity,Pacific Northwest,30 Days Late,26815.34,29.7,28
+2024-12-10,Home Equity,Midwest,Current,375286.23,19.4,118
+2024-10-16,Home Equity,Southwest,Paid Off,16694.12,28.19,167
+2024-04-26,Mortgage,Pacific Northwest,60 Days Late,500962.05,29.15,255
+2025-03-28,Home Equity,Northeast,60 Days Late,470636.55,15.01,16
+2024-10-10,Personal,Northeast,Current,594466.38,17.88,55
+2025-03-29,Personal,Southeast,90 Days Late,569015.13,12.35,37
+2024-09-12,Small Business,Pacific Northwest,Current,100092.87,2.62,169
+2024-06-12,Home Equity,Southeast,60 Days Late,282444.8,6.2,270
+2025-04-16,Personal,Northeast,30 Days Late,649475.03,29.66,234
+2025-01-13,Small Business,West,90 Days Late,285783.71,3.87,227
+2024-09-11,Auto,West,60 Days Late,210122.15,7.62,343
+2025-06-10,Student,Midwest,Paid Off,310379.28,9.28,335
+2025-03-19,Auto,Midwest,Charged Off,207462.26,27.72,149
+2024-12-04,Personal,Southwest,30 Days Late,385650.45,3.17,13
+2025-02-08,Auto,Pacific Northwest,90 Days Late,432949.69,12.48,104
+2024-12-12,Personal,Southwest,60 Days Late,635381.49,13.91,113
+2025-04-10,Mortgage,West,90 Days Late,27298.95,19.59,162
+2024-05-08,Home Equity,Pacific Northwest,90 Days Late,613482.78,29.28,36
+2025-01-03,Student,Pacific Northwest,Paid Off,25896.62,25.15,136
+2025-03-11,Student,Southwest,Current,663621.41,28.0,83
+2024-04-27,Home Equity,Southwest,Paid Off,569809.33,35.4,73
+2024-05-25,Small Business,Pacific Northwest,Charged Off,320992.61,35.92,190
+2025-06-03,Auto,Midwest,30 Days Late,292340.77,29.88,36
+2025-04-25,Student,Northeast,Paid Off,342593.68,2.79,155
+2025-05-11,Home Equity,Midwest,Paid Off,301480.14,19.33,145
+2024-04-29,Mortgage,Midwest,Charged Off,310922.8,21.28,24
+2025-03-31,Small Business,Pacific Northwest,Current,452370.87,5.6,80
+2025-05-22,Student,West,Paid Off,16066.83,5.19,346
+2024-02-09,Auto,Southwest,Paid Off,258714.06,29.11,232
+2024-10-12,Small Business,Northeast,Charged Off,440881.75,10.25,333
+2024-03-13,Personal,West,90 Days Late,451426.77,7.42,16
+2024-10-20,Small Business,Midwest,90 Days Late,413605.53,19.62,326
+2025-06-18,Small Business,Northeast,30 Days Late,179912.45,15.01,231
+2025-05-21,Small Business,Southwest,Charged Off,621067.11,28.33,121
+2025-01-24,Home Equity,Midwest,Charged Off,486438.15,21.56,124
+2024-06-14,Student,Pacific Northwest,30 Days Late,504813.38,35.58,240
+2024-02-08,Home Equity,West,60 Days Late,22629.52,26.17,202
+2025-05-25,Auto,Southeast,90 Days Late,674756.7,27.0,313
+2025-03-15,Home Equity,West,Paid Off,93378.64,29.68,95
+2024-09-08,Auto,Southwest,Charged Off,385491.67,14.05,121
+2025-03-08,Auto,Pacific Northwest,Charged Off,40644.48,14.84,32
+2024-03-22,Home Equity,Southeast,Charged Off,664231.19,14.05,219
+2024-03-08,Small Business,Midwest,Current,189189.89,19.68,34
+2025-06-23,Home Equity,Southeast,90 Days Late,493853.71,17.58,305
+2024-04-18,Student,Southeast,Charged Off,467740.19,10.35,273
+2024-04-01,Small Business,West,60 Days Late,584319.73,12.7,130
+2024-10-26,Small Business,West,Current,351074.43,27.56,278
+2025-03-30,Small Business,Northeast,Paid Off,296914.46,8.7,269
+2025-05-21,Small Business,Pacific Northwest,60 Days Late,402901.68,4.25,143
+2025-01-25,Personal,Northeast,Paid Off,703616.91,4.41,193
+2024-05-01,Auto,West,Paid Off,557992.33,35.82,294
+2025-05-14,Auto,Northeast,Charged Off,597711.21,12.21,100
+2024-06-27,Small Business,Midwest,Charged Off,682779.02,9.14,180
+2025-05-06,Personal,Northeast,90 Days Late,560718.87,6.44,74
+2025-02-17,Personal,Midwest,30 Days Late,399799.78,11.35,309
+2024-02-11,Personal,Northeast,Paid Off,187496.7,11.0,268
+2024-03-15,Auto,Midwest,Paid Off,555119.96,13.58,80
+2025-03-22,Small Business,Midwest,Paid Off,529353.6,32.72,266
+2025-05-20,Small Business,Midwest,60 Days Late,48280.63,16.04,309
+2024-07-05,Student,Midwest,Paid Off,420048.97,7.01,260
+2025-05-20,Small Business,Northeast,Current,142954.69,19.44,102
+2024-01-02,Personal,Southeast,30 Days Late,708746.63,26.54,88
+2025-04-21,Personal,Midwest,Charged Off,527711.26,10.57,85
+2024-10-05,Auto,Midwest,30 Days Late,490315.67,35.72,315
+2024-06-06,Student,Southeast,90 Days Late,678426.99,27.3,249
+2024-07-24,Auto,Southwest,60 Days Late,270737.37,19.74,267
+2024-07-01,Auto,Northeast,60 Days Late,428948.01,18.21,349
+2024-07-01,Personal,Midwest,Paid Off,308552.38,25.58,59
+2025-02-18,Auto,Midwest,Paid Off,551992.28,21.27,174
+2024-10-07,Auto,Northeast,90 Days Late,654622.95,12.32,125
+2024-06-20,Student,Pacific Northwest,30 Days Late,218909.05,29.37,215
+2024-08-06,Home Equity,Southeast,Current,274347.93,13.51,309
+2024-12-20,Home Equity,Southeast,30 Days Late,365963.87,10.81,216
+2024-11-25,Personal,Southeast,30 Days Late,92810.09,3.8,187
+2024-07-10,Home Equity,West,60 Days Late,504901.58,7.34,158
+2025-06-20,Small Business,Northeast,Charged Off,427218.87,22.48,106
+2024-02-14,Auto,Southwest,60 Days Late,472460.57,35.78,83
+2025-03-03,Mortgage,Southwest,Paid Off,366341.72,30.36,120
+2024-06-28,Mortgage,Pacific Northwest,60 Days Late,150498.86,35.97,74
+2024-08-08,Personal,West,30 Days Late,242693.47,28.4,224
+2025-02-22,Small Business,Southeast,Paid Off,81706.23,12.59,176
+2024-12-01,Personal,Midwest,60 Days Late,571896.49,2.94,298
+2025-04-06,Mortgage,Midwest,30 Days Late,468819.89,3.36,240
+2024-08-28,Student,Northeast,Charged Off,294007.44,7.64,141
+2025-01-31,Student,Midwest,Charged Off,444050.13,11.97,351
+2024-03-18,Mortgage,West,Charged Off,280574.78,20.66,336
+2024-09-13,Student,Pacific Northwest,Current,723191.26,5.4,58
+2025-02-11,Mortgage,Pacific Northwest,90 Days Late,411661.79,22.16,274
+2024-04-12,Auto,Southeast,90 Days Late,58737.12,3.38,259
+2025-01-14,Home Equity,Pacific Northwest,30 Days Late,156371.88,3.43,325
+2025-03-21,Mortgage,Midwest,Charged Off,270860.19,6.68,290
+2025-03-03,Small Business,Southwest,Current,426241.78,8.0,135
+2024-06-16,Student,Midwest,90 Days Late,403551.23,28.64,211
+2024-11-10,Home Equity,Southeast,30 Days Late,491941.99,19.38,125
+2024-06-13,Auto,Southeast,Paid Off,682598.54,25.73,324
+2025-02-19,Personal,Midwest,30 Days Late,24550.41,34.36,347
+2025-06-16,Auto,Pacific Northwest,Paid Off,116178.97,9.03,143
+2025-06-04,Small Business,Southwest,90 Days Late,572223.17,34.94,283
+2024-07-17,Small Business,Northeast,Charged Off,427932.54,32.67,43
+2024-12-29,Mortgage,Midwest,Paid Off,652405.64,31.04,20
+2025-02-16,Auto,Midwest,30 Days Late,602788.63,4.06,277
+2024-05-12,Personal,Southeast,Paid Off,625380.11,28.49,298
+2024-05-26,Auto,Pacific Northwest,90 Days Late,516355.02,27.35,269
+2025-05-20,Mortgage,Southwest,Current,192663.62,14.63,323
+2024-10-28,Home Equity,Southwest,90 Days Late,425982.76,9.44,135
+2025-04-02,Small Business,West,Charged Off,534322.91,8.41,22
+2024-06-22,Small Business,Midwest,90 Days Late,497937.84,29.87,194
+2024-12-26,Auto,Pacific Northwest,30 Days Late,407509.1,28.77,170
+2024-06-13,Small Business,Midwest,90 Days Late,158097.76,17.71,299
+2024-10-22,Home Equity,Southeast,60 Days Late,320484.95,29.92,294
+2025-03-16,Auto,Northeast,60 Days Late,411021.26,34.96,100
+2024-09-15,Mortgage,West,Current,534908.18,26.45,105
+2024-06-26,Student,Southeast,Charged Off,350803.62,3.73,153
+2025-04-12,Auto,Northeast,60 Days Late,272822.05,7.9,248
+2024-05-28,Auto,Southwest,30 Days Late,321723.87,25.94,108
+2024-07-07,Student,Southwest,Paid Off,348290.93,13.32,167
+2024-06-08,Home Equity,Southeast,Paid Off,9167.63,5.58,133
+2025-01-07,Auto,Southwest,Paid Off,317329.87,5.08,128
+2024-03-29,Small Business,Southwest,Paid Off,332987.78,32.33,297
+2024-09-01,Auto,Midwest,Paid Off,170765.75,22.26,317
+2024-12-29,Auto,Pacific Northwest,60 Days Late,330990.55,19.97,143
+2025-05-14,Small Business,Southeast,Charged Off,190863.56,22.86,86
+2024-08-09,Small Business,Pacific Northwest,30 Days Late,221432.61,34.69,18
+2025-02-26,Small Business,Pacific Northwest,30 Days Late,352261.44,7.37,117
+2024-08-18,Small Business,West,Charged Off,251775.37,15.99,317
+2024-05-13,Personal,West,Charged Off,241434.76,21.28,256
+2024-09-11,Auto,Northeast,30 Days Late,744683.16,20.12,111
+2025-06-20,Mortgage,Southwest,Current,326146.28,5.78,167
+2025-06-17,Personal,Southwest,Current,710064.43,9.51,12
+2024-02-03,Mortgage,Southwest,Charged Off,423630.59,29.32,114
+2024-09-09,Personal,West,Charged Off,128814.08,28.31,175
+2025-04-04,Mortgage,Pacific Northwest,60 Days Late,616089.92,19.14,359
+2024-06-21,Student,Northeast,60 Days Late,217694.11,9.2,69
+2025-01-19,Student,West,Paid Off,419831.4,31.6,271
+2024-02-03,Student,Northeast,Charged Off,540879.18,28.55,348
+2024-04-16,Mortgage,Midwest,30 Days Late,503783.0,16.33,120
+2024-01-09,Home Equity,Pacific Northwest,60 Days Late,247640.6,20.6,208
+2025-03-03,Auto,Southwest,Charged Off,689717.91,24.52,35
+2024-03-08,Home Equity,Pacific Northwest,Current,614643.52,30.7,344
+2024-12-10,Personal,Northeast,90 Days Late,606715.88,21.32,23
+2024-09-21,Home Equity,West,Paid Off,256269.63,8.16,291
+2025-05-24,Mortgage,Midwest,Paid Off,618386.22,18.56,199
+2024-10-27,Home Equity,Southwest,Paid Off,183468.79,10.01,147
+2025-01-25,Home Equity,Midwest,Charged Off,620599.95,4.54,50
+2024-03-08,Auto,Midwest,60 Days Late,394179.49,11.44,160
+2025-05-04,Personal,Pacific Northwest,Paid Off,689169.76,35.78,311
+2024-07-19,Mortgage,Northeast,30 Days Late,693350.51,15.8,281
+2024-01-27,Personal,West,Paid Off,379295.02,9.25,41
+2025-06-01,Home Equity,Midwest,Current,222334.95,5.09,209
+2024-12-21,Personal,Midwest,90 Days Late,266695.37,23.17,246
+2024-12-28,Small Business,Southwest,60 Days Late,33819.88,16.15,283
+2025-03-12,Student,Pacific Northwest,30 Days Late,746965.79,29.83,119
+2025-04-02,Home Equity,Southwest,30 Days Late,244686.36,23.94,227
+2024-05-05,Home Equity,Pacific Northwest,Charged Off,670524.27,29.66,143
+2024-09-27,Student,Northeast,Charged Off,272836.48,7.97,341
+2024-07-17,Home Equity,Pacific Northwest,Paid Off,598701.22,11.29,328
+2024-02-26,Personal,Midwest,60 Days Late,551226.87,33.06,190
+2025-03-27,Home Equity,West,Charged Off,303752.78,16.19,119
+2024-07-28,Student,Midwest,Paid Off,301763.92,12.01,118
+2024-02-19,Student,West,30 Days Late,268628.91,35.06,46
+2024-02-12,Home Equity,Southwest,60 Days Late,360858.11,23.94,119

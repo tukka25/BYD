@@ -1,0 +1,241 @@
+Trip Date,Vehicle Type,Route Zone,Driver Shift,Distance Driven Km,Fuel Consumed Liters,Stops Completed,Average Speed Kmh
+2024-09-08,Box Truck,North Metro,Morning,416.23,111.33,116,66.81
+2024-12-15,Motorcycle,South Industrial,Evening,341.63,108.86,93,68.78
+2024-06-14,Pickup Truck,Airport Corridor,Early Morning,10.6,178.98,33,100.66
+2024-11-20,Refrigerated Truck,South Industrial,Night,420.63,22.17,80,12.41
+2024-12-15,Box Truck,South Industrial,Early Morning,34.83,80.2,116,69.42
+2024-10-14,Refrigerated Truck,North Metro,Morning,255.59,81.29,42,95.86
+2025-05-21,Cargo Van,West Coast,Night,362.35,32.83,58,13.27
+2024-03-21,Refrigerated Truck,North Metro,Afternoon,106.88,142.94,14,100.73
+2024-07-10,Refrigerated Truck,Central Downtown,Evening,71.5,109.4,102,40.61
+2024-02-14,Box Truck,Central Downtown,Morning,163.11,105.62,70,92.51
+2025-05-19,Pickup Truck,Airport Corridor,Morning,15.1,45.92,45,12.23
+2025-06-16,Motorcycle,Central Downtown,Afternoon,292.63,135.37,30,31.83
+2024-08-22,Motorcycle,East Suburban,Early Morning,285.59,27.23,58,33.75
+2025-04-26,Refrigerated Truck,Central Downtown,Afternoon,84.48,50.92,41,22.12
+2025-04-26,Pickup Truck,North Metro,Afternoon,65.58,156.21,67,56.89
+2024-11-07,Cargo Van,South Industrial,Night,199.42,163.77,16,56.83
+2024-04-17,Cargo Van,Central Downtown,Afternoon,252.04,138.05,120,41.55
+2024-12-08,Refrigerated Truck,South Industrial,Morning,339.43,103.81,106,69.04
+2024-09-04,Pickup Truck,West Coast,Evening,58.06,88.68,14,52.12
+2025-04-20,Motorcycle,West Coast,Night,301.79,112.75,61,70.14
+2025-06-14,Cargo Van,Airport Corridor,Evening,351.42,43.98,44,15.04
+2025-02-28,Cargo Van,South Industrial,Evening,397.71,29.67,9,84.97
+2025-03-20,Motorcycle,North Metro,Morning,285.84,146.2,68,55.92
+2025-01-11,Cargo Van,East Suburban,Night,158.76,141.4,6,25.53
+2024-02-21,Box Truck,North Metro,Afternoon,421.18,66.33,11,53.09
+2025-01-24,Cargo Van,West Coast,Early Morning,188.38,41.73,32,47.47
+2025-04-09,Electric Van,South Industrial,Evening,24.45,156.33,9,52.98
+2024-03-10,Motorcycle,Airport Corridor,Morning,269.85,30.14,56,65.78
+2024-06-17,Box Truck,Central Downtown,Night,412.53,147.13,67,109.32
+2024-11-24,Electric Van,West Coast,Evening,272.9,156.71,81,9.97
+2024-01-17,Motorcycle,East Suburban,Night,437.22,55.88,86,62.41
+2024-02-08,Box Truck,North Metro,Night,53.77,64.6,0,57.52
+2024-05-07,Pickup Truck,Central Downtown,Evening,289.55,158.34,35,52.59
+2025-05-22,Pickup Truck,South Industrial,Early Morning,122.25,137.97,7,47.08
+2025-01-25,Electric Van,West Coast,Early Morning,284.47,137.43,77,59.46
+2024-02-22,Cargo Van,East Suburban,Evening,29.84,29.19,37,68.88
+2025-03-04,Refrigerated Truck,North Metro,Morning,380.13,119.76,81,28.16
+2024-08-25,Pickup Truck,East Suburban,Night,1.07,75.45,94,74.89
+2025-04-21,Motorcycle,West Coast,Early Morning,343.32,127.65,50,74.21
+2024-07-11,Pickup Truck,West Coast,Early Morning,279.93,89.0,36,20.46
+2024-12-20,Electric Van,East Suburban,Afternoon,113.06,50.87,77,37.2
+2024-05-19,Electric Van,East Suburban,Early Morning,397.15,105.35,56,69.75
+2024-09-09,Cargo Van,Airport Corridor,Early Morning,41.5,126.75,114,29.73
+2024-01-14,Pickup Truck,West Coast,Evening,211.39,50.53,44,73.62
+2024-09-08,Motorcycle,Airport Corridor,Evening,133.22,54.29,54,71.41
+2024-12-09,Electric Van,West Coast,Evening,392.89,100.17,37,5.25
+2025-03-04,Refrigerated Truck,West Coast,Evening,291.35,164.63,76,32.3
+2025-03-01,Refrigerated Truck,Airport Corridor,Evening,440.82,43.11,88,95.23
+2025-02-02,Box Truck,South Industrial,Morning,155.03,161.89,111,87.5
+2025-03-26,Box Truck,East Suburban,Early Morning,391.73,23.32,45,46.32
+2025-03-25,Refrigerated Truck,North Metro,Morning,272.92,11.0,77,109.49
+2024-07-11,Pickup Truck,Central Downtown,Night,145.66,115.87,112,31.88
+2024-07-20,Pickup Truck,Central Downtown,Night,290.16,52.5,74,19.55
+2025-03-15,Electric Van,Central Downtown,Evening,346.69,46.44,93,40.47
+2024-07-08,Pickup Truck,Central Downtown,Afternoon,395.41,167.88,79,106.58
+2024-12-02,Pickup Truck,South Industrial,Afternoon,376.54,31.14,112,106.02
+2025-02-05,Cargo Van,East Suburban,Evening,264.13,178.58,76,53.41
+2025-02-25,Cargo Van,Central Downtown,Night,45.15,139.53,81,108.57
+2024-04-12,Refrigerated Truck,Central Downtown,Evening,358.58,95.95,42,53.83
+2025-03-07,Pickup Truck,North Metro,Evening,268.67,61.09,50,101.5
+2025-04-06,Refrigerated Truck,South Industrial,Evening,98.8,173.76,35,54.19
+2024-02-24,Motorcycle,West Coast,Morning,224.06,92.62,108,98.29
+2025-04-25,Box Truck,West Coast,Night,210.57,67.13,52,42.55
+2024-11-27,Cargo Van,East Suburban,Night,138.67,13.71,101,104.0
+2024-02-06,Motorcycle,North Metro,Night,86.96,52.91,90,13.86
+2024-12-18,Motorcycle,East Suburban,Afternoon,271.63,123.44,37,81.44
+2024-07-23,Motorcycle,South Industrial,Early Morning,165.28,61.2,16,13.08
+2025-01-16,Electric Van,West Coast,Early Morning,368.0,10.76,81,95.33
+2024-02-24,Box Truck,South Industrial,Early Morning,103.41,103.77,14,35.16
+2024-01-08,Box Truck,South Industrial,Evening,42.18,147.32,15,49.5
+2024-08-12,Box Truck,South Industrial,Morning,161.55,46.44,107,88.24
+2025-04-23,Box Truck,North Metro,Evening,246.43,1.18,10,41.54
+2024-10-04,Cargo Van,Central Downtown,Evening,332.19,101.43,26,68.15
+2024-03-13,Electric Van,East Suburban,Night,139.82,175.99,32,85.98
+2025-04-07,Pickup Truck,North Metro,Early Morning,158.76,25.23,101,109.52
+2024-12-06,Refrigerated Truck,Airport Corridor,Morning,89.99,59.53,81,27.03
+2024-06-11,Refrigerated Truck,Central Downtown,Night,264.3,127.04,12,96.0
+2024-07-22,Refrigerated Truck,Central Downtown,Early Morning,15.28,19.14,34,96.02
+2024-12-17,Box Truck,East Suburban,Afternoon,171.03,133.4,23,23.97
+2024-05-15,Refrigerated Truck,Central Downtown,Morning,305.23,6.69,8,16.66
+2024-12-16,Refrigerated Truck,West Coast,Afternoon,396.93,147.05,35,89.53
+2025-01-26,Pickup Truck,East Suburban,Morning,3.55,94.19,60,8.46
+2024-12-23,Cargo Van,South Industrial,Early Morning,156.55,32.03,105,53.51
+2025-04-17,Electric Van,Airport Corridor,Night,334.28,144.56,103,106.51
+2024-03-21,Electric Van,West Coast,Evening,137.64,171.54,20,67.92
+2024-09-19,Refrigerated Truck,Airport Corridor,Afternoon,65.71,4.13,16,15.8
+2024-04-30,Box Truck,West Coast,Morning,316.56,169.95,30,36.74
+2024-10-24,Box Truck,Central Downtown,Afternoon,10.73,65.64,114,30.34
+2025-05-05,Refrigerated Truck,West Coast,Morning,377.06,12.3,90,50.06
+2024-05-28,Cargo Van,Airport Corridor,Evening,362.23,83.28,55,87.28
+2024-10-12,Motorcycle,East Suburban,Early Morning,151.76,90.25,101,24.06
+2024-04-28,Box Truck,Central Downtown,Morning,50.26,24.7,44,34.23
+2024-09-29,Refrigerated Truck,Central Downtown,Night,283.61,2.02,90,27.17
+2024-03-21,Electric Van,South Industrial,Night,349.61,99.38,91,31.27
+2024-04-13,Box Truck,Central Downtown,Afternoon,98.86,95.18,11,18.31
+2024-10-25,Motorcycle,Central Downtown,Early Morning,239.15,126.04,76,96.62
+2025-04-29,Refrigerated Truck,Central Downtown,Morning,404.62,73.86,118,76.21
+2024-01-19,Cargo Van,South Industrial,Evening,128.83,24.13,11,71.9
+2024-08-15,Pickup Truck,Airport Corridor,Evening,166.33,68.75,97,57.06
+2024-10-31,Electric Van,North Metro,Morning,67.79,132.57,41,33.88
+2025-01-09,Electric Van,Central Downtown,Night,140.78,135.22,32,70.77
+2024-04-05,Refrigerated Truck,Central Downtown,Night,181.63,7.17,94,56.61
+2024-12-21,Cargo Van,North Metro,Morning,76.39,138.93,54,76.92
+2024-07-26,Box Truck,East Suburban,Evening,356.48,152.41,2,5.94
+2025-05-29,Refrigerated Truck,North Metro,Morning,449.16,97.52,100,6.31
+2024-08-26,Pickup Truck,South Industrial,Afternoon,20.09,3.39,70,31.08
+2024-11-24,Cargo Van,East Suburban,Evening,224.74,83.57,103,80.78
+2024-11-13,Cargo Van,East Suburban,Evening,167.72,66.95,37,50.53
+2025-02-20,Refrigerated Truck,South Industrial,Morning,106.71,159.25,56,64.45
+2024-10-16,Box Truck,East Suburban,Early Morning,77.29,20.2,114,61.49
+2024-06-21,Box Truck,West Coast,Morning,324.15,83.17,31,96.63
+2024-09-16,Motorcycle,South Industrial,Night,63.16,128.49,21,43.67
+2025-05-08,Pickup Truck,South Industrial,Afternoon,174.96,164.61,99,5.14
+2024-06-10,Refrigerated Truck,Airport Corridor,Evening,356.83,97.06,42,43.71
+2024-10-06,Cargo Van,Central Downtown,Afternoon,30.44,115.67,68,100.41
+2024-12-06,Box Truck,South Industrial,Early Morning,3.53,101.18,116,33.13
+2024-05-30,Motorcycle,West Coast,Evening,82.93,149.57,44,40.05
+2024-03-30,Refrigerated Truck,West Coast,Night,177.89,83.81,60,11.72
+2024-11-03,Electric Van,Airport Corridor,Night,20.86,123.49,17,22.3
+2024-10-27,Cargo Van,East Suburban,Afternoon,172.28,19.2,94,38.17
+2025-02-14,Pickup Truck,West Coast,Night,409.28,2.97,8,68.25
+2024-04-26,Cargo Van,North Metro,Early Morning,407.72,27.1,56,18.13
+2024-01-17,Pickup Truck,North Metro,Evening,112.41,75.39,35,13.91
+2024-12-22,Cargo Van,West Coast,Evening,388.78,141.19,25,12.46
+2025-06-21,Pickup Truck,West Coast,Evening,385.51,138.72,22,44.83
+2024-12-15,Pickup Truck,North Metro,Night,427.03,42.3,66,27.28
+2024-09-26,Cargo Van,Central Downtown,Early Morning,79.71,31.81,107,94.31
+2024-07-12,Motorcycle,North Metro,Evening,236.07,156.62,70,80.71
+2025-05-30,Pickup Truck,Central Downtown,Evening,96.41,80.82,50,109.88
+2025-02-10,Refrigerated Truck,North Metro,Morning,149.55,94.17,82,88.03
+2024-03-04,Electric Van,Airport Corridor,Morning,289.21,149.29,16,109.12
+2025-06-02,Refrigerated Truck,Central Downtown,Morning,14.57,11.56,112,41.53
+2025-03-07,Refrigerated Truck,Airport Corridor,Morning,337.57,102.41,7,42.61
+2025-01-10,Pickup Truck,Airport Corridor,Early Morning,31.83,74.67,17,69.72
+2024-06-04,Pickup Truck,North Metro,Morning,400.5,159.86,3,75.84
+2025-06-02,Electric Van,East Suburban,Night,419.22,73.92,115,17.17
+2025-04-29,Motorcycle,North Metro,Night,8.13,164.61,79,86.04
+2025-03-15,Refrigerated Truck,Central Downtown,Afternoon,148.03,161.4,83,90.23
+2025-05-07,Refrigerated Truck,Airport Corridor,Night,288.06,40.45,17,107.83
+2024-07-14,Electric Van,Airport Corridor,Afternoon,232.26,34.59,45,100.29
+2025-04-03,Cargo Van,North Metro,Early Morning,395.39,161.74,33,109.54
+2024-11-10,Electric Van,West Coast,Night,128.83,55.9,79,44.74
+2024-04-22,Electric Van,South Industrial,Night,256.43,164.77,108,34.35
+2024-01-05,Electric Van,East Suburban,Evening,246.65,11.17,54,18.48
+2024-08-01,Cargo Van,South Industrial,Evening,260.19,56.17,12,67.38
+2024-04-05,Pickup Truck,North Metro,Early Morning,354.47,171.31,113,52.18
+2025-03-02,Cargo Van,Airport Corridor,Afternoon,72.85,72.12,82,84.22
+2024-07-01,Electric Van,East Suburban,Evening,390.11,115.11,96,58.08
+2024-10-12,Refrigerated Truck,East Suburban,Night,345.25,146.81,10,108.75
+2024-07-20,Motorcycle,Central Downtown,Evening,320.08,18.05,91,98.99
+2025-05-12,Motorcycle,North Metro,Night,436.61,143.74,87,22.94
+2025-03-17,Motorcycle,South Industrial,Evening,237.41,58.41,12,10.37
+2024-01-08,Box Truck,South Industrial,Night,139.1,20.47,86,35.27
+2024-07-10,Electric Van,North Metro,Morning,374.58,145.84,13,32.91
+2025-01-30,Box Truck,Central Downtown,Early Morning,93.06,88.64,4,85.49
+2025-02-15,Cargo Van,East Suburban,Afternoon,12.39,122.76,25,64.9
+2024-11-22,Cargo Van,East Suburban,Morning,78.16,71.23,4,82.66
+2024-05-28,Refrigerated Truck,South Industrial,Night,175.98,101.39,11,101.73
+2025-06-01,Box Truck,Airport Corridor,Evening,442.59,133.26,60,106.2
+2025-01-11,Motorcycle,North Metro,Morning,59.72,41.82,28,44.97
+2024-09-29,Refrigerated Truck,Airport Corridor,Early Morning,294.83,153.3,16,43.3
+2025-01-22,Pickup Truck,Central Downtown,Night,133.16,144.36,43,105.65
+2024-09-12,Electric Van,Airport Corridor,Night,70.21,102.29,71,28.96
+2024-05-04,Cargo Van,South Industrial,Evening,308.78,54.53,108,59.61
+2025-03-24,Pickup Truck,West Coast,Afternoon,159.69,58.41,23,34.36
+2025-03-01,Motorcycle,Airport Corridor,Afternoon,245.39,77.64,53,28.24
+2024-02-24,Electric Van,North Metro,Afternoon,242.59,37.77,42,62.53
+2024-01-01,Box Truck,West Coast,Evening,272.76,157.8,0,58.15
+2024-02-16,Motorcycle,West Coast,Early Morning,288.75,87.54,90,33.8
+2024-12-04,Refrigerated Truck,North Metro,Early Morning,399.89,79.13,86,107.52
+2024-08-02,Cargo Van,South Industrial,Afternoon,318.46,38.57,47,83.11
+2025-02-21,Motorcycle,South Industrial,Morning,247.33,0.99,70,56.46
+2025-04-08,Electric Van,Central Downtown,Evening,110.06,176.35,11,51.79
+2024-02-25,Electric Van,East Suburban,Night,215.2,20.18,39,44.51
+2024-09-08,Pickup Truck,East Suburban,Night,158.97,25.48,114,47.85
+2025-06-02,Box Truck,Airport Corridor,Night,389.29,72.24,53,88.69
+2024-11-18,Motorcycle,West Coast,Morning,214.31,164.32,49,106.65
+2024-08-18,Box Truck,West Coast,Evening,188.63,137.7,75,59.12
+2024-06-28,Box Truck,Airport Corridor,Early Morning,436.06,92.34,118,93.35
+2024-05-18,Electric Van,Airport Corridor,Evening,108.76,54.58,41,86.87
+2024-01-16,Box Truck,West Coast,Early Morning,324.49,119.66,26,43.02
+2024-12-14,Refrigerated Truck,East Suburban,Night,383.44,27.16,73,24.77
+2025-02-03,Cargo Van,East Suburban,Night,350.79,141.46,106,90.87
+2024-07-26,Pickup Truck,North Metro,Early Morning,3.37,54.15,80,100.34
+2024-04-11,Box Truck,West Coast,Early Morning,9.39,130.64,44,59.45
+2024-12-09,Refrigerated Truck,East Suburban,Evening,256.44,134.95,102,95.83
+2024-09-03,Electric Van,East Suburban,Early Morning,378.52,16.53,28,8.45
+2025-05-22,Electric Van,West Coast,Afternoon,17.82,37.38,15,36.59
+2024-02-12,Cargo Van,South Industrial,Night,193.75,44.53,2,98.42
+2024-07-13,Refrigerated Truck,West Coast,Morning,142.06,28.03,81,95.54
+2025-03-03,Electric Van,Airport Corridor,Morning,53.42,160.11,116,61.1
+2024-05-09,Motorcycle,Central Downtown,Early Morning,167.97,3.7,61,60.7
+2025-06-05,Electric Van,South Industrial,Night,177.28,37.8,43,56.84
+2025-03-20,Electric Van,East Suburban,Night,246.14,17.75,94,80.53
+2024-07-29,Pickup Truck,West Coast,Afternoon,19.06,89.73,57,14.23
+2024-08-13,Motorcycle,South Industrial,Evening,342.35,71.41,31,36.44
+2025-06-18,Motorcycle,East Suburban,Afternoon,3.69,50.71,74,49.62
+2025-02-22,Box Truck,North Metro,Morning,250.76,146.04,77,27.87
+2024-07-29,Motorcycle,East Suburban,Morning,362.9,60.6,109,90.2
+2025-05-21,Refrigerated Truck,South Industrial,Night,25.39,143.98,95,86.04
+2025-01-20,Electric Van,North Metro,Afternoon,163.24,94.31,117,27.7
+2025-03-11,Cargo Van,Central Downtown,Evening,197.98,145.55,43,46.45
+2024-06-04,Box Truck,West Coast,Morning,64.22,163.95,19,34.01
+2024-08-22,Motorcycle,East Suburban,Early Morning,194.87,90.54,79,23.29
+2025-04-22,Pickup Truck,South Industrial,Early Morning,364.08,55.17,65,83.13
+2025-04-14,Refrigerated Truck,East Suburban,Early Morning,142.37,20.83,106,35.06
+2024-01-23,Refrigerated Truck,Central Downtown,Afternoon,390.11,143.45,30,46.82
+2024-01-23,Motorcycle,Airport Corridor,Afternoon,36.48,69.8,22,91.46
+2025-05-06,Electric Van,South Industrial,Night,374.9,98.46,13,52.89
+2025-03-16,Electric Van,Central Downtown,Afternoon,243.22,16.99,9,43.15
+2024-11-25,Box Truck,West Coast,Night,76.51,34.78,37,21.24
+2024-09-04,Box Truck,South Industrial,Morning,414.57,10.4,0,100.79
+2024-06-19,Motorcycle,North Metro,Early Morning,422.99,43.42,83,96.12
+2025-02-17,Box Truck,South Industrial,Morning,242.61,173.67,85,12.91
+2025-06-21,Box Truck,Airport Corridor,Evening,82.14,169.68,10,11.91
+2024-09-16,Box Truck,East Suburban,Afternoon,90.71,123.3,85,11.15
+2024-05-23,Motorcycle,Airport Corridor,Morning,253.11,101.34,21,82.46
+2025-03-22,Motorcycle,West Coast,Early Morning,221.23,83.44,108,82.63
+2024-07-01,Motorcycle,East Suburban,Evening,101.53,174.28,111,7.53
+2025-03-31,Motorcycle,Central Downtown,Morning,82.14,51.28,3,96.74
+2024-04-20,Refrigerated Truck,Airport Corridor,Early Morning,186.55,145.84,114,31.36
+2024-07-06,Refrigerated Truck,South Industrial,Evening,107.74,162.61,108,94.94
+2024-02-26,Electric Van,North Metro,Evening,326.37,93.29,92,101.56
+2024-10-08,Electric Van,Central Downtown,Early Morning,94.18,63.53,74,38.63
+2024-05-14,Cargo Van,Airport Corridor,Afternoon,3.24,52.19,30,34.23
+2024-06-10,Refrigerated Truck,North Metro,Afternoon,113.33,78.09,53,100.16
+2025-05-18,Cargo Van,North Metro,Evening,35.34,177.92,23,17.88
+2025-05-09,Pickup Truck,Airport Corridor,Morning,220.72,53.66,81,36.53
+2024-07-08,Refrigerated Truck,North Metro,Afternoon,415.58,38.8,41,67.33
+2024-03-28,Refrigerated Truck,West Coast,Evening,332.53,50.36,52,37.21
+2024-09-11,Motorcycle,Airport Corridor,Night,261.29,33.57,14,74.86
+2025-05-31,Cargo Van,South Industrial,Evening,229.56,162.83,71,33.48
+2024-06-10,Pickup Truck,Central Downtown,Evening,146.36,63.78,101,105.47
+2025-04-12,Cargo Van,West Coast,Afternoon,69.02,135.77,74,26.58
+2024-05-22,Refrigerated Truck,Central Downtown,Evening,320.26,44.7,105,58.81
+2024-11-22,Motorcycle,South Industrial,Night,319.24,127.89,55,70.3
+2025-06-09,Cargo Van,North Metro,Early Morning,362.37,111.93,81,101.85
+2024-12-04,Electric Van,Airport Corridor,Afternoon,388.73,174.52,120,29.99
+2025-05-23,Cargo Van,South Industrial,Night,284.82,84.23,23,54.89
+2025-03-09,Motorcycle,South Industrial,Afternoon,54.58,40.84,102,69.71

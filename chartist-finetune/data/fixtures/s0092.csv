@@ -1,0 +1,241 @@
+billingDate,planTier,billingCycle,customerRegion,seatCount,mrrAmount,discountPercent,churnedRevenue
+2024-06-29,Business,Annual,Europe,778,31118.08,41.48,65505.13
+2024-04-01,Enterprise,Monthly,Asia Pacific,4262,197252.81,12.15,14587.46
+2025-02-08,Free,Annual,North America,1112,27712.27,1.04,12824.79
+2025-05-13,Free,Monthly,North America,4205,166713.44,4.52,42343.33
+2024-02-02,Business,Quarterly,North America,4685,201632.5,2.14,50557.7
+2024-11-13,Free,Annual,Asia Pacific,3092,5978.8,25.58,11844.8
+2024-02-08,Free,Quarterly,Middle East,1105,61263.0,16.07,60250.48
+2024-06-14,Enterprise,Annual,North America,3240,122730.19,57.92,41517.74
+2024-04-29,Free,Monthly,Asia Pacific,3044,2248.41,14.95,91843.5
+2024-09-13,Growth,Annual,Africa,1616,240190.2,17.8,33903.56
+2024-02-14,Business,Monthly,North America,1132,14352.58,58.0,72533.28
+2024-07-18,Enterprise,Quarterly,North America,456,185308.22,21.78,31333.46
+2024-04-25,Starter,Monthly,Middle East,4819,224483.14,31.8,19131.72
+2024-08-15,Business,Quarterly,Asia Pacific,4520,168759.97,37.02,19286.88
+2024-05-22,Growth,Annual,North America,1301,105151.19,1.53,59311.18
+2024-10-30,Business,Annual,Africa,2385,211227.46,6.73,30206.64
+2024-08-04,Enterprise,Quarterly,Europe,3539,135559.62,4.07,31574.66
+2024-03-28,Free,Annual,Latin America,3778,60078.17,14.57,55783.19
+2025-04-25,Enterprise,Annual,Europe,4689,223494.39,13.83,64839.12
+2025-04-03,Business,Annual,Europe,2952,16348.85,56.22,36356.47
+2024-08-05,Growth,Annual,Latin America,4638,93967.99,53.05,32339.7
+2024-01-08,Free,Annual,Asia Pacific,1484,199239.43,45.91,4343.13
+2025-02-22,Starter,Quarterly,Latin America,884,59745.58,46.51,50346.45
+2024-07-31,Growth,Monthly,Africa,2789,120891.75,36.83,43329.75
+2025-06-10,Starter,Monthly,Asia Pacific,3487,245253.6,39.92,98591.37
+2025-01-23,Business,Annual,Africa,997,176177.42,32.35,32766.3
+2024-01-01,Starter,Quarterly,North America,349,56303.41,31.62,13032.13
+2024-06-09,Growth,Monthly,Middle East,45,195211.12,1.11,38863.41
+2025-01-31,Free,Annual,North America,247,184810.4,21.04,42872.54
+2025-02-15,Growth,Quarterly,Europe,4800,138127.5,55.87,94939.22
+2024-03-11,Growth,Annual,Asia Pacific,1120,155307.54,37.18,73407.43
+2024-02-18,Enterprise,Quarterly,Middle East,4660,23871.8,21.24,49358.75
+2025-06-18,Free,Quarterly,Asia Pacific,731,96261.55,6.84,40325.21
+2025-04-02,Business,Quarterly,Latin America,1924,141642.91,43.66,99815.07
+2024-01-02,Enterprise,Quarterly,Latin America,3103,175490.32,25.49,71286.45
+2025-04-07,Starter,Annual,Asia Pacific,4839,222331.2,41.57,94096.41
+2024-10-08,Enterprise,Monthly,North America,414,47474.07,28.14,82527.31
+2024-05-17,Enterprise,Annual,Asia Pacific,703,188895.9,41.69,21266.27
+2024-10-17,Free,Monthly,Africa,928,137746.08,11.32,41353.9
+2025-06-12,Free,Quarterly,Middle East,4199,38029.88,7.07,7750.28
+2024-11-15,Business,Monthly,Europe,439,131835.36,8.16,17023.09
+2025-05-02,Business,Annual,North America,3757,39082.16,37.62,17278.48
+2024-10-13,Growth,Monthly,Latin America,150,39852.65,5.58,81703.6
+2024-12-29,Free,Annual,Europe,2357,247525.99,48.75,17873.18
+2025-02-16,Business,Annual,Africa,1084,216642.33,2.39,3850.3
+2024-09-27,Free,Quarterly,Latin America,2564,172950.07,0.07,90131.77
+2025-06-10,Free,Quarterly,Asia Pacific,4403,233856.08,0.81,41246.64
+2025-01-01,Business,Monthly,Asia Pacific,4643,134646.29,48.62,32815.03
+2025-02-19,Growth,Annual,Middle East,1856,172197.4,24.37,48689.24
+2024-03-23,Growth,Quarterly,Africa,2125,75884.62,23.49,99173.37
+2024-05-14,Free,Monthly,Middle East,1149,191143.22,14.15,87017.72
+2025-04-18,Enterprise,Quarterly,North America,1696,195969.29,46.2,17320.05
+2024-06-24,Free,Quarterly,Europe,652,122114.55,16.99,92887.17
+2024-08-07,Enterprise,Annual,Europe,4644,163359.85,31.23,86494.85
+2024-10-05,Starter,Quarterly,Africa,3803,44748.67,31.2,30877.22
+2024-02-14,Starter,Monthly,Europe,3162,194521.93,31.21,8386.85
+2024-12-21,Enterprise,Monthly,Latin America,4548,199683.9,21.4,7982.76
+2024-09-25,Enterprise,Annual,North America,3296,226953.86,15.22,14355.78
+2024-02-03,Starter,Annual,North America,4004,125107.84,33.48,34665.02
+2024-07-21,Business,Monthly,North America,1251,12733.02,42.45,84156.71
+2024-08-22,Starter,Quarterly,Europe,4200,11842.36,10.83,82445.92
+2024-08-16,Business,Quarterly,Latin America,1599,86300.46,47.26,24400.49
+2025-03-20,Enterprise,Monthly,Africa,2567,4765.6,40.53,31794.69
+2025-04-17,Growth,Quarterly,Africa,3237,137122.93,7.4,22490.62
+2024-05-11,Business,Annual,Asia Pacific,3413,218154.71,53.28,90698.7
+2024-05-19,Business,Monthly,Africa,2953,136085.79,33.82,55007.66
+2024-07-24,Enterprise,Quarterly,Europe,2179,179443.64,47.91,7097.61
+2024-06-23,Starter,Annual,North America,3839,134552.69,51.14,86729.8
+2024-06-04,Growth,Monthly,Middle East,1092,111768.33,15.22,69158.02
+2025-03-19,Free,Annual,Latin America,3658,80312.97,53.37,45264.46
+2024-11-28,Free,Annual,Africa,1116,41022.08,58.23,70340.14
+2025-01-15,Enterprise,Quarterly,Africa,198,27116.09,56.98,76442.1
+2025-01-07,Business,Quarterly,Europe,187,249929.19,58.92,74033.17
+2025-06-10,Business,Annual,Europe,2959,32881.44,38.62,24412.4
+2024-10-18,Enterprise,Monthly,Asia Pacific,4785,191498.1,46.62,21549.79
+2024-11-13,Growth,Monthly,Asia Pacific,4621,75234.99,1.31,41298.64
+2025-01-04,Business,Annual,Europe,3321,225035.36,17.94,19449.51
+2024-06-08,Starter,Quarterly,Latin America,3410,72132.57,21.82,16322.55
+2024-08-09,Enterprise,Monthly,Africa,3566,37363.62,38.74,21597.86
+2024-08-24,Starter,Quarterly,Middle East,3310,162321.06,42.42,7251.77
+2024-01-19,Free,Monthly,North America,4807,185530.48,50.91,87224.26
+2024-05-01,Business,Monthly,Asia Pacific,734,21309.05,24.59,60932.51
+2024-07-07,Free,Monthly,Middle East,2736,115552.18,37.28,21215.48
+2024-01-07,Starter,Annual,Europe,2243,222316.69,48.97,81776.56
+2024-08-31,Growth,Monthly,Europe,4053,128420.25,0.76,17436.26
+2024-02-09,Starter,Monthly,Africa,501,124240.0,38.42,49501.62
+2025-06-19,Enterprise,Quarterly,Europe,4419,37735.54,20.44,69756.79
+2024-12-10,Growth,Quarterly,Europe,1012,179324.12,34.88,1398.97
+2025-01-24,Business,Quarterly,Africa,4318,195366.78,36.8,65809.55
+2024-01-11,Growth,Quarterly,Europe,931,238999.96,25.45,96110.37
+2025-06-12,Free,Annual,Asia Pacific,110,122771.67,43.86,4115.06
+2024-09-13,Starter,Monthly,Europe,27,68077.97,9.95,6100.42
+2025-02-23,Growth,Annual,North America,2462,142921.3,35.12,70352.99
+2025-05-21,Business,Annual,Europe,1172,216430.42,31.84,77062.12
+2024-06-19,Enterprise,Quarterly,Africa,4671,82956.2,26.76,72933.16
+2024-12-14,Business,Monthly,North America,654,55853.47,39.08,94911.94
+2024-07-18,Growth,Annual,North America,2055,165069.36,57.03,89238.88
+2024-04-21,Enterprise,Monthly,Middle East,4215,205907.71,2.61,88116.46
+2024-04-20,Starter,Annual,North America,2114,130412.64,49.04,31132.57
+2024-03-24,Business,Quarterly,Middle East,1611,9051.9,35.79,44763.47
+2024-11-25,Enterprise,Monthly,Europe,623,186391.3,47.39,90735.59
+2024-04-15,Free,Monthly,North America,4816,124461.22,1.71,37903.81
+2024-09-24,Enterprise,Monthly,Europe,1467,67640.84,51.52,36904.02
+2024-12-13,Starter,Annual,North America,2309,134057.38,2.16,75961.99
+2025-02-03,Free,Monthly,Europe,4117,145841.08,55.38,73660.41
+2024-09-06,Starter,Annual,North America,4238,12226.9,9.95,50121.42
+2024-03-15,Growth,Annual,Latin America,3774,221506.6,28.74,57883.87
+2025-02-04,Growth,Monthly,North America,1775,125916.32,52.63,90698.82
+2024-10-03,Growth,Quarterly,Latin America,713,49412.26,11.56,35308.62
+2024-01-29,Free,Annual,North America,2839,93173.47,34.76,15693.54
+2025-05-31,Free,Monthly,Europe,1379,44224.06,27.92,8615.48
+2024-07-24,Free,Quarterly,Latin America,275,91235.9,34.52,90694.18
+2024-08-23,Starter,Monthly,Europe,3936,231174.19,53.9,5907.6
+2024-06-20,Growth,Quarterly,Africa,4907,97203.26,35.51,71051.31
+2024-10-15,Growth,Quarterly,Asia Pacific,1823,15975.29,30.33,45034.33
+2025-04-01,Starter,Monthly,Africa,2654,6578.78,12.25,24499.55
+2025-06-13,Business,Quarterly,Latin America,76,34755.09,19.4,99394.22
+2024-04-13,Growth,Monthly,Latin America,4060,84898.27,43.9,23076.21
+2025-06-17,Free,Monthly,Latin America,1543,135699.09,2.87,85223.21
+2024-05-22,Free,Quarterly,North America,670,67326.48,5.58,82349.38
+2025-03-24,Enterprise,Annual,North America,147,119720.85,41.78,67663.74
+2025-03-01,Business,Annual,Middle East,674,154178.27,56.67,65836.47
+2025-02-18,Growth,Quarterly,Latin America,1,245343.66,5.33,95999.89
+2025-03-13,Starter,Monthly,Asia Pacific,4804,54341.39,3.86,48422.03
+2024-11-21,Business,Annual,North America,1389,101516.44,47.61,71482.66
+2025-06-22,Growth,Quarterly,Asia Pacific,4950,99670.92,22.58,26804.8
+2025-04-13,Free,Quarterly,Middle East,4029,199204.82,56.94,13784.7
+2024-08-06,Business,Annual,Middle East,4092,108652.04,0.89,69863.18
+2025-01-06,Free,Quarterly,Europe,3247,229194.85,58.99,15180.36
+2024-05-21,Enterprise,Quarterly,Latin America,1780,68566.04,59.6,68933.71
+2024-07-20,Business,Annual,Middle East,3671,82335.32,3.32,66528.84
+2025-02-20,Starter,Quarterly,Africa,4573,152199.29,30.74,91828.11
+2024-12-19,Free,Annual,Europe,4531,244457.65,57.28,95209.15
+2024-10-04,Business,Monthly,Middle East,3333,189387.07,19.49,80538.77
+2024-11-23,Enterprise,Annual,Europe,1790,90325.49,32.96,69408.06
+2024-02-08,Starter,Annual,Middle East,3443,229496.18,15.57,20947.75
+2024-03-20,Business,Monthly,Latin America,3894,70284.36,48.2,8821.39
+2024-01-17,Starter,Monthly,Europe,1578,248723.43,47.06,34532.03
+2025-06-02,Enterprise,Annual,Asia Pacific,2283,45358.47,32.34,29629.82
+2024-09-23,Free,Quarterly,Latin America,4860,147081.62,55.23,94077.53
+2025-03-28,Free,Quarterly,Africa,3272,160006.99,39.84,33487.68
+2025-03-30,Free,Monthly,Europe,1476,20150.52,15.59,8203.99
+2024-02-05,Free,Annual,Africa,1517,36651.4,17.62,60101.1
+2024-02-06,Business,Monthly,Latin America,4333,40748.9,8.81,18233.88
+2025-04-27,Enterprise,Annual,Europe,3063,180752.51,23.26,12494.25
+2024-06-17,Growth,Quarterly,Latin America,4760,154781.28,51.0,34058.51
+2024-10-11,Enterprise,Monthly,Middle East,684,85809.1,31.56,67392.36
+2025-02-20,Business,Quarterly,Latin America,434,223047.42,14.02,43495.1
+2024-05-17,Growth,Monthly,Asia Pacific,3220,186437.23,1.41,91024.2
+2025-01-08,Business,Annual,Middle East,3305,182468.16,43.32,4963.97
+2025-01-07,Starter,Quarterly,Asia Pacific,978,87113.35,22.01,77796.77
+2024-06-05,Free,Annual,Asia Pacific,4497,237671.33,4.57,6972.41
+2024-11-07,Free,Monthly,Asia Pacific,1550,177342.57,39.69,46469.52
+2025-05-03,Growth,Quarterly,North America,957,11488.78,22.21,78571.81
+2024-04-06,Growth,Monthly,Latin America,4283,170855.74,11.84,11562.11
+2024-01-10,Starter,Annual,North America,589,145613.63,54.4,55975.04
+2024-12-09,Enterprise,Quarterly,Europe,3778,61687.5,8.52,23881.56
+2024-04-11,Growth,Quarterly,Latin America,833,41716.64,52.75,12457.08
+2024-10-02,Business,Annual,Middle East,531,195778.28,5.19,42433.46
+2025-05-18,Growth,Monthly,Asia Pacific,4356,48704.15,3.92,3447.99
+2024-10-26,Enterprise,Annual,Europe,2171,241498.73,20.5,81195.91
+2025-02-06,Free,Annual,Asia Pacific,4115,178552.64,13.13,35699.97
+2024-05-06,Enterprise,Quarterly,Asia Pacific,1457,27486.4,42.32,43270.3
+2025-03-17,Enterprise,Monthly,Africa,914,171531.64,27.91,6190.43
+2025-02-05,Free,Annual,Asia Pacific,358,158679.83,43.23,78911.63
+2024-09-06,Enterprise,Monthly,Europe,1952,1321.63,59.26,17118.86
+2024-09-16,Growth,Quarterly,Africa,3263,71038.34,56.91,82376.65
+2024-11-06,Free,Annual,North America,1570,97921.38,54.46,78820.43
+2025-02-14,Enterprise,Monthly,Latin America,3755,128415.38,45.56,30533.42
+2025-04-18,Business,Quarterly,Europe,4946,169044.94,2.9,28517.87
+2024-03-26,Free,Annual,North America,2968,37109.66,58.37,17158.1
+2024-02-25,Free,Annual,Latin America,3776,141495.95,11.7,18372.33
+2024-07-23,Starter,Quarterly,Middle East,1086,194328.51,51.15,86313.37
+2024-12-20,Free,Annual,Asia Pacific,3192,103808.43,2.76,74103.75
+2024-08-25,Starter,Quarterly,North America,3558,230052.89,42.78,8756.37
+2024-04-08,Growth,Quarterly,Europe,249,8919.21,15.86,6386.37
+2024-05-09,Enterprise,Monthly,Middle East,3497,43393.15,3.11,75130.82
+2024-08-04,Enterprise,Quarterly,Africa,4809,28545.02,29.41,30201.51
+2024-11-25,Growth,Monthly,Europe,797,8141.07,15.52,46061.84
+2024-07-25,Enterprise,Quarterly,Africa,2495,20591.59,7.53,35515.58
+2024-05-10,Growth,Annual,Latin America,1534,221666.64,18.1,82823.78
+2024-03-16,Starter,Monthly,Africa,1303,183315.8,41.9,8936.97
+2024-09-03,Growth,Annual,Europe,3994,68571.36,3.03,48785.85
+2025-05-28,Enterprise,Annual,Middle East,2178,62578.54,47.62,18416.19
+2025-03-18,Starter,Annual,Europe,4051,78948.35,46.81,43107.26
+2024-01-22,Enterprise,Monthly,Africa,1245,190137.68,14.59,47377.23
+2024-06-12,Growth,Monthly,Europe,4307,38333.73,27.42,54260.28
+2024-05-19,Growth,Quarterly,Africa,3842,2715.54,18.47,59219.5
+2025-02-06,Growth,Annual,Africa,56,91394.9,34.57,97862.72
+2024-01-05,Business,Quarterly,Europe,2645,83226.09,9.33,73354.99
+2024-07-07,Business,Annual,Latin America,924,93338.08,4.0,5030.84
+2025-01-30,Enterprise,Monthly,North America,4842,184539.3,54.63,14576.4
+2024-02-08,Free,Quarterly,Middle East,354,245522.07,4.6,54686.55
+2024-07-22,Enterprise,Annual,Africa,3834,242018.79,28.2,50722.82
+2025-01-24,Growth,Monthly,Latin America,2296,211666.68,18.66,69677.23
+2025-05-04,Business,Quarterly,Europe,4464,128562.39,52.21,7946.98
+2024-12-14,Free,Quarterly,Latin America,4732,71249.07,42.03,76852.28
+2025-01-15,Enterprise,Monthly,Asia Pacific,4579,109572.8,43.11,4916.5
+2024-04-13,Starter,Annual,North America,1102,232848.39,40.05,14877.32
+2024-07-14,Growth,Monthly,Middle East,4968,210858.44,8.2,2378.77
+2025-05-06,Business,Annual,Latin America,2127,147587.03,53.22,52101.29
+2025-06-16,Enterprise,Monthly,Africa,3069,16705.97,25.09,53090.15
+2025-03-12,Business,Annual,North America,747,161716.36,0.52,62208.16
+2025-04-16,Growth,Quarterly,Latin America,4895,195803.8,51.17,25137.31
+2024-03-28,Growth,Monthly,Latin America,2492,211468.8,59.09,89073.56
+2025-01-12,Enterprise,Monthly,Africa,3820,32810.57,37.82,77556.04
+2024-05-01,Starter,Monthly,Europe,4729,85990.55,16.71,9159.37
+2024-03-12,Free,Monthly,North America,2699,133818.43,34.66,3886.01
+2024-02-28,Enterprise,Annual,Africa,4235,176896.42,25.42,44869.64
+2025-01-22,Starter,Annual,Latin America,3768,80672.93,15.19,27593.8
+2024-09-08,Starter,Monthly,Asia Pacific,1425,17918.54,52.18,37724.37
+2025-01-12,Business,Monthly,Europe,269,196916.81,16.69,68234.73
+2024-03-15,Enterprise,Quarterly,Asia Pacific,1784,19428.02,14.89,68778.32
+2025-03-17,Growth,Monthly,Middle East,1552,81092.5,19.99,15230.3
+2024-11-09,Free,Quarterly,North America,3576,39203.49,32.14,32354.8
+2025-06-20,Free,Quarterly,North America,3761,108068.7,21.35,3721.09
+2024-08-14,Growth,Quarterly,Middle East,646,101525.47,20.57,42090.8
+2025-06-18,Business,Quarterly,North America,1438,21488.5,31.07,48477.85
+2024-05-31,Enterprise,Annual,Africa,3186,101012.06,15.78,68971.69
+2025-05-11,Growth,Annual,Asia Pacific,4983,78610.11,38.19,51699.82
+2024-07-29,Free,Monthly,Middle East,2299,33472.97,55.96,74493.89
+2024-07-26,Starter,Quarterly,Latin America,1045,191787.06,10.63,63980.92
+2024-08-24,Business,Monthly,Asia Pacific,3095,130978.31,35.13,33097.9
+2024-04-21,Starter,Annual,North America,4953,233932.61,7.36,57233.12
+2025-03-04,Business,Quarterly,North America,3732,111420.7,54.59,88608.23
+2024-08-29,Free,Quarterly,Asia Pacific,2490,90518.95,6.57,56356.1
+2025-02-07,Business,Annual,Asia Pacific,4196,241785.81,55.9,31190.6
+2025-05-29,Enterprise,Annual,Asia Pacific,258,163772.05,9.03,48452.07
+2024-10-25,Growth,Quarterly,Asia Pacific,1807,169601.27,4.06,52507.2
+2024-11-28,Free,Annual,Latin America,3299,66405.49,43.2,4051.86
+2025-05-23,Enterprise,Quarterly,Europe,4724,37017.83,11.58,51162.07
+2024-07-16,Growth,Monthly,Latin America,1229,204015.49,29.58,92620.62
+2024-10-15,Business,Annual,Africa,240,145526.53,36.99,67338.36
+2025-03-28,Free,Monthly,North America,3965,226943.54,52.39,45872.51
+2024-02-01,Free,Quarterly,Africa,2643,2255.89,9.29,1363.25
+2025-04-15,Business,Annual,Middle East,1732,149979.71,35.59,53781.91
+2025-01-02,Starter,Monthly,Middle East,1310,160607.9,36.88,52385.31
+2024-08-29,Starter,Monthly,North America,587,77703.48,47.42,39806.06
+2024-01-25,Growth,Annual,Asia Pacific,4722,134495.52,49.92,23331.74
+2024-05-25,Growth,Annual,Europe,1696,160111.97,53.64,14307.74

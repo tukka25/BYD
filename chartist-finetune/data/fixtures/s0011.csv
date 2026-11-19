@@ -1,0 +1,241 @@
+shipment_ship_date,shipment_carrier_name,shipment_transport_mode,shipment_origin_region,shipment_weight_kg,shipment_distance_km,shipment_freight_cost,shipment_package_count
+2024-10-30,UPS Supply Chain,Parcel,Southwest,3626.0,1314.31,5137.95,293
+2025-02-14,J.B. Hunt,Intermodal Rail,Southwest,12670.58,4000.64,4666.09,353
+2024-03-09,Old Dominion Freight Line,Ground LTL,Northeast,9416.39,5923.18,3290.63,179
+2024-01-26,UPS Supply Chain,Air Cargo,Midwest,2556.98,5283.03,7052.08,297
+2024-03-18,FedEx Freight,Ocean Container,Midwest,13334.32,8104.53,8676.61,198
+2024-01-02,Maersk Line,Air Cargo,Southwest,19830.09,4448.03,9716.93,245
+2024-08-30,Maersk Line,Air Cargo,Pacific Rim,1212.75,823.57,8578.96,191
+2025-02-14,Maersk Line,Parcel,Northeast,9207.4,848.34,16879.17,218
+2024-04-20,Maersk Line,Ground LTL,Midwest,18823.38,9541.42,15310.79,491
+2024-05-29,Maersk Line,Air Cargo,West Coast,16039.25,2936.75,13993.34,327
+2025-04-22,FedEx Freight,Parcel,Pacific Rim,10069.62,5128.28,7887.68,291
+2024-11-17,XPO Logistics,Ground LTL,Southwest,23147.53,9246.35,14672.69,190
+2025-05-18,J.B. Hunt,Ground LTL,Southeast,11950.76,3885.26,8462.3,24
+2025-03-09,Maersk Line,Parcel,Southwest,4643.01,4937.34,11481.5,80
+2024-07-28,UPS Supply Chain,Full Truckload,Northeast,22114.08,11447.71,6478.33,129
+2025-02-03,UPS Supply Chain,Ground LTL,West Coast,10441.46,3313.75,5063.92,329
+2025-01-03,XPO Logistics,Intermodal Rail,Southwest,13804.18,789.19,10067.28,52
+2024-03-07,XPO Logistics,Parcel,Midwest,4748.66,7056.23,2899.54,88
+2025-04-20,J.B. Hunt,Ocean Container,Canada,10628.64,2626.5,13154.69,440
+2024-05-11,XPO Logistics,Intermodal Rail,Southeast,10105.82,8447.48,2356.04,441
+2025-06-01,FedEx Freight,Parcel,Canada,16303.28,446.5,16961.69,22
+2025-02-08,UPS Supply Chain,Ocean Container,Midwest,11622.99,1827.2,3248.98,60
+2024-12-12,UPS Supply Chain,Intermodal Rail,Midwest,3522.47,1962.34,2407.84,227
+2025-05-12,J.B. Hunt,Ground LTL,Canada,989.19,6396.42,16417.62,291
+2024-10-22,XPO Logistics,Intermodal Rail,Southeast,21163.01,9577.91,9596.34,262
+2024-05-07,J.B. Hunt,Ocean Container,Southwest,17809.24,10350.11,17728.19,247
+2024-09-29,UPS Supply Chain,Air Cargo,Canada,8843.13,1862.32,7726.04,367
+2025-05-22,J.B. Hunt,Full Truckload,Northeast,1955.43,11287.96,18114.66,149
+2024-02-17,FedEx Freight,Full Truckload,Canada,8980.66,11661.15,12750.5,485
+2024-08-08,XPO Logistics,Ocean Container,Southeast,23613.42,9767.19,9930.07,428
+2025-04-09,UPS Supply Chain,Parcel,Canada,19926.86,11994.49,13168.87,350
+2024-09-06,UPS Supply Chain,Ocean Container,Canada,13152.76,3755.08,15513.57,382
+2025-04-29,XPO Logistics,Parcel,Southwest,255.54,11167.28,3217.06,237
+2025-01-28,Maersk Line,Ocean Container,West Coast,15963.83,455.4,3529.5,87
+2024-09-10,J.B. Hunt,Ground LTL,Southwest,3234.19,10819.11,8089.88,493
+2024-11-08,J.B. Hunt,Intermodal Rail,Southwest,6741.55,312.68,3173.84,351
+2024-07-22,Old Dominion Freight Line,Parcel,Canada,1555.24,11537.64,11303.89,142
+2024-07-06,XPO Logistics,Ocean Container,Midwest,15121.89,6675.93,6666.53,65
+2025-02-25,XPO Logistics,Full Truckload,Northeast,17802.71,5118.48,13190.1,143
+2025-05-13,Old Dominion Freight Line,Parcel,Southeast,1466.7,10479.45,7230.73,190
+2024-03-18,Old Dominion Freight Line,Ground LTL,Northeast,19871.84,10216.27,1386.78,306
+2024-09-18,Old Dominion Freight Line,Ocean Container,Canada,9403.45,4003.54,14021.82,142
+2025-06-17,Old Dominion Freight Line,Parcel,Midwest,18279.65,6041.69,7167.29,434
+2025-05-20,Maersk Line,Air Cargo,Southwest,5375.87,3045.03,11943.5,409
+2025-01-02,Maersk Line,Full Truckload,West Coast,21490.56,7800.66,5358.15,382
+2025-01-07,Maersk Line,Intermodal Rail,Canada,23801.93,10274.95,18111.71,449
+2024-12-24,Old Dominion Freight Line,Parcel,Midwest,3782.46,4039.69,16614.51,166
+2024-09-21,J.B. Hunt,Ocean Container,Canada,15771.5,11380.44,2242.44,38
+2025-02-04,Maersk Line,Full Truckload,Canada,22947.73,11020.92,644.55,478
+2024-04-06,Old Dominion Freight Line,Air Cargo,Southwest,14708.52,3812.31,16992.13,284
+2024-07-12,XPO Logistics,Air Cargo,Northeast,22008.08,4847.08,2066.83,435
+2024-02-19,Old Dominion Freight Line,Ground LTL,Southwest,18325.18,8726.61,711.62,475
+2024-04-13,J.B. Hunt,Ground LTL,Pacific Rim,22312.99,8692.83,7153.77,31
+2024-11-22,FedEx Freight,Air Cargo,Midwest,23713.92,4748.68,1868.45,261
+2024-11-16,UPS Supply Chain,Ocean Container,Midwest,7465.67,1620.49,2875.98,275
+2025-03-16,FedEx Freight,Full Truckload,Northeast,11724.68,11400.21,9152.33,186
+2025-05-27,FedEx Freight,Ground LTL,Southwest,158.29,9998.45,4494.13,200
+2025-02-27,UPS Supply Chain,Intermodal Rail,Southeast,8414.73,4666.56,3777.87,476
+2024-04-23,XPO Logistics,Intermodal Rail,Pacific Rim,14373.04,945.86,15476.28,327
+2025-03-12,FedEx Freight,Parcel,Pacific Rim,11331.63,4079.79,14352.86,8
+2024-09-06,FedEx Freight,Intermodal Rail,Canada,12922.64,9847.54,15866.37,71
+2024-07-23,Maersk Line,Ground LTL,Northeast,7679.88,2483.14,5080.73,51
+2025-02-03,XPO Logistics,Ground LTL,Pacific Rim,10912.49,1785.24,10809.29,240
+2024-09-13,UPS Supply Chain,Ocean Container,Southeast,13402.22,218.34,9271.59,416
+2025-05-11,Maersk Line,Parcel,West Coast,11477.72,11157.01,18347.68,279
+2024-03-07,XPO Logistics,Air Cargo,Canada,13422.29,4499.93,3973.66,232
+2024-09-03,Maersk Line,Ground LTL,Southwest,7623.47,8731.12,2843.16,143
+2024-05-02,J.B. Hunt,Ocean Container,Southeast,2120.84,1910.52,7323.11,70
+2024-03-13,Maersk Line,Air Cargo,West Coast,492.46,11838.22,10723.28,89
+2025-01-06,UPS Supply Chain,Parcel,Pacific Rim,19197.42,5152.47,2816.96,440
+2024-09-20,XPO Logistics,Ocean Container,West Coast,7478.78,11928.65,4815.82,416
+2025-02-22,FedEx Freight,Ocean Container,Northeast,11569.63,2439.4,12052.47,282
+2024-05-18,FedEx Freight,Parcel,West Coast,6558.5,871.47,18166.12,362
+2024-09-15,J.B. Hunt,Parcel,Northeast,21767.64,8644.55,480.7,426
+2024-12-22,Maersk Line,Air Cargo,Southeast,5708.11,5373.6,8499.75,248
+2025-02-18,Maersk Line,Ground LTL,Pacific Rim,7772.81,7168.88,17340.8,364
+2024-05-09,Maersk Line,Intermodal Rail,West Coast,9173.8,11229.03,12913.82,34
+2025-01-26,UPS Supply Chain,Parcel,Southeast,13035.43,9065.04,8115.35,417
+2024-09-11,XPO Logistics,Ground LTL,West Coast,19567.5,3004.17,8382.51,361
+2025-06-01,XPO Logistics,Parcel,Southwest,11002.68,16.37,2844.43,287
+2024-02-25,J.B. Hunt,Intermodal Rail,Northeast,23343.73,3234.48,334.03,298
+2024-08-19,Maersk Line,Intermodal Rail,Northeast,13647.09,9072.54,4767.6,349
+2025-02-09,Maersk Line,Air Cargo,Southwest,314.47,1317.3,3887.39,260
+2024-04-29,Maersk Line,Air Cargo,Pacific Rim,11554.23,4847.83,12381.74,140
+2025-05-31,UPS Supply Chain,Ocean Container,Canada,6056.33,3869.41,156.71,463
+2024-06-13,XPO Logistics,Parcel,Southeast,18504.01,11404.66,6601.79,147
+2024-09-30,J.B. Hunt,Air Cargo,Northeast,4027.78,1478.02,3767.07,380
+2024-09-01,Old Dominion Freight Line,Ocean Container,Midwest,1309.79,7557.35,2855.06,232
+2024-08-07,XPO Logistics,Air Cargo,Midwest,980.69,1361.7,322.33,380
+2024-09-30,UPS Supply Chain,Ground LTL,Southeast,17917.87,4725.21,4595.28,340
+2024-08-10,FedEx Freight,Intermodal Rail,Midwest,18689.99,4445.29,11885.06,152
+2024-07-28,XPO Logistics,Full Truckload,Midwest,7846.66,10464.63,16251.76,468
+2025-04-10,UPS Supply Chain,Air Cargo,Southwest,5317.55,2789.85,9557.72,496
+2025-05-04,J.B. Hunt,Ocean Container,Southwest,21344.78,7080.18,17543.98,104
+2025-06-15,J.B. Hunt,Parcel,West Coast,15153.43,223.69,162.64,205
+2024-12-26,UPS Supply Chain,Intermodal Rail,Midwest,17714.69,1843.43,15846.05,286
+2025-03-05,Old Dominion Freight Line,Ocean Container,Canada,17676.27,7270.71,13353.21,125
+2024-09-18,FedEx Freight,Full Truckload,Southeast,15331.14,11208.18,12119.98,163
+2024-09-29,UPS Supply Chain,Ground LTL,West Coast,3897.43,2096.6,5434.03,104
+2024-07-14,XPO Logistics,Full Truckload,Pacific Rim,1858.3,8569.62,16192.65,309
+2024-01-20,Old Dominion Freight Line,Full Truckload,West Coast,337.41,354.22,12760.32,65
+2024-06-23,Old Dominion Freight Line,Parcel,West Coast,23923.48,9949.72,6760.03,489
+2025-04-11,FedEx Freight,Ocean Container,Southeast,15199.38,3432.39,13656.08,220
+2024-04-12,XPO Logistics,Full Truckload,Midwest,12790.98,4505.68,1804.42,32
+2024-10-10,UPS Supply Chain,Intermodal Rail,Southwest,17782.83,8017.98,6205.72,28
+2024-08-09,J.B. Hunt,Ocean Container,West Coast,23423.5,9153.53,12733.33,428
+2024-12-19,UPS Supply Chain,Full Truckload,West Coast,14498.82,5161.25,12726.19,481
+2024-05-11,XPO Logistics,Ground LTL,Midwest,16456.21,5619.18,16548.23,294
+2024-04-07,Maersk Line,Full Truckload,Midwest,10595.05,10864.12,5094.04,341
+2024-03-03,XPO Logistics,Parcel,Southwest,12425.17,8704.56,12426.13,136
+2024-02-18,UPS Supply Chain,Ground LTL,Southeast,21781.55,2622.96,17386.02,462
+2024-02-12,Maersk Line,Ocean Container,Midwest,11518.71,292.32,6921.64,102
+2024-04-13,J.B. Hunt,Ocean Container,Southeast,20123.18,7578.3,12414.28,215
+2024-05-15,J.B. Hunt,Full Truckload,Midwest,23459.87,5928.16,10938.07,431
+2025-06-11,Old Dominion Freight Line,Ground LTL,Southwest,2156.49,4956.84,14269.41,476
+2025-04-20,Old Dominion Freight Line,Ocean Container,Pacific Rim,7314.64,7719.05,15203.09,122
+2025-03-21,UPS Supply Chain,Ground LTL,Midwest,7076.28,318.79,1875.04,8
+2024-07-30,FedEx Freight,Intermodal Rail,Northeast,8105.42,3533.2,3139.35,499
+2025-06-09,FedEx Freight,Ground LTL,Pacific Rim,22181.53,5259.68,13292.45,132
+2024-05-13,Old Dominion Freight Line,Air Cargo,Pacific Rim,16256.87,1934.09,4999.52,289
+2024-01-25,J.B. Hunt,Ocean Container,West Coast,8317.6,5791.94,338.29,305
+2024-03-28,Old Dominion Freight Line,Full Truckload,Canada,21676.94,3790.91,8452.01,309
+2024-02-04,XPO Logistics,Ocean Container,Pacific Rim,2392.6,2965.01,2143.31,35
+2025-01-22,FedEx Freight,Parcel,Canada,21785.17,1304.65,880.64,109
+2025-02-14,Maersk Line,Intermodal Rail,Midwest,2378.35,10385.77,4370.47,269
+2024-03-27,FedEx Freight,Ground LTL,Southwest,5132.88,11365.92,15873.3,148
+2025-03-11,J.B. Hunt,Ground LTL,Canada,19430.77,10377.71,15896.46,418
+2024-12-24,XPO Logistics,Air Cargo,Southwest,7316.38,1359.39,9645.82,256
+2025-01-29,XPO Logistics,Ground LTL,Northeast,19014.93,3860.42,11276.99,224
+2025-05-06,XPO Logistics,Ocean Container,Canada,22901.02,5818.98,12908.41,433
+2024-09-21,FedEx Freight,Parcel,Southwest,10663.36,2237.16,16073.79,469
+2024-02-22,XPO Logistics,Ocean Container,Midwest,5127.3,3311.71,14849.25,154
+2024-08-05,J.B. Hunt,Full Truckload,Southwest,10275.36,11433.93,12773.85,104
+2024-11-21,XPO Logistics,Intermodal Rail,Pacific Rim,19699.66,2221.4,3147.37,376
+2025-04-18,FedEx Freight,Parcel,Midwest,20217.79,7574.96,8196.79,244
+2024-02-08,Old Dominion Freight Line,Parcel,Southeast,338.85,9760.21,15463.93,392
+2024-06-04,Old Dominion Freight Line,Parcel,Midwest,18228.38,265.78,6285.52,188
+2024-08-12,FedEx Freight,Parcel,West Coast,10702.42,1304.3,2463.45,402
+2025-02-09,UPS Supply Chain,Full Truckload,Southwest,15667.82,1004.21,10264.58,296
+2025-06-08,Maersk Line,Full Truckload,Northeast,10901.97,6554.3,9615.72,27
+2024-02-24,FedEx Freight,Intermodal Rail,Pacific Rim,13454.63,10008.93,16185.63,317
+2024-11-21,FedEx Freight,Ground LTL,Northeast,3790.67,7594.79,3804.6,208
+2024-04-27,J.B. Hunt,Ground LTL,Northeast,5887.29,3287.01,13364.59,374
+2024-05-19,FedEx Freight,Full Truckload,Midwest,15510.98,10141.91,8390.26,428
+2025-06-17,FedEx Freight,Full Truckload,West Coast,796.5,3302.92,6728.54,269
+2025-04-13,UPS Supply Chain,Intermodal Rail,Southeast,8732.3,10216.3,2119.31,306
+2024-11-06,Old Dominion Freight Line,Ground LTL,Pacific Rim,23875.58,10678.34,14326.72,419
+2024-09-07,Old Dominion Freight Line,Ground LTL,Midwest,20422.17,1491.31,13773.18,129
+2024-12-29,UPS Supply Chain,Full Truckload,Southeast,18810.89,3939.98,8780.91,435
+2024-08-29,Maersk Line,Intermodal Rail,Southeast,23089.11,7597.57,4445.35,290
+2024-07-22,UPS Supply Chain,Full Truckload,Southwest,848.19,1949.29,6965.9,278
+2024-04-09,Old Dominion Freight Line,Ocean Container,Southwest,5046.46,5091.32,9176.53,353
+2025-02-11,XPO Logistics,Air Cargo,Southeast,23131.11,6995.3,13198.01,374
+2024-05-23,XPO Logistics,Ground LTL,Southeast,20249.95,9771.76,15787.96,145
+2025-01-01,J.B. Hunt,Full Truckload,Southeast,20747.85,10361.99,10328.29,185
+2024-11-22,UPS Supply Chain,Air Cargo,Midwest,4141.9,10841.9,12074.33,102
+2024-08-27,FedEx Freight,Full Truckload,Southwest,11658.84,4079.14,7521.37,148
+2024-02-17,Maersk Line,Ocean Container,Midwest,3451.62,8653.12,15745.37,126
+2025-05-13,UPS Supply Chain,Air Cargo,West Coast,16164.81,5780.83,18483.51,388
+2024-10-28,Maersk Line,Full Truckload,West Coast,18232.65,5040.65,8311.01,443
+2025-02-05,Old Dominion Freight Line,Air Cargo,Canada,4207.36,2529.61,7112.47,369
+2025-02-22,Old Dominion Freight Line,Parcel,Northeast,15129.36,5974.29,14662.46,171
+2024-02-17,FedEx Freight,Full Truckload,West Coast,1308.06,11691.76,2905.31,260
+2024-08-12,XPO Logistics,Full Truckload,Canada,18019.0,1543.2,9183.88,13
+2024-08-12,FedEx Freight,Ocean Container,West Coast,9247.61,8712.98,12107.14,227
+2025-04-09,J.B. Hunt,Air Cargo,Southeast,1186.95,1148.95,18167.28,316
+2024-01-23,FedEx Freight,Intermodal Rail,Southwest,4502.22,6225.64,5314.87,226
+2024-07-08,J.B. Hunt,Full Truckload,Southeast,18392.99,7406.58,15375.53,110
+2024-11-03,Old Dominion Freight Line,Parcel,Northeast,12399.02,11515.04,16843.02,222
+2024-03-18,XPO Logistics,Intermodal Rail,Northeast,15542.66,5816.46,10223.97,296
+2024-03-05,UPS Supply Chain,Parcel,Southeast,14636.84,3607.08,16712.11,199
+2024-01-11,FedEx Freight,Full Truckload,Midwest,13695.63,662.89,15561.38,245
+2024-05-06,Maersk Line,Parcel,Midwest,13062.21,11152.38,12685.15,419
+2025-03-26,Maersk Line,Air Cargo,Southwest,15058.24,1576.03,9123.88,484
+2024-01-01,UPS Supply Chain,Air Cargo,Canada,59.14,5327.6,2598.53,147
+2025-03-08,XPO Logistics,Full Truckload,Pacific Rim,597.98,8812.56,15483.2,191
+2024-07-17,UPS Supply Chain,Ocean Container,Northeast,6278.67,3126.68,7126.77,140
+2024-08-26,XPO Logistics,Parcel,Canada,11523.22,5090.67,7001.67,247
+2025-04-01,XPO Logistics,Ground LTL,Northeast,16723.52,2811.1,9329.86,295
+2024-11-22,XPO Logistics,Intermodal Rail,West Coast,17070.79,9521.57,16201.4,477
+2025-06-13,J.B. Hunt,Intermodal Rail,West Coast,5750.92,5719.89,10673.81,70
+2024-01-07,FedEx Freight,Ocean Container,Pacific Rim,9017.65,2077.26,694.03,147
+2024-10-15,Old Dominion Freight Line,Ocean Container,West Coast,12740.67,9377.51,4092.31,200
+2025-03-06,UPS Supply Chain,Full Truckload,Midwest,4291.9,8906.25,1796.21,199
+2025-03-01,J.B. Hunt,Parcel,West Coast,10270.25,2855.8,3528.14,83
+2024-11-29,Old Dominion Freight Line,Intermodal Rail,West Coast,8842.3,2368.13,706.06,97
+2025-05-07,FedEx Freight,Full Truckload,Southwest,19723.26,4289.87,13823.94,302
+2024-01-27,FedEx Freight,Intermodal Rail,Canada,19437.6,5659.18,7821.02,271
+2025-01-20,XPO Logistics,Ocean Container,Southwest,2133.25,7772.78,5400.06,256
+2025-05-11,J.B. Hunt,Ground LTL,Midwest,17164.38,1466.61,2045.06,413
+2024-05-29,UPS Supply Chain,Ocean Container,Pacific Rim,21404.57,4056.96,9709.24,480
+2024-11-30,UPS Supply Chain,Intermodal Rail,Northeast,3103.24,50.08,5899.78,426
+2025-05-24,J.B. Hunt,Air Cargo,Canada,20408.23,5806.23,9051.77,3
+2024-08-05,FedEx Freight,Air Cargo,Pacific Rim,18563.25,3841.26,11415.24,337
+2024-11-15,J.B. Hunt,Full Truckload,Midwest,13679.03,8979.11,11952.48,285
+2025-02-28,XPO Logistics,Full Truckload,West Coast,10646.81,7521.94,10721.89,114
+2024-11-10,UPS Supply Chain,Air Cargo,Midwest,5327.02,1459.09,7826.38,408
+2025-01-06,UPS Supply Chain,Ground LTL,Canada,7854.38,4600.99,17817.87,392
+2024-05-27,XPO Logistics,Parcel,Pacific Rim,9937.83,11122.71,1482.44,358
+2024-12-09,Old Dominion Freight Line,Parcel,Northeast,5909.8,10500.18,13605.15,183
+2025-02-20,UPS Supply Chain,Parcel,Southwest,16482.47,3262.75,873.8,497
+2024-04-20,Old Dominion Freight Line,Air Cargo,Midwest,16687.45,2067.78,13242.34,377
+2024-10-20,XPO Logistics,Ground LTL,Southwest,2611.05,7643.57,15554.02,140
+2025-02-10,FedEx Freight,Parcel,Northeast,18136.21,6824.66,12913.95,201
+2024-06-24,XPO Logistics,Intermodal Rail,Pacific Rim,14171.1,8534.99,2046.31,69
+2025-04-02,UPS Supply Chain,Parcel,Southeast,23985.3,2074.9,13668.18,135
+2025-06-07,XPO Logistics,Ocean Container,Canada,18920.37,1733.58,15569.13,422
+2025-05-23,XPO Logistics,Full Truckload,Southeast,4278.84,94.11,13496.18,192
+2024-12-16,Maersk Line,Ground LTL,Southwest,18356.09,2995.58,353.46,350
+2024-07-17,Maersk Line,Parcel,West Coast,7001.82,8290.93,1480.65,140
+2024-03-15,FedEx Freight,Intermodal Rail,Southeast,3426.85,2440.6,16803.61,101
+2025-06-12,Maersk Line,Full Truckload,Southeast,9047.94,304.14,12106.04,83
+2025-06-15,FedEx Freight,Ground LTL,Pacific Rim,7735.76,534.14,11582.48,280
+2024-07-18,UPS Supply Chain,Ground LTL,Southwest,8187.88,10460.31,1041.08,348
+2024-01-24,Old Dominion Freight Line,Ocean Container,Southeast,20120.74,3877.3,12451.11,109
+2024-09-14,Maersk Line,Intermodal Rail,Pacific Rim,21231.43,11550.67,5677.88,355
+2025-02-27,J.B. Hunt,Air Cargo,Southwest,1086.52,6413.99,15154.37,456
+2024-11-02,J.B. Hunt,Ground LTL,Southwest,16781.49,8157.87,1568.51,244
+2024-03-17,FedEx Freight,Ground LTL,Canada,12363.9,6920.38,523.06,473
+2024-11-03,UPS Supply Chain,Full Truckload,Southeast,8868.67,10136.55,8511.82,279
+2024-08-06,FedEx Freight,Full Truckload,Northeast,12239.56,9768.35,474.1,50
+2024-03-12,FedEx Freight,Full Truckload,Midwest,7762.97,4870.04,2511.45,138
+2025-04-13,J.B. Hunt,Ground LTL,Pacific Rim,1433.08,4832.53,16213.87,404
+2024-09-14,Old Dominion Freight Line,Ground LTL,Midwest,18258.6,8637.23,12965.23,434
+2025-05-21,XPO Logistics,Ground LTL,Midwest,13720.97,10480.21,5267.16,119
+2024-09-02,UPS Supply Chain,Intermodal Rail,Midwest,1045.46,10146.38,14095.1,421
+2025-01-29,XPO Logistics,Ocean Container,Canada,7061.05,8506.35,6186.04,73
+2025-02-10,FedEx Freight,Air Cargo,Northeast,13208.1,10008.36,16218.5,325
+2024-12-08,XPO Logistics,Air Cargo,Northeast,23097.25,5854.01,6455.88,156
+2025-01-09,Old Dominion Freight Line,Intermodal Rail,Canada,23140.31,10962.95,11938.33,12
+2025-03-13,Old Dominion Freight Line,Intermodal Rail,Canada,22779.6,7706.84,18148.24,12
+2024-07-23,FedEx Freight,Full Truckload,Southwest,6997.48,2886.31,1569.06,479
+2024-07-24,FedEx Freight,Parcel,Southwest,8263.54,1867.71,14758.66,324
+2025-04-05,Old Dominion Freight Line,Ground LTL,Pacific Rim,16348.71,1115.46,17824.86,400
+2024-11-03,Old Dominion Freight Line,Air Cargo,Canada,9508.09,5584.85,9154.72,320
+2025-06-08,XPO Logistics,Full Truckload,Southwest,3346.95,8717.46,10087.14,363
+2024-05-30,Old Dominion Freight Line,Ocean Container,Northeast,5139.29,2659.74,11794.23,198
+2024-12-28,XPO Logistics,Air Cargo,Southeast,3021.29,9313.6,14139.0,49
+2025-02-20,Maersk Line,Ground LTL,West Coast,12958.1,6828.02,14391.08,175
+2024-09-06,FedEx Freight,Air Cargo,Canada,343.16,6460.43,9734.44,432

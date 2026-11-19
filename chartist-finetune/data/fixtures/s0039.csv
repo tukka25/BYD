@@ -1,0 +1,241 @@
+Usage Date,Region Name,Plan Type,Device Category,Active Subscribers,Data Used GB,Average Latency Ms,Total Revenue
+2024-08-18,Midwest,Prepaid,Smartwatch,821866,21703.35,113.06,2963912.16
+2024-02-21,Pacific Northwest,Prepaid,Tablet,539504,38933.79,87.46,818679.41
+2025-05-05,Southwest,Family Plan,Tablet,331234,23832.61,124.92,273808.5
+2025-01-23,West Coast,Business Unlimited,Smartphone,692305,48029.37,57.06,788887.45
+2025-04-23,Mountain West,Family Plan,Hotspot,662310,41037.13,111.74,937892.16
+2025-03-28,Northeast,IoT Connectivity,Smartphone,401277,10845.45,18.64,2320464.8
+2025-01-20,Northeast,Family Plan,Fixed Wireless Router,760110,40870.18,53.52,1460858.64
+2024-11-26,Southeast,IoT Connectivity,Smartphone,729793,29575.71,123.07,3155179.37
+2024-12-22,Midwest,Business Unlimited,Hotspot,624175,13576.25,8.83,2409135.3
+2025-01-25,Mountain West,Business Unlimited,Feature Phone,307907,11501.7,164.81,3765362.03
+2025-03-01,West Coast,Prepaid,Fixed Wireless Router,350902,37634.02,24.81,2145142.59
+2024-08-22,Northeast,Family Plan,Smartphone,718736,11558.11,135.36,2540581.77
+2024-12-12,Southwest,Postpaid,Smartphone,475331,34912.01,98.61,3034709.92
+2025-01-03,Pacific Northwest,Prepaid,Smartwatch,138372,29321.99,78.15,2289204.86
+2024-05-22,Southeast,Family Plan,Tablet,537227,17761.55,139.44,2869341.24
+2024-06-07,Northeast,Business Unlimited,Hotspot,158447,1511.55,93.85,3519362.16
+2024-09-08,Northeast,Business Unlimited,Tablet,98756,10954.29,178.63,413684.4
+2024-12-15,Mountain West,Business Unlimited,Feature Phone,583894,43246.45,40.67,528133.59
+2025-03-18,Pacific Northwest,IoT Connectivity,Smartwatch,18243,7288.61,127.04,2266578.79
+2024-11-17,Southwest,Prepaid,Hotspot,636653,26065.24,90.55,569062.71
+2024-02-03,Midwest,Family Plan,Feature Phone,551523,34247.48,146.06,436214.12
+2024-07-11,West Coast,Family Plan,Smartwatch,367855,15159.37,65.39,3791704.07
+2024-10-07,Southwest,Family Plan,Smartwatch,586257,4830.0,76.41,613603.19
+2024-04-05,Pacific Northwest,Prepaid,Smartwatch,432398,1934.18,132.74,1516449.38
+2024-03-04,Pacific Northwest,Family Plan,Tablet,418227,5211.01,103.61,3133874.0
+2024-12-05,Southeast,IoT Connectivity,Smartphone,635214,16702.24,133.78,3317092.66
+2025-02-05,Pacific Northwest,Postpaid,Smartwatch,67816,13495.7,139.63,2261992.91
+2025-06-20,West Coast,Postpaid,Smartwatch,233313,32601.77,126.59,2073219.48
+2025-06-02,Northeast,Family Plan,Fixed Wireless Router,33624,14083.02,23.21,890755.76
+2024-12-17,Northeast,Prepaid,Hotspot,548125,17936.4,93.96,949290.12
+2025-03-18,Mountain West,Family Plan,Hotspot,449690,32381.91,123.67,2556352.99
+2024-08-08,Northeast,Family Plan,Smartwatch,690015,550.69,108.74,206091.24
+2024-11-09,Northeast,Business Unlimited,Feature Phone,193045,28452.09,131.34,172044.49
+2024-05-09,Northeast,Family Plan,Feature Phone,627841,32334.09,99.43,918239.32
+2025-01-09,Southeast,Postpaid,Tablet,420645,46336.94,130.83,2986025.75
+2024-01-03,Southwest,Business Unlimited,Smartphone,321120,41838.1,28.8,2058740.88
+2025-05-02,Midwest,Prepaid,Fixed Wireless Router,391161,17109.82,15.09,398525.64
+2024-05-24,Northeast,Business Unlimited,Smartwatch,716626,23015.53,39.62,3303076.1
+2024-03-14,Southeast,Prepaid,Smartwatch,441555,39246.39,154.9,2211829.24
+2025-01-25,Midwest,IoT Connectivity,Smartwatch,760940,14762.42,88.25,2107596.14
+2024-04-17,Mountain West,Postpaid,Hotspot,739191,15728.46,141.65,3125387.45
+2024-07-10,West Coast,Family Plan,Feature Phone,11810,5819.69,109.83,3140648.61
+2025-05-17,West Coast,Family Plan,Smartphone,337471,30985.11,67.31,3481147.02
+2024-08-21,West Coast,IoT Connectivity,Smartphone,670118,21611.84,75.35,253164.32
+2024-05-29,Pacific Northwest,Business Unlimited,Smartwatch,154771,36630.68,113.48,57433.17
+2025-03-11,Southwest,Postpaid,Smartwatch,40861,10317.45,52.07,192164.56
+2025-01-29,West Coast,IoT Connectivity,Feature Phone,62831,39037.84,30.84,747614.34
+2024-08-24,Southwest,Family Plan,Tablet,7916,26933.33,56.07,1883055.14
+2025-04-04,Northeast,Postpaid,Smartwatch,92719,7222.1,49.45,837005.08
+2024-11-24,Northeast,Business Unlimited,Smartphone,838555,15100.37,174.09,3693646.93
+2025-03-23,Northeast,Business Unlimited,Smartphone,758409,2234.64,43.13,1422843.79
+2025-01-19,Mountain West,Postpaid,Hotspot,781683,27660.49,51.66,1508420.04
+2025-03-24,Southeast,Prepaid,Smartphone,805051,2267.8,37.68,2841305.79
+2024-09-12,Midwest,Prepaid,Smartwatch,106206,39573.91,40.97,3306834.9
+2025-03-17,West Coast,IoT Connectivity,Hotspot,762163,41115.61,48.22,3666249.85
+2025-05-27,Mountain West,Prepaid,Smartphone,612132,14017.77,126.63,669986.03
+2024-02-25,Southwest,Business Unlimited,Smartwatch,273197,20700.95,34.69,3662368.93
+2025-03-11,Southwest,Prepaid,Smartwatch,822098,17855.36,94.19,1990036.58
+2025-04-30,Midwest,Postpaid,Hotspot,847220,6877.89,53.83,1018273.77
+2024-02-23,Southeast,Family Plan,Hotspot,685193,9604.96,32.36,3517714.85
+2024-12-06,Southeast,Prepaid,Smartwatch,313912,38103.98,116.78,295359.04
+2025-06-08,Southwest,Family Plan,Hotspot,458843,47041.35,80.31,3191907.05
+2024-02-19,West Coast,IoT Connectivity,Smartwatch,150377,31202.68,156.09,1917816.89
+2024-05-14,Pacific Northwest,Prepaid,Fixed Wireless Router,135792,44782.55,179.4,1015550.23
+2024-10-21,Southeast,Family Plan,Fixed Wireless Router,203174,22816.53,14.82,718035.15
+2024-09-20,Mountain West,Postpaid,Hotspot,376305,26767.78,52.16,1332802.14
+2024-01-15,Pacific Northwest,IoT Connectivity,Hotspot,281489,39742.08,52.61,424569.82
+2024-04-19,West Coast,Postpaid,Feature Phone,797902,35803.28,163.47,2624796.39
+2025-01-17,West Coast,Family Plan,Smartwatch,347717,13912.13,66.34,961726.08
+2024-06-15,West Coast,Prepaid,Hotspot,166474,9437.83,126.33,1872779.29
+2024-10-29,Mountain West,Prepaid,Tablet,128966,8252.66,72.4,88643.25
+2025-02-15,Midwest,IoT Connectivity,Smartphone,325354,5007.31,42.58,2542043.91
+2025-01-06,Midwest,Family Plan,Smartphone,254548,22764.59,128.58,2093940.14
+2024-11-20,Southwest,Business Unlimited,Smartphone,463468,2178.04,51.01,1974195.17
+2025-05-24,Mountain West,Prepaid,Tablet,597671,46457.53,153.05,1271030.92
+2024-01-30,Southeast,IoT Connectivity,Hotspot,84505,22600.54,43.16,851369.58
+2024-11-21,Northeast,Family Plan,Fixed Wireless Router,576431,4789.86,67.13,3678954.59
+2024-06-06,Pacific Northwest,IoT Connectivity,Hotspot,463635,38098.18,23.86,3592912.95
+2024-05-19,Pacific Northwest,IoT Connectivity,Tablet,718974,38248.13,22.14,1741031.27
+2024-09-27,West Coast,IoT Connectivity,Feature Phone,333418,26698.63,97.29,1750910.41
+2024-08-26,Pacific Northwest,Postpaid,Smartphone,417865,7107.1,24.12,2517253.15
+2024-03-04,Pacific Northwest,Business Unlimited,Smartphone,673522,11590.46,138.85,1442237.03
+2024-11-01,West Coast,Prepaid,Fixed Wireless Router,118120,2928.6,153.68,397043.74
+2024-01-20,Pacific Northwest,IoT Connectivity,Smartphone,47075,27705.35,144.63,2066440.96
+2024-05-05,Pacific Northwest,Family Plan,Hotspot,841272,3250.16,16.61,562960.83
+2024-08-28,Northeast,Postpaid,Feature Phone,347995,31748.31,22.1,2412082.38
+2024-01-21,Southeast,Business Unlimited,Fixed Wireless Router,354072,36763.33,178.52,3863716.94
+2025-04-06,West Coast,Business Unlimited,Smartphone,11959,45652.8,146.29,990676.03
+2024-08-23,Mountain West,IoT Connectivity,Fixed Wireless Router,179396,24292.4,148.44,548453.16
+2025-01-08,Southwest,Family Plan,Fixed Wireless Router,660330,17949.48,120.97,1060607.64
+2024-12-30,Northeast,Family Plan,Tablet,660791,16430.57,82.33,3126809.01
+2024-03-14,West Coast,Postpaid,Hotspot,525919,1658.82,66.54,2212327.86
+2024-10-16,Pacific Northwest,Postpaid,Smartphone,76405,33826.26,155.28,3833637.81
+2024-09-16,Mountain West,IoT Connectivity,Smartwatch,841580,7802.7,161.02,3032777.3
+2024-04-28,Midwest,Postpaid,Tablet,339742,8167.34,145.22,3091993.18
+2025-02-14,West Coast,Family Plan,Smartwatch,582469,44577.08,44.32,443859.04
+2025-02-11,Midwest,Business Unlimited,Smartphone,385865,23686.64,124.65,3074886.51
+2024-11-22,Mountain West,Business Unlimited,Smartwatch,497474,46259.37,125.67,754698.76
+2025-03-17,West Coast,Family Plan,Smartwatch,441706,47497.86,41.98,1547491.74
+2025-05-11,Southeast,Family Plan,Smartwatch,626172,32155.15,16.17,1955799.36
+2025-02-22,West Coast,Business Unlimited,Hotspot,464469,44154.86,85.19,3698292.51
+2024-09-07,Mountain West,IoT Connectivity,Smartwatch,32540,32764.02,136.84,3587844.24
+2025-02-12,Southwest,Business Unlimited,Fixed Wireless Router,831405,12226.22,80.23,2159011.33
+2025-05-27,Southeast,Prepaid,Tablet,462456,36583.84,125.64,726566.86
+2024-03-21,Southeast,IoT Connectivity,Fixed Wireless Router,713009,20766.26,115.74,152621.51
+2024-07-18,Mountain West,Prepaid,Feature Phone,13270,7675.67,64.13,2022568.04
+2025-01-10,Southwest,Family Plan,Feature Phone,786567,5306.5,99.49,1833261.69
+2024-11-08,Mountain West,Family Plan,Smartphone,25545,38512.07,11.02,3564864.65
+2024-03-06,Midwest,IoT Connectivity,Hotspot,389061,35497.38,51.6,490023.87
+2025-05-31,West Coast,Prepaid,Feature Phone,103271,10446.18,27.08,3328245.55
+2024-12-08,Southwest,Family Plan,Smartwatch,169753,12378.91,133.78,424708.73
+2024-07-15,Southeast,Prepaid,Feature Phone,34344,4954.86,50.99,1224551.87
+2024-03-29,Midwest,Postpaid,Hotspot,629968,13307.22,147.04,2515069.78
+2024-05-23,West Coast,IoT Connectivity,Hotspot,259249,37136.86,135.99,3552375.05
+2025-01-17,Northeast,IoT Connectivity,Feature Phone,178549,31736.41,76.49,3030374.62
+2025-06-22,Mountain West,Postpaid,Smartphone,299731,22984.9,60.87,2613776.43
+2024-08-16,Pacific Northwest,IoT Connectivity,Feature Phone,337194,19833.55,52.11,2198653.11
+2024-12-02,Mountain West,Family Plan,Tablet,111704,38110.88,88.02,600299.73
+2024-07-30,West Coast,Family Plan,Smartwatch,172875,25877.88,59.25,654572.68
+2024-07-07,Midwest,Postpaid,Smartwatch,741614,42665.85,173.81,3126578.62
+2025-01-25,Southeast,Business Unlimited,Tablet,29183,27204.87,95.48,1119082.48
+2025-03-21,Mountain West,Business Unlimited,Tablet,807205,15235.19,170.22,3337467.58
+2025-03-11,Mountain West,Business Unlimited,Feature Phone,388463,7899.47,103.19,49309.78
+2024-02-15,Southwest,Business Unlimited,Smartphone,649920,47370.78,33.84,823898.06
+2024-03-03,Pacific Northwest,Prepaid,Feature Phone,279139,36192.32,120.5,2191691.2
+2024-05-31,Southwest,Prepaid,Hotspot,827828,26441.54,33.25,2893449.81
+2025-01-30,Southwest,IoT Connectivity,Fixed Wireless Router,289964,25207.23,63.65,252161.45
+2025-02-25,West Coast,Prepaid,Feature Phone,318195,24732.58,95.48,2149459.81
+2024-06-24,West Coast,Prepaid,Smartwatch,765456,1946.24,142.19,577780.97
+2024-04-14,Pacific Northwest,Postpaid,Smartwatch,844453,3789.1,152.75,545417.81
+2024-01-18,Northeast,Family Plan,Smartphone,258854,25330.77,86.08,2057300.37
+2024-01-02,Mountain West,IoT Connectivity,Smartphone,843157,23158.22,34.4,600807.18
+2025-05-27,West Coast,Family Plan,Hotspot,60388,14437.31,60.94,2234321.77
+2024-05-06,Mountain West,Business Unlimited,Fixed Wireless Router,284253,36171.11,171.18,1129280.14
+2025-05-24,Pacific Northwest,IoT Connectivity,Smartwatch,368743,36811.26,132.63,3185580.25
+2024-12-23,West Coast,Prepaid,Feature Phone,751747,11191.4,20.33,2191963.38
+2024-09-28,Southeast,Family Plan,Fixed Wireless Router,171538,15866.35,113.2,1456069.01
+2024-06-04,Southeast,Prepaid,Hotspot,335465,13242.47,82.48,1682213.82
+2024-01-01,Pacific Northwest,IoT Connectivity,Feature Phone,445626,7723.13,67.5,1509897.71
+2024-06-14,Midwest,Postpaid,Fixed Wireless Router,736824,14066.51,49.04,2674260.39
+2024-06-15,Pacific Northwest,Family Plan,Fixed Wireless Router,695328,39127.31,22.19,2869289.13
+2025-02-03,Northeast,IoT Connectivity,Fixed Wireless Router,191072,1558.13,72.4,3401525.59
+2024-05-29,Southwest,Family Plan,Hotspot,747614,26146.46,164.77,3834026.79
+2024-12-21,Pacific Northwest,IoT Connectivity,Fixed Wireless Router,535763,5147.6,34.31,2379175.91
+2024-08-21,Northeast,IoT Connectivity,Fixed Wireless Router,670271,43587.32,27.92,3293129.04
+2025-06-05,Northeast,IoT Connectivity,Smartphone,80202,8743.48,129.91,1158450.11
+2024-03-27,Southwest,Prepaid,Feature Phone,622427,15049.29,171.21,712194.81
+2024-08-22,Southeast,Family Plan,Hotspot,126123,2594.82,161.62,2655328.01
+2025-04-03,Mountain West,IoT Connectivity,Feature Phone,414589,29527.56,12.49,2008622.93
+2024-07-20,Mountain West,Family Plan,Feature Phone,834413,31204.73,70.43,157809.03
+2024-07-19,Southeast,Family Plan,Hotspot,26508,42850.32,34.56,2416521.75
+2025-03-29,Mountain West,Postpaid,Smartwatch,621133,45989.69,161.21,2620889.62
+2024-06-12,Northeast,Family Plan,Hotspot,468396,10987.05,87.51,775740.35
+2024-11-21,Midwest,Prepaid,Smartphone,827970,33789.24,69.65,1274224.5
+2024-09-25,Southeast,Prepaid,Smartphone,356070,12070.25,83.96,2841765.15
+2024-05-29,Southwest,Prepaid,Tablet,734033,19433.7,98.78,3621922.41
+2024-06-30,Pacific Northwest,Business Unlimited,Hotspot,845879,18391.2,34.95,3590203.29
+2024-11-13,Midwest,Postpaid,Smartphone,273170,13703.99,176.14,2132011.07
+2024-03-27,Northeast,Family Plan,Smartwatch,406580,41284.92,59.02,3489405.81
+2024-08-22,Pacific Northwest,Business Unlimited,Hotspot,234004,24832.58,55.73,133189.78
+2025-05-02,Southeast,Prepaid,Feature Phone,271907,1655.45,165.09,3750343.66
+2024-12-30,West Coast,Prepaid,Smartwatch,825814,34942.85,139.37,338546.01
+2025-05-29,Pacific Northwest,Postpaid,Smartwatch,640456,40221.63,75.71,3482164.41
+2025-01-26,Southeast,Family Plan,Smartwatch,598292,30037.18,27.36,3675943.02
+2024-11-13,Mountain West,Business Unlimited,Hotspot,106537,6189.11,61.3,978722.63
+2024-08-31,Southeast,Business Unlimited,Hotspot,679545,2460.01,122.36,1910832.32
+2024-02-24,Midwest,Postpaid,Hotspot,467749,37003.65,174.28,3803467.37
+2024-03-20,Southwest,Prepaid,Tablet,121152,9405.89,92.54,3666988.98
+2025-01-25,Midwest,Postpaid,Fixed Wireless Router,264431,46093.17,52.12,3433412.07
+2024-01-25,Northeast,Business Unlimited,Smartwatch,131554,17718.47,29.36,489639.52
+2025-04-05,Pacific Northwest,Family Plan,Hotspot,740888,16481.63,88.23,3522640.08
+2024-08-11,West Coast,Postpaid,Fixed Wireless Router,655117,24025.43,98.15,1971060.57
+2024-06-09,Southeast,Family Plan,Feature Phone,272104,38456.62,59.23,2079378.19
+2024-05-13,West Coast,Postpaid,Fixed Wireless Router,385595,30661.9,155.85,1119913.46
+2024-07-26,Southeast,Postpaid,Smartwatch,178084,21459.76,108.26,1047138.6
+2024-11-08,West Coast,IoT Connectivity,Smartphone,113253,36051.44,54.91,1946070.19
+2024-03-23,West Coast,Family Plan,Fixed Wireless Router,633175,2232.73,29.5,2981491.42
+2025-01-28,Southeast,IoT Connectivity,Hotspot,12784,28658.54,52.97,3838222.23
+2024-08-09,Mountain West,Postpaid,Hotspot,352893,1501.91,55.76,754050.69
+2025-01-24,Northeast,Family Plan,Fixed Wireless Router,785775,14839.71,122.94,696610.49
+2025-04-13,Northeast,Prepaid,Smartwatch,235525,25636.19,75.57,3314350.34
+2024-01-21,Pacific Northwest,Postpaid,Fixed Wireless Router,319565,7448.68,138.32,3020122.85
+2024-09-15,Southwest,Family Plan,Fixed Wireless Router,766876,4320.9,91.21,3284677.68
+2024-05-29,Southeast,Prepaid,Smartphone,382965,33459.37,140.22,2480301.91
+2024-02-23,Midwest,Business Unlimited,Hotspot,612113,23411.89,115.12,2680482.95
+2024-10-02,West Coast,Postpaid,Tablet,435764,546.84,167.88,1925364.12
+2025-02-11,West Coast,Family Plan,Tablet,537745,27066.2,89.43,2623050.26
+2024-08-27,Midwest,Prepaid,Smartwatch,650486,1747.45,80.43,187551.86
+2024-09-23,Midwest,Business Unlimited,Smartwatch,755519,4845.67,173.4,1503517.49
+2025-03-30,Pacific Northwest,Business Unlimited,Feature Phone,531207,8997.34,157.95,2791393.55
+2024-01-26,West Coast,Prepaid,Smartphone,720883,5958.3,128.04,1632010.41
+2024-06-28,Southeast,Family Plan,Fixed Wireless Router,278506,25767.25,170.75,3100834.62
+2025-06-02,Northeast,Prepaid,Hotspot,565677,18290.07,123.14,3141353.82
+2025-05-17,Pacific Northwest,IoT Connectivity,Feature Phone,483411,6829.42,90.6,499993.42
+2025-05-22,Northeast,Business Unlimited,Tablet,267585,36240.28,13.49,3478678.91
+2024-11-04,Northeast,Family Plan,Smartwatch,294565,42536.27,26.75,293324.9
+2024-03-11,Northeast,Postpaid,Smartwatch,651218,3097.33,12.36,1413799.45
+2024-12-21,Southwest,IoT Connectivity,Feature Phone,686551,3402.45,161.61,444625.42
+2024-10-30,Southeast,Prepaid,Smartphone,819883,43722.58,124.5,1989087.89
+2024-02-01,Southeast,Family Plan,Feature Phone,294944,46455.43,53.53,3789683.68
+2024-05-31,Midwest,Prepaid,Feature Phone,529276,26754.48,111.73,789138.17
+2024-05-29,Pacific Northwest,Postpaid,Feature Phone,654276,44890.42,139.5,39809.17
+2024-11-09,Northeast,Family Plan,Smartphone,247605,20304.7,68.6,3124510.2
+2024-11-15,Southeast,IoT Connectivity,Smartwatch,195826,45518.21,26.01,3811080.08
+2024-09-05,Southeast,Postpaid,Smartphone,429777,30108.46,62.51,3151660.98
+2025-01-27,Northeast,Postpaid,Smartwatch,831714,8023.92,162.28,2920016.91
+2025-02-01,Northeast,IoT Connectivity,Tablet,529196,338.95,175.44,809962.84
+2024-07-13,Southeast,Prepaid,Fixed Wireless Router,311690,25384.35,60.59,3448697.05
+2024-02-23,Midwest,Family Plan,Tablet,752826,8604.66,173.97,1001107.02
+2024-09-28,Southwest,Prepaid,Smartphone,839020,19023.17,30.88,1965838.52
+2025-01-31,Northeast,IoT Connectivity,Hotspot,665693,38303.86,8.1,2093313.07
+2024-01-06,Southeast,Family Plan,Smartphone,792372,41548.3,165.29,47515.15
+2025-02-13,Northeast,Prepaid,Feature Phone,827650,34200.79,171.57,3148053.32
+2024-08-09,Southeast,Postpaid,Fixed Wireless Router,685109,21965.08,68.93,683679.81
+2024-05-28,Southeast,IoT Connectivity,Smartphone,689643,26158.35,137.83,2968059.63
+2024-01-19,Mountain West,Family Plan,Fixed Wireless Router,298593,16858.62,117.7,2047489.53
+2024-12-04,Mountain West,Business Unlimited,Smartphone,335163,34715.49,10.74,1748944.2
+2024-11-12,Midwest,IoT Connectivity,Smartphone,327023,10275.56,60.99,1354206.42
+2024-02-24,Southwest,Prepaid,Hotspot,284528,2677.17,136.23,3583743.99
+2024-01-09,Southeast,IoT Connectivity,Feature Phone,705383,26824.8,89.3,3811112.13
+2024-01-14,Southwest,IoT Connectivity,Hotspot,560327,46704.0,11.25,647991.36
+2024-01-23,Mountain West,Postpaid,Smartphone,709397,28667.77,85.68,210480.62
+2024-03-15,West Coast,IoT Connectivity,Tablet,740689,6411.03,72.4,202392.06
+2024-03-26,Midwest,Postpaid,Fixed Wireless Router,362857,25927.5,167.9,3568531.35
+2025-01-22,West Coast,Family Plan,Hotspot,500516,30785.87,45.31,3766842.67
+2024-01-04,Northeast,IoT Connectivity,Tablet,409791,43764.83,109.04,379866.4
+2024-11-26,Northeast,IoT Connectivity,Hotspot,463878,41723.21,96.51,1985168.06
+2024-11-02,Mountain West,Prepaid,Hotspot,274960,38343.27,170.44,2314480.76
+2024-12-02,Pacific Northwest,Business Unlimited,Feature Phone,104804,11329.1,161.43,1745625.75
+2024-07-14,West Coast,IoT Connectivity,Smartwatch,450493,1244.52,128.27,1199541.25
+2025-03-04,Pacific Northwest,Business Unlimited,Smartwatch,367774,35438.26,152.83,3522723.24
+2024-06-05,Northeast,Prepaid,Smartwatch,394017,11909.23,41.19,1918820.28
+2025-02-08,West Coast,Prepaid,Smartwatch,92148,38420.65,94.69,2016470.97
+2024-06-03,Southeast,Family Plan,Hotspot,38662,28112.36,88.49,1996365.43
+2024-03-03,Northeast,Business Unlimited,Smartwatch,488603,15448.9,98.8,315526.29
+2024-10-02,Northeast,Family Plan,Smartphone,376674,6561.03,48.12,2851922.79
+2025-05-25,Northeast,Family Plan,Smartphone,450232,12733.69,151.5,496191.85
+2024-06-22,Mountain West,Family Plan,Fixed Wireless Router,215743,31096.81,26.76,2953305.11
+2024-03-22,Southwest,Business Unlimited,Hotspot,48317,38785.32,149.98,2170863.39
+2024-12-03,West Coast,Prepaid,Fixed Wireless Router,818945,40771.29,129.05,64659.96

@@ -1,0 +1,241 @@
+rental_listing_date,rental_district,rental_property_type,rental_furnishing_status,rental_monthly_rent_amount,rental_purchase_price_amount,rental_gross_yield_pct,rental_vacancy_days
+2025-05-21,Harbor View,Studio,Furnished,7088.74,1004855.12,7.46,117
+2025-04-11,Harbor View,Three Bedroom,Semi-Furnished,5468.81,2193245.23,5.23,12
+2024-05-05,University Quarter,Studio,Semi-Furnished,3196.36,1725725.45,9.66,23
+2025-04-12,Downtown,Penthouse,Semi-Furnished,8336.22,621533.95,7.26,42
+2025-05-14,Riverside,Studio,Furnished,5717.68,727068.07,3.02,88
+2024-05-21,Westfield,Townhouse,Unfurnished,3869.11,2009452.04,5.32,117
+2024-05-01,Northgate,Studio,Unfurnished,7495.07,1516533.45,11.0,52
+2024-09-17,Harbor View,Studio,Semi-Furnished,4030.3,188764.23,3.88,33
+2024-01-12,Old Town,One Bedroom,Furnished,4342.01,620238.93,12.81,74
+2024-09-08,University Quarter,Townhouse,Furnished,5606.69,570993.24,4.42,44
+2024-06-04,Riverside,Two Bedroom,Furnished,8199.36,1967631.01,9.22,52
+2025-05-31,Harbor View,Two Bedroom,Semi-Furnished,7255.5,2061595.67,5.22,29
+2025-06-08,Old Town,Three Bedroom,Semi-Furnished,1191.96,965544.45,7.81,30
+2024-06-12,Northgate,Penthouse,Unfurnished,5344.88,2390235.42,4.93,65
+2024-09-20,Downtown,One Bedroom,Unfurnished,2082.18,1584965.66,7.59,91
+2024-06-14,Old Town,Townhouse,Semi-Furnished,4547.46,1029487.39,11.45,34
+2024-11-29,Harbor View,Three Bedroom,Semi-Furnished,3729.16,1896035.3,9.99,26
+2025-05-24,University Quarter,Studio,Furnished,5548.0,2015436.91,7.28,114
+2024-11-23,Downtown,Townhouse,Semi-Furnished,8333.95,1989022.14,13.42,19
+2024-08-13,Downtown,Penthouse,Semi-Furnished,5310.42,2494447.84,13.23,39
+2024-06-29,Downtown,One Bedroom,Unfurnished,6296.62,2159449.54,12.16,87
+2025-06-10,Downtown,Studio,Unfurnished,6036.99,552860.16,4.06,110
+2024-05-26,Northgate,Penthouse,Furnished,7628.99,1863087.61,8.95,42
+2024-02-29,Old Town,Townhouse,Semi-Furnished,9310.79,2393060.29,8.54,80
+2025-02-25,Harbor View,One Bedroom,Furnished,6351.46,2402168.67,7.38,6
+2024-06-24,Riverside,Penthouse,Semi-Furnished,8530.91,931541.98,10.9,117
+2024-01-04,University Quarter,Three Bedroom,Semi-Furnished,6171.17,910553.93,3.16,78
+2024-12-06,Harbor View,Three Bedroom,Unfurnished,9022.88,273028.23,12.91,47
+2024-06-22,Northgate,Penthouse,Unfurnished,8569.45,2140726.58,3.95,81
+2024-06-07,Northgate,Penthouse,Furnished,4049.82,1193619.48,9.1,63
+2024-10-24,Riverside,Two Bedroom,Furnished,3528.3,2001649.22,13.27,94
+2025-04-07,University Quarter,Two Bedroom,Furnished,1938.82,584578.07,3.13,23
+2024-06-06,Westfield,One Bedroom,Furnished,5145.49,1610476.57,6.68,35
+2024-10-17,Northgate,Penthouse,Furnished,3215.99,533394.98,3.59,42
+2024-04-21,Riverside,Townhouse,Unfurnished,3745.93,2415960.47,13.75,86
+2025-05-18,Riverside,Two Bedroom,Semi-Furnished,4442.76,1513385.32,9.61,40
+2024-10-15,Downtown,Two Bedroom,Semi-Furnished,7488.94,213152.18,9.15,77
+2025-02-17,University Quarter,Three Bedroom,Unfurnished,4318.37,1626406.92,7.65,62
+2024-10-17,University Quarter,Three Bedroom,Furnished,1920.77,1572797.66,13.31,97
+2024-11-30,Riverside,Three Bedroom,Furnished,9092.33,779200.83,12.94,57
+2025-03-10,University Quarter,Penthouse,Furnished,4187.06,139240.36,6.98,65
+2024-12-09,Westfield,Three Bedroom,Unfurnished,8046.26,1446321.27,3.25,72
+2024-08-29,Downtown,Two Bedroom,Semi-Furnished,4247.84,533602.17,5.05,101
+2024-01-25,University Quarter,Studio,Semi-Furnished,2519.03,229496.95,3.29,26
+2024-07-29,Northgate,Penthouse,Unfurnished,1944.39,1743013.91,6.51,7
+2024-09-04,Harbor View,One Bedroom,Unfurnished,8671.89,915639.04,10.51,31
+2024-03-30,Downtown,Townhouse,Semi-Furnished,3699.34,541581.24,9.59,56
+2025-03-10,Northgate,Three Bedroom,Furnished,6213.03,1941817.56,12.17,31
+2025-04-13,University Quarter,Studio,Unfurnished,6648.71,1499010.5,8.5,83
+2024-04-18,University Quarter,Three Bedroom,Unfurnished,6261.29,693733.7,5.12,64
+2024-03-23,Downtown,Townhouse,Furnished,5936.19,1359051.68,12.94,91
+2024-10-22,Harbor View,Two Bedroom,Unfurnished,5666.31,2356511.8,11.09,112
+2025-02-09,Harbor View,Three Bedroom,Unfurnished,8125.88,2424837.75,9.79,43
+2025-04-11,Riverside,Two Bedroom,Unfurnished,7257.87,561693.53,10.02,27
+2024-03-02,Harbor View,One Bedroom,Semi-Furnished,5699.2,602859.22,6.55,13
+2024-04-12,Riverside,Three Bedroom,Semi-Furnished,9124.87,1265362.29,12.14,12
+2024-09-11,Harbor View,One Bedroom,Semi-Furnished,2496.75,2115705.37,8.65,45
+2025-05-17,Downtown,Studio,Furnished,1450.37,2318626.1,3.77,20
+2025-04-24,Westfield,Two Bedroom,Furnished,1988.28,867392.74,8.18,26
+2025-04-05,University Quarter,Two Bedroom,Semi-Furnished,7206.22,427543.33,12.69,89
+2024-06-14,Harbor View,Townhouse,Furnished,6864.47,1563754.21,6.45,38
+2025-03-14,Riverside,Three Bedroom,Semi-Furnished,7319.87,1999182.86,12.89,88
+2024-04-05,Riverside,Two Bedroom,Furnished,6556.36,120167.81,11.29,67
+2024-08-30,Harbor View,One Bedroom,Furnished,3350.31,1403738.07,5.75,41
+2025-01-07,Westfield,Three Bedroom,Furnished,7816.79,582450.94,13.85,114
+2024-08-07,Harbor View,Townhouse,Unfurnished,8243.44,150492.62,3.32,58
+2024-09-05,Riverside,One Bedroom,Semi-Furnished,3527.22,495053.31,13.81,3
+2025-03-21,Old Town,Two Bedroom,Furnished,2778.62,762605.46,5.04,18
+2024-11-07,University Quarter,Penthouse,Furnished,3715.67,1615263.43,11.57,96
+2025-04-18,Westfield,Three Bedroom,Unfurnished,8564.17,2049355.28,3.69,5
+2024-08-27,Harbor View,One Bedroom,Furnished,5858.63,1695489.45,9.35,54
+2024-10-05,Harbor View,Two Bedroom,Semi-Furnished,7526.24,2350661.88,10.46,95
+2024-01-26,Riverside,Two Bedroom,Unfurnished,8253.22,2369501.2,12.25,59
+2025-03-23,University Quarter,Townhouse,Unfurnished,3588.8,1611397.88,7.16,1
+2025-01-10,Downtown,One Bedroom,Semi-Furnished,5065.99,1644317.98,10.79,58
+2025-03-14,University Quarter,Studio,Furnished,8205.89,624343.05,8.14,77
+2024-01-31,Downtown,Studio,Furnished,7755.9,2163543.24,9.77,25
+2025-02-16,Downtown,Penthouse,Unfurnished,7477.72,1319020.16,3.94,102
+2025-05-09,Downtown,Studio,Unfurnished,8113.93,1207663.77,9.94,51
+2025-04-05,Westfield,Penthouse,Unfurnished,3337.67,694174.32,11.36,42
+2025-03-11,Downtown,Studio,Unfurnished,6162.34,2086371.43,3.26,102
+2024-01-28,Harbor View,One Bedroom,Furnished,2270.92,1553897.78,5.39,101
+2024-02-22,Riverside,Studio,Unfurnished,2829.32,2269537.53,6.92,69
+2024-02-13,Harbor View,One Bedroom,Semi-Furnished,5843.07,2293431.76,13.43,37
+2025-05-24,Downtown,Three Bedroom,Furnished,3330.58,534196.08,13.62,38
+2024-10-24,Northgate,Townhouse,Unfurnished,2396.44,2419297.74,10.75,3
+2024-01-17,Riverside,One Bedroom,Furnished,7855.25,2428512.39,12.48,27
+2024-05-09,Riverside,Two Bedroom,Semi-Furnished,7804.91,1754658.08,5.41,112
+2024-11-20,Riverside,Penthouse,Unfurnished,6960.02,2285896.68,12.46,112
+2025-02-24,Harbor View,Two Bedroom,Furnished,5876.04,279919.15,12.24,96
+2025-02-24,Harbor View,One Bedroom,Unfurnished,8285.75,1120779.19,9.17,49
+2024-06-15,University Quarter,Two Bedroom,Semi-Furnished,4482.46,946109.84,9.21,66
+2024-07-18,Westfield,Townhouse,Semi-Furnished,7784.0,2163727.37,7.11,24
+2024-02-12,Northgate,Two Bedroom,Unfurnished,1900.39,150444.61,3.72,83
+2025-06-08,Old Town,Studio,Semi-Furnished,8799.11,1726850.48,7.1,75
+2024-10-01,Riverside,Penthouse,Unfurnished,8343.76,523514.65,4.06,103
+2024-07-12,Riverside,One Bedroom,Furnished,2160.59,1704381.89,4.0,50
+2024-05-03,Downtown,Studio,Furnished,3892.58,296371.46,8.78,120
+2025-01-06,Harbor View,Penthouse,Semi-Furnished,8337.25,1097625.91,5.9,116
+2025-04-25,Westfield,Penthouse,Unfurnished,815.49,1629758.71,12.54,45
+2025-05-26,Westfield,Three Bedroom,Unfurnished,2480.07,2180763.32,4.88,25
+2024-08-19,Riverside,Three Bedroom,Semi-Furnished,6769.96,1253335.49,6.64,103
+2025-06-20,Old Town,Two Bedroom,Semi-Furnished,6653.1,2111907.66,7.97,11
+2024-07-27,Riverside,Two Bedroom,Furnished,2693.59,1441756.16,7.98,43
+2025-02-04,Northgate,Penthouse,Semi-Furnished,8520.7,891991.49,9.98,38
+2025-06-16,Downtown,Three Bedroom,Furnished,4200.65,374390.21,11.39,56
+2024-01-21,Harbor View,One Bedroom,Unfurnished,1723.66,2259914.1,10.61,78
+2024-07-20,Riverside,Studio,Unfurnished,4302.98,1042605.56,2.76,82
+2025-02-16,Downtown,Townhouse,Semi-Furnished,1343.45,1484415.88,4.37,63
+2024-12-28,Downtown,Three Bedroom,Semi-Furnished,2366.48,1244669.59,5.96,108
+2024-06-12,Riverside,One Bedroom,Furnished,4921.65,1496168.51,4.9,7
+2024-08-26,Westfield,Three Bedroom,Furnished,4361.23,137701.48,7.73,59
+2025-01-18,University Quarter,Penthouse,Semi-Furnished,4241.51,699679.51,3.16,65
+2025-02-20,Harbor View,Townhouse,Unfurnished,5984.0,2035293.34,2.7,66
+2025-01-13,Westfield,Three Bedroom,Semi-Furnished,3483.85,532483.72,3.42,74
+2025-03-02,Riverside,Studio,Furnished,7361.64,2043246.17,3.66,103
+2024-07-09,Harbor View,Two Bedroom,Furnished,8232.84,661592.39,3.94,35
+2024-09-26,Northgate,Studio,Furnished,1758.85,1555185.29,8.62,70
+2024-12-13,Westfield,Penthouse,Semi-Furnished,6468.21,1724300.54,9.99,35
+2024-12-23,University Quarter,Studio,Furnished,5873.89,1729164.09,3.63,99
+2025-04-14,Riverside,Studio,Furnished,8777.16,1295989.77,13.87,80
+2024-07-19,Downtown,Two Bedroom,Furnished,4483.48,1454724.09,4.88,95
+2025-02-21,University Quarter,Three Bedroom,Unfurnished,2998.06,390215.96,8.76,3
+2024-12-06,Downtown,Townhouse,Semi-Furnished,8839.77,371873.94,8.1,111
+2025-03-31,Old Town,Three Bedroom,Semi-Furnished,4631.72,324291.74,13.78,101
+2024-03-01,Harbor View,One Bedroom,Semi-Furnished,2919.51,1328030.34,9.96,113
+2025-01-07,Harbor View,One Bedroom,Semi-Furnished,9320.09,1412725.46,5.15,57
+2024-10-16,Riverside,Penthouse,Furnished,9157.76,1281829.53,13.51,54
+2024-05-11,University Quarter,Three Bedroom,Unfurnished,9422.75,1255484.64,3.68,95
+2025-05-03,Riverside,Three Bedroom,Unfurnished,1358.89,1331361.44,4.15,81
+2024-03-03,Old Town,Townhouse,Semi-Furnished,7583.84,1093320.28,13.24,61
+2024-03-19,Riverside,Two Bedroom,Semi-Furnished,3569.9,977484.86,3.77,40
+2025-01-15,Northgate,Two Bedroom,Semi-Furnished,8153.28,960824.31,13.46,61
+2025-03-23,Riverside,One Bedroom,Semi-Furnished,5917.45,237925.17,5.71,14
+2024-02-04,Northgate,Two Bedroom,Furnished,5486.35,498608.98,6.41,60
+2024-10-13,Westfield,Penthouse,Semi-Furnished,4409.8,1544601.02,13.48,101
+2024-05-07,Riverside,Three Bedroom,Furnished,4649.89,2452414.1,11.96,15
+2024-05-28,Westfield,Townhouse,Semi-Furnished,5157.06,1253197.86,4.93,112
+2024-01-15,Westfield,Townhouse,Unfurnished,9339.9,920712.91,11.68,13
+2025-05-22,Westfield,Penthouse,Unfurnished,6124.56,1767338.23,13.7,36
+2024-04-11,Westfield,One Bedroom,Unfurnished,8211.79,1593001.02,11.47,114
+2024-08-28,Westfield,Three Bedroom,Furnished,3372.6,1360668.93,9.4,72
+2024-02-20,Riverside,Two Bedroom,Unfurnished,8333.36,1174967.35,4.4,22
+2024-01-25,Northgate,Two Bedroom,Semi-Furnished,8230.02,913786.98,12.87,21
+2024-02-08,University Quarter,Studio,Furnished,8496.6,1338188.86,10.69,98
+2024-07-10,Riverside,Studio,Unfurnished,3726.0,1364199.0,11.62,5
+2024-10-04,Downtown,Two Bedroom,Semi-Furnished,3463.85,636222.84,13.56,50
+2024-12-17,University Quarter,One Bedroom,Semi-Furnished,8512.87,2386706.54,6.99,82
+2024-11-29,Riverside,Townhouse,Furnished,3602.93,1162977.22,13.51,101
+2024-09-29,Riverside,Studio,Unfurnished,5779.66,740553.52,3.63,108
+2024-03-14,Old Town,Penthouse,Furnished,4941.69,624650.82,4.76,115
+2024-11-25,Harbor View,One Bedroom,Unfurnished,4598.02,387845.65,4.01,40
+2025-01-17,Old Town,Two Bedroom,Furnished,7908.65,1778782.16,6.18,99
+2025-01-07,Downtown,Townhouse,Furnished,3113.35,719064.82,6.1,104
+2024-04-13,University Quarter,Penthouse,Semi-Furnished,8056.17,323443.75,3.42,111
+2025-06-23,University Quarter,One Bedroom,Furnished,6347.86,821347.1,10.91,16
+2024-01-20,Westfield,Studio,Semi-Furnished,1910.96,627067.39,7.86,117
+2024-03-31,Riverside,Three Bedroom,Semi-Furnished,3043.47,174129.97,12.97,20
+2025-03-20,Westfield,Penthouse,Furnished,8405.53,1482728.11,4.33,72
+2025-02-05,Riverside,Two Bedroom,Furnished,3783.01,656226.92,6.16,91
+2024-11-10,Old Town,Penthouse,Semi-Furnished,9351.4,141887.13,5.87,65
+2024-11-17,Westfield,One Bedroom,Unfurnished,7269.19,1564236.51,3.94,113
+2025-04-14,Downtown,One Bedroom,Unfurnished,1618.72,1238828.78,3.16,80
+2024-10-31,Riverside,Two Bedroom,Furnished,3233.93,247690.83,8.07,59
+2024-11-15,Riverside,Townhouse,Unfurnished,7368.22,317289.11,12.73,11
+2024-11-27,Harbor View,One Bedroom,Unfurnished,2503.08,1109854.4,5.01,71
+2024-06-20,Downtown,Townhouse,Unfurnished,7935.85,744099.35,11.41,53
+2024-05-10,Northgate,Penthouse,Unfurnished,5885.58,2305806.96,6.83,37
+2024-02-02,Harbor View,Two Bedroom,Unfurnished,5360.03,837135.35,5.58,12
+2024-02-21,Northgate,One Bedroom,Furnished,2672.38,884575.06,6.7,59
+2025-03-16,Westfield,Penthouse,Semi-Furnished,5384.94,1496229.65,9.5,64
+2025-03-18,Westfield,Penthouse,Furnished,1512.25,2079189.77,3.81,107
+2024-01-18,Downtown,Two Bedroom,Furnished,7089.85,389889.73,13.07,73
+2024-08-20,University Quarter,Three Bedroom,Semi-Furnished,8225.19,1556454.49,6.34,109
+2024-10-20,University Quarter,Townhouse,Semi-Furnished,5158.42,1557002.95,8.89,42
+2025-02-23,Northgate,One Bedroom,Unfurnished,8240.57,475774.47,6.1,69
+2024-06-26,Riverside,Penthouse,Furnished,8715.11,1931005.43,10.21,19
+2025-04-21,University Quarter,One Bedroom,Furnished,1474.55,351479.41,8.35,78
+2024-10-27,Harbor View,Townhouse,Unfurnished,3608.29,1105241.72,7.38,27
+2024-10-21,University Quarter,Two Bedroom,Unfurnished,2380.91,2112470.27,13.26,19
+2024-05-16,Westfield,Townhouse,Unfurnished,6524.06,1742091.82,13.41,76
+2024-08-29,Northgate,Two Bedroom,Furnished,3132.36,460531.45,6.3,87
+2024-10-01,Westfield,Three Bedroom,Semi-Furnished,1230.77,2118908.25,9.94,119
+2024-07-25,Riverside,Penthouse,Furnished,2693.78,762874.44,3.77,20
+2024-05-01,University Quarter,Two Bedroom,Semi-Furnished,5056.96,1310237.17,4.72,71
+2024-08-13,Harbor View,Studio,Semi-Furnished,9353.51,1871345.97,7.93,75
+2024-12-24,Westfield,Penthouse,Unfurnished,4555.6,1858161.08,13.3,51
+2024-05-30,Downtown,Penthouse,Unfurnished,8674.3,2268141.66,12.48,52
+2024-12-01,Old Town,Penthouse,Semi-Furnished,3423.92,576359.24,10.27,1
+2024-02-03,Riverside,Penthouse,Unfurnished,6334.93,1744527.16,7.18,37
+2024-03-31,Westfield,Penthouse,Unfurnished,5658.04,1730131.28,13.46,47
+2024-05-26,Harbor View,Townhouse,Unfurnished,8710.03,1763427.12,8.56,94
+2024-02-05,Harbor View,Two Bedroom,Furnished,4122.44,2343714.37,6.49,94
+2024-12-26,Riverside,Penthouse,Furnished,5852.59,2365306.0,7.32,56
+2024-05-22,Old Town,One Bedroom,Semi-Furnished,6080.48,1948118.3,13.38,109
+2024-11-08,University Quarter,Penthouse,Furnished,5925.15,1223275.41,4.49,31
+2024-02-05,Harbor View,Penthouse,Furnished,3443.34,1755375.19,11.96,86
+2025-01-15,Downtown,One Bedroom,Furnished,3244.63,457894.83,4.1,51
+2024-04-15,Northgate,One Bedroom,Semi-Furnished,5720.54,197006.05,6.22,10
+2024-05-06,Harbor View,One Bedroom,Semi-Furnished,1574.63,2005068.06,7.57,88
+2024-05-07,Northgate,Studio,Semi-Furnished,6525.14,1323428.05,3.89,77
+2024-06-08,University Quarter,Studio,Semi-Furnished,8819.74,1147659.3,4.79,72
+2025-04-20,Downtown,Townhouse,Semi-Furnished,1826.66,2391168.72,10.96,44
+2024-11-03,Old Town,One Bedroom,Unfurnished,5065.11,447726.1,3.83,110
+2024-02-15,University Quarter,Townhouse,Furnished,9060.88,878591.05,8.68,82
+2024-11-23,Riverside,Studio,Semi-Furnished,8476.44,2111084.78,11.24,42
+2025-03-25,Harbor View,Three Bedroom,Furnished,6321.28,1973007.97,10.78,24
+2025-02-19,Westfield,Townhouse,Semi-Furnished,1354.78,1746399.63,8.03,31
+2024-10-10,Riverside,Penthouse,Furnished,837.84,2150372.5,10.88,66
+2024-04-02,Harbor View,Three Bedroom,Furnished,1417.43,413088.29,2.77,25
+2025-03-03,Old Town,Two Bedroom,Semi-Furnished,9174.58,2466907.43,11.89,119
+2024-02-23,Old Town,One Bedroom,Furnished,3272.68,1440693.61,13.29,67
+2024-06-18,Downtown,Two Bedroom,Unfurnished,6476.68,720157.34,4.4,35
+2024-05-19,University Quarter,Two Bedroom,Unfurnished,7735.69,332470.61,9.04,72
+2024-07-07,Westfield,Penthouse,Furnished,5719.42,263072.19,6.82,26
+2025-01-21,Downtown,Two Bedroom,Furnished,7085.82,688085.68,6.01,84
+2024-05-03,University Quarter,Three Bedroom,Furnished,831.22,1249913.22,4.75,74
+2024-12-04,University Quarter,Penthouse,Semi-Furnished,5902.55,1661148.91,7.77,77
+2024-05-10,University Quarter,Three Bedroom,Semi-Furnished,8866.27,1690769.37,4.92,27
+2024-01-29,Harbor View,Studio,Semi-Furnished,7514.96,1537789.51,2.8,62
+2024-04-18,University Quarter,Townhouse,Furnished,8525.48,238015.36,6.61,44
+2024-01-05,Westfield,Three Bedroom,Unfurnished,6259.11,2123301.74,7.39,76
+2024-07-13,Westfield,Two Bedroom,Semi-Furnished,3473.79,2270749.13,5.4,95
+2024-09-05,Riverside,Studio,Unfurnished,3926.18,2013674.2,8.56,28
+2024-12-08,Downtown,Three Bedroom,Semi-Furnished,1955.02,153759.67,11.78,82
+2024-08-11,Downtown,Three Bedroom,Furnished,3897.46,1248769.78,7.5,22
+2024-04-11,Riverside,Two Bedroom,Unfurnished,3064.22,1912986.78,12.51,80
+2024-05-31,Downtown,Two Bedroom,Unfurnished,7429.34,988982.5,5.89,35
+2025-02-19,Riverside,Penthouse,Furnished,4719.16,2095397.07,8.98,15
+2024-01-06,Northgate,Townhouse,Semi-Furnished,5709.53,1576203.4,8.11,97
+2025-01-07,Downtown,Penthouse,Semi-Furnished,5158.11,1645883.75,4.15,111
+2024-04-21,University Quarter,Two Bedroom,Unfurnished,927.23,1119027.46,4.81,115
+2025-02-20,Riverside,Three Bedroom,Furnished,4505.21,949803.31,8.52,70
+2025-02-03,Westfield,Studio,Semi-Furnished,2152.73,1881647.66,13.47,21
+2025-05-04,Old Town,Three Bedroom,Semi-Furnished,9486.86,1525657.6,6.18,75
+2025-06-22,Downtown,Two Bedroom,Semi-Furnished,1810.76,2295023.17,5.5,17
+2024-04-20,Westfield,Two Bedroom,Unfurnished,5456.08,235044.45,4.18,33
+2024-07-29,Northgate,Three Bedroom,Semi-Furnished,6158.9,1377690.12,6.79,66
+2024-06-20,University Quarter,Studio,Furnished,8813.33,1869067.6,13.06,60
+2024-03-29,Northgate,Studio,Furnished,823.0,1575490.63,12.37,4

@@ -1,0 +1,241 @@
+route_service_date,route_zone_name,route_vehicle_type,route_waste_stream,route_stops_completed,route_distance_km,route_fuel_liters,route_tonnage_collected
+2025-04-08,Old Town,Rear Loader,Bulky Items,163,5.41,98.89,17.26
+2024-11-06,Industrial Park,Front Loader,Recycling,57,51.14,71.21,19.66
+2024-05-15,North Ridge,Electric Compactor,General Waste,47,48.85,30.65,22.48
+2025-02-19,Southbank,Rear Loader,Organic,69,26.38,108.25,9.14
+2024-01-07,Riverside,Front Loader,Organic,96,39.15,93.11,24.84
+2025-01-29,Eastgate,Electric Compactor,Glass,2,118.39,115.72,18.05
+2024-03-16,Industrial Park,Front Loader,Organic,90,28.64,6.25,13.27
+2024-01-11,Old Town,Rear Loader,Recycling,79,6.49,31.37,12.99
+2025-01-31,Eastgate,Side Loader,General Waste,62,129.64,119.37,10.81
+2024-10-18,Lakeview,Front Loader,Organic,160,111.11,50.47,19.28
+2024-06-06,Southbank,Side Loader,Glass,158,25.47,64.63,7.86
+2025-05-01,Industrial Park,Roll-Off Truck,Recycling,48,60.92,95.19,26.72
+2024-04-02,Westfield,Side Loader,Bulky Items,33,123.22,57.63,21.75
+2025-02-24,Riverside,Roll-Off Truck,Glass,79,54.08,16.95,9.62
+2024-02-09,North Ridge,Front Loader,Bulky Items,63,106.2,72.23,15.46
+2024-12-22,Westfield,Side Loader,General Waste,76,104.04,39.74,6.07
+2025-03-20,Lakeview,Rear Loader,Bulky Items,173,14.15,84.38,24.8
+2024-06-08,Riverside,Rear Loader,Glass,92,56.8,80.6,26.32
+2024-07-08,Riverside,Rear Loader,Glass,105,44.3,58.73,4.85
+2024-04-05,North Ridge,Rear Loader,Bulky Items,170,135.89,119.19,22.27
+2025-06-23,Eastgate,Roll-Off Truck,General Waste,95,97.01,36.85,20.19
+2024-09-24,Westfield,Rear Loader,General Waste,88,64.76,76.33,14.35
+2025-02-14,Lakeview,Front Loader,Recycling,19,125.59,41.16,21.24
+2025-05-26,Southbank,Side Loader,Bulky Items,166,83.65,9.82,16.3
+2024-07-11,Westfield,Front Loader,General Waste,80,138.37,29.95,24.83
+2025-04-26,North Ridge,Rear Loader,General Waste,12,68.68,33.56,15.21
+2024-07-19,Old Town,Front Loader,Glass,112,40.36,68.45,8.13
+2024-05-15,Eastgate,Front Loader,Bulky Items,144,37.21,98.98,23.85
+2024-01-23,Lakeview,Rear Loader,Bulky Items,2,115.12,32.74,6.57
+2025-05-11,North Ridge,Rear Loader,Bulky Items,90,71.63,49.34,22.0
+2025-06-14,Southbank,Electric Compactor,Glass,94,100.38,58.76,7.94
+2024-03-22,North Ridge,Roll-Off Truck,General Waste,6,19.73,17.27,10.2
+2024-07-07,Westfield,Front Loader,Bulky Items,153,97.07,61.23,2.4
+2025-02-08,Industrial Park,Front Loader,Glass,15,82.09,110.2,12.39
+2024-09-10,Eastgate,Electric Compactor,Recycling,137,106.37,101.85,20.15
+2024-06-26,Industrial Park,Roll-Off Truck,General Waste,108,42.57,46.58,27.07
+2024-11-05,Riverside,Front Loader,Glass,45,89.6,47.94,5.47
+2024-05-23,Westfield,Side Loader,Bulky Items,50,43.41,41.61,14.63
+2024-10-27,North Ridge,Rear Loader,Recycling,66,72.66,41.59,22.0
+2024-06-14,Old Town,Front Loader,Bulky Items,148,129.41,114.02,19.65
+2024-12-26,Westfield,Front Loader,Organic,56,138.79,10.85,19.7
+2025-02-04,Southbank,Side Loader,General Waste,152,56.11,11.45,1.55
+2025-01-06,Lakeview,Front Loader,General Waste,34,8.9,41.61,12.48
+2024-06-25,Old Town,Rear Loader,Recycling,96,22.74,58.15,16.55
+2024-12-01,Southbank,Rear Loader,Recycling,147,123.7,62.57,20.45
+2024-07-12,Riverside,Side Loader,General Waste,9,69.32,105.35,1.38
+2024-12-11,Westfield,Front Loader,Recycling,147,12.72,87.63,5.98
+2024-07-26,Westfield,Rear Loader,Glass,55,34.55,92.51,9.86
+2024-07-18,Lakeview,Front Loader,Glass,37,59.33,31.63,3.08
+2024-06-09,North Ridge,Electric Compactor,Organic,153,10.7,119.56,3.05
+2024-08-17,Industrial Park,Electric Compactor,Recycling,32,94.51,47.28,23.96
+2024-10-26,Industrial Park,Roll-Off Truck,Glass,130,132.19,8.51,3.07
+2025-04-15,Eastgate,Front Loader,Organic,134,62.11,45.6,24.57
+2024-02-24,North Ridge,Rear Loader,Bulky Items,94,29.35,110.03,7.94
+2025-03-23,Southbank,Front Loader,Recycling,24,127.16,12.63,27.39
+2025-05-06,North Ridge,Electric Compactor,General Waste,146,26.06,7.89,11.85
+2024-11-23,Riverside,Side Loader,Recycling,168,14.54,109.09,11.34
+2024-09-15,Old Town,Electric Compactor,Recycling,5,66.53,33.92,27.51
+2024-07-08,Lakeview,Roll-Off Truck,Bulky Items,91,44.78,119.57,3.57
+2024-11-27,Westfield,Front Loader,General Waste,136,65.68,28.72,5.8
+2025-02-22,Eastgate,Electric Compactor,Bulky Items,103,99.92,116.96,23.4
+2024-01-16,Old Town,Roll-Off Truck,General Waste,166,35.73,33.16,26.03
+2025-02-25,Riverside,Electric Compactor,Bulky Items,92,30.28,101.65,26.65
+2024-08-05,North Ridge,Roll-Off Truck,Glass,94,31.19,119.87,22.06
+2024-11-25,Lakeview,Electric Compactor,Bulky Items,11,41.13,91.78,7.86
+2024-03-01,Southbank,Roll-Off Truck,Bulky Items,150,21.78,34.1,21.29
+2024-10-26,Industrial Park,Side Loader,General Waste,34,137.77,53.09,22.49
+2024-05-14,Southbank,Roll-Off Truck,Organic,149,133.67,23.46,10.65
+2024-02-23,Riverside,Front Loader,General Waste,48,34.1,99.99,20.96
+2024-03-24,Southbank,Rear Loader,General Waste,118,8.9,56.42,14.51
+2024-04-03,Westfield,Roll-Off Truck,Organic,58,68.99,6.53,13.51
+2025-05-19,Lakeview,Side Loader,Recycling,78,78.1,27.85,3.86
+2024-02-04,Old Town,Rear Loader,Recycling,133,43.04,84.33,15.2
+2024-12-23,Southbank,Roll-Off Truck,Bulky Items,168,72.45,32.8,16.12
+2024-12-02,Old Town,Rear Loader,Bulky Items,175,83.09,40.82,27.46
+2024-10-10,Industrial Park,Rear Loader,Glass,149,97.83,6.82,26.35
+2025-04-01,Lakeview,Rear Loader,Recycling,82,53.53,6.39,11.77
+2025-04-05,North Ridge,Electric Compactor,Bulky Items,153,52.55,73.07,11.54
+2025-02-28,Lakeview,Roll-Off Truck,General Waste,87,50.66,34.4,3.02
+2025-03-09,Eastgate,Electric Compactor,General Waste,21,39.24,98.06,13.35
+2024-06-14,Westfield,Roll-Off Truck,General Waste,20,94.41,17.26,15.48
+2024-07-08,Old Town,Rear Loader,Glass,44,129.73,116.03,23.16
+2024-01-30,Riverside,Roll-Off Truck,Bulky Items,133,33.83,20.88,10.82
+2025-05-04,Westfield,Front Loader,Glass,149,111.24,90.68,25.94
+2025-03-07,Westfield,Roll-Off Truck,Organic,69,80.03,68.68,15.15
+2024-10-10,Westfield,Roll-Off Truck,Glass,73,11.36,53.09,8.33
+2024-11-21,Southbank,Side Loader,General Waste,111,112.11,61.27,19.44
+2024-03-28,Southbank,Roll-Off Truck,General Waste,78,7.5,111.28,25.1
+2024-08-23,Industrial Park,Electric Compactor,Glass,1,125.35,81.24,23.39
+2024-08-10,Industrial Park,Front Loader,General Waste,120,84.71,79.66,21.68
+2024-03-31,Westfield,Roll-Off Truck,Recycling,157,123.65,78.54,19.37
+2024-06-09,Eastgate,Side Loader,General Waste,123,10.5,42.65,6.66
+2024-12-28,Riverside,Electric Compactor,Recycling,17,121.56,66.27,7.75
+2025-04-27,North Ridge,Roll-Off Truck,Recycling,117,22.91,91.08,8.1
+2025-01-23,Lakeview,Front Loader,Organic,175,100.62,104.41,27.8
+2024-04-13,Old Town,Rear Loader,Bulky Items,59,55.17,108.98,18.05
+2025-06-16,Riverside,Rear Loader,General Waste,2,31.13,74.54,7.99
+2024-09-03,Lakeview,Rear Loader,Recycling,43,92.7,35.29,6.14
+2024-01-05,Southbank,Side Loader,Bulky Items,170,131.42,37.93,4.23
+2025-04-28,Westfield,Roll-Off Truck,Organic,86,59.43,31.92,9.72
+2025-03-01,Lakeview,Front Loader,Glass,89,108.37,80.26,25.01
+2025-05-19,Southbank,Side Loader,Bulky Items,20,118.88,66.66,23.21
+2024-11-20,Westfield,Front Loader,Recycling,121,116.45,34.57,15.15
+2024-08-22,Southbank,Front Loader,Glass,138,7.36,43.08,7.16
+2024-11-19,Eastgate,Rear Loader,General Waste,68,101.96,24.18,1.89
+2024-02-24,Lakeview,Side Loader,General Waste,136,55.41,9.13,25.22
+2024-07-12,Riverside,Rear Loader,Glass,48,139.35,81.71,25.16
+2024-06-13,Westfield,Electric Compactor,Glass,127,69.37,63.35,7.02
+2025-05-05,Eastgate,Electric Compactor,General Waste,154,93.55,103.29,17.56
+2024-09-23,Industrial Park,Front Loader,Organic,114,28.32,96.32,8.06
+2025-05-24,North Ridge,Electric Compactor,Glass,7,130.19,80.46,20.15
+2025-03-04,Riverside,Front Loader,Glass,159,49.6,8.18,25.85
+2025-06-01,Industrial Park,Roll-Off Truck,Bulky Items,27,88.09,42.27,14.15
+2024-01-08,Westfield,Front Loader,Glass,128,54.17,98.49,16.64
+2024-11-06,Industrial Park,Electric Compactor,Recycling,176,55.61,50.87,2.82
+2025-02-24,Lakeview,Roll-Off Truck,Glass,174,42.6,10.98,10.83
+2024-01-11,Eastgate,Roll-Off Truck,Glass,56,76.09,56.42,27.81
+2024-02-14,North Ridge,Rear Loader,General Waste,109,120.09,98.07,4.99
+2025-04-13,Riverside,Front Loader,Recycling,26,12.61,114.44,14.76
+2025-02-12,Riverside,Side Loader,Bulky Items,66,52.12,80.02,7.45
+2024-02-08,Riverside,Front Loader,Bulky Items,61,37.51,6.45,6.37
+2025-04-03,Lakeview,Electric Compactor,Bulky Items,146,16.39,64.63,10.85
+2024-01-09,Lakeview,Rear Loader,Organic,26,39.45,59.04,14.49
+2024-02-07,Industrial Park,Roll-Off Truck,Organic,171,18.42,16.45,17.75
+2024-02-13,Eastgate,Roll-Off Truck,General Waste,71,123.7,31.6,19.13
+2025-03-02,Riverside,Rear Loader,General Waste,77,52.98,9.02,22.93
+2025-01-03,Southbank,Front Loader,General Waste,98,51.15,56.38,19.75
+2024-04-15,Westfield,Rear Loader,Recycling,24,100.74,110.7,15.93
+2024-11-25,Eastgate,Front Loader,General Waste,78,21.4,90.71,10.1
+2025-04-23,Riverside,Front Loader,Bulky Items,177,88.17,100.65,12.13
+2025-01-25,Westfield,Electric Compactor,Organic,146,79.31,116.46,11.66
+2024-12-02,Eastgate,Electric Compactor,General Waste,129,115.74,78.78,4.81
+2025-06-13,Lakeview,Front Loader,Organic,82,73.5,70.4,26.29
+2024-06-27,Lakeview,Electric Compactor,Bulky Items,130,128.59,53.53,15.05
+2024-12-09,Westfield,Roll-Off Truck,Organic,106,11.12,38.81,21.45
+2024-06-26,North Ridge,Roll-Off Truck,Organic,71,125.66,94.32,12.53
+2024-01-28,North Ridge,Front Loader,Bulky Items,17,128.65,43.87,17.0
+2024-07-08,Southbank,Roll-Off Truck,Organic,95,92.46,21.03,27.8
+2025-02-08,North Ridge,Roll-Off Truck,Glass,28,129.02,108.34,18.91
+2025-03-10,Industrial Park,Roll-Off Truck,General Waste,154,72.85,103.66,3.09
+2025-01-17,Lakeview,Side Loader,Bulky Items,133,26.36,83.69,19.35
+2025-05-19,Industrial Park,Roll-Off Truck,Glass,153,57.48,83.59,23.75
+2024-08-11,Westfield,Rear Loader,General Waste,62,29.52,66.18,23.17
+2024-08-28,Eastgate,Rear Loader,General Waste,90,35.34,30.36,7.86
+2025-02-11,Old Town,Electric Compactor,General Waste,64,118.96,76.37,24.07
+2025-02-27,Westfield,Side Loader,Bulky Items,141,104.52,25.7,11.36
+2024-09-18,Eastgate,Side Loader,Organic,32,139.35,101.81,20.58
+2024-09-04,Lakeview,Rear Loader,Bulky Items,76,8.36,68.82,4.88
+2025-01-01,Lakeview,Electric Compactor,Glass,36,83.1,30.49,14.95
+2024-07-14,Southbank,Side Loader,Organic,154,100.14,41.4,22.96
+2024-08-31,Old Town,Side Loader,Recycling,175,94.6,72.44,21.52
+2024-01-04,Riverside,Side Loader,Bulky Items,133,100.96,42.59,18.69
+2024-05-31,Old Town,Electric Compactor,Organic,27,45.36,114.17,4.71
+2024-02-07,Eastgate,Electric Compactor,Recycling,56,22.4,115.32,13.48
+2024-06-30,Industrial Park,Front Loader,Organic,6,66.8,109.11,14.37
+2024-01-30,Riverside,Electric Compactor,General Waste,136,48.65,95.87,5.92
+2025-06-16,North Ridge,Roll-Off Truck,Organic,117,107.57,68.21,17.96
+2024-03-13,North Ridge,Side Loader,Recycling,15,6.13,107.71,16.13
+2025-03-25,North Ridge,Rear Loader,General Waste,9,63.12,63.39,26.04
+2024-11-02,Industrial Park,Roll-Off Truck,Recycling,93,48.52,110.09,6.01
+2025-05-12,Westfield,Front Loader,Glass,113,5.39,32.17,12.13
+2025-02-14,Eastgate,Electric Compactor,Glass,152,44.28,76.07,4.45
+2024-04-05,North Ridge,Electric Compactor,General Waste,60,103.16,80.08,16.67
+2024-06-24,Industrial Park,Rear Loader,Recycling,17,53.55,116.23,1.05
+2024-12-28,Old Town,Front Loader,Bulky Items,53,25.53,100.69,16.36
+2024-10-24,Riverside,Front Loader,Organic,100,122.55,81.51,5.29
+2024-03-16,Industrial Park,Side Loader,Glass,24,34.14,47.96,3.49
+2024-03-15,Lakeview,Electric Compactor,Organic,171,119.21,10.79,9.78
+2024-02-08,Industrial Park,Roll-Off Truck,Organic,85,30.12,75.39,10.64
+2024-03-24,Lakeview,Front Loader,Recycling,174,19.08,81.0,3.13
+2024-10-23,Eastgate,Rear Loader,Bulky Items,149,114.25,108.95,3.21
+2024-03-31,Southbank,Side Loader,Bulky Items,74,72.95,101.15,19.58
+2024-08-31,North Ridge,Electric Compactor,Organic,51,43.25,91.71,21.18
+2024-02-15,Lakeview,Electric Compactor,General Waste,146,116.54,75.05,4.6
+2024-06-12,North Ridge,Front Loader,Glass,106,107.19,103.78,17.49
+2025-05-11,North Ridge,Rear Loader,Organic,142,126.84,9.34,1.72
+2024-10-15,Southbank,Electric Compactor,Organic,156,70.62,68.19,22.74
+2024-07-21,Southbank,Rear Loader,General Waste,15,29.29,31.94,13.42
+2024-12-26,Eastgate,Side Loader,Bulky Items,108,18.98,98.17,23.44
+2024-06-11,Riverside,Rear Loader,Organic,48,126.96,65.28,23.34
+2025-03-28,Southbank,Roll-Off Truck,General Waste,131,117.57,9.93,13.54
+2024-06-16,Riverside,Side Loader,Glass,93,103.19,25.98,17.4
+2024-09-08,Southbank,Front Loader,Recycling,93,17.18,114.79,26.9
+2025-03-03,Riverside,Front Loader,General Waste,10,95.44,12.47,25.37
+2025-04-01,North Ridge,Side Loader,General Waste,3,128.79,12.65,4.61
+2024-08-20,Old Town,Roll-Off Truck,Glass,113,47.47,23.14,6.43
+2025-01-29,Riverside,Roll-Off Truck,Recycling,75,138.18,24.53,19.73
+2025-01-16,Westfield,Electric Compactor,Glass,11,65.68,93.68,4.29
+2024-02-16,Industrial Park,Side Loader,Bulky Items,150,128.79,8.53,5.27
+2024-11-22,Eastgate,Electric Compactor,General Waste,75,24.71,12.15,7.97
+2024-10-20,Westfield,Front Loader,Glass,152,128.43,39.7,12.13
+2024-11-28,North Ridge,Roll-Off Truck,Glass,9,62.66,50.49,0.87
+2024-12-31,Lakeview,Side Loader,Glass,92,92.65,99.43,26.48
+2024-04-30,Old Town,Roll-Off Truck,Glass,37,19.83,29.94,5.1
+2024-11-25,North Ridge,Side Loader,Organic,133,58.04,60.01,25.58
+2025-04-26,Eastgate,Front Loader,General Waste,78,119.72,19.14,17.22
+2024-05-08,Southbank,Electric Compactor,Glass,41,7.09,37.69,19.56
+2025-03-29,Industrial Park,Roll-Off Truck,Bulky Items,40,126.42,76.44,12.3
+2024-12-02,Riverside,Side Loader,General Waste,128,36.47,72.48,14.64
+2025-01-25,Riverside,Side Loader,Glass,77,46.52,6.25,9.47
+2024-08-08,Southbank,Electric Compactor,General Waste,128,103.84,8.51,25.01
+2024-11-23,Industrial Park,Side Loader,General Waste,165,38.47,3.35,22.62
+2024-03-03,Eastgate,Roll-Off Truck,General Waste,18,24.16,94.59,23.75
+2025-03-09,Lakeview,Front Loader,Glass,113,32.06,21.85,20.93
+2024-07-03,Riverside,Rear Loader,General Waste,52,77.06,103.68,2.76
+2024-04-11,Southbank,Rear Loader,Recycling,45,79.27,43.48,12.09
+2024-05-07,Riverside,Side Loader,Bulky Items,161,79.94,26.38,5.91
+2024-11-28,Riverside,Side Loader,General Waste,180,72.13,89.45,3.76
+2024-05-15,Westfield,Roll-Off Truck,General Waste,132,136.89,85.62,1.81
+2024-03-28,Southbank,Electric Compactor,General Waste,30,45.17,57.73,19.98
+2025-03-06,Westfield,Side Loader,Glass,161,139.31,40.95,0.7
+2024-04-27,Eastgate,Roll-Off Truck,General Waste,122,32.11,82.94,1.42
+2025-03-24,Westfield,Rear Loader,Glass,100,18.82,87.93,26.25
+2025-01-22,Riverside,Electric Compactor,Glass,78,37.69,81.8,11.91
+2024-02-17,Riverside,Electric Compactor,Bulky Items,24,9.41,38.76,15.39
+2024-08-22,Riverside,Electric Compactor,Bulky Items,67,12.58,75.45,26.28
+2024-01-13,Industrial Park,Rear Loader,General Waste,161,35.97,71.85,26.57
+2024-09-03,Old Town,Rear Loader,Glass,134,37.68,87.72,10.62
+2024-08-16,North Ridge,Roll-Off Truck,Bulky Items,70,125.54,8.0,17.53
+2024-09-20,Riverside,Roll-Off Truck,Organic,77,53.36,19.26,10.56
+2024-05-11,Southbank,Front Loader,Recycling,63,126.24,67.26,10.68
+2025-06-20,Riverside,Front Loader,General Waste,18,79.04,111.68,26.53
+2024-05-04,Riverside,Side Loader,General Waste,120,102.07,17.24,24.0
+2025-01-05,Riverside,Electric Compactor,Bulky Items,165,108.16,63.2,14.19
+2024-01-08,Southbank,Electric Compactor,Organic,32,50.08,43.78,10.52
+2024-12-14,Old Town,Electric Compactor,Bulky Items,159,69.45,9.65,22.07
+2025-04-19,Lakeview,Rear Loader,General Waste,23,121.84,19.71,24.45
+2024-01-14,Southbank,Rear Loader,Organic,135,74.9,31.15,4.62
+2024-04-26,Riverside,Front Loader,General Waste,147,121.27,77.18,14.73
+2024-03-10,Eastgate,Electric Compactor,Bulky Items,149,115.62,108.23,15.23
+2024-09-28,Riverside,Front Loader,General Waste,135,44.81,72.79,4.98
+2024-02-08,Industrial Park,Electric Compactor,Bulky Items,169,15.82,82.74,9.93
+2024-04-20,Old Town,Front Loader,Bulky Items,9,80.62,39.57,9.33
+2024-04-28,Industrial Park,Front Loader,Organic,152,124.81,52.71,25.09
+2024-06-28,North Ridge,Electric Compactor,Glass,89,107.98,26.47,26.5
+2024-06-21,Industrial Park,Side Loader,Recycling,99,92.11,101.25,9.8
+2025-01-12,Southbank,Rear Loader,Glass,33,105.62,116.27,23.1
+2025-04-09,Southbank,Front Loader,Bulky Items,162,103.74,94.03,16.31
+2024-07-19,Riverside,Side Loader,Recycling,40,13.0,79.81,1.54
+2024-07-17,Westfield,Side Loader,Organic,52,113.0,68.74,21.56

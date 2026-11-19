@@ -1,0 +1,241 @@
+appointment_date,clinic_location,appointment_type,provider_specialty,appointment_duration_minutes,patient_wait_time_minutes,visit_charge_amount
+2024-06-04,Downtown Main,Procedure Prep,Dermatology,65,83,530.55
+2024-02-08,Westgate Specialty,Telehealth Check-In,Dermatology,98,92,189.62
+2025-02-13,Westgate Specialty,Telehealth Check-In,Family Medicine,49,78,611.45
+2024-03-22,Northside Outpatient,New Patient Consult,Internal Medicine,16,113,719.07
+2025-02-22,Downtown Main,Procedure Prep,Pediatrics,28,58,423.08
+2024-03-19,Northside Outpatient,Procedure Prep,Orthopedics,54,22,634.11
+2024-08-06,Westgate Specialty,Follow-Up Visit,Family Medicine,97,7,54.06
+2024-11-25,Downtown Main,Annual Physical,Orthopedics,106,76,968.25
+2025-03-07,Northside Outpatient,Procedure Prep,Cardiology,107,17,129.08
+2024-09-05,Eastview Urgent Care,Procedure Prep,Internal Medicine,46,29,150.01
+2024-01-12,Westgate Specialty,Annual Physical,Orthopedics,16,128,452.87
+2025-06-23,Downtown Main,Telehealth Check-In,Family Medicine,83,115,126.91
+2025-06-01,Eastview Urgent Care,Annual Physical,Dermatology,45,133,939.22
+2024-09-25,Westgate Specialty,Telehealth Check-In,Family Medicine,76,125,849.45
+2024-04-18,Riverside Family,Telehealth Check-In,Family Medicine,82,71,642.37
+2024-04-02,Eastview Urgent Care,Follow-Up Visit,Pediatrics,88,44,909.92
+2024-06-26,Downtown Main,Lab Work Only,Internal Medicine,78,129,490.16
+2024-01-25,Downtown Main,Annual Physical,Family Medicine,80,36,796.89
+2024-12-27,Westgate Specialty,Lab Work Only,Pediatrics,97,179,615.41
+2025-01-18,Riverside Family,Follow-Up Visit,Cardiology,76,93,64.02
+2024-06-24,Northside Outpatient,Annual Physical,Internal Medicine,11,171,984.61
+2024-09-20,Riverside Family,Procedure Prep,Internal Medicine,37,109,690.6
+2024-02-06,Eastview Urgent Care,New Patient Consult,Dermatology,26,109,845.85
+2024-11-27,Riverside Family,Follow-Up Visit,Orthopedics,33,136,398.15
+2025-01-28,Westgate Specialty,Telehealth Check-In,Cardiology,82,71,1097.3
+2024-06-04,Riverside Family,New Patient Consult,Orthopedics,110,38,240.91
+2024-02-18,Westgate Specialty,Follow-Up Visit,Cardiology,38,78,545.94
+2024-03-21,Westgate Specialty,Procedure Prep,Family Medicine,113,25,612.54
+2024-01-12,Downtown Main,Follow-Up Visit,Pediatrics,69,11,202.44
+2024-05-30,Eastview Urgent Care,Follow-Up Visit,Family Medicine,32,20,1038.02
+2025-05-03,Northside Outpatient,Telehealth Check-In,Orthopedics,119,83,1179.75
+2025-01-26,Westgate Specialty,New Patient Consult,Internal Medicine,51,116,1244.72
+2024-05-20,Downtown Main,Procedure Prep,Orthopedics,45,44,129.85
+2025-03-20,Riverside Family,Annual Physical,Family Medicine,58,54,685.21
+2024-01-12,Downtown Main,Procedure Prep,Dermatology,21,59,846.42
+2025-03-07,Riverside Family,Lab Work Only,Dermatology,25,93,196.91
+2025-03-09,Eastview Urgent Care,Annual Physical,Orthopedics,16,44,152.36
+2024-04-22,Westgate Specialty,Procedure Prep,Orthopedics,19,34,1234.26
+2024-12-11,Downtown Main,Annual Physical,Pediatrics,57,123,550.77
+2025-05-05,Westgate Specialty,Lab Work Only,Cardiology,115,168,1061.9
+2024-06-02,Northside Outpatient,Follow-Up Visit,Cardiology,48,143,389.31
+2025-04-07,Eastview Urgent Care,Telehealth Check-In,Internal Medicine,67,138,927.51
+2024-10-06,Eastview Urgent Care,Lab Work Only,Family Medicine,47,118,388.14
+2024-04-09,Eastview Urgent Care,Annual Physical,Internal Medicine,96,13,1002.38
+2024-02-26,Riverside Family,Follow-Up Visit,Cardiology,78,59,608.06
+2025-06-14,Riverside Family,Procedure Prep,Pediatrics,27,109,1052.68
+2024-03-20,Northside Outpatient,Lab Work Only,Dermatology,72,100,280.55
+2025-02-13,Riverside Family,Lab Work Only,Pediatrics,58,41,215.77
+2025-03-19,Northside Outpatient,Annual Physical,Pediatrics,84,124,192.54
+2024-04-21,Westgate Specialty,Lab Work Only,Orthopedics,84,135,477.73
+2024-05-10,Riverside Family,Telehealth Check-In,Orthopedics,69,150,1.53
+2024-02-19,Riverside Family,Procedure Prep,Dermatology,92,97,379.12
+2024-06-19,Westgate Specialty,Follow-Up Visit,Pediatrics,31,106,788.11
+2024-09-21,Westgate Specialty,Procedure Prep,Internal Medicine,91,130,1018.83
+2024-08-07,Northside Outpatient,Procedure Prep,Cardiology,118,104,575.25
+2024-12-14,Riverside Family,Follow-Up Visit,Orthopedics,92,71,1076.45
+2024-04-19,Riverside Family,Annual Physical,Cardiology,95,62,565.36
+2024-09-28,Riverside Family,New Patient Consult,Dermatology,26,81,1182.21
+2024-03-20,Northside Outpatient,Lab Work Only,Internal Medicine,29,36,158.58
+2025-06-14,Northside Outpatient,Follow-Up Visit,Cardiology,82,84,1171.16
+2024-04-28,Riverside Family,Annual Physical,Orthopedics,66,88,765.7
+2025-01-25,Westgate Specialty,New Patient Consult,Orthopedics,67,102,582.09
+2025-04-13,Downtown Main,Annual Physical,Cardiology,100,167,845.85
+2024-03-27,Northside Outpatient,Telehealth Check-In,Pediatrics,92,75,876.95
+2024-01-18,Riverside Family,Procedure Prep,Internal Medicine,97,7,616.31
+2025-03-13,Downtown Main,Follow-Up Visit,Internal Medicine,93,47,873.83
+2024-12-12,Westgate Specialty,Lab Work Only,Pediatrics,10,159,149.64
+2024-12-06,Riverside Family,Follow-Up Visit,Cardiology,33,106,279.45
+2024-11-09,Eastview Urgent Care,Telehealth Check-In,Dermatology,56,134,750.04
+2024-07-19,Eastview Urgent Care,Annual Physical,Orthopedics,67,23,920.5
+2025-01-25,Westgate Specialty,Telehealth Check-In,Dermatology,31,5,1031.39
+2025-06-23,Westgate Specialty,Lab Work Only,Internal Medicine,17,31,646.12
+2024-10-06,Westgate Specialty,Telehealth Check-In,Internal Medicine,117,118,630.68
+2025-03-18,Eastview Urgent Care,Telehealth Check-In,Pediatrics,32,169,735.06
+2024-05-19,Northside Outpatient,New Patient Consult,Orthopedics,107,117,1156.01
+2025-06-16,Downtown Main,Annual Physical,Dermatology,41,134,334.07
+2024-11-04,Riverside Family,New Patient Consult,Orthopedics,63,124,182.72
+2025-06-10,Eastview Urgent Care,Procedure Prep,Family Medicine,28,140,937.26
+2024-11-19,Westgate Specialty,Telehealth Check-In,Dermatology,32,150,1132.23
+2024-06-30,Westgate Specialty,Procedure Prep,Pediatrics,109,141,383.04
+2024-10-29,Eastview Urgent Care,Lab Work Only,Cardiology,38,81,566.67
+2024-03-15,Westgate Specialty,New Patient Consult,Family Medicine,90,69,401.32
+2024-10-25,Westgate Specialty,Procedure Prep,Dermatology,50,45,558.38
+2024-06-16,Riverside Family,Follow-Up Visit,Dermatology,84,77,1106.44
+2024-06-23,Downtown Main,Follow-Up Visit,Dermatology,114,106,866.18
+2024-03-12,Eastview Urgent Care,Lab Work Only,Dermatology,88,93,608.67
+2025-05-24,Downtown Main,Lab Work Only,Family Medicine,17,82,697.02
+2024-08-07,Downtown Main,Procedure Prep,Dermatology,45,21,1166.55
+2024-05-13,Downtown Main,Follow-Up Visit,Orthopedics,67,133,329.29
+2025-03-03,Eastview Urgent Care,New Patient Consult,Family Medicine,72,127,947.8
+2024-07-04,Eastview Urgent Care,Lab Work Only,Cardiology,94,104,231.16
+2024-10-27,Northside Outpatient,New Patient Consult,Cardiology,105,144,139.73
+2024-05-11,Eastview Urgent Care,Telehealth Check-In,Orthopedics,61,156,6.12
+2024-11-12,Northside Outpatient,Lab Work Only,Family Medicine,84,70,684.28
+2024-01-10,Northside Outpatient,Procedure Prep,Internal Medicine,38,5,277.36
+2024-04-19,Riverside Family,Telehealth Check-In,Internal Medicine,20,163,1092.34
+2024-12-17,Riverside Family,New Patient Consult,Pediatrics,30,160,235.94
+2024-06-15,Eastview Urgent Care,Lab Work Only,Dermatology,77,174,908.51
+2025-04-30,Eastview Urgent Care,Telehealth Check-In,Orthopedics,48,130,414.68
+2024-09-15,Downtown Main,Telehealth Check-In,Pediatrics,115,143,844.93
+2025-04-25,Downtown Main,Annual Physical,Cardiology,40,53,818.04
+2024-01-20,Riverside Family,Lab Work Only,Family Medicine,115,89,510.9
+2025-02-21,Northside Outpatient,Annual Physical,Dermatology,65,33,420.44
+2025-04-19,Westgate Specialty,Lab Work Only,Cardiology,72,158,1189.23
+2025-02-09,Westgate Specialty,Follow-Up Visit,Orthopedics,103,14,59.13
+2024-02-22,Eastview Urgent Care,Procedure Prep,Dermatology,42,120,677.12
+2025-05-21,Westgate Specialty,Follow-Up Visit,Family Medicine,20,2,747.38
+2025-01-13,Northside Outpatient,Lab Work Only,Family Medicine,35,123,908.4
+2024-08-12,Westgate Specialty,Follow-Up Visit,Cardiology,35,156,1164.9
+2024-07-25,Downtown Main,New Patient Consult,Internal Medicine,22,174,143.24
+2024-05-04,Riverside Family,Follow-Up Visit,Pediatrics,17,155,454.34
+2025-03-10,Westgate Specialty,Telehealth Check-In,Dermatology,66,116,833.54
+2025-05-10,Riverside Family,Annual Physical,Dermatology,18,161,257.43
+2024-08-17,Downtown Main,Follow-Up Visit,Family Medicine,89,104,953.25
+2024-01-24,Downtown Main,Follow-Up Visit,Cardiology,22,180,957.6
+2024-11-17,Downtown Main,Lab Work Only,Family Medicine,86,149,107.82
+2024-12-04,Downtown Main,Follow-Up Visit,Cardiology,97,122,105.67
+2024-11-01,Eastview Urgent Care,New Patient Consult,Cardiology,95,68,45.37
+2024-01-17,Westgate Specialty,Telehealth Check-In,Cardiology,47,67,205.92
+2024-05-24,Eastview Urgent Care,New Patient Consult,Cardiology,27,138,87.52
+2025-04-29,Eastview Urgent Care,New Patient Consult,Family Medicine,99,171,1071.92
+2024-12-29,Downtown Main,Follow-Up Visit,Pediatrics,87,84,1240.45
+2024-01-13,Northside Outpatient,New Patient Consult,Family Medicine,110,158,753.77
+2024-10-17,Westgate Specialty,Lab Work Only,Dermatology,52,137,1035.36
+2024-07-08,Riverside Family,Procedure Prep,Internal Medicine,114,27,140.78
+2024-03-15,Northside Outpatient,Procedure Prep,Orthopedics,92,29,619.35
+2025-05-11,Westgate Specialty,Procedure Prep,Family Medicine,50,9,1045.2
+2024-02-08,Eastview Urgent Care,Telehealth Check-In,Orthopedics,58,132,179.46
+2024-12-09,Westgate Specialty,Follow-Up Visit,Cardiology,11,152,188.2
+2024-03-07,Northside Outpatient,Procedure Prep,Family Medicine,95,167,1024.66
+2024-11-14,Eastview Urgent Care,Annual Physical,Cardiology,114,67,250.06
+2024-05-20,Riverside Family,Follow-Up Visit,Cardiology,51,35,927.63
+2024-05-02,Riverside Family,Follow-Up Visit,Cardiology,79,68,99.91
+2024-09-12,Westgate Specialty,Procedure Prep,Family Medicine,109,151,632.61
+2024-02-24,Northside Outpatient,Lab Work Only,Orthopedics,114,167,852.7
+2024-08-24,Northside Outpatient,New Patient Consult,Internal Medicine,40,19,80.84
+2025-01-15,Riverside Family,Telehealth Check-In,Dermatology,66,94,162.45
+2024-08-11,Northside Outpatient,Lab Work Only,Internal Medicine,38,84,190.07
+2025-03-04,Eastview Urgent Care,Annual Physical,Dermatology,96,149,704.88
+2024-02-14,Eastview Urgent Care,Annual Physical,Internal Medicine,49,65,1093.1
+2024-06-17,Downtown Main,Telehealth Check-In,Cardiology,57,91,675.45
+2025-06-22,Northside Outpatient,Procedure Prep,Internal Medicine,108,40,938.36
+2024-12-13,Northside Outpatient,Telehealth Check-In,Pediatrics,69,123,1040.28
+2024-09-02,Eastview Urgent Care,Follow-Up Visit,Family Medicine,20,101,151.94
+2024-07-03,Riverside Family,Annual Physical,Family Medicine,51,98,293.0
+2024-08-09,Northside Outpatient,New Patient Consult,Dermatology,24,105,2.38
+2025-01-30,Eastview Urgent Care,Telehealth Check-In,Internal Medicine,87,86,1120.82
+2024-01-01,Westgate Specialty,Telehealth Check-In,Orthopedics,46,126,798.18
+2024-08-13,Riverside Family,Procedure Prep,Cardiology,111,97,10.37
+2024-10-31,Downtown Main,New Patient Consult,Cardiology,85,36,853.39
+2024-01-25,Westgate Specialty,Telehealth Check-In,Pediatrics,100,19,664.31
+2024-12-19,Northside Outpatient,Follow-Up Visit,Cardiology,45,43,342.55
+2024-06-08,Westgate Specialty,Annual Physical,Family Medicine,68,36,441.6
+2024-04-05,Westgate Specialty,Annual Physical,Pediatrics,73,169,519.78
+2024-04-18,Eastview Urgent Care,Lab Work Only,Orthopedics,38,44,696.84
+2024-03-08,Riverside Family,Procedure Prep,Orthopedics,71,123,111.14
+2024-06-06,Westgate Specialty,Follow-Up Visit,Pediatrics,99,47,882.31
+2024-08-14,Downtown Main,Telehealth Check-In,Cardiology,88,5,275.71
+2024-05-06,Riverside Family,Annual Physical,Orthopedics,92,11,691.02
+2025-05-25,Westgate Specialty,New Patient Consult,Dermatology,22,48,431.6
+2025-05-11,Eastview Urgent Care,Follow-Up Visit,Internal Medicine,117,84,977.05
+2024-11-24,Eastview Urgent Care,Follow-Up Visit,Cardiology,102,127,375.65
+2024-11-08,Westgate Specialty,Lab Work Only,Dermatology,43,174,704.64
+2024-08-06,Eastview Urgent Care,Lab Work Only,Dermatology,42,59,787.12
+2024-07-16,Riverside Family,Lab Work Only,Orthopedics,61,64,380.55
+2024-10-02,Riverside Family,New Patient Consult,Orthopedics,11,119,1035.49
+2024-10-25,Downtown Main,Lab Work Only,Dermatology,54,75,584.75
+2024-11-18,Westgate Specialty,Follow-Up Visit,Internal Medicine,72,37,208.52
+2024-11-12,Eastview Urgent Care,Lab Work Only,Pediatrics,65,116,540.51
+2024-07-22,Northside Outpatient,New Patient Consult,Family Medicine,30,100,902.06
+2024-10-20,Riverside Family,Lab Work Only,Family Medicine,95,36,793.13
+2024-08-10,Northside Outpatient,Lab Work Only,Family Medicine,60,91,708.34
+2025-02-08,Westgate Specialty,Telehealth Check-In,Internal Medicine,61,79,1119.37
+2024-05-04,Eastview Urgent Care,Annual Physical,Family Medicine,100,87,871.26
+2024-01-28,Eastview Urgent Care,Procedure Prep,Internal Medicine,41,178,87.75
+2025-01-08,Westgate Specialty,Telehealth Check-In,Pediatrics,102,73,470.73
+2025-04-30,Northside Outpatient,Telehealth Check-In,Dermatology,82,13,1149.54
+2024-08-05,Westgate Specialty,Procedure Prep,Internal Medicine,35,37,1068.09
+2024-06-09,Riverside Family,Procedure Prep,Orthopedics,20,4,981.91
+2024-09-08,Eastview Urgent Care,New Patient Consult,Dermatology,99,41,727.59
+2024-03-12,Eastview Urgent Care,Follow-Up Visit,Internal Medicine,57,124,1184.57
+2024-09-20,Westgate Specialty,Telehealth Check-In,Family Medicine,16,85,1182.33
+2024-12-17,Downtown Main,New Patient Consult,Cardiology,67,123,831.09
+2024-12-02,Downtown Main,Follow-Up Visit,Internal Medicine,40,74,107.63
+2024-04-15,Downtown Main,Annual Physical,Cardiology,16,91,808.63
+2024-12-29,Eastview Urgent Care,Follow-Up Visit,Internal Medicine,35,165,642.59
+2024-03-10,Westgate Specialty,Annual Physical,Family Medicine,79,118,1239.59
+2024-05-02,Westgate Specialty,Telehealth Check-In,Dermatology,110,28,1153.14
+2024-10-29,Eastview Urgent Care,Telehealth Check-In,Cardiology,45,50,683.56
+2024-05-23,Downtown Main,Annual Physical,Family Medicine,110,145,485.58
+2024-02-17,Eastview Urgent Care,Procedure Prep,Cardiology,57,105,699.98
+2024-03-26,Northside Outpatient,Telehealth Check-In,Family Medicine,41,78,463.92
+2024-12-18,Eastview Urgent Care,Procedure Prep,Cardiology,67,160,332.27
+2025-05-19,Northside Outpatient,Lab Work Only,Cardiology,114,153,1092.79
+2024-04-29,Downtown Main,Follow-Up Visit,Dermatology,69,15,1239.39
+2024-08-18,Westgate Specialty,Procedure Prep,Cardiology,62,158,336.75
+2025-06-07,Downtown Main,Annual Physical,Dermatology,21,163,489.04
+2025-02-24,Westgate Specialty,Follow-Up Visit,Cardiology,94,43,557.46
+2024-08-20,Northside Outpatient,Telehealth Check-In,Family Medicine,51,40,38.79
+2025-03-28,Eastview Urgent Care,New Patient Consult,Family Medicine,75,32,906.17
+2025-01-28,Northside Outpatient,Procedure Prep,Cardiology,11,99,718.86
+2025-01-24,Westgate Specialty,Follow-Up Visit,Cardiology,42,119,898.61
+2025-02-08,Northside Outpatient,Annual Physical,Orthopedics,105,65,462.03
+2024-01-02,Westgate Specialty,Telehealth Check-In,Internal Medicine,43,40,725.34
+2024-03-27,Riverside Family,Lab Work Only,Cardiology,35,124,938.45
+2025-01-29,Northside Outpatient,Telehealth Check-In,Cardiology,21,111,571.76
+2024-02-21,Downtown Main,Lab Work Only,Cardiology,59,11,822.78
+2024-12-09,Riverside Family,Annual Physical,Orthopedics,111,47,473.07
+2025-04-23,Northside Outpatient,Telehealth Check-In,Dermatology,41,165,1146.16
+2024-10-23,Riverside Family,Telehealth Check-In,Orthopedics,98,16,722.65
+2024-11-07,Downtown Main,Lab Work Only,Orthopedics,70,78,288.9
+2025-03-16,Riverside Family,Annual Physical,Internal Medicine,99,145,748.23
+2024-06-12,Downtown Main,Annual Physical,Cardiology,70,82,36.95
+2024-04-15,Westgate Specialty,Telehealth Check-In,Family Medicine,27,90,1058.35
+2025-04-10,Eastview Urgent Care,Follow-Up Visit,Dermatology,76,88,693.98
+2024-10-14,Westgate Specialty,Procedure Prep,Family Medicine,90,23,1056.05
+2024-12-02,Northside Outpatient,Annual Physical,Dermatology,108,151,403.9
+2024-10-21,Eastview Urgent Care,Annual Physical,Family Medicine,111,61,4.39
+2025-03-12,Downtown Main,Procedure Prep,Internal Medicine,15,38,846.04
+2024-04-08,Northside Outpatient,Lab Work Only,Family Medicine,39,115,266.98
+2024-12-04,Downtown Main,Annual Physical,Internal Medicine,45,52,551.73
+2024-03-03,Downtown Main,Lab Work Only,Orthopedics,11,109,1224.43
+2025-04-14,Northside Outpatient,Annual Physical,Cardiology,46,128,625.0
+2024-08-06,Northside Outpatient,Annual Physical,Pediatrics,93,84,515.41
+2025-04-17,Riverside Family,Telehealth Check-In,Internal Medicine,72,25,515.4
+2025-03-18,Northside Outpatient,New Patient Consult,Internal Medicine,94,46,1246.71
+2024-10-29,Northside Outpatient,New Patient Consult,Dermatology,34,20,1196.06
+2024-03-26,Northside Outpatient,Annual Physical,Pediatrics,38,155,1246.45
+2024-07-25,Northside Outpatient,Lab Work Only,Internal Medicine,72,91,1029.67
+2024-11-21,Eastview Urgent Care,Annual Physical,Orthopedics,39,95,1111.4
+2024-02-01,Westgate Specialty,Lab Work Only,Pediatrics,26,17,250.78
+2024-11-11,Riverside Family,Procedure Prep,Orthopedics,67,74,168.39
+2024-12-10,Riverside Family,Lab Work Only,Orthopedics,105,22,568.26
+2024-02-20,Eastview Urgent Care,Procedure Prep,Internal Medicine,97,156,871.52
+2024-07-08,Riverside Family,Procedure Prep,Cardiology,74,82,850.51
+2024-06-06,Eastview Urgent Care,New Patient Consult,Family Medicine,106,47,165.93
+2025-01-22,Westgate Specialty,Follow-Up Visit,Internal Medicine,78,159,219.82
+2024-06-08,Downtown Main,Telehealth Check-In,Internal Medicine,44,51,359.58
+2024-08-31,Westgate Specialty,Telehealth Check-In,Dermatology,92,91,179.12
+2024-07-17,Eastview Urgent Care,Lab Work Only,Family Medicine,22,84,1070.82
