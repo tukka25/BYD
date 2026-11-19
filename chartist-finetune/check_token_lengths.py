@@ -34,9 +34,11 @@ def load_tokenizer(model_path: str):
     which costs several GB of RAM but always works.
     """
     try:
-        from mlx_lm.tokenizer_utils import load_tokenizer as _lt  # type: ignore
+        # Verified present in mlx-lm 0.32.2. Note it lives in utils, NOT in
+        # tokenizer_utils, which exports only the detokenizer classes.
+        from mlx_lm.utils import load_tokenizer as _lt  # type: ignore
 
-        return _lt(Path(model_path)), "mlx_lm.tokenizer_utils.load_tokenizer"
+        return _lt(Path(model_path)), "mlx_lm.utils.load_tokenizer"
     except Exception:
         pass
     try:
@@ -54,21 +56,29 @@ def load_tokenizer(model_path: str):
 def encoded_length(tokenizer, messages: list[dict]) -> int:
     """Token count as mlx-lm will see it, chat template included.
 
-    The template matters: its control tokens are part of the sequence, and
-    leaving them out is how an estimate ends up under the real number.
+    Takes the MAX of the templated count and the raw-text count rather than
+    trusting the template. A tokenizer whose chat template is missing or trivial
+    returns a near-zero count -- which in a gate like this would pass every row
+    vacuously, the worst possible failure for a safety check. The template can
+    only ever ADD control tokens to the raw text, so max() is correct and cannot
+    under-report.
     """
+    text = "\n".join(m["content"] for m in messages)
+    raw = len(tokenizer.encode(text))
+
+    templated = 0
     try:
         ids = tokenizer.apply_chat_template(messages, tokenize=True, add_generation_prompt=False)
         if isinstance(ids, dict):
             ids = ids.get("input_ids", [])
         if ids and isinstance(ids[0], (list, tuple)):
             ids = ids[0]
-        return len(ids)
+        templated = len(ids)
     except Exception:
-        # No usable template: fall back to encoding the concatenated text and
-        # add a small allowance for the role markers we could not render.
-        text = "\n".join(m["content"] for m in messages)
-        return len(tokenizer.encode(text)) + 16
+        templated = 0
+
+    # +16 covers role markers when no usable template was applied.
+    return max(templated, raw + 16)
 
 
 def main() -> int:
