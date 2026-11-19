@@ -1,10 +1,12 @@
 #!/usr/bin/env bash
 # Unattended chain: wait for the model download, then gate -> train -> eval.
 #
-#   cd chartist-finetune && ./run_after_download.sh
+#   cd chartist-finetune && nohup caffeinate -ims ./run_after_download.sh \
+#        > runs/chain/nohup.log 2>&1 & disown
 #
 # Safe to start while the download is still running; it waits. Keep the machine
-# plugged in. Everything runs under caffeinate so the lid closing is fine.
+# plugged in. Launch it under `caffeinate -ims` as shown -- the script does not
+# wrap itself, so run bare it will stop when the machine sleeps.
 #
 # In the morning:
 #   cat runs/chain/STATUS
