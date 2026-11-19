@@ -13,7 +13,14 @@ import pandas as pd
 from contract import validate_chart_code
 
 RUNNER = Path(__file__).with_name("_candidate_runner.py")
-_QUOTED = re.compile(r"""['"]([^'"]{1,80})['"]""")
+_COLUMN_KWARGS = (
+    "x", "y", "z", "color", "size", "names", "values", "facet_col", "facet_row",
+    "path", "hover_name", "line_group", "symbol", "pattern_shape",
+)
+# A string is a column reference only as one of these kwargs' values or in df[...].
+_COLUMN_REF = re.compile(
+    r"""(?:\b(?:%s)\s*=\s*|\bdf\s*\[\s*)(['"])([^'"]{1,80})\1""" % "|".join(_COLUMN_KWARGS)
+)
 
 _NOT_COLUMNS = {
     "plotly", "plotly_white", "plotly_dark", "seaborn", "simple_white", "ggplot2",
@@ -33,17 +40,16 @@ class CandidateResult:
 
 
 def _unknown_columns(code: str, columns: list[str]) -> list[str]:
-    """Quoted identifier-ish strings that are not in the schema."""
+    """Strings in a column position (x='..', df['..']) that are not in the schema."""
     known = {str(c) for c in columns}
     known_lower = {c.lower() for c in known}
     out = []
-    for value in sorted({m.group(1) for m in _QUOTED.finditer(code)}):
+    for value in sorted({m.group(2) for m in _COLUMN_REF.finditer(code)}):
         if value in known or value.lower() in known_lower:
             continue
         if value.lower() in _NOT_COLUMNS:
             continue
-        if re.fullmatch(r"[A-Za-z][A-Za-z0-9 _]{1,40}", value):
-            out.append(value)
+        out.append(value)
     return out
 
 
@@ -53,7 +59,10 @@ def run_candidate(code: str, df_csv: str, timeout_seconds: int = 20) -> Candidat
         return CandidateResult(ok=False, violations=violations)
 
     try:
-        columns = list(pd.read_csv(df_csv, nrows=1).columns)
+        if str(df_csv).endswith((".xlsx", ".xls")):
+            columns = list(pd.read_excel(df_csv, nrows=1).columns)
+        else:
+            columns = list(pd.read_csv(df_csv, nrows=1).columns)
     except Exception as exc:  # noqa: BLE001
         return CandidateResult(ok=False, error=f"cannot read {df_csv}: {exc}")
 
@@ -81,8 +90,9 @@ def run_candidate(code: str, df_csv: str, timeout_seconds: int = 20) -> Candidat
         )
 
     try:
-        figure = json.loads(completed.stdout)
-    except json.JSONDecodeError:
+        lines = [ln for ln in completed.stdout.splitlines() if ln.strip()]
+        figure = json.loads(lines[-1])
+    except (json.JSONDecodeError, IndexError):
         return CandidateResult(
             ok=False, error="stdout was not valid JSON", unknown_columns=unknown
         )
@@ -91,6 +101,10 @@ def run_candidate(code: str, df_csv: str, timeout_seconds: int = 20) -> Candidat
     figure_type = traces[0].get("type") if traces and isinstance(traces[0], dict) else None
     if figure_type is None and traces:
         figure_type = "scatter"  # px.line omits an explicit type
+    if figure_type is None:
+        return CandidateResult(
+            ok=False, error="figure has no traces (rendered nothing)", unknown_columns=unknown
+        )
     return CandidateResult(
         ok=not unknown, figure_type=figure_type, unknown_columns=unknown
     )

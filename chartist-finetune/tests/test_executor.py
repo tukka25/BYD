@@ -53,3 +53,45 @@ def test_timeout_captured(csv_path):
     result = run_candidate(code, csv_path, timeout_seconds=3)
     assert result.ok is False
     assert "timed out" in (result.error or "").lower()
+
+
+def test_empty_figure_is_rejected(csv_path):
+    code = "import plotly.graph_objects as go\nfig = go.Figure()\nprint(fig.to_json())\n"
+    result = run_candidate(code, csv_path)
+    assert result.ok is False
+    assert result.error
+
+
+def test_title_text_is_not_a_column(csv_path):
+    code = (
+        "import plotly.express as px\n"
+        "fig = px.bar(df, x='Category', y='Value', title='Sales by region')\n"
+        "fig.update_xaxes(title_text='Product category')\n"
+        "print(fig.to_json())\n"
+    )
+    result = run_candidate(code, csv_path)
+    assert result.ok is True
+    assert result.unknown_columns == []
+
+
+def test_subscript_hallucination_caught(csv_path):
+    code = (
+        "import plotly.express as px\n"
+        "fig = px.bar(df, x='Category', y=df['Nope'])\n"
+        "print(fig.to_json())\n"
+    )
+    assert run_candidate(code, csv_path).unknown_columns == ["Nope"]
+
+
+def test_stray_print_tolerated(csv_path):
+    result = run_candidate("print('hello')\n" + COMPLIANT, csv_path)
+    assert result.ok is True
+
+
+def test_xlsx_input(tmp_path):
+    import pandas as pd
+
+    path = tmp_path / "data.xlsx"
+    pd.DataFrame({"Category": ["A", "B"], "Value": [1, 2]}).to_excel(path, index=False)
+    result = run_candidate(COMPLIANT, str(path))
+    assert result.ok is True

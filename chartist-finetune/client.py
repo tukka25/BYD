@@ -20,9 +20,12 @@ ENV_FILE = REPO / ".env"
 SONNET = "claude-sonnet-5-5"
 HAIKU = "claude-haiku-5-5"
 
-PRICES = {  # USD per 1M tokens: (input, output, cache_read)
-    SONNET: (2.00, 10.00, 0.10),
-    HAIKU: (0.10, 0.50, 0.01),
+# USD per 1M tokens: (input, output, cache_read, cache_write).
+# cache_write is 1.25x base input (5-minute TTL). Haiku's cache_read rate is a
+# 0.1x-of-base ESTIMATE, not a published figure from the plan.
+PRICES = {
+    SONNET: (2.00, 10.00, 0.10, 2.50),
+    HAIKU: (0.10, 0.50, 0.01, 0.125),
 }
 
 
@@ -78,7 +81,9 @@ def json_request(
 class BatchOutcome:
     batch_id: str
     payloads: dict[str, dict] = field(default_factory=dict)
-    usage: dict = field(default_factory=lambda: {"input": 0, "output": 0, "cache_read": 0})
+    usage: dict = field(
+        default_factory=lambda: {"input": 0, "output": 0, "cache_read": 0, "cache_write": 0}
+    )
     refusals: int = 0
     errored: int = 0
     unparsed: int = 0
@@ -114,6 +119,9 @@ def run_batch(requests: list, label: str, poll_seconds: int = 30) -> BatchOutcom
         outcome.usage["cache_read"] += (
             getattr(message.usage, "cache_read_input_tokens", 0) or 0
         )
+        outcome.usage["cache_write"] += (
+            getattr(message.usage, "cache_creation_input_tokens", 0) or 0
+        )
         if message.stop_reason == "refusal":
             outcome.refusals += 1
             continue
@@ -126,14 +134,15 @@ def run_batch(requests: list, label: str, poll_seconds: int = 30) -> BatchOutcom
 
 
 def price(usage: dict, model: str, batched: bool = True) -> float:
-    rate_in, rate_out, rate_cache = PRICES[model]
-    billed_input = max(0, usage.get("input", 0) - usage.get("cache_read", 0))
+    """input_tokens excludes cached tokens, so the four buckets are additive."""
+    rate_in, rate_out, rate_cr, rate_cw = PRICES[model]
     total = (
-        billed_input / 1_000_000 * rate_in
-        + usage.get("cache_read", 0) / 1_000_000 * rate_cache
-        + usage.get("output", 0) / 1_000_000 * rate_out
-    )
-    return round(total * (0.5 if batched else 1.0), 4)
+        usage.get("input", 0) * rate_in
+        + usage.get("cache_read", 0) * rate_cr
+        + usage.get("cache_write", 0) * rate_cw
+        + usage.get("output", 0) * rate_out
+    ) / 1_000_000
+    return round(total * (0.5 if batched else 1.0), 6)
 
 
 def record_spend(label: str, model: str, usage: dict, extra: dict | None = None) -> float:
