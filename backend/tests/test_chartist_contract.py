@@ -58,3 +58,45 @@ def test_system_prompt_states_the_hard_rules():
     assert "print(fig.to_json())" in CHARTIST_SYSTEM_PROMPT
     lowered = CHARTIST_SYSTEM_PROMPT.lower()
     assert "fig.show" in lowered and "pd.read_csv" in lowered
+
+
+def _code(body: str) -> str:
+    return "import plotly.express as px\n" + body + "fig = px.bar(df, x='a', y='b')\nprint(fig.to_json())\n"
+
+
+def test_rejects_creating_dataframe():
+    code = _code("import pandas as pd\ndf = pd.DataFrame({'a': [1], 'b': [2]})\n")
+    assert set(validate_chart_code(code)) == {ContractViolation.CREATES_DATAFRAME}
+
+
+def test_allows_reassigning_df_by_transformation():
+    assert validate_chart_code(_code("df = df.groupby('a', as_index=False)['b'].sum()\n")) == []
+
+
+def test_rejects_from_pandas_import_read():
+    code = _code("from pandas import read_csv\n")
+    assert set(validate_chart_code(code)) == {ContractViolation.READS_DATA}
+
+
+def test_rejects_requests():
+    assert set(validate_chart_code(_code("import requests\nr = requests.get('d')\n"))) == {
+        ContractViolation.READS_DATA
+    }
+
+
+def test_rejects_write_html():
+    code = COMPLIANT + "fig.write_html('x.html')\n"
+    assert set(validate_chart_code(code)) == {ContractViolation.WRITES_FILE}
+
+
+def test_rejects_to_csv():
+    code = COMPLIANT + "df.to_csv('x.csv')\n"
+    assert set(validate_chart_code(code)) == {ContractViolation.WRITES_FILE}
+
+
+def test_method_named_open_is_not_a_file_read():
+    assert validate_chart_code(_code("x = obj.open(1)\ny = Open(2)\n")) == []
+
+
+def test_fig_to_json_is_not_a_file_write():
+    assert validate_chart_code(COMPLIANT) == []
