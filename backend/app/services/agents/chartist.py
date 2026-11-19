@@ -1,8 +1,17 @@
-import ast
+import logging
 import re
 from typing import Dict, Any, Optional
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
+
+from app.services.agents.chartist_contract import (
+    CHARTIST_SYSTEM_PROMPT,
+    CHARTIST_USER_TEMPLATE,
+    ContractViolation,
+    validate_chart_code,
+)
+
+logger = logging.getLogger(__name__)
 
 class ChartistAgent:
     """
@@ -12,40 +21,9 @@ class ChartistAgent:
     def __init__(self, llm):
         self.llm = llm
         
-        # System prompt focused on Plotly JSON output
         self.prompt = ChatPromptTemplate.from_messages([
-            ("system", """
-            You are an expert Data Visualization Engineer specializing in Plotly.
-            
-            Your task is to write a Python script that:
-            1. Accepts a pandas DataFrame named `df` (assume it's already loaded with the provided schema).
-            2. Creates a Plotly figure using `plotly.express` (preferred) or `plotly.graph_objects`.
-            3. Applies the requested style and configuration.
-            4. VERY IMPORTANT: The script must end by printing the figure as a JSON string using `print(fig.to_json())`.
-            5. Respect dataframe planning hints when provided:
-               - prefer selected_columns from dataframe_plan
-               - use plotly_ready_spec fields (x/y/color/group_by/aggregation/chart_hint) if available
-               - avoid using missing_fields
-            
-            Do NOT include code to read the file (e.g. pd.read_csv). Assume `df` is available in the global scope.
-            Do NOT show the plot (fig.show()).
-            Do NOT save the plot to a file.
-            NEVER include explanations, markdown, bullet points, or natural language text.
-            Output executable Python only.
-            
-            Only output the Python code block. Do not include markdown formatting like ```python.
-            """),
-            ("human", """
-            Task: {task_description}
-            Visualization Type: {viz_type}
-            Style Config: {style_config}
-            Dataframe Plan: {dataframe_plan}
-            Data Schema:
-            Columns: {columns}
-            Sample Data: {sample_data}
-            
-            Generate the Python code now.
-            """)
+            ("system", CHARTIST_SYSTEM_PROMPT),
+            ("human", CHARTIST_USER_TEMPLATE),
         ])
         
         self.chain = self.prompt | self.llm | StrOutputParser()
@@ -115,22 +93,32 @@ class ChartistAgent:
         code = code.replace("“", "\"").replace("”", "\"").replace("’", "'").replace("‘", "'")
         code = self._strip_prose_prefix(code)
 
-        # Reject non-Plotly/matplotlib style outputs and fallback.
-        lowered = code.lower()
-        if "matplotlib" in lowered or "plt." in lowered or "fig.show(" in lowered:
+        violations = validate_chart_code(code)
+        if ContractViolation.NO_JSON_PRINT in violations and "fig =" in code:
+            code = f"{code}\nprint(fig.to_json())"
+            violations = validate_chart_code(code)
+        if violations:
+            logger.warning("[chartist] contract violations %s, using fallback", violations)
             return self._fallback_plotly_code(data_context, viz_type)
+        return code
 
-        if "print(fig.to_json())" not in code:
-            if "fig =" in code:
-                code = f"{code}\nprint(fig.to_json())"
-            else:
-                return self._fallback_plotly_code(data_context, viz_type)
-
-        try:
-            ast.parse(code)
-            return code
-        except SyntaxError:
-            return self._fallback_plotly_code(data_context, viz_type)
+    def _task_description(
+        self,
+        task_plan: Dict[str, Any],
+        dataframe_plan: Optional[Dict[str, Any]],
+    ) -> str:
+        parts = [
+            f"Build a {task_plan.get('visualization_type', 'bar')} chart.",
+            f"Style: {task_plan.get('style_config', {})}.",
+        ]
+        plan = dataframe_plan or {}
+        if plan.get("selected_columns"):
+            parts.append(f"Prefer these columns: {plan['selected_columns']}.")
+        if plan.get("plotly_ready_spec"):
+            parts.append(f"Suggested encoding: {plan['plotly_ready_spec']}.")
+        if plan.get("missing_fields"):
+            parts.append(f"Unavailable, do not use: {plan['missing_fields']}.")
+        return " ".join(parts)
 
     def generate_code(
         self,
@@ -144,12 +132,10 @@ class ChartistAgent:
         viz_type = task_plan.get("visualization_type", "bar")
         try:
             raw = self.chain.invoke({
-                "task_description": "Generate a chart based on user request",
-                "viz_type": viz_type,
-                "style_config": str(task_plan.get("style_config", {})),
-                "dataframe_plan": str(dataframe_plan or {}),
+                "task": self._task_description(task_plan, dataframe_plan),
                 "columns": str(data_context.get("columns", [])),
-                "sample_data": str(data_context.get("sample", []))
+                "dtypes": str(data_context.get("dtypes", {})),
+                "sample_rows": str(data_context.get("sample", [])),
             })
             return self._sanitize_generated_code(raw, data_context, viz_type)
         except Exception as e:
