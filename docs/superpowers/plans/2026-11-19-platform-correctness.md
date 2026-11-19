@@ -1116,7 +1116,16 @@ def main() -> int:
     import plotly.express as px
     import plotly.graph_objects as go
 
-    namespace = {"df": df, "pd": pd, "px": px, "go": go, "json": json}
+    namespace = {
+        "df": df,
+        "pd": pd,
+        "px": px,
+        "go": go,
+        "json": json,
+        # Restricted builtins. This is the load-bearing control, not the regex
+        # blocklist in executor.py -- see the security note below.
+        "__builtins__": _SAFE_BUILTINS,
+    }
     exec(compile(code, "<generated>", "exec"), namespace)
     return 0
 
@@ -1124,6 +1133,31 @@ def main() -> int:
 if __name__ == "__main__":
     sys.exit(main())
 ```
+
+Define `_SAFE_BUILTINS` near the top of the module as an explicit allow-list — the names ordinary chart code needs and nothing more:
+
+```python
+_SAFE_BUILTINS = {
+    name: getattr(builtins, name)
+    for name in (
+        "abs", "all", "any", "bool", "dict", "divmod", "enumerate", "filter",
+        "float", "format", "frozenset", "int", "isinstance", "issubclass", "iter",
+        "len", "list", "map", "max", "min", "next", "print", "range", "repr",
+        "reversed", "round", "set", "slice", "sorted", "str", "sum", "tuple",
+        "zip", "True", "False", "None", "ValueError", "TypeError", "KeyError",
+        "IndexError", "Exception",
+    )
+    if hasattr(builtins, name)
+}
+```
+
+Add `import builtins` to the module's imports.
+
+> **Security note — why the allow-list, and not a longer blocklist.** The 2026-11-19 final review of the chartist-finetune branch found that model-written chart code could read arbitrary files. `chartist_contract.validate_chart_code` and `SafeExecutor.blocked_patterns` are both regex blocklists, and a reviewer defeated them by execution: `Path('/abs/path/.env').read_text()` and `importlib.import_module('o' + 's')` both pass every pattern and run. Relative-path escapes were closed by giving the subprocess a temporary working directory, but absolute paths were not, and no blocklist closes them — `getattr`, string concatenation and `__builtins__['open']` give unbounded ways to spell a forbidden name.
+>
+> Omitting `__builtins__` from the exec globals removes `open`, `__import__`, `eval`, `exec`, `getattr` and `compile` at the language level, which is a property of the interpreter rather than a pattern someone has to anticipate. **This matters here more than in the dataset pipeline**: the chart prompt is user input, so prompt injection is a live path from an untrusted request to code running in this process.
+>
+> Two follow-ups when you implement this task: mirror the same `_SAFE_BUILTINS` into `chartist-finetune/_candidate_runner.py`, so the oracle and production stay aligned (`chartist-finetune/tests/test_contract_sync.py` already asserts their exec globals match and will fail until you do); and keep the regex blocklist as defence in depth rather than deleting it, since it gives a clearer rejection message than an `AttributeError`. Empirically the dataset pipeline was never exploited — zero of 1,897 generated targets and 50 rejects touched `open(`, `pathlib`, `.env`, `environ`, `subprocess`, `eval(`, `exec(`, `import os` or `../` — so this is hardening, not incident response.
 
 - [ ] **Step 4: Rewrite the executor**
 
