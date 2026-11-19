@@ -79,7 +79,9 @@ def run_candidate(code: str, df_csv: str, timeout_seconds: int = 20) -> Candidat
         else:
             columns = list(pd.read_csv(df_csv, nrows=1).columns)
     except Exception as exc:  # noqa: BLE001
-        return CandidateResult(ok=False, error=f"cannot read {df_csv}: {exc}")
+        return CandidateResult(
+            ok=False, error=f"cannot read {df_csv}: {exc}", failure_kind="unreadable_input"
+        )
 
     unknown = _unknown_columns(code, columns)
 
@@ -116,13 +118,26 @@ def run_candidate(code: str, df_csv: str, timeout_seconds: int = 20) -> Candidat
             failure_kind="bad_output",
         )
 
-    traces = figure.get("data") or []
-    figure_type = traces[0].get("type") if traces and isinstance(traces[0], dict) else None
-    if figure_type is None and traces:
-        figure_type = "scatter"  # px.line omits an explicit type
+    if not isinstance(figure, dict):
+        return CandidateResult(
+            ok=False, error=f"stdout JSON was {type(figure).__name__}, not an object",
+            unknown_columns=unknown, failure_kind="bad_output",
+        )
+
+    try:
+        traces = figure.get("data") or []
+        figure_type = traces[0].get("type") if traces and isinstance(traces[0], dict) else None
+        if figure_type is None and traces:
+            figure_type = "scatter"  # px.line omits an explicit type
+    except Exception as exc:  # noqa: BLE001 - contract: always return a result, never raise
+        return CandidateResult(
+            ok=False, error=f"unexpected figure shape: {exc}", unknown_columns=unknown,
+            failure_kind="bad_output",
+        )
     if figure_type is None:
         return CandidateResult(
-            ok=False, error="figure has no traces (rendered nothing)", unknown_columns=unknown
+            ok=False, error="figure has no traces (rendered nothing)", unknown_columns=unknown,
+            failure_kind="no_figure",
         )
     return CandidateResult(
         ok=True, figure_type=figure_type, unknown_columns=unknown

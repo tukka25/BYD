@@ -137,3 +137,35 @@ def test_hallucinated_column_fails_at_execution(csv_path):
     )
     result = run_candidate(code, csv_path)
     assert result.ok is False and result.failure_kind == "hallucinated_column"
+
+
+def _printing(payload: str) -> str:
+    """Contract-compliant code whose to_json() emits an arbitrary payload."""
+    return (
+        "class F:\n"
+        f"    def to_json(self):\n        return {payload!r}\n"
+        "fig = F()\nprint(fig.to_json())\n"
+    )
+
+
+@pytest.mark.parametrize("printed", ["5", "[1, 2]", "null", '"text"'])
+def test_non_object_json_is_bad_output_not_a_crash(csv_path, printed):
+    result = run_candidate(_printing(printed), csv_path)
+    assert result.ok is False and result.failure_kind == "bad_output"
+
+
+def test_empty_figure_and_unreadable_csv_have_failure_kind(csv_path, tmp_path):
+    empty = run_candidate(_printing('{"data": []}'), csv_path)
+    assert empty.ok is False and empty.failure_kind == "no_figure"
+    missing = run_candidate(COMPLIANT, str(tmp_path / "nope.csv"))
+    assert missing.ok is False and missing.failure_kind == "unreadable_input"
+
+
+def test_run_candidates_survives_a_crashing_job(csv_path):
+    from executor import run_candidates
+
+    jobs = [(COMPLIANT, csv_path), (_printing("5"), csv_path),
+            (COMPLIANT, csv_path), (_printing("null"), csv_path)]
+    results = run_candidates(jobs)
+    assert [r.ok for r in results] == [True, False, True, False]
+    assert [r.failure_kind for r in results] == [None, "bad_output", None, "bad_output"]
