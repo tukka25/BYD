@@ -1,241 +1,241 @@
-req_dt,svc_cat,dist_cd,chan_cd,res_days,crew_hrs,cost_usd
-2025-06-14,Trash Pickup,South,App,170,23.33,2883.62
-2025-05-10,Water Leak,South,App,28,67.55,5723.03
-2024-03-16,Trash Pickup,North,App,145,69.92,4366.47
-2025-05-22,Graffiti,East,App,150,15.08,12538.43
-2025-06-13,Graffiti,South,Phone,30,72.02,7389.4
-2025-06-03,Streetlight,Central,App,26,18.06,324.27
-2024-07-17,Graffiti,West,Web,41,64.94,8094.9
-2024-03-10,Water Leak,North,Walk-In,20,43.88,436.08
-2025-03-31,Pothole,East,Email,2,41.75,14333.08
-2025-01-31,Pothole,West,Web,105,29.54,447.72
-2024-09-08,Noise Complaint,East,Web,81,42.81,8760.33
-2024-03-17,Graffiti,East,Web,114,86.34,5810.35
-2024-11-06,Pothole,East,Web,79,58.75,9881.78
-2024-06-22,Streetlight,East,Walk-In,109,41.01,9201.07
-2024-05-21,Water Leak,South,Email,157,24.53,6551.53
-2025-04-19,Tree Trim,South,App,29,75.28,3471.82
-2024-08-29,Streetlight,South,App,29,48.73,7725.59
-2024-07-30,Tree Trim,Central,Phone,169,19.09,3152.36
-2024-10-12,Trash Pickup,Central,Phone,18,75.26,12758.05
-2025-05-30,Tree Trim,South,Walk-In,108,74.98,10853.28
-2024-07-10,Pothole,South,Email,115,91.56,2934.84
-2024-08-21,Trash Pickup,Central,Email,108,83.75,9297.57
-2024-03-05,Trash Pickup,South,Web,99,70.62,8263.61
-2024-01-03,Pothole,South,App,70,35.55,13435.54
-2024-08-31,Streetlight,East,Phone,122,5.54,9653.16
-2024-11-15,Water Leak,West,Email,53,35.48,12639.97
-2024-04-15,Graffiti,West,Email,157,31.39,13038.69
-2024-06-21,Trash Pickup,West,Email,20,8.44,6832.26
-2024-05-13,Trash Pickup,South,App,13,10.28,11410.79
-2025-05-18,Graffiti,East,Email,14,91.54,14246.19
-2024-07-11,Graffiti,West,Web,14,37.03,13426.56
-2024-11-21,Trash Pickup,West,Web,176,46.58,11820.54
-2024-01-17,Tree Trim,Central,Phone,31,53.91,1493.22
-2024-01-05,Noise Complaint,Central,Walk-In,91,45.49,14877.54
-2024-12-08,Graffiti,Central,Phone,93,6.43,12453.37
-2025-03-07,Graffiti,West,Walk-In,79,95.6,2287.42
-2024-09-21,Tree Trim,South,Phone,20,66.93,3401.41
-2025-04-04,Pothole,South,Web,149,62.31,2191.13
-2024-05-02,Pothole,South,Phone,165,91.97,14418.74
-2024-02-05,Water Leak,North,Web,63,45.56,11586.64
-2025-05-13,Trash Pickup,West,Web,173,78.73,6532.45
-2025-01-29,Graffiti,South,Phone,126,24.87,9189.62
-2024-01-25,Streetlight,South,App,32,4.55,6470.06
-2024-02-27,Graffiti,South,App,30,94.18,9052.45
-2024-06-13,Trash Pickup,Central,Phone,84,46.68,6463.58
-2024-02-13,Trash Pickup,Central,Phone,150,85.77,1698.05
-2024-07-08,Streetlight,North,Phone,77,35.03,10236.8
-2025-01-19,Trash Pickup,Central,Walk-In,6,22.26,1899.52
-2025-04-10,Tree Trim,South,Web,139,9.9,10636.98
-2025-01-16,Trash Pickup,Central,App,32,50.15,12739.58
-2024-04-05,Trash Pickup,East,Email,62,78.11,12329.19
-2024-09-25,Graffiti,East,Walk-In,24,94.13,6753.59
-2024-01-27,Trash Pickup,East,App,120,9.99,3574.52
-2025-06-18,Tree Trim,West,Walk-In,6,53.49,13523.58
-2024-10-01,Streetlight,South,Email,170,46.33,14124.55
-2024-03-07,Trash Pickup,West,Walk-In,160,62.05,5079.8
-2024-02-09,Graffiti,North,Phone,5,93.86,8030.64
-2025-01-03,Graffiti,North,Web,80,53.63,2139.28
-2025-02-12,Tree Trim,Central,Phone,39,90.92,1902.74
-2025-01-03,Trash Pickup,North,Phone,20,3.12,10057.53
-2024-01-02,Water Leak,North,Phone,179,77.91,2398.22
-2024-12-06,Tree Trim,East,Phone,173,85.08,6170.2
-2024-01-13,Streetlight,South,Web,155,31.81,4517.94
-2024-08-19,Streetlight,East,Web,123,76.27,2265.93
-2024-06-13,Graffiti,South,Web,92,72.15,8288.57
-2024-04-28,Water Leak,East,Web,76,47.92,1244.41
-2024-07-18,Water Leak,Central,App,65,1.18,10989.3
-2024-02-15,Water Leak,West,Phone,90,68.88,262.67
-2024-11-22,Noise Complaint,North,App,100,89.51,5190.23
-2025-05-05,Water Leak,South,App,140,54.56,9665.47
-2025-03-04,Pothole,East,Email,17,36.35,11678.59
-2024-02-22,Streetlight,East,Email,155,52.31,13381.78
-2025-06-13,Tree Trim,Central,App,151,76.27,7455.97
-2024-02-03,Streetlight,West,App,107,28.68,10014.47
-2024-04-17,Tree Trim,West,Walk-In,90,3.93,13327.78
-2025-03-23,Noise Complaint,South,Web,113,36.75,11382.38
-2024-08-20,Water Leak,East,Email,124,56.73,1887.22
-2024-03-26,Tree Trim,Central,Phone,137,48.69,9463.23
-2024-10-04,Trash Pickup,West,Phone,139,60.02,5613.14
-2024-02-15,Noise Complaint,North,App,84,39.41,7518.59
-2025-02-11,Noise Complaint,West,Web,40,82.26,6641.09
-2024-08-13,Water Leak,Central,Email,69,53.76,14532.77
-2024-05-29,Water Leak,East,Web,169,73.66,2698.09
-2025-01-16,Tree Trim,South,Phone,155,74.15,3768.06
-2024-05-28,Trash Pickup,North,Email,48,75.08,2027.36
-2024-12-09,Trash Pickup,West,Phone,137,89.94,7844.32
-2024-06-26,Noise Complaint,North,Walk-In,77,65.36,10022.21
-2025-03-24,Tree Trim,West,Email,152,74.31,14119.71
-2024-01-30,Noise Complaint,East,Walk-In,155,21.34,1305.22
-2024-07-07,Pothole,North,App,59,11.88,9792.21
-2024-03-17,Trash Pickup,North,App,176,49.08,6610.64
-2025-03-26,Noise Complaint,South,App,123,74.58,10348.92
-2024-02-02,Pothole,South,Web,101,28.94,11041.31
-2024-07-24,Graffiti,East,Phone,46,48.85,5331.87
-2025-06-02,Water Leak,East,App,89,12.91,8644.18
-2024-09-10,Streetlight,South,Walk-In,120,25.76,7888.23
-2024-07-16,Noise Complaint,Central,App,139,70.88,2527.55
-2024-05-13,Streetlight,South,Phone,62,45.21,10529.18
-2024-12-10,Water Leak,South,Walk-In,125,37.06,7819.12
-2024-04-22,Tree Trim,Central,App,160,17.69,6332.04
-2024-05-10,Water Leak,Central,Walk-In,163,88.07,8285.62
-2025-01-07,Graffiti,North,App,60,50.08,14211.14
-2025-01-14,Streetlight,South,Walk-In,81,94.19,5946.32
-2024-11-11,Tree Trim,West,Email,147,15.92,6718.44
-2024-05-25,Water Leak,South,Walk-In,39,27.41,9100.19
-2024-05-12,Trash Pickup,South,Email,16,39.94,7841.8
-2024-01-27,Trash Pickup,West,Walk-In,94,56.02,59.71
-2025-01-14,Graffiti,West,Web,26,6.88,12216.3
-2024-12-11,Water Leak,West,Web,2,66.16,4208.79
-2024-01-05,Trash Pickup,East,Phone,144,53.07,3118.14
-2024-10-22,Streetlight,Central,Walk-In,90,16.04,10988.33
-2025-05-07,Graffiti,South,App,5,14.08,5530.4
-2024-11-19,Graffiti,West,Phone,104,42.38,7693.95
-2024-02-19,Water Leak,East,Email,149,85.43,7242.82
-2024-03-18,Water Leak,North,App,71,68.55,10487.62
-2025-06-06,Water Leak,South,App,6,30.92,12306.28
-2024-02-03,Water Leak,East,Web,124,86.17,116.56
-2025-04-20,Graffiti,East,Web,9,25.55,698.63
-2024-07-20,Water Leak,Central,Phone,124,84.57,1642.86
-2025-03-16,Noise Complaint,Central,Web,25,52.04,4822.12
-2025-06-20,Tree Trim,East,Walk-In,63,3.35,12188.97
-2025-06-08,Streetlight,Central,Web,31,42.33,10855.27
-2025-03-29,Tree Trim,West,Web,40,27.39,14540.6
-2024-03-11,Pothole,South,Phone,64,51.17,95.15
-2024-02-11,Trash Pickup,West,Web,135,61.62,8081.21
-2024-08-05,Tree Trim,East,Phone,72,2.27,7615.27
-2024-01-30,Trash Pickup,West,Walk-In,126,33.26,11957.43
-2024-12-18,Tree Trim,East,App,88,81.45,107.82
-2024-04-26,Streetlight,Central,Walk-In,63,51.12,5614.94
-2024-12-09,Noise Complaint,South,App,118,53.74,8040.99
-2025-05-22,Water Leak,North,App,143,22.27,13407.18
-2024-09-17,Noise Complaint,West,App,84,59.56,3059.58
-2024-05-29,Water Leak,East,Web,59,75.06,4892.97
-2024-06-17,Water Leak,South,Walk-In,114,69.85,10004.1
-2025-05-25,Water Leak,Central,App,112,49.15,3573.76
-2025-01-27,Pothole,North,Web,62,7.11,12782.88
-2025-01-06,Tree Trim,East,Email,20,15.23,10608.09
-2024-01-29,Streetlight,South,Web,61,45.64,4616.1
-2024-02-24,Streetlight,Central,Web,65,21.93,1046.66
-2025-01-22,Pothole,North,App,57,2.85,13614.98
-2025-02-10,Pothole,Central,Phone,73,94.32,9906.24
-2025-05-24,Noise Complaint,North,Phone,158,75.03,14747.9
-2024-03-18,Graffiti,Central,Phone,93,13.62,14810.2
-2024-02-06,Streetlight,East,Phone,61,32.14,7939.29
-2024-04-23,Pothole,West,Phone,99,55.53,5162.72
-2024-08-12,Streetlight,South,Email,61,66.31,188.45
-2024-08-02,Water Leak,Central,App,37,38.1,3935.6
-2024-10-31,Trash Pickup,Central,Walk-In,2,63.44,14432.87
-2024-10-08,Tree Trim,East,Email,125,18.82,5992.82
-2024-01-03,Graffiti,Central,Email,49,17.45,5706.54
-2025-01-29,Trash Pickup,North,App,172,35.74,11056.72
-2024-06-09,Pothole,South,Phone,156,61.97,619.95
-2024-12-06,Graffiti,West,Phone,5,48.8,7160.87
-2024-09-02,Streetlight,North,App,164,66.53,2388.87
-2024-04-19,Trash Pickup,South,Email,82,8.72,10904.35
-2024-07-04,Graffiti,North,Phone,175,73.6,8784.57
-2025-06-17,Water Leak,North,Web,84,41.6,14647.06
-2025-04-27,Trash Pickup,West,App,64,90.52,10418.75
-2024-04-07,Pothole,South,Web,87,17.57,10877.76
-2025-03-22,Noise Complaint,Central,Phone,11,32.83,5146.26
-2024-08-23,Pothole,Central,Phone,45,93.54,10299.46
-2024-02-11,Trash Pickup,South,Web,151,41.04,7477.7
-2024-10-05,Graffiti,South,Web,94,92.78,2700.57
-2024-07-26,Trash Pickup,South,App,16,94.8,12933.09
-2024-12-26,Streetlight,West,Phone,109,43.23,3657.29
-2025-04-23,Noise Complaint,Central,Web,157,14.35,4531.29
-2024-09-14,Pothole,West,Email,146,84.81,1990.77
-2024-03-11,Streetlight,Central,Email,107,2.73,7171.03
-2025-02-08,Tree Trim,Central,Walk-In,6,56.34,4627.68
-2025-03-19,Water Leak,South,Email,125,6.01,14238.3
-2025-01-21,Tree Trim,North,Web,17,7.03,14092.27
-2025-02-23,Noise Complaint,South,App,131,58.09,4462.46
-2025-04-19,Graffiti,East,Walk-In,171,70.29,819.95
-2024-08-21,Pothole,East,Email,92,55.58,6108.2
-2024-01-22,Water Leak,Central,Web,85,8.41,615.72
-2024-11-09,Trash Pickup,Central,Walk-In,91,70.73,10197.67
-2024-08-27,Noise Complaint,North,Walk-In,14,29.42,14000.53
-2024-03-13,Graffiti,West,Walk-In,84,70.79,12768.59
-2024-10-17,Water Leak,West,Walk-In,108,52.75,1139.46
-2025-01-03,Streetlight,West,Phone,107,63.38,10301.7
-2025-06-01,Pothole,South,Phone,41,33.06,3610.49
-2024-10-11,Streetlight,East,Walk-In,13,72.67,7965.64
-2025-02-28,Water Leak,North,Email,59,44.75,2256.66
-2024-10-03,Streetlight,East,Phone,53,16.87,6919.21
-2024-02-11,Graffiti,North,Walk-In,68,84.24,175.35
-2024-06-09,Noise Complaint,North,Walk-In,173,72.88,7325.75
-2025-06-02,Tree Trim,North,Phone,170,17.42,13746.82
-2024-06-10,Trash Pickup,West,Walk-In,25,17.38,4693.92
-2025-03-12,Trash Pickup,Central,Walk-In,40,22.77,14657.06
-2024-01-04,Tree Trim,South,Web,14,82.06,14967.03
-2025-03-15,Trash Pickup,North,App,41,89.68,8336.61
-2024-05-25,Water Leak,North,Phone,37,48.05,14263.85
-2024-07-31,Pothole,North,Email,85,94.56,12715.86
-2024-12-05,Graffiti,West,Walk-In,20,48.23,5419.13
-2024-11-27,Noise Complaint,North,Email,101,17.22,9959.46
-2024-04-11,Noise Complaint,Central,Phone,145,70.23,2123.08
-2024-05-02,Trash Pickup,South,App,180,19.55,9100.32
-2025-05-29,Noise Complaint,East,Phone,171,38.03,13961.1
-2025-02-22,Noise Complaint,North,Email,166,63.72,377.54
-2024-03-21,Tree Trim,West,Walk-In,25,80.65,4952.59
-2024-02-17,Streetlight,West,App,62,51.12,11622.04
-2024-04-26,Pothole,South,Phone,72,59.84,8415.73
-2024-08-23,Streetlight,South,Email,61,46.73,11305.57
-2025-04-17,Noise Complaint,East,Walk-In,56,91.9,11217.0
-2024-12-07,Water Leak,East,Walk-In,42,12.26,9259.04
-2024-08-11,Streetlight,West,App,167,17.01,4147.15
-2024-03-25,Noise Complaint,North,Walk-In,97,18.94,7701.05
-2024-11-21,Streetlight,Central,Web,177,24.82,6282.38
-2025-03-21,Pothole,West,Walk-In,131,11.04,5823.3
-2025-06-21,Streetlight,Central,Email,109,88.35,7114.72
-2025-05-24,Pothole,North,Walk-In,87,55.15,7338.27
-2024-02-09,Water Leak,Central,Web,37,31.99,413.77
-2025-01-28,Noise Complaint,Central,Web,154,89.96,10820.71
-2025-04-05,Pothole,East,App,49,17.49,8773.89
-2025-04-25,Streetlight,South,Phone,169,49.86,11426.89
-2024-07-07,Pothole,Central,Walk-In,131,91.54,7305.3
-2024-10-15,Tree Trim,North,Web,121,40.74,7797.88
-2025-03-11,Noise Complaint,Central,Email,0,68.05,8342.06
-2024-11-16,Streetlight,East,Walk-In,128,3.22,6482.41
-2024-06-01,Graffiti,Central,App,52,87.49,12046.1
-2024-10-31,Noise Complaint,Central,App,72,75.89,663.07
-2025-03-01,Streetlight,North,App,77,5.45,1799.97
-2025-02-15,Trash Pickup,West,Email,104,81.64,803.61
-2024-03-26,Noise Complaint,South,Walk-In,6,64.63,7605.63
-2025-01-01,Tree Trim,East,App,5,90.41,2043.36
-2024-06-14,Water Leak,North,App,33,60.22,11810.93
-2024-02-11,Trash Pickup,East,Phone,55,87.67,14755.74
-2024-11-27,Tree Trim,North,Email,99,27.18,6523.42
-2025-05-21,Pothole,West,App,125,3.24,11683.79
-2024-11-22,Streetlight,East,Web,88,62.25,9459.47
-2024-06-15,Streetlight,East,App,26,22.02,9503.12
-2024-04-27,Streetlight,Central,Web,153,67.18,1364.64
-2025-05-04,Noise Complaint,North,Web,169,35.79,2817.79
-2024-11-07,Noise Complaint,North,Email,4,27.06,14663.7
-2024-02-15,Streetlight,Central,Web,50,57.43,12580.12
-2024-09-23,Streetlight,West,Email,64,35.56,11074.73
-2025-01-29,Water Leak,North,Walk-In,127,4.74,973.77
-2024-01-05,Noise Complaint,East,Walk-In,111,29.23,4701.04
-2024-04-14,Tree Trim,East,Email,161,6.68,4224.04
-2024-11-21,Streetlight,West,Phone,143,82.84,11023.85
+snapshotDate,department,employmentType,location,headcountEnd,hiresCount,terminationsCount,attritionRate,avgTenureYears
+2024-10-26,Engineering,Contractor,Berlin,395,142,244,0.16,8.25
+2024-10-20,Marketing,Intern,London,2884,255,238,0.33,14.07
+2024-06-27,Customer Support,Full-Time,New York,12372,464,250,0.1,16.77
+2025-03-30,Marketing,Full-Time,San Francisco,1596,387,146,0.29,2.94
+2024-08-06,Marketing,Full-Time,Berlin,13134,38,204,0.01,9.81
+2025-02-09,Operations,Part-Time,Berlin,11490,12,233,0.03,7.85
+2024-04-19,Legal,Part-Time,London,4301,183,65,0.03,26.28
+2024-06-28,Human Resources,Part-Time,Toronto,11923,277,223,0.37,3.91
+2024-01-05,Human Resources,Full-Time,Berlin,4306,344,163,0.0,10.21
+2024-11-19,Customer Support,Contractor,San Francisco,8310,145,392,0.04,24.63
+2024-01-07,Engineering,Intern,Austin,4927,109,23,0.35,13.4
+2024-04-15,Finance,Part-Time,New York,12111,393,14,0.28,12.43
+2025-05-07,Sales,Part-Time,Singapore,6692,14,275,0.36,20.97
+2024-03-22,Marketing,Intern,Toronto,10254,14,385,0.39,21.48
+2024-08-01,Sales,Contractor,New York,9237,2,59,0.3,19.07
+2024-09-29,Legal,Part-Time,Austin,11834,237,263,0.07,12.77
+2024-10-19,Customer Support,Full-Time,Toronto,7790,434,64,0.41,7.58
+2024-10-20,Marketing,Part-Time,Berlin,7233,36,298,0.25,4.03
+2025-03-17,Legal,Contractor,Berlin,7008,15,217,0.01,18.28
+2025-06-23,Legal,Contractor,San Francisco,12840,202,219,0.05,23.7
+2024-09-10,Human Resources,Full-Time,London,11294,486,52,0.16,13.42
+2025-06-15,Operations,Intern,Singapore,4478,417,32,0.34,20.95
+2024-05-11,Operations,Part-Time,London,12152,208,93,0.06,5.69
+2024-10-08,Sales,Intern,London,5497,301,21,0.41,5.99
+2024-07-03,Human Resources,Contractor,Austin,13191,87,126,0.01,22.66
+2024-12-25,Sales,Intern,Toronto,7594,120,215,0.39,22.83
+2025-03-23,Operations,Part-Time,New York,11082,178,182,0.19,4.42
+2024-04-22,Sales,Part-Time,Austin,1545,394,254,0.02,18.75
+2024-08-11,Finance,Intern,London,13402,399,101,0.13,13.15
+2025-02-14,Operations,Part-Time,New York,7484,398,378,0.12,16.17
+2025-06-20,Operations,Contractor,San Francisco,8581,252,156,0.33,20.73
+2025-03-07,Operations,Contractor,Austin,5963,399,332,0.15,27.21
+2025-01-28,Operations,Part-Time,London,14955,93,2,0.23,7.4
+2025-06-02,Operations,Contractor,Austin,6870,128,20,0.03,11.68
+2024-09-28,Finance,Part-Time,San Francisco,2265,117,70,0.26,18.98
+2024-03-13,Sales,Intern,San Francisco,10398,273,351,0.04,7.52
+2024-12-08,Engineering,Intern,London,9851,136,196,0.31,5.54
+2024-08-29,Marketing,Full-Time,San Francisco,9130,431,328,0.05,12.88
+2024-01-24,Sales,Intern,Singapore,6895,265,99,0.2,22.47
+2024-12-12,Marketing,Contractor,New York,8745,11,149,0.06,6.72
+2025-06-21,Human Resources,Intern,San Francisco,3395,125,355,0.4,17.73
+2024-10-21,Human Resources,Part-Time,Toronto,11656,338,270,0.37,19.29
+2024-01-21,Human Resources,Full-Time,Austin,6772,321,382,0.27,0.71
+2024-02-29,Finance,Contractor,Berlin,4752,478,91,0.2,3.21
+2024-04-24,Finance,Full-Time,London,5396,281,268,0.24,15.08
+2024-12-20,Finance,Part-Time,Singapore,1343,498,265,0.32,19.07
+2024-07-26,Engineering,Contractor,New York,9402,197,366,0.32,14.89
+2025-02-16,Sales,Full-Time,Berlin,1208,393,236,0.05,26.22
+2025-02-17,Engineering,Contractor,New York,7419,356,360,0.01,7.47
+2025-04-23,Human Resources,Full-Time,Singapore,7957,192,330,0.04,1.94
+2024-06-10,Legal,Part-Time,Berlin,7124,193,394,0.42,17.61
+2024-02-08,Engineering,Full-Time,Singapore,13788,56,333,0.42,29.46
+2025-03-14,Engineering,Full-Time,Austin,2047,29,283,0.36,21.01
+2024-05-30,Legal,Intern,San Francisco,3813,490,266,0.04,9.61
+2024-08-31,Finance,Intern,Singapore,4097,57,102,0.03,23.41
+2025-04-29,Customer Support,Full-Time,Toronto,47,164,134,0.34,20.0
+2024-06-10,Operations,Part-Time,Austin,7552,489,228,0.43,27.83
+2025-01-07,Finance,Full-Time,Toronto,11550,210,268,0.07,24.87
+2025-05-12,Operations,Contractor,London,1591,173,122,0.36,8.55
+2025-03-05,Operations,Contractor,Toronto,9203,34,277,0.18,13.95
+2024-07-10,Legal,Full-Time,Austin,13624,483,343,0.07,17.42
+2024-06-22,Legal,Contractor,Singapore,12573,281,336,0.21,25.61
+2025-04-20,Marketing,Part-Time,Toronto,4767,122,144,0.09,24.12
+2024-04-11,Engineering,Intern,San Francisco,5760,213,396,0.18,25.07
+2024-03-04,Operations,Contractor,Austin,8750,364,338,0.36,23.77
+2024-09-28,Customer Support,Part-Time,London,5492,315,233,0.39,13.19
+2024-01-10,Marketing,Part-Time,London,2082,463,376,0.21,11.8
+2024-08-03,Engineering,Contractor,Berlin,10956,493,367,0.13,29.86
+2024-03-04,Legal,Part-Time,Singapore,2907,155,81,0.29,4.6
+2024-05-23,Human Resources,Intern,Austin,1327,107,59,0.09,10.98
+2024-01-11,Legal,Full-Time,New York,2394,347,250,0.44,23.1
+2024-09-30,Marketing,Contractor,New York,12358,305,192,0.11,13.33
+2024-06-05,Engineering,Contractor,Austin,744,467,5,0.16,12.44
+2024-02-13,Human Resources,Contractor,San Francisco,3638,286,267,0.35,9.29
+2025-05-01,Sales,Full-Time,Toronto,3309,174,240,0.28,25.29
+2025-06-05,Customer Support,Contractor,Singapore,11097,101,396,0.13,1.99
+2025-06-22,Sales,Contractor,New York,143,300,87,0.32,19.07
+2024-06-11,Sales,Full-Time,London,3783,412,110,0.29,20.34
+2024-11-13,Operations,Full-Time,Singapore,8286,313,294,0.05,14.87
+2024-01-12,Engineering,Intern,San Francisco,3276,123,107,0.13,21.29
+2024-04-11,Finance,Intern,New York,3134,48,103,0.35,14.25
+2025-03-13,Marketing,Part-Time,Toronto,5682,109,320,0.3,11.18
+2025-04-15,Legal,Contractor,Toronto,14625,264,294,0.21,10.97
+2024-04-27,Finance,Contractor,Berlin,3776,55,120,0.23,20.98
+2025-02-07,Human Resources,Intern,Singapore,13969,414,342,0.41,4.3
+2024-04-19,Engineering,Part-Time,Singapore,251,98,241,0.19,28.34
+2024-10-09,Legal,Part-Time,London,4843,394,109,0.42,9.31
+2024-11-20,Human Resources,Intern,London,11979,280,344,0.24,29.71
+2024-08-20,Legal,Part-Time,New York,11796,79,264,0.26,9.28
+2024-07-10,Marketing,Part-Time,Berlin,4084,160,112,0.09,16.1
+2024-03-25,Finance,Intern,Berlin,6660,489,170,0.13,2.79
+2024-08-23,Sales,Intern,Austin,3773,488,224,0.21,22.73
+2025-03-08,Human Resources,Full-Time,San Francisco,571,173,195,0.17,22.33
+2025-04-11,Marketing,Part-Time,Singapore,5292,223,350,0.14,26.68
+2024-08-06,Legal,Full-Time,Berlin,8013,218,373,0.26,11.16
+2024-06-22,Sales,Part-Time,Singapore,10945,390,219,0.13,18.27
+2024-07-21,Engineering,Part-Time,San Francisco,13535,214,310,0.34,2.7
+2025-05-09,Sales,Part-Time,London,14805,279,21,0.0,4.49
+2024-07-09,Human Resources,Part-Time,New York,9526,89,75,0.02,15.06
+2024-03-17,Customer Support,Part-Time,Singapore,3851,480,118,0.16,9.24
+2025-04-14,Sales,Full-Time,San Francisco,11670,419,327,0.2,25.83
+2024-05-29,Finance,Contractor,Singapore,9656,404,387,0.34,22.55
+2024-12-08,Sales,Contractor,Berlin,398,120,296,0.15,18.98
+2025-02-21,Engineering,Intern,New York,1516,190,353,0.12,23.94
+2024-06-27,Marketing,Intern,Toronto,11015,37,325,0.06,19.83
+2025-03-27,Human Resources,Full-Time,London,12094,386,278,0.15,22.73
+2025-01-04,Human Resources,Part-Time,London,14744,166,397,0.34,11.81
+2025-02-05,Sales,Contractor,New York,12902,286,7,0.24,23.49
+2024-04-12,Customer Support,Part-Time,Austin,2157,337,136,0.1,6.08
+2024-01-04,Engineering,Contractor,Toronto,2622,97,348,0.37,8.26
+2024-10-15,Sales,Contractor,Berlin,11055,57,170,0.27,8.79
+2024-12-29,Customer Support,Part-Time,Toronto,4239,333,18,0.17,15.15
+2025-03-28,Engineering,Part-Time,San Francisco,2072,464,43,0.09,19.71
+2025-02-25,Customer Support,Full-Time,Berlin,10152,199,71,0.02,11.19
+2025-05-11,Operations,Contractor,Toronto,752,336,365,0.4,27.2
+2024-03-25,Customer Support,Intern,San Francisco,10650,254,238,0.4,0.34
+2025-01-03,Human Resources,Part-Time,Singapore,239,335,305,0.22,12.87
+2025-01-16,Finance,Contractor,New York,2194,16,397,0.35,0.01
+2024-10-28,Engineering,Intern,London,2360,449,384,0.19,28.88
+2025-06-22,Human Resources,Part-Time,Berlin,4322,82,271,0.07,3.39
+2025-01-25,Sales,Full-Time,San Francisco,1283,2,219,0.23,9.88
+2024-01-13,Finance,Intern,San Francisco,8717,436,164,0.06,29.19
+2024-08-17,Marketing,Full-Time,Toronto,6220,424,159,0.17,29.17
+2025-02-16,Human Resources,Contractor,London,11223,177,275,0.45,29.22
+2025-06-05,Human Resources,Full-Time,New York,14158,65,398,0.37,9.39
+2025-02-13,Customer Support,Part-Time,New York,35,346,308,0.11,24.63
+2025-05-09,Customer Support,Intern,Austin,8757,438,155,0.13,11.76
+2024-03-26,Customer Support,Full-Time,Singapore,9919,27,244,0.09,20.09
+2025-06-21,Finance,Part-Time,Toronto,12811,92,284,0.45,6.68
+2024-01-11,Sales,Intern,Berlin,1684,261,383,0.06,5.28
+2025-02-04,Customer Support,Intern,Singapore,7511,76,378,0.22,29.86
+2024-10-15,Marketing,Full-Time,London,8635,76,87,0.15,27.74
+2025-04-16,Sales,Intern,Singapore,5093,357,318,0.17,15.18
+2024-04-27,Marketing,Contractor,San Francisco,11086,209,397,0.38,19.34
+2024-07-22,Engineering,Part-Time,Berlin,5121,476,95,0.04,23.63
+2025-01-31,Customer Support,Intern,London,14015,399,176,0.04,12.73
+2025-03-18,Marketing,Contractor,Singapore,14040,52,234,0.45,3.51
+2025-03-04,Sales,Full-Time,Toronto,7486,103,164,0.38,17.74
+2024-10-06,Legal,Contractor,Toronto,11566,214,217,0.27,14.94
+2024-03-11,Marketing,Part-Time,Berlin,2020,251,375,0.05,10.34
+2024-01-26,Finance,Contractor,London,7110,390,51,0.25,0.2
+2024-02-27,Customer Support,Intern,New York,11110,235,98,0.01,2.95
+2025-03-04,Customer Support,Full-Time,London,9798,221,225,0.42,29.38
+2025-04-12,Operations,Full-Time,Toronto,11704,215,123,0.33,15.46
+2025-05-13,Human Resources,Intern,Berlin,7317,121,368,0.43,11.11
+2024-10-14,Marketing,Part-Time,San Francisco,5100,367,133,0.32,29.15
+2024-06-05,Human Resources,Full-Time,Austin,4831,212,363,0.28,20.45
+2024-05-12,Sales,Part-Time,New York,14507,18,40,0.44,22.83
+2025-01-31,Engineering,Contractor,Toronto,2280,297,88,0.1,19.39
+2025-03-07,Finance,Full-Time,New York,5183,31,79,0.24,11.01
+2025-02-01,Marketing,Intern,London,12786,59,82,0.02,5.61
+2025-02-28,Engineering,Contractor,Singapore,2125,230,297,0.34,14.69
+2024-08-03,Finance,Part-Time,New York,10854,11,19,0.15,20.28
+2025-05-25,Finance,Contractor,Berlin,7893,93,361,0.02,11.23
+2024-04-12,Customer Support,Part-Time,Toronto,2962,441,144,0.19,27.77
+2024-04-10,Finance,Intern,San Francisco,8691,334,160,0.19,6.2
+2025-01-12,Marketing,Intern,Toronto,9816,303,143,0.25,5.65
+2025-04-29,Sales,Intern,Berlin,6789,197,202,0.44,28.97
+2024-05-04,Legal,Contractor,Singapore,11044,420,383,0.29,9.32
+2024-10-20,Operations,Full-Time,Austin,4370,212,225,0.44,8.88
+2024-03-20,Finance,Full-Time,New York,3408,179,138,0.37,0.54
+2024-01-11,Human Resources,Part-Time,Austin,7029,12,57,0.41,2.87
+2025-01-03,Finance,Full-Time,New York,13405,270,333,0.22,14.93
+2024-02-15,Operations,Intern,San Francisco,11802,435,217,0.33,4.21
+2024-08-18,Human Resources,Contractor,Singapore,13290,375,321,0.3,26.84
+2024-04-07,Customer Support,Intern,Singapore,5396,386,197,0.24,1.49
+2024-02-09,Engineering,Full-Time,London,11385,131,149,0.09,5.52
+2025-01-06,Sales,Contractor,San Francisco,4276,491,20,0.08,4.27
+2024-05-12,Sales,Intern,Singapore,578,431,171,0.09,1.46
+2024-10-29,Legal,Intern,London,10402,6,103,0.09,2.8
+2024-04-30,Operations,Part-Time,Toronto,11028,387,181,0.15,23.45
+2024-02-26,Human Resources,Intern,Toronto,2726,347,360,0.41,23.97
+2025-03-21,Engineering,Full-Time,Toronto,4095,160,216,0.13,20.1
+2024-06-19,Human Resources,Full-Time,Austin,1224,373,357,0.15,21.85
+2025-06-02,Legal,Part-Time,London,5852,478,171,0.13,22.14
+2025-04-21,Engineering,Full-Time,San Francisco,10684,405,218,0.1,1.1
+2025-06-04,Legal,Contractor,New York,5787,485,266,0.18,8.52
+2025-03-30,Legal,Contractor,New York,1309,350,101,0.3,1.79
+2025-01-02,Marketing,Contractor,London,4038,330,85,0.08,15.68
+2024-12-09,Finance,Part-Time,Berlin,2774,476,61,0.03,15.91
+2024-07-23,Marketing,Part-Time,San Francisco,13983,492,328,0.09,25.46
+2024-11-25,Engineering,Full-Time,London,11910,4,74,0.38,4.28
+2024-02-08,Sales,Intern,Berlin,10878,220,0,0.38,28.38
+2025-01-25,Marketing,Full-Time,Austin,2419,38,388,0.04,14.82
+2025-03-08,Customer Support,Full-Time,Singapore,8066,267,210,0.36,0.3
+2024-02-12,Legal,Intern,Austin,3430,405,342,0.15,18.95
+2024-12-16,Sales,Part-Time,Toronto,13056,57,270,0.09,3.26
+2025-06-05,Sales,Contractor,Toronto,6391,216,333,0.11,20.31
+2025-06-23,Engineering,Contractor,Toronto,1475,108,80,0.06,1.6
+2025-03-26,Human Resources,Part-Time,Toronto,3767,347,182,0.39,2.68
+2024-07-18,Sales,Part-Time,Berlin,14016,65,299,0.16,21.32
+2024-09-11,Customer Support,Intern,New York,13543,453,148,0.37,1.72
+2025-01-02,Human Resources,Contractor,London,1418,389,205,0.07,24.45
+2025-01-19,Engineering,Part-Time,San Francisco,6957,138,125,0.27,19.89
+2025-01-01,Customer Support,Intern,Toronto,7873,120,202,0.31,3.85
+2024-12-12,Engineering,Intern,London,12919,397,64,0.37,26.33
+2024-11-03,Human Resources,Part-Time,Toronto,3808,417,284,0.2,16.64
+2025-01-26,Human Resources,Intern,Toronto,8968,66,208,0.15,7.42
+2024-03-16,Marketing,Contractor,Singapore,5397,397,374,0.23,14.93
+2024-08-28,Marketing,Part-Time,Toronto,9857,351,4,0.11,13.21
+2024-01-23,Human Resources,Contractor,Berlin,10013,455,133,0.02,12.62
+2024-08-30,Human Resources,Full-Time,Singapore,6205,3,3,0.17,28.73
+2025-06-22,Sales,Contractor,Toronto,11505,448,26,0.27,24.86
+2025-06-12,Customer Support,Intern,New York,13394,425,378,0.23,16.92
+2024-07-24,Marketing,Part-Time,Berlin,3437,237,351,0.41,4.11
+2024-01-12,Finance,Part-Time,Toronto,7706,445,8,0.39,3.84
+2024-12-28,Operations,Full-Time,London,12970,378,38,0.08,21.6
+2024-05-20,Operations,Part-Time,San Francisco,9880,426,141,0.15,21.77
+2024-06-20,Finance,Full-Time,San Francisco,3392,431,78,0.3,27.46
+2025-04-21,Legal,Intern,New York,11708,466,376,0.33,25.09
+2025-01-23,Sales,Intern,New York,12960,321,193,0.06,9.67
+2025-01-27,Finance,Part-Time,Toronto,10363,455,75,0.05,15.08
+2024-04-17,Finance,Intern,Austin,7476,136,236,0.35,11.49
+2024-01-05,Operations,Intern,New York,13216,276,324,0.12,7.92
+2024-09-23,Human Resources,Intern,Toronto,11646,90,335,0.41,24.17
+2024-11-14,Legal,Contractor,San Francisco,10135,97,209,0.27,28.95
+2024-10-18,Operations,Full-Time,Austin,7345,480,332,0.24,14.36
+2024-03-16,Operations,Full-Time,Austin,11706,334,349,0.02,11.7
+2024-06-10,Sales,Part-Time,London,12424,261,249,0.36,19.42
+2025-03-10,Engineering,Part-Time,San Francisco,93,56,138,0.06,5.01
+2025-02-20,Sales,Part-Time,San Francisco,5377,392,111,0.35,19.16
+2024-05-25,Sales,Contractor,Berlin,8358,211,60,0.2,1.49
+2024-03-21,Marketing,Full-Time,Berlin,6160,300,243,0.3,26.16
+2024-06-28,Legal,Full-Time,Singapore,11947,177,359,0.1,18.23
+2024-05-30,Sales,Part-Time,New York,10629,49,385,0.09,24.7
+2024-08-03,Engineering,Part-Time,Singapore,9660,448,108,0.14,3.64
+2024-11-02,Sales,Contractor,London,7038,336,279,0.11,25.74
+2025-04-23,Finance,Contractor,London,6511,477,143,0.19,29.84
+2024-08-09,Engineering,Part-Time,London,10044,424,156,0.22,29.99
+2024-07-29,Finance,Part-Time,New York,8891,87,355,0.04,4.11
+2024-05-05,Marketing,Part-Time,London,7702,312,40,0.07,15.27
+2024-02-09,Customer Support,Part-Time,Berlin,675,134,203,0.03,7.29
+2025-03-11,Operations,Full-Time,New York,5381,213,337,0.17,26.25
+2024-08-03,Engineering,Full-Time,Singapore,4285,97,90,0.25,18.76
+2024-06-29,Operations,Intern,Toronto,13214,290,140,0.43,25.94
+2024-04-18,Marketing,Intern,Singapore,13652,223,383,0.09,18.67
+2024-09-20,Engineering,Part-Time,Austin,8229,154,76,0.42,28.34
+2024-12-05,Engineering,Full-Time,Austin,4306,143,165,0.11,17.69
+2025-04-09,Operations,Part-Time,Austin,5413,291,322,0.42,10.84
+2024-01-21,Finance,Intern,London,5285,497,96,0.1,20.56

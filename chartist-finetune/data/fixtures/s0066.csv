@@ -1,241 +1,241 @@
-enrollment_date,academic_department,course_level,semester_term,enrolled_student_count,average_final_score,credit_hours_earned,passing_student_count
-2024-08-16,Biology,Intermediate,Fall,56,88.97,0.62,131
-2024-07-21,Biology,Intermediate,Winter,139,22.08,3.77,208
-2025-02-10,English_Literature,Graduate_Seminar,Winter,120,31.4,3.0,323
-2025-02-20,Biology,Advanced,Spring,15,38.28,5.69,257
-2024-09-11,Economics,Intermediate,Summer,273,76.67,3.91,131
-2024-12-28,Computer_Science,Intermediate,Fall,298,1.3,5.52,234
-2025-02-04,Mathematics,Graduate_Seminar,Fall,187,18.7,3.3,250
-2025-01-17,Economics,Intermediate,Winter,237,78.21,5.24,115
-2024-04-03,Mathematics,Graduate_Seminar,Winter,189,77.51,2.24,206
-2024-08-22,Chemistry,Introductory,Summer,98,33.48,4.21,51
-2025-03-21,Chemistry,Graduate_Seminar,Spring,225,16.18,5.79,151
-2025-06-22,Chemistry,Introductory,Fall,229,21.47,0.52,87
-2025-01-16,English_Literature,Intermediate,Fall,155,51.72,3.37,193
-2025-06-22,History,Advanced,Winter,161,67.74,5.83,147
-2024-06-07,Economics,Intermediate,Summer,139,77.67,5.96,105
-2025-05-26,Chemistry,Intermediate,Summer,238,1.81,2.89,88
-2025-04-05,English_Literature,Advanced,Winter,288,43.59,2.92,69
-2024-04-13,Chemistry,Intermediate,Spring,71,86.93,1.16,61
-2024-04-04,Computer_Science,Advanced,Fall,317,66.3,5.15,108
-2025-01-05,Biology,Graduate_Seminar,Winter,93,94.55,2.16,204
-2025-02-19,Economics,Graduate_Seminar,Spring,169,84.57,3.67,191
-2024-12-26,History,Advanced,Spring,320,64.51,1.16,121
-2024-11-08,Computer_Science,Advanced,Spring,2,30.93,1.69,233
-2024-11-22,Computer_Science,Introductory,Fall,229,34.63,3.99,196
-2024-11-23,Computer_Science,Intermediate,Spring,74,89.03,3.71,165
-2024-11-05,Economics,Graduate_Seminar,Fall,252,56.35,3.56,26
-2024-03-31,English_Literature,Graduate_Seminar,Winter,250,30.22,4.98,228
-2024-12-20,Biology,Advanced,Fall,81,4.35,2.48,146
-2025-06-18,Mathematics,Graduate_Seminar,Summer,295,42.61,2.59,8
-2024-05-09,Economics,Advanced,Summer,21,21.5,5.63,128
-2025-01-23,History,Introductory,Fall,167,99.74,1.77,13
-2024-09-08,Computer_Science,Advanced,Fall,318,26.7,0.74,6
-2024-06-14,Chemistry,Advanced,Winter,31,62.87,0.84,27
-2024-02-12,Chemistry,Intermediate,Winter,290,87.08,4.16,188
-2024-02-13,Economics,Graduate_Seminar,Winter,224,31.48,0.08,187
-2025-03-29,Mathematics,Introductory,Fall,236,63.18,4.59,58
-2025-05-19,Mathematics,Graduate_Seminar,Summer,292,95.34,4.67,89
-2024-01-11,History,Advanced,Fall,160,1.12,2.42,92
-2024-12-25,Mathematics,Introductory,Winter,89,55.13,3.24,4
-2024-01-13,Biology,Introductory,Summer,321,36.22,3.88,181
-2025-01-12,Chemistry,Graduate_Seminar,Fall,316,17.26,1.82,250
-2025-05-20,Chemistry,Intermediate,Fall,88,83.21,3.63,88
-2025-02-15,Computer_Science,Advanced,Fall,182,95.36,5.68,79
-2025-06-07,Mathematics,Advanced,Fall,306,98.1,1.55,186
-2024-05-10,History,Introductory,Fall,155,97.1,2.86,139
-2025-04-08,Economics,Intermediate,Fall,107,75.34,3.51,95
-2024-02-18,History,Introductory,Fall,327,80.54,0.21,59
-2025-01-07,Economics,Advanced,Winter,132,23.86,4.15,149
-2025-01-21,History,Introductory,Summer,105,74.46,1.23,331
-2024-03-25,Economics,Intermediate,Winter,316,99.79,1.41,71
-2025-05-29,English_Literature,Introductory,Spring,128,56.86,2.3,253
-2025-05-05,English_Literature,Graduate_Seminar,Fall,184,27.3,5.47,9
-2024-06-08,Economics,Intermediate,Winter,326,76.15,5.66,194
-2024-09-29,Biology,Intermediate,Summer,337,72.2,3.97,68
-2024-03-12,History,Graduate_Seminar,Summer,60,52.03,2.75,120
-2025-01-13,Biology,Advanced,Summer,242,19.06,4.25,6
-2024-07-03,Economics,Advanced,Spring,18,91.8,1.47,294
-2024-01-13,History,Graduate_Seminar,Winter,230,74.66,1.34,127
-2025-04-08,Computer_Science,Graduate_Seminar,Fall,311,52.61,3.86,64
-2024-03-04,Computer_Science,Intermediate,Fall,186,78.61,2.27,93
-2024-07-08,Computer_Science,Graduate_Seminar,Fall,133,35.54,4.29,298
-2025-01-10,Mathematics,Advanced,Winter,167,39.33,1.94,50
-2024-08-12,Chemistry,Graduate_Seminar,Winter,219,97.39,1.5,111
-2025-05-27,History,Advanced,Winter,207,65.69,5.7,195
-2024-08-07,Chemistry,Graduate_Seminar,Winter,5,73.15,0.53,33
-2024-05-11,Chemistry,Graduate_Seminar,Summer,193,29.39,4.47,239
-2025-06-23,English_Literature,Introductory,Winter,105,91.34,4.86,106
-2024-04-14,Chemistry,Intermediate,Fall,180,86.63,0.31,225
-2024-04-23,Chemistry,Intermediate,Fall,124,80.41,2.95,205
-2024-05-27,Economics,Graduate_Seminar,Winter,23,45.35,0.27,223
-2024-02-05,Computer_Science,Advanced,Spring,301,22.16,2.04,210
-2024-11-01,Computer_Science,Graduate_Seminar,Spring,207,65.27,4.8,19
-2024-07-05,Biology,Introductory,Winter,287,45.5,2.58,41
-2024-04-10,Mathematics,Intermediate,Summer,11,34.08,3.09,38
-2024-03-14,Mathematics,Advanced,Summer,182,50.02,1.37,162
-2024-02-15,History,Introductory,Spring,217,71.12,2.73,15
-2024-03-07,History,Graduate_Seminar,Spring,241,27.09,4.15,232
-2024-10-14,Economics,Intermediate,Spring,303,26.84,1.54,77
-2024-05-14,Economics,Advanced,Fall,276,96.7,3.6,32
-2024-12-04,Economics,Advanced,Summer,116,80.25,5.65,279
-2024-02-04,History,Graduate_Seminar,Summer,176,42.47,1.69,106
-2024-10-01,Mathematics,Intermediate,Summer,287,59.17,3.95,212
-2025-04-09,Chemistry,Intermediate,Summer,239,77.48,4.73,316
-2025-04-28,English_Literature,Intermediate,Fall,96,25.56,0.5,287
-2024-01-24,Biology,Introductory,Spring,274,95.77,1.28,225
-2024-05-22,Biology,Advanced,Fall,264,10.14,2.52,301
-2025-04-15,Economics,Advanced,Winter,151,62.49,4.72,232
-2024-09-15,Computer_Science,Introductory,Spring,161,85.56,2.9,113
-2024-05-05,Computer_Science,Graduate_Seminar,Fall,240,63.51,4.77,321
-2024-12-07,Economics,Graduate_Seminar,Spring,132,5.14,3.46,184
-2024-09-01,Computer_Science,Advanced,Spring,94,88.89,0.96,157
-2025-03-30,Chemistry,Graduate_Seminar,Summer,116,88.77,0.3,156
-2024-12-22,Chemistry,Advanced,Summer,121,19.47,0.36,265
-2025-06-10,Mathematics,Graduate_Seminar,Fall,272,14.26,3.11,168
-2024-03-02,Computer_Science,Graduate_Seminar,Spring,206,47.31,5.49,11
-2024-11-25,Biology,Graduate_Seminar,Spring,279,61.84,0.28,53
-2024-10-11,Biology,Intermediate,Summer,29,47.59,0.88,31
-2025-02-17,Biology,Advanced,Fall,202,36.59,5.17,12
-2025-01-02,Mathematics,Advanced,Winter,56,67.91,2.08,256
-2024-12-15,Biology,Graduate_Seminar,Summer,299,11.41,0.01,52
-2024-04-21,English_Literature,Introductory,Fall,245,69.48,2.26,187
-2024-03-01,Biology,Graduate_Seminar,Fall,21,63.94,3.46,345
-2025-04-04,Mathematics,Intermediate,Summer,126,13.46,1.59,286
-2025-03-15,Biology,Graduate_Seminar,Spring,41,24.53,5.98,195
-2024-07-07,Chemistry,Introductory,Spring,180,8.84,5.11,83
-2024-03-11,Computer_Science,Intermediate,Summer,51,65.01,4.81,250
-2025-04-10,Economics,Introductory,Fall,31,8.61,3.59,210
-2024-11-24,Biology,Intermediate,Winter,4,63.49,3.0,120
-2025-01-10,History,Graduate_Seminar,Fall,167,98.14,5.44,162
-2024-07-16,Biology,Intermediate,Spring,275,70.15,0.41,277
-2025-02-11,Computer_Science,Introductory,Summer,150,47.35,2.43,66
-2025-04-26,Chemistry,Graduate_Seminar,Summer,54,30.95,4.05,33
-2024-02-27,English_Literature,Advanced,Winter,78,33.94,1.36,20
-2025-06-17,Mathematics,Advanced,Winter,348,12.86,3.22,307
-2025-01-03,History,Graduate_Seminar,Winter,31,66.17,5.89,255
-2024-05-27,Economics,Intermediate,Summer,45,39.02,3.69,204
-2024-04-05,History,Introductory,Winter,46,75.36,2.83,8
-2025-05-15,History,Intermediate,Winter,258,23.97,5.74,241
-2024-04-30,Economics,Advanced,Summer,1,10.69,5.43,49
-2025-05-09,Chemistry,Intermediate,Summer,20,59.3,1.62,62
-2024-12-31,English_Literature,Intermediate,Fall,304,76.58,2.64,259
-2024-05-03,Chemistry,Intermediate,Fall,91,81.94,0.63,5
-2024-01-25,Biology,Intermediate,Summer,314,15.83,2.29,184
-2024-09-11,Mathematics,Intermediate,Fall,173,49.88,0.58,17
-2024-06-13,English_Literature,Graduate_Seminar,Spring,16,96.24,5.28,156
-2025-03-03,Computer_Science,Introductory,Fall,235,40.7,5.09,10
-2025-04-16,History,Advanced,Summer,342,9.98,4.23,219
-2025-06-05,Mathematics,Advanced,Summer,25,18.98,0.99,316
-2025-03-23,Chemistry,Graduate_Seminar,Fall,219,47.68,0.77,92
-2024-06-03,History,Graduate_Seminar,Fall,224,73.11,1.14,36
-2025-06-21,Chemistry,Introductory,Spring,152,22.91,0.1,211
-2025-06-10,Economics,Graduate_Seminar,Fall,38,20.59,5.48,112
-2024-08-08,Chemistry,Intermediate,Summer,287,59.92,3.47,27
-2025-01-21,Computer_Science,Graduate_Seminar,Summer,215,60.87,2.95,1
-2024-09-23,History,Introductory,Winter,300,4.52,4.65,330
-2024-07-25,Mathematics,Intermediate,Winter,127,61.42,2.21,336
-2025-01-14,Biology,Intermediate,Winter,54,99.98,2.66,263
-2024-01-17,English_Literature,Advanced,Winter,300,23.62,1.69,233
-2024-07-05,Mathematics,Introductory,Winter,349,11.04,3.47,51
-2024-05-14,English_Literature,Intermediate,Summer,285,99.18,0.35,205
-2025-02-16,English_Literature,Introductory,Winter,313,80.85,1.78,9
-2024-01-08,Mathematics,Introductory,Winter,219,5.45,5.21,162
-2024-04-17,English_Literature,Advanced,Winter,163,65.73,4.92,160
-2024-02-28,Chemistry,Intermediate,Summer,71,96.71,2.62,320
-2024-03-18,Chemistry,Advanced,Fall,333,65.38,5.02,174
-2024-08-09,Economics,Graduate_Seminar,Fall,80,68.69,2.54,221
-2024-12-28,Biology,Advanced,Spring,317,89.05,5.34,337
-2025-02-26,Computer_Science,Advanced,Winter,87,14.09,0.77,213
-2024-12-10,Biology,Intermediate,Fall,75,15.15,5.09,287
-2025-04-03,Biology,Intermediate,Spring,298,63.55,1.63,309
-2025-04-18,Chemistry,Advanced,Fall,332,32.02,5.73,317
-2025-02-04,Economics,Intermediate,Winter,121,57.42,4.44,219
-2024-09-07,Biology,Introductory,Summer,105,88.12,3.57,148
-2024-02-13,Biology,Advanced,Summer,73,56.63,5.19,163
-2025-03-22,Computer_Science,Introductory,Winter,248,82.09,2.81,104
-2025-01-19,Biology,Introductory,Spring,104,80.08,3.31,346
-2024-02-01,Economics,Advanced,Winter,178,83.27,2.72,287
-2025-02-21,English_Literature,Introductory,Fall,50,21.92,1.47,302
-2024-08-28,Chemistry,Introductory,Winter,98,32.84,4.81,127
-2024-11-13,Chemistry,Advanced,Fall,206,89.63,5.5,114
-2025-02-01,Computer_Science,Intermediate,Winter,325,43.87,3.71,54
-2024-05-28,Economics,Advanced,Summer,154,23.25,1.42,182
-2024-09-14,Biology,Graduate_Seminar,Spring,295,18.54,5.15,281
-2025-05-20,English_Literature,Introductory,Winter,307,65.29,1.63,237
-2025-04-11,Mathematics,Advanced,Spring,124,22.51,5.72,45
-2025-03-09,Mathematics,Advanced,Winter,113,32.13,2.98,54
-2024-07-18,Chemistry,Graduate_Seminar,Winter,139,48.76,4.14,127
-2024-06-01,Chemistry,Intermediate,Winter,126,92.03,4.55,173
-2025-01-28,Computer_Science,Graduate_Seminar,Summer,140,46.23,3.61,238
-2025-04-02,Chemistry,Advanced,Spring,154,53.35,1.0,41
-2024-01-12,Mathematics,Introductory,Spring,264,46.22,5.18,196
-2024-06-04,Biology,Advanced,Winter,323,0.28,2.81,32
-2024-07-19,English_Literature,Intermediate,Winter,326,4.69,3.66,16
-2024-01-11,Biology,Graduate_Seminar,Spring,158,60.15,0.71,283
-2024-02-15,Chemistry,Introductory,Summer,262,53.49,3.71,3
-2024-08-06,Computer_Science,Advanced,Winter,147,51.75,3.68,97
-2025-03-18,Chemistry,Advanced,Spring,186,5.53,5.95,58
-2024-06-23,History,Introductory,Spring,296,64.02,0.63,79
-2024-11-17,Chemistry,Introductory,Winter,77,65.19,3.71,340
-2024-05-29,Computer_Science,Intermediate,Summer,87,8.07,4.37,48
-2024-02-01,Economics,Intermediate,Summer,334,85.11,2.73,280
-2024-07-31,English_Literature,Advanced,Summer,315,56.27,1.74,298
-2025-03-28,English_Literature,Intermediate,Fall,331,51.61,4.34,163
-2025-01-24,Mathematics,Graduate_Seminar,Spring,323,15.76,1.32,224
-2024-02-08,Mathematics,Advanced,Spring,59,92.93,1.98,268
-2025-01-13,Biology,Advanced,Spring,279,57.21,2.03,98
-2025-04-04,English_Literature,Intermediate,Fall,328,38.7,5.8,263
-2024-01-02,History,Intermediate,Spring,276,61.76,5.65,159
-2024-12-25,Economics,Introductory,Spring,234,60.56,5.37,69
-2025-03-09,English_Literature,Graduate_Seminar,Fall,166,48.96,3.21,303
-2024-03-19,Mathematics,Introductory,Fall,248,52.19,3.08,145
-2024-06-02,Computer_Science,Advanced,Spring,82,57.97,4.07,15
-2025-04-15,History,Advanced,Winter,269,83.57,2.78,253
-2025-05-21,English_Literature,Graduate_Seminar,Winter,41,40.99,5.87,317
-2024-09-01,Biology,Advanced,Spring,27,39.94,0.23,311
-2025-01-14,Economics,Introductory,Fall,287,45.54,2.96,295
-2024-11-06,Computer_Science,Advanced,Summer,52,16.15,2.84,334
-2024-02-09,History,Introductory,Winter,321,88.69,2.96,302
-2024-03-22,Economics,Introductory,Fall,40,78.29,1.85,176
-2025-02-08,Biology,Advanced,Summer,45,18.22,4.81,219
-2024-12-12,Mathematics,Advanced,Winter,212,74.15,0.66,148
-2025-02-09,History,Introductory,Winter,128,29.68,5.99,280
-2025-04-27,Biology,Intermediate,Summer,142,71.48,5.51,21
-2024-10-06,Biology,Advanced,Fall,42,87.38,3.81,38
-2024-01-20,Chemistry,Intermediate,Summer,38,9.63,1.1,256
-2024-02-08,English_Literature,Introductory,Spring,60,64.65,2.92,292
-2025-01-19,English_Literature,Intermediate,Summer,117,98.85,3.91,256
-2024-11-08,Economics,Advanced,Summer,287,23.96,1.08,92
-2025-01-04,History,Advanced,Fall,329,92.26,2.23,101
-2025-05-29,Chemistry,Advanced,Spring,71,88.41,1.04,79
-2024-09-15,Economics,Introductory,Fall,136,76.6,3.06,59
-2025-03-19,Economics,Graduate_Seminar,Spring,225,29.54,0.61,35
-2025-03-15,Mathematics,Graduate_Seminar,Summer,339,70.21,2.12,212
-2025-02-15,Mathematics,Intermediate,Spring,72,21.25,1.69,166
-2024-04-18,Computer_Science,Introductory,Summer,335,43.41,5.83,288
-2024-04-04,Chemistry,Advanced,Fall,22,62.8,4.15,268
-2024-03-20,Mathematics,Graduate_Seminar,Summer,316,62.78,0.24,42
-2025-05-28,Mathematics,Introductory,Summer,320,48.77,5.37,97
-2025-03-06,Computer_Science,Graduate_Seminar,Winter,51,89.8,2.94,91
-2025-03-09,History,Intermediate,Spring,44,21.58,1.69,181
-2024-09-20,English_Literature,Graduate_Seminar,Fall,169,77.4,0.5,134
-2024-03-26,English_Literature,Graduate_Seminar,Spring,56,79.42,2.45,286
-2025-06-22,History,Graduate_Seminar,Fall,114,0.87,4.78,54
-2024-09-19,Mathematics,Intermediate,Summer,19,38.72,3.91,136
-2025-04-18,Economics,Graduate_Seminar,Fall,115,15.77,5.27,203
-2024-11-23,History,Intermediate,Spring,12,55.49,5.4,92
-2025-03-13,Biology,Introductory,Winter,298,31.51,4.63,16
-2025-02-05,Computer_Science,Intermediate,Summer,73,24.33,1.42,55
-2024-12-09,Chemistry,Intermediate,Summer,106,46.59,0.51,71
-2025-06-06,History,Introductory,Spring,115,52.28,0.92,128
-2024-12-07,Computer_Science,Advanced,Fall,267,96.43,1.66,268
-2024-05-18,Biology,Intermediate,Winter,208,7.73,0.45,8
-2024-07-03,Mathematics,Graduate_Seminar,Fall,314,49.57,2.66,187
-2024-09-06,Mathematics,Advanced,Summer,95,37.15,0.09,112
-2024-07-27,Economics,Advanced,Winter,234,1.15,1.02,312
-2024-12-07,History,Graduate_Seminar,Fall,96,69.37,5.85,230
-2024-02-22,Mathematics,Introductory,Summer,139,66.54,0.44,292
-2024-06-29,English_Literature,Introductory,Summer,31,45.49,2.01,103
-2024-05-08,History,Advanced,Winter,294,43.24,4.89,292
-2024-03-31,History,Advanced,Spring,110,18.16,3.76,157
+billDate,utilityType,customerSegment,serviceRegion,kilowattHoursUsed,billedAmount,lateFeeAmount,accountCount
+2024-01-03,Water,Small Business,Northern,196841.88,35170.06,356.96,8742
+2025-04-07,District Heating,Industrial,Central,159298.15,25457.73,423.9,10221
+2025-05-31,Sewer,Small Business,Western,91073.3,58068.46,196.86,5458
+2024-12-07,Natural Gas,Commercial,Western,74792.33,29162.33,355.91,4503
+2024-03-26,Trash,Industrial,Northern,74832.11,37389.54,112.32,9465
+2024-03-04,Natural Gas,Commercial,Western,230069.0,72870.18,391.68,10995
+2024-01-21,Natural Gas,Industrial,Northern,51872.04,63625.06,144.22,8694
+2024-07-08,Sewer,Municipal,Eastern,96842.67,58896.1,414.76,3329
+2025-04-12,Sewer,Commercial,Eastern,137177.63,55954.46,401.92,7532
+2024-05-09,Natural Gas,Small Business,Central,216790.84,40566.47,234.26,1546
+2025-03-21,Electricity,Municipal,Central,243903.16,21625.39,409.22,7385
+2024-02-10,Sewer,Small Business,Northern,47515.12,35963.83,48.06,2360
+2024-02-01,Water,Residential,Western,157411.94,30115.97,297.66,10361
+2024-09-14,District Heating,Commercial,Western,244758.8,38950.51,138.4,11262
+2024-03-21,Electricity,Commercial,Eastern,205125.82,2470.46,497.87,565
+2025-04-27,Water,Industrial,Western,90485.21,66677.49,409.27,3517
+2024-06-11,Sewer,Residential,Northern,5757.58,49574.26,97.39,456
+2024-08-26,Sewer,Small Business,Southern,48092.39,50838.75,56.23,4828
+2024-01-17,Trash,Industrial,Western,124288.31,34662.87,324.94,5153
+2024-11-29,Trash,Industrial,Southern,203614.79,40398.06,301.44,9184
+2025-01-15,Water,Small Business,Southern,117778.55,37495.89,150.75,5607
+2024-10-14,District Heating,Municipal,Western,12389.46,36961.6,347.5,2587
+2024-07-28,District Heating,Residential,Western,480.3,23956.6,93.72,7079
+2024-10-26,District Heating,Commercial,Northern,241903.55,70502.49,138.34,2525
+2024-06-21,Trash,Residential,Western,56809.1,227.22,39.59,9369
+2024-08-09,Water,Industrial,Central,53061.57,4431.18,197.12,8239
+2024-08-19,Trash,Municipal,Western,140377.65,53229.36,372.6,3281
+2024-03-07,Natural Gas,Residential,Northern,249071.76,35369.2,21.93,7483
+2024-10-10,Sewer,Residential,Western,178770.89,74774.8,379.33,11313
+2025-06-23,Natural Gas,Commercial,Western,194109.62,19556.22,7.99,8175
+2025-06-02,Electricity,Industrial,Eastern,31279.31,39666.98,283.12,7352
+2024-04-11,Natural Gas,Commercial,Northern,147126.92,49906.5,348.73,3793
+2024-01-18,Water,Municipal,Central,146889.28,18333.53,163.69,9982
+2024-07-05,Water,Small Business,Northern,74425.04,16839.42,262.08,5013
+2025-02-26,Natural Gas,Commercial,Eastern,20297.77,57749.44,159.31,8238
+2024-04-30,District Heating,Commercial,Northern,153371.35,14137.55,369.43,3778
+2024-01-15,District Heating,Small Business,Southern,165597.17,61962.67,152.36,5530
+2025-01-17,Electricity,Small Business,Southern,30354.37,59163.67,449.54,3370
+2025-02-01,Sewer,Commercial,Northern,206388.08,63825.13,24.73,11319
+2025-04-03,District Heating,Residential,Eastern,75870.3,47946.48,489.78,5352
+2024-06-25,Sewer,Municipal,Central,172529.18,45489.28,64.16,4177
+2024-02-08,Natural Gas,Small Business,Eastern,120619.49,55348.62,384.4,9467
+2024-07-10,Electricity,Small Business,Western,50438.02,60350.16,205.8,5840
+2024-11-20,Natural Gas,Commercial,Central,119146.87,18138.1,44.1,2352
+2024-06-17,Electricity,Municipal,Central,71914.9,50969.25,90.15,80
+2024-02-25,Water,Municipal,Eastern,41870.79,45206.39,128.08,1943
+2024-06-21,Natural Gas,Industrial,Eastern,200974.4,50766.84,228.84,1889
+2025-05-02,Water,Industrial,Southern,108114.81,61204.03,422.63,6943
+2025-01-28,Trash,Industrial,Southern,236589.3,5339.08,64.59,6784
+2024-07-18,Natural Gas,Municipal,Northern,151444.21,52351.03,133.19,9512
+2024-11-24,Natural Gas,Commercial,Central,230549.31,39263.78,121.91,6679
+2025-02-10,Sewer,Municipal,Northern,201557.15,9564.4,134.7,10155
+2024-02-23,District Heating,Industrial,Southern,141319.5,696.02,331.51,7333
+2024-12-11,Water,Residential,Northern,116085.91,54511.06,396.45,9558
+2024-10-12,Natural Gas,Commercial,Central,198859.34,24414.13,187.33,817
+2025-04-24,Sewer,Municipal,Central,227284.16,5865.39,354.25,682
+2025-06-01,Natural Gas,Small Business,Western,158749.35,12344.57,303.34,323
+2024-10-13,Sewer,Commercial,Central,88988.01,15277.18,310.48,1510
+2024-05-24,Trash,Industrial,Northern,159328.47,53407.67,90.61,9408
+2024-06-09,District Heating,Residential,Southern,66697.0,7328.95,108.19,11932
+2025-02-28,Natural Gas,Industrial,Central,224376.39,39813.03,101.76,2457
+2025-03-17,District Heating,Small Business,Western,181229.25,66743.47,421.14,4309
+2024-02-19,Natural Gas,Residential,Eastern,161430.31,45752.19,149.86,11762
+2024-07-08,Water,Municipal,Western,106235.58,42498.25,396.13,11858
+2025-01-09,Sewer,Municipal,Eastern,149557.69,11859.95,218.32,9758
+2024-07-16,District Heating,Residential,Northern,88515.27,7583.0,96.39,4470
+2025-06-23,District Heating,Municipal,Southern,129569.16,2393.83,136.95,3055
+2024-03-20,Natural Gas,Municipal,Eastern,72102.08,39480.34,8.7,3869
+2024-08-04,Trash,Municipal,Northern,212963.24,65760.91,200.21,8765
+2024-05-03,District Heating,Industrial,Western,112765.08,69888.99,30.76,9202
+2025-02-12,Trash,Municipal,Northern,82952.69,17013.53,459.22,7073
+2024-07-12,Water,Small Business,Central,243013.29,716.35,317.77,8294
+2024-11-07,Natural Gas,Commercial,Northern,116435.54,28784.42,219.22,9240
+2025-05-19,Natural Gas,Residential,Western,107709.74,56810.29,388.58,1946
+2025-02-25,Water,Commercial,Eastern,174262.83,17222.14,111.56,2350
+2025-05-20,Water,Municipal,Eastern,84559.76,72095.38,482.55,6009
+2024-09-29,Trash,Commercial,Western,95296.51,2101.12,198.78,477
+2024-07-12,Water,Small Business,Southern,145259.23,10899.54,446.72,10548
+2025-05-11,Sewer,Municipal,Western,2810.06,24649.14,101.25,4716
+2024-03-01,District Heating,Commercial,Northern,70032.52,72633.0,475.71,8865
+2025-02-12,Trash,Municipal,Central,106501.66,53855.28,263.89,5450
+2024-05-19,Electricity,Residential,Northern,90889.94,58797.88,124.0,2384
+2024-11-13,Natural Gas,Municipal,Eastern,4189.3,70788.86,231.51,6729
+2024-12-02,Water,Municipal,Southern,70545.12,59194.02,250.42,5409
+2024-11-28,Natural Gas,Municipal,Northern,171606.79,9617.28,20.11,10703
+2024-02-05,Natural Gas,Municipal,Central,146164.81,40556.05,0.86,7659
+2024-01-10,Natural Gas,Small Business,Western,151236.74,66822.46,282.59,7947
+2024-10-18,District Heating,Industrial,Western,41076.46,67753.69,319.76,6919
+2024-08-08,Trash,Municipal,Western,41538.78,2909.41,301.43,9908
+2024-08-28,Electricity,Commercial,Western,42872.84,68577.17,2.32,11919
+2024-05-29,Electricity,Commercial,Western,21359.01,36800.67,460.89,6121
+2024-11-15,Sewer,Industrial,Southern,230689.44,49655.77,230.3,5926
+2024-10-08,Natural Gas,Industrial,Western,148147.54,37103.18,338.48,9789
+2024-03-09,Trash,Residential,Southern,182001.43,48464.76,274.31,4785
+2024-05-21,Natural Gas,Industrial,Western,160844.58,10016.02,6.5,6229
+2025-05-21,District Heating,Small Business,Western,135698.43,35178.91,43.92,11361
+2024-05-07,District Heating,Industrial,Central,5722.79,34250.62,447.67,10528
+2025-05-11,Sewer,Commercial,Southern,232270.7,20061.15,445.29,5323
+2025-05-10,Sewer,Commercial,Western,77513.0,4727.87,19.66,6489
+2024-03-06,Trash,Residential,Southern,100508.62,54592.85,89.21,5629
+2024-11-02,Trash,Municipal,Southern,61836.31,42647.81,153.65,2122
+2025-05-15,Sewer,Small Business,Eastern,193888.07,4215.18,195.06,11192
+2024-07-31,Water,Residential,Southern,81332.02,32912.86,487.2,550
+2024-08-18,Sewer,Municipal,Eastern,19365.82,72111.61,28.63,9861
+2025-06-14,District Heating,Residential,Western,134942.21,49894.54,274.6,8026
+2024-02-22,Natural Gas,Municipal,Northern,239992.63,52985.45,87.34,5327
+2024-11-04,Electricity,Commercial,Southern,57026.31,52756.92,229.5,1303
+2025-03-21,Sewer,Municipal,Central,225583.68,33298.03,251.72,5159
+2024-03-05,Natural Gas,Industrial,Southern,33007.41,34428.78,196.99,2139
+2024-12-27,Water,Industrial,Southern,134735.07,74340.5,355.2,47
+2024-10-01,Sewer,Commercial,Northern,69063.57,64140.73,328.01,6421
+2024-06-04,Trash,Small Business,Northern,66764.38,23163.07,244.74,3110
+2025-06-23,District Heating,Commercial,Southern,93885.8,67221.47,314.14,2809
+2024-02-16,Natural Gas,Municipal,Northern,9558.42,49838.84,245.58,807
+2025-04-02,Water,Industrial,Eastern,45313.66,2419.91,358.61,2994
+2024-07-18,District Heating,Industrial,Western,199061.19,16650.32,286.95,10213
+2025-04-21,Electricity,Small Business,Western,171388.93,44324.2,328.16,9209
+2024-03-04,Water,Municipal,Southern,123295.41,40484.93,257.08,1925
+2024-07-12,District Heating,Industrial,Central,47997.77,39941.14,276.35,7904
+2025-01-05,Electricity,Industrial,Southern,77309.68,42262.47,312.8,3979
+2025-06-16,Trash,Industrial,Eastern,161374.7,21101.59,487.28,10307
+2024-12-08,Electricity,Residential,Central,122666.44,1073.78,178.09,4502
+2024-05-07,Sewer,Industrial,Eastern,32791.91,70583.12,182.84,913
+2024-10-29,District Heating,Municipal,Southern,88637.24,48911.81,129.27,2342
+2025-02-24,Electricity,Residential,Central,43615.59,3264.22,114.46,1777
+2024-06-16,District Heating,Commercial,Eastern,13792.35,6937.24,463.11,2528
+2024-02-13,Natural Gas,Industrial,Eastern,22547.3,29325.38,161.59,9166
+2024-06-15,Sewer,Small Business,Western,53557.05,42514.1,104.55,7041
+2024-02-19,Sewer,Municipal,Southern,56718.38,10631.81,401.16,6575
+2024-07-05,Electricity,Municipal,Western,69808.01,61310.4,335.46,2060
+2025-02-10,Electricity,Industrial,Eastern,10080.59,47853.55,479.41,7473
+2024-05-22,Sewer,Small Business,Southern,142686.54,11606.53,57.09,1053
+2024-11-18,Natural Gas,Small Business,Western,157258.81,4533.42,493.24,1797
+2024-02-21,Sewer,Small Business,Northern,137800.21,66170.09,351.27,8382
+2024-04-29,Sewer,Industrial,Southern,218329.44,34881.3,50.61,5338
+2024-08-19,District Heating,Commercial,Southern,186565.46,53842.18,440.52,11908
+2024-09-01,Sewer,Small Business,Southern,168079.14,37431.77,112.86,8974
+2024-01-18,District Heating,Small Business,Western,188000.14,65326.71,455.95,4992
+2024-03-02,Natural Gas,Small Business,Eastern,128463.77,71079.07,332.34,470
+2024-09-12,Electricity,Industrial,Northern,140405.3,54677.76,307.07,9492
+2025-05-26,Natural Gas,Residential,Southern,127102.8,27067.35,136.0,10587
+2024-07-24,Water,Residential,Southern,145264.18,22274.52,486.09,1171
+2024-09-11,District Heating,Industrial,Western,183582.25,17663.1,9.18,11594
+2025-03-19,Sewer,Residential,Eastern,173934.17,32168.51,368.89,11500
+2025-05-09,Sewer,Small Business,Southern,3597.63,70795.93,463.19,3756
+2025-05-16,Water,Commercial,Western,217585.19,5372.63,72.25,10930
+2024-10-05,Sewer,Industrial,Northern,52390.32,56462.62,1.57,8243
+2024-12-17,Water,Municipal,Southern,211472.46,31276.97,483.02,8227
+2024-02-14,Water,Municipal,Western,215835.67,36182.81,37.98,6757
+2024-10-08,Water,Industrial,Eastern,218347.61,4428.73,173.13,10267
+2024-08-09,Water,Commercial,Southern,34436.22,13369.61,456.31,8956
+2024-02-11,Natural Gas,Small Business,Eastern,43142.36,22044.94,429.46,6706
+2024-01-23,Water,Small Business,Northern,209199.24,9682.76,62.87,1270
+2024-09-17,Natural Gas,Industrial,Western,149993.43,29825.7,232.87,9616
+2024-10-29,Electricity,Small Business,Central,102866.59,55698.62,380.88,3371
+2024-05-11,District Heating,Municipal,Western,230706.78,46266.3,133.04,7599
+2025-03-16,Natural Gas,Commercial,Eastern,206059.6,10539.08,0.18,1802
+2024-02-29,Sewer,Municipal,Central,91666.8,64909.76,439.69,11632
+2024-04-10,District Heating,Small Business,Southern,38009.35,42630.45,357.76,8060
+2024-11-24,Natural Gas,Industrial,Western,97364.62,3700.62,264.85,621
+2024-08-21,Natural Gas,Industrial,Central,188802.35,37340.23,122.07,11346
+2024-06-14,Natural Gas,Residential,Central,35108.44,49310.35,219.71,2820
+2024-05-28,District Heating,Industrial,Northern,77406.34,24556.48,14.4,2379
+2025-05-16,Sewer,Commercial,Eastern,96168.94,41479.23,106.83,2790
+2025-05-08,Sewer,Small Business,Eastern,536.32,48533.63,49.56,7825
+2024-02-05,Electricity,Industrial,Southern,98483.5,21801.48,136.05,6464
+2025-01-07,Natural Gas,Small Business,Northern,116081.7,73703.96,422.45,9686
+2024-11-05,District Heating,Residential,Western,57551.94,28412.89,110.93,1002
+2025-02-28,Natural Gas,Residential,Southern,149764.53,1115.13,497.68,659
+2024-12-29,Sewer,Small Business,Southern,40350.64,21804.55,261.82,6246
+2025-03-16,Water,Industrial,Central,105992.17,67720.81,33.49,2379
+2024-11-29,Natural Gas,Residential,Southern,160775.76,17115.41,190.78,6665
+2025-02-14,District Heating,Industrial,Central,161268.62,22040.03,489.1,4608
+2025-05-21,Electricity,Residential,Northern,247891.42,65146.9,145.25,6943
+2024-07-26,Trash,Commercial,Eastern,197461.24,5078.48,306.73,2063
+2025-06-20,District Heating,Small Business,Central,119461.76,71771.22,398.08,10292
+2025-05-28,Trash,Industrial,Northern,146710.06,4101.5,263.69,3238
+2024-06-20,District Heating,Commercial,Central,110612.5,10916.57,185.28,6325
+2025-04-23,Electricity,Commercial,Northern,195998.84,28221.93,20.68,6338
+2024-03-30,Sewer,Municipal,Eastern,8010.17,50538.14,373.23,8629
+2024-08-22,Electricity,Municipal,Central,238171.14,73409.33,1.3,3608
+2024-12-08,Electricity,Municipal,Eastern,198014.56,12320.81,270.63,5587
+2024-05-18,Trash,Small Business,Central,171451.95,29612.12,305.06,3625
+2024-10-25,Electricity,Industrial,Southern,211264.27,46046.52,284.23,6035
+2024-06-07,Natural Gas,Small Business,Central,224239.86,57034.75,316.9,8283
+2024-10-10,Water,Industrial,Eastern,28752.29,72966.21,358.09,5843
+2024-02-05,Water,Industrial,Southern,103355.33,23267.59,375.09,5945
+2025-01-26,Water,Municipal,Northern,102659.78,50944.89,187.97,7393
+2024-12-28,Water,Residential,Northern,48479.98,30711.84,410.52,1939
+2024-04-25,Natural Gas,Commercial,Northern,211862.36,61386.26,175.83,2402
+2024-04-16,Electricity,Small Business,Western,234737.1,30213.34,18.59,8344
+2024-08-07,Trash,Commercial,Central,44338.7,54188.94,95.24,7978
+2025-01-25,District Heating,Residential,Central,74864.5,20248.38,15.47,7986
+2024-10-17,Electricity,Small Business,Southern,43705.47,24213.32,186.46,2183
+2025-05-24,District Heating,Small Business,Central,132086.47,33027.23,307.89,7316
+2024-11-04,District Heating,Residential,Western,17411.76,19712.15,314.59,305
+2024-02-14,Sewer,Commercial,Western,110270.39,21492.8,91.43,628
+2025-04-23,Trash,Small Business,Central,121875.98,724.4,301.83,6364
+2024-07-19,Natural Gas,Small Business,Southern,195624.65,11671.23,67.21,8439
+2025-02-08,Trash,Industrial,Western,187839.04,24301.26,130.31,9478
+2025-05-05,Natural Gas,Commercial,Eastern,51073.15,44718.01,254.43,6790
+2024-05-19,Sewer,Commercial,Western,12059.44,62663.4,269.26,10242
+2024-02-15,District Heating,Municipal,Northern,215651.13,35383.5,208.34,5832
+2024-10-13,Electricity,Commercial,Central,201966.14,52977.95,212.56,7768
+2025-03-18,Electricity,Industrial,Western,214873.84,34379.75,30.18,5049
+2025-01-20,Water,Commercial,Central,160874.06,67931.67,413.95,228
+2024-05-17,District Heating,Municipal,Western,127438.65,30487.76,273.96,10610
+2025-06-03,Natural Gas,Industrial,Northern,110858.11,74949.65,150.78,5033
+2024-05-11,Water,Small Business,Western,159272.33,45128.11,299.94,8810
+2025-02-18,District Heating,Industrial,Eastern,29515.59,54682.93,64.49,9882
+2024-01-23,Electricity,Municipal,Central,130083.99,48941.6,131.23,1597
+2024-12-23,Natural Gas,Industrial,Central,82976.79,67958.0,266.57,6236
+2024-07-09,Electricity,Commercial,Central,66844.82,39672.61,225.12,525
+2025-04-01,Trash,Industrial,Northern,94838.14,10980.79,234.04,4142
+2024-06-20,Trash,Municipal,Southern,19185.17,16404.34,281.55,1573
+2024-04-11,Sewer,Small Business,Western,225607.0,65119.3,380.51,11198
+2024-09-11,Water,Small Business,Central,99447.18,64097.45,294.42,5282
+2024-09-27,Sewer,Industrial,Central,26227.13,2379.58,434.88,8741
+2024-06-09,Trash,Small Business,Western,185119.52,59405.99,352.78,64
+2024-01-25,District Heating,Industrial,Eastern,231538.58,32632.47,337.98,7753
+2024-11-05,Natural Gas,Industrial,Central,74190.44,49319.27,293.61,7885
+2024-12-11,Water,Municipal,Southern,91115.2,15881.26,231.49,8933
+2024-03-10,District Heating,Residential,Northern,121581.11,64402.15,258.05,9523
+2024-08-29,Electricity,Residential,Eastern,17866.03,53024.68,112.0,8056
+2024-01-07,District Heating,Residential,Eastern,52027.63,56094.35,259.59,1364
+2024-03-30,Electricity,Residential,Western,202388.59,43338.86,230.54,10077
+2024-04-30,Sewer,Commercial,Western,57180.33,43707.13,143.88,6263
+2024-10-26,Trash,Commercial,Eastern,140616.99,1728.16,13.77,1413
+2024-10-18,Sewer,Industrial,Eastern,232762.56,45804.74,179.22,3720
+2024-08-18,Electricity,Residential,Northern,62959.98,33217.32,140.95,9720
+2024-07-26,Water,Industrial,Northern,227262.31,30621.42,72.6,10768
+2024-08-29,Electricity,Industrial,Southern,32808.81,38030.11,348.26,5225
+2024-06-22,Electricity,Industrial,Central,217928.23,57979.12,229.58,9206
+2024-12-11,Water,Small Business,Southern,125193.06,70772.58,494.22,4641
+2024-06-18,Trash,Municipal,Central,196531.98,40337.65,230.88,10895
+2024-05-29,Natural Gas,Industrial,Southern,128099.41,35295.01,319.99,6818
+2024-03-17,Sewer,Residential,Western,209294.8,2602.55,49.06,4200
+2024-11-08,Sewer,Small Business,Eastern,74207.84,72393.04,328.94,5730
+2024-02-01,Natural Gas,Small Business,Central,244861.54,53122.15,294.91,9871
+2025-02-07,District Heating,Commercial,Northern,76013.03,30087.22,88.83,4756

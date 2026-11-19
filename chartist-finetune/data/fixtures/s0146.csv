@@ -1,241 +1,241 @@
-shipDate,carrierName,transportMode,originRegion,shipmentWeightKg,transitDays,freightCost
-2025-05-29,Yellow Corporation,Less-Than-Truckload,Midwest,16096.35,19,1465.78
-2024-05-16,Saia,Less-Than-Truckload,Midwest,16069.26,1,6370.86
-2024-09-11,Saia,Intermodal Rail,West Coast,19146.89,15,17176.25
-2024-10-11,UPS Freight,Full Truckload,Southeast,16206.78,21,7895.23
-2024-10-12,XPO Logistics,Air Freight,Northeast,4593.6,20,14233.99
-2025-02-14,Yellow Corporation,Air Freight,Southeast,20556.56,19,17189.51
-2024-07-28,UPS Freight,Ocean Container,Southeast,14661.27,8,6229.54
-2024-12-08,Old Dominion,Full Truckload,Northeast,22434.83,13,8956.4
-2024-12-15,XPO Logistics,Air Freight,Pacific Northwest,16029.44,15,9121.36
-2024-04-20,J.B. Hunt,Intermodal Rail,West Coast,10426.14,12,160.51
-2024-01-11,UPS Freight,Full Truckload,Southeast,17172.27,5,1815.21
-2024-01-25,Estes Express,Air Freight,Southwest,10750.28,19,18325.45
-2025-04-25,Estes Express,Ocean Container,Midwest,21391.87,7,947.58
-2024-10-09,Estes Express,Less-Than-Truckload,Northeast,4277.4,14,4132.47
-2024-09-16,Saia,Less-Than-Truckload,Pacific Northwest,20063.44,8,7095.75
-2024-04-18,UPS Freight,Full Truckload,Pacific Northwest,2375.45,5,6297.62
-2024-05-05,UPS Freight,Full Truckload,Northeast,16986.65,11,5758.6
-2024-11-15,Saia,Intermodal Rail,Midwest,19136.11,15,10408.72
-2024-06-06,UPS Freight,Full Truckload,Southeast,14155.15,4,13242.27
-2024-01-21,Saia,Ocean Container,West Coast,4648.66,17,17402.18
-2024-11-27,UPS Freight,Intermodal Rail,Midwest,9560.21,1,12191.01
-2025-03-12,Yellow Corporation,Intermodal Rail,Pacific Northwest,16120.53,12,18444.38
-2024-02-29,UPS Freight,Full Truckload,Northeast,7798.6,16,8072.57
-2024-07-22,FedEx Freight,Ocean Container,Southwest,22294.11,17,9833.06
-2024-04-22,Saia,Full Truckload,Midwest,8304.55,5,366.35
-2024-06-18,Estes Express,Less-Than-Truckload,Midwest,15171.6,19,6196.17
-2024-10-02,XPO Logistics,Intermodal Rail,Southwest,18180.48,2,4566.54
-2024-12-23,Estes Express,Full Truckload,Northeast,2578.49,6,5888.99
-2024-08-14,Saia,Air Freight,Southwest,22880.41,2,11999.28
-2025-05-06,Old Dominion,Air Freight,Southwest,12606.98,18,2474.51
-2024-10-15,J.B. Hunt,Less-Than-Truckload,West Coast,6346.11,7,5490.37
-2024-04-23,Yellow Corporation,Intermodal Rail,Midwest,12444.47,5,17206.81
-2025-03-13,UPS Freight,Less-Than-Truckload,Midwest,21864.93,16,16471.11
-2024-10-21,Old Dominion,Air Freight,Pacific Northwest,5327.69,16,2992.05
-2025-05-30,XPO Logistics,Air Freight,Southwest,21973.45,14,7788.83
-2025-05-14,Estes Express,Air Freight,Southwest,9528.03,13,2959.88
-2024-07-04,UPS Freight,Ocean Container,Midwest,1144.56,20,11921.89
-2024-05-31,J.B. Hunt,Air Freight,West Coast,19288.15,7,8573.08
-2025-05-31,FedEx Freight,Intermodal Rail,Pacific Northwest,5395.08,15,7490.94
-2024-03-27,Saia,Air Freight,West Coast,14228.21,17,12167.18
-2024-01-03,J.B. Hunt,Full Truckload,Northeast,10443.11,17,17083.93
-2024-07-04,J.B. Hunt,Intermodal Rail,Pacific Northwest,3700.22,14,1290.56
-2024-04-15,Yellow Corporation,Intermodal Rail,West Coast,18857.04,15,3766.13
-2024-04-19,Estes Express,Air Freight,Southwest,18034.12,6,8859.53
-2025-05-19,Saia,Full Truckload,Southwest,7927.37,7,10850.9
-2025-01-06,Estes Express,Air Freight,Midwest,6297.45,12,4691.56
-2024-05-13,Estes Express,Less-Than-Truckload,Northeast,19812.36,4,15760.38
-2024-08-07,XPO Logistics,Full Truckload,Southwest,40.73,14,4480.68
-2024-04-14,XPO Logistics,Less-Than-Truckload,Southwest,20583.97,11,9050.76
-2025-06-04,FedEx Freight,Ocean Container,Northeast,2047.65,7,15932.2
-2024-01-18,Estes Express,Intermodal Rail,Pacific Northwest,7071.62,18,15145.76
-2024-10-13,Yellow Corporation,Intermodal Rail,Southwest,1212.9,3,7852.16
-2024-10-22,Saia,Full Truckload,Southwest,17981.78,18,1588.58
-2024-06-24,XPO Logistics,Less-Than-Truckload,Southwest,8407.35,12,1291.77
-2024-01-06,UPS Freight,Ocean Container,West Coast,12418.74,15,16872.94
-2025-02-23,Old Dominion,Less-Than-Truckload,Northeast,1045.99,20,16064.31
-2025-01-21,Estes Express,Air Freight,Pacific Northwest,4596.7,15,17088.07
-2025-05-27,Estes Express,Intermodal Rail,West Coast,18249.96,5,764.02
-2025-05-21,Old Dominion,Full Truckload,West Coast,2545.76,10,13544.02
-2024-09-29,J.B. Hunt,Intermodal Rail,Pacific Northwest,3193.85,21,2625.19
-2025-03-02,Saia,Intermodal Rail,Northeast,9504.13,7,17931.58
-2024-08-28,Estes Express,Full Truckload,West Coast,17895.21,3,2922.93
-2024-01-24,Old Dominion,Intermodal Rail,Northeast,23993.94,17,14817.1
-2024-12-05,Estes Express,Intermodal Rail,Southeast,6857.89,13,11476.01
-2024-04-08,Estes Express,Ocean Container,Southwest,15990.34,2,13391.76
-2024-10-07,FedEx Freight,Full Truckload,West Coast,23262.41,20,11597.67
-2025-05-17,Saia,Intermodal Rail,Northeast,22268.48,1,10084.96
-2024-11-14,UPS Freight,Ocean Container,Southeast,6606.08,10,5166.6
-2024-04-23,FedEx Freight,Air Freight,Northeast,4723.99,20,6858.25
-2024-03-18,UPS Freight,Ocean Container,Southwest,23692.31,6,12791.34
-2025-06-18,Saia,Intermodal Rail,Southwest,18050.83,18,7896.51
-2025-02-20,J.B. Hunt,Air Freight,Southwest,13890.21,12,11023.03
-2024-11-15,FedEx Freight,Ocean Container,Northeast,2174.04,4,14980.3
-2024-11-27,Old Dominion,Less-Than-Truckload,Southeast,13958.13,10,8787.38
-2024-11-22,UPS Freight,Intermodal Rail,Southwest,1742.58,14,10453.68
-2025-05-27,XPO Logistics,Full Truckload,Southwest,16377.64,15,6169.78
-2024-02-13,Saia,Air Freight,Southeast,17169.64,16,8582.5
-2025-04-23,Saia,Intermodal Rail,West Coast,6662.02,2,11757.78
-2025-02-28,Yellow Corporation,Air Freight,Pacific Northwest,1244.77,4,1711.98
-2024-04-17,UPS Freight,Intermodal Rail,Midwest,3560.66,14,17729.96
-2024-12-02,Estes Express,Full Truckload,Midwest,894.63,19,14895.75
-2025-05-28,Old Dominion,Air Freight,Pacific Northwest,22153.34,11,2034.01
-2024-06-26,J.B. Hunt,Air Freight,Southeast,30.4,20,10357.82
-2024-04-02,UPS Freight,Ocean Container,Southwest,22473.22,15,13723.33
-2025-02-20,FedEx Freight,Less-Than-Truckload,West Coast,5393.0,5,7512.77
-2024-11-27,UPS Freight,Less-Than-Truckload,Pacific Northwest,5214.83,10,304.48
-2025-04-02,Old Dominion,Full Truckload,Northeast,4665.64,13,2345.72
-2025-02-26,Saia,Ocean Container,Southwest,998.2,7,9297.98
-2025-01-26,UPS Freight,Intermodal Rail,Southwest,1336.2,2,13043.52
-2024-08-24,FedEx Freight,Full Truckload,Midwest,21240.73,8,3375.79
-2024-09-30,Old Dominion,Intermodal Rail,Southeast,5240.33,8,9338.36
-2025-04-19,J.B. Hunt,Less-Than-Truckload,West Coast,7159.4,15,18224.11
-2024-03-25,J.B. Hunt,Intermodal Rail,Northeast,10809.57,17,5062.91
-2024-10-29,Yellow Corporation,Intermodal Rail,Midwest,13964.56,13,16873.61
-2025-06-22,Saia,Full Truckload,Northeast,17232.58,18,11323.17
-2024-04-28,Old Dominion,Ocean Container,Northeast,19014.4,10,10558.41
-2025-06-14,Estes Express,Less-Than-Truckload,Pacific Northwest,3219.46,10,4933.4
-2024-01-24,XPO Logistics,Full Truckload,Pacific Northwest,1969.74,17,13085.06
-2024-08-01,Saia,Full Truckload,Southwest,6914.56,18,13127.88
-2025-03-30,XPO Logistics,Full Truckload,Pacific Northwest,6159.6,2,9901.21
-2025-01-09,XPO Logistics,Air Freight,Southwest,17835.23,13,6482.89
-2024-10-09,UPS Freight,Ocean Container,Midwest,23663.12,11,14575.29
-2025-03-25,Yellow Corporation,Air Freight,Midwest,22920.04,20,12351.53
-2025-06-05,UPS Freight,Air Freight,Southeast,4000.44,12,1337.36
-2024-09-07,J.B. Hunt,Full Truckload,Pacific Northwest,3215.68,16,4384.2
-2024-07-19,J.B. Hunt,Ocean Container,Midwest,12656.27,19,2389.69
-2024-01-28,FedEx Freight,Less-Than-Truckload,West Coast,17553.5,4,11718.99
-2025-01-11,Old Dominion,Intermodal Rail,Southeast,19324.4,8,17242.25
-2024-08-11,XPO Logistics,Full Truckload,Northeast,3044.42,18,4365.65
-2025-01-02,Estes Express,Less-Than-Truckload,Midwest,3644.4,4,152.0
-2025-03-22,Estes Express,Less-Than-Truckload,Southwest,18473.91,12,14825.14
-2024-02-04,UPS Freight,Less-Than-Truckload,Northeast,12598.52,17,13743.83
-2025-02-22,FedEx Freight,Intermodal Rail,West Coast,17379.28,12,10139.35
-2024-09-17,Saia,Intermodal Rail,Midwest,1971.67,18,8142.79
-2025-03-25,Old Dominion,Intermodal Rail,Southwest,20435.77,11,8791.82
-2025-04-02,Estes Express,Full Truckload,West Coast,7012.22,8,11006.42
-2024-06-15,Estes Express,Less-Than-Truckload,Northeast,9699.95,7,567.1
-2024-05-09,Old Dominion,Intermodal Rail,Midwest,6568.19,7,15122.16
-2024-07-25,Yellow Corporation,Air Freight,Midwest,17893.8,18,5744.85
-2024-12-02,FedEx Freight,Ocean Container,Southeast,12430.04,11,12796.63
-2024-09-17,Old Dominion,Less-Than-Truckload,Pacific Northwest,2093.99,17,14163.81
-2025-01-23,XPO Logistics,Full Truckload,Midwest,5557.24,20,17633.96
-2024-05-29,Old Dominion,Intermodal Rail,Southwest,3085.77,18,10611.85
-2024-01-12,FedEx Freight,Intermodal Rail,Midwest,3006.91,14,17383.49
-2024-07-27,Saia,Air Freight,West Coast,5293.62,12,1846.86
-2024-11-13,Estes Express,Intermodal Rail,Pacific Northwest,11607.6,6,16213.37
-2024-03-03,J.B. Hunt,Full Truckload,Northeast,11450.93,8,4390.33
-2024-01-02,J.B. Hunt,Ocean Container,Southwest,1422.12,8,10706.43
-2024-06-15,Yellow Corporation,Air Freight,Pacific Northwest,17991.49,12,13860.89
-2024-07-22,UPS Freight,Ocean Container,Midwest,6730.84,5,14828.73
-2025-04-10,J.B. Hunt,Ocean Container,Southeast,4160.78,8,13247.41
-2024-03-22,XPO Logistics,Less-Than-Truckload,Northeast,8965.71,6,9524.25
-2024-03-07,J.B. Hunt,Full Truckload,Midwest,4474.12,3,3508.43
-2025-01-09,Saia,Intermodal Rail,Southeast,15185.24,8,13718.36
-2024-09-16,Yellow Corporation,Ocean Container,Southwest,1258.0,8,6085.81
-2024-01-06,Yellow Corporation,Ocean Container,Northeast,22282.05,3,1260.27
-2024-12-06,J.B. Hunt,Full Truckload,Southwest,9939.13,6,7967.78
-2025-06-17,Old Dominion,Ocean Container,Pacific Northwest,10962.51,10,14404.61
-2024-05-18,Old Dominion,Intermodal Rail,Pacific Northwest,488.32,17,9913.27
-2024-06-08,UPS Freight,Intermodal Rail,Pacific Northwest,17007.11,13,4017.79
-2024-08-06,Yellow Corporation,Air Freight,Northeast,5121.0,3,539.61
-2025-05-26,XPO Logistics,Intermodal Rail,Northeast,18455.54,9,9495.22
-2024-07-25,FedEx Freight,Air Freight,Pacific Northwest,5453.16,20,12297.43
-2024-03-28,Saia,Less-Than-Truckload,Northeast,17391.05,11,16434.81
-2024-04-29,FedEx Freight,Air Freight,Southwest,6628.4,2,17007.94
-2024-04-16,J.B. Hunt,Full Truckload,Northeast,9889.77,8,18063.56
-2024-07-22,Saia,Intermodal Rail,Northeast,21248.51,8,10894.83
-2024-02-19,Old Dominion,Less-Than-Truckload,Southwest,15221.58,21,16326.43
-2024-11-15,Yellow Corporation,Ocean Container,Southwest,11610.94,14,15055.56
-2024-04-11,Yellow Corporation,Full Truckload,West Coast,1592.79,13,3684.19
-2024-04-12,FedEx Freight,Full Truckload,Midwest,2574.36,7,4364.2
-2024-01-17,Estes Express,Ocean Container,West Coast,6989.49,13,15002.49
-2024-06-14,UPS Freight,Intermodal Rail,Southwest,14921.38,19,10894.62
-2024-08-25,Old Dominion,Air Freight,Southwest,22549.17,4,9102.63
-2025-03-16,Yellow Corporation,Less-Than-Truckload,West Coast,12886.66,15,10374.08
-2024-06-13,XPO Logistics,Ocean Container,West Coast,22059.35,9,13986.42
-2024-08-04,J.B. Hunt,Full Truckload,Pacific Northwest,13455.98,6,2721.07
-2025-06-01,Estes Express,Air Freight,Southwest,14845.48,13,2199.94
-2024-11-06,J.B. Hunt,Less-Than-Truckload,Northeast,9474.98,5,4874.2
-2025-03-02,Estes Express,Intermodal Rail,Midwest,3331.57,5,11479.04
-2024-10-13,Yellow Corporation,Air Freight,Northeast,7649.42,10,494.65
-2024-07-05,Old Dominion,Intermodal Rail,West Coast,15696.76,4,17891.15
-2024-12-16,UPS Freight,Full Truckload,Southwest,1787.55,6,1841.13
-2024-06-01,XPO Logistics,Ocean Container,Pacific Northwest,20534.59,9,3731.52
-2024-07-15,UPS Freight,Full Truckload,Southeast,17542.25,2,13629.06
-2024-09-03,J.B. Hunt,Full Truckload,West Coast,20087.3,8,16831.33
-2024-05-13,Estes Express,Intermodal Rail,Southwest,11479.02,5,8310.86
-2025-05-04,Saia,Air Freight,Southwest,7779.19,15,369.11
-2024-12-24,UPS Freight,Ocean Container,Southeast,18226.07,16,5136.76
-2024-02-19,XPO Logistics,Full Truckload,Northeast,20454.99,14,18185.74
-2025-01-14,Saia,Air Freight,Northeast,20054.58,21,1132.71
-2024-12-30,Saia,Less-Than-Truckload,Midwest,1851.72,13,18378.13
-2025-06-16,XPO Logistics,Full Truckload,Southeast,11464.31,2,3833.25
-2024-05-29,UPS Freight,Ocean Container,Southwest,15953.2,18,13184.44
-2024-05-09,XPO Logistics,Full Truckload,Northeast,18982.89,11,16529.29
-2025-04-26,UPS Freight,Less-Than-Truckload,West Coast,20891.02,2,3013.02
-2025-03-05,UPS Freight,Intermodal Rail,Southeast,12207.24,15,1292.31
-2024-07-25,Yellow Corporation,Full Truckload,Southwest,10028.07,17,12565.12
-2025-06-12,FedEx Freight,Intermodal Rail,Southeast,20462.81,6,3350.96
-2024-02-26,Estes Express,Full Truckload,Northeast,20436.72,5,13949.58
-2025-06-22,Estes Express,Less-Than-Truckload,Pacific Northwest,21797.54,9,7292.47
-2024-02-01,Estes Express,Ocean Container,West Coast,20733.08,7,8979.22
-2024-09-17,Yellow Corporation,Less-Than-Truckload,Midwest,8163.3,15,15383.03
-2024-03-28,Yellow Corporation,Full Truckload,Pacific Northwest,17686.22,10,16901.58
-2025-01-26,FedEx Freight,Air Freight,Midwest,9633.82,5,16254.18
-2025-06-01,Saia,Air Freight,Pacific Northwest,16263.79,7,13314.23
-2024-01-28,XPO Logistics,Less-Than-Truckload,Northeast,11368.44,15,6906.27
-2025-03-21,FedEx Freight,Intermodal Rail,Midwest,18980.18,7,5091.91
-2025-04-08,FedEx Freight,Less-Than-Truckload,Midwest,23168.36,17,8025.42
-2024-01-26,Estes Express,Air Freight,Southeast,3343.96,16,14130.29
-2024-03-07,J.B. Hunt,Intermodal Rail,Southeast,2451.52,13,7548.43
-2025-02-27,FedEx Freight,Less-Than-Truckload,Pacific Northwest,10763.71,5,1920.05
-2024-08-19,Yellow Corporation,Full Truckload,West Coast,9851.97,10,2157.86
-2024-01-20,FedEx Freight,Full Truckload,Midwest,13795.64,10,16377.49
-2024-02-13,UPS Freight,Full Truckload,Pacific Northwest,10372.06,18,10641.63
-2024-05-24,Yellow Corporation,Ocean Container,Midwest,21412.38,11,341.69
-2025-05-02,J.B. Hunt,Full Truckload,Midwest,12579.36,16,8968.81
-2024-08-13,FedEx Freight,Full Truckload,Southwest,10329.93,16,6581.98
-2024-02-26,UPS Freight,Less-Than-Truckload,Northeast,17416.08,13,626.69
-2024-02-09,FedEx Freight,Intermodal Rail,Southeast,21997.12,17,949.11
-2025-02-09,Estes Express,Full Truckload,West Coast,3366.99,12,14569.94
-2024-09-08,Yellow Corporation,Intermodal Rail,Midwest,17500.04,7,1695.37
-2024-05-01,Estes Express,Full Truckload,Southwest,3347.56,15,8927.51
-2024-07-08,FedEx Freight,Ocean Container,West Coast,10240.44,16,12479.89
-2024-03-16,Saia,Less-Than-Truckload,Midwest,15282.71,13,13823.53
-2024-02-24,Saia,Ocean Container,Northeast,21674.15,11,5221.43
-2025-05-13,FedEx Freight,Less-Than-Truckload,Pacific Northwest,8910.51,17,7997.46
-2024-10-26,Estes Express,Less-Than-Truckload,West Coast,4460.62,16,6601.88
-2024-10-17,Yellow Corporation,Full Truckload,West Coast,14340.6,4,16181.71
-2024-10-20,Estes Express,Full Truckload,West Coast,20857.63,11,13620.71
-2024-01-11,Yellow Corporation,Less-Than-Truckload,Pacific Northwest,4658.74,15,486.28
-2024-04-30,Old Dominion,Intermodal Rail,West Coast,758.9,8,8316.45
-2024-08-29,J.B. Hunt,Ocean Container,Midwest,13716.21,17,7366.17
-2024-01-10,XPO Logistics,Intermodal Rail,Southeast,8650.17,11,7939.28
-2024-12-18,Old Dominion,Less-Than-Truckload,Southwest,20445.98,16,6037.07
-2025-04-20,UPS Freight,Air Freight,Southwest,21445.26,3,1303.1
-2024-08-12,XPO Logistics,Less-Than-Truckload,Southwest,21688.3,11,13343.04
-2024-01-28,Estes Express,Full Truckload,Southwest,22790.72,17,6581.01
-2024-12-19,Estes Express,Ocean Container,Southwest,10371.65,19,17930.72
-2024-10-22,FedEx Freight,Intermodal Rail,Pacific Northwest,15957.21,15,11973.01
-2025-02-18,J.B. Hunt,Intermodal Rail,Southwest,6548.82,16,10092.5
-2024-04-24,Saia,Full Truckload,Northeast,10021.9,17,1135.44
-2024-03-23,XPO Logistics,Ocean Container,West Coast,7483.02,16,4053.41
-2024-06-23,UPS Freight,Less-Than-Truckload,Northeast,14611.85,8,5321.42
-2025-03-30,FedEx Freight,Intermodal Rail,West Coast,11045.44,3,3760.34
-2025-04-21,UPS Freight,Full Truckload,Southeast,2346.39,6,2289.96
-2024-09-13,XPO Logistics,Intermodal Rail,Southwest,6510.51,2,13385.24
-2024-09-27,Estes Express,Ocean Container,Northeast,1666.94,20,12688.85
-2024-02-20,UPS Freight,Less-Than-Truckload,West Coast,1875.38,16,13530.53
-2024-10-03,J.B. Hunt,Air Freight,Northeast,1171.52,8,5506.03
-2024-11-08,Estes Express,Full Truckload,Pacific Northwest,848.13,20,13846.84
-2025-05-29,Estes Express,Intermodal Rail,Pacific Northwest,9749.11,2,17285.6
-2025-01-18,Yellow Corporation,Full Truckload,West Coast,9770.87,4,2390.96
-2024-02-16,Saia,Ocean Container,Pacific Northwest,1730.27,9,15904.91
-2024-09-22,UPS Freight,Air Freight,West Coast,21272.81,21,16925.5
-2025-01-10,XPO Logistics,Air Freight,West Coast,19129.91,6,17788.39
-2024-07-26,J.B. Hunt,Less-Than-Truckload,Pacific Northwest,20319.54,9,10242.26
-2024-07-01,Saia,Ocean Container,Northeast,8674.75,2,10458.77
-2024-01-16,UPS Freight,Air Freight,Southwest,4048.23,7,10271.53
-2025-05-11,XPO Logistics,Less-Than-Truckload,Southwest,2872.47,11,7149.88
+throughput_record_date,throughput_terminal_name,throughput_cargo_type,throughput_vessel_class,throughput_container_count,throughput_tonnage,throughput_dwell_hours
+2024-08-18,Pier C Bulk,Containerized,Handysize,4834,67469.65,147.57
+2024-02-21,Multipurpose Quay,Containerized,Panamax,3171,121035.51,112.22
+2025-05-05,Pier D Ro-Ro,Liquid Bulk,Panamax,1944,74089.08,163.94
+2025-01-23,Pier D Ro-Ro,Vehicles,Feeder,4071,149311.78,70.25
+2025-04-23,Multipurpose Quay,Break Bulk,Post-Panamax,3894,127574.36,145.75
+2025-03-28,Pier A North,Refrigerated,Feeder,2357,33714.68,17.19
+2025-01-20,Pier A North,Break Bulk,Ro-Ro Carrier,4470,127055.36,65.35
+2024-11-26,Pier B Container,Refrigerated,Feeder,4292,91943.19,161.4
+2024-12-22,Pier C Bulk,Break Bulk,Post-Panamax,3670,42204.18,3.65
+2025-01-25,East Liquids Berth,Vehicles,Capesize,1807,35754.83,219.03
+2025-03-01,Pier D Ro-Ro,Containerized,Ro-Ro Carrier,2060,116994.8,25.71
+2024-08-22,Pier A North,Liquid Bulk,Feeder,4227,35930.22,178.35
+2024-12-12,Pier C Bulk,Dry Bulk,Feeder,2793,108532.63,127.62
+2025-01-03,Multipurpose Quay,Containerized,Handysize,808,91154.43,99.36
+2024-05-22,Pier A North,Break Bulk,Panamax,3158,55215.4,183.99
+2024-06-07,Pier A North,Break Bulk,Post-Panamax,926,4697.54,121.04
+2024-09-08,Pier A North,Vehicles,Panamax,575,34053.05,238.1
+2024-12-15,East Liquids Berth,Break Bulk,Capesize,3432,134442.68,47.61
+2025-03-18,Multipurpose Quay,Refrigerated,Handysize,100,22657.23,166.88
+2024-11-17,Pier D Ro-Ro,Containerized,Post-Panamax,3743,81029.85,116.49
+2024-02-03,Pier C Bulk,Break Bulk,Capesize,3242,106466.74,193.13
+2024-07-11,East Liquids Berth,Liquid Bulk,Handysize,2160,47125.79,81.74
+2024-10-07,Pier C Bulk,Liquid Bulk,Handysize,3446,15013.92,96.96
+2024-04-05,Multipurpose Quay,Dry Bulk,Handysize,2540,6011.41,174.74
+2024-03-04,Multipurpose Quay,Liquid Bulk,Panamax,2457,16198.38,134.52
+2024-12-05,Pier B Container,Refrigerated,Feeder,3735,51922.25,176.17
+2025-02-05,Multipurpose Quay,Dry Bulk,Handysize,392,41953.77,184.25
+2025-06-20,East Liquids Berth,Dry Bulk,Handysize,1367,101350.59,166.26
+2025-06-02,Pier A North,Liquid Bulk,Ro-Ro Carrier,191,43779.63,23.51
+2024-12-17,Pier A North,Containerized,Post-Panamax,3222,55758.99,121.2
+2025-03-18,Multipurpose Quay,Liquid Bulk,Post-Panamax,2642,100667.08,162.21
+2024-08-08,Pier A North,Break Bulk,Handysize,4058,1710.44,141.61
+2024-11-09,Pier A North,Vehicles,Capesize,1130,88450.08,172.8
+2024-05-09,Pier A North,Liquid Bulk,Capesize,3691,100518.43,128.75
+2025-01-09,Pier B Container,Dry Bulk,Panamax,2471,144050.36,172.11
+2024-01-03,Pier C Bulk,Vehicles,Feeder,1885,130064.4,31.22
+2025-05-02,Pier C Bulk,Containerized,Ro-Ro Carrier,2297,53189.33,12.29
+2024-05-24,Pier A North,Break Bulk,Handysize,4214,71548.94,46.16
+2024-03-14,Pier B Container,Containerized,Handysize,2594,122007.31,205.35
+2025-01-25,Pier B Container,Refrigerated,Handysize,4475,45891.74,113.31
+2024-04-17,East Liquids Berth,Dry Bulk,Post-Panamax,4347,48894.96,187.05
+2024-07-10,Pier D Ro-Ro,Break Bulk,Capesize,62,18090.65,143.11
+2025-05-17,East Liquids Berth,Break Bulk,Feeder,1981,96324.7,84.4
+2024-08-21,East Liquids Berth,Refrigerated,Feeder,3940,67185.17,95.49
+2024-05-29,Multipurpose Quay,Vehicles,Handysize,905,113875.63,148.14
+2025-03-11,Pier D Ro-Ro,Dry Bulk,Handysize,234,32073.24,63.36
+2025-01-29,Pier D Ro-Ro,Refrigerated,Capesize,363,121358.97,34.03
+2024-08-24,Pier D Ro-Ro,Break Bulk,Panamax,40,83728.58,68.87
+2025-04-04,Pier A North,Dry Bulk,Handysize,539,22450.44,59.73
+2024-11-24,Pier A North,Vehicles,Feeder,4933,46942.36,231.84
+2025-03-23,Pier A North,Vehicles,Feeder,4460,6945.47,51.01
+2025-01-19,East Liquids Berth,Dry Bulk,Post-Panamax,4598,85989.16,62.79
+2025-03-24,Pier B Container,Containerized,Feeder,4735,7048.56,43.48
+2024-09-12,Pier B Container,Containerized,Handysize,619,123025.51,48.02
+2025-03-17,Pier D Ro-Ro,Refrigerated,Post-Panamax,4483,127818.34,58.04
+2025-05-27,East Liquids Berth,Containerized,Feeder,3599,43576.79,166.3
+2024-02-25,Pier D Ro-Ro,Break Bulk,Handysize,1602,64353.38,39.35
+2025-03-11,Pier D Ro-Ro,Dry Bulk,Handysize,4836,55507.05,121.51
+2025-04-30,Pier C Bulk,Dry Bulk,Post-Panamax,4984,21380.38,65.78
+2024-02-23,Pier A North,Liquid Bulk,Post-Panamax,4029,29858.29,36.13
+2024-12-06,Pier B Container,Containerized,Handysize,1842,118455.81,152.71
+2025-06-08,Pier C Bulk,Break Bulk,Post-Panamax,2696,146240.23,102.34
+2024-02-19,Pier D Ro-Ro,Refrigerated,Handysize,879,97001.08,206.99
+2024-05-14,Multipurpose Quay,Containerized,Ro-Ro Carrier,793,139218.07,239.17
+2024-10-21,Pier B Container,Break Bulk,Ro-Ro Carrier,1190,70930.28,11.92
+2024-09-20,Multipurpose Quay,Dry Bulk,Post-Panamax,2210,83213.91,63.48
+2024-01-15,Multipurpose Quay,Refrigerated,Post-Panamax,1651,123548.31,64.09
+2024-04-19,East Liquids Berth,Dry Bulk,Capesize,4693,111303.39,217.17
+2025-01-17,Pier D Ro-Ro,Liquid Bulk,Handysize,2041,43248.37,83.06
+2024-06-15,Pier D Ro-Ro,Containerized,Post-Panamax,974,29338.71,165.89
+2024-10-29,East Liquids Berth,Containerized,Panamax,753,25654.24,91.42
+2025-02-15,Pier C Bulk,Refrigerated,Feeder,1909,15565.14,50.25
+2025-01-06,Pier C Bulk,Break Bulk,Feeder,1492,70768.82,168.99
+2024-11-20,Pier D Ro-Ro,Vehicles,Feeder,2723,6769.52,61.89
+2025-05-24,East Liquids Berth,Containerized,Panamax,3514,144425.25,202.79
+2024-01-30,Pier B Container,Refrigerated,Post-Panamax,491,70258.81,51.05
+2024-11-21,Pier A North,Liquid Bulk,Ro-Ro Carrier,3388,14889.14,84.15
+2024-06-06,Multipurpose Quay,Refrigerated,Post-Panamax,2724,118437.78,24.41
+2024-05-19,Multipurpose Quay,Refrigerated,Panamax,4228,118903.92,22.02
+2024-09-27,Pier D Ro-Ro,Refrigerated,Capesize,1957,82998.93,125.8
+2024-08-26,Multipurpose Quay,Dry Bulk,Feeder,2454,22092.93,24.75
+2024-03-04,Multipurpose Quay,Break Bulk,Feeder,3960,36030.78,183.18
+2024-11-01,East Liquids Berth,Containerized,Ro-Ro Carrier,689,9102.85,203.66
+2024-01-20,Multipurpose Quay,Refrigerated,Feeder,270,86128.62,191.16
+2024-05-05,Multipurpose Quay,Break Bulk,Post-Panamax,4949,10102.51,14.39
+2024-08-28,Pier A North,Dry Bulk,Capesize,2043,98697.35,21.96
+2024-01-21,Pier A North,Vehicles,Ro-Ro Carrier,2079,114288.0,237.96
+2025-04-06,East Liquids Berth,Break Bulk,Feeder,63,141923.52,193.45
+2024-08-23,East Liquids Berth,Refrigerated,Ro-Ro Carrier,1050,75518.47,196.41
+2025-01-08,Pier D Ro-Ro,Break Bulk,Ro-Ro Carrier,3883,55799.65,158.49
+2024-12-30,Pier A North,Liquid Bulk,Panamax,3885,51077.68,105.14
+2024-03-14,East Liquids Berth,Liquid Bulk,Post-Panamax,3091,5155.36,83.33
+2024-10-16,Multipurpose Quay,Liquid Bulk,Feeder,443,105157.25,205.87
+2024-09-16,East Liquids Berth,Refrigerated,Handysize,4950,24255.42,213.79
+2024-04-28,Pier C Bulk,Dry Bulk,Panamax,1994,25389.02,191.97
+2025-02-14,East Liquids Berth,Liquid Bulk,Handysize,3424,138579.32,52.65
+2025-02-11,Pier B Container,Vehicles,Feeder,2266,73635.28,163.57
+2024-11-22,East Liquids Berth,Vehicles,Handysize,2923,143809.23,164.98
+2025-03-17,Pier D Ro-Ro,Break Bulk,Handysize,2595,147659.43,49.42
+2025-05-11,Pier B Container,Break Bulk,Handysize,3682,99962.13,13.78
+2025-02-22,East Liquids Berth,Vehicles,Post-Panamax,2729,137266.72,109.08
+2024-09-07,East Liquids Berth,Refrigerated,Handysize,185,101854.97,180.41
+2025-02-12,Pier C Bulk,Vehicles,Ro-Ro Carrier,4890,38007.22,102.24
+2025-05-27,Pier B Container,Containerized,Panamax,2717,113730.01,164.94
+2024-03-21,Pier A North,Refrigerated,Ro-Ro Carrier,4193,64556.44,151.27
+2024-07-18,East Liquids Berth,Containerized,Capesize,71,23860.52,80.01
+2025-01-10,Pier D Ro-Ro,Liquid Bulk,Capesize,4626,16495.25,128.82
+2024-11-08,East Liquids Berth,Liquid Bulk,Feeder,143,119724.48,6.67
+2024-03-06,Pier C Bulk,Refrigerated,Post-Panamax,2285,110352.43,62.71
+2025-05-31,East Liquids Berth,Containerized,Capesize,601,32473.45,28.85
+2024-12-08,Pier C Bulk,Break Bulk,Handysize,993,38481.89,176.18
+2024-07-15,Pier B Container,Containerized,Capesize,195,15402.08,61.85
+2024-03-29,Pier B Container,Dry Bulk,Post-Panamax,3704,41367.83,194.49
+2024-05-23,East Liquids Berth,Refrigerated,Post-Panamax,1520,115449.22,179.23
+2025-01-17,Pier A North,Refrigerated,Capesize,1045,98660.36,97.07
+2025-06-22,East Liquids Berth,Dry Bulk,Feeder,1759,71453.74,75.5
+2024-08-16,Multipurpose Quay,Refrigerated,Capesize,1979,61656.82,63.41
+2024-12-02,East Liquids Berth,Liquid Bulk,Panamax,651,118477.25,113.0
+2024-07-30,Pier D Ro-Ro,Break Bulk,Handysize,1011,80447.39,73.26
+2024-07-07,Pier C Bulk,Liquid Bulk,Handysize,4362,132637.71,231.45
+2025-01-25,Pier B Container,Vehicles,Panamax,165,84572.73,123.3
+2025-03-21,East Liquids Berth,Vehicles,Panamax,4748,47361.5,226.5
+2025-03-11,East Liquids Berth,Break Bulk,Capesize,2281,24556.25,133.94
+2024-02-15,Pier C Bulk,Vehicles,Feeder,3821,147264.36,38.19
+2024-03-03,Multipurpose Quay,Containerized,Capesize,1637,112512.86,157.84
+2024-05-31,Pier C Bulk,Containerized,Post-Panamax,4869,82199.71,37.36
+2025-01-30,Pier D Ro-Ro,Refrigerated,Ro-Ro Carrier,1701,78362.49,79.34
+2025-02-25,East Liquids Berth,Containerized,Capesize,1867,76886.9,123.3
+2024-06-24,Pier D Ro-Ro,Containerized,Handysize,4502,6048.89,187.79
+2024-04-14,Multipurpose Quay,Dry Bulk,Handysize,4967,11777.96,202.37
+2024-01-18,Pier A North,Break Bulk,Feeder,1518,78746.55,110.31
+2024-01-02,East Liquids Berth,Refrigerated,Feeder,4960,71992.54,38.95
+2025-05-27,Pier D Ro-Ro,Break Bulk,Post-Panamax,349,44881.06,75.61
+2024-05-06,Multipurpose Quay,Break Bulk,Ro-Ro Carrier,1667,112446.91,227.83
+2025-05-24,Multipurpose Quay,Vehicles,Handysize,2165,114437.01,174.59
+2024-12-23,East Liquids Berth,Containerized,Capesize,4421,34790.2,19.53
+2024-09-28,Pier B Container,Liquid Bulk,Ro-Ro Carrier,1003,49323.64,147.76
+2024-06-04,Pier B Container,Containerized,Post-Panamax,1969,41166.54,105.35
+2024-01-01,Multipurpose Quay,Refrigerated,Capesize,2618,24008.04,84.66
+2024-06-14,Pier C Bulk,Liquid Bulk,Ro-Ro Carrier,4333,43728.3,59.17
+2024-06-15,Multipurpose Quay,Liquid Bulk,Ro-Ro Carrier,4089,121637.12,22.1
+2025-02-03,Pier A North,Refrigerated,Ro-Ro Carrier,1118,4842.35,91.42
+2024-05-29,Pier C Bulk,Break Bulk,Post-Panamax,4397,81282.35,218.97
+2024-12-21,Multipurpose Quay,Refrigerated,Ro-Ro Carrier,3149,16001.26,38.83
+2024-08-21,Pier A North,Refrigerated,Ro-Ro Carrier,3941,135502.36,30.01
+2025-06-05,Pier A North,Refrigerated,Feeder,465,27180.12,170.84
+2024-03-27,Pier C Bulk,Dry Bulk,Capesize,3659,46783.56,227.86
+2024-08-22,Pier B Container,Break Bulk,Post-Panamax,736,8065.21,214.62
+2025-04-03,Multipurpose Quay,Refrigerated,Capesize,2435,91793.49,8.7
+2024-07-20,East Liquids Berth,Break Bulk,Capesize,4908,97007.48,88.71
+2024-07-19,Pier B Container,Liquid Bulk,Post-Panamax,149,133211.18,39.17
+2025-03-29,East Liquids Berth,Dry Bulk,Handysize,3652,142970.84,214.05
+2024-06-12,Pier A North,Liquid Bulk,Post-Panamax,2752,34154.91,112.29
+2024-11-21,Pier C Bulk,Containerized,Feeder,4870,105042.17,87.62
+2024-09-25,Pier A North,Dry Bulk,Feeder,2090,37522.34,107.39
+2024-05-29,Pier C Bulk,Containerized,Panamax,4317,60413.8,127.86
+2024-06-30,Multipurpose Quay,Vehicles,Post-Panamax,4976,57172.85,39.72
+2024-11-13,Pier B Container,Dry Bulk,Feeder,1602,42601.29,234.67
+2024-03-27,Pier A North,Liquid Bulk,Handysize,2388,128344.68,72.95
+2024-08-22,Multipurpose Quay,Vehicles,Post-Panamax,1371,77197.76,68.41
+2025-05-02,Pier B Container,Containerized,Capesize,1595,5144.9,219.41
+2024-12-30,East Liquids Berth,Containerized,Handysize,4858,108628.52,183.9
+2025-05-29,Multipurpose Quay,Dry Bulk,Handysize,3766,125039.13,95.99
+2025-01-26,Pier B Container,Break Bulk,Handysize,3517,93377.79,29.23
+2024-11-13,East Liquids Berth,Vehicles,Post-Panamax,621,19239.11,76.1
+2024-08-31,Pier B Container,Vehicles,Post-Panamax,3996,7646.11,160.41
+2024-02-24,Pier B Container,Liquid Bulk,Post-Panamax,2748,115035.09,232.1
+2024-03-20,Pier C Bulk,Dry Bulk,Panamax,707,29239.41,119.23
+2025-01-25,Pier C Bulk,Liquid Bulk,Ro-Ro Carrier,1551,143292.52,63.42
+2024-01-25,Pier A North,Break Bulk,Handysize,768,55081.48,32.0
+2025-04-05,Multipurpose Quay,Break Bulk,Post-Panamax,4357,51236.4,113.28
+2024-08-11,Pier D Ro-Ro,Dry Bulk,Ro-Ro Carrier,3852,74688.53,126.98
+2024-06-09,Pier B Container,Liquid Bulk,Capesize,1596,119552.08,73.23
+2024-05-13,East Liquids Berth,Dry Bulk,Ro-Ro Carrier,2264,95319.91,206.66
+2024-07-26,Pier B Container,Dry Bulk,Handysize,1042,66712.37,140.94
+2024-11-08,East Liquids Berth,Refrigerated,Feeder,660,112074.88,67.27
+2024-03-23,Pier D Ro-Ro,Break Bulk,Ro-Ro Carrier,3723,6939.52,32.19
+2025-01-28,Pier B Container,Refrigerated,Post-Panamax,68,89091.89,64.6
+2024-08-09,East Liquids Berth,Dry Bulk,Post-Panamax,2072,4667.56,68.45
+2025-01-24,Pier A North,Break Bulk,Ro-Ro Carrier,4622,46132.0,161.22
+2025-04-13,Pier A North,Containerized,Handysize,1380,79696.04,95.8
+2024-01-21,Multipurpose Quay,Dry Bulk,Ro-Ro Carrier,1875,23154.85,182.44
+2024-09-15,Pier C Bulk,Liquid Bulk,Ro-Ro Carrier,4510,13431.24,117.39
+2024-05-29,Pier B Container,Containerized,Feeder,2249,104016.69,185.07
+2024-02-23,Pier C Bulk,Break Bulk,Post-Panamax,3599,72781.14,150.41
+2024-10-02,East Liquids Berth,Dry Bulk,Panamax,2560,1698.45,223.27
+2025-02-11,Pier D Ro-Ro,Break Bulk,Panamax,3161,84141.64,114.94
+2024-08-27,Pier B Container,Containerized,Handysize,3825,5430.89,102.52
+2024-09-23,Pier C Bulk,Vehicles,Handysize,4443,15062.63,230.89
+2025-03-30,Multipurpose Quay,Break Bulk,Capesize,3122,27969.3,209.56
+2024-01-26,Pier D Ro-Ro,Containerized,Feeder,4239,18521.58,168.25
+2024-06-28,Pier B Container,Liquid Bulk,Ro-Ro Carrier,1634,80103.48,227.23
+2025-06-02,Pier A North,Dry Bulk,Post-Panamax,3325,56858.47,161.48
+2025-05-17,Multipurpose Quay,Refrigerated,Capesize,2841,21229.68,116.56
+2025-05-22,Pier A North,Break Bulk,Panamax,1569,112661.94,10.07
+2024-11-04,Pier A North,Break Bulk,Handysize,1728,132234.88,28.39
+2024-03-11,Pier A North,Liquid Bulk,Handysize,3829,9627.42,8.52
+2024-12-21,Pier C Bulk,Refrigerated,Capesize,4037,10575.95,214.61
+2024-10-30,Pier B Container,Containerized,Feeder,4823,135922.87,163.36
+2024-02-01,Pier A North,Liquid Bulk,Capesize,1730,144418.73,65.37
+2024-05-31,Pier C Bulk,Containerized,Capesize,3111,83172.57,145.73
+2024-05-29,Multipurpose Quay,Dry Bulk,Capesize,3847,139553.42,184.08
+2024-11-09,Pier A North,Break Bulk,Feeder,1451,63121.54,86.17
+2024-11-15,Pier A North,Refrigerated,Handysize,1146,141505.1,27.37
+2024-09-05,Pier A North,Dry Bulk,Feeder,2525,93599.39,77.77
+2025-01-27,Pier A North,Dry Bulk,Handysize,4892,24943.14,215.54
+2025-02-01,Pier A North,Refrigerated,Panamax,3110,1052.18,233.71
+2024-07-13,Pier B Container,Containerized,Ro-Ro Carrier,1829,78913.12,75.12
+2024-02-23,Pier C Bulk,Liquid Bulk,Panamax,4428,26748.54,231.67
+2024-09-28,Pier D Ro-Ro,Containerized,Feeder,4935,59137.54,34.09
+2025-01-31,Pier A North,Refrigerated,Post-Panamax,3914,119077.19,2.64
+2024-01-06,Pier B Container,Break Bulk,Feeder,4661,129163.47,219.68
+2025-02-13,Pier A North,Containerized,Capesize,4868,106321.6,228.36
+2024-08-09,Pier B Container,Dry Bulk,Ro-Ro Carrier,4029,68283.32,86.63
+2024-05-28,Pier B Container,Refrigerated,Feeder,4055,81319.32,181.77
+2024-01-19,Multipurpose Quay,Break Bulk,Ro-Ro Carrier,1752,52408.4,153.97
+2024-12-04,East Liquids Berth,Break Bulk,Feeder,1967,107921.69,6.28
+2024-11-12,Pier B Container,Refrigerated,Feeder,1919,31943.02,75.66
+2024-02-24,Pier D Ro-Ro,Containerized,Post-Panamax,1669,8321.22,179.56
+2024-01-09,Pier B Container,Refrigerated,Capesize,4148,83391.17,114.76
+2024-01-14,Pier D Ro-Ro,Refrigerated,Post-Panamax,3294,145191.47,6.98
+2024-01-23,East Liquids Berth,Dry Bulk,Feeder,4172,89120.6,109.76
+2024-03-15,East Liquids Berth,Refrigerated,Panamax,4356,19929.01,91.42
+2024-03-26,Pier C Bulk,Dry Bulk,Ro-Ro Carrier,2130,80601.67,223.3
+2025-01-22,Pier D Ro-Ro,Liquid Bulk,Post-Panamax,2941,95705.3,54.02
+2024-01-04,Pier A North,Refrigerated,Panamax,2407,136054.2,142.02
+2024-11-26,Pier A North,Refrigerated,Post-Panamax,2725,129707.24,124.71
+2024-11-02,Multipurpose Quay,Dry Bulk,Post-Panamax,1613,119199.69,226.8
+2024-12-02,Multipurpose Quay,Vehicles,Capesize,610,35218.25,214.36
+2024-07-14,Pier D Ro-Ro,Refrigerated,Handysize,2647,3867.41,168.56
+2025-03-04,Multipurpose Quay,Vehicles,Handysize,2159,110168.63,202.49
+2024-06-05,Pier A North,Containerized,Handysize,2314,37021.76,48.33
+2025-02-08,Pier D Ro-Ro,Containerized,Handysize,536,119440.25,122.21
+2024-06-03,Pier B Container,Break Bulk,Post-Panamax,221,87393.93,113.64
+2024-03-03,Pier A North,Break Bulk,Handysize,2871,48025.86,127.88
+2024-10-02,Pier A North,Break Bulk,Feeder,2212,20395.33,57.9
+2025-05-25,Pier A North,Liquid Bulk,Feeder,2645,39584.83,200.65
+2024-06-22,East Liquids Berth,Break Bulk,Ro-Ro Carrier,1264,96671.97,28.4
+2024-03-22,Pier C Bulk,Vehicles,Post-Panamax,278,120573.95,198.55
+2024-12-03,Pier D Ro-Ro,Containerized,Ro-Ro Carrier,4817,126747.91,169.64

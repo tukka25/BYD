@@ -1,241 +1,241 @@
-rental_snapshot_date,rental_property_type,rental_city_district,rental_tenancy_status,rental_monthly_rent_usd,rental_purchase_price_usd,rental_gross_yield_pct,rental_days_on_market
-2024-01-09,Detached House,Old Town,Notice Given,5030.84,1076630.46,9.78,83
-2024-01-13,Studio,Harbor District,Under Renovation,1790.91,2138722.02,11.94,30
-2024-10-12,Townhouse,Downtown,Notice Given,6513.15,878935.66,7.29,114
-2024-02-28,Townhouse,Harbor District,Occupied,896.23,160358.75,12.71,212
-2024-08-31,Studio,Northside,Occupied,8937.27,1347879.9,8.98,285
-2024-12-15,Apartment,Suburban Ring,Vacant,8029.43,2119747.9,7.38,307
-2024-12-18,Condo,Harbor District,Notice Given,2197.56,632635.14,10.82,341
-2025-06-02,Duplex,Riverside,Vacant,1205.4,1278973.95,7.74,212
-2024-03-27,Duplex,Northside,Under Renovation,5073.82,1213271.12,7.25,287
-2025-02-19,Condo,Suburban Ring,Occupied,8359.66,1725306.6,5.64,362
-2024-08-27,Detached House,Suburban Ring,Vacant,1091.19,2053182.55,6.56,300
-2025-05-05,Detached House,Downtown,Notice Given,3807.12,707605.38,8.19,204
-2024-02-18,Apartment,Harbor District,Occupied,3679.62,1271474.91,14.65,10
-2024-05-03,Apartment,Northside,Notice Given,7464.01,1884271.42,7.22,59
-2024-01-11,Condo,Riverside,Vacant,7856.91,1982806.62,2.72,144
-2024-05-17,Duplex,Old Town,Notice Given,3917.88,1210276.44,10.79,242
-2024-04-21,Detached House,Downtown,Vacant,7784.0,1294745.91,6.01,208
-2024-07-07,Studio,Northside,Occupied,4534.53,986700.2,14.38,44
-2024-06-27,Townhouse,Downtown,Vacant,6614.95,638321.46,4.96,315
-2024-09-03,Condo,Midtown,Vacant,2071.31,1615492.6,8.6,254
-2024-11-22,Condo,Midtown,Vacant,7989.88,1409964.38,5.14,207
-2024-10-25,Condo,Midtown,Notice Given,7715.17,818840.44,10.31,87
-2024-02-12,Duplex,Harbor District,Notice Given,7097.97,656691.41,2.86,110
-2025-03-12,Condo,Downtown,Notice Given,3837.53,2009299.98,8.05,69
-2024-06-25,Condo,Downtown,Occupied,6368.13,2172808.06,2.15,76
-2024-04-30,Condo,Riverside,Notice Given,2035.31,1868962.75,6.28,336
-2024-06-18,Detached House,Harbor District,Notice Given,6840.61,1836785.57,6.29,124
-2024-12-03,Townhouse,Downtown,Notice Given,875.63,2355539.44,6.0,301
-2024-08-08,Condo,Midtown,Occupied,3860.09,1216224.18,3.81,74
-2025-02-04,Condo,Northside,Under Renovation,4763.05,1125232.3,3.97,342
-2024-08-19,Townhouse,Downtown,Occupied,5646.31,365973.22,9.42,310
-2024-05-27,Duplex,Harbor District,Occupied,3270.47,2371304.43,14.26,319
-2024-10-02,Apartment,Riverside,Notice Given,8099.88,198835.26,14.26,86
-2025-03-27,Apartment,Northside,Occupied,6425.47,1070058.55,10.27,44
-2025-03-22,Apartment,Downtown,Notice Given,5085.75,297554.27,6.4,273
-2024-02-09,Duplex,Northside,Under Renovation,6484.66,1094749.12,8.83,12
-2025-05-30,Townhouse,Suburban Ring,Notice Given,8059.7,1805708.34,10.34,227
-2024-04-13,Studio,Midtown,Notice Given,3840.09,570307.96,10.5,32
-2025-04-06,Apartment,Old Town,Occupied,5107.16,1610314.69,4.1,237
-2024-11-23,Detached House,Downtown,Vacant,8343.98,247026.31,7.73,106
-2024-02-28,Apartment,Northside,Notice Given,5883.2,1085950.95,2.35,167
-2025-02-17,Studio,Suburban Ring,Under Renovation,1888.92,865628.42,4.02,114
-2025-01-21,Studio,Northside,Notice Given,8118.99,1445096.94,12.37,94
-2025-03-19,Apartment,Riverside,Occupied,8619.85,971742.2,14.13,226
-2024-08-04,Duplex,Midtown,Notice Given,7119.19,2321813.5,11.53,129
-2024-01-28,Apartment,Riverside,Notice Given,1058.62,1636775.72,5.4,346
-2025-01-15,Condo,Harbor District,Occupied,6492.47,2141173.92,13.22,286
-2025-04-02,Duplex,Old Town,Under Renovation,8945.73,398759.1,10.31,243
-2025-05-18,Condo,Suburban Ring,Under Renovation,5268.01,1435242.93,4.57,161
-2025-05-23,Townhouse,Riverside,Under Renovation,9363.6,1825239.35,2.28,285
-2024-06-19,Detached House,Harbor District,Occupied,9261.65,1312119.51,10.83,106
-2025-03-22,Studio,Midtown,Vacant,8644.23,1034980.2,9.57,341
-2024-07-19,Apartment,Midtown,Occupied,7612.6,2348285.9,14.6,359
-2025-01-14,Condo,Suburban Ring,Notice Given,5914.62,1950117.19,11.34,3
-2024-04-28,Duplex,Midtown,Vacant,4533.88,1591158.27,14.63,281
-2025-05-08,Detached House,Riverside,Vacant,2236.36,1060640.29,12.66,112
-2024-12-14,Condo,Riverside,Notice Given,1044.17,2005389.96,9.47,166
-2025-04-08,Studio,Old Town,Occupied,7199.76,906743.85,6.93,34
-2024-09-01,Apartment,Northside,Under Renovation,2252.34,403831.04,14.42,230
-2024-10-13,Townhouse,Harbor District,Vacant,1705.48,658082.67,2.76,115
-2024-01-05,Condo,Midtown,Under Renovation,6228.33,2382773.6,4.12,161
-2025-02-05,Duplex,Harbor District,Occupied,4184.18,548361.09,6.52,7
-2024-08-26,Apartment,Northside,Notice Given,6872.47,1244001.34,14.2,243
-2024-02-22,Duplex,Harbor District,Occupied,1642.82,1445985.88,13.65,126
-2024-06-09,Duplex,Harbor District,Notice Given,4756.81,499686.89,12.76,219
-2025-03-30,Apartment,Midtown,Vacant,4884.98,1607823.65,5.27,247
-2024-06-21,Apartment,Midtown,Under Renovation,4183.37,1651273.44,7.7,126
-2024-10-09,Studio,Old Town,Under Renovation,8845.12,2120231.45,12.88,9
-2024-08-24,Detached House,Northside,Vacant,3378.67,1473106.27,14.43,32
-2024-06-27,Detached House,Midtown,Under Renovation,6468.37,2315130.44,11.59,103
-2024-01-22,Studio,Harbor District,Notice Given,8907.84,669751.68,13.73,99
-2024-04-01,Townhouse,Northside,Under Renovation,5675.13,467196.3,9.62,171
-2024-01-22,Studio,Harbor District,Vacant,2628.0,1140370.15,5.68,289
-2025-06-14,Duplex,Suburban Ring,Under Renovation,2689.15,2268024.47,13.15,258
-2025-02-10,Duplex,Downtown,Notice Given,8884.94,1523668.63,6.31,249
-2024-03-24,Townhouse,Suburban Ring,Under Renovation,5719.96,1257504.57,7.22,358
-2024-12-25,Townhouse,Harbor District,Notice Given,4567.35,2356026.89,11.42,194
-2025-05-19,Apartment,Northside,Occupied,9399.08,2095660.92,7.11,289
-2024-06-11,Townhouse,Downtown,Under Renovation,5038.4,2188973.0,12.68,244
-2024-12-10,Detached House,Harbor District,Occupied,3695.56,1885308.64,9.29,234
-2025-02-21,Detached House,Harbor District,Occupied,9281.05,934025.01,8.76,294
-2024-04-22,Apartment,Northside,Notice Given,4206.39,2160095.73,11.68,259
-2024-04-13,Duplex,Harbor District,Occupied,2613.01,2071337.45,5.33,196
-2024-01-30,Detached House,Northside,Notice Given,7957.27,934037.62,11.06,150
-2024-09-23,Duplex,Midtown,Vacant,9457.15,625118.06,9.74,14
-2025-02-16,Duplex,Midtown,Vacant,4727.9,1326037.08,9.66,245
-2024-10-23,Detached House,Old Town,Notice Given,5246.43,1400458.38,5.95,257
-2024-06-04,Studio,Suburban Ring,Vacant,7021.22,691767.0,8.55,339
-2025-01-22,Detached House,Downtown,Occupied,703.74,671486.92,9.77,284
-2024-09-26,Condo,Downtown,Occupied,6404.23,763042.83,10.5,252
-2025-05-29,Townhouse,Harbor District,Vacant,5071.89,2032241.33,12.57,105
-2025-02-01,Studio,Midtown,Occupied,2731.72,391228.18,5.57,21
-2024-04-05,Duplex,Harbor District,Under Renovation,4966.96,1113744.86,7.49,142
-2024-04-17,Condo,Old Town,Under Renovation,4790.49,399478.72,4.92,327
-2024-10-01,Townhouse,Harbor District,Occupied,8941.82,1927274.95,7.66,228
-2024-04-13,Apartment,Northside,Under Renovation,2988.93,1210235.32,5.7,105
-2024-07-22,Duplex,Northside,Occupied,7903.33,831017.89,8.32,20
-2024-10-07,Condo,Midtown,Notice Given,5510.8,265093.8,9.53,90
-2024-03-14,Studio,Harbor District,Under Renovation,880.22,2288381.39,14.05,168
-2024-05-11,Detached House,Suburban Ring,Under Renovation,2201.63,2170198.7,7.76,173
-2024-04-03,Condo,Suburban Ring,Vacant,2142.89,1436835.73,6.62,242
-2025-04-11,Duplex,Harbor District,Under Renovation,3222.4,184980.14,4.72,48
-2025-02-20,Detached House,Downtown,Notice Given,4364.3,1547907.0,13.92,180
-2024-07-06,Condo,Suburban Ring,Vacant,2129.14,1295635.93,13.86,288
-2025-03-06,Townhouse,Riverside,Occupied,4504.8,1434543.69,11.98,33
-2024-11-20,Duplex,Suburban Ring,Occupied,1555.97,1283677.56,3.51,207
-2024-04-04,Apartment,Midtown,Vacant,7573.04,1183774.43,14.7,157
-2024-11-20,Duplex,Riverside,Occupied,3243.6,1423439.43,2.89,240
-2024-08-04,Detached House,Midtown,Occupied,7721.63,254865.41,13.14,286
-2024-12-15,Townhouse,Old Town,Notice Given,6381.41,1932874.08,8.94,351
-2025-01-04,Studio,Downtown,Occupied,6414.92,1357089.67,6.38,246
-2024-03-10,Studio,Midtown,Vacant,2812.01,1174678.05,3.85,212
-2024-06-26,Detached House,Downtown,Notice Given,3483.47,1574401.56,3.21,18
-2024-02-27,Duplex,Riverside,Under Renovation,9224.9,637317.94,12.25,261
-2025-04-09,Studio,Old Town,Vacant,1473.36,2339749.58,7.87,281
-2025-05-14,Detached House,Midtown,Occupied,8137.67,929033.01,7.95,60
-2025-02-27,Studio,Northside,Vacant,2278.08,612926.37,6.14,336
-2024-11-11,Townhouse,Riverside,Vacant,7845.43,2372515.87,4.64,204
-2025-06-17,Detached House,Harbor District,Under Renovation,4057.52,1584421.29,12.06,89
-2024-10-15,Duplex,Riverside,Under Renovation,3509.76,1293205.29,7.05,227
-2025-05-25,Detached House,Suburban Ring,Vacant,8908.35,989302.91,9.13,59
-2025-02-28,Detached House,Midtown,Vacant,3292.69,1243662.76,3.72,239
-2024-07-17,Apartment,Riverside,Occupied,7358.74,2345943.83,8.8,138
-2024-11-20,Studio,Suburban Ring,Notice Given,9407.54,2074958.81,12.84,36
-2025-02-12,Detached House,Old Town,Occupied,2586.24,1910057.54,5.02,34
-2024-08-16,Apartment,Northside,Notice Given,2655.25,1015629.66,11.85,205
-2025-04-10,Condo,Midtown,Occupied,7410.02,1130928.73,12.94,76
-2024-02-24,Townhouse,Riverside,Vacant,2628.95,1289837.31,2.72,231
-2024-10-01,Townhouse,Suburban Ring,Under Renovation,3761.19,2386097.67,11.58,9
-2024-11-23,Apartment,Harbor District,Notice Given,4016.87,1920642.64,6.61,154
-2025-04-16,Duplex,Suburban Ring,Vacant,8857.6,2024661.87,4.35,295
-2024-01-19,Condo,Riverside,Under Renovation,8119.96,2156553.12,11.65,260
-2024-08-20,Condo,Riverside,Occupied,7330.47,1077657.95,4.93,263
-2024-04-20,Townhouse,Downtown,Notice Given,2413.39,1662503.3,8.67,348
-2024-12-17,Studio,Riverside,Under Renovation,8007.93,2192560.93,7.18,3
-2025-04-25,Townhouse,Downtown,Under Renovation,2126.9,2086351.39,13.54,139
-2024-11-05,Apartment,Midtown,Notice Given,6186.81,1412653.79,5.53,288
-2024-11-07,Duplex,Downtown,Notice Given,3491.07,2067217.47,7.16,87
-2024-09-15,Apartment,Suburban Ring,Under Renovation,7611.73,890853.93,5.46,74
-2024-07-01,Duplex,Riverside,Vacant,4023.86,1612884.64,11.34,65
-2024-04-23,Duplex,Midtown,Vacant,2636.59,2027705.27,5.76,122
-2025-02-03,Detached House,Riverside,Notice Given,7112.15,1074335.3,6.08,158
-2025-03-30,Duplex,Downtown,Under Renovation,6286.54,2112048.64,9.12,290
-2024-10-24,Studio,Harbor District,Occupied,9307.37,1459276.58,9.7,63
-2024-07-28,Duplex,Northside,Vacant,8694.26,1642297.93,6.8,193
-2025-05-12,Studio,Harbor District,Under Renovation,6421.82,833371.13,2.62,27
-2025-04-19,Townhouse,Harbor District,Under Renovation,4699.08,560533.03,13.66,182
-2024-07-06,Duplex,Old Town,Notice Given,7312.01,1532687.26,2.84,298
-2024-01-30,Duplex,Old Town,Occupied,5632.25,2330342.77,5.0,295
-2024-04-23,Studio,Riverside,Notice Given,1945.98,536652.26,10.32,294
-2024-12-09,Condo,Downtown,Vacant,4146.27,443852.42,12.1,13
-2024-09-17,Townhouse,Harbor District,Under Renovation,6125.01,2363985.48,7.99,364
-2025-04-15,Studio,Northside,Under Renovation,6900.52,921160.28,2.82,333
-2024-10-03,Duplex,Midtown,Occupied,6438.86,2208638.97,8.61,79
-2024-05-21,Detached House,Downtown,Notice Given,9371.78,651614.25,8.28,289
-2025-05-24,Studio,Downtown,Under Renovation,8372.53,485065.52,6.47,83
-2024-10-31,Studio,Old Town,Under Renovation,6092.65,2172690.54,13.88,319
-2024-03-09,Apartment,Old Town,Occupied,5119.11,907150.2,7.79,24
-2024-06-09,Duplex,Northside,Under Renovation,6826.86,1812878.84,11.91,13
-2025-05-25,Apartment,Midtown,Under Renovation,4241.75,2045499.86,6.05,176
-2024-03-17,Duplex,Midtown,Occupied,8915.88,299137.49,5.34,134
-2024-04-11,Studio,Northside,Occupied,5074.47,171688.15,12.12,289
-2025-05-24,Apartment,Riverside,Occupied,7701.78,794019.8,14.62,141
-2025-06-18,Duplex,Midtown,Under Renovation,8381.01,1113614.03,5.71,300
-2024-11-23,Duplex,Harbor District,Notice Given,945.03,234541.72,11.67,60
-2024-04-20,Apartment,Northside,Under Renovation,1803.55,2375430.93,9.13,152
-2024-01-21,Townhouse,Suburban Ring,Notice Given,3999.25,1539779.84,2.43,346
-2025-05-25,Studio,Northside,Notice Given,7737.95,1937523.59,7.61,247
-2024-05-09,Studio,Downtown,Notice Given,5208.9,1023759.15,6.63,360
-2025-01-14,Duplex,Old Town,Occupied,2112.52,282976.38,7.85,11
-2025-05-14,Duplex,Riverside,Vacant,8360.12,831964.34,8.41,151
-2024-10-24,Detached House,Harbor District,Notice Given,755.13,299203.53,2.34,357
-2024-08-15,Duplex,Old Town,Vacant,1371.42,1452922.3,7.23,269
-2024-12-23,Condo,Old Town,Notice Given,1142.21,900931.88,5.05,325
-2025-06-02,Apartment,Old Town,Occupied,2227.7,2138909.16,10.01,338
-2024-09-26,Apartment,Northside,Vacant,5984.5,2320237.14,11.74,41
-2024-01-01,Duplex,Midtown,Occupied,7095.13,2184120.84,14.11,169
-2024-08-17,Detached House,Harbor District,Vacant,4910.9,1812034.03,11.93,293
-2024-05-20,Apartment,Northside,Occupied,8793.36,650054.14,11.16,110
-2024-03-28,Duplex,Old Town,Occupied,8406.84,417110.86,6.58,253
-2024-03-27,Studio,Riverside,Under Renovation,8348.0,131644.36,5.82,330
-2024-10-16,Studio,Harbor District,Under Renovation,6241.24,2309850.59,9.87,302
-2024-03-24,Apartment,Old Town,Occupied,7016.59,1498785.4,4.51,211
-2024-04-15,Condo,Harbor District,Vacant,1647.49,921752.17,11.52,127
-2025-06-15,Townhouse,Downtown,Vacant,6652.06,990988.2,10.42,84
-2025-06-20,Detached House,Harbor District,Under Renovation,1906.63,207320.82,7.6,200
-2024-05-06,Studio,Midtown,Vacant,2237.25,1388701.56,13.53,167
-2024-02-27,Condo,Northside,Occupied,943.53,1355605.12,9.58,173
-2024-03-30,Condo,Suburban Ring,Vacant,6999.27,1949882.83,5.79,85
-2024-08-20,Studio,Old Town,Under Renovation,4502.77,1906468.82,11.12,188
-2024-10-08,Studio,Riverside,Notice Given,2862.75,2250309.28,6.55,125
-2025-03-12,Studio,Old Town,Vacant,5341.11,1203294.97,14.13,44
-2024-06-06,Studio,Midtown,Vacant,4166.96,443685.07,8.02,235
-2024-12-28,Duplex,Downtown,Notice Given,5065.07,1368927.57,7.28,302
-2024-06-28,Apartment,Northside,Notice Given,8314.72,1812678.74,4.88,336
-2024-04-16,Studio,Northside,Notice Given,5710.71,277189.94,9.74,97
-2024-11-24,Duplex,Suburban Ring,Under Renovation,4571.01,866896.54,6.61,181
-2024-07-26,Condo,Old Town,Occupied,1238.85,1650956.5,7.68,199
-2024-06-08,Apartment,Downtown,Occupied,5953.89,241624.82,12.14,335
-2024-09-29,Detached House,Northside,Occupied,3238.41,1499854.77,11.16,316
-2024-03-02,Studio,Riverside,Under Renovation,8765.68,1434315.24,7.12,255
-2024-01-05,Townhouse,Downtown,Occupied,2301.56,240676.7,7.7,255
-2024-01-27,Studio,Harbor District,Occupied,9299.18,1672135.22,8.92,144
-2024-12-16,Detached House,Riverside,Under Renovation,664.09,1143242.18,8.9,153
-2024-08-28,Studio,Downtown,Occupied,9482.08,791271.15,3.35,209
-2024-03-26,Apartment,Riverside,Occupied,8109.2,1979820.41,4.72,342
-2024-08-19,Townhouse,Old Town,Notice Given,7877.95,1056211.32,8.58,123
-2024-10-01,Condo,Midtown,Notice Given,8632.68,1253493.1,13.6,273
-2024-12-28,Townhouse,Old Town,Occupied,9430.18,643394.08,12.36,149
-2024-12-09,Duplex,Northside,Notice Given,7790.37,1959167.42,14.37,71
-2024-10-18,Condo,Harbor District,Occupied,6943.95,407370.08,9.85,87
-2024-09-23,Apartment,Old Town,Under Renovation,9218.17,1215018.9,8.67,264
-2024-06-23,Studio,Northside,Vacant,8573.03,2024911.46,14.32,260
-2024-07-06,Duplex,Riverside,Notice Given,8175.92,926648.62,10.18,151
-2025-05-13,Apartment,Midtown,Under Renovation,928.32,549801.66,5.05,265
-2025-04-02,Apartment,Midtown,Under Renovation,6076.0,452216.73,4.04,355
-2024-03-27,Studio,Downtown,Vacant,1817.07,2239462.12,11.37,167
-2025-03-12,Townhouse,Northside,Notice Given,5619.12,1740204.46,9.8,291
-2024-03-11,Townhouse,Harbor District,Vacant,9139.04,1818000.8,13.82,250
-2024-07-06,Condo,Downtown,Notice Given,1260.78,1675165.54,12.03,31
-2024-11-15,Detached House,Midtown,Notice Given,1390.78,2107110.65,4.33,172
-2024-10-16,Studio,Old Town,Notice Given,818.53,1727103.05,7.94,197
-2024-02-09,Condo,Harbor District,Vacant,3454.13,1991194.99,2.31,179
-2024-09-04,Condo,Midtown,Notice Given,6948.85,1683167.34,2.11,236
-2025-01-05,Detached House,Midtown,Under Renovation,3092.62,240281.94,7.85,277
-2024-05-21,Duplex,Suburban Ring,Notice Given,8235.55,1064487.3,3.59,254
-2025-01-13,Condo,Downtown,Occupied,4967.78,1404415.46,13.53,94
-2024-12-07,Studio,Suburban Ring,Notice Given,9497.54,457726.03,10.53,172
-2025-03-17,Condo,Harbor District,Occupied,8855.7,1809540.63,10.19,356
-2024-10-17,Townhouse,Northside,Notice Given,7776.39,1042533.71,11.26,58
-2025-06-11,Detached House,Old Town,Occupied,2416.66,1977451.71,9.2,283
-2024-05-24,Detached House,Downtown,Notice Given,5521.23,303220.24,9.95,157
-2024-09-19,Apartment,Riverside,Notice Given,747.3,206523.1,12.55,277
-2024-05-08,Apartment,Midtown,Under Renovation,5623.24,1062711.85,2.75,261
-2024-07-27,Duplex,Midtown,Under Renovation,3764.59,2144637.97,6.5,26
-2024-01-19,Duplex,Northside,Under Renovation,3803.54,899701.36,6.56,108
-2025-02-01,Detached House,Suburban Ring,Notice Given,3543.85,1568795.72,6.6,232
-2025-04-04,Apartment,Midtown,Vacant,2456.33,1311463.64,13.85,194
-2025-04-23,Detached House,Harbor District,Notice Given,1384.13,965714.7,8.5,202
-2024-08-31,Detached House,Old Town,Occupied,822.16,313850.07,12.91,124
+hr_snapshot_date,hr_department,hr_employment_type,hr_region,hr_headcount,hr_attrition_count,hr_avg_tenure_years,hr_avg_salary_usd
+2024-06-20,Human Resources,Contract,Latin America,1037,119,23.83,159406.94
+2025-02-25,Engineering,Part-Time,Asia Pacific,1261,127,16.73,212470.73
+2025-05-24,Marketing,Contract,Middle East,4376,19,6.37,245373.24
+2024-07-04,Customer Support,Intern,Europe,2611,259,21.07,185804.09
+2025-06-12,Engineering,Contract,Middle East,3918,127,0.45,52747.67
+2024-02-17,Customer Support,Part-Time,Europe,4571,129,3.54,131967.42
+2024-08-27,Operations,Part-Time,Asia Pacific,4954,33,1.91,53271.85
+2024-05-04,Marketing,Part-Time,Asia Pacific,867,62,9.56,204491.43
+2024-11-30,Marketing,Intern,Asia Pacific,986,165,24.36,245303.34
+2024-06-20,Sales,Full-Time,Europe,726,103,7.34,232635.01
+2024-01-26,Marketing,Intern,Europe,1613,66,18.27,82936.31
+2025-04-10,Sales,Full-Time,Middle East,2736,226,23.7,208289.46
+2025-03-29,Sales,Intern,Latin America,2720,11,24.9,124420.9
+2024-11-29,Finance,Part-Time,North America,990,203,18.21,109501.06
+2025-04-26,Operations,Full-Time,Middle East,796,30,24.56,133160.47
+2024-08-25,Customer Support,Part-Time,Europe,4584,64,6.28,90638.11
+2024-03-13,Engineering,Full-Time,Latin America,3472,105,23.08,245157.64
+2025-01-20,Finance,Full-Time,Latin America,2331,84,13.57,71091.26
+2025-03-18,Customer Support,Part-Time,North America,1699,11,13.26,225574.36
+2025-04-22,Human Resources,Part-Time,Asia Pacific,2701,84,14.93,234461.96
+2025-05-25,Engineering,Intern,Europe,1793,76,9.77,124486.86
+2024-04-11,Operations,Contract,Middle East,2980,66,5.02,108337.41
+2024-09-04,Marketing,Part-Time,Latin America,2467,139,4.32,187582.49
+2024-03-05,Marketing,Intern,Middle East,1884,178,6.63,234483.05
+2024-06-27,Marketing,Part-Time,Middle East,303,224,17.53,160118.94
+2025-02-02,Finance,Part-Time,Europe,414,90,9.61,243061.6
+2025-02-04,Finance,Full-Time,Asia Pacific,288,203,9.35,37984.9
+2025-04-02,Operations,Intern,North America,280,220,16.75,216442.32
+2024-07-08,Marketing,Contract,North America,3528,290,16.01,109283.59
+2024-04-20,Operations,Part-Time,North America,1269,95,21.76,185543.42
+2024-02-06,Sales,Part-Time,North America,2671,209,8.31,230467.58
+2025-06-02,Human Resources,Part-Time,Latin America,1136,295,16.45,174835.01
+2024-06-02,Customer Support,Intern,Europe,4806,284,12.29,164052.13
+2024-09-20,Human Resources,Intern,Latin America,1094,147,18.68,162288.35
+2024-07-05,Finance,Contract,Middle East,2094,104,5.11,75032.44
+2024-01-15,Operations,Full-Time,Latin America,2377,70,7.25,201581.59
+2024-03-23,Human Resources,Part-Time,Middle East,4903,3,20.65,198442.37
+2025-01-24,Operations,Intern,North America,3619,153,0.9,108714.07
+2024-07-09,Human Resources,Part-Time,Middle East,135,290,19.91,174039.47
+2025-01-05,Human Resources,Full-Time,Asia Pacific,3369,269,21.75,213587.85
+2024-07-04,Sales,Part-Time,Latin America,387,113,20.34,104405.06
+2025-02-05,Engineering,Contract,Latin America,4309,248,9.86,142101.28
+2024-07-02,Engineering,Part-Time,North America,1496,87,11.07,248139.62
+2024-04-13,Engineering,Part-Time,Europe,2485,21,2.7,167196.31
+2024-04-19,Marketing,Intern,Middle East,2210,163,22.72,70909.05
+2025-01-22,Marketing,Part-Time,Europe,3848,160,0.95,189787.03
+2024-07-29,Customer Support,Contract,Europe,3792,57,7.22,97765.65
+2025-02-06,Sales,Part-Time,Asia Pacific,3688,155,23.59,196525.1
+2024-05-15,Operations,Intern,Asia Pacific,557,73,18.2,146082.3
+2024-05-28,Engineering,Intern,Middle East,807,218,17.54,55547.33
+2025-04-02,Marketing,Part-Time,North America,4926,161,5.24,239574.63
+2024-08-08,Operations,Full-Time,Europe,1075,267,8.17,48254.96
+2025-06-15,Customer Support,Contract,Europe,671,233,8.26,173050.91
+2024-05-09,Marketing,Contract,Latin America,3255,242,7.07,68175.16
+2025-03-03,Human Resources,Intern,Asia Pacific,4394,116,24.28,58685.84
+2025-06-14,Operations,Intern,Europe,2282,161,11.06,33706.65
+2024-12-17,Finance,Full-Time,Europe,1300,221,14.92,178289.88
+2024-01-06,Marketing,Part-Time,Europe,1488,115,8.31,165660.18
+2024-11-06,Finance,Full-Time,Latin America,3363,135,5.36,179022.04
+2024-09-24,Operations,Contract,North America,3437,18,15.72,101260.19
+2024-09-16,Engineering,Contract,Europe,3511,282,19.3,63143.86
+2025-03-09,Customer Support,Contract,Asia Pacific,56,81,0.67,204103.31
+2024-03-08,Operations,Full-Time,Europe,2238,140,23.39,231891.66
+2025-05-14,Marketing,Full-Time,Asia Pacific,789,166,12.84,175909.27
+2025-05-09,Customer Support,Contract,North America,4062,129,14.24,119110.36
+2024-10-01,Customer Support,Contract,Europe,30,191,3.17,229725.37
+2025-06-09,Customer Support,Part-Time,Middle East,1799,269,17.8,76131.86
+2024-11-03,Finance,Intern,Latin America,2213,228,7.21,36880.05
+2024-06-13,Human Resources,Intern,North America,3183,119,21.23,110909.03
+2025-01-05,Marketing,Part-Time,Latin America,4710,274,21.54,125379.57
+2024-07-16,Human Resources,Contract,Latin America,4037,30,9.35,58600.68
+2024-07-31,Finance,Intern,North America,619,80,1.15,136777.86
+2025-03-23,Human Resources,Intern,Middle East,4235,120,1.01,60473.87
+2024-04-28,Sales,Part-Time,Asia Pacific,3994,209,23.02,208002.01
+2024-12-13,Human Resources,Contract,Asia Pacific,821,78,20.47,89841.9
+2025-02-08,Operations,Contract,Middle East,2463,8,23.44,197923.84
+2024-03-01,Customer Support,Intern,Latin America,3458,230,19.63,230289.5
+2024-05-29,Engineering,Contract,Middle East,2665,43,12.42,235073.51
+2024-06-27,Finance,Full-Time,Middle East,271,294,23.13,247956.21
+2025-06-02,Operations,Contract,North America,720,152,9.22,83565.03
+2024-09-10,Customer Support,Intern,North America,3323,155,7.8,99649.97
+2025-05-29,Sales,Part-Time,Europe,3307,191,3.22,167847.28
+2024-12-28,Marketing,Part-Time,North America,1319,282,6.65,108738.06
+2024-01-29,Engineering,Full-Time,Asia Pacific,4810,7,23.09,121762.95
+2025-05-20,Human Resources,Intern,North America,3765,75,1.22,60274.47
+2025-01-17,Marketing,Full-Time,North America,4743,110,1.16,220451.46
+2024-01-26,Customer Support,Intern,Middle East,1983,137,12.83,154715.55
+2024-11-26,Marketing,Contract,Middle East,1982,231,5.19,49648.49
+2025-04-14,Sales,Part-Time,Latin America,1597,198,10.73,43710.4
+2025-04-27,Sales,Intern,Asia Pacific,4703,101,23.55,224936.76
+2024-09-27,Human Resources,Intern,North America,2833,212,6.26,221747.42
+2025-05-05,Engineering,Part-Time,North America,4523,101,6.53,120757.19
+2024-05-10,Finance,Part-Time,Middle East,4714,126,4.74,110373.64
+2025-05-14,Engineering,Contract,North America,2419,75,12.03,193643.7
+2024-05-12,Engineering,Contract,Middle East,1477,48,9.89,129313.74
+2025-02-18,Sales,Full-Time,Latin America,2957,260,1.09,238146.59
+2025-05-28,Customer Support,Contract,Asia Pacific,4717,276,1.26,52932.93
+2025-01-12,Sales,Part-Time,Asia Pacific,996,117,10.77,61657.47
+2024-08-09,Engineering,Intern,Latin America,4018,11,21.94,66144.35
+2024-10-04,Finance,Part-Time,Latin America,470,30,12.34,143609.62
+2024-01-09,Finance,Full-Time,Europe,3549,210,4.27,232188.03
+2024-12-08,Sales,Contract,North America,3826,152,18.09,124736.22
+2025-02-02,Finance,Contract,Asia Pacific,606,266,3.33,229476.38
+2024-01-26,Sales,Full-Time,North America,4307,253,12.58,49793.27
+2024-07-30,Marketing,Intern,Europe,1737,122,1.28,147955.3
+2024-05-22,Finance,Contract,Middle East,2496,141,18.25,115235.7
+2025-04-20,Engineering,Contract,Middle East,1966,204,12.73,93837.56
+2024-08-21,Sales,Contract,Middle East,4848,167,2.57,91612.81
+2025-04-27,Operations,Part-Time,Asia Pacific,2534,65,1.77,144971.08
+2025-04-12,Sales,Intern,Asia Pacific,2914,233,1.14,177249.14
+2024-03-09,Human Resources,Part-Time,Asia Pacific,2284,69,1.74,194148.6
+2024-06-07,Engineering,Full-Time,North America,2967,22,10.88,49059.23
+2024-08-12,Engineering,Contract,Asia Pacific,3740,240,15.55,111134.11
+2024-08-13,Operations,Full-Time,Europe,1425,264,19.88,141145.6
+2025-03-15,Sales,Intern,North America,198,174,21.93,130674.8
+2025-05-06,Engineering,Full-Time,North America,2207,54,19.72,118156.91
+2024-01-06,Marketing,Part-Time,Latin America,2930,120,24.93,161468.05
+2024-01-03,Marketing,Full-Time,Europe,1395,88,23.67,36232.95
+2024-04-12,Customer Support,Intern,Asia Pacific,4043,48,23.31,228143.36
+2025-02-07,Marketing,Intern,Latin America,3452,220,9.8,191551.42
+2025-06-12,Marketing,Part-Time,Middle East,626,277,23.47,165255.17
+2025-03-20,Sales,Full-Time,North America,1396,85,8.75,36913.59
+2024-12-05,Marketing,Contract,Middle East,579,196,24.6,122246.34
+2024-02-09,Engineering,Full-Time,North America,2183,173,3.33,207353.49
+2024-09-22,Marketing,Part-Time,Asia Pacific,2145,180,12.1,106819.82
+2024-06-04,Marketing,Contract,North America,2253,174,18.05,95248.31
+2024-07-29,Marketing,Intern,North America,2283,221,17.0,43886.18
+2024-02-06,Sales,Contract,Asia Pacific,2419,196,17.81,52780.15
+2025-01-21,Finance,Full-Time,Latin America,3829,23,18.81,177864.06
+2024-09-14,Customer Support,Full-Time,Middle East,3473,259,15.85,56265.41
+2024-11-13,Customer Support,Full-Time,North America,4132,59,9.61,188726.49
+2024-01-10,Finance,Intern,North America,4132,52,4.52,176273.38
+2024-01-30,Human Resources,Contract,Asia Pacific,3005,232,6.51,221513.33
+2024-10-18,Operations,Contract,Europe,2279,160,12.01,51404.74
+2024-02-18,Human Resources,Full-Time,Europe,481,228,23.83,96690.57
+2025-05-24,Sales,Full-Time,Latin America,1789,124,24.56,41333.97
+2024-04-30,Engineering,Part-Time,Europe,1565,181,7.84,164641.66
+2024-06-11,Operations,Intern,Latin America,2387,142,22.64,229989.91
+2024-05-14,Human Resources,Part-Time,Europe,1409,60,21.69,29025.9
+2024-05-12,Marketing,Contract,Europe,3546,85,7.37,203244.7
+2024-08-09,Operations,Contract,Middle East,3645,41,21.22,128999.08
+2025-05-08,Sales,Intern,Middle East,945,274,17.42,198937.12
+2024-10-23,Engineering,Intern,Europe,132,189,13.55,228478.65
+2024-05-20,Customer Support,Contract,Middle East,3303,225,2.67,162303.03
+2025-06-15,Marketing,Contract,Asia Pacific,1663,117,6.23,120355.6
+2025-05-10,Customer Support,Contract,North America,3505,13,18.96,197297.87
+2024-11-03,Human Resources,Part-Time,Europe,2636,238,10.39,85661.14
+2024-02-14,Operations,Part-Time,Middle East,837,34,8.46,171741.48
+2024-06-10,Marketing,Part-Time,Asia Pacific,316,128,20.85,210232.76
+2024-04-14,Engineering,Intern,Europe,4425,37,0.46,159177.92
+2024-10-26,Operations,Full-Time,Latin America,2388,106,13.27,109754.71
+2024-07-24,Customer Support,Intern,Asia Pacific,2583,224,6.07,209140.96
+2024-11-23,Human Resources,Contract,Latin America,2761,216,16.3,113588.96
+2024-08-19,Human Resources,Contract,North America,2038,70,24.58,109552.67
+2025-03-27,Marketing,Full-Time,Europe,236,235,14.58,61863.5
+2024-07-18,Customer Support,Full-Time,Europe,3614,182,21.71,209601.29
+2025-01-28,Marketing,Part-Time,North America,4750,232,3.26,63308.97
+2024-07-08,Customer Support,Full-Time,North America,1813,69,11.18,45579.86
+2024-01-21,Finance,Full-Time,Europe,3904,294,9.07,85324.76
+2025-03-07,Sales,Contract,North America,677,239,4.22,125642.2
+2024-05-23,Sales,Contract,Middle East,4034,75,2.24,113298.6
+2024-01-13,Sales,Full-Time,Middle East,2748,34,5.61,209623.76
+2024-12-04,Customer Support,Intern,Latin America,3054,138,10.33,188654.6
+2025-06-14,Customer Support,Part-Time,Latin America,3056,247,16.24,130852.19
+2024-12-17,Finance,Intern,Asia Pacific,1841,200,15.95,113354.45
+2024-06-19,Engineering,Intern,Asia Pacific,2983,239,19.57,80421.24
+2024-11-22,Human Resources,Contract,Europe,4264,279,20.72,138046.17
+2024-12-04,Customer Support,Intern,Asia Pacific,2552,142,24.69,33295.3
+2024-09-06,Finance,Contract,Asia Pacific,4601,237,19.12,207988.74
+2024-10-21,Marketing,Contract,Asia Pacific,3880,110,19.23,89324.69
+2024-05-11,Finance,Part-Time,Middle East,862,241,2.76,101709.18
+2024-08-28,Human Resources,Intern,Europe,4562,206,1.69,28177.46
+2024-06-27,Operations,Contract,Latin America,77,271,13.43,110831.55
+2024-11-30,Sales,Contract,North America,1966,145,1.94,144512.63
+2024-03-29,Customer Support,Full-Time,Latin America,4445,78,11.92,73191.7
+2025-05-11,Engineering,Contract,Middle East,4783,223,4.38,83861.3
+2025-06-16,Marketing,Contract,Latin America,3614,174,1.63,243055.18
+2024-02-27,Finance,Intern,Latin America,4772,250,16.7,160690.07
+2025-04-30,Operations,Full-Time,Latin America,3427,2,4.89,41426.4
+2024-02-11,Human Resources,Full-Time,Europe,4885,273,10.32,117237.56
+2024-05-02,Customer Support,Intern,Middle East,2253,288,7.19,125625.08
+2024-07-06,Operations,Full-Time,Middle East,3158,67,4.57,177923.76
+2024-02-11,Engineering,Intern,Middle East,1460,44,21.69,62870.77
+2024-03-17,Marketing,Part-Time,Asia Pacific,3043,195,8.86,109812.45
+2024-08-18,Engineering,Intern,Asia Pacific,3090,136,12.42,35495.65
+2024-06-27,Marketing,Intern,North America,3355,81,23.45,137681.31
+2024-10-02,Operations,Full-Time,Middle East,4400,142,9.6,240620.08
+2024-01-20,Marketing,Intern,Middle East,3270,213,8.69,117306.37
+2025-04-05,Marketing,Intern,Latin America,2244,58,18.7,169664.04
+2024-08-21,Engineering,Intern,Latin America,1867,266,7.49,224233.97
+2024-05-22,Engineering,Contract,Middle East,3676,248,9.92,148678.37
+2024-06-16,Operations,Full-Time,North America,2933,150,19.57,246518.0
+2024-05-25,Sales,Part-Time,Asia Pacific,333,75,8.58,168896.69
+2024-12-31,Engineering,Intern,Middle East,777,213,5.5,172390.68
+2024-02-17,Operations,Intern,Middle East,2348,190,17.01,236402.66
+2024-10-07,Human Resources,Contract,Middle East,3570,195,14.31,246807.92
+2025-04-18,Finance,Intern,Asia Pacific,1011,207,8.81,146970.86
+2024-02-02,Operations,Intern,Europe,3098,280,6.62,152451.98
+2024-03-12,Sales,Contract,Europe,1511,280,15.85,148823.49
+2024-02-18,Operations,Contract,Asia Pacific,2720,45,4.39,194904.87
+2024-03-31,Engineering,Contract,North America,2828,130,17.04,34557.83
+2024-08-01,Customer Support,Part-Time,Asia Pacific,4205,117,3.26,95793.61
+2024-02-26,Finance,Part-Time,North America,1002,141,2.66,232397.35
+2024-01-29,Operations,Contract,Latin America,4147,222,19.12,246287.98
+2024-04-15,Marketing,Full-Time,Middle East,2682,186,22.23,77122.23
+2024-04-24,Sales,Intern,Europe,4066,118,18.06,211472.85
+2024-07-27,Operations,Full-Time,Middle East,4725,228,0.96,39515.18
+2025-06-05,Sales,Intern,North America,2842,213,18.33,145665.28
+2025-05-15,Finance,Contract,Middle East,311,220,0.24,186009.94
+2025-03-22,Marketing,Full-Time,North America,1189,97,10.22,86814.35
+2024-04-19,Finance,Part-Time,Latin America,3589,174,8.57,107084.24
+2025-02-27,Marketing,Intern,North America,4726,4,8.94,177583.99
+2024-06-02,Marketing,Full-Time,Asia Pacific,3049,15,23.42,248239.63
+2025-02-07,Human Resources,Part-Time,Latin America,1920,145,16.68,187816.91
+2024-12-11,Human Resources,Intern,North America,3816,6,10.32,37568.77
+2025-04-27,Finance,Intern,North America,2288,41,7.37,127028.24
+2024-02-22,Finance,Part-Time,Middle East,3920,96,6.72,39551.36
+2024-01-05,Finance,Part-Time,Latin America,4951,50,18.14,108060.63
+2025-06-06,Operations,Intern,North America,3519,145,21.39,114402.84
+2024-11-09,Engineering,Full-Time,North America,2257,182,4.34,139636.86
+2025-05-21,Customer Support,Contract,Europe,4279,158,16.76,117569.54
+2024-05-20,Sales,Full-Time,Asia Pacific,3343,23,8.06,83993.47
+2024-03-31,Finance,Part-Time,North America,3075,129,1.86,105462.7
+2025-03-19,Finance,Full-Time,North America,3936,139,8.89,85345.62
+2024-03-17,Marketing,Full-Time,Middle East,586,271,5.11,240148.98
+2024-07-09,Finance,Intern,Middle East,1276,93,22.17,208748.35
+2025-01-17,Engineering,Full-Time,Asia Pacific,2613,55,2.52,248656.58
+2025-05-07,Customer Support,Contract,North America,1405,269,12.33,190661.29
+2025-05-20,Human Resources,Contract,Middle East,2580,60,0.23,185022.66
+2024-01-03,Marketing,Intern,North America,1413,21,1.03,178421.82
+2025-01-13,Human Resources,Part-Time,North America,2594,23,21.55,110896.6
+2025-02-06,Engineering,Part-Time,Europe,4375,190,9.94,87137.58
+2025-04-25,Sales,Full-Time,Europe,4785,11,16.68,210910.5
+2025-02-15,Customer Support,Contract,Latin America,306,104,5.4,37322.12
+2024-05-16,Customer Support,Full-Time,Middle East,1195,257,0.78,179475.95
+2024-04-20,Sales,Intern,Asia Pacific,4076,260,16.64,130676.98
+2025-01-08,Customer Support,Part-Time,Latin America,4288,9,7.15,129582.7
+2024-05-14,Human Resources,Intern,Asia Pacific,1516,264,3.98,50705.2
+2024-01-12,Sales,Contract,Europe,41,283,20.48,43309.09
+2025-04-17,Finance,Contract,North America,239,230,1.16,169936.72

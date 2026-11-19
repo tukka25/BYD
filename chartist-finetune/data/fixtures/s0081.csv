@@ -1,241 +1,241 @@
-Harvest Date,Crop Type,Soil Type,Irrigation Method,Yield Tons,Area Hectares,Rainfall Millimeters
-2025-06-10,Corn,Sandy Loam,Drip,7.75,12.03,424.55
-2024-03-15,Barley,Clay Loam,Furrow,37.88,5.59,131.8
-2024-02-05,Winter Wheat,Peat,Rainfed,0.58,24.29,346.27
-2024-01-03,Canola,Clay,Center Pivot,7.42,22.19,742.19
-2025-01-21,Corn,Clay Loam,Furrow,23.48,20.67,708.07
-2024-02-22,Winter Wheat,Silt Loam,Furrow,17.45,10.87,710.36
-2024-03-20,Canola,Clay,Rainfed,28.12,19.56,602.3
-2024-02-09,Barley,Sandy,Drip,24.59,2.1,810.82
-2024-09-12,Winter Wheat,Sandy,Furrow,14.55,24.45,554.97
-2024-05-18,Soybeans,Clay,Center Pivot,15.3,8.35,822.67
-2024-08-17,Canola,Peat,Sprinkler,19.37,18.92,802.81
-2025-02-12,Canola,Sandy,Sprinkler,9.33,23.52,146.02
-2025-01-12,Corn,Silt Loam,Furrow,27.17,17.42,80.98
-2025-05-18,Winter Wheat,Clay Loam,Sprinkler,32.85,11.8,308.22
-2024-12-15,Winter Wheat,Clay Loam,Center Pivot,24.79,1.16,895.25
-2025-01-31,Barley,Silt Loam,Center Pivot,35.03,6.55,439.37
-2025-06-05,Canola,Sandy,Furrow,39.93,10.79,292.1
-2024-04-27,Canola,Clay Loam,Center Pivot,22.5,22.76,16.33
-2025-06-13,Winter Wheat,Clay,Furrow,6.07,7.18,845.72
-2024-02-16,Barley,Sandy Loam,Center Pivot,11.74,11.62,549.82
-2024-06-15,Barley,Peat,Furrow,35.13,15.49,702.33
-2025-05-30,Sunflower,Clay,Center Pivot,27.42,3.75,874.71
-2024-06-27,Corn,Sandy Loam,Rainfed,22.77,2.89,198.28
-2024-08-16,Soybeans,Peat,Drip,37.33,6.96,878.61
-2024-02-12,Barley,Clay,Sprinkler,29.55,15.59,448.43
-2024-03-08,Barley,Clay,Furrow,17.43,15.86,396.99
-2025-01-22,Canola,Clay Loam,Drip,7.7,22.99,132.16
-2025-04-16,Winter Wheat,Silt Loam,Furrow,21.88,17.83,231.03
-2025-03-13,Soybeans,Clay Loam,Sprinkler,4.67,18.02,744.92
-2024-05-24,Sunflower,Sandy,Drip,3.62,14.94,834.77
-2024-05-18,Canola,Silt Loam,Sprinkler,20.15,11.93,37.17
-2025-03-05,Corn,Sandy Loam,Center Pivot,43.71,17.46,292.5
-2025-02-09,Corn,Clay,Furrow,22.92,24.96,780.3
-2024-07-24,Corn,Sandy,Rainfed,12.78,15.11,74.02
-2025-01-23,Corn,Sandy,Drip,43.04,8.15,164.82
-2024-08-15,Corn,Peat,Center Pivot,29.2,8.2,480.39
-2024-01-02,Sunflower,Sandy Loam,Sprinkler,3.16,13.67,725.86
-2024-03-23,Canola,Clay,Rainfed,24.54,23.28,834.85
-2024-03-29,Barley,Sandy,Rainfed,40.45,13.29,328.5
-2025-03-04,Corn,Clay,Rainfed,15.74,6.1,236.43
-2024-02-16,Canola,Clay Loam,Sprinkler,36.28,3.2,871.97
-2024-01-05,Soybeans,Clay Loam,Rainfed,37.12,13.88,216.15
-2025-04-12,Winter Wheat,Sandy Loam,Rainfed,3.67,22.83,183.03
-2024-07-04,Sunflower,Sandy Loam,Center Pivot,38.11,15.97,38.28
-2025-05-18,Soybeans,Sandy Loam,Center Pivot,8.29,0.7,876.65
-2024-04-06,Corn,Clay,Furrow,42.49,6.87,747.69
-2024-12-01,Soybeans,Silt Loam,Furrow,19.32,9.29,145.25
-2024-12-27,Barley,Clay Loam,Sprinkler,25.57,3.11,192.53
-2024-04-03,Winter Wheat,Sandy,Rainfed,28.24,24.75,704.36
-2025-04-16,Winter Wheat,Peat,Furrow,39.48,8.3,472.13
-2025-06-14,Corn,Silt Loam,Drip,39.34,23.68,26.95
-2025-04-25,Corn,Sandy,Furrow,37.2,12.99,31.57
-2024-05-30,Sunflower,Clay Loam,Sprinkler,36.58,18.65,73.48
-2024-12-20,Winter Wheat,Peat,Center Pivot,10.58,8.58,112.18
-2024-06-11,Canola,Sandy Loam,Sprinkler,34.03,12.53,27.13
-2024-12-28,Corn,Clay Loam,Center Pivot,5.89,8.29,119.91
-2024-01-26,Winter Wheat,Sandy,Rainfed,35.11,20.04,422.6
-2025-03-05,Winter Wheat,Silt Loam,Center Pivot,39.15,1.63,222.87
-2025-04-25,Corn,Sandy,Sprinkler,16.76,17.41,465.25
-2025-01-05,Barley,Silt Loam,Furrow,33.38,21.23,410.8
-2024-08-03,Corn,Silt Loam,Rainfed,32.89,10.99,177.55
-2024-01-01,Barley,Peat,Furrow,11.97,10.54,125.18
-2024-05-08,Barley,Silt Loam,Drip,13.92,9.85,667.11
-2024-08-08,Sunflower,Peat,Furrow,5.49,18.11,190.61
-2024-12-18,Soybeans,Silt Loam,Drip,13.07,20.03,877.7
-2024-04-06,Soybeans,Clay Loam,Center Pivot,18.62,15.97,714.5
-2024-11-28,Barley,Sandy Loam,Center Pivot,43.22,13.83,832.01
-2024-08-22,Soybeans,Clay Loam,Sprinkler,42.74,23.14,644.79
-2024-01-07,Sunflower,Clay,Drip,33.94,18.61,897.57
-2024-04-15,Barley,Clay,Center Pivot,31.5,7.27,407.92
-2025-04-19,Canola,Clay,Center Pivot,22.89,15.65,566.19
-2024-12-08,Corn,Peat,Sprinkler,12.77,16.84,847.32
-2025-04-21,Canola,Sandy,Furrow,29.04,16.22,759.18
-2024-09-09,Soybeans,Clay Loam,Drip,27.22,23.07,664.66
-2024-08-02,Soybeans,Sandy Loam,Sprinkler,24.97,9.5,730.16
-2024-01-05,Canola,Peat,Sprinkler,29.62,10.68,735.71
-2024-08-20,Sunflower,Sandy Loam,Furrow,13.6,22.3,409.45
-2025-02-04,Soybeans,Sandy Loam,Rainfed,16.38,5.51,132.7
-2025-02-04,Soybeans,Clay Loam,Rainfed,10.44,9.99,437.08
-2024-05-25,Corn,Clay Loam,Sprinkler,30.49,11.29,823.0
-2024-05-09,Barley,Silt Loam,Furrow,37.31,23.81,66.16
-2024-02-01,Canola,Sandy Loam,Furrow,18.22,23.79,819.08
-2024-06-10,Barley,Clay,Rainfed,7.37,2.98,577.37
-2024-10-14,Sunflower,Peat,Furrow,28.89,18.01,780.38
-2024-12-26,Soybeans,Silt Loam,Center Pivot,5.59,19.23,733.34
-2024-04-21,Soybeans,Silt Loam,Furrow,16.28,8.73,841.51
-2024-04-27,Barley,Silt Loam,Sprinkler,1.84,5.95,75.63
-2024-03-12,Barley,Sandy,Center Pivot,8.92,1.19,665.58
-2024-03-26,Soybeans,Clay Loam,Rainfed,27.11,16.0,632.46
-2024-05-23,Sunflower,Clay,Center Pivot,39.46,1.78,879.11
-2025-02-21,Soybeans,Peat,Sprinkler,30.36,22.24,318.14
-2025-03-12,Winter Wheat,Silt Loam,Rainfed,15.69,9.93,803.42
-2025-01-18,Soybeans,Clay,Drip,16.99,8.39,91.87
-2024-01-11,Barley,Clay Loam,Sprinkler,44.78,3.55,248.99
-2024-04-14,Winter Wheat,Sandy,Center Pivot,21.36,2.71,424.06
-2025-01-10,Canola,Clay,Rainfed,26.32,12.21,859.8
-2024-04-27,Winter Wheat,Clay,Sprinkler,33.91,14.45,120.36
-2024-06-07,Corn,Silt Loam,Center Pivot,13.21,12.14,587.33
-2024-03-17,Soybeans,Clay Loam,Sprinkler,29.3,7.49,669.66
-2024-02-05,Winter Wheat,Clay Loam,Furrow,30.18,14.38,439.3
-2025-01-01,Canola,Clay,Center Pivot,38.88,24.78,888.28
-2025-01-20,Soybeans,Clay Loam,Furrow,3.73,18.29,314.11
-2024-03-14,Soybeans,Sandy Loam,Drip,7.97,22.2,691.81
-2024-01-29,Sunflower,Sandy,Center Pivot,31.94,9.98,426.35
-2025-02-04,Soybeans,Sandy,Center Pivot,15.95,24.12,895.89
-2024-02-26,Winter Wheat,Sandy Loam,Furrow,36.47,6.55,266.0
-2024-01-25,Soybeans,Clay Loam,Rainfed,19.74,22.57,869.85
-2024-06-17,Corn,Peat,Sprinkler,43.82,4.18,296.21
-2025-05-29,Sunflower,Silt Loam,Drip,42.66,11.95,538.15
-2025-06-13,Corn,Clay Loam,Drip,3.07,3.21,70.83
-2024-11-29,Soybeans,Peat,Furrow,21.38,15.29,165.89
-2024-09-23,Corn,Silt Loam,Rainfed,43.3,3.29,649.1
-2025-03-10,Soybeans,Sandy Loam,Sprinkler,33.91,1.04,417.04
-2024-05-29,Corn,Clay Loam,Drip,12.29,6.12,290.13
-2025-05-17,Winter Wheat,Clay Loam,Furrow,32.3,19.03,508.22
-2024-05-27,Canola,Clay Loam,Sprinkler,0.81,11.58,132.54
-2024-01-23,Winter Wheat,Peat,Center Pivot,24.47,13.93,184.92
-2025-05-01,Corn,Peat,Sprinkler,27.17,11.85,649.54
-2025-01-15,Corn,Peat,Sprinkler,1.39,19.38,214.56
-2025-01-22,Corn,Sandy,Furrow,19.36,6.71,155.46
-2024-05-02,Winter Wheat,Clay,Center Pivot,16.17,22.7,814.88
-2025-06-07,Corn,Peat,Center Pivot,8.83,13.21,281.07
-2024-06-27,Sunflower,Silt Loam,Rainfed,27.34,21.09,435.74
-2024-06-14,Winter Wheat,Sandy Loam,Rainfed,23.89,23.75,159.59
-2024-04-19,Barley,Clay,Sprinkler,39.54,15.66,187.55
-2024-06-09,Barley,Sandy,Rainfed,39.48,24.73,464.0
-2024-12-28,Sunflower,Clay,Center Pivot,15.43,16.34,52.5
-2024-07-03,Soybeans,Peat,Center Pivot,41.61,6.55,575.16
-2024-09-15,Soybeans,Sandy Loam,Sprinkler,37.77,6.38,162.62
-2025-02-20,Sunflower,Clay,Drip,4.09,21.8,452.68
-2024-10-14,Soybeans,Clay,Furrow,22.42,7.65,351.6
-2024-12-07,Soybeans,Clay,Furrow,39.74,4.4,870.44
-2025-05-29,Winter Wheat,Sandy Loam,Furrow,32.62,18.85,153.62
-2025-05-15,Sunflower,Sandy Loam,Furrow,2.75,10.3,525.99
-2024-06-01,Winter Wheat,Sandy Loam,Furrow,5.5,24.46,340.39
-2025-05-11,Soybeans,Silt Loam,Center Pivot,41.07,6.5,192.93
-2025-04-23,Barley,Peat,Furrow,20.56,16.14,540.38
-2024-12-19,Sunflower,Sandy,Rainfed,41.62,19.53,619.34
-2024-04-23,Barley,Sandy Loam,Sprinkler,17.81,17.31,206.53
-2024-01-18,Soybeans,Clay,Center Pivot,15.46,19.55,555.26
-2024-10-03,Sunflower,Peat,Center Pivot,34.29,21.05,254.96
-2024-05-23,Winter Wheat,Silt Loam,Rainfed,12.95,18.46,106.04
-2024-01-04,Winter Wheat,Clay Loam,Center Pivot,12.85,1.66,419.34
-2024-08-27,Corn,Sandy Loam,Drip,3.52,23.52,448.34
-2024-08-09,Winter Wheat,Sandy Loam,Furrow,27.62,6.93,796.46
-2024-07-21,Sunflower,Sandy,Drip,19.1,4.25,858.22
-2024-01-20,Canola,Sandy,Rainfed,9.14,2.43,888.55
-2025-05-08,Soybeans,Silt Loam,Drip,35.77,11.52,470.67
-2024-01-30,Sunflower,Silt Loam,Sprinkler,23.93,14.34,43.04
-2024-09-15,Winter Wheat,Clay Loam,Furrow,14.12,24.5,144.99
-2024-01-26,Winter Wheat,Clay,Furrow,36.87,3.8,541.73
-2024-09-30,Canola,Silt Loam,Sprinkler,9.02,12.2,594.81
-2024-07-10,Sunflower,Sandy Loam,Rainfed,26.23,11.37,493.2
-2024-03-22,Winter Wheat,Clay,Sprinkler,1.9,6.06,179.4
-2025-02-19,Barley,Sandy Loam,Sprinkler,3.65,1.49,488.73
-2025-05-18,Soybeans,Clay,Drip,0.56,7.61,97.04
-2024-08-06,Canola,Sandy Loam,Furrow,5.92,4.03,609.57
-2024-12-11,Sunflower,Sandy,Rainfed,43.38,13.07,645.91
-2024-06-29,Corn,Clay,Rainfed,4.7,15.08,33.44
-2025-01-10,Soybeans,Sandy,Drip,1.28,22.56,318.46
-2025-01-21,Barley,Clay,Center Pivot,24.11,8.05,723.99
-2024-01-08,Winter Wheat,Silt Loam,Center Pivot,16.43,20.88,119.38
-2024-08-01,Canola,Clay,Furrow,25.81,3.36,577.23
-2024-04-19,Soybeans,Clay Loam,Drip,20.76,6.02,703.52
-2024-03-27,Canola,Sandy Loam,Furrow,7.14,11.93,290.31
-2024-01-24,Barley,Sandy,Center Pivot,34.46,2.0,125.29
-2024-09-23,Winter Wheat,Sandy,Sprinkler,21.0,17.88,568.92
-2025-05-11,Barley,Clay,Drip,22.52,8.82,213.73
-2024-12-24,Corn,Peat,Drip,32.37,6.04,567.96
-2025-06-22,Barley,Clay,Drip,8.53,22.02,65.5
-2024-11-30,Winter Wheat,Sandy,Center Pivot,22.02,15.53,400.14
-2024-01-25,Corn,Peat,Sprinkler,26.91,10.76,229.85
-2024-12-17,Canola,Sandy Loam,Center Pivot,24.14,0.92,67.47
-2025-06-10,Winter Wheat,Peat,Rainfed,33.09,12.36,660.09
-2024-02-28,Corn,Sandy,Sprinkler,35.55,7.99,39.09
-2024-03-08,Canola,Peat,Rainfed,42.95,9.48,547.68
-2025-02-09,Barley,Clay Loam,Center Pivot,16.43,17.82,697.04
-2025-01-13,Barley,Peat,Center Pivot,9.52,7.4,68.88
-2024-09-25,Canola,Sandy,Center Pivot,5.37,2.1,608.54
-2024-02-20,Canola,Clay,Sprinkler,31.39,20.18,312.09
-2024-12-29,Barley,Peat,Sprinkler,33.09,24.61,421.93
-2025-03-26,Soybeans,Sandy Loam,Drip,10.37,24.49,612.25
-2025-05-08,Sunflower,Clay Loam,Furrow,38.78,21.39,105.71
-2024-07-24,Canola,Silt Loam,Sprinkler,7.65,23.96,560.82
-2024-07-08,Barley,Clay Loam,Furrow,40.07,19.46,360.86
-2024-09-21,Soybeans,Sandy,Furrow,44.65,16.37,406.56
-2024-06-27,Sunflower,Silt Loam,Sprinkler,5.1,21.05,722.35
-2025-05-01,Sunflower,Sandy Loam,Rainfed,31.75,10.12,882.54
-2024-02-15,Soybeans,Peat,Sprinkler,32.84,22.14,823.91
-2024-12-11,Canola,Clay Loam,Sprinkler,31.7,19.43,694.0
-2024-06-07,Soybeans,Sandy Loam,Rainfed,14.85,24.07,533.07
-2025-01-02,Canola,Clay,Sprinkler,43.51,16.46,289.78
-2025-02-01,Barley,Silt Loam,Rainfed,44.91,21.25,70.35
-2024-01-23,Barley,Silt Loam,Rainfed,2.04,20.23,579.58
-2024-06-16,Barley,Sandy Loam,Drip,34.37,16.85,386.3
-2024-03-23,Winter Wheat,Sandy Loam,Furrow,40.71,10.22,807.9
-2024-07-22,Winter Wheat,Sandy Loam,Drip,20.97,1.15,592.09
-2024-06-22,Winter Wheat,Clay,Rainfed,13.7,11.5,847.15
-2024-12-24,Soybeans,Sandy,Rainfed,28.08,24.76,662.13
-2025-03-03,Corn,Clay,Center Pivot,24.53,12.0,566.4
-2024-05-12,Corn,Clay Loam,Drip,33.27,6.15,400.45
-2025-03-12,Sunflower,Sandy Loam,Drip,5.43,11.24,264.25
-2024-12-11,Canola,Clay,Rainfed,18.11,1.92,734.75
-2024-12-31,Winter Wheat,Sandy Loam,Rainfed,23.06,2.33,312.87
-2024-05-28,Winter Wheat,Silt Loam,Center Pivot,26.04,4.01,148.93
-2024-07-26,Winter Wheat,Clay Loam,Drip,17.54,21.17,32.2
-2024-01-09,Winter Wheat,Peat,Sprinkler,6.49,4.45,211.66
-2024-10-17,Sunflower,Silt Loam,Rainfed,9.35,16.43,678.52
-2025-02-22,Sunflower,Sandy Loam,Sprinkler,2.44,3.81,396.46
-2024-08-18,Winter Wheat,Silt Loam,Furrow,37.29,4.5,117.8
-2024-05-26,Soybeans,Peat,Furrow,28.32,24.62,38.28
-2024-10-17,Barley,Clay Loam,Rainfed,16.14,2.94,439.09
-2024-08-05,Barley,Sandy,Rainfed,34.14,3.99,66.95
-2024-10-08,Corn,Sandy Loam,Furrow,34.72,18.51,642.32
-2024-09-15,Winter Wheat,Sandy,Center Pivot,5.65,8.51,816.18
-2025-06-06,Winter Wheat,Clay Loam,Sprinkler,25.71,19.86,680.32
-2025-02-23,Winter Wheat,Silt Loam,Center Pivot,1.86,4.95,800.53
-2025-05-22,Corn,Sandy,Sprinkler,9.57,22.59,199.56
-2025-01-31,Canola,Peat,Furrow,17.37,18.9,876.18
-2024-04-13,Soybeans,Sandy,Sprinkler,8.72,1.38,835.09
-2024-11-19,Canola,Clay Loam,Furrow,22.61,3.86,162.34
-2025-01-04,Soybeans,Peat,Furrow,40.91,10.84,867.11
-2024-11-19,Corn,Peat,Sprinkler,44.95,23.57,775.25
-2024-01-07,Canola,Sandy,Rainfed,18.4,9.82,300.44
-2025-01-21,Corn,Clay Loam,Center Pivot,32.4,10.86,304.61
-2024-05-01,Soybeans,Clay Loam,Center Pivot,18.11,20.22,519.86
-2025-01-28,Soybeans,Clay,Rainfed,34.53,1.5,648.51
-2024-01-14,Winter Wheat,Peat,Center Pivot,42.7,12.91,536.44
-2025-04-23,Soybeans,Clay,Center Pivot,15.75,10.48,658.83
-2024-03-25,Soybeans,Peat,Rainfed,27.59,13.27,509.24
-2024-01-29,Winter Wheat,Clay Loam,Sprinkler,12.0,15.25,473.11
-2024-02-12,Soybeans,Peat,Center Pivot,20.45,10.32,184.44
-2024-04-24,Soybeans,Sandy,Drip,22.1,11.58,679.11
-2024-05-14,Soybeans,Clay Loam,Center Pivot,3.52,4.78,653.53
-2024-12-06,Corn,Sandy,Furrow,14.09,13.71,607.62
-2025-05-27,Barley,Sandy,Furrow,19.88,12.0,295.16
-2025-03-10,Barley,Sandy,Center Pivot,41.04,16.18,371.02
-2024-05-20,Corn,Silt Loam,Center Pivot,43.39,17.09,57.97
-2024-04-22,Winter Wheat,Clay Loam,Center Pivot,24.92,20.95,896.38
-2025-04-22,Sunflower,Peat,Sprinkler,1.29,22.74,386.67
+snap_dt,plan_tier,reg_chnl,cntry_cd,actv_usr_cnt,churn_cnt,mrr_usd,nrr_pct
+2024-01-09,pro,paid_search,US,58925,8436,2224859.79,90.47
+2025-01-03,enterprise,partner,DE,130864,3528,1458369.58,67.88
+2024-11-16,free,paid_search,US,157953,8835,1866067.19,78.31
+2024-01-30,pro,outbound,DE,94175,7691,2091838.61,51.71
+2025-05-05,pro,referral,US,140876,14550,328829.52,131.23
+2024-04-28,business,organic,US,74185,226,1072384.6,73.61
+2024-05-17,pro,partner,FR,246856,4670,9536.63,95.94
+2024-04-09,business,organic,UK,171815,6047,1047086.68,81.2
+2024-06-29,free,referral,AU,157365,10955,2146140.2,76.28
+2024-04-04,free,organic,BR,233637,11238,1968670.26,168.95
+2024-07-06,pro,paid_search,DE,110168,11013,836248.06,176.84
+2025-03-14,free,referral,US,245317,8533,1782207.59,146.32
+2024-08-31,free,referral,IN,22503,8275,1781347.81,168.41
+2025-05-13,pro,referral,DE,247053,4354,1228568.48,71.46
+2024-08-30,business,paid_search,DE,179923,13033,259675.98,41.25
+2024-05-29,pro,organic,IN,144985,6403,2315437.24,86.57
+2025-03-01,enterprise,paid_search,DE,89122,5363,1431451.01,65.92
+2025-03-18,starter,paid_search,BR,50772,11927,446024.35,61.92
+2025-04-10,pro,outbound,AU,245639,10871,1684787.27,178.13
+2025-04-25,free,paid_search,BR,58805,4778,1927619.78,65.63
+2024-01-14,starter,referral,AU,220027,355,278624.98,90.47
+2024-10-04,pro,referral,DE,14262,126,1062474.07,44.86
+2024-05-24,business,outbound,DE,200316,12762,2374134.57,138.04
+2024-05-12,business,partner,DE,217396,2266,1468461.77,108.29
+2024-05-10,starter,referral,UK,61228,9037,1962067.15,57.66
+2025-03-21,starter,referral,UK,244238,8861,378626.41,77.64
+2025-03-03,pro,outbound,UK,92958,3380,667722.75,47.68
+2024-04-25,starter,outbound,BR,39589,6684,2407826.74,176.74
+2024-08-09,starter,partner,FR,104873,6285,201966.68,82.87
+2025-02-04,enterprise,referral,UK,243081,7541,2235256.69,48.81
+2024-03-21,starter,organic,IN,28373,12855,158898.26,162.0
+2024-12-06,business,paid_search,FR,173243,13740,1486058.34,116.54
+2024-08-24,starter,partner,US,34023,1299,34497.49,119.84
+2025-05-15,free,outbound,AU,171324,6436,2255831.69,93.69
+2025-02-03,free,partner,DE,38555,4418,1336766.2,132.42
+2024-05-05,enterprise,organic,US,235937,11818,1343344.75,82.49
+2025-03-26,starter,paid_search,UK,228428,5188,971263.56,122.91
+2025-03-07,free,outbound,BR,246103,7277,1743197.92,74.76
+2024-04-25,starter,paid_search,IN,219604,10599,1667849.81,99.51
+2024-10-06,starter,partner,BR,96480,9528,1504197.78,73.45
+2025-03-04,business,organic,DE,116451,11152,1153795.6,169.01
+2024-05-05,enterprise,outbound,IN,78473,6464,473766.72,108.18
+2024-05-12,enterprise,paid_search,DE,123042,8120,1448779.4,123.8
+2024-03-30,free,paid_search,DE,59475,4082,2347617.2,124.42
+2024-01-05,free,paid_search,UK,240015,11656,747680.87,163.41
+2024-09-25,enterprise,paid_search,IN,104463,12994,1151190.94,110.28
+2024-01-09,free,organic,IN,84005,4532,143912.77,173.78
+2024-11-10,free,referral,AU,233819,7466,213255.44,152.43
+2024-08-12,enterprise,referral,IN,86883,1569,498611.4,164.53
+2024-04-09,free,organic,US,105375,1676,1575409.97,122.08
+2024-07-14,enterprise,referral,UK,156982,2169,681125.79,81.8
+2024-01-09,business,organic,US,182639,9449,2374540.67,63.9
+2024-03-18,starter,referral,UK,106417,11794,1040503.76,134.71
+2024-09-11,enterprise,paid_search,DE,55564,1938,1560549.94,46.56
+2024-02-11,business,partner,AU,155474,14962,1413765.04,121.45
+2025-01-28,pro,partner,US,42534,5308,1242540.25,100.25
+2024-05-18,pro,organic,FR,154721,13400,999213.51,67.3
+2025-05-11,free,outbound,AU,160641,14994,1115354.35,162.43
+2024-04-01,enterprise,partner,DE,159724,12616,2490041.96,78.65
+2024-12-03,starter,paid_search,BR,87996,5705,230190.01,55.66
+2024-10-05,starter,referral,DE,99080,362,2415365.59,78.31
+2025-05-10,free,outbound,UK,66254,7620,633570.96,103.24
+2024-11-29,starter,outbound,IN,197342,7319,1995120.72,119.09
+2025-04-11,starter,organic,DE,179060,53,577336.86,172.98
+2024-09-07,free,outbound,US,172859,13030,978596.69,90.04
+2024-04-27,business,organic,DE,242829,2193,1781311.91,154.97
+2024-04-12,free,paid_search,DE,221705,9405,2311239.69,149.6
+2025-04-12,starter,partner,AU,107290,3938,1090760.26,84.11
+2024-04-19,pro,outbound,AU,189476,6214,1524112.77,132.04
+2025-01-29,business,organic,DE,161013,7048,868637.64,134.5
+2024-10-11,free,outbound,BR,134258,8815,523621.7,67.69
+2024-05-30,enterprise,outbound,FR,35010,7793,2350864.56,170.67
+2024-08-09,pro,paid_search,AU,123412,5467,2347621.36,48.91
+2025-03-06,pro,paid_search,FR,54239,607,2440087.34,48.65
+2024-09-01,business,organic,US,202115,1899,2445554.78,117.5
+2025-04-12,starter,organic,BR,184824,9360,2257321.27,83.86
+2025-05-25,starter,organic,IN,44773,9090,1401755.13,117.4
+2024-06-10,enterprise,partner,AU,22582,10024,772980.17,81.52
+2024-10-10,business,referral,BR,27147,1206,978946.03,164.13
+2024-10-11,enterprise,referral,IN,195897,3747,731572.01,103.63
+2024-10-20,business,paid_search,DE,235379,3523,794067.26,55.8
+2024-02-08,free,outbound,DE,72432,12219,1915886.35,78.23
+2024-07-18,business,referral,DE,27311,11397,2349448.06,62.48
+2024-11-10,enterprise,referral,UK,176930,11275,1424920.82,178.44
+2025-05-10,free,paid_search,IN,130649,14579,1783132.54,147.07
+2024-05-08,starter,organic,DE,151418,13738,685200.55,73.43
+2024-12-13,business,organic,AU,125455,9661,2237554.63,68.91
+2025-02-17,free,organic,IN,202435,7633,1326472.93,139.36
+2025-05-14,enterprise,referral,DE,146224,12265,1655626.28,149.7
+2024-04-03,free,organic,BR,200553,8245,2160043.4,109.77
+2024-12-30,free,outbound,FR,164440,11514,790585.1,169.17
+2024-06-17,business,organic,AU,171238,2703,470262.15,100.63
+2024-08-25,free,referral,BR,184145,7695,1392858.27,123.53
+2024-01-08,free,paid_search,AU,144547,7254,2043855.2,48.71
+2025-01-25,business,organic,AU,89940,7270,2145780.69,115.61
+2024-01-18,business,organic,BR,99066,7793,125398.28,72.05
+2024-07-20,enterprise,referral,AU,5582,9210,1981524.51,57.05
+2024-09-25,starter,outbound,AU,9295,9081,688142.89,90.69
+2024-12-27,enterprise,partner,UK,116205,14289,265292.23,123.49
+2024-09-09,pro,partner,IN,200493,3293,742100.48,158.41
+2025-03-28,business,partner,FR,176807,2159,304306.37,86.64
+2024-03-09,free,referral,AU,96222,10941,933524.12,112.19
+2024-05-21,business,partner,BR,119882,3652,1212138.01,133.5
+2024-05-19,business,outbound,FR,209529,4208,2307192.12,41.51
+2024-07-24,pro,referral,IN,196923,2692,2187236.3,119.1
+2024-01-02,pro,partner,US,152556,7163,1880608.37,124.46
+2024-08-19,free,organic,DE,212266,6142,244739.55,56.95
+2024-07-24,starter,partner,BR,244802,14628,1125677.12,102.41
+2024-11-12,business,organic,FR,155742,10128,826781.83,101.7
+2024-11-06,enterprise,partner,AU,242470,8773,2444765.78,144.39
+2024-05-31,pro,outbound,IN,19502,8660,2286940.56,84.12
+2024-08-18,pro,referral,US,193964,4275,2284672.2,90.89
+2024-09-28,business,referral,UK,24026,13308,2095961.26,48.46
+2025-03-26,business,paid_search,IN,55423,1745,1873238.5,74.57
+2024-02-11,enterprise,partner,BR,84793,11033,1776901.17,131.59
+2024-11-28,business,outbound,DE,29175,1860,1317345.85,84.15
+2024-02-13,free,organic,DE,178991,7476,1455695.7,123.16
+2024-05-23,business,paid_search,DE,87359,3246,1200651.6,90.63
+2024-08-27,business,paid_search,UK,42158,8307,1264840.41,122.54
+2025-03-13,enterprise,referral,AU,53686,2944,402615.12,131.2
+2024-06-30,business,organic,FR,6192,7543,608072.79,96.72
+2024-09-26,pro,paid_search,DE,240134,467,585427.83,163.97
+2024-11-08,free,referral,AU,237796,3702,852328.04,40.83
+2025-02-13,starter,referral,IN,63610,11031,1166701.61,58.19
+2024-08-01,business,partner,US,174818,7795,1108259.26,117.65
+2024-11-01,pro,referral,DE,11608,7427,2291185.42,62.2
+2025-03-28,business,organic,IN,87393,9547,410117.39,81.68
+2024-08-24,starter,referral,AU,169067,7879,1081946.15,73.49
+2025-05-21,business,referral,FR,56919,3946,625955.16,153.84
+2024-08-01,free,paid_search,DE,84787,13350,2423341.07,75.9
+2024-08-21,enterprise,paid_search,DE,32784,4697,1264672.14,103.77
+2024-01-13,business,referral,US,37829,273,1493932.47,161.35
+2024-10-14,business,referral,US,1553,2843,2402567.47,106.38
+2024-09-10,starter,paid_search,DE,84658,6136,1720543.7,163.18
+2024-08-12,business,outbound,BR,106435,146,1280336.72,125.87
+2024-12-02,starter,partner,DE,105650,8186,912432.31,152.79
+2024-10-22,enterprise,organic,US,71229,14299,1936103.74,94.59
+2025-05-25,enterprise,organic,AU,132933,8396,1022476.32,116.88
+2024-08-07,enterprise,paid_search,BR,6345,3106,1892397.31,42.64
+2024-08-23,pro,partner,DE,101444,963,501326.89,135.01
+2025-03-14,enterprise,paid_search,DE,153225,8109,59261.68,42.96
+2024-09-19,pro,paid_search,DE,191019,10282,787200.33,144.62
+2024-05-15,enterprise,outbound,UK,248182,9623,1796944.03,179.04
+2024-10-07,enterprise,outbound,DE,109844,8512,2483528.41,173.97
+2024-09-30,starter,partner,FR,235047,5519,511362.55,128.05
+2024-08-08,business,paid_search,IN,229093,5825,2033483.59,149.88
+2024-10-13,enterprise,partner,UK,34798,12936,1505971.69,72.4
+2024-11-08,enterprise,paid_search,DE,125211,725,1181061.24,104.67
+2025-06-08,starter,organic,US,56070,4482,2288839.1,143.62
+2024-02-07,pro,outbound,FR,198269,4309,1373669.35,58.31
+2025-05-08,pro,outbound,DE,183792,14721,1384027.7,80.58
+2024-09-20,starter,organic,IN,243364,7527,94884.83,64.16
+2024-07-23,starter,referral,IN,14834,2718,1558901.76,76.19
+2024-11-25,free,outbound,US,108259,12719,1940750.27,55.64
+2024-03-03,business,outbound,US,91133,5606,1458571.82,68.77
+2025-02-05,free,outbound,US,163920,5776,2016173.07,126.97
+2024-02-20,free,partner,BR,132705,5057,1471706.98,174.03
+2024-08-20,free,partner,BR,142547,2254,1753051.62,116.41
+2024-04-18,pro,referral,UK,35511,6699,704628.69,169.55
+2024-06-12,starter,referral,AU,235283,8238,380054.0,91.2
+2024-09-11,pro,organic,FR,81245,6793,1412890.18,139.64
+2024-01-04,business,referral,AU,98304,5720,1831986.76,87.6
+2025-04-24,starter,organic,UK,57149,3445,1370407.2,111.64
+2025-02-12,starter,organic,IN,75840,12881,443997.8,60.85
+2025-06-01,free,outbound,IN,94686,12945,2016991.45,147.45
+2024-02-11,pro,organic,AU,65151,8441,440073.46,76.71
+2024-04-05,enterprise,referral,FR,113375,10652,1037673.11,105.82
+2024-09-21,pro,partner,BR,208272,13665,2152669.35,176.21
+2025-04-06,starter,organic,US,210917,2407,509419.22,105.74
+2024-06-13,starter,outbound,IN,153079,1910,758437.47,167.36
+2024-06-10,free,referral,FR,138177,2975,2390704.28,158.26
+2025-03-30,free,referral,IN,150571,8871,1242323.93,110.31
+2024-01-01,free,outbound,BR,126060,1100,657851.41,58.81
+2025-05-28,starter,organic,BR,17751,11007,13705.36,65.92
+2024-04-12,enterprise,organic,US,25499,749,1268003.52,99.12
+2024-06-21,enterprise,outbound,AU,119667,385,2169525.73,101.11
+2024-06-24,business,paid_search,FR,18460,14494,639188.15,147.6
+2025-04-29,enterprise,outbound,UK,32429,5299,1514944.28,144.25
+2025-03-19,starter,outbound,US,156443,8391,118869.79,51.3
+2024-07-01,starter,paid_search,BR,236396,7244,7799.01,91.45
+2024-07-03,free,organic,BR,8691,9708,1387101.48,45.49
+2025-03-14,pro,partner,IN,150579,14133,276455.68,71.86
+2024-06-01,pro,partner,US,113122,8357,2443304.39,173.84
+2025-03-07,starter,organic,US,9877,4840,1611769.81,77.43
+2025-03-16,business,paid_search,DE,195093,607,1230824.49,55.31
+2024-12-19,starter,organic,UK,176170,9673,1096066.9,135.89
+2025-02-05,pro,partner,BR,233585,6308,249009.92,53.4
+2024-05-03,business,partner,BR,165985,14331,1801397.1,168.18
+2024-10-30,business,organic,UK,178876,8778,2416300.65,127.74
+2024-03-15,business,referral,DE,90026,9511,1393046.51,136.85
+2024-02-01,business,partner,US,144775,9621,1416889.61,117.41
+2024-08-17,starter,referral,BR,155118,8145,500138.44,90.54
+2024-06-08,starter,outbound,US,29126,5820,504066.51,44.25
+2024-03-22,free,referral,IN,49804,6915,49398.46,80.11
+2024-10-11,starter,outbound,IN,59022,10243,1771956.36,48.39
+2025-04-16,business,outbound,AU,152470,3583,1958296.92,147.97
+2024-05-14,enterprise,organic,FR,135721,2738,1513435.02,100.21
+2024-04-06,pro,partner,BR,80686,13489,221001.43,134.5
+2025-04-13,free,partner,UK,197447,10242,231123.72,156.91
+2024-01-17,enterprise,outbound,US,172953,13069,844079.3,81.39
+2024-11-13,enterprise,paid_search,BR,34829,5510,1679935.07,162.45
+2024-10-28,pro,paid_search,BR,197451,8638,2027736.16,57.49
+2024-09-09,business,referral,AU,77388,9065,1620325.19,113.77
+2024-08-19,free,outbound,IN,116530,13419,214141.99,148.84
+2024-01-15,pro,outbound,US,45437,13161,1039797.85,143.58
+2025-04-08,business,outbound,UK,100820,3904,283072.82,132.51
+2024-02-06,business,organic,FR,57404,14528,962039.91,119.12
+2024-03-27,enterprise,organic,FR,183342,5583,2246014.49,70.85
+2025-04-20,pro,partner,US,147062,9145,2070834.3,73.38
+2024-07-13,pro,organic,UK,220362,14898,1579940.66,41.3
+2024-09-04,pro,outbound,IN,39515,6108,527047.98,102.76
+2024-12-11,enterprise,organic,DE,143673,9628,255043.11,77.15
+2024-10-31,free,outbound,AU,118019,14825,2122300.97,73.71
+2025-05-17,free,paid_search,BR,119040,9439,1256272.78,129.39
+2025-05-21,enterprise,paid_search,FR,188861,9864,205918.69,61.96
+2024-05-21,starter,paid_search,FR,103670,11822,2195484.47,73.11
+2025-02-16,business,partner,US,173818,11819,1358990.42,144.51
+2025-01-06,starter,organic,IN,69678,14220,2340552.23,95.58
+2024-05-14,business,referral,BR,31769,9734,93179.63,147.49
+2024-03-21,pro,referral,AU,198214,3766,584769.18,65.27
+2025-03-16,free,referral,UK,131464,918,830794.41,93.56
+2025-02-03,enterprise,paid_search,IN,61939,1196,291609.06,127.05
+2024-07-21,free,organic,DE,112949,14435,449353.68,121.48
+2024-06-07,enterprise,referral,US,158162,12350,1375865.09,81.44
+2025-01-07,free,paid_search,UK,61734,8901,787285.09,178.94
+2024-05-11,pro,partner,DE,45156,13500,1165730.08,94.57
+2024-09-07,enterprise,paid_search,US,247643,13052,297625.26,129.41
+2024-05-04,business,paid_search,DE,46109,5394,2418325.95,63.38
+2024-11-30,starter,paid_search,FR,83566,12142,1293024.3,64.28
+2024-07-19,business,organic,FR,99587,2986,823533.14,41.92
+2024-12-25,starter,referral,AU,215290,14758,1267349.91,73.26
+2024-06-26,enterprise,outbound,AU,69558,4742,1693684.4,67.95
+2024-12-03,free,referral,DE,55405,4194,1098337.96,151.31
+2024-11-26,free,referral,DE,31671,2735,1341584.92,64.87
+2024-08-31,business,referral,AU,190149,8330,1270297.58,91.9
+2024-10-21,pro,paid_search,BR,141296,13520,1652288.88,169.69
+2024-04-06,business,organic,UK,23570,8314,704007.33,93.63
+2025-02-08,enterprise,outbound,FR,113737,585,1918532.04,62.11
+2025-01-23,free,partner,IN,247111,800,1093960.58,164.32
+2024-06-08,business,partner,BR,230768,7774,2133133.24,62.78

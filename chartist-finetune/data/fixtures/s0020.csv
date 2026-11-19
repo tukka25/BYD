@@ -1,241 +1,241 @@
-attendanceDate,schoolType,gradeLevel,districtRegion,enrolledStudents,presentStudents,absentStudents,attendanceRate
-2024-07-10,Private,Grade 8,West,459,2332,34,36.4
-2025-05-12,Charter,Kindergarten,South,963,601,83,54.68
-2024-01-24,Charter,Kindergarten,East,1240,2176,43,85.75
-2025-03-25,Middle,Grade 12,Central,1334,1898,63,71.77
-2024-06-08,Private,Kindergarten,Central,1501,1258,39,92.88
-2025-05-13,High,Grade 8,South,2151,1194,71,36.39
-2025-04-02,Middle,Grade 5,East,2291,1468,237,2.21
-2024-08-10,Private,Grade 3,East,702,815,81,15.17
-2025-03-29,Charter,Grade 8,Central,1897,285,79,47.51
-2024-03-01,Primary,Grade 10,East,1629,1244,66,84.56
-2025-03-25,Charter,Grade 10,North,1637,1261,280,52.34
-2024-10-18,Primary,Kindergarten,South,1387,2276,60,73.18
-2024-12-28,Middle,Grade 1,East,1682,911,198,21.47
-2025-06-07,Middle,Grade 12,North,258,1699,199,95.77
-2025-01-15,Private,Grade 5,West,1052,1963,55,90.8
-2025-04-28,High,Kindergarten,West,628,57,158,19.89
-2024-01-25,High,Grade 1,East,1957,2145,224,38.65
-2025-04-02,Middle,Grade 10,East,195,1520,22,85.04
-2025-06-20,High,Kindergarten,West,600,1257,128,22.1
-2025-01-04,High,Grade 1,West,1218,2186,243,2.91
-2024-12-29,Middle,Grade 5,West,1627,784,175,0.81
-2024-01-08,High,Grade 5,Central,182,925,65,39.58
-2024-09-07,Primary,Grade 10,West,1204,2356,135,22.15
-2025-05-12,Primary,Grade 5,East,1924,367,270,3.5
-2024-10-11,Private,Grade 1,East,856,939,162,64.59
-2024-02-01,High,Kindergarten,West,1449,774,169,92.37
-2025-04-15,Primary,Grade 8,Central,861,959,278,50.57
-2024-10-12,Charter,Grade 1,North,1675,2399,194,13.64
-2024-07-01,Primary,Grade 1,South,746,1584,249,61.44
-2024-08-15,Middle,Grade 3,North,625,569,293,33.07
-2025-04-29,Middle,Kindergarten,West,815,75,212,20.35
-2025-03-11,Middle,Grade 1,South,468,504,285,86.68
-2024-09-10,Private,Grade 5,North,1083,1498,22,94.0
-2024-04-22,Middle,Kindergarten,North,1937,358,97,14.45
-2025-02-02,High,Grade 10,West,2391,372,12,88.56
-2024-03-21,Middle,Grade 12,West,2297,1550,202,93.86
-2024-10-12,High,Grade 8,Central,75,1653,157,55.78
-2024-02-01,Charter,Grade 12,West,870,1746,15,21.1
-2024-05-20,Private,Grade 5,South,57,2225,276,38.11
-2024-12-10,Primary,Grade 8,South,386,603,140,44.12
-2024-08-12,Charter,Grade 1,East,1177,1560,221,53.64
-2025-01-22,Middle,Grade 3,Central,369,232,148,92.48
-2024-03-06,High,Grade 1,East,2187,941,234,30.24
-2025-01-27,Private,Grade 5,North,1736,2141,160,0.55
-2024-02-07,Primary,Grade 1,Central,1243,249,164,9.66
-2024-01-19,Primary,Grade 8,West,989,1884,128,11.93
-2024-04-19,Charter,Grade 8,North,714,2195,135,64.3
-2025-03-25,Charter,Grade 3,North,1080,1918,44,0.83
-2024-09-22,Private,Grade 1,South,1739,1709,171,56.67
-2024-04-12,Middle,Grade 12,West,1520,527,161,85.04
-2024-05-03,Charter,Grade 10,South,1933,2285,203,95.8
-2024-11-13,Primary,Kindergarten,West,1168,46,88,45.31
-2024-02-12,High,Kindergarten,East,628,1122,171,32.63
-2024-12-17,High,Grade 12,East,835,328,99,8.63
-2024-10-02,Middle,Grade 8,South,1915,331,61,69.29
-2024-03-24,Primary,Grade 3,Central,1962,190,170,44.08
-2024-09-17,High,Grade 12,Central,115,344,289,46.19
-2025-06-21,Charter,Grade 5,East,879,414,258,99.18
-2024-09-14,Private,Grade 3,West,1137,667,98,36.04
-2024-01-22,High,Grade 8,East,910,2160,56,51.64
-2025-03-31,Primary,Grade 1,South,63,433,44,44.56
-2025-06-03,Charter,Grade 8,Central,1816,20,17,28.45
-2024-01-22,Charter,Grade 3,North,512,1661,194,95.84
-2024-07-09,Private,Grade 5,West,2188,1814,45,26.9
-2025-05-25,Middle,Grade 8,West,151,1159,249,23.3
-2024-07-25,Primary,Grade 1,South,473,781,41,47.21
-2025-02-07,Middle,Grade 10,East,930,2160,126,93.04
-2024-06-30,Middle,Kindergarten,North,1378,812,137,99.06
-2025-06-22,Private,Grade 12,Central,1129,2001,38,44.2
-2025-05-14,Charter,Grade 5,West,1020,367,217,52.41
-2024-03-23,High,Grade 12,West,1305,1327,158,92.2
-2025-02-07,Charter,Grade 3,South,1618,1103,259,69.04
-2024-08-14,Middle,Grade 10,South,1104,260,270,98.8
-2024-07-02,Middle,Grade 10,South,1159,1500,289,8.45
-2025-02-28,Primary,Kindergarten,South,2151,2150,297,47.92
-2025-01-18,High,Grade 1,Central,939,1815,220,99.99
-2024-08-30,Middle,Kindergarten,North,2270,1111,107,78.84
-2024-09-02,High,Grade 5,North,2372,468,104,1.98
-2024-01-22,Charter,Grade 1,North,930,2153,124,25.51
-2024-08-31,High,Kindergarten,North,2342,244,213,31.35
-2024-11-28,Private,Grade 12,North,1201,1021,85,23.74
-2025-05-16,Private,Grade 8,North,1455,2376,100,93.26
-2025-01-26,Primary,Grade 10,East,2319,1721,139,96.97
-2024-11-22,Middle,Grade 8,East,618,1650,245,8.96
-2024-01-05,Private,Grade 3,West,2362,117,10,5.87
-2024-04-16,High,Grade 3,South,946,2223,164,29.79
-2025-03-04,High,Kindergarten,West,1501,15,188,88.08
-2024-05-23,Private,Grade 10,West,773,432,22,13.95
-2024-02-01,Private,Grade 3,West,2285,1046,127,8.42
-2024-02-01,High,Grade 3,Central,206,552,98,21.73
-2024-10-26,Private,Grade 12,Central,471,322,233,61.33
-2025-02-03,Middle,Grade 5,North,1109,2157,79,37.01
-2024-09-20,High,Grade 10,North,494,620,78,70.92
-2024-07-22,Primary,Grade 12,North,1858,862,138,18.95
-2025-05-20,High,Grade 3,Central,858,1225,140,70.43
-2025-03-04,High,Grade 5,East,2332,215,300,95.98
-2025-04-15,Middle,Grade 1,West,1821,1981,122,79.48
-2024-08-13,Private,Grade 3,South,208,2231,274,16.99
-2024-07-25,Primary,Grade 10,South,630,1733,170,68.14
-2025-05-27,Private,Grade 5,East,1966,1891,209,3.28
-2025-02-28,Private,Grade 12,North,1297,45,46,92.24
-2025-04-15,Middle,Grade 8,South,2219,160,6,25.12
-2024-01-09,Charter,Kindergarten,West,730,1114,130,98.85
-2024-06-05,Private,Grade 5,South,593,221,226,31.93
-2024-02-08,Private,Grade 12,East,612,1141,99,82.46
-2024-06-05,High,Grade 5,East,1484,306,194,98.59
-2025-01-03,Middle,Grade 8,East,220,1095,107,90.53
-2024-06-30,Charter,Grade 8,Central,1241,1029,251,24.95
-2024-05-22,Private,Grade 1,South,1696,1508,95,21.62
-2024-08-04,Charter,Grade 1,Central,343,472,65,87.8
-2024-01-04,Private,Grade 1,North,710,477,13,22.97
-2024-02-23,Charter,Grade 1,Central,2311,1430,26,78.1
-2024-11-14,Charter,Grade 8,West,955,2120,202,92.92
-2024-01-29,Private,Grade 5,East,233,1080,214,89.85
-2024-06-20,Charter,Grade 12,South,1174,822,66,84.61
-2025-06-22,High,Grade 12,South,74,623,80,27.07
-2025-05-01,Charter,Grade 3,West,93,493,133,9.51
-2024-03-24,Primary,Grade 10,North,76,527,114,55.62
-2024-05-15,Private,Grade 1,East,1455,390,109,9.29
-2025-03-24,Charter,Grade 3,South,1852,1767,5,78.91
-2024-04-17,Charter,Grade 3,North,1630,1460,246,0.94
-2024-05-30,Private,Grade 3,West,655,401,3,66.06
-2024-07-07,Middle,Grade 8,West,545,2255,139,9.52
-2025-05-14,Primary,Grade 12,South,1156,651,140,96.95
-2024-03-20,Private,Grade 5,South,1729,1147,11,18.12
-2024-11-03,High,Grade 5,North,1086,1900,251,34.62
-2024-11-21,Primary,Grade 3,North,1956,1265,268,77.76
-2025-03-30,Charter,Grade 1,Central,1302,1403,36,4.03
-2024-06-19,Primary,Grade 12,East,1096,1365,272,58.58
-2024-04-28,Private,Grade 3,East,1911,905,126,70.92
-2024-08-24,Primary,Grade 5,West,1763,698,11,17.43
-2025-03-26,Charter,Grade 10,Central,1057,1363,272,52.83
-2025-05-10,Charter,Grade 10,Central,646,451,115,22.42
-2024-06-17,Middle,Grade 12,North,774,1522,147,73.86
-2025-02-25,Private,Grade 12,East,1126,1140,4,45.99
-2024-08-01,Private,Kindergarten,West,1067,2206,3,85.56
-2025-03-02,High,Grade 3,North,245,1042,295,52.0
-2024-10-03,High,Grade 3,South,961,1218,215,70.77
-2025-03-24,Charter,Grade 5,East,1713,1230,267,24.67
-2024-08-23,Middle,Grade 8,North,1635,1079,13,60.47
-2025-03-21,High,Kindergarten,Central,2314,583,202,15.1
-2025-01-18,Private,Grade 3,West,550,2286,206,78.96
-2025-03-10,Middle,Grade 5,South,2356,452,155,57.14
-2024-09-22,High,Grade 8,West,767,1165,159,21.61
-2024-05-26,Middle,Grade 1,Central,1993,739,198,43.87
-2024-05-25,High,Grade 5,North,588,17,226,33.45
-2024-05-30,Primary,Grade 1,West,1645,1680,28,42.03
-2024-05-21,Middle,Kindergarten,Central,1150,541,135,87.54
-2024-06-29,Middle,Grade 5,North,1295,1915,293,78.56
-2024-06-08,Primary,Grade 5,South,2377,302,51,3.85
-2024-10-27,Primary,Grade 3,East,2225,1421,201,55.41
-2024-11-11,Charter,Grade 8,South,1911,687,129,81.98
-2024-03-12,Private,Grade 1,North,2178,1033,198,30.95
-2025-04-03,Middle,Grade 12,North,1208,1285,14,90.25
-2025-01-04,Private,Grade 3,West,358,60,187,37.4
-2024-09-15,Charter,Grade 12,North,275,1345,1,94.49
-2024-04-11,Middle,Grade 8,West,2380,1213,136,39.85
-2025-05-22,Private,Grade 8,South,520,1384,24,86.8
-2024-10-24,Private,Grade 10,East,1726,1208,25,98.39
-2024-06-17,Primary,Kindergarten,Central,1177,2194,212,30.73
-2024-12-27,Charter,Grade 8,Central,1505,741,78,38.24
-2025-06-21,Private,Grade 5,East,428,1031,133,67.4
-2025-02-10,Middle,Kindergarten,Central,154,1031,119,45.97
-2025-01-26,High,Grade 1,West,975,1950,136,43.94
-2024-11-12,Primary,Grade 12,West,995,1763,189,58.56
-2024-05-18,Middle,Kindergarten,East,1404,1227,53,12.02
-2024-06-20,Primary,Grade 5,South,1782,960,101,78.41
-2024-12-20,Private,Grade 12,South,1000,1589,38,73.73
-2024-01-30,High,Kindergarten,North,1132,931,244,94.81
-2025-05-14,Charter,Grade 8,West,1125,1343,139,90.83
-2025-01-21,High,Kindergarten,Central,918,1304,264,41.21
-2025-01-26,Charter,Grade 12,North,105,2062,128,39.94
-2025-01-27,Charter,Grade 5,Central,637,1668,251,33.78
-2024-02-13,High,Kindergarten,West,68,2394,218,56.11
-2025-05-07,Primary,Grade 1,North,1947,87,230,57.57
-2024-07-29,High,Grade 8,East,755,324,115,68.66
-2024-06-23,Private,Grade 5,Central,2294,1239,131,64.87
-2024-07-29,Charter,Kindergarten,South,1575,1236,297,14.03
-2024-11-27,Private,Grade 5,West,1560,46,106,40.53
-2024-01-06,Middle,Grade 1,North,2018,1409,222,62.39
-2025-04-08,Charter,Grade 12,Central,1243,2096,117,38.67
-2025-01-02,Charter,Grade 3,North,421,1522,136,89.36
-2025-03-18,High,Kindergarten,North,1611,1966,64,27.79
-2024-07-22,Charter,Grade 5,Central,852,896,72,98.29
-2024-12-22,Private,Grade 1,West,1387,1357,205,66.06
-2025-01-04,Charter,Grade 10,West,980,130,186,60.77
-2024-09-06,High,Grade 1,South,1248,706,43,41.47
-2024-03-05,Charter,Grade 12,South,2393,1703,167,66.75
-2024-07-01,Primary,Kindergarten,East,2318,1030,92,29.2
-2024-11-19,Middle,Grade 3,North,369,392,285,57.24
-2024-06-23,Middle,Grade 10,North,338,1499,7,14.43
-2025-03-08,High,Grade 8,Central,966,560,16,59.55
-2024-10-04,Primary,Grade 5,Central,1031,1720,208,15.3
-2024-09-23,Charter,Grade 8,West,2287,182,75,36.72
-2025-05-06,Charter,Grade 1,East,1421,111,262,74.72
-2025-01-30,High,Grade 10,South,1391,289,258,89.31
-2024-11-14,Primary,Grade 1,South,353,1652,279,35.54
-2024-12-03,Private,Kindergarten,Central,1573,2106,155,74.91
-2025-02-24,Middle,Grade 8,North,1336,799,198,3.34
-2025-06-20,High,Kindergarten,East,1919,359,98,5.45
-2024-07-28,Private,Grade 10,South,1124,1192,48,34.43
-2024-06-26,Primary,Grade 12,North,2295,587,226,83.14
-2025-06-06,Primary,Kindergarten,East,653,2228,242,69.46
-2024-10-04,Charter,Grade 1,Central,1928,1714,264,67.55
-2024-04-06,Middle,Grade 5,West,1245,1195,217,68.79
-2025-05-05,Private,Grade 1,East,769,779,293,82.47
-2024-03-16,High,Grade 12,East,1189,1782,132,19.98
-2024-09-06,Primary,Grade 10,Central,1049,912,205,11.31
-2024-04-29,Middle,Grade 5,East,346,627,287,22.21
-2025-06-05,Middle,Grade 12,East,1764,1862,120,70.05
-2025-03-17,Primary,Grade 10,East,841,2310,181,47.98
-2024-12-24,High,Grade 5,North,1878,2290,78,43.45
-2024-04-27,High,Grade 10,North,147,1239,19,57.84
-2025-05-11,Charter,Grade 1,Central,2022,1985,284,54.51
-2025-03-13,Charter,Grade 10,North,1744,1339,234,26.21
-2024-11-10,Private,Grade 1,South,1301,186,217,66.39
-2025-03-06,Primary,Kindergarten,North,43,2278,81,83.08
-2024-12-29,Middle,Grade 10,Central,699,1859,257,79.37
-2024-09-07,Middle,Grade 8,West,2206,2128,192,25.76
-2025-01-14,Charter,Grade 1,North,930,1401,208,76.54
-2025-03-08,Primary,Grade 10,East,1761,266,228,40.17
-2025-01-30,Primary,Grade 8,West,2173,47,272,47.21
-2024-02-11,High,Grade 5,Central,1954,700,160,86.14
-2024-12-13,Charter,Grade 3,South,1370,2097,123,11.64
-2025-01-12,Charter,Grade 3,East,1133,265,246,95.45
-2024-10-27,High,Grade 12,South,1934,512,230,58.06
-2024-09-08,Middle,Kindergarten,South,53,24,39,41.32
-2024-12-21,High,Grade 3,West,630,1609,43,40.33
-2025-03-26,Charter,Grade 3,North,1887,1963,31,41.12
-2024-03-15,Charter,Grade 3,North,1185,126,141,12.01
-2024-06-19,Primary,Grade 3,Central,1542,1961,21,5.92
-2024-12-24,Primary,Grade 5,South,428,1401,18,8.99
-2024-05-30,Charter,Grade 5,North,257,855,205,90.16
-2025-04-13,Middle,Grade 8,East,1534,1066,161,33.78
-2024-03-04,Middle,Kindergarten,South,1669,9,123,28.49
-2024-02-20,Private,Grade 5,North,1626,837,90,85.37
-2024-10-16,High,Grade 8,South,474,2357,43,66.4
-2025-01-31,High,Grade 10,Central,882,320,58,58.2
-2024-08-18,Middle,Grade 3,West,1562,2013,47,85.95
-2025-04-10,Primary,Grade 1,East,1277,2269,258,90.09
+flagTimestamp,merchantCategory,cardType,alertStatus,transactionAmount,riskScore,velocityCount24h
+2024-08-29,electronics,American Express,false positive,12218.57,25.89,119
+2024-11-25,entertainment,American Express,confirmed fraud,8590.7,84.83,134
+2024-11-02,gas station,Visa,under review,24971.98,79.89,147
+2025-02-07,gas station,American Express,closed,13655.51,16.33,31
+2025-03-10,entertainment,Visa,confirmed fraud,4565.79,70.74,66
+2025-02-25,travel,Mastercard,false positive,8729.43,28.89,108
+2024-05-04,electronics,Mastercard,closed,22676.03,80.54,4
+2024-06-04,gas station,Discover,closed,20744.91,53.67,113
+2024-03-04,electronics,Mastercard,open,5338.68,96.5,45
+2025-01-09,entertainment,American Express,confirmed fraud,4329.0,90.25,142
+2024-10-28,pharmacy,Visa,false positive,17401.14,12.76,94
+2025-05-15,travel,Visa,open,8347.33,36.08,8
+2024-04-28,gas station,Visa,under review,2272.81,52.23,76
+2024-10-04,electronics,American Express,confirmed fraud,9014.64,35.52,1
+2025-05-14,online retail,Mastercard,closed,19713.51,25.66,96
+2025-04-16,electronics,Mastercard,open,23467.79,23.85,4
+2024-06-29,travel,Visa,closed,21370.13,43.73,50
+2025-03-22,online retail,American Express,open,16060.07,40.63,29
+2024-09-18,travel,Visa,false positive,5467.03,30.32,128
+2024-05-07,electronics,American Express,open,2941.09,84.9,127
+2024-05-16,grocery,American Express,open,9549.71,82.59,116
+2025-03-22,pharmacy,Discover,false positive,23747.62,49.13,22
+2024-10-07,travel,American Express,closed,20073.22,32.29,82
+2024-01-12,online retail,American Express,open,8713.56,18.07,88
+2024-05-30,electronics,Mastercard,confirmed fraud,11449.62,38.09,26
+2024-04-26,entertainment,Mastercard,false positive,20248.3,92.98,18
+2024-05-28,gas station,Mastercard,confirmed fraud,1121.4,61.68,28
+2024-06-15,gas station,Discover,false positive,18426.35,71.38,146
+2024-09-11,gas station,Visa,confirmed fraud,4535.31,93.21,98
+2024-03-05,travel,Visa,false positive,7713.97,42.12,65
+2025-05-16,entertainment,American Express,confirmed fraud,2377.6,52.09,106
+2024-08-25,restaurants,Discover,false positive,3164.14,29.28,116
+2024-07-18,pharmacy,Mastercard,under review,18730.09,66.63,136
+2024-12-07,pharmacy,Visa,closed,6531.39,1.54,34
+2024-10-04,travel,Mastercard,open,10369.65,76.55,80
+2024-08-21,online retail,Visa,false positive,6290.87,49.23,62
+2024-09-10,gas station,American Express,confirmed fraud,16072.55,59.06,15
+2025-03-25,restaurants,American Express,confirmed fraud,7280.6,48.08,19
+2024-12-06,restaurants,Visa,false positive,16126.15,99.71,100
+2024-12-10,entertainment,American Express,open,16740.34,97.33,89
+2024-09-17,travel,Mastercard,false positive,19251.76,42.78,147
+2025-04-04,electronics,Visa,false positive,24356.32,5.14,14
+2025-01-06,entertainment,Discover,under review,3308.51,23.68,131
+2024-06-23,gas station,American Express,under review,2262.01,32.54,68
+2024-06-11,gas station,Discover,open,19117.09,84.32,62
+2024-11-26,online retail,Mastercard,closed,7155.86,63.56,10
+2024-10-09,entertainment,Mastercard,under review,17950.58,21.59,48
+2024-01-14,electronics,Discover,under review,12831.9,16.93,82
+2025-03-26,electronics,Visa,under review,4131.55,63.04,5
+2024-03-01,grocery,Visa,confirmed fraud,20593.84,69.05,7
+2024-06-27,pharmacy,American Express,confirmed fraud,9835.08,37.21,89
+2024-10-31,grocery,Discover,confirmed fraud,3007.05,41.26,1
+2025-01-05,grocery,Discover,under review,23302.26,82.02,140
+2024-12-02,entertainment,Visa,false positive,2428.23,55.83,23
+2024-11-30,electronics,American Express,closed,16784.89,26.13,131
+2024-08-24,pharmacy,Discover,open,2063.6,47.04,42
+2025-02-27,online retail,Mastercard,under review,3356.7,81.09,57
+2024-04-12,electronics,Mastercard,under review,12465.15,64.46,122
+2024-05-24,travel,Discover,open,17450.38,83.4,56
+2025-01-17,entertainment,Discover,closed,219.28,37.41,114
+2025-03-26,gas station,Mastercard,open,8915.34,8.76,65
+2025-03-16,entertainment,Mastercard,open,16004.54,51.86,23
+2025-02-25,pharmacy,Mastercard,under review,23865.22,71.29,8
+2025-03-07,entertainment,Visa,confirmed fraud,24680.08,15.45,47
+2024-08-14,grocery,Mastercard,false positive,10901.57,42.84,118
+2025-03-15,pharmacy,Discover,under review,21335.22,11.18,122
+2024-04-08,grocery,Mastercard,under review,10524.96,0.81,139
+2024-08-08,gas station,Mastercard,open,5356.01,80.34,10
+2024-10-07,electronics,Discover,under review,10488.22,6.59,52
+2024-03-25,gas station,Visa,closed,11438.03,54.23,130
+2025-01-09,grocery,American Express,confirmed fraud,4850.94,58.55,48
+2025-05-02,pharmacy,American Express,closed,6420.2,68.67,22
+2025-02-28,gas station,Discover,false positive,4111.65,8.27,96
+2025-01-10,electronics,Mastercard,false positive,4504.59,80.57,93
+2025-01-25,restaurants,Discover,open,449.76,74.71,18
+2024-11-26,online retail,American Express,under review,8270.58,31.23,125
+2025-04-30,pharmacy,Mastercard,false positive,4179.81,58.02,118
+2024-02-18,gas station,Visa,false positive,6000.35,97.84,65
+2024-12-30,online retail,Visa,under review,4539.43,75.48,143
+2024-03-31,gas station,American Express,confirmed fraud,18872.59,34.59,132
+2025-05-21,entertainment,Visa,open,9612.52,5.91,132
+2025-05-31,electronics,American Express,false positive,23327.44,53.85,72
+2024-12-10,electronics,Visa,closed,2034.05,44.59,121
+2024-05-27,online retail,American Express,closed,1426.18,76.76,39
+2024-03-09,grocery,Mastercard,confirmed fraud,19212.09,18.65,18
+2025-02-08,pharmacy,Discover,closed,14446.77,89.59,109
+2025-04-27,travel,Mastercard,false positive,10884.44,87.57,75
+2024-10-15,restaurants,American Express,under review,12494.46,73.22,10
+2024-10-08,restaurants,Discover,under review,16879.79,32.99,96
+2025-05-11,electronics,Visa,closed,11515.76,35.83,67
+2024-07-22,electronics,Mastercard,open,2958.21,75.02,128
+2024-02-10,electronics,Visa,confirmed fraud,21219.53,8.56,61
+2025-03-19,grocery,Mastercard,closed,12409.89,33.53,48
+2024-08-25,gas station,American Express,false positive,23833.42,21.94,7
+2024-06-24,entertainment,Mastercard,under review,22941.96,39.32,84
+2024-06-23,grocery,Visa,closed,4574.28,61.01,113
+2024-09-23,gas station,American Express,confirmed fraud,3984.98,3.7,118
+2025-05-10,grocery,American Express,false positive,4020.66,60.75,1
+2024-10-09,online retail,Visa,closed,14684.5,60.67,93
+2024-07-19,pharmacy,Visa,confirmed fraud,22422.27,68.18,7
+2024-09-17,entertainment,American Express,open,19774.65,25.45,7
+2025-02-25,entertainment,Mastercard,open,10253.96,56.55,89
+2025-06-03,electronics,Visa,under review,21692.08,65.52,41
+2024-09-08,pharmacy,Discover,confirmed fraud,21320.35,80.38,32
+2024-10-31,restaurants,Mastercard,closed,23070.27,27.29,18
+2024-06-25,restaurants,Visa,false positive,24439.79,9.27,19
+2025-02-18,travel,Mastercard,false positive,1575.23,93.52,85
+2024-11-28,travel,Visa,false positive,24510.19,52.63,0
+2024-04-01,entertainment,American Express,open,13961.51,35.13,11
+2024-03-26,entertainment,Mastercard,false positive,4171.07,53.47,67
+2024-10-22,gas station,Mastercard,false positive,8713.41,18.27,19
+2024-10-22,entertainment,Discover,open,24842.1,38.8,35
+2024-03-06,electronics,Visa,false positive,17191.08,53.76,106
+2024-03-10,restaurants,American Express,under review,1968.1,85.76,58
+2024-10-13,pharmacy,American Express,false positive,5671.81,79.91,122
+2025-05-01,travel,Mastercard,false positive,14807.97,28.79,114
+2025-04-12,pharmacy,Discover,false positive,4047.6,45.14,6
+2024-06-23,restaurants,American Express,under review,24528.66,99.66,54
+2025-04-17,grocery,Discover,confirmed fraud,8026.58,7.93,55
+2024-02-27,online retail,Discover,open,20896.7,92.54,93
+2024-02-15,gas station,Mastercard,closed,23263.92,51.6,144
+2024-12-25,travel,Discover,closed,17375.44,41.19,76
+2025-04-27,gas station,Discover,confirmed fraud,1771.91,72.98,145
+2025-03-18,electronics,Mastercard,confirmed fraud,1352.99,32.26,10
+2024-03-06,online retail,Mastercard,under review,19183.01,48.49,93
+2025-03-26,online retail,American Express,false positive,1344.88,40.68,129
+2025-02-27,grocery,American Express,confirmed fraud,2635.45,59.16,19
+2024-09-09,gas station,American Express,open,15046.5,12.31,145
+2024-03-11,online retail,Visa,under review,11046.24,91.64,83
+2024-09-24,restaurants,American Express,closed,14388.61,72.72,28
+2024-07-31,online retail,Visa,open,14801.33,93.2,88
+2025-03-16,pharmacy,Mastercard,under review,13826.07,98.11,113
+2024-09-10,online retail,Visa,under review,14179.2,3.58,148
+2024-07-20,grocery,Discover,false positive,21321.66,23.18,148
+2024-02-18,travel,Mastercard,false positive,22449.39,65.71,32
+2024-06-06,electronics,American Express,confirmed fraud,6126.19,84.28,110
+2024-01-16,restaurants,Visa,open,19374.88,28.64,69
+2025-03-31,entertainment,American Express,under review,6071.64,89.64,139
+2024-07-24,gas station,Visa,open,2750.32,80.52,117
+2024-06-30,entertainment,Mastercard,open,1658.91,61.87,73
+2024-07-15,grocery,Mastercard,false positive,14712.96,19.94,128
+2025-01-28,entertainment,Discover,open,20674.84,72.04,10
+2024-07-11,restaurants,Mastercard,confirmed fraud,12545.81,84.26,79
+2024-03-05,online retail,Discover,false positive,10600.96,43.02,5
+2024-01-18,grocery,Mastercard,closed,15749.91,50.61,141
+2025-02-08,gas station,Mastercard,closed,15509.17,55.01,126
+2024-08-02,travel,Mastercard,open,274.94,78.69,104
+2024-06-03,online retail,Visa,under review,17962.36,23.22,137
+2024-06-14,restaurants,Mastercard,under review,11027.52,20.48,60
+2025-03-14,entertainment,Visa,under review,20706.96,7.22,21
+2024-10-29,restaurants,American Express,false positive,13942.48,62.04,34
+2024-10-17,entertainment,Mastercard,open,11311.59,38.46,93
+2024-03-21,grocery,Discover,under review,18094.71,7.81,78
+2024-10-05,online retail,Visa,confirmed fraud,20854.67,69.25,106
+2024-04-24,travel,Mastercard,open,22589.86,50.86,84
+2024-10-18,grocery,American Express,confirmed fraud,5498.17,43.62,130
+2024-12-21,electronics,Discover,under review,10926.82,49.19,68
+2025-01-24,gas station,American Express,closed,8614.0,99.75,136
+2024-01-05,travel,Mastercard,closed,7876.23,57.53,77
+2024-07-18,entertainment,Mastercard,under review,2227.01,53.47,72
+2024-02-09,entertainment,American Express,closed,2296.61,87.4,73
+2024-01-28,electronics,Visa,under review,16886.46,81.49,75
+2025-01-07,grocery,Visa,false positive,24613.54,97.14,42
+2024-06-24,restaurants,Visa,under review,19871.91,97.74,49
+2024-05-03,pharmacy,Visa,confirmed fraud,16751.74,59.29,34
+2024-05-14,grocery,Mastercard,closed,24959.23,1.78,139
+2024-04-12,grocery,Discover,under review,13889.03,4.58,99
+2024-04-03,gas station,American Express,confirmed fraud,375.6,59.28,115
+2024-09-28,grocery,American Express,closed,2042.16,12.81,59
+2024-12-29,grocery,Visa,open,4818.62,56.54,23
+2024-07-16,travel,Discover,false positive,13805.26,52.49,89
+2025-01-18,online retail,Mastercard,under review,2994.75,85.29,23
+2024-05-20,grocery,Mastercard,open,24244.29,87.18,79
+2025-02-11,electronics,Discover,false positive,1476.99,5.2,85
+2025-05-30,entertainment,Discover,closed,9304.7,47.31,50
+2024-08-13,grocery,Discover,open,1281.13,56.5,23
+2025-06-13,grocery,Visa,closed,12635.29,62.48,74
+2024-05-02,online retail,Visa,under review,6165.0,95.13,71
+2025-01-28,restaurants,American Express,open,15745.82,17.15,4
+2024-02-25,gas station,Visa,closed,869.69,70.59,143
+2024-12-03,electronics,Mastercard,confirmed fraud,3073.51,39.52,86
+2024-10-20,restaurants,Discover,under review,2530.63,19.39,126
+2025-01-31,travel,Discover,closed,5705.34,55.88,61
+2025-04-13,travel,Visa,closed,15037.1,86.9,32
+2025-06-13,entertainment,Mastercard,under review,9079.42,59.26,137
+2024-06-14,travel,Mastercard,open,4244.7,31.03,106
+2025-03-21,grocery,Discover,closed,7967.1,85.96,42
+2025-02-15,pharmacy,Mastercard,confirmed fraud,9299.48,62.95,115
+2025-05-04,restaurants,Mastercard,open,5997.78,51.16,6
+2024-09-11,entertainment,American Express,false positive,10632.38,82.31,103
+2024-12-12,grocery,Visa,confirmed fraud,15119.35,98.34,62
+2025-04-20,pharmacy,Discover,open,13301.85,3.44,72
+2024-10-21,electronics,Mastercard,false positive,2681.51,23.55,38
+2024-03-21,travel,Discover,under review,24275.39,2.07,4
+2024-07-28,restaurants,Mastercard,under review,20621.68,69.78,47
+2024-11-07,entertainment,Mastercard,under review,3581.87,99.8,80
+2024-10-25,gas station,Mastercard,open,12959.28,7.96,36
+2024-07-15,gas station,Discover,under review,21764.59,31.55,14
+2025-05-07,travel,Visa,false positive,9662.64,19.43,114
+2025-04-02,online retail,Visa,under review,1336.54,2.96,52
+2024-08-02,electronics,Discover,confirmed fraud,14384.46,56.93,83
+2025-05-08,entertainment,American Express,false positive,17494.6,2.09,134
+2024-04-20,grocery,Discover,open,1891.82,26.0,105
+2025-05-03,restaurants,Mastercard,under review,19321.02,1.01,102
+2024-03-16,gas station,Visa,confirmed fraud,5707.43,2.12,118
+2025-03-05,entertainment,American Express,open,1211.13,92.47,53
+2024-10-13,gas station,Discover,open,19344.29,74.73,69
+2024-08-10,entertainment,Discover,open,7658.41,90.42,25
+2024-06-26,entertainment,American Express,open,16004.38,76.43,121
+2024-07-27,travel,Discover,confirmed fraud,24011.41,3.98,46
+2024-08-30,electronics,American Express,under review,24907.31,62.42,30
+2024-03-25,electronics,Mastercard,confirmed fraud,20233.47,37.74,108
+2025-06-08,grocery,American Express,false positive,18950.06,76.21,115
+2024-12-07,entertainment,American Express,open,11207.7,2.89,27
+2024-08-12,pharmacy,Discover,open,9572.45,79.32,51
+2025-04-20,travel,Visa,open,20995.76,90.93,43
+2025-03-06,restaurants,American Express,under review,8055.38,50.52,1
+2024-12-10,restaurants,Mastercard,confirmed fraud,22903.84,68.19,3
+2024-10-21,grocery,Discover,closed,9829.95,12.59,14
+2025-01-11,online retail,Mastercard,open,24133.32,59.79,16
+2025-03-18,electronics,Visa,closed,6772.15,30.55,66
+2024-08-07,gas station,Visa,confirmed fraud,2195.86,61.67,13
+2025-02-28,travel,Visa,closed,5898.96,3.31,17
+2025-01-25,gas station,Visa,closed,8038.97,6.6,9
+2024-03-08,grocery,Mastercard,confirmed fraud,23459.93,49.81,39
+2024-06-04,electronics,Discover,closed,6700.09,14.12,22
+2024-01-21,travel,Visa,under review,16204.85,50.49,99
+2024-01-08,online retail,Visa,false positive,19.95,95.68,124
+2024-01-17,online retail,American Express,open,8345.03,82.59,95
+2025-01-10,electronics,Mastercard,closed,14413.23,85.48,124
+2024-10-08,entertainment,Mastercard,open,20199.7,38.06,38
+2024-11-13,gas station,Mastercard,open,22543.39,72.77,113
+2025-03-18,restaurants,Discover,open,1315.56,63.32,69
+2024-06-08,entertainment,Visa,confirmed fraud,8976.12,31.41,20
+2024-11-09,restaurants,American Express,under review,12765.07,90.97,43
+2025-05-09,electronics,Discover,confirmed fraud,14890.32,84.95,57
+2025-05-18,gas station,Mastercard,open,8371.67,35.46,144
+2024-08-23,grocery,Discover,confirmed fraud,7423.51,31.1,124
+2024-01-17,entertainment,Discover,false positive,22913.7,31.29,47
+2024-10-10,electronics,Mastercard,under review,22656.72,56.44,17

@@ -1,241 +1,241 @@
-Appointment Date,Clinic Location,Appointment Type,Provider Specialty,Visit Status,Wait Time Minutes,Visit Duration Minutes,Patient Copay Amount
-2024-05-07,Riverside Health Campus,Follow Up,Cardiology,Cancelled,163,66,3.92
-2024-04-03,Westgate Family Practice,Annual Physical,Dermatology,Scheduled,45,88,197.33
-2024-09-28,Northside Medical Center,Follow Up,Cardiology,Cancelled,160,117,173.69
-2025-04-18,Downtown Clinic,Annual Physical,Dermatology,Cancelled,92,119,34.4
-2024-04-22,Riverside Health Campus,Annual Physical,Dermatology,Completed,178,46,233.72
-2025-05-31,Westgate Family Practice,Initial Consult,Dermatology,Rescheduled,114,81,169.67
-2025-03-13,Riverside Health Campus,Annual Physical,Cardiology,Scheduled,4,64,34.57
-2025-05-28,Riverside Health Campus,Initial Consult,Dermatology,Rescheduled,142,76,130.45
-2024-05-09,Northside Medical Center,Follow Up,Orthopedics,No Show,133,84,244.59
-2024-10-01,Downtown Clinic,Initial Consult,Dermatology,Cancelled,53,75,31.13
-2024-03-01,Riverside Health Campus,Follow Up,Dermatology,Scheduled,78,10,52.74
-2024-11-19,Northside Medical Center,Initial Consult,Family Medicine,Scheduled,19,34,141.66
-2024-06-27,Westgate Family Practice,Initial Consult,Dermatology,Scheduled,66,18,175.16
-2024-06-11,Riverside Health Campus,Initial Consult,Family Medicine,Cancelled,43,65,27.65
-2025-05-15,Westgate Family Practice,Initial Consult,Dermatology,Cancelled,120,43,215.69
-2024-10-22,Westgate Family Practice,Initial Consult,Family Medicine,Rescheduled,147,43,227.64
-2025-05-26,Northside Medical Center,Initial Consult,Dermatology,Completed,24,60,201.35
-2024-06-17,Westgate Family Practice,Initial Consult,Family Medicine,Cancelled,39,27,162.55
-2024-11-24,Westgate Family Practice,Procedure,Cardiology,Scheduled,92,108,134.38
-2024-09-27,Riverside Health Campus,Lab Review,Family Medicine,Completed,105,21,185.23
-2025-01-29,Northside Medical Center,Initial Consult,Cardiology,No Show,102,103,41.73
-2024-06-20,Northside Medical Center,Follow Up,Cardiology,Scheduled,127,19,58.98
-2024-12-16,Downtown Clinic,Procedure,Cardiology,No Show,114,26,81.88
-2024-04-06,Northside Medical Center,Follow Up,Orthopedics,Completed,46,107,136.71
-2024-02-12,Riverside Health Campus,Lab Review,Family Medicine,Completed,81,42,244.51
-2025-05-29,Riverside Health Campus,Lab Review,Family Medicine,Cancelled,133,44,149.68
-2025-04-09,Downtown Clinic,Initial Consult,Cardiology,Rescheduled,22,112,15.63
-2025-05-22,Northside Medical Center,Initial Consult,Cardiology,Cancelled,90,81,123.26
-2025-05-23,Northside Medical Center,Lab Review,Cardiology,Rescheduled,153,98,119.31
-2024-01-13,Westgate Family Practice,Lab Review,Dermatology,Cancelled,88,76,73.41
-2024-10-21,Northside Medical Center,Annual Physical,Orthopedics,Scheduled,52,31,92.73
-2024-05-29,Northside Medical Center,Lab Review,Family Medicine,Rescheduled,33,38,1.67
-2025-03-01,Downtown Clinic,Follow Up,Cardiology,Cancelled,28,102,160.83
-2025-05-26,Riverside Health Campus,Annual Physical,Family Medicine,No Show,164,66,127.16
-2024-07-19,Riverside Health Campus,Annual Physical,Dermatology,Rescheduled,176,102,190.45
-2024-12-10,Riverside Health Campus,Annual Physical,Family Medicine,Cancelled,149,117,223.32
-2024-12-27,Northside Medical Center,Follow Up,Cardiology,Scheduled,29,42,132.7
-2024-11-24,Riverside Health Campus,Annual Physical,Dermatology,Completed,106,43,51.94
-2024-09-25,Westgate Family Practice,Annual Physical,Family Medicine,Scheduled,138,43,93.9
-2024-03-09,Downtown Clinic,Procedure,Family Medicine,Completed,69,47,179.36
-2024-12-11,Northside Medical Center,Initial Consult,Dermatology,No Show,54,51,112.46
-2025-02-19,Downtown Clinic,Follow Up,Family Medicine,Scheduled,50,92,177.8
-2024-08-02,Westgate Family Practice,Lab Review,Family Medicine,Completed,120,15,174.19
-2024-12-23,Riverside Health Campus,Initial Consult,Orthopedics,Scheduled,87,64,63.81
-2024-02-17,Riverside Health Campus,Annual Physical,Orthopedics,No Show,72,37,227.64
-2024-04-17,Downtown Clinic,Lab Review,Cardiology,Rescheduled,28,11,76.5
-2024-08-05,Westgate Family Practice,Follow Up,Family Medicine,Cancelled,173,106,48.76
-2025-03-22,Riverside Health Campus,Annual Physical,Dermatology,Scheduled,53,104,13.96
-2025-04-05,Downtown Clinic,Lab Review,Dermatology,Scheduled,105,10,92.83
-2024-02-21,Northside Medical Center,Procedure,Cardiology,Scheduled,150,108,49.61
-2024-10-31,Westgate Family Practice,Procedure,Orthopedics,Rescheduled,180,92,116.43
-2024-01-04,Riverside Health Campus,Annual Physical,Orthopedics,Cancelled,126,55,175.63
-2025-04-29,Northside Medical Center,Lab Review,Orthopedics,Scheduled,42,40,141.11
-2024-06-29,Westgate Family Practice,Initial Consult,Dermatology,Cancelled,147,43,217.13
-2025-04-09,Westgate Family Practice,Initial Consult,Family Medicine,No Show,107,54,181.39
-2025-04-13,Northside Medical Center,Annual Physical,Dermatology,Cancelled,7,71,175.32
-2024-09-29,Riverside Health Campus,Procedure,Orthopedics,Cancelled,8,27,67.43
-2024-09-10,Westgate Family Practice,Initial Consult,Cardiology,Scheduled,33,85,73.34
-2025-04-06,Westgate Family Practice,Follow Up,Dermatology,Rescheduled,96,74,204.96
-2024-06-21,Westgate Family Practice,Lab Review,Family Medicine,Scheduled,53,10,237.0
-2024-02-20,Downtown Clinic,Initial Consult,Family Medicine,No Show,81,44,159.3
-2025-06-22,Westgate Family Practice,Initial Consult,Orthopedics,Cancelled,125,87,19.57
-2024-01-12,Riverside Health Campus,Procedure,Orthopedics,Cancelled,71,22,202.84
-2025-01-09,Downtown Clinic,Initial Consult,Cardiology,Rescheduled,22,54,119.23
-2024-10-17,Riverside Health Campus,Annual Physical,Cardiology,Rescheduled,126,27,26.88
-2025-02-20,Downtown Clinic,Initial Consult,Dermatology,Rescheduled,90,92,219.67
-2024-02-05,Riverside Health Campus,Follow Up,Family Medicine,Rescheduled,145,56,12.88
-2024-10-01,Riverside Health Campus,Initial Consult,Cardiology,No Show,77,109,187.9
-2024-03-18,Riverside Health Campus,Lab Review,Orthopedics,Rescheduled,172,16,12.51
-2025-05-11,Riverside Health Campus,Lab Review,Dermatology,Scheduled,122,61,176.05
-2024-11-06,Riverside Health Campus,Initial Consult,Dermatology,Scheduled,112,49,162.34
-2025-02-03,Downtown Clinic,Procedure,Dermatology,Cancelled,87,96,36.09
-2024-12-08,Riverside Health Campus,Procedure,Cardiology,Completed,62,108,35.01
-2025-01-10,Downtown Clinic,Procedure,Dermatology,Cancelled,136,84,135.62
-2024-08-24,Downtown Clinic,Follow Up,Cardiology,Scheduled,153,77,216.47
-2024-09-06,Downtown Clinic,Initial Consult,Cardiology,Cancelled,116,39,146.52
-2024-08-13,Downtown Clinic,Lab Review,Family Medicine,Rescheduled,82,119,38.78
-2024-05-23,Westgate Family Practice,Procedure,Orthopedics,No Show,60,10,221.19
-2025-04-14,Downtown Clinic,Lab Review,Cardiology,Rescheduled,41,51,238.72
-2024-05-15,Northside Medical Center,Lab Review,Dermatology,Scheduled,142,28,25.42
-2024-12-21,Downtown Clinic,Procedure,Cardiology,Cancelled,78,50,77.52
-2024-12-20,Westgate Family Practice,Initial Consult,Family Medicine,No Show,128,24,0.76
-2024-09-16,Riverside Health Campus,Lab Review,Dermatology,Scheduled,9,120,79.8
-2024-10-04,Riverside Health Campus,Initial Consult,Dermatology,Rescheduled,68,59,97.5
-2024-05-04,Downtown Clinic,Annual Physical,Cardiology,Cancelled,86,120,83.3
-2024-04-16,Downtown Clinic,Annual Physical,Orthopedics,No Show,49,25,80.06
-2024-07-08,Downtown Clinic,Procedure,Family Medicine,Rescheduled,84,48,31.11
-2024-08-27,Riverside Health Campus,Annual Physical,Cardiology,Completed,24,108,114.07
-2024-09-24,Westgate Family Practice,Annual Physical,Family Medicine,Scheduled,102,29,92.5
-2024-01-07,Downtown Clinic,Follow Up,Cardiology,Scheduled,84,119,83.44
-2025-02-27,Riverside Health Campus,Procedure,Family Medicine,Rescheduled,106,17,79.56
-2025-05-13,Riverside Health Campus,Initial Consult,Cardiology,No Show,88,107,189.3
-2024-04-14,Downtown Clinic,Procedure,Orthopedics,Completed,44,103,13.75
-2024-08-18,Riverside Health Campus,Annual Physical,Dermatology,Scheduled,20,112,213.3
-2024-07-31,Riverside Health Campus,Lab Review,Dermatology,Completed,153,30,36.52
-2024-05-15,Riverside Health Campus,Annual Physical,Cardiology,Cancelled,50,72,101.96
-2025-05-07,Downtown Clinic,Procedure,Family Medicine,Completed,146,103,117.31
-2025-02-07,Riverside Health Campus,Annual Physical,Family Medicine,Completed,22,77,38.51
-2025-03-30,Northside Medical Center,Follow Up,Cardiology,No Show,68,25,81.9
-2024-11-08,Downtown Clinic,Lab Review,Family Medicine,Scheduled,86,104,26.88
-2025-03-22,Northside Medical Center,Lab Review,Cardiology,Rescheduled,38,86,10.75
-2024-05-20,Northside Medical Center,Lab Review,Cardiology,Rescheduled,147,64,66.17
-2024-04-25,Westgate Family Practice,Annual Physical,Cardiology,Completed,121,52,224.69
-2025-04-06,Downtown Clinic,Follow Up,Cardiology,No Show,149,23,77.04
-2025-02-23,Northside Medical Center,Lab Review,Cardiology,Cancelled,5,45,206.12
-2024-07-09,Downtown Clinic,Procedure,Family Medicine,Completed,156,104,82.78
-2024-08-10,Northside Medical Center,Follow Up,Cardiology,Rescheduled,29,53,40.96
-2024-05-13,Westgate Family Practice,Initial Consult,Orthopedics,Rescheduled,125,19,51.53
-2024-07-27,Downtown Clinic,Follow Up,Dermatology,Cancelled,124,113,163.29
-2024-01-14,Northside Medical Center,Procedure,Family Medicine,Rescheduled,52,68,193.67
-2025-05-06,Downtown Clinic,Annual Physical,Orthopedics,Completed,37,77,95.16
-2024-08-27,Riverside Health Campus,Initial Consult,Orthopedics,Completed,111,111,149.15
-2025-02-22,Downtown Clinic,Lab Review,Family Medicine,No Show,71,66,80.07
-2024-11-28,Downtown Clinic,Follow Up,Family Medicine,No Show,101,95,181.39
-2024-01-29,Riverside Health Campus,Annual Physical,Family Medicine,Scheduled,87,75,66.61
-2024-05-12,Downtown Clinic,Procedure,Dermatology,Completed,111,40,41.4
-2024-12-04,Riverside Health Campus,Lab Review,Cardiology,Rescheduled,37,25,146.37
-2024-01-20,Northside Medical Center,Initial Consult,Family Medicine,No Show,73,109,209.23
-2024-12-24,Riverside Health Campus,Annual Physical,Dermatology,Rescheduled,91,103,212.72
-2024-11-18,Downtown Clinic,Follow Up,Orthopedics,Completed,46,92,194.32
-2024-02-12,Westgate Family Practice,Procedure,Orthopedics,Cancelled,175,109,70.39
-2024-04-19,Westgate Family Practice,Procedure,Cardiology,No Show,131,72,47.63
-2024-10-14,Riverside Health Campus,Initial Consult,Dermatology,Scheduled,10,69,173.51
-2025-02-11,Northside Medical Center,Lab Review,Cardiology,Rescheduled,157,39,24.99
-2024-06-22,Riverside Health Campus,Annual Physical,Family Medicine,Completed,173,40,4.53
-2024-07-01,Riverside Health Campus,Annual Physical,Family Medicine,No Show,25,52,37.35
-2025-05-17,Riverside Health Campus,Lab Review,Family Medicine,Cancelled,69,95,148.81
-2024-01-04,Riverside Health Campus,Annual Physical,Dermatology,Scheduled,25,93,146.62
-2024-02-26,Westgate Family Practice,Follow Up,Cardiology,Scheduled,155,82,95.74
-2024-11-03,Riverside Health Campus,Lab Review,Cardiology,Cancelled,1,13,199.97
-2024-12-22,Riverside Health Campus,Annual Physical,Orthopedics,Cancelled,7,17,183.64
-2025-03-28,Downtown Clinic,Initial Consult,Family Medicine,Rescheduled,114,84,98.75
-2024-11-28,Riverside Health Campus,Procedure,Family Medicine,Scheduled,143,15,209.38
-2024-02-09,Westgate Family Practice,Initial Consult,Family Medicine,Completed,117,98,128.77
-2024-04-13,Downtown Clinic,Follow Up,Family Medicine,No Show,174,36,56.42
-2024-05-12,Westgate Family Practice,Annual Physical,Dermatology,Scheduled,171,77,181.71
-2024-04-17,Riverside Health Campus,Annual Physical,Dermatology,No Show,45,41,85.66
-2025-05-16,Westgate Family Practice,Initial Consult,Dermatology,Cancelled,146,17,177.89
-2024-09-06,Downtown Clinic,Procedure,Orthopedics,Scheduled,151,83,246.78
-2025-01-11,Downtown Clinic,Annual Physical,Orthopedics,Scheduled,166,17,100.74
-2024-10-13,Downtown Clinic,Lab Review,Dermatology,Rescheduled,8,116,176.79
-2024-08-15,Northside Medical Center,Initial Consult,Dermatology,Cancelled,173,114,216.05
-2025-06-08,Northside Medical Center,Annual Physical,Orthopedics,No Show,163,30,49.0
-2024-01-24,Westgate Family Practice,Follow Up,Family Medicine,Cancelled,156,85,172.6
-2025-06-17,Westgate Family Practice,Lab Review,Orthopedics,No Show,6,91,124.94
-2025-06-17,Westgate Family Practice,Initial Consult,Family Medicine,Cancelled,105,44,37.73
-2025-02-13,Northside Medical Center,Annual Physical,Cardiology,Rescheduled,123,11,119.05
-2024-11-12,Northside Medical Center,Lab Review,Orthopedics,No Show,163,111,47.83
-2025-04-05,Riverside Health Campus,Lab Review,Dermatology,Rescheduled,11,38,47.45
-2024-02-28,Downtown Clinic,Follow Up,Orthopedics,Rescheduled,73,15,119.11
-2025-05-10,Westgate Family Practice,Annual Physical,Cardiology,Cancelled,78,43,245.45
-2025-04-17,Downtown Clinic,Initial Consult,Family Medicine,Scheduled,84,62,102.38
-2025-03-12,Downtown Clinic,Lab Review,Family Medicine,Cancelled,163,89,28.14
-2025-05-25,Westgate Family Practice,Lab Review,Dermatology,Cancelled,171,40,99.91
-2024-12-27,Riverside Health Campus,Annual Physical,Cardiology,Rescheduled,99,33,135.79
-2025-06-13,Downtown Clinic,Procedure,Dermatology,Scheduled,37,104,121.33
-2024-07-13,Riverside Health Campus,Follow Up,Family Medicine,Completed,179,80,203.6
-2025-02-20,Westgate Family Practice,Procedure,Family Medicine,Rescheduled,66,37,161.32
-2024-02-22,Westgate Family Practice,Annual Physical,Cardiology,Scheduled,20,37,50.69
-2024-11-23,Downtown Clinic,Initial Consult,Dermatology,Scheduled,15,88,110.19
-2024-01-26,Riverside Health Campus,Annual Physical,Dermatology,Cancelled,36,120,219.64
-2025-05-31,Northside Medical Center,Follow Up,Dermatology,Rescheduled,139,38,20.79
-2024-06-11,Northside Medical Center,Annual Physical,Dermatology,Cancelled,101,76,43.0
-2025-04-22,Westgate Family Practice,Follow Up,Family Medicine,Completed,27,79,110.01
-2024-09-10,Westgate Family Practice,Procedure,Dermatology,Rescheduled,105,71,65.3
-2024-01-09,Northside Medical Center,Initial Consult,Orthopedics,Scheduled,171,11,218.26
-2024-07-08,Downtown Clinic,Initial Consult,Dermatology,Rescheduled,49,119,4.23
-2024-06-22,Northside Medical Center,Follow Up,Family Medicine,Rescheduled,153,119,204.71
-2024-01-27,Riverside Health Campus,Initial Consult,Dermatology,Rescheduled,125,79,160.69
-2025-05-10,Downtown Clinic,Procedure,Cardiology,Cancelled,38,109,137.02
-2024-12-14,Northside Medical Center,Annual Physical,Orthopedics,Cancelled,85,63,131.62
-2025-02-09,Northside Medical Center,Lab Review,Family Medicine,No Show,129,104,41.08
-2025-03-29,Northside Medical Center,Initial Consult,Orthopedics,Scheduled,100,11,117.3
-2025-01-02,Northside Medical Center,Initial Consult,Dermatology,Rescheduled,156,114,90.74
-2025-04-11,Northside Medical Center,Annual Physical,Orthopedics,Scheduled,146,20,115.69
-2025-05-09,Riverside Health Campus,Initial Consult,Family Medicine,Cancelled,73,47,29.44
-2024-07-24,Northside Medical Center,Initial Consult,Dermatology,Scheduled,22,21,238.56
-2024-08-11,Westgate Family Practice,Follow Up,Family Medicine,No Show,131,74,160.23
-2024-10-28,Westgate Family Practice,Lab Review,Orthopedics,Scheduled,140,64,223.7
-2025-06-05,Downtown Clinic,Procedure,Family Medicine,No Show,106,13,214.4
-2024-07-03,Riverside Health Campus,Procedure,Family Medicine,Completed,110,107,188.57
-2024-06-26,Downtown Clinic,Procedure,Orthopedics,Scheduled,175,22,78.72
-2024-05-21,Northside Medical Center,Initial Consult,Dermatology,No Show,9,97,243.71
-2024-09-15,Downtown Clinic,Initial Consult,Family Medicine,No Show,9,99,135.24
-2024-02-01,Riverside Health Campus,Follow Up,Dermatology,Rescheduled,86,57,207.67
-2025-02-09,Riverside Health Campus,Initial Consult,Family Medicine,Scheduled,21,36,213.34
-2024-06-12,Northside Medical Center,Procedure,Orthopedics,Completed,172,94,197.91
-2024-01-12,Riverside Health Campus,Annual Physical,Cardiology,Completed,57,105,19.35
-2024-09-04,Northside Medical Center,Follow Up,Dermatology,Cancelled,175,118,229.41
-2024-09-07,Riverside Health Campus,Follow Up,Dermatology,Completed,137,51,73.0
-2024-05-05,Northside Medical Center,Initial Consult,Orthopedics,Cancelled,88,115,168.0
-2024-09-15,Riverside Health Campus,Annual Physical,Dermatology,Scheduled,49,115,226.41
-2024-10-19,Westgate Family Practice,Procedure,Family Medicine,Completed,121,103,146.99
-2024-02-19,Northside Medical Center,Annual Physical,Cardiology,Cancelled,81,72,233.98
-2025-01-19,Northside Medical Center,Lab Review,Cardiology,Cancelled,52,110,50.1
-2024-04-06,Downtown Clinic,Procedure,Cardiology,Rescheduled,102,80,134.04
-2024-04-19,Downtown Clinic,Initial Consult,Dermatology,Scheduled,154,45,23.13
-2024-11-22,Northside Medical Center,Lab Review,Cardiology,Scheduled,130,85,142.29
-2025-02-02,Northside Medical Center,Lab Review,Cardiology,Cancelled,98,93,157.7
-2025-03-29,Downtown Clinic,Initial Consult,Dermatology,Completed,89,113,141.06
-2024-02-08,Downtown Clinic,Annual Physical,Dermatology,No Show,113,114,67.37
-2025-01-15,Westgate Family Practice,Annual Physical,Family Medicine,No Show,113,28,154.63
-2025-01-07,Riverside Health Campus,Annual Physical,Orthopedics,Completed,41,30,171.89
-2024-08-11,Downtown Clinic,Follow Up,Cardiology,Rescheduled,38,65,64.77
-2024-04-12,Downtown Clinic,Annual Physical,Cardiology,Scheduled,32,39,24.1
-2024-06-07,Downtown Clinic,Annual Physical,Family Medicine,Completed,9,14,10.78
-2024-09-27,Northside Medical Center,Follow Up,Orthopedics,Completed,119,10,235.06
-2025-05-31,Northside Medical Center,Procedure,Cardiology,Completed,31,49,205.11
-2025-04-13,Northside Medical Center,Follow Up,Dermatology,Cancelled,67,111,156.17
-2024-04-06,Westgate Family Practice,Procedure,Dermatology,Completed,175,30,31.13
-2024-10-26,Downtown Clinic,Lab Review,Dermatology,Cancelled,100,52,214.87
-2024-06-18,Northside Medical Center,Follow Up,Orthopedics,Completed,16,18,115.67
-2024-03-09,Northside Medical Center,Initial Consult,Dermatology,Cancelled,27,61,59.5
-2024-01-01,Westgate Family Practice,Lab Review,Orthopedics,No Show,113,75,114.21
-2025-06-07,Northside Medical Center,Follow Up,Family Medicine,No Show,138,74,65.15
-2024-12-10,Riverside Health Campus,Annual Physical,Orthopedics,Completed,38,23,39.48
-2025-05-10,Westgate Family Practice,Procedure,Orthopedics,No Show,129,80,76.51
-2025-02-03,Riverside Health Campus,Follow Up,Cardiology,No Show,172,73,204.31
-2024-10-17,Downtown Clinic,Follow Up,Family Medicine,Cancelled,141,20,236.01
-2024-10-17,Downtown Clinic,Follow Up,Dermatology,No Show,3,66,4.36
-2024-04-16,Northside Medical Center,Procedure,Cardiology,Completed,15,109,158.95
-2024-05-05,Northside Medical Center,Procedure,Cardiology,Cancelled,113,98,21.59
-2025-02-22,Downtown Clinic,Annual Physical,Dermatology,Cancelled,58,73,168.19
-2024-10-27,Riverside Health Campus,Annual Physical,Family Medicine,Scheduled,128,45,114.93
-2025-03-05,Northside Medical Center,Lab Review,Cardiology,Completed,133,110,201.54
-2024-10-22,Downtown Clinic,Initial Consult,Cardiology,Completed,12,16,95.08
-2024-02-24,Westgate Family Practice,Procedure,Orthopedics,Cancelled,91,93,220.51
-2025-04-14,Westgate Family Practice,Initial Consult,Family Medicine,Cancelled,148,64,205.19
-2024-05-08,Downtown Clinic,Annual Physical,Cardiology,Cancelled,120,14,67.74
-2024-10-28,Downtown Clinic,Lab Review,Cardiology,Rescheduled,109,50,38.68
-2024-10-31,Riverside Health Campus,Follow Up,Orthopedics,No Show,9,79,143.29
-2024-11-09,Northside Medical Center,Initial Consult,Dermatology,Rescheduled,52,88,199.88
-2025-01-01,Downtown Clinic,Follow Up,Family Medicine,Scheduled,48,48,239.59
-2024-09-13,Downtown Clinic,Annual Physical,Family Medicine,Scheduled,119,15,185.26
-2024-04-07,Riverside Health Campus,Procedure,Family Medicine,Completed,131,28,130.0
-2025-01-06,Riverside Health Campus,Procedure,Orthopedics,Scheduled,143,55,192.54
-2024-08-10,Riverside Health Campus,Lab Review,Family Medicine,No Show,172,29,26.64
-2024-02-19,Westgate Family Practice,Lab Review,Cardiology,Scheduled,4,27,12.18
-2025-05-22,Westgate Family Practice,Procedure,Cardiology,No Show,58,77,242.28
-2025-05-19,Riverside Health Campus,Lab Review,Orthopedics,Completed,112,84,67.94
+Snapshot Date,Plan Tier,Customer Region,Churn Reason,Monthly Recurring Revenue,Seats Active,Tenure Months
+2024-05-30,Enterprise,Europe,Other,128.36,4101,45
+2024-12-10,Free,Europe,Missing Features,1361.77,45,107
+2025-06-19,Professional,Middle East and Africa,Other,1172.72,2083,50
+2025-06-19,Professional,Middle East and Africa,Poor Support,496.69,2603,64
+2025-01-14,Free,Asia Pacific,Missing Features,1424.98,75,5
+2024-02-22,Business,Middle East and Africa,Other,1081.72,1540,11
+2024-12-12,Enterprise,Middle East and Africa,Low Usage,2066.84,2320,12
+2024-09-30,Business,Latin America,Missing Features,19.37,3253,100
+2024-09-16,Starter,Europe,Switched Competitor,1198.52,3586,38
+2024-08-02,Business,Middle East and Africa,Missing Features,1981.66,2376,21
+2024-05-23,Free,North America,Company Closed,898.08,4516,97
+2024-04-21,Professional,North America,Poor Support,1436.46,4746,43
+2025-01-04,Business,Middle East and Africa,Missing Features,1822.18,3685,65
+2025-04-22,Enterprise,Middle East and Africa,Switched Competitor,1450.91,2046,43
+2024-03-20,Enterprise,Middle East and Africa,Price,703.62,4433,30
+2024-10-18,Enterprise,Middle East and Africa,Low Usage,706.99,2773,70
+2024-10-31,Enterprise,Asia Pacific,Switched Competitor,1126.56,1631,32
+2024-11-26,Starter,North America,Poor Support,1690.03,4879,80
+2024-05-10,Professional,Europe,Price,231.87,3216,19
+2024-06-03,Starter,Latin America,Missing Features,1308.22,4612,52
+2024-07-25,Professional,Europe,Other,567.57,3655,120
+2024-10-27,Professional,Asia Pacific,Other,1090.93,4971,102
+2025-04-08,Business,Latin America,Poor Support,249.52,4518,37
+2025-01-31,Free,Asia Pacific,Poor Support,2479.34,4151,50
+2024-04-25,Starter,Europe,Switched Competitor,2026.83,4794,96
+2024-04-17,Business,North America,Price,2065.63,4910,107
+2024-05-02,Enterprise,Middle East and Africa,Company Closed,346.05,1945,92
+2024-05-22,Professional,Latin America,Other,2070.67,2687,95
+2025-03-03,Business,Latin America,Price,774.75,1422,31
+2024-06-24,Professional,North America,Company Closed,943.78,750,44
+2024-05-15,Starter,Latin America,Missing Features,1054.08,2619,21
+2024-10-04,Free,Latin America,Missing Features,1067.25,2459,62
+2025-02-25,Professional,Europe,Company Closed,28.74,3247,43
+2024-09-03,Enterprise,Asia Pacific,Poor Support,2147.63,14,59
+2024-01-03,Starter,Middle East and Africa,Other,1096.61,2697,15
+2024-09-23,Free,Europe,Low Usage,440.54,2084,47
+2024-07-28,Business,Europe,Poor Support,769.79,741,30
+2024-11-20,Enterprise,Latin America,Poor Support,2200.55,3243,57
+2025-05-02,Enterprise,North America,Price,538.04,2073,61
+2025-02-28,Starter,Latin America,Missing Features,876.76,2013,94
+2025-01-09,Business,Middle East and Africa,Low Usage,504.89,4484,5
+2025-01-31,Enterprise,Asia Pacific,Low Usage,195.31,963,10
+2024-07-23,Business,Europe,Switched Competitor,481.7,1611,5
+2024-11-23,Enterprise,Asia Pacific,Poor Support,979.57,4689,11
+2024-02-08,Business,Middle East and Africa,Poor Support,484.73,872,75
+2025-03-09,Starter,Latin America,Switched Competitor,2214.96,4390,105
+2025-03-15,Business,Middle East and Africa,Company Closed,1116.88,3556,115
+2024-07-24,Professional,Middle East and Africa,Switched Competitor,1972.4,2695,40
+2024-09-19,Free,Europe,Poor Support,1802.48,146,70
+2024-07-08,Enterprise,Latin America,Switched Competitor,1985.49,723,70
+2024-08-24,Professional,Latin America,Switched Competitor,1450.59,4358,69
+2024-04-28,Professional,Europe,Company Closed,1636.83,3517,78
+2025-03-25,Professional,Asia Pacific,Missing Features,314.93,230,3
+2025-01-25,Starter,Europe,Other,1420.75,252,22
+2024-03-13,Free,Middle East and Africa,Poor Support,1559.92,2448,114
+2024-07-22,Free,Middle East and Africa,Poor Support,1846.24,1364,16
+2024-12-15,Starter,Middle East and Africa,Missing Features,491.76,2785,112
+2024-07-22,Free,Latin America,Other,942.24,74,78
+2024-09-30,Starter,Latin America,Price,2069.52,1654,8
+2024-12-11,Free,Europe,Other,1760.93,239,59
+2025-01-16,Free,Asia Pacific,Missing Features,321.37,1285,51
+2024-07-07,Professional,Latin America,Switched Competitor,1434.15,4989,79
+2024-01-07,Free,Middle East and Africa,Switched Competitor,329.68,2867,52
+2024-12-31,Enterprise,Latin America,Low Usage,1456.91,1002,68
+2024-08-03,Starter,Latin America,Missing Features,2395.27,797,108
+2024-11-26,Business,Middle East and Africa,Switched Competitor,1151.2,1959,34
+2025-03-14,Starter,Asia Pacific,Poor Support,974.89,4313,10
+2024-09-30,Free,Latin America,Missing Features,865.93,1205,101
+2024-12-01,Enterprise,Latin America,Poor Support,1680.62,690,89
+2024-12-12,Business,Europe,Switched Competitor,1201.91,4603,6
+2025-03-10,Professional,North America,Company Closed,375.34,1926,37
+2024-12-07,Starter,Middle East and Africa,Company Closed,218.35,4496,67
+2024-02-23,Free,North America,Price,2497.39,3546,112
+2024-07-01,Professional,Latin America,Company Closed,26.35,3569,33
+2024-03-03,Professional,North America,Low Usage,539.94,160,88
+2024-12-21,Business,Middle East and Africa,Price,88.89,3159,3
+2024-06-18,Business,Latin America,Low Usage,438.7,2542,32
+2024-04-30,Starter,Europe,Price,611.75,3156,36
+2025-01-20,Business,Europe,Other,459.99,4206,57
+2024-05-20,Professional,Middle East and Africa,Missing Features,273.06,4462,81
+2024-08-09,Business,Latin America,Switched Competitor,1753.99,4609,86
+2024-10-27,Business,Latin America,Switched Competitor,864.21,1939,83
+2025-06-03,Starter,Asia Pacific,Poor Support,103.01,1253,93
+2024-03-30,Starter,Europe,Price,742.57,3155,71
+2024-12-12,Starter,Asia Pacific,Switched Competitor,6.24,4929,41
+2024-11-16,Free,Latin America,Switched Competitor,1202.69,4211,25
+2024-10-30,Business,Middle East and Africa,Price,1942.78,518,41
+2025-04-09,Enterprise,North America,Company Closed,1565.61,1650,45
+2024-10-31,Free,Europe,Price,20.16,4533,83
+2025-04-06,Professional,North America,Other,2403.65,2116,27
+2024-10-28,Enterprise,Asia Pacific,Low Usage,455.2,2601,43
+2024-06-21,Business,Middle East and Africa,Poor Support,826.72,110,62
+2025-06-06,Free,Asia Pacific,Price,502.1,1520,48
+2024-03-25,Business,North America,Other,658.71,811,18
+2024-02-07,Starter,Europe,Price,11.73,4233,76
+2024-05-25,Free,Europe,Missing Features,2189.99,2769,9
+2025-03-13,Enterprise,Middle East and Africa,Other,900.23,4890,59
+2025-01-03,Starter,North America,Poor Support,2262.93,2957,45
+2024-12-28,Business,Middle East and Africa,Missing Features,1392.54,982,78
+2024-10-31,Starter,Middle East and Africa,Poor Support,291.39,696,19
+2024-03-18,Professional,Latin America,Missing Features,2152.51,2253,44
+2024-10-21,Free,Europe,Price,191.98,4071,71
+2024-02-24,Free,Latin America,Poor Support,150.81,3473,9
+2025-03-08,Free,Latin America,Other,1160.56,2278,72
+2025-01-09,Starter,Europe,Poor Support,771.53,133,15
+2024-01-18,Business,Latin America,Poor Support,877.28,144,104
+2025-04-10,Starter,North America,Price,1674.5,1229,20
+2025-04-23,Professional,Latin America,Low Usage,182.59,525,46
+2024-05-20,Enterprise,Middle East and Africa,Missing Features,2224.09,3831,49
+2024-09-20,Business,Europe,Company Closed,903.82,2726,13
+2024-09-19,Free,Europe,Switched Competitor,1102.68,244,77
+2024-08-17,Starter,North America,Price,1772.19,2611,37
+2024-03-19,Starter,Europe,Company Closed,272.75,1297,114
+2025-01-26,Enterprise,Asia Pacific,Low Usage,1775.56,1092,83
+2024-10-18,Business,Middle East and Africa,Poor Support,314.02,2909,11
+2024-05-17,Free,Europe,Price,908.1,2729,43
+2024-05-12,Starter,North America,Missing Features,156.53,985,19
+2025-05-11,Business,Europe,Low Usage,337.3,90,104
+2024-01-11,Professional,Asia Pacific,Missing Features,1945.08,4746,53
+2024-11-25,Business,Middle East and Africa,Company Closed,1185.16,3642,55
+2024-10-26,Enterprise,Asia Pacific,Missing Features,922.13,3857,4
+2025-03-22,Business,Latin America,Switched Competitor,1791.93,1406,111
+2025-03-13,Business,North America,Low Usage,1079.81,665,76
+2024-02-17,Starter,Latin America,Price,948.14,4819,83
+2024-07-31,Business,Latin America,Missing Features,705.11,3360,71
+2024-03-18,Professional,Latin America,Low Usage,1815.15,4811,80
+2025-03-18,Starter,Latin America,Poor Support,882.74,2123,11
+2025-05-03,Free,Latin America,Price,802.11,4114,64
+2024-10-15,Free,Asia Pacific,Switched Competitor,1304.59,3817,61
+2024-02-21,Enterprise,North America,Switched Competitor,1028.8,29,3
+2025-01-31,Starter,Asia Pacific,Low Usage,1269.2,3076,44
+2025-02-01,Starter,Europe,Missing Features,232.42,516,74
+2024-06-16,Free,Latin America,Company Closed,845.38,4047,73
+2024-01-07,Free,Asia Pacific,Poor Support,548.46,3089,114
+2024-06-03,Enterprise,Latin America,Other,985.44,4661,109
+2024-05-19,Professional,Asia Pacific,Other,657.34,4690,4
+2024-10-24,Professional,Asia Pacific,Missing Features,335.27,684,6
+2024-05-28,Professional,Europe,Price,2241.48,4012,93
+2024-09-05,Professional,North America,Other,207.73,3750,68
+2025-03-30,Professional,North America,Missing Features,1969.04,4407,92
+2024-02-19,Free,Latin America,Company Closed,1759.72,3101,71
+2024-06-17,Business,Europe,Company Closed,1458.32,2308,87
+2024-09-23,Free,Europe,Company Closed,724.53,4078,92
+2024-04-26,Starter,Middle East and Africa,Missing Features,414.82,3722,4
+2025-05-18,Starter,Asia Pacific,Other,379.7,1053,48
+2024-01-12,Business,North America,Low Usage,1618.07,2159,48
+2024-12-15,Enterprise,Latin America,Price,2107.43,2170,83
+2024-06-06,Business,North America,Other,1936.68,1286,77
+2024-10-27,Business,Latin America,Missing Features,707.72,4992,55
+2025-04-14,Enterprise,North America,Poor Support,994.61,306,67
+2024-06-03,Starter,Europe,Price,197.16,79,118
+2024-10-18,Free,North America,Company Closed,523.4,2644,24
+2024-11-26,Starter,North America,Low Usage,2046.14,446,13
+2024-01-18,Enterprise,Latin America,Switched Competitor,124.09,716,85
+2024-12-12,Enterprise,Middle East and Africa,Other,676.44,585,87
+2024-02-17,Professional,Asia Pacific,Company Closed,1513.26,1922,119
+2024-03-09,Free,Asia Pacific,Missing Features,2487.47,1664,111
+2024-05-22,Free,Middle East and Africa,Low Usage,1299.99,980,61
+2024-03-20,Professional,Europe,Poor Support,1215.01,4541,76
+2025-02-20,Enterprise,Europe,Low Usage,464.28,3675,97
+2024-10-03,Professional,Europe,Price,1329.12,770,9
+2024-04-16,Enterprise,North America,Low Usage,1856.89,247,92
+2025-01-24,Professional,North America,Switched Competitor,1779.09,3967,67
+2024-01-09,Free,Middle East and Africa,Company Closed,390.74,2458,25
+2025-02-20,Enterprise,Europe,Poor Support,683.82,1637,79
+2025-06-19,Free,Asia Pacific,Company Closed,2289.05,370,85
+2024-10-23,Free,Asia Pacific,Other,2347.48,1015,85
+2025-05-30,Enterprise,Latin America,Company Closed,296.07,1589,69
+2025-06-16,Enterprise,Europe,Missing Features,1453.84,4783,7
+2024-12-02,Enterprise,Middle East and Africa,Company Closed,1427.39,2412,76
+2024-06-18,Business,North America,Price,316.22,1289,114
+2024-04-22,Business,Latin America,Price,1410.76,1097,111
+2024-07-12,Professional,Europe,Company Closed,719.34,4596,107
+2024-11-12,Professional,Asia Pacific,Missing Features,2018.93,1579,92
+2024-10-13,Starter,North America,Switched Competitor,2262.12,1439,86
+2024-05-06,Starter,Europe,Other,2449.28,185,69
+2025-03-21,Business,Asia Pacific,Missing Features,488.55,3206,98
+2024-12-20,Business,Europe,Missing Features,1854.48,2426,41
+2025-01-16,Professional,North America,Switched Competitor,2316.99,1015,26
+2024-01-21,Business,Europe,Price,2383.13,4176,75
+2024-06-04,Enterprise,Latin America,Low Usage,1759.95,943,79
+2025-01-31,Professional,Middle East and Africa,Switched Competitor,2143.17,3213,12
+2024-06-13,Business,Latin America,Missing Features,388.64,2526,61
+2025-04-27,Enterprise,Middle East and Africa,Switched Competitor,1149.92,3137,91
+2024-07-09,Business,Asia Pacific,Low Usage,2138.88,242,34
+2025-03-10,Professional,Asia Pacific,Switched Competitor,904.08,1414,69
+2024-08-11,Professional,Latin America,Switched Competitor,1885.22,377,93
+2024-05-11,Professional,Europe,Low Usage,1928.5,3732,25
+2024-11-04,Enterprise,North America,Other,306.56,48,53
+2024-02-15,Free,Asia Pacific,Missing Features,107.98,3077,18
+2024-06-21,Starter,Latin America,Low Usage,829.58,1527,101
+2025-06-06,Enterprise,Latin America,Price,1766.29,742,117
+2025-04-19,Business,North America,Poor Support,1076.03,654,51
+2024-09-04,Professional,Europe,Missing Features,571.67,3555,92
+2024-11-21,Enterprise,Latin America,Low Usage,766.96,4054,77
+2025-02-06,Professional,Europe,Switched Competitor,1771.4,2767,89
+2024-03-09,Professional,Middle East and Africa,Switched Competitor,366.5,4161,114
+2025-05-25,Enterprise,Europe,Price,141.73,3119,28
+2025-05-10,Business,Latin America,Missing Features,2154.55,2254,114
+2024-05-19,Enterprise,Asia Pacific,Price,2471.2,2984,117
+2025-05-22,Free,North America,Low Usage,427.08,947,35
+2025-06-20,Free,Middle East and Africa,Company Closed,790.98,4393,4
+2025-05-11,Enterprise,Europe,Price,1369.5,1499,106
+2024-07-05,Free,Latin America,Price,1501.86,3516,117
+2025-01-05,Professional,North America,Low Usage,399.17,1096,109
+2024-12-03,Professional,Asia Pacific,Price,1504.93,3920,44
+2024-02-01,Free,Middle East and Africa,Poor Support,425.14,3919,71
+2025-02-27,Starter,North America,Switched Competitor,782.2,4794,50
+2024-02-18,Professional,North America,Missing Features,2429.39,55,47
+2024-10-22,Professional,Europe,Low Usage,1657.9,1924,111
+2025-01-29,Free,Middle East and Africa,Price,568.95,3714,100
+2025-01-02,Free,North America,Missing Features,1904.77,4884,90
+2025-05-08,Free,Asia Pacific,Missing Features,1467.3,834,100
+2025-04-30,Business,Middle East and Africa,Price,752.58,168,25
+2025-02-27,Starter,Middle East and Africa,Other,1805.35,2114,115
+2025-05-12,Enterprise,North America,Low Usage,968.48,306,4
+2025-06-23,Business,Latin America,Poor Support,2443.18,2120,52
+2024-08-06,Starter,North America,Low Usage,1.29,3515,47
+2025-02-21,Professional,Middle East and Africa,Missing Features,100.36,2262,17
+2024-01-12,Business,Asia Pacific,Switched Competitor,1681.06,3130,103
+2025-06-18,Enterprise,Asia Pacific,Price,1341.0,3280,71
+2024-08-30,Free,Europe,Company Closed,1110.24,980,74
+2025-04-19,Enterprise,Latin America,Poor Support,391.87,4185,112
+2025-04-15,Starter,North America,Company Closed,1240.61,2874,109
+2024-08-02,Professional,North America,Company Closed,1609.51,1895,4
+2024-01-13,Starter,Europe,Other,1148.83,1813,113
+2024-09-02,Starter,Europe,Price,2327.68,1605,23
+2025-02-07,Starter,North America,Poor Support,1848.22,264,3
+2024-01-24,Free,North America,Poor Support,448.8,681,77
+2024-06-05,Starter,Latin America,Missing Features,156.31,4634,2
+2024-03-20,Enterprise,Asia Pacific,Poor Support,235.76,202,65
+2025-02-03,Free,Middle East and Africa,Switched Competitor,2214.99,1829,26
+2024-11-13,Professional,Latin America,Other,2390.89,2935,16
+2024-09-02,Business,Asia Pacific,Other,1450.39,4831,103
+2025-02-15,Enterprise,Europe,Missing Features,2272.92,1482,3
+2025-02-16,Starter,Europe,Poor Support,2312.96,1196,105
+2024-12-07,Business,Latin America,Switched Competitor,2052.5,2555,20
+2024-12-18,Professional,Middle East and Africa,Low Usage,2234.8,1996,18
+2024-08-10,Business,Asia Pacific,Low Usage,2479.51,975,50
+2024-03-13,Starter,North America,Low Usage,2499.39,1640,62

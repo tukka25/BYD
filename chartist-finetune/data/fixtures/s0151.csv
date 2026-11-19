@@ -1,241 +1,241 @@
-bill_dt,svc_typ,cust_cls,rgn_cd,kwh_usg,tot_chg,lt_fee
-2024-03-26,sewer,senior_assist,west,23550,270.15,34.6
-2024-08-29,water,commercial,west,18751,773.78,49.46
-2024-02-10,broadband,commercial,east,7905,1145.27,48.09
-2024-07-22,trash,municipal,north,264,1271.33,11.31
-2025-02-16,broadband,commercial,central,22030,1471.04,20.52
-2024-04-23,broadband,commercial,central,18443,1259.17,39.35
-2025-01-03,water,residential,central,7472,566.76,56.59
-2024-12-13,broadband,residential,west,7401,88.56,8.26
-2024-10-13,water,commercial,north,13698,668.48,47.45
-2024-06-24,water,commercial,central,16382,16.07,13.88
-2024-08-03,water,commercial,east,11272,1123.01,1.79
-2025-06-21,trash,residential,west,3414,929.07,69.39
-2025-02-28,broadband,commercial,south,1222,95.74,46.23
-2025-05-16,gas,senior_assist,south,6957,238.74,72.49
-2025-06-22,sewer,senior_assist,east,18831,1269.03,21.99
-2024-10-31,sewer,municipal,south,20312,1283.34,23.46
-2025-03-13,sewer,industrial,north,785,927.45,54.63
-2024-02-27,trash,residential,south,2372,999.6,8.35
-2025-04-01,electric,residential,west,14204,621.41,59.37
-2024-12-08,water,industrial,east,16975,916.33,10.63
-2025-04-30,water,commercial,east,10863,1061.24,71.32
-2025-01-01,gas,residential,south,10568,958.13,58.97
-2024-11-06,broadband,municipal,north,2744,402.57,43.83
-2024-03-25,gas,residential,east,21531,205.95,74.5
-2024-06-11,broadband,municipal,central,7119,617.95,13.88
-2024-10-10,trash,municipal,west,22624,1456.23,64.87
-2025-05-17,water,residential,north,5968,796.55,52.92
-2024-12-27,broadband,senior_assist,central,21870,1149.47,59.2
-2024-12-02,water,industrial,east,4980,264.82,26.53
-2024-08-23,sewer,municipal,east,8212,621.95,55.42
-2024-12-22,broadband,municipal,west,2673,1140.66,47.67
-2024-03-12,trash,residential,north,3384,779.27,59.57
-2024-05-31,sewer,municipal,south,23083,95.48,48.69
-2025-02-17,gas,residential,central,14729,186.62,69.02
-2024-03-18,electric,municipal,east,19797,74.17,55.56
-2025-05-31,gas,municipal,west,24193,1173.01,6.28
-2024-05-03,trash,residential,west,5098,318.49,28.44
-2025-06-19,electric,senior_assist,east,14164,336.42,36.47
-2024-09-29,sewer,residential,central,15701,575.32,59.08
-2025-06-08,water,senior_assist,south,6550,1189.75,52.82
-2024-02-22,water,residential,south,22917,943.31,21.72
-2024-02-12,electric,commercial,south,17352,571.57,2.65
-2024-09-13,water,senior_assist,west,3101,347.8,33.18
-2024-05-03,electric,industrial,north,10449,1416.96,25.9
-2025-06-04,water,municipal,east,21011,973.81,18.37
-2024-09-30,trash,industrial,east,15230,611.53,66.29
-2024-07-11,sewer,residential,south,1096,1259.5,20.06
-2024-05-24,gas,senior_assist,south,18937,382.14,65.87
-2024-12-20,gas,industrial,south,2769,270.9,15.69
-2024-11-05,trash,commercial,central,20047,833.75,16.16
-2024-06-25,sewer,industrial,east,2740,1494.32,13.21
-2024-03-31,broadband,municipal,east,9457,743.42,25.38
-2025-04-02,sewer,residential,central,7878,878.31,3.39
-2025-02-26,sewer,municipal,east,13513,902.59,55.19
-2024-07-25,gas,residential,south,20101,81.24,72.21
-2024-03-14,broadband,municipal,west,3044,508.37,1.77
-2024-12-25,sewer,commercial,north,7286,349.15,64.63
-2025-05-22,electric,industrial,north,22152,1296.21,47.88
-2024-01-23,sewer,municipal,east,7384,817.61,63.89
-2025-05-28,trash,senior_assist,central,20695,1014.26,21.59
-2024-05-10,trash,commercial,central,10167,509.08,55.57
-2024-03-12,gas,residential,east,1958,1488.54,29.68
-2024-07-12,sewer,commercial,north,7116,397.77,62.89
-2025-02-24,sewer,residential,north,21351,743.43,18.95
-2024-07-05,broadband,commercial,south,18544,44.21,28.9
-2025-04-25,sewer,municipal,east,17837,737.14,6.14
-2024-09-27,trash,senior_assist,north,3853,1423.85,17.24
-2025-06-19,electric,commercial,south,6709,864.32,73.62
-2024-02-09,gas,senior_assist,south,9768,1479.77,43.89
-2025-02-22,sewer,municipal,south,8925,46.76,61.28
-2024-06-12,sewer,residential,south,20135,1067.31,18.1
-2025-06-13,broadband,municipal,west,11090,1303.39,72.94
-2024-11-12,trash,residential,north,19405,1274.99,35.62
-2024-08-13,water,commercial,north,23376,91.89,39.36
-2024-01-23,sewer,residential,west,14156,290.71,71.86
-2024-12-07,trash,municipal,central,24073,295.69,18.41
-2025-02-23,sewer,residential,east,6340,1262.77,5.06
-2025-06-15,water,commercial,east,18585,607.9,73.49
-2024-09-23,gas,municipal,east,21532,946.85,8.43
-2024-04-28,broadband,commercial,west,3162,413.65,5.71
-2024-05-09,gas,industrial,south,1277,383.49,20.14
-2024-05-03,broadband,residential,east,3726,694.23,35.04
-2025-01-04,broadband,residential,east,24434,492.07,15.48
-2024-11-07,gas,commercial,north,1463,1356.48,25.29
-2025-05-22,water,commercial,east,18485,1090.9,5.09
-2024-08-09,gas,senior_assist,south,6415,210.3,25.96
-2024-09-07,water,industrial,west,10332,658.8,52.81
-2025-05-07,gas,senior_assist,central,9715,36.2,65.96
-2024-06-15,electric,municipal,central,1575,451.38,32.55
-2024-08-23,sewer,municipal,east,9401,609.3,68.63
-2025-02-14,trash,residential,south,4872,848.04,74.07
-2025-04-14,water,senior_assist,north,13496,350.32,2.82
-2025-04-26,water,commercial,central,24830,1398.97,73.4
-2024-08-25,trash,senior_assist,south,12759,726.4,42.02
-2025-05-12,sewer,industrial,north,507,1222.39,60.95
-2024-06-27,water,senior_assist,east,1145,1308.11,36.31
-2024-08-21,trash,senior_assist,central,22975,256.28,0.67
-2024-01-14,electric,industrial,central,6690,750.19,34.51
-2024-10-12,sewer,industrial,west,13159,576.43,55.54
-2024-08-12,trash,industrial,east,23610,1043.73,43.44
-2024-01-28,sewer,residential,north,3063,10.35,10.38
-2025-05-02,trash,industrial,central,4898,708.24,13.17
-2024-02-20,gas,commercial,west,20765,943.95,44.93
-2024-10-30,trash,senior_assist,central,15460,384.38,8.1
-2024-12-18,sewer,residential,west,15614,150.85,13.19
-2024-07-20,trash,industrial,central,13061,1114.03,19.49
-2024-06-21,water,senior_assist,south,23806,318.41,66.36
-2025-06-23,gas,senior_assist,north,4164,554.45,69.33
-2024-09-27,broadband,residential,south,5714,147.84,30.91
-2024-04-16,gas,industrial,south,16686,263.12,0.69
-2024-02-21,gas,commercial,west,6297,1349.63,55.01
-2024-01-25,water,residential,north,16145,1009.45,30.18
-2024-07-17,broadband,commercial,south,12972,544.22,39.96
-2025-01-11,electric,commercial,east,13879,770.54,20.61
-2024-09-11,trash,senior_assist,west,14849,1119.88,65.35
-2024-07-22,trash,municipal,south,20607,692.86,40.91
-2024-04-28,sewer,residential,east,7567,330.94,19.63
-2024-07-14,gas,municipal,central,22815,172.43,24.79
-2025-04-16,gas,senior_assist,west,23920,725.61,71.77
-2024-02-12,electric,municipal,west,17277,1295.77,43.72
-2024-09-21,trash,residential,west,20062,4.8,42.05
-2024-10-03,sewer,commercial,central,97,563.28,13.13
-2024-01-08,trash,municipal,east,7718,672.39,61.09
-2024-12-28,electric,industrial,central,5169,1456.82,61.06
-2024-10-09,trash,commercial,west,6377,1405.51,0.42
-2025-03-15,sewer,residential,central,4887,691.8,11.6
-2024-11-30,water,commercial,south,566,906.2,20.45
-2024-08-06,trash,industrial,central,7018,214.15,34.06
-2024-12-01,gas,municipal,north,15279,1492.89,34.82
-2024-09-27,gas,municipal,central,9639,496.48,5.63
-2024-04-27,sewer,municipal,south,16678,1382.31,48.03
-2025-02-01,electric,residential,central,12906,1185.59,63.75
-2024-11-21,electric,municipal,north,16173,1203.54,28.57
-2024-09-09,water,senior_assist,north,4210,1489.22,52.47
-2025-01-22,gas,residential,west,17136,591.16,30.41
-2024-09-16,gas,commercial,central,7664,735.16,65.32
-2025-03-31,trash,senior_assist,south,17698,230.9,63.82
-2024-07-23,broadband,industrial,west,13085,67.26,67.7
-2025-06-17,sewer,municipal,north,5227,366.27,47.72
-2024-05-08,gas,senior_assist,central,13640,233.03,24.22
-2024-01-07,trash,senior_assist,south,3437,469.26,60.95
-2025-04-30,electric,industrial,west,20241,1156.84,29.21
-2024-03-30,electric,industrial,east,14494,639.09,58.48
-2024-11-28,sewer,residential,west,6596,1001.75,36.6
-2024-11-29,sewer,commercial,east,17211,1227.73,13.38
-2024-12-17,sewer,industrial,central,9308,823.0,21.25
-2024-06-07,gas,municipal,south,23138,1118.56,69.71
-2024-08-19,trash,municipal,west,14011,306.92,13.41
-2024-01-13,sewer,residential,central,2884,545.05,50.63
-2024-07-12,water,industrial,north,13231,500.28,25.2
-2024-01-03,gas,residential,central,780,697.47,4.06
-2024-11-18,trash,senior_assist,east,14554,1307.32,56.38
-2025-01-28,water,senior_assist,north,14546,1146.25,4.95
-2025-02-16,broadband,municipal,east,18489,874.55,15.67
-2025-06-12,sewer,senior_assist,north,4744,537.82,53.92
-2025-05-27,gas,industrial,west,17097,702.42,63.4
-2025-04-02,broadband,municipal,west,6193,442.43,74.94
-2025-04-10,electric,municipal,west,8542,759.12,35.41
-2025-05-04,trash,residential,north,1293,513.41,66.45
-2024-03-31,water,senior_assist,west,6866,1488.1,1.83
-2024-03-11,water,industrial,central,6624,746.07,59.8
-2024-10-09,gas,municipal,east,956,664.1,59.75
-2025-03-10,water,industrial,central,13326,501.02,57.33
-2024-02-28,broadband,senior_assist,north,19968,1171.49,33.6
-2025-01-13,electric,municipal,east,248,198.78,49.81
-2024-10-30,electric,municipal,south,15407,678.8,22.08
-2025-04-30,water,senior_assist,west,13277,806.53,44.34
-2024-06-20,trash,senior_assist,west,3704,367.24,12.83
-2025-02-11,electric,municipal,east,8890,1368.96,26.67
-2024-04-29,water,residential,west,16862,816.8,0.06
-2024-08-09,sewer,residential,east,13607,161.41,36.96
-2025-06-23,broadband,municipal,east,7648,1003.61,72.03
-2024-03-22,gas,commercial,west,2524,1347.12,11.59
-2024-03-19,sewer,commercial,west,7763,648.49,46.55
-2024-03-24,broadband,commercial,west,3130,764.32,17.65
-2024-12-03,electric,commercial,central,12886,976.79,2.41
-2024-01-08,gas,municipal,north,24523,172.33,28.66
-2024-02-10,trash,industrial,west,24604,803.41,34.22
-2024-05-05,sewer,commercial,central,931,111.42,57.7
-2024-10-02,water,commercial,north,21557,48.02,2.25
-2024-04-24,gas,residential,south,16376,285.13,2.55
-2024-10-08,broadband,commercial,north,13610,1119.85,32.23
-2025-05-29,electric,senior_assist,south,10656,850.13,27.39
-2024-08-13,sewer,municipal,south,2107,727.84,38.74
-2025-05-17,sewer,residential,south,21292,1099.55,62.51
-2024-05-05,water,municipal,south,6289,1396.49,7.1
-2024-06-17,gas,senior_assist,north,2355,778.46,3.13
-2024-03-05,gas,industrial,north,12042,823.16,45.07
-2025-01-18,water,senior_assist,north,20086,319.16,35.34
-2024-01-02,water,residential,north,3000,879.19,65.65
-2024-03-03,electric,municipal,central,2541,1480.2,24.76
-2024-01-14,sewer,residential,north,16309,478.2,66.91
-2024-12-20,electric,commercial,central,4384,915.84,21.82
-2025-06-20,water,municipal,north,7987,874.05,47.52
-2025-04-10,gas,industrial,north,13978,515.96,68.31
-2024-07-26,broadband,commercial,east,16947,287.78,25.59
-2025-05-10,water,residential,south,1074,192.5,34.64
-2025-05-02,gas,municipal,west,16417,971.08,0.83
-2024-07-06,sewer,senior_assist,central,7391,745.57,7.19
-2024-08-08,electric,industrial,south,21614,217.28,50.75
-2025-05-31,water,residential,west,11167,188.05,65.96
-2024-10-27,water,commercial,west,11613,1069.25,47.21
-2025-01-22,electric,senior_assist,north,13754,825.45,74.58
-2024-12-25,electric,industrial,east,24580,303.09,52.88
-2025-04-10,broadband,senior_assist,west,21591,1350.04,65.72
-2024-09-15,trash,residential,central,7163,697.23,62.06
-2024-12-29,electric,residential,east,3366,532.93,31.51
-2024-01-23,gas,residential,central,4569,1480.52,10.78
-2024-03-01,gas,industrial,central,18833,1240.21,12.76
-2024-08-20,water,senior_assist,central,9323,203.97,39.72
-2025-03-29,trash,commercial,west,24384,1430.56,7.07
-2024-05-26,broadband,industrial,west,13441,134.98,72.65
-2025-06-08,trash,municipal,south,22643,351.78,53.77
-2025-01-02,trash,industrial,south,11792,784.27,54.62
-2024-03-17,water,residential,east,22654,679.25,33.26
-2024-08-29,broadband,municipal,central,13747,148.2,49.38
-2025-03-04,water,industrial,east,8386,813.73,9.9
-2025-04-07,electric,commercial,north,24802,1052.08,44.29
-2024-08-18,trash,residential,central,19706,983.76,39.37
-2024-05-10,electric,commercial,east,3898,1471.55,26.39
-2024-08-09,gas,municipal,central,14195,709.85,30.6
-2024-01-30,water,residential,central,2687,347.0,65.53
-2024-09-12,sewer,industrial,central,13535,667.96,38.86
-2024-04-24,trash,senior_assist,east,660,867.9,30.04
-2024-05-22,sewer,residential,south,14118,496.8,54.28
-2024-11-14,sewer,industrial,west,18392,168.12,57.1
-2024-02-25,trash,municipal,north,711,989.42,25.28
-2024-05-30,broadband,residential,north,7525,1125.22,12.03
-2024-04-27,gas,industrial,east,13249,928.14,47.46
-2025-01-18,sewer,senior_assist,south,1455,1464.54,27.01
-2024-03-08,water,industrial,north,5820,839.85,42.55
-2024-02-23,gas,residential,central,1175,680.57,36.85
-2025-05-20,trash,senior_assist,south,2541,156.67,29.54
-2024-11-01,water,industrial,south,5588,3.46,57.32
-2024-07-01,broadband,commercial,south,54,1032.99,36.12
-2024-11-02,water,residential,east,21323,995.37,54.4
-2024-05-31,trash,industrial,west,15413,817.49,36.59
-2024-07-27,broadband,municipal,north,23392,268.02,21.81
-2025-03-20,sewer,senior_assist,south,1457,514.06,74.28
-2024-07-27,water,municipal,south,19244,755.31,51.78
+appt_dt,spec_nm,appt_stat,vis_typ,wait_min,dur_min,copay_amt
+2024-12-07,Orthopedics,No-Show,Annual Physical,82,114,78.71
+2024-09-30,Neurology,Scheduled,Follow-Up,131,36,43.72
+2025-03-26,Family Medicine,No-Show,Follow-Up,114,67,108.39
+2024-05-16,Family Medicine,Rescheduled,Telehealth,22,66,17.1
+2024-11-09,Orthopedics,Cancelled,Procedure,132,31,147.65
+2025-01-15,Orthopedics,Rescheduled,Procedure,154,22,48.87
+2024-08-03,Neurology,Scheduled,Annual Physical,60,97,244.78
+2024-03-11,Dermatology,Cancelled,Procedure,108,39,231.57
+2024-09-13,Oncology,Rescheduled,Telehealth,1,112,189.22
+2024-02-05,Cardiology,No-Show,Follow-Up,78,110,122.62
+2024-12-16,Pediatrics,Cancelled,New Patient,135,60,96.6
+2024-10-22,Dermatology,No-Show,Telehealth,43,58,39.73
+2024-12-17,Dermatology,Cancelled,Annual Physical,162,22,228.58
+2024-09-18,Pediatrics,No-Show,Procedure,86,37,232.73
+2024-11-23,Orthopedics,Scheduled,New Patient,94,28,186.37
+2024-09-17,Oncology,Rescheduled,Telehealth,87,16,38.86
+2025-03-18,Family Medicine,Scheduled,Telehealth,118,46,30.4
+2024-11-13,Neurology,Cancelled,Annual Physical,108,79,36.02
+2025-02-10,Oncology,Completed,Annual Physical,108,111,108.42
+2025-02-22,Cardiology,Cancelled,Follow-Up,163,80,166.36
+2025-05-09,Dermatology,No-Show,Annual Physical,1,85,59.69
+2025-04-24,Family Medicine,Scheduled,Telehealth,107,67,183.19
+2024-07-06,Neurology,Rescheduled,Annual Physical,61,64,209.51
+2025-02-09,Neurology,Scheduled,Annual Physical,113,116,199.84
+2024-12-12,Oncology,Scheduled,Follow-Up,170,40,37.16
+2024-03-18,Dermatology,Cancelled,Procedure,82,31,218.4
+2024-09-30,Dermatology,Cancelled,Procedure,32,120,239.06
+2024-11-06,Family Medicine,Cancelled,Annual Physical,142,46,140.27
+2024-11-21,Neurology,Cancelled,Follow-Up,69,68,22.67
+2024-07-26,Family Medicine,No-Show,Follow-Up,98,71,224.68
+2025-01-23,Pediatrics,Scheduled,Procedure,121,61,136.33
+2024-10-31,Pediatrics,Cancelled,Follow-Up,82,111,154.65
+2024-12-10,Cardiology,No-Show,Telehealth,152,24,31.68
+2025-05-04,Neurology,No-Show,Annual Physical,170,72,209.93
+2024-01-23,Family Medicine,Scheduled,Procedure,130,10,153.1
+2024-01-11,Oncology,No-Show,New Patient,123,78,110.55
+2024-07-28,Pediatrics,Cancelled,Procedure,170,95,91.68
+2025-02-03,Orthopedics,Cancelled,Telehealth,80,117,88.14
+2024-08-07,Neurology,Rescheduled,Telehealth,98,60,7.99
+2024-04-24,Neurology,Scheduled,Follow-Up,99,107,96.34
+2024-09-26,Dermatology,Completed,Telehealth,119,15,129.49
+2024-10-08,Dermatology,Scheduled,Telehealth,36,11,13.82
+2024-02-26,Orthopedics,No-Show,Procedure,46,37,116.3
+2024-11-11,Orthopedics,Cancelled,Procedure,124,15,211.44
+2024-08-04,Cardiology,Scheduled,Follow-Up,102,88,154.65
+2024-04-16,Cardiology,Scheduled,Annual Physical,98,64,114.8
+2024-05-18,Oncology,No-Show,Follow-Up,108,13,151.52
+2024-08-03,Pediatrics,Rescheduled,Follow-Up,113,102,232.05
+2025-02-24,Oncology,Completed,New Patient,25,110,90.01
+2024-06-07,Family Medicine,Rescheduled,Procedure,121,41,45.52
+2024-11-07,Cardiology,Rescheduled,Follow-Up,38,78,246.29
+2024-08-06,Pediatrics,Cancelled,Telehealth,111,77,225.27
+2025-05-10,Pediatrics,Completed,Telehealth,5,101,244.49
+2024-11-24,Oncology,Cancelled,Telehealth,172,84,193.86
+2024-09-22,Cardiology,Scheduled,Follow-Up,166,69,162.96
+2024-07-08,Neurology,No-Show,Procedure,179,59,192.9
+2024-03-18,Dermatology,Rescheduled,Telehealth,26,25,154.1
+2024-12-22,Neurology,No-Show,Annual Physical,9,41,72.99
+2025-05-06,Pediatrics,Cancelled,Annual Physical,100,115,184.59
+2025-06-02,Cardiology,Cancelled,Telehealth,139,77,73.24
+2025-01-27,Pediatrics,Cancelled,Procedure,14,36,144.01
+2024-03-30,Family Medicine,Rescheduled,Procedure,19,71,124.38
+2025-02-12,Oncology,Scheduled,Telehealth,50,79,93.55
+2025-04-13,Neurology,No-Show,Annual Physical,5,97,73.61
+2024-02-24,Dermatology,Scheduled,Annual Physical,120,80,27.8
+2024-10-18,Cardiology,Scheduled,New Patient,121,118,208.67
+2025-05-24,Orthopedics,Rescheduled,Follow-Up,94,15,59.62
+2025-03-11,Oncology,Rescheduled,Follow-Up,153,42,195.94
+2025-02-23,Pediatrics,Scheduled,Follow-Up,40,48,166.36
+2025-03-16,Cardiology,Rescheduled,New Patient,59,25,184.09
+2024-07-05,Orthopedics,Completed,Annual Physical,167,16,168.71
+2024-11-18,Cardiology,Cancelled,Follow-Up,2,19,164.08
+2024-01-25,Oncology,Cancelled,Annual Physical,124,99,99.94
+2024-05-07,Family Medicine,Cancelled,Telehealth,45,118,191.36
+2024-12-26,Family Medicine,Completed,Procedure,38,103,127.09
+2024-09-09,Cardiology,Completed,Follow-Up,45,116,170.44
+2024-03-15,Cardiology,No-Show,Annual Physical,8,26,11.9
+2024-11-23,Family Medicine,Scheduled,New Patient,29,40,191.66
+2024-10-18,Pediatrics,Completed,Procedure,178,117,163.3
+2025-05-16,Oncology,Scheduled,Follow-Up,3,31,238.17
+2024-05-07,Orthopedics,Cancelled,Follow-Up,177,106,246.71
+2025-05-15,Oncology,Rescheduled,Annual Physical,86,47,59.24
+2024-10-10,Neurology,Cancelled,Telehealth,70,27,217.8
+2024-01-15,Neurology,Completed,New Patient,108,91,102.85
+2024-03-13,Family Medicine,Completed,New Patient,170,63,112.55
+2024-08-06,Cardiology,Cancelled,New Patient,146,101,107.1
+2025-03-12,Pediatrics,No-Show,Annual Physical,101,14,142.39
+2025-01-17,Orthopedics,Scheduled,New Patient,100,42,243.74
+2025-02-22,Cardiology,Cancelled,Procedure,64,17,136.0
+2024-08-24,Cardiology,Completed,Annual Physical,102,76,202.65
+2024-11-06,Oncology,Completed,Telehealth,128,77,46.44
+2024-07-02,Orthopedics,Cancelled,Follow-Up,73,43,93.38
+2024-05-02,Oncology,No-Show,Follow-Up,158,61,58.77
+2024-10-08,Orthopedics,Rescheduled,Telehealth,147,31,36.61
+2025-05-12,Dermatology,Rescheduled,Annual Physical,28,113,8.19
+2025-03-28,Orthopedics,Rescheduled,Follow-Up,145,105,226.44
+2025-04-25,Oncology,No-Show,Annual Physical,112,87,143.58
+2024-11-20,Pediatrics,Rescheduled,Annual Physical,53,59,138.56
+2024-01-01,Oncology,Cancelled,Follow-Up,34,94,241.31
+2024-10-10,Cardiology,Cancelled,Telehealth,1,28,30.9
+2024-03-11,Dermatology,Rescheduled,Annual Physical,139,83,186.51
+2025-06-06,Pediatrics,Completed,Telehealth,116,10,177.53
+2025-03-02,Cardiology,Completed,New Patient,46,99,83.07
+2024-04-29,Pediatrics,Rescheduled,Annual Physical,130,53,77.84
+2024-12-10,Dermatology,Rescheduled,Procedure,7,85,78.75
+2024-12-23,Dermatology,Rescheduled,New Patient,56,105,166.04
+2025-05-25,Orthopedics,Cancelled,Annual Physical,161,71,7.73
+2024-04-22,Oncology,Rescheduled,Annual Physical,86,107,212.71
+2025-01-24,Dermatology,Cancelled,Annual Physical,59,103,184.32
+2025-04-13,Oncology,Rescheduled,Telehealth,105,106,210.71
+2024-02-02,Neurology,Cancelled,Annual Physical,14,18,244.47
+2024-12-20,Family Medicine,Cancelled,New Patient,177,74,209.92
+2025-03-12,Cardiology,Completed,Annual Physical,147,116,69.65
+2024-09-03,Cardiology,Completed,Telehealth,130,114,31.42
+2025-01-17,Orthopedics,Rescheduled,Follow-Up,10,81,177.83
+2025-04-21,Pediatrics,No-Show,Annual Physical,16,77,150.59
+2025-06-04,Family Medicine,Cancelled,New Patient,122,32,75.91
+2025-04-18,Oncology,No-Show,Annual Physical,2,32,64.43
+2024-08-11,Oncology,Scheduled,Annual Physical,89,71,188.5
+2024-08-06,Neurology,Completed,Annual Physical,57,56,143.35
+2025-01-20,Dermatology,Scheduled,Follow-Up,51,73,77.64
+2025-04-26,Pediatrics,Scheduled,Follow-Up,113,37,42.72
+2024-11-21,Oncology,No-Show,Follow-Up,108,118,114.91
+2024-10-18,Pediatrics,Completed,Procedure,163,106,110.25
+2025-01-27,Orthopedics,Rescheduled,New Patient,38,112,132.22
+2025-05-10,Neurology,Completed,Annual Physical,92,38,118.64
+2024-06-02,Pediatrics,Scheduled,Procedure,42,92,12.05
+2024-06-11,Oncology,No-Show,Telehealth,4,119,147.79
+2025-01-10,Neurology,Scheduled,Telehealth,137,19,236.19
+2024-07-18,Oncology,Scheduled,New Patient,42,50,171.82
+2024-12-02,Neurology,No-Show,New Patient,66,81,162.35
+2025-03-27,Dermatology,Rescheduled,Annual Physical,92,81,231.94
+2024-12-28,Orthopedics,No-Show,New Patient,38,73,143.84
+2024-09-01,Cardiology,Scheduled,Annual Physical,8,22,233.09
+2024-08-11,Pediatrics,Scheduled,Annual Physical,169,17,169.18
+2024-01-06,Neurology,Cancelled,New Patient,65,31,224.24
+2024-11-26,Pediatrics,Completed,New Patient,75,92,146.45
+2024-03-06,Oncology,Scheduled,Telehealth,39,60,193.78
+2024-02-19,Orthopedics,Scheduled,New Patient,141,100,34.07
+2024-02-01,Family Medicine,Rescheduled,Telehealth,158,18,134.18
+2025-03-25,Cardiology,Cancelled,Follow-Up,132,64,67.73
+2024-01-17,Orthopedics,Rescheduled,Follow-Up,46,77,102.53
+2024-08-22,Orthopedics,Rescheduled,Annual Physical,154,18,65.01
+2024-02-12,Oncology,Completed,New Patient,94,11,124.51
+2024-03-10,Dermatology,Cancelled,Follow-Up,117,77,71.43
+2024-11-06,Orthopedics,Completed,Follow-Up,81,50,51.01
+2024-08-10,Orthopedics,Cancelled,Telehealth,130,86,213.35
+2024-04-07,Neurology,Cancelled,Procedure,38,100,161.55
+2024-08-03,Pediatrics,Scheduled,Follow-Up,155,85,115.66
+2025-02-18,Family Medicine,Cancelled,New Patient,105,103,169.89
+2024-12-29,Orthopedics,Cancelled,Telehealth,128,51,208.04
+2025-01-26,Cardiology,Rescheduled,Annual Physical,43,110,184.82
+2025-03-13,Oncology,Scheduled,Annual Physical,65,28,3.94
+2025-01-18,Neurology,Completed,Telehealth,68,106,11.42
+2024-07-02,Pediatrics,No-Show,Telehealth,115,72,179.98
+2024-11-22,Neurology,No-Show,Follow-Up,156,90,215.95
+2025-02-20,Neurology,Scheduled,Follow-Up,145,20,106.07
+2024-05-27,Pediatrics,Cancelled,New Patient,122,20,239.12
+2024-12-02,Family Medicine,Rescheduled,Follow-Up,15,10,220.58
+2024-11-07,Oncology,Scheduled,New Patient,168,80,101.45
+2025-06-19,Dermatology,Rescheduled,Follow-Up,150,91,184.62
+2024-08-16,Orthopedics,Completed,New Patient,45,117,96.19
+2025-05-21,Cardiology,Scheduled,Annual Physical,179,12,69.92
+2024-02-24,Orthopedics,No-Show,Telehealth,140,52,194.11
+2025-04-28,Family Medicine,Completed,New Patient,1,79,68.05
+2025-05-06,Neurology,Completed,Annual Physical,160,97,175.56
+2024-04-15,Oncology,No-Show,Follow-Up,112,31,59.38
+2025-06-23,Dermatology,Scheduled,Telehealth,110,62,23.67
+2024-03-09,Neurology,Cancelled,Annual Physical,70,47,206.46
+2025-04-06,Cardiology,Scheduled,Annual Physical,124,113,176.01
+2024-06-01,Dermatology,Rescheduled,Procedure,147,35,32.3
+2025-05-11,Cardiology,Cancelled,Annual Physical,17,63,132.58
+2024-11-16,Neurology,Cancelled,New Patient,102,118,20.44
+2024-10-10,Pediatrics,Completed,Annual Physical,75,69,245.27
+2025-04-08,Oncology,No-Show,Telehealth,176,105,135.63
+2024-09-13,Family Medicine,Completed,Procedure,84,43,50.78
+2024-11-07,Oncology,Scheduled,Procedure,22,52,122.05
+2025-06-10,Dermatology,Scheduled,Follow-Up,52,83,181.09
+2025-05-26,Pediatrics,Completed,Follow-Up,143,27,145.08
+2024-07-03,Orthopedics,Cancelled,Telehealth,88,71,171.32
+2025-06-13,Oncology,Cancelled,Annual Physical,145,61,81.21
+2024-08-19,Neurology,Scheduled,New Patient,113,32,143.92
+2024-07-27,Oncology,Completed,New Patient,10,92,204.29
+2025-03-31,Cardiology,Scheduled,New Patient,33,93,73.86
+2025-05-07,Orthopedics,No-Show,Telehealth,140,25,11.12
+2024-08-31,Pediatrics,Rescheduled,Procedure,37,46,61.96
+2024-07-20,Cardiology,Scheduled,Procedure,133,90,33.46
+2024-10-03,Cardiology,No-Show,Follow-Up,107,89,50.98
+2024-12-24,Orthopedics,Completed,Annual Physical,179,67,130.52
+2024-03-24,Dermatology,Completed,Annual Physical,90,65,21.32
+2024-02-24,Dermatology,Cancelled,Follow-Up,50,35,34.57
+2024-03-14,Cardiology,Scheduled,Follow-Up,47,47,218.07
+2024-02-13,Dermatology,Scheduled,New Patient,38,12,43.71
+2024-12-10,Pediatrics,Completed,Annual Physical,139,111,101.84
+2024-02-23,Cardiology,Scheduled,Follow-Up,131,113,243.6
+2024-11-02,Oncology,Rescheduled,Follow-Up,160,48,58.53
+2024-04-01,Oncology,Scheduled,New Patient,116,116,223.07
+2024-06-22,Dermatology,Rescheduled,Follow-Up,74,42,186.67
+2024-02-06,Cardiology,Scheduled,Telehealth,123,50,11.18
+2024-01-21,Pediatrics,Completed,Annual Physical,163,85,95.8
+2024-12-18,Cardiology,Scheduled,Follow-Up,40,57,182.83
+2024-12-31,Oncology,Scheduled,Follow-Up,116,98,24.0
+2024-01-12,Pediatrics,Cancelled,Procedure,117,26,93.26
+2024-07-27,Oncology,Completed,Follow-Up,60,25,95.08
+2025-05-20,Pediatrics,No-Show,Annual Physical,137,111,235.51
+2024-01-27,Oncology,Completed,Telehealth,13,57,118.98
+2025-06-03,Orthopedics,No-Show,Telehealth,79,71,47.17
+2025-05-01,Cardiology,Rescheduled,Procedure,74,73,218.77
+2024-12-29,Cardiology,Cancelled,New Patient,112,50,30.79
+2024-06-10,Pediatrics,Cancelled,Telehealth,150,68,247.43
+2024-12-06,Dermatology,Cancelled,New Patient,56,39,164.4
+2025-05-08,Dermatology,Completed,Follow-Up,8,94,204.48
+2024-07-21,Cardiology,Scheduled,New Patient,82,45,111.26
+2025-06-10,Orthopedics,Cancelled,New Patient,15,50,99.59
+2024-12-28,Oncology,Completed,Procedure,22,114,142.59
+2025-03-23,Dermatology,No-Show,Procedure,36,86,145.37
+2024-03-15,Cardiology,Completed,Telehealth,28,103,202.65
+2025-03-16,Oncology,No-Show,Annual Physical,101,59,71.14
+2024-01-12,Orthopedics,Completed,Telehealth,130,57,12.46
+2024-01-14,Family Medicine,Scheduled,New Patient,27,27,198.54
+2024-11-07,Neurology,Scheduled,Follow-Up,68,12,192.13
+2024-04-13,Pediatrics,Scheduled,Annual Physical,8,38,129.72
+2025-04-29,Family Medicine,Rescheduled,Telehealth,69,49,155.26
+2025-03-16,Dermatology,No-Show,Telehealth,11,49,44.08
+2024-09-06,Oncology,Completed,New Patient,42,79,42.86
+2024-02-06,Orthopedics,No-Show,Telehealth,127,56,231.74
+2025-06-23,Oncology,Rescheduled,New Patient,166,52,213.18
+2024-05-17,Neurology,Rescheduled,Procedure,77,32,30.83
+2024-09-16,Pediatrics,Completed,New Patient,23,16,137.56
+2024-06-26,Dermatology,Scheduled,Telehealth,177,19,29.48
+2025-01-26,Oncology,Rescheduled,Telehealth,26,31,246.79
+2024-01-27,Cardiology,No-Show,Telehealth,152,107,60.49
+2024-04-20,Oncology,Completed,Annual Physical,13,55,166.36
+2024-09-10,Oncology,Rescheduled,Procedure,64,87,101.14
+2024-05-26,Oncology,Completed,Annual Physical,49,64,13.64
+2025-05-02,Pediatrics,No-Show,Follow-Up,95,111,216.97
+2025-04-10,Family Medicine,No-Show,Telehealth,139,77,19.21
+2024-04-15,Orthopedics,Completed,Annual Physical,92,51,246.53
+2024-10-24,Dermatology,No-Show,New Patient,22,21,79.29
+2024-03-04,Dermatology,Scheduled,Telehealth,88,13,158.31

@@ -1,241 +1,241 @@
-cargo_handling_date,cargo_terminal_code,cargo_type,cargo_direction,cargo_vessel_calls,cargo_tonnage,cargo_container_count,cargo_dwell_hours
-2025-04-13,T3-Container,Reefer,Transshipment,18,22924.38,6309,116.01
-2025-05-06,T3-Container,Containerized,Import,37,9540.17,3950,116.79
-2024-04-21,T3-Container,Reefer,Transshipment,28,10581.04,3069,152.73
-2024-01-25,T5-Liquid,Break Bulk,Export,15,50189.97,4107,147.05
-2024-11-02,T4-Bulk,Break Bulk,Import,32,66051.19,5368,191.68
-2025-06-21,T4-Bulk,Roll-on Roll-off,Transshipment,17,44507.44,52,78.04
-2025-06-09,T1-North,Reefer,Transshipment,17,85184.78,6076,199.76
-2025-04-05,T1-North,Bulk Dry,Transshipment,8,848.22,3087,27.55
-2024-06-24,T1-North,Bulk Dry,Export,19,68900.47,6376,215.92
-2024-10-09,T5-Liquid,Bulk Dry,Import,28,14312.32,2725,168.01
-2024-07-02,T4-Bulk,Containerized,Import,30,76208.07,3356,151.1
-2024-02-11,T4-Bulk,Break Bulk,Export,2,43970.8,2060,124.04
-2025-02-10,T4-Bulk,Containerized,Export,20,39672.42,2205,130.88
-2024-09-02,T3-Container,Liquid Bulk,Import,3,48942.9,2935,192.33
-2025-05-29,T2-South,Roll-on Roll-off,Import,25,37550.01,604,89.54
-2024-11-09,T1-North,Break Bulk,Export,17,73671.59,990,136.15
-2024-11-20,T5-Liquid,Bulk Dry,Transshipment,20,36338.76,2245,56.62
-2025-04-18,T2-South,Containerized,Transshipment,7,79566.15,2108,121.17
-2024-01-17,T1-North,Break Bulk,Export,38,5973.77,3296,31.02
-2024-06-28,T5-Liquid,Break Bulk,Transshipment,36,13447.47,896,67.0
-2024-12-12,T1-North,Liquid Bulk,Transshipment,19,67377.43,815,230.38
-2024-06-22,T4-Bulk,Liquid Bulk,Export,1,45076.86,696,127.41
-2025-03-18,T4-Bulk,Break Bulk,Export,32,26025.47,4901,223.8
-2024-05-03,T4-Bulk,Break Bulk,Transshipment,9,77687.36,1053,37.02
-2024-12-05,T5-Liquid,Liquid Bulk,Transshipment,36,40308.33,5457,36.74
-2024-04-28,T5-Liquid,Containerized,Transshipment,14,88863.67,2381,132.79
-2024-08-27,T3-Container,Liquid Bulk,Import,36,62063.47,4112,27.35
-2024-12-05,T5-Liquid,Bulk Dry,Transshipment,18,44134.65,5264,208.13
-2024-02-18,T3-Container,Containerized,Transshipment,34,36860.17,4866,164.74
-2025-05-29,T5-Liquid,Break Bulk,Import,20,39476.38,5377,68.48
-2024-12-16,T5-Liquid,Roll-on Roll-off,Import,23,61949.45,1678,173.64
-2025-03-01,T2-South,Bulk Dry,Transshipment,39,3007.18,6115,2.9
-2024-09-13,T1-North,Liquid Bulk,Export,32,14010.98,5855,97.37
-2025-06-15,T1-North,Roll-on Roll-off,Transshipment,22,83860.7,3794,119.37
-2024-01-22,T3-Container,Bulk Dry,Export,1,67336.05,2046,127.54
-2024-01-07,T3-Container,Break Bulk,Transshipment,4,21744.47,4094,215.78
-2025-02-19,T4-Bulk,Bulk Dry,Import,1,93520.22,252,184.64
-2025-03-26,T1-North,Bulk Dry,Import,36,55178.8,2273,23.44
-2024-11-07,T3-Container,Bulk Dry,Import,40,79831.72,675,183.93
-2024-12-18,T4-Bulk,Roll-on Roll-off,Export,19,30807.65,1207,175.72
-2024-05-16,T2-South,Bulk Dry,Export,7,239.19,3317,199.15
-2025-02-08,T5-Liquid,Liquid Bulk,Transshipment,0,65363.63,1055,31.83
-2025-03-07,T1-North,Containerized,Import,37,53324.13,2641,122.38
-2024-01-19,T5-Liquid,Roll-on Roll-off,Import,24,35702.67,1453,72.04
-2024-07-22,T5-Liquid,Liquid Bulk,Import,12,83653.47,2677,213.08
-2024-10-16,T2-South,Reefer,Export,27,15005.33,2786,191.01
-2024-10-01,T4-Bulk,Bulk Dry,Transshipment,24,35667.94,1478,206.24
-2024-02-22,T4-Bulk,Roll-on Roll-off,Import,30,6410.57,5503,72.34
-2024-05-19,T3-Container,Break Bulk,Transshipment,10,14263.44,4666,97.72
-2024-07-01,T5-Liquid,Roll-on Roll-off,Export,20,87934.86,6191,132.83
-2024-05-07,T4-Bulk,Bulk Dry,Transshipment,28,45172.78,4385,134.48
-2024-02-27,T2-South,Reefer,Export,12,3055.66,22,218.43
-2025-06-16,T3-Container,Roll-on Roll-off,Import,11,52127.85,2681,146.66
-2024-10-13,T1-North,Bulk Dry,Transshipment,19,36882.08,1478,218.26
-2024-08-20,T1-North,Reefer,Import,21,43226.81,471,47.37
-2024-07-19,T3-Container,Liquid Bulk,Import,2,64523.71,5343,183.89
-2024-05-06,T1-North,Break Bulk,Import,39,32084.78,2582,136.71
-2024-10-25,T5-Liquid,Liquid Bulk,Import,25,37929.84,5624,38.72
-2024-06-21,T5-Liquid,Break Bulk,Export,35,86720.47,390,213.56
-2024-05-09,T4-Bulk,Break Bulk,Import,7,5688.05,3920,125.55
-2024-03-19,T5-Liquid,Containerized,Transshipment,24,53471.66,4061,38.12
-2025-04-29,T2-South,Containerized,Export,1,27890.51,137,194.83
-2024-08-28,T2-South,Reefer,Transshipment,18,52392.85,372,150.65
-2024-10-16,T3-Container,Reefer,Transshipment,8,70779.76,240,48.02
-2024-02-28,T3-Container,Reefer,Import,21,55149.26,6336,124.65
-2025-03-04,T3-Container,Containerized,Import,39,91316.84,4391,69.98
-2024-04-29,T5-Liquid,Containerized,Export,25,66000.31,1327,37.09
-2024-05-14,T5-Liquid,Reefer,Export,26,59277.96,235,91.02
-2024-11-25,T3-Container,Containerized,Import,28,50483.52,3144,45.03
-2024-04-08,T3-Container,Liquid Bulk,Export,30,39003.9,934,5.41
-2025-05-01,T4-Bulk,Roll-on Roll-off,Export,4,11887.14,2069,42.07
-2025-02-23,T2-South,Liquid Bulk,Transshipment,34,67251.67,5222,96.35
-2024-03-14,T2-South,Bulk Dry,Export,11,73480.46,5076,178.35
-2024-04-19,T4-Bulk,Containerized,Export,39,1156.74,1823,208.83
-2025-01-13,T1-North,Liquid Bulk,Transshipment,21,67320.75,5674,97.97
-2024-04-13,T1-North,Containerized,Import,4,16930.89,6258,105.83
-2025-05-12,T5-Liquid,Break Bulk,Import,3,18269.11,6319,23.71
-2025-01-20,T3-Container,Containerized,Export,27,12335.46,1883,117.04
-2024-02-06,T1-North,Containerized,Import,37,60106.8,3875,35.3
-2024-10-20,T2-South,Liquid Bulk,Export,27,21619.11,784,235.41
-2024-10-05,T1-North,Containerized,Transshipment,21,48418.65,2215,16.64
-2024-10-10,T1-North,Reefer,Import,16,125.42,5254,72.72
-2024-09-26,T2-South,Containerized,Import,37,75924.49,3089,79.17
-2024-08-08,T2-South,Liquid Bulk,Transshipment,36,45472.09,124,81.95
-2024-03-24,T5-Liquid,Reefer,Transshipment,6,32238.96,844,227.4
-2025-01-23,T2-South,Roll-on Roll-off,Export,33,2833.43,1281,26.14
-2024-05-18,T2-South,Break Bulk,Transshipment,27,85661.76,6097,47.13
-2024-12-11,T1-North,Containerized,Import,15,54540.45,744,35.59
-2024-01-15,T3-Container,Containerized,Import,29,64439.18,5853,148.73
-2025-05-03,T1-North,Reefer,Import,19,27138.42,3278,107.57
-2024-05-27,T2-South,Break Bulk,Transshipment,32,74750.64,1695,170.84
-2024-10-07,T1-North,Roll-on Roll-off,Transshipment,24,75155.5,1571,220.77
-2024-09-04,T3-Container,Roll-on Roll-off,Import,15,86453.24,2675,153.72
-2025-01-05,T1-North,Bulk Dry,Export,31,3554.12,4829,89.99
-2024-09-22,T1-North,Break Bulk,Export,22,91808.22,1880,153.0
-2024-05-05,T2-South,Break Bulk,Transshipment,22,57245.28,2864,166.94
-2024-12-01,T2-South,Break Bulk,Import,30,41604.36,63,208.39
-2024-01-22,T1-North,Roll-on Roll-off,Import,13,63176.46,1987,22.95
-2024-06-05,T4-Bulk,Containerized,Export,35,5456.38,2894,131.22
-2024-06-11,T4-Bulk,Liquid Bulk,Transshipment,22,45820.6,5712,215.93
-2024-05-18,T1-North,Liquid Bulk,Import,7,4030.66,5612,106.83
-2024-06-03,T5-Liquid,Liquid Bulk,Import,19,83251.72,2466,92.13
-2025-04-06,T4-Bulk,Containerized,Transshipment,9,19591.8,1320,120.99
-2024-11-29,T4-Bulk,Break Bulk,Import,2,18286.54,2270,239.39
-2024-10-08,T5-Liquid,Liquid Bulk,Transshipment,30,36344.68,5591,59.91
-2025-05-29,T5-Liquid,Reefer,Transshipment,20,69323.1,6106,84.63
-2024-09-02,T4-Bulk,Bulk Dry,Transshipment,35,70126.42,1639,218.95
-2024-06-28,T4-Bulk,Roll-on Roll-off,Export,27,33025.7,1971,171.66
-2024-09-26,T1-North,Containerized,Transshipment,22,5132.45,3883,129.3
-2024-10-31,T4-Bulk,Break Bulk,Export,23,45158.32,117,100.05
-2024-12-27,T5-Liquid,Bulk Dry,Import,12,6181.09,5128,78.2
-2024-02-24,T4-Bulk,Bulk Dry,Import,2,18073.79,4096,117.13
-2025-02-19,T4-Bulk,Bulk Dry,Import,21,78007.24,3670,124.43
-2025-01-25,T5-Liquid,Containerized,Import,25,73250.28,4706,15.33
-2025-01-20,T5-Liquid,Roll-on Roll-off,Export,18,86070.75,1686,101.33
-2024-10-07,T3-Container,Roll-on Roll-off,Export,11,75155.98,2912,17.66
-2025-06-14,T2-South,Roll-on Roll-off,Export,36,43729.42,4316,65.8
-2025-01-24,T5-Liquid,Reefer,Transshipment,37,2535.42,5947,46.44
-2024-02-15,T5-Liquid,Bulk Dry,Transshipment,34,83713.99,3093,238.92
-2024-07-27,T4-Bulk,Bulk Dry,Export,38,66214.2,2102,13.5
-2024-01-23,T4-Bulk,Break Bulk,Import,1,3574.39,5454,226.03
-2024-08-16,T3-Container,Containerized,Transshipment,23,13910.21,5238,144.1
-2024-10-23,T1-North,Bulk Dry,Transshipment,25,79544.32,3801,39.23
-2025-01-13,T4-Bulk,Bulk Dry,Transshipment,35,59602.29,3614,209.41
-2024-06-19,T1-North,Containerized,Transshipment,40,89360.53,4895,24.29
-2025-05-09,T2-South,Bulk Dry,Transshipment,23,22517.63,5712,98.66
-2025-01-06,T1-North,Bulk Dry,Import,18,65525.78,3782,124.17
-2024-11-10,T5-Liquid,Bulk Dry,Import,32,42887.19,671,67.21
-2024-05-07,T5-Liquid,Reefer,Import,31,46091.91,457,200.75
-2024-12-26,T1-North,Liquid Bulk,Import,26,28295.06,592,222.14
-2024-06-09,T3-Container,Reefer,Transshipment,31,34451.0,2553,219.78
-2024-11-19,T3-Container,Liquid Bulk,Export,1,26592.28,2070,235.91
-2025-02-18,T2-South,Containerized,Import,14,49183.0,2823,10.68
-2025-01-08,T4-Bulk,Bulk Dry,Export,37,4676.46,5545,73.97
-2024-01-01,T5-Liquid,Bulk Dry,Import,37,73126.91,976,41.62
-2025-04-25,T2-South,Liquid Bulk,Transshipment,5,49020.33,762,37.98
-2025-06-15,T3-Container,Roll-on Roll-off,Transshipment,29,13994.14,5380,185.7
-2024-07-31,T5-Liquid,Roll-on Roll-off,Import,33,19891.76,6186,225.57
-2025-05-16,T1-North,Containerized,Import,5,87689.11,2029,163.34
-2024-11-24,T1-North,Bulk Dry,Transshipment,20,26640.57,2152,235.19
-2024-12-21,T5-Liquid,Bulk Dry,Import,21,77003.47,1965,22.76
-2025-01-07,T3-Container,Bulk Dry,Export,27,42630.5,1442,212.66
-2024-10-29,T5-Liquid,Liquid Bulk,Import,20,20715.58,1695,42.99
-2024-06-28,T5-Liquid,Break Bulk,Import,24,29917.37,1502,203.34
-2024-07-26,T5-Liquid,Bulk Dry,Export,10,15349.73,120,136.83
-2024-11-15,T5-Liquid,Liquid Bulk,Transshipment,17,65412.96,2407,8.3
-2024-06-11,T2-South,Bulk Dry,Transshipment,25,53049.2,4305,219.45
-2024-01-30,T2-South,Roll-on Roll-off,Export,9,46776.22,5098,144.72
-2025-01-11,T3-Container,Liquid Bulk,Export,22,56455.54,208,147.53
-2024-06-02,T4-Bulk,Break Bulk,Export,6,861.96,5840,238.22
-2025-05-03,T3-Container,Bulk Dry,Export,37,27255.15,4334,220.51
-2025-02-01,T5-Liquid,Roll-on Roll-off,Export,28,29871.38,62,147.21
-2025-02-25,T4-Bulk,Break Bulk,Import,37,16676.79,3454,54.71
-2025-05-21,T4-Bulk,Liquid Bulk,Import,28,65007.95,37,155.24
-2024-09-09,T3-Container,Bulk Dry,Export,13,81591.39,3144,135.84
-2025-01-04,T5-Liquid,Roll-on Roll-off,Transshipment,14,68448.11,1125,177.18
-2024-02-01,T5-Liquid,Containerized,Export,36,20838.12,326,34.53
-2024-03-19,T3-Container,Reefer,Export,12,3811.69,5998,222.8
-2024-02-21,T5-Liquid,Break Bulk,Transshipment,32,25976.16,3531,100.79
-2024-02-10,T4-Bulk,Bulk Dry,Transshipment,17,71030.63,2888,133.23
-2024-05-22,T4-Bulk,Bulk Dry,Import,17,66642.28,4280,146.52
-2024-07-07,T5-Liquid,Reefer,Transshipment,2,77654.0,846,65.24
-2025-02-17,T1-North,Liquid Bulk,Import,23,81118.31,5314,213.94
-2025-04-07,T2-South,Roll-on Roll-off,Export,36,33145.3,61,201.87
-2025-05-26,T5-Liquid,Containerized,Export,20,7766.72,5834,22.72
-2024-11-07,T3-Container,Liquid Bulk,Transshipment,1,36797.25,1245,35.04
-2024-06-22,T3-Container,Liquid Bulk,Import,27,26208.3,3845,24.08
-2024-01-22,T2-South,Roll-on Roll-off,Import,10,27648.98,1728,107.26
-2024-04-04,T3-Container,Liquid Bulk,Export,30,15320.25,3317,115.9
-2025-05-17,T2-South,Liquid Bulk,Import,38,80042.7,1243,9.92
-2024-02-11,T1-North,Break Bulk,Transshipment,8,13979.43,2427,225.16
-2024-05-21,T4-Bulk,Break Bulk,Export,2,9725.44,3251,221.54
-2025-04-29,T3-Container,Liquid Bulk,Transshipment,9,13019.59,3931,157.36
-2024-04-10,T5-Liquid,Reefer,Export,26,61966.29,3192,143.65
-2025-04-24,T4-Bulk,Break Bulk,Export,24,58843.12,6450,27.71
-2024-03-12,T5-Liquid,Roll-on Roll-off,Export,13,48864.92,3855,231.14
-2024-09-06,T2-South,Roll-on Roll-off,Export,1,53984.01,665,79.46
-2024-09-10,T2-South,Reefer,Transshipment,34,66288.54,2887,117.04
-2024-01-22,T2-South,Containerized,Import,29,8056.6,633,75.22
-2024-10-15,T4-Bulk,Roll-on Roll-off,Export,4,43084.7,5479,34.08
-2024-03-24,T5-Liquid,Liquid Bulk,Import,21,231.98,1712,4.84
-2024-02-06,T5-Liquid,Roll-on Roll-off,Transshipment,3,42972.41,1926,148.67
-2025-06-01,T2-South,Reefer,Transshipment,8,2727.81,6378,182.73
-2025-06-23,T2-South,Bulk Dry,Transshipment,14,54551.65,3171,99.91
-2025-04-19,T5-Liquid,Liquid Bulk,Transshipment,40,8228.6,610,29.7
-2025-03-14,T3-Container,Roll-on Roll-off,Export,21,84969.3,2273,148.62
-2025-03-07,T4-Bulk,Roll-on Roll-off,Export,2,38677.02,4501,44.24
-2024-08-18,T1-North,Containerized,Transshipment,10,66259.5,4181,168.08
-2024-01-01,T3-Container,Roll-on Roll-off,Import,11,17993.01,325,97.31
-2024-09-11,T1-North,Reefer,Import,17,8347.75,4963,204.36
-2025-02-25,T4-Bulk,Roll-on Roll-off,Transshipment,31,15977.97,1421,217.44
-2024-06-28,T3-Container,Containerized,Export,12,83399.53,5894,178.53
-2025-04-25,T1-North,Reefer,Import,7,42495.29,3391,190.31
-2025-02-27,T3-Container,Break Bulk,Import,26,48914.49,4621,142.35
-2024-04-17,T5-Liquid,Reefer,Import,26,74597.44,3288,54.9
-2025-06-12,T5-Liquid,Liquid Bulk,Export,12,9094.52,3139,37.8
-2024-07-29,T2-South,Reefer,Export,29,23477.76,4035,205.6
-2024-12-17,T3-Container,Liquid Bulk,Transshipment,7,85291.89,6050,221.58
-2025-03-06,T4-Bulk,Roll-on Roll-off,Import,12,81336.07,6430,111.72
-2024-02-01,T4-Bulk,Roll-on Roll-off,Import,3,75732.62,5344,98.23
-2024-01-13,T1-North,Reefer,Transshipment,9,3164.26,84,21.83
-2024-07-13,T5-Liquid,Roll-on Roll-off,Export,14,79838.58,4960,157.3
-2024-07-03,T1-North,Reefer,Import,6,21922.14,6175,209.13
-2025-01-23,T2-South,Containerized,Transshipment,39,61524.06,3407,162.79
-2024-08-22,T1-North,Bulk Dry,Import,8,67776.41,4563,30.6
-2025-02-19,T2-South,Reefer,Import,6,33585.87,2872,106.2
-2024-01-13,T2-South,Containerized,Transshipment,27,90632.64,3720,100.9
-2024-01-08,T3-Container,Liquid Bulk,Export,25,52653.12,65,62.34
-2024-12-02,T3-Container,Containerized,Transshipment,23,89928.36,1209,176.21
-2024-03-01,T5-Liquid,Containerized,Export,22,3062.42,6243,115.36
-2024-11-07,T4-Bulk,Bulk Dry,Import,5,66027.89,491,141.51
-2024-06-27,T2-South,Liquid Bulk,Transshipment,22,85225.53,5887,210.11
-2025-02-11,T3-Container,Liquid Bulk,Export,34,17695.68,721,162.17
-2024-07-30,T2-South,Reefer,Import,39,39535.37,1046,208.71
-2024-07-21,T4-Bulk,Liquid Bulk,Import,12,74407.54,6034,142.86
-2024-10-10,T1-North,Containerized,Transshipment,27,78783.45,4376,150.47
-2024-03-18,T3-Container,Liquid Bulk,Export,22,53347.62,601,138.14
-2024-06-12,T2-South,Bulk Dry,Export,19,67610.83,703,121.62
-2024-06-14,T2-South,Roll-on Roll-off,Transshipment,12,62645.56,2175,15.72
-2024-09-21,T4-Bulk,Bulk Dry,Import,22,58056.95,5098,99.56
-2024-07-06,T1-North,Bulk Dry,Transshipment,18,755.13,583,60.84
-2024-02-03,T5-Liquid,Liquid Bulk,Transshipment,15,87813.56,608,153.77
-2024-01-26,T3-Container,Bulk Dry,Export,17,43275.29,3863,237.03
-2025-04-10,T2-South,Liquid Bulk,Transshipment,25,41400.03,3879,21.74
-2025-01-23,T4-Bulk,Liquid Bulk,Import,11,57398.63,2216,106.42
-2025-03-08,T4-Bulk,Reefer,Import,29,9844.88,2317,130.28
-2024-10-17,T2-South,Reefer,Export,36,30033.38,5400,67.33
-2024-09-18,T3-Container,Break Bulk,Transshipment,17,41720.44,2824,70.99
-2024-11-10,T1-North,Roll-on Roll-off,Export,37,2286.31,2146,37.6
-2024-01-22,T3-Container,Liquid Bulk,Export,34,45836.71,2853,92.83
-2025-04-05,T4-Bulk,Break Bulk,Import,5,61609.27,2610,224.37
-2024-06-05,T4-Bulk,Liquid Bulk,Import,4,3000.89,1443,56.88
-2025-02-03,T2-South,Roll-on Roll-off,Transshipment,17,73039.44,1737,93.18
-2025-03-14,T3-Container,Liquid Bulk,Transshipment,32,92682.29,3777,13.5
-2025-05-15,T5-Liquid,Bulk Dry,Import,27,31040.35,924,96.79
-2024-08-12,T4-Bulk,Roll-on Roll-off,Export,12,35085.81,3215,21.94
-2024-12-18,T4-Bulk,Break Bulk,Export,18,29051.03,1315,106.94
-2024-06-26,T2-South,Roll-on Roll-off,Import,38,24768.44,3918,168.71
-2024-03-26,T5-Liquid,Break Bulk,Export,36,39719.12,763,117.64
-2024-12-21,T4-Bulk,Liquid Bulk,Export,19,51964.84,2514,226.68
+snapshotDate,customerSegment,subscriptionPlan,acquisitionChannel,activeCustomers,churnedCustomers,monthlyRecurringRevenue,netRetentionRate
+2024-02-02,Education,Basic,PartnerReseller,20457,324,1247335.15,106.85
+2025-02-28,SMB,Free,Referral,13097,1212,581749.54,142.38
+2024-12-08,Startup,Business,Referral,15875,1213,1842636.58,103.4
+2024-10-24,SMB,Basic,Referral,20823,799,2219150.32,137.94
+2025-03-05,Enterprise,Basic,PartnerReseller,22766,978,1531048.47,120.99
+2024-05-11,MidMarket,Pro,Referral,1401,112,2050049.56,75.83
+2025-04-12,SMB,Basic,Referral,7063,958,2421153.42,124.03
+2024-06-29,SMB,Pro,PartnerReseller,20660,1203,907823.45,100.46
+2025-06-06,SMB,Pro,Referral,1299,1447,922515.69,85.03
+2024-06-21,Education,Basic,PaidSocial,9395,905,741521.79,118.15
+2024-07-12,Enterprise,Pro,PartnerReseller,23782,1312,2387235.44,84.93
+2024-07-29,Startup,Free,ContentMarketing,5166,605,1114970.24,120.59
+2024-06-25,MidMarket,Free,OrganicSearch,1986,14,1096098.14,150.37
+2025-03-08,Startup,Pro,PaidSocial,16463,643,172929.35,74.2
+2024-04-11,MidMarket,Free,ContentMarketing,13843,1048,781189.93,120.4
+2024-02-19,Startup,Enterprise,ContentMarketing,5996,771,623797.08,107.94
+2025-05-07,Enterprise,Enterprise,ContentMarketing,3303,812,236921.81,146.26
+2024-07-20,Education,Enterprise,PaidSocial,21361,148,1505295.24,147.67
+2024-04-23,SMB,Basic,DirectSales,174,197,597478.68,89.24
+2025-03-03,SMB,Free,OrganicSearch,18886,981,2293766.79,149.25
+2025-01-28,SMB,Enterprise,ContentMarketing,4890,925,2006273.38,73.8
+2025-02-13,Startup,Basic,PaidSocial,4192,1420,1083050.72,104.01
+2025-02-02,SMB,Business,PaidSocial,12209,1461,162235.44,77.25
+2024-11-22,Education,Pro,ContentMarketing,617,917,1188541.88,105.16
+2025-06-08,Startup,Enterprise,PartnerReseller,18720,730,1251761.52,69.41
+2024-03-11,Enterprise,Pro,PaidSocial,24657,1191,872240.12,80.65
+2025-02-20,SMB,Free,DirectSales,6796,1254,1461110.73,117.13
+2024-07-13,MidMarket,Pro,PartnerReseller,18528,154,228069.88,143.08
+2024-12-30,Education,Business,PartnerReseller,12338,0,2128658.57,63.43
+2025-04-15,Startup,Basic,PaidSocial,14385,761,2421990.26,141.68
+2024-09-01,Education,Enterprise,PartnerReseller,2859,395,1417765.01,82.76
+2025-06-12,SMB,Business,OrganicSearch,12167,478,1906182.69,136.03
+2024-04-20,SMB,Free,ContentMarketing,5571,343,114478.22,94.34
+2025-01-16,Education,Business,ContentMarketing,18498,1054,1776173.6,141.68
+2024-03-17,Education,Free,PartnerReseller,22719,744,591306.95,75.77
+2024-03-27,MidMarket,Business,ContentMarketing,7826,389,261146.25,69.49
+2024-01-23,Startup,Basic,OrganicSearch,12754,1054,1501484.46,138.68
+2025-04-19,Education,Pro,PaidSocial,20974,1080,1924289.41,100.86
+2024-04-09,Startup,Pro,PaidSocial,24041,96,2389819.19,73.89
+2024-03-28,Startup,Business,Referral,13793,1120,554511.84,69.17
+2024-09-04,Education,Enterprise,OrganicSearch,23935,1220,373529.18,158.57
+2024-07-02,Startup,Pro,ContentMarketing,15089,680,1159416.12,76.72
+2024-05-19,SMB,Basic,OrganicSearch,4436,436,1281481.74,62.3
+2024-07-09,Startup,Free,Referral,16618,1208,2387657.1,119.08
+2024-06-28,SMB,Business,OrganicSearch,11593,996,2215448.85,88.15
+2024-07-28,SMB,Free,Referral,5094,107,1091479.38,103.1
+2024-12-10,SMB,Enterprise,ContentMarketing,3530,408,1949088.56,159.47
+2024-03-03,SMB,Enterprise,ContentMarketing,13945,1346,1144640.88,129.06
+2024-10-23,Startup,Enterprise,Referral,4277,720,1943200.86,88.04
+2024-04-10,Startup,Free,ContentMarketing,2684,871,1065858.4,121.36
+2024-10-24,SMB,Free,ContentMarketing,11416,1120,1858390.54,111.02
+2025-02-11,Startup,Free,PaidSocial,12130,1082,2290496.3,122.23
+2024-07-02,Startup,Pro,OrganicSearch,7901,760,1156677.92,157.41
+2024-02-10,MidMarket,Pro,PartnerReseller,21227,1373,2495237.7,62.16
+2025-06-04,MidMarket,Basic,ContentMarketing,14999,460,1020658.53,126.66
+2024-07-31,Education,Enterprise,Referral,8123,148,1028767.89,125.05
+2024-09-04,MidMarket,Basic,OrganicSearch,6142,213,2474524.89,113.85
+2024-01-02,Education,Free,ContentMarketing,10055,374,2267155.83,78.82
+2025-06-22,Startup,Pro,Referral,22382,114,1581657.49,152.31
+2024-09-06,Startup,Enterprise,ContentMarketing,18580,1015,1550943.95,99.92
+2025-01-28,SMB,Basic,DirectSales,20454,905,1839806.15,158.87
+2024-02-16,SMB,Free,ContentMarketing,1680,382,817594.62,149.73
+2024-07-19,Startup,Free,ContentMarketing,3264,1355,1150203.35,91.77
+2024-01-19,Education,Free,Referral,20936,1102,1814597.47,127.69
+2025-01-07,Enterprise,Free,OrganicSearch,16862,72,2239529.83,153.47
+2025-03-14,MidMarket,Basic,ContentMarketing,3426,419,1894271.38,63.45
+2024-06-30,MidMarket,Business,PartnerReseller,15826,352,1125682.59,114.73
+2024-04-21,Education,Business,ContentMarketing,3346,615,1474758.19,144.7
+2024-01-29,Enterprise,Enterprise,OrganicSearch,7682,1086,821263.52,134.51
+2025-03-14,Startup,Enterprise,DirectSales,19606,460,1265993.7,149.54
+2025-05-21,MidMarket,Enterprise,DirectSales,4667,1341,370528.9,133.62
+2024-05-24,Startup,Free,OrganicSearch,20681,28,294303.43,145.19
+2024-08-22,Education,Business,DirectSales,18515,1333,1130427.57,118.28
+2025-03-08,Enterprise,Basic,PartnerReseller,9656,1069,2066454.29,136.44
+2024-08-11,MidMarket,Business,OrganicSearch,22731,1313,386315.78,62.64
+2024-08-26,Enterprise,Basic,DirectSales,15179,1144,2420444.6,127.04
+2025-03-24,Enterprise,Business,PaidSocial,7254,1478,935389.97,67.73
+2024-12-28,Enterprise,Basic,PaidSocial,18909,456,1338964.63,126.36
+2025-01-23,Education,Enterprise,ContentMarketing,4638,463,345157.08,158.62
+2025-06-10,Enterprise,Free,OrganicSearch,6917,1341,360689.64,103.63
+2025-03-13,Enterprise,Business,DirectSales,24708,545,758724.47,108.69
+2024-04-22,Education,Enterprise,OrganicSearch,23754,80,577635.53,151.33
+2024-12-12,MidMarket,Business,ContentMarketing,8995,1148,2309347.41,68.0
+2024-12-06,SMB,Enterprise,Referral,7004,1050,1262257.79,90.79
+2024-02-27,Education,Business,ContentMarketing,14037,313,1714114.86,83.69
+2024-02-14,Education,Free,OrganicSearch,8271,1409,1419819.3,143.2
+2025-02-05,Startup,Basic,OrganicSearch,4735,336,281882.69,153.05
+2024-09-08,Education,Basic,ContentMarketing,24634,294,616339.75,146.76
+2025-06-13,SMB,Enterprise,ContentMarketing,6105,691,1668222.7,152.86
+2024-03-28,Startup,Enterprise,OrganicSearch,19361,1263,1837724.39,117.78
+2024-12-22,SMB,Business,ContentMarketing,7271,884,968049.82,121.33
+2025-02-17,Education,Free,DirectSales,22505,845,1362632.1,99.28
+2024-01-10,MidMarket,Pro,DirectSales,15310,621,684579.23,69.6
+2024-02-27,Enterprise,Enterprise,PartnerReseller,2254,712,1084604.49,117.9
+2024-06-17,MidMarket,Pro,PartnerReseller,13755,680,1755083.64,98.93
+2024-08-28,Startup,Pro,ContentMarketing,3696,1236,1353695.65,129.11
+2024-05-25,Education,Free,Referral,10187,775,512067.12,110.89
+2024-02-08,Enterprise,Basic,ContentMarketing,6764,690,299243.78,74.65
+2024-07-17,SMB,Basic,PartnerReseller,19257,143,1705973.35,154.45
+2024-09-11,MidMarket,Pro,DirectSales,13006,622,1870174.07,148.58
+2024-05-14,Startup,Basic,OrganicSearch,12184,128,450776.57,119.68
+2025-04-23,MidMarket,Free,Referral,10484,1295,2020099.71,102.8
+2025-06-18,MidMarket,Free,DirectSales,9961,592,878926.74,71.16
+2025-02-19,Education,Basic,PaidSocial,17249,1327,2220961.28,147.16
+2024-03-27,Enterprise,Basic,DirectSales,9838,1181,494473.47,126.66
+2024-09-13,SMB,Basic,Referral,21002,157,2399647.33,153.5
+2025-02-27,Startup,Enterprise,PartnerReseller,24675,854,2230342.08,71.18
+2025-05-12,Education,Pro,Referral,14053,547,607906.3,157.71
+2024-05-04,MidMarket,Free,PartnerReseller,15587,470,1398548.45,73.37
+2024-09-21,Education,Basic,OrganicSearch,10348,1411,2491521.93,116.62
+2024-01-03,Enterprise,Enterprise,ContentMarketing,13969,874,1748771.8,148.77
+2024-05-19,Enterprise,Free,OrganicSearch,17526,871,515931.86,68.44
+2024-04-13,Startup,Business,Referral,20299,716,2029907.35,133.12
+2024-03-17,MidMarket,Enterprise,DirectSales,413,1081,273260.36,107.98
+2024-09-27,Enterprise,Business,ContentMarketing,17467,785,1084390.84,68.73
+2025-03-17,Enterprise,Basic,PartnerReseller,4478,723,2437951.63,128.04
+2024-11-21,Education,Pro,DirectSales,8558,980,1727707.68,100.62
+2024-03-22,Startup,Basic,OrganicSearch,12007,1003,1140012.26,75.9
+2025-02-28,SMB,Business,PartnerReseller,5373,472,2088769.93,120.05
+2024-12-16,Enterprise,Pro,DirectSales,13396,251,2296521.48,158.31
+2025-04-25,Enterprise,Basic,DirectSales,21658,521,1877223.36,134.33
+2025-04-10,Startup,Enterprise,PaidSocial,23047,1207,878001.28,120.92
+2025-06-08,Education,Free,ContentMarketing,9465,394,1516630.33,142.09
+2024-05-20,Education,Enterprise,PaidSocial,18363,821,553020.6,117.34
+2024-10-03,Education,Business,Referral,21562,66,2032280.79,152.67
+2025-02-10,Startup,Pro,PartnerReseller,23755,757,159470.36,98.45
+2024-12-03,SMB,Enterprise,Referral,4471,218,1483211.27,132.75
+2024-03-04,SMB,Free,DirectSales,21884,1152,1715958.4,95.08
+2025-01-06,Education,Free,OrganicSearch,3537,877,1745599.53,72.49
+2024-01-20,Education,Free,Referral,11963,1018,1192337.6,73.33
+2025-05-14,Enterprise,Free,PartnerReseller,12656,307,1403713.74,65.78
+2024-12-31,MidMarket,Enterprise,PaidSocial,1739,408,618216.52,115.88
+2024-07-18,Enterprise,Basic,ContentMarketing,6014,1204,1932179.75,124.85
+2024-08-21,Education,Pro,OrganicSearch,9592,613,1507527.7,70.39
+2025-06-22,Startup,Pro,PaidSocial,5397,573,480014.41,117.74
+2025-05-28,MidMarket,Pro,DirectSales,88,112,106247.49,159.29
+2024-10-15,Education,Basic,OrganicSearch,17469,543,201152.77,115.56
+2025-05-20,Startup,Free,Referral,9052,695,1548130.49,138.33
+2024-01-26,Enterprise,Free,DirectSales,9480,1106,1300655.31,105.84
+2025-02-12,Enterprise,Pro,PartnerReseller,9413,314,2104186.3,139.47
+2025-03-18,Education,Basic,DirectSales,16175,909,1963932.25,127.64
+2025-02-26,Startup,Enterprise,Referral,15270,1051,1802773.09,72.88
+2024-04-26,Enterprise,Enterprise,OrganicSearch,19699,466,681151.78,154.7
+2025-01-04,Startup,Business,ContentMarketing,11268,1280,978676.02,71.51
+2024-03-23,Enterprise,Enterprise,DirectSales,11521,190,828294.17,148.39
+2025-02-13,Startup,Enterprise,ContentMarketing,16221,942,1101204.36,95.0
+2025-03-01,SMB,Basic,DirectSales,17317,1222,2401859.68,83.07
+2024-06-13,Startup,Basic,OrganicSearch,6805,505,1444422.08,158.75
+2025-05-08,Startup,Business,DirectSales,18772,591,1006256.86,153.18
+2025-06-01,Enterprise,Basic,PaidSocial,7226,1350,381252.96,71.37
+2024-05-29,SMB,Basic,ContentMarketing,17404,475,295560.26,133.43
+2025-02-28,Enterprise,Business,OrganicSearch,14743,1199,1545290.21,78.28
+2025-03-07,Startup,Basic,ContentMarketing,19772,548,808225.69,75.3
+2025-03-27,Startup,Basic,PaidSocial,1564,973,1263812.37,151.18
+2025-04-21,SMB,Free,OrganicSearch,11378,1047,1592659.8,115.68
+2024-01-17,Education,Basic,PaidSocial,6693,619,600499.3,76.2
+2024-04-19,Education,Business,OrganicSearch,8111,1185,2410708.55,105.37
+2024-05-10,SMB,Pro,OrganicSearch,13821,1414,570507.59,111.12
+2025-02-19,MidMarket,Enterprise,PartnerReseller,12602,861,178210.94,129.05
+2024-06-19,MidMarket,Enterprise,DirectSales,3341,733,2370794.67,133.1
+2025-04-10,MidMarket,Business,DirectSales,14182,1208,527351.18,134.29
+2025-04-20,SMB,Enterprise,Referral,8348,1339,209246.65,144.31
+2024-11-28,Education,Free,PartnerReseller,20240,1235,211904.47,100.92
+2024-10-26,MidMarket,Basic,PartnerReseller,2621,138,2245676.62,107.0
+2024-09-24,SMB,Free,PaidSocial,5742,1290,34742.09,138.98
+2024-12-31,MidMarket,Business,PaidSocial,8947,40,1236363.36,142.42
+2024-02-03,Startup,Free,PartnerReseller,10729,723,345972.53,153.15
+2024-09-30,Enterprise,Basic,PaidSocial,10727,214,1110714.05,124.26
+2024-11-05,Education,Pro,ContentMarketing,12058,196,1971276.25,77.6
+2024-09-09,MidMarket,Business,OrganicSearch,24155,418,864531.83,104.73
+2025-04-05,Startup,Free,OrganicSearch,634,1328,1877469.39,140.64
+2024-08-31,Education,Basic,ContentMarketing,24587,69,1036467.48,94.95
+2024-06-05,SMB,Free,PaidSocial,10032,690,1391869.26,96.72
+2024-10-17,MidMarket,Enterprise,Referral,13232,68,589379.78,124.67
+2024-05-07,Education,Enterprise,PaidSocial,16388,338,1543968.73,78.11
+2025-04-12,Startup,Basic,OrganicSearch,22628,71,1902890.93,119.46
+2024-05-10,MidMarket,Basic,PartnerReseller,575,689,1115579.12,67.38
+2025-03-30,MidMarket,Free,Referral,5003,582,494084.82,84.82
+2024-04-24,Enterprise,Pro,ContentMarketing,4709,1114,2264374.6,102.8
+2025-05-21,MidMarket,Basic,ContentMarketing,19782,1077,359014.9,139.43
+2025-04-11,MidMarket,Free,DirectSales,11378,997,428067.73,80.55
+2025-03-07,Enterprise,Business,PaidSocial,7861,1298,804396.86,76.03
+2024-10-15,Startup,Enterprise,PartnerReseller,3694,551,307471.65,147.17
+2024-01-27,Startup,Free,ContentMarketing,11038,489,1399401.98,66.49
+2024-12-19,MidMarket,Pro,PaidSocial,13674,643,1820762.13,89.71
+2024-06-01,SMB,Business,OrganicSearch,7078,444,993794.2,140.97
+2024-12-13,MidMarket,Pro,ContentMarketing,8938,219,196411.8,64.73
+2024-06-12,Education,Free,PartnerReseller,24802,1352,935043.67,77.56
+2025-03-10,Enterprise,Business,DirectSales,15314,817,1116286.27,68.81
+2024-03-06,SMB,Free,ContentMarketing,8067,661,978721.37,76.15
+2024-07-07,Enterprise,Pro,DirectSales,7774,224,1772634.45,86.01
+2025-06-06,Startup,Basic,PaidSocial,19554,1171,333903.68,95.41
+2025-02-22,Enterprise,Pro,PaidSocial,7132,300,1581397.12,133.1
+2025-04-04,Startup,Business,Referral,7941,1090,785507.53,147.62
+2024-03-15,SMB,Enterprise,PaidSocial,18514,1407,2157566.44,145.39
+2024-08-21,Education,Free,PartnerReseller,6495,1438,1612512.97,95.32
+2024-05-03,Enterprise,Pro,DirectSales,12973,983,1256280.85,77.22
+2024-02-11,Startup,Basic,Referral,13269,869,1548887.07,69.43
+2025-02-25,Startup,Basic,DirectSales,3620,610,389850.72,134.26
+2024-07-29,Enterprise,Enterprise,ContentMarketing,16683,1271,1047535.04,83.51
+2025-05-30,Education,Basic,PaidSocial,24306,1222,1718874.41,138.06
+2024-04-20,MidMarket,Enterprise,PartnerReseller,19972,410,2407601.42,137.71
+2024-07-27,Enterprise,Enterprise,OrganicSearch,8671,393,1415267.19,122.64
+2024-07-25,Education,Basic,OrganicSearch,2775,1445,1253404.29,77.31
+2025-02-11,Enterprise,Enterprise,DirectSales,20606,87,298514.32,151.67
+2024-09-04,Startup,Enterprise,ContentMarketing,6396,1172,1268073.71,137.65
+2025-04-02,Enterprise,Business,PartnerReseller,9604,761,1259145.7,134.69
+2025-06-20,SMB,Pro,OrganicSearch,1255,1231,1990843.68,135.94
+2024-05-01,Startup,Basic,PartnerReseller,18575,1406,1352519.42,111.51
+2024-08-23,Enterprise,Free,OrganicSearch,14085,160,47358.97,90.65
+2024-05-21,Startup,Free,PaidSocial,12369,417,2481516.78,111.54
+2024-02-05,Enterprise,Free,DirectSales,10806,1382,1603665.78,147.74
+2024-05-16,MidMarket,Free,ContentMarketing,16923,54,1950708.58,116.46
+2024-07-14,Education,Pro,PartnerReseller,3036,1459,1920089.6,68.0
+2024-12-08,SMB,Pro,PartnerReseller,2135,1439,1727105.77,125.32
+2024-09-09,SMB,Business,DirectSales,3456,1275,1322019.76,69.91
+2024-05-16,Startup,Free,OrganicSearch,17497,1245,1056967.4,87.11
+2024-06-18,MidMarket,Free,DirectSales,1045,504,1712837.9,100.71
+2024-01-10,Education,Business,ContentMarketing,19070,1087,1540501.14,68.57
+2024-02-22,Education,Business,PartnerReseller,18552,1190,1970512.67,99.07
+2024-06-30,MidMarket,Business,OrganicSearch,5241,518,1853022.12,151.46
+2025-06-17,Education,Business,PaidSocial,11935,205,560464.5,135.92
+2024-12-11,Enterprise,Free,ContentMarketing,18557,1488,2340448.24,83.62
+2024-02-11,SMB,Pro,PaidSocial,13756,1029,361515.62,89.57
+2025-01-23,MidMarket,Pro,Referral,4651,264,707852.08,155.09
+2025-01-29,Education,Pro,DirectSales,9341,782,1331809.27,88.31
+2024-08-19,MidMarket,Free,Referral,20471,218,1238011.64,81.29
+2024-10-21,SMB,Basic,PaidSocial,10651,353,2339519.8,102.11
+2024-08-19,MidMarket,Free,DirectSales,20039,631,1465119.44,114.61
+2025-03-25,MidMarket,Basic,Referral,10411,1352,495671.93,78.45
+2024-08-19,MidMarket,Pro,DirectSales,9109,1294,1683038.82,125.44
+2025-01-01,Education,Business,DirectSales,16771,347,1261258.42,123.37
+2024-01-13,SMB,Pro,DirectSales,11546,1361,1849374.29,111.23
+2024-02-04,Startup,Free,OrganicSearch,21506,108,1624334.45,60.43
+2024-04-07,Education,Free,PartnerReseller,1114,1169,475866.47,147.48
+2024-01-15,SMB,Business,DirectSales,23537,654,1805457.7,65.41
+2024-09-17,MidMarket,Basic,ContentMarketing,3290,251,705607.59,82.74
+2024-02-16,Enterprise,Business,DirectSales,22573,1232,800345.9,153.82
+2024-12-01,MidMarket,Basic,PartnerReseller,9204,753,1947622.8,158.71
+2024-12-31,MidMarket,Free,ContentMarketing,8489,92,1724253.5,94.11

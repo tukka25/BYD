@@ -1,241 +1,241 @@
-Incident Date,Incident Type,Weather Condition,Road Type,Vehicles Involved,Injuries Count,Response Time Minutes
-2024-10-09,Pedestrian Struck,Rain,Urban Arterial,4,15,30.65
-2024-01-03,Rear-End Collision,Snow,Residential,8,6,14.59
-2024-11-07,Head-On Collision,Rain,Residential,10,8,62.51
-2025-05-17,Side Impact,Snow,Rural Road,10,2,57.96
-2024-04-12,Side Impact,Wind,Urban Arterial,2,3,82.72
-2025-02-27,Hit and Run,Wind,Rural Road,7,2,113.87
-2024-06-21,Rear-End Collision,Clear,Urban Arterial,10,2,63.02
-2024-06-29,Hit and Run,Ice,State Highway,4,1,98.38
-2025-01-25,Head-On Collision,Wind,Rural Road,5,7,78.45
-2025-01-05,Side Impact,Ice,Urban Arterial,1,10,34.76
-2024-05-14,Hit and Run,Snow,Residential,3,3,54.05
-2025-01-30,Pedestrian Struck,Fog,Interstate,4,2,7.18
-2025-02-21,Hit and Run,Fog,Urban Arterial,5,14,108.77
-2025-03-21,Side Impact,Clear,Rural Road,5,2,45.69
-2024-11-24,Single Vehicle,Fog,Urban Arterial,11,5,81.79
-2024-02-28,Head-On Collision,Rain,State Highway,6,0,67.66
-2024-02-01,Pedestrian Struck,Snow,Residential,12,6,76.62
-2024-06-15,Side Impact,Fog,Residential,2,6,81.72
-2024-03-12,Hit and Run,Ice,State Highway,11,2,65.18
-2024-06-17,Single Vehicle,Clear,Residential,7,3,33.83
-2024-11-30,Single Vehicle,Clear,State Highway,8,10,29.52
-2024-11-16,Head-On Collision,Clear,Interstate,1,14,100.63
-2025-05-10,Single Vehicle,Wind,Rural Road,10,12,99.63
-2024-11-25,Side Impact,Fog,Residential,7,4,84.84
-2024-10-24,Single Vehicle,Fog,Urban Arterial,8,8,51.03
-2025-05-09,Single Vehicle,Clear,Interstate,1,2,5.84
-2024-05-29,Side Impact,Clear,Rural Road,11,3,65.58
-2025-02-02,Rear-End Collision,Rain,Rural Road,10,6,93.54
-2024-03-26,Side Impact,Wind,Urban Arterial,5,9,87.17
-2024-07-22,Hit and Run,Rain,Urban Arterial,6,10,38.99
-2024-06-07,Pedestrian Struck,Clear,Interstate,7,10,89.72
-2025-03-05,Head-On Collision,Wind,Residential,10,5,47.65
-2024-06-19,Head-On Collision,Snow,Interstate,3,13,81.69
-2024-09-19,Single Vehicle,Ice,Urban Arterial,9,10,47.51
-2024-05-03,Rear-End Collision,Fog,Interstate,6,3,56.0
-2024-11-08,Single Vehicle,Rain,State Highway,6,3,44.85
-2025-05-29,Side Impact,Rain,State Highway,4,13,107.79
-2025-06-10,Side Impact,Snow,Urban Arterial,3,8,40.49
-2024-03-20,Rear-End Collision,Wind,Interstate,3,11,90.54
-2025-01-06,Rear-End Collision,Fog,Urban Arterial,6,1,30.2
-2025-05-02,Pedestrian Struck,Clear,State Highway,10,13,19.6
-2024-11-11,Head-On Collision,Rain,Rural Road,8,3,46.34
-2024-06-10,Pedestrian Struck,Ice,Interstate,3,9,43.75
-2024-05-27,Rear-End Collision,Fog,Residential,5,13,63.09
-2024-01-16,Rear-End Collision,Snow,Urban Arterial,1,5,92.3
-2025-03-28,Single Vehicle,Ice,Urban Arterial,4,3,60.97
-2024-12-28,Hit and Run,Snow,Urban Arterial,9,10,76.28
-2024-06-12,Side Impact,Fog,Interstate,10,2,49.74
-2024-12-02,Rear-End Collision,Snow,State Highway,2,11,111.71
-2024-04-03,Hit and Run,Ice,Urban Arterial,3,7,64.83
-2024-02-02,Rear-End Collision,Snow,State Highway,8,9,105.19
-2025-03-08,Pedestrian Struck,Ice,Residential,7,12,14.28
-2024-11-12,Hit and Run,Snow,Residential,4,2,57.81
-2024-07-04,Rear-End Collision,Ice,State Highway,4,1,65.56
-2024-02-27,Rear-End Collision,Wind,Urban Arterial,5,7,24.16
-2024-08-24,Single Vehicle,Rain,Interstate,10,14,104.7
-2025-01-02,Single Vehicle,Snow,Urban Arterial,11,15,97.32
-2024-03-23,Rear-End Collision,Wind,Interstate,3,10,89.17
-2024-11-18,Hit and Run,Ice,State Highway,7,2,18.22
-2024-05-29,Single Vehicle,Clear,Interstate,4,6,20.32
-2024-01-29,Single Vehicle,Snow,Residential,12,8,32.84
-2024-10-31,Rear-End Collision,Clear,Interstate,3,7,75.71
-2024-08-03,Single Vehicle,Wind,Urban Arterial,4,7,32.54
-2025-04-11,Side Impact,Fog,State Highway,10,15,118.34
-2025-05-04,Head-On Collision,Snow,Interstate,6,9,27.69
-2024-02-14,Side Impact,Snow,Urban Arterial,6,1,6.74
-2024-03-09,Rear-End Collision,Wind,Rural Road,2,1,35.64
-2025-06-10,Side Impact,Ice,Rural Road,9,8,111.33
-2024-12-17,Hit and Run,Wind,Interstate,4,4,89.07
-2025-05-13,Head-On Collision,Clear,Interstate,10,3,12.7
-2025-06-19,Hit and Run,Wind,State Highway,11,8,20.1
-2024-08-07,Single Vehicle,Clear,Rural Road,2,6,43.87
-2024-04-01,Single Vehicle,Ice,Rural Road,8,8,68.09
-2025-02-25,Side Impact,Ice,Residential,8,8,45.25
-2025-01-21,Rear-End Collision,Clear,Rural Road,6,8,19.66
-2024-12-15,Pedestrian Struck,Snow,Interstate,5,6,21.62
-2025-02-25,Pedestrian Struck,Fog,Residential,9,2,104.46
-2024-05-01,Pedestrian Struck,Fog,Interstate,9,8,93.88
-2025-01-04,Hit and Run,Ice,Urban Arterial,3,2,103.11
-2025-03-21,Single Vehicle,Fog,Urban Arterial,4,5,78.95
-2025-06-19,Hit and Run,Clear,Rural Road,10,13,104.23
-2024-07-05,Single Vehicle,Ice,Interstate,6,8,41.6
-2024-09-04,Single Vehicle,Fog,Interstate,2,10,26.86
-2024-11-03,Side Impact,Ice,Residential,10,1,28.24
-2025-02-10,Hit and Run,Clear,Rural Road,5,5,74.51
-2025-01-05,Hit and Run,Snow,Rural Road,3,10,109.11
-2025-02-10,Hit and Run,Snow,Residential,12,7,60.21
-2024-05-13,Rear-End Collision,Wind,Rural Road,11,9,63.33
-2024-12-21,Head-On Collision,Ice,Urban Arterial,11,4,107.1
-2025-04-17,Side Impact,Ice,Residential,11,1,90.51
-2025-01-06,Hit and Run,Ice,Interstate,1,12,28.64
-2024-03-25,Head-On Collision,Rain,State Highway,11,4,22.1
-2025-06-02,Hit and Run,Wind,Residential,4,1,70.23
-2025-01-10,Single Vehicle,Snow,Urban Arterial,9,1,32.47
-2024-05-27,Rear-End Collision,Rain,Urban Arterial,5,12,101.55
-2024-03-30,Pedestrian Struck,Fog,Urban Arterial,7,10,50.17
-2024-03-10,Single Vehicle,Clear,Residential,12,3,110.41
-2024-09-16,Side Impact,Ice,State Highway,7,3,93.26
-2024-08-10,Single Vehicle,Fog,Residential,6,14,43.54
-2024-10-08,Pedestrian Struck,Fog,Rural Road,7,11,111.97
-2025-01-24,Rear-End Collision,Wind,Urban Arterial,1,2,49.75
-2024-11-06,Side Impact,Rain,State Highway,7,15,88.7
-2024-02-20,Hit and Run,Rain,Interstate,11,3,31.78
-2025-03-30,Head-On Collision,Snow,Interstate,4,1,44.49
-2025-06-09,Pedestrian Struck,Clear,State Highway,10,15,90.59
-2024-09-20,Rear-End Collision,Fog,Urban Arterial,8,10,98.33
-2025-01-16,Single Vehicle,Wind,Residential,12,7,14.78
-2025-05-09,Side Impact,Snow,State Highway,7,14,90.95
-2025-06-05,Side Impact,Snow,Rural Road,8,8,91.37
-2024-03-08,Head-On Collision,Rain,Residential,10,12,112.09
-2024-07-17,Hit and Run,Ice,Interstate,11,5,16.34
-2024-09-02,Head-On Collision,Wind,Interstate,11,12,67.09
-2024-03-03,Single Vehicle,Clear,State Highway,2,4,69.72
-2025-06-01,Single Vehicle,Wind,Rural Road,8,11,10.97
-2024-05-21,Hit and Run,Rain,Residential,9,3,45.93
-2024-12-28,Single Vehicle,Ice,State Highway,12,14,72.46
-2024-10-06,Side Impact,Rain,Urban Arterial,5,6,58.93
-2025-03-04,Head-On Collision,Snow,State Highway,5,8,26.47
-2024-04-16,Side Impact,Wind,Urban Arterial,9,7,83.51
-2025-02-16,Hit and Run,Rain,Residential,7,2,33.91
-2024-08-09,Hit and Run,Fog,Interstate,2,3,52.85
-2024-09-10,Rear-End Collision,Ice,Interstate,3,9,97.89
-2024-09-08,Head-On Collision,Snow,State Highway,2,10,22.74
-2024-05-24,Hit and Run,Clear,State Highway,8,14,5.72
-2024-07-06,Single Vehicle,Clear,Interstate,2,9,74.04
-2024-09-01,Side Impact,Fog,State Highway,10,8,3.18
-2024-06-28,Pedestrian Struck,Rain,State Highway,8,3,89.93
-2024-05-16,Head-On Collision,Fog,Rural Road,8,4,98.59
-2025-03-12,Rear-End Collision,Snow,Residential,8,14,23.81
-2025-05-26,Rear-End Collision,Clear,Urban Arterial,2,5,47.92
-2025-01-12,Single Vehicle,Fog,Rural Road,4,8,22.58
-2024-01-27,Hit and Run,Fog,Interstate,4,2,119.05
-2024-07-25,Pedestrian Struck,Rain,Urban Arterial,6,5,82.55
-2024-08-24,Rear-End Collision,Clear,Interstate,9,8,75.93
-2025-04-10,Side Impact,Wind,Residential,12,2,80.46
-2025-02-18,Head-On Collision,Snow,Interstate,10,15,88.36
-2024-04-06,Side Impact,Fog,State Highway,3,14,65.61
-2024-03-30,Single Vehicle,Wind,Rural Road,4,14,63.59
-2025-04-03,Pedestrian Struck,Clear,Interstate,4,1,86.02
-2025-03-21,Side Impact,Snow,Residential,6,4,8.51
-2025-06-15,Pedestrian Struck,Snow,State Highway,6,5,63.1
-2025-04-14,Rear-End Collision,Rain,Urban Arterial,2,5,45.91
-2024-10-11,Head-On Collision,Snow,Rural Road,1,13,16.5
-2024-08-28,Rear-End Collision,Clear,Interstate,8,14,105.98
-2024-03-01,Pedestrian Struck,Wind,Rural Road,6,4,89.91
-2024-03-27,Head-On Collision,Wind,State Highway,11,11,81.1
-2024-07-02,Side Impact,Snow,State Highway,4,8,48.57
-2024-08-14,Head-On Collision,Clear,Interstate,2,8,57.76
-2025-06-04,Pedestrian Struck,Wind,State Highway,7,10,69.27
-2024-09-01,Rear-End Collision,Fog,Rural Road,6,0,50.99
-2025-05-10,Rear-End Collision,Rain,Interstate,9,12,75.35
-2025-04-06,Rear-End Collision,Ice,Rural Road,10,6,51.82
-2024-04-02,Pedestrian Struck,Fog,Urban Arterial,11,2,85.74
-2025-02-05,Rear-End Collision,Fog,Residential,11,10,111.44
-2024-09-06,Hit and Run,Fog,Residential,3,6,111.48
-2024-01-17,Single Vehicle,Clear,State Highway,5,7,3.5
-2024-09-27,Head-On Collision,Fog,Interstate,9,5,84.49
-2024-04-10,Side Impact,Wind,Urban Arterial,5,8,29.54
-2024-05-04,Rear-End Collision,Clear,Urban Arterial,10,2,28.93
-2025-02-02,Hit and Run,Ice,Urban Arterial,7,13,68.56
-2025-01-08,Hit and Run,Rain,Residential,10,5,55.83
-2025-04-21,Single Vehicle,Rain,Interstate,9,6,97.41
-2025-06-16,Side Impact,Wind,State Highway,9,8,97.1
-2024-12-18,Hit and Run,Rain,Interstate,5,1,116.42
-2025-03-31,Side Impact,Clear,Residential,3,14,41.17
-2024-05-16,Rear-End Collision,Fog,Rural Road,6,10,72.69
-2024-08-10,Side Impact,Rain,Interstate,5,3,24.11
-2024-11-29,Single Vehicle,Rain,Interstate,10,6,52.21
-2024-10-31,Pedestrian Struck,Clear,Interstate,5,12,69.28
-2024-04-17,Pedestrian Struck,Fog,Rural Road,11,7,80.47
-2024-06-07,Hit and Run,Rain,Rural Road,3,1,7.88
-2025-04-08,Head-On Collision,Fog,Interstate,3,1,42.56
-2025-04-12,Hit and Run,Wind,Rural Road,5,2,28.55
-2024-01-12,Hit and Run,Fog,Urban Arterial,1,11,94.46
-2025-05-15,Single Vehicle,Fog,Residential,9,7,118.25
-2025-05-05,Pedestrian Struck,Wind,Residential,8,8,74.99
-2025-01-04,Single Vehicle,Fog,Residential,7,12,53.44
-2024-05-15,Side Impact,Snow,Urban Arterial,10,2,7.12
-2024-07-07,Single Vehicle,Wind,Residential,11,13,5.67
-2025-05-05,Hit and Run,Fog,Rural Road,11,11,119.38
-2024-02-25,Side Impact,Ice,Residential,10,6,52.84
-2025-02-15,Hit and Run,Rain,Rural Road,9,4,89.88
-2024-06-11,Rear-End Collision,Rain,Interstate,9,15,95.34
-2025-02-08,Hit and Run,Fog,Interstate,1,14,5.84
-2025-05-27,Pedestrian Struck,Snow,Interstate,9,12,37.46
-2024-09-08,Single Vehicle,Snow,Rural Road,10,12,5.92
-2024-05-12,Head-On Collision,Ice,Interstate,2,9,100.15
-2025-03-25,Head-On Collision,Ice,State Highway,3,3,63.53
-2024-12-07,Single Vehicle,Snow,State Highway,5,6,81.68
-2024-08-15,Head-On Collision,Wind,Residential,12,1,98.93
-2024-08-02,Rear-End Collision,Ice,Urban Arterial,4,4,32.26
-2024-11-05,Rear-End Collision,Ice,Interstate,3,12,116.71
-2024-06-11,Pedestrian Struck,Fog,Residential,9,8,108.71
-2024-05-18,Head-On Collision,Snow,Residential,9,13,31.59
-2024-04-24,Side Impact,Rain,State Highway,3,11,36.3
-2025-01-20,Pedestrian Struck,Wind,Residential,6,8,86.38
-2024-08-22,Head-On Collision,Fog,Residential,8,10,45.32
-2025-04-28,Head-On Collision,Clear,Residential,7,14,111.44
-2024-07-01,Head-On Collision,Snow,State Highway,5,0,112.12
-2024-03-19,Side Impact,Snow,State Highway,10,2,33.46
-2024-06-22,Hit and Run,Ice,Interstate,9,3,76.04
-2024-04-15,Single Vehicle,Clear,Interstate,2,12,50.96
-2024-09-05,Single Vehicle,Ice,Residential,2,9,41.93
-2025-01-04,Rear-End Collision,Clear,Residential,4,6,79.64
-2025-04-24,Rear-End Collision,Clear,State Highway,11,4,110.87
-2024-06-30,Single Vehicle,Fog,Interstate,6,10,107.93
-2024-07-06,Head-On Collision,Snow,State Highway,6,3,47.51
-2024-08-14,Hit and Run,Wind,State Highway,3,2,107.01
-2024-08-12,Single Vehicle,Snow,Residential,12,2,118.64
-2024-05-01,Hit and Run,Snow,State Highway,4,9,64.22
-2024-01-04,Side Impact,Clear,Rural Road,1,2,43.13
-2025-04-27,Hit and Run,Wind,State Highway,10,4,48.83
-2024-11-20,Pedestrian Struck,Snow,State Highway,5,0,89.84
-2024-08-17,Pedestrian Struck,Fog,Rural Road,1,5,62.68
-2025-01-22,Hit and Run,Rain,Residential,6,1,68.54
-2025-02-28,Head-On Collision,Snow,Urban Arterial,9,11,101.61
-2024-01-27,Hit and Run,Rain,Residential,10,9,6.51
-2024-08-16,Side Impact,Ice,Residential,7,8,54.2
-2024-04-25,Pedestrian Struck,Snow,State Highway,5,1,96.07
-2024-07-08,Head-On Collision,Wind,Rural Road,4,13,86.75
-2025-05-02,Hit and Run,Rain,Rural Road,2,1,72.0
-2024-10-11,Hit and Run,Ice,Rural Road,6,7,13.33
-2025-04-22,Pedestrian Struck,Snow,Urban Arterial,3,11,5.15
-2024-06-14,Pedestrian Struck,Snow,State Highway,3,7,84.12
-2024-07-26,Side Impact,Fog,Rural Road,10,4,68.04
-2024-07-11,Hit and Run,Rain,State Highway,11,13,48.6
-2024-04-30,Side Impact,Snow,Urban Arterial,8,13,69.78
-2024-01-15,Rear-End Collision,Fog,State Highway,9,2,47.19
-2024-01-13,Head-On Collision,Snow,Residential,10,5,5.16
-2025-01-18,Side Impact,Clear,Urban Arterial,8,14,64.85
-2025-06-12,Hit and Run,Wind,Residential,2,12,30.41
-2024-05-29,Side Impact,Clear,State Highway,4,5,2.05
-2025-01-14,Side Impact,Snow,Interstate,12,1,68.06
-2024-06-06,Pedestrian Struck,Clear,Urban Arterial,7,13,90.09
-2024-05-17,Pedestrian Struck,Rain,Rural Road,1,3,20.73
-2024-03-21,Rear-End Collision,Clear,Urban Arterial,5,8,110.16
-2024-11-27,Hit and Run,Clear,Rural Road,3,5,62.44
-2024-06-01,Head-On Collision,Snow,State Highway,5,10,89.87
-2024-11-07,Rear-End Collision,Clear,Rural Road,9,2,16.65
-2025-04-28,Single Vehicle,Wind,Interstate,7,12,9.78
+rpt_dt,chnl_nm,camp_obj,geo_rgn,ad_spnd_usd,impr_cnt,clk_cnt,conv_cnt,tot_rev
+2024-06-10,youtube,traffic,latam,1606.4,1515451,134889,16550,137891.23
+2025-06-18,google_search,traffic,apac,21147.11,383393,157931,15367,2452.75
+2024-03-13,meta_feed,app_installs,apac,23645.36,2836957,163885,16266,137848.61
+2024-10-16,youtube,conversions,north_america,9370.7,2893647,143241,13550,102838.06
+2025-04-25,linkedin,awareness,emea,17021.57,2380982,121361,14123,36624.44
+2024-09-20,youtube,conversions,apac,8815.61,1745741,273979,15261,57949.97
+2025-02-22,linkedin,awareness,north_america,17637.87,4225421,153680,1779,58583.59
+2024-11-15,meta_feed,conversions,north_america,23377.36,3167810,267894,11613,65676.09
+2025-04-07,meta_feed,app_installs,latam,10702.0,1299039,48490,7954,91445.75
+2025-01-04,google_search,awareness,latam,128.72,1179160,276861,15420,31327.16
+2025-03-20,youtube,leads,apac,18420.78,4869824,297100,4889,46631.1
+2024-10-07,pinterest,leads,apac,14177.98,3143945,297466,14941,46687.4
+2024-11-09,tiktok,traffic,emea,5841.25,4724442,213170,10241,69697.21
+2024-03-22,meta_feed,awareness,emea,15358.19,4870958,198808,2711,77685.79
+2024-12-16,pinterest,conversions,emea,503.92,4086694,240743,12094,132433.24
+2024-10-20,google_search,awareness,emea,18770.17,1231730,16049,6372,80490.81
+2025-05-08,pinterest,conversions,emea,20448.85,4884874,24641,1849,77316.82
+2025-04-25,linkedin,leads,emea,13599.91,4811410,254744,2812,35872.87
+2024-12-09,tiktok,leads,emea,3975.55,1653224,269662,11696,103755.99
+2025-06-01,tiktok,conversions,latam,9125.78,2357046,210692,5612,67671.08
+2024-04-19,google_search,leads,north_america,19041.07,1173241,257760,9079,77971.34
+2024-09-30,linkedin,awareness,north_america,21932.71,4667993,206535,16009,46874.54
+2024-07-19,pinterest,awareness,apac,11223.08,1425465,87872,4805,87746.84
+2024-10-28,youtube,leads,latam,20698.57,3514222,33714,3490,135973.28
+2025-06-15,meta_feed,awareness,latam,14290.08,503699,156545,2708,22149.19
+2024-03-24,pinterest,traffic,apac,18627.59,4934725,276619,11561,125261.96
+2025-02-03,google_search,app_installs,latam,24914.35,3426196,213173,14747,103075.76
+2024-01-02,pinterest,app_installs,north_america,23862.9,798835,290464,17139,86934.12
+2025-04-22,meta_feed,traffic,latam,5765.82,1701283,200178,7374,112558.46
+2025-02-27,linkedin,leads,apac,9320.56,4462733,99926,9172,109200.48
+2024-06-19,meta_feed,app_installs,apac,13070.05,881482,12824,11945,15710.13
+2024-05-17,tiktok,awareness,emea,14991.42,1863465,74159,10709,106870.65
+2024-05-06,tiktok,app_installs,latam,16301.75,1346505,169104,6304,6070.46
+2024-02-18,linkedin,conversions,emea,11244.53,4819294,136523,7205,109679.38
+2025-03-15,youtube,app_installs,apac,18990.68,4225469,237318,12143,10512.65
+2024-04-24,youtube,awareness,latam,11635.37,1922309,161626,277,99588.19
+2025-05-26,pinterest,app_installs,emea,15178.33,2497501,241112,13594,114451.46
+2024-05-05,google_search,leads,emea,19440.77,3006327,27748,1144,40791.96
+2024-02-01,pinterest,app_installs,emea,20959.77,591838,47969,19536,77744.77
+2024-08-19,pinterest,traffic,apac,16441.33,2828553,162823,4333,84055.06
+2024-07-11,tiktok,awareness,latam,24760.38,870631,165216,14221,147733.23
+2025-03-10,pinterest,traffic,emea,7435.62,1790128,224484,17509,44846.5
+2025-01-06,linkedin,conversions,emea,15034.87,4184745,276912,19752,38657.89
+2024-01-30,pinterest,leads,north_america,12030.83,4320536,260362,9350,139349.38
+2024-06-08,linkedin,traffic,north_america,3433.82,1896845,266936,16121,62951.1
+2024-04-11,youtube,traffic,latam,9294.96,2857574,75386,2218,146310.62
+2025-04-28,youtube,conversions,emea,12470.73,443789,249364,18776,109954.79
+2024-09-30,youtube,app_installs,north_america,9174.67,2225272,176056,5148,138980.65
+2025-04-17,meta_feed,traffic,latam,20857.98,4595179,136031,6471,12301.81
+2024-06-23,google_search,app_installs,latam,4959.57,3330261,144824,2464,48756.16
+2025-05-29,linkedin,conversions,latam,4849.8,1309710,251867,18179,69186.15
+2024-11-04,google_search,conversions,emea,8340.51,3825937,39093,15447,12908.55
+2024-12-21,pinterest,leads,latam,15470.64,4209953,163005,11805,54177.24
+2025-05-13,tiktok,traffic,emea,1642.37,4137092,134106,3664,26550.95
+2024-01-10,linkedin,awareness,north_america,5471.77,1248771,158569,12142,109005.65
+2025-02-22,tiktok,conversions,emea,3275.4,72638,279367,7291,18408.45
+2024-05-15,pinterest,conversions,latam,21952.11,2111629,135354,6739,52037.05
+2024-10-11,google_search,conversions,north_america,24943.31,856930,59563,12285,89604.78
+2024-06-22,youtube,leads,north_america,4346.22,4592622,275547,18079,112924.87
+2024-01-02,tiktok,traffic,north_america,861.68,1392878,166843,13692,146241.34
+2024-07-06,youtube,leads,apac,1168.47,2519453,210756,19858,109122.37
+2024-11-24,google_search,awareness,apac,21539.85,1907634,17901,1807,140461.98
+2025-01-09,pinterest,leads,apac,2476.12,2730742,218709,12683,138210.72
+2024-01-15,tiktok,app_installs,latam,10134.91,3914303,263640,2252,137581.99
+2024-01-03,tiktok,app_installs,emea,17885.12,4461861,226450,6884,125903.55
+2024-05-05,meta_feed,app_installs,apac,2911.66,4231860,276073,8323,124006.36
+2024-12-31,linkedin,traffic,latam,4566.12,1129972,114196,17898,60370.76
+2024-11-04,linkedin,app_installs,emea,21107.82,2725929,176022,5947,22325.76
+2025-01-15,google_search,conversions,apac,8075.44,2659152,254686,51,19921.25
+2024-09-20,youtube,awareness,latam,13306.44,3349938,180676,3624,112870.75
+2025-03-01,google_search,app_installs,emea,11575.33,1719783,48003,12545,15521.57
+2024-07-17,youtube,conversions,apac,8716.43,3175967,199176,7338,89032.2
+2024-10-11,pinterest,leads,apac,16881.49,2909362,262702,12554,27820.75
+2025-02-08,youtube,traffic,emea,8108.44,4842599,244797,9386,27884.58
+2025-02-18,tiktok,leads,north_america,3014.72,4130972,181539,6349,40275.87
+2024-04-20,youtube,conversions,latam,15500.38,2520129,258680,3347,33083.38
+2025-02-20,pinterest,conversions,emea,16527.65,4587382,53641,13202,141253.3
+2024-10-22,tiktok,traffic,latam,17409.67,1408373,83161,10928,73863.0
+2024-08-31,google_search,leads,north_america,6218.7,2419491,148420,4744,76492.33
+2024-04-04,youtube,conversions,apac,47.35,1186635,240936,122,96944.16
+2025-04-01,linkedin,leads,emea,7467.96,3295783,152606,4803,86278.36
+2024-09-04,meta_feed,leads,apac,19085.38,1059291,187008,13829,52416.17
+2024-04-30,youtube,awareness,apac,24027.49,3022821,126677,3838,63591.24
+2025-01-30,youtube,conversions,latam,15043.93,2841451,97849,12068,122574.57
+2024-08-12,google_search,traffic,latam,16412.41,2957655,119276,11127,73753.29
+2024-07-23,meta_feed,conversions,latam,2927.35,1718588,198350,3456,6039.08
+2025-05-07,pinterest,leads,latam,3783.34,3759566,107174,14432,277.91
+2024-11-23,google_search,awareness,apac,19022.8,1132696,22716,17144,95590.17
+2025-05-04,tiktok,leads,north_america,4359.14,2108316,238003,11920,64059.9
+2025-03-04,pinterest,traffic,latam,6784.13,1877849,284142,15072,31547.37
+2024-02-04,google_search,conversions,emea,15798.08,4806905,194643,17780,104859.57
+2024-09-07,youtube,app_installs,north_america,11724.38,2694937,172286,5599,36249.74
+2024-01-11,meta_feed,app_installs,emea,20402.77,255155,21907,4918,8001.85
+2024-01-17,linkedin,traffic,emea,13743.19,994565,55560,11677,16434.16
+2025-02-03,tiktok,traffic,apac,21841.77,4332759,142687,14742,10189.55
+2024-05-28,linkedin,leads,apac,10508.97,1387981,283500,2731,87612.71
+2024-02-07,pinterest,leads,emea,5487.59,4369634,198463,17475,64992.63
+2024-12-01,linkedin,conversions,north_america,257.7,647669,159852,5670,12349.01
+2024-09-29,linkedin,app_installs,apac,9498.38,1899279,41653,12,139488.31
+2024-04-27,google_search,conversions,latam,10806.36,2043804,139155,9892,55654.41
+2024-11-06,pinterest,conversions,emea,4084.18,2169890,41111,6601,31414.26
+2024-11-18,pinterest,app_installs,emea,9274.21,4139088,113385,19919,79018.86
+2025-05-27,linkedin,awareness,north_america,22921.6,1799207,246214,10530,51281.67
+2024-05-11,pinterest,leads,north_america,6467.81,909326,106198,11874,2509.86
+2024-09-20,pinterest,conversions,latam,8900.67,2247733,119239,18947,80703.08
+2024-07-26,meta_feed,leads,apac,337.06,3841486,157938,1985,14050.0
+2025-02-04,tiktok,traffic,latam,20998.46,441208,40732,6519,21984.7
+2024-01-23,google_search,traffic,latam,5301.25,338360,95488,18020,56331.52
+2024-06-21,tiktok,conversions,apac,9425.36,2538202,206657,15961,9151.42
+2025-05-31,youtube,awareness,apac,12964.78,2977670,172905,16316,6689.2
+2024-12-18,tiktok,leads,north_america,19082.91,1328090,157898,11627,133898.89
+2024-01-26,linkedin,leads,north_america,15269.61,4006816,151881,7419,130728.85
+2024-05-21,google_search,awareness,apac,23721.25,4789968,66310,6654,122657.48
+2025-05-11,tiktok,conversions,emea,3292.29,3655588,155528,12424,117995.45
+2025-01-16,pinterest,app_installs,north_america,11088.55,2189730,66848,4040,39261.66
+2024-05-02,tiktok,traffic,north_america,2986.69,3723176,273648,12933,66588.63
+2025-04-21,tiktok,app_installs,latam,1704.48,4042006,207851,613,34869.13
+2024-07-21,tiktok,app_installs,apac,3443.29,2676829,209470,5325,21845.66
+2024-07-09,meta_feed,leads,north_america,16201.06,2138394,225690,3039,128690.97
+2024-04-22,tiktok,traffic,apac,24309.08,2601033,95969,17688,71737.39
+2025-05-19,meta_feed,awareness,apac,8812.38,1526167,186068,1577,85491.84
+2024-10-12,youtube,awareness,north_america,20561.57,2593319,235991,4195,90966.77
+2024-07-24,meta_feed,conversions,latam,806.77,1062381,295493,7190,22270.48
+2025-06-08,tiktok,conversions,north_america,12199.37,3796368,20001,4961,144981.11
+2025-02-10,meta_feed,conversions,north_america,146.97,591704,235130,14568,144461.65
+2024-07-24,google_search,awareness,emea,9932.87,188980,262474,8192,31808.9
+2025-02-08,tiktok,traffic,latam,22949.01,2663465,61231,4983,78873.43
+2024-01-20,tiktok,app_installs,emea,45.49,3935619,124778,15589,53687.87
+2024-12-29,google_search,conversions,latam,1623.9,4507751,27201,3277,106670.49
+2024-07-15,pinterest,conversions,emea,11055.12,1535189,209772,665,112732.44
+2025-04-13,tiktok,conversions,apac,17166.68,2187119,120221,2430,134279.55
+2024-05-26,meta_feed,traffic,north_america,10709.34,1504113,143738,14652,24187.56
+2024-02-22,youtube,app_installs,apac,4260.47,1913314,275371,11803,127502.37
+2024-07-09,google_search,traffic,emea,7860.85,1455746,163025,9891,61139.13
+2024-08-18,pinterest,awareness,latam,8021.99,4476728,287981,1912,144861.12
+2024-05-08,pinterest,awareness,emea,9930.09,2193748,154668,9876,67802.8
+2024-11-24,meta_feed,leads,latam,18128.57,2445848,172066,2138,18574.92
+2024-01-27,meta_feed,awareness,latam,16714.29,1832734,66242,5205,66035.98
+2024-02-25,google_search,leads,apac,17502.37,2245979,212108,10075,94117.07
+2024-09-01,meta_feed,conversions,latam,18078.61,4964417,137275,8985,98341.43
+2025-01-03,google_search,awareness,apac,17811.79,1512513,197972,7068,74256.52
+2025-02-12,tiktok,leads,emea,13396.57,3656810,154779,2653,11018.35
+2024-08-19,youtube,leads,emea,2082.78,4207074,115886,476,75477.99
+2024-08-23,google_search,conversions,apac,13959.34,4566335,185143,7982,57729.0
+2025-01-16,pinterest,awareness,north_america,22767.88,2483290,214364,6238,146951.28
+2024-03-01,meta_feed,app_installs,latam,3747.35,4006789,63150,11085,50837.22
+2025-01-30,tiktok,conversions,north_america,17362.9,2961154,194177,18208,142533.72
+2025-06-02,youtube,traffic,emea,15079.55,2099369,249016,12616,96606.27
+2024-08-11,linkedin,leads,emea,21801.94,1905881,3148,6487,101742.65
+2024-02-17,youtube,leads,emea,22854.18,313569,90175,7210,31289.15
+2025-05-06,google_search,conversions,north_america,13532.22,1590164,97652,7545,145201.4
+2025-03-03,pinterest,app_installs,latam,19487.02,3024227,62996,76,19828.62
+2024-01-08,tiktok,traffic,north_america,15049.48,3885572,90740,540,1454.72
+2025-03-27,linkedin,traffic,north_america,1944.15,2688957,158509,4110,40546.57
+2024-04-22,pinterest,app_installs,apac,22812.26,2259671,70643,15951,67228.63
+2024-12-09,linkedin,leads,emea,3142.21,4331832,80870,5763,36870.89
+2024-06-29,tiktok,conversions,latam,12971.53,2458713,142993,15462,26472.08
+2024-02-04,tiktok,leads,north_america,5843.48,3762131,291973,18798,34606.13
+2025-01-20,meta_feed,app_installs,north_america,6590.0,3661111,120577,470,90854.49
+2025-04-17,linkedin,app_installs,emea,24466.22,868068,87669,16514,15643.1
+2025-02-23,meta_feed,conversions,emea,3580.51,3113391,250391,14714,101438.93
+2024-09-07,pinterest,traffic,latam,12058.77,4349493,292406,17307,105702.15
+2025-05-10,google_search,awareness,emea,22320.05,289513,95836,10600,76071.39
+2024-05-18,meta_feed,conversions,emea,14293.59,1124286,234841,12646,37974.85
+2025-01-06,google_search,awareness,north_america,19902.75,696138,278213,8894,94262.1
+2024-08-01,tiktok,awareness,latam,10326.98,1428580,51622,10328,106791.17
+2024-11-20,tiktok,app_installs,north_america,11092.08,1530380,576,13566,126801.02
+2024-01-31,meta_feed,conversions,latam,20902.29,1952181,37554,1928,57429.25
+2025-02-26,linkedin,conversions,north_america,23514.29,2121503,276250,19305,13140.78
+2025-01-19,google_search,traffic,emea,8134.02,3485922,196802,4383,22213.72
+2025-05-12,google_search,leads,latam,4589.82,901904,258056,995,31468.19
+2025-02-17,linkedin,app_installs,latam,10529.29,4693179,227658,16880,94174.3
+2024-02-18,pinterest,leads,apac,6992.39,3710377,203715,3755,42348.98
+2025-04-17,youtube,traffic,latam,13279.93,1517608,93285,18088,137738.76
+2025-06-05,google_search,app_installs,latam,15502.03,2017434,136015,9165,131800.07
+2024-12-30,meta_feed,app_installs,emea,1265.84,2012430,1399,17928,99934.48
+2024-06-08,tiktok,awareness,emea,21540.31,724942,286233,9779,30159.79
+2024-03-16,google_search,conversions,apac,10348.5,2691258,164765,7462,87923.97
+2024-01-15,google_search,conversions,emea,24388.79,2145751,237256,16026,76113.84
+2024-11-02,google_search,traffic,apac,8148.6,1281182,263040,15974,7831.28
+2025-03-28,linkedin,conversions,apac,11486.67,493020,223257,10257,53135.7
+2024-07-05,google_search,conversions,emea,23929.76,1393067,83362,12073,125288.68
+2025-06-03,youtube,conversions,latam,18768.69,1989403,280603,11786,121030.62
+2024-10-27,linkedin,conversions,emea,10253.48,4856066,234468,9563,7348.95
+2025-04-03,google_search,traffic,apac,3080.18,2089629,299566,17111,68371.41
+2024-12-12,google_search,leads,north_america,11288.55,163415,98819,15724,45438.32
+2024-10-14,tiktok,traffic,latam,3317.77,4693559,175562,19032,53429.59
+2024-04-21,youtube,traffic,apac,13211.19,1728502,107202,13796,120611.61
+2024-06-04,pinterest,conversions,emea,16032.14,2711138,28889,4233,84503.29
+2024-05-23,tiktok,traffic,apac,9904.08,4348277,241112,17328,46967.46
+2025-03-08,pinterest,traffic,latam,23490.43,1143273,164794,2484,59462.98
+2024-04-19,meta_feed,app_installs,north_america,6419.79,928058,168849,3685,46910.88
+2024-04-09,youtube,awareness,north_america,19856.34,2196983,294336,3985,44651.71
+2024-07-20,pinterest,traffic,north_america,7258.19,342775,277233,6673,93742.13
+2024-08-11,meta_feed,traffic,north_america,10963.89,239552,108228,8417,38844.12
+2024-07-06,meta_feed,awareness,apac,10217.37,3963652,285812,1362,61035.82
+2024-07-31,meta_feed,conversions,north_america,196.17,2728345,232119,13149,33286.81
+2025-05-18,youtube,awareness,latam,12588.22,2015385,16361,2511,16945.96
+2024-12-05,tiktok,conversions,latam,4098.53,133547,70879,16516,131661.44
+2024-02-03,tiktok,leads,latam,6138.31,4715970,237368,12155,108269.42
+2025-03-14,google_search,awareness,north_america,19625.21,2440352,1052,12481,117714.9
+2024-06-29,google_search,leads,latam,20684.22,904230,137836,13373,24506.41
+2024-02-25,google_search,app_installs,north_america,5288.34,1345414,16825,5710,92518.65
+2024-07-23,pinterest,app_installs,north_america,21395.22,581829,72768,2542,133363.78
+2025-04-03,meta_feed,traffic,apac,24608.68,152836,87303,11945,125636.21
+2024-08-27,tiktok,leads,latam,13713.18,2639078,148760,16803,41567.12
+2025-06-15,meta_feed,conversions,north_america,19758.87,4822107,57411,17163,72800.44
+2024-05-12,google_search,traffic,apac,12344.93,3194963,73367,9912,65133.93
+2025-01-14,linkedin,app_installs,latam,5758.62,512389,2104,9634,54928.2
+2024-08-01,tiktok,traffic,apac,15972.98,494848,20942,6066,25184.52
+2024-04-02,google_search,traffic,emea,14731.39,2649660,244885,3588,14710.19
+2024-09-09,google_search,app_installs,latam,24352.96,734268,172572,7850,93608.91
+2024-02-01,youtube,leads,north_america,18402.74,1832865,212005,13527,145804.98
+2025-06-10,meta_feed,leads,emea,10672.25,1297719,25031,18113,141650.32
+2025-05-23,linkedin,app_installs,north_america,12424.61,784344,58367,8659,79292.0
+2024-02-22,meta_feed,conversions,latam,13300.79,3149224,20709,5188,5013.35
+2025-06-11,tiktok,conversions,emea,8095.51,1642563,127548,12002,83626.15
+2024-05-07,google_search,awareness,emea,5634.61,3636215,231359,11283,111418.32
+2025-05-12,google_search,leads,north_america,18869.66,2452787,15424,12776,129197.36
+2024-06-05,google_search,awareness,north_america,23942.96,53478,168880,12301,3765.02
+2025-05-17,google_search,leads,north_america,23500.42,2849422,87384,19832,139988.73
+2025-02-10,meta_feed,leads,emea,7588.43,72949,218503,4667,6470.44
+2024-05-04,tiktok,leads,latam,9013.31,35054,59927,18975,132912.48
+2024-01-16,pinterest,awareness,north_america,5266.55,459912,268961,2075,57987.72
+2024-06-11,pinterest,awareness,north_america,21496.05,4842670,4423,11819,71622.62
+2024-04-12,google_search,traffic,latam,17684.92,3822918,228045,19263,143271.3
+2024-12-21,tiktok,awareness,latam,94.1,1626654,114624,11690,91500.6
+2024-08-05,tiktok,awareness,emea,2510.72,2478112,19135,1929,49276.16
+2025-05-17,youtube,conversions,apac,9705.22,1341823,76415,2274,86535.53
+2025-05-11,google_search,traffic,north_america,12505.82,3510236,293922,18502,112166.7
+2025-05-06,tiktok,awareness,north_america,18826.36,4570014,280212,15747,134014.94
+2024-12-05,youtube,traffic,apac,8735.9,1445183,148648,1780,2733.06
+2024-09-09,pinterest,conversions,latam,15947.89,2194481,221602,16917,7096.07
+2024-04-02,meta_feed,traffic,emea,3618.39,656068,89096,3239,102504.4
+2024-06-24,pinterest,awareness,latam,13491.25,1137369,248130,1778,88105.18
+2024-09-30,youtube,conversions,north_america,8407.25,1605258,269406,19187,113503.21
+2024-12-10,pinterest,traffic,latam,8068.62,737700,199489,18186,91287.79
+2024-09-06,meta_feed,leads,north_america,13699.77,1640439,225492,4504,63630.55
+2025-04-02,meta_feed,leads,emea,6608.13,719211,102385,18062,139001.05
+2024-02-22,pinterest,leads,latam,1251.91,873874,195249,473,13902.96

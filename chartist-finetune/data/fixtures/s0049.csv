@@ -1,241 +1,241 @@
-snap_dt,dept_nm,loc_cd,emp_typ,hc_cnt,hire_cnt,term_cnt,attr_rt
-2025-03-07,Sales,SFO,Part-Time,152,367,190,25.64
-2024-02-25,Engineering,LON,Part-Time,217,4,246,4.76
-2025-01-19,Marketing,BLR,Intern,1280,112,169,41.95
-2025-02-13,Sales,TOR,Contractor,1551,266,78,4.46
-2024-09-19,Marketing,TOR,Contractor,4679,343,241,12.98
-2024-10-19,Engineering,SFO,Contractor,3930,280,133,39.31
-2024-08-25,Sales,SFO,Intern,4501,378,141,38.0
-2024-05-26,Engineering,TOR,Part-Time,92,313,226,20.96
-2024-10-28,Operations,LON,Part-Time,3153,50,270,30.62
-2025-03-19,Finance,TOR,Intern,232,62,52,23.46
-2024-06-09,Engineering,BLR,Part-Time,3286,162,110,14.84
-2024-10-23,Engineering,AUS,Contractor,4418,118,133,44.49
-2025-01-26,Engineering,BLR,Intern,799,196,89,14.3
-2024-07-31,Sales,SFO,Intern,1666,49,62,31.58
-2025-05-19,HR,SFO,Contractor,2127,256,15,17.12
-2024-08-27,Operations,NYC,Part-Time,3105,159,284,37.13
-2024-10-10,Operations,LON,Full-Time,3481,187,15,9.46
-2025-04-27,Finance,NYC,Full-Time,3918,348,73,35.36
-2025-01-20,Operations,AUS,Intern,187,353,53,14.14
-2024-11-20,Engineering,TOR,Full-Time,4392,96,168,31.43
-2025-02-14,HR,AUS,Intern,4862,259,244,35.59
-2024-05-03,Finance,TOR,Full-Time,775,390,124,24.54
-2024-06-15,Operations,BLR,Intern,1249,296,86,31.95
-2025-03-05,Engineering,LON,Intern,4711,200,218,9.25
-2024-05-11,Support,SFO,Full-Time,944,286,173,44.72
-2024-10-20,Operations,SFO,Full-Time,4143,0,299,14.97
-2024-01-22,HR,SFO,Intern,4322,146,297,23.83
-2024-06-14,Support,SFO,Part-Time,1656,217,243,22.65
-2024-02-13,Marketing,NYC,Part-Time,2729,173,231,16.11
-2024-04-20,Sales,NYC,Contractor,4979,264,242,38.28
-2024-01-02,Operations,AUS,Part-Time,1350,100,166,8.91
-2025-04-29,Engineering,AUS,Contractor,4558,372,125,2.61
-2024-11-07,Engineering,TOR,Contractor,3118,238,273,10.94
-2025-01-12,Sales,TOR,Intern,2079,295,7,8.26
-2025-06-15,Engineering,NYC,Contractor,3241,185,7,16.76
-2025-06-13,Support,NYC,Part-Time,3294,362,9,14.32
-2024-04-05,Marketing,NYC,Intern,3393,192,9,12.24
-2025-06-04,Finance,TOR,Full-Time,2112,319,64,20.72
-2025-06-06,Support,LON,Contractor,1816,252,50,5.92
-2025-04-26,Support,SFO,Part-Time,3253,373,4,18.85
-2024-01-14,Support,TOR,Full-Time,3925,116,32,39.86
-2025-05-22,Engineering,BLR,Contractor,4983,244,76,42.09
-2024-02-21,Operations,NYC,Contractor,4652,235,13,25.64
-2024-11-23,Sales,TOR,Contractor,3824,171,258,34.49
-2024-11-20,Marketing,BLR,Full-Time,1245,63,109,40.07
-2024-04-01,Support,NYC,Contractor,3854,3,118,38.25
-2025-01-16,Marketing,BLR,Full-Time,3730,102,78,29.58
-2024-07-22,Operations,LON,Intern,1472,115,297,13.66
-2024-01-07,Sales,AUS,Contractor,1030,232,54,35.92
-2025-04-23,Operations,TOR,Full-Time,4981,34,277,31.12
-2024-12-17,Finance,BLR,Contractor,3892,323,86,17.42
-2024-04-23,Sales,BLR,Full-Time,710,385,256,8.73
-2025-04-03,Operations,AUS,Full-Time,3373,170,25,7.28
-2024-04-20,Finance,AUS,Contractor,1954,102,252,21.56
-2024-08-10,HR,BLR,Full-Time,2807,307,111,36.19
-2024-03-16,Engineering,NYC,Full-Time,4026,281,53,7.66
-2024-10-18,Marketing,TOR,Contractor,564,46,4,18.46
-2024-06-23,Operations,SFO,Full-Time,4300,51,96,4.52
-2024-09-15,Support,SFO,Contractor,254,223,58,43.52
-2025-05-25,Support,NYC,Contractor,4548,152,241,9.45
-2024-08-19,Finance,NYC,Part-Time,1998,145,146,39.66
-2025-01-14,Support,BLR,Contractor,261,387,289,44.88
-2025-01-09,Sales,TOR,Part-Time,352,178,101,34.69
-2024-06-06,Sales,NYC,Full-Time,1218,16,73,2.3
-2024-01-06,Operations,TOR,Full-Time,3541,237,141,32.24
-2024-08-29,Engineering,AUS,Full-Time,179,109,170,35.41
-2024-05-24,Operations,TOR,Part-Time,2661,235,169,42.4
-2025-04-02,Finance,AUS,Part-Time,1358,154,34,10.78
-2024-04-04,HR,AUS,Part-Time,3360,378,74,32.54
-2024-05-14,Sales,SFO,Intern,2897,399,177,17.44
-2024-10-22,Engineering,LON,Contractor,4960,373,89,38.41
-2025-02-18,Operations,LON,Contractor,1625,127,140,36.32
-2024-08-27,Marketing,AUS,Full-Time,3633,46,50,44.78
-2024-12-21,Finance,NYC,Part-Time,3594,369,185,34.89
-2024-04-26,Finance,AUS,Full-Time,1415,30,103,16.45
-2025-01-19,Marketing,TOR,Intern,1982,94,189,19.59
-2024-07-21,Sales,TOR,Part-Time,2116,308,199,34.8
-2024-05-12,Operations,BLR,Full-Time,1932,234,258,33.67
-2024-07-06,Finance,LON,Intern,2098,293,257,0.18
-2024-01-07,Operations,AUS,Full-Time,2633,348,91,9.87
-2024-05-07,HR,TOR,Full-Time,58,198,80,39.34
-2024-08-10,Support,BLR,Full-Time,3349,174,210,29.62
-2024-01-04,Marketing,SFO,Part-Time,568,356,3,2.91
-2024-10-11,Sales,BLR,Contractor,2444,138,88,38.94
-2024-06-20,Marketing,SFO,Full-Time,2854,102,190,6.87
-2024-11-11,Marketing,BLR,Full-Time,1289,12,195,38.54
-2025-01-11,Finance,SFO,Contractor,1508,13,105,20.0
-2025-05-08,Marketing,AUS,Intern,2031,327,19,29.89
-2024-01-12,Engineering,NYC,Part-Time,595,48,285,31.89
-2024-08-27,Engineering,LON,Full-Time,2037,154,179,24.14
-2025-02-14,Marketing,TOR,Contractor,2068,348,77,13.45
-2024-08-26,Engineering,LON,Contractor,1559,122,89,41.24
-2024-06-07,Finance,LON,Contractor,4725,136,211,13.0
-2024-10-13,Marketing,LON,Intern,2704,218,165,10.23
-2024-09-06,Operations,BLR,Full-Time,3149,210,126,5.33
-2025-03-18,Operations,AUS,Part-Time,578,276,16,41.91
-2024-04-16,HR,TOR,Full-Time,2944,264,258,2.4
-2025-01-30,Engineering,AUS,Intern,1394,308,189,35.78
-2025-04-04,HR,TOR,Part-Time,4722,310,32,18.74
-2024-10-13,Operations,AUS,Intern,1288,81,127,34.86
-2024-04-28,Finance,TOR,Part-Time,4704,248,110,1.42
-2024-11-14,Engineering,TOR,Part-Time,2478,142,107,18.83
-2024-04-03,Marketing,AUS,Full-Time,430,2,266,33.02
-2024-11-17,Finance,NYC,Full-Time,652,318,85,31.79
-2024-10-02,HR,NYC,Full-Time,510,272,16,10.18
-2024-11-05,Engineering,LON,Contractor,4639,233,253,21.65
-2024-11-16,Engineering,SFO,Contractor,626,103,213,3.41
-2024-09-04,HR,TOR,Contractor,1416,380,278,17.28
-2025-06-01,Support,SFO,Contractor,3221,248,6,13.55
-2025-05-08,Engineering,SFO,Full-Time,1208,243,154,41.42
-2025-06-04,Operations,TOR,Full-Time,630,148,62,20.47
-2025-04-21,Finance,SFO,Contractor,3328,337,250,10.16
-2024-10-06,Engineering,NYC,Part-Time,2979,153,117,31.87
-2024-03-30,Marketing,NYC,Full-Time,4419,257,150,18.77
-2024-01-28,Marketing,LON,Intern,4405,116,167,23.02
-2024-03-16,Engineering,LON,Part-Time,3176,100,284,37.6
-2025-05-30,Engineering,TOR,Part-Time,4119,139,99,33.34
-2024-01-13,Finance,TOR,Part-Time,1592,333,173,38.58
-2024-08-26,Operations,AUS,Full-Time,4430,122,116,16.64
-2024-06-08,Marketing,NYC,Part-Time,3694,351,171,3.22
-2024-10-17,Operations,SFO,Part-Time,1952,268,113,17.49
-2024-12-17,Engineering,LON,Full-Time,4512,18,55,2.33
-2024-10-26,Marketing,SFO,Full-Time,382,31,114,14.38
-2025-04-25,HR,LON,Part-Time,588,216,1,1.9
-2024-12-03,Finance,AUS,Full-Time,3217,294,228,2.42
-2024-11-22,Engineering,LON,Part-Time,2594,245,95,26.92
-2024-01-05,Sales,TOR,Part-Time,2010,147,287,42.46
-2024-07-17,Marketing,LON,Contractor,3050,126,92,21.93
-2024-02-12,Marketing,LON,Part-Time,1125,59,184,1.25
-2024-08-17,Marketing,NYC,Contractor,4501,5,256,29.62
-2025-03-03,Engineering,BLR,Intern,101,242,46,44.7
-2025-03-14,Sales,AUS,Part-Time,4648,326,69,23.44
-2024-12-21,HR,NYC,Part-Time,2874,212,194,26.69
-2025-02-11,Engineering,TOR,Full-Time,3381,45,215,16.37
-2024-10-29,Operations,TOR,Part-Time,4077,281,13,21.31
-2024-12-13,Marketing,AUS,Contractor,493,379,247,19.42
-2025-05-21,Support,TOR,Full-Time,4440,137,172,2.21
-2025-05-17,Support,TOR,Intern,1166,321,241,0.79
-2024-06-04,Marketing,SFO,Contractor,543,348,3,42.95
-2024-07-11,Support,NYC,Intern,3424,388,159,2.42
-2024-07-23,Support,TOR,Full-Time,2411,293,196,18.75
-2024-12-13,Support,AUS,Contractor,4634,83,253,31.23
-2025-02-01,Sales,TOR,Intern,866,200,148,18.75
-2024-09-20,Marketing,TOR,Full-Time,2011,76,137,9.12
-2025-03-29,Support,SFO,Contractor,851,167,17,12.82
-2024-03-23,Operations,TOR,Contractor,1804,86,172,9.96
-2025-04-25,Sales,SFO,Intern,3222,20,222,12.66
-2025-06-16,Operations,TOR,Contractor,2804,340,121,1.82
-2024-02-16,Operations,AUS,Contractor,4423,386,18,23.65
-2024-11-24,HR,TOR,Contractor,181,377,234,44.94
-2025-02-18,Engineering,TOR,Contractor,393,13,73,19.71
-2025-06-14,Sales,NYC,Part-Time,2268,127,183,26.95
-2024-04-14,Marketing,BLR,Intern,2494,71,63,41.33
-2024-02-27,Operations,NYC,Part-Time,3886,100,253,30.28
-2024-12-27,Operations,TOR,Part-Time,3156,224,104,12.08
-2024-09-02,Engineering,SFO,Intern,4807,242,29,44.14
-2024-08-20,Marketing,AUS,Intern,4085,10,127,17.01
-2024-03-07,Marketing,NYC,Full-Time,3384,113,190,10.96
-2024-01-29,HR,TOR,Intern,765,293,187,20.58
-2024-05-28,Operations,TOR,Intern,386,230,112,16.76
-2025-03-07,Support,NYC,Part-Time,964,14,2,21.57
-2024-12-29,Marketing,SFO,Full-Time,4390,100,70,2.55
-2024-08-23,Finance,BLR,Full-Time,1146,193,66,27.26
-2025-03-09,Operations,BLR,Intern,203,84,99,11.0
-2024-06-09,Sales,BLR,Intern,3856,362,251,14.16
-2024-04-15,Engineering,SFO,Intern,2261,63,183,11.64
-2024-02-24,Finance,AUS,Contractor,2132,376,145,36.73
-2024-03-21,Finance,LON,Full-Time,1686,72,200,24.13
-2025-05-21,Marketing,BLR,Part-Time,950,138,208,11.49
-2025-03-20,Sales,NYC,Contractor,695,134,137,32.66
-2024-09-16,HR,BLR,Part-Time,4677,330,156,15.5
-2024-06-30,Sales,BLR,Full-Time,679,354,273,10.93
-2025-06-13,Finance,BLR,Full-Time,143,318,244,41.43
-2025-01-12,Sales,LON,Part-Time,21,125,40,22.03
-2024-03-18,Sales,NYC,Part-Time,4037,349,260,41.78
-2024-12-27,Operations,LON,Contractor,3821,261,235,18.36
-2024-09-04,Finance,TOR,Full-Time,4535,155,78,15.58
-2024-04-29,HR,TOR,Part-Time,1510,330,7,27.09
-2024-11-21,Sales,SFO,Part-Time,1980,225,25,12.04
-2024-04-14,Marketing,SFO,Intern,774,286,111,23.14
-2024-06-23,Marketing,BLR,Part-Time,1571,112,234,25.42
-2024-05-01,Operations,TOR,Full-Time,641,78,220,26.43
-2025-01-25,HR,NYC,Part-Time,112,400,188,22.79
-2024-12-09,Engineering,LON,Intern,2043,241,191,19.8
-2024-04-23,Finance,NYC,Contractor,2941,263,80,7.03
-2024-11-30,Operations,AUS,Contractor,686,18,123,38.29
-2024-04-08,Sales,NYC,Part-Time,4667,66,289,39.99
-2024-02-09,HR,LON,Intern,541,369,178,12.88
-2024-03-25,Finance,LON,Full-Time,2088,28,214,7.24
-2024-07-12,Support,LON,Intern,3631,49,135,33.75
-2024-05-20,Finance,NYC,Part-Time,4743,277,152,5.27
-2024-09-03,HR,NYC,Part-Time,2175,386,9,6.96
-2024-09-22,Operations,AUS,Part-Time,1074,350,14,10.41
-2024-07-11,Sales,AUS,Full-Time,2610,212,178,8.44
-2025-02-28,Marketing,BLR,Part-Time,800,85,259,31.39
-2024-06-07,Finance,SFO,Part-Time,29,160,95,2.67
-2024-01-02,Engineering,AUS,Full-Time,1879,43,296,44.24
-2024-07-24,Finance,SFO,Contractor,3818,2,222,29.89
-2024-04-18,Sales,TOR,Part-Time,3074,124,176,29.77
-2024-01-19,Engineering,AUS,Contractor,4140,292,162,43.74
-2025-03-09,Marketing,SFO,Contractor,3303,34,254,0.43
-2024-07-16,Marketing,NYC,Full-Time,3508,273,77,9.64
-2024-10-07,Marketing,AUS,Full-Time,3121,19,3,23.37
-2025-05-27,Support,TOR,Part-Time,484,122,170,27.83
-2025-05-15,Finance,AUS,Intern,4984,76,92,26.36
-2025-05-22,Support,NYC,Intern,3651,71,256,35.22
-2024-05-27,Engineering,TOR,Contractor,20,118,89,40.33
-2024-02-21,HR,SFO,Full-Time,285,337,120,11.37
-2025-06-02,Engineering,TOR,Intern,1535,229,228,35.28
-2024-08-08,Finance,SFO,Full-Time,1537,380,13,1.17
-2024-08-23,Operations,SFO,Intern,3748,104,117,26.29
-2024-08-11,Support,NYC,Full-Time,1349,120,186,10.39
-2024-10-02,Support,AUS,Part-Time,2587,40,185,19.75
-2024-07-06,Operations,TOR,Part-Time,853,341,249,8.67
-2024-10-05,Support,AUS,Intern,2465,257,108,10.06
-2024-03-11,Support,SFO,Part-Time,4931,270,157,6.98
-2025-02-15,Finance,LON,Part-Time,3882,228,164,13.42
-2024-08-20,Finance,LON,Full-Time,220,228,267,3.4
-2024-06-12,Engineering,AUS,Intern,510,133,188,19.91
-2024-11-10,Finance,NYC,Full-Time,4036,251,85,3.81
-2025-06-17,HR,SFO,Contractor,1577,77,238,26.78
-2024-09-25,Marketing,TOR,Full-Time,232,154,120,9.84
-2024-11-07,Marketing,SFO,Intern,1304,227,122,2.78
-2024-08-09,Sales,BLR,Part-Time,1948,223,198,44.73
-2025-02-01,Sales,SFO,Full-Time,4153,62,81,37.82
-2024-07-03,Engineering,SFO,Full-Time,83,236,43,8.82
-2025-05-18,HR,TOR,Full-Time,3853,248,175,32.01
-2025-06-07,Support,TOR,Contractor,3098,131,55,1.44
-2025-03-09,Sales,BLR,Part-Time,3197,12,202,12.54
-2025-02-03,Support,AUS,Contractor,973,343,101,44.03
-2024-07-30,Engineering,SFO,Full-Time,3474,389,157,41.74
-2024-12-21,Marketing,BLR,Part-Time,1092,194,100,17.93
-2024-10-04,Sales,AUS,Full-Time,4512,301,205,34.92
-2025-05-23,Support,SFO,Contractor,4827,41,230,2.24
-2024-07-01,HR,TOR,Part-Time,3684,385,124,34.31
-2024-01-22,HR,TOR,Intern,2811,8,36,11.21
-2025-01-23,Engineering,NYC,Contractor,458,67,162,31.89
-2024-08-15,Operations,LON,Contractor,1322,66,149,14.49
-2025-01-31,Support,LON,Full-Time,3951,12,36,20.01
-2024-03-31,Support,BLR,Contractor,2026,313,292,2.22
+shpmt_dt,carr_nm,svc_lvl,orig_rgn,wt_lbs,frt_chg_usd,transit_days
+2025-01-31,ArcBest,FTL,Mountain,35693.15,11498.02,8
+2024-06-01,Estes Express,FTL,Northeast,24064.11,8451.25,7
+2024-07-11,Old Dominion,LTL,Midwest,30352.35,947.04,11
+2025-05-06,ArcBest,Intermodal,West Coast,14771.25,6055.01,10
+2024-02-26,Estes Express,LTL,Midwest,4385.0,522.35,12
+2025-03-18,Old Dominion,Intermodal,Midwest,43269.92,4712.98,9
+2025-03-16,FedEx Freight,Intermodal,Southwest,17376.71,9995.26,13
+2024-06-06,Old Dominion,FTL,Northeast,4007.21,1082.07,1
+2024-09-28,FedEx Freight,Drayage,Northeast,12656.12,1982.43,10
+2025-03-26,Saia,FTL,West Coast,12502.63,12157.14,12
+2024-03-25,ArcBest,Drayage,West Coast,6952.21,8033.8,14
+2025-05-03,Estes Express,Expedited,Midwest,7625.42,965.22,12
+2025-03-25,Old Dominion,Intermodal,Midwest,35616.26,4662.94,11
+2024-06-02,FedEx Freight,FTL,Northeast,35177.97,6426.57,7
+2025-03-24,Saia,LTL,Southwest,28910.63,9809.37,14
+2025-04-27,ArcBest,Intermodal,Northeast,10460.99,6897.22,10
+2024-08-20,Estes Express,Intermodal,Northeast,30390.75,10270.76,12
+2024-08-03,Saia,Drayage,Southwest,30731.14,6494.1,3
+2024-02-24,XPO Logistics,LTL,West Coast,16983.25,5441.28,12
+2024-11-05,FedEx Freight,Drayage,Mountain,20324.6,11889.2,2
+2024-05-23,FedEx Freight,Intermodal,Mountain,40357.67,4898.36,12
+2024-04-13,FedEx Freight,LTL,Mountain,10300.6,6304.81,11
+2024-08-22,ArcBest,Intermodal,Midwest,5213.1,3315.44,6
+2025-03-27,Saia,FTL,Southeast,14184.19,5029.5,12
+2024-12-10,ArcBest,FTL,Southeast,5365.08,2080.22,4
+2025-04-23,ArcBest,Intermodal,Northeast,15928.99,5819.06,10
+2024-01-13,XPO Logistics,Drayage,Midwest,22028.42,361.14,7
+2024-09-14,XPO Logistics,Intermodal,West Coast,40462.95,4664.9,6
+2024-09-19,Saia,Expedited,Mountain,29454.47,3638.62,10
+2024-10-23,FedEx Freight,Drayage,West Coast,6548.7,6958.86,2
+2025-04-18,Estes Express,Drayage,Southwest,9680.97,5016.52,13
+2024-04-22,Old Dominion,Intermodal,Northeast,11795.26,4962.38,2
+2024-06-05,ArcBest,FTL,Northeast,16444.56,11291.09,4
+2025-03-05,FedEx Freight,LTL,Mountain,44396.25,2230.29,13
+2024-02-21,XPO Logistics,LTL,Southeast,33772.09,9569.5,11
+2024-02-06,Old Dominion,Expedited,Northeast,20839.26,6037.2,8
+2025-01-24,XPO Logistics,LTL,Southeast,1989.71,7843.42,4
+2025-05-18,ArcBest,LTL,Mountain,4476.91,6470.35,7
+2024-12-24,Old Dominion,FTL,Midwest,15674.61,805.82,7
+2024-07-27,Old Dominion,Intermodal,Midwest,44878.7,8541.8,12
+2025-03-27,Old Dominion,Intermodal,Mountain,37481.84,7803.82,3
+2024-08-14,ArcBest,LTL,Southeast,38092.4,9809.48,13
+2024-06-07,ArcBest,FTL,Southwest,3096.98,4581.97,8
+2024-05-23,FedEx Freight,Intermodal,Southwest,42923.39,4429.95,5
+2024-11-28,XPO Logistics,FTL,Midwest,24790.63,10900.02,10
+2025-06-16,XPO Logistics,FTL,Southwest,5051.26,359.48,5
+2024-06-09,Saia,FTL,Midwest,22327.52,4270.84,2
+2024-10-23,Saia,Drayage,West Coast,38158.92,9073.73,11
+2024-08-05,FedEx Freight,Intermodal,West Coast,44329.42,4122.21,10
+2024-06-12,Old Dominion,Intermodal,Midwest,40859.82,11462.82,2
+2024-12-20,Estes Express,Expedited,West Coast,12484.21,10437.62,9
+2024-07-22,ArcBest,LTL,Northeast,24229.99,4871.19,7
+2024-01-15,Estes Express,LTL,West Coast,36911.1,8594.13,12
+2025-02-26,ArcBest,LTL,Southwest,1880.55,8662.01,11
+2024-07-19,ArcBest,Intermodal,Midwest,31873.46,8281.44,6
+2025-01-09,Old Dominion,LTL,Southwest,14107.3,9781.28,5
+2025-05-25,Old Dominion,Expedited,West Coast,16240.83,7947.96,9
+2024-10-24,ArcBest,LTL,West Coast,4078.37,1503.39,2
+2024-08-16,Old Dominion,FTL,Southeast,40247.03,10089.56,3
+2024-08-10,FedEx Freight,Expedited,Southeast,2596.68,6476.68,7
+2025-04-11,ArcBest,FTL,West Coast,15751.64,5456.84,11
+2024-02-19,FedEx Freight,Intermodal,Southwest,13067.6,627.09,7
+2025-04-10,FedEx Freight,Drayage,Midwest,18040.57,2307.15,8
+2024-10-24,FedEx Freight,LTL,Northeast,620.65,1346.45,10
+2024-04-12,Estes Express,Intermodal,Southeast,2521.6,7831.69,5
+2024-10-12,Estes Express,Expedited,Midwest,28438.02,7274.55,2
+2025-02-03,Saia,LTL,Southeast,13229.48,2056.7,7
+2025-06-23,FedEx Freight,Intermodal,Northeast,29152.38,4912.02,10
+2025-02-09,Estes Express,Drayage,Southeast,2472.16,4150.5,2
+2024-08-14,Old Dominion,Drayage,Northeast,16948.12,3554.83,7
+2024-04-24,Estes Express,Drayage,West Coast,19126.32,6423.77,13
+2025-03-11,FedEx Freight,FTL,Southeast,34704.2,8695.46,1
+2024-03-10,XPO Logistics,Drayage,Mountain,7128.06,306.2,12
+2024-11-18,ArcBest,Expedited,Southwest,12279.97,101.19,9
+2025-01-16,Old Dominion,Drayage,Southeast,13802.81,9732.24,5
+2025-03-07,FedEx Freight,LTL,Northeast,16234.25,3813.72,3
+2024-04-12,Old Dominion,Expedited,Southwest,21143.3,5503.79,6
+2024-12-15,Estes Express,Expedited,Northeast,31219.05,11248.2,1
+2024-01-27,Estes Express,Expedited,Southwest,25149.25,6988.23,5
+2024-04-09,XPO Logistics,Expedited,Southwest,31225.46,4383.94,12
+2024-12-05,FedEx Freight,FTL,Southwest,17764.55,9201.15,2
+2024-08-09,ArcBest,LTL,Northeast,15171.54,5459.64,8
+2024-06-03,Saia,FTL,Mountain,42265.59,2232.48,2
+2024-09-12,XPO Logistics,FTL,Southwest,36359.36,8403.79,3
+2025-04-20,Estes Express,Expedited,West Coast,18953.14,2804.24,12
+2024-11-22,Saia,Expedited,West Coast,13136.02,7303.61,5
+2025-06-12,Saia,Intermodal,Northeast,8342.79,11260.53,10
+2024-05-22,Estes Express,Intermodal,Southwest,41071.49,10220.92,13
+2024-11-16,ArcBest,LTL,Southeast,20895.57,353.53,12
+2025-05-19,XPO Logistics,FTL,Northeast,31767.24,9739.01,5
+2024-10-30,Estes Express,Intermodal,Mountain,23226.41,5085.49,12
+2025-05-31,Saia,Intermodal,Northeast,34102.87,10703.5,1
+2025-04-22,ArcBest,LTL,Northeast,14571.03,4797.29,7
+2024-10-29,ArcBest,Intermodal,Midwest,35250.07,6945.55,13
+2024-09-11,Estes Express,Expedited,Midwest,30798.86,10749.63,4
+2025-06-07,Estes Express,Drayage,Mountain,27107.32,2608.69,3
+2024-10-30,FedEx Freight,FTL,Northeast,34184.44,7812.34,7
+2024-09-07,Old Dominion,FTL,Northeast,30379.38,9239.44,10
+2025-04-30,Saia,FTL,Mountain,36119.42,4824.31,4
+2025-01-25,XPO Logistics,Expedited,Northeast,20237.59,8669.38,3
+2024-10-25,FedEx Freight,LTL,Southeast,6559.06,1432.53,4
+2025-02-10,ArcBest,LTL,Mountain,10939.23,4426.6,2
+2025-05-05,Old Dominion,FTL,West Coast,19723.28,10876.4,7
+2024-01-19,FedEx Freight,Drayage,Northeast,43001.08,2176.5,6
+2024-05-20,Old Dominion,FTL,Mountain,44169.57,3876.98,12
+2024-11-26,Estes Express,Drayage,Midwest,3089.17,8009.61,14
+2024-12-30,FedEx Freight,Drayage,Southwest,32708.68,3190.03,1
+2024-02-23,XPO Logistics,Intermodal,West Coast,7747.9,569.09,2
+2025-04-23,Saia,FTL,Mountain,33730.41,5095.12,5
+2024-11-25,XPO Logistics,Expedited,Northeast,12591.53,11941.14,8
+2024-11-05,FedEx Freight,LTL,Midwest,7992.9,5243.8,6
+2024-06-06,FedEx Freight,FTL,Southeast,18573.48,1229.33,4
+2024-04-10,Estes Express,Intermodal,Southwest,37687.52,339.44,5
+2025-04-15,Estes Express,Intermodal,Mountain,24795.04,11302.11,6
+2025-02-26,XPO Logistics,Expedited,Southwest,20366.77,4715.41,3
+2024-08-11,Old Dominion,FTL,Northeast,13792.55,5786.99,6
+2024-08-13,XPO Logistics,FTL,West Coast,12394.84,7189.75,5
+2024-03-30,XPO Logistics,LTL,Southwest,9556.6,11048.19,7
+2025-02-02,ArcBest,FTL,Southwest,28360.87,3751.8,5
+2024-03-29,XPO Logistics,LTL,West Coast,30568.77,11719.48,6
+2024-07-21,Saia,Intermodal,Midwest,975.44,3984.12,7
+2025-03-18,Saia,LTL,Southwest,21237.54,11119.0,5
+2025-03-14,Saia,FTL,West Coast,27521.32,6223.47,10
+2024-04-15,Old Dominion,Expedited,Southeast,15874.29,10628.15,9
+2024-02-06,ArcBest,Drayage,Midwest,29000.89,402.23,7
+2025-04-18,Saia,LTL,Southeast,31378.5,10265.55,8
+2024-08-12,Old Dominion,Expedited,Mountain,8164.88,9797.42,9
+2025-01-18,FedEx Freight,LTL,Southeast,15566.09,11083.73,5
+2025-04-29,ArcBest,LTL,Southeast,27697.11,1328.89,6
+2025-01-15,Old Dominion,LTL,Midwest,26919.45,7415.1,2
+2024-10-21,Saia,Expedited,Southwest,8440.91,3236.65,6
+2024-06-08,FedEx Freight,Intermodal,Northeast,17162.21,4499.82,4
+2025-04-26,XPO Logistics,Intermodal,Southeast,38627.43,4867.0,9
+2025-01-29,ArcBest,FTL,Southeast,22357.03,6583.61,6
+2024-11-02,ArcBest,Expedited,West Coast,41664.06,8358.0,7
+2024-05-23,FedEx Freight,Intermodal,West Coast,32155.08,4391.61,11
+2024-10-24,Saia,FTL,Southeast,11262.13,161.35,13
+2024-03-14,XPO Logistics,LTL,Southwest,31374.12,11529.05,6
+2025-05-03,FedEx Freight,FTL,West Coast,479.04,9167.62,11
+2024-03-27,Saia,FTL,Mountain,39826.57,12035.39,10
+2024-05-29,Estes Express,Expedited,Southeast,9197.31,10681.86,2
+2024-06-09,Old Dominion,Intermodal,Southwest,6745.91,11961.37,2
+2025-02-28,FedEx Freight,FTL,Northeast,32390.41,8563.4,7
+2024-01-24,FedEx Freight,FTL,Northeast,33547.17,6415.08,5
+2024-08-15,Saia,Drayage,Southeast,18825.48,7613.31,8
+2024-11-14,Old Dominion,FTL,Midwest,5517.96,6637.41,9
+2024-08-08,FedEx Freight,Drayage,Southeast,36752.58,1541.27,10
+2025-05-09,Saia,Intermodal,Southwest,34261.27,784.18,4
+2025-04-03,Old Dominion,FTL,Southeast,16483.8,2703.83,10
+2024-12-16,XPO Logistics,Expedited,Mountain,38645.26,1819.59,10
+2024-12-28,Old Dominion,Drayage,Midwest,24121.37,6590.94,8
+2024-11-10,Estes Express,Drayage,Midwest,3538.04,1436.07,3
+2024-09-25,Estes Express,Expedited,Southeast,28952.53,9952.75,10
+2025-04-08,ArcBest,FTL,Northeast,32211.34,2585.61,1
+2024-09-24,Estes Express,Drayage,Northeast,40235.4,5008.58,2
+2025-06-11,Estes Express,Drayage,Northeast,9323.84,5125.55,7
+2024-04-29,Saia,Intermodal,Northeast,33199.53,5909.57,4
+2025-05-24,FedEx Freight,LTL,Southeast,43223.25,4277.2,6
+2024-02-13,FedEx Freight,Drayage,Southwest,8497.22,3253.2,14
+2024-01-16,Saia,Expedited,Midwest,39351.23,4105.73,3
+2024-11-28,ArcBest,Intermodal,West Coast,33171.29,11631.26,9
+2025-03-08,Estes Express,Expedited,Midwest,36026.41,6758.33,7
+2025-05-16,ArcBest,Intermodal,Southwest,14059.99,503.97,11
+2024-11-08,Estes Express,FTL,Northeast,20400.8,1260.24,14
+2024-01-07,Old Dominion,Expedited,West Coast,3408.52,5023.71,7
+2024-12-25,ArcBest,FTL,Mountain,18986.73,3821.45,10
+2024-06-11,ArcBest,FTL,Northeast,5037.9,7990.66,5
+2024-05-23,FedEx Freight,LTL,Northeast,5292.34,11029.01,5
+2024-07-26,Estes Express,LTL,Mountain,10037.78,3329.38,6
+2024-12-08,Saia,Intermodal,Northeast,35425.59,2208.09,1
+2025-01-06,ArcBest,Drayage,Southeast,4482.91,6387.65,11
+2024-03-11,Old Dominion,Drayage,Northeast,28442.54,2058.64,11
+2025-01-25,Saia,Expedited,Southwest,2298.97,9608.88,3
+2024-12-01,Estes Express,Intermodal,Northeast,28345.41,2245.8,1
+2024-02-29,Saia,FTL,Mountain,34575.33,12285.41,5
+2024-06-07,Estes Express,Expedited,Northeast,36451.59,9917.92,3
+2024-10-03,ArcBest,Drayage,Northeast,10429.84,4781.34,10
+2025-02-07,Saia,FTL,West Coast,35673.08,1728.78,12
+2025-05-19,Saia,Expedited,West Coast,14197.22,4354.4,13
+2024-04-19,Estes Express,FTL,Midwest,34251.37,9684.44,8
+2025-05-31,FedEx Freight,Expedited,Midwest,24213.67,2438.32,13
+2025-02-07,Saia,LTL,Northeast,7377.38,9581.51,6
+2025-06-16,Estes Express,Expedited,Southwest,36036.15,2732.38,7
+2024-12-26,FedEx Freight,Expedited,Southwest,37265.69,5900.14,5
+2024-11-28,ArcBest,LTL,Northeast,37191.71,3166.11,5
+2024-07-30,Estes Express,Intermodal,Northeast,30595.93,5309.94,4
+2025-03-25,Estes Express,Intermodal,Midwest,12797.61,2058.87,6
+2024-10-16,Old Dominion,LTL,Midwest,5594.48,2946.78,9
+2024-02-22,Estes Express,Intermodal,Mountain,17289.99,4923.8,5
+2024-04-17,Estes Express,Intermodal,West Coast,3840.5,9390.92,13
+2024-02-26,Estes Express,Drayage,Northeast,31031.41,2808.87,12
+2024-06-02,Old Dominion,Expedited,Northeast,8112.05,4261.59,5
+2024-11-24,FedEx Freight,Drayage,Southwest,40646.75,5581.97,8
+2024-02-03,Old Dominion,Drayage,Southwest,24200.93,12017.07,11
+2025-02-26,Saia,Drayage,West Coast,4007.88,12358.99,6
+2024-04-07,Estes Express,Drayage,Midwest,19061.51,12185.08,4
+2024-10-28,Old Dominion,FTL,Southwest,8337.69,7689.5,8
+2025-01-18,Estes Express,LTL,Southwest,9357.48,4306.39,11
+2024-10-28,FedEx Freight,FTL,Southwest,17884.02,2184.42,13
+2025-02-16,Saia,Expedited,Southwest,13841.34,2119.04,14
+2024-10-31,Saia,FTL,Northeast,27685.92,7998.88,12
+2024-11-22,Old Dominion,Drayage,West Coast,12574.57,1374.75,2
+2024-12-01,FedEx Freight,Drayage,West Coast,25357.06,5987.48,7
+2025-02-14,XPO Logistics,FTL,Southeast,13111.3,12474.58,3
+2024-07-09,Old Dominion,Intermodal,Midwest,18299.65,968.95,7
+2024-11-02,ArcBest,FTL,Southwest,40257.68,6083.38,2
+2024-02-18,Old Dominion,Drayage,Southwest,21427.4,6245.51,11
+2024-03-09,Estes Express,Intermodal,Midwest,25054.24,7812.06,3
+2025-03-02,XPO Logistics,Intermodal,Northeast,7295.73,8613.43,9
+2024-06-17,FedEx Freight,Drayage,Midwest,5198.51,8153.37,10
+2024-09-06,Saia,Intermodal,Northeast,38121.8,10281.53,5
+2024-02-22,Old Dominion,Drayage,West Coast,40237.59,8366.41,10
+2025-01-15,ArcBest,LTL,Southeast,36822.78,5989.0,10
+2025-06-19,XPO Logistics,LTL,West Coast,22227.98,9259.12,6
+2024-07-08,Estes Express,Drayage,Midwest,29134.38,9052.9,11
+2025-05-24,Old Dominion,LTL,Mountain,1699.16,5138.06,4
+2024-07-03,ArcBest,Drayage,Southeast,36861.41,1535.83,12
+2024-05-19,XPO Logistics,FTL,West Coast,39056.79,5414.19,5
+2025-02-27,Estes Express,LTL,Mountain,4524.74,7262.9,1
+2024-11-05,Saia,Expedited,Mountain,25932.46,6063.05,8
+2025-01-18,FedEx Freight,Drayage,West Coast,4025.11,4830.64,10
+2024-05-07,Saia,Expedited,Southwest,33585.4,831.53,12
+2024-04-30,XPO Logistics,LTL,Northeast,13178.1,2717.23,5
+2025-03-01,ArcBest,LTL,Mountain,5917.71,7907.64,4
+2025-01-31,XPO Logistics,Intermodal,Midwest,26640.21,4139.42,2
+2024-01-16,Old Dominion,Drayage,Southeast,42813.69,2217.32,7
+2024-02-21,XPO Logistics,LTL,Southwest,31033.83,6433.35,9
+2025-04-05,ArcBest,Intermodal,Southwest,2767.89,231.9,3
+2024-02-09,FedEx Freight,FTL,Southeast,24616.86,4733.82,3
+2025-01-15,FedEx Freight,LTL,Midwest,41475.69,9568.41,13
+2024-08-22,Estes Express,FTL,Southeast,23643.66,5209.03,14
+2024-03-28,Estes Express,Intermodal,Mountain,15451.98,1455.28,12
+2025-01-18,Old Dominion,LTL,Northeast,34355.74,1665.61,2
+2025-01-27,Saia,FTL,West Coast,36172.6,12118.17,3
+2024-09-15,ArcBest,Intermodal,Mountain,23622.74,6962.84,2
+2025-01-11,FedEx Freight,LTL,Northeast,21818.14,2671.46,12
+2024-11-22,Estes Express,Expedited,Northeast,6651.79,5509.48,5
+2024-06-07,XPO Logistics,Intermodal,Southeast,39544.33,259.6,13
+2025-03-24,ArcBest,LTL,Mountain,15881.58,2233.76,12
+2025-02-02,XPO Logistics,Drayage,Southeast,13944.05,9023.15,10

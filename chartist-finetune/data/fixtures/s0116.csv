@@ -1,241 +1,241 @@
-snapshotDate,propertyType,cityZone,tenureType,monthlyRentAmount,purchasePriceAmount,grossYieldPercent,vacancyDaysCount
-2025-01-22,Detached,University District,Leasehold,856.66,1154806.21,11.4,161
-2025-06-22,Studio,Industrial Fringe,Shared Ownership,6494.52,1321954.53,4.7,107
-2024-12-19,Detached,University District,Leasehold,8983.59,812748.95,9.18,43
-2025-04-06,Studio,Suburban,Freehold,4281.28,1589682.65,4.34,136
-2025-05-18,Terraced,University District,Freehold,9187.19,104693.54,6.72,159
-2024-04-27,Detached,Waterfront,Freehold,6936.39,2165472.94,1.92,35
-2025-06-15,OneBedroom,Waterfront,Shared Ownership,877.64,1028960.73,8.12,162
-2025-06-13,Townhouse,University District,Build to Rent,1272.29,296225.82,9.7,39
-2025-01-08,Detached,Industrial Fringe,Build to Rent,3936.01,1082836.74,7.24,4
-2024-08-08,Studio,University District,Leasehold,1692.39,1043729.07,2.59,5
-2025-03-27,OneBedroom,CityCentre,Leasehold,3982.37,1786427.06,13.94,67
-2025-05-22,Townhouse,University District,Build to Rent,1865.99,990582.09,3.8,85
-2024-10-23,Terraced,University District,Freehold,1243.17,539773.71,8.33,167
-2024-04-30,OneBedroom,Uptown,Freehold,1953.09,2405869.88,3.8,177
-2024-01-26,Terraced,Industrial Fringe,Shared Ownership,9149.2,2451198.59,10.23,70
-2024-06-13,OneBedroom,University District,Build to Rent,4953.05,1240308.0,5.44,101
-2024-05-26,TwoBedroom,Uptown,Freehold,8345.03,1560349.93,6.23,121
-2025-05-29,ThreeBedroom,Industrial Fringe,Leasehold,3770.78,926500.89,8.68,95
-2024-10-31,TwoBedroom,CityCentre,Leasehold,8856.19,1156893.33,6.64,132
-2024-03-19,TwoBedroom,Suburban,Freehold,6531.2,598378.69,2.65,56
-2024-10-10,Townhouse,Uptown,Freehold,7024.12,1145532.77,10.46,84
-2024-10-06,TwoBedroom,Industrial Fringe,Leasehold,6778.53,1904392.61,6.83,97
-2025-01-30,OneBedroom,University District,Build to Rent,2383.69,2052890.14,3.43,175
-2024-07-13,Terraced,Industrial Fringe,Freehold,8229.19,2275166.78,11.98,109
-2025-02-18,OneBedroom,CityCentre,Shared Ownership,3766.54,1834328.14,3.61,158
-2025-04-10,TwoBedroom,CityCentre,Freehold,975.87,1005186.55,12.47,165
-2025-04-14,TwoBedroom,Uptown,Freehold,2607.48,1973335.19,9.1,86
-2024-02-12,Terraced,CityCentre,Leasehold,7184.26,716482.83,11.12,150
-2024-04-24,TwoBedroom,Suburban,Shared Ownership,7208.21,644538.09,10.14,115
-2024-02-26,Townhouse,Uptown,Build to Rent,2187.56,975744.05,13.84,32
-2025-03-06,Detached,Industrial Fringe,Freehold,5114.11,1245922.8,13.97,9
-2024-09-24,OneBedroom,Waterfront,Leasehold,9463.37,2033565.87,13.0,64
-2024-03-23,TwoBedroom,University District,Leasehold,8211.22,1766435.21,2.56,85
-2025-02-14,ThreeBedroom,Uptown,Shared Ownership,516.45,196981.93,13.54,110
-2025-02-11,ThreeBedroom,University District,Leasehold,6836.24,432475.85,13.59,92
-2024-03-15,Townhouse,University District,Leasehold,5252.03,2301555.06,10.37,74
-2024-05-18,Studio,University District,Build to Rent,4055.85,297270.51,4.1,161
-2024-11-22,Townhouse,Industrial Fringe,Leasehold,5356.59,1159225.32,8.59,95
-2024-08-26,Detached,Industrial Fringe,Build to Rent,928.18,2322171.65,12.26,26
-2024-08-08,ThreeBedroom,Industrial Fringe,Leasehold,4109.07,1214448.3,12.16,149
-2025-01-25,Detached,University District,Build to Rent,6211.65,708400.77,4.25,154
-2025-02-01,Detached,CityCentre,Shared Ownership,2467.46,1396076.5,10.71,0
-2025-02-11,TwoBedroom,Uptown,Leasehold,9489.84,1167060.58,5.85,113
-2024-09-04,Terraced,Uptown,Freehold,7528.52,242268.41,8.59,77
-2025-02-11,Terraced,Waterfront,Shared Ownership,7891.6,1298458.04,4.12,153
-2024-05-21,ThreeBedroom,CityCentre,Shared Ownership,1030.21,399806.54,4.13,7
-2024-11-15,Townhouse,University District,Shared Ownership,8632.12,400407.49,9.13,18
-2024-10-01,Detached,Uptown,Build to Rent,2949.19,1638973.24,7.29,87
-2025-01-22,OneBedroom,CityCentre,Shared Ownership,2151.09,1140592.15,10.38,28
-2025-03-06,Detached,University District,Shared Ownership,1374.58,411583.44,7.92,49
-2024-06-28,OneBedroom,Waterfront,Freehold,8244.76,100435.09,5.96,74
-2024-06-23,Detached,Industrial Fringe,Build to Rent,1742.37,705222.13,5.37,125
-2024-04-14,TwoBedroom,Waterfront,Freehold,4978.55,1215399.95,13.31,75
-2025-01-23,Detached,CityCentre,Freehold,8174.24,1332963.56,3.38,120
-2025-02-20,OneBedroom,Suburban,Build to Rent,9233.49,1691066.52,3.97,156
-2024-12-29,Studio,Industrial Fringe,Shared Ownership,8997.72,2449065.1,4.29,69
-2024-08-03,Townhouse,Uptown,Shared Ownership,4045.13,743619.41,13.86,117
-2024-08-10,ThreeBedroom,Uptown,Build to Rent,2382.93,704391.7,8.24,137
-2025-06-12,TwoBedroom,University District,Shared Ownership,1308.42,2311718.81,12.29,6
-2024-11-26,Terraced,Industrial Fringe,Leasehold,6464.58,514239.68,13.76,4
-2024-04-15,OneBedroom,Waterfront,Shared Ownership,6052.75,637448.23,2.47,83
-2024-03-20,Townhouse,CityCentre,Leasehold,7357.36,1207245.56,5.15,127
-2025-02-04,Detached,Uptown,Shared Ownership,8116.78,1001127.2,7.03,45
-2025-03-07,OneBedroom,Uptown,Freehold,4337.62,376647.5,9.72,1
-2025-03-07,Studio,Suburban,Build to Rent,7677.61,2276556.81,5.8,135
-2024-01-22,Townhouse,Industrial Fringe,Shared Ownership,7330.72,1457436.13,8.31,43
-2024-02-21,TwoBedroom,CityCentre,Freehold,3609.59,87832.84,2.67,117
-2024-05-22,Detached,Industrial Fringe,Freehold,775.17,438058.11,11.94,66
-2025-03-24,Townhouse,CityCentre,Build to Rent,7529.17,2222692.03,10.41,75
-2024-11-03,Detached,Waterfront,Shared Ownership,5058.07,796144.88,10.24,174
-2024-05-01,Terraced,Uptown,Leasehold,4116.05,432028.32,8.06,157
-2024-03-24,Studio,Waterfront,Freehold,4792.01,1975488.48,6.2,69
-2024-05-06,TwoBedroom,Uptown,Freehold,514.49,2048182.45,12.14,33
-2024-03-28,ThreeBedroom,University District,Build to Rent,6794.81,2309442.73,10.75,121
-2024-12-24,TwoBedroom,CityCentre,Shared Ownership,2483.76,1602511.96,6.53,151
-2025-02-15,TwoBedroom,Waterfront,Build to Rent,3049.76,1113906.07,9.22,76
-2025-02-21,Townhouse,Waterfront,Shared Ownership,4893.3,1479189.73,8.22,45
-2024-09-25,OneBedroom,Suburban,Shared Ownership,5329.28,1442403.97,11.58,33
-2025-04-27,TwoBedroom,Suburban,Shared Ownership,7593.81,1920018.8,5.81,70
-2024-02-27,Townhouse,Industrial Fringe,Shared Ownership,954.8,308846.04,8.76,17
-2024-04-28,ThreeBedroom,University District,Freehold,7008.76,865577.89,5.3,8
-2024-10-18,OneBedroom,Uptown,Leasehold,7883.84,2369620.08,3.82,170
-2024-09-15,OneBedroom,CityCentre,Leasehold,5066.27,2264847.05,3.67,51
-2025-01-26,Detached,Industrial Fringe,Shared Ownership,1854.5,1378413.83,2.69,15
-2024-09-28,Terraced,Suburban,Freehold,4510.54,2406656.03,11.37,130
-2024-04-19,Terraced,Waterfront,Freehold,3518.92,2171848.98,2.61,166
-2024-03-29,Detached,CityCentre,Build to Rent,5093.47,1132054.42,8.61,94
-2025-03-29,TwoBedroom,Suburban,Shared Ownership,5597.76,2475574.05,12.3,155
-2024-06-02,Studio,CityCentre,Build to Rent,574.38,352976.74,2.03,56
-2024-01-12,OneBedroom,Suburban,Leasehold,9404.97,362854.47,11.2,11
-2024-05-11,TwoBedroom,Suburban,Leasehold,4547.63,476814.42,12.64,95
-2024-09-03,OneBedroom,Uptown,Shared Ownership,5449.19,1468385.39,13.86,130
-2025-01-04,ThreeBedroom,Waterfront,Build to Rent,1884.97,1408182.73,13.72,28
-2024-11-05,Townhouse,Industrial Fringe,Build to Rent,6150.89,2053409.98,13.3,15
-2025-04-10,TwoBedroom,Industrial Fringe,Freehold,7201.63,1762413.84,6.38,62
-2025-05-02,Terraced,Suburban,Build to Rent,7631.77,541429.33,8.32,41
-2025-04-29,OneBedroom,CityCentre,Build to Rent,3535.61,584276.07,13.2,68
-2024-03-07,Terraced,CityCentre,Build to Rent,7003.71,1658928.82,8.3,59
-2024-11-05,ThreeBedroom,Suburban,Shared Ownership,8549.63,816043.61,5.39,164
-2024-09-05,Terraced,Uptown,Leasehold,8695.24,1724327.37,6.87,121
-2024-06-21,OneBedroom,University District,Shared Ownership,2792.44,2475236.81,12.8,154
-2025-02-05,Townhouse,Suburban,Freehold,7421.04,1568497.87,7.29,97
-2024-06-23,OneBedroom,University District,Shared Ownership,656.33,317546.16,5.92,50
-2024-03-01,Detached,Industrial Fringe,Shared Ownership,9124.81,1444807.21,8.03,46
-2024-01-02,Townhouse,CityCentre,Freehold,5873.25,1007441.34,11.96,176
-2024-02-18,OneBedroom,University District,Leasehold,4473.37,2115048.32,11.74,150
-2024-09-08,TwoBedroom,University District,Freehold,9247.11,2351234.45,8.73,177
-2024-11-05,OneBedroom,Uptown,Leasehold,7685.33,2027118.9,3.46,95
-2024-05-25,Detached,Suburban,Shared Ownership,1324.34,568772.08,8.49,164
-2024-09-13,Terraced,CityCentre,Shared Ownership,6765.95,696614.3,3.83,67
-2025-02-06,OneBedroom,University District,Freehold,5884.77,893618.47,4.35,0
-2024-09-12,OneBedroom,Suburban,Leasehold,5367.05,1929478.73,3.98,76
-2025-01-10,TwoBedroom,University District,Build to Rent,3764.35,2169086.23,8.05,85
-2025-02-22,Townhouse,Industrial Fringe,Freehold,3232.8,411886.44,3.75,82
-2024-04-03,Terraced,Uptown,Freehold,5603.44,1994930.68,1.95,166
-2024-12-26,Townhouse,Uptown,Shared Ownership,5559.66,1411020.72,3.43,149
-2024-05-01,Studio,CityCentre,Build to Rent,4473.4,1006582.77,5.15,2
-2024-10-04,TwoBedroom,CityCentre,Shared Ownership,9157.85,1526566.41,6.54,76
-2024-10-29,OneBedroom,Suburban,Shared Ownership,4845.2,824054.29,1.73,172
-2024-11-23,TwoBedroom,Uptown,Leasehold,8732.11,746103.93,2.65,21
-2024-09-05,Townhouse,Industrial Fringe,Leasehold,3893.51,1155860.96,11.62,69
-2024-03-10,ThreeBedroom,CityCentre,Freehold,8734.76,1145129.05,12.89,112
-2024-11-20,Townhouse,Uptown,Shared Ownership,4998.65,2253698.78,12.52,176
-2024-02-26,Detached,Uptown,Shared Ownership,7605.35,177449.86,7.77,16
-2024-10-18,OneBedroom,Uptown,Freehold,8027.73,1010041.35,3.44,174
-2025-05-16,OneBedroom,CityCentre,Build to Rent,3366.42,2487699.4,5.11,29
-2024-08-26,Studio,Waterfront,Shared Ownership,7436.88,2004682.36,8.95,44
-2024-09-17,ThreeBedroom,Suburban,Leasehold,2946.0,97790.16,8.18,75
-2024-04-15,Townhouse,Uptown,Shared Ownership,1788.21,1535346.78,13.45,11
-2024-11-22,OneBedroom,University District,Build to Rent,5873.47,2404511.52,7.95,80
-2024-07-20,TwoBedroom,University District,Build to Rent,3951.14,1085021.39,6.84,17
-2024-04-30,Studio,Uptown,Leasehold,4028.23,2459664.59,5.42,142
-2024-09-26,OneBedroom,Suburban,Leasehold,4616.57,991733.31,7.25,51
-2024-07-30,Studio,Waterfront,Shared Ownership,1074.41,1217388.69,12.66,82
-2024-09-11,Townhouse,Waterfront,Shared Ownership,5210.78,1990122.02,13.89,149
-2024-06-02,Studio,Uptown,Build to Rent,6802.3,1804345.24,9.5,169
-2025-01-21,Townhouse,Suburban,Leasehold,7575.72,1746117.18,6.06,23
-2024-05-08,TwoBedroom,Waterfront,Freehold,2724.92,1854314.79,13.63,6
-2024-02-21,Studio,Uptown,Leasehold,7984.14,1850476.25,11.16,135
-2024-01-21,Terraced,Suburban,Build to Rent,8626.93,957221.05,12.74,5
-2024-11-25,TwoBedroom,Uptown,Leasehold,3594.83,178957.17,2.16,140
-2025-03-29,Studio,University District,Freehold,7754.91,695085.4,12.93,96
-2024-09-28,Townhouse,Suburban,Leasehold,9130.09,2267402.91,5.41,137
-2025-04-22,Terraced,Waterfront,Shared Ownership,8562.65,444725.84,13.8,12
-2024-11-15,Studio,CityCentre,Shared Ownership,3382.54,2266489.37,13.61,104
-2024-08-01,Studio,Uptown,Shared Ownership,4889.78,788937.86,9.59,130
-2024-01-06,ThreeBedroom,Waterfront,Shared Ownership,5733.23,2271560.17,13.26,126
-2025-04-19,OneBedroom,CityCentre,Build to Rent,3881.48,2394385.88,7.33,68
-2025-04-27,Townhouse,Uptown,Shared Ownership,1217.87,1735489.68,12.2,92
-2024-03-04,TwoBedroom,Industrial Fringe,Freehold,3117.83,2078898.12,4.23,35
-2025-02-02,Terraced,University District,Leasehold,4004.91,1807226.46,4.61,68
-2024-08-21,Terraced,Waterfront,Shared Ownership,4881.88,1842271.04,3.33,2
-2024-08-14,TwoBedroom,Industrial Fringe,Shared Ownership,1926.57,2043421.9,3.51,174
-2024-07-22,Detached,CityCentre,Build to Rent,5614.41,863184.08,8.54,178
-2024-01-20,OneBedroom,CityCentre,Leasehold,1750.51,1076043.33,2.86,20
-2024-08-16,Terraced,Industrial Fringe,Build to Rent,6846.34,1082075.27,8.03,7
-2024-08-29,OneBedroom,CityCentre,Build to Rent,2308.46,1714877.14,9.44,18
-2025-05-06,Studio,Waterfront,Freehold,1124.93,390219.21,9.2,150
-2024-10-01,OneBedroom,Uptown,Freehold,7317.7,235158.58,12.25,6
-2024-08-09,OneBedroom,CityCentre,Build to Rent,6529.51,558421.25,6.98,139
-2025-04-24,Studio,University District,Build to Rent,5534.98,499093.74,12.9,120
-2024-02-21,Detached,CityCentre,Shared Ownership,4462.11,786409.59,1.66,176
-2024-02-26,OneBedroom,Industrial Fringe,Build to Rent,1135.32,2096641.98,9.66,96
-2024-12-02,Studio,University District,Freehold,2388.56,2157258.27,9.11,77
-2024-01-01,Detached,Industrial Fringe,Build to Rent,2588.25,820867.64,6.91,163
-2024-11-17,Studio,CityCentre,Shared Ownership,4904.49,2348332.45,3.64,11
-2024-07-17,TwoBedroom,University District,Shared Ownership,1008.16,1106960.74,1.8,42
-2024-07-22,TwoBedroom,University District,Leasehold,9271.86,565013.94,3.86,8
-2024-04-08,Studio,CityCentre,Shared Ownership,8657.75,2400623.74,9.69,159
-2025-03-18,Studio,Uptown,Freehold,5174.44,682928.5,8.76,41
-2024-01-06,Studio,CityCentre,Build to Rent,1365.59,2329009.92,5.34,92
-2024-09-13,Studio,CityCentre,Build to Rent,556.95,1750597.88,7.57,66
-2024-03-01,Terraced,Uptown,Leasehold,3859.74,1495875.36,1.79,10
-2024-08-08,TwoBedroom,University District,Build to Rent,5271.78,2471469.56,8.2,125
-2024-07-20,Studio,Waterfront,Build to Rent,9268.74,789087.76,9.31,53
-2025-04-24,Studio,Uptown,Build to Rent,8900.62,2088981.31,10.15,126
-2025-02-16,Detached,Industrial Fringe,Shared Ownership,4286.08,504501.44,9.21,19
-2024-08-01,TwoBedroom,Uptown,Shared Ownership,5145.94,104488.49,9.0,25
-2024-02-22,OneBedroom,University District,Shared Ownership,4861.3,1923704.41,4.06,82
-2025-02-24,TwoBedroom,Suburban,Leasehold,1940.82,1195808.46,3.28,3
-2024-03-05,Detached,University District,Shared Ownership,7494.35,829809.1,8.62,11
-2024-11-29,TwoBedroom,Suburban,Leasehold,8998.23,2101807.15,10.47,82
-2025-06-06,Studio,University District,Leasehold,4709.17,453934.34,5.01,58
-2024-10-10,Terraced,Waterfront,Shared Ownership,702.03,1084889.79,7.21,171
-2025-03-01,Detached,Uptown,Leasehold,3908.74,1596608.47,11.22,1
-2025-06-09,OneBedroom,Uptown,Shared Ownership,3448.42,1701673.17,13.31,140
-2025-01-02,Terraced,Uptown,Build to Rent,5141.36,2406549.27,5.57,129
-2025-05-22,TwoBedroom,Suburban,Build to Rent,6400.97,532632.34,4.09,161
-2025-02-08,Terraced,Waterfront,Build to Rent,3064.49,1483321.42,12.38,96
-2024-01-09,Terraced,University District,Leasehold,7010.36,2027915.62,9.28,77
-2024-02-14,OneBedroom,Waterfront,Freehold,7299.26,1941961.99,5.56,132
-2024-12-01,ThreeBedroom,CityCentre,Shared Ownership,2419.33,649500.18,10.91,45
-2024-06-24,Studio,Industrial Fringe,Build to Rent,6041.38,471431.69,12.35,105
-2024-03-16,TwoBedroom,Industrial Fringe,Freehold,4817.5,1097837.79,7.52,120
-2025-05-28,TwoBedroom,CityCentre,Leasehold,1087.22,2497132.02,13.84,178
-2025-05-27,Detached,Suburban,Leasehold,5273.0,2322459.29,7.28,177
-2024-11-07,ThreeBedroom,Industrial Fringe,Leasehold,3358.66,1915094.14,13.72,20
-2024-07-05,TwoBedroom,Waterfront,Leasehold,1943.28,1892021.84,9.0,122
-2024-03-14,ThreeBedroom,University District,Freehold,4781.22,2080292.87,9.4,107
-2025-03-11,TwoBedroom,Suburban,Leasehold,6525.5,1947635.11,1.63,38
-2024-06-01,TwoBedroom,Industrial Fringe,Leasehold,4687.17,238831.64,11.22,154
-2024-07-28,Townhouse,University District,Freehold,2931.17,799001.37,5.3,34
-2024-02-06,Terraced,Suburban,Build to Rent,3534.2,853967.79,9.29,33
-2024-06-29,Terraced,Uptown,Freehold,7481.27,1360331.08,5.99,119
-2024-11-27,TwoBedroom,Uptown,Build to Rent,7053.03,1787357.12,2.65,91
-2025-03-16,ThreeBedroom,CityCentre,Build to Rent,8061.08,612108.0,7.71,140
-2025-05-20,ThreeBedroom,CityCentre,Build to Rent,5719.07,1352006.03,12.09,97
-2024-06-12,Detached,Industrial Fringe,Leasehold,4209.09,2083940.46,3.78,130
-2024-11-18,Detached,CityCentre,Build to Rent,6675.26,1648560.04,9.22,99
-2024-10-17,OneBedroom,CityCentre,Freehold,4440.32,1158924.4,1.77,78
-2025-02-19,OneBedroom,Industrial Fringe,Shared Ownership,2040.88,1618272.77,9.89,146
-2025-05-09,Studio,Waterfront,Build to Rent,3443.02,1279828.48,3.13,123
-2024-11-21,ThreeBedroom,Waterfront,Build to Rent,6911.82,1666384.63,2.5,41
-2025-06-18,Detached,Suburban,Leasehold,3368.9,1976645.24,2.3,133
-2025-02-16,Detached,Industrial Fringe,Build to Rent,9480.55,1053704.94,10.64,34
-2024-11-25,Townhouse,University District,Build to Rent,9426.17,2094901.14,7.31,175
-2024-08-23,ThreeBedroom,Industrial Fringe,Build to Rent,1303.47,101640.37,3.63,138
-2025-04-27,TwoBedroom,Suburban,Build to Rent,5598.26,1692911.29,6.2,179
-2024-10-26,OneBedroom,University District,Build to Rent,7174.37,1188215.76,4.82,124
-2025-04-08,Detached,Waterfront,Build to Rent,4261.88,276076.82,12.34,48
-2025-01-23,Detached,University District,Freehold,4537.43,438024.56,6.37,51
-2024-03-16,Townhouse,Uptown,Shared Ownership,9139.03,1680208.06,13.63,55
-2024-08-03,Terraced,University District,Build to Rent,2300.93,1702779.23,5.81,95
-2024-02-10,Detached,Uptown,Build to Rent,7255.8,513416.25,13.86,163
-2024-09-28,Terraced,Uptown,Leasehold,5035.86,776242.48,4.94,116
-2024-10-03,Terraced,Industrial Fringe,Build to Rent,3488.13,1412238.55,7.57,26
-2024-02-17,OneBedroom,University District,Freehold,5201.18,702977.59,10.71,69
-2024-12-26,TwoBedroom,Suburban,Freehold,8824.26,1576959.07,9.15,35
-2024-10-19,Studio,University District,Shared Ownership,7807.57,228007.57,11.56,62
-2025-04-13,Detached,Waterfront,Shared Ownership,9105.16,2266158.28,5.87,103
-2024-01-05,Townhouse,Industrial Fringe,Leasehold,1477.72,1739747.22,5.8,116
-2024-02-15,ThreeBedroom,Suburban,Leasehold,7937.96,2243808.47,3.17,125
-2024-08-02,Studio,Uptown,Freehold,8914.28,1005139.18,13.19,13
-2024-05-09,OneBedroom,University District,Leasehold,9004.15,472755.84,13.78,96
-2024-10-02,Terraced,Uptown,Freehold,3887.53,330496.32,9.09,45
-2024-12-06,Detached,Uptown,Leasehold,6768.08,1049955.55,2.88,146
-2024-10-14,Detached,Industrial Fringe,Freehold,2166.23,2053884.7,2.74,137
-2025-01-23,Detached,Industrial Fringe,Shared Ownership,7717.8,1054800.73,4.34,56
-2024-02-12,Townhouse,Suburban,Shared Ownership,6685.67,423274.31,10.01,26
-2024-09-17,Detached,Waterfront,Build to Rent,4944.67,140151.39,4.11,111
+shiftDate,queueName,shiftType,regionCode,scheduledAgents,callsOffered,averageHandleTimeMinutes,serviceLevelPercent
+2024-08-14,Sales,Night,Central,130,3940,2.88,83.29
+2025-06-07,Sales,Afternoon,South,32,2296,3.63,74.62
+2024-02-02,Returns,Split,West,26,4813,34.3,14.59
+2025-02-24,Sales,Split,West,176,2814,34.19,69.21
+2024-07-23,Complaints,Morning,Central,201,55,5.12,12.32
+2024-11-17,Sales,Split,West,179,2327,7.16,69.09
+2024-05-14,Complaints,Morning,Central,153,2062,26.92,89.03
+2024-11-17,Sales,Evening,East,144,3313,19.63,81.9
+2024-12-06,Technical Support,Split,East,64,871,3.14,45.47
+2025-02-05,Account Management,Afternoon,East,150,1882,8.72,3.31
+2024-05-07,Billing,Evening,North,94,1854,29.45,51.48
+2025-06-16,Billing,Evening,South,118,3235,17.01,88.44
+2024-07-10,Sales,Night,South,188,3723,9.42,78.72
+2024-07-06,Account Management,Afternoon,West,94,1131,14.8,2.03
+2025-05-19,Complaints,Split,West,173,1525,25.02,1.9
+2025-06-18,Technical Support,Morning,North,19,2597,10.46,24.27
+2025-05-21,Billing,Evening,East,24,2683,6.05,29.78
+2024-03-18,Sales,Night,West,4,1092,26.84,3.75
+2024-05-16,Sales,Afternoon,North,154,987,11.78,17.18
+2025-04-08,Returns,Afternoon,South,157,3742,31.33,94.44
+2024-09-24,Returns,Morning,Central,108,4722,29.03,51.43
+2024-10-08,Complaints,Evening,Central,192,187,19.22,9.85
+2025-05-12,Billing,Afternoon,West,83,1457,21.82,24.47
+2024-02-29,Billing,Night,Central,105,1604,20.35,48.89
+2024-05-12,Account Management,Afternoon,Central,94,3882,4.55,16.18
+2024-10-01,Account Management,Evening,South,14,2509,21.96,85.59
+2025-03-20,Sales,Split,West,145,3447,7.35,22.42
+2024-02-02,Billing,Morning,South,31,1853,14.76,21.83
+2024-05-05,Sales,Night,East,191,1245,9.76,0.32
+2025-02-11,Account Management,Night,West,209,1081,24.53,15.76
+2025-01-13,Technical Support,Afternoon,Central,166,1624,2.45,49.12
+2024-02-09,Complaints,Night,Central,104,4340,33.1,68.71
+2025-05-21,Complaints,Night,East,5,551,15.14,79.07
+2024-04-24,Returns,Split,West,242,3132,16.64,89.11
+2024-10-30,Billing,Morning,North,138,1955,14.73,95.2
+2025-02-07,Returns,Split,West,213,4857,2.13,28.18
+2024-10-22,Technical Support,Morning,East,75,2281,6.11,49.64
+2025-03-04,Returns,Split,North,83,2342,11.04,78.75
+2024-05-12,Billing,Afternoon,East,69,2351,18.78,51.14
+2025-03-03,Complaints,Morning,Central,192,3880,18.45,67.44
+2025-04-15,Technical Support,Afternoon,West,58,3741,13.38,34.81
+2024-02-20,Sales,Morning,West,57,4407,9.05,25.79
+2024-08-15,Returns,Evening,South,180,2219,8.78,30.16
+2024-02-27,Account Management,Night,Central,123,4973,4.53,94.59
+2024-03-12,Complaints,Split,Central,215,2638,17.81,76.74
+2024-02-06,Account Management,Morning,Central,231,2036,5.69,5.55
+2025-06-07,Returns,Split,Central,209,1249,23.27,24.64
+2024-08-11,Account Management,Split,Central,249,4212,33.6,61.1
+2024-11-27,Account Management,Split,North,56,4353,29.29,81.47
+2024-09-25,Billing,Afternoon,Central,155,302,2.49,15.32
+2024-09-16,Billing,Evening,North,115,2099,13.7,0.3
+2024-04-17,Complaints,Morning,Central,31,4135,32.7,75.62
+2024-01-18,Billing,Split,South,219,1309,19.19,11.01
+2025-03-19,Account Management,Morning,North,144,4339,32.75,58.82
+2024-01-30,Returns,Morning,West,65,2834,25.61,74.31
+2024-02-26,Returns,Morning,West,44,2374,7.98,5.98
+2024-05-24,Sales,Morning,West,151,968,21.32,46.35
+2024-12-13,Complaints,Morning,West,162,2851,7.88,6.42
+2025-01-29,Technical Support,Split,South,63,1577,6.97,87.91
+2024-10-25,Returns,Night,North,4,1232,10.52,46.06
+2024-05-02,Account Management,Afternoon,East,83,1478,33.19,36.06
+2025-04-21,Returns,Split,Central,159,1019,26.21,31.88
+2024-07-09,Technical Support,Night,East,47,4784,18.57,83.6
+2025-02-06,Technical Support,Split,Central,62,1049,5.96,77.42
+2024-11-12,Sales,Split,East,149,2901,7.09,72.7
+2025-06-21,Sales,Split,East,130,437,4.48,91.97
+2025-05-29,Complaints,Night,North,71,3932,18.98,19.59
+2025-06-01,Billing,Evening,East,76,4613,27.04,66.89
+2025-02-26,Account Management,Evening,North,24,4432,22.07,8.95
+2024-12-20,Sales,Evening,West,245,4944,3.26,15.93
+2024-09-30,Billing,Night,East,176,4512,20.54,80.26
+2025-01-13,Sales,Evening,North,191,2165,8.04,24.38
+2024-08-14,Returns,Night,North,44,958,16.23,55.49
+2024-05-07,Returns,Evening,South,2,4945,26.93,22.11
+2024-04-28,Returns,Night,South,137,3413,21.45,7.6
+2024-09-08,Technical Support,Evening,South,150,583,27.94,41.0
+2025-01-08,Billing,Evening,South,16,2206,2.65,72.53
+2024-11-06,Technical Support,Morning,West,216,1724,32.57,99.28
+2024-12-15,Complaints,Evening,South,186,3029,13.49,58.81
+2024-11-23,Sales,Evening,West,96,29,7.41,24.2
+2025-03-26,Billing,Split,Central,215,1228,7.28,59.21
+2024-04-16,Billing,Morning,West,34,2823,1.9,30.03
+2024-06-06,Sales,Night,East,133,438,4.2,96.69
+2024-12-12,Billing,Afternoon,West,88,4183,20.68,16.45
+2024-09-12,Technical Support,Evening,Central,45,2362,28.87,48.08
+2024-03-25,Billing,Evening,East,146,3630,10.08,18.95
+2024-11-02,Returns,Evening,South,181,4051,21.35,99.58
+2024-06-24,Account Management,Evening,South,159,827,9.95,73.69
+2025-03-31,Technical Support,Evening,Central,126,2866,10.38,55.82
+2025-05-22,Account Management,Afternoon,South,61,3170,19.26,18.88
+2024-08-30,Billing,Afternoon,East,132,3205,26.3,7.18
+2024-06-05,Technical Support,Split,South,25,904,14.38,35.8
+2025-01-29,Sales,Morning,East,53,3707,4.56,2.38
+2025-01-28,Technical Support,Morning,West,244,1868,6.33,89.47
+2025-01-31,Returns,Split,North,3,2224,29.23,76.02
+2025-05-28,Technical Support,Evening,East,118,4845,10.76,20.17
+2024-02-21,Returns,Night,South,89,4327,7.84,32.39
+2024-12-23,Returns,Morning,East,34,4986,15.35,4.92
+2024-02-18,Sales,Split,East,151,4769,13.29,23.68
+2024-06-01,Returns,Afternoon,North,234,4764,10.24,71.9
+2024-08-26,Account Management,Night,East,79,298,6.64,5.07
+2024-07-20,Technical Support,Morning,North,8,3617,23.61,92.32
+2024-05-29,Account Management,Evening,South,58,3429,22.8,82.16
+2024-08-03,Sales,Night,Central,219,3108,20.97,42.64
+2024-12-29,Technical Support,Split,North,187,3431,25.67,45.5
+2024-05-23,Account Management,Morning,Central,60,1448,3.66,62.97
+2024-02-10,Sales,Evening,Central,235,2101,34.17,81.07
+2024-09-19,Technical Support,Night,South,41,4064,26.01,64.25
+2024-08-02,Account Management,Afternoon,Central,93,4540,11.69,18.46
+2024-01-19,Returns,Night,West,151,4222,10.35,0.08
+2024-06-02,Technical Support,Evening,South,208,831,21.65,94.45
+2024-07-13,Returns,Morning,East,22,4013,11.31,44.45
+2025-01-29,Technical Support,Split,North,30,4750,25.11,27.86
+2024-07-10,Billing,Split,North,110,1598,7.94,51.11
+2024-12-01,Account Management,Evening,Central,219,2313,4.33,4.92
+2025-06-03,Technical Support,Split,West,84,4102,19.17,93.76
+2024-05-18,Complaints,Evening,North,202,4012,7.03,54.0
+2024-10-28,Sales,Morning,West,53,2510,31.7,38.89
+2025-01-13,Returns,Evening,Central,161,60,21.09,48.54
+2024-05-12,Returns,Split,East,177,1561,27.13,23.83
+2024-09-18,Returns,Evening,South,14,2983,18.8,90.28
+2025-06-20,Complaints,Morning,South,231,3067,7.71,37.89
+2024-03-19,Sales,Afternoon,South,78,795,20.11,3.1
+2024-11-28,Account Management,Evening,East,119,1554,17.19,10.59
+2024-02-28,Billing,Night,North,119,3654,5.81,86.12
+2024-10-17,Returns,Evening,North,236,1259,27.82,20.48
+2024-08-28,Sales,Night,Central,107,2678,27.57,36.09
+2025-04-09,Technical Support,Morning,Central,121,4799,25.77,75.33
+2025-05-27,Technical Support,Afternoon,Central,215,3660,33.5,84.2
+2024-05-08,Account Management,Split,West,216,921,6.52,77.56
+2024-12-01,Billing,Night,West,145,3910,5.2,87.61
+2024-07-14,Sales,Split,South,162,106,14.35,57.5
+2025-05-30,Returns,Afternoon,North,205,858,34.23,82.1
+2024-01-09,Sales,Morning,East,17,1859,5.69,12.49
+2024-12-01,Account Management,Evening,West,14,1912,19.68,66.22
+2025-04-21,Billing,Morning,East,164,4292,12.13,56.05
+2024-04-17,Complaints,Night,North,1,4229,14.57,96.93
+2025-01-19,Returns,Evening,West,225,2757,2.11,23.24
+2024-12-27,Returns,Split,Central,24,2721,21.71,23.69
+2024-12-24,Returns,Evening,West,4,69,30.31,87.0
+2024-03-05,Returns,Evening,East,44,1375,5.9,74.33
+2024-03-01,Technical Support,Afternoon,South,72,4652,14.83,66.99
+2025-01-03,Account Management,Afternoon,West,177,2376,10.17,27.76
+2024-06-10,Sales,Morning,South,43,251,5.97,34.33
+2025-02-22,Account Management,Split,West,183,1936,25.96,88.39
+2025-05-19,Returns,Night,West,24,1151,31.39,8.13
+2024-05-30,Technical Support,Night,East,240,2373,8.04,54.44
+2024-08-09,Returns,Night,East,142,905,28.2,6.1
+2024-07-30,Technical Support,Night,North,110,3267,18.6,41.76
+2024-06-23,Sales,Morning,North,93,3578,22.32,81.44
+2024-09-23,Billing,Split,Central,2,1967,19.71,13.21
+2024-05-02,Technical Support,Split,Central,214,2514,33.17,42.5
+2025-04-30,Complaints,Morning,North,218,4832,19.98,89.26
+2024-05-05,Billing,Night,West,129,1556,28.76,80.11
+2024-01-05,Billing,Afternoon,North,164,3515,18.41,2.54
+2024-08-29,Sales,Night,Central,39,1248,17.85,0.6
+2025-03-06,Sales,Split,Central,67,3412,23.63,34.98
+2024-12-28,Technical Support,Evening,East,148,2055,31.33,83.95
+2024-05-28,Technical Support,Morning,South,92,2900,26.06,71.85
+2024-08-31,Technical Support,Evening,Central,233,3625,14.8,17.44
+2024-06-13,Complaints,Morning,West,211,2294,14.48,94.61
+2024-12-30,Account Management,Night,Central,28,2498,15.48,51.82
+2024-02-11,Returns,Afternoon,Central,153,214,29.12,70.8
+2024-11-04,Complaints,Morning,North,72,2225,13.02,32.82
+2025-04-25,Billing,Morning,West,125,4142,5.1,97.45
+2024-10-10,Complaints,Night,West,7,3592,3.7,33.0
+2024-12-31,Complaints,Afternoon,South,48,128,13.45,59.26
+2024-02-28,Billing,Split,East,186,4303,16.98,73.92
+2024-11-29,Billing,Morning,North,71,4175,25.1,85.01
+2025-04-24,Complaints,Night,North,63,137,17.5,84.63
+2024-12-07,Billing,Morning,East,147,4956,30.61,31.09
+2024-09-25,Account Management,Morning,South,56,3458,29.04,37.61
+2025-04-05,Technical Support,Evening,North,52,4599,9.96,99.54
+2025-04-11,Complaints,Split,East,78,3652,2.16,73.14
+2025-05-09,Billing,Afternoon,East,156,4072,6.53,91.34
+2024-11-10,Account Management,Afternoon,North,210,3873,25.35,9.64
+2024-10-07,Sales,Morning,East,191,268,2.13,66.04
+2024-09-21,Returns,Morning,Central,212,2084,7.06,0.94
+2024-12-10,Technical Support,Morning,East,153,1874,26.73,58.63
+2025-02-09,Complaints,Morning,East,241,3092,18.95,92.27
+2024-06-25,Complaints,Split,West,104,3383,21.2,32.01
+2025-02-12,Billing,Afternoon,East,17,473,28.55,58.79
+2024-03-18,Account Management,Evening,East,116,1202,34.38,52.25
+2024-07-24,Technical Support,Evening,Central,165,2749,3.46,18.22
+2024-11-15,Account Management,Split,North,45,634,32.44,38.05
+2024-08-12,Billing,Morning,North,104,3959,10.88,17.45
+2024-06-01,Account Management,Night,Central,157,4501,31.52,50.13
+2024-02-29,Returns,Evening,West,225,3406,9.68,15.7
+2024-02-02,Returns,Afternoon,West,223,3471,27.38,93.22
+2024-12-09,Billing,Split,West,35,4992,25.19,67.99
+2024-08-31,Sales,Afternoon,West,8,807,8.2,92.53
+2024-08-14,Sales,Evening,Central,12,867,28.76,47.61
+2024-09-04,Complaints,Morning,East,184,2300,4.72,87.4
+2024-08-03,Billing,Night,West,137,1464,34.83,20.69
+2024-06-30,Billing,Split,Central,104,4559,24.71,71.92
+2024-02-06,Sales,Split,East,84,4911,5.54,45.59
+2024-02-27,Sales,Night,East,132,3952,11.19,56.55
+2024-02-22,Sales,Afternoon,West,38,4325,26.17,95.8
+2024-09-17,Billing,Evening,East,121,1551,9.6,47.87
+2024-01-21,Returns,Evening,Central,243,1498,5.86,92.05
+2024-12-12,Sales,Morning,South,159,1211,20.49,72.65
+2024-03-25,Technical Support,Night,North,153,3328,13.48,13.85
+2024-09-13,Sales,Afternoon,East,231,40,4.11,3.02
+2024-10-19,Technical Support,Split,West,70,2036,19.41,99.53
+2024-03-21,Complaints,Afternoon,West,48,2326,19.99,96.29
+2024-04-10,Sales,Evening,East,161,2454,11.42,74.99
+2025-05-11,Complaints,Evening,North,183,250,20.61,97.11
+2024-03-05,Billing,Split,South,80,1434,34.09,56.3
+2024-01-07,Returns,Afternoon,Central,222,2683,26.54,19.22
+2024-05-18,Sales,Evening,Central,93,274,4.35,51.27
+2024-02-29,Sales,Night,East,100,379,9.96,70.47
+2025-04-17,Complaints,Morning,East,41,4691,19.43,82.26
+2024-09-27,Technical Support,Night,South,47,4569,19.34,71.91
+2025-03-22,Technical Support,Split,East,195,1516,23.68,87.77
+2024-04-25,Returns,Afternoon,North,218,38,4.88,82.0
+2024-03-29,Account Management,Afternoon,South,37,3038,9.74,50.81
+2024-06-10,Technical Support,Night,South,98,342,20.71,35.49
+2025-06-21,Sales,Split,North,219,4159,6.72,53.91
+2024-01-28,Complaints,Morning,North,194,2261,12.9,12.62
+2024-12-27,Technical Support,Split,Central,185,3983,19.46,61.35
+2024-07-11,Complaints,Split,North,120,2060,7.39,67.75
+2024-01-25,Account Management,Afternoon,North,216,1157,10.84,68.3
+2025-04-20,Sales,Afternoon,Central,65,130,4.46,21.96
+2024-06-25,Account Management,Evening,South,12,1822,34.02,90.12
+2024-04-17,Returns,Afternoon,West,172,3123,27.45,38.2
+2024-10-22,Account Management,Split,South,220,1085,21.19,40.98
+2025-04-29,Billing,Morning,North,194,4233,16.55,28.74
+2024-05-19,Complaints,Night,North,178,3223,11.92,98.33
+2025-05-02,Technical Support,Afternoon,South,87,2876,26.99,90.95
+2024-05-23,Sales,Evening,North,110,844,27.13,62.59
+2025-06-14,Sales,Morning,North,87,343,30.82,97.96
+2024-06-06,Technical Support,Split,Central,84,4440,28.27,37.41
+2024-06-15,Account Management,Morning,West,67,1964,25.69,40.01
+2024-01-23,Complaints,Morning,West,47,3355,24.13,10.39
+2024-12-11,Account Management,Night,East,130,1625,11.98,58.28
+2024-11-09,Account Management,Evening,West,149,1378,29.79,45.88
+2025-04-02,Account Management,Split,Central,21,4241,10.59,60.69
+2024-04-14,Sales,Afternoon,North,39,2163,3.19,22.65
+2025-04-08,Complaints,Split,Central,176,3636,21.05,19.03
+2024-11-27,Returns,Night,South,118,1538,15.8,61.49

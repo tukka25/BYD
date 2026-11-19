@@ -1,241 +1,241 @@
-sessionStartDate,platform,gameMode,region,sessionDurationMinutes,matchesPlayed,inGameRevenue,playerRating
-2024-01-05,iOS,Casual,Asia Pacific,476.29,7,346.34,1.46
-2024-10-22,Android,Story,Middle East,316.97,50,324.77,4.04
-2024-01-27,Nintendo Switch,Co-op,Asia Pacific,316.4,8,430.65,2.28
-2024-12-08,Nintendo Switch,Casual,Latin America,418.88,36,233.8,0.67
-2024-08-15,iOS,Co-op,North America,382.51,57,169.66,0.12
-2025-04-16,Nintendo Switch,Casual,Asia Pacific,120.61,21,105.15,2.98
-2025-02-01,iOS,Story,Asia Pacific,17.31,51,286.68,3.21
-2025-01-24,Xbox,Co-op,North America,97.52,4,410.75,1.95
-2024-02-27,Android,Co-op,Asia Pacific,210.64,29,167.98,1.11
-2024-11-25,PlayStation,Story,Europe,118.98,16,305.07,4.92
-2024-12-29,Nintendo Switch,Story,Middle East,247.31,5,225.96,2.79
-2025-05-30,Xbox,Co-op,North America,328.9,48,410.26,3.57
-2024-12-07,iOS,Ranked,Asia Pacific,415.65,29,312.91,0.83
-2024-05-18,PC,Ranked,Latin America,50.83,43,490.63,2.98
-2024-10-06,Nintendo Switch,Casual,North America,91.7,29,261.54,1.28
-2024-10-01,PC,Co-op,Europe,199.28,60,284.47,3.94
-2024-12-01,Xbox,Story,Middle East,168.76,32,193.45,3.01
-2024-09-11,Nintendo Switch,Co-op,Middle East,111.28,42,176.88,1.85
-2025-01-09,Xbox,Casual,Europe,57.71,44,335.86,2.22
-2025-04-20,Xbox,Ranked,Latin America,257.67,57,235.97,1.7
-2024-04-24,iOS,Co-op,North America,393.39,21,295.32,2.13
-2025-04-13,PlayStation,Co-op,Latin America,474.41,16,196.97,3.38
-2024-08-10,PC,Casual,Middle East,472.88,56,264.42,1.79
-2025-05-02,Xbox,Ranked,Europe,189.97,43,348.79,4.79
-2024-12-30,Xbox,Ranked,Latin America,327.05,13,359.28,4.69
-2024-05-31,iOS,Battle Royale,North America,99.94,36,138.52,2.97
-2025-05-15,Nintendo Switch,Ranked,North America,304.31,18,299.14,0.39
-2024-09-30,PlayStation,Casual,North America,456.17,22,203.68,4.73
-2024-09-15,Android,Story,Europe,437.8,8,167.49,2.43
-2024-03-04,Nintendo Switch,Ranked,North America,139.73,9,294.4,4.41
-2025-06-11,PC,Story,North America,418.09,45,482.94,0.79
-2025-05-23,Nintendo Switch,Co-op,Middle East,410.68,29,388.45,3.03
-2024-11-30,iOS,Co-op,Europe,229.59,54,161.78,3.55
-2024-03-31,Nintendo Switch,Ranked,Middle East,56.89,44,115.22,4.74
-2024-03-01,Android,Story,Europe,423.33,35,72.98,2.79
-2024-11-20,PC,Story,Europe,151.01,13,490.63,3.34
-2025-05-29,PC,Story,Latin America,92.75,42,494.96,4.16
-2025-02-14,PC,Story,Middle East,300.36,31,307.92,3.52
-2024-01-26,Xbox,Story,Asia Pacific,328.74,44,342.37,3.11
-2024-09-23,iOS,Co-op,North America,88.03,57,209.26,2.4
-2025-01-05,Android,Co-op,Asia Pacific,369.39,44,487.79,4.95
-2024-06-24,Xbox,Casual,Europe,206.1,15,424.0,4.6
-2024-03-13,iOS,Ranked,Middle East,354.9,31,381.61,2.96
-2025-04-28,Xbox,Ranked,Middle East,75.12,22,100.73,3.39
-2024-09-05,iOS,Co-op,Asia Pacific,127.89,35,104.0,4.18
-2025-01-15,PC,Battle Royale,Latin America,477.37,4,122.39,2.4
-2024-01-11,Android,Battle Royale,Asia Pacific,195.08,53,236.59,4.67
-2025-03-06,Nintendo Switch,Ranked,Latin America,258.54,55,195.84,0.58
-2024-12-10,Xbox,Battle Royale,Europe,441.51,40,60.07,4.32
-2024-04-17,Nintendo Switch,Battle Royale,North America,246.58,44,108.21,1.48
-2025-01-07,Nintendo Switch,Casual,Middle East,135.09,42,70.2,3.28
-2024-10-09,Xbox,Ranked,Asia Pacific,110.7,23,84.92,4.67
-2024-07-11,iOS,Co-op,Middle East,237.75,56,61.43,0.08
-2024-09-11,Nintendo Switch,Ranked,Asia Pacific,324.71,30,99.0,2.31
-2024-06-18,PlayStation,Story,Europe,397.28,35,55.72,0.01
-2025-04-21,PC,Story,Europe,213.18,41,56.9,3.46
-2024-03-01,PlayStation,Co-op,Latin America,282.31,29,76.64,1.91
-2025-04-23,Android,Ranked,Europe,227.23,48,398.17,3.57
-2024-08-04,Nintendo Switch,Co-op,Asia Pacific,110.67,45,144.82,1.52
-2024-06-08,PC,Story,Asia Pacific,52.21,26,259.48,3.26
-2025-02-14,Nintendo Switch,Ranked,Europe,416.42,38,237.36,2.84
-2025-05-02,PC,Battle Royale,Middle East,477.17,44,455.45,2.47
-2025-04-12,Android,Ranked,Latin America,219.85,35,331.26,0.94
-2024-06-03,iOS,Story,Europe,43.36,14,240.83,2.83
-2024-11-20,Xbox,Ranked,Asia Pacific,103.1,19,141.57,4.26
-2025-06-13,Nintendo Switch,Battle Royale,North America,417.05,55,374.3,4.73
-2024-07-17,PC,Battle Royale,Latin America,245.72,7,66.46,3.35
-2024-03-08,PlayStation,Battle Royale,Europe,177.67,28,417.33,4.43
-2025-06-12,PlayStation,Ranked,Latin America,239.71,43,498.11,3.73
-2024-05-19,PC,Ranked,Europe,226.4,51,359.17,1.97
-2024-02-29,Nintendo Switch,Ranked,North America,72.32,17,243.02,4.73
-2024-10-12,Xbox,Story,Latin America,425.25,55,32.15,3.47
-2025-01-29,Nintendo Switch,Story,Asia Pacific,451.85,46,439.07,1.39
-2025-05-07,Xbox,Ranked,Middle East,247.6,27,94.38,2.26
-2024-08-08,PlayStation,Casual,Middle East,19.71,44,40.49,3.2
-2024-04-26,Android,Ranked,Asia Pacific,80.72,17,65.05,1.24
-2024-11-18,Android,Ranked,Latin America,450.64,42,424.46,1.25
-2025-03-11,Xbox,Battle Royale,Latin America,63.03,17,396.5,2.99
-2024-03-24,PlayStation,Battle Royale,Latin America,130.83,33,424.66,2.96
-2024-03-30,Android,Co-op,Asia Pacific,227.15,46,279.38,1.58
-2024-08-05,Nintendo Switch,Co-op,Asia Pacific,407.37,47,14.81,0.22
-2025-06-11,Xbox,Casual,North America,360.4,11,59.17,4.72
-2024-07-08,Xbox,Story,Europe,345.23,21,29.2,3.57
-2024-11-09,PC,Casual,North America,334.84,4,260.44,4.38
-2024-03-18,PlayStation,Battle Royale,North America,23.05,56,82.04,4.09
-2024-07-06,iOS,Battle Royale,Asia Pacific,154.09,42,261.34,0.37
-2024-02-29,Nintendo Switch,Story,Middle East,125.01,14,259.32,4.2
-2024-06-28,PC,Ranked,North America,106.71,27,220.01,2.54
-2024-06-19,PC,Co-op,North America,379.88,20,385.91,1.53
-2024-06-20,Nintendo Switch,Story,North America,246.35,56,235.46,4.45
-2025-05-23,Android,Casual,Middle East,157.28,21,263.33,0.57
-2024-01-31,PlayStation,Story,Latin America,473.79,26,98.6,2.59
-2025-01-06,PC,Co-op,Asia Pacific,372.29,38,470.75,4.9
-2024-07-26,iOS,Casual,North America,85.64,45,97.12,4.59
-2025-03-05,PlayStation,Story,Asia Pacific,11.4,13,149.72,1.5
-2024-06-14,PlayStation,Battle Royale,Europe,81.27,13,381.27,2.84
-2025-01-18,Xbox,Battle Royale,Latin America,194.25,56,294.89,2.35
-2024-06-04,iOS,Ranked,Europe,319.72,22,154.54,0.22
-2024-08-09,PlayStation,Co-op,Europe,210.87,22,40.42,2.76
-2024-02-09,Nintendo Switch,Story,Middle East,264.16,38,390.32,0.72
-2024-01-17,Nintendo Switch,Battle Royale,Middle East,115.24,39,424.88,2.61
-2024-05-07,iOS,Story,Europe,225.65,21,86.39,2.3
-2024-07-06,iOS,Ranked,Europe,21.35,17,94.18,3.26
-2025-06-19,PlayStation,Co-op,Middle East,170.17,11,355.04,0.31
-2024-05-07,Xbox,Ranked,Europe,124.11,31,11.77,0.13
-2025-05-11,Android,Story,Europe,57.4,49,263.57,0.09
-2024-10-01,Nintendo Switch,Story,Europe,446.8,58,483.47,1.88
-2024-03-18,Xbox,Ranked,Latin America,376.67,51,389.04,4.68
-2025-01-24,PC,Ranked,Middle East,138.93,29,286.43,3.11
-2025-05-02,Nintendo Switch,Battle Royale,North America,211.03,57,471.84,4.84
-2024-08-31,Nintendo Switch,Ranked,Latin America,4.65,48,239.17,3.78
-2024-04-20,Android,Casual,Europe,51.04,42,439.28,3.23
-2024-08-22,Android,Ranked,Middle East,269.02,9,339.44,3.59
-2024-12-14,PC,Casual,Europe,429.83,4,116.41,1.09
-2024-06-21,Android,Casual,Latin America,372.72,10,233.88,3.18
-2024-06-29,Xbox,Battle Royale,Middle East,340.5,57,482.45,3.71
-2025-06-20,Nintendo Switch,Battle Royale,Latin America,399.52,47,418.42,4.85
-2025-03-04,Android,Battle Royale,Middle East,244.17,60,302.34,1.66
-2024-10-09,Xbox,Co-op,Middle East,387.98,31,255.4,2.6
-2025-04-21,Xbox,Casual,Asia Pacific,243.08,36,13.55,1.97
-2024-07-12,Xbox,Ranked,Asia Pacific,450.7,9,466.94,3.94
-2024-04-24,Android,Co-op,Middle East,417.89,49,425.6,0.1
-2024-05-24,Nintendo Switch,Story,Latin America,450.47,32,423.84,3.69
-2024-10-05,iOS,Co-op,Latin America,203.61,48,154.7,4.41
-2024-07-22,Android,Casual,Europe,367.72,2,315.68,1.4
-2025-04-18,Xbox,Battle Royale,North America,472.81,5,337.48,4.43
-2024-08-01,Xbox,Ranked,North America,212.6,59,392.08,1.04
-2024-08-29,Nintendo Switch,Casual,North America,50.15,59,89.95,4.88
-2024-12-31,Xbox,Casual,Asia Pacific,208.96,57,232.13,0.81
-2024-10-23,PC,Battle Royale,North America,139.53,10,218.59,2.55
-2024-09-16,PC,Casual,Asia Pacific,36.29,26,202.37,0.75
-2025-05-02,PC,Battle Royale,Europe,168.03,17,77.44,3.74
-2024-07-15,iOS,Casual,North America,221.38,26,222.97,1.83
-2025-01-06,PC,Story,Asia Pacific,144.41,30,261.01,3.11
-2024-11-02,PlayStation,Casual,Europe,197.82,12,288.83,4.86
-2024-09-13,Xbox,Ranked,North America,453.71,5,105.68,2.09
-2024-11-12,Nintendo Switch,Casual,Latin America,466.0,32,196.72,4.66
-2024-10-13,Nintendo Switch,Battle Royale,Middle East,321.75,23,62.79,3.83
-2024-09-16,Xbox,Ranked,Europe,311.0,55,340.26,1.39
-2025-04-04,Android,Co-op,Latin America,347.25,55,108.53,1.29
-2024-03-08,iOS,Battle Royale,Asia Pacific,63.47,49,176.41,2.15
-2024-01-24,Nintendo Switch,Ranked,Asia Pacific,277.42,54,201.93,3.0
-2025-02-13,PlayStation,Story,Middle East,478.56,22,236.9,4.31
-2024-01-27,Xbox,Story,North America,443.42,9,14.46,0.39
-2024-10-16,PlayStation,Battle Royale,North America,84.76,31,118.72,4.34
-2024-05-26,PlayStation,Battle Royale,Latin America,451.9,32,418.12,1.87
-2025-02-17,Xbox,Casual,Latin America,13.96,50,405.92,1.75
-2025-01-13,Android,Battle Royale,Middle East,211.49,41,77.43,3.72
-2024-08-21,Android,Co-op,Middle East,351.07,48,479.61,3.9
-2024-12-01,PC,Ranked,North America,153.28,24,393.78,1.15
-2024-04-15,PC,Casual,Middle East,211.38,31,426.78,4.58
-2025-01-17,PlayStation,Ranked,Latin America,330.61,35,313.05,4.07
-2024-10-13,Xbox,Casual,Middle East,367.07,18,180.82,0.1
-2024-05-23,PC,Ranked,North America,365.66,7,487.34,0.0
-2025-04-30,iOS,Casual,Europe,194.74,45,371.59,2.48
-2024-07-23,Nintendo Switch,Co-op,Latin America,461.21,52,494.86,3.99
-2024-09-05,Nintendo Switch,Ranked,Latin America,249.13,42,163.41,0.55
-2024-09-26,PC,Story,North America,477.31,19,145.56,0.34
-2024-03-19,PlayStation,Ranked,Europe,209.87,21,374.32,4.49
-2024-01-05,PC,Ranked,Europe,96.79,47,361.9,0.9
-2024-07-14,Xbox,Story,Latin America,1.33,22,7.04,3.18
-2024-07-04,Xbox,Casual,Middle East,211.55,35,101.81,0.92
-2024-10-29,PC,Story,Middle East,116.02,4,33.85,0.81
-2025-06-14,iOS,Battle Royale,Latin America,181.24,31,323.06,3.89
-2024-01-02,Android,Casual,Middle East,206.12,47,249.18,4.54
-2024-03-20,PC,Co-op,Europe,102.7,40,291.52,2.1
-2024-05-12,Android,Battle Royale,Asia Pacific,317.25,13,7.92,4.64
-2024-08-31,Xbox,Casual,Latin America,111.75,42,52.25,1.35
-2025-01-07,Nintendo Switch,Ranked,Asia Pacific,111.35,11,401.03,0.08
-2024-08-04,PlayStation,Battle Royale,North America,460.22,25,339.44,1.19
-2024-03-03,Nintendo Switch,Ranked,Europe,131.96,15,427.26,0.67
-2024-04-20,PlayStation,Casual,Europe,351.22,58,481.9,2.53
-2025-01-24,iOS,Battle Royale,North America,273.81,21,405.51,0.77
-2024-08-28,Nintendo Switch,Co-op,Europe,71.36,43,359.87,2.92
-2024-08-02,iOS,Battle Royale,Latin America,317.69,30,186.72,1.79
-2024-09-13,Android,Co-op,Asia Pacific,330.51,58,210.33,4.9
-2024-04-02,PlayStation,Story,Asia Pacific,434.34,55,127.44,0.01
-2025-03-02,Xbox,Story,North America,153.66,32,127.73,0.25
-2024-03-19,Android,Battle Royale,Middle East,178.74,31,93.74,3.29
-2025-04-27,iOS,Battle Royale,Europe,352.99,4,68.01,4.1
-2025-01-12,PlayStation,Co-op,Asia Pacific,294.61,6,185.63,2.13
-2024-04-28,Android,Ranked,Latin America,368.16,22,196.56,3.79
-2025-04-25,Nintendo Switch,Ranked,Europe,415.23,6,444.45,0.35
-2024-03-21,Android,Battle Royale,Latin America,132.54,58,196.13,3.13
-2024-06-08,Xbox,Co-op,Middle East,106.38,56,429.63,4.38
-2025-03-05,Android,Story,Europe,206.94,14,35.93,1.08
-2025-02-20,Xbox,Story,Latin America,414.04,3,445.36,0.01
-2025-04-10,Android,Battle Royale,North America,468.65,11,341.24,3.12
-2024-12-08,PC,Ranked,Europe,259.47,18,222.67,1.32
-2024-01-06,Nintendo Switch,Casual,Europe,271.86,58,478.67,3.76
-2024-10-25,iOS,Casual,North America,168.23,56,2.71,2.66
-2025-05-20,PC,Story,Asia Pacific,14.24,17,459.05,1.35
-2024-02-20,Nintendo Switch,Story,Middle East,260.14,15,206.27,0.82
-2024-03-10,Xbox,Co-op,Middle East,286.1,6,263.75,1.2
-2024-02-05,PlayStation,Story,Latin America,437.76,22,7.23,4.1
-2024-09-18,Nintendo Switch,Casual,North America,11.58,59,187.19,0.69
-2024-08-11,Nintendo Switch,Casual,Latin America,88.03,55,168.66,0.4
-2024-08-01,iOS,Ranked,Latin America,139.94,23,438.0,2.2
-2025-02-10,iOS,Casual,North America,398.31,17,150.31,3.65
-2024-02-14,Nintendo Switch,Ranked,Europe,349.33,48,210.01,1.48
-2024-08-04,Android,Co-op,Asia Pacific,73.61,17,427.45,4.38
-2025-01-18,Nintendo Switch,Co-op,Latin America,245.96,11,440.05,1.69
-2024-08-28,iOS,Co-op,Asia Pacific,394.26,14,366.28,0.8
-2024-04-19,iOS,Battle Royale,Middle East,409.21,25,353.53,2.27
-2024-10-23,PlayStation,Battle Royale,Europe,397.35,22,125.0,4.98
-2025-05-14,Nintendo Switch,Ranked,Middle East,124.12,5,258.4,4.32
-2024-05-10,Nintendo Switch,Ranked,Asia Pacific,129.6,39,256.05,3.59
-2024-09-29,Xbox,Story,Asia Pacific,398.4,14,455.51,4.29
-2025-04-17,Nintendo Switch,Story,Europe,342.75,53,319.38,3.23
-2025-01-16,Xbox,Casual,Asia Pacific,48.08,27,107.79,0.04
-2025-05-23,PC,Casual,Asia Pacific,464.35,45,34.62,3.01
-2024-08-16,PC,Co-op,North America,348.77,25,191.18,0.97
-2024-02-02,Xbox,Casual,Middle East,336.26,55,299.34,0.51
-2024-12-27,Android,Casual,Asia Pacific,27.87,59,81.85,1.61
-2024-07-19,iOS,Story,Latin America,325.96,60,41.88,1.96
-2024-01-05,Nintendo Switch,Battle Royale,Asia Pacific,251.05,40,1.67,4.85
-2024-03-05,Android,Story,Europe,204.16,35,76.99,3.06
-2024-04-06,PC,Casual,Europe,425.24,35,36.54,4.6
-2024-12-10,Xbox,Co-op,Middle East,336.86,31,328.15,2.24
-2024-12-16,iOS,Story,Middle East,380.44,14,456.2,0.72
-2024-02-10,Xbox,Battle Royale,Asia Pacific,284.31,9,164.07,2.23
-2024-01-11,Nintendo Switch,Casual,Latin America,301.12,7,245.59,4.38
-2025-05-30,iOS,Co-op,Latin America,335.82,45,82.45,4.48
-2024-03-11,PC,Co-op,Middle East,259.21,40,188.75,3.73
-2025-02-08,iOS,Ranked,Asia Pacific,2.98,15,11.64,3.21
-2024-05-31,PlayStation,Battle Royale,Europe,390.97,31,343.58,1.24
-2024-10-28,iOS,Ranked,Middle East,455.41,10,139.66,1.09
-2025-01-23,Xbox,Casual,North America,77.72,34,300.89,2.42
-2025-04-08,PC,Casual,North America,477.57,53,39.99,2.6
-2024-06-04,Android,Story,Middle East,291.76,50,489.02,0.02
-2024-11-05,Xbox,Battle Royale,Europe,215.68,34,68.38,2.2
-2024-03-19,PlayStation,Casual,Middle East,168.98,39,377.12,2.62
-2025-01-25,iOS,Battle Royale,Latin America,240.32,17,415.06,3.65
-2025-04-14,Nintendo Switch,Battle Royale,Asia Pacific,332.18,38,236.04,3.5
-2025-05-07,Android,Casual,Asia Pacific,79.29,31,447.19,2.81
-2024-09-04,Android,Story,North America,355.9,10,8.79,0.83
-2024-05-07,Xbox,Ranked,Middle East,109.88,42,88.56,0.13
-2025-06-03,PC,Ranked,Europe,1.07,52,45.19,2.04
-2024-12-29,iOS,Story,Asia Pacific,146.95,23,194.83,3.26
-2025-06-19,Xbox,Casual,Asia Pacific,142.0,10,434.06,2.3
+ord_dt,str_reg,prod_cat,pay_typ,unit_qty,unit_prc,disc_amt,tot_rev
+2025-01-18,south,apparel,cash,37,1772.5,37.81,4151.62
+2024-12-21,central,electronics,gift_card,15,467.98,80.0,7239.45
+2025-02-01,central,grocery,cash,48,1473.82,170.28,9311.55
+2024-09-11,central,beauty,cash,20,49.71,110.18,8761.5
+2025-04-27,east,apparel,credit,23,115.83,479.58,5512.6
+2024-08-22,north,home,cash,14,1958.62,210.29,1342.81
+2024-03-18,north,grocery,mobile,42,1398.24,431.28,9769.18
+2024-08-06,south,home,gift_card,21,1821.13,303.45,9574.82
+2024-09-21,east,electronics,cash,17,133.65,107.23,6062.91
+2024-02-13,central,beauty,credit,31,1611.51,431.81,6675.91
+2024-05-20,east,electronics,credit,4,1943.34,184.45,3627.97
+2024-11-12,central,grocery,debit,36,182.77,271.84,4771.82
+2024-04-25,north,apparel,cash,23,1196.0,447.45,4081.7
+2025-05-12,south,home,gift_card,4,564.49,265.25,6720.42
+2024-01-23,north,sporting,cash,1,1758.48,457.04,8678.86
+2025-03-31,west,electronics,debit,32,718.13,62.32,1569.24
+2025-05-09,north,beauty,gift_card,50,901.83,176.17,9716.08
+2024-10-02,west,electronics,mobile,32,196.21,434.75,5601.75
+2025-05-30,east,apparel,cash,13,1653.51,202.09,4002.79
+2024-08-10,south,home,gift_card,44,1683.44,142.43,6705.88
+2024-01-31,south,sporting,credit,27,739.73,178.6,5737.27
+2025-04-14,west,sporting,debit,25,1025.1,235.05,6021.47
+2025-02-06,east,sporting,gift_card,24,1344.41,363.06,6167.43
+2024-07-05,central,sporting,mobile,49,1777.84,275.39,7966.97
+2024-07-10,central,sporting,gift_card,10,1860.05,161.8,8779.07
+2025-03-18,central,beauty,cash,25,1243.2,109.67,7826.24
+2024-09-12,central,home,mobile,16,1445.42,16.35,4901.75
+2025-01-12,east,grocery,credit,7,1015.25,437.14,8124.7
+2024-08-05,south,grocery,cash,48,1311.25,401.16,4311.08
+2024-02-28,central,beauty,mobile,50,960.88,213.15,2034.43
+2025-01-26,central,apparel,mobile,45,1551.18,414.86,4537.94
+2024-05-15,east,home,mobile,11,413.05,427.34,7076.61
+2024-12-07,west,apparel,credit,16,874.41,116.72,2968.18
+2025-06-12,south,electronics,mobile,44,448.5,41.95,9072.04
+2024-08-07,west,apparel,gift_card,7,1515.3,32.72,5828.63
+2024-01-26,east,electronics,cash,24,880.16,172.44,7061.81
+2024-10-11,west,sporting,mobile,14,1813.94,51.91,3267.75
+2024-06-17,central,apparel,cash,39,648.01,421.57,1800.74
+2024-06-13,south,grocery,credit,41,1157.68,345.92,4075.38
+2024-01-14,north,apparel,mobile,3,1247.75,149.66,2669.44
+2024-11-29,west,beauty,mobile,13,784.86,313.99,1306.82
+2025-06-20,east,grocery,gift_card,25,1159.08,152.63,2605.42
+2024-02-02,north,home,credit,43,127.83,182.93,7863.22
+2025-06-05,north,sporting,debit,12,712.72,41.72,4534.05
+2024-05-31,south,beauty,mobile,11,1269.09,353.68,3946.92
+2024-10-17,south,beauty,gift_card,46,446.68,214.78,5367.08
+2024-03-28,east,home,debit,49,1023.45,18.08,3875.44
+2025-06-18,east,beauty,credit,28,1329.49,25.93,8001.24
+2024-09-04,west,electronics,cash,25,1866.0,342.29,5991.9
+2024-06-07,north,electronics,credit,29,1818.77,429.53,3555.51
+2025-02-13,north,electronics,mobile,19,986.85,0.54,8444.25
+2024-02-02,north,home,gift_card,23,1572.05,299.15,6992.03
+2025-01-28,north,apparel,gift_card,19,574.43,99.52,2474.03
+2024-11-09,south,home,gift_card,42,570.74,42.39,1423.71
+2024-10-06,south,sporting,debit,3,25.33,270.1,7703.33
+2024-05-12,central,beauty,credit,12,1810.17,184.14,2612.94
+2024-04-19,west,beauty,cash,46,501.73,166.58,8052.84
+2024-07-22,south,apparel,cash,45,49.42,63.22,7442.06
+2024-01-22,east,sporting,credit,19,444.79,159.39,1799.68
+2024-07-26,east,home,debit,19,487.0,86.21,4696.34
+2025-01-16,north,sporting,gift_card,24,1888.61,491.52,2498.62
+2025-05-14,west,sporting,cash,34,1704.02,364.6,3013.46
+2024-03-30,east,sporting,mobile,43,523.32,327.24,592.7
+2025-02-16,east,home,debit,32,1024.61,98.99,9855.82
+2025-02-01,east,grocery,gift_card,31,1431.49,197.54,5519.36
+2024-01-08,west,grocery,mobile,22,1987.56,374.2,9867.61
+2025-01-13,west,apparel,credit,38,1245.9,466.37,7233.83
+2025-04-21,west,electronics,gift_card,9,1254.69,464.48,3350.43
+2025-03-02,south,electronics,mobile,36,1023.29,448.55,8144.65
+2025-04-28,north,electronics,gift_card,12,383.01,150.9,9158.58
+2024-05-27,east,grocery,debit,25,1541.19,158.62,3099.86
+2024-04-12,central,home,gift_card,50,823.5,309.9,2079.26
+2024-08-06,east,sporting,mobile,39,1444.08,346.05,7245.31
+2024-07-29,central,electronics,debit,14,715.61,318.68,2686.99
+2024-05-23,west,apparel,mobile,43,1472.03,331.17,1325.33
+2024-10-23,north,beauty,mobile,44,1376.12,223.85,2229.98
+2024-12-04,east,beauty,gift_card,45,1150.25,369.32,5326.62
+2024-04-10,north,home,credit,18,1819.82,88.78,9504.77
+2025-04-27,south,electronics,credit,7,1964.38,195.55,9947.22
+2024-03-04,east,sporting,debit,17,1419.95,94.67,6014.31
+2024-11-18,south,beauty,gift_card,15,1415.84,14.79,1012.89
+2024-12-09,south,grocery,cash,36,1340.02,279.93,5933.47
+2025-05-21,south,grocery,mobile,42,229.58,8.05,9178.9
+2024-03-09,central,home,gift_card,20,1657.28,26.91,3063.83
+2025-02-05,north,apparel,debit,48,732.77,133.52,9465.6
+2025-06-01,north,sporting,credit,25,1792.87,449.45,3253.81
+2024-11-21,north,grocery,mobile,26,65.17,206.68,1921.79
+2024-01-01,central,sporting,debit,34,343.23,245.96,5302.33
+2024-03-28,north,beauty,gift_card,35,1558.14,246.72,2446.64
+2025-01-02,north,grocery,credit,40,1602.19,263.41,9992.06
+2024-11-01,east,sporting,debit,15,784.95,69.83,2950.53
+2025-02-04,west,beauty,credit,48,1457.26,207.5,3309.56
+2024-04-16,east,electronics,debit,35,369.28,337.39,1133.29
+2024-12-20,west,grocery,cash,9,1163.76,357.86,6316.13
+2025-04-26,central,apparel,debit,13,1380.68,109.92,1112.53
+2025-06-14,south,apparel,mobile,45,1784.18,139.2,3582.77
+2024-02-03,north,sporting,credit,11,474.6,164.5,5605.56
+2024-02-15,north,electronics,debit,18,1531.63,240.44,3198.26
+2024-07-20,west,sporting,cash,44,861.91,201.46,6402.73
+2024-12-18,north,sporting,mobile,36,1855.75,117.64,7947.63
+2025-05-18,central,beauty,debit,23,44.16,262.05,5069.11
+2025-01-20,west,grocery,gift_card,34,208.59,289.39,2743.82
+2024-01-24,north,grocery,debit,21,276.95,104.14,464.68
+2024-12-05,east,home,cash,46,444.0,197.07,8910.83
+2025-01-21,central,grocery,cash,35,1973.93,475.84,4242.33
+2024-06-08,north,electronics,credit,14,563.52,96.41,7176.43
+2025-01-30,central,apparel,debit,47,1799.3,246.08,5870.91
+2025-01-13,central,grocery,credit,35,1054.58,377.98,897.0
+2024-12-24,south,beauty,cash,29,189.48,246.9,2720.96
+2024-12-14,west,beauty,credit,34,1397.85,443.19,1059.74
+2024-10-28,central,electronics,debit,3,1237.97,220.4,7004.98
+2024-05-31,west,sporting,mobile,43,1180.57,319.92,2257.97
+2024-04-27,south,home,debit,37,758.12,495.73,6348.46
+2024-03-26,east,home,debit,14,169.61,429.88,4641.59
+2024-02-19,north,home,credit,31,606.87,186.65,85.26
+2025-04-06,north,grocery,credit,22,1108.25,366.91,5002.06
+2025-03-09,south,electronics,gift_card,18,647.86,338.85,1303.56
+2025-01-05,north,home,debit,47,18.53,275.3,8667.72
+2024-07-08,central,electronics,gift_card,49,154.45,215.02,4055.14
+2025-02-22,east,apparel,debit,42,683.01,82.24,7226.58
+2024-02-28,central,home,mobile,34,1263.66,492.85,3101.41
+2024-12-26,west,grocery,credit,43,1379.41,362.59,5208.87
+2024-05-07,north,home,cash,13,913.08,248.49,2296.77
+2024-10-16,east,apparel,cash,25,972.93,462.59,377.68
+2024-12-29,north,grocery,debit,23,1920.96,103.99,2345.29
+2024-12-06,north,apparel,cash,39,720.19,154.25,6854.38
+2024-09-28,south,sporting,credit,10,1498.27,430.9,2433.21
+2025-01-31,west,electronics,mobile,37,1422.51,246.51,6329.31
+2024-04-06,south,beauty,mobile,12,1060.65,57.2,2670.1
+2024-09-16,south,home,debit,13,1639.27,146.91,5657.2
+2025-04-12,south,electronics,cash,8,129.36,143.47,3665.25
+2024-01-04,central,sporting,debit,4,255.32,99.58,3613.71
+2024-05-27,west,home,credit,7,455.52,124.61,4749.83
+2024-02-08,central,apparel,mobile,34,389.34,332.42,8062.6
+2024-01-14,central,home,cash,13,633.0,220.77,3521.04
+2025-06-14,east,home,mobile,6,1598.8,266.76,7640.52
+2024-08-23,north,home,credit,6,468.61,409.63,9045.82
+2025-06-10,south,electronics,gift_card,2,1770.98,280.99,5919.25
+2024-01-28,north,home,credit,27,53.89,109.44,2827.65
+2025-01-30,east,grocery,mobile,19,265.31,457.0,8590.54
+2024-09-06,north,home,cash,35,205.09,467.11,256.92
+2024-02-03,west,beauty,gift_card,7,160.68,279.55,5490.8
+2024-03-08,central,beauty,gift_card,16,857.1,341.27,4721.37
+2025-04-04,south,grocery,mobile,16,1917.3,150.02,5005.75
+2024-04-11,east,beauty,debit,23,190.47,482.47,6918.82
+2024-05-29,north,beauty,credit,37,1442.93,210.81,1512.38
+2024-07-14,west,grocery,mobile,44,1840.89,298.5,5214.83
+2024-05-02,north,home,debit,17,1573.51,77.31,3420.66
+2024-04-02,west,sporting,cash,12,1590.6,390.94,479.62
+2024-05-14,south,electronics,cash,39,1077.58,292.25,2450.58
+2024-11-20,central,beauty,gift_card,27,1287.93,432.9,8800.91
+2024-02-24,north,sporting,cash,15,352.63,85.72,6296.08
+2025-01-26,south,grocery,cash,22,820.73,361.0,5667.6
+2024-04-17,east,beauty,mobile,9,1442.14,278.14,1869.83
+2025-03-13,central,electronics,gift_card,16,117.39,421.61,9123.24
+2024-11-14,west,electronics,debit,30,1031.5,246.72,1864.91
+2025-05-27,north,sporting,cash,31,1968.02,422.71,9789.46
+2024-12-28,south,beauty,debit,45,527.09,100.29,204.05
+2024-05-27,west,electronics,mobile,14,419.53,310.84,2172.95
+2024-06-21,east,apparel,debit,21,688.98,359.56,770.94
+2024-12-05,east,home,cash,30,1158.03,209.3,4837.6
+2025-06-02,west,home,mobile,29,1916.12,245.09,9000.2
+2025-02-24,south,apparel,gift_card,26,767.95,95.79,8058.25
+2024-02-13,north,apparel,cash,11,16.49,69.45,7158.1
+2024-12-18,south,sporting,gift_card,16,889.28,435.47,4487.54
+2024-06-10,east,grocery,debit,14,1552.82,172.84,3957.72
+2024-07-16,central,beauty,gift_card,40,1086.18,278.06,1830.94
+2024-04-29,east,sporting,cash,45,1540.72,108.55,2403.68
+2024-07-06,west,electronics,debit,3,1763.12,256.99,7716.26
+2025-02-04,east,apparel,credit,17,1179.95,314.38,7683.93
+2024-09-21,north,electronics,debit,5,1330.64,95.92,3511.16
+2025-01-07,south,home,debit,18,1330.15,141.91,2721.18
+2024-11-29,south,apparel,mobile,35,1136.2,280.57,2166.56
+2024-08-12,south,apparel,cash,13,1366.16,212.16,8939.78
+2024-02-05,west,grocery,mobile,49,1850.17,218.6,775.42
+2025-01-12,east,sporting,gift_card,40,536.3,175.61,7754.72
+2024-04-17,east,grocery,cash,5,1052.8,316.84,4931.62
+2024-10-21,west,beauty,cash,15,170.44,301.62,9486.18
+2024-08-04,east,apparel,cash,12,1723.35,127.65,9847.42
+2024-03-04,east,sporting,credit,29,8.01,75.66,4419.76
+2024-05-25,central,grocery,debit,48,205.79,273.99,619.57
+2024-09-05,central,sporting,credit,36,331.94,439.18,4131.05
+2024-10-18,central,sporting,debit,41,1196.45,369.78,768.19
+2025-04-28,central,apparel,credit,15,1751.32,488.92,9654.71
+2025-02-25,north,electronics,credit,21,810.38,421.53,5261.58
+2024-01-11,central,electronics,gift_card,42,606.55,480.79,194.22
+2024-11-03,north,beauty,gift_card,30,1627.16,306.62,9845.24
+2024-04-17,east,grocery,mobile,31,666.97,106.08,5242.38
+2024-03-14,north,sporting,gift_card,11,128.95,452.21,7222.83
+2024-08-27,central,beauty,mobile,5,1664.26,405.39,4314.91
+2025-05-29,central,electronics,mobile,29,303.02,450.41,5319.18
+2024-01-05,central,sporting,cash,12,411.18,154.69,3950.66
+2024-03-05,west,home,debit,21,386.04,0.93,8428.42
+2025-04-10,central,sporting,mobile,37,1848.29,433.94,7571.86
+2025-05-13,east,home,mobile,45,942.24,359.24,1044.6
+2024-10-25,central,beauty,mobile,17,38.95,278.99,1137.58
+2025-06-16,north,beauty,mobile,33,336.16,354.04,980.28
+2024-01-02,east,apparel,gift_card,5,1883.09,431.22,2192.45
+2024-04-26,east,home,gift_card,45,1505.44,219.17,7219.72
+2024-12-11,west,apparel,gift_card,39,1664.17,423.49,1159.23
+2024-12-04,north,electronics,gift_card,43,1760.72,323.23,4109.31
+2024-04-04,central,apparel,mobile,9,858.69,436.43,775.66
+2024-01-05,north,beauty,gift_card,23,1748.87,86.97,597.05
+2024-04-17,north,electronics,credit,48,1073.41,177.99,8069.28
+2024-07-13,west,home,credit,13,210.56,308.97,6373.93
+2025-06-22,east,apparel,mobile,4,1309.37,126.6,9811.34
+2024-05-03,west,home,credit,16,1281.04,276.53,2463.8
+2025-05-14,east,electronics,cash,35,1264.6,9.54,8008.8
+2024-11-09,east,beauty,mobile,21,1731.54,187.42,9494.89
+2024-04-28,south,apparel,cash,24,689.0,407.78,5854.59
+2024-02-12,east,grocery,debit,29,573.04,299.87,5364.41
+2024-05-15,north,grocery,gift_card,36,1058.92,403.89,9501.56
+2024-12-20,central,beauty,credit,26,1531.88,481.41,1271.36
+2024-12-21,north,beauty,gift_card,36,929.82,426.63,4297.96
+2025-02-21,east,home,cash,17,1133.52,250.74,4459.44
+2024-10-20,south,sporting,cash,16,945.59,421.79,5029.94
+2025-04-05,central,grocery,debit,6,692.47,219.46,7942.04
+2024-08-31,central,electronics,mobile,11,1364.13,202.51,354.47
+2024-06-17,west,grocery,debit,36,1556.18,177.1,1160.55
+2024-07-23,north,home,mobile,46,660.96,343.03,6682.21
+2024-05-22,central,sporting,cash,28,674.23,228.29,7403.77
+2024-11-02,central,grocery,gift_card,46,1941.86,90.02,6937.26
+2024-11-01,south,grocery,credit,9,414.91,375.73,2017.28
+2025-03-06,west,apparel,credit,40,1114.39,258.47,3173.55
+2024-10-12,south,electronics,gift_card,20,85.95,380.47,6009.95
+2024-04-22,south,apparel,credit,35,1934.78,208.03,9315.29
+2024-10-15,central,home,credit,42,822.16,81.87,5878.41
+2025-05-11,south,beauty,gift_card,38,381.94,306.71,6554.4
+2025-06-07,south,home,credit,19,1881.15,166.84,6775.93
+2024-07-04,east,grocery,cash,19,460.46,299.76,1249.87
+2024-12-04,north,sporting,debit,22,600.66,266.48,3711.86
+2024-09-30,north,electronics,gift_card,26,372.98,446.47,9822.02
+2024-01-19,south,apparel,mobile,5,1715.02,166.74,3967.85
+2024-04-24,south,home,mobile,24,783.54,79.13,716.91
+2025-06-13,east,electronics,gift_card,37,210.63,195.64,8998.12
+2024-11-17,east,sporting,gift_card,35,156.21,3.22,3764.42
+2024-05-10,north,beauty,gift_card,32,704.66,197.49,463.68
+2024-06-23,east,sporting,gift_card,35,1264.07,4.16,1966.57
+2024-12-30,west,apparel,debit,45,1706.43,465.92,7768.13
+2025-02-18,east,beauty,debit,40,1164.33,388.05,6065.09

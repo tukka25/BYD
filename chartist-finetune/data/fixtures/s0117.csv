@@ -1,241 +1,241 @@
-Invoice Date,Project Phase,Cost Type,Vendor Region,Invoice Amount,Labor Hours,Change Order Count
-2025-01-07,Roofing,Materials,Southwest,29919.65,509,10
-2024-09-19,Roofing,Permits,Northeast,480933.67,13,9
-2024-07-18,Site Preparation,Overhead,Southwest,121851.33,635,3
-2024-06-18,Electrical,Equipment Rental,Southeast,22939.07,85,6
-2024-06-15,Plumbing,Permits,Midwest,92090.95,822,7
-2024-11-16,Site Preparation,Equipment Rental,Mountain West,360921.76,43,11
-2024-01-27,Foundation,Overhead,Midwest,143626.8,553,11
-2024-10-17,Roofing,Materials,Northeast,5690.97,732,1
-2024-11-21,Foundation,Overhead,Northeast,314707.16,326,12
-2025-03-19,Finishing,Labor,Southeast,437486.12,849,6
-2025-04-20,Plumbing,Overhead,Southwest,155472.82,503,8
-2024-03-31,Electrical,Overhead,West Coast,238020.83,474,7
-2025-02-13,Site Preparation,Materials,West Coast,30308.25,596,5
-2025-03-01,Electrical,Labor,Southwest,389936.22,887,7
-2024-03-20,Site Preparation,Subcontractor,Southwest,399138.47,32,12
-2025-05-04,Site Preparation,Permits,Northeast,398029.04,15,12
-2024-07-12,Foundation,Overhead,Southeast,105877.18,578,8
-2024-03-22,Framing,Equipment Rental,West Coast,396942.31,860,12
-2024-04-15,Site Preparation,Overhead,West Coast,341357.48,234,6
-2024-12-10,Plumbing,Equipment Rental,Midwest,7309.91,195,2
-2025-02-21,Site Preparation,Permits,West Coast,379641.04,156,6
-2024-01-12,Finishing,Labor,Mountain West,411427.44,549,5
-2024-06-06,Plumbing,Labor,Midwest,76634.2,669,2
-2024-08-26,Framing,Materials,Northeast,65575.3,642,4
-2025-01-24,Plumbing,Permits,Northeast,363805.45,220,11
-2024-02-27,Roofing,Materials,Midwest,270087.99,945,2
-2024-12-19,Foundation,Materials,Northeast,88777.93,382,3
-2024-06-28,Electrical,Overhead,Northeast,75223.41,183,3
-2025-01-28,Finishing,Overhead,Southwest,227083.7,134,3
-2025-06-16,Site Preparation,Subcontractor,Midwest,459171.89,891,7
-2025-02-09,Foundation,Materials,Midwest,380832.94,489,6
-2024-09-05,Electrical,Equipment Rental,Southwest,188019.51,820,9
-2025-03-27,Site Preparation,Subcontractor,Southwest,251568.56,391,6
-2024-06-06,Site Preparation,Labor,Southeast,38614.86,774,7
-2025-01-27,Roofing,Permits,Northeast,362321.59,573,13
-2024-10-13,Electrical,Subcontractor,Mountain West,315221.87,106,5
-2024-10-13,Electrical,Overhead,West Coast,154429.99,563,9
-2025-01-05,Electrical,Subcontractor,West Coast,337006.28,626,3
-2024-03-25,Framing,Materials,Midwest,35979.55,482,8
-2024-02-16,Roofing,Subcontractor,Northeast,181015.21,926,7
-2024-01-04,Plumbing,Subcontractor,West Coast,306697.0,865,7
-2025-01-15,Roofing,Materials,Southeast,158762.06,3,6
-2024-04-28,Roofing,Labor,Northeast,421819.47,378,13
-2025-02-21,Framing,Overhead,Northeast,268398.57,46,13
-2024-10-03,Foundation,Overhead,West Coast,4977.16,500,5
-2024-07-12,Framing,Materials,Southeast,210625.4,688,11
-2024-04-12,Framing,Overhead,Southeast,211344.02,562,1
-2025-02-06,Roofing,Permits,Southwest,259154.91,72,8
-2024-10-13,Roofing,Subcontractor,Southeast,87628.14,883,9
-2024-10-18,Framing,Labor,Mountain West,395342.34,825,13
-2024-03-28,Finishing,Materials,Southwest,379645.84,248,10
-2024-12-17,Finishing,Equipment Rental,Northeast,193843.48,605,1
-2025-01-25,Site Preparation,Materials,Southwest,449164.89,566,8
-2024-09-25,Foundation,Labor,Mountain West,128306.29,923,13
-2025-03-14,Finishing,Overhead,West Coast,265698.98,689,14
-2025-01-28,Foundation,Labor,Southwest,406388.19,325,4
-2024-04-13,Site Preparation,Permits,West Coast,143736.27,839,12
-2024-09-14,Roofing,Permits,Midwest,355666.04,427,8
-2024-10-26,Electrical,Equipment Rental,Southwest,182662.29,304,12
-2024-03-02,Finishing,Subcontractor,Southeast,229746.66,241,10
-2024-07-16,Foundation,Permits,Midwest,459914.06,724,5
-2024-06-20,Foundation,Materials,Mountain West,96812.1,594,2
-2025-06-02,Electrical,Permits,West Coast,441369.63,527,4
-2025-01-11,Site Preparation,Permits,Northeast,8554.1,154,6
-2024-01-15,Site Preparation,Equipment Rental,Mountain West,157936.05,674,3
-2025-06-08,Site Preparation,Permits,West Coast,87109.7,919,5
-2024-04-20,Plumbing,Subcontractor,Northeast,170637.0,919,7
-2024-08-28,Electrical,Equipment Rental,Mountain West,329604.98,258,1
-2025-06-10,Roofing,Materials,Midwest,253348.05,710,3
-2024-12-30,Foundation,Subcontractor,Mountain West,410459.52,557,13
-2025-06-15,Roofing,Labor,Northeast,298139.16,72,13
-2024-11-30,Foundation,Subcontractor,Midwest,46060.13,931,6
-2025-03-08,Framing,Equipment Rental,Southeast,279477.71,823,10
-2024-02-24,Framing,Equipment Rental,Southeast,470669.93,904,8
-2024-01-14,Foundation,Permits,Northeast,268803.92,886,10
-2025-02-19,Site Preparation,Subcontractor,Southwest,283933.35,36,10
-2025-05-05,Electrical,Materials,Mountain West,88512.25,887,3
-2024-03-07,Framing,Overhead,West Coast,280652.65,861,11
-2024-03-20,Finishing,Overhead,Northeast,54911.6,521,7
-2024-01-29,Electrical,Equipment Rental,Mountain West,159124.99,755,4
-2025-03-20,Site Preparation,Overhead,Southwest,80331.78,651,4
-2024-08-06,Electrical,Materials,West Coast,249435.94,460,7
-2025-03-09,Roofing,Subcontractor,Mountain West,280657.36,355,6
-2024-01-06,Foundation,Equipment Rental,West Coast,357897.43,663,3
-2024-12-28,Roofing,Labor,Mountain West,64068.98,899,12
-2024-12-24,Roofing,Equipment Rental,Mountain West,367588.49,774,8
-2025-01-04,Plumbing,Permits,Northeast,379234.25,491,8
-2024-10-23,Foundation,Labor,Northeast,226121.38,82,4
-2025-02-11,Foundation,Labor,West Coast,38594.96,555,6
-2025-06-01,Finishing,Permits,Midwest,118066.45,458,7
-2024-07-01,Framing,Permits,Southeast,232795.83,693,11
-2024-05-29,Roofing,Subcontractor,Southwest,40519.12,688,6
-2024-11-03,Plumbing,Equipment Rental,Mountain West,28231.37,754,14
-2024-04-14,Site Preparation,Overhead,Midwest,164749.12,929,6
-2024-01-04,Finishing,Materials,Northeast,220754.6,397,3
-2024-03-04,Site Preparation,Subcontractor,Northeast,236203.62,730,2
-2025-05-19,Finishing,Subcontractor,Mountain West,388358.98,768,6
-2025-05-29,Framing,Overhead,Southeast,111114.97,466,1
-2024-03-10,Finishing,Overhead,Southwest,26740.09,590,4
-2025-02-14,Framing,Overhead,Northeast,443405.97,757,3
-2024-04-19,Plumbing,Materials,Northeast,191654.3,239,3
-2024-03-05,Finishing,Labor,Southeast,80136.45,798,1
-2025-03-25,Framing,Equipment Rental,Northeast,324816.07,510,8
-2024-01-13,Site Preparation,Labor,Southeast,272419.84,16,9
-2025-02-14,Finishing,Permits,Midwest,409005.82,457,0
-2025-04-21,Electrical,Subcontractor,Northeast,225554.61,777,1
-2024-02-01,Finishing,Permits,Mountain West,161758.37,855,1
-2024-04-18,Finishing,Permits,West Coast,33876.44,25,7
-2024-05-12,Framing,Materials,Midwest,279978.28,436,5
-2024-04-12,Foundation,Overhead,Southeast,120883.75,191,2
-2024-08-07,Plumbing,Subcontractor,Southwest,417268.7,890,1
-2024-07-14,Framing,Labor,West Coast,281871.99,440,10
-2024-09-12,Roofing,Subcontractor,West Coast,455039.35,400,9
-2025-03-31,Foundation,Equipment Rental,Southeast,430763.26,201,7
-2024-11-05,Plumbing,Subcontractor,Northeast,54000.88,949,1
-2024-03-16,Plumbing,Subcontractor,Southwest,263910.33,377,1
-2024-07-14,Electrical,Permits,Southwest,480391.2,570,3
-2024-03-25,Electrical,Labor,Midwest,294107.7,557,13
-2024-08-22,Plumbing,Permits,Mountain West,221207.28,883,9
-2024-03-01,Plumbing,Labor,Southwest,179053.32,247,1
-2024-09-10,Plumbing,Subcontractor,Midwest,415301.21,725,10
-2025-05-11,Plumbing,Permits,Midwest,325990.67,541,1
-2024-01-10,Framing,Overhead,Southeast,11040.83,278,6
-2025-02-09,Electrical,Materials,Northeast,211613.98,750,1
-2024-06-04,Plumbing,Overhead,West Coast,394318.42,608,8
-2024-10-13,Framing,Permits,Mountain West,467643.06,672,6
-2024-04-19,Plumbing,Overhead,Mountain West,19740.49,615,9
-2024-03-12,Foundation,Subcontractor,Northeast,365429.08,138,3
-2025-06-13,Framing,Materials,Southwest,362554.03,577,13
-2025-01-08,Site Preparation,Permits,Midwest,371557.56,562,11
-2025-02-18,Foundation,Permits,Northeast,477272.9,871,6
-2025-03-05,Framing,Materials,West Coast,444793.81,165,9
-2024-04-22,Roofing,Subcontractor,Northeast,106238.49,373,7
-2025-03-25,Finishing,Subcontractor,Mountain West,412851.61,48,1
-2024-07-07,Site Preparation,Overhead,Southeast,468478.51,654,6
-2024-08-27,Foundation,Permits,Northeast,86515.9,821,6
-2025-01-03,Finishing,Subcontractor,Southwest,100931.76,474,5
-2025-06-10,Roofing,Equipment Rental,Southeast,271993.36,800,1
-2024-06-01,Framing,Materials,Southwest,18226.26,367,9
-2024-04-25,Roofing,Permits,Southwest,392798.89,656,9
-2024-04-09,Framing,Materials,Northeast,191777.09,232,7
-2024-12-23,Roofing,Materials,Midwest,144829.71,29,6
-2024-07-14,Roofing,Overhead,Mountain West,15915.08,313,9
-2024-07-16,Electrical,Labor,Southeast,166547.98,627,12
-2024-10-06,Electrical,Materials,Northeast,460834.8,523,4
-2024-01-21,Framing,Permits,Northeast,421896.74,319,10
-2024-06-03,Site Preparation,Permits,Northeast,12983.3,176,4
-2024-12-20,Framing,Labor,Southeast,222508.61,746,4
-2024-05-01,Foundation,Materials,Midwest,369788.89,923,1
-2025-02-25,Foundation,Materials,Southeast,241043.19,693,5
-2024-10-08,Plumbing,Permits,Southeast,427993.84,817,2
-2024-10-23,Finishing,Permits,Southeast,132291.86,262,10
-2024-06-29,Site Preparation,Overhead,Northeast,292326.63,651,2
-2025-04-13,Foundation,Labor,Northeast,362014.9,670,12
-2024-05-29,Site Preparation,Materials,Southwest,87867.01,412,5
-2024-11-02,Plumbing,Labor,Mountain West,367396.15,515,10
-2025-01-30,Site Preparation,Labor,Southeast,141711.52,2,7
-2024-05-03,Finishing,Labor,Mountain West,249249.61,897,10
-2024-04-05,Site Preparation,Equipment Rental,West Coast,218840.09,755,9
-2024-03-16,Roofing,Materials,Northeast,461494.16,493,10
-2024-12-27,Roofing,Overhead,Southwest,328017.26,679,6
-2025-03-06,Site Preparation,Permits,Mountain West,446197.63,784,0
-2024-12-03,Finishing,Permits,Southwest,51985.91,283,7
-2025-06-14,Site Preparation,Labor,Southeast,206250.03,21,8
-2024-04-27,Foundation,Equipment Rental,Southwest,28180.4,883,1
-2024-08-17,Plumbing,Overhead,Northeast,459843.6,609,11
-2024-10-26,Framing,Permits,Southeast,104845.12,680,13
-2025-01-30,Site Preparation,Equipment Rental,Midwest,83671.67,430,8
-2024-02-18,Framing,Subcontractor,Southeast,108387.68,321,6
-2025-01-19,Foundation,Labor,Southwest,328276.5,734,8
-2024-05-21,Finishing,Permits,Northeast,479847.91,797,5
-2024-05-19,Roofing,Permits,West Coast,214669.69,467,11
-2025-03-31,Foundation,Materials,Southwest,26342.62,407,7
-2024-07-02,Roofing,Permits,West Coast,105507.61,861,2
-2025-01-20,Electrical,Labor,Mountain West,319494.41,877,10
-2025-01-08,Roofing,Overhead,Southeast,328637.3,398,4
-2025-04-18,Finishing,Labor,Northeast,428718.22,148,2
-2025-02-23,Roofing,Subcontractor,Midwest,444860.94,855,9
-2025-03-02,Electrical,Overhead,Northeast,156436.96,784,3
-2024-01-07,Site Preparation,Overhead,Southwest,337031.3,491,13
-2025-01-12,Foundation,Labor,Midwest,352371.9,553,9
-2025-02-22,Foundation,Permits,West Coast,467019.96,279,8
-2025-06-17,Plumbing,Materials,Southwest,422403.85,845,9
-2025-03-20,Electrical,Equipment Rental,Mountain West,183855.01,491,1
-2024-12-27,Plumbing,Materials,Southeast,417111.66,677,8
-2024-04-25,Roofing,Materials,Southwest,266544.72,410,5
-2025-01-12,Finishing,Materials,Southwest,320664.33,550,8
-2024-10-31,Foundation,Equipment Rental,West Coast,345775.53,569,2
-2025-06-05,Site Preparation,Materials,Southeast,84670.03,277,10
-2024-08-03,Framing,Labor,Northeast,139327.74,105,6
-2024-01-13,Plumbing,Permits,Southeast,209561.54,732,4
-2024-06-01,Foundation,Equipment Rental,West Coast,69556.2,216,3
-2025-06-05,Finishing,Materials,Mountain West,410243.61,542,4
-2024-01-06,Foundation,Equipment Rental,West Coast,410449.82,801,5
-2024-02-02,Finishing,Labor,Southwest,66552.21,177,8
-2025-06-02,Site Preparation,Permits,Southwest,380736.46,392,7
-2024-12-02,Framing,Equipment Rental,West Coast,127467.88,723,2
-2024-06-05,Site Preparation,Labor,Mountain West,413591.35,385,2
-2024-06-02,Framing,Labor,West Coast,394078.93,581,9
-2025-01-29,Foundation,Equipment Rental,Midwest,62644.98,613,13
-2024-06-30,Framing,Overhead,Mountain West,169617.4,452,2
-2024-03-13,Finishing,Subcontractor,Midwest,448152.16,803,6
-2025-06-19,Plumbing,Subcontractor,West Coast,2855.17,11,6
-2025-02-16,Roofing,Permits,Midwest,234306.71,728,1
-2025-04-20,Electrical,Equipment Rental,Southeast,254720.72,98,4
-2024-12-14,Roofing,Materials,Mountain West,25777.12,425,8
-2025-04-25,Roofing,Equipment Rental,Mountain West,246424.36,211,3
-2024-01-31,Roofing,Subcontractor,Mountain West,333549.48,2,3
-2025-02-13,Site Preparation,Labor,Mountain West,121409.6,586,1
-2024-09-06,Plumbing,Labor,Southeast,8903.34,160,6
-2025-03-23,Site Preparation,Materials,West Coast,39498.97,207,8
-2025-02-14,Finishing,Labor,Southwest,74123.37,360,10
-2024-03-12,Framing,Permits,West Coast,202903.36,440,12
-2024-06-15,Roofing,Materials,Midwest,233038.29,799,9
-2024-05-19,Electrical,Permits,Southeast,473307.88,720,13
-2024-09-09,Finishing,Permits,West Coast,59832.81,163,0
-2024-03-07,Finishing,Subcontractor,West Coast,299721.35,115,13
-2024-01-05,Site Preparation,Overhead,Southeast,360415.62,21,10
-2025-01-03,Framing,Labor,Southwest,78185.9,619,12
-2024-02-04,Foundation,Materials,Midwest,428174.83,663,11
-2024-06-13,Finishing,Materials,Southwest,172165.32,498,13
-2024-07-31,Plumbing,Labor,Mountain West,484608.46,775,9
-2024-07-19,Electrical,Labor,Southwest,445614.71,63,1
-2024-11-29,Framing,Equipment Rental,Mountain West,122209.97,888,1
-2025-03-11,Site Preparation,Materials,Mountain West,108506.77,689,11
-2024-06-11,Electrical,Subcontractor,Midwest,15680.43,610,7
-2024-07-29,Roofing,Permits,Midwest,175106.51,11,13
-2025-04-15,Plumbing,Materials,Northeast,310002.32,217,9
-2025-01-13,Electrical,Materials,Midwest,163207.43,731,2
-2025-05-06,Plumbing,Subcontractor,Midwest,347592.93,781,9
-2024-02-28,Foundation,Materials,West Coast,180840.77,361,13
-2025-03-07,Plumbing,Overhead,Southwest,289306.81,572,14
-2025-01-23,Electrical,Subcontractor,Southeast,19412.08,464,12
-2024-06-21,Framing,Materials,Mountain West,356363.28,82,11
-2024-06-12,Finishing,Materials,Southeast,328865.34,437,5
-2024-06-09,Finishing,Overhead,Southwest,252068.23,590,8
-2024-12-14,Roofing,Materials,Southeast,80673.88,822,2
-2024-07-18,Foundation,Labor,Northeast,371747.62,863,10
-2024-02-14,Foundation,Equipment Rental,Southeast,468591.83,299,7
-2024-06-05,Finishing,Equipment Rental,Southeast,126206.08,316,8
+sess_dt,chnl_grp,dvc_type,ctry_cd,sess_cnt,conv_cnt,tot_rev,bounce_rt
+2025-04-19,organic_search,tablet,GB,45514,629,173744.74,8.9
+2025-03-13,display,mobile,DE,142508,2696,27960.28,16.19
+2024-08-23,referral,mobile,CA,216885,6087,140587.98,97.81
+2024-11-07,email,mobile,BR,239432,2266,277612.74,11.52
+2024-05-31,social,mobile,GB,162503,10133,202728.59,71.46
+2024-07-13,email,tablet,BR,136257,7353,333984.14,67.13
+2025-02-28,organic_search,desktop,US,25432,1571,268238.18,1.86
+2024-06-05,referral,desktop,US,207525,5278,242342.21,90.72
+2025-06-09,organic_search,mobile,AU,140692,2072,210209.43,49.43
+2025-06-18,direct,mobile,CA,55352,7185,114269.87,69.46
+2024-09-21,organic_search,desktop,CA,20679,8746,43530.07,94.21
+2024-07-25,organic_search,tablet,BR,233485,11150,325494.7,77.86
+2024-03-02,social,tablet,AU,210024,10678,135807.75,95.66
+2025-06-23,display,tablet,CA,44125,877,313184.55,12.04
+2024-08-19,social,desktop,GB,154686,11526,121028.81,48.31
+2025-05-06,paid_search,tablet,CA,178919,11838,48824.82,38.47
+2025-03-18,social,mobile,FR,145041,6815,234923.14,19.12
+2024-03-28,paid_search,tablet,GB,29588,10517,211028.23,58.08
+2024-08-28,email,mobile,AU,122472,5109,381373.88,96.11
+2024-07-01,direct,desktop,FR,248135,11285,188835.98,18.07
+2025-01-03,social,tablet,IN,51780,1593,196517.03,62.28
+2024-02-24,direct,mobile,CA,67545,2533,17279.1,42.09
+2024-01-13,organic_search,mobile,US,232062,1256,6245.21,27.0
+2024-02-16,email,tablet,CA,142550,195,367170.81,25.36
+2024-02-26,display,tablet,DE,10605,7041,463088.52,99.69
+2024-03-27,email,mobile,IN,212013,1463,406161.18,9.21
+2025-04-27,social,tablet,CA,208905,9722,222705.12,84.69
+2024-09-03,display,tablet,US,228291,4075,390599.03,82.99
+2025-05-14,display,tablet,US,149664,2980,15311.78,58.38
+2024-09-03,paid_search,tablet,GB,171786,6701,31041.44,65.98
+2024-04-06,referral,desktop,IN,225126,4574,62361.83,73.36
+2024-10-31,organic_search,tablet,IN,60181,11277,146773.21,47.55
+2024-10-11,paid_search,tablet,US,14657,746,400299.48,83.44
+2025-01-29,referral,tablet,FR,23657,3206,120983.01,36.36
+2024-11-07,social,mobile,IN,132404,875,153352.58,53.13
+2025-05-24,display,tablet,DE,192695,10963,466215.29,20.69
+2024-09-18,display,mobile,AU,149386,3749,442406.26,73.95
+2025-01-18,direct,mobile,AU,240979,10992,293871.23,78.48
+2025-03-31,display,tablet,CA,86486,5557,468027.17,38.68
+2024-03-11,direct,mobile,IN,51095,10120,66443.55,8.62
+2024-12-29,social,tablet,BR,95504,1440,137225.0,25.9
+2025-04-24,display,tablet,BR,139861,7915,314057.83,69.54
+2024-04-28,organic_search,mobile,DE,198019,11758,390717.15,32.29
+2025-02-18,direct,desktop,DE,77784,6391,9352.21,9.83
+2024-06-08,display,tablet,DE,50188,2185,36847.89,23.11
+2024-05-06,organic_search,tablet,GB,148629,1396,179073.55,12.36
+2024-08-31,organic_search,tablet,US,216716,11668,38601.45,26.14
+2024-05-05,organic_search,desktop,FR,248251,261,403980.91,85.29
+2024-10-09,referral,tablet,US,78244,8559,407718.97,23.53
+2025-03-25,social,tablet,CA,164042,3032,473372.44,46.85
+2024-01-07,organic_search,desktop,DE,112727,1773,377031.28,39.06
+2024-08-31,email,mobile,AU,238232,10144,441396.45,66.02
+2024-07-08,paid_search,desktop,DE,114616,4750,238954.97,35.95
+2024-05-19,display,tablet,CA,81772,8400,61241.7,81.89
+2024-05-26,social,desktop,FR,247098,11607,126711.35,85.65
+2025-06-15,display,mobile,FR,76064,10790,76442.61,41.08
+2024-11-26,display,tablet,AU,110779,9861,203974.24,84.94
+2024-06-17,organic_search,desktop,GB,125334,6762,240206.35,77.18
+2025-04-07,direct,desktop,US,84265,11609,10268.08,27.27
+2024-09-12,referral,desktop,IN,74384,11127,89116.96,61.49
+2024-10-05,referral,tablet,AU,239879,10749,25374.85,54.89
+2024-02-02,referral,mobile,DE,161426,8596,301970.81,69.96
+2024-01-31,display,mobile,DE,216666,4849,172680.51,82.46
+2024-06-26,social,mobile,BR,9342,2412,472594.49,77.57
+2024-02-04,social,mobile,DE,85785,5356,433605.18,1.42
+2024-10-16,paid_search,tablet,AU,110435,2656,199731.34,1.84
+2024-05-21,direct,mobile,US,130855,10874,457423.93,76.18
+2025-01-14,referral,tablet,AU,164699,11877,327606.27,5.13
+2024-04-21,referral,tablet,AU,116670,8715,428114.53,60.81
+2024-12-05,social,desktop,FR,16843,8086,423899.44,4.35
+2025-04-27,display,mobile,US,199442,6068,1203.65,60.69
+2024-10-03,social,tablet,DE,213357,3936,471968.47,36.16
+2024-05-02,paid_search,desktop,BR,133747,8024,331663.59,1.12
+2024-02-05,referral,tablet,FR,185584,7380,223011.55,1.84
+2024-10-14,referral,mobile,US,20179,1889,378788.17,37.81
+2024-02-11,display,desktop,IN,135743,2154,215469.72,39.02
+2025-02-05,social,mobile,AU,15998,2292,310854.57,77.23
+2024-06-05,email,desktop,IN,96621,3396,467853.31,63.32
+2025-06-15,paid_search,mobile,CA,214694,3280,65967.65,2.68
+2024-02-03,referral,mobile,US,141918,2816,268806.95,95.75
+2024-03-12,social,desktop,FR,38020,1837,249116.92,48.77
+2024-03-22,direct,mobile,US,177202,5829,144835.55,6.16
+2024-07-10,paid_search,desktop,US,7472,6547,246582.15,31.02
+2024-07-29,direct,desktop,US,178099,6587,188818.88,49.79
+2024-04-10,direct,desktop,IN,54441,9428,154052.55,60.12
+2025-04-22,referral,desktop,BR,110297,360,124567.94,72.08
+2024-12-14,organic_search,desktop,AU,72284,9076,148490.37,12.65
+2024-07-18,referral,mobile,BR,127256,2434,407431.78,86.32
+2025-04-23,direct,desktop,AU,141449,1158,152815.38,54.5
+2024-05-30,email,tablet,GB,31952,9128,22681.64,61.6
+2025-04-28,email,tablet,AU,87626,9362,161383.33,2.64
+2024-06-02,paid_search,tablet,DE,196100,6095,439798.4,6.5
+2024-12-21,referral,desktop,FR,228,4893,24282.61,14.02
+2024-02-20,social,mobile,DE,50213,732,348220.65,81.22
+2024-03-17,email,mobile,FR,197295,6638,423997.87,92.31
+2024-10-17,display,mobile,BR,66096,6021,172671.25,37.69
+2025-03-21,email,desktop,BR,209957,9909,170679.09,36.41
+2024-09-28,direct,mobile,FR,43970,10260,178466.28,35.25
+2024-11-15,organic_search,tablet,CA,192679,9377,11193.65,90.77
+2025-04-29,paid_search,tablet,FR,59502,9728,152871.43,43.99
+2024-09-24,display,tablet,DE,76462,9635,429362.41,5.61
+2024-06-21,referral,desktop,DE,27026,1862,306019.29,46.9
+2024-04-13,display,mobile,BR,215041,6025,465649.9,29.18
+2024-06-19,paid_search,mobile,US,241969,9435,265081.83,6.6
+2024-04-11,social,desktop,GB,135331,7693,138835.93,97.78
+2024-10-09,social,tablet,IN,237723,4273,329986.81,71.07
+2025-05-16,email,desktop,US,155066,5212,298508.24,11.84
+2025-03-09,social,tablet,IN,20190,8693,389233.8,25.52
+2024-02-04,social,mobile,FR,126512,46,26028.69,50.57
+2024-04-05,organic_search,mobile,CA,92059,68,110562.18,15.32
+2024-06-09,direct,mobile,IN,82603,11221,261432.52,49.81
+2024-12-28,display,desktop,US,101635,83,52957.06,34.49
+2024-07-08,referral,mobile,FR,29961,1640,33114.96,39.71
+2024-10-13,direct,tablet,CA,247770,2039,257375.39,77.12
+2024-07-23,social,desktop,FR,215390,2382,263432.01,22.64
+2025-01-12,email,desktop,BR,55993,10916,366324.96,34.36
+2025-05-27,social,tablet,CA,94158,5081,294720.41,46.04
+2024-05-12,paid_search,mobile,CA,175411,4450,478513.96,71.11
+2024-10-20,display,tablet,GB,114313,1540,446396.0,54.9
+2024-12-23,display,mobile,GB,71729,8223,108560.26,10.8
+2025-05-16,email,desktop,BR,93581,3399,404322.76,13.61
+2024-03-09,social,mobile,DE,106417,8235,473413.24,76.54
+2024-09-21,display,desktop,CA,177612,11094,17504.04,52.23
+2024-05-23,paid_search,tablet,FR,142606,7402,313296.17,1.91
+2024-08-26,social,mobile,US,27654,11635,182652.19,85.18
+2024-05-05,email,tablet,CA,79287,9083,302923.48,32.54
+2024-02-16,referral,mobile,CA,66148,9769,125693.2,54.4
+2024-03-02,referral,mobile,US,13208,8178,26208.38,43.81
+2024-10-27,paid_search,tablet,CA,130001,3934,227485.63,63.12
+2024-10-20,organic_search,mobile,CA,165605,458,230800.81,0.15
+2024-06-29,direct,mobile,US,105491,3167,241175.61,69.41
+2024-02-28,direct,mobile,AU,120726,7135,217683.15,16.52
+2024-04-15,direct,desktop,US,158970,1546,378166.99,33.73
+2024-09-12,email,desktop,AU,54095,3804,363733.7,19.42
+2025-05-31,paid_search,tablet,DE,142242,9819,465532.3,80.0
+2024-01-07,display,mobile,FR,194331,6519,53754.04,45.93
+2024-01-15,organic_search,tablet,FR,157220,5571,317796.06,33.8
+2024-06-22,social,tablet,BR,236830,735,361839.7,38.02
+2024-09-01,email,mobile,FR,55748,11677,132048.07,13.11
+2025-01-08,organic_search,mobile,AU,216716,1756,441228.0,94.6
+2024-05-05,organic_search,tablet,BR,134445,7861,236260.1,57.42
+2025-02-16,organic_search,tablet,AU,54582,8646,414090.73,84.99
+2024-03-25,referral,desktop,DE,168997,7556,270840.73,29.34
+2024-05-04,social,desktop,DE,151158,8245,51989.63,14.28
+2025-02-12,display,tablet,AU,234143,7402,413686.0,10.09
+2024-07-09,direct,mobile,FR,239453,11368,104611.32,38.59
+2024-04-03,direct,desktop,BR,63966,1921,216891.45,85.15
+2024-12-19,paid_search,desktop,US,108063,4686,278081.62,33.47
+2025-01-25,social,mobile,BR,19712,11963,438306.47,54.49
+2024-08-13,paid_search,desktop,DE,7910,3024,73007.91,98.71
+2025-02-25,email,desktop,BR,3883,11145,145744.09,1.9
+2024-09-19,direct,mobile,DE,134693,2803,353411.68,6.61
+2024-03-13,display,tablet,BR,34287,10665,194760.36,74.05
+2025-02-28,social,desktop,US,79070,11455,74395.98,91.29
+2024-04-17,organic_search,mobile,IN,119461,6456,288625.63,77.45
+2024-02-09,display,desktop,IN,206104,2694,54117.86,20.73
+2024-03-05,paid_search,tablet,GB,137669,4008,312951.9,73.32
+2024-04-22,organic_search,desktop,FR,28743,2043,89620.82,40.45
+2024-10-03,organic_search,mobile,US,97629,8162,352095.93,63.78
+2024-11-10,paid_search,desktop,CA,52865,6938,124653.53,92.92
+2024-04-09,social,tablet,GB,164774,9841,46676.28,63.26
+2024-01-08,direct,mobile,US,248281,725,316268.6,1.53
+2025-01-24,display,mobile,IN,52062,4896,458955.29,84.01
+2024-07-12,direct,tablet,IN,60869,225,318043.26,86.12
+2024-12-01,social,mobile,BR,165800,4908,373115.1,19.52
+2024-01-09,direct,mobile,GB,234956,9406,435573.35,52.44
+2024-10-03,email,mobile,BR,231878,4493,304744.76,51.71
+2024-09-12,referral,mobile,DE,156260,9781,11381.85,63.83
+2025-01-18,email,tablet,DE,92853,10320,179805.25,71.36
+2025-05-20,social,mobile,FR,5284,7134,17385.02,2.82
+2024-09-16,referral,mobile,CA,248357,1038,402418.89,80.39
+2024-12-08,direct,desktop,AU,33886,11971,281108.36,81.3
+2025-02-13,paid_search,mobile,CA,47508,7693,91190.49,56.19
+2025-01-24,referral,tablet,AU,215396,9518,114679.0,44.66
+2024-01-24,display,desktop,FR,131562,1881,313976.35,34.98
+2025-01-30,display,desktop,FR,179865,2332,210961.14,84.61
+2025-04-16,social,desktop,US,227523,11303,45993.94,43.11
+2024-02-16,direct,desktop,CA,26265,467,170490.13,34.34
+2025-01-26,social,desktop,AU,99045,7574,268717.18,56.5
+2024-10-22,referral,desktop,CA,23060,9285,413299.7,76.0
+2024-01-12,display,desktop,FR,122771,3911,242362.75,18.87
+2024-04-01,social,tablet,BR,200596,7339,426150.72,9.43
+2025-05-14,organic_search,tablet,BR,6845,3946,318958.67,88.98
+2025-06-02,organic_search,desktop,IN,81292,8948,198175.86,56.01
+2024-06-18,referral,desktop,US,208308,353,313999.82,1.27
+2025-04-20,email,desktop,US,67380,8465,104954.13,14.85
+2024-09-21,email,mobile,IN,102462,5892,176096.54,86.16
+2024-01-26,email,desktop,FR,244707,9264,312641.25,80.27
+2024-06-15,display,mobile,GB,203264,2251,378364.44,37.91
+2025-06-02,email,mobile,DE,176035,10763,151328.39,85.57
+2024-10-29,referral,tablet,BR,244027,6284,69990.79,61.13
+2024-04-20,direct,tablet,GB,143395,6513,187294.15,83.73
+2024-09-09,paid_search,mobile,BR,81411,8330,55630.08,73.26
+2025-02-23,display,tablet,DE,187786,10766,449087.81,40.84
+2025-06-15,direct,tablet,CA,127971,3525,358664.4,21.24
+2024-09-08,organic_search,mobile,BR,69060,6108,424095.95,24.83
+2025-05-03,referral,tablet,DE,53302,515,288757.17,62.17
+2024-08-09,referral,tablet,CA,113574,11259,193277.29,53.15
+2024-09-01,email,desktop,IN,23797,1162,247920.92,36.36
+2024-12-13,direct,mobile,GB,121701,1889,478765.99,38.77
+2025-02-11,social,mobile,US,110029,9425,303942.48,67.44
+2025-02-17,social,desktop,CA,235064,788,63593.72,34.77
+2025-03-15,organic_search,desktop,AU,203070,6094,260429.44,87.79
+2025-04-19,organic_search,desktop,CA,174656,7245,335170.09,17.0
+2024-04-16,social,tablet,AU,247354,9968,388320.76,93.1
+2025-04-21,referral,tablet,DE,36480,8438,143717.33,0.56
+2024-09-28,paid_search,tablet,FR,88155,6772,425366.67,17.92
+2025-01-29,referral,desktop,BR,178858,8007,10883.57,70.83
+2025-01-05,display,mobile,US,29891,8024,88226.18,66.76
+2025-06-07,referral,tablet,DE,217256,478,239078.1,61.93
+2024-09-22,organic_search,tablet,US,123942,4510,146859.65,78.71
+2024-11-10,email,mobile,CA,221050,7663,359175.44,4.14
+2024-12-26,organic_search,desktop,US,234183,10513,296900.59,95.35
+2024-09-16,paid_search,tablet,AU,187473,10148,20020.54,87.99
+2024-02-29,organic_search,mobile,FR,69095,3931,464899.35,95.87
+2024-06-23,social,desktop,BR,6043,2696,359967.92,56.15
+2025-05-02,direct,desktop,US,130191,10434,339035.11,58.17
+2024-09-04,paid_search,desktop,AU,244874,4695,23414.78,58.18
+2025-03-04,organic_search,mobile,CA,18607,6984,236225.57,85.76
+2024-09-26,email,mobile,CA,101850,11111,268450.75,12.34
+2024-03-25,paid_search,tablet,FR,666,1387,251739.88,56.46
+2025-05-31,direct,tablet,IN,15344,690,351102.88,65.7
+2024-06-23,social,mobile,GB,204600,1897,90637.24,69.07
+2024-09-05,paid_search,desktop,GB,203904,1444,86147.67,73.72
+2025-05-30,paid_search,desktop,CA,220640,3710,438310.68,35.16
+2024-06-04,organic_search,mobile,GB,138034,9181,426002.14,38.69
+2024-03-07,referral,desktop,FR,102861,4411,67730.9,1.22
+2024-08-16,display,mobile,FR,174742,9822,414836.57,7.34
+2024-07-16,paid_search,desktop,BR,242116,6243,12202.27,30.25
+2024-06-22,email,mobile,FR,5274,7464,132041.81,41.73
+2025-06-13,email,desktop,BR,114569,4312,198611.01,12.2
+2025-01-08,referral,mobile,BR,161283,10028,418471.07,65.02
+2025-03-20,paid_search,mobile,CA,101964,5843,21886.74,96.82
+2024-10-09,display,desktop,GB,192819,771,31914.05,12.38
+2025-05-16,direct,mobile,CA,105035,2456,197047.89,77.46
+2024-01-29,referral,mobile,CA,550,10048,393046.72,33.03
+2025-06-18,paid_search,mobile,BR,155182,5748,47466.41,23.22
+2024-02-02,referral,mobile,DE,156319,2137,414776.6,5.07
+2024-03-07,paid_search,mobile,IN,45119,6021,141328.42,29.44
+2025-04-05,referral,desktop,IN,85969,9050,55073.42,36.81

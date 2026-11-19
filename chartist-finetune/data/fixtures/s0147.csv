@@ -1,241 +1,241 @@
-Trip Date,Vehicle Type,Route Zone,Driver Shift,Distance Driven Km,Fuel Consumed Liters,Stops Completed,Average Speed Kmh
-2024-09-08,Box Truck,North Metro,Morning,416.23,111.33,116,66.81
-2024-12-15,Motorcycle,South Industrial,Evening,341.63,108.86,93,68.78
-2024-06-14,Pickup Truck,Airport Corridor,Early Morning,10.6,178.98,33,100.66
-2024-11-20,Refrigerated Truck,South Industrial,Night,420.63,22.17,80,12.41
-2024-12-15,Box Truck,South Industrial,Early Morning,34.83,80.2,116,69.42
-2024-10-14,Refrigerated Truck,North Metro,Morning,255.59,81.29,42,95.86
-2025-05-21,Cargo Van,West Coast,Night,362.35,32.83,58,13.27
-2024-03-21,Refrigerated Truck,North Metro,Afternoon,106.88,142.94,14,100.73
-2024-07-10,Refrigerated Truck,Central Downtown,Evening,71.5,109.4,102,40.61
-2024-02-14,Box Truck,Central Downtown,Morning,163.11,105.62,70,92.51
-2025-05-19,Pickup Truck,Airport Corridor,Morning,15.1,45.92,45,12.23
-2025-06-16,Motorcycle,Central Downtown,Afternoon,292.63,135.37,30,31.83
-2024-08-22,Motorcycle,East Suburban,Early Morning,285.59,27.23,58,33.75
-2025-04-26,Refrigerated Truck,Central Downtown,Afternoon,84.48,50.92,41,22.12
-2025-04-26,Pickup Truck,North Metro,Afternoon,65.58,156.21,67,56.89
-2024-11-07,Cargo Van,South Industrial,Night,199.42,163.77,16,56.83
-2024-04-17,Cargo Van,Central Downtown,Afternoon,252.04,138.05,120,41.55
-2024-12-08,Refrigerated Truck,South Industrial,Morning,339.43,103.81,106,69.04
-2024-09-04,Pickup Truck,West Coast,Evening,58.06,88.68,14,52.12
-2025-04-20,Motorcycle,West Coast,Night,301.79,112.75,61,70.14
-2025-06-14,Cargo Van,Airport Corridor,Evening,351.42,43.98,44,15.04
-2025-02-28,Cargo Van,South Industrial,Evening,397.71,29.67,9,84.97
-2025-03-20,Motorcycle,North Metro,Morning,285.84,146.2,68,55.92
-2025-01-11,Cargo Van,East Suburban,Night,158.76,141.4,6,25.53
-2024-02-21,Box Truck,North Metro,Afternoon,421.18,66.33,11,53.09
-2025-01-24,Cargo Van,West Coast,Early Morning,188.38,41.73,32,47.47
-2025-04-09,Electric Van,South Industrial,Evening,24.45,156.33,9,52.98
-2024-03-10,Motorcycle,Airport Corridor,Morning,269.85,30.14,56,65.78
-2024-06-17,Box Truck,Central Downtown,Night,412.53,147.13,67,109.32
-2024-11-24,Electric Van,West Coast,Evening,272.9,156.71,81,9.97
-2024-01-17,Motorcycle,East Suburban,Night,437.22,55.88,86,62.41
-2024-02-08,Box Truck,North Metro,Night,53.77,64.6,0,57.52
-2024-05-07,Pickup Truck,Central Downtown,Evening,289.55,158.34,35,52.59
-2025-05-22,Pickup Truck,South Industrial,Early Morning,122.25,137.97,7,47.08
-2025-01-25,Electric Van,West Coast,Early Morning,284.47,137.43,77,59.46
-2024-02-22,Cargo Van,East Suburban,Evening,29.84,29.19,37,68.88
-2025-03-04,Refrigerated Truck,North Metro,Morning,380.13,119.76,81,28.16
-2024-08-25,Pickup Truck,East Suburban,Night,1.07,75.45,94,74.89
-2025-04-21,Motorcycle,West Coast,Early Morning,343.32,127.65,50,74.21
-2024-07-11,Pickup Truck,West Coast,Early Morning,279.93,89.0,36,20.46
-2024-12-20,Electric Van,East Suburban,Afternoon,113.06,50.87,77,37.2
-2024-05-19,Electric Van,East Suburban,Early Morning,397.15,105.35,56,69.75
-2024-09-09,Cargo Van,Airport Corridor,Early Morning,41.5,126.75,114,29.73
-2024-01-14,Pickup Truck,West Coast,Evening,211.39,50.53,44,73.62
-2024-09-08,Motorcycle,Airport Corridor,Evening,133.22,54.29,54,71.41
-2024-12-09,Electric Van,West Coast,Evening,392.89,100.17,37,5.25
-2025-03-04,Refrigerated Truck,West Coast,Evening,291.35,164.63,76,32.3
-2025-03-01,Refrigerated Truck,Airport Corridor,Evening,440.82,43.11,88,95.23
-2025-02-02,Box Truck,South Industrial,Morning,155.03,161.89,111,87.5
-2025-03-26,Box Truck,East Suburban,Early Morning,391.73,23.32,45,46.32
-2025-03-25,Refrigerated Truck,North Metro,Morning,272.92,11.0,77,109.49
-2024-07-11,Pickup Truck,Central Downtown,Night,145.66,115.87,112,31.88
-2024-07-20,Pickup Truck,Central Downtown,Night,290.16,52.5,74,19.55
-2025-03-15,Electric Van,Central Downtown,Evening,346.69,46.44,93,40.47
-2024-07-08,Pickup Truck,Central Downtown,Afternoon,395.41,167.88,79,106.58
-2024-12-02,Pickup Truck,South Industrial,Afternoon,376.54,31.14,112,106.02
-2025-02-05,Cargo Van,East Suburban,Evening,264.13,178.58,76,53.41
-2025-02-25,Cargo Van,Central Downtown,Night,45.15,139.53,81,108.57
-2024-04-12,Refrigerated Truck,Central Downtown,Evening,358.58,95.95,42,53.83
-2025-03-07,Pickup Truck,North Metro,Evening,268.67,61.09,50,101.5
-2025-04-06,Refrigerated Truck,South Industrial,Evening,98.8,173.76,35,54.19
-2024-02-24,Motorcycle,West Coast,Morning,224.06,92.62,108,98.29
-2025-04-25,Box Truck,West Coast,Night,210.57,67.13,52,42.55
-2024-11-27,Cargo Van,East Suburban,Night,138.67,13.71,101,104.0
-2024-02-06,Motorcycle,North Metro,Night,86.96,52.91,90,13.86
-2024-12-18,Motorcycle,East Suburban,Afternoon,271.63,123.44,37,81.44
-2024-07-23,Motorcycle,South Industrial,Early Morning,165.28,61.2,16,13.08
-2025-01-16,Electric Van,West Coast,Early Morning,368.0,10.76,81,95.33
-2024-02-24,Box Truck,South Industrial,Early Morning,103.41,103.77,14,35.16
-2024-01-08,Box Truck,South Industrial,Evening,42.18,147.32,15,49.5
-2024-08-12,Box Truck,South Industrial,Morning,161.55,46.44,107,88.24
-2025-04-23,Box Truck,North Metro,Evening,246.43,1.18,10,41.54
-2024-10-04,Cargo Van,Central Downtown,Evening,332.19,101.43,26,68.15
-2024-03-13,Electric Van,East Suburban,Night,139.82,175.99,32,85.98
-2025-04-07,Pickup Truck,North Metro,Early Morning,158.76,25.23,101,109.52
-2024-12-06,Refrigerated Truck,Airport Corridor,Morning,89.99,59.53,81,27.03
-2024-06-11,Refrigerated Truck,Central Downtown,Night,264.3,127.04,12,96.0
-2024-07-22,Refrigerated Truck,Central Downtown,Early Morning,15.28,19.14,34,96.02
-2024-12-17,Box Truck,East Suburban,Afternoon,171.03,133.4,23,23.97
-2024-05-15,Refrigerated Truck,Central Downtown,Morning,305.23,6.69,8,16.66
-2024-12-16,Refrigerated Truck,West Coast,Afternoon,396.93,147.05,35,89.53
-2025-01-26,Pickup Truck,East Suburban,Morning,3.55,94.19,60,8.46
-2024-12-23,Cargo Van,South Industrial,Early Morning,156.55,32.03,105,53.51
-2025-04-17,Electric Van,Airport Corridor,Night,334.28,144.56,103,106.51
-2024-03-21,Electric Van,West Coast,Evening,137.64,171.54,20,67.92
-2024-09-19,Refrigerated Truck,Airport Corridor,Afternoon,65.71,4.13,16,15.8
-2024-04-30,Box Truck,West Coast,Morning,316.56,169.95,30,36.74
-2024-10-24,Box Truck,Central Downtown,Afternoon,10.73,65.64,114,30.34
-2025-05-05,Refrigerated Truck,West Coast,Morning,377.06,12.3,90,50.06
-2024-05-28,Cargo Van,Airport Corridor,Evening,362.23,83.28,55,87.28
-2024-10-12,Motorcycle,East Suburban,Early Morning,151.76,90.25,101,24.06
-2024-04-28,Box Truck,Central Downtown,Morning,50.26,24.7,44,34.23
-2024-09-29,Refrigerated Truck,Central Downtown,Night,283.61,2.02,90,27.17
-2024-03-21,Electric Van,South Industrial,Night,349.61,99.38,91,31.27
-2024-04-13,Box Truck,Central Downtown,Afternoon,98.86,95.18,11,18.31
-2024-10-25,Motorcycle,Central Downtown,Early Morning,239.15,126.04,76,96.62
-2025-04-29,Refrigerated Truck,Central Downtown,Morning,404.62,73.86,118,76.21
-2024-01-19,Cargo Van,South Industrial,Evening,128.83,24.13,11,71.9
-2024-08-15,Pickup Truck,Airport Corridor,Evening,166.33,68.75,97,57.06
-2024-10-31,Electric Van,North Metro,Morning,67.79,132.57,41,33.88
-2025-01-09,Electric Van,Central Downtown,Night,140.78,135.22,32,70.77
-2024-04-05,Refrigerated Truck,Central Downtown,Night,181.63,7.17,94,56.61
-2024-12-21,Cargo Van,North Metro,Morning,76.39,138.93,54,76.92
-2024-07-26,Box Truck,East Suburban,Evening,356.48,152.41,2,5.94
-2025-05-29,Refrigerated Truck,North Metro,Morning,449.16,97.52,100,6.31
-2024-08-26,Pickup Truck,South Industrial,Afternoon,20.09,3.39,70,31.08
-2024-11-24,Cargo Van,East Suburban,Evening,224.74,83.57,103,80.78
-2024-11-13,Cargo Van,East Suburban,Evening,167.72,66.95,37,50.53
-2025-02-20,Refrigerated Truck,South Industrial,Morning,106.71,159.25,56,64.45
-2024-10-16,Box Truck,East Suburban,Early Morning,77.29,20.2,114,61.49
-2024-06-21,Box Truck,West Coast,Morning,324.15,83.17,31,96.63
-2024-09-16,Motorcycle,South Industrial,Night,63.16,128.49,21,43.67
-2025-05-08,Pickup Truck,South Industrial,Afternoon,174.96,164.61,99,5.14
-2024-06-10,Refrigerated Truck,Airport Corridor,Evening,356.83,97.06,42,43.71
-2024-10-06,Cargo Van,Central Downtown,Afternoon,30.44,115.67,68,100.41
-2024-12-06,Box Truck,South Industrial,Early Morning,3.53,101.18,116,33.13
-2024-05-30,Motorcycle,West Coast,Evening,82.93,149.57,44,40.05
-2024-03-30,Refrigerated Truck,West Coast,Night,177.89,83.81,60,11.72
-2024-11-03,Electric Van,Airport Corridor,Night,20.86,123.49,17,22.3
-2024-10-27,Cargo Van,East Suburban,Afternoon,172.28,19.2,94,38.17
-2025-02-14,Pickup Truck,West Coast,Night,409.28,2.97,8,68.25
-2024-04-26,Cargo Van,North Metro,Early Morning,407.72,27.1,56,18.13
-2024-01-17,Pickup Truck,North Metro,Evening,112.41,75.39,35,13.91
-2024-12-22,Cargo Van,West Coast,Evening,388.78,141.19,25,12.46
-2025-06-21,Pickup Truck,West Coast,Evening,385.51,138.72,22,44.83
-2024-12-15,Pickup Truck,North Metro,Night,427.03,42.3,66,27.28
-2024-09-26,Cargo Van,Central Downtown,Early Morning,79.71,31.81,107,94.31
-2024-07-12,Motorcycle,North Metro,Evening,236.07,156.62,70,80.71
-2025-05-30,Pickup Truck,Central Downtown,Evening,96.41,80.82,50,109.88
-2025-02-10,Refrigerated Truck,North Metro,Morning,149.55,94.17,82,88.03
-2024-03-04,Electric Van,Airport Corridor,Morning,289.21,149.29,16,109.12
-2025-06-02,Refrigerated Truck,Central Downtown,Morning,14.57,11.56,112,41.53
-2025-03-07,Refrigerated Truck,Airport Corridor,Morning,337.57,102.41,7,42.61
-2025-01-10,Pickup Truck,Airport Corridor,Early Morning,31.83,74.67,17,69.72
-2024-06-04,Pickup Truck,North Metro,Morning,400.5,159.86,3,75.84
-2025-06-02,Electric Van,East Suburban,Night,419.22,73.92,115,17.17
-2025-04-29,Motorcycle,North Metro,Night,8.13,164.61,79,86.04
-2025-03-15,Refrigerated Truck,Central Downtown,Afternoon,148.03,161.4,83,90.23
-2025-05-07,Refrigerated Truck,Airport Corridor,Night,288.06,40.45,17,107.83
-2024-07-14,Electric Van,Airport Corridor,Afternoon,232.26,34.59,45,100.29
-2025-04-03,Cargo Van,North Metro,Early Morning,395.39,161.74,33,109.54
-2024-11-10,Electric Van,West Coast,Night,128.83,55.9,79,44.74
-2024-04-22,Electric Van,South Industrial,Night,256.43,164.77,108,34.35
-2024-01-05,Electric Van,East Suburban,Evening,246.65,11.17,54,18.48
-2024-08-01,Cargo Van,South Industrial,Evening,260.19,56.17,12,67.38
-2024-04-05,Pickup Truck,North Metro,Early Morning,354.47,171.31,113,52.18
-2025-03-02,Cargo Van,Airport Corridor,Afternoon,72.85,72.12,82,84.22
-2024-07-01,Electric Van,East Suburban,Evening,390.11,115.11,96,58.08
-2024-10-12,Refrigerated Truck,East Suburban,Night,345.25,146.81,10,108.75
-2024-07-20,Motorcycle,Central Downtown,Evening,320.08,18.05,91,98.99
-2025-05-12,Motorcycle,North Metro,Night,436.61,143.74,87,22.94
-2025-03-17,Motorcycle,South Industrial,Evening,237.41,58.41,12,10.37
-2024-01-08,Box Truck,South Industrial,Night,139.1,20.47,86,35.27
-2024-07-10,Electric Van,North Metro,Morning,374.58,145.84,13,32.91
-2025-01-30,Box Truck,Central Downtown,Early Morning,93.06,88.64,4,85.49
-2025-02-15,Cargo Van,East Suburban,Afternoon,12.39,122.76,25,64.9
-2024-11-22,Cargo Van,East Suburban,Morning,78.16,71.23,4,82.66
-2024-05-28,Refrigerated Truck,South Industrial,Night,175.98,101.39,11,101.73
-2025-06-01,Box Truck,Airport Corridor,Evening,442.59,133.26,60,106.2
-2025-01-11,Motorcycle,North Metro,Morning,59.72,41.82,28,44.97
-2024-09-29,Refrigerated Truck,Airport Corridor,Early Morning,294.83,153.3,16,43.3
-2025-01-22,Pickup Truck,Central Downtown,Night,133.16,144.36,43,105.65
-2024-09-12,Electric Van,Airport Corridor,Night,70.21,102.29,71,28.96
-2024-05-04,Cargo Van,South Industrial,Evening,308.78,54.53,108,59.61
-2025-03-24,Pickup Truck,West Coast,Afternoon,159.69,58.41,23,34.36
-2025-03-01,Motorcycle,Airport Corridor,Afternoon,245.39,77.64,53,28.24
-2024-02-24,Electric Van,North Metro,Afternoon,242.59,37.77,42,62.53
-2024-01-01,Box Truck,West Coast,Evening,272.76,157.8,0,58.15
-2024-02-16,Motorcycle,West Coast,Early Morning,288.75,87.54,90,33.8
-2024-12-04,Refrigerated Truck,North Metro,Early Morning,399.89,79.13,86,107.52
-2024-08-02,Cargo Van,South Industrial,Afternoon,318.46,38.57,47,83.11
-2025-02-21,Motorcycle,South Industrial,Morning,247.33,0.99,70,56.46
-2025-04-08,Electric Van,Central Downtown,Evening,110.06,176.35,11,51.79
-2024-02-25,Electric Van,East Suburban,Night,215.2,20.18,39,44.51
-2024-09-08,Pickup Truck,East Suburban,Night,158.97,25.48,114,47.85
-2025-06-02,Box Truck,Airport Corridor,Night,389.29,72.24,53,88.69
-2024-11-18,Motorcycle,West Coast,Morning,214.31,164.32,49,106.65
-2024-08-18,Box Truck,West Coast,Evening,188.63,137.7,75,59.12
-2024-06-28,Box Truck,Airport Corridor,Early Morning,436.06,92.34,118,93.35
-2024-05-18,Electric Van,Airport Corridor,Evening,108.76,54.58,41,86.87
-2024-01-16,Box Truck,West Coast,Early Morning,324.49,119.66,26,43.02
-2024-12-14,Refrigerated Truck,East Suburban,Night,383.44,27.16,73,24.77
-2025-02-03,Cargo Van,East Suburban,Night,350.79,141.46,106,90.87
-2024-07-26,Pickup Truck,North Metro,Early Morning,3.37,54.15,80,100.34
-2024-04-11,Box Truck,West Coast,Early Morning,9.39,130.64,44,59.45
-2024-12-09,Refrigerated Truck,East Suburban,Evening,256.44,134.95,102,95.83
-2024-09-03,Electric Van,East Suburban,Early Morning,378.52,16.53,28,8.45
-2025-05-22,Electric Van,West Coast,Afternoon,17.82,37.38,15,36.59
-2024-02-12,Cargo Van,South Industrial,Night,193.75,44.53,2,98.42
-2024-07-13,Refrigerated Truck,West Coast,Morning,142.06,28.03,81,95.54
-2025-03-03,Electric Van,Airport Corridor,Morning,53.42,160.11,116,61.1
-2024-05-09,Motorcycle,Central Downtown,Early Morning,167.97,3.7,61,60.7
-2025-06-05,Electric Van,South Industrial,Night,177.28,37.8,43,56.84
-2025-03-20,Electric Van,East Suburban,Night,246.14,17.75,94,80.53
-2024-07-29,Pickup Truck,West Coast,Afternoon,19.06,89.73,57,14.23
-2024-08-13,Motorcycle,South Industrial,Evening,342.35,71.41,31,36.44
-2025-06-18,Motorcycle,East Suburban,Afternoon,3.69,50.71,74,49.62
-2025-02-22,Box Truck,North Metro,Morning,250.76,146.04,77,27.87
-2024-07-29,Motorcycle,East Suburban,Morning,362.9,60.6,109,90.2
-2025-05-21,Refrigerated Truck,South Industrial,Night,25.39,143.98,95,86.04
-2025-01-20,Electric Van,North Metro,Afternoon,163.24,94.31,117,27.7
-2025-03-11,Cargo Van,Central Downtown,Evening,197.98,145.55,43,46.45
-2024-06-04,Box Truck,West Coast,Morning,64.22,163.95,19,34.01
-2024-08-22,Motorcycle,East Suburban,Early Morning,194.87,90.54,79,23.29
-2025-04-22,Pickup Truck,South Industrial,Early Morning,364.08,55.17,65,83.13
-2025-04-14,Refrigerated Truck,East Suburban,Early Morning,142.37,20.83,106,35.06
-2024-01-23,Refrigerated Truck,Central Downtown,Afternoon,390.11,143.45,30,46.82
-2024-01-23,Motorcycle,Airport Corridor,Afternoon,36.48,69.8,22,91.46
-2025-05-06,Electric Van,South Industrial,Night,374.9,98.46,13,52.89
-2025-03-16,Electric Van,Central Downtown,Afternoon,243.22,16.99,9,43.15
-2024-11-25,Box Truck,West Coast,Night,76.51,34.78,37,21.24
-2024-09-04,Box Truck,South Industrial,Morning,414.57,10.4,0,100.79
-2024-06-19,Motorcycle,North Metro,Early Morning,422.99,43.42,83,96.12
-2025-02-17,Box Truck,South Industrial,Morning,242.61,173.67,85,12.91
-2025-06-21,Box Truck,Airport Corridor,Evening,82.14,169.68,10,11.91
-2024-09-16,Box Truck,East Suburban,Afternoon,90.71,123.3,85,11.15
-2024-05-23,Motorcycle,Airport Corridor,Morning,253.11,101.34,21,82.46
-2025-03-22,Motorcycle,West Coast,Early Morning,221.23,83.44,108,82.63
-2024-07-01,Motorcycle,East Suburban,Evening,101.53,174.28,111,7.53
-2025-03-31,Motorcycle,Central Downtown,Morning,82.14,51.28,3,96.74
-2024-04-20,Refrigerated Truck,Airport Corridor,Early Morning,186.55,145.84,114,31.36
-2024-07-06,Refrigerated Truck,South Industrial,Evening,107.74,162.61,108,94.94
-2024-02-26,Electric Van,North Metro,Evening,326.37,93.29,92,101.56
-2024-10-08,Electric Van,Central Downtown,Early Morning,94.18,63.53,74,38.63
-2024-05-14,Cargo Van,Airport Corridor,Afternoon,3.24,52.19,30,34.23
-2024-06-10,Refrigerated Truck,North Metro,Afternoon,113.33,78.09,53,100.16
-2025-05-18,Cargo Van,North Metro,Evening,35.34,177.92,23,17.88
-2025-05-09,Pickup Truck,Airport Corridor,Morning,220.72,53.66,81,36.53
-2024-07-08,Refrigerated Truck,North Metro,Afternoon,415.58,38.8,41,67.33
-2024-03-28,Refrigerated Truck,West Coast,Evening,332.53,50.36,52,37.21
-2024-09-11,Motorcycle,Airport Corridor,Night,261.29,33.57,14,74.86
-2025-05-31,Cargo Van,South Industrial,Evening,229.56,162.83,71,33.48
-2024-06-10,Pickup Truck,Central Downtown,Evening,146.36,63.78,101,105.47
-2025-04-12,Cargo Van,West Coast,Afternoon,69.02,135.77,74,26.58
-2024-05-22,Refrigerated Truck,Central Downtown,Evening,320.26,44.7,105,58.81
-2024-11-22,Motorcycle,South Industrial,Night,319.24,127.89,55,70.3
-2025-06-09,Cargo Van,North Metro,Early Morning,362.37,111.93,81,101.85
-2024-12-04,Electric Van,Airport Corridor,Afternoon,388.73,174.52,120,29.99
-2025-05-23,Cargo Van,South Industrial,Night,284.82,84.23,23,54.89
-2025-03-09,Motorcycle,South Industrial,Afternoon,54.58,40.84,102,69.71
+sale_date,store_region,product_category,payment_method,units_sold,unit_price,discount_amount,total_revenue
+2024-08-03,Northeast,Beauty,Gift Card,100,1120.92,154.64,3344.52
+2024-09-19,Midwest,Beauty,Credit Card,113,378.09,46.08,5652.17
+2025-04-20,Southeast,Home Goods,Gift Card,17,526.15,76.16,16425.33
+2024-03-16,Northeast,Apparel,Cash,55,1197.87,274.65,14448.79
+2024-10-26,Southeast,Grocery,Gift Card,181,1453.2,188.67,11924.56
+2024-09-05,Southeast,Toys,Mobile Wallet,63,46.13,168.55,1274.4
+2024-12-18,Mountain,Grocery,Cash,16,1108.33,4.06,9421.07
+2025-03-22,Midwest,Toys,Credit Card,27,739.7,208.8,11762.91
+2024-06-22,Southwest,Apparel,Mobile Wallet,101,437.42,77.79,5836.52
+2024-03-16,Southwest,Electronics,Cash,134,1147.46,188.64,11068.01
+2025-06-04,West Coast,Apparel,Cash,96,738.26,203.23,10620.18
+2024-01-15,Southeast,Electronics,Credit Card,160,1288.13,0.22,12881.05
+2025-05-19,Southwest,Apparel,Gift Card,18,671.11,233.29,7445.3
+2024-04-12,West Coast,Sporting Goods,Credit Card,45,469.46,88.62,15676.46
+2024-06-30,West Coast,Toys,Credit Card,227,1306.3,286.15,14874.72
+2024-01-31,Northeast,Home Goods,Mobile Wallet,49,1307.76,220.18,9265.6
+2024-01-29,Mountain,Toys,Gift Card,90,661.19,48.44,12531.12
+2024-05-12,West Coast,Apparel,Cash,5,474.56,15.95,6304.27
+2025-06-09,Mountain,Sporting Goods,Mobile Wallet,148,1250.5,228.46,6705.51
+2024-08-03,Southeast,Toys,Gift Card,146,989.06,155.54,10389.46
+2024-11-18,Southeast,Apparel,Debit Card,228,331.34,150.25,5094.12
+2025-05-09,Southwest,Grocery,Mobile Wallet,46,147.9,69.8,2621.23
+2024-06-05,Midwest,Sporting Goods,Mobile Wallet,238,1154.39,191.93,5536.69
+2024-09-14,Midwest,Beauty,Cash,60,306.68,235.43,5170.27
+2024-06-28,West Coast,Toys,Debit Card,92,444.8,73.16,14113.9
+2025-01-18,West Coast,Home Goods,Debit Card,146,204.2,102.71,15260.75
+2024-06-23,Southeast,Grocery,Debit Card,213,1143.47,213.89,3291.43
+2024-07-09,Mountain,Electronics,Mobile Wallet,11,799.41,232.49,13737.21
+2024-08-04,Midwest,Beauty,Debit Card,143,259.84,194.65,5714.04
+2024-01-30,Midwest,Beauty,Cash,115,836.39,177.44,17061.78
+2024-08-28,Southeast,Beauty,Debit Card,166,370.47,136.98,8799.95
+2024-01-31,Northeast,Apparel,Credit Card,160,269.02,129.0,11533.94
+2025-04-22,Mountain,Apparel,Gift Card,89,588.56,6.01,11356.11
+2024-11-19,Southwest,Home Goods,Debit Card,101,430.96,122.71,353.91
+2025-06-06,Southwest,Apparel,Debit Card,52,1087.75,8.74,6915.38
+2025-06-06,Mountain,Home Goods,Gift Card,36,339.98,82.35,595.06
+2024-06-20,Mountain,Apparel,Credit Card,214,1239.56,115.72,919.27
+2025-05-31,Northeast,Grocery,Gift Card,171,917.99,145.99,17548.48
+2024-06-28,Mountain,Sporting Goods,Credit Card,5,74.82,166.08,428.3
+2024-06-05,Midwest,Home Goods,Debit Card,195,967.23,156.91,2815.96
+2024-04-29,Mountain,Toys,Credit Card,118,222.63,110.16,5729.39
+2025-05-04,Mountain,Grocery,Mobile Wallet,8,1354.75,178.62,7085.07
+2024-02-10,Midwest,Toys,Credit Card,51,1488.19,122.07,1912.87
+2024-01-18,Mountain,Home Goods,Debit Card,49,163.73,111.59,12463.5
+2024-09-24,Southeast,Sporting Goods,Credit Card,151,126.94,278.6,8899.98
+2024-12-17,Southwest,Toys,Gift Card,167,801.77,70.34,7870.96
+2024-06-19,Mountain,Sporting Goods,Gift Card,103,360.65,141.13,4352.74
+2024-07-28,Northeast,Apparel,Mobile Wallet,204,864.37,15.4,8302.86
+2024-10-28,Southeast,Apparel,Credit Card,126,220.8,209.36,15344.04
+2024-02-02,Northeast,Apparel,Mobile Wallet,218,123.19,79.24,13210.02
+2024-12-03,West Coast,Sporting Goods,Debit Card,71,770.18,186.39,8465.31
+2024-03-04,Northeast,Apparel,Credit Card,180,792.75,172.55,12849.47
+2024-03-17,West Coast,Grocery,Cash,200,1481.52,296.29,3577.8
+2024-11-27,Southeast,Electronics,Mobile Wallet,168,654.98,73.35,11840.65
+2024-08-20,Northeast,Beauty,Credit Card,246,949.04,208.4,16273.76
+2024-01-16,West Coast,Apparel,Mobile Wallet,233,1014.47,198.35,7960.96
+2024-03-30,Northeast,Beauty,Cash,60,550.61,267.28,13165.71
+2024-08-21,Southeast,Apparel,Cash,244,333.29,297.6,6612.6
+2024-10-07,Southeast,Electronics,Mobile Wallet,194,1344.78,283.07,17442.16
+2024-12-26,Midwest,Toys,Gift Card,46,1495.92,147.63,10110.6
+2024-09-02,West Coast,Electronics,Debit Card,176,509.12,112.89,510.24
+2025-03-26,Midwest,Home Goods,Credit Card,45,198.94,236.63,7482.4
+2024-08-05,Northeast,Toys,Debit Card,191,1387.48,23.55,1543.82
+2024-02-05,Northeast,Sporting Goods,Cash,118,99.67,264.54,11346.61
+2024-12-03,West Coast,Toys,Cash,35,329.68,184.07,5083.83
+2024-02-23,West Coast,Grocery,Credit Card,178,29.19,199.58,6850.61
+2025-05-25,Mountain,Toys,Cash,184,576.95,147.81,17109.21
+2024-10-20,West Coast,Apparel,Mobile Wallet,220,68.06,13.08,7050.83
+2024-12-12,Southeast,Sporting Goods,Mobile Wallet,13,644.12,59.41,4071.54
+2024-08-09,Midwest,Grocery,Gift Card,18,1274.99,137.44,16396.63
+2024-03-20,Midwest,Sporting Goods,Cash,112,699.08,274.34,7607.1
+2025-04-03,Midwest,Sporting Goods,Gift Card,51,262.37,121.35,1577.82
+2025-05-05,Southeast,Electronics,Gift Card,85,872.32,269.48,2398.78
+2025-06-16,West Coast,Home Goods,Debit Card,14,771.78,94.55,7111.6
+2025-04-05,Southwest,Electronics,Debit Card,82,678.69,37.42,14280.12
+2025-03-04,West Coast,Apparel,Credit Card,31,120.85,250.46,1341.59
+2024-09-09,Southwest,Home Goods,Cash,212,907.06,143.01,9445.66
+2025-05-19,Mountain,Beauty,Cash,146,1190.85,280.39,4086.22
+2024-11-09,Southwest,Electronics,Debit Card,87,819.13,149.68,11302.27
+2024-06-07,Southwest,Sporting Goods,Mobile Wallet,116,1493.3,261.29,9119.21
+2024-10-29,Mountain,Toys,Cash,59,929.4,151.38,1128.07
+2024-05-01,Southwest,Electronics,Cash,82,326.19,69.47,4867.39
+2024-01-15,Southwest,Sporting Goods,Gift Card,3,1127.82,223.36,9087.36
+2024-01-30,Southeast,Home Goods,Mobile Wallet,125,1226.89,35.25,4811.71
+2025-02-02,Northeast,Grocery,Credit Card,179,1140.85,293.25,14219.16
+2024-07-21,Mountain,Home Goods,Debit Card,209,413.94,123.91,6132.1
+2024-06-22,Northeast,Home Goods,Gift Card,14,960.36,102.04,15828.39
+2025-06-04,Northeast,Sporting Goods,Gift Card,85,772.42,217.94,11515.93
+2024-09-20,Northeast,Electronics,Gift Card,144,523.28,206.64,14401.26
+2025-04-16,Midwest,Toys,Credit Card,19,272.96,227.83,451.47
+2025-03-31,West Coast,Apparel,Credit Card,229,1206.55,194.15,17332.61
+2025-05-19,West Coast,Beauty,Mobile Wallet,206,308.04,12.66,17692.38
+2024-08-17,Northeast,Home Goods,Cash,148,905.47,179.65,1370.0
+2024-04-12,Northeast,Sporting Goods,Cash,233,336.58,168.17,7765.13
+2024-10-15,Southeast,Apparel,Gift Card,206,657.05,170.13,8768.33
+2025-04-06,Northeast,Electronics,Gift Card,126,1009.84,91.14,2579.61
+2024-04-09,Mountain,Electronics,Gift Card,48,150.24,163.22,6087.57
+2025-05-12,Southwest,Home Goods,Mobile Wallet,48,1492.1,69.53,8848.76
+2024-02-06,Midwest,Electronics,Credit Card,8,518.08,61.44,7860.6
+2025-01-22,Northeast,Beauty,Mobile Wallet,219,985.89,21.05,14524.14
+2024-10-11,Mountain,Grocery,Cash,235,486.88,38.48,16762.05
+2025-03-15,Northeast,Toys,Cash,88,277.91,162.63,12725.59
+2024-07-16,Southeast,Electronics,Debit Card,193,1300.72,140.18,5410.31
+2024-12-06,Midwest,Sporting Goods,Cash,57,55.43,196.37,15183.95
+2025-01-03,Southwest,Beauty,Mobile Wallet,223,1058.99,162.83,4495.37
+2025-04-27,Southeast,Grocery,Mobile Wallet,73,1286.29,35.01,12782.82
+2024-03-02,Midwest,Grocery,Cash,8,787.75,233.4,17551.11
+2024-10-20,Northeast,Home Goods,Mobile Wallet,93,55.7,124.13,11388.11
+2024-02-26,Mountain,Toys,Gift Card,126,970.52,10.01,12544.0
+2025-02-22,Southeast,Home Goods,Gift Card,242,1427.8,50.72,1457.53
+2024-01-02,Mountain,Toys,Debit Card,99,986.06,43.5,14976.83
+2024-06-25,Northeast,Electronics,Debit Card,137,1127.26,229.3,5760.44
+2024-10-02,Midwest,Grocery,Debit Card,197,1393.49,206.25,3536.94
+2025-04-10,Northeast,Sporting Goods,Mobile Wallet,190,202.19,212.52,9519.19
+2025-01-14,Midwest,Toys,Cash,161,1494.59,97.53,909.44
+2025-06-23,Southwest,Sporting Goods,Debit Card,180,1409.09,242.46,12227.04
+2025-04-02,Southeast,Electronics,Mobile Wallet,117,57.91,235.28,4183.98
+2024-04-23,Southeast,Apparel,Cash,98,651.47,58.09,5741.45
+2024-07-28,West Coast,Home Goods,Cash,89,451.34,33.53,12191.89
+2024-01-29,West Coast,Apparel,Credit Card,102,1338.32,94.12,3210.17
+2024-06-08,Midwest,Apparel,Credit Card,54,560.3,21.24,2096.75
+2025-06-12,Southwest,Toys,Gift Card,104,1196.93,254.7,3910.3
+2024-10-25,Northeast,Home Goods,Debit Card,108,95.78,105.22,11760.59
+2025-06-18,Midwest,Toys,Debit Card,82,1413.55,235.79,12789.89
+2024-10-08,Midwest,Electronics,Gift Card,178,665.89,150.15,16873.56
+2024-12-02,Southeast,Electronics,Cash,182,1330.66,247.93,5006.17
+2025-02-08,West Coast,Apparel,Debit Card,155,681.71,12.45,13702.12
+2025-01-28,Southwest,Home Goods,Mobile Wallet,141,273.19,179.32,17425.17
+2024-05-15,Southeast,Beauty,Gift Card,244,250.73,94.68,14181.32
+2024-02-27,Midwest,Apparel,Mobile Wallet,132,299.32,213.23,17079.8
+2024-08-14,Southeast,Beauty,Gift Card,17,348.16,192.11,7814.32
+2025-02-07,Midwest,Grocery,Mobile Wallet,181,573.37,259.97,6570.17
+2025-03-03,Southeast,Sporting Goods,Mobile Wallet,41,136.9,39.62,9991.62
+2024-03-17,Southwest,Toys,Gift Card,55,265.66,257.29,12259.87
+2025-06-02,Midwest,Sporting Goods,Debit Card,198,695.19,176.14,10962.3
+2024-12-06,Midwest,Home Goods,Gift Card,213,204.68,258.61,10752.93
+2024-01-14,Midwest,Sporting Goods,Mobile Wallet,12,60.72,120.36,17662.35
+2025-04-25,Mountain,Apparel,Credit Card,57,20.76,269.15,10314.46
+2024-04-20,Midwest,Home Goods,Credit Card,241,713.41,26.35,3208.92
+2024-04-02,Southwest,Grocery,Debit Card,44,1319.11,140.42,8860.05
+2025-01-11,Midwest,Electronics,Debit Card,74,323.86,10.64,5114.83
+2024-08-27,West Coast,Sporting Goods,Cash,133,847.84,237.41,15646.91
+2024-03-06,Mountain,Apparel,Credit Card,231,414.08,144.19,17505.53
+2024-08-12,West Coast,Toys,Debit Card,90,604.22,29.42,7022.34
+2024-12-13,Southwest,Home Goods,Credit Card,173,1057.25,288.91,16988.51
+2025-05-25,Southwest,Grocery,Credit Card,131,161.93,83.34,11224.85
+2024-02-26,Northeast,Electronics,Debit Card,38,376.78,110.09,975.64
+2024-08-23,Midwest,Grocery,Credit Card,85,874.38,252.23,13564.48
+2025-05-28,Northeast,Grocery,Credit Card,39,873.38,54.41,2686.16
+2024-02-18,Midwest,Beauty,Debit Card,185,701.55,241.68,14529.76
+2024-02-29,Southwest,Sporting Goods,Gift Card,158,996.65,203.68,8473.71
+2024-10-31,Southeast,Grocery,Gift Card,240,1168.15,81.81,10446.26
+2025-02-27,Southwest,Grocery,Cash,88,411.51,193.56,3007.34
+2024-02-04,Southwest,Beauty,Cash,174,464.76,183.16,587.16
+2025-02-01,Southwest,Apparel,Cash,232,1229.17,87.76,17346.39
+2025-02-17,Southwest,Home Goods,Mobile Wallet,208,952.38,6.12,8547.19
+2024-01-20,Northeast,Sporting Goods,Mobile Wallet,150,873.3,107.28,6733.96
+2024-04-08,Midwest,Electronics,Credit Card,31,1383.85,186.2,2232.44
+2024-04-08,Southwest,Toys,Gift Card,154,768.84,178.54,4409.58
+2024-03-05,Southeast,Grocery,Gift Card,234,407.23,118.94,697.53
+2024-04-04,Southwest,Toys,Credit Card,24,314.36,294.79,14275.57
+2024-09-10,Northeast,Electronics,Debit Card,157,1314.47,178.23,8302.96
+2024-01-11,West Coast,Grocery,Cash,26,481.44,258.56,5285.52
+2024-05-30,Mountain,Beauty,Gift Card,186,1007.45,155.03,12341.77
+2024-04-27,Mountain,Grocery,Cash,55,288.86,276.09,7892.83
+2024-04-22,Northeast,Grocery,Mobile Wallet,93,378.47,6.38,8018.3
+2025-04-20,Mountain,Home Goods,Mobile Wallet,42,22.62,40.4,8091.34
+2024-07-22,Southwest,Electronics,Debit Card,20,705.57,271.05,7322.23
+2024-01-21,Northeast,Electronics,Mobile Wallet,111,986.95,196.25,7696.96
+2024-07-08,Northeast,Electronics,Cash,100,71.08,0.95,14732.36
+2024-08-11,West Coast,Toys,Mobile Wallet,10,636.62,297.92,5801.11
+2024-06-12,Southeast,Electronics,Debit Card,20,535.24,75.97,2483.84
+2024-02-15,Southwest,Beauty,Debit Card,85,1093.63,242.06,9454.24
+2024-11-30,West Coast,Toys,Gift Card,158,1320.59,97.97,9656.64
+2024-12-04,West Coast,Apparel,Mobile Wallet,170,341.49,109.93,12162.94
+2024-03-28,Mountain,Apparel,Cash,128,1026.52,172.32,1094.5
+2025-03-04,Mountain,Grocery,Debit Card,25,1230.3,80.98,9235.51
+2025-03-31,Midwest,Beauty,Debit Card,228,1124.16,255.42,261.05
+2024-03-11,Southwest,Apparel,Gift Card,247,234.62,32.51,626.9
+2024-08-23,Midwest,Home Goods,Debit Card,141,146.08,202.05,13332.34
+2024-02-17,Southeast,Beauty,Gift Card,208,286.94,48.73,7176.27
+2025-04-18,Midwest,Sporting Goods,Credit Card,143,1305.81,96.91,3806.51
+2024-08-24,Northeast,Home Goods,Gift Card,216,330.06,146.43,5866.48
+2024-04-25,Southeast,Home Goods,Credit Card,36,296.56,239.88,7561.11
+2024-07-15,Southeast,Beauty,Credit Card,133,1401.61,206.64,5189.92
+2025-04-12,Southwest,Apparel,Gift Card,105,1465.47,169.23,16722.21
+2024-05-10,West Coast,Beauty,Mobile Wallet,93,397.77,290.85,7847.61
+2025-02-04,Southeast,Grocery,Credit Card,206,1176.85,197.25,13111.7
+2024-07-07,Northeast,Electronics,Gift Card,200,1418.83,78.74,16994.99
+2024-06-20,Midwest,Sporting Goods,Debit Card,206,128.0,228.27,7820.97
+2025-01-12,Northeast,Apparel,Debit Card,124,115.49,163.82,5668.17
+2024-07-31,Southeast,Apparel,Mobile Wallet,106,520.08,165.86,16861.08
+2024-03-04,Midwest,Apparel,Mobile Wallet,181,340.07,118.45,13574.94
+2025-05-16,Southwest,Home Goods,Debit Card,68,1352.28,62.13,717.49
+2025-02-11,Mountain,Apparel,Credit Card,78,774.83,168.35,11981.64
+2024-12-13,Southeast,Apparel,Cash,192,1449.11,53.99,5055.66
+2024-04-27,Mountain,Electronics,Mobile Wallet,179,1281.88,116.09,638.46
+2024-02-16,Mountain,Home Goods,Debit Card,130,880.78,237.88,2441.91
+2025-05-17,Southwest,Sporting Goods,Gift Card,195,1221.56,34.99,4446.38
+2024-11-12,Midwest,Home Goods,Cash,5,35.83,257.37,1515.97
+2025-06-22,Midwest,Grocery,Debit Card,7,502.28,69.16,17816.42
+2024-03-07,Midwest,Electronics,Debit Card,4,1437.11,183.42,15312.13
+2024-10-10,Northeast,Apparel,Gift Card,224,380.32,234.33,5651.96
+2025-01-15,Midwest,Home Goods,Debit Card,38,94.59,68.3,1067.46
+2024-07-04,Midwest,Toys,Debit Card,37,995.3,252.26,242.97
+2024-09-17,Southwest,Electronics,Debit Card,237,1123.69,6.46,2247.04
+2025-03-21,Northeast,Toys,Gift Card,64,113.99,67.86,3918.66
+2024-06-09,Northeast,Sporting Goods,Debit Card,180,630.49,207.45,117.36
+2024-03-08,Southeast,Sporting Goods,Mobile Wallet,45,493.38,66.53,10983.16
+2024-03-12,Mountain,Toys,Cash,218,142.65,13.16,3427.61
+2024-10-08,Northeast,Home Goods,Credit Card,136,893.13,87.5,10023.8
+2025-05-27,West Coast,Beauty,Debit Card,129,985.8,162.66,11262.99
+2024-04-29,Northeast,Toys,Debit Card,34,854.63,171.8,13492.7
+2024-08-07,West Coast,Electronics,Debit Card,1,1101.67,18.01,12116.59
+2024-06-25,Northeast,Home Goods,Cash,232,1329.99,194.47,10885.64
+2025-05-17,Southwest,Sporting Goods,Cash,75,138.6,165.94,15865.51
+2025-04-03,Midwest,Grocery,Cash,81,1191.07,267.93,17003.97
+2024-01-13,Mountain,Sporting Goods,Cash,31,541.17,32.77,13206.11
+2024-02-20,Northeast,Grocery,Debit Card,224,1088.09,70.39,6282.35
+2024-03-01,Mountain,Apparel,Debit Card,195,274.18,256.69,2618.61
+2024-10-01,Southwest,Home Goods,Mobile Wallet,60,1336.46,217.09,1844.9
+2024-04-16,Northeast,Electronics,Credit Card,64,962.28,90.56,13764.44
+2024-08-21,Southwest,Grocery,Gift Card,235,167.84,131.84,2450.14
+2024-12-04,West Coast,Toys,Cash,168,1036.79,15.03,13349.32
+2025-04-28,Southeast,Beauty,Credit Card,158,112.02,2.84,8359.92
+2024-01-19,Midwest,Electronics,Debit Card,40,1307.82,274.52,1271.86
+2024-10-09,Southwest,Apparel,Credit Card,88,1015.43,17.59,1781.99
+2024-12-01,Southeast,Grocery,Cash,75,154.32,287.79,3162.97
+2024-12-23,Southeast,Home Goods,Cash,193,773.4,97.93,1457.42
+2024-10-17,Southeast,Home Goods,Mobile Wallet,129,32.57,56.34,211.23
+2024-07-11,Northeast,Grocery,Credit Card,208,425.22,75.85,16856.94
+2024-09-02,Southwest,Electronics,Cash,4,978.47,176.25,3660.42
+2025-02-05,Midwest,Toys,Cash,130,338.31,278.97,9330.55
+2025-04-02,West Coast,Apparel,Credit Card,110,1431.1,186.62,13729.91
+2025-02-03,Southwest,Toys,Credit Card,115,975.95,29.35,4416.5
+2025-04-10,Midwest,Toys,Debit Card,59,583.68,11.41,6728.04
+2024-08-16,Southwest,Electronics,Gift Card,33,1199.42,259.39,3289.45
+2024-03-25,Mountain,Sporting Goods,Cash,73,621.4,160.99,16256.23
+2024-09-20,Mountain,Beauty,Mobile Wallet,15,743.61,2.74,15812.54
+2024-02-23,Southwest,Grocery,Credit Card,225,411.58,285.2,17259.63

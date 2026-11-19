@@ -1,241 +1,241 @@
-inspectionDate,productLine,defectType,shiftCode,unitsInspected,defectCount,defectRatePct,reworkCostUsd
-2024-10-26,Assembly,Dimensional Variance,Evening,3048,363,8.47,25382.23
-2024-07-26,Injection Molding,Scratch,Day,911,273,16.72,26004.66
-2024-04-11,Assembly,Discoloration,Evening,3493,37,22.3,34806.17
-2024-05-06,Packaging,Dimensional Variance,Night,1448,34,21.43,28018.99
-2025-01-21,Machining,Burr,Day,3398,355,6.07,12257.24
-2025-04-29,Injection Molding,Dimensional Variance,Night,1891,77,10.94,2956.48
-2025-04-08,Electronics,Discoloration,Day,3990,374,21.41,21239.64
-2025-04-26,Electronics,Dimensional Variance,Evening,50,217,22.39,12824.47
-2024-07-10,Electronics,Burr,Night,4667,237,15.77,20112.74
-2025-02-23,Machining,Burr,Day,2032,84,18.98,40554.04
-2024-04-24,Stamping,Scratch,Evening,632,358,14.35,2060.22
-2025-03-03,Stamping,Dimensional Variance,Night,1115,233,13.21,4060.31
-2024-04-20,Packaging,Crack,Night,725,48,20.19,39917.6
-2025-05-06,Electronics,Missing Component,Evening,1604,44,17.23,5811.58
-2025-01-01,Injection Molding,Dimensional Variance,Night,2169,164,10.82,42432.64
-2024-07-12,Assembly,Burr,Evening,2589,28,15.57,14835.07
-2025-05-29,Machining,Burr,Night,1945,110,11.46,35649.5
-2025-05-10,Electronics,Missing Component,Night,3157,351,10.07,2164.17
-2025-03-07,Assembly,Discoloration,Day,4051,252,3.9,42006.07
-2024-06-03,Machining,Missing Component,Night,3324,264,3.99,21214.47
-2025-02-11,Assembly,Porosity,Evening,956,119,22.83,8263.21
-2024-04-14,Assembly,Scratch,Night,488,252,6.55,6026.44
-2024-10-05,Packaging,Discoloration,Night,1022,311,18.42,2886.81
-2025-06-04,Packaging,Crack,Night,4724,174,22.07,5143.78
-2024-12-31,Assembly,Crack,Day,4034,285,11.01,1393.98
-2024-01-26,Machining,Scratch,Evening,264,40,16.52,4502.94
-2025-06-22,Machining,Burr,Night,1745,372,14.76,41245.5
-2024-12-07,Packaging,Porosity,Night,3197,11,23.54,1085.57
-2025-03-19,Injection Molding,Porosity,Day,3289,141,4.81,9882.66
-2025-05-19,Electronics,Missing Component,Day,262,260,0.71,1506.4
-2024-08-03,Machining,Missing Component,Day,222,395,16.97,1246.27
-2025-02-08,Assembly,Missing Component,Day,2841,44,13.73,46104.03
-2025-01-05,Stamping,Porosity,Day,2730,326,16.96,37249.56
-2025-03-01,Electronics,Discoloration,Night,915,373,19.84,44774.22
-2025-02-01,Stamping,Porosity,Evening,4703,79,19.27,19318.51
-2024-07-08,Injection Molding,Burr,Day,4600,215,22.99,20417.19
-2024-04-04,Machining,Missing Component,Night,4774,172,4.09,43330.53
-2024-04-17,Packaging,Discoloration,Day,1046,98,16.78,36782.05
-2024-01-04,Stamping,Discoloration,Day,1064,186,17.48,25473.42
-2025-01-09,Packaging,Crack,Evening,2139,278,2.53,12523.54
-2024-02-28,Electronics,Burr,Evening,3729,21,17.96,15163.41
-2024-07-19,Assembly,Missing Component,Night,3807,140,23.93,8678.18
-2024-10-19,Packaging,Dimensional Variance,Day,521,326,17.19,19298.88
-2024-11-06,Injection Molding,Missing Component,Day,579,27,19.4,42537.35
-2025-03-11,Machining,Missing Component,Evening,3716,199,3.98,892.52
-2025-05-10,Injection Molding,Crack,Evening,1652,214,0.94,32384.8
-2024-12-19,Assembly,Burr,Day,2438,372,14.39,28468.3
-2024-06-21,Electronics,Discoloration,Night,3914,66,6.0,47127.36
-2024-09-23,Electronics,Discoloration,Night,3281,70,9.96,11467.63
-2025-03-18,Machining,Porosity,Night,732,186,6.48,146.14
-2024-02-05,Assembly,Crack,Day,4808,261,13.33,20306.3
-2025-02-23,Packaging,Discoloration,Evening,3809,388,2.89,17795.04
-2024-09-14,Assembly,Discoloration,Evening,3533,337,24.17,36376.76
-2024-01-29,Packaging,Burr,Night,3883,246,15.76,47973.35
-2024-01-14,Machining,Dimensional Variance,Evening,1312,366,23.05,35195.17
-2025-06-07,Machining,Crack,Night,4695,45,9.69,22635.73
-2025-01-12,Packaging,Porosity,Evening,767,116,22.69,14205.58
-2024-09-13,Assembly,Porosity,Night,532,234,15.54,33191.13
-2024-05-26,Electronics,Porosity,Day,1820,104,9.16,3797.32
-2024-04-01,Assembly,Porosity,Night,952,362,3.49,7964.04
-2024-10-26,Machining,Porosity,Day,140,379,20.89,16118.8
-2024-08-03,Packaging,Missing Component,Night,1688,306,15.14,12889.28
-2025-05-14,Machining,Porosity,Day,4989,300,6.76,20292.04
-2024-07-16,Assembly,Porosity,Night,1082,287,2.01,8383.28
-2025-01-21,Electronics,Missing Component,Evening,1632,298,10.33,91.5
-2024-05-14,Assembly,Crack,Night,648,125,13.97,29939.99
-2024-10-16,Machining,Scratch,Evening,1501,65,22.59,292.74
-2024-01-28,Injection Molding,Burr,Night,1417,94,4.74,45983.34
-2024-09-13,Electronics,Burr,Day,3259,137,7.64,38204.06
-2024-09-09,Injection Molding,Missing Component,Evening,4860,99,13.34,36907.32
-2024-08-10,Injection Molding,Scratch,Evening,1412,141,19.73,47108.46
-2025-04-11,Assembly,Dimensional Variance,Evening,1301,339,12.25,39499.85
-2024-01-04,Assembly,Discoloration,Evening,1308,316,24.97,966.97
-2025-03-20,Machining,Burr,Evening,3032,129,0.19,6666.19
-2025-03-20,Machining,Burr,Night,1202,47,15.49,29168.36
-2025-06-13,Stamping,Burr,Night,2745,98,4.67,20886.57
-2024-08-22,Assembly,Dimensional Variance,Evening,1352,162,0.21,354.9
-2025-06-09,Machining,Dimensional Variance,Night,752,196,2.69,24505.36
-2025-01-15,Injection Molding,Crack,Day,3138,241,14.74,43929.01
-2024-02-20,Electronics,Scratch,Day,2610,395,20.36,40641.06
-2024-10-14,Packaging,Dimensional Variance,Evening,572,193,12.46,11014.99
-2024-03-17,Electronics,Dimensional Variance,Night,3326,42,17.51,16076.82
-2025-05-08,Machining,Dimensional Variance,Day,3557,278,15.18,15868.24
-2025-05-06,Packaging,Dimensional Variance,Night,3518,258,1.56,15318.35
-2024-02-13,Stamping,Porosity,Night,2052,110,13.01,21982.44
-2024-06-06,Electronics,Burr,Night,168,351,13.29,38941.42
-2025-02-26,Injection Molding,Dimensional Variance,Night,2267,137,11.7,39820.46
-2024-11-10,Electronics,Scratch,Night,4719,218,3.99,39670.93
-2025-01-30,Packaging,Burr,Day,3876,400,19.45,45331.11
-2024-10-24,Electronics,Burr,Night,2134,14,23.02,17529.08
-2025-02-11,Machining,Missing Component,Evening,2872,30,18.4,41582.9
-2024-04-29,Injection Molding,Missing Component,Night,4264,213,13.28,33970.77
-2025-05-10,Machining,Porosity,Night,4742,382,3.18,21664.72
-2024-09-15,Packaging,Porosity,Day,1766,386,5.75,38490.83
-2024-07-21,Packaging,Crack,Day,2522,333,11.16,47847.81
-2025-02-03,Assembly,Dimensional Variance,Night,4420,94,2.56,9622.14
-2024-07-23,Injection Molding,Dimensional Variance,Evening,2337,62,13.41,8588.06
-2024-11-22,Machining,Discoloration,Evening,2136,75,18.67,47860.06
-2024-01-24,Machining,Discoloration,Night,82,103,13.32,10891.89
-2024-05-27,Electronics,Scratch,Night,1388,85,6.38,16772.03
-2025-02-04,Packaging,Missing Component,Night,1532,304,20.38,29825.97
-2025-05-17,Machining,Missing Component,Evening,1012,264,23.56,47455.41
-2024-12-06,Stamping,Crack,Night,3516,191,20.38,6261.59
-2024-04-01,Assembly,Porosity,Day,3046,115,6.17,21827.84
-2025-02-15,Packaging,Discoloration,Evening,4879,234,3.15,22322.46
-2024-06-25,Electronics,Crack,Day,3358,237,18.61,36571.85
-2025-05-21,Injection Molding,Burr,Evening,2305,143,10.76,29386.34
-2024-03-28,Packaging,Porosity,Evening,2005,124,19.91,41954.25
-2025-06-22,Machining,Crack,Evening,2605,265,11.15,35166.93
-2025-02-21,Machining,Porosity,Night,4931,105,10.12,45714.33
-2024-02-06,Electronics,Missing Component,Evening,1984,242,0.52,47728.1
-2024-11-15,Assembly,Porosity,Evening,177,176,7.4,1645.81
-2025-03-16,Injection Molding,Burr,Evening,1662,168,3.28,13716.45
-2024-04-16,Machining,Dimensional Variance,Evening,594,285,20.12,41853.37
-2024-10-02,Injection Molding,Scratch,Evening,2026,348,20.54,44225.69
-2024-06-17,Injection Molding,Porosity,Evening,4425,215,6.98,35875.39
-2024-08-04,Electronics,Burr,Day,1192,334,22.07,29222.36
-2024-12-07,Stamping,Dimensional Variance,Day,2101,152,14.54,10186.76
-2024-06-06,Stamping,Burr,Day,2828,389,9.88,37378.85
-2025-05-01,Injection Molding,Crack,Night,4821,50,1.87,25269.72
-2024-10-09,Machining,Discoloration,Day,3187,298,10.59,22332.42
-2024-03-30,Machining,Discoloration,Evening,262,165,22.52,26196.89
-2024-09-03,Electronics,Crack,Day,1700,291,15.34,29767.54
-2024-07-07,Packaging,Burr,Night,4942,203,18.3,39262.07
-2025-03-01,Packaging,Porosity,Night,2138,261,24.24,46827.87
-2024-04-03,Stamping,Burr,Evening,1579,347,8.68,26098.47
-2025-02-23,Packaging,Missing Component,Day,3118,357,21.23,39145.95
-2024-03-27,Machining,Crack,Night,423,32,21.33,15328.71
-2024-10-24,Injection Molding,Dimensional Variance,Day,2907,386,12.58,6692.19
-2024-01-27,Machining,Burr,Evening,1061,135,19.71,4961.56
-2024-08-30,Machining,Porosity,Evening,3436,397,6.85,16298.61
-2025-05-30,Electronics,Dimensional Variance,Day,2758,6,12.49,1361.98
-2024-08-03,Packaging,Porosity,Night,1752,109,11.35,47854.97
-2024-05-27,Injection Molding,Discoloration,Evening,4389,68,2.87,41506.01
-2024-03-15,Packaging,Discoloration,Evening,4000,47,7.6,38566.99
-2024-04-09,Injection Molding,Scratch,Day,4891,260,7.78,8485.2
-2024-05-01,Stamping,Missing Component,Night,2535,16,0.39,33985.53
-2025-03-24,Electronics,Burr,Evening,3236,118,5.47,41153.36
-2025-05-01,Packaging,Missing Component,Day,3594,270,9.56,3542.23
-2024-09-23,Machining,Discoloration,Night,1027,84,22.25,25400.75
-2025-03-03,Injection Molding,Dimensional Variance,Night,4332,59,1.51,47723.29
-2024-03-28,Electronics,Dimensional Variance,Night,3320,102,15.51,23891.34
-2024-11-01,Assembly,Missing Component,Day,4618,213,2.08,36970.11
-2024-02-05,Electronics,Discoloration,Day,3495,385,19.93,22312.9
-2024-07-14,Packaging,Missing Component,Evening,2734,394,3.34,42891.36
-2025-04-14,Machining,Burr,Night,2046,140,2.22,38688.46
-2025-04-07,Packaging,Discoloration,Day,330,362,23.36,1315.38
-2024-06-14,Packaging,Crack,Night,3799,13,12.55,38027.75
-2025-01-12,Machining,Dimensional Variance,Evening,1999,196,21.54,12137.95
-2024-12-01,Machining,Crack,Evening,3614,315,3.27,33275.76
-2024-06-08,Injection Molding,Scratch,Evening,1469,116,20.68,21815.09
-2025-04-20,Injection Molding,Burr,Evening,3924,249,19.28,31685.96
-2025-01-29,Injection Molding,Dimensional Variance,Day,2000,297,9.06,13590.06
-2025-02-13,Electronics,Dimensional Variance,Day,993,39,10.01,37283.95
-2024-08-10,Electronics,Missing Component,Night,3996,60,12.65,33689.74
-2024-03-08,Machining,Porosity,Night,1337,164,2.43,20992.37
-2024-05-10,Machining,Missing Component,Night,2046,304,9.38,19169.02
-2025-04-23,Stamping,Burr,Evening,4761,175,23.81,23916.65
-2024-08-08,Stamping,Missing Component,Evening,4216,0,12.33,30202.83
-2025-01-26,Assembly,Scratch,Night,470,130,13.99,46922.78
-2024-12-06,Injection Molding,Discoloration,Night,1923,142,20.43,21694.83
-2025-02-27,Machining,Porosity,Night,2309,102,11.57,47887.7
-2024-09-15,Stamping,Dimensional Variance,Evening,3967,193,18.87,21741.44
-2025-06-05,Packaging,Dimensional Variance,Night,3847,172,0.27,7932.5
-2024-06-25,Packaging,Discoloration,Evening,614,270,0.14,5895.99
-2024-02-10,Assembly,Porosity,Day,1735,295,22.78,44454.46
-2025-03-05,Injection Molding,Dimensional Variance,Day,3027,299,17.16,6196.57
-2024-10-16,Stamping,Scratch,Day,3297,102,18.7,40668.1
-2025-01-10,Stamping,Dimensional Variance,Night,3519,363,10.99,12889.85
-2024-10-09,Injection Molding,Scratch,Evening,1060,276,17.04,44691.57
-2024-12-18,Stamping,Crack,Day,3229,71,12.85,29832.67
-2024-03-01,Stamping,Scratch,Evening,4979,367,3.71,28001.35
-2024-03-08,Machining,Porosity,Night,3751,256,16.19,31387.8
-2025-02-02,Packaging,Missing Component,Day,3118,95,12.81,12867.9
-2025-04-16,Machining,Crack,Evening,3879,220,21.54,42491.66
-2025-06-16,Packaging,Missing Component,Day,3860,308,20.31,10131.4
-2024-01-13,Electronics,Crack,Night,4669,328,6.75,29157.62
-2024-12-03,Machining,Dimensional Variance,Evening,4093,186,8.09,39381.7
-2025-05-07,Injection Molding,Missing Component,Night,4689,116,15.62,29115.54
-2024-10-11,Injection Molding,Discoloration,Evening,3312,265,15.44,37487.94
-2025-04-08,Injection Molding,Crack,Day,2694,395,16.04,13087.58
-2024-04-08,Packaging,Crack,Evening,1667,189,11.84,6273.37
-2025-05-18,Stamping,Dimensional Variance,Day,4987,395,14.01,29810.36
-2025-03-01,Assembly,Discoloration,Night,3190,397,16.15,47369.64
-2024-08-03,Injection Molding,Missing Component,Evening,3090,324,11.35,39653.03
-2025-04-19,Electronics,Crack,Day,1537,177,1.02,17511.83
-2024-04-05,Assembly,Discoloration,Night,4610,55,12.82,34195.46
-2024-11-24,Assembly,Discoloration,Day,4672,306,19.17,18673.81
-2024-08-25,Injection Molding,Dimensional Variance,Day,4753,316,10.73,32665.53
-2024-05-14,Packaging,Missing Component,Night,1697,190,9.99,13642.65
-2024-11-16,Injection Molding,Scratch,Day,4363,177,13.15,40715.89
-2024-12-25,Injection Molding,Discoloration,Day,2767,34,2.13,23810.09
-2024-02-26,Electronics,Missing Component,Evening,4825,3,4.44,6289.04
-2024-01-24,Assembly,Discoloration,Day,3497,171,7.56,37234.21
-2024-02-21,Electronics,Burr,Evening,1932,250,4.34,32724.03
-2024-03-18,Injection Molding,Porosity,Night,4933,348,4.06,29269.3
-2025-03-01,Injection Molding,Missing Component,Day,3317,136,19.69,14546.79
-2024-01-28,Electronics,Scratch,Evening,4674,119,22.48,10147.69
-2024-09-12,Assembly,Scratch,Evening,1708,112,15.17,1121.09
-2024-04-21,Packaging,Crack,Evening,2234,58,2.58,22269.95
-2025-04-09,Machining,Porosity,Day,2231,323,5.32,2433.86
-2024-02-03,Machining,Discoloration,Day,3767,38,9.65,42022.02
-2024-05-01,Stamping,Scratch,Evening,3483,4,11.18,19727.42
-2024-09-11,Machining,Missing Component,Day,694,129,18.4,19242.38
-2024-12-01,Machining,Discoloration,Night,1038,325,22.86,10644.99
-2024-05-04,Machining,Crack,Evening,2885,0,10.81,14656.37
-2024-07-12,Assembly,Missing Component,Night,1478,169,14.83,5181.81
-2024-07-16,Electronics,Porosity,Night,2815,284,19.05,19119.01
-2025-06-21,Machining,Discoloration,Evening,2886,131,7.7,6055.19
-2024-02-13,Packaging,Scratch,Evening,1730,239,21.19,19872.8
-2025-01-04,Stamping,Porosity,Night,477,341,6.23,4779.59
-2025-02-28,Machining,Dimensional Variance,Evening,1831,351,23.35,8670.32
-2024-10-07,Injection Molding,Scratch,Night,2367,195,20.52,32161.78
-2024-06-23,Assembly,Porosity,Night,2018,7,3.24,14985.13
-2024-01-26,Electronics,Crack,Day,1719,99,17.18,5686.21
-2025-02-09,Packaging,Burr,Day,4154,98,16.19,36155.81
-2024-02-10,Injection Molding,Crack,Evening,2244,175,2.82,364.27
-2024-05-29,Assembly,Scratch,Day,615,218,23.43,15845.47
-2024-09-09,Injection Molding,Discoloration,Day,335,269,15.4,25081.31
-2024-03-15,Assembly,Dimensional Variance,Day,1083,397,13.2,11803.61
-2024-06-25,Injection Molding,Dimensional Variance,Night,640,29,22.71,45164.46
-2024-08-10,Injection Molding,Missing Component,Evening,2685,265,17.39,34554.64
-2025-06-11,Stamping,Burr,Evening,3725,235,17.56,34820.34
-2024-12-29,Injection Molding,Discoloration,Night,1306,368,19.88,7414.25
-2024-01-05,Packaging,Discoloration,Evening,1853,86,12.71,46250.2
-2025-03-04,Injection Molding,Burr,Day,3980,67,7.15,24392.96
-2024-01-11,Injection Molding,Porosity,Night,4384,10,21.85,4043.6
-2024-01-21,Stamping,Discoloration,Night,1982,307,16.48,27176.27
-2025-02-15,Packaging,Burr,Night,3611,243,19.48,42518.53
-2024-08-30,Packaging,Discoloration,Day,2290,99,11.96,41624.44
-2024-02-10,Machining,Crack,Evening,4243,89,13.4,28344.83
-2024-10-11,Electronics,Burr,Evening,4472,379,10.63,11204.59
-2024-01-13,Packaging,Dimensional Variance,Night,3505,388,2.35,26295.49
-2025-06-20,Electronics,Crack,Evening,1308,279,23.47,17934.35
-2024-12-23,Assembly,Discoloration,Evening,4176,38,12.69,18835.24
-2024-06-23,Stamping,Missing Component,Day,4791,395,21.96,38201.62
-2025-02-17,Packaging,Dimensional Variance,Night,4341,128,8.74,27488.82
-2024-03-05,Injection Molding,Dimensional Variance,Evening,2297,10,3.34,16354.17
-2025-03-06,Packaging,Burr,Day,2615,214,9.89,25071.26
-2024-04-21,Stamping,Dimensional Variance,Day,2078,233,9.35,15876.37
+throughputDate,terminalName,vesselType,cargoCategory,containersHandled,tonnageMetric,vesselBerthHours,craneMoveCount
+2025-04-17,Ro-Ro Terminal,General Cargo,Transshipment,5515,82680.38,104.33,3030
+2025-03-08,Bulk Berth 1,General Cargo,Import,2712,34319.96,63.76,6522
+2024-09-13,Container Terminal B,Tanker,Import,7854,8642.64,239.39,8570
+2024-07-23,Bulk Berth 1,Reefer,Coastal,4503,245498.86,245.69,4243
+2025-06-10,Container Terminal A,Tanker,Transshipment,1189,53850.82,459.41,3216
+2024-08-17,Bulk Berth 2,Tanker,Import,383,225340.06,463.52,6861
+2024-09-15,Break Bulk Pier,Reefer,Coastal,11347,94867.77,715.84,3533
+2024-07-02,Container Terminal B,Container Ship,Import,4169,117969.16,460.2,7123
+2024-06-01,Container Terminal A,Container Ship,Transshipment,667,21653.02,557.33,9338
+2025-05-03,Container Terminal A,Bulk Carrier,Transshipment,5695,37962.59,716.93,2584
+2024-06-15,Bulk Berth 2,General Cargo,Coastal,7248,143319.86,200.25,4540
+2024-03-26,Container Terminal A,General Cargo,Export,8927,91100.31,315.58,8609
+2025-03-13,Bulk Berth 1,Tanker,Export,3346,16519.42,402.05,963
+2024-03-01,Bulk Berth 1,General Cargo,Coastal,9909,193183.15,403.29,8718
+2024-11-11,Bulk Berth 1,General Cargo,Transshipment,4296,45303.15,260.12,2134
+2025-01-25,Bulk Berth 2,Ro-Ro Ferry,Export,3125,165743.15,96.95,3498
+2025-02-10,Container Terminal A,Reefer,Coastal,2457,61639.81,536.78,4064
+2024-02-15,Bulk Berth 2,Tanker,Transshipment,541,193821.99,63.55,6627
+2025-05-08,Container Terminal B,Container Ship,Transshipment,5954,122691.54,521.55,4439
+2024-02-09,Container Terminal A,Reefer,Export,2642,241617.6,94.94,3378
+2024-08-10,Bulk Berth 2,General Cargo,Import,2772,16573.65,181.77,7624
+2025-05-21,Ro-Ro Terminal,Bulk Carrier,Coastal,4990,12252.35,331.02,8586
+2025-02-03,Break Bulk Pier,Container Ship,Coastal,9345,203215.64,185.16,6444
+2024-06-29,Bulk Berth 1,Ro-Ro Ferry,Import,9586,13261.88,622.52,2965
+2024-12-14,Container Terminal B,Reefer,Export,8268,46896.6,291.64,29
+2024-02-26,Container Terminal A,Bulk Carrier,Import,10596,174838.15,619.18,4175
+2025-05-03,Bulk Berth 1,General Cargo,Transshipment,4524,131509.39,266.6,390
+2024-09-05,Ro-Ro Terminal,Reefer,Import,3446,108669.04,90.22,6590
+2025-02-14,Bulk Berth 1,Ro-Ro Ferry,Import,5170,160733.43,60.27,6081
+2025-03-22,Break Bulk Pier,Reefer,Export,225,123850.74,405.31,331
+2024-01-31,Bulk Berth 1,Container Ship,Coastal,9132,116134.47,550.89,643
+2024-07-09,Container Terminal A,Container Ship,Coastal,5447,213262.03,49.59,2776
+2024-04-23,Break Bulk Pier,Reefer,Import,2912,29608.88,597.29,9085
+2024-12-04,Container Terminal A,General Cargo,Export,5393,140993.44,304.11,2535
+2024-01-08,Container Terminal B,Bulk Carrier,Import,7479,1991.82,431.15,648
+2024-11-25,Bulk Berth 1,Reefer,Coastal,2358,234831.37,145.75,7806
+2024-07-19,Container Terminal A,Reefer,Coastal,9206,60680.24,126.46,5542
+2024-06-29,Ro-Ro Terminal,Container Ship,Export,3416,223387.1,34.53,5974
+2025-05-30,Ro-Ro Terminal,Reefer,Coastal,6914,190428.48,505.68,700
+2025-03-04,Container Terminal A,Bulk Carrier,Export,1420,135096.12,490.65,8739
+2024-03-12,Container Terminal A,Container Ship,Export,5667,105327.05,638.02,3407
+2024-08-26,Bulk Berth 1,General Cargo,Transshipment,3918,119929.8,569.73,2573
+2025-03-08,Break Bulk Pier,General Cargo,Export,5430,62558.29,77.54,8661
+2024-09-06,Bulk Berth 2,Ro-Ro Ferry,Transshipment,5716,112294.34,393.79,4712
+2024-05-09,Break Bulk Pier,Container Ship,Export,8722,67663.57,273.39,7898
+2024-01-23,Container Terminal B,Bulk Carrier,Import,7881,180822.2,440.18,2554
+2025-03-22,Bulk Berth 1,Ro-Ro Ferry,Export,10427,34749.7,467.48,8212
+2025-05-03,Bulk Berth 1,Bulk Carrier,Export,1747,146233.44,716.72,7967
+2024-04-13,Bulk Berth 2,Ro-Ro Ferry,Coastal,969,167929.95,130.57,5705
+2024-12-16,Bulk Berth 1,Tanker,Coastal,7835,170352.06,705.48,5808
+2024-06-07,Container Terminal B,Ro-Ro Ferry,Coastal,3320,93909.72,150.31,2350
+2024-06-10,Bulk Berth 1,Container Ship,Transshipment,6751,144018.13,370.45,2782
+2024-06-27,Container Terminal B,Reefer,Transshipment,9238,50714.59,289.65,987
+2024-03-17,Container Terminal A,General Cargo,Coastal,2227,115070.87,273.7,2267
+2024-11-14,Container Terminal B,Reefer,Transshipment,4906,229028.29,381.14,1128
+2024-09-13,Container Terminal A,General Cargo,Coastal,6398,138642.32,682.97,8111
+2024-02-10,Bulk Berth 1,Tanker,Transshipment,6816,13799.34,367.4,7634
+2025-06-18,Bulk Berth 1,Bulk Carrier,Coastal,4935,144168.14,9.6,1647
+2024-09-20,Container Terminal A,General Cargo,Transshipment,10256,2336.9,76.31,868
+2024-08-07,Ro-Ro Terminal,General Cargo,Export,8243,165458.18,483.71,1030
+2024-05-19,Break Bulk Pier,Tanker,Export,5215,104018.2,678.28,7296
+2024-01-22,Ro-Ro Terminal,Ro-Ro Ferry,Export,8449,96997.09,682.96,5013
+2025-04-05,Ro-Ro Terminal,Tanker,Coastal,6248,191513.08,657.85,2303
+2024-07-16,Bulk Berth 1,General Cargo,Import,7239,175359.53,650.98,5577
+2024-03-29,Container Terminal B,Ro-Ro Ferry,Transshipment,953,238700.82,506.17,3626
+2025-02-22,Break Bulk Pier,Container Ship,Transshipment,8171,237511.24,176.96,1417
+2024-01-29,Ro-Ro Terminal,General Cargo,Coastal,10207,71442.15,336.83,2361
+2024-08-10,Bulk Berth 2,Tanker,Import,7831,189909.76,456.83,617
+2024-05-10,Container Terminal A,General Cargo,Export,11195,117137.18,598.34,9334
+2024-09-02,Bulk Berth 2,Ro-Ro Ferry,Import,11702,68197.45,487.72,2433
+2025-04-17,Ro-Ro Terminal,Tanker,Transshipment,813,78858.03,321.6,812
+2025-02-07,Bulk Berth 2,Bulk Carrier,Transshipment,7923,190865.84,712.25,84
+2024-04-11,Break Bulk Pier,Ro-Ro Ferry,Export,4925,236766.58,177.19,1490
+2024-05-21,Bulk Berth 2,Reefer,Import,11090,176392.1,193.49,3013
+2024-01-10,Break Bulk Pier,Bulk Carrier,Coastal,4815,171841.31,292.18,2908
+2024-04-12,Break Bulk Pier,Tanker,Coastal,10960,102548.34,491.65,6643
+2024-08-17,Break Bulk Pier,Reefer,Export,2001,246624.93,88.17,8001
+2024-06-27,Container Terminal B,Ro-Ro Ferry,Import,4243,93335.37,32.19,2570
+2024-09-22,Bulk Berth 2,Bulk Carrier,Import,5367,22622.79,427.44,7110
+2025-06-03,Break Bulk Pier,Ro-Ro Ferry,Import,287,74788.08,100.28,784
+2025-06-22,Bulk Berth 1,Tanker,Import,8547,47712.29,44.79,3770
+2025-05-04,Bulk Berth 2,Reefer,Coastal,9316,31037.36,227.19,8708
+2025-05-02,Container Terminal B,Reefer,Coastal,11187,218592.64,161.22,2223
+2024-01-03,Bulk Berth 2,Container Ship,Coastal,8635,206641.34,19.46,4314
+2025-03-04,Break Bulk Pier,Ro-Ro Ferry,Import,3668,3016.81,289.75,2486
+2024-07-09,Container Terminal A,General Cargo,Import,5748,25574.77,75.27,3251
+2024-10-09,Container Terminal A,Tanker,Export,1195,176421.97,251.39,2614
+2024-06-14,Ro-Ro Terminal,Ro-Ro Ferry,Transshipment,204,180025.17,584.69,7137
+2024-12-12,Bulk Berth 2,Ro-Ro Ferry,Export,5501,10451.31,377.5,3433
+2024-05-27,Ro-Ro Terminal,General Cargo,Export,281,132146.62,300.55,1518
+2024-11-10,Container Terminal B,Container Ship,Transshipment,7362,87875.6,285.05,2181
+2025-01-09,Container Terminal A,Bulk Carrier,Export,9272,149690.37,204.7,5360
+2025-01-17,Bulk Berth 1,Tanker,Export,5126,129751.52,207.03,2322
+2024-02-08,Container Terminal B,Tanker,Import,8851,127172.84,679.87,3042
+2024-11-15,Ro-Ro Terminal,Container Ship,Import,3758,156293.7,423.5,390
+2024-08-29,Break Bulk Pier,Bulk Carrier,Export,8208,100995.56,266.82,4555
+2024-05-22,Container Terminal B,Ro-Ro Ferry,Transshipment,3334,15325.3,40.73,7895
+2024-11-21,Container Terminal A,Tanker,Coastal,1482,161339.41,108.24,6341
+2024-04-10,Container Terminal B,Tanker,Export,7236,43789.45,177.25,2759
+2024-10-10,Break Bulk Pier,Bulk Carrier,Import,7371,174260.28,679.29,7782
+2024-04-10,Container Terminal B,Tanker,Export,8933,97527.93,583.18,5014
+2024-05-16,Bulk Berth 1,Reefer,Coastal,6828,93339.56,166.95,7646
+2025-02-06,Ro-Ro Terminal,Ro-Ro Ferry,Transshipment,914,197710.67,612.79,554
+2024-03-05,Container Terminal B,Bulk Carrier,Transshipment,2750,139185.36,458.84,4476
+2024-02-08,Container Terminal A,Container Ship,Transshipment,4947,2822.93,435.97,2305
+2024-07-30,Container Terminal A,Tanker,Coastal,3566,68464.04,693.46,6022
+2024-06-28,Container Terminal A,General Cargo,Transshipment,9008,113334.23,99.42,3743
+2025-02-05,Bulk Berth 1,Container Ship,Coastal,2018,116459.73,417.51,2328
+2024-07-24,Bulk Berth 2,Reefer,Export,6593,30468.62,329.4,1341
+2024-10-13,Bulk Berth 1,Tanker,Export,6265,66984.39,254.18,8596
+2024-03-20,Ro-Ro Terminal,Ro-Ro Ferry,Export,402,190548.33,24.13,2978
+2024-07-07,Bulk Berth 1,General Cargo,Transshipment,6523,857.88,641.68,4144
+2024-12-04,Bulk Berth 2,Container Ship,Import,7424,167115.22,70.04,3054
+2024-01-30,Break Bulk Pier,Ro-Ro Ferry,Import,9369,26118.14,537.27,3408
+2025-01-12,Container Terminal A,Bulk Carrier,Transshipment,8365,166559.23,441.07,2095
+2024-12-20,Ro-Ro Terminal,Ro-Ro Ferry,Coastal,5273,25183.87,619.96,7791
+2025-05-02,Bulk Berth 1,Reefer,Coastal,11420,230451.26,126.36,2456
+2025-03-18,Container Terminal B,Bulk Carrier,Import,2347,109429.62,94.75,3877
+2025-03-13,Break Bulk Pier,Ro-Ro Ferry,Export,8433,249789.16,649.11,961
+2024-07-21,Container Terminal A,Tanker,Coastal,1012,142888.59,697.85,2460
+2024-04-13,Break Bulk Pier,Ro-Ro Ferry,Export,3204,21398.15,267.0,739
+2024-05-25,Container Terminal A,Bulk Carrier,Coastal,7940,213404.64,616.46,5893
+2025-02-10,Break Bulk Pier,General Cargo,Import,11200,142201.05,352.18,6372
+2024-12-30,Bulk Berth 1,Tanker,Import,4456,22841.61,22.35,5795
+2025-05-11,Bulk Berth 1,Ro-Ro Ferry,Export,10374,22257.19,619.35,4770
+2024-02-18,Break Bulk Pier,General Cargo,Import,1646,62365.61,121.63,8444
+2025-05-12,Bulk Berth 2,Bulk Carrier,Export,2762,62110.98,137.41,2416
+2024-04-20,Ro-Ro Terminal,Ro-Ro Ferry,Transshipment,9716,32761.01,384.57,3158
+2024-04-26,Break Bulk Pier,Container Ship,Transshipment,9270,86935.15,309.31,7639
+2025-04-12,Container Terminal A,Reefer,Coastal,1618,40052.83,551.85,5674
+2024-09-16,Container Terminal A,Reefer,Import,9773,18006.7,699.79,6469
+2024-05-30,Ro-Ro Terminal,Tanker,Transshipment,5876,125162.8,237.73,3932
+2024-01-29,Bulk Berth 2,Container Ship,Transshipment,8827,218418.02,56.12,3938
+2025-06-16,Break Bulk Pier,Container Ship,Coastal,11489,13902.68,87.09,4747
+2024-10-25,Container Terminal B,Container Ship,Coastal,3181,169688.16,17.68,7307
+2024-03-24,Ro-Ro Terminal,Reefer,Import,10289,195507.55,396.22,372
+2024-04-29,Container Terminal A,Tanker,Import,2547,236838.62,114.34,6048
+2024-12-08,Bulk Berth 2,Tanker,Transshipment,3754,166351.21,604.12,2827
+2024-01-25,Ro-Ro Terminal,Reefer,Export,1830,95406.77,354.71,8449
+2024-07-25,Container Terminal A,Bulk Carrier,Coastal,4891,81821.54,689.81,8307
+2024-10-22,Bulk Berth 2,Reefer,Import,7077,110132.7,418.75,8869
+2024-01-12,Bulk Berth 2,Tanker,Import,6014,21379.06,214.06,2869
+2024-06-09,Ro-Ro Terminal,Reefer,Export,6873,31111.22,150.58,5239
+2024-06-13,Bulk Berth 2,General Cargo,Import,10635,91691.13,690.95,508
+2024-02-18,Break Bulk Pier,General Cargo,Export,4433,120548.06,283.14,8687
+2024-11-05,Container Terminal B,Container Ship,Export,1651,86684.53,430.77,3383
+2024-05-08,Break Bulk Pier,Container Ship,Coastal,258,96708.94,605.82,6897
+2024-02-13,Container Terminal B,Reefer,Import,9128,167757.78,106.78,858
+2024-09-28,Bulk Berth 1,Reefer,Export,11829,40388.18,488.44,2597
+2024-07-23,Bulk Berth 2,Ro-Ro Ferry,Coastal,3529,19827.0,425.77,3285
+2024-05-16,Bulk Berth 1,General Cargo,Transshipment,9247,26418.48,555.11,1702
+2024-10-23,Container Terminal A,Tanker,Export,8097,165256.05,98.28,5846
+2024-12-19,Break Bulk Pier,General Cargo,Coastal,4913,107731.23,370.81,537
+2025-02-08,Break Bulk Pier,General Cargo,Export,8276,193092.1,398.32,4606
+2025-02-08,Bulk Berth 1,Ro-Ro Ferry,Export,3080,67687.35,267.93,1114
+2024-08-12,Bulk Berth 2,Reefer,Import,6438,186046.85,215.4,8298
+2024-05-31,Bulk Berth 2,General Cargo,Transshipment,6230,217174.85,284.58,6951
+2024-07-13,Bulk Berth 1,Reefer,Import,10945,187579.58,495.24,7005
+2025-06-10,Container Terminal A,Container Ship,Coastal,7649,170440.38,439.71,9100
+2024-10-04,Container Terminal B,Tanker,Export,5218,238497.83,413.8,7166
+2024-11-25,Ro-Ro Terminal,Container Ship,Import,4161,80070.38,582.96,3410
+2024-03-10,Break Bulk Pier,Bulk Carrier,Transshipment,825,10975.94,10.68,3753
+2024-01-09,Bulk Berth 2,Tanker,Coastal,9872,168016.11,86.64,9426
+2024-07-07,Ro-Ro Terminal,Ro-Ro Ferry,Transshipment,334,21706.85,470.6,4315
+2025-03-17,Container Terminal A,Ro-Ro Ferry,Export,10040,86662.8,173.74,4565
+2025-04-01,Bulk Berth 2,Ro-Ro Ferry,Coastal,2922,249247.34,256.55,8992
+2024-09-05,Break Bulk Pier,Ro-Ro Ferry,Coastal,10040,158750.55,233.67,2847
+2024-04-02,Ro-Ro Terminal,Bulk Carrier,Import,98,96426.49,539.26,776
+2025-01-26,Break Bulk Pier,Container Ship,Coastal,8628,88717.01,46.91,3981
+2024-06-14,Bulk Berth 1,Container Ship,Transshipment,2796,75889.77,109.31,2530
+2024-06-11,Ro-Ro Terminal,Ro-Ro Ferry,Import,9350,210309.28,131.56,1207
+2025-02-03,Break Bulk Pier,Bulk Carrier,Import,3258,4540.41,180.58,676
+2024-09-13,Container Terminal B,Bulk Carrier,Coastal,10860,223808.65,202.85,8227
+2024-05-28,Break Bulk Pier,General Cargo,Coastal,8438,51393.31,59.17,7403
+2025-05-03,Bulk Berth 1,Tanker,Export,8701,12777.71,172.7,218
+2024-10-13,Container Terminal A,Tanker,Transshipment,1052,205223.84,212.04,3311
+2025-03-09,Break Bulk Pier,Bulk Carrier,Import,9417,130014.92,4.62,5636
+2025-05-18,Container Terminal A,Tanker,Export,4382,249525.63,146.76,3435
+2025-02-17,Ro-Ro Terminal,Reefer,Export,4493,129886.13,711.44,5964
+2025-02-07,Bulk Berth 1,General Cargo,Export,8954,86204.34,38.18,8335
+2024-12-15,Bulk Berth 1,Bulk Carrier,Coastal,3790,122828.12,504.81,3542
+2025-01-03,Bulk Berth 2,Tanker,Transshipment,4868,153378.21,436.95,8586
+2024-04-10,Break Bulk Pier,Bulk Carrier,Coastal,5616,86004.6,72.71,2646
+2024-01-17,Bulk Berth 1,General Cargo,Import,9779,221287.42,452.41,5892
+2024-03-24,Ro-Ro Terminal,Tanker,Import,1648,89084.8,548.94,8786
+2025-02-28,Bulk Berth 1,Container Ship,Coastal,5293,123927.06,248.82,1751
+2025-03-14,Bulk Berth 1,Ro-Ro Ferry,Coastal,10389,61789.76,587.33,1053
+2024-11-24,Ro-Ro Terminal,Reefer,Coastal,3237,227068.2,198.51,1332
+2024-08-04,Bulk Berth 2,Tanker,Transshipment,7639,139726.53,707.61,3435
+2024-12-08,Container Terminal B,Bulk Carrier,Export,1283,162758.52,396.39,3971
+2025-03-27,Bulk Berth 1,Ro-Ro Ferry,Import,3621,134241.46,506.27,1874
+2025-01-10,Bulk Berth 1,General Cargo,Export,8192,226484.6,359.94,3601
+2024-12-20,Bulk Berth 1,Bulk Carrier,Import,2276,201522.4,305.96,3701
+2025-06-06,Break Bulk Pier,Reefer,Import,1795,68238.06,164.86,4406
+2024-07-21,Bulk Berth 1,Tanker,Transshipment,3260,141536.19,566.7,243
+2024-01-02,Bulk Berth 1,Tanker,Import,9444,188823.44,539.34,601
+2024-09-11,Bulk Berth 1,Reefer,Coastal,7467,88971.11,656.25,3254
+2024-11-05,Ro-Ro Terminal,Ro-Ro Ferry,Transshipment,5883,28080.17,419.85,2052
+2025-02-11,Ro-Ro Terminal,Container Ship,Transshipment,1565,198073.07,13.55,2326
+2025-05-21,Ro-Ro Terminal,Container Ship,Export,3504,240936.01,95.91,5061
+2025-02-07,Container Terminal A,Bulk Carrier,Import,4618,245737.62,380.51,3947
+2024-08-11,Container Terminal A,Reefer,Transshipment,6813,219650.85,642.91,6902
+2024-04-10,Container Terminal B,General Cargo,Import,10451,160609.1,287.23,2150
+2024-11-01,Ro-Ro Terminal,Ro-Ro Ferry,Coastal,3104,28738.38,546.44,5512
+2024-04-14,Container Terminal A,General Cargo,Import,9253,234326.06,698.98,2619
+2024-05-22,Bulk Berth 2,Ro-Ro Ferry,Coastal,5319,100100.4,327.55,2392
+2024-03-06,Bulk Berth 2,General Cargo,Import,323,202119.92,402.0,1662
+2025-01-18,Container Terminal A,Container Ship,Transshipment,11096,179592.73,82.64,1386
+2024-01-31,Container Terminal A,Ro-Ro Ferry,Import,10493,140237.2,590.49,4765
+2025-02-19,Break Bulk Pier,Container Ship,Transshipment,3368,27398.69,24.46,8815
+2025-01-16,Container Terminal B,Reefer,Export,1075,200702.88,708.72,6754
+2025-04-02,Bulk Berth 1,Reefer,Export,270,38894.22,106.18,9238
+2024-05-07,Bulk Berth 2,Ro-Ro Ferry,Import,1652,207507.14,379.48,9362
+2024-07-06,Container Terminal A,General Cargo,Transshipment,3332,125171.84,288.88,3973
+2024-04-21,Container Terminal B,General Cargo,Coastal,1732,113624.61,318.18,9208
+2025-05-09,Container Terminal A,Reefer,Export,5202,95367.93,570.56,2438
+2025-01-11,Bulk Berth 2,Bulk Carrier,Export,5668,35220.07,145.11,6222
+2024-07-05,Ro-Ro Terminal,Reefer,Coastal,3299,38797.84,644.27,2781
+2024-12-18,Bulk Berth 1,Reefer,Transshipment,10265,47390.56,174.57,7043
+2024-07-22,Container Terminal A,Container Ship,Transshipment,9643,234160.1,562.88,4713
+2024-10-15,Ro-Ro Terminal,Bulk Carrier,Export,4690,242931.28,667.01,414
+2025-03-17,Bulk Berth 2,Tanker,Transshipment,9850,57876.62,241.94,8073
+2025-01-25,Bulk Berth 2,Ro-Ro Ferry,Export,7310,73821.45,156.14,3719
+2024-04-20,Bulk Berth 2,Tanker,Import,4941,141024.89,493.57,2674
+2024-11-02,Ro-Ro Terminal,General Cargo,Transshipment,11363,101736.32,639.33,5023
+2025-05-24,Container Terminal B,Container Ship,Export,1537,113208.05,93.24,8934
+2024-09-04,Container Terminal A,Tanker,Import,7337,26480.85,196.66,5668
+2025-01-12,Break Bulk Pier,General Cargo,Import,10101,143266.4,232.25,1396
+2025-02-22,Container Terminal B,Tanker,Transshipment,8005,221676.32,335.51,1378
+2024-11-17,Container Terminal B,Ro-Ro Ferry,Coastal,1224,126139.86,201.82,3962
+2025-06-13,Container Terminal A,Bulk Carrier,Coastal,3155,9927.67,72.94,2821
+2024-01-02,Ro-Ro Terminal,Bulk Carrier,Import,7878,63536.12,332.5,4650
+2024-04-18,Bulk Berth 1,General Cargo,Import,9971,78513.24,9.88,2159
+2024-02-11,Container Terminal A,Container Ship,Transshipment,6953,34849.31,219.55,251
+2025-04-06,Break Bulk Pier,Bulk Carrier,Coastal,525,162879.1,575.21,4348
+2024-01-01,Ro-Ro Terminal,Reefer,Import,11336,207280.49,207.76,247
+2025-06-02,Container Terminal B,Bulk Carrier,Import,7516,154382.58,177.38,2995
+2025-05-29,Container Terminal B,Reefer,Export,9303,203389.17,37.85,2492
+2025-03-27,Container Terminal A,Container Ship,Import,6771,171630.91,494.96,6018
+2025-02-13,Bulk Berth 1,General Cargo,Export,9839,160756.89,705.89,7820

@@ -1,241 +1,241 @@
-ridership_trip_date,ridership_route_line,ridership_service_mode,ridership_fare_type,ridership_passenger_count,ridership_fare_revenue,ridership_on_time_pct,ridership_avg_wait_minutes
-2024-02-27,Orange Line,Light Rail,Monthly Pass,29924,74327.79,74.16,16.6
-2024-05-29,Blue Line,Bus,Senior,28384,125082.82,12.95,23.22
-2024-05-17,Orange Line,Streetcar,Senior,11382,92212.51,45.77,30.32
-2024-09-24,Express 7,Light Rail,Disabled,12085,32361.88,75.12,25.23
-2025-03-06,Express 7,Bus,Senior,40610,217201.36,65.99,1.21
-2025-04-22,Harbor Shuttle,Subway,Student,44800,249129.49,33.53,10.05
-2025-03-17,Harbor Shuttle,Subway,Senior,20925,125620.58,67.01,20.97
-2024-11-06,Green Line,Bus,Student,44296,16408.17,35.34,42.05
-2025-01-11,Express 7,Light Rail,Adult,13097,132079.21,35.02,7.54
-2025-03-14,Red Line,Streetcar,Disabled,18987,176650.48,13.12,27.54
-2024-07-10,Red Line,Bus,Adult,39363,25136.81,70.11,13.2
-2024-09-15,Red Line,Commuter Rail,Youth,7518,604.16,23.03,13.92
-2024-11-01,Blue Line,Bus,Adult,502,37558.35,40.6,9.17
-2025-03-30,Orange Line,Bus,Adult,38076,185984.8,4.9,35.47
-2024-07-24,Orange Line,Streetcar,Senior,12885,20857.46,71.34,27.25
-2024-06-03,Orange Line,Bus,Disabled,39675,124096.6,71.75,27.53
-2024-02-15,Orange Line,Commuter Rail,Youth,4496,225207.54,36.17,9.43
-2024-12-23,Blue Line,Bus,Senior,16980,83289.31,79.45,26.91
-2024-03-27,Orange Line,Subway,Disabled,2713,241887.43,35.79,26.71
-2025-06-23,Harbor Shuttle,Streetcar,Senior,38278,244711.32,46.14,7.57
-2025-01-18,Red Line,Commuter Rail,Disabled,40714,197072.29,67.71,22.83
-2024-09-21,Green Line,Commuter Rail,Adult,24373,43707.74,4.45,34.98
-2025-06-19,Green Line,Subway,Youth,38044,90326.44,77.95,25.82
-2024-11-12,Red Line,Light Rail,Adult,12959,95855.09,85.57,22.79
-2024-07-07,Orange Line,Subway,Student,10388,247214.69,67.24,40.33
-2024-11-21,Orange Line,Light Rail,Youth,24540,123335.68,56.05,29.83
-2025-04-07,Green Line,Streetcar,Disabled,14654,65884.73,27.52,23.2
-2024-10-17,Harbor Shuttle,Light Rail,Student,43709,138599.37,16.3,11.19
-2024-10-14,Green Line,Light Rail,Disabled,40973,43738.46,35.49,32.43
-2024-02-04,Harbor Shuttle,Subway,Monthly Pass,41203,140253.23,13.59,22.7
-2024-02-01,Blue Line,Subway,Senior,23900,237543.71,98.89,38.73
-2024-07-02,Blue Line,Bus,Student,30642,116678.57,61.56,30.22
-2024-09-09,Blue Line,Commuter Rail,Youth,43849,108083.79,15.23,7.12
-2024-01-01,Green Line,Commuter Rail,Monthly Pass,39838,212588.72,73.6,8.75
-2024-10-15,Orange Line,Streetcar,Disabled,9874,35394.03,1.74,34.4
-2025-01-26,Express 7,Subway,Youth,4137,89499.55,22.8,42.32
-2024-10-08,Orange Line,Subway,Adult,18643,207284.73,66.66,36.77
-2024-03-06,Orange Line,Streetcar,Adult,37752,109813.87,50.06,11.15
-2024-07-20,Express 7,Light Rail,Disabled,30401,1593.77,57.14,37.55
-2024-10-12,Green Line,Streetcar,Disabled,42801,110486.06,76.95,20.52
-2025-03-31,Blue Line,Subway,Disabled,33946,223661.55,99.57,29.3
-2024-06-29,Green Line,Commuter Rail,Student,27800,20497.83,85.35,12.8
-2024-07-10,Express 7,Subway,Student,9382,166553.68,16.82,32.81
-2024-02-06,Harbor Shuttle,Streetcar,Disabled,3116,113082.96,80.18,41.1
-2025-02-16,Express 7,Bus,Senior,29015,2176.46,47.02,9.05
-2024-09-01,Green Line,Bus,Youth,30726,154629.63,97.95,34.04
-2025-03-30,Blue Line,Commuter Rail,Monthly Pass,43573,193601.52,30.66,24.81
-2024-09-18,Orange Line,Subway,Monthly Pass,38390,50044.66,38.48,23.67
-2025-05-20,Red Line,Light Rail,Youth,39311,128827.45,31.16,28.3
-2024-10-17,Orange Line,Streetcar,Monthly Pass,21560,62702.72,59.72,12.36
-2024-05-09,Express 7,Streetcar,Youth,36219,134355.85,88.18,12.94
-2024-09-09,Blue Line,Streetcar,Monthly Pass,37962,89384.6,21.49,6.14
-2024-01-22,Red Line,Commuter Rail,Youth,142,203486.47,45.6,9.98
-2025-05-19,Blue Line,Commuter Rail,Student,24326,176783.06,79.91,44.2
-2024-04-19,Express 7,Subway,Monthly Pass,31810,231891.2,97.08,13.25
-2024-03-17,Orange Line,Light Rail,Youth,22588,177456.47,73.2,9.5
-2025-05-15,Blue Line,Commuter Rail,Adult,921,187781.07,73.77,32.72
-2024-04-13,Orange Line,Light Rail,Senior,42694,13069.55,77.81,14.83
-2024-03-11,Green Line,Light Rail,Senior,41664,28384.63,38.15,42.49
-2024-01-27,Harbor Shuttle,Commuter Rail,Disabled,35773,67301.51,28.13,7.62
-2024-11-28,Blue Line,Subway,Student,30815,217266.29,57.22,31.39
-2024-11-30,Green Line,Commuter Rail,Disabled,39680,207828.19,80.67,5.46
-2024-10-08,Red Line,Bus,Monthly Pass,25728,218865.21,80.28,29.0
-2024-03-10,Harbor Shuttle,Subway,Monthly Pass,30665,17501.01,60.44,13.31
-2024-09-05,Red Line,Subway,Senior,34920,215002.44,86.46,9.68
-2025-03-14,Harbor Shuttle,Light Rail,Youth,20387,190816.8,1.87,36.34
-2025-04-20,Green Line,Bus,Student,3980,8928.75,67.02,26.55
-2025-01-26,Green Line,Streetcar,Senior,36784,187587.87,70.66,15.56
-2025-04-17,Green Line,Subway,Adult,34446,229269.72,41.0,18.86
-2025-04-30,Green Line,Commuter Rail,Senior,13333,207469.06,5.68,43.91
-2024-11-28,Orange Line,Subway,Monthly Pass,31265,195947.26,25.89,22.92
-2025-05-05,Blue Line,Bus,Adult,42873,74115.82,59.01,36.51
-2024-01-14,Orange Line,Streetcar,Disabled,41291,171265.1,13.03,6.71
-2025-01-03,Harbor Shuttle,Streetcar,Monthly Pass,7793,142820.57,60.07,30.66
-2024-08-16,Red Line,Light Rail,Disabled,14282,86193.01,6.68,4.51
-2024-06-23,Harbor Shuttle,Commuter Rail,Disabled,19787,86133.51,53.91,15.47
-2025-03-18,Green Line,Bus,Disabled,26628,160562.52,28.85,23.09
-2024-08-27,Orange Line,Streetcar,Monthly Pass,39554,88193.54,84.46,7.51
-2024-03-29,Harbor Shuttle,Commuter Rail,Monthly Pass,32585,115442.53,31.74,25.0
-2024-12-27,Express 7,Subway,Disabled,9981,30520.62,76.14,30.94
-2025-04-24,Express 7,Bus,Youth,34854,43217.71,4.35,11.41
-2024-02-16,Red Line,Light Rail,Adult,14990,52466.43,46.34,26.01
-2024-03-11,Orange Line,Streetcar,Student,42825,154517.17,46.45,30.9
-2024-05-30,Green Line,Commuter Rail,Senior,6761,165746.78,38.58,3.2
-2024-03-11,Express 7,Commuter Rail,Disabled,36213,5252.57,90.33,20.38
-2024-05-01,Express 7,Commuter Rail,Student,91,165967.64,90.52,34.83
-2024-05-17,Red Line,Subway,Senior,2919,102649.68,81.77,22.83
-2025-05-24,Express 7,Subway,Monthly Pass,16131,127298.41,36.56,28.33
-2025-05-13,Green Line,Bus,Student,1665,1619.62,90.09,28.85
-2024-07-04,Orange Line,Bus,Senior,36311,195134.68,81.22,22.53
-2024-04-12,Blue Line,Subway,Youth,38529,64047.84,13.88,37.54
-2024-06-11,Green Line,Bus,Senior,11479,10024.82,90.58,37.55
-2024-11-28,Blue Line,Subway,Disabled,20989,244517.06,2.2,1.38
-2025-06-01,Harbor Shuttle,Light Rail,Monthly Pass,14501,93384.68,19.18,32.7
-2024-01-05,Red Line,Light Rail,Monthly Pass,10316,207348.93,67.34,13.09
-2025-02-19,Orange Line,Streetcar,Student,19858,75811.91,49.28,21.07
-2025-02-03,Blue Line,Streetcar,Student,19595,38112.37,59.81,44.21
-2025-02-18,Harbor Shuttle,Subway,Youth,4124,10200.8,92.69,42.71
-2024-09-28,Red Line,Commuter Rail,Disabled,37379,121211.61,48.83,14.55
-2024-05-01,Orange Line,Light Rail,Monthly Pass,40934,224911.04,18.54,20.3
-2024-02-08,Harbor Shuttle,Bus,Disabled,25632,60224.19,74.63,44.08
-2024-02-03,Red Line,Light Rail,Youth,40552,220531.53,13.48,34.25
-2024-10-10,Blue Line,Subway,Youth,41754,84400.37,54.31,44.32
-2024-06-16,Red Line,Streetcar,Student,30886,112366.4,44.21,27.8
-2025-06-15,Blue Line,Commuter Rail,Youth,13820,246871.29,57.15,1.9
-2024-11-15,Orange Line,Streetcar,Monthly Pass,16255,193348.88,66.61,40.49
-2024-01-02,Orange Line,Commuter Rail,Disabled,20851,236604.42,50.04,28.83
-2024-05-01,Express 7,Commuter Rail,Disabled,15049,54017.59,84.93,18.18
-2024-01-24,Express 7,Light Rail,Disabled,6434,194605.81,42.32,5.61
-2024-10-28,Red Line,Bus,Disabled,43160,16200.97,15.44,38.83
-2024-11-24,Harbor Shuttle,Commuter Rail,Adult,44775,210689.65,1.17,27.77
-2024-05-28,Blue Line,Streetcar,Senior,17600,77778.5,87.22,4.6
-2024-03-06,Orange Line,Bus,Senior,12224,159042.54,30.05,5.77
-2024-12-02,Orange Line,Bus,Senior,32104,36810.06,38.43,28.52
-2025-04-15,Express 7,Bus,Student,14187,226184.9,0.52,40.44
-2025-01-17,Orange Line,Light Rail,Student,37402,117856.21,1.29,40.43
-2024-12-10,Orange Line,Light Rail,Student,33044,90571.24,69.32,27.53
-2025-06-11,Harbor Shuttle,Commuter Rail,Adult,24902,96631.13,77.58,24.51
-2024-03-03,Harbor Shuttle,Bus,Youth,6070,2819.49,66.19,8.99
-2024-04-30,Green Line,Streetcar,Monthly Pass,4873,167491.69,5.54,6.42
-2024-12-12,Orange Line,Light Rail,Student,21259,226822.65,25.71,13.88
-2024-07-23,Express 7,Bus,Student,15177,116518.04,96.9,22.18
-2025-02-26,Red Line,Subway,Disabled,40108,1682.68,75.57,7.54
-2024-04-27,Harbor Shuttle,Light Rail,Youth,13079,216107.85,98.73,7.17
-2025-03-28,Express 7,Commuter Rail,Senior,36860,153881.19,64.16,17.67
-2025-03-27,Red Line,Commuter Rail,Senior,31226,124800.39,24.91,9.72
-2024-04-11,Blue Line,Light Rail,Youth,31671,43645.95,99.49,15.7
-2025-06-18,Green Line,Commuter Rail,Adult,44225,123270.93,17.29,11.47
-2024-02-10,Blue Line,Bus,Adult,30903,40128.29,2.95,8.65
-2025-05-15,Green Line,Commuter Rail,Monthly Pass,12388,238068.26,1.05,5.17
-2025-04-18,Orange Line,Subway,Senior,13795,77580.35,71.09,4.88
-2024-04-11,Green Line,Subway,Student,17526,208394.42,93.4,14.46
-2025-05-13,Harbor Shuttle,Subway,Senior,28422,110484.74,75.81,44.74
-2024-07-17,Harbor Shuttle,Bus,Adult,40580,43851.85,46.09,34.99
-2024-06-28,Green Line,Commuter Rail,Monthly Pass,33826,207444.8,34.89,25.29
-2024-06-27,Orange Line,Bus,Monthly Pass,15259,201312.7,17.65,3.06
-2024-05-18,Red Line,Commuter Rail,Monthly Pass,234,79769.29,4.98,6.64
-2025-02-22,Red Line,Subway,Youth,715,239754.32,80.77,20.77
-2024-07-25,Orange Line,Streetcar,Monthly Pass,35869,228317.28,76.83,5.2
-2024-11-02,Blue Line,Subway,Senior,2857,4620.19,69.19,10.2
-2024-12-27,Green Line,Streetcar,Youth,20917,94615.9,51.13,13.44
-2025-04-30,Orange Line,Bus,Monthly Pass,25662,155807.36,86.15,7.75
-2024-05-23,Express 7,Commuter Rail,Monthly Pass,28779,198672.6,45.01,16.06
-2025-02-23,Red Line,Bus,Senior,3765,104060.92,30.95,15.95
-2024-08-10,Harbor Shuttle,Subway,Student,35176,21081.97,67.01,16.02
-2024-08-10,Green Line,Subway,Disabled,15226,186623.29,38.36,37.74
-2024-12-20,Harbor Shuttle,Streetcar,Student,27257,26282.56,5.38,11.74
-2025-03-19,Harbor Shuttle,Bus,Youth,24676,77050.53,10.7,5.19
-2024-09-02,Green Line,Bus,Adult,7863,167172.5,16.75,43.0
-2025-02-18,Orange Line,Subway,Student,14997,196649.81,61.87,11.76
-2025-01-19,Blue Line,Subway,Monthly Pass,42408,131655.53,0.77,22.82
-2025-03-30,Orange Line,Light Rail,Monthly Pass,32741,89643.42,33.3,28.92
-2025-06-12,Red Line,Subway,Student,12399,136683.92,89.87,36.65
-2024-08-16,Green Line,Bus,Youth,1406,132055.59,22.64,29.16
-2024-05-16,Blue Line,Subway,Youth,21221,88458.7,23.02,33.98
-2024-03-25,Orange Line,Bus,Student,28137,171734.19,52.53,28.67
-2024-05-12,Red Line,Commuter Rail,Disabled,34733,117626.08,88.48,31.3
-2025-02-11,Harbor Shuttle,Commuter Rail,Senior,40959,210932.06,46.97,35.22
-2025-04-15,Orange Line,Subway,Senior,28440,208594.12,96.09,17.04
-2024-08-10,Blue Line,Bus,Adult,42595,4494.55,51.66,36.44
-2025-03-26,Blue Line,Light Rail,Disabled,845,145416.95,1.95,28.08
-2025-04-21,Red Line,Subway,Youth,18582,161518.43,9.27,27.67
-2024-09-25,Red Line,Subway,Senior,24998,199993.44,69.99,44.6
-2024-10-13,Orange Line,Streetcar,Youth,3101,19450.57,63.89,25.85
-2025-04-26,Green Line,Streetcar,Youth,37823,93643.96,29.06,23.05
-2025-04-01,Green Line,Commuter Rail,Senior,3484,171886.17,53.94,4.56
-2025-01-29,Blue Line,Subway,Youth,28266,197219.8,78.75,6.99
-2025-05-09,Express 7,Subway,Youth,43107,133071.04,68.26,18.91
-2024-09-11,Green Line,Commuter Rail,Disabled,14454,155115.64,16.37,37.1
-2024-08-27,Red Line,Bus,Monthly Pass,35397,56973.28,66.14,34.24
-2024-10-08,Harbor Shuttle,Bus,Adult,6727,74339.95,64.78,8.34
-2025-06-08,Green Line,Streetcar,Monthly Pass,42944,232180.0,34.63,33.16
-2025-04-12,Green Line,Subway,Senior,31627,192147.87,56.74,1.63
-2024-12-24,Red Line,Subway,Student,12994,34099.8,36.18,39.17
-2024-07-17,Red Line,Subway,Youth,15443,73759.86,50.18,5.32
-2024-06-19,Green Line,Bus,Adult,15983,221495.06,93.09,10.39
-2025-05-07,Harbor Shuttle,Light Rail,Disabled,36267,21140.33,42.49,11.25
-2024-11-11,Orange Line,Subway,Senior,27498,246021.49,61.39,19.38
-2025-01-17,Express 7,Streetcar,Student,21181,86222.84,68.27,42.58
-2024-05-12,Red Line,Light Rail,Youth,22721,129955.42,71.84,43.0
-2025-06-04,Orange Line,Subway,Student,22299,181485.13,27.5,19.52
-2024-10-04,Orange Line,Bus,Youth,12787,17237.66,39.92,4.87
-2024-12-20,Express 7,Subway,Monthly Pass,43403,135359.94,54.2,6.05
-2024-02-14,Green Line,Commuter Rail,Student,14262,80999.85,31.62,35.37
-2024-05-19,Green Line,Subway,Student,21023,116736.92,91.49,1.43
-2025-06-08,Orange Line,Commuter Rail,Youth,41291,55079.29,44.59,28.28
-2024-03-07,Express 7,Subway,Senior,14828,179653.8,57.1,31.62
-2024-09-07,Orange Line,Subway,Disabled,8328,191882.46,71.84,18.05
-2024-03-24,Red Line,Commuter Rail,Youth,1571,87885.46,16.78,11.68
-2025-03-11,Green Line,Light Rail,Senior,32317,110664.78,81.49,40.96
-2024-10-16,Orange Line,Commuter Rail,Youth,40618,58101.45,60.73,32.85
-2024-06-07,Orange Line,Light Rail,Student,15029,233005.03,22.06,3.66
-2025-04-24,Green Line,Subway,Student,29429,87447.81,80.79,8.11
-2025-06-10,Green Line,Light Rail,Senior,34099,66928.84,61.91,2.09
-2024-07-18,Orange Line,Light Rail,Senior,7602,173714.48,80.7,39.29
-2024-04-22,Express 7,Bus,Adult,13094,176876.52,3.6,4.68
-2024-06-21,Express 7,Subway,Disabled,33052,109849.78,90.61,4.69
-2024-10-18,Express 7,Commuter Rail,Adult,13082,70075.63,56.22,37.89
-2024-08-14,Red Line,Commuter Rail,Adult,17722,205598.82,39.26,25.63
-2024-08-30,Red Line,Streetcar,Youth,25189,176452.38,73.99,9.19
-2024-07-28,Orange Line,Bus,Student,1001,108691.79,40.66,23.44
-2025-03-09,Orange Line,Streetcar,Monthly Pass,39427,27886.77,57.15,23.87
-2024-05-26,Blue Line,Light Rail,Senior,3664,183004.19,76.93,3.13
-2024-02-07,Harbor Shuttle,Bus,Monthly Pass,40379,68470.94,32.13,31.58
-2024-10-17,Red Line,Subway,Youth,22877,124201.06,96.36,27.54
-2024-03-27,Express 7,Bus,Disabled,26189,149521.68,97.29,7.8
-2025-04-09,Red Line,Commuter Rail,Youth,13306,101062.56,87.13,16.38
-2024-04-23,Express 7,Subway,Adult,4009,21209.62,47.41,15.24
-2025-03-27,Red Line,Light Rail,Youth,2679,228462.56,18.84,6.57
-2024-02-08,Harbor Shuttle,Commuter Rail,Youth,11077,247704.27,91.78,30.36
-2024-04-25,Blue Line,Commuter Rail,Disabled,31342,124428.11,24.01,31.01
-2024-11-27,Green Line,Bus,Student,41863,108075.33,66.1,9.68
-2024-11-28,Harbor Shuttle,Streetcar,Adult,44811,226335.81,65.25,27.83
-2024-09-26,Red Line,Commuter Rail,Senior,28229,25647.04,16.74,27.31
-2024-05-11,Harbor Shuttle,Subway,Adult,31919,148120.89,55.36,29.6
-2025-05-10,Red Line,Light Rail,Disabled,27789,220702.64,49.37,22.23
-2025-04-26,Blue Line,Subway,Senior,25428,7217.51,96.82,25.52
-2025-05-01,Express 7,Bus,Monthly Pass,18322,17976.88,93.16,22.77
-2025-04-16,Orange Line,Bus,Monthly Pass,7214,175090.82,84.94,21.1
-2024-06-07,Red Line,Light Rail,Youth,43485,108919.53,72.59,32.22
-2025-04-25,Orange Line,Subway,Adult,23718,36314.9,83.26,3.59
-2024-02-20,Orange Line,Streetcar,Youth,44784,2318.71,22.16,5.3
-2024-05-09,Express 7,Bus,Adult,20470,153366.85,0.34,41.38
-2025-06-11,Red Line,Subway,Youth,9025,86026.18,19.55,17.46
-2025-06-10,Express 7,Streetcar,Disabled,36749,149496.86,76.96,31.07
-2024-01-11,Harbor Shuttle,Subway,Student,39171,124534.82,45.32,21.15
-2024-04-18,Green Line,Streetcar,Youth,28579,29846.35,88.34,6.71
-2025-02-15,Orange Line,Streetcar,Senior,18216,8210.57,18.6,27.94
-2024-09-05,Express 7,Bus,Youth,33760,212519.6,40.41,41.56
-2025-06-05,Express 7,Bus,Youth,2799,78862.29,63.97,11.26
-2024-07-13,Harbor Shuttle,Streetcar,Monthly Pass,41155,75796.38,63.63,23.17
-2024-09-25,Harbor Shuttle,Bus,Adult,36251,199033.22,61.95,43.26
-2025-06-07,Red Line,Streetcar,Student,22656,249619.75,12.59,30.25
-2024-07-22,Orange Line,Subway,Disabled,38951,127714.9,84.46,20.53
-2025-01-17,Blue Line,Subway,Adult,4944,77703.84,72.38,14.44
-2024-10-14,Orange Line,Streetcar,Youth,3261,234272.51,80.87,17.75
-2025-01-24,Blue Line,Light Rail,Youth,44456,212128.36,78.14,5.31
-2024-07-10,Red Line,Subway,Disabled,44452,58515.43,25.29,12.54
-2024-06-24,Red Line,Commuter Rail,Student,18483,128051.13,54.85,12.81
-2024-04-20,Green Line,Subway,Adult,8328,22359.76,26.28,23.91
+readingDate,siteName,energySource,siteRegion,kilowattHours,peakDemandKw,energyCostUsd,carbonEmissionsKg
+2024-04-04,Riverside Depot,Solar PV,Central,166836.98,12386.58,178589.15,79906.78
+2024-01-26,Northgate Plant,Grid Electricity,North,122721.35,16085.78,219271.45,72426.11
+2024-11-16,Northgate Plant,Grid Electricity,North,112317.41,7872.98,23013.54,34388.17
+2024-10-06,Riverside Depot,Grid Electricity,North,132887.65,17079.72,170520.21,38963.03
+2024-06-13,Northgate Plant,Natural Gas,West,148235.17,5197.81,285915.73,95375.95
+2024-07-21,Westbrook Factory,Grid Electricity,West,166325.63,15976.56,212740.45,119630.82
+2025-05-17,Westbrook Factory,Solar PV,East,124608.98,9475.27,90286.98,54038.2
+2024-05-03,Eastfield Warehouse,Grid Electricity,West,213932.35,16789.26,260240.82,50683.97
+2025-04-30,Summit Office Park,Solar PV,Central,242268.48,11464.02,93047.41,19103.21
+2025-05-23,Lakeshore Data Center,Natural Gas,East,228864.7,15588.76,95413.38,79492.41
+2024-08-08,Westbrook Factory,Solar PV,East,171545.61,357.89,24759.04,74478.05
+2024-11-17,Eastfield Warehouse,Grid Electricity,North,122951.47,13078.54,2044.78,28244.13
+2024-03-18,Eastfield Warehouse,Wind PPA,Central,15881.0,7483.86,77695.33,90327.07
+2024-05-30,Westbrook Factory,Natural Gas,West,6240.06,2763.93,17248.67,104386.24
+2024-12-01,Westbrook Factory,Solar PV,West,193651.61,15326.9,116548.87,71810.05
+2024-01-24,Summit Office Park,Natural Gas,South,221115.17,8778.08,178241.3,16859.58
+2025-03-05,Westbrook Factory,Natural Gas,Central,65199.29,8674.08,166756.62,90246.51
+2024-03-18,Riverside Depot,Wind PPA,West,190098.55,14162.65,317048.51,40328.48
+2024-11-05,Lakeshore Data Center,Natural Gas,Central,154778.56,883.5,97952.05,77239.04
+2024-01-06,Eastfield Warehouse,Diesel Generator,South,53575.66,17942.33,253284.77,65452.42
+2024-02-13,Eastfield Warehouse,Natural Gas,West,58865.12,3760.06,121424.68,98961.07
+2024-06-19,Westbrook Factory,Grid Electricity,East,75240.43,611.75,257553.7,75554.82
+2025-02-16,Eastfield Warehouse,Solar PV,Central,219259.57,15695.42,50294.88,103487.45
+2024-01-14,Summit Office Park,Grid Electricity,Central,151167.8,101.38,155943.29,46712.32
+2024-05-12,Northgate Plant,Grid Electricity,North,217211.34,3175.23,172934.24,40271.33
+2025-05-24,Summit Office Park,Grid Electricity,Central,224191.65,13811.02,154293.37,63237.82
+2025-05-08,Lakeshore Data Center,Grid Electricity,East,62770.53,14465.13,306848.97,20337.11
+2024-09-24,Eastfield Warehouse,Wind PPA,North,138404.41,14456.18,66910.87,58492.22
+2024-12-07,Northgate Plant,Natural Gas,East,174269.62,7012.9,284632.47,1054.09
+2024-07-21,Riverside Depot,Natural Gas,Central,92469.17,6701.31,178922.99,56278.86
+2024-07-17,Northgate Plant,Natural Gas,North,109329.2,10820.18,34979.23,45914.64
+2025-04-07,Summit Office Park,Natural Gas,West,145206.52,14478.24,51285.43,74251.42
+2025-01-24,Riverside Depot,Wind PPA,Central,164939.36,10904.54,118213.39,27741.62
+2024-12-05,Northgate Plant,Diesel Generator,Central,23689.84,3916.04,171169.17,8456.18
+2024-09-24,Summit Office Park,Wind PPA,North,171159.92,11209.14,111432.58,36154.51
+2024-09-18,Lakeshore Data Center,Grid Electricity,South,133077.18,8969.07,100403.91,57993.48
+2024-05-17,Riverside Depot,Natural Gas,West,80022.62,15835.62,125542.45,53101.06
+2025-05-05,Eastfield Warehouse,Solar PV,Central,236832.54,17871.27,312376.2,50479.55
+2025-05-16,Northgate Plant,Wind PPA,West,154132.86,17209.17,233791.52,99931.02
+2024-07-15,Eastfield Warehouse,Wind PPA,West,243397.65,14511.87,108935.21,89382.75
+2024-06-07,Lakeshore Data Center,Diesel Generator,East,198.18,13160.86,137565.85,98947.24
+2024-10-26,Lakeshore Data Center,Wind PPA,West,189632.45,17245.05,309823.71,76625.42
+2024-04-14,Northgate Plant,Diesel Generator,Central,31509.43,239.75,110352.7,119682.04
+2025-06-23,Eastfield Warehouse,Wind PPA,Central,13402.38,9761.69,27530.01,26560.26
+2024-05-23,Summit Office Park,Natural Gas,Central,236834.3,11203.55,59538.73,31729.72
+2024-03-29,Riverside Depot,Natural Gas,North,168830.63,4458.37,80336.93,109310.19
+2024-06-16,Northgate Plant,Solar PV,South,235130.52,8376.65,143831.79,36011.56
+2024-10-16,Northgate Plant,Diesel Generator,South,96422.71,10708.19,58569.48,96530.25
+2024-02-23,Eastfield Warehouse,Natural Gas,Central,117347.06,2395.78,55662.75,112758.91
+2024-08-30,Lakeshore Data Center,Wind PPA,East,248488.33,4405.93,304579.87,79765.22
+2025-02-03,Northgate Plant,Natural Gas,East,130996.32,5954.26,71338.74,65458.36
+2024-08-24,Westbrook Factory,Natural Gas,North,128915.35,16193.77,143519.51,1021.64
+2024-04-23,Northgate Plant,Grid Electricity,South,59254.43,12973.67,202245.1,86800.47
+2025-02-19,Eastfield Warehouse,Grid Electricity,South,155883.31,2223.04,16860.4,32158.94
+2024-06-26,Westbrook Factory,Solar PV,South,157236.18,10694.24,83015.38,116263.12
+2024-01-16,Riverside Depot,Natural Gas,South,239059.36,16021.21,57065.1,78473.24
+2024-07-27,Riverside Depot,Diesel Generator,Central,56931.85,8245.55,51683.94,15839.48
+2024-04-07,Lakeshore Data Center,Grid Electricity,Central,101577.68,9242.25,186152.09,67208.49
+2024-03-01,Northgate Plant,Grid Electricity,West,56230.76,10298.97,30324.36,95692.03
+2025-04-10,Eastfield Warehouse,Diesel Generator,East,24775.2,2495.95,67233.06,28021.03
+2024-09-30,Riverside Depot,Grid Electricity,South,35569.45,7057.33,39737.02,55360.12
+2024-03-22,Lakeshore Data Center,Diesel Generator,East,54628.22,16991.91,96276.34,41281.87
+2024-01-22,Lakeshore Data Center,Wind PPA,South,30095.96,1545.74,175189.09,73512.26
+2025-06-02,Northgate Plant,Wind PPA,Central,135443.59,5758.45,212477.64,44333.99
+2024-01-12,Summit Office Park,Natural Gas,West,156491.84,811.84,125256.64,96871.93
+2024-04-03,Northgate Plant,Solar PV,South,74812.02,1702.38,71183.22,8777.96
+2024-02-04,Westbrook Factory,Wind PPA,Central,181213.02,2075.7,197626.43,92813.87
+2025-02-14,Northgate Plant,Solar PV,East,131132.85,1991.02,66290.55,34558.76
+2024-02-07,Northgate Plant,Solar PV,North,227820.92,1854.75,247261.39,26420.88
+2025-06-18,Westbrook Factory,Diesel Generator,East,209051.07,12159.21,60488.17,65549.04
+2024-09-03,Eastfield Warehouse,Grid Electricity,East,22438.72,15100.38,40899.43,51664.74
+2024-11-27,Eastfield Warehouse,Solar PV,South,134835.58,13810.96,85394.88,109728.08
+2025-04-28,Summit Office Park,Wind PPA,Central,111900.11,10706.22,180726.35,18919.5
+2024-02-28,Summit Office Park,Diesel Generator,North,117634.28,10869.17,192322.75,47249.41
+2024-04-26,Riverside Depot,Diesel Generator,Central,68182.41,256.2,176522.77,60079.64
+2024-01-14,Eastfield Warehouse,Solar PV,North,52527.92,8267.63,51545.29,60727.77
+2024-11-19,Eastfield Warehouse,Diesel Generator,Central,184402.65,15691.52,23335.04,110102.32
+2025-04-02,Lakeshore Data Center,Natural Gas,Central,216224.35,7104.86,83064.82,24816.86
+2024-03-29,Westbrook Factory,Solar PV,North,97286.87,1777.37,70306.24,13074.46
+2024-10-09,Eastfield Warehouse,Natural Gas,South,56858.97,12641.01,317141.77,58470.28
+2024-04-10,Eastfield Warehouse,Wind PPA,Central,182479.57,12946.61,209369.14,82987.15
+2024-08-28,Lakeshore Data Center,Wind PPA,South,71684.91,6008.94,285768.36,38152.69
+2024-02-28,Lakeshore Data Center,Diesel Generator,North,73994.33,16421.89,8160.93,28063.64
+2025-04-07,Summit Office Park,Wind PPA,East,141774.47,9342.61,313604.13,60050.06
+2025-02-14,Lakeshore Data Center,Natural Gas,North,194207.6,8047.32,276421.77,71785.46
+2024-06-10,Summit Office Park,Grid Electricity,North,138280.19,13210.68,96526.93,74097.72
+2024-11-15,Summit Office Park,Wind PPA,North,124942.47,1298.51,63094.08,109840.48
+2025-01-06,Riverside Depot,Diesel Generator,North,199064.62,12862.78,275371.54,24402.15
+2024-01-02,Eastfield Warehouse,Grid Electricity,Central,178868.33,17306.04,46815.94,9584.28
+2024-02-04,Riverside Depot,Diesel Generator,East,125502.66,6343.07,86474.95,110739.06
+2024-05-23,Lakeshore Data Center,Diesel Generator,South,240143.86,5912.74,182365.51,348.57
+2024-05-30,Northgate Plant,Natural Gas,East,153990.93,12784.91,313557.26,93528.71
+2024-05-15,Westbrook Factory,Solar PV,Central,113271.6,4471.3,127906.55,102963.96
+2024-03-05,Eastfield Warehouse,Solar PV,West,59090.84,10701.41,234495.57,73602.62
+2025-03-15,Lakeshore Data Center,Solar PV,Central,168490.12,9679.19,114054.86,4537.67
+2024-11-01,Eastfield Warehouse,Solar PV,Central,79289.21,3670.12,155340.23,84188.8
+2024-11-22,Lakeshore Data Center,Diesel Generator,North,78300.88,129.13,33541.27,91917.11
+2025-01-10,Eastfield Warehouse,Solar PV,West,83565.71,11683.7,238819.91,57832.36
+2024-02-20,Westbrook Factory,Grid Electricity,South,83425.11,3619.69,283883.8,55175.25
+2024-03-29,Summit Office Park,Natural Gas,North,82312.59,14591.53,216864.96,79817.34
+2024-01-05,Summit Office Park,Grid Electricity,North,149693.78,15561.87,5225.51,32243.38
+2024-04-18,Eastfield Warehouse,Solar PV,East,134413.41,17317.0,173617.32,111850.93
+2025-06-06,Lakeshore Data Center,Wind PPA,Central,96439.45,1970.68,12829.86,1969.34
+2025-04-27,Northgate Plant,Solar PV,West,151886.89,4993.88,161993.85,15831.07
+2024-03-08,Westbrook Factory,Grid Electricity,West,166456.26,17771.91,318733.24,79140.01
+2024-03-10,Eastfield Warehouse,Grid Electricity,West,27869.83,6718.14,139880.11,71813.92
+2025-04-28,Lakeshore Data Center,Wind PPA,West,48304.34,14783.96,15791.8,119555.29
+2024-10-24,Westbrook Factory,Natural Gas,East,218290.95,9654.75,309041.43,21896.54
+2024-10-27,Summit Office Park,Wind PPA,Central,20930.43,9627.48,311315.46,107091.47
+2024-01-02,Riverside Depot,Natural Gas,South,50042.37,5072.38,2075.89,8914.85
+2024-04-16,Riverside Depot,Grid Electricity,South,15439.28,4844.56,91664.14,63348.85
+2024-01-02,Northgate Plant,Wind PPA,South,140693.09,2151.56,121883.38,76582.74
+2024-08-10,Westbrook Factory,Diesel Generator,West,105348.74,14472.01,282858.3,24996.15
+2025-04-26,Northgate Plant,Solar PV,North,221237.72,3387.72,297933.8,72041.11
+2024-07-14,Eastfield Warehouse,Wind PPA,South,29147.93,4972.73,223311.87,118425.61
+2024-01-06,Westbrook Factory,Natural Gas,North,229542.38,11339.49,111797.53,93420.27
+2025-05-23,Eastfield Warehouse,Natural Gas,East,207940.54,17958.9,207303.61,119990.4
+2024-08-29,Westbrook Factory,Diesel Generator,Central,248908.04,8338.15,103002.48,112791.25
+2024-11-17,Westbrook Factory,Solar PV,Central,211407.24,10622.51,268521.88,113952.81
+2025-05-17,Lakeshore Data Center,Solar PV,West,218129.87,5098.04,131925.0,2282.0
+2024-09-07,Riverside Depot,Diesel Generator,East,34673.64,3891.59,64110.84,64522.5
+2025-02-02,Westbrook Factory,Diesel Generator,North,141913.59,5765.56,309086.64,7924.15
+2024-05-12,Summit Office Park,Natural Gas,East,80899.06,11260.29,305293.28,57086.12
+2024-05-26,Westbrook Factory,Diesel Generator,Central,231954.05,1424.88,131439.65,93548.05
+2024-04-27,Westbrook Factory,Solar PV,West,78662.32,866.82,9775.49,11237.66
+2025-03-05,Eastfield Warehouse,Diesel Generator,Central,82188.53,8722.43,307393.63,29771.41
+2024-01-18,Eastfield Warehouse,Natural Gas,East,57502.73,5209.04,105806.97,10346.0
+2025-05-02,Northgate Plant,Wind PPA,West,233703.2,1247.03,33135.46,46920.11
+2024-06-09,Westbrook Factory,Diesel Generator,West,135207.03,7854.17,181570.05,44047.81
+2024-05-08,Summit Office Park,Natural Gas,West,104701.76,149.93,144362.17,40603.34
+2025-05-29,Summit Office Park,Natural Gas,Central,186338.2,1325.98,73465.55,29596.14
+2025-02-02,Summit Office Park,Grid Electricity,Central,215354.11,6423.64,130494.39,79381.69
+2025-01-25,Northgate Plant,Diesel Generator,South,169898.46,11655.56,228899.64,72163.56
+2024-04-25,Westbrook Factory,Diesel Generator,South,91529.42,16522.46,256696.91,85971.19
+2024-03-15,Westbrook Factory,Solar PV,East,65420.03,4796.94,306476.05,76502.66
+2024-09-28,Riverside Depot,Grid Electricity,West,156271.25,10349.45,15317.17,22422.37
+2024-06-06,Westbrook Factory,Solar PV,South,170905.8,17516.76,305679.29,68459.38
+2025-02-01,Westbrook Factory,Solar PV,North,96086.82,3026.78,175577.14,33941.06
+2025-04-16,Westbrook Factory,Solar PV,East,143210.03,16859.5,236497.12,85589.15
+2025-03-18,Summit Office Park,Diesel Generator,East,123542.94,17095.84,169378.15,107270.29
+2024-06-23,Westbrook Factory,Wind PPA,North,130849.91,11356.52,13205.41,41262.85
+2025-06-06,Summit Office Park,Solar PV,South,15408.06,1478.25,118341.57,8227.62
+2025-06-13,Westbrook Factory,Solar PV,South,159830.22,1928.33,130152.84,17132.14
+2024-10-16,Summit Office Park,Grid Electricity,Central,240294.05,7337.97,125849.8,92871.77
+2025-02-28,Riverside Depot,Solar PV,Central,223584.17,6866.42,39915.53,108120.25
+2024-07-10,Riverside Depot,Grid Electricity,West,26747.4,9932.42,5142.04,82445.15
+2024-05-15,Riverside Depot,Wind PPA,East,36485.97,2674.64,93572.62,36194.92
+2025-03-23,Westbrook Factory,Wind PPA,East,117500.85,17833.3,42961.32,59977.37
+2024-09-25,Westbrook Factory,Diesel Generator,North,29684.8,12511.54,43684.65,79233.63
+2025-02-22,Summit Office Park,Natural Gas,South,169170.51,8737.19,155.72,2533.11
+2024-06-17,Eastfield Warehouse,Wind PPA,South,8428.85,17816.67,37928.56,114176.69
+2025-04-09,Lakeshore Data Center,Grid Electricity,West,41891.06,3811.8,8862.76,3777.44
+2025-04-17,Riverside Depot,Diesel Generator,South,108986.24,11759.07,309139.44,2336.75
+2024-08-10,Northgate Plant,Diesel Generator,East,113001.56,9111.45,234185.5,117571.38
+2025-01-06,Westbrook Factory,Solar PV,East,27544.43,12788.14,110175.48,89989.31
+2024-07-02,Summit Office Park,Wind PPA,North,164363.29,15827.98,271867.45,24335.75
+2025-06-09,Summit Office Park,Wind PPA,South,44938.58,422.13,221735.11,107134.0
+2024-09-22,Eastfield Warehouse,Solar PV,East,82010.96,8947.81,129947.49,100919.51
+2025-01-10,Westbrook Factory,Wind PPA,West,145688.76,4067.09,4612.41,93081.08
+2024-07-01,Eastfield Warehouse,Wind PPA,West,236108.88,6740.14,196554.63,1597.79
+2025-03-31,Summit Office Park,Natural Gas,South,172088.0,5679.05,171061.5,7189.77
+2024-06-21,Lakeshore Data Center,Natural Gas,West,89035.51,5388.56,319664.92,115108.0
+2024-11-12,Northgate Plant,Wind PPA,North,47955.81,6801.45,152675.87,27893.63
+2024-06-10,Westbrook Factory,Wind PPA,East,189191.56,12907.83,288048.84,114408.56
+2024-03-04,Riverside Depot,Solar PV,North,143264.45,5379.36,258799.01,67994.07
+2024-10-17,Eastfield Warehouse,Solar PV,Central,206360.95,1781.9,140626.45,12865.62
+2025-02-09,Riverside Depot,Solar PV,West,56830.22,13870.46,121190.73,80862.29
+2024-11-21,Riverside Depot,Natural Gas,North,248007.46,136.04,319693.36,35693.91
+2024-04-19,Eastfield Warehouse,Solar PV,West,56129.67,5238.78,75043.17,86220.65
+2024-11-07,Summit Office Park,Wind PPA,South,51268.82,13895.0,269117.14,9142.62
+2024-03-01,Eastfield Warehouse,Wind PPA,South,225371.3,1816.75,118523.3,36786.54
+2024-08-18,Northgate Plant,Solar PV,Central,184300.2,11841.32,183737.08,99468.4
+2024-12-02,Lakeshore Data Center,Wind PPA,East,151659.02,13300.08,20488.12,35400.36
+2024-07-24,Summit Office Park,Natural Gas,West,111147.41,6380.56,105610.16,36997.0
+2025-03-28,Summit Office Park,Diesel Generator,North,173086.83,12471.01,91963.02,29430.18
+2024-08-15,Summit Office Park,Natural Gas,Central,15347.93,965.46,196516.55,53804.07
+2024-05-17,Westbrook Factory,Solar PV,West,73144.76,10440.81,251234.21,44819.35
+2024-12-13,Westbrook Factory,Diesel Generator,North,22476.75,1360.73,181432.9,62831.94
+2025-01-26,Eastfield Warehouse,Wind PPA,South,49950.42,17000.99,80774.43,115947.54
+2024-10-21,Summit Office Park,Diesel Generator,Central,17404.68,3881.29,284123.52,87705.88
+2024-09-29,Riverside Depot,Wind PPA,Central,52417.88,17302.27,199285.9,16181.15
+2024-11-07,Westbrook Factory,Wind PPA,Central,166709.12,2516.52,7511.81,36056.29
+2025-05-04,Westbrook Factory,Diesel Generator,West,78528.88,14980.01,182873.73,49976.28
+2024-04-14,Summit Office Park,Solar PV,South,154390.73,5664.42,102292.82,53148.11
+2025-03-05,Northgate Plant,Grid Electricity,Central,242488.62,7354.1,127199.73,101121.26
+2024-02-22,Westbrook Factory,Diesel Generator,West,186185.78,15779.16,21228.69,99260.15
+2024-02-02,Northgate Plant,Wind PPA,West,87035.61,16666.85,240787.4,64780.28
+2024-05-17,Northgate Plant,Grid Electricity,South,168400.23,15873.96,154417.0,82276.07
+2025-05-02,Summit Office Park,Solar PV,East,244591.84,16083.17,312480.11,29583.65
+2024-10-24,Eastfield Warehouse,Solar PV,South,115314.18,2750.73,200655.59,52404.17
+2024-05-07,Northgate Plant,Natural Gas,South,120883.43,2878.13,154393.04,41509.28
+2025-03-11,Lakeshore Data Center,Diesel Generator,Central,59308.59,17876.15,43487.07,97702.62
+2024-10-01,Eastfield Warehouse,Natural Gas,North,83905.52,10445.08,261184.85,88896.93
+2025-06-11,Eastfield Warehouse,Solar PV,West,239832.68,15463.91,239920.96,26147.25
+2024-03-31,Riverside Depot,Grid Electricity,North,135806.23,15271.77,204231.33,102625.33
+2024-04-30,Riverside Depot,Diesel Generator,West,126651.9,9197.28,147611.36,29472.87
+2025-06-17,Lakeshore Data Center,Grid Electricity,West,116918.17,3840.69,73918.69,47650.53
+2024-09-25,Westbrook Factory,Natural Gas,East,45420.57,9717.41,261437.53,100290.05
+2024-06-05,Summit Office Park,Diesel Generator,West,102243.24,2638.35,25679.58,40055.05
+2024-10-08,Summit Office Park,Grid Electricity,Central,51060.11,16062.08,136878.31,1220.19
+2025-04-19,Northgate Plant,Natural Gas,East,142248.15,17241.66,240448.75,45178.38
+2025-06-22,Eastfield Warehouse,Grid Electricity,East,5716.93,16509.08,302408.88,101596.39
+2025-06-13,Eastfield Warehouse,Wind PPA,North,243019.42,6192.05,172473.36,29713.37
+2024-08-30,Lakeshore Data Center,Natural Gas,South,241196.83,13452.15,95971.19,76079.41
+2025-01-15,Lakeshore Data Center,Natural Gas,South,147475.88,2552.41,181118.47,30352.61
+2024-09-13,Eastfield Warehouse,Wind PPA,Central,90022.26,1491.89,223964.06,11403.78
+2024-07-22,Summit Office Park,Solar PV,North,79588.58,227.97,151358.45,43964.69
+2025-03-20,Lakeshore Data Center,Natural Gas,East,205246.99,8150.06,260145.37,61360.19
+2024-06-20,Eastfield Warehouse,Diesel Generator,East,166225.81,90.31,131077.04,38280.31
+2024-04-20,Westbrook Factory,Diesel Generator,Central,154415.8,11397.23,281334.32,78664.95
+2024-06-16,Westbrook Factory,Wind PPA,West,223541.68,13878.34,198600.1,95741.17
+2024-02-03,Riverside Depot,Natural Gas,South,2281.75,5215.61,10660.63,44402.04
+2025-06-15,Summit Office Park,Natural Gas,Central,240559.96,11418.27,50239.48,101027.01
+2024-01-04,Northgate Plant,Wind PPA,Central,192286.66,12383.87,91527.86,8247.13
+2024-02-15,Northgate Plant,Wind PPA,South,179251.04,6130.87,248962.24,32527.89
+2024-10-17,Riverside Depot,Natural Gas,Central,144316.43,6119.44,110572.09,100913.48
+2025-06-04,Northgate Plant,Solar PV,South,135223.43,13606.16,171039.76,106294.18
+2024-10-03,Lakeshore Data Center,Natural Gas,North,161503.79,15694.87,180084.11,77195.3
+2025-02-19,Riverside Depot,Solar PV,South,227234.15,7350.06,315804.78,52228.58
+2025-03-16,Lakeshore Data Center,Wind PPA,East,248650.94,2039.2,66722.73,8462.2
+2025-02-28,Northgate Plant,Natural Gas,Central,191380.28,14694.4,284192.48,20884.04
+2025-06-09,Westbrook Factory,Grid Electricity,North,70454.51,14434.33,206411.32,90491.41
+2025-03-04,Northgate Plant,Natural Gas,West,85024.33,3351.75,19862.48,59679.95
+2024-12-18,Riverside Depot,Solar PV,East,44943.71,4986.92,83933.37,34291.39
+2025-06-02,Riverside Depot,Natural Gas,East,12983.96,9553.7,277065.03,90158.25
+2024-12-05,Northgate Plant,Grid Electricity,West,61738.16,13729.51,7818.13,23638.61
+2024-04-25,Summit Office Park,Solar PV,East,189165.52,11622.78,204429.95,57624.3
+2025-02-04,Northgate Plant,Grid Electricity,West,121643.93,16530.17,54328.63,86069.96
+2024-08-17,Riverside Depot,Diesel Generator,South,207699.84,10311.5,248500.88,854.95
+2024-08-16,Lakeshore Data Center,Grid Electricity,West,161227.4,6058.3,95225.31,58099.48
+2024-09-22,Northgate Plant,Solar PV,West,135354.22,14037.3,213234.09,98911.84
+2025-06-04,Riverside Depot,Solar PV,Central,18121.59,911.51,252794.41,6577.2
+2024-01-27,Eastfield Warehouse,Diesel Generator,South,41221.67,15297.7,199840.87,29929.23
+2024-11-26,Riverside Depot,Wind PPA,East,68744.18,1102.07,234637.83,118695.31
+2025-03-26,Riverside Depot,Grid Electricity,West,83795.59,12421.8,42840.93,40334.89
+2025-02-09,Northgate Plant,Solar PV,South,42794.37,8949.18,162178.81,54361.13
+2025-01-04,Summit Office Park,Wind PPA,North,22076.05,10754.32,147680.57,116369.94
+2025-03-21,Riverside Depot,Diesel Generator,North,132295.57,4410.42,313159.94,76478.84
+2025-03-25,Summit Office Park,Solar PV,East,118413.8,13441.04,268750.83,13536.67
+2024-03-31,Summit Office Park,Diesel Generator,South,144577.88,13922.43,3315.52,72944.75

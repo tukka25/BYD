@@ -1,241 +1,241 @@
-watch_date,content_type,subscription_tier,device_category,total_watch_minutes,unique_viewer_count,average_session_minutes
-2025-05-14,short_film,basic,mobile_phone,7674.92,288265,120.98
-2024-11-05,movie,family,streaming_stick,11597.88,113001,20.05
-2025-01-30,documentary,free_with_ads,mobile_phone,12705.45,25547,219.55
-2024-10-12,documentary,free_with_ads,desktop_browser,6976.75,391616,26.1
-2024-10-14,short_film,free_with_ads,smart_tv,8485.77,241515,146.0
-2025-02-16,documentary,premium,game_console,12781.43,175616,19.25
-2025-01-16,series_episode,family,tablet,8878.3,343099,236.69
-2025-03-14,documentary,basic,desktop_browser,5978.74,78605,97.44
-2024-10-30,live_event,premium,game_console,10866.38,118917,19.44
-2024-10-02,series_episode,standard,streaming_stick,7531.07,255091,28.82
-2024-08-16,series_episode,family,streaming_stick,10948.1,307712,198.98
-2025-02-24,short_film,basic,streaming_stick,13259.65,319816,155.79
-2024-11-01,documentary,premium,desktop_browser,10549.85,331213,81.68
-2025-03-05,series_episode,premium,game_console,1870.06,406950,30.06
-2025-02-23,live_event,family,mobile_phone,9883.2,260411,17.53
-2024-11-17,series_episode,basic,tablet,8547.62,168563,69.09
-2024-06-01,short_film,premium,game_console,14003.6,440598,39.05
-2024-08-08,documentary,family,smart_tv,10321.85,44157,48.42
-2024-10-16,short_film,family,mobile_phone,10240.82,284013,2.19
-2024-12-28,series_episode,basic,tablet,10986.86,180783,96.41
-2024-10-04,series_episode,premium,smart_tv,11871.9,485812,57.64
-2024-12-04,live_event,free_with_ads,smart_tv,909.28,435387,180.48
-2025-03-19,short_film,free_with_ads,desktop_browser,4400.4,79029,192.9
-2025-03-29,movie,free_with_ads,game_console,12059.44,104094,41.38
-2024-03-05,short_film,free_with_ads,desktop_browser,7937.69,477571,96.42
-2025-01-26,short_film,family,smart_tv,7849.62,125743,143.35
-2025-05-22,live_event,basic,streaming_stick,9379.39,278505,59.18
-2024-10-12,live_event,free_with_ads,streaming_stick,5278.75,276747,112.86
-2024-11-05,documentary,free_with_ads,mobile_phone,2995.15,80360,118.52
-2025-06-04,short_film,free_with_ads,mobile_phone,7805.43,327929,113.12
-2024-09-20,live_event,family,smart_tv,10401.19,456064,221.7
-2024-09-10,movie,standard,game_console,11516.61,476917,114.53
-2024-08-12,live_event,family,desktop_browser,187.63,61106,55.15
-2025-03-13,documentary,standard,smart_tv,4940.96,267260,232.84
-2025-02-18,documentary,premium,game_console,10624.16,227177,111.91
-2025-04-12,short_film,family,tablet,442.71,53769,179.81
-2024-07-14,live_event,free_with_ads,desktop_browser,13298.24,103256,232.36
-2024-12-06,short_film,standard,smart_tv,12505.47,29069,112.64
-2025-04-01,movie,premium,desktop_browser,12484.8,132691,90.21
-2024-01-26,series_episode,premium,mobile_phone,1690.98,427601,113.73
-2024-08-18,series_episode,standard,mobile_phone,12440.86,274759,193.15
-2024-01-30,live_event,standard,tablet,13477.03,473447,25.2
-2024-06-08,documentary,basic,game_console,9115.4,381258,100.58
-2024-03-05,live_event,standard,streaming_stick,11965.62,226581,154.17
-2024-08-13,documentary,basic,desktop_browser,7906.28,47354,34.98
-2025-01-14,series_episode,basic,game_console,5530.86,96092,45.01
-2024-08-10,series_episode,free_with_ads,tablet,10066.04,281540,134.15
-2024-01-24,live_event,basic,tablet,2916.82,285350,10.2
-2024-07-02,movie,family,streaming_stick,12386.93,27173,90.5
-2025-01-13,documentary,premium,smart_tv,12550.31,36663,72.28
-2025-03-14,documentary,premium,streaming_stick,11846.88,434658,133.48
-2024-08-14,series_episode,standard,streaming_stick,6601.9,269042,59.95
-2025-05-15,series_episode,standard,mobile_phone,4235.37,75337,106.4
-2024-07-18,series_episode,free_with_ads,game_console,13805.88,273975,105.32
-2024-02-04,movie,family,tablet,4625.54,337203,90.08
-2024-03-24,short_film,free_with_ads,game_console,1215.13,337072,90.39
-2024-10-26,movie,standard,mobile_phone,8712.92,138664,72.41
-2024-02-27,documentary,family,game_console,7401.31,5147,190.19
-2024-04-07,live_event,free_with_ads,mobile_phone,7607.95,369010,178.3
-2024-03-08,series_episode,family,desktop_browser,12516.69,182770,55.38
-2024-06-16,movie,basic,streaming_stick,673.15,7372,20.14
-2025-02-24,live_event,basic,mobile_phone,8707.29,209584,165.43
-2025-04-02,short_film,standard,smart_tv,10055.51,358265,27.34
-2024-04-04,short_film,standard,smart_tv,11693.49,253643,90.68
-2024-04-15,short_film,premium,mobile_phone,6408.73,467647,190.15
-2025-01-18,live_event,free_with_ads,game_console,6418.86,118640,53.57
-2024-05-22,series_episode,premium,tablet,844.84,206153,218.84
-2025-01-14,live_event,free_with_ads,game_console,114.15,245266,136.28
-2024-08-24,short_film,premium,tablet,11284.25,361619,33.82
-2024-10-09,short_film,free_with_ads,smart_tv,5481.42,325150,100.23
-2025-04-17,documentary,free_with_ads,game_console,1615.03,166149,37.39
-2025-06-02,short_film,free_with_ads,smart_tv,40.84,132618,147.18
-2025-02-03,short_film,premium,smart_tv,1477.8,208191,204.26
-2024-07-20,movie,free_with_ads,streaming_stick,6646.16,68621,219.54
-2024-04-03,series_episode,family,game_console,3401.03,319512,132.0
-2024-01-20,live_event,standard,streaming_stick,13225.41,50778,183.16
-2024-01-10,movie,premium,mobile_phone,10464.33,316439,114.09
-2024-09-24,live_event,basic,tablet,88.68,121071,80.17
-2024-07-22,short_film,standard,mobile_phone,10237.65,399407,29.43
-2024-04-19,live_event,free_with_ads,smart_tv,3527.04,421379,121.91
-2024-01-18,short_film,family,desktop_browser,3946.56,208223,87.08
-2024-03-08,live_event,premium,streaming_stick,13899.53,52988,20.93
-2024-06-24,movie,standard,streaming_stick,4134.88,133108,21.26
-2025-06-19,live_event,standard,tablet,3145.88,27546,110.07
-2025-05-14,documentary,standard,smart_tv,2577.19,369572,2.82
-2024-07-12,documentary,standard,desktop_browser,1764.61,405798,196.14
-2025-04-07,movie,premium,smart_tv,13339.91,491905,42.03
-2025-01-08,short_film,basic,desktop_browser,1643.14,86232,129.23
-2025-04-23,short_film,free_with_ads,smart_tv,5234.31,456679,51.0
-2024-04-23,series_episode,family,tablet,7018.73,53685,181.12
-2025-03-06,short_film,premium,game_console,7800.53,39252,231.1
-2024-01-08,live_event,free_with_ads,streaming_stick,2646.31,68950,42.28
-2024-08-02,short_film,free_with_ads,desktop_browser,457.31,142809,128.42
-2025-06-10,series_episode,standard,tablet,3646.58,64965,119.41
-2025-05-29,live_event,family,game_console,12387.51,205219,24.49
-2025-01-25,documentary,family,game_console,3351.44,408346,119.25
-2025-05-25,movie,standard,streaming_stick,5218.36,3123,64.74
-2025-01-16,live_event,family,streaming_stick,2985.84,423456,96.28
-2025-01-27,short_film,free_with_ads,streaming_stick,1482.46,468484,113.87
-2025-03-17,short_film,free_with_ads,streaming_stick,1830.06,26546,108.77
-2024-10-01,series_episode,family,game_console,3444.62,71838,218.37
-2024-06-21,series_episode,free_with_ads,smart_tv,6647.15,319279,132.94
-2025-06-04,live_event,standard,streaming_stick,196.73,108350,150.75
-2024-08-23,short_film,family,smart_tv,1199.59,244462,115.77
-2025-03-15,movie,standard,tablet,298.99,221958,182.16
-2024-07-21,movie,family,smart_tv,1572.96,67492,24.06
-2025-02-15,live_event,family,tablet,6174.21,185689,225.32
-2025-04-17,live_event,standard,smart_tv,539.37,246488,98.85
-2024-12-03,short_film,standard,desktop_browser,13944.97,497909,153.39
-2024-06-19,documentary,premium,game_console,8541.9,189970,199.45
-2024-05-26,series_episode,family,smart_tv,13351.74,379827,45.45
-2024-07-02,documentary,premium,game_console,2981.01,80571,177.82
-2024-09-20,series_episode,basic,streaming_stick,9898.58,473323,215.03
-2025-02-09,live_event,standard,streaming_stick,13412.29,53206,199.87
-2025-04-23,live_event,premium,tablet,11322.21,226290,220.5
-2024-11-26,documentary,family,streaming_stick,5379.18,350258,149.26
-2024-12-29,live_event,premium,mobile_phone,11795.64,206903,206.65
-2024-10-13,short_film,basic,desktop_browser,6358.36,434609,147.92
-2025-02-28,short_film,basic,streaming_stick,11009.25,246969,154.66
-2024-03-17,series_episode,family,smart_tv,1507.76,326988,84.07
-2024-07-15,live_event,standard,streaming_stick,9939.65,98314,48.67
-2024-07-25,movie,family,tablet,10724.84,437618,13.79
-2024-07-22,documentary,free_with_ads,desktop_browser,11172.1,478655,225.94
-2025-04-30,short_film,free_with_ads,game_console,9624.33,42596,229.46
-2024-10-04,short_film,family,smart_tv,1422.66,188422,69.64
-2024-02-22,series_episode,standard,smart_tv,10850.91,191332,225.9
-2024-09-09,documentary,standard,mobile_phone,13327.11,160076,174.02
-2025-03-14,short_film,premium,game_console,14369.47,126218,30.71
-2024-09-07,short_film,free_with_ads,mobile_phone,13512.41,433140,13.47
-2024-12-31,short_film,basic,mobile_phone,9278.92,112477,200.3
-2024-07-08,short_film,free_with_ads,smart_tv,4853.39,435882,131.76
-2024-03-02,series_episode,premium,streaming_stick,11553.58,56058,189.3
-2025-05-28,short_film,premium,tablet,8270.8,280145,107.46
-2025-03-09,live_event,standard,mobile_phone,10597.59,117210,103.69
-2024-01-25,documentary,free_with_ads,mobile_phone,103.37,29581,185.05
-2024-09-27,short_film,standard,streaming_stick,12063.34,475035,207.6
-2024-03-20,movie,free_with_ads,game_console,12091.85,302984,5.63
-2024-08-08,movie,premium,smart_tv,2940.95,250108,169.92
-2024-01-13,movie,free_with_ads,mobile_phone,7091.03,118450,101.59
-2024-12-02,documentary,free_with_ads,desktop_browser,13772.05,31072,10.62
-2024-06-17,series_episode,premium,tablet,2343.07,470844,11.25
-2024-06-09,short_film,standard,smart_tv,1232.25,212739,6.78
-2025-01-02,live_event,basic,mobile_phone,301.21,95891,221.17
-2024-02-11,movie,basic,desktop_browser,12465.19,214229,181.45
-2025-01-22,live_event,free_with_ads,smart_tv,13928.34,53013,87.51
-2024-05-06,documentary,basic,game_console,12249.03,359060,18.18
-2024-11-28,documentary,basic,game_console,13470.31,325701,71.18
-2024-04-08,documentary,premium,game_console,2882.84,187270,209.02
-2024-01-24,live_event,free_with_ads,desktop_browser,5401.33,174922,141.95
-2024-08-12,short_film,basic,game_console,4585.05,61117,112.61
-2025-04-30,live_event,premium,game_console,7168.45,47536,179.14
-2024-10-05,short_film,premium,streaming_stick,1317.94,253730,6.92
-2024-04-04,documentary,free_with_ads,game_console,6983.3,31028,91.93
-2024-05-12,movie,family,mobile_phone,6060.96,324431,110.12
-2025-03-23,movie,standard,mobile_phone,2608.51,77934,120.42
-2025-03-02,movie,premium,streaming_stick,435.99,9851,94.23
-2024-09-10,live_event,premium,streaming_stick,7139.99,461713,46.42
-2024-07-15,documentary,basic,desktop_browser,1509.76,250422,54.68
-2024-04-03,documentary,basic,desktop_browser,12366.28,25310,151.32
-2024-11-26,documentary,family,game_console,9368.78,35117,176.35
-2025-03-07,documentary,basic,desktop_browser,12532.33,188181,191.0
-2025-01-09,movie,basic,tablet,9994.96,142419,33.92
-2024-02-13,series_episode,premium,tablet,4932.64,209228,158.31
-2025-02-21,live_event,premium,tablet,8571.46,324515,198.92
-2025-05-14,live_event,basic,smart_tv,11481.06,22237,161.38
-2024-03-27,series_episode,free_with_ads,game_console,4257.05,235403,37.57
-2024-03-31,live_event,family,streaming_stick,5828.2,18429,45.96
-2024-06-16,live_event,standard,game_console,3389.75,55958,161.61
-2025-04-13,movie,basic,game_console,12688.9,343473,29.58
-2025-03-22,movie,free_with_ads,tablet,13019.4,448103,99.28
-2024-10-05,documentary,free_with_ads,game_console,11579.99,248182,82.79
-2025-01-16,short_film,premium,mobile_phone,13434.28,190487,91.33
-2024-01-09,live_event,standard,tablet,4908.22,265325,15.81
-2024-10-06,movie,standard,game_console,7962.99,279803,232.75
-2024-06-16,series_episode,premium,mobile_phone,10503.25,255904,17.92
-2025-05-07,live_event,free_with_ads,mobile_phone,12876.3,180733,39.31
-2024-02-17,movie,free_with_ads,desktop_browser,1684.5,357736,191.43
-2024-05-13,documentary,free_with_ads,smart_tv,5860.06,95877,6.01
-2024-02-24,documentary,premium,mobile_phone,3173.55,127758,70.89
-2024-08-29,movie,basic,streaming_stick,12368.42,183997,11.6
-2025-01-08,short_film,premium,smart_tv,13903.84,402179,92.82
-2024-09-20,series_episode,basic,desktop_browser,12818.35,409306,177.75
-2024-07-22,series_episode,free_with_ads,tablet,8534.36,350446,181.45
-2024-04-02,live_event,premium,mobile_phone,12527.49,435695,74.21
-2024-12-28,series_episode,standard,tablet,8220.59,428866,217.11
-2024-04-22,live_event,basic,smart_tv,9901.5,18984,237.87
-2024-09-07,movie,free_with_ads,smart_tv,5651.43,148431,142.51
-2024-12-07,live_event,free_with_ads,mobile_phone,6875.03,464204,171.19
-2025-05-16,documentary,free_with_ads,desktop_browser,2650.12,294761,168.28
-2024-01-01,live_event,standard,mobile_phone,5188.55,93439,151.55
-2024-05-08,documentary,free_with_ads,smart_tv,9497.74,464847,38.46
-2024-08-02,short_film,free_with_ads,mobile_phone,9728.85,460056,73.3
-2024-02-29,movie,family,smart_tv,9425.43,272384,69.13
-2024-06-07,short_film,standard,game_console,4199.53,182087,118.93
-2024-05-05,documentary,premium,desktop_browser,592.47,205248,157.53
-2025-02-19,short_film,family,mobile_phone,6047.19,63894,181.05
-2025-04-25,documentary,free_with_ads,game_console,12638.82,110933,21.82
-2024-08-27,short_film,basic,desktop_browser,980.65,463401,21.25
-2024-02-19,documentary,premium,mobile_phone,2212.93,450263,100.29
-2025-05-12,documentary,family,streaming_stick,2830.66,40016,60.83
-2024-01-03,live_event,standard,streaming_stick,11840.16,327651,24.61
-2025-03-29,documentary,basic,desktop_browser,7612.36,143056,91.36
-2024-03-24,series_episode,premium,streaming_stick,4501.04,235109,156.93
-2024-04-14,short_film,premium,smart_tv,2362.46,494381,176.61
-2024-02-19,movie,basic,smart_tv,809.9,489272,230.68
-2025-05-12,series_episode,standard,desktop_browser,183.28,293097,76.21
-2025-02-07,documentary,free_with_ads,smart_tv,14224.27,16631,67.51
-2024-11-13,movie,standard,game_console,10381.43,149855,37.07
-2025-02-02,short_film,free_with_ads,smart_tv,11190.45,494534,180.48
-2024-03-04,live_event,basic,tablet,10595.92,46154,11.6
-2024-05-06,series_episode,family,smart_tv,12238.97,205086,183.32
-2024-03-06,short_film,premium,streaming_stick,8227.94,302506,49.71
-2024-04-23,documentary,basic,streaming_stick,4602.16,205743,143.06
-2024-08-30,live_event,free_with_ads,desktop_browser,4629.32,495516,145.85
-2024-03-31,live_event,premium,tablet,11693.09,223639,25.54
-2024-09-13,short_film,standard,desktop_browser,7338.37,364630,180.08
-2024-01-27,movie,family,mobile_phone,11963.81,140278,27.5
-2025-06-12,live_event,standard,game_console,8215.24,122429,174.94
-2024-09-09,documentary,standard,tablet,10776.05,313416,121.78
-2024-04-10,documentary,standard,game_console,475.48,426917,96.74
-2025-05-16,short_film,premium,tablet,3749.8,317482,92.89
-2024-03-21,movie,free_with_ads,game_console,4034.17,124390,227.62
-2025-03-12,documentary,free_with_ads,tablet,11640.66,349641,116.39
-2025-01-12,documentary,premium,tablet,11623.25,472882,214.12
-2024-07-22,series_episode,standard,smart_tv,10477.53,39948,191.26
-2024-11-04,documentary,standard,desktop_browser,2972.08,46006,106.87
-2024-09-18,documentary,free_with_ads,mobile_phone,8807.99,340286,221.61
-2024-03-15,movie,free_with_ads,desktop_browser,5119.05,420063,198.26
-2025-02-16,documentary,standard,smart_tv,5820.69,215983,102.69
-2024-06-10,short_film,family,smart_tv,13456.29,228614,81.98
-2024-09-24,movie,basic,streaming_stick,5252.21,77702,11.03
-2024-05-03,documentary,family,tablet,9592.91,150783,59.9
-2024-05-16,series_episode,free_with_ads,streaming_stick,2894.65,464089,53.84
-2024-09-30,live_event,free_with_ads,game_console,11037.4,8434,31.83
-2025-06-07,series_episode,basic,streaming_stick,8672.88,432236,5.23
-2024-04-19,live_event,basic,game_console,8655.82,133423,119.89
-2024-06-19,movie,premium,mobile_phone,6931.82,468023,93.6
-2025-01-27,documentary,standard,mobile_phone,13207.16,284854,198.39
-2025-02-28,short_film,free_with_ads,game_console,11372.41,154680,173.73
-2024-09-25,series_episode,premium,game_console,3163.16,386316,228.65
+throughput_date,terminal_name,cargo_type,vessel_call_count,total_tonnage_metric,container_teu_count,average_dwell_hours
+2024-12-19,Refrigerated Cargo Hub,Break Bulk,4,99583.11,5537,120.07
+2025-01-30,North Container Terminal,Dry Bulk,34,69590.87,35923,71.18
+2024-04-03,South Bulk Terminal,Roll-on Roll-off,49,243003.33,17168,57.12
+2025-05-01,Refrigerated Cargo Hub,Break Bulk,17,60895.42,37317,179.77
+2024-10-18,North Container Terminal,Dry Bulk,8,95697.13,27990,255.79
+2025-02-08,Refrigerated Cargo Hub,Liquid Bulk,17,78593.51,29070,204.86
+2024-10-13,East Ro-Ro Terminal,Containerized,18,7069.56,38354,228.04
+2025-04-22,East Ro-Ro Terminal,Break Bulk,16,243467.01,1486,140.82
+2024-06-29,East Ro-Ro Terminal,Break Bulk,45,89596.74,6526,144.23
+2024-05-02,East Ro-Ro Terminal,Roll-on Roll-off,27,898.92,7382,138.07
+2024-06-28,Liquid Bulk Berth,Break Bulk,48,149147.15,13270,209.31
+2025-01-31,South Bulk Terminal,Dry Bulk,15,65470.56,33027,210.64
+2024-09-17,South Bulk Terminal,Roll-on Roll-off,13,215483.56,38335,231.26
+2024-12-16,South Bulk Terminal,Roll-on Roll-off,1,246699.49,5314,26.71
+2025-04-28,South Bulk Terminal,Roll-on Roll-off,51,7219.41,39055,226.6
+2024-06-01,North Container Terminal,Dry Bulk,36,144673.98,25035,35.77
+2025-05-09,Refrigerated Cargo Hub,Roll-on Roll-off,10,227265.56,34202,210.72
+2024-06-01,Refrigerated Cargo Hub,Roll-on Roll-off,54,219241.24,18084,153.39
+2024-04-05,Liquid Bulk Berth,Containerized,20,64273.49,18715,242.95
+2025-03-29,Refrigerated Cargo Hub,Refrigerated,48,249319.89,12638,262.89
+2024-03-18,South Bulk Terminal,Containerized,39,140133.54,7250,79.2
+2024-04-26,Liquid Bulk Berth,Liquid Bulk,49,246122.99,14162,36.61
+2024-02-11,Liquid Bulk Berth,Break Bulk,50,161090.57,9164,174.31
+2024-07-26,South Bulk Terminal,Containerized,24,9369.66,17978,35.7
+2024-12-06,North Container Terminal,Dry Bulk,26,243196.8,20058,73.64
+2024-08-12,General Cargo Quay,Roll-on Roll-off,37,237456.46,35007,141.58
+2024-01-30,Refrigerated Cargo Hub,Containerized,45,80931.91,1451,243.32
+2024-06-15,South Bulk Terminal,Dry Bulk,9,22408.08,21728,57.84
+2024-01-24,South Bulk Terminal,Liquid Bulk,27,12417.59,19485,83.28
+2024-07-10,General Cargo Quay,Liquid Bulk,39,146913.6,14723,42.03
+2025-06-21,Liquid Bulk Berth,Break Bulk,59,203471.62,33387,7.44
+2025-02-05,South Bulk Terminal,Containerized,3,133580.36,7481,217.44
+2024-05-25,Refrigerated Cargo Hub,Liquid Bulk,53,200699.85,2740,253.48
+2024-06-27,General Cargo Quay,Refrigerated,1,155020.01,3587,151.76
+2024-01-21,General Cargo Quay,Refrigerated,25,59353.83,6687,275.03
+2024-10-22,Refrigerated Cargo Hub,Break Bulk,17,9518.3,6928,240.03
+2024-11-17,South Bulk Terminal,Dry Bulk,47,185176.33,28775,13.48
+2024-03-07,General Cargo Quay,Break Bulk,4,75542.75,32882,48.03
+2024-05-21,General Cargo Quay,Break Bulk,20,112210.16,13063,131.72
+2024-08-17,Refrigerated Cargo Hub,Liquid Bulk,53,56727.8,32682,54.83
+2024-01-23,Refrigerated Cargo Hub,Liquid Bulk,6,141707.2,25424,27.45
+2025-02-19,East Ro-Ro Terminal,Dry Bulk,22,167932.51,35311,212.91
+2025-06-05,East Ro-Ro Terminal,Containerized,0,59151.51,26098,68.82
+2025-03-27,Refrigerated Cargo Hub,Liquid Bulk,5,211213.95,12797,76.18
+2024-04-08,General Cargo Quay,Break Bulk,37,7412.27,14785,286.83
+2024-07-06,General Cargo Quay,Break Bulk,26,11446.71,19340,262.6
+2024-02-24,North Container Terminal,Break Bulk,47,193126.3,19356,137.28
+2024-05-18,Liquid Bulk Berth,Break Bulk,55,152186.41,10278,248.51
+2024-07-09,Refrigerated Cargo Hub,Break Bulk,35,226837.57,35952,127.84
+2025-01-30,Liquid Bulk Berth,Dry Bulk,48,247213.72,22203,174.7
+2024-07-24,Refrigerated Cargo Hub,Liquid Bulk,10,146819.84,4273,107.71
+2024-06-17,General Cargo Quay,Break Bulk,34,165676.19,12225,287.61
+2024-09-23,Refrigerated Cargo Hub,Liquid Bulk,8,98489.58,16946,48.99
+2024-04-29,North Container Terminal,Dry Bulk,3,237738.72,6779,243.19
+2025-05-05,Liquid Bulk Berth,Break Bulk,14,93901.44,11925,187.15
+2024-07-16,South Bulk Terminal,Liquid Bulk,46,155232.17,2384,80.59
+2025-03-28,East Ro-Ro Terminal,Break Bulk,28,197318.33,2928,75.41
+2024-07-09,Refrigerated Cargo Hub,Roll-on Roll-off,4,223639.68,5441,232.58
+2025-03-27,Liquid Bulk Berth,Break Bulk,45,197161.14,18558,41.44
+2024-05-01,South Bulk Terminal,Refrigerated,39,169292.66,23886,130.4
+2024-10-12,South Bulk Terminal,Dry Bulk,2,132181.21,1289,55.62
+2025-06-15,Liquid Bulk Berth,Break Bulk,52,207881.66,2807,192.91
+2025-01-29,Refrigerated Cargo Hub,Roll-on Roll-off,5,160170.66,39544,148.94
+2024-11-12,South Bulk Terminal,Refrigerated,26,110738.15,6827,59.94
+2024-01-21,South Bulk Terminal,Dry Bulk,12,53317.64,10627,259.93
+2025-04-29,South Bulk Terminal,Break Bulk,14,217154.54,25012,100.36
+2025-01-12,East Ro-Ro Terminal,Break Bulk,52,158489.23,3276,132.97
+2024-08-01,General Cargo Quay,Dry Bulk,16,216822.93,34074,172.7
+2024-07-06,Refrigerated Cargo Hub,Dry Bulk,7,157717.77,38944,39.91
+2025-04-23,East Ro-Ro Terminal,Roll-on Roll-off,41,185051.2,9794,68.47
+2024-12-14,General Cargo Quay,Roll-on Roll-off,60,14638.27,32768,191.2
+2025-02-12,Liquid Bulk Berth,Containerized,49,43752.21,16553,37.37
+2024-10-21,East Ro-Ro Terminal,Refrigerated,28,233331.27,3736,220.53
+2024-09-09,East Ro-Ro Terminal,Roll-on Roll-off,10,134080.14,10392,107.03
+2024-04-20,East Ro-Ro Terminal,Break Bulk,37,185585.77,1829,166.12
+2024-06-22,East Ro-Ro Terminal,Dry Bulk,9,189353.33,18310,162.11
+2025-01-29,North Container Terminal,Break Bulk,31,180622.07,6257,160.95
+2024-11-21,General Cargo Quay,Break Bulk,25,118720.02,7186,247.4
+2024-08-24,East Ro-Ro Terminal,Roll-on Roll-off,46,133545.63,36430,56.38
+2025-06-22,Refrigerated Cargo Hub,Roll-on Roll-off,6,202352.32,11764,101.67
+2024-05-21,Refrigerated Cargo Hub,Liquid Bulk,7,133117.41,5184,256.43
+2025-01-13,Refrigerated Cargo Hub,Roll-on Roll-off,33,40211.61,32295,263.21
+2024-03-31,South Bulk Terminal,Refrigerated,29,138548.07,29953,119.09
+2025-05-19,Liquid Bulk Berth,Liquid Bulk,57,26583.13,32755,192.81
+2024-08-11,East Ro-Ro Terminal,Break Bulk,51,232191.46,5701,141.99
+2024-06-10,Liquid Bulk Berth,Dry Bulk,51,222295.81,9855,76.35
+2024-04-07,North Container Terminal,Roll-on Roll-off,19,11451.52,137,282.18
+2024-12-17,Liquid Bulk Berth,Refrigerated,34,775.8,35963,214.69
+2025-05-05,Liquid Bulk Berth,Containerized,49,188733.62,19688,202.24
+2025-03-10,Liquid Bulk Berth,Dry Bulk,52,127853.15,11157,147.19
+2025-02-22,Refrigerated Cargo Hub,Break Bulk,11,180218.98,13267,190.57
+2025-03-05,Refrigerated Cargo Hub,Liquid Bulk,49,239847.99,39670,31.09
+2024-08-10,East Ro-Ro Terminal,Dry Bulk,3,142974.66,2142,245.46
+2025-03-24,General Cargo Quay,Containerized,22,139743.07,35314,148.25
+2024-11-17,Refrigerated Cargo Hub,Break Bulk,20,170375.68,36329,22.44
+2024-10-17,Refrigerated Cargo Hub,Break Bulk,43,138782.17,5388,8.66
+2025-03-17,Liquid Bulk Berth,Break Bulk,4,166784.22,36542,114.86
+2024-11-19,Liquid Bulk Berth,Containerized,10,182572.46,17304,4.37
+2024-02-22,East Ro-Ro Terminal,Refrigerated,31,231243.44,23345,227.64
+2025-04-05,Refrigerated Cargo Hub,Liquid Bulk,2,221420.15,375,61.93
+2024-10-07,South Bulk Terminal,Dry Bulk,20,99907.3,1608,234.82
+2024-03-06,North Container Terminal,Containerized,9,94199.24,32838,207.82
+2024-03-09,Liquid Bulk Berth,Break Bulk,32,194711.03,26225,128.28
+2025-01-06,North Container Terminal,Containerized,24,48264.28,27292,231.73
+2025-04-21,General Cargo Quay,Containerized,34,58147.9,3648,240.29
+2024-07-06,General Cargo Quay,Dry Bulk,34,208805.69,5277,224.2
+2024-07-01,Refrigerated Cargo Hub,Roll-on Roll-off,31,140596.53,5009,211.76
+2024-04-25,Refrigerated Cargo Hub,Roll-on Roll-off,17,189278.11,9607,18.02
+2024-09-25,South Bulk Terminal,Liquid Bulk,0,31440.65,16616,66.33
+2024-11-23,Liquid Bulk Berth,Containerized,45,195097.16,18612,35.81
+2024-11-30,General Cargo Quay,Refrigerated,23,171114.48,8048,208.94
+2025-03-05,Refrigerated Cargo Hub,Dry Bulk,13,15737.66,33365,49.29
+2024-10-14,Refrigerated Cargo Hub,Roll-on Roll-off,39,185478.2,15986,22.52
+2025-06-16,South Bulk Terminal,Liquid Bulk,7,143430.48,22566,8.17
+2024-09-25,Refrigerated Cargo Hub,Liquid Bulk,31,59674.97,15997,259.29
+2024-08-02,Refrigerated Cargo Hub,Dry Bulk,36,146907.9,19251,233.47
+2025-01-30,East Ro-Ro Terminal,Refrigerated,5,98314.68,30403,22.71
+2024-01-13,Liquid Bulk Berth,Break Bulk,10,188891.35,7547,40.39
+2025-01-29,General Cargo Quay,Containerized,5,9530.99,2208,124.99
+2024-08-29,East Ro-Ro Terminal,Break Bulk,23,84933.2,4008,169.77
+2025-04-16,Refrigerated Cargo Hub,Liquid Bulk,35,31187.84,6025,139.33
+2024-04-14,Liquid Bulk Berth,Break Bulk,43,146213.76,10596,8.54
+2025-05-05,East Ro-Ro Terminal,Roll-on Roll-off,41,219190.14,8230,228.28
+2025-01-31,South Bulk Terminal,Refrigerated,5,231558.3,27539,218.68
+2025-04-13,Refrigerated Cargo Hub,Dry Bulk,51,18153.11,19959,20.1
+2025-02-12,Refrigerated Cargo Hub,Containerized,40,52290.56,29667,46.09
+2024-10-27,North Container Terminal,Containerized,41,24816.42,31252,235.99
+2025-03-04,North Container Terminal,Break Bulk,22,212070.7,12241,48.46
+2024-03-08,General Cargo Quay,Break Bulk,19,177304.32,24862,59.09
+2024-04-06,Liquid Bulk Berth,Refrigerated,20,38211.89,32752,55.67
+2024-06-16,Refrigerated Cargo Hub,Liquid Bulk,27,44289.27,2600,200.73
+2024-06-27,Liquid Bulk Berth,Refrigerated,23,114093.17,18766,110.29
+2024-04-05,Refrigerated Cargo Hub,Containerized,22,88589.35,1749,285.42
+2025-06-18,East Ro-Ro Terminal,Refrigerated,51,211041.72,22490,106.39
+2024-01-05,South Bulk Terminal,Roll-on Roll-off,29,142721.89,253,139.2
+2024-12-11,Liquid Bulk Berth,Roll-on Roll-off,17,169276.59,38915,243.11
+2025-05-31,East Ro-Ro Terminal,Break Bulk,44,194710.11,10885,192.05
+2025-05-20,Refrigerated Cargo Hub,Dry Bulk,52,111870.37,33464,233.03
+2024-03-07,Refrigerated Cargo Hub,Break Bulk,6,209290.37,17806,107.42
+2024-06-24,East Ro-Ro Terminal,Dry Bulk,4,245865.95,16179,271.11
+2024-08-06,East Ro-Ro Terminal,Break Bulk,48,169074.73,4189,240.67
+2024-09-18,North Container Terminal,Refrigerated,54,13097.08,5273,185.55
+2024-03-17,Refrigerated Cargo Hub,Liquid Bulk,41,88567.13,35631,67.65
+2024-03-29,General Cargo Quay,Break Bulk,31,48108.34,28030,22.16
+2024-12-10,South Bulk Terminal,Containerized,18,3172.64,557,189.34
+2024-03-28,North Container Terminal,Break Bulk,37,67831.27,10747,135.75
+2025-03-06,Refrigerated Cargo Hub,Liquid Bulk,6,99355.52,11561,286.56
+2024-03-16,General Cargo Quay,Containerized,6,217759.67,18373,110.75
+2025-06-19,Refrigerated Cargo Hub,Containerized,44,224834.31,26884,244.62
+2024-04-29,Liquid Bulk Berth,Dry Bulk,27,78551.43,37872,213.43
+2024-02-29,Refrigerated Cargo Hub,Refrigerated,30,126144.45,35818,90.58
+2024-05-19,South Bulk Terminal,Liquid Bulk,49,105248.83,9219,78.02
+2024-11-03,General Cargo Quay,Liquid Bulk,48,112477.77,21251,70.71
+2024-09-25,General Cargo Quay,Containerized,1,211765.65,2063,15.12
+2024-07-24,East Ro-Ro Terminal,Break Bulk,7,211781.72,11893,243.22
+2024-04-02,North Container Terminal,Roll-on Roll-off,41,77009.36,22360,133.19
+2025-06-09,East Ro-Ro Terminal,Roll-on Roll-off,16,117942.23,7912,65.0
+2025-04-25,Liquid Bulk Berth,Break Bulk,0,163151.81,4544,162.77
+2024-10-18,Liquid Bulk Berth,Break Bulk,15,846.27,22583,243.59
+2025-03-09,Refrigerated Cargo Hub,Dry Bulk,2,123831.09,28386,72.86
+2025-01-29,Refrigerated Cargo Hub,Containerized,59,238055.98,582,158.84
+2025-01-04,General Cargo Quay,Containerized,45,126357.56,7801,61.64
+2025-06-15,General Cargo Quay,Dry Bulk,30,24560.55,14976,270.41
+2025-03-25,South Bulk Terminal,Refrigerated,28,62622.76,12714,286.84
+2024-12-26,East Ro-Ro Terminal,Containerized,22,245646.96,35925,23.72
+2024-03-18,General Cargo Quay,Containerized,4,94901.56,14079,16.57
+2025-03-29,South Bulk Terminal,Liquid Bulk,10,52794.24,24799,265.16
+2024-04-12,General Cargo Quay,Containerized,14,239483.53,24489,185.9
+2024-10-21,North Container Terminal,Liquid Bulk,27,192508.95,15609,261.58
+2024-08-02,Refrigerated Cargo Hub,Refrigerated,47,4018.59,16522,230.96
+2025-05-25,General Cargo Quay,Roll-on Roll-off,45,139149.47,15437,182.58
+2024-07-08,North Container Terminal,Liquid Bulk,58,78479.32,36882,286.21
+2024-09-21,Liquid Bulk Berth,Break Bulk,45,209014.3,13517,141.95
+2025-03-02,South Bulk Terminal,Break Bulk,39,75755.6,15469,130.27
+2025-04-17,North Container Terminal,Dry Bulk,59,54488.31,38533,6.09
+2025-01-14,Liquid Bulk Berth,Dry Bulk,59,120756.5,27869,186.65
+2024-08-07,South Bulk Terminal,Refrigerated,57,244362.24,31813,193.24
+2024-09-27,Liquid Bulk Berth,Break Bulk,37,199015.12,33060,167.35
+2024-12-15,East Ro-Ro Terminal,Liquid Bulk,6,100272.34,15279,152.47
+2024-04-29,Refrigerated Cargo Hub,Dry Bulk,36,34855.61,37598,215.52
+2025-02-24,South Bulk Terminal,Roll-on Roll-off,13,35640.74,23831,263.27
+2025-05-06,General Cargo Quay,Roll-on Roll-off,18,72315.29,16615,230.76
+2025-01-09,South Bulk Terminal,Dry Bulk,59,95637.82,26192,219.4
+2025-03-24,North Container Terminal,Containerized,52,194615.23,27518,286.84
+2024-12-20,Liquid Bulk Berth,Dry Bulk,55,137230.09,21580,256.81
+2025-05-29,East Ro-Ro Terminal,Liquid Bulk,17,213789.26,25522,101.0
+2024-07-27,South Bulk Terminal,Break Bulk,24,230861.88,23728,79.68
+2024-09-08,General Cargo Quay,Liquid Bulk,24,58714.05,30229,30.76
+2024-12-02,General Cargo Quay,Roll-on Roll-off,60,50757.46,36230,161.78
+2025-01-29,Refrigerated Cargo Hub,Roll-on Roll-off,54,225204.49,18387,67.47
+2025-03-22,Refrigerated Cargo Hub,Refrigerated,41,24062.02,577,107.14
+2024-08-17,East Ro-Ro Terminal,Roll-on Roll-off,55,131422.93,34173,193.26
+2025-04-19,East Ro-Ro Terminal,Dry Bulk,59,48378.51,11110,68.93
+2025-06-22,East Ro-Ro Terminal,Dry Bulk,25,114725.41,24426,67.66
+2024-04-13,Refrigerated Cargo Hub,Liquid Bulk,28,167515.5,8375,185.06
+2024-12-12,East Ro-Ro Terminal,Roll-on Roll-off,1,58973.9,25881,94.64
+2024-01-28,Refrigerated Cargo Hub,Roll-on Roll-off,23,247617.73,16360,232.51
+2024-07-17,Liquid Bulk Berth,Liquid Bulk,3,158609.7,27249,168.91
+2024-12-07,General Cargo Quay,Containerized,8,8209.44,23384,281.44
+2025-02-08,Liquid Bulk Berth,Roll-on Roll-off,50,115969.92,4497,161.96
+2025-02-01,General Cargo Quay,Roll-on Roll-off,36,184470.14,2170,213.91
+2024-01-20,South Bulk Terminal,Break Bulk,26,70847.39,374,9.58
+2025-01-11,East Ro-Ro Terminal,Containerized,10,164338.49,8987,187.24
+2025-02-02,South Bulk Terminal,Roll-on Roll-off,46,233739.84,14106,231.47
+2024-08-09,Refrigerated Cargo Hub,Refrigerated,38,169666.15,17683,70.66
+2025-05-05,North Container Terminal,Containerized,34,179691.37,20871,19.05
+2024-09-13,General Cargo Quay,Refrigerated,14,181899.25,11792,101.13
+2024-06-27,Refrigerated Cargo Hub,Roll-on Roll-off,39,7990.91,18371,50.43
+2025-05-10,East Ro-Ro Terminal,Containerized,41,112938.01,37402,109.71
+2024-01-15,South Bulk Terminal,Roll-on Roll-off,29,155138.25,14655,129.57
+2024-02-29,North Container Terminal,Roll-on Roll-off,58,159936.26,2081,100.1
+2024-08-07,Liquid Bulk Berth,Refrigerated,58,213784.6,10843,285.58
+2025-06-01,General Cargo Quay,Refrigerated,52,107813.11,15729,253.6
+2024-07-07,North Container Terminal,Liquid Bulk,36,197210.33,36325,33.21
+2025-03-09,Liquid Bulk Berth,Liquid Bulk,6,242162.77,12342,223.89
+2024-05-07,General Cargo Quay,Liquid Bulk,49,50965.82,20252,170.56
+2025-05-03,East Ro-Ro Terminal,Dry Bulk,17,34181.53,25072,100.16
+2025-05-01,South Bulk Terminal,Dry Bulk,24,169582.97,17854,115.19
+2024-03-10,North Container Terminal,Roll-on Roll-off,49,59502.71,26618,274.46
+2024-09-28,North Container Terminal,Roll-on Roll-off,5,12309.49,7084,187.75
+2025-04-22,East Ro-Ro Terminal,Roll-on Roll-off,42,63582.55,21003,249.01
+2024-07-10,Liquid Bulk Berth,Liquid Bulk,26,89858.29,28502,137.9
+2024-08-17,North Container Terminal,Roll-on Roll-off,14,39936.68,6360,93.58
+2025-06-02,General Cargo Quay,Break Bulk,27,191993.59,17753,38.75
+2024-12-02,Refrigerated Cargo Hub,Containerized,52,171804.51,29621,153.54
+2025-02-11,Liquid Bulk Berth,Roll-on Roll-off,15,203065.68,16763,118.53
+2024-06-17,General Cargo Quay,Refrigerated,44,241825.92,7526,10.9
+2024-10-15,South Bulk Terminal,Break Bulk,58,248501.69,33998,275.54
+2024-08-04,North Container Terminal,Liquid Bulk,51,243391.33,8398,196.42
+2024-01-03,General Cargo Quay,Break Bulk,4,110397.95,22912,71.85
+2025-01-02,General Cargo Quay,Roll-on Roll-off,25,24337.34,17582,110.29
+2024-06-25,East Ro-Ro Terminal,Refrigerated,56,89827.04,4316,165.46
+2024-02-13,East Ro-Ro Terminal,Liquid Bulk,54,218187.4,24391,10.48
+2025-05-05,East Ro-Ro Terminal,Roll-on Roll-off,41,165701.15,34698,211.01
+2024-06-16,Liquid Bulk Berth,Break Bulk,24,11852.16,3081,28.47
+2024-03-08,North Container Terminal,Dry Bulk,40,307.41,7260,233.74
+2025-06-21,North Container Terminal,Roll-on Roll-off,22,73410.02,863,271.07
+2024-03-14,East Ro-Ro Terminal,Liquid Bulk,59,71766.45,35023,245.97
+2025-01-18,General Cargo Quay,Refrigerated,54,194095.53,20239,136.97
+2025-03-30,East Ro-Ro Terminal,Refrigerated,19,181995.5,36215,224.24

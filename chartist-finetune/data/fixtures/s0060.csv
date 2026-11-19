@@ -1,241 +1,241 @@
-reading_date,site_name,energy_source,building_zone,total_energy_kwh,peak_demand_kw,carbon_emissions_kg,energy_cost_usd
-2024-03-11,Harbor Warehouse,natural_gas,server_room,9462.88,13383.3,7128.89,4257.35
-2024-07-28,Harbor Warehouse,natural_gas,production_floor,13826.13,1854.29,39309.4,26576.18
-2024-09-26,Riverside Plant,natural_gas,production_floor,198669.99,3638.65,5253.72,55183.39
-2024-11-17,North Campus,diesel_backup,office_area,244697.03,8895.8,2838.41,30920.16
-2024-12-29,Downtown Office,wind_power,server_room,7269.86,1588.54,35423.07,31810.44
-2024-10-04,Downtown Office,diesel_backup,server_room,85150.34,1245.48,71653.28,19431.8
-2024-01-27,Eastfield Factory,natural_gas,production_floor,56816.09,10287.28,58604.8,29128.06
-2025-01-10,North Campus,natural_gas,cold_storage,96343.16,11357.04,77797.01,55998.31
-2025-05-21,Harbor Warehouse,diesel_backup,server_room,240400.87,116.5,79217.23,51769.65
-2024-12-18,Eastfield Factory,wind_power,production_floor,247386.34,8333.07,91658.42,43398.7
-2025-04-08,Harbor Warehouse,natural_gas,loading_dock,56250.22,9994.35,56000.17,38051.44
-2025-04-11,Riverside Plant,wind_power,office_area,98334.94,8309.78,42573.85,49271.79
-2024-11-22,Riverside Plant,diesel_backup,common_areas,95419.12,11692.59,7706.28,27232.54
-2024-11-14,Downtown Office,wind_power,server_room,44050.2,13190.47,57261.81,23902.33
-2024-03-14,Lakeview Data Center,diesel_backup,production_floor,198048.81,3786.65,57869.87,36748.11
-2024-10-12,Downtown Office,grid_electricity,common_areas,119431.11,10238.66,27147.45,34449.88
-2025-02-26,Downtown Office,solar_pv,loading_dock,241472.64,735.87,7872.89,56177.52
-2025-02-20,Riverside Plant,natural_gas,loading_dock,69592.03,7296.28,33842.85,24826.51
-2025-03-11,North Campus,solar_pv,production_floor,208446.77,17827.26,87488.53,27324.96
-2024-04-23,Lakeview Data Center,grid_electricity,common_areas,70591.33,13599.45,81698.53,43303.55
-2025-03-13,Eastfield Factory,solar_pv,cold_storage,33604.24,5907.25,53099.62,1086.02
-2024-02-26,North Campus,grid_electricity,loading_dock,105160.67,10987.88,33639.69,27863.48
-2024-07-17,Harbor Warehouse,wind_power,cold_storage,97391.14,9872.94,26333.87,47993.31
-2024-02-16,Riverside Plant,solar_pv,common_areas,112580.75,14063.42,83355.22,23320.9
-2024-07-18,Downtown Office,solar_pv,cold_storage,205234.89,4867.06,38887.92,37669.79
-2024-09-13,Eastfield Factory,natural_gas,cold_storage,145407.64,14976.01,29729.78,32797.49
-2024-01-21,Downtown Office,diesel_backup,loading_dock,139711.01,15832.34,13069.17,55772.0
-2024-07-22,Riverside Plant,grid_electricity,office_area,53889.58,13278.83,82254.04,739.97
-2025-05-29,Eastfield Factory,natural_gas,office_area,222566.22,295.54,58210.06,12246.73
-2024-04-07,Harbor Warehouse,solar_pv,server_room,52567.58,1076.77,3123.7,30803.76
-2025-03-02,Harbor Warehouse,natural_gas,cold_storage,66171.34,7958.29,2191.63,4639.24
-2024-07-07,North Campus,grid_electricity,server_room,118170.93,35.32,9895.85,51656.26
-2024-02-17,Eastfield Factory,natural_gas,server_room,232678.32,10321.63,23553.83,45234.61
-2024-12-27,Downtown Office,grid_electricity,server_room,166663.14,14444.76,58929.58,27430.08
-2025-06-22,Downtown Office,grid_electricity,cold_storage,95724.49,2986.16,85967.59,32969.3
-2025-01-18,North Campus,wind_power,production_floor,95095.67,1176.15,86645.36,11389.43
-2025-01-11,Riverside Plant,natural_gas,loading_dock,292.14,16754.62,50922.81,46389.33
-2025-02-03,Riverside Plant,grid_electricity,production_floor,178022.12,13296.92,63622.89,39590.02
-2024-04-25,Downtown Office,grid_electricity,common_areas,6887.82,4619.14,45383.58,56642.75
-2024-06-13,Lakeview Data Center,wind_power,cold_storage,102087.63,3058.35,75608.29,9114.32
-2024-07-03,Downtown Office,wind_power,common_areas,203345.96,17193.2,40041.94,33893.62
-2024-01-12,Eastfield Factory,solar_pv,production_floor,177050.68,5182.41,64458.52,57535.83
-2024-09-20,North Campus,grid_electricity,cold_storage,238945.85,9917.94,39465.18,43070.14
-2025-02-15,Downtown Office,diesel_backup,common_areas,14399.16,13359.65,33861.58,30205.04
-2024-09-29,North Campus,diesel_backup,common_areas,249367.37,10144.8,91677.95,10835.98
-2024-12-15,North Campus,grid_electricity,common_areas,59423.84,1158.08,81837.21,46372.9
-2024-08-04,Eastfield Factory,grid_electricity,production_floor,105195.2,16588.41,43187.17,1634.67
-2024-09-07,Harbor Warehouse,grid_electricity,cold_storage,130.17,4647.32,71737.41,25409.65
-2024-06-06,Riverside Plant,solar_pv,loading_dock,162136.35,15025.11,26636.51,16930.62
-2024-07-24,North Campus,solar_pv,common_areas,103012.04,9272.18,33599.12,22242.29
-2024-05-08,Eastfield Factory,natural_gas,cold_storage,227838.19,11329.28,93278.86,42251.28
-2025-01-16,Downtown Office,grid_electricity,office_area,219253.14,11806.07,5302.89,19776.91
-2025-02-28,Lakeview Data Center,diesel_backup,common_areas,204752.65,16563.28,78534.12,10967.18
-2025-04-23,Lakeview Data Center,natural_gas,loading_dock,106199.2,3962.43,31687.12,11723.12
-2024-12-25,Riverside Plant,solar_pv,server_room,152584.58,4402.91,81682.55,11613.98
-2024-03-23,Harbor Warehouse,natural_gas,cold_storage,221311.98,12395.37,79620.05,40571.11
-2024-08-10,North Campus,grid_electricity,server_room,113981.89,4800.43,63008.48,916.27
-2024-05-15,Eastfield Factory,natural_gas,server_room,197207.08,52.67,51469.98,11929.47
-2024-12-20,North Campus,natural_gas,loading_dock,202304.08,4102.55,33998.57,28250.66
-2024-07-07,Eastfield Factory,natural_gas,server_room,37722.0,17901.6,31977.64,49287.94
-2024-01-03,Lakeview Data Center,wind_power,office_area,79585.76,17017.6,18307.68,42961.5
-2025-05-28,Downtown Office,wind_power,production_floor,71721.89,13064.81,71089.44,23576.76
-2024-12-01,North Campus,wind_power,cold_storage,238305.88,12159.09,75548.1,44615.66
-2024-02-09,Riverside Plant,natural_gas,office_area,76871.53,1111.98,23588.68,53633.38
-2025-02-10,Harbor Warehouse,wind_power,office_area,35581.36,9885.57,90047.32,4881.35
-2024-09-07,Lakeview Data Center,wind_power,server_room,76129.0,4667.89,62761.93,46743.37
-2025-04-19,Harbor Warehouse,natural_gas,office_area,97694.09,17968.83,20133.34,52992.74
-2024-06-02,Eastfield Factory,grid_electricity,office_area,212966.73,14083.01,55547.14,30003.82
-2024-03-05,Lakeview Data Center,diesel_backup,office_area,232981.23,15045.0,93322.0,28867.43
-2025-04-07,Lakeview Data Center,diesel_backup,production_floor,148611.83,1940.65,87758.67,24555.93
-2024-06-16,Eastfield Factory,grid_electricity,common_areas,32887.12,17217.67,70614.26,57883.74
-2025-05-04,Harbor Warehouse,natural_gas,loading_dock,32434.65,6396.06,66798.26,3895.81
-2024-03-04,Eastfield Factory,solar_pv,office_area,202620.11,7883.92,64670.57,14810.6
-2025-04-19,Downtown Office,grid_electricity,common_areas,132085.24,12251.1,11761.84,4709.88
-2024-10-10,Riverside Plant,diesel_backup,loading_dock,61133.38,12596.46,46660.25,5949.64
-2024-08-16,Eastfield Factory,diesel_backup,common_areas,142710.74,8190.2,5782.9,52711.77
-2024-12-20,Lakeview Data Center,solar_pv,server_room,47244.2,11819.94,46783.15,35490.13
-2024-02-19,Riverside Plant,grid_electricity,office_area,51502.28,17102.69,82526.03,19812.83
-2024-01-14,Lakeview Data Center,diesel_backup,cold_storage,44932.25,6286.86,25245.36,13477.32
-2024-11-14,Lakeview Data Center,wind_power,office_area,34485.75,12026.7,9045.81,31329.02
-2024-10-09,North Campus,diesel_backup,production_floor,179889.03,10141.05,76718.63,24654.63
-2024-11-23,Harbor Warehouse,diesel_backup,loading_dock,100194.29,7817.48,65691.48,43322.59
-2024-12-31,Harbor Warehouse,solar_pv,cold_storage,121658.74,17582.91,27648.54,43601.18
-2024-06-01,Harbor Warehouse,wind_power,cold_storage,11238.0,2660.59,82787.36,54382.92
-2024-08-27,Eastfield Factory,diesel_backup,server_room,49897.79,5808.54,19092.21,21607.35
-2024-03-05,Eastfield Factory,grid_electricity,common_areas,143553.15,5120.73,65589.16,50833.97
-2024-03-10,Lakeview Data Center,wind_power,common_areas,25962.27,14220.32,75136.05,9197.88
-2024-07-02,Riverside Plant,grid_electricity,common_areas,42700.03,15554.59,3582.99,807.49
-2024-02-02,Eastfield Factory,natural_gas,loading_dock,165646.92,3169.84,29446.12,15159.99
-2024-02-02,Harbor Warehouse,wind_power,office_area,14160.22,14993.73,16569.59,55766.51
-2025-05-19,North Campus,solar_pv,common_areas,115843.21,752.14,78260.86,23791.9
-2025-06-17,Riverside Plant,solar_pv,common_areas,135720.08,3713.25,20321.94,54248.58
-2025-02-16,North Campus,grid_electricity,common_areas,240993.37,8132.22,49457.34,50066.87
-2024-01-14,Lakeview Data Center,wind_power,office_area,137442.92,8963.82,2769.56,12304.06
-2024-10-06,North Campus,solar_pv,common_areas,35456.11,11082.36,25314.63,13616.23
-2024-07-25,Lakeview Data Center,grid_electricity,office_area,117849.98,17364.51,89511.31,4959.38
-2024-02-08,Riverside Plant,wind_power,common_areas,221981.05,151.72,66277.42,436.54
-2024-11-21,Harbor Warehouse,diesel_backup,common_areas,114536.01,9562.27,920.55,20601.07
-2025-01-28,North Campus,diesel_backup,office_area,88621.32,8337.52,88243.08,46751.55
-2024-04-09,Lakeview Data Center,natural_gas,production_floor,103800.69,7279.24,62465.6,46341.6
-2024-12-23,Riverside Plant,diesel_backup,server_room,126862.19,17551.51,85794.16,22808.38
-2024-07-20,North Campus,solar_pv,office_area,10827.67,2090.33,83100.2,20931.21
-2025-03-17,Riverside Plant,wind_power,server_room,20069.99,2847.61,71046.47,41433.53
-2025-06-01,Downtown Office,grid_electricity,production_floor,154313.95,6291.25,85441.19,51989.16
-2024-05-14,Downtown Office,diesel_backup,loading_dock,174950.24,5603.51,79530.64,1741.79
-2024-11-18,Harbor Warehouse,diesel_backup,loading_dock,62364.08,7429.82,56590.59,56851.87
-2025-01-15,Harbor Warehouse,solar_pv,common_areas,246595.87,6786.78,65016.0,32328.33
-2025-06-19,Lakeview Data Center,solar_pv,production_floor,74442.09,4243.85,7447.41,23584.69
-2024-05-20,Eastfield Factory,grid_electricity,production_floor,139576.52,5083.05,19551.31,39918.97
-2025-05-24,Lakeview Data Center,wind_power,loading_dock,58218.14,7176.2,47944.83,42745.75
-2024-09-18,Riverside Plant,grid_electricity,common_areas,193138.55,3343.54,51517.83,9550.06
-2025-03-13,Harbor Warehouse,wind_power,production_floor,15384.69,17451.39,82250.36,29695.15
-2024-03-22,Eastfield Factory,solar_pv,cold_storage,87660.63,5940.16,29772.82,20396.53
-2024-01-07,Downtown Office,diesel_backup,production_floor,174333.26,3466.06,14297.14,53330.84
-2025-05-14,Lakeview Data Center,natural_gas,office_area,229303.47,3957.06,76798.27,9511.47
-2024-03-10,Eastfield Factory,diesel_backup,loading_dock,202617.62,15288.85,12776.72,8897.75
-2025-01-06,North Campus,grid_electricity,cold_storage,118559.54,2077.39,41061.63,38181.22
-2024-05-25,Riverside Plant,diesel_backup,common_areas,192012.22,7333.74,38455.82,26819.57
-2024-09-20,Lakeview Data Center,natural_gas,cold_storage,172797.33,9735.5,46398.98,40427.9
-2024-08-09,Riverside Plant,wind_power,production_floor,20207.03,5570.73,36553.46,33789.9
-2024-04-02,Lakeview Data Center,wind_power,cold_storage,128850.77,16116.63,11344.57,55600.13
-2025-05-09,North Campus,solar_pv,server_room,125250.73,16156.29,7075.16,11477.27
-2025-05-27,Riverside Plant,wind_power,office_area,99793.05,17108.94,24129.74,21428.71
-2025-01-07,Downtown Office,diesel_backup,loading_dock,214574.54,13293.68,38542.82,57569.7
-2024-10-16,North Campus,solar_pv,server_room,181314.92,15627.51,28355.65,30356.44
-2024-11-09,Downtown Office,diesel_backup,common_areas,67245.08,10549.28,64287.97,24809.37
-2024-01-10,Eastfield Factory,solar_pv,cold_storage,100160.76,9067.99,3594.11,52743.91
-2024-04-20,Downtown Office,solar_pv,office_area,242012.32,15479.32,28799.3,20282.99
-2024-11-18,Riverside Plant,grid_electricity,loading_dock,127676.44,15677.4,7802.8,12490.07
-2025-01-15,Eastfield Factory,diesel_backup,loading_dock,203175.48,15916.5,82842.1,55655.71
-2024-03-17,Eastfield Factory,grid_electricity,common_areas,155673.54,7979.95,87465.86,42154.72
-2024-01-17,Lakeview Data Center,diesel_backup,production_floor,132758.72,7556.35,29093.86,15813.37
-2024-12-31,Harbor Warehouse,grid_electricity,office_area,45231.0,5744.23,2285.09,7483.04
-2024-12-26,Lakeview Data Center,solar_pv,cold_storage,33044.45,2271.2,75725.16,53359.08
-2025-03-31,Eastfield Factory,grid_electricity,office_area,63437.93,16226.25,52114.53,57790.57
-2024-11-11,Riverside Plant,wind_power,loading_dock,140341.35,5772.07,58994.43,55021.48
-2024-05-21,Eastfield Factory,diesel_backup,office_area,223860.8,9420.43,52337.28,40744.98
-2024-02-04,Eastfield Factory,grid_electricity,loading_dock,58334.2,16198.03,25676.64,12550.49
-2024-11-25,Harbor Warehouse,solar_pv,office_area,115390.17,8635.65,42655.67,16203.28
-2025-03-05,Lakeview Data Center,natural_gas,common_areas,54598.22,4347.5,68328.05,17916.92
-2024-04-22,North Campus,grid_electricity,office_area,93440.03,3653.39,25937.27,33564.86
-2024-04-29,Lakeview Data Center,grid_electricity,production_floor,213063.32,3200.42,64503.83,8388.09
-2024-01-15,Lakeview Data Center,natural_gas,server_room,131476.55,2172.55,30126.24,58713.94
-2024-09-18,Eastfield Factory,diesel_backup,loading_dock,225683.41,5278.53,59004.66,5971.2
-2024-04-25,North Campus,solar_pv,cold_storage,73059.78,15301.81,20449.79,57800.95
-2024-02-06,Riverside Plant,natural_gas,loading_dock,111413.8,11242.68,32962.07,27789.84
-2024-05-21,Downtown Office,grid_electricity,server_room,28890.25,6812.8,75334.25,10004.96
-2024-02-20,Harbor Warehouse,wind_power,server_room,61037.95,9469.43,4209.45,22131.31
-2025-03-23,North Campus,grid_electricity,server_room,215569.76,14940.1,41319.97,32817.11
-2024-11-11,Riverside Plant,solar_pv,common_areas,114844.48,10855.51,83022.37,30421.77
-2024-11-21,Downtown Office,grid_electricity,common_areas,68481.28,14687.05,92632.45,34093.38
-2024-09-03,North Campus,solar_pv,common_areas,125131.04,10350.5,3296.28,44098.16
-2025-01-06,Lakeview Data Center,solar_pv,common_areas,74246.88,10128.06,83362.14,45313.71
-2024-11-29,North Campus,wind_power,loading_dock,135399.85,9063.34,27814.32,30136.51
-2024-12-20,North Campus,natural_gas,cold_storage,160679.13,12036.22,48601.74,49927.76
-2025-06-16,Downtown Office,diesel_backup,production_floor,169481.79,10890.26,87034.7,38430.78
-2025-06-09,Downtown Office,wind_power,server_room,28515.22,9549.73,59762.05,9804.61
-2024-09-02,Lakeview Data Center,solar_pv,office_area,224037.74,795.39,1550.77,53302.12
-2025-03-23,Riverside Plant,solar_pv,office_area,78786.38,15931.02,41977.94,4556.56
-2024-03-11,North Campus,wind_power,office_area,183749.24,1933.6,28894.86,22155.06
-2024-03-03,Downtown Office,grid_electricity,production_floor,160274.96,4458.77,13446.86,45949.97
-2024-09-27,Harbor Warehouse,grid_electricity,server_room,51687.12,3160.29,45010.88,11590.96
-2024-07-02,Downtown Office,wind_power,common_areas,235296.35,4814.22,70506.22,4077.12
-2024-06-24,Eastfield Factory,solar_pv,common_areas,65867.38,10782.02,57932.71,48212.41
-2025-05-25,North Campus,natural_gas,office_area,137658.37,7106.9,41057.72,31144.99
-2024-07-27,North Campus,grid_electricity,loading_dock,105926.38,17279.28,52689.72,42280.64
-2024-01-02,Harbor Warehouse,grid_electricity,cold_storage,7196.5,2908.8,86641.1,31708.74
-2025-04-27,North Campus,wind_power,office_area,178206.79,8431.1,25844.83,52357.36
-2024-11-17,North Campus,natural_gas,cold_storage,188892.02,11519.4,68519.35,16288.04
-2024-01-21,North Campus,diesel_backup,server_room,81222.16,13127.9,49490.66,59080.44
-2025-04-18,North Campus,natural_gas,production_floor,47139.93,5421.36,61574.78,7618.19
-2024-06-30,Downtown Office,diesel_backup,production_floor,62608.72,13026.66,81276.48,34980.79
-2025-04-30,Lakeview Data Center,solar_pv,server_room,32267.45,3297.4,46531.73,32954.22
-2024-09-04,Harbor Warehouse,natural_gas,cold_storage,171449.66,6823.78,5908.0,46020.4
-2024-09-28,North Campus,wind_power,cold_storage,206906.81,4303.13,69385.15,48058.03
-2025-01-12,Harbor Warehouse,solar_pv,office_area,106160.74,7486.57,29269.1,46339.51
-2024-05-11,Eastfield Factory,diesel_backup,office_area,48132.39,1253.87,38172.65,6400.45
-2024-06-25,North Campus,natural_gas,loading_dock,120200.13,9845.57,79130.57,14790.25
-2024-09-07,Riverside Plant,natural_gas,loading_dock,224497.46,14052.18,3145.78,34175.22
-2024-09-06,North Campus,natural_gas,server_room,58487.7,870.38,83431.12,57565.34
-2024-12-23,Riverside Plant,solar_pv,production_floor,190157.47,5276.67,12096.4,12925.93
-2024-12-24,Harbor Warehouse,diesel_backup,loading_dock,5726.96,9513.35,72175.18,21631.22
-2025-03-18,Riverside Plant,diesel_backup,loading_dock,96451.89,2612.56,49003.52,25530.47
-2025-06-08,Downtown Office,wind_power,production_floor,190684.67,14901.46,69710.56,17691.24
-2024-04-30,Eastfield Factory,solar_pv,server_room,126774.69,3998.32,47665.6,22933.85
-2024-05-12,Riverside Plant,diesel_backup,common_areas,52082.14,9325.06,53435.45,35722.74
-2025-01-29,Harbor Warehouse,diesel_backup,common_areas,192928.19,6165.5,43544.27,54600.98
-2025-01-27,Riverside Plant,solar_pv,office_area,116895.11,12617.92,55807.74,53109.97
-2024-10-23,Harbor Warehouse,diesel_backup,server_room,201198.1,7373.78,33989.71,53100.52
-2025-04-21,North Campus,solar_pv,office_area,142525.32,8222.29,92390.83,6086.27
-2024-01-09,Downtown Office,natural_gas,office_area,90450.29,10847.7,34466.19,53782.14
-2025-05-14,Eastfield Factory,solar_pv,server_room,146545.19,17758.33,1074.1,1131.39
-2024-05-07,Eastfield Factory,solar_pv,loading_dock,17650.68,3809.83,66052.08,9687.14
-2025-02-15,Harbor Warehouse,diesel_backup,server_room,79916.38,3102.88,27478.59,47902.62
-2025-03-09,Harbor Warehouse,solar_pv,production_floor,193026.5,17042.77,41605.17,58019.53
-2024-01-23,Harbor Warehouse,natural_gas,office_area,27951.58,1634.68,46334.91,30029.46
-2024-06-28,Downtown Office,diesel_backup,common_areas,63396.81,10396.03,49762.77,55055.01
-2024-10-18,Riverside Plant,natural_gas,server_room,216819.56,2336.58,10.31,59062.99
-2024-09-08,Harbor Warehouse,solar_pv,common_areas,126075.6,3021.42,43742.27,38674.13
-2024-03-05,North Campus,grid_electricity,production_floor,211390.57,1581.76,4735.78,49105.98
-2024-01-14,Downtown Office,diesel_backup,server_room,196762.44,2820.17,22611.9,54529.4
-2024-06-24,Harbor Warehouse,diesel_backup,loading_dock,123370.41,14250.45,92572.93,7574.68
-2025-04-07,Lakeview Data Center,diesel_backup,cold_storage,138475.23,1397.03,82847.21,57327.74
-2025-04-01,Harbor Warehouse,diesel_backup,common_areas,7070.74,14236.84,41405.74,51358.6
-2024-08-23,Eastfield Factory,solar_pv,loading_dock,104895.9,14228.13,26264.23,50205.67
-2024-09-02,Lakeview Data Center,wind_power,loading_dock,191380.88,4704.97,11691.55,25137.93
-2025-02-12,Harbor Warehouse,natural_gas,loading_dock,178113.38,7970.38,38089.85,192.7
-2025-02-28,Lakeview Data Center,solar_pv,office_area,242559.83,3238.75,15576.17,30319.01
-2024-10-17,Harbor Warehouse,wind_power,common_areas,46714.52,4313.06,18865.29,34888.12
-2024-01-15,Lakeview Data Center,natural_gas,office_area,65162.78,7513.36,50594.23,43022.64
-2024-12-24,Lakeview Data Center,diesel_backup,office_area,162311.86,13186.91,61905.88,31216.96
-2024-08-13,Eastfield Factory,diesel_backup,cold_storage,53643.97,12443.11,51559.82,8646.31
-2024-10-23,Harbor Warehouse,natural_gas,common_areas,16832.45,12341.39,26409.98,32136.74
-2024-12-09,Eastfield Factory,grid_electricity,office_area,184366.57,2567.46,56752.1,57903.36
-2025-06-14,Eastfield Factory,solar_pv,cold_storage,216794.39,2071.02,56721.03,49150.68
-2025-03-12,Eastfield Factory,natural_gas,cold_storage,197215.83,5283.69,11612.66,23390.82
-2025-05-09,Lakeview Data Center,natural_gas,production_floor,55109.05,4137.28,37961.81,16391.63
-2025-04-15,Downtown Office,grid_electricity,loading_dock,43392.51,8216.69,23382.61,44727.32
-2025-05-06,Eastfield Factory,diesel_backup,production_floor,116942.69,10776.39,12084.63,15306.59
-2024-12-11,Riverside Plant,solar_pv,production_floor,44732.42,7342.56,47750.93,26567.61
-2024-12-07,Riverside Plant,grid_electricity,common_areas,186006.7,8272.73,2981.36,40794.52
-2025-04-02,Lakeview Data Center,grid_electricity,office_area,203677.1,8611.86,61530.45,31629.84
-2024-02-19,Downtown Office,diesel_backup,server_room,219554.73,8342.31,3544.39,24789.53
-2024-05-17,Riverside Plant,solar_pv,cold_storage,73689.18,11883.11,59390.62,19991.34
-2024-09-17,Harbor Warehouse,natural_gas,common_areas,111670.73,453.42,53948.04,57860.4
-2025-02-07,Downtown Office,diesel_backup,production_floor,148126.07,10438.78,43043.52,55360.2
-2024-10-22,Downtown Office,grid_electricity,loading_dock,243529.79,3989.11,12359.18,52096.82
-2024-06-20,Harbor Warehouse,diesel_backup,server_room,55341.35,1598.43,30646.61,3465.28
-2024-03-20,Riverside Plant,natural_gas,loading_dock,168137.89,11352.73,83368.61,31124.27
-2024-07-16,North Campus,natural_gas,loading_dock,168909.27,5597.32,12996.04,11073.15
-2024-10-24,Lakeview Data Center,grid_electricity,common_areas,188596.61,11603.97,34859.61,12915.24
-2024-07-16,Downtown Office,diesel_backup,loading_dock,96854.98,6771.47,7232.78,51579.61
-2024-05-18,Eastfield Factory,wind_power,production_floor,150753.32,6961.14,19050.7,34188.25
-2024-10-16,Eastfield Factory,solar_pv,office_area,74992.73,14264.91,35651.57,48061.51
-2024-04-10,Lakeview Data Center,diesel_backup,common_areas,179619.14,14676.52,64440.32,9840.54
-2025-03-02,Harbor Warehouse,diesel_backup,server_room,136478.74,16876.61,18549.2,11472.79
-2024-06-21,North Campus,solar_pv,server_room,249537.22,8703.12,12857.87,33462.11
-2025-03-21,Riverside Plant,wind_power,common_areas,64222.2,5693.55,83759.37,20661.62
-2025-01-20,North Campus,natural_gas,cold_storage,1303.5,8879.0,35855.14,23488.21
-2024-03-05,Harbor Warehouse,solar_pv,production_floor,19638.22,16307.08,93451.62,7806.32
+clm_rpt_dt,clm_typ,plcy_st,adj_status,clm_amt_req,clm_amt_paid,res_days,clm_cnt
+2024-08-27,property_water,FL,pending_docs,13207.95,154399.7,424,2
+2024-03-27,property_water,IL,pending_docs,96590.08,65955.4,463,4
+2024-10-19,workers_comp,OH,pending_docs,95915.96,189462.54,473,2
+2024-11-12,liability_bodily,GA,reopened,224153.92,87848.79,322,5
+2024-05-10,auto_collision,GA,pending_docs,61391.14,70002.66,151,3
+2025-03-20,auto_collision,GA,denied,30301.07,192284.1,408,2
+2024-06-03,medical_outpatient,WA,under_review,145441.33,64377.6,500,2
+2024-06-09,property_fire,NY,closed,87663.06,71066.53,215,5
+2024-02-17,homeowners_theft,IL,denied,29505.24,95579.31,521,3
+2025-01-04,auto_comprehensive,CA,open,143450.52,7695.17,282,5
+2024-12-15,workers_comp,WA,denied,131054.49,154217.24,73,3
+2024-09-07,auto_comprehensive,IL,denied,150304.33,32963.34,349,3
+2024-07-07,property_water,IL,denied,175972.41,82130.03,302,6
+2025-04-26,liability_bodily,WA,pending_docs,171692.44,183322.6,361,5
+2025-03-09,homeowners_theft,TX,pending_docs,212047.79,29597.92,408,1
+2024-11-01,liability_bodily,IL,reopened,67513.08,86585.59,484,3
+2024-11-25,homeowners_theft,NY,under_review,38761.45,202658.45,149,2
+2025-06-20,liability_bodily,OH,reopened,116649.08,144605.24,11,2
+2024-01-29,workers_comp,GA,pending_docs,54459.56,14407.06,48,3
+2024-05-10,property_fire,WA,denied,61641.73,59106.89,43,3
+2024-03-28,property_fire,FL,denied,165139.63,170896.21,321,3
+2024-02-29,workers_comp,GA,reopened,51678.13,180457.32,200,3
+2024-08-18,medical_outpatient,NY,open,215287.4,3380.93,145,4
+2024-07-05,workers_comp,TX,closed,139592.81,91767.37,267,4
+2025-03-28,medical_outpatient,TX,under_review,180225.82,105797.21,243,4
+2025-02-24,homeowners_theft,WA,open,126638.15,115521.99,149,1
+2025-06-13,property_fire,WA,denied,242483.88,162916.73,7,3
+2024-10-18,property_water,OH,denied,147402.88,199156.47,212,2
+2024-09-03,auto_collision,GA,under_review,203973.55,236792.86,534,2
+2025-05-14,liability_bodily,OH,reopened,202717.67,162738.39,16,4
+2025-01-12,workers_comp,IL,under_review,83915.89,90365.94,402,4
+2025-06-20,property_fire,CA,open,45401.87,199976.97,246,4
+2024-10-29,workers_comp,NY,reopened,130041.56,224126.43,178,2
+2025-05-13,auto_comprehensive,OH,denied,116473.14,124463.21,521,6
+2024-03-16,workers_comp,FL,closed,196198.13,96558.53,479,1
+2024-03-28,auto_collision,GA,open,91128.31,150379.44,334,6
+2024-10-25,liability_bodily,WA,reopened,129444.94,44003.28,396,6
+2024-11-14,liability_bodily,IL,pending_docs,28593.56,139776.77,234,3
+2025-06-07,property_water,TX,closed,90638.16,131160.81,485,2
+2025-01-26,auto_comprehensive,CA,closed,70052.18,192045.7,168,1
+2024-05-27,auto_comprehensive,IL,open,88431.83,23770.24,515,1
+2025-05-11,property_fire,OH,approved,237561.17,14273.84,130,1
+2024-12-27,workers_comp,OH,closed,203891.96,95464.22,533,2
+2024-03-20,property_water,OH,reopened,117448.18,111159.11,529,1
+2024-06-26,liability_bodily,GA,closed,99547.57,132362.29,457,1
+2024-11-26,property_water,FL,pending_docs,65025.67,210510.59,118,2
+2025-03-21,property_fire,TX,under_review,104640.81,1540.42,48,3
+2024-01-30,workers_comp,TX,closed,242113.22,225927.05,448,5
+2024-06-11,property_water,TX,pending_docs,50723.7,207072.11,156,3
+2025-02-05,auto_comprehensive,GA,open,208544.56,234802.92,231,3
+2024-12-11,auto_collision,NY,approved,150727.75,69435.22,327,4
+2024-11-05,homeowners_theft,TX,pending_docs,231020.17,181882.44,368,2
+2024-09-20,workers_comp,CA,pending_docs,184739.73,171953.22,437,1
+2024-03-09,homeowners_theft,NY,reopened,50809.12,144225.36,302,4
+2025-03-08,homeowners_theft,WA,denied,240479.16,53110.79,320,6
+2024-03-02,auto_comprehensive,GA,closed,236134.67,139102.3,299,2
+2024-06-28,workers_comp,WA,denied,29363.97,161581.0,218,4
+2024-10-10,property_fire,NY,closed,88414.66,198754.57,360,2
+2024-06-06,property_water,FL,approved,24528.71,139204.24,521,3
+2024-09-23,property_water,OH,pending_docs,125317.16,122553.18,386,1
+2024-07-30,workers_comp,IL,under_review,225099.46,222876.1,91,5
+2024-10-17,auto_collision,TX,denied,190412.14,110961.81,301,1
+2025-06-09,auto_collision,GA,under_review,166658.64,163693.85,73,3
+2025-06-11,auto_collision,OH,denied,113656.05,183498.36,517,5
+2024-06-07,auto_collision,WA,open,39305.12,160430.92,505,3
+2025-06-12,auto_comprehensive,IL,approved,33120.11,131229.79,411,5
+2025-01-26,property_water,TX,open,132158.98,71773.99,477,5
+2024-06-08,property_water,IL,denied,86649.41,40164.48,150,3
+2025-05-13,liability_bodily,TX,denied,201129.1,197850.7,28,5
+2024-02-10,workers_comp,CA,approved,186363.17,176471.99,178,4
+2024-05-23,property_fire,GA,under_review,185648.44,154185.22,170,6
+2024-06-06,property_fire,IL,pending_docs,47376.84,222309.49,157,2
+2024-09-25,liability_bodily,NY,open,159684.1,188393.93,340,2
+2025-03-15,workers_comp,NY,approved,164605.85,218085.17,127,2
+2024-11-18,property_fire,TX,under_review,167256.46,189823.39,382,5
+2024-05-22,medical_outpatient,WA,approved,130764.68,100255.38,491,1
+2025-06-19,medical_outpatient,CA,denied,144689.75,170207.27,327,5
+2024-03-17,auto_comprehensive,TX,denied,179102.07,181624.77,267,2
+2025-04-03,auto_comprehensive,CA,under_review,244294.16,98947.45,180,5
+2024-11-22,workers_comp,IL,closed,6585.41,67976.7,302,3
+2024-11-20,property_fire,NY,denied,61523.62,113783.05,187,4
+2025-01-08,property_water,NY,denied,198731.1,20672.61,395,6
+2025-06-08,auto_comprehensive,CA,closed,144604.19,91259.74,373,3
+2024-04-03,homeowners_theft,WA,reopened,43815.95,187443.1,68,4
+2025-04-25,property_water,NY,reopened,58891.56,145223.69,235,2
+2024-02-01,workers_comp,OH,reopened,176425.97,192142.25,49,5
+2025-02-28,workers_comp,FL,reopened,103696.73,94865.48,115,5
+2024-03-29,property_water,NY,open,193769.29,232544.17,450,3
+2024-05-09,auto_comprehensive,FL,open,238607.5,149146.25,275,4
+2024-05-07,liability_bodily,OH,denied,96498.67,196360.56,328,4
+2025-02-17,liability_bodily,WA,under_review,207209.83,24288.83,467,1
+2024-07-14,auto_comprehensive,IL,closed,113179.64,68544.9,396,6
+2025-03-16,homeowners_theft,OH,approved,193387.99,12458.38,154,2
+2024-10-30,auto_collision,CA,denied,98287.67,5300.4,104,5
+2025-05-30,medical_outpatient,IL,under_review,32869.19,50886.84,357,6
+2025-05-08,workers_comp,CA,under_review,77971.04,213675.94,185,6
+2024-10-30,homeowners_theft,NY,under_review,162534.45,96820.02,303,3
+2024-07-07,homeowners_theft,NY,reopened,238848.7,15337.55,432,2
+2024-03-31,property_fire,GA,denied,80978.69,17988.48,533,2
+2024-12-08,auto_collision,WA,closed,128887.37,156386.17,459,4
+2024-12-30,liability_bodily,FL,pending_docs,230789.49,160150.7,155,4
+2024-12-23,workers_comp,OH,pending_docs,176318.74,86445.68,263,5
+2025-04-19,auto_collision,GA,pending_docs,67069.14,233854.55,227,3
+2024-06-01,workers_comp,WA,pending_docs,153998.07,518.32,520,1
+2025-03-01,property_fire,WA,open,99067.75,49970.58,353,6
+2024-10-26,property_fire,WA,open,20444.24,134142.94,529,2
+2025-01-11,workers_comp,OH,closed,111026.29,62255.07,441,5
+2025-06-14,liability_bodily,GA,pending_docs,245349.85,195212.51,384,6
+2025-04-11,workers_comp,GA,denied,166524.48,29347.88,417,5
+2025-06-22,medical_outpatient,NY,approved,156520.95,89273.19,540,3
+2024-09-13,liability_bodily,IL,open,148278.99,162072.02,22,2
+2024-08-17,homeowners_theft,FL,under_review,221314.32,28591.3,156,4
+2024-12-04,auto_collision,IL,approved,104373.01,52258.92,432,1
+2025-03-21,medical_outpatient,OH,open,10561.83,83601.05,51,5
+2025-06-05,homeowners_theft,OH,approved,95294.46,149890.48,142,4
+2024-06-29,auto_collision,OH,under_review,4170.49,117291.66,99,5
+2024-11-15,homeowners_theft,IL,reopened,133582.34,231261.35,380,3
+2025-03-09,auto_collision,WA,open,224980.65,224808.86,503,3
+2025-04-26,liability_bodily,WA,closed,91846.18,111999.49,397,2
+2024-07-23,property_fire,GA,pending_docs,119791.55,48715.81,101,2
+2024-03-09,property_fire,GA,open,203966.16,70735.75,461,3
+2025-02-24,auto_comprehensive,OH,denied,193373.45,164285.35,315,6
+2024-07-16,medical_outpatient,CA,closed,63965.6,26099.33,334,5
+2024-02-12,medical_outpatient,FL,closed,245061.17,15038.89,233,1
+2024-07-12,property_water,NY,pending_docs,178410.04,61663.08,237,3
+2024-04-18,auto_comprehensive,FL,closed,33684.82,138709.71,531,4
+2025-04-11,auto_comprehensive,WA,pending_docs,41886.93,231107.52,119,5
+2024-12-05,property_water,NY,pending_docs,50965.76,79515.38,383,6
+2024-02-21,property_water,WA,closed,239493.5,21226.88,147,3
+2024-04-27,auto_collision,TX,denied,189884.75,189719.44,160,6
+2024-02-12,auto_collision,TX,denied,242395.82,209969.93,495,3
+2024-06-10,auto_collision,OH,denied,211696.86,85965.45,218,6
+2025-06-19,auto_comprehensive,GA,approved,130507.76,121334.25,266,2
+2024-12-30,workers_comp,OH,under_review,214653.48,164533.26,442,2
+2024-01-26,property_water,TX,reopened,70258.67,163197.13,195,5
+2024-06-08,liability_bodily,WA,denied,162636.02,174620.67,386,6
+2024-05-04,property_fire,TX,closed,168826.12,158289.02,201,5
+2024-06-21,property_water,TX,approved,195378.16,3766.36,326,2
+2024-07-24,medical_outpatient,IL,under_review,213205.57,83612.67,240,4
+2025-03-18,workers_comp,GA,approved,229162.82,18032.71,298,4
+2024-09-07,workers_comp,CA,denied,28766.21,13215.55,306,5
+2024-03-04,liability_bodily,CA,reopened,4338.79,65500.19,395,4
+2025-05-26,liability_bodily,GA,denied,108473.24,194004.28,137,1
+2024-01-22,homeowners_theft,CA,under_review,188433.7,59058.27,533,6
+2024-02-08,workers_comp,WA,open,90776.48,117270.35,274,6
+2025-03-24,workers_comp,IL,open,243457.5,165501.11,423,4
+2025-06-19,homeowners_theft,GA,approved,239633.58,110277.89,129,4
+2025-05-01,homeowners_theft,GA,approved,149657.78,164842.55,182,2
+2024-08-23,property_water,TX,approved,217311.1,216002.03,285,4
+2024-12-31,auto_collision,GA,open,179057.14,218044.01,229,5
+2024-02-27,homeowners_theft,WA,closed,75753.71,65239.03,111,5
+2024-12-04,property_fire,CA,reopened,199733.11,107512.5,34,6
+2024-04-22,auto_collision,OH,reopened,181121.2,73234.07,176,2
+2025-04-26,homeowners_theft,FL,closed,208449.55,195362.83,414,3
+2024-10-11,workers_comp,TX,under_review,21376.72,67201.99,320,3
+2024-10-13,property_fire,NY,under_review,70981.26,94282.19,352,2
+2024-07-02,property_fire,WA,reopened,123831.3,35807.58,231,3
+2024-03-02,homeowners_theft,CA,approved,190214.32,46314.23,487,3
+2025-06-13,auto_comprehensive,IL,open,238252.08,137405.0,288,1
+2024-07-21,liability_bodily,IL,reopened,5344.12,7944.23,59,2
+2025-01-09,auto_collision,CA,open,44362.92,199299.67,537,4
+2024-08-25,property_fire,NY,open,123025.44,49946.99,44,4
+2024-04-29,medical_outpatient,NY,reopened,91449.21,65165.89,437,4
+2025-04-04,homeowners_theft,IL,closed,74265.35,3551.06,234,3
+2025-01-07,auto_collision,IL,reopened,113446.53,236497.37,215,3
+2024-11-25,property_fire,WA,pending_docs,131031.82,233372.48,137,3
+2024-02-05,auto_collision,IL,under_review,200875.46,176697.88,418,5
+2024-02-05,liability_bodily,NY,open,187656.5,171983.14,377,1
+2024-11-09,workers_comp,WA,under_review,121759.1,999.44,387,6
+2024-12-21,auto_collision,WA,reopened,79649.51,105644.09,76,3
+2025-05-13,homeowners_theft,OH,open,121304.55,50007.27,458,4
+2025-03-30,medical_outpatient,IL,denied,173660.19,162126.23,500,5
+2025-02-22,property_water,TX,pending_docs,217489.44,186890.53,1,2
+2024-02-14,homeowners_theft,NY,pending_docs,81760.36,108558.05,499,6
+2025-03-28,property_water,CA,pending_docs,63911.17,97313.42,55,4
+2025-05-10,property_water,TX,under_review,24057.8,132787.26,231,3
+2024-07-26,auto_comprehensive,OH,under_review,19109.59,33753.36,312,2
+2024-02-04,property_water,OH,reopened,132875.78,10591.45,410,6
+2025-03-08,auto_collision,CA,reopened,52136.96,142579.01,468,3
+2025-01-08,auto_comprehensive,FL,under_review,243049.79,177769.3,103,4
+2024-05-25,medical_outpatient,TX,approved,127023.07,130400.81,3,5
+2024-07-17,medical_outpatient,FL,denied,185543.54,148828.59,75,1
+2024-10-22,auto_collision,OH,denied,209720.65,57641.77,24,5
+2024-09-28,property_water,NY,denied,25812.33,152885.42,100,6
+2024-05-07,auto_comprehensive,OH,approved,105869.09,34671.21,246,5
+2024-04-04,property_water,IL,pending_docs,249307.05,7616.55,80,1
+2024-07-17,workers_comp,FL,open,46333.79,66681.71,289,4
+2024-04-03,auto_collision,FL,reopened,19735.66,31111.5,365,2
+2024-08-15,property_water,NY,reopened,60216.49,136036.38,308,1
+2024-06-02,property_water,OH,reopened,98530.66,211309.52,245,3
+2024-12-19,homeowners_theft,IL,pending_docs,228769.89,54530.65,312,1
+2025-03-06,property_fire,TX,closed,233354.12,174726.82,415,4
+2024-01-19,medical_outpatient,GA,closed,101295.98,125723.91,90,2
+2025-03-27,property_water,TX,under_review,145356.47,109268.21,29,5
+2024-07-04,medical_outpatient,NY,under_review,98638.63,142157.6,46,4
+2025-03-03,liability_bodily,IL,reopened,200537.56,107024.81,312,4
+2024-05-23,medical_outpatient,IL,under_review,136660.02,127451.45,358,1
+2024-06-30,liability_bodily,CA,reopened,126041.74,57010.43,125,2
+2024-07-11,medical_outpatient,GA,under_review,199519.78,205640.55,404,1
+2024-07-02,auto_comprehensive,FL,reopened,142844.4,122556.0,512,3
+2024-08-06,liability_bodily,WA,denied,159214.69,161042.52,207,5
+2024-08-28,property_water,OH,reopened,70936.18,46517.1,382,3
+2024-12-17,homeowners_theft,CA,closed,82580.9,110320.84,226,5
+2024-03-25,medical_outpatient,WA,approved,166559.38,15155.01,304,6
+2024-08-16,property_water,TX,open,22009.85,8454.19,268,3
+2024-07-27,homeowners_theft,GA,open,212518.29,111848.0,89,5
+2024-06-08,medical_outpatient,OH,closed,153594.37,211298.24,462,1
+2024-10-22,property_fire,TX,pending_docs,64675.76,135512.48,76,2
+2025-06-08,property_fire,CA,reopened,199804.99,3280.52,1,5
+2024-06-07,auto_comprehensive,FL,approved,101670.97,87530.6,4,3
+2024-08-02,homeowners_theft,IL,pending_docs,57444.87,65678.12,473,3
+2024-03-30,auto_comprehensive,NY,approved,187687.05,155257.71,327,2
+2024-01-17,property_fire,IL,pending_docs,209112.79,65881.45,204,4
+2024-02-17,property_fire,OH,closed,36035.64,156220.72,210,5
+2024-01-05,workers_comp,WA,approved,34799.64,174913.51,232,6
+2024-09-02,auto_comprehensive,TX,closed,189638.76,92494.17,248,1
+2024-04-29,auto_collision,TX,under_review,235967.3,96484.65,110,5
+2024-10-12,workers_comp,GA,pending_docs,197083.65,205186.03,252,2
+2025-03-01,property_water,TX,under_review,170771.34,55825.38,235,6
+2024-06-14,medical_outpatient,NY,closed,35655.9,216118.06,399,1
+2024-06-17,medical_outpatient,OH,reopened,46954.67,69909.48,372,5
+2024-01-05,medical_outpatient,GA,under_review,47346.19,162330.59,79,4
+2024-04-10,property_fire,OH,open,211836.22,81204.01,362,1
+2024-09-11,liability_bodily,GA,approved,248304.1,231272.71,60,5
+2024-07-02,liability_bodily,GA,pending_docs,38275.25,40016.63,344,3
+2025-05-30,homeowners_theft,WA,closed,105796.78,155732.25,405,3
+2025-03-17,property_water,IL,open,223123.65,99039.17,122,5
+2024-11-08,workers_comp,GA,denied,241542.7,43425.32,222,6
+2024-04-23,property_water,TX,open,118910.11,140243.42,66,2
+2024-09-15,property_water,FL,open,3096.27,215776.72,349,3
+2024-05-13,auto_collision,IL,closed,174494.36,48881.43,447,1
+2024-09-02,auto_collision,NY,reopened,197196.69,9091.26,472,1
+2024-02-24,property_fire,WA,denied,36715.83,192901.78,386,1
+2024-06-27,medical_outpatient,NY,closed,190043.81,102201.32,502,3
+2024-01-11,auto_collision,IL,denied,59105.23,193167.69,378,3
+2024-11-16,auto_collision,TX,approved,15400.08,102705.24,300,3
+2025-02-18,auto_comprehensive,IL,open,177112.81,3926.26,124,4
+2024-04-13,auto_collision,WA,approved,31566.76,175072.2,287,1
+2024-07-03,liability_bodily,GA,denied,126242.09,217964.6,204,2
+2025-04-26,workers_comp,TX,closed,211695.83,178382.7,446,4

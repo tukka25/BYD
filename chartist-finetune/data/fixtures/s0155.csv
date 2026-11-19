@@ -1,241 +1,241 @@
-enrolment_attendance_date,enrolment_school_name,enrolment_grade_level,enrolment_program_type,enrolment_enrolled_count,enrolment_present_count,enrolment_absent_count,enrolment_attendance_rate
-2025-05-05,Maple Grove High School,Grade 3,General Education,1683,1794,252,24.15
-2025-02-01,Oakwood Middle School,Grade 5,Special Needs,1552,1647,155,46.51
-2024-01-01,Northgate Secondary School,Kindergarten,Gifted and Talented,1569,1423,121,43.52
-2024-01-10,Northgate Secondary School,Grade 1,English Language Learner,900,742,34,70.16
-2025-01-14,Northgate Secondary School,Grade 1,English Language Learner,1318,13,226,68.35
-2024-01-20,Hillcrest Primary,Grade 11,Vocational,439,1092,229,3.46
-2024-09-07,Northgate Secondary School,Grade 3,Special Needs,519,742,17,71.61
-2024-11-17,Riverside Elementary,Grade 11,English Language Learner,1710,1045,232,5.78
-2024-05-14,Hillcrest Primary,Grade 5,Gifted and Talented,1525,271,188,93.31
-2024-11-12,Maple Grove High School,Grade 1,English Language Learner,1551,379,150,87.22
-2024-07-05,Oakwood Middle School,Grade 3,Special Needs,671,391,122,58.23
-2024-04-30,Hillcrest Primary,Grade 3,English Language Learner,677,898,158,2.08
-2024-01-03,Riverside Elementary,Grade 11,English Language Learner,388,709,157,5.66
-2024-12-10,Northgate Secondary School,Grade 3,Special Needs,844,1023,284,37.14
-2025-03-15,Maple Grove High School,Grade 9,Special Needs,1156,633,211,99.63
-2025-02-22,Maple Grove High School,Grade 9,General Education,1527,612,13,11.81
-2024-05-05,Maple Grove High School,Grade 11,English Language Learner,1118,1371,203,61.41
-2025-02-06,Lincoln Academy,Grade 11,Special Needs,1066,192,174,42.78
-2024-03-11,Northgate Secondary School,Grade 11,General Education,1765,555,128,21.76
-2024-03-24,Riverside Elementary,Grade 5,Special Needs,990,95,42,23.77
-2024-01-30,Lincoln Academy,Grade 5,Special Needs,1765,1520,7,77.43
-2025-03-31,Northgate Secondary School,Grade 11,Vocational,490,1542,272,59.6
-2024-12-20,Hillcrest Primary,Grade 9,General Education,1718,1266,268,40.85
-2024-06-12,Hillcrest Primary,Grade 3,Vocational,966,300,98,24.92
-2024-05-17,Maple Grove High School,Grade 11,English Language Learner,1795,346,256,20.27
-2024-11-24,Hillcrest Primary,Grade 11,English Language Learner,875,1297,206,3.78
-2025-06-21,Lincoln Academy,Kindergarten,General Education,1001,1770,79,53.96
-2024-06-06,Oakwood Middle School,Grade 3,English Language Learner,1785,1589,49,2.31
-2025-03-24,Maple Grove High School,Kindergarten,Gifted and Talented,535,1367,178,55.67
-2024-12-02,Riverside Elementary,Grade 9,Gifted and Talented,56,1644,37,40.88
-2025-04-10,Hillcrest Primary,Grade 9,Gifted and Talented,470,1723,183,20.07
-2024-06-10,Riverside Elementary,Grade 3,Special Needs,878,870,271,81.87
-2024-06-23,Hillcrest Primary,Grade 1,General Education,334,1488,187,47.79
-2024-10-18,Riverside Elementary,Grade 9,General Education,149,693,275,25.49
-2025-01-31,Lincoln Academy,Grade 5,English Language Learner,1763,747,172,86.07
-2024-11-10,Riverside Elementary,Grade 3,Special Needs,64,1402,43,39.05
-2024-11-30,Oakwood Middle School,Grade 7,General Education,1190,1419,104,83.35
-2024-12-20,Maple Grove High School,Grade 7,General Education,1349,1125,267,81.29
-2025-04-21,Riverside Elementary,Grade 3,Gifted and Talented,1732,1700,85,49.16
-2025-02-07,Hillcrest Primary,Grade 7,General Education,932,1187,169,49.89
-2025-01-02,Riverside Elementary,Grade 9,Vocational,1674,1675,24,17.38
-2024-03-11,Maple Grove High School,Kindergarten,General Education,481,1672,205,47.4
-2024-09-17,Hillcrest Primary,Grade 3,General Education,344,96,188,87.32
-2024-07-07,Riverside Elementary,Grade 5,Vocational,1548,280,42,16.51
-2024-01-01,Northgate Secondary School,Grade 11,General Education,910,740,25,46.0
-2024-06-06,Lincoln Academy,Grade 5,Gifted and Talented,1078,991,107,46.65
-2024-11-28,Northgate Secondary School,Grade 11,Vocational,212,685,94,18.65
-2024-02-13,Lincoln Academy,Grade 1,English Language Learner,1096,271,94,85.09
-2024-10-24,Northgate Secondary School,Grade 9,Gifted and Talented,324,280,70,9.28
-2024-03-29,Riverside Elementary,Grade 11,Vocational,1669,668,73,59.29
-2025-02-15,Northgate Secondary School,Grade 11,Gifted and Talented,773,1499,195,55.03
-2024-09-20,Oakwood Middle School,Grade 1,Vocational,1376,1454,54,59.71
-2025-01-09,Northgate Secondary School,Grade 3,Vocational,482,604,90,96.38
-2025-02-04,Riverside Elementary,Grade 3,English Language Learner,1654,29,94,55.34
-2024-03-08,Oakwood Middle School,Grade 5,Vocational,1241,510,289,82.12
-2024-10-11,Maple Grove High School,Grade 5,Special Needs,1474,1642,72,46.48
-2025-06-03,Northgate Secondary School,Grade 9,English Language Learner,1095,187,13,72.59
-2024-11-05,Hillcrest Primary,Grade 11,General Education,1679,1095,194,63.01
-2024-11-07,Hillcrest Primary,Grade 5,Vocational,268,114,286,9.62
-2024-03-31,Northgate Secondary School,Grade 1,Special Needs,120,678,28,83.74
-2024-06-22,Hillcrest Primary,Kindergarten,English Language Learner,630,1636,115,41.79
-2025-03-20,Lincoln Academy,Grade 7,Gifted and Talented,981,520,168,29.81
-2024-06-22,Oakwood Middle School,Grade 5,Special Needs,1462,672,38,0.36
-2024-09-26,Lincoln Academy,Kindergarten,English Language Learner,103,988,261,9.51
-2025-05-31,Riverside Elementary,Grade 5,Gifted and Talented,698,1373,232,37.15
-2024-08-30,Maple Grove High School,Grade 11,Special Needs,1296,1321,85,68.38
-2024-02-03,Lincoln Academy,Kindergarten,Gifted and Talented,486,1077,30,41.38
-2024-12-18,Northgate Secondary School,Kindergarten,English Language Learner,123,1030,196,62.73
-2024-04-02,Riverside Elementary,Grade 9,Gifted and Talented,1673,915,88,31.28
-2024-07-16,Lincoln Academy,Grade 9,Vocational,1100,391,286,45.69
-2024-06-08,Northgate Secondary School,Grade 3,General Education,1130,1010,136,31.55
-2024-05-31,Northgate Secondary School,Grade 11,Special Needs,1622,847,93,79.02
-2024-11-05,Hillcrest Primary,Grade 5,English Language Learner,868,968,68,7.97
-2025-05-18,Hillcrest Primary,Grade 1,Special Needs,1463,1123,23,10.67
-2025-05-30,Maple Grove High School,Grade 5,General Education,975,1689,76,40.7
-2024-03-27,Hillcrest Primary,Grade 11,Special Needs,1188,1295,224,37.08
-2024-11-10,Lincoln Academy,Grade 11,Special Needs,791,223,196,75.63
-2025-02-17,Riverside Elementary,Grade 1,General Education,73,783,185,7.31
-2024-08-25,Lincoln Academy,Grade 5,Gifted and Talented,748,243,106,89.55
-2024-12-13,Northgate Secondary School,Grade 1,Vocational,1386,693,218,89.25
-2024-04-16,Riverside Elementary,Grade 7,General Education,823,244,156,54.52
-2024-05-25,Lincoln Academy,Grade 7,General Education,807,475,184,4.04
-2024-01-29,Lincoln Academy,Grade 5,General Education,1404,1548,227,49.58
-2024-06-29,Northgate Secondary School,Grade 7,Gifted and Talented,1707,1707,41,3.82
-2025-01-06,Lincoln Academy,Grade 7,Special Needs,472,551,218,15.9
-2025-06-12,Maple Grove High School,Grade 5,Vocational,973,595,192,20.95
-2024-02-12,Riverside Elementary,Grade 5,Special Needs,864,1596,242,13.57
-2025-03-26,Oakwood Middle School,Grade 11,Gifted and Talented,361,1770,69,83.81
-2025-03-06,Lincoln Academy,Grade 3,Special Needs,1055,187,92,77.06
-2024-12-04,Riverside Elementary,Grade 5,Gifted and Talented,1216,1747,293,28.38
-2025-03-29,Northgate Secondary School,Grade 5,General Education,257,778,281,31.13
-2025-05-12,Riverside Elementary,Grade 3,General Education,427,526,165,8.6
-2024-09-08,Hillcrest Primary,Grade 7,English Language Learner,782,586,146,71.78
-2025-04-22,Oakwood Middle School,Grade 5,General Education,1254,1229,120,60.28
-2024-09-10,Lincoln Academy,Grade 5,Vocational,555,289,123,44.56
-2024-06-19,Maple Grove High School,Grade 1,General Education,1456,89,239,5.76
-2025-03-18,Maple Grove High School,Grade 1,English Language Learner,649,641,132,17.15
-2024-10-31,Northgate Secondary School,Grade 1,Special Needs,864,724,267,16.0
-2024-09-30,Oakwood Middle School,Grade 1,English Language Learner,1334,251,230,36.43
-2025-06-10,Lincoln Academy,Kindergarten,English Language Learner,1550,1509,138,50.41
-2024-04-22,Lincoln Academy,Grade 5,English Language Learner,155,1749,286,90.26
-2024-07-25,Maple Grove High School,Grade 9,Vocational,477,317,64,1.86
-2024-09-03,Riverside Elementary,Grade 9,Vocational,638,580,187,32.43
-2024-10-24,Lincoln Academy,Grade 1,Vocational,1601,939,297,27.91
-2024-06-21,Northgate Secondary School,Kindergarten,General Education,654,522,299,93.62
-2024-04-07,Maple Grove High School,Grade 3,Special Needs,173,1277,97,55.25
-2025-02-11,Hillcrest Primary,Kindergarten,Vocational,812,539,255,33.18
-2025-01-14,Hillcrest Primary,Grade 1,Gifted and Talented,854,1525,66,75.71
-2024-03-24,Maple Grove High School,Grade 5,Gifted and Talented,1316,25,278,80.2
-2025-01-28,Maple Grove High School,Grade 1,Gifted and Talented,1388,79,257,41.15
-2025-02-23,Lincoln Academy,Grade 5,English Language Learner,833,804,14,35.18
-2024-08-27,Lincoln Academy,Grade 7,General Education,917,139,31,28.36
-2025-01-02,Northgate Secondary School,Grade 1,Special Needs,325,743,126,12.79
-2024-03-10,Northgate Secondary School,Grade 7,English Language Learner,467,282,283,13.18
-2024-02-25,Riverside Elementary,Grade 7,Gifted and Talented,437,904,69,35.45
-2025-01-12,Maple Grove High School,Kindergarten,General Education,1584,1089,286,27.54
-2024-12-31,Lincoln Academy,Grade 11,General Education,639,440,63,8.19
-2025-03-21,Riverside Elementary,Grade 1,English Language Learner,995,1566,83,46.69
-2025-05-04,Northgate Secondary School,Grade 3,Special Needs,81,745,197,60.6
-2025-02-22,Maple Grove High School,Grade 1,Gifted and Talented,725,1792,153,39.12
-2024-12-29,Maple Grove High School,Grade 11,General Education,1168,346,105,78.72
-2025-03-11,Lincoln Academy,Grade 11,General Education,1344,812,101,18.29
-2024-09-06,Maple Grove High School,Kindergarten,Vocational,1465,392,299,58.8
-2025-01-14,Maple Grove High School,Grade 1,Special Needs,99,1288,15,80.18
-2025-05-04,Northgate Secondary School,Grade 7,Vocational,908,1046,282,97.59
-2024-04-15,Maple Grove High School,Grade 11,Special Needs,768,1577,138,29.43
-2025-05-28,Northgate Secondary School,Grade 1,Vocational,1169,1040,269,2.58
-2024-04-20,Northgate Secondary School,Grade 3,Vocational,1213,491,117,35.61
-2024-05-14,Riverside Elementary,Kindergarten,English Language Learner,692,145,16,16.39
-2024-04-28,Northgate Secondary School,Grade 1,Special Needs,1314,935,49,76.45
-2024-08-22,Oakwood Middle School,Grade 1,Gifted and Talented,653,164,292,78.82
-2024-01-10,Hillcrest Primary,Grade 5,Gifted and Talented,1569,3,230,96.38
-2024-04-23,Northgate Secondary School,Grade 11,English Language Learner,44,254,112,37.49
-2025-03-16,Lincoln Academy,Grade 7,Gifted and Talented,627,215,132,95.33
-2024-08-30,Oakwood Middle School,Grade 1,English Language Learner,152,1701,82,36.22
-2024-11-05,Riverside Elementary,Grade 7,Gifted and Talented,895,376,104,51.08
-2024-11-22,Maple Grove High School,Grade 1,Gifted and Talented,67,1275,242,66.05
-2024-06-23,Northgate Secondary School,Kindergarten,Vocational,1152,333,53,47.8
-2024-07-13,Lincoln Academy,Grade 1,Gifted and Talented,312,749,223,34.16
-2025-06-01,Oakwood Middle School,Grade 3,English Language Learner,58,1033,50,29.67
-2024-06-24,Riverside Elementary,Grade 7,General Education,587,759,70,25.91
-2025-02-15,Oakwood Middle School,Grade 11,Vocational,59,611,131,40.84
-2024-12-29,Oakwood Middle School,Grade 1,English Language Learner,1684,586,88,6.63
-2024-03-25,Maple Grove High School,Grade 3,English Language Learner,562,1063,258,12.39
-2024-08-06,Northgate Secondary School,Grade 5,Vocational,1492,1773,270,9.2
-2024-05-24,Lincoln Academy,Grade 3,Special Needs,950,23,226,97.78
-2024-06-15,Hillcrest Primary,Grade 1,English Language Learner,1143,698,3,43.17
-2024-12-18,Hillcrest Primary,Kindergarten,Vocational,1639,1648,205,88.39
-2024-01-16,Maple Grove High School,Grade 5,Special Needs,970,988,250,6.02
-2024-06-06,Hillcrest Primary,Grade 7,Special Needs,188,791,55,62.62
-2025-06-20,Lincoln Academy,Kindergarten,General Education,1294,1771,114,88.76
-2024-06-03,Lincoln Academy,Grade 5,General Education,38,427,299,71.4
-2025-01-10,Maple Grove High School,Grade 9,Gifted and Talented,1397,89,84,22.89
-2025-04-10,Maple Grove High School,Grade 5,Gifted and Talented,888,1646,281,74.17
-2024-06-18,Lincoln Academy,Grade 9,Vocational,1368,965,140,57.42
-2024-05-04,Lincoln Academy,Grade 11,Vocational,924,12,192,7.27
-2024-10-20,Maple Grove High School,Grade 5,English Language Learner,43,212,108,30.63
-2024-03-25,Maple Grove High School,Grade 1,Gifted and Talented,772,1118,94,68.63
-2024-10-20,Northgate Secondary School,Grade 11,English Language Learner,1773,604,37,18.92
-2024-08-15,Lincoln Academy,Kindergarten,Gifted and Talented,418,606,233,54.78
-2025-01-30,Riverside Elementary,Kindergarten,General Education,1073,696,270,36.2
-2024-03-12,Hillcrest Primary,Grade 5,General Education,378,1056,139,89.55
-2024-01-19,Maple Grove High School,Grade 7,Gifted and Talented,1648,1349,219,94.14
-2024-10-20,Lincoln Academy,Grade 5,Vocational,655,74,283,49.9
-2024-08-07,Riverside Elementary,Grade 3,Vocational,1348,481,178,59.25
-2024-01-23,Maple Grove High School,Kindergarten,Special Needs,145,911,7,79.57
-2024-05-15,Lincoln Academy,Grade 9,Special Needs,1087,1310,110,83.53
-2024-09-24,Oakwood Middle School,Grade 9,Gifted and Talented,567,388,291,69.17
-2024-03-23,Hillcrest Primary,Grade 1,Gifted and Talented,1404,532,53,31.09
-2025-05-22,Oakwood Middle School,Grade 7,English Language Learner,504,575,201,3.94
-2024-10-13,Northgate Secondary School,Grade 7,English Language Learner,687,379,171,18.26
-2025-01-19,Oakwood Middle School,Grade 11,Special Needs,1710,928,42,20.73
-2025-04-22,Northgate Secondary School,Grade 5,Gifted and Talented,27,1040,12,34.39
-2025-01-03,Oakwood Middle School,Kindergarten,English Language Learner,760,1281,43,22.53
-2024-08-07,Oakwood Middle School,Grade 11,Special Needs,610,632,73,1.6
-2024-05-29,Northgate Secondary School,Kindergarten,Special Needs,516,1519,56,42.83
-2024-11-19,Lincoln Academy,Grade 11,Special Needs,860,1714,44,82.28
-2025-02-13,Lincoln Academy,Kindergarten,General Education,1796,1431,29,41.81
-2024-11-01,Riverside Elementary,Grade 3,Vocational,1128,1349,190,91.32
-2024-01-20,Oakwood Middle School,Grade 3,Gifted and Talented,1152,122,13,94.47
-2025-01-06,Oakwood Middle School,Kindergarten,General Education,1323,263,14,19.01
-2024-01-02,Lincoln Academy,Grade 9,Vocational,1736,1090,182,25.15
-2024-07-18,Northgate Secondary School,Grade 5,General Education,571,677,232,50.8
-2025-02-21,Northgate Secondary School,Kindergarten,Special Needs,1578,822,287,94.08
-2024-05-02,Riverside Elementary,Grade 1,Gifted and Talented,1369,1512,26,22.58
-2024-04-30,Oakwood Middle School,Grade 9,Gifted and Talented,1766,1499,81,73.96
-2025-01-23,Lincoln Academy,Grade 11,Gifted and Talented,34,331,152,96.1
-2025-03-01,Lincoln Academy,Grade 3,English Language Learner,839,1503,189,85.13
-2024-01-02,Lincoln Academy,Grade 7,Gifted and Talented,1015,1729,70,69.52
-2024-01-11,Lincoln Academy,Grade 3,English Language Learner,858,1510,124,91.82
-2024-08-15,Northgate Secondary School,Kindergarten,Special Needs,1174,774,252,49.6
-2025-01-14,Oakwood Middle School,Grade 3,Gifted and Talented,1361,337,160,35.46
-2025-04-06,Maple Grove High School,Grade 9,Vocational,93,84,4,96.98
-2025-04-29,Northgate Secondary School,Grade 1,Vocational,1259,1490,145,43.96
-2024-11-11,Riverside Elementary,Grade 11,Vocational,1791,696,57,73.4
-2024-07-20,Riverside Elementary,Grade 3,Special Needs,1132,638,70,99.72
-2025-06-23,Maple Grove High School,Grade 1,Special Needs,328,1252,100,84.75
-2025-01-05,Lincoln Academy,Grade 11,English Language Learner,1164,968,170,68.34
-2025-05-31,Hillcrest Primary,Grade 11,Special Needs,1379,1311,68,62.05
-2024-01-16,Lincoln Academy,Grade 7,English Language Learner,1358,144,225,24.82
-2024-04-25,Hillcrest Primary,Grade 3,General Education,935,612,261,69.8
-2024-08-16,Maple Grove High School,Grade 9,Vocational,187,648,117,99.27
-2024-05-12,Hillcrest Primary,Grade 9,Special Needs,943,1241,94,99.32
-2024-08-19,Lincoln Academy,Grade 9,Vocational,839,1495,17,76.77
-2025-01-15,Northgate Secondary School,Grade 3,General Education,982,378,261,45.49
-2024-08-31,Riverside Elementary,Grade 5,Gifted and Talented,1765,1134,183,62.51
-2024-12-22,Oakwood Middle School,Grade 9,Gifted and Talented,828,798,226,57.81
-2024-12-08,Northgate Secondary School,Grade 1,Vocational,1544,1522,77,87.6
-2024-03-28,Hillcrest Primary,Grade 7,Gifted and Talented,1634,1051,142,42.89
-2024-03-16,Lincoln Academy,Grade 11,Special Needs,1136,1259,291,83.02
-2024-10-20,Northgate Secondary School,Grade 11,Vocational,406,1189,192,31.34
-2024-01-13,Riverside Elementary,Grade 3,Special Needs,885,1547,186,80.7
-2025-01-16,Oakwood Middle School,Grade 11,English Language Learner,354,955,160,51.81
-2024-01-25,Riverside Elementary,Grade 7,English Language Learner,1640,326,91,92.71
-2024-11-30,Riverside Elementary,Grade 9,Vocational,687,410,218,23.75
-2024-10-18,Northgate Secondary School,Grade 11,Special Needs,1519,789,259,93.62
-2024-09-23,Oakwood Middle School,Kindergarten,Vocational,1654,880,48,93.32
-2024-09-25,Hillcrest Primary,Kindergarten,English Language Learner,149,542,148,84.04
-2025-02-08,Riverside Elementary,Grade 5,Special Needs,249,944,81,15.61
-2025-04-11,Lincoln Academy,Grade 9,Gifted and Talented,342,604,135,2.48
-2024-03-05,Oakwood Middle School,Grade 5,English Language Learner,677,546,263,64.5
-2024-07-26,Oakwood Middle School,Grade 5,Vocational,331,1498,272,89.61
-2024-04-25,Riverside Elementary,Grade 11,Gifted and Talented,157,1710,182,72.02
-2024-02-20,Northgate Secondary School,Grade 7,General Education,1574,286,36,52.46
-2024-03-30,Northgate Secondary School,Grade 3,Gifted and Talented,1051,179,175,37.99
-2025-04-06,Northgate Secondary School,Grade 7,Vocational,75,1345,96,0.92
-2024-04-07,Oakwood Middle School,Grade 11,English Language Learner,430,1734,7,3.98
-2025-05-29,Oakwood Middle School,Grade 7,English Language Learner,37,1101,208,1.59
-2025-04-23,Lincoln Academy,Grade 1,Gifted and Talented,1651,392,48,72.64
-2025-05-29,Maple Grove High School,Grade 3,Special Needs,1203,1321,155,23.1
-2025-06-03,Maple Grove High School,Grade 9,General Education,793,396,286,91.24
-2024-11-11,Maple Grove High School,Grade 5,Special Needs,475,1741,144,2.79
-2024-02-08,Hillcrest Primary,Grade 9,English Language Learner,541,341,211,13.47
-2024-02-21,Hillcrest Primary,Grade 5,General Education,451,652,142,74.43
-2025-03-27,Oakwood Middle School,Grade 5,Gifted and Talented,655,1063,3,78.06
-2025-05-30,Hillcrest Primary,Grade 5,English Language Learner,1592,85,124,64.15
-2025-02-23,Hillcrest Primary,Grade 11,Special Needs,231,519,178,47.08
-2024-09-16,Riverside Elementary,Grade 1,English Language Learner,1025,780,29,28.2
-2024-05-28,Maple Grove High School,Grade 1,Gifted and Talented,48,1658,218,55.02
-2024-07-12,Northgate Secondary School,Grade 11,General Education,690,866,261,44.13
+application_submitted_date,application_stage,application_source,application_department,application_interview_count,application_days_in_pipeline,application_offer_salary
+2025-05-20,Withdrawn,Referral,Operations,4,4,184193.35
+2025-05-19,Phone Interview,Careers Page,Customer Success,6,38,210282.76
+2025-03-27,Applied,Recruiting Agency,Engineering,4,173,223518.92
+2025-02-28,Applied,Careers Page,Customer Success,5,55,44480.71
+2025-05-21,Offer Extended,Careers Page,Engineering,7,149,216485.19
+2025-03-07,Phone Interview,Campus Event,Operations,3,49,56344.43
+2024-09-08,Offer Accepted,Campus Event,Operations,8,146,220607.25
+2024-11-04,Offer Extended,Job Board,Marketing,6,150,106559.88
+2024-09-29,Withdrawn,Careers Page,Customer Success,6,84,161110.21
+2024-06-22,Applied,Referral,Sales,5,164,151923.38
+2024-08-26,Applied,Campus Event,Marketing,1,128,246783.99
+2025-04-22,Withdrawn,Careers Page,Operations,3,16,81671.6
+2024-01-15,Rejected,LinkedIn,Marketing,8,6,210610.55
+2025-06-14,Applied,Referral,Marketing,4,28,96225.76
+2025-04-03,Rejected,Referral,Engineering,2,9,201635.55
+2024-01-12,Onsite Interview,LinkedIn,Marketing,4,21,70550.19
+2024-10-17,Rejected,Referral,Operations,1,16,127776.27
+2024-01-05,Withdrawn,Job Board,Sales,6,5,84238.28
+2025-04-19,Withdrawn,LinkedIn,Sales,5,134,217573.97
+2024-03-10,Phone Interview,LinkedIn,Operations,1,91,61204.8
+2024-08-18,Offer Accepted,Campus Event,Marketing,4,129,113689.55
+2025-04-06,Onsite Interview,Careers Page,Sales,5,46,46308.35
+2025-01-20,Offer Extended,Recruiting Agency,Engineering,3,101,155170.91
+2024-02-14,Phone Interview,Job Board,Sales,4,142,96040.22
+2024-12-04,Phone Interview,LinkedIn,Operations,7,24,233749.38
+2024-01-20,Applied,Job Board,Customer Success,1,18,43233.91
+2025-06-10,Onsite Interview,Job Board,Human Resources,4,111,201528.34
+2024-04-29,Withdrawn,Campus Event,Operations,3,52,258599.28
+2025-05-03,Phone Interview,Job Board,Finance,6,32,166667.08
+2025-02-19,Offer Accepted,LinkedIn,Marketing,4,152,65229.19
+2024-12-08,Screening,Recruiting Agency,Operations,8,20,237581.2
+2024-12-22,Applied,Job Board,Customer Success,1,8,211080.21
+2024-12-24,Withdrawn,Careers Page,Engineering,7,139,215448.83
+2025-03-05,Onsite Interview,Careers Page,Human Resources,3,1,178618.05
+2025-05-10,Offer Extended,LinkedIn,Sales,3,33,140325.98
+2024-03-12,Offer Accepted,LinkedIn,Finance,6,12,128349.23
+2024-05-11,Offer Accepted,Recruiting Agency,Customer Success,1,159,174466.05
+2024-11-17,Onsite Interview,Job Board,Finance,2,30,205955.82
+2025-03-06,Rejected,Campus Event,Marketing,7,160,250987.14
+2024-10-19,Rejected,Careers Page,Customer Success,7,180,59115.33
+2024-05-09,Screening,Careers Page,Human Resources,6,127,226681.29
+2024-10-30,Phone Interview,Job Board,Finance,7,86,74542.17
+2025-02-18,Screening,Campus Event,Finance,6,148,61305.1
+2025-05-17,Rejected,Campus Event,Human Resources,6,54,113875.76
+2024-04-05,Onsite Interview,LinkedIn,Finance,7,39,199394.72
+2024-12-31,Phone Interview,Campus Event,Engineering,4,54,248362.81
+2025-05-08,Screening,Referral,Engineering,4,104,106534.7
+2025-03-03,Phone Interview,Job Board,Sales,5,98,190288.01
+2025-06-13,Offer Accepted,Recruiting Agency,Operations,7,174,178978.61
+2024-04-30,Offer Extended,Careers Page,Customer Success,5,116,152806.17
+2024-12-18,Offer Extended,LinkedIn,Operations,2,74,154208.98
+2024-05-30,Phone Interview,Referral,Engineering,7,107,237913.34
+2025-03-13,Offer Accepted,Campus Event,Engineering,2,36,182803.54
+2025-04-21,Phone Interview,Careers Page,Human Resources,0,156,61434.03
+2024-08-13,Offer Accepted,Referral,Sales,1,62,79795.06
+2025-04-12,Screening,Campus Event,Engineering,8,70,112425.63
+2025-05-21,Phone Interview,Recruiting Agency,Marketing,3,11,233265.57
+2025-04-02,Offer Extended,Recruiting Agency,Operations,3,83,177948.45
+2024-10-01,Onsite Interview,Recruiting Agency,Engineering,4,11,170850.85
+2024-01-23,Offer Extended,Job Board,Marketing,8,83,48554.63
+2024-05-04,Onsite Interview,Job Board,Customer Success,8,47,128264.9
+2024-02-03,Onsite Interview,Campus Event,Sales,2,127,152041.1
+2025-03-24,Screening,Careers Page,Customer Success,3,153,146272.95
+2025-06-23,Offer Extended,LinkedIn,Finance,6,122,107196.05
+2025-04-12,Applied,LinkedIn,Marketing,6,159,184022.9
+2024-12-28,Applied,Campus Event,Marketing,7,124,201128.53
+2025-05-14,Screening,Campus Event,Marketing,5,43,115542.55
+2024-07-19,Screening,Referral,Sales,4,164,111425.19
+2024-02-22,Applied,Campus Event,Marketing,1,61,131920.92
+2025-05-05,Offer Extended,Careers Page,Human Resources,7,27,107353.25
+2025-05-17,Applied,Referral,Operations,1,132,235393.66
+2025-04-27,Offer Extended,Job Board,Engineering,4,60,231390.03
+2024-05-27,Applied,Campus Event,Customer Success,3,19,52832.21
+2024-03-06,Offer Extended,Referral,Sales,1,37,246141.28
+2024-04-09,Applied,Job Board,Operations,2,102,214980.5
+2024-11-21,Applied,Careers Page,Engineering,5,153,205454.32
+2024-08-05,Onsite Interview,Recruiting Agency,Customer Success,1,61,207408.81
+2024-09-24,Withdrawn,Campus Event,Human Resources,1,106,114257.88
+2024-01-09,Applied,Referral,Marketing,1,66,173853.06
+2024-11-04,Offer Accepted,Job Board,Human Resources,6,139,156130.21
+2024-08-29,Withdrawn,LinkedIn,Marketing,2,58,78440.08
+2025-05-25,Onsite Interview,Campus Event,Operations,7,168,40570.38
+2024-10-14,Offer Accepted,Referral,Finance,3,136,42675.48
+2024-04-03,Offer Extended,Job Board,Engineering,3,105,140482.65
+2024-10-24,Offer Accepted,Referral,Sales,3,72,171672.67
+2024-10-13,Offer Accepted,Recruiting Agency,Sales,0,93,174745.85
+2024-01-18,Offer Accepted,LinkedIn,Customer Success,1,51,201694.83
+2024-10-27,Offer Extended,Referral,Finance,7,145,200544.94
+2025-03-17,Screening,Referral,Marketing,6,62,150920.1
+2025-01-06,Offer Extended,Referral,Customer Success,0,102,222448.68
+2024-04-20,Offer Accepted,Job Board,Sales,7,50,114551.1
+2024-02-25,Offer Accepted,Referral,Finance,6,121,119911.69
+2024-11-25,Withdrawn,Referral,Marketing,1,178,95518.08
+2024-07-04,Rejected,Recruiting Agency,Finance,1,105,68819.74
+2024-09-22,Rejected,Referral,Operations,4,13,114162.62
+2025-01-27,Screening,Referral,Human Resources,7,153,64947.87
+2024-04-17,Onsite Interview,Careers Page,Operations,6,159,206862.51
+2025-03-28,Onsite Interview,Recruiting Agency,Operations,3,150,198677.84
+2024-02-21,Phone Interview,Campus Event,Operations,8,76,212139.3
+2024-05-18,Rejected,Referral,Marketing,8,166,95524.98
+2024-04-03,Offer Accepted,Referral,Marketing,1,124,120368.72
+2025-05-29,Onsite Interview,Campus Event,Customer Success,3,99,153517.1
+2024-04-19,Screening,Campus Event,Marketing,6,82,171516.91
+2024-08-10,Phone Interview,Job Board,Marketing,3,109,123629.64
+2024-11-26,Phone Interview,Recruiting Agency,Marketing,5,26,49461.59
+2024-10-23,Screening,Recruiting Agency,Finance,3,112,239743.31
+2024-12-12,Phone Interview,Referral,Sales,6,171,254103.8
+2025-01-23,Withdrawn,Recruiting Agency,Finance,3,153,118939.61
+2025-01-29,Screening,LinkedIn,Human Resources,2,149,106941.65
+2024-08-12,Phone Interview,Referral,Finance,5,162,244494.91
+2024-12-07,Offer Accepted,Referral,Finance,6,57,168408.47
+2024-04-21,Withdrawn,LinkedIn,Engineering,2,138,234500.51
+2024-05-04,Applied,Job Board,Sales,3,99,142131.41
+2025-05-01,Offer Extended,Careers Page,Human Resources,1,96,87885.69
+2024-03-20,Offer Accepted,Recruiting Agency,Engineering,7,112,203022.78
+2024-12-02,Offer Extended,Job Board,Engineering,4,118,129791.45
+2024-10-08,Withdrawn,LinkedIn,Finance,2,163,184589.13
+2024-05-29,Onsite Interview,Referral,Marketing,3,16,150282.3
+2025-05-01,Withdrawn,Job Board,Finance,3,13,194000.53
+2024-11-08,Screening,Job Board,Finance,2,57,96819.05
+2025-06-22,Screening,Job Board,Finance,4,175,149481.57
+2024-01-04,Phone Interview,Job Board,Human Resources,1,180,100140.78
+2024-02-21,Offer Extended,LinkedIn,Engineering,4,56,255826.09
+2024-02-19,Offer Accepted,Recruiting Agency,Customer Success,4,42,200337.57
+2024-01-13,Rejected,Job Board,Customer Success,2,51,56482.35
+2025-06-08,Rejected,Job Board,Marketing,5,42,45759.97
+2025-03-13,Offer Accepted,Referral,Sales,6,70,51011.05
+2025-04-01,Withdrawn,Careers Page,Sales,6,12,195948.8
+2024-06-15,Rejected,Campus Event,Sales,2,80,46646.65
+2024-12-19,Withdrawn,Recruiting Agency,Marketing,4,20,108179.6
+2025-03-02,Applied,Referral,Sales,1,4,216050.47
+2025-05-10,Rejected,Referral,Finance,5,112,62560.33
+2025-03-08,Offer Extended,Recruiting Agency,Sales,7,54,64335.02
+2025-05-01,Offer Extended,Recruiting Agency,Marketing,5,115,91111.71
+2024-12-17,Applied,LinkedIn,Finance,1,82,184743.8
+2024-07-11,Phone Interview,LinkedIn,Engineering,1,112,171738.92
+2024-10-31,Withdrawn,Recruiting Agency,Engineering,2,65,124184.34
+2024-01-13,Phone Interview,Campus Event,Human Resources,6,59,206510.02
+2024-04-07,Rejected,Campus Event,Customer Success,3,60,167937.34
+2024-10-19,Screening,Job Board,Engineering,6,121,114189.1
+2024-02-01,Offer Accepted,Careers Page,Marketing,0,81,251809.6
+2024-10-08,Offer Extended,Careers Page,Engineering,8,106,42914.81
+2024-03-17,Withdrawn,Careers Page,Marketing,3,103,84058.79
+2024-10-01,Applied,Campus Event,Sales,7,20,231699.16
+2024-03-09,Onsite Interview,Careers Page,Marketing,2,37,163308.04
+2024-03-15,Offer Accepted,Job Board,Engineering,2,2,47522.79
+2024-06-27,Phone Interview,Referral,Customer Success,7,178,192263.09
+2024-09-29,Offer Extended,LinkedIn,Finance,6,16,212146.54
+2024-01-15,Applied,Recruiting Agency,Finance,3,44,180494.22
+2025-01-23,Offer Accepted,LinkedIn,Operations,4,171,113555.0
+2024-02-09,Phone Interview,LinkedIn,Finance,3,132,112362.04
+2024-09-16,Offer Accepted,Job Board,Human Resources,5,41,231794.28
+2025-05-05,Withdrawn,Recruiting Agency,Finance,6,138,244980.65
+2024-02-13,Offer Accepted,Referral,Operations,0,141,246210.01
+2024-01-19,Withdrawn,Campus Event,Marketing,3,79,225905.44
+2024-09-27,Offer Accepted,Campus Event,Marketing,5,41,182234.56
+2024-11-24,Screening,LinkedIn,Customer Success,7,47,136130.08
+2025-02-09,Applied,Campus Event,Operations,1,81,53107.3
+2025-04-24,Onsite Interview,LinkedIn,Operations,4,166,131980.07
+2024-09-10,Applied,Job Board,Customer Success,7,22,169341.77
+2024-12-22,Offer Extended,Careers Page,Operations,6,59,224422.18
+2024-04-14,Withdrawn,Recruiting Agency,Engineering,6,76,147614.1
+2024-01-17,Offer Extended,Job Board,Marketing,3,84,128856.17
+2024-03-31,Withdrawn,LinkedIn,Finance,4,138,163558.54
+2024-06-25,Withdrawn,Referral,Sales,1,120,199475.53
+2025-05-17,Offer Accepted,Careers Page,Human Resources,3,117,219613.38
+2024-12-04,Applied,Recruiting Agency,Marketing,5,7,214282.92
+2025-06-18,Applied,LinkedIn,Operations,1,67,188469.5
+2024-04-18,Screening,Careers Page,Operations,2,29,231156.31
+2024-12-30,Applied,Campus Event,Human Resources,2,47,120347.39
+2025-03-21,Screening,Campus Event,Marketing,4,11,54686.64
+2024-06-13,Applied,Careers Page,Marketing,3,100,181818.42
+2025-01-09,Offer Extended,Careers Page,Finance,7,58,180781.08
+2025-03-03,Onsite Interview,Referral,Finance,7,116,187562.28
+2024-02-28,Rejected,Careers Page,Human Resources,5,115,207802.46
+2025-03-03,Onsite Interview,LinkedIn,Customer Success,2,43,250103.92
+2024-12-05,Offer Accepted,Careers Page,Human Resources,4,20,144853.42
+2024-03-28,Withdrawn,Referral,Customer Success,4,16,65529.52
+2024-11-28,Offer Accepted,Job Board,Finance,1,101,164361.72
+2024-09-30,Phone Interview,Careers Page,Marketing,1,180,253379.13
+2025-04-30,Offer Extended,LinkedIn,Customer Success,5,10,57479.54
+2024-11-28,Withdrawn,Referral,Customer Success,5,135,118738.91
+2025-01-22,Offer Extended,Recruiting Agency,Marketing,3,44,238021.48
+2024-12-03,Offer Extended,Careers Page,Engineering,1,179,51496.08
+2024-12-19,Withdrawn,Referral,Customer Success,4,114,114921.47
+2025-03-27,Offer Accepted,Job Board,Sales,5,45,84739.19
+2024-09-26,Rejected,Careers Page,Customer Success,5,71,145690.62
+2025-06-11,Onsite Interview,Job Board,Marketing,6,58,69191.51
+2024-02-04,Onsite Interview,Campus Event,Human Resources,4,49,125353.75
+2024-04-27,Offer Accepted,Referral,Sales,8,137,92484.26
+2024-11-21,Screening,Campus Event,Finance,7,8,48244.58
+2025-03-02,Onsite Interview,Referral,Operations,6,106,226177.87
+2025-05-08,Screening,LinkedIn,Human Resources,1,33,151416.17
+2025-01-05,Offer Extended,LinkedIn,Customer Success,8,16,245323.18
+2024-11-05,Phone Interview,Careers Page,Marketing,1,75,64802.94
+2024-07-22,Rejected,Recruiting Agency,Customer Success,6,48,45300.62
+2024-12-31,Rejected,Recruiting Agency,Customer Success,6,81,205319.07
+2024-11-17,Screening,Careers Page,Finance,5,147,87747.15
+2025-05-22,Phone Interview,Referral,Human Resources,8,133,93852.62
+2025-06-03,Offer Accepted,Referral,Operations,7,32,87485.72
+2025-02-20,Offer Accepted,Referral,Finance,3,96,137206.76
+2025-03-31,Withdrawn,Campus Event,Customer Success,3,51,183549.71
+2024-04-30,Applied,Job Board,Marketing,6,109,124594.96
+2025-05-23,Screening,Job Board,Customer Success,1,46,46206.91
+2024-05-16,Applied,LinkedIn,Customer Success,5,168,177627.18
+2024-01-01,Rejected,Referral,Marketing,6,83,44639.1
+2024-08-27,Offer Accepted,Recruiting Agency,Operations,5,62,110360.17
+2025-05-05,Withdrawn,Job Board,Operations,3,149,138050.01
+2024-11-30,Screening,Campus Event,Engineering,3,35,242244.73
+2024-10-10,Rejected,Referral,Engineering,6,50,256675.02
+2025-02-10,Screening,Referral,Marketing,3,85,232911.82
+2025-04-03,Phone Interview,Recruiting Agency,Human Resources,4,23,107086.74
+2025-02-05,Offer Extended,Referral,Sales,0,111,214824.83
+2024-06-17,Rejected,Job Board,Engineering,4,5,84600.92
+2024-03-15,Onsite Interview,Campus Event,Sales,3,101,202174.4
+2024-08-09,Offer Extended,Job Board,Marketing,1,154,96913.12
+2025-04-02,Screening,Job Board,Customer Success,1,171,150620.43
+2024-10-13,Offer Accepted,LinkedIn,Operations,6,41,150986.33
+2025-05-31,Applied,LinkedIn,Sales,0,81,153222.36
+2025-03-20,Onsite Interview,Recruiting Agency,Sales,6,59,224306.44
+2024-10-07,Offer Accepted,Recruiting Agency,Customer Success,6,91,96563.78
+2025-06-05,Offer Accepted,Campus Event,Marketing,4,68,159763.93
+2024-02-28,Rejected,Careers Page,Marketing,3,173,167556.65
+2025-01-16,Offer Accepted,Careers Page,Finance,5,164,109551.64
+2025-03-23,Onsite Interview,Recruiting Agency,Finance,7,138,218688.77
+2025-04-11,Screening,Job Board,Finance,0,40,124177.75
+2024-04-16,Onsite Interview,Job Board,Marketing,3,107,124868.05
+2024-12-23,Withdrawn,Campus Event,Human Resources,8,71,71708.74
+2024-06-04,Onsite Interview,Referral,Customer Success,1,22,244981.94
+2024-12-13,Offer Accepted,LinkedIn,Operations,0,59,126949.2
+2025-02-08,Withdrawn,Careers Page,Sales,5,57,40453.02
+2024-07-20,Rejected,Job Board,Finance,5,160,217189.39
+2025-02-21,Withdrawn,Careers Page,Sales,1,159,200595.84
+2024-02-21,Onsite Interview,Referral,Finance,5,150,168983.47
+2024-01-13,Screening,LinkedIn,Customer Success,4,72,242991.93
+2025-05-10,Withdrawn,Job Board,Human Resources,7,102,174394.2
+2024-09-26,Offer Extended,Careers Page,Human Resources,8,128,142330.03
+2025-02-20,Withdrawn,Careers Page,Customer Success,2,123,258041.56
+2024-10-30,Rejected,Job Board,Sales,3,19,244473.52
+2024-04-08,Applied,Recruiting Agency,Operations,1,149,45599.25

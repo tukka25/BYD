@@ -1,241 +1,241 @@
-qc_defect_detected_date,qc_defect_category,qc_defect_severity,qc_production_line,qc_defect_count,qc_scrap_cost_usd,qc_rework_hours
-2024-06-16,Surface Finish,Major,Line 4,146,6961.59,4.37
-2024-04-30,Surface Finish,Critical,Line 6,218,4600.32,92.3
-2024-06-12,Dimensional,Critical,Line 2,104,13302.88,7.36
-2024-10-07,Assembly,Minor,Line 4,242,8944.55,53.93
-2024-09-30,Electrical,Major,Line 2,138,2016.69,40.65
-2024-02-13,Packaging,Critical,Line 3,154,1122.96,59.3
-2025-04-05,Dimensional,Critical,Line 5,80,10714.69,81.28
-2024-11-07,Packaging,Critical,Line 6,223,14184.54,99.52
-2025-02-14,Assembly,Minor,Line 4,191,1088.56,71.74
-2024-02-16,Material,Major,Line 5,48,9819.8,58.7
-2024-11-27,Assembly,Critical,Line 4,122,14926.95,107.76
-2024-09-02,Material,Minor,Line 2,224,12190.71,91.73
-2024-06-12,Assembly,Minor,Line 4,57,8110.29,86.61
-2024-12-26,Surface Finish,Minor,Line 4,92,9073.59,110.94
-2024-07-29,Surface Finish,Critical,Line 5,233,6624.71,2.29
-2024-03-10,Packaging,Minor,Line 2,149,6598.91,19.13
-2025-02-12,Electrical,Minor,Line 4,74,3383.37,12.65
-2025-05-15,Dimensional,Minor,Line 5,221,4312.24,75.83
-2025-04-30,Dimensional,Critical,Line 4,6,2438.83,21.33
-2025-05-18,Surface Finish,Major,Line 4,195,6896.83,80.95
-2024-01-17,Surface Finish,Critical,Line 2,63,14140.89,19.73
-2024-09-13,Assembly,Major,Line 3,51,12132.42,68.87
-2024-05-15,Surface Finish,Major,Line 5,140,6219.08,89.1
-2025-01-19,Electrical,Minor,Line 5,5,12407.25,1.26
-2025-03-21,Dimensional,Major,Line 4,171,524.12,3.4
-2024-03-18,Packaging,Critical,Line 4,121,1192.6,50.99
-2024-06-21,Surface Finish,Critical,Line 4,213,4942.98,59.23
-2024-04-03,Assembly,Minor,Line 3,60,8748.55,73.92
-2024-01-04,Material,Minor,Line 3,159,2497.19,116.42
-2025-02-19,Packaging,Critical,Line 2,153,2282.14,35.08
-2024-06-15,Assembly,Critical,Line 1,175,2463.46,62.95
-2024-07-27,Dimensional,Critical,Line 2,202,9419.03,48.32
-2024-10-06,Dimensional,Major,Line 3,227,1750.47,32.45
-2025-03-20,Surface Finish,Critical,Line 4,17,11455.34,90.31
-2024-05-21,Assembly,Critical,Line 6,245,8844.04,116.7
-2025-05-24,Packaging,Major,Line 1,32,210.17,6.03
-2024-04-09,Packaging,Major,Line 6,113,11488.47,75.08
-2024-04-23,Packaging,Minor,Line 5,41,5950.77,26.88
-2024-05-30,Packaging,Minor,Line 6,196,5415.35,100.86
-2024-12-24,Material,Minor,Line 6,112,8254.54,27.43
-2024-01-16,Surface Finish,Minor,Line 3,202,9365.17,45.09
-2025-01-03,Assembly,Critical,Line 5,235,3123.98,115.73
-2024-09-01,Assembly,Major,Line 6,84,13606.27,69.4
-2025-03-22,Electrical,Major,Line 6,1,1977.82,21.96
-2024-04-02,Material,Minor,Line 2,193,322.32,33.01
-2024-02-29,Assembly,Minor,Line 6,45,12025.89,103.49
-2025-01-29,Assembly,Major,Line 1,99,12465.53,53.92
-2024-01-14,Surface Finish,Minor,Line 4,87,9451.7,92.95
-2024-08-01,Material,Minor,Line 4,180,2145.46,9.05
-2024-06-05,Assembly,Major,Line 2,136,13053.38,51.26
-2024-01-18,Surface Finish,Minor,Line 6,57,8465.35,108.89
-2024-11-30,Assembly,Critical,Line 3,26,7894.26,0.34
-2024-12-12,Packaging,Major,Line 4,154,11116.3,106.38
-2025-05-28,Surface Finish,Critical,Line 5,137,8826.22,0.93
-2024-11-12,Material,Critical,Line 3,79,5587.07,27.28
-2025-05-29,Electrical,Major,Line 4,212,12986.44,86.13
-2024-08-01,Packaging,Critical,Line 6,142,384.58,83.4
-2024-05-27,Material,Minor,Line 1,68,4300.02,92.68
-2024-10-20,Assembly,Major,Line 5,222,9285.46,49.37
-2024-01-22,Dimensional,Critical,Line 5,216,7164.62,29.76
-2024-02-13,Material,Critical,Line 4,102,11060.82,26.81
-2024-01-17,Electrical,Major,Line 1,95,11889.59,25.77
-2025-04-14,Surface Finish,Major,Line 6,72,7068.53,100.98
-2024-08-26,Assembly,Major,Line 2,105,2182.66,15.37
-2024-05-28,Electrical,Minor,Line 3,230,10639.36,33.36
-2024-12-06,Electrical,Major,Line 5,141,8512.57,50.58
-2025-03-27,Surface Finish,Minor,Line 6,126,3348.54,36.92
-2024-03-31,Dimensional,Major,Line 4,101,12067.69,56.04
-2024-09-20,Dimensional,Minor,Line 1,64,9845.44,34.06
-2024-01-31,Surface Finish,Major,Line 6,181,7266.29,5.42
-2025-06-10,Dimensional,Minor,Line 2,178,2334.34,78.4
-2024-02-27,Surface Finish,Critical,Line 3,32,5296.77,96.78
-2024-07-12,Assembly,Minor,Line 4,151,489.52,104.0
-2024-02-18,Material,Minor,Line 5,19,2493.54,6.37
-2024-09-06,Surface Finish,Critical,Line 5,126,10560.42,11.52
-2024-10-21,Electrical,Minor,Line 4,2,12676.34,60.92
-2024-10-10,Surface Finish,Major,Line 2,151,14163.46,47.54
-2025-06-16,Dimensional,Minor,Line 4,218,2878.08,41.38
-2024-11-23,Packaging,Major,Line 5,38,8225.03,12.42
-2024-05-01,Electrical,Critical,Line 6,188,870.37,84.78
-2025-05-21,Dimensional,Major,Line 2,98,1148.75,113.43
-2024-06-27,Surface Finish,Critical,Line 6,59,12144.68,109.18
-2024-12-07,Electrical,Minor,Line 2,239,3086.78,27.88
-2025-03-26,Electrical,Minor,Line 4,58,10902.25,116.53
-2024-12-18,Surface Finish,Critical,Line 1,138,13969.04,54.68
-2025-01-06,Material,Major,Line 1,156,12849.92,8.57
-2024-10-05,Assembly,Minor,Line 1,47,3953.2,59.98
-2024-07-01,Assembly,Minor,Line 5,131,1229.43,20.07
-2025-05-13,Packaging,Critical,Line 4,238,11225.55,71.33
-2025-02-04,Packaging,Minor,Line 6,101,11364.05,102.38
-2024-08-16,Surface Finish,Minor,Line 2,49,58.23,60.41
-2025-02-09,Material,Major,Line 3,132,3417.73,115.81
-2024-06-01,Electrical,Minor,Line 1,67,1572.53,98.39
-2024-04-04,Assembly,Critical,Line 3,213,13238.14,36.93
-2025-04-08,Assembly,Major,Line 2,237,12335.35,47.67
-2024-03-18,Packaging,Major,Line 2,175,11875.2,2.09
-2024-03-26,Assembly,Major,Line 4,108,1792.83,28.99
-2024-08-02,Electrical,Critical,Line 2,244,10697.6,65.17
-2024-06-19,Dimensional,Major,Line 5,160,5879.25,13.16
-2024-09-17,Surface Finish,Minor,Line 6,14,3011.11,47.55
-2024-10-03,Surface Finish,Minor,Line 5,135,6281.96,94.66
-2024-05-26,Packaging,Minor,Line 3,213,1341.9,14.63
-2024-06-26,Dimensional,Minor,Line 5,157,1315.94,49.63
-2025-04-10,Assembly,Major,Line 3,48,4096.81,13.88
-2024-10-01,Assembly,Major,Line 6,164,10261.79,86.0
-2025-06-07,Dimensional,Major,Line 2,149,5169.67,48.26
-2025-01-18,Surface Finish,Major,Line 5,50,4139.77,118.7
-2024-01-11,Surface Finish,Critical,Line 3,37,10044.43,66.06
-2024-09-11,Electrical,Critical,Line 6,135,12349.97,91.03
-2024-01-20,Material,Major,Line 3,98,12140.92,61.55
-2024-09-21,Packaging,Major,Line 5,86,7831.02,36.66
-2024-08-23,Assembly,Critical,Line 4,8,10758.37,117.32
-2024-07-09,Material,Minor,Line 6,78,4734.71,52.06
-2025-03-15,Dimensional,Minor,Line 4,45,14994.43,3.79
-2024-08-31,Surface Finish,Minor,Line 2,57,4987.38,89.75
-2024-05-30,Dimensional,Major,Line 6,133,6187.91,87.45
-2024-10-14,Packaging,Critical,Line 4,43,14788.7,45.69
-2025-01-17,Packaging,Minor,Line 6,57,1561.13,117.18
-2024-09-19,Dimensional,Major,Line 4,213,10572.03,31.27
-2025-02-14,Packaging,Major,Line 1,75,2217.71,31.86
-2024-01-28,Material,Major,Line 4,235,4983.02,109.06
-2025-01-24,Packaging,Major,Line 5,9,7920.61,51.76
-2024-12-13,Surface Finish,Minor,Line 6,69,8185.39,14.01
-2024-02-19,Material,Minor,Line 4,45,1506.64,56.67
-2025-03-16,Material,Minor,Line 3,16,1233.43,96.64
-2024-04-24,Assembly,Minor,Line 6,134,375.74,2.28
-2024-10-19,Assembly,Major,Line 1,49,10726.42,79.04
-2025-06-13,Packaging,Critical,Line 5,49,7660.07,99.78
-2024-06-27,Electrical,Major,Line 4,76,6020.13,63.6
-2025-02-25,Electrical,Minor,Line 4,165,6354.76,33.98
-2024-11-09,Electrical,Minor,Line 5,23,11356.16,113.32
-2025-01-27,Dimensional,Critical,Line 1,102,9448.97,24.02
-2024-05-27,Assembly,Major,Line 1,187,2524.27,100.76
-2024-03-10,Material,Major,Line 5,166,2099.07,97.1
-2025-01-25,Packaging,Minor,Line 2,210,13370.95,68.54
-2024-10-12,Material,Minor,Line 4,96,4238.91,60.3
-2025-06-06,Dimensional,Critical,Line 1,144,3582.85,116.38
-2024-06-04,Surface Finish,Minor,Line 4,89,6941.2,67.33
-2024-07-24,Electrical,Critical,Line 2,87,14646.14,117.12
-2025-04-13,Surface Finish,Major,Line 5,182,4988.2,16.61
-2025-04-08,Assembly,Critical,Line 5,46,10223.92,6.45
-2024-02-12,Material,Minor,Line 1,169,13147.62,63.26
-2024-02-19,Assembly,Critical,Line 5,103,9068.72,35.97
-2025-02-16,Electrical,Critical,Line 3,51,8004.71,117.53
-2024-12-11,Dimensional,Minor,Line 4,143,13448.07,15.36
-2024-04-17,Packaging,Critical,Line 4,243,5353.19,37.69
-2024-07-08,Assembly,Major,Line 2,191,8311.2,69.24
-2024-07-28,Surface Finish,Critical,Line 5,40,9895.53,110.08
-2025-01-08,Surface Finish,Critical,Line 4,157,8637.3,72.83
-2024-06-04,Electrical,Major,Line 6,66,7304.35,73.36
-2024-04-25,Material,Major,Line 1,19,13208.15,60.13
-2024-06-06,Dimensional,Critical,Line 3,240,592.18,37.71
-2024-07-18,Assembly,Minor,Line 5,138,8090.79,33.87
-2025-05-04,Dimensional,Minor,Line 5,128,11975.79,38.47
-2024-05-23,Packaging,Critical,Line 2,79,14873.39,43.26
-2024-12-22,Assembly,Minor,Line 1,250,3741.77,38.77
-2024-12-21,Dimensional,Major,Line 2,218,11466.48,55.38
-2024-04-20,Surface Finish,Major,Line 5,94,11997.46,48.9
-2024-06-18,Electrical,Minor,Line 5,205,11985.12,96.27
-2025-05-10,Surface Finish,Minor,Line 2,15,8656.57,39.56
-2024-02-29,Dimensional,Critical,Line 3,10,4358.77,17.39
-2024-08-10,Packaging,Critical,Line 1,76,9294.65,48.82
-2024-10-14,Material,Major,Line 3,94,8608.75,98.9
-2024-06-11,Electrical,Minor,Line 2,155,4686.91,112.9
-2024-08-23,Assembly,Minor,Line 4,20,7279.89,98.52
-2024-10-07,Material,Critical,Line 3,32,7381.4,67.13
-2024-01-25,Dimensional,Major,Line 1,115,11147.55,98.1
-2024-08-10,Assembly,Minor,Line 5,194,608.87,34.96
-2024-06-13,Electrical,Critical,Line 6,78,4703.7,0.14
-2025-04-06,Material,Major,Line 3,123,12060.48,78.98
-2024-02-20,Packaging,Minor,Line 6,5,1807.91,58.36
-2025-04-11,Material,Critical,Line 2,95,12532.76,21.36
-2025-06-18,Dimensional,Major,Line 2,138,11434.79,24.68
-2024-11-08,Packaging,Minor,Line 2,10,7440.37,40.09
-2025-04-15,Dimensional,Critical,Line 3,249,8534.38,31.65
-2024-01-05,Material,Minor,Line 5,67,5429.06,116.91
-2024-11-06,Material,Critical,Line 3,72,8088.6,56.14
-2025-01-25,Material,Critical,Line 5,102,5196.89,16.24
-2024-06-18,Assembly,Major,Line 1,35,14291.33,16.41
-2024-03-27,Material,Critical,Line 1,155,12111.89,89.55
-2024-08-16,Material,Critical,Line 6,15,11397.24,67.66
-2024-09-27,Electrical,Minor,Line 1,142,8829.12,110.73
-2024-02-09,Surface Finish,Major,Line 6,143,10003.97,21.87
-2025-01-29,Surface Finish,Critical,Line 2,108,5779.87,82.8
-2024-12-11,Electrical,Critical,Line 6,63,7518.4,42.98
-2024-02-22,Dimensional,Critical,Line 6,44,7244.32,92.06
-2025-03-21,Surface Finish,Major,Line 6,116,7543.08,90.31
-2024-11-30,Electrical,Minor,Line 2,158,4249.89,53.17
-2024-11-01,Dimensional,Major,Line 2,89,7680.59,4.76
-2024-06-19,Packaging,Critical,Line 4,189,3021.6,31.92
-2024-01-06,Packaging,Minor,Line 3,250,8351.96,60.14
-2024-08-17,Assembly,Minor,Line 2,7,5349.99,61.43
-2024-09-12,Surface Finish,Critical,Line 6,237,8385.12,70.19
-2024-03-20,Material,Minor,Line 4,106,121.35,28.06
-2025-03-08,Dimensional,Critical,Line 6,200,963.5,86.13
-2024-04-21,Dimensional,Major,Line 5,140,6345.34,113.94
-2025-04-29,Material,Critical,Line 6,85,3272.14,82.23
-2024-03-22,Packaging,Minor,Line 1,215,4942.04,117.93
-2024-02-04,Dimensional,Critical,Line 6,184,4149.67,117.24
-2024-04-19,Electrical,Minor,Line 5,17,3917.84,114.78
-2024-08-23,Surface Finish,Major,Line 6,124,4656.33,49.16
-2024-09-20,Electrical,Critical,Line 4,132,14173.84,51.41
-2024-12-14,Surface Finish,Minor,Line 5,212,7884.48,14.86
-2024-07-06,Material,Minor,Line 4,130,8225.0,5.63
-2025-03-02,Surface Finish,Critical,Line 4,8,4527.75,92.29
-2024-02-13,Packaging,Critical,Line 4,127,9197.77,51.25
-2024-06-13,Assembly,Critical,Line 2,210,1522.48,20.38
-2024-01-13,Packaging,Minor,Line 2,221,716.56,111.76
-2024-07-09,Surface Finish,Major,Line 2,55,5638.95,57.76
-2024-09-13,Surface Finish,Critical,Line 6,90,2690.8,32.41
-2024-04-20,Electrical,Minor,Line 5,114,12868.88,55.19
-2024-11-21,Surface Finish,Minor,Line 2,193,10102.73,14.44
-2024-07-02,Packaging,Minor,Line 6,155,158.57,71.74
-2024-11-04,Material,Major,Line 1,68,12407.7,85.89
-2024-11-19,Assembly,Minor,Line 3,19,5569.12,77.98
-2024-02-29,Surface Finish,Major,Line 6,246,631.51,58.61
-2025-05-28,Material,Critical,Line 3,246,4875.46,92.17
-2024-06-03,Surface Finish,Critical,Line 4,109,6716.18,36.76
-2024-02-17,Assembly,Major,Line 6,14,2902.54,111.55
-2025-03-28,Surface Finish,Critical,Line 6,117,7212.03,91.5
-2025-05-29,Dimensional,Minor,Line 3,188,5677.47,4.82
-2024-10-04,Packaging,Critical,Line 3,83,9319.42,70.54
-2024-06-25,Surface Finish,Major,Line 1,163,10807.17,89.1
-2024-03-09,Dimensional,Minor,Line 3,65,8445.61,16.8
-2024-06-10,Dimensional,Major,Line 4,181,11193.01,70.25
-2024-03-30,Material,Major,Line 3,143,2402.02,95.11
-2024-06-27,Assembly,Major,Line 1,152,13534.48,113.79
-2024-12-17,Packaging,Minor,Line 5,22,4379.12,114.37
-2025-01-26,Dimensional,Critical,Line 1,240,10017.34,93.55
-2024-02-16,Material,Major,Line 6,187,6144.91,77.72
-2024-03-30,Electrical,Minor,Line 2,228,10903.8,98.71
-2024-06-15,Dimensional,Critical,Line 1,195,3547.09,97.12
-2024-05-15,Surface Finish,Major,Line 6,124,11512.25,47.04
-2024-04-05,Packaging,Critical,Line 2,82,9015.88,6.56
-2025-05-02,Dimensional,Minor,Line 1,94,3914.03,115.76
-2024-05-23,Material,Minor,Line 4,20,8122.98,61.2
-2025-03-28,Electrical,Critical,Line 3,121,12411.31,107.67
-2024-08-29,Assembly,Critical,Line 3,213,11967.93,0.5
-2024-03-03,Packaging,Critical,Line 5,217,7504.12,63.41
-2025-02-17,Surface Finish,Major,Line 5,140,14109.53,110.44
+txn_dt,merch_cat,card_typ,rgn_cd,txn_amt,fraud_scr,txn_cnt_1h
+2024-02-27,grocery,prepaid,LATAM,20676.16,12,1
+2025-06-09,healthcare,virtual,EU_NORTH,15313.47,62,8
+2024-03-23,fuel,prepaid,EU_NORTH,21231.01,30,16
+2025-03-04,electronics,prepaid,APAC,23590.34,88,22
+2024-03-11,travel,virtual,LATAM,4467.23,69,12
+2024-02-24,restaurant,credit,NA_WEST,20365.47,75,19
+2024-08-10,online_retail,prepaid,NA_WEST,10397.76,70,5
+2024-08-03,fuel,virtual,LATAM,5136.56,66,21
+2024-01-07,online_retail,credit,APAC,12186.11,98,3
+2024-11-15,healthcare,debit,EU_NORTH,11680.06,14,13
+2024-08-06,healthcare,virtual,LATAM,20255.57,35,5
+2025-01-06,entertainment,credit,APAC,16281.92,69,7
+2024-01-28,fuel,credit,NA_WEST,5167.28,73,18
+2024-06-06,electronics,credit,NA_EAST,21596.23,50,29
+2024-10-01,restaurant,debit,EU_SOUTH,13391.45,28,7
+2025-02-18,fuel,credit,LATAM,21791.86,55,7
+2025-05-23,online_retail,prepaid,EU_SOUTH,590.37,23,8
+2024-03-10,online_retail,prepaid,APAC,11989.38,54,8
+2025-05-09,entertainment,virtual,APAC,14859.75,59,12
+2024-11-01,fuel,debit,NA_WEST,6221.61,69,10
+2024-08-21,fuel,virtual,EU_SOUTH,15128.67,81,13
+2024-11-02,restaurant,prepaid,APAC,20585.89,52,16
+2025-05-01,online_retail,credit,LATAM,7272.3,69,7
+2025-02-27,fuel,debit,APAC,2.36,13,29
+2024-06-28,grocery,prepaid,EU_NORTH,1177.83,95,15
+2024-11-22,online_retail,virtual,NA_EAST,7677.77,16,23
+2025-01-24,online_retail,credit,NA_WEST,20870.58,1,29
+2025-06-13,healthcare,prepaid,NA_EAST,17064.52,42,25
+2025-05-29,online_retail,virtual,EU_SOUTH,22988.92,60,21
+2025-01-15,travel,prepaid,EU_NORTH,9525.8,96,11
+2025-01-17,restaurant,credit,NA_WEST,20760.47,10,28
+2024-12-21,restaurant,debit,EU_SOUTH,19062.19,2,8
+2024-04-14,healthcare,debit,APAC,21232.82,36,13
+2024-05-21,online_retail,credit,EU_SOUTH,17859.95,14,5
+2024-04-11,grocery,debit,EU_SOUTH,2429.95,7,17
+2024-02-28,travel,credit,EU_SOUTH,6661.44,16,24
+2024-10-26,travel,virtual,EU_SOUTH,3061.74,33,14
+2025-05-18,restaurant,credit,NA_WEST,10848.22,39,15
+2025-02-27,healthcare,debit,LATAM,9509.39,29,18
+2024-01-26,travel,virtual,NA_WEST,11948.64,22,23
+2024-09-02,healthcare,virtual,EU_SOUTH,13138.62,96,3
+2024-03-20,electronics,prepaid,EU_SOUTH,21932.16,68,21
+2024-10-17,grocery,debit,LATAM,12842.59,38,14
+2024-03-13,travel,virtual,LATAM,2089.89,39,19
+2024-08-24,grocery,virtual,APAC,15819.99,25,10
+2024-05-29,entertainment,prepaid,EU_NORTH,5006.77,88,14
+2024-04-21,grocery,virtual,APAC,19673.81,67,10
+2025-04-06,restaurant,debit,LATAM,21458.17,77,16
+2024-01-28,healthcare,debit,EU_NORTH,3695.2,92,17
+2025-04-20,entertainment,prepaid,NA_WEST,20137.8,6,9
+2024-01-22,restaurant,debit,APAC,22786.31,11,4
+2024-06-21,restaurant,credit,NA_EAST,24563.87,36,13
+2024-05-29,travel,prepaid,EU_NORTH,5193.4,96,27
+2024-09-30,fuel,prepaid,APAC,21596.18,5,24
+2024-03-17,restaurant,debit,NA_EAST,13018.39,69,26
+2025-04-05,electronics,credit,LATAM,17396.07,4,28
+2024-12-09,electronics,credit,LATAM,13416.19,3,25
+2024-02-19,online_retail,debit,EU_NORTH,14934.58,72,5
+2024-02-14,entertainment,prepaid,EU_SOUTH,2979.48,39,11
+2024-07-23,electronics,prepaid,LATAM,4544.31,9,2
+2025-02-14,fuel,prepaid,APAC,3263.01,34,14
+2024-09-30,fuel,prepaid,APAC,23688.29,63,24
+2024-03-19,grocery,prepaid,NA_WEST,18315.8,75,10
+2024-02-12,entertainment,prepaid,EU_SOUTH,4984.91,71,22
+2024-01-04,grocery,virtual,NA_EAST,15123.25,79,25
+2024-08-22,travel,debit,APAC,5429.72,57,18
+2025-03-24,online_retail,virtual,APAC,21410.62,12,10
+2024-10-01,online_retail,credit,EU_NORTH,23714.11,32,18
+2024-03-14,healthcare,prepaid,NA_EAST,6836.17,53,12
+2024-09-19,fuel,virtual,NA_EAST,10723.83,93,11
+2024-11-10,grocery,debit,NA_WEST,492.74,42,19
+2025-02-01,grocery,debit,APAC,6939.72,4,10
+2025-01-07,entertainment,debit,EU_SOUTH,5443.8,10,29
+2024-01-16,entertainment,debit,APAC,6168.4,31,22
+2024-04-30,grocery,prepaid,EU_NORTH,23125.26,28,3
+2024-10-28,entertainment,virtual,LATAM,15834.02,78,9
+2024-09-25,travel,debit,LATAM,13955.5,57,16
+2025-01-16,travel,credit,APAC,18466.12,98,23
+2024-11-27,travel,virtual,NA_WEST,6625.41,83,2
+2024-12-18,restaurant,virtual,NA_WEST,4721.94,87,21
+2025-04-02,healthcare,virtual,LATAM,8462.29,40,20
+2024-07-03,travel,debit,EU_SOUTH,4923.17,84,27
+2024-01-28,fuel,credit,LATAM,10074.1,5,26
+2025-02-28,electronics,credit,NA_WEST,14251.23,70,13
+2024-11-06,electronics,credit,APAC,149.48,17,24
+2024-12-05,fuel,debit,NA_EAST,21820.96,57,13
+2024-08-28,travel,credit,EU_SOUTH,9828.96,91,24
+2024-11-25,entertainment,virtual,NA_WEST,20465.54,99,29
+2025-03-17,grocery,virtual,EU_SOUTH,12968.17,36,7
+2025-01-07,electronics,prepaid,EU_SOUTH,21209.97,61,1
+2024-05-13,entertainment,prepaid,APAC,603.98,79,8
+2025-02-08,fuel,virtual,NA_WEST,1301.08,50,26
+2024-05-24,fuel,prepaid,APAC,12054.72,74,24
+2024-02-25,electronics,virtual,EU_SOUTH,3798.76,93,17
+2025-05-27,online_retail,credit,LATAM,8519.16,91,25
+2024-09-18,entertainment,prepaid,LATAM,10546.67,73,5
+2024-08-03,electronics,credit,LATAM,15617.16,29,4
+2025-05-31,grocery,debit,NA_EAST,7974.12,69,17
+2024-08-26,online_retail,credit,EU_SOUTH,9360.62,4,28
+2025-02-18,electronics,virtual,LATAM,18211.37,53,4
+2024-09-29,entertainment,prepaid,NA_WEST,1802.01,51,10
+2025-05-26,electronics,prepaid,NA_EAST,11307.46,40,13
+2024-04-01,grocery,prepaid,LATAM,4465.27,3,15
+2024-08-01,travel,credit,LATAM,9145.53,47,2
+2024-03-18,online_retail,credit,EU_NORTH,19068.39,80,30
+2025-06-23,fuel,debit,EU_SOUTH,22231.77,55,27
+2024-05-28,entertainment,virtual,EU_SOUTH,1588.47,36,5
+2024-09-17,fuel,credit,NA_WEST,8721.77,95,27
+2024-07-24,restaurant,credit,LATAM,6233.04,59,14
+2024-08-20,travel,debit,EU_SOUTH,2469.32,37,22
+2025-06-15,fuel,debit,NA_WEST,11222.11,22,16
+2025-03-30,online_retail,virtual,LATAM,24709.18,9,24
+2024-05-30,electronics,virtual,LATAM,738.45,90,22
+2024-11-06,entertainment,debit,NA_WEST,9531.31,18,28
+2024-06-01,healthcare,virtual,LATAM,6328.7,44,20
+2024-06-07,restaurant,virtual,NA_EAST,12845.45,48,3
+2024-03-22,grocery,credit,LATAM,9131.58,22,11
+2025-03-25,online_retail,prepaid,NA_EAST,14275.19,70,24
+2024-01-06,grocery,debit,NA_WEST,19770.64,4,30
+2024-01-22,healthcare,prepaid,LATAM,10094.26,28,7
+2024-05-07,online_retail,prepaid,EU_NORTH,24086.72,13,3
+2024-07-10,entertainment,prepaid,EU_SOUTH,6306.3,88,5
+2025-06-18,electronics,debit,APAC,19336.35,62,27
+2025-05-08,online_retail,virtual,NA_EAST,16020.74,82,5
+2024-01-30,grocery,virtual,EU_SOUTH,24100.71,51,7
+2024-01-04,electronics,debit,EU_NORTH,13998.86,47,13
+2024-01-16,travel,virtual,APAC,24199.87,75,16
+2025-05-10,grocery,debit,NA_EAST,15157.87,71,8
+2024-12-30,entertainment,prepaid,NA_EAST,16284.69,61,14
+2025-01-28,restaurant,prepaid,APAC,12530.47,90,23
+2024-04-09,grocery,virtual,EU_NORTH,15232.14,22,17
+2025-04-19,online_retail,virtual,NA_EAST,24570.4,92,29
+2024-04-16,travel,virtual,EU_SOUTH,11801.28,78,3
+2024-03-19,online_retail,debit,NA_EAST,4656.72,85,27
+2024-08-16,travel,credit,EU_SOUTH,3884.34,68,29
+2024-02-13,grocery,prepaid,NA_EAST,2591.24,8,13
+2025-04-08,fuel,prepaid,NA_EAST,15764.42,51,26
+2024-12-03,restaurant,virtual,LATAM,16383.72,86,21
+2025-03-03,online_retail,credit,LATAM,15439.69,21,12
+2025-02-08,grocery,prepaid,NA_WEST,7610.89,75,16
+2024-01-09,healthcare,virtual,NA_EAST,24441.56,5,17
+2025-03-04,healthcare,debit,LATAM,13979.01,53,10
+2024-05-08,healthcare,credit,NA_EAST,17871.47,99,26
+2024-06-21,restaurant,prepaid,LATAM,10184.3,60,16
+2024-02-18,fuel,debit,LATAM,10299.06,23,26
+2024-07-20,entertainment,credit,LATAM,14686.56,93,12
+2025-03-21,restaurant,prepaid,EU_NORTH,2449.32,33,19
+2024-12-13,online_retail,virtual,EU_NORTH,14226.86,76,19
+2024-09-20,healthcare,debit,EU_NORTH,327.67,76,2
+2024-12-23,entertainment,prepaid,APAC,17837.97,51,26
+2025-04-26,restaurant,credit,LATAM,10045.8,77,17
+2024-10-21,electronics,credit,NA_WEST,3763.8,13,12
+2024-11-15,travel,prepaid,NA_WEST,17088.6,50,4
+2024-07-21,fuel,credit,NA_WEST,3973.1,74,26
+2025-04-18,online_retail,debit,EU_NORTH,7065.62,57,5
+2024-10-22,healthcare,credit,EU_SOUTH,5795.17,19,5
+2024-09-24,entertainment,virtual,NA_WEST,9394.2,44,17
+2025-04-24,entertainment,credit,EU_SOUTH,21690.8,33,26
+2024-03-30,fuel,credit,NA_EAST,8666.89,27,19
+2024-03-18,entertainment,prepaid,LATAM,17134.98,85,28
+2024-04-09,restaurant,debit,APAC,7619.95,53,8
+2024-03-30,restaurant,debit,EU_NORTH,1801.17,55,26
+2025-05-10,healthcare,virtual,EU_SOUTH,18937.79,25,23
+2024-08-29,travel,credit,EU_SOUTH,20770.2,41,27
+2024-11-29,online_retail,virtual,LATAM,24684.08,1,25
+2024-10-11,entertainment,credit,NA_WEST,17485.78,72,1
+2024-04-10,entertainment,credit,LATAM,24886.94,41,17
+2024-10-29,fuel,virtual,APAC,20302.54,53,9
+2025-02-11,travel,credit,APAC,18581.5,63,22
+2024-04-24,fuel,debit,APAC,10635.71,21,16
+2024-06-30,online_retail,debit,NA_WEST,16725.72,9,17
+2024-03-06,travel,virtual,EU_SOUTH,10666.55,84,29
+2024-06-09,fuel,debit,NA_WEST,3258.71,30,28
+2024-04-03,fuel,virtual,EU_NORTH,21116.74,48,4
+2025-05-19,fuel,virtual,NA_WEST,18195.58,79,25
+2024-01-02,online_retail,virtual,EU_SOUTH,13803.32,59,27
+2024-08-19,healthcare,prepaid,EU_NORTH,3720.39,72,5
+2024-01-19,restaurant,credit,NA_EAST,9895.21,2,16
+2025-02-27,restaurant,virtual,EU_SOUTH,19677.42,8,10
+2025-06-07,restaurant,prepaid,LATAM,4285.67,50,6
+2024-06-30,electronics,debit,NA_EAST,15991.19,14,29
+2024-05-18,healthcare,virtual,APAC,12650.54,24,5
+2024-01-06,online_retail,debit,NA_WEST,1636.73,39,22
+2025-03-01,grocery,prepaid,NA_WEST,4245.0,31,21
+2025-05-26,healthcare,virtual,LATAM,2802.11,68,15
+2025-05-09,restaurant,debit,LATAM,17698.77,75,9
+2024-06-06,electronics,credit,APAC,24621.08,77,23
+2024-11-14,electronics,credit,NA_EAST,5985.47,66,18
+2024-02-19,fuel,debit,EU_SOUTH,4940.35,49,11
+2024-06-04,grocery,prepaid,APAC,4320.56,8,30
+2024-03-27,restaurant,credit,NA_EAST,17423.77,81,9
+2024-12-04,electronics,virtual,EU_NORTH,15769.03,100,15
+2024-07-06,entertainment,prepaid,APAC,10344.0,85,16
+2024-05-02,restaurant,prepaid,LATAM,6832.57,37,4
+2024-07-04,healthcare,debit,NA_EAST,14591.65,49,18
+2025-02-13,restaurant,prepaid,NA_WEST,1862.87,44,22
+2024-12-11,fuel,prepaid,NA_WEST,5184.44,94,24
+2025-02-19,travel,virtual,APAC,23828.67,21,15
+2024-05-29,travel,credit,EU_NORTH,12587.84,30,16
+2024-03-25,fuel,prepaid,EU_SOUTH,6356.77,23,21
+2024-03-15,travel,virtual,NA_EAST,13212.07,73,8
+2024-11-26,restaurant,prepaid,NA_EAST,12157.09,35,1
+2024-04-12,electronics,credit,APAC,17244.72,69,28
+2025-05-05,grocery,virtual,NA_WEST,10400.96,7,28
+2024-05-16,grocery,debit,NA_EAST,17053.71,66,9
+2025-06-08,fuel,virtual,NA_WEST,2936.38,70,18
+2025-05-18,online_retail,virtual,NA_WEST,12418.16,99,3
+2024-11-19,healthcare,credit,LATAM,10964.32,89,16
+2024-12-10,fuel,virtual,EU_SOUTH,17914.38,48,20
+2025-03-30,grocery,virtual,EU_NORTH,13345.23,12,8
+2024-12-30,entertainment,debit,NA_EAST,2037.68,56,10
+2024-08-20,fuel,credit,EU_NORTH,10482.98,61,10
+2025-06-12,healthcare,virtual,NA_EAST,17180.03,8,27
+2025-06-12,fuel,prepaid,EU_SOUTH,1392.59,86,9
+2024-02-08,grocery,debit,NA_WEST,816.97,78,8
+2024-06-09,electronics,debit,NA_EAST,17933.07,43,30
+2024-06-29,entertainment,credit,APAC,22342.89,99,14
+2024-04-30,online_retail,debit,EU_SOUTH,4635.93,90,9
+2024-03-22,fuel,credit,EU_SOUTH,14574.37,27,6
+2024-01-04,online_retail,credit,NA_WEST,10615.15,65,4
+2025-06-16,travel,virtual,NA_EAST,23876.25,88,8
+2025-01-15,entertainment,prepaid,LATAM,4095.48,40,14
+2025-01-28,restaurant,debit,NA_EAST,10707.87,92,24
+2024-11-05,online_retail,debit,LATAM,693.71,17,16
+2024-08-24,online_retail,prepaid,APAC,9317.16,66,29
+2025-06-14,electronics,credit,LATAM,17809.26,96,12
+2025-04-15,fuel,credit,NA_EAST,782.39,62,6
+2025-04-11,healthcare,debit,NA_WEST,1295.22,82,8
+2025-01-03,entertainment,prepaid,NA_EAST,21682.81,99,24
+2024-07-25,entertainment,debit,EU_NORTH,12235.47,58,7
+2024-03-28,grocery,prepaid,EU_SOUTH,23249.54,6,16
+2025-02-12,online_retail,credit,LATAM,18503.07,73,6
+2025-05-26,restaurant,virtual,NA_EAST,5799.52,1,18
+2024-01-21,fuel,prepaid,APAC,6221.68,14,16
+2024-11-22,entertainment,credit,NA_WEST,21701.4,86,26
+2024-09-08,fuel,debit,EU_NORTH,1772.59,98,16
+2024-11-23,entertainment,virtual,LATAM,10966.82,24,17
+2025-02-16,fuel,virtual,EU_NORTH,6414.48,63,2
+2024-05-17,entertainment,prepaid,NA_EAST,24693.05,78,24
+2024-12-04,online_retail,virtual,NA_WEST,3944.98,61,4

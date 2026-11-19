@@ -1,241 +1,241 @@
-ord_dt,chnl_cd,ship_mthd,cust_seg,itm_cnt,disc_amt,tot_rev,ship_fee
-2024-12-07,mobile_app,overnight,wholesale,28,470.63,3781.53,37.18
-2024-09-30,social,expedited,new,44,117.75,2102.49,33.44
-2025-03-26,social,overnight,returning,38,258.77,5205.4,19.88
-2024-05-16,retail_pos,freight,loyalty,8,256.09,825.48,46.69
-2024-11-09,marketplace,pickup,loyalty,44,96.79,7089.26,61.97
-2025-01-15,mobile_app,freight,loyalty,51,52.89,2349.67,28.36
-2024-08-03,social,expedited,wholesale,21,393.47,11749.64,3.42
-2024-03-11,web,pickup,loyalty,36,130.7,11115.84,61.28
-2024-09-13,retail_pos,freight,returning,1,465.67,9083.76,45.19
-2024-02-05,web,overnight,returning,27,455.94,5888.18,17.08
-2024-12-16,marketplace,pickup,new,45,225.58,4640.0,15.69
-2024-10-22,mobile_app,overnight,returning,15,216.07,1911.44,6.04
-2024-12-17,mobile_app,pickup,wholesale,54,55.27,10972.08,51.84
-2024-09-18,marketplace,overnight,wholesale,29,124.8,11171.23,47.2
-2024-11-23,mobile_app,expedited,new,32,80.49,8947.02,53.69
-2024-09-17,retail_pos,freight,loyalty,29,28.44,1869.62,2.5
-2025-03-18,social,expedited,returning,40,162.59,1463.63,58.85
-2024-11-13,social,pickup,wholesale,37,313.26,1733.3,19.09
-2025-02-10,retail_pos,standard,wholesale,36,460.93,5207.2,12.14
-2025-02-22,web,pickup,returning,54,318.96,7986.77,57.45
-2025-05-09,mobile_app,overnight,wholesale,1,342.37,2868.97,12.32
-2025-04-24,retail_pos,expedited,returning,36,259.6,8794.25,18.06
-2024-07-06,social,freight,wholesale,21,246.99,10057.32,57.99
-2025-02-09,social,expedited,wholesale,38,480.87,9593.43,21.03
-2024-12-12,retail_pos,expedited,returning,57,138.18,1787.86,0.82
-2024-03-18,mobile_app,pickup,loyalty,28,94.23,10483.86,53.68
-2024-09-30,mobile_app,pickup,loyalty,12,497.8,11474.9,62.54
-2024-11-06,retail_pos,pickup,wholesale,47,163.68,6735.12,17.03
-2024-11-21,social,pickup,new,24,264.66,1092.9,58.02
-2024-07-26,social,overnight,new,33,276.85,10784.99,8.97
-2025-01-23,marketplace,expedited,wholesale,41,231.92,6545.94,24.7
-2024-10-31,marketplace,pickup,new,28,458.76,7424.92,5.19
-2024-12-10,web,overnight,returning,51,65.4,1525.09,24.12
-2025-05-04,social,overnight,wholesale,57,281.69,10077.56,7.94
-2024-01-23,social,expedited,loyalty,43,0.38,7350.58,11.75
-2024-01-11,retail_pos,overnight,new,41,307.75,5309.31,4.23
-2024-07-28,marketplace,pickup,wholesale,57,387.98,4403.92,9.49
-2025-02-03,mobile_app,pickup,loyalty,27,486.55,4234.04,24.12
-2024-08-07,social,freight,returning,33,226.29,388.43,17.66
-2024-04-24,social,expedited,returning,33,439.66,4627.47,55.79
-2024-09-26,mobile_app,standard,loyalty,40,21.89,6218.03,11.93
-2024-10-08,mobile_app,expedited,loyalty,13,2.67,668.16,54.55
-2024-02-26,mobile_app,overnight,loyalty,16,121.9,5584.96,59.59
-2024-11-11,mobile_app,pickup,loyalty,42,22.33,10150.09,39.4
-2024-08-04,web,expedited,returning,34,353.59,7424.98,37.56
-2024-04-16,web,expedited,wholesale,33,247.47,5513.3,62.19
-2024-05-18,retail_pos,overnight,returning,37,15.54,7275.16,24.95
-2024-08-03,marketplace,freight,new,38,418.25,11138.81,43.64
-2025-02-24,retail_pos,standard,new,9,454.98,4323.53,51.69
-2024-06-07,retail_pos,freight,loyalty,41,140.51,2189.16,42.81
-2024-11-07,web,freight,returning,13,310.16,11821.88,55.53
-2024-08-06,marketplace,pickup,loyalty,37,305.55,10813.52,59.08
-2025-05-10,marketplace,standard,returning,3,413.59,11735.69,37.46
-2024-11-24,retail_pos,pickup,returning,58,335.34,9306.22,47.7
-2024-09-22,web,expedited,returning,55,267.71,7823.89,44.48
-2024-07-08,social,overnight,loyalty,60,223.13,9260.34,15.27
-2024-03-18,mobile_app,freight,returning,9,66.26,7398.52,49.62
-2024-12-22,social,overnight,wholesale,4,139.09,3507.0,54.71
-2025-05-06,marketplace,pickup,wholesale,34,475.73,8861.62,23.2
-2025-06-02,web,pickup,loyalty,47,305.85,3519.04,56.58
-2025-01-27,marketplace,pickup,loyalty,6,119.92,6914.56,10.13
-2024-03-30,social,freight,loyalty,7,278.54,5972.58,26.84
-2025-02-12,retail_pos,expedited,loyalty,17,315.23,4493.49,17.34
-2025-04-13,social,overnight,wholesale,3,394.65,3536.94,19.73
-2024-02-24,mobile_app,expedited,wholesale,40,317.26,1338.65,63.98
-2024-10-18,web,expedited,new,41,490.14,10016.93,48.47
-2025-05-24,mobile_app,freight,new,32,24.57,2865.7,21.67
-2025-03-11,retail_pos,freight,returning,51,145.56,9406.21,15.5
-2025-02-23,marketplace,expedited,returning,14,174.3,7986.75,62.95
-2025-03-16,web,freight,new,20,66.29,8837.72,45.21
-2024-07-05,mobile_app,standard,wholesale,56,25.26,8099.69,49.53
-2024-11-18,web,pickup,returning,2,41.81,7877.59,48.27
-2024-01-25,retail_pos,pickup,wholesale,42,402.35,4799.92,34.57
-2024-05-07,retail_pos,pickup,returning,16,492.99,9186.24,43.61
-2024-12-26,retail_pos,standard,loyalty,13,424.57,6102.78,17.08
-2024-09-09,web,standard,returning,16,482.95,8182.78,64.55
-2024-03-15,web,overnight,wholesale,4,72.05,576.01,51.6
-2024-11-23,retail_pos,expedited,new,11,134.19,9201.02,23.65
-2024-10-18,marketplace,standard,loyalty,59,486.19,7840.11,13.36
-2025-05-16,retail_pos,expedited,returning,2,95.11,11432.43,29.24
-2024-05-07,mobile_app,pickup,returning,59,438.27,11842.37,53.37
-2025-05-15,retail_pos,freight,wholesale,29,166.09,2847.18,51.22
-2024-10-10,social,pickup,returning,24,78.81,10454.89,4.48
-2024-01-15,social,standard,new,37,368.37,4939.68,56.3
-2024-03-13,retail_pos,standard,new,57,240.11,5405.04,11.72
-2024-08-06,web,pickup,new,49,414.33,5143.67,23.0
-2025-03-12,marketplace,overnight,wholesale,34,17.28,6836.92,33.92
-2025-01-17,mobile_app,expedited,new,34,143.31,11699.6,40.82
-2025-02-22,web,pickup,loyalty,22,33.27,6530.23,41.11
-2024-08-24,web,standard,wholesale,35,298.8,9728.13,30.96
-2024-11-06,retail_pos,standard,returning,43,305.41,2233.22,25.09
-2024-07-02,mobile_app,pickup,returning,25,151.98,4485.29,41.25
-2024-05-02,retail_pos,overnight,returning,53,231.4,2824.77,30.39
-2024-10-08,mobile_app,freight,returning,49,95.89,1761.33,30.3
-2025-05-12,web,freight,wholesale,10,470.06,397.97,0.83
-2025-03-28,marketplace,freight,returning,49,430.33,10869.46,30.72
-2025-04-25,retail_pos,overnight,wholesale,38,350.41,6894.19,33.33
-2024-11-20,marketplace,freight,wholesale,18,220.54,6652.88,58.95
-2024-01-01,retail_pos,pickup,returning,12,380.65,11582.98,18.88
-2024-10-10,web,pickup,returning,1,81.62,1487.57,19.26
-2024-03-11,web,freight,wholesale,47,330.96,8953.82,42.32
-2025-06-06,marketplace,standard,returning,39,0.27,8522.9,55.62
-2025-03-02,web,standard,new,16,402.7,3990.87,26.37
-2024-04-29,marketplace,freight,wholesale,44,197.22,3739.71,22.56
-2024-12-10,web,freight,loyalty,3,341.4,3783.4,3.55
-2024-12-23,mobile_app,freight,new,19,433.73,7971.4,17.25
-2025-05-25,marketplace,pickup,wholesale,54,277.1,375.75,57.06
-2024-04-22,retail_pos,freight,wholesale,29,442.79,10210.97,15.73
-2025-01-24,web,pickup,wholesale,20,421.27,8848.9,60.5
-2025-04-13,retail_pos,freight,loyalty,35,435.98,10114.86,18.92
-2024-02-02,social,pickup,wholesale,6,34.44,11734.9,21.09
-2024-12-20,retail_pos,pickup,new,59,292.04,10076.86,62.31
-2025-03-12,web,standard,wholesale,49,483.45,3346.62,40.73
-2024-09-03,web,standard,loyalty,44,473.53,1512.61,40.47
-2025-01-17,mobile_app,freight,new,4,322.29,8537.14,50.79
-2025-04-21,marketplace,overnight,wholesale,6,305.68,7230.16,24.24
-2025-06-04,retail_pos,pickup,new,41,101.07,3647.01,45.1
-2025-04-18,retail_pos,overnight,wholesale,2,100.38,3096.4,46.13
-2024-08-11,retail_pos,expedited,wholesale,30,278.2,9049.41,51.1
-2024-08-06,social,standard,wholesale,20,209.29,6882.79,54.41
-2025-01-20,mobile_app,expedited,returning,18,284.1,3730.3,13.27
-2025-04-26,marketplace,expedited,returning,38,121.25,2054.78,18.01
-2024-11-21,retail_pos,overnight,new,36,492.66,5518.29,31.88
-2024-10-18,marketplace,standard,loyalty,54,438.34,5294.71,26.65
-2025-01-27,mobile_app,freight,new,13,463.74,6349.07,44.71
-2025-05-10,social,standard,wholesale,31,127.01,5697.5,14.65
-2024-06-02,marketplace,expedited,loyalty,15,370.67,583.25,24.6
-2024-06-11,marketplace,overnight,returning,2,497.21,7095.79,36.49
-2025-01-10,social,expedited,returning,46,39.31,11337.56,52.07
-2024-07-18,retail_pos,expedited,new,15,180.53,8248.95,28.58
-2024-12-02,social,overnight,new,23,324.23,7794.45,50.17
-2025-03-27,web,freight,wholesale,31,324.83,11133.49,36.65
-2024-12-28,mobile_app,overnight,new,13,288.17,6906.48,24.73
-2024-09-01,web,expedited,wholesale,4,54.32,11188.83,64.91
-2024-08-11,marketplace,expedited,wholesale,56,32.54,8122.26,31.81
-2024-01-06,social,pickup,new,22,93.65,10763.91,44.99
-2024-11-26,marketplace,standard,new,26,374.35,7031.79,43.01
-2024-03-06,retail_pos,expedited,returning,14,227.71,9302.78,39.04
-2024-02-19,mobile_app,expedited,new,47,408.15,1639.9,43.18
-2024-02-01,social,freight,loyalty,53,34.29,6442.72,8.07
-2025-03-25,web,pickup,new,44,245.04,3254.85,56.17
-2024-01-17,marketplace,freight,returning,16,303.41,4924.62,62.38
-2024-08-22,mobile_app,freight,wholesale,51,34.61,3124.36,53.68
-2024-02-12,marketplace,standard,new,32,6.14,5978.77,6.82
-2024-03-10,web,pickup,new,39,305.23,3432.4,28.86
-2024-11-06,mobile_app,standard,returning,28,181.73,2452.69,51.93
-2024-08-10,mobile_app,pickup,loyalty,44,346.36,10241.72,46.97
-2024-04-07,social,pickup,loyalty,13,407.27,7756.18,26.17
-2024-08-03,marketplace,expedited,new,52,339.79,5554.51,11.62
-2025-02-18,retail_pos,pickup,new,35,424.26,8156.27,15.52
-2024-12-29,mobile_app,pickup,loyalty,43,185.5,9986.58,17.34
-2025-01-26,web,freight,wholesale,15,455.65,8872.64,44.6
-2025-03-13,retail_pos,expedited,wholesale,22,83.91,194.27,35.21
-2025-01-18,social,standard,returning,23,438.61,552.72,17.44
-2024-07-02,marketplace,overnight,loyalty,39,283.67,8640.6,12.75
-2024-11-22,social,overnight,returning,52,363.6,10366.45,62.95
-2025-02-20,social,expedited,returning,48,44.92,5094.38,3.39
-2024-05-27,marketplace,pickup,new,41,44.16,11477.85,59.61
-2024-12-02,retail_pos,freight,new,6,0.81,10588.61,38.32
-2024-11-07,retail_pos,expedited,new,56,319.64,4872.7,12.71
-2025-06-19,web,freight,returning,50,368.46,8863.08,45.09
-2024-08-16,mobile_app,standard,new,16,487.49,4620.06,39.81
-2025-05-21,web,expedited,wholesale,60,9.45,3359.79,60.6
-2024-02-24,mobile_app,overnight,loyalty,47,191.6,9318.17,8.45
-2025-04-28,retail_pos,standard,new,1,311.74,3270.2,24.69
-2025-05-06,social,standard,wholesale,53,397.04,8428.14,57.01
-2024-04-15,marketplace,overnight,new,38,97.69,2853.94,25.2
-2025-06-23,mobile_app,expedited,loyalty,37,234.27,1140.91,52.26
-2024-03-09,social,pickup,wholesale,24,166.51,9910.83,29.93
-2025-04-06,web,expedited,wholesale,42,466.3,8449.96,57.73
-2024-06-01,web,freight,loyalty,49,112.5,1554.82,13.43
-2025-05-11,web,pickup,wholesale,7,239.06,6366.01,59.08
-2024-11-16,social,pickup,new,34,491.56,985.53,26.26
-2024-10-10,marketplace,standard,wholesale,26,266.8,11772.99,7.82
-2025-04-08,retail_pos,overnight,returning,59,433.54,6512.47,35.82
-2024-09-13,social,standard,loyalty,28,148.14,2441.24,20.02
-2024-11-07,retail_pos,expedited,loyalty,8,189.91,5861.05,38.58
-2025-06-10,web,expedited,returning,18,332.74,8693.93,19.68
-2025-05-26,marketplace,standard,returning,48,77.04,6965.92,14.17
-2024-07-03,mobile_app,pickup,loyalty,30,275.94,8224.82,55.46
-2025-06-13,retail_pos,pickup,wholesale,48,230.66,3901.6,61.62
-2024-08-19,social,expedited,new,38,97.9,6910.26,42.14
-2024-07-27,retail_pos,standard,new,4,373.04,9806.92,25.59
-2025-03-31,web,expedited,new,12,378.29,3548.62,44.24
-2025-05-07,mobile_app,overnight,loyalty,47,70.01,538.61,63.59
-2024-08-31,marketplace,freight,loyalty,13,163.38,2977.82,58.83
-2024-07-20,web,expedited,loyalty,45,363.34,1610.49,25.9
-2024-10-03,web,overnight,returning,36,360.38,2451.05,1.52
-2024-12-24,marketplace,standard,wholesale,60,259.26,6267.54,46.66
-2024-03-24,mobile_app,standard,wholesale,31,252.18,1027.84,55.89
-2024-02-24,mobile_app,pickup,returning,17,113.13,1663.59,64.92
-2024-03-14,web,expedited,new,17,170.39,10467.77,1.48
-2024-02-13,web,expedited,new,14,11.21,2102.13,17.33
-2024-12-10,marketplace,standard,wholesale,47,460.59,4891.16,55.39
-2024-02-23,web,expedited,returning,44,469.74,11692.73,25.78
-2024-11-02,marketplace,freight,returning,53,174.35,2813.45,37.18
-2024-04-01,retail_pos,expedited,new,39,483.29,10707.96,57.39
-2024-06-22,web,freight,new,25,144.73,8961.53,33.54
-2024-02-06,web,expedited,returning,41,183.7,541.6,37.05
-2024-01-21,marketplace,standard,wholesale,55,338.75,4601.26,61.28
-2024-12-18,web,expedited,returning,14,212.47,8777.35,48.76
-2024-12-31,retail_pos,expedited,new,39,400.19,1156.48,57.61
-2024-01-12,marketplace,pickup,loyalty,39,72.15,4479.83,10.4
-2024-07-27,retail_pos,standard,returning,21,67.37,4566.7,18.77
-2025-05-20,marketplace,overnight,wholesale,46,459.74,11304.62,26.51
-2024-01-27,retail_pos,standard,returning,5,215.44,5713.76,61.22
-2025-06-03,mobile_app,overnight,loyalty,27,277.83,2268.24,48.45
-2025-05-01,web,freight,loyalty,25,285.06,10501.77,0.81
-2024-12-29,web,pickup,new,38,181.22,1482.28,21.44
-2024-06-10,marketplace,pickup,returning,50,262.65,11876.63,55.93
-2024-12-06,mobile_app,pickup,new,19,132.91,7892.79,0.82
-2025-05-08,mobile_app,standard,returning,4,380.4,9815.84,14.72
-2024-07-21,web,expedited,new,28,158.67,5343.21,15.03
-2025-06-10,mobile_app,pickup,new,6,180.03,4783.14,30.2
-2024-12-28,retail_pos,standard,loyalty,8,472.91,6846.58,41.45
-2025-03-23,web,overnight,wholesale,13,344.91,6979.73,11.97
-2024-03-15,web,standard,returning,10,424.08,9727.95,51.74
-2025-03-16,retail_pos,overnight,wholesale,34,224.42,3418.33,15.37
-2024-01-12,mobile_app,standard,loyalty,44,214.49,602.61,10.96
-2024-01-14,retail_pos,expedited,new,10,77.67,9530.86,34.89
-2024-11-07,social,expedited,returning,23,10.23,9223.52,36.14
-2024-04-13,marketplace,expedited,wholesale,4,125.04,6229.08,13.35
-2025-04-29,social,freight,returning,24,178.38,7454.23,63.85
-2025-03-16,mobile_app,overnight,returning,4,176.43,2119.75,5.39
-2024-09-06,marketplace,standard,new,15,314.11,2061.2,62.09
-2024-02-06,marketplace,overnight,loyalty,43,207.96,11123.78,46.29
-2025-06-23,retail_pos,freight,new,56,189.65,10233.16,59.22
-2024-05-17,social,freight,loyalty,26,98.45,1484.38,1.05
-2024-09-16,marketplace,standard,new,9,26.03,6604.98,22.71
-2024-06-26,web,expedited,loyalty,59,40.59,1419.24,46.05
-2025-01-26,retail_pos,freight,returning,10,93.47,11846.15,43.33
-2024-01-27,web,overnight,returning,51,440.33,2907.23,26.61
-2024-04-20,retail_pos,standard,wholesale,5,205.01,7986.73,45.03
-2024-09-10,retail_pos,freight,loyalty,22,350.91,4857.53,31.36
-2024-05-26,retail_pos,standard,wholesale,17,246.39,659.59,57.4
-2025-05-02,marketplace,overnight,new,32,457.42,10415.02,20.65
-2025-04-10,retail_pos,overnight,returning,47,306.74,926.89,3.3
-2024-04-15,mobile_app,standard,wholesale,31,187.58,11833.41,39.61
-2024-10-24,mobile_app,overnight,new,8,51.54,3809.4,34.31
-2024-03-04,web,expedited,returning,30,12.0,7600.64,6.06
+ticket_created_date,ticket_priority,ticket_channel,ticket_category,ticket_resolution_hours,ticket_csat_score,ticket_reopen_count
+2024-09-29,High,Live Chat,Shipping,72.0,1.28,6
+2024-12-18,High,Web Form,Account Access,58.49,4.09,0
+2024-08-04,Urgent,Web Form,Shipping,294.86,2.29,0
+2024-01-24,Medium,Mobile App,Feature Request,183.04,1.13,2
+2024-11-07,Low,Mobile App,Billing,620.51,2.42,3
+2024-01-11,High,Mobile App,Technical Issue,348.39,1.16,2
+2024-05-29,Low,Web Form,Refund Request,214.16,2.9,0
+2025-03-29,Urgent,Live Chat,Technical Issue,366.12,2.51,4
+2024-09-07,High,Social Media,Feature Request,222.12,4.81,2
+2024-11-13,High,Social Media,Feature Request,576.54,3.81,4
+2025-06-04,Medium,Mobile App,Refund Request,25.83,4.4,0
+2024-05-01,Medium,Live Chat,Shipping,444.59,4.94,4
+2025-04-02,Low,Mobile App,Product Question,15.41,4.26,4
+2025-02-09,Urgent,Email,Account Access,300.63,4.95,5
+2024-07-24,Medium,Social Media,Billing,373.74,1.23,5
+2024-05-22,High,Phone,Feature Request,82.22,4.17,1
+2024-05-27,Low,Email,Billing,572.07,1.79,2
+2024-08-14,High,Email,Refund Request,320.35,3.28,5
+2024-12-11,Urgent,Email,Shipping,561.26,3.38,4
+2024-08-31,Urgent,Phone,Product Question,201.87,4.51,1
+2024-03-20,High,Web Form,Refund Request,344.09,2.28,3
+2025-05-30,Urgent,Web Form,Refund Request,102.77,3.01,4
+2024-07-29,Low,Email,Refund Request,479.19,3.97,3
+2025-04-26,High,Live Chat,Shipping,111.27,3.67,5
+2024-04-12,Urgent,Phone,Account Access,409.53,2.46,3
+2024-05-30,Medium,Web Form,Shipping,470.48,2.32,4
+2025-02-23,High,Live Chat,Billing,302.79,2.82,5
+2024-05-30,Low,Web Form,Account Access,595.7,3.5,2
+2025-04-28,Medium,Live Chat,Refund Request,713.45,2.15,2
+2024-08-15,Low,Phone,Shipping,550.06,2.62,2
+2024-09-03,Urgent,Phone,Technical Issue,115.21,2.59,3
+2024-01-03,Medium,Mobile App,Billing,106.52,2.46,6
+2024-08-16,Medium,Web Form,Technical Issue,173.16,2.16,4
+2024-06-15,Low,Live Chat,Refund Request,261.03,4.36,5
+2024-10-22,Low,Phone,Billing,486.95,2.68,1
+2025-05-28,Urgent,Phone,Refund Request,662.31,2.72,6
+2024-01-08,Medium,Web Form,Refund Request,452.93,2.17,1
+2025-03-28,Low,Web Form,Technical Issue,716.82,4.78,1
+2024-08-03,Urgent,Phone,Shipping,556.06,4.41,3
+2024-10-15,Low,Web Form,Account Access,305.49,1.61,3
+2024-09-10,Low,Live Chat,Technical Issue,16.24,4.49,1
+2024-09-19,Medium,Web Form,Technical Issue,647.69,2.79,4
+2025-03-21,Low,Web Form,Refund Request,523.82,1.66,3
+2025-05-25,High,Social Media,Billing,134.99,4.64,2
+2025-06-18,Low,Mobile App,Billing,132.93,4.05,5
+2024-11-16,Low,Live Chat,Account Access,291.68,3.04,5
+2025-01-13,Urgent,Mobile App,Refund Request,217.9,3.23,6
+2025-05-24,Low,Phone,Account Access,333.17,1.39,1
+2025-05-18,Medium,Live Chat,Feature Request,544.21,1.57,5
+2025-06-22,Urgent,Mobile App,Refund Request,268.72,2.49,3
+2024-01-26,Urgent,Mobile App,Refund Request,203.15,4.0,2
+2024-01-19,High,Web Form,Refund Request,91.81,4.08,1
+2024-11-09,Urgent,Social Media,Feature Request,382.49,2.98,0
+2024-03-05,Urgent,Email,Shipping,201.95,3.78,5
+2025-04-11,High,Social Media,Shipping,92.77,3.31,5
+2025-02-15,Low,Phone,Technical Issue,192.53,1.2,2
+2024-03-09,Medium,Email,Feature Request,133.93,4.01,5
+2024-03-09,Urgent,Live Chat,Refund Request,495.01,3.87,4
+2024-02-26,Urgent,Mobile App,Technical Issue,337.16,2.46,4
+2024-07-03,Low,Web Form,Billing,161.83,1.94,3
+2025-04-01,Urgent,Phone,Shipping,696.52,4.91,5
+2024-06-11,High,Mobile App,Refund Request,599.85,2.39,1
+2025-01-15,Medium,Mobile App,Feature Request,389.44,3.64,4
+2024-10-24,Urgent,Phone,Account Access,564.28,2.07,0
+2024-11-21,Low,Social Media,Technical Issue,606.49,3.56,2
+2024-01-28,Low,Social Media,Feature Request,160.37,1.07,1
+2024-12-31,High,Social Media,Feature Request,568.65,1.3,5
+2024-08-31,Low,Mobile App,Technical Issue,421.89,4.33,5
+2024-03-16,Urgent,Live Chat,Feature Request,58.9,4.81,3
+2024-10-26,High,Live Chat,Account Access,55.26,3.14,3
+2024-11-25,High,Email,Feature Request,543.44,1.85,6
+2024-03-05,Medium,Social Media,Feature Request,221.48,2.86,0
+2024-09-27,Medium,Social Media,Shipping,618.78,1.47,3
+2024-07-03,High,Email,Technical Issue,497.59,1.07,5
+2025-02-10,Urgent,Mobile App,Shipping,662.33,4.61,5
+2024-09-29,High,Live Chat,Feature Request,393.44,2.13,2
+2024-01-19,Urgent,Email,Feature Request,684.4,3.75,4
+2024-06-13,Urgent,Phone,Billing,10.5,4.23,4
+2024-10-31,Urgent,Phone,Feature Request,495.47,3.65,4
+2024-08-13,High,Live Chat,Feature Request,257.62,2.32,3
+2024-05-24,Urgent,Live Chat,Account Access,347.8,2.23,1
+2024-08-11,Urgent,Phone,Refund Request,395.83,1.33,4
+2024-06-26,Medium,Social Media,Refund Request,468.02,3.93,3
+2024-02-20,Urgent,Social Media,Account Access,112.8,4.36,0
+2025-01-11,Low,Web Form,Feature Request,358.5,4.67,4
+2024-11-13,Urgent,Web Form,Refund Request,507.71,2.68,1
+2024-10-13,Low,Web Form,Technical Issue,122.48,4.49,2
+2024-02-09,Medium,Social Media,Feature Request,43.86,4.5,1
+2024-12-27,High,Email,Shipping,594.05,4.7,5
+2024-11-09,Low,Live Chat,Feature Request,232.68,4.67,2
+2025-03-11,Low,Email,Feature Request,173.11,3.04,2
+2024-02-14,Urgent,Phone,Technical Issue,198.89,3.27,1
+2024-06-24,Urgent,Web Form,Refund Request,670.82,3.23,3
+2024-10-18,Medium,Phone,Billing,458.89,2.51,1
+2024-03-12,Medium,Web Form,Account Access,670.44,4.85,4
+2025-04-04,Urgent,Phone,Product Question,574.05,1.21,3
+2024-05-12,High,Email,Shipping,626.8,2.17,3
+2024-06-04,Low,Social Media,Feature Request,63.76,4.94,6
+2024-07-29,Low,Mobile App,Feature Request,80.84,1.13,4
+2024-02-14,Low,Mobile App,Product Question,648.58,1.78,3
+2024-04-04,Low,Email,Shipping,515.99,3.95,5
+2024-06-22,Medium,Phone,Account Access,558.98,2.16,0
+2024-04-21,Urgent,Web Form,Billing,381.04,1.81,2
+2024-08-17,Medium,Email,Account Access,197.83,3.66,6
+2024-12-11,Low,Web Form,Billing,319.16,2.3,2
+2024-11-26,Low,Email,Shipping,690.13,1.63,2
+2025-04-14,Urgent,Mobile App,Feature Request,607.48,3.25,1
+2024-03-22,Urgent,Email,Feature Request,257.11,4.63,1
+2024-12-11,Low,Social Media,Account Access,367.13,4.77,1
+2024-01-03,Medium,Live Chat,Refund Request,450.57,3.75,5
+2024-01-03,Medium,Web Form,Billing,370.45,1.77,4
+2025-03-31,Low,Social Media,Billing,268.48,3.17,6
+2024-07-21,Low,Live Chat,Refund Request,408.77,2.77,2
+2024-09-02,Low,Live Chat,Account Access,420.74,2.27,5
+2025-04-15,Medium,Live Chat,Account Access,307.92,1.18,3
+2024-11-05,Low,Live Chat,Billing,73.81,2.42,1
+2025-01-08,Urgent,Phone,Billing,477.24,1.55,5
+2025-03-08,High,Mobile App,Account Access,610.98,1.09,3
+2024-12-21,High,Social Media,Refund Request,124.53,4.9,6
+2025-02-16,Urgent,Mobile App,Billing,454.79,4.99,3
+2024-03-09,Low,Phone,Feature Request,281.39,1.58,1
+2025-04-10,High,Email,Billing,354.17,3.0,0
+2024-08-11,Low,Mobile App,Feature Request,459.15,3.91,1
+2024-06-22,Medium,Phone,Shipping,158.89,2.26,4
+2024-03-30,Urgent,Live Chat,Product Question,239.15,2.61,4
+2024-04-14,Urgent,Mobile App,Account Access,401.02,4.03,5
+2024-03-24,Urgent,Social Media,Feature Request,534.95,4.54,4
+2024-01-07,Medium,Social Media,Account Access,203.01,3.51,3
+2024-05-30,High,Web Form,Technical Issue,310.06,3.69,5
+2024-08-01,Low,Mobile App,Shipping,177.3,1.56,2
+2025-05-25,Medium,Phone,Feature Request,227.43,3.1,4
+2024-11-23,Medium,Social Media,Product Question,263.05,2.38,0
+2025-02-14,Urgent,Web Form,Shipping,336.12,2.88,3
+2024-11-01,Low,Live Chat,Technical Issue,29.63,1.94,5
+2025-03-08,Low,Phone,Refund Request,256.92,2.89,0
+2025-04-19,Low,Web Form,Technical Issue,560.8,1.92,5
+2025-04-30,Medium,Email,Shipping,222.01,2.05,4
+2025-03-23,Low,Social Media,Billing,605.63,3.83,6
+2025-01-09,High,Social Media,Technical Issue,231.97,1.42,5
+2024-09-25,Medium,Social Media,Feature Request,521.98,2.2,0
+2024-04-02,High,Email,Refund Request,599.61,2.4,3
+2024-03-07,Medium,Web Form,Product Question,560.13,1.58,1
+2025-05-21,Urgent,Mobile App,Account Access,695.73,1.67,5
+2024-09-27,High,Email,Product Question,513.93,2.94,6
+2025-03-13,Medium,Mobile App,Product Question,637.32,2.92,2
+2025-05-11,Urgent,Mobile App,Product Question,143.35,1.09,2
+2024-02-11,Medium,Live Chat,Product Question,718.45,2.2,4
+2025-04-20,High,Live Chat,Refund Request,636.26,3.34,2
+2024-06-01,Urgent,Mobile App,Product Question,100.23,4.49,0
+2024-12-30,Urgent,Email,Feature Request,358.38,3.22,1
+2024-09-04,Urgent,Social Media,Refund Request,472.08,4.83,3
+2024-12-21,Urgent,Web Form,Technical Issue,502.04,1.1,2
+2024-09-21,Low,Social Media,Feature Request,45.02,2.91,3
+2025-03-23,High,Web Form,Billing,406.23,2.54,5
+2025-05-24,Urgent,Phone,Feature Request,298.66,4.4,0
+2025-01-06,Low,Web Form,Product Question,35.55,4.6,1
+2024-08-11,High,Web Form,Account Access,302.8,2.88,4
+2024-12-03,Low,Social Media,Shipping,566.03,2.6,4
+2024-03-30,Urgent,Email,Account Access,600.31,3.5,4
+2024-08-04,Urgent,Email,Product Question,710.04,1.39,4
+2025-02-05,High,Email,Shipping,221.98,1.19,1
+2024-08-03,High,Mobile App,Technical Issue,26.33,4.55,6
+2025-06-22,Medium,Mobile App,Technical Issue,487.36,3.86,4
+2024-09-19,Medium,Social Media,Product Question,438.23,1.99,0
+2025-04-20,High,Email,Shipping,107.23,3.38,6
+2025-04-21,High,Phone,Refund Request,471.18,1.19,3
+2024-05-05,Low,Email,Technical Issue,397.97,2.58,4
+2024-12-12,Low,Web Form,Product Question,320.71,3.41,2
+2025-05-27,Urgent,Email,Feature Request,225.76,3.78,1
+2025-03-21,Urgent,Mobile App,Feature Request,448.6,3.36,1
+2024-09-20,Medium,Live Chat,Refund Request,243.48,1.59,3
+2024-09-28,High,Live Chat,Shipping,72.51,4.72,4
+2025-03-05,Medium,Live Chat,Technical Issue,590.31,4.2,5
+2024-10-16,High,Social Media,Product Question,47.78,1.69,3
+2024-10-19,Medium,Mobile App,Refund Request,648.86,1.96,5
+2025-01-12,High,Social Media,Billing,189.95,4.65,2
+2025-06-17,High,Email,Billing,537.15,1.52,1
+2025-01-10,High,Social Media,Product Question,457.0,4.21,3
+2024-09-28,Urgent,Email,Feature Request,43.0,4.62,5
+2024-04-28,Medium,Live Chat,Billing,284.18,3.32,2
+2024-06-05,Low,Email,Technical Issue,449.97,4.85,0
+2025-05-15,Medium,Web Form,Billing,597.78,1.54,4
+2025-03-28,Low,Web Form,Technical Issue,143.37,3.43,6
+2024-05-01,Low,Web Form,Refund Request,656.31,1.81,6
+2024-07-12,Low,Phone,Account Access,260.99,3.41,6
+2024-12-21,High,Live Chat,Feature Request,545.92,4.39,0
+2024-12-10,High,Email,Billing,75.73,1.09,1
+2024-07-14,Urgent,Phone,Product Question,285.01,4.26,4
+2025-01-15,Medium,Phone,Technical Issue,610.3,3.17,6
+2024-06-01,Medium,Live Chat,Technical Issue,377.1,2.87,2
+2025-04-29,Medium,Phone,Technical Issue,550.14,1.19,1
+2025-06-20,Low,Live Chat,Technical Issue,13.93,2.31,3
+2024-05-26,Low,Phone,Refund Request,89.21,4.1,6
+2025-01-01,High,Phone,Refund Request,86.57,1.45,5
+2024-10-26,High,Email,Product Question,528.29,1.15,3
+2024-06-02,Medium,Email,Billing,622.67,1.35,2
+2024-12-06,Medium,Live Chat,Shipping,468.75,2.91,3
+2025-01-27,Low,Web Form,Shipping,187.4,3.49,3
+2024-10-01,Urgent,Mobile App,Account Access,304.9,1.25,4
+2025-02-10,Medium,Web Form,Product Question,160.16,4.02,3
+2025-05-27,High,Web Form,Account Access,574.01,4.04,4
+2024-07-14,Low,Mobile App,Feature Request,344.76,1.52,0
+2024-07-14,Urgent,Phone,Feature Request,703.39,4.48,0
+2025-05-18,Urgent,Web Form,Refund Request,297.45,3.06,4
+2025-03-04,Low,Mobile App,Technical Issue,286.87,1.08,0
+2025-06-07,Medium,Live Chat,Account Access,686.41,2.62,2
+2025-02-15,Medium,Phone,Account Access,528.27,3.64,5
+2024-05-23,Urgent,Email,Shipping,168.69,3.09,4
+2024-11-03,Urgent,Web Form,Technical Issue,406.13,3.64,5
+2025-01-29,Low,Email,Billing,128.75,1.2,1
+2024-07-17,Low,Social Media,Billing,265.94,4.43,4
+2024-04-19,Low,Phone,Billing,224.64,3.93,3
+2025-01-30,Low,Social Media,Feature Request,60.98,4.02,1
+2024-04-27,Urgent,Live Chat,Refund Request,121.86,4.41,4
+2025-06-06,Medium,Web Form,Account Access,460.33,2.53,5
+2025-02-21,Medium,Phone,Shipping,469.68,2.92,1
+2025-03-09,Medium,Social Media,Feature Request,446.06,1.03,3
+2025-05-25,Urgent,Mobile App,Account Access,113.36,1.7,6
+2025-05-11,Urgent,Mobile App,Product Question,515.51,3.55,1
+2024-09-24,Low,Email,Shipping,117.52,3.29,4
+2024-07-17,Medium,Web Form,Technical Issue,58.41,2.38,6
+2024-06-18,Low,Web Form,Feature Request,531.96,2.72,2
+2025-01-26,Medium,Live Chat,Account Access,522.43,4.08,6
+2024-06-01,Urgent,Social Media,Technical Issue,194.32,3.97,6
+2025-01-14,Medium,Live Chat,Billing,496.71,3.12,3
+2024-09-02,Low,Phone,Product Question,223.56,3.41,1
+2024-05-04,Medium,Phone,Account Access,345.37,4.6,1
+2024-12-11,High,Web Form,Billing,49.03,1.1,5
+2024-03-22,Medium,Social Media,Product Question,433.21,3.94,2
+2025-05-11,Medium,Social Media,Account Access,193.13,4.3,0
+2024-06-02,Medium,Social Media,Feature Request,342.04,4.71,5
+2025-02-07,Medium,Social Media,Technical Issue,687.17,2.44,0
+2024-10-30,Medium,Phone,Billing,244.76,2.71,1
+2025-04-19,Low,Phone,Product Question,681.4,3.48,3
+2025-02-07,Urgent,Live Chat,Account Access,715.26,2.85,3
+2025-02-13,High,Social Media,Refund Request,253.88,4.8,4
+2024-10-16,Urgent,Live Chat,Billing,665.75,2.04,4
+2024-08-20,Low,Mobile App,Billing,366.69,1.08,2
+2024-02-22,Low,Phone,Account Access,485.09,3.65,1
+2025-05-29,Medium,Email,Account Access,519.2,4.75,5

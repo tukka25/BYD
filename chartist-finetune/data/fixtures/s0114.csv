@@ -1,241 +1,241 @@
-incident_date,weather_condition,road_type,severity_level,vehicles_involved,injury_count,response_time_minutes
-2024-05-18,sleet,state_highway,property_damage_only,7,12,109.78
-2025-04-21,sleet,state_highway,property_damage_only,1,2,47.79
-2024-07-10,fog,interstate,fatal,9,8,116.29
-2024-08-13,high_winds,residential,fatal,10,8,7.61
-2024-01-19,sleet,interstate,fatal,8,9,33.47
-2025-01-27,clear,urban_arterial,property_damage_only,8,19,37.83
-2024-03-09,rain,interstate,minor_injury,5,8,47.91
-2025-05-15,snow,interstate,minor_injury,8,9,23.16
-2025-01-25,high_winds,state_highway,serious_injury,7,10,18.38
-2024-03-01,snow,rural_road,serious_injury,9,24,21.03
-2024-12-22,high_winds,parking_lot,minor_injury,2,24,98.29
-2024-01-08,high_winds,state_highway,property_damage_only,7,12,96.66
-2024-10-14,rain,parking_lot,minor_injury,5,5,69.5
-2024-02-12,sleet,residential,fatal,3,21,34.49
-2025-05-21,rain,parking_lot,property_damage_only,4,9,97.17
-2024-07-17,high_winds,state_highway,fatal,8,24,18.9
-2024-06-29,sleet,rural_road,fatal,6,6,36.36
-2024-02-22,clear,state_highway,fatal,6,6,11.36
-2024-12-31,snow,urban_arterial,minor_injury,3,23,10.58
-2025-06-04,clear,interstate,property_damage_only,11,22,32.43
-2024-11-04,snow,state_highway,fatal,8,1,76.57
-2025-05-17,sleet,parking_lot,property_damage_only,8,8,113.51
-2025-02-15,snow,residential,minor_injury,6,13,103.29
-2025-03-24,clear,state_highway,serious_injury,9,12,76.08
-2024-08-24,clear,parking_lot,property_damage_only,4,24,26.38
-2024-11-22,sleet,rural_road,property_damage_only,6,8,11.58
-2024-08-21,snow,urban_arterial,property_damage_only,6,4,24.82
-2024-12-20,snow,rural_road,fatal,4,8,81.95
-2024-03-08,sleet,rural_road,property_damage_only,2,10,29.62
-2025-03-07,sleet,parking_lot,property_damage_only,9,15,3.99
-2024-10-08,snow,interstate,serious_injury,7,14,55.47
-2024-08-29,snow,parking_lot,fatal,4,18,76.65
-2025-04-08,snow,residential,minor_injury,11,9,9.76
-2024-01-15,sleet,state_highway,minor_injury,3,2,81.44
-2024-11-07,rain,state_highway,property_damage_only,6,20,28.64
-2025-01-23,sleet,residential,minor_injury,9,16,82.02
-2024-01-07,rain,residential,minor_injury,9,7,67.92
-2024-07-25,fog,state_highway,fatal,11,18,78.97
-2025-02-21,rain,state_highway,fatal,1,15,97.14
-2024-12-23,sleet,parking_lot,serious_injury,9,9,110.18
-2024-04-18,rain,rural_road,serious_injury,2,7,89.8
-2024-12-23,clear,residential,serious_injury,8,1,54.83
-2025-04-22,high_winds,residential,minor_injury,11,8,35.1
-2024-07-06,snow,state_highway,minor_injury,8,22,115.61
-2025-01-07,rain,state_highway,property_damage_only,4,0,113.68
-2024-06-24,high_winds,urban_arterial,serious_injury,7,4,77.47
-2024-07-23,rain,urban_arterial,minor_injury,6,16,12.53
-2024-06-29,snow,residential,serious_injury,5,21,106.0
-2024-07-18,high_winds,state_highway,serious_injury,4,3,75.33
-2024-08-25,sleet,interstate,property_damage_only,7,7,24.71
-2024-11-27,rain,state_highway,minor_injury,5,7,80.07
-2024-01-05,fog,state_highway,property_damage_only,12,12,43.12
-2024-08-12,clear,interstate,minor_injury,8,9,104.98
-2024-11-30,clear,parking_lot,serious_injury,6,14,20.38
-2024-04-04,clear,parking_lot,fatal,7,9,43.28
-2025-03-21,fog,parking_lot,minor_injury,10,6,81.26
-2024-02-10,clear,urban_arterial,serious_injury,3,6,10.29
-2024-12-28,rain,parking_lot,fatal,3,22,24.92
-2024-12-20,snow,state_highway,serious_injury,5,12,74.94
-2024-05-07,clear,rural_road,serious_injury,6,4,111.67
-2024-11-09,high_winds,interstate,minor_injury,4,20,51.09
-2025-01-06,rain,residential,fatal,6,14,43.74
-2024-03-24,high_winds,rural_road,fatal,3,5,7.38
-2025-05-22,fog,rural_road,fatal,4,5,70.49
-2024-07-17,high_winds,rural_road,fatal,9,11,38.01
-2024-04-13,rain,urban_arterial,minor_injury,5,11,3.69
-2025-04-22,high_winds,interstate,fatal,7,22,78.23
-2024-01-23,high_winds,urban_arterial,fatal,6,0,65.62
-2024-04-22,fog,interstate,minor_injury,4,6,13.5
-2024-01-14,fog,rural_road,minor_injury,4,0,45.05
-2025-03-20,sleet,residential,property_damage_only,11,10,8.0
-2024-05-24,rain,state_highway,property_damage_only,2,16,52.8
-2025-06-01,fog,rural_road,minor_injury,3,18,82.18
-2025-04-19,sleet,urban_arterial,property_damage_only,12,5,3.45
-2025-02-27,snow,rural_road,minor_injury,11,11,73.32
-2025-01-27,clear,residential,serious_injury,8,4,72.66
-2025-06-10,rain,interstate,serious_injury,8,6,90.69
-2024-08-20,high_winds,state_highway,serious_injury,2,18,100.54
-2024-08-19,snow,state_highway,property_damage_only,4,3,114.09
-2025-03-30,fog,parking_lot,minor_injury,2,3,28.16
-2025-06-06,fog,rural_road,minor_injury,6,14,53.7
-2024-01-08,fog,urban_arterial,property_damage_only,9,3,92.84
-2025-01-04,clear,urban_arterial,serious_injury,3,10,109.47
-2024-01-27,fog,parking_lot,fatal,9,4,95.33
-2024-10-14,rain,state_highway,property_damage_only,8,7,115.5
-2024-02-07,rain,interstate,serious_injury,5,24,45.8
-2024-07-28,sleet,urban_arterial,property_damage_only,11,4,15.38
-2025-03-25,clear,interstate,property_damage_only,6,12,106.27
-2024-12-19,clear,parking_lot,minor_injury,7,11,12.9
-2024-03-04,sleet,rural_road,serious_injury,7,3,72.89
-2024-04-18,sleet,residential,fatal,11,21,83.09
-2024-03-03,high_winds,residential,property_damage_only,8,24,14.36
-2024-05-15,high_winds,urban_arterial,fatal,2,24,9.0
-2024-01-04,rain,interstate,fatal,4,6,8.53
-2025-02-19,high_winds,urban_arterial,property_damage_only,8,2,106.04
-2025-01-24,high_winds,urban_arterial,property_damage_only,9,22,64.5
-2025-05-07,sleet,residential,property_damage_only,8,12,86.67
-2025-01-29,snow,urban_arterial,fatal,9,16,90.93
-2025-05-09,snow,interstate,serious_injury,6,17,110.62
-2024-11-17,high_winds,residential,minor_injury,7,21,113.83
-2024-03-29,sleet,parking_lot,serious_injury,11,3,103.49
-2024-02-19,clear,urban_arterial,minor_injury,2,13,118.42
-2024-09-01,rain,parking_lot,minor_injury,2,22,55.16
-2024-07-16,rain,residential,property_damage_only,12,10,31.05
-2024-10-14,rain,interstate,fatal,3,24,73.41
-2024-04-26,fog,residential,serious_injury,1,17,29.19
-2024-09-18,fog,interstate,fatal,6,22,117.9
-2024-01-18,clear,urban_arterial,property_damage_only,5,6,110.83
-2025-01-18,clear,residential,property_damage_only,7,25,35.56
-2024-08-20,snow,interstate,serious_injury,2,18,31.41
-2024-09-10,snow,residential,property_damage_only,2,3,26.83
-2024-04-05,snow,rural_road,minor_injury,6,16,119.27
-2024-07-23,clear,state_highway,property_damage_only,7,15,12.42
-2024-03-18,snow,urban_arterial,serious_injury,10,0,76.58
-2025-03-28,clear,urban_arterial,property_damage_only,5,14,39.95
-2024-05-20,rain,residential,serious_injury,11,3,34.92
-2024-06-24,fog,residential,fatal,1,14,111.43
-2024-12-04,snow,parking_lot,serious_injury,11,20,83.84
-2024-03-10,high_winds,residential,minor_injury,3,10,72.97
-2025-03-07,rain,parking_lot,property_damage_only,1,8,103.62
-2024-01-15,rain,urban_arterial,property_damage_only,2,16,44.61
-2024-06-24,snow,urban_arterial,fatal,4,16,91.55
-2024-06-22,sleet,urban_arterial,property_damage_only,7,7,4.4
-2024-10-09,clear,urban_arterial,serious_injury,7,1,7.2
-2024-05-04,snow,parking_lot,minor_injury,6,8,88.49
-2024-05-17,fog,urban_arterial,serious_injury,11,3,93.42
-2025-01-05,rain,rural_road,property_damage_only,2,12,52.44
-2025-05-16,fog,urban_arterial,property_damage_only,2,4,57.45
-2024-04-30,high_winds,rural_road,minor_injury,8,6,103.1
-2024-08-14,high_winds,rural_road,minor_injury,9,7,44.95
-2024-12-11,rain,interstate,minor_injury,4,10,82.76
-2025-01-06,clear,interstate,fatal,11,14,106.67
-2025-02-25,fog,residential,property_damage_only,8,25,103.48
-2024-02-13,rain,state_highway,property_damage_only,8,18,67.54
-2024-07-25,snow,residential,minor_injury,3,18,16.27
-2025-02-04,fog,interstate,serious_injury,7,13,11.13
-2024-03-24,clear,residential,minor_injury,11,13,85.96
-2024-01-22,high_winds,parking_lot,fatal,2,18,59.16
-2024-05-31,snow,residential,serious_injury,11,7,14.47
-2024-07-11,snow,residential,serious_injury,5,14,29.09
-2025-03-26,clear,residential,property_damage_only,7,18,71.88
-2025-04-23,high_winds,interstate,serious_injury,6,3,32.47
-2024-05-24,high_winds,interstate,minor_injury,2,3,33.29
-2025-03-15,sleet,state_highway,property_damage_only,10,12,110.38
-2024-06-15,snow,interstate,property_damage_only,5,3,107.59
-2025-06-17,clear,residential,fatal,10,9,84.32
-2024-10-11,clear,interstate,fatal,3,8,116.12
-2024-10-31,snow,interstate,serious_injury,6,19,110.28
-2024-12-01,high_winds,rural_road,property_damage_only,6,12,116.21
-2025-04-30,rain,parking_lot,serious_injury,12,3,34.93
-2024-09-01,fog,urban_arterial,property_damage_only,5,12,92.27
-2024-04-29,rain,residential,minor_injury,11,6,100.58
-2024-12-18,fog,parking_lot,fatal,5,5,43.8
-2025-06-01,high_winds,residential,property_damage_only,5,8,49.17
-2024-02-06,fog,parking_lot,minor_injury,7,2,12.13
-2024-05-25,clear,urban_arterial,fatal,11,3,73.12
-2024-12-02,snow,urban_arterial,minor_injury,5,8,79.9
-2024-07-12,clear,interstate,fatal,6,16,109.03
-2024-01-28,sleet,state_highway,minor_injury,5,9,59.33
-2024-08-02,snow,parking_lot,fatal,2,3,28.27
-2024-02-01,high_winds,state_highway,serious_injury,3,1,56.29
-2024-12-01,fog,state_highway,minor_injury,10,19,59.11
-2024-03-21,high_winds,urban_arterial,serious_injury,1,16,62.15
-2024-06-06,sleet,state_highway,fatal,9,23,105.34
-2024-01-27,rain,state_highway,minor_injury,12,1,69.93
-2025-03-07,snow,residential,property_damage_only,7,7,79.54
-2024-06-08,rain,rural_road,serious_injury,4,5,14.43
-2024-08-31,snow,state_highway,property_damage_only,3,19,39.14
-2024-10-17,clear,rural_road,minor_injury,11,19,75.97
-2024-06-17,snow,parking_lot,minor_injury,9,13,94.37
-2024-10-13,rain,rural_road,minor_injury,8,12,113.03
-2024-07-17,fog,residential,minor_injury,9,2,36.04
-2024-11-09,rain,rural_road,fatal,3,4,42.71
-2024-11-21,sleet,urban_arterial,fatal,5,24,69.04
-2024-01-03,high_winds,rural_road,minor_injury,6,23,84.04
-2025-01-21,rain,rural_road,fatal,11,5,75.57
-2025-04-28,rain,urban_arterial,serious_injury,8,1,53.04
-2024-02-29,sleet,parking_lot,fatal,9,2,52.77
-2024-11-25,high_winds,state_highway,property_damage_only,10,23,84.57
-2024-03-14,clear,rural_road,serious_injury,6,19,20.73
-2024-06-23,snow,urban_arterial,property_damage_only,7,20,42.25
-2024-01-29,rain,residential,property_damage_only,2,17,95.24
-2025-03-13,rain,urban_arterial,serious_injury,6,12,71.46
-2024-09-11,high_winds,interstate,minor_injury,2,2,8.73
-2025-01-24,sleet,interstate,serious_injury,1,13,114.06
-2024-01-31,fog,state_highway,fatal,3,4,31.55
-2024-12-02,sleet,parking_lot,serious_injury,6,15,43.72
-2025-04-28,snow,urban_arterial,fatal,5,22,99.12
-2024-05-14,high_winds,parking_lot,property_damage_only,11,9,7.67
-2024-08-10,snow,state_highway,minor_injury,9,14,49.44
-2025-03-03,fog,state_highway,fatal,11,10,48.57
-2024-01-08,high_winds,state_highway,fatal,8,13,38.65
-2024-01-09,fog,parking_lot,fatal,8,6,108.48
-2025-03-08,snow,state_highway,property_damage_only,11,9,48.71
-2024-09-17,sleet,parking_lot,fatal,6,3,101.73
-2025-02-14,fog,parking_lot,serious_injury,4,21,101.15
-2024-03-29,clear,urban_arterial,property_damage_only,8,11,7.0
-2024-12-15,sleet,residential,fatal,8,10,100.46
-2025-04-21,sleet,state_highway,fatal,3,20,101.83
-2024-06-23,fog,interstate,serious_injury,10,17,29.39
-2024-03-25,snow,urban_arterial,minor_injury,3,10,21.84
-2024-09-10,snow,parking_lot,serious_injury,5,9,19.87
-2024-10-31,sleet,parking_lot,fatal,3,4,37.99
-2025-02-26,rain,residential,minor_injury,8,11,53.72
-2024-12-18,high_winds,residential,serious_injury,10,14,76.9
-2024-03-10,rain,state_highway,minor_injury,10,24,99.8
-2024-12-12,high_winds,interstate,property_damage_only,2,2,58.27
-2024-11-15,snow,parking_lot,minor_injury,2,10,30.04
-2025-06-23,fog,interstate,fatal,2,4,4.39
-2024-09-23,fog,state_highway,property_damage_only,5,2,32.89
-2025-02-28,fog,state_highway,serious_injury,7,6,11.72
-2024-12-06,fog,rural_road,property_damage_only,11,18,45.6
-2025-04-14,snow,parking_lot,fatal,6,24,80.22
-2025-03-25,sleet,parking_lot,serious_injury,9,20,30.39
-2024-04-06,rain,parking_lot,property_damage_only,12,19,50.73
-2025-01-26,high_winds,rural_road,fatal,4,8,7.45
-2024-07-07,clear,urban_arterial,serious_injury,10,12,113.94
-2024-01-07,clear,interstate,minor_injury,8,9,46.44
-2024-03-16,high_winds,residential,fatal,6,12,77.74
-2024-08-04,fog,state_highway,fatal,8,14,50.11
-2024-04-08,clear,parking_lot,property_damage_only,11,2,32.97
-2024-11-28,sleet,rural_road,serious_injury,12,22,18.65
-2024-03-22,clear,state_highway,property_damage_only,12,21,78.42
-2024-06-01,rain,urban_arterial,fatal,1,1,43.63
-2024-04-07,snow,residential,fatal,10,17,118.83
-2024-07-10,rain,interstate,serious_injury,5,11,42.24
-2024-06-08,sleet,state_highway,serious_injury,9,23,93.69
-2025-05-25,high_winds,rural_road,property_damage_only,3,22,42.68
-2024-03-21,snow,urban_arterial,minor_injury,3,18,45.32
-2024-09-05,snow,urban_arterial,fatal,7,19,54.21
-2024-09-02,clear,rural_road,minor_injury,8,20,67.4
-2024-09-14,clear,urban_arterial,property_damage_only,12,2,99.95
-2024-02-23,high_winds,state_highway,minor_injury,11,3,21.51
-2025-05-16,snow,state_highway,minor_injury,6,21,48.09
-2024-12-28,clear,parking_lot,serious_injury,3,24,60.61
-2025-04-24,rain,residential,fatal,3,18,78.63
-2025-02-04,rain,residential,property_damage_only,12,12,15.97
-2025-05-06,high_winds,residential,property_damage_only,8,16,116.47
-2024-02-16,snow,interstate,minor_injury,12,22,31.28
-2024-01-04,rain,state_highway,property_damage_only,9,23,34.11
+Report Month,Property Type,Postcode District,Tenancy Type,Gross Monthly Rent,Purchase Price,Gross Yield Percent,Void Days
+2025-06-10,Flat,SW3,Short Assured,1435.22,1224362,7.01,8
+2024-03-15,Semi-Detached,E1,Corporate Let,5532.07,591031,3.62,10
+2024-02-05,Studio,BS8,Holiday Let,460.43,2430231,6.1,1
+2024-01-03,Bungalow,B5,Long Let,1391.37,2223287,10.68,14
+2025-01-21,Flat,E1,Corporate Let,3574.92,2074151,10.28,21
+2024-02-22,Studio,M14,Long Let,2754.28,1110093,10.31,30
+2024-03-20,Bungalow,LS6,Holiday Let,4205.56,1964755,9.06,21
+2024-02-09,Semi-Detached,N7,Short Assured,3725.08,247678,11.47,22
+2024-09-12,Studio,LS6,Long Let,2360.53,2445547,8.51,3
+2024-05-18,Terraced House,B5,Long Let,2462.77,861753,11.61,16
+2024-08-17,Bungalow,BS8,Corporate Let,3015.61,1901542,11.38,1
+2025-02-12,Bungalow,LS6,Holiday Let,1650.17,2354355,3.79,12
+2025-01-12,Flat,M14,Long Let,4075.86,1753975,3.04,4
+2025-05-18,Studio,E1,Corporate Let,4848.2,1201814,5.66,4
+2024-12-15,Studio,SW3,Short Assured,3752.24,155133,12.45,17
+2025-01-31,Semi-Detached,M14,Long Let,5144.25,685247,7.18,22
+2025-06-05,Bungalow,N7,Long Let,5811.12,1101733,5.48,18
+2024-04-27,Bungalow,E1,Long Let,3440.37,2279400,2.29,30
+2025-06-13,Studio,B5,Corporate Let,1207.03,747362,11.87,5
+2024-02-16,Semi-Detached,SW3,Long Let,1978.04,1184069,8.45,13
+2024-06-15,Semi-Detached,BS8,Long Let,5157.95,1564111,10.22,25
+2025-05-30,Detached,LS6,Short Assured,4110.36,409321,12.21,23
+2024-06-27,Flat,SW3,Holiday Let,3478.3,324682,4.39,30
+2024-08-16,Terraced House,BS8,Short Assured,5457.44,725564,12.25,12
+2024-02-12,Semi-Detached,LS6,Corporate Let,4399.14,1573993,7.28,6
+2024-03-08,Semi-Detached,B5,Long Let,2752.39,1601413,6.69,4
+2025-01-22,Bungalow,E1,Short Assured,1429.44,2302419,3.63,24
+2025-04-16,Studio,M14,Corporate Let,3356.14,1795092,4.77,14
+2025-03-13,Terraced House,SW3,Corporate Let,1016.52,1813586,10.71,28
+2024-05-24,Detached,N7,Short Assured,873.97,1510248,11.75,2
+2024-05-18,Bungalow,M14,Corporate Let,3121.31,1214184,2.53,17
+2025-03-05,Flat,SW3,Short Assured,6324.13,1757873,5.48,30
+2025-02-09,Flat,B5,Long Let,3497.9,2495676,11.12,6
+2024-07-24,Flat,LS6,Holiday Let,2119.9,1527301,2.96,8
+2025-01-23,Flat,N7,Short Assured,6233.04,842484,4.0,25
+2024-08-15,Flat,N7,Long Let,4351.51,846959,7.65,25
+2024-01-02,Detached,SW3,Corporate Let,811.31,1385313,10.49,12
+2024-03-23,Bungalow,B5,Holiday Let,3718.99,2330809,11.75,1
+2024-03-29,Semi-Detached,N7,Holiday Let,5881.7,1348014,5.9,8
+2025-03-04,Flat,B5,Holiday Let,2521.85,640498,4.83,19
+2024-02-16,Bungalow,E1,Corporate Let,5313.92,355707,12.18,27
+2024-01-05,Terraced House,E1,Holiday Let,5428.03,1405995,4.6,5
+2025-04-12,Studio,SW3,Holiday Let,880.71,2286148,4.22,19
+2024-07-04,Detached,SW3,Short Assured,5562.94,1611615,2.54,15
+2025-05-18,Terraced House,SW3,Short Assured,1509.49,109324,12.23,31
+2024-04-06,Flat,B5,Long Let,6159.41,716591,10.74,24
+2024-12-01,Terraced House,M14,Long Let,3008.89,954637,3.78,5
+2024-12-27,Semi-Detached,E1,Corporate Let,3857.94,347163,4.32,20
+2024-04-03,Studio,N7,Holiday Let,4221.92,2475133,10.24,26
+2025-04-16,Studio,BS8,Long Let,5749.78,857293,7.56,30
+2025-06-14,Flat,B5,Short Assured,5729.93,2370109,2.41,13
+2025-04-25,Flat,N7,Corporate Let,5439.62,1318171,2.46,31
+2024-05-30,Detached,E1,Corporate Let,5355.0,1875226,2.95,11
+2024-12-20,Studio,BS8,Short Assured,1820.32,884374,3.4,10
+2024-06-11,Bungalow,SW3,Corporate Let,5008.64,1273569,2.41,12
+2024-12-28,Flat,E1,Long Let,1182.96,855871,3.49,4
+2024-01-26,Studio,N7,Holiday Let,5155.09,2011624,6.98,30
+2025-03-05,Studio,M14,Long Let,5704.28,201617,4.68,16
+2025-04-25,Flat,LS6,Corporate Let,2660.86,1752951,7.48,3
+2025-01-05,Semi-Detached,M14,Long Let,4919.71,2129392,6.85,13
+2024-08-03,Flat,M14,Holiday Let,4853.47,1122249,4.15,3
+2024-01-01,Semi-Detached,BS8,Long Let,2008.77,1077890,3.55,23
+2024-05-08,Semi-Detached,M14,Short Assured,2274.92,1009533,9.81,17
+2024-08-08,Detached,N7,Long Let,1128.5,1822680,4.3,22
+2024-12-18,Terraced House,B5,Short Assured,2158.58,2011403,12.24,17
+2024-04-06,Terraced House,E1,Long Let,2913.5,1611708,10.36,1
+2024-11-28,Semi-Detached,SW3,Long Let,6257.53,1401166,11.71,21
+2024-08-22,Terraced House,E1,Corporate Let,6192.23,2317210,9.55,9
+2024-01-07,Detached,LS6,Short Assured,4996.13,1871517,12.47,12
+2024-04-15,Semi-Detached,LS6,Short Assured,4664.46,755811,6.81,14
+2025-04-19,Bungalow,LS6,Long Let,3493.46,1580145,8.64,17
+2024-12-08,Flat,BS8,Holiday Let,2118.62,1697149,11.89,21
+2025-04-21,Bungalow,N7,Long Let,4329.53,1636306,10.87,28
+2024-09-09,Terraced House,E1,Short Assured,4082.77,2310018,9.78,27
+2024-08-02,Terraced House,SW3,Corporate Let,3776.67,975276,10.54,14
+2024-01-05,Bungalow,BS8,Corporate Let,4408.48,1091057,10.6,4
+2024-08-20,Detached,M14,Long Let,2230.96,2233940,6.83,22
+2025-02-04,Terraced House,M14,Holiday Let,2608.49,583069,3.63,17
+2025-02-04,Terraced House,E1,Holiday Let,1801.71,1023167,7.15,23
+2024-05-25,Flat,E1,Holiday Let,4527.21,1151778,11.61,6
+2024-05-09,Semi-Detached,M14,Corporate Let,5454.08,2383141,2.86,15
+2024-02-01,Bungalow,M14,Long Let,2859.67,2381175,11.56,26
+2024-06-10,Semi-Detached,B5,Holiday Let,1384.29,334029,8.77,9
+2024-10-14,Detached,BS8,Corporate Let,4310.07,1812731,11.12,26
+2024-12-26,Terraced House,M14,Short Assured,1142.17,1932505,10.57,21
+2024-04-21,Terraced House,B5,Long Let,2595.13,899959,11.82,30
+2024-04-27,Semi-Detached,B5,Corporate Let,632.4,625985,2.97,26
+2024-03-12,Semi-Detached,N7,Long Let,1594.42,157773,9.79,23
+2024-03-26,Terraced House,E1,Holiday Let,4067.2,1614481,9.41,18
+2024-05-23,Detached,LS6,Long Let,5746.71,215434,12.26,4
+2025-02-21,Terraced House,BS8,Corporate Let,4509.4,2228821,5.78,26
+2025-03-12,Studio,M14,Holiday Let,2515.24,1017864,11.38,20
+2025-01-18,Terraced House,B5,Short Assured,2692.58,865795,3.16,21
+2024-01-11,Semi-Detached,SW3,Corporate Let,6470.67,390010,4.98,4
+2024-04-14,Studio,N7,Long Let,3286.7,307400,7.0,7
+2025-01-10,Bungalow,B5,Holiday Let,3960.25,1241399,12.04,23
+2024-04-27,Studio,B5,Holiday Let,4991.95,1461931,3.49,16
+2024-06-07,Flat,B5,Short Assured,2177.74,1235349,8.89,1
+2024-03-17,Terraced House,E1,Corporate Let,4366.07,777296,9.84,16
+2024-02-05,Studio,E1,Long Let,4485.5,1455605,7.18,3
+2025-01-01,Bungalow,LS6,Long Let,5668.37,2478375,12.36,8
+2025-01-20,Terraced House,SW3,Corporate Let,889.26,1840093,5.73,5
+2024-03-14,Terraced House,M14,Short Assured,1465.33,2224227,10.09,18
+2024-01-29,Detached,N7,Long Let,4723.9,1022762,7.03,17
+2025-02-04,Terraced House,N7,Long Let,2550.17,2413896,12.45,20
+2024-02-26,Studio,SW3,Long Let,5340.37,685298,5.17,2
+2024-01-25,Terraced House,SW3,Holiday Let,3066.08,2261093,12.15,8
+2024-06-17,Flat,BS8,Corporate Let,6339.15,452434,5.52,13
+2025-05-29,Detached,M14,Short Assured,6182.48,1215941,8.32,16
+2025-06-13,Flat,E1,Short Assured,799.73,356406,2.92,24
+2024-11-29,Terraced House,BS8,Long Let,3288.5,1545052,4.02,16
+2024-09-23,Flat,B5,Holiday Let,6268.53,364534,9.6,4
+2025-03-10,Terraced House,SW3,Holiday Let,4992.27,142918,6.92,13
+2024-05-29,Flat,SW3,Short Assured,2053.38,642956,5.45,7
+2025-05-17,Studio,E1,Long Let,4773.25,1912565,7.97,26
+2024-05-27,Bungalow,E1,Corporate Let,492.03,1180242,3.63,19
+2024-01-23,Studio,BS8,Long Let,3708.5,1410777,4.24,16
+2025-05-01,Flat,BS8,Corporate Let,4075.38,1206822,9.61,0
+2025-01-15,Flat,BS8,Holiday Let,571.35,1947279,4.58,12
+2025-01-22,Flat,N7,Long Let,3013.81,700707,3.9,30
+2024-05-02,Studio,LS6,Short Assured,2580.41,2274003,11.52,18
+2025-06-07,Flat,BS8,Long Let,1582.27,1340467,5.35,9
+2024-06-27,Detached,M14,Holiday Let,4098.4,2115432,7.14,31
+2024-06-14,Studio,SW3,Holiday Let,3629.32,2376700,3.94,10
+2024-04-19,Semi-Detached,B5,Corporate Let,5758.12,1581361,4.27,29
+2024-06-09,Semi-Detached,N7,Holiday Let,5749.67,2473828,7.46,2
+2024-12-28,Detached,B5,Long Let,2479.71,1648627,2.71,23
+2024-07-03,Terraced House,BS8,Short Assured,6038.63,684653,8.75,15
+2024-09-15,Terraced House,SW3,Corporate Let,5517.62,667961,3.98,13
+2025-02-20,Detached,B5,Short Assured,937.81,2185101,7.33,5
+2024-10-14,Terraced House,B5,Long Let,3430.16,792892,6.16,27
+2024-12-07,Terraced House,LS6,Long Let,5784.95,474079,12.16,12
+2025-05-29,Studio,SW3,Corporate Let,4816.48,1894677,3.88,18
+2025-05-15,Detached,SW3,Corporate Let,755.44,1053578,8.18,18
+2024-06-01,Studio,SW3,Corporate Let,1129.18,2446600,6.03,15
+2025-05-11,Terraced House,B5,Long Let,5965.13,680199,4.33,27
+2025-04-23,Semi-Detached,N7,Corporate Let,3177.35,1628426,8.34,28
+2024-12-19,Detached,LS6,Holiday Let,6040.4,1961528,9.26,8
+2024-04-23,Semi-Detached,SW3,Corporate Let,2803.43,1743540,4.49,18
+2024-01-18,Terraced House,LS6,Long Let,2484.28,1963497,8.52,10
+2024-10-03,Detached,BS8,Long Let,5043.39,2111190,5.05,28
+2024-05-23,Studio,M14,Holiday Let,2143.23,1856806,3.33,1
+2024-01-04,Studio,E1,Long Let,2129.47,204004,6.95,5
+2024-08-27,Flat,M14,Short Assured,861.08,2354066,7.28,16
+2024-08-09,Studio,SW3,Long Let,4137.56,722213,11.3,5
+2024-07-21,Detached,N7,Short Assured,2978.12,459295,12.02,12
+2024-01-20,Bungalow,N7,Holiday Let,1624.38,279926,12.37,26
+2025-05-08,Terraced House,B5,Short Assured,5245.24,1173976,7.54,10
+2024-01-30,Detached,M14,Corporate Let,3634.82,1451717,2.6,12
+2024-09-15,Studio,E1,Long Let,2302.18,2451034,3.78,0
+2024-01-26,Studio,LS6,Corporate Let,5395.26,415031,8.36,10
+2024-09-30,Bungalow,B5,Corporate Let,1607.67,1240641,8.97,9
+2024-07-10,Detached,SW3,Holiday Let,3948.08,1159562,7.8,23
+2024-03-22,Studio,LS6,Corporate Let,640.81,636765,4.17,29
+2025-02-19,Semi-Detached,SW3,Corporate Let,877.82,187437,7.75,27
+2025-05-18,Terraced House,B5,Short Assured,458.26,789198,3.22,10
+2024-08-06,Bungalow,M14,Corporate Let,1187.51,437419,9.14,19
+2024-12-11,Detached,N7,Holiday Let,6279.9,1326573,9.56,19
+2024-06-29,Flat,LS6,Holiday Let,1021.4,1523858,2.49,13
+2025-01-10,Terraced House,N7,Short Assured,556.24,2260104,5.78,14
+2025-01-21,Semi-Detached,LS6,Long Let,3660.25,833087,10.47,28
+2024-01-08,Studio,B5,Long Let,2615.21,2095199,3.48,15
+2024-08-01,Bungalow,LS6,Long Let,3890.48,371704,8.77,3
+2024-04-19,Terraced House,E1,Short Assured,3205.11,632816,10.23,22
+2024-03-27,Bungalow,SW3,Long Let,1352.55,1214451,5.45,15
+2024-01-24,Semi-Detached,N7,Long Let,5067.53,237760,3.55,14
+2024-09-23,Studio,LS6,Corporate Let,3236.9,1799724,8.67,7
+2025-05-11,Semi-Detached,B5,Short Assured,3443.63,908515,4.57,2
+2024-12-24,Flat,N7,Short Assured,4783.36,635151,8.66,17
+2025-06-22,Semi-Detached,B5,Short Assured,1541.89,2206836,2.86,7
+2024-11-30,Studio,N7,Long Let,3375.76,1568744,6.72,11
+2024-01-25,Flat,BS8,Holiday Let,4041.15,1099510,4.76,3
+2024-12-17,Bungalow,SW3,Short Assured,3663.51,131348,2.88,1
+2025-06-10,Studio,BS8,Holiday Let,4880.97,1256754,9.73,16
+2024-02-28,Flat,N7,Corporate Let,5214.72,826511,2.55,12
+2024-03-08,Bungalow,BS8,Holiday Let,6221.79,973230,8.43,11
+2025-02-09,Semi-Detached,E1,Short Assured,2616.4,1793916,10.15,22
+2025-01-13,Semi-Detached,BS8,Long Let,1676.09,768462,2.9,3
+2024-09-25,Bungalow,N7,Long Let,1111.48,247832,9.13,4
+2024-02-20,Bungalow,LS6,Holiday Let,4649.45,2026360,5.71,10
+2024-12-29,Semi-Detached,BS8,Corporate Let,4881.31,2461362,6.98,30
+2025-03-26,Terraced House,SW3,Short Assured,1792.13,2450161,9.17,16
+2025-05-08,Detached,E1,Corporate Let,5654.16,2145292,3.32,27
+2024-07-24,Bungalow,B5,Corporate Let,1421.4,2397916,8.58,20
+2024-07-08,Semi-Detached,E1,Corporate Let,5829.45,1955185,6.27,22
+2024-09-21,Terraced House,LS6,Long Let,6451.74,1650858,6.8,21
+2024-06-27,Detached,M14,Corporate Let,1074.8,2111450,10.45,24
+2025-05-01,Detached,SW3,Holiday Let,4699.15,1036105,12.3,28
+2024-02-15,Terraced House,BS8,Holiday Let,4846.99,2218735,11.62,6
+2024-12-11,Bungalow,E1,Corporate Let,4691.17,1952330,10.12,22
+2024-06-07,Terraced House,SW3,Holiday Let,2401.45,2408880,8.26,3
+2025-01-02,Bungalow,B5,Holiday Let,6297.44,1659947,5.45,27
+2025-02-01,Semi-Detached,B5,Holiday Let,6487.6,2130735,2.91,8
+2024-01-23,Semi-Detached,M14,Holiday Let,658.71,2031183,8.8,4
+2024-06-16,Semi-Detached,SW3,Short Assured,5055.08,1697934,6.56,22
+2024-03-23,Studio,SW3,Long Let,5916.85,1046089,11.44,30
+2024-07-22,Studio,SW3,Short Assured,3233.43,154252,8.94,15
+2024-06-22,Studio,LS6,Holiday Let,2244.26,1172029,11.89,0
+2024-12-24,Terraced House,N7,Holiday Let,4199.96,2475930,9.75,23
+2025-03-03,Flat,LS6,Long Let,3717.52,1220881,8.65,26
+2024-05-12,Flat,E1,Short Assured,4905.64,645634,6.73,2
+2025-03-12,Detached,SW3,Short Assured,1120.76,1146185,5.15,9
+2024-12-11,Bungalow,LS6,Holiday Let,2844.47,229621,10.59,12
+2024-12-31,Studio,M14,Holiday Let,3516.98,269652,5.72,14
+2024-05-28,Studio,M14,Long Let,3922.84,435096,3.82,30
+2024-07-26,Studio,E1,Short Assured,2766.65,2123586,2.47,0
+2024-01-09,Studio,BS8,Holiday Let,1264.15,478712,4.55,12
+2024-10-17,Detached,B5,Holiday Let,1653.81,1656853,9.94,5
+2025-02-22,Detached,M14,Corporate Let,713.77,415405,6.68,3
+2024-08-18,Studio,M14,Corporate Let,5451.92,483650,3.46,15
+2024-05-26,Terraced House,BS8,Long Let,4231.69,2462789,2.54,5
+2024-10-17,Semi-Detached,E1,Holiday Let,2575.68,330259,7.17,18
+2024-08-05,Semi-Detached,LS6,Holiday Let,5023.88,433040,2.87,20
+2024-10-08,Flat,SW3,Long Let,5102.22,1861441,9.52,12
+2024-09-15,Studio,N7,Long Let,1150.42,877878,11.53,21
+2025-06-06,Studio,E1,Corporate Let,3877.93,1994697,9.96,13
+2025-02-23,Studio,M14,Long Let,635.32,527350,11.35,8
+2025-05-22,Flat,LS6,Corporate Let,1682.85,2263205,4.41,28
+2025-01-31,Bungalow,BS8,Corporate Let,2743.68,1899957,12.22,21
+2024-04-13,Terraced House,LS6,Corporate Let,1566.96,176987,11.75,26
+2024-11-19,Bungalow,E1,Corporate Let,3456.2,420701,3.98,28
+2025-01-04,Terraced House,BS8,Corporate Let,5944.0,1107363,12.12,15
+2024-11-19,Flat,BS8,Holiday Let,6493.57,2359517,11.06,13
+2024-01-07,Bungalow,N7,Holiday Let,2883.42,1006996,5.57,10
+2025-01-21,Flat,SW3,Long Let,4786.62,1109161,5.62,23
+2024-05-01,Terraced House,E1,Long Let,2844.4,2029972,8.11,18
+2025-01-28,Terraced House,B5,Holiday Let,5076.2,188093,9.59,1
+2024-01-14,Studio,BS8,Long Let,6187.08,1310727,8.3,17
+2025-04-23,Terraced House,B5,Long Let,2523.88,1071727,9.71,16
+2024-03-25,Terraced House,N7,Holiday Let,4132.64,1345666,7.98,9
+2024-01-29,Studio,E1,Corporate Let,2013.3,1540997,7.57,10
+2024-02-12,Terraced House,N7,Long Let,3162.72,1055595,4.23,30
+2024-04-24,Terraced House,N7,Short Assured,3386.31,1179684,9.95,16
+2024-05-14,Terraced House,SW3,Long Let,860.43,511405,9.65,27
+2024-12-06,Flat,N7,Long Let,2297.08,1389918,9.12,22
+2025-05-27,Semi-Detached,N7,Long Let,3084.23,1220741,5.51,17
+2025-03-10,Semi-Detached,N7,Long Let,5961.96,1632299,6.39,17
+2024-05-20,Flat,M14,Long Let,6280.91,1722130,2.77,19
+2024-04-22,Studio,E1,Short Assured,3770.37,2101223,12.46,9
+2025-04-22,Detached,BS8,Corporate Let,558.07,2277590,6.57,20

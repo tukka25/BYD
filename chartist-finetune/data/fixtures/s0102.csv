@@ -1,241 +1,241 @@
-trip_date,vehicle_type,route_region,delivery_status,total_distance_km,fuel_consumed_liters,stop_count,average_speed_kmh
-2025-03-22,electric_van,south_metro,delivered,385.69,171.23,93,61.27
-2025-01-28,refrigerated_truck,south_metro,failed_attempt,235.05,42.42,29,35.73
-2025-03-15,cargo_bike,north_metro,delivered,405.67,133.15,80,15.1
-2025-01-31,pickup_truck,central_downtown,delayed,4.25,136.99,65,54.49
-2024-04-19,box_truck,south_metro,delivered,264.29,174.29,29,56.37
-2024-10-23,box_truck,north_metro,failed_attempt,159.67,172.31,52,14.31
-2025-05-17,cargo_van,central_downtown,delayed,173.65,173.9,3,14.17
-2024-09-21,pickup_truck,north_metro,failed_attempt,296.26,154.87,46,34.36
-2025-05-15,pickup_truck,east_suburban,delivered,44.22,80.84,49,61.2
-2024-10-14,pickup_truck,south_metro,failed_attempt,247.74,18.13,84,59.84
-2024-04-25,box_truck,central_downtown,returned_to_depot,382.94,12.19,12,65.4
-2025-01-04,cargo_bike,rural_outer,delivered,21.18,172.15,91,65.59
-2024-01-15,box_truck,north_metro,returned_to_depot,376.97,145.52,115,57.67
-2024-02-20,cargo_van,rural_outer,returned_to_depot,305.88,147.83,97,71.87
-2024-05-29,cargo_van,north_metro,failed_attempt,298.1,173.92,49,7.79
-2025-06-03,cargo_van,east_suburban,delivered,9.07,68.52,21,63.28
-2024-09-17,electric_van,central_downtown,returned_to_depot,58.9,157.8,104,89.52
-2025-05-05,electric_van,south_metro,in_transit,213.03,157.7,41,87.13
-2024-10-16,box_truck,central_downtown,delivered,76.73,21.82,63,31.68
-2024-05-05,electric_van,west_suburban,returned_to_depot,407.89,102.12,75,6.85
-2024-05-16,pickup_truck,west_suburban,failed_attempt,201.98,46.69,95,81.14
-2025-03-16,pickup_truck,north_metro,failed_attempt,299.1,159.17,63,60.36
-2024-11-15,cargo_van,east_suburban,delivered,335.16,165.46,47,92.39
-2024-04-09,box_truck,west_suburban,failed_attempt,415.73,105.93,59,85.7
-2024-05-21,cargo_van,rural_outer,in_transit,239.94,162.79,84,8.98
-2024-03-14,cargo_van,west_suburban,delayed,217.11,57.79,62,10.86
-2025-06-05,box_truck,west_suburban,in_transit,361.58,17.3,63,30.84
-2024-09-06,box_truck,south_metro,delivered,84.5,47.76,37,48.84
-2024-11-23,cargo_van,west_suburban,delivered,403.97,139.5,34,48.07
-2025-05-21,electric_van,south_metro,delayed,162.61,39.23,11,89.12
-2024-04-08,electric_van,east_suburban,in_transit,186.09,176.63,110,88.87
-2024-11-20,cargo_bike,north_metro,returned_to_depot,113.47,31.8,16,5.86
-2025-01-10,box_truck,west_suburban,in_transit,363.52,61.61,24,41.96
-2024-08-14,box_truck,south_metro,failed_attempt,10.37,108.39,21,93.63
-2024-08-26,cargo_van,central_downtown,delivered,185.02,21.59,105,64.57
-2024-03-25,pickup_truck,rural_outer,failed_attempt,225.85,125.48,84,91.94
-2025-03-07,box_truck,north_metro,in_transit,284.7,74.79,106,83.62
-2024-10-28,electric_van,south_metro,returned_to_depot,339.34,134.86,19,9.61
-2025-04-19,electric_van,east_suburban,failed_attempt,210.54,86.03,36,81.86
-2024-12-23,refrigerated_truck,south_metro,delivered,194.97,160.12,57,84.68
-2024-01-23,cargo_bike,west_suburban,in_transit,126.49,36.83,51,81.07
-2024-09-01,refrigerated_truck,west_suburban,delayed,144.85,62.87,10,40.59
-2024-08-27,box_truck,east_suburban,in_transit,442.06,25.1,44,88.61
-2024-01-07,refrigerated_truck,east_suburban,delivered,181.03,8.84,77,39.15
-2024-05-31,pickup_truck,west_suburban,delayed,8.71,91.23,118,38.0
-2024-01-21,pickup_truck,west_suburban,delayed,237.49,34.4,101,14.39
-2025-04-17,pickup_truck,east_suburban,delayed,293.4,148.34,50,89.75
-2025-05-21,cargo_bike,central_downtown,delayed,248.65,51.4,116,13.53
-2024-07-20,electric_van,south_metro,delivered,276.67,107.61,48,54.79
-2024-06-23,pickup_truck,rural_outer,delayed,157.07,96.25,75,37.87
-2024-07-01,refrigerated_truck,west_suburban,delayed,144.31,5.15,96,10.15
-2024-09-14,cargo_van,rural_outer,returned_to_depot,201.81,33.41,65,29.74
-2024-09-29,electric_van,central_downtown,delivered,61.76,46.52,67,57.03
-2025-03-28,pickup_truck,north_metro,in_transit,219.93,67.09,60,35.24
-2025-02-10,box_truck,south_metro,returned_to_depot,312.78,14.03,52,11.27
-2024-01-25,cargo_van,rural_outer,in_transit,99.12,117.29,68,19.32
-2024-08-04,cargo_van,central_downtown,delivered,237.11,38.28,109,39.22
-2025-06-08,electric_van,central_downtown,delivered,311.36,151.81,119,5.39
-2025-02-04,refrigerated_truck,south_metro,delayed,383.53,85.59,90,23.22
-2024-11-24,pickup_truck,west_suburban,failed_attempt,137.57,162.28,25,84.95
-2025-01-03,cargo_van,east_suburban,in_transit,76.19,53.25,45,26.3
-2024-02-17,refrigerated_truck,south_metro,returned_to_depot,91.9,70.89,43,55.17
-2025-02-28,box_truck,central_downtown,failed_attempt,119.78,127.25,107,80.55
-2024-01-31,electric_van,west_suburban,returned_to_depot,435.32,92.28,28,57.23
-2024-11-25,pickup_truck,west_suburban,in_transit,366.5,41.25,71,73.45
-2024-06-08,refrigerated_truck,central_downtown,delivered,89.9,151.86,117,78.77
-2025-05-15,cargo_bike,central_downtown,in_transit,76.59,96.57,92,7.1
-2024-12-14,pickup_truck,north_metro,returned_to_depot,406.46,95.78,59,74.47
-2024-03-23,cargo_bike,east_suburban,returned_to_depot,443.96,133.01,76,77.65
-2024-07-13,refrigerated_truck,central_downtown,delivered,223.0,64.33,8,25.58
-2024-10-14,cargo_van,west_suburban,returned_to_depot,117.58,93.21,105,47.4
-2025-03-23,electric_van,south_metro,failed_attempt,16.66,139.48,42,59.85
-2024-12-09,refrigerated_truck,south_metro,delayed,356.57,45.55,102,44.5
-2024-05-20,electric_van,rural_outer,delayed,417.12,169.21,103,24.22
-2024-12-17,refrigerated_truck,west_suburban,returned_to_depot,225.33,123.19,41,86.65
-2024-10-02,cargo_bike,central_downtown,returned_to_depot,99.63,135.0,85,48.56
-2025-02-02,refrigerated_truck,central_downtown,in_transit,105.29,96.9,50,47.29
-2024-12-16,cargo_van,south_metro,in_transit,77.42,29.46,67,16.57
-2024-04-21,pickup_truck,east_suburban,returned_to_depot,330.2,149.3,3,61.93
-2024-07-29,electric_van,rural_outer,in_transit,274.6,102.32,52,66.29
-2024-10-28,cargo_van,south_metro,returned_to_depot,34.54,172.29,45,42.53
-2025-02-25,pickup_truck,west_suburban,returned_to_depot,117.7,122.27,108,77.19
-2024-01-16,pickup_truck,south_metro,delivered,70.82,126.58,52,88.47
-2025-06-20,electric_van,east_suburban,in_transit,149.35,24.32,90,87.79
-2024-10-23,cargo_van,south_metro,failed_attempt,409.44,49.47,37,80.41
-2024-06-10,pickup_truck,north_metro,delivered,217.31,175.54,54,74.19
-2024-05-18,refrigerated_truck,rural_outer,delivered,291.74,82.81,39,83.6
-2025-01-24,electric_van,rural_outer,in_transit,371.67,1.27,11,63.28
-2024-04-11,cargo_van,rural_outer,failed_attempt,30.8,127.48,46,74.94
-2024-04-29,cargo_van,central_downtown,failed_attempt,75.54,178.79,116,58.94
-2025-05-02,pickup_truck,south_metro,delayed,387.66,132.9,113,51.4
-2024-09-04,cargo_bike,rural_outer,delivered,224.04,44.68,5,94.21
-2024-09-12,electric_van,west_suburban,failed_attempt,214.68,114.65,60,88.18
-2025-02-17,box_truck,west_suburban,delayed,125.93,168.79,42,52.81
-2024-07-21,cargo_bike,north_metro,failed_attempt,161.1,137.3,9,82.94
-2024-09-17,refrigerated_truck,north_metro,delayed,214.52,22.05,28,13.9
-2024-06-03,electric_van,rural_outer,returned_to_depot,420.75,132.77,51,20.73
-2025-02-28,cargo_van,south_metro,delayed,158.17,122.26,19,50.0
-2025-04-25,cargo_van,central_downtown,delayed,0.91,101.72,81,27.03
-2025-01-28,cargo_bike,north_metro,failed_attempt,230.95,88.05,88,61.65
-2024-05-06,pickup_truck,rural_outer,returned_to_depot,367.47,178.97,33,10.13
-2024-09-25,electric_van,west_suburban,failed_attempt,19.28,112.89,16,67.34
-2024-06-22,refrigerated_truck,north_metro,delayed,83.09,29.11,3,19.14
-2025-02-07,pickup_truck,north_metro,returned_to_depot,112.43,20.27,39,69.65
-2024-08-08,pickup_truck,rural_outer,delivered,312.57,55.48,71,89.93
-2024-01-03,electric_van,rural_outer,returned_to_depot,238.6,138.23,42,41.64
-2024-11-17,cargo_van,north_metro,failed_attempt,118.43,71.07,17,56.44
-2024-07-13,refrigerated_truck,rural_outer,returned_to_depot,434.67,73.3,50,61.67
-2024-05-28,refrigerated_truck,rural_outer,returned_to_depot,235.66,136.5,7,25.32
-2025-03-29,refrigerated_truck,central_downtown,failed_attempt,354.73,146.14,22,21.34
-2024-05-28,cargo_van,west_suburban,returned_to_depot,285.97,9.53,25,74.23
-2024-02-22,box_truck,central_downtown,in_transit,242.01,158.4,47,20.52
-2024-01-24,refrigerated_truck,rural_outer,in_transit,198.75,49.56,7,87.85
-2024-04-07,cargo_bike,south_metro,in_transit,147.69,6.08,88,18.8
-2024-03-18,box_truck,east_suburban,delivered,91.82,39.14,53,48.19
-2024-02-26,pickup_truck,central_downtown,delayed,131.48,113.68,39,46.09
-2024-10-10,pickup_truck,central_downtown,delivered,108.37,77.82,7,92.87
-2024-12-08,cargo_bike,central_downtown,in_transit,376.46,17.58,51,11.32
-2025-03-15,cargo_van,west_suburban,in_transit,398.2,19.28,78,5.4
-2024-04-17,box_truck,east_suburban,in_transit,332.46,50.53,45,88.53
-2024-07-20,cargo_van,west_suburban,delayed,69.88,145.07,71,85.73
-2025-01-03,box_truck,east_suburban,failed_attempt,360.23,81.64,110,63.9
-2024-04-09,cargo_bike,rural_outer,returned_to_depot,376.2,134.59,32,81.07
-2024-04-16,refrigerated_truck,east_suburban,failed_attempt,299.8,79.68,56,60.29
-2024-11-25,pickup_truck,west_suburban,delayed,254.16,20.54,11,20.65
-2025-04-15,cargo_van,north_metro,delayed,233.96,103.79,19,9.73
-2025-01-17,electric_van,east_suburban,returned_to_depot,427.33,169.16,73,47.05
-2024-01-10,cargo_van,central_downtown,failed_attempt,432.38,137.6,117,35.26
-2024-05-28,box_truck,west_suburban,delayed,422.75,28.58,4,89.24
-2025-01-26,cargo_bike,east_suburban,in_transit,26.57,8.64,84,13.7
-2024-01-21,refrigerated_truck,west_suburban,delivered,373.77,83.68,73,22.7
-2024-01-10,electric_van,rural_outer,in_transit,321.82,4.35,90,8.33
-2025-04-10,electric_van,central_downtown,returned_to_depot,199.42,127.71,50,44.84
-2024-06-07,electric_van,west_suburban,failed_attempt,371.6,92.55,89,37.2
-2024-10-23,refrigerated_truck,north_metro,failed_attempt,61.48,93.73,44,94.61
-2024-05-21,cargo_van,east_suburban,returned_to_depot,35.83,132.44,24,34.3
-2025-06-16,box_truck,north_metro,returned_to_depot,139.88,9.79,7,83.14
-2025-01-20,cargo_bike,rural_outer,delivered,207.21,129.11,61,53.78
-2024-10-10,electric_van,rural_outer,delivered,434.49,83.75,2,37.88
-2025-03-29,box_truck,west_suburban,returned_to_depot,365.03,155.87,81,21.71
-2024-01-16,cargo_bike,south_metro,returned_to_depot,288.77,149.2,55,22.91
-2025-03-04,cargo_bike,west_suburban,delayed,43.95,60.78,117,59.41
-2025-04-14,cargo_van,west_suburban,delivered,407.79,76.52,5,52.95
-2024-11-03,box_truck,north_metro,failed_attempt,108.45,149.24,31,66.64
-2025-02-01,box_truck,central_downtown,in_transit,374.21,121.03,116,58.08
-2024-08-10,box_truck,south_metro,failed_attempt,76.83,138.5,116,33.85
-2025-05-21,box_truck,rural_outer,failed_attempt,6.46,94.39,55,76.99
-2024-03-30,cargo_van,north_metro,in_transit,32.57,22.88,75,66.73
-2025-03-27,cargo_bike,east_suburban,returned_to_depot,290.03,141.65,54,94.12
-2025-01-03,refrigerated_truck,north_metro,delayed,372.62,61.32,46,68.96
-2025-04-27,pickup_truck,east_suburban,in_transit,182.1,92.11,110,87.96
-2024-10-19,refrigerated_truck,north_metro,in_transit,259.75,107.47,94,44.35
-2025-05-21,electric_van,east_suburban,returned_to_depot,260.85,5.4,38,21.72
-2025-01-21,cargo_van,north_metro,delayed,87.79,132.3,80,90.35
-2024-08-29,cargo_bike,west_suburban,in_transit,108.76,87.22,66,21.96
-2025-05-15,refrigerated_truck,south_metro,delivered,208.63,61.03,106,53.76
-2024-05-24,electric_van,east_suburban,failed_attempt,226.77,151.79,15,86.61
-2025-06-18,electric_van,south_metro,delayed,99.25,90.4,54,28.72
-2025-05-28,box_truck,east_suburban,delivered,390.07,6.42,16,32.81
-2024-02-18,cargo_bike,south_metro,delivered,261.53,87.15,119,8.03
-2024-05-16,pickup_truck,north_metro,returned_to_depot,273.05,40.14,91,73.47
-2025-05-13,pickup_truck,south_metro,returned_to_depot,262.57,133.41,36,17.28
-2024-08-13,cargo_van,rural_outer,returned_to_depot,446.18,78.39,109,70.63
-2025-05-19,box_truck,north_metro,delivered,156.42,165.2,76,57.87
-2024-07-31,refrigerated_truck,south_metro,in_transit,113.73,170.77,65,14.62
-2025-03-04,electric_van,north_metro,returned_to_depot,344.76,155.63,30,68.46
-2025-04-11,pickup_truck,west_suburban,delivered,447.95,18.26,5,16.05
-2024-01-13,pickup_truck,central_downtown,returned_to_depot,319.24,44.67,16,37.44
-2025-02-15,electric_van,south_metro,delayed,231.36,157.83,80,26.48
-2025-02-20,cargo_van,east_suburban,delivered,7.39,92.85,15,79.55
-2024-11-03,pickup_truck,south_metro,in_transit,23.7,108.41,67,77.22
-2024-02-13,electric_van,east_suburban,failed_attempt,300.63,34.82,19,68.03
-2024-10-16,cargo_bike,west_suburban,delivered,30.66,160.15,118,27.54
-2024-08-14,electric_van,south_metro,in_transit,372.05,43.94,93,70.91
-2024-03-17,cargo_bike,central_downtown,delivered,210.55,175.57,120,85.2
-2025-03-07,box_truck,north_metro,failed_attempt,97.73,5.39,100,7.29
-2024-08-09,electric_van,rural_outer,delayed,217.88,142.48,20,14.67
-2025-01-10,box_truck,rural_outer,delayed,319.85,3.28,41,85.08
-2024-01-14,pickup_truck,west_suburban,failed_attempt,132.99,54.27,62,51.25
-2025-03-19,electric_van,west_suburban,delivered,63.08,72.22,98,70.26
-2024-09-01,box_truck,east_suburban,delayed,276.76,42.45,75,26.5
-2025-05-18,box_truck,east_suburban,returned_to_depot,152.61,139.13,18,31.68
-2025-04-05,pickup_truck,central_downtown,delayed,216.7,86.24,16,85.04
-2024-12-19,cargo_bike,rural_outer,returned_to_depot,209.08,77.27,15,23.51
-2024-05-26,box_truck,east_suburban,failed_attempt,344.3,105.2,119,63.53
-2025-04-30,electric_van,central_downtown,in_transit,186.59,134.37,2,44.41
-2024-05-03,cargo_bike,north_metro,in_transit,222.08,147.79,88,38.31
-2024-10-18,electric_van,west_suburban,delivered,279.67,157.68,22,17.2
-2024-12-05,cargo_van,east_suburban,returned_to_depot,388.5,122.98,10,66.83
-2024-11-16,electric_van,north_metro,returned_to_depot,122.59,160.44,23,14.81
-2024-07-20,refrigerated_truck,east_suburban,delayed,399.31,150.04,23,86.61
-2025-04-27,cargo_bike,central_downtown,returned_to_depot,61.68,100.2,32,49.3
-2025-04-20,refrigerated_truck,east_suburban,failed_attempt,241.55,118.72,7,49.4
-2025-04-18,pickup_truck,south_metro,delivered,12.3,111.36,107,5.73
-2024-08-05,cargo_van,rural_outer,delayed,308.97,117.85,83,28.68
-2025-02-06,box_truck,north_metro,in_transit,233.03,79.09,17,91.31
-2024-12-22,pickup_truck,west_suburban,delivered,301.31,58.35,24,67.77
-2024-04-30,cargo_bike,south_metro,in_transit,323.35,168.62,23,71.31
-2024-02-25,cargo_van,west_suburban,delivered,85.8,161.67,39,23.53
-2025-05-24,pickup_truck,north_metro,delivered,72.9,46.13,11,59.69
-2025-03-09,refrigerated_truck,south_metro,delayed,392.71,175.8,77,75.28
-2025-05-05,pickup_truck,north_metro,failed_attempt,389.93,55.49,72,21.15
-2024-10-16,cargo_bike,central_downtown,failed_attempt,293.23,109.88,20,50.31
-2024-03-20,refrigerated_truck,south_metro,in_transit,74.24,82.17,18,77.85
-2024-11-23,cargo_bike,rural_outer,in_transit,82.01,167.48,77,69.53
-2025-04-19,cargo_bike,rural_outer,failed_attempt,199.74,68.56,49,86.83
-2024-11-04,cargo_van,north_metro,delivered,211.63,53.18,72,11.93
-2024-04-16,pickup_truck,rural_outer,delayed,76.92,5.03,27,64.48
-2024-12-18,pickup_truck,rural_outer,failed_attempt,0.99,84.04,60,8.46
-2024-10-22,cargo_van,rural_outer,delayed,388.7,137.47,4,47.26
-2024-09-16,refrigerated_truck,north_metro,delivered,398.76,127.42,92,86.52
-2024-11-23,box_truck,north_metro,delayed,67.19,0.33,10,31.43
-2024-04-26,cargo_bike,north_metro,in_transit,298.97,154.73,55,71.72
-2024-05-31,pickup_truck,rural_outer,in_transit,138.15,171.52,94,55.35
-2025-04-30,cargo_bike,rural_outer,in_transit,135.03,85.22,87,43.2
-2024-10-11,refrigerated_truck,north_metro,failed_attempt,326.23,25.53,74,32.6
-2024-12-18,electric_van,north_metro,delivered,29.0,34.8,97,25.29
-2025-05-15,pickup_truck,north_metro,in_transit,344.75,94.52,63,48.45
-2024-04-25,refrigerated_truck,rural_outer,failed_attempt,37.85,165.87,4,34.88
-2024-05-28,cargo_van,east_suburban,in_transit,416.25,57.21,11,84.28
-2025-02-07,cargo_van,central_downtown,delivered,283.27,14.32,51,55.74
-2024-02-01,refrigerated_truck,east_suburban,returned_to_depot,440.96,49.13,48,27.2
-2025-06-23,electric_van,east_suburban,delayed,306.41,157.8,100,29.93
-2024-11-06,refrigerated_truck,east_suburban,returned_to_depot,203.06,74.96,31,24.79
-2024-04-26,cargo_van,north_metro,delayed,29.69,137.59,86,33.43
-2024-11-03,electric_van,central_downtown,returned_to_depot,439.93,17.29,13,85.05
-2025-06-01,box_truck,rural_outer,returned_to_depot,440.59,72.32,46,30.03
-2024-06-18,cargo_van,west_suburban,in_transit,446.06,129.36,21,22.5
-2024-06-04,cargo_bike,west_suburban,returned_to_depot,351.49,130.86,112,57.0
-2025-01-15,refrigerated_truck,east_suburban,failed_attempt,346.35,116.87,109,19.25
-2024-01-21,refrigerated_truck,north_metro,delayed,166.09,109.79,56,19.09
-2024-11-17,box_truck,south_metro,delivered,420.88,141.98,72,81.53
-2024-08-17,cargo_bike,rural_outer,delayed,342.66,76.18,103,77.58
-2024-08-20,refrigerated_truck,rural_outer,failed_attempt,10.75,153.45,97,77.24
-2025-02-08,electric_van,north_metro,in_transit,415.91,77.22,58,10.26
-2024-07-10,pickup_truck,north_metro,failed_attempt,148.6,72.5,98,46.94
-2024-03-15,refrigerated_truck,north_metro,returned_to_depot,54.71,78.35,36,88.53
-2025-03-19,pickup_truck,central_downtown,delayed,343.84,29.42,55,45.47
-2024-11-30,pickup_truck,east_suburban,delivered,237.96,105.83,34,25.13
-2025-01-28,pickup_truck,south_metro,delivered,65.02,118.09,44,58.94
+sales_order_date,sales_channel,sales_service_period,sales_party_size_category,sales_covers_count,sales_subtotal_amount,sales_tip_amount,sales_total_amount
+2024-06-18,Dine-In,Dinner,Solo,5,550.09,117.81,144.12
+2025-03-04,Takeout,Lunch,Solo,11,491.59,192.8,203.5
+2024-06-18,Dine-In,Breakfast,Private Event,2,134.93,118.25,666.26
+2024-02-02,Drive-Thru,Dinner,Solo,16,232.02,67.89,200.77
+2025-06-02,Drive-Thru,Lunch,Small Group,20,559.26,172.29,884.16
+2024-06-10,Catering,Lunch,Large Group,18,703.0,188.98,669.64
+2024-06-04,Drive-Thru,Breakfast,Private Event,18,46.61,180.97,975.6
+2024-02-19,Drive-Thru,Dinner,Small Group,14,517.88,156.87,589.71
+2024-09-11,Delivery,Lunch,Solo,15,619.04,139.41,908.32
+2024-06-08,Takeout,Lunch,Large Group,5,808.36,111.67,80.09
+2024-01-15,Takeout,Breakfast,Private Event,20,393.69,199.52,372.05
+2024-02-09,Catering,Breakfast,Couple,4,346.65,36.65,367.53
+2025-05-07,Dine-In,Late Night,Solo,13,10.59,60.69,420.09
+2025-05-23,Catering,Breakfast,Small Group,9,587.18,2.49,369.57
+2025-05-19,Delivery,Dinner,Couple,10,820.11,20.43,257.43
+2025-03-21,Catering,Late Night,Private Event,1,150.51,29.35,266.31
+2024-08-24,Delivery,Lunch,Small Group,10,281.84,187.49,956.31
+2024-09-25,Drive-Thru,Breakfast,Small Group,10,567.81,98.33,862.18
+2024-09-14,Delivery,Dinner,Couple,18,74.28,130.65,53.26
+2024-03-24,Catering,Dinner,Small Group,19,510.85,145.24,434.48
+2024-10-30,Catering,Breakfast,Solo,12,819.68,106.96,27.51
+2024-04-09,Catering,Lunch,Private Event,17,116.43,18.72,571.68
+2024-08-08,Takeout,Late Night,Solo,4,749.07,105.65,759.96
+2024-10-05,Dine-In,Lunch,Solo,13,647.9,16.47,650.06
+2024-04-03,Delivery,Dinner,Large Group,17,380.14,36.76,632.76
+2024-03-30,Catering,Dinner,Small Group,4,545.84,41.49,769.85
+2025-04-20,Takeout,Breakfast,Couple,7,184.61,84.98,853.43
+2024-02-05,Delivery,Breakfast,Couple,5,254.48,119.38,310.04
+2025-03-20,Catering,Breakfast,Private Event,13,56.98,183.74,738.38
+2025-03-10,Delivery,Breakfast,Private Event,8,34.97,130.35,790.53
+2025-02-03,Delivery,Dinner,Solo,9,76.13,66.71,898.17
+2024-04-07,Delivery,Lunch,Solo,3,632.61,185.89,599.49
+2024-05-25,Dine-In,Dinner,Couple,9,11.09,5.59,1038.88
+2025-03-29,Dine-In,Breakfast,Private Event,19,832.27,170.97,868.4
+2024-07-14,Catering,Breakfast,Large Group,16,839.25,179.64,872.61
+2024-03-02,Delivery,Lunch,Couple,7,429.65,90.89,334.08
+2024-08-10,Drive-Thru,Breakfast,Small Group,11,816.49,187.12,129.92
+2024-12-21,Catering,Breakfast,Small Group,3,807.95,154.56,581.73
+2024-10-31,Dine-In,Lunch,Large Group,15,325.36,113.74,598.25
+2025-04-22,Dine-In,Dinner,Large Group,18,660.82,55.09,31.82
+2024-04-03,Delivery,Late Night,Private Event,20,786.13,143.24,230.19
+2025-01-26,Delivery,Breakfast,Private Event,18,697.63,174.06,393.52
+2025-05-24,Drive-Thru,Breakfast,Large Group,3,18.72,47.59,173.32
+2024-08-24,Delivery,Breakfast,Couple,7,554.96,18.5,638.49
+2024-12-29,Catering,Late Night,Couple,5,592.76,87.62,831.5
+2024-02-15,Catering,Lunch,Small Group,12,583.2,126.81,280.53
+2024-09-21,Takeout,Dinner,Solo,11,476.8,129.36,800.09
+2024-05-12,Dine-In,Breakfast,Couple,18,337.47,26.22,462.79
+2024-03-18,Dine-In,Late Night,Solo,19,291.38,132.53,338.16
+2024-12-14,Dine-In,Late Night,Solo,3,646.97,52.66,392.24
+2024-11-22,Catering,Breakfast,Private Event,15,219.46,8.59,619.11
+2024-12-30,Delivery,Late Night,Private Event,7,756.27,142.18,943.55
+2024-09-15,Drive-Thru,Lunch,Solo,9,65.24,66.17,534.84
+2024-09-24,Takeout,Lunch,Private Event,18,167.5,187.23,290.74
+2024-11-06,Dine-In,Breakfast,Private Event,14,189.21,103.25,1020.31
+2025-02-16,Drive-Thru,Lunch,Private Event,5,329.95,110.48,752.2
+2024-05-14,Delivery,Breakfast,Large Group,7,601.75,141.18,853.38
+2025-03-22,Catering,Dinner,Solo,8,73.97,121.5,309.63
+2024-06-03,Dine-In,Lunch,Small Group,9,89.76,135.5,801.97
+2024-05-10,Drive-Thru,Lunch,Small Group,8,226.7,185.02,748.17
+2024-03-02,Drive-Thru,Dinner,Small Group,4,69.99,166.67,434.34
+2024-04-26,Drive-Thru,Late Night,Solo,5,10.3,128.52,411.73
+2025-04-17,Drive-Thru,Late Night,Large Group,2,245.47,195.32,1002.93
+2025-03-24,Drive-Thru,Dinner,Solo,4,435.81,198.29,718.81
+2024-06-18,Takeout,Dinner,Solo,14,791.55,55.35,613.32
+2025-05-22,Drive-Thru,Lunch,Large Group,6,391.06,141.33,722.52
+2025-04-14,Takeout,Dinner,Private Event,16,414.31,16.84,661.61
+2024-03-20,Catering,Breakfast,Large Group,2,658.93,182.63,240.02
+2025-01-02,Takeout,Lunch,Small Group,15,616.88,50.47,882.23
+2025-01-04,Delivery,Lunch,Couple,5,630.95,33.31,608.58
+2024-02-02,Delivery,Breakfast,Couple,16,102.64,32.94,57.86
+2024-10-28,Takeout,Breakfast,Private Event,14,783.45,96.58,903.17
+2024-02-24,Delivery,Breakfast,Couple,16,397.39,93.94,542.16
+2024-02-12,Dine-In,Dinner,Small Group,9,573.06,38.1,337.03
+2024-07-28,Takeout,Dinner,Couple,6,788.89,40.19,560.87
+2024-05-30,Drive-Thru,Breakfast,Private Event,16,40.33,109.5,51.94
+2024-09-01,Catering,Late Night,Couple,10,526.66,33.27,1045.53
+2024-07-04,Catering,Dinner,Solo,14,847.73,96.73,548.65
+2025-03-15,Catering,Lunch,Couple,7,73.15,193.4,325.14
+2024-01-14,Drive-Thru,Dinner,Large Group,15,103.58,1.67,254.25
+2025-03-26,Drive-Thru,Dinner,Couple,8,751.65,118.29,183.29
+2024-04-18,Dine-In,Late Night,Solo,5,745.36,146.08,572.35
+2024-06-08,Dine-In,Late Night,Solo,5,27.55,73.18,749.21
+2024-06-09,Catering,Dinner,Couple,7,766.58,124.16,839.66
+2024-11-14,Dine-In,Lunch,Private Event,13,89.79,133.82,660.48
+2025-03-05,Takeout,Breakfast,Solo,14,803.58,165.04,696.96
+2024-08-14,Drive-Thru,Lunch,Large Group,2,87.81,100.14,730.32
+2025-01-19,Dine-In,Lunch,Couple,9,16.16,100.83,379.03
+2024-04-13,Delivery,Breakfast,Large Group,2,494.53,69.98,990.34
+2025-02-23,Takeout,Dinner,Couple,10,166.9,133.67,222.17
+2024-05-26,Dine-In,Lunch,Couple,14,560.57,28.27,68.2
+2024-09-17,Drive-Thru,Breakfast,Couple,17,589.71,88.76,565.85
+2024-11-20,Drive-Thru,Dinner,Private Event,6,324.04,4.59,793.03
+2024-09-08,Delivery,Breakfast,Private Event,15,470.0,79.53,424.62
+2024-05-29,Dine-In,Late Night,Small Group,11,477.86,190.24,228.85
+2024-08-06,Dine-In,Breakfast,Large Group,19,118.06,197.66,586.39
+2025-01-11,Dine-In,Late Night,Large Group,15,292.32,158.32,733.33
+2024-08-28,Dine-In,Dinner,Private Event,20,656.1,46.46,749.41
+2024-09-18,Drive-Thru,Late Night,Small Group,5,837.18,122.41,1040.57
+2024-10-03,Catering,Lunch,Private Event,19,301.54,137.28,836.36
+2024-12-03,Catering,Lunch,Couple,7,178.16,135.12,835.64
+2024-09-17,Catering,Dinner,Large Group,9,346.1,121.55,822.26
+2024-05-29,Drive-Thru,Lunch,Small Group,12,516.82,39.63,1031.91
+2024-12-27,Takeout,Breakfast,Small Group,18,339.91,60.85,404.17
+2024-04-22,Dine-In,Late Night,Couple,7,753.18,195.07,374.14
+2024-08-03,Dine-In,Dinner,Small Group,8,257.93,71.74,575.62
+2025-01-20,Catering,Late Night,Private Event,12,74.66,88.32,868.93
+2024-10-02,Takeout,Dinner,Large Group,1,497.47,17.92,946.65
+2025-03-20,Dine-In,Lunch,Private Event,19,281.47,26.34,471.63
+2024-10-04,Catering,Lunch,Private Event,13,258.38,165.9,121.57
+2024-04-20,Dine-In,Lunch,Large Group,10,570.6,194.28,974.39
+2024-10-29,Takeout,Dinner,Large Group,11,353.09,71.52,468.01
+2024-05-09,Takeout,Dinner,Solo,16,671.41,197.38,649.05
+2024-12-01,Catering,Late Night,Solo,10,130.16,168.76,674.19
+2025-02-04,Catering,Dinner,Private Event,7,725.38,29.11,773.59
+2024-02-04,Drive-Thru,Late Night,Large Group,19,115.93,122.95,854.41
+2025-04-13,Drive-Thru,Late Night,Solo,20,657.64,55.0,532.58
+2024-12-07,Catering,Lunch,Large Group,16,60.19,140.75,523.1
+2025-05-22,Drive-Thru,Lunch,Small Group,11,285.85,146.11,575.33
+2025-04-03,Drive-Thru,Late Night,Large Group,17,673.65,183.77,798.92
+2024-06-12,Takeout,Dinner,Private Event,11,47.67,47.29,838.12
+2024-07-12,Delivery,Late Night,Private Event,17,279.83,115.37,126.92
+2025-04-20,Takeout,Late Night,Couple,8,296.08,145.5,635.88
+2024-01-15,Catering,Late Night,Couple,11,448.01,25.93,497.65
+2025-01-14,Dine-In,Breakfast,Couple,17,685.1,46.31,677.54
+2024-07-12,Dine-In,Dinner,Small Group,12,163.74,165.01,593.95
+2024-03-21,Drive-Thru,Late Night,Solo,7,68.83,50.33,261.4
+2025-02-24,Catering,Breakfast,Large Group,3,805.37,73.6,68.29
+2025-06-18,Takeout,Lunch,Couple,17,176.19,157.15,551.72
+2025-02-04,Takeout,Lunch,Solo,5,340.28,190.44,69.93
+2024-07-24,Drive-Thru,Dinner,Couple,13,491.57,184.41,806.61
+2024-01-19,Delivery,Late Night,Private Event,11,26.88,74.61,959.81
+2024-08-11,Takeout,Lunch,Small Group,3,152.1,40.34,689.13
+2025-01-31,Dine-In,Lunch,Couple,7,417.02,55.57,591.46
+2025-05-29,Catering,Dinner,Private Event,15,578.21,43.17,1015.6
+2024-11-02,Delivery,Dinner,Small Group,3,638.51,83.59,240.05
+2024-07-26,Takeout,Dinner,Solo,13,72.98,115.66,679.21
+2024-07-16,Catering,Breakfast,Private Event,2,312.91,81.29,948.04
+2025-03-08,Dine-In,Dinner,Large Group,10,826.15,62.69,169.27
+2024-05-01,Delivery,Late Night,Large Group,13,404.58,72.61,582.38
+2024-04-08,Catering,Breakfast,Solo,7,393.45,169.67,736.3
+2024-06-16,Catering,Breakfast,Solo,15,845.7,36.15,965.62
+2024-09-06,Drive-Thru,Lunch,Couple,8,744.48,68.81,146.65
+2024-10-20,Catering,Dinner,Small Group,4,101.44,75.03,896.43
+2024-03-06,Takeout,Breakfast,Solo,11,507.75,180.02,176.54
+2025-03-06,Dine-In,Dinner,Couple,4,511.97,33.39,226.31
+2024-10-13,Dine-In,Late Night,Private Event,15,683.63,149.27,65.91
+2024-09-09,Delivery,Late Night,Private Event,8,171.39,24.27,991.77
+2025-02-03,Drive-Thru,Late Night,Couple,4,678.82,84.35,95.7
+2025-03-28,Drive-Thru,Lunch,Large Group,14,834.21,23.28,203.23
+2025-06-04,Catering,Breakfast,Private Event,2,205.67,134.51,594.45
+2024-03-02,Catering,Lunch,Solo,19,691.26,145.7,398.88
+2024-06-02,Dine-In,Late Night,Private Event,1,284.72,61.15,1030.38
+2024-08-25,Drive-Thru,Dinner,Private Event,6,815.87,97.78,16.52
+2024-09-23,Catering,Lunch,Solo,15,482.04,192.61,8.04
+2024-06-21,Catering,Breakfast,Couple,7,96.19,143.11,203.7
+2025-05-31,Drive-Thru,Breakfast,Solo,11,706.58,18.08,350.85
+2025-05-22,Takeout,Breakfast,Solo,19,550.29,27.98,1032.9
+2024-03-20,Takeout,Dinner,Small Group,7,522.54,175.54,979.15
+2024-12-01,Catering,Lunch,Couple,6,14.83,91.6,491.53
+2024-07-20,Takeout,Lunch,Couple,11,814.79,25.13,867.38
+2024-10-06,Delivery,Dinner,Private Event,14,220.38,107.3,257.19
+2024-05-18,Drive-Thru,Dinner,Small Group,10,831.02,7.58,568.22
+2025-05-06,Delivery,Breakfast,Solo,12,241.47,108.97,109.95
+2024-05-18,Dine-In,Breakfast,Solo,13,533.11,25.62,56.37
+2025-03-01,Takeout,Breakfast,Couple,19,409.69,50.45,450.84
+2025-04-02,Drive-Thru,Late Night,Large Group,10,440.6,79.01,481.43
+2024-05-17,Dine-In,Breakfast,Couple,17,682.71,139.84,251.15
+2025-06-04,Catering,Breakfast,Solo,15,746.26,120.05,6.07
+2025-05-18,Takeout,Lunch,Large Group,11,262.2,90.03,1017.96
+2025-03-11,Delivery,Breakfast,Large Group,18,821.73,166.82,725.88
+2024-07-01,Catering,Dinner,Solo,12,28.46,122.85,43.15
+2024-05-26,Catering,Late Night,Private Event,2,751.54,167.92,326.43
+2024-03-08,Drive-Thru,Lunch,Private Event,18,267.7,12.63,949.21
+2024-09-21,Dine-In,Lunch,Small Group,12,417.1,80.7,433.42
+2024-06-11,Takeout,Late Night,Private Event,5,555.66,26.0,94.09
+2024-05-05,Delivery,Breakfast,Small Group,10,199.99,179.61,784.77
+2024-03-08,Drive-Thru,Late Night,Solo,13,293.96,184.76,572.75
+2025-04-03,Delivery,Lunch,Solo,9,640.57,103.31,83.18
+2024-01-22,Dine-In,Late Night,Large Group,15,260.08,121.19,964.88
+2025-03-15,Catering,Late Night,Private Event,20,727.63,8.24,377.84
+2025-06-14,Takeout,Lunch,Solo,1,677.72,189.88,84.45
+2025-02-24,Catering,Breakfast,Couple,11,711.55,27.91,487.63
+2024-01-22,Takeout,Dinner,Small Group,6,674.5,26.26,569.21
+2024-08-15,Takeout,Lunch,Small Group,5,264.91,136.32,671.21
+2025-06-03,Delivery,Lunch,Small Group,7,45.32,132.91,481.11
+2024-02-12,Catering,Dinner,Solo,10,460.51,37.09,1036.54
+2025-06-16,Takeout,Late Night,Solo,16,534.65,146.95,51.59
+2024-04-11,Drive-Thru,Late Night,Large Group,12,654.08,65.64,379.28
+2024-01-24,Catering,Breakfast,Private Event,5,660.68,167.69,667.7
+2024-06-03,Takeout,Dinner,Large Group,10,759.0,165.83,743.88
+2024-09-15,Dine-In,Lunch,Solo,20,621.37,93.45,404.36
+2024-02-13,Drive-Thru,Lunch,Large Group,7,257.32,20.71,189.47
+2024-11-19,Takeout,Late Night,Large Group,8,476.87,125.78,586.64
+2024-11-01,Drive-Thru,Late Night,Small Group,2,27.27,55.72,890.5
+2024-08-31,Takeout,Dinner,Private Event,13,253.62,139.76,67.8
+2024-11-17,Drive-Thru,Late Night,Large Group,7,15.1,139.5,914.79
+2024-12-25,Catering,Lunch,Solo,7,138.89,177.65,972.46
+2024-02-09,Drive-Thru,Late Night,Couple,7,752.93,142.97,762.08
+2025-02-03,Drive-Thru,Lunch,Solo,15,828.93,169.04,391.21
+2025-05-22,Dine-In,Dinner,Large Group,2,646.06,168.69,482.87
+2025-01-28,Catering,Lunch,Private Event,3,564.28,91.88,968.43
+2025-02-14,Drive-Thru,Dinner,Private Event,5,551.2,124.93,934.61
+2024-06-30,Catering,Late Night,Small Group,13,498.62,133.29,43.08
+2025-06-17,Catering,Lunch,Solo,19,768.72,42.58,398.62
+2024-11-28,Drive-Thru,Dinner,Couple,19,278.93,35.2,202.87
+2024-10-25,Takeout,Lunch,Couple,18,599.63,175.6,354.43
+2024-12-05,Takeout,Late Night,Large Group,2,141.3,18.26,636.36
+2024-01-04,Catering,Breakfast,Solo,10,329.53,129.11,75.1
+2024-01-28,Catering,Breakfast,Small Group,18,589.07,137.03,501.03
+2024-09-28,Takeout,Breakfast,Small Group,4,745.33,65.41,798.99
+2025-05-19,Dine-In,Breakfast,Solo,12,288.07,167.26,521.61
+2025-06-23,Dine-In,Lunch,Private Event,7,762.62,18.93,855.69
+2024-12-17,Drive-Thru,Late Night,Large Group,19,476.38,158.7,208.21
+2024-09-27,Catering,Dinner,Small Group,5,356.27,35.03,229.5
+2024-12-24,Catering,Late Night,Solo,16,638.72,28.38,319.95
+2024-05-17,Delivery,Dinner,Large Group,17,288.39,155.74,806.86
+2024-11-22,Catering,Breakfast,Couple,6,234.28,143.17,430.75
+2025-04-08,Delivery,Dinner,Couple,2,188.76,52.83,934.13
+2025-01-15,Dine-In,Late Night,Small Group,9,553.23,183.35,58.35
+2025-01-26,Dine-In,Dinner,Solo,17,227.23,185.03,139.16
+2025-05-24,Catering,Late Night,Couple,10,14.44,67.44,53.81
+2024-08-05,Drive-Thru,Late Night,Solo,6,393.1,112.75,948.42
+2025-03-18,Catering,Breakfast,Solo,17,327.88,91.73,655.1
+2024-09-06,Dine-In,Lunch,Solo,18,447.69,178.83,613.49
+2024-03-02,Dine-In,Dinner,Small Group,13,702.57,22.1,441.08
+2024-01-31,Delivery,Dinner,Private Event,3,126.94,98.52,735.24
+2024-03-06,Takeout,Breakfast,Solo,13,247.5,97.32,841.91
+2024-10-24,Dine-In,Lunch,Private Event,16,343.05,144.83,626.78
+2024-03-28,Catering,Late Night,Large Group,13,657.53,14.61,952.8
+2024-12-21,Delivery,Lunch,Small Group,1,725.34,57.41,207.66
+2024-01-29,Dine-In,Breakfast,Solo,7,819.13,92.06,584.92
+2024-06-21,Delivery,Dinner,Couple,20,92.86,62.16,615.02
+2024-05-24,Drive-Thru,Lunch,Private Event,3,802.35,102.49,101.77
+2025-01-24,Takeout,Lunch,Couple,13,122.73,106.59,474.39
+2025-03-15,Delivery,Lunch,Small Group,18,115.51,27.78,994.03
+2024-01-08,Drive-Thru,Breakfast,Couple,3,575.57,111.09,94.0
+2024-11-12,Drive-Thru,Dinner,Small Group,11,346.58,105.43,948.0
+2024-07-26,Delivery,Dinner,Solo,17,49.63,14.75,839.03
+2024-12-30,Catering,Late Night,Couple,19,699.24,105.99,788.19

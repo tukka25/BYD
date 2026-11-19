@@ -1,241 +1,241 @@
-game_session_start_date,game_session_platform,game_session_region,game_session_mode,game_session_duration_minutes,game_session_player_count,game_session_revenue_amount,game_session_xp_earned
-2025-01-31,Android,Europe,Tournament,190.52,92,279.44,19684
-2024-06-01,iOS,Asia Pacific,Casual,128.68,68,241.48,24059
-2024-07-11,Xbox,North America,Competitive,162.12,8,396.86,16193
-2025-05-06,Android,Middle East,Custom Match,79.27,49,365.3,14371
-2024-02-26,iOS,North America,Competitive,24.05,5,437.72,2580
-2025-03-18,Xbox,Latin America,Competitive,230.8,38,296.08,4664
-2025-03-16,PC,Middle East,Co-op,93.13,80,444.67,16642
-2024-06-06,Xbox,Asia Pacific,Casual,22.04,9,4.68,7821
-2024-09-28,PC,Africa,Casual,68.03,16,344.56,5520
-2025-03-26,Nintendo Switch,Europe,Custom Match,67.21,97,425.41,9477
-2024-03-25,Android,Africa,Custom Match,37.7,64,493.95,11286
-2025-05-03,iOS,Asia Pacific,Competitive,41.28,8,415.41,7059
-2025-03-25,Xbox,Latin America,Competitive,190.11,38,382.56,20689
-2024-06-02,PC,Europe,Casual,187.78,52,214.43,4538
-2025-03-24,Nintendo Switch,North America,Co-op,154.45,79,486.82,6111
-2025-04-27,Android,Middle East,Casual,56.36,55,354.86,19651
-2024-08-20,iOS,Middle East,Casual,162.32,82,416.73,19066
-2024-08-03,Nintendo Switch,Middle East,Co-op,164.13,52,74.12,14418
-2024-02-24,PlayStation,North America,Custom Match,91.03,44,428.79,13454
-2024-11-05,PC,Middle East,Tournament,108.8,95,26.34,12323
-2024-05-23,PC,Latin America,Tournament,215.32,39,424.25,15818
-2024-04-13,PC,Europe,Tournament,55.5,51,386.76,6611
-2024-08-22,Android,Latin America,Competitive,28.45,27,205.29,20415
-2025-03-27,Nintendo Switch,Asia Pacific,Ranked,76.15,40,417.26,21110
-2024-12-10,Android,Europe,Ranked,29.26,17,116.02,15359
-2025-04-23,Android,Middle East,Casual,85.43,47,362.35,12729
-2024-01-13,PlayStation,Africa,Competitive,117.86,3,242.38,13102
-2024-09-14,PlayStation,Latin America,Custom Match,215.88,38,209.83,4019
-2024-09-19,Nintendo Switch,Latin America,Tournament,157.34,29,334.91,18739
-2024-10-23,PC,Africa,Custom Match,35.55,56,36.99,13249
-2025-04-18,iOS,Africa,Co-op,52.21,40,449.11,18184
-2024-04-22,Xbox,Middle East,Casual,63.45,40,43.6,14572
-2024-06-05,Android,Europe,Casual,88.17,90,124.8,18628
-2025-03-05,PC,North America,Tournament,236.79,18,474.76,21093
-2024-02-21,PlayStation,Europe,Ranked,180.3,77,389.27,18613
-2024-02-06,Xbox,Latin America,Casual,111.54,49,270.83,13652
-2025-01-24,PlayStation,North America,Ranked,11.31,63,132.59,23077
-2025-05-18,Android,Europe,Tournament,24.54,52,212.14,5211
-2024-12-24,Xbox,Asia Pacific,Competitive,84.08,7,215.6,24896
-2024-07-27,Xbox,Middle East,Competitive,239.36,68,424.86,6686
-2025-03-27,Xbox,Middle East,Tournament,200.03,63,83.34,10701
-2024-08-14,Android,North America,Ranked,203.27,79,452.55,23741
-2024-06-07,Android,Europe,Co-op,17.2,37,268.85,6692
-2024-05-23,PC,Middle East,Co-op,228.96,36,170.81,20033
-2024-11-28,PlayStation,Europe,Competitive,132.55,87,362.08,2373
-2025-06-16,PlayStation,Asia Pacific,Co-op,27.59,3,151.65,1010
-2024-06-09,Nintendo Switch,Europe,Competitive,119.45,34,53.33,17864
-2024-10-23,Nintendo Switch,Africa,Custom Match,203.63,73,393.75,12716
-2024-08-05,PC,Middle East,Custom Match,236.43,33,330.56,11337
-2024-06-12,Xbox,Middle East,Competitive,217.99,92,47.62,3215
-2024-12-20,iOS,Latin America,Custom Match,67.11,84,293.54,5850
-2024-07-22,Android,Europe,Casual,129.57,39,245.44,7279
-2024-01-15,iOS,North America,Custom Match,196.99,69,431.59,19177
-2025-02-26,Android,North America,Co-op,10.73,69,366.46,1385
-2024-07-19,Android,Middle East,Competitive,170.21,66,186.28,20471
-2025-01-09,Xbox,North America,Co-op,75.74,78,156.19,12686
-2025-05-25,Xbox,Latin America,Custom Match,87.09,64,305.58,1944
-2024-10-24,Android,North America,Custom Match,22.42,12,46.79,9952
-2024-08-16,Xbox,Europe,Ranked,214.73,81,88.52,12245
-2024-08-10,PC,Asia Pacific,Ranked,14.54,52,245.67,5248
-2025-04-11,Android,Europe,Custom Match,84.49,44,392.1,20954
-2024-02-19,PC,Latin America,Co-op,70.21,5,226.82,19747
-2025-04-10,PC,Africa,Competitive,96.66,19,283.56,10696
-2024-10-24,PC,Europe,Casual,4.03,11,359.73,21690
-2024-04-12,iOS,Middle East,Ranked,14.14,63,156.13,24747
-2024-10-12,iOS,Asia Pacific,Competitive,151.94,58,25.71,2621
-2025-02-03,Nintendo Switch,North America,Ranked,71.08,17,213.76,4955
-2025-06-23,PC,Latin America,Casual,155.74,40,364.65,9483
-2025-02-09,iOS,Africa,Ranked,13.88,33,20.81,6332
-2024-08-14,Xbox,Middle East,Casual,90.85,29,247.01,18426
-2024-04-24,iOS,Africa,Custom Match,102.43,52,459.96,10379
-2025-03-11,PC,Europe,Ranked,185.26,70,10.49,11608
-2024-03-10,PlayStation,Africa,Tournament,38.63,3,427.51,1627
-2024-11-18,Android,Latin America,Co-op,66.03,1,289.76,20788
-2025-01-16,Xbox,Africa,Ranked,74.12,78,162.67,19663
-2025-03-07,PC,North America,Casual,87.05,31,76.9,16480
-2024-04-12,Xbox,Latin America,Co-op,113.15,44,199.13,4685
-2024-12-15,iOS,Asia Pacific,Casual,166.73,90,7.72,8427
-2024-01-27,iOS,Asia Pacific,Co-op,134.45,56,148.49,19625
-2024-04-09,PlayStation,Asia Pacific,Co-op,166.76,35,405.73,16113
-2024-12-05,PC,Asia Pacific,Co-op,95.19,74,46.94,4803
-2024-08-09,Android,North America,Casual,81.4,44,250.05,19724
-2024-06-03,Nintendo Switch,Europe,Tournament,225.46,18,31.56,6803
-2024-09-12,PlayStation,Europe,Co-op,194.06,67,82.01,9008
-2025-04-20,iOS,Asia Pacific,Custom Match,101.51,23,426.62,20073
-2024-11-22,Nintendo Switch,Asia Pacific,Custom Match,70.58,59,149.79,10360
-2025-06-12,Nintendo Switch,Latin America,Casual,45.09,90,339.9,7065
-2024-05-22,iOS,Middle East,Co-op,219.11,82,474.61,18730
-2024-11-16,Android,North America,Ranked,111.84,3,426.92,4803
-2025-05-19,PlayStation,Europe,Casual,169.64,78,165.81,7078
-2024-10-30,iOS,Latin America,Tournament,124.23,41,426.41,7751
-2025-05-31,Nintendo Switch,Middle East,Casual,182.06,86,1.49,5748
-2025-04-22,Android,North America,Casual,78.21,39,235.5,6288
-2024-10-29,Android,Middle East,Competitive,188.16,56,473.21,16130
-2024-09-11,iOS,Latin America,Competitive,164.49,86,124.46,4575
-2025-06-07,iOS,Africa,Tournament,144.86,21,77.43,363
-2024-10-30,PC,Europe,Casual,182.49,63,233.64,19913
-2024-09-07,Xbox,Europe,Casual,162.26,74,360.24,9725
-2025-04-30,Nintendo Switch,Asia Pacific,Tournament,192.78,39,97.38,6924
-2025-01-25,PlayStation,Asia Pacific,Casual,108.34,69,59.53,7840
-2024-10-25,PC,North America,Ranked,35.61,12,108.17,18770
-2025-02-10,Android,Europe,Tournament,58.9,36,43.18,13010
-2025-05-05,Xbox,Asia Pacific,Custom Match,105.6,87,236.5,16185
-2024-01-19,PC,Africa,Casual,229.37,18,183.19,10530
-2024-05-20,Xbox,Europe,Tournament,235.58,31,411.02,8958
-2024-11-26,iOS,Africa,Competitive,17.16,64,482.3,16700
-2024-12-30,PC,Middle East,Co-op,174.65,26,0.7,1707
-2024-02-23,PlayStation,Middle East,Custom Match,41.93,5,31.36,16996
-2025-04-23,Nintendo Switch,Asia Pacific,Tournament,180.08,41,139.16,19100
-2024-11-25,PlayStation,Asia Pacific,Casual,67.68,96,267.22,14305
-2024-11-05,PC,North America,Competitive,43.23,42,209.26,14134
-2024-06-06,PC,Asia Pacific,Ranked,99.49,10,109.94,11175
-2024-04-10,iOS,Latin America,Co-op,201.12,3,171.48,10369
-2025-04-15,iOS,Middle East,Tournament,132.57,90,175.39,8595
-2025-02-26,PlayStation,Latin America,Co-op,109.02,38,90.03,13224
-2024-08-11,Xbox,Europe,Casual,74.07,47,197.53,18092
-2024-08-13,PlayStation,Europe,Custom Match,66.64,58,169.04,1656
-2024-03-30,PlayStation,North America,Co-op,51.55,88,235.36,11098
-2025-02-02,Android,Europe,Co-op,151.53,30,139.35,19266
-2024-03-29,PlayStation,North America,Custom Match,163.27,94,180.97,1529
-2024-07-21,Nintendo Switch,Middle East,Competitive,5.92,32,220.95,16005
-2025-03-18,Nintendo Switch,North America,Co-op,113.65,89,170.84,23623
-2025-03-14,Nintendo Switch,Europe,Custom Match,147.07,50,362.41,24369
-2024-04-15,Xbox,Latin America,Ranked,85.14,85,312.87,10758
-2024-02-06,Android,Africa,Competitive,154.93,4,239.2,24910
-2025-04-18,Nintendo Switch,North America,Ranked,167.57,82,252.79,22230
-2024-08-12,Xbox,Asia Pacific,Tournament,44.15,78,320.55,8500
-2025-01-18,PC,North America,Ranked,83.5,89,172.14,6985
-2025-04-29,Android,North America,Ranked,148.0,11,179.78,15688
-2025-01-15,Xbox,North America,Competitive,143.87,59,23.68,6017
-2024-10-21,Nintendo Switch,Latin America,Co-op,45.61,26,178.19,12476
-2024-06-08,PC,Middle East,Casual,91.99,36,120.92,19298
-2025-04-26,PlayStation,Latin America,Ranked,206.12,39,293.81,15702
-2025-01-29,Android,Europe,Ranked,119.61,53,186.53,18492
-2024-11-02,Android,Asia Pacific,Custom Match,222.26,67,220.05,4656
-2024-05-23,PC,Middle East,Custom Match,171.7,35,368.52,22865
-2024-10-24,Nintendo Switch,Europe,Ranked,60.62,2,452.07,9044
-2024-03-14,PlayStation,Europe,Co-op,167.55,92,204.32,10553
-2025-05-03,PC,Europe,Custom Match,3.28,73,395.5,2219
-2024-03-27,Nintendo Switch,Asia Pacific,Tournament,212.49,96,352.0,12475
-2024-05-29,iOS,Latin America,Ranked,49.64,86,40.71,3080
-2024-06-09,Xbox,Middle East,Co-op,36.6,96,19.27,17879
-2025-02-28,PC,Europe,Casual,172.95,69,222.7,21249
-2024-01-24,PC,Europe,Casual,179.11,52,137.99,8959
-2024-08-15,Nintendo Switch,Africa,Ranked,100.83,61,271.85,21046
-2024-11-14,Xbox,Europe,Competitive,30.07,53,299.43,645
-2024-08-08,PC,Middle East,Ranked,196.15,13,354.55,130
-2025-05-09,Nintendo Switch,Middle East,Co-op,182.9,7,102.07,6549
-2025-04-03,Xbox,Europe,Ranked,88.38,22,353.76,9026
-2024-12-16,PlayStation,Latin America,Tournament,206.21,15,358.05,498
-2024-12-28,Xbox,Africa,Competitive,128.99,53,253.63,15358
-2024-11-10,iOS,Africa,Competitive,19.55,12,90.97,10489
-2024-09-25,iOS,Latin America,Ranked,154.68,80,363.12,6331
-2025-04-08,Android,Asia Pacific,Casual,172.0,21,14.38,17310
-2024-09-24,iOS,Africa,Casual,214.67,40,28.1,8182
-2025-06-11,iOS,Africa,Casual,50.31,41,236.7,3083
-2024-04-29,Nintendo Switch,Latin America,Casual,177.26,47,109.36,23076
-2025-05-24,PC,North America,Ranked,230.55,34,176.13,23081
-2024-02-13,PC,Africa,Co-op,45.91,26,496.95,3342
-2024-01-16,Nintendo Switch,Latin America,Competitive,209.97,33,72.3,7282
-2024-11-28,Android,Middle East,Custom Match,177.11,93,308.5,3987
-2025-03-08,iOS,Latin America,Competitive,192.29,54,224.54,3763
-2025-05-16,Android,Middle East,Co-op,75.49,4,378.56,18927
-2024-11-08,iOS,Europe,Casual,109.21,10,497.0,24859
-2024-01-07,Xbox,Asia Pacific,Custom Match,18.86,40,216.24,1490
-2024-12-25,Android,Europe,Tournament,101.69,31,362.33,2258
-2024-06-11,Android,Asia Pacific,Casual,27.52,64,169.08,19808
-2024-05-23,PC,North America,Casual,28.87,88,144.42,8133
-2024-07-26,iOS,North America,Tournament,54.11,27,209.41,10542
-2024-12-08,Nintendo Switch,Latin America,Casual,189.09,18,11.57,217
-2025-01-06,Android,Africa,Ranked,24.57,51,386.93,6852
-2024-03-11,Xbox,Middle East,Casual,151.96,17,366.46,13132
-2025-01-25,Nintendo Switch,Latin America,Co-op,12.96,77,94.54,11472
-2024-12-01,iOS,Middle East,Casual,151.45,18,11.81,3231
-2024-02-29,Nintendo Switch,Asia Pacific,Tournament,184.57,98,139.79,22401
-2024-06-07,iOS,Asia Pacific,Casual,194.55,79,78.72,10443
-2024-10-03,Android,Africa,Casual,56.19,38,334.8,8121
-2025-02-07,Nintendo Switch,Europe,Custom Match,190.41,14,433.32,22124
-2025-05-19,Nintendo Switch,Latin America,Custom Match,76.22,35,453.29,18679
-2024-04-19,iOS,Asia Pacific,Competitive,182.85,78,272.4,21638
-2025-05-31,PC,Latin America,Competitive,129.48,20,466.78,23441
-2025-02-07,Nintendo Switch,Europe,Casual,39.96,77,202.69,24741
-2025-06-16,iOS,Latin America,Co-op,192.34,22,214.73,15912
-2024-12-26,PC,Latin America,Co-op,198.88,47,165.79,6948
-2024-11-28,Android,North America,Casual,198.48,26,142.36,7793
-2024-07-30,iOS,Latin America,Casual,163.41,43,130.9,617
-2025-03-25,iOS,Middle East,Competitive,68.78,17,191.89,16323
-2024-10-16,Xbox,North America,Competitive,30.48,24,325.17,3620
-2024-02-22,iOS,Latin America,Tournament,92.67,40,158.83,14128
-2024-04-17,iOS,Middle East,Custom Match,21.15,75,476.59,22923
-2024-02-26,iOS,Africa,Casual,165.73,23,416.76,1846
-2024-06-02,Xbox,Latin America,Casual,43.87,34,162.12,9241
-2024-11-24,PC,Africa,Co-op,216.85,45,257.15,18013
-2024-02-03,Xbox,Africa,Co-op,129.41,96,374.22,17419
-2025-02-26,Nintendo Switch,Africa,Custom Match,22.04,99,183.05,20627
-2024-04-07,iOS,Africa,Competitive,102.08,97,118.46,9562
-2024-10-28,Xbox,Europe,Co-op,45.07,62,275.06,205
-2025-01-18,iOS,North America,Co-op,50.49,35,389.12,9719
-2024-10-28,PC,Europe,Co-op,95.82,18,444.99,19921
-2025-02-16,Nintendo Switch,Latin America,Co-op,74.33,17,490.64,2128
-2024-10-31,Nintendo Switch,Asia Pacific,Casual,147.94,64,414.92,16817
-2024-11-22,Xbox,Africa,Custom Match,67.59,11,42.85,14267
-2024-12-01,PC,Africa,Custom Match,135.56,48,243.75,23913
-2025-02-14,PlayStation,Asia Pacific,Ranked,70.45,100,79.04,17351
-2024-07-09,Xbox,Latin America,Competitive,98.03,8,218.86,21706
-2024-11-02,Android,Europe,Co-op,214.78,49,20.62,19650
-2024-02-18,Xbox,Africa,Co-op,114.66,50,402.46,7251
-2024-03-09,iOS,Latin America,Competitive,133.95,63,60.5,1492
-2025-03-02,PlayStation,Middle East,Casual,39.53,69,318.16,5748
-2024-06-17,PC,Africa,Competitive,28.37,65,345.6,13866
-2024-09-06,Nintendo Switch,Middle East,Casual,203.43,82,170.66,22788
-2024-02-22,Xbox,Africa,Custom Match,214.68,67,334.95,17210
-2025-01-15,Android,North America,Ranked,196.52,48,340.24,22790
-2025-06-19,PlayStation,North America,Custom Match,118.92,74,181.39,24818
-2024-07-08,iOS,Middle East,Competitive,155.64,73,395.14,12562
-2025-05-24,Xbox,North America,Tournament,9.77,41,118.37,23992
-2024-07-03,Android,Africa,Ranked,196.73,13,427.92,6212
-2024-05-19,PlayStation,Europe,Custom Match,208.4,44,138.3,2935
-2025-02-27,iOS,North America,Tournament,24.79,58,8.18,13268
-2024-11-05,Nintendo Switch,Asia Pacific,Tournament,138.62,49,271.07,4171
-2025-01-18,PC,Africa,Custom Match,22.14,39,352.18,7541
-2024-05-07,Nintendo Switch,Asia Pacific,Co-op,179.31,7,424.17,3997
-2024-04-30,PlayStation,North America,Casual,70.8,22,149.42,3866
-2025-03-01,Android,North America,Tournament,32.2,63,104.96,20493
-2025-01-31,PlayStation,Middle East,Competitive,142.38,33,51.8,1501
-2024-01-16,Xbox,Africa,Ranked,228.38,18,215.64,14710
-2024-02-21,PlayStation,North America,Co-op,165.74,52,311.0,3852
-2025-04-05,Android,Latin America,Co-op,15.45,2,66.61,16961
-2024-02-09,PC,Europe,Ranked,131.62,38,80.76,10371
-2025-01-15,PC,North America,Competitive,221.26,77,468.97,16124
-2024-08-22,iOS,Asia Pacific,Ranked,126.45,42,498.32,20834
-2024-03-28,iOS,Latin America,Tournament,82.89,12,416.58,23353
-2025-01-18,Xbox,North America,Casual,183.4,14,23.71,21775
-2025-01-27,Nintendo Switch,Europe,Custom Match,193.06,97,91.77,22810
-2024-09-15,Android,Middle East,Tournament,126.34,56,40.75,19259
-2025-01-11,PC,North America,Casual,116.74,22,439.37,13879
-2024-11-22,iOS,Asia Pacific,Casual,36.1,44,153.33,6320
-2024-06-07,PlayStation,Middle East,Ranked,210.99,2,480.21,5018
-2025-03-24,Android,North America,Tournament,85.18,18,439.18,2544
-2025-02-02,PlayStation,Africa,Ranked,74.87,72,335.06,1999
+Visit Date,Clinic Department,Visit Type,Insurance Payer,Patients Seen,Average Wait Minutes,Total Revenue
+2025-03-25,Pediatrics,Urgent Care,Self-Pay,162,23.72,104515.52
+2024-02-06,Radiology,New Patient,Medicare,54,26.57,183388.19
+2025-02-05,Dermatology,Urgent Care,Commercial,44,88.65,53246.37
+2024-09-30,Orthopedics,Urgent Care,Tricare,113,64.99,83797.02
+2024-08-01,Dermatology,New Patient,Medicare,131,59.98,249239.19
+2024-05-31,Dermatology,New Patient,Medicare,28,27.14,128489.51
+2025-05-05,Cardiology,New Patient,Tricare,9,104.79,149892.21
+2024-09-22,Radiology,Telehealth,Tricare,150,71.4,158687.24
+2024-12-10,Radiology,Telehealth,Self-Pay,126,30.56,210919.64
+2024-07-01,Orthopedics,Follow-Up,Self-Pay,153,27.87,210728.06
+2024-05-20,Pediatrics,New Patient,Medicaid,37,48.56,81524.59
+2024-12-08,Pediatrics,Urgent Care,Medicare,31,24.01,211016.88
+2024-02-05,Orthopedics,New Patient,Tricare,44,102.66,221898.8
+2025-03-04,Cardiology,Telehealth,Self-Pay,33,65.8,13852.44
+2024-02-17,Dermatology,Telehealth,Commercial,26,22.68,238148.98
+2024-04-30,Radiology,Follow-Up,Tricare,125,92.2,69956.16
+2024-07-30,Family Medicine,Telehealth,Commercial,146,63.16,34017.59
+2025-04-25,Family Medicine,New Patient,Medicaid,161,21.25,20902.56
+2025-02-15,Radiology,Urgent Care,Commercial,123,77.51,192082.19
+2025-05-25,Family Medicine,New Patient,Medicaid,48,74.88,154738.11
+2025-04-14,Dermatology,Urgent Care,Self-Pay,70,20.19,96181.9
+2025-05-15,Orthopedics,Urgent Care,Medicare,21,55.46,235047.35
+2024-02-19,Pediatrics,Telehealth,Medicaid,25,8.23,189047.03
+2025-04-29,Orthopedics,Urgent Care,Self-Pay,173,103.17,241791.9
+2024-10-10,Orthopedics,New Patient,Tricare,97,112.75,75031.8
+2025-04-23,Radiology,Telehealth,Medicare,173,72.93,157049.02
+2025-01-20,Cardiology,Follow-Up,Medicare,83,84.04,167654.87
+2024-03-01,Family Medicine,Urgent Care,Medicaid,120,48.72,63188.56
+2024-03-11,Orthopedics,Urgent Care,Medicare,83,55.93,183933.92
+2024-08-25,Radiology,Urgent Care,Tricare,50,58.83,203805.15
+2024-05-18,Dermatology,New Patient,Tricare,168,31.65,106956.17
+2024-12-20,Cardiology,Telehealth,Medicaid,4,21.91,191566.51
+2024-08-17,Cardiology,New Patient,Medicare,52,71.04,203010.28
+2024-11-20,Radiology,New Patient,Medicaid,135,9.62,172917.51
+2024-12-18,Pediatrics,Telehealth,Commercial,173,41.72,30561.21
+2024-02-06,Radiology,New Patient,Medicaid,55,90.32,212454.62
+2024-04-10,Pediatrics,Urgent Care,Medicare,3,88.06,190215.56
+2024-09-28,Pediatrics,Urgent Care,Medicaid,7,68.54,153866.72
+2025-06-08,Family Medicine,Follow-Up,Medicare,28,47.54,200460.13
+2025-01-18,Orthopedics,Follow-Up,Self-Pay,155,11.97,89737.81
+2025-02-05,Orthopedics,Follow-Up,Commercial,30,115.29,145451.99
+2024-07-15,Radiology,Urgent Care,Self-Pay,96,100.63,111712.34
+2024-09-08,Pediatrics,New Patient,Medicaid,20,50.55,51516.64
+2024-12-24,Cardiology,Urgent Care,Medicaid,118,77.87,103806.65
+2024-04-03,Dermatology,Telehealth,Commercial,15,26.47,54116.14
+2024-07-03,Pediatrics,New Patient,Medicaid,79,78.4,34556.42
+2025-05-06,Radiology,Urgent Care,Commercial,97,96.8,186759.55
+2024-06-27,Family Medicine,New Patient,Self-Pay,50,89.1,67490.18
+2024-12-18,Cardiology,Urgent Care,Tricare,47,100.9,24204.57
+2025-02-20,Radiology,Urgent Care,Commercial,119,6.15,154919.25
+2024-08-11,Dermatology,New Patient,Medicare,39,104.82,40113.32
+2024-05-02,Pediatrics,Urgent Care,Self-Pay,110,56.63,247897.83
+2024-06-03,Family Medicine,New Patient,Self-Pay,16,68.24,171073.15
+2024-01-17,Family Medicine,Urgent Care,Medicaid,125,115.77,214023.96
+2025-05-02,Family Medicine,New Patient,Self-Pay,84,39.21,221493.38
+2024-12-10,Pediatrics,New Patient,Commercial,160,31.81,43053.33
+2025-06-04,Orthopedics,Telehealth,Medicaid,173,9.56,66717.72
+2025-01-09,Radiology,Urgent Care,Self-Pay,123,44.59,205003.48
+2025-02-08,Cardiology,Follow-Up,Self-Pay,75,99.94,10708.18
+2025-03-29,Cardiology,Urgent Care,Tricare,50,36.7,49441.68
+2024-06-10,Orthopedics,New Patient,Commercial,133,48.35,218918.46
+2025-05-18,Orthopedics,Follow-Up,Medicare,139,102.49,52542.1
+2025-02-16,Pediatrics,New Patient,Tricare,99,118.37,106764.25
+2025-01-19,Dermatology,New Patient,Self-Pay,111,84.03,112864.48
+2024-09-14,Pediatrics,New Patient,Commercial,99,7.58,110061.11
+2024-06-26,Family Medicine,Urgent Care,Self-Pay,146,73.13,140973.48
+2024-08-01,Dermatology,Urgent Care,Medicaid,146,20.8,88752.51
+2024-10-22,Radiology,Urgent Care,Self-Pay,147,115.62,30991.52
+2025-02-26,Dermatology,Telehealth,Tricare,67,48.41,112228.03
+2025-01-27,Cardiology,New Patient,Commercial,74,99.41,28242.13
+2024-05-14,Family Medicine,New Patient,Commercial,145,107.06,34046.73
+2024-05-18,Pediatrics,Urgent Care,Self-Pay,85,93.39,44097.22
+2024-02-28,Orthopedics,New Patient,Commercial,105,38.37,207824.76
+2025-02-06,Dermatology,Telehealth,Commercial,87,119.76,30620.14
+2024-01-17,Family Medicine,Follow-Up,Medicaid,162,66.81,136906.18
+2024-06-16,Pediatrics,Telehealth,Self-Pay,8,31.34,223234.98
+2024-10-20,Dermatology,Telehealth,Medicaid,59,21.73,240687.88
+2024-07-13,Orthopedics,Telehealth,Self-Pay,50,22.85,100019.44
+2024-03-03,Pediatrics,Follow-Up,Medicare,178,111.87,9649.75
+2024-10-16,Orthopedics,Follow-Up,Medicare,111,61.57,234301.4
+2024-08-08,Orthopedics,Telehealth,Medicare,128,109.33,204264.79
+2024-05-10,Radiology,Follow-Up,Commercial,135,34.64,187183.49
+2024-06-09,Dermatology,Urgent Care,Tricare,135,20.52,109537.14
+2024-05-08,Radiology,Follow-Up,Tricare,25,10.13,33048.68
+2025-01-05,Cardiology,Telehealth,Tricare,128,55.96,249676.73
+2025-02-05,Dermatology,Telehealth,Self-Pay,179,118.4,30712.17
+2024-08-03,Family Medicine,Urgent Care,Tricare,60,104.15,197911.09
+2024-05-11,Cardiology,Urgent Care,Medicare,154,119.73,63352.25
+2024-06-18,Orthopedics,Urgent Care,Medicaid,164,33.64,167327.81
+2024-03-26,Cardiology,New Patient,Tricare,9,82.2,33466.85
+2025-06-23,Cardiology,Follow-Up,Medicare,51,85.49,212963.22
+2024-09-18,Dermatology,New Patient,Medicare,55,50.21,233316.1
+2025-02-05,Radiology,New Patient,Self-Pay,148,91.93,93133.65
+2024-09-12,Orthopedics,Urgent Care,Commercial,22,27.52,190413.1
+2024-01-05,Dermatology,Telehealth,Tricare,125,91.42,210008.08
+2024-11-08,Dermatology,New Patient,Tricare,8,22.98,86157.6
+2025-02-17,Orthopedics,Urgent Care,Medicaid,29,37.58,3825.77
+2024-05-06,Family Medicine,New Patient,Tricare,10,106.45,119598.89
+2024-04-28,Orthopedics,Follow-Up,Medicaid,35,64.75,49896.5
+2025-01-02,Orthopedics,Telehealth,Medicare,43,44.63,182263.94
+2024-02-02,Cardiology,Follow-Up,Commercial,108,110.64,34931.3
+2024-12-01,Family Medicine,New Patient,Tricare,6,28.56,183255.37
+2024-07-30,Family Medicine,Telehealth,Tricare,17,114.36,191553.43
+2025-04-27,Cardiology,Urgent Care,Self-Pay,145,32.38,147385.54
+2025-02-06,Cardiology,Telehealth,Medicare,7,7.24,8103.3
+2024-06-02,Dermatology,Telehealth,Tricare,54,39.54,127364.83
+2025-06-15,Pediatrics,Urgent Care,Medicare,83,9.81,159172.95
+2025-03-10,Cardiology,Urgent Care,Medicaid,63,28.63,114836.48
+2024-07-30,Family Medicine,Follow-Up,Medicaid,130,24.02,220483.12
+2024-04-30,Family Medicine,Follow-Up,Self-Pay,59,34.03,27260.65
+2024-03-03,Pediatrics,Follow-Up,Medicare,120,47.27,139826.34
+2024-06-01,Dermatology,New Patient,Tricare,167,7.55,11018.24
+2024-01-15,Cardiology,New Patient,Medicaid,155,101.01,9388.6
+2025-04-09,Radiology,New Patient,Medicare,80,46.22,33640.84
+2024-04-28,Orthopedics,Telehealth,Medicaid,162,14.27,231377.54
+2025-01-22,Cardiology,Follow-Up,Self-Pay,8,69.76,152273.14
+2024-03-26,Dermatology,Urgent Care,Medicaid,172,59.57,51023.72
+2024-09-14,Cardiology,New Patient,Tricare,123,40.22,143643.33
+2025-01-16,Radiology,Telehealth,Medicaid,178,74.01,104331.46
+2025-04-29,Family Medicine,Telehealth,Self-Pay,85,99.31,249874.94
+2025-01-04,Orthopedics,New Patient,Medicare,56,70.47,60112.46
+2024-05-20,Radiology,Telehealth,Medicaid,163,119.38,69398.17
+2024-08-08,Pediatrics,Follow-Up,Commercial,72,37.42,93973.51
+2025-03-08,Family Medicine,Urgent Care,Medicare,71,79.56,104743.79
+2024-10-07,Radiology,Follow-Up,Medicaid,142,93.36,9933.2
+2025-02-12,Radiology,Urgent Care,Medicare,33,92.84,223168.87
+2024-08-03,Dermatology,New Patient,Medicaid,97,94.27,191567.16
+2024-02-27,Radiology,Follow-Up,Self-Pay,147,52.12,133594.06
+2024-10-10,Orthopedics,New Patient,Medicaid,107,18.95,116498.84
+2024-02-09,Pediatrics,Urgent Care,Tricare,149,96.4,190668.27
+2025-05-06,Pediatrics,Follow-Up,Medicaid,136,31.24,178434.29
+2024-09-19,Radiology,Urgent Care,Self-Pay,119,46.43,45091.5
+2024-06-14,Orthopedics,Follow-Up,Medicare,33,119.28,35116.72
+2024-02-08,Cardiology,New Patient,Commercial,94,50.81,242348.97
+2025-05-19,Cardiology,Follow-Up,Medicare,131,77.96,44786.4
+2024-02-03,Orthopedics,Urgent Care,Medicaid,38,21.88,241985.0
+2024-05-03,Radiology,Telehealth,Self-Pay,20,40.36,240203.13
+2024-10-02,Pediatrics,Follow-Up,Tricare,14,68.17,220112.26
+2024-10-14,Cardiology,Urgent Care,Medicare,115,109.17,47059.03
+2024-11-25,Dermatology,New Patient,Medicare,112,10.07,8438.07
+2025-01-09,Radiology,Follow-Up,Self-Pay,72,57.94,45027.38
+2024-06-15,Pediatrics,New Patient,Commercial,146,30.56,32985.44
+2024-06-26,Orthopedics,Follow-Up,Self-Pay,146,45.7,155086.86
+2025-04-04,Cardiology,New Patient,Tricare,48,49.01,200151.31
+2025-01-23,Orthopedics,Telehealth,Commercial,12,86.29,80798.82
+2024-10-27,Cardiology,Urgent Care,Tricare,64,99.75,151556.54
+2025-01-06,Cardiology,Telehealth,Self-Pay,130,74.38,151521.8
+2024-05-29,Radiology,New Patient,Medicare,91,43.99,124541.17
+2025-06-16,Family Medicine,Follow-Up,Medicare,60,107.71,159615.5
+2025-04-01,Dermatology,Urgent Care,Medicaid,91,101.39,93632.41
+2025-02-20,Pediatrics,Urgent Care,Medicaid,73,25.53,87193.2
+2024-03-04,Orthopedics,New Patient,Self-Pay,6,28.92,249331.18
+2025-04-19,Cardiology,Telehealth,Medicaid,155,15.22,20091.21
+2025-05-02,Pediatrics,Follow-Up,Medicaid,123,61.63,137014.22
+2024-09-19,Dermatology,New Patient,Tricare,173,24.04,182154.81
+2024-02-11,Cardiology,New Patient,Medicaid,92,82.83,84154.04
+2025-02-19,Orthopedics,New Patient,Tricare,42,110.16,222220.78
+2024-03-06,Dermatology,Urgent Care,Commercial,122,87.84,121191.13
+2024-02-12,Orthopedics,Telehealth,Commercial,145,83.48,1469.77
+2025-01-27,Orthopedics,Telehealth,Commercial,23,75.13,210465.38
+2025-05-29,Dermatology,Follow-Up,Tricare,122,78.02,221422.39
+2024-08-18,Dermatology,Follow-Up,Self-Pay,131,63.85,91408.92
+2025-06-07,Radiology,New Patient,Self-Pay,31,64.58,84988.32
+2025-01-06,Radiology,New Patient,Tricare,166,63.7,75133.15
+2024-11-13,Orthopedics,Telehealth,Self-Pay,28,19.41,92814.45
+2024-10-21,Family Medicine,New Patient,Medicaid,74,68.8,111565.0
+2024-01-13,Cardiology,Telehealth,Self-Pay,83,12.54,191990.17
+2025-02-05,Pediatrics,Urgent Care,Commercial,90,105.74,86740.23
+2024-08-03,Orthopedics,New Patient,Commercial,95,61.04,240298.96
+2024-12-02,Orthopedics,Urgent Care,Medicaid,160,98.77,1641.2
+2025-04-16,Radiology,New Patient,Medicaid,130,101.16,41173.15
+2024-12-25,Radiology,Follow-Up,Self-Pay,106,102.72,73497.24
+2025-02-16,Family Medicine,Telehealth,Medicare,36,111.17,54215.48
+2024-11-15,Radiology,New Patient,Tricare,91,74.46,80779.77
+2025-02-13,Orthopedics,Follow-Up,Tricare,105,82.45,224255.84
+2024-07-20,Dermatology,New Patient,Tricare,8,34.18,189306.69
+2025-02-03,Cardiology,Urgent Care,Medicare,174,23.01,79894.92
+2024-10-04,Family Medicine,Telehealth,Self-Pay,111,116.09,249063.79
+2024-12-30,Orthopedics,Urgent Care,Medicaid,109,105.69,183440.11
+2025-02-03,Radiology,Urgent Care,Tricare,108,102.65,86087.22
+2024-11-21,Cardiology,Urgent Care,Tricare,149,78.68,148612.11
+2024-07-15,Cardiology,Follow-Up,Self-Pay,130,101.2,15748.1
+2024-09-19,Cardiology,New Patient,Medicaid,129,64.33,243513.54
+2024-06-09,Cardiology,Telehealth,Self-Pay,145,61.98,5150.06
+2025-03-07,Cardiology,Telehealth,Self-Pay,105,75.74,36109.34
+2024-05-07,Radiology,Follow-Up,Commercial,164,109.25,53379.03
+2025-05-06,Family Medicine,Telehealth,Medicare,116,91.97,167818.1
+2024-08-28,Family Medicine,Telehealth,Medicare,176,82.23,154090.97
+2024-06-30,Orthopedics,Follow-Up,Medicare,166,43.74,205680.36
+2025-02-19,Cardiology,Urgent Care,Tricare,115,73.34,214488.46
+2025-06-17,Dermatology,Telehealth,Tricare,17,53.94,131565.07
+2024-01-03,Dermatology,Telehealth,Commercial,89,117.84,175032.13
+2025-06-02,Dermatology,Follow-Up,Self-Pay,21,14.59,144854.12
+2025-01-23,Dermatology,Follow-Up,Self-Pay,15,118.67,183381.54
+2024-04-20,Orthopedics,Telehealth,Tricare,27,28.55,81795.27
+2025-06-15,Pediatrics,Urgent Care,Medicaid,73,107.27,46973.91
+2025-04-02,Pediatrics,Telehealth,Medicare,129,115.56,207976.91
+2024-10-19,Orthopedics,Urgent Care,Medicare,59,103.93,28376.3
+2024-01-11,Radiology,Follow-Up,Medicare,107,61.07,33215.67
+2024-11-22,Family Medicine,Telehealth,Commercial,150,15.62,172173.3
+2025-01-30,Dermatology,Follow-Up,Commercial,36,77.16,40127.36
+2024-10-11,Cardiology,New Patient,Self-Pay,108,106.55,201368.54
+2024-03-07,Dermatology,Follow-Up,Self-Pay,145,26.9,217074.33
+2024-06-30,Family Medicine,Follow-Up,Tricare,117,21.38,100945.21
+2024-12-01,Orthopedics,Urgent Care,Self-Pay,137,95.78,77587.43
+2025-03-26,Dermatology,Urgent Care,Self-Pay,110,64.73,169026.86
+2024-08-15,Dermatology,Telehealth,Self-Pay,82,13.66,134463.2
+2024-01-03,Radiology,Telehealth,Medicaid,117,108.68,127817.18
+2024-04-23,Family Medicine,Urgent Care,Medicare,168,62.5,5548.53
+2024-11-01,Pediatrics,Urgent Care,Medicare,104,46.03,37507.21
+2024-08-13,Dermatology,Urgent Care,Medicare,41,10.11,41430.78
+2025-03-05,Radiology,Telehealth,Tricare,175,90.21,17484.66
+2024-09-11,Pediatrics,Urgent Care,Medicare,2,119.35,176599.21
+2025-05-08,Pediatrics,New Patient,Commercial,74,67.29,188474.04
+2024-07-10,Pediatrics,Telehealth,Self-Pay,164,37.46,104767.29
+2024-02-28,Cardiology,Urgent Care,Commercial,130,116.84,212430.31
+2024-10-18,Orthopedics,New Patient,Commercial,146,48.52,109862.96
+2024-07-23,Pediatrics,Urgent Care,Tricare,19,82.37,184726.85
+2024-09-02,Cardiology,New Patient,Medicaid,63,105.69,69868.25
+2024-07-24,Cardiology,Urgent Care,Commercial,137,64.44,22854.7
+2025-04-23,Family Medicine,Follow-Up,Self-Pay,75,42.15,202482.92
+2024-04-05,Radiology,New Patient,Commercial,82,96.58,14876.51
+2025-01-15,Pediatrics,Follow-Up,Tricare,78,109.45,190528.32
+2025-04-29,Cardiology,Urgent Care,Self-Pay,119,99.21,69156.02
+2024-11-11,Dermatology,Urgent Care,Tricare,87,52.5,157679.93
+2024-05-01,Cardiology,New Patient,Medicaid,116,65.75,242707.64
+2025-05-10,Cardiology,Urgent Care,Medicaid,17,23.51,61828.99
+2024-11-06,Pediatrics,New Patient,Tricare,86,111.61,28851.02
+2024-05-31,Dermatology,New Patient,Medicaid,121,31.49,118569.16
+2024-07-06,Family Medicine,Urgent Care,Tricare,141,95.79,8238.82
+2024-08-07,Pediatrics,Telehealth,Self-Pay,178,16.84,243725.67
+2024-11-14,Radiology,Urgent Care,Commercial,15,71.18,38337.01
+2025-06-16,Radiology,Urgent Care,Self-Pay,122,21.84,84155.1
+2025-05-29,Radiology,Urgent Care,Commercial,142,25.3,247744.44
+2024-02-23,Dermatology,Telehealth,Self-Pay,21,56.28,68992.16
+2024-05-13,Cardiology,Follow-Up,Medicaid,14,70.38,87050.53
+2024-01-14,Radiology,Follow-Up,Commercial,59,111.03,19520.82
+2024-09-12,Radiology,Urgent Care,Self-Pay,175,48.55,154807.63
+2024-01-24,Pediatrics,Urgent Care,Medicaid,58,50.34,107130.7
+2024-05-02,Pediatrics,New Patient,Medicaid,63,15.85,97499.88

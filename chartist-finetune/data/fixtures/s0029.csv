@@ -1,241 +1,241 @@
-loan_origination_date,loan_product_type,loan_branch_region,loan_risk_grade,loan_principal_amount,loan_interest_rate,loan_outstanding_balance,loan_days_past_due
-2025-02-18,Home Equity Line,West Coast,E,275646.43,12.76,105449.76,43
-2024-03-03,Small Business Loan,Mountain,B,104848.97,35.58,696766.55,1
-2025-06-20,Mortgage,Midwest,A,490244.0,17.02,63324.04,250
-2024-12-16,Auto Loan,Northeast,A,479955.89,16.87,278133.86,76
-2025-03-08,Home Equity Line,Midwest,E,291229.17,9.26,664223.43,35
-2024-11-06,Student Loan,Midwest,B,252619.81,15.52,60474.83,84
-2025-03-04,Student Loan,Southwest,B,365183.89,35.96,703670.89,79
-2024-03-25,Mortgage,Northeast,D,728191.19,32.02,67221.14,27
-2024-06-30,Personal Loan,West Coast,C,284705.51,25.7,479087.51,138
-2025-03-06,Small Business Loan,Midwest,E,425727.26,13.49,468241.17,206
-2025-06-20,Student Loan,Northeast,B,205770.99,4.65,534466.14,283
-2024-07-22,Auto Loan,Northeast,B,528736.08,28.23,124541.38,177
-2025-04-20,Personal Loan,Southeast,A,743372.26,22.56,692433.2,182
-2024-07-19,Student Loan,West Coast,D,167665.54,26.75,438455.43,281
-2024-06-09,Personal Loan,Midwest,B,167996.94,12.38,637797.09,337
-2025-03-11,Home Equity Line,Mountain,B,296124.05,17.56,311738.32,293
-2025-02-02,Student Loan,Midwest,C,502244.99,30.69,374677.56,105
-2025-05-11,Student Loan,West Coast,A,204573.0,6.99,470524.16,34
-2024-03-07,Student Loan,West Coast,A,634868.48,30.48,516413.47,171
-2024-06-14,Mortgage,Midwest,C,142910.68,14.45,49203.22,23
-2024-07-03,Auto Loan,Southeast,A,731798.22,19.0,649753.69,283
-2025-01-17,Student Loan,Northeast,C,334741.73,11.44,227552.98,89
-2025-01-07,Student Loan,Southeast,E,170199.83,34.3,289684.21,339
-2024-09-30,Small Business Loan,Midwest,A,498882.27,13.06,464529.24,140
-2025-04-06,Small Business Loan,Southwest,D,83531.11,16.45,330746.02,269
-2024-10-25,Auto Loan,Midwest,B,322574.63,18.78,306001.52,264
-2025-03-10,Personal Loan,Mountain,D,666543.17,3.49,474257.34,78
-2024-03-02,Small Business Loan,Southwest,D,721397.4,31.65,724696.61,28
-2024-02-20,Student Loan,Midwest,C,20109.15,32.66,409235.59,235
-2024-10-15,Auto Loan,Midwest,A,85603.14,33.29,95455.66,363
-2024-12-12,Personal Loan,Southeast,C,596438.07,23.04,149462.52,335
-2024-05-18,Student Loan,Northeast,E,712858.12,10.14,602816.48,333
-2024-09-14,Home Equity Line,Mountain,C,346134.29,33.1,57007.09,158
-2024-09-13,Personal Loan,Southwest,C,14250.88,27.91,88493.17,61
-2024-01-15,Mortgage,Southwest,E,737965.97,26.01,738843.09,235
-2024-05-18,Student Loan,Southwest,B,370682.75,22.73,590062.28,74
-2025-05-21,Auto Loan,Southeast,B,340023.2,20.77,361091.88,213
-2024-06-20,Auto Loan,Mountain,C,599611.04,27.84,687968.24,316
-2024-10-20,Personal Loan,Southeast,B,88966.16,9.65,575416.62,97
-2024-07-26,Personal Loan,Northeast,E,665005.07,5.69,11006.67,174
-2025-05-11,Home Equity Line,Southwest,D,719136.21,21.88,423740.98,55
-2025-04-14,Small Business Loan,Midwest,B,729271.32,32.68,110528.56,193
-2025-02-11,Mortgage,West Coast,C,273640.83,16.25,696032.63,7
-2024-06-12,Personal Loan,Southwest,A,630910.5,29.29,39431.3,285
-2024-10-21,Student Loan,Northeast,B,245993.65,32.46,690610.57,361
-2024-01-28,Home Equity Line,Southwest,D,443041.9,34.89,736441.16,257
-2024-06-23,Small Business Loan,West Coast,A,70922.1,4.3,301659.52,216
-2025-01-22,Mortgage,Southeast,A,636677.59,22.12,408041.58,105
-2024-03-31,Auto Loan,Mountain,B,196962.28,34.51,392055.52,26
-2024-12-05,Personal Loan,West Coast,D,23099.34,5.41,472538.99,13
-2024-11-20,Auto Loan,Southeast,C,512907.53,7.43,78572.71,143
-2024-03-24,Student Loan,Southwest,B,726241.58,28.34,257211.78,244
-2025-03-15,Student Loan,Midwest,C,4603.58,7.4,233028.17,337
-2025-01-15,Small Business Loan,Midwest,A,122803.65,4.09,667965.03,161
-2024-09-05,Mortgage,Mountain,B,591038.88,26.4,15311.07,243
-2024-05-02,Personal Loan,West Coast,E,204145.16,12.02,440590.37,285
-2024-12-13,Auto Loan,West Coast,E,409567.88,29.51,391519.81,181
-2025-02-17,Home Equity Line,Southeast,E,500480.68,11.23,448223.63,278
-2025-01-23,Small Business Loan,Midwest,A,277681.43,10.38,410112.98,137
-2024-04-30,Home Equity Line,Southeast,C,80027.71,7.04,267660.89,316
-2024-08-22,Auto Loan,Southwest,E,727123.87,17.57,279299.49,365
-2025-03-02,Home Equity Line,West Coast,D,321330.71,30.52,726900.75,326
-2024-11-06,Mortgage,Midwest,E,204587.89,23.93,358324.0,66
-2025-02-17,Personal Loan,Southeast,B,390516.56,28.38,663947.8,104
-2025-01-11,Student Loan,Northeast,B,281026.01,11.04,693072.91,283
-2024-05-18,Small Business Loan,West Coast,A,347146.23,22.44,133956.5,267
-2025-04-25,Personal Loan,West Coast,B,362545.28,21.44,407041.98,3
-2024-08-03,Student Loan,West Coast,B,607470.83,18.5,22949.58,208
-2024-05-31,Personal Loan,Midwest,B,188259.44,4.23,83998.83,126
-2025-01-30,Mortgage,Southeast,A,284831.24,16.38,320310.95,71
-2024-03-20,Student Loan,Southeast,D,422249.89,31.17,438039.78,139
-2024-08-02,Personal Loan,Southeast,D,285960.87,9.09,565136.95,130
-2024-11-16,Small Business Loan,Mountain,D,408021.52,6.38,7501.51,37
-2025-02-19,Auto Loan,Southwest,E,662476.94,29.15,549857.44,133
-2024-09-26,Mortgage,Mountain,D,54053.69,28.0,748312.28,345
-2024-04-13,Auto Loan,West Coast,B,462118.86,10.67,474634.8,327
-2025-06-01,Small Business Loan,Mountain,B,135310.84,28.22,566104.16,247
-2024-04-19,Small Business Loan,Southeast,A,408323.07,28.91,700191.23,357
-2024-12-05,Student Loan,Midwest,E,296890.44,30.29,3480.17,341
-2025-04-22,Mortgage,Mountain,D,2147.06,23.89,429122.73,224
-2024-06-30,Small Business Loan,Southwest,A,580181.82,13.59,106118.25,163
-2025-04-14,Personal Loan,Southeast,D,648534.95,24.03,407988.93,144
-2025-05-11,Student Loan,Northeast,E,606134.52,33.96,487645.27,247
-2024-12-03,Mortgage,Mountain,E,481572.18,32.61,170965.66,289
-2025-02-01,Small Business Loan,Midwest,C,557983.12,27.53,63957.43,188
-2025-04-20,Mortgage,Southwest,E,507654.68,20.46,671738.49,180
-2024-08-23,Small Business Loan,Northeast,D,627391.04,22.24,173726.56,199
-2025-02-14,Small Business Loan,Southeast,C,168383.8,32.21,511663.49,44
-2025-02-27,Mortgage,Midwest,B,288723.15,20.08,636732.86,204
-2025-05-08,Mortgage,Northeast,B,515822.78,4.41,164395.55,52
-2024-04-04,Mortgage,West Coast,A,141480.37,17.85,337652.12,205
-2024-09-03,Home Equity Line,Northeast,D,369444.21,21.27,562501.76,301
-2024-03-23,Auto Loan,Southwest,A,126265.67,3.46,477703.61,201
-2024-01-03,Student Loan,Southwest,D,282902.96,8.45,522994.96,258
-2024-05-27,Small Business Loan,Southeast,E,538335.06,25.61,578147.75,2
-2024-12-29,Home Equity Line,Southwest,E,478633.66,29.33,638158.5,327
-2025-05-09,Small Business Loan,Southeast,A,603598.44,28.95,744758.67,273
-2024-05-11,Student Loan,West Coast,A,454928.78,34.7,685474.44,109
-2024-05-22,Student Loan,Mountain,E,58427.02,6.69,256505.54,151
-2024-02-03,Small Business Loan,Southeast,D,156383.36,30.68,437282.5,316
-2024-06-03,Mortgage,Southeast,C,490587.49,25.83,626996.53,17
-2024-09-11,Personal Loan,Northeast,C,127412.4,5.57,660203.12,355
-2025-01-12,Home Equity Line,West Coast,A,223116.59,13.94,480216.31,200
-2025-01-28,Student Loan,Southwest,D,428397.91,20.53,367192.48,76
-2024-05-28,Small Business Loan,Southwest,B,665280.25,16.39,10329.34,112
-2025-05-03,Student Loan,West Coast,E,570731.82,20.33,450600.37,137
-2025-03-29,Auto Loan,Northeast,E,168474.75,34.92,242102.46,78
-2024-06-17,Auto Loan,Southeast,A,350863.03,4.93,145357.34,135
-2024-09-13,Home Equity Line,Southwest,A,563245.69,13.3,267790.46,193
-2025-02-07,Small Business Loan,West Coast,A,498966.52,17.13,429594.88,272
-2024-11-13,Auto Loan,Northeast,C,208883.62,21.47,65690.94,307
-2024-07-29,Home Equity Line,Southeast,A,80136.2,18.58,80272.38,333
-2024-11-25,Home Equity Line,West Coast,C,642843.56,11.24,599693.41,333
-2024-02-20,Personal Loan,Southeast,E,20993.3,30.04,541997.6,41
-2024-05-28,Home Equity Line,Northeast,E,689774.72,14.01,360963.27,141
-2025-03-22,Home Equity Line,Southeast,B,567446.97,8.71,733011.6,152
-2024-10-03,Auto Loan,Northeast,A,174242.87,9.7,557600.89,218
-2025-05-15,Home Equity Line,West Coast,C,330495.65,35.95,104565.95,155
-2025-03-22,Small Business Loan,West Coast,B,527284.82,10.2,328006.38,112
-2024-06-27,Home Equity Line,West Coast,A,687292.72,32.76,730148.68,32
-2024-02-10,Home Equity Line,Northeast,B,610862.4,5.47,394952.37,345
-2024-01-20,Personal Loan,Mountain,D,76617.85,30.09,161594.31,347
-2024-11-19,Auto Loan,Southeast,D,239790.83,27.69,589161.51,286
-2025-06-20,Small Business Loan,West Coast,C,661382.84,32.63,520063.11,295
-2024-10-19,Mortgage,Northeast,A,273537.94,10.14,167238.87,342
-2024-08-17,Small Business Loan,Southwest,A,716374.61,14.4,413131.28,152
-2025-04-02,Student Loan,Southwest,B,42880.26,31.42,276519.71,91
-2024-02-20,Personal Loan,Southwest,C,110015.18,34.97,279605.28,288
-2024-07-02,Small Business Loan,Northeast,D,264102.95,33.76,103565.31,220
-2024-07-18,Small Business Loan,Mountain,E,610472.58,16.03,83212.65,107
-2024-01-29,Personal Loan,Northeast,B,356307.68,16.52,635215.06,235
-2024-12-25,Home Equity Line,West Coast,A,128682.69,14.01,58687.92,271
-2025-04-10,Small Business Loan,West Coast,B,107470.84,7.55,717324.4,50
-2024-08-12,Student Loan,Midwest,E,421802.42,19.79,291.51,153
-2024-01-12,Personal Loan,Southeast,E,450485.19,17.18,122418.22,140
-2024-08-11,Student Loan,Midwest,A,208048.59,30.97,493001.52,141
-2024-01-07,Personal Loan,Midwest,D,505115.65,31.65,158151.82,203
-2024-09-19,Small Business Loan,West Coast,E,419392.9,23.34,334452.85,322
-2025-02-14,Student Loan,Midwest,E,732674.02,11.23,662862.86,73
-2025-01-10,Mortgage,Northeast,E,643732.16,24.46,421114.15,137
-2024-05-25,Home Equity Line,Mountain,B,14498.92,20.12,517194.42,125
-2025-04-24,Auto Loan,West Coast,C,56888.66,16.46,598782.91,340
-2024-03-01,Auto Loan,West Coast,D,133942.19,27.91,524751.01,260
-2024-06-15,Student Loan,Northeast,E,178746.39,8.48,405672.77,143
-2024-05-02,Student Loan,Midwest,D,117791.24,27.29,7207.41,45
-2025-04-17,Home Equity Line,Southeast,E,620782.33,4.32,71913.28,239
-2024-08-07,Student Loan,West Coast,B,296673.05,33.77,312333.57,103
-2025-05-08,Mortgage,Midwest,B,264465.7,27.73,687701.68,60
-2024-07-10,Student Loan,West Coast,D,185526.68,32.69,409095.75,131
-2025-01-18,Small Business Loan,West Coast,A,553631.4,19.39,147743.12,231
-2024-01-07,Auto Loan,Midwest,D,153466.62,35.17,80912.48,42
-2024-10-16,Home Equity Line,West Coast,A,699057.95,13.08,60832.43,0
-2025-04-11,Home Equity Line,Northeast,B,663717.52,34.69,37843.22,253
-2025-03-17,Student Loan,Southwest,E,139259.44,31.92,637746.03,168
-2024-09-09,Auto Loan,Southeast,E,699758.24,31.95,474390.48,112
-2025-04-06,Mortgage,Northeast,A,734013.48,33.48,686032.22,263
-2024-02-13,Personal Loan,Southeast,D,403741.86,29.42,314821.23,150
-2024-11-06,Home Equity Line,Southeast,E,99905.25,20.91,560614.88,86
-2024-12-24,Mortgage,Midwest,C,72995.96,11.25,202427.49,40
-2024-08-17,Auto Loan,Mountain,E,336657.58,34.33,560724.39,97
-2024-03-31,Home Equity Line,Southeast,E,364539.8,6.42,465635.87,71
-2025-04-22,Small Business Loan,Mountain,B,735336.09,27.0,181023.45,99
-2025-02-23,Home Equity Line,Mountain,D,239789.59,34.53,504523.38,246
-2024-01-16,Personal Loan,Southwest,D,725266.88,8.17,683942.97,176
-2024-02-21,Mortgage,Midwest,A,225780.03,14.28,190951.33,323
-2025-02-12,Student Loan,Mountain,D,484314.47,24.58,708129.01,22
-2024-11-11,Small Business Loan,Midwest,D,162808.07,14.04,157678.31,150
-2024-10-10,Home Equity Line,Northeast,B,69344.05,26.93,615023.08,151
-2024-08-23,Personal Loan,Northeast,A,141798.44,13.5,495473.63,259
-2024-07-19,Student Loan,Mountain,E,449508.72,25.97,32567.89,38
-2025-06-10,Auto Loan,Mountain,B,510072.31,23.14,503883.56,53
-2024-02-17,Student Loan,Northeast,A,587627.31,24.4,718130.23,260
-2024-10-07,Small Business Loan,Mountain,B,723258.99,9.16,98042.56,335
-2024-07-02,Mortgage,Northeast,E,505028.93,34.58,55341.85,159
-2024-03-31,Home Equity Line,Midwest,D,276872.15,5.49,592650.35,161
-2024-09-27,Student Loan,Mountain,B,256409.25,30.5,319806.96,143
-2024-08-05,Mortgage,Southeast,D,564807.41,20.93,665383.43,299
-2025-05-24,Personal Loan,Midwest,A,76051.29,10.29,399181.42,64
-2024-09-06,Auto Loan,Mountain,A,511635.66,4.0,252097.18,351
-2025-04-05,Mortgage,Southeast,B,161639.51,23.67,327611.9,170
-2024-01-19,Auto Loan,West Coast,D,572383.46,35.25,230352.4,69
-2024-02-01,Small Business Loan,Southwest,C,449643.34,18.32,450980.84,176
-2025-01-28,Personal Loan,Mountain,B,293558.1,34.2,420689.68,306
-2025-02-27,Small Business Loan,Midwest,E,376372.4,8.31,565688.52,47
-2024-05-15,Small Business Loan,Southwest,C,305071.86,17.93,582048.86,193
-2024-09-20,Small Business Loan,Mountain,E,322206.64,33.75,254940.36,299
-2024-12-16,Personal Loan,Midwest,A,495283.27,8.37,485486.87,355
-2024-10-02,Small Business Loan,Midwest,D,519353.61,20.27,132665.33,239
-2024-02-21,Personal Loan,West Coast,A,336233.72,13.9,694466.08,108
-2024-08-31,Home Equity Line,West Coast,B,149642.11,11.25,224952.27,157
-2025-03-09,Personal Loan,Mountain,A,209569.66,19.02,30727.83,331
-2024-05-10,Personal Loan,West Coast,C,162479.65,35.26,455675.17,304
-2024-08-17,Student Loan,Northeast,A,168213.41,19.1,551634.05,108
-2024-06-12,Personal Loan,Mountain,D,347687.72,23.84,365998.86,91
-2025-05-23,Auto Loan,Midwest,D,403551.27,9.45,374676.01,126
-2024-08-29,Small Business Loan,Southwest,E,424170.78,5.13,197909.8,91
-2025-06-07,Small Business Loan,West Coast,A,352338.6,32.89,671642.37,25
-2024-12-16,Personal Loan,Southeast,B,136282.46,12.96,652594.68,290
-2024-12-04,Student Loan,Southeast,D,394349.92,17.06,719455.12,3
-2024-02-20,Mortgage,Southwest,A,362629.2,18.58,307558.5,183
-2024-02-27,Auto Loan,Midwest,B,587949.03,32.1,78532.39,97
-2024-02-18,Auto Loan,West Coast,B,321140.57,7.9,189307.36,211
-2024-03-20,Auto Loan,Midwest,B,328777.05,20.17,544141.95,243
-2024-02-02,Small Business Loan,West Coast,D,618785.28,28.86,257285.5,50
-2024-08-05,Small Business Loan,Southwest,B,303973.67,3.6,267698.79,259
-2024-10-25,Mortgage,Northeast,B,31621.47,12.23,264454.24,1
-2025-05-07,Auto Loan,Southeast,B,337175.18,35.24,521040.9,230
-2024-12-30,Student Loan,Mountain,B,230588.9,35.72,361025.42,170
-2024-04-01,Student Loan,Southwest,E,288275.54,22.16,541340.39,0
-2024-09-01,Mortgage,Mountain,E,317274.53,21.61,579992.94,91
-2025-01-14,Personal Loan,Southwest,A,30523.09,21.79,330368.17,324
-2024-12-19,Small Business Loan,West Coast,D,298019.39,17.36,579165.93,259
-2024-03-07,Mortgage,Midwest,C,704209.66,32.42,346394.72,267
-2024-10-06,Personal Loan,Midwest,B,454316.09,31.6,41644.91,83
-2024-01-05,Home Equity Line,West Coast,C,486574.94,18.14,213886.33,271
-2024-06-04,Student Loan,Southeast,D,535422.23,24.16,609706.1,72
-2024-10-26,Home Equity Line,West Coast,D,320440.46,14.32,193983.33,337
-2024-03-30,Mortgage,Southwest,C,382890.64,15.51,447238.67,179
-2025-06-23,Mortgage,Southeast,C,613773.21,8.66,411257.75,43
-2025-02-17,Home Equity Line,Northeast,C,369265.97,15.35,450679.91,11
-2024-09-13,Home Equity Line,Mountain,D,315195.29,12.75,741631.29,275
-2025-02-24,Small Business Loan,Midwest,E,577616.77,17.18,600518.46,356
-2024-05-02,Auto Loan,Mountain,B,542457.28,25.35,186095.78,220
-2025-01-23,Student Loan,Northeast,C,443127.16,27.77,405327.1,325
-2025-02-08,Mortgage,West Coast,B,486727.34,22.67,687573.47,363
-2025-01-03,Mortgage,Midwest,A,140854.76,25.51,395442.4,113
-2024-03-30,Mortgage,West Coast,E,568857.77,9.02,685203.5,112
-2024-11-10,Small Business Loan,Mountain,A,191781.57,16.77,415573.36,127
-2024-11-30,Small Business Loan,Southeast,A,245743.37,32.38,723036.82,267
-2024-07-03,Home Equity Line,Southwest,B,166375.43,10.2,668807.21,350
-2024-12-22,Personal Loan,Midwest,D,427720.11,4.83,60993.84,289
-2024-09-25,Student Loan,Mountain,A,312985.68,20.72,575865.06,205
-2024-12-21,Auto Loan,Northeast,A,233267.24,24.06,80012.93,309
-2024-06-05,Small Business Loan,Southwest,B,16652.78,21.56,370170.39,284
-2024-07-23,Mortgage,Mountain,C,327631.38,13.66,728964.73,350
-2025-02-03,Small Business Loan,Northeast,C,617712.49,32.11,315443.24,291
-2025-02-20,Student Loan,Southeast,B,48722.12,5.85,599854.64,94
-2024-01-06,Home Equity Line,Southeast,B,248690.45,12.41,357084.35,183
-2024-12-24,Auto Loan,Mountain,B,53694.96,7.21,372077.94,317
-2024-07-07,Mortgage,Southwest,A,585484.46,21.53,282612.47,286
+order_date,service_period,dining_area,payment_method,covers_count,subtotal_amount,tip_amount,total_revenue
+2025-05-29,dinner,main_dining_room,cash,8,1635.73,32.33,704.16
+2024-05-16,afternoon_tea,main_dining_room,cash,8,4.54,143.96,1968.95
+2024-09-11,afternoon_tea,patio,gift_card,10,1258.31,389.87,485.68
+2024-10-11,breakfast,bar_counter,debit_card,8,1835.41,178.66,2128.78
+2024-10-12,lunch,takeaway_window,credit_card,3,1716.44,322.91,536.33
+2025-02-14,dinner,takeaway_window,debit_card,10,1645.19,390.18,1327.52
+2024-07-28,lunch,private_room,debit_card,8,646.35,140.75,336.98
+2024-12-08,afternoon_tea,bar_counter,credit_card,11,1132.82,202.81,577.33
+2024-12-15,lunch,takeaway_window,house_account,8,1296.51,206.56,1600.79
+2024-04-20,late_night,patio,gift_card,6,997.19,2.63,425.56
+2024-01-11,breakfast,bar_counter,debit_card,9,359.83,40.29,185.25
+2024-01-25,dinner,takeaway_window,mobile_wallet,6,1710.77,416.03,714.94
+2025-04-25,dinner,private_room,cash,11,526.84,20.54,2035.53
+2024-10-09,dinner,main_dining_room,credit_card,3,1234.76,93.02,2240.42
+2024-09-16,afternoon_tea,main_dining_room,house_account,10,604.88,160.46,930.66
+2024-04-18,breakfast,bar_counter,house_account,2,391.0,142.3,2000.86
+2024-05-05,breakfast,bar_counter,credit_card,9,929.9,130.03,264.1
+2024-11-15,afternoon_tea,patio,cash,10,1275.74,235.86,1488.63
+2024-06-06,lunch,bar_counter,debit_card,7,322.92,300.34,595.03
+2024-01-21,afternoon_tea,private_room,gift_card,3,1444.23,395.02,647.56
+2024-11-27,breakfast,patio,cash,5,40.84,276.42,1789.79
+2025-03-12,late_night,patio,house_account,8,1062.53,418.73,725.73
+2024-02-29,breakfast,bar_counter,credit_card,5,1395.99,182.69,2027.98
+2024-07-22,breakfast,private_room,mobile_wallet,11,1478.41,222.76,503.39
+2024-04-22,afternoon_tea,bar_counter,cash,5,380.36,7.31,857.88
+2024-06-18,dinner,main_dining_room,cash,8,1679.98,139.99,150.76
+2024-10-02,lunch,patio,mobile_wallet,9,129.8,102.9,725.36
+2024-12-23,dinner,bar_counter,credit_card,2,433.85,133.0,2165.21
+2024-08-14,afternoon_tea,takeaway_window,mobile_wallet,11,134.44,272.06,1683.61
+2025-05-06,afternoon_tea,takeaway_window,mobile_wallet,7,1528.4,55.29,753.94
+2024-10-15,late_night,main_dining_room,gift_card,4,597.26,123.93,1549.66
+2024-04-23,late_night,patio,cash,7,412.4,390.57,1965.97
+2025-03-13,lunch,main_dining_room,cash,11,1352.84,373.83,1369.99
+2024-10-21,lunch,takeaway_window,house_account,3,1359.89,67.07,1341.76
+2025-05-30,lunch,takeaway_window,mobile_wallet,11,1162.13,176.23,1770.87
+2025-05-14,dinner,takeaway_window,mobile_wallet,5,1127.03,66.34,1537.31
+2024-07-04,breakfast,private_room,cash,2,1767.08,270.3,946.82
+2024-05-31,late_night,takeaway_window,gift_card,10,588.07,194.08,454.49
+2025-05-31,breakfast,patio,house_account,3,1285.2,169.46,846.57
+2024-03-27,afternoon_tea,takeaway_window,gift_card,8,1483.88,275.88,1636.64
+2024-01-03,late_night,bar_counter,credit_card,6,1439.7,387.77,1086.64
+2024-07-04,late_night,patio,house_account,3,1163.78,28.35,856.58
+2024-04-15,late_night,patio,gift_card,10,1298.06,84.69,322.14
+2024-04-19,dinner,takeaway_window,mobile_wallet,9,497.84,200.6,1992.3
+2025-05-19,afternoon_tea,bar_counter,mobile_wallet,5,596.16,245.92,599.91
+2025-01-06,dinner,takeaway_window,cash,4,1058.6,105.75,1500.48
+2024-05-13,dinner,main_dining_room,credit_card,10,289.31,357.65,849.79
+2024-08-07,lunch,bar_counter,mobile_wallet,1,1225.69,100.95,88.99
+2024-04-14,lunch,main_dining_room,mobile_wallet,10,938.28,204.95,1342.46
+2025-06-04,breakfast,private_room,credit_card,2,582.18,361.56,531.81
+2024-01-18,dinner,patio,house_account,4,1575.04,343.66,1632.47
+2024-10-13,late_night,patio,mobile_wallet,2,222.39,177.68,420.53
+2024-10-22,afternoon_tea,bar_counter,mobile_wallet,9,1539.68,35.13,892.66
+2024-06-24,lunch,main_dining_room,mobile_wallet,5,1046.41,28.37,1480.36
+2024-01-06,breakfast,private_room,gift_card,7,1284.04,382.97,1557.89
+2025-02-23,afternoon_tea,main_dining_room,credit_card,1,1794.43,364.57,72.97
+2025-01-21,dinner,takeaway_window,house_account,3,1307.35,387.87,1648.97
+2025-05-27,dinner,patio,gift_card,9,390.87,16.36,220.55
+2025-05-21,afternoon_tea,bar_counter,gift_card,2,875.27,307.21,1765.35
+2024-09-29,late_night,patio,house_account,2,1834.8,58.72,1314.15
+2025-03-02,afternoon_tea,patio,credit_card,5,588.77,407.06,603.29
+2024-08-28,dinner,bar_counter,gift_card,9,176.21,65.5,78.76
+2024-01-24,afternoon_tea,patio,credit_card,12,1512.58,336.18,2231.21
+2024-12-05,dinner,patio,debit_card,4,1067.26,260.15,1124.84
+2024-04-08,dinner,private_room,mobile_wallet,8,55.29,303.75,1748.98
+2024-10-07,breakfast,bar_counter,gift_card,12,1796.81,262.92,961.52
+2025-05-17,dinner,patio,credit_card,11,34.13,228.49,1146.6
+2024-11-14,breakfast,private_room,debit_card,4,802.31,116.56,2088.57
+2024-04-23,breakfast,takeaway_window,credit_card,3,1720.6,155.06,2156.04
+2024-03-18,breakfast,private_room,mobile_wallet,12,494.79,290.08,1414.07
+2025-06-18,afternoon_tea,patio,mobile_wallet,9,1573.49,178.69,2012.33
+2025-02-20,late_night,takeaway_window,mobile_wallet,7,1027.41,249.84,29.79
+2024-11-15,breakfast,private_room,credit_card,2,241.09,339.9,1455.95
+2024-11-27,lunch,main_dining_room,debit_card,7,875.85,198.96,1473.32
+2024-11-22,breakfast,patio,mobile_wallet,2,1161.11,236.88,783.19
+2025-05-27,lunch,bar_counter,mobile_wallet,9,1279.26,139.39,1092.59
+2024-02-13,afternoon_tea,takeaway_window,debit_card,9,1397.11,194.3,2110.76
+2025-04-23,dinner,patio,gift_card,4,120.48,266.56,673.69
+2025-02-28,dinner,takeaway_window,house_account,2,309.59,37.94,107.23
+2024-04-17,breakfast,patio,cash,3,1237.7,402.48,551.68
+2024-12-02,dinner,bar_counter,cash,1,1696.28,337.97,700.18
+2025-05-28,lunch,takeaway_window,house_account,11,939.25,45.27,495.2
+2024-06-26,late_night,takeaway_window,debit_card,1,1787.73,234.7,1623.02
+2024-04-02,breakfast,private_room,mobile_wallet,11,1302.76,311.29,1111.2
+2025-02-20,breakfast,main_dining_room,gift_card,3,402.15,169.95,1182.21
+2024-11-27,breakfast,main_dining_room,house_account,3,861.07,5.91,457.46
+2025-04-02,lunch,bar_counter,credit_card,3,1099.8,52.36,1036.11
+2025-02-26,afternoon_tea,private_room,mobile_wallet,1,517.7,210.58,1201.94
+2025-01-26,lunch,patio,mobile_wallet,2,109.85,295.82,125.66
+2024-08-24,breakfast,bar_counter,cash,11,678.48,75.8,31.41
+2024-09-30,afternoon_tea,patio,debit_card,3,628.59,211.5,124.82
+2025-04-19,late_night,main_dining_room,gift_card,4,1273.77,413.72,1477.61
+2024-03-25,late_night,patio,credit_card,6,1504.98,114.2,1067.63
+2024-10-29,dinner,patio,cash,7,1071.66,382.99,546.96
+2025-06-22,afternoon_tea,bar_counter,credit_card,9,1556.03,256.67,1138.38
+2024-04-28,afternoon_tea,private_room,credit_card,10,828.93,239.26,1916.38
+2025-06-14,dinner,main_dining_room,house_account,2,810.61,111.25,395.57
+2024-01-24,lunch,bar_counter,house_account,2,1497.38,296.77,2027.88
+2024-08-01,afternoon_tea,bar_counter,mobile_wallet,4,1606.89,297.74,110.86
+2025-03-30,lunch,bar_counter,house_account,4,63.74,224.31,1263.51
+2025-01-09,lunch,takeaway_window,mobile_wallet,9,1119.82,146.51,79.7
+2024-10-09,breakfast,private_room,cash,12,886.25,330.68,1587.99
+2025-03-25,dinner,takeaway_window,cash,12,1784.42,280.07,1708.38
+2025-06-05,breakfast,takeaway_window,debit_card,3,976.52,29.41,740.08
+2024-09-07,late_night,bar_counter,house_account,2,1372.87,98.75,2164.08
+2024-07-19,late_night,private_room,cash,7,1630.73,53.36,1603.6
+2024-01-28,breakfast,main_dining_room,gift_card,9,240.31,265.68,45.65
+2025-01-11,afternoon_tea,patio,debit_card,10,641.28,391.38,1107.29
+2024-08-11,lunch,bar_counter,credit_card,2,1545.83,98.33,1050.46
+2025-01-02,dinner,main_dining_room,cash,3,319.17,2.44,932.48
+2025-03-22,dinner,main_dining_room,mobile_wallet,9,1018.61,336.37,1880.91
+2024-02-04,breakfast,main_dining_room,credit_card,7,1457.36,311.76,1168.25
+2025-02-22,breakfast,patio,gift_card,9,974.75,229.73,1724.49
+2024-09-17,afternoon_tea,patio,cash,2,1534.64,184.29,780.36
+2025-03-25,afternoon_tea,patio,mobile_wallet,10,888.25,199.06,1726.82
+2025-04-02,dinner,bar_counter,gift_card,4,635.84,249.46,1785.01
+2024-06-15,dinner,main_dining_room,credit_card,5,551.42,11.88,1043.46
+2024-05-09,afternoon_tea,patio,cash,4,576.63,343.13,2048.97
+2024-07-25,late_night,takeaway_window,cash,9,1611.01,129.72,238.84
+2024-12-02,breakfast,private_room,debit_card,7,902.34,290.2,1919.51
+2024-09-17,afternoon_tea,main_dining_room,house_account,2,1506.81,321.32,65.88
+2025-01-23,lunch,bar_counter,cash,4,1743.41,400.29,1233.46
+2024-05-29,lunch,patio,mobile_wallet,2,1542.55,240.48,1729.31
+2024-01-12,breakfast,patio,cash,2,1233.92,394.59,367.38
+2024-07-27,afternoon_tea,takeaway_window,gift_card,3,1001.69,41.01,1339.64
+2024-11-13,dinner,patio,house_account,6,471.46,367.96,1933.66
+2024-03-03,late_night,bar_counter,credit_card,6,653.98,98.89,1286.21
+2024-01-02,late_night,private_room,mobile_wallet,2,673.72,242.63,1705.9
+2024-06-15,dinner,takeaway_window,house_account,9,973.86,314.42,126.9
+2024-07-22,breakfast,private_room,cash,4,383.48,336.45,1356.08
+2025-04-10,late_night,private_room,debit_card,3,693.3,300.46,2136.73
+2024-03-22,lunch,main_dining_room,credit_card,5,486.02,215.73,2196.08
+2024-03-07,late_night,bar_counter,cash,3,181.52,78.82,588.83
+2025-01-09,dinner,patio,debit_card,8,621.02,311.18,177.89
+2024-09-16,late_night,private_room,mobile_wallet,2,686.23,137.48,997.64
+2024-01-06,dinner,private_room,credit_card,11,193.88,27.66,1216.63
+2024-12-06,late_night,bar_counter,mobile_wallet,6,447.89,180.31,1261.14
+2025-06-17,lunch,private_room,house_account,6,790.93,326.8,2049.2
+2024-05-18,afternoon_tea,patio,house_account,1,1483.7,224.58,261.59
+2024-06-08,lunch,patio,house_account,9,1101.01,90.41,1006.47
+2024-08-06,late_night,takeaway_window,credit_card,3,180.68,11.26,624.0
+2025-05-26,lunch,patio,credit_card,9,788.5,215.07,1905.59
+2024-07-25,breakfast,takeaway_window,house_account,3,1741.33,278.84,2217.33
+2024-03-28,afternoon_tea,main_dining_room,credit_card,9,900.67,373.0,2097.03
+2024-04-29,breakfast,takeaway_window,mobile_wallet,4,58.19,386.04,1713.65
+2024-04-16,late_night,bar_counter,credit_card,6,694.02,410.07,2158.47
+2024-07-22,afternoon_tea,patio,credit_card,11,686.07,246.92,167.28
+2024-02-19,afternoon_tea,main_dining_room,mobile_wallet,8,1804.61,370.53,591.38
+2024-11-15,late_night,private_room,mobile_wallet,6,1206.8,341.61,2165.46
+2024-04-11,late_night,bar_counter,gift_card,2,1138.4,82.82,799.09
+2024-04-12,breakfast,bar_counter,cash,2,558.0,98.3,977.36
+2024-01-17,dinner,private_room,gift_card,4,1073.94,340.4,257.74
+2024-06-14,lunch,patio,mobile_wallet,8,1635.05,246.92,2064.2
+2024-08-25,afternoon_tea,takeaway_window,mobile_wallet,11,313.18,206.13,748.12
+2025-03-16,late_night,main_dining_room,gift_card,7,1261.99,235.07,371.46
+2024-06-13,lunch,private_room,gift_card,11,758.41,317.28,1114.35
+2024-08-04,late_night,bar_counter,house_account,7,451.14,60.9,1741.27
+2025-06-01,dinner,takeaway_window,mobile_wallet,8,1105.41,49.04,1000.96
+2024-11-06,late_night,main_dining_room,credit_card,5,339.91,109.9,521.46
+2025-03-02,dinner,patio,cash,3,377.44,260.22,631.39
+2024-10-13,dinner,takeaway_window,credit_card,5,820.44,10.23,924.77
+2024-07-05,afternoon_tea,patio,gift_card,8,304.85,406.14,1483.95
+2024-12-16,breakfast,bar_counter,mobile_wallet,2,489.26,40.88,1537.17
+2024-06-01,lunch,private_room,house_account,10,716.6,83.9,466.17
+2024-07-15,breakfast,bar_counter,debit_card,9,53.11,309.15,995.4
+2024-09-03,late_night,bar_counter,gift_card,10,659.59,382.02,1978.03
+2024-05-13,dinner,patio,mobile_wallet,6,368.39,188.11,387.91
+2025-05-04,afternoon_tea,takeaway_window,mobile_wallet,5,1258.66,7.38,617.89
+2024-12-24,breakfast,private_room,debit_card,9,1422.15,115.88,570.88
+2024-02-19,lunch,bar_counter,credit_card,10,1231.55,412.85,1145.84
+2025-01-14,afternoon_tea,takeaway_window,credit_card,10,1813.06,24.75,800.44
+2024-12-30,afternoon_tea,main_dining_room,cash,2,1068.07,417.23,1238.72
+2025-06-16,lunch,bar_counter,debit_card,6,129.2,86.21,1382.57
+2024-05-29,breakfast,private_room,mobile_wallet,8,1533.23,299.03,204.76
+2024-05-09,lunch,bar_counter,credit_card,10,928.03,375.15,2019.02
+2025-04-26,breakfast,main_dining_room,gift_card,11,99.54,67.55,309.62
+2025-03-05,lunch,patio,debit_card,7,1317.96,28.39,2218.08
+2024-07-25,dinner,bar_counter,mobile_wallet,6,1484.79,284.93,285.11
+2025-06-12,breakfast,patio,debit_card,10,487.86,75.24,1508.08
+2024-02-26,dinner,bar_counter,credit_card,10,386.33,316.44,1490.33
+2025-06-22,dinner,main_dining_room,house_account,11,719.71,164.94,934.34
+2024-02-01,dinner,private_room,gift_card,11,585.66,203.33,265.62
+2024-09-17,late_night,main_dining_room,cash,5,1310.7,349.06,2138.79
+2024-03-28,late_night,bar_counter,house_account,9,856.72,383.62,1975.42
+2025-01-26,breakfast,takeaway_window,cash,5,370.27,368.89,207.52
+2025-06-01,afternoon_tea,takeaway_window,house_account,8,541.37,301.98,326.54
+2024-01-28,lunch,main_dining_room,credit_card,6,1326.09,156.15,638.42
+2025-03-21,breakfast,patio,cash,10,528.2,114.86,799.54
+2025-04-08,breakfast,main_dining_room,cash,12,1435.3,181.62,341.53
+2024-01-26,dinner,takeaway_window,debit_card,3,1372.23,320.55,1241.44
+2024-03-07,late_night,patio,debit_card,2,1103.34,170.76,1973.92
+2025-02-27,breakfast,main_dining_room,house_account,6,336.33,42.67,176.38
+2024-08-19,dinner,bar_counter,gift_card,6,809.91,48.08,629.63
+2024-01-20,breakfast,bar_counter,cash,7,811.45,371.7,1836.36
+2024-02-13,lunch,bar_counter,house_account,6,1619.22,241.16,1719.0
+2024-05-24,late_night,private_room,cash,11,939.36,6.75,775.31
+2025-05-02,late_night,bar_counter,cash,7,1414.2,203.09,1867.38
+2024-08-13,breakfast,bar_counter,mobile_wallet,6,1376.65,148.77,799.06
+2024-02-26,breakfast,main_dining_room,credit_card,9,1097.52,13.24,1455.55
+2024-02-09,breakfast,patio,debit_card,11,1486.81,20.58,640.85
+2025-02-09,dinner,bar_counter,gift_card,3,986.78,330.56,778.5
+2024-09-08,late_night,patio,cash,9,525.94,37.56,58.63
+2024-05-01,dinner,bar_counter,mobile_wallet,3,1270.79,202.15,1020.72
+2024-07-08,breakfast,private_room,gift_card,6,1386.98,282.99,801.31
+2024-03-16,afternoon_tea,main_dining_room,cash,8,1101.99,313.57,874.92
+2024-02-24,afternoon_tea,private_room,credit_card,11,881.97,117.81,1467.81
+2025-05-13,breakfast,main_dining_room,house_account,5,1481.09,180.98,181.94
+2024-10-26,dinner,main_dining_room,gift_card,3,1391.71,149.22,2178.99
+2024-10-17,late_night,bar_counter,gift_card,8,275.34,367.24,1331.12
+2024-10-20,dinner,bar_counter,gift_card,11,971.29,308.96,1831.15
+2024-01-11,dinner,main_dining_room,house_account,3,1319.56,10.04,761.98
+2024-04-30,afternoon_tea,patio,gift_card,1,669.21,188.24,887.29
+2024-08-29,late_night,private_room,cash,7,1444.54,166.62,566.71
+2024-01-10,lunch,patio,debit_card,5,967.16,179.66,2050.23
+2024-12-18,lunch,main_dining_room,mobile_wallet,10,1396.38,136.37,298.72
+2025-04-20,breakfast,takeaway_window,mobile_wallet,11,201.8,28.63,642.29
+2024-08-12,lunch,main_dining_room,mobile_wallet,11,952.04,302.64,1135.09
+2024-01-28,dinner,bar_counter,mobile_wallet,11,1488.18,148.75,1328.21
+2024-12-19,dinner,private_room,mobile_wallet,6,1698.8,407.04,350.82
+2024-10-22,breakfast,patio,house_account,8,1250.22,271.46,1287.24
+2025-02-18,late_night,patio,mobile_wallet,4,1413.69,228.66,1286.88
+2024-04-24,afternoon_tea,bar_counter,credit_card,6,1510.59,24.82,1110.39
+2024-03-23,lunch,private_room,gift_card,4,1373.74,91.22,2252.84
+2024-06-23,breakfast,main_dining_room,credit_card,8,663.25,120.08,248.08
+2025-03-30,breakfast,patio,gift_card,6,145.33,84.55,40.68
+2025-04-21,lunch,bar_counter,debit_card,2,437.49,51.09,651.46
+2024-09-13,lunch,patio,mobile_wallet,4,67.01,303.6,1792.77
+2024-09-27,dinner,private_room,credit_card,2,1756.59,287.75,2231.46
+2024-02-20,lunch,main_dining_room,gift_card,2,1393.7,306.9,2196.86
+2024-10-03,late_night,takeaway_window,credit_card,2,689.96,124.28,24.1
+2024-11-08,dinner,bar_counter,house_account,1,1772.94,314.1,556.56
+2025-05-29,dinner,patio,house_account,5,96.82,392.36,1775.56
+2025-01-18,dinner,bar_counter,gift_card,5,311.64,53.39,1584.41
+2024-02-16,afternoon_tea,private_room,house_account,2,704.33,360.94,780.98
+2024-09-22,lunch,takeaway_window,gift_card,11,1806.73,384.17,1350.71
+2025-01-10,lunch,takeaway_window,gift_card,10,475.1,403.81,869.22
+2024-07-26,late_night,main_dining_room,house_account,10,751.12,232.07,2211.93
+2024-07-01,dinner,private_room,credit_card,5,83.69,237.0,2219.79
+2024-01-16,breakfast,takeaway_window,mobile_wallet,3,561.35,232.74,1835.07
+2025-05-11,lunch,main_dining_room,mobile_wallet,2,943.22,161.69,1227.69

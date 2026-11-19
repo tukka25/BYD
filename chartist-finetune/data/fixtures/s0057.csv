@@ -1,241 +1,241 @@
-Trip Date,Vehicle Type,Route Zone,Weather Condition,Distance Driven Km,Fuel Or Energy Used,Average Speed Kmh,Stops Completed
-2025-06-13,Diesel Van,Downtown,Clear,113.53,53.18,78.34,90
-2025-05-11,Light Pickup,Downtown,Clear,170.87,32.3,27.43,53
-2024-04-30,Electric Van,Suburban South,Snow,271.59,68.78,82.75,122
-2025-01-29,Cargo Bike,Downtown,Heat Advisory,40.35,2.67,58.57,39
-2024-08-27,Diesel Van,Suburban North,Fog,255.4,79.62,20.92,72
-2024-07-08,Light Pickup,Industrial Park,Heat Advisory,346.74,36.38,88.72,98
-2024-03-15,Diesel Van,Industrial Park,Rain,188.54,72.06,57.37,55
-2024-11-17,Diesel Van,Downtown,Fog,165.31,12.71,63.78,10
-2024-04-25,Box Truck,Downtown,Heat Advisory,109.99,21.16,7.66,119
-2024-12-27,Diesel Van,Rural Outskirts,Fog,113.56,116.03,13.45,31
-2025-05-01,Light Pickup,Industrial Park,Fog,308.14,78.34,37.37,58
-2025-06-07,Cargo Bike,Suburban North,Heat Advisory,144.37,34.38,12.57,37
-2024-02-17,Cargo Bike,Suburban South,Snow,30.64,74.32,97.41,23
-2024-10-23,Box Truck,Airport Corridor,Rain,38.33,0.55,64.01,28
-2024-04-21,Electric Van,Airport Corridor,Fog,173.14,28.97,27.28,96
-2024-09-07,Diesel Van,Airport Corridor,Heat Advisory,127.54,104.49,81.98,82
-2024-06-18,Box Truck,Rural Outskirts,Fog,249.58,77.08,43.33,9
-2024-01-18,Cargo Bike,Downtown,Rain,104.74,10.05,19.84,29
-2024-01-09,Light Pickup,Downtown,Snow,345.25,38.73,48.67,25
-2024-02-24,Electric Van,Downtown,Clear,176.07,43.17,60.41,11
-2025-06-11,Electric Van,Downtown,Heat Advisory,95.57,35.79,69.78,2
-2024-07-10,Electric Van,Suburban North,Snow,187.67,68.33,36.44,62
-2024-12-20,Box Truck,Industrial Park,Fog,246.17,78.88,81.81,25
-2024-08-27,Cargo Bike,Rural Outskirts,Snow,197.42,53.65,52.15,59
-2024-04-15,Light Pickup,Industrial Park,Rain,268.98,65.91,94.28,141
-2024-12-30,Light Pickup,Suburban South,Heat Advisory,283.92,75.01,40.04,119
-2024-01-14,Electric Van,Downtown,Snow,189.61,95.25,74.35,49
-2024-11-27,Electric Van,Airport Corridor,Clear,266.79,41.7,101.43,74
-2024-03-04,Cargo Bike,Downtown,Snow,11.41,115.31,54.02,73
-2025-05-17,Box Truck,Suburban North,Fog,85.38,36.99,39.3,158
-2024-02-03,Electric Van,Suburban North,Heat Advisory,214.25,39.5,104.43,51
-2024-10-27,Electric Van,Rural Outskirts,Rain,324.44,1.16,96.03,49
-2024-07-31,Box Truck,Suburban South,Snow,301.04,28.34,73.67,154
-2024-03-16,Diesel Van,Suburban North,Fog,201.72,48.04,34.23,131
-2024-03-21,Cargo Bike,Industrial Park,Heat Advisory,33.12,99.83,101.22,102
-2024-08-20,Diesel Van,Rural Outskirts,Fog,105.17,80.24,91.02,134
-2025-02-18,Cargo Bike,Industrial Park,Heat Advisory,34.35,11.67,94.9,122
-2024-10-02,Diesel Van,Airport Corridor,Rain,160.94,109.5,87.67,142
-2025-06-19,Light Pickup,Downtown,Snow,175.14,106.7,70.15,50
-2025-05-26,Cargo Bike,Airport Corridor,Fog,67.45,89.34,43.22,67
-2024-09-23,Diesel Van,Suburban North,Clear,217.12,21.68,52.28,15
-2024-07-24,Diesel Van,Industrial Park,Rain,316.23,106.72,14.59,147
-2025-04-24,Diesel Van,Suburban South,Fog,187.95,90.93,95.32,78
-2024-05-26,Electric Van,Airport Corridor,Fog,153.45,36.71,108.56,155
-2024-02-13,Box Truck,Industrial Park,Snow,215.43,92.22,13.55,141
-2024-04-09,Box Truck,Industrial Park,Fog,30.04,83.54,43.71,172
-2025-04-22,Electric Van,Suburban South,Rain,302.24,44.26,62.46,94
-2025-01-05,Electric Van,Rural Outskirts,Snow,347.09,52.85,61.06,58
-2024-02-18,Diesel Van,Industrial Park,Rain,349.51,113.28,63.14,137
-2024-08-02,Diesel Van,Downtown,Snow,90.13,20.98,60.87,53
-2025-04-24,Cargo Bike,Suburban North,Rain,213.99,115.08,13.89,123
-2024-03-18,Diesel Van,Industrial Park,Fog,197.25,55.03,13.63,139
-2024-01-28,Diesel Van,Rural Outskirts,Rain,82.76,112.63,96.64,139
-2024-04-06,Box Truck,Airport Corridor,Fog,260.23,47.39,47.68,26
-2025-02-17,Light Pickup,Suburban South,Clear,272.39,51.64,104.2,165
-2024-01-10,Diesel Van,Downtown,Rain,115.8,82.56,78.92,110
-2024-02-23,Cargo Bike,Downtown,Snow,287.69,113.38,61.91,130
-2025-01-19,Diesel Van,Industrial Park,Clear,109.25,103.26,68.12,24
-2024-03-17,Light Pickup,Industrial Park,Snow,256.36,75.33,69.5,124
-2024-12-15,Diesel Van,Rural Outskirts,Rain,92.04,94.55,96.47,2
-2024-04-22,Box Truck,Airport Corridor,Rain,331.02,42.78,93.25,154
-2024-06-08,Electric Van,Airport Corridor,Heat Advisory,236.33,115.18,23.45,61
-2025-01-27,Cargo Bike,Suburban North,Snow,138.35,118.43,81.44,142
-2024-07-18,Box Truck,Downtown,Fog,42.23,62.36,57.91,126
-2024-10-19,Cargo Bike,Rural Outskirts,Clear,226.81,113.77,92.62,141
-2024-02-23,Box Truck,Airport Corridor,Clear,209.56,2.33,57.59,143
-2025-02-06,Box Truck,Suburban North,Clear,153.59,33.36,64.12,115
-2025-01-23,Box Truck,Downtown,Fog,287.54,0.73,29.42,147
-2025-03-15,Light Pickup,Suburban North,Rain,26.04,91.2,49.9,87
-2025-05-30,Box Truck,Rural Outskirts,Snow,130.16,60.27,97.66,38
-2024-02-27,Box Truck,Suburban North,Rain,189.16,13.45,27.1,112
-2024-07-17,Electric Van,Suburban South,Fog,248.61,42.82,95.01,91
-2025-05-02,Cargo Bike,Suburban South,Snow,7.55,61.38,64.02,53
-2025-04-06,Electric Van,Airport Corridor,Fog,155.69,77.9,52.14,179
-2024-03-30,Box Truck,Rural Outskirts,Rain,256.68,118.03,21.2,146
-2024-06-13,Diesel Van,Downtown,Heat Advisory,125.88,72.37,57.71,174
-2024-09-07,Light Pickup,Airport Corridor,Heat Advisory,3.22,17.6,75.6,26
-2024-05-24,Light Pickup,Rural Outskirts,Rain,171.52,43.42,26.57,76
-2024-04-17,Electric Van,Industrial Park,Clear,174.9,53.37,4.99,170
-2024-02-23,Light Pickup,Suburban North,Clear,210.47,67.83,33.13,20
-2025-05-22,Electric Van,Downtown,Snow,324.89,61.29,8.29,96
-2024-08-06,Electric Van,Industrial Park,Heat Advisory,187.65,15.75,54.0,116
-2024-12-13,Electric Van,Industrial Park,Snow,311.47,29.27,39.28,26
-2024-01-12,Light Pickup,Suburban North,Clear,75.14,3.61,70.64,2
-2024-10-08,Box Truck,Suburban North,Clear,308.83,3.85,23.23,107
-2025-05-14,Light Pickup,Airport Corridor,Fog,174.79,61.69,82.38,97
-2024-09-21,Cargo Bike,Suburban South,Snow,180.03,48.09,33.92,23
-2024-03-07,Box Truck,Suburban North,Rain,74.12,108.57,58.92,52
-2024-09-25,Diesel Van,Suburban North,Fog,211.98,11.44,103.44,165
-2024-11-30,Cargo Bike,Industrial Park,Snow,248.76,15.27,60.97,147
-2024-11-19,Cargo Bike,Airport Corridor,Fog,183.58,36.86,5.2,178
-2024-10-26,Electric Van,Suburban South,Heat Advisory,18.39,39.5,59.48,116
-2024-06-02,Light Pickup,Industrial Park,Heat Advisory,286.45,28.21,79.31,44
-2024-06-26,Light Pickup,Airport Corridor,Clear,120.41,58.4,73.72,21
-2024-10-29,Box Truck,Rural Outskirts,Clear,44.98,119.18,98.47,98
-2025-03-20,Light Pickup,Airport Corridor,Snow,287.06,25.71,107.89,152
-2024-01-11,Diesel Van,Suburban North,Rain,120.11,89.98,6.57,123
-2025-01-25,Diesel Van,Industrial Park,Heat Advisory,306.93,45.09,101.71,67
-2024-08-11,Diesel Van,Downtown,Heat Advisory,240.0,85.97,91.76,31
-2024-03-25,Light Pickup,Airport Corridor,Clear,61.4,91.22,6.8,32
-2025-06-17,Diesel Van,Downtown,Snow,6.95,42.29,6.9,16
-2025-01-01,Electric Van,Rural Outskirts,Heat Advisory,275.49,111.58,36.85,16
-2024-03-29,Box Truck,Industrial Park,Rain,246.6,118.05,23.42,11
-2024-10-17,Light Pickup,Suburban South,Snow,295.9,114.64,46.63,130
-2024-05-18,Light Pickup,Industrial Park,Fog,11.51,104.05,94.58,32
-2024-11-16,Electric Van,Suburban South,Rain,41.02,66.96,61.48,132
-2024-10-23,Cargo Bike,Rural Outskirts,Rain,145.4,69.65,48.34,156
-2025-05-05,Light Pickup,Rural Outskirts,Rain,169.85,51.37,73.0,177
-2024-10-22,Diesel Van,Suburban South,Heat Advisory,200.25,14.91,84.69,14
-2025-04-12,Electric Van,Suburban North,Fog,333.87,88.46,106.36,105
-2025-01-30,Electric Van,Airport Corridor,Snow,233.64,73.47,82.72,103
-2025-05-03,Light Pickup,Downtown,Rain,237.25,4.2,91.73,9
-2024-01-04,Diesel Van,Suburban South,Fog,166.79,18.75,103.6,92
-2024-06-30,Cargo Bike,Airport Corridor,Snow,271.52,78.94,22.49,54
-2025-04-08,Light Pickup,Rural Outskirts,Fog,35.63,89.15,86.39,127
-2025-02-03,Cargo Bike,Rural Outskirts,Snow,171.87,32.26,53.38,146
-2024-12-23,Cargo Bike,Industrial Park,Clear,348.73,39.48,10.02,141
-2024-07-12,Electric Van,Industrial Park,Heat Advisory,265.62,17.49,67.06,82
-2025-06-17,Cargo Bike,Airport Corridor,Heat Advisory,257.29,71.94,68.35,157
-2024-02-14,Light Pickup,Airport Corridor,Snow,211.69,59.03,34.0,22
-2024-04-06,Diesel Van,Industrial Park,Clear,99.02,75.64,29.67,158
-2025-04-30,Diesel Van,Airport Corridor,Clear,13.54,26.0,33.33,169
-2024-08-04,Light Pickup,Suburban North,Rain,128.51,105.02,30.82,62
-2024-10-30,Cargo Bike,Suburban North,Snow,20.51,67.55,9.45,26
-2024-04-15,Electric Van,Suburban North,Clear,185.55,39.07,87.43,38
-2024-06-26,Diesel Van,Suburban North,Clear,184.42,9.75,56.53,164
-2025-03-14,Box Truck,Suburban North,Fog,210.12,70.59,40.23,56
-2025-02-23,Light Pickup,Airport Corridor,Heat Advisory,214.68,4.88,100.85,138
-2025-01-29,Diesel Van,Suburban North,Heat Advisory,58.87,100.91,75.54,127
-2024-08-07,Electric Van,Airport Corridor,Heat Advisory,90.05,31.73,99.25,164
-2024-04-26,Light Pickup,Industrial Park,Fog,324.45,17.44,57.42,97
-2024-04-30,Electric Van,Suburban North,Clear,274.73,70.51,45.71,93
-2024-02-04,Electric Van,Rural Outskirts,Snow,195.19,66.46,35.88,71
-2024-10-13,Cargo Bike,Industrial Park,Heat Advisory,169.56,71.58,72.74,169
-2025-04-13,Light Pickup,Rural Outskirts,Rain,231.69,69.8,8.88,95
-2024-01-02,Box Truck,Suburban South,Clear,50.33,98.91,22.0,15
-2024-03-14,Diesel Van,Airport Corridor,Clear,176.25,44.95,46.97,146
-2024-04-01,Electric Van,Suburban North,Heat Advisory,145.08,105.69,75.86,12
-2024-08-05,Electric Van,Airport Corridor,Snow,323.84,0.9,88.26,134
-2025-03-17,Box Truck,Downtown,Clear,283.7,2.28,62.17,17
-2025-03-21,Diesel Van,Suburban South,Fog,313.02,27.72,10.5,116
-2024-12-20,Cargo Bike,Suburban North,Fog,118.69,59.15,90.23,108
-2025-05-12,Cargo Bike,Suburban North,Heat Advisory,291.82,114.01,59.62,107
-2024-10-07,Light Pickup,Suburban North,Clear,266.31,26.16,57.92,110
-2024-02-24,Light Pickup,Downtown,Snow,57.8,13.76,27.02,106
-2024-11-27,Box Truck,Rural Outskirts,Clear,130.2,108.37,46.4,131
-2025-01-21,Cargo Bike,Industrial Park,Heat Advisory,145.2,83.18,7.52,6
-2024-10-09,Cargo Bike,Suburban South,Fog,155.79,101.25,61.16,152
-2024-11-16,Diesel Van,Rural Outskirts,Clear,0.63,84.06,22.71,159
-2024-05-16,Diesel Van,Suburban North,Fog,301.94,69.23,24.66,176
-2024-11-17,Box Truck,Suburban North,Fog,102.58,103.5,40.63,19
-2024-04-07,Diesel Van,Downtown,Fog,15.38,90.15,9.03,140
-2024-04-20,Cargo Bike,Industrial Park,Fog,148.8,1.18,73.87,102
-2024-12-17,Cargo Bike,Industrial Park,Heat Advisory,118.25,105.06,46.7,93
-2024-03-20,Box Truck,Airport Corridor,Heat Advisory,156.8,49.77,8.06,74
-2025-03-10,Diesel Van,Airport Corridor,Snow,22.83,80.02,75.19,26
-2025-01-18,Electric Van,Industrial Park,Clear,4.6,49.38,107.44,78
-2025-02-09,Light Pickup,Industrial Park,Heat Advisory,235.87,94.25,27.41,64
-2025-03-24,Box Truck,Suburban North,Snow,200.61,22.97,84.49,110
-2025-01-11,Cargo Bike,Downtown,Rain,195.48,37.45,26.05,99
-2024-06-05,Light Pickup,Suburban North,Snow,14.16,2.81,35.48,116
-2025-01-27,Electric Van,Suburban South,Rain,331.76,88.63,86.82,69
-2025-03-31,Diesel Van,Suburban South,Clear,83.62,72.64,59.19,97
-2024-03-25,Diesel Van,Rural Outskirts,Clear,241.11,81.77,29.89,114
-2024-10-13,Diesel Van,Downtown,Fog,148.12,59.84,44.52,84
-2025-06-17,Diesel Van,Airport Corridor,Rain,191.62,37.57,11.93,128
-2025-03-24,Cargo Bike,Suburban South,Rain,147.93,32.43,108.55,83
-2024-05-24,Diesel Van,Airport Corridor,Rain,97.67,107.45,47.07,115
-2025-01-26,Cargo Bike,Airport Corridor,Heat Advisory,288.62,11.38,66.78,134
-2024-01-02,Cargo Bike,Industrial Park,Rain,175.58,19.09,43.89,133
-2024-10-31,Diesel Van,Downtown,Fog,138.25,92.34,69.25,25
-2025-03-11,Cargo Bike,Suburban North,Snow,271.04,57.12,47.68,66
-2025-02-23,Diesel Van,Rural Outskirts,Heat Advisory,30.08,15.26,56.3,6
-2024-07-24,Light Pickup,Airport Corridor,Clear,335.4,89.94,70.57,124
-2024-01-15,Cargo Bike,Rural Outskirts,Rain,69.75,5.29,93.95,112
-2024-08-09,Light Pickup,Suburban North,Snow,261.89,39.01,18.84,179
-2024-07-14,Electric Van,Airport Corridor,Snow,265.49,30.24,48.22,53
-2024-12-20,Cargo Bike,Industrial Park,Clear,265.42,111.2,11.85,30
-2025-03-13,Diesel Van,Rural Outskirts,Fog,338.78,78.15,58.58,100
-2024-06-28,Cargo Bike,Downtown,Rain,136.5,30.13,24.88,103
-2024-06-06,Electric Van,Rural Outskirts,Clear,255.76,45.55,57.4,110
-2025-05-21,Cargo Bike,Industrial Park,Fog,256.67,42.2,75.11,175
-2025-02-21,Light Pickup,Industrial Park,Fog,340.89,14.36,93.28,125
-2024-10-05,Diesel Van,Suburban South,Fog,167.27,62.29,54.33,172
-2024-02-03,Diesel Van,Rural Outskirts,Fog,48.19,2.85,98.37,48
-2024-01-04,Electric Van,Suburban North,Clear,94.44,111.9,26.69,43
-2024-06-04,Box Truck,Suburban South,Clear,290.34,114.7,50.83,69
-2024-06-08,Electric Van,Downtown,Fog,251.69,23.95,69.76,142
-2024-11-18,Cargo Bike,Airport Corridor,Clear,90.6,44.97,3.89,46
-2025-05-05,Diesel Van,Airport Corridor,Fog,115.07,30.81,17.55,100
-2025-02-22,Light Pickup,Suburban North,Heat Advisory,52.59,36.75,63.62,148
-2024-11-18,Diesel Van,Suburban North,Heat Advisory,210.83,13.39,24.51,10
-2024-04-22,Box Truck,Suburban North,Heat Advisory,299.59,68.55,88.06,156
-2024-10-25,Light Pickup,Suburban South,Rain,74.55,87.26,63.34,25
-2025-02-06,Electric Van,Airport Corridor,Snow,265.84,45.64,80.3,46
-2025-04-13,Box Truck,Industrial Park,Snow,339.92,111.13,74.24,56
-2025-02-05,Box Truck,Airport Corridor,Clear,141.64,29.52,90.23,173
-2024-11-04,Light Pickup,Rural Outskirts,Heat Advisory,44.64,77.36,58.37,174
-2025-02-22,Diesel Van,Suburban South,Rain,221.74,74.6,33.54,136
-2025-01-26,Box Truck,Downtown,Fog,331.74,41.33,45.02,171
-2025-06-19,Light Pickup,Industrial Park,Snow,170.52,48.52,81.38,29
-2024-08-23,Cargo Bike,Downtown,Fog,149.93,108.26,85.47,20
-2024-09-07,Light Pickup,Rural Outskirts,Clear,276.9,105.58,25.66,56
-2024-12-16,Cargo Bike,Downtown,Rain,164.32,102.96,33.88,142
-2024-04-03,Cargo Bike,Industrial Park,Clear,20.99,72.01,20.44,21
-2024-12-14,Electric Van,Suburban South,Rain,162.86,82.36,69.28,129
-2024-02-26,Cargo Bike,Downtown,Rain,341.18,26.19,87.79,139
-2024-01-16,Cargo Bike,Airport Corridor,Rain,316.45,62.54,71.12,1
-2024-04-08,Electric Van,Airport Corridor,Rain,292.43,104.7,94.49,137
-2025-04-12,Light Pickup,Airport Corridor,Clear,301.96,85.62,74.69,36
-2025-04-16,Box Truck,Rural Outskirts,Rain,186.79,50.35,96.05,84
-2024-01-23,Cargo Bike,Industrial Park,Snow,196.16,57.42,97.06,147
-2025-01-12,Light Pickup,Suburban South,Fog,95.41,112.45,21.27,171
-2024-08-27,Box Truck,Suburban South,Snow,307.74,47.45,37.17,16
-2024-11-10,Electric Van,Rural Outskirts,Fog,238.3,36.88,97.36,21
-2025-04-03,Cargo Bike,Suburban North,Snow,191.47,97.29,81.59,99
-2024-03-13,Box Truck,Airport Corridor,Snow,257.5,83.48,79.69,179
-2024-02-15,Diesel Van,Airport Corridor,Snow,25.46,31.93,49.25,123
-2024-03-10,Light Pickup,Airport Corridor,Fog,67.34,91.34,63.22,92
-2024-08-24,Light Pickup,Suburban North,Snow,193.5,34.67,69.49,118
-2024-03-22,Cargo Bike,Airport Corridor,Snow,52.07,64.09,12.75,149
-2024-04-01,Diesel Van,Airport Corridor,Heat Advisory,141.9,58.26,69.83,5
-2024-04-18,Diesel Van,Suburban South,Fog,35.39,29.68,100.06,96
-2024-06-05,Diesel Van,Downtown,Fog,268.26,4.18,64.01,70
-2024-11-19,Diesel Van,Industrial Park,Clear,146.6,32.11,97.31,95
-2024-02-08,Diesel Van,Downtown,Rain,173.74,23.79,4.21,9
-2025-06-02,Electric Van,Suburban South,Rain,262.34,32.58,6.86,148
-2025-03-07,Cargo Bike,Suburban South,Snow,94.07,2.5,63.64,134
-2024-12-26,Light Pickup,Industrial Park,Clear,42.78,80.04,67.46,160
-2024-10-01,Diesel Van,Rural Outskirts,Clear,165.77,47.69,24.72,106
-2024-11-27,Box Truck,Suburban North,Rain,65.6,40.62,100.71,151
-2025-05-28,Box Truck,Downtown,Fog,17.63,66.33,61.43,170
-2024-10-07,Box Truck,Airport Corridor,Snow,23.01,65.18,39.11,148
-2024-01-04,Cargo Bike,Rural Outskirts,Snow,26.03,104.81,79.82,173
-2024-07-30,Box Truck,Suburban North,Heat Advisory,65.51,50.16,33.9,109
-2024-05-28,Diesel Van,Industrial Park,Rain,230.2,34.67,20.63,87
-2024-07-06,Box Truck,Suburban South,Rain,290.56,111.93,83.96,172
-2024-06-12,Light Pickup,Airport Corridor,Fog,27.88,86.79,49.88,114
-2024-06-12,Light Pickup,Industrial Park,Snow,133.3,2.14,21.7,72
-2024-11-25,Box Truck,Airport Corridor,Snow,75.88,88.1,101.13,38
+defect_detected_date,defect_type,defect_production_line,defect_severity_level,defect_units_count,defect_repair_cost_usd,defect_scrap_weight_kg
+2025-06-01,Color Variance,Line D,Major,244,3904.04,92.82
+2024-09-30,Solder Bridge,Line C,Major,223,1788.35,101.09
+2025-02-13,Color Variance,Line E,Major,109,4545.66,57.04
+2024-11-01,Color Variance,Line D,Critical,162,3628.86,20.3
+2024-04-06,Misalignment,Line A,Major,144,376.7,86.47
+2024-10-03,Solder Bridge,Line D,Minor,142,3997.55,31.37
+2025-05-23,Solder Bridge,Line A,Major,43,4813.84,12.58
+2025-06-08,Crack,Line C,Major,220,3622.25,26.41
+2025-06-05,Dent,Line C,Minor,20,2627.68,70.96
+2024-11-28,Solder Bridge,Line C,Major,215,4688.38,48.54
+2024-06-18,Solder Bridge,Line E,Minor,7,2434.17,93.28
+2024-11-02,Misalignment,Line B,Major,186,3425.18,68.1
+2024-12-16,Crack,Line A,Minor,221,4781.56,44.66
+2024-06-03,Misalignment,Line A,Minor,228,1529.35,22.86
+2025-06-03,Solder Bridge,Line D,Critical,156,4519.06,102.02
+2024-10-26,Solder Bridge,Line D,Critical,35,1845.16,20.54
+2024-07-08,Solder Bridge,Line D,Critical,118,3210.08,116.31
+2024-09-09,Burr,Line E,Critical,77,3815.8,58.02
+2024-02-27,Color Variance,Line D,Minor,250,3089.55,73.15
+2024-11-25,Scratch,Line A,Critical,10,3446.36,114.88
+2024-07-04,Scratch,Line E,Minor,147,1951.54,108.95
+2025-05-17,Scratch,Line A,Critical,73,2473.06,48.67
+2024-06-11,Misalignment,Line C,Major,69,4114.38,112.23
+2024-05-12,Solder Bridge,Line E,Major,24,4702.81,50.06
+2024-11-21,Color Variance,Line C,Major,38,48.82,15.11
+2024-06-16,Dent,Line A,Minor,189,2666.98,11.8
+2024-07-04,Dent,Line E,Major,146,1395.68,83.77
+2024-07-30,Burr,Line E,Minor,95,3251.33,62.21
+2025-01-06,Scratch,Line C,Critical,186,1044.42,108.4
+2024-05-25,Solder Bridge,Line E,Critical,61,221.18,63.96
+2025-05-04,Solder Bridge,Line C,Minor,140,648.2,94.9
+2024-07-08,Crack,Line D,Major,152,4380.95,115.69
+2025-02-22,Scratch,Line D,Major,33,1505.15,119.79
+2025-05-20,Crack,Line B,Major,233,2159.73,8.55
+2025-01-09,Color Variance,Line E,Major,84,154.02,117.75
+2024-07-23,Scratch,Line D,Critical,25,3640.08,62.83
+2024-12-26,Color Variance,Line A,Major,49,2197.82,49.63
+2025-02-22,Burr,Line D,Critical,149,4521.42,99.22
+2025-02-15,Solder Bridge,Line E,Minor,180,1381.91,93.9
+2024-01-22,Misalignment,Line D,Minor,112,444.68,103.04
+2024-02-19,Misalignment,Line D,Major,40,3453.8,74.14
+2024-06-10,Dent,Line C,Critical,179,2681.29,77.82
+2024-07-10,Dent,Line B,Critical,192,860.17,75.42
+2025-01-14,Burr,Line B,Minor,130,587.71,106.9
+2024-02-18,Misalignment,Line E,Critical,88,4391.21,65.03
+2024-09-01,Crack,Line E,Critical,179,2353.21,2.23
+2025-03-05,Solder Bridge,Line E,Minor,53,381.09,3.48
+2025-04-25,Burr,Line C,Major,23,5.5,40.29
+2024-02-04,Burr,Line D,Critical,103,4900.75,1.83
+2024-08-22,Burr,Line B,Critical,234,3231.17,5.48
+2024-06-09,Dent,Line E,Major,59,1152.44,23.67
+2024-12-02,Burr,Line A,Major,50,4125.18,3.37
+2025-03-24,Dent,Line A,Major,50,4714.15,63.43
+2024-11-12,Dent,Line D,Major,211,3265.89,99.0
+2024-11-13,Crack,Line E,Minor,133,517.94,117.62
+2024-11-19,Dent,Line A,Major,218,4151.17,88.74
+2024-06-08,Burr,Line D,Major,191,4956.31,67.19
+2024-12-20,Scratch,Line C,Major,113,2144.59,76.39
+2024-03-31,Scratch,Line E,Major,192,3754.07,61.26
+2024-10-03,Crack,Line C,Critical,197,2840.5,71.16
+2025-05-06,Crack,Line D,Critical,218,3509.31,44.95
+2024-04-14,Misalignment,Line E,Minor,140,3583.93,7.26
+2024-02-17,Scratch,Line A,Minor,206,3833.54,34.1
+2024-02-07,Color Variance,Line E,Critical,139,1145.09,17.63
+2024-01-16,Crack,Line D,Major,89,3037.19,35.96
+2024-05-16,Crack,Line B,Minor,209,1878.89,71.71
+2024-05-30,Burr,Line A,Critical,70,918.61,55.74
+2024-02-21,Dent,Line C,Minor,15,4517.95,91.82
+2025-03-26,Burr,Line A,Critical,115,4924.23,115.25
+2024-03-02,Burr,Line E,Critical,142,934.64,35.71
+2024-06-01,Dent,Line D,Critical,49,229.54,97.42
+2024-05-31,Color Variance,Line E,Critical,215,4742.0,86.26
+2024-10-31,Solder Bridge,Line B,Minor,91,1366.24,96.07
+2024-11-15,Burr,Line A,Major,79,3707.16,104.88
+2024-08-21,Dent,Line A,Major,232,1442.19,85.57
+2024-07-04,Solder Bridge,Line D,Minor,49,3005.04,89.28
+2024-12-25,Misalignment,Line C,Major,54,3228.65,14.08
+2025-02-24,Burr,Line D,Critical,82,2773.7,65.82
+2024-09-08,Burr,Line C,Minor,214,4543.41,53.44
+2025-06-05,Solder Bridge,Line E,Critical,182,735.61,5.51
+2025-02-18,Burr,Line B,Critical,216,1354.1,56.8
+2024-06-28,Crack,Line E,Minor,104,1375.49,106.78
+2025-06-02,Scratch,Line B,Major,183,492.07,79.24
+2024-05-07,Misalignment,Line E,Major,110,3305.69,18.61
+2025-01-08,Crack,Line E,Major,64,421.14,83.56
+2025-01-06,Scratch,Line E,Minor,40,3932.65,61.77
+2024-06-14,Misalignment,Line C,Minor,234,116.43,7.23
+2024-11-05,Crack,Line A,Major,164,1495.45,0.14
+2024-07-06,Color Variance,Line C,Major,99,228.02,50.79
+2025-02-19,Scratch,Line E,Critical,24,437.75,74.38
+2024-06-11,Dent,Line D,Critical,193,2291.44,104.19
+2024-11-29,Burr,Line A,Minor,56,3405.11,15.51
+2024-10-02,Solder Bridge,Line E,Critical,151,4663.5,99.25
+2024-05-30,Solder Bridge,Line D,Critical,139,690.02,24.24
+2025-04-27,Color Variance,Line B,Minor,232,4299.79,41.06
+2025-05-06,Misalignment,Line E,Minor,222,2858.36,12.39
+2024-09-30,Color Variance,Line D,Critical,244,764.75,49.68
+2024-11-05,Crack,Line B,Minor,146,2959.14,23.58
+2024-05-29,Burr,Line A,Critical,172,3036.36,87.5
+2025-01-22,Burr,Line E,Minor,37,2994.21,93.58
+2025-03-26,Crack,Line D,Minor,170,204.45,71.36
+2024-12-29,Misalignment,Line D,Critical,222,1388.92,67.31
+2024-08-27,Burr,Line D,Critical,6,2777.3,19.21
+2025-02-19,Color Variance,Line D,Major,170,4182.02,111.05
+2024-07-01,Misalignment,Line E,Critical,154,3895.26,119.36
+2025-02-10,Misalignment,Line C,Critical,221,1729.59,57.98
+2024-04-04,Color Variance,Line A,Major,213,4983.65,115.76
+2024-08-09,Scratch,Line A,Critical,129,436.55,27.49
+2024-12-10,Solder Bridge,Line C,Minor,91,2161.78,3.75
+2024-01-21,Dent,Line E,Major,143,2372.27,112.39
+2025-02-06,Solder Bridge,Line C,Minor,183,1539.24,6.59
+2024-09-18,Crack,Line D,Critical,135,2787.76,20.24
+2024-09-30,Color Variance,Line D,Major,210,4537.22,1.8
+2025-04-28,Solder Bridge,Line E,Major,92,1665.75,90.77
+2024-06-19,Misalignment,Line D,Minor,195,3702.67,28.14
+2024-03-19,Misalignment,Line B,Minor,118,3129.15,30.1
+2024-03-15,Dent,Line A,Major,90,610.72,21.77
+2025-02-26,Misalignment,Line A,Critical,134,443.81,5.38
+2024-07-14,Dent,Line A,Major,210,2740.2,106.5
+2024-12-19,Misalignment,Line D,Major,189,3911.3,70.1
+2024-01-31,Scratch,Line B,Critical,136,4590.2,63.06
+2025-01-16,Misalignment,Line B,Minor,158,2544.68,54.73
+2025-04-17,Crack,Line A,Critical,20,4526.65,117.2
+2024-04-27,Crack,Line D,Critical,205,1094.59,22.87
+2025-04-26,Color Variance,Line D,Minor,241,1833.23,16.06
+2024-02-10,Color Variance,Line D,Minor,215,1611.11,79.09
+2024-07-13,Scratch,Line A,Minor,224,3920.48,16.32
+2024-05-24,Color Variance,Line E,Critical,57,1677.88,29.48
+2024-06-03,Crack,Line D,Critical,131,4230.87,64.1
+2024-12-02,Crack,Line E,Critical,150,631.59,47.44
+2025-02-14,Burr,Line D,Critical,193,1449.61,67.24
+2024-07-28,Scratch,Line B,Minor,246,4291.98,44.34
+2024-05-05,Solder Bridge,Line A,Major,142,708.19,52.46
+2024-05-17,Crack,Line B,Minor,68,3667.38,63.17
+2024-07-18,Scratch,Line D,Critical,241,1966.53,53.07
+2024-08-02,Dent,Line A,Major,76,261.83,59.85
+2025-06-14,Scratch,Line C,Critical,154,3979.12,39.72
+2025-01-28,Scratch,Line C,Minor,164,4050.5,30.25
+2024-08-25,Scratch,Line C,Minor,31,1236.95,65.08
+2024-05-17,Solder Bridge,Line A,Minor,243,1036.2,2.0
+2024-01-05,Color Variance,Line A,Minor,98,139.32,17.67
+2024-10-21,Misalignment,Line C,Minor,113,4417.95,82.88
+2024-01-08,Scratch,Line C,Minor,22,1046.91,6.49
+2024-08-07,Color Variance,Line B,Major,14,2859.04,80.58
+2024-05-07,Dent,Line E,Minor,94,646.4,114.68
+2025-06-20,Crack,Line B,Critical,239,4718.19,24.93
+2025-06-23,Misalignment,Line B,Minor,237,2856.69,42.34
+2025-04-06,Crack,Line E,Major,106,4385.16,77.11
+2024-09-29,Solder Bridge,Line D,Minor,228,2555.73,71.31
+2025-01-25,Dent,Line D,Major,154,3825.11,24.03
+2024-08-14,Dent,Line C,Minor,163,3829.46,68.41
+2024-10-24,Color Variance,Line D,Critical,90,2087.95,38.29
+2024-02-22,Burr,Line E,Major,230,4815.36,48.56
+2024-08-03,Misalignment,Line C,Minor,43,1990.09,76.82
+2024-10-03,Crack,Line E,Critical,56,1991.01,5.84
+2025-01-01,Color Variance,Line C,Major,110,3626.61,76.28
+2024-07-08,Misalignment,Line E,Critical,52,1265.59,116.27
+2025-03-30,Crack,Line D,Critical,103,3748.38,2.14
+2024-06-20,Color Variance,Line C,Critical,32,540.46,20.49
+2024-03-16,Crack,Line B,Minor,51,297.1,82.83
+2025-04-10,Crack,Line C,Minor,116,3110.34,11.75
+2024-01-22,Solder Bridge,Line E,Major,104,1009.34,64.22
+2024-08-05,Dent,Line A,Minor,140,546.88,58.01
+2024-09-05,Solder Bridge,Line A,Major,197,1691.52,63.94
+2024-01-07,Scratch,Line C,Major,107,3234.55,114.6
+2024-05-25,Solder Bridge,Line A,Major,223,1217.8,71.57
+2025-03-24,Crack,Line C,Major,79,2703.11,29.55
+2025-04-22,Solder Bridge,Line A,Major,179,256.74,4.67
+2024-08-10,Color Variance,Line E,Major,84,3320.1,17.35
+2024-05-22,Crack,Line E,Major,147,846.65,79.63
+2024-05-26,Color Variance,Line A,Minor,93,696.66,50.14
+2025-05-08,Misalignment,Line B,Critical,250,3307.95,78.54
+2025-05-26,Color Variance,Line B,Critical,10,2626.56,86.83
+2024-09-27,Crack,Line A,Minor,96,2036.3,108.0
+2024-09-03,Misalignment,Line E,Minor,109,2812.17,79.85
+2025-03-26,Dent,Line D,Minor,174,3358.73,43.01
+2024-06-05,Misalignment,Line A,Major,219,1025.49,53.2
+2024-09-01,Crack,Line D,Major,244,2717.34,88.06
+2024-08-28,Crack,Line D,Major,140,509.59,8.23
+2025-01-21,Crack,Line B,Critical,123,1188.4,101.97
+2024-01-27,Burr,Line E,Major,229,3738.44,49.26
+2025-06-12,Color Variance,Line E,Critical,165,192.8,76.13
+2025-02-10,Solder Bridge,Line E,Minor,62,2682.14,57.53
+2024-03-30,Dent,Line B,Minor,238,4284.18,77.8
+2025-02-01,Color Variance,Line A,Critical,95,2789.93,3.17
+2024-05-19,Color Variance,Line C,Major,105,803.51,58.09
+2024-08-08,Dent,Line B,Major,205,1788.46,116.18
+2024-10-05,Dent,Line C,Minor,25,2052.11,10.67
+2025-01-08,Misalignment,Line C,Critical,249,1920.24,107.88
+2024-07-23,Scratch,Line D,Minor,160,1299.78,96.25
+2024-04-28,Burr,Line C,Minor,179,3517.27,3.46
+2025-03-08,Crack,Line B,Minor,195,4288.03,79.06
+2024-02-21,Misalignment,Line C,Critical,147,3226.04,66.98
+2025-05-13,Misalignment,Line A,Minor,204,4502.48,94.55
+2025-04-04,Burr,Line D,Major,224,2992.88,59.71
+2024-11-05,Dent,Line C,Critical,220,801.6,10.16
+2024-08-26,Scratch,Line B,Critical,165,4833.41,12.99
+2024-03-12,Crack,Line C,Minor,21,688.8,52.83
+2025-03-15,Color Variance,Line E,Major,114,2116.0,40.01
+2024-07-22,Misalignment,Line D,Critical,108,2107.95,101.14
+2024-11-10,Scratch,Line C,Critical,89,2000.28,64.92
+2024-06-13,Color Variance,Line E,Minor,180,2575.13,83.99
+2024-12-10,Dent,Line E,Critical,73,936.46,12.22
+2024-12-14,Misalignment,Line E,Minor,144,745.29,61.72
+2024-01-10,Color Variance,Line A,Major,221,3388.86,69.47
+2024-05-17,Scratch,Line E,Critical,150,981.64,77.82
+2024-10-12,Misalignment,Line B,Critical,193,3858.15,1.98
+2024-02-15,Dent,Line C,Minor,114,753.73,7.0
+2024-03-27,Solder Bridge,Line C,Critical,38,3487.17,91.73
+2024-10-02,Dent,Line B,Minor,179,1428.7,12.05
+2024-07-14,Burr,Line D,Critical,198,2780.76,73.2
+2024-05-31,Solder Bridge,Line C,Critical,230,4543.89,103.89
+2025-05-22,Scratch,Line E,Minor,144,4704.3,119.11
+2024-09-25,Color Variance,Line B,Critical,100,2301.22,88.2
+2024-10-18,Burr,Line A,Minor,224,4081.98,52.24
+2024-07-05,Burr,Line C,Minor,223,2433.87,40.23
+2024-07-04,Crack,Line D,Critical,77,2929.26,59.9
+2025-02-17,Color Variance,Line C,Major,213,748.3,11.77
+2024-09-24,Dent,Line D,Critical,46,840.6,102.6
+2024-05-19,Burr,Line D,Minor,149,1102.78,114.03
+2024-01-02,Dent,Line D,Minor,44,3672.89,56.6
+2025-01-29,Dent,Line C,Major,71,2219.21,78.12
+2024-10-10,Dent,Line E,Critical,46,880.41,51.07
+2024-03-03,Scratch,Line B,Critical,142,4555.13,15.88
+2025-01-04,Color Variance,Line D,Critical,148,1254.31,81.64
+2025-02-25,Scratch,Line E,Minor,245,2294.92,119.06
+2024-12-30,Solder Bridge,Line C,Critical,52,1304.87,19.36
+2025-06-22,Misalignment,Line B,Minor,176,1530.31,91.3
+2024-06-28,Burr,Line B,Critical,208,1169.71,46.82
+2024-06-01,Misalignment,Line E,Minor,218,3370.58,29.77
+2025-03-22,Scratch,Line D,Critical,13,1877.82,26.43
+2025-06-23,Crack,Line B,Major,50,2579.3,55.0
+2025-02-02,Scratch,Line E,Major,85,1990.16,76.68
+2024-12-01,Scratch,Line B,Major,137,2027.16,111.29
+2024-05-20,Dent,Line E,Critical,97,3225.39,107.72
+2024-11-03,Color Variance,Line E,Critical,240,4809.72,84.85
+2024-07-19,Crack,Line D,Critical,171,2114.85,36.28
+2024-05-18,Burr,Line B,Critical,68,1347.86,10.48
+2024-08-21,Solder Bridge,Line C,Major,245,1003.91,103.66
+2024-12-27,Misalignment,Line A,Minor,204,2459.58,4.51

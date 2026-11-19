@@ -1,241 +1,241 @@
-Claim Date,Claim Type,Policy Region,Claim Status,Claim Amount,Paid Amount,Days To Settle
-2025-03-25,Property Water Damage,Southwest,Denied,225306.17,39059.95,226
-2024-02-06,Other,Northeast,Open,74952.07,45013.23,396
-2025-02-05,Windstorm,Southwest,Approved,61634.93,174576.18,115
-2024-09-30,Property Fire,Southwest,Closed,157452.58,125186.17,181
-2024-08-01,Windstorm,Northeast,Open,181436.64,114732.79,538
-2024-05-31,Windstorm,Northeast,Open,39096.93,46212.85,278
-2025-05-05,Auto Theft,Southeast,Closed,12556.55,208263.13,324
-2024-09-22,Other,Pacific Northwest,Closed,208123.04,138579.97,343
-2024-12-10,Other,West,Denied,175458.09,53333.3,456
-2024-07-01,Auto Theft,Midwest,Denied,212440.72,47719.86,455
-2024-05-20,Property Water Damage,Northeast,Under Review,51568.61,90913.34,176
-2024-12-08,Property Water Damage,West,Open,43196.05,39666.17,456
-2024-02-05,Auto Theft,Northeast,Closed,61778.24,203818.73,479
-2025-03-04,Auto Theft,Pacific Northwest,Denied,45820.38,126890.8,30
-2024-02-17,Windstorm,Pacific Northwest,Approved,36132.64,36890.39,514
-2024-04-30,Other,Southeast,Closed,174343.33,181977.1,151
-2024-07-30,Liability,West,Approved,202275.08,121383.28,73
-2025-04-25,Medical,Northeast,Under Review,223677.33,33909.37,45
-2025-02-15,Medical,Southwest,Approved,171185.18,151323.37,415
-2025-05-25,Liability,Northeast,Under Review,67331.55,145841.23,334
-2025-04-14,Windstorm,Southwest,Denied,97711.64,31696.67,208
-2025-05-15,Auto Theft,Southwest,Open,29944.28,105314.34,508
-2024-02-19,Property Water Damage,West,Under Review,34443.94,6747.23,408
-2025-04-29,Auto Theft,Southwest,Denied,240200.21,204870.28,522
-2024-10-10,Property Fire,Northeast,Closed,135181.61,224863.06,162
-2025-04-23,Other,West,Open,240360.24,141759.83,339
-2025-01-20,Auto Collision,Southeast,Open,115245.67,164954.47,362
-2024-03-01,Liability,Southwest,Under Review,166280.66,91237.61,136
-2024-03-11,Auto Theft,Southwest,Open,115594.52,106280.67,397
-2024-08-25,Other,West,Closed,69570.67,112331.36,440
-2024-05-18,Windstorm,Southeast,Closed,233277.54,55619.08,231
-2024-12-20,Auto Theft,Pacific Northwest,Under Review,5608.17,35283.37,414
-2024-08-17,Auto Collision,Southeast,Open,72059.55,137825.51,439
-2024-11-20,Other,Northeast,Under Review,187134.33,9636.94,374
-2024-12-18,Property Water Damage,Pacific Northwest,Approved,239959.27,76638.49,66
-2024-02-06,Other,Southeast,Under Review,77128.03,178064.53,459
-2024-04-10,Property Water Damage,West,Open,3779.45,173352.83,411
-2024-09-28,Property Water Damage,West,Under Review,9817.94,132611.33,332
-2025-06-08,Liability,Midwest,Open,39035.68,88781.34,433
-2025-01-18,Auto Theft,Midwest,Denied,215079.28,14556.51,194
-2025-02-05,Property Fire,Midwest,Approved,42326.01,230180.23,314
-2024-07-15,Other,West,Denied,134057.65,199565.41,241
-2024-09-08,Property Water Damage,Northeast,Under Review,27351.04,95066.7,111
-2024-12-24,Auto Collision,West,Under Review,164551.97,152077.65,224
-2024-04-03,Windstorm,Pacific Northwest,Approved,21162.9,44802.75,117
-2024-07-03,Property Fire,Southeast,Under Review,109165.02,153184.64,75
-2025-05-06,Medical,West,Approved,135231.21,191587.37,403
-2024-06-27,Medical,Southeast,Denied,69924.34,175520.94,146
-2024-12-18,Auto Collision,Southwest,Closed,65316.84,200132.22,52
-2025-02-20,Medical,Southwest,Approved,165968.28,2408.29,335
-2024-08-11,Windstorm,Southeast,Open,53765.53,208326.13,87
-2024-05-02,Property Water Damage,Southwest,Denied,153019.92,107739.9,535
-2024-06-03,Medical,Northeast,Denied,22285.05,131979.5,370
-2024-01-17,Medical,Southwest,Under Review,173038.97,231179.37,462
-2025-05-02,Liability,Northeast,Denied,116464.44,71400.83,478
-2024-12-10,Property Water Damage,Northeast,Approved,222538.39,55947.1,93
-2025-06-04,Auto Theft,Pacific Northwest,Under Review,240006.7,9516.23,144
-2025-01-09,Other,Southwest,Denied,170593.46,82629.66,443
-2025-02-08,Auto Collision,Midwest,Denied,104795.6,198141.62,23
-2025-03-29,Auto Collision,Southwest,Closed,68927.57,66153.19,107
-2024-06-10,Property Fire,Northeast,Approved,185017.16,90475.93,473
-2025-05-18,Property Fire,Southeast,Open,193634.08,203458.42,113
-2025-02-16,Property Water Damage,Southeast,Closed,137513.43,236603.79,231
-2025-01-19,Windstorm,Northeast,Denied,154420.32,164940.71,244
-2024-09-14,Property Water Damage,Southeast,Approved,137560.41,5382.74,238
-2024-06-26,Liability,Southwest,Denied,202237.4,142174.34,305
-2024-08-01,Windstorm,West,Under Review,202660.03,32969.52,192
-2024-10-22,Other,Southwest,Denied,204231.82,230851.43,67
-2025-02-26,Windstorm,Pacific Northwest,Closed,93602.33,90587.21,242
-2025-01-27,Auto Collision,Northeast,Approved,103058.93,197033.99,61
-2024-05-14,Medical,Northeast,Approved,201236.35,212985.71,74
-2024-05-18,Property Water Damage,Southwest,Denied,117595.15,184464.35,95
-2024-02-28,Property Fire,Southeast,Approved,145810.47,69635.25,449
-2025-02-06,Windstorm,Pacific Northwest,Approved,120301.78,239491.69,66
-2024-01-17,Liability,Midwest,Under Review,225000.49,128989.79,296
-2024-06-16,Property Water Damage,Pacific Northwest,Denied,10870.7,54978.09,482
-2024-10-20,Liability,West,Under Review,81523.72,34914.12,520
-2024-07-13,Property Fire,Pacific Northwest,Denied,70182.68,37255.75,216
-2024-03-03,Property Water Damage,Midwest,Open,246806.12,223036.05,21
-2024-10-16,Property Fire,Midwest,Open,153761.4,118067.46,506
-2024-08-08,Auto Theft,Pacific Northwest,Open,177484.16,217730.4,441
-2024-05-10,Medical,Southeast,Approved,187888.32,61856.58,404
-2024-06-09,Windstorm,Southwest,Closed,187200.43,32393.9,237
-2024-05-08,Other,Midwest,Closed,34189.9,10716.32,71
-2025-01-05,Auto Theft,Pacific Northwest,Closed,177753.84,106354.15,539
-2025-02-05,Windstorm,Pacific Northwest,Denied,248946.74,236666.09,66
-2024-08-03,Medical,Southwest,Closed,82871.51,206919.45,427
-2024-05-11,Auto Theft,Southwest,Open,213771.06,239430.7,137
-2024-06-18,Auto Theft,Southwest,Under Review,227715.48,59772.65,361
-2024-03-26,Auto Collision,Southeast,Closed,12789.25,161119.25,72
-2025-06-23,Auto Collision,Midwest,Open,70523.27,167987.0,460
-2024-09-18,Windstorm,Northeast,Open,76151.46,94356.41,504
-2025-02-05,Medical,Northeast,Denied,205494.52,181412.28,201
-2024-09-12,Property Fire,West,Approved,31283.07,46999.27,411
-2024-01-05,Liability,West,Closed,174342.69,180353.14,454
-2024-11-08,Windstorm,Southeast,Closed,11258.52,37526.04,186
-2025-02-17,Auto Theft,Southwest,Under Review,40763.83,67984.88,8
-2024-05-06,Liability,Northeast,Closed,13538.32,211720.87,258
-2024-04-28,Auto Theft,Midwest,Under Review,48233.74,124685.6,108
-2025-01-02,Property Fire,Pacific Northwest,Open,59993.09,82704.33,394
-2024-02-02,Auto Theft,Midwest,Approved,150421.41,220465.92,75
-2024-12-01,Medical,Northeast,Closed,7969.56,49158.37,396
-2024-07-30,Liability,Pacific Northwest,Closed,24409.46,228220.44,414
-2025-04-27,Auto Collision,West,Denied,201359.78,57141.83,318
-2025-02-06,Auto Collision,Pacific Northwest,Open,10524.12,4665.14,18
-2024-06-02,Windstorm,Pacific Northwest,Closed,75648.11,72083.53,275
-2025-06-15,Property Fire,Southwest,Open,114884.9,10034.97,344
-2025-03-10,Auto Theft,Southwest,Under Review,87993.59,49314.07,248
-2024-07-30,Liability,Midwest,Under Review,180044.38,39685.26,476
-2024-04-30,Medical,Midwest,Denied,82605.29,60580.52,59
-2024-03-03,Property Water Damage,Midwest,Open,166251.0,88215.83,302
-2024-06-01,Windstorm,Northeast,Closed,232338.1,5323.53,24
-2024-01-15,Auto Collision,Northeast,Under Review,215180.88,200365.54,20
-2025-04-09,Medical,Southeast,Open,111338.15,86020.23,73
-2024-04-28,Property Fire,Pacific Northwest,Under Review,224749.47,19341.18,500
-2025-01-22,Auto Collision,Southeast,Denied,11084.62,135158.82,329
-2024-03-26,Windstorm,West,Under Review,238854.98,113874.88,110
-2024-09-14,Auto Theft,Southeast,Closed,170556.78,73494.95,310
-2025-01-16,Other,Pacific Northwest,Under Review,247620.06,144028.22,225
-2025-04-29,Medical,West,Denied,118404.53,196830.32,540
-2025-01-04,Property Fire,Northeast,Open,77346.79,136634.48,130
-2024-05-20,Other,Pacific Northwest,Under Review,226858.78,238715.75,150
-2024-08-08,Property Fire,Midwest,Approved,100001.78,67664.86,203
-2025-03-08,Medical,Southwest,Open,99145.57,155609.82,226
-2024-10-07,Medical,Midwest,Under Review,197400.3,184413.42,21
-2025-02-12,Other,Southwest,Open,46437.09,183316.32,482
-2024-08-03,Liability,Southeast,Under Review,135217.03,186308.94,414
-2024-02-27,Medical,Midwest,Denied,203900.65,98335.95,289
-2024-10-10,Auto Theft,Southeast,Under Review,148136.98,29115.84,252
-2024-02-09,Property Fire,Southwest,Closed,206829.07,190745.23,412
-2025-05-06,Property Water Damage,Midwest,Under Review,188654.89,54754.46,385
-2024-09-19,Other,Southwest,Denied,165460.29,86459.83,97
-2024-06-14,Auto Theft,Midwest,Open,46382.57,238503.81,76
-2024-02-08,Auto Collision,Northeast,Approved,130778.55,95603.85,523
-2025-05-19,Auto Collision,Southeast,Open,182022.74,152263.86,97
-2024-02-03,Property Fire,Southwest,Under Review,53260.56,35227.67,523
-2024-05-03,Other,Pacific Northwest,Denied,28020.72,73801.89,519
-2024-10-02,Property Fire,Midwest,Closed,19142.54,131823.37,475
-2024-10-14,Auto Collision,West,Open,159781.44,217395.65,102
-2024-11-25,Windstorm,Northeast,Open,155376.37,10570.54,18
-2025-01-09,Other,Midwest,Denied,99775.64,110482.28,97
-2024-06-15,Property Water Damage,Northeast,Approved,202202.66,53339.14,71
-2024-06-26,Property Fire,Midwest,Denied,203305.62,84943.75,335
-2025-04-04,Auto Collision,Southeast,Closed,67367.22,91849.52,432
-2025-01-23,Property Fire,West,Approved,16288.11,169648.53,175
-2024-10-27,Auto Theft,Southwest,Closed,88921.61,197732.3,327
-2025-01-06,Auto Theft,Pacific Northwest,Denied,179911.05,144797.95,327
-2024-05-29,Other,Southeast,Open,127086.11,81372.14,269
-2025-06-16,Medical,Southeast,Open,83520.67,214341.36,345
-2025-04-01,Windstorm,Southwest,Under Review,126849.72,201161.74,202
-2025-02-20,Property Water Damage,West,Under Review,101509.6,42841.81,188
-2024-03-04,Property Fire,Northeast,Denied,8090.26,49923.38,539
-2025-04-19,Auto Collision,Pacific Northwest,Under Review,214651.67,21318.77,43
-2025-05-02,Property Fire,Midwest,Under Review,170312.69,118183.0,296
-2024-09-19,Windstorm,Southeast,Closed,240184.73,39730.73,393
-2024-02-11,Auto Collision,Northeast,Under Review,127727.18,162419.53,182
-2025-02-19,Property Fire,Northeast,Closed,57784.48,219474.67,480
-2024-03-06,Windstorm,West,Approved,169838.19,172892.7,262
-2024-02-12,Auto Theft,Pacific Northwest,Approved,201434.81,163792.09,3
-2025-01-27,Property Fire,Pacific Northwest,Approved,32073.12,146358.68,455
-2025-05-29,Windstorm,Midwest,Closed,169981.58,152380.05,478
-2024-08-18,Windstorm,Midwest,Denied,182548.93,122821.82,197
-2025-06-07,Other,Southeast,Denied,42813.86,124331.08,184
-2025-01-06,Other,Northeast,Closed,230261.51,122497.55,162
-2024-11-13,Auto Theft,Pacific Northwest,Denied,38650.22,30071.98,200
-2024-10-21,Medical,Northeast,Under Review,103071.77,133154.78,241
-2024-01-13,Auto Theft,Pacific Northwest,Denied,115600.98,15725.53,415
-2025-02-05,Property Water Damage,Southwest,Approved,124711.35,210247.2,187
-2024-08-03,Property Fire,Northeast,Approved,132187.62,116958.99,519
-2024-12-02,Property Fire,Southwest,Under Review,222388.28,195692.46,4
-2025-04-16,Other,Northeast,Under Review,180783.54,200689.88,89
-2024-12-25,Other,Southeast,Denied,146666.47,203941.31,159
-2025-02-16,Liability,West,Open,50517.3,221575.61,117
-2024-11-15,Other,Northeast,Closed,125968.43,144960.1,174
-2025-02-13,Property Fire,Midwest,Closed,146548.87,161640.87,484
-2024-07-20,Windstorm,Northeast,Closed,11692.78,60893.46,409
-2025-02-03,Auto Collision,Southwest,Open,241251.87,37587.64,173
-2024-10-04,Medical,Pacific Northwest,Denied,153654.12,231833.06,538
-2024-12-30,Auto Theft,West,Under Review,151399.07,210130.57,396
-2025-02-03,Other,Southwest,Closed,150213.55,203797.56,186
-2024-11-21,Auto Collision,Southwest,Closed,206793.37,153760.54,321
-2024-07-15,Auto Theft,Midwest,Denied,180020.82,200774.95,34
-2024-09-19,Auto Theft,Northeast,Under Review,179189.51,123818.13,526
-2024-06-09,Auto Collision,Pacific Northwest,Denied,201914.54,118907.78,11
-2025-03-07,Auto Collision,West,Denied,145361.87,147636.27,78
-2024-05-07,Other,Midwest,Approved,227669.95,217568.04,115
-2025-05-06,Medical,Pacific Northwest,Open,161154.11,181508.24,362
-2024-08-28,Liability,Pacific Northwest,Open,245015.85,161166.32,333
-2024-06-30,Property Fire,Southeast,Open,230140.99,80846.03,444
-2025-02-19,Auto Theft,West,Closed,159213.28,142612.36,463
-2025-06-17,Liability,Pacific Northwest,Closed,23703.48,102139.77,284
-2024-01-03,Windstorm,Pacific Northwest,Approved,123789.6,235491.68,378
-2025-06-02,Windstorm,Midwest,Denied,29860.13,20006.55,313
-2025-01-23,Windstorm,Southeast,Denied,20639.12,237214.05,396
-2024-04-20,Property Fire,Pacific Northwest,Closed,37699.71,49148.22,177
-2025-06-15,Property Water Damage,Southwest,Under Review,101093.87,213441.35,101
-2025-04-02,Property Water Damage,Pacific Northwest,Open,178940.85,230729.43,449
-2024-10-19,Property Fire,Southwest,Open,82639.79,206452.47,61
-2024-01-11,Other,Southeast,Open,149258.07,117007.12,72
-2024-11-22,Liability,West,Approved,208577.94,22157.19,372
-2025-01-30,Liability,Southeast,Approved,50522.91,150595.09,87
-2024-10-11,Auto Collision,Southeast,Denied,149448.7,211927.23,435
-2024-03-07,Windstorm,Midwest,Denied,201095.47,45704.5,469
-2024-06-30,Liability,Midwest,Closed,163197.55,34176.59,218
-2024-12-01,Property Fire,Southwest,Denied,190084.27,189458.01,168
-2025-03-26,Windstorm,Southwest,Denied,153286.97,124653.19,365
-2024-08-15,Windstorm,Pacific Northwest,Denied,113720.17,18077.49,290
-2024-01-03,Other,West,Under Review,163120.87,216370.31,276
-2024-04-23,Liability,West,Open,233622.5,119991.46,12
-2024-11-01,Property Water Damage,Southwest,Open,144388.79,85625.8,81
-2024-08-13,Windstorm,Southwest,Open,56498.69,10661.63,89
-2025-03-05,Other,Pacific Northwest,Closed,242973.11,177820.93,38
-2024-09-11,Property Water Damage,West,Open,2592.14,238634.75,381
-2025-05-08,Property Water Damage,Northeast,Approved,102199.24,129995.02,407
-2024-07-10,Property Water Damage,Pacific Northwest,Denied,227226.79,67749.35,226
-2024-02-28,Auto Collision,Southwest,Approved,181144.74,233403.51,459
-2024-10-18,Auto Theft,Southeast,Approved,203289.33,90826.1,237
-2024-07-23,Property Water Damage,West,Closed,26134.5,161469.72,399
-2024-09-02,Auto Collision,Southeast,Under Review,87741.58,210127.49,151
-2024-07-24,Auto Collision,West,Approved,190859.12,124047.78,49
-2025-04-23,Liability,Midwest,Denied,104238.63,77527.53,437
-2024-04-05,Medical,Northeast,Approved,114413.56,191115.03,32
-2025-01-15,Property Fire,Midwest,Closed,108243.62,217985.53,412
-2025-04-29,Auto Collision,Southwest,Denied,165557.1,196605.21,149
-2024-11-11,Liability,Southwest,Closed,120408.77,99128.12,341
-2024-05-01,Auto Theft,Southeast,Under Review,161570.64,126791.14,524
-2025-05-10,Auto Theft,West,Under Review,24397.68,38623.74,134
-2024-11-06,Property Water Damage,Southeast,Closed,120060.1,222500.17,62
-2024-05-31,Windstorm,Northeast,Under Review,168203.81,55282.05,256
-2024-07-06,Medical,Southwest,Closed,196254.02,189464.55,18
-2024-08-07,Property Water Damage,Pacific Northwest,Denied,246946.78,24708.04,526
-2024-11-14,Other,Southwest,Approved,20684.7,138110.13,83
-2025-06-16,Other,Southwest,Denied,169548.06,35143.23,182
-2025-05-29,Other,Southwest,Approved,196816.98,42360.36,535
-2024-02-23,Windstorm,Pacific Northwest,Denied,28887.1,107025.13,149
-2024-05-13,Auto Theft,Southeast,Under Review,19526.61,136435.84,188
-2024-01-14,Other,Midwest,Approved,81506.18,221275.11,42
-2024-09-12,Other,Southwest,Denied,242793.99,90880.98,334
-2024-01-24,Property Water Damage,Southwest,Under Review,80619.5,94626.78,231
-2024-05-02,Property Fire,Northeast,Under Review,88052.73,22653.01,211
+request_date,service_category,district_name,request_channel,days_to_resolve,estimated_cost_usd,citizen_satisfaction_score
+2024-03-12,noise_complaint,lakeview,website_form,2,12734.5,1.2
+2025-04-17,graffiti_removal,eastside,website_form,162,13845.36,1.7
+2024-05-26,water_leak,riverside,in_person,56,10052.27,3.92
+2024-03-26,noise_complaint,north_ridge,website_form,121,2500.63,2.57
+2024-04-04,parking_violation,eastside,in_person,129,6055.14,1.96
+2024-11-22,graffiti_removal,north_ridge,email,166,18247.4,1.67
+2025-03-19,streetlight_outage,downtown_core,website_form,92,2968.29,2.93
+2024-07-13,parking_violation,lakeview,website_form,17,11766.93,2.08
+2024-12-08,noise_complaint,eastside,website_form,85,18409.75,1.14
+2024-10-04,noise_complaint,downtown_core,website_form,143,19844.43,4.87
+2024-03-04,tree_trimming,lakeview,website_form,120,24402.24,1.63
+2024-06-12,water_leak,westfield,in_person,27,17187.86,1.86
+2025-06-06,graffiti_removal,southgate,website_form,162,11130.62,1.93
+2025-01-11,pothole_repair,eastside,email,81,3381.76,4.27
+2024-04-24,noise_complaint,eastside,phone_call,54,21482.76,1.99
+2024-07-30,noise_complaint,eastside,phone_call,178,24687.16,3.08
+2024-08-01,parking_violation,riverside,website_form,38,5848.73,2.56
+2024-04-07,noise_complaint,north_ridge,mobile_app,70,9733.88,4.27
+2024-07-24,water_leak,downtown_core,website_form,50,7844.39,4.08
+2024-10-28,pothole_repair,lakeview,in_person,117,11174.43,3.99
+2024-03-24,parking_violation,eastside,phone_call,81,8296.69,4.54
+2025-04-10,trash_collection_missed,downtown_core,mobile_app,24,14453.96,3.53
+2025-02-13,water_leak,eastside,website_form,162,4175.19,1.77
+2024-06-19,parking_violation,lakeview,mobile_app,42,2699.82,2.76
+2025-04-12,trash_collection_missed,lakeview,in_person,179,1053.11,4.55
+2024-01-02,noise_complaint,lakeview,phone_call,147,24398.82,2.39
+2024-10-14,water_leak,riverside,phone_call,32,11580.14,2.96
+2025-04-20,tree_trimming,downtown_core,email,22,18347.04,1.03
+2024-02-11,tree_trimming,eastside,in_person,28,11383.01,3.18
+2025-05-01,streetlight_outage,downtown_core,website_form,154,10478.37,2.61
+2024-02-21,pothole_repair,southgate,phone_call,146,20028.38,2.91
+2025-04-01,parking_violation,lakeview,phone_call,44,17266.3,3.93
+2024-11-15,water_leak,southgate,email,168,5967.8,2.42
+2024-12-24,parking_violation,north_ridge,phone_call,63,2815.15,3.36
+2024-04-18,graffiti_removal,riverside,phone_call,22,9089.63,3.74
+2024-06-23,pothole_repair,north_ridge,email,80,13292.3,1.43
+2024-03-18,water_leak,downtown_core,phone_call,130,18305.81,2.38
+2024-09-13,trash_collection_missed,westfield,phone_call,24,17165.63,1.48
+2024-01-18,pothole_repair,lakeview,phone_call,19,10711.0,2.15
+2024-02-23,parking_violation,westfield,website_form,69,13564.54,1.12
+2024-02-04,parking_violation,westfield,in_person,96,13542.0,4.58
+2025-05-07,graffiti_removal,lakeview,email,178,22747.6,3.57
+2025-01-23,noise_complaint,riverside,email,100,1284.56,2.28
+2024-03-11,parking_violation,eastside,website_form,141,12997.8,4.52
+2024-05-27,water_leak,riverside,email,71,2674.49,1.93
+2025-01-15,streetlight_outage,westfield,phone_call,36,714.76,2.68
+2024-12-26,water_leak,lakeview,in_person,15,8452.97,3.62
+2025-02-09,graffiti_removal,southgate,mobile_app,14,18246.94,2.77
+2024-10-14,water_leak,eastside,website_form,82,12900.79,3.38
+2024-02-13,pothole_repair,lakeview,mobile_app,180,13411.45,4.17
+2025-01-22,water_leak,eastside,phone_call,16,14526.4,4.02
+2024-08-18,graffiti_removal,westfield,phone_call,62,19851.37,2.06
+2025-04-27,parking_violation,north_ridge,mobile_app,40,18434.95,4.99
+2024-01-23,pothole_repair,eastside,email,11,9235.76,2.83
+2024-03-20,pothole_repair,westfield,website_form,155,19656.56,4.63
+2025-01-24,pothole_repair,southgate,in_person,119,884.11,2.3
+2024-07-14,pothole_repair,north_ridge,phone_call,98,4931.68,3.79
+2024-02-04,parking_violation,riverside,in_person,81,24710.9,1.83
+2024-08-17,water_leak,eastside,in_person,121,423.31,2.62
+2025-02-22,trash_collection_missed,eastside,website_form,135,5132.85,2.5
+2024-06-28,trash_collection_missed,southgate,phone_call,110,22777.58,3.91
+2024-08-07,streetlight_outage,lakeview,email,147,11348.8,2.92
+2024-08-05,trash_collection_missed,eastside,website_form,82,20906.66,3.1
+2024-01-14,streetlight_outage,eastside,in_person,61,15853.96,4.97
+2025-02-10,streetlight_outage,lakeview,phone_call,46,19430.47,1.45
+2025-02-06,streetlight_outage,riverside,phone_call,128,22575.31,1.26
+2025-04-14,trash_collection_missed,north_ridge,website_form,78,6238.37,3.21
+2024-01-19,water_leak,downtown_core,in_person,53,1941.61,2.52
+2025-03-24,pothole_repair,eastside,mobile_app,18,18087.87,2.68
+2024-04-09,water_leak,westfield,mobile_app,150,257.15,1.56
+2024-01-17,pothole_repair,westfield,website_form,147,6338.89,1.41
+2025-06-10,water_leak,lakeview,email,171,10748.69,3.17
+2024-09-05,graffiti_removal,southgate,phone_call,107,21383.73,4.26
+2025-03-23,graffiti_removal,riverside,in_person,121,3291.89,1.81
+2024-12-29,tree_trimming,southgate,email,121,4075.16,1.47
+2025-05-29,trash_collection_missed,lakeview,mobile_app,78,931.71,2.33
+2024-03-26,noise_complaint,westfield,website_form,30,9874.47,1.47
+2024-06-06,trash_collection_missed,riverside,email,160,5958.55,2.65
+2024-12-07,noise_complaint,lakeview,mobile_app,103,7521.57,4.45
+2025-02-05,pothole_repair,lakeview,in_person,170,13180.42,2.67
+2024-06-24,tree_trimming,eastside,website_form,36,17305.58,4.12
+2024-02-08,parking_violation,southgate,in_person,136,3981.9,2.91
+2024-12-06,trash_collection_missed,lakeview,website_form,117,7640.7,3.44
+2025-06-12,parking_violation,north_ridge,in_person,78,12201.21,4.96
+2024-06-14,pothole_repair,lakeview,in_person,55,19065.12,1.45
+2024-02-12,trash_collection_missed,southgate,in_person,8,14301.0,3.04
+2024-06-08,graffiti_removal,riverside,in_person,102,4848.83,3.04
+2025-03-13,pothole_repair,eastside,mobile_app,38,19603.38,2.65
+2024-05-19,graffiti_removal,eastside,website_form,140,1768.86,1.6
+2025-03-23,streetlight_outage,lakeview,website_form,147,10093.54,3.46
+2025-05-26,pothole_repair,eastside,website_form,21,17600.13,4.9
+2025-01-03,tree_trimming,riverside,mobile_app,23,14463.43,4.88
+2024-03-12,noise_complaint,eastside,phone_call,157,4658.28,3.35
+2024-05-30,pothole_repair,lakeview,mobile_app,60,14672.77,3.77
+2024-09-06,noise_complaint,riverside,phone_call,164,11912.19,4.91
+2024-06-28,noise_complaint,lakeview,in_person,116,8757.71,3.86
+2024-03-26,trash_collection_missed,southgate,in_person,3,4064.18,4.38
+2024-12-19,noise_complaint,eastside,phone_call,162,21505.05,1.88
+2024-05-05,parking_violation,southgate,in_person,0,14375.5,4.63
+2024-05-23,tree_trimming,riverside,mobile_app,175,12408.83,3.15
+2025-02-17,noise_complaint,eastside,website_form,76,12254.4,4.22
+2024-08-26,noise_complaint,lakeview,website_form,64,22410.29,3.85
+2024-07-20,noise_complaint,lakeview,mobile_app,18,23926.19,1.63
+2024-10-11,graffiti_removal,north_ridge,mobile_app,159,11130.09,4.44
+2024-06-04,trash_collection_missed,downtown_core,phone_call,114,13555.47,4.92
+2025-06-08,tree_trimming,downtown_core,phone_call,74,985.1,3.32
+2025-04-21,parking_violation,north_ridge,website_form,56,22923.78,4.65
+2024-01-28,trash_collection_missed,southgate,email,65,4124.59,3.33
+2025-02-16,pothole_repair,eastside,email,53,10102.05,1.5
+2024-03-16,tree_trimming,southgate,email,39,14762.26,3.34
+2024-09-02,graffiti_removal,north_ridge,website_form,72,1594.65,4.36
+2025-05-28,trash_collection_missed,north_ridge,website_form,52,9897.2,1.1
+2025-03-16,streetlight_outage,riverside,mobile_app,113,22143.17,2.86
+2024-03-18,trash_collection_missed,riverside,in_person,31,15845.94,2.61
+2024-10-01,trash_collection_missed,eastside,mobile_app,134,1046.35,1.88
+2024-08-20,trash_collection_missed,eastside,email,95,1617.71,3.35
+2024-03-22,noise_complaint,north_ridge,website_form,103,15429.08,4.37
+2024-03-30,water_leak,riverside,mobile_app,4,18455.09,2.39
+2025-03-13,tree_trimming,westfield,phone_call,170,23391.45,2.56
+2025-01-24,trash_collection_missed,north_ridge,phone_call,109,21950.96,2.93
+2024-01-08,tree_trimming,lakeview,email,45,10049.66,4.0
+2024-12-11,graffiti_removal,westfield,mobile_app,56,8100.72,2.36
+2024-12-10,parking_violation,westfield,email,4,468.86,1.05
+2024-07-26,noise_complaint,north_ridge,email,71,19270.5,3.66
+2024-06-16,parking_violation,north_ridge,email,87,9160.78,2.42
+2024-07-12,parking_violation,southgate,mobile_app,159,24277.37,3.53
+2025-05-06,tree_trimming,southgate,mobile_app,44,11378.85,4.18
+2024-08-15,pothole_repair,downtown_core,website_form,152,19331.11,3.92
+2025-03-06,trash_collection_missed,riverside,website_form,167,2580.58,1.91
+2024-04-14,streetlight_outage,southgate,website_form,140,14091.34,1.78
+2024-03-25,graffiti_removal,downtown_core,mobile_app,162,14003.63,3.29
+2024-06-03,trash_collection_missed,eastside,website_form,112,10673.77,4.32
+2024-04-16,trash_collection_missed,eastside,in_person,11,16939.77,2.64
+2024-04-28,streetlight_outage,southgate,email,126,21263.85,2.39
+2025-02-22,graffiti_removal,southgate,website_form,119,7614.68,4.83
+2024-02-28,trash_collection_missed,westfield,website_form,32,12195.66,2.1
+2025-02-04,noise_complaint,eastside,mobile_app,18,8248.79,1.63
+2025-04-21,water_leak,riverside,mobile_app,16,12311.57,1.41
+2024-02-18,noise_complaint,riverside,website_form,7,2463.85,2.93
+2025-03-19,graffiti_removal,southgate,email,41,5384.62,2.43
+2024-02-28,parking_violation,southgate,phone_call,172,8936.21,4.24
+2024-04-02,tree_trimming,downtown_core,in_person,27,17903.21,3.47
+2025-02-23,tree_trimming,downtown_core,phone_call,119,17113.49,4.45
+2025-04-13,graffiti_removal,southgate,in_person,90,16706.3,3.12
+2024-03-30,parking_violation,southgate,phone_call,157,20611.32,4.61
+2025-01-06,tree_trimming,westfield,phone_call,126,18257.97,2.5
+2024-06-29,parking_violation,riverside,email,20,9576.57,2.27
+2024-02-25,streetlight_outage,north_ridge,website_form,149,3631.57,1.46
+2024-09-03,graffiti_removal,riverside,email,18,3753.63,4.05
+2024-10-26,tree_trimming,westfield,mobile_app,107,3901.08,3.71
+2024-01-14,streetlight_outage,lakeview,phone_call,3,14285.94,4.93
+2025-03-16,trash_collection_missed,eastside,in_person,43,23425.44,2.47
+2024-08-31,tree_trimming,westfield,website_form,24,23293.08,3.08
+2024-05-25,water_leak,eastside,mobile_app,160,24230.55,4.34
+2025-02-14,tree_trimming,downtown_core,phone_call,74,5193.38,4.4
+2025-04-26,tree_trimming,eastside,website_form,145,21593.47,1.4
+2024-04-03,tree_trimming,riverside,in_person,1,11680.66,4.35
+2024-11-05,pothole_repair,eastside,in_person,172,3103.87,3.67
+2024-01-12,trash_collection_missed,southgate,in_person,70,6654.51,2.63
+2024-07-09,parking_violation,downtown_core,website_form,23,8309.02,2.45
+2024-02-27,noise_complaint,downtown_core,mobile_app,177,19262.07,2.13
+2025-03-22,water_leak,riverside,mobile_app,52,7670.86,1.14
+2024-10-02,trash_collection_missed,north_ridge,mobile_app,161,16528.77,3.86
+2024-07-15,noise_complaint,lakeview,website_form,83,6651.58,3.89
+2024-06-29,pothole_repair,riverside,mobile_app,140,9595.77,1.68
+2025-06-05,trash_collection_missed,lakeview,email,0,19106.91,4.37
+2025-01-29,water_leak,north_ridge,email,3,21214.01,4.92
+2024-03-22,trash_collection_missed,riverside,mobile_app,31,6907.28,3.74
+2025-02-18,trash_collection_missed,lakeview,email,6,9144.56,4.74
+2024-09-10,noise_complaint,southgate,in_person,29,8169.08,1.73
+2024-04-03,noise_complaint,lakeview,phone_call,138,15968.44,4.79
+2025-01-30,pothole_repair,eastside,website_form,96,7927.44,3.41
+2024-01-05,graffiti_removal,riverside,email,163,12519.58,3.87
+2024-12-25,tree_trimming,westfield,website_form,70,15236.37,4.6
+2024-05-01,parking_violation,riverside,mobile_app,81,12989.71,3.89
+2025-03-31,streetlight_outage,downtown_core,email,54,22716.44,2.05
+2024-01-04,parking_violation,lakeview,website_form,110,1780.23,2.1
+2025-05-10,streetlight_outage,downtown_core,mobile_app,111,22549.24,3.32
+2025-01-09,pothole_repair,downtown_core,email,163,4385.66,2.34
+2025-02-20,noise_complaint,eastside,email,2,22882.2,1.86
+2025-01-23,trash_collection_missed,lakeview,phone_call,119,18041.53,2.07
+2024-03-21,streetlight_outage,north_ridge,mobile_app,149,20617.11,2.72
+2025-04-30,trash_collection_missed,westfield,website_form,170,6115.87,1.21
+2024-05-07,water_leak,riverside,email,59,10576.9,3.36
+2024-02-13,water_leak,lakeview,phone_call,31,22311.66,3.33
+2024-05-12,streetlight_outage,westfield,phone_call,7,23903.03,2.41
+2024-07-13,noise_complaint,north_ridge,website_form,78,2492.25,3.04
+2024-07-12,tree_trimming,southgate,website_form,109,16706.09,2.25
+2024-12-20,tree_trimming,eastside,phone_call,85,12605.28,1.25
+2024-06-06,pothole_repair,lakeview,phone_call,159,24189.37,1.89
+2024-08-28,streetlight_outage,westfield,mobile_app,119,3034.87,2.13
+2024-05-08,streetlight_outage,lakeview,phone_call,11,3436.6,4.2
+2024-09-10,water_leak,southgate,email,139,9743.03,3.76
+2024-02-04,water_leak,eastside,email,51,19392.07,4.91
+2024-04-28,tree_trimming,riverside,website_form,130,8300.26,1.88
+2025-01-11,trash_collection_missed,westfield,phone_call,178,3866.0,1.2
+2024-07-26,water_leak,north_ridge,phone_call,113,2839.4,1.77
+2024-03-16,parking_violation,lakeview,in_person,40,13050.0,1.97
+2024-06-07,water_leak,downtown_core,mobile_app,140,7339.69,4.43
+2025-06-10,water_leak,riverside,email,132,19918.15,4.81
+2024-11-05,water_leak,southgate,website_form,72,4882.55,3.77
+2025-01-01,pothole_repair,eastside,in_person,129,14284.29,2.11
+2024-03-05,graffiti_removal,southgate,email,137,1823.11,1.92
+2024-01-13,trash_collection_missed,eastside,in_person,22,4869.02,4.59
+2024-12-11,pothole_repair,westfield,mobile_app,154,20381.59,4.96
+2025-03-03,graffiti_removal,eastside,website_form,161,8256.44,4.0
+2025-05-10,noise_complaint,southgate,in_person,143,23568.82,3.57
+2024-04-30,graffiti_removal,lakeview,email,48,4664.04,2.89
+2024-10-05,parking_violation,riverside,in_person,131,5475.87,2.81
+2025-06-21,trash_collection_missed,westfield,in_person,134,3146.2,2.54
+2024-12-09,streetlight_outage,downtown_core,in_person,136,20467.66,3.47
+2024-08-27,streetlight_outage,riverside,email,150,20002.34,3.68
+2024-03-18,water_leak,eastside,website_form,128,7514.67,3.88
+2025-03-20,tree_trimming,downtown_core,mobile_app,148,20392.06,3.86
+2024-09-27,graffiti_removal,southgate,mobile_app,23,17964.66,4.62
+2024-07-30,graffiti_removal,eastside,in_person,31,19204.84,3.99
+2024-04-11,water_leak,southgate,in_person,137,4839.45,4.2
+2024-08-30,streetlight_outage,westfield,phone_call,26,10316.92,3.15
+2024-09-10,graffiti_removal,eastside,email,22,5015.34,3.03
+2025-05-17,graffiti_removal,riverside,in_person,75,7861.58,3.16
+2024-12-14,pothole_repair,eastside,email,90,16282.87,1.27
+2024-01-15,graffiti_removal,southgate,mobile_app,163,15433.54,3.74
+2024-02-28,pothole_repair,westfield,website_form,175,8665.68,2.2
+2024-02-29,pothole_repair,westfield,phone_call,171,7265.88,3.13
+2024-06-27,water_leak,north_ridge,website_form,102,19603.91,2.69
+2024-03-24,trash_collection_missed,riverside,email,1,2293.88,4.08
+2024-06-04,parking_violation,downtown_core,phone_call,7,18737.37,2.96
+2024-02-05,trash_collection_missed,southgate,website_form,158,13282.81,2.48
+2025-05-24,trash_collection_missed,westfield,in_person,152,6312.69,2.94
+2024-09-11,water_leak,north_ridge,website_form,18,22064.11,2.01
+2024-11-17,noise_complaint,riverside,website_form,99,3318.27,4.46
+2024-05-14,pothole_repair,eastside,email,171,1189.09,4.36
+2024-02-06,tree_trimming,riverside,mobile_app,77,7849.03,1.14
+2024-08-23,streetlight_outage,southgate,mobile_app,148,22856.56,2.19
+2025-02-13,pothole_repair,westfield,email,143,6972.47,3.31
+2024-12-23,pothole_repair,north_ridge,email,90,23971.58,3.56
+2024-08-14,graffiti_removal,southgate,in_person,48,14825.74,1.99
+2025-02-14,graffiti_removal,southgate,in_person,174,22232.73,4.22
+2024-11-15,graffiti_removal,north_ridge,in_person,153,19078.95,2.29
+2024-09-21,streetlight_outage,westfield,mobile_app,91,15732.34,2.93

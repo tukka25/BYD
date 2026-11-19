@@ -1,241 +1,241 @@
-createdDate,channel,priorityLevel,issueCategory,resolutionHours,customerSatisfaction,touchCount,ticketCost
-2025-05-15,mobileApp,urgent,accountAccess,85.18,4,18,30.89
-2025-01-21,email,urgent,productDefect,441.43,5,2,165.12
-2024-01-29,webForm,low,shippingDelay,130.71,4,43,155.62
-2024-04-01,email,high,featureQuestion,675.93,3,31,5.37
-2024-06-23,mobileApp,urgent,featureQuestion,121.83,2,23,120.28
-2025-01-15,webForm,high,featureQuestion,552.22,4,6,7.07
-2024-08-03,liveChat,medium,technicalError,31.72,2,15,145.7
-2024-05-04,mobileApp,high,technicalError,639.42,4,27,207.97
-2024-08-10,socialMedia,medium,featureQuestion,299.88,1,11,143.72
-2025-05-23,email,low,accountAccess,195.84,4,19,245.02
-2024-08-17,liveChat,high,shippingDelay,41.53,2,11,169.34
-2024-12-29,phone,urgent,refundRequest,415.69,3,33,123.83
-2024-05-05,email,medium,refundRequest,122.71,3,2,207.48
-2024-08-22,email,low,refundRequest,390.58,5,43,105.15
-2025-06-01,socialMedia,urgent,accountAccess,539.1,2,8,18.1
-2024-03-21,mobileApp,low,refundRequest,25.1,5,38,49.8
-2025-06-12,webForm,low,featureQuestion,715.54,2,4,11.22
-2024-07-01,email,medium,accountAccess,26.28,4,29,58.04
-2024-01-03,phone,low,shippingDelay,217.28,5,17,78.07
-2025-05-20,email,low,productDefect,426.3,3,15,34.55
-2025-06-07,email,high,shippingDelay,166.69,5,40,49.27
-2024-07-01,webForm,low,billing,201.42,3,22,164.02
-2024-08-03,socialMedia,high,refundRequest,648.28,2,14,27.28
-2025-06-03,email,urgent,billing,627.59,3,40,43.33
-2024-09-12,email,low,featureQuestion,671.77,5,20,67.42
-2024-09-11,webForm,urgent,billing,553.76,4,22,53.69
-2024-08-27,phone,low,accountAccess,223.39,4,10,24.22
-2025-01-14,mobileApp,medium,featureQuestion,537.67,1,44,35.82
-2025-02-13,email,low,productDefect,597.33,3,11,72.88
-2025-05-23,phone,high,accountAccess,91.13,2,23,23.86
-2024-03-02,email,low,technicalError,45.6,2,43,168.9
-2024-01-10,email,low,productDefect,658.33,5,34,140.16
-2025-03-19,liveChat,urgent,accountAccess,14.59,4,29,173.88
-2024-01-05,socialMedia,urgent,refundRequest,608.92,3,38,95.7
-2024-07-15,mobileApp,medium,billing,67.87,2,11,170.16
-2024-09-17,mobileApp,medium,featureQuestion,394.82,2,22,137.74
-2024-08-03,socialMedia,low,shippingDelay,4.87,4,5,122.72
-2025-01-27,email,high,billing,340.86,4,46,128.4
-2024-09-01,liveChat,medium,featureQuestion,515.72,3,23,140.51
-2024-11-29,liveChat,urgent,featureQuestion,250.12,4,33,37.03
-2024-10-04,phone,low,technicalError,609.28,2,6,15.03
-2024-11-25,email,high,shippingDelay,176.84,5,43,193.98
-2025-02-08,mobileApp,medium,technicalError,366.36,3,21,230.98
-2024-09-09,phone,urgent,shippingDelay,431.96,3,2,145.82
-2024-05-12,webForm,low,productDefect,182.98,4,19,137.99
-2024-02-17,liveChat,medium,billing,458.6,2,34,109.07
-2024-01-11,mobileApp,urgent,shippingDelay,275.86,1,27,0.87
-2024-07-31,liveChat,low,shippingDelay,618.07,5,49,213.2
-2025-04-10,webForm,low,accountAccess,101.11,2,1,236.42
-2024-05-09,liveChat,low,accountAccess,545.78,4,2,237.84
-2025-06-13,email,medium,featureQuestion,50.44,5,21,201.8
-2025-01-06,liveChat,medium,technicalError,292.14,5,17,70.23
-2025-03-18,liveChat,high,accountAccess,28.42,2,11,75.6
-2024-12-14,phone,urgent,shippingDelay,563.0,5,42,179.45
-2024-01-06,mobileApp,medium,featureQuestion,469.06,2,30,117.27
-2024-12-19,email,urgent,productDefect,476.03,3,43,152.54
-2025-02-12,mobileApp,low,technicalError,111.77,4,11,23.72
-2024-07-30,email,urgent,featureQuestion,132.52,4,49,39.08
-2024-06-10,phone,urgent,featureQuestion,308.49,2,21,120.31
-2024-02-21,phone,high,shippingDelay,117.59,2,26,171.61
-2025-03-21,socialMedia,urgent,featureQuestion,260.7,3,31,43.36
-2025-03-26,liveChat,low,refundRequest,630.74,1,10,179.09
-2024-05-31,webForm,medium,refundRequest,68.23,1,42,168.23
-2025-05-04,socialMedia,high,productDefect,512.96,2,4,122.42
-2025-02-03,socialMedia,medium,refundRequest,679.01,5,40,230.02
-2024-02-28,socialMedia,medium,refundRequest,531.34,2,24,149.72
-2024-09-15,liveChat,low,technicalError,712.02,1,35,102.06
-2024-05-23,mobileApp,urgent,billing,549.28,3,50,203.55
-2024-11-19,socialMedia,medium,productDefect,444.2,2,13,27.81
-2025-02-01,email,high,productDefect,356.52,4,6,56.83
-2025-03-27,email,low,accountAccess,384.0,4,46,210.54
-2024-02-29,webForm,medium,productDefect,279.98,2,3,109.67
-2024-12-27,phone,urgent,featureQuestion,526.19,1,2,81.46
-2024-09-22,socialMedia,high,productDefect,178.09,2,3,176.8
-2024-01-27,phone,medium,accountAccess,470.52,3,32,23.02
-2024-06-27,phone,medium,technicalError,201.73,3,27,226.14
-2024-06-21,liveChat,medium,shippingDelay,60.15,4,35,1.76
-2024-03-06,webForm,urgent,featureQuestion,359.13,2,7,60.28
-2025-04-02,webForm,low,refundRequest,312.44,1,26,9.77
-2025-02-20,mobileApp,high,refundRequest,656.51,2,31,52.14
-2025-06-20,socialMedia,urgent,featureQuestion,571.38,2,12,180.46
-2024-11-10,socialMedia,high,productDefect,112.42,2,32,234.22
-2024-03-16,phone,urgent,refundRequest,568.4,4,33,105.03
-2024-07-31,webForm,high,refundRequest,457.99,1,12,138.73
-2024-01-03,phone,medium,productDefect,129.32,2,44,164.99
-2024-11-15,liveChat,low,featureQuestion,284.96,4,9,18.43
-2024-11-25,liveChat,urgent,shippingDelay,140.04,1,25,187.85
-2024-10-01,liveChat,urgent,shippingDelay,398.39,3,5,249.33
-2025-01-06,webForm,medium,billing,520.39,4,49,183.86
-2025-05-19,mobileApp,low,shippingDelay,415.96,1,31,161.95
-2024-04-04,email,low,productDefect,337.26,4,27,7.71
-2024-07-07,socialMedia,low,billing,383.03,4,24,220.09
-2025-05-30,phone,high,billing,353.95,5,22,180.55
-2025-03-18,phone,urgent,productDefect,678.1,4,39,118.18
-2025-01-11,mobileApp,high,technicalError,248.33,4,13,27.97
-2024-04-13,email,medium,technicalError,484.37,1,32,175.53
-2024-06-28,liveChat,low,technicalError,448.79,2,46,116.71
-2024-03-06,email,medium,technicalError,578.99,5,13,71.55
-2024-08-29,webForm,medium,productDefect,90.77,1,12,247.03
-2024-08-17,socialMedia,urgent,accountAccess,611.04,1,14,15.87
-2025-02-11,phone,medium,accountAccess,42.18,3,36,22.3
-2025-06-09,phone,medium,billing,384.93,2,3,207.22
-2025-03-12,liveChat,low,refundRequest,457.7,4,24,200.55
-2024-06-26,email,medium,shippingDelay,264.28,2,21,25.53
-2024-03-09,mobileApp,low,accountAccess,392.23,5,23,138.48
-2024-06-27,liveChat,urgent,productDefect,232.5,1,8,98.67
-2024-07-14,phone,low,technicalError,581.16,2,39,52.76
-2024-04-18,mobileApp,low,technicalError,265.25,3,18,192.41
-2024-02-16,phone,high,refundRequest,6.86,5,9,115.7
-2025-04-12,webForm,low,productDefect,73.13,2,18,88.52
-2024-01-20,mobileApp,low,billing,445.18,3,32,221.48
-2024-07-13,email,medium,accountAccess,90.41,3,33,169.5
-2024-08-15,email,high,technicalError,279.64,2,28,215.05
-2024-11-19,mobileApp,high,refundRequest,647.2,4,29,14.89
-2025-03-09,socialMedia,high,accountAccess,528.66,3,15,179.37
-2024-01-26,webForm,medium,shippingDelay,446.4,3,10,243.9
-2024-02-13,email,low,billing,515.25,2,22,183.74
-2024-10-28,mobileApp,medium,billing,618.79,3,16,96.99
-2024-01-31,phone,urgent,refundRequest,489.61,4,28,167.37
-2025-05-04,webForm,low,billing,354.2,5,28,212.6
-2024-03-06,phone,low,accountAccess,188.63,4,17,60.64
-2024-01-02,liveChat,urgent,shippingDelay,640.09,5,14,174.43
-2024-12-24,liveChat,medium,billing,674.49,2,44,95.19
-2025-02-16,email,urgent,productDefect,666.05,5,43,126.03
-2024-08-18,mobileApp,high,technicalError,426.64,2,5,26.86
-2024-10-04,liveChat,low,featureQuestion,136.28,2,42,75.93
-2024-06-03,email,urgent,technicalError,206.75,2,5,1.46
-2025-01-30,mobileApp,low,shippingDelay,353.98,5,5,134.91
-2024-12-12,mobileApp,urgent,productDefect,700.11,3,6,107.89
-2024-03-02,socialMedia,urgent,shippingDelay,160.28,4,11,139.88
-2024-05-20,phone,low,productDefect,691.2,3,24,167.79
-2025-01-30,webForm,urgent,accountAccess,658.67,3,34,35.37
-2024-02-11,mobileApp,medium,refundRequest,186.6,1,39,96.96
-2025-05-26,mobileApp,urgent,featureQuestion,464.86,4,37,141.06
-2024-04-15,email,urgent,technicalError,248.88,2,7,126.69
-2024-04-20,webForm,urgent,featureQuestion,256.94,4,48,63.55
-2024-05-08,webForm,urgent,featureQuestion,381.65,2,13,194.14
-2025-04-29,email,urgent,technicalError,164.36,2,49,96.12
-2024-03-29,webForm,high,refundRequest,696.14,2,37,226.86
-2024-01-08,phone,medium,technicalError,374.4,3,12,20.09
-2024-07-08,email,urgent,shippingDelay,623.71,1,21,98.02
-2025-01-22,phone,high,productDefect,244.23,1,20,109.47
-2025-02-01,socialMedia,high,featureQuestion,643.94,2,8,100.83
-2025-05-26,socialMedia,medium,refundRequest,130.76,3,9,104.61
-2024-05-11,socialMedia,medium,technicalError,83.28,2,20,64.53
-2024-05-21,webForm,urgent,refundRequest,287.28,3,21,69.05
-2024-05-09,liveChat,urgent,shippingDelay,221.73,3,31,111.29
-2024-04-08,email,low,productDefect,122.77,2,11,74.39
-2024-11-21,socialMedia,high,refundRequest,453.65,4,7,87.55
-2024-09-10,mobileApp,urgent,accountAccess,360.32,4,35,228.48
-2025-04-03,mobileApp,low,featureQuestion,267.97,4,25,166.02
-2024-07-09,mobileApp,low,billing,330.28,4,29,11.62
-2024-08-04,mobileApp,urgent,featureQuestion,84.11,3,38,24.19
-2024-11-06,mobileApp,medium,productDefect,675.3,2,42,43.22
-2024-03-18,phone,urgent,billing,218.22,2,12,126.85
-2024-05-08,liveChat,medium,refundRequest,524.04,2,17,165.99
-2024-03-12,liveChat,low,technicalError,538.17,4,20,3.67
-2024-04-17,phone,medium,productDefect,135.02,1,16,165.61
-2024-11-15,phone,high,accountAccess,430.02,5,1,220.32
-2024-02-10,socialMedia,medium,accountAccess,377.53,2,22,30.7
-2024-03-03,email,urgent,shippingDelay,297.68,3,37,160.86
-2024-01-03,mobileApp,low,shippingDelay,22.98,2,43,66.98
-2024-06-15,socialMedia,medium,technicalError,221.57,3,38,240.56
-2024-07-29,webForm,urgent,technicalError,352.81,1,18,8.82
-2024-04-18,webForm,medium,accountAccess,18.36,2,16,203.01
-2025-02-25,email,high,featureQuestion,403.86,2,41,197.83
-2025-01-08,liveChat,low,accountAccess,436.18,4,22,177.24
-2024-12-28,webForm,high,technicalError,353.28,3,45,114.37
-2025-06-14,email,urgent,shippingDelay,338.41,1,36,249.23
-2024-08-04,email,urgent,accountAccess,328.14,3,37,132.48
-2024-07-18,liveChat,low,accountAccess,107.14,1,38,78.4
-2024-05-29,phone,low,productDefect,434.88,2,42,239.74
-2024-08-30,mobileApp,low,featureQuestion,9.32,4,25,135.52
-2024-09-28,socialMedia,urgent,accountAccess,220.43,3,43,116.44
-2024-08-02,email,urgent,productDefect,663.99,3,47,29.99
-2024-12-22,email,low,productDefect,372.24,3,14,161.61
-2024-05-25,socialMedia,medium,refundRequest,484.88,2,30,184.18
-2025-03-13,phone,medium,refundRequest,478.5,3,32,163.06
-2025-01-18,email,medium,technicalError,650.87,3,7,31.31
-2025-06-05,webForm,high,featureQuestion,668.58,1,30,191.5
-2024-09-21,mobileApp,low,billing,257.01,2,13,201.61
-2024-05-19,mobileApp,medium,productDefect,323.93,1,21,125.44
-2024-04-19,webForm,urgent,technicalError,140.47,1,9,15.25
-2024-08-08,email,medium,billing,166.12,2,7,42.03
-2024-05-25,webForm,low,technicalError,466.82,4,37,159.34
-2024-04-14,phone,medium,technicalError,646.32,4,33,205.98
-2024-07-05,email,low,accountAccess,698.23,3,40,152.48
-2024-09-19,email,low,billing,167.04,1,47,226.51
-2025-05-27,phone,medium,billing,28.7,4,34,119.81
-2024-03-15,mobileApp,medium,featureQuestion,483.74,3,5,73.97
-2025-03-22,mobileApp,medium,accountAccess,204.51,1,11,142.82
-2024-10-20,socialMedia,low,accountAccess,696.55,4,38,154.79
-2025-02-12,mobileApp,high,accountAccess,557.71,4,23,175.07
-2025-04-01,liveChat,urgent,accountAccess,647.02,1,5,92.97
-2024-05-23,liveChat,high,billing,134.94,3,14,17.5
-2025-04-20,liveChat,high,shippingDelay,314.44,4,41,112.7
-2024-02-07,phone,high,featureQuestion,49.28,3,43,200.02
-2025-03-31,email,high,billing,155.83,4,49,187.92
-2024-09-22,mobileApp,urgent,featureQuestion,484.45,4,36,136.65
-2024-06-29,liveChat,high,accountAccess,214.84,2,41,240.83
-2024-05-03,email,medium,technicalError,414.92,3,9,41.35
-2024-06-13,socialMedia,high,billing,80.54,4,18,191.0
-2024-04-22,mobileApp,urgent,featureQuestion,117.22,2,14,249.5
-2024-04-13,webForm,high,billing,112.52,2,42,214.61
-2025-03-10,socialMedia,urgent,technicalError,72.92,1,49,54.38
-2024-12-03,liveChat,high,accountAccess,188.31,5,48,26.77
-2024-07-07,liveChat,medium,shippingDelay,680.88,3,24,179.76
-2025-05-07,phone,high,productDefect,608.88,2,47,225.11
-2025-04-28,socialMedia,medium,accountAccess,394.17,3,8,230.95
-2024-04-22,webForm,low,productDefect,473.44,2,23,28.21
-2024-09-16,phone,urgent,billing,152.93,1,36,109.46
-2025-02-09,email,medium,refundRequest,271.86,3,27,36.53
-2024-01-27,webForm,high,accountAccess,244.4,3,44,164.5
-2024-08-06,phone,urgent,accountAccess,703.63,2,4,161.6
-2024-04-22,liveChat,high,billing,287.25,3,43,14.69
-2024-06-04,socialMedia,low,featureQuestion,627.73,1,39,151.55
-2025-05-19,socialMedia,medium,accountAccess,465.91,3,24,52.82
-2024-01-07,phone,low,accountAccess,530.92,5,3,108.72
-2024-03-12,mobileApp,low,billing,61.44,2,45,84.28
-2024-01-07,phone,medium,productDefect,26.47,1,33,18.59
-2024-10-14,liveChat,low,billing,270.55,2,20,165.87
-2024-11-05,mobileApp,high,refundRequest,525.32,2,21,133.09
-2025-05-25,mobileApp,medium,productDefect,672.17,4,21,224.82
-2025-03-30,phone,high,billing,513.38,3,50,47.17
-2024-07-06,mobileApp,high,shippingDelay,508.16,4,23,165.87
-2024-03-16,email,urgent,billing,549.51,5,10,137.35
-2024-11-11,mobileApp,medium,featureQuestion,243.28,4,24,147.09
-2024-12-22,email,urgent,billing,32.76,1,21,88.74
-2025-04-07,mobileApp,high,accountAccess,682.9,4,38,48.08
-2024-12-02,webForm,medium,technicalError,508.27,3,11,214.43
-2024-09-30,mobileApp,urgent,billing,706.39,4,28,15.83
-2025-01-29,email,medium,accountAccess,132.47,3,8,69.26
-2024-08-28,webForm,high,accountAccess,279.31,5,47,35.73
-2024-02-25,socialMedia,high,billing,346.77,1,26,190.29
-2024-10-19,liveChat,low,shippingDelay,125.46,1,7,197.35
-2024-04-05,liveChat,high,shippingDelay,470.51,3,31,40.35
-2025-01-17,email,medium,refundRequest,70.16,3,24,245.88
-2024-10-21,phone,urgent,billing,668.25,1,26,209.71
-2025-03-05,phone,medium,featureQuestion,5.08,1,45,235.05
-2024-11-01,phone,urgent,productDefect,414.45,3,4,48.42
+loan_report_date,loan_product_type,loan_risk_grade,loan_region,loan_principal_balance,loan_interest_rate,loan_days_past_due,loan_monthly_payment
+2024-12-04,Student Loan,D,Northeast,458756.96,29.45,107,3468.14
+2024-12-26,Mortgage,F,Northeast,300129.58,18.45,242,4864.47
+2025-01-14,Student Loan,B,Southwest,352771.5,25.43,338,2665.88
+2024-12-01,Student Loan,A,West Coast,350865.06,3.39,158,5368.55
+2025-06-13,Home Equity Line,D,Southeast,712056.56,13.43,202,4987.35
+2025-01-16,Student Loan,E,Southeast,729018.17,23.95,347,1791.56
+2024-05-04,Personal Loan,C,Southeast,126663.12,10.76,340,935.69
+2024-04-30,Personal Loan,C,Southeast,635897.05,6.38,216,4125.95
+2024-07-15,Home Equity Line,B,Southeast,2861.99,3.33,224,5322.1
+2024-11-22,Personal Loan,E,Southwest,38887.19,15.48,11,855.85
+2024-08-03,Student Loan,E,Midwest,85334.97,7.94,304,6140.64
+2024-10-28,Personal Loan,F,West Coast,428643.42,8.22,73,5587.03
+2025-01-22,Home Equity Line,D,Southeast,109515.85,20.22,107,4659.97
+2024-09-10,Auto Loan,A,Midwest,133777.64,18.75,66,3100.13
+2025-02-15,Personal Loan,A,West Coast,643973.51,22.85,146,6187.34
+2024-04-28,Personal Loan,C,Northeast,704468.44,8.72,303,4597.26
+2024-07-19,Mortgage,F,Midwest,424657.32,15.15,86,3500.19
+2024-03-31,Home Equity Line,F,Southwest,92703.03,21.88,188,6482.77
+2025-01-07,Personal Loan,A,West Coast,126556.12,20.83,144,794.21
+2025-06-13,Student Loan,D,Northeast,77400.65,7.23,74,1717.89
+2024-06-20,Student Loan,C,West Coast,237115.93,18.23,265,4796.32
+2024-02-24,Personal Loan,B,Midwest,73315.43,5.86,168,3148.29
+2024-09-12,Home Equity Line,B,West Coast,644714.56,18.03,202,5813.28
+2025-01-18,Small Business Loan,A,Southeast,351194.47,2.53,47,4932.78
+2024-01-27,Student Loan,F,West Coast,513705.01,24.17,87,4872.37
+2024-01-18,Personal Loan,C,West Coast,49324.06,3.9,179,4281.53
+2025-01-14,Home Equity Line,F,Northeast,657326.91,19.06,191,3136.96
+2024-08-10,Auto Loan,D,Northeast,484599.68,10.33,219,1500.2
+2025-01-03,Auto Loan,F,Southeast,639547.93,9.49,225,4437.67
+2024-10-29,Student Loan,E,Northeast,488057.08,11.24,217,1525.06
+2024-07-28,Small Business Loan,A,Southwest,659195.4,14.83,327,2473.95
+2024-03-07,Mortgage,A,Northeast,265331.18,22.77,356,2953.42
+2024-02-09,Student Loan,B,Midwest,93873.25,21.23,353,6327.41
+2024-02-19,Student Loan,E,Southeast,283104.36,15.82,52,460.98
+2025-02-13,Student Loan,D,West Coast,697203.94,7.33,212,4320.47
+2024-03-19,Small Business Loan,C,Northeast,537583.55,15.54,141,5571.11
+2024-08-12,Auto Loan,F,Midwest,486706.31,11.6,90,5834.75
+2024-03-30,Personal Loan,F,Northeast,293202.77,18.36,147,350.09
+2024-12-27,Student Loan,A,Southwest,158927.05,26.03,90,104.52
+2024-01-03,Small Business Loan,D,Midwest,413672.15,2.73,168,146.47
+2025-03-12,Student Loan,D,Midwest,70676.62,28.64,250,3919.78
+2025-02-23,Auto Loan,A,West Coast,498019.7,20.31,128,1488.35
+2024-04-23,Mortgage,B,Midwest,522649.4,7.28,23,4817.42
+2024-09-26,Student Loan,C,West Coast,638717.07,24.84,202,1917.87
+2025-01-24,Mortgage,B,Southwest,584688.26,25.8,22,3265.39
+2025-04-10,Home Equity Line,F,West Coast,615798.39,25.89,356,2983.27
+2025-03-20,Personal Loan,C,Southwest,19888.67,28.07,202,4267.71
+2024-03-21,Auto Loan,C,Southwest,492743.13,9.78,60,2373.7
+2024-05-14,Auto Loan,B,Northeast,631608.92,24.87,110,2769.34
+2025-02-17,Personal Loan,B,Southeast,498616.17,18.97,345,4043.72
+2025-01-06,Student Loan,A,Southeast,50238.11,2.74,154,1976.01
+2024-07-08,Personal Loan,D,West Coast,727999.93,14.7,135,605.86
+2024-11-19,Student Loan,A,Northeast,75513.1,23.14,23,4775.21
+2024-06-20,Personal Loan,A,Southeast,36372.93,2.75,17,2226.35
+2025-03-23,Small Business Loan,D,Northeast,445062.32,7.58,163,4850.6
+2025-02-04,Home Equity Line,C,West Coast,730349.78,11.55,166,4497.12
+2024-01-15,Student Loan,E,Southwest,137452.41,11.21,313,1228.45
+2025-02-04,Auto Loan,B,Southeast,276779.43,23.95,299,2473.5
+2024-03-07,Auto Loan,B,Midwest,84876.9,19.51,336,6066.13
+2024-06-05,Small Business Loan,B,Southeast,635460.86,18.99,274,284.44
+2024-08-24,Small Business Loan,A,Midwest,73901.82,13.32,84,2137.0
+2024-05-22,Small Business Loan,A,Southeast,495780.59,2.58,19,5728.27
+2024-10-23,Home Equity Line,D,Midwest,388720.21,14.7,181,3724.31
+2025-05-29,Student Loan,F,West Coast,180809.67,16.44,31,2325.66
+2024-07-22,Personal Loan,F,Midwest,640319.77,19.42,139,3493.4
+2025-06-13,Student Loan,F,West Coast,614141.04,20.68,16,3301.1
+2025-02-15,Personal Loan,B,Northeast,358853.68,8.32,302,3930.9
+2025-04-14,Student Loan,D,Northeast,267602.88,11.19,198,3246.89
+2024-05-21,Home Equity Line,B,Midwest,287566.89,13.89,359,3284.74
+2025-01-03,Auto Loan,C,Midwest,638023.94,8.01,48,5917.77
+2024-06-29,Auto Loan,A,Midwest,322741.37,17.03,240,1584.69
+2024-12-11,Student Loan,A,Southwest,349118.43,10.35,262,3899.73
+2024-04-17,Personal Loan,D,Southeast,309710.99,25.56,327,5765.6
+2024-10-22,Personal Loan,A,Northeast,640122.07,12.99,22,291.27
+2025-04-10,Mortgage,B,Northeast,53429.01,28.04,148,2643.93
+2024-02-19,Student Loan,B,Southwest,319626.32,13.18,101,5114.85
+2024-10-11,Student Loan,A,Southeast,440378.35,17.88,183,1818.25
+2024-08-12,Personal Loan,F,Midwest,419203.46,22.49,356,4414.47
+2024-01-07,Student Loan,E,Midwest,86675.9,6.5,47,2401.88
+2025-05-20,Auto Loan,E,Southwest,62872.59,13.11,37,2773.18
+2024-02-02,Small Business Loan,A,Southeast,496527.63,18.37,125,3128.45
+2024-08-07,Mortgage,F,West Coast,569415.83,18.65,318,6305.96
+2025-01-22,Home Equity Line,F,West Coast,150326.69,11.31,99,1077.37
+2024-04-27,Small Business Loan,C,Southeast,475866.77,25.99,55,3422.67
+2024-07-24,Home Equity Line,E,Southwest,228480.85,28.59,161,1077.99
+2024-11-09,Personal Loan,C,Southwest,314871.54,6.51,290,3548.87
+2024-01-04,Home Equity Line,B,Midwest,489382.88,5.53,215,617.03
+2024-07-07,Home Equity Line,F,Midwest,651574.2,23.91,185,1158.02
+2024-08-30,Small Business Loan,A,Southeast,498444.14,12.03,147,4896.71
+2025-05-21,Auto Loan,E,Northeast,224347.44,6.62,149,6366.99
+2024-04-05,Home Equity Line,A,West Coast,718680.98,11.49,166,1498.98
+2025-03-18,Mortgage,E,West Coast,491728.22,5.52,166,5651.94
+2024-06-11,Student Loan,F,Southeast,459915.88,8.82,299,2106.05
+2024-02-03,Small Business Loan,A,West Coast,126540.48,14.46,341,6025.54
+2024-07-25,Mortgage,E,Southeast,638149.46,9.38,6,5691.32
+2025-05-17,Small Business Loan,B,Northeast,364905.24,3.96,125,3561.94
+2024-07-15,Mortgage,D,West Coast,310282.84,12.08,306,3287.53
+2024-11-11,Student Loan,C,Southeast,213087.13,15.54,54,3125.16
+2024-02-14,Mortgage,F,Midwest,498304.95,10.01,285,929.7
+2024-07-04,Student Loan,D,West Coast,15118.03,26.15,231,5708.33
+2024-03-12,Personal Loan,A,West Coast,199946.7,27.69,250,3620.34
+2024-11-03,Student Loan,F,Southwest,228770.77,8.95,106,3413.88
+2024-01-29,Student Loan,D,Southeast,705142.41,4.12,38,6152.64
+2025-02-02,Student Loan,F,Midwest,47259.21,15.03,160,1391.4
+2024-06-07,Home Equity Line,F,Southwest,87526.34,20.65,84,5253.72
+2025-02-26,Student Loan,C,Midwest,234716.5,18.66,116,5065.34
+2025-04-09,Home Equity Line,F,Northeast,240912.09,9.43,350,505.7
+2024-04-05,Home Equity Line,D,Midwest,319671.21,26.36,102,4592.47
+2025-05-10,Student Loan,B,Midwest,436147.04,18.9,80,5064.71
+2024-01-28,Small Business Loan,F,Midwest,478154.87,24.38,158,2411.29
+2024-11-14,Personal Loan,F,West Coast,564466.37,27.69,294,3133.11
+2024-10-10,Student Loan,F,Southwest,404353.85,18.56,277,1132.27
+2024-09-15,Student Loan,F,Northeast,99403.72,17.54,217,3334.9
+2025-06-22,Auto Loan,F,Southeast,345987.12,10.38,60,3666.9
+2024-06-12,Mortgage,E,Southwest,425184.43,7.85,292,4268.19
+2025-04-15,Auto Loan,A,Southeast,602362.56,19.53,288,5579.16
+2025-04-13,Student Loan,E,Northeast,213142.2,26.1,117,769.13
+2024-05-25,Small Business Loan,E,Midwest,547203.85,27.81,209,473.64
+2024-11-21,Mortgage,C,Southeast,377726.4,11.62,53,4079.22
+2025-06-16,Small Business Loan,D,Northeast,308401.54,16.17,227,5724.23
+2025-02-14,Home Equity Line,B,Midwest,27476.28,14.97,234,3902.12
+2024-11-22,Auto Loan,C,West Coast,85386.07,19.67,77,1716.28
+2024-09-13,Home Equity Line,C,Southeast,265800.72,7.66,294,661.32
+2025-04-19,Home Equity Line,F,Midwest,379356.96,26.87,139,5387.69
+2024-07-23,Small Business Loan,A,Northeast,499287.46,16.46,206,888.18
+2025-01-24,Student Loan,E,Midwest,212953.73,7.73,71,3754.4
+2024-11-19,Home Equity Line,D,Southwest,197835.91,17.55,300,3603.65
+2024-01-02,Auto Loan,A,Northeast,627957.92,9.93,314,6285.81
+2024-11-15,Personal Loan,E,Southeast,405416.49,10.65,222,4339.68
+2024-02-23,Small Business Loan,D,Midwest,27420.05,17.04,284,4647.45
+2024-07-14,Small Business Loan,C,Southeast,62647.58,20.97,31,809.77
+2025-05-27,Mortgage,B,Southeast,190975.42,19.86,171,1003.03
+2024-01-16,Home Equity Line,F,Southeast,463750.65,28.47,238,350.13
+2024-04-28,Personal Loan,D,Southeast,746598.31,28.3,256,3885.07
+2024-05-19,Auto Loan,C,Midwest,178945.61,20.0,158,3428.54
+2025-06-18,Student Loan,A,Midwest,430429.44,25.41,144,3123.46
+2025-04-21,Small Business Loan,D,West Coast,368616.67,17.11,185,1684.45
+2025-01-14,Home Equity Line,C,Southeast,459133.75,3.77,310,3312.41
+2025-04-01,Mortgage,A,West Coast,549899.11,4.19,37,2085.74
+2024-06-07,Home Equity Line,F,Northeast,748636.84,15.06,234,3965.47
+2024-02-10,Auto Loan,E,Southeast,191882.31,11.53,81,2843.15
+2025-06-20,Auto Loan,D,Northeast,747315.96,6.93,71,2828.36
+2025-05-24,Student Loan,F,Southwest,706568.18,15.71,335,3894.52
+2024-02-12,Student Loan,D,Midwest,357871.98,21.23,344,1698.59
+2024-07-09,Student Loan,C,Southwest,120509.9,15.03,38,2198.84
+2024-07-06,Auto Loan,E,West Coast,329779.02,27.89,188,3575.67
+2025-04-13,Student Loan,F,Midwest,56191.72,13.61,277,897.94
+2024-12-26,Student Loan,D,Southwest,391404.89,18.06,34,3207.22
+2025-03-28,Home Equity Line,D,Southeast,344013.93,12.04,136,5307.93
+2024-11-22,Student Loan,C,West Coast,26905.01,29.64,250,4457.3
+2024-05-14,Auto Loan,C,Southwest,495476.19,10.96,262,6074.45
+2024-07-10,Personal Loan,D,Southwest,116885.22,5.98,55,1444.59
+2024-06-21,Mortgage,F,Northeast,611177.91,29.39,105,6251.95
+2025-05-28,Auto Loan,F,Southeast,165942.06,3.52,248,2652.79
+2024-05-09,Mortgage,D,West Coast,154740.42,26.26,251,6088.1
+2024-02-10,Auto Loan,C,Southeast,313820.52,25.84,135,1961.86
+2025-03-27,Student Loan,E,West Coast,266872.16,16.82,2,5832.42
+2024-05-15,Home Equity Line,F,West Coast,128381.39,27.88,309,444.01
+2024-10-15,Student Loan,F,West Coast,587702.8,17.87,71,1197.8
+2024-06-17,Mortgage,A,Northeast,202796.54,28.6,248,5604.17
+2024-01-26,Student Loan,C,Southeast,48409.43,23.62,137,5634.83
+2024-09-22,Auto Loan,F,Southwest,316836.99,3.01,318,5650.29
+2024-08-30,Student Loan,A,Northeast,437003.04,19.85,80,3102.29
+2025-03-20,Small Business Loan,C,Southeast,634747.13,23.36,104,1166.02
+2025-02-09,Personal Loan,E,Northeast,664104.66,7.65,82,2384.69
+2025-03-01,Small Business Loan,C,West Coast,574945.09,14.22,278,3717.9
+2024-03-30,Home Equity Line,D,Midwest,256782.99,19.31,2,6378.52
+2024-10-18,Mortgage,E,Midwest,596007.85,8.75,114,5327.21
+2025-03-18,Auto Loan,F,Southeast,63661.7,13.46,186,4708.18
+2025-02-05,Auto Loan,F,Northeast,492629.9,6.28,140,4252.61
+2024-09-11,Auto Loan,D,West Coast,502443.96,4.35,310,2397.8
+2024-11-10,Student Loan,F,Midwest,257290.9,4.71,80,3188.93
+2024-02-14,Auto Loan,E,Northeast,115369.26,11.99,30,853.82
+2024-02-06,Small Business Loan,D,Midwest,175703.51,11.77,265,2090.93
+2025-06-21,Small Business Loan,A,Northeast,616502.14,5.7,334,413.17
+2024-10-15,Home Equity Line,D,Northeast,56971.98,17.41,20,2717.07
+2025-04-16,Small Business Loan,F,Midwest,131721.24,4.37,274,4493.11
+2024-10-30,Home Equity Line,D,Northeast,637558.91,20.72,65,5120.67
+2024-04-08,Student Loan,D,Southeast,688915.08,23.85,108,4450.6
+2024-05-31,Auto Loan,B,Southeast,702711.72,12.03,9,713.92
+2025-04-05,Personal Loan,D,West Coast,513853.61,26.45,57,6130.03
+2024-04-05,Small Business Loan,C,Midwest,714031.96,4.32,238,5694.19
+2025-02-26,Home Equity Line,C,West Coast,159109.84,11.94,50,2820.77
+2024-11-23,Auto Loan,B,Midwest,669743.39,27.15,24,989.17
+2024-12-01,Personal Loan,B,Midwest,455408.38,26.89,108,3339.94
+2025-05-30,Mortgage,E,Northeast,622971.92,10.15,11,4359.54
+2024-08-28,Personal Loan,A,Midwest,283896.49,21.54,80,3226.84
+2024-10-17,Mortgage,D,Northeast,149539.48,8.57,326,2755.18
+2024-09-24,Small Business Loan,F,West Coast,333511.75,3.42,8,2543.0
+2024-07-24,Auto Loan,F,Northeast,63157.6,3.88,304,5096.7
+2024-12-09,Personal Loan,C,Southeast,201671.09,27.67,235,2350.97
+2024-08-20,Auto Loan,E,Southwest,375434.14,7.04,47,4541.05
+2024-02-11,Home Equity Line,A,Southwest,406125.54,8.84,255,6443.32
+2025-06-03,Student Loan,A,West Coast,619542.72,29.66,166,1654.66
+2024-03-15,Personal Loan,D,West Coast,311349.74,8.31,271,5482.7
+2025-01-20,Mortgage,F,Southwest,119111.67,24.42,59,299.35
+2025-01-28,Student Loan,B,Southeast,485096.74,5.03,44,4173.47
+2024-03-24,Student Loan,F,Southwest,5244.17,20.67,104,3417.5
+2024-03-01,Auto Loan,C,Northeast,349890.98,23.85,46,3325.95
+2025-05-07,Home Equity Line,C,Northeast,482092.15,18.57,206,2001.72
+2024-12-28,Small Business Loan,C,Southeast,569570.08,11.27,26,5844.86
+2025-05-10,Personal Loan,D,West Coast,238988.22,16.44,186,3151.67
+2024-01-05,Small Business Loan,D,Northeast,745853.64,16.69,225,1786.27
+2024-11-10,Personal Loan,F,West Coast,582293.96,7.69,222,3054.73
+2024-06-23,Auto Loan,F,Southwest,18601.33,25.72,241,3746.21
+2025-05-14,Personal Loan,C,Northeast,675098.63,9.63,316,4088.44
+2025-04-14,Auto Loan,E,Midwest,216657.41,6.6,144,3861.64
+2024-09-26,Auto Loan,B,Southeast,367963.22,25.4,272,975.27
+2025-02-18,Home Equity Line,C,Northeast,236807.13,25.5,189,5261.22
+2024-09-22,Student Loan,D,Southeast,340591.31,18.06,1,2496.65
+2025-05-10,Mortgage,C,Southwest,210043.25,10.66,270,2122.69
+2025-06-22,Small Business Loan,C,Southwest,683964.23,6.19,27,2341.64
+2025-04-26,Small Business Loan,D,Northeast,280465.38,11.53,236,2811.8
+2024-11-17,Student Loan,B,Southeast,568593.02,12.27,284,3262.52
+2024-09-04,Mortgage,B,Northeast,280600.95,11.51,204,4806.41
+2024-01-19,Small Business Loan,A,Southwest,376190.55,15.91,338,2883.19
+2025-01-16,Small Business Loan,B,Midwest,413594.95,27.28,105,6379.6
+2024-09-18,Student Loan,E,Midwest,700607.57,20.25,298,6107.05
+2024-06-13,Auto Loan,E,West Coast,523017.83,9.33,187,322.68
+2025-03-23,Small Business Loan,C,West Coast,117369.65,19.18,195,4207.29
+2024-10-15,Auto Loan,C,West Coast,521233.98,5.79,128,3946.2
+2024-09-11,Auto Loan,E,Southeast,638960.55,26.11,287,1486.11
+2024-11-30,Small Business Loan,B,West Coast,567843.96,27.33,102,2626.14
+2024-03-13,Personal Loan,F,West Coast,640322.34,10.14,246,2728.24
+2025-04-01,Auto Loan,F,Southeast,68001.14,9.93,119,5551.88
+2024-01-20,Small Business Loan,C,Northeast,62611.99,8.05,89,816.58
+2025-03-05,Personal Loan,B,Northeast,649249.29,17.76,191,4105.54
+2024-03-09,Home Equity Line,B,Midwest,724778.68,17.86,279,3078.45
+2024-10-21,Personal Loan,E,West Coast,316254.69,26.56,126,5191.11
+2024-02-07,Small Business Loan,D,Southwest,180182.49,8.77,84,848.36
+2025-02-27,Student Loan,B,Midwest,514040.81,7.69,75,1620.71
+2025-04-20,Auto Loan,E,Southwest,505526.37,11.0,201,5579.97
+2024-10-01,Home Equity Line,E,Northeast,395150.98,21.57,202,683.69
+2024-05-12,Student Loan,B,Southwest,119712.79,19.66,47,3662.55
+2024-09-28,Mortgage,B,Southeast,122624.45,14.32,63,5117.38
+2024-05-02,Student Loan,A,Midwest,414725.36,15.3,51,5607.79
+2025-05-30,Personal Loan,D,West Coast,215551.4,4.99,298,1511.68
+2024-07-17,Home Equity Line,E,Northeast,525050.82,8.06,57,3859.24
+2024-11-10,Home Equity Line,C,Southeast,208238.26,17.73,84,4851.37
+2024-09-20,Student Loan,A,Northeast,437952.21,28.14,230,5856.78

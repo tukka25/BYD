@@ -1,241 +1,241 @@
-enrollment_date,department,course_level,semester_term,students_enrolled,average_grade_points,total_credit_hours
-2024-03-15,Chemistry,Introductory,Summer,267,0.28,2.86
-2024-12-30,Chemistry,Intermediate,Fall,121,3.06,8.77
-2024-02-20,Mathematics,Graduate,Spring,54,0.27,10.97
-2024-08-21,Mathematics,Advanced,Fall,156,2.89,16.56
-2024-11-03,Economics,Introductory,Spring,257,0.66,16.19
-2024-10-07,English,Intermediate,Summer,253,0.16,6.3
-2024-10-06,Physics,Intermediate,Fall,220,3.4,11.22
-2025-06-12,Mathematics,Introductory,Spring,133,3.02,8.29
-2024-12-28,Chemistry,Intermediate,Summer,49,0.4,4.8
-2024-04-07,History,Intermediate,Summer,35,3.61,9.8
-2024-11-13,Biology,Advanced,Fall,211,0.2,2.38
-2025-02-07,Biology,Introductory,Fall,76,3.36,11.81
-2024-04-16,Physics,Intermediate,Fall,58,2.39,11.8
-2024-01-18,English,Introductory,Summer,273,2.53,5.17
-2025-04-13,Chemistry,Intermediate,Fall,71,0.26,14.94
-2024-01-27,Economics,Graduate,Fall,150,3.11,12.06
-2024-04-28,Mathematics,Advanced,Summer,300,2.08,8.43
-2024-07-08,English,Intermediate,Fall,17,2.23,17.43
-2025-06-11,Biology,Introductory,Summer,103,0.66,14.82
-2025-01-06,English,Introductory,Spring,153,0.83,8.86
-2024-07-14,Chemistry,Advanced,Summer,106,1.83,3.52
-2025-05-24,History,Intermediate,Summer,202,3.43,2.7
-2024-04-27,Mathematics,Advanced,Fall,151,0.18,2.45
-2024-04-01,Computer_Science,Advanced,Spring,110,1.61,12.4
-2024-01-01,Biology,Introductory,Spring,9,1.83,15.68
-2024-08-08,Computer_Science,Graduate,Summer,264,2.92,9.01
-2024-12-30,Mathematics,Intermediate,Spring,68,1.8,10.98
-2025-03-30,Biology,Advanced,Spring,105,0.05,1.23
-2024-09-17,English,Graduate,Summer,155,1.73,6.92
-2024-01-31,Economics,Graduate,Summer,169,2.75,4.28
-2025-02-14,Physics,Intermediate,Summer,168,3.15,3.47
-2025-05-26,English,Introductory,Spring,170,0.6,8.59
-2025-05-17,Economics,Introductory,Spring,107,1.23,17.92
-2024-01-05,History,Advanced,Summer,90,2.37,12.45
-2024-09-08,History,Graduate,Spring,171,3.8,3.79
-2024-05-26,Physics,Advanced,Spring,227,2.65,14.71
-2024-03-07,Economics,Graduate,Fall,147,3.96,14.73
-2024-12-15,Computer_Science,Introductory,Spring,12,1.74,13.45
-2025-05-20,Biology,Intermediate,Fall,83,3.59,12.5
-2024-07-22,Computer_Science,Graduate,Fall,176,0.9,14.12
-2025-05-09,Computer_Science,Graduate,Summer,119,1.56,13.88
-2024-02-08,Chemistry,Introductory,Fall,250,3.38,4.13
-2024-02-11,Biology,Intermediate,Fall,88,2.46,4.92
-2024-10-21,Mathematics,Intermediate,Summer,139,0.98,2.43
-2025-04-21,Computer_Science,Intermediate,Summer,176,3.55,9.9
-2024-02-26,Economics,Intermediate,Summer,286,2.59,17.23
-2024-01-13,Physics,Intermediate,Spring,157,0.07,14.86
-2024-01-25,Chemistry,Intermediate,Spring,151,1.95,1.46
-2024-04-23,History,Advanced,Fall,70,0.09,5.72
-2024-02-24,History,Intermediate,Spring,108,3.53,6.31
-2024-07-24,Economics,Intermediate,Spring,135,1.64,16.08
-2025-01-14,Physics,Advanced,Fall,272,2.75,18.0
-2025-04-15,Computer_Science,Intermediate,Fall,290,0.98,13.53
-2025-05-09,Economics,Graduate,Fall,140,1.47,7.39
-2024-05-14,Biology,Graduate,Fall,5,1.41,8.04
-2024-08-07,Chemistry,Advanced,Fall,86,2.3,8.8
-2025-05-12,Physics,Introductory,Summer,43,2.78,17.23
-2024-07-15,Mathematics,Advanced,Summer,8,0.46,7.45
-2024-03-28,Computer_Science,Intermediate,Summer,95,0.15,14.96
-2024-05-10,Economics,Intermediate,Fall,5,0.58,5.17
-2024-03-14,Computer_Science,Intermediate,Fall,96,0.84,2.33
-2025-04-27,Computer_Science,Advanced,Fall,66,1.32,8.07
-2024-03-11,Physics,Introductory,Spring,255,3.27,16.5
-2024-07-13,English,Intermediate,Fall,108,3.72,6.88
-2024-06-26,Biology,Introductory,Spring,256,2.48,11.42
-2024-09-11,Economics,Intermediate,Spring,169,1.52,5.74
-2024-10-14,English,Graduate,Summer,224,3.45,7.49
-2025-01-30,Physics,Intermediate,Fall,187,1.49,5.06
-2025-02-16,Biology,Introductory,Summer,113,2.9,9.43
-2025-06-16,Economics,Graduate,Spring,243,1.36,14.46
-2024-07-04,Biology,Advanced,Fall,287,3.71,3.11
-2024-10-25,Chemistry,Intermediate,Spring,282,3.41,2.61
-2024-11-06,English,Advanced,Spring,8,2.86,5.71
-2024-12-18,History,Intermediate,Summer,55,3.69,6.38
-2024-08-26,Physics,Graduate,Spring,121,0.26,8.67
-2024-07-11,Computer_Science,Intermediate,Spring,235,1.77,4.65
-2025-02-25,Physics,Advanced,Spring,130,1.0,2.24
-2025-04-05,English,Intermediate,Summer,276,3.64,1.78
-2025-05-24,Chemistry,Advanced,Spring,120,3.02,16.14
-2024-11-27,Computer_Science,Graduate,Spring,113,0.59,14.03
-2024-02-03,Chemistry,Graduate,Fall,112,0.41,3.59
-2025-02-27,English,Introductory,Fall,218,3.51,13.25
-2024-03-03,Chemistry,Intermediate,Spring,120,3.89,17.84
-2024-02-08,Mathematics,Graduate,Spring,272,3.73,13.92
-2025-06-15,Economics,Graduate,Summer,299,2.5,7.95
-2024-11-28,History,Introductory,Spring,114,0.03,8.66
-2025-05-11,Mathematics,Advanced,Fall,123,0.46,5.57
-2024-12-03,Biology,Intermediate,Spring,274,2.51,17.07
-2025-06-05,Economics,Advanced,Summer,174,1.44,12.25
-2025-02-09,Mathematics,Graduate,Spring,212,1.48,10.82
-2024-05-23,Chemistry,Graduate,Summer,193,3.2,10.06
-2024-06-27,Mathematics,Introductory,Spring,109,2.66,5.76
-2024-09-24,Biology,Intermediate,Summer,180,1.21,4.43
-2024-06-21,Economics,Graduate,Summer,99,2.58,17.83
-2025-05-01,History,Intermediate,Spring,30,2.15,13.21
-2025-04-03,Mathematics,Advanced,Fall,122,0.48,16.95
-2024-09-09,Biology,Intermediate,Spring,258,1.48,4.92
-2024-05-12,Chemistry,Advanced,Fall,135,3.73,16.11
-2024-04-05,Computer_Science,Advanced,Spring,195,0.3,6.58
-2024-07-06,Chemistry,Graduate,Summer,66,3.72,17.76
-2024-04-15,Economics,Graduate,Fall,56,2.73,17.03
-2024-01-02,Chemistry,Intermediate,Spring,45,1.63,2.46
-2024-10-10,Computer_Science,Advanced,Spring,221,2.38,3.82
-2025-05-03,English,Graduate,Summer,177,3.18,9.16
-2024-01-18,Computer_Science,Intermediate,Spring,156,1.57,9.27
-2024-07-01,Chemistry,Graduate,Summer,147,1.34,15.4
-2025-04-08,Economics,Advanced,Summer,245,2.58,2.33
-2024-05-27,Physics,Graduate,Spring,167,0.97,10.6
-2024-02-19,Mathematics,Intermediate,Spring,152,2.74,3.79
-2025-03-15,Physics,Introductory,Fall,43,0.18,5.31
-2024-05-24,Physics,Introductory,Summer,100,0.9,1.97
-2025-05-25,Chemistry,Graduate,Summer,298,0.29,14.1
-2024-08-04,Economics,Advanced,Fall,87,1.25,13.59
-2025-02-20,Mathematics,Advanced,Spring,221,1.29,11.62
-2025-02-19,Chemistry,Intermediate,Fall,146,0.03,17.52
-2024-11-14,Physics,Intermediate,Fall,251,0.38,9.61
-2024-06-09,Mathematics,Introductory,Spring,71,2.67,2.27
-2024-07-22,Mathematics,Introductory,Summer,261,3.14,15.64
-2024-06-11,Chemistry,Intermediate,Summer,16,0.93,4.2
-2025-06-10,History,Graduate,Summer,194,2.35,2.83
-2024-08-28,English,Graduate,Fall,255,0.9,10.85
-2024-10-18,Physics,Graduate,Summer,126,1.49,15.46
-2025-03-11,Computer_Science,Introductory,Spring,148,1.6,10.6
-2024-11-18,Physics,Introductory,Summer,267,3.88,8.42
-2024-04-20,History,Introductory,Spring,222,2.38,3.37
-2024-04-27,Economics,Introductory,Spring,289,1.28,2.93
-2024-09-05,Biology,Advanced,Summer,150,0.47,16.68
-2024-02-10,Biology,Graduate,Summer,25,0.42,3.67
-2024-11-06,English,Introductory,Spring,167,2.37,17.65
-2025-05-18,Economics,Intermediate,Spring,197,0.68,16.06
-2025-02-14,Chemistry,Intermediate,Fall,246,2.48,17.33
-2024-12-31,Economics,Advanced,Fall,264,1.34,9.65
-2025-02-18,Economics,Intermediate,Fall,244,1.99,12.27
-2024-03-05,Mathematics,Graduate,Summer,135,1.36,14.49
-2025-02-24,Physics,Intermediate,Summer,188,3.58,6.91
-2025-05-22,Computer_Science,Graduate,Fall,225,1.21,14.63
-2024-05-30,Physics,Introductory,Fall,91,2.31,5.18
-2024-05-03,Biology,Introductory,Spring,23,1.11,5.15
-2024-09-25,Computer_Science,Graduate,Fall,243,2.07,13.25
-2024-05-07,English,Advanced,Fall,198,1.3,14.79
-2024-09-08,Chemistry,Advanced,Fall,101,2.85,12.44
-2024-03-10,History,Advanced,Summer,127,0.94,12.52
-2024-06-27,English,Intermediate,Fall,239,0.92,14.63
-2024-08-15,Chemistry,Advanced,Summer,206,1.13,15.13
-2025-04-28,Computer_Science,Advanced,Fall,106,2.32,10.93
-2025-05-08,History,Advanced,Fall,7,1.35,16.12
-2025-06-18,English,Advanced,Summer,70,1.18,13.38
-2024-01-17,Physics,Introductory,Summer,70,0.3,14.9
-2024-05-04,Computer_Science,Advanced,Spring,96,0.02,4.59
-2025-06-06,Biology,Introductory,Summer,52,1.86,1.8
-2025-06-23,Economics,Graduate,Fall,15,1.38,3.16
-2024-10-24,Economics,Introductory,Fall,143,0.05,13.16
-2025-01-14,History,Introductory,Fall,52,1.4,11.6
-2025-03-29,English,Introductory,Spring,292,0.03,3.26
-2024-07-15,Economics,Intermediate,Summer,87,1.86,2.06
-2024-02-25,Physics,Intermediate,Summer,138,2.38,17.37
-2025-04-16,Mathematics,Advanced,Summer,209,0.93,2.07
-2025-02-06,Chemistry,Advanced,Fall,211,2.42,17.04
-2024-12-24,History,Graduate,Fall,283,3.47,13.04
-2025-01-24,Physics,Advanced,Fall,113,1.97,13.92
-2024-10-27,Physics,Intermediate,Fall,86,3.2,13.06
-2025-02-04,Chemistry,Advanced,Summer,277,3.6,11.07
-2024-10-08,Biology,Introductory,Summer,202,0.57,8.49
-2024-02-27,Computer_Science,Introductory,Summer,19,1.7,17.39
-2025-04-14,Mathematics,Graduate,Fall,269,2.4,1.14
-2025-02-18,History,Intermediate,Spring,125,3.21,4.63
-2025-01-26,History,Advanced,Spring,280,1.3,11.9
-2024-08-04,English,Intermediate,Summer,197,0.54,14.91
-2024-02-23,Biology,Introductory,Spring,95,2.16,11.74
-2024-06-12,Biology,Intermediate,Fall,167,1.93,4.74
-2024-07-07,Economics,Introductory,Spring,136,0.9,7.16
-2025-01-24,History,Graduate,Summer,272,0.68,15.86
-2024-06-14,Economics,Intermediate,Spring,253,3.86,17.72
-2024-12-13,History,Advanced,Spring,167,2.77,16.73
-2024-02-06,Economics,Intermediate,Fall,39,2.23,2.12
-2024-08-04,Chemistry,Introductory,Summer,139,3.13,3.35
-2025-06-22,History,Graduate,Summer,99,0.89,12.75
-2024-08-13,Economics,Advanced,Spring,138,3.58,5.75
-2025-02-28,History,Introductory,Fall,254,2.96,2.15
-2025-04-08,Economics,Introductory,Fall,65,1.6,14.77
-2025-03-11,Chemistry,Intermediate,Fall,129,0.17,15.47
-2024-08-22,Economics,Introductory,Spring,143,2.14,13.8
-2025-05-14,Biology,Intermediate,Spring,274,2.71,4.07
-2024-04-29,Chemistry,Graduate,Summer,21,2.71,13.65
-2024-01-03,English,Advanced,Fall,183,3.5,8.75
-2024-05-09,Mathematics,Intermediate,Spring,4,1.45,10.88
-2025-03-31,Chemistry,Introductory,Fall,127,2.46,16.03
-2024-04-13,Mathematics,Intermediate,Fall,239,0.7,8.83
-2024-07-09,Physics,Graduate,Summer,74,3.93,10.39
-2024-06-29,History,Advanced,Fall,252,1.44,1.2
-2024-11-12,Computer_Science,Advanced,Fall,142,2.3,10.83
-2025-05-05,Chemistry,Advanced,Spring,146,1.62,11.15
-2024-04-12,Biology,Intermediate,Summer,49,3.51,5.11
-2024-03-20,Computer_Science,Introductory,Summer,14,1.31,3.89
-2024-07-25,Chemistry,Graduate,Spring,109,3.46,4.86
-2025-03-26,Biology,Advanced,Summer,125,1.2,13.63
-2025-05-03,History,Introductory,Spring,133,3.91,8.07
-2025-04-21,Economics,Intermediate,Spring,246,2.51,14.14
-2024-07-25,Biology,Graduate,Spring,181,2.83,5.18
-2024-09-29,Chemistry,Intermediate,Spring,101,0.28,15.6
-2025-05-26,Economics,Graduate,Summer,37,0.06,8.07
-2024-12-13,Physics,Introductory,Spring,53,3.87,5.69
-2024-07-20,English,Intermediate,Fall,20,0.81,15.37
-2024-11-20,History,Graduate,Fall,152,2.3,4.74
-2024-12-30,History,Intermediate,Spring,286,3.53,8.72
-2024-10-14,English,Graduate,Summer,175,2.36,11.65
-2024-07-28,Computer_Science,Graduate,Fall,184,2.36,8.28
-2024-05-15,English,Introductory,Spring,289,1.61,10.06
-2024-11-04,English,Intermediate,Fall,154,1.19,5.65
-2024-12-31,Chemistry,Graduate,Fall,88,0.72,1.44
-2025-05-19,English,Intermediate,Fall,147,3.29,7.83
-2025-02-20,History,Advanced,Summer,98,2.56,17.66
-2024-05-09,Economics,Graduate,Fall,279,3.91,16.85
-2025-02-05,English,Introductory,Spring,282,2.67,17.86
-2024-06-13,Chemistry,Intermediate,Summer,231,0.67,11.5
-2025-01-13,History,Graduate,Fall,258,3.31,17.23
-2025-02-21,Physics,Intermediate,Spring,229,3.61,13.55
-2024-05-22,English,Advanced,Summer,76,1.35,7.91
-2025-05-24,Biology,Intermediate,Fall,98,3.0,4.87
-2024-10-21,Biology,Intermediate,Spring,19,1.81,8.5
-2024-01-08,Biology,Introductory,Fall,190,2.82,12.51
-2025-02-15,Mathematics,Graduate,Fall,283,2.38,12.2
-2024-10-20,Physics,Graduate,Fall,129,3.86,11.75
-2024-08-11,Economics,Intermediate,Summer,256,3.45,16.53
-2025-05-26,History,Graduate,Spring,199,1.47,5.73
-2024-09-03,Physics,Advanced,Fall,183,0.57,8.77
-2025-04-16,Economics,Advanced,Summer,167,2.95,4.67
-2024-02-04,Chemistry,Advanced,Spring,234,0.84,17.15
-2024-07-10,Mathematics,Graduate,Fall,263,3.09,3.32
-2025-03-18,English,Graduate,Fall,295,3.36,3.83
-2024-03-03,English,Graduate,Spring,135,2.21,1.09
-2024-11-16,Economics,Intermediate,Summer,275,3.76,7.88
-2024-10-27,History,Advanced,Spring,183,2.7,10.83
-2024-02-11,English,Intermediate,Spring,74,2.2,4.28
-2024-06-25,English,Graduate,Summer,96,3.69,2.06
-2024-04-23,Computer_Science,Advanced,Summer,129,2.69,10.48
-2025-06-13,Physics,Intermediate,Spring,183,3.61,8.7
-2024-10-09,Chemistry,Advanced,Fall,108,0.32,17.74
-2025-02-20,Mathematics,Introductory,Summer,284,2.59,12.87
-2024-03-15,Biology,Advanced,Summer,260,2.6,16.21
+Billing Date,Utility Type,Customer Segment,Service Region,Usage Amount,Total Charges,Late Fee Amount,Days Past Due
+2024-08-04,Trash Collection,Small Business,Central Metro,22631.42,11879.82,136.98,146
+2025-03-07,District Heating,Small Business,Western Coast,5930.69,12756.5,92.22,157
+2025-05-06,Wastewater,Small Business,Northern District,24977.69,6551.05,192.55,89
+2025-03-19,District Heating,Commercial,Eastern Valley,12756.81,3795.91,47.15,4
+2025-01-14,Water,Industrial,Western Coast,23770.49,11581.78,90.16,164
+2024-02-17,Wastewater,Municipal,Northern District,3929.18,3111.24,186.75,65
+2024-01-24,Wastewater,Residential,Western Coast,7917.9,6325.27,162.93,22
+2024-11-03,Trash Collection,Commercial,Southern Plains,3694.58,13057.93,60.74,30
+2024-12-13,Natural Gas,Industrial,Western Coast,24088.6,3382.43,80.5,160
+2025-02-27,District Heating,Commercial,Southern Plains,23487.9,7948.12,41.1,20
+2024-12-27,Trash Collection,Industrial,Northern District,7289.54,13427.85,116.86,102
+2025-05-01,Electricity,Small Business,Eastern Valley,5982.52,9555.99,91.11,71
+2024-07-24,Electricity,Municipal,Western Coast,24839.19,7690.31,44.89,97
+2024-09-04,Wastewater,Municipal,Central Metro,14635.52,3657.91,199.12,122
+2025-02-03,Electricity,Commercial,Southern Plains,2060.55,5326.39,192.73,28
+2024-04-07,Natural Gas,Residential,Western Coast,14686.3,6646.97,81.24,18
+2025-06-22,Trash Collection,Industrial,Western Coast,995.08,7040.25,170.82,177
+2024-05-21,Electricity,Small Business,Western Coast,15005.62,702.28,168.96,83
+2025-05-04,Natural Gas,Residential,Eastern Valley,1115.55,12503.59,224.76,96
+2025-05-19,Water,Small Business,Northern District,16470.81,14487.18,99.06,152
+2024-12-03,Natural Gas,Industrial,Eastern Valley,11566.71,11740.3,51.2,149
+2024-12-09,Water,Municipal,Eastern Valley,19247.9,11349.15,14.39,46
+2024-12-31,Water,Commercial,Northern District,2972.24,6105.88,160.91,102
+2024-06-14,Electricity,Industrial,Western Coast,19584.91,1938.62,111.08,143
+2024-04-29,District Heating,Small Business,Southern Plains,15110.65,3362.12,57.83,138
+2024-12-13,Natural Gas,Industrial,Central Metro,5803.33,2472.49,110.45,5
+2025-03-12,Trash Collection,Commercial,Central Metro,20068.94,4796.82,16.56,79
+2025-02-09,Electricity,Municipal,Eastern Valley,5223.86,6866.32,229.7,95
+2024-05-22,Natural Gas,Industrial,Western Coast,10716.07,3232.09,197.93,119
+2024-10-17,Wastewater,Commercial,Central Metro,1746.42,9366.26,124.2,148
+2024-11-12,Wastewater,Commercial,Northern District,5643.37,3249.95,98.99,161
+2024-04-13,Natural Gas,Municipal,Central Metro,23483.82,10961.95,5.85,129
+2025-05-30,Trash Collection,Residential,Central Metro,8926.74,575.71,63.73,166
+2024-08-05,Natural Gas,Small Business,Southern Plains,7303.9,5137.06,206.63,83
+2024-01-25,Trash Collection,Industrial,Western Coast,17186.83,12072.2,129.03,145
+2024-01-29,Wastewater,Small Business,Western Coast,8796.33,1545.1,47.7,69
+2025-02-20,Natural Gas,Residential,Central Metro,9087.97,14279.58,90.64,53
+2024-01-04,District Heating,Municipal,Northern District,10020.36,11288.78,2.86,124
+2024-09-26,District Heating,Residential,Central Metro,4452.2,8723.58,148.13,143
+2024-03-13,District Heating,Commercial,Eastern Valley,18897.03,10213.33,164.69,122
+2024-10-22,Trash Collection,Residential,Southern Plains,22524.24,4500.34,121.34,125
+2024-01-10,Water,Industrial,Western Coast,14113.74,13627.22,192.31,112
+2025-05-19,Wastewater,Residential,Eastern Valley,7786.08,12353.59,244.14,41
+2024-01-05,Trash Collection,Commercial,Eastern Valley,3786.08,219.19,69.85,82
+2024-09-02,Natural Gas,Municipal,Western Coast,1698.6,495.47,58.7,8
+2024-06-17,Electricity,Residential,Eastern Valley,18919.73,6014.37,161.53,174
+2025-05-22,Trash Collection,Industrial,Western Coast,5633.96,14813.0,147.72,137
+2025-01-04,Wastewater,Municipal,Eastern Valley,24306.88,2938.46,3.12,86
+2024-06-13,Water,Industrial,Northern District,17285.69,907.9,146.08,66
+2024-03-21,Wastewater,Municipal,Eastern Valley,9014.15,662.17,153.58,139
+2025-05-24,Trash Collection,Industrial,Southern Plains,18810.63,12242.72,105.58,22
+2024-04-24,Wastewater,Municipal,Northern District,18271.96,7880.12,22.52,27
+2025-03-29,Electricity,Residential,Southern Plains,8007.39,12281.12,47.93,112
+2025-02-01,Natural Gas,Municipal,Eastern Valley,13771.72,11443.11,68.28,174
+2024-09-06,Natural Gas,Commercial,Southern Plains,19960.89,13950.4,48.03,180
+2024-06-12,Water,Small Business,Central Metro,7257.46,12060.08,49.68,4
+2024-11-12,Electricity,Commercial,Eastern Valley,8688.45,13209.11,212.43,120
+2024-12-29,Wastewater,Industrial,Northern District,24497.66,6173.26,246.11,11
+2024-03-04,Trash Collection,Municipal,Northern District,15132.43,219.84,36.6,62
+2024-02-02,Water,Small Business,Western Coast,2515.51,10788.07,214.34,122
+2025-01-13,Water,Municipal,Southern Plains,1784.61,5560.36,162.41,4
+2025-02-15,Electricity,Residential,Western Coast,14199.02,8503.46,242.07,118
+2025-02-12,Trash Collection,Small Business,Central Metro,16717.32,14928.63,219.68,156
+2024-10-16,Natural Gas,Commercial,Eastern Valley,11985.52,4849.31,122.15,116
+2024-06-23,Water,Commercial,Eastern Valley,4420.13,11067.76,220.6,159
+2024-09-13,Trash Collection,Industrial,Central Metro,9745.11,12361.37,130.53,63
+2025-01-22,District Heating,Commercial,Central Metro,21632.36,1822.82,40.6,123
+2024-11-20,District Heating,Commercial,Eastern Valley,13990.25,603.93,161.62,103
+2024-01-02,District Heating,Municipal,Eastern Valley,13427.39,13968.84,59.27,134
+2024-12-28,Trash Collection,Municipal,Northern District,3650.78,8783.72,27.0,51
+2024-10-20,Wastewater,Residential,Eastern Valley,6628.43,4612.51,131.05,107
+2024-01-26,Trash Collection,Commercial,Eastern Valley,9175.93,9402.86,121.62,62
+2024-02-01,District Heating,Industrial,Central Metro,6632.68,8613.19,199.99,165
+2025-02-10,District Heating,Municipal,Northern District,21298.11,14780.85,35.42,56
+2024-04-24,District Heating,Municipal,Central Metro,20328.47,8481.26,200.93,179
+2024-04-04,Natural Gas,Municipal,Central Metro,15607.7,6400.78,162.61,153
+2025-03-17,Trash Collection,Residential,Central Metro,23014.8,6841.42,139.37,91
+2024-10-09,Wastewater,Industrial,Central Metro,14812.43,11629.35,240.75,54
+2025-01-22,Trash Collection,Residential,Southern Plains,9577.85,3656.78,64.53,170
+2024-10-18,Wastewater,Commercial,Eastern Valley,15251.36,5937.47,86.36,88
+2024-04-29,Natural Gas,Industrial,Southern Plains,15856.66,13855.6,98.42,23
+2025-03-01,Natural Gas,Small Business,Southern Plains,13469.71,13110.94,1.02,125
+2025-04-04,Trash Collection,Small Business,Southern Plains,1837.69,8832.75,169.32,51
+2024-03-28,Natural Gas,Industrial,Central Metro,7783.27,8687.46,173.28,117
+2024-03-20,Natural Gas,Small Business,Eastern Valley,13351.9,11637.91,3.45,61
+2024-06-24,Trash Collection,Commercial,Western Coast,23993.82,10550.31,123.41,49
+2024-10-23,Electricity,Industrial,Central Metro,24236.74,13577.76,232.96,65
+2024-04-23,Trash Collection,Residential,Eastern Valley,6855.35,11795.23,79.25,54
+2024-11-12,Water,Small Business,Northern District,4864.53,12906.96,240.7,140
+2024-02-09,Trash Collection,Municipal,Southern Plains,24095.51,13057.76,105.52,93
+2024-01-28,Trash Collection,Municipal,Southern Plains,3592.43,9676.17,231.62,103
+2025-05-25,Natural Gas,Residential,Southern Plains,748.07,3271.21,47.32,144
+2024-12-26,Wastewater,Commercial,Western Coast,2233.99,6017.42,45.13,40
+2025-03-14,Electricity,Commercial,Southern Plains,19991.8,5739.92,24.01,149
+2024-09-24,District Heating,Municipal,Central Metro,5701.16,10324.79,105.6,78
+2025-04-29,Natural Gas,Residential,Southern Plains,4842.94,13432.99,207.51,6
+2024-01-25,Trash Collection,Residential,Eastern Valley,20622.12,12925.34,45.97,20
+2024-03-30,District Heating,Municipal,Northern District,7881.1,7530.51,229.58,69
+2025-04-05,Wastewater,Municipal,Central Metro,13910.35,13154.71,56.18,45
+2024-02-03,Trash Collection,Residential,Eastern Valley,4535.83,9854.88,182.12,48
+2024-05-15,District Heating,Residential,Southern Plains,4054.63,1412.51,213.42,24
+2025-05-06,Water,Commercial,Eastern Valley,10262.13,14825.45,15.21,47
+2025-04-01,Natural Gas,Small Business,Central Metro,24860.29,12992.03,188.61,95
+2024-07-02,Electricity,Commercial,Eastern Valley,574.17,2982.88,101.58,156
+2024-07-28,Wastewater,Small Business,Northern District,3959.9,14896.69,205.15,47
+2024-06-14,Water,Industrial,Southern Plains,19740.53,13828.06,138.09,164
+2024-05-09,District Heating,Industrial,Western Coast,18591.8,9554.93,54.03,145
+2024-10-19,Water,Commercial,Eastern Valley,19156.8,13561.16,66.21,49
+2024-11-11,Wastewater,Small Business,Eastern Valley,16227.36,14040.74,57.51,114
+2024-09-17,Trash Collection,Small Business,Eastern Valley,23173.16,3061.4,170.09,146
+2024-02-13,Wastewater,Residential,Western Coast,8997.75,10319.42,9.15,170
+2024-03-31,Trash Collection,Residential,Western Coast,19577.43,13277.78,19.71,37
+2024-05-04,Natural Gas,Industrial,Central Metro,8936.61,10290.52,126.37,58
+2025-03-11,Wastewater,Small Business,Central Metro,12970.88,6655.51,65.22,30
+2024-09-16,District Heating,Commercial,Eastern Valley,10824.19,3656.97,215.54,68
+2024-01-01,Wastewater,Residential,Western Coast,17950.52,4113.85,201.52,155
+2024-11-26,Electricity,Commercial,Eastern Valley,10591.75,14038.03,93.36,123
+2025-04-12,Electricity,Municipal,Western Coast,7259.97,1683.46,224.84,116
+2024-12-12,Trash Collection,Industrial,Southern Plains,17527.41,12867.69,7.51,65
+2024-11-26,Water,Industrial,Central Metro,21883.53,321.33,205.77,90
+2024-11-21,Water,Commercial,Southern Plains,23510.35,12369.31,195.42,120
+2024-04-02,Water,Small Business,Western Coast,12702.24,455.2,242.17,133
+2024-08-16,District Heating,Industrial,Southern Plains,9156.35,14865.88,149.96,71
+2024-11-24,Trash Collection,Industrial,Central Metro,16279.55,13558.12,249.4,74
+2025-06-03,Water,Commercial,Eastern Valley,12440.77,6690.87,99.67,140
+2024-09-21,Wastewater,Municipal,Southern Plains,10500.87,4547.6,56.73,103
+2025-02-07,Wastewater,Commercial,Southern Plains,1216.37,2213.13,8.15,169
+2024-12-12,Wastewater,Residential,Eastern Valley,9844.12,13827.34,218.16,151
+2024-03-18,Electricity,Industrial,Southern Plains,4186.22,5728.16,124.85,179
+2025-03-20,Wastewater,Small Business,Eastern Valley,13069.59,5656.85,166.07,9
+2024-09-06,Electricity,Industrial,Central Metro,12855.38,6157.66,189.41,51
+2024-11-08,Wastewater,Commercial,Southern Plains,24529.74,65.62,224.88,74
+2024-02-14,Water,Small Business,Eastern Valley,23874.71,986.75,92.82,127
+2024-02-09,Trash Collection,Residential,Southern Plains,22566.45,13921.05,93.92,127
+2025-01-22,Wastewater,Small Business,Northern District,1978.13,6249.25,92.91,167
+2024-06-03,Water,Small Business,Western Coast,15469.83,14936.58,156.61,134
+2024-06-30,Trash Collection,Industrial,Southern Plains,7299.3,5583.71,162.95,9
+2024-05-02,District Heating,Commercial,Central Metro,10946.26,6030.94,12.17,129
+2024-01-25,Trash Collection,Small Business,Southern Plains,11775.7,5674.97,209.79,64
+2024-07-18,Natural Gas,Residential,Eastern Valley,18094.92,12715.55,37.69,35
+2024-05-15,District Heating,Commercial,Central Metro,10414.64,6425.72,21.59,157
+2025-02-13,District Heating,Small Business,Eastern Valley,13270.94,9553.5,220.66,51
+2024-10-03,Electricity,Residential,Northern District,10949.6,1331.07,36.21,80
+2024-08-21,Trash Collection,Small Business,Western Coast,19229.71,5491.92,163.71,164
+2024-12-03,Natural Gas,Industrial,Central Metro,14873.54,14647.39,89.56,33
+2024-05-17,Trash Collection,Small Business,Northern District,19781.63,2281.62,201.09,9
+2024-04-08,District Heating,Commercial,Central Metro,18443.44,10471.78,45.23,26
+2024-11-03,District Heating,Small Business,Eastern Valley,11936.07,12225.52,195.0,157
+2025-04-11,Electricity,Commercial,Eastern Valley,18022.75,12153.84,105.76,27
+2025-04-29,Wastewater,Municipal,Northern District,19855.09,5329.71,137.01,44
+2025-06-23,Trash Collection,Municipal,Central Metro,23574.68,11078.84,235.9,87
+2025-05-19,Trash Collection,Municipal,Eastern Valley,9903.72,2371.12,81.67,67
+2025-03-23,Water,Commercial,Central Metro,1140.82,8286.43,141.97,153
+2024-06-26,Trash Collection,Industrial,Western Coast,5919.64,4426.04,131.69,80
+2024-01-31,District Heating,Residential,Western Coast,18606.82,6317.01,167.55,155
+2024-03-05,Natural Gas,Municipal,Northern District,13850.03,6715.06,73.93,67
+2024-10-06,Trash Collection,Industrial,Northern District,990.48,373.41,237.41,169
+2024-02-19,Electricity,Small Business,Eastern Valley,19278.65,6210.57,175.19,158
+2024-04-23,Trash Collection,Municipal,Western Coast,826.01,9400.21,30.39,94
+2024-12-13,Natural Gas,Municipal,Central Metro,9774.29,70.1,201.24,62
+2024-02-04,Wastewater,Residential,Central Metro,18476.89,13355.14,233.31,8
+2024-05-04,Natural Gas,Small Business,Northern District,9292.06,1066.38,206.63,9
+2024-10-05,Natural Gas,Commercial,Northern District,23177.03,12446.64,246.79,148
+2024-09-16,Electricity,Small Business,Eastern Valley,9010.93,933.86,124.21,83
+2024-11-26,District Heating,Commercial,Western Coast,5613.68,11088.25,190.05,81
+2025-04-04,Electricity,Commercial,Western Coast,22096.29,12242.23,213.86,61
+2024-01-05,Wastewater,Industrial,Central Metro,24544.87,3949.9,117.49,80
+2024-09-17,Natural Gas,Small Business,Western Coast,7234.8,2738.32,122.34,158
+2024-03-15,District Heating,Residential,Central Metro,24642.45,1939.24,149.09,171
+2024-12-17,Natural Gas,Industrial,Southern Plains,1256.7,736.14,204.03,174
+2024-09-13,Natural Gas,Commercial,Southern Plains,18597.3,3707.53,158.49,145
+2024-08-03,Water,Small Business,Eastern Valley,23442.46,14521.02,122.83,13
+2024-07-20,Water,Industrial,Western Coast,4073.93,6487.65,90.42,122
+2024-08-20,District Heating,Municipal,Western Coast,18441.95,10786.78,172.58,37
+2024-02-22,Wastewater,Municipal,Northern District,15086.56,2286.59,134.31,51
+2024-03-03,Trash Collection,Residential,Northern District,20560.72,681.94,112.28,77
+2025-01-04,Natural Gas,Municipal,Western Coast,16304.56,2432.99,244.33,162
+2024-05-21,Wastewater,Industrial,Northern District,1469.61,12760.45,93.79,142
+2024-05-23,District Heating,Residential,Northern District,12368.85,4246.8,104.57,178
+2024-09-20,Trash Collection,Municipal,Central Metro,7073.21,2149.89,33.76,101
+2024-01-22,Water,Residential,Northern District,20839.52,11223.27,56.79,58
+2024-10-12,Trash Collection,Residential,Western Coast,11293.14,14282.29,106.69,20
+2024-05-06,Water,Small Business,Central Metro,21954.29,8905.61,71.29,27
+2024-03-12,Water,Municipal,Northern District,17319.83,3612.42,29.79,175
+2025-04-03,District Heating,Commercial,Northern District,19408.79,2820.9,204.52,135
+2024-10-29,Wastewater,Residential,Eastern Valley,15181.33,3398.99,84.07,153
+2025-04-09,Natural Gas,Commercial,Eastern Valley,23697.08,8881.46,44.32,105
+2024-10-24,Trash Collection,Municipal,Northern District,1446.89,1796.77,103.31,34
+2024-11-11,Electricity,Small Business,Western Coast,14420.97,4043.22,147.9,46
+2024-06-07,Wastewater,Small Business,Central Metro,12187.2,11280.13,99.21,52
+2025-03-16,District Heating,Municipal,Western Coast,8758.4,4065.31,7.0,70
+2024-10-31,Water,Small Business,Eastern Valley,22939.39,2389.52,187.68,142
+2024-11-16,Wastewater,Small Business,Eastern Valley,22810.5,7317.19,138.39,74
+2024-02-05,Water,Municipal,Western Coast,16612.06,9480.97,12.51,115
+2024-01-16,Trash Collection,Municipal,Western Coast,16486.67,8010.4,217.46,19
+2024-04-25,Wastewater,Industrial,Central Metro,13607.95,5825.67,190.29,59
+2024-07-08,Trash Collection,Industrial,Southern Plains,7302.6,11327.57,197.43,153
+2024-05-04,Wastewater,Municipal,Central Metro,15538.47,8001.92,19.8,100
+2024-07-24,Electricity,Commercial,Central Metro,16742.64,3020.51,97.79,109
+2025-04-27,Wastewater,Small Business,Western Coast,10039.8,12008.72,19.52,158
+2024-05-30,Wastewater,Small Business,Eastern Valley,14142.46,7675.76,65.34,116
+2025-05-09,Wastewater,Residential,Central Metro,21554.67,11630.14,237.52,139
+2025-03-31,Natural Gas,Residential,Central Metro,2380.45,77.6,64.3,61
+2025-02-08,Electricity,Industrial,Southern Plains,16600.69,8590.91,92.69,29
+2024-08-06,Trash Collection,Small Business,Southern Plains,18642.16,11925.44,231.3,6
+2024-07-21,Trash Collection,Industrial,Central Metro,18154.42,2154.3,231.84,75
+2024-11-02,Trash Collection,Small Business,Southern Plains,22032.25,13827.81,244.65,140
+2025-04-12,Trash Collection,Industrial,Western Coast,19661.58,6832.42,160.67,82
+2024-02-16,Water,Residential,Eastern Valley,3829.73,9939.66,180.92,153
+2024-02-09,Wastewater,Commercial,Western Coast,17855.46,9204.04,132.68,167
+2024-12-10,District Heating,Municipal,Northern District,8489.11,5092.5,78.0,79
+2025-04-17,Electricity,Commercial,Northern District,15515.5,6917.71,107.77,112
+2024-10-18,Trash Collection,Municipal,Central Metro,24935.93,7310.29,64.1,73
+2024-04-10,Trash Collection,Commercial,Southern Plains,16057.94,2833.72,180.22,2
+2024-04-13,Trash Collection,Municipal,Eastern Valley,15494.72,13849.12,122.37,171
+2024-05-27,District Heating,Industrial,Eastern Valley,2004.91,328.61,83.34,175
+2025-06-15,Water,Residential,Southern Plains,6279.06,5819.37,5.4,2
+2025-01-05,Trash Collection,Small Business,Northern District,10362.5,5200.64,164.72,62
+2024-01-19,Wastewater,Commercial,Eastern Valley,13046.76,763.54,245.69,162
+2024-04-01,Electricity,Commercial,Central Metro,16853.23,12960.61,194.15,149
+2024-11-19,Trash Collection,Industrial,Northern District,23507.64,3746.89,135.62,3
+2025-04-04,Water,Residential,Southern Plains,17814.74,5378.68,66.55,169
+2024-06-03,Water,Small Business,Central Metro,1579.28,5870.72,211.93,124
+2024-09-26,Wastewater,Small Business,Western Coast,5215.87,8348.46,58.74,171
+2024-10-03,Natural Gas,Small Business,Northern District,17017.22,9882.27,121.74,34
+2024-10-23,Electricity,Residential,Southern Plains,21335.09,9494.39,208.06,136
+2025-02-15,District Heating,Industrial,Eastern Valley,16220.43,6340.5,39.88,11
+2024-04-27,Trash Collection,Municipal,Western Coast,13241.82,13566.31,227.24,151
+2024-10-02,Electricity,Residential,Northern District,8879.11,14072.97,137.63,72
+2025-04-17,Electricity,Commercial,Central Metro,2137.68,6959.26,209.18,143
+2025-05-25,Trash Collection,Commercial,Northern District,24230.49,4811.71,5.09,15
+2025-04-17,Natural Gas,Commercial,Central Metro,13812.19,14036.93,76.83,103
+2025-04-16,Water,Industrial,Western Coast,24059.47,3751.96,197.5,152
+2024-05-13,Trash Collection,Residential,Northern District,20570.96,13999.13,81.71,176
+2025-06-11,Electricity,Small Business,Southern Plains,16676.23,6823.94,236.24,20
+2024-05-14,Electricity,Commercial,Southern Plains,16230.27,5890.95,208.98,71
+2024-12-11,Water,Municipal,Southern Plains,7515.62,12719.14,229.95,169
+2025-05-20,Water,Industrial,Central Metro,5724.68,293.14,72.72,19
+2024-07-07,District Heating,Municipal,Western Coast,2792.18,11589.23,233.71,36
+2025-04-02,Trash Collection,Municipal,Central Metro,18979.4,11993.69,211.4,45

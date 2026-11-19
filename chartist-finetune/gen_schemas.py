@@ -113,17 +113,27 @@ def main() -> None:
     args = parser.parse_args()
 
     rng = random.Random(args.seed)
+    per_domain = args.total // len(DOMAINS)
+    if per_domain * len(DOMAINS) != args.total or args.test_schemas % per_domain:
+        raise SystemExit("--total must be a multiple of the domain count and --test-schemas a multiple of schemas per domain")
+    domains = list(DOMAINS)
+    rng.shuffle(domains)
+    n_test_domains = args.test_schemas // per_domain
+    test_domains = set(domains[:n_test_domains])
     plan = []
-    for i in range(args.total):
-        plan.append(
-            {
-                "schema_id": f"s{i:04d}",
-                "domain": DOMAINS[i % len(DOMAINS)],
-                "naming_style": NAMING_STYLES[i % len(NAMING_STYLES)],
-                "split": "test" if i < args.test_schemas else "train",
-            }
-        )
+    for domain in domains:
+        # distinct naming styles within a domain, so no (domain, style) pair repeats
+        for style in rng.sample(NAMING_STYLES, per_domain):
+            plan.append(
+                {
+                    "domain": domain,
+                    "naming_style": style,
+                    "split": "test" if domain in test_domains else "train",
+                }
+            )
     rng.shuffle(plan)
+    for i, item in enumerate(plan):
+        item["schema_id"] = f"s{i:04d}"
 
     requests = [
         client.json_request(
@@ -186,7 +196,33 @@ def main() -> None:
         by_split[row["split"]] += 1
     print(json.dumps({"schemas_kept": len(rows), "by_split": by_split,
                       "refusals": outcome.refusals, "unparsed": outcome.unparsed}, indent=2))
+    leakage_guard(rows)
 
+
+def leakage_guard(rows: list[dict], threshold: float = 0.7) -> None:
+    """Fail loudly if the test split can leak into train."""
+    test = [r for r in rows if r["split"] == "test"]
+    train = [r for r in rows if r["split"] == "train"]
+
+    shared = {r["domain"] for r in test} & {r["domain"] for r in train}
+    print(f"guard 1: test/train domain overlap = {sorted(shared)}")
+    assert not shared, f"domains appear in both splits: {sorted(shared)}"
+
+    pairs = [(r["domain"], r["naming_style"]) for r in rows]
+    dupes = {p for p in pairs if pairs.count(p) > 1}
+    print(f"guard 2: repeated (domain, style) pairs = {len(dupes)}")
+    assert not dupes, f"repeated (domain, style) pairs: {sorted(dupes)[:5]}"
+
+    worst, worst_pair = 0.0, None
+    for a in test:
+        sa = set(a["pandas_columns"])
+        for b in train:
+            sb = set(b["pandas_columns"])
+            score = len(sa & sb) / len(sa | sb)
+            if score > worst:
+                worst, worst_pair = score, (a["schema_id"], b["schema_id"])
+    print(f"guard 3: worst cross-split column Jaccard = {worst:.3f} {worst_pair} (threshold {threshold})")
+    assert worst < threshold, f"cross-split near-duplicate schemas {worst_pair}: Jaccard {worst:.3f}"
 
 if __name__ == "__main__":
     main()

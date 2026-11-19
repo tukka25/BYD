@@ -1,241 +1,241 @@
-Usage Date,Region Name,Plan Type,Device Category,Active Subscribers,Data Used GB,Average Latency Ms,Total Revenue
-2024-08-18,Midwest,Prepaid,Smartwatch,821866,21703.35,113.06,2963912.16
-2024-02-21,Pacific Northwest,Prepaid,Tablet,539504,38933.79,87.46,818679.41
-2025-05-05,Southwest,Family Plan,Tablet,331234,23832.61,124.92,273808.5
-2025-01-23,West Coast,Business Unlimited,Smartphone,692305,48029.37,57.06,788887.45
-2025-04-23,Mountain West,Family Plan,Hotspot,662310,41037.13,111.74,937892.16
-2025-03-28,Northeast,IoT Connectivity,Smartphone,401277,10845.45,18.64,2320464.8
-2025-01-20,Northeast,Family Plan,Fixed Wireless Router,760110,40870.18,53.52,1460858.64
-2024-11-26,Southeast,IoT Connectivity,Smartphone,729793,29575.71,123.07,3155179.37
-2024-12-22,Midwest,Business Unlimited,Hotspot,624175,13576.25,8.83,2409135.3
-2025-01-25,Mountain West,Business Unlimited,Feature Phone,307907,11501.7,164.81,3765362.03
-2025-03-01,West Coast,Prepaid,Fixed Wireless Router,350902,37634.02,24.81,2145142.59
-2024-08-22,Northeast,Family Plan,Smartphone,718736,11558.11,135.36,2540581.77
-2024-12-12,Southwest,Postpaid,Smartphone,475331,34912.01,98.61,3034709.92
-2025-01-03,Pacific Northwest,Prepaid,Smartwatch,138372,29321.99,78.15,2289204.86
-2024-05-22,Southeast,Family Plan,Tablet,537227,17761.55,139.44,2869341.24
-2024-06-07,Northeast,Business Unlimited,Hotspot,158447,1511.55,93.85,3519362.16
-2024-09-08,Northeast,Business Unlimited,Tablet,98756,10954.29,178.63,413684.4
-2024-12-15,Mountain West,Business Unlimited,Feature Phone,583894,43246.45,40.67,528133.59
-2025-03-18,Pacific Northwest,IoT Connectivity,Smartwatch,18243,7288.61,127.04,2266578.79
-2024-11-17,Southwest,Prepaid,Hotspot,636653,26065.24,90.55,569062.71
-2024-02-03,Midwest,Family Plan,Feature Phone,551523,34247.48,146.06,436214.12
-2024-07-11,West Coast,Family Plan,Smartwatch,367855,15159.37,65.39,3791704.07
-2024-10-07,Southwest,Family Plan,Smartwatch,586257,4830.0,76.41,613603.19
-2024-04-05,Pacific Northwest,Prepaid,Smartwatch,432398,1934.18,132.74,1516449.38
-2024-03-04,Pacific Northwest,Family Plan,Tablet,418227,5211.01,103.61,3133874.0
-2024-12-05,Southeast,IoT Connectivity,Smartphone,635214,16702.24,133.78,3317092.66
-2025-02-05,Pacific Northwest,Postpaid,Smartwatch,67816,13495.7,139.63,2261992.91
-2025-06-20,West Coast,Postpaid,Smartwatch,233313,32601.77,126.59,2073219.48
-2025-06-02,Northeast,Family Plan,Fixed Wireless Router,33624,14083.02,23.21,890755.76
-2024-12-17,Northeast,Prepaid,Hotspot,548125,17936.4,93.96,949290.12
-2025-03-18,Mountain West,Family Plan,Hotspot,449690,32381.91,123.67,2556352.99
-2024-08-08,Northeast,Family Plan,Smartwatch,690015,550.69,108.74,206091.24
-2024-11-09,Northeast,Business Unlimited,Feature Phone,193045,28452.09,131.34,172044.49
-2024-05-09,Northeast,Family Plan,Feature Phone,627841,32334.09,99.43,918239.32
-2025-01-09,Southeast,Postpaid,Tablet,420645,46336.94,130.83,2986025.75
-2024-01-03,Southwest,Business Unlimited,Smartphone,321120,41838.1,28.8,2058740.88
-2025-05-02,Midwest,Prepaid,Fixed Wireless Router,391161,17109.82,15.09,398525.64
-2024-05-24,Northeast,Business Unlimited,Smartwatch,716626,23015.53,39.62,3303076.1
-2024-03-14,Southeast,Prepaid,Smartwatch,441555,39246.39,154.9,2211829.24
-2025-01-25,Midwest,IoT Connectivity,Smartwatch,760940,14762.42,88.25,2107596.14
-2024-04-17,Mountain West,Postpaid,Hotspot,739191,15728.46,141.65,3125387.45
-2024-07-10,West Coast,Family Plan,Feature Phone,11810,5819.69,109.83,3140648.61
-2025-05-17,West Coast,Family Plan,Smartphone,337471,30985.11,67.31,3481147.02
-2024-08-21,West Coast,IoT Connectivity,Smartphone,670118,21611.84,75.35,253164.32
-2024-05-29,Pacific Northwest,Business Unlimited,Smartwatch,154771,36630.68,113.48,57433.17
-2025-03-11,Southwest,Postpaid,Smartwatch,40861,10317.45,52.07,192164.56
-2025-01-29,West Coast,IoT Connectivity,Feature Phone,62831,39037.84,30.84,747614.34
-2024-08-24,Southwest,Family Plan,Tablet,7916,26933.33,56.07,1883055.14
-2025-04-04,Northeast,Postpaid,Smartwatch,92719,7222.1,49.45,837005.08
-2024-11-24,Northeast,Business Unlimited,Smartphone,838555,15100.37,174.09,3693646.93
-2025-03-23,Northeast,Business Unlimited,Smartphone,758409,2234.64,43.13,1422843.79
-2025-01-19,Mountain West,Postpaid,Hotspot,781683,27660.49,51.66,1508420.04
-2025-03-24,Southeast,Prepaid,Smartphone,805051,2267.8,37.68,2841305.79
-2024-09-12,Midwest,Prepaid,Smartwatch,106206,39573.91,40.97,3306834.9
-2025-03-17,West Coast,IoT Connectivity,Hotspot,762163,41115.61,48.22,3666249.85
-2025-05-27,Mountain West,Prepaid,Smartphone,612132,14017.77,126.63,669986.03
-2024-02-25,Southwest,Business Unlimited,Smartwatch,273197,20700.95,34.69,3662368.93
-2025-03-11,Southwest,Prepaid,Smartwatch,822098,17855.36,94.19,1990036.58
-2025-04-30,Midwest,Postpaid,Hotspot,847220,6877.89,53.83,1018273.77
-2024-02-23,Southeast,Family Plan,Hotspot,685193,9604.96,32.36,3517714.85
-2024-12-06,Southeast,Prepaid,Smartwatch,313912,38103.98,116.78,295359.04
-2025-06-08,Southwest,Family Plan,Hotspot,458843,47041.35,80.31,3191907.05
-2024-02-19,West Coast,IoT Connectivity,Smartwatch,150377,31202.68,156.09,1917816.89
-2024-05-14,Pacific Northwest,Prepaid,Fixed Wireless Router,135792,44782.55,179.4,1015550.23
-2024-10-21,Southeast,Family Plan,Fixed Wireless Router,203174,22816.53,14.82,718035.15
-2024-09-20,Mountain West,Postpaid,Hotspot,376305,26767.78,52.16,1332802.14
-2024-01-15,Pacific Northwest,IoT Connectivity,Hotspot,281489,39742.08,52.61,424569.82
-2024-04-19,West Coast,Postpaid,Feature Phone,797902,35803.28,163.47,2624796.39
-2025-01-17,West Coast,Family Plan,Smartwatch,347717,13912.13,66.34,961726.08
-2024-06-15,West Coast,Prepaid,Hotspot,166474,9437.83,126.33,1872779.29
-2024-10-29,Mountain West,Prepaid,Tablet,128966,8252.66,72.4,88643.25
-2025-02-15,Midwest,IoT Connectivity,Smartphone,325354,5007.31,42.58,2542043.91
-2025-01-06,Midwest,Family Plan,Smartphone,254548,22764.59,128.58,2093940.14
-2024-11-20,Southwest,Business Unlimited,Smartphone,463468,2178.04,51.01,1974195.17
-2025-05-24,Mountain West,Prepaid,Tablet,597671,46457.53,153.05,1271030.92
-2024-01-30,Southeast,IoT Connectivity,Hotspot,84505,22600.54,43.16,851369.58
-2024-11-21,Northeast,Family Plan,Fixed Wireless Router,576431,4789.86,67.13,3678954.59
-2024-06-06,Pacific Northwest,IoT Connectivity,Hotspot,463635,38098.18,23.86,3592912.95
-2024-05-19,Pacific Northwest,IoT Connectivity,Tablet,718974,38248.13,22.14,1741031.27
-2024-09-27,West Coast,IoT Connectivity,Feature Phone,333418,26698.63,97.29,1750910.41
-2024-08-26,Pacific Northwest,Postpaid,Smartphone,417865,7107.1,24.12,2517253.15
-2024-03-04,Pacific Northwest,Business Unlimited,Smartphone,673522,11590.46,138.85,1442237.03
-2024-11-01,West Coast,Prepaid,Fixed Wireless Router,118120,2928.6,153.68,397043.74
-2024-01-20,Pacific Northwest,IoT Connectivity,Smartphone,47075,27705.35,144.63,2066440.96
-2024-05-05,Pacific Northwest,Family Plan,Hotspot,841272,3250.16,16.61,562960.83
-2024-08-28,Northeast,Postpaid,Feature Phone,347995,31748.31,22.1,2412082.38
-2024-01-21,Southeast,Business Unlimited,Fixed Wireless Router,354072,36763.33,178.52,3863716.94
-2025-04-06,West Coast,Business Unlimited,Smartphone,11959,45652.8,146.29,990676.03
-2024-08-23,Mountain West,IoT Connectivity,Fixed Wireless Router,179396,24292.4,148.44,548453.16
-2025-01-08,Southwest,Family Plan,Fixed Wireless Router,660330,17949.48,120.97,1060607.64
-2024-12-30,Northeast,Family Plan,Tablet,660791,16430.57,82.33,3126809.01
-2024-03-14,West Coast,Postpaid,Hotspot,525919,1658.82,66.54,2212327.86
-2024-10-16,Pacific Northwest,Postpaid,Smartphone,76405,33826.26,155.28,3833637.81
-2024-09-16,Mountain West,IoT Connectivity,Smartwatch,841580,7802.7,161.02,3032777.3
-2024-04-28,Midwest,Postpaid,Tablet,339742,8167.34,145.22,3091993.18
-2025-02-14,West Coast,Family Plan,Smartwatch,582469,44577.08,44.32,443859.04
-2025-02-11,Midwest,Business Unlimited,Smartphone,385865,23686.64,124.65,3074886.51
-2024-11-22,Mountain West,Business Unlimited,Smartwatch,497474,46259.37,125.67,754698.76
-2025-03-17,West Coast,Family Plan,Smartwatch,441706,47497.86,41.98,1547491.74
-2025-05-11,Southeast,Family Plan,Smartwatch,626172,32155.15,16.17,1955799.36
-2025-02-22,West Coast,Business Unlimited,Hotspot,464469,44154.86,85.19,3698292.51
-2024-09-07,Mountain West,IoT Connectivity,Smartwatch,32540,32764.02,136.84,3587844.24
-2025-02-12,Southwest,Business Unlimited,Fixed Wireless Router,831405,12226.22,80.23,2159011.33
-2025-05-27,Southeast,Prepaid,Tablet,462456,36583.84,125.64,726566.86
-2024-03-21,Southeast,IoT Connectivity,Fixed Wireless Router,713009,20766.26,115.74,152621.51
-2024-07-18,Mountain West,Prepaid,Feature Phone,13270,7675.67,64.13,2022568.04
-2025-01-10,Southwest,Family Plan,Feature Phone,786567,5306.5,99.49,1833261.69
-2024-11-08,Mountain West,Family Plan,Smartphone,25545,38512.07,11.02,3564864.65
-2024-03-06,Midwest,IoT Connectivity,Hotspot,389061,35497.38,51.6,490023.87
-2025-05-31,West Coast,Prepaid,Feature Phone,103271,10446.18,27.08,3328245.55
-2024-12-08,Southwest,Family Plan,Smartwatch,169753,12378.91,133.78,424708.73
-2024-07-15,Southeast,Prepaid,Feature Phone,34344,4954.86,50.99,1224551.87
-2024-03-29,Midwest,Postpaid,Hotspot,629968,13307.22,147.04,2515069.78
-2024-05-23,West Coast,IoT Connectivity,Hotspot,259249,37136.86,135.99,3552375.05
-2025-01-17,Northeast,IoT Connectivity,Feature Phone,178549,31736.41,76.49,3030374.62
-2025-06-22,Mountain West,Postpaid,Smartphone,299731,22984.9,60.87,2613776.43
-2024-08-16,Pacific Northwest,IoT Connectivity,Feature Phone,337194,19833.55,52.11,2198653.11
-2024-12-02,Mountain West,Family Plan,Tablet,111704,38110.88,88.02,600299.73
-2024-07-30,West Coast,Family Plan,Smartwatch,172875,25877.88,59.25,654572.68
-2024-07-07,Midwest,Postpaid,Smartwatch,741614,42665.85,173.81,3126578.62
-2025-01-25,Southeast,Business Unlimited,Tablet,29183,27204.87,95.48,1119082.48
-2025-03-21,Mountain West,Business Unlimited,Tablet,807205,15235.19,170.22,3337467.58
-2025-03-11,Mountain West,Business Unlimited,Feature Phone,388463,7899.47,103.19,49309.78
-2024-02-15,Southwest,Business Unlimited,Smartphone,649920,47370.78,33.84,823898.06
-2024-03-03,Pacific Northwest,Prepaid,Feature Phone,279139,36192.32,120.5,2191691.2
-2024-05-31,Southwest,Prepaid,Hotspot,827828,26441.54,33.25,2893449.81
-2025-01-30,Southwest,IoT Connectivity,Fixed Wireless Router,289964,25207.23,63.65,252161.45
-2025-02-25,West Coast,Prepaid,Feature Phone,318195,24732.58,95.48,2149459.81
-2024-06-24,West Coast,Prepaid,Smartwatch,765456,1946.24,142.19,577780.97
-2024-04-14,Pacific Northwest,Postpaid,Smartwatch,844453,3789.1,152.75,545417.81
-2024-01-18,Northeast,Family Plan,Smartphone,258854,25330.77,86.08,2057300.37
-2024-01-02,Mountain West,IoT Connectivity,Smartphone,843157,23158.22,34.4,600807.18
-2025-05-27,West Coast,Family Plan,Hotspot,60388,14437.31,60.94,2234321.77
-2024-05-06,Mountain West,Business Unlimited,Fixed Wireless Router,284253,36171.11,171.18,1129280.14
-2025-05-24,Pacific Northwest,IoT Connectivity,Smartwatch,368743,36811.26,132.63,3185580.25
-2024-12-23,West Coast,Prepaid,Feature Phone,751747,11191.4,20.33,2191963.38
-2024-09-28,Southeast,Family Plan,Fixed Wireless Router,171538,15866.35,113.2,1456069.01
-2024-06-04,Southeast,Prepaid,Hotspot,335465,13242.47,82.48,1682213.82
-2024-01-01,Pacific Northwest,IoT Connectivity,Feature Phone,445626,7723.13,67.5,1509897.71
-2024-06-14,Midwest,Postpaid,Fixed Wireless Router,736824,14066.51,49.04,2674260.39
-2024-06-15,Pacific Northwest,Family Plan,Fixed Wireless Router,695328,39127.31,22.19,2869289.13
-2025-02-03,Northeast,IoT Connectivity,Fixed Wireless Router,191072,1558.13,72.4,3401525.59
-2024-05-29,Southwest,Family Plan,Hotspot,747614,26146.46,164.77,3834026.79
-2024-12-21,Pacific Northwest,IoT Connectivity,Fixed Wireless Router,535763,5147.6,34.31,2379175.91
-2024-08-21,Northeast,IoT Connectivity,Fixed Wireless Router,670271,43587.32,27.92,3293129.04
-2025-06-05,Northeast,IoT Connectivity,Smartphone,80202,8743.48,129.91,1158450.11
-2024-03-27,Southwest,Prepaid,Feature Phone,622427,15049.29,171.21,712194.81
-2024-08-22,Southeast,Family Plan,Hotspot,126123,2594.82,161.62,2655328.01
-2025-04-03,Mountain West,IoT Connectivity,Feature Phone,414589,29527.56,12.49,2008622.93
-2024-07-20,Mountain West,Family Plan,Feature Phone,834413,31204.73,70.43,157809.03
-2024-07-19,Southeast,Family Plan,Hotspot,26508,42850.32,34.56,2416521.75
-2025-03-29,Mountain West,Postpaid,Smartwatch,621133,45989.69,161.21,2620889.62
-2024-06-12,Northeast,Family Plan,Hotspot,468396,10987.05,87.51,775740.35
-2024-11-21,Midwest,Prepaid,Smartphone,827970,33789.24,69.65,1274224.5
-2024-09-25,Southeast,Prepaid,Smartphone,356070,12070.25,83.96,2841765.15
-2024-05-29,Southwest,Prepaid,Tablet,734033,19433.7,98.78,3621922.41
-2024-06-30,Pacific Northwest,Business Unlimited,Hotspot,845879,18391.2,34.95,3590203.29
-2024-11-13,Midwest,Postpaid,Smartphone,273170,13703.99,176.14,2132011.07
-2024-03-27,Northeast,Family Plan,Smartwatch,406580,41284.92,59.02,3489405.81
-2024-08-22,Pacific Northwest,Business Unlimited,Hotspot,234004,24832.58,55.73,133189.78
-2025-05-02,Southeast,Prepaid,Feature Phone,271907,1655.45,165.09,3750343.66
-2024-12-30,West Coast,Prepaid,Smartwatch,825814,34942.85,139.37,338546.01
-2025-05-29,Pacific Northwest,Postpaid,Smartwatch,640456,40221.63,75.71,3482164.41
-2025-01-26,Southeast,Family Plan,Smartwatch,598292,30037.18,27.36,3675943.02
-2024-11-13,Mountain West,Business Unlimited,Hotspot,106537,6189.11,61.3,978722.63
-2024-08-31,Southeast,Business Unlimited,Hotspot,679545,2460.01,122.36,1910832.32
-2024-02-24,Midwest,Postpaid,Hotspot,467749,37003.65,174.28,3803467.37
-2024-03-20,Southwest,Prepaid,Tablet,121152,9405.89,92.54,3666988.98
-2025-01-25,Midwest,Postpaid,Fixed Wireless Router,264431,46093.17,52.12,3433412.07
-2024-01-25,Northeast,Business Unlimited,Smartwatch,131554,17718.47,29.36,489639.52
-2025-04-05,Pacific Northwest,Family Plan,Hotspot,740888,16481.63,88.23,3522640.08
-2024-08-11,West Coast,Postpaid,Fixed Wireless Router,655117,24025.43,98.15,1971060.57
-2024-06-09,Southeast,Family Plan,Feature Phone,272104,38456.62,59.23,2079378.19
-2024-05-13,West Coast,Postpaid,Fixed Wireless Router,385595,30661.9,155.85,1119913.46
-2024-07-26,Southeast,Postpaid,Smartwatch,178084,21459.76,108.26,1047138.6
-2024-11-08,West Coast,IoT Connectivity,Smartphone,113253,36051.44,54.91,1946070.19
-2024-03-23,West Coast,Family Plan,Fixed Wireless Router,633175,2232.73,29.5,2981491.42
-2025-01-28,Southeast,IoT Connectivity,Hotspot,12784,28658.54,52.97,3838222.23
-2024-08-09,Mountain West,Postpaid,Hotspot,352893,1501.91,55.76,754050.69
-2025-01-24,Northeast,Family Plan,Fixed Wireless Router,785775,14839.71,122.94,696610.49
-2025-04-13,Northeast,Prepaid,Smartwatch,235525,25636.19,75.57,3314350.34
-2024-01-21,Pacific Northwest,Postpaid,Fixed Wireless Router,319565,7448.68,138.32,3020122.85
-2024-09-15,Southwest,Family Plan,Fixed Wireless Router,766876,4320.9,91.21,3284677.68
-2024-05-29,Southeast,Prepaid,Smartphone,382965,33459.37,140.22,2480301.91
-2024-02-23,Midwest,Business Unlimited,Hotspot,612113,23411.89,115.12,2680482.95
-2024-10-02,West Coast,Postpaid,Tablet,435764,546.84,167.88,1925364.12
-2025-02-11,West Coast,Family Plan,Tablet,537745,27066.2,89.43,2623050.26
-2024-08-27,Midwest,Prepaid,Smartwatch,650486,1747.45,80.43,187551.86
-2024-09-23,Midwest,Business Unlimited,Smartwatch,755519,4845.67,173.4,1503517.49
-2025-03-30,Pacific Northwest,Business Unlimited,Feature Phone,531207,8997.34,157.95,2791393.55
-2024-01-26,West Coast,Prepaid,Smartphone,720883,5958.3,128.04,1632010.41
-2024-06-28,Southeast,Family Plan,Fixed Wireless Router,278506,25767.25,170.75,3100834.62
-2025-06-02,Northeast,Prepaid,Hotspot,565677,18290.07,123.14,3141353.82
-2025-05-17,Pacific Northwest,IoT Connectivity,Feature Phone,483411,6829.42,90.6,499993.42
-2025-05-22,Northeast,Business Unlimited,Tablet,267585,36240.28,13.49,3478678.91
-2024-11-04,Northeast,Family Plan,Smartwatch,294565,42536.27,26.75,293324.9
-2024-03-11,Northeast,Postpaid,Smartwatch,651218,3097.33,12.36,1413799.45
-2024-12-21,Southwest,IoT Connectivity,Feature Phone,686551,3402.45,161.61,444625.42
-2024-10-30,Southeast,Prepaid,Smartphone,819883,43722.58,124.5,1989087.89
-2024-02-01,Southeast,Family Plan,Feature Phone,294944,46455.43,53.53,3789683.68
-2024-05-31,Midwest,Prepaid,Feature Phone,529276,26754.48,111.73,789138.17
-2024-05-29,Pacific Northwest,Postpaid,Feature Phone,654276,44890.42,139.5,39809.17
-2024-11-09,Northeast,Family Plan,Smartphone,247605,20304.7,68.6,3124510.2
-2024-11-15,Southeast,IoT Connectivity,Smartwatch,195826,45518.21,26.01,3811080.08
-2024-09-05,Southeast,Postpaid,Smartphone,429777,30108.46,62.51,3151660.98
-2025-01-27,Northeast,Postpaid,Smartwatch,831714,8023.92,162.28,2920016.91
-2025-02-01,Northeast,IoT Connectivity,Tablet,529196,338.95,175.44,809962.84
-2024-07-13,Southeast,Prepaid,Fixed Wireless Router,311690,25384.35,60.59,3448697.05
-2024-02-23,Midwest,Family Plan,Tablet,752826,8604.66,173.97,1001107.02
-2024-09-28,Southwest,Prepaid,Smartphone,839020,19023.17,30.88,1965838.52
-2025-01-31,Northeast,IoT Connectivity,Hotspot,665693,38303.86,8.1,2093313.07
-2024-01-06,Southeast,Family Plan,Smartphone,792372,41548.3,165.29,47515.15
-2025-02-13,Northeast,Prepaid,Feature Phone,827650,34200.79,171.57,3148053.32
-2024-08-09,Southeast,Postpaid,Fixed Wireless Router,685109,21965.08,68.93,683679.81
-2024-05-28,Southeast,IoT Connectivity,Smartphone,689643,26158.35,137.83,2968059.63
-2024-01-19,Mountain West,Family Plan,Fixed Wireless Router,298593,16858.62,117.7,2047489.53
-2024-12-04,Mountain West,Business Unlimited,Smartphone,335163,34715.49,10.74,1748944.2
-2024-11-12,Midwest,IoT Connectivity,Smartphone,327023,10275.56,60.99,1354206.42
-2024-02-24,Southwest,Prepaid,Hotspot,284528,2677.17,136.23,3583743.99
-2024-01-09,Southeast,IoT Connectivity,Feature Phone,705383,26824.8,89.3,3811112.13
-2024-01-14,Southwest,IoT Connectivity,Hotspot,560327,46704.0,11.25,647991.36
-2024-01-23,Mountain West,Postpaid,Smartphone,709397,28667.77,85.68,210480.62
-2024-03-15,West Coast,IoT Connectivity,Tablet,740689,6411.03,72.4,202392.06
-2024-03-26,Midwest,Postpaid,Fixed Wireless Router,362857,25927.5,167.9,3568531.35
-2025-01-22,West Coast,Family Plan,Hotspot,500516,30785.87,45.31,3766842.67
-2024-01-04,Northeast,IoT Connectivity,Tablet,409791,43764.83,109.04,379866.4
-2024-11-26,Northeast,IoT Connectivity,Hotspot,463878,41723.21,96.51,1985168.06
-2024-11-02,Mountain West,Prepaid,Hotspot,274960,38343.27,170.44,2314480.76
-2024-12-02,Pacific Northwest,Business Unlimited,Feature Phone,104804,11329.1,161.43,1745625.75
-2024-07-14,West Coast,IoT Connectivity,Smartwatch,450493,1244.52,128.27,1199541.25
-2025-03-04,Pacific Northwest,Business Unlimited,Smartwatch,367774,35438.26,152.83,3522723.24
-2024-06-05,Northeast,Prepaid,Smartwatch,394017,11909.23,41.19,1918820.28
-2025-02-08,West Coast,Prepaid,Smartwatch,92148,38420.65,94.69,2016470.97
-2024-06-03,Southeast,Family Plan,Hotspot,38662,28112.36,88.49,1996365.43
-2024-03-03,Northeast,Business Unlimited,Smartwatch,488603,15448.9,98.8,315526.29
-2024-10-02,Northeast,Family Plan,Smartphone,376674,6561.03,48.12,2851922.79
-2025-05-25,Northeast,Family Plan,Smartphone,450232,12733.69,151.5,496191.85
-2024-06-22,Mountain West,Family Plan,Fixed Wireless Router,215743,31096.81,26.76,2953305.11
-2024-03-22,Southwest,Business Unlimited,Hotspot,48317,38785.32,149.98,2170863.39
-2024-12-03,West Coast,Prepaid,Fixed Wireless Router,818945,40771.29,129.05,64659.96
+ridership_service_date,ridership_route_name,ridership_vehicle_type,ridership_fare_type,ridership_boardings_count,ridership_fare_revenue,ridership_avg_wait_minutes,ridership_on_time_pct
+2024-02-01,Route 14 Bus,Light Rail,Senior,23690,170614.16,4.41,55.17
+2024-08-22,Green Line,Light Rail,Student,92031,121812.96,27.91,77.75
+2024-01-22,Green Line,Light Rail,Adult,85017,157530.29,16.65,96.86
+2024-04-24,Route 14 Bus,Heavy Rail,Senior,93916,73486.53,16.63,64.26
+2024-12-16,Orange Line,Heavy Rail,Disabled,54606,80909.28,6.7,83.85
+2025-05-07,Route 14 Bus,Bus,Senior,75729,185314.68,9.4,59.77
+2024-08-09,Red Line,Commuter Rail,Monthly Pass,60670,29519.32,25.09,70.15
+2024-11-25,Route 14 Bus,Commuter Rail,Monthly Pass,1777,213427.77,26.9,76.98
+2024-04-06,Route 47 Bus,Light Rail,Adult,79615,5174.24,25.7,57.54
+2024-08-28,Red Line,Commuter Rail,Senior,8924,232116.24,12.16,81.75
+2024-09-22,Route 14 Bus,Heavy Rail,Child,10131,177511.94,4.75,61.42
+2024-09-28,Orange Line,Commuter Rail,Monthly Pass,50850,25018.09,9.5,58.62
+2024-05-07,Route 22 Bus,Streetcar,Student,9777,116730.48,5.26,65.31
+2024-09-08,Red Line,Light Rail,Child,67202,10235.27,16.14,55.69
+2025-03-18,Route 22 Bus,Bus,Disabled,12068,71071.48,22.92,70.26
+2024-02-22,Blue Line,Light Rail,Monthly Pass,57220,174501.01,10.64,63.06
+2024-10-30,Route 22 Bus,Bus,Senior,86684,129186.9,28.46,95.47
+2024-05-30,Route 14 Bus,Light Rail,Monthly Pass,46963,176793.27,13.31,67.66
+2025-05-18,Orange Line,Bus,Student,28569,148927.36,10.0,79.14
+2024-01-25,Route 14 Bus,Bus,Child,62438,51657.6,24.07,56.24
+2024-02-16,Orange Line,Bus,Child,59285,43013.34,15.64,72.76
+2025-05-09,Orange Line,Bus,Monthly Pass,9998,35947.45,6.11,75.89
+2024-05-03,Route 22 Bus,Bus,Senior,52296,236787.56,18.06,59.97
+2025-01-22,Green Line,Commuter Rail,Disabled,28779,229288.36,16.81,62.78
+2024-01-03,Route 22 Bus,Bus,Monthly Pass,34885,14619.54,10.04,87.48
+2024-08-08,Blue Line,Heavy Rail,Student,16963,108642.46,27.87,58.2
+2024-03-05,Route 14 Bus,Commuter Rail,Monthly Pass,53763,175483.87,26.19,81.69
+2025-06-18,Route 47 Bus,Streetcar,Monthly Pass,70652,41305.32,11.22,73.31
+2025-01-08,Route 14 Bus,Bus,Adult,957,96602.34,20.37,68.81
+2024-06-27,Green Line,Commuter Rail,Adult,82228,121566.6,21.55,99.75
+2024-11-29,Route 22 Bus,Commuter Rail,Child,85184,162402.31,26.08,93.27
+2025-01-10,Green Line,Streetcar,Senior,23525,149690.17,14.43,96.29
+2024-08-14,Route 47 Bus,Light Rail,Adult,15338,124693.67,26.78,82.87
+2025-02-16,Route 22 Bus,Bus,Adult,27764,132790.51,21.14,85.83
+2025-01-20,Blue Line,Light Rail,Monthly Pass,58085,132984.42,22.99,90.67
+2024-04-21,Route 14 Bus,Light Rail,Student,84495,94343.36,8.86,56.13
+2024-06-19,Route 14 Bus,Light Rail,Monthly Pass,28364,157398.05,25.9,58.64
+2024-08-31,Red Line,Commuter Rail,Child,65295,65332.59,6.49,84.73
+2025-02-10,Blue Line,Bus,Disabled,44712,119122.24,16.5,90.06
+2024-04-17,Green Line,Light Rail,Adult,31297,117760.92,16.75,70.94
+2024-08-04,Route 14 Bus,Streetcar,Monthly Pass,17775,28191.24,17.21,81.39
+2024-08-04,Blue Line,Bus,Adult,67900,90353.84,23.85,80.84
+2024-01-27,Route 47 Bus,Bus,Student,17483,184277.11,4.34,70.23
+2024-08-18,Red Line,Streetcar,Monthly Pass,86620,120316.08,13.96,73.72
+2024-01-07,Route 47 Bus,Streetcar,Adult,85889,245430.53,17.3,98.49
+2024-04-14,Red Line,Commuter Rail,Adult,12667,28442.18,20.31,56.96
+2025-04-23,Red Line,Bus,Child,62726,92589.76,17.6,97.73
+2025-04-21,Route 47 Bus,Bus,Student,41818,165937.68,25.18,90.48
+2025-04-17,Blue Line,Commuter Rail,Senior,57938,70135.84,16.35,61.99
+2025-05-06,Blue Line,Heavy Rail,Child,47593,189666.69,15.63,79.43
+2025-03-10,Route 22 Bus,Commuter Rail,Adult,42047,72053.67,10.67,73.78
+2024-01-23,Route 47 Bus,Light Rail,Senior,79576,61788.53,28.25,99.13
+2025-03-26,Red Line,Streetcar,Adult,49440,98038.09,4.42,76.73
+2025-06-13,Route 14 Bus,Heavy Rail,Child,21967,176572.03,25.31,58.61
+2024-09-28,Red Line,Streetcar,Child,1574,203815.98,9.96,90.94
+2024-01-18,Route 14 Bus,Commuter Rail,Monthly Pass,50083,108834.05,26.02,76.05
+2025-05-24,Route 14 Bus,Light Rail,Adult,31238,146940.9,18.56,86.49
+2025-05-10,Route 14 Bus,Heavy Rail,Student,87512,152618.74,5.19,90.04
+2024-02-23,Route 47 Bus,Light Rail,Senior,34562,42731.98,2.36,80.19
+2024-04-26,Red Line,Heavy Rail,Student,63576,109150.46,18.98,92.33
+2025-01-24,Green Line,Light Rail,Adult,35551,113578.38,9.87,87.91
+2025-02-11,Green Line,Light Rail,Student,31788,138660.25,14.64,65.43
+2025-05-18,Route 22 Bus,Light Rail,Student,17737,120533.16,24.54,99.56
+2024-03-01,Route 47 Bus,Streetcar,Senior,43948,140831.34,10.98,78.21
+2024-12-09,Route 47 Bus,Commuter Rail,Child,12506,57207.29,4.53,63.24
+2025-05-13,Route 14 Bus,Streetcar,Student,50030,12102.67,29.55,91.59
+2024-04-06,Green Line,Streetcar,Senior,16142,228671.73,23.89,84.36
+2024-06-01,Route 22 Bus,Heavy Rail,Monthly Pass,304,57029.88,24.52,80.32
+2024-06-16,Green Line,Bus,Disabled,27356,214990.82,16.19,94.19
+2024-05-27,Orange Line,Heavy Rail,Monthly Pass,85160,103211.81,26.48,79.89
+2025-02-09,Route 47 Bus,Light Rail,Child,12357,79092.31,2.5,59.14
+2024-06-26,Blue Line,Streetcar,Child,34949,60802.89,25.38,63.9
+2025-03-26,Red Line,Light Rail,Disabled,28527,15849.36,23.66,93.46
+2025-06-05,Route 22 Bus,Commuter Rail,Student,63452,106715.07,5.35,93.51
+2024-09-24,Route 14 Bus,Bus,Senior,21225,188210.27,5.11,67.58
+2024-03-31,Route 22 Bus,Heavy Rail,Senior,22183,26489.3,24.33,84.31
+2024-10-05,Orange Line,Commuter Rail,Student,23962,160109.78,21.72,57.29
+2024-03-06,Red Line,Commuter Rail,Adult,55602,189659.61,13.31,96.79
+2025-06-15,Red Line,Heavy Rail,Senior,57198,14625.63,20.52,62.92
+2024-06-15,Route 47 Bus,Heavy Rail,Student,39956,162769.24,17.75,83.96
+2025-01-03,Blue Line,Bus,Child,88741,84778.56,11.07,55.51
+2024-03-07,Route 14 Bus,Light Rail,Adult,47686,116281.47,16.13,92.67
+2024-05-12,Route 14 Bus,Bus,Student,64681,221724.34,11.39,76.68
+2025-02-15,Green Line,Light Rail,Disabled,66993,131310.18,24.09,98.38
+2025-01-26,Route 22 Bus,Commuter Rail,Monthly Pass,42725,220004.18,27.11,89.2
+2025-05-20,Route 14 Bus,Streetcar,Senior,82357,143183.85,24.9,70.9
+2024-07-04,Red Line,Commuter Rail,Adult,9351,31544.37,27.16,72.62
+2025-02-17,Route 14 Bus,Heavy Rail,Adult,40807,242935.61,9.63,71.63
+2025-04-27,Route 47 Bus,Heavy Rail,Adult,64923,148801.57,18.32,56.51
+2025-05-21,Green Line,Streetcar,Senior,70984,168117.0,28.21,93.0
+2025-02-11,Route 22 Bus,Light Rail,Student,15856,193662.28,7.6,72.03
+2024-03-17,Route 47 Bus,Streetcar,Monthly Pass,34086,210556.09,20.4,57.61
+2024-06-09,Green Line,Bus,Monthly Pass,37914,241949.07,29.03,61.19
+2024-06-05,Route 14 Bus,Heavy Rail,Disabled,80645,159624.75,17.16,97.83
+2024-04-02,Route 14 Bus,Light Rail,Child,474,151043.11,21.53,85.33
+2024-05-16,Red Line,Streetcar,Adult,79654,195839.31,12.35,77.56
+2024-11-03,Green Line,Heavy Rail,Monthly Pass,78351,143767.22,18.91,74.6
+2025-02-16,Route 47 Bus,Bus,Student,93635,178288.61,17.24,90.51
+2025-03-01,Blue Line,Commuter Rail,Senior,19034,116467.65,9.09,73.09
+2024-06-08,Route 22 Bus,Bus,Student,72295,240973.84,26.76,94.96
+2024-07-24,Route 22 Bus,Light Rail,Adult,69686,154801.6,20.24,95.49
+2024-03-18,Route 14 Bus,Streetcar,Senior,43456,44883.7,23.74,97.8
+2024-11-12,Route 14 Bus,Light Rail,Child,59931,97786.69,1.71,87.3
+2024-01-11,Green Line,Light Rail,Monthly Pass,40198,5801.12,4.69,80.25
+2024-07-15,Route 14 Bus,Streetcar,Student,73021,189723.99,9.03,74.64
+2024-02-17,Route 47 Bus,Light Rail,Student,89441,78866.23,6.91,76.8
+2024-02-14,Route 47 Bus,Streetcar,Disabled,45300,144145.45,19.52,98.7
+2025-02-04,Blue Line,Bus,Monthly Pass,48734,9508.68,8.22,80.35
+2024-08-31,Red Line,Heavy Rail,Adult,60509,55518.96,11.97,68.83
+2025-01-24,Route 22 Bus,Heavy Rail,Disabled,5401,86779.14,25.92,70.22
+2025-04-14,Red Line,Heavy Rail,Senior,52859,233908.36,17.42,67.84
+2024-03-28,Red Line,Streetcar,Child,3204,8165.8,17.8,60.42
+2024-02-27,Red Line,Commuter Rail,Child,57753,234337.69,14.42,72.69
+2025-06-19,Red Line,Light Rail,Senior,43274,80169.01,15.4,79.68
+2025-04-12,Orange Line,Streetcar,Student,9164,10100.51,16.37,55.61
+2025-04-27,Blue Line,Commuter Rail,Child,69535,87189.08,4.72,98.14
+2024-02-29,Red Line,Commuter Rail,Student,27568,160543.08,5.26,75.91
+2025-02-02,Route 14 Bus,Heavy Rail,Student,42588,23324.09,6.08,64.56
+2024-11-07,Orange Line,Streetcar,Adult,26613,15159.44,29.83,64.93
+2024-07-15,Route 47 Bus,Bus,Disabled,61572,49089.84,27.82,62.15
+2024-04-04,Orange Line,Heavy Rail,Monthly Pass,29299,135616.83,3.9,59.48
+2024-10-19,Route 14 Bus,Streetcar,Child,89566,1317.28,14.66,56.06
+2024-04-05,Route 47 Bus,Bus,Adult,41441,64156.26,25.53,97.02
+2024-05-19,Route 22 Bus,Bus,Monthly Pass,84728,248571.04,4.32,57.16
+2025-02-06,Green Line,Streetcar,Student,56075,106329.97,24.12,59.5
+2025-05-22,Blue Line,Commuter Rail,Disabled,16129,65571.58,23.15,71.36
+2025-03-29,Orange Line,Light Rail,Monthly Pass,21514,211700.21,15.33,67.59
+2024-06-12,Route 47 Bus,Light Rail,Disabled,46650,177324.02,19.74,83.85
+2024-04-24,Orange Line,Commuter Rail,Disabled,58450,67053.65,14.28,69.19
+2024-11-24,Route 14 Bus,Streetcar,Monthly Pass,16191,196119.15,19.95,70.76
+2024-10-08,Orange Line,Bus,Adult,15327,125931.0,13.71,89.58
+2024-06-29,Blue Line,Heavy Rail,Adult,39458,403.91,12.88,74.61
+2024-10-08,Route 47 Bus,Streetcar,Monthly Pass,37718,51532.49,5.68,95.08
+2024-05-19,Red Line,Commuter Rail,Senior,65657,82933.09,16.05,61.06
+2024-12-19,Route 47 Bus,Light Rail,Child,79518,42387.01,8.72,91.45
+2024-01-29,Route 47 Bus,Streetcar,Child,8813,226342.61,18.4,99.91
+2024-04-14,Orange Line,Bus,Monthly Pass,68726,71537.52,14.05,66.07
+2024-04-20,Red Line,Light Rail,Child,17737,235863.75,24.15,80.98
+2025-01-14,Green Line,Bus,Adult,12452,201285.45,17.12,69.26
+2024-07-14,Green Line,Bus,Monthly Pass,25281,7631.15,27.27,90.06
+2024-05-02,Route 14 Bus,Bus,Student,86876,126906.48,9.08,71.77
+2024-12-22,Red Line,Light Rail,Adult,27203,240933.38,7.03,95.29
+2025-06-07,Orange Line,Heavy Rail,Student,55077,91953.2,26.6,76.46
+2024-01-11,Blue Line,Heavy Rail,Monthly Pass,14289,173442.28,29.8,73.07
+2024-09-09,Blue Line,Bus,Senior,12209,88605.94,14.71,79.52
+2025-03-21,Route 22 Bus,Heavy Rail,Adult,78847,100224.9,6.87,91.43
+2024-03-06,Red Line,Heavy Rail,Student,81671,126610.49,21.41,99.81
+2024-08-29,Red Line,Commuter Rail,Monthly Pass,66286,29534.22,12.31,74.71
+2025-01-24,Green Line,Light Rail,Adult,19867,204699.62,27.71,79.7
+2025-06-21,Route 14 Bus,Light Rail,Child,38373,199936.01,17.08,92.08
+2025-01-23,Route 14 Bus,Streetcar,Student,93054,79832.84,8.22,85.97
+2024-10-09,Blue Line,Heavy Rail,Monthly Pass,57295,4119.23,3.15,90.23
+2025-04-12,Blue Line,Heavy Rail,Senior,66870,187588.72,7.16,94.31
+2024-06-10,Red Line,Light Rail,Student,77184,114640.46,28.91,96.39
+2025-01-21,Green Line,Commuter Rail,Disabled,67108,6454.98,24.49,81.26
+2025-02-16,Red Line,Heavy Rail,Child,83771,13127.55,15.15,59.47
+2025-04-08,Route 14 Bus,Light Rail,Monthly Pass,38297,28093.48,6.0,62.61
+2024-01-10,Route 22 Bus,Streetcar,Adult,16057,83732.38,6.11,82.33
+2025-06-09,Red Line,Commuter Rail,Disabled,92038,197669.98,17.5,82.57
+2024-02-15,Route 14 Bus,Streetcar,Monthly Pass,23840,84289.81,12.36,59.81
+2025-03-12,Blue Line,Heavy Rail,Child,19509,3765.37,26.29,74.01
+2024-02-26,Orange Line,Streetcar,Disabled,42909,100281.92,7.24,82.11
+2024-07-25,Green Line,Heavy Rail,Child,5213,119195.22,13.36,95.45
+2024-01-09,Route 22 Bus,Light Rail,Student,11900,212228.6,17.53,84.71
+2024-11-03,Route 14 Bus,Streetcar,Student,84785,4201.08,3.17,83.17
+2025-04-11,Route 22 Bus,Light Rail,Senior,88180,173522.03,6.86,99.37
+2024-07-22,Green Line,Heavy Rail,Monthly Pass,25184,211463.95,10.7,67.34
+2024-05-14,Green Line,Bus,Disabled,36687,180515.81,24.4,87.47
+2025-05-06,Red Line,Light Rail,Adult,42019,21825.78,1.52,67.47
+2025-01-20,Route 22 Bus,Commuter Rail,Monthly Pass,84704,155636.19,5.56,91.57
+2025-04-03,Route 14 Bus,Bus,Disabled,91327,203189.13,4.9,56.03
+2024-01-10,Orange Line,Commuter Rail,Monthly Pass,67637,15043.3,11.6,68.64
+2025-02-01,Route 22 Bus,Bus,Student,50541,187259.37,22.12,79.66
+2024-04-22,Route 47 Bus,Commuter Rail,Senior,7538,96449.54,9.99,98.54
+2024-08-20,Red Line,Light Rail,Senior,16680,67615.83,27.1,69.2
+2024-10-18,Green Line,Commuter Rail,Student,33497,84329.02,28.39,99.12
+2024-02-01,Red Line,Commuter Rail,Student,54477,208307.71,22.34,78.72
+2024-12-21,Green Line,Bus,Disabled,90395,125055.64,19.64,61.18
+2024-01-10,Red Line,Streetcar,Adult,83747,79609.95,27.14,69.37
+2024-02-25,Route 47 Bus,Commuter Rail,Student,24728,11962.99,25.26,96.19
+2024-05-22,Red Line,Streetcar,Disabled,46278,61872.34,4.64,93.32
+2024-03-22,Route 47 Bus,Bus,Disabled,56187,147417.85,5.71,86.79
+2025-03-30,Route 14 Bus,Heavy Rail,Student,5817,130631.01,6.58,93.6
+2024-07-14,Route 47 Bus,Bus,Monthly Pass,79646,3946.09,13.98,60.53
+2025-01-04,Blue Line,Light Rail,Child,19985,8987.59,23.65,76.49
+2024-11-20,Green Line,Light Rail,Monthly Pass,72735,7745.32,14.52,76.72
+2024-10-15,Route 47 Bus,Heavy Rail,Disabled,72103,243308.75,7.94,76.74
+2024-07-23,Route 47 Bus,Streetcar,Student,28806,213380.72,21.48,72.85
+2024-02-12,Orange Line,Light Rail,Senior,14337,21801.04,27.66,79.41
+2024-01-17,Orange Line,Light Rail,Senior,17368,76230.06,7.61,80.45
+2024-02-17,Route 47 Bus,Light Rail,Adult,7857,178666.1,11.15,88.56
+2024-12-26,Blue Line,Streetcar,Adult,35994,203271.27,13.55,86.99
+2024-10-09,Route 47 Bus,Light Rail,Child,3519,31361.26,15.05,99.92
+2025-01-25,Route 14 Bus,Commuter Rail,Adult,93324,160550.96,23.78,92.42
+2024-04-02,Green Line,Light Rail,Adult,14791,82458.63,7.69,60.98
+2024-06-19,Orange Line,Heavy Rail,Adult,25658,153481.87,11.35,69.1
+2024-03-01,Blue Line,Commuter Rail,Senior,76164,75313.88,17.02,73.42
+2025-02-22,Route 14 Bus,Streetcar,Disabled,63100,75470.67,12.29,73.23
+2025-05-17,Route 47 Bus,Heavy Rail,Student,81848,202472.96,23.08,92.7
+2024-06-07,Route 47 Bus,Bus,Disabled,51321,248163.48,9.18,72.3
+2024-07-27,Route 22 Bus,Streetcar,Child,78333,63471.09,26.15,86.77
+2024-08-12,Route 14 Bus,Bus,Monthly Pass,55734,217844.85,21.99,77.55
+2024-02-15,Orange Line,Bus,Adult,38438,76804.57,5.9,57.99
+2024-06-11,Blue Line,Commuter Rail,Senior,79729,66811.13,3.18,60.05
+2025-04-23,Route 22 Bus,Commuter Rail,Child,21636,167302.63,6.62,97.65
+2024-01-31,Red Line,Streetcar,Child,3721,150781.91,11.83,55.71
+2024-09-26,Blue Line,Streetcar,Student,23193,202038.58,1.94,61.67
+2024-09-10,Blue Line,Light Rail,Student,14008,12731.72,1.84,58.63
+2025-04-12,Green Line,Streetcar,Student,3984,94152.87,10.35,64.13
+2025-02-18,Orange Line,Commuter Rail,Disabled,15188,158780.12,11.31,61.21
+2024-02-03,Green Line,Bus,Senior,75263,66338.01,13.43,75.94
+2024-02-26,Route 22 Bus,Commuter Rail,Child,76228,54807.57,2.54,71.91
+2024-08-03,Route 14 Bus,Streetcar,Child,41900,31722.97,3.45,62.34
+2024-11-11,Route 14 Bus,Light Rail,Monthly Pass,79826,175281.08,20.39,71.4
+2024-12-16,Route 14 Bus,Streetcar,Monthly Pass,1738,246387.04,24.97,99.89
+2025-06-07,Route 22 Bus,Bus,Student,42919,83714.93,17.38,79.07
+2024-06-19,Route 47 Bus,Commuter Rail,Senior,91783,180033.71,28.4,96.12
+2024-04-15,Route 22 Bus,Streetcar,Child,8281,224588.66,14.0,96.38
+2024-08-04,Blue Line,Heavy Rail,Student,80215,239111.0,22.99,83.91
+2024-06-14,Route 14 Bus,Heavy Rail,Child,68793,249345.76,10.22,91.35
+2025-02-04,Route 22 Bus,Heavy Rail,Adult,72194,105641.14,29.42,94.6
+2024-05-30,Red Line,Streetcar,Monthly Pass,401,107971.06,17.5,86.81
+2025-04-23,Blue Line,Streetcar,Monthly Pass,24320,123003.34,7.32,58.16
+2025-01-27,Green Line,Light Rail,Student,64266,22962.92,7.74,83.48
+2024-12-21,Route 47 Bus,Commuter Rail,Student,7215,152351.07,26.32,99.59
+2025-03-07,Route 14 Bus,Commuter Rail,Monthly Pass,63074,124558.73,7.27,59.76
+2024-06-18,Red Line,Commuter Rail,Monthly Pass,69,172457.82,15.37,59.98
+2024-08-24,Red Line,Streetcar,Senior,47872,27593.17,17.42,92.82
+2024-05-27,Route 22 Bus,Heavy Rail,Disabled,81426,8763.92,9.29,71.57
+2024-04-30,Red Line,Commuter Rail,Disabled,22789,188596.0,15.6,82.28
+2024-02-17,Red Line,Commuter Rail,Adult,81505,50950.39,24.23,69.23
+2024-08-06,Route 14 Bus,Light Rail,Disabled,47678,151834.32,12.88,80.73
+2024-05-13,Red Line,Streetcar,Student,532,24215.42,25.6,77.69
+2024-03-23,Green Line,Commuter Rail,Child,44927,224626.74,11.75,56.42
+2025-04-02,Route 22 Bus,Streetcar,Senior,27803,7621.16,16.58,81.34
+2024-10-25,Orange Line,Commuter Rail,Student,53537,238182.52,23.07,65.46
+2024-10-20,Blue Line,Bus,Monthly Pass,75500,9009.55,15.17,57.73
+2024-04-19,Route 22 Bus,Light Rail,Senior,92968,166870.53,10.07,59.77
+2024-06-06,Blue Line,Bus,Child,87455,61169.6,11.43,71.18
+2024-09-01,Route 47 Bus,Heavy Rail,Senior,33881,158208.16,11.32,90.31

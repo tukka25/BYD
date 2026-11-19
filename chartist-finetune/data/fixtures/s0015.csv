@@ -1,241 +1,241 @@
-Reading Date,Site Name,Energy Source,Building Zone,Energy Consumed KWh,Peak Demand KW,Energy Cost USD,Carbon Emissions Tons
-2024-12-26,Central Factory,Solar,Cooling,85497.97,4632.41,18997.45,486.55
-2024-03-07,East Office Campus,Diesel Generator,Loading Dock,178756.54,5037.71,33003.21,529.99
-2025-03-18,West Data Center,Solar,Cooling,58600.71,1736.93,48863.27,450.05
-2024-05-19,North Plant,Solar,Office,237848.52,8162.84,57145.06,495.54
-2024-12-25,West Data Center,Wind,Office,242183.88,13789.96,20574.48,368.19
-2024-08-07,South Warehouse,Natural Gas,Cooling,111299.04,13762.62,30115.64,195.64
-2024-02-17,East Office Campus,Natural Gas,Warehouse,3069.69,8771.75,32252.25,672.58
-2025-06-07,North Plant,Grid Electricity,Warehouse,225971.35,10829.56,41279.09,463.98
-2024-10-15,West Data Center,Natural Gas,Production,3254.17,9047.66,47053.95,893.84
-2024-03-28,South Warehouse,Diesel Generator,Warehouse,34982.74,5187.3,17476.73,451.82
-2025-06-20,Central Factory,Grid Electricity,Cooling,215567.65,3313.93,44918.4,69.05
-2025-04-07,Riverside Depot,Solar,Cooling,227630.92,14282.8,25019.89,451.1
-2024-01-10,North Plant,Grid Electricity,Production,214396.03,1079.15,9352.17,752.76
-2024-03-29,Riverside Depot,Natural Gas,Utilities,64744.51,5321.33,26307.62,872.03
-2024-02-24,South Warehouse,Natural Gas,Utilities,241704.86,542.86,44803.45,359.33
-2024-07-01,Central Factory,Natural Gas,Office,177320.12,4945.02,31937.72,685.27
-2024-08-05,Central Factory,Diesel Generator,Production,70817.19,8902.17,28057.51,864.75
-2024-12-31,Riverside Depot,Wind,Warehouse,30777.61,215.96,1384.22,810.32
-2025-01-31,West Data Center,Grid Electricity,Utilities,44586.28,433.04,50129.7,798.34
-2024-11-28,Riverside Depot,Solar,Office,15624.88,2774.97,30712.82,630.12
-2024-08-26,North Plant,Grid Electricity,Loading Dock,213578.63,14810.25,18581.89,719.2
-2025-05-30,South Warehouse,Solar,Production,202248.28,1457.37,49178.2,526.78
-2024-07-21,North Plant,Grid Electricity,Utilities,220081.36,2337.67,22712.08,565.52
-2024-08-10,West Data Center,Grid Electricity,Cooling,247151.73,13832.76,47837.26,542.3
-2024-08-04,North Plant,Solar,Loading Dock,165516.5,13051.51,1546.92,729.34
-2025-05-22,East Office Campus,Grid Electricity,Loading Dock,8293.03,7777.54,53642.83,816.97
-2025-06-17,South Warehouse,Diesel Generator,Cooling,58378.47,5164.82,21029.36,181.28
-2025-05-15,South Warehouse,Natural Gas,Office,37434.72,5904.85,42740.88,872.64
-2024-11-12,Central Factory,Grid Electricity,Loading Dock,145907.17,1256.02,15390.04,815.47
-2025-01-21,North Plant,Grid Electricity,Loading Dock,119366.0,6708.96,15701.9,198.13
-2024-08-10,West Data Center,Solar,Office,233109.62,4065.66,20260.54,567.67
-2024-01-11,Riverside Depot,Grid Electricity,Warehouse,98077.45,1180.34,12864.19,246.46
-2024-11-15,Riverside Depot,Solar,Production,15110.97,2093.88,2039.67,36.99
-2025-03-06,West Data Center,Wind,Loading Dock,5957.1,11993.55,22627.5,787.45
-2024-02-28,Riverside Depot,Diesel Generator,Office,202652.96,13080.43,885.09,374.65
-2025-05-01,Central Factory,Grid Electricity,Loading Dock,158806.39,5481.65,7142.03,575.65
-2024-10-20,Central Factory,Diesel Generator,Production,47692.38,11511.14,43003.62,532.92
-2024-10-09,Riverside Depot,Wind,Loading Dock,226615.48,13102.93,38719.05,755.03
-2025-04-05,West Data Center,Natural Gas,Office,139721.58,12579.69,20458.84,29.2
-2024-04-16,South Warehouse,Natural Gas,Loading Dock,151981.55,974.17,4665.72,134.69
-2025-06-07,Central Factory,Natural Gas,Loading Dock,230155.22,4116.22,50757.72,134.25
-2024-04-07,Riverside Depot,Solar,Utilities,12647.73,10632.21,40077.78,452.61
-2025-02-04,East Office Campus,Diesel Generator,Cooling,211062.09,5139.97,898.63,481.65
-2025-04-01,East Office Campus,Wind,Production,244501.29,8403.2,12257.36,474.09
-2024-12-18,East Office Campus,Solar,Utilities,69270.88,13610.38,43608.77,692.47
-2024-02-17,East Office Campus,Wind,Office,135274.69,55.5,12205.54,761.76
-2025-01-08,South Warehouse,Diesel Generator,Cooling,105897.76,14329.32,14971.18,494.38
-2024-10-21,Riverside Depot,Solar,Cooling,17132.22,7833.66,6608.02,763.33
-2025-06-19,East Office Campus,Solar,Loading Dock,126087.59,14390.85,23855.89,782.44
-2024-04-19,South Warehouse,Natural Gas,Office,223893.09,8369.58,40609.3,31.95
-2024-04-28,West Data Center,Diesel Generator,Utilities,39221.4,8276.58,48442.18,619.54
-2024-06-11,Riverside Depot,Grid Electricity,Office,53568.69,11346.7,38285.97,695.78
-2025-03-28,South Warehouse,Wind,Cooling,136685.02,10877.48,8647.39,767.17
-2025-06-11,North Plant,Wind,Utilities,11152.86,3106.9,51821.87,244.5
-2025-06-06,Central Factory,Solar,Utilities,61493.21,11867.2,13960.57,554.81
-2024-05-29,West Data Center,Diesel Generator,Production,113159.98,5038.18,58655.99,473.04
-2025-01-20,East Office Campus,Natural Gas,Production,191827.93,11199.64,50880.11,479.54
-2025-01-04,West Data Center,Natural Gas,Utilities,70225.25,2779.18,2865.9,892.83
-2024-06-20,Riverside Depot,Natural Gas,Cooling,40523.11,10624.51,40931.85,694.92
-2025-02-18,South Warehouse,Natural Gas,Utilities,18534.62,7612.2,618.5,869.88
-2024-12-20,East Office Campus,Solar,Office,212739.92,2751.81,17710.66,328.0
-2024-06-04,West Data Center,Diesel Generator,Production,192569.21,8321.74,36209.5,148.54
-2024-07-05,East Office Campus,Natural Gas,Production,56528.76,1533.01,49390.01,261.39
-2024-03-20,Riverside Depot,Grid Electricity,Office,100374.09,5821.68,20623.27,825.05
-2024-08-03,North Plant,Natural Gas,Utilities,105960.05,9906.39,45340.76,712.34
-2025-02-20,East Office Campus,Grid Electricity,Loading Dock,195065.48,3655.39,17543.41,759.37
-2024-11-12,Central Factory,Diesel Generator,Warehouse,89808.03,13439.17,54078.19,163.66
-2024-09-01,North Plant,Diesel Generator,Office,54307.99,11045.52,10974.19,415.6
-2025-03-26,Central Factory,Grid Electricity,Warehouse,231321.64,942.78,11590.94,613.46
-2024-06-04,East Office Campus,Natural Gas,Cooling,129080.97,7343.97,8300.65,820.96
-2024-04-11,East Office Campus,Natural Gas,Production,124780.33,11695.31,44752.34,131.88
-2024-04-24,North Plant,Natural Gas,Office,188780.46,1409.09,59568.33,38.8
-2024-08-24,South Warehouse,Natural Gas,Warehouse,114159.89,3295.78,25168.86,547.55
-2025-06-15,West Data Center,Natural Gas,Utilities,175961.49,4804.36,39866.16,592.21
-2024-10-25,North Plant,Solar,Cooling,45580.5,5409.95,50267.46,270.56
-2024-12-15,Central Factory,Natural Gas,Office,77633.51,258.62,59216.73,272.21
-2025-03-30,West Data Center,Wind,Warehouse,118545.57,5938.52,10750.1,76.17
-2024-10-09,North Plant,Wind,Office,158610.83,7638.66,49992.31,763.76
-2024-11-04,Central Factory,Grid Electricity,Office,172076.07,4896.53,2437.69,551.81
-2024-03-02,Central Factory,Grid Electricity,Office,20385.5,3878.37,30212.52,838.4
-2024-06-07,South Warehouse,Diesel Generator,Warehouse,27999.29,2159.98,46698.49,607.81
-2025-05-07,Central Factory,Diesel Generator,Cooling,231786.55,11624.4,43196.3,229.69
-2025-02-04,North Plant,Solar,Loading Dock,209096.95,11104.98,14251.26,132.94
-2024-06-28,East Office Campus,Diesel Generator,Utilities,30183.73,12837.1,35420.43,548.37
-2024-11-19,West Data Center,Grid Electricity,Utilities,71680.56,3383.75,6023.36,660.42
-2025-03-03,North Plant,Diesel Generator,Cooling,47259.28,8333.89,8328.9,341.14
-2024-01-29,West Data Center,Grid Electricity,Utilities,149694.86,9927.51,19113.0,633.98
-2025-05-03,South Warehouse,Natural Gas,Production,70325.98,7062.18,229.39,575.36
-2024-05-27,North Plant,Natural Gas,Production,139995.9,8551.17,57270.69,20.65
-2024-04-21,East Office Campus,Wind,Cooling,21527.02,6107.53,49058.46,895.18
-2025-05-02,South Warehouse,Grid Electricity,Warehouse,6997.98,1234.79,18726.05,874.93
-2025-06-12,Central Factory,Diesel Generator,Production,53176.36,12871.54,54119.02,364.27
-2024-03-31,Riverside Depot,Wind,Cooling,120755.14,9891.25,32481.47,278.78
-2025-04-27,North Plant,Grid Electricity,Warehouse,166347.73,4348.3,4545.6,552.03
-2024-10-23,Central Factory,Solar,Utilities,195908.17,1559.63,23778.63,22.27
-2024-11-01,Central Factory,Wind,Utilities,84924.22,11182.39,21980.87,441.95
-2024-09-11,Riverside Depot,Natural Gas,Office,101999.1,6066.85,40111.78,493.73
-2025-01-26,North Plant,Grid Electricity,Production,153260.21,4645.64,53543.49,763.17
-2024-11-15,Riverside Depot,Wind,Cooling,236909.08,8695.48,34650.1,732.82
-2024-05-29,West Data Center,Wind,Utilities,1191.76,6319.42,34020.53,531.87
-2024-03-11,Central Factory,Diesel Generator,Utilities,82051.68,9173.4,5721.94,129.41
-2025-01-25,South Warehouse,Grid Electricity,Production,181512.03,14665.21,919.9,260.66
-2024-07-15,Central Factory,Diesel Generator,Production,227379.66,2619.32,19370.09,301.98
-2024-08-20,Central Factory,Grid Electricity,Warehouse,219531.33,14595.07,1200.76,82.76
-2025-06-06,East Office Campus,Grid Electricity,Office,92878.38,10150.96,22716.03,308.59
-2024-06-24,North Plant,Natural Gas,Office,7758.3,4363.51,17597.5,125.11
-2024-02-18,South Warehouse,Solar,Warehouse,321.56,13655.95,27916.1,295.98
-2025-01-11,Riverside Depot,Natural Gas,Loading Dock,38934.53,10324.03,10362.79,118.75
-2025-03-13,West Data Center,Wind,Production,6539.55,1462.69,20248.25,411.02
-2024-07-25,Central Factory,Wind,Utilities,3803.81,14639.08,2744.62,607.33
-2025-04-13,Central Factory,Solar,Warehouse,43473.93,13343.31,1942.84,637.83
-2025-01-15,Riverside Depot,Solar,Loading Dock,105101.46,12392.11,41839.94,838.34
-2024-05-03,Riverside Depot,Diesel Generator,Production,137614.8,12347.35,16177.37,697.61
-2025-04-04,West Data Center,Diesel Generator,Warehouse,220938.31,5457.59,10421.54,198.31
-2024-10-03,Central Factory,Wind,Production,118498.58,2024.56,20324.96,569.6
-2024-05-26,South Warehouse,Natural Gas,Utilities,171707.77,10273.94,54457.44,761.51
-2024-12-29,West Data Center,Grid Electricity,Production,200308.57,9978.26,11760.83,317.01
-2024-04-21,Central Factory,Grid Electricity,Office,80793.45,3019.46,23968.05,475.76
-2024-07-04,Central Factory,Diesel Generator,Loading Dock,180364.28,7564.92,18057.41,71.44
-2024-06-21,West Data Center,Wind,Production,173048.47,7603.03,11248.92,554.14
-2024-05-02,Central Factory,Grid Electricity,Office,24167.91,11414.45,48598.42,136.93
-2024-08-16,North Plant,Natural Gas,Office,202443.16,6937.69,15782.03,745.75
-2025-06-17,North Plant,Solar,Office,95602.97,11674.35,22365.59,486.84
-2025-01-28,South Warehouse,Solar,Production,54660.13,7071.37,47260.51,285.99
-2024-12-21,Central Factory,Grid Electricity,Cooling,39143.05,11534.68,43579.77,331.08
-2024-08-24,South Warehouse,Grid Electricity,Office,233699.95,216.33,7651.61,69.08
-2024-12-14,South Warehouse,Wind,Utilities,70360.13,14603.44,43879.77,36.72
-2025-01-09,Central Factory,Grid Electricity,Cooling,193902.31,2453.38,59823.59,126.51
-2024-04-07,South Warehouse,Grid Electricity,Office,205970.99,1851.85,15501.56,102.88
-2025-06-21,Riverside Depot,Solar,Warehouse,233767.88,10193.49,6460.24,796.36
-2024-03-24,East Office Campus,Diesel Generator,Loading Dock,151977.53,7432.04,9012.57,470.37
-2024-05-06,South Warehouse,Diesel Generator,Production,45143.12,5746.05,11468.85,279.08
-2024-07-25,West Data Center,Natural Gas,Office,24812.33,8909.03,51917.34,257.69
-2025-02-13,East Office Campus,Grid Electricity,Utilities,17731.77,374.34,34184.93,39.8
-2024-03-25,Central Factory,Wind,Utilities,180966.84,6253.23,3956.2,545.83
-2024-09-14,West Data Center,Solar,Cooling,199774.77,14898.7,3531.98,693.16
-2025-05-13,Riverside Depot,Diesel Generator,Warehouse,196902.03,10719.71,46127.83,891.11
-2024-08-13,Riverside Depot,Grid Electricity,Office,31469.23,6739.64,55153.8,461.07
-2025-04-22,East Office Campus,Grid Electricity,Cooling,106608.39,7609.88,44638.65,71.32
-2024-11-20,Riverside Depot,Natural Gas,Loading Dock,8448.7,14921.99,9003.27,353.48
-2025-03-12,Central Factory,Diesel Generator,Office,80622.1,13127.35,37983.89,882.82
-2024-03-04,East Office Campus,Diesel Generator,Office,105609.9,5744.63,51767.15,216.17
-2024-08-01,West Data Center,Solar,Production,84978.94,10497.49,53204.15,169.63
-2024-06-19,South Warehouse,Diesel Generator,Loading Dock,216273.41,9535.07,43045.14,800.9
-2024-08-12,Riverside Depot,Natural Gas,Cooling,247545.35,2012.63,33625.78,799.88
-2024-05-27,South Warehouse,Natural Gas,Cooling,101724.49,13731.17,2974.64,323.23
-2024-07-29,East Office Campus,Diesel Generator,Utilities,86813.79,2672.6,57630.07,864.39
-2024-11-25,West Data Center,Diesel Generator,Warehouse,215583.27,3984.77,57056.53,639.48
-2024-09-10,North Plant,Wind,Utilities,8020.04,3490.93,33068.73,548.68
-2024-05-01,West Data Center,Solar,Loading Dock,197877.4,10871.24,22618.06,599.64
-2024-05-14,Central Factory,Natural Gas,Utilities,22519.7,801.57,22955.85,55.9
-2024-01-26,North Plant,Solar,Office,56119.57,726.52,15951.25,831.82
-2024-01-01,North Plant,Diesel Generator,Warehouse,218294.33,4435.26,42706.48,281.03
-2024-01-22,Riverside Depot,Diesel Generator,Cooling,44504.93,8565.4,22421.47,393.66
-2024-05-26,Riverside Depot,Grid Electricity,Loading Dock,110097.31,5886.61,7933.8,479.45
-2025-02-22,West Data Center,Wind,Cooling,96134.91,412.01,20625.31,235.42
-2025-06-04,North Plant,Grid Electricity,Warehouse,46229.03,1571.73,37573.18,149.78
-2025-01-04,Central Factory,Solar,Cooling,109695.54,1843.98,47218.71,757.62
-2024-04-16,Riverside Depot,Natural Gas,Utilities,159820.88,774.17,24455.64,673.37
-2025-04-03,East Office Campus,Solar,Loading Dock,169907.91,4426.63,27615.96,828.76
-2024-03-22,East Office Campus,Grid Electricity,Office,1614.94,540.76,35439.32,247.03
-2024-12-31,East Office Campus,Diesel Generator,Production,79848.39,1176.47,14828.42,869.31
-2024-02-24,South Warehouse,Natural Gas,Office,185610.36,6232.08,36449.16,692.74
-2024-01-29,East Office Campus,Solar,Production,74984.54,8565.88,15227.42,688.9
-2024-07-01,South Warehouse,Natural Gas,Utilities,194692.34,14424.44,39567.74,652.1
-2025-01-13,South Warehouse,Natural Gas,Production,84051.0,8965.33,48709.25,79.48
-2024-11-22,North Plant,Diesel Generator,Utilities,182407.28,10382.84,20252.56,759.28
-2024-10-22,Riverside Depot,Solar,Office,50471.1,11955.05,54858.08,194.5
-2024-03-25,Riverside Depot,Diesel Generator,Production,241565.02,1957.32,58898.67,394.25
-2025-06-03,Riverside Depot,Natural Gas,Production,125803.85,6540.21,37001.21,501.91
-2025-04-08,West Data Center,Solar,Warehouse,221998.87,4840.85,3854.57,863.84
-2024-05-04,West Data Center,Solar,Loading Dock,39594.19,3856.51,27090.65,1.15
-2025-03-12,West Data Center,Diesel Generator,Cooling,190461.97,1418.77,24612.07,88.85
-2024-02-12,East Office Campus,Diesel Generator,Office,101110.48,9189.69,31332.54,467.66
-2024-04-17,South Warehouse,Diesel Generator,Loading Dock,93473.02,6765.73,12259.07,219.62
-2025-03-25,South Warehouse,Grid Electricity,Office,184287.01,5719.42,52629.22,764.99
-2025-02-16,Central Factory,Natural Gas,Loading Dock,136507.23,14287.75,7726.5,676.68
-2024-08-16,North Plant,Grid Electricity,Production,232667.93,7591.22,32334.34,588.44
-2024-07-06,South Warehouse,Diesel Generator,Loading Dock,19469.79,6888.32,48520.24,854.0
-2024-09-10,Central Factory,Wind,Office,2816.6,13631.18,12991.2,770.18
-2025-03-03,West Data Center,Grid Electricity,Production,45850.43,14122.91,17637.19,565.38
-2025-01-22,North Plant,Grid Electricity,Utilities,178662.5,2826.19,41139.44,88.42
-2024-10-31,Central Factory,Natural Gas,Loading Dock,112888.16,3580.5,25639.21,124.75
-2024-04-08,West Data Center,Natural Gas,Cooling,179157.02,6801.22,38511.35,523.38
-2024-02-13,Central Factory,Wind,Office,238535.27,5470.14,20617.75,46.77
-2024-08-31,Central Factory,Solar,Production,123476.09,380.66,55781.2,848.48
-2024-10-17,West Data Center,Solar,Loading Dock,177228.5,12556.89,56254.52,763.24
-2025-03-09,North Plant,Solar,Cooling,30886.57,10749.23,12721.51,266.58
-2024-10-26,South Warehouse,Diesel Generator,Loading Dock,202237.76,7411.22,35318.99,804.17
-2024-11-16,West Data Center,Grid Electricity,Loading Dock,50721.85,8845.01,40853.48,557.85
-2024-04-28,North Plant,Natural Gas,Office,239052.84,3052.79,6187.34,477.18
-2025-05-02,West Data Center,Grid Electricity,Cooling,224431.69,8486.25,23971.41,533.46
-2024-06-28,North Plant,Diesel Generator,Office,191375.31,3861.53,55586.96,880.2
-2025-04-12,North Plant,Wind,Office,59009.27,13832.71,39167.16,460.82
-2025-01-04,West Data Center,Natural Gas,Production,222646.44,3258.15,33802.95,17.21
-2024-05-27,Central Factory,Solar,Loading Dock,173924.98,5155.8,49229.79,422.69
-2024-09-27,South Warehouse,Diesel Generator,Utilities,153114.32,10713.88,19263.48,143.98
-2025-03-05,South Warehouse,Natural Gas,Utilities,29903.14,3784.82,45271.05,781.95
-2024-03-07,South Warehouse,Natural Gas,Loading Dock,188506.72,13084.85,14347.87,776.8
-2024-12-09,East Office Campus,Natural Gas,Office,211206.8,4180.5,28074.82,11.49
-2024-06-01,Central Factory,Natural Gas,Office,147074.44,12469.12,56000.08,594.06
-2024-03-06,South Warehouse,Wind,Production,60078.78,14207.87,12650.76,248.27
-2024-09-15,North Plant,Grid Electricity,Warehouse,28753.76,2701.01,46117.33,862.92
-2024-05-22,North Plant,Wind,Loading Dock,182162.09,7231.03,15280.8,163.49
-2024-03-09,South Warehouse,Grid Electricity,Production,23298.47,2115.21,41617.29,153.11
-2025-02-11,Central Factory,Wind,Cooling,176136.1,1882.93,27388.96,721.61
-2025-01-16,Central Factory,Diesel Generator,Utilities,168583.23,952.75,19483.45,874.38
-2025-04-01,Central Factory,Wind,Cooling,830.95,11008.61,6050.34,333.39
-2024-12-25,South Warehouse,Natural Gas,Utilities,126484.13,4132.18,38074.3,710.99
-2024-03-24,Central Factory,Solar,Warehouse,132089.28,5761.35,26826.84,74.46
-2025-02-02,Central Factory,Natural Gas,Warehouse,123776.05,6284.39,25.96,440.49
-2025-01-15,East Office Campus,Solar,Cooling,50451.12,8142.82,7036.38,688.14
-2024-07-24,West Data Center,Natural Gas,Loading Dock,32680.53,5725.0,16535.16,569.66
-2024-06-24,South Warehouse,Natural Gas,Cooling,161655.39,12832.92,26236.97,564.89
-2025-05-06,Riverside Depot,Wind,Warehouse,175151.17,9673.07,7749.82,766.48
-2024-04-09,Central Factory,Natural Gas,Utilities,105243.73,2497.3,25282.46,47.2
-2024-03-08,Riverside Depot,Diesel Generator,Warehouse,9244.88,3117.37,22888.81,92.38
-2024-02-23,East Office Campus,Diesel Generator,Warehouse,214768.76,6001.23,47497.91,650.55
-2025-06-09,South Warehouse,Natural Gas,Office,50866.41,7134.43,48661.08,304.58
-2024-02-23,Central Factory,Grid Electricity,Production,48528.39,6886.05,28549.65,19.75
-2024-06-25,East Office Campus,Natural Gas,Loading Dock,119929.23,12013.92,31414.75,288.49
-2024-09-06,North Plant,Wind,Production,235291.85,5782.89,9467.7,521.88
-2025-03-09,East Office Campus,Solar,Loading Dock,66358.56,11956.67,12064.19,675.29
-2024-03-03,East Office Campus,Natural Gas,Production,79227.81,974.86,35726.25,278.24
-2024-07-10,Central Factory,Solar,Warehouse,112819.8,1080.82,38375.51,212.88
-2024-11-23,Riverside Depot,Solar,Warehouse,170711.21,13102.4,27140.25,815.09
-2024-12-14,North Plant,Wind,Utilities,214859.17,6575.92,8201.47,62.8
-2025-03-21,South Warehouse,Diesel Generator,Office,26169.49,859.26,25741.38,748.44
-2024-02-01,East Office Campus,Diesel Generator,Office,176246.81,1783.0,44864.41,34.67
-2024-08-16,South Warehouse,Diesel Generator,Warehouse,242387.59,2541.93,45392.67,859.51
-2025-04-23,South Warehouse,Natural Gas,Production,183590.86,8555.44,14601.68,868.53
-2024-11-30,East Office Campus,Natural Gas,Loading Dock,77375.16,8616.33,29563.53,621.86
-2025-05-12,South Warehouse,Solar,Warehouse,31441.26,5761.0,10674.98,875.58
-2025-03-27,East Office Campus,Grid Electricity,Warehouse,38512.16,1731.67,7688.31,130.82
-2025-06-04,East Office Campus,Grid Electricity,Production,51924.83,260.15,23104.3,436.63
-2025-03-21,North Plant,Diesel Generator,Office,82931.2,13609.16,43435.91,795.61
-2024-09-27,Central Factory,Natural Gas,Production,231516.38,6569.62,35471.03,820.13
-2024-06-18,East Office Campus,Wind,Utilities,8807.34,8687.22,18412.04,57.38
-2024-07-25,West Data Center,Natural Gas,Production,187566.5,10425.17,52922.48,810.68
-2024-11-01,South Warehouse,Diesel Generator,Loading Dock,51089.84,6411.55,54640.53,740.44
+transactionDate,branchRegion,transactionChannel,accountType,transactionCount,transactionVolumeUsd,averageTransactionAmountUsd,failedTransactionCount
+2024-02-05,Southwest,Mobile App,Money Market,52188,172573394.09,2361.91,2282
+2025-01-04,West,Mobile App,Certificate of Deposit,246179,128394429.81,7870.32,6101
+2025-03-18,Mountain,Branch Teller,Money Market,189466,108481889.74,8995.98,12993
+2024-09-09,Mountain,Branch Teller,Checking,228252,170815705.38,3009.98,5828
+2025-04-19,Mid-Atlantic,Branch Teller,Business Checking,150483,100358182.3,1810.89,11486
+2025-03-30,Southeast,Phone Banking,Certificate of Deposit,216365,175212262.91,6857.98,13985
+2025-05-19,Mountain,Online Banking,Certificate of Deposit,116730,157230045.39,3242.41,12599
+2024-07-02,Southeast,Wire Transfer,Business Checking,79698,49128617.78,10506.51,12484
+2024-05-23,Southwest,Mobile App,Savings,28117,151281167.54,620.77,9496
+2024-07-31,West,Wire Transfer,Money Market,174729,152864429.47,10779.45,7886
+2024-12-04,Mountain,Online Banking,Savings,190176,49338065.24,3337.5,302
+2024-03-25,Mountain,Mobile App,Certificate of Deposit,146081,63972410.89,10654.9,12602
+2024-09-16,Pacific Northwest,Phone Banking,Checking,208058,103386005.76,7597.09,10468
+2024-08-19,Southeast,Online Banking,Certificate of Deposit,224410,110411105.2,5189.43,749
+2024-07-03,Northeast,ATM,Business Checking,178519,56494888.44,2561.26,4151
+2025-01-27,Pacific Northwest,Branch Teller,Business Checking,108939,165236993.35,11727.37,4818
+2025-03-09,West,Wire Transfer,Savings,170661,153183620.6,5736.09,14875
+2024-06-06,Mid-Atlantic,Online Banking,Business Checking,177549,153878141.9,2435.59,3519
+2024-03-08,Southeast,Wire Transfer,Certificate of Deposit,158589,78188058.27,12230.35,12950
+2024-07-01,Midwest,Online Banking,Checking,61151,105991196.89,10797.53,14504
+2024-04-22,Southeast,Branch Teller,Money Market,130646,178053429.88,1345.8,9295
+2024-04-11,Mid-Atlantic,Branch Teller,Checking,136363,176645916.99,3301.82,471
+2024-07-28,Mid-Atlantic,Branch Teller,Certificate of Deposit,178009,84671509.62,11876.16,6547
+2024-09-17,Mountain,Wire Transfer,Savings,226568,98346071.08,7471.95,14088
+2024-10-20,Midwest,Wire Transfer,Certificate of Deposit,135581,154449468.98,9575.98,11518
+2025-05-27,Mountain,ATM,Savings,176133,15252113.32,9440.63,6399
+2025-05-10,Pacific Northwest,Mobile App,Business Checking,243457,178019051.36,887.77,10541
+2025-06-03,Mountain,Phone Banking,Checking,8808,10292586.13,2956.68,13638
+2025-06-19,West,Phone Banking,Business Checking,16991,84215955.5,6942.6,4466
+2024-10-23,Southwest,Phone Banking,Savings,62245,26722424.57,3903.69,3576
+2024-11-19,Midwest,ATM,Certificate of Deposit,142454,61725450.35,7872.15,2317
+2024-12-14,Southeast,Mobile App,Checking,149895,75975852.04,4001.05,11969
+2024-01-16,Pacific Northwest,Online Banking,Business Checking,82317,114833844.84,3416.8,4675
+2024-02-08,Pacific Northwest,Online Banking,Certificate of Deposit,183941,58865975.72,2157.26,8033
+2024-10-17,Pacific Northwest,Branch Teller,Money Market,15954,107803781.75,5978.65,11802
+2024-05-15,Northeast,ATM,Money Market,245654,57075937.9,5281.67,12656
+2024-05-25,Southwest,Wire Transfer,Certificate of Deposit,183421,78128087.6,6787.42,6108
+2024-10-26,West,Online Banking,Savings,86112,135341771.05,725.6,2967
+2024-12-04,Mid-Atlantic,Branch Teller,Certificate of Deposit,52368,147437776.37,8407.98,7447
+2024-09-23,Southwest,Online Banking,Certificate of Deposit,2291,137023297.81,11196.89,9018
+2025-05-08,West,Wire Transfer,Money Market,6657,34528079.69,12274.94,4757
+2024-07-06,Midwest,Branch Teller,Savings,76117,67089975.62,685.77,13446
+2024-08-23,Mountain,Branch Teller,Money Market,237619,50166232.24,3759.29,10209
+2025-03-06,Southeast,Wire Transfer,Savings,34144,79716207.17,3465.63,2778
+2025-02-25,Midwest,Mobile App,Savings,125343,671268.76,11969.72,3050
+2025-06-02,Mid-Atlantic,Online Banking,Business Checking,215574,68738714.03,6286.21,12476
+2025-06-17,Southeast,Branch Teller,Savings,121461,91656023.11,5691.25,4383
+2024-11-14,Mountain,Online Banking,Checking,171107,110121306.14,11635.49,6018
+2025-01-26,Mid-Atlantic,Wire Transfer,Business Checking,248769,46355163.44,5431.45,13679
+2024-10-11,Pacific Northwest,Branch Teller,Certificate of Deposit,161849,37270581.1,6303.97,11424
+2025-01-03,Midwest,Online Banking,Checking,232535,15584236.47,10792.11,8777
+2025-01-03,Mountain,ATM,Money Market,6878,112942752.49,2830.35,10140
+2025-01-10,Mountain,Phone Banking,Business Checking,10495,16139749.36,10840.24,10860
+2024-05-07,Mountain,Mobile App,Money Market,63801,67987512.05,3960.42,12590
+2024-02-15,Northeast,Branch Teller,Certificate of Deposit,237734,50421421.68,8415.35,3487
+2025-04-30,Southeast,Branch Teller,Business Checking,59984,120073119.2,8431.25,14270
+2024-04-24,Mountain,Phone Banking,Money Market,2888,176725905.62,1229.11,8165
+2025-04-08,Southeast,Mobile App,Savings,245126,58516026.94,10597.34,7017
+2024-08-07,West,Branch Teller,Checking,238738,149950384.67,6467.72,9644
+2025-02-09,Mid-Atlantic,Mobile App,Checking,126209,156826720.82,11229.04,5963
+2025-03-26,Mid-Atlantic,Wire Transfer,Savings,26963,175467523.57,3977.92,4358
+2024-02-07,Southeast,Phone Banking,Business Checking,81714,28027327.98,4735.52,14062
+2025-05-19,Pacific Northwest,Wire Transfer,Money Market,179564,52212743.34,7059.05,3527
+2025-02-20,Mountain,ATM,Savings,205196,9876646.1,11414.18,4906
+2024-08-09,Southwest,Branch Teller,Business Checking,167103,154390502.49,1129.74,853
+2025-06-11,Midwest,Mobile App,Savings,93314,10642418.77,736.7,12917
+2024-07-29,Midwest,Online Banking,Checking,249699,156110463.2,9352.11,1974
+2024-09-23,Pacific Northwest,Branch Teller,Money Market,43519,91339378.14,11049.02,12929
+2024-09-24,Pacific Northwest,Wire Transfer,Savings,56519,121824992.3,8491.74,8343
+2024-04-16,Southeast,Mobile App,Business Checking,134996,52338608.23,695.64,9402
+2025-05-27,Pacific Northwest,Wire Transfer,Checking,174580,108340147.54,2922.54,11669
+2024-12-21,Midwest,Branch Teller,Money Market,60207,128228485.86,12376.43,14745
+2024-03-25,Pacific Northwest,Branch Teller,Certificate of Deposit,14865,57667062.4,8819.18,13041
+2024-11-30,Mountain,Branch Teller,Checking,60440,6484079.34,7107.21,9979
+2024-08-27,West,Mobile App,Checking,156370,177107933.04,7923.25,7207
+2024-04-22,Southeast,Branch Teller,Money Market,189566,25638079.3,2581.37,4188
+2024-12-14,Southwest,Online Banking,Certificate of Deposit,139538,91085198.98,8107.66,13246
+2025-05-20,Southeast,Online Banking,Money Market,85591,45792326.93,11214.31,14669
+2024-12-23,Mid-Atlantic,Mobile App,Certificate of Deposit,175613,184777625.5,4661.93,12692
+2024-11-13,Pacific Northwest,Mobile App,Business Checking,36649,130160486.15,4013.73,12061
+2024-11-08,Southeast,Wire Transfer,Checking,209080,61592415.92,10047.46,1468
+2024-07-01,Northeast,Online Banking,Savings,144630,121165434.8,1081.31,14650
+2024-06-17,Southwest,Online Banking,Checking,200720,166039837.05,9844.91,11411
+2024-03-22,West,Online Banking,Certificate of Deposit,245672,117301842.33,10333.16,13472
+2024-07-19,Midwest,Wire Transfer,Certificate of Deposit,56094,44322478.25,6786.09,12913
+2025-01-12,Midwest,ATM,Money Market,226500,104357460.07,10356.11,8244
+2024-02-27,Mid-Atlantic,Wire Transfer,Savings,197725,29808946.23,1831.3,6379
+2024-01-12,Mountain,Branch Teller,Money Market,122156,170089144.6,9005.26,3582
+2024-11-14,Southwest,Phone Banking,Checking,188092,157727700.87,11713.17,2230
+2024-12-28,Southeast,Online Banking,Certificate of Deposit,47925,29600245.42,9272.37,3016
+2024-10-20,West,ATM,Checking,162000,10174944.32,9755.82,4544
+2024-03-29,West,Branch Teller,Money Market,17830,171166215.36,4522.35,2943
+2024-06-30,Northeast,Branch Teller,Savings,36529,104957729.12,9779.18,3136
+2024-12-01,Northeast,Mobile App,Certificate of Deposit,233451,150326532.77,5775.39,6121
+2025-06-17,West,ATM,Checking,122317,52474252.28,11483.93,3770
+2024-03-24,Mountain,ATM,Savings,27393,141800031.84,6334.55,7518
+2024-03-02,Southwest,Wire Transfer,Checking,89094,146751513.01,5669.19,14929
+2024-06-11,West,Mobile App,Checking,107181,149659699.53,7022.73,3366
+2024-09-25,West,Mobile App,Checking,187160,150184014.91,7871.26,2832
+2024-12-14,Mountain,Branch Teller,Savings,141200,75324035.2,11492.41,13054
+2024-05-09,Mid-Atlantic,Online Banking,Certificate of Deposit,61383,108918832.53,2274.24,14517
+2024-11-24,Mountain,Online Banking,Business Checking,191533,63814358.15,8158.59,11354
+2024-04-01,Mountain,Branch Teller,Checking,138400,79293361.91,11135.16,14451
+2025-02-15,Northeast,ATM,Money Market,121540,182660463.21,11703.51,8171
+2025-02-14,Southwest,Mobile App,Money Market,108772,74765676.11,2609.94,4749
+2024-11-17,Southeast,Online Banking,Money Market,233890,122179477.75,6518.72,5378
+2024-03-23,Mountain,Wire Transfer,Savings,28765,160718515.81,5901.65,1161
+2024-04-20,Southeast,Online Banking,Business Checking,4772,179344058.54,8337.11,10671
+2025-01-19,Pacific Northwest,Phone Banking,Certificate of Deposit,133699,113301379.69,8988.51,4446
+2025-04-27,Northeast,Mobile App,Savings,71352,163405237.29,55.33,7649
+2024-04-21,Northeast,Branch Teller,Money Market,171299,70817302.36,4900.44,3613
+2024-05-19,Mid-Atlantic,Online Banking,Savings,151702,141228296.97,6985.22,13512
+2024-12-08,West,Phone Banking,Certificate of Deposit,36914,167744805.64,3778.98,5455
+2024-11-22,West,ATM,Certificate of Deposit,186398,50554086.76,5916.9,10232
+2024-12-13,Northeast,Online Banking,Certificate of Deposit,233944,129038690.3,6123.53,14600
+2024-05-22,Southwest,Online Banking,Money Market,48252,18497554.44,4737.9,4666
+2024-03-02,Southwest,Branch Teller,Business Checking,194183,71565391.57,1023.01,2838
+2024-04-16,West,ATM,Savings,195971,463378.04,7773.55,1763
+2025-03-03,Northeast,Online Banking,Savings,179019,131551125.31,2059.8,8929
+2025-01-05,Pacific Northwest,Wire Transfer,Money Market,90059,179283020.19,7256.68,8001
+2024-07-14,Midwest,ATM,Savings,171385,123442740.25,2446.39,8865
+2024-08-17,Northeast,Wire Transfer,Savings,240029,77154330.72,8480.13,5504
+2024-05-09,Mid-Atlantic,Branch Teller,Checking,126515,80150979.29,3887.85,11505
+2024-03-31,Midwest,Phone Banking,Checking,83016,37805653.16,10717.05,3103
+2024-11-05,Southwest,ATM,Business Checking,45465,94421584.68,10840.54,1745
+2024-09-03,Mid-Atlantic,Wire Transfer,Certificate of Deposit,228834,122190126.25,2038.49,936
+2024-12-11,Pacific Northwest,Branch Teller,Certificate of Deposit,159364,7980515.22,7697.33,7982
+2025-02-01,West,Wire Transfer,Savings,58259,115374730.03,7751.07,7875
+2024-12-09,Pacific Northwest,Wire Transfer,Business Checking,116463,40610990.0,5657.42,13113
+2024-02-07,Southeast,Wire Transfer,Money Market,68104,32071182.01,2624.81,2878
+2024-02-18,Mountain,Wire Transfer,Certificate of Deposit,100493,153672567.26,1215.28,4211
+2025-04-01,Northeast,ATM,Money Market,63025,10086474.56,11332.01,7308
+2024-12-21,Pacific Northwest,Wire Transfer,Money Market,70619,139870748.62,2423.75,668
+2025-01-31,Northeast,Wire Transfer,Checking,230404,37733362.53,11045.18,911
+2025-04-22,Pacific Northwest,Wire Transfer,Checking,174753,89740146.92,1748.71,14670
+2024-05-18,Southwest,Online Banking,Certificate of Deposit,40715,166125459.42,10218.38,2892
+2025-01-13,West,Online Banking,Savings,131592,67858829.57,6369.37,509
+2025-03-16,West,ATM,Certificate of Deposit,228589,138195566.94,11258.06,4714
+2024-12-14,Northeast,Phone Banking,Savings,244338,123772668.73,5446.05,13450
+2025-02-22,Northeast,Branch Teller,Business Checking,180550,184725703.71,3385.62,3402
+2024-11-05,Southeast,Online Banking,Certificate of Deposit,175270,55610929.24,8359.35,2754
+2025-04-06,Northeast,Phone Banking,Checking,172228,121301828.0,5678.25,13633
+2025-05-16,Pacific Northwest,Phone Banking,Savings,38389,147729454.24,1100.32,4870
+2025-03-30,West,Branch Teller,Business Checking,170569,183340521.94,4177.66,7216
+2024-10-22,Pacific Northwest,Phone Banking,Checking,224315,18398113.52,11716.77,12850
+2024-02-15,Pacific Northwest,Mobile App,Savings,78476,136301780.22,10761.22,14011
+2024-11-23,Southwest,ATM,Certificate of Deposit,143274,141569450.38,11148.1,5604
+2025-02-10,Southeast,Mobile App,Savings,182838,4299659.93,8925.19,1900
+2024-02-24,Southwest,Mobile App,Money Market,107840,34346760.57,4811.97,8819
+2024-12-18,Pacific Northwest,Mobile App,Certificate of Deposit,83025,181092588.01,1656.61,11486
+2024-02-22,Midwest,Phone Banking,Business Checking,5724,47084180.72,295.9,8917
+2025-01-09,Midwest,Mobile App,Certificate of Deposit,54298,3753537.0,9748.94,2602
+2024-12-23,Southeast,Mobile App,Checking,154561,19455722.48,64.68,10720
+2024-03-21,Mid-Atlantic,Branch Teller,Savings,35298,116699708.27,988.08,39
+2025-01-23,Midwest,Wire Transfer,Money Market,86391,150840643.09,11285.3,14102
+2024-05-06,Pacific Northwest,Wire Transfer,Certificate of Deposit,193482,61232981.25,7802.78,4234
+2025-01-03,Southeast,Branch Teller,Checking,187233,168752037.28,11742.38,6154
+2024-01-25,Northeast,Phone Banking,Business Checking,84038,53469729.7,2953.49,1714
+2025-04-05,Southwest,Online Banking,Savings,77539,14159202.36,11101.94,8483
+2025-03-03,Northeast,Online Banking,Checking,91709,75364533.68,3126.8,647
+2024-10-15,Midwest,ATM,Money Market,10218,128679875.87,9711.85,2420
+2025-01-09,Northeast,Online Banking,Business Checking,245395,151056842.89,10575.39,908
+2024-09-27,Pacific Northwest,Phone Banking,Checking,222264,87743133.16,5733.76,11881
+2025-03-07,Midwest,Branch Teller,Savings,36482,76771869.7,3102.39,10965
+2024-04-05,Southwest,Online Banking,Checking,87785,122662832.69,351.1,13655
+2025-05-03,West,Mobile App,Certificate of Deposit,153740,140979759.86,6894.9,7979
+2024-11-27,Mid-Atlantic,Branch Teller,Checking,223094,113954637.29,6232.62,10697
+2024-06-18,Southeast,Wire Transfer,Money Market,5924,154770834.48,6367.73,8452
+2024-05-25,Mid-Atlantic,ATM,Certificate of Deposit,136320,176894469.83,10493.4,8297
+2024-02-22,Mid-Atlantic,Branch Teller,Checking,7089,107657373.71,2042.34,14117
+2024-02-01,West,Phone Banking,Business Checking,206905,30342172.48,2368.84,5661
+2024-08-23,Southwest,Branch Teller,Business Checking,83257,75818007.68,11623.12,3895
+2025-01-22,Southeast,Online Banking,Savings,130679,170361215.63,7128.64,6933
+2025-04-16,Pacific Northwest,Wire Transfer,Certificate of Deposit,202853,54402910.91,4320.61,13352
+2024-09-10,Pacific Northwest,Online Banking,Business Checking,142786,41211717.56,1229.2,3203
+2024-12-25,Northeast,Mobile App,Money Market,13444,117944604.08,10463.9,2667
+2024-04-14,Pacific Northwest,Wire Transfer,Savings,94564,182440074.59,7941.7,4469
+2025-02-17,Northeast,ATM,Business Checking,120005,163180966.77,11920.87,11847
+2024-03-08,Mid-Atlantic,ATM,Checking,139126,10191214.7,5714.66,5680
+2025-01-19,Midwest,Branch Teller,Business Checking,198719,11393241.6,11622.14,8703
+2024-03-31,Midwest,Mobile App,Checking,155314,5041346.47,8700.39,2639
+2024-01-09,West,ATM,Money Market,146888,44717930.47,9099.16,7514
+2025-06-02,Northeast,Mobile App,Money Market,30166,66373074.13,1032.33,11645
+2025-02-27,Northeast,Phone Banking,Business Checking,235671,180842155.16,160.74,13037
+2024-10-08,Northeast,Wire Transfer,Money Market,216737,166773009.37,318.23,2245
+2024-09-15,Southwest,Phone Banking,Money Market,153105,25361679.61,2689.53,11891
+2025-05-10,Pacific Northwest,Mobile App,Certificate of Deposit,215681,71266908.75,6890.73,357
+2025-04-13,Mountain,Mobile App,Money Market,192162,23356691.98,7807.22,3852
+2025-02-24,Southwest,Phone Banking,Certificate of Deposit,155786,147714665.73,1402.79,9736
+2024-01-14,Mountain,Phone Banking,Money Market,82070,49824652.32,12346.9,11620
+2025-03-12,Midwest,Phone Banking,Checking,101655,99523354.92,7645.33,6170
+2024-07-18,Midwest,Online Banking,Certificate of Deposit,230505,56993468.06,1614.22,13617
+2024-12-21,Southeast,Online Banking,Business Checking,242909,134848456.7,1605.65,3615
+2024-12-26,Mountain,Phone Banking,Money Market,14184,12569932.55,11518.19,260
+2025-04-15,West,Online Banking,Business Checking,65543,174550518.75,7922.77,9490
+2024-05-20,Southeast,ATM,Checking,217612,80352679.61,9013.46,9093
+2024-07-16,Mid-Atlantic,Phone Banking,Checking,88685,28918231.53,5047.71,5895
+2024-12-16,Southeast,ATM,Business Checking,118654,60449485.8,11395.08,3439
+2024-02-03,Pacific Northwest,Phone Banking,Money Market,100564,14826810.63,7731.01,12901
+2024-06-02,Southwest,Online Banking,Savings,100134,52802983.87,8864.82,7905
+2025-06-02,Mountain,Phone Banking,Checking,204885,98290175.78,11766.44,14996
+2025-05-20,Southwest,Wire Transfer,Certificate of Deposit,294,29416171.15,830.61,13285
+2024-05-30,Midwest,Mobile App,Savings,51861,120896920.87,8953.74,13950
+2025-01-04,Midwest,Branch Teller,Money Market,194894,9221588.87,10049.77,10838
+2024-04-11,West,Wire Transfer,Business Checking,15038,143874557.11,3006.57,2292
+2024-07-31,Midwest,Branch Teller,Savings,195915,59264402.05,4854.15,7399
+2025-02-04,West,ATM,Checking,24687,75121439.45,6263.39,10913
+2024-05-26,Mid-Atlantic,Wire Transfer,Business Checking,111435,121803601.96,5509.07,13866
+2025-03-01,Mid-Atlantic,Mobile App,Money Market,132954,132700455.44,7995.7,4242
+2024-02-05,Mountain,Wire Transfer,Savings,198198,28594167.1,3077.0,10108
+2024-04-14,West,ATM,Money Market,189337,51060689.18,312.74,3810
+2024-10-17,Mid-Atlantic,Online Banking,Certificate of Deposit,57905,90873568.3,11127.79,4717
+2024-02-27,Mountain,Online Banking,Business Checking,68733,82097653.62,3588.84,5200
+2024-08-30,Northeast,Branch Teller,Money Market,36625,68274859.12,11738.61,14531
+2024-09-16,Southeast,Branch Teller,Checking,164522,100740737.73,5105.96,4721
+2024-02-16,Northeast,Branch Teller,Business Checking,233995,10351851.13,12384.29,8736
+2025-02-27,Pacific Northwest,Branch Teller,Checking,107125,114190577.35,7668.03,13827
+2025-01-19,Southwest,Online Banking,Savings,160794,181879118.44,2933.16,5917
+2024-07-09,Mid-Atlantic,Phone Banking,Savings,223020,116473490.5,2868.75,2714
+2024-10-21,Southwest,Branch Teller,Money Market,209266,46817826.64,1503.43,13048
+2024-09-02,West,Phone Banking,Savings,214967,58870205.77,4367.67,14790
+2024-05-02,Pacific Northwest,Mobile App,Certificate of Deposit,26922,40394469.96,10106.89,4736
+2025-01-24,Midwest,Wire Transfer,Savings,79911,165426545.75,9445.26,4050
+2024-03-10,Midwest,Online Banking,Money Market,218950,173553474.75,4061.32,7168
+2024-05-08,Southeast,Branch Teller,Business Checking,100349,46444289.12,6026.67,11570
+2025-05-15,Northeast,Mobile App,Savings,66364,165431670.03,1038.0,1386
+2024-11-11,Southeast,Online Banking,Certificate of Deposit,234125,110935289.94,5804.73,14185
+2024-07-03,Midwest,ATM,Business Checking,62995,99696436.09,2998.27,2575
+2025-02-04,Southwest,Online Banking,Checking,2513,100345480.49,10523.49,2347
+2024-05-13,Mid-Atlantic,Online Banking,Savings,81488,30064308.42,10180.05,12030
+2024-10-10,Pacific Northwest,Phone Banking,Checking,243147,20181187.5,7140.36,9724
+2024-11-24,Southwest,Phone Banking,Checking,13279,168842989.61,11267.96,14660
+2024-08-09,Pacific Northwest,Wire Transfer,Business Checking,174733,159916709.39,10048.36,7853
+2024-05-01,Mid-Atlantic,Online Banking,Money Market,17896,16604846.66,8783.16,8894
+2024-10-14,Mid-Atlantic,Wire Transfer,Checking,136020,28230508.26,1697.86,7691
+2024-08-03,Mid-Atlantic,Branch Teller,Business Checking,3700,7854665.46,3210.27,4444
+2024-10-23,Southwest,Mobile App,Business Checking,68693,125711466.03,9862.62,14097
+2024-10-19,Mountain,Wire Transfer,Checking,9644,95056327.62,4749.23,3620
+2024-01-20,West,ATM,Savings,113084,167545448.77,510.01,6581
+2024-06-24,Northeast,Branch Teller,Certificate of Deposit,205578,153534013.57,10263.25,3162

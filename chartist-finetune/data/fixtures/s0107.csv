@@ -1,241 +1,241 @@
-visit_date,visit_site,visit_department,visit_arrival_channel,visit_patient_count,visit_wait_minutes,visit_avg_length_minutes
-2024-08-04,Riverside Center,Orthopedics,Appointment,362,190.08,103.14
-2025-03-07,Riverside Center,Orthopedics,Ambulance,96,204.1,72.71
-2025-05-06,Eastside Clinic,Pediatrics,Walk-in,400,104.82,140.93
-2025-03-19,Riverside Center,Dermatology,Referral,205,60.73,42.06
-2025-01-14,North Clinic,Oncology,Ambulance,380,185.31,71.31
-2024-02-17,Eastside Clinic,Oncology,Walk-in,64,49.78,136.99
-2024-01-24,Westside Clinic,Cardiology,Ambulance,127,101.2,120.79
-2024-11-03,Riverside Center,Dermatology,Telehealth,60,208.93,51.31
-2024-12-13,Main Campus,Oncology,Ambulance,385,54.12,64.74
-2025-02-27,Riverside Center,Pediatrics,Telehealth,376,127.17,37.95
-2024-12-27,Westside Clinic,Emergency,Walk-in,117,214.85,89.47
-2025-05-01,Main Campus,Orthopedics,Referral,96,152.9,71.95
-2024-07-24,Main Campus,Family Medicine,Ambulance,397,123.05,40.52
-2024-09-04,Westside Clinic,Family Medicine,Appointment,235,58.53,145.4
-2025-02-03,Main Campus,Pediatrics,Telehealth,34,85.22,141.06
-2024-04-07,North Clinic,Orthopedics,Ambulance,235,106.35,65.25
-2025-06-22,Westside Clinic,Emergency,Ambulance,17,112.64,126.16
-2024-05-21,Main Campus,Orthopedics,Ambulance,240,11.24,124.9
-2025-05-04,North Clinic,Orthopedics,Referral,19,200.06,162.84
-2025-05-19,Eastside Clinic,Pediatrics,Walk-in,264,231.79,77.36
-2024-12-03,North Clinic,Oncology,Referral,186,187.84,44.81
-2024-12-09,Eastside Clinic,Oncology,Referral,308,181.59,19.79
-2024-12-31,North Clinic,Dermatology,Walk-in,48,97.69,119.42
-2024-06-14,Main Campus,Emergency,Ambulance,314,31.02,85.53
-2024-04-29,Riverside Center,Orthopedics,Telehealth,242,53.79,49.33
-2024-12-13,North Clinic,Oncology,Appointment,94,39.56,85.1
-2025-03-12,Westside Clinic,Dermatology,Appointment,321,76.75,21.26
-2025-02-09,Main Campus,Family Medicine,Referral,84,109.86,166.19
-2024-05-22,North Clinic,Emergency,Ambulance,172,51.71,144.59
-2024-10-17,Westside Clinic,Emergency,Appointment,29,149.86,94.46
-2024-11-12,Eastside Clinic,Dermatology,Walk-in,91,52.0,77.32
-2024-04-13,North Clinic,Family Medicine,Appointment,376,175.39,13.98
-2025-05-30,Westside Clinic,Cardiology,Appointment,143,9.21,53.34
-2024-08-05,North Clinic,Pediatrics,Telehealth,118,82.19,150.51
-2024-01-25,Riverside Center,Emergency,Ambulance,275,193.16,97.74
-2024-01-29,Eastside Clinic,Pediatrics,Ambulance,141,24.72,42.44
-2025-02-20,Main Campus,Cardiology,Appointment,146,228.47,71.64
-2024-01-04,Riverside Center,Family Medicine,Walk-in,161,180.62,11.94
-2024-09-26,Riverside Center,Cardiology,Appointment,72,139.58,110.73
-2024-03-13,Riverside Center,Pediatrics,Referral,303,163.41,121.99
-2024-10-22,Westside Clinic,Cardiology,Telehealth,360,72.01,92.51
-2024-01-10,Eastside Clinic,Emergency,Ambulance,226,218.04,140.77
-2025-05-19,Eastside Clinic,Cardiology,Referral,125,197.66,176.02
-2024-01-05,Westside Clinic,Dermatology,Referral,61,3.51,57.5
-2024-09-02,North Clinic,Family Medicine,Ambulance,28,7.93,49.91
-2024-06-17,Main Campus,Orthopedics,Referral,303,96.23,119.84
-2025-05-22,Westside Clinic,Emergency,Ambulance,91,237.01,110.45
-2025-01-04,Eastside Clinic,Family Medicine,Referral,389,47.02,12.12
-2024-06-13,Eastside Clinic,Emergency,Walk-in,277,14.53,109.33
-2024-03-21,Eastside Clinic,Family Medicine,Referral,145,10.59,114.43
-2025-05-24,Westside Clinic,Emergency,Telehealth,301,195.88,81.79
-2024-04-24,Eastside Clinic,Family Medicine,Walk-in,293,126.08,25.31
-2025-03-29,Main Campus,Orthopedics,Telehealth,129,196.5,42.59
-2025-02-01,North Clinic,Family Medicine,Referral,221,183.09,56.43
-2024-09-06,North Clinic,Dermatology,Telehealth,320,223.21,42.66
-2024-06-12,Eastside Clinic,Orthopedics,Appointment,117,192.96,43.78
-2024-11-12,Main Campus,Dermatology,Referral,140,211.35,154.45
-2024-12-29,Eastside Clinic,Oncology,Walk-in,392,98.77,177.36
-2024-03-04,Westside Clinic,Family Medicine,Walk-in,243,3.52,34.89
-2024-02-02,Eastside Clinic,Pediatrics,Ambulance,41,172.61,155.75
-2025-01-13,North Clinic,Family Medicine,Telehealth,29,88.97,120.44
-2025-02-15,Main Campus,Cardiology,Ambulance,228,136.06,174.61
-2025-02-12,Westside Clinic,Pediatrics,Appointment,268,238.86,159.38
-2024-10-16,Main Campus,Dermatology,Referral,192,77.59,93.06
-2024-06-23,Eastside Clinic,Pediatrics,Referral,72,177.08,160.01
-2024-09-13,Westside Clinic,Emergency,Appointment,157,197.78,98.76
-2025-01-22,Riverside Center,Pediatrics,Appointment,346,29.17,37.61
-2024-11-20,Riverside Center,Dermatology,Referral,224,9.66,119.9
-2024-01-02,Riverside Center,Family Medicine,Referral,215,223.5,50.3
-2024-12-28,Riverside Center,Family Medicine,Walk-in,59,140.54,28.36
-2024-10-20,Westside Clinic,Cardiology,Referral,107,73.8,99.11
-2024-01-26,Westside Clinic,Pediatrics,Referral,147,150.45,92.7
-2024-02-01,Riverside Center,Oncology,Appointment,107,137.81,145.99
-2025-02-10,Riverside Center,Oncology,Walk-in,341,236.49,34.09
-2024-04-24,Riverside Center,Oncology,Appointment,325,135.7,146.63
-2024-04-04,North Clinic,Family Medicine,Appointment,250,102.41,120.58
-2025-03-17,Westside Clinic,Orthopedics,Appointment,368,109.46,104.77
-2024-10-09,Eastside Clinic,Emergency,Appointment,237,186.07,173.71
-2025-01-22,Westside Clinic,Cardiology,Telehealth,154,58.51,53.88
-2024-10-18,Westside Clinic,Dermatology,Referral,244,95.0,68.73
-2024-04-29,North Clinic,Oncology,Telehealth,254,221.69,76.92
-2025-03-01,North Clinic,Orthopedics,Telehealth,216,209.77,10.69
-2025-04-04,Westside Clinic,Orthopedics,Telehealth,30,141.32,125.14
-2024-03-28,Main Campus,Oncology,Appointment,125,139.0,127.83
-2024-03-20,North Clinic,Orthopedics,Referral,214,186.21,12.34
-2024-06-24,Westside Clinic,Dermatology,Ambulance,384,168.81,93.92
-2024-10-23,Main Campus,Oncology,Appointment,388,217.24,168.41
-2024-04-23,Westside Clinic,Cardiology,Referral,110,188.72,63.89
-2024-11-12,Eastside Clinic,Pediatrics,Walk-in,79,206.51,173.67
-2024-02-09,Westside Clinic,Family Medicine,Telehealth,386,208.92,81.76
-2024-01-28,Westside Clinic,Family Medicine,Telehealth,58,154.82,167.5
-2025-05-25,North Clinic,Orthopedics,Telehealth,13,52.34,42.17
-2024-12-26,Westside Clinic,Dermatology,Ambulance,37,96.28,40.69
-2025-03-14,Main Campus,Dermatology,Telehealth,320,91.84,26.33
-2024-09-24,Riverside Center,Family Medicine,Appointment,92,165.2,81.81
-2025-04-29,North Clinic,Cardiology,Telehealth,78,214.93,151.1
-2024-01-25,Westside Clinic,Orthopedics,Referral,330,206.81,41.26
-2024-03-30,Riverside Center,Family Medicine,Walk-in,127,120.49,166.12
-2025-04-05,Westside Clinic,Family Medicine,Appointment,223,210.48,48.2
-2024-02-03,Riverside Center,Orthopedics,Referral,73,157.68,133.84
-2024-05-15,Riverside Center,Cardiology,Telehealth,66,22.6,155.13
-2025-05-06,Eastside Clinic,Dermatology,Referral,165,237.21,20.34
-2025-04-01,North Clinic,Pediatrics,Appointment,398,207.87,138.26
-2024-07-02,Main Campus,Dermatology,Referral,10,47.73,79.07
-2024-07-28,Eastside Clinic,Orthopedics,Walk-in,64,238.35,149.5
-2024-06-14,Eastside Clinic,Emergency,Telehealth,316,221.25,103.9
-2024-05-09,Riverside Center,Emergency,Ambulance,298,152.88,46.74
-2024-10-19,North Clinic,Dermatology,Referral,307,216.98,55.02
-2024-11-11,Westside Clinic,Pediatrics,Referral,260,224.65,49.11
-2024-09-17,Westside Clinic,Pediatrics,Referral,371,48.98,125.66
-2024-02-13,Eastside Clinic,Cardiology,Ambulance,145,165.11,16.22
-2024-03-31,Westside Clinic,Orthopedics,Ambulance,313,212.44,23.4
-2024-05-04,Main Campus,Oncology,Appointment,144,164.65,95.93
-2025-03-11,Westside Clinic,Pediatrics,Appointment,208,106.49,54.35
-2024-09-16,Riverside Center,Pediatrics,Referral,174,58.51,156.57
-2024-01-01,Westside Clinic,Orthopedics,Ambulance,287,65.82,147.03
-2024-11-26,Main Campus,Dermatology,Referral,170,224.61,73.49
-2025-04-12,Main Campus,Family Medicine,Ambulance,117,26.94,162.89
-2024-12-12,Westside Clinic,Emergency,Telehealth,281,205.88,15.11
-2024-11-26,Eastside Clinic,Emergency,Appointment,350,5.14,149.92
-2024-11-21,Eastside Clinic,Pediatrics,Telehealth,376,197.91,142.89
-2024-04-02,North Clinic,Pediatrics,Ambulance,204,7.28,174.67
-2024-08-16,Riverside Center,Oncology,Telehealth,147,237.85,111.98
-2024-11-24,Westside Clinic,Emergency,Appointment,261,216.93,179.59
-2025-06-03,North Clinic,Dermatology,Referral,200,107.05,77.78
-2024-09-21,Eastside Clinic,Family Medicine,Telehealth,169,72.76,48.58
-2025-02-07,Eastside Clinic,Dermatology,Telehealth,20,35.41,15.54
-2024-12-12,Eastside Clinic,Cardiology,Referral,158,221.24,158.35
-2024-03-18,Main Campus,Oncology,Telehealth,68,91.65,94.89
-2025-03-20,Eastside Clinic,Pediatrics,Referral,210,90.51,122.93
-2024-09-06,Main Campus,Emergency,Appointment,206,98.52,138.8
-2024-11-08,Eastside Clinic,Pediatrics,Telehealth,392,1.05,162.92
-2024-02-14,Eastside Clinic,Orthopedics,Referral,382,15.79,73.11
-2024-02-09,Westside Clinic,Cardiology,Telehealth,361,222.74,73.87
-2025-01-22,Westside Clinic,Pediatrics,Walk-in,33,99.99,73.18
-2024-06-03,North Clinic,Orthopedics,Ambulance,248,238.99,116.5
-2024-06-30,Westside Clinic,Emergency,Telehealth,117,89.34,120.81
-2024-05-02,Riverside Center,Dermatology,Appointment,176,96.5,18.28
-2024-01-25,Riverside Center,Pediatrics,Telehealth,189,90.8,152.66
-2024-07-18,North Clinic,Cardiology,Referral,290,203.45,35.63
-2024-05-15,Riverside Center,Pediatrics,Appointment,167,102.81,24.68
-2025-02-13,Riverside Center,Orthopedics,Referral,213,152.86,160.05
-2024-10-03,Main Campus,Cardiology,Walk-in,176,21.3,34.63
-2024-08-21,Riverside Center,Orthopedics,Ambulance,308,87.87,121.32
-2024-12-03,Main Campus,Emergency,Appointment,238,234.36,70.9
-2024-05-17,Westside Clinic,Orthopedics,Walk-in,317,36.51,146.74
-2024-04-08,Riverside Center,Dermatology,Appointment,295,167.55,40.75
-2024-11-03,Riverside Center,Pediatrics,Referral,191,195.61,142.6
-2025-04-11,Main Campus,Dermatology,Referral,289,194.46,81.92
-2025-04-29,Eastside Clinic,Oncology,Walk-in,318,85.28,103.16
-2025-06-23,Riverside Center,Family Medicine,Appointment,377,177.26,170.41
-2025-05-19,Westside Clinic,Family Medicine,Referral,159,37.94,65.53
-2025-03-23,Eastside Clinic,Dermatology,Appointment,19,132.58,106.54
-2024-06-26,Westside Clinic,Emergency,Ambulance,95,70.82,99.55
-2024-01-31,Riverside Center,Orthopedics,Ambulance,298,101.07,123.93
-2024-03-05,North Clinic,Family Medicine,Walk-in,222,107.44,60.27
-2024-10-06,Westside Clinic,Emergency,Walk-in,17,5.97,171.44
-2024-02-19,Main Campus,Orthopedics,Referral,309,99.37,129.13
-2024-04-23,Riverside Center,Family Medicine,Ambulance,14,150.4,30.66
-2024-12-13,North Clinic,Family Medicine,Appointment,157,1.12,146.85
-2024-02-04,Westside Clinic,Cardiology,Appointment,296,213.68,168.65
-2024-05-04,North Clinic,Pediatrics,Walk-in,149,17.06,150.51
-2024-10-05,North Clinic,Dermatology,Walk-in,371,199.15,177.82
-2024-09-16,Main Campus,Pediatrics,Referral,145,14.94,94.46
-2024-11-26,Riverside Center,Emergency,Ambulance,91,177.41,139.23
-2025-04-04,Main Campus,Emergency,Ambulance,354,195.88,155.43
-2024-01-05,Westside Clinic,Oncology,Appointment,393,63.2,89.89
-2024-09-17,North Clinic,Pediatrics,Ambulance,116,43.81,93.19
-2024-03-15,Riverside Center,Cardiology,Appointment,394,31.03,111.38
-2024-12-17,North Clinic,Emergency,Telehealth,21,11.78,148.74
-2024-09-13,North Clinic,Dermatology,Telehealth,298,59.32,117.77
-2024-08-03,Eastside Clinic,Pediatrics,Referral,375,232.34,93.52
-2024-07-20,North Clinic,Oncology,Ambulance,66,103.8,71.48
-2024-08-20,Riverside Center,Family Medicine,Ambulance,295,172.59,127.35
-2024-02-22,Westside Clinic,Family Medicine,Walk-in,242,36.59,101.33
-2024-03-03,Westside Clinic,Cardiology,Walk-in,329,10.91,86.35
-2025-01-04,North Clinic,Family Medicine,Ambulance,261,38.93,176.15
-2024-05-21,Eastside Clinic,Oncology,Walk-in,24,204.17,73.78
-2024-05-23,Riverside Center,Orthopedics,Walk-in,198,67.95,81.11
-2024-09-20,Westside Clinic,Family Medicine,Appointment,114,34.4,32.96
-2024-01-22,Eastside Clinic,Cardiology,Walk-in,334,179.57,48.62
-2024-10-12,Westside Clinic,Cardiology,Ambulance,181,228.52,82.55
-2024-05-06,Eastside Clinic,Pediatrics,Appointment,351,142.49,58.48
-2024-03-12,Eastside Clinic,Family Medicine,Walk-in,277,57.8,30.26
-2025-04-03,Riverside Center,Dermatology,Walk-in,311,45.13,149.08
-2024-10-29,Eastside Clinic,Orthopedics,Referral,243,54.38,67.17
-2025-04-09,North Clinic,Dermatology,Referral,379,142.1,40.14
-2024-10-24,Westside Clinic,Family Medicine,Walk-in,24,28.75,80.25
-2024-11-11,Main Campus,Pediatrics,Ambulance,231,64.69,110.57
-2024-06-07,Eastside Clinic,Orthopedics,Appointment,196,180.48,77.46
-2025-03-16,Riverside Center,Family Medicine,Ambulance,141,65.04,14.76
-2024-10-31,Eastside Clinic,Orthopedics,Referral,367,38.23,137.62
-2024-11-16,Eastside Clinic,Orthopedics,Referral,365,117.07,104.11
-2024-02-05,North Clinic,Family Medicine,Ambulance,266,151.7,18.51
-2024-01-16,Westside Clinic,Family Medicine,Ambulance,264,128.17,157.87
-2024-04-25,Westside Clinic,Oncology,Appointment,218,93.21,139.4
-2024-07-08,Westside Clinic,Emergency,Telehealth,118,181.24,144.25
-2024-05-04,Westside Clinic,Family Medicine,Appointment,249,128.03,23.47
-2024-07-24,Main Campus,Dermatology,Appointment,268,48.33,76.5
-2025-04-27,Eastside Clinic,Pediatrics,Ambulance,161,192.14,23.27
-2024-05-30,Westside Clinic,Pediatrics,Referral,227,122.81,54.43
-2025-05-09,Westside Clinic,Cardiology,Appointment,345,186.08,171.51
-2025-03-31,North Clinic,Cardiology,Appointment,39,1.24,53.72
-2025-02-08,Main Campus,Emergency,Telehealth,266,137.45,73.03
-2024-08-06,Westside Clinic,Pediatrics,Telehealth,299,190.81,167.28
-2024-07-21,Westside Clinic,Oncology,Appointment,291,34.47,167.65
-2024-11-02,Westside Clinic,Orthopedics,Telehealth,353,221.24,176.36
-2025-04-12,Westside Clinic,Emergency,Ambulance,315,109.32,119.26
-2024-02-16,North Clinic,Cardiology,Referral,62,159.03,133.03
-2024-02-09,Westside Clinic,Dermatology,Ambulance,286,147.26,100.22
-2024-12-10,Riverside Center,Family Medicine,Walk-in,136,81.48,63.04
-2025-04-17,Main Campus,Dermatology,Walk-in,249,110.68,83.29
-2024-10-18,Westside Clinic,Family Medicine,Appointment,399,116.96,53.59
-2024-04-10,Riverside Center,Dermatology,Telehealth,257,45.34,132.55
-2024-04-13,Westside Clinic,Family Medicine,Referral,248,221.59,93.21
-2024-05-27,Riverside Center,Emergency,Referral,33,5.26,66.67
-2025-06-15,Eastside Clinic,Cardiology,Telehealth,101,93.11,13.67
-2025-01-05,Westside Clinic,Pediatrics,Walk-in,166,83.21,122.01
-2024-01-19,Westside Clinic,Dermatology,Referral,209,12.22,177.07
-2024-04-01,Main Campus,Dermatology,Appointment,270,207.37,142.02
-2024-11-19,Westside Clinic,Oncology,Walk-in,376,59.95,102.22
-2025-04-04,North Clinic,Cardiology,Telehealth,285,86.06,55.26
-2024-06-03,Eastside Clinic,Orthopedics,Appointment,26,93.93,154.11
-2024-09-26,Eastside Clinic,Pediatrics,Ambulance,84,133.58,49.94
-2024-10-03,North Clinic,Orthopedics,Walk-in,273,158.12,92.78
-2024-10-23,Main Campus,Cardiology,Telehealth,342,151.91,151.48
-2025-02-15,Riverside Center,Emergency,Referral,260,101.45,37.12
-2024-04-27,Westside Clinic,Family Medicine,Ambulance,212,217.06,164.52
-2024-10-02,Main Campus,Cardiology,Walk-in,143,225.17,103.59
-2025-04-17,Main Campus,Emergency,Appointment,35,111.35,152.24
-2025-05-25,Westside Clinic,Dermatology,Walk-in,388,76.99,13.46
-2025-04-17,North Clinic,Dermatology,Appointment,221,224.59,62.25
-2025-04-16,Eastside Clinic,Oncology,Ambulance,385,60.03,144.3
-2024-05-13,Westside Clinic,Cardiology,Walk-in,329,223.99,65.56
-2025-06-11,Main Campus,Pediatrics,Telehealth,267,109.18,170.64
-2024-05-14,Main Campus,Pediatrics,Telehealth,260,94.26,152.11
-2024-12-11,Eastside Clinic,Family Medicine,Telehealth,121,203.51,166.37
-2025-05-20,Eastside Clinic,Oncology,Appointment,92,4.69,59.45
-2024-07-07,Riverside Center,Family Medicine,Ambulance,46,185.43,168.92
-2025-04-02,Westside Clinic,Family Medicine,Appointment,304,191.9,153.75
+Order Date,Sales Channel,Customer Segment,Product Category,Order Quantity,Discount Amount,Total Revenue
+2024-06-15,Marketplace,Returning,Books,13,42.72,3906.31
+2024-02-14,Marketplace,Returning,Electronics,29,233.6,2688.48
+2025-03-20,Social Media,Wholesale,Electronics,20,9.28,2083.1
+2024-05-20,Website,New,Books,13,90.6,2703.0
+2024-11-27,Social Media,Loyalty Member,Apparel,23,148.8,4998.58
+2024-04-29,Marketplace,Loyalty Member,Books,46,236.2,3270.55
+2025-04-18,Social Media,Returning,Books,30,143.96,2384.46
+2025-02-02,Marketplace,Loyalty Member,Sports,50,67.46,2087.82
+2024-10-08,Marketplace,Returning,Apparel,6,94.91,873.41
+2024-09-04,Mobile App,New,Apparel,24,196.83,696.01
+2024-10-27,Website,Wholesale,Sports,17,132.27,3823.82
+2024-04-17,Social Media,New,Apparel,48,157.82,3584.96
+2024-01-26,Mobile App,Wholesale,Sports,42,169.82,4682.5
+2024-09-21,Website,Loyalty Member,Sports,46,101.68,4106.76
+2025-05-20,Phone Order,Returning,Beauty,44,164.9,252.6
+2025-06-20,Phone Order,Loyalty Member,Sports,18,64.14,1213.4
+2025-04-27,Website,New,Sports,5,193.95,4845.59
+2025-01-09,Mobile App,Wholesale,Sports,46,135.98,3083.85
+2024-10-16,Social Media,Returning,Home & Kitchen,29,192.04,1278.5
+2024-09-04,Marketplace,Returning,Sports,8,13.15,746.87
+2025-04-27,Marketplace,Returning,Electronics,14,19.45,1830.87
+2025-04-05,Mobile App,Wholesale,Books,48,61.37,4219.78
+2025-01-12,Marketplace,Wholesale,Books,1,167.58,318.12
+2024-03-17,Website,Returning,Beauty,24,135.6,4576.15
+2025-02-25,Phone Order,New,Books,4,229.15,4956.58
+2025-05-29,Website,Loyalty Member,Beauty,29,113.43,2802.96
+2025-06-04,Website,Returning,Apparel,16,28.88,1192.63
+2025-02-03,Social Media,Returning,Books,21,103.43,2639.28
+2025-06-20,Mobile App,Returning,Beauty,21,90.18,2567.46
+2024-02-28,Mobile App,New,Books,14,197.35,1017.89
+2024-04-09,Website,Loyalty Member,Beauty,39,11.56,673.62
+2024-04-25,Marketplace,Returning,Books,10,233.85,91.1
+2025-05-15,Marketplace,Returning,Books,40,56.17,777.43
+2025-03-10,Phone Order,New,Books,27,122.43,1666.44
+2024-04-16,Phone Order,Loyalty Member,Books,15,65.69,3653.35
+2025-04-20,Mobile App,New,Beauty,27,75.69,3394.3
+2024-02-13,Phone Order,Wholesale,Sports,15,60.37,667.11
+2024-11-17,Website,Wholesale,Apparel,35,144.19,1943.58
+2024-11-11,Website,Loyalty Member,Apparel,14,138.19,1129.19
+2024-01-03,Marketplace,Returning,Sports,32,207.29,196.94
+2024-07-14,Phone Order,Wholesale,Electronics,30,21.86,2155.02
+2025-01-28,Social Media,Wholesale,Sports,49,76.59,261.44
+2024-06-26,Phone Order,Returning,Sports,10,65.28,3765.4
+2024-07-08,Phone Order,New,Sports,42,94.36,563.73
+2025-04-04,Mobile App,Returning,Apparel,15,13.03,4916.11
+2024-04-23,Social Media,New,Electronics,40,129.86,3592.25
+2025-04-01,Website,Wholesale,Home & Kitchen,10,80.65,2063.31
+2024-05-14,Phone Order,Wholesale,Sports,32,98.6,3860.6
+2024-09-26,Social Media,New,Sports,3,36.26,3788.21
+2024-03-30,Phone Order,New,Apparel,15,172.2,1148.79
+2024-04-09,Social Media,Wholesale,Apparel,25,36.74,4506.69
+2025-05-10,Mobile App,Returning,Home & Kitchen,19,86.83,849.45
+2024-02-10,Social Media,Loyalty Member,Electronics,49,228.52,1911.97
+2024-10-12,Marketplace,Wholesale,Electronics,23,110.49,3833.64
+2024-11-25,Mobile App,Wholesale,Home & Kitchen,6,166.15,4201.6
+2024-05-30,Mobile App,Wholesale,Apparel,18,31.4,3959.04
+2024-02-01,Website,Loyalty Member,Electronics,32,75.55,3070.59
+2024-12-12,Website,Loyalty Member,Apparel,20,185.68,2320.06
+2024-08-12,Phone Order,Returning,Beauty,36,27.39,4911.24
+2024-11-07,Website,Wholesale,Books,5,33.88,1750.69
+2024-07-06,Phone Order,Returning,Sports,22,24.47,2859.74
+2024-02-14,Mobile App,New,Home & Kitchen,44,110.24,826.23
+2024-06-04,Mobile App,Wholesale,Electronics,40,114.81,1258.62
+2024-03-18,Social Media,New,Sports,38,3.96,3141.75
+2025-06-11,Social Media,Returning,Sports,3,214.25,2102.86
+2024-06-11,Social Media,New,Beauty,41,97.84,1079.96
+2025-03-05,Marketplace,New,Electronics,37,174.9,1841.37
+2025-05-05,Social Media,Wholesale,Apparel,47,111.57,2769.26
+2025-06-19,Marketplace,New,Home & Kitchen,46,50.49,3804.8
+2024-04-16,Mobile App,Wholesale,Electronics,12,9.19,3640.93
+2024-12-11,Mobile App,Loyalty Member,Electronics,48,160.6,2603.48
+2025-02-17,Mobile App,Returning,Electronics,48,3.06,81.34
+2024-05-07,Phone Order,Wholesale,Beauty,7,47.29,1797.13
+2024-06-22,Website,New,Books,18,25.2,2376.45
+2025-06-12,Website,New,Beauty,33,145.49,3066.51
+2025-02-20,Social Media,Returning,Beauty,10,118.15,2306.61
+2025-05-13,Social Media,New,Apparel,37,199.23,3970.31
+2024-02-19,Mobile App,Loyalty Member,Sports,37,222.19,3898.46
+2025-05-24,Website,Wholesale,Sports,26,166.48,1488.78
+2024-05-15,Social Media,New,Home & Kitchen,29,81.1,3895.55
+2024-10-19,Social Media,New,Electronics,30,21.7,1378.44
+2024-07-10,Website,Loyalty Member,Beauty,45,64.85,3727.31
+2024-09-20,Mobile App,Wholesale,Electronics,25,10.22,1171.06
+2025-02-27,Website,Loyalty Member,Electronics,23,92.01,2036.07
+2025-02-21,Phone Order,Returning,Sports,43,42.75,3352.25
+2024-02-04,Website,Loyalty Member,Apparel,41,142.36,1656.68
+2025-06-06,Phone Order,Loyalty Member,Apparel,22,81.17,4034.96
+2024-09-05,Phone Order,Wholesale,Apparel,43,189.54,2469.86
+2025-01-16,Social Media,New,Apparel,25,100.75,3645.16
+2024-05-10,Mobile App,Returning,Sports,6,134.84,1634.8
+2025-06-03,Website,Wholesale,Sports,43,169.88,4878.39
+2025-03-29,Website,Returning,Electronics,37,169.69,4359.98
+2024-05-08,Marketplace,Wholesale,Sports,13,211.89,3796.37
+2024-03-04,Website,New,Books,34,77.64,3176.71
+2024-08-05,Website,Returning,Home & Kitchen,34,174.06,3383.3
+2025-01-06,Website,Wholesale,Sports,32,61.71,1291.29
+2024-10-02,Marketplace,Loyalty Member,Apparel,34,159.9,2515.21
+2024-05-24,Social Media,Loyalty Member,Electronics,27,233.11,3869.81
+2024-04-21,Social Media,New,Electronics,14,125.28,146.67
+2024-09-02,Marketplace,New,Electronics,38,32.18,2660.37
+2024-09-25,Social Media,Loyalty Member,Sports,10,100.31,4550.38
+2024-01-14,Marketplace,New,Books,23,245.04,362.01
+2024-10-08,Phone Order,Wholesale,Electronics,8,232.08,1929.87
+2024-10-23,Website,Wholesale,Books,34,225.65,3610.42
+2024-01-12,Mobile App,Returning,Sports,8,245.26,2757.97
+2024-10-21,Social Media,New,Apparel,40,211.58,3820.06
+2024-06-05,Website,Returning,Sports,46,0.4,3030.67
+2024-05-19,Website,Wholesale,Electronics,24,241.52,1559.21
+2025-05-05,Mobile App,Loyalty Member,Home & Kitchen,19,91.93,3980.46
+2024-05-19,Website,Loyalty Member,Home & Kitchen,6,125.0,3689.35
+2024-04-15,Website,Loyalty Member,Sports,30,150.86,2466.05
+2024-11-07,Phone Order,Loyalty Member,Beauty,43,113.66,859.89
+2024-07-12,Social Media,New,Sports,40,165.57,1724.71
+2024-11-22,Marketplace,Wholesale,Electronics,21,20.91,1035.59
+2024-05-15,Phone Order,Wholesale,Electronics,5,234.07,218.98
+2025-05-19,Phone Order,Wholesale,Electronics,2,27.25,1088.6
+2024-06-23,Phone Order,Wholesale,Apparel,49,140.16,2002.35
+2024-06-24,Marketplace,Returning,Books,38,226.99,579.92
+2024-11-25,Phone Order,Wholesale,Electronics,18,93.37,4034.12
+2025-05-31,Marketplace,New,Sports,8,38.54,634.84
+2024-01-27,Website,New,Sports,3,29.87,1832.42
+2025-04-08,Mobile App,New,Books,5,32.39,2943.15
+2024-08-01,Marketplace,Loyalty Member,Sports,17,202.77,4904.27
+2024-03-15,Social Media,New,Electronics,9,142.8,3968.49
+2024-02-02,Social Media,Returning,Beauty,15,38.72,3153.36
+2024-04-29,Marketplace,New,Apparel,9,209.54,3280.55
+2025-01-10,Website,Loyalty Member,Home & Kitchen,28,246.75,2888.74
+2024-06-06,Social Media,New,Books,28,69.13,3659.57
+2025-02-15,Social Media,Returning,Home & Kitchen,19,216.1,4572.67
+2024-12-15,Phone Order,Returning,Books,43,195.47,4861.04
+2024-02-19,Mobile App,Returning,Apparel,26,143.11,791.99
+2024-07-12,Social Media,New,Apparel,2,79.77,4167.43
+2025-04-23,Marketplace,Wholesale,Apparel,7,227.03,2136.55
+2025-02-03,Website,New,Sports,41,19.86,3895.39
+2024-12-28,Phone Order,New,Home & Kitchen,48,250.0,3851.24
+2024-10-31,Marketplace,New,Electronics,42,64.32,3813.82
+2025-03-08,Mobile App,New,Apparel,8,152.35,1007.09
+2024-03-07,Phone Order,Returning,Apparel,3,107.76,2063.79
+2024-08-25,Mobile App,New,Apparel,13,133.98,1456.1
+2025-04-15,Marketplace,Wholesale,Home & Kitchen,40,105.49,2845.87
+2024-12-15,Phone Order,Returning,Home & Kitchen,17,215.66,1331.86
+2024-09-19,Phone Order,Wholesale,Sports,10,27.36,1734.26
+2024-08-12,Marketplace,Wholesale,Sports,5,148.57,3409.29
+2024-05-12,Social Media,Wholesale,Home & Kitchen,19,199.64,2739.0
+2024-06-20,Website,Loyalty Member,Books,6,100.41,3497.08
+2024-02-27,Website,New,Electronics,39,176.49,4592.92
+2024-01-02,Website,Loyalty Member,Books,7,180.3,1551.82
+2024-02-29,Social Media,Returning,Home & Kitchen,21,202.29,3373.43
+2025-01-20,Phone Order,Wholesale,Books,27,4.76,2832.37
+2024-09-16,Mobile App,New,Books,48,95.4,843.19
+2025-01-28,Marketplace,Wholesale,Books,3,240.69,3578.37
+2025-04-23,Social Media,Returning,Beauty,15,157.01,4480.98
+2024-10-14,Website,New,Books,1,197.22,2151.2
+2024-08-06,Mobile App,Loyalty Member,Home & Kitchen,42,214.27,3275.04
+2025-01-30,Phone Order,Returning,Electronics,33,137.63,2508.03
+2024-07-30,Marketplace,Loyalty Member,Beauty,19,232.03,3459.31
+2024-02-15,Marketplace,Wholesale,Beauty,43,248.43,4258.18
+2025-01-15,Marketplace,Wholesale,Electronics,42,88.23,1013.94
+2024-03-15,Mobile App,Loyalty Member,Electronics,15,51.65,778.56
+2025-06-23,Phone Order,Returning,Apparel,37,13.37,4869.18
+2025-04-11,Mobile App,New,Beauty,46,23.65,1542.84
+2024-01-24,Mobile App,Returning,Beauty,14,70.33,3785.89
+2024-04-02,Phone Order,New,Apparel,38,126.28,2599.36
+2024-09-02,Mobile App,Wholesale,Apparel,4,109.37,266.4
+2024-07-03,Social Media,New,Books,41,86.77,1239.91
+2024-10-30,Marketplace,New,Electronics,11,159.88,705.61
+2024-06-06,Social Media,Loyalty Member,Apparel,20,246.84,1773.61
+2024-06-21,Phone Order,New,Books,47,7.77,1159.53
+2024-02-01,Social Media,New,Apparel,28,50.73,3058.88
+2024-10-27,Mobile App,Wholesale,Books,42,225.9,1841.81
+2024-05-25,Phone Order,Returning,Sports,9,22.45,2673.77
+2024-11-15,Marketplace,Returning,Books,15,167.43,4305.36
+2025-05-10,Website,Returning,Electronics,7,147.81,3544.28
+2024-08-29,Phone Order,Wholesale,Home & Kitchen,18,144.52,2602.37
+2024-03-27,Marketplace,New,Electronics,26,235.03,885.29
+2024-07-05,Social Media,Loyalty Member,Sports,8,48.56,2758.33
+2025-04-02,Website,Returning,Beauty,25,167.41,1664.94
+2024-04-25,Mobile App,Wholesale,Beauty,38,10.75,2142.12
+2024-04-16,Phone Order,New,Electronics,21,214.61,1181.33
+2025-04-17,Mobile App,Loyalty Member,Electronics,11,196.35,343.42
+2025-06-04,Website,Wholesale,Beauty,46,233.92,2157.97
+2024-08-27,Phone Order,Returning,Beauty,19,27.7,4093.11
+2024-12-03,Website,Loyalty Member,Beauty,22,118.99,765.47
+2024-08-17,Marketplace,Loyalty Member,Home & Kitchen,14,135.41,4272.86
+2024-10-26,Website,Returning,Apparel,19,123.84,1877.31
+2024-04-17,Marketplace,New,Sports,17,98.11,917.43
+2024-06-04,Phone Order,Wholesale,Sports,6,53.68,2830.74
+2025-05-05,Social Media,Returning,Apparel,19,166.15,2631.59
+2024-08-14,Mobile App,New,Electronics,26,48.79,387.57
+2024-10-07,Marketplace,Returning,Electronics,13,154.32,891.1
+2024-03-25,Marketplace,New,Sports,24,223.67,1672.1
+2024-08-12,Marketplace,Returning,Sports,14,232.45,1894.72
+2025-03-07,Marketplace,New,Apparel,37,12.41,3894.41
+2024-01-24,Social Media,Returning,Apparel,38,209.84,2351.88
+2024-03-19,Website,New,Books,40,187.8,1827.58
+2024-03-30,Marketplace,Wholesale,Apparel,30,34.3,1276.17
+2024-01-30,Marketplace,New,Apparel,37,133.62,3393.43
+2024-12-01,Website,New,Home & Kitchen,28,199.04,3034.27
+2025-05-29,Mobile App,Wholesale,Apparel,42,247.55,2479.89
+2024-02-15,Website,Loyalty Member,Electronics,28,88.53,4974.02
+2024-05-11,Phone Order,Wholesale,Sports,29,9.79,1911.82
+2025-06-11,Phone Order,Loyalty Member,Sports,27,197.07,1931.48
+2025-05-16,Marketplace,Returning,Beauty,34,190.04,2077.28
+2024-02-09,Social Media,New,Electronics,3,122.53,2222.71
+2024-09-26,Mobile App,Returning,Apparel,27,11.41,3004.07
+2025-04-19,Website,Returning,Sports,4,237.09,2863.26
+2024-07-24,Social Media,Returning,Sports,47,72.88,4667.24
+2024-08-29,Mobile App,Wholesale,Beauty,40,25.31,3734.65
+2025-01-03,Website,New,Sports,26,85.5,1740.17
+2024-05-18,Social Media,Returning,Beauty,10,91.65,4042.97
+2025-06-16,Social Media,New,Home & Kitchen,1,155.19,580.31
+2025-05-14,Phone Order,Returning,Sports,26,95.82,4931.86
+2024-01-15,Website,Returning,Electronics,36,166.21,2490.52
+2024-12-09,Marketplace,Wholesale,Apparel,15,181.42,1950.83
+2024-08-02,Mobile App,Wholesale,Books,30,233.99,4679.43
+2024-09-06,Website,Returning,Electronics,34,44.55,2296.09
+2025-01-13,Mobile App,New,Sports,4,28.7,4227.14
+2024-10-05,Mobile App,Returning,Sports,43,103.42,2600.02
+2025-06-08,Marketplace,Returning,Apparel,15,211.86,730.24
+2024-03-08,Mobile App,Wholesale,Apparel,5,90.65,2341.08
+2024-02-16,Website,Wholesale,Home & Kitchen,25,191.55,1643.32
+2024-04-23,Website,New,Apparel,23,34.04,3641.52
+2025-02-03,Social Media,Returning,Books,36,25.66,4057.19
+2024-03-13,Marketplace,New,Sports,16,184.38,2544.02
+2024-11-18,Mobile App,Wholesale,Electronics,25,145.74,2690.34
+2024-05-24,Mobile App,Loyalty Member,Sports,36,248.39,4804.76
+2025-05-10,Phone Order,Loyalty Member,Sports,33,83.7,3586.34
+2024-05-01,Social Media,New,Electronics,30,221.34,4827.35
+2024-04-16,Marketplace,New,Books,33,70.38,3882.93
+2024-12-13,Social Media,Wholesale,Beauty,31,139.97,2987.48
+2024-07-26,Marketplace,Loyalty Member,Apparel,1,137.61,843.99
+2024-01-18,Marketplace,Loyalty Member,Sports,8,9.27,2109.17
+2024-09-13,Website,Loyalty Member,Beauty,13,80.77,577.18
+2025-02-20,Mobile App,New,Electronics,47,199.1,2198.45
+2024-05-14,Social Media,Loyalty Member,Sports,28,39.32,1987.71
+2024-02-25,Mobile App,Returning,Beauty,15,214.81,2547.86
+2024-10-04,Website,Wholesale,Sports,46,47.59,566.33
+2024-02-01,Mobile App,Wholesale,Books,46,142.45,2444.68
+2024-01-31,Marketplace,Loyalty Member,Apparel,22,90.07,2403.14
+2024-10-16,Mobile App,Loyalty Member,Apparel,14,148.21,141.86

@@ -1,241 +1,241 @@
-ticket_created_date,ticket_priority,ticket_channel,ticket_status,ticket_resolution_hours,ticket_satisfaction_score,ticket_reopen_count
-2024-06-10,High,Phone,Reopened,46.36,2,4
-2025-06-18,Low,Phone,Resolved,609.05,1,5
-2024-03-13,Low,Mobile App,Closed,680.99,3,5
-2024-10-16,High,Web Form,New,269.94,3,5
-2025-04-25,Urgent,Email,Pending,490.25,3,4
-2024-09-20,High,Social Media,Resolved,253.95,2,9
-2025-02-22,High,Email,Open,508.0,4,5
-2024-11-15,Medium,Social Media,New,673.27,4,9
-2025-04-07,Medium,Mobile App,Reopened,308.27,2,2
-2025-01-04,Low,Email,Reopened,3.81,2,9
-2025-03-20,High,Live Chat,Closed,530.54,5,10
-2024-10-07,Urgent,Live Chat,Resolved,408.37,4,10
-2024-11-09,Medium,Phone,Pending,168.3,5,7
-2024-03-22,Medium,Email,Open,442.35,5,7
-2024-12-16,Urgent,Social Media,Open,14.61,4,8
-2024-10-20,Low,Email,Open,540.61,2,1
-2025-05-08,Urgent,Social Media,Open,588.95,5,1
-2025-04-25,High,Live Chat,Open,391.72,5,8
-2024-12-09,Medium,Web Form,Open,114.58,2,9
-2025-06-01,Medium,Social Media,Closed,262.89,3,7
-2024-04-19,Low,Live Chat,Open,548.41,2,9
-2024-09-30,Urgent,Email,New,631.67,5,7
-2024-07-19,Urgent,Email,Resolved,323.28,2,3
-2024-10-28,High,Web Form,Reopened,596.14,4,1
-2025-06-15,Low,Email,Closed,411.6,1,5
-2024-03-24,Urgent,Phone,Resolved,536.5,5,9
-2025-02-03,Low,Social Media,Closed,717.53,4,7
-2024-01-02,Urgent,Social Media,New,687.26,2,10
-2025-04-22,Low,Phone,Closed,166.13,2,7
-2025-02-27,High,Web Form,Resolved,268.49,5,3
-2024-06-19,Medium,Mobile App,Closed,376.47,2,0
-2024-05-17,Medium,Email,Pending,431.79,2,2
-2024-05-06,Medium,Mobile App,Reopened,469.53,2,6
-2024-02-18,Urgent,Social Media,Pending,323.9,5,5
-2025-03-15,High,Social Media,Closed,546.96,4,8
-2024-04-24,High,Email,Reopened,335.15,3,5
-2025-05-26,Urgent,Mobile App,Pending,437.18,3,8
-2024-05-05,Low,Web Form,Open,559.92,3,1
-2024-02-01,Urgent,Mobile App,Pending,603.66,1,2
-2024-08-19,Urgent,Live Chat,Resolved,473.54,3,5
-2024-07-11,Medium,Email,Closed,713.1,2,6
-2025-03-10,Urgent,Phone,Open,214.22,2,7
-2025-01-06,Urgent,Social Media,Pending,433.04,4,9
-2024-01-30,Urgent,Web Form,Open,346.54,4,9
-2024-06-08,Urgent,Live Chat,New,98.98,3,9
-2024-04-11,High,Phone,Closed,267.76,3,3
-2025-04-28,High,Social Media,Pending,359.21,1,8
-2024-09-30,High,Mobile App,New,264.29,3,6
-2025-04-17,Low,Phone,Reopened,600.73,5,5
-2024-06-23,Low,Mobile App,Reopened,142.92,4,5
-2025-05-29,Urgent,Web Form,Reopened,139.75,2,8
-2024-11-04,Low,Social Media,Pending,240.27,4,1
-2024-12-21,Urgent,Live Chat,Reopened,445.59,4,5
-2025-05-13,Medium,Phone,Pending,47.39,4,4
-2024-01-10,Urgent,Email,New,157.67,2,5
-2025-02-22,Medium,Social Media,Pending,94.42,1,9
-2024-05-15,Urgent,Web Form,Closed,632.23,3,5
-2024-10-11,Low,Social Media,Open,718.37,2,2
-2024-06-22,High,Web Form,New,125.25,5,9
-2024-01-02,Medium,Phone,New,24.91,2,6
-2024-07-06,High,Live Chat,Resolved,33.75,3,7
-2024-11-24,Low,Email,Closed,620.36,3,1
-2025-01-09,Urgent,Live Chat,Resolved,71.4,3,7
-2024-01-15,Medium,Mobile App,Reopened,291.94,4,9
-2024-01-03,Medium,Mobile App,Pending,515.12,5,8
-2024-05-05,Low,Mobile App,Closed,83.94,4,9
-2024-12-31,Urgent,Phone,Closed,131.59,2,4
-2024-11-04,Urgent,Mobile App,Pending,607.92,3,6
-2025-01-15,Low,Web Form,Resolved,232.64,3,8
-2024-09-20,High,Email,Closed,383.27,4,6
-2025-03-01,Low,Mobile App,Open,333.42,2,2
-2024-07-17,High,Social Media,Resolved,251.1,4,7
-2024-10-11,Urgent,Web Form,Resolved,486.22,3,9
-2025-02-08,High,Phone,Pending,233.59,5,8
-2025-02-18,Medium,Web Form,New,86.91,4,6
-2024-04-20,High,Social Media,Closed,446.45,3,9
-2025-02-20,Urgent,Social Media,Pending,476.03,5,2
-2024-10-22,Medium,Phone,Closed,501.43,2,3
-2024-08-31,Low,Live Chat,Open,179.17,3,5
-2024-04-04,High,Web Form,Resolved,1.46,2,8
-2025-04-01,High,Live Chat,Open,215.15,4,5
-2024-09-04,Low,Live Chat,Closed,549.68,2,6
-2024-04-30,High,Email,Resolved,692.0,3,4
-2025-01-30,High,Web Form,Reopened,433.31,3,3
-2024-08-12,Low,Phone,Reopened,472.71,3,4
-2024-07-23,Medium,Social Media,Reopened,84.4,2,7
-2025-05-07,Urgent,Live Chat,Reopened,109.05,4,4
-2024-11-23,Low,Email,Resolved,547.88,2,1
-2025-05-04,Medium,Web Form,New,125.63,3,8
-2025-03-04,Urgent,Phone,Closed,195.46,3,9
-2024-02-04,Low,Social Media,Open,455.02,5,6
-2024-09-07,High,Mobile App,New,337.72,3,6
-2024-01-11,Medium,Mobile App,Pending,587.62,1,1
-2024-01-17,Urgent,Phone,Pending,395.85,2,2
-2025-02-03,Medium,Live Chat,Resolved,629.06,4,5
-2024-05-28,Urgent,Web Form,Resolved,302.72,2,9
-2024-02-07,Urgent,Live Chat,Open,158.12,4,7
-2024-12-01,Urgent,Social Media,New,7.52,2,5
-2024-09-29,High,Mobile App,Resolved,273.62,3,1
-2024-04-27,Low,Web Form,Closed,311.28,3,5
-2024-11-06,Urgent,Social Media,Pending,117.71,3,1
-2024-11-18,Urgent,Mobile App,Pending,267.16,4,4
-2025-05-27,Urgent,Email,New,660.15,2,8
-2024-05-11,Urgent,Live Chat,Open,186.35,2,4
-2024-09-20,Urgent,Social Media,Reopened,256.4,3,4
-2024-07-26,Low,Live Chat,Closed,9.81,4,5
-2025-02-04,Medium,Phone,Reopened,604.77,1,1
-2024-01-23,Low,Phone,Reopened,152.75,1,3
-2024-06-21,Medium,Web Form,Resolved,271.51,3,7
-2025-05-31,High,Phone,Closed,373.43,3,6
-2024-12-18,Medium,Live Chat,New,549.61,2,5
-2024-01-26,High,Live Chat,New,439.8,4,5
-2024-05-21,Low,Phone,Resolved,683.18,5,2
-2025-05-11,Medium,Web Form,Open,94.9,4,5
-2025-01-16,Urgent,Mobile App,New,319.41,3,2
-2024-05-02,Medium,Live Chat,New,86.1,4,9
-2025-04-21,Medium,Mobile App,Closed,49.18,4,7
-2024-07-21,Medium,Mobile App,Resolved,99.25,3,7
-2024-07-09,Medium,Live Chat,Open,466.63,3,8
-2024-04-22,Medium,Phone,Closed,700.1,3,3
-2025-05-19,Medium,Email,Resolved,253.86,2,6
-2024-10-12,High,Email,Open,592.19,3,8
-2024-07-24,Low,Social Media,Reopened,23.33,2,10
-2025-06-08,Medium,Social Media,New,351.39,4,1
-2025-02-10,Medium,Web Form,New,4.33,1,8
-2024-07-24,Low,Email,Pending,286.13,1,9
-2025-02-08,Medium,Phone,Reopened,660.94,3,2
-2024-01-20,Medium,Mobile App,Pending,1.41,4,4
-2024-12-29,Low,Social Media,Reopened,46.86,5,1
-2024-07-15,Urgent,Social Media,Pending,318.44,2,7
-2025-04-13,Medium,Web Form,Resolved,494.43,3,4
-2024-05-26,Low,Phone,New,308.49,2,5
-2024-02-22,High,Mobile App,Resolved,122.78,3,9
-2024-07-09,Low,Phone,Pending,226.46,2,5
-2024-08-18,Urgent,Email,Reopened,231.1,5,10
-2024-05-08,Urgent,Email,Pending,286.05,3,5
-2024-11-24,Low,Web Form,Reopened,522.13,3,6
-2024-01-27,Low,Phone,Reopened,481.4,2,2
-2024-02-25,Low,Live Chat,Resolved,504.1,3,7
-2024-09-01,Medium,Social Media,Reopened,520.69,5,5
-2025-01-03,Low,Email,Resolved,513.01,2,7
-2025-02-12,Medium,Live Chat,Pending,385.87,4,5
-2024-08-19,High,Live Chat,Pending,60.08,4,4
-2024-08-23,Low,Social Media,Resolved,402.07,5,6
-2025-01-16,Urgent,Email,New,655.72,3,7
-2024-03-01,Low,Mobile App,Closed,108.01,4,2
-2025-01-30,Medium,Web Form,New,500.08,3,6
-2025-06-02,High,Phone,Pending,434.33,3,8
-2024-08-11,High,Live Chat,Pending,627.91,3,0
-2024-02-17,High,Web Form,Pending,658.21,1,3
-2025-05-06,Low,Social Media,New,389.77,2,3
-2025-03-03,Urgent,Mobile App,Reopened,561.25,3,2
-2024-01-08,Medium,Phone,Open,433.46,4,3
-2025-03-27,Urgent,Phone,New,56.08,3,5
-2024-04-22,Urgent,Mobile App,Resolved,657.0,3,2
-2024-12-09,High,Live Chat,Pending,90.58,4,3
-2024-06-29,Medium,Social Media,Reopened,373.63,3,5
-2024-02-04,Medium,Web Form,Open,168.37,4,10
-2025-01-20,Low,Mobile App,Open,189.87,4,4
-2025-04-17,High,Mobile App,Pending,704.63,2,3
-2025-02-23,Medium,Social Media,Pending,103.2,3,8
-2024-09-07,Urgent,Phone,Closed,347.34,4,10
-2025-05-10,Low,Email,Pending,642.83,1,3
-2024-05-18,Low,Social Media,Pending,411.7,2,8
-2025-01-06,Low,Email,New,573.22,2,9
-2024-08-01,Medium,Email,Closed,297.48,2,2
-2024-11-20,Medium,Mobile App,Open,319.51,2,0
-2024-01-31,Medium,Social Media,Closed,602.0,3,1
-2025-02-26,High,Social Media,New,677.22,3,9
-2025-01-19,Low,Live Chat,Pending,234.33,4,7
-2025-05-12,Low,Web Form,Reopened,132.27,2,9
-2025-02-17,Urgent,Mobile App,Closed,303.3,5,8
-2024-02-18,Urgent,Web Form,Resolved,201.45,4,7
-2025-04-17,High,Phone,Reopened,382.51,2,3
-2025-06-05,Low,Mobile App,Reopened,446.5,3,5
-2024-12-30,Low,Mobile App,Pending,36.55,3,0
-2024-06-08,Medium,Email,Pending,620.37,2,10
-2024-03-16,Low,Social Media,Closed,298.1,3,5
-2024-01-15,Low,Social Media,Pending,702.4,3,8
-2024-11-02,Low,Phone,Resolved,234.75,2,9
-2025-03-28,High,Web Form,Resolved,330.87,1,7
-2024-07-05,Low,Social Media,Open,689.18,2,3
-2025-06-03,High,Web Form,Reopened,540.56,3,9
-2024-10-27,High,Social Media,Pending,295.36,5,8
-2025-04-03,Low,Phone,Closed,88.8,3,10
-2024-12-12,Low,Live Chat,New,325.17,1,3
-2024-10-14,Medium,Phone,Closed,95.64,5,6
-2024-04-21,High,Live Chat,Closed,380.53,2,4
-2024-06-04,Urgent,Web Form,Pending,461.76,3,1
-2024-05-23,Medium,Live Chat,Closed,285.3,4,8
-2025-03-08,Urgent,Phone,Reopened,676.53,2,5
-2024-04-19,Low,Mobile App,New,184.96,2,6
-2024-04-09,High,Email,Open,571.88,3,10
-2024-07-20,Urgent,Phone,New,209.11,1,9
-2024-08-11,Medium,Phone,New,315.82,1,4
-2024-07-06,Medium,Email,Closed,294.32,4,10
-2024-07-31,Low,Social Media,New,5.75,3,8
-2025-05-18,High,Email,Reopened,362.59,3,1
-2024-12-05,Medium,Social Media,Reopened,118.12,1,2
-2024-02-03,Medium,Web Form,Closed,176.86,5,8
-2025-03-14,Low,Email,New,565.23,3,0
-2024-06-29,Low,Live Chat,Reopened,595.72,2,5
-2024-02-25,Low,Mobile App,Open,152.38,2,1
-2024-07-23,Urgent,Mobile App,Open,616.2,1,2
-2025-04-03,Medium,Live Chat,Closed,708.73,1,3
-2024-08-27,Medium,Live Chat,Reopened,394.98,3,5
-2025-06-15,Low,Social Media,New,569.08,5,2
-2024-05-12,Low,Live Chat,Closed,355.58,4,2
-2025-01-14,Urgent,Mobile App,Reopened,165.93,1,0
-2024-08-01,Medium,Live Chat,Closed,460.06,1,1
-2024-04-02,Low,Live Chat,Open,424.31,3,8
-2024-09-09,Low,Mobile App,Closed,701.37,2,6
-2024-02-01,High,Web Form,New,530.03,2,7
-2025-06-10,Low,Web Form,Pending,307.42,2,1
-2025-05-23,High,Mobile App,New,357.88,2,2
-2024-02-22,Medium,Social Media,Reopened,383.11,4,1
-2025-06-11,Medium,Social Media,Pending,233.22,2,4
-2024-05-07,Low,Email,Pending,162.35,4,8
-2025-05-12,Low,Web Form,Open,543.47,3,1
-2024-06-05,Low,Phone,New,689.56,1,6
-2025-05-17,Low,Web Form,New,676.82,3,3
-2025-02-10,Medium,Web Form,Pending,218.62,1,7
-2024-05-04,Medium,Live Chat,Reopened,259.65,1,2
-2024-01-16,Urgent,Email,Open,151.76,1,9
-2024-06-11,Urgent,Email,Open,619.1,5,0
-2024-04-12,Low,Live Chat,Reopened,509.36,4,8
-2024-12-21,Medium,Email,Reopened,2.81,2,4
-2024-08-05,Medium,Email,Open,72.4,3,1
-2025-05-17,High,Web Form,Resolved,279.57,2,3
-2025-05-11,Low,Live Chat,Open,360.22,4,10
-2025-05-06,Medium,Email,New,542.22,5,9
-2024-12-05,High,Live Chat,Resolved,251.66,2,5
-2024-09-09,Urgent,Web Form,Closed,459.34,3,7
-2024-04-02,Medium,Phone,Pending,104.3,2,3
-2024-06-24,Urgent,Email,Reopened,388.59,2,8
-2024-09-30,High,Social Media,New,242.2,2,9
-2024-12-10,Urgent,Phone,Closed,232.44,2,7
-2024-09-06,Medium,Web Form,New,394.6,2,8
-2025-04-02,Low,Web Form,Pending,190.39,2,3
-2024-02-22,Urgent,Live Chat,Reopened,36.15,2,7
+sess_dt,plt_nm,gm_mode,ctry_cd,sess_dur_min,kills_cnt,tot_rev
+2024-06-02,mobile,casual,US,228.14,39,63.97
+2024-04-28,mobile,custom,BR,12.23,47,145.83
+2025-05-01,pc,ranked,BR,351.7,86,10.35
+2024-10-16,web,casual,JP,254.98,39,314.78
+2025-04-24,console,custom,IN,169.22,30,355.58
+2024-07-13,console,custom,JP,146.51,66,452.92
+2024-01-16,pc,ranked,US,293.85,14,47.49
+2024-07-26,console,custom,US,22.87,14,440.9
+2024-12-03,pc,casual,DE,143.98,18,201.34
+2024-06-23,mobile,arena,JP,270.69,27,285.85
+2025-06-02,pc,ranked,FR,74.18,51,58.43
+2024-04-08,web,arena,FR,185.38,15,1.65
+2024-11-25,pc,casual,DE,300.56,62,366.67
+2024-01-14,pc,ranked,DE,284.47,71,484.05
+2024-04-22,web,ranked,IN,201.35,43,293.81
+2024-06-13,web,arena,US,86.92,66,59.94
+2025-06-17,console,casual,US,347.87,120,174.58
+2025-01-16,web,custom,IN,45.53,105,188.92
+2024-04-08,pc,custom,US,103.84,19,91.99
+2024-05-07,console,arena,US,29.06,28,83.54
+2025-01-10,pc,arena,FR,137.69,51,349.6
+2024-05-03,console,custom,IN,350.55,61,1.05
+2024-01-22,pc,ranked,DE,210.84,44,63.3
+2024-03-19,pc,arena,DE,297.72,85,109.48
+2025-01-22,mobile,coop,DE,36.86,48,202.29
+2025-04-30,console,ranked,FR,129.94,94,1.42
+2024-01-10,pc,custom,DE,71.47,29,455.51
+2024-04-10,web,casual,US,115.2,111,240.75
+2024-06-25,web,custom,BR,211.81,26,111.83
+2025-05-08,mobile,custom,FR,135.56,90,314.09
+2025-02-09,console,arena,JP,137.71,71,460.29
+2024-05-03,web,coop,BR,186.4,6,412.19
+2025-06-10,mobile,custom,JP,263.35,70,89.96
+2025-01-19,mobile,custom,IN,4.55,31,465.05
+2024-09-02,web,coop,IN,89.06,72,0.34
+2024-10-30,mobile,arena,US,102.18,55,303.13
+2024-02-23,web,arena,BR,162.93,108,272.05
+2024-12-12,web,ranked,BR,352.66,75,476.31
+2025-06-22,mobile,custom,BR,6.27,12,282.64
+2024-09-18,mobile,coop,BR,218.94,102,368.39
+2025-04-12,mobile,arena,JP,215.53,13,374.25
+2025-01-16,console,casual,FR,100.99,95,476.25
+2025-05-22,web,arena,DE,336.7,92,417.73
+2024-06-21,web,casual,FR,228.73,68,464.91
+2025-05-18,mobile,arena,JP,40.23,89,104.81
+2025-02-06,pc,arena,BR,114.53,7,7.17
+2024-10-03,web,arena,US,202.57,52,357.56
+2025-02-14,console,coop,JP,301.85,52,205.88
+2024-08-26,web,arena,JP,306.07,79,453.6
+2024-05-09,web,custom,JP,343.24,81,251.03
+2024-03-02,mobile,custom,BR,207.22,38,196.3
+2025-02-27,web,custom,DE,84.87,82,26.12
+2024-02-05,console,arena,US,245.99,43,197.71
+2024-07-12,mobile,ranked,FR,312.38,3,258.43
+2024-04-15,pc,casual,BR,66.75,84,168.69
+2025-04-04,pc,custom,BR,167.85,28,481.27
+2024-07-31,mobile,ranked,BR,212.18,42,261.0
+2025-05-03,mobile,arena,BR,206.04,71,448.59
+2024-02-22,web,coop,JP,205.93,52,161.63
+2024-04-24,web,custom,JP,306.09,81,23.46
+2025-02-11,mobile,coop,JP,183.49,24,161.58
+2024-05-16,web,arena,FR,233.82,47,14.41
+2024-02-09,console,casual,US,265.77,12,127.14
+2024-12-04,mobile,arena,DE,47.12,77,118.73
+2024-01-13,pc,casual,IN,103.6,44,211.19
+2025-01-19,console,arena,BR,10.94,99,53.95
+2024-06-09,web,coop,FR,57.7,71,12.25
+2024-10-03,web,arena,US,278.06,16,81.34
+2024-08-20,web,ranked,DE,128.72,20,151.55
+2024-09-24,web,casual,US,339.06,77,325.15
+2025-04-21,web,custom,DE,104.65,96,240.07
+2024-04-06,console,arena,DE,302.08,57,313.25
+2024-12-05,pc,casual,JP,160.49,43,348.61
+2025-04-01,mobile,arena,FR,284.28,12,318.54
+2024-01-17,mobile,arena,IN,34.8,114,19.01
+2025-05-16,console,arena,US,66.1,72,143.71
+2024-12-07,web,casual,DE,338.35,18,412.66
+2025-05-03,mobile,arena,JP,287.91,84,400.76
+2024-11-12,pc,coop,JP,62.74,94,91.44
+2024-05-19,mobile,custom,BR,354.96,22,493.18
+2025-02-21,pc,custom,FR,0.79,50,330.35
+2024-12-05,pc,casual,IN,257.31,40,178.07
+2024-06-18,pc,ranked,DE,199.31,104,197.03
+2025-06-03,mobile,casual,DE,14.07,61,331.42
+2024-08-26,web,arena,BR,20.85,39,10.57
+2025-01-01,console,arena,DE,124.65,101,361.36
+2024-09-26,mobile,ranked,BR,201.63,51,219.71
+2024-10-17,pc,casual,US,329.74,29,321.8
+2024-11-14,mobile,ranked,JP,304.33,8,38.59
+2024-12-18,pc,ranked,DE,227.41,4,251.74
+2024-11-08,mobile,coop,DE,287.54,108,131.65
+2024-01-27,web,ranked,IN,106.83,9,266.81
+2025-04-25,console,casual,FR,329.75,117,222.32
+2024-05-30,console,coop,FR,184.2,112,247.26
+2024-05-22,web,custom,DE,104.94,79,497.8
+2024-09-28,console,arena,US,231.25,37,395.85
+2025-04-25,mobile,coop,DE,97.54,77,145.26
+2025-06-06,pc,coop,FR,105.12,49,485.4
+2024-07-28,mobile,custom,IN,188.95,46,474.12
+2024-12-20,web,ranked,FR,355.99,99,468.54
+2024-05-16,console,custom,JP,225.07,45,57.29
+2024-10-22,web,casual,DE,149.89,30,143.86
+2025-03-07,mobile,custom,JP,328.77,88,94.44
+2024-05-13,console,arena,US,74.45,16,176.67
+2024-10-19,pc,custom,BR,226.93,85,466.55
+2024-01-24,web,arena,DE,45.48,65,65.97
+2024-06-17,pc,casual,FR,189.59,43,205.12
+2025-03-22,mobile,custom,JP,134.87,64,259.03
+2024-06-09,mobile,coop,JP,278.03,67,6.69
+2024-05-12,web,custom,FR,137.34,97,344.02
+2024-08-25,web,coop,BR,22.19,49,379.5
+2024-09-12,pc,custom,US,233.09,60,499.06
+2025-01-20,web,arena,FR,218.56,82,389.5
+2024-03-03,pc,coop,US,138.22,67,352.56
+2024-12-08,console,arena,BR,249.66,35,48.67
+2024-08-31,pc,custom,DE,112.76,12,441.09
+2024-10-12,web,coop,JP,176.9,42,155.26
+2024-06-05,console,coop,JP,327.69,44,86.96
+2024-10-15,console,ranked,JP,155.39,81,234.87
+2024-07-22,console,custom,JP,152.72,55,441.81
+2024-09-17,mobile,custom,DE,122.11,107,303.98
+2024-05-02,pc,custom,US,302.11,12,292.36
+2024-03-29,console,casual,JP,210.85,69,88.32
+2025-04-18,web,custom,DE,244.46,86,303.68
+2024-11-26,pc,ranked,DE,12.51,27,276.15
+2025-06-19,mobile,custom,JP,160.31,75,346.73
+2025-03-29,mobile,arena,BR,352.97,4,321.87
+2024-10-30,pc,custom,BR,117.0,54,243.26
+2025-02-20,console,casual,FR,95.22,22,91.43
+2024-11-17,web,custom,DE,250.66,54,431.85
+2024-08-09,mobile,ranked,JP,135.81,23,446.89
+2024-07-30,console,ranked,US,108.82,13,495.31
+2025-05-06,console,coop,US,151.29,83,363.1
+2024-01-11,web,ranked,FR,273.56,95,152.42
+2025-04-01,mobile,casual,FR,283.91,19,206.49
+2024-07-14,mobile,arena,BR,120.66,40,409.11
+2025-05-18,console,casual,US,300.13,22,14.0
+2025-03-15,pc,custom,FR,214.27,81,221.16
+2024-10-17,web,arena,JP,145.53,0,363.19
+2025-01-16,web,coop,DE,267.68,80,366.14
+2025-05-30,console,custom,IN,24.45,120,443.0
+2024-08-16,pc,ranked,US,84.14,78,24.41
+2025-01-07,pc,ranked,DE,346.04,58,21.57
+2024-12-04,pc,coop,FR,85.68,66,133.2
+2024-09-26,pc,coop,DE,304.1,36,71.86
+2024-02-12,pc,coop,JP,162.24,74,244.08
+2024-02-13,console,casual,JP,221.73,42,305.72
+2024-05-24,console,ranked,US,43.16,75,234.96
+2025-01-17,mobile,casual,JP,302.17,62,172.41
+2025-03-25,mobile,ranked,US,61.92,9,461.34
+2025-04-15,console,arena,IN,52.38,91,102.57
+2025-01-01,pc,ranked,US,54.77,47,189.42
+2024-03-09,console,arena,DE,327.62,37,318.01
+2024-11-10,web,custom,JP,25.19,78,61.51
+2025-04-06,mobile,coop,JP,148.14,72,16.26
+2025-04-09,console,arena,US,283.44,87,12.75
+2024-11-16,console,casual,IN,27.25,17,277.92
+2024-05-19,web,casual,IN,259.13,69,52.65
+2024-09-07,pc,arena,FR,3.71,34,361.14
+2025-01-14,pc,casual,US,256.46,116,56.87
+2024-08-06,console,casual,BR,30.68,100,310.34
+2024-05-05,mobile,coop,US,329.72,3,248.87
+2024-02-16,pc,custom,IN,130.12,120,469.04
+2024-01-23,pc,custom,DE,312.62,29,1.62
+2024-10-20,console,casual,DE,273.32,11,288.17
+2025-05-24,web,ranked,FR,86.41,14,499.62
+2025-03-03,console,arena,BR,294.67,51,454.2
+2024-05-07,mobile,ranked,JP,232.85,59,169.75
+2024-03-23,mobile,casual,DE,28.79,2,478.62
+2024-07-24,mobile,coop,IN,324.26,50,93.68
+2024-11-23,console,casual,DE,153.43,21,123.24
+2024-12-11,pc,casual,BR,262.11,14,248.08
+2025-02-08,console,custom,JP,298.28,18,434.67
+2024-09-13,pc,arena,DE,70.45,93,3.91
+2025-01-13,web,ranked,US,105.87,13,292.3
+2025-02-10,mobile,custom,US,17.56,95,250.23
+2024-06-05,pc,arena,IN,22.71,11,195.41
+2024-11-19,pc,arena,JP,3.21,115,201.76
+2025-06-06,console,coop,JP,178.17,53,111.32
+2025-05-05,pc,custom,FR,273.94,62,188.65
+2025-04-14,pc,custom,FR,251.84,7,127.41
+2025-05-24,mobile,casual,BR,258.67,102,50.43
+2024-10-23,pc,casual,JP,82.29,78,486.77
+2024-07-28,mobile,custom,JP,232.24,52,484.72
+2024-10-20,console,arena,US,145.57,10,89.49
+2025-04-29,pc,arena,IN,30.66,15,286.71
+2024-08-07,web,coop,FR,341.87,65,470.51
+2024-07-23,mobile,ranked,IN,139.14,73,254.8
+2025-04-02,pc,coop,BR,316.87,39,417.94
+2024-04-23,mobile,ranked,JP,207.96,49,431.32
+2025-05-12,web,arena,DE,197.75,69,261.57
+2025-03-18,mobile,ranked,DE,76.19,18,394.0
+2024-07-13,pc,casual,US,153.66,105,260.63
+2024-07-14,console,coop,JP,7.95,11,324.82
+2024-07-31,pc,custom,IN,171.23,115,453.61
+2025-02-15,web,arena,IN,131.06,32,34.05
+2024-03-26,console,casual,BR,39.3,114,236.47
+2024-05-25,console,arena,JP,183.73,48,358.47
+2024-06-12,web,custom,FR,196.26,115,354.05
+2024-04-25,pc,arena,BR,127.41,19,137.48
+2024-12-26,web,custom,DE,342.62,74,112.38
+2025-04-20,pc,ranked,US,90.5,33,290.07
+2024-11-29,console,custom,JP,41.2,51,272.53
+2024-05-24,pc,arena,US,303.43,47,319.72
+2024-12-26,mobile,coop,IN,66.65,101,418.7
+2024-10-20,mobile,ranked,DE,265.21,22,220.25
+2024-06-14,console,arena,JP,331.5,51,214.29
+2024-04-03,web,casual,JP,117.14,79,65.52
+2024-10-06,web,casual,US,13.82,100,272.82
+2024-12-01,pc,coop,DE,185.73,108,198.23
+2025-05-25,mobile,casual,US,184.53,57,386.56
+2025-01-19,pc,coop,DE,215.0,0,476.21
+2025-06-23,console,custom,IN,295.61,82,476.42
+2024-05-27,pc,arena,US,290.73,75,131.57
+2025-04-03,mobile,custom,IN,327.83,54,331.53
+2024-02-27,web,custom,FR,189.61,27,50.48
+2024-04-29,mobile,coop,US,253.3,47,435.16
+2024-05-22,console,custom,IN,165.96,88,15.54
+2025-05-02,web,coop,JP,171.4,87,106.56
+2024-08-02,console,coop,FR,118.67,114,315.82
+2024-11-24,mobile,ranked,US,42.29,111,270.25
+2025-06-02,mobile,coop,IN,221.32,8,281.62
+2024-10-04,pc,custom,DE,331.52,90,379.76
+2024-03-26,console,coop,JP,261.67,50,135.7
+2024-03-23,pc,ranked,IN,8.9,22,408.25
+2024-01-20,mobile,coop,BR,224.58,18,360.42
+2025-03-19,mobile,custom,BR,157.92,103,394.71
+2024-04-07,pc,casual,BR,24.62,38,393.43
+2024-01-03,web,casual,US,100.83,83,374.37
+2024-01-08,pc,casual,IN,79.08,18,416.92
+2025-05-17,web,coop,JP,290.46,22,148.42
+2024-07-17,pc,custom,US,113.78,12,488.18
+2024-04-16,console,custom,DE,211.91,103,61.49
+2024-07-19,console,arena,DE,174.15,19,214.6
+2025-02-06,mobile,custom,JP,205.33,35,258.19
+2024-06-04,web,ranked,IN,106.22,71,236.32
+2024-02-03,console,casual,IN,13.95,97,313.15
+2025-05-31,web,arena,US,168.0,43,258.87
+2024-03-16,console,coop,IN,23.25,21,385.82
+2025-01-19,pc,casual,BR,150.86,119,307.11

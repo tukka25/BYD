@@ -1,241 +1,241 @@
-rental_listing_date,rental_district,rental_property_type,rental_furnishing_status,rental_monthly_rent_amount,rental_purchase_price_amount,rental_gross_yield_pct,rental_vacancy_days
-2025-05-21,Harbor View,Studio,Furnished,7088.74,1004855.12,7.46,117
-2025-04-11,Harbor View,Three Bedroom,Semi-Furnished,5468.81,2193245.23,5.23,12
-2024-05-05,University Quarter,Studio,Semi-Furnished,3196.36,1725725.45,9.66,23
-2025-04-12,Downtown,Penthouse,Semi-Furnished,8336.22,621533.95,7.26,42
-2025-05-14,Riverside,Studio,Furnished,5717.68,727068.07,3.02,88
-2024-05-21,Westfield,Townhouse,Unfurnished,3869.11,2009452.04,5.32,117
-2024-05-01,Northgate,Studio,Unfurnished,7495.07,1516533.45,11.0,52
-2024-09-17,Harbor View,Studio,Semi-Furnished,4030.3,188764.23,3.88,33
-2024-01-12,Old Town,One Bedroom,Furnished,4342.01,620238.93,12.81,74
-2024-09-08,University Quarter,Townhouse,Furnished,5606.69,570993.24,4.42,44
-2024-06-04,Riverside,Two Bedroom,Furnished,8199.36,1967631.01,9.22,52
-2025-05-31,Harbor View,Two Bedroom,Semi-Furnished,7255.5,2061595.67,5.22,29
-2025-06-08,Old Town,Three Bedroom,Semi-Furnished,1191.96,965544.45,7.81,30
-2024-06-12,Northgate,Penthouse,Unfurnished,5344.88,2390235.42,4.93,65
-2024-09-20,Downtown,One Bedroom,Unfurnished,2082.18,1584965.66,7.59,91
-2024-06-14,Old Town,Townhouse,Semi-Furnished,4547.46,1029487.39,11.45,34
-2024-11-29,Harbor View,Three Bedroom,Semi-Furnished,3729.16,1896035.3,9.99,26
-2025-05-24,University Quarter,Studio,Furnished,5548.0,2015436.91,7.28,114
-2024-11-23,Downtown,Townhouse,Semi-Furnished,8333.95,1989022.14,13.42,19
-2024-08-13,Downtown,Penthouse,Semi-Furnished,5310.42,2494447.84,13.23,39
-2024-06-29,Downtown,One Bedroom,Unfurnished,6296.62,2159449.54,12.16,87
-2025-06-10,Downtown,Studio,Unfurnished,6036.99,552860.16,4.06,110
-2024-05-26,Northgate,Penthouse,Furnished,7628.99,1863087.61,8.95,42
-2024-02-29,Old Town,Townhouse,Semi-Furnished,9310.79,2393060.29,8.54,80
-2025-02-25,Harbor View,One Bedroom,Furnished,6351.46,2402168.67,7.38,6
-2024-06-24,Riverside,Penthouse,Semi-Furnished,8530.91,931541.98,10.9,117
-2024-01-04,University Quarter,Three Bedroom,Semi-Furnished,6171.17,910553.93,3.16,78
-2024-12-06,Harbor View,Three Bedroom,Unfurnished,9022.88,273028.23,12.91,47
-2024-06-22,Northgate,Penthouse,Unfurnished,8569.45,2140726.58,3.95,81
-2024-06-07,Northgate,Penthouse,Furnished,4049.82,1193619.48,9.1,63
-2024-10-24,Riverside,Two Bedroom,Furnished,3528.3,2001649.22,13.27,94
-2025-04-07,University Quarter,Two Bedroom,Furnished,1938.82,584578.07,3.13,23
-2024-06-06,Westfield,One Bedroom,Furnished,5145.49,1610476.57,6.68,35
-2024-10-17,Northgate,Penthouse,Furnished,3215.99,533394.98,3.59,42
-2024-04-21,Riverside,Townhouse,Unfurnished,3745.93,2415960.47,13.75,86
-2025-05-18,Riverside,Two Bedroom,Semi-Furnished,4442.76,1513385.32,9.61,40
-2024-10-15,Downtown,Two Bedroom,Semi-Furnished,7488.94,213152.18,9.15,77
-2025-02-17,University Quarter,Three Bedroom,Unfurnished,4318.37,1626406.92,7.65,62
-2024-10-17,University Quarter,Three Bedroom,Furnished,1920.77,1572797.66,13.31,97
-2024-11-30,Riverside,Three Bedroom,Furnished,9092.33,779200.83,12.94,57
-2025-03-10,University Quarter,Penthouse,Furnished,4187.06,139240.36,6.98,65
-2024-12-09,Westfield,Three Bedroom,Unfurnished,8046.26,1446321.27,3.25,72
-2024-08-29,Downtown,Two Bedroom,Semi-Furnished,4247.84,533602.17,5.05,101
-2024-01-25,University Quarter,Studio,Semi-Furnished,2519.03,229496.95,3.29,26
-2024-07-29,Northgate,Penthouse,Unfurnished,1944.39,1743013.91,6.51,7
-2024-09-04,Harbor View,One Bedroom,Unfurnished,8671.89,915639.04,10.51,31
-2024-03-30,Downtown,Townhouse,Semi-Furnished,3699.34,541581.24,9.59,56
-2025-03-10,Northgate,Three Bedroom,Furnished,6213.03,1941817.56,12.17,31
-2025-04-13,University Quarter,Studio,Unfurnished,6648.71,1499010.5,8.5,83
-2024-04-18,University Quarter,Three Bedroom,Unfurnished,6261.29,693733.7,5.12,64
-2024-03-23,Downtown,Townhouse,Furnished,5936.19,1359051.68,12.94,91
-2024-10-22,Harbor View,Two Bedroom,Unfurnished,5666.31,2356511.8,11.09,112
-2025-02-09,Harbor View,Three Bedroom,Unfurnished,8125.88,2424837.75,9.79,43
-2025-04-11,Riverside,Two Bedroom,Unfurnished,7257.87,561693.53,10.02,27
-2024-03-02,Harbor View,One Bedroom,Semi-Furnished,5699.2,602859.22,6.55,13
-2024-04-12,Riverside,Three Bedroom,Semi-Furnished,9124.87,1265362.29,12.14,12
-2024-09-11,Harbor View,One Bedroom,Semi-Furnished,2496.75,2115705.37,8.65,45
-2025-05-17,Downtown,Studio,Furnished,1450.37,2318626.1,3.77,20
-2025-04-24,Westfield,Two Bedroom,Furnished,1988.28,867392.74,8.18,26
-2025-04-05,University Quarter,Two Bedroom,Semi-Furnished,7206.22,427543.33,12.69,89
-2024-06-14,Harbor View,Townhouse,Furnished,6864.47,1563754.21,6.45,38
-2025-03-14,Riverside,Three Bedroom,Semi-Furnished,7319.87,1999182.86,12.89,88
-2024-04-05,Riverside,Two Bedroom,Furnished,6556.36,120167.81,11.29,67
-2024-08-30,Harbor View,One Bedroom,Furnished,3350.31,1403738.07,5.75,41
-2025-01-07,Westfield,Three Bedroom,Furnished,7816.79,582450.94,13.85,114
-2024-08-07,Harbor View,Townhouse,Unfurnished,8243.44,150492.62,3.32,58
-2024-09-05,Riverside,One Bedroom,Semi-Furnished,3527.22,495053.31,13.81,3
-2025-03-21,Old Town,Two Bedroom,Furnished,2778.62,762605.46,5.04,18
-2024-11-07,University Quarter,Penthouse,Furnished,3715.67,1615263.43,11.57,96
-2025-04-18,Westfield,Three Bedroom,Unfurnished,8564.17,2049355.28,3.69,5
-2024-08-27,Harbor View,One Bedroom,Furnished,5858.63,1695489.45,9.35,54
-2024-10-05,Harbor View,Two Bedroom,Semi-Furnished,7526.24,2350661.88,10.46,95
-2024-01-26,Riverside,Two Bedroom,Unfurnished,8253.22,2369501.2,12.25,59
-2025-03-23,University Quarter,Townhouse,Unfurnished,3588.8,1611397.88,7.16,1
-2025-01-10,Downtown,One Bedroom,Semi-Furnished,5065.99,1644317.98,10.79,58
-2025-03-14,University Quarter,Studio,Furnished,8205.89,624343.05,8.14,77
-2024-01-31,Downtown,Studio,Furnished,7755.9,2163543.24,9.77,25
-2025-02-16,Downtown,Penthouse,Unfurnished,7477.72,1319020.16,3.94,102
-2025-05-09,Downtown,Studio,Unfurnished,8113.93,1207663.77,9.94,51
-2025-04-05,Westfield,Penthouse,Unfurnished,3337.67,694174.32,11.36,42
-2025-03-11,Downtown,Studio,Unfurnished,6162.34,2086371.43,3.26,102
-2024-01-28,Harbor View,One Bedroom,Furnished,2270.92,1553897.78,5.39,101
-2024-02-22,Riverside,Studio,Unfurnished,2829.32,2269537.53,6.92,69
-2024-02-13,Harbor View,One Bedroom,Semi-Furnished,5843.07,2293431.76,13.43,37
-2025-05-24,Downtown,Three Bedroom,Furnished,3330.58,534196.08,13.62,38
-2024-10-24,Northgate,Townhouse,Unfurnished,2396.44,2419297.74,10.75,3
-2024-01-17,Riverside,One Bedroom,Furnished,7855.25,2428512.39,12.48,27
-2024-05-09,Riverside,Two Bedroom,Semi-Furnished,7804.91,1754658.08,5.41,112
-2024-11-20,Riverside,Penthouse,Unfurnished,6960.02,2285896.68,12.46,112
-2025-02-24,Harbor View,Two Bedroom,Furnished,5876.04,279919.15,12.24,96
-2025-02-24,Harbor View,One Bedroom,Unfurnished,8285.75,1120779.19,9.17,49
-2024-06-15,University Quarter,Two Bedroom,Semi-Furnished,4482.46,946109.84,9.21,66
-2024-07-18,Westfield,Townhouse,Semi-Furnished,7784.0,2163727.37,7.11,24
-2024-02-12,Northgate,Two Bedroom,Unfurnished,1900.39,150444.61,3.72,83
-2025-06-08,Old Town,Studio,Semi-Furnished,8799.11,1726850.48,7.1,75
-2024-10-01,Riverside,Penthouse,Unfurnished,8343.76,523514.65,4.06,103
-2024-07-12,Riverside,One Bedroom,Furnished,2160.59,1704381.89,4.0,50
-2024-05-03,Downtown,Studio,Furnished,3892.58,296371.46,8.78,120
-2025-01-06,Harbor View,Penthouse,Semi-Furnished,8337.25,1097625.91,5.9,116
-2025-04-25,Westfield,Penthouse,Unfurnished,815.49,1629758.71,12.54,45
-2025-05-26,Westfield,Three Bedroom,Unfurnished,2480.07,2180763.32,4.88,25
-2024-08-19,Riverside,Three Bedroom,Semi-Furnished,6769.96,1253335.49,6.64,103
-2025-06-20,Old Town,Two Bedroom,Semi-Furnished,6653.1,2111907.66,7.97,11
-2024-07-27,Riverside,Two Bedroom,Furnished,2693.59,1441756.16,7.98,43
-2025-02-04,Northgate,Penthouse,Semi-Furnished,8520.7,891991.49,9.98,38
-2025-06-16,Downtown,Three Bedroom,Furnished,4200.65,374390.21,11.39,56
-2024-01-21,Harbor View,One Bedroom,Unfurnished,1723.66,2259914.1,10.61,78
-2024-07-20,Riverside,Studio,Unfurnished,4302.98,1042605.56,2.76,82
-2025-02-16,Downtown,Townhouse,Semi-Furnished,1343.45,1484415.88,4.37,63
-2024-12-28,Downtown,Three Bedroom,Semi-Furnished,2366.48,1244669.59,5.96,108
-2024-06-12,Riverside,One Bedroom,Furnished,4921.65,1496168.51,4.9,7
-2024-08-26,Westfield,Three Bedroom,Furnished,4361.23,137701.48,7.73,59
-2025-01-18,University Quarter,Penthouse,Semi-Furnished,4241.51,699679.51,3.16,65
-2025-02-20,Harbor View,Townhouse,Unfurnished,5984.0,2035293.34,2.7,66
-2025-01-13,Westfield,Three Bedroom,Semi-Furnished,3483.85,532483.72,3.42,74
-2025-03-02,Riverside,Studio,Furnished,7361.64,2043246.17,3.66,103
-2024-07-09,Harbor View,Two Bedroom,Furnished,8232.84,661592.39,3.94,35
-2024-09-26,Northgate,Studio,Furnished,1758.85,1555185.29,8.62,70
-2024-12-13,Westfield,Penthouse,Semi-Furnished,6468.21,1724300.54,9.99,35
-2024-12-23,University Quarter,Studio,Furnished,5873.89,1729164.09,3.63,99
-2025-04-14,Riverside,Studio,Furnished,8777.16,1295989.77,13.87,80
-2024-07-19,Downtown,Two Bedroom,Furnished,4483.48,1454724.09,4.88,95
-2025-02-21,University Quarter,Three Bedroom,Unfurnished,2998.06,390215.96,8.76,3
-2024-12-06,Downtown,Townhouse,Semi-Furnished,8839.77,371873.94,8.1,111
-2025-03-31,Old Town,Three Bedroom,Semi-Furnished,4631.72,324291.74,13.78,101
-2024-03-01,Harbor View,One Bedroom,Semi-Furnished,2919.51,1328030.34,9.96,113
-2025-01-07,Harbor View,One Bedroom,Semi-Furnished,9320.09,1412725.46,5.15,57
-2024-10-16,Riverside,Penthouse,Furnished,9157.76,1281829.53,13.51,54
-2024-05-11,University Quarter,Three Bedroom,Unfurnished,9422.75,1255484.64,3.68,95
-2025-05-03,Riverside,Three Bedroom,Unfurnished,1358.89,1331361.44,4.15,81
-2024-03-03,Old Town,Townhouse,Semi-Furnished,7583.84,1093320.28,13.24,61
-2024-03-19,Riverside,Two Bedroom,Semi-Furnished,3569.9,977484.86,3.77,40
-2025-01-15,Northgate,Two Bedroom,Semi-Furnished,8153.28,960824.31,13.46,61
-2025-03-23,Riverside,One Bedroom,Semi-Furnished,5917.45,237925.17,5.71,14
-2024-02-04,Northgate,Two Bedroom,Furnished,5486.35,498608.98,6.41,60
-2024-10-13,Westfield,Penthouse,Semi-Furnished,4409.8,1544601.02,13.48,101
-2024-05-07,Riverside,Three Bedroom,Furnished,4649.89,2452414.1,11.96,15
-2024-05-28,Westfield,Townhouse,Semi-Furnished,5157.06,1253197.86,4.93,112
-2024-01-15,Westfield,Townhouse,Unfurnished,9339.9,920712.91,11.68,13
-2025-05-22,Westfield,Penthouse,Unfurnished,6124.56,1767338.23,13.7,36
-2024-04-11,Westfield,One Bedroom,Unfurnished,8211.79,1593001.02,11.47,114
-2024-08-28,Westfield,Three Bedroom,Furnished,3372.6,1360668.93,9.4,72
-2024-02-20,Riverside,Two Bedroom,Unfurnished,8333.36,1174967.35,4.4,22
-2024-01-25,Northgate,Two Bedroom,Semi-Furnished,8230.02,913786.98,12.87,21
-2024-02-08,University Quarter,Studio,Furnished,8496.6,1338188.86,10.69,98
-2024-07-10,Riverside,Studio,Unfurnished,3726.0,1364199.0,11.62,5
-2024-10-04,Downtown,Two Bedroom,Semi-Furnished,3463.85,636222.84,13.56,50
-2024-12-17,University Quarter,One Bedroom,Semi-Furnished,8512.87,2386706.54,6.99,82
-2024-11-29,Riverside,Townhouse,Furnished,3602.93,1162977.22,13.51,101
-2024-09-29,Riverside,Studio,Unfurnished,5779.66,740553.52,3.63,108
-2024-03-14,Old Town,Penthouse,Furnished,4941.69,624650.82,4.76,115
-2024-11-25,Harbor View,One Bedroom,Unfurnished,4598.02,387845.65,4.01,40
-2025-01-17,Old Town,Two Bedroom,Furnished,7908.65,1778782.16,6.18,99
-2025-01-07,Downtown,Townhouse,Furnished,3113.35,719064.82,6.1,104
-2024-04-13,University Quarter,Penthouse,Semi-Furnished,8056.17,323443.75,3.42,111
-2025-06-23,University Quarter,One Bedroom,Furnished,6347.86,821347.1,10.91,16
-2024-01-20,Westfield,Studio,Semi-Furnished,1910.96,627067.39,7.86,117
-2024-03-31,Riverside,Three Bedroom,Semi-Furnished,3043.47,174129.97,12.97,20
-2025-03-20,Westfield,Penthouse,Furnished,8405.53,1482728.11,4.33,72
-2025-02-05,Riverside,Two Bedroom,Furnished,3783.01,656226.92,6.16,91
-2024-11-10,Old Town,Penthouse,Semi-Furnished,9351.4,141887.13,5.87,65
-2024-11-17,Westfield,One Bedroom,Unfurnished,7269.19,1564236.51,3.94,113
-2025-04-14,Downtown,One Bedroom,Unfurnished,1618.72,1238828.78,3.16,80
-2024-10-31,Riverside,Two Bedroom,Furnished,3233.93,247690.83,8.07,59
-2024-11-15,Riverside,Townhouse,Unfurnished,7368.22,317289.11,12.73,11
-2024-11-27,Harbor View,One Bedroom,Unfurnished,2503.08,1109854.4,5.01,71
-2024-06-20,Downtown,Townhouse,Unfurnished,7935.85,744099.35,11.41,53
-2024-05-10,Northgate,Penthouse,Unfurnished,5885.58,2305806.96,6.83,37
-2024-02-02,Harbor View,Two Bedroom,Unfurnished,5360.03,837135.35,5.58,12
-2024-02-21,Northgate,One Bedroom,Furnished,2672.38,884575.06,6.7,59
-2025-03-16,Westfield,Penthouse,Semi-Furnished,5384.94,1496229.65,9.5,64
-2025-03-18,Westfield,Penthouse,Furnished,1512.25,2079189.77,3.81,107
-2024-01-18,Downtown,Two Bedroom,Furnished,7089.85,389889.73,13.07,73
-2024-08-20,University Quarter,Three Bedroom,Semi-Furnished,8225.19,1556454.49,6.34,109
-2024-10-20,University Quarter,Townhouse,Semi-Furnished,5158.42,1557002.95,8.89,42
-2025-02-23,Northgate,One Bedroom,Unfurnished,8240.57,475774.47,6.1,69
-2024-06-26,Riverside,Penthouse,Furnished,8715.11,1931005.43,10.21,19
-2025-04-21,University Quarter,One Bedroom,Furnished,1474.55,351479.41,8.35,78
-2024-10-27,Harbor View,Townhouse,Unfurnished,3608.29,1105241.72,7.38,27
-2024-10-21,University Quarter,Two Bedroom,Unfurnished,2380.91,2112470.27,13.26,19
-2024-05-16,Westfield,Townhouse,Unfurnished,6524.06,1742091.82,13.41,76
-2024-08-29,Northgate,Two Bedroom,Furnished,3132.36,460531.45,6.3,87
-2024-10-01,Westfield,Three Bedroom,Semi-Furnished,1230.77,2118908.25,9.94,119
-2024-07-25,Riverside,Penthouse,Furnished,2693.78,762874.44,3.77,20
-2024-05-01,University Quarter,Two Bedroom,Semi-Furnished,5056.96,1310237.17,4.72,71
-2024-08-13,Harbor View,Studio,Semi-Furnished,9353.51,1871345.97,7.93,75
-2024-12-24,Westfield,Penthouse,Unfurnished,4555.6,1858161.08,13.3,51
-2024-05-30,Downtown,Penthouse,Unfurnished,8674.3,2268141.66,12.48,52
-2024-12-01,Old Town,Penthouse,Semi-Furnished,3423.92,576359.24,10.27,1
-2024-02-03,Riverside,Penthouse,Unfurnished,6334.93,1744527.16,7.18,37
-2024-03-31,Westfield,Penthouse,Unfurnished,5658.04,1730131.28,13.46,47
-2024-05-26,Harbor View,Townhouse,Unfurnished,8710.03,1763427.12,8.56,94
-2024-02-05,Harbor View,Two Bedroom,Furnished,4122.44,2343714.37,6.49,94
-2024-12-26,Riverside,Penthouse,Furnished,5852.59,2365306.0,7.32,56
-2024-05-22,Old Town,One Bedroom,Semi-Furnished,6080.48,1948118.3,13.38,109
-2024-11-08,University Quarter,Penthouse,Furnished,5925.15,1223275.41,4.49,31
-2024-02-05,Harbor View,Penthouse,Furnished,3443.34,1755375.19,11.96,86
-2025-01-15,Downtown,One Bedroom,Furnished,3244.63,457894.83,4.1,51
-2024-04-15,Northgate,One Bedroom,Semi-Furnished,5720.54,197006.05,6.22,10
-2024-05-06,Harbor View,One Bedroom,Semi-Furnished,1574.63,2005068.06,7.57,88
-2024-05-07,Northgate,Studio,Semi-Furnished,6525.14,1323428.05,3.89,77
-2024-06-08,University Quarter,Studio,Semi-Furnished,8819.74,1147659.3,4.79,72
-2025-04-20,Downtown,Townhouse,Semi-Furnished,1826.66,2391168.72,10.96,44
-2024-11-03,Old Town,One Bedroom,Unfurnished,5065.11,447726.1,3.83,110
-2024-02-15,University Quarter,Townhouse,Furnished,9060.88,878591.05,8.68,82
-2024-11-23,Riverside,Studio,Semi-Furnished,8476.44,2111084.78,11.24,42
-2025-03-25,Harbor View,Three Bedroom,Furnished,6321.28,1973007.97,10.78,24
-2025-02-19,Westfield,Townhouse,Semi-Furnished,1354.78,1746399.63,8.03,31
-2024-10-10,Riverside,Penthouse,Furnished,837.84,2150372.5,10.88,66
-2024-04-02,Harbor View,Three Bedroom,Furnished,1417.43,413088.29,2.77,25
-2025-03-03,Old Town,Two Bedroom,Semi-Furnished,9174.58,2466907.43,11.89,119
-2024-02-23,Old Town,One Bedroom,Furnished,3272.68,1440693.61,13.29,67
-2024-06-18,Downtown,Two Bedroom,Unfurnished,6476.68,720157.34,4.4,35
-2024-05-19,University Quarter,Two Bedroom,Unfurnished,7735.69,332470.61,9.04,72
-2024-07-07,Westfield,Penthouse,Furnished,5719.42,263072.19,6.82,26
-2025-01-21,Downtown,Two Bedroom,Furnished,7085.82,688085.68,6.01,84
-2024-05-03,University Quarter,Three Bedroom,Furnished,831.22,1249913.22,4.75,74
-2024-12-04,University Quarter,Penthouse,Semi-Furnished,5902.55,1661148.91,7.77,77
-2024-05-10,University Quarter,Three Bedroom,Semi-Furnished,8866.27,1690769.37,4.92,27
-2024-01-29,Harbor View,Studio,Semi-Furnished,7514.96,1537789.51,2.8,62
-2024-04-18,University Quarter,Townhouse,Furnished,8525.48,238015.36,6.61,44
-2024-01-05,Westfield,Three Bedroom,Unfurnished,6259.11,2123301.74,7.39,76
-2024-07-13,Westfield,Two Bedroom,Semi-Furnished,3473.79,2270749.13,5.4,95
-2024-09-05,Riverside,Studio,Unfurnished,3926.18,2013674.2,8.56,28
-2024-12-08,Downtown,Three Bedroom,Semi-Furnished,1955.02,153759.67,11.78,82
-2024-08-11,Downtown,Three Bedroom,Furnished,3897.46,1248769.78,7.5,22
-2024-04-11,Riverside,Two Bedroom,Unfurnished,3064.22,1912986.78,12.51,80
-2024-05-31,Downtown,Two Bedroom,Unfurnished,7429.34,988982.5,5.89,35
-2025-02-19,Riverside,Penthouse,Furnished,4719.16,2095397.07,8.98,15
-2024-01-06,Northgate,Townhouse,Semi-Furnished,5709.53,1576203.4,8.11,97
-2025-01-07,Downtown,Penthouse,Semi-Furnished,5158.11,1645883.75,4.15,111
-2024-04-21,University Quarter,Two Bedroom,Unfurnished,927.23,1119027.46,4.81,115
-2025-02-20,Riverside,Three Bedroom,Furnished,4505.21,949803.31,8.52,70
-2025-02-03,Westfield,Studio,Semi-Furnished,2152.73,1881647.66,13.47,21
-2025-05-04,Old Town,Three Bedroom,Semi-Furnished,9486.86,1525657.6,6.18,75
-2025-06-22,Downtown,Two Bedroom,Semi-Furnished,1810.76,2295023.17,5.5,17
-2024-04-20,Westfield,Two Bedroom,Unfurnished,5456.08,235044.45,4.18,33
-2024-07-29,Northgate,Three Bedroom,Semi-Furnished,6158.9,1377690.12,6.79,66
-2024-06-20,University Quarter,Studio,Furnished,8813.33,1869067.6,13.06,60
-2024-03-29,Northgate,Studio,Furnished,823.0,1575490.63,12.37,4
+ord_dt,ord_chnl,cust_seg,pay_mthd,itm_cnt,gross_rev,disc_amt,tot_rev
+2024-06-04,web,wholesale,paypal,23,2244.71,407.46,4947.67
+2024-02-08,phone,loyalty_silver,paypal,36,2482.85,145.63,1644.0
+2025-02-13,phone,loyalty_silver,credit_card,16,2108.87,469.6,218.62
+2024-03-22,mobile_app,new,bnpl,4,3054.49,552.25,713.66
+2025-02-22,web,wholesale,gift_card,8,1563.0,324.92,5197.82
+2024-03-19,mobile_app,wholesale,apple_pay,19,591.19,487.0,723.3
+2024-08-06,phone,returning,credit_card,36,180.98,41.52,3972.13
+2024-11-25,web,returning,apple_pay,39,2062.1,743.62,4820.52
+2025-03-07,mobile_app,wholesale,debit_card,40,476.25,99.13,3483.4
+2024-09-05,in_store_pickup,wholesale,bnpl,15,773.0,115.21,51.44
+2024-01-12,phone,returning,apple_pay,3,3450.36,347.81,1663.07
+2025-06-23,web,wholesale,credit_card,30,3090.23,97.47,442.37
+2025-06-01,in_store_pickup,loyalty_gold,paypal,15,3596.42,721.32,1726.58
+2024-09-25,phone,loyalty_silver,credit_card,28,3371.83,652.38,1447.96
+2024-04-18,marketplace,wholesale,credit_card,30,1920.21,493.34,4100.95
+2024-04-02,in_store_pickup,returning,gift_card,32,1188.29,698.82,3197.99
+2024-06-26,web,loyalty_silver,bnpl,28,3478.49,376.45,3864.78
+2024-01-25,web,loyalty_gold,credit_card,29,979.76,612.01,1302.77
+2024-12-27,phone,loyalty_silver,gift_card,36,4818.22,472.63,3847.6
+2025-01-18,marketplace,new,debit_card,28,2509.19,49.17,4398.95
+2024-06-24,mobile_app,loyalty_gold,bnpl,1,4615.28,756.18,4138.25
+2024-09-20,marketplace,wholesale,bnpl,12,2948.21,530.38,751.97
+2024-02-06,in_store_pickup,new,paypal,7,2936.73,649.61,585.68
+2024-11-27,marketplace,returning,apple_pay,10,3668.12,305.78,2126.74
+2025-01-28,phone,loyalty_silver,debit_card,30,1920.23,842.73,4960.92
+2024-06-04,marketplace,new,apple_pay,41,1028.52,185.02,4179.49
+2024-02-18,phone,returning,debit_card,12,2113.88,419.28,151.87
+2024-03-21,phone,wholesale,credit_card,42,672.07,470.43,139.12
+2024-01-12,web,returning,gift_card,25,301.96,155.48,955.88
+2024-05-30,in_store_pickup,new,credit_card,10,555.04,797.2,4958.58
+2025-05-03,mobile_app,loyalty_silver,apple_pay,45,2239.3,906.05,2396.23
+2025-01-26,phone,new,bnpl,18,3134.39,955.95,4099.28
+2024-05-20,web,wholesale,apple_pay,15,1200.5,99.73,151.0
+2025-03-20,marketplace,loyalty_gold,credit_card,20,1458.65,526.24,375.06
+2024-01-12,web,wholesale,paypal,5,1605.97,650.05,5081.18
+2025-03-07,marketplace,loyalty_gold,paypal,7,2521.11,151.23,1789.62
+2025-03-09,in_store_pickup,loyalty_gold,apple_pay,3,1201.62,117.01,1503.97
+2024-04-22,phone,wholesale,apple_pay,5,933.34,947.91,2494.28
+2024-12-11,web,loyalty_gold,gift_card,20,3319.6,422.99,4731.89
+2025-05-05,phone,loyalty_gold,debit_card,43,4520.0,815.54,4619.18
+2024-06-02,mobile_app,returning,debit_card,16,3844.18,298.99,1270.63
+2025-04-07,in_store_pickup,loyalty_silver,bnpl,24,3731.86,712.32,5094.98
+2024-10-06,in_store_pickup,loyalty_gold,credit_card,16,3182.95,298.09,2287.5
+2024-04-09,in_store_pickup,returning,bnpl,36,353.28,769.83,2545.93
+2024-02-26,marketplace,new,debit_card,28,1584.12,466.99,1173.26
+2025-06-14,marketplace,wholesale,gift_card,8,2939.47,808.46,1544.9
+2024-03-20,mobile_app,loyalty_gold,paypal,26,2687.28,215.46,4731.12
+2025-02-13,marketplace,loyalty_silver,gift_card,20,1120.65,165.71,1759.46
+2025-03-19,mobile_app,returning,gift_card,31,3342.5,147.87,4214.61
+2024-04-21,phone,loyalty_gold,apple_pay,31,3640.2,366.9,3789.84
+2024-05-10,marketplace,loyalty_silver,apple_pay,25,4035.21,1.17,2721.34
+2024-02-19,marketplace,wholesale,paypal,34,2628.63,291.17,4880.66
+2024-06-19,phone,returning,gift_card,9,2866.2,605.27,4189.17
+2024-09-21,phone,wholesale,bnpl,33,3499.56,782.46,395.49
+2024-08-07,mobile_app,wholesale,debit_card,44,2794.4,441.79,4539.28
+2024-12-14,marketplace,returning,apple_pay,34,1916.87,826.72,1176.56
+2024-04-19,marketplace,loyalty_gold,debit_card,35,1662.08,434.2,1636.58
+2024-09-28,marketplace,new,paypal,7,2190.13,907.94,4666.48
+2024-03-20,mobile_app,loyalty_gold,bnpl,8,981.66,121.79,948.13
+2025-06-14,mobile_app,returning,debit_card,30,2260.35,899.45,4586.77
+2024-04-28,marketplace,returning,apple_pay,23,2375.7,588.05,4337.14
+2025-01-25,phone,new,apple_pay,24,2739.46,447.05,2609.31
+2025-04-13,web,returning,debit_card,37,4502.61,649.61,2213.49
+2024-03-27,mobile_app,wholesale,gift_card,34,2019.24,673.5,930.23
+2024-01-18,marketplace,wholesale,bnpl,36,183.51,473.33,2985.23
+2025-03-13,web,returning,bnpl,34,1266.58,671.1,1137.04
+2024-12-12,phone,loyalty_silver,gift_card,1,4296.35,114.93,4535.81
+2024-12-06,marketplace,new,debit_card,10,2864.38,214.62,2118.41
+2024-11-09,in_store_pickup,loyalty_silver,paypal,19,3612.5,576.03,4897.96
+2024-07-19,in_store_pickup,loyalty_gold,apple_pay,24,632.15,706.94,3679.16
+2025-01-25,phone,wholesale,paypal,9,152.69,792.11,3498.31
+2025-06-23,phone,loyalty_gold,bnpl,4,847.67,496.22,3687.92
+2024-10-06,phone,loyalty_silver,bnpl,44,3190.99,484.36,219.86
+2025-03-18,in_store_pickup,wholesale,gift_card,10,4549.95,564.52,3086.9
+2024-05-19,mobile_app,new,apple_pay,40,3153.22,887.81,2374.39
+2025-06-16,web,returning,paypal,13,3619.86,256.56,1985.3
+2024-11-04,marketplace,new,apple_pay,22,3335.56,140.33,4176.94
+2025-06-10,in_store_pickup,wholesale,credit_card,8,3768.58,719.82,2957.03
+2024-11-19,phone,loyalty_silver,paypal,10,4042.59,869.55,4068.26
+2024-06-30,phone,wholesale,gift_card,41,3799.06,294.17,4555.28
+2024-10-29,in_store_pickup,loyalty_silver,debit_card,12,2172.77,435.2,201.83
+2024-03-15,phone,new,credit_card,33,1857.95,308.22,3801.05
+2024-10-25,phone,wholesale,paypal,17,1222.13,428.84,592.14
+2024-06-16,marketplace,returning,paypal,31,2081.76,849.75,740.27
+2024-06-23,web,returning,paypal,43,2861.35,665.23,2912.67
+2024-03-12,in_store_pickup,loyalty_gold,paypal,32,2498.77,467.46,1857.93
+2025-05-24,web,loyalty_gold,credit_card,4,2200.06,535.31,2178.14
+2024-08-07,web,wholesale,paypal,15,558.6,895.91,2192.03
+2024-05-13,web,returning,apple_pay,24,3595.94,252.9,4341.5
+2025-03-03,in_store_pickup,new,credit_card,26,3424.64,727.91,4631.1
+2024-07-04,in_store_pickup,loyalty_gold,debit_card,34,2804.58,177.53,3360.5
+2024-10-27,mobile_app,new,debit_card,39,3875.58,107.31,3062.16
+2024-05-11,in_store_pickup,loyalty_silver,apple_pay,22,4194.1,4.7,3187.55
+2024-11-12,mobile_app,loyalty_silver,credit_card,31,1888.54,525.53,4804.9
+2024-01-10,mobile_app,wholesale,bnpl,12,150.12,213.01,212.7
+2024-04-19,marketplace,loyalty_silver,bnpl,5,4394.47,838.92,2156.53
+2024-12-17,marketplace,new,gift_card,9,4299.33,181.2,3675.46
+2024-06-15,in_store_pickup,loyalty_silver,paypal,28,4694.6,697.73,1652.01
+2025-04-30,in_store_pickup,wholesale,apple_pay,16,3508.73,318.47,2987.06
+2024-09-15,web,loyalty_silver,gift_card,43,3862.26,648.91,3538.65
+2025-04-25,web,loyalty_gold,debit_card,13,1427.73,628.26,1322.4
+2024-01-20,marketplace,loyalty_gold,credit_card,43,2394.28,392.37,2846.57
+2025-02-21,mobile_app,returning,paypal,23,896.25,322.9,3746.24
+2025-04-19,phone,loyalty_silver,debit_card,26,4265.91,913.33,519.32
+2025-02-09,phone,returning,apple_pay,38,374.56,45.41,1310.17
+2024-02-22,in_store_pickup,wholesale,paypal,14,3237.93,520.03,2926.99
+2025-05-21,phone,returning,credit_card,5,56.26,573.99,3077.49
+2025-01-13,mobile_app,loyalty_silver,credit_card,11,3309.11,697.65,4090.36
+2024-08-12,phone,returning,debit_card,11,4209.55,894.64,190.63
+2024-07-25,web,new,bnpl,6,4682.74,110.01,252.65
+2024-05-04,marketplace,returning,gift_card,4,4183.1,348.93,2561.42
+2025-03-10,phone,loyalty_silver,paypal,23,3115.3,640.16,4320.31
+2025-05-10,marketplace,loyalty_gold,paypal,4,4342.58,197.71,3464.72
+2024-08-17,web,returning,credit_card,32,2813.84,732.09,1826.33
+2024-01-24,web,returning,debit_card,6,4837.51,735.44,4075.05
+2024-11-17,web,loyalty_gold,credit_card,31,4007.02,82.81,1490.94
+2024-12-04,web,returning,debit_card,36,3298.23,81.16,1642.09
+2024-11-01,in_store_pickup,new,debit_card,35,1831.56,34.85,5131.57
+2024-01-17,phone,loyalty_silver,debit_card,16,1819.44,158.15,4089.76
+2024-05-24,in_store_pickup,new,debit_card,8,3714.3,67.22,2112.06
+2025-04-29,in_store_pickup,new,credit_card,36,4602.85,823.24,2435.59
+2024-12-29,web,returning,gift_card,32,2258.89,952.66,1782.83
+2024-01-13,mobile_app,new,credit_card,41,4269.93,578.9,1108.26
+2024-10-17,phone,loyalty_silver,paypal,18,3681.93,795.16,546.83
+2024-07-08,marketplace,wholesale,bnpl,43,735.5,108.12,4791.64
+2024-03-15,mobile_app,wholesale,apple_pay,34,796.1,475.66,52.89
+2025-05-11,phone,wholesale,credit_card,17,240.96,802.71,2600.52
+2024-02-08,in_store_pickup,loyalty_silver,apple_pay,20,3558.1,137.82,3310.23
+2024-12-09,phone,returning,debit_card,1,4093.78,144.54,3391.31
+2024-03-07,mobile_app,wholesale,credit_card,35,4511.21,786.94,2215.77
+2024-11-14,in_store_pickup,returning,debit_card,42,1802.1,192.05,269.37
+2024-05-20,marketplace,returning,debit_card,18,949.65,712.42,4397.87
+2024-05-02,marketplace,returning,debit_card,29,1847.83,76.73,5097.92
+2024-09-12,phone,wholesale,credit_card,41,4068.72,485.85,1213.55
+2024-02-24,mobile_app,loyalty_gold,apple_pay,42,4498.08,654.87,333.86
+2024-08-24,mobile_app,new,bnpl,13,526.66,62.09,4428.46
+2025-01-15,marketplace,loyalty_silver,paypal,23,2533.07,124.76,2501.4
+2024-08-11,mobile_app,loyalty_gold,bnpl,12,2276.41,145.97,1978.03
+2025-03-04,in_store_pickup,returning,paypal,36,4019.14,541.35,2824.24
+2024-02-14,in_store_pickup,returning,bnpl,16,1746.67,839.5,2185.5
+2024-06-17,web,loyalty_silver,debit_card,20,2465.49,518.75,3462.87
+2025-06-22,mobile_app,wholesale,bnpl,40,1069.09,720.66,1399.75
+2024-12-13,mobile_app,wholesale,gift_card,25,3328.46,798.94,3160.44
+2024-09-02,in_store_pickup,returning,credit_card,5,2713.66,116.69,5127.7
+2024-07-03,marketplace,loyalty_gold,credit_card,18,2640.27,225.03,2359.03
+2024-08-09,mobile_app,new,paypal,7,2818.26,1.83,3700.22
+2025-01-30,in_store_pickup,loyalty_silver,bnpl,32,2315.54,860.79,4426.13
+2024-01-01,phone,loyalty_silver,apple_pay,16,3384.47,613.0,753.68
+2024-08-13,marketplace,wholesale,debit_card,41,2615.65,7.96,2970.18
+2024-10-31,web,new,debit_card,31,980.16,655.4,2623.78
+2024-01-25,phone,wholesale,gift_card,37,508.04,510.19,3806.26
+2024-12-19,mobile_app,returning,debit_card,15,1173.78,263.08,1098.6
+2024-06-08,phone,returning,credit_card,24,966.65,339.15,1547.65
+2024-04-05,phone,returning,gift_card,26,4562.41,399.19,4754.2
+2024-04-18,in_store_pickup,loyalty_silver,apple_pay,12,1201.98,535.17,1931.24
+2024-03-08,marketplace,wholesale,apple_pay,25,3306.22,85.35,2806.46
+2024-06-06,phone,returning,gift_card,36,1267.71,677.61,4760.24
+2024-08-14,web,loyalty_silver,debit_card,32,128.47,211.75,2440.34
+2024-05-06,marketplace,returning,apple_pay,34,291.29,530.7,2063.99
+2025-05-25,phone,new,paypal,6,1298.37,331.47,1187.72
+2025-05-11,in_store_pickup,returning,bnpl,44,2271.63,750.38,641.08
+2024-11-24,in_store_pickup,returning,debit_card,38,3430.97,288.5,413.95
+2024-11-08,phone,loyalty_silver,paypal,14,4696.86,541.16,1440.71
+2024-08-06,in_store_pickup,loyalty_silver,paypal,14,1583.74,604.51,1868.2
+2024-07-16,marketplace,loyalty_silver,apple_pay,21,1740.77,292.27,3553.08
+2024-10-02,marketplace,new,apple_pay,1,3217.19,795.26,3727.65
+2024-10-25,web,loyalty_silver,paypal,19,2017.77,449.09,2545.57
+2024-11-18,phone,returning,bnpl,26,994.27,160.14,1671.23
+2024-11-12,in_store_pickup,loyalty_gold,gift_card,23,3114.26,415.11,3882.58
+2024-07-22,mobile_app,new,credit_card,9,2695.71,692.78,4219.86
+2024-10-20,marketplace,loyalty_silver,credit_card,35,986.68,609.12,2427.77
+2024-08-10,mobile_app,loyalty_silver,credit_card,21,2455.68,544.0,2259.21
+2025-02-08,phone,loyalty_silver,bnpl,21,2138.8,859.67,200.6
+2024-05-04,in_store_pickup,returning,credit_card,37,2345.5,669.13,645.94
+2024-01-28,in_store_pickup,wholesale,bnpl,14,4791.35,67.39,2166.1
+2025-01-08,phone,loyalty_silver,gift_card,38,1973.14,361.52,1004.05
+2025-04-30,mobile_app,loyalty_silver,paypal,30,349.05,882.85,3946.65
+2024-08-05,phone,wholesale,bnpl,11,1001.09,820.29,3637.52
+2024-06-09,marketplace,wholesale,apple_pay,5,120.98,754.11,3575.18
+2024-09-08,in_store_pickup,new,paypal,37,1097.26,558.79,1915.61
+2024-03-12,in_store_pickup,returning,bnpl,20,3334.53,909.75,838.09
+2024-09-20,phone,loyalty_silver,credit_card,3,2305.72,908.03,839.8
+2024-12-17,web,new,debit_card,24,3318.38,638.28,4424.28
+2024-12-02,web,new,bnpl,13,1997.39,82.66,5100.03
+2024-04-15,web,returning,debit_card,3,2457.7,621.03,579.53
+2024-12-29,in_store_pickup,returning,bnpl,11,4451.95,493.51,2693.62
+2024-03-10,phone,returning,credit_card,29,3184.69,952.01,522.55
+2024-05-02,phone,loyalty_silver,paypal,41,770.1,885.61,3121.33
+2024-10-29,in_store_pickup,loyalty_silver,debit_card,15,1363.07,524.98,2543.47
+2024-05-23,web,loyalty_gold,credit_card,41,3908.01,372.93,3137.81
+2024-02-17,in_store_pickup,wholesale,debit_card,20,2820.38,537.58,207.22
+2024-03-26,mobile_app,wholesale,credit_card,13,2102.9,356.29,67.96
+2024-12-18,in_store_pickup,wholesale,debit_card,24,4304.71,255.18,1840.25
+2025-05-19,mobile_app,loyalty_gold,debit_card,43,4120.27,839.26,1442.69
+2024-04-29,web,returning,paypal,25,412.35,951.85,3610.2
+2024-08-18,phone,wholesale,debit_card,22,4253.62,258.62,4072.8
+2025-06-07,web,loyalty_gold,paypal,5,4385.19,375.58,4218.89
+2025-02-24,phone,returning,debit_card,35,1172.78,428.13,998.52
+2024-08-20,mobile_app,loyalty_silver,credit_card,17,1075.96,29.79,2147.54
+2025-03-28,in_store_pickup,new,credit_card,27,865.07,695.94,4016.01
+2025-01-28,mobile_app,wholesale,debit_card,1,2672.81,552.09,4764.1
+2025-01-24,phone,returning,debit_card,14,3204.46,690.14,1190.43
+2025-02-08,mobile_app,loyalty_gold,apple_pay,39,1749.36,354.84,3385.84
+2024-01-02,phone,loyalty_silver,bnpl,14,1073.24,557.06,5100.26
+2024-03-27,marketplace,loyalty_gold,debit_card,11,3353.11,720.73,1923.6
+2025-01-29,mobile_app,loyalty_silver,debit_card,6,2993.62,439.11,2806.37
+2024-02-21,web,loyalty_gold,debit_card,21,294.56,631.9,2159.18
+2024-12-09,marketplace,returning,apple_pay,41,1278.01,363.32,3136.04
+2025-04-23,mobile_app,loyalty_silver,paypal,13,4459.61,880.25,2841.06
+2024-10-23,marketplace,wholesale,apple_pay,36,448.69,555.0,4126.38
+2024-11-07,web,loyalty_gold,apple_pay,25,2098.93,221.88,3994.69
+2025-03-16,marketplace,returning,bnpl,37,3895.24,574.64,941.26
+2024-06-12,web,returning,debit_card,25,2208.92,28.38,2958.57
+2024-04-15,phone,loyalty_silver,credit_card,8,2439.89,812.81,4674.4
+2025-04-10,in_store_pickup,new,paypal,28,2361.05,532.98,2325.79
+2024-10-14,phone,wholesale,credit_card,33,626.91,811.05,3878.66
+2024-12-02,mobile_app,returning,paypal,40,4079.79,310.19,2988.28
+2024-10-21,in_store_pickup,loyalty_gold,credit_card,41,1643.94,3.37,4425.86
+2025-03-12,web,wholesale,bnpl,3,1016.35,649.76,4349.87
+2024-04-08,mobile_app,loyalty_gold,credit_card,13,3093.59,205.04,54.47
+2024-12-04,web,returning,bnpl,15,1406.84,423.73,1959.13
+2024-03-03,web,loyalty_gold,apple_pay,2,2930.08,940.36,4809.2
+2025-04-14,mobile_app,loyalty_gold,debit_card,15,3464.06,480.0,1208.48
+2024-08-06,mobile_app,loyalty_gold,gift_card,34,2253.56,395.84,4227.43
+2025-04-17,marketplace,wholesale,bnpl,26,668.12,395.83,230.32
+2025-03-18,mobile_app,new,bnpl,35,1249.48,957.47,190.35
+2024-10-29,mobile_app,new,paypal,10,533.89,918.57,872.17
+2024-03-26,mobile_app,loyalty_gold,gift_card,12,4178.13,957.28,1738.65
+2024-07-25,mobile_app,loyalty_gold,bnpl,26,2448.71,790.78,1314.94
+2024-11-21,in_store_pickup,loyalty_gold,apple_pay,13,2551.24,853.56,3125.5
+2024-02-01,phone,loyalty_silver,gift_card,7,474.48,192.6,4985.74
+2024-11-11,marketplace,wholesale,apple_pay,24,2007.64,129.33,4727.51
+2024-12-10,marketplace,loyalty_silver,apple_pay,39,605.24,436.42,448.16
+2024-02-20,in_store_pickup,wholesale,bnpl,36,4210.12,669.32,4455.71
+2024-07-08,marketplace,wholesale,debit_card,26,2201.87,653.19,3305.63
+2024-06-06,in_store_pickup,new,credit_card,39,1277.84,127.43,3415.75
+2025-01-22,phone,returning,bnpl,28,4281.91,168.82,960.06
+2024-06-08,web,loyalty_silver,bnpl,15,1387.43,276.16,1940.08
+2024-08-31,phone,loyalty_silver,paypal,34,2441.59,137.56,945.81
+2024-07-17,in_store_pickup,loyalty_silver,credit_card,6,2278.75,822.39,4398.47

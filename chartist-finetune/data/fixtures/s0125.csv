@@ -1,241 +1,241 @@
-shipment_arrival_date,shipment_terminal,shipment_cargo_type,shipment_direction,shipment_teu_count,shipment_gross_weight_tonnes,shipment_dwell_days
-2024-10-14,Ro-Ro Berth,Refrigerated,Import,1455,138601.2,16.51
-2024-02-08,Dry Bulk Terminal,Vehicles,Transshipment,9477,15548.14,11.05
-2025-04-26,Ro-Ro Berth,Refrigerated,Transshipment,9287,18049.06,5.35
-2024-05-06,Ro-Ro Berth,Liquid Bulk,Import,5668,52182.09,3.74
-2024-05-08,Liquid Bulk Jetty,Refrigerated,Export,10261,146413.55,8.19
-2024-12-14,Container Terminal A,Containers,Transshipment,3806,19130.09,23.61
-2025-03-04,Container Terminal B,Dry Bulk,Transshipment,2571,126088.32,44.28
-2025-03-15,Container Terminal A,Vehicles,Import,2420,88916.32,9.18
-2025-01-27,Container Terminal B,Dry Bulk,Import,3062,111686.51,19.65
-2024-01-03,Ro-Ro Berth,Liquid Bulk,Transshipment,5973,82949.58,33.64
-2025-02-03,Container Terminal A,Refrigerated,Transshipment,3270,83716.13,20.64
-2024-11-17,Liquid Bulk Jetty,Break Bulk,Transshipment,4607,47328.28,26.64
-2025-05-19,Ro-Ro Berth,Break Bulk,Import,8918,26115.26,27.96
-2024-05-10,Liquid Bulk Jetty,Vehicles,Import,6867,86735.14,0.69
-2024-04-07,Container Terminal B,Break Bulk,Transshipment,100,7918.34,9.83
-2024-04-24,General Cargo Wharf,Vehicles,Import,3727,127570.84,38.39
-2024-08-21,Ro-Ro Berth,Vehicles,Import,9317,122752.74,39.65
-2024-11-26,Dry Bulk Terminal,Vehicles,Import,10971,81830.6,5.48
-2024-09-28,Container Terminal B,Break Bulk,Export,8570,57406.11,44.86
-2024-11-14,Liquid Bulk Jetty,Containers,Transshipment,11113,123522.34,32.87
-2025-03-05,Dry Bulk Terminal,Break Bulk,Export,1921,3805.02,34.67
-2024-04-21,Container Terminal A,Vehicles,Transshipment,2870,64983.21,17.48
-2024-08-16,Dry Bulk Terminal,Vehicles,Export,2627,86617.44,14.86
-2025-03-06,Ro-Ro Berth,Dry Bulk,Export,4273,65276.42,30.76
-2024-02-15,Liquid Bulk Jetty,Liquid Bulk,Transshipment,11218,101424.95,4.78
-2024-04-02,Ro-Ro Berth,Containers,Export,293,142688.57,1.35
-2025-03-07,Container Terminal B,Refrigerated,Export,4711,75956.3,13.15
-2025-06-17,Liquid Bulk Jetty,Containers,Import,10545,90994.81,44.96
-2024-11-17,General Cargo Wharf,Dry Bulk,Transshipment,6991,1658.53,16.95
-2024-01-25,General Cargo Wharf,Break Bulk,Transshipment,3714,142767.55,16.18
-2025-06-05,Dry Bulk Terminal,Break Bulk,Transshipment,8359,91657.19,11.99
-2024-08-07,Container Terminal B,Break Bulk,Transshipment,8402,33385.96,12.78
-2024-03-22,General Cargo Wharf,Liquid Bulk,Export,837,89524.79,10.09
-2024-09-23,Ro-Ro Berth,Vehicles,Export,7395,135181.2,11.69
-2024-05-13,Container Terminal A,Liquid Bulk,Export,4055,22597.01,9.54
-2024-07-24,Ro-Ro Berth,Vehicles,Import,9966,81570.24,34.33
-2024-02-19,Container Terminal A,Dry Bulk,Export,11381,31769.68,5.86
-2024-07-28,Container Terminal B,Liquid Bulk,Import,1938,137992.14,35.91
-2024-07-21,Dry Bulk Terminal,Break Bulk,Export,3517,4189.69,30.44
-2024-06-05,Ro-Ro Berth,Dry Bulk,Export,4039,142636.13,37.6
-2025-04-12,Ro-Ro Berth,Dry Bulk,Transshipment,6666,83686.98,32.31
-2024-01-23,Container Terminal A,Refrigerated,Import,566,94052.82,5.04
-2025-03-06,Container Terminal B,Containers,Transshipment,10548,69307.58,16.32
-2024-02-03,Container Terminal B,Break Bulk,Export,8339,149826.96,35.03
-2024-05-09,Ro-Ro Berth,Refrigerated,Transshipment,2242,34728.94,30.3
-2025-05-31,Container Terminal B,Refrigerated,Import,6435,132406.56,19.26
-2024-12-29,General Cargo Wharf,Liquid Bulk,Import,4557,143635.63,4.82
-2024-05-28,Container Terminal B,Containers,Transshipment,11734,76405.69,26.28
-2025-03-22,Liquid Bulk Jetty,Refrigerated,Transshipment,2271,98848.74,32.1
-2025-01-31,Liquid Bulk Jetty,Liquid Bulk,Transshipment,727,125607.27,11.64
-2025-02-28,Liquid Bulk Jetty,Containers,Import,2017,69186.88,15.84
-2024-03-11,Liquid Bulk Jetty,Dry Bulk,Export,1813,83848.6,28.9
-2025-04-15,General Cargo Wharf,Liquid Bulk,Transshipment,3592,55313.15,16.75
-2024-08-06,Ro-Ro Berth,Liquid Bulk,Export,11401,75165.41,33.94
-2024-08-07,Dry Bulk Terminal,Liquid Bulk,Export,4291,134130.76,43.9
-2024-05-31,Container Terminal B,Containers,Transshipment,2824,39136.33,43.11
-2025-02-14,Ro-Ro Berth,Liquid Bulk,Transshipment,2498,110692.23,9.98
-2024-12-27,Container Terminal A,Dry Bulk,Export,6213,103669.47,9.72
-2025-03-01,Ro-Ro Berth,Break Bulk,Import,9984,33965.2,10.83
-2024-10-16,Dry Bulk Terminal,Break Bulk,Export,4304,23668.79,18.85
-2024-03-18,Liquid Bulk Jetty,Dry Bulk,Import,10324,135603.83,24.9
-2024-07-02,Liquid Bulk Jetty,Liquid Bulk,Transshipment,1602,31.97,26.7
-2024-05-30,Container Terminal A,Containers,Transshipment,5505,143927.65,36.64
-2024-08-05,General Cargo Wharf,Containers,Import,6316,36517.07,27.12
-2024-01-09,Container Terminal B,Break Bulk,Transshipment,9625,22443.29,3.36
-2025-04-09,Container Terminal B,Vehicles,Import,11907,82019.23,16.7
-2024-05-24,Dry Bulk Terminal,Break Bulk,Transshipment,10297,47476.57,9.06
-2025-04-03,Ro-Ro Berth,Vehicles,Transshipment,136,82425.43,26.12
-2024-03-16,Liquid Bulk Jetty,Containers,Transshipment,10770,87718.9,32.05
-2024-07-10,Dry Bulk Terminal,Containers,Import,2766,21313.49,42.84
-2024-01-03,Liquid Bulk Jetty,Containers,Transshipment,6738,87308.7,35.02
-2025-05-25,Container Terminal B,Break Bulk,Transshipment,11137,52354.26,27.96
-2024-12-15,Ro-Ro Berth,Liquid Bulk,Export,8018,117188.08,25.43
-2024-12-22,Container Terminal A,Break Bulk,Export,9520,38249.77,7.44
-2024-07-25,Dry Bulk Terminal,Containers,Transshipment,10509,94568.36,40.95
-2024-04-26,Ro-Ro Berth,Break Bulk,Transshipment,1855,65971.27,25.7
-2025-04-08,Liquid Bulk Jetty,Liquid Bulk,Import,9289,105678.27,35.55
-2025-01-03,Liquid Bulk Jetty,Liquid Bulk,Import,10349,15942.9,9.1
-2024-08-20,Dry Bulk Terminal,Vehicles,Export,11626,33091.99,40.88
-2024-11-03,Container Terminal B,Refrigerated,Import,2922,114410.72,28.63
-2024-03-21,General Cargo Wharf,Containers,Transshipment,803,36351.07,6.23
-2025-04-08,Liquid Bulk Jetty,Vehicles,Transshipment,7600,64045.25,16.17
-2025-05-08,Dry Bulk Terminal,Vehicles,Transshipment,8293,51873.76,4.52
-2025-03-12,Ro-Ro Berth,Containers,Import,4305,140474.74,36.61
-2025-03-26,Container Terminal B,Break Bulk,Import,11139,1591.0,23.27
-2024-05-19,Ro-Ro Berth,Break Bulk,Export,5026,93689.92,25.5
-2024-12-11,Container Terminal B,Liquid Bulk,Import,444,11937.79,20.58
-2025-05-30,Liquid Bulk Jetty,Refrigerated,Import,6927,7481.45,17.65
-2024-03-15,Dry Bulk Terminal,Break Bulk,Export,10980,24087.77,17.94
-2024-03-26,Ro-Ro Berth,Dry Bulk,Export,10435,130734.51,20.62
-2024-09-19,General Cargo Wharf,Vehicles,Export,1131,50187.72,10.98
-2024-10-11,Ro-Ro Berth,Containers,Export,3492,134485.27,30.46
-2024-04-08,Ro-Ro Berth,Vehicles,Import,977,96716.92,4.91
-2024-06-13,Dry Bulk Terminal,Liquid Bulk,Transshipment,10290,118669.44,28.8
-2024-05-05,Dry Bulk Terminal,Containers,Transshipment,7648,85187.63,2.45
-2025-01-12,Ro-Ro Berth,Dry Bulk,Export,1967,80851.15,14.57
-2025-02-01,General Cargo Wharf,Vehicles,Export,10817,13054.12,29.42
-2024-10-14,General Cargo Wharf,Dry Bulk,Import,271,111875.4,19.4
-2024-04-15,Container Terminal B,Dry Bulk,Export,10616,39848.87,19.78
-2024-07-21,Container Terminal B,Dry Bulk,Export,5770,25965.32,25.77
-2024-02-29,Container Terminal A,Refrigerated,Export,439,126497.08,39.03
-2024-01-24,General Cargo Wharf,Break Bulk,Import,10057,46331.2,22.84
-2025-02-19,Dry Bulk Terminal,Refrigerated,Import,6815,9122.45,9.03
-2024-10-21,General Cargo Wharf,Liquid Bulk,Export,4489,112690.11,23.21
-2025-01-28,General Cargo Wharf,Vehicles,Import,10180,87888.55,11.7
-2024-01-14,Dry Bulk Terminal,Vehicles,Export,10107,130256.73,20.49
-2024-12-10,General Cargo Wharf,Liquid Bulk,Import,6967,19761.1,21.19
-2024-04-12,General Cargo Wharf,Containers,Import,4342,66589.68,20.71
-2024-12-05,Container Terminal B,Break Bulk,Import,4810,110169.03,4.3
-2025-02-19,Container Terminal B,Vehicles,Export,4128,17549.82,34.0
-2024-05-26,Container Terminal A,Liquid Bulk,Transshipment,10441,29235.47,12.09
-2025-02-14,Ro-Ro Berth,Refrigerated,Import,11598,86002.45,5.28
-2025-01-19,Container Terminal A,Liquid Bulk,Transshipment,717,142084.62,1.94
-2024-05-21,Liquid Bulk Jetty,Break Bulk,Export,8117,143716.09,33.96
-2025-03-19,Liquid Bulk Jetty,Vehicles,Transshipment,7802,88177.48,36.9
-2025-05-11,Container Terminal A,Containers,Export,3175,90504.64,38.88
-2025-05-19,Dry Bulk Terminal,Refrigerated,Export,6926,12717.67,21.91
-2025-02-24,Ro-Ro Berth,Liquid Bulk,Export,1246,50276.08,2.51
-2024-01-20,Container Terminal A,Containers,Export,8916,131853.9,16.44
-2024-06-18,Ro-Ro Berth,Vehicles,Transshipment,10564,114483.62,7.66
-2024-10-06,General Cargo Wharf,Refrigerated,Export,3666,72360.84,44.98
-2024-12-03,Container Terminal A,Liquid Bulk,Import,2677,45987.49,14.82
-2024-07-02,Container Terminal B,Vehicles,Import,3645,131285.53,15.04
-2024-06-21,Container Terminal B,Liquid Bulk,Import,5685,89111.79,1.95
-2024-06-30,Container Terminal A,Containers,Transshipment,9014,31818.01,37.97
-2025-03-31,Dry Bulk Terminal,Vehicles,Import,7419,75829.36,13.73
-2024-11-25,Liquid Bulk Jetty,Vehicles,Export,10093,77707.51,11.51
-2025-05-28,Container Terminal B,Liquid Bulk,Export,3462,76610.12,22.19
-2024-06-29,Container Terminal A,Vehicles,Import,5610,45963.0,0.45
-2024-08-01,Container Terminal B,Break Bulk,Export,9949,22116.67,10.45
-2024-06-08,Container Terminal A,Break Bulk,Transshipment,5816,110475.81,2.07
-2025-04-19,Liquid Bulk Jetty,Containers,Export,10903,137401.3,44.56
-2024-09-26,Dry Bulk Terminal,Liquid Bulk,Transshipment,5289,10588.69,19.25
-2025-03-07,General Cargo Wharf,Containers,Export,1305,38172.57,36.93
-2024-12-09,General Cargo Wharf,Dry Bulk,Transshipment,8615,72498.47,14.43
-2024-10-01,Container Terminal B,Dry Bulk,Import,7578,52781.43,25.19
-2024-11-06,Dry Bulk Terminal,Vehicles,Import,11983,9983.7,25.99
-2024-05-06,General Cargo Wharf,Containers,Import,11618,96110.04,40.58
-2024-08-14,Liquid Bulk Jetty,Break Bulk,Transshipment,4229,56884.86,33.09
-2024-04-04,Ro-Ro Berth,Liquid Bulk,Export,11471,50148.2,25.3
-2024-02-05,Container Terminal B,Refrigerated,Transshipment,7618,100461.95,36.64
-2024-10-12,Liquid Bulk Jetty,Break Bulk,Import,3590,79558.23,5.32
-2025-06-01,Ro-Ro Berth,Dry Bulk,Transshipment,4595,71904.4,8.18
-2025-05-18,General Cargo Wharf,Liquid Bulk,Transshipment,2794,129428.26,11.57
-2024-11-02,Container Terminal B,Refrigerated,Transshipment,5392,99784.0,17.39
-2024-08-04,Container Terminal B,Dry Bulk,Import,5930,123509.96,2.74
-2024-11-25,Dry Bulk Terminal,Dry Bulk,Import,10343,50692.17,2.62
-2024-09-09,Liquid Bulk Jetty,Vehicles,Transshipment,8467,77375.7,38.13
-2024-04-24,Dry Bulk Terminal,Break Bulk,Export,9733,35605.15,25.99
-2024-09-09,Liquid Bulk Jetty,Break Bulk,Transshipment,11408,118810.37,38.26
-2024-11-25,Container Terminal A,Break Bulk,Export,9235,144475.3,39.06
-2025-01-12,Liquid Bulk Jetty,Liquid Bulk,Transshipment,3998,12379.71,5.9
-2024-01-08,General Cargo Wharf,Dry Bulk,Import,7433,24811.56,15.9
-2025-03-12,General Cargo Wharf,Break Bulk,Import,3549,24862.0,27.56
-2025-01-09,Container Terminal A,Dry Bulk,Export,9177,13087.0,32.43
-2024-03-16,Ro-Ro Berth,Dry Bulk,Import,11450,140967.03,7.41
-2024-01-21,General Cargo Wharf,Refrigerated,Transshipment,5629,71314.31,1.36
-2024-03-05,Dry Bulk Terminal,Break Bulk,Export,1009,104285.09,9.21
-2024-07-31,Container Terminal A,Liquid Bulk,Export,357,78923.66,22.17
-2024-08-25,Dry Bulk Terminal,Containers,Transshipment,7736,144004.5,21.72
-2025-01-01,Container Terminal A,Dry Bulk,Transshipment,458,91731.56,8.18
-2024-12-08,Liquid Bulk Jetty,Refrigerated,Transshipment,1860,95896.77,2.38
-2025-01-12,Container Terminal A,Vehicles,Transshipment,7504,116848.12,8.94
-2024-09-15,Liquid Bulk Jetty,Vehicles,Transshipment,11007,91707.17,18.17
-2024-09-02,Liquid Bulk Jetty,Dry Bulk,Import,7287,107135.57,42.44
-2025-06-12,Container Terminal A,Vehicles,Export,11367,52014.69,2.64
-2024-03-28,Container Terminal A,Break Bulk,Transshipment,2929,26938.25,13.92
-2024-02-18,Container Terminal B,Refrigerated,Export,5899,22422.78,4.22
-2025-01-17,Container Terminal B,Containers,Import,3688,11321.43,4.17
-2024-05-22,Dry Bulk Terminal,Dry Bulk,Transshipment,858,106902.68,22.92
-2024-08-17,Liquid Bulk Jetty,Break Bulk,Transshipment,1631,73601.12,44.3
-2024-01-17,Ro-Ro Berth,Containers,Import,1662,101894.83,40.74
-2024-05-01,Ro-Ro Berth,Liquid Bulk,Import,11922,123056.85,27.76
-2024-01-06,General Cargo Wharf,Liquid Bulk,Export,6871,35557.08,18.42
-2024-12-04,Container Terminal A,Break Bulk,Transshipment,6055,110447.12,9.2
-2025-05-07,General Cargo Wharf,Dry Bulk,Export,3930,113354.98,29.4
-2024-12-20,Ro-Ro Berth,Containers,Import,4769,128692.59,40.57
-2024-01-22,Liquid Bulk Jetty,Refrigerated,Import,10637,19929.96,19.58
-2024-07-10,Dry Bulk Terminal,Containers,Transshipment,4092,119627.43,1.6
-2025-04-28,Container Terminal A,Containers,Export,6667,142152.65,26.81
-2024-04-17,Container Terminal A,Refrigerated,Transshipment,916,24425.65,21.05
-2024-06-18,Dry Bulk Terminal,Dry Bulk,Export,5188,112268.75,39.1
-2025-04-28,Container Terminal B,Dry Bulk,Export,11434,33047.48,18.64
-2024-10-11,Ro-Ro Berth,Dry Bulk,Transshipment,5635,141245.88,15.45
-2025-05-23,Container Terminal B,Vehicles,Transshipment,10290,1222.93,43.8
-2025-02-17,Container Terminal B,Refrigerated,Transshipment,5668,117331.84,33.26
-2024-08-27,Liquid Bulk Jetty,Vehicles,Transshipment,18,91482.44,15.4
-2025-05-23,Liquid Bulk Jetty,Break Bulk,Import,1536,64008.36,42.22
-2024-05-27,Container Terminal A,Liquid Bulk,Import,9878,113408.94,40.62
-2024-01-29,Ro-Ro Berth,Refrigerated,Import,6232,41160.98,8.19
-2024-02-01,General Cargo Wharf,Containers,Import,5780,100992.8,38.71
-2025-01-10,Liquid Bulk Jetty,Refrigerated,Transshipment,7717,55455.19,25.56
-2024-10-06,Ro-Ro Berth,Containers,Import,2412,75467.01,41.87
-2024-01-02,Dry Bulk Terminal,Dry Bulk,Export,915,73059.31,29.96
-2024-04-28,Container Terminal B,Break Bulk,Transshipment,1563,96427.03,28.06
-2025-06-22,Container Terminal A,Break Bulk,Transshipment,6466,147147.88,27.81
-2024-05-23,Ro-Ro Berth,Liquid Bulk,Import,1062,18588.2,14.58
-2025-02-03,Container Terminal A,Dry Bulk,Export,7692,172.2,3.2
-2025-06-19,Dry Bulk Terminal,Vehicles,Export,7584,46860.81,9.35
-2025-02-18,Container Terminal B,Liquid Bulk,Transshipment,4766,798.96,23.45
-2025-06-02,General Cargo Wharf,Containers,Export,8207,134420.25,0.29
-2025-01-29,Dry Bulk Terminal,Dry Bulk,Import,11795,49231.89,34.9
-2024-01-08,Dry Bulk Terminal,Vehicles,Export,6923,109017.0,33.82
-2025-05-06,Ro-Ro Berth,Dry Bulk,Transshipment,7054,17578.64,31.13
-2024-02-02,Ro-Ro Berth,Refrigerated,Export,4229,25864.22,39.08
-2024-11-05,Liquid Bulk Jetty,Containers,Import,5671,338.83,40.97
-2024-03-30,Container Terminal B,Refrigerated,Import,5513,7692.38,2.55
-2024-06-30,Liquid Bulk Jetty,Dry Bulk,Transshipment,6271,34190.59,35.52
-2025-03-02,General Cargo Wharf,Refrigerated,Import,6564,54108.43,33.15
-2024-02-25,Container Terminal B,Containers,Import,115,75693.96,11.94
-2024-06-21,Container Terminal A,Vehicles,Transshipment,5135,125393.23,10.24
-2024-07-06,Liquid Bulk Jetty,Vehicles,Import,9219,96981.05,44.82
-2024-08-29,Dry Bulk Terminal,Containers,Export,11564,15457.49,35.95
-2024-06-23,Container Terminal A,Containers,Transshipment,11648,48261.58,24.67
-2024-03-15,Ro-Ro Berth,Liquid Bulk,Export,9977,149474.26,9.62
-2024-02-10,General Cargo Wharf,Dry Bulk,Export,1453,70696.93,16.34
-2024-04-07,Container Terminal B,Dry Bulk,Import,568,27104.82,15.98
-2024-01-12,Ro-Ro Berth,Vehicles,Transshipment,9364,10153.36,32.65
-2025-03-31,General Cargo Wharf,Vehicles,Import,6100,108415.04,19.02
-2024-04-24,General Cargo Wharf,Refrigerated,Import,3681,121241.0,35.34
-2025-01-27,Ro-Ro Berth,Dry Bulk,Export,7242,143334.76,31.73
-2024-06-21,Liquid Bulk Jetty,Refrigerated,Transshipment,7590,47417.92,7.94
-2024-03-24,General Cargo Wharf,Liquid Bulk,Import,809,5864.71,29.62
-2025-04-07,Dry Bulk Terminal,Refrigerated,Import,2355,47570.29,7.77
-2025-04-15,Dry Bulk Terminal,Containers,Export,11843,55451.78,26.55
-2025-02-21,Dry Bulk Terminal,Break Bulk,Transshipment,7749,72619.69,13.13
-2025-06-01,Container Terminal A,Refrigerated,Import,1153,57364.67,18.68
-2024-04-14,Dry Bulk Terminal,Dry Bulk,Import,3985,124574.62,15.28
-2024-07-10,Container Terminal A,Refrigerated,Export,9950,70272.66,20.45
-2024-02-22,Dry Bulk Terminal,Break Bulk,Export,4415,48330.76,44.1
-2025-05-18,Ro-Ro Berth,Vehicles,Export,7408,139864.46,20.54
-2025-04-23,Container Terminal B,Vehicles,Import,4442,32012.74,10.24
-2025-02-23,Container Terminal B,Vehicles,Transshipment,5321,132369.08,32.37
-2025-05-19,Liquid Bulk Jetty,Break Bulk,Export,6159,36356.34,44.54
-2025-05-18,Dry Bulk Terminal,Refrigerated,Import,10859,115634.5,5.18
-2024-12-22,Ro-Ro Berth,Containers,Transshipment,7450,120495.31,43.65
-2024-06-09,Ro-Ro Berth,Vehicles,Export,2084,60581.7,6.34
-2025-04-28,Container Terminal B,Refrigerated,Transshipment,10703,130416.23,10.0
-2025-02-03,General Cargo Wharf,Refrigerated,Export,2001,76928.57,5.4
-2025-01-02,General Cargo Wharf,Refrigerated,Export,10646,56379.25,25.51
+stayDate,propertyName,roomType,marketSegment,roomsAvailable,roomsSold,averageDailyRate,totalRoomRevenue
+2025-02-18,Riverside Resort,Executive,Direct,191,138,166.78,45039.91
+2024-03-03,Mountain Lodge,Family,Group,97,444,793.57,999.43
+2025-06-20,Airport Inn,Suite,Leisure,308,195,122.12,262043.61
+2024-12-16,Downtown Suites,Standard,Corporate,302,193,349.82,79992.21
+2025-03-08,Riverside Resort,Deluxe,Direct,199,91,759.08,36996.94
+2024-11-06,Mountain Lodge,Suite,Group,178,175,119.1,88306.69
+2025-03-04,Mountain Lodge,Suite,Group,239,450,800.89,82377.33
+2024-03-25,Downtown Suites,Standard,Wholesale,438,396,126.25,28698.12
+2024-06-30,Harbor View Hotel,Executive,Group,195,312,562.83,144470.25
+2025-03-06,Airport Inn,Deluxe,Direct,273,148,551.34,215397.99
+2025-06-20,Mountain Lodge,Standard,Leisure,152,29,621.53,296188.7
+2024-07-22,Harbor View Hotel,Standard,Leisure,329,346,187.01,185139.74
+2025-04-20,Harbor View Hotel,Deluxe,Corporate,446,269,788.98,191217.02
+2024-07-19,Mountain Lodge,Executive,Online Travel Agency,131,326,519.76,294723.23
+2024-06-09,Harbor View Hotel,Deluxe,Group,132,133,731.06,353535.93
+2025-03-11,Riverside Resort,Family,Leisure,202,202,385.44,307234.02
+2025-02-02,Mountain Lodge,Deluxe,Wholesale,314,379,452.16,110019.69
+2025-05-11,Mountain Lodge,Executive,Corporate,152,60,553.76,35836.32
+2024-03-07,Mountain Lodge,Executive,Leisure,387,376,602.4,179508.84
+2024-06-14,Downtown Suites,Suite,Wholesale,118,160,107.16,24108.61
+2024-07-03,Downtown Suites,Deluxe,Corporate,440,222,743.74,296507.88
+2025-01-17,Mountain Lodge,Standard,Group,223,120,296.21,93344.53
+2025-01-07,Mountain Lodge,Deluxe,Direct,133,427,362.07,355209.72
+2024-09-30,Mountain Lodge,Suite,Corporate,313,142,547.4,146857.1
+2025-04-06,Mountain Lodge,Executive,Online Travel Agency,85,187,405.59,281627.93
+2024-10-25,Harbor View Hotel,Suite,Group,216,219,379.36,276953.13
+2025-03-10,Harbor View Hotel,Family,Online Travel Agency,404,13,557.71,81253.33
+2024-03-02,Mountain Lodge,Executive,Wholesale,434,392,823.18,29331.74
+2024-02-20,Mountain Lodge,Suite,Group,51,405,488.79,246099.76
+2024-10-15,Downtown Suites,Suite,Corporate,87,414,156.18,380794.99
+2024-12-12,Harbor View Hotel,Standard,Wholesale,366,276,213.43,351551.26
+2024-05-18,Mountain Lodge,Standard,Direct,430,103,693.99,348562.82
+2024-09-14,Riverside Resort,Family,Group,229,411,115.43,165368.88
+2024-09-13,Harbor View Hotel,Suite,Wholesale,48,341,148.8,63418.79
+2024-01-15,Airport Inn,Suite,Online Travel Agency,443,316,838.17,246594.81
+2024-05-18,Riverside Resort,Suite,Group,243,272,680.47,77727.31
+2025-05-21,Downtown Suites,Standard,Leisure,226,245,437.76,223483.92
+2024-06-20,Downtown Suites,Family,Group,368,340,784.25,331079.09
+2024-10-20,Harbor View Hotel,Deluxe,Group,88,96,664.94,101644.89
+2024-07-26,Harbor View Hotel,Standard,Direct,404,43,66.67,181971.25
+2025-05-11,Riverside Resort,Suite,Online Travel Agency,433,260,504.17,57868.83
+2025-04-14,Mountain Lodge,Suite,Leisure,439,405,172.16,202402.64
+2025-02-11,Airport Inn,Executive,Wholesale,189,185,792.79,7759.18
+2024-06-12,Harbor View Hotel,Suite,Corporate,385,360,96.8,298452.65
+2024-10-21,Mountain Lodge,Standard,Leisure,174,403,787.05,378520.17
+2024-01-28,Riverside Resort,Suite,Wholesale,282,435,835.63,269241.26
+2024-06-23,Airport Inn,Executive,Corporate,79,24,374.76,226079.07
+2025-01-22,Airport Inn,Deluxe,Corporate,388,263,487.52,109720.35
+2024-03-31,Downtown Suites,Family,Leisure,147,430,470.58,26863.64
+2024-12-05,Harbor View Hotel,Executive,Online Travel Agency,52,39,555.89,14006.94
+2024-11-20,Downtown Suites,Standard,Wholesale,320,66,138.29,149948.57
+2024-03-24,Mountain Lodge,Suite,Leisure,437,347,327.64,256212.59
+2025-03-15,Mountain Lodge,Deluxe,Group,42,66,302.01,352711.71
+2025-01-15,Mountain Lodge,Deluxe,Corporate,107,21,763.04,168390.35
+2024-09-05,Airport Inn,Family,Leisure,363,321,71.23,254448.59
+2024-05-02,Harbor View Hotel,Executive,Direct,151,128,522.03,298758.18
+2024-12-13,Downtown Suites,Executive,Direct,264,363,470.01,189203.98
+2025-02-17,Riverside Resort,Deluxe,Direct,314,117,530.12,291728.05
+2025-01-23,Airport Inn,Deluxe,Corporate,192,106,489.72,143175.58
+2024-04-30,Riverside Resort,Deluxe,Group,84,61,338.72,331568.49
+2024-08-22,Downtown Suites,Suite,Direct,437,202,351.06,382316.77
+2025-03-02,Riverside Resort,Executive,Online Travel Agency,216,376,825.51,341919.16
+2024-11-06,Downtown Suites,Suite,Direct,152,288,434.82,69591.71
+2025-02-17,Harbor View Hotel,Deluxe,Leisure,253,348,758.78,108634.06
+2025-01-11,Mountain Lodge,Standard,Leisure,193,115,789.66,297089.39
+2024-05-18,Mountain Lodge,Family,Corporate,230,268,196.99,279526.62
+2025-04-25,Harbor View Hotel,Executive,Leisure,238,254,486.46,3347.94
+2024-08-03,Mountain Lodge,Executive,Leisure,372,215,79.33,217986.91
+2024-05-31,Harbor View Hotel,Suite,Leisure,143,23,144.04,132549.66
+2025-01-30,Airport Inn,Standard,Corporate,196,187,394.53,74885.51
+2024-03-20,Mountain Lodge,Deluxe,Wholesale,271,385,519.32,145401.69
+2024-08-02,Harbor View Hotel,Deluxe,Online Travel Agency,196,89,654.05,136427.79
+2024-11-16,Airport Inn,Family,Online Travel Agency,263,52,62.95,38692.42
+2025-02-19,Downtown Suites,Executive,Direct,402,358,637.85,139232.64
+2024-09-26,Airport Inn,Family,Online Travel Agency,69,343,848.21,361458.32
+2024-04-13,Downtown Suites,Executive,Leisure,293,110,558.11,343170.63
+2025-06-01,Mountain Lodge,Family,Leisure,114,346,655.07,258901.28
+2024-04-19,Airport Inn,Deluxe,Corporate,263,355,797.2,374042.58
+2024-12-05,Mountain Lodge,Deluxe,Direct,202,373,58.69,357165.2
+2025-04-22,Downtown Suites,Family,Wholesale,41,287,509.87,234373.58
+2024-06-30,Mountain Lodge,Suite,Corporate,357,149,167.49,171132.46
+2025-04-14,Harbor View Hotel,Standard,Online Travel Agency,394,289,487.47,150555.76
+2025-05-11,Mountain Lodge,Standard,Direct,371,423,571.9,258387.44
+2024-12-03,Downtown Suites,Family,Online Travel Agency,303,405,236.22,302383.78
+2025-02-01,Airport Inn,Deluxe,Group,345,336,122.79,196569.98
+2025-04-20,Airport Inn,Executive,Direct,317,241,767.04,188309.92
+2024-08-23,Airport Inn,Standard,Wholesale,383,265,239.15,208197.43
+2025-02-14,Airport Inn,Deluxe,Group,132,399,597.36,45801.32
+2025-02-27,Downtown Suites,Suite,Leisure,198,236,729.94,213850.82
+2025-05-08,Airport Inn,Standard,Leisure,322,26,229.26,54763.28
+2024-04-04,Downtown Suites,Executive,Corporate,117,206,412.91,214572.93
+2024-09-03,Riverside Resort,Standard,Wholesale,242,252,651.25,315207.05
+2024-03-23,Downtown Suites,Suite,Corporate,109,13,561.37,210342.65
+2024-01-03,Mountain Lodge,Suite,Online Travel Agency,194,80,609.37,270051.95
+2024-05-27,Mountain Lodge,Standard,Direct,334,310,667.84,2514.91
+2024-12-29,Riverside Resort,Suite,Direct,302,360,731.45,342302.48
+2025-05-09,Airport Inn,Standard,Corporate,370,355,844.44,286319.18
+2024-05-11,Riverside Resort,Executive,Corporate,289,432,781.6,114335.96
+2024-05-22,Mountain Lodge,Family,Direct,72,56,326.9,158131.47
+2024-02-03,Mountain Lodge,Deluxe,Online Travel Agency,125,379,518.52,330794.57
+2024-06-03,Airport Inn,Deluxe,Wholesale,308,313,719.62,18056.06
+2024-09-11,Harbor View Hotel,Standard,Group,109,41,754.82,371666.14
+2025-01-12,Riverside Resort,Family,Corporate,162,154,564.03,209623.55
+2025-01-28,Mountain Lodge,Executive,Online Travel Agency,274,242,444.22,80063.27
+2024-05-28,Mountain Lodge,Suite,Group,404,187,65.95,117555.81
+2025-05-03,Mountain Lodge,Family,Direct,352,239,532.64,143526.99
+2025-03-29,Downtown Suites,Standard,Direct,132,435,311.63,81579.55
+2024-06-17,Downtown Suites,Deluxe,Corporate,232,33,209.08,140981.25
+2024-09-13,Riverside Resort,Suite,Corporate,348,145,338.86,202772.9
+2025-02-07,Airport Inn,Executive,Corporate,313,197,510.37,285221.04
+2024-11-13,Harbor View Hotel,Standard,Wholesale,154,255,124.63,321530.14
+2024-07-29,Riverside Resort,Deluxe,Corporate,84,216,140.09,348678.11
+2024-11-25,Riverside Resort,Executive,Wholesale,391,117,690.68,348783.0
+2024-02-20,Harbor View Hotel,Deluxe,Online Travel Agency,51,370,629.52,43403.62
+2024-05-28,Riverside Resort,Standard,Direct,417,155,437.62,147515.53
+2025-03-22,Riverside Resort,Deluxe,Group,350,83,831.99,159466.9
+2024-10-03,Downtown Suites,Standard,Corporate,135,97,646.06,228833.61
+2025-05-15,Riverside Resort,Family,Group,221,449,165.84,162396.96
+2025-03-22,Airport Inn,Executive,Leisure,328,103,402.69,117794.12
+2024-06-27,Riverside Resort,Executive,Corporate,416,407,828.96,33020.1
+2024-02-10,Riverside Resort,Standard,Leisure,374,40,473.65,361170.54
+2024-01-20,Harbor View Hotel,Family,Online Travel Agency,82,371,226.29,363496.72
+2024-11-19,Downtown Suites,Deluxe,Wholesale,171,338,679.51,299549.42
+2025-06-20,Mountain Lodge,Family,Group,402,405,606.27,308776.18
+2024-10-19,Airport Inn,Standard,Leisure,189,103,232.27,358583.0
+2024-08-17,Airport Inn,Suite,Corporate,432,160,492.92,158921.73
+2025-04-02,Mountain Lodge,Suite,Leisure,63,388,348.11,95524.88
+2024-02-20,Harbor View Hotel,Suite,Group,100,436,351.38,302134.05
+2024-07-02,Airport Inn,Standard,Online Travel Agency,184,420,164.78,230077.81
+2024-07-18,Airport Inn,Family,Online Travel Agency,374,182,143.21,112048.2
+2024-01-29,Harbor View Hotel,Standard,Leisure,235,188,728.33,246487.29
+2024-12-25,Riverside Resort,Executive,Corporate,110,155,117.21,283857.0
+2025-04-10,Airport Inn,Executive,Group,99,68,815.36,51928.47
+2024-08-12,Mountain Lodge,Suite,Direct,270,232,55.31,160845.49
+2024-01-12,Harbor View Hotel,Deluxe,Online Travel Agency,286,197,184.76,146199.83
+2024-08-11,Mountain Lodge,Deluxe,Corporate,154,382,577.58,147719.14
+2024-01-07,Harbor View Hotel,Suite,Wholesale,316,392,222.64,212483.66
+2024-09-19,Mountain Lodge,Executive,Direct,269,280,409.52,337594.23
+2025-02-14,Riverside Resort,Suite,Online Travel Agency,441,117,757.63,76108.91
+2025-01-10,Airport Inn,Standard,Direct,392,295,501.38,143339.01
+2024-05-25,Riverside Resort,Family,Leisure,48,237,603.23,131178.46
+2025-04-24,Downtown Suites,Executive,Group,71,188,689.71,355892.79
+2024-03-01,Downtown Suites,Executive,Online Travel Agency,113,341,611.24,272106.1
+2024-06-15,Riverside Resort,Standard,Direct,138,80,485.01,149559.39
+2024-05-02,Mountain Lodge,Suite,Online Travel Agency,104,333,62.64,46809.04
+2025-04-17,Riverside Resort,Deluxe,Direct,379,24,131.23,250296.96
+2024-08-07,Mountain Lodge,Executive,Group,202,420,386.07,107738.64
+2025-05-08,Airport Inn,Deluxe,Group,184,339,783.96,62872.65
+2024-07-10,Riverside Resort,Executive,Online Travel Agency,141,406,488.64,136922.79
+2025-01-18,Airport Inn,Executive,Corporate,343,227,211.61,242379.99
+2024-01-07,Downtown Suites,Deluxe,Online Travel Agency,124,439,140.77,44442.87
+2024-10-16,Riverside Resort,Executive,Corporate,422,142,119.48,58.85
+2025-04-11,Riverside Resort,Standard,Leisure,403,432,95.11,265629.08
+2025-03-17,Mountain Lodge,Executive,Direct,116,395,731.01,176456.45
+2024-09-09,Downtown Suites,Deluxe,Direct,423,396,557.85,117203.18
+2025-04-06,Airport Inn,Standard,Corporate,441,416,782.19,275709.87
+2024-02-13,Harbor View Hotel,Deluxe,Online Travel Agency,261,362,388.71,156950.44
+2024-11-06,Riverside Resort,Deluxe,Direct,94,247,649.25,90042.59
+2024-12-24,Downtown Suites,Suite,Group,80,117,269.57,41881.71
+2024-08-17,Harbor View Hotel,Family,Online Travel Agency,224,428,649.37,101715.15
+2024-03-31,Riverside Resort,Deluxe,Direct,239,53,548.57,74078.56
+2025-04-22,Airport Inn,Family,Group,442,329,246.88,103558.79
+2025-02-23,Riverside Resort,Family,Online Travel Agency,171,430,589.79,257905.17
+2024-01-16,Harbor View Hotel,Suite,Wholesale,436,76,779.98,184313.45
+2024-02-21,Downtown Suites,Deluxe,Corporate,163,158,257.41,338275.82
+2025-02-12,Mountain Lodge,Family,Online Travel Agency,305,297,805.62,23184.83
+2024-11-11,Airport Inn,Suite,Online Travel Agency,129,155,222.14,157118.63
+2024-10-10,Riverside Resort,Standard,Group,78,328,706.92,157899.19
+2024-08-23,Harbor View Hotel,Standard,Corporate,117,148,580.2,271231.59
+2024-07-19,Mountain Lodge,Family,Direct,286,315,89.52,39941.44
+2025-06-10,Downtown Suites,Family,Leisure,319,277,589.12,55606.42
+2024-02-17,Mountain Lodge,Standard,Corporate,361,294,816.22,272255.97
+2024-10-07,Mountain Lodge,Family,Leisure,435,89,158.93,351369.16
+2024-07-02,Airport Inn,Standard,Online Travel Agency,316,431,113.66,166545.79
+2024-03-31,Riverside Resort,Deluxe,Wholesale,191,40,683.21,168730.21
+2024-09-27,Mountain Lodge,Family,Group,180,376,394.0,149535.57
+2024-08-05,Airport Inn,Deluxe,Online Travel Agency,349,248,760.31,313606.4
+2025-05-24,Harbor View Hotel,Suite,Corporate,81,105,478.13,67198.86
+2024-09-06,Harbor View Hotel,Family,Corporate,320,20,322.22,367832.01
+2025-04-05,Airport Inn,Standard,Leisure,128,284,402.27,178437.28
+2024-01-19,Downtown Suites,Family,Online Travel Agency,353,440,299.17,72502.31
+2024-02-01,Airport Inn,Executive,Group,286,212,533.04,184797.1
+2025-01-28,Harbor View Hotel,Family,Leisure,200,426,500.93,320349.21
+2025-02-27,Mountain Lodge,Suite,Direct,246,78,654.63,48929.22
+2024-05-15,Mountain Lodge,Suite,Wholesale,207,207,671.97,202045.28
+2024-09-20,Airport Inn,Family,Direct,216,420,325.24,313454.07
+2024-12-16,Harbor View Hotel,Deluxe,Leisure,311,79,569.62,372208.95
+2024-10-02,Airport Inn,Suite,Wholesale,324,239,195.63,250779.54
+2024-02-21,Harbor View Hotel,Executive,Corporate,224,153,791.13,112832.42
+2024-08-31,Riverside Resort,Executive,Leisure,122,118,293.45,164389.91
+2025-03-09,Harbor View Hotel,Family,Corporate,154,222,87.57,346603.57
+2024-05-10,Harbor View Hotel,Family,Group,129,440,538.02,319065.26
+2024-08-17,Mountain Lodge,Standard,Corporate,132,223,639.73,112681.72
+2024-06-12,Harbor View Hotel,Family,Wholesale,230,287,442.96,94870.17
+2025-05-23,Downtown Suites,Suite,Online Travel Agency,260,93,452.16,132005.46
+2024-08-29,Airport Inn,Suite,Direct,272,35,264.78,95554.88
+2025-06-07,Mountain Lodge,Family,Corporate,232,408,766.94,25829.97
+2024-12-16,Harbor View Hotel,Standard,Leisure,114,140,746.75,304416.07
+2024-12-04,Mountain Lodge,Deluxe,Wholesale,255,196,817.62,2992.45
+2024-02-20,Downtown Suites,Suite,Leisure,238,216,381.01,192021.78
+2024-02-27,Downtown Suites,Deluxe,Leisure,361,398,138.24,101440.62
+2024-02-18,Downtown Suites,Executive,Group,215,73,255.67,221135.68
+2024-03-20,Downtown Suites,Suite,Group,220,237,631.79,255024.59
+2024-02-02,Airport Inn,Executive,Online Travel Agency,378,354,327.72,52531.65
+2024-08-05,Airport Inn,Suite,Leisure,206,15,338.76,271037.59
+2024-10-25,Downtown Suites,Standard,Leisure,57,131,335.32,637.06
+2025-05-07,Downtown Suites,Deluxe,Leisure,224,440,607.3,240520.7
+2024-12-30,Mountain Lodge,Family,Leisure,166,446,437.69,178148.02
+2024-04-01,Mountain Lodge,Suite,Direct,197,264,628.82,93.17
+2024-09-01,Downtown Suites,Family,Direct,213,257,669.79,95759.79
+2025-01-14,Harbor View Hotel,Suite,Corporate,56,259,405.19,339408.2
+2024-12-19,Mountain Lodge,Executive,Online Travel Agency,203,200,668.92,271605.22
+2024-03-07,Airport Inn,Deluxe,Group,425,402,422.18,279815.82
+2024-10-06,Harbor View Hotel,Deluxe,Leisure,288,391,99.14,86971.49
+2024-01-05,Riverside Resort,Executive,Group,306,210,281.72,284166.77
+2024-06-04,Mountain Lodge,Deluxe,Online Travel Agency,333,291,701.29,75398.54
+2024-10-26,Riverside Resort,Executive,Online Travel Agency,215,159,260.62,353266.42
+2024-03-30,Airport Inn,Executive,Wholesale,249,175,529.07,187080.68
+2025-06-23,Downtown Suites,Deluxe,Wholesale,375,83,490.93,44883.81
+2025-02-17,Riverside Resort,Standard,Group,242,173,532.72,11989.28
+2024-09-13,Riverside Resort,Family,Online Travel Agency,212,138,841.13,288345.3
+2025-02-24,Airport Inn,Suite,Direct,356,197,691.55,373392.38
+2024-05-02,Harbor View Hotel,Family,Leisure,336,307,252.26,230173.28
+2025-01-23,Mountain Lodge,Standard,Group,282,339,484.65,340204.14
+2025-02-08,Airport Inn,Executive,Leisure,306,271,783.83,380607.83
+2025-01-03,Downtown Suites,Deluxe,Corporate,117,309,474.17,118886.38
+2024-03-30,Airport Inn,Family,Direct,351,88,781.32,117078.41
+2024-11-10,Mountain Lodge,Family,Corporate,145,192,495.51,133549.28
+2024-11-30,Mountain Lodge,Standard,Corporate,174,401,821.42,279857.18
+2024-07-03,Riverside Resort,Suite,Group,131,103,763.94,366886.82
+2024-12-22,Harbor View Hotel,Suite,Online Travel Agency,274,31,119.65,303199.1
+2024-09-25,Mountain Lodge,Family,Corporate,211,245,665.42,214378.38
+2024-12-21,Downtown Suites,Standard,Corporate,167,290,139.81,324261.39
+2024-06-05,Mountain Lodge,Executive,Group,49,256,447.38,297203.49
+2024-07-23,Airport Inn,Family,Group,219,150,827.7,366785.04
+2025-02-03,Mountain Lodge,Standard,Wholesale,378,398,389.37,304859.54
+2025-02-20,Mountain Lodge,Deluxe,Leisure,66,45,690.85,98549.68
+2024-01-06,Riverside Resort,Deluxe,Group,176,133,433.51,191409.02
+2024-12-24,Downtown Suites,Family,Group,69,63,449.4,332041.21
+2024-07-07,Airport Inn,Suite,Corporate,360,256,354.57,300166.41

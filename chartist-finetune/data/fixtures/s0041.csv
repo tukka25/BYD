@@ -1,241 +1,241 @@
-session_start_date,session_platform,session_region,session_game_mode,session_duration_minutes,session_in_game_purchase_usd,session_player_kill_count
-2025-01-18,Xbox Series X,North America,Ranked,351,177.23,6
-2024-12-21,Android Mobile,Europe,Battle Royale,143,46.72,12
-2025-02-01,Android Mobile,Latin America,Casual,465,147.35,26
-2024-09-11,iOS Mobile,Middle East,Casual,188,4.87,17
-2025-04-27,Nintendo Switch,North America,Ranked,213,11.49,72
-2024-08-22,PC,Asia Pacific,Casual,130,195.85,32
-2024-03-18,PlayStation 5,Latin America,Custom Lobby,404,139.79,65
-2024-08-06,PlayStation 5,Asia Pacific,Battle Royale,198,182.1,46
-2024-09-21,Xbox Series X,Europe,Ranked,156,13.27,16
-2024-02-13,Android Mobile,Middle East,Ranked,290,161.12,65
-2024-05-20,Nintendo Switch,Europe,Co-op,26,194.32,28
-2024-11-12,Android Mobile,Latin America,Co-op,344,18.19,41
-2024-04-25,PC,North America,Casual,217,119.56,67
-2025-05-12,PlayStation 5,Asia Pacific,Battle Royale,29,56.38,40
-2024-01-23,PlayStation 5,Africa,Casual,2,175.83,69
-2025-03-31,iOS Mobile,Europe,Co-op,304,71.75,9
-2025-05-09,PlayStation 5,Middle East,Tournament,476,90.12,26
-2024-10-02,iOS Mobile,Europe,Custom Lobby,306,19.53,65
-2025-05-30,Nintendo Switch,North America,Ranked,114,165.33,30
-2024-08-10,PlayStation 5,Asia Pacific,Tournament,422,168.32,21
-2024-01-31,Xbox Series X,Africa,Ranked,256,73.91,27
-2025-04-14,iOS Mobile,Africa,Battle Royale,236,102.46,35
-2025-02-06,Nintendo Switch,Africa,Battle Royale,225,134.4,54
-2024-07-05,Android Mobile,Africa,Custom Lobby,472,177.77,41
-2024-07-10,Android Mobile,Africa,Tournament,93,185.99,24
-2025-03-18,Android Mobile,Middle East,Casual,233,124.28,16
-2024-09-12,Android Mobile,Asia Pacific,Tournament,146,144.51,2
-2025-01-12,Nintendo Switch,Latin America,Ranked,55,101.47,66
-2024-08-05,PlayStation 5,Latin America,Casual,458,131.09,60
-2024-02-28,Android Mobile,Middle East,Custom Lobby,478,96.03,32
-2025-01-26,Android Mobile,North America,Custom Lobby,430,155.09,62
-2024-05-15,Nintendo Switch,Asia Pacific,Custom Lobby,98,41.22,64
-2024-12-07,iOS Mobile,North America,Co-op,146,87.38,18
-2025-06-12,Xbox Series X,Europe,Custom Lobby,417,44.77,6
-2024-08-07,iOS Mobile,North America,Tournament,57,151.5,5
-2024-01-26,Xbox Series X,Europe,Casual,225,87.96,26
-2024-10-11,iOS Mobile,Africa,Custom Lobby,131,181.38,8
-2024-06-17,Android Mobile,North America,Casual,376,64.73,63
-2024-06-13,PlayStation 5,Latin America,Ranked,391,115.72,52
-2024-01-14,PlayStation 5,North America,Custom Lobby,25,124.73,22
-2024-11-29,Nintendo Switch,Middle East,Custom Lobby,116,78.42,47
-2025-06-20,Xbox Series X,Latin America,Battle Royale,239,115.86,23
-2024-02-02,PC,Asia Pacific,Co-op,412,12.69,27
-2025-06-05,PC,Africa,Battle Royale,104,71.2,6
-2024-05-31,PlayStation 5,Middle East,Tournament,97,126.87,53
-2024-10-17,PlayStation 5,Middle East,Battle Royale,437,44.59,32
-2024-03-28,Nintendo Switch,Asia Pacific,Co-op,467,102.29,3
-2025-06-18,Xbox Series X,Middle East,Ranked,266,132.91,4
-2024-09-04,iOS Mobile,Europe,Casual,233,186.59,51
-2024-06-07,PC,Europe,Ranked,276,181.86,64
-2025-02-13,PC,Europe,Custom Lobby,174,98.63,0
-2024-02-02,PC,Asia Pacific,Tournament,212,157.18,45
-2025-01-28,PC,North America,Battle Royale,175,57.37,15
-2024-11-09,Xbox Series X,Asia Pacific,Battle Royale,406,57.0,6
-2024-10-06,PlayStation 5,Africa,Co-op,19,2.43,41
-2024-05-12,Android Mobile,Middle East,Co-op,110,181.0,28
-2024-04-19,iOS Mobile,Middle East,Casual,442,50.1,25
-2024-07-22,PlayStation 5,North America,Ranked,432,4.85,9
-2024-01-22,Nintendo Switch,Africa,Co-op,172,44.4,24
-2024-07-26,Xbox Series X,Asia Pacific,Battle Royale,173,48.62,13
-2025-01-16,PC,Africa,Tournament,227,188.85,74
-2025-05-14,Nintendo Switch,Africa,Casual,319,170.38,55
-2024-03-30,Xbox Series X,Africa,Custom Lobby,411,52.26,49
-2025-02-16,Nintendo Switch,Asia Pacific,Co-op,306,102.41,15
-2025-02-01,Xbox Series X,Latin America,Tournament,294,143.11,30
-2024-01-08,iOS Mobile,Latin America,Custom Lobby,210,198.75,56
-2025-01-13,Nintendo Switch,North America,Ranked,364,124.55,70
-2025-04-21,iOS Mobile,Europe,Tournament,78,125.43,70
-2025-03-02,Xbox Series X,Europe,Custom Lobby,338,102.28,67
-2025-04-28,PC,Europe,Battle Royale,111,38.22,23
-2024-05-27,Nintendo Switch,Latin America,Co-op,237,154.09,24
-2024-04-12,iOS Mobile,Asia Pacific,Battle Royale,480,82.29,46
-2024-08-06,Xbox Series X,Africa,Custom Lobby,371,144.37,52
-2024-07-29,Android Mobile,Europe,Co-op,123,71.49,48
-2024-05-23,Nintendo Switch,North America,Custom Lobby,411,147.17,50
-2024-10-23,PC,Middle East,Custom Lobby,420,137.58,34
-2024-12-04,Xbox Series X,Middle East,Battle Royale,429,114.98,55
-2024-04-10,PlayStation 5,Asia Pacific,Co-op,167,181.97,13
-2025-04-27,PlayStation 5,Europe,Co-op,58,196.43,29
-2024-03-04,Xbox Series X,Africa,Battle Royale,158,141.96,14
-2024-11-18,PlayStation 5,Middle East,Tournament,142,141.55,2
-2024-12-09,Xbox Series X,Latin America,Casual,342,133.96,42
-2025-05-21,PlayStation 5,Latin America,Tournament,406,22.87,1
-2024-03-09,Android Mobile,Asia Pacific,Battle Royale,187,165.7,4
-2025-02-05,PC,North America,Battle Royale,464,73.21,20
-2025-06-01,PC,Africa,Co-op,233,179.27,67
-2024-11-21,PC,Latin America,Custom Lobby,242,6.42,31
-2024-01-01,iOS Mobile,Africa,Co-op,319,34.24,37
-2024-03-28,PlayStation 5,Middle East,Battle Royale,334,155.78,37
-2025-01-02,PC,Latin America,Co-op,384,160.19,40
-2024-11-01,Xbox Series X,Africa,Co-op,134,78.43,10
-2025-02-04,iOS Mobile,Middle East,Ranked,459,145.69,31
-2024-04-16,Nintendo Switch,Europe,Battle Royale,332,36.85,51
-2024-12-20,iOS Mobile,Latin America,Casual,77,116.33,54
-2025-04-26,Android Mobile,North America,Co-op,117,138.03,16
-2025-06-14,PlayStation 5,North America,Custom Lobby,434,178.4,21
-2024-02-03,PC,Africa,Ranked,100,47.38,25
-2024-02-15,PC,Europe,Co-op,170,153.13,36
-2024-07-20,Nintendo Switch,Africa,Casual,424,86.13,30
-2024-12-18,PC,Africa,Custom Lobby,346,185.56,18
-2025-05-18,Android Mobile,Middle East,Battle Royale,219,4.32,39
-2025-01-20,iOS Mobile,Latin America,Tournament,327,20.77,43
-2024-01-24,PC,Latin America,Battle Royale,195,27.61,16
-2024-12-05,Xbox Series X,Asia Pacific,Casual,437,44.32,30
-2025-01-21,Android Mobile,Latin America,Casual,329,197.38,71
-2024-06-08,PC,Europe,Ranked,126,56.28,14
-2025-01-30,Android Mobile,North America,Co-op,450,179.91,37
-2025-01-13,Android Mobile,Latin America,Ranked,329,105.41,57
-2024-12-24,Xbox Series X,Middle East,Casual,278,18.86,37
-2024-12-14,iOS Mobile,Middle East,Ranked,321,139.75,66
-2024-10-28,Android Mobile,Europe,Battle Royale,24,123.75,33
-2024-05-31,iOS Mobile,Africa,Tournament,407,118.01,48
-2024-04-27,PlayStation 5,Asia Pacific,Battle Royale,356,75.75,74
-2024-03-26,Nintendo Switch,Asia Pacific,Battle Royale,133,16.87,64
-2024-02-19,PC,Asia Pacific,Ranked,294,60.62,28
-2025-04-06,PlayStation 5,Latin America,Ranked,211,110.78,55
-2025-03-09,PlayStation 5,Europe,Battle Royale,165,64.72,51
-2025-01-05,PlayStation 5,Asia Pacific,Co-op,452,1.75,41
-2024-07-08,iOS Mobile,Europe,Battle Royale,470,15.35,32
-2025-02-22,Nintendo Switch,North America,Battle Royale,405,68.23,12
-2024-02-28,Android Mobile,Asia Pacific,Custom Lobby,325,126.32,74
-2024-12-26,Nintendo Switch,Latin America,Ranked,408,137.9,54
-2024-05-07,PC,Asia Pacific,Casual,119,91.25,37
-2024-10-16,Xbox Series X,North America,Ranked,240,97.24,69
-2024-12-29,PC,Latin America,Battle Royale,219,192.08,16
-2024-12-06,PC,North America,Casual,370,71.95,23
-2024-09-28,PlayStation 5,Africa,Co-op,85,149.8,65
-2025-01-31,Nintendo Switch,Europe,Custom Lobby,350,142.22,37
-2024-04-06,Xbox Series X,Middle East,Tournament,105,106.01,9
-2024-09-16,PlayStation 5,Asia Pacific,Co-op,118,163.9,22
-2025-04-12,Xbox Series X,Europe,Casual,74,12.84,22
-2024-01-04,Android Mobile,Africa,Battle Royale,27,25.44,15
-2024-05-27,iOS Mobile,Asia Pacific,Ranked,60,45.47,19
-2024-02-08,Android Mobile,North America,Custom Lobby,322,38.85,50
-2024-01-14,iOS Mobile,Asia Pacific,Casual,116,63.23,33
-2025-06-14,Xbox Series X,Asia Pacific,Custom Lobby,48,159.85,40
-2024-08-23,PC,Asia Pacific,Ranked,52,46.78,61
-2025-06-10,PlayStation 5,Europe,Battle Royale,11,177.08,42
-2024-01-28,PC,Asia Pacific,Ranked,260,5.29,16
-2025-01-30,Nintendo Switch,Latin America,Custom Lobby,172,26.44,69
-2024-09-06,PC,Asia Pacific,Ranked,334,20.42,70
-2024-02-03,iOS Mobile,Middle East,Battle Royale,60,15.98,42
-2024-03-08,Android Mobile,Middle East,Tournament,149,85.65,51
-2025-04-04,PlayStation 5,Latin America,Custom Lobby,145,191.72,23
-2024-04-11,Nintendo Switch,Middle East,Co-op,212,18.96,72
-2024-05-29,PC,Middle East,Ranked,353,144.26,32
-2024-07-14,iOS Mobile,Latin America,Tournament,417,184.07,45
-2024-05-02,PC,Asia Pacific,Battle Royale,162,157.32,12
-2024-04-02,iOS Mobile,Africa,Casual,108,159.03,59
-2024-05-14,Xbox Series X,Europe,Casual,368,107.71,44
-2024-11-20,Android Mobile,Middle East,Tournament,256,128.75,65
-2024-02-24,PlayStation 5,Africa,Ranked,142,35.18,13
-2025-01-26,Xbox Series X,Latin America,Casual,202,82.01,54
-2024-04-17,Nintendo Switch,Middle East,Custom Lobby,82,144.18,42
-2025-03-13,Android Mobile,Europe,Tournament,147,11.65,63
-2024-11-14,iOS Mobile,Europe,Co-op,281,103.1,37
-2025-05-27,PlayStation 5,Africa,Casual,294,196.79,63
-2024-12-28,PlayStation 5,Middle East,Co-op,434,52.63,15
-2024-05-27,iOS Mobile,Europe,Custom Lobby,127,41.87,47
-2024-06-21,Nintendo Switch,North America,Battle Royale,197,68.83,54
-2024-12-05,Nintendo Switch,Asia Pacific,Ranked,289,115.76,31
-2025-06-02,iOS Mobile,Asia Pacific,Custom Lobby,273,191.6,37
-2025-02-24,PlayStation 5,North America,Tournament,241,76.73,14
-2024-02-13,PC,North America,Casual,102,1.55,10
-2024-12-18,PlayStation 5,Africa,Tournament,149,88.87,65
-2024-06-10,Xbox Series X,Latin America,Battle Royale,130,155.25,26
-2024-07-16,Android Mobile,Middle East,Tournament,384,108.57,42
-2024-04-29,Nintendo Switch,Africa,Casual,435,154.04,16
-2024-07-06,iOS Mobile,Europe,Battle Royale,17,176.29,39
-2025-02-04,Nintendo Switch,North America,Ranked,158,117.95,47
-2024-09-21,PC,Europe,Co-op,42,133.02,14
-2025-01-07,PlayStation 5,Asia Pacific,Battle Royale,170,132.98,21
-2024-11-29,Xbox Series X,North America,Custom Lobby,334,113.57,42
-2024-08-12,Xbox Series X,North America,Casual,120,136.58,32
-2024-02-05,iOS Mobile,Latin America,Custom Lobby,475,185.0,33
-2025-01-12,Nintendo Switch,Africa,Tournament,379,53.55,26
-2024-04-17,Xbox Series X,Latin America,Casual,36,105.23,48
-2024-10-21,iOS Mobile,Middle East,Ranked,136,16.95,45
-2024-08-04,Xbox Series X,North America,Casual,109,172.31,19
-2024-03-04,Nintendo Switch,Africa,Ranked,271,0.7,11
-2024-05-25,Android Mobile,Latin America,Co-op,459,20.49,41
-2024-09-05,Android Mobile,Africa,Ranked,339,33.11,66
-2024-10-18,Android Mobile,Africa,Co-op,390,119.6,55
-2025-04-28,Android Mobile,North America,Ranked,134,175.11,73
-2025-02-25,PC,Europe,Ranked,197,80.98,63
-2024-01-11,Android Mobile,Europe,Battle Royale,405,60.58,72
-2024-11-03,PC,Middle East,Battle Royale,286,162.69,46
-2024-04-17,Xbox Series X,Latin America,Custom Lobby,291,66.63,16
-2024-03-14,PC,Africa,Tournament,104,12.8,68
-2024-08-27,Android Mobile,Middle East,Custom Lobby,42,166.4,61
-2025-05-29,Android Mobile,Europe,Custom Lobby,278,30.22,68
-2024-01-05,Android Mobile,Africa,Ranked,109,41.04,23
-2024-03-05,iOS Mobile,Asia Pacific,Battle Royale,200,38.52,0
-2025-04-10,iOS Mobile,Africa,Custom Lobby,357,184.81,65
-2025-05-13,Xbox Series X,Asia Pacific,Custom Lobby,435,94.17,54
-2024-10-25,Android Mobile,Middle East,Custom Lobby,159,3.8,42
-2025-06-16,PC,Middle East,Custom Lobby,313,33.53,53
-2024-01-02,Xbox Series X,North America,Tournament,43,188.29,65
-2024-04-26,Nintendo Switch,Asia Pacific,Tournament,432,150.51,33
-2024-12-11,Nintendo Switch,North America,Battle Royale,369,166.39,64
-2024-12-04,PC,Europe,Tournament,410,176.05,48
-2024-04-04,Android Mobile,North America,Custom Lobby,79,85.81,65
-2024-01-05,PC,Middle East,Tournament,217,174.87,13
-2024-04-17,PC,Europe,Co-op,465,107.29,27
-2024-07-13,Nintendo Switch,Asia Pacific,Co-op,113,20.97,46
-2025-06-22,Xbox Series X,North America,Custom Lobby,30,130.9,19
-2024-05-03,Nintendo Switch,Asia Pacific,Ranked,147,128.06,41
-2025-05-14,Xbox Series X,Europe,Casual,334,126.42,1
-2024-11-09,Xbox Series X,Middle East,Tournament,193,173.13,28
-2024-04-28,Xbox Series X,North America,Casual,225,68.83,61
-2024-02-12,Nintendo Switch,Latin America,Battle Royale,278,57.23,45
-2024-05-15,PC,Latin America,Tournament,345,105.84,61
-2024-12-20,Android Mobile,Middle East,Ranked,245,153.16,72
-2024-12-21,PlayStation 5,Middle East,Tournament,343,92.92,64
-2025-02-21,Xbox Series X,Asia Pacific,Casual,154,113.3,38
-2024-10-20,PlayStation 5,Africa,Casual,150,94.5,63
-2025-04-05,Android Mobile,Latin America,Battle Royale,47,69.18,33
-2024-08-31,Android Mobile,Europe,Custom Lobby,97,136.38,30
-2024-06-17,Nintendo Switch,Latin America,Battle Royale,344,155.59,27
-2024-07-23,PC,Asia Pacific,Custom Lobby,445,66.03,51
-2024-05-22,iOS Mobile,Africa,Casual,260,67.35,34
-2024-11-02,Android Mobile,Latin America,Tournament,437,194.17,14
-2024-11-01,PlayStation 5,Latin America,Co-op,76,41.41,56
-2025-03-06,iOS Mobile,North America,Ranked,380,111.39,39
-2024-10-12,PlayStation 5,Europe,Tournament,184,8.5,57
-2024-04-22,PlayStation 5,North America,Co-op,331,193.47,31
-2024-10-15,Android Mobile,Asia Pacific,Ranked,398,82.15,12
-2025-05-11,PlayStation 5,Middle East,Tournament,364,38.11,46
-2025-06-07,PlayStation 5,Asia Pacific,Co-op,182,188.1,25
-2024-07-04,Xbox Series X,Latin America,Casual,179,45.97,45
-2024-12-04,PC,Africa,Battle Royale,211,59.99,40
-2024-09-30,PC,Europe,Tournament,247,37.22,67
-2024-01-19,PlayStation 5,North America,Custom Lobby,37,171.48,25
-2024-04-24,PlayStation 5,Asia Pacific,Custom Lobby,221,78.29,12
-2025-06-13,Xbox Series X,Europe,Tournament,357,20.97,29
-2024-11-17,Xbox Series X,Africa,Tournament,332,15.53,0
-2024-05-10,PlayStation 5,Middle East,Battle Royale,307,70.4,30
-2024-06-23,Nintendo Switch,Africa,Battle Royale,334,126.36,1
-2024-12-30,iOS Mobile,North America,Battle Royale,429,170.62,70
-2025-02-18,Xbox Series X,Middle East,Battle Royale,380,116.39,58
+billing_date,plan_tier,billing_region,payment_method,active_seat_count,monthly_recurring_revenue,discount_amount,total_revenue
+2025-02-06,business,asia_pacific,wire_transfer,1124,207474.23,40863.97,50655.17
+2024-06-19,starter,latin_america,ach_debit,1756,112882.6,25570.63,187327.29
+2024-10-25,business,europe,wire_transfer,1015,115313.89,16365.69,41194.1
+2024-01-25,starter,europe,wire_transfer,1884,125851.28,22134.57,278943.78
+2024-06-12,business,north_america,wire_transfer,2618,76149.66,29554.48,69693.65
+2024-12-05,business,europe,wire_transfer,115,51567.99,28953.74,121844.79
+2024-08-02,starter,europe,invoice,4515,25800.37,43862.21,226108.65
+2024-06-15,starter,latin_america,paypal,1242,239772.18,35955.69,91750.79
+2024-08-08,professional,north_america,ach_debit,2158,118815.72,31008.7,152000.88
+2024-07-04,starter,europe,ach_debit,1993,159195.77,19241.24,274561.0
+2024-09-07,enterprise,latin_america,ach_debit,2577,31887.99,31602.0,71398.68
+2024-05-13,free,latin_america,credit_card,2644,243537.36,24251.56,263069.61
+2024-01-26,enterprise,europe,ach_debit,3450,161907.07,27029.68,214751.46
+2025-04-24,business,asia_pacific,invoice,3899,93126.38,41644.11,290459.03
+2024-08-09,free,europe,ach_debit,1084,154780.28,16619.33,70321.57
+2024-08-07,enterprise,north_america,invoice,3557,48562.6,19632.18,64743.89
+2024-05-21,enterprise,europe,ach_debit,2372,7540.73,31065.82,165603.02
+2024-07-19,free,latin_america,credit_card,1824,128432.08,46717.63,76734.26
+2025-03-22,enterprise,middle_east_africa,wire_transfer,2241,289.64,6203.31,80322.6
+2024-11-17,starter,north_america,ach_debit,2500,106466.89,8600.81,185799.79
+2024-03-26,professional,asia_pacific,ach_debit,2451,91655.62,42228.86,100641.19
+2024-09-21,enterprise,latin_america,invoice,4163,101639.64,18044.17,116489.8
+2025-05-02,professional,asia_pacific,invoice,241,111119.67,17770.64,85297.57
+2024-10-31,professional,asia_pacific,invoice,599,230945.51,8236.27,5799.35
+2025-03-17,starter,middle_east_africa,credit_card,4806,80511.1,43391.7,66388.98
+2025-01-10,professional,north_america,invoice,975,124271.61,47638.86,177514.44
+2024-06-23,business,middle_east_africa,paypal,1297,106439.59,18511.65,295564.53
+2024-08-03,starter,latin_america,credit_card,3443,224433.73,7114.86,178789.41
+2024-03-20,professional,europe,credit_card,3258,16523.07,1000.67,105557.6
+2024-10-13,business,asia_pacific,credit_card,4299,75369.97,10618.82,113172.23
+2025-01-23,starter,north_america,credit_card,3037,179520.6,7659.28,132285.6
+2024-08-17,free,north_america,paypal,3649,235113.18,43220.27,89311.36
+2025-06-11,free,north_america,wire_transfer,549,224427.7,10485.43,28739.48
+2024-11-27,free,latin_america,paypal,1095,115845.52,32091.14,39363.92
+2024-06-16,starter,middle_east_africa,invoice,8,170455.11,34143.13,15466.93
+2025-04-24,business,asia_pacific,wire_transfer,2485,223822.02,11710.18,290397.12
+2024-05-05,business,latin_america,ach_debit,4107,77003.66,46413.08,77838.42
+2024-10-21,starter,middle_east_africa,invoice,4466,137608.52,16191.71,76237.78
+2025-02-03,enterprise,latin_america,wire_transfer,4661,71259.7,40553.51,275124.05
+2025-06-02,business,latin_america,invoice,362,128463.46,2876.35,150719.2
+2024-09-09,professional,asia_pacific,paypal,2478,234289.12,10710.46,103431.66
+2025-02-22,business,asia_pacific,invoice,3090,116664.04,49654.38,203997.65
+2024-08-25,professional,north_america,ach_debit,2355,14548.07,20607.72,249352.06
+2024-03-25,professional,north_america,credit_card,4770,236258.24,46081.52,257666.12
+2025-01-14,free,north_america,invoice,4783,50044.9,12411.86,217700.07
+2024-08-19,professional,middle_east_africa,paypal,1177,220276.65,3912.89,85659.11
+2024-11-24,enterprise,latin_america,ach_debit,1224,215184.59,5518.34,255442.73
+2024-01-17,business,asia_pacific,invoice,1448,68927.65,47107.33,227636.4
+2024-09-08,starter,middle_east_africa,ach_debit,1233,472.03,19600.81,101523.26
+2024-05-21,starter,latin_america,ach_debit,1114,147433.75,21944.52,59902.18
+2025-02-16,business,north_america,paypal,4603,235456.52,22914.31,165517.93
+2024-09-07,enterprise,europe,invoice,3068,89702.49,27639.05,209778.37
+2024-08-22,professional,europe,ach_debit,3852,239879.66,42967.59,170652.98
+2024-06-23,professional,europe,credit_card,214,14259.67,46404.9,24960.24
+2024-11-05,starter,asia_pacific,invoice,1652,229090.09,42038.25,33543.82
+2025-01-15,starter,europe,paypal,4180,202404.24,21149.49,100971.47
+2025-01-28,business,north_america,ach_debit,4736,215161.79,12490.53,92965.64
+2024-10-17,starter,europe,wire_transfer,3677,99777.53,35754.8,188727.4
+2024-05-28,free,asia_pacific,invoice,2421,150866.18,41161.74,129389.98
+2024-05-09,starter,middle_east_africa,credit_card,907,99175.31,47776.86,98167.0
+2025-02-11,business,north_america,paypal,2158,30818.11,35827.56,69406.91
+2024-10-08,professional,asia_pacific,paypal,4726,77845.65,37003.44,11093.11
+2025-02-12,business,middle_east_africa,ach_debit,3016,185190.24,46517.92,248298.1
+2025-02-15,free,asia_pacific,paypal,1118,103134.77,25348.09,65904.97
+2025-01-16,business,latin_america,paypal,2360,148376.85,19140.97,232699.45
+2025-02-20,enterprise,middle_east_africa,paypal,3164,191669.07,6658.98,215517.34
+2024-09-03,free,asia_pacific,credit_card,2509,126186.95,47580.72,213084.85
+2024-03-15,starter,asia_pacific,credit_card,2778,35704.89,25130.56,82762.77
+2025-01-16,business,asia_pacific,credit_card,3894,56657.35,43074.77,133183.45
+2025-04-03,business,middle_east_africa,ach_debit,961,83467.98,32014.49,203862.95
+2025-04-22,free,middle_east_africa,wire_transfer,1606,1954.69,49947.94,194601.98
+2024-01-24,professional,middle_east_africa,wire_transfer,4012,79716.47,22255.34,296361.63
+2025-05-14,professional,asia_pacific,ach_debit,2341,99945.0,27838.31,202727.51
+2024-01-28,starter,middle_east_africa,credit_card,4429,108465.63,21159.01,23811.81
+2024-09-10,free,asia_pacific,credit_card,2906,13551.44,6678.06,69047.66
+2024-12-25,enterprise,latin_america,invoice,3015,151620.86,47936.71,243211.99
+2025-01-02,professional,middle_east_africa,ach_debit,1910,193228.57,29488.91,92815.43
+2024-01-08,professional,north_america,paypal,472,33171.38,27446.64,103648.2
+2024-04-25,free,europe,wire_transfer,2635,121957.08,882.54,75747.31
+2024-04-12,free,north_america,invoice,302,51143.79,47219.13,221191.64
+2024-12-07,free,europe,ach_debit,2680,219820.92,26307.0,156179.77
+2025-03-23,enterprise,asia_pacific,credit_card,450,56637.05,16329.64,23754.63
+2025-04-05,starter,asia_pacific,ach_debit,3449,97977.68,35413.77,37914.38
+2025-05-22,free,europe,wire_transfer,3957,228440.65,41875.54,145450.19
+2024-10-06,professional,asia_pacific,ach_debit,1850,149318.1,39156.23,288898.47
+2025-01-25,enterprise,north_america,wire_transfer,1738,23401.58,13289.63,133487.9
+2024-02-17,business,middle_east_africa,invoice,2794,197353.3,28939.85,75617.99
+2025-01-04,starter,latin_america,wire_transfer,4792,150654.53,37272.36,23993.43
+2025-04-02,free,middle_east_africa,wire_transfer,2088,26583.51,19147.93,233107.42
+2024-10-31,business,europe,wire_transfer,2382,101054.15,18328.3,155500.25
+2024-08-11,business,north_america,credit_card,36,30283.59,24750.6,294758.05
+2024-06-10,business,north_america,invoice,2777,2499.32,5295.94,110857.36
+2024-11-13,starter,middle_east_africa,paypal,141,106890.38,3113.15,273821.88
+2024-05-09,starter,asia_pacific,invoice,4729,133636.01,895.72,177966.79
+2024-08-27,business,asia_pacific,invoice,1084,46131.35,14439.79,3860.0
+2024-04-24,free,north_america,invoice,1343,198066.23,49559.44,84967.42
+2025-04-09,free,europe,credit_card,1524,147267.98,23627.2,182221.36
+2025-04-16,professional,middle_east_africa,credit_card,5,102285.32,18636.82,276899.69
+2024-11-23,business,latin_america,ach_debit,3612,13106.55,21053.51,261244.19
+2024-02-29,enterprise,middle_east_africa,paypal,184,198648.8,11350.53,201896.11
+2024-01-26,enterprise,north_america,paypal,1423,184939.69,22727.4,90087.42
+2024-07-12,professional,north_america,paypal,2172,9257.54,26717.18,51465.88
+2024-09-04,professional,north_america,wire_transfer,3646,242023.87,4966.16,99216.2
+2024-10-08,business,europe,credit_card,3428,21647.74,4840.79,112316.92
+2025-03-16,starter,middle_east_africa,credit_card,623,38908.72,21416.61,211550.64
+2024-10-29,free,north_america,credit_card,4641,191781.44,30128.69,192840.51
+2025-06-16,starter,north_america,ach_debit,3945,123607.43,29885.44,133995.77
+2025-01-13,starter,europe,paypal,563,18828.55,16846.7,287416.54
+2024-04-24,free,middle_east_africa,ach_debit,2972,108900.29,40441.86,29582.9
+2024-09-01,business,latin_america,wire_transfer,1077,107918.02,46623.91,197570.6
+2024-12-20,business,europe,paypal,753,3428.27,36683.94,80522.38
+2024-11-03,free,latin_america,invoice,2483,31827.45,36739.9,115804.63
+2025-03-19,free,north_america,credit_card,3376,81408.97,48399.1,78640.29
+2025-03-21,professional,europe,credit_card,648,103878.94,12116.72,123781.87
+2024-07-05,enterprise,asia_pacific,wire_transfer,2465,193283.9,38973.28,149748.93
+2024-07-12,business,middle_east_africa,wire_transfer,1806,23035.82,1601.73,292945.57
+2024-01-17,business,europe,credit_card,1633,188723.26,29845.16,150210.41
+2025-05-28,free,north_america,invoice,4728,188166.21,3671.39,196608.69
+2025-03-03,free,asia_pacific,paypal,3788,523.05,34863.47,150867.85
+2025-02-15,professional,europe,paypal,1464,128919.59,21513.02,229145.8
+2024-06-29,business,asia_pacific,paypal,2538,108275.83,42229.39,150873.46
+2024-03-27,enterprise,middle_east_africa,paypal,2039,112782.02,33881.44,58420.37
+2024-08-05,enterprise,europe,invoice,1039,213572.97,27347.36,209368.95
+2024-12-16,free,latin_america,credit_card,1906,118074.46,19589.85,11211.33
+2024-01-14,free,north_america,invoice,3873,179826.89,6829.51,3780.99
+2024-05-02,starter,middle_east_africa,ach_debit,1174,7875.31,43911.02,136053.17
+2025-06-13,enterprise,asia_pacific,ach_debit,4072,118799.7,30442.58,233534.6
+2024-11-04,enterprise,asia_pacific,ach_debit,3447,43691.86,7676.88,158769.16
+2024-12-19,professional,asia_pacific,invoice,3453,74679.37,40175.81,49483.27
+2024-01-19,starter,north_america,credit_card,3921,161466.25,6244.9,2449.18
+2025-03-28,free,middle_east_africa,credit_card,2463,227889.9,29112.83,86843.39
+2024-07-21,starter,middle_east_africa,invoice,970,9731.61,7221.34,74487.3
+2024-05-04,business,north_america,paypal,734,237767.78,36529.88,106360.13
+2025-05-21,professional,latin_america,invoice,2519,55861.0,38810.92,80979.1
+2024-08-24,professional,north_america,paypal,1667,84223.05,30438.78,230878.64
+2025-05-22,enterprise,latin_america,invoice,2191,107935.8,29144.39,92572.49
+2024-05-29,enterprise,asia_pacific,invoice,2511,167827.82,33818.39,185119.48
+2024-04-06,free,asia_pacific,invoice,2649,88627.62,17578.75,83890.61
+2024-09-29,enterprise,latin_america,ach_debit,821,105810.56,39798.01,216621.51
+2025-01-26,professional,asia_pacific,wire_transfer,1345,55843.6,37223.49,154437.16
+2025-04-28,professional,north_america,wire_transfer,4874,160305.56,10500.43,203016.45
+2024-07-02,enterprise,asia_pacific,ach_debit,484,78586.96,10511.34,70456.68
+2024-01-10,starter,latin_america,paypal,1168,46467.5,22206.67,278968.88
+2024-03-15,professional,asia_pacific,wire_transfer,2192,39932.76,24268.77,86881.53
+2024-09-20,professional,europe,ach_debit,3770,54401.17,43454.33,214554.65
+2024-05-14,starter,latin_america,credit_card,23,209085.92,40023.64,299971.88
+2024-08-16,business,middle_east_africa,invoice,3113,86266.67,39301.2,195925.33
+2025-01-08,starter,latin_america,invoice,4347,206442.69,42879.64,88761.24
+2024-06-16,free,europe,ach_debit,1643,130059.61,10038.01,85518.84
+2024-04-23,starter,north_america,paypal,3984,98183.9,25839.13,58048.82
+2024-08-09,enterprise,europe,paypal,3413,237541.42,12283.09,215861.12
+2024-05-21,professional,north_america,wire_transfer,1425,71747.56,27616.25,36941.65
+2024-08-05,enterprise,north_america,wire_transfer,200,43760.49,5109.24,286405.06
+2024-01-01,professional,north_america,wire_transfer,1100,70223.76,20630.38,277288.01
+2025-05-26,business,latin_america,wire_transfer,777,108191.05,14523.08,115399.93
+2024-03-06,professional,asia_pacific,paypal,765,50425.67,38559.02,282465.91
+2024-02-19,starter,asia_pacific,paypal,1160,94684.07,43702.66,215913.23
+2024-07-06,starter,latin_america,wire_transfer,4498,15598.55,23483.48,25597.61
+2024-08-08,professional,europe,paypal,3152,136668.77,21939.03,243541.86
+2024-12-26,enterprise,europe,wire_transfer,1313,152903.18,22307.59,287626.21
+2025-04-08,professional,asia_pacific,ach_debit,2401,76270.88,48159.35,42782.14
+2025-06-13,free,middle_east_africa,credit_card,1074,139473.24,44845.59,119221.66
+2025-02-01,free,middle_east_africa,invoice,1975,153818.17,20738.89,181758.45
+2024-08-09,starter,latin_america,wire_transfer,2736,116998.97,25988.12,38087.23
+2024-05-24,business,asia_pacific,paypal,720,159124.67,4671.97,80259.43
+2024-12-15,business,asia_pacific,paypal,1540,69368.79,45662.89,26942.6
+2024-02-06,professional,asia_pacific,invoice,1150,124098.42,3747.45,136352.7
+2025-04-26,free,north_america,wire_transfer,715,152515.1,29048.55,166203.53
+2024-09-05,free,north_america,paypal,3892,91727.82,18257.87,72123.98
+2024-10-11,free,middle_east_africa,ach_debit,3333,184720.72,10130.59,40113.45
+2024-07-06,business,europe,paypal,446,168721.35,12661.82,139637.38
+2024-04-20,free,middle_east_africa,credit_card,488,10333.29,16199.4,284069.99
+2024-08-07,enterprise,latin_america,credit_card,1057,114341.78,31720.14,14196.85
+2025-03-21,professional,europe,paypal,3835,118604.97,28932.63,277477.29
+2024-10-21,enterprise,middle_east_africa,credit_card,1965,214130.73,14240.63,1559.24
+2024-01-05,free,middle_east_africa,invoice,759,214568.21,41605.69,91402.87
+2024-05-24,starter,latin_america,paypal,4844,10400.3,10438.27,101584.44
+2024-12-01,starter,latin_america,wire_transfer,330,33893.09,33845.08,249721.87
+2024-05-10,starter,asia_pacific,invoice,648,163740.43,36587.64,34263.34
+2024-02-19,free,europe,invoice,2276,98562.31,6674.84,47755.38
+2025-01-02,business,asia_pacific,invoice,3408,41426.77,20063.39,178578.04
+2025-01-25,enterprise,asia_pacific,credit_card,1187,176362.99,1797.68,291827.83
+2024-11-04,professional,north_america,ach_debit,605,239407.94,27524.7,15206.03
+2024-12-29,professional,latin_america,ach_debit,602,153097.87,40288.98,29398.06
+2025-02-23,business,europe,credit_card,1915,5257.61,3134.61,237014.83
+2025-03-27,starter,asia_pacific,credit_card,4935,15583.1,3341.62,3667.69
+2024-02-09,starter,middle_east_africa,ach_debit,3219,54308.18,39720.2,163398.56
+2025-05-25,starter,latin_america,invoice,2814,75624.42,46993.14,266754.52
+2024-08-20,enterprise,asia_pacific,ach_debit,1238,180476.57,22488.67,27863.46
+2025-06-08,starter,latin_america,ach_debit,3051,26095.15,42166.11,274974.26
+2025-01-08,business,europe,paypal,2707,204671.58,29951.75,204263.65
+2024-08-22,professional,europe,credit_card,803,189858.25,12207.72,159835.66
+2024-12-23,free,latin_america,wire_transfer,4552,209842.92,6968.72,247569.26
+2024-08-08,professional,latin_america,ach_debit,1894,187145.67,43739.84,235471.49
+2025-01-14,free,europe,wire_transfer,1856,115996.0,20983.29,243906.84
+2024-01-16,business,middle_east_africa,invoice,3067,175895.15,32607.38,132694.63
+2025-03-28,enterprise,latin_america,credit_card,571,120168.63,13861.88,144541.72
+2024-10-20,professional,latin_america,invoice,335,25013.34,35361.4,103392.49
+2025-06-02,starter,north_america,ach_debit,3378,190739.31,12912.24,91042.04
+2024-08-12,enterprise,europe,paypal,4245,146649.61,3128.82,38512.36
+2024-02-14,free,europe,invoice,1229,235494.02,34892.93,250997.23
+2025-05-15,enterprise,north_america,invoice,3027,218368.53,18764.37,239999.27
+2025-02-06,business,latin_america,paypal,1508,125122.1,1045.41,115962.77
+2024-05-04,business,europe,wire_transfer,52,232416.81,34236.2,22005.61
+2024-07-03,professional,asia_pacific,ach_debit,1516,200005.93,222.32,97673.0
+2024-09-11,business,north_america,wire_transfer,4818,178621.18,30334.69,230921.36
+2025-03-22,professional,north_america,paypal,4057,181087.1,26300.72,158158.08
+2024-05-06,business,middle_east_africa,wire_transfer,3405,236532.59,22078.52,290942.12
+2025-04-17,enterprise,middle_east_africa,wire_transfer,4401,224780.91,12447.62,190184.3
+2025-04-18,business,europe,wire_transfer,4978,92414.71,40289.57,282689.65
+2025-04-09,business,latin_america,wire_transfer,203,193004.46,41281.91,264302.86
+2024-10-12,free,north_america,ach_debit,649,133780.3,415.55,290952.21
+2024-01-30,starter,asia_pacific,credit_card,635,242989.22,47085.1,158946.88
+2024-04-28,enterprise,north_america,credit_card,2325,231082.84,14468.66,222242.32
+2024-11-08,starter,europe,wire_transfer,2857,230827.28,35338.49,222275.92
+2024-11-27,free,north_america,paypal,3605,224463.78,31424.54,115881.11
+2024-02-14,business,middle_east_africa,wire_transfer,2940,226409.36,16381.41,179497.54
+2024-02-27,business,latin_america,paypal,3665,177249.99,45012.28,66997.22
+2024-02-19,starter,asia_pacific,wire_transfer,3106,241252.69,689.39,245107.13
+2024-05-08,enterprise,europe,paypal,3424,74535.31,48550.89,60245.04
+2025-02-15,professional,middle_east_africa,paypal,2435,241261.09,35231.09,153847.79
+2024-10-26,professional,europe,credit_card,2024,28956.7,18287.21,255411.23
+2025-02-12,enterprise,north_america,ach_debit,3528,187544.72,18076.49,94157.85
+2024-04-13,business,middle_east_africa,wire_transfer,2972,178567.86,8410.88,22535.32
+2024-07-23,professional,europe,invoice,2089,113121.72,41796.12,263254.03
+2025-04-17,professional,north_america,credit_card,1459,131697.14,5905.79,204232.04
+2024-05-17,enterprise,europe,wire_transfer,1863,162733.05,6414.21,165124.18
+2024-12-23,free,latin_america,wire_transfer,4905,64059.46,25665.59,82020.24
+2024-03-01,free,middle_east_africa,wire_transfer,1182,102242.31,5807.99,56714.0
+2025-03-13,enterprise,north_america,paypal,595,54217.39,2001.42,188508.15
+2025-01-14,free,latin_america,paypal,673,49702.08,34143.74,279085.56
+2025-01-22,free,middle_east_africa,paypal,855,176587.98,5161.7,159924.87
+2024-04-04,business,latin_america,invoice,3125,144754.91,8488.43,156876.57
+2024-09-21,enterprise,europe,paypal,1854,12997.33,21092.35,175924.02
+2024-07-18,business,latin_america,wire_transfer,537,68198.04,3940.14,249373.66
+2024-08-24,business,north_america,credit_card,854,79137.8,35031.71,74759.78
+2025-03-12,business,north_america,wire_transfer,4501,204895.01,27321.12,228516.45
+2024-06-28,free,latin_america,wire_transfer,1191,112547.49,47198.49,155469.77
+2025-06-06,professional,middle_east_africa,invoice,2411,101141.6,35421.11,9313.89
+2024-09-23,starter,asia_pacific,paypal,4060,204747.99,47064.54,91299.52

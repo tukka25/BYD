@@ -1,241 +1,241 @@
-Incident Date,Road Type,Weather Condition,Severity Level,Vehicles Involved,Injury Count,Response Time Minutes
-2025-01-30,Rural Road,Clear,Serious,6,16,5.47
-2024-08-14,Local Street,Clear,Minor,10,16,60.11
-2024-04-13,Highway,Clear,Moderate,2,16,69.18
-2025-05-09,Arterial Road,Sleet,Moderate,10,20,33.92
-2024-02-17,Rural Road,Clear,Fatal,5,17,144.94
-2024-10-06,Local Street,Sleet,Serious,7,19,83.4
-2024-04-10,Rural Road,Snow,Minor,9,13,57.66
-2025-03-28,Expressway,Fog,Minor,11,19,165.68
-2024-01-19,Rural Road,Snow,Fatal,3,9,78.61
-2024-07-20,Local Street,Clear,Minor,2,16,146.2
-2024-08-15,Local Street,Fog,Serious,4,18,89.99
-2024-11-03,Arterial Road,Clear,Serious,2,18,14.52
-2024-07-02,Rural Road,Snow,Fatal,12,15,154.32
-2024-07-24,Local Street,Fog,Minor,11,3,78.84
-2024-03-10,Expressway,Sleet,Serious,10,0,142.47
-2024-06-24,Highway,Fog,Minor,2,2,50.18
-2024-12-18,Rural Road,Sleet,Fatal,2,2,92.39
-2024-11-09,Expressway,Fog,Moderate,7,4,45.11
-2024-10-01,Rural Road,High Winds,Fatal,5,11,75.83
-2024-12-29,Highway,High Winds,Fatal,5,4,91.28
-2024-08-06,Arterial Road,Sleet,Fatal,11,18,76.65
-2025-04-04,Local Street,High Winds,Serious,3,5,125.52
-2025-03-21,Expressway,High Winds,Fatal,7,6,32.14
-2024-05-14,Expressway,Fog,Minor,8,12,122.6
-2025-05-09,Highway,Rain,Moderate,5,5,27.18
-2025-01-20,Local Street,High Winds,Minor,6,10,155.44
-2024-02-27,Rural Road,Fog,Serious,11,7,156.72
-2025-01-18,Rural Road,Fog,Minor,1,4,114.63
-2024-12-05,Arterial Road,High Winds,Moderate,11,16,49.34
-2025-04-14,Rural Road,Snow,Moderate,8,19,44.14
-2024-06-20,Rural Road,Snow,Fatal,5,10,168.8
-2024-05-06,Highway,Sleet,Moderate,11,19,142.45
-2024-04-16,Arterial Road,High Winds,Minor,5,3,80.18
-2025-05-15,Local Street,Fog,Minor,4,8,133.35
-2024-01-06,Highway,Snow,Fatal,3,1,105.83
-2024-03-02,Local Street,Sleet,Serious,2,5,134.55
-2024-03-15,Rural Road,High Winds,Moderate,8,3,99.45
-2024-08-21,Local Street,Snow,Fatal,5,15,83.41
-2024-06-09,Expressway,Clear,Moderate,12,4,162.72
-2025-05-19,Expressway,Fog,Serious,5,0,30.23
-2024-02-20,Local Street,Sleet,Minor,1,8,130.07
-2024-10-06,Arterial Road,Rain,Moderate,3,13,142.11
-2024-03-22,Arterial Road,Rain,Fatal,2,19,77.67
-2024-06-06,Rural Road,Clear,Moderate,8,17,82.53
-2025-03-21,Highway,Sleet,Fatal,10,3,133.69
-2024-09-27,Rural Road,Snow,Moderate,5,10,65.2
-2024-02-20,Local Street,Snow,Serious,2,6,171.68
-2024-09-16,Expressway,Sleet,Moderate,6,0,105.53
-2024-04-22,Arterial Road,Clear,Moderate,2,3,71.82
-2024-12-05,Expressway,Sleet,Serious,1,9,27.5
-2024-07-09,Highway,Rain,Moderate,4,19,155.13
-2024-09-14,Arterial Road,Fog,Moderate,9,0,64.66
-2025-04-26,Rural Road,Clear,Minor,5,18,78.75
-2025-05-01,Rural Road,High Winds,Serious,4,14,108.13
-2024-11-11,Rural Road,Fog,Moderate,2,8,61.54
-2024-08-07,Arterial Road,High Winds,Moderate,11,6,129.76
-2024-08-25,Rural Road,High Winds,Moderate,5,18,69.87
-2024-06-21,Expressway,High Winds,Serious,8,11,143.38
-2025-04-24,Rural Road,High Winds,Minor,2,10,29.95
-2025-04-25,Local Street,Fog,Serious,10,18,133.94
-2024-12-27,Rural Road,High Winds,Fatal,5,2,150.12
-2025-05-12,Arterial Road,Rain,Fatal,4,19,61.6
-2024-08-30,Local Street,Fog,Serious,6,18,123.95
-2024-09-12,Rural Road,Fog,Serious,7,18,175.42
-2024-05-03,Rural Road,Clear,Serious,9,15,170.42
-2025-03-24,Arterial Road,Fog,Moderate,9,3,55.93
-2025-02-13,Rural Road,Snow,Minor,2,16,12.97
-2024-05-13,Expressway,Sleet,Fatal,11,11,144.44
-2025-03-09,Arterial Road,Fog,Serious,9,8,30.33
-2024-10-18,Rural Road,High Winds,Minor,8,2,122.5
-2024-02-28,Arterial Road,Clear,Minor,1,12,82.65
-2025-02-25,Rural Road,Fog,Moderate,6,5,26.41
-2024-10-07,Arterial Road,Clear,Serious,10,3,40.51
-2025-03-21,Rural Road,Sleet,Fatal,4,9,132.9
-2025-01-17,Rural Road,Clear,Moderate,2,2,146.95
-2024-03-19,Highway,Clear,Minor,8,8,42.99
-2024-08-19,Highway,Clear,Serious,5,14,97.72
-2024-11-18,Local Street,Clear,Serious,6,4,30.46
-2025-03-17,Rural Road,Rain,Moderate,9,7,58.2
-2024-10-18,Local Street,High Winds,Fatal,2,17,153.39
-2024-07-08,Local Street,Clear,Fatal,4,15,158.5
-2024-10-12,Arterial Road,Sleet,Moderate,11,3,136.89
-2024-12-11,Rural Road,Rain,Serious,7,16,44.98
-2025-02-03,Arterial Road,Sleet,Fatal,10,17,6.1
-2024-01-30,Highway,Sleet,Serious,7,10,79.42
-2024-05-18,Highway,Sleet,Serious,8,4,149.05
-2024-05-19,Arterial Road,Sleet,Moderate,11,8,68.24
-2024-03-08,Rural Road,High Winds,Fatal,8,16,154.19
-2024-12-01,Arterial Road,Fog,Fatal,6,3,27.41
-2025-04-16,Expressway,Rain,Fatal,6,15,22.52
-2025-04-19,Expressway,Rain,Serious,2,13,15.24
-2024-11-14,Expressway,Rain,Minor,4,20,2.99
-2025-05-18,Local Street,High Winds,Serious,10,10,16.97
-2025-06-02,Arterial Road,Clear,Moderate,6,16,40.67
-2025-05-13,Arterial Road,Sleet,Fatal,4,17,21.52
-2024-01-17,Rural Road,Rain,Minor,2,14,109.98
-2024-06-05,Highway,Rain,Moderate,7,9,77.84
-2024-08-11,Expressway,Clear,Moderate,9,11,107.03
-2024-06-05,Highway,Sleet,Fatal,10,19,165.81
-2024-08-04,Highway,High Winds,Serious,10,13,41.91
-2024-04-10,Local Street,Rain,Moderate,4,6,71.75
-2025-04-14,Arterial Road,Fog,Serious,11,14,12.98
-2024-10-07,Rural Road,Snow,Fatal,8,16,163.19
-2024-06-15,Local Street,Fog,Minor,9,0,109.17
-2025-03-22,Local Street,Clear,Fatal,12,17,74.03
-2024-10-21,Expressway,High Winds,Serious,5,3,73.66
-2024-08-28,Local Street,Sleet,Serious,5,2,32.65
-2025-02-10,Rural Road,Snow,Serious,2,4,117.47
-2024-04-14,Local Street,Rain,Fatal,2,16,109.05
-2024-06-26,Rural Road,Sleet,Moderate,3,5,175.82
-2025-03-25,Local Street,Rain,Fatal,3,2,100.78
-2024-09-28,Rural Road,Fog,Serious,8,19,171.94
-2024-04-14,Local Street,Sleet,Moderate,7,13,139.31
-2024-07-10,Arterial Road,Clear,Moderate,5,16,125.03
-2024-07-03,Rural Road,Rain,Minor,12,1,134.8
-2024-09-02,Rural Road,Fog,Fatal,6,7,40.92
-2024-07-17,Local Street,High Winds,Serious,2,17,129.25
-2025-04-22,Local Street,Sleet,Minor,3,7,149.86
-2025-06-15,Arterial Road,Snow,Moderate,5,7,54.15
-2024-05-21,Expressway,Fog,Moderate,5,6,144.77
-2024-02-18,Local Street,Clear,Fatal,6,16,82.54
-2024-11-21,Expressway,Snow,Moderate,1,19,168.94
-2024-01-10,Highway,High Winds,Minor,7,14,148.12
-2025-05-30,Rural Road,High Winds,Minor,8,6,33.98
-2024-10-15,Rural Road,Clear,Minor,7,9,117.14
-2025-01-24,Arterial Road,Sleet,Moderate,4,3,169.44
-2024-12-26,Arterial Road,Sleet,Minor,11,9,164.81
-2025-04-20,Local Street,Snow,Minor,6,3,133.6
-2024-09-20,Local Street,Snow,Fatal,3,16,146.72
-2024-03-22,Rural Road,Snow,Fatal,10,10,53.9
-2024-01-02,Expressway,Clear,Fatal,5,6,53.06
-2025-01-04,Local Street,Fog,Serious,9,2,140.38
-2025-03-30,Expressway,Clear,Minor,9,19,87.88
-2024-09-21,Highway,Fog,Serious,11,17,152.76
-2025-02-08,Expressway,Clear,Moderate,4,12,64.44
-2024-07-30,Rural Road,Fog,Fatal,2,13,114.81
-2024-04-30,Expressway,Rain,Fatal,11,18,156.34
-2024-02-06,Rural Road,High Winds,Serious,10,11,83.79
-2024-08-11,Local Street,Clear,Serious,6,19,6.62
-2024-03-24,Rural Road,Sleet,Serious,8,17,105.49
-2024-10-28,Highway,Fog,Serious,11,3,58.56
-2024-02-08,Rural Road,Snow,Moderate,12,7,92.87
-2024-12-28,Local Street,Snow,Serious,6,5,71.2
-2025-03-04,Local Street,Clear,Serious,9,16,172.05
-2025-05-02,Local Street,High Winds,Minor,11,6,80.28
-2025-04-16,Local Street,Rain,Moderate,5,9,11.1
-2024-08-31,Arterial Road,Rain,Minor,8,9,84.53
-2024-10-27,Local Street,Snow,Serious,9,11,114.85
-2024-01-03,Highway,Snow,Minor,4,2,43.86
-2024-04-11,Local Street,Snow,Serious,7,17,176.61
-2025-05-30,Expressway,Snow,Moderate,10,5,124.97
-2024-01-25,Local Street,Clear,Moderate,4,6,25.28
-2024-08-16,Local Street,Clear,Moderate,2,12,76.91
-2024-11-21,Expressway,Fog,Serious,11,7,29.06
-2025-05-30,Local Street,Snow,Moderate,9,9,130.27
-2024-01-11,Highway,Fog,Fatal,3,17,135.51
-2024-03-28,Highway,Sleet,Serious,6,4,149.47
-2024-10-31,Arterial Road,Sleet,Minor,1,9,172.33
-2025-01-17,Expressway,Clear,Fatal,3,4,39.5
-2024-05-19,Highway,Sleet,Minor,9,17,104.94
-2024-09-19,Arterial Road,Clear,Minor,4,10,21.25
-2024-06-16,Arterial Road,Rain,Moderate,6,3,151.15
-2025-03-01,Expressway,Snow,Minor,2,11,103.53
-2024-08-07,Expressway,High Winds,Serious,6,4,55.69
-2025-06-02,Rural Road,Rain,Minor,9,18,82.18
-2025-05-12,Local Street,Sleet,Moderate,8,10,42.45
-2024-08-26,Rural Road,Sleet,Fatal,11,18,141.74
-2024-04-14,Highway,Snow,Minor,11,20,51.61
-2024-06-13,Arterial Road,Sleet,Moderate,10,2,175.55
-2024-01-24,Arterial Road,Clear,Fatal,4,13,40.83
-2024-11-03,Local Street,Fog,Fatal,2,13,39.75
-2025-04-23,Expressway,Fog,Fatal,8,16,9.05
-2025-03-08,Arterial Road,Rain,Serious,10,14,96.24
-2024-06-27,Local Street,Fog,Fatal,8,18,99.57
-2025-02-04,Arterial Road,High Winds,Fatal,9,18,30.44
-2025-04-13,Local Street,High Winds,Fatal,3,18,168.9
-2024-03-29,Arterial Road,Snow,Moderate,2,18,45.36
-2024-02-27,Arterial Road,High Winds,Serious,8,1,68.7
-2024-06-04,Expressway,Fog,Fatal,1,10,56.68
-2024-07-14,Rural Road,Clear,Serious,5,10,43.09
-2025-03-29,Expressway,Rain,Serious,11,19,63.66
-2025-01-29,Expressway,High Winds,Minor,11,18,142.08
-2024-07-30,Expressway,Sleet,Serious,2,18,117.09
-2024-11-16,Highway,High Winds,Moderate,2,8,169.32
-2025-03-20,Expressway,Snow,Fatal,7,12,39.36
-2024-05-04,Expressway,Fog,Fatal,9,11,153.62
-2024-05-19,Local Street,High Winds,Moderate,7,9,161.69
-2024-07-07,Local Street,Clear,Fatal,11,4,54.87
-2024-02-17,Rural Road,Fog,Moderate,4,7,36.67
-2024-11-26,Highway,High Winds,Serious,11,20,155.52
-2024-03-01,Rural Road,Rain,Serious,2,8,22.99
-2025-06-02,Rural Road,Clear,Moderate,5,17,79.21
-2024-09-22,Rural Road,Fog,Minor,12,2,18.7
-2025-04-15,Local Street,Sleet,Minor,6,16,177.11
-2025-01-27,Rural Road,High Winds,Serious,9,2,19.92
-2024-08-30,Rural Road,High Winds,Serious,7,20,97.66
-2024-10-12,Arterial Road,Sleet,Minor,10,4,133.75
-2024-02-14,Rural Road,Snow,Serious,7,16,158.54
-2024-08-19,Highway,Sleet,Minor,10,15,60.05
-2024-10-02,Local Street,Clear,Fatal,1,8,37.67
-2025-05-17,Rural Road,Clear,Serious,8,7,52.47
-2024-05-06,Expressway,Sleet,Serious,11,10,37.34
-2024-08-16,Arterial Road,Fog,Minor,9,17,9.56
-2024-09-24,Rural Road,High Winds,Serious,3,8,43.1
-2024-09-18,Local Street,Fog,Minor,1,6,59.67
-2024-10-21,Expressway,Sleet,Fatal,10,15,53.98
-2025-05-14,Rural Road,High Winds,Serious,3,10,55.82
-2024-10-11,Highway,Rain,Minor,7,13,59.08
-2024-06-14,Local Street,Rain,Fatal,11,6,171.3
-2024-05-30,Highway,Clear,Serious,7,16,50.48
-2025-03-22,Arterial Road,Snow,Fatal,4,11,144.94
-2024-03-27,Rural Road,Clear,Serious,7,3,17.4
-2025-05-15,Local Street,Snow,Fatal,8,3,71.7
-2024-06-13,Arterial Road,Rain,Fatal,4,10,48.04
-2024-06-08,Highway,Sleet,Serious,10,17,158.89
-2025-02-08,Expressway,Sleet,Minor,8,9,78.55
-2024-08-18,Rural Road,Fog,Fatal,8,1,99.71
-2025-03-07,Expressway,Clear,Moderate,5,6,98.66
-2025-02-06,Local Street,High Winds,Moderate,6,3,120.52
-2024-03-16,Highway,High Winds,Minor,5,17,140.1
-2024-09-06,Highway,Fog,Moderate,10,17,110.97
-2025-02-03,Highway,Fog,Minor,5,2,59.47
-2024-03-23,Arterial Road,Fog,Minor,1,13,14.29
-2024-12-17,Expressway,Rain,Minor,4,2,108.2
-2024-07-16,Highway,Snow,Moderate,6,15,161.84
-2024-03-19,Expressway,Fog,Fatal,3,2,7.87
-2025-01-01,Rural Road,Rain,Moderate,4,9,123.56
-2025-02-15,Rural Road,Rain,Fatal,4,8,100.57
-2025-01-29,Highway,Sleet,Moderate,4,12,46.52
-2024-02-10,Rural Road,Snow,Moderate,2,12,110.27
-2024-11-17,Rural Road,High Winds,Serious,11,18,84.84
-2024-04-01,Local Street,Sleet,Serious,11,8,176.75
-2025-03-28,Arterial Road,Fog,Serious,4,3,72.51
-2024-06-12,Local Street,Sleet,Fatal,11,11,150.19
-2024-12-28,Rural Road,High Winds,Moderate,5,1,154.63
-2024-05-22,Local Street,Rain,Fatal,2,7,147.62
-2024-10-11,Arterial Road,Fog,Moderate,5,3,175.38
-2024-01-27,Arterial Road,High Winds,Serious,9,18,120.85
-2025-02-04,Local Street,Clear,Serious,4,2,53.78
-2024-06-07,Expressway,Rain,Minor,8,9,88.18
+attendance_record_date,attendance_school_level,attendance_region,attendance_enrolment_status,attendance_students_enrolled,attendance_students_present,attendance_rate_percent
+2024-09-13,Sixth Form,Central,On Leave,1458,1195,96.23
+2024-03-23,Lower Secondary,North,Transferred In,935,1531,34.33
+2025-01-25,Lower Secondary,West,On Leave,2342,2141,26.5
+2024-04-01,Sixth Form,Central,Enrolled,64,2474,59.72
+2025-01-20,Lower Secondary,South,On Leave,178,1731,62.6
+2024-09-30,Upper Secondary,North,Transferred In,722,483,73.59
+2024-07-15,Sixth Form,Central,On Leave,1433,2387,68.73
+2024-12-21,Early Years,Coastal,Withdrawn,1678,1910,48.31
+2025-04-06,Primary,Central,Transferred In,1621,1092,22.28
+2025-02-18,Sixth Form,Central,Enrolled,1459,2059,29.2
+2025-01-22,Lower Secondary,Coastal,Withdrawn,1698,2382,75.3
+2024-02-28,Upper Secondary,West,On Leave,66,2253,94.01
+2024-03-17,Primary,South,Transferred Out,1647,1952,89.74
+2025-03-06,Early Years,Central,Enrolled,1231,431,17.36
+2024-09-07,Primary,North,Withdrawn,1386,1188,76.11
+2025-06-07,Lower Secondary,Central,Enrolled,2129,790,56.29
+2024-03-11,Early Years,East,Transferred In,1974,692,98.17
+2024-05-13,Lower Secondary,East,On Leave,393,1206,51.31
+2024-09-24,Primary,South,Transferred In,2124,557,58.07
+2024-04-16,Upper Secondary,East,Enrolled,71,1335,67.64
+2024-08-31,Sixth Form,Coastal,On Leave,1016,135,77.32
+2024-07-01,Early Years,Central,Withdrawn,1480,446,10.24
+2024-02-15,Primary,South,Transferred Out,1413,1517,6.14
+2025-01-21,Sixth Form,East,Enrolled,726,115,63.36
+2025-03-01,Primary,Central,On Leave,244,1868,41.25
+2024-02-12,Early Years,North,Enrolled,542,1744,94.55
+2025-05-01,Primary,North,Enrolled,956,1859,61.36
+2024-08-12,Lower Secondary,West,Transferred Out,165,1865,11.77
+2025-01-26,Upper Secondary,East,Transferred Out,552,1479,28.93
+2024-08-02,Primary,South,Withdrawn,1117,1658,18.48
+2024-12-03,Upper Secondary,Central,Withdrawn,1363,354,7.54
+2025-05-21,Primary,West,Withdrawn,1312,1621,96.91
+2024-08-05,Primary,Central,Transferred Out,901,1634,56.88
+2024-06-13,Sixth Form,South,Transferred Out,1210,429,65.03
+2024-11-04,Primary,West,On Leave,804,1905,99.57
+2024-11-24,Lower Secondary,South,On Leave,814,1312,20.03
+2024-02-19,Early Years,East,Transferred In,1897,924,12.96
+2025-02-03,Sixth Form,East,Withdrawn,223,1177,37.28
+2024-09-14,Early Years,Coastal,On Leave,591,1281,37.07
+2024-02-12,Lower Secondary,East,On Leave,163,1845,32.76
+2024-08-18,Early Years,South,Withdrawn,1412,789,17.89
+2025-04-06,Primary,South,On Leave,759,772,76.73
+2024-01-29,Primary,East,Enrolled,1030,2349,52.13
+2024-10-07,Upper Secondary,Coastal,Transferred Out,1513,1894,64.36
+2024-04-07,Upper Secondary,Coastal,Transferred In,492,1812,24.72
+2025-04-13,Early Years,North,Transferred Out,888,705,7.67
+2024-07-14,Primary,North,Transferred In,2499,1698,59.02
+2024-09-04,Lower Secondary,East,Transferred Out,1300,202,6.77
+2024-10-04,Lower Secondary,West,Transferred In,2486,353,53.44
+2025-05-10,Primary,Central,Enrolled,1776,1712,0.33
+2025-01-23,Lower Secondary,North,Enrolled,2340,1022,48.98
+2025-05-10,Early Years,Central,Enrolled,1488,836,44.54
+2024-05-31,Early Years,Coastal,Transferred In,1198,1457,31.27
+2024-05-16,Upper Secondary,Coastal,Transferred In,1320,412,75.49
+2024-07-20,Upper Secondary,Coastal,Transferred Out,2048,2204,69.8
+2024-02-29,Primary,Coastal,Transferred In,1811,1892,95.96
+2024-10-23,Lower Secondary,West,Withdrawn,2184,193,22.53
+2024-04-30,Upper Secondary,Coastal,On Leave,170,1052,65.14
+2024-12-20,Sixth Form,North,Transferred In,1435,585,30.47
+2024-09-01,Upper Secondary,West,Transferred In,1692,71,91.89
+2024-10-20,Lower Secondary,Coastal,Transferred In,1516,1160,61.19
+2025-04-23,Primary,Central,Transferred Out,2019,2155,61.65
+2024-09-26,Primary,Coastal,Transferred In,1275,700,8.56
+2024-04-07,Primary,South,On Leave,2066,1014,84.51
+2024-03-11,Upper Secondary,Coastal,Transferred Out,965,1144,13.2
+2025-02-16,Sixth Form,Central,Transferred In,2413,176,74.47
+2024-10-01,Lower Secondary,North,On Leave,2432,1877,15.27
+2024-04-20,Sixth Form,West,On Leave,2151,2427,53.21
+2025-06-17,Early Years,South,Withdrawn,2316,945,10.19
+2024-02-14,Sixth Form,South,Enrolled,788,2165,21.63
+2024-05-08,Early Years,West,Transferred Out,2200,138,38.94
+2024-04-05,Primary,East,On Leave,143,547,56.57
+2024-03-15,Upper Secondary,Coastal,On Leave,1254,1401,0.05
+2024-03-04,Upper Secondary,Central,Withdrawn,1261,524,16.41
+2024-12-12,Early Years,North,Transferred In,2300,1962,42.25
+2024-07-22,Primary,North,Enrolled,55,1847,80.52
+2024-11-28,Upper Secondary,North,Withdrawn,451,477,84.67
+2024-09-16,Upper Secondary,West,On Leave,90,1664,77.44
+2025-04-30,Upper Secondary,Central,Transferred In,1723,202,1.93
+2025-03-01,Upper Secondary,Central,Withdrawn,716,2145,73.14
+2025-01-17,Upper Secondary,West,Enrolled,1702,591,38.98
+2024-04-12,Early Years,Coastal,On Leave,2340,2420,70.86
+2024-09-09,Upper Secondary,Central,Transferred In,1363,2298,62.88
+2025-03-04,Sixth Form,Coastal,Transferred In,252,191,67.37
+2024-06-27,Upper Secondary,South,Enrolled,900,1375,90.16
+2024-07-19,Upper Secondary,North,Enrolled,1968,2199,83.7
+2024-01-16,Upper Secondary,West,Transferred Out,323,270,0.01
+2025-03-30,Upper Secondary,East,On Leave,1248,2383,67.79
+2024-09-06,Primary,South,Transferred In,1044,875,23.01
+2024-02-19,Early Years,Coastal,On Leave,2252,1325,57.19
+2024-12-12,Lower Secondary,West,On Leave,960,192,86.53
+2024-10-28,Sixth Form,West,Transferred In,953,361,19.18
+2024-12-01,Early Years,Central,Transferred Out,1604,1755,17.52
+2024-10-23,Upper Secondary,North,Enrolled,1372,354,78.41
+2024-03-21,Sixth Form,East,Transferred Out,893,1764,28.2
+2024-05-04,Early Years,Coastal,On Leave,1186,2259,61.08
+2024-04-05,Primary,East,Enrolled,1175,1369,36.2
+2024-04-29,Lower Secondary,East,Transferred In,404,832,45.48
+2025-02-14,Lower Secondary,West,Withdrawn,2448,2118,59.42
+2025-02-16,Primary,North,Transferred In,1530,2259,27.94
+2024-07-17,Sixth Form,East,Transferred Out,818,1745,54.89
+2025-03-26,Early Years,East,Transferred In,500,1596,4.4
+2024-08-15,Primary,West,Enrolled,2392,1083,77.2
+2024-07-27,Early Years,Central,On Leave,1677,1316,94.89
+2024-10-15,Early Years,West,Withdrawn,2158,31,37.86
+2025-03-21,Early Years,East,On Leave,2303,135,75.41
+2024-06-03,Lower Secondary,Coastal,Transferred In,144,2357,29.67
+2024-08-25,Lower Secondary,East,Withdrawn,2296,1594,73.78
+2024-03-14,Sixth Form,East,Withdrawn,1374,2384,10.2
+2024-01-28,Primary,East,Enrolled,1950,2174,50.44
+2024-05-02,Sixth Form,South,Withdrawn,819,2491,74.1
+2024-05-13,Primary,East,Enrolled,1148,1693,23.72
+2024-12-26,Upper Secondary,Central,Withdrawn,498,660,73.77
+2025-01-07,Early Years,East,On Leave,2249,325,98.4
+2025-05-13,Upper Secondary,Central,Transferred In,2066,2155,49.69
+2025-02-27,Early Years,Central,Enrolled,1502,496,59.46
+2024-02-06,Primary,South,Transferred Out,362,1227,69.48
+2025-03-03,Early Years,South,Enrolled,223,1422,68.77
+2024-09-25,Upper Secondary,Central,On Leave,2242,1633,82.93
+2024-05-06,Early Years,Central,Transferred In,765,666,47.91
+2025-01-06,Early Years,Coastal,Enrolled,1224,2277,51.98
+2024-10-27,Upper Secondary,North,On Leave,236,1686,2.89
+2024-06-13,Lower Secondary,Central,Transferred Out,490,257,60.02
+2024-03-04,Sixth Form,Central,Transferred In,940,148,31.23
+2025-06-10,Primary,East,Transferred Out,925,769,35.89
+2024-07-06,Early Years,South,Enrolled,1950,995,39.57
+2025-05-19,Upper Secondary,North,Withdrawn,700,343,66.76
+2024-01-17,Upper Secondary,East,Transferred In,1979,1991,34.99
+2024-09-27,Sixth Form,Central,Withdrawn,1163,1834,55.11
+2024-07-14,Lower Secondary,East,On Leave,1470,2150,5.95
+2024-09-29,Primary,South,Transferred Out,1227,2426,68.41
+2025-01-21,Primary,South,Transferred Out,1270,1091,75.68
+2024-05-28,Sixth Form,East,Enrolled,1504,506,6.46
+2024-12-28,Early Years,West,Withdrawn,1779,1690,76.86
+2024-09-18,Primary,Coastal,Transferred In,1249,313,40.11
+2024-04-04,Early Years,Coastal,On Leave,1752,905,4.81
+2024-11-12,Upper Secondary,Coastal,On Leave,193,1632,56.29
+2025-02-10,Primary,West,Transferred In,1151,2016,96.45
+2024-03-06,Lower Secondary,South,Withdrawn,2433,1335,54.55
+2024-10-31,Primary,South,Transferred Out,23,979,80.67
+2024-02-04,Early Years,South,On Leave,1415,809,57.79
+2024-02-24,Primary,South,Transferred In,1326,1133,46.19
+2025-02-19,Early Years,Coastal,On Leave,460,507,70.42
+2024-12-20,Early Years,Central,Transferred In,1803,2231,34.04
+2025-02-01,Early Years,East,Enrolled,1682,876,60.57
+2024-01-16,Sixth Form,West,Withdrawn,2471,629,88.45
+2024-05-02,Sixth Form,South,Enrolled,2160,1146,35.14
+2024-01-16,Primary,North,Withdrawn,1660,1891,58.47
+2024-03-25,Sixth Form,South,Transferred Out,616,652,28.92
+2025-01-07,Primary,Central,On Leave,1836,1072,29.88
+2024-08-14,Upper Secondary,Coastal,Enrolled,2214,840,17.24
+2024-10-27,Primary,Coastal,Transferred In,1968,1772,24.82
+2024-05-22,Early Years,South,Enrolled,1411,1612,72.33
+2025-03-06,Early Years,West,Withdrawn,1877,1161,89.82
+2025-03-13,Upper Secondary,Coastal,On Leave,159,2157,51.48
+2024-12-03,Lower Secondary,North,On Leave,926,2009,40.97
+2025-06-17,Lower Secondary,East,Enrolled,2350,588,20.36
+2024-12-21,Lower Secondary,West,Transferred Out,2171,1976,3.69
+2024-05-21,Early Years,Central,On Leave,2267,2125,71.36
+2024-12-11,Early Years,West,Transferred In,1739,920,32.1
+2024-04-22,Upper Secondary,North,On Leave,917,671,48.11
+2024-05-13,Early Years,Central,Enrolled,1952,1619,36.27
+2024-10-13,Upper Secondary,South,Transferred In,1148,2157,72.16
+2024-09-25,Sixth Form,West,Transferred Out,1436,633,76.34
+2024-09-03,Sixth Form,North,Transferred In,1679,826,34.08
+2024-09-15,Sixth Form,North,Enrolled,214,2292,92.62
+2024-06-20,Early Years,North,Transferred Out,183,582,33.94
+2024-02-18,Primary,Coastal,On Leave,1188,707,50.52
+2024-01-24,Primary,Coastal,On Leave,1043,54,49.82
+2024-05-24,Sixth Form,North,Transferred Out,2276,1270,83.36
+2024-08-01,Upper Secondary,South,Transferred In,1324,1351,24.33
+2024-05-01,Sixth Form,East,Transferred In,1340,2048,34.28
+2025-06-17,Early Years,Coastal,Transferred In,1488,711,68.82
+2024-12-07,Sixth Form,West,Transferred In,492,2286,20.1
+2025-04-09,Early Years,North,Withdrawn,548,467,92.26
+2024-01-21,Lower Secondary,Central,Withdrawn,2351,2457,39.35
+2025-01-01,Lower Secondary,East,Enrolled,597,1391,35.37
+2024-09-24,Upper Secondary,East,Enrolled,890,883,21.4
+2025-05-13,Primary,West,Transferred In,1247,2185,57.32
+2024-08-05,Sixth Form,East,On Leave,776,961,49.43
+2024-05-14,Sixth Form,North,Enrolled,210,1376,44.46
+2024-09-23,Early Years,East,Transferred Out,2164,1250,47.61
+2025-02-24,Lower Secondary,Coastal,Transferred In,2478,764,65.19
+2024-03-23,Upper Secondary,South,Enrolled,536,1862,62.08
+2025-03-23,Early Years,West,Transferred In,764,462,77.99
+2024-02-23,Upper Secondary,South,On Leave,1386,511,50.1
+2024-02-13,Primary,South,Transferred Out,240,2400,65.94
+2024-07-26,Sixth Form,West,Transferred In,1495,835,10.16
+2025-03-28,Early Years,West,Enrolled,456,91,4.4
+2024-09-15,Upper Secondary,Coastal,Transferred Out,1644,212,46.37
+2025-02-06,Upper Secondary,East,Enrolled,880,632,8.7
+2024-01-05,Primary,East,On Leave,1922,1025,86.17
+2024-03-30,Early Years,South,Enrolled,747,2380,64.38
+2024-07-19,Upper Secondary,West,Enrolled,1352,1094,4.49
+2024-10-04,Upper Secondary,South,On Leave,1072,1783,46.99
+2024-02-01,Early Years,East,Enrolled,2448,2420,99.21
+2024-08-31,Primary,Coastal,On Leave,1494,750,98.73
+2025-02-01,Upper Secondary,West,On Leave,2453,2462,0.73
+2024-03-21,Sixth Form,Coastal,Transferred In,670,1158,31.75
+2024-03-22,Primary,South,Enrolled,2299,277,42.5
+2025-05-05,Sixth Form,West,Transferred Out,1669,885,69.89
+2025-04-12,Primary,Central,Enrolled,2391,1259,41.1
+2024-01-28,Sixth Form,East,Transferred Out,2111,1594,43.6
+2024-02-12,Primary,West,Transferred Out,374,1401,8.85
+2024-09-19,Sixth Form,Central,Transferred In,17,2439,69.19
+2025-02-27,Upper Secondary,North,On Leave,398,1136,6.12
+2024-12-22,Primary,East,Transferred Out,865,357,36.77
+2025-03-09,Lower Secondary,South,Enrolled,671,1667,25.4
+2024-09-17,Sixth Form,North,On Leave,683,347,81.01
+2024-02-07,Early Years,North,Transferred Out,226,624,59.08
+2024-05-28,Upper Secondary,East,Transferred In,204,529,42.62
+2025-03-18,Upper Secondary,South,Withdrawn,55,1961,38.26
+2025-06-12,Lower Secondary,Coastal,Withdrawn,1705,1864,51.71
+2025-03-22,Lower Secondary,Coastal,Transferred In,1811,2014,25.23
+2024-08-28,Early Years,West,Transferred In,494,1685,89.86
+2024-11-26,Lower Secondary,Central,On Leave,477,1506,48.5
+2025-05-09,Lower Secondary,Coastal,Transferred Out,214,1575,0.04
+2025-03-05,Lower Secondary,Coastal,Enrolled,1359,2472,56.53
+2024-07-02,Sixth Form,West,Transferred Out,1664,450,55.81
+2024-06-30,Sixth Form,North,Withdrawn,310,1080,98.48
+2025-01-29,Early Years,South,Enrolled,373,2494,45.09
+2024-12-20,Sixth Form,East,Transferred In,1215,1786,78.93
+2024-05-31,Early Years,North,Transferred In,2413,1169,84.84
+2024-11-10,Sixth Form,East,Transferred In,2306,522,85.06
+2024-03-09,Upper Secondary,North,Withdrawn,1849,337,27.69
+2025-01-29,Sixth Form,South,Transferred In,2185,1090,30.8
+2024-05-14,Sixth Form,West,Enrolled,2263,2259,49.2
+2025-01-23,Upper Secondary,Coastal,Withdrawn,1028,2278,82.15
+2024-04-05,Upper Secondary,West,Withdrawn,740,2439,43.59
+2024-11-06,Lower Secondary,East,On Leave,2445,1249,7.16
+2025-04-17,Lower Secondary,South,Enrolled,607,1786,44.49
+2025-04-19,Early Years,East,Enrolled,1124,1784,93.92
+2024-02-11,Sixth Form,Central,Transferred In,2179,2480,3.08
+2025-04-19,Primary,Central,Transferred Out,1470,1625,70.99
+2024-06-03,Lower Secondary,West,Transferred Out,303,870,82.51
+2025-01-20,Primary,Central,Withdrawn,2193,2117,32.91
+2024-08-18,Lower Secondary,South,Enrolled,2282,2237,3.89
+2024-09-05,Lower Secondary,Central,Withdrawn,1093,1629,28.02
+2025-04-09,Primary,East,Withdrawn,1722,2333,79.76
+2025-06-10,Sixth Form,North,Withdrawn,775,317,41.3

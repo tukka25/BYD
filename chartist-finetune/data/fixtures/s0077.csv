@@ -1,241 +1,241 @@
-sales_order_date,sales_service_period,sales_channel,sales_party_size,sales_item_count,sales_subtotal_amount,sales_tip_amount
-2025-05-13,Brunch,Takeout,1,54,137.41,82.2
-2024-08-11,Breakfast,Delivery,5,37,626.67,63.67
-2024-12-30,Brunch,Catering,12,14,433.66,201.67
-2025-06-11,Brunch,Delivery,4,35,400.89,58.67
-2024-02-26,Dinner,Catering,8,31,309.77,59.13
-2024-09-30,Dinner,Takeout,11,52,30.7,128.96
-2025-01-19,Late Night,Dine In,5,24,839.81,195.43
-2024-12-19,Brunch,Dine In,5,32,479.78,137.13
-2025-03-23,Brunch,Catering,4,59,288.4,73.34
-2025-01-17,Afternoon,Catering,4,55,778.57,58.49
-2024-02-18,Late Night,Catering,6,52,39.46,214.84
-2025-04-21,Brunch,Dine In,3,24,779.4,87.65
-2024-01-06,Dinner,Dine In,6,53,303.53,112.3
-2024-07-27,Late Night,Dine In,12,31,20.49,172.38
-2024-08-28,Breakfast,Dine In,12,28,705.67,112.19
-2024-03-03,Lunch,Dine In,11,55,704.93,208.69
-2024-02-10,Breakfast,Delivery,9,11,829.65,108.0
-2024-08-30,Afternoon,Delivery,10,30,150.26,20.93
-2025-04-06,Lunch,Takeout,3,48,511.98,151.1
-2024-03-08,Afternoon,Curbside,8,54,199.27,177.3
-2024-08-24,Afternoon,Takeout,4,3,196.29,4.25
-2024-07-07,Breakfast,Catering,11,59,522.0,109.81
-2025-04-26,Afternoon,Curbside,4,25,457.89,42.64
-2025-02-28,Afternoon,Catering,11,57,347.37,165.37
-2024-05-30,Breakfast,Delivery,7,24,812.93,192.24
-2024-06-18,Dinner,Curbside,10,24,70.91,114.5
-2024-05-25,Lunch,Curbside,6,35,242.74,114.58
-2025-02-06,Breakfast,Delivery,7,11,30.49,113.38
-2025-02-25,Afternoon,Takeout,4,3,388.99,17.11
-2025-01-30,Dinner,Dine In,12,26,179.22,80.66
-2024-01-29,Afternoon,Takeout,3,46,59.61,192.16
-2025-05-31,Lunch,Takeout,5,22,307.23,181.53
-2024-01-18,Breakfast,Delivery,4,55,360.08,35.12
-2024-12-15,Breakfast,Takeout,4,22,661.47,96.8
-2025-06-04,Dinner,Dine In,6,14,28.41,202.65
-2024-09-10,Breakfast,Dine In,3,31,837.58,207.59
-2024-06-16,Brunch,Takeout,3,49,375.12,81.07
-2024-08-10,Brunch,Catering,9,44,629.28,175.4
-2024-08-15,Brunch,Takeout,3,26,374.99,104.99
-2024-05-29,Dinner,Takeout,8,41,67.59,48.07
-2024-11-27,Afternoon,Takeout,3,25,788.15,18.21
-2024-11-05,Dinner,Catering,8,11,182.13,63.18
-2024-05-30,Afternoon,Catering,3,2,216.14,149.38
-2024-09-10,Afternoon,Takeout,2,46,329.9,108.16
-2024-08-16,Breakfast,Dine In,3,39,551.12,135.25
-2025-02-05,Lunch,Curbside,6,54,573.52,173.0
-2024-04-06,Brunch,Curbside,4,4,668.44,148.19
-2024-06-20,Brunch,Takeout,2,6,766.69,182.91
-2024-11-05,Brunch,Curbside,8,31,32.01,97.95
-2024-01-24,Breakfast,Dine In,2,34,327.52,106.76
-2025-03-27,Breakfast,Catering,10,56,400.57,31.86
-2024-10-17,Breakfast,Takeout,5,27,813.94,89.62
-2024-11-05,Breakfast,Delivery,4,44,156.52,160.13
-2025-06-10,Lunch,Catering,3,47,70.31,3.44
-2024-11-16,Lunch,Catering,11,49,340.31,121.93
-2024-08-15,Lunch,Dine In,11,25,795.56,73.93
-2025-02-06,Late Night,Delivery,11,9,815.9,208.73
-2024-10-16,Breakfast,Dine In,1,46,491.12,205.99
-2024-05-05,Lunch,Takeout,9,5,651.84,171.98
-2025-04-28,Dinner,Takeout,12,56,211.22,99.53
-2024-04-04,Breakfast,Delivery,7,40,633.54,4.13
-2024-06-12,Brunch,Dine In,1,50,205.08,148.76
-2025-02-19,Afternoon,Curbside,2,53,510.37,5.7
-2025-01-04,Dinner,Delivery,9,33,66.04,110.38
-2024-02-08,Breakfast,Takeout,3,12,358.74,219.73
-2024-07-06,Breakfast,Curbside,6,29,786.21,205.31
-2025-01-25,Breakfast,Takeout,6,2,100.57,23.12
-2024-08-10,Brunch,Delivery,1,54,147.14,95.07
-2024-08-19,Dinner,Delivery,10,37,77.36,102.19
-2025-03-19,Dinner,Dine In,6,12,484.99,103.19
-2025-04-11,Brunch,Dine In,9,42,840.79,185.13
-2024-05-24,Breakfast,Delivery,8,20,636.25,167.16
-2024-10-19,Brunch,Delivery,5,32,210.48,11.76
-2024-11-10,Afternoon,Delivery,2,59,527.55,131.25
-2024-05-17,Lunch,Curbside,2,28,606.28,105.45
-2024-07-22,Late Night,Curbside,5,26,210.95,106.08
-2024-03-06,Dinner,Curbside,4,21,186.88,195.11
-2025-03-23,Lunch,Dine In,10,49,164.04,37.01
-2024-05-13,Late Night,Takeout,9,31,273.29,138.14
-2025-02-06,Late Night,Delivery,4,25,266.39,48.22
-2024-09-25,Dinner,Catering,10,56,469.13,200.25
-2025-03-26,Late Night,Catering,9,14,267.15,213.64
-2024-06-28,Brunch,Delivery,9,26,424.53,151.04
-2024-08-13,Brunch,Delivery,6,25,668.57,164.49
-2024-04-10,Afternoon,Takeout,8,39,114.72,0.76
-2024-01-27,Late Night,Takeout,12,36,15.5,6.24
-2024-06-17,Late Night,Delivery,11,7,367.54,65.84
-2024-01-02,Dinner,Curbside,5,23,683.02,28.82
-2024-02-22,Dinner,Curbside,9,43,673.94,29.34
-2024-12-07,Afternoon,Catering,11,42,33.2,45.56
-2024-05-20,Late Night,Delivery,10,15,146.3,38.76
-2025-02-04,Brunch,Dine In,8,7,149.51,72.07
-2025-03-18,Lunch,Dine In,8,33,67.22,152.5
-2025-02-01,Brunch,Delivery,5,38,23.19,147.33
-2024-07-04,Dinner,Curbside,3,21,699.49,208.57
-2024-06-13,Brunch,Takeout,10,48,513.63,122.18
-2024-03-06,Lunch,Curbside,6,40,324.84,54.09
-2025-02-28,Brunch,Curbside,10,54,492.2,76.62
-2024-01-03,Breakfast,Catering,5,54,338.29,219.71
-2024-01-24,Dinner,Dine In,12,26,439.36,155.99
-2025-03-25,Breakfast,Dine In,6,6,742.09,99.9
-2024-06-18,Afternoon,Delivery,1,41,676.44,171.29
-2025-03-18,Brunch,Dine In,5,6,144.26,31.33
-2024-03-14,Lunch,Dine In,5,8,237.04,129.16
-2025-02-12,Breakfast,Delivery,9,29,726.57,114.32
-2024-08-12,Lunch,Dine In,2,58,56.5,74.66
-2024-05-30,Late Night,Curbside,5,15,301.0,9.91
-2024-04-25,Dinner,Curbside,4,45,465.77,13.54
-2025-01-09,Breakfast,Delivery,10,25,629.82,105.86
-2024-06-06,Breakfast,Delivery,1,11,542.6,183.97
-2024-05-04,Breakfast,Dine In,2,36,689.49,156.15
-2024-07-17,Dinner,Curbside,4,44,379.19,136.61
-2024-12-19,Brunch,Takeout,2,33,749.31,206.62
-2025-05-03,Afternoon,Curbside,9,33,412.38,115.15
-2024-07-05,Dinner,Takeout,6,35,67.8,145.64
-2025-03-31,Late Night,Delivery,2,10,450.69,156.98
-2025-04-17,Brunch,Takeout,1,42,258.74,200.29
-2025-05-27,Dinner,Delivery,9,8,226.44,177.47
-2025-03-10,Afternoon,Delivery,7,55,532.7,27.99
-2024-12-04,Dinner,Dine In,9,19,24.05,139.53
-2024-08-30,Breakfast,Curbside,11,5,115.01,79.44
-2025-03-10,Lunch,Catering,2,34,531.8,14.21
-2025-04-19,Breakfast,Curbside,11,13,662.55,153.89
-2025-04-01,Lunch,Dine In,4,32,602.09,214.39
-2024-03-18,Dinner,Curbside,9,39,235.12,209.17
-2024-01-12,Lunch,Dine In,7,25,605.75,123.67
-2024-09-25,Brunch,Dine In,8,10,655.9,63.06
-2025-04-08,Breakfast,Catering,9,14,337.4,152.32
-2024-03-11,Dinner,Dine In,7,42,69.37,118.51
-2024-08-26,Brunch,Takeout,2,9,35.75,51.44
-2025-03-20,Dinner,Takeout,2,36,179.49,118.49
-2024-08-12,Late Night,Catering,6,33,665.13,155.63
-2024-12-10,Dinner,Takeout,9,57,849.28,188.73
-2024-02-03,Brunch,Curbside,10,52,542.67,135.19
-2025-02-24,Afternoon,Delivery,8,4,837.54,141.07
-2024-07-12,Brunch,Delivery,9,40,695.04,33.44
-2025-04-12,Late Night,Takeout,9,53,521.94,85.75
-2025-06-06,Dinner,Catering,11,58,538.54,99.22
-2024-05-08,Lunch,Curbside,11,22,297.59,169.7
-2024-03-14,Late Night,Dine In,7,42,793.4,36.61
-2024-06-02,Brunch,Takeout,5,49,216.63,100.94
-2024-02-08,Brunch,Catering,7,28,397.34,92.92
-2025-02-14,Afternoon,Takeout,5,31,314.49,145.36
-2024-08-13,Lunch,Curbside,1,44,501.97,75.49
-2024-06-18,Dinner,Takeout,4,21,783.44,157.69
-2024-09-21,Afternoon,Delivery,9,46,762.67,20.56
-2024-07-12,Late Night,Delivery,8,34,96.78,93.62
-2024-09-19,Dinner,Curbside,11,3,245.87,129.72
-2025-04-08,Late Night,Catering,6,23,651.49,132.16
-2024-04-12,Brunch,Takeout,5,22,235.91,34.89
-2025-05-21,Afternoon,Catering,5,32,742.67,114.22
-2024-10-17,Late Night,Delivery,10,42,151.73,160.68
-2024-07-03,Brunch,Delivery,11,6,542.91,40.79
-2024-09-07,Afternoon,Takeout,4,57,424.59,134.34
-2025-06-18,Lunch,Dine In,10,44,559.51,81.87
-2024-03-21,Lunch,Takeout,3,7,682.5,35.99
-2025-06-12,Afternoon,Dine In,4,50,579.2,92.0
-2024-09-16,Late Night,Takeout,2,53,606.54,151.28
-2024-11-11,Dinner,Delivery,6,11,237.87,69.81
-2025-01-02,Lunch,Catering,10,25,329.35,150.18
-2024-07-26,Afternoon,Takeout,5,42,139.32,4.32
-2025-02-19,Dinner,Takeout,9,51,125.85,2.79
-2024-10-28,Dinner,Catering,12,59,310.97,76.43
-2024-03-17,Dinner,Curbside,9,52,550.26,191.92
-2024-06-07,Brunch,Curbside,9,1,277.17,15.36
-2024-11-03,Afternoon,Curbside,4,41,126.6,193.72
-2024-11-09,Brunch,Takeout,5,44,504.63,4.59
-2024-07-16,Late Night,Dine In,5,45,330.22,177.38
-2024-03-18,Lunch,Takeout,9,5,187.47,64.12
-2024-02-24,Afternoon,Catering,3,51,67.35,65.37
-2025-04-16,Dinner,Delivery,12,26,6.68,44.26
-2024-03-30,Brunch,Delivery,10,55,136.2,110.0
-2024-05-31,Late Night,Catering,2,2,714.77,98.49
-2024-02-05,Brunch,Dine In,4,23,477.32,187.79
-2024-09-15,Late Night,Delivery,9,2,774.29,31.5
-2025-04-09,Lunch,Catering,4,47,306.42,92.65
-2024-05-09,Brunch,Takeout,8,36,256.32,169.16
-2024-09-02,Late Night,Curbside,2,4,71.41,135.2
-2024-01-11,Brunch,Curbside,10,50,69.61,90.39
-2024-08-28,Breakfast,Delivery,2,8,454.64,211.83
-2024-07-20,Lunch,Dine In,2,27,102.94,126.87
-2024-01-08,Breakfast,Curbside,3,52,28.38,83.53
-2025-05-20,Brunch,Catering,3,30,648.71,47.01
-2025-03-24,Brunch,Takeout,12,1,480.99,22.01
-2025-05-13,Afternoon,Dine In,9,4,788.61,9.34
-2024-09-09,Late Night,Takeout,8,17,656.39,186.22
-2024-08-18,Brunch,Dine In,9,34,813.17,14.28
-2024-10-08,Late Night,Dine In,8,59,266.55,193.6
-2024-03-04,Late Night,Delivery,11,27,817.62,14.99
-2024-03-05,Brunch,Curbside,11,16,509.7,74.2
-2024-01-10,Late Night,Catering,4,39,844.76,167.04
-2025-06-09,Breakfast,Catering,10,35,19.93,144.76
-2024-01-05,Brunch,Dine In,9,13,266.59,157.08
-2025-04-29,Brunch,Dine In,8,2,614.0,27.92
-2024-10-04,Brunch,Delivery,12,55,742.83,94.46
-2024-01-07,Lunch,Delivery,6,26,544.43,92.81
-2024-03-19,Brunch,Dine In,8,50,232.75,158.18
-2024-06-24,Late Night,Catering,9,35,730.43,21.03
-2024-07-19,Brunch,Delivery,5,23,725.89,86.97
-2024-06-05,Late Night,Takeout,5,27,640.45,4.85
-2024-08-28,Breakfast,Delivery,2,59,712.92,65.23
-2024-09-17,Breakfast,Takeout,5,40,543.64,107.39
-2024-07-24,Dinner,Catering,5,58,411.63,141.24
-2024-06-01,Brunch,Dine In,10,34,697.52,138.18
-2024-11-14,Brunch,Curbside,2,13,307.0,143.7
-2024-04-18,Brunch,Dine In,10,39,278.66,151.04
-2024-05-30,Afternoon,Curbside,1,37,633.03,42.84
-2025-01-30,Brunch,Catering,4,39,769.87,197.33
-2024-03-16,Dinner,Catering,6,48,232.1,143.83
-2025-03-03,Brunch,Dine In,3,6,40.21,187.6
-2024-07-02,Late Night,Delivery,4,50,256.14,213.76
-2024-09-12,Afternoon,Dine In,6,8,578.73,141.63
-2024-11-11,Late Night,Catering,11,13,310.07,175.24
-2024-12-11,Afternoon,Takeout,1,40,99.14,97.42
-2024-08-22,Lunch,Dine In,5,40,678.21,68.87
-2025-04-29,Breakfast,Delivery,5,7,113.72,77.4
-2024-04-07,Dinner,Dine In,7,35,403.97,49.15
-2024-05-09,Dinner,Catering,2,7,229.3,126.24
-2025-06-23,Dinner,Takeout,12,54,728.86,5.87
-2025-04-13,Lunch,Delivery,9,59,25.05,197.86
-2024-01-13,Afternoon,Catering,7,16,733.9,52.36
-2024-05-06,Late Night,Delivery,6,54,97.75,30.27
-2024-04-13,Lunch,Catering,10,50,602.73,112.35
-2024-09-02,Afternoon,Catering,8,13,448.73,52.57
-2024-02-14,Afternoon,Takeout,5,55,801.35,93.24
-2024-05-12,Breakfast,Catering,9,31,195.37,15.72
-2025-02-28,Afternoon,Dine In,6,59,265.53,110.41
-2025-01-08,Dinner,Takeout,8,7,113.77,123.04
-2024-04-10,Breakfast,Delivery,8,58,607.26,50.28
-2025-03-31,Breakfast,Catering,5,25,175.84,211.4
-2024-09-06,Late Night,Dine In,10,19,294.54,33.93
-2024-08-26,Lunch,Dine In,11,26,532.65,219.74
-2024-02-15,Afternoon,Catering,8,17,503.18,212.2
-2024-02-29,Brunch,Catering,10,42,306.44,97.25
-2025-04-28,Late Night,Delivery,4,38,748.87,103.57
-2025-01-07,Dinner,Delivery,10,26,261.82,152.48
-2025-02-24,Breakfast,Catering,9,6,267.45,86.13
-2024-08-11,Brunch,Catering,8,6,785.6,154.56
-2025-01-26,Brunch,Catering,12,26,537.19,121.48
-2024-09-24,Breakfast,Takeout,7,18,404.78,196.05
+Appointment Date,Clinic Location,Appointment Type,Provider Specialty,Wait Time Minutes,Visit Duration Minutes,Billed Amount
+2024-08-19,Downtown Clinic,Telehealth Consult,Orthopedics,5,43,30.17
+2025-05-31,Riverside Clinic,Lab Work,Cardiology,19,91,1879.73
+2024-11-16,Riverside Clinic,Annual Physical,Endocrinology,100,75,2345.57
+2025-01-30,Downtown Clinic,Telehealth Consult,Pediatrics,143,59,1945.96
+2024-12-23,Riverside Clinic,Lab Work,Pediatrics,166,60,2179.6
+2025-03-18,Westgate Clinic,Lab Work,Cardiology,40,102,2123.57
+2024-10-30,Northside Clinic,Telehealth Consult,Pediatrics,133,49,713.14
+2024-03-18,Northside Clinic,Annual Physical,Dermatology,155,45,1106.92
+2024-06-08,Westgate Clinic,Annual Physical,Endocrinology,22,70,2340.8
+2025-02-12,Northside Clinic,New Patient,Orthopedics,67,34,465.65
+2024-05-10,Northside Clinic,New Patient,Family Medicine,178,49,1244.45
+2024-01-13,Westgate Clinic,Telehealth Consult,Orthopedics,163,44,267.94
+2025-02-27,Downtown Clinic,Annual Physical,Family Medicine,22,36,1550.47
+2024-10-31,Westgate Clinic,Telehealth Consult,Orthopedics,6,28,964.02
+2024-04-12,Northside Clinic,New Patient,Cardiology,13,13,1178.58
+2024-01-10,Westgate Clinic,Follow-Up,Orthopedics,13,98,965.98
+2024-12-08,Northside Clinic,Lab Work,Pediatrics,40,36,296.93
+2024-10-29,Downtown Clinic,Follow-Up,Endocrinology,40,54,1169.04
+2025-06-21,Westgate Clinic,Lab Work,Dermatology,19,105,1602.68
+2025-06-11,Westgate Clinic,Annual Physical,Endocrinology,122,24,499.39
+2024-01-23,Northside Clinic,Annual Physical,Endocrinology,140,54,2069.21
+2024-03-14,Northside Clinic,Follow-Up,Family Medicine,121,85,1442.0
+2024-07-25,Westgate Clinic,Follow-Up,Pediatrics,42,13,2081.32
+2025-04-20,Westgate Clinic,Follow-Up,Endocrinology,94,98,1321.59
+2024-12-03,Downtown Clinic,Annual Physical,Cardiology,86,17,767.07
+2024-04-16,Westgate Clinic,Follow-Up,Family Medicine,100,80,1711.35
+2024-09-15,Riverside Clinic,New Patient,Dermatology,35,114,2344.52
+2024-12-28,Downtown Clinic,Telehealth Consult,Orthopedics,114,28,1301.75
+2024-12-26,Westgate Clinic,Follow-Up,Pediatrics,3,28,1370.24
+2024-11-26,Northside Clinic,New Patient,Orthopedics,149,56,1237.87
+2024-08-04,Riverside Clinic,New Patient,Pediatrics,17,82,1114.61
+2024-07-14,Northside Clinic,Follow-Up,Cardiology,143,100,1375.65
+2024-08-11,Northside Clinic,New Patient,Dermatology,67,79,2433.8
+2024-03-09,Westgate Clinic,Lab Work,Pediatrics,144,15,265.98
+2024-05-07,Northside Clinic,New Patient,Cardiology,8,55,1606.78
+2024-04-07,Riverside Clinic,Follow-Up,Dermatology,91,16,2057.09
+2024-01-21,Northside Clinic,New Patient,Pediatrics,82,37,396.1
+2024-05-08,Northside Clinic,Lab Work,Cardiology,76,17,84.62
+2024-12-24,Westgate Clinic,Annual Physical,Family Medicine,45,74,1839.71
+2025-06-03,Westgate Clinic,Follow-Up,Family Medicine,78,81,1019.24
+2025-02-23,Northside Clinic,New Patient,Pediatrics,113,108,2179.17
+2024-10-13,Riverside Clinic,Follow-Up,Endocrinology,7,63,943.26
+2024-07-09,Downtown Clinic,Lab Work,Family Medicine,131,69,444.43
+2024-02-16,Northside Clinic,Annual Physical,Pediatrics,122,56,1260.61
+2024-02-27,Riverside Clinic,Lab Work,Pediatrics,45,23,2243.31
+2024-12-18,Downtown Clinic,Lab Work,Family Medicine,169,12,1011.93
+2024-02-07,Riverside Clinic,Lab Work,Family Medicine,43,9,630.12
+2024-01-15,Riverside Clinic,Follow-Up,Cardiology,166,21,306.45
+2025-02-26,Westgate Clinic,Lab Work,Endocrinology,67,89,696.49
+2025-06-23,Downtown Clinic,Lab Work,Cardiology,171,33,663.81
+2024-03-01,Westgate Clinic,Annual Physical,Cardiology,14,119,905.44
+2025-01-27,Downtown Clinic,Lab Work,Endocrinology,25,40,2063.13
+2025-06-15,Northside Clinic,Lab Work,Dermatology,46,29,642.73
+2025-01-09,Downtown Clinic,Lab Work,Family Medicine,91,29,2248.51
+2024-12-08,Downtown Clinic,New Patient,Family Medicine,18,91,2413.78
+2024-08-24,Northside Clinic,Lab Work,Orthopedics,43,72,1016.06
+2025-05-13,Riverside Clinic,New Patient,Orthopedics,8,62,2134.88
+2025-06-09,Westgate Clinic,Follow-Up,Orthopedics,61,80,1458.76
+2024-10-31,Riverside Clinic,Lab Work,Pediatrics,77,20,1418.58
+2025-03-31,Northside Clinic,Follow-Up,Dermatology,87,17,2025.0
+2024-03-14,Westgate Clinic,Telehealth Consult,Orthopedics,123,22,433.2
+2024-03-12,Westgate Clinic,Annual Physical,Family Medicine,110,20,1982.82
+2024-12-23,Northside Clinic,New Patient,Dermatology,14,98,2100.64
+2024-05-03,Downtown Clinic,Annual Physical,Orthopedics,65,91,521.1
+2024-11-05,Northside Clinic,Lab Work,Pediatrics,61,88,1035.15
+2024-11-29,Riverside Clinic,Lab Work,Pediatrics,84,72,497.62
+2024-04-19,Westgate Clinic,Telehealth Consult,Family Medicine,38,21,1543.41
+2024-11-26,Downtown Clinic,Annual Physical,Family Medicine,3,110,1641.77
+2024-05-29,Northside Clinic,Follow-Up,Family Medicine,69,36,401.49
+2024-01-26,Riverside Clinic,Lab Work,Family Medicine,75,6,1613.89
+2024-04-05,Riverside Clinic,Follow-Up,Orthopedics,78,102,1819.44
+2025-04-27,Westgate Clinic,Telehealth Consult,Orthopedics,158,68,1928.29
+2024-01-10,Northside Clinic,Lab Work,Pediatrics,96,92,775.88
+2025-05-23,Riverside Clinic,New Patient,Orthopedics,120,7,1666.02
+2024-11-21,Northside Clinic,Follow-Up,Dermatology,35,44,1352.68
+2024-10-14,Northside Clinic,New Patient,Orthopedics,126,116,303.36
+2024-07-07,Downtown Clinic,Annual Physical,Dermatology,12,51,1274.72
+2024-11-23,Riverside Clinic,Lab Work,Endocrinology,175,108,1099.96
+2025-02-18,Downtown Clinic,New Patient,Cardiology,31,47,894.06
+2024-11-14,Westgate Clinic,Annual Physical,Pediatrics,150,9,2334.56
+2025-06-08,Riverside Clinic,Follow-Up,Endocrinology,60,53,1168.78
+2024-07-03,Riverside Clinic,Annual Physical,Orthopedics,92,71,1093.05
+2025-03-14,Downtown Clinic,Annual Physical,Endocrinology,50,82,297.06
+2024-11-14,Downtown Clinic,Telehealth Consult,Orthopedics,160,76,1457.45
+2024-03-29,Westgate Clinic,Telehealth Consult,Pediatrics,134,70,715.15
+2024-04-18,Riverside Clinic,Telehealth Consult,Family Medicine,101,9,1365.9
+2025-05-07,Riverside Clinic,Lab Work,Cardiology,66,28,1339.53
+2024-06-12,Westgate Clinic,New Patient,Pediatrics,111,14,340.98
+2024-09-20,Northside Clinic,Annual Physical,Orthopedics,132,81,1300.58
+2024-09-24,Northside Clinic,Lab Work,Cardiology,32,52,1683.94
+2024-09-16,Riverside Clinic,Follow-Up,Cardiology,151,37,660.31
+2024-03-18,Downtown Clinic,Follow-Up,Pediatrics,37,36,323.97
+2024-08-19,Northside Clinic,Lab Work,Endocrinology,106,45,725.75
+2025-02-19,Northside Clinic,Telehealth Consult,Cardiology,70,48,823.84
+2024-01-24,Downtown Clinic,Telehealth Consult,Dermatology,174,73,1652.92
+2024-02-12,Riverside Clinic,Annual Physical,Family Medicine,37,53,1531.68
+2024-10-14,Westgate Clinic,Lab Work,Orthopedics,121,30,747.76
+2024-10-08,Northside Clinic,Telehealth Consult,Endocrinology,79,28,1248.74
+2025-06-02,Riverside Clinic,Lab Work,Orthopedics,147,80,2253.42
+2024-03-06,Westgate Clinic,Follow-Up,Pediatrics,171,105,2168.34
+2025-01-26,Westgate Clinic,Lab Work,Orthopedics,40,51,1897.58
+2024-09-22,Westgate Clinic,Annual Physical,Cardiology,23,26,2193.91
+2025-05-02,Northside Clinic,Annual Physical,Pediatrics,172,65,1057.36
+2024-03-22,Northside Clinic,Telehealth Consult,Dermatology,2,23,1635.52
+2024-01-21,Westgate Clinic,Lab Work,Endocrinology,155,61,757.56
+2025-04-20,Westgate Clinic,Annual Physical,Family Medicine,7,93,545.43
+2024-04-06,Northside Clinic,New Patient,Family Medicine,117,24,2199.28
+2024-02-17,Westgate Clinic,Annual Physical,Orthopedics,103,93,1355.24
+2025-05-19,Westgate Clinic,Lab Work,Family Medicine,145,17,1931.36
+2024-02-19,Northside Clinic,New Patient,Pediatrics,34,29,1494.15
+2025-05-10,Northside Clinic,Follow-Up,Cardiology,167,70,1598.18
+2025-02-21,Riverside Clinic,Lab Work,Pediatrics,73,78,2454.61
+2024-11-16,Northside Clinic,Annual Physical,Cardiology,7,45,1280.72
+2025-03-11,Downtown Clinic,New Patient,Family Medicine,70,110,184.66
+2024-12-16,Westgate Clinic,New Patient,Pediatrics,109,35,1565.58
+2024-08-08,Westgate Clinic,Telehealth Consult,Dermatology,145,69,2434.89
+2025-03-27,Westgate Clinic,Telehealth Consult,Family Medicine,170,101,195.22
+2024-07-14,Downtown Clinic,Follow-Up,Orthopedics,175,47,2486.25
+2024-01-27,Riverside Clinic,Telehealth Consult,Endocrinology,78,108,2163.72
+2025-05-21,Westgate Clinic,Annual Physical,Cardiology,86,88,31.68
+2025-03-12,Riverside Clinic,Annual Physical,Cardiology,9,119,1311.83
+2024-10-25,Northside Clinic,Follow-Up,Family Medicine,65,39,1568.96
+2024-08-18,Riverside Clinic,Lab Work,Family Medicine,105,59,535.89
+2024-05-27,Northside Clinic,New Patient,Dermatology,126,65,557.73
+2024-07-04,Downtown Clinic,Follow-Up,Pediatrics,33,108,258.02
+2024-09-01,Riverside Clinic,Follow-Up,Orthopedics,99,13,2141.76
+2025-05-16,Northside Clinic,New Patient,Dermatology,123,91,1424.5
+2024-11-06,Riverside Clinic,Telehealth Consult,Dermatology,117,11,1896.56
+2024-06-07,Westgate Clinic,New Patient,Endocrinology,7,13,2386.6
+2024-05-26,Northside Clinic,Lab Work,Orthopedics,110,23,2315.2
+2024-04-03,Riverside Clinic,Telehealth Consult,Orthopedics,122,88,1123.07
+2024-11-13,Northside Clinic,Lab Work,Endocrinology,120,43,907.43
+2024-08-07,Northside Clinic,Telehealth Consult,Orthopedics,36,73,1420.96
+2025-06-02,Riverside Clinic,Lab Work,Cardiology,47,59,892.27
+2024-09-12,Northside Clinic,Annual Physical,Orthopedics,5,102,904.9
+2024-07-12,Riverside Clinic,New Patient,Endocrinology,34,76,1815.81
+2024-06-12,Downtown Clinic,Annual Physical,Endocrinology,122,37,844.53
+2024-09-11,Westgate Clinic,New Patient,Cardiology,64,60,1859.33
+2025-05-30,Downtown Clinic,New Patient,Endocrinology,5,67,110.04
+2024-03-11,Northside Clinic,Lab Work,Endocrinology,49,68,398.41
+2024-03-05,Downtown Clinic,Follow-Up,Dermatology,58,57,159.09
+2025-04-01,Northside Clinic,Telehealth Consult,Dermatology,144,72,1699.59
+2024-08-30,Riverside Clinic,Telehealth Consult,Dermatology,120,84,844.59
+2025-06-01,Westgate Clinic,Telehealth Consult,Pediatrics,161,11,2093.92
+2024-11-08,Riverside Clinic,Telehealth Consult,Orthopedics,87,101,1867.26
+2024-11-29,Northside Clinic,New Patient,Pediatrics,6,64,553.95
+2024-09-23,Westgate Clinic,Telehealth Consult,Dermatology,9,92,1864.46
+2024-01-23,Downtown Clinic,Follow-Up,Endocrinology,173,64,428.97
+2024-11-10,Downtown Clinic,New Patient,Endocrinology,95,32,1540.94
+2024-05-03,Westgate Clinic,Follow-Up,Orthopedics,103,45,2252.18
+2024-11-10,Downtown Clinic,Follow-Up,Family Medicine,2,27,227.97
+2024-10-17,Downtown Clinic,New Patient,Endocrinology,153,118,210.11
+2024-07-27,Riverside Clinic,Follow-Up,Endocrinology,142,110,140.16
+2025-01-05,Northside Clinic,New Patient,Family Medicine,162,58,755.84
+2024-08-24,Northside Clinic,Annual Physical,Cardiology,123,63,2139.15
+2024-06-02,Riverside Clinic,Telehealth Consult,Cardiology,35,94,703.26
+2024-12-31,Northside Clinic,New Patient,Orthopedics,19,103,1050.38
+2024-09-11,Westgate Clinic,Follow-Up,Endocrinology,109,56,2023.91
+2024-05-27,Downtown Clinic,Follow-Up,Endocrinology,55,68,1305.57
+2024-09-04,Westgate Clinic,Telehealth Consult,Dermatology,106,31,1000.17
+2025-04-15,Westgate Clinic,Lab Work,Cardiology,162,109,2112.71
+2024-06-04,Northside Clinic,Lab Work,Pediatrics,79,119,1763.61
+2024-07-14,Northside Clinic,Lab Work,Orthopedics,56,25,843.21
+2024-06-24,Downtown Clinic,Telehealth Consult,Dermatology,53,27,1681.09
+2024-06-11,Riverside Clinic,Lab Work,Pediatrics,109,112,268.19
+2025-06-03,Riverside Clinic,Telehealth Consult,Endocrinology,177,29,1943.33
+2024-04-01,Westgate Clinic,New Patient,Pediatrics,113,47,1600.0
+2024-01-05,Northside Clinic,New Patient,Dermatology,17,118,968.34
+2025-02-23,Westgate Clinic,Lab Work,Endocrinology,46,44,1887.95
+2025-05-22,Northside Clinic,Telehealth Consult,Family Medicine,29,112,20.15
+2024-07-03,Northside Clinic,Telehealth Consult,Orthopedics,81,22,1457.43
+2024-06-10,Westgate Clinic,Telehealth Consult,Orthopedics,130,81,790.25
+2024-06-22,Northside Clinic,Follow-Up,Dermatology,136,67,2210.82
+2024-09-02,Downtown Clinic,New Patient,Orthopedics,25,16,1126.63
+2024-04-12,Downtown Clinic,Telehealth Consult,Cardiology,2,62,1773.76
+2024-12-16,Westgate Clinic,Follow-Up,Family Medicine,173,116,2477.9
+2024-06-13,Northside Clinic,Annual Physical,Dermatology,150,36,374.29
+2024-08-19,Downtown Clinic,Lab Work,Orthopedics,64,93,2327.84
+2024-11-08,Northside Clinic,Follow-Up,Family Medicine,92,65,316.79
+2024-12-27,Downtown Clinic,Annual Physical,Cardiology,108,48,486.46
+2024-06-27,Downtown Clinic,Lab Work,Family Medicine,65,47,2238.54
+2025-01-13,Northside Clinic,Lab Work,Pediatrics,100,32,524.99
+2025-02-23,Riverside Clinic,Annual Physical,Dermatology,81,59,810.9
+2024-12-23,Downtown Clinic,Lab Work,Pediatrics,61,104,1033.95
+2024-09-21,Westgate Clinic,Annual Physical,Orthopedics,32,102,1593.74
+2024-09-27,Northside Clinic,Telehealth Consult,Endocrinology,158,22,1759.79
+2024-07-09,Northside Clinic,Follow-Up,Family Medicine,120,118,439.94
+2024-01-28,Riverside Clinic,Telehealth Consult,Pediatrics,35,48,572.71
+2024-12-06,Westgate Clinic,Annual Physical,Family Medicine,5,29,2268.44
+2024-06-30,Riverside Clinic,Annual Physical,Orthopedics,62,92,2262.14
+2024-08-10,Northside Clinic,Annual Physical,Family Medicine,4,22,738.07
+2025-06-23,Northside Clinic,New Patient,Dermatology,174,85,2017.75
+2024-08-31,Riverside Clinic,Follow-Up,Dermatology,63,90,457.28
+2025-04-08,Downtown Clinic,Lab Work,Dermatology,125,75,2323.52
+2025-01-16,Northside Clinic,Follow-Up,Endocrinology,40,16,973.95
+2024-06-05,Northside Clinic,Follow-Up,Cardiology,156,81,913.2
+2024-08-12,Riverside Clinic,Annual Physical,Orthopedics,149,80,1619.14
+2024-05-07,Riverside Clinic,Lab Work,Pediatrics,49,43,1441.82
+2024-02-06,Westgate Clinic,Follow-Up,Pediatrics,90,49,2006.21
+2024-10-12,Westgate Clinic,New Patient,Pediatrics,113,62,1807.48
+2024-05-16,Westgate Clinic,Telehealth Consult,Orthopedics,39,6,1245.65
+2024-09-22,Northside Clinic,Lab Work,Cardiology,79,14,1231.6
+2024-11-22,Northside Clinic,Lab Work,Endocrinology,73,96,1942.75
+2025-02-23,Downtown Clinic,Annual Physical,Dermatology,77,75,759.87
+2024-04-14,Downtown Clinic,Follow-Up,Pediatrics,31,8,264.75
+2024-08-31,Northside Clinic,Lab Work,Endocrinology,46,31,176.13
+2024-11-23,Northside Clinic,New Patient,Family Medicine,145,45,491.98
+2024-02-03,Riverside Clinic,Telehealth Consult,Dermatology,6,91,2115.65
+2024-10-21,Downtown Clinic,Telehealth Consult,Endocrinology,121,81,1437.02
+2024-08-27,Riverside Clinic,Telehealth Consult,Cardiology,18,40,808.35
+2024-05-30,Riverside Clinic,Lab Work,Family Medicine,128,29,1661.99
+2024-03-24,Northside Clinic,Follow-Up,Family Medicine,92,22,213.02
+2024-12-10,Northside Clinic,Annual Physical,Family Medicine,176,17,2034.6
+2024-02-01,Northside Clinic,Follow-Up,Family Medicine,142,13,242.27
+2024-10-30,Riverside Clinic,Annual Physical,Endocrinology,17,70,1965.82
+2024-02-01,Riverside Clinic,Annual Physical,Endocrinology,61,99,389.99
+2025-01-25,Westgate Clinic,Annual Physical,Orthopedics,121,119,1641.56
+2024-06-13,Riverside Clinic,Telehealth Consult,Family Medicine,108,57,1467.52
+2024-05-05,Westgate Clinic,Lab Work,Family Medicine,71,26,1191.75
+2024-08-27,Northside Clinic,Telehealth Consult,Pediatrics,158,87,437.55
+2025-06-12,Westgate Clinic,Follow-Up,Family Medicine,105,115,142.97
+2025-06-06,Riverside Clinic,Annual Physical,Endocrinology,87,18,2410.62
+2025-06-09,Northside Clinic,Lab Work,Pediatrics,106,61,2107.9
+2024-09-15,Downtown Clinic,Telehealth Consult,Cardiology,70,84,1327.25
+2024-02-09,Westgate Clinic,Telehealth Consult,Family Medicine,154,64,539.66
+2025-05-18,Westgate Clinic,Annual Physical,Endocrinology,36,31,288.92
+2024-08-28,Downtown Clinic,Follow-Up,Cardiology,49,50,1774.52
+2025-03-05,Northside Clinic,Annual Physical,Pediatrics,123,56,22.27
+2025-04-28,Riverside Clinic,Telehealth Consult,Orthopedics,106,80,2231.82
+2024-01-14,Downtown Clinic,Lab Work,Pediatrics,41,21,581.81
+2025-02-12,Downtown Clinic,Follow-Up,Endocrinology,64,87,509.12
+2024-01-11,Downtown Clinic,Telehealth Consult,Family Medicine,121,112,384.04
+2025-06-14,Riverside Clinic,Annual Physical,Pediatrics,110,27,562.91
+2024-08-21,Northside Clinic,Follow-Up,Family Medicine,97,70,2415.26
+2025-03-31,Westgate Clinic,Lab Work,Orthopedics,107,79,1691.46
+2024-10-03,Northside Clinic,Telehealth Consult,Family Medicine,116,61,1941.5
+2024-07-19,Riverside Clinic,Annual Physical,Family Medicine,34,25,1555.12
+2024-12-22,Westgate Clinic,Follow-Up,Family Medicine,36,11,443.12
+2025-06-06,Riverside Clinic,Annual Physical,Dermatology,15,19,90.19
+2025-04-02,Riverside Clinic,Telehealth Consult,Endocrinology,151,67,2043.52

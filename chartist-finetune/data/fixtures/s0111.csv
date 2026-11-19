@@ -1,241 +1,241 @@
-Grade Date,Course Code,Semester,Student Year,Final Score,Credit Hours,Attendance Rate
-2024-09-22,CHEM120,Winter,Freshman,90.63,4,51.29
-2025-04-08,CHEM120,Spring,Freshman,87.57,5,29.27
-2024-05-06,CS101,Fall,Graduate,52.2,4,91.47
-2024-05-28,ENG110,Summer,Graduate,49.69,3,86.5
-2025-03-27,CS101,Winter,Junior,85.52,3,53.32
-2024-08-18,CS101,Fall,Freshman,6.7,1,26.15
-2024-04-12,MATH201,Spring,Senior,96.11,2,10.01
-2024-12-03,CS101,Spring,Junior,60.3,5,6.94
-2024-11-14,ENG110,Winter,Graduate,87.33,1,93.91
-2024-09-09,CHEM120,Spring,Senior,56.46,4,78.99
-2024-07-07,CHEM120,Fall,Sophomore,14.35,3,95.69
-2024-09-13,ENG110,Fall,Graduate,87.3,5,66.88
-2024-05-03,CS101,Fall,Junior,6.93,6,36.75
-2024-11-03,MATH201,Winter,Freshman,26.02,5,89.88
-2024-05-07,HIST105,Summer,Senior,1.05,3,9.55
-2024-07-05,CS101,Fall,Senior,89.39,3,73.8
-2024-04-13,CHEM120,Spring,Freshman,30.22,2,20.24
-2024-02-06,BIO150,Spring,Graduate,20.15,3,9.31
-2025-05-26,BIO150,Summer,Graduate,38.46,3,43.19
-2024-09-22,BIO150,Summer,Graduate,2.38,6,21.03
-2025-05-05,ENG110,Summer,Freshman,41.55,4,68.71
-2025-03-24,CS101,Spring,Junior,10.74,4,51.83
-2025-05-17,HIST105,Fall,Junior,42.53,5,81.75
-2025-03-08,HIST105,Winter,Senior,48.74,6,61.78
-2024-08-31,MATH201,Summer,Junior,98.25,4,62.54
-2025-03-01,ENG110,Spring,Senior,61.92,2,91.92
-2024-04-23,CS101,Fall,Freshman,49.25,3,36.87
-2024-10-02,ENG110,Spring,Freshman,87.13,6,61.56
-2025-05-21,ENG110,Fall,Senior,93.18,3,99.14
-2024-04-07,BIO150,Spring,Junior,3.04,5,14.88
-2024-08-21,MATH201,Summer,Senior,14.99,1,13.55
-2024-09-10,MATH201,Fall,Freshman,38.58,4,93.69
-2024-01-14,CHEM120,Spring,Sophomore,10.98,5,43.62
-2024-12-30,MATH201,Summer,Junior,17.48,5,9.76
-2025-02-08,HIST105,Winter,Junior,61.0,1,11.73
-2024-05-29,CHEM120,Summer,Sophomore,45.86,4,68.1
-2024-11-07,BIO150,Fall,Senior,92.26,5,50.41
-2025-06-23,CHEM120,Fall,Sophomore,31.15,2,75.58
-2024-04-28,MATH201,Spring,Senior,74.48,3,67.96
-2024-11-05,MATH201,Spring,Freshman,25.94,1,94.33
-2025-05-05,HIST105,Spring,Graduate,33.96,5,61.02
-2025-02-26,HIST105,Summer,Graduate,47.81,5,68.49
-2024-12-02,BIO150,Spring,Sophomore,40.59,5,16.9
-2025-04-29,ENG110,Spring,Graduate,23.95,4,2.9
-2024-10-11,HIST105,Fall,Sophomore,3.49,5,67.9
-2024-09-05,MATH201,Fall,Freshman,30.57,6,6.22
-2024-08-18,ENG110,Summer,Sophomore,43.37,4,25.09
-2024-11-15,BIO150,Spring,Junior,52.62,6,5.05
-2024-09-13,ENG110,Winter,Freshman,6.43,3,49.2
-2024-05-02,ENG110,Winter,Junior,93.92,3,68.78
-2025-02-10,HIST105,Summer,Junior,65.05,4,56.0
-2025-02-28,CHEM120,Spring,Sophomore,56.3,5,88.6
-2025-06-04,MATH201,Summer,Junior,63.96,1,53.83
-2024-01-18,HIST105,Summer,Freshman,94.05,5,0.01
-2025-02-18,MATH201,Winter,Graduate,34.28,2,86.22
-2024-01-05,BIO150,Spring,Senior,64.57,4,12.63
-2024-06-07,MATH201,Fall,Junior,52.35,3,62.42
-2025-06-12,CHEM120,Winter,Sophomore,11.93,3,56.94
-2024-07-19,ENG110,Fall,Senior,26.44,2,1.15
-2024-02-07,CS101,Fall,Junior,84.06,5,21.87
-2024-12-25,HIST105,Summer,Senior,25.54,4,56.45
-2024-03-18,CHEM120,Summer,Freshman,40.43,5,62.68
-2025-01-05,ENG110,Winter,Senior,23.56,2,14.41
-2024-09-20,BIO150,Fall,Junior,38.89,3,47.99
-2024-07-07,ENG110,Winter,Junior,9.03,6,26.55
-2024-08-14,CS101,Winter,Senior,50.46,5,11.86
-2025-02-17,CS101,Summer,Senior,10.8,6,8.82
-2025-06-12,ENG110,Summer,Freshman,9.93,5,18.1
-2024-01-14,ENG110,Fall,Freshman,88.97,1,69.24
-2025-02-04,HIST105,Fall,Sophomore,59.7,2,88.96
-2024-02-21,BIO150,Spring,Senior,63.16,5,75.78
-2024-01-17,HIST105,Spring,Graduate,83.9,3,21.95
-2024-10-01,ENG110,Fall,Freshman,67.57,4,33.21
-2024-01-01,MATH201,Spring,Senior,58.08,3,46.23
-2025-06-20,HIST105,Spring,Graduate,87.52,1,97.62
-2025-05-04,ENG110,Spring,Senior,49.69,4,58.66
-2024-09-28,BIO150,Winter,Sophomore,42.77,3,58.87
-2024-02-12,HIST105,Summer,Graduate,30.46,5,6.08
-2024-12-06,CHEM120,Spring,Sophomore,11.14,6,50.71
-2024-05-29,ENG110,Fall,Sophomore,66.81,3,18.24
-2024-12-26,BIO150,Fall,Freshman,17.41,2,66.24
-2024-05-08,ENG110,Winter,Junior,42.95,5,62.45
-2025-05-05,CS101,Winter,Junior,40.59,5,20.23
-2024-10-14,HIST105,Summer,Graduate,31.04,4,36.76
-2025-03-08,CS101,Fall,Graduate,60.35,3,47.61
-2025-04-03,CS101,Summer,Freshman,80.2,1,82.79
-2025-05-19,CHEM120,Fall,Freshman,50.35,6,12.57
-2025-06-15,HIST105,Summer,Freshman,53.89,1,54.27
-2024-03-09,ENG110,Summer,Junior,39.1,3,88.49
-2024-09-04,CS101,Spring,Freshman,16.44,2,69.2
-2024-09-11,CS101,Spring,Freshman,97.64,3,70.34
-2024-01-28,CS101,Summer,Junior,48.18,4,91.61
-2025-01-26,MATH201,Fall,Freshman,86.92,1,43.47
-2024-07-25,HIST105,Spring,Graduate,83.46,5,70.06
-2024-09-17,MATH201,Fall,Senior,26.86,3,40.02
-2025-04-02,ENG110,Fall,Senior,46.92,3,36.45
-2025-06-11,CS101,Winter,Senior,24.62,4,83.9
-2024-11-06,MATH201,Spring,Graduate,12.8,1,58.45
-2025-06-15,MATH201,Spring,Sophomore,46.55,5,3.29
-2024-01-22,CS101,Fall,Junior,84.34,4,6.86
-2024-03-08,BIO150,Fall,Senior,52.46,3,6.09
-2024-05-29,BIO150,Winter,Freshman,96.75,3,63.71
-2025-06-02,MATH201,Summer,Freshman,12.35,4,86.5
-2024-07-15,ENG110,Winter,Freshman,87.34,4,61.7
-2025-05-28,ENG110,Winter,Senior,69.83,3,23.32
-2024-11-15,BIO150,Fall,Junior,89.79,3,6.35
-2024-04-29,MATH201,Winter,Graduate,22.43,3,7.14
-2024-10-06,CS101,Winter,Sophomore,67.66,2,12.33
-2025-01-05,BIO150,Fall,Senior,74.3,2,79.57
-2024-02-23,BIO150,Summer,Sophomore,23.06,4,81.5
-2024-09-12,HIST105,Spring,Senior,67.01,5,7.61
-2024-08-14,BIO150,Spring,Graduate,2.62,2,90.18
-2024-08-09,BIO150,Summer,Senior,44.75,3,91.17
-2024-03-15,MATH201,Summer,Junior,18.57,2,25.25
-2025-03-19,MATH201,Spring,Senior,78.16,3,91.28
-2024-04-09,HIST105,Winter,Senior,47.99,3,60.89
-2024-12-09,CHEM120,Spring,Junior,96.14,2,6.62
-2024-01-11,BIO150,Summer,Junior,29.03,5,1.45
-2025-06-12,ENG110,Spring,Senior,90.26,5,24.54
-2025-03-11,ENG110,Winter,Graduate,32.55,2,1.78
-2024-12-20,BIO150,Summer,Graduate,37.11,2,3.79
-2024-08-02,BIO150,Spring,Sophomore,99.05,4,5.93
-2024-11-13,MATH201,Summer,Freshman,75.97,2,62.49
-2025-03-18,CHEM120,Winter,Junior,26.36,1,89.54
-2024-04-24,CHEM120,Winter,Graduate,10.23,5,14.66
-2025-05-12,MATH201,Fall,Sophomore,57.43,6,15.92
-2024-04-30,MATH201,Fall,Freshman,81.87,2,71.83
-2025-02-21,HIST105,Spring,Junior,32.6,5,8.1
-2024-07-05,CS101,Summer,Senior,35.19,3,69.04
-2024-12-09,CHEM120,Winter,Senior,40.71,2,58.43
-2024-12-09,CHEM120,Summer,Senior,67.31,3,25.57
-2025-03-24,HIST105,Fall,Sophomore,84.71,2,60.07
-2025-01-28,CHEM120,Winter,Sophomore,66.99,5,32.11
-2024-02-02,ENG110,Winter,Junior,58.13,3,57.26
-2024-10-10,CS101,Spring,Sophomore,50.43,4,9.87
-2024-12-23,BIO150,Summer,Graduate,87.53,4,27.22
-2024-03-10,HIST105,Spring,Freshman,71.47,4,39.06
-2024-09-30,CHEM120,Summer,Senior,70.23,5,92.72
-2024-01-10,HIST105,Winter,Junior,87.4,2,92.27
-2024-12-01,BIO150,Summer,Senior,89.34,2,0.31
-2024-01-07,CS101,Spring,Senior,8.0,4,38.55
-2025-01-15,ENG110,Fall,Graduate,80.97,6,46.11
-2025-02-13,BIO150,Fall,Sophomore,29.29,1,66.99
-2024-01-06,BIO150,Winter,Freshman,96.27,5,98.27
-2024-07-21,ENG110,Summer,Sophomore,17.26,4,68.98
-2024-09-28,CHEM120,Winter,Sophomore,47.41,3,0.6
-2024-11-28,BIO150,Summer,Junior,76.01,3,41.35
-2025-02-01,BIO150,Summer,Senior,24.39,2,62.32
-2024-06-21,CHEM120,Summer,Senior,43.09,6,57.49
-2024-10-01,CHEM120,Winter,Graduate,69.84,3,91.91
-2024-03-21,CHEM120,Summer,Freshman,58.88,3,93.3
-2024-02-09,CHEM120,Fall,Freshman,85.13,4,44.47
-2024-09-21,MATH201,Winter,Senior,77.39,4,75.71
-2024-02-15,ENG110,Summer,Junior,45.16,6,46.96
-2025-01-12,CS101,Spring,Graduate,12.45,2,97.03
-2024-02-14,ENG110,Fall,Junior,37.16,4,28.96
-2025-01-31,CHEM120,Summer,Freshman,17.29,3,25.41
-2024-01-17,ENG110,Summer,Sophomore,39.29,6,47.09
-2025-05-14,CHEM120,Fall,Sophomore,40.44,3,93.69
-2024-06-19,CHEM120,Fall,Sophomore,10.65,6,83.37
-2025-05-07,HIST105,Summer,Graduate,84.95,4,34.12
-2024-05-09,ENG110,Fall,Junior,3.04,2,72.6
-2024-07-31,ENG110,Winter,Freshman,64.92,5,58.75
-2024-07-02,CHEM120,Winter,Junior,2.38,2,86.56
-2024-02-20,CHEM120,Winter,Senior,9.57,4,21.02
-2024-12-09,MATH201,Spring,Senior,71.12,3,92.35
-2025-03-28,ENG110,Fall,Senior,83.7,3,40.7
-2025-03-02,ENG110,Spring,Sophomore,41.15,2,93.21
-2025-03-19,CHEM120,Summer,Sophomore,99.42,5,18.25
-2024-11-18,ENG110,Winter,Freshman,29.4,4,82.06
-2024-07-01,CHEM120,Summer,Freshman,53.29,3,19.19
-2025-04-23,MATH201,Summer,Sophomore,97.15,5,77.13
-2024-12-05,MATH201,Spring,Senior,1.66,3,30.48
-2025-01-12,ENG110,Fall,Graduate,70.26,2,69.85
-2025-04-18,HIST105,Summer,Graduate,64.77,2,80.24
-2024-10-20,CHEM120,Fall,Sophomore,47.09,3,89.2
-2024-11-04,MATH201,Spring,Junior,36.47,5,51.08
-2024-08-19,BIO150,Winter,Freshman,76.57,4,36.93
-2024-10-29,CHEM120,Winter,Freshman,73.03,2,78.41
-2025-04-21,HIST105,Winter,Senior,11.9,5,88.67
-2025-01-30,MATH201,Summer,Junior,90.98,6,1.02
-2024-03-05,CS101,Winter,Junior,58.22,4,53.67
-2024-07-21,BIO150,Summer,Freshman,62.17,5,4.72
-2024-02-14,HIST105,Winter,Junior,21.92,5,91.57
-2024-10-21,CHEM120,Spring,Senior,49.04,2,64.22
-2025-03-10,CHEM120,Summer,Junior,1.84,5,67.0
-2025-01-09,HIST105,Fall,Senior,18.36,6,11.65
-2025-03-05,MATH201,Fall,Sophomore,89.94,4,88.09
-2024-01-06,ENG110,Fall,Freshman,12.03,5,42.44
-2024-12-01,CHEM120,Summer,Senior,79.05,6,41.1
-2025-03-15,BIO150,Winter,Sophomore,7.54,1,54.06
-2025-03-15,BIO150,Spring,Graduate,35.58,4,50.28
-2024-05-12,CHEM120,Winter,Sophomore,70.64,2,6.14
-2024-09-14,CHEM120,Winter,Junior,52.4,4,91.64
-2024-06-10,ENG110,Fall,Freshman,88.28,6,63.19
-2024-11-06,CS101,Spring,Sophomore,74.6,3,86.98
-2025-02-19,MATH201,Summer,Sophomore,67.38,2,0.58
-2024-12-03,HIST105,Winter,Graduate,48.79,4,17.93
-2024-09-22,BIO150,Fall,Graduate,65.96,3,83.89
-2024-01-24,CHEM120,Winter,Graduate,71.44,1,59.79
-2024-11-25,ENG110,Winter,Sophomore,96.67,5,89.25
-2024-04-07,ENG110,Fall,Junior,7.19,5,96.79
-2024-07-04,ENG110,Summer,Freshman,40.6,2,49.13
-2024-03-25,HIST105,Fall,Junior,91.47,2,30.54
-2024-02-23,CHEM120,Fall,Senior,76.02,3,73.14
-2024-02-28,CS101,Winter,Junior,38.99,4,36.47
-2024-02-29,CHEM120,Spring,Freshman,6.58,4,6.73
-2024-01-15,CHEM120,Summer,Freshman,13.48,4,56.31
-2024-04-25,HIST105,Spring,Graduate,69.39,5,2.35
-2024-07-03,HIST105,Spring,Freshman,16.91,5,60.42
-2024-06-13,CS101,Spring,Junior,91.51,1,6.86
-2024-07-21,HIST105,Winter,Senior,89.24,4,13.77
-2024-02-14,MATH201,Summer,Sophomore,49.03,4,71.42
-2024-05-11,BIO150,Winter,Junior,72.26,2,14.04
-2024-02-18,CHEM120,Winter,Sophomore,31.7,5,15.59
-2024-03-06,HIST105,Fall,Graduate,95.58,5,31.98
-2024-10-21,CS101,Winter,Graduate,49.41,2,60.78
-2024-12-15,CHEM120,Fall,Sophomore,0.59,4,79.84
-2025-02-08,BIO150,Spring,Freshman,33.29,3,56.52
-2024-03-04,CS101,Winter,Junior,82.99,4,49.97
-2024-11-11,CS101,Winter,Graduate,17.77,5,91.04
-2025-06-08,CHEM120,Winter,Junior,16.01,6,13.83
-2024-05-07,MATH201,Spring,Freshman,99.3,3,53.56
-2025-03-24,BIO150,Summer,Senior,48.64,4,99.69
-2024-08-27,ENG110,Fall,Graduate,41.7,3,67.31
-2025-02-05,MATH201,Winter,Sophomore,27.1,4,83.16
-2024-03-19,CHEM120,Summer,Freshman,42.7,5,30.79
-2024-04-04,ENG110,Summer,Senior,98.7,2,15.28
-2025-04-16,CS101,Fall,Freshman,17.62,6,9.02
-2025-06-07,ENG110,Fall,Senior,32.77,4,91.59
-2025-06-16,BIO150,Fall,Freshman,76.16,5,43.91
-2024-04-01,ENG110,Winter,Freshman,22.67,4,1.21
-2024-07-28,ENG110,Summer,Graduate,59.46,5,84.11
-2024-12-19,CS101,Spring,Graduate,53.27,6,57.46
-2024-01-19,HIST105,Fall,Junior,23.78,4,54.32
-2025-03-19,CS101,Fall,Sophomore,70.47,4,46.55
-2024-02-26,MATH201,Summer,Graduate,54.14,6,3.12
-2025-01-15,BIO150,Summer,Junior,70.83,5,73.78
-2024-11-20,BIO150,Winter,Graduate,81.07,6,46.58
-2024-07-15,ENG110,Summer,Sophomore,60.35,2,21.01
+campaign_report_date,campaign_channel_name,campaign_region_name,campaign_objective_type,campaign_spend_amount,campaign_impression_count,campaign_click_count,campaign_revenue_amount
+2025-01-11,Video,Middle East and Africa,Conversion,23754.6,4386311,117744,485550.96
+2025-05-19,Paid Social,Middle East and Africa,Conversion,34350.57,753608,219749,142887.96
+2024-11-30,Paid Social,Asia Pacific,Lead Generation,4134.64,490611,91558,234832.28
+2024-10-20,Email,Latin America,Conversion,37615.7,2743219,70162,126956.05
+2025-03-22,Affiliate,Asia Pacific,Retention,10986.77,689421,112584,303699.45
+2024-02-29,Organic Social,Middle East and Africa,Lead Generation,40476.72,199966,41455,181340.99
+2024-09-08,Paid Social,Europe,Lead Generation,42566.23,4935343,147341,316403.81
+2025-04-07,Organic Social,Middle East and Africa,Conversion,45178.12,2470966,206992,4509.05
+2025-02-02,Display,Europe,Lead Generation,9635.28,144159,238711,353250.16
+2024-07-25,Email,Middle East and Africa,Lead Generation,23752.56,894104,232045,379177.13
+2025-06-11,Affiliate,Asia Pacific,Awareness,28904.19,4879313,75332,27901.93
+2025-05-27,Display,Latin America,Awareness,17040.04,762791,20178,75064.99
+2024-12-08,Affiliate,Latin America,Awareness,12439.81,861785,242333,342141.3
+2024-07-27,Video,North America,Consideration,9156.02,2654345,13253,73805.53
+2025-05-22,Email,Middle East and Africa,Consideration,17723.73,4993647,205613,208883.68
+2024-11-09,Affiliate,Middle East and Africa,Consideration,34023.22,3056296,48675,69042.79
+2024-03-02,Video,Asia Pacific,Awareness,26994.09,1290449,7913,295906.13
+2025-05-12,Affiliate,Asia Pacific,Awareness,1829.24,1868380,102245,330560.02
+2024-01-28,Paid Social,Middle East and Africa,Retention,19189.47,1872326,32398,475338.47
+2024-01-05,Email,Latin America,Lead Generation,37550.38,4304292,222189,471213.28
+2024-07-21,Paid Social,North America,Conversion,12398.6,3648150,51081,296856.9
+2025-06-09,Paid Social,North America,Conversion,16078.7,4950682,98278,157503.18
+2025-02-27,Affiliate,North America,Awareness,41893.43,3187853,159747,474148.42
+2024-05-06,Affiliate,Asia Pacific,Awareness,47.83,527240,138174,59795.85
+2025-05-28,Display,Middle East and Africa,Consideration,28228.15,3180529,61234,454271.81
+2024-02-13,Video,Middle East and Africa,Conversion,33363.22,367713,150011,374556.5
+2025-04-13,Display,Europe,Consideration,233.98,3515549,105127,228645.99
+2025-03-29,Email,Asia Pacific,Consideration,24623.89,2366574,90981,478831.49
+2024-09-25,Paid Social,North America,Awareness,29315.82,437375,63355,459953.67
+2024-07-23,Display,Asia Pacific,Lead Generation,35680.9,3763128,127399,50612.97
+2024-01-20,Paid Search,North America,Conversion,38957.07,3169076,215790,111167.98
+2025-03-30,Paid Social,Europe,Awareness,6375.15,3276531,216022,264237.81
+2025-06-01,Paid Search,Middle East and Africa,Consideration,8916.23,1614294,21810,455520.37
+2024-07-25,Video,Europe,Lead Generation,23770.49,3824624,185358,446877.6
+2024-01-21,Video,Europe,Conversion,30255.49,1806772,53958,420316.8
+2024-02-17,Paid Search,North America,Retention,10794.39,3116666,186150,477809.66
+2025-06-14,Video,Middle East and Africa,Awareness,35958.77,4541570,43,272287.51
+2025-04-22,Organic Social,Latin America,Lead Generation,29311.9,4902309,59937,233010.73
+2024-07-10,Paid Search,Latin America,Consideration,48902.99,225753,101429,453406.35
+2025-04-10,Email,Latin America,Consideration,1092.05,4610437,161406,461247.85
+2025-06-12,Display,Europe,Awareness,43652.3,3812427,236874,84674.55
+2025-04-29,Organic Social,Europe,Consideration,35069.13,2199353,150893,48250.78
+2024-03-06,Affiliate,Middle East and Africa,Lead Generation,24868.58,23363,3519,229707.96
+2024-05-08,Display,North America,Conversion,32669.79,2164411,179552,351492.69
+2025-01-25,Affiliate,Latin America,Retention,2251.79,152202,102186,328766.25
+2024-11-13,Display,North America,Retention,25867.65,4103749,185459,40746.89
+2024-06-20,Display,Middle East and Africa,Conversion,44200.86,4812136,80094,430174.43
+2024-08-04,Email,North America,Conversion,27479.71,3013770,154667,355075.31
+2024-01-23,Paid Social,Middle East and Africa,Consideration,16425.1,2107097,572,98723.26
+2025-02-28,Video,Asia Pacific,Awareness,12494.02,4019479,189336,3844.36
+2025-04-24,Affiliate,Europe,Consideration,6073.16,4158691,189869,14052.58
+2024-08-21,Email,Middle East and Africa,Lead Generation,37718.32,2567503,865,193897.8
+2024-12-21,Email,Asia Pacific,Awareness,22179.76,4792471,62611,484282.39
+2024-07-31,Video,Europe,Consideration,29830.59,1010663,147745,129892.43
+2025-06-09,Email,Asia Pacific,Lead Generation,12133.72,2324762,19607,418027.84
+2024-11-19,Email,Middle East and Africa,Conversion,8480.95,4028380,141174,234932.78
+2025-05-25,Video,North America,Conversion,33542.02,2374400,27246,349185.1
+2024-12-19,Display,Latin America,Retention,31051.34,36057,215796,50779.37
+2025-01-29,Paid Social,Middle East and Africa,Lead Generation,19066.96,3639301,15215,79288.15
+2025-01-30,Paid Search,Asia Pacific,Lead Generation,40564.2,2827127,176633,357962.77
+2024-06-05,Video,Middle East and Africa,Lead Generation,11168.35,659381,187226,306947.25
+2024-03-01,Affiliate,Middle East and Africa,Consideration,21125.03,2610119,119292,425411.16
+2025-03-02,Organic Social,North America,Lead Generation,49712.12,4636926,160679,82385.43
+2025-03-28,Email,Middle East and Africa,Retention,37164.47,3669991,167489,496947.59
+2025-04-13,Video,Middle East and Africa,Lead Generation,48660.18,1338530,132913,483915.18
+2024-06-14,Organic Social,Latin America,Conversion,37890.3,2829620,88896,175245.41
+2025-05-12,Display,Europe,Awareness,5436.83,4961766,143890,344043.11
+2024-01-28,Display,Latin America,Conversion,19232.93,3571987,226118,282977.89
+2025-04-02,Display,Asia Pacific,Retention,34992.86,2383934,173925,201301.32
+2025-04-06,Email,North America,Conversion,33904.72,106594,5310,227145.28
+2025-04-23,Paid Search,Europe,Awareness,19014.58,4513817,17368,484348.97
+2024-05-09,Video,Middle East and Africa,Conversion,12911.53,59288,41966,278667.23
+2024-11-07,Paid Search,Asia Pacific,Consideration,3292.43,2761869,193452,188962.94
+2024-02-10,Organic Social,Asia Pacific,Awareness,5431.06,4528736,200355,93524.19
+2025-02-21,Email,Asia Pacific,Lead Generation,5030.01,910775,184325,61060.8
+2024-07-04,Email,Latin America,Conversion,40896.32,1762231,26296,369489.64
+2025-03-09,Affiliate,Latin America,Lead Generation,24871.75,513666,1682,55906.22
+2024-11-09,Email,Middle East and Africa,Retention,30841.96,3040755,31600,71105.63
+2024-07-22,Display,Europe,Conversion,12466.56,1470647,211238,92610.68
+2025-04-09,Paid Search,North America,Awareness,34669.07,1771473,53107,202833.82
+2025-05-25,Paid Social,Europe,Lead Generation,25087.29,2406310,44946,127355.24
+2024-08-06,Display,Asia Pacific,Retention,7524.08,4251596,17089,416662.96
+2024-04-26,Video,Asia Pacific,Awareness,468.68,523672,25141,114440.32
+2024-07-04,Display,Asia Pacific,Lead Generation,20006.35,976420,139057,379592.12
+2024-07-22,Paid Social,Middle East and Africa,Retention,1116.69,3943576,210315,360638.25
+2024-08-23,Display,North America,Retention,48117.48,4388531,244127,283107.52
+2025-05-01,Email,Latin America,Consideration,37797.18,667786,123460,170126.68
+2024-05-13,Email,Middle East and Africa,Lead Generation,28157.12,1858064,155384,436533.74
+2024-02-22,Email,Asia Pacific,Consideration,30475.22,1124031,214782,262795.28
+2024-01-22,Video,Middle East and Africa,Awareness,6726.83,2584699,65474,210446.48
+2024-10-14,Email,Europe,Retention,10735.43,3880741,150341,133561.81
+2025-05-22,Paid Search,Latin America,Retention,3072.17,627278,94773,168784.99
+2025-06-17,Email,Latin America,Retention,36338.06,171119,36576,380042.46
+2024-04-30,Display,Asia Pacific,Awareness,14096.22,2116515,229805,176144.87
+2025-03-09,Paid Social,Asia Pacific,Consideration,16195.63,4101186,234518,354253.11
+2024-08-02,Email,Asia Pacific,Lead Generation,21613.37,4711696,247543,78326.88
+2025-03-26,Display,Asia Pacific,Lead Generation,43551.29,2750478,10134,455137.0
+2025-05-19,Affiliate,Middle East and Africa,Conversion,8093.16,2800300,65252,499564.02
+2024-01-10,Organic Social,Middle East and Africa,Conversion,39296.08,3980306,107652,19865.48
+2024-12-21,Email,North America,Consideration,26294.8,4893792,145345,109898.18
+2024-07-16,Affiliate,Latin America,Retention,36704.38,11276,240858,265494.42
+2024-01-13,Video,North America,Consideration,12912.78,805613,44016,413570.93
+2024-03-09,Paid Social,Middle East and Africa,Retention,13364.26,3452352,37024,322453.28
+2024-05-13,Video,Europe,Awareness,27039.56,4235493,79883,59015.46
+2025-02-26,Paid Search,North America,Consideration,49132.48,3082891,237484,318960.71
+2025-03-23,Video,Latin America,Awareness,14982.37,2104994,202496,389332.37
+2024-08-25,Video,Latin America,Conversion,47317.47,3024672,23481,458155.09
+2024-09-22,Display,Europe,Lead Generation,31129.57,3158167,231529,59102.79
+2025-03-05,Organic Social,North America,Lead Generation,33953.44,613377,177295,181091.28
+2025-02-11,Video,Middle East and Africa,Conversion,15884.46,75067,181566,323185.67
+2024-04-30,Email,North America,Conversion,14538.24,593760,88655,81658.46
+2024-08-02,Affiliate,Latin America,Consideration,26414.81,3235465,243760,87254.25
+2024-08-21,Paid Social,Asia Pacific,Awareness,16681.46,1359342,68473,187129.56
+2024-09-06,Email,Europe,Retention,32548.84,4027797,47593,116782.28
+2024-07-25,Email,Middle East and Africa,Lead Generation,18670.58,871131,223996,450978.27
+2024-11-09,Video,Europe,Retention,42979.9,3240715,176964,74994.93
+2025-04-26,Email,Latin America,Awareness,13147.4,1405212,228527,434424.9
+2024-08-03,Video,Europe,Retention,28902.95,3030256,12177,397956.6
+2025-04-05,Video,Middle East and Africa,Consideration,44547.05,1699151,177627,472818.01
+2024-04-08,Paid Social,Latin America,Awareness,21058.54,1002121,156630,154588.04
+2024-08-23,Display,Asia Pacific,Lead Generation,2519.67,3689405,604,475888.51
+2024-08-08,Email,Europe,Retention,36366.02,733218,83984,105525.41
+2025-01-16,Affiliate,Latin America,Consideration,47783.3,4597767,200934,313801.18
+2024-04-16,Email,Latin America,Consideration,5537.83,4364357,160096,273479.26
+2024-02-22,Email,Asia Pacific,Lead Generation,12138.33,2151789,93030,184981.12
+2025-01-05,Organic Social,North America,Awareness,17856.36,2975450,141553,151719.45
+2024-08-24,Paid Social,Europe,Consideration,11756.1,4581831,157779,91001.84
+2024-04-24,Video,Asia Pacific,Consideration,42764.09,137239,248532,27404.7
+2024-12-23,Affiliate,North America,Retention,3253.83,448846,25292,32406.83
+2024-02-23,Email,Asia Pacific,Lead Generation,37500.87,714804,92925,333457.16
+2025-02-04,Video,Middle East and Africa,Lead Generation,37353.92,4439044,195848,39139.22
+2025-05-18,Email,Europe,Consideration,15986.63,4926811,243189,457754.33
+2024-07-08,Affiliate,Latin America,Lead Generation,47895.83,1450851,84363,491642.75
+2024-02-20,Email,Europe,Awareness,18543.56,1642910,165521,83654.63
+2024-04-26,Paid Search,Middle East and Africa,Consideration,3762.63,1390352,182956,103806.57
+2024-12-23,Paid Social,North America,Consideration,25782.0,4047102,143162,426602.93
+2024-02-12,Organic Social,Asia Pacific,Consideration,15528.39,718706,146538,446707.27
+2024-12-09,Affiliate,Europe,Lead Generation,37844.35,4729484,148390,292325.01
+2025-06-20,Organic Social,Middle East and Africa,Awareness,10645.01,2934709,35082,34281.17
+2024-12-06,Email,Asia Pacific,Awareness,32962.82,1653014,211455,247584.84
+2024-02-14,Organic Social,North America,Conversion,27990.59,4781982,66897,255558.44
+2024-07-13,Paid Search,Asia Pacific,Retention,23240.65,1325300,21365,446198.24
+2024-02-25,Paid Search,Asia Pacific,Retention,9965.13,937138,129849,243594.61
+2025-01-27,Email,Asia Pacific,Consideration,29608.46,4342177,208956,86686.36
+2024-11-16,Affiliate,Middle East and Africa,Awareness,15244.86,2536640,16254,436342.9
+2025-03-15,Email,Latin America,Lead Generation,46115.63,1199565,184885,252407.34
+2024-02-10,Display,Latin America,Awareness,42744.88,1717500,111574,151579.08
+2025-02-14,Affiliate,Asia Pacific,Consideration,16754.49,4189702,19156,86685.8
+2024-01-17,Affiliate,Middle East and Africa,Awareness,25185.38,3885943,132396,813.19
+2025-03-15,Organic Social,North America,Lead Generation,11818.68,3390757,232596,276320.33
+2025-06-03,Display,Asia Pacific,Conversion,12087.15,3269542,8528,392833.73
+2024-06-21,Email,Europe,Consideration,11702.15,2211934,124266,44516.41
+2024-03-01,Display,Asia Pacific,Awareness,32380.29,1494901,229172,401980.27
+2024-12-18,Display,Latin America,Lead Generation,23113.6,4759903,75280,13061.23
+2024-11-18,Paid Social,Europe,Retention,12976.08,2711477,110513,178705.71
+2025-06-12,Paid Social,Middle East and Africa,Lead Generation,22857.72,735532,101667,187564.49
+2025-05-29,Paid Search,Asia Pacific,Conversion,40263.56,1305948,146996,249157.63
+2024-02-03,Paid Search,Asia Pacific,Consideration,47385.03,3275261,135307,117370.64
+2024-12-02,Display,North America,Conversion,36212.74,3303843,235276,79176.18
+2024-07-09,Email,North America,Lead Generation,17765.57,430530,88282,7226.02
+2024-05-28,Affiliate,Europe,Awareness,9390.63,2175023,124533,437674.72
+2024-03-15,Email,Middle East and Africa,Consideration,27354.99,4195290,140140,241598.44
+2024-04-15,Affiliate,Middle East and Africa,Consideration,6011.91,3231010,34693,39422.88
+2025-01-21,Email,Europe,Lead Generation,34050.61,3134029,174485,178769.51
+2025-01-12,Display,Asia Pacific,Retention,42550.68,194749,181947,421786.86
+2025-02-23,Display,North America,Awareness,35743.68,1568017,191619,30618.09
+2025-04-14,Paid Search,Latin America,Conversion,12889.42,4573975,144325,331327.45
+2025-06-23,Display,Middle East and Africa,Retention,20842.13,468854,107708,336901.4
+2024-08-08,Video,North America,Conversion,11253.36,2268583,149302,358727.8
+2024-04-13,Email,North America,Retention,28536.69,4374874,144505,395266.45
+2024-08-07,Paid Search,Europe,Awareness,36652.67,1958569,110186,207004.98
+2025-04-21,Affiliate,Middle East and Africa,Retention,35978.32,2221911,162442,481731.44
+2025-04-14,Email,Asia Pacific,Consideration,13398.44,2492861,219263,408321.85
+2024-07-30,Video,North America,Lead Generation,46720.65,3012027,51510,393103.71
+2024-07-07,Affiliate,Middle East and Africa,Retention,6886.19,3114277,16519,388531.84
+2025-02-18,Video,Latin America,Awareness,10671.97,3845523,110552,2119.67
+2024-09-03,Email,Latin America,Lead Generation,20801.44,3481461,201681,271800.71
+2024-09-13,Affiliate,Asia Pacific,Conversion,8707.34,4814868,174736,366440.52
+2024-12-24,Affiliate,Middle East and Africa,Conversion,27592.71,2742074,186804,32008.21
+2024-07-27,Organic Social,North America,Lead Generation,49786.69,4040621,138060,186245.65
+2025-02-19,Organic Social,Latin America,Consideration,20011.71,3260534,100650,315836.78
+2025-03-31,Affiliate,Latin America,Consideration,30072.59,4681584,6851,190073.68
+2024-04-11,Paid Social,Europe,Awareness,23633.49,4467419,141473,35373.03
+2024-01-14,Video,Latin America,Lead Generation,18566.16,2984107,193107,192287.81
+2025-03-25,Paid Social,North America,Consideration,43547.66,3552386,58486,428517.87
+2024-07-20,Video,North America,Retention,29046.62,1446833,227682,35289.47
+2025-01-08,Affiliate,North America,Awareness,20759.46,3072448,84523,295860.51
+2024-04-08,Affiliate,Latin America,Consideration,558.42,3901558,150118,173353.12
+2024-11-13,Email,Asia Pacific,Conversion,13601.08,2697608,85900,79034.86
+2024-05-21,Affiliate,Asia Pacific,Awareness,3741.86,3293738,107137,49916.81
+2025-03-15,Video,Middle East and Africa,Awareness,21347.3,4758688,246901,336120.91
+2025-02-15,Organic Social,North America,Lead Generation,40473.06,4491950,190792,446262.35
+2024-05-20,Affiliate,North America,Retention,49738.71,1789572,215443,19030.17
+2024-12-19,Paid Social,Asia Pacific,Retention,17321.73,3931402,106989,483981.29
+2024-02-14,Display,Europe,Retention,29316.75,2281214,136162,289559.88
+2024-03-16,Email,Asia Pacific,Retention,23654.37,3865961,52776,442408.22
+2024-03-18,Paid Social,Middle East and Africa,Conversion,16589.72,4859454,206019,119271.6
+2025-02-10,Organic Social,Europe,Awareness,8426.68,4171262,169291,52842.78
+2024-02-29,Display,Middle East and Africa,Retention,30486.03,1285668,163013,165263.4
+2025-01-24,Display,Latin America,Retention,44449.99,3726282,216347,259588.44
+2025-04-03,Paid Social,Asia Pacific,Retention,24583.46,2894873,60999,264484.48
+2024-09-17,Email,North America,Conversion,29819.76,3863505,210799,783.72
+2024-07-28,Organic Social,Middle East and Africa,Conversion,6190.09,3299949,111768,338814.47
+2024-08-06,Paid Search,North America,Consideration,33938.5,1658100,185044,463389.29
+2024-04-10,Affiliate,Asia Pacific,Conversion,44525.58,1488915,3179,265243.49
+2025-06-07,Paid Social,Europe,Awareness,38241.72,378681,168977,380805.24
+2024-10-07,Video,Latin America,Consideration,895.96,2575088,60006,329398.16
+2025-04-22,Email,Asia Pacific,Awareness,2546.96,2528851,25056,483110.49
+2024-03-08,Email,Latin America,Retention,15914.49,3723175,157074,184725.35
+2024-12-17,Organic Social,Europe,Lead Generation,45964.91,458153,114368,317659.4
+2025-02-04,Email,Latin America,Consideration,43234.14,4334134,232998,12786.44
+2024-03-24,Video,Asia Pacific,Awareness,48081.49,4823791,6463,129152.55
+2024-12-09,Video,North America,Retention,23351.7,2195377,64353,234197.83
+2025-03-08,Paid Search,North America,Lead Generation,49032.1,2350223,101696,204335.51
+2025-01-22,Paid Search,Middle East and Africa,Awareness,18489.95,902586,83615,59745.97
+2024-12-23,Video,Asia Pacific,Retention,9376.28,919059,65970,92139.24
+2025-06-13,Display,Middle East and Africa,Consideration,41337.55,2488405,201028,411229.03
+2025-01-13,Video,Asia Pacific,Lead Generation,2481.63,2169321,188974,419258.96
+2024-08-19,Video,Middle East and Africa,Lead Generation,40806.86,4351958,249324,157096.9
+2024-09-26,Affiliate,Middle East and Africa,Retention,26413.6,2357173,4929,242588.06
+2024-11-03,Paid Search,Latin America,Awareness,13638.69,3068041,144873,233273.85
+2024-02-16,Video,Asia Pacific,Consideration,48646.08,4309215,158417,213288.68
+2024-10-25,Affiliate,North America,Retention,12492.12,718063,113362,372640.73
+2025-04-22,Paid Search,North America,Retention,2888.53,3726892,23556,271135.41
+2024-07-02,Organic Social,Asia Pacific,Conversion,39362.72,1363916,178180,376384.69
+2024-01-10,Paid Social,Europe,Awareness,20756.18,2301670,103210,172532.19
+2025-03-02,Video,Middle East and Africa,Conversion,36148.99,4294899,214868,415043.47
+2024-08-20,Email,North America,Consideration,49449.73,1004549,110486,293650.95
+2024-03-31,Paid Social,North America,Lead Generation,30242.66,3944219,62628,275767.64
+2024-04-16,Video,Middle East and Africa,Awareness,47184.03,1970516,211494,293219.22
+2025-03-12,Paid Search,Latin America,Awareness,2837.54,3685307,208075,255448.41
+2025-04-14,Video,Asia Pacific,Retention,29778.24,1184201,46870,273824.12
+2025-05-25,Organic Social,North America,Consideration,33643.46,1050357,223494,55445.24
+2025-04-15,Affiliate,Middle East and Africa,Consideration,29895.6,3167227,85413,486326.08
+2024-11-20,Video,Latin America,Lead Generation,33779.33,379232,197787,253147.82
+2024-02-12,Display,Asia Pacific,Lead Generation,33545.33,3497661,34953,387033.75
+2024-02-22,Paid Search,Middle East and Africa,Consideration,14528.71,4328182,108742,38282.31
+2024-03-27,Email,Middle East and Africa,Awareness,49189.64,3782805,171061,390430.13
+2024-12-21,Display,Latin America,Conversion,6083.92,3963057,143729,138345.51
+2024-06-15,Organic Social,Latin America,Awareness,11101.37,1994603,220071,438009.93

@@ -1,241 +1,241 @@
-evt_dt,plt_nm,ctry_cd,acq_ch,dau_cnt,sess_cnt,avg_sess_sec,tot_rev
-2024-06-15,web,DE,app_store_feature,604388,1539126,940.53,273006.87
-2024-02-14,web,FR,paid_social,1411760,8409681,651.62,122944.7
-2025-03-20,tablet_ios,JP,paid_social,993365,335532,508.0,414676.51
-2024-05-20,ios,GB,app_store_feature,605531,3262601,655.07,204508.15
-2024-11-27,tablet_ios,BR,organic,1131118,5357349,1199.66,375631.38
-2024-04-29,web,IN,app_store_feature,2292538,8503246,789.71,123352.16
-2025-04-18,tablet_ios,DE,app_store_feature,1504485,5183342,579.5,195726.51
-2025-02-02,web,BR,email,2498022,2429830,509.12,688770.87
-2024-10-08,web,DE,organic,257906,3417794,221.02,468935.47
-2024-09-04,android,GB,organic,1180517,7086200,178.93,49031.52
-2024-10-27,ios,CA,email,801556,4762432,920.97,209739.88
-2024-04-17,tablet_ios,US,organic,2410085,5681964,864.3,432678.13
-2024-01-26,android,JP,email,2103645,6113909,1124.68,609551.92
-2024-09-21,ios,BR,email,2289562,3661208,988.09,717132.68
-2025-05-20,tablet_android,FR,referral,2188395,5937028,73.74,259231.32
-2025-06-20,tablet_android,IN,email,888084,2310316,301.68,358854.51
-2025-04-27,ios,US,email,219031,6982621,1163.37,680492.65
-2025-01-09,android,CA,email,2305435,4895991,745.42,734011.12
-2024-10-16,tablet_ios,FR,paid_search,1404769,6913663,317.12,745838.21
-2024-09-04,web,DE,email,379184,474762,191.0,131735.46
-2025-04-27,web,DE,paid_social,685416,701752,448.16,115804.05
-2025-04-05,android,JP,app_store_feature,2383772,2210378,1014.9,445928.4
-2025-01-12,web,CA,app_store_feature,23776,6033281,89.28,405950.73
-2024-03-17,ios,DE,referral,1188023,4882128,1099.45,12692.21
-2025-02-25,tablet_android,US,app_store_feature,144065,8249593,1189.7,284413.98
-2025-05-29,ios,IN,referral,1451428,4084444,678.78,533944.59
-2025-06-04,ios,FR,organic,762613,1041144,296.75,159645.62
-2025-02-03,tablet_ios,FR,app_store_feature,1004781,3724395,639.95,95772.79
-2025-06-20,android,DE,referral,1042810,3247386,622.91,145412.73
-2024-02-28,android,GB,app_store_feature,646620,7105046,255.3,285591.67
-2024-04-09,ios,IN,referral,1924393,417621,173.62,66405.81
-2024-04-25,web,DE,app_store_feature,475573,8418685,35.43,18182.08
-2025-05-15,web,DE,app_store_feature,1990912,2023289,198.25,208133.07
-2025-03-10,tablet_android,GB,app_store_feature,1313357,4408264,409.16,767090.54
-2024-04-16,tablet_android,BR,app_store_feature,709325,2365881,880.52,437312.23
-2025-04-20,android,US,referral,1334740,2725766,819.07,185831.19
-2024-02-13,tablet_android,JP,email,703152,2174592,172.08,656423.62
-2024-11-17,ios,JP,organic,1730588,5191498,474.9,300936.78
-2024-11-11,ios,IN,organic,662106,4975332,281.7,593745.76
-2024-01-03,web,DE,email,1603341,7462671,60.54,492352.74
-2024-07-14,tablet_android,CA,paid_social,1457783,788274,525.07,588371.62
-2025-01-28,tablet_ios,CA,email,2473791,2758362,75.84,534823.6
-2024-06-26,tablet_android,FR,email,438837,2351092,907.11,89616.45
-2024-07-08,tablet_android,US,email,2103700,3398034,147.55,106816.12
-2025-04-04,android,DE,organic,727535,470553,1180.1,43741.04
-2024-04-23,tablet_ios,US,paid_social,2012708,4675601,866.03,733264.55
-2025-04-01,ios,JP,paid_search,442177,2904480,503.31,639393.9
-2024-05-14,tablet_android,JP,email,1607204,3550542,929.69,763337.77
-2024-09-26,tablet_ios,US,email,103161,1306506,912.52,758028.05
-2024-03-30,tablet_android,US,organic,709975,6199584,286.35,629110.15
-2024-04-09,tablet_ios,CA,organic,1221378,1323784,1082.97,441238.79
-2025-05-10,android,FR,paid_search,926116,3126746,215.33,465028.82
-2024-02-10,tablet_ios,IN,paid_social,2427068,8226731,467.4,522249.39
-2024-10-12,web,JP,paid_social,1119851,3978552,923.3,29627.89
-2024-11-25,android,CA,paid_search,242926,5981791,1010.59,482135.69
-2024-05-30,android,CA,organic,859541,1131831,953.04,690583.99
-2024-02-01,ios,BR,paid_social,1578254,2720875,742.27,153753.08
-2024-12-12,ios,BR,organic,984268,6684788,564.22,583977.45
-2024-08-12,tablet_android,FR,referral,1777864,987481,1178.94,204542.47
-2024-11-07,ios,JP,app_store_feature,209827,1220870,429.14,663297.04
-2024-07-06,tablet_android,DE,email,1060089,882376,692.25,138795.14
-2024-02-14,android,GB,paid_search,2214742,3969360,209.83,192091.5
-2024-06-04,android,CA,paid_social,2005182,4134035,312.41,813110.33
-2024-03-18,tablet_ios,US,email,1879456,143878,759.15,725089.3
-2025-06-11,tablet_ios,DE,email,99035,7713057,512.69,415001.3
-2024-06-11,tablet_ios,US,referral,2058242,3523170,270.02,267274.19
-2025-03-05,web,US,paid_social,1824634,6296816,450.66,561014.14
-2025-05-05,tablet_ios,JP,organic,2333304,4017421,670.79,76310.7
-2025-06-19,web,GB,paid_search,2319512,1818990,916.45,221398.8
-2024-04-16,android,JP,paid_social,563895,332278,877.58,112998.83
-2024-12-11,android,BR,paid_social,2385765,5782228,631.46,745590.77
-2025-02-17,android,DE,paid_social,2411711,111579,33.11,658659.86
-2024-05-07,tablet_android,CA,referral,304693,1703780,440.16,551978.82
-2024-06-22,ios,GB,app_store_feature,857279,908628,577.6,677470.15
-2025-06-12,ios,GB,referral,1636617,5238247,741.3,364786.3
-2025-02-20,tablet_ios,FR,referral,451220,4254157,561.03,400161.02
-2025-05-13,tablet_ios,US,organic,1825166,7172756,955.72,218920.93
-2024-02-19,android,IN,email,1833684,7998999,938.67,568531.86
-2025-05-24,ios,JP,email,1250689,5993832,367.01,356198.16
-2024-05-15,tablet_ios,US,paid_search,1443164,2920460,937.98,526611.7
-2024-10-19,tablet_ios,GB,paid_social,1499905,782438,340.83,712292.66
-2024-07-10,ios,BR,referral,2221640,2335712,898.07,486716.24
-2024-09-20,android,JP,paid_social,1226171,369384,291.63,86902.07
-2025-02-27,ios,IN,paid_social,1113203,3313412,496.85,60820.16
-2025-02-21,tablet_android,FR,email,2153247,1540392,809.09,839718.42
-2024-02-04,ios,BR,organic,2033923,5125647,406.84,209248.78
-2025-06-06,tablet_android,IN,organic,1046691,2923003,971.06,240411.7
-2024-09-05,tablet_android,JP,organic,2158465,6823812,599.76,722683.37
-2025-01-16,tablet_ios,US,organic,1242971,3627729,878.58,323893.07
-2024-05-10,android,FR,email,266686,4854826,401.65,184174.38
-2025-06-03,ios,CA,email,2167630,6116138,1171.15,421299.46
-2025-03-29,ios,FR,paid_social,1838961,6109382,1048.16,46144.9
-2024-05-08,web,CA,email,602765,7628212,914.46,622299.24
-2024-03-04,ios,US,app_store_feature,1691244,2796144,767.45,472530.03
-2024-08-05,ios,FR,paid_search,1677081,6266668,816.46,562517.87
-2025-01-06,ios,JP,email,1599831,2222562,320.16,818078.97
-2024-10-02,web,BR,organic,1667336,5757029,610.52,844633.77
-2024-05-24,tablet_ios,IN,paid_social,1311468,8392120,931.88,824190.18
-2024-04-21,tablet_ios,US,paid_social,674409,4510657,48.61,547135.72
-2024-09-02,web,GB,paid_social,1868159,1159874,644.95,635490.03
-2024-09-25,tablet_ios,IN,email,438196,3612002,1093.33,323757.74
-2024-01-14,web,US,app_store_feature,1136464,8821462,99.7,612280.54
-2024-10-08,tablet_android,CA,paid_social,345926,8354929,471.65,142409.57
-2024-10-23,ios,JP,app_store_feature,1696715,8123526,870.34,329747.94
-2024-01-12,android,FR,email,342986,8829274,668.11,737203.0
-2024-10-21,tablet_ios,US,organic,1988086,7617195,920.08,68239.69
-2024-06-05,ios,FR,email,2291380,15786,732.8,728852.93
-2024-05-19,ios,JP,paid_social,1185515,8694835,383.72,291449.49
-2025-05-05,android,IN,paid_search,931455,3310479,958.13,12385.57
-2024-05-19,ios,IN,paid_search,262177,4500797,889.06,169048.94
-2024-04-15,ios,BR,email,1499442,5431520,598.85,616812.51
-2024-11-07,tablet_android,IN,referral,2138148,4092448,217.81,452981.98
-2024-07-12,tablet_ios,GB,email,1981014,5960916,422.98,499963.8
-2024-11-22,web,CA,paid_social,1024809,754308,259.49,848517.28
-2024-05-15,tablet_android,CA,paid_social,196804,8426479,65.76,378272.31
-2025-05-19,tablet_android,JP,paid_social,76652,982385,272.07,526475.59
-2024-06-23,tablet_android,CA,organic,2465281,5046466,488.85,773304.63
-2024-06-24,web,DE,app_store_feature,1898924,8171693,151.39,520033.48
-2024-11-25,tablet_android,JP,paid_social,880489,3362198,970.86,423094.25
-2025-05-31,web,US,email,380229,1388593,164.42,506376.88
-2024-01-27,ios,US,email,110279,1076716,448.53,138136.48
-2025-04-08,android,US,app_store_feature,185425,1167398,712.04,623944.24
-2024-08-01,web,IN,email,816240,7300177,1177.29,838724.89
-2024-03-15,tablet_ios,GB,paid_social,403796,5141289,955.29,830565.74
-2024-02-02,tablet_ios,FR,referral,716325,1395013,761.91,310371.83
-2024-04-29,web,GB,organic,410111,7543775,792.08,238821.49
-2025-01-10,ios,BR,paid_search,1374372,8883054,699.13,767312.18
-2024-06-06,tablet_ios,US,app_store_feature,1395122,2489854,882.0,592487.5
-2025-02-15,tablet_ios,FR,paid_search,944263,7779933,1098.62,97669.46
-2024-12-15,tablet_android,FR,app_store_feature,2135970,7037247,1167.03,753409.81
-2024-02-19,android,DE,organic,1269657,5152603,201.7,168618.94
-2024-07-12,tablet_ios,GB,organic,57328,2872604,1002.48,814652.37
-2025-04-23,web,CA,organic,293237,8173391,520.68,747204.31
-2025-02-03,ios,US,email,2034834,716232,937.95,421574.13
-2024-12-28,tablet_android,US,paid_search,2388470,8999850,927.47,752704.13
-2024-10-31,web,US,paid_social,2099738,2316591,918.59,315993.25
-2025-03-08,android,GB,organic,354275,5485346,252.73,535941.26
-2024-03-07,tablet_android,FR,organic,118330,3880144,503.42,834382.12
-2024-08-25,android,US,organic,592995,4824092,359.25,318099.66
-2025-04-15,web,CA,paid_search,1988556,3798573,688.96,284655.99
-2024-12-15,tablet_android,FR,paid_search,821052,7763853,329.78,271081.11
-2024-09-19,tablet_android,JP,email,483318,986170,425.24,62748.1
-2024-08-12,web,CA,email,190913,5349068,822.62,136124.89
-2024-05-12,tablet_ios,CA,paid_search,931293,7187392,663.61,109000.68
-2024-06-20,ios,BR,app_store_feature,248006,3615506,843.45,444795.84
-2024-02-27,ios,GB,paid_social,1938057,6354012,1103.43,516885.88
-2024-01-02,ios,BR,app_store_feature,297986,6491379,381.96,753745.46
-2024-02-29,tablet_ios,DE,paid_search,1011612,7282606,814.12,18072.87
-2025-01-20,tablet_android,JP,app_store_feature,1327233,172787,685.76,24306.23
-2024-09-16,android,US,app_store_feature,2400565,3435432,213.85,371061.3
-2025-01-28,web,JP,app_store_feature,125921,8664769,862.74,59794.22
-2025-04-23,tablet_ios,DE,referral,714871,5652870,1076.87,365452.07
-2024-10-14,ios,GB,app_store_feature,14744,7100156,524.16,415653.31
-2024-08-06,android,BR,paid_search,2111335,7713959,790.78,62849.21
-2025-01-30,tablet_android,DE,paid_social,1648589,4955428,608.81,527304.35
-2024-07-30,web,BR,referral,915444,8353099,834.49,443684.74
-2024-02-15,web,JP,referral,2127597,8943451,1024.01,657926.42
-2025-01-15,web,CA,paid_social,2117324,3177190,254.36,827089.13
-2024-03-15,android,IN,paid_social,704896,1860684,198.52,161267.8
-2025-06-23,tablet_android,DE,organic,1818983,482707,1168.96,675932.02
-2025-04-11,android,GB,referral,2290768,852683,379.83,711783.19
-2024-01-24,android,DE,referral,684149,2532822,911.97,594490.83
-2024-04-02,tablet_android,GB,organic,1865617,4546838,630.48,175969.08
-2024-09-02,android,CA,organic,134052,3938076,77.01,291962.55
-2024-07-03,tablet_ios,GB,app_store_feature,2065195,3124545,307.97,499674.99
-2024-10-30,web,US,paid_social,499739,5756144,181.21,164309.83
-2024-06-06,tablet_ios,BR,organic,975674,8886318,434.58,747214.88
-2024-06-21,tablet_android,US,app_store_feature,2354125,281072,288.9,145979.65
-2024-02-01,tablet_ios,US,organic,1402579,1827591,739.49,133181.75
-2024-10-27,android,CA,app_store_feature,2082139,8132487,450.76,386553.3
-2024-05-25,tablet_android,FR,email,428425,809700,648.13,604210.32
-2024-11-15,web,FR,app_store_feature,730498,6027836,1035.2,605687.2
-2025-05-10,ios,FR,paid_social,285148,5321890,854.65,98115.89
-2024-08-29,tablet_android,CA,paid_search,867341,5203217,631.19,307007.55
-2024-03-27,web,GB,paid_social,1251786,8461108,223.84,370254.12
-2024-07-05,tablet_ios,BR,email,345323,1749502,668.19,786830.9
-2025-04-02,ios,DE,referral,1248011,6027264,408.8,425617.5
-2024-04-25,android,JP,referral,1886010,388317,522.0,603542.11
-2024-04-16,tablet_android,US,paid_social,1025789,7726106,294.07,426485.37
-2025-04-17,android,IN,paid_social,492579,7068753,95.29,91478.56
-2025-06-04,ios,CA,referral,2310460,8421242,525.77,385028.12
-2024-08-27,tablet_android,FR,referral,927555,998564,984.85,248877.36
-2024-12-03,ios,IN,referral,1092136,4284451,195.41,80740.53
-2024-08-17,web,BR,paid_search,678985,4875587,1027.5,388673.42
-2024-10-26,ios,FR,organic,896505,4458925,459.18,552406.02
-2024-04-17,web,US,email,799217,3532693,231.46,266.22
-2024-06-04,tablet_android,CA,email,262253,1933586,685.37,817075.2
-2025-05-05,tablet_ios,FR,organic,943809,5981914,638.13,671926.48
-2024-08-14,android,GB,paid_social,1287619,1757473,105.76,236058.2
-2024-10-07,web,FR,paid_social,636729,5556196,225.22,455837.9
-2024-03-25,web,US,email,1154449,8052364,410.5,156839.16
-2024-08-12,web,FR,email,664968,8368136,463.31,502736.18
-2025-03-07,web,GB,organic,1849903,448285,937.71,329270.52
-2024-01-24,tablet_ios,DE,organic,1872960,7554571,571.77,25097.78
-2024-03-19,ios,GB,app_store_feature,1989245,6761041,447.38,735626.92
-2024-03-30,web,CA,organic,1484068,1235997,316.57,311846.15
-2024-01-30,web,GB,organic,1845673,4811097,818.86,805863.79
-2024-12-01,ios,US,paid_search,1394469,7165893,733.66,408818.1
-2025-05-29,android,CA,organic,2095426,8911958,602.14,635855.89
-2024-02-15,ios,IN,paid_social,1357285,3188100,1193.84,638178.13
-2024-05-11,tablet_android,CA,email,1412473,353966,467.37,385147.21
-2025-06-11,tablet_android,BR,email,1348298,7094832,472.03,211509.18
-2025-05-16,web,DE,referral,1671015,6841763,506.62,242053.98
-2024-02-09,tablet_ios,US,paid_social,109289,4411736,541.12,426997.11
-2024-09-26,android,DE,organic,1312983,412109,726.49,335881.83
-2025-04-19,ios,FR,email,163362,8535173,693.09,134781.28
-2024-07-24,tablet_ios,DE,email,2371045,2624886,1121.06,85518.72
-2024-08-29,android,CA,referral,1996441,912452,899.81,606721.34
-2025-01-03,ios,GB,email,1287124,3078815,426.65,96357.55
-2024-05-18,tablet_ios,DE,referral,467669,3300217,972.96,232514.39
-2025-06-16,tablet_ios,US,paid_search,21891,5587398,151.49,484899.92
-2025-05-14,tablet_android,DE,email,1289675,3450348,1183.84,231595.5
-2024-01-15,ios,DE,paid_social,1802615,5983905,604.66,629790.1
-2024-12-09,web,CA,organic,728968,6531365,476.62,798269.6
-2024-08-02,android,CA,app_store_feature,1472051,8423764,1123.95,621228.12
-2024-09-06,ios,DE,paid_social,1682377,1605039,558.53,551602.18
-2025-01-13,android,US,email,132717,1034401,1016.65,693541.79
-2024-10-05,android,DE,email,2161418,3724098,630.64,15072.23
-2025-06-08,web,FR,organic,739415,7627028,187.05,799053.46
-2024-03-08,android,CA,organic,197058,3264358,569.21,193340.47
-2024-02-16,ios,CA,paid_search,1231651,6896143,403.67,78855.62
-2024-04-23,ios,US,organic,1122156,1226814,877.72,462943.23
-2025-02-03,tablet_ios,DE,app_store_feature,1770569,924966,976.33,120518.44
-2024-03-13,web,US,email,758319,6638110,617.35,556703.74
-2024-11-18,android,CA,paid_social,1245810,5247401,652.06,259711.31
-2024-05-24,android,BR,email,1806470,8942053,1153.68,211985.49
-2025-05-10,tablet_android,IN,email,1640969,3014157,864.63,462946.16
-2024-05-01,tablet_ios,GB,paid_social,1498726,7968354,1159.04,39607.55
-2024-04-16,web,GB,app_store_feature,1642181,2534707,934.99,280228.27
-2024-12-13,tablet_ios,JP,referral,1543740,5039502,722.56,702704.85
-2024-07-26,web,BR,organic,24629,4954804,214.04,823682.2
-2024-01-18,web,IN,email,361451,335326,514.19,822717.58
-2024-09-13,ios,IN,referral,611264,2908572,150.74,696831.66
-2025-02-20,android,US,paid_social,2336719,7167939,535.37,194791.81
-2024-05-14,tablet_ios,IN,email,1382503,1416905,485.37,669249.21
-2024-02-25,android,DE,referral,717898,7733197,618.26,585130.51
-2024-10-04,ios,CA,email,2309368,1714535,148.17,177547.7
-2024-02-01,android,JP,app_store_feature,2296186,5128686,593.78,792165.2
-2024-01-31,web,IN,organic,1064166,3243329,583.93,336742.42
-2024-10-16,android,IN,organic,677517,5336170,47.47,137096.67
+attendanceDate,schoolName,gradeLevel,attendanceStatus,enrolledStudents,presentStudents,tardyCount
+2024-10-01,Oakwood Academy,Kindergarten,Excused,943,437,204
+2024-02-03,St. Mary's Elementary,Grade 3,Absent,212,453,177
+2024-11-22,Maple Grove School,Grade 5,Excused,384,1315,7
+2024-04-23,Maple Grove School,Kindergarten,Suspended,724,1144,101
+2024-08-15,Riverside Primary,Kindergarten,Absent,1330,404,80
+2024-06-10,Riverside Primary,Grade 4,Absent,943,807,63
+2025-05-15,Maple Grove School,Grade 3,Tardy,1050,1313,58
+2025-05-06,St. Mary's Elementary,Grade 1,Tardy,577,908,206
+2025-01-11,St. Mary's Elementary,Grade 2,Absent,763,1334,81
+2024-06-19,St. Mary's Elementary,Grade 6,Present,451,911,237
+2024-07-30,St. Mary's Elementary,Grade 1,Excused,693,1089,8
+2024-11-12,St. Mary's Elementary,Grade 4,Present,977,362,164
+2025-03-25,Oakwood Academy,Grade 4,Suspended,1119,1326,235
+2025-06-02,St. Mary's Elementary,Grade 1,Excused,1351,749,89
+2024-04-26,Maple Grove School,Grade 5,Absent,1124,507,196
+2025-03-15,Riverside Primary,Grade 5,Tardy,760,303,192
+2024-12-12,St. Mary's Elementary,Grade 3,Present,599,313,73
+2024-05-24,Maple Grove School,Grade 3,Suspended,336,134,217
+2024-04-14,Oakwood Academy,Kindergarten,Excused,220,542,75
+2024-01-26,Riverside Primary,Grade 6,Excused,837,1259,18
+2024-06-12,Riverside Primary,Grade 5,Suspended,485,777,31
+2025-05-10,Hillcrest High,Kindergarten,Absent,788,528,126
+2024-09-06,Hillcrest High,Grade 1,Present,1102,94,219
+2024-04-06,Riverside Primary,Grade 5,Present,811,722,125
+2024-08-29,St. Mary's Elementary,Grade 6,Present,225,1324,49
+2025-05-27,Maple Grove School,Grade 2,Suspended,463,314,73
+2025-01-23,Oakwood Academy,Grade 2,Excused,1298,249,198
+2024-08-19,Riverside Primary,Grade 1,Excused,65,429,108
+2024-02-21,Maple Grove School,Grade 1,Excused,70,174,126
+2025-03-10,Oakwood Academy,Grade 2,Suspended,1156,1342,140
+2024-02-26,St. Mary's Elementary,Grade 2,Present,591,1298,183
+2024-06-18,Hillcrest High,Grade 1,Tardy,1355,225,39
+2024-08-30,Oakwood Academy,Grade 2,Suspended,1279,159,28
+2024-11-12,Hillcrest High,Grade 6,Excused,222,781,6
+2025-04-04,Hillcrest High,Grade 3,Present,1164,1183,216
+2024-08-15,Maple Grove School,Grade 3,Tardy,1257,1342,139
+2025-05-17,Hillcrest High,Grade 2,Excused,938,1053,20
+2024-07-15,Riverside Primary,Grade 2,Excused,910,1226,112
+2025-06-17,Riverside Primary,Grade 3,Absent,797,85,0
+2025-04-17,Hillcrest High,Kindergarten,Present,803,1045,57
+2024-05-31,St. Mary's Elementary,Grade 1,Suspended,700,396,234
+2024-02-18,Maple Grove School,Grade 6,Present,530,1253,77
+2024-08-11,Oakwood Academy,Grade 5,Present,1024,17,51
+2024-11-21,Oakwood Academy,Grade 6,Absent,711,854,245
+2024-02-24,Hillcrest High,Grade 4,Absent,938,1312,51
+2025-03-15,Hillcrest High,Grade 1,Present,213,847,37
+2024-10-25,St. Mary's Elementary,Kindergarten,Excused,808,1118,225
+2024-03-28,Riverside Primary,Grade 1,Suspended,252,783,78
+2024-12-10,Maple Grove School,Grade 4,Suspended,379,432,228
+2025-05-31,Maple Grove School,Grade 6,Suspended,951,852,209
+2024-02-22,St. Mary's Elementary,Grade 2,Present,259,461,155
+2025-01-21,Riverside Primary,Grade 3,Excused,554,1270,202
+2025-05-02,Oakwood Academy,Grade 5,Tardy,893,815,111
+2025-03-12,Oakwood Academy,Grade 4,Present,35,610,81
+2024-04-12,Hillcrest High,Kindergarten,Absent,1342,892,133
+2024-05-02,Maple Grove School,Grade 6,Tardy,655,826,98
+2025-04-04,Hillcrest High,Grade 4,Suspended,978,408,144
+2024-10-14,Maple Grove School,Kindergarten,Present,1108,497,25
+2024-01-05,Oakwood Academy,Grade 2,Tardy,1335,390,17
+2024-10-26,Riverside Primary,Kindergarten,Suspended,976,375,126
+2024-04-09,Oakwood Academy,Grade 2,Suspended,554,528,184
+2024-05-31,Oakwood Academy,Kindergarten,Present,100,805,79
+2024-04-28,Riverside Primary,Grade 4,Suspended,487,718,189
+2024-03-12,Riverside Primary,Grade 2,Tardy,837,161,128
+2024-05-25,Oakwood Academy,Grade 6,Present,643,912,82
+2024-10-25,Hillcrest High,Grade 3,Excused,707,412,221
+2025-04-16,Riverside Primary,Grade 6,Tardy,620,351,161
+2025-02-23,Hillcrest High,Grade 4,Present,1075,691,240
+2024-07-22,Hillcrest High,Kindergarten,Absent,404,826,187
+2025-03-21,Maple Grove School,Grade 3,Suspended,799,1219,41
+2024-11-02,St. Mary's Elementary,Grade 2,Absent,389,38,48
+2024-05-02,Riverside Primary,Grade 5,Excused,1332,1399,164
+2024-02-09,Oakwood Academy,Grade 6,Excused,517,219,18
+2025-01-08,Riverside Primary,Grade 2,Present,1224,690,115
+2024-05-20,Oakwood Academy,Grade 3,Tardy,418,887,173
+2024-09-10,Hillcrest High,Grade 4,Suspended,1327,13,186
+2025-02-09,St. Mary's Elementary,Grade 4,Tardy,309,630,2
+2025-06-08,Maple Grove School,Grade 5,Excused,568,202,20
+2024-05-23,Hillcrest High,Grade 2,Suspended,247,63,40
+2024-08-30,Oakwood Academy,Kindergarten,Excused,197,526,59
+2024-12-25,Riverside Primary,Grade 3,Absent,472,518,150
+2025-04-17,Maple Grove School,Grade 2,Suspended,915,4,69
+2024-07-17,Maple Grove School,Kindergarten,Suspended,122,877,46
+2024-10-20,Oakwood Academy,Kindergarten,Excused,258,1008,174
+2024-08-21,Riverside Primary,Kindergarten,Suspended,347,1208,200
+2024-11-07,Maple Grove School,Grade 1,Tardy,105,97,113
+2024-01-20,St. Mary's Elementary,Grade 1,Absent,134,1272,19
+2024-04-20,Riverside Primary,Grade 5,Tardy,662,994,121
+2025-06-22,Oakwood Academy,Grade 4,Present,839,382,237
+2025-04-04,Hillcrest High,Grade 6,Present,349,495,158
+2024-10-01,Riverside Primary,Grade 5,Absent,672,4,27
+2024-07-26,Maple Grove School,Grade 3,Present,1313,844,21
+2025-05-20,Riverside Primary,Grade 2,Tardy,1015,932,175
+2024-11-22,Riverside Primary,Grade 1,Excused,151,794,56
+2024-06-13,Oakwood Academy,Grade 6,Absent,134,960,70
+2024-05-16,Riverside Primary,Kindergarten,Present,644,1359,16
+2024-10-15,Maple Grove School,Grade 1,Suspended,230,630,177
+2025-01-28,Maple Grove School,Grade 1,Present,1219,960,103
+2025-03-05,Hillcrest High,Kindergarten,Present,238,1095,42
+2024-10-23,Riverside Primary,Grade 1,Present,92,1253,174
+2025-02-12,Riverside Primary,Grade 4,Absent,1185,611,77
+2024-12-12,St. Mary's Elementary,Grade 5,Suspended,21,644,214
+2024-02-25,Hillcrest High,Grade 2,Suspended,1022,1230,153
+2024-10-24,Hillcrest High,Grade 6,Suspended,88,171,76
+2025-02-15,Oakwood Academy,Grade 2,Tardy,154,1200,3
+2024-01-27,Riverside Primary,Grade 2,Tardy,565,695,2
+2025-06-22,Hillcrest High,Grade 5,Absent,36,695,206
+2024-08-05,Riverside Primary,Grade 2,Suspended,1040,196,241
+2024-10-31,Maple Grove School,Kindergarten,Excused,1102,152,215
+2024-05-29,Maple Grove School,Grade 3,Tardy,828,1168,145
+2024-08-27,St. Mary's Elementary,Grade 4,Excused,271,988,107
+2024-08-01,Oakwood Academy,Grade 1,Suspended,198,563,56
+2024-06-11,Hillcrest High,Grade 6,Present,813,389,205
+2024-11-11,Oakwood Academy,Grade 5,Tardy,1376,842,56
+2024-10-10,Maple Grove School,Grade 6,Excused,543,1172,108
+2024-07-19,Maple Grove School,Grade 6,Suspended,325,688,16
+2024-01-21,Oakwood Academy,Kindergarten,Tardy,635,1138,235
+2024-04-22,Maple Grove School,Grade 5,Excused,601,233,175
+2024-09-13,Maple Grove School,Grade 2,Tardy,651,761,236
+2025-02-02,St. Mary's Elementary,Grade 2,Excused,70,718,145
+2024-12-01,Hillcrest High,Grade 1,Absent,1276,836,171
+2025-05-09,St. Mary's Elementary,Kindergarten,Absent,560,109,18
+2024-08-10,Riverside Primary,Grade 2,Present,1168,1211,94
+2024-07-28,Maple Grove School,Grade 6,Suspended,972,442,40
+2024-07-01,Oakwood Academy,Kindergarten,Absent,73,719,74
+2025-04-29,St. Mary's Elementary,Grade 1,Excused,691,31,42
+2025-03-25,St. Mary's Elementary,Grade 1,Suspended,1278,1353,91
+2025-03-30,Hillcrest High,Grade 1,Absent,438,294,55
+2024-04-20,St. Mary's Elementary,Kindergarten,Present,673,1197,248
+2024-01-03,St. Mary's Elementary,Kindergarten,Present,37,24,87
+2024-07-14,Riverside Primary,Grade 6,Absent,1236,722,133
+2024-02-14,Maple Grove School,Grade 6,Absent,292,790,179
+2024-04-27,Maple Grove School,Grade 6,Absent,152,1147,213
+2024-12-14,Riverside Primary,Kindergarten,Suspended,816,521,129
+2024-03-26,Riverside Primary,Grade 3,Tardy,1065,1270,206
+2024-04-19,Oakwood Academy,Grade 4,Absent,1077,847,63
+2025-03-02,Oakwood Academy,Grade 1,Tardy,781,128,30
+2024-07-15,Oakwood Academy,Grade 5,Absent,919,720,215
+2024-03-28,Maple Grove School,Grade 1,Excused,185,416,62
+2025-05-15,St. Mary's Elementary,Kindergarten,Absent,1217,579,243
+2025-02-18,Hillcrest High,Grade 4,Suspended,393,1109,22
+2024-04-30,Hillcrest High,Grade 4,Suspended,376,279,122
+2025-01-19,Maple Grove School,Grade 3,Present,88,66,7
+2024-08-15,Maple Grove School,Grade 5,Absent,314,171,189
+2024-08-08,Riverside Primary,Grade 4,Absent,666,565,125
+2024-06-29,St. Mary's Elementary,Kindergarten,Absent,1021,783,20
+2025-02-10,Oakwood Academy,Grade 1,Excused,118,55,95
+2024-12-29,Maple Grove School,Kindergarten,Tardy,656,675,3
+2024-09-21,Hillcrest High,Grade 1,Excused,534,611,236
+2024-01-11,Oakwood Academy,Kindergarten,Tardy,811,552,138
+2025-01-03,St. Mary's Elementary,Grade 3,Present,1277,544,179
+2024-05-27,Riverside Primary,Grade 4,Absent,781,761,145
+2025-06-15,Oakwood Academy,Grade 6,Present,18,593,233
+2024-09-25,Oakwood Academy,Grade 6,Present,857,197,175
+2024-06-11,Hillcrest High,Grade 4,Present,419,1039,177
+2024-11-13,Oakwood Academy,Kindergarten,Suspended,1003,1051,108
+2024-02-10,Oakwood Academy,Grade 3,Suspended,164,1203,46
+2024-05-28,Maple Grove School,Grade 1,Suspended,515,511,32
+2025-03-06,Oakwood Academy,Kindergarten,Tardy,413,723,22
+2025-04-22,St. Mary's Elementary,Grade 6,Tardy,925,301,33
+2024-09-24,Hillcrest High,Grade 3,Absent,196,900,138
+2024-09-12,Maple Grove School,Grade 2,Present,851,1089,151
+2024-08-02,St. Mary's Elementary,Grade 3,Excused,772,566,171
+2025-04-27,Oakwood Academy,Kindergarten,Absent,471,918,223
+2024-06-04,St. Mary's Elementary,Grade 4,Tardy,162,921,142
+2024-01-28,Hillcrest High,Grade 5,Tardy,528,606,51
+2025-01-20,Hillcrest High,Grade 1,Suspended,516,1395,209
+2024-09-15,St. Mary's Elementary,Grade 1,Tardy,1220,511,145
+2024-02-17,Maple Grove School,Grade 1,Present,328,227,36
+2024-08-24,Oakwood Academy,Grade 5,Present,573,388,179
+2025-03-27,Hillcrest High,Grade 1,Suspended,48,602,104
+2025-06-14,St. Mary's Elementary,Grade 6,Absent,396,161,125
+2024-12-25,Maple Grove School,Grade 3,Absent,1322,167,106
+2025-05-18,Maple Grove School,Grade 5,Present,113,349,47
+2024-06-08,St. Mary's Elementary,Grade 2,Present,331,1273,58
+2024-11-30,St. Mary's Elementary,Grade 2,Suspended,24,525,43
+2024-10-03,Oakwood Academy,Grade 1,Present,521,662,221
+2024-09-29,Hillcrest High,Grade 6,Suspended,1030,844,245
+2025-03-23,Riverside Primary,Kindergarten,Suspended,894,698,97
+2024-05-19,St. Mary's Elementary,Grade 4,Tardy,710,1052,132
+2025-02-24,Riverside Primary,Grade 3,Excused,648,378,101
+2025-03-07,Oakwood Academy,Grade 6,Excused,1318,1012,243
+2024-08-18,Hillcrest High,Grade 6,Excused,1072,521,172
+2024-10-27,Maple Grove School,Grade 5,Absent,744,361,48
+2025-01-20,Maple Grove School,Grade 4,Absent,794,1076,184
+2025-01-05,Riverside Primary,Kindergarten,Excused,18,160,101
+2025-03-05,Riverside Primary,Grade 4,Excused,550,846,48
+2024-07-18,St. Mary's Elementary,Grade 6,Tardy,934,227,145
+2024-10-28,Riverside Primary,Grade 4,Suspended,979,982,128
+2024-02-27,Riverside Primary,Grade 3,Present,414,411,111
+2025-02-24,Riverside Primary,Kindergarten,Present,571,115,248
+2024-12-07,Riverside Primary,Grade 4,Excused,109,518,79
+2025-04-27,Oakwood Academy,Grade 1,Tardy,77,755,91
+2025-06-20,Riverside Primary,Grade 2,Tardy,1231,663,85
+2024-12-28,Hillcrest High,Grade 5,Tardy,814,651,118
+2025-05-25,Hillcrest High,Grade 5,Present,556,69,10
+2024-02-01,St. Mary's Elementary,Kindergarten,Tardy,911,1058,196
+2024-06-11,St. Mary's Elementary,Grade 2,Tardy,277,620,83
+2024-10-16,St. Mary's Elementary,Grade 1,Absent,564,140,33
+2024-02-07,St. Mary's Elementary,Grade 5,Tardy,1186,1216,82
+2024-12-24,Maple Grove School,Kindergarten,Absent,1208,1206,5
+2024-05-07,Maple Grove School,Grade 4,Present,883,147,83
+2025-05-08,Oakwood Academy,Grade 5,Suspended,91,520,220
+2024-05-10,Maple Grove School,Grade 1,Absent,186,847,119
+2024-06-30,Maple Grove School,Grade 4,Absent,1400,627,98
+2024-02-17,Hillcrest High,Grade 1,Excused,1207,1241,58
+2025-01-26,Maple Grove School,Grade 4,Tardy,929,167,12
+2025-04-30,Riverside Primary,Kindergarten,Excused,1281,771,160
+2024-06-01,Hillcrest High,Grade 2,Suspended,300,584,242
+2025-03-20,Riverside Primary,Grade 3,Absent,583,948,225
+2024-01-26,Oakwood Academy,Grade 5,Tardy,892,473,184
+2025-01-28,Hillcrest High,Grade 5,Absent,1303,912,178
+2025-06-16,Oakwood Academy,Kindergarten,Excused,908,1060,107
+2024-10-25,Oakwood Academy,Grade 3,Present,603,814,15
+2024-04-19,Hillcrest High,Grade 3,Tardy,986,1061,152
+2025-02-21,Maple Grove School,Grade 3,Tardy,24,412,114
+2024-08-23,St. Mary's Elementary,Grade 2,Excused,1389,966,134
+2025-04-09,Riverside Primary,Grade 1,Present,994,500,125
+2024-12-04,Hillcrest High,Grade 1,Suspended,92,405,72
+2025-02-13,Hillcrest High,Grade 6,Absent,224,897,84
+2025-01-16,Riverside Primary,Grade 3,Suspended,444,256,247
+2025-03-17,St. Mary's Elementary,Grade 1,Present,100,1295,40
+2024-05-09,Riverside Primary,Grade 2,Present,330,952,17
+2024-08-28,Hillcrest High,Grade 3,Tardy,1103,429,99
+2024-06-30,St. Mary's Elementary,Grade 5,Excused,238,1025,168
+2025-01-11,Maple Grove School,Grade 6,Absent,940,1,204
+2024-10-06,Hillcrest High,Grade 4,Excused,867,1167,100
+2024-08-15,Riverside Primary,Grade 5,Excused,1387,522,106
+2024-05-31,St. Mary's Elementary,Grade 1,Present,1147,1084,211
+2024-08-04,Maple Grove School,Kindergarten,Present,209,371,92
+2024-05-31,Riverside Primary,Grade 2,Suspended,975,539,85
+2024-12-07,St. Mary's Elementary,Grade 6,Present,193,1039,149
+2025-02-01,Maple Grove School,Grade 5,Absent,370,663,228
+2024-08-24,Riverside Primary,Grade 3,Tardy,217,672,103
+2025-01-08,St. Mary's Elementary,Grade 3,Tardy,897,549,116
+2024-05-05,St. Mary's Elementary,Grade 4,Tardy,1233,44,249
+2025-04-19,Oakwood Academy,Grade 6,Present,1173,228,114
+2024-09-20,St. Mary's Elementary,Grade 1,Present,1338,290,4
+2024-06-14,Hillcrest High,Grade 3,Present,1262,72,94
+2024-03-02,Hillcrest High,Grade 5,Excused,482,532,109

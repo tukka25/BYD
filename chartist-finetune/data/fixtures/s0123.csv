@@ -1,241 +1,241 @@
-Stay Date,Property Name,Room Type,Market Segment,Available Rooms,Rooms Sold,Occupancy Rate,Average Daily Rate,Total Revenue
-2024-01-23,Harbor View Hotel,Family Room,Leisure,274,331,81.65,475.69,352662.2
-2024-07-14,Airport Inn,Standard Double,Leisure,398,396,93.27,632.56,375848.62
-2025-04-04,Downtown Suites,Standard King,Leisure,138,111,68.16,361.46,175818.86
-2024-11-16,Harbor View Hotel,Standard King,Group,271,240,57.75,882.85,21211.72
-2024-01-26,Mountain Lodge,Executive Suite,Group,302,150,50.55,562.53,357787.36
-2024-07-30,Lakeside Resort,Executive Suite,Leisure,215,324,10.08,396.67,58631.79
-2024-10-07,Harbor View Hotel,Executive Suite,Government,118,212,97.28,787.95,336643.08
-2024-12-02,Mountain Lodge,Standard Double,Government,294,450,16.97,316.49,14480.33
-2025-05-02,Airport Inn,Executive Suite,Government,353,123,80.56,850.12,83833.52
-2024-12-20,Harbor View Hotel,Standard Double,Direct Online,301,369,34.63,589.69,390062.27
-2024-11-17,Lakeside Resort,Standard King,Government,238,371,28.89,710.62,356.01
-2024-01-08,Downtown Suites,Family Room,Corporate,343,43,53.02,826.06,149032.78
-2024-09-15,Downtown Suites,Deluxe Suite,Wholesale,90,24,36.73,738.38,161922.06
-2025-02-23,Mountain Lodge,Executive Suite,Leisure,331,402,98.16,337.16,147480.68
-2024-06-14,Lakeside Resort,Standard Double,Government,395,252,95.72,494.61,308752.03
-2025-06-21,Downtown Suites,Executive Suite,Wholesale,13,284,94.26,455.22,4248.22
-2024-01-05,Lakeside Resort,Standard King,Wholesale,13,418,35.81,316.45,19762.28
-2024-10-02,Downtown Suites,Standard Double,Leisure,209,107,84.78,940.29,208743.64
-2024-03-28,Lakeside Resort,Family Room,Leisure,221,406,0.93,701.09,292877.18
-2024-03-01,Harbor View Hotel,Standard King,Corporate,96,397,65.42,356.36,90076.89
-2024-05-16,Lakeside Resort,Standard King,Leisure,50,157,27.34,693.33,285456.19
-2025-04-27,Lakeside Resort,Family Room,Group,62,231,61.24,259.34,28207.28
-2024-02-01,Airport Inn,Standard Double,Government,352,45,4.42,36.52,182836.01
-2024-12-04,Airport Inn,Standard King,Group,151,331,76.26,431.28,115675.43
-2024-01-21,Downtown Suites,Family Room,Group,184,55,87.83,711.3,116326.69
-2024-07-20,Downtown Suites,Standard King,Wholesale,177,205,53.87,298.89,146054.91
-2025-02-15,Mountain Lodge,Standard Double,Direct Online,368,191,97.16,373.15,106003.67
-2025-01-23,Airport Inn,Standard King,Wholesale,75,186,76.05,649.91,152449.6
-2024-05-06,Harbor View Hotel,Deluxe Suite,Government,0,33,51.3,52.43,71144.73
-2025-05-19,Downtown Suites,Executive Suite,Wholesale,238,170,49.9,550.39,46644.13
-2024-06-11,Downtown Suites,Deluxe Suite,Corporate,349,214,91.04,556.22,98278.69
-2024-11-02,Airport Inn,Executive Suite,Wholesale,315,26,60.7,371.11,162288.82
-2025-03-23,Downtown Suites,Standard Double,Group,188,134,64.86,38.1,318274.18
-2024-01-11,Lakeside Resort,Family Room,Wholesale,334,341,99.78,829.37,348855.43
-2024-06-30,Lakeside Resort,Deluxe Suite,Wholesale,385,414,7.03,855.38,241227.36
-2024-03-17,Downtown Suites,Executive Suite,Group,446,0,43.34,227.85,199050.37
-2024-12-17,Airport Inn,Standard Double,Direct Online,317,380,70.95,304.42,114880.56
-2025-03-02,Lakeside Resort,Family Room,Leisure,54,413,39.06,555.26,158865.83
-2025-01-07,Mountain Lodge,Standard Double,Group,9,148,54.61,613.16,368648.08
-2024-01-22,Mountain Lodge,Deluxe Suite,Direct Online,271,384,85.0,101.95,293745.61
-2024-04-19,Lakeside Resort,Family Room,Wholesale,85,244,73.14,121.24,357579.48
-2025-04-04,Lakeside Resort,Executive Suite,Direct Online,111,220,46.79,241.17,178021.17
-2024-11-09,Airport Inn,Standard King,Direct Online,136,98,54.37,809.56,363135.22
-2024-07-31,Mountain Lodge,Deluxe Suite,Government,35,185,79.42,231.33,240700.55
-2024-04-05,Mountain Lodge,Executive Suite,Direct Online,61,43,60.15,248.19,78536.03
-2024-01-18,Harbor View Hotel,Deluxe Suite,Government,253,208,13.94,317.17,231460.08
-2024-04-18,Airport Inn,Executive Suite,Corporate,162,59,90.86,686.03,375598.14
-2024-02-24,Mountain Lodge,Executive Suite,Direct Online,230,105,56.8,82.76,152700.18
-2024-07-03,Airport Inn,Standard King,Wholesale,152,271,14.2,904.88,258464.95
-2025-03-29,Harbor View Hotel,Family Room,Corporate,263,291,16.51,890.82,244664.09
-2024-07-19,Mountain Lodge,Family Room,Group,366,300,37.17,491.36,236002.15
-2024-11-08,Lakeside Resort,Executive Suite,Group,68,316,94.3,910.88,22674.82
-2025-05-30,Airport Inn,Family Room,Corporate,284,174,82.92,301.57,338752.8
-2025-04-15,Airport Inn,Family Room,Group,145,101,47.94,250.88,299026.27
-2025-05-17,Lakeside Resort,Standard Double,Corporate,92,187,68.77,864.72,15335.32
-2025-01-02,Harbor View Hotel,Standard Double,Leisure,241,141,66.52,139.2,209431.35
-2024-08-26,Lakeside Resort,Family Room,Group,270,407,22.0,127.14,77553.31
-2025-03-31,Airport Inn,Standard King,Government,174,398,49.5,676.57,384395.58
-2024-07-07,Downtown Suites,Family Room,Leisure,317,89,8.86,478.84,190380.11
-2024-05-12,Harbor View Hotel,Family Room,Wholesale,15,144,10.15,809.02,397953.69
-2024-09-28,Harbor View Hotel,Standard King,Wholesale,88,135,96.97,795.96,205970.81
-2024-01-30,Mountain Lodge,Standard Double,Wholesale,376,386,60.27,85.82,82210.99
-2024-06-06,Airport Inn,Standard Double,Direct Online,298,336,9.67,603.82,50672.88
-2024-11-03,Harbor View Hotel,Family Room,Corporate,429,312,1.42,485.19,339473.13
-2024-09-03,Mountain Lodge,Standard King,Government,254,76,46.22,763.68,64598.88
-2024-02-03,Harbor View Hotel,Executive Suite,Leisure,156,38,49.31,113.65,111721.13
-2024-04-17,Downtown Suites,Family Room,Direct Online,380,246,7.58,673.52,308038.01
-2024-04-05,Lakeside Resort,Executive Suite,Direct Online,180,405,9.79,95.91,198435.53
-2025-03-24,Mountain Lodge,Executive Suite,Direct Online,383,414,7.25,831.34,100866.76
-2025-02-17,Lakeside Resort,Family Room,Government,149,265,61.36,166.38,64521.88
-2024-02-25,Airport Inn,Standard Double,Government,367,54,37.78,108.62,323354.29
-2024-10-08,Harbor View Hotel,Family Room,Leisure,320,105,9.92,154.97,239825.77
-2024-08-28,Airport Inn,Executive Suite,Corporate,142,84,23.36,357.6,10911.41
-2025-04-21,Harbor View Hotel,Deluxe Suite,Group,77,223,63.91,619.37,91387.47
-2024-04-18,Mountain Lodge,Family Room,Government,207,254,67.33,385.62,105949.03
-2024-10-19,Airport Inn,Family Room,Corporate,425,194,54.83,55.68,350622.0
-2024-04-05,Mountain Lodge,Executive Suite,Government,291,211,58.49,602.47,242344.39
-2024-11-30,Downtown Suites,Standard Double,Government,249,48,71.58,391.95,376486.27
-2024-09-07,Mountain Lodge,Standard Double,Direct Online,236,307,86.76,351.31,292779.48
-2024-08-17,Lakeside Resort,Family Room,Leisure,431,19,84.64,848.98,140339.65
-2024-07-21,Downtown Suites,Deluxe Suite,Government,383,307,39.33,246.88,190402.73
-2025-01-04,Downtown Suites,Deluxe Suite,Wholesale,150,273,22.6,886.45,277469.13
-2025-04-22,Airport Inn,Family Room,Group,89,385,89.25,398.4,146672.01
-2024-06-04,Mountain Lodge,Executive Suite,Direct Online,44,141,22.1,422.63,156874.86
-2024-04-09,Downtown Suites,Executive Suite,Group,117,16,9.15,803.63,398950.65
-2024-07-23,Airport Inn,Deluxe Suite,Direct Online,279,409,12.41,53.06,371910.78
-2024-12-08,Mountain Lodge,Executive Suite,Wholesale,66,244,54.76,693.33,382084.5
-2025-06-21,Mountain Lodge,Deluxe Suite,Group,34,74,71.19,635.56,20233.43
-2024-08-31,Mountain Lodge,Family Room,Group,9,156,68.61,701.9,267733.59
-2024-04-20,Harbor View Hotel,Standard Double,Group,428,67,82.83,194.3,109145.53
-2024-08-05,Airport Inn,Deluxe Suite,Government,177,387,57.52,531.32,252815.95
-2024-10-25,Downtown Suites,Executive Suite,Corporate,119,67,90.36,301.1,199562.3
-2025-02-10,Harbor View Hotel,Family Room,Leisure,141,96,76.4,328.44,190115.76
-2024-10-11,Lakeside Resort,Deluxe Suite,Leisure,144,227,46.14,481.86,72019.49
-2025-04-09,Mountain Lodge,Standard King,Government,97,76,83.54,288.26,11949.96
-2025-05-13,Airport Inn,Standard Double,Government,84,385,20.11,823.12,289243.1
-2024-06-09,Downtown Suites,Standard Double,Corporate,306,234,50.51,332.16,62083.2
-2024-08-12,Mountain Lodge,Executive Suite,Government,320,21,75.02,529.26,201162.95
-2024-01-09,Airport Inn,Standard King,Direct Online,279,264,78.52,471.58,125675.45
-2024-03-21,Downtown Suites,Family Room,Government,13,290,9.17,278.6,90933.07
-2025-04-16,Mountain Lodge,Deluxe Suite,Direct Online,199,160,94.11,460.0,263593.21
-2025-04-22,Mountain Lodge,Executive Suite,Direct Online,155,265,94.95,685.45,200887.34
-2024-12-19,Harbor View Hotel,Family Room,Government,122,280,61.22,406.44,238370.33
-2024-06-05,Lakeside Resort,Standard Double,Direct Online,56,230,67.92,737.86,16296.05
-2024-03-04,Airport Inn,Standard Double,Corporate,430,243,66.93,780.24,115706.05
-2025-01-20,Lakeside Resort,Family Room,Group,213,270,16.55,934.27,77249.77
-2024-12-01,Harbor View Hotel,Standard Double,Direct Online,353,333,70.49,693.67,285045.48
-2025-02-19,Airport Inn,Family Room,Wholesale,101,431,18.53,735.51,262348.7
-2024-10-03,Airport Inn,Executive Suite,Wholesale,359,372,60.4,200.66,187144.08
-2024-03-07,Mountain Lodge,Standard King,Wholesale,304,102,33.66,917.4,370390.76
-2025-04-20,Airport Inn,Family Room,Corporate,188,279,36.51,473.11,27827.09
-2025-05-13,Harbor View Hotel,Standard Double,Government,112,168,50.87,111.15,30019.22
-2024-08-14,Mountain Lodge,Deluxe Suite,Wholesale,38,193,54.21,529.8,226016.82
-2024-02-11,Airport Inn,Standard Double,Direct Online,42,392,71.8,719.73,356316.54
-2024-03-29,Airport Inn,Family Room,Group,357,362,87.22,142.21,54428.26
-2025-04-24,Mountain Lodge,Standard Double,Direct Online,106,398,78.62,466.89,107463.16
-2024-10-26,Lakeside Resort,Family Room,Direct Online,223,181,81.92,921.97,62497.35
-2025-03-25,Downtown Suites,Executive Suite,Wholesale,359,414,24.56,454.91,384309.76
-2025-06-23,Harbor View Hotel,Standard Double,Group,104,246,84.79,98.04,133517.36
-2024-11-23,Downtown Suites,Deluxe Suite,Direct Online,326,229,15.46,919.82,175743.92
-2024-12-04,Harbor View Hotel,Deluxe Suite,Wholesale,369,63,68.75,118.29,127953.74
-2024-08-17,Mountain Lodge,Family Room,Government,365,6,80.74,119.31,119659.12
-2025-05-12,Airport Inn,Standard King,Direct Online,390,144,69.81,918.64,140703.46
-2024-08-17,Mountain Lodge,Executive Suite,Wholesale,322,65,1.49,707.98,175954.59
-2025-04-13,Mountain Lodge,Executive Suite,Leisure,100,101,67.33,651.4,66647.52
-2024-02-17,Lakeside Resort,Standard King,Corporate,22,65,71.49,339.22,238594.27
-2024-11-19,Mountain Lodge,Deluxe Suite,Direct Online,309,411,26.01,578.21,178061.08
-2024-11-21,Lakeside Resort,Standard King,Wholesale,9,331,32.54,940.19,163611.37
-2024-04-02,Downtown Suites,Standard Double,Direct Online,119,390,32.08,829.95,177820.1
-2024-01-29,Downtown Suites,Family Room,Wholesale,57,209,30.66,52.73,137082.09
-2025-03-05,Downtown Suites,Family Room,Direct Online,74,178,69.99,879.38,84908.17
-2024-05-08,Airport Inn,Standard King,Corporate,264,377,43.75,385.82,297947.63
-2025-06-18,Mountain Lodge,Deluxe Suite,Government,84,312,70.32,540.02,13493.46
-2024-06-02,Mountain Lodge,Deluxe Suite,Government,198,265,13.09,209.79,229850.02
-2025-02-13,Lakeside Resort,Standard Double,Corporate,4,352,47.61,873.62,203475.28
-2024-03-10,Lakeside Resort,Standard Double,Government,62,57,49.16,104.28,167314.35
-2025-01-09,Mountain Lodge,Deluxe Suite,Group,212,63,59.3,759.89,144381.19
-2025-03-21,Airport Inn,Family Room,Corporate,278,185,59.47,354.69,315779.48
-2024-12-10,Harbor View Hotel,Standard King,Corporate,211,19,24.86,210.53,366213.12
-2024-08-17,Downtown Suites,Standard King,Corporate,355,365,23.07,698.23,279837.3
-2024-03-19,Mountain Lodge,Executive Suite,Group,58,446,89.43,348.02,71028.9
-2024-04-01,Airport Inn,Deluxe Suite,Leisure,433,96,52.98,801.08,35219.69
-2024-09-28,Airport Inn,Standard King,Government,76,46,18.23,182.89,306087.18
-2024-10-19,Airport Inn,Standard King,Leisure,385,31,62.88,112.25,117206.98
-2025-06-21,Harbor View Hotel,Standard Double,Leisure,449,258,57.18,372.01,163862.19
-2024-05-24,Downtown Suites,Standard King,Government,180,111,79.77,611.0,296280.57
-2024-11-07,Downtown Suites,Family Room,Group,320,305,7.56,534.47,305568.66
-2024-09-12,Mountain Lodge,Family Room,Group,206,286,98.19,407.84,119799.34
-2024-04-27,Downtown Suites,Deluxe Suite,Wholesale,141,288,17.33,601.28,20790.99
-2025-06-07,Airport Inn,Executive Suite,Corporate,34,188,40.51,748.73,243333.34
-2024-04-24,Downtown Suites,Standard King,Direct Online,285,409,32.19,450.22,48573.14
-2024-04-27,Harbor View Hotel,Deluxe Suite,Direct Online,149,405,92.05,907.64,1566.93
-2025-03-04,Mountain Lodge,Family Room,Direct Online,135,148,69.37,944.2,377748.16
-2024-03-27,Airport Inn,Standard King,Corporate,47,18,40.19,44.83,300013.35
-2024-07-27,Downtown Suites,Standard King,Direct Online,188,26,76.62,551.26,230084.66
-2025-05-17,Harbor View Hotel,Deluxe Suite,Government,354,334,55.31,379.97,32063.45
-2025-04-04,Harbor View Hotel,Executive Suite,Government,110,233,64.59,457.8,214501.45
-2025-06-05,Downtown Suites,Deluxe Suite,Direct Online,234,357,8.55,474.53,10609.16
-2025-03-17,Airport Inn,Deluxe Suite,Corporate,260,22,98.59,425.11,57671.72
-2025-02-14,Mountain Lodge,Family Room,Wholesale,24,254,96.09,724.88,174695.17
-2024-06-04,Harbor View Hotel,Family Room,Group,201,189,44.19,721.36,155294.44
-2025-03-19,Mountain Lodge,Executive Suite,Group,350,416,81.19,312.84,207874.72
-2024-12-03,Lakeside Resort,Standard Double,Wholesale,51,386,16.99,432.29,350112.96
-2025-01-14,Mountain Lodge,Executive Suite,Group,32,286,87.63,633.54,347656.36
-2024-07-12,Harbor View Hotel,Family Room,Leisure,130,95,46.71,624.8,237674.26
-2024-12-24,Lakeside Resort,Standard Double,Wholesale,45,197,36.05,514.3,232609.29
-2025-05-06,Lakeside Resort,Family Room,Wholesale,32,362,74.19,747.03,82790.6
-2025-02-12,Airport Inn,Standard King,Group,28,168,89.26,506.73,50994.0
-2024-06-06,Harbor View Hotel,Deluxe Suite,Corporate,59,234,2.23,326.24,11705.35
-2024-03-23,Downtown Suites,Deluxe Suite,Group,409,190,35.39,840.13,18435.23
-2025-05-01,Harbor View Hotel,Deluxe Suite,Direct Online,392,447,32.09,378.39,390910.88
-2024-10-09,Lakeside Resort,Executive Suite,Leisure,393,249,6.38,927.54,321492.23
-2024-09-14,Downtown Suites,Family Room,Direct Online,80,292,27.96,117.14,58585.48
-2024-05-23,Airport Inn,Deluxe Suite,Direct Online,175,77,47.16,572.38,31338.53
-2024-12-12,Airport Inn,Family Room,Leisure,210,426,80.67,375.51,273538.23
-2024-08-28,Downtown Suites,Executive Suite,Direct Online,281,273,39.82,593.06,16103.66
-2024-09-04,Airport Inn,Standard King,Group,37,300,65.2,837.72,299732.83
-2024-02-29,Downtown Suites,Executive Suite,Direct Online,385,228,95.29,327.92,60313.61
-2024-08-24,Harbor View Hotel,Standard King,Corporate,191,383,10.43,717.77,140130.83
-2024-10-03,Downtown Suites,Executive Suite,Leisure,319,193,19.12,518.72,312768.91
-2024-08-17,Lakeside Resort,Standard King,Government,296,195,74.77,258.75,328037.74
-2024-12-31,Harbor View Hotel,Family Room,Group,74,209,23.34,88.52,96266.66
-2024-07-25,Airport Inn,Deluxe Suite,Leisure,419,35,75.47,294.0,313634.73
-2024-12-27,Harbor View Hotel,Deluxe Suite,Corporate,214,37,44.95,878.67,386280.56
-2025-04-13,Downtown Suites,Executive Suite,Direct Online,220,276,96.98,680.92,373117.36
-2025-03-17,Harbor View Hotel,Standard King,Corporate,439,31,79.57,676.99,153116.42
-2025-04-27,Downtown Suites,Deluxe Suite,Wholesale,68,203,65.92,233.21,31569.25
-2024-04-24,Harbor View Hotel,Standard Double,Wholesale,190,38,29.23,739.91,92947.03
-2025-04-29,Harbor View Hotel,Family Room,Wholesale,138,220,28.52,423.12,252140.68
-2025-02-05,Airport Inn,Standard King,Group,308,116,93.03,204.53,305082.86
-2025-03-30,Harbor View Hotel,Standard King,Corporate,11,82,22.12,66.23,148274.09
-2024-02-26,Harbor View Hotel,Deluxe Suite,Wholesale,207,344,38.54,97.08,8082.12
-2024-02-21,Lakeside Resort,Standard King,Corporate,276,17,54.5,265.62,296196.09
-2024-04-29,Downtown Suites,Deluxe Suite,Group,396,368,17.14,824.28,261794.78
-2024-11-01,Airport Inn,Standard Double,Government,385,215,82.04,815.15,158449.68
-2024-10-14,Downtown Suites,Standard King,Government,41,18,88.71,673.14,357575.89
-2024-03-26,Lakeside Resort,Deluxe Suite,Corporate,88,118,3.2,939.49,188163.7
-2024-01-20,Mountain Lodge,Executive Suite,Corporate,148,183,1.25,769.49,11054.65
-2024-12-25,Lakeside Resort,Standard King,Government,28,30,38.47,473.84,396897.75
-2024-06-15,Airport Inn,Standard King,Government,147,421,62.42,71.21,47869.67
-2025-02-20,Harbor View Hotel,Standard King,Group,320,360,45.95,579.59,224431.96
-2024-01-11,Lakeside Resort,Executive Suite,Government,391,450,78.4,548.65,255134.26
-2024-12-15,Mountain Lodge,Standard Double,Wholesale,68,288,20.32,338.77,11453.64
-2025-02-14,Airport Inn,Deluxe Suite,Wholesale,84,188,47.38,289.81,27894.25
-2024-05-29,Harbor View Hotel,Standard King,Government,408,40,98.2,820.32,360666.72
-2024-11-17,Mountain Lodge,Standard King,Group,443,295,13.42,720.62,292348.16
-2025-05-24,Mountain Lodge,Executive Suite,Corporate,350,190,58.16,126.64,271810.93
-2024-08-23,Airport Inn,Standard Double,Direct Online,69,320,49.46,599.86,294064.49
-2025-02-19,Airport Inn,Family Room,Leisure,52,336,82.62,601.17,28870.92
-2024-09-28,Lakeside Resort,Standard Double,Government,251,13,91.61,754.36,312615.9
-2024-11-02,Downtown Suites,Standard Double,Wholesale,68,289,3.45,489.96,359614.35
-2025-01-24,Mountain Lodge,Standard Double,Corporate,313,99,53.5,129.83,191037.71
-2024-09-07,Harbor View Hotel,Standard King,Corporate,135,49,43.5,494.95,128848.1
-2024-08-23,Lakeside Resort,Standard Double,Corporate,289,68,74.68,346.99,38843.12
-2024-02-01,Mountain Lodge,Family Room,Direct Online,113,159,69.22,44.46,26530.06
-2024-06-25,Downtown Suites,Executive Suite,Group,114,89,3.84,56.61,119003.66
-2024-06-15,Lakeside Resort,Standard Double,Direct Online,29,314,34.19,577.77,258741.75
-2024-09-02,Downtown Suites,Standard King,Corporate,24,267,45.1,604.57,338527.59
-2024-09-01,Lakeside Resort,Family Room,Wholesale,197,226,45.08,41.5,97068.09
-2024-06-29,Downtown Suites,Family Room,Corporate,60,161,10.6,514.52,302446.03
-2024-04-04,Airport Inn,Standard Double,Wholesale,75,369,96.78,527.55,295415.4
-2024-04-27,Harbor View Hotel,Standard Double,Wholesale,252,430,62.78,771.87,124208.33
-2025-05-16,Harbor View Hotel,Standard Double,Wholesale,439,128,17.38,163.38,178560.98
-2024-02-03,Downtown Suites,Executive Suite,Government,201,120,79.4,421.47,120064.93
-2024-11-07,Downtown Suites,Standard King,Government,106,174,49.32,84.68,146846.2
-2025-02-22,Mountain Lodge,Standard King,Group,134,79,19.23,128.41,349002.22
-2025-03-06,Harbor View Hotel,Standard King,Group,134,399,49.77,541.34,20682.69
-2025-05-26,Airport Inn,Standard Double,Group,262,370,44.54,660.15,373274.17
-2024-04-15,Lakeside Resort,Deluxe Suite,Direct Online,215,272,66.18,378.2,192748.22
-2024-03-19,Harbor View Hotel,Executive Suite,Leisure,422,18,20.79,175.63,365911.04
-2024-08-04,Harbor View Hotel,Standard Double,Group,424,229,16.18,317.03,51850.82
-2025-05-26,Mountain Lodge,Standard King,Leisure,173,16,67.48,401.97,53745.44
-2024-10-22,Harbor View Hotel,Executive Suite,Direct Online,218,233,10.06,896.55,338045.75
-2024-12-23,Lakeside Resort,Family Room,Corporate,278,79,12.0,174.03,355825.85
-2024-01-20,Mountain Lodge,Standard King,Group,206,78,46.56,489.2,98021.47
-2025-03-08,Mountain Lodge,Executive Suite,Group,97,302,1.85,354.64,229437.68
-2025-01-02,Harbor View Hotel,Family Room,Group,132,164,23.37,555.5,231695.79
-2024-12-03,Airport Inn,Deluxe Suite,Leisure,431,148,4.8,658.41,393635.99
-2024-05-18,Mountain Lodge,Family Room,Group,187,297,25.86,432.12,129115.65
-2025-03-03,Airport Inn,Standard King,Corporate,14,416,2.23,355.57,150652.94
+enrollmentDate,departmentName,courseLevel,semesterTerm,studentCount,averageGradePoints,totalCreditHours
+2024-11-11,Biology,400,Spring,85,1.31,504
+2024-09-06,Economics,Graduate,Fall,10,3.74,1443
+2025-04-21,English,100,Spring,174,0.82,998
+2024-11-07,History,Graduate,Fall,93,0.43,916
+2024-12-25,History,300,Spring,160,2.93,928
+2025-02-20,Computer Science,400,Spring,197,3.92,589
+2024-03-27,English,Graduate,Spring,402,3.17,1585
+2025-05-24,Physics,Graduate,Summer,190,1.43,1695
+2025-06-08,Physics,100,Summer,277,2.56,1101
+2025-04-08,Computer Science,100,Summer,70,3.31,536
+2024-09-13,English,Graduate,Spring,156,3.4,1118
+2024-03-04,Mathematics,400,Spring,53,0.73,1363
+2024-06-17,Biology,Graduate,Spring,310,2.17,1729
+2024-03-01,English,400,Fall,52,2.78,869
+2024-08-10,History,300,Fall,308,3.85,696
+2025-06-15,Economics,200,Spring,297,3.53,77
+2025-03-23,Economics,300,Fall,326,3.04,879
+2025-06-22,English,Graduate,Fall,235,3.68,590
+2024-03-21,Mathematics,300,Fall,342,2.69,1251
+2025-06-01,Economics,300,Summer,309,3.29,1124
+2024-11-12,Biology,100,Summer,346,2.45,1474
+2024-12-07,Economics,100,Summer,53,0.06,232
+2025-01-31,Mathematics,200,Summer,106,2.94,847
+2025-06-23,Biology,400,Spring,34,1.99,966
+2024-05-05,Biology,Graduate,Fall,346,2.92,637
+2025-01-04,Economics,200,Fall,94,1.59,1682
+2024-03-28,Physics,300,Summer,363,0.08,303
+2024-10-20,English,100,Summer,254,0.59,614
+2024-06-27,Mathematics,400,Fall,241,3.97,736
+2025-03-07,Mathematics,400,Spring,130,3.02,663
+2025-05-06,Biology,400,Fall,350,0.62,1712
+2025-04-12,Physics,200,Fall,279,1.99,1142
+2024-02-13,Biology,300,Summer,227,2.57,1133
+2024-10-03,History,300,Summer,140,0.05,885
+2024-07-15,Economics,100,Fall,237,0.05,1334
+2024-03-27,English,200,Spring,52,1.09,1100
+2025-03-13,Economics,Graduate,Summer,256,1.02,1432
+2025-01-09,English,400,Spring,245,2.17,1383
+2024-02-15,Mathematics,200,Spring,205,3.1,405
+2025-06-20,History,Graduate,Spring,340,1.42,1725
+2024-12-18,English,400,Summer,395,1.57,333
+2024-03-10,Biology,300,Summer,133,2.9,1506
+2024-06-13,Computer Science,200,Fall,402,1.14,1045
+2024-11-26,Mathematics,400,Fall,387,2.74,1064
+2025-03-19,Mathematics,200,Fall,181,1.61,1142
+2024-12-29,Economics,Graduate,Fall,316,0.4,1060
+2025-02-14,Economics,200,Spring,18,0.96,1425
+2024-04-11,History,200,Spring,220,2.73,1689
+2024-06-22,Mathematics,300,Summer,77,1.27,217
+2025-03-01,Physics,300,Spring,104,3.11,1681
+2024-02-15,Computer Science,200,Fall,225,2.52,548
+2024-09-30,Biology,300,Summer,215,1.19,918
+2024-10-05,Computer Science,100,Fall,12,2.16,1476
+2024-01-25,Economics,Graduate,Summer,216,0.31,803
+2024-02-21,Physics,Graduate,Summer,345,3.46,364
+2025-03-02,Physics,300,Fall,192,1.17,1278
+2024-07-01,Economics,Graduate,Summer,90,3.59,50
+2024-04-24,Mathematics,200,Spring,303,2.36,830
+2024-05-18,Biology,200,Summer,240,0.36,365
+2024-02-16,English,300,Spring,296,2.6,566
+2025-06-19,Physics,200,Summer,312,2.76,380
+2024-08-30,Physics,Graduate,Spring,190,2.28,1455
+2024-02-20,History,100,Fall,101,3.74,1244
+2024-01-19,Computer Science,100,Summer,315,2.96,1190
+2024-11-21,History,400,Fall,333,3.38,786
+2024-07-09,Mathematics,100,Spring,387,1.14,1610
+2024-10-11,Computer Science,400,Spring,156,2.63,877
+2025-04-28,History,400,Spring,200,1.01,656
+2024-04-25,Biology,300,Fall,151,2.87,79
+2024-10-15,History,400,Spring,230,2.08,1568
+2025-04-18,Economics,400,Summer,240,2.77,424
+2024-08-03,English,400,Fall,40,1.48,1361
+2024-01-31,Biology,200,Fall,397,0.8,447
+2024-11-24,Mathematics,400,Summer,212,1.57,185
+2024-06-29,Biology,100,Summer,206,3.13,1178
+2024-06-17,Computer Science,300,Summer,80,0.17,260
+2025-02-08,Physics,300,Spring,91,2.23,825
+2024-01-21,English,100,Fall,85,2.2,1074
+2025-01-21,Physics,200,Fall,64,1.13,516
+2025-03-20,Biology,300,Fall,11,2.54,1581
+2024-06-15,English,Graduate,Spring,63,0.47,185
+2024-03-29,Physics,100,Spring,392,3.66,74
+2025-04-06,History,Graduate,Spring,128,0.92,175
+2024-07-23,Mathematics,100,Spring,60,3.52,1719
+2025-02-21,Biology,Graduate,Fall,277,2.81,558
+2024-06-15,Economics,200,Fall,207,1.44,573
+2025-01-20,Biology,Graduate,Spring,24,0.97,1374
+2024-06-21,Physics,200,Fall,359,1.95,559
+2024-08-07,Mathematics,100,Spring,53,3.62,862
+2024-03-10,Computer Science,200,Spring,361,3.11,1457
+2025-02-11,Physics,200,Spring,49,2.85,113
+2024-10-14,English,100,Spring,96,1.46,132
+2024-04-07,Physics,Graduate,Summer,18,1.73,435
+2024-07-20,Computer Science,400,Spring,369,2.79,1170
+2025-03-15,Mathematics,300,Summer,62,2.49,1157
+2024-01-03,Computer Science,Graduate,Spring,424,1.3,887
+2025-05-01,Economics,100,Fall,278,1.71,1240
+2024-06-08,Biology,100,Spring,110,2.52,230
+2024-07-18,Physics,400,Summer,195,1.24,93
+2024-07-03,Computer Science,Graduate,Summer,220,0.77,1004
+2024-01-20,Computer Science,200,Fall,363,2.61,1169
+2024-12-30,Computer Science,Graduate,Fall,111,3.83,307
+2024-09-24,History,100,Spring,77,3.12,625
+2025-02-14,Mathematics,400,Fall,300,3.05,804
+2025-03-15,Mathematics,400,Fall,424,2.12,994
+2025-05-01,Mathematics,200,Spring,426,2.03,834
+2024-01-17,Biology,Graduate,Summer,427,2.0,897
+2024-11-01,Biology,200,Fall,131,0.39,1621
+2024-12-15,Economics,300,Spring,92,0.64,1692
+2024-01-24,Physics,300,Summer,170,3.03,1337
+2024-04-06,History,200,Fall,169,0.15,323
+2024-01-23,English,300,Fall,204,0.3,840
+2025-05-11,Computer Science,400,Fall,418,1.71,173
+2024-05-14,History,400,Fall,133,0.87,1625
+2024-04-17,English,200,Summer,433,2.59,1624
+2025-01-21,Biology,300,Spring,406,3.74,91
+2024-01-09,Economics,200,Spring,10,1.21,784
+2024-05-10,English,Graduate,Spring,339,0.78,373
+2024-08-09,Mathematics,Graduate,Summer,285,2.1,1083
+2025-04-04,Biology,Graduate,Spring,280,1.58,1567
+2024-12-27,Mathematics,Graduate,Summer,37,1.64,712
+2024-03-17,Mathematics,100,Summer,257,2.1,631
+2025-02-18,English,Graduate,Fall,223,1.83,663
+2025-01-05,Mathematics,200,Summer,170,0.62,1647
+2024-10-15,Biology,200,Summer,27,2.5,151
+2025-01-21,Economics,200,Spring,433,0.01,1731
+2024-03-11,History,Graduate,Fall,148,1.8,544
+2025-05-26,Physics,Graduate,Summer,159,0.19,1156
+2025-02-11,Computer Science,200,Summer,293,2.08,647
+2024-11-09,Physics,200,Summer,148,0.35,1076
+2025-04-24,Mathematics,200,Fall,422,1.38,251
+2024-11-28,Physics,400,Fall,13,1.8,1787
+2024-04-05,Mathematics,400,Summer,405,0.28,314
+2024-07-07,Mathematics,200,Summer,192,1.1,316
+2024-05-02,Physics,100,Fall,418,1.82,1746
+2024-03-04,Mathematics,200,Fall,96,0.42,1744
+2024-04-07,Biology,200,Spring,64,2.71,1283
+2024-05-08,Economics,300,Spring,226,3.15,492
+2025-04-26,History,200,Fall,182,1.9,1728
+2024-09-19,Economics,100,Spring,332,1.05,586
+2025-05-18,Biology,400,Spring,401,1.99,1424
+2024-02-14,Economics,100,Spring,415,0.99,1740
+2024-03-21,Mathematics,400,Summer,133,1.79,52
+2024-02-23,Biology,200,Spring,66,2.8,234
+2024-01-25,Biology,Graduate,Spring,293,1.16,1775
+2024-02-11,Physics,Graduate,Spring,168,2.61,1594
+2024-06-25,Economics,100,Spring,369,0.7,257
+2024-01-22,Mathematics,Graduate,Summer,148,0.72,479
+2024-02-02,Computer Science,200,Summer,234,3.41,1585
+2025-02-07,English,400,Spring,283,2.35,522
+2024-08-17,English,Graduate,Spring,327,2.06,1359
+2024-05-14,History,400,Spring,105,0.26,535
+2025-06-21,Computer Science,400,Spring,52,2.55,225
+2024-04-21,Biology,Graduate,Summer,314,3.63,889
+2024-06-28,Physics,100,Fall,447,3.96,1262
+2024-06-12,Computer Science,400,Fall,366,1.92,619
+2024-09-14,English,200,Spring,421,3.83,1357
+2024-09-09,Physics,400,Summer,104,1.52,584
+2024-10-24,Economics,200,Summer,137,2.1,907
+2025-03-19,Physics,400,Spring,205,1.62,366
+2024-12-14,Economics,400,Summer,444,2.47,517
+2025-05-10,Computer Science,200,Spring,295,0.96,596
+2024-02-11,History,200,Spring,146,3.99,1098
+2024-04-07,Economics,100,Summer,176,3.75,1101
+2024-10-17,Physics,300,Spring,323,3.01,500
+2024-07-15,English,300,Fall,41,2.51,242
+2024-01-26,Economics,400,Summer,73,3.51,1111
+2024-02-06,Biology,Graduate,Spring,300,0.86,911
+2024-05-18,Mathematics,300,Spring,147,2.78,132
+2024-11-24,Physics,400,Spring,325,1.33,869
+2025-01-13,English,400,Spring,129,1.02,1723
+2024-03-18,Economics,200,Summer,282,2.43,1726
+2024-11-28,Computer Science,Graduate,Summer,351,3.41,1128
+2025-04-26,Physics,100,Spring,101,0.04,1616
+2024-09-08,Mathematics,200,Fall,41,2.05,1309
+2024-10-07,Biology,200,Summer,285,1.05,100
+2024-06-30,Computer Science,100,Summer,122,0.16,1226
+2024-05-13,History,100,Summer,365,3.78,1723
+2025-03-07,Mathematics,Graduate,Summer,246,1.45,627
+2024-05-25,English,300,Summer,4,3.37,1407
+2024-07-23,English,400,Summer,297,3.24,924
+2024-11-21,English,100,Fall,107,1.46,1273
+2024-08-19,Physics,300,Fall,383,2.95,1358
+2025-05-12,Economics,Graduate,Spring,270,3.28,1055
+2024-02-07,Biology,100,Spring,151,2.33,49
+2025-03-05,Physics,400,Summer,185,2.9,1347
+2024-07-29,English,400,Summer,54,2.2,1475
+2024-12-31,History,400,Spring,449,3.01,420
+2025-01-30,English,Graduate,Spring,257,2.3,646
+2025-02-27,Mathematics,200,Spring,260,0.08,188
+2024-10-29,Physics,400,Fall,267,1.09,151
+2024-09-27,English,Graduate,Spring,207,3.46,1490
+2024-01-01,Economics,100,Spring,308,1.96,615
+2024-08-07,Biology,300,Summer,142,1.21,687
+2025-01-28,Economics,300,Fall,231,2.44,1657
+2024-08-12,Economics,100,Spring,2,1.31,544
+2024-11-14,History,400,Summer,309,2.56,1452
+2024-07-04,Mathematics,400,Spring,184,2.93,1156
+2024-07-27,Computer Science,200,Spring,442,1.08,917
+2024-12-25,Physics,400,Summer,359,3.02,726
+2024-12-08,History,Graduate,Spring,178,3.32,1422
+2024-11-09,Physics,200,Spring,384,0.6,545
+2024-02-06,Mathematics,300,Fall,367,2.07,48
+2024-07-15,Computer Science,400,Fall,355,3.89,557
+2024-04-07,Mathematics,Graduate,Summer,340,0.09,1360
+2025-05-16,Mathematics,100,Fall,294,3.4,1093
+2025-06-16,Computer Science,400,Summer,148,0.8,1089
+2024-04-02,Mathematics,Graduate,Spring,137,0.44,555
+2024-09-27,English,200,Summer,96,0.79,428
+2024-11-03,Mathematics,100,Summer,430,0.24,96
+2024-10-04,History,200,Spring,205,1.62,1611
+2024-12-16,Biology,200,Spring,145,2.03,849
+2025-04-30,Physics,200,Fall,14,2.7,312
+2024-08-22,History,Graduate,Spring,253,0.98,396
+2025-03-15,Computer Science,400,Summer,338,3.54,1565
+2024-01-06,English,200,Fall,187,1.95,158
+2024-12-21,Economics,200,Spring,196,0.55,1061
+2025-02-17,Mathematics,300,Fall,196,1.5,1788
+2024-01-26,Biology,300,Summer,41,0.07,375
+2024-11-05,Physics,200,Fall,307,3.21,302
+2025-06-10,English,400,Summer,103,2.87,1417
+2024-07-25,History,200,Fall,400,3.69,115
+2024-04-24,Physics,Graduate,Summer,173,2.14,1121
+2024-07-18,English,300,Summer,405,0.9,501
+2024-09-29,English,Graduate,Summer,267,2.77,1178
+2024-02-22,Economics,300,Fall,345,3.84,399
+2024-11-22,Biology,200,Summer,162,0.05,1342
+2025-03-10,Biology,400,Spring,47,3.01,1754
+2024-01-25,Biology,Graduate,Summer,238,0.44,114
+2025-05-25,Economics,100,Summer,27,1.82,125
+2024-10-07,English,300,Fall,108,3.51,590
+2025-05-19,Mathematics,100,Fall,377,1.91,438
+2024-03-25,Biology,Graduate,Spring,229,1.94,1620
+2024-07-17,History,Graduate,Summer,205,0.57,162
+2025-01-16,Mathematics,400,Spring,35,1.59,1471
+2025-06-04,Mathematics,Graduate,Summer,183,2.77,1574
+2024-11-10,English,400,Summer,24,1.73,322
+2025-05-10,Computer Science,300,Fall,178,3.4,351
+2024-09-09,Computer Science,100,Summer,193,2.94,1789
+2024-02-16,History,200,Spring,292,2.71,1171

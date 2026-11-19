@@ -1,241 +1,241 @@
-scorecard_review_date,scorecard_supplier_region,scorecard_commodity_group,scorecard_performance_tier,scorecard_on_time_delivery_pct,scorecard_defect_rate_pct,scorecard_avg_lead_time_days
-2025-06-17,Africa,Chemicals,Strategic,69.38,9.65,40
-2024-03-09,South America,Electronic Components,Approved,10.07,6.3,110
-2024-11-30,Middle East,Raw Materials,Conditional,47.69,0.36,96
-2024-02-07,Middle East,Office Supplies,Strategic,99.03,3.83,61
-2024-03-18,Eastern Europe,Machined Parts,Probation,86.59,0.36,50
-2024-03-03,North America,Electronic Components,Probation,41.03,9.17,107
-2024-06-19,Middle East,Packaging,Approved,75.18,9.4,17
-2024-07-19,South America,Chemicals,Strategic,27.45,6.37,78
-2024-02-28,North America,Electronic Components,Strategic,94.27,4.86,83
-2025-03-27,Eastern Europe,Machined Parts,Conditional,18.88,2.98,116
-2024-12-20,East Asia,Chemicals,Preferred,91.78,4.49,57
-2024-09-30,Western Europe,Chemicals,Preferred,85.22,5.26,109
-2024-08-31,South America,Chemicals,Conditional,55.89,7.09,54
-2025-05-25,South America,Electronic Components,Conditional,82.31,2.07,110
-2024-12-07,Middle East,Logistics Services,Conditional,16.23,2.38,11
-2024-04-25,North America,Logistics Services,Strategic,71.99,1.41,15
-2024-08-01,South America,Machined Parts,Probation,55.77,5.81,8
-2024-04-04,North America,Chemicals,Strategic,43.99,1.84,40
-2025-01-05,Middle East,Packaging,Conditional,30.26,9.08,100
-2025-03-12,North America,Packaging,Conditional,25.99,6.99,16
-2024-09-09,Western Europe,Machined Parts,Conditional,13.52,7.46,43
-2024-10-08,Eastern Europe,Office Supplies,Strategic,32.36,9.98,96
-2024-04-25,South America,Machined Parts,Conditional,83.21,3.85,3
-2024-03-23,East Asia,Machined Parts,Approved,96.27,9.97,105
-2025-05-07,South Asia,Office Supplies,Conditional,7.04,5.07,3
-2024-03-13,East Asia,Packaging,Conditional,6.29,3.94,70
-2024-08-15,Middle East,Electronic Components,Conditional,84.89,6.53,80
-2024-09-26,East Asia,Machined Parts,Conditional,24.03,3.83,82
-2024-12-22,Western Europe,Chemicals,Approved,41.46,2.11,66
-2024-11-14,South Asia,Electronic Components,Approved,27.67,2.11,110
-2025-06-13,Middle East,Logistics Services,Preferred,30.62,7.15,69
-2024-12-03,Africa,Electronic Components,Approved,4.74,5.28,25
-2024-06-23,Middle East,Logistics Services,Probation,34.03,2.04,7
-2025-01-22,East Asia,Machined Parts,Approved,64.68,1.96,27
-2024-03-15,South America,Machined Parts,Strategic,78.72,7.17,47
-2024-05-28,Eastern Europe,Raw Materials,Probation,16.92,6.71,57
-2025-02-24,Middle East,Logistics Services,Preferred,41.6,0.3,87
-2024-12-19,South America,Electronic Components,Strategic,48.12,2.17,111
-2025-02-13,Eastern Europe,Electronic Components,Probation,75.23,8.23,70
-2024-04-05,North America,Logistics Services,Preferred,92.14,7.37,108
-2024-05-23,Eastern Europe,Logistics Services,Strategic,75.87,3.01,52
-2025-06-01,Western Europe,Machined Parts,Approved,39.51,0.99,103
-2024-05-27,North America,Machined Parts,Strategic,65.21,0.53,108
-2025-05-27,Western Europe,Logistics Services,Preferred,98.65,8.15,6
-2024-11-02,East Asia,Raw Materials,Strategic,55.86,7.32,102
-2024-03-03,Middle East,Machined Parts,Conditional,23.64,7.71,9
-2024-03-25,Africa,Logistics Services,Conditional,83.5,3.14,52
-2025-02-02,South Asia,Chemicals,Conditional,43.79,6.61,66
-2024-05-26,South America,Machined Parts,Strategic,44.3,6.26,1
-2024-11-17,Western Europe,Logistics Services,Preferred,87.38,8.4,96
-2024-02-16,North America,Machined Parts,Conditional,52.77,2.98,67
-2024-05-15,Africa,Logistics Services,Preferred,6.48,3.31,42
-2025-03-01,Eastern Europe,Electronic Components,Approved,52.84,3.15,80
-2025-02-14,Middle East,Raw Materials,Probation,37.47,8.09,106
-2025-01-16,Africa,Raw Materials,Preferred,71.02,4.19,7
-2024-06-03,North America,Office Supplies,Probation,45.14,4.98,69
-2024-01-19,South America,Chemicals,Probation,93.58,9.92,11
-2024-09-29,East Asia,Office Supplies,Strategic,35.88,3.41,33
-2024-06-29,South America,Office Supplies,Preferred,77.34,4.63,62
-2025-02-05,East Asia,Chemicals,Approved,29.83,8.17,39
-2024-06-29,South America,Electronic Components,Probation,31.86,3.78,43
-2024-10-29,Western Europe,Raw Materials,Preferred,38.5,3.11,39
-2025-01-29,South America,Packaging,Conditional,42.62,5.39,24
-2024-08-09,Eastern Europe,Packaging,Strategic,17.42,1.12,82
-2024-07-26,South Asia,Raw Materials,Preferred,67.81,4.1,99
-2024-10-18,Africa,Logistics Services,Approved,90.19,8.61,100
-2024-02-01,East Asia,Raw Materials,Probation,39.06,1.92,118
-2024-12-17,South Asia,Machined Parts,Conditional,26.34,2.52,101
-2024-09-15,Eastern Europe,Chemicals,Probation,88.06,7.77,91
-2024-10-22,North America,Machined Parts,Preferred,11.16,3.18,45
-2025-02-17,East Asia,Electronic Components,Strategic,16.85,9.42,89
-2024-07-11,Eastern Europe,Chemicals,Strategic,47.21,8.71,35
-2024-09-09,Western Europe,Packaging,Strategic,56.33,0.77,58
-2024-11-13,Eastern Europe,Raw Materials,Preferred,88.09,1.15,16
-2024-06-20,South America,Logistics Services,Probation,52.44,6.69,8
-2025-03-10,East Asia,Electronic Components,Preferred,27.91,4.97,38
-2024-06-24,Africa,Logistics Services,Probation,79.87,4.12,13
-2025-04-05,South Asia,Raw Materials,Preferred,26.03,2.15,26
-2024-02-16,North America,Chemicals,Strategic,36.97,8.33,54
-2024-02-23,South Asia,Raw Materials,Preferred,23.36,7.04,79
-2025-04-16,Western Europe,Electronic Components,Preferred,60.28,3.13,36
-2025-03-04,Western Europe,Raw Materials,Conditional,0.25,4.46,97
-2024-01-13,South Asia,Logistics Services,Probation,60.08,9.74,8
-2024-04-26,East Asia,Machined Parts,Preferred,21.43,6.17,79
-2024-04-17,Africa,Electronic Components,Strategic,82.09,2.73,107
-2024-05-23,East Asia,Machined Parts,Conditional,7.95,0.81,74
-2025-04-10,Africa,Packaging,Conditional,99.74,9.03,60
-2025-05-18,North America,Electronic Components,Conditional,71.31,6.99,72
-2024-10-16,Western Europe,Office Supplies,Strategic,31.79,0.89,77
-2024-04-12,Africa,Machined Parts,Conditional,86.2,1.59,65
-2024-01-08,East Asia,Office Supplies,Preferred,58.02,6.39,26
-2024-07-08,North America,Machined Parts,Conditional,78.71,9.6,10
-2025-03-06,Middle East,Raw Materials,Preferred,12.71,5.2,90
-2025-03-01,Africa,Logistics Services,Strategic,27.26,7.94,38
-2025-02-20,Western Europe,Machined Parts,Conditional,20.45,1.87,47
-2025-01-11,Middle East,Machined Parts,Conditional,83.49,1.21,41
-2024-05-26,Africa,Packaging,Preferred,98.98,6.52,87
-2024-02-02,Eastern Europe,Electronic Components,Probation,76.1,9.52,9
-2025-05-26,Western Europe,Office Supplies,Approved,70.47,4.02,97
-2025-06-22,Middle East,Logistics Services,Strategic,40.36,2.77,96
-2025-05-29,Western Europe,Chemicals,Strategic,26.46,3.58,98
-2025-01-27,East Asia,Machined Parts,Conditional,3.8,4.64,87
-2024-02-25,South America,Logistics Services,Approved,51.58,4.69,43
-2024-11-02,Middle East,Raw Materials,Conditional,16.39,1.69,60
-2024-12-14,Western Europe,Electronic Components,Preferred,83.38,6.54,61
-2024-10-15,North America,Raw Materials,Conditional,45.77,1.62,34
-2024-04-30,Middle East,Chemicals,Probation,89.91,6.94,18
-2024-03-23,South Asia,Packaging,Strategic,25.58,4.09,86
-2024-02-26,Eastern Europe,Office Supplies,Approved,85.72,0.56,66
-2024-04-02,North America,Office Supplies,Preferred,65.89,4.18,119
-2024-07-19,South America,Chemicals,Preferred,12.68,2.18,79
-2024-01-28,Africa,Chemicals,Strategic,0.74,1.56,100
-2024-05-07,Eastern Europe,Electronic Components,Probation,40.03,8.86,101
-2024-10-02,North America,Machined Parts,Approved,48.75,5.25,30
-2024-12-15,East Asia,Raw Materials,Conditional,47.79,5.48,10
-2024-08-27,South Asia,Logistics Services,Probation,54.14,1.13,58
-2025-01-26,South Asia,Machined Parts,Probation,31.79,7.49,63
-2025-04-30,South Asia,Logistics Services,Strategic,96.73,0.39,52
-2025-05-03,Middle East,Electronic Components,Approved,67.85,5.9,120
-2025-05-24,South Asia,Chemicals,Strategic,96.28,9.94,113
-2025-03-21,North America,Machined Parts,Approved,55.05,9.39,30
-2024-11-07,Eastern Europe,Logistics Services,Conditional,1.45,4.05,3
-2025-02-02,South America,Machined Parts,Strategic,25.73,0.69,42
-2024-10-05,Middle East,Raw Materials,Preferred,58.84,4.49,7
-2024-01-16,Africa,Packaging,Preferred,87.79,6.39,58
-2025-03-23,South Asia,Machined Parts,Approved,51.46,6.02,76
-2024-12-25,South America,Chemicals,Approved,98.37,7.67,96
-2025-04-15,East Asia,Electronic Components,Approved,33.22,3.83,90
-2024-05-31,North America,Raw Materials,Approved,11.85,6.42,35
-2024-12-03,North America,Packaging,Probation,67.8,5.47,49
-2024-05-28,Eastern Europe,Chemicals,Strategic,40.27,1.39,56
-2024-06-27,Western Europe,Packaging,Preferred,97.82,7.02,62
-2024-08-16,Western Europe,Office Supplies,Conditional,14.8,8.11,63
-2025-05-26,East Asia,Chemicals,Preferred,67.66,9.09,98
-2025-04-11,North America,Packaging,Probation,30.56,9.29,19
-2024-02-03,South America,Raw Materials,Conditional,60.04,2.31,91
-2024-10-12,Middle East,Logistics Services,Conditional,80.76,9.81,58
-2024-09-28,South America,Electronic Components,Conditional,10.57,0.31,106
-2024-07-23,Africa,Chemicals,Probation,85.04,3.56,114
-2025-06-23,Western Europe,Chemicals,Strategic,46.57,5.33,21
-2024-03-14,East Asia,Machined Parts,Approved,31.3,4.05,116
-2025-01-19,Africa,Chemicals,Conditional,15.32,6.81,96
-2024-03-13,Eastern Europe,Office Supplies,Probation,56.69,8.7,79
-2024-11-24,East Asia,Logistics Services,Approved,51.88,3.0,95
-2024-07-19,East Asia,Electronic Components,Strategic,56.04,5.38,25
-2024-03-22,East Asia,Machined Parts,Strategic,15.8,6.71,61
-2024-05-10,North America,Packaging,Conditional,55.15,9.24,49
-2024-02-27,East Asia,Chemicals,Preferred,42.46,0.9,44
-2024-03-20,Africa,Office Supplies,Conditional,95.34,4.13,119
-2024-04-28,East Asia,Logistics Services,Probation,76.92,5.61,43
-2025-05-31,East Asia,Electronic Components,Strategic,40.34,0.78,9
-2024-05-04,South America,Electronic Components,Approved,42.72,2.15,120
-2024-10-30,Middle East,Machined Parts,Strategic,18.99,1.02,65
-2024-04-11,Middle East,Packaging,Conditional,84.9,8.97,80
-2025-04-15,East Asia,Chemicals,Probation,95.53,1.19,84
-2024-04-07,South America,Chemicals,Probation,86.87,5.32,53
-2024-03-23,Middle East,Machined Parts,Preferred,17.05,5.78,66
-2024-01-16,Western Europe,Machined Parts,Preferred,70.16,2.66,10
-2024-05-25,East Asia,Packaging,Approved,78.59,1.34,66
-2024-11-24,Western Europe,Electronic Components,Probation,37.0,7.6,1
-2025-01-26,North America,Logistics Services,Conditional,54.63,8.41,44
-2024-03-08,South Asia,Machined Parts,Approved,77.38,0.04,76
-2024-02-17,South Asia,Raw Materials,Conditional,51.55,0.8,14
-2025-01-27,Eastern Europe,Chemicals,Preferred,21.63,1.33,37
-2025-05-23,Eastern Europe,Office Supplies,Conditional,2.02,1.56,64
-2024-07-02,North America,Machined Parts,Preferred,14.13,4.36,109
-2025-06-16,South America,Raw Materials,Approved,65.2,8.22,69
-2024-03-16,South Asia,Raw Materials,Approved,42.64,5.47,92
-2024-01-23,North America,Electronic Components,Approved,94.48,8.17,68
-2025-06-03,Middle East,Raw Materials,Conditional,96.01,6.38,22
-2024-07-27,Eastern Europe,Office Supplies,Approved,89.85,4.0,52
-2025-02-19,Eastern Europe,Chemicals,Strategic,73.1,6.91,100
-2024-10-18,Middle East,Machined Parts,Conditional,23.6,3.47,104
-2024-06-26,South Asia,Office Supplies,Strategic,14.65,9.45,99
-2024-04-13,South America,Logistics Services,Strategic,7.44,4.31,25
-2025-02-10,East Asia,Packaging,Probation,95.74,6.72,48
-2025-05-21,North America,Logistics Services,Conditional,39.61,2.26,1
-2025-03-06,Africa,Chemicals,Conditional,95.7,2.63,46
-2024-09-06,Africa,Logistics Services,Strategic,53.23,3.08,40
-2024-03-25,Africa,Machined Parts,Probation,66.15,4.91,91
-2024-10-02,East Asia,Logistics Services,Preferred,60.79,5.63,118
-2024-05-10,Middle East,Chemicals,Preferred,88.46,2.96,81
-2024-05-21,South Asia,Logistics Services,Approved,1.95,4.1,71
-2024-10-30,South Asia,Logistics Services,Probation,67.03,8.86,30
-2024-04-07,North America,Logistics Services,Strategic,7.19,6.56,100
-2025-03-27,Africa,Raw Materials,Approved,89.63,2.74,8
-2024-04-05,Africa,Packaging,Probation,28.09,7.0,110
-2024-08-08,Africa,Chemicals,Strategic,85.1,7.7,80
-2024-04-18,Africa,Chemicals,Approved,76.44,1.46,4
-2025-05-20,Eastern Europe,Chemicals,Preferred,26.34,5.4,36
-2024-06-29,Western Europe,Raw Materials,Probation,19.8,4.13,33
-2024-09-13,East Asia,Office Supplies,Strategic,52.0,0.61,90
-2024-04-02,Africa,Raw Materials,Strategic,27.85,6.15,112
-2025-03-15,South America,Packaging,Approved,92.54,6.73,104
-2024-02-05,Eastern Europe,Office Supplies,Probation,10.16,8.93,55
-2024-06-06,North America,Logistics Services,Probation,37.49,5.29,3
-2024-10-09,North America,Chemicals,Approved,46.59,2.76,84
-2024-08-02,Western Europe,Electronic Components,Strategic,34.52,6.63,91
-2024-12-16,Western Europe,Packaging,Conditional,82.8,3.73,16
-2024-09-08,South Asia,Raw Materials,Strategic,34.99,5.53,87
-2025-04-26,East Asia,Machined Parts,Strategic,43.19,8.88,110
-2024-11-22,Western Europe,Chemicals,Probation,47.22,9.47,73
-2025-04-10,Eastern Europe,Chemicals,Probation,28.17,9.97,96
-2025-03-06,Eastern Europe,Logistics Services,Strategic,60.63,2.29,13
-2025-03-18,Africa,Machined Parts,Preferred,13.52,1.83,47
-2025-02-20,Middle East,Office Supplies,Approved,77.09,0.01,116
-2024-12-26,Eastern Europe,Chemicals,Approved,64.57,7.39,31
-2024-01-01,Western Europe,Raw Materials,Strategic,15.82,8.11,115
-2024-04-08,Africa,Machined Parts,Preferred,14.61,0.89,86
-2024-12-23,North America,Machined Parts,Strategic,1.39,6.15,27
-2024-12-28,Middle East,Electronic Components,Probation,87.52,0.64,42
-2024-07-04,East Asia,Machined Parts,Approved,88.38,4.16,59
-2024-08-24,North America,Logistics Services,Approved,22.4,0.54,35
-2024-03-19,Western Europe,Machined Parts,Preferred,76.49,6.74,76
-2024-07-24,Africa,Packaging,Preferred,65.73,2.68,70
-2024-04-30,Eastern Europe,Chemicals,Preferred,88.88,2.65,21
-2024-11-30,Eastern Europe,Machined Parts,Approved,99.94,2.18,47
-2025-04-22,Western Europe,Chemicals,Strategic,39.68,8.85,86
-2024-06-18,Western Europe,Office Supplies,Preferred,2.08,1.29,37
-2025-05-21,Middle East,Raw Materials,Preferred,18.73,0.22,62
-2024-09-28,North America,Electronic Components,Strategic,50.3,2.46,98
-2024-03-15,Middle East,Packaging,Strategic,92.46,0.38,118
-2024-04-07,Africa,Office Supplies,Strategic,39.4,2.76,108
-2024-09-29,South Asia,Chemicals,Approved,69.81,7.28,66
-2024-06-29,Western Europe,Office Supplies,Preferred,8.69,2.04,115
-2024-12-03,East Asia,Office Supplies,Approved,76.23,6.74,32
-2024-08-07,East Asia,Chemicals,Strategic,16.88,4.62,110
-2024-04-26,North America,Raw Materials,Approved,53.5,7.69,23
-2024-08-25,Africa,Logistics Services,Conditional,18.71,0.11,34
-2024-03-18,South America,Chemicals,Conditional,60.13,1.05,115
-2024-11-21,South Asia,Packaging,Approved,23.52,2.38,73
-2025-01-17,Africa,Chemicals,Probation,30.4,4.66,110
-2024-08-22,South Asia,Office Supplies,Conditional,29.52,7.95,28
-2024-08-07,North America,Machined Parts,Probation,82.48,1.24,4
-2024-04-01,Eastern Europe,Logistics Services,Strategic,77.74,1.78,118
-2024-11-06,Western Europe,Office Supplies,Probation,28.79,3.07,93
-2025-04-09,Africa,Logistics Services,Conditional,86.82,4.27,82
-2024-06-06,Western Europe,Packaging,Approved,70.96,7.33,30
-2025-02-26,South Asia,Machined Parts,Probation,21.31,6.58,44
-2024-04-16,East Asia,Office Supplies,Conditional,84.65,0.8,61
+saleDate,storeRegion,productCategory,paymentMethod,unitsSold,unitPrice,discountAmount,totalRevenue
+2024-07-12,Pacific Northwest,Toys,Cash,218,1685.95,14.91,19017.16
+2024-09-02,Southwest,Home Goods,Cash,369,1561.77,218.5,23184.73
+2024-09-20,Mountain,Sporting Goods,Mobile Pay,322,927.51,326.23,16118.29
+2024-05-21,Southwest,Electronics,Credit Card,416,1802.14,212.77,26742.69
+2024-05-15,Pacific Northwest,Toys,Mobile Pay,408,1972.4,281.76,30634.43
+2025-05-02,Southwest,Electronics,Cash,142,1626.07,373.18,46521.55
+2024-04-01,Southeast,Apparel,Debit Card,79,1647.3,214.11,28010.66
+2024-12-28,Pacific Northwest,Grocery,Credit Card,457,661.3,338.17,40811.31
+2024-02-02,Northeast,Electronics,Mobile Pay,86,354.47,337.05,47474.04
+2024-06-20,Midwest,Electronics,Gift Card,264,537.02,160.22,49934.97
+2024-08-29,Midwest,Electronics,Gift Card,435,1815.73,321.95,36651.08
+2025-04-19,Midwest,Toys,Debit Card,496,36.72,207.98,32466.28
+2025-01-23,Pacific Northwest,Toys,Credit Card,412,1584.68,348.28,6481.63
+2024-06-10,Southeast,Apparel,Debit Card,43,189.72,309.09,34873.09
+2024-05-05,West,Electronics,Credit Card,454,1102.78,63.6,43420.07
+2024-04-18,West,Apparel,Gift Card,322,1038.18,382.41,37656.5
+2025-02-24,Midwest,Beauty,Mobile Pay,317,1139.7,22.44,48815.63
+2024-02-24,Southwest,Beauty,Mobile Pay,450,1408.44,278.16,18386.93
+2025-03-18,Mountain,Apparel,Mobile Pay,376,913.82,140.44,3351.52
+2024-12-16,Pacific Northwest,Beauty,Gift Card,263,548.13,368.0,23378.93
+2025-02-03,Mountain,Sporting Goods,Mobile Pay,289,1924.85,260.96,31944.71
+2024-06-10,Northeast,Sporting Goods,Gift Card,285,1593.64,10.82,22539.69
+2024-11-29,Southeast,Electronics,Cash,231,615.7,363.0,1639.15
+2025-05-10,West,Grocery,Debit Card,340,1071.77,9.01,11720.62
+2024-12-14,Mountain,Beauty,Cash,116,1229.69,233.1,4259.12
+2024-06-04,Northeast,Home Goods,Cash,13,1912.97,125.13,28342.2
+2024-06-13,Southeast,Toys,Mobile Pay,165,1014.54,257.75,18183.15
+2024-04-29,Mountain,Home Goods,Cash,235,300.35,350.53,483.32
+2025-06-17,Midwest,Sporting Goods,Gift Card,455,259.93,22.38,818.6
+2024-09-18,Midwest,Grocery,Debit Card,327,1429.47,311.44,24390.04
+2025-02-16,Pacific Northwest,Home Goods,Mobile Pay,25,428.49,367.4,41685.76
+2024-10-23,Northeast,Home Goods,Credit Card,42,976.16,91.41,44271.82
+2024-09-17,Southwest,Beauty,Credit Card,100,1185.42,382.45,4172.32
+2024-01-23,Pacific Northwest,Sporting Goods,Gift Card,458,390.97,194.83,24665.85
+2024-06-12,Pacific Northwest,Apparel,Gift Card,134,744.23,304.93,8992.07
+2024-02-01,West,Grocery,Debit Card,464,1662.16,239.18,3969.37
+2024-02-19,Mountain,Electronics,Credit Card,46,1353.27,202.02,18531.18
+2024-07-02,Pacific Northwest,Toys,Mobile Pay,58,1080.43,158.57,1073.02
+2025-06-23,Northeast,Beauty,Cash,229,522.44,240.88,42881.17
+2024-12-08,Mountain,Toys,Credit Card,237,538.04,194.67,44809.88
+2024-08-08,Northeast,Apparel,Mobile Pay,432,1848.99,168.68,33144.87
+2025-04-14,West,Apparel,Mobile Pay,122,1727.44,363.39,4515.19
+2024-04-01,West,Home Goods,Credit Card,100,1848.64,379.5,48668.49
+2025-03-30,Northeast,Beauty,Gift Card,330,1667.45,192.36,11196.02
+2024-06-07,Southwest,Beauty,Debit Card,391,1706.33,321.87,45876.36
+2024-06-13,Northeast,Home Goods,Mobile Pay,427,405.53,130.62,15387.38
+2024-07-29,Mountain,Grocery,Mobile Pay,56,1269.25,310.46,12803.86
+2024-08-03,Pacific Northwest,Apparel,Gift Card,334,880.93,259.61,42235.41
+2024-03-29,Midwest,Beauty,Gift Card,94,1394.57,2.77,45902.54
+2025-06-21,Southeast,Apparel,Gift Card,284,785.21,336.09,18469.38
+2024-01-14,Southwest,Beauty,Cash,473,1121.49,173.78,11823.26
+2024-08-23,Mountain,Electronics,Mobile Pay,68,1321.92,300.04,26255.04
+2025-01-12,Northeast,Sporting Goods,Gift Card,351,818.42,27.36,46837.91
+2024-07-07,Mountain,Sporting Goods,Cash,327,1722.77,176.26,6400.6
+2024-05-25,Northeast,Home Goods,Mobile Pay,476,895.28,8.44,325.96
+2024-06-19,Mountain,Home Goods,Cash,439,1176.33,160.42,1901.01
+2024-08-12,Southeast,Beauty,Gift Card,180,166.76,287.23,33108.07
+2024-05-24,West,Electronics,Credit Card,162,373.74,268.82,47669.46
+2024-08-10,Pacific Northwest,Home Goods,Credit Card,366,1587.65,344.03,44555.95
+2024-12-23,West,Beauty,Credit Card,41,637.8,115.39,9330.54
+2025-03-23,Pacific Northwest,Home Goods,Mobile Pay,387,1666.83,377.38,36135.24
+2025-03-31,Southeast,Home Goods,Credit Card,272,1084.04,315.95,46620.95
+2024-02-02,Southeast,Sporting Goods,Mobile Pay,163,445.7,368.58,7622.24
+2024-11-24,Northeast,Electronics,Mobile Pay,164,773.67,307.93,13213.74
+2024-08-23,Southeast,Electronics,Gift Card,481,1972.08,133.63,13191.05
+2025-02-25,Southeast,Sporting Goods,Mobile Pay,84,1171.59,61.97,3897.98
+2024-10-26,Mountain,Beauty,Cash,22,1881.58,212.31,39769.87
+2024-10-27,West,Beauty,Debit Card,126,1093.98,262.49,21957.68
+2025-01-02,Southwest,Apparel,Credit Card,387,404.19,329.28,4490.31
+2024-01-15,Southwest,Beauty,Gift Card,251,1311.72,349.12,34137.06
+2024-11-06,West,Home Goods,Cash,343,1253.4,118.78,32561.56
+2024-06-18,Southwest,Electronics,Debit Card,223,1323.02,252.93,36597.3
+2024-09-09,Pacific Northwest,Sporting Goods,Debit Card,494,370.7,124.17,20699.44
+2024-05-23,Mountain,Grocery,Debit Card,174,961.3,391.88,27622.8
+2025-02-24,Northeast,Home Goods,Gift Card,232,445.57,94.89,15331.13
+2025-03-01,Southwest,Electronics,Debit Card,78,151.7,332.81,26630.29
+2025-02-28,Pacific Northwest,Grocery,Debit Card,33,40.24,328.08,207.98
+2024-01-13,West,Home Goods,Gift Card,157,1320.19,292.99,36440.94
+2024-04-15,Mountain,Electronics,Mobile Pay,474,569.56,348.44,27987.66
+2024-09-25,Pacific Northwest,Grocery,Credit Card,17,1808.85,0.81,9969.44
+2024-06-25,Northeast,Electronics,Credit Card,431,170.1,310.52,6893.18
+2025-05-13,Northeast,Beauty,Debit Card,336,1247.36,131.47,45667.52
+2024-01-23,Southeast,Apparel,Credit Card,252,623.56,31.96,39388.46
+2024-03-27,Mountain,Toys,Debit Card,434,1918.3,378.07,35936.8
+2024-09-24,Midwest,Sporting Goods,Cash,53,892.3,54.56,10470.19
+2025-01-27,Mountain,Electronics,Debit Card,273,1997.44,286.68,14818.07
+2025-01-13,Southwest,Beauty,Gift Card,106,891.64,198.58,5709.78
+2025-01-09,Northeast,Sporting Goods,Mobile Pay,134,525.49,157.24,34205.49
+2024-05-27,Pacific Northwest,Electronics,Cash,398,177.4,203.06,28562.04
+2025-05-11,Northeast,Grocery,Credit Card,1,291.14,272.39,2089.22
+2025-04-19,Mountain,Sporting Goods,Cash,324,1014.95,116.89,44637.98
+2024-06-16,Southeast,Beauty,Gift Card,39,1698.01,12.53,8964.99
+2024-05-17,Southwest,Grocery,Cash,390,558.5,82.97,30512.51
+2024-05-27,Midwest,Apparel,Mobile Pay,339,1865.13,309.43,40934.83
+2024-11-21,West,Home Goods,Gift Card,136,755.82,183.47,32281.19
+2024-03-19,West,Electronics,Mobile Pay,181,1386.89,91.15,17756.88
+2024-04-18,West,Apparel,Credit Card,495,1975.13,129.97,36405.32
+2024-02-13,Northeast,Home Goods,Cash,280,684.99,99.09,4437.12
+2024-04-28,Mountain,Home Goods,Mobile Pay,364,162.87,2.47,30057.57
+2024-04-09,Southwest,Grocery,Mobile Pay,57,352.2,256.18,20726.56
+2024-08-25,West,Sporting Goods,Gift Card,230,1524.92,99.06,13616.84
+2025-02-02,Midwest,Toys,Gift Card,249,1259.1,20.65,5446.63
+2025-02-04,Northeast,Grocery,Mobile Pay,295,725.34,80.16,2852.85
+2024-10-23,Midwest,Toys,Credit Card,48,1956.81,119.2,8443.08
+2025-04-23,Southwest,Sporting Goods,Credit Card,228,1045.2,389.0,41851.69
+2024-06-20,Northeast,Toys,Credit Card,17,946.04,72.21,18862.78
+2025-05-24,Midwest,Electronics,Debit Card,380,292.59,264.71,9618.16
+2024-09-25,West,Electronics,Credit Card,66,1514.58,9.22,1944.05
+2024-09-22,Southwest,Apparel,Credit Card,226,1736.43,399.23,24359.88
+2025-02-25,Pacific Northwest,Grocery,Mobile Pay,461,1551.23,189.29,450.41
+2024-11-11,Pacific Northwest,Grocery,Gift Card,41,1764.51,329.18,31070.63
+2025-03-30,Northeast,Electronics,Debit Card,125,352.78,218.51,31629.55
+2024-10-24,Pacific Northwest,Apparel,Debit Card,29,1405.31,228.25,47831.26
+2024-04-01,Pacific Northwest,Toys,Debit Card,480,922.76,197.96,25631.21
+2024-09-28,West,Home Goods,Gift Card,300,279.91,89.85,28133.75
+2024-04-20,Southeast,Beauty,Debit Card,29,1495.71,106.25,796.9
+2025-03-10,Southeast,Toys,Credit Card,87,1840.81,331.25,42345.78
+2024-01-07,Pacific Northwest,Home Goods,Gift Card,259,1811.58,120.29,43050.4
+2024-11-03,Southwest,Home Goods,Mobile Pay,84,599.53,48.75,9705.67
+2024-01-03,West,Sporting Goods,Credit Card,222,263.89,191.66,862.74
+2024-10-30,Mountain,Home Goods,Cash,439,1883.66,65.49,9097.43
+2025-03-14,Pacific Northwest,Electronics,Credit Card,106,1754.58,363.12,4556.97
+2024-05-24,Midwest,Apparel,Mobile Pay,321,1519.73,162.75,16492.26
+2025-01-25,West,Grocery,Debit Card,36,437.23,57.65,21826.11
+2024-07-02,Southwest,Sporting Goods,Credit Card,435,1104.21,165.49,23150.65
+2024-01-29,West,Apparel,Gift Card,231,1378.65,239.62,20492.64
+2024-09-28,West,Toys,Gift Card,185,156.68,275.22,48810.56
+2025-05-10,West,Home Goods,Cash,439,872.25,128.04,29329.43
+2024-07-06,Pacific Northwest,Home Goods,Cash,54,1309.25,118.9,5032.39
+2024-10-28,Southwest,Grocery,Credit Card,490,249.76,144.82,24818.99
+2024-07-02,Southwest,Electronics,Gift Card,496,733.66,225.18,34229.43
+2025-04-11,Midwest,Electronics,Debit Card,118,1876.6,264.59,23549.79
+2024-03-13,Southwest,Toys,Debit Card,476,1695.25,358.33,7835.05
+2024-10-08,West,Home Goods,Cash,486,1908.46,240.88,39271.99
+2024-09-06,Pacific Northwest,Apparel,Gift Card,259,844.65,86.55,13238.85
+2024-09-06,Mountain,Home Goods,Mobile Pay,289,1436.24,172.98,1143.81
+2024-04-18,Mountain,Beauty,Mobile Pay,94,1468.67,254.93,49315.68
+2024-04-25,West,Electronics,Debit Card,209,1912.86,255.74,13970.39
+2024-05-05,Mountain,Apparel,Mobile Pay,70,1103.55,26.61,38819.24
+2024-11-10,Pacific Northwest,Toys,Mobile Pay,310,1861.19,338.74,16230.7
+2025-03-19,Mountain,Toys,Debit Card,212,1206.51,64.88,4333.42
+2024-01-01,Southeast,Beauty,Gift Card,434,1548.19,214.25,12927.05
+2025-06-22,Northeast,Electronics,Gift Card,64,1035.03,337.04,44442.79
+2025-01-19,Pacific Northwest,Sporting Goods,Debit Card,203,522.22,153.92,47425.76
+2024-01-24,West,Toys,Cash,297,1822.46,366.81,14310.89
+2024-05-18,Northeast,Beauty,Credit Card,22,1532.57,137.33,15777.42
+2024-12-11,Mountain,Apparel,Credit Card,310,1195.16,178.59,13095.34
+2024-12-20,Pacific Northwest,Apparel,Gift Card,127,805.45,309.75,33676.03
+2025-03-09,West,Beauty,Gift Card,152,40.06,151.2,16332.29
+2024-01-08,Northeast,Electronics,Debit Card,336,1997.87,102.85,32129.63
+2024-02-09,Midwest,Sporting Goods,Debit Card,16,67.14,16.08,26124.13
+2024-12-10,Midwest,Sporting Goods,Debit Card,360,467.53,388.27,30352.47
+2024-10-29,West,Sporting Goods,Gift Card,375,1147.71,224.2,32773.0
+2024-10-24,Southwest,Toys,Cash,333,1649.95,265.39,2932.59
+2024-06-18,Mountain,Electronics,Mobile Pay,117,626.42,391.14,11061.07
+2025-05-31,Southeast,Electronics,Debit Card,212,1813.87,387.03,31072.07
+2025-02-13,West,Grocery,Debit Card,320,1096.32,190.2,41417.02
+2024-04-03,West,Electronics,Cash,346,1204.88,65.41,18758.96
+2025-04-08,West,Apparel,Credit Card,250,1619.91,13.56,36216.0
+2025-03-24,West,Home Goods,Gift Card,491,1058.07,224.92,7080.34
+2024-09-06,Midwest,Electronics,Cash,470,884.34,349.37,43221.43
+2025-03-04,Midwest,Electronics,Mobile Pay,365,1687.52,256.48,9203.1
+2025-04-24,Mountain,Electronics,Debit Card,257,1442.07,130.89,42912.81
+2024-10-12,Midwest,Beauty,Credit Card,413,911.95,297.45,43295.14
+2024-08-21,Northeast,Grocery,Credit Card,324,555.07,319.25,25594.12
+2025-03-30,Southwest,Apparel,Cash,431,882.4,314.85,44380.1
+2024-12-16,Northeast,Electronics,Credit Card,350,604.12,294.81,35383.99
+2025-06-07,Pacific Northwest,Home Goods,Mobile Pay,166,939.48,275.93,15473.93
+2024-05-21,Southwest,Beauty,Credit Card,311,1967.11,59.74,18457.61
+2024-03-09,Mountain,Home Goods,Credit Card,465,741.37,195.95,10861.04
+2025-04-24,West,Toys,Cash,147,185.09,84.23,37017.4
+2025-03-07,Northeast,Sporting Goods,Credit Card,190,639.4,234.66,27856.29
+2024-10-19,West,Sporting Goods,Cash,262,760.86,245.66,28137.37
+2025-01-07,Pacific Northwest,Apparel,Mobile Pay,212,45.38,189.96,23551.39
+2024-06-08,Southeast,Electronics,Gift Card,214,1154.24,326.82,43269.83
+2025-01-04,Midwest,Electronics,Debit Card,258,1504.19,129.43,26179.24
+2025-03-12,Pacific Northwest,Apparel,Cash,248,979.75,122.04,37175.71
+2024-04-04,Northeast,Grocery,Credit Card,260,288.61,357.01,7276.26
+2024-07-21,Mountain,Apparel,Debit Card,254,1033.65,120.28,26678.25
+2025-01-24,Midwest,Apparel,Mobile Pay,181,474.89,42.28,3787.22
+2025-01-08,Southeast,Beauty,Credit Card,83,510.13,255.87,465.66
+2024-05-18,Mountain,Grocery,Credit Card,235,754.89,350.93,47782.21
+2025-04-05,West,Home Goods,Debit Card,450,99.6,69.1,28506.77
+2024-11-26,Northeast,Home Goods,Cash,368,1222.57,86.47,33742.96
+2024-11-15,Pacific Northwest,Sporting Goods,Cash,361,1288.91,312.72,32972.42
+2024-03-21,Northeast,Electronics,Debit Card,265,808.95,166.21,35697.81
+2024-02-11,Northeast,Beauty,Mobile Pay,200,658.74,375.46,13025.22
+2025-05-11,West,Home Goods,Gift Card,340,720.59,102.35,34142.47
+2024-04-20,Southwest,Beauty,Gift Card,151,1198.9,201.91,21763.78
+2024-10-24,West,Home Goods,Gift Card,48,816.8,385.11,22212.46
+2025-05-29,Northeast,Apparel,Credit Card,461,1875.63,205.31,41355.89
+2024-04-23,Pacific Northwest,Toys,Cash,9,1276.12,229.82,43317.45
+2024-04-06,West,Apparel,Mobile Pay,438,675.19,271.58,35339.64
+2025-03-14,Midwest,Electronics,Gift Card,103,847.22,84.81,24837.05
+2024-06-27,Southeast,Beauty,Debit Card,6,1895.95,380.23,16358.47
+2024-02-28,Mountain,Electronics,Cash,91,1663.24,233.08,30283.86
+2024-01-25,Mountain,Grocery,Credit Card,100,505.55,182.49,43955.78
+2024-11-09,Midwest,Home Goods,Debit Card,265,1103.82,59.56,45947.42
+2024-09-23,West,Electronics,Cash,64,164.08,354.51,20137.57
+2024-01-07,West,Electronics,Cash,194,254.43,248.13,26981.56
+2024-09-27,West,Home Goods,Cash,471,1522.48,263.0,4027.55
+2025-03-26,West,Toys,Credit Card,440,628.05,103.25,30942.7
+2024-03-28,Northeast,Electronics,Cash,90,628.43,168.55,20944.51
+2024-11-25,Northeast,Beauty,Cash,328,516.8,41.46,48167.24
+2024-07-27,Midwest,Home Goods,Gift Card,116,106.89,128.19,541.38
+2025-02-06,Mountain,Apparel,Debit Card,59,1359.17,325.31,41115.22
+2024-10-27,Midwest,Electronics,Cash,236,919.62,385.87,35589.76
+2024-10-20,Southeast,Grocery,Mobile Pay,34,454.68,358.1,29818.48
+2024-11-07,Midwest,Home Goods,Mobile Pay,16,1873.18,257.93,13913.62
+2024-03-11,Southwest,Beauty,Mobile Pay,324,1164.25,303.04,1653.02
+2025-05-16,Southwest,Apparel,Gift Card,10,1658.12,246.75,44375.31
+2025-04-01,Southeast,Toys,Gift Card,203,1477.64,306.53,25410.91
+2024-09-19,Southwest,Beauty,Cash,112,1252.1,49.59,40739.21
+2024-03-31,Mountain,Home Goods,Gift Card,106,1415.66,345.18,20093.02
+2025-04-11,Northeast,Toys,Credit Card,493,1036.86,158.99,33458.76
+2024-12-09,Mountain,Toys,Debit Card,480,869.26,145.25,6602.6
+2024-06-07,West,Toys,Mobile Pay,313,967.92,197.1,966.66
+2025-03-27,Midwest,Sporting Goods,Credit Card,100,921.09,365.21,8961.33
+2024-03-18,Southwest,Sporting Goods,Gift Card,229,817.42,244.31,32312.92
+2025-02-22,Southeast,Apparel,Mobile Pay,38,33.59,360.52,5320.31
+2025-01-19,Southeast,Electronics,Cash,76,1482.75,271.36,30980.16
+2025-03-25,Southwest,Apparel,Debit Card,351,377.19,265.21,33155.82
+2024-06-23,Midwest,Grocery,Debit Card,79,1900.78,5.74,30115.83
+2024-12-13,Midwest,Electronics,Credit Card,96,928.82,0.03,16153.66
+2025-06-13,Northeast,Electronics,Gift Card,102,489.98,279.5,6614.36
+2025-05-05,West,Apparel,Credit Card,305,357.62,338.12,16062.88
+2024-10-25,Midwest,Apparel,Credit Card,172,1190.43,97.88,30157.05
+2025-06-07,West,Home Goods,Mobile Pay,269,1212.27,205.91,1747.09
+2025-05-03,West,Beauty,Gift Card,181,1977.52,208.65,20782.2
+2025-03-17,Midwest,Grocery,Gift Card,427,854.46,181.86,42249.61
+2024-07-22,Pacific Northwest,Toys,Mobile Pay,460,320.12,320.79,30128.82
+2024-11-14,Southeast,Toys,Cash,403,1053.21,369.74,10781.49
+2024-07-15,Mountain,Sporting Goods,Mobile Pay,383,1036.16,188.67,6085.44
+2025-03-26,Northeast,Toys,Gift Card,132,1885.29,69.09,4870.3
+2025-05-23,Mountain,Home Goods,Credit Card,254,90.44,197.78,39253.27
+2024-05-22,Southeast,Beauty,Credit Card,417,1073.56,27.16,49271.34
+2024-11-05,Pacific Northwest,Beauty,Cash,209,53.44,96.18,143.99
+2024-10-21,Northeast,Beauty,Debit Card,416,84.23,97.27,1211.61
+2025-06-11,Pacific Northwest,Toys,Debit Card,232,131.52,92.61,9990.06
+2024-12-20,West,Apparel,Cash,319,1890.93,314.95,43348.71

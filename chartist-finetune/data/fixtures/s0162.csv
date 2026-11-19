@@ -1,241 +1,241 @@
-cost_date,project_phase,cost_category,contractor_region,actual_cost_amount,budgeted_cost_amount,labor_hours_logged,change_order_count
-2024-04-17,framing,overhead,northeast,555389.6,274871.53,460.95,22
-2025-04-27,foundation,subcontractor,northeast,459947.76,124118.86,426.98,13
-2024-07-20,final_inspection,overhead,midwest,752374.54,144223.87,255.52,11
-2024-10-08,final_inspection,overhead,west_coast,196889.26,768047.64,366.04,10
-2025-04-16,interior_finishing,subcontractor,northeast,475100.01,437901.48,111.14,18
-2024-12-31,mechanical_electrical_plumbing,equipment_rental,southwest,496222.01,583612.12,155.82,24
-2025-02-19,site_preparation,overhead,southeast,485436.03,223786.22,57.53,22
-2024-12-27,final_inspection,subcontractor,southwest,433088.96,592406.82,324.77,19
-2024-02-11,site_preparation,subcontractor,southeast,565603.01,789090.01,232.43,2
-2024-11-01,framing,subcontractor,southwest,591551.53,773984.58,279.12,15
-2024-10-29,final_inspection,labor,west_coast,184333.26,551695.39,59.34,14
-2024-10-10,framing,equipment_rental,northeast,580867.61,584983.73,314.85,10
-2024-07-09,interior_finishing,labor,northeast,398762.84,834231.83,165.83,4
-2024-01-03,framing,labor,midwest,537593.22,53120.0,58.86,7
-2025-06-08,interior_finishing,labor,mountain_west,694813.47,412880.03,416.9,25
-2025-02-08,final_inspection,overhead,southwest,69886.06,652438.64,360.9,7
-2024-09-13,final_inspection,materials,northeast,363019.02,199926.37,228.73,22
-2025-06-07,mechanical_electrical_plumbing,overhead,southwest,39081.68,705062.83,250.99,20
-2025-05-31,foundation,overhead,mountain_west,394097.38,596849.33,357.52,20
-2025-02-24,framing,overhead,mountain_west,602142.91,719132.56,420.83,3
-2024-10-11,site_preparation,labor,northeast,526584.19,767637.25,358.54,14
-2024-10-04,foundation,equipment_rental,northeast,429178.75,760768.24,365.54,9
-2025-01-17,mechanical_electrical_plumbing,overhead,midwest,209095.46,708364.58,63.51,16
-2025-06-03,foundation,materials,northeast,237919.89,822125.63,42.84,8
-2025-03-23,site_preparation,permits_and_fees,west_coast,410349.15,110734.69,117.14,13
-2024-11-29,interior_finishing,materials,northeast,432907.36,784626.9,162.68,13
-2024-08-24,mechanical_electrical_plumbing,equipment_rental,southwest,695636.88,655463.88,212.22,20
-2025-06-11,foundation,materials,southwest,785737.73,507863.79,273.28,8
-2024-06-27,mechanical_electrical_plumbing,overhead,mountain_west,641408.03,407695.98,219.31,5
-2025-03-02,site_preparation,subcontractor,midwest,79071.21,526848.04,179.43,20
-2025-04-19,final_inspection,subcontractor,southeast,241999.55,227618.75,401.02,4
-2024-01-11,framing,overhead,west_coast,714267.87,508630.89,222.96,3
-2025-04-08,framing,equipment_rental,southwest,739590.63,877485.77,238.35,15
-2024-03-23,interior_finishing,materials,west_coast,382911.62,219390.88,132.8,13
-2024-10-16,mechanical_electrical_plumbing,overhead,southwest,640426.36,573950.11,16.08,17
-2025-05-01,interior_finishing,materials,southwest,540134.76,650896.58,22.88,17
-2024-09-04,final_inspection,equipment_rental,northeast,605323.12,413108.58,248.12,8
-2024-02-24,mechanical_electrical_plumbing,equipment_rental,northeast,282950.35,479067.26,465.71,4
-2024-01-22,interior_finishing,overhead,northeast,743103.42,397323.26,178.58,21
-2024-04-19,framing,equipment_rental,northeast,292775.45,125668.47,256.38,13
-2024-08-25,foundation,overhead,mountain_west,549795.09,863804.95,44.97,21
-2024-05-18,mechanical_electrical_plumbing,overhead,southwest,471152.06,369495.32,128.41,18
-2024-09-15,final_inspection,subcontractor,midwest,362017.75,13380.9,186.93,13
-2024-07-11,final_inspection,materials,mountain_west,751452.83,88295.08,294.46,8
-2024-02-19,site_preparation,subcontractor,midwest,800767.64,632505.14,281.01,15
-2024-07-30,foundation,equipment_rental,midwest,369690.93,17829.71,229.06,11
-2025-03-13,framing,equipment_rental,midwest,660700.22,243567.59,333.49,7
-2024-08-28,mechanical_electrical_plumbing,materials,northeast,430764.93,61082.41,388.16,12
-2024-03-26,framing,overhead,northeast,69889.73,741959.56,33.98,9
-2024-10-16,foundation,materials,northeast,314488.67,296627.09,190.74,15
-2024-06-17,mechanical_electrical_plumbing,equipment_rental,midwest,579348.31,623720.77,356.03,12
-2024-10-03,interior_finishing,subcontractor,mountain_west,135807.54,420833.27,272.0,6
-2024-07-26,interior_finishing,equipment_rental,southwest,391507.0,640867.33,20.34,20
-2024-04-30,final_inspection,overhead,west_coast,655292.7,640953.48,385.87,20
-2025-06-09,site_preparation,labor,midwest,125468.16,131884.33,135.3,19
-2025-03-23,interior_finishing,permits_and_fees,midwest,810641.93,670381.64,249.54,22
-2024-03-11,foundation,labor,southwest,315500.9,280754.15,405.18,23
-2024-11-29,mechanical_electrical_plumbing,permits_and_fees,west_coast,67026.28,72057.7,224.38,14
-2025-05-19,framing,overhead,west_coast,37946.51,811100.91,353.35,2
-2024-06-17,final_inspection,labor,southeast,662520.94,10824.23,294.78,2
-2025-03-18,mechanical_electrical_plumbing,permits_and_fees,southeast,628913.21,415718.01,14.07,13
-2024-03-12,site_preparation,permits_and_fees,mountain_west,356086.0,703833.93,34.37,14
-2025-05-28,final_inspection,permits_and_fees,northeast,248271.1,55754.55,418.21,21
-2025-05-29,site_preparation,labor,southwest,322475.09,77864.96,304.15,22
-2024-10-05,foundation,permits_and_fees,west_coast,63568.36,407471.68,400.46,5
-2025-05-15,mechanical_electrical_plumbing,permits_and_fees,northeast,488664.32,104241.73,109.32,5
-2024-04-11,foundation,permits_and_fees,midwest,390928.04,37595.79,80.1,8
-2024-10-26,interior_finishing,equipment_rental,northeast,383774.56,621442.48,460.82,13
-2025-02-27,foundation,subcontractor,west_coast,238023.44,465439.03,82.02,8
-2024-10-30,mechanical_electrical_plumbing,equipment_rental,northeast,798045.4,838316.71,105.85,8
-2025-04-19,interior_finishing,equipment_rental,southwest,765947.65,386928.81,181.53,8
-2025-06-13,framing,materials,midwest,133482.13,232151.9,392.23,21
-2024-04-20,final_inspection,permits_and_fees,northeast,337503.39,100952.68,66.59,21
-2025-05-01,interior_finishing,permits_and_fees,mountain_west,517656.05,660784.73,467.15,25
-2024-08-10,foundation,equipment_rental,midwest,512196.03,178839.46,240.75,14
-2025-05-17,final_inspection,overhead,southwest,697112.2,246994.81,408.97,0
-2024-06-09,site_preparation,subcontractor,mountain_west,32597.05,864311.6,332.83,9
-2024-12-09,framing,permits_and_fees,northeast,526446.84,105716.53,24.49,17
-2024-11-13,mechanical_electrical_plumbing,subcontractor,mountain_west,498122.29,478306.53,177.63,20
-2025-04-15,site_preparation,labor,southwest,698601.32,767347.39,216.42,22
-2024-05-30,framing,permits_and_fees,west_coast,326551.82,508018.09,417.96,25
-2024-12-07,mechanical_electrical_plumbing,subcontractor,northeast,809200.09,115790.47,241.44,16
-2024-07-10,site_preparation,equipment_rental,southwest,553024.18,831163.77,273.81,1
-2025-04-03,mechanical_electrical_plumbing,subcontractor,midwest,21549.38,846239.83,376.72,6
-2024-05-31,foundation,labor,midwest,102315.65,16720.19,157.04,7
-2024-05-14,mechanical_electrical_plumbing,subcontractor,northeast,518111.82,192455.73,410.51,1
-2025-05-25,foundation,equipment_rental,southeast,627395.21,751311.46,342.13,10
-2024-05-30,site_preparation,materials,southwest,773570.23,192392.11,397.79,8
-2024-03-24,mechanical_electrical_plumbing,materials,mountain_west,451933.37,253077.49,157.81,9
-2025-03-20,framing,labor,southwest,156104.7,362273.1,278.06,13
-2024-03-18,final_inspection,subcontractor,southeast,745940.47,237779.33,451.71,16
-2024-05-06,final_inspection,subcontractor,southwest,234929.07,897466.09,18.82,25
-2024-04-13,framing,subcontractor,northeast,488970.77,457598.94,238.04,18
-2024-01-26,mechanical_electrical_plumbing,subcontractor,mountain_west,662195.77,701559.96,155.65,20
-2025-04-13,site_preparation,overhead,midwest,259794.71,359087.17,35.05,15
-2024-03-21,site_preparation,equipment_rental,midwest,233517.54,215700.98,269.93,19
-2024-07-04,site_preparation,permits_and_fees,southeast,346320.77,50246.78,302.23,23
-2024-11-16,site_preparation,labor,southwest,179705.03,271404.98,378.99,23
-2024-12-30,mechanical_electrical_plumbing,subcontractor,midwest,506993.38,708739.08,161.43,4
-2024-09-18,final_inspection,permits_and_fees,northeast,717484.04,539272.53,417.11,2
-2024-12-15,site_preparation,permits_and_fees,mountain_west,750246.61,702703.65,52.1,19
-2024-07-16,site_preparation,permits_and_fees,mountain_west,538263.98,350729.75,294.64,15
-2024-12-31,framing,permits_and_fees,southeast,439883.04,75562.48,285.07,12
-2024-10-11,mechanical_electrical_plumbing,materials,west_coast,601434.63,593378.08,358.96,16
-2024-11-18,interior_finishing,equipment_rental,midwest,396177.37,747858.86,198.81,10
-2025-04-30,final_inspection,equipment_rental,northeast,27830.06,595715.01,397.83,22
-2025-02-22,foundation,subcontractor,southwest,197605.78,672503.11,0.8,8
-2024-08-21,mechanical_electrical_plumbing,overhead,northeast,463114.63,101993.73,185.09,19
-2024-06-30,foundation,permits_and_fees,southeast,140837.87,856430.29,329.81,17
-2025-06-12,site_preparation,equipment_rental,southwest,792872.75,636964.89,403.15,12
-2024-11-16,mechanical_electrical_plumbing,overhead,west_coast,764820.08,433274.12,157.03,19
-2025-03-14,interior_finishing,equipment_rental,west_coast,362087.64,361610.67,347.19,15
-2024-07-20,foundation,subcontractor,midwest,61307.9,154861.95,309.38,10
-2025-01-30,foundation,subcontractor,southwest,637505.68,741838.43,55.84,8
-2024-06-22,mechanical_electrical_plumbing,materials,west_coast,765197.71,406168.85,25.23,5
-2024-09-25,interior_finishing,subcontractor,southwest,791675.77,48907.86,391.02,0
-2024-01-05,foundation,permits_and_fees,southeast,790343.77,400680.37,92.97,7
-2024-02-23,mechanical_electrical_plumbing,overhead,northeast,481108.95,340560.44,455.19,1
-2024-06-03,final_inspection,subcontractor,southeast,831251.3,231468.35,462.9,16
-2024-10-01,final_inspection,overhead,west_coast,130440.26,804539.05,66.89,7
-2024-06-29,framing,equipment_rental,midwest,26132.2,636866.59,3.97,1
-2025-05-30,framing,subcontractor,mountain_west,624485.75,422997.97,338.71,10
-2025-01-29,mechanical_electrical_plumbing,subcontractor,southeast,659842.82,423858.11,129.55,16
-2024-01-10,final_inspection,labor,southwest,157192.9,122958.44,148.61,24
-2024-10-13,mechanical_electrical_plumbing,overhead,west_coast,146771.52,73518.17,113.56,7
-2024-04-22,final_inspection,overhead,southeast,606899.85,801746.63,409.52,0
-2025-03-02,final_inspection,materials,mountain_west,660668.89,34967.28,120.31,17
-2024-09-05,framing,overhead,midwest,816227.42,137053.4,210.63,2
-2024-09-18,foundation,subcontractor,west_coast,629239.54,189968.78,284.1,11
-2024-03-20,mechanical_electrical_plumbing,materials,midwest,333075.12,450838.88,277.68,20
-2025-03-15,mechanical_electrical_plumbing,overhead,southwest,559498.17,489592.76,377.09,21
-2024-09-06,interior_finishing,labor,mountain_west,715702.59,63128.43,277.37,12
-2024-11-13,final_inspection,permits_and_fees,mountain_west,735496.8,191149.08,120.29,14
-2024-12-08,final_inspection,overhead,west_coast,163339.96,751176.68,420.06,11
-2025-01-01,framing,permits_and_fees,west_coast,253038.72,493069.8,411.23,2
-2024-07-06,site_preparation,subcontractor,northeast,579709.61,128271.17,234.56,3
-2024-08-10,final_inspection,overhead,southwest,373202.51,594220.6,112.99,11
-2024-08-19,framing,labor,midwest,692739.88,756841.1,391.78,2
-2024-06-12,framing,subcontractor,southwest,156774.34,73078.81,80.0,1
-2024-11-18,mechanical_electrical_plumbing,labor,southwest,65561.39,412332.57,432.42,18
-2025-02-03,site_preparation,materials,midwest,153229.92,34446.09,341.69,20
-2025-03-29,site_preparation,overhead,west_coast,639184.9,269158.15,458.23,8
-2025-06-16,foundation,materials,northeast,350189.68,86397.35,319.28,22
-2025-03-29,framing,materials,southwest,832345.76,636038.48,65.77,14
-2024-05-19,site_preparation,overhead,northeast,120664.78,458985.94,448.49,6
-2025-02-06,mechanical_electrical_plumbing,permits_and_fees,southwest,647585.42,208358.39,479.87,11
-2024-02-27,foundation,equipment_rental,northeast,83905.2,296778.17,356.51,20
-2024-01-12,interior_finishing,permits_and_fees,northeast,80337.57,398401.98,35.4,8
-2024-03-23,site_preparation,labor,southwest,464318.44,765228.94,127.27,24
-2024-04-24,site_preparation,materials,southwest,389035.89,392522.17,440.38,2
-2025-06-03,site_preparation,equipment_rental,midwest,541378.8,217185.95,19.91,3
-2024-01-20,framing,subcontractor,southeast,436949.3,488200.25,367.36,12
-2024-08-22,final_inspection,permits_and_fees,northeast,27777.88,514840.73,65.98,11
-2024-12-23,site_preparation,labor,west_coast,43487.33,746131.06,350.52,15
-2024-07-30,interior_finishing,subcontractor,midwest,173950.76,73823.34,365.79,1
-2025-05-29,foundation,equipment_rental,southwest,110929.49,373855.79,368.52,14
-2025-01-18,final_inspection,labor,midwest,63767.85,414541.07,318.92,2
-2024-11-11,foundation,labor,west_coast,692700.61,401564.98,316.57,10
-2024-10-27,final_inspection,permits_and_fees,southeast,750395.91,356168.05,396.3,23
-2024-07-07,final_inspection,subcontractor,southeast,280307.86,225452.97,156.88,13
-2024-03-14,mechanical_electrical_plumbing,permits_and_fees,northeast,238106.44,125340.04,87.82,9
-2024-07-24,mechanical_electrical_plumbing,labor,southeast,23497.54,683477.9,91.55,11
-2024-05-31,interior_finishing,materials,southwest,311878.36,402831.43,215.59,19
-2024-12-09,foundation,equipment_rental,midwest,313917.7,526278.5,453.05,18
-2025-01-15,foundation,subcontractor,southwest,85906.54,505271.22,220.21,17
-2025-06-05,interior_finishing,labor,midwest,365324.8,632582.07,325.62,17
-2025-02-20,final_inspection,overhead,mountain_west,719908.02,278311.27,313.06,10
-2025-01-03,interior_finishing,materials,northeast,305136.22,635316.88,42.3,0
-2024-04-11,framing,materials,mountain_west,395910.4,617689.84,107.3,13
-2024-04-07,framing,overhead,southeast,5263.29,106220.88,46.32,19
-2025-03-27,framing,labor,northeast,524082.78,747780.97,421.86,15
-2024-07-19,mechanical_electrical_plumbing,permits_and_fees,southeast,197780.04,754294.15,352.39,7
-2025-03-12,framing,materials,mountain_west,781852.67,368189.99,169.17,4
-2024-12-08,foundation,labor,mountain_west,845830.51,513931.5,264.45,21
-2024-11-30,mechanical_electrical_plumbing,overhead,southeast,422736.84,330019.24,440.62,12
-2024-07-13,framing,permits_and_fees,southwest,838856.0,483198.66,421.27,8
-2025-05-11,interior_finishing,equipment_rental,southeast,227347.51,25833.69,274.35,4
-2025-01-10,final_inspection,subcontractor,mountain_west,333090.3,105470.79,460.79,12
-2024-09-03,framing,overhead,mountain_west,482945.44,830381.06,156.77,25
-2024-02-24,foundation,subcontractor,southeast,517708.57,460925.87,86.61,23
-2024-10-03,foundation,labor,northeast,724078.75,105572.14,453.49,5
-2025-02-13,interior_finishing,subcontractor,southwest,691449.01,269605.48,15.76,1
-2025-02-23,mechanical_electrical_plumbing,permits_and_fees,mountain_west,524806.9,753434.95,48.52,18
-2024-07-31,interior_finishing,permits_and_fees,midwest,482253.61,136305.7,417.51,20
-2024-01-23,framing,overhead,west_coast,213669.6,557393.66,168.4,11
-2024-08-27,mechanical_electrical_plumbing,equipment_rental,west_coast,579682.41,63162.29,313.66,17
-2025-05-04,final_inspection,subcontractor,mountain_west,738041.38,222028.48,385.79,3
-2025-04-08,interior_finishing,permits_and_fees,southwest,51835.44,563419.57,93.46,10
-2024-10-23,interior_finishing,labor,southwest,235359.09,72084.19,275.77,23
-2024-02-01,interior_finishing,permits_and_fees,southwest,22258.42,460917.85,376.78,23
-2024-04-22,interior_finishing,materials,southwest,847984.46,237158.45,443.9,11
-2025-02-06,final_inspection,labor,northeast,540018.16,427550.22,80.51,24
-2025-01-10,framing,overhead,west_coast,563458.48,816804.01,166.84,24
-2024-06-06,foundation,equipment_rental,southeast,236771.63,112399.48,375.39,24
-2024-03-30,framing,overhead,midwest,720070.27,819078.78,407.84,0
-2024-11-10,site_preparation,equipment_rental,west_coast,307567.46,528646.19,165.62,16
-2024-07-14,foundation,labor,southwest,428405.66,304453.5,380.58,10
-2024-07-02,foundation,overhead,west_coast,804343.27,62858.22,337.14,19
-2024-07-23,foundation,materials,midwest,608162.45,242429.02,14.94,17
-2024-08-14,interior_finishing,equipment_rental,west_coast,496644.01,96967.99,203.69,24
-2024-08-07,mechanical_electrical_plumbing,subcontractor,southeast,690394.01,481257.79,82.23,8
-2024-12-18,framing,overhead,west_coast,231827.66,232020.57,70.41,19
-2024-12-15,foundation,materials,midwest,356336.71,490891.98,199.37,12
-2024-09-18,mechanical_electrical_plumbing,equipment_rental,midwest,681352.23,20525.2,164.17,22
-2024-01-14,framing,equipment_rental,west_coast,218032.83,859425.16,415.66,10
-2024-02-22,foundation,equipment_rental,southeast,11726.58,68762.58,152.75,23
-2025-03-16,framing,overhead,southeast,433813.66,521893.69,13.99,16
-2024-02-11,framing,equipment_rental,west_coast,50220.23,90112.79,182.46,6
-2025-01-13,framing,permits_and_fees,west_coast,576779.15,16783.27,479.7,25
-2024-11-08,final_inspection,permits_and_fees,southeast,604361.38,251636.26,5.78,2
-2024-09-13,interior_finishing,equipment_rental,northeast,787398.56,677196.58,55.19,23
-2024-02-07,mechanical_electrical_plumbing,subcontractor,southwest,202181.75,426016.98,467.03,0
-2025-03-21,final_inspection,subcontractor,southwest,537757.62,280380.2,75.6,24
-2024-11-25,site_preparation,equipment_rental,midwest,789578.64,435501.76,394.58,17
-2025-03-28,interior_finishing,labor,southwest,348636.83,198033.84,25.12,14
-2025-05-11,framing,materials,west_coast,127931.76,5051.18,70.68,11
-2025-05-31,framing,labor,west_coast,442696.51,126992.11,148.62,12
-2024-09-09,final_inspection,labor,mountain_west,78394.12,882804.66,61.74,14
-2025-03-14,interior_finishing,permits_and_fees,southeast,655555.06,91024.94,371.45,24
-2024-04-09,final_inspection,equipment_rental,midwest,761124.4,537980.3,322.44,18
-2024-06-03,framing,materials,mountain_west,725332.7,820433.61,37.38,11
-2024-01-11,interior_finishing,materials,west_coast,784331.91,57503.62,267.99,14
-2024-08-03,final_inspection,permits_and_fees,mountain_west,383413.52,425309.82,248.44,7
-2025-01-16,interior_finishing,materials,midwest,330442.26,108674.66,303.9,25
-2024-11-04,foundation,overhead,west_coast,215663.44,183290.54,59.02,15
-2024-03-13,framing,permits_and_fees,southeast,111532.62,333172.18,435.1,19
-2025-04-26,foundation,subcontractor,west_coast,460499.12,815364.51,20.25,25
-2024-02-18,interior_finishing,labor,southeast,756441.23,433907.64,99.09,15
-2024-09-17,framing,subcontractor,northeast,137861.33,220241.05,295.61,19
-2024-06-09,final_inspection,subcontractor,midwest,587312.1,422079.04,63.27,23
-2024-04-19,mechanical_electrical_plumbing,labor,northeast,756923.8,223788.63,469.82,2
-2024-03-21,site_preparation,permits_and_fees,southwest,60944.9,558270.1,29.11,4
-2025-05-17,final_inspection,permits_and_fees,mountain_west,11150.31,254425.88,406.42,5
-2024-10-21,final_inspection,subcontractor,southwest,602960.77,897258.36,324.16,22
-2024-05-17,foundation,equipment_rental,southwest,683720.41,134999.26,178.8,19
-2024-01-20,site_preparation,labor,southeast,592920.67,792491.19,363.78,14
-2024-01-23,interior_finishing,permits_and_fees,southeast,129128.36,766494.24,299.6,19
-2025-03-17,site_preparation,equipment_rental,southwest,845305.34,346390.5,192.9,8
-2024-01-01,framing,materials,northeast,495382.11,369266.87,188.96,8
-2025-05-25,foundation,subcontractor,west_coast,179546.5,521866.1,347.06,5
+dispenseDate,storeRegion,drugCategory,paymentMethod,quantityDispensed,totalRevenue,patientCopay
+2025-02-04,Midwest,Antidiabetics,Medicaid,59,964.59,85.69
+2024-10-16,Pacific Northwest,Antidiabetics,Commercial Insurance,80,998.07,132.28
+2025-04-28,Pacific Northwest,Antidepressants,Discount Card,89,109.47,26.17
+2025-03-14,Southeast,Antibiotics,Medicare Part D,54,26.1,100.38
+2024-04-24,Midwest,Analgesics,Health Savings Account,88,825.96,97.51
+2024-11-30,Midwest,Analgesics,Discount Card,2,1227.1,82.81
+2024-11-22,Northeast,Inhalers,Medicaid,6,1154.02,20.63
+2024-05-01,Mountain,Antibiotics,Health Savings Account,77,241.61,81.97
+2024-09-11,Southwest,Antihypertensives,Cash,33,271.18,87.78
+2024-01-06,Northeast,Inhalers,Medicare Part D,8,245.41,22.98
+2024-09-30,Mountain,Antidepressants,Medicare Part D,61,392.71,90.64
+2024-04-18,Midwest,Antihypertensives,Discount Card,60,725.31,77.13
+2024-07-09,Mountain,Analgesics,Commercial Insurance,67,379.27,27.21
+2024-02-01,Northeast,Antidiabetics,Health Savings Account,73,271.96,81.61
+2024-08-21,Pacific Northwest,Antihypertensives,Commercial Insurance,45,280.01,36.21
+2024-05-26,Northeast,Statins,Commercial Insurance,5,769.9,32.12
+2025-02-16,Pacific Northwest,Antihypertensives,Health Savings Account,28,847.76,42.84
+2025-06-08,Southeast,Analgesics,Medicaid,85,687.14,108.76
+2024-12-14,Mountain,Antihypertensives,Medicare Part D,68,282.22,147.17
+2025-02-16,Pacific Northwest,Statins,Discount Card,61,685.36,3.36
+2025-04-17,Mountain,Antidepressants,Cash,38,1024.25,137.76
+2024-08-19,Southwest,Antidiabetics,Health Savings Account,2,43.18,55.76
+2024-08-26,Southwest,Statins,Medicare Part D,68,1217.19,118.09
+2024-01-29,Midwest,Inhalers,Cash,21,685.09,49.73
+2025-02-16,Mountain,Inhalers,Medicaid,67,764.6,130.82
+2024-02-28,Southwest,Antibiotics,Medicare Part D,25,711.18,23.86
+2024-01-26,Northeast,Analgesics,Medicaid,13,891.99,68.71
+2024-04-20,Northeast,Statins,Cash,83,812.85,36.68
+2025-06-09,West,Analgesics,Medicaid,50,987.43,93.27
+2024-04-19,Pacific Northwest,Antidiabetics,Medicaid,67,912.11,78.62
+2025-03-18,West,Statins,Health Savings Account,72,358.61,9.58
+2024-04-23,Mountain,Inhalers,Discount Card,41,821.97,123.74
+2025-01-25,Mountain,Antibiotics,Commercial Insurance,4,380.1,75.99
+2024-10-15,West,Antidepressants,Cash,18,91.78,37.95
+2024-04-01,Midwest,Antidiabetics,Cash,26,907.7,97.69
+2024-04-05,Midwest,Antidiabetics,Health Savings Account,68,1056.32,147.17
+2024-08-07,Midwest,Inhalers,Medicaid,26,40.36,121.25
+2024-10-21,Mountain,Inhalers,Discount Card,77,409.62,18.37
+2024-07-12,Midwest,Inhalers,Medicaid,89,943.3,146.53
+2024-03-30,Southwest,Statins,Commercial Insurance,37,310.8,72.53
+2025-05-01,Southwest,Antibiotics,Medicaid,27,915.17,98.65
+2024-09-20,Midwest,Analgesics,Discount Card,2,413.16,14.83
+2024-03-27,Northeast,Antidiabetics,Medicaid,66,799.17,49.93
+2024-11-09,Southeast,Statins,Medicaid,9,235.34,121.44
+2025-01-12,Midwest,Antidepressants,Medicaid,40,248.25,19.61
+2024-12-30,Pacific Northwest,Inhalers,Commercial Insurance,45,514.67,82.97
+2024-09-16,Southwest,Statins,Medicare Part D,33,751.16,134.99
+2025-01-30,Southeast,Antidepressants,Medicaid,88,980.97,83.33
+2025-04-14,Northeast,Statins,Cash,4,845.52,95.18
+2024-08-15,Pacific Northwest,Antibiotics,Health Savings Account,83,985.38,97.61
+2024-08-02,Midwest,Statins,Commercial Insurance,62,856.81,57.47
+2025-03-23,Mountain,Antidiabetics,Discount Card,18,25.82,60.07
+2024-05-06,Northeast,Antibiotics,Medicare Part D,41,97.11,67.26
+2024-08-18,Southwest,Analgesics,Discount Card,75,67.82,128.99
+2025-05-24,West,Antibiotics,Medicare Part D,62,507.39,86.56
+2025-01-02,Northeast,Inhalers,Commercial Insurance,29,551.14,51.77
+2024-02-11,Southeast,Analgesics,Cash,26,382.68,129.99
+2024-09-15,West,Analgesics,Health Savings Account,43,1026.5,28.76
+2024-10-17,Pacific Northwest,Antidiabetics,Discount Card,6,903.89,19.51
+2025-02-04,Northeast,Inhalers,Health Savings Account,75,800.3,137.63
+2024-10-16,Southwest,Antidiabetics,Discount Card,40,549.48,54.19
+2024-06-10,Midwest,Statins,Health Savings Account,44,431.02,62.5
+2025-04-21,Mountain,Inhalers,Cash,78,282.59,80.83
+2025-06-11,Southeast,Antidiabetics,Medicare Part D,51,246.82,103.01
+2025-06-21,Pacific Northwest,Antidiabetics,Commercial Insurance,90,1187.9,74.15
+2024-10-09,Mountain,Analgesics,Cash,32,88.06,53.35
+2024-08-06,West,Inhalers,Cash,13,696.16,34.23
+2024-08-16,Southeast,Analgesics,Commercial Insurance,2,469.2,43.01
+2025-04-09,Southeast,Antidiabetics,Discount Card,85,753.03,134.52
+2025-06-20,Pacific Northwest,Analgesics,Cash,77,1045.61,119.84
+2024-04-01,West,Statins,Medicare Part D,74,1147.69,33.46
+2024-12-07,West,Antihypertensives,Health Savings Account,37,892.02,113.06
+2024-04-10,West,Antibiotics,Medicaid,58,7.37,144.31
+2024-11-25,Southeast,Inhalers,Medicare Part D,71,55.73,142.56
+2024-12-05,Northeast,Antibiotics,Discount Card,52,993.84,133.55
+2024-11-06,Midwest,Antidiabetics,Cash,51,1101.6,80.9
+2024-10-27,Southeast,Antibiotics,Commercial Insurance,16,1003.85,27.08
+2025-05-11,Southeast,Analgesics,Discount Card,2,246.46,95.15
+2025-03-15,Southeast,Antidiabetics,Cash,61,169.41,110.77
+2024-03-07,Mountain,Antibiotics,Cash,7,215.71,5.74
+2024-12-31,Northeast,Analgesics,Commercial Insurance,32,758.77,127.01
+2024-03-29,Midwest,Statins,Medicare Part D,85,400.65,78.59
+2024-11-03,Mountain,Analgesics,Discount Card,40,1026.68,16.76
+2024-11-25,Southeast,Antidepressants,Cash,23,1135.98,133.16
+2024-02-07,Southwest,Antibiotics,Medicaid,83,348.39,137.28
+2025-02-13,West,Antidiabetics,Cash,43,372.95,61.05
+2024-03-05,Mountain,Analgesics,Medicaid,6,1050.36,110.76
+2024-12-11,Mountain,Analgesics,Health Savings Account,81,1207.57,40.47
+2024-06-30,Mountain,Inhalers,Cash,55,802.57,68.53
+2024-06-14,Midwest,Analgesics,Cash,63,1101.55,32.66
+2024-07-28,Southeast,Antidepressants,Health Savings Account,48,1011.73,89.95
+2025-05-22,West,Antidepressants,Discount Card,19,997.72,113.04
+2025-04-24,Northeast,Antibiotics,Medicaid,14,1083.12,74.69
+2025-01-15,Southeast,Antihypertensives,Health Savings Account,5,269.26,5.83
+2024-08-06,West,Analgesics,Medicare Part D,68,1020.51,77.44
+2025-02-08,Northeast,Antibiotics,Medicaid,8,973.93,32.77
+2025-06-22,Northeast,Inhalers,Medicare Part D,77,376.05,43.45
+2024-08-23,Pacific Northwest,Antibiotics,Cash,52,682.52,133.92
+2024-09-23,Southeast,Antidepressants,Discount Card,14,917.31,46.24
+2024-11-15,Southeast,Analgesics,Discount Card,87,1021.27,120.9
+2024-05-12,Mountain,Antidiabetics,Discount Card,11,1197.16,89.88
+2024-05-15,Southeast,Antidiabetics,Medicare Part D,60,319.6,61.56
+2024-12-07,Midwest,Analgesics,Health Savings Account,80,1162.05,39.43
+2025-03-17,Mountain,Antihypertensives,Commercial Insurance,50,786.36,12.35
+2024-11-27,Pacific Northwest,Inhalers,Cash,4,946.21,101.34
+2024-05-06,Southeast,Antidiabetics,Cash,12,1064.99,46.92
+2024-06-18,Southwest,Antihypertensives,Medicaid,8,530.93,69.47
+2024-04-12,Mountain,Antihypertensives,Health Savings Account,30,636.36,129.31
+2025-03-05,Southwest,Analgesics,Commercial Insurance,52,813.99,85.69
+2024-07-12,Southeast,Antihypertensives,Health Savings Account,58,1013.25,81.21
+2024-01-02,Southeast,Antibiotics,Medicaid,43,748.6,83.9
+2024-11-09,West,Statins,Medicaid,25,449.19,145.35
+2025-01-08,Pacific Northwest,Analgesics,Discount Card,69,267.76,53.91
+2024-11-23,Pacific Northwest,Antidepressants,Commercial Insurance,49,1076.46,95.85
+2024-07-11,Mountain,Antibiotics,Cash,72,1237.07,22.51
+2024-08-20,Mountain,Antihypertensives,Medicaid,76,78.55,55.84
+2024-09-17,Southeast,Inhalers,Medicaid,82,1044.97,96.54
+2024-04-07,Mountain,Inhalers,Discount Card,90,692.57,1.56
+2025-03-28,Pacific Northwest,Antibiotics,Medicaid,34,556.3,56.36
+2024-07-08,Southwest,Antidiabetics,Medicare Part D,49,1082.88,32.33
+2025-01-15,Midwest,Antidiabetics,Medicaid,77,661.59,121.18
+2025-03-30,Northeast,Antibiotics,Discount Card,5,950.66,76.28
+2025-04-15,West,Antihypertensives,Health Savings Account,55,1249.64,122.15
+2024-01-07,West,Inhalers,Medicare Part D,14,134.44,6.81
+2025-03-25,West,Statins,Medicare Part D,13,796.91,45.85
+2025-04-28,Midwest,Antihypertensives,Medicare Part D,34,972.12,124.31
+2024-05-13,Southeast,Antihypertensives,Medicare Part D,12,104.79,147.69
+2025-05-01,Midwest,Antihypertensives,Medicaid,1,950.08,74.39
+2024-04-02,West,Antibiotics,Medicaid,37,826.1,72.23
+2024-07-29,West,Antibiotics,Health Savings Account,18,366.55,61.74
+2024-12-09,Southwest,Antibiotics,Health Savings Account,49,128.62,44.54
+2024-07-25,Midwest,Inhalers,Health Savings Account,74,250.45,24.16
+2024-09-01,Mountain,Inhalers,Cash,9,1208.5,71.83
+2024-01-20,Pacific Northwest,Analgesics,Commercial Insurance,74,1190.17,15.61
+2024-06-01,Midwest,Inhalers,Cash,3,399.93,109.91
+2024-04-24,Southeast,Antibiotics,Medicare Part D,72,27.15,86.92
+2024-11-28,Pacific Northwest,Antibiotics,Health Savings Account,39,456.48,131.55
+2024-12-09,Southwest,Statins,Commercial Insurance,2,29.14,88.04
+2024-06-15,West,Analgesics,Health Savings Account,57,645.79,27.66
+2024-02-10,Southwest,Antidiabetics,Discount Card,63,976.81,24.91
+2024-02-02,West,Analgesics,Health Savings Account,76,435.46,46.13
+2025-06-01,Mountain,Antibiotics,Medicaid,74,1081.86,127.38
+2025-03-12,Mountain,Antibiotics,Discount Card,87,1073.48,95.36
+2025-03-31,Pacific Northwest,Antidiabetics,Cash,72,1101.07,133.88
+2025-03-24,Pacific Northwest,Analgesics,Commercial Insurance,27,589.85,91.42
+2025-01-06,Pacific Northwest,Statins,Medicare Part D,73,199.28,72.68
+2024-10-02,Southeast,Antidepressants,Health Savings Account,76,1174.32,53.85
+2024-08-12,Northeast,Analgesics,Health Savings Account,24,252.31,37.09
+2024-07-05,Midwest,Antihypertensives,Cash,34,872.54,147.08
+2025-05-25,Southeast,Antihypertensives,Commercial Insurance,33,976.95,25.62
+2025-06-03,Northeast,Inhalers,Health Savings Account,69,420.43,20.1
+2024-12-14,Southeast,Statins,Discount Card,58,350.52,133.55
+2024-08-16,Southeast,Inhalers,Cash,64,615.37,71.83
+2025-05-31,Northeast,Antidepressants,Discount Card,40,101.29,56.81
+2024-12-26,Midwest,Antihypertensives,Health Savings Account,74,493.1,83.18
+2024-11-13,Southeast,Antidiabetics,Cash,86,1007.35,27.97
+2024-10-06,Mountain,Antibiotics,Discount Card,18,587.63,94.56
+2025-06-22,Southeast,Inhalers,Medicaid,19,1100.3,103.67
+2024-10-16,Pacific Northwest,Antibiotics,Medicare Part D,20,65.69,144.76
+2024-06-14,Pacific Northwest,Antibiotics,Medicaid,24,1162.46,107.17
+2024-05-27,Southeast,Antibiotics,Medicaid,62,1221.26,132.96
+2024-03-08,Northeast,Inhalers,Cash,16,853.9,7.32
+2024-05-22,West,Antihypertensives,Health Savings Account,54,1159.28,55.72
+2024-08-14,Midwest,Statins,Medicaid,69,896.45,18.3
+2024-07-29,Mountain,Statins,Medicare Part D,57,1161.08,107.09
+2024-06-28,Pacific Northwest,Antihypertensives,Medicaid,77,779.85,71.68
+2024-07-04,Midwest,Statins,Cash,2,403.22,123.45
+2024-07-29,Mountain,Statins,Discount Card,23,229.0,136.51
+2025-01-26,Northeast,Analgesics,Health Savings Account,30,57.74,121.1
+2025-01-02,Mountain,Analgesics,Health Savings Account,56,859.73,143.06
+2024-04-03,Southwest,Antihypertensives,Health Savings Account,20,1168.41,87.49
+2024-08-13,Pacific Northwest,Antidepressants,Commercial Insurance,35,715.63,36.58
+2024-01-14,West,Antidepressants,Discount Card,19,719.26,50.32
+2025-03-28,Midwest,Antidepressants,Medicare Part D,70,755.0,107.96
+2024-10-28,Midwest,Statins,Medicaid,31,790.17,75.77
+2024-02-09,Pacific Northwest,Inhalers,Cash,75,808.92,71.66
+2025-03-22,Southeast,Inhalers,Medicaid,82,1002.78,28.48
+2024-10-16,Mountain,Antihypertensives,Medicare Part D,23,58.64,102.83
+2024-10-01,Midwest,Statins,Discount Card,43,718.4,133.25
+2024-11-10,Southeast,Analgesics,Cash,39,630.95,58.91
+2024-07-27,Pacific Northwest,Antidiabetics,Medicare Part D,3,404.61,15.6
+2024-05-10,Midwest,Antidepressants,Medicare Part D,18,523.67,92.16
+2024-09-03,Midwest,Inhalers,Medicare Part D,23,383.96,124.02
+2024-07-08,Midwest,Antidepressants,Medicaid,50,40.12,107.76
+2025-05-06,Pacific Northwest,Antidepressants,Cash,82,216.87,11.45
+2024-03-17,Pacific Northwest,Antidiabetics,Health Savings Account,55,241.16,92.7
+2025-04-10,Southeast,Antidepressants,Discount Card,69,165.64,52.22
+2024-07-30,Pacific Northwest,Statins,Cash,52,712.24,59.61
+2025-02-06,Southwest,Antidepressants,Medicare Part D,30,629.6,109.72
+2025-01-16,Northeast,Antihypertensives,Health Savings Account,13,1203.39,142.23
+2024-05-02,Southeast,Antidiabetics,Medicare Part D,60,742.28,87.16
+2025-01-12,Mountain,Antidiabetics,Cash,59,935.14,72.95
+2025-06-11,Southeast,Antihypertensives,Commercial Insurance,81,219.1,6.88
+2025-01-16,Pacific Northwest,Antidepressants,Commercial Insurance,39,109.78,127.5
+2024-12-24,Southwest,Antibiotics,Commercial Insurance,45,636.07,37.92
+2025-01-30,Southeast,Antibiotics,Discount Card,29,130.69,50.89
+2025-04-17,West,Antibiotics,Medicare Part D,7,598.45,84.58
+2024-04-24,Pacific Northwest,Antidiabetics,Medicare Part D,35,42.98,36.73
+2025-04-24,Pacific Northwest,Analgesics,Discount Card,58,379.36,102.86
+2024-12-19,West,Analgesics,Health Savings Account,70,829.78,53.76
+2024-07-13,Pacific Northwest,Inhalers,Discount Card,37,29.21,25.9
+2024-05-05,West,Inhalers,Discount Card,62,105.82,98.42
+2024-06-03,Southwest,Antibiotics,Health Savings Account,39,968.25,35.9
+2025-04-27,Northeast,Analgesics,Discount Card,2,741.19,78.76
+2024-07-07,Midwest,Inhalers,Medicaid,35,431.61,133.59
+2024-02-24,Mountain,Antidiabetics,Medicare Part D,79,235.0,140.21
+2024-03-24,Southwest,Analgesics,Medicaid,29,921.26,16.12
+2024-09-17,West,Statins,Medicaid,53,1125.8,40.55
+2025-06-11,Northeast,Statins,Discount Card,55,249.88,76.98
+2025-01-09,West,Analgesics,Health Savings Account,24,434.1,8.83
+2024-04-22,West,Statins,Health Savings Account,5,247.8,60.39
+2025-02-11,Midwest,Antidepressants,Medicare Part D,41,625.86,138.91
+2024-08-27,Midwest,Statins,Health Savings Account,45,68.42,96.27
+2024-01-23,West,Inhalers,Discount Card,11,731.44,80.36
+2024-03-13,Mountain,Antidepressants,Medicare Part D,38,742.55,120.0
+2024-10-23,Southwest,Analgesics,Cash,74,937.38,98.01
+2025-04-05,Mountain,Inhalers,Medicaid,33,1106.6,35.77
+2024-03-23,Pacific Northwest,Analgesics,Medicare Part D,32,61.47,136.01
+2024-10-16,Midwest,Inhalers,Medicare Part D,11,417.18,47.29
+2024-02-26,Southwest,Analgesics,Medicaid,42,1046.39,100.17
+2024-11-01,Pacific Northwest,Antidiabetics,Cash,87,497.75,63.34
+2024-09-29,Southwest,Analgesics,Medicare Part D,52,1146.81,86.93
+2024-03-04,Southeast,Inhalers,Commercial Insurance,31,529.13,47.38
+2025-05-26,Northeast,Antihypertensives,Commercial Insurance,78,1195.6,93.63
+2025-04-25,Mountain,Antibiotics,Cash,12,903.62,33.37
+2024-01-15,Pacific Northwest,Antibiotics,Health Savings Account,32,299.21,134.56
+2024-11-22,Southwest,Antidepressants,Health Savings Account,13,353.59,45.95
+2025-05-11,Mountain,Antihypertensives,Commercial Insurance,34,233.67,44.54
+2025-06-08,Southwest,Inhalers,Health Savings Account,79,224.28,48.61
+2025-03-09,Northeast,Antidiabetics,Medicare Part D,13,412.04,124.74
+2024-03-04,Midwest,Analgesics,Medicare Part D,18,26.42,38.67
+2025-03-11,West,Statins,Health Savings Account,65,14.58,133.79
+2024-08-31,Mountain,Antidepressants,Discount Card,81,771.74,92.89
+2024-05-10,Southeast,Inhalers,Health Savings Account,10,1052.31,76.22
+2024-01-13,West,Antibiotics,Medicaid,49,316.68,35.54
+2024-04-26,Pacific Northwest,Antihypertensives,Medicare Part D,8,6.34,120.27
+2025-03-13,Southeast,Antidiabetics,Cash,10,867.46,106.7
+2025-04-22,Southwest,Antihypertensives,Commercial Insurance,44,716.47,11.42
+2024-02-23,West,Antidepressants,Cash,46,731.99,93.09
+2024-07-14,Midwest,Antihypertensives,Commercial Insurance,74,139.9,80.59

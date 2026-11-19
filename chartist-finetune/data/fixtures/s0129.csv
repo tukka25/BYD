@@ -1,241 +1,241 @@
-Usage Date,Region Name,Plan Type,Device Category,Active Subscribers,Data Used GB,Total Revenue,Avg Latency Ms
-2025-02-04,Midwest,Postpaid,Hotspot,315590,7593.5,1399748.71,38.86
-2024-10-16,Mountain,Postpaid,Smartphone,425927,7858.34,2160523.59,228.43
-2025-04-28,Mountain,Family Share,Feature Phone,473920,830.64,427571.48,221.52
-2025-03-14,Northeast,Prepaid,Tablet,287271,171.29,1639516.29,83.62
-2024-04-24,Midwest,Business Unlimited,Feature Phone,466859,6497.15,1592788.95,229.08
-2024-11-30,Midwest,Business Unlimited,Feature Phone,6970,9669.66,1352587.47,12.51
-2024-11-22,Northeast,IoT Data Only,Hotspot,30440,9091.66,337042.48,27.85
-2024-05-01,Mountain,Prepaid,Smartwatch,411585,1875.72,1338859.04,95.12
-2024-09-11,Midwest,Prepaid,Smartwatch,171779,2109.59,1433771.2,200.8
-2024-01-06,Northeast,IoT Data Only,Tablet,37946,1905.81,375443.29,234.4
-2024-09-30,Mountain,IoT Data Only,Smartphone,324277,3070.72,1480471.47,55.07
-2024-04-18,Midwest,Prepaid,Feature Phone,317668,5701.17,1259840.34,129.63
-2024-07-09,Mountain,Business Unlimited,Smartphone,358086,2964.46,444574.01,74.27
-2024-02-01,Northeast,Postpaid,Smartwatch,386648,2115.74,1333064.12,16.74
-2024-08-21,West Coast,Postpaid,Smartphone,236079,2179.45,591504.21,79.54
-2024-05-26,Northeast,Family Share,Smartphone,22238,6053.78,524714.67,41.9
-2025-02-16,West Coast,Postpaid,Smartwatch,146682,6669.56,699822.17,172.89
-2025-06-08,Southeast,Business Unlimited,Tablet,454703,5399.26,1776499.29,215.86
-2024-12-14,Mountain,Prepaid,Tablet,360541,2196.93,2403756.49,96.19
-2025-02-16,Mountain,Family Share,Feature Phone,322621,5385.18,55092.82,164.36
-2025-04-17,Mountain,IoT Data Only,Smartwatch,198763,8065.36,2250123.31,126.32
-2024-08-19,Southwest,Postpaid,Smartwatch,8701,306.43,910868.87,116.06
-2024-08-26,Midwest,Family Share,Tablet,362706,9591.24,1928802.43,191.95
-2024-01-29,Midwest,IoT Data Only,Hotspot,109515,5383.03,812429.22,131.04
-2025-02-16,Mountain,IoT Data Only,Hotspot,353604,6011.84,2136720.35,203.13
-2024-02-28,Midwest,Prepaid,Tablet,129636,5589.36,389814.57,64.08
-2024-01-26,Northeast,Business Unlimited,Tablet,67099,7019.38,1122393.74,140.8
-2024-04-20,Northeast,Business Unlimited,Hotspot,443057,6393.47,599250.09,185.93
-2025-06-09,Southwest,Business Unlimited,Tablet,262914,7774.16,1523489.53,44.37
-2024-04-19,West Coast,Postpaid,Hotspot,358682,7178.5,1284135.27,46.25
-2025-03-18,Southwest,Family Share,Smartwatch,385676,2801.01,156547.38,100.68
-2024-04-23,Mountain,IoT Data Only,Feature Phone,217500,6465.58,2021112.35,156.55
-2025-01-25,Mountain,Prepaid,Smartphone,17216,2970.97,1241210.85,198.98
-2024-10-15,West Coast,IoT Data Only,Hotspot,93878,690.79,620002.31,214.53
-2024-04-01,Midwest,Postpaid,Smartwatch,138114,7143.62,1595574.33,173.6
-2024-04-05,Midwest,Business Unlimited,Smartwatch,362428,8318.99,2403735.77,156.87
-2024-08-07,Midwest,IoT Data Only,Hotspot,135525,284.1,1980406.85,10.51
-2024-10-21,Mountain,IoT Data Only,Feature Phone,409825,3204.48,300235.4,201.15
-2024-07-12,Southeast,IoT Data Only,Hotspot,473066,7425.14,2393358.64,103.89
-2024-03-30,Southwest,Family Share,Smartphone,193418,2422.91,1184764.49,213.79
-2025-05-01,Midwest,Prepaid,Tablet,141167,7202.72,1611413.99,215.8
-2024-09-20,Midwest,Business Unlimited,Feature Phone,4925,3232.49,242413.25,66.07
-2024-03-27,Northeast,Postpaid,Tablet,351099,6285.31,815629.25,78.45
-2024-11-09,Southeast,Family Share,Tablet,43287,1826.12,1983532.69,103.06
-2025-01-12,Midwest,Family Share,Tablet,208508,1928.24,320380.83,18.81
-2024-12-30,West Coast,IoT Data Only,Smartphone,240078,4035.3,1355248.48,43.12
-2024-09-16,Southwest,Family Share,Smartphone,172369,5905.6,2204837.02,217.57
-2025-01-30,Southeast,Family Share,Hotspot,467349,7723.07,1361147.65,77.82
-2025-04-14,Northeast,Family Share,Hotspot,15446,6651.83,1554715.8,172.82
-2024-08-15,Mountain,Prepaid,Smartwatch,443913,7757.96,1594424.23,158.32
-2024-08-02,Midwest,Family Share,Smartphone,326683,6741.11,938696.6,153.95
-2025-03-23,Mountain,Postpaid,Feature Phone,93543,169.14,981218.86,69.01
-2024-05-06,Northeast,Prepaid,Tablet,214434,732.88,1098678.84,26.76
-2024-08-18,Southwest,Business Unlimited,Feature Phone,401141,501.31,2106894.84,159.88
-2025-05-24,West Coast,Prepaid,Tablet,328180,3977.72,1413807.25,10.1
-2025-01-02,Northeast,IoT Data Only,Smartphone,150521,4323.73,845647.7,236.38
-2024-02-11,Southeast,Business Unlimited,Smartwatch,137651,2991.42,2123124.45,30.31
-2024-09-15,Southwest,Business Unlimited,Smartwatch,227524,8083.2,469948.56,128.77
-2024-10-17,West Coast,Postpaid,Feature Phone,28108,7113.5,318836.58,26.41
-2025-02-04,Northeast,IoT Data Only,Smartwatch,398562,6294.24,2247904.95,68.79
-2024-10-16,Midwest,Business Unlimited,Feature Phone,212897,4310.57,885172.79,152.86
-2024-06-10,Midwest,Family Share,Smartwatch,232251,3373.7,1020985.74,44.06
-2025-04-21,Mountain,IoT Data Only,Smartwatch,415464,2199.84,1320246.28,112.61
-2025-06-11,Northeast,Postpaid,Tablet,269488,1916.96,1682564.21,93.78
-2025-06-21,West Coast,Business Unlimited,Smartphone,478451,9359.65,1211272.02,119.59
-2024-10-09,Mountain,Business Unlimited,Hotspot,166104,661.36,871480.85,159.67
-2024-08-06,West Coast,IoT Data Only,Hotspot,66828,5470.58,559232.24,81.51
-2024-08-16,Southeast,Business Unlimited,Smartphone,5431,3675.66,702592.02,137.76
-2025-04-09,Southeast,Business Unlimited,Feature Phone,451919,5920.34,2197103.87,144.47
-2025-06-20,West Coast,Business Unlimited,Smartwatch,411404,8234.33,1957440.54,124.56
-2024-04-01,Southwest,Family Share,Smartphone,393064,9041.63,546631.68,210.94
-2024-12-07,Southwest,Postpaid,Smartwatch,196120,7019.58,1846680.63,77.94
-2024-04-10,Southwest,Prepaid,Hotspot,306096,23.17,2357048.84,222.91
-2024-11-25,Southeast,IoT Data Only,Tablet,380237,405.67,2328482.3,119.38
-2024-12-05,Northeast,Prepaid,Feature Phone,274467,7824.83,2181364.93,85.83
-2024-11-06,Midwest,Business Unlimited,Smartwatch,270540,8677.13,1321429.57,135.97
-2024-10-27,Northeast,Prepaid,Smartphone,81292,7904.07,442374.33,204.62
-2025-05-11,Southeast,Business Unlimited,Feature Phone,5306,1914.09,1554144.76,238.23
-2025-03-15,Southeast,Postpaid,Hotspot,324898,1304.74,1809240.68,13.34
-2024-03-07,Mountain,Prepaid,Hotspot,35059,1670.87,93857.74,105.09
-2024-12-31,Northeast,Business Unlimited,Smartphone,166362,5965.75,2074534.03,174.13
-2024-03-29,Southeast,Family Share,Tablet,451349,3133.55,1283633.48,20.95
-2024-11-03,Mountain,Business Unlimited,Feature Phone,212766,8084.57,273842.46,147.95
-2024-11-25,Southeast,IoT Data Only,Hotspot,117183,8949.0,2174957.38,46.15
-2024-02-07,Southwest,Prepaid,Hotspot,440306,2720.19,2242293.44,235.94
-2025-02-13,West Coast,Postpaid,Hotspot,227619,2914.45,997184.66,214.8
-2024-03-05,Mountain,Business Unlimited,Tablet,26953,8271.82,1809083.3,29.21
-2024-12-11,Mountain,Business Unlimited,Feature Phone,432917,9515.2,661115.66,197.64
-2024-06-30,Mountain,IoT Data Only,Hotspot,292673,6312.17,1119465.21,179.57
-2024-06-14,Midwest,Business Unlimited,Hotspot,334383,8676.67,533544.88,117.28
-2024-07-28,Northeast,IoT Data Only,Smartwatch,256135,7966.34,1469315.27,97.33
-2025-05-22,West Coast,IoT Data Only,Feature Phone,95347,7855.52,1846358.86,228.04
-2025-04-24,Northeast,Prepaid,Tablet,70744,8530.91,1220084.83,76.84
-2025-01-15,Southeast,Prepaid,Smartwatch,23589,2094.36,95286.71,15.81
-2024-08-06,Southwest,Business Unlimited,Smartphone,360772,8035.79,1264882.59,84.02
-2025-02-08,Northeast,Prepaid,Hotspot,39867,7667.43,535349.51,26.6
-2025-06-22,Northeast,IoT Data Only,Tablet,408461,2938.98,709708.3,125.65
-2024-08-23,West Coast,Prepaid,Smartwatch,274544,5362.71,2187431.17,135.48
-2024-09-23,Southeast,Family Share,Feature Phone,71065,7219.64,755424.95,143.85
-2024-11-15,Southeast,Business Unlimited,Feature Phone,462006,8041.8,1974765.73,104.28
-2024-05-12,Mountain,Postpaid,Feature Phone,56973,9432.84,1468130.75,206.98
-2024-05-15,Southeast,Postpaid,Tablet,320412,2492.49,1005558.17,81.68
-2024-12-07,Southeast,Business Unlimited,Smartwatch,426694,9155.2,644173.85,14.28
-2025-03-17,Mountain,Postpaid,Smartphone,266125,6183.97,201836.64,167.55
-2024-11-27,West Coast,IoT Data Only,Hotspot,17000,7448.15,1655327.53,150.29
-2024-05-06,Southeast,Postpaid,Smartwatch,58874,8387.6,766415.68,74.52
-2024-06-18,Southwest,Postpaid,Hotspot,37756,4163.87,1134735.27,34.1
-2024-04-12,Mountain,Postpaid,Smartwatch,158450,4997.69,2112077.58,141.4
-2025-03-05,Midwest,Business Unlimited,Smartphone,275506,6402.49,1399603.0,61.47
-2024-07-12,Southeast,Postpaid,Smartwatch,308136,7978.36,1326514.32,43.98
-2024-01-02,Southeast,Prepaid,Hotspot,227521,5885.38,1370362.79,45.62
-2024-11-09,Southwest,Family Share,Hotspot,131057,3517.43,2374122.93,133.66
-2025-01-08,Mountain,Business Unlimited,Feature Phone,369052,2082.56,880577.66,228.67
-2024-11-23,West Coast,IoT Data Only,Smartphone,260156,8478.24,1565658.72,160.01
-2024-07-11,Mountain,Prepaid,Smartwatch,385519,9748.5,367758.96,18.77
-2024-08-20,Mountain,Postpaid,Tablet,405028,586.16,912164.58,157.8
-2024-09-17,Northeast,IoT Data Only,Hotspot,436539,8229.22,1576928.49,191.88
-2024-04-07,Mountain,IoT Data Only,Feature Phone,479789,5442.25,25660.29,124.38
-2025-03-28,West Coast,Prepaid,Tablet,176586,4364.48,920574.85,183.72
-2024-07-08,Midwest,Postpaid,Tablet,259229,8529.09,528155.56,183.48
-2025-01-15,Southeast,Postpaid,Hotspot,410316,5197.23,1979368.05,163.1
-2025-03-30,Northeast,Prepaid,Feature Phone,20912,7483.35,1246031.82,152.39
-2025-04-15,Southwest,Postpaid,Smartwatch,294049,9847.9,1995139.85,73.06
-2024-01-07,West Coast,IoT Data Only,Tablet,68888,1028.12,111327.99,55.67
-2025-03-25,West Coast,Family Share,Tablet,67823,6267.45,749048.32,146.54
-2025-04-28,Midwest,Prepaid,Tablet,177098,7653.07,2030413.71,226.44
-2024-05-13,Southeast,Postpaid,Tablet,59279,793.66,2412304.84,110.89
-2025-05-01,Southeast,Prepaid,Tablet,1957,7478.76,1215185.36,235.87
-2024-04-02,West Coast,Prepaid,Hotspot,195973,6498.28,1179890.67,110.56
-2024-07-29,Southwest,Prepaid,Smartwatch,93570,2863.87,1008524.67,94.42
-2024-12-09,Midwest,Prepaid,Smartwatch,259286,982.09,727546.6,137.63
-2024-07-25,Southeast,IoT Data Only,Smartwatch,394250,1945.67,394757.49,216.7
-2024-09-01,Mountain,IoT Data Only,Hotspot,45240,9522.54,1173344.75,229.97
-2024-01-20,West Coast,Business Unlimited,Smartphone,395014,9377.58,255135.94,170.0
-2024-06-01,Midwest,IoT Data Only,Hotspot,9517,3127.85,1795278.19,118.4
-2024-04-24,Southeast,Prepaid,Tablet,381992,179.6,1419730.86,238.33
-2024-11-28,West Coast,Prepaid,Smartwatch,202988,3575.04,2148668.74,10.22
-2024-12-09,Southwest,Family Share,Smartphone,7533,195.41,1437984.21,224.79
-2024-06-15,Southwest,Business Unlimited,Smartwatch,302181,5072.26,451839.44,87.32
-2024-02-10,Midwest,Postpaid,Feature Phone,335228,7690.18,407002.23,149.44
-2024-02-02,Southwest,Business Unlimited,Feature Phone,402944,3408.78,753569.41,116.89
-2025-06-01,Mountain,Prepaid,Hotspot,391372,8520.98,2080484.86,163.52
-2025-03-12,Mountain,Prepaid,Feature Phone,461710,8454.68,1557561.33,13.86
-2025-03-31,West Coast,Postpaid,Hotspot,382090,8672.89,2186700.82,120.79
-2025-03-24,West Coast,Business Unlimited,Smartphone,138785,4629.81,1493312.62,15.43
-2025-01-06,West Coast,Family Share,Smartphone,389437,1540.97,1187165.86,114.03
-2024-10-02,Southeast,IoT Data Only,Feature Phone,403750,9252.21,879656.89,201.87
-2024-08-12,Northeast,Business Unlimited,Smartwatch,126645,1960.32,605850.56,97.56
-2024-07-05,Southeast,Postpaid,Hotspot,178806,6865.53,2402229.52,61.28
-2025-05-25,Southeast,Postpaid,Smartphone,171291,7691.26,418620.14,208.53
-2025-06-03,Northeast,IoT Data Only,Smartwatch,366497,3289.92,328480.21,60.79
-2024-12-14,Southeast,Family Share,Feature Phone,309046,2737.03,2181407.47,233.3
-2024-08-16,Northeast,IoT Data Only,Hotspot,338439,4831.66,1173334.29,35.16
-2025-05-31,Northeast,Family Share,Feature Phone,208926,765.99,928024.19,140.99
-2024-12-26,Midwest,Postpaid,Smartwatch,391927,3864.67,1358679.77,77.49
-2024-11-13,Southeast,Postpaid,Smartwatch,460250,7931.71,456914.28,60.1
-2024-10-06,Mountain,Prepaid,Feature Phone,92861,4612.28,1544535.43,49.54
-2025-06-22,Northeast,IoT Data Only,Hotspot,96683,8666.8,1693324.24,181.13
-2024-10-16,West Coast,Prepaid,Smartphone,101708,484.41,2364476.94,190.56
-2024-06-14,Mountain,Prepaid,Tablet,122541,9158.41,1750488.77,173.14
-2024-05-27,Northeast,Prepaid,Hotspot,327219,9623.48,2171616.46,226.16
-2024-03-08,Northeast,IoT Data Only,Hotspot,84296,6718.11,119768.31,233.16
-2024-05-22,Southwest,Postpaid,Feature Phone,285871,9133.28,910150.49,23.19
-2024-08-14,Midwest,Business Unlimited,Tablet,365096,7054.6,299032.53,114.69
-2024-07-29,Mountain,Family Share,Tablet,304566,9147.54,1749109.47,27.23
-2024-06-28,West Coast,Prepaid,Tablet,409302,6132.48,1170836.67,82.78
-2024-07-04,Midwest,Family Share,Hotspot,6288,3153.88,2016446.1,160.17
-2024-07-29,Mountain,Family Share,Feature Phone,121429,1775.98,2229726.68,11.86
-2025-01-26,Northeast,Business Unlimited,Smartwatch,156841,421.55,1977934.77,163.82
-2025-01-02,Mountain,Business Unlimited,Smartwatch,295218,6764.26,2336667.59,45.14
-2024-04-03,Midwest,Prepaid,Smartwatch,102885,9205.5,1429061.24,217.43
-2024-08-13,West Coast,Family Share,Smartphone,182437,5624.62,597556.34,153.69
-2024-01-14,Southwest,IoT Data Only,Feature Phone,99208,5653.27,821941.96,35.04
-2025-03-28,Southeast,Family Share,Smartphone,370131,5935.94,1763363.85,237.19
-2024-10-28,Midwest,Business Unlimited,Hotspot,161764,6214.1,1237593.11,166.2
-2024-02-09,West Coast,IoT Data Only,Hotspot,399877,6362.38,1170523.09,37.91
-2025-03-22,Southeast,IoT Data Only,Hotspot,438075,7895.6,465340.91,118.77
-2024-10-16,Mountain,Postpaid,Tablet,118496,428.66,1679672.0,13.89
-2024-10-01,Southeast,Family Share,Feature Phone,227643,5646.47,2176466.95,233.14
-2024-11-10,Southeast,Business Unlimited,Smartwatch,207455,4954.93,962339.91,20.16
-2024-07-27,West Coast,Postpaid,Tablet,10905,3164.81,254933.49,160.34
-2024-05-10,Southeast,Family Share,Tablet,92958,4106.41,1505413.13,164.84
-2024-09-03,Midwest,IoT Data Only,Smartphone,120963,3001.49,2025637.17,14.65
-2024-07-08,Southeast,Family Share,Hotspot,266027,282.21,1760050.73,217.28
-2025-05-06,West Coast,IoT Data Only,Hotspot,439639,1680.09,187076.46,198.19
-2024-03-17,West Coast,Postpaid,Smartwatch,292617,1872.2,1514161.41,149.37
-2025-04-10,Southeast,Family Share,Feature Phone,368734,1274.9,852975.5,161.75
-2024-07-30,West Coast,Family Share,Smartwatch,273794,5597.76,973742.89,137.33
-2025-02-06,Midwest,IoT Data Only,Smartphone,155960,4944.21,1792148.19,50.87
-2025-01-16,Northeast,Postpaid,Smartwatch,67381,9482.12,2323168.04,123.0
-2024-05-02,Southeast,Business Unlimited,Smartphone,320661,5835.33,1423750.74,25.06
-2025-01-12,Mountain,Postpaid,Smartwatch,311746,7360.66,1191630.26,137.67
-2025-06-11,Southeast,Prepaid,Smartphone,434151,1697.71,112465.83,111.46
-2025-01-16,West Coast,Family Share,Smartphone,203319,833.12,2082576.12,161.74
-2024-12-24,Southwest,Prepaid,Smartphone,235847,4995.4,619437.49,182.03
-2025-01-30,Southeast,Prepaid,Feature Phone,152617,998.49,831294.24,163.09
-2025-04-17,West Coast,Prepaid,Tablet,33154,4697.83,1381523.24,125.06
-2024-04-24,West Coast,Postpaid,Tablet,185184,304.86,600063.54,171.77
-2025-04-24,West Coast,Business Unlimited,Feature Phone,308738,2965.17,1680091.56,76.22
-2024-12-19,Southwest,Business Unlimited,Smartwatch,372676,6527.36,878127.0,132.67
-2024-07-13,West Coast,IoT Data Only,Feature Phone,193386,195.96,423190.13,88.52
-2024-05-05,Southwest,IoT Data Only,Feature Phone,329141,801.84,1607636.16,108.69
-2024-06-03,Southwest,Prepaid,Smartwatch,205773,7622.52,586486.55,134.81
-2025-04-27,Northeast,Business Unlimited,Feature Phone,6781,5826.77,1286489.26,34.52
-2024-07-07,Midwest,IoT Data Only,Hotspot,182465,3378.4,2181947.72,12.18
-2024-02-24,Mountain,Postpaid,Smartphone,418727,1823.47,2290090.23,41.69
-2024-03-24,Midwest,Business Unlimited,Tablet,149618,7250.87,263419.8,165.31
-2024-09-17,Southwest,Family Share,Hotspot,280856,8868.46,662449.47,22.64
-2025-06-11,Northeast,Family Share,Feature Phone,289658,1941.11,1257372.23,49.96
-2025-01-09,Southwest,Business Unlimited,Smartwatch,125711,3398.09,144395.42,185.64
-2024-04-22,West Coast,Business Unlimited,Smartwatch,21941,1924.71,986526.23,51.46
-2025-02-11,Midwest,Family Share,Tablet,214512,4914.67,2268796.26,110.54
-2024-08-27,Southeast,Family Share,Smartwatch,239312,506.04,1572486.42,102.67
-2024-01-23,West Coast,IoT Data Only,Feature Phone,55591,5749.61,1312695.89,112.55
-2024-03-13,Mountain,IoT Data Only,Tablet,202326,5837.53,1960061.78,60.43
-2024-10-23,Southwest,Business Unlimited,Hotspot,393811,7378.33,1600867.59,161.24
-2025-04-05,Mountain,IoT Data Only,Hotspot,173121,8716.64,584356.71,33.16
-2024-03-23,Mountain,Business Unlimited,Smartphone,165318,451.09,2221448.44,205.54
-2024-10-16,Midwest,IoT Data Only,Tablet,54656,3264.23,772469.36,51.16
-2024-02-26,Southwest,Business Unlimited,Hotspot,223023,8240.49,1636116.11,229.72
-2024-11-01,Mountain,Postpaid,Hotspot,465889,3901.44,1034644.13,20.6
-2024-09-29,Southwest,Business Unlimited,Tablet,272983,9034.68,1419972.88,74.52
-2024-03-04,Southeast,IoT Data Only,Smartphone,164485,4149.65,773907.61,194.32
-2025-05-26,Northeast,Postpaid,Smartphone,415641,9420.49,1529393.1,18.69
-2025-04-25,Mountain,Prepaid,Smartwatch,60397,7111.33,545215.67,16.15
-2024-01-15,West Coast,Prepaid,Smartwatch,165568,2331.23,2197900.57,74.73
-2024-11-22,Southwest,IoT Data Only,Smartwatch,67543,2761.31,750664.25,48.86
-2025-05-11,Mountain,Postpaid,Smartphone,176432,1812.92,727598.54,65.94
-2025-06-08,Midwest,IoT Data Only,Smartwatch,418643,1738.7,794089.74,34.86
-2025-03-09,Northeast,Postpaid,Tablet,64440,3223.57,2037454.23,83.07
-2024-03-04,Southeast,Business Unlimited,Tablet,92155,173.87,631721.65,50.28
-2025-03-11,Southwest,Family Share,Smartwatch,346665,80.24,2185195.29,60.05
-2024-08-31,Mountain,Family Share,Feature Phone,432775,6068.35,1517255.08,211.3
-2024-05-10,Southeast,IoT Data Only,Smartwatch,49567,8287.29,1244929.6,232.32
-2024-01-13,Southwest,Prepaid,Hotspot,260236,2469.42,580560.38,147.31
-2024-04-26,West Coast,Prepaid,Tablet,40180,15.04,1964503.0,114.96
-2025-03-13,Southeast,Postpaid,Hotspot,51221,6825.38,1742737.83,16.75
-2025-04-22,Southwest,Postpaid,Smartphone,235206,5631.23,186651.58,169.38
-2024-02-23,Southwest,Family Share,Hotspot,244456,5753.97,1520492.5,190.31
-2024-07-14,Southeast,Postpaid,Smartphone,392449,1071.32,1316437.96,28.33
+incidentDate,roadType,weatherCondition,severityLevel,vehiclesInvolved,injuryCount,responseTimeMinutes,economicDamageUsd
+2025-03-07,Highway,Rain,Moderate,1,23,76.7,284852.02
+2024-02-25,Highway,Fog,Moderate,1,0,98.78,52933.7
+2025-01-19,Collector,Sleet,Fatal,4,7,68.53,466088.67
+2025-02-13,Arterial,Windy,Serious,4,17,32.66,49514.34
+2024-09-19,Collector,Windy,Serious,11,21,96.74,144203.42
+2024-10-19,Highway,Rain,Serious,10,17,54.38,436724.4
+2024-08-25,Arterial,Rain,Fatal,11,24,57.29,422193.01
+2024-05-26,Highway,Windy,Moderate,1,20,90.87,232862.98
+2024-10-28,Local,Fog,Moderate,8,3,108.18,340249.28
+2025-03-19,Collector,Windy,Fatal,2,4,22.36,260648.79
+2024-06-09,Highway,Sleet,Moderate,8,10,45.12,164848.47
+2024-10-23,Highway,Snow,Serious,11,7,54.3,494333.56
+2025-01-26,Highway,Sleet,Fatal,3,12,36.96,158932.47
+2024-07-31,Arterial,Rain,Fatal,5,3,26.4,350928.93
+2025-05-19,Intersection,Rain,Serious,6,16,7.89,190243.7
+2024-08-27,Local,Clear,Moderate,8,10,113.51,412607.32
+2024-10-10,Local,Fog,Minor,9,12,8.07,105158.85
+2025-04-27,Local,Clear,Minor,10,22,30.85,392938.13
+2025-01-20,Ramp,Snow,Fatal,1,22,22.97,157116.54
+2024-11-20,Highway,Windy,Minor,11,6,67.89,349203.56
+2025-02-14,Intersection,Snow,Fatal,12,16,97.97,395457.52
+2024-05-03,Local,Windy,Minor,3,24,50.88,272683.24
+2024-06-15,Local,Sleet,Fatal,4,18,35.99,354947.24
+2025-03-05,Highway,Fog,Fatal,11,12,87.93,102810.56
+2024-05-11,Ramp,Rain,Minor,3,18,69.95,496898.51
+2024-10-20,Local,Rain,Minor,10,0,119.42,166338.48
+2024-01-22,Intersection,Rain,Fatal,11,9,118.93,264761.44
+2024-06-14,Intersection,Rain,Moderate,5,14,97.72,251673.59
+2024-02-13,Collector,Clear,Moderate,7,11,92.7,179046.33
+2024-04-20,Arterial,Clear,Serious,12,17,97.1,425357.38
+2024-01-02,Local,Snow,Moderate,4,6,67.43,99029.03
+2025-04-29,Highway,Snow,Serious,11,23,51.32,29039.1
+2024-11-07,Highway,Windy,Serious,8,15,109.46,121545.43
+2025-01-12,Arterial,Windy,Fatal,6,18,4.72,91773.86
+2025-06-15,Highway,Clear,Serious,8,12,4.69,186219.97
+2025-06-13,Ramp,Clear,Moderate,8,23,5.61,159149.34
+2024-04-05,Arterial,Clear,Fatal,8,12,5.72,136000.56
+2025-06-04,Collector,Windy,Minor,6,20,27.27,230183.46
+2025-06-06,Ramp,Fog,Serious,5,16,21.75,65755.58
+2025-04-26,Ramp,Rain,Moderate,8,23,3.49,209453.4
+2024-01-14,Ramp,Windy,Minor,10,7,14.48,442880.4
+2025-05-22,Highway,Sleet,Serious,12,15,32.06,467672.55
+2024-02-21,Ramp,Clear,Serious,11,15,7.04,284935.59
+2024-11-23,Highway,Windy,Serious,9,11,103.61,383176.51
+2024-11-20,Arterial,Sleet,Minor,4,4,44.69,445195.53
+2024-04-01,Intersection,Clear,Serious,9,0,48.53,425016.52
+2025-01-16,Collector,Sleet,Minor,9,6,32.86,328668.44
+2024-07-22,Ramp,Fog,Fatal,4,7,118.69,151762.64
+2024-01-07,Arterial,Snow,Serious,3,15,23.18,399118.8
+2025-04-23,Local,Windy,Minor,12,2,110.94,345738.48
+2024-12-17,Local,Sleet,Serious,10,20,35.73,193574.11
+2024-04-23,Arterial,Sleet,Minor,3,24,102.67,96992.06
+2025-04-03,Ramp,Snow,Minor,8,11,11.67,80853.87
+2024-04-20,Local,Snow,Serious,5,6,100.96,239548.36
+2024-08-10,Intersection,Sleet,Minor,7,19,45.78,402116.81
+2024-03-16,Highway,Clear,Minor,10,18,22.87,85094.38
+2024-10-18,Collector,Windy,Serious,2,3,3.67,205097.39
+2024-06-23,Ramp,Rain,Minor,10,3,39.95,50187.98
+2024-09-15,Intersection,Rain,Serious,2,14,24.84,483529.76
+2025-05-25,Ramp,Clear,Serious,11,9,96.79,105043.31
+2024-08-19,Collector,Clear,Moderate,5,9,59.38,440701.73
+2025-01-14,Ramp,Sleet,Serious,2,24,115.83,498687.51
+2025-01-09,Highway,Windy,Moderate,2,11,41.53,385394.17
+2024-06-06,Arterial,Clear,Minor,4,1,30.62,25543.57
+2024-01-06,Local,Windy,Minor,9,15,57.57,358205.54
+2024-08-29,Highway,Snow,Minor,1,7,69.06,393389.42
+2024-05-24,Ramp,Windy,Moderate,7,15,68.42,471110.62
+2025-04-02,Collector,Snow,Moderate,4,10,15.2,119829.22
+2024-04-04,Intersection,Snow,Moderate,8,24,31.21,361505.38
+2024-05-14,Arterial,Rain,Fatal,7,25,71.48,193833.2
+2024-10-22,Highway,Fog,Serious,12,23,37.01,426751.91
+2025-02-18,Local,Fog,Serious,5,8,57.11,403560.21
+2024-08-27,Collector,Snow,Minor,9,3,21.49,497581.17
+2024-12-21,Collector,Clear,Moderate,9,23,74.59,387678.79
+2024-04-26,Local,Snow,Minor,4,2,42.34,182794.82
+2025-01-19,Arterial,Windy,Fatal,5,6,76.52,217620.25
+2024-07-21,Arterial,Windy,Moderate,6,19,80.22,386648.59
+2024-05-12,Local,Sleet,Minor,5,15,103.34,374111.9
+2024-07-06,Local,Fog,Fatal,6,18,103.01,1996.6
+2024-01-07,Local,Snow,Minor,7,22,37.67,109618.48
+2024-05-07,Intersection,Windy,Minor,1,12,33.54,437099.65
+2024-08-10,Ramp,Sleet,Minor,8,11,84.56,329148.57
+2024-01-04,Collector,Rain,Moderate,2,22,3.15,32293.95
+2024-10-11,Highway,Sleet,Serious,6,9,36.71,432678.2
+2024-06-20,Collector,Rain,Minor,7,6,76.87,76341.04
+2024-11-11,Collector,Sleet,Minor,4,1,78.74,428227.2
+2025-01-11,Local,Rain,Serious,4,1,43.39,222201.45
+2025-05-08,Arterial,Snow,Fatal,5,20,9.3,332069.63
+2024-01-12,Highway,Clear,Moderate,2,3,114.21,354346.1
+2024-08-27,Highway,Fog,Minor,5,10,72.42,268212.61
+2025-02-14,Collector,Windy,Serious,6,22,32.29,149456.85
+2024-08-26,Highway,Fog,Serious,4,8,37.08,458262.53
+2024-06-07,Local,Fog,Serious,11,9,84.84,144453.33
+2024-10-13,Collector,Fog,Fatal,7,14,66.81,113646.28
+2024-09-06,Ramp,Sleet,Minor,8,13,51.57,59264.87
+2025-03-18,Local,Snow,Moderate,2,17,8.43,465641.51
+2024-04-16,Intersection,Windy,Minor,7,17,103.32,26625.1
+2025-01-30,Highway,Snow,Fatal,4,19,76.38,397566.87
+2025-04-04,Intersection,Windy,Moderate,11,19,14.73,208193.36
+2024-10-13,Ramp,Snow,Fatal,4,5,51.84,387318.34
+2024-04-28,Collector,Windy,Moderate,11,15,45.43,15734.25
+2024-11-14,Highway,Windy,Moderate,6,9,44.25,209245.11
+2024-04-03,Collector,Snow,Minor,2,0,106.63,366876.99
+2024-11-17,Local,Clear,Minor,2,20,35.38,353201.09
+2024-10-02,Intersection,Clear,Minor,2,17,8.14,113156.94
+2024-11-05,Highway,Fog,Serious,11,15,101.64,240607.61
+2024-11-16,Highway,Rain,Serious,2,6,85.88,37887.78
+2024-09-04,Intersection,Windy,Serious,4,24,111.19,191970.02
+2025-06-01,Ramp,Rain,Serious,8,15,4.29,150543.04
+2025-05-08,Highway,Rain,Minor,4,15,62.71,460248.91
+2025-06-04,Ramp,Windy,Minor,2,9,26.57,227456.7
+2025-04-21,Local,Rain,Serious,8,21,100.46,112915.22
+2024-10-06,Highway,Clear,Moderate,8,10,48.1,354067.14
+2024-03-30,Arterial,Clear,Minor,11,16,60.84,208581.32
+2024-01-28,Collector,Fog,Fatal,11,7,67.63,255788.46
+2024-03-16,Highway,Fog,Moderate,8,6,113.87,417768.4
+2025-05-30,Highway,Windy,Moderate,10,9,41.08,370480.76
+2024-01-13,Local,Windy,Moderate,5,21,70.12,428704.77
+2024-08-26,Local,Snow,Minor,11,8,47.46,184929.93
+2024-06-08,Collector,Clear,Moderate,9,22,69.38,35762.72
+2024-10-17,Local,Rain,Moderate,5,17,46.39,194282.95
+2024-12-17,Highway,Fog,Minor,11,1,23.49,25906.61
+2024-10-26,Collector,Rain,Minor,2,2,46.81,159824.75
+2025-04-25,Intersection,Fog,Moderate,2,13,2.56,21057.08
+2024-12-03,Collector,Snow,Minor,8,18,91.8,26926.26
+2024-11-22,Highway,Fog,Moderate,7,15,39.5,299138.72
+2024-01-05,Arterial,Windy,Moderate,5,9,114.72,471749.94
+2024-07-17,Arterial,Fog,Serious,8,8,38.14,243712.17
+2024-02-12,Collector,Fog,Moderate,3,4,74.36,13856.94
+2024-08-17,Collector,Clear,Serious,11,0,102.81,329078.42
+2025-03-03,Highway,Sleet,Fatal,1,15,20.0,496633.98
+2025-03-14,Arterial,Snow,Moderate,11,20,29.09,260495.45
+2024-12-21,Intersection,Clear,Moderate,7,13,78.42,296568.01
+2025-02-11,Highway,Windy,Minor,8,3,86.64,181881.89
+2024-10-29,Local,Windy,Moderate,10,18,7.01,236810.99
+2024-12-13,Collector,Snow,Serious,2,24,99.08,215748.41
+2025-05-21,Ramp,Windy,Minor,11,9,69.63,24580.17
+2025-05-17,Intersection,Windy,Fatal,4,20,96.6,8809.25
+2024-06-04,Collector,Rain,Serious,2,22,3.18,477266.6
+2024-07-11,Ramp,Clear,Fatal,9,24,64.41,26867.06
+2024-07-23,Intersection,Windy,Minor,6,18,79.03,208285.69
+2024-12-13,Intersection,Snow,Serious,11,5,101.34,347005.64
+2025-02-01,Arterial,Windy,Fatal,3,12,60.07,208344.34
+2024-09-20,Collector,Windy,Minor,5,5,55.82,101298.85
+2025-03-29,Ramp,Rain,Serious,3,10,8.59,142498.03
+2024-03-23,Local,Windy,Serious,5,5,69.58,110632.63
+2025-04-25,Arterial,Rain,Fatal,8,1,89.45,140628.02
+2025-06-16,Ramp,Windy,Serious,7,21,49.61,20263.42
+2024-02-16,Local,Snow,Serious,11,24,9.16,262819.16
+2024-11-24,Intersection,Windy,Serious,1,24,94.16,499313.61
+2025-02-18,Highway,Windy,Serious,2,1,30.52,218951.51
+2025-06-14,Arterial,Clear,Moderate,6,8,73.87,299412.32
+2024-04-14,Arterial,Sleet,Fatal,6,4,26.96,459170.14
+2024-02-27,Local,Clear,Moderate,10,6,101.53,336407.58
+2024-12-27,Ramp,Windy,Moderate,8,14,42.98,134231.3
+2024-09-02,Highway,Rain,Fatal,12,15,13.21,490462.01
+2024-08-20,Collector,Snow,Fatal,10,1,51.78,188958.38
+2024-03-07,Collector,Clear,Minor,8,7,76.57,121795.24
+2024-01-29,Intersection,Windy,Fatal,3,18,75.65,228665.87
+2024-05-28,Local,Windy,Fatal,2,14,45.91,186194.07
+2025-03-07,Ramp,Clear,Moderate,3,1,2.7,239712.14
+2024-12-29,Collector,Rain,Minor,11,6,29.64,28367.67
+2024-08-23,Local,Sleet,Minor,4,12,28.06,302929.38
+2025-03-09,Local,Sleet,Fatal,1,5,41.05,122265.31
+2024-06-09,Highway,Sleet,Fatal,9,23,100.9,157295.83
+2024-04-15,Highway,Rain,Fatal,6,4,74.12,129302.03
+2024-02-24,Local,Snow,Serious,6,23,59.05,408066.65
+2024-03-21,Local,Fog,Minor,5,4,80.76,268165.72
+2025-05-21,Arterial,Sleet,Moderate,3,9,83.67,127652.75
+2025-03-20,Arterial,Clear,Serious,3,8,56.04,362885.8
+2024-09-16,Intersection,Sleet,Moderate,11,21,63.28,172173.89
+2024-06-30,Arterial,Sleet,Minor,2,22,109.41,121396.02
+2025-06-13,Collector,Sleet,Minor,1,20,97.84,460351.38
+2025-01-12,Arterial,Fog,Moderate,1,8,17.57,244831.68
+2024-03-18,Arterial,Clear,Moderate,10,22,104.1,464225.76
+2024-12-27,Local,Fog,Serious,9,16,94.51,204030.61
+2024-09-04,Local,Windy,Minor,11,10,32.73,173069.48
+2024-04-29,Intersection,Windy,Moderate,4,21,4.82,301053.8
+2024-11-21,Highway,Rain,Moderate,5,14,11.81,133770.99
+2024-04-14,Collector,Rain,Fatal,3,18,45.83,257057.55
+2024-06-23,Collector,Sleet,Moderate,4,7,94.2,282454.46
+2024-05-01,Ramp,Windy,Minor,2,5,88.59,293721.66
+2025-01-25,Intersection,Clear,Moderate,1,25,75.88,253245.48
+2024-12-09,Highway,Fog,Fatal,5,15,77.25,220005.43
+2024-04-23,Collector,Clear,Serious,7,16,33.5,78087.38
+2024-11-30,Ramp,Snow,Serious,3,1,50.57,425465.42
+2024-04-08,Highway,Clear,Moderate,11,4,115.68,444373.46
+2024-02-09,Intersection,Fog,Fatal,2,23,72.06,143153.95
+2024-03-25,Collector,Fog,Minor,6,2,86.32,80415.7
+2024-07-12,Ramp,Fog,Fatal,9,3,55.23,374969.34
+2024-05-20,Local,Clear,Moderate,11,17,61.84,58510.82
+2024-09-03,Intersection,Clear,Moderate,6,24,5.73,77350.58
+2024-09-22,Local,Snow,Moderate,3,22,7.41,115693.34
+2024-07-11,Arterial,Snow,Minor,7,13,71.87,93750.38
+2025-02-28,Arterial,Sleet,Moderate,3,5,104.03,348781.03
+2024-06-07,Local,Rain,Moderate,1,10,39.33,29669.94
+2024-01-02,Highway,Snow,Minor,5,3,118.52,491542.14
+2024-07-24,Local,Rain,Serious,9,0,89.51,332126.86
+2024-04-18,Arterial,Windy,Moderate,8,8,71.37,330738.32
+2024-01-19,Highway,Snow,Serious,10,18,65.69,485948.59
+2025-03-09,Collector,Rain,Serious,8,2,101.98,4773.15
+2024-07-16,Collector,Clear,Minor,9,17,32.41,107132.28
+2024-10-07,Collector,Snow,Minor,8,1,3.11,259712.92
+2025-05-27,Ramp,Windy,Moderate,2,8,69.06,309218.7
+2025-05-15,Collector,Snow,Fatal,12,5,38.22,292909.79
+2025-05-22,Ramp,Clear,Fatal,9,4,102.55,391297.31
+2024-05-27,Highway,Windy,Serious,1,7,36.96,448095.87
+2024-02-21,Intersection,Rain,Minor,2,21,49.25,126313.47
+2025-06-02,Highway,Windy,Fatal,4,14,91.54,391986.05
+2024-08-08,Local,Rain,Minor,4,24,6.97,12983.63
+2024-08-23,Local,Rain,Fatal,9,7,48.05,292124.92
+2024-08-11,Ramp,Clear,Minor,4,7,75.15,115468.52
+2024-10-02,Ramp,Snow,Moderate,7,2,74.82,219425.96
+2024-07-06,Local,Windy,Moderate,3,21,100.04,96365.17
+2024-10-05,Ramp,Snow,Fatal,6,16,44.66,111746.84
+2024-03-11,Ramp,Rain,Moderate,12,17,63.95,77539.49
+2025-02-15,Collector,Fog,Moderate,10,14,66.57,149091.48
+2024-08-20,Local,Fog,Minor,1,14,106.84,37769.97
+2024-06-12,Highway,Snow,Fatal,2,8,76.07,221217.56
+2024-11-10,Collector,Clear,Minor,10,16,35.39,42345.52
+2025-06-17,Intersection,Rain,Serious,4,5,95.61,297563.25
+2024-09-25,Collector,Windy,Minor,2,10,49.04,109368.03
+2024-11-07,Collector,Rain,Fatal,4,14,50.02,30915.51
+2024-08-09,Arterial,Sleet,Moderate,5,14,79.92,497002.32
+2025-02-01,Arterial,Rain,Minor,10,4,33.81,420193.7
+2024-07-03,Highway,Rain,Minor,1,15,18.78,98001.48
+2025-05-18,Intersection,Windy,Minor,9,15,70.71,355631.75
+2025-06-07,Ramp,Windy,Serious,8,8,23.51,15974.67
+2025-03-09,Arterial,Sleet,Moderate,8,1,81.28,139318.07
+2025-02-03,Ramp,Snow,Serious,3,21,41.81,489167.24
+2024-07-30,Highway,Rain,Minor,9,24,63.67,463726.17
+2024-12-21,Collector,Sleet,Moderate,3,12,41.39,199184.04
+2024-10-04,Arterial,Snow,Minor,11,19,82.59,387980.89
+2025-05-23,Ramp,Rain,Serious,12,3,92.63,24877.39
+2024-07-01,Intersection,Windy,Moderate,9,24,50.94,381260.47
+2024-01-22,Intersection,Windy,Fatal,7,0,16.33,124572.26
+2025-01-23,Highway,Clear,Serious,2,4,65.7,354363.73
+2024-08-15,Local,Fog,Serious,4,4,60.49,161049.73
+2025-01-31,Ramp,Fog,Minor,10,1,16.27,222296.84
+2024-03-31,Ramp,Sleet,Serious,5,20,116.89,24672.74

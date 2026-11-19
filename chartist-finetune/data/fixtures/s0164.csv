@@ -1,241 +1,241 @@
-reportDate,loanProductType,borrowerSegment,regionCode,activeLoanCount,outstandingBalance,delinquencyRatePct,interestIncome
-2024-11-05,Auto Loan,Super Prime,West Coast,39941,1750155578.26,2.87,26955499.21
-2024-05-17,Mortgage,Near Prime,Mountain,77337,13153984.49,24.16,8064086.95
-2024-11-13,Auto Loan,Unrated,Midwest,58651,943644688.5,17.95,24910511.75
-2024-07-08,Personal Loan,Near Prime,Northeast,248842,537214088.73,16.74,21682187.29
-2024-04-24,Student Loan,Unrated,Southeast,104106,702871537.61,5.34,129990.38
-2024-09-29,Student Loan,Super Prime,Southwest,34458,1316885965.82,13.59,20168156.08
-2024-07-28,Personal Loan,Prime,Northeast,34779,891936686.41,0.84,4597808.93
-2024-06-13,Student Loan,Prime,West Coast,237873,531877222.46,28.92,37560304.72
-2024-02-29,Home Equity Line,Super Prime,Midwest,139054,1109715021.95,6.22,689575.92
-2025-04-05,Auto Loan,Subprime,Midwest,114189,1683565126.51,20.41,20816724.28
-2024-04-14,Personal Loan,Prime,Midwest,28083,762837854.4,25.58,5285539.86
-2024-11-07,Auto Loan,Unrated,Mountain,4871,1551736265.98,34.64,16110344.05
-2025-01-11,Mortgage,Prime,Midwest,203617,538543378.36,6.21,12752798.33
-2025-01-04,Mortgage,Unrated,Midwest,16809,1153715974.38,10.45,12140754.05
-2024-11-30,Small Business Loan,Unrated,Mountain,124913,1782913282.45,18.73,26130410.08
-2024-03-22,Auto Loan,Unrated,Southwest,173180,541772916.44,0.39,4687616.74
-2025-04-22,Personal Loan,Super Prime,West Coast,233894,695362715.48,8.36,12244407.36
-2024-09-24,Small Business Loan,Super Prime,Mountain,67141,213199962.34,27.43,38893837.93
-2024-05-15,Mortgage,Unrated,Mountain,67131,1545968254.92,0.81,34928532.01
-2024-01-25,Student Loan,Super Prime,Southeast,67812,370929851.21,28.96,10697245.32
-2024-07-15,Student Loan,Super Prime,Mountain,57196,1164659854.15,0.65,15923752.07
-2025-01-03,Home Equity Line,Near Prime,Northeast,239861,809679378.25,16.03,31601878.4
-2024-10-04,Personal Loan,Unrated,Southeast,144695,788573849.98,19.3,14659375.24
-2024-09-21,Student Loan,Near Prime,Northeast,154501,1130144408.81,4.51,31270474.86
-2025-02-20,Auto Loan,Near Prime,West Coast,48169,837166925.44,26.61,25737606.83
-2025-05-19,Personal Loan,Unrated,Southeast,29195,1591638631.39,31.65,21254673.12
-2024-05-24,Auto Loan,Near Prime,Southwest,185616,609704477.22,32.12,7261814.54
-2025-04-17,Small Business Loan,Subprime,West Coast,159686,618014505.14,0.1,27977581.44
-2025-05-01,Small Business Loan,Subprime,West Coast,118681,1310524888.11,1.51,14951787.46
-2024-04-04,Home Equity Line,Near Prime,Southeast,57185,17342435.76,24.24,37891756.01
-2024-03-22,Auto Loan,Super Prime,Mountain,201195,1648557173.96,22.52,35545367.0
-2025-01-20,Personal Loan,Unrated,Southeast,194763,366750576.27,27.48,34139726.21
-2024-07-27,Mortgage,Subprime,Mountain,87120,272173222.91,31.78,20989597.62
-2024-10-03,Auto Loan,Subprime,Southeast,222177,1108002388.51,21.91,10685975.48
-2024-04-15,Small Business Loan,Super Prime,West Coast,50587,300282745.32,18.85,4010822.51
-2024-12-21,Small Business Loan,Subprime,Southwest,56247,1622925666.94,28.06,33971681.03
-2025-05-29,Home Equity Line,Unrated,Mountain,174885,1653762332.08,21.28,31326533.14
-2025-01-18,Small Business Loan,Prime,Midwest,152921,335473407.43,26.08,7886541.06
-2025-04-28,Personal Loan,Prime,Mountain,226952,1332750467.05,26.99,28338770.84
-2025-02-19,Small Business Loan,Near Prime,Midwest,209672,1648340611.55,31.34,25746601.8
-2024-11-19,Personal Loan,Near Prime,Midwest,210619,786729297.72,15.39,7186696.63
-2024-09-04,Home Equity Line,Subprime,Southwest,240273,1783543297.45,24.93,37664507.56
-2025-06-05,Small Business Loan,Prime,Midwest,75597,1054186025.11,21.88,1250926.74
-2024-05-23,Auto Loan,Unrated,Southeast,201576,1363803462.17,6.76,40951564.51
-2024-08-25,Student Loan,Unrated,Northeast,221029,1094072048.59,24.33,5588557.64
-2024-07-27,Student Loan,Prime,Mountain,6044,690663817.12,11.08,33997684.44
-2024-07-15,Personal Loan,Super Prime,Southeast,158180,1841208953.45,30.16,18844975.24
-2025-01-29,Student Loan,Prime,Mountain,197847,10115736.95,25.14,17325452.18
-2024-07-10,Home Equity Line,Super Prime,Southwest,18448,1368432072.98,33.95,35467260.28
-2024-02-13,Mortgage,Subprime,Northeast,197618,341040071.96,21.95,29796890.47
-2024-09-22,Small Business Loan,Subprime,Midwest,210127,793520806.52,28.23,22867795.86
-2025-01-12,Auto Loan,Near Prime,Mountain,20508,173779185.34,13.97,41028069.44
-2024-12-20,Small Business Loan,Super Prime,West Coast,44416,481290986.75,28.64,37857828.27
-2024-04-01,Home Equity Line,Prime,West Coast,200980,1224047719.87,20.32,2012459.12
-2024-03-24,Mortgage,Near Prime,Midwest,226112,1069432089.43,0.99,15929475.99
-2024-05-08,Small Business Loan,Unrated,Southwest,194920,1532505612.23,33.45,27295364.61
-2024-02-06,Student Loan,Near Prime,Mountain,233260,1473355877.15,25.36,7070003.93
-2024-01-09,Home Equity Line,Near Prime,Mountain,249421,523095531.88,30.08,18793538.54
-2024-03-26,Student Loan,Prime,Northeast,197725,900085781.85,28.72,26673155.44
-2024-12-06,Personal Loan,Prime,Southwest,12187,1668810429.54,2.2,14098134.59
-2025-03-25,Personal Loan,Subprime,Midwest,211877,1331937584.54,9.12,37624646.7
-2024-08-02,Auto Loan,Super Prime,West Coast,104540,244649484.83,16.72,17591021.18
-2025-04-21,Personal Loan,Super Prime,Southwest,160790,1820493393.85,15.32,30787203.71
-2024-05-13,Mortgage,Prime,West Coast,220172,958432053.16,22.93,13670687.72
-2024-12-21,Student Loan,Unrated,Northeast,213134,244602392.66,19.1,29989877.8
-2024-10-14,Small Business Loan,Subprime,Southwest,146706,1262884228.82,0.86,26356513.56
-2025-06-09,Student Loan,Near Prime,Northeast,198536,750955515.89,23.75,33284367.95
-2024-06-01,Home Equity Line,Super Prime,Mountain,104259,902747018.49,25.67,17058982.15
-2024-08-11,Mortgage,Super Prime,Mountain,44291,1462589040.07,21.53,31949248.73
-2025-04-15,Home Equity Line,Prime,Mountain,177991,334978580.17,12.25,20958820.06
-2025-06-09,Auto Loan,Unrated,Southeast,215558,1636036097.32,2.47,1151426.52
-2024-11-15,Personal Loan,Unrated,West Coast,42775,860918168.3,10.98,13578137.49
-2024-08-17,Home Equity Line,Subprime,Southeast,236017,946055793.28,0.03,2358813.24
-2024-06-15,Auto Loan,Unrated,Southeast,225147,1053928681.77,27.22,20379061.02
-2024-12-19,Auto Loan,Prime,West Coast,198811,1571662375.23,27.99,26976983.45
-2024-03-09,Home Equity Line,Prime,Southeast,54321,750752990.24,34.15,38594500.49
-2025-06-04,Student Loan,Super Prime,Midwest,65328,133142218.27,17.06,1760462.41
-2024-07-13,Small Business Loan,Subprime,Southwest,9783,1477596309.87,32.63,5624419.02
-2024-04-22,Small Business Loan,Unrated,Southeast,219424,37842199.76,19.0,38097255.01
-2024-01-12,Student Loan,Near Prime,Southwest,198962,1381552122.48,11.98,38103333.0
-2025-04-19,Personal Loan,Near Prime,Midwest,152815,1137826147.14,18.5,29517992.19
-2024-11-15,Personal Loan,Super Prime,Mountain,137266,1431897976.0,17.57,17816771.24
-2025-02-07,Student Loan,Unrated,Northeast,23762,1099993838.73,20.48,34039357.22
-2024-02-24,Mortgage,Subprime,Southwest,163476,92829944.21,29.81,34974856.87
-2024-10-11,Personal Loan,Super Prime,Northeast,857,359890559.7,14.11,36210734.94
-2025-02-19,Mortgage,Subprime,Southwest,64161,431045434.84,20.88,8964240.13
-2024-10-12,Student Loan,Near Prime,Northeast,35530,279889837.63,9.77,9867456.09
-2025-03-20,Small Business Loan,Super Prime,West Coast,101294,1036441921.76,22.96,29895992.35
-2024-01-28,Student Loan,Unrated,Mountain,52937,1444981277.37,8.89,35667975.07
-2024-02-13,Mortgage,Prime,Southwest,115241,1174379552.64,0.52,28454376.92
-2025-04-17,Personal Loan,Unrated,Southeast,225470,943626262.16,30.47,26942515.75
-2024-07-21,Personal Loan,Near Prime,Midwest,18888,1453791520.11,1.35,40265448.25
-2024-01-18,Home Equity Line,Subprime,Midwest,19968,1730345376.53,14.6,10286179.07
-2024-11-17,Auto Loan,Prime,Midwest,75563,428994838.7,9.79,32666559.23
-2024-06-09,Home Equity Line,Unrated,Southwest,20902,1074937903.96,6.08,28557687.71
-2024-03-16,Auto Loan,Subprime,Midwest,207277,1729302692.72,16.27,34347369.13
-2025-04-04,Auto Loan,Unrated,Northeast,232202,524624426.83,32.13,31416993.66
-2025-04-26,Mortgage,Unrated,Northeast,11279,1271364468.63,14.88,26123523.01
-2025-04-06,Small Business Loan,Super Prime,Mountain,237912,1136716908.03,10.98,13766437.47
-2024-02-20,Student Loan,Super Prime,Southeast,30117,1672208573.61,19.8,2537953.35
-2024-03-13,Student Loan,Super Prime,Midwest,101430,715927555.98,8.38,38616274.81
-2024-07-14,Student Loan,Near Prime,Southwest,145109,169263105.51,22.54,12226153.6
-2024-10-22,Auto Loan,Near Prime,Midwest,105177,1053279222.06,5.4,11773047.65
-2025-02-24,Auto Loan,Prime,Southwest,209374,186958428.66,28.62,22087504.78
-2025-06-20,Auto Loan,Super Prime,Southeast,205599,1770281102.81,30.89,32175502.52
-2024-04-17,Auto Loan,Prime,Southeast,213817,816339459.37,5.15,10256589.42
-2024-04-12,Home Equity Line,Unrated,West Coast,126036,974874653.56,6.9,4252707.72
-2024-08-12,Small Business Loan,Super Prime,West Coast,10104,1268771188.16,31.45,30591115.58
-2024-07-02,Mortgage,Prime,West Coast,145511,842250418.88,34.42,247592.48
-2024-05-12,Home Equity Line,Near Prime,Southwest,191783,1012387838.3,7.04,4388984.52
-2025-06-03,Mortgage,Near Prime,Midwest,27024,1065605151.54,31.98,18503609.66
-2025-02-04,Mortgage,Super Prime,Mountain,221766,1817469627.52,7.16,836288.32
-2025-01-12,Home Equity Line,Prime,Mountain,129142,1818625868.66,5.42,4159827.64
-2025-03-07,Auto Loan,Prime,Midwest,143824,668367797.95,15.93,8082526.8
-2024-06-05,Small Business Loan,Super Prime,Northeast,150898,952901835.17,34.01,40466265.43
-2024-10-22,Mortgage,Unrated,Southwest,124534,1779480063.81,12.77,31332923.65
-2025-02-23,Mortgage,Subprime,Midwest,133220,292274063.68,18.69,9402916.26
-2024-08-28,Small Business Loan,Super Prime,Northeast,121933,133697679.08,24.98,39984302.4
-2025-06-21,Student Loan,Super Prime,Northeast,104742,959582350.92,32.88,8833571.23
-2025-03-28,Auto Loan,Subprime,Southeast,53854,1057333768.72,9.01,40148953.82
-2024-11-11,Auto Loan,Near Prime,Southeast,150923,903097307.23,11.81,28664571.53
-2024-12-24,Personal Loan,Prime,Southwest,134419,757875115.92,28.74,15985948.65
-2024-09-10,Small Business Loan,Prime,Midwest,230771,1371601578.98,12.05,35885993.06
-2024-09-10,Small Business Loan,Subprime,West Coast,242010,1308120054.8,12.23,31442978.12
-2024-04-23,Home Equity Line,Near Prime,Southwest,137354,1407428144.3,12.89,37056441.14
-2025-03-10,Student Loan,Unrated,Mountain,224935,857365279.87,19.6,3750630.36
-2024-10-15,Mortgage,Unrated,Southeast,35280,1124184422.39,2.79,37603134.43
-2025-06-06,Student Loan,Prime,West Coast,13508,952008290.39,14.56,39219863.62
-2024-10-01,Mortgage,Near Prime,Southwest,226997,55972817.09,4.77,33229134.58
-2024-10-27,Personal Loan,Near Prime,Midwest,92832,1632924502.25,34.09,27485061.99
-2024-12-11,Auto Loan,Unrated,Mountain,126387,712101773.56,13.61,11705370.75
-2025-03-27,Auto Loan,Prime,West Coast,248441,1184717711.94,29.01,21469531.42
-2024-05-07,Small Business Loan,Super Prime,Midwest,53327,560566926.44,2.51,8801473.5
-2025-05-09,Student Loan,Unrated,Northeast,171558,1781475245.18,13.29,29755460.01
-2024-06-13,Student Loan,Near Prime,Mountain,112566,186803744.9,13.51,16486545.56
-2024-04-10,Auto Loan,Unrated,Northeast,51874,297484787.28,28.07,7612512.23
-2025-05-23,Home Equity Line,Unrated,Mountain,60673,399155288.9,32.79,10709605.04
-2025-03-25,Auto Loan,Super Prime,Southwest,99289,1417587811.95,17.15,22155996.01
-2024-05-26,Small Business Loan,Near Prime,Mountain,49642,1697484245.66,11.02,40189884.37
-2024-04-29,Student Loan,Super Prime,Northeast,120131,698253985.42,15.27,8055483.28
-2024-09-20,Student Loan,Super Prime,Midwest,65361,1700336231.26,30.66,981889.01
-2025-03-19,Student Loan,Near Prime,Southeast,149966,608591582.09,34.79,29835977.11
-2025-06-09,Home Equity Line,Super Prime,Southwest,9076,780444110.11,24.2,4071735.23
-2024-10-16,Student Loan,Subprime,Mountain,74248,1054400522.76,30.64,6321448.67
-2024-07-03,Student Loan,Prime,Southwest,177619,194505077.3,6.82,28101276.18
-2024-03-22,Small Business Loan,Unrated,Southeast,78513,232100742.16,4.99,14984018.96
-2024-08-02,Auto Loan,Super Prime,Mountain,2261,1432321366.06,0.59,15197141.36
-2025-04-07,Mortgage,Near Prime,Southeast,194165,65286286.09,24.02,19412827.12
-2024-12-12,Personal Loan,Near Prime,Midwest,191082,537644427.8,28.55,443229.82
-2025-05-12,Small Business Loan,Unrated,Mountain,119216,923448311.48,9.5,27435318.49
-2024-04-21,Student Loan,Unrated,Mountain,208562,1443210616.21,25.2,17133191.39
-2024-05-22,Personal Loan,Near Prime,Midwest,103156,1716472467.76,21.3,31511548.36
-2024-03-05,Small Business Loan,Prime,Midwest,23512,428499099.73,7.4,10574566.4
-2024-08-02,Home Equity Line,Subprime,West Coast,35627,1068785900.75,9.13,10707015.29
-2024-08-10,Mortgage,Subprime,Southwest,220774,267268865.16,15.37,28240582.31
-2025-01-25,Student Loan,Unrated,West Coast,42749,1812633404.6,29.22,27948548.86
-2025-06-11,Small Business Loan,Prime,Mountain,220090,351109470.25,2.24,37085032.75
-2025-01-16,Small Business Loan,Unrated,Southwest,237484,275755095.43,15.8,1675219.24
-2024-07-20,Auto Loan,Prime,Southeast,209491,76930057.26,1.01,17540553.96
-2024-08-08,Mortgage,Super Prime,Northeast,60466,1293077707.58,12.94,20325754.25
-2024-05-23,Auto Loan,Prime,Midwest,18123,820877710.15,0.22,453026.33
-2024-05-07,Personal Loan,Super Prime,Mountain,164905,359640426.49,15.92,8244348.45
-2025-01-30,Auto Loan,Prime,Southwest,160104,772717883.49,29.55,34382650.32
-2024-06-24,Small Business Loan,Prime,Southeast,213749,1025753854.82,30.5,29850178.13
-2024-04-25,Mortgage,Near Prime,Southwest,107375,1491739233.52,16.22,22897637.42
-2024-07-11,Small Business Loan,Prime,Southeast,72010,536840288.3,26.7,9814540.98
-2024-04-08,Home Equity Line,Near Prime,West Coast,248185,413659369.31,17.37,37712937.23
-2025-06-16,Personal Loan,Unrated,West Coast,210570,32314169.01,2.28,30558494.27
-2025-04-29,Auto Loan,Subprime,Southeast,193144,1453127012.41,8.72,25668684.67
-2025-04-05,Small Business Loan,Prime,West Coast,6525,327068153.07,5.71,13208145.31
-2024-04-13,Personal Loan,Near Prime,Mountain,31135,319037093.41,11.56,20960118.84
-2024-07-21,Small Business Loan,Prime,Southeast,33817,1247759635.62,26.79,40586725.71
-2024-06-09,Personal Loan,Subprime,Southeast,37826,537724089.58,21.04,35952341.68
-2025-01-31,Personal Loan,Near Prime,Southwest,240135,618176395.94,2.62,22732287.1
-2025-03-22,Student Loan,Subprime,Midwest,106565,192650240.38,34.88,11567875.62
-2025-02-23,Student Loan,Unrated,Southeast,139925,1141482854.17,13.36,13673694.9
-2024-03-31,Personal Loan,Subprime,Southeast,21098,1648349937.56,0.95,25706168.63
-2024-09-23,Auto Loan,Subprime,Northeast,114841,1266718279.17,15.67,22536507.14
-2024-09-01,Student Loan,Unrated,Southeast,175211,1465768705.06,18.12,39368972.52
-2024-09-07,Mortgage,Super Prime,West Coast,67571,721636957.94,34.94,5024977.8
-2024-12-22,Mortgage,Subprime,Midwest,248163,1780494097.86,8.64,13868548.02
-2024-08-08,Home Equity Line,Prime,Southwest,53100,157326094.79,23.11,35966979.38
-2024-01-24,Small Business Loan,Unrated,Mountain,194396,143151831.32,7.42,40896760.36
-2025-05-25,Personal Loan,Unrated,Northeast,109548,1557204526.2,7.16,32235821.22
-2025-02-08,Small Business Loan,Subprime,Southeast,112071,1050428853.77,12.49,11691024.15
-2024-01-23,Home Equity Line,Prime,Midwest,185764,272770547.65,2.78,19727601.28
-2024-10-07,Home Equity Line,Unrated,Midwest,13448,38011886.04,4.19,10908994.99
-2025-01-04,Auto Loan,Near Prime,West Coast,188997,696793789.98,19.08,16153053.76
-2025-03-12,Auto Loan,Subprime,Southwest,107013,553850842.3,15.91,6773466.99
-2024-02-29,Student Loan,Near Prime,Mountain,241519,1152155435.0,33.76,32802400.46
-2024-06-13,Home Equity Line,Unrated,Midwest,65029,36647965.92,10.73,30274477.38
-2024-06-08,Mortgage,Super Prime,Southeast,239467,984909824.22,24.08,28216480.66
-2025-02-28,Small Business Loan,Unrated,Northeast,135573,854737098.47,33.52,33837956.84
-2024-03-17,Small Business Loan,Prime,Southwest,117014,2284765.51,24.5,23527037.79
-2024-08-21,Mortgage,Prime,Northeast,170148,1731441426.78,7.67,36304999.66
-2024-08-25,Student Loan,Unrated,Mountain,100112,233666749.26,4.8,18254087.35
-2024-06-06,Mortgage,Super Prime,Northeast,171719,794790962.53,2.53,33143426.24
-2024-12-07,Mortgage,Near Prime,Southwest,95078,827892158.07,9.94,40566165.58
-2025-03-04,Student Loan,Super Prime,Midwest,24012,1552563407.94,23.3,19952467.72
-2025-04-17,Personal Loan,Super Prime,Midwest,153451,604404449.84,8.67,1404778.82
-2024-06-22,Personal Loan,Super Prime,Southwest,57663,1445537764.28,34.4,18637412.77
-2024-03-07,Mortgage,Subprime,Midwest,43556,186030686.57,10.69,4398873.13
-2024-10-19,Personal Loan,Unrated,Midwest,226010,1591864206.48,24.42,39743810.49
-2024-04-06,Mortgage,Prime,Southeast,149095,896560691.0,25.65,40680306.01
-2024-07-21,Student Loan,Super Prime,Midwest,89604,866725503.39,3.66,29587933.93
-2025-06-01,Student Loan,Subprime,Midwest,139876,823305690.93,29.75,10431155.41
-2024-01-28,Personal Loan,Super Prime,Midwest,127514,344953749.67,15.38,13294376.49
-2024-08-06,Student Loan,Subprime,West Coast,241155,900492599.47,34.19,14380074.04
-2024-01-08,Auto Loan,Unrated,Southeast,112154,748508132.65,29.53,13339100.07
-2025-04-06,Small Business Loan,Subprime,Northeast,126553,1075864583.21,31.98,37606341.03
-2024-01-06,Mortgage,Unrated,Mountain,85159,1121820001.54,17.37,32932757.75
-2024-12-16,Auto Loan,Near Prime,West Coast,92835,904194218.08,19.88,22231591.26
-2024-11-26,Student Loan,Super Prime,Midwest,181425,86039902.86,12.49,27318747.98
-2025-03-02,Mortgage,Near Prime,Midwest,231176,1474256462.82,7.59,25961209.03
-2024-09-28,Small Business Loan,Super Prime,Mountain,59777,1040013810.42,20.5,21322528.99
-2024-05-04,Small Business Loan,Prime,Southeast,49177,249254526.3,25.46,2319061.05
-2024-08-16,Mortgage,Super Prime,Midwest,68085,252758579.46,22.54,202360.82
-2024-10-21,Personal Loan,Near Prime,West Coast,192991,227878191.89,20.75,3889442.91
-2025-01-29,Student Loan,Super Prime,Mountain,168029,507393599.86,23.27,10508184.82
-2024-02-21,Student Loan,Near Prime,Southeast,48629,328637767.98,34.6,8347484.47
-2024-10-01,Student Loan,Subprime,Mountain,108621,1544269501.49,0.47,34508528.87
-2025-03-17,Mortgage,Prime,Northeast,207738,20138516.51,0.32,40636218.92
-2024-03-24,Mortgage,Prime,Southeast,51188,1802203711.2,4.14,39255538.43
-2024-10-25,Home Equity Line,Subprime,Midwest,149727,978292475.51,9.41,15131950.66
-2024-05-19,Home Equity Line,Subprime,Mountain,98516,1076766591.82,20.09,39498236.43
-2024-02-02,Small Business Loan,Subprime,Mountain,54173,1782590280.34,27.38,5996364.13
-2025-01-17,Home Equity Line,Prime,Southwest,89935,424623064.54,12.55,22331553.95
-2024-02-23,Auto Loan,Near Prime,Mountain,240074,1637560231.99,26.36,40558385.6
-2024-11-22,Personal Loan,Subprime,Midwest,105542,356517529.5,11.88,3383308.73
-2025-05-07,Auto Loan,Super Prime,Midwest,18828,1556329863.66,30.81,8691557.83
-2024-04-16,Small Business Loan,Super Prime,Northeast,120612,1204363002.31,3.32,40070085.21
-2024-04-09,Small Business Loan,Subprime,Northeast,70250,1280127483.17,18.19,11870581.78
-2025-05-22,Student Loan,Super Prime,Northeast,2671,1841604774.13,14.56,41325422.98
-2024-11-30,Home Equity Line,Prime,West Coast,23855,1058758817.13,29.64,17868142.97
-2025-01-17,Mortgage,Super Prime,Mountain,199700,906002726.26,5.47,39365235.3
-2024-08-15,Student Loan,Prime,Southwest,28993,754073131.9,17.67,15180754.4
-2024-03-16,Small Business Loan,Near Prime,Mountain,152838,433607944.02,4.44,41779282.29
-2025-01-28,Mortgage,Super Prime,Midwest,5342,693281553.2,27.83,7886839.58
-2024-03-23,Personal Loan,Prime,West Coast,143568,91860658.46,14.41,24341912.01
-2024-05-08,Personal Loan,Subprime,Midwest,178429,689879901.28,20.49,39450166.06
+billing_date,service_type,customer_segment,service_region,energy_consumption_kwh,billed_amount_usd,late_payment_fee_usd,meter_read_count
+2024-10-16,water,commercial,central_metro,180617.79,183287.06,129.18,3
+2025-04-10,wastewater,commercial,east_district,203555.75,482151.09,424.91,2
+2025-01-12,water,municipal,north_district,162130.43,259301.8,346.13,11
+2024-07-28,electricity,commercial,east_district,172109.07,355219.31,177.7,12
+2024-04-11,natural_gas,commercial,south_district,12671.68,370517.73,426.61,8
+2025-06-22,natural_gas,small_business,central_metro,239529.83,312809.48,260.56,8
+2024-01-24,natural_gas,small_business,south_district,176926.58,317457.89,37.63,3
+2024-06-22,natural_gas,residential,north_district,227910.91,174077.04,441.85,10
+2025-03-17,stormwater,municipal,central_metro,137751.71,9080.49,264.51,6
+2025-04-26,district_heating,municipal,east_district,181956.82,484181.04,41.67,2
+2024-12-30,water,residential,west_district,131028.81,163330.21,139.97,6
+2024-02-27,district_heating,small_business,east_district,66541.88,443860.79,468.97,10
+2024-03-24,stormwater,small_business,central_metro,175123.24,474328.74,139.35,7
+2025-04-02,water,industrial,east_district,199699.83,313115.95,175.52,11
+2024-02-17,stormwater,commercial,north_district,217246.98,471582.46,285.84,3
+2025-04-09,water,commercial,east_district,50328.27,214585.03,80.44,7
+2025-06-02,wastewater,residential,south_district,80879.78,193419.64,463.85,10
+2024-12-04,electricity,municipal,west_district,192930.45,121389.69,45.47,6
+2025-03-14,district_heating,industrial,west_district,40779.24,199350.05,355.88,6
+2025-04-14,natural_gas,residential,north_district,157290.33,87030.72,74.85,9
+2024-06-17,district_heating,commercial,central_metro,219730.12,442509.9,345.49,10
+2025-03-01,natural_gas,industrial,south_district,213160.79,89326.34,113.65,2
+2024-12-31,water,small_business,north_district,23716.14,183752.26,164.8,2
+2025-05-29,natural_gas,municipal,central_metro,220884.44,177330.01,356.48,3
+2024-07-20,wastewater,residential,east_district,149548.68,381747.99,378.7,2
+2025-04-26,electricity,industrial,west_district,107241.03,179099.76,329.77,8
+2025-02-09,stormwater,small_business,north_district,248309.47,871.89,310.67,10
+2024-02-15,wastewater,small_business,central_metro,185192.18,272598.84,465.39,3
+2024-08-13,wastewater,residential,north_district,117137.15,326396.58,392.43,5
+2025-03-23,district_heating,industrial,east_district,102907.92,28381.55,377.24,7
+2024-10-13,wastewater,industrial,east_district,34899.97,362694.77,402.53,2
+2024-12-03,district_heating,municipal,west_district,127729.92,294964.5,99.34,9
+2024-08-16,water,municipal,central_metro,158115.1,368078.76,177.6,12
+2025-03-16,water,residential,west_district,39907.8,408892.15,464.7,4
+2024-07-13,water,small_business,south_district,119264.66,187010.27,124.36,3
+2024-10-30,stormwater,municipal,north_district,6613.26,12530.35,297.34,10
+2024-10-13,wastewater,small_business,west_district,156930.9,30148.85,241.54,6
+2024-08-12,water,municipal,west_district,49780.88,472852.0,121.37,6
+2024-01-05,electricity,commercial,west_district,183579.16,87025.46,184.53,3
+2024-03-30,natural_gas,municipal,north_district,184228.18,8972.97,178.52,9
+2024-10-08,stormwater,residential,south_district,58788.62,226833.82,27.3,3
+2024-11-11,electricity,industrial,west_district,177787.31,208198.24,185.18,10
+2025-02-21,electricity,municipal,east_district,163243.19,64961.66,178.99,10
+2024-11-22,district_heating,small_business,west_district,83167.93,13051.75,368.49,8
+2024-03-12,stormwater,municipal,east_district,131975.26,58702.68,371.46,3
+2024-05-21,natural_gas,residential,west_district,153660.76,127791.47,331.09,2
+2024-07-18,wastewater,commercial,west_district,59779.1,466573.71,497.34,2
+2024-06-01,water,commercial,east_district,142733.49,373859.37,489.02,6
+2024-05-18,water,industrial,north_district,208005.12,48830.04,442.24,1
+2024-08-19,district_heating,small_business,east_district,28634.34,268153.27,73.35,9
+2025-02-13,electricity,municipal,north_district,195335.16,168971.14,449.85,11
+2025-02-02,water,residential,north_district,114911.25,15342.67,350.85,5
+2025-04-06,stormwater,municipal,south_district,59940.4,406200.37,270.38,12
+2025-05-07,wastewater,commercial,east_district,16320.75,86272.85,160.15,5
+2025-03-26,district_heating,industrial,north_district,217363.31,410021.17,326.52,10
+2024-08-26,water,small_business,south_district,217833.28,207218.79,309.04,6
+2024-07-24,stormwater,commercial,west_district,139023.17,217658.14,193.31,10
+2025-01-06,district_heating,small_business,east_district,44154.86,159467.28,252.41,10
+2025-01-26,stormwater,commercial,central_metro,191792.17,440352.45,297.02,11
+2024-09-25,stormwater,residential,north_district,107077.88,313577.81,240.21,5
+2024-05-16,stormwater,commercial,south_district,230396.24,40336.24,334.76,11
+2025-01-04,wastewater,residential,south_district,2851.53,162774.11,89.59,4
+2024-03-23,stormwater,residential,east_district,190949.79,190143.06,312.34,9
+2025-04-15,natural_gas,municipal,east_district,182574.04,316156.72,402.18,10
+2024-08-30,stormwater,small_business,west_district,19639.36,317162.81,282.18,2
+2024-06-29,district_heating,municipal,central_metro,106551.01,458088.92,438.92,6
+2025-05-14,electricity,small_business,north_district,226003.84,417459.63,185.17,4
+2024-02-25,electricity,municipal,west_district,37309.87,109743.5,115.29,10
+2025-05-10,wastewater,municipal,central_metro,8108.28,263751.25,240.27,5
+2024-09-20,district_heating,industrial,north_district,207618.66,359230.0,233.23,11
+2024-01-02,wastewater,small_business,west_district,227263.6,405998.76,226.86,9
+2024-04-20,natural_gas,commercial,west_district,7530.6,84646.89,197.3,8
+2024-08-05,natural_gas,residential,north_district,223342.69,383048.04,250.71,3
+2024-05-31,natural_gas,residential,west_district,163616.64,498787.9,244.59,5
+2024-12-06,district_heating,industrial,south_district,62592.74,47828.79,112.71,5
+2025-01-10,district_heating,small_business,central_metro,138155.08,174939.05,294.46,2
+2024-08-27,district_heating,municipal,north_district,125583.52,370030.85,114.07,1
+2025-04-14,water,small_business,west_district,90563.07,414904.92,269.9,10
+2025-03-10,electricity,small_business,west_district,144327.65,196679.59,338.45,12
+2024-05-14,water,small_business,north_district,104404.17,152263.77,185.54,7
+2024-06-29,electricity,small_business,east_district,4963.76,378457.99,317.4,5
+2024-04-09,district_heating,municipal,west_district,213776.01,472795.63,320.24,5
+2024-12-10,water,small_business,east_district,44446.58,390165.08,393.27,5
+2025-01-18,stormwater,residential,east_district,184233.14,462932.68,2.52,10
+2025-01-01,stormwater,residential,west_district,32615.53,490294.53,45.13,4
+2024-10-06,wastewater,municipal,west_district,62115.7,213340.81,455.39,1
+2024-08-23,electricity,municipal,south_district,150675.5,2447.51,276.66,7
+2024-06-02,stormwater,industrial,central_metro,217847.45,211291.74,291.01,8
+2025-02-13,natural_gas,municipal,north_district,127439.47,257453.26,119.75,10
+2025-05-06,stormwater,small_business,south_district,146014.99,336930.15,481.96,4
+2024-02-05,wastewater,residential,south_district,86112.4,107547.79,402.48,8
+2024-10-04,stormwater,residential,west_district,159472.66,136587.52,91.77,11
+2025-03-05,district_heating,municipal,west_district,127181.93,167334.42,227.84,10
+2025-02-13,wastewater,commercial,south_district,230916.58,369966.37,386.79,11
+2024-07-16,natural_gas,commercial,south_district,42335.35,336723.45,281.81,9
+2024-10-27,stormwater,industrial,east_district,37444.97,350719.22,237.51,11
+2024-12-25,district_heating,commercial,west_district,166634.66,83555.3,139.96,8
+2025-02-21,water,residential,west_district,113794.54,434493.41,477.63,5
+2025-05-13,natural_gas,industrial,central_metro,114520.08,321657.43,177.73,4
+2025-03-17,electricity,commercial,west_district,98068.32,271761.75,420.64,4
+2025-01-28,stormwater,municipal,east_district,25577.6,125570.97,298.22,9
+2024-01-26,wastewater,industrial,north_district,171272.53,350942.35,452.92,3
+2024-11-07,natural_gas,commercial,central_metro,81421.8,288793.92,290.49,7
+2024-10-26,stormwater,municipal,central_metro,49097.3,490395.9,208.78,4
+2024-09-14,district_heating,commercial,east_district,148595.55,403560.35,114.41,6
+2024-09-29,natural_gas,industrial,north_district,26677.16,53353.13,215.62,5
+2025-04-13,water,commercial,west_district,177204.02,208272.67,274.94,4
+2025-02-11,wastewater,municipal,south_district,117391.86,412459.98,78.37,9
+2025-01-15,wastewater,industrial,east_district,79513.53,339402.07,133.52,6
+2024-10-10,natural_gas,commercial,south_district,189850.34,479580.94,413.77,4
+2025-02-05,district_heating,commercial,north_district,37067.83,363390.58,141.55,4
+2024-10-31,stormwater,commercial,south_district,33027.26,495669.11,442.59,7
+2024-07-11,natural_gas,small_business,south_district,234824.76,184328.9,315.17,10
+2024-12-09,natural_gas,small_business,central_metro,132451.67,420187.15,55.92,5
+2024-02-06,wastewater,small_business,north_district,11006.2,273293.29,336.49,9
+2025-05-31,water,municipal,central_metro,121537.48,144031.2,82.85,4
+2024-02-25,stormwater,industrial,north_district,36187.13,128110.56,87.8,4
+2024-06-10,wastewater,commercial,east_district,178708.0,18119.25,33.84,8
+2024-08-05,wastewater,commercial,west_district,118863.1,87070.78,113.25,3
+2025-06-10,stormwater,commercial,north_district,106069.36,330301.7,318.1,3
+2025-06-14,district_heating,commercial,east_district,175460.81,324976.64,2.85,7
+2025-06-08,water,municipal,central_metro,11774.73,298491.0,309.47,7
+2024-07-31,district_heating,small_business,east_district,35483.26,220095.22,160.27,6
+2024-06-18,district_heating,industrial,north_district,162702.72,340483.85,320.85,4
+2024-07-10,water,commercial,north_district,143588.94,342034.01,210.56,9
+2024-05-04,stormwater,commercial,south_district,224437.06,224748.73,152.07,5
+2024-10-05,wastewater,industrial,east_district,116893.21,252205.52,324.44,4
+2025-06-16,stormwater,small_business,east_district,244592.78,245.68,26.54,4
+2025-02-15,stormwater,residential,central_metro,9949.43,333092.11,34.94,7
+2025-06-02,electricity,municipal,central_metro,227446.94,242354.05,314.44,8
+2025-05-25,electricity,industrial,east_district,106980.72,305738.15,377.58,11
+2024-04-11,district_heating,industrial,west_district,128016.19,305442.99,158.43,4
+2024-01-21,water,industrial,south_district,30470.34,325112.32,171.9,11
+2025-03-04,electricity,residential,east_district,86900.54,64069.63,319.94,4
+2024-12-18,stormwater,industrial,south_district,249763.67,179703.92,328.98,10
+2024-08-17,district_heating,residential,north_district,11973.24,10546.64,452.13,2
+2024-04-08,water,small_business,north_district,95781.26,391172.16,239.8,9
+2024-02-16,wastewater,industrial,south_district,74874.54,361882.19,57.09,2
+2024-06-12,wastewater,commercial,east_district,126877.12,21698.39,463.41,6
+2024-04-04,wastewater,small_business,west_district,90966.32,487706.39,184.02,5
+2024-07-23,electricity,industrial,south_district,196781.56,196438.99,114.22,1
+2024-06-25,natural_gas,industrial,west_district,108945.84,61127.94,414.75,7
+2024-12-26,stormwater,residential,south_district,13960.08,467614.38,94.29,3
+2024-03-05,wastewater,small_business,central_metro,201115.77,60091.94,229.36,10
+2024-01-20,water,industrial,east_district,114804.51,313713.69,320.17,11
+2025-01-14,wastewater,residential,south_district,82026.4,428138.16,456.32,11
+2024-11-23,wastewater,small_business,west_district,219633.96,416514.39,326.91,2
+2024-01-15,electricity,industrial,north_district,78596.01,81352.9,200.05,4
+2024-09-15,stormwater,residential,east_district,238513.24,366506.01,311.01,9
+2024-09-13,wastewater,small_business,central_metro,58711.96,18116.91,204.51,11
+2024-05-03,natural_gas,commercial,south_district,192175.03,432722.09,289.33,4
+2025-02-25,district_heating,small_business,north_district,73244.89,355558.88,427.59,12
+2025-02-10,electricity,industrial,east_district,55846.85,290469.78,487.83,10
+2024-01-06,natural_gas,small_business,west_district,185426.87,210791.17,433.89,5
+2024-09-27,wastewater,residential,north_district,158716.02,433070.89,210.7,4
+2024-07-20,water,commercial,west_district,216628.16,208732.95,178.39,10
+2024-10-29,electricity,commercial,west_district,114652.92,335339.46,288.85,4
+2025-05-16,stormwater,commercial,west_district,75689.58,496450.21,142.08,1
+2024-09-29,district_heating,small_business,central_metro,249002.39,260983.61,231.53,8
+2025-01-26,stormwater,municipal,central_metro,40964.95,56733.89,286.71,9
+2024-04-02,stormwater,commercial,east_district,101619.91,91917.36,499.52,1
+2024-12-30,natural_gas,residential,central_metro,13034.42,475629.48,417.22,6
+2024-03-29,natural_gas,small_business,south_district,19591.78,454126.35,87.42,9
+2024-05-07,wastewater,commercial,central_metro,224412.69,52211.12,401.06,4
+2024-05-02,natural_gas,industrial,north_district,104548.92,303889.3,495.89,3
+2025-04-02,natural_gas,small_business,central_metro,229713.51,6888.52,87.7,3
+2024-01-01,wastewater,small_business,south_district,65700.65,214397.56,73.19,2
+2025-06-23,district_heating,residential,south_district,42165.49,369504.24,57.14,10
+2024-09-15,stormwater,municipal,west_district,77900.32,93.03,82.81,9
+2024-01-31,water,commercial,north_district,14292.71,51143.14,321.35,11
+2025-04-30,stormwater,municipal,east_district,238809.61,39956.52,369.24,3
+2025-03-02,stormwater,commercial,east_district,136634.95,98390.07,361.7,9
+2025-04-28,electricity,small_business,south_district,229953.08,157643.93,107.35,10
+2025-01-10,water,commercial,south_district,38481.2,427700.79,112.47,11
+2024-12-17,wastewater,municipal,east_district,128767.45,15514.58,132.31,8
+2024-06-10,stormwater,small_business,south_district,200368.02,256641.17,370.71,8
+2025-02-16,wastewater,municipal,east_district,91325.92,365873.21,56.45,5
+2025-01-09,water,residential,north_district,77472.08,467160.43,234.45,9
+2024-11-03,natural_gas,industrial,north_district,45279.28,251254.57,338.97,3
+2025-05-26,wastewater,industrial,south_district,201962.8,43691.69,160.06,4
+2024-10-14,district_heating,municipal,west_district,179805.89,178225.6,452.39,2
+2024-06-14,wastewater,small_business,east_district,239994.46,389781.03,474.05,8
+2024-12-08,stormwater,industrial,south_district,134268.09,437208.25,345.54,3
+2024-04-05,water,industrial,central_metro,52672.85,74699.12,72.59,11
+2024-12-13,stormwater,commercial,south_district,120888.05,38279.57,315.96,2
+2024-06-15,natural_gas,industrial,central_metro,59855.22,176596.85,469.81,7
+2025-01-04,electricity,industrial,south_district,223019.29,370546.28,239.0,3
+2024-05-05,natural_gas,residential,central_metro,240267.34,23505.91,280.7,11
+2024-12-27,natural_gas,residential,north_district,249103.18,117637.31,405.1,5
+2024-06-04,water,small_business,east_district,159310.72,217534.8,245.74,4
+2024-11-01,district_heating,small_business,west_district,72226.65,99595.48,358.6,7
+2024-11-17,water,residential,east_district,35618.58,152941.3,367.97,10
+2024-02-24,water,municipal,central_metro,144276.12,52787.9,218.99,7
+2024-06-01,wastewater,industrial,north_district,224521.26,227003.27,367.96,7
+2025-03-28,water,commercial,north_district,162549.38,209968.92,422.17,2
+2025-03-31,electricity,small_business,central_metro,24053.21,309965.84,126.94,8
+2025-02-23,wastewater,industrial,south_district,193704.55,245401.72,8.71,5
+2024-07-18,electricity,residential,west_district,180020.89,287672.23,118.4,6
+2024-09-06,water,commercial,north_district,60440.38,108048.05,417.47,9
+2024-04-26,wastewater,residential,south_district,136744.13,50556.17,263.11,7
+2025-04-27,electricity,municipal,east_district,186358.93,360749.82,288.55,10
+2025-04-07,natural_gas,commercial,south_district,160808.73,333717.21,417.45,7
+2025-05-27,stormwater,commercial,east_district,94515.26,322717.61,346.97,1
+2024-08-11,district_heating,municipal,east_district,174283.38,4439.72,479.78,4
+2024-01-17,wastewater,commercial,north_district,119834.11,411674.96,10.22,11
+2024-04-27,wastewater,residential,south_district,110204.95,69046.18,66.84,11
+2024-04-22,water,commercial,central_metro,161951.07,73009.34,289.08,2
+2024-02-05,electricity,commercial,south_district,183265.47,103558.31,106.65,8
+2025-04-11,district_heating,industrial,north_district,147171.99,70156.94,412.45,11
+2025-02-06,water,residential,west_district,59695.72,146588.66,193.89,5
+2024-04-06,wastewater,municipal,central_metro,241132.11,360883.43,366.89,11
+2024-07-28,natural_gas,residential,west_district,70914.53,5809.91,185.19,3
+2024-06-23,natural_gas,industrial,south_district,83220.65,257719.59,57.19,10
+2024-07-29,water,commercial,south_district,111888.16,448981.29,369.37,2
+2024-12-22,water,residential,west_district,170151.61,96484.68,385.09,9
+2024-02-24,district_heating,municipal,south_district,154170.17,311523.82,269.59,5
+2024-07-24,wastewater,small_business,west_district,71471.5,279913.58,309.18,3
+2024-10-20,district_heating,industrial,east_district,210342.71,351696.84,194.41,12
+2025-01-13,natural_gas,industrial,west_district,110828.1,484787.77,347.27,7
+2024-01-08,stormwater,municipal,west_district,211948.85,299758.59,114.3,6
+2024-11-13,district_heating,municipal,south_district,141459.45,458631.86,84.37,10
+2024-05-31,natural_gas,industrial,east_district,57666.89,477137.97,192.72,9
+2025-05-08,wastewater,residential,east_district,61895.19,227717.39,418.81,6
+2024-07-20,water,small_business,north_district,18207.59,176105.91,224.25,8
+2024-04-08,district_heating,commercial,north_district,122513.87,52382.92,226.58,3
+2024-06-04,electricity,industrial,east_district,30367.59,99821.15,9.4,2
+2024-03-18,wastewater,residential,north_district,71060.34,277554.6,490.04,11
+2024-09-11,stormwater,small_business,central_metro,150674.74,201037.71,467.4,9
+2024-01-12,water,industrial,north_district,54015.4,472888.1,362.92,7
+2025-04-25,water,municipal,east_district,128664.07,468527.52,36.5,12
+2024-09-23,wastewater,municipal,east_district,233149.31,236828.1,392.66,5
+2024-10-06,electricity,small_business,east_district,15919.94,82092.6,290.36,6
+2025-01-19,natural_gas,industrial,north_district,17780.39,90044.62,381.16,8
+2024-04-01,water,residential,central_metro,65391.76,395882.14,294.22,2
+2025-05-12,natural_gas,industrial,south_district,215964.45,230270.38,332.24,9
+2024-10-03,stormwater,municipal,central_metro,142590.33,93925.38,438.49,4
+2024-05-24,natural_gas,commercial,north_district,209389.34,96114.86,178.0,11
+2024-06-06,wastewater,commercial,north_district,47887.37,474420.26,306.77,11
+2025-06-08,water,residential,south_district,249378.97,239841.39,152.38,2
+2024-08-21,stormwater,residential,south_district,24319.12,43403.76,325.35,9

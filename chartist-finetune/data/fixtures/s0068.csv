@@ -1,241 +1,241 @@
-serviceDate,routeType,fareMedium,timeBand,totalTrips,passengerMiles,fareRevenue,averageWaitMinutes
-2024-12-04,ferry,reloadable card,early morning,152919,4917521.96,893556.61,23.85
-2024-12-26,subway,cash,morning peak,100043,2910882.59,2013006.13,33.59
-2025-01-14,ferry,mobile wallet,afternoon peak,117590,4185118.07,2818473.05,18.25
-2024-12-01,ferry,contactless card,late night,116955,161637.9,1318735.07,37.11
-2025-06-13,streetcar,reloadable card,midday,237352,1994715.56,1685637.6,34.45
-2025-01-16,ferry,monthly pass,morning peak,243006,3914666.69,2888930.69,12.15
-2024-05-04,bus,paper ticket,midday,42221,1506610.96,2831790.71,6.18
-2024-04-30,bus,paper ticket,morning peak,211966,708858.73,1804121.81,28.44
-2024-07-15,streetcar,mobile wallet,morning peak,954,151158.81,1868802.86,36.78
-2024-11-22,bus,monthly pass,evening,12962,2368828.07,94640.31,5.62
-2024-08-03,ferry,monthly pass,afternoon peak,28445,991860.42,2534294.6,42.49
-2024-10-28,bus,cash,evening,142881,1044692.8,611583.17,38.63
-2025-01-22,streetcar,reloadable card,morning peak,36505,3232699.65,892836.28,32.16
-2024-09-10,light rail,contactless card,afternoon peak,44593,2964718.25,546365.71,21.28
-2025-02-15,bus,contactless card,late night,214658,3712593.29,1219214.06,42.82
-2024-04-28,bus,paper ticket,early morning,234823,1134956.91,2520874.54,31.73
-2024-07-19,subway,cash,midday,141552,2309048.38,720096.92,24.07
-2024-03-31,streetcar,cash,afternoon peak,30901,3536106.31,1566420.96,44.88
-2025-01-07,bus,contactless card,late night,42185,3344400.95,1201496.47,5.19
-2025-06-13,ferry,reloadable card,early morning,25800,863219.05,613655.39,11.64
-2024-06-20,ferry,paper ticket,late night,79039,2870477.62,2210571.71,33.11
-2024-02-24,bus,mobile wallet,midday,24438,613083.35,1401799.37,21.62
-2024-09-12,streetcar,mobile wallet,late night,214905,2834849.0,1683274.76,40.21
-2025-01-18,commuter rail,contactless card,midday,117065,4808.3,391362.97,34.07
-2024-01-27,ferry,cash,late night,171235,3955235.76,727391.76,33.64
-2024-01-18,bus,paper ticket,late night,16441,256270.46,1495637.2,29.52
-2025-01-14,streetcar,cash,early morning,219109,3021003.27,1590248.55,21.54
-2024-08-10,light rail,reloadable card,early morning,161533,1428222.06,1824118.49,10.12
-2025-01-03,light rail,cash,morning peak,213183,1275547.27,1877385.14,30.61
-2024-10-29,ferry,monthly pass,morning peak,162686,1594997.01,1807047.52,10.29
-2024-07-28,commuter rail,contactless card,evening,219732,2250137.45,2722484.36,16.91
-2024-03-07,subway,contactless card,early morning,88444,3699514.32,2967732.04,20.26
-2024-02-09,ferry,mobile wallet,midday,31291,3417411.51,2943990.38,43.8
-2024-02-19,ferry,monthly pass,midday,94368,2431183.52,436086.06,2.87
-2025-02-13,ferry,reloadable card,late night,232401,881597.11,1762517.28,29.79
-2024-03-19,commuter rail,paper ticket,early morning,179195,2379935.17,1177673.07,38.52
-2024-08-12,light rail,cash,midday,162235,1661054.94,746063.44,40.36
-2024-03-30,bus,cash,early morning,97734,2895013.34,1223085.56,2.09
-2024-12-27,ferry,contactless card,evening,52976,4294422.62,751404.45,0.38
-2024-01-03,commuter rail,reloadable card,afternoon peak,137891,42662.98,1400326.83,0.67
-2025-03-12,ferry,reloadable card,midday,23559,4770976.58,2084765.81,27.0
-2025-02-23,light rail,contactless card,late night,166007,3249620.11,1070050.14,10.03
-2024-04-23,subway,mobile wallet,midday,174216,873158.47,193962.84,33.26
-2024-09-26,ferry,paper ticket,late night,212906,4076432.6,1683353.37,13.03
-2025-01-24,subway,mobile wallet,afternoon peak,194896,4250934.76,184143.62,22.43
-2025-04-10,streetcar,cash,evening,205266,4267359.84,2967039.53,20.46
-2025-03-20,bus,paper ticket,afternoon peak,6630,4665950.3,1686294.38,29.43
-2024-03-21,light rail,paper ticket,afternoon peak,164248,1328621.39,498629.02,16.21
-2024-05-14,light rail,mobile wallet,early morning,210536,4082033.98,913480.94,18.97
-2025-02-17,bus,mobile wallet,morning peak,166205,3005948.86,2871007.2,27.86
-2025-01-06,ferry,contactless card,morning peak,16746,44660.69,1282034.88,13.44
-2024-07-08,bus,reloadable card,late night,242667,2226084.58,1127124.71,3.88
-2024-11-19,ferry,contactless card,early morning,25171,3766437.72,195248.9,32.97
-2024-06-20,bus,contactless card,midday,12124,45555.38,144558.42,15.18
-2025-03-23,commuter rail,reloadable card,early morning,148354,927831.25,1354671.27,33.49
-2025-02-04,streetcar,paper ticket,late night,243450,1651227.72,1381194.42,31.03
-2024-01-15,ferry,monthly pass,evening,45817,1588708.84,2609797.28,8.22
-2025-02-04,light rail,mobile wallet,midday,92260,3915128.11,2493153.65,16.91
-2024-03-07,light rail,mobile wallet,midday,28292,3103957.07,2801358.61,41.97
-2024-06-05,commuter rail,mobile wallet,morning peak,211820,3008856.97,2284016.99,1.64
-2024-08-24,commuter rail,contactless card,afternoon peak,24634,1974741.11,698866.83,14.56
-2024-05-22,commuter rail,contactless card,morning peak,165260,13718.9,158516.31,39.62
-2024-10-23,streetcar,reloadable card,midday,129573,2227102.93,1512211.11,25.63
-2025-05-29,ferry,cash,late night,60270,2543820.38,258771.32,15.88
-2024-07-22,bus,cash,afternoon peak,213440,3086751.77,1158092.19,24.02
-2025-06-13,ferry,cash,evening,204714,3316787.88,136561.99,22.68
-2025-02-15,bus,mobile wallet,early morning,119618,1062001.53,2514991.57,27.08
-2025-04-14,ferry,reloadable card,early morning,89201,1586165.61,1647911.87,22.3
-2024-05-21,streetcar,mobile wallet,midday,95856,2077776.41,2991868.98,22.57
-2025-01-03,light rail,paper ticket,afternoon peak,212675,1006303.72,402061.13,40.94
-2024-06-29,light rail,contactless card,midday,107580,2652014.46,2000348.82,10.71
-2024-12-11,ferry,contactless card,evening,116373,1432809.03,2183558.81,26.86
-2024-04-17,bus,reloadable card,morning peak,103237,4208323.38,2722753.4,39.88
-2024-10-22,bus,contactless card,morning peak,213374,1913786.55,180183.94,1.68
-2025-04-10,subway,mobile wallet,morning peak,17810,4661418.11,1229352.54,18.1
-2024-02-19,ferry,mobile wallet,evening,106542,1949228.32,840275.26,35.34
-2024-10-11,ferry,contactless card,midday,146793,2805782.26,1528022.76,12.34
-2024-08-12,bus,cash,midday,139734,3648350.95,2967299.5,30.45
-2024-01-07,ferry,monthly pass,midday,28892,729536.79,395170.22,16.41
-2025-05-20,light rail,monthly pass,evening,20958,1935491.19,311768.76,19.0
-2024-02-02,commuter rail,contactless card,midday,165509,2896161.69,1042213.17,21.48
-2024-08-07,subway,cash,late night,189805,2947114.74,2650386.38,43.65
-2025-01-22,streetcar,cash,late night,50109,1608179.62,822745.03,7.17
-2024-04-27,commuter rail,paper ticket,morning peak,158622,4286310.25,455221.18,23.53
-2024-07-24,streetcar,monthly pass,evening,76160,4761476.93,1343389.13,7.17
-2024-11-09,bus,paper ticket,afternoon peak,104957,730842.61,2415110.05,24.41
-2024-01-04,streetcar,mobile wallet,midday,163128,553110.21,1793498.42,3.96
-2024-07-07,streetcar,cash,midday,217191,3906578.93,1541262.55,7.73
-2024-08-30,commuter rail,contactless card,morning peak,166148,1739586.31,1228469.33,33.81
-2025-05-21,light rail,monthly pass,early morning,74782,752595.17,1237888.19,44.07
-2024-04-05,streetcar,contactless card,late night,239560,1640253.4,1384676.5,10.11
-2025-03-18,subway,monthly pass,late night,163909,551482.61,1387330.09,39.08
-2024-06-11,ferry,cash,morning peak,153305,1153266.82,2492578.36,14.34
-2024-02-03,commuter rail,contactless card,late night,42180,2183285.55,2840481.67,41.69
-2024-07-25,subway,monthly pass,midday,212716,1256198.1,52383.86,39.36
-2025-05-17,commuter rail,mobile wallet,early morning,121635,267001.81,1041056.4,24.5
-2024-07-15,subway,reloadable card,late night,103428,1748395.8,2550410.55,22.59
-2024-11-11,ferry,paper ticket,morning peak,71029,2378937.94,448117.82,21.45
-2024-02-14,subway,cash,midday,166102,1370384.32,2376128.95,6.14
-2024-07-04,ferry,reloadable card,evening,5039,4315937.55,1922062.69,39.48
-2024-03-12,bus,contactless card,late night,66649,4597350.13,2083946.91,24.91
-2024-11-03,ferry,cash,evening,76257,1176722.61,883205.27,23.47
-2024-01-29,ferry,reloadable card,morning peak,235047,294962.43,312852.31,42.58
-2025-02-02,ferry,cash,midday,15753,2286924.13,1330770.02,9.36
-2024-06-07,streetcar,cash,afternoon peak,29175,3311418.23,697189.64,36.31
-2025-02-26,ferry,paper ticket,midday,78239,2948048.09,968087.93,34.99
-2025-04-09,streetcar,cash,early morning,80304,1263738.02,2918492.22,3.18
-2024-04-05,streetcar,reloadable card,afternoon peak,106557,4353927.39,849132.67,31.69
-2025-05-10,ferry,mobile wallet,afternoon peak,145382,2991879.86,664168.15,34.99
-2024-01-28,commuter rail,cash,afternoon peak,159385,3992991.12,1314587.47,16.47
-2024-11-14,bus,cash,evening,188155,4597113.07,2450623.31,21.51
-2024-10-10,ferry,cash,evening,134785,2930440.69,2309731.31,7.55
-2024-09-15,ferry,cash,morning peak,33135,2745388.87,1804210.54,22.92
-2025-06-22,light rail,cash,morning peak,115329,1437631.34,500940.66,25.23
-2024-06-12,subway,monthly pass,evening,141728,977092.57,2434775.63,29.43
-2025-04-15,light rail,contactless card,morning peak,200788,3108408.67,2401079.7,38.58
-2025-04-13,ferry,monthly pass,early morning,71047,4307379.69,971107.77,5.02
-2024-05-25,commuter rail,monthly pass,afternoon peak,182401,4618431.56,1739981.14,2.96
-2024-11-21,subway,paper ticket,morning peak,125909,1663737.87,442429.37,28.11
-2025-06-16,commuter rail,reloadable card,early morning,102801,2494553.14,1891552.2,39.59
-2025-02-14,streetcar,mobile wallet,afternoon peak,9159,2276146.89,1948207.09,26.88
-2024-11-22,light rail,paper ticket,evening,28462,3133628.43,639438.98,11.63
-2024-09-13,streetcar,paper ticket,morning peak,88600,940884.78,2451473.49,4.27
-2025-04-19,streetcar,cash,midday,126452,4447222.43,1158681.64,37.24
-2024-07-23,commuter rail,contactless card,early morning,166429,2547637.29,1718517.59,5.85
-2025-01-24,ferry,monthly pass,midday,70985,954348.12,593477.04,25.84
-2024-11-19,streetcar,reloadable card,evening,65945,2746227.54,2501856.39,24.79
-2024-01-02,light rail,contactless card,morning peak,209319,1356664.82,2613982.74,43.51
-2024-11-15,bus,monthly pass,morning peak,135139,1486572.56,1846213.1,29.93
-2024-02-23,commuter rail,reloadable card,afternoon peak,9140,2653536.59,2364055.25,32.08
-2024-07-14,commuter rail,paper ticket,midday,20883,3370144.16,259933.3,5.3
-2025-05-27,subway,mobile wallet,morning peak,63658,3167182.61,1424510.88,6.65
-2024-01-16,streetcar,cash,morning peak,154584,4739530.83,1982985.87,2.09
-2024-04-28,bus,reloadable card,midday,248866,4707602.63,2131414.58,26.76
-2024-05-19,light rail,paper ticket,afternoon peak,59649,3193794.52,1317732.33,23.57
-2025-06-18,ferry,contactless card,afternoon peak,143476,4181263.18,1196665.99,21.44
-2025-04-21,commuter rail,reloadable card,late night,122872,2665405.59,1537622.39,11.4
-2025-01-14,streetcar,paper ticket,midday,153045,232498.01,2579231.91,22.76
-2025-04-01,subway,contactless card,late night,183300,308587.55,307015.48,14.2
-2024-06-07,streetcar,cash,early morning,249546,2291338.2,1946022.42,27.32
-2024-02-10,light rail,monthly pass,morning peak,63961,1648636.12,676024.89,19.49
-2025-06-20,light rail,reloadable card,early morning,249105,807978.29,592437.21,19.38
-2025-05-24,ferry,cash,evening,235523,2410375.34,2791580.14,26.82
-2024-02-12,ferry,reloadable card,midday,119291,3417504.26,2867488.07,11.5
-2024-07-09,ferry,paper ticket,evening,40170,2286245.69,314600.46,14.99
-2024-07-06,light rail,monthly pass,evening,109926,4632446.46,1567820.38,24.6
-2025-04-13,ferry,cash,afternoon peak,18731,2027755.94,2309778.59,5.92
-2024-12-26,ferry,reloadable card,evening,130468,2839179.8,285160.11,22.03
-2025-03-28,streetcar,reloadable card,morning peak,114671,1739969.6,1129356.61,36.68
-2024-11-22,ferry,paper ticket,evening,8968,4952777.08,2084480.31,30.75
-2024-05-14,light rail,paper ticket,evening,165159,1543548.69,2185617.63,42.03
-2024-07-10,bus,reloadable card,evening,38962,634769.36,455285.67,9.73
-2024-06-21,subway,cash,early morning,203726,4906180.18,876746.7,43.27
-2025-05-28,light rail,cash,morning peak,55314,185480.84,2066401.48,18.16
-2024-05-09,subway,reloadable card,late night,51580,4335882.66,2095311.63,42.13
-2024-02-10,light rail,paper ticket,midday,104607,4258303.76,1127538.29,13.34
-2025-03-27,ferry,monthly pass,late night,88957,2613927.62,18090.73,40.34
-2024-05-15,streetcar,cash,late night,42794,4630993.32,2575068.27,2.75
-2024-10-15,ferry,cash,late night,195901,2805295.47,591897.99,8.01
-2024-06-17,subway,contactless card,early morning,67599,4763601.06,2066858.26,38.75
-2024-01-26,ferry,paper ticket,morning peak,16136,3853195.5,1139680.77,38.96
-2024-09-22,light rail,cash,evening,105612,92433.22,2651220.12,39.07
-2024-08-30,ferry,contactless card,early morning,145668,3165530.75,666484.53,21.3
-2025-03-20,commuter rail,paper ticket,morning peak,211582,3807169.78,869610.86,7.79
-2025-02-09,bus,monthly pass,early morning,221368,940080.74,685887.15,16.29
-2025-03-01,commuter rail,paper ticket,late night,191648,2138060.38,2313358.85,25.59
-2024-03-30,streetcar,reloadable card,midday,85594,3067192.31,14523.63,44.15
-2024-10-18,subway,monthly pass,midday,198669,1140129.6,948657.04,36.82
-2025-03-18,light rail,cash,morning peak,21221,2000874.19,1552794.61,32.5
-2025-02-05,light rail,cash,early morning,164210,690586.78,1162949.0,29.32
-2024-09-11,light rail,reloadable card,late night,167481,336937.66,2583860.7,16.38
-2024-11-10,ferry,cash,afternoon peak,85764,402540.03,669496.77,21.9
-2024-02-14,light rail,monthly pass,early morning,38456,1731066.96,252414.53,5.61
-2024-02-06,commuter rail,reloadable card,afternoon peak,58568,1692163.35,2208480.95,14.24
-2025-06-21,commuter rail,contactless card,morning peak,205501,583779.39,2784853.21,2.53
-2024-10-15,streetcar,reloadable card,morning peak,18991,2720011.93,166997.55,18.61
-2025-04-16,commuter rail,cash,afternoon peak,43907,341027.23,2280257.01,31.0
-2024-10-30,streetcar,reloadable card,morning peak,212520,3324322.25,542912.96,35.38
-2024-04-08,ferry,reloadable card,midday,229638,3896040.53,903120.18,30.7
-2024-05-31,light rail,mobile wallet,morning peak,234237,1738141.22,76812.11,4.63
-2025-04-05,bus,reloadable card,evening,171285,4370887.02,475237.02,42.42
-2024-04-05,commuter rail,paper ticket,midday,238011,331964.45,1981578.35,39.38
-2025-02-26,streetcar,paper ticket,evening,53037,1722964.58,415082.15,19.33
-2024-11-23,light rail,mobile wallet,midday,223248,4498568.54,197588.73,6.55
-2024-12-01,bus,mobile wallet,midday,151803,4450346.14,897308.23,22.95
-2025-05-30,subway,monthly pass,early morning,207657,1395955.97,94273.8,30.07
-2024-08-28,bus,contactless card,afternoon peak,94632,3474950.68,667451.08,22.16
-2024-10-17,subway,reloadable card,early morning,49846,1107265.07,2716281.09,18.87
-2024-09-24,commuter rail,cash,late night,111171,168629.39,68708.85,17.39
-2024-07-24,light rail,cash,morning peak,21053,252123.18,2535787.98,35.21
-2024-12-09,bus,paper ticket,morning peak,67224,4593308.25,1956892.22,16.05
-2024-08-20,light rail,monthly pass,evening,125145,828567.61,394000.17,31.33
-2024-02-11,streetcar,contactless card,afternoon peak,135375,1157770.78,2124282.89,44.6
-2025-06-03,ferry,contactless card,late night,206514,4956463.91,1380222.08,11.2
-2024-03-15,bus,reloadable card,late night,103783,1060735.49,2254963.6,37.9
-2025-01-20,subway,cash,evening,39704,3999789.64,487679.69,1.74
-2025-01-28,ferry,mobile wallet,morning peak,161699,461131.78,363830.07,28.77
-2024-03-24,ferry,cash,evening,1748,3316091.61,868105.82,23.49
-2024-03-01,light rail,paper ticket,early morning,116630,3896030.1,382446.64,22.86
-2025-05-07,streetcar,paper ticket,early morning,160697,2932269.77,1713241.15,13.62
-2024-12-28,commuter rail,paper ticket,midday,189857,1599964.52,220139.44,40.43
-2025-05-10,bus,reloadable card,late night,79663,2544242.94,1552710.6,21.64
-2024-01-05,commuter rail,reloadable card,early morning,248618,2589474.55,1878405.63,12.11
-2024-11-10,bus,cash,late night,194098,946203.59,1853864.72,20.96
-2024-06-23,light rail,cash,evening,6200,4237121.62,2008826.54,25.79
-2025-05-14,bus,paper ticket,early morning,225033,1300532.06,2629929.24,28.18
-2025-04-14,light rail,monthly pass,midday,72219,747985.45,1196144.98,26.59
-2024-09-26,light rail,mobile wallet,midday,122654,4178475.89,2265283.63,6.46
-2025-02-18,streetcar,paper ticket,early morning,78936,4197090.79,1575679.58,36.36
-2024-09-22,ferry,reloadable card,midday,113530,2839346.24,4201.55,17.07
-2025-05-10,subway,paper ticket,evening,70014,1488572.6,2248283.97,14.46
-2025-06-22,commuter rail,paper ticket,evening,227988,673509.38,221189.65,15.99
-2025-04-26,commuter rail,reloadable card,early morning,93488,1648127.38,1969784.61,19.27
-2024-11-17,ferry,mobile wallet,morning peak,189531,1783695.77,2368704.73,22.41
-2024-09-04,subway,mobile wallet,early morning,93534,1643867.69,1697886.88,33.18
-2024-01-19,commuter rail,contactless card,evening,125397,2446925.36,2814604.34,19.77
-2025-01-16,commuter rail,mobile wallet,afternoon peak,137865,4522727.93,874598.53,44.16
-2024-09-18,ferry,monthly pass,midday,233536,3238487.45,2480093.14,42.26
-2024-06-13,light rail,monthly pass,late night,174339,1246499.14,1556028.93,1.9
-2025-03-23,commuter rail,paper ticket,late night,39123,3043428.59,1624527.6,29.0
-2024-10-15,light rail,paper ticket,late night,173745,600116.37,1065141.52,27.18
-2024-09-11,light rail,monthly pass,morning peak,212987,4309212.17,2389235.43,10.02
-2024-11-30,commuter rail,mobile wallet,late night,189281,4531921.42,847112.58,17.97
-2024-03-13,bus,cash,late night,213441,1393635.75,2046197.34,18.69
-2025-04-01,light rail,cash,morning peak,22667,1355157.85,992189.21,38.39
-2024-01-20,commuter rail,paper ticket,early morning,20871,1012291.4,739993.81,5.35
-2025-03-05,bus,mobile wallet,early morning,216416,2784108.24,1591854.96,28.29
-2024-03-09,streetcar,mobile wallet,midday,241593,2802058.87,2322133.53,21.13
-2024-10-21,bus,monthly pass,late night,105418,4391401.68,1051077.71,35.87
-2024-02-07,commuter rail,reloadable card,evening,60061,1143741.89,696440.69,5.57
-2025-02-27,ferry,mobile wallet,afternoon peak,171347,947637.96,626906.23,10.96
-2025-04-20,light rail,monthly pass,afternoon peak,168509,1551559.0,1673039.59,38.58
-2024-10-01,streetcar,monthly pass,early morning,131717,3480568.48,1684370.68,4.42
-2024-05-12,ferry,mobile wallet,afternoon peak,39904,3131348.01,394247.97,25.2
-2024-09-28,subway,mobile wallet,morning peak,40875,2156230.73,524029.33,35.35
-2024-05-02,ferry,contactless card,afternoon peak,138242,2335808.24,426483.35,38.78
-2025-05-30,bus,reloadable card,evening,71850,453917.35,2483615.51,10.2
-2024-07-17,streetcar,monthly pass,early morning,175017,1014249.59,478840.2,26.58
-2024-11-10,streetcar,paper ticket,morning peak,69413,2779652.23,701052.87,33.5
-2024-09-20,ferry,contactless card,early morning,145984,4679105.02,1918464.37,40.51
+shiftDate,plantRegion,productionLine,shiftName,unitsProduced,unitsRejected,machineUptimePct,energyConsumedKwh
+2024-11-19,South America,Line B,Night,844,290,87.52,1334.64
+2025-05-17,North America,Line F,Day,3814,9,22.99,4616.0
+2024-12-08,North America,Line C,Day,3770,381,85.96,6396.57
+2024-10-03,Middle East,Line E,Evening,1441,132,87.86,182.64
+2024-05-04,Europe,Line F,Night,4088,265,70.43,6300.51
+2025-01-19,Middle East,Line B,Day,4858,240,26.17,8890.0
+2025-01-13,Middle East,Line E,Night,3369,218,3.47,3433.59
+2024-09-28,Europe,Line D,Evening,1238,33,91.44,391.89
+2024-01-24,Asia Pacific,Line D,Day,3544,361,93.15,3169.36
+2024-05-09,Asia Pacific,Line F,Night,1870,175,32.37,8417.84
+2024-05-08,Europe,Line E,Evening,2970,222,68.84,7637.91
+2025-04-18,Middle East,Line A,Night,3213,297,22.19,2979.0
+2025-04-22,Europe,Line B,Day,207,377,89.53,3010.14
+2024-02-07,Asia Pacific,Line C,Evening,4582,252,80.38,3716.98
+2024-10-07,Middle East,Line F,Evening,2312,362,17.01,1680.17
+2025-01-14,Europe,Line E,Evening,3044,102,20.71,6951.55
+2025-05-12,North America,Line B,Day,531,354,3.24,3017.64
+2024-02-22,South America,Line F,Day,3816,294,58.22,8955.24
+2025-06-13,Middle East,Line E,Evening,206,274,9.78,6586.65
+2024-08-28,Europe,Line B,Evening,1775,130,88.8,1784.8
+2024-07-19,Asia Pacific,Line D,Day,2875,84,77.29,400.91
+2024-10-10,Asia Pacific,Line C,Night,1932,65,88.66,3515.71
+2025-04-04,Middle East,Line E,Evening,2875,57,79.78,8122.51
+2024-05-22,Middle East,Line F,Evening,2036,388,0.8,8350.53
+2025-06-14,South America,Line E,Night,722,135,10.69,4070.91
+2024-02-04,South America,Line E,Evening,670,339,4.3,1033.99
+2025-04-04,Middle East,Line C,Night,3639,205,4.71,1958.1
+2024-12-09,Asia Pacific,Line A,Evening,4037,68,97.6,7798.54
+2024-09-02,Europe,Line D,Night,1827,70,21.4,8362.84
+2024-09-21,Asia Pacific,Line F,Evening,2591,159,14.0,8546.55
+2025-05-24,Asia Pacific,Line A,Night,3430,170,21.45,6036.92
+2024-12-11,Asia Pacific,Line C,Evening,3121,40,88.19,1520.98
+2024-09-05,Middle East,Line D,Night,1739,298,98.85,6361.64
+2024-08-24,Asia Pacific,Line E,Night,3999,186,26.07,9054.25
+2024-05-16,Asia Pacific,Line A,Evening,2380,222,27.27,2566.72
+2025-01-19,South America,Line B,Evening,2046,303,6.59,6957.86
+2024-05-30,North America,Line A,Night,4265,269,61.84,9410.01
+2025-01-14,Middle East,Line C,Day,4104,176,59.52,1216.96
+2024-01-30,North America,Line D,Night,538,313,52.63,1193.87
+2024-07-26,North America,Line E,Night,408,386,37.39,9185.95
+2025-04-11,North America,Line A,Night,3919,356,64.37,431.72
+2025-03-25,Middle East,Line A,Evening,3157,51,66.96,2742.61
+2024-10-30,Asia Pacific,Line A,Day,1283,184,71.67,4576.89
+2025-03-31,Asia Pacific,Line A,Day,37,340,86.05,6900.41
+2025-05-27,North America,Line C,Day,4108,21,47.95,1236.41
+2024-09-10,Asia Pacific,Line B,Night,4087,6,70.58,4125.41
+2025-03-28,Europe,Line E,Night,2142,324,30.17,8077.2
+2025-03-18,North America,Line B,Day,4049,307,98.52,9457.82
+2024-02-01,Asia Pacific,Line D,Evening,2546,25,34.72,2162.53
+2024-07-24,Middle East,Line B,Day,2390,8,82.4,477.17
+2024-04-06,North America,Line D,Evening,2349,51,68.3,2551.92
+2024-12-03,Europe,Line C,Day,4387,83,15.6,4369.48
+2024-07-17,Asia Pacific,Line B,Day,1431,280,51.57,1937.92
+2024-11-02,North America,Line E,Night,128,120,22.62,1264.28
+2024-02-02,Asia Pacific,Line B,Evening,4939,189,59.19,5752.32
+2025-02-25,Middle East,Line C,Day,2836,132,49.77,7968.76
+2024-09-24,Asia Pacific,Line E,Day,4938,140,94.66,5414.92
+2025-01-22,Middle East,Line E,Evening,3154,168,17.1,2758.1
+2024-04-03,Europe,Line C,Evening,2186,389,40.18,3742.54
+2025-05-29,South America,Line F,Evening,4355,313,56.39,7125.1
+2025-05-10,Asia Pacific,Line C,Day,830,346,95.73,3405.51
+2024-06-24,Europe,Line C,Day,4746,4,17.05,4588.0
+2025-03-06,Europe,Line D,Day,3133,259,90.2,7071.1
+2024-04-28,Asia Pacific,Line C,Evening,1756,105,86.64,733.95
+2024-01-01,North America,Line E,Evening,856,12,30.94,1647.12
+2024-01-28,Asia Pacific,Line B,Day,1394,78,6.92,9041.78
+2025-03-03,North America,Line F,Evening,4383,366,34.45,9251.97
+2025-03-23,North America,Line D,Evening,980,151,37.47,7666.16
+2024-01-17,Asia Pacific,Line F,Evening,461,249,83.43,8555.84
+2024-06-26,Middle East,Line A,Day,3697,71,57.84,2757.39
+2024-10-05,Europe,Line B,Evening,1383,10,46.96,4723.0
+2024-08-14,Middle East,Line C,Evening,3045,378,79.96,318.08
+2024-07-05,North America,Line A,Day,3647,83,39.22,8325.13
+2024-07-04,Asia Pacific,Line B,Day,3413,129,15.84,5677.48
+2024-04-18,South America,Line C,Night,2259,101,25.94,5991.32
+2024-10-26,North America,Line F,Evening,2880,325,33.63,5708.14
+2024-11-11,South America,Line E,Night,1653,180,65.62,2108.89
+2025-04-16,North America,Line B,Day,4299,374,61.8,4041.52
+2024-09-29,Europe,Line F,Night,4914,24,73.65,8498.47
+2024-06-03,Europe,Line C,Night,3543,261,94.4,4945.37
+2024-03-14,South America,Line F,Night,236,68,16.8,3743.81
+2025-01-23,Middle East,Line E,Day,4409,345,88.9,6362.03
+2024-10-12,Europe,Line E,Night,2422,131,51.01,2392.17
+2025-05-27,North America,Line A,Evening,4510,26,17.34,7531.82
+2024-06-29,Middle East,Line C,Day,517,342,51.13,6010.9
+2025-05-09,Asia Pacific,Line D,Night,1253,58,76.95,9449.33
+2025-03-21,North America,Line D,Evening,3335,308,16.35,7047.79
+2024-04-08,North America,Line A,Day,4953,291,86.01,6167.47
+2025-04-22,Europe,Line F,Night,622,124,57.77,2981.13
+2024-06-10,South America,Line C,Night,1417,394,35.84,7587.64
+2024-05-21,Asia Pacific,Line C,Evening,2288,197,33.39,5136.22
+2025-05-04,North America,Line E,Night,1631,269,79.49,8891.21
+2025-04-26,North America,Line A,Night,2036,141,24.6,7577.36
+2024-12-06,Europe,Line C,Evening,1588,224,84.52,2059.93
+2024-07-01,Europe,Line C,Day,3069,266,51.1,5292.34
+2024-03-22,Europe,Line A,Evening,2126,395,67.67,932.81
+2025-01-16,Europe,Line D,Day,2521,312,16.0,5162.71
+2024-09-30,Europe,Line D,Day,4956,100,2.56,1678.89
+2024-02-14,North America,Line C,Day,1,19,13.09,4956.39
+2025-05-26,South America,Line B,Evening,1024,255,15.68,3966.35
+2024-01-02,South America,Line E,Night,1121,362,54.19,9019.73
+2025-01-08,North America,Line A,Evening,2383,152,89.96,8556.69
+2025-05-24,Europe,Line A,Evening,4937,142,86.79,7739.76
+2025-03-17,North America,Line D,Day,1496,71,39.19,6111.22
+2024-03-13,Middle East,Line A,Evening,1572,351,85.25,7022.91
+2025-04-30,Asia Pacific,Line A,Night,992,93,7.46,8751.77
+2025-06-15,North America,Line F,Night,2435,192,95.83,8724.06
+2025-02-25,South America,Line E,Day,2909,298,62.41,2029.24
+2024-05-07,North America,Line A,Night,203,69,49.32,4154.91
+2025-05-26,Europe,Line E,Night,1038,19,28.16,3498.79
+2024-03-21,Middle East,Line A,Evening,3043,309,85.01,3963.1
+2024-12-25,Middle East,Line A,Night,4083,75,61.88,9361.77
+2024-10-05,Middle East,Line A,Evening,1728,71,56.5,5190.23
+2025-06-03,Middle East,Line F,Day,2388,78,35.18,7822.99
+2025-02-01,North America,Line F,Day,2682,122,25.83,6657.93
+2024-07-22,Asia Pacific,Line A,Night,3868,190,88.54,8337.65
+2024-11-11,Middle East,Line B,Evening,4360,188,24.57,8974.63
+2025-01-24,Europe,Line A,Evening,142,379,93.74,6338.86
+2025-05-17,Middle East,Line B,Night,3229,170,59.29,8508.02
+2024-03-20,South America,Line D,Night,690,189,61.16,5820.23
+2024-10-06,North America,Line D,Day,2401,367,39.61,7335.21
+2025-05-29,North America,Line C,Evening,4194,25,91.08,3087.98
+2025-06-04,Middle East,Line E,Day,3335,247,30.66,7851.17
+2024-11-09,Asia Pacific,Line B,Night,2094,114,13.12,1528.21
+2024-11-23,Middle East,Line F,Night,1172,281,79.93,2832.37
+2025-05-31,Middle East,Line D,Day,1100,13,63.74,3709.87
+2024-12-14,South America,Line D,Night,1338,13,53.61,4853.04
+2024-09-05,Asia Pacific,Line E,Night,1086,60,14.88,5979.23
+2024-08-25,South America,Line C,Evening,4640,76,32.87,4500.63
+2024-10-05,Middle East,Line E,Day,1734,42,91.85,7763.06
+2025-01-15,Asia Pacific,Line A,Evening,970,10,23.12,7837.06
+2024-11-01,Asia Pacific,Line A,Evening,3085,114,86.52,8942.8
+2025-02-19,North America,Line A,Day,322,347,57.57,2912.4
+2024-07-23,North America,Line E,Night,2785,114,81.32,6768.0
+2024-01-23,Middle East,Line A,Evening,4014,106,10.07,8459.49
+2024-12-30,Middle East,Line F,Evening,4198,158,70.89,6404.55
+2024-11-04,Asia Pacific,Line D,Day,3641,283,6.85,7260.65
+2024-07-18,North America,Line C,Night,2893,130,51.64,3068.41
+2024-01-22,South America,Line B,Day,1523,322,78.3,8594.56
+2024-02-27,Middle East,Line A,Evening,3538,303,25.88,7048.54
+2024-01-26,Middle East,Line D,Day,328,163,57.38,6156.45
+2024-05-22,Middle East,Line F,Night,1446,272,82.59,7992.24
+2024-11-24,South America,Line E,Evening,1015,211,16.97,7553.28
+2024-12-22,Europe,Line D,Day,282,320,63.84,4184.9
+2025-04-19,Middle East,Line B,Night,1799,360,79.52,3596.88
+2024-09-27,Asia Pacific,Line F,Evening,1704,233,96.97,2151.96
+2024-08-16,Middle East,Line F,Night,72,342,11.12,5746.02
+2024-02-08,Europe,Line B,Day,1738,214,9.63,249.88
+2024-10-28,North America,Line C,Evening,20,8,28.59,8252.11
+2024-03-09,Middle East,Line B,Day,4343,50,84.82,1025.23
+2024-04-12,Middle East,Line F,Night,170,85,69.7,628.24
+2025-02-07,Asia Pacific,Line E,Day,552,128,39.86,4281.67
+2024-08-20,Europe,Line E,Evening,1862,131,26.88,2708.56
+2024-04-18,North America,Line D,Evening,1472,397,80.27,5645.52
+2025-04-18,North America,Line F,Day,524,261,76.86,4146.86
+2024-05-11,Middle East,Line E,Day,4616,123,47.5,6540.42
+2025-05-23,Asia Pacific,Line D,Evening,1610,111,71.39,6300.96
+2024-08-17,Europe,Line C,Evening,1379,68,98.12,756.18
+2025-04-20,Asia Pacific,Line D,Day,1981,267,73.05,6491.03
+2024-01-16,Asia Pacific,Line F,Night,1172,107,58.13,7338.35
+2024-05-27,Middle East,Line A,Night,4934,125,46.29,3812.93
+2024-10-05,Asia Pacific,Line B,Day,1520,283,1.14,1899.52
+2024-02-17,South America,Line D,Evening,4901,166,21.54,654.71
+2025-05-15,North America,Line C,Night,1203,20,38.32,4889.06
+2024-09-26,South America,Line D,Evening,1047,16,21.98,1615.28
+2024-03-10,North America,Line A,Night,2803,31,96.36,2406.37
+2025-05-05,North America,Line E,Night,4189,140,81.14,7533.89
+2025-06-04,Asia Pacific,Line E,Day,1912,186,39.16,6268.95
+2024-01-15,North America,Line D,Night,2018,203,19.52,3559.81
+2024-05-06,North America,Line C,Day,4347,392,7.27,4654.67
+2024-05-21,Europe,Line E,Day,2337,89,99.26,8838.65
+2025-03-29,South America,Line A,Evening,1538,107,8.15,4904.97
+2024-07-07,South America,Line D,Evening,4035,20,3.41,4985.78
+2024-07-25,South America,Line D,Night,3522,363,85.03,6553.66
+2025-02-07,North America,Line E,Day,244,200,14.36,4754.92
+2024-05-11,North America,Line E,Day,1356,121,61.21,2670.81
+2025-02-25,South America,Line C,Night,1758,365,34.21,1983.36
+2024-02-01,North America,Line F,Evening,470,361,10.43,8845.01
+2024-01-21,Middle East,Line A,Day,4902,77,6.19,2195.85
+2024-06-05,North America,Line E,Night,992,78,9.2,5646.71
+2024-06-30,North America,Line D,Day,2551,78,12.97,8087.98
+2024-02-22,Middle East,Line C,Day,107,18,56.19,8838.93
+2025-03-11,Europe,Line E,Evening,3782,161,34.09,9488.49
+2024-12-01,Europe,Line E,Evening,1196,371,2.75,3295.61
+2024-10-29,Middle East,Line D,Evening,1307,243,42.69,7496.59
+2024-11-27,Europe,Line B,Evening,1876,43,46.03,9165.61
+2024-06-04,Middle East,Line A,Evening,152,120,70.05,7007.52
+2024-05-15,Asia Pacific,Line B,Evening,1004,111,79.66,1657.18
+2024-07-07,North America,Line A,Evening,1776,241,45.6,4475.99
+2025-04-11,North America,Line C,Day,3916,276,28.94,6315.19
+2024-04-22,North America,Line C,Day,2509,151,10.88,2972.0
+2024-10-04,North America,Line E,Evening,801,217,4.37,811.07
+2025-06-02,North America,Line E,Night,4475,298,27.0,4214.02
+2025-02-08,North America,Line C,Evening,4959,72,88.3,3658.07
+2025-02-18,North America,Line D,Evening,3746,372,25.5,6491.65
+2025-03-24,Europe,Line A,Evening,1201,266,90.24,914.03
+2025-03-29,South America,Line B,Night,790,200,54.99,6306.26
+2024-03-04,Middle East,Line A,Day,4698,174,59.02,3429.09
+2025-03-21,Asia Pacific,Line E,Evening,598,241,70.31,4788.7
+2024-06-06,Europe,Line E,Evening,4594,317,83.3,9364.87
+2024-11-20,Middle East,Line E,Night,501,143,73.27,3574.52
+2024-05-12,Middle East,Line A,Evening,298,219,44.67,6897.09
+2024-06-07,South America,Line D,Night,20,20,8.06,7800.3
+2025-05-17,Middle East,Line F,Day,1654,251,98.04,3905.65
+2024-06-05,South America,Line D,Evening,4291,377,73.04,8554.2
+2025-04-02,Asia Pacific,Line F,Night,3218,363,8.91,1930.85
+2025-01-19,Middle East,Line A,Night,3290,263,19.07,8026.01
+2024-03-09,Middle East,Line E,Night,2949,230,22.59,7455.27
+2025-05-03,Europe,Line F,Day,965,332,40.24,709.8
+2024-02-15,Europe,Line D,Evening,467,168,32.74,8550.57
+2024-06-23,Asia Pacific,Line B,Evening,2355,54,19.46,289.26
+2024-04-25,South America,Line A,Night,4899,342,96.66,4174.42
+2024-11-19,Middle East,Line B,Evening,2194,139,43.4,1818.68
+2024-02-13,Asia Pacific,Line C,Evening,2916,55,90.59,4834.15
+2024-11-30,North America,Line B,Night,2427,69,25.09,7721.11
+2024-04-08,Europe,Line E,Day,2574,61,29.28,7333.28
+2025-03-28,Asia Pacific,Line D,Evening,4622,214,36.29,1836.04
+2025-04-18,Middle East,Line C,Evening,4318,45,35.82,3113.61
+2024-09-21,South America,Line A,Day,855,250,25.31,2946.63
+2024-06-30,North America,Line F,Day,1187,4,54.83,5611.09
+2025-01-28,North America,Line B,Evening,4451,27,19.7,4263.49
+2025-05-25,Europe,Line D,Night,255,298,44.16,6723.31
+2024-02-20,Asia Pacific,Line B,Evening,4928,24,20.7,7904.45
+2024-07-17,Asia Pacific,Line F,Night,3310,370,8.48,1636.88
+2024-08-28,South America,Line F,Day,4986,16,22.21,8081.95
+2024-02-10,Asia Pacific,Line A,Day,400,388,18.41,2013.77
+2025-05-10,Europe,Line E,Evening,3311,379,80.17,6669.64
+2025-05-13,North America,Line B,Day,4430,320,92.43,325.89
+2024-01-22,Middle East,Line E,Night,210,309,89.22,2262.26
+2025-05-03,Asia Pacific,Line E,Day,1048,157,72.27,6733.41
+2024-08-31,South America,Line C,Evening,3137,341,54.61,1842.0
+2025-06-13,South America,Line F,Evening,3190,66,67.0,8917.64
+2025-02-22,North America,Line E,Day,3625,174,92.27,3569.65
+2025-06-14,North America,Line F,Evening,2659,307,46.11,7807.74
+2024-12-24,Middle East,Line F,Night,4616,246,56.26,6694.99
+2025-06-14,Europe,Line C,Evening,3714,128,1.64,258.57
+2024-12-05,South America,Line E,Evening,1059,270,19.63,2298.99
+2024-06-10,Europe,Line C,Day,244,268,75.36,8245.92
+2024-06-13,North America,Line B,Night,1799,168,84.26,8778.73
+2024-03-08,Europe,Line B,Day,1454,93,91.82,8492.64

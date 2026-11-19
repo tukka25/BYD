@@ -1,241 +1,241 @@
-scorecardDate,supplierName,commodityGroup,region,onTimeDeliveryRate,defectRatePct,orderFillRate,totalSpend
-2024-12-13,Summit Logistics Co,Raw Materials,South Asia,69.86,1.62,55.84,4970734.36
-2024-11-05,Ironclad Packaging,Packaging,Western Europe,78.23,5.25,70.25,1868146.44
-2025-01-23,Summit Logistics Co,MRO Supplies,South Asia,23.34,0.16,73.62,805270.08
-2025-02-28,BlueRiver Plastics,MRO Supplies,Middle East,34.94,13.9,99.07,2108668.66
-2024-08-10,Summit Logistics Co,Finished Goods,Middle East,21.13,13.11,77.47,692334.9
-2024-10-29,Summit Logistics Co,Packaging,South America,54.65,8.78,86.26,2251618.53
-2024-12-11,Ironclad Packaging,Electronics,Western Europe,78.91,2.31,88.57,2199964.09
-2025-05-21,Summit Logistics Co,Raw Materials,Middle East,12.91,0.46,76.62,4768.22
-2025-05-04,Ironclad Packaging,Packaging,South America,74.45,3.0,98.24,3689751.14
-2025-04-11,Pinnacle Textiles,Electronics,East Asia,62.64,1.66,54.41,2644596.63
-2024-04-16,Summit Logistics Co,MRO Supplies,North America,83.11,4.14,82.14,1457783.11
-2024-11-15,Summit Logistics Co,Finished Goods,Oceania,98.71,10.86,63.34,2541960.9
-2024-05-18,Apex Components,Packaging,South Asia,10.48,5.26,64.15,136778.63
-2024-12-16,BlueRiver Plastics,Raw Materials,South Asia,48.27,1.7,73.24,580393.24
-2025-02-08,BlueRiver Plastics,Packaging,North America,53.21,7.61,93.56,3615424.37
-2024-04-01,BlueRiver Plastics,MRO Supplies,South America,6.45,1.51,57.29,1510336.05
-2024-04-04,Ironclad Packaging,Electronics,South America,15.21,10.26,77.76,4440734.43
-2024-02-13,Northwind Metals,Finished Goods,South Asia,68.49,10.79,82.59,61248.59
-2024-04-07,Harbor Electronics,Packaging,South Asia,61.81,11.05,72.21,2944047.15
-2024-12-20,Summit Logistics Co,Electronics,Western Europe,27.55,13.47,60.94,1169635.72
-2024-04-28,Summit Logistics Co,Finished Goods,North America,75.31,2.43,63.61,4427693.71
-2024-07-12,Harbor Electronics,Electronics,South Asia,15.06,9.61,59.19,2759416.59
-2024-08-02,Ironclad Packaging,Electronics,Western Europe,21.24,12.44,81.08,3233717.67
-2024-05-22,Northwind Metals,Packaging,Middle East,12.74,9.37,86.67,1359921.09
-2024-04-30,Summit Logistics Co,Electronics,North America,87.59,5.28,61.4,1886973.99
-2024-04-17,Northwind Metals,MRO Supplies,Western Europe,37.55,4.6,71.48,4658573.85
-2024-03-18,Apex Components,Packaging,East Asia,33.25,14.99,64.19,491792.1
-2024-07-03,Ironclad Packaging,Finished Goods,East Asia,32.09,12.37,77.87,2583005.52
-2024-05-26,Ironclad Packaging,Packaging,East Asia,66.7,7.97,95.34,2930615.12
-2024-10-28,Pinnacle Textiles,Packaging,South America,63.35,0.08,76.7,4145953.4
-2024-12-13,Harbor Electronics,Finished Goods,Eastern Europe,38.97,9.84,81.32,343709.91
-2024-04-20,Harbor Electronics,Raw Materials,South Asia,29.62,1.51,51.84,3507338.03
-2025-04-10,Harbor Electronics,Finished Goods,Western Europe,88.28,1.03,79.45,1416639.43
-2024-06-10,BlueRiver Plastics,Packaging,South America,11.4,4.95,56.11,4828170.36
-2024-03-03,Northwind Metals,MRO Supplies,North America,94.75,8.85,79.94,4189596.35
-2025-03-17,Ironclad Packaging,MRO Supplies,Middle East,31.82,1.8,95.39,2504728.35
-2025-01-19,Ironclad Packaging,Finished Goods,East Asia,97.87,2.47,78.57,588837.92
-2025-02-10,Harbor Electronics,Electronics,Oceania,40.81,5.77,57.77,3718846.14
-2024-06-03,Ironclad Packaging,MRO Supplies,Oceania,18.75,8.49,62.61,4542101.08
-2025-03-13,Pinnacle Textiles,Electronics,South Asia,87.07,2.64,69.42,210265.51
-2024-07-19,Ironclad Packaging,Finished Goods,East Asia,23.85,6.12,89.57,1608243.72
-2024-08-03,Apex Components,Electronics,East Asia,84.24,12.2,63.52,919728.77
-2024-06-23,BlueRiver Plastics,Electronics,South America,21.45,13.68,80.14,1485125.73
-2025-06-04,Apex Components,Raw Materials,South America,54.44,11.37,85.28,4533306.71
-2024-11-13,Pinnacle Textiles,Packaging,North America,80.94,1.15,95.83,4872260.29
-2024-01-27,Ironclad Packaging,MRO Supplies,Eastern Europe,85.04,3.04,63.24,3552895.82
-2024-06-23,Harbor Electronics,Finished Goods,South America,32.22,11.64,53.1,2012778.54
-2024-10-15,Summit Logistics Co,Finished Goods,South America,32.29,6.76,79.15,131852.66
-2024-07-23,BlueRiver Plastics,MRO Supplies,Oceania,54.43,11.8,88.02,3455460.61
-2024-01-17,Apex Components,Electronics,Middle East,89.22,4.19,60.87,2855842.34
-2024-02-11,Pinnacle Textiles,Packaging,Eastern Europe,58.75,4.04,96.35,1736808.11
-2025-05-22,BlueRiver Plastics,Finished Goods,Middle East,57.18,7.35,65.84,1730289.96
-2024-06-03,Harbor Electronics,MRO Supplies,Middle East,87.9,9.61,63.32,1479677.99
-2025-05-01,BlueRiver Plastics,Electronics,South America,42.97,5.81,91.71,3909650.04
-2024-11-04,Apex Components,Finished Goods,Middle East,48.63,11.17,52.53,3165384.85
-2025-06-03,Northwind Metals,Electronics,North America,32.9,7.25,80.64,4515653.4
-2024-04-11,BlueRiver Plastics,Packaging,Oceania,5.43,8.34,69.41,2470458.18
-2024-05-16,Summit Logistics Co,MRO Supplies,Oceania,31.47,11.65,53.11,3958245.64
-2025-02-14,Summit Logistics Co,MRO Supplies,Eastern Europe,63.99,1.94,94.89,2000941.33
-2024-03-30,Pinnacle Textiles,Electronics,Eastern Europe,47.35,12.54,88.31,4374860.64
-2024-04-19,Summit Logistics Co,Electronics,South America,8.33,0.1,50.9,1969744.61
-2024-06-15,Northwind Metals,Finished Goods,Western Europe,10.76,14.35,85.0,4127281.71
-2024-08-04,Northwind Metals,Raw Materials,Middle East,36.04,12.98,82.86,1376845.35
-2024-04-23,Harbor Electronics,Packaging,North America,27.98,10.25,85.36,518068.71
-2024-11-14,Pinnacle Textiles,MRO Supplies,Oceania,43.66,2.8,93.98,79067.69
-2024-10-11,Northwind Metals,Electronics,Oceania,30.89,1.25,66.45,159592.09
-2024-06-06,Harbor Electronics,Raw Materials,Western Europe,61.96,2.48,84.63,876685.14
-2025-04-07,Summit Logistics Co,Finished Goods,Oceania,42.68,3.08,97.53,4911847.29
-2025-06-14,BlueRiver Plastics,Packaging,Western Europe,5.32,0.66,93.93,3286796.16
-2024-04-13,Apex Components,Packaging,Western Europe,9.93,6.24,76.41,4627138.3
-2024-07-30,Summit Logistics Co,Packaging,Oceania,3.81,11.15,81.14,2578325.15
-2024-05-15,Apex Components,Raw Materials,Western Europe,76.31,3.55,56.39,2412218.13
-2024-03-16,Apex Components,MRO Supplies,Western Europe,21.59,11.95,59.63,2900259.06
-2024-07-25,Summit Logistics Co,Raw Materials,Middle East,47.25,12.17,98.61,205541.21
-2025-01-10,Apex Components,Packaging,South America,35.25,8.2,75.91,4774169.66
-2024-10-21,Pinnacle Textiles,MRO Supplies,Western Europe,89.67,14.82,90.62,1926054.73
-2024-07-30,Summit Logistics Co,MRO Supplies,Oceania,68.44,7.28,50.61,2880845.81
-2025-03-14,Ironclad Packaging,Packaging,East Asia,20.24,7.03,96.42,976059.98
-2024-02-23,Ironclad Packaging,Finished Goods,North America,54.09,7.98,74.44,476924.16
-2024-08-12,Ironclad Packaging,Packaging,Middle East,37.23,10.59,50.62,207521.78
-2024-10-14,Summit Logistics Co,Raw Materials,South Asia,7.52,2.22,68.74,3798694.34
-2024-07-20,Northwind Metals,MRO Supplies,East Asia,68.95,12.93,80.18,698501.56
-2024-08-25,Pinnacle Textiles,Electronics,South Asia,25.3,14.08,60.54,3498790.77
-2025-03-08,Pinnacle Textiles,Electronics,South Asia,92.22,3.08,86.42,1137558.11
-2024-05-21,Summit Logistics Co,Finished Goods,East Asia,86.45,12.08,70.51,2239046.11
-2025-03-17,BlueRiver Plastics,Raw Materials,Oceania,39.26,4.51,51.17,561359.35
-2025-01-12,Ironclad Packaging,Electronics,Western Europe,83.84,14.69,78.33,2741182.44
-2025-05-02,Pinnacle Textiles,Finished Goods,Eastern Europe,44.37,0.53,94.51,3230076.71
-2025-05-27,Harbor Electronics,Raw Materials,North America,88.88,14.27,58.68,4687090.72
-2024-11-30,Pinnacle Textiles,Packaging,Middle East,34.84,0.96,96.57,4101337.54
-2024-07-22,Northwind Metals,Raw Materials,Western Europe,15.08,11.17,80.74,3645541.02
-2024-12-13,Apex Components,Finished Goods,Eastern Europe,55.49,3.03,65.25,4087170.17
-2025-04-08,Ironclad Packaging,Electronics,Eastern Europe,32.33,6.39,82.76,4691415.77
-2024-10-26,Harbor Electronics,Packaging,Eastern Europe,16.24,12.11,72.71,1697863.44
-2024-01-05,Summit Logistics Co,Electronics,Oceania,85.15,4.3,63.71,1856892.82
-2024-03-21,Summit Logistics Co,MRO Supplies,East Asia,93.41,1.0,77.49,4506410.05
-2024-05-14,Ironclad Packaging,Packaging,North America,52.27,6.77,58.74,1742398.39
-2025-04-02,Harbor Electronics,MRO Supplies,Oceania,29.41,7.46,59.54,3688948.95
-2024-05-23,Pinnacle Textiles,MRO Supplies,North America,0.2,1.3,70.49,832320.36
-2024-09-16,Ironclad Packaging,Finished Goods,Eastern Europe,7.52,6.89,62.66,3911732.61
-2024-05-07,Ironclad Packaging,Finished Goods,Oceania,56.02,0.45,89.81,4020554.36
-2025-01-13,Apex Components,Raw Materials,North America,15.88,6.69,85.89,3739018.35
-2025-06-09,Pinnacle Textiles,Electronics,Western Europe,60.31,1.28,97.77,3367651.99
-2024-04-15,Summit Logistics Co,Electronics,Western Europe,12.89,5.68,81.38,1180568.65
-2025-04-27,BlueRiver Plastics,MRO Supplies,East Asia,9.01,13.75,98.92,4813427.31
-2024-02-11,Harbor Electronics,Raw Materials,North America,89.49,14.42,74.75,4201053.73
-2024-02-01,Summit Logistics Co,Packaging,South Asia,82.4,6.51,70.72,4073031.09
-2025-02-02,Pinnacle Textiles,Raw Materials,South America,38.7,0.18,69.45,3051008.14
-2024-05-12,Northwind Metals,Electronics,Middle East,79.95,4.7,74.77,2376933.21
-2024-05-22,Pinnacle Textiles,Electronics,Western Europe,7.63,1.1,77.63,745364.48
-2024-09-27,Harbor Electronics,MRO Supplies,East Asia,70.53,8.31,84.37,4247461.92
-2024-08-20,Northwind Metals,Electronics,Eastern Europe,36.06,9.55,92.14,2194842.5
-2024-08-24,BlueRiver Plastics,Finished Goods,Oceania,70.09,11.95,73.52,848996.93
-2024-08-14,Summit Logistics Co,Packaging,South Asia,50.43,13.43,87.44,744282.68
-2024-10-30,Apex Components,Electronics,Middle East,1.39,10.63,84.1,3199738.07
-2024-01-04,Pinnacle Textiles,Raw Materials,South Asia,78.26,0.86,50.34,1419413.42
-2025-03-26,Northwind Metals,Raw Materials,Western Europe,24.81,1.7,87.61,4538397.26
-2024-11-23,Northwind Metals,Electronics,Eastern Europe,1.76,8.13,59.43,1511289.15
-2025-01-03,Northwind Metals,Electronics,South America,0.34,9.74,82.4,56992.83
-2024-09-28,BlueRiver Plastics,Raw Materials,Western Europe,89.49,14.35,77.39,4279017.56
-2025-06-04,Northwind Metals,Raw Materials,East Asia,84.87,8.19,82.88,293944.07
-2025-02-23,BlueRiver Plastics,Finished Goods,Oceania,74.51,13.48,92.04,624398.46
-2025-04-26,Harbor Electronics,Packaging,South America,93.34,7.56,67.76,4447717.37
-2025-04-24,Pinnacle Textiles,Packaging,North America,43.16,8.77,93.72,3991349.05
-2024-11-11,BlueRiver Plastics,Raw Materials,South Asia,71.93,5.21,52.26,3446978.33
-2024-12-22,Summit Logistics Co,Electronics,South Asia,54.16,13.12,59.19,2460913.77
-2024-06-09,BlueRiver Plastics,Electronics,Western Europe,88.86,4.85,97.78,4442476.3
-2024-03-12,Northwind Metals,Raw Materials,South America,9.46,4.76,62.94,410450.34
-2024-08-10,Northwind Metals,Packaging,Western Europe,48.33,5.99,76.8,2986395.89
-2025-01-11,BlueRiver Plastics,Raw Materials,South Asia,84.75,10.58,57.59,3315817.46
-2024-02-22,Northwind Metals,Raw Materials,North America,27.37,2.1,82.44,4911939.31
-2025-01-05,Harbor Electronics,Raw Materials,South Asia,72.96,9.64,71.28,1968345.71
-2025-03-13,Harbor Electronics,Packaging,South America,62.7,14.82,98.93,4920035.33
-2025-03-13,BlueRiver Plastics,Raw Materials,Oceania,0.32,6.41,89.38,2199404.72
-2024-02-26,Pinnacle Textiles,Raw Materials,North America,45.98,5.01,59.98,1927061.03
-2024-08-30,Pinnacle Textiles,MRO Supplies,Eastern Europe,77.61,4.43,56.97,2893787.59
-2024-02-05,Northwind Metals,Electronics,Western Europe,84.44,6.14,74.11,1535918.24
-2025-01-03,Northwind Metals,Finished Goods,Middle East,83.9,10.79,89.37,3576695.96
-2024-02-18,BlueRiver Plastics,Electronics,North America,78.41,11.47,89.89,4425849.1
-2024-09-16,Northwind Metals,Packaging,Eastern Europe,37.41,2.0,96.06,4541549.48
-2024-10-27,Ironclad Packaging,Raw Materials,Eastern Europe,61.99,7.5,70.19,2334143.71
-2024-01-18,BlueRiver Plastics,Electronics,Eastern Europe,83.9,12.76,98.5,327822.62
-2024-07-04,Summit Logistics Co,Finished Goods,Western Europe,88.49,10.74,71.37,3918934.86
-2024-07-30,Apex Components,Packaging,East Asia,48.28,1.56,68.99,1046167.21
-2024-08-19,Summit Logistics Co,Packaging,East Asia,28.43,6.07,56.55,265273.23
-2024-01-07,BlueRiver Plastics,Electronics,Middle East,61.47,13.55,58.13,1501981.8
-2025-02-08,Harbor Electronics,MRO Supplies,South America,13.36,10.56,80.68,3355750.62
-2024-10-26,Ironclad Packaging,Electronics,East Asia,16.43,2.03,72.48,4896000.57
-2024-12-03,Summit Logistics Co,Finished Goods,Western Europe,75.32,7.63,78.79,529854.72
-2025-06-16,Summit Logistics Co,Packaging,South Asia,74.68,14.15,90.2,1953819.72
-2025-03-30,Harbor Electronics,Packaging,South America,47.18,0.67,54.49,4810093.62
-2024-11-09,Pinnacle Textiles,Finished Goods,Oceania,97.76,5.22,58.3,1310601.57
-2024-07-30,Summit Logistics Co,Electronics,Oceania,32.62,4.99,82.7,4347675.3
-2024-01-31,Harbor Electronics,Raw Materials,South America,0.68,5.21,81.58,3248737.15
-2025-04-17,Pinnacle Textiles,Raw Materials,South Asia,3.52,10.65,99.87,3863229.19
-2025-01-07,Northwind Metals,Finished Goods,Middle East,14.16,14.89,83.2,4821646.89
-2024-12-12,Northwind Metals,MRO Supplies,North America,31.85,14.93,82.04,798974.41
-2025-06-06,BlueRiver Plastics,Packaging,North America,24.59,11.62,78.89,419239.13
-2024-03-06,BlueRiver Plastics,Raw Materials,Oceania,40.28,1.86,65.16,1850357.76
-2024-11-22,Summit Logistics Co,MRO Supplies,Western Europe,66.1,5.88,97.47,2705559.73
-2024-11-06,Pinnacle Textiles,Electronics,Middle East,18.05,1.12,68.89,3295684.54
-2024-05-20,Pinnacle Textiles,Electronics,East Asia,99.26,0.34,60.52,1342191.58
-2024-11-21,Ironclad Packaging,Finished Goods,North America,97.9,13.75,83.93,2002291.85
-2024-12-10,Ironclad Packaging,Finished Goods,Middle East,14.13,13.41,90.89,2045593.42
-2024-09-12,Ironclad Packaging,Packaging,North America,61.56,11.81,54.33,340010.28
-2024-06-09,Summit Logistics Co,Raw Materials,East Asia,33.6,5.79,64.81,2846568.38
-2025-03-02,Apex Components,Raw Materials,East Asia,82.71,4.08,80.52,398457.73
-2024-09-09,Ironclad Packaging,Packaging,East Asia,6.31,14.79,87.26,3130540.49
-2025-05-03,Apex Components,Finished Goods,Oceania,6.94,5.94,88.99,856212.85
-2024-11-17,Harbor Electronics,Raw Materials,Eastern Europe,93.08,0.34,95.59,119568.4
-2024-08-11,Harbor Electronics,Finished Goods,North America,56.92,12.86,56.08,1725325.75
-2024-02-21,Ironclad Packaging,Raw Materials,Western Europe,0.31,0.79,79.96,4844065.88
-2025-03-01,BlueRiver Plastics,Packaging,Western Europe,9.16,6.61,63.36,3637431.58
-2025-01-30,BlueRiver Plastics,Raw Materials,Middle East,95.62,10.98,95.05,3188435.56
-2024-12-14,Harbor Electronics,Electronics,East Asia,16.68,14.9,63.03,4426862.67
-2024-12-14,Ironclad Packaging,Finished Goods,South Asia,94.81,1.06,60.61,4651424.38
-2025-01-08,BlueRiver Plastics,MRO Supplies,Middle East,91.95,11.15,86.21,2353325.36
-2024-12-17,Harbor Electronics,Raw Materials,Western Europe,60.15,11.58,62.24,1192380.83
-2024-03-27,Pinnacle Textiles,Electronics,South Asia,32.57,8.35,62.78,3131401.8
-2025-04-14,Northwind Metals,Electronics,Western Europe,83.27,1.15,71.16,4765088.29
-2024-01-16,Ironclad Packaging,Raw Materials,Middle East,58.5,2.85,64.56,1299536.79
-2024-10-08,Ironclad Packaging,Electronics,Eastern Europe,44.38,1.1,68.04,2410636.19
-2025-01-29,Apex Components,Raw Materials,Oceania,43.39,8.11,80.44,3151587.74
-2025-05-15,Pinnacle Textiles,Raw Materials,Eastern Europe,10.11,5.81,58.98,2227342.38
-2024-05-03,Apex Components,MRO Supplies,Oceania,93.81,14.61,81.73,3697153.19
-2025-02-18,BlueRiver Plastics,Finished Goods,Eastern Europe,49.51,5.23,74.01,2072070.72
-2024-03-10,Pinnacle Textiles,Packaging,Western Europe,24.34,2.95,71.47,2384684.93
-2025-01-09,BlueRiver Plastics,Finished Goods,Eastern Europe,62.56,9.69,84.81,207689.74
-2025-06-20,Summit Logistics Co,MRO Supplies,South Asia,27.3,13.28,56.16,1663530.23
-2024-07-03,Summit Logistics Co,Packaging,Middle East,48.36,2.65,94.52,849460.31
-2024-04-14,Harbor Electronics,Electronics,Oceania,60.03,1.49,65.34,2483072.3
-2025-03-18,BlueRiver Plastics,Finished Goods,East Asia,83.56,3.67,59.43,3423050.86
-2024-06-16,Northwind Metals,MRO Supplies,South America,16.62,14.07,60.23,4641054.41
-2024-05-23,Pinnacle Textiles,MRO Supplies,Oceania,61.24,5.9,85.28,3861083.3
-2024-09-15,Apex Components,Packaging,Middle East,44.04,13.03,56.19,1254573.19
-2024-01-03,Northwind Metals,MRO Supplies,South Asia,87.87,5.5,54.98,2881954.74
-2024-03-12,Apex Components,Finished Goods,Eastern Europe,95.64,11.65,89.28,3623046.88
-2024-01-03,Summit Logistics Co,Finished Goods,South Asia,43.84,2.72,87.79,4917604.34
-2025-03-09,Northwind Metals,Electronics,South America,65.22,1.46,61.57,873195.97
-2024-04-18,Ironclad Packaging,Electronics,South America,11.32,0.14,61.79,4112091.58
-2025-05-24,BlueRiver Plastics,MRO Supplies,East Asia,73.04,11.93,99.48,2506805.97
-2024-07-19,Apex Components,Finished Goods,South Asia,93.01,9.53,73.88,3062073.29
-2025-05-05,Summit Logistics Co,Finished Goods,North America,88.69,2.32,64.79,3127021.8
-2025-06-13,BlueRiver Plastics,Finished Goods,Middle East,7.68,1.97,72.05,886584.64
-2024-11-22,Harbor Electronics,MRO Supplies,East Asia,56.55,8.66,53.57,2841.31
-2024-09-23,Summit Logistics Co,Finished Goods,South Asia,90.99,6.77,98.81,1031546.34
-2025-01-31,Apex Components,MRO Supplies,North America,18.96,9.1,66.05,3880275.11
-2024-11-28,Summit Logistics Co,Raw Materials,Eastern Europe,10.06,7.32,55.41,4802870.27
-2024-08-05,Harbor Electronics,Electronics,Middle East,78.19,0.13,63.37,1377755.2
-2024-12-20,BlueRiver Plastics,Finished Goods,Oceania,70.24,2.04,85.86,4316150.59
-2024-11-09,Harbor Electronics,Packaging,Eastern Europe,27.48,7.63,77.8,1205360.83
-2024-11-09,Northwind Metals,Electronics,South America,83.8,6.18,51.97,3541391.1
-2025-04-22,Summit Logistics Co,MRO Supplies,Oceania,70.54,5.89,81.58,2289526.34
-2024-08-25,BlueRiver Plastics,Packaging,South Asia,12.73,2.81,56.83,3960994.8
-2025-01-22,Summit Logistics Co,Raw Materials,South Asia,89.46,11.16,63.22,2311721.8
-2024-08-20,Harbor Electronics,MRO Supplies,South Asia,23.82,2.42,95.98,4487142.39
-2024-11-18,BlueRiver Plastics,MRO Supplies,East Asia,45.31,8.46,73.14,3766993.32
-2025-06-12,Northwind Metals,Raw Materials,Middle East,22.05,8.07,65.34,2375745.47
-2025-06-09,Harbor Electronics,Raw Materials,Oceania,37.75,10.95,73.25,648012.03
-2025-04-25,Apex Components,Packaging,South America,86.09,4.98,98.29,3681779.79
-2024-05-14,Pinnacle Textiles,Finished Goods,Western Europe,55.98,2.94,92.86,4808708.6
-2025-01-19,Ironclad Packaging,MRO Supplies,East Asia,83.69,4.76,92.13,4102164.92
-2024-01-04,BlueRiver Plastics,Packaging,Western Europe,27.07,10.14,86.07,1452842.83
-2024-08-31,Northwind Metals,MRO Supplies,East Asia,88.31,10.85,69.95,1258635.47
-2024-10-02,Harbor Electronics,MRO Supplies,Middle East,7.0,5.8,52.91,223805.84
-2024-12-20,Summit Logistics Co,Packaging,North America,23.13,9.33,55.21,2345145.73
-2024-11-04,Summit Logistics Co,MRO Supplies,Eastern Europe,23.38,9.55,65.08,1769704.42
-2024-05-13,Apex Components,MRO Supplies,Oceania,89.1,5.74,52.28,262010.0
-2024-10-17,Apex Components,Finished Goods,South America,67.15,2.88,77.43,2505587.26
-2024-10-14,Ironclad Packaging,Packaging,Western Europe,5.4,1.61,88.69,949763.52
-2024-11-06,Apex Components,Packaging,Eastern Europe,54.79,13.71,66.13,2194825.67
-2024-12-16,Summit Logistics Co,Packaging,Oceania,0.97,10.67,98.36,2700261.89
-2025-04-29,Ironclad Packaging,Electronics,East Asia,43.33,14.82,68.75,3205804.61
-2024-09-05,Ironclad Packaging,Finished Goods,Middle East,27.54,4.76,95.08,4193467.94
-2025-05-24,Harbor Electronics,Finished Goods,East Asia,72.43,0.15,95.31,3181775.83
-2024-08-24,Ironclad Packaging,Finished Goods,Western Europe,93.78,10.66,82.67,1681868.14
-2024-10-08,BlueRiver Plastics,Raw Materials,Middle East,43.34,5.96,74.45,3020388.47
-2024-12-30,Ironclad Packaging,Electronics,South America,19.19,4.19,93.84,2156237.04
-2024-02-11,Harbor Electronics,MRO Supplies,Middle East,87.17,9.66,94.67,2489370.3
-2024-05-27,Harbor Electronics,Finished Goods,Oceania,91.54,12.0,95.46,4391540.56
+energy_reading_date,energy_site_name,energy_site_region,energy_meter_type,energy_consumption_kwh,energy_peak_demand_kw,energy_cost_amount
+2024-04-30,South Depot,Southeast,Water Heating,122226.03,5480.67,31348.86
+2025-05-05,Central Office,Northeast,Water Heating,219536.41,5618.1,22151.57
+2024-11-30,South Depot,Northeast,Water Heating,155875.34,6799.65,24144.85
+2024-03-20,Central Office,Southeast,Natural Gas,188319.15,9702.89,5026.65
+2025-01-05,West Substation,Midwest,Water Heating,139274.1,7143.58,7546.68
+2025-05-18,East Warehouse,Northeast,Electricity,236376.54,2490.47,24733.73
+2025-05-04,North Plant,Midwest,Steam,157096.49,7691.67,31867.8
+2025-04-14,South Depot,Northeast,Electricity,34359.34,8415.49,16130.78
+2024-03-04,West Substation,Southeast,Electricity,113225.85,11394.87,2127.01
+2025-03-19,Riverside Factory,Southeast,Solar Generation,160298.6,7850.28,42588.55
+2024-10-21,North Plant,Southeast,Steam,170974.01,7262.69,39390.73
+2024-07-13,West Substation,Southeast,Natural Gas,24291.53,10093.24,31850.83
+2024-09-04,East Warehouse,West Coast,Electricity,87502.02,9475.6,1324.15
+2025-03-18,North Plant,Southwest,Solar Generation,119070.33,6674.4,27805.68
+2025-05-05,East Warehouse,Southeast,Steam,90086.26,307.77,32885.03
+2024-04-08,Riverside Factory,Midwest,Steam,43356.61,5196.1,16683.41
+2024-11-24,East Warehouse,Midwest,Electricity,59349.44,10554.08,6171.33
+2024-04-24,South Depot,Southeast,Electricity,201938.48,5067.37,42135.78
+2024-04-01,Riverside Factory,Midwest,Steam,206843.63,8526.5,11935.22
+2025-01-10,Central Office,West Coast,Steam,86254.02,5078.1,31797.47
+2024-03-29,West Substation,Southwest,Natural Gas,215569.24,10271.46,4794.16
+2024-07-16,North Plant,Southwest,Solar Generation,56783.32,11946.82,41190.66
+2024-05-13,Riverside Factory,Midwest,Steam,159398.08,5129.06,2366.5
+2024-12-14,East Warehouse,West Coast,Steam,168758.56,5487.05,30060.0
+2024-08-15,East Warehouse,West Coast,Water Heating,20347.88,4440.1,39049.51
+2024-04-15,West Substation,West Coast,Solar Generation,179651.9,5752.05,44822.13
+2025-02-28,East Warehouse,Southeast,Steam,172690.73,1485.79,44619.68
+2024-03-07,Riverside Factory,Midwest,Steam,207943.89,1174.84,29811.52
+2024-08-18,North Plant,Midwest,Natural Gas,124876.49,10238.2,41628.32
+2025-06-02,West Substation,Southeast,Electricity,230360.63,3753.89,20534.13
+2024-03-03,East Warehouse,Southeast,Natural Gas,27897.1,7948.08,12992.81
+2025-06-07,West Substation,Southeast,Electricity,143925.55,995.05,21441.8
+2024-09-14,South Depot,Northeast,Electricity,106468.44,8746.36,13797.1
+2025-01-12,North Plant,West Coast,Solar Generation,131760.98,11864.77,11553.15
+2024-08-20,North Plant,West Coast,Electricity,31613.41,10375.05,43241.73
+2024-06-26,East Warehouse,Southeast,Electricity,144577.0,7870.62,25109.51
+2024-08-29,Central Office,Southeast,Electricity,125230.7,7785.71,21867.16
+2024-10-13,Riverside Factory,Southwest,Natural Gas,211081.64,6223.79,41762.87
+2024-06-26,West Substation,Midwest,Solar Generation,201458.04,2908.28,1050.01
+2024-02-08,East Warehouse,Northeast,Electricity,86175.38,8754.85,12079.42
+2024-05-15,North Plant,Southeast,Water Heating,219798.1,2443.59,8894.23
+2024-11-26,North Plant,Southeast,Natural Gas,107524.95,9540.47,12312.01
+2025-05-23,Riverside Factory,Southeast,Water Heating,125808.48,4757.72,41656.68
+2024-01-10,South Depot,Southeast,Steam,57510.15,9597.97,4105.5
+2024-07-17,East Warehouse,Southwest,Solar Generation,183900.1,7986.05,39946.87
+2024-05-03,Central Office,West Coast,Electricity,91685.66,1559.22,33108.83
+2025-01-01,North Plant,Midwest,Natural Gas,114532.91,204.54,28352.89
+2024-04-02,North Plant,West Coast,Natural Gas,95232.48,11558.64,659.59
+2024-03-24,Riverside Factory,Midwest,Water Heating,154883.56,6294.9,834.47
+2025-03-02,Riverside Factory,Southwest,Solar Generation,137650.73,1041.86,21435.21
+2024-08-12,East Warehouse,Southeast,Water Heating,9295.49,5318.47,36430.95
+2024-12-31,West Substation,Northeast,Water Heating,101571.33,7406.74,4187.92
+2025-06-07,East Warehouse,Northeast,Water Heating,226639.94,8500.17,29724.09
+2025-04-13,Riverside Factory,Southeast,Water Heating,106516.05,8037.23,23420.98
+2025-05-26,East Warehouse,Northeast,Steam,199914.81,11603.08,17196.84
+2024-10-27,South Depot,Midwest,Steam,119737.82,7606.6,37605.23
+2024-08-01,West Substation,Midwest,Water Heating,33823.68,6640.46,31797.77
+2024-12-16,Riverside Factory,Midwest,Electricity,221867.93,218.13,25107.91
+2025-05-13,South Depot,Southwest,Electricity,238754.86,3731.35,7792.48
+2025-05-16,North Plant,Southeast,Water Heating,230762.66,2763.3,15443.37
+2024-09-18,West Substation,Midwest,Natural Gas,40630.94,7590.42,21826.78
+2025-06-10,East Warehouse,West Coast,Natural Gas,106842.85,3453.4,44277.41
+2024-12-23,Central Office,Southeast,Water Heating,166036.5,11338.26,6857.29
+2024-12-06,Riverside Factory,Northeast,Natural Gas,101303.16,5375.18,22067.69
+2024-07-21,West Substation,Northeast,Steam,48746.86,1451.82,44998.25
+2024-05-16,West Substation,Southwest,Steam,126361.08,10260.32,32611.24
+2024-03-03,East Warehouse,Southeast,Water Heating,110627.13,8009.6,29117.99
+2024-04-02,West Substation,Southwest,Natural Gas,38255.05,8698.13,31808.65
+2024-05-05,East Warehouse,West Coast,Natural Gas,174993.43,11786.94,38867.83
+2025-02-09,North Plant,West Coast,Steam,108323.81,7937.57,43720.52
+2025-03-21,South Depot,West Coast,Steam,158779.23,3552.03,28130.44
+2025-01-11,South Depot,Northeast,Electricity,221226.62,10818.07,12771.64
+2024-05-26,Riverside Factory,Southwest,Solar Generation,178066.15,3278.76,1059.01
+2024-01-19,North Plant,Southwest,Steam,141022.29,4600.42,13690.75
+2024-01-12,West Substation,Southwest,Steam,99767.24,5719.73,43859.21
+2024-05-16,North Plant,Northeast,Steam,158066.88,2447.61,27138.9
+2025-04-24,South Depot,Northeast,Natural Gas,53608.61,2688.56,42177.62
+2024-12-13,Central Office,Southeast,Water Heating,226366.74,2219.22,39426.7
+2024-03-26,East Warehouse,Northeast,Water Heating,231348.43,5915.87,41476.1
+2025-01-25,Central Office,Southwest,Electricity,89043.4,981.18,32406.62
+2024-12-28,South Depot,West Coast,Steam,159351.39,8336.44,24527.72
+2024-12-15,South Depot,West Coast,Natural Gas,96541.3,4500.74,20989.3
+2024-11-12,North Plant,Southwest,Solar Generation,124929.85,2472.73,41773.6
+2024-05-15,South Depot,West Coast,Natural Gas,214680.15,8694.82,10661.5
+2024-05-24,South Depot,Southwest,Water Heating,111591.12,9366.47,12311.86
+2024-05-21,Riverside Factory,Southeast,Electricity,228181.34,2054.03,7284.42
+2025-06-10,North Plant,Northeast,Natural Gas,243947.88,3407.31,36962.54
+2024-05-25,South Depot,Midwest,Natural Gas,25326.08,8825.4,18056.76
+2024-07-07,South Depot,Southwest,Natural Gas,226840.08,11094.78,10658.92
+2024-12-14,Central Office,Southeast,Water Heating,116926.59,9484.19,20242.11
+2024-04-03,Central Office,Southeast,Steam,246689.07,9723.26,16937.74
+2024-12-22,Riverside Factory,West Coast,Water Heating,129053.1,7717.79,20243.14
+2024-05-12,Riverside Factory,Southwest,Steam,20241.55,9044.43,13710.34
+2025-01-04,Riverside Factory,Southwest,Electricity,95744.41,1144.75,35319.74
+2025-05-18,East Warehouse,Northeast,Electricity,11737.96,1527.32,33276.4
+2024-08-24,Riverside Factory,Southwest,Natural Gas,109897.11,3512.38,21665.25
+2025-01-10,East Warehouse,West Coast,Water Heating,45547.24,8025.47,28461.93
+2024-06-30,North Plant,West Coast,Water Heating,167633.74,6396.8,20812.08
+2024-08-27,West Substation,Southeast,Steam,106871.91,4629.47,38595.4
+2024-06-19,North Plant,Southwest,Solar Generation,85866.44,2174.07,44332.2
+2025-02-08,South Depot,West Coast,Solar Generation,33660.77,10384.32,14821.53
+2025-03-18,South Depot,Northeast,Steam,134316.03,5814.26,2109.57
+2024-08-25,West Substation,Southeast,Solar Generation,229147.58,8173.87,22056.59
+2025-04-21,South Depot,Northeast,Solar Generation,47120.29,1583.25,23763.03
+2024-05-08,East Warehouse,Southeast,Electricity,116153.9,4867.04,41798.22
+2024-03-27,Riverside Factory,Midwest,Steam,6862.04,10088.14,24766.68
+2024-09-09,Central Office,West Coast,Steam,239883.59,6886.53,12128.17
+2025-03-25,North Plant,West Coast,Steam,644.4,8103.92,38649.43
+2024-08-30,Riverside Factory,Southeast,Water Heating,169588.8,5966.72,3059.99
+2025-04-23,West Substation,Southeast,Steam,125305.88,7873.19,7118.87
+2024-09-25,West Substation,Midwest,Electricity,170532.58,4040.54,35398.67
+2025-06-03,South Depot,Midwest,Electricity,15244.55,3949.98,11758.71
+2025-01-03,South Depot,Northeast,Steam,189930.49,228.71,33816.56
+2024-06-10,Central Office,Southwest,Natural Gas,227998.79,11840.59,21773.36
+2024-10-02,North Plant,Midwest,Water Heating,54562.37,1809.71,16362.78
+2024-07-11,Riverside Factory,Southeast,Solar Generation,125630.03,2951.11,4502.9
+2024-11-22,Riverside Factory,Southwest,Steam,83363.55,5375.81,26140.27
+2024-01-21,East Warehouse,Northeast,Solar Generation,180926.98,2168.84,8809.03
+2025-03-15,North Plant,West Coast,Water Heating,96773.6,9591.3,9420.75
+2024-11-25,East Warehouse,Southwest,Steam,36886.24,9490.06,15256.45
+2024-08-09,South Depot,Midwest,Solar Generation,162458.48,10962.07,3726.35
+2025-03-25,Central Office,West Coast,Water Heating,56759.55,3906.12,28320.89
+2024-09-14,Riverside Factory,Northeast,Steam,13944.26,4870.29,18247.25
+2024-10-09,East Warehouse,West Coast,Solar Generation,36832.64,6603.82,13271.76
+2025-02-21,Riverside Factory,Midwest,Solar Generation,247218.25,10692.37,23100.92
+2024-11-06,West Substation,Northeast,Solar Generation,143710.0,9403.45,2501.0
+2024-01-15,Central Office,Northeast,Solar Generation,19084.37,8850.8,13462.11
+2024-02-28,South Depot,Northeast,Steam,156085.06,3162.51,15015.77
+2024-09-10,South Depot,West Coast,Natural Gas,100843.55,10679.33,25297.18
+2024-11-23,Riverside Factory,Southwest,Steam,71898.27,5525.82,16971.04
+2025-03-01,West Substation,Southwest,Electricity,228223.97,1912.44,9670.84
+2024-07-14,South Depot,Northeast,Electricity,121384.75,1450.92,591.29
+2024-05-18,Central Office,Southwest,Electricity,22061.61,3140.35,6526.06
+2025-03-26,East Warehouse,Southwest,Solar Generation,200631.27,5162.66,32405.26
+2024-11-06,West Substation,Southwest,Solar Generation,79713.88,2624.79,17556.56
+2024-10-05,North Plant,West Coast,Electricity,185435.39,2162.87,24819.79
+2024-05-31,West Substation,Midwest,Natural Gas,213304.49,2608.54,1420.38
+2024-03-26,Central Office,Midwest,Solar Generation,68378.09,2657.41,19419.94
+2024-08-03,North Plant,Midwest,Water Heating,167.57,10623.38,34286.11
+2025-06-19,East Warehouse,Southwest,Electricity,2136.67,8682.25,29754.02
+2024-07-20,Central Office,Southwest,Electricity,86434.23,9985.86,30411.83
+2024-12-01,North Plant,Northeast,Water Heating,159939.03,5906.59,39344.88
+2025-06-10,Riverside Factory,Southwest,Water Heating,56983.85,5486.38,17827.29
+2024-08-04,North Plant,Midwest,Natural Gas,51820.62,7505.52,5495.65
+2025-04-08,West Substation,Northeast,Electricity,177188.72,3912.04,11821.14
+2025-01-24,South Depot,Southeast,Steam,170297.92,8055.67,43365.98
+2025-02-13,Riverside Factory,Midwest,Natural Gas,94786.86,11094.87,36658.94
+2024-01-15,North Plant,West Coast,Electricity,199711.04,10878.88,1170.29
+2024-03-08,Riverside Factory,Midwest,Solar Generation,236556.74,5379.56,22403.89
+2025-05-03,Riverside Factory,Midwest,Solar Generation,109487.79,8794.16,19016.0
+2024-06-15,West Substation,Southwest,Solar Generation,106807.48,4721.69,26277.08
+2024-05-13,South Depot,Southeast,Water Heating,212322.84,5142.87,29953.28
+2025-05-15,Central Office,Southeast,Natural Gas,214690.03,3243.37,8979.07
+2024-11-12,North Plant,Midwest,Steam,111126.61,5690.74,33267.59
+2025-04-23,Central Office,Southeast,Water Heating,144585.58,11155.11,35719.14
+2024-02-23,Riverside Factory,Southeast,Electricity,94873.84,8192.9,29109.23
+2024-05-08,Central Office,Southwest,Electricity,238673.07,2190.28,12951.38
+2025-01-05,South Depot,Southeast,Water Heating,146105.74,4271.83,30948.78
+2024-03-30,Central Office,Southeast,Solar Generation,120460.11,2816.04,25302.17
+2024-08-29,West Substation,Southeast,Steam,69618.88,7056.84,21377.17
+2024-09-30,East Warehouse,Southeast,Electricity,58064.42,11644.3,10839.74
+2024-03-21,South Depot,Southeast,Solar Generation,125889.23,3750.18,26313.58
+2025-03-11,West Substation,Southeast,Natural Gas,112799.21,1009.81,37712.4
+2024-10-15,Central Office,West Coast,Natural Gas,67885.09,10445.01,21575.99
+2025-01-08,South Depot,Southwest,Electricity,111636.77,6411.55,12148.9
+2025-02-18,West Substation,Northeast,Natural Gas,208889.23,10852.72,31597.49
+2025-03-16,South Depot,Northeast,Steam,216698.55,8342.69,17637.45
+2025-05-13,North Plant,Southeast,Electricity,122761.84,8461.61,41727.94
+2025-04-27,Riverside Factory,Midwest,Steam,74986.94,8013.62,11839.88
+2024-04-30,Riverside Factory,Southeast,Steam,175027.99,11838.18,19149.69
+2025-03-24,North Plant,Midwest,Electricity,102863.56,6928.64,20452.7
+2024-05-10,South Depot,Midwest,Solar Generation,88855.26,1971.17,3606.48
+2024-01-29,Central Office,West Coast,Water Heating,168280.21,5357.04,20095.07
+2024-04-21,Central Office,Southeast,Electricity,131547.67,6066.23,38966.76
+2024-02-13,Central Office,West Coast,Electricity,52121.04,3577.51,41937.95
+2025-01-06,Central Office,West Coast,Solar Generation,116419.08,2910.05,44501.59
+2024-03-21,East Warehouse,Southwest,Electricity,631.75,6884.97,30773.3
+2024-01-11,East Warehouse,Northeast,Steam,186533.73,3985.37,36389.77
+2025-01-29,South Depot,Northeast,Natural Gas,3654.75,5365.51,35678.16
+2025-02-21,North Plant,Southeast,Steam,27697.12,11597.99,30148.84
+2024-02-04,East Warehouse,Southeast,Electricity,234668.12,10531.36,22708.28
+2025-04-09,West Substation,Southeast,Water Heating,234611.17,7490.37,23846.22
+2024-03-27,East Warehouse,Northeast,Solar Generation,203882.72,656.42,28364.91
+2025-01-31,Central Office,Southwest,Electricity,127243.96,5541.51,26229.77
+2025-05-11,Central Office,Southeast,Electricity,239324.57,8790.32,15224.71
+2024-01-21,East Warehouse,Northeast,Solar Generation,148478.53,6603.9,1260.59
+2025-06-09,Central Office,Southwest,Electricity,226723.46,569.77,41943.41
+2024-04-28,Riverside Factory,Southwest,Solar Generation,132759.96,484.55,36227.88
+2024-10-13,Riverside Factory,West Coast,Steam,62416.43,5766.36,41442.13
+2024-08-08,North Plant,West Coast,Electricity,16762.98,5786.73,2719.53
+2024-03-15,North Plant,Northeast,Water Heating,174914.13,149.95,18338.52
+2024-03-27,Riverside Factory,Midwest,Water Heating,83974.31,4605.8,19429.87
+2024-08-12,Riverside Factory,Southeast,Steam,177724.33,8708.91,29089.75
+2024-12-05,North Plant,Northeast,Natural Gas,112500.16,385.2,13872.55
+2024-11-19,West Substation,West Coast,Solar Generation,17178.26,10571.68,11856.19
+2024-12-26,Riverside Factory,West Coast,Natural Gas,216317.12,7771.27,31711.8
+2025-02-25,North Plant,Midwest,Steam,102545.8,333.43,12254.28
+2025-04-06,South Depot,Southeast,Electricity,195929.86,7288.6,37685.41
+2024-10-17,South Depot,Southeast,Solar Generation,217020.27,8485.16,32661.1
+2025-04-19,North Plant,Southwest,Electricity,225137.79,5628.16,24834.93
+2024-10-05,West Substation,Midwest,Electricity,204750.71,2751.51,26318.73
+2025-03-11,East Warehouse,West Coast,Steam,211969.02,6135.82,13742.45
+2024-03-08,West Substation,West Coast,Electricity,220375.68,93.59,34878.3
+2024-08-07,West Substation,Midwest,Natural Gas,31853.41,7798.94,37361.01
+2024-11-08,Riverside Factory,West Coast,Steam,50856.09,11511.18,6971.34
+2024-11-24,East Warehouse,Southeast,Steam,100265.81,9904.06,37248.29
+2024-11-19,East Warehouse,Northeast,Water Heating,3810.0,3940.74,14348.92
+2024-07-21,West Substation,West Coast,Water Heating,128710.73,2590.62,2946.74
+2024-06-23,East Warehouse,West Coast,Solar Generation,79923.53,3158.68,19772.56
+2024-07-10,South Depot,Southwest,Steam,175079.25,11364.37,4698.21
+2024-02-26,Central Office,Southwest,Solar Generation,195148.2,8579.83,3462.21
+2024-02-24,Riverside Factory,West Coast,Steam,63009.97,1819.93,16184.88
+2024-02-15,West Substation,Southwest,Solar Generation,22928.72,7741.77,17943.18
+2025-05-04,Central Office,Southwest,Electricity,231283.47,547.38,40641.63
+2024-02-18,Riverside Factory,Southeast,Electricity,135117.69,6706.92,28398.56
+2025-03-14,Riverside Factory,Midwest,Solar Generation,142791.09,2740.39,95.23
+2024-10-13,West Substation,Southwest,Electricity,42807.07,9385.65,39436.72
+2025-03-10,East Warehouse,Northeast,Solar Generation,29285.07,10272.83,31487.33
+2024-02-27,East Warehouse,Midwest,Electricity,137099.7,11742.1,41367.0
+2024-02-28,West Substation,Northeast,Electricity,42038.54,9256.95,7707.22
+2024-06-06,Central Office,Southwest,Solar Generation,59838.94,11958.33,15681.37
+2024-05-18,South Depot,Southwest,Water Heating,12657.11,3705.05,33594.79
+2025-04-13,Central Office,Southeast,Natural Gas,194006.84,4292.84,5687.72
+2025-06-12,North Plant,Southwest,Water Heating,210149.78,8831.93,8977.34
+2024-01-10,Central Office,Northeast,Water Heating,211634.63,9520.5,31528.49
+2024-11-07,East Warehouse,Northeast,Water Heating,12355.36,609.24,21209.12
+2024-11-17,South Depot,West Coast,Steam,187046.7,6549.92,16836.71
+2024-05-21,North Plant,Midwest,Steam,17827.71,4195.71,8082.11
+2024-02-11,Riverside Factory,Southwest,Solar Generation,25593.16,10035.0,35953.3
+2024-01-15,Riverside Factory,West Coast,Steam,238167.55,3111.12,14393.19
+2025-01-22,South Depot,Southeast,Electricity,43289.43,423.41,23346.72
+2025-01-06,North Plant,Southeast,Water Heating,103897.48,2961.86,31389.03
+2024-11-06,North Plant,Midwest,Solar Generation,106252.89,6674.82,22770.58
+2025-04-13,West Substation,Southeast,Solar Generation,24585.48,5134.82,5880.07
+2024-07-10,South Depot,Midwest,Electricity,125553.91,11486.93,13309.16
+2025-01-11,North Plant,Northeast,Electricity,188622.32,7096.77,31663.14
+2024-05-31,East Warehouse,Southeast,Electricity,64533.92,3298.57,29432.83
+2024-03-05,South Depot,Midwest,Natural Gas,139217.26,3171.37,28534.59
+2025-04-03,South Depot,Northeast,Solar Generation,143052.4,1814.95,32778.59
+2025-01-28,Central Office,Southwest,Electricity,148598.94,6319.78,35080.35

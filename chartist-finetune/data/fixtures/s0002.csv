@@ -1,241 +1,241 @@
-billingDate,planTier,billingCycle,customerRegion,seatCount,mrrAmount,discountPercent,churnedRevenue
-2025-06-04,Business,Quarterly,Europe,1142,48875.77,1.82,1871.86
-2025-03-25,Free,Annual,Europe,1156,5342.21,18.54,11370.47
-2025-01-27,Enterprise,Quarterly,Africa,4052,2430.38,20.68,14080.83
-2025-04-15,Free,Annual,Europe,510,35858.3,22.66,3837.02
-2024-04-29,Team,Quarterly,North America,3968,2477.27,4.78,6301.82
-2024-04-27,Enterprise,Quarterly,Latin America,641,8931.75,43.78,16861.37
-2025-02-25,Starter,Annual,Africa,936,12142.27,29.44,8555.56
-2024-05-04,Free,Quarterly,Middle East,2580,45811.77,39.72,7564.61
-2024-11-14,Team,Annual,Middle East,3696,15599.82,42.32,6639.56
-2024-09-23,Free,Quarterly,Middle East,4611,30459.18,24.75,19857.18
-2024-07-02,Business,Monthly,Middle East,2308,9641.74,20.98,6376.55
-2025-02-10,Starter,Annual,Europe,2927,10329.1,9.24,115.39
-2024-10-02,Business,Quarterly,Asia Pacific,4851,26779.9,38.41,5075.48
-2025-01-15,Starter,Monthly,Latin America,320,43902.52,6.87,4850.16
-2024-03-04,Free,Monthly,Latin America,4925,39265.98,32.9,2843.42
-2025-05-26,Team,Monthly,Middle East,876,27301.18,57.8,21540.48
-2025-02-26,Enterprise,Monthly,Europe,2062,36440.5,57.15,24436.57
-2024-02-06,Free,Quarterly,Asia Pacific,2077,37192.51,30.11,887.4
-2025-01-07,Starter,Annual,Asia Pacific,1846,25236.66,21.07,17391.91
-2024-09-22,Starter,Quarterly,Asia Pacific,4695,15341.77,0.33,11096.53
-2024-07-10,Free,Annual,North America,4150,15751.33,44.84,10097.91
-2024-07-01,Free,Quarterly,North America,643,47357.18,39.07,7497.57
-2024-08-03,Enterprise,Annual,Europe,1034,19363.92,6.19,7131.93
-2024-11-21,Starter,Annual,Europe,220,25181.47,39.49,8925.52
-2024-01-09,Team,Quarterly,Middle East,1870,3556.48,36.74,867.27
-2024-01-23,Starter,Monthly,Latin America,3670,38177.45,42.48,23164.49
-2024-08-13,Business,Annual,Asia Pacific,945,38207.11,19.56,894.38
-2024-07-02,Team,Monthly,Middle East,3104,37745.92,10.26,23156.25
-2025-01-08,Enterprise,Quarterly,Latin America,2522,26653.14,25.53,8397.04
-2024-02-14,Team,Quarterly,Africa,4722,47959.42,42.76,21619.62
-2024-09-22,Team,Monthly,North America,4702,30701.87,58.71,21095.7
-2025-06-08,Free,Monthly,North America,54,11644.05,34.72,14896.63
-2025-06-12,Enterprise,Quarterly,Middle East,1257,31456.61,10.89,9132.84
-2024-11-13,Starter,Monthly,Africa,3917,22391.75,21.43,21936.26
-2024-05-15,Free,Annual,Asia Pacific,3829,10794.65,43.16,22295.29
-2024-10-01,Free,Annual,North America,4791,8368.6,23.31,11595.83
-2025-02-18,Business,Quarterly,North America,691,438.98,49.38,21651.38
-2025-06-13,Team,Annual,Latin America,2194,26724.97,47.35,22818.92
-2024-12-19,Starter,Monthly,North America,535,14496.21,23.33,10389.81
-2024-07-18,Team,Annual,Asia Pacific,4516,2803.61,37.92,5309.81
-2024-10-31,Enterprise,Quarterly,Africa,302,3415.81,26.24,10278.3
-2024-08-21,Business,Quarterly,North America,3880,45563.05,48.53,24883.23
-2024-10-17,Team,Monthly,Europe,3375,38971.2,21.54,8455.71
-2024-10-09,Team,Quarterly,North America,3562,24106.52,17.57,13098.34
-2024-01-04,Team,Annual,North America,3588,48671.52,52.67,18001.04
-2024-01-31,Starter,Annual,Middle East,2445,29252.23,15.74,12856.82
-2025-01-13,Team,Annual,Europe,2054,32556.82,58.94,16747.78
-2024-01-14,Business,Annual,Asia Pacific,1437,14589.19,32.7,12846.29
-2024-11-04,Starter,Quarterly,Europe,2146,9.51,48.18,8013.47
-2024-06-14,Enterprise,Annual,Latin America,2496,30201.34,27.42,18734.94
-2025-03-07,Team,Monthly,Asia Pacific,840,38666.36,15.84,20167.95
-2024-11-13,Team,Annual,Africa,1738,40527.85,52.55,7968.74
-2025-04-15,Team,Monthly,Europe,482,37968.56,3.79,2776.89
-2024-11-10,Enterprise,Monthly,Asia Pacific,2329,9363.79,41.68,8177.52
-2025-01-09,Free,Monthly,Middle East,875,25152.9,6.56,240.62
-2024-04-05,Business,Monthly,Asia Pacific,474,4995.23,24.6,18995.33
-2024-12-06,Starter,Annual,Latin America,4973,45389.0,46.07,13519.01
-2024-06-16,Business,Quarterly,Europe,831,7968.13,19.97,13038.91
-2024-02-13,Enterprise,Monthly,Europe,1714,12955.42,51.42,23843.6
-2025-02-19,Business,Annual,North America,2083,41238.62,27.62,11439.04
-2024-07-05,Business,Annual,North America,4720,9754.79,37.1,18824.12
-2024-06-29,Business,Monthly,Middle East,3408,45239.19,36.28,17501.2
-2024-02-13,Starter,Monthly,Asia Pacific,1051,36519.87,24.65,23095.3
-2024-09-07,Enterprise,Monthly,Europe,198,38927.45,37.38,7971.55
-2025-02-28,Business,Annual,Europe,2485,21988.92,14.64,24737.98
-2024-06-24,Starter,Quarterly,Latin America,4169,42015.84,30.45,23930.26
-2024-01-15,Free,Annual,Europe,2453,44974.8,5.42,19659.11
-2025-03-29,Free,Monthly,Europe,3155,13941.04,53.77,17330.09
-2024-08-23,Starter,Monthly,Europe,4783,42858.6,51.63,22687.68
-2024-06-18,Free,Quarterly,North America,2968,4978.83,37.91,6020.48
-2024-11-25,Business,Annual,North America,4851,2120.39,12.27,21805.95
-2024-11-16,Business,Annual,Europe,3720,18019.77,5.6,1389.46
-2024-08-08,Free,Monthly,Middle East,2693,13397.85,55.79,5026.63
-2024-05-26,Starter,Monthly,North America,2222,47362.57,32.2,11772.38
-2024-05-11,Starter,Quarterly,Latin America,4775,47140.9,14.04,8892.1
-2025-02-22,Team,Quarterly,North America,2774,29694.94,39.36,11314.63
-2024-12-28,Free,Quarterly,North America,4619,36117.16,20.87,17248.68
-2024-11-18,Team,Monthly,Middle East,1127,17597.15,6.23,6561.95
-2025-01-27,Team,Monthly,North America,974,28398.24,26.69,6079.57
-2024-02-03,Business,Quarterly,Latin America,3015,793.23,50.72,22830.02
-2025-02-26,Free,Annual,Europe,1300,13764.82,23.38,23438.67
-2025-01-31,Starter,Monthly,North America,3795,13922.57,0.38,5419.37
-2025-03-12,Free,Monthly,Latin America,3802,41747.45,36.99,14210.98
-2025-04-09,Enterprise,Monthly,Africa,2649,11336.92,48.43,13672.75
-2024-11-15,Free,Annual,Middle East,4500,14226.54,50.53,4100.0
-2025-02-03,Business,Quarterly,Middle East,4661,14145.99,47.03,18904.53
-2024-07-18,Team,Monthly,Africa,133,750.77,9.8,6257.42
-2024-04-01,Starter,Monthly,Asia Pacific,4683,14178.8,5.88,10829.86
-2025-03-26,Free,Monthly,Latin America,3565,10079.97,28.84,2592.47
-2024-09-22,Team,Annual,Asia Pacific,2572,10488.27,2.67,9076.26
-2024-02-25,Business,Quarterly,Africa,3158,649.79,8.44,15368.85
-2025-06-12,Business,Monthly,Asia Pacific,4377,32364.81,7.93,2447.98
-2024-04-07,Team,Annual,Latin America,1236,43243.61,13.62,12510.4
-2025-03-27,Enterprise,Annual,North America,30,39206.39,6.93,14288.21
-2024-06-22,Business,Annual,Asia Pacific,2737,44206.25,7.05,18857.08
-2025-03-18,Team,Annual,Africa,2980,22362.38,5.17,10337.75
-2025-05-30,Starter,Annual,Europe,3736,29039.29,59.93,2708.68
-2024-01-26,Team,Quarterly,Europe,4607,36558.29,1.57,1537.5
-2024-10-01,Enterprise,Annual,Asia Pacific,1113,43195.34,23.73,10598.38
-2024-03-15,Starter,Monthly,Africa,981,17712.01,41.0,2131.85
-2024-01-03,Free,Annual,Europe,2955,5798.54,34.34,1080.55
-2024-12-22,Team,Quarterly,Middle East,229,889.16,26.23,6727.82
-2024-07-08,Team,Quarterly,Africa,801,37882.27,50.67,5261.32
-2024-06-02,Enterprise,Quarterly,Asia Pacific,555,6750.52,28.62,4594.92
-2024-10-17,Business,Annual,Africa,464,5203.03,48.28,17990.42
-2024-04-10,Free,Annual,Africa,2357,35175.2,39.23,14390.0
-2024-12-13,Business,Quarterly,Latin America,4029,36031.11,14.9,19747.64
-2024-12-05,Enterprise,Quarterly,North America,3641,9534.25,32.7,4939.22
-2025-03-28,Enterprise,Quarterly,North America,3850,6533.18,50.41,21117.08
-2025-06-01,Enterprise,Monthly,Europe,2104,26572.67,43.17,4373.96
-2024-01-01,Team,Quarterly,Europe,1092,46010.36,28.8,1485.54
-2024-06-04,Team,Monthly,Middle East,2694,30352.41,8.72,2115.54
-2025-04-02,Free,Annual,Africa,1799,49810.11,54.88,1003.14
-2025-04-20,Business,Annual,Europe,2103,9826.15,43.73,24986.9
-2025-05-23,Business,Monthly,Asia Pacific,1771,12744.14,27.86,1391.06
-2025-01-31,Free,Annual,Africa,2315,23692.3,55.62,21902.78
-2024-11-08,Business,Annual,Latin America,1108,6015.1,30.55,21914.81
-2025-01-03,Free,Quarterly,Latin America,4507,46138.8,10.82,6668.85
-2024-06-09,Team,Monthly,Middle East,16,39058.25,56.79,10727.3
-2024-02-29,Starter,Quarterly,Europe,375,19716.61,38.72,17652.19
-2024-10-12,Enterprise,Quarterly,Asia Pacific,4246,28239.31,16.65,23545.04
-2025-02-05,Team,Annual,Latin America,4869,3234.31,46.18,16616.11
-2025-01-12,Team,Quarterly,Asia Pacific,4730,48676.73,52.36,1538.2
-2024-09-18,Business,Annual,Latin America,640,7706.01,44.82,24075.8
-2025-05-06,Free,Monthly,Middle East,4151,4759.44,54.66,16887.59
-2024-07-12,Free,Annual,Middle East,689,23527.48,4.95,6142.37
-2024-05-27,Starter,Monthly,North America,3588,39261.38,20.76,10907.55
-2024-10-28,Team,Monthly,North America,4839,40890.05,8.22,5175.0
-2025-03-20,Business,Annual,Africa,3798,9095.61,38.94,7613.42
-2025-06-22,Business,Annual,Asia Pacific,4928,15727.92,56.13,22139.02
-2025-03-28,Free,Quarterly,Asia Pacific,3896,11313.46,20.86,2780.27
-2024-10-13,Free,Quarterly,Asia Pacific,4670,26223.79,20.18,6664.33
-2025-03-12,Starter,Quarterly,Asia Pacific,2569,43730.08,35.86,16719.27
-2024-10-07,Business,Monthly,Africa,3683,3357.71,33.1,17629.19
-2024-09-28,Team,Quarterly,Latin America,2108,32145.41,55.46,5086.08
-2024-04-14,Free,Monthly,Middle East,4529,29332.12,14.23,21093.74
-2024-08-24,Business,Monthly,Africa,3895,18251.74,52.56,10397.79
-2024-02-12,Free,Monthly,Africa,3211,15344.8,20.22,10024.22
-2024-06-24,Starter,Annual,Africa,4498,39368.18,21.24,19461.66
-2024-11-23,Business,Quarterly,North America,4906,1404.7,16.43,1170.34
-2024-04-08,Team,Monthly,Europe,267,10462.85,10.88,16139.7
-2024-07-18,Enterprise,Annual,Europe,4839,44542.4,14.81,13260.74
-2024-08-05,Business,Annual,Africa,3140,11660.15,35.0,15217.04
-2024-07-23,Starter,Monthly,Africa,3262,24702.29,1.98,19943.31
-2025-04-13,Free,Monthly,Europe,4607,28497.59,54.33,11333.48
-2024-11-20,Business,Quarterly,North America,40,47923.27,56.37,15361.61
-2024-05-13,Business,Monthly,Middle East,1123,19572.41,10.23,17562.26
-2024-11-01,Enterprise,Annual,Europe,202,1913.49,13.15,10339.66
-2024-10-25,Team,Monthly,Asia Pacific,1690,4022.75,58.93,20470.95
-2024-01-05,Free,Monthly,Asia Pacific,3217,18258.23,9.09,5208.56
-2024-12-01,Enterprise,Annual,Europe,2436,241.73,39.14,11658.35
-2025-04-26,Starter,Annual,Middle East,1610,34138.44,43.24,19567.26
-2025-03-08,Starter,Quarterly,Latin America,4358,38782.9,3.95,20849.55
-2025-01-21,Team,Annual,Europe,2491,5974.58,52.66,2852.19
-2024-09-22,Enterprise,Quarterly,Latin America,3039,22194.41,46.76,23852.51
-2024-01-09,Free,Quarterly,Africa,901,28643.51,49.52,22531.41
-2024-04-10,Team,Annual,Africa,1522,2723.57,31.9,23977.2
-2024-07-04,Team,Monthly,Latin America,1217,45616.05,30.85,16800.56
-2025-02-24,Free,Annual,Latin America,3490,29574.99,55.18,21346.64
-2024-07-03,Starter,Monthly,Europe,2262,9044.92,1.03,2712.46
-2024-07-03,Starter,Quarterly,Middle East,4610,6466.35,34.35,1301.03
-2025-02-02,Enterprise,Annual,Middle East,4974,41868.0,35.0,4775.51
-2024-11-10,Free,Monthly,North America,4168,29605.65,31.8,8619.19
-2025-02-05,Team,Annual,Asia Pacific,1654,11610.43,32.51,21439.0
-2024-12-10,Enterprise,Quarterly,Asia Pacific,3177,25852.69,54.75,6152.18
-2024-12-01,Free,Annual,Latin America,3935,15064.5,43.06,7750.77
-2024-09-08,Starter,Monthly,Europe,585,20202.98,32.96,3618.45
-2024-08-15,Enterprise,Annual,Latin America,2844,19016.17,42.56,17189.18
-2025-06-10,Starter,Monthly,Latin America,4272,41983.57,49.07,6459.61
-2025-04-22,Free,Annual,Asia Pacific,2565,27356.78,13.68,18444.4
-2025-02-21,Enterprise,Monthly,Middle East,753,38130.26,4.18,17800.13
-2024-11-28,Business,Monthly,Africa,854,3313.94,11.87,17780.6
-2024-09-19,Team,Annual,Asia Pacific,3660,43132.37,0.9,9322.03
-2024-04-06,Enterprise,Monthly,Asia Pacific,4307,49428.44,12.79,17877.08
-2024-08-29,Starter,Annual,Middle East,3531,33804.31,20.52,787.18
-2025-01-09,Starter,Quarterly,Middle East,3820,3595.47,22.06,22586.83
-2024-09-04,Enterprise,Quarterly,North America,3723,18332.83,33.37,11557.02
-2025-03-18,Team,Monthly,Middle East,4396,9235.16,8.54,24046.75
-2024-04-25,Enterprise,Quarterly,North America,4312,13560.21,27.55,3516.26
-2024-10-28,Starter,Monthly,Africa,2282,15635.61,23.63,18158.32
-2024-11-08,Free,Quarterly,Latin America,2295,32181.09,55.74,13549.53
-2024-07-30,Free,Annual,North America,4095,44840.19,41.17,1993.32
-2024-03-20,Business,Quarterly,Middle East,909,41788.15,36.39,7560.9
-2024-12-01,Team,Quarterly,Europe,4857,25007.24,36.31,7856.83
-2024-06-26,Team,Annual,Latin America,3680,33004.4,42.12,9335.46
-2024-09-19,Free,Annual,Asia Pacific,3959,14738.54,28.43,17839.1
-2025-01-11,Business,Annual,Asia Pacific,4080,15688.0,37.42,4274.74
-2024-06-12,Team,Quarterly,Middle East,4041,19252.47,26.06,4437.57
-2024-10-04,Business,Monthly,Africa,2834,6554.89,39.65,640.32
-2025-01-13,Team,Annual,Africa,814,48465.86,50.42,3111.91
-2025-02-26,Enterprise,Annual,Africa,4853,38652.15,53.37,732.18
-2025-02-04,Team,Quarterly,North America,2874,12652.01,46.4,6414.25
-2024-04-08,Team,Quarterly,Europe,3026,39482.95,31.41,17286.52
-2024-12-03,Team,Quarterly,Europe,1908,10128.36,25.06,20142.94
-2025-03-11,Team,Monthly,Latin America,3870,7384.4,58.61,18379.63
-2025-01-25,Business,Annual,Latin America,4347,14370.01,58.34,18295.55
-2024-04-14,Free,Quarterly,Europe,3587,7223.04,55.29,19493.48
-2024-09-25,Enterprise,Quarterly,Asia Pacific,3003,4957.06,14.9,2825.22
-2025-03-18,Starter,Annual,North America,4898,11440.92,23.35,10986.6
-2025-06-01,Starter,Quarterly,Africa,4454,29219.2,39.79,16814.84
-2024-06-02,Enterprise,Annual,Europe,1807,47238.06,37.87,6369.6
-2025-02-18,Team,Quarterly,Europe,4593,14163.89,57.58,4899.36
-2025-06-10,Free,Annual,Middle East,431,23200.3,6.02,20865.98
-2025-01-21,Enterprise,Monthly,North America,859,4661.05,59.11,7306.41
-2025-04-26,Team,Quarterly,Africa,77,13497.54,26.85,22890.42
-2024-10-14,Free,Monthly,Asia Pacific,352,37410.68,29.37,17554.4
-2024-10-06,Business,Annual,North America,275,43172.95,56.92,7660.15
-2025-03-03,Business,Monthly,Asia Pacific,4748,32357.65,23.48,2178.87
-2025-04-18,Business,Monthly,Middle East,1850,2841.54,47.12,2739.33
-2025-05-21,Free,Quarterly,North America,1370,30676.01,42.01,18013.52
-2025-04-01,Enterprise,Annual,North America,1282,4110.71,32.98,20361.36
-2024-03-05,Enterprise,Monthly,Asia Pacific,4368,45014.47,9.55,4551.33
-2024-11-03,Team,Quarterly,Latin America,4494,606.16,50.94,8737.28
-2025-05-03,Team,Monthly,Asia Pacific,3046,805.2,0.99,22456.12
-2024-09-10,Team,Annual,Africa,3283,33449.9,14.38,16300.83
-2024-05-22,Enterprise,Quarterly,Europe,3933,37518.16,43.52,22905.38
-2024-11-18,Enterprise,Annual,Europe,1484,31732.69,45.73,10406.01
-2024-04-04,Starter,Quarterly,Africa,4320,13567.59,29.66,22210.61
-2025-04-28,Free,Monthly,Africa,2605,29697.26,58.5,3254.92
-2025-03-18,Business,Annual,Middle East,3467,6854.44,40.05,18523.6
-2024-12-09,Free,Annual,North America,2456,12939.79,53.36,15273.03
-2024-02-29,Enterprise,Annual,Latin America,901,35780.79,27.51,14767.33
-2025-06-18,Starter,Quarterly,Middle East,3903,26078.14,36.9,2144.96
-2024-06-02,Free,Quarterly,Europe,2377,3797.65,13.01,18673.36
-2024-05-03,Team,Quarterly,Latin America,782,44401.06,3.39,9116.12
-2024-01-19,Free,Quarterly,Europe,3783,27470.19,57.09,22219.79
-2024-10-10,Free,Monthly,Asia Pacific,2719,22023.82,17.66,252.99
-2025-02-07,Team,Monthly,North America,2074,11913.09,9.56,8441.74
-2025-05-23,Starter,Quarterly,Asia Pacific,2458,18675.75,18.31,10021.59
-2024-04-20,Team,Quarterly,Middle East,1323,27953.91,10.45,24041.67
-2024-04-16,Starter,Monthly,Africa,204,12551.49,33.43,1793.54
-2025-05-25,Business,Quarterly,Asia Pacific,4087,7671.07,14.86,16439.78
-2025-04-10,Enterprise,Annual,Asia Pacific,287,24054.92,4.25,19439.48
-2024-09-09,Business,Quarterly,Middle East,816,39732.18,35.85,24818.89
-2025-05-24,Business,Quarterly,Asia Pacific,2491,32789.19,35.61,3137.33
-2025-03-02,Free,Monthly,Africa,2118,26671.56,12.63,468.89
-2025-02-23,Enterprise,Quarterly,North America,2527,35965.04,32.14,2765.27
-2024-01-20,Business,Quarterly,Europe,4330,40098.5,38.14,17241.4
-2024-11-06,Enterprise,Monthly,Middle East,4877,17177.08,47.04,11116.12
-2024-03-11,Business,Monthly,Africa,2120,21881.56,51.09,13837.13
+Flight Date,Carrier Name,Origin Airport,Delay Reason,Scheduled Flights,Departure Delay Minutes,Cancelled Flights,Passengers Carried
+2024-12-26,JetBlue Airways,DEN,Security,155,423.98,38,48655
+2024-03-07,United Airlines,SEA,Late Aircraft,322,463.7,66,52999
+2025-03-18,Southwest Airlines,DEN,Security,106,140.22,98,45005
+2024-05-19,American Airlines,DEN,National Aviation System,428,769.96,114,49554
+2024-12-25,Southwest Airlines,SFO,National Aviation System,436,1321.42,41,36819
+2024-08-07,Delta Air Lines,DFW,Security,201,1318.74,60,19564
+2024-02-17,United Airlines,DFW,Weather,7,829.63,65,67258
+2025-06-07,American Airlines,ATL,Weather,407,1031.3,83,46398
+2024-10-15,Southwest Airlines,DFW,Carrier,7,856.67,94,89384
+2024-03-28,Delta Air Lines,SFO,Weather,64,478.35,35,45182
+2025-06-20,JetBlue Airways,ATL,Security,388,294.77,90,6905
+2025-04-07,Alaska Airlines,DEN,Security,410,1369.71,50,45110
+2024-01-10,American Airlines,ATL,Carrier,386,75.76,19,75276
+2024-03-29,Alaska Airlines,ORD,None,117,491.49,53,87203
+2024-02-24,Delta Air Lines,DFW,None,435,23.2,90,35933
+2024-07-01,JetBlue Airways,ORD,National Aviation System,319,454.61,64,68527
+2024-08-05,JetBlue Airways,SEA,Carrier,128,842.41,56,86475
+2024-12-31,Alaska Airlines,JFK,Weather,56,-8.84,3,81032
+2025-01-31,Southwest Airlines,ATL,None,81,12.44,100,79834
+2024-11-28,Alaska Airlines,LAX,National Aviation System,29,241.95,61,63012
+2024-08-26,American Airlines,ORD,Late Aircraft,385,1421.4,37,71920
+2025-05-30,Delta Air Lines,DEN,Carrier,364,112.82,98,52678
+2024-07-21,American Airlines,ORD,None,396,199.09,45,56552
+2024-08-10,Southwest Airlines,ORD,Security,445,1325.61,96,54230
+2024-08-04,American Airlines,DEN,Late Aircraft,298,1249.05,3,72934
+2025-05-22,United Airlines,ATL,Late Aircraft,16,732.2,107,81697
+2025-06-17,Delta Air Lines,SFO,Security,106,476.15,42,18128
+2025-05-15,Delta Air Lines,DFW,National Aviation System,68,548.68,85,87264
+2024-11-12,JetBlue Airways,ORD,Late Aircraft,263,93.09,31,81547
+2025-01-21,American Airlines,ATL,Late Aircraft,215,627.48,31,19813
+2024-08-10,Southwest Airlines,DEN,National Aviation System,420,368.43,41,56767
+2024-01-11,Alaska Airlines,ATL,Weather,177,85.67,26,24646
+2024-11-15,Alaska Airlines,DEN,Carrier,28,175.2,4,3699
+2025-03-06,Southwest Airlines,SFO,Late Aircraft,12,1145.37,45,78745
+2024-02-28,Alaska Airlines,SFO,National Aviation System,365,1251.88,2,37465
+2025-05-01,JetBlue Airways,ORD,Late Aircraft,286,507.2,14,57565
+2024-10-20,JetBlue Airways,SEA,Carrier,87,1098.09,86,53292
+2024-10-09,Alaska Airlines,SFO,Late Aircraft,408,1254.09,77,75503
+2025-04-05,Southwest Airlines,DFW,National Aviation System,252,1202.81,41,2920
+2024-04-16,Delta Air Lines,DFW,Late Aircraft,274,65.47,9,13469
+2025-06-07,JetBlue Airways,ORD,Late Aircraft,414,373.39,102,13425
+2024-04-07,Alaska Airlines,DEN,None,24,1011.96,80,45261
+2025-02-04,United Airlines,SEA,Security,380,473.72,2,48165
+2025-04-01,United Airlines,SFO,Carrier,440,793.51,25,47409
+2024-12-18,United Airlines,DEN,None,125,1303.82,87,69247
+2024-02-17,United Airlines,LAX,National Aviation System,244,-24.56,24,76176
+2025-01-08,Delta Air Lines,SEA,Security,191,1374.27,30,49438
+2024-10-21,Alaska Airlines,DEN,Security,32,737.7,13,76333
+2025-06-19,United Airlines,LAX,Late Aircraft,227,1380.3,48,78244
+2024-04-19,Delta Air Lines,DFW,National Aviation System,403,790.22,81,3195
+2024-04-28,Southwest Airlines,SEA,None,71,781.11,97,61954
+2024-06-11,Alaska Airlines,ATL,National Aviation System,97,1081.98,77,69578
+2025-03-28,Delta Air Lines,SFO,Security,246,1035.99,17,76717
+2025-06-11,American Airlines,JFK,None,21,274.48,104,24450
+2025-06-06,JetBlue Airways,DEN,None,111,1132.99,28,55481
+2024-05-29,Southwest Airlines,SFO,Carrier,204,463.74,117,47304
+2025-01-20,United Airlines,DEN,Carrier,346,1067.56,102,47954
+2025-01-04,Southwest Airlines,DFW,None,127,242.36,6,89283
+2024-06-20,Alaska Airlines,DFW,Security,74,1011.2,82,69492
+2025-02-18,Delta Air Lines,DFW,None,34,716.0,1,86988
+2024-12-20,United Airlines,LAX,National Aviation System,383,239.68,35,32800
+2024-06-04,Southwest Airlines,SFO,Carrier,347,785.53,72,14854
+2024-07-05,United Airlines,DFW,Carrier,103,120.23,99,26139
+2024-03-20,Alaska Airlines,ATL,National Aviation System,181,540.53,41,82505
+2024-08-03,American Airlines,ORD,None,191,940.83,91,71234
+2025-02-20,United Airlines,ATL,Late Aircraft,351,328.23,35,75937
+2024-11-12,JetBlue Airways,SEA,Weather,162,1287.04,108,16366
+2024-09-01,American Airlines,SFO,National Aviation System,99,1052.46,22,41560
+2025-03-26,JetBlue Airways,ATL,Weather,416,62.39,23,61346
+2024-06-04,United Airlines,DEN,Security,233,689.71,17,82096
+2024-04-11,United Airlines,DFW,Carrier,225,1116.14,90,13188
+2024-04-24,American Airlines,DFW,National Aviation System,340,108.09,119,3880
+2024-08-24,Delta Air Lines,DFW,Weather,206,292.99,50,54755
+2025-06-15,Southwest Airlines,DFW,None,317,440.83,80,59221
+2024-10-25,American Airlines,LAX,Security,83,500.18,101,27056
+2024-12-15,JetBlue Airways,DFW,National Aviation System,140,-4.66,118,27221
+2025-03-30,Southwest Airlines,JFK,Weather,214,551.97,22,7617
+2024-10-09,American Airlines,JFK,National Aviation System,286,718.59,100,76376
+2024-11-04,JetBlue Airways,ATL,National Aviation System,310,449.86,5,55181
+2024-03-02,JetBlue Airways,ATL,National Aviation System,38,350.08,60,83840
+2024-06-07,Delta Air Lines,SFO,Weather,51,181.68,93,60781
+2025-05-07,JetBlue Airways,SFO,Security,417,1109.19,86,22969
+2025-02-04,American Airlines,DEN,Late Aircraft,377,1058.29,29,13294
+2024-06-28,United Airlines,SEA,None,55,1228.04,71,54837
+2024-11-19,Southwest Airlines,ORD,None,130,301.61,12,66042
+2025-03-03,American Airlines,SFO,Security,86,786.72,17,34114
+2024-01-29,Southwest Airlines,ATL,None,270,942.9,38,63398
+2025-05-03,Delta Air Lines,ORD,Carrier,127,662.09,0,57536
+2024-05-27,American Airlines,DFW,Carrier,252,808.01,115,2065
+2024-04-21,United Airlines,SFO,Security,40,568.54,98,89518
+2025-05-02,Delta Air Lines,ATL,Weather,14,91.01,37,87493
+2025-06-12,JetBlue Airways,SFO,Carrier,97,1231.41,108,36427
+2024-03-31,Alaska Airlines,JFK,Security,218,939.34,65,27878
+2025-04-27,American Airlines,ATL,Weather,300,396.13,9,55203
+2024-10-23,JetBlue Airways,LAX,None,353,122.84,48,2227
+2024-11-01,JetBlue Airways,LAX,None,154,1065.87,44,44195
+2024-09-11,Alaska Airlines,DFW,National Aviation System,184,564.55,80,49373
+2025-01-26,American Airlines,ORD,Carrier,276,425.27,107,76317
+2024-11-15,Alaska Airlines,JFK,Security,426,822.16,69,73282
+2024-05-29,Southwest Airlines,JFK,None,3,589.3,68,53187
+2024-03-11,JetBlue Airways,SEA,None,148,868.99,11,12941
+2025-01-25,Delta Air Lines,ORD,Carrier,327,1407.19,2,26066
+2024-07-15,JetBlue Airways,SEA,Carrier,409,226.69,39,30198
+2024-08-20,JetBlue Airways,ATL,Weather,395,1400.32,2,8276
+2025-06-06,United Airlines,ATL,National Aviation System,168,964.79,45,30859
+2024-06-24,American Airlines,DFW,National Aviation System,15,397.62,35,12511
+2024-02-18,Delta Air Lines,DEN,Weather,2,1308.28,56,29598
+2025-01-11,Alaska Airlines,DFW,Late Aircraft,71,981.75,21,11875
+2025-03-13,Southwest Airlines,SFO,Carrier,13,113.34,40,41102
+2024-07-25,JetBlue Airways,LAX,None,8,1404.63,5,60733
+2025-04-13,JetBlue Airways,LAX,Weather,79,1277.64,4,63783
+2025-01-15,Alaska Airlines,LAX,Late Aircraft,190,1184.43,84,83834
+2024-05-03,Alaska Airlines,SFO,Carrier,248,1180.04,32,69761
+2025-04-04,Southwest Airlines,SFO,Weather,398,504.84,21,19831
+2024-10-03,JetBlue Airways,JFK,Carrier,214,168.41,41,56960
+2024-05-26,Delta Air Lines,DFW,None,309,976.85,109,76151
+2024-12-29,Southwest Airlines,ATL,Carrier,361,947.87,24,31701
+2024-04-21,JetBlue Airways,ATL,National Aviation System,146,265.91,48,47576
+2024-07-04,JetBlue Airways,SFO,Late Aircraft,325,711.36,36,7144
+2024-06-21,Southwest Airlines,JFK,Carrier,312,715.1,22,55414
+2024-05-02,JetBlue Airways,ATL,National Aviation System,44,1088.62,97,13693
+2024-08-16,American Airlines,DFW,National Aviation System,365,649.89,32,74575
+2025-06-17,American Airlines,LAX,National Aviation System,173,1114.09,45,48684
+2025-01-28,Delta Air Lines,DEN,Carrier,99,662.99,95,28599
+2024-12-21,JetBlue Airways,ATL,Security,71,1100.4,87,33108
+2024-08-24,Delta Air Lines,ORD,National Aviation System,421,-8.8,15,6908
+2024-12-14,Delta Air Lines,SFO,None,127,1401.14,88,3672
+2025-01-09,JetBlue Airways,ORD,Security,349,210.43,120,12651
+2024-04-07,Delta Air Lines,ORD,National Aviation System,371,151.48,31,10288
+2025-06-21,Alaska Airlines,DEN,Weather,421,968.96,13,79636
+2024-03-24,United Airlines,SEA,Late Aircraft,274,698.34,18,47037
+2024-05-06,Delta Air Lines,SFO,Carrier,82,533.11,23,27908
+2024-07-25,Southwest Airlines,DFW,National Aviation System,46,843.08,104,25769
+2025-02-13,United Airlines,ATL,None,33,6.69,68,3980
+2024-03-25,JetBlue Airways,SFO,None,326,582.82,8,54583
+2024-09-14,Southwest Airlines,DEN,Security,360,1430.07,7,69316
+2025-05-13,Alaska Airlines,SEA,Weather,355,1020.53,92,89111
+2024-08-13,Alaska Airlines,ATL,National Aviation System,58,630.48,110,46107
+2025-04-22,United Airlines,ORD,Security,192,715.77,89,7132
+2024-11-20,Alaska Airlines,DFW,Late Aircraft,16,1432.35,18,35348
+2025-03-12,JetBlue Airways,SEA,National Aviation System,146,1256.48,76,88282
+2024-03-04,United Airlines,SFO,National Aviation System,191,532.97,104,21617
+2024-08-01,Southwest Airlines,LAX,Carrier,154,998.75,106,16963
+2024-06-19,Delta Air Lines,SFO,Late Aircraft,389,904.44,86,80090
+2024-08-12,Alaska Airlines,DFW,Security,446,167.24,67,79988
+2024-05-27,Delta Air Lines,DFW,Security,184,1315.65,6,32323
+2024-07-29,United Airlines,SEA,None,157,231.91,115,86439
+2024-11-25,Southwest Airlines,SEA,Weather,388,360.51,114,63948
+2024-09-10,American Airlines,JFK,None,15,312.11,66,54868
+2024-05-01,Southwest Airlines,LAX,Late Aircraft,356,1035.38,45,59964
+2024-05-14,JetBlue Airways,DEN,None,41,48.55,46,5590
+2024-01-26,American Airlines,LAX,National Aviation System,102,41.2,32,83182
+2024-01-01,American Airlines,SEA,Weather,393,404.66,85,28103
+2024-01-22,Alaska Airlines,SEA,Security,81,809.41,45,39366
+2024-05-26,Alaska Airlines,ATL,Late Aircraft,199,546.89,16,47945
+2025-02-22,Southwest Airlines,JFK,Security,174,10.38,41,23542
+2025-06-04,American Airlines,ATL,Weather,84,124.03,75,14978
+2025-01-04,JetBlue Airways,DEN,Security,198,150.71,94,75762
+2024-04-16,Alaska Airlines,DFW,None,288,45.87,49,67337
+2025-04-03,United Airlines,DEN,Late Aircraft,306,403.81,55,82876
+2024-03-22,United Airlines,ATL,National Aviation System,4,22.99,71,24703
+2024-12-31,United Airlines,SEA,Carrier,144,85.29,30,86931
+2024-02-24,Delta Air Lines,DFW,National Aviation System,334,580.74,73,69274
+2024-01-29,United Airlines,DEN,Carrier,136,809.46,30,68890
+2024-07-01,Delta Air Lines,DFW,None,351,1383.6,79,65210
+2025-01-13,Delta Air Lines,ORD,Carrier,152,848.6,97,7948
+2024-11-22,American Airlines,SFO,None,329,987.52,41,75928
+2024-10-22,Alaska Airlines,DEN,National Aviation System,92,1141.59,110,19450
+2024-03-25,Alaska Airlines,SFO,Carrier,435,161.82,118,39425
+2025-06-03,Alaska Airlines,ORD,Carrier,227,610.94,74,50191
+2025-04-08,Southwest Airlines,LAX,Weather,400,444.4,8,86384
+2024-05-04,Southwest Airlines,LAX,Late Aircraft,72,347.94,54,115
+2025-03-12,Southwest Airlines,SEA,Security,343,109.04,49,8885
+2024-02-12,United Airlines,SFO,National Aviation System,183,870.59,63,46766
+2024-04-17,Delta Air Lines,SEA,Late Aircraft,169,633.04,25,21962
+2025-03-25,Delta Air Lines,ATL,National Aviation System,332,530.5,105,76499
+2025-02-16,JetBlue Airways,DFW,Late Aircraft,246,1370.2,15,67668
+2024-08-16,American Airlines,ORD,Carrier,419,713.94,65,58844
+2024-07-06,Delta Air Lines,SFO,Late Aircraft,36,645.06,97,85400
+2024-09-10,JetBlue Airways,JFK,National Aviation System,6,1305.86,26,77018
+2025-03-03,Southwest Airlines,ATL,Carrier,83,1354.05,35,56538
+2025-01-22,American Airlines,ORD,None,322,246.97,82,8842
+2024-10-31,JetBlue Airways,DFW,Late Aircraft,204,320.89,51,12475
+2024-04-08,Southwest Airlines,ORD,Security,323,636.52,77,52338
+2024-02-13,JetBlue Airways,JFK,National Aviation System,429,506.07,41,4677
+2024-08-31,JetBlue Airways,LAX,Carrier,223,7.3,112,84848
+2024-10-17,Southwest Airlines,LAX,Late Aircraft,319,1200.58,113,76324
+2025-03-09,American Airlines,DEN,Security,56,1023.42,25,26658
+2024-10-26,Delta Air Lines,SFO,Late Aircraft,364,696.3,71,80417
+2024-11-16,Southwest Airlines,ATL,Late Aircraft,92,836.81,82,55785
+2024-04-28,American Airlines,ORD,National Aviation System,430,269.17,12,47718
+2025-05-02,Southwest Airlines,ORD,Security,404,801.65,48,53346
+2024-06-28,American Airlines,SFO,National Aviation System,345,348.43,111,88020
+2025-04-12,American Airlines,SFO,National Aviation System,107,1325.61,78,46082
+2025-01-04,Southwest Airlines,DFW,Carrier,401,289.3,68,1721
+2024-05-27,JetBlue Airways,DEN,Late Aircraft,313,475.27,98,42269
+2024-09-27,Delta Air Lines,SEA,None,276,1019.96,39,14398
+2025-03-05,Delta Air Lines,DFW,None,55,340.91,91,78195
+2024-03-07,Delta Air Lines,DEN,Late Aircraft,340,1252.32,29,77680
+2024-12-09,United Airlines,DFW,National Aviation System,380,379.69,56,1149
+2024-06-01,JetBlue Airways,ORD,National Aviation System,265,1191.97,112,59406
+2024-03-06,Delta Air Lines,JFK,Carrier,109,1362.37,25,24827
+2024-09-15,American Airlines,ATL,Weather,53,234.7,92,86292
+2024-05-22,American Airlines,JFK,Late Aircraft,328,678.64,31,16349
+2024-03-09,Delta Air Lines,ORD,Carrier,43,177.29,83,15311
+2025-02-11,JetBlue Airways,JFK,Security,317,154.53,55,72161
+2025-01-16,JetBlue Airways,SEA,None,304,63.37,39,87438
+2025-04-01,JetBlue Airways,JFK,Security,2,1048.84,12,33339
+2024-12-25,Delta Air Lines,ORD,None,228,374.95,76,71099
+2024-03-24,JetBlue Airways,DEN,Weather,238,534.61,54,7446
+2025-02-02,JetBlue Airways,DFW,Weather,223,585.87,0,44049
+2025-01-15,United Airlines,DEN,Security,92,768.0,14,68814
+2024-07-24,Southwest Airlines,ORD,Late Aircraft,60,531.05,33,56966
+2024-06-24,Delta Air Lines,DFW,Security,291,1227.63,52,56489
+2025-05-06,Alaska Airlines,JFK,Weather,316,917.96,15,76648
+2024-04-09,JetBlue Airways,ORD,None,190,214.74,51,4720
+2024-03-08,Alaska Airlines,SEA,Weather,18,275.5,46,9238
+2024-02-23,United Airlines,SEA,Weather,387,558.12,95,65055
+2025-06-09,Delta Air Lines,DFW,National Aviation System,92,669.17,97,30458
+2024-02-23,JetBlue Airways,ATL,Carrier,88,644.83,57,1975
+2024-06-25,United Airlines,DFW,Late Aircraft,216,1147.36,63,28849
+2024-09-06,American Airlines,JFK,Carrier,424,536.72,19,52188
+2025-03-09,United Airlines,DEN,Late Aircraft,120,1141.75,24,67529
+2024-03-03,United Airlines,ORD,Carrier,143,65.54,71,27824
+2024-07-10,JetBlue Airways,DEN,Weather,204,75.92,77,21288
+2024-11-23,Alaska Airlines,DEN,Weather,308,1254.04,54,81509
+2024-12-14,American Airlines,JFK,None,387,614.44,16,6280
+2025-03-21,Delta Air Lines,SEA,National Aviation System,48,54.21,51,74844
+2024-02-01,United Airlines,SEA,National Aviation System,318,144.73,90,3467
+2024-08-16,Delta Air Lines,SEA,Weather,436,219.11,91,85951
+2025-04-23,Delta Air Lines,DFW,Carrier,331,808.43,29,86853
+2024-11-30,United Airlines,ORD,Late Aircraft,140,814.4,59,62186
+2025-05-12,Delta Air Lines,DEN,Weather,57,534.58,21,87558
+2025-03-27,United Airlines,ATL,Weather,70,139.7,15,13082
+2025-06-04,United Airlines,ATL,Carrier,94,-4.51,46,43663
+2025-03-21,American Airlines,SEA,National Aviation System,150,1303.7,87,79561
+2024-09-27,JetBlue Airways,DEN,Carrier,417,613.82,71,82013
+2024-06-18,United Airlines,JFK,None,17,821.35,37,5738
+2024-07-25,Southwest Airlines,DFW,Carrier,338,991.67,106,81068
+2024-11-01,Delta Air Lines,SFO,Late Aircraft,93,598.33,109,74044

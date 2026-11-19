@@ -1,241 +1,241 @@
-SNAPSHOT_DT,DEPT_NM,EMP_TYPE_CD,REGION_NM,HDCNT_ACTIVE_QTY,ATTRITION_QTY,HIRE_QTY,AVG_TENURE_MO_QTY
-2024-04-04,Sales,CONTRACT,Asia Pacific,3337,206,223,159.81
-2024-01-26,Engineering,FULL_TIME,North America,2454,268,274,144.85
-2024-11-16,Engineering,FULL_TIME,North America,2246,131,29,68.78
-2024-10-06,Marketing,FULL_TIME,North America,2658,285,213,77.93
-2024-06-13,Engineering,PART_TIME,Middle East,2965,87,357,190.75
-2024-07-21,Legal,FULL_TIME,Middle East,3327,266,266,239.26
-2025-05-17,Legal,CONTRACT,Middle East,2492,158,113,108.08
-2024-05-03,Finance,FULL_TIME,Middle East,4279,280,325,101.37
-2025-04-30,Operations,CONTRACT,Africa,4845,191,116,38.21
-2025-05-23,Operations,PART_TIME,Eastern Europe,4577,260,119,158.98
-2024-08-08,Legal,CONTRACT,Eastern Europe,3431,6,31,148.96
-2024-11-17,Marketing,FULL_TIME,North America,2459,218,3,56.49
-2024-03-18,Finance,TEMPORARY,Africa,318,125,97,180.65
-2024-05-30,Legal,PART_TIME,Asia Pacific,125,46,22,208.77
-2024-12-01,Legal,CONTRACT,Asia Pacific,3873,255,146,143.62
-2024-01-24,Human Resources,PART_TIME,Western Europe,4422,146,223,33.72
-2025-03-05,Customer Support,PART_TIME,Africa,1304,145,208,180.49
-2024-03-18,Sales,TEMPORARY,Asia Pacific,3802,236,396,80.66
-2024-11-05,Customer Support,PART_TIME,Africa,3096,15,122,154.48
-2024-01-06,Finance,INTERN,Western Europe,1072,299,317,130.9
-2024-02-13,Finance,PART_TIME,Asia Pacific,1177,63,152,197.92
-2024-06-19,Legal,FULL_TIME,Eastern Europe,1505,10,322,151.11
-2025-02-16,Finance,CONTRACT,Africa,4385,262,63,206.97
-2024-01-14,Human Resources,FULL_TIME,Asia Pacific,3023,2,195,93.42
-2024-05-12,Engineering,FULL_TIME,North America,4344,53,216,80.54
-2025-05-24,Operations,FULL_TIME,Africa,4484,230,193,126.48
-2025-05-08,Operations,FULL_TIME,Eastern Europe,1255,241,384,40.67
-2024-09-24,Finance,TEMPORARY,North America,2768,241,84,116.98
-2024-12-07,Engineering,PART_TIME,Middle East,3485,117,356,2.11
-2024-07-21,Marketing,PART_TIME,Africa,1849,112,224,112.56
-2024-07-17,Engineering,PART_TIME,Latin America,2187,180,44,91.83
-2025-04-07,Human Resources,PART_TIME,Asia Pacific,2904,241,64,148.5
-2025-01-24,Sales,TEMPORARY,Africa,3299,182,148,55.48
-2024-12-05,Engineering,INTERN,Africa,474,65,214,16.91
-2024-09-24,Human Resources,TEMPORARY,North America,3423,187,139,72.31
-2024-09-18,Operations,FULL_TIME,Latin America,2662,149,126,115.99
-2024-05-17,Marketing,PART_TIME,Asia Pacific,1600,264,157,106.2
-2025-05-05,Finance,CONTRACT,Africa,4737,298,390,100.96
-2025-05-16,Engineering,TEMPORARY,Middle East,3083,287,292,199.86
-2024-07-15,Finance,TEMPORARY,Asia Pacific,4868,242,136,178.77
-2024-06-07,Customer Support,INTERN,Middle East,4,219,172,197.89
-2024-10-26,Operations,TEMPORARY,Middle East,3793,287,387,153.25
-2024-04-14,Sales,INTERN,Africa,630,4,138,239.36
-2025-06-23,Finance,TEMPORARY,Asia Pacific,268,163,34,53.12
-2024-05-23,Human Resources,PART_TIME,Africa,4737,187,74,63.46
-2024-03-29,Marketing,PART_TIME,Latin America,3377,74,100,218.62
-2024-06-16,Engineering,CONTRACT,Western Europe,4703,140,180,72.02
-2024-10-16,Engineering,INTERN,Western Europe,1928,178,73,193.06
-2024-02-23,Finance,PART_TIME,Asia Pacific,2347,40,70,225.52
-2024-08-30,Operations,TEMPORARY,Eastern Europe,4970,73,381,159.53
-2025-02-03,Sales,PART_TIME,Eastern Europe,2620,99,89,130.92
-2024-08-24,Customer Support,PART_TIME,Latin America,2578,270,179,2.04
-2024-04-23,Engineering,FULL_TIME,Western Europe,1185,216,253,173.6
-2025-02-19,Marketing,FULL_TIME,Western Europe,3118,37,21,64.32
-2024-06-26,Customer Support,CONTRACT,Western Europe,3145,178,104,232.53
-2024-01-16,Marketing,PART_TIME,Western Europe,4781,267,71,156.95
-2024-07-27,Marketing,INTERN,Africa,1139,137,65,31.68
-2024-04-07,Operations,FULL_TIME,Asia Pacific,2032,154,233,134.42
-2024-03-01,Engineering,FULL_TIME,Asia Pacific,1125,172,38,191.38
-2025-04-10,Finance,INTERN,Eastern Europe,496,42,84,56.04
-2024-09-30,Sales,FULL_TIME,Latin America,711,118,50,110.72
-2024-03-22,Operations,INTERN,Eastern Europe,1093,283,120,82.56
-2024-01-22,Operations,TEMPORARY,Western Europe,602,26,219,147.02
-2025-06-02,Sales,TEMPORARY,Asia Pacific,2709,96,266,88.67
-2024-01-12,Operations,PART_TIME,Asia Pacific,3130,14,157,193.74
-2024-04-03,Engineering,CONTRACT,Latin America,1496,28,89,17.56
-2024-02-04,Legal,TEMPORARY,Asia Pacific,3624,35,247,185.63
-2025-02-14,Engineering,CONTRACT,Eastern Europe,2623,33,83,69.12
-2024-02-07,Sales,CONTRACT,North America,4556,31,309,52.84
-2025-06-18,Legal,INTERN,Eastern Europe,4181,203,76,131.1
-2024-09-03,Finance,FULL_TIME,Eastern Europe,449,252,51,103.33
-2024-11-27,Finance,CONTRACT,Latin America,2697,230,107,219.46
-2025-04-28,Human Resources,TEMPORARY,Africa,2238,178,226,37.84
-2024-02-28,Human Resources,INTERN,Latin America,2353,181,240,94.5
-2024-04-26,Sales,INTERN,Africa,1364,4,221,120.16
-2024-01-14,Finance,CONTRACT,Latin America,1051,138,64,121.46
-2024-11-19,Finance,INTERN,Asia Pacific,3688,262,29,220.2
-2025-04-02,Operations,PART_TIME,Africa,4324,118,104,49.63
-2024-03-29,Legal,CONTRACT,North America,1946,30,88,26.15
-2024-10-09,Marketing,PART_TIME,Latin America,1137,211,396,116.94
-2024-04-10,Finance,TEMPORARY,Asia Pacific,3650,216,262,165.97
-2024-08-28,Customer Support,TEMPORARY,Western Europe,1434,100,357,76.31
-2024-02-28,Operations,INTERN,North America,1480,274,10,56.13
-2025-04-07,Operations,TEMPORARY,Eastern Europe,2835,156,392,120.1
-2025-02-14,Operations,PART_TIME,North America,3884,134,346,143.57
-2024-06-10,Human Resources,FULL_TIME,North America,2766,220,121,148.2
-2024-11-15,Operations,TEMPORARY,Latin America,2499,22,79,219.68
-2025-01-06,Sales,INTERN,Latin America,3981,214,344,48.8
-2024-01-02,Marketing,FULL_TIME,Africa,3577,288,59,19.17
-2024-02-04,Marketing,INTERN,Eastern Europe,2510,106,108,221.48
-2024-05-23,Customer Support,INTERN,Latin America,4803,99,228,0.7
-2024-05-30,Engineering,PART_TIME,Eastern Europe,3080,213,392,187.06
-2024-05-15,Customer Support,CONTRACT,Asia Pacific,2265,75,160,205.93
-2024-03-05,Marketing,CONTRACT,Asia Pacific,1182,178,293,147.21
-2025-03-15,Operations,CONTRACT,Africa,3370,161,143,9.08
-2024-11-01,Marketing,CONTRACT,Africa,1586,61,194,168.38
-2024-11-22,Operations,INTERN,North America,1566,2,42,183.83
-2025-01-10,Finance,CONTRACT,Middle East,1671,195,299,115.66
-2024-02-20,Legal,FULL_TIME,Western Europe,1669,60,355,110.35
-2024-03-29,Human Resources,PART_TIME,North America,1646,243,271,159.63
-2024-01-05,Operations,FULL_TIME,North America,2994,259,7,64.49
-2024-04-18,Finance,CONTRACT,Eastern Europe,2688,289,217,223.7
-2025-06-06,Customer Support,TEMPORARY,Africa,1929,33,16,3.94
-2025-04-27,Engineering,CONTRACT,Middle East,3038,83,202,31.66
-2024-03-08,Legal,FULL_TIME,Asia Pacific,3329,296,398,158.28
-2024-03-10,Finance,FULL_TIME,Middle East,557,112,175,143.63
-2025-04-28,Customer Support,TEMPORARY,Middle East,966,246,20,239.11
-2024-10-24,Customer Support,PART_TIME,Western Europe,4366,161,386,43.79
-2024-10-27,Human Resources,TEMPORARY,Asia Pacific,419,160,389,214.18
-2024-01-02,Sales,PART_TIME,Latin America,1001,85,3,17.83
-2024-04-16,Marketing,FULL_TIME,Latin America,309,81,115,126.7
-2024-01-02,Engineering,TEMPORARY,Latin America,2814,36,152,153.17
-2024-08-10,Legal,INTERN,Middle East,2107,241,354,49.99
-2025-04-26,Engineering,CONTRACT,Latin America,4425,56,372,144.08
-2024-07-14,Finance,TEMPORARY,Western Europe,583,83,279,236.85
-2024-01-06,Customer Support,PART_TIME,North America,4591,189,140,186.84
-2025-05-23,Marketing,PART_TIME,Eastern Europe,4159,299,259,239.98
-2024-08-29,Legal,INTERN,Africa,4978,139,129,225.58
-2024-11-17,Legal,CONTRACT,Asia Pacific,4228,177,336,227.91
-2025-05-17,Customer Support,CONTRACT,Asia Pacific,4363,85,165,4.56
-2024-09-07,Marketing,INTERN,Eastern Europe,693,65,80,129.05
-2025-02-02,Legal,INTERN,North America,2838,96,386,15.85
-2024-05-12,Human Resources,PART_TIME,Eastern Europe,1618,188,382,114.17
-2024-05-26,Legal,INTERN,Africa,4639,24,164,187.1
-2024-04-27,Legal,CONTRACT,Asia Pacific,1573,14,12,22.48
-2025-03-05,Finance,INTERN,Africa,1644,145,384,59.54
-2024-01-18,Finance,PART_TIME,Eastern Europe,1150,87,132,20.69
-2025-05-02,Engineering,TEMPORARY,Middle East,4674,21,41,93.84
-2024-06-09,Legal,INTERN,Middle East,2704,131,227,88.1
-2024-05-08,Human Resources,PART_TIME,Middle East,2094,2,180,81.21
-2025-05-29,Human Resources,PART_TIME,Africa,3727,22,92,59.19
-2025-02-02,Human Resources,FULL_TIME,Africa,4307,107,163,158.76
-2025-01-25,Engineering,INTERN,Western Europe,3398,194,286,144.33
-2024-04-25,Legal,INTERN,Western Europe,1831,275,321,171.94
-2024-03-15,Customer Support,CONTRACT,Middle East,1308,80,383,153.01
-2024-09-28,Marketing,FULL_TIME,Middle East,3125,172,19,44.84
-2024-06-06,Legal,CONTRACT,Western Europe,3418,292,382,136.92
-2025-02-01,Legal,CONTRACT,North America,1922,50,219,67.88
-2025-04-16,Legal,CONTRACT,Eastern Europe,2864,281,296,171.18
-2025-03-18,Human Resources,INTERN,Middle East,2471,285,212,214.54
-2024-06-23,Legal,TEMPORARY,North America,2617,189,17,82.53
-2025-06-06,Human Resources,CONTRACT,Western Europe,308,25,148,16.46
-2025-06-13,Legal,CONTRACT,Latin America,3197,32,163,34.26
-2024-10-16,Operations,FULL_TIME,Africa,4806,122,157,185.74
-2025-02-28,Marketing,CONTRACT,Asia Pacific,4472,114,50,216.24
-2024-07-10,Sales,FULL_TIME,Asia Pacific,535,166,6,164.89
-2024-05-15,Marketing,TEMPORARY,Eastern Europe,730,45,117,72.39
-2025-03-23,Legal,TEMPORARY,Middle East,2350,297,54,119.95
-2024-09-25,Legal,INTERN,North America,594,209,55,158.47
-2025-02-22,Human Resources,PART_TIME,Western Europe,3383,146,0,5.07
-2024-06-17,Marketing,TEMPORARY,Latin America,169,297,47,228.35
-2025-04-09,Operations,FULL_TIME,Asia Pacific,838,64,11,7.55
-2025-04-17,Marketing,INTERN,Western Europe,2180,196,386,4.67
-2024-08-10,Engineering,INTERN,Eastern Europe,2260,152,293,235.14
-2025-01-06,Legal,CONTRACT,Eastern Europe,551,213,138,179.98
-2024-07-02,Human Resources,TEMPORARY,Latin America,3287,264,340,48.67
-2025-06-09,Human Resources,TEMPORARY,Latin America,899,7,277,214.27
-2024-09-22,Marketing,CONTRACT,Middle East,1640,149,162,201.84
-2025-01-10,Legal,TEMPORARY,Asia Pacific,2914,68,6,186.16
-2024-07-01,Finance,TEMPORARY,Asia Pacific,4722,112,246,3.2
-2025-03-31,Human Resources,PART_TIME,Latin America,3442,95,214,14.38
-2024-06-21,Customer Support,PART_TIME,Middle East,1781,90,400,230.22
-2024-11-12,Engineering,TEMPORARY,North America,959,113,191,55.79
-2024-06-10,Legal,TEMPORARY,Eastern Europe,3784,215,360,228.82
-2024-03-04,Sales,CONTRACT,North America,2865,90,323,135.99
-2024-10-17,Finance,CONTRACT,Africa,4127,30,176,25.73
-2025-02-09,Sales,CONTRACT,Asia Pacific,1137,231,151,161.72
-2024-11-21,Marketing,PART_TIME,Latin America,4960,2,400,71.39
-2024-04-19,Finance,CONTRACT,Middle East,1123,87,94,172.44
-2024-11-07,Human Resources,TEMPORARY,Latin America,1025,232,336,18.29
-2024-03-01,Finance,TEMPORARY,Latin America,4507,30,148,73.57
-2024-08-18,Engineering,CONTRACT,Africa,3686,197,230,198.94
-2024-12-02,Customer Support,TEMPORARY,Eastern Europe,3033,222,26,70.8
-2024-07-24,Human Resources,PART_TIME,Asia Pacific,2223,106,132,73.99
-2025-03-28,Operations,INTERN,North America,3462,208,115,58.86
-2024-08-15,Operations,PART_TIME,Africa,307,16,246,107.61
-2024-05-17,Customer Support,CONTRACT,Asia Pacific,1463,174,314,89.64
-2024-12-13,Legal,INTERN,Latin America,450,23,227,125.66
-2025-01-26,Finance,TEMPORARY,Latin America,999,283,101,231.9
-2024-10-21,Operations,INTERN,Asia Pacific,348,65,355,175.41
-2024-09-29,Sales,TEMPORARY,Asia Pacific,1048,288,249,32.36
-2024-11-07,Customer Support,TEMPORARY,Africa,3334,42,9,72.11
-2025-05-04,Customer Support,INTERN,Asia Pacific,1571,250,229,99.95
-2024-04-14,Human Resources,CONTRACT,Latin America,3088,94,128,106.3
-2025-03-05,Engineering,FULL_TIME,Asia Pacific,4850,123,159,202.24
-2024-02-22,Legal,INTERN,Middle East,3724,263,27,198.52
-2024-02-02,Sales,TEMPORARY,Middle East,1741,278,301,129.56
-2024-05-17,Engineering,FULL_TIME,Western Europe,3368,265,193,164.55
-2025-05-02,Operations,CONTRACT,Eastern Europe,4892,268,391,59.17
-2024-10-24,Finance,CONTRACT,Western Europe,2306,46,251,104.81
-2024-05-07,Engineering,PART_TIME,Western Europe,2418,48,193,83.02
-2025-03-11,Operations,INTERN,Africa,1186,298,54,195.41
-2024-10-01,Finance,PART_TIME,North America,1678,174,326,177.79
-2025-06-11,Marketing,CONTRACT,Middle East,4797,258,300,52.29
-2024-03-31,Marketing,FULL_TIME,Latin America,2716,255,255,205.25
-2024-04-30,Marketing,INTERN,Middle East,2533,153,185,58.95
-2025-06-17,Operations,FULL_TIME,Middle East,2338,64,92,95.3
-2024-09-25,Customer Support,PART_TIME,Western Europe,908,162,327,200.58
-2024-06-05,Human Resources,INTERN,Middle East,2045,44,32,80.11
-2024-10-08,Human Resources,FULL_TIME,Africa,1021,268,171,2.44
-2025-04-19,Engineering,PART_TIME,Eastern Europe,2845,287,301,90.36
-2025-06-22,Finance,FULL_TIME,Eastern Europe,114,275,378,203.19
-2025-06-13,Finance,TEMPORARY,North America,4860,103,216,59.43
-2024-08-30,Customer Support,PART_TIME,Latin America,4824,224,120,152.16
-2025-01-15,Operations,PART_TIME,Latin America,2950,43,226,60.71
-2024-09-13,Finance,TEMPORARY,Africa,1800,25,280,22.81
-2024-07-22,Operations,CONTRACT,Latin America,1592,4,189,87.93
-2025-03-20,Customer Support,PART_TIME,Eastern Europe,4105,136,325,122.72
-2024-06-20,Finance,INTERN,Eastern Europe,3325,2,164,76.56
-2024-04-20,Legal,INTERN,Africa,3088,190,352,157.33
-2024-06-16,Customer Support,TEMPORARY,Asia Pacific,4471,231,248,191.48
-2024-02-03,Sales,PART_TIME,Latin America,46,87,13,88.8
-2025-06-15,Operations,PART_TIME,Africa,4811,190,63,202.05
-2024-01-04,Engineering,TEMPORARY,Africa,3846,206,114,16.49
-2024-02-15,Engineering,TEMPORARY,Western Europe,3585,102,311,65.06
-2024-10-17,Sales,PART_TIME,Africa,2886,102,138,201.83
-2025-06-04,Engineering,CONTRACT,Western Europe,2704,227,214,212.59
-2024-10-03,Customer Support,PART_TIME,North America,3230,262,225,154.39
-2025-02-19,Marketing,CONTRACT,Western Europe,4545,123,395,104.46
-2025-03-16,Customer Support,TEMPORARY,Eastern Europe,4973,34,83,16.92
-2025-02-28,Engineering,PART_TIME,Africa,3828,245,355,41.77
-2025-06-09,Legal,FULL_TIME,North America,1409,241,258,180.98
-2025-03-04,Engineering,PART_TIME,Middle East,1700,56,25,119.36
-2024-12-18,Sales,CONTRACT,Eastern Europe,899,83,105,68.58
-2025-06-02,Marketing,PART_TIME,Eastern Europe,260,159,346,180.32
-2024-12-05,Engineering,FULL_TIME,Asia Pacific,1235,229,10,47.28
-2024-04-25,Human Resources,CONTRACT,Eastern Europe,3783,194,256,115.25
-2025-02-04,Engineering,FULL_TIME,Asia Pacific,2433,276,68,172.14
-2024-08-17,Sales,INTERN,Western Europe,4154,172,311,1.71
-2024-08-16,Operations,FULL_TIME,Middle East,3225,101,119,116.2
-2024-09-22,Engineering,CONTRACT,Asia Pacific,2707,234,267,197.82
-2025-06-04,Marketing,CONTRACT,Africa,362,15,316,13.15
-2024-01-27,Finance,INTERN,Western Europe,824,255,250,59.86
-2024-11-26,Sales,TEMPORARY,Middle East,1375,18,293,237.39
-2025-03-26,Sales,FULL_TIME,Asia Pacific,1676,207,54,80.67
-2025-02-09,Engineering,CONTRACT,Western Europe,856,149,203,108.72
-2025-01-04,Human Resources,TEMPORARY,North America,442,179,185,232.74
-2025-03-21,Marketing,INTERN,Latin America,2646,74,391,152.96
-2025-03-25,Operations,CONTRACT,Eastern Europe,2368,224,336,27.07
-2024-03-31,Human Resources,INTERN,Western Europe,2892,232,4,145.89
+sessionStartTime,platform,gameMode,region,sessionDurationMinutes,matchesPlayed,inGamePurchaseAmount,playerRating
+2025-06-17,Android,Tournament,NorthAmerica,333.31,58,164.81,62.59
+2024-03-09,PlayStation5,Casual,LatinAmerica,49.24,38,456.65,1022.91
+2024-11-30,Android,Casual,LatinAmerica,229.44,2,397.46,1578.64
+2024-02-07,Android,Solo Campaign,NorthAmerica,475.37,23,251.71,2699.05
+2024-03-18,XboxSeriesX,Co-op,Africa,415.79,2,204.01,4384.69
+2024-03-03,PC,Ranked,Africa,197.56,55,444.31,4568.75
+2024-06-19,iOS,Ranked,AsiaPacific,361.1,56,66.66,163.45
+2024-07-19,PlayStation5,Tournament,NorthAmerica,132.5,38,323.07,2571.3
+2024-02-28,PC,Ranked,NorthAmerica,452.58,29,344.03,153.88
+2025-03-27,XboxSeriesX,Co-op,LatinAmerica,91.44,18,483.04,4389.68
+2024-12-20,Switch,Tournament,Europe,440.6,27,235.38,3314.1
+2024-09-30,PlayStation5,Tournament,Europe,409.18,32,455.26,2370.5
+2024-08-31,PlayStation5,Tournament,LatinAmerica,268.71,43,224.37,1139.05
+2025-05-25,PlayStation5,Ranked,MiddleEast,395.26,12,458.09,1704.07
+2024-12-07,Android,Solo Campaign,MiddleEast,78.73,14,43.92,1621.92
+2024-04-25,PC,Tournament,NorthAmerica,345.83,8,56.79,4929.88
+2024-08-01,PlayStation5,Co-op,Africa,268.15,35,29.75,3085.92
+2024-04-04,PC,Tournament,NorthAmerica,211.71,11,161.95,1726.37
+2025-01-05,iOS,Ranked,LatinAmerica,145.94,54,416.26,2768.78
+2025-03-12,PC,Ranked,MiddleEast,125.47,42,64.78,3329.11
+2024-09-09,XboxSeriesX,Co-op,MiddleEast,65.77,45,178.3,2361.99
+2024-10-08,XboxSeriesX,Solo Campaign,NorthAmerica,155.99,60,401.24,3590.86
+2024-04-25,PlayStation5,Co-op,LatinAmerica,399.58,23,7.56,2209.76
+2024-03-23,Switch,Co-op,LatinAmerica,462.12,60,437.06,3365.2
+2025-05-07,Switch,Solo Campaign,LatinAmerica,34.74,30,9.72,4506.74
+2024-03-13,Switch,Ranked,LatinAmerica,31.13,24,289.32,1019.53
+2024-08-15,iOS,Ranked,MiddleEast,407.65,39,330.7,2345.68
+2024-09-26,Switch,Co-op,MiddleEast,116.09,23,338.95,3339.26
+2024-12-22,PlayStation5,Co-op,AsiaPacific,199.59,13,273.38,4476.46
+2024-11-14,iOS,Ranked,AsiaPacific,133.54,13,458.24,912.5
+2025-06-13,iOS,Solo Campaign,AsiaPacific,147.67,43,286.66,2255.0
+2024-12-03,Android,Casual,LatinAmerica,23.7,32,98.87,3750.68
+2024-06-23,iOS,Solo Campaign,Africa,163.98,12,26.08,1626.43
+2025-01-22,Switch,Co-op,LatinAmerica,310.82,12,110.66,4692.08
+2024-03-15,PlayStation5,Co-op,NorthAmerica,378.07,43,193.96,1054.37
+2024-05-28,XboxSeriesX,Casual,Africa,82.03,40,233.81,395.65
+2025-02-24,iOS,Tournament,Europe,200.27,2,360.7,352.7
+2024-12-19,PC,Ranked,Europe,231.49,13,460.71,629.44
+2025-02-13,XboxSeriesX,Ranked,Africa,361.36,49,291.05,2538.15
+2024-04-05,PC,Tournament,Europe,442.36,44,450.25,482.34
+2024-05-23,XboxSeriesX,Tournament,NorthAmerica,364.44,18,216.2,2703.39
+2025-06-01,PlayStation5,Co-op,AsiaPacific,190.23,6,428.36,700.34
+2024-05-27,PC,Co-op,NorthAmerica,313.38,3,447.65,4503.09
+2025-05-27,PlayStation5,Tournament,Europe,473.54,49,20.87,87.1
+2024-11-02,Switch,Casual,NorthAmerica,268.56,44,425.88,4232.05
+2024-03-03,Android,Co-op,LatinAmerica,114.23,46,32.29,1261.65
+2024-03-25,Android,Tournament,MiddleEast,400.95,19,215.32,88.54
+2025-02-02,Switch,Tournament,LatinAmerica,210.76,40,273.25,3823.11
+2024-05-26,PlayStation5,Co-op,NorthAmerica,213.21,38,1.95,3721.12
+2024-11-17,XboxSeriesX,Tournament,AsiaPacific,419.53,50,397.36,1928.71
+2024-02-16,PC,Co-op,MiddleEast,253.79,18,275.97,2710.31
+2024-05-15,Android,Solo Campaign,AsiaPacific,32.04,20,170.17,674.01
+2025-03-01,XboxSeriesX,Casual,AsiaPacific,254.11,19,333.51,3432.37
+2025-02-14,Android,Casual,MiddleEast,180.48,49,439.9,85.89
+2025-01-16,Android,Casual,Europe,341.17,25,26.31,37.73
+2024-06-03,PC,Solo Campaign,Africa,217.2,30,284.38,4250.82
+2024-01-19,PlayStation5,Tournament,Africa,449.24,60,42.16,4010.01
+2024-09-29,Switch,Solo Campaign,NorthAmerica,172.89,20,134.53,4763.27
+2024-06-29,PlayStation5,Solo Campaign,Europe,371.45,28,255.66,3376.68
+2025-02-05,Switch,Tournament,AsiaPacific,143.88,49,161.43,426.7
+2024-06-29,PC,Ranked,Africa,153.6,23,178.47,3789.38
+2024-10-29,PlayStation5,Casual,AsiaPacific,185.41,19,159.36,518.73
+2025-01-29,PlayStation5,Co-op,MiddleEast,205.14,32,98.61,4250.81
+2024-08-09,XboxSeriesX,Co-op,NorthAmerica,84.44,7,341.13,841.95
+2024-07-26,iOS,Casual,Europe,325.79,25,413.16,4068.94
+2024-10-18,Android,Tournament,AsiaPacific,432.99,52,417.81,2321.09
+2024-02-01,Switch,Casual,Africa,188.1,12,493.58,4463.01
+2024-12-17,iOS,Co-op,LatinAmerica,127.15,15,421.08,4311.94
+2024-09-15,XboxSeriesX,Tournament,Africa,422.79,47,379.23,4651.68
+2024-10-22,PC,Co-op,AsiaPacific,54.44,19,184.83,4724.34
+2025-02-17,Switch,Ranked,NorthAmerica,81.72,57,371.26,3165.99
+2024-07-11,XboxSeriesX,Tournament,NorthAmerica,227.15,52,143.33,1082.86
+2024-09-09,XboxSeriesX,Ranked,NorthAmerica,270.83,5,239.67,2801.85
+2024-11-13,XboxSeriesX,Casual,Europe,422.96,7,61.99,468.77
+2024-06-20,PC,Solo Campaign,MiddleEast,252.2,40,27.53,2483.5
+2025-03-10,Switch,Ranked,Europe,134.71,30,154.89,1280.43
+2024-06-24,Android,Solo Campaign,Africa,383.58,25,51.38,2979.28
+2025-04-05,Switch,Casual,AsiaPacific,125.7,13,104.62,2812.01
+2024-02-16,PC,Tournament,NorthAmerica,178.07,50,224.03,903.38
+2024-02-23,Switch,Casual,AsiaPacific,112.92,42,326.32,193.63
+2025-04-16,XboxSeriesX,Ranked,AsiaPacific,289.76,19,147.48,1223.35
+2025-03-04,XboxSeriesX,Casual,MiddleEast,2.19,27,403.94,34.03
+2024-01-13,Switch,Tournament,Africa,288.77,58,28.47,3397.56
+2024-04-26,Switch,Co-op,Europe,103.63,37,327.97,4808.01
+2024-04-17,Android,Ranked,NorthAmerica,394.19,16,444.32,4917.85
+2024-05-23,Switch,Co-op,MiddleEast,39.09,5,307.92,4634.97
+2025-04-10,Android,Ranked,LatinAmerica,478.75,54,247.42,4177.71
+2025-05-18,PC,Ranked,MiddleEast,342.57,42,299.29,246.38
+2024-10-16,XboxSeriesX,Solo Campaign,NorthAmerica,153.29,5,320.6,3099.0
+2024-04-12,Android,Co-op,MiddleEast,413.92,10,269.18,772.74
+2024-01-08,Switch,Solo Campaign,Europe,278.9,38,103.55,2435.38
+2024-07-08,PC,Co-op,LatinAmerica,378.03,58,37.99,1471.52
+2025-03-06,iOS,Casual,AsiaPacific,61.86,31,375.5,604.17
+2025-03-01,Android,Solo Campaign,NorthAmerica,131.59,48,155.95,318.82
+2025-02-20,PlayStation5,Co-op,LatinAmerica,98.97,11,194.56,4395.54
+2025-01-11,Android,Co-op,MiddleEast,400.9,7,169.28,1759.87
+2024-05-26,Android,Ranked,Europe,475.13,39,360.13,1672.57
+2024-02-02,XboxSeriesX,Casual,MiddleEast,365.51,57,31.55,2266.33
+2025-05-26,PlayStation5,Solo Campaign,AsiaPacific,338.55,24,403.78,3563.12
+2025-06-22,Android,Tournament,NorthAmerica,194.32,17,398.47,4845.05
+2025-05-29,PlayStation5,Tournament,NorthAmerica,127.75,21,408.8,2955.13
+2025-01-27,Switch,Co-op,LatinAmerica,19.22,28,360.89,2930.15
+2024-02-25,PlayStation5,Solo Campaign,AsiaPacific,248.09,28,175.01,2664.21
+2024-11-02,Android,Casual,MiddleEast,79.49,10,249.52,3887.25
+2024-12-14,PlayStation5,Casual,AsiaPacific,400.37,39,253.87,2735.42
+2024-10-15,PC,Casual,MiddleEast,220.25,10,140.59,3402.09
+2024-04-30,iOS,Co-op,Africa,431.68,42,70.26,2009.18
+2024-03-23,Switch,Co-op,NorthAmerica,123.54,25,356.33,4038.31
+2024-02-26,XboxSeriesX,Solo Campaign,AsiaPacific,411.59,3,273.42,853.67
+2024-04-02,PC,Solo Campaign,Europe,316.63,25,494.36,2442.12
+2024-07-19,PlayStation5,Tournament,AsiaPacific,61.72,13,329.38,1125.51
+2024-01-28,Android,Tournament,NorthAmerica,4.52,9,416.06,3026.85
+2024-05-07,XboxSeriesX,Ranked,Africa,192.72,53,420.09,4113.37
+2024-10-02,PC,Co-op,AsiaPacific,234.5,32,122.46,1795.99
+2024-12-15,Switch,Casual,LatinAmerica,229.89,33,39.37,2844.32
+2024-08-27,iOS,Tournament,Africa,260.35,7,241.33,374.19
+2025-01-26,iOS,Co-op,MiddleEast,153.27,45,258.45,197.77
+2025-04-30,Switch,Tournament,NorthAmerica,464.32,2,215.86,4806.25
+2025-05-03,iOS,Casual,LatinAmerica,326.0,35,498.17,4023.04
+2025-05-24,iOS,Tournament,NorthAmerica,462.2,60,468.7,40.44
+2025-03-21,PC,Co-op,LatinAmerica,264.67,56,121.92,3667.74
+2024-11-07,XboxSeriesX,Tournament,MiddleEast,7.93,24,9.73,1478.32
+2025-02-02,PC,Co-op,Europe,124.23,4,170.87,46.31
+2024-10-05,iOS,Casual,Europe,282.86,27,25.72,2406.5
+2024-01-16,Android,Ranked,AsiaPacific,421.5,38,239.14,3460.4
+2025-03-23,Switch,Co-op,LatinAmerica,247.49,36,316.68,1442.38
+2024-12-25,PC,Co-op,LatinAmerica,472.19,46,400.04,614.51
+2025-04-15,Switch,Ranked,LatinAmerica,160.1,23,374.07,1351.28
+2024-05-31,PC,Casual,LatinAmerica,57.77,39,140.79,2678.8
+2024-12-03,PC,Co-op,Africa,325.76,33,203.19,1342.24
+2024-05-28,XboxSeriesX,Co-op,NorthAmerica,193.88,8,230.41,4824.35
+2024-06-27,PlayStation5,Ranked,AsiaPacific,469.56,42,255.75,4172.25
+2024-08-16,PlayStation5,Solo Campaign,MiddleEast,71.9,49,262.13,150.31
+2025-05-26,Switch,Co-op,Europe,325.08,55,409.18,3664.69
+2025-04-11,PC,Ranked,Africa,147.4,56,73.97,3209.3
+2024-02-03,PlayStation5,Casual,MiddleEast,288.58,14,379.09,2496.85
+2024-10-12,iOS,Solo Campaign,MiddleEast,387.85,59,238.33,4072.84
+2024-09-28,PC,Casual,MiddleEast,51.65,2,440.65,2634.2
+2024-07-23,Android,Tournament,MiddleEast,408.32,21,476.37,2115.74
+2025-06-23,PlayStation5,Tournament,NorthAmerica,224.05,32,84.25,3982.76
+2024-03-14,Switch,Co-op,LatinAmerica,150.91,24,481.29,3407.51
+2025-01-19,Android,Tournament,MiddleEast,74.36,41,398.62,2392.75
+2024-03-13,XboxSeriesX,Solo Campaign,Africa,272.54,52,328.46,3100.96
+2024-11-24,Switch,Tournament,LatinAmerica,249.49,18,395.76,1813.69
+2024-07-19,Switch,Casual,NorthAmerica,269.41,32,98.88,1215.34
+2024-03-22,Switch,Co-op,NorthAmerica,76.69,40,253.52,3119.31
+2024-05-10,PC,Ranked,MiddleEast,265.19,55,202.7,1648.77
+2024-02-27,Switch,Co-op,Europe,204.39,5,178.6,1258.81
+2024-03-20,Android,Solo Campaign,MiddleEast,457.67,25,494.76,3066.45
+2024-04-28,Switch,Tournament,Africa,369.45,34,175.83,358.24
+2025-05-31,Switch,Ranked,NorthAmerica,194.23,5,34.59,1397.76
+2024-05-04,PlayStation5,Ranked,AsiaPacific,205.65,13,498.15,4011.52
+2024-10-30,Android,Co-op,Europe,91.97,6,270.03,3853.93
+2024-04-11,iOS,Ranked,MiddleEast,407.66,54,331.91,2370.21
+2025-04-15,Switch,Co-op,Africa,458.61,7,349.22,2718.81
+2024-04-07,PlayStation5,Tournament,MiddleEast,417.13,32,218.5,1438.25
+2024-03-23,iOS,Co-op,AsiaPacific,82.69,35,271.27,4414.62
+2024-01-16,PlayStation5,Co-op,AsiaPacific,337.08,16,37.07,4879.08
+2024-05-25,Switch,Ranked,AsiaPacific,377.45,8,272.93,2224.38
+2024-11-24,XboxSeriesX,Ranked,Africa,178.24,46,1.48,772.5
+2025-01-26,PC,Tournament,MiddleEast,262.69,50,181.2,4830.76
+2024-03-08,iOS,Co-op,LatinAmerica,371.66,0,315.8,569.7
+2024-02-17,iOS,Casual,LatinAmerica,247.94,5,54.94,2417.87
+2025-01-27,XboxSeriesX,Tournament,AsiaPacific,104.59,8,152.11,1760.03
+2025-05-23,XboxSeriesX,Solo Campaign,MiddleEast,10.66,9,264.95,3820.63
+2024-07-02,PC,Co-op,Europe,68.7,26,453.77,2838.62
+2025-06-16,PlayStation5,Casual,LatinAmerica,313.31,49,284.42,2684.4
+2024-03-16,iOS,Casual,LatinAmerica,205.22,33,380.5,2557.39
+2024-01-23,PC,Casual,LatinAmerica,453.57,49,281.58,2658.83
+2025-06-03,iOS,Casual,MiddleEast,460.91,38,87.25,4508.07
+2024-07-27,XboxSeriesX,Solo Campaign,AsiaPacific,431.38,24,214.72,3939.7
+2025-02-19,XboxSeriesX,Tournament,NorthAmerica,351.15,41,417.26,3582.38
+2024-10-18,Android,Co-op,LatinAmerica,114.04,21,432.98,3391.94
+2024-06-26,iOS,Solo Campaign,Europe,71.18,57,410.94,4581.27
+2024-04-13,PC,Solo Campaign,NorthAmerica,36.65,26,102.57,3702.47
+2025-02-10,Switch,Ranked,Africa,459.59,40,195.83,3009.22
+2025-05-21,PC,Tournament,MiddleEast,190.74,14,1.84,1893.23
+2025-03-06,Android,Co-op,MiddleEast,459.38,16,191.16,4065.88
+2024-09-06,Android,Tournament,NorthAmerica,255.95,19,165.79,2881.63
+2024-03-25,Android,Co-op,Africa,317.86,29,376.06,3345.68
+2024-10-02,Switch,Solo Campaign,Europe,292.16,34,491.75,3328.98
+2024-05-10,iOS,Tournament,Europe,424.74,18,335.94,3589.88
+2024-05-21,iOS,Tournament,AsiaPacific,10.33,25,294.72,55.95
+2024-10-30,iOS,Tournament,Africa,322.08,53,123.07,1077.34
+2024-04-07,PC,Tournament,NorthAmerica,35.46,39,414.65,2722.45
+2025-03-27,Android,Casual,AsiaPacific,430.31,16,30.07,4491.06
+2024-04-05,Android,Ranked,Africa,135.54,42,456.37,1150.48
+2024-08-08,Android,Tournament,NorthAmerica,408.62,46,330.77,4433.84
+2024-04-18,Android,Co-op,AsiaPacific,367.13,9,12.94,3313.13
+2025-05-20,XboxSeriesX,Tournament,AsiaPacific,127.16,32,148.77,3314.81
+2024-06-29,PlayStation5,Casual,Africa,95.85,25,136.26,3162.91
+2024-09-13,Switch,Solo Campaign,Europe,250.07,4,373.57,1387.54
+2024-04-02,Android,Casual,NorthAmerica,134.42,37,465.07,1196.17
+2025-03-15,PlayStation5,Ranked,AsiaPacific,444.28,40,434.23,811.59
+2024-02-05,XboxSeriesX,Solo Campaign,MiddleEast,49.68,54,227.44,1562.97
+2024-06-06,PC,Solo Campaign,Africa,180.59,32,8.63,519.25
+2024-10-09,PC,Tournament,LatinAmerica,224.19,17,347.05,2027.42
+2024-08-02,XboxSeriesX,Ranked,NorthAmerica,166.35,40,376.73,251.42
+2024-12-16,PlayStation5,Ranked,MiddleEast,397.63,22,62.19,4502.36
+2024-09-08,iOS,Casual,NorthAmerica,168.58,33,362.3,4282.94
+2025-04-26,Switch,Co-op,NorthAmerica,207.89,53,458.88,3066.56
+2024-11-22,PlayStation5,Co-op,Africa,227.2,57,303.46,2740.9
+2025-04-10,XboxSeriesX,Tournament,Africa,135.96,60,400.54,2352.05
+2025-03-06,XboxSeriesX,Tournament,NorthAmerica,291.42,14,52.14,3430.5
+2025-03-18,Android,Co-op,AsiaPacific,65.77,11,193.68,480.97
+2025-02-20,Android,Solo Campaign,AsiaPacific,370.25,0,482.44,49.69
+2024-12-26,XboxSeriesX,Tournament,AsiaPacific,310.29,44,126.61,4011.44
+2024-01-01,XboxSeriesX,Casual,NorthAmerica,76.79,49,477.13,3364.18
+2024-04-08,Android,Co-op,Europe,70.98,5,358.12,406.79
+2024-12-23,PC,Co-op,NorthAmerica,7.64,37,110.17,1379.59
+2024-12-28,iOS,Casual,Africa,420.24,4,170.49,2538.97
+2024-07-04,Switch,Co-op,LatinAmerica,424.35,25,243.98,1392.65
+2024-08-24,PC,Tournament,AsiaPacific,108.28,3,142.97,2536.39
+2024-03-19,PlayStation5,Co-op,AsiaPacific,367.4,40,313.38,2964.11
+2024-07-24,Android,Co-op,AsiaPacific,315.84,16,292.0,946.14
+2024-04-30,XboxSeriesX,Tournament,AsiaPacific,426.73,16,82.88,3972.29
+2024-11-30,XboxSeriesX,Co-op,AsiaPacific,479.7,13,192.72,1280.41
+2025-04-22,XboxSeriesX,Tournament,NorthAmerica,191.06,53,356.9,3540.21
+2024-06-18,PlayStation5,Solo Campaign,AsiaPacific,10.98,8,150.7,1062.54
+2025-05-21,Android,Casual,AsiaPacific,90.71,1,258.06,965.14
+2024-09-28,PC,Ranked,NorthAmerica,241.94,15,406.47,3786.57
+2024-03-15,iOS,Ranked,NorthAmerica,443.89,2,493.29,2008.93
+2024-04-07,Android,Solo Campaign,Europe,189.74,17,447.91,239.34
+2024-09-29,Switch,Tournament,AsiaPacific,335.37,44,273.5,1681.82
+2024-06-29,PlayStation5,Solo Campaign,Europe,42.63,12,480.17,2898.99
+2024-12-03,Switch,Solo Campaign,LatinAmerica,366.13,40,129.85,54.14
+2024-08-07,Switch,Tournament,NorthAmerica,81.87,28,458.89,770.98
+2024-04-26,PC,Casual,LatinAmerica,257.25,46,91.04,2157.49
+2024-08-25,Android,Tournament,LatinAmerica,90.62,1,138.84,94.79
+2024-03-18,PC,Co-op,MiddleEast,289.03,6,478.9,2131.64
+2024-11-21,iOS,Ranked,LatinAmerica,113.65,14,304.45,4760.48
+2025-01-17,Android,Tournament,Africa,146.63,28,458.65,3738.33
+2024-08-22,Switch,Solo Campaign,MiddleEast,142.42,48,111.56,3184.25
+2024-08-07,PC,Co-op,Africa,396.06,7,11.41,3393.52
+2024-04-01,XboxSeriesX,Solo Campaign,NorthAmerica,373.36,11,489.56,2522.53
+2024-11-06,XboxSeriesX,Solo Campaign,Africa,138.91,18,387.71,3936.41
+2025-04-09,Android,Solo Campaign,MiddleEast,416.88,26,342.28,3031.37
+2024-06-06,PlayStation5,Ranked,LatinAmerica,340.9,44,122.42,69.13
+2025-02-26,iOS,Co-op,MiddleEast,103.07,39,181.32,4343.92
+2024-04-16,Switch,Solo Campaign,MiddleEast,406.45,5,251.18,4203.37

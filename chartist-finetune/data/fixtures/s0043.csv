@@ -1,241 +1,241 @@
-rpt_dt,chn_nm,cmp_tp,geo_rgn,spd_usd,impr_cnt,clk_cnt,conv_cnt,tot_rev,roas_rt
-2024-08-30,google_search,retargeting,apac,134545.03,28895306,1349327,89835,53730.63,13.8
-2024-11-20,google_search,promo,north_am,99607.51,47271687,1158779,52687,13134.48,12.56
-2025-06-02,pinterest,seasonal,latam,65146.34,15698029,1546010,63436,220448.86,8.44
-2024-02-10,google_search,seasonal,emea,92996.55,33781751,254181,53802,187726.78,14.03
-2024-09-21,pinterest,retargeting,emea,69710.06,17485582,296048,88202,606317.03,5.01
-2024-07-08,meta_feed,retargeting,apac,184286.15,27801827,757184,34418,274796.91,14.1
-2024-08-05,linkedin,prospecting,emea,102768.76,37104053,440639,20728,986751.77,6.13
-2024-06-29,amazon_ads,prospecting,north_am,70113.17,5446264,1875211,37269,382914.75,6.93
-2024-12-07,meta_feed,brand,latam,93995.94,37501891,465920,32121,876513.78,9.0
-2024-01-21,google_search,brand,latam,216587.06,6757689,608611,22316,847347.64,1.91
-2025-01-09,youtube,seasonal,north_am,209663.26,24361298,899141,63285,776139.15,3.7
-2025-04-08,tiktok,brand,emea,211012.24,5071842,705011,72800,110850.31,9.84
-2024-05-15,linkedin,prospecting,latam,28098.51,34930320,1734659,53025,141609.6,5.02
-2024-01-19,amazon_ads,promo,latam,7099.7,16305956,503411,10049,379205.93,13.68
-2024-12-10,meta_feed,seasonal,apac,42764.77,30378133,1818170,72149,812823.49,5.4
-2024-01-02,google_search,prospecting,north_am,42396.0,39637870,1203444,87355,514752.85,11.55
-2024-09-29,linkedin,seasonal,latam,75199.09,36442434,68604,15750,49009.79,14.68
-2024-12-09,amazon_ads,retargeting,north_am,127918.08,23110209,1976160,16062,690915.56,8.92
-2024-01-08,pinterest,prospecting,north_am,202308.46,38724822,66729,82104,891562.09,1.59
-2024-01-23,linkedin,seasonal,emea,102821.42,49291253,460511,71089,571945.28,3.64
-2024-05-27,tiktok,seasonal,latam,34437.73,44237736,156125,35707,678859.1,7.9
-2024-03-22,amazon_ads,seasonal,emea,138086.48,23688478,1856133,70527,723656.49,12.67
-2024-07-10,pinterest,brand,emea,84332.41,13009302,1683130,29842,838183.36,11.02
-2024-04-18,linkedin,promo,north_am,17069.82,38631745,709896,40304,803875.79,11.23
-2025-03-06,linkedin,brand,latam,121963.1,40737660,1261177,61259,900732.04,1.01
-2024-09-25,google_search,retargeting,emea,125264.83,35340755,1675370,54341,145132.74,13.5
-2024-11-11,youtube,prospecting,north_am,185684.59,38416224,1620568,15846,434357.62,5.37
-2024-08-17,pinterest,retargeting,north_am,70037.32,36743397,350436,9764,558918.26,5.89
-2025-02-18,pinterest,brand,apac,34070.98,19666149,423168,46839,93527.24,7.96
-2024-09-05,pinterest,promo,apac,53374.64,7878057,728834,8659,656049.78,9.33
-2025-04-28,youtube,seasonal,north_am,37691.45,5117004,1575662,30476,915728.45,3.01
-2025-01-03,amazon_ads,promo,north_am,199531.57,28475298,220127,55116,966027.88,10.63
-2024-04-26,youtube,retargeting,apac,48302.3,16657902,793791,51720,55117.98,2.84
-2024-06-24,meta_feed,retargeting,apac,32512.84,38850349,1766118,91475,261753.76,12.96
-2025-06-21,linkedin,promo,emea,218344.02,9581362,884802,67783,610733.93,0.28
-2024-01-16,amazon_ads,retargeting,apac,10813.08,22185105,1168312,62106,319454.17,8.17
-2024-03-19,google_search,prospecting,emea,177032.14,16512709,1262662,99637,783895.54,14.23
-2024-09-28,linkedin,retargeting,latam,157369.0,44627683,531909,18436,157596.99,2.97
-2024-12-11,youtube,seasonal,north_am,145025.94,27065871,410861,27643,612059.9,8.95
-2024-08-04,tiktok,prospecting,apac,247402.46,24446124,365079,21905,875859.6,10.71
-2024-01-14,pinterest,seasonal,apac,220150.06,8942376,142015,73469,919933.82,1.14
-2025-03-08,pinterest,retargeting,apac,133677.1,23021583,726264,92011,878179.75,14.3
-2024-02-10,pinterest,seasonal,north_am,97002.01,44162457,96969,14926,246176.17,7.66
-2025-06-19,tiktok,brand,north_am,196476.01,26773239,84533,86976,801474.47,1.48
-2025-02-11,tiktok,prospecting,north_am,45485.82,22279734,278469,47747,284115.13,1.44
-2025-02-27,amazon_ads,seasonal,north_am,298.9,24107001,679732,79155,870523.04,12.76
-2024-05-23,amazon_ads,prospecting,north_am,123823.26,39405010,662438,57026,575944.43,3.66
-2024-10-23,amazon_ads,prospecting,emea,53847.03,20670042,1809938,91999,995236.39,10.52
-2024-09-06,youtube,brand,apac,127172.08,23933710,1815939,56583,829021.64,4.52
-2024-05-25,linkedin,brand,apac,157892.93,4711684,883822,95174,772659.31,14.01
-2025-02-05,meta_feed,retargeting,apac,3620.06,46730912,624647,50588,255503.67,3.67
-2024-05-14,amazon_ads,promo,latam,100311.42,2720168,970485,6498,114636.22,0.43
-2024-05-13,google_search,prospecting,latam,188501.7,48672987,1876193,25999,253724.95,13.29
-2025-04-23,linkedin,retargeting,apac,215816.45,24175971,350205,57346,578712.95,1.26
-2024-06-23,google_search,brand,apac,60978.32,49340106,666971,17890,192293.21,3.56
-2025-06-20,meta_feed,retargeting,north_am,160787.12,49611796,533236,32710,875777.01,14.99
-2024-10-17,pinterest,prospecting,emea,160352.98,20282902,1294158,40699,127631.31,10.53
-2025-04-26,pinterest,brand,emea,173330.31,368368,735313,23533,654092.19,10.78
-2024-10-23,amazon_ads,brand,apac,170650.91,22261952,1120825,14691,765515.89,3.32
-2025-04-22,youtube,brand,latam,52202.76,28935906,1848407,32714,187855.07,13.0
-2024-02-09,tiktok,retargeting,apac,39792.56,43879920,431969,11456,589231.35,0.22
-2025-05-26,linkedin,prospecting,north_am,28373.94,38483642,1287610,24522,460759.74,13.5
-2025-02-08,meta_feed,seasonal,north_am,247201.75,27917746,141125,29109,261542.82,8.58
-2024-11-08,youtube,brand,emea,143739.62,29695607,1898970,63516,496186.87,5.93
-2025-06-21,meta_feed,brand,apac,42427.26,5298385,1555768,69905,911713.94,3.42
-2024-12-16,tiktok,brand,emea,146594.88,28766701,1691450,66586,960858.32,1.1
-2024-12-17,youtube,brand,emea,133784.1,5474108,1458949,89282,368848.9,4.17
-2024-01-30,meta_feed,seasonal,apac,161782.47,42558688,1401091,78648,177912.19,13.65
-2024-02-29,google_search,promo,apac,86171.73,37436672,1423438,38576,307112.89,2.36
-2024-01-01,pinterest,retargeting,north_am,246976.09,36799174,352013,24409,620389.16,3.15
-2024-02-12,youtube,brand,north_am,65619.2,2453223,670216,79122,951378.03,12.87
-2024-03-01,tiktok,prospecting,emea,205914.77,1968817,1045113,34461,342256.08,3.03
-2025-06-13,meta_feed,seasonal,apac,200174.42,7576843,843909,29085,137736.74,4.65
-2024-11-03,linkedin,retargeting,apac,59948.04,16363024,1869287,44906,760585.89,6.11
-2025-06-11,meta_feed,retargeting,apac,231103.97,42965100,687367,21605,30492.41,14.16
-2025-05-24,youtube,retargeting,apac,76729.6,31512841,800574,76981,782907.3,10.7
-2025-03-05,amazon_ads,promo,north_am,236423.66,22157951,1191806,55530,513375.39,13.34
-2025-04-10,pinterest,retargeting,apac,186063.99,14134847,396920,75134,240288.06,3.13
-2024-08-12,amazon_ads,retargeting,latam,169802.35,46088589,1315009,85952,754352.73,1.69
-2024-03-28,amazon_ads,seasonal,north_am,101174.25,24891296,1532849,41738,597449.67,0.42
-2025-05-28,amazon_ads,prospecting,north_am,80400.37,2791772,424115,281,771617.66,10.41
-2025-06-21,youtube,promo,latam,71683.57,27735326,436808,42506,58415.84,11.4
-2024-03-06,amazon_ads,prospecting,apac,245980.79,40691974,1272416,84761,429045.76,7.04
-2025-06-22,pinterest,seasonal,emea,90717.46,14057619,355975,5726,360518.72,4.66
-2025-05-26,youtube,retargeting,emea,42652.73,42707321,10914,64287,752369.63,2.12
-2024-05-01,youtube,prospecting,apac,223895.27,16196904,1968036,34094,449697.28,6.72
-2024-09-28,youtube,brand,emea,29844.2,33159213,1629005,19293,62735.27,7.5
-2025-01-16,tiktok,brand,north_am,143679.68,7742837,1829876,56960,181704.47,12.24
-2024-01-29,meta_feed,seasonal,latam,170852.66,23254516,129322,79569,532649.25,1.45
-2024-02-27,google_search,promo,latam,96645.33,39631742,1760639,83107,374411.53,8.41
-2025-04-30,pinterest,seasonal,emea,206572.37,44101144,902031,37658,147433.01,10.89
-2024-02-23,linkedin,retargeting,emea,57934.65,12426579,319178,16588,295949.62,8.06
-2025-05-30,youtube,prospecting,north_am,128013.2,13576215,275917,20803,70723.36,5.54
-2024-11-05,amazon_ads,retargeting,emea,92932.87,17582147,1309374,87007,156864.98,2.36
-2025-04-20,pinterest,brand,emea,72971.55,48745440,1533228,14659,984825.85,9.27
-2024-01-28,pinterest,seasonal,latam,138787.98,24267453,1149528,41163,225041.05,2.88
-2025-01-23,youtube,seasonal,emea,192906.02,41136230,1244682,71778,32110.33,4.57
-2024-10-24,linkedin,retargeting,emea,183085.95,23692702,1860190,38282,637804.27,13.92
-2024-05-24,linkedin,brand,latam,118716.9,44916920,111096,84992,877810.94,3.75
-2024-05-20,youtube,seasonal,emea,353.86,1187691,1772288,39150,670608.77,1.07
-2024-07-03,google_search,retargeting,north_am,177385.88,23246996,1737721,92191,383136.77,14.62
-2024-06-11,meta_feed,seasonal,emea,246585.36,28618579,668176,38295,104977.52,14.36
-2025-05-24,tiktok,retargeting,latam,180383.45,6064888,129290,99955,837964.0,7.37
-2024-01-31,google_search,prospecting,emea,5861.83,46811654,519412,32083,640012.65,12.13
-2024-07-07,linkedin,prospecting,apac,130282.76,35004919,1550537,8844,234203.97,4.99
-2025-01-26,youtube,brand,apac,160353.13,2651177,1770245,11232,140413.27,11.56
-2024-03-09,pinterest,prospecting,emea,140740.08,9404471,894327,30130,132802.33,4.72
-2024-08-16,tiktok,retargeting,emea,16498.98,3640628,161013,6972,54565.13,0.01
-2024-08-14,amazon_ads,promo,north_am,81116.9,13244107,779973,31257,281930.14,13.38
-2025-03-10,pinterest,retargeting,apac,76788.82,32564108,218965,2449,766294.43,9.71
-2025-04-14,pinterest,seasonal,emea,74140.49,25534540,308957,10235,193503.67,2.16
-2024-08-06,amazon_ads,prospecting,north_am,45473.82,29997399,1686268,33206,736694.3,7.91
-2025-03-04,tiktok,retargeting,north_am,195883.39,28543863,1949755,98081,757982.18,5.65
-2024-12-20,google_search,retargeting,apac,166840.79,46717230,236913,87614,743696.77,12.64
-2025-04-03,google_search,retargeting,latam,125508.67,32903707,204687,69041,678899.3,5.71
-2024-07-27,linkedin,seasonal,emea,213271.33,3763070,1593708,68798,905823.23,12.96
-2025-01-04,pinterest,seasonal,north_am,10162.42,37529306,1956739,82741,846273.08,6.29
-2024-10-29,meta_feed,brand,apac,122582.37,22195124,136727,61675,949651.79,12.24
-2025-06-09,meta_feed,promo,north_am,193714.64,38053169,1903638,78975,246705.85,2.4
-2025-01-29,pinterest,retargeting,apac,94042.16,154608,1836960,11509,572959.86,7.93
-2024-05-04,pinterest,promo,apac,96285.06,25309335,1637534,14529,839418.02,1.03
-2025-02-13,pinterest,promo,north_am,234903.07,18501981,1039329,91940,657041.68,0.37
-2024-08-20,linkedin,promo,latam,93380.67,8285682,1044549,29310,221534.27,12.13
-2025-01-01,tiktok,promo,emea,108478.72,40313731,329921,75038,773434.32,0.3
-2024-05-27,google_search,prospecting,north_am,67656.77,40758465,1318419,78441,102100.11,1.42
-2024-09-05,meta_feed,promo,north_am,32647.62,5495519,1937598,94526,619181.89,7.0
-2025-03-22,tiktok,prospecting,north_am,95639.69,28358620,123320,15827,602863.28,11.37
-2024-10-23,youtube,brand,north_am,13413.58,13495670,1383786,3543,969189.49,9.87
-2024-03-18,tiktok,seasonal,latam,27430.92,33394830,1694662,67386,784698.2,9.3
-2025-01-18,google_search,retargeting,latam,69734.82,24155489,359084,34770,353182.12,0.88
-2025-05-21,google_search,seasonal,latam,1230.57,39667661,58031,43662,308841.82,12.82
-2025-06-22,pinterest,brand,apac,224649.19,38589105,298735,61192,616058.57,3.44
-2024-06-19,linkedin,retargeting,north_am,162963.44,44619708,848657,7459,422426.85,11.85
-2024-02-08,meta_feed,prospecting,apac,19777.45,41228179,1094689,9841,889904.65,4.71
-2025-04-20,amazon_ads,prospecting,north_am,206827.06,620497,1440282,75899,358273.28,7.38
-2024-01-14,linkedin,seasonal,latam,10408.87,48130696,39539,91161,404905.6,9.78
-2025-05-27,meta_feed,retargeting,north_am,236355.19,21516686,1477482,7623,533853.6,8.29
-2024-07-11,tiktok,promo,emea,165809.2,11658757,890814,78653,331767.24,4.54
-2025-04-27,pinterest,seasonal,apac,90630.31,45411496,943016,63730,59451.21,2.88
-2024-05-13,youtube,retargeting,apac,111875.0,11220038,1757833,64993,279233.43,3.06
-2025-05-12,amazon_ads,retargeting,emea,188699.06,39126845,1729297,65459,410521.99,11.74
-2024-02-02,amazon_ads,seasonal,apac,123541.6,33540904,864858,67940,791420.57,4.29
-2025-02-10,meta_feed,seasonal,emea,27971.89,24748837,168342,32858,757697.52,6.58
-2024-09-02,pinterest,retargeting,north_am,77866.89,46674515,910944,38075,260861.79,9.6
-2024-01-07,meta_feed,seasonal,latam,16951.12,15778515,1123692,98045,674448.57,8.77
-2024-09-06,pinterest,seasonal,emea,29721.54,31045817,397851,30620,101209.67,3.86
-2024-12-01,tiktok,brand,apac,36955.21,17956758,592741,51915,938314.81,11.5
-2025-04-26,tiktok,brand,latam,152198.3,45444593,1345329,1798,899608.23,14.33
-2024-12-22,youtube,brand,latam,191539.32,16833063,1548700,94940,504167.26,5.01
-2025-01-16,amazon_ads,prospecting,emea,237455.36,8362017,183010,43834,517457.94,11.09
-2025-05-31,youtube,promo,north_am,144059.35,28035750,1081160,70960,551692.24,8.72
-2025-02-15,pinterest,promo,apac,201118.47,38664880,1394626,46945,332251.97,5.21
-2024-11-14,meta_feed,brand,latam,241507.79,42780173,1712140,79424,82534.11,8.05
-2024-11-27,pinterest,prospecting,apac,1172.41,47516845,433206,35687,475809.87,13.86
-2024-01-19,linkedin,brand,latam,44294.79,31694991,1538717,15896,215201.88,10.46
-2025-05-13,amazon_ads,promo,emea,196684.26,45644400,912794,66046,638485.08,2.94
-2024-07-31,pinterest,promo,latam,55472.37,8302783,500237,13470,249454.02,1.67
-2024-10-05,youtube,brand,apac,232015.98,9819733,463480,4324,39921.05,9.63
-2024-04-02,meta_feed,retargeting,apac,2981.52,36280051,1471406,41950,616331.57,12.24
-2024-02-09,pinterest,retargeting,apac,117641.18,44070,1545318,1362,645157.35,3.04
-2024-06-25,meta_feed,promo,latam,186890.64,45815534,868621,67718,63482.95,8.51
-2024-06-25,pinterest,retargeting,north_am,158536.95,49070791,1878050,70416,817464.53,0.38
-2024-09-25,google_search,prospecting,apac,246164.61,13485147,1951878,74104,573925.39,11.71
-2024-11-09,amazon_ads,prospecting,latam,223455.31,1914020,997647,74843,298736.65,7.65
-2025-02-25,google_search,brand,latam,161619.4,691260,549220,54255,342147.97,12.96
-2024-12-10,youtube,seasonal,latam,1136.52,44615026,794826,83940,856700.58,2.35
-2025-04-23,amazon_ads,promo,apac,47031.03,7624933,1298086,94162,398543.42,0.67
-2024-11-05,linkedin,prospecting,north_am,144253.98,4850884,151269,35873,98586.24,0.84
-2025-02-04,pinterest,brand,emea,221131.63,4627550,807055,42507,805127.41,13.54
-2025-06-13,youtube,prospecting,latam,189136.83,14862638,545316,69885,153339.89,5.15
-2024-04-14,linkedin,promo,north_am,90356.32,19291509,953958,76270,630576.63,10.37
-2025-01-15,google_search,prospecting,emea,60964.61,22366163,1481782,51605,776621.12,3.74
-2024-08-07,meta_feed,brand,emea,99690.61,36053432,1367194,98599,584876.82,6.71
-2024-01-30,amazon_ads,retargeting,apac,218399.02,16495622,305603,47489,228590.55,14.95
-2025-04-13,meta_feed,brand,north_am,249571.14,34074253,1646766,43058,107002.78,1.58
-2025-05-23,meta_feed,retargeting,apac,49397.18,49904055,609391,75482,528277.83,11.07
-2025-03-17,pinterest,promo,apac,35552.11,43662699,596929,18941,488187.87,5.5
-2025-03-24,google_search,promo,emea,27182.98,21863583,1623242,76097,88494.03,3.43
-2024-01-10,google_search,seasonal,latam,36630.18,10705218,717867,62292,448289.79,1.05
-2025-06-20,meta_feed,seasonal,emea,109166.97,40888804,296749,84189,406660.2,7.35
-2025-03-18,amazon_ads,retargeting,north_am,30830.81,5164135,1412693,66720,17163.62,0.42
-2024-09-12,meta_feed,seasonal,north_am,247976.63,18153352,202244,75204,70557.45,0.85
-2025-05-01,youtube,prospecting,emea,149681.78,3100347,869369,49669,114537.65,6.87
-2024-05-05,tiktok,promo,latam,246639.1,37547506,66968,60585,296687.22,8.57
-2024-04-09,amazon_ads,promo,emea,215863.63,21540560,681329,4660,100105.24,11.36
-2024-07-24,linkedin,promo,apac,174391.13,43647189,1775922,76099,374691.35,6.49
-2024-02-04,amazon_ads,seasonal,north_am,2699.22,30542262,51354,67924,712105.99,0.03
-2024-10-10,amazon_ads,prospecting,latam,153387.35,6790626,143891,70120,208023.03,2.14
-2024-09-06,meta_feed,promo,emea,26091.96,40988894,1362837,14760,913824.28,10.78
-2025-01-07,youtube,retargeting,latam,70931.56,12417885,1793320,38185,819070.61,7.96
-2024-12-11,meta_feed,seasonal,latam,223516.8,34061891,1028659,59677,862764.24,11.24
-2025-03-20,tiktok,seasonal,north_am,224914.44,37937809,690830,38790,760085.07,7.18
-2024-03-27,google_search,promo,north_am,27294.48,16062397,61076,89731,235981.45,5.13
-2024-09-24,linkedin,retargeting,emea,153502.01,37461489,480372,35365,569272.11,11.51
-2025-03-27,google_search,prospecting,latam,135563.35,41491281,583152,25743,249362.98,0.7
-2025-03-25,pinterest,brand,emea,165632.28,3889588,223979,31537,87942.46,11.35
-2025-06-15,youtube,seasonal,emea,67745.23,49294961,1124395,59515,453806.64,3.21
-2024-03-16,meta_feed,prospecting,north_am,141445.16,21892648,795827,3600,306312.75,7.3
-2024-11-20,linkedin,promo,north_am,75403.63,5826654,1681376,27693,814375.05,3.59
-2024-07-07,linkedin,seasonal,emea,141437.97,22409663,825192,5311,817945.12,2.28
-2024-08-06,amazon_ads,retargeting,latam,846.54,41563281,388423,52529,333877.47,7.43
-2025-05-31,pinterest,brand,north_am,129652.36,20609421,1367662,35460,882606.74,12.76
-2025-02-09,youtube,brand,latam,29278.31,42706269,1357425,64563,958957.98,3.77
-2024-07-24,youtube,brand,latam,230560.25,8586251,1993319,87470,260610.67,8.42
-2024-11-01,google_search,retargeting,apac,128059.46,28567582,1011962,21847,469579.72,0.1
-2025-01-10,pinterest,prospecting,emea,99051.26,42443365,671785,22220,178323.61,3.46
-2024-05-17,google_search,prospecting,apac,115325.58,11663418,1802558,17064,48842.47,5.43
-2025-05-13,google_search,promo,apac,174805.56,29596023,548786,81231,719247.54,14.05
-2025-01-10,google_search,brand,latam,249586.98,9125078,1567253,15140,666366.94,2.0
-2025-04-23,linkedin,promo,latam,159407.93,26775483,532958,71770,756364.93,6.53
-2024-06-13,amazon_ads,prospecting,apac,160477.65,45755704,1025578,52612,282224.06,12.13
-2024-03-12,tiktok,retargeting,emea,126178.34,1149468,1346535,82517,746542.79,3.03
-2025-04-04,pinterest,promo,emea,210286.9,13972740,647272,48488,130045.95,0.73
-2025-05-10,tiktok,retargeting,apac,40850.64,18121512,1010523,84424,651459.38,13.59
-2025-05-12,linkedin,promo,emea,27766.97,40929422,926782,60878,324089.5,2.49
-2025-02-10,amazon_ads,prospecting,latam,81739.73,43418985,394420,36547,883955.29,11.57
-2024-01-08,google_search,prospecting,latam,69838.03,19609425,1996342,95509,593214.52,9.27
-2024-01-26,amazon_ads,prospecting,apac,58689.22,4513988,1123018,30830,204822.68,4.84
-2025-04-24,youtube,seasonal,north_am,114234.2,25811606,460152,52514,92114.1,14.88
-2024-06-16,google_search,seasonal,emea,210439.26,45681233,1073114,2226,125467.17,3.58
-2024-10-12,google_search,retargeting,latam,1728.37,348275,701719,66281,266029.24,5.49
-2024-12-12,tiktok,promo,emea,224539.45,43348136,1073312,35335,10419.56,9.98
-2024-06-13,tiktok,seasonal,emea,18747.91,10831029,1590349,96843,31383.41,1.84
-2025-05-06,youtube,brand,apac,47728.29,39829438,629958,54749,173622.33,13.95
-2025-03-05,youtube,seasonal,latam,177185.24,38158718,843456,58645,948351.16,14.71
-2024-01-04,google_search,prospecting,latam,123633.75,3693335,1581140,66830,605035.92,8.93
-2025-04-13,pinterest,promo,north_am,224777.38,43784591,70116,72924,472168.76,8.51
-2025-01-03,pinterest,retargeting,emea,42659.07,42561863,675548,62840,370902.09,13.8
-2024-02-11,tiktok,seasonal,north_am,139770.74,17269013,1555621,13346,829373.61,0.98
-2025-05-13,tiktok,brand,emea,182988.72,34594147,71087,64349,65259.5,12.47
-2025-02-23,pinterest,retargeting,latam,34423.32,27441071,4902,83151,214647.8,11.15
-2024-06-17,meta_feed,seasonal,emea,156781.19,38618292,202661,17263,570929.82,5.45
-2024-10-10,youtube,brand,apac,97512.02,3762775,1374036,86143,809585.47,11.53
-2025-04-09,google_search,prospecting,apac,39527.87,46579060,599421,17229,223891.12,2.35
-2024-01-03,youtube,promo,north_am,179904.71,2295022,1090491,76845,884197.87,0.55
-2024-10-13,pinterest,seasonal,emea,35677.49,9851071,1616659,33604,802263.05,12.44
-2024-06-23,tiktok,seasonal,apac,214642.93,13573578,860097,69464,717645.95,3.49
-2025-03-21,linkedin,retargeting,apac,57887.76,37298305,976279,94597,452992.64,14.68
-2024-03-13,linkedin,brand,latam,170517.01,40812168,908391,68866,742072.24,14.51
-2024-07-29,meta_feed,brand,apac,14794.58,11018557,1096813,2977,357916.43,7.45
+Collection Date,Route Zone,Vehicle Type,Waste Stream,Tons Collected,Stops Completed,Fuel Used Liters
+2025-01-19,West Residential,Compactor Truck,Organics,18.47,432,129.7
+2024-01-24,West Residential,Compactor Truck,General Refuse,9.71,242,66.73
+2025-05-17,South District,Roll-Off Truck,E-Waste,10.04,311,10.79
+2024-09-11,Harbor Front,Rear Loader,Recyclables,0.75,177,128.4
+2024-10-01,East Industrial,Roll-Off Truck,Organics,3.55,342,69.19
+2024-09-06,Central Business,Compactor Truck,Recyclables,4.08,189,88.49
+2024-12-07,Central Business,Side Loader,General Refuse,2.94,47,28.8
+2024-09-15,Harbor Front,Front Loader,Glass,3.85,57,102.11
+2024-01-02,East Industrial,Side Loader,Glass,17.54,129,96.83
+2025-04-20,West Residential,Rear Loader,Organics,17.6,366,18.16
+2024-10-14,North District,Roll-Off Truck,E-Waste,5.15,332,81.66
+2025-03-04,Harbor Front,Compactor Truck,General Refuse,14.19,258,137.71
+2024-01-27,Harbor Front,Side Loader,General Refuse,4.67,188,115.62
+2024-05-04,Harbor Front,Roll-Off Truck,Recyclables,17.8,431,139.55
+2024-09-24,North District,Roll-Off Truck,General Refuse,20.55,97,80.3
+2024-12-24,Central Business,Roll-Off Truck,E-Waste,0.69,261,77.66
+2024-11-11,East Industrial,Front Loader,Glass,11.97,254,67.38
+2024-04-05,West Residential,Rear Loader,E-Waste,1.34,118,57.45
+2025-02-28,West Residential,Compactor Truck,General Refuse,0.56,381,109.29
+2024-10-10,North District,Compactor Truck,E-Waste,7.19,47,58.81
+2024-01-07,East Industrial,Rear Loader,Recyclables,7.28,133,19.13
+2024-03-18,Harbor Front,Front Loader,Organics,20.46,371,127.11
+2024-02-24,North District,Rear Loader,General Refuse,10.56,163,95.44
+2024-10-04,Central Business,Rear Loader,E-Waste,9.4,36,8.14
+2025-05-08,South District,Rear Loader,Glass,0.51,162,124.64
+2024-02-12,North District,Side Loader,E-Waste,5.25,224,24.79
+2024-01-31,South District,Rear Loader,General Refuse,17.43,108,46.91
+2025-06-11,East Industrial,Side Loader,Glass,17.91,75,100.26
+2024-07-15,North District,Compactor Truck,Organics,6.32,426,125.01
+2025-06-01,Central Business,Compactor Truck,Glass,4.82,291,128.52
+2024-05-13,Central Business,Compactor Truck,Recyclables,16.36,312,95.75
+2024-04-21,West Residential,Compactor Truck,Organics,6.05,64,21.56
+2025-04-09,North District,Side Loader,General Refuse,19.59,322,101.6
+2024-06-15,East Industrial,Compactor Truck,General Refuse,3.25,274,56.23
+2024-08-08,Harbor Front,Roll-Off Truck,E-Waste,16.67,179,54.59
+2024-01-25,West Residential,Side Loader,E-Waste,18.63,305,44.45
+2024-12-07,South District,Front Loader,E-Waste,20.39,44,63.09
+2024-05-13,East Industrial,Side Loader,Glass,15.75,362,38.08
+2024-06-23,North District,Roll-Off Truck,Recyclables,14.37,335,9.35
+2024-06-05,West Residential,Roll-Off Truck,Glass,10.69,301,45.16
+2024-06-20,West Residential,Roll-Off Truck,E-Waste,17.16,256,112.56
+2025-03-04,Central Business,Rear Loader,Recyclables,6.32,63,14.51
+2025-06-14,Harbor Front,Compactor Truck,Recyclables,15.51,221,101.05
+2024-05-11,West Residential,Side Loader,General Refuse,1.64,416,116.1
+2025-03-25,West Residential,Compactor Truck,Recyclables,2.78,159,124.39
+2024-08-04,Central Business,Roll-Off Truck,Recyclables,12.48,179,33.17
+2024-08-07,South District,Side Loader,Glass,20.87,101,111.3
+2024-12-09,North District,Roll-Off Truck,Recyclables,9.41,437,97.02
+2025-04-24,Central Business,Compactor Truck,Glass,15.06,111,135.92
+2025-04-15,East Industrial,Front Loader,Organics,5.71,67,106.96
+2025-01-16,South District,Side Loader,Recyclables,12.0,227,104.68
+2024-12-26,Harbor Front,Roll-Off Truck,Organics,21.1,202,102.86
+2024-07-23,East Industrial,Front Loader,General Refuse,2.92,190,90.98
+2025-04-02,Harbor Front,Front Loader,E-Waste,21.04,223,80.84
+2025-04-29,Central Business,Side Loader,Glass,15.24,428,18.33
+2025-04-06,East Industrial,Side Loader,Recyclables,21.67,291,136.31
+2024-11-06,West Residential,Side Loader,General Refuse,1.27,196,72.92
+2024-01-26,West Residential,Front Loader,E-Waste,10.13,145,117.69
+2024-01-25,South District,Front Loader,General Refuse,4.7,334,110.2
+2025-02-26,Harbor Front,Front Loader,General Refuse,6.46,441,97.41
+2025-01-07,East Industrial,Compactor Truck,Organics,20.68,212,110.54
+2025-05-27,Central Business,Rear Loader,Glass,6.28,306,122.94
+2025-03-03,East Industrial,Compactor Truck,Glass,15.4,160,85.96
+2024-07-28,West Residential,Compactor Truck,General Refuse,11.28,360,129.93
+2024-07-15,East Industrial,Side Loader,Organics,2.04,109,75.88
+2025-04-08,West Residential,Compactor Truck,Recyclables,18.45,183,60.5
+2025-04-11,Harbor Front,Front Loader,General Refuse,19.94,316,45.78
+2024-06-12,Harbor Front,Front Loader,Organics,5.24,319,13.76
+2025-01-13,Central Business,Compactor Truck,Organics,7.5,268,5.38
+2024-05-25,Central Business,Side Loader,Glass,9.38,386,113.47
+2024-10-07,Central Business,Compactor Truck,Organics,6.36,35,30.24
+2024-09-12,North District,Side Loader,Recyclables,18.93,250,25.69
+2024-10-29,South District,Front Loader,General Refuse,19.6,180,87.08
+2024-09-28,North District,Roll-Off Truck,E-Waste,16.9,347,116.05
+2024-08-22,North District,Side Loader,Glass,8.72,172,134.23
+2024-09-27,North District,Roll-Off Truck,Recyclables,18.92,303,98.43
+2024-06-21,East Industrial,Front Loader,Organics,15.34,354,122.82
+2024-12-04,South District,Roll-Off Truck,E-Waste,10.5,362,16.74
+2024-01-17,Harbor Front,Rear Loader,Recyclables,17.37,312,107.88
+2024-02-08,East Industrial,Roll-Off Truck,Glass,20.48,38,34.41
+2024-05-27,South District,Compactor Truck,Organics,10.42,406,10.43
+2024-04-26,South District,Compactor Truck,E-Waste,20.77,141,115.05
+2025-01-19,Central Business,Side Loader,Recyclables,19.51,175,136.02
+2025-03-04,Central Business,Rear Loader,Recyclables,10.92,346,11.86
+2024-05-01,Harbor Front,Compactor Truck,General Refuse,6.56,355,109.88
+2024-03-28,Central Business,Side Loader,General Refuse,12.02,342,114.19
+2025-01-17,Harbor Front,Rear Loader,Recyclables,16.91,407,67.49
+2024-09-06,West Residential,Side Loader,General Refuse,19.77,378,84.68
+2024-04-20,East Industrial,Compactor Truck,Recyclables,13.41,434,81.4
+2024-12-02,North District,Compactor Truck,Recyclables,1.35,251,102.4
+2024-12-31,Harbor Front,Roll-Off Truck,Organics,5.41,426,5.4
+2024-04-25,North District,Rear Loader,Glass,9.74,208,125.8
+2024-07-22,North District,Compactor Truck,Recyclables,9.77,267,39.29
+2024-10-10,Central Business,Rear Loader,General Refuse,5.22,370,103.86
+2025-03-25,South District,Side Loader,General Refuse,3.9,92,82.78
+2024-05-27,North District,Compactor Truck,Glass,6.25,316,81.81
+2025-05-14,South District,Compactor Truck,Glass,0.54,366,60.2
+2024-07-22,South District,Side Loader,Glass,16.26,217,118.14
+2024-09-11,North District,Compactor Truck,E-Waste,3.27,27,63.17
+2025-02-19,Harbor Front,Roll-Off Truck,Glass,2.87,52,128.32
+2024-06-07,West Residential,Roll-Off Truck,Organics,14.62,161,134.15
+2025-04-10,South District,Side Loader,Glass,14.95,261,36.42
+2024-01-12,North District,Rear Loader,General Refuse,12.15,84,78.11
+2024-11-14,Central Business,Roll-Off Truck,Recyclables,6.48,45,103.49
+2025-01-07,Harbor Front,Side Loader,General Refuse,4.09,334,101.17
+2025-06-15,East Industrial,Side Loader,E-Waste,2.96,51,124.69
+2024-02-26,West Residential,Front Loader,General Refuse,21.95,169,85.47
+2025-05-15,Central Business,Roll-Off Truck,Organics,20.5,446,117.33
+2024-12-02,West Residential,Side Loader,Organics,7.2,390,11.61
+2024-12-05,West Residential,Front Loader,Recyclables,16.66,203,109.63
+2025-01-12,Harbor Front,Compactor Truck,General Refuse,17.86,39,110.43
+2024-06-11,North District,Rear Loader,E-Waste,11.58,317,11.87
+2025-05-28,East Industrial,Front Loader,Recyclables,7.18,184,36.74
+2025-03-17,West Residential,Side Loader,E-Waste,7.62,74,82.56
+2024-10-06,Central Business,Compactor Truck,Organics,18.79,443,40.98
+2024-07-21,North District,Front Loader,Recyclables,15.56,37,37.71
+2024-01-24,West Residential,Rear Loader,Recyclables,8.69,368,7.36
+2024-07-24,Harbor Front,Front Loader,Glass,0.95,355,86.46
+2024-04-20,North District,Rear Loader,Organics,19.4,217,98.84
+2024-05-14,West Residential,Roll-Off Truck,E-Waste,17.31,427,108.62
+2024-01-04,Harbor Front,Side Loader,Organics,1.27,261,92.84
+2025-05-13,North District,Compactor Truck,Glass,1.55,232,74.09
+2024-04-09,North District,Rear Loader,Glass,14.77,269,78.45
+2025-04-22,Harbor Front,Front Loader,Recyclables,2.91,242,29.75
+2024-10-10,East Industrial,Front Loader,Glass,6.69,393,70.22
+2024-07-28,South District,Compactor Truck,E-Waste,13.24,428,100.46
+2025-01-09,South District,Side Loader,Recyclables,17.45,172,128.52
+2024-04-03,Central Business,Compactor Truck,E-Waste,20.39,17,33.0
+2025-03-02,West Residential,Side Loader,Glass,10.45,129,21.78
+2025-02-24,North District,Rear Loader,Glass,0.57,66,25.55
+2024-09-08,South District,Rear Loader,E-Waste,16.52,336,17.37
+2024-10-15,Harbor Front,Front Loader,General Refuse,17.41,176,30.78
+2025-03-16,North District,Front Loader,Glass,12.72,423,16.37
+2025-06-17,East Industrial,Front Loader,General Refuse,3.32,365,60.55
+2025-05-28,West Residential,Roll-Off Truck,E-Waste,1.31,426,73.85
+2025-01-11,Central Business,Roll-Off Truck,Organics,6.75,280,82.33
+2024-09-11,West Residential,Side Loader,General Refuse,1.88,98,88.34
+2025-04-17,East Industrial,Compactor Truck,Glass,17.84,31,38.11
+2025-03-23,Harbor Front,Compactor Truck,E-Waste,5.73,233,81.76
+2025-01-04,East Industrial,Roll-Off Truck,General Refuse,13.69,31,130.5
+2024-07-25,Harbor Front,Front Loader,General Refuse,17.23,358,110.13
+2024-02-09,East Industrial,Rear Loader,Recyclables,12.71,280,15.42
+2024-03-10,East Industrial,Front Loader,General Refuse,3.38,392,22.71
+2025-04-13,East Industrial,Roll-Off Truck,Glass,20.74,263,52.12
+2025-04-14,South District,Side Loader,Organics,5.18,236,11.97
+2024-05-04,East Industrial,Compactor Truck,Organics,6.92,353,11.15
+2024-08-26,South District,Side Loader,Recyclables,7.86,307,91.91
+2024-08-21,Central Business,Rear Loader,General Refuse,5.76,387,87.58
+2025-01-25,East Industrial,Side Loader,Glass,15.77,190,35.01
+2024-06-30,West Residential,Roll-Off Truck,E-Waste,6.8,284,132.25
+2025-05-12,East Industrial,Rear Loader,Organics,1.84,122,11.84
+2024-02-09,South District,Side Loader,Recyclables,16.08,43,113.08
+2024-01-12,Central Business,Compactor Truck,Organics,21.47,387,29.86
+2024-09-25,Central Business,Roll-Off Truck,Glass,20.86,418,29.09
+2024-07-31,East Industrial,Rear Loader,General Refuse,10.08,133,48.69
+2025-01-18,South District,Roll-Off Truck,Recyclables,7.26,119,108.66
+2025-06-20,North District,Compactor Truck,Organics,1.36,210,119.06
+2025-05-05,Central Business,Rear Loader,Glass,15.55,34,117.37
+2025-01-05,West Residential,Front Loader,General Refuse,20.16,281,129.12
+2025-01-18,East Industrial,Roll-Off Truck,E-Waste,19.93,390,131.51
+2025-01-24,South District,Side Loader,E-Waste,17.08,156,121.42
+2024-03-08,West Residential,Roll-Off Truck,Recyclables,3.11,176,38.6
+2024-01-15,Harbor Front,Side Loader,Recyclables,16.24,319,87.19
+2024-04-04,South District,Roll-Off Truck,Glass,2.32,191,94.61
+2025-02-20,North District,Front Loader,General Refuse,4.34,439,71.55
+2024-03-10,North District,Roll-Off Truck,Organics,7.99,249,32.13
+2024-10-18,Harbor Front,Side Loader,Recyclables,16.52,39,115.65
+2024-12-12,North District,Front Loader,Glass,15.54,33,110.08
+2024-04-08,Central Business,Rear Loader,E-Waste,18.17,438,127.89
+2024-08-14,Harbor Front,Rear Loader,Recyclables,3.2,20,138.44
+2025-02-27,West Residential,Compactor Truck,Recyclables,16.52,215,86.06
+2025-06-21,Central Business,Side Loader,General Refuse,20.91,70,131.36
+2024-05-25,West Residential,Side Loader,Organics,14.15,413,130.34
+2025-03-24,South District,Rear Loader,E-Waste,5.94,301,21.25
+2024-07-04,Harbor Front,Compactor Truck,Organics,4.22,37,42.17
+2024-10-23,East Industrial,Front Loader,Recyclables,13.5,284,13.08
+2025-06-20,Harbor Front,Compactor Truck,General Refuse,19.12,153,103.43
+2025-04-08,Central Business,Roll-Off Truck,Recyclables,17.08,394,60.61
+2024-06-26,Harbor Front,Rear Loader,Glass,1.54,176,115.13
+2024-02-08,Harbor Front,Front Loader,E-Waste,19.69,64,71.36
+2024-04-20,East Industrial,Front Loader,General Refuse,3.49,219,86.29
+2024-09-25,Central Business,Front Loader,Organics,19.72,30,88.33
+2024-11-25,South District,Rear Loader,Organics,3.58,190,32.1
+2025-02-24,North District,Rear Loader,Glass,7.19,63,78.79
+2024-01-05,Central Business,Roll-Off Truck,General Refuse,12.16,426,56.12
+2024-08-03,East Industrial,Roll-Off Truck,Recyclables,9.19,414,79.53
+2025-01-23,West Residential,Front Loader,E-Waste,6.55,130,81.39
+2025-04-01,Central Business,Roll-Off Truck,Glass,19.06,72,26.96
+2025-01-24,Harbor Front,Roll-Off Truck,General Refuse,6.6,378,127.45
+2025-02-27,South District,Roll-Off Truck,Organics,15.61,130,67.98
+2024-02-09,West Residential,Side Loader,General Refuse,20.68,371,21.42
+2025-04-02,South District,Side Loader,General Refuse,1.63,367,67.73
+2024-11-25,North District,Rear Loader,E-Waste,1.72,421,133.98
+2024-12-03,East Industrial,Front Loader,Recyclables,4.04,393,34.2
+2024-03-20,South District,Side Loader,E-Waste,19.89,245,78.92
+2024-11-05,Central Business,Compactor Truck,Organics,9.82,398,48.36
+2024-09-18,East Industrial,Side Loader,Glass,5.49,326,111.3
+2024-12-21,West Residential,Side Loader,Glass,1.69,175,9.82
+2024-05-05,East Industrial,Side Loader,E-Waste,5.98,54,47.15
+2024-11-23,North District,Roll-Off Truck,General Refuse,15.16,255,79.89
+2024-03-15,West Residential,Roll-Off Truck,General Refuse,17.14,167,48.66
+2024-03-09,Harbor Front,Front Loader,E-Waste,21.22,134,133.54
+2025-03-13,East Industrial,Roll-Off Truck,E-Waste,18.42,317,17.86
+2024-11-21,East Industrial,Rear Loader,Glass,19.24,62,91.04
+2024-11-18,North District,Side Loader,Organics,18.79,174,121.82
+2024-09-16,Central Business,Side Loader,General Refuse,6.24,394,43.79
+2024-12-15,South District,Compactor Truck,General Refuse,9.37,235,18.76
+2024-10-21,North District,Side Loader,Glass,16.21,358,58.72
+2024-06-03,Harbor Front,Roll-Off Truck,Organics,19.66,435,82.85
+2024-11-09,West Residential,Rear Loader,E-Waste,4.3,98,64.08
+2024-12-20,Harbor Front,Compactor Truck,Organics,9.53,227,32.63
+2025-03-23,West Residential,Rear Loader,Glass,13.87,239,54.09
+2024-05-04,South District,Front Loader,Recyclables,15.6,427,88.8
+2025-01-15,Harbor Front,Compactor Truck,Organics,19.72,383,5.8
+2024-11-14,North District,Side Loader,Glass,14.57,325,117.16
+2024-08-03,Central Business,Front Loader,Glass,12.84,141,60.96
+2024-05-05,West Residential,Rear Loader,General Refuse,21.19,15,63.44
+2024-04-04,West Residential,Compactor Truck,Organics,7.18,43,123.75
+2024-04-18,West Residential,Front Loader,Recyclables,17.59,207,124.46
+2025-05-13,Central Business,Side Loader,Recyclables,17.38,352,74.59
+2024-03-22,Central Business,Rear Loader,Glass,10.55,291,55.89
+2025-04-18,South District,Rear Loader,E-Waste,0.97,396,64.39
+2024-07-18,Central Business,Front Loader,Recyclables,0.85,63,89.37
+2024-08-23,Harbor Front,Compactor Truck,Glass,8.82,154,6.95
+2024-07-25,East Industrial,Roll-Off Truck,Organics,21.24,15,117.22
+2024-02-03,Harbor Front,Front Loader,General Refuse,2.46,104,58.92
+2024-11-20,East Industrial,Roll-Off Truck,Recyclables,8.49,276,85.93
+2025-04-28,North District,Front Loader,Organics,10.11,256,45.69
+2025-01-02,Central Business,Front Loader,Recyclables,19.55,376,26.73
+2025-04-19,Central Business,Side Loader,Organics,15.86,151,49.1
+2024-04-04,North District,Side Loader,Organics,13.74,417,107.5
+2025-05-01,West Residential,Front Loader,Glass,20.58,88,60.75
+2024-07-14,East Industrial,Side Loader,Glass,9.55,105,124.46
+2024-03-29,Harbor Front,Rear Loader,Organics,15.84,224,120.4
+2024-04-16,South District,Roll-Off Truck,E-Waste,13.78,438,14.32
+2024-02-25,South District,Side Loader,Glass,14.05,31,63.35
+2025-05-30,North District,Side Loader,General Refuse,11.01,417,105.71
+2024-05-05,West Residential,Compactor Truck,Glass,15.1,397,119.44
+2024-12-23,North District,Compactor Truck,E-Waste,1.76,295,122.04
+2024-06-14,South District,Side Loader,E-Waste,20.38,317,110.76

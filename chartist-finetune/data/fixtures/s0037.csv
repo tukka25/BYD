@@ -1,241 +1,241 @@
-usg_dt,dst_nm,cust_tp,meter_cnt,tot_gal,avg_gal_cust,peak_flow_gpm
-2024-11-11,Old Town,Agricultural,652,789373.44,1975.86,24530.0
-2024-09-06,Westfield,Municipal,15869,5558623.19,2531.82,21740.19
-2025-04-21,Eastgate,Residential,22391,4825382.95,2198.57,22842.32
-2024-11-07,Harbor Flats,Municipal,47595,3680197.79,753.96,56724.04
-2024-12-25,Harbor Flats,Industrial,39907,554906.62,3004.32,5197.7
-2025-02-20,North Ridge,Agricultural,22391,9378056.3,18.51,59639.34
-2024-03-27,Eastgate,Municipal,7663,3183625.07,2168.53,18724.82
-2025-05-24,Lakeview,Municipal,27412,3431931.76,236.08,39820.79
-2025-06-08,Lakeview,Residential,8101,6331938.41,2503.38,22294.44
-2025-04-08,North Ridge,Residential,47523,3189850.68,427.25,37058.69
-2024-09-13,Eastgate,Municipal,42540,9144491.94,1662.08,8642.94
-2024-03-04,Riverside,Agricultural,25998,255953.41,2170.83,61559.75
-2024-06-17,Old Town,Municipal,6188,8764075.96,342.33,10822.55
-2024-03-01,Eastgate,Agricultural,41444,4139100.78,1324.95,10892.15
-2024-08-10,Harbor Flats,Industrial,24173,9056903.08,2189.46,60127.21
-2025-06-15,Westfield,Commercial,14437,2060093.27,517.76,60066.24
-2025-03-23,Westfield,Industrial,43720,1361721.77,3251.24,44198.97
-2025-06-22,Eastgate,Municipal,32058,4880974.56,3783.84,16944.53
-2024-03-21,Riverside,Industrial,31057,3937088.73,2286.35,59506.97
-2025-06-01,Westfield,Industrial,17741,7196038.65,1263.88,20197.91
-2024-11-12,Old Town,Residential,40022,8682193.38,2391.72,49038.04
-2024-12-07,Westfield,Residential,1560,8985427.31,1197.39,59933.01
-2025-01-31,Riverside,Commercial,8130,2861620.74,2153.6,1785.67
-2025-06-23,Old Town,Agricultural,17490,1406122.07,3366.38,8071.7
-2024-05-05,Old Town,Municipal,24541,6345316.67,1402.49,61139.17
-2025-01-04,Westfield,Commercial,37538,3617139.35,3141.49,54916.37
-2024-03-28,Lakeview,Industrial,39844,7990631.52,854.79,8853.35
-2024-10-20,Eastgate,Residential,14808,3198043.13,876.72,16488.43
-2024-06-27,Riverside,Agricultural,31693,5057401.73,4091.44,54593.59
-2025-03-07,Riverside,Agricultural,29861,6119956.4,2827.07,17978.74
-2025-05-06,Old Town,Agricultural,17217,7080524.59,2479.16,46823.39
-2025-04-12,Lakeview,Commercial,45075,2248424.35,318.61,18434.78
-2024-02-13,Old Town,Industrial,29553,1114784.49,3067.47,7746.78
-2024-10-03,Harbor Flats,Industrial,30921,6788099.75,4351.24,30610.29
-2024-07-15,Westfield,Residential,19158,9675121.71,4746.29,43475.11
-2024-03-27,Eastgate,Commercial,10471,7919992.86,2306.24,21311.66
-2025-03-13,Westfield,Municipal,46462,9113569.12,4597.78,46734.4
-2025-01-09,Eastgate,Agricultural,41895,2243288.85,1835.7,20114.18
-2024-02-15,Riverside,Commercial,14535,2944495.33,2524.05,31236.49
-2025-06-20,Harbor Flats,Municipal,12259,4437634.09,1952.97,12607.4
-2024-12-18,Eastgate,Agricultural,27634,9630054.71,2973.37,17816.52
-2024-03-10,Old Town,Industrial,26808,6374597.6,1161.52,20532.16
-2024-06-13,North Ridge,Commercial,12842,3157634.0,4783.51,37808.27
-2024-11-26,Riverside,Agricultural,11646,3797001.63,4499.24,37934.33
-2025-03-19,Riverside,Commercial,19561,6983245.41,3620.94,17226.63
-2024-12-29,Westfield,Municipal,23744,867095.63,3017.05,8348.39
-2025-02-14,Westfield,Commercial,24719,1559977.88,4213.42,38258.17
-2024-04-11,Harbor Flats,Commercial,25091,6482586.41,1047.67,31397.22
-2024-06-22,Riverside,Industrial,21282,3162486.82,3337.09,4545.59
-2025-03-01,Lakeview,Industrial,46274,7037237.08,1608.31,29925.49
-2024-02-15,North Ridge,Commercial,9441,2788194.7,1232.37,59336.13
-2024-09-30,Old Town,Industrial,8783,6107918.43,2915.57,59439.59
-2024-10-05,North Ridge,Residential,28307,7593720.59,4092.86,38843.6
-2024-01-25,Westfield,Municipal,2516,2166700.17,54.67,55675.31
-2024-02-21,Lakeview,Municipal,34422,870583.32,2464.41,45082.85
-2025-03-02,Lakeview,Industrial,12551,6172593.54,1267.67,3459.52
-2024-07-01,Westfield,Municipal,9743,2631908.24,206.19,42229.96
-2024-04-24,Riverside,Commercial,27734,7898205.21,4540.77,59358.7
-2024-05-18,Old Town,Commercial,25631,5324468.95,1743.13,21587.44
-2024-02-16,Eastgate,Industrial,21047,66328.26,4050.94,48461.09
-2025-06-19,Lakeview,Commercial,47238,6429780.32,3896.02,31840.22
-2024-08-30,Lakeview,Municipal,42898,2306253.06,1765.04,43839.95
-2024-02-20,Harbor Flats,Residential,23251,8291402.89,3539.32,46783.31
-2024-01-19,North Ridge,Residential,40471,5838387.1,3936.03,36324.63
-2024-11-21,Harbor Flats,Agricultural,46620,3262682.47,2806.82,1690.57
-2024-07-09,Riverside,Residential,9708,4002480.4,3480.68,46381.53
-2024-10-11,North Ridge,Agricultural,45039,1143178.14,2640.28,50821.45
-2025-04-28,Harbor Flats,Agricultural,12517,9727027.83,3614.29,14454.87
-2024-04-25,Old Town,Industrial,30786,5553815.54,2770.09,22238.34
-2024-10-15,Harbor Flats,Agricultural,26790,5627265.71,108.32,6487.86
-2025-04-18,Westfield,Agricultural,24472,5775498.87,1321.16,5212.15
-2024-08-03,Eastgate,Agricultural,16343,4481566.13,4148.24,51308.99
-2024-01-31,Old Town,Commercial,25300,6657995.99,2361.62,21173.93
-2024-11-24,Riverside,Agricultural,36619,3070463.72,1462.7,23650.11
-2024-06-29,Old Town,Residential,24886,5004185.11,2937.44,57072.06
-2024-06-17,North Ridge,Industrial,24371,11901.82,1583.36,18751.9
-2025-02-08,Lakeview,Industrial,35566,6683134.68,3071.04,50025.95
-2024-01-21,Eastgate,Residential,7851,3980135.33,3520.8,39825.51
-2025-01-21,Lakeview,Commercial,40201,9573968.51,1300.12,31597.69
-2025-03-20,Old Town,Industrial,16815,7782764.75,3627.83,25006.75
-2024-06-15,Eastgate,Municipal,25270,3849097.04,3982.05,48989.94
-2024-03-29,Lakeview,Residential,47064,8323839.48,727.44,18787.36
-2025-04-06,Harbor Flats,Municipal,11318,7958217.57,2492.85,1671.37
-2024-07-23,Riverside,Residential,27714,7694212.22,4674.08,19204.23
-2025-02-21,Old Town,Municipal,18490,7371777.34,114.58,46838.86
-2024-06-15,Westfield,Commercial,43858,6369146.42,4079.74,37642.31
-2025-01-20,Old Town,Municipal,22740,3184553.93,975.08,37525.04
-2024-06-21,Lakeview,Commercial,39209,2954738.77,537.93,19130.26
-2024-08-07,Riverside,Residential,41259,2072273.68,957.44,14732.48
-2024-03-10,North Ridge,Commercial,44696,9317046.94,301.01,3304.52
-2025-02-11,Lakeview,Commercial,11257,4440027.85,1955.25,55493.65
-2024-10-14,Eastgate,Residential,22222,3116923.02,2438.63,29239.77
-2024-04-07,Lakeview,Municipal,48152,286518.27,3240.75,10737.02
-2024-07-20,North Ridge,Agricultural,19876,5476622.91,1186.37,13654.02
-2025-03-15,Riverside,Industrial,20500,7326478.43,4250.63,53915.19
-2024-01-03,North Ridge,Municipal,21272,4035148.13,2345.93,5453.03
-2025-05-01,Westfield,Residential,44343,4235549.66,666.72,36555.73
-2024-06-08,Old Town,Residential,31524,4227980.18,1810.94,61580.08
-2024-07-18,Lakeview,Agricultural,19898,869180.45,99.44,12924.24
-2024-07-03,North Ridge,Municipal,34986,6652527.44,3849.49,10418.65
-2024-01-20,North Ridge,Commercial,21693,2206671.11,3444.15,48819.86
-2024-12-30,North Ridge,Municipal,11342,8658151.18,4426.45,3956.29
-2024-09-24,Harbor Flats,Residential,4586,3732195.16,2576.63,38623.19
-2025-02-14,Riverside,Agricultural,20639,8775990.95,1086.18,17253.41
-2025-03-15,Riverside,Agricultural,35983,5781715.69,3332.11,40581.82
-2025-05-01,Riverside,Commercial,17055,7464556.89,4606.83,13764.1
-2024-01-17,Old Town,Municipal,18679,3499286.51,70.49,46236.9
-2024-11-01,Old Town,Commercial,9175,1010287.23,3621.05,60431.23
-2024-12-15,Westfield,Industrial,5437,5146471.39,541.07,3948.99
-2024-01-24,Lakeview,Industrial,13146,557865.85,2187.94,4305.71
-2024-04-06,Harbor Flats,Commercial,4194,2322237.02,4212.26,20311.25
-2024-01-23,Eastgate,Industrial,45816,8169861.59,2296.46,15083.32
-2025-05-11,North Ridge,Agricultural,15934,4946658.61,2338.1,55811.25
-2024-05-14,Harbor Flats,Agricultural,29757,4421808.23,698.1,5586.4
-2024-04-17,Eastgate,Commercial,42837,732501.14,1919.01,50676.36
-2025-01-21,Old Town,Industrial,13013,3955911.23,3331.56,54199.9
-2024-01-09,Westfield,Commercial,39752,494721.27,2084.41,11082.52
-2024-05-10,Eastgate,Municipal,44184,3840990.64,4079.95,12100.32
-2024-08-09,Riverside,Municipal,14869,4163827.77,3529.15,61619.52
-2025-04-04,Old Town,Municipal,25127,6328370.8,3253.78,40353.13
-2024-12-27,Riverside,Municipal,9216,3194069.92,1350.57,11474.98
-2024-03-17,Riverside,Residential,1053,9117082.58,3849.77,31127.03
-2025-02-18,Eastgate,Municipal,18715,1995195.32,2666.08,3398.94
-2025-01-05,Riverside,Commercial,10029,1053224.13,2448.27,36483.87
-2024-10-15,Old Town,Commercial,17248,7143304.92,2478.61,17205.02
-2025-01-21,Westfield,Commercial,21247,9545463.98,1577.08,11978.72
-2024-03-11,Harbor Flats,Municipal,43338,7737458.0,4228.92,58700.84
-2025-05-26,Lakeview,Municipal,20449,3495260.02,4519.74,1188.33
-2025-02-11,North Ridge,Commercial,29907,6243851.67,2939.42,27122.85
-2024-11-09,Lakeview,Commercial,7589,8059937.12,1435.29,19482.91
-2025-04-24,Riverside,Commercial,16861,8287043.84,2984.68,44233.76
-2024-11-28,Lakeview,Agricultural,5747,1769156.65,3637.13,25485.07
-2024-04-05,Riverside,Agricultural,33450,5288302.46,4611.16,36298.74
-2024-07-07,Riverside,Commercial,5562,6777453.92,2322.61,31942.86
-2024-05-02,Lakeview,Residential,33187,9384458.72,1862.38,54211.72
-2024-03-04,Riverside,Commercial,31992,8606929.09,213.84,29520.66
-2024-04-07,Old Town,Commercial,35116,7404065.07,2349.97,60973.2
-2024-05-08,Westfield,Industrial,25375,8959210.97,1579.55,18241.81
-2025-04-26,Harbor Flats,Commercial,36875,6547125.11,3338.99,47503.35
-2024-09-19,Westfield,Residential,33313,8020984.83,3000.63,37261.53
-2025-05-18,Old Town,Agricultural,37320,5973793.47,3932.98,27431.46
-2024-02-14,Westfield,Residential,5724,154020.65,627.04,1914.3
-2024-03-21,Riverside,Agricultural,11458,7161476.76,2263.06,32086.61
-2024-02-23,Old Town,Commercial,3709,4853751.17,2581.46,35007.93
-2024-01-25,Old Town,Municipal,37305,7120485.35,1705.64,16153.82
-2024-02-11,Lakeview,Municipal,10162,3871896.69,4486.38,12388.39
-2024-06-25,Westfield,Residential,39083,205737.93,815.84,60077.49
-2024-01-22,Riverside,Municipal,27365,1436926.3,1644.75,16783.34
-2024-02-02,North Ridge,Commercial,26021,9687966.22,1969.11,26789.19
-2025-02-07,Eastgate,Agricultural,13967,7367340.02,1773.96,36311.15
-2024-08-17,Eastgate,Municipal,37778,1519993.85,4566.02,39313.24
-2024-05-14,Harbor Flats,Agricultural,30103,4845161.49,3048.04,61823.83
-2025-06-21,North Ridge,Agricultural,24424,6274221.46,3025.8,25033.71
-2024-04-21,Old Town,Municipal,15147,127218.09,2364.45,53220.95
-2024-06-28,Lakeview,Residential,25548,129507.54,3560.69,21665.08
-2024-06-12,North Ridge,Agricultural,5614,2660512.26,2937.58,12124.3
-2024-09-14,Eastgate,Commercial,27547,2475725.19,3819.36,43621.9
-2024-09-09,Lakeview,Agricultural,26398,5294786.73,3689.56,8319.55
-2024-10-24,Westfield,Commercial,22130,7561128.38,1088.8,56263.31
-2025-03-19,Lakeview,Agricultural,36631,3466228.24,4600.99,19251.56
-2024-12-14,Westfield,Agricultural,42619,3826093.24,895.87,36889.82
-2025-05-10,North Ridge,Commercial,14343,7064781.43,4018.79,58869.81
-2024-02-11,Harbor Flats,Commercial,43364,2780290.67,2791.04,25442.92
-2024-04-07,Westfield,Residential,41709,6674402.65,2840.48,9795.34
-2024-10-17,Lakeview,Industrial,19473,3935938.4,3048.42,47131.71
-2024-07-15,Eastgate,Industrial,34052,967229.53,2831.07,50106.84
-2024-01-26,Westfield,Agricultural,1908,2348340.01,3802.33,55918.03
-2024-02-06,Old Town,Municipal,23732,6653700.5,4505.41,15745.89
-2024-05-18,Riverside,Industrial,8267,3091449.63,588.06,24784.46
-2024-11-24,Lakeview,Agricultural,11200,7573697.64,4484.28,11131.07
-2025-01-13,Eastgate,Agricultural,24209,6149737.25,1467.07,45599.63
-2024-03-18,Westfield,Commercial,23145,2901867.83,2451.56,58223.45
-2024-11-28,North Ridge,Municipal,1294,5259534.6,3937.1,22223.41
-2025-04-26,Lakeview,Residential,23282,759916.98,2146.75,761.69
-2024-09-08,Riverside,Commercial,37182,8423462.59,977.28,9834.7
-2024-10-07,Old Town,Commercial,20717,2863388.87,3409.93,59529.19
-2024-06-30,North Ridge,Residential,9679,8762254.89,142.61,58860.33
-2024-05-13,Harbor Flats,Residential,32636,5754853.18,2219.35,273.15
-2025-03-07,Riverside,Municipal,25843,884126.46,980.61,58544.73
-2024-05-25,Eastgate,Industrial,31922,6335187.7,1516.32,53939.41
-2024-07-23,Eastgate,Agricultural,33596,6732064.92,1020.74,3359.42
-2024-11-21,Eastgate,Residential,20451,5552915.34,3880.82,33440.29
-2024-08-19,Lakeview,Industrial,10871,9118265.17,3319.9,17752.35
-2025-05-12,Westfield,Municipal,33996,7225924.83,3177.89,40420.53
-2024-02-07,Old Town,Residential,35881,8241220.08,2100.25,44325.29
-2025-03-05,Lakeview,Agricultural,41740,2771155.3,4295.37,20869.98
-2024-07-29,Eastgate,Agricultural,16783,6418770.36,2342.8,59595.3
-2024-12-31,Harbor Flats,Agricultural,21546,2452887.99,1755.78,17069.35
-2025-01-30,Eastgate,Municipal,16322,6985778.99,219.71,49982.03
-2025-02-27,Riverside,Commercial,24792,5060404.73,4182.57,54749.4
-2024-10-29,Lakeview,Agricultural,25878,6752069.37,1139.1,25431.76
-2024-09-27,Eastgate,Municipal,4336,3611259.99,3632.6,30241.5
-2024-01-01,Westfield,Residential,42843,1962179.68,1200.57,56688.83
-2024-08-07,Old Town,Industrial,22833,3823843.38,503.19,13779.29
-2025-01-28,Westfield,Industrial,22218,7623094.58,3144.85,26768.31
-2024-08-12,Westfield,Residential,8607,413206.63,702.3,51914.73
-2024-11-14,Harbor Flats,Agricultural,9781,5434670.56,2205.87,5348.28
-2024-07-04,Riverside,Agricultural,9128,5360561.41,2868.96,24780.34
-2024-07-27,North Ridge,Commercial,6870,2761354.51,1383.62,3414.64
-2024-12-25,Lakeview,Agricultural,1175,6189328.87,4217.3,14322.33
-2024-12-08,Harbor Flats,Municipal,6814,1145152.59,502.51,14180.93
-2024-11-09,Lakeview,Commercial,42197,8932262.44,205.62,30801.68
-2024-02-06,Riverside,Industrial,13844,2232573.54,475.12,26808.71
-2024-07-15,North Ridge,Agricultural,6482,8569928.43,4583.66,25658.42
-2024-04-07,Riverside,Municipal,29814,6856114.7,1495.91,54694.3
-2025-05-16,Riverside,Residential,22325,3504814.91,1535.25,8346.45
-2025-06-16,North Ridge,Agricultural,2594,2359589.35,3666.01,19803.23
-2024-04-02,Riverside,Municipal,38643,4758469.17,1497.05,33240.58
-2024-09-27,Eastgate,Commercial,5710,8835463.55,2303.76,34307.6
-2024-11-03,Riverside,Residential,38879,7569323.73,3887.87,60350.47
-2024-10-04,Harbor Flats,Commercial,5243,6956863.07,310.71,3925.83
-2024-12-16,Old Town,Commercial,10383,3560447.05,362.16,61660.54
-2025-04-30,Lakeview,Commercial,2001,4224401.41,1167.85,54706.59
-2024-08-22,Harbor Flats,Municipal,39809,6798182.84,3123.61,16951.84
-2025-03-15,North Ridge,Agricultural,6717,6064923.1,3088.77,30760.33
-2024-01-06,Eastgate,Commercial,45728,3170441.38,2371.54,14825.28
-2024-12-21,Westfield,Commercial,29945,4161403.26,3309.82,34541.32
-2025-02-17,Riverside,Industrial,11818,6147673.94,621.5,13964.35
-2024-01-26,Old Town,Industrial,21077,3018628.49,256.87,30008.02
-2024-11-05,Lakeview,Commercial,23740,1871857.45,2680.5,32117.65
-2025-06-10,Eastgate,Agricultural,39111,6350672.34,3120.16,1188.14
-2024-07-25,Harbor Flats,Commercial,12005,9328234.55,827.3,3898.74
-2024-04-24,Lakeview,Municipal,8304,7603777.75,1672.85,3471.36
-2024-07-18,Eastgate,Industrial,32302,7444744.76,2149.85,21461.31
-2024-09-29,Eastgate,Municipal,45663,5165358.06,2653.99,12008.25
-2024-02-22,Westfield,Industrial,45967,4937247.65,2229.9,32035.02
-2024-11-22,Old Town,Commercial,46021,4869899.68,2397.56,21240.17
-2025-03-10,Old Town,Agricultural,14163,955255.75,4322.51,36313.81
-2024-01-25,Old Town,Municipal,9919,1561380.14,4513.67,41791.45
-2025-05-25,Westfield,Residential,18284,7388945.38,3569.1,25540.66
-2024-10-07,Eastgate,Industrial,18236,362481.68,869.04,23227.29
-2025-05-19,Riverside,Residential,22002,735415.27,2244.92,33905.85
-2024-03-25,Old Town,Municipal,45042,4174456.6,471.46,51487.63
-2024-07-17,Harbor Flats,Municipal,14346,2118453.86,4334.8,42415.31
-2025-01-16,Riverside,Agricultural,46630,6318031.21,4332.81,10160.25
-2025-06-04,Riverside,Municipal,43742,9116878.35,251.6,58535.43
-2024-11-10,Eastgate,Agricultural,1085,2957831.47,2097.16,49353.76
-2025-05-10,North Ridge,Industrial,36511,1911686.95,1003.04,10221.42
-2024-09-09,North Ridge,Residential,30734,5122683.38,2892.06,45330.24
-2024-02-16,Harbor Flats,Commercial,30135,3841532.84,4178.99,41945.86
+Session Date,Platform,Country,User Segment,Session Count,Avg Session Duration Minutes,Screens Viewed,In App Revenue
+2024-02-27,iOS,Canada,New User,9,52.85,184,77.31
+2025-05-11,iOS,Japan,Power User,35,19.68,135,235.47
+2025-04-24,Huawei AppGallery,Germany,Dormant User,13,139.14,97,246.67
+2024-02-08,iPadOS,Mexico,Power User,18,138.23,191,80.29
+2025-06-16,Android,India,Returning User,15,98.96,169,40.59
+2025-05-13,Huawei AppGallery,Germany,New User,31,15.09,63,325.53
+2024-06-21,iPadOS,Canada,Churned User,32,168.71,19,325.21
+2024-01-20,Android,Nigeria,New User,16,165.76,80,406.46
+2024-11-27,Huawei AppGallery,Nigeria,Returning User,2,76.95,228,51.87
+2024-02-17,Huawei AppGallery,Germany,New User,11,56.72,236,242.83
+2025-04-12,Huawei AppGallery,Germany,Churned User,31,34.01,87,189.18
+2024-03-08,iPadOS,Canada,Power User,26,104.76,206,207.65
+2024-03-22,Android,United States,Power User,12,135.31,40,184.21
+2024-09-14,Android,United States,Dormant User,9,142.7,33,184.02
+2025-01-14,Huawei AppGallery,Mexico,Dormant User,25,10.91,244,392.07
+2024-07-21,Huawei AppGallery,Japan,New User,27,33.41,123,332.14
+2025-02-01,iOS,Brazil,Returning User,27,36.07,163,32.26
+2024-02-25,Huawei AppGallery,United States,Returning User,25,148.13,2,291.64
+2024-11-24,iOS,Brazil,New User,11,48.71,59,386.27
+2024-12-01,Android,Brazil,Dormant User,9,0.62,215,422.97
+2025-01-26,Huawei AppGallery,Brazil,Churned User,21,141.4,143,481.71
+2024-10-03,Huawei AppGallery,Nigeria,New User,21,144.33,147,493.16
+2025-03-07,iPadOS,Japan,Dormant User,15,179.75,36,53.28
+2024-11-30,iOS,Germany,Power User,34,100.85,24,456.5
+2024-02-15,iOS,United States,Dormant User,8,49.84,62,338.16
+2024-03-01,Huawei AppGallery,Japan,New User,27,29.15,141,161.46
+2025-05-13,Android,Mexico,Power User,9,19.41,243,388.1
+2024-01-23,Android,India,Dormant User,6,126.68,91,41.24
+2025-05-30,Huawei AppGallery,United States,Churned User,35,15.72,23,85.06
+2025-05-29,iPadOS,Canada,Churned User,5,25.58,192,448.55
+2025-05-12,iPadOS,India,Returning User,19,35.71,163,282.4
+2024-01-31,Huawei AppGallery,India,New User,19,83.65,44,175.13
+2024-02-16,iOS,Canada,Dormant User,19,48.58,195,492.36
+2025-04-18,iOS,United States,Dormant User,3,178.98,13,280.02
+2024-04-15,iPadOS,Brazil,New User,1,166.9,200,19.64
+2025-03-28,iOS,United States,Dormant User,29,28.66,13,282.7
+2024-02-10,Android,Brazil,Power User,5,140.21,224,53.48
+2024-05-28,Android,Brazil,Dormant User,37,60.63,120,171.02
+2024-09-01,Huawei AppGallery,Nigeria,New User,7,130.77,10,422.58
+2025-05-24,Android,Mexico,New User,28,109.79,201,34.86
+2025-06-05,iPadOS,United States,Power User,21,61.09,230,335.63
+2025-02-09,Android,Mexico,Dormant User,29,42.34,76,90.43
+2024-01-09,iOS,Japan,Returning User,32,110.36,234,461.0
+2024-01-25,Huawei AppGallery,Nigeria,Power User,25,178.57,166,53.88
+2024-07-24,Huawei AppGallery,Japan,Churned User,32,67.89,64,279.22
+2024-12-17,Android,India,Returning User,5,86.97,61,173.33
+2024-02-15,iPadOS,Germany,New User,27,68.91,237,361.12
+2025-05-14,iPadOS,Nigeria,Returning User,11,168.02,3,383.63
+2025-05-17,iOS,Nigeria,Churned User,4,18.32,200,490.99
+2024-01-31,iPadOS,Japan,Dormant User,19,160.09,243,369.91
+2024-12-11,iPadOS,Germany,Dormant User,11,44.27,32,105.32
+2024-09-25,iOS,Canada,Churned User,39,83.92,42,272.04
+2024-05-27,iOS,India,Churned User,30,114.15,141,241.48
+2025-06-08,iOS,Mexico,Dormant User,1,115.53,79,334.35
+2025-02-05,Android,India,Churned User,16,32.05,99,370.35
+2025-02-08,iOS,Nigeria,Power User,6,29.15,224,301.77
+2024-07-16,iOS,Japan,Returning User,1,48.31,105,35.61
+2024-03-16,Huawei AppGallery,Nigeria,Power User,26,11.17,223,68.71
+2025-01-27,Android,Brazil,Returning User,5,151.07,66,477.67
+2024-11-09,Huawei AppGallery,Mexico,Returning User,17,150.35,6,133.27
+2024-09-25,Android,India,Power User,6,85.54,201,370.72
+2025-05-09,Huawei AppGallery,Brazil,Dormant User,8,59.7,145,65.48
+2025-01-03,Android,Germany,Power User,24,29.17,32,125.23
+2025-04-30,Android,Nigeria,Dormant User,25,176.05,183,49.03
+2024-01-17,Android,Japan,Returning User,5,111.57,182,43.25
+2025-04-29,iOS,United States,Returning User,35,73.32,63,311.36
+2024-10-05,iOS,Canada,Power User,16,131.05,12,487.84
+2025-02-26,Android,Canada,Dormant User,23,23.28,112,309.29
+2024-12-08,Huawei AppGallery,Nigeria,New User,28,69.21,94,453.47
+2025-05-19,Huawei AppGallery,Brazil,Power User,26,120.92,78,82.96
+2024-07-13,Android,Japan,Power User,32,4.9,194,128.22
+2024-11-06,Android,Germany,Churned User,21,110.3,115,111.54
+2024-11-22,iPadOS,India,Dormant User,20,37.51,147,163.28
+2024-04-26,iOS,United States,Power User,36,51.5,161,476.38
+2024-03-29,iPadOS,Japan,Power User,38,62.39,180,44.74
+2024-12-21,iPadOS,Brazil,Churned User,6,89.15,229,294.61
+2024-12-12,iOS,India,Churned User,39,84.05,150,490.88
+2024-01-02,iPadOS,India,Returning User,33,155.75,103,119.61
+2025-03-24,iOS,Germany,Power User,7,128.58,104,279.95
+2024-10-23,iOS,India,Dormant User,22,130.68,131,385.9
+2024-05-06,iPadOS,Brazil,Power User,20,179.36,19,306.58
+2025-04-04,iPadOS,Nigeria,Returning User,3,38.98,112,365.07
+2024-06-29,Android,Brazil,Churned User,18,102.89,115,352.53
+2024-10-13,iPadOS,United States,New User,22,79.06,73,267.61
+2024-12-05,Huawei AppGallery,Canada,New User,26,115.88,196,427.09
+2025-06-22,Huawei AppGallery,Canada,Power User,39,4.14,68,29.92
+2024-10-29,iPadOS,United States,Dormant User,37,103.3,47,37.97
+2025-06-21,iOS,Brazil,Power User,33,142.52,150,222.52
+2025-03-04,iPadOS,Canada,Returning User,33,169.06,104,77.57
+2024-01-28,iOS,Mexico,Churned User,26,26.28,229,305.03
+2025-05-19,iOS,Mexico,Dormant User,35,173.38,71,263.65
+2024-07-16,Android,United States,New User,5,73.14,239,238.7
+2024-08-16,Android,Japan,Dormant User,9,112.94,74,272.37
+2025-03-15,iPadOS,Brazil,Churned User,16,89.62,153,92.43
+2025-01-07,Android,Brazil,New User,37,79.14,165,174.85
+2024-08-18,iOS,Japan,Dormant User,12,21.16,228,472.37
+2024-01-10,Android,United States,Dormant User,20,43.95,116,227.72
+2024-10-20,Huawei AppGallery,Japan,Power User,24,129.84,95,144.93
+2024-04-10,iOS,Mexico,Churned User,40,6.74,193,423.2
+2024-03-22,iPadOS,Mexico,New User,26,37.19,16,5.16
+2024-05-25,iPadOS,Nigeria,Dormant User,38,174.51,237,251.48
+2025-03-24,iPadOS,Nigeria,New User,23,152.12,201,379.93
+2025-03-08,iOS,India,Returning User,35,99.49,223,473.4
+2024-09-14,iOS,Nigeria,Churned User,32,163.32,96,435.02
+2025-02-15,Android,Nigeria,New User,20,1.57,242,142.32
+2024-02-29,Android,India,New User,18,42.68,93,283.86
+2024-01-07,iOS,India,Power User,17,113.83,57,345.19
+2024-11-24,iOS,Germany,Power User,33,123.42,217,167.89
+2025-03-21,Huawei AppGallery,Nigeria,Churned User,20,142.24,189,75.12
+2024-11-09,Huawei AppGallery,India,Power User,29,133.53,158,300.96
+2024-07-03,iPadOS,Brazil,Churned User,24,92.45,6,59.94
+2024-01-10,iPadOS,Nigeria,Returning User,37,118.43,72,268.78
+2024-12-01,Huawei AppGallery,Brazil,Returning User,3,71.92,166,238.99
+2025-05-15,iOS,India,Churned User,40,61.98,138,153.58
+2024-04-02,iOS,India,Returning User,28,118.33,104,233.87
+2025-03-13,Android,India,Churned User,22,144.42,168,445.51
+2025-02-08,iOS,Japan,Dormant User,4,110.48,234,26.45
+2024-11-27,iOS,Mexico,Churned User,37,85.05,133,204.94
+2024-08-22,Huawei AppGallery,Germany,Power User,12,74.15,139,145.02
+2025-03-11,Huawei AppGallery,Nigeria,Dormant User,38,144.48,95,89.35
+2025-01-26,Huawei AppGallery,Germany,Churned User,14,138.46,145,353.43
+2024-11-26,iPadOS,Japan,New User,4,67.0,201,114.1
+2024-08-01,Android,Japan,Churned User,29,107.12,160,328.61
+2024-09-29,Android,Japan,Power User,32,68.3,240,320.36
+2025-02-08,Android,India,Dormant User,36,19.7,177,431.63
+2025-05-29,iOS,Mexico,Returning User,3,136.24,76,64.41
+2024-10-10,Android,Canada,Returning User,22,150.24,105,250.2
+2024-05-09,iPadOS,Canada,Power User,12,4.16,150,282.74
+2024-08-24,Android,Canada,Returning User,27,32.6,131,310.83
+2025-04-04,iPadOS,Mexico,Returning User,14,157.23,219,124.21
+2024-01-12,Huawei AppGallery,Brazil,Power User,7,75.19,188,90.39
+2024-02-23,Android,United States,New User,9,130.69,208,31.18
+2024-03-16,Android,India,Dormant User,11,10.3,49,297.65
+2024-06-18,Android,Nigeria,Dormant User,10,160.55,248,244.83
+2024-03-02,Android,Japan,New User,13,49.74,50,262.8
+2024-03-18,iOS,India,Power User,37,35.51,140,135.24
+2024-05-14,iOS,Germany,Dormant User,20,11.74,152,472.86
+2024-10-14,iOS,India,Churned User,11,60.88,89,230.04
+2024-12-04,iPadOS,Mexico,New User,8,10.76,85,471.67
+2024-06-08,iPadOS,Canada,Returning User,24,126.5,219,216.88
+2024-03-20,Huawei AppGallery,Canada,Dormant User,19,90.49,112,428.64
+2025-06-11,iPadOS,United States,New User,35,103.7,12,140.12
+2024-06-12,Huawei AppGallery,Germany,New User,25,126.74,90,256.7
+2024-03-21,Huawei AppGallery,Nigeria,Power User,22,4.68,173,413.68
+2024-01-18,Android,Brazil,Churned User,24,143.43,98,191.67
+2025-05-25,iPadOS,Mexico,Churned User,10,45.97,163,225.95
+2024-09-18,Android,India,Dormant User,16,71.8,104,460.59
+2024-03-17,Android,India,Power User,28,178.19,185,367.25
+2024-07-30,iOS,India,Churned User,3,83.08,178,270.79
+2024-04-10,iPadOS,India,Returning User,14,172.88,224,26.8
+2025-03-12,iPadOS,Mexico,Churned User,14,122.12,159,142.42
+2024-12-27,Huawei AppGallery,India,Returning User,20,176.44,77,334.38
+2024-05-20,Huawei AppGallery,Mexico,Returning User,32,157.0,95,108.15
+2024-07-08,Huawei AppGallery,Canada,Power User,22,173.44,182,305.92
+2024-05-10,Android,Canada,Returning User,19,33.56,73,310.52
+2025-03-17,iOS,Nigeria,Returning User,24,118.96,232,65.77
+2024-03-17,iOS,Nigeria,Dormant User,17,142.27,98,252.69
+2024-11-05,iOS,Brazil,New User,7,162.4,220,269.06
+2025-05-21,Android,Germany,Power User,21,98.97,157,34.2
+2024-02-24,Huawei AppGallery,India,New User,30,24.36,124,374.32
+2024-02-08,Huawei AppGallery,Brazil,Returning User,23,98.54,130,305.44
+2024-03-26,iPadOS,Japan,Churned User,24,45.48,3,60.57
+2024-07-24,iPadOS,Nigeria,Dormant User,33,130.45,43,225.53
+2024-11-04,Huawei AppGallery,Canada,Power User,9,59.71,173,212.6
+2024-07-30,Android,Canada,Dormant User,34,144.14,83,495.35
+2024-07-16,Android,India,New User,7,99.2,204,121.39
+2025-05-08,iOS,Japan,Power User,24,44.96,40,244.59
+2024-01-04,Huawei AppGallery,Brazil,Dormant User,28,31.91,168,479.89
+2024-12-26,Android,Brazil,Power User,24,113.73,76,229.19
+2024-07-05,Huawei AppGallery,Canada,Power User,29,87.96,71,446.75
+2024-07-31,iPadOS,United States,New User,36,41.79,14,461.95
+2024-11-14,Android,Canada,Returning User,24,51.93,218,286.16
+2024-12-28,Android,Japan,Churned User,10,29.3,21,50.0
+2025-02-12,iOS,Mexico,Power User,26,153.53,166,270.1
+2025-05-23,iOS,Japan,Churned User,15,0.77,87,107.62
+2025-04-30,Android,Germany,Returning User,14,80.08,170,169.9
+2025-01-24,Huawei AppGallery,Brazil,New User,27,179.57,238,489.81
+2024-12-01,iPadOS,Brazil,New User,27,90.54,43,104.0
+2024-09-02,iOS,Japan,Returning User,17,133.36,77,12.51
+2025-04-19,iPadOS,Germany,Returning User,9,32.27,93,386.84
+2024-12-10,iPadOS,Brazil,Dormant User,38,46.16,197,115.28
+2024-09-22,Android,Brazil,Dormant User,9,136.34,52,183.76
+2024-02-24,Android,United States,Churned User,33,50.67,86,36.79
+2024-08-09,iPadOS,Japan,Churned User,17,32.86,60,163.65
+2025-06-11,Android,Japan,Dormant User,2,98.66,93,219.23
+2025-03-10,Android,Germany,Churned User,2,31.27,216,310.88
+2024-05-20,Huawei AppGallery,Nigeria,Power User,15,152.46,34,410.82
+2024-08-27,Huawei AppGallery,India,Churned User,19,20.91,215,324.06
+2024-04-17,Android,Canada,Dormant User,21,119.99,69,74.41
+2024-01-14,iOS,United States,Power User,34,132.86,195,32.4
+2025-05-01,iOS,Canada,Power User,25,162.04,173,107.14
+2024-01-31,iOS,Canada,Returning User,6,157.14,65,200.1
+2024-03-22,iOS,Nigeria,New User,9,139.19,226,475.46
+2024-09-29,iPadOS,Germany,Churned User,32,94.02,228,199.75
+2024-08-29,Huawei AppGallery,United States,Returning User,35,72.42,163,446.92
+2025-03-24,iOS,United States,Dormant User,6,116.5,112,229.92
+2024-01-10,Huawei AppGallery,Germany,Returning User,18,176.78,68,262.46
+2024-04-15,iOS,Brazil,New User,11,12.84,241,237.81
+2025-05-17,iOS,United States,Churned User,6,17.75,70,213.56
+2024-01-15,Android,Japan,Returning User,9,158.36,1,334.99
+2024-11-02,iPadOS,Japan,New User,37,44.91,194,4.3
+2024-01-03,Android,United States,Churned User,3,119.85,8,352.08
+2025-06-17,Android,United States,New User,24,60.88,125,75.3
+2024-06-11,iPadOS,United States,Returning User,29,173.23,179,170.19
+2024-02-10,iOS,Germany,Dormant User,40,1.39,134,192.14
+2025-05-25,Android,Mexico,Churned User,36,6.46,141,403.56
+2024-09-13,Android,Nigeria,Churned User,33,104.3,158,251.66
+2024-04-19,Huawei AppGallery,Canada,Returning User,18,131.75,119,120.54
+2025-06-17,Android,Mexico,Dormant User,23,14.92,202,64.69
+2024-10-23,iPadOS,India,Returning User,20,52.19,178,166.23
+2024-09-22,Huawei AppGallery,Canada,Power User,3,35.78,21,391.23
+2024-12-02,iPadOS,Nigeria,New User,15,54.72,14,410.85
+2024-08-19,iPadOS,Mexico,Returning User,39,35.16,220,309.3
+2024-01-17,Android,Mexico,New User,25,104.62,80,155.93
+2025-01-22,Android,Mexico,Power User,5,49.41,140,174.93
+2024-07-14,Android,Mexico,Dormant User,22,35.23,134,59.26
+2024-12-17,iPadOS,India,Returning User,26,81.06,133,425.27
+2024-05-15,Huawei AppGallery,Canada,Power User,32,83.15,159,42.36
+2024-08-06,Huawei AppGallery,Germany,New User,25,121.47,48,330.81
+2024-08-28,iPadOS,Canada,New User,28,173.2,79,68.8
+2025-05-20,Android,Brazil,Dormant User,11,131.15,220,123.2
+2024-07-19,iPadOS,Nigeria,Churned User,10,46.26,97,73.91
+2024-11-14,Huawei AppGallery,Nigeria,Power User,8,28.86,2,329.48
+2024-06-06,iOS,Brazil,Dormant User,36,40.23,75,496.04
+2024-03-05,iPadOS,Nigeria,Churned User,4,48.75,10,10.66
+2025-02-08,Android,Japan,Dormant User,15,17.45,77,480.22
+2024-08-02,iPadOS,Canada,New User,31,7.23,10,485.56
+2025-01-11,iOS,Mexico,Returning User,23,29.33,7,457.69
+2024-09-29,iPadOS,Germany,Returning User,39,160.26,47,361.34
+2025-02-06,iOS,India,Returning User,2,63.03,112,32.8
+2025-05-21,iPadOS,United States,Churned User,11,36.53,208,49.03
+2024-07-05,Android,Brazil,New User,18,139.87,146,160.12
+2024-07-31,Android,Nigeria,Returning User,25,5.61,106,117.13
+2024-05-14,Huawei AppGallery,Brazil,Dormant User,10,81.98,247,161.45
+2024-04-01,iPadOS,Germany,Dormant User,35,41.59,167,422.99
+2025-04-15,iOS,Japan,New User,2,80.95,150,166.96
+2024-02-13,iPadOS,Nigeria,Returning User,9,58.04,188,305.71
+2024-02-27,Android,Canada,Churned User,30,86.48,163,434.68
+2024-12-02,Huawei AppGallery,Japan,Dormant User,4,121.03,237,294.57
+2024-11-22,Android,Brazil,Churned User,22,50.6,130,389.2

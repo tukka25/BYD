@@ -1,241 +1,241 @@
-Sale Date,Store Region,Product Category,Payment Method,Units Sold,Unit Price,Total Revenue,Discount Amount
-2024-09-14,West Coast,Beauty,Cash,54,1474.86,11097.52,438.85
-2024-10-23,Southeast,Sporting Goods,Debit Card,59,1842.56,18497.63,397.09
-2025-04-20,Mountain,Sporting Goods,Mobile Wallet,95,973.17,3546.47,267.99
-2024-05-31,Midwest,Home Goods,Gift Card,64,989.81,7139.86,279.82
-2024-06-05,Southwest,Electronics,Cash,236,1182.11,3728.73,438.83
-2025-05-01,West Coast,Home Goods,Credit Card,238,108.04,17379.01,227.8
-2024-05-22,Southeast,Electronics,Debit Card,42,1082.69,5501.29,216.67
-2025-06-17,Southwest,Apparel,Gift Card,140,58.52,7424.86,121.06
-2024-05-06,Mountain,Beauty,Cash,40,1052.46,1270.8,165.79
-2024-04-30,Northeast,Electronics,Mobile Wallet,47,1663.94,4125.86,205.17
-2024-10-14,Northeast,Home Goods,Mobile Wallet,66,1236.13,18754.09,61.66
-2024-04-09,Southeast,Grocery,Credit Card,89,1430.18,1665.17,224.43
-2024-12-12,Midwest,Grocery,Gift Card,137,124.87,13185.8,346.68
-2025-05-05,Mountain,Home Goods,Gift Card,69,1583.1,16807.61,86.39
-2024-12-21,Northeast,Grocery,Credit Card,3,759.57,3462.82,405.37
-2024-09-28,Southeast,Electronics,Debit Card,35,1079.98,12593.5,280.54
-2024-01-20,West Coast,Home Goods,Debit Card,78,644.25,6058.39,122.69
-2025-04-14,Southwest,Apparel,Mobile Wallet,248,1543.1,18730.52,435.0
-2025-05-11,Mountain,Home Goods,Gift Card,202,358.98,10399.35,185.45
-2024-11-13,Midwest,Beauty,Gift Card,180,1487.61,16300.08,473.18
-2025-01-29,West Coast,Electronics,Cash,116,1725.84,2699.89,469.5
-2024-10-27,Southeast,Apparel,Cash,234,1537.89,502.32,379.46
-2024-11-01,Mountain,Grocery,Cash,75,881.96,16091.05,481.57
-2024-03-29,Midwest,Beauty,Mobile Wallet,158,1183.72,4775.45,90.45
-2025-02-12,West Coast,Sporting Goods,Mobile Wallet,48,959.37,19030.0,91.4
-2024-02-29,West Coast,Beauty,Gift Card,171,646.57,19759.39,384.47
-2025-04-25,Mountain,Beauty,Gift Card,86,394.22,12267.06,79.12
-2025-04-30,Southwest,Sporting Goods,Debit Card,216,1150.23,5162.17,120.37
-2025-01-08,Northeast,Grocery,Credit Card,181,451.39,2501.6,427.87
-2024-04-30,Northeast,Beauty,Gift Card,221,1880.67,16042.96,322.65
-2025-01-23,West Coast,Beauty,Debit Card,63,203.91,19347.54,228.77
-2024-07-04,Northeast,Electronics,Gift Card,117,1562.16,7828.3,160.02
-2024-06-09,Southeast,Electronics,Mobile Wallet,71,1878.24,2543.19,162.93
-2025-06-11,Northeast,Grocery,Credit Card,102,395.99,12685.06,330.34
-2025-06-23,Southeast,Grocery,Debit Card,193,593.66,170.24,314.75
-2024-11-28,Southeast,Electronics,Credit Card,158,1987.94,6085.53,96.49
-2025-05-12,Southwest,Apparel,Mobile Wallet,154,619.58,14899.8,290.93
-2024-05-19,Northeast,Grocery,Cash,225,1165.06,5042.79,345.2
-2024-04-24,Mountain,Sporting Goods,Debit Card,184,1191.75,12869.71,372.22
-2025-01-22,Mountain,Apparel,Credit Card,217,319.97,10351.66,186.32
-2025-01-24,Mountain,Grocery,Cash,95,1823.99,7407.96,62.05
-2024-09-17,Northeast,Grocery,Cash,82,617.53,15762.97,142.02
-2024-04-02,Mountain,Beauty,Mobile Wallet,54,727.25,3964.67,141.57
-2024-06-17,Mountain,Grocery,Mobile Wallet,204,311.83,11526.14,393.32
-2024-05-31,West Coast,Sporting Goods,Debit Card,128,1776.97,2053.94,310.67
-2024-05-01,Southwest,Sporting Goods,Mobile Wallet,62,1559.29,2271.17,219.37
-2024-04-26,Midwest,Sporting Goods,Cash,10,833.57,7134.68,55.09
-2024-11-28,West Coast,Grocery,Mobile Wallet,89,277.74,3180.73,272.37
-2025-01-05,Midwest,Sporting Goods,Mobile Wallet,8,991.25,13938.64,244.44
-2025-01-13,Midwest,Beauty,Mobile Wallet,141,1417.18,844.89,168.8
-2024-10-09,Southeast,Apparel,Cash,87,340.88,7769.68,34.67
-2025-01-17,Northeast,Home Goods,Mobile Wallet,115,1863.99,10845.06,120.37
-2024-12-10,Southwest,Sporting Goods,Cash,34,820.45,9783.38,182.29
-2025-06-18,Northeast,Beauty,Gift Card,117,713.99,15357.94,492.97
-2024-01-03,Southwest,Electronics,Cash,117,1040.0,17432.92,450.14
-2024-12-11,Mountain,Apparel,Debit Card,74,1153.97,15210.07,232.51
-2024-05-26,Southwest,Home Goods,Mobile Wallet,89,1893.85,2765.81,170.47
-2024-06-16,Southeast,Grocery,Mobile Wallet,228,1972.27,1289.83,334.54
-2024-08-15,Midwest,Electronics,Cash,23,884.16,12453.41,162.94
-2024-08-15,Southwest,Electronics,Credit Card,122,51.69,7864.22,451.24
-2024-07-15,Southwest,Apparel,Debit Card,90,40.99,6940.11,143.39
-2025-03-22,Southwest,Electronics,Gift Card,35,1584.97,12620.69,393.1
-2024-10-28,Southwest,Beauty,Gift Card,173,1963.99,10173.92,417.16
-2024-11-20,West Coast,Beauty,Credit Card,215,1141.39,2362.7,475.72
-2024-01-09,Mountain,Grocery,Gift Card,63,769.15,10875.66,179.82
-2025-03-27,Northeast,Sporting Goods,Mobile Wallet,215,1852.25,8111.07,227.78
-2025-03-06,Midwest,Home Goods,Cash,16,1102.13,17574.18,182.82
-2024-06-08,Mountain,Home Goods,Gift Card,182,642.24,10306.18,356.69
-2024-05-15,Midwest,Beauty,Mobile Wallet,13,568.46,16372.89,325.79
-2024-10-29,Midwest,Electronics,Mobile Wallet,245,1415.5,9406.14,345.89
-2024-02-14,Southeast,Electronics,Cash,239,620.79,9109.35,422.57
-2024-02-09,Southwest,Electronics,Credit Card,159,923.21,4772.62,332.14
-2025-02-16,Northeast,Home Goods,Debit Card,73,558.89,17244.98,372.78
-2024-09-20,Southwest,Beauty,Mobile Wallet,55,879.29,2775.86,75.1
-2025-04-23,West Coast,Home Goods,Credit Card,19,911.38,8349.17,111.25
-2024-04-21,Northeast,Apparel,Cash,222,902.47,11442.81,474.13
-2024-11-14,Northeast,Grocery,Credit Card,204,1217.76,17977.22,318.37
-2024-11-26,Midwest,Sporting Goods,Gift Card,118,103.35,14412.45,79.38
-2024-05-24,Northeast,Apparel,Gift Card,99,130.9,9143.93,457.26
-2024-02-20,Midwest,Electronics,Debit Card,85,1738.95,18615.12,110.43
-2024-02-06,Southeast,Grocery,Mobile Wallet,53,410.58,4408.44,305.56
-2024-11-23,Midwest,Electronics,Mobile Wallet,112,1654.85,8058.94,421.39
-2025-01-25,West Coast,Beauty,Gift Card,248,474.89,2572.7,284.73
-2024-12-21,Northeast,Electronics,Credit Card,124,809.2,673.29,482.59
-2024-03-21,Southwest,Electronics,Mobile Wallet,177,646.03,19133.1,365.82
-2025-06-09,Southeast,Beauty,Credit Card,85,439.24,15370.58,318.71
-2024-06-29,West Coast,Grocery,Cash,97,267.9,5903.09,264.43
-2025-01-27,Mountain,Beauty,Debit Card,35,1769.1,421.73,211.87
-2024-08-18,Midwest,Home Goods,Cash,221,960.46,13473.79,185.9
-2024-01-20,Southwest,Apparel,Mobile Wallet,234,1284.18,12354.72,365.86
-2024-02-05,Mountain,Apparel,Credit Card,76,1046.19,9019.7,375.11
-2024-12-25,West Coast,Sporting Goods,Credit Card,176,632.55,14486.05,17.77
-2024-10-30,Southwest,Apparel,Credit Card,48,224.19,4815.73,177.03
-2024-08-20,West Coast,Home Goods,Mobile Wallet,133,160.68,2875.83,29.66
-2024-05-12,Midwest,Apparel,Cash,197,1851.71,15409.97,112.88
-2024-01-05,Midwest,Sporting Goods,Mobile Wallet,117,395.44,15128.29,251.68
-2025-01-23,Southwest,Home Goods,Gift Card,116,90.11,10408.3,386.06
-2024-03-24,Southeast,Apparel,Mobile Wallet,153,563.12,19471.68,278.0
-2024-03-21,Midwest,Apparel,Cash,213,1455.74,12775.05,54.22
-2024-02-27,Northeast,Beauty,Mobile Wallet,211,777.85,840.72,490.59
-2024-05-05,Midwest,Apparel,Gift Card,187,115.74,5636.6,293.41
-2025-01-20,Southeast,Electronics,Gift Card,183,1036.46,17556.14,236.35
-2024-05-18,West Coast,Home Goods,Gift Card,241,1396.9,3877.31,179.84
-2025-04-08,Southeast,Beauty,Mobile Wallet,243,1438.68,8956.49,71.17
-2024-04-12,Southeast,Electronics,Credit Card,106,1076.97,8932.23,461.62
-2025-06-19,Midwest,Beauty,Mobile Wallet,22,48.09,12335.19,162.42
-2024-12-01,Southwest,Electronics,Gift Card,37,217.67,11399.38,247.61
-2025-02-16,Southeast,Home Goods,Credit Card,62,1305.36,19808.75,58.09
-2025-04-02,Mountain,Sporting Goods,Cash,66,247.75,4212.62,452.01
-2024-05-12,Southwest,Sporting Goods,Gift Card,178,980.73,11235.48,291.15
-2025-04-17,Southwest,Grocery,Credit Card,138,488.25,6413.59,134.63
-2025-02-25,Northeast,Sporting Goods,Gift Card,142,398.11,1788.46,406.86
-2024-02-18,West Coast,Sporting Goods,Credit Card,19,1398.66,657.92,92.37
-2025-05-20,Northeast,Sporting Goods,Debit Card,52,362.1,5097.87,259.94
-2025-01-16,Northeast,Electronics,Cash,131,175.65,9731.32,152.02
-2024-08-07,Mountain,Beauty,Cash,238,1512.91,6831.16,160.63
-2024-05-25,Mountain,Electronics,Debit Card,147,420.79,17338.96,99.21
-2024-09-07,Southwest,Grocery,Mobile Wallet,119,1317.13,10589.64,266.45
-2024-02-17,Midwest,Electronics,Cash,131,434.46,1500.96,19.95
-2025-01-03,Southeast,Sporting Goods,Credit Card,19,1668.06,3127.89,35.78
-2024-07-02,Midwest,Grocery,Cash,176,893.86,16986.11,359.85
-2025-04-07,Mountain,Beauty,Debit Card,244,569.94,2419.06,303.24
-2025-04-11,Northeast,Electronics,Gift Card,220,678.35,13761.2,218.1
-2024-12-22,Mountain,Beauty,Mobile Wallet,34,1447.68,17503.93,84.56
-2024-06-17,Southwest,Apparel,Gift Card,154,430.52,19244.23,169.84
-2024-09-11,Northeast,Grocery,Cash,243,1453.86,13722.76,401.38
-2024-12-23,Southwest,Grocery,Debit Card,66,222.8,19367.46,309.15
-2024-09-24,Northeast,Sporting Goods,Debit Card,189,726.26,9056.46,274.52
-2025-04-16,West Coast,Grocery,Gift Card,2,547.25,385.13,414.99
-2024-10-06,Mountain,Beauty,Cash,160,1975.54,3563.11,387.13
-2024-09-30,Northeast,Electronics,Cash,153,1158.2,19542.38,301.72
-2024-09-27,Southeast,Apparel,Cash,110,744.37,19825.34,495.53
-2024-05-13,Southeast,Sporting Goods,Gift Card,133,588.75,2538.03,166.42
-2024-01-31,Southeast,Grocery,Debit Card,174,1846.03,11332.18,199.23
-2024-01-22,Southwest,Apparel,Debit Card,186,1165.33,1489.42,116.25
-2024-01-01,Midwest,Sporting Goods,Gift Card,93,436.25,4131.78,402.15
-2024-05-17,Southeast,Beauty,Mobile Wallet,38,1377.44,4350.13,419.6
-2025-05-12,Southwest,Grocery,Credit Card,215,447.32,12560.93,288.75
-2024-02-29,Northeast,Sporting Goods,Credit Card,238,1581.55,8842.34,11.45
-2025-04-04,Northeast,Home Goods,Gift Card,172,30.73,14329.21,94.54
-2025-02-03,Northeast,Apparel,Mobile Wallet,12,1891.66,8533.65,364.53
-2025-02-27,Southeast,Grocery,Credit Card,228,1127.05,9296.82,246.56
-2024-06-26,Northeast,Sporting Goods,Cash,50,1489.84,967.08,67.35
-2024-04-06,Southwest,Sporting Goods,Credit Card,41,1244.31,11844.44,296.28
-2024-11-28,Southwest,Apparel,Mobile Wallet,95,1366.4,13985.03,129.74
-2024-04-28,Mountain,Electronics,Cash,181,805.06,7501.57,175.91
-2024-04-02,West Coast,Sporting Goods,Credit Card,54,1679.38,15354.48,145.07
-2025-01-09,Mountain,Sporting Goods,Gift Card,79,1471.91,13530.28,479.89
-2025-05-16,Southwest,Sporting Goods,Credit Card,76,298.47,10877.28,315.41
-2024-07-06,Mountain,Grocery,Mobile Wallet,33,1613.44,15522.09,122.02
-2025-03-17,West Coast,Electronics,Credit Card,119,1769.2,17841.18,481.08
-2025-04-21,Southwest,Grocery,Cash,48,1176.39,11506.56,189.75
-2025-01-30,Southwest,Sporting Goods,Credit Card,221,144.98,5323.69,309.44
-2024-11-27,West Coast,Electronics,Debit Card,60,288.88,16857.49,207.27
-2024-12-20,Mountain,Electronics,Mobile Wallet,150,1520.48,11735.59,265.25
-2024-08-25,Southwest,Electronics,Cash,172,1278.61,5496.64,239.62
-2024-08-16,West Coast,Electronics,Credit Card,36,1170.14,8635.91,456.33
-2024-08-17,Northeast,Apparel,Mobile Wallet,27,814.26,17512.62,479.13
-2024-04-12,Southeast,Grocery,Debit Card,108,554.23,14079.58,203.6
-2024-08-19,Southeast,Apparel,Cash,160,1780.39,7572.28,411.45
-2024-10-13,Mountain,Beauty,Mobile Wallet,104,1100.85,15796.77,285.94
-2024-10-13,Southeast,Beauty,Mobile Wallet,21,605.02,16363.39,277.41
-2024-03-20,Mountain,Home Goods,Cash,138,122.0,19599.25,81.77
-2025-05-19,Midwest,Grocery,Gift Card,85,604.8,17935.56,340.94
-2024-03-17,Midwest,Apparel,Debit Card,185,1020.74,10252.49,73.33
-2024-09-12,Southeast,Grocery,Credit Card,29,1947.98,10670.81,339.45
-2024-03-27,Northeast,Apparel,Mobile Wallet,183,1562.57,14107.32,401.01
-2025-01-26,Southeast,Home Goods,Cash,3,1847.13,7061.87,219.26
-2024-12-09,Mountain,Home Goods,Cash,141,653.72,7006.28,400.29
-2025-04-07,Northeast,Sporting Goods,Gift Card,148,968.74,132.86,485.08
-2024-02-09,West Coast,Sporting Goods,Cash,190,761.94,3247.75,233.06
-2024-08-08,Mountain,Grocery,Mobile Wallet,244,1976.29,9501.91,212.99
-2024-02-12,Midwest,Grocery,Debit Card,198,1987.33,15866.7,261.05
-2025-03-22,West Coast,Apparel,Mobile Wallet,101,1693.93,16125.83,348.63
-2024-04-17,Midwest,Sporting Goods,Cash,243,1579.32,10222.88,135.75
-2024-09-19,Northeast,Beauty,Cash,86,461.89,14888.51,331.13
-2024-12-31,Mountain,Sporting Goods,Credit Card,169,55.12,12873.57,0.04
-2025-04-23,West Coast,Electronics,Mobile Wallet,152,1229.75,8912.88,70.97
-2025-01-30,West Coast,Sporting Goods,Mobile Wallet,53,214.83,4315.81,184.97
-2024-05-13,Northeast,Electronics,Debit Card,134,999.03,11826.46,291.76
-2024-07-03,Mountain,Grocery,Credit Card,59,144.08,7949.8,42.7
-2024-10-15,Northeast,Electronics,Mobile Wallet,81,295.58,9323.08,393.9
-2024-11-26,Southwest,Electronics,Gift Card,150,677.6,16783.62,129.1
-2024-09-02,Northeast,Electronics,Gift Card,45,1943.47,1844.03,154.28
-2024-11-19,West Coast,Beauty,Debit Card,30,615.01,10727.52,165.5
-2025-04-19,West Coast,Home Goods,Gift Card,124,150.9,2051.34,464.16
-2024-05-22,Northeast,Electronics,Debit Card,244,1694.2,572.57,231.36
-2025-05-22,Midwest,Home Goods,Debit Card,136,1251.63,267.52,67.96
-2024-06-18,West Coast,Sporting Goods,Gift Card,67,93.03,9101.68,429.22
-2025-03-07,Northeast,Electronics,Mobile Wallet,167,730.14,19868.59,84.38
-2024-07-24,Midwest,Beauty,Gift Card,52,449.43,9042.13,444.67
-2024-07-23,Mountain,Home Goods,Credit Card,136,112.05,14539.96,357.35
-2024-03-17,West Coast,Apparel,Cash,82,1095.36,3466.1,336.37
-2024-02-20,Midwest,Grocery,Debit Card,112,1423.97,10576.4,208.81
-2024-06-14,Midwest,Home Goods,Gift Card,83,1233.93,16370.43,221.8
-2024-06-01,Mountain,Grocery,Mobile Wallet,133,1159.07,12469.69,490.21
-2025-06-09,Southwest,Sporting Goods,Gift Card,53,143.19,8440.83,427.51
-2024-02-08,Mountain,Sporting Goods,Gift Card,39,786.04,12775.5,479.36
-2024-04-28,West Coast,Sporting Goods,Gift Card,142,1677.8,3708.92,207.05
-2025-02-01,Southeast,Apparel,Cash,8,560.36,13714.94,235.47
-2024-10-28,Mountain,Apparel,Gift Card,194,324.31,1151.43,326.98
-2024-07-27,Midwest,Electronics,Gift Card,123,748.58,1878.52,491.9
-2024-10-28,Mountain,Electronics,Mobile Wallet,108,1739.6,4377.8,211.72
-2024-02-09,West Coast,Beauty,Debit Card,80,258.41,9540.19,364.24
-2024-03-05,Northeast,Beauty,Gift Card,56,1114.15,14572.9,287.67
-2025-05-17,Midwest,Electronics,Debit Card,50,932.48,14763.46,403.2
-2024-11-18,Northeast,Apparel,Gift Card,192,803.47,19856.89,130.38
-2025-03-31,Southeast,Apparel,Gift Card,8,1678.27,13374.61,44.2
-2024-02-01,Southeast,Beauty,Gift Card,136,1115.83,4042.31,238.92
-2024-03-25,Mountain,Electronics,Debit Card,46,1900.54,13628.08,370.24
-2024-08-18,Southwest,Electronics,Gift Card,58,530.67,16331.28,167.3
-2024-07-16,Northeast,Home Goods,Gift Card,65,723.75,3769.91,357.21
-2025-03-31,Southwest,Electronics,Cash,156,1845.01,9201.77,30.65
-2024-03-02,Southwest,Home Goods,Debit Card,61,383.96,3364.66,274.81
-2024-06-18,Mountain,Sporting Goods,Cash,65,1619.54,6470.67,253.91
-2024-02-15,Southwest,Home Goods,Gift Card,64,1634.68,15589.0,350.43
-2024-09-09,Southeast,Beauty,Debit Card,217,486.88,2217.51,375.56
-2024-12-27,Mountain,Beauty,Credit Card,83,1216.97,10726.07,410.87
-2025-02-07,Midwest,Home Goods,Gift Card,20,1895.51,14641.29,198.14
-2025-05-08,Mountain,Grocery,Cash,225,3.27,8653.43,76.54
-2025-05-09,West Coast,Sporting Goods,Gift Card,25,1939.96,8792.7,250.97
-2025-02-22,Northeast,Apparel,Credit Card,36,1707.98,14904.33,325.58
-2024-12-22,Midwest,Beauty,Gift Card,1,961.26,15901.31,381.97
-2025-01-02,Southeast,Electronics,Debit Card,234,367.48,18213.93,159.59
-2024-01-01,Southeast,Sporting Goods,Credit Card,109,1525.91,17287.59,73.2
-2024-10-24,Midwest,Beauty,Gift Card,146,1264.72,1691.26,460.22
-2024-08-31,Northeast,Apparel,Cash,209,1346.3,1947.2,149.09
-2024-04-22,Southeast,Home Goods,Credit Card,220,1041.67,19115.17,118.44
-2024-08-02,West Coast,Sporting Goods,Debit Card,73,1225.44,14.83,27.24
-2024-09-02,Midwest,Electronics,Gift Card,34,551.87,11658.69,385.49
-2025-06-19,Southeast,Sporting Goods,Mobile Wallet,156,1334.64,6897.0,105.24
-2024-08-09,Southwest,Home Goods,Mobile Wallet,47,527.31,16782.28,227.15
-2024-11-18,Southeast,Grocery,Cash,168,1876.46,7083.83,102.17
-2025-05-30,Northeast,Sporting Goods,Debit Card,97,361.74,6670.36,383.35
-2024-03-19,Northeast,Electronics,Mobile Wallet,169,61.66,13231.8,346.11
-2024-03-28,Midwest,Electronics,Gift Card,232,1174.88,15291.03,374.83
-2025-03-10,Midwest,Apparel,Mobile Wallet,90,1764.69,14960.56,310.02
-2024-05-26,West Coast,Grocery,Debit Card,24,598.55,481.43,38.47
-2024-04-13,Southwest,Grocery,Gift Card,35,1121.91,478.61,328.47
-2025-05-01,Midwest,Sporting Goods,Gift Card,72,1811.82,7622.18,298.64
+usage_record_date,usage_region,usage_plan_tier,usage_device_type,usage_data_mb,usage_call_minutes,usage_sms_count
+2025-01-07,West,Prepaid Plus,Mobile Hotspot,15349.93,6354.67,3429
+2024-09-19,West,Postpaid Premium,Smartphone,247903.31,152.96,3330
+2024-07-18,North,Business Unlimited,Tablet,62752.05,7929.33,1244
+2024-06-18,Central,Prepaid Plus,Feature Phone,11750.58,1045.83,1966
+2024-06-15,Central,Postpaid Premium,Feature Phone,47406.9,10268.81,2450
+2024-11-16,North,Prepaid Plus,IoT Sensor,186022.36,529.43,3892
+2024-01-27,South,Business Unlimited,Feature Phone,73979.99,6911.49,4016
+2024-10-17,East,Prepaid Plus,Smartphone,2857.05,9142.06,401
+2024-11-21,South,Business Unlimited,Smartphone,162193.03,4066.45,4203
+2025-03-19,Coastal,Prepaid Basic,Smartphone,225500.73,10608.58,2030
+2025-04-20,Central,Business Unlimited,Tablet,80088.08,6280.99,2794
+2024-03-31,Central,Business Unlimited,Mobile Hotspot,122651.76,5917.26,2460
+2025-02-13,North,Prepaid Plus,IoT Sensor,15550.3,7445.5,1792
+2025-03-01,West,Prepaid Basic,Mobile Hotspot,200982.89,11081.88,2432
+2024-03-20,North,Postpaid Premium,Tablet,205727.79,386.35,4358
+2025-05-04,North,Postpaid Premium,Smartphone,205155.74,170.66,4136
+2024-07-12,South,Business Unlimited,Feature Phone,54515.41,7223.95,2800
+2024-03-22,East,Prepaid Plus,IoT Sensor,204595.4,10742.94,4228
+2024-04-15,North,Business Unlimited,Mobile Hotspot,175934.56,2921.05,2058
+2024-12-10,Coastal,Postpaid Standard,Tablet,3691.82,2425.96,743
+2025-02-21,North,Postpaid Premium,IoT Sensor,195674.46,1940.01,2220
+2024-01-12,Coastal,Prepaid Basic,IoT Sensor,212064.27,6857.35,1649
+2024-06-06,Central,Prepaid Basic,Tablet,39437.04,8360.6,875
+2024-08-26,South,Prepaid Plus,Smartphone,33734.81,8021.32,1515
+2025-01-24,Central,Postpaid Premium,Smartphone,187509.26,2735.05,3828
+2024-02-27,West,Prepaid Plus,Feature Phone,139186.34,11811.16,809
+2024-12-19,South,Prepaid Basic,Smartphone,45698.63,4763.33,907
+2024-06-28,Central,Business Unlimited,Smartphone,38709.6,2273.39,1193
+2025-01-28,Coastal,Business Unlimited,Mobile Hotspot,117012.32,1665.86,918
+2025-06-16,North,Postpaid Standard,Feature Phone,236682.42,11139.28,2525
+2025-02-09,South,Prepaid Plus,Feature Phone,196289.03,6107.82,2239
+2024-09-05,West,Prepaid Plus,Mobile Hotspot,96869.91,10252.35,3287
+2025-03-27,North,Postpaid Standard,Tablet,129637.29,4877.07,2032
+2024-06-06,North,Prepaid Basic,Feature Phone,19833.38,9674.22,2566
+2025-01-27,East,Postpaid Premium,Smartphone,186744.14,7153.97,4811
+2024-10-13,West,Postpaid Standard,IoT Sensor,162458.43,1312.54,1609
+2024-10-13,Central,Business Unlimited,IoT Sensor,79550.37,7037.54,3225
+2025-01-05,West,Postpaid Premium,Mobile Hotspot,173690.97,7824.15,1111
+2024-03-25,East,Prepaid Plus,Tablet,18474.55,6023.01,2788
+2024-02-16,West,Postpaid Standard,Smartphone,93258.33,11575.58,2547
+2024-01-04,Coastal,Postpaid Standard,IoT Sensor,158062.8,10814.27,2526
+2025-01-15,West,Prepaid Plus,Feature Phone,81784.09,22.75,2081
+2024-04-28,West,Prepaid Basic,Smartphone,217422.64,4722.05,4551
+2025-02-21,East,Business Unlimited,Smartphone,138315.24,562.03,4525
+2024-10-03,South,Business Unlimited,Mobile Hotspot,2489.0,6245.44,1618
+2024-07-12,South,Prepaid Plus,Smartphone,108526.04,8599.83,3923
+2024-04-12,East,Business Unlimited,Smartphone,108896.58,7023.36,381
+2025-02-06,East,Postpaid Premium,Mobile Hotspot,133548.99,886.33,2813
+2024-10-13,East,Postpaid Standard,Feature Phone,45105.78,11034.7,3312
+2024-10-18,South,Prepaid Basic,IoT Sensor,203770.41,10305.3,4671
+2024-03-28,Coastal,Prepaid Plus,Mobile Hotspot,195676.93,3084.9,3689
+2024-12-17,Coastal,Postpaid Standard,Smartphone,99872.89,7560.2,446
+2025-01-25,North,Prepaid Plus,Mobile Hotspot,231522.58,7072.98,2720
+2024-09-25,South,Prepaid Basic,IoT Sensor,66080.38,11531.53,4589
+2025-03-14,Coastal,Business Unlimited,Mobile Hotspot,136923.26,8607.09,4970
+2025-01-28,South,Prepaid Basic,Mobile Hotspot,209465.91,4049.03,1565
+2024-04-13,North,Business Unlimited,Mobile Hotspot,74036.44,10491.48,4448
+2024-09-14,West,Business Unlimited,Feature Phone,183312.39,5325.68,2966
+2024-10-26,West,Postpaid Standard,Tablet,94107.6,3795.72,4374
+2024-03-02,Coastal,Postpaid Standard,Feature Phone,118385.41,3005.25,3409
+2024-07-16,South,Postpaid Premium,Tablet,237065.1,9051.15,1872
+2024-06-20,South,Prepaid Plus,IoT Sensor,49841.24,7416.04,581
+2025-06-02,Central,Business Unlimited,Mobile Hotspot,227503.16,6582.83,1447
+2025-01-11,North,Postpaid Premium,Smartphone,4333.35,1908.65,2167
+2024-01-15,North,Prepaid Plus,IoT Sensor,81358.18,8415.29,1232
+2025-06-08,North,Postpaid Premium,Mobile Hotspot,44838.45,11490.74,1879
+2024-04-20,Coastal,Postpaid Standard,Smartphone,87907.09,11489.64,2479
+2024-08-28,Central,Prepaid Plus,IoT Sensor,169874.7,3216.29,254
+2025-06-10,West,Prepaid Basic,Feature Phone,130554.83,8865.67,1006
+2024-12-30,South,Postpaid Standard,IoT Sensor,211565.19,6951.24,4632
+2025-06-15,West,Prepaid Basic,Smartphone,153650.18,889.21,4600
+2024-11-30,North,Postpaid Standard,Feature Phone,23672.34,11639.93,2259
+2025-03-08,East,Postpaid Standard,Feature Phone,144027.9,10284.77,3649
+2024-02-24,East,Prepaid Plus,Smartphone,242611.08,11305.32,2804
+2024-01-14,South,Business Unlimited,Smartphone,138524.25,11070.66,3700
+2025-02-19,North,Postpaid Premium,Tablet,146325.33,443.59,3407
+2025-05-05,Central,Prepaid Plus,IoT Sensor,45561.64,11090.26,1090
+2024-03-07,South,Business Unlimited,Mobile Hotspot,144633.73,10765.9,3848
+2024-03-20,Coastal,Business Unlimited,Smartphone,28236.36,6510.64,2558
+2024-01-29,West,Prepaid Plus,IoT Sensor,81971.22,9431.19,1436
+2025-03-20,North,Business Unlimited,Tablet,41343.6,8132.46,1302
+2024-08-06,Central,Prepaid Plus,Mobile Hotspot,128537.66,5742.21,2329
+2025-03-09,East,Postpaid Premium,IoT Sensor,144636.15,4428.98,2011
+2024-01-06,South,Postpaid Standard,IoT Sensor,184462.94,8280.83,1016
+2024-12-28,West,Prepaid Basic,IoT Sensor,32958.12,11238.58,4205
+2024-12-24,East,Prepaid Plus,IoT Sensor,189459.88,9669.63,2881
+2025-01-04,Central,Postpaid Premium,Smartphone,195464.71,6135.84,2750
+2024-10-23,South,Prepaid Basic,Smartphone,116516.13,1017.28,1535
+2025-02-11,North,Prepaid Basic,Mobile Hotspot,19823.12,6932.73,2253
+2025-06-01,Coastal,Postpaid Premium,Tablet,60800.48,5718.85,2335
+2024-07-01,South,Postpaid Premium,Feature Phone,119957.63,8652.99,3889
+2024-05-29,West,Postpaid Premium,Tablet,20815.26,8594.56,2315
+2024-11-03,Central,Postpaid Standard,IoT Sensor,14479.41,9423.09,4864
+2024-04-14,North,Business Unlimited,Feature Phone,84871.15,11606.13,2207
+2024-01-04,Coastal,Prepaid Plus,Smartphone,113748.89,4956.49,900
+2024-03-04,North,Postpaid Premium,Smartphone,121714.77,9118.31,560
+2025-05-19,Coastal,Postpaid Standard,IoT Sensor,200169.63,9598.75,1965
+2025-05-29,South,Business Unlimited,Feature Phone,57216.13,5820.53,389
+2024-03-10,Coastal,Business Unlimited,Mobile Hotspot,13710.47,7375.0,1544
+2025-02-14,South,Business Unlimited,Smartphone,228553.14,9454.99,940
+2024-04-19,Central,Prepaid Plus,Smartphone,98744.1,2981.52,1194
+2024-03-05,Coastal,Prepaid Basic,Feature Phone,41242.88,9970.56,501
+2025-03-25,East,Postpaid Standard,Smartphone,167405.42,6363.09,2860
+2024-01-13,North,Prepaid Basic,Feature Phone,140388.7,187.2,3361
+2025-02-14,Coastal,Business Unlimited,Tablet,210815.63,5706.12,67
+2025-04-21,West,Postpaid Standard,Smartphone,116223.89,9712.12,192
+2024-02-01,Coastal,Postpaid Premium,IoT Sensor,83329.06,10692.2,467
+2024-04-18,Coastal,Postpaid Premium,IoT Sensor,17390.14,295.03,2540
+2024-05-12,East,Prepaid Plus,Tablet,144286.01,5444.88,1726
+2024-04-12,South,Business Unlimited,Smartphone,62253.14,2382.3,588
+2024-08-07,Central,Postpaid Premium,Tablet,215076.16,11128.89,413
+2024-07-14,East,Prepaid Basic,Mobile Hotspot,145262.45,5493.84,3655
+2024-09-12,East,Postpaid Premium,Mobile Hotspot,234551.59,4989.86,3260
+2025-03-31,South,Prepaid Plus,Feature Phone,222034.27,2503.7,2582
+2024-11-05,Central,Postpaid Premium,Smartphone,27766.77,11866.04,311
+2024-03-16,Central,Postpaid Premium,Mobile Hotspot,136000.99,4703.71,410
+2024-07-14,West,Postpaid Premium,Tablet,247623.6,7121.42,1100
+2024-03-25,Central,Prepaid Basic,Tablet,151571.47,6959.04,4580
+2024-08-22,Central,Postpaid Premium,IoT Sensor,113982.3,11030.82,3319
+2024-03-01,Central,Prepaid Basic,Tablet,92246.74,3073.76,378
+2024-09-10,Central,Postpaid Standard,Feature Phone,214061.67,9056.98,3472
+2025-05-11,Central,Postpaid Premium,Tablet,168011.07,6755.27,511
+2024-01-10,South,Business Unlimited,Feature Phone,5615.57,3467.43,2224
+2025-02-09,West,Prepaid Plus,Smartphone,109035.77,9373.23,385
+2024-06-04,Central,Business Unlimited,Mobile Hotspot,203242.45,7589.74,2750
+2024-10-13,East,Postpaid Premium,IoT Sensor,241050.36,8391.96,2147
+2024-04-19,Central,Business Unlimited,IoT Sensor,10101.31,7678.56,3197
+2024-03-12,South,Postpaid Standard,Smartphone,188346.44,1708.45,945
+2025-06-13,East,Prepaid Plus,Tablet,186863.99,7205.74,4626
+2025-01-08,North,Postpaid Premium,Tablet,191506.42,7017.47,4065
+2025-02-18,South,Postpaid Premium,Smartphone,246015.72,10881.69,2284
+2025-03-05,East,Prepaid Plus,Mobile Hotspot,229268.75,2053.29,3379
+2024-04-22,West,Postpaid Standard,Smartphone,54701.7,4651.24,2385
+2025-03-25,Coastal,Postpaid Premium,IoT Sensor,212798.6,587.51,263
+2024-07-07,North,Business Unlimited,Feature Phone,241481.13,8169.48,2042
+2024-08-27,North,Postpaid Premium,Smartphone,44532.28,10266.25,2159
+2025-01-03,Coastal,Postpaid Standard,Tablet,51965.43,5917.02,1885
+2025-06-10,East,Prepaid Plus,Feature Phone,140168.79,9996.71,372
+2024-06-01,East,Prepaid Plus,Tablet,9320.54,4574.63,3241
+2024-04-25,East,Postpaid Premium,Mobile Hotspot,202458.95,8196.58,3186
+2024-04-09,East,Prepaid Plus,Smartphone,98807.41,2892.21,2352
+2024-12-23,West,Prepaid Basic,Tablet,74600.24,356.55,2236
+2024-07-14,East,Business Unlimited,IoT Sensor,8128.85,3907.71,3270
+2024-07-16,West,Prepaid Basic,Feature Phone,85798.69,7833.54,4279
+2024-10-06,West,Prepaid Basic,Smartphone,237539.86,6535.86,1537
+2024-01-21,East,Postpaid Premium,Smartphone,217462.48,3983.3,3547
+2024-06-03,North,Business Unlimited,Smartphone,6617.15,2193.79,1526
+2024-12-20,East,Prepaid Basic,Feature Phone,114653.3,9326.32,1583
+2024-05-01,South,Prepaid Plus,Feature Phone,190594.46,11540.51,449
+2025-02-25,South,Prepaid Plus,Smartphone,124210.16,8658.51,1659
+2024-10-08,Central,Business Unlimited,Feature Phone,220606.29,10216.58,747
+2024-10-23,Coastal,Postpaid Premium,Feature Phone,68135.43,3268.54,3695
+2024-06-29,North,Business Unlimited,Smartphone,150653.1,8130.44,543
+2025-04-13,South,Prepaid Basic,Smartphone,186586.0,8370.42,4432
+2024-05-29,North,Prepaid Plus,Tablet,45228.94,5147.83,1767
+2024-11-02,Central,Prepaid Basic,IoT Sensor,189360.7,6432.65,3445
+2025-01-30,North,Prepaid Basic,Feature Phone,72992.43,7.75,2655
+2024-05-03,Coastal,Prepaid Basic,IoT Sensor,128441.58,11216.43,3694
+2024-04-05,North,Prepaid Plus,Mobile Hotspot,112761.72,9437.82,3101
+2024-03-16,West,Prepaid Plus,Smartphone,237879.84,6152.64,3553
+2024-12-27,West,Business Unlimited,Tablet,169056.03,8488.97,2123
+2025-03-06,North,Postpaid Premium,IoT Sensor,229992.59,9796.77,4
+2024-12-03,Coastal,Postpaid Premium,Tablet,26727.81,3533.63,2572
+2025-06-14,North,Prepaid Basic,Feature Phone,106270.0,244.45,2937
+2024-04-27,South,Postpaid Standard,Mobile Hotspot,14453.13,11036.85,302
+2024-08-17,Central,Business Unlimited,Smartphone,237028.77,7610.28,4040
+2024-10-26,East,Postpaid Premium,Feature Phone,53983.25,8493.11,4794
+2025-01-30,North,Postpaid Standard,Feature Phone,43065.73,5369.2,2897
+2024-02-18,East,Postpaid Premium,Smartphone,55809.88,3998.64,2035
+2025-01-19,South,Prepaid Basic,Tablet,169189.7,9166.43,2898
+2024-05-21,Coastal,Postpaid Premium,Smartphone,247343.46,9962.92,1731
+2024-05-19,West,Postpaid Premium,IoT Sensor,110611.37,5826.19,3893
+2025-03-31,South,Prepaid Plus,Mobile Hotspot,13505.53,5079.42,2635
+2024-07-02,West,Postpaid Premium,Mobile Hotspot,54324.85,10766.81,636
+2025-01-20,Central,Prepaid Basic,IoT Sensor,164661.44,10962.01,3444
+2025-01-08,West,Business Unlimited,Smartphone,169375.73,4971.86,1575
+2025-04-18,Coastal,Prepaid Basic,Smartphone,220979.8,1842.4,678
+2025-02-23,East,Postpaid Standard,Feature Phone,229303.36,10688.83,3221
+2025-03-02,West,Business Unlimited,Smartphone,80585.21,9800.94,1148
+2024-01-07,North,Business Unlimited,Mobile Hotspot,173703.88,6129.14,4750
+2025-01-12,South,Prepaid Basic,Feature Phone,181613.85,6910.01,3350
+2025-02-22,South,Business Unlimited,Mobile Hotspot,240729.07,3482.39,2743
+2025-06-17,Coastal,Prepaid Plus,Tablet,217723.96,10564.08,3341
+2025-03-20,Central,Postpaid Standard,IoT Sensor,94722.6,6130.25,484
+2024-12-27,Central,Prepaid Plus,Feature Phone,214995.19,8452.61,2685
+2024-04-25,West,Prepaid Plus,Tablet,137359.35,5121.38,1928
+2025-01-12,Coastal,Prepaid Basic,Mobile Hotspot,165264.68,6871.23,2790
+2024-10-31,South,Postpaid Standard,IoT Sensor,178212.6,7106.85,887
+2025-06-05,North,Prepaid Basic,Smartphone,43580.5,3448.96,3620
+2024-08-03,South,Prepaid Basic,Smartphone,71763.3,1300.96,2247
+2024-01-13,Central,Postpaid Premium,Feature Phone,107977.49,9144.47,1296
+2024-06-01,South,Prepaid Plus,Mobile Hotspot,35787.46,2689.64,1141
+2025-06-05,Coastal,Prepaid Plus,IoT Sensor,211453.86,6770.18,1271
+2024-01-06,South,Postpaid Standard,Mobile Hotspot,211560.18,10008.47,1904
+2024-02-02,Coastal,Prepaid Basic,Tablet,34238.53,2208.05,2836
+2025-06-02,North,Business Unlimited,Tablet,196239.28,4897.99,2339
+2024-12-02,South,Prepaid Plus,Mobile Hotspot,65648.07,9033.18,626
+2024-06-05,North,Prepaid Basic,IoT Sensor,213180.03,4804.53,814
+2024-06-02,South,Prepaid Basic,IoT Sensor,203118.97,7259.34,3313
+2025-01-29,South,Prepaid Plus,Tablet,32223.87,7657.71,4480
+2024-06-30,South,Business Unlimited,IoT Sensor,87381.36,5643.84,559
+2024-03-13,Coastal,Postpaid Premium,Feature Phone,231000.39,10036.08,2123
+2025-06-19,Coastal,Postpaid Premium,Mobile Hotspot,1394.85,123.27,2045
+2025-02-16,West,Postpaid Premium,Tablet,120736.68,9098.63,193
+2025-04-20,West,Postpaid Standard,Feature Phone,131262.62,1216.28,1382
+2024-12-14,East,Prepaid Plus,IoT Sensor,13213.94,5310.15,2782
+2025-04-25,West,Postpaid Standard,IoT Sensor,126984.82,2633.12,1230
+2024-01-31,East,Postpaid Standard,IoT Sensor,171908.57,15.03,1125
+2025-02-13,North,Prepaid Basic,IoT Sensor,62524.29,7316.94,509
+2024-09-06,Coastal,Prepaid Basic,Smartphone,4513.43,1991.0,2312
+2025-03-23,North,Prepaid Basic,Mobile Hotspot,20289.25,2583.79,2912
+2025-02-14,Coastal,Prepaid Basic,Mobile Hotspot,38142.4,4496.53,3434
+2024-03-12,South,Business Unlimited,Mobile Hotspot,104544.38,5487.35,4418
+2024-06-15,East,Prepaid Plus,Feature Phone,120082.65,9982.79,3309
+2024-05-19,West,Postpaid Premium,Feature Phone,243971.27,8990.84,4760
+2024-09-09,Coastal,Postpaid Premium,IoT Sensor,30773.85,2030.1,165
+2024-03-07,Coastal,Postpaid Standard,Mobile Hotspot,154465.99,1429.45,4600
+2024-01-05,North,Business Unlimited,Feature Phone,185761.38,255.29,3660
+2025-01-03,East,Prepaid Basic,Mobile Hotspot,40237.13,7729.07,4451
+2024-02-04,South,Prepaid Plus,Tablet,220699.62,8284.33,3821
+2024-06-13,Coastal,Prepaid Basic,Tablet,88695.12,6213.17,4747
+2024-07-31,Central,Prepaid Basic,IoT Sensor,249798.11,9688.03,3062
+2024-07-19,West,Prepaid Basic,Tablet,229692.02,773.7,483
+2024-11-29,South,Postpaid Standard,IoT Sensor,62936.97,11101.37,490
+2025-03-11,North,Prepaid Plus,IoT Sensor,55871.29,8605.84,4099
+2024-06-11,Central,Postpaid Standard,Feature Phone,8007.85,7620.32,2609
+2024-07-29,West,Postpaid Premium,Feature Phone,90211.67,126.23,4516
+2025-04-15,Central,Prepaid Plus,Smartphone,159767.1,2704.58,3048
+2025-01-13,West,Prepaid Basic,Feature Phone,84076.23,9130.35,741
+2025-05-06,Central,Postpaid Standard,Tablet,179149.7,9759.72,3104
+2024-02-28,South,Prepaid Plus,Mobile Hotspot,93168.39,4501.34,4710
+2025-03-07,Central,Business Unlimited,Tablet,149096.02,7147.78,4961
+2025-01-23,West,Postpaid Premium,Feature Phone,9931.98,5793.76,4237
+2024-06-21,East,Prepaid Plus,IoT Sensor,183671.9,1018.49,3754
+2024-06-12,Coastal,Prepaid Plus,Feature Phone,169493.32,5453.31,1658
+2024-06-09,Coastal,Business Unlimited,Mobile Hotspot,129894.93,7367.12,2792
+2024-12-14,East,Prepaid Plus,Feature Phone,41520.0,10270.98,724
+2024-07-18,South,Prepaid Basic,Smartphone,191604.42,10783.69,3716
+2024-02-14,South,Prepaid Plus,Feature Phone,241539.56,3723.9,2566
+2024-06-05,Coastal,Postpaid Standard,Feature Phone,64997.47,3947.45,2771

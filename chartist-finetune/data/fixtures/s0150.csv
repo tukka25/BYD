@@ -1,241 +1,241 @@
-reading_date,site_name,energy_source,building_zone,total_energy_consumed_kwh,peak_demand_kw,energy_cost_usd,carbon_emissions_kg
-2024-05-22,South Warehouse,wind_power,loading_dock,2137.84,1718.07,22336.42,67205.18
-2024-01-19,West Office Campus,grid_electricity,server_room,216814.15,4427.9,48232.71,26547.84
-2024-03-30,East Distribution Center,solar_pv,server_room,199504.03,3436.29,2424.4,71108.96
-2024-02-15,Riverside Factory,natural_gas,production_floor,47818.72,6413.7,45730.91,86504.24
-2024-08-01,North Plant,wind_power,server_room,184848.64,7945.83,12982.77,57399.85
-2025-02-27,North Plant,diesel_backup,cafeteria,134904.67,6038.24,26154.82,68837.13
-2024-07-10,North Plant,natural_gas,server_room,154735.92,5537.73,30426.03,81003.32
-2024-06-11,North Plant,grid_electricity,production_floor,155162.35,5519.11,40868.82,77914.37
-2025-06-17,North Plant,solar_pv,office_area,143333.17,1288.39,33094.79,13857.03
-2024-11-23,East Distribution Center,diesel_backup,cafeteria,39449.32,11622.9,10918.44,20826.37
-2024-04-27,East Distribution Center,grid_electricity,warehouse_storage,150481.21,11818.29,24788.56,2128.87
-2024-04-02,Central Data Hub,natural_gas,warehouse_storage,9040.69,5806.43,35663.06,41792.42
-2024-10-18,North Plant,diesel_backup,production_floor,67580.53,181.29,7715.65,51922.23
-2024-03-30,Riverside Factory,solar_pv,warehouse_storage,100841.25,7023.95,36861.1,67809.57
-2025-04-08,East Distribution Center,solar_pv,office_area,180399.16,9081.22,2260.78,46225.01
-2024-12-16,South Warehouse,diesel_backup,warehouse_storage,59157.07,1701.53,53212.04,23770.92
-2024-09-25,Central Data Hub,wind_power,server_room,107053.52,1911.92,42805.09,34193.62
-2024-11-10,West Office Campus,grid_electricity,production_floor,124148.11,6659.09,44371.36,27298.87
-2024-06-05,South Warehouse,solar_pv,office_area,114755.56,7822.73,9785.73,24622.64
-2024-12-11,East Distribution Center,diesel_backup,warehouse_storage,192331.45,11080.1,11498.14,61611.35
-2024-10-17,North Plant,solar_pv,warehouse_storage,207324.14,4394.1,28888.51,19380.17
-2024-07-18,North Plant,grid_electricity,cafeteria,19606.29,11016.25,6671.05,5967.46
-2024-11-08,Riverside Factory,wind_power,warehouse_storage,175080.42,8354.8,37214.48,67056.15
-2024-01-02,North Plant,wind_power,cafeteria,237480.86,11431.21,48892.55,69121.18
-2024-10-09,South Warehouse,diesel_backup,cafeteria,48945.97,1973.3,54127.6,51584.67
-2025-05-30,North Plant,grid_electricity,loading_dock,139485.67,10702.85,38799.14,50461.22
-2025-03-15,North Plant,solar_pv,production_floor,163943.99,11840.92,55541.13,84772.17
-2025-01-14,North Plant,natural_gas,loading_dock,124391.88,10776.45,2560.08,53637.88
-2025-04-05,Riverside Factory,solar_pv,server_room,127153.69,6312.24,59024.78,77978.88
-2025-03-02,South Warehouse,natural_gas,warehouse_storage,50941.02,7886.42,13115.95,24982.4
-2024-12-24,North Plant,solar_pv,cafeteria,123461.57,5723.98,14124.29,74856.49
-2024-10-21,North Plant,natural_gas,loading_dock,205882.49,456.84,12554.92,28621.68
-2025-05-07,Central Data Hub,grid_electricity,production_floor,181972.05,2331.8,56771.81,15683.21
-2024-11-15,Riverside Factory,natural_gas,warehouse_storage,223922.09,2312.03,35623.95,52094.05
-2024-03-22,South Warehouse,wind_power,warehouse_storage,53080.5,10226.98,15419.3,33895.65
-2024-11-20,South Warehouse,diesel_backup,cafeteria,163665.96,4385.41,51128.1,75182.86
-2024-01-31,Central Data Hub,natural_gas,production_floor,27147.47,3942.53,44710.56,68089.61
-2025-04-02,West Office Campus,diesel_backup,cafeteria,15267.03,8740.4,26915.93,16386.53
-2024-01-19,South Warehouse,solar_pv,production_floor,148630.31,3751.8,16265.61,29300.22
-2024-12-11,West Office Campus,natural_gas,warehouse_storage,558.97,8495.26,27930.63,53191.59
-2024-08-09,West Office Campus,natural_gas,production_floor,19313.65,4746.75,34560.71,33784.74
-2024-04-03,North Plant,natural_gas,server_room,94741.19,7585.15,1968.66,43170.22
-2024-01-13,North Plant,diesel_backup,office_area,86332.28,2067.98,7691.4,79307.83
-2025-01-31,Central Data Hub,natural_gas,office_area,228880.17,1828.32,23289.79,28404.68
-2024-02-28,Central Data Hub,natural_gas,cafeteria,80312.77,2534.5,8127.14,66405.11
-2024-04-01,Riverside Factory,natural_gas,loading_dock,184291.19,4545.76,26200.91,67467.72
-2024-10-15,East Distribution Center,natural_gas,server_room,227963.78,9628.75,44572.89,32567.55
-2024-03-24,Riverside Factory,grid_electricity,loading_dock,23432.64,3365.63,24265.92,50147.7
-2025-03-17,West Office Campus,grid_electricity,loading_dock,103441.03,10568.81,35330.89,72730.9
-2025-06-13,West Office Campus,grid_electricity,cafeteria,215485.0,1889.31,29702.68,80286.7
-2024-01-05,Riverside Factory,solar_pv,cafeteria,131644.76,11859.71,55497.11,75967.69
-2024-12-06,Riverside Factory,natural_gas,warehouse_storage,28249.56,5031.93,54810.72,52259.85
-2024-08-17,West Office Campus,natural_gas,cafeteria,73540.44,2868.83,12574.33,25428.38
-2025-03-06,West Office Campus,diesel_backup,warehouse_storage,191125.34,6191.22,37353.15,45444.16
-2024-12-11,South Warehouse,natural_gas,server_room,84391.86,7453.32,48410.64,29854.85
-2024-07-20,Central Data Hub,natural_gas,warehouse_storage,110202.39,3718.63,59847.06,9002.64
-2025-04-10,Riverside Factory,diesel_backup,production_floor,210095.51,9662.54,38470.87,35619.59
-2024-02-06,North Plant,solar_pv,loading_dock,183069.17,3017.78,485.37,35980.11
-2024-08-10,East Distribution Center,wind_power,loading_dock,80638.14,3116.55,28257.81,29537.88
-2024-03-11,North Plant,diesel_backup,production_floor,203683.14,10311.52,40787.55,79398.14
-2024-12-22,North Plant,wind_power,production_floor,214569.35,2029.49,58975.65,27381.6
-2025-01-23,South Warehouse,wind_power,server_room,228266.18,11880.94,27316.28,76363.48
-2024-12-28,North Plant,solar_pv,production_floor,79124.68,5997.86,41285.79,16488.1
-2024-07-21,South Warehouse,natural_gas,office_area,224330.7,7779.08,18497.86,74218.41
-2024-10-26,Central Data Hub,wind_power,cafeteria,196675.6,8694.46,19102.18,67890.48
-2024-01-06,East Distribution Center,wind_power,loading_dock,73616.61,204.77,5668.93,21355.43
-2024-10-17,Central Data Hub,solar_pv,office_area,126343.05,10885.14,55147.56,20733.68
-2025-04-16,North Plant,grid_electricity,office_area,94337.58,4149.67,26774.05,65888.26
-2024-08-23,South Warehouse,wind_power,loading_dock,23152.65,11118.35,36402.5,43900.41
-2024-01-27,North Plant,grid_electricity,office_area,142550.06,4100.15,38737.7,50343.43
-2024-11-04,North Plant,wind_power,office_area,157435.31,7167.12,58317.27,31019.69
-2024-05-18,South Warehouse,wind_power,warehouse_storage,195930.2,1045.77,31339.97,33633.87
-2025-05-11,North Plant,grid_electricity,production_floor,102214.08,3499.77,25912.6,4041.58
-2024-08-13,West Office Campus,grid_electricity,office_area,176924.99,5307.42,16173.35,40585.02
-2024-10-24,Central Data Hub,wind_power,loading_dock,248536.93,2939.38,43011.62,2742.31
-2025-03-28,North Plant,grid_electricity,cafeteria,7696.01,2746.03,892.54,77280.73
-2024-05-14,West Office Campus,diesel_backup,cafeteria,210789.51,3543.11,35783.54,82901.72
-2024-06-08,Central Data Hub,grid_electricity,loading_dock,116482.41,4683.21,23257.18,76893.62
-2024-08-23,West Office Campus,natural_gas,cafeteria,135725.03,6092.94,14053.2,85147.34
-2024-12-06,West Office Campus,diesel_backup,server_room,115147.65,6622.93,9541.09,75799.98
-2024-11-07,Central Data Hub,solar_pv,production_floor,22123.17,4907.76,49567.24,80420.49
-2024-10-31,South Warehouse,solar_pv,server_room,170387.67,4798.22,26055.4,25090.52
-2025-03-19,South Warehouse,natural_gas,cafeteria,212687.77,117.32,5125.52,78053.22
-2024-09-23,North Plant,diesel_backup,warehouse_storage,177616.02,5489.16,16953.31,37263.95
-2025-01-01,South Warehouse,diesel_backup,production_floor,93073.86,10338.15,33829.75,47683.93
-2024-07-13,North Plant,solar_pv,cafeteria,194056.03,2748.63,57601.09,14047.24
-2025-02-25,North Plant,wind_power,loading_dock,205317.92,6227.23,46105.97,80960.13
-2024-04-19,West Office Campus,solar_pv,office_area,226655.09,10957.79,45528.81,45466.12
-2025-06-17,Riverside Factory,solar_pv,warehouse_storage,84979.95,6049.46,54784.49,72508.02
-2025-02-22,Central Data Hub,diesel_backup,server_room,196611.51,10223.78,32808.34,24051.27
-2024-06-13,North Plant,grid_electricity,office_area,227136.48,7812.85,8390.88,41124.02
-2024-11-21,Riverside Factory,wind_power,loading_dock,19187.63,2216.86,11139.93,30018.0
-2025-04-22,Riverside Factory,wind_power,loading_dock,49448.03,3982.83,153.92,22837.85
-2025-03-31,East Distribution Center,grid_electricity,loading_dock,155198.09,3666.72,35732.72,78520.09
-2025-02-21,Central Data Hub,grid_electricity,office_area,162879.96,3544.38,10072.69,7700.01
-2025-06-20,West Office Campus,wind_power,production_floor,63049.49,8100.52,7975.22,35849.92
-2024-02-19,South Warehouse,wind_power,cafeteria,89029.51,5907.6,17362.77,71527.46
-2024-01-18,East Distribution Center,grid_electricity,loading_dock,180857.77,5213.71,10884.35,70680.28
-2024-02-15,West Office Campus,grid_electricity,server_room,33138.46,7526.36,50634.15,54230.97
-2024-06-04,Central Data Hub,solar_pv,production_floor,178721.09,8051.19,35518.33,39746.35
-2025-05-30,Riverside Factory,diesel_backup,office_area,78831.7,3999.94,5429.63,29601.33
-2025-05-03,South Warehouse,diesel_backup,production_floor,132487.31,4145.29,50725.09,38878.07
-2024-03-23,West Office Campus,diesel_backup,warehouse_storage,109992.62,8819.36,38784.53,79716.82
-2024-01-19,Central Data Hub,grid_electricity,cafeteria,18108.78,6095.01,8564.24,8345.03
-2025-04-12,North Plant,diesel_backup,warehouse_storage,151009.11,10080.71,13746.55,40725.74
-2025-04-19,North Plant,diesel_backup,production_floor,227145.72,9304.57,37600.86,74920.77
-2025-02-01,North Plant,natural_gas,loading_dock,209042.44,2221.68,31329.8,84314.59
-2024-06-03,West Office Campus,natural_gas,warehouse_storage,212111.88,5685.17,2541.81,35821.14
-2024-11-08,Riverside Factory,natural_gas,office_area,160067.15,5476.49,35083.52,19576.69
-2025-01-31,West Office Campus,grid_electricity,office_area,62603.81,6716.69,46451.15,15549.59
-2024-03-19,South Warehouse,diesel_backup,production_floor,104347.95,4202.54,50909.23,69777.0
-2024-04-02,North Plant,natural_gas,warehouse_storage,107033.6,4302.31,58908.64,80233.74
-2024-12-06,South Warehouse,grid_electricity,server_room,155651.36,60.97,23647.13,13300.78
-2024-05-03,West Office Campus,diesel_backup,cafeteria,4037.86,2872.58,17528.97,76222.96
-2025-05-22,East Distribution Center,grid_electricity,server_room,118914.67,5907.4,29269.34,34427.58
-2024-12-23,Riverside Factory,solar_pv,cafeteria,28472.65,4401.64,12701.46,26569.43
-2024-04-24,East Distribution Center,natural_gas,cafeteria,31670.78,7248.9,40519.76,40908.93
-2024-10-05,Riverside Factory,diesel_backup,cafeteria,2588.2,2631.56,31506.63,36414.88
-2025-02-18,Central Data Hub,wind_power,cafeteria,133494.41,2954.44,45975.28,70635.02
-2025-03-18,Riverside Factory,diesel_backup,loading_dock,52289.13,11670.3,38368.8,51829.16
-2024-07-29,Central Data Hub,natural_gas,loading_dock,154045.49,6611.46,48559.88,65016.9
-2025-03-16,East Distribution Center,wind_power,office_area,245682.39,8058.28,38936.28,48303.5
-2025-01-18,Central Data Hub,natural_gas,server_room,104100.19,5952.01,43124.46,14570.26
-2025-01-07,Central Data Hub,diesel_backup,loading_dock,27009.18,9297.53,9028.34,82587.16
-2024-06-11,North Plant,solar_pv,office_area,10260.32,9734.02,11478.82,79244.61
-2024-01-01,Central Data Hub,natural_gas,server_room,156239.2,2113.38,49569.14,85957.68
-2024-01-23,East Distribution Center,diesel_backup,cafeteria,104531.53,6484.61,42628.57,54138.4
-2025-04-06,East Distribution Center,wind_power,server_room,173102.61,2937.9,29783.67,62042.93
-2025-01-25,North Plant,wind_power,office_area,206151.23,8842.67,4440.7,50275.6
-2024-05-11,East Distribution Center,natural_gas,production_floor,108772.19,5393.45,24319.68,69314.93
-2024-04-11,South Warehouse,diesel_backup,loading_dock,109616.62,2348.58,39939.6,84548.61
-2025-03-07,Riverside Factory,diesel_backup,warehouse_storage,35562.64,1149.98,6668.61,25733.61
-2024-05-19,West Office Campus,natural_gas,office_area,124888.8,1367.68,50970.3,59896.82
-2024-01-14,North Plant,grid_electricity,server_room,165947.04,2186.58,24162.62,57624.27
-2024-03-06,East Distribution Center,diesel_backup,server_room,68356.9,3116.84,25068.67,73897.39
-2024-05-26,Central Data Hub,solar_pv,loading_dock,25142.88,5726.19,46867.95,55491.59
-2024-06-30,Central Data Hub,grid_electricity,loading_dock,118664.88,2653.88,21160.33,76348.61
-2024-01-02,South Warehouse,solar_pv,loading_dock,105063.51,11867.98,22846.94,20591.7
-2025-04-14,North Plant,solar_pv,office_area,140281.42,1838.09,16263.5,479.35
-2025-05-23,Riverside Factory,diesel_backup,loading_dock,33492.97,4878.51,22639.96,59495.44
-2024-02-26,North Plant,solar_pv,office_area,79786.48,4481.21,45453.65,42108.87
-2025-01-07,North Plant,natural_gas,server_room,42281.62,9460.65,18303.89,80297.8
-2025-01-10,Riverside Factory,solar_pv,loading_dock,7849.23,2788.23,46273.63,69582.54
-2024-08-03,North Plant,wind_power,warehouse_storage,224296.6,1246.61,13450.46,68233.64
-2025-03-16,North Plant,grid_electricity,server_room,96685.05,8888.48,3856.12,14352.68
-2024-04-18,East Distribution Center,solar_pv,loading_dock,148897.66,10358.29,49920.56,80144.19
-2025-02-12,Riverside Factory,diesel_backup,office_area,53556.42,9707.89,40936.49,73850.36
-2024-04-28,West Office Campus,solar_pv,production_floor,212931.85,1719.41,21420.32,55681.73
-2025-04-20,East Distribution Center,solar_pv,warehouse_storage,85031.12,11165.21,38702.27,37427.44
-2024-05-05,Central Data Hub,solar_pv,warehouse_storage,160299.75,9242.77,11487.8,19127.55
-2024-11-24,South Warehouse,wind_power,server_room,126805.6,4269.21,9441.54,30696.85
-2024-04-28,North Plant,wind_power,warehouse_storage,146404.65,5077.16,16856.17,42625.61
-2024-11-25,North Plant,solar_pv,office_area,132435.39,2480.84,4328.13,86392.75
-2024-06-08,East Distribution Center,diesel_backup,loading_dock,159444.09,11058.84,52008.09,55914.3
-2025-06-06,Central Data Hub,diesel_backup,loading_dock,142905.04,7529.66,1832.14,33323.26
-2025-03-10,West Office Campus,natural_gas,warehouse_storage,194584.17,5462.08,58363.73,54508.39
-2024-04-16,East Distribution Center,solar_pv,server_room,80215.69,2899.43,52045.12,33296.38
-2024-04-15,East Distribution Center,wind_power,production_floor,161137.99,2218.0,34165.33,26635.01
-2025-02-27,Central Data Hub,solar_pv,server_room,126128.32,589.79,21906.46,14460.74
-2024-01-06,South Warehouse,wind_power,server_room,161671.5,8298.54,41373.78,60960.11
-2025-02-12,East Distribution Center,wind_power,warehouse_storage,160204.67,9192.28,33173.58,42740.09
-2025-03-03,North Plant,natural_gas,loading_dock,174046.55,7597.53,10990.49,63944.86
-2025-04-18,Riverside Factory,solar_pv,loading_dock,144570.35,418.43,12869.54,16995.55
-2025-01-16,Central Data Hub,solar_pv,loading_dock,36590.0,7365.07,41950.53,65963.93
-2024-11-15,Central Data Hub,solar_pv,production_floor,2572.76,6758.06,46213.24,63558.61
-2024-10-16,South Warehouse,wind_power,warehouse_storage,88966.75,8218.23,40227.19,24125.21
-2025-05-03,East Distribution Center,grid_electricity,server_room,94864.52,1780.06,1875.3,7731.59
-2024-01-28,West Office Campus,solar_pv,loading_dock,32419.51,493.6,51297.94,12167.28
-2024-10-26,Central Data Hub,grid_electricity,cafeteria,112357.4,1824.77,55517.89,8804.78
-2025-01-21,East Distribution Center,solar_pv,office_area,189970.67,3046.46,38204.81,67756.2
-2025-01-15,North Plant,grid_electricity,production_floor,161627.08,5139.02,56392.37,33988.67
-2024-11-06,North Plant,diesel_backup,production_floor,120226.77,9048.04,58752.79,70922.25
-2024-03-09,Riverside Factory,wind_power,cafeteria,99136.67,10997.79,9790.0,13442.41
-2024-08-30,Riverside Factory,natural_gas,office_area,127313.69,8256.04,28116.99,59915.87
-2024-03-12,West Office Campus,diesel_backup,warehouse_storage,226581.2,1246.9,59152.53,25607.84
-2025-02-02,East Distribution Center,wind_power,cafeteria,248678.03,7992.46,24032.96,35179.4
-2025-02-03,West Office Campus,natural_gas,warehouse_storage,88565.52,5371.6,42157.81,48711.57
-2024-04-30,South Warehouse,solar_pv,server_room,165535.32,7305.82,9978.58,5016.65
-2024-05-25,East Distribution Center,diesel_backup,warehouse_storage,85144.79,8946.82,35729.53,5760.63
-2024-06-20,Central Data Hub,natural_gas,loading_dock,190371.79,2539.27,52619.23,49190.86
-2024-09-01,North Plant,grid_electricity,office_area,211360.71,892.87,16855.23,21014.91
-2024-12-05,East Distribution Center,natural_gas,warehouse_storage,146758.57,342.94,30853.22,81562.59
-2025-06-15,West Office Campus,solar_pv,cafeteria,59757.22,9275.97,48944.47,59750.07
-2025-04-24,North Plant,natural_gas,production_floor,166990.98,10781.46,28762.59,75985.04
-2024-07-26,East Distribution Center,natural_gas,cafeteria,153106.36,5498.41,55662.0,84571.82
-2024-07-25,South Warehouse,wind_power,server_room,211063.87,7631.45,54645.39,48511.18
-2024-06-27,Riverside Factory,natural_gas,server_room,237400.64,5807.23,51113.94,33092.45
-2024-06-04,Central Data Hub,solar_pv,production_floor,154086.12,5721.81,57881.06,3331.04
-2024-02-06,West Office Campus,wind_power,warehouse_storage,50952.1,1699.17,10292.83,85685.07
-2024-08-19,North Plant,wind_power,server_room,150403.8,1702.97,20281.82,16212.61
-2025-03-02,North Plant,solar_pv,office_area,191434.87,386.74,1295.91,49757.86
-2025-06-17,Riverside Factory,grid_electricity,warehouse_storage,44198.04,5143.35,58287.51,83457.62
-2024-01-03,North Plant,natural_gas,production_floor,100018.32,3423.75,50872.48,39067.85
-2024-10-06,East Distribution Center,wind_power,production_floor,68454.59,5296.39,2076.07,82103.32
-2025-05-18,Central Data Hub,diesel_backup,cafeteria,111443.32,9312.14,13097.12,40112.52
-2024-01-27,Central Data Hub,grid_electricity,production_floor,46260.83,11846.75,37350.58,72021.26
-2024-06-16,South Warehouse,wind_power,cafeteria,127898.21,5660.33,38359.66,37692.06
-2024-01-12,Riverside Factory,grid_electricity,production_floor,241709.99,9336.77,29794.55,60553.05
-2024-03-11,West Office Campus,grid_electricity,cafeteria,17014.3,4168.5,44305.62,62210.71
-2024-04-21,Central Data Hub,natural_gas,warehouse_storage,14228.23,5816.04,29317.78,30784.83
-2024-01-03,North Plant,solar_pv,loading_dock,60516.77,3089.17,45500.49,50690.61
-2025-05-10,East Distribution Center,diesel_backup,loading_dock,235379.22,6458.57,7864.14,75265.37
-2024-10-30,North Plant,natural_gas,warehouse_storage,61780.81,10958.91,5351.9,69185.97
-2024-04-29,East Distribution Center,grid_electricity,office_area,44633.86,10264.41,59145.05,40718.85
-2024-07-31,Central Data Hub,solar_pv,office_area,82584.87,8387.79,17069.83,88494.05
-2024-03-30,South Warehouse,grid_electricity,office_area,147463.99,5242.85,53535.35,35407.0
-2024-03-14,North Plant,diesel_backup,cafeteria,20600.39,6665.17,48173.77,54891.52
-2024-04-29,North Plant,natural_gas,production_floor,239847.7,8450.27,38282.49,79492.67
-2025-01-18,West Office Campus,natural_gas,production_floor,138812.81,10654.37,5273.75,9512.14
-2024-09-08,East Distribution Center,solar_pv,server_room,160849.97,8767.51,21466.69,29260.17
-2024-04-14,South Warehouse,diesel_backup,cafeteria,60996.81,2434.21,43867.31,86450.57
-2025-06-01,East Distribution Center,solar_pv,cafeteria,248.93,6678.68,59489.74,40764.24
-2025-02-17,Central Data Hub,grid_electricity,server_room,127452.18,6031.19,30284.65,36537.76
-2024-04-11,Central Data Hub,grid_electricity,loading_dock,133419.97,9425.24,25460.38,39938.67
-2025-01-17,Riverside Factory,natural_gas,office_area,133893.97,4332.3,41657.34,30125.54
-2024-10-10,West Office Campus,natural_gas,server_room,102198.41,11697.73,42331.14,73364.77
-2024-01-09,South Warehouse,solar_pv,server_room,65907.33,11649.42,54902.49,524.14
-2025-06-15,East Distribution Center,wind_power,warehouse_storage,25981.96,1535.63,49603.56,73733.87
-2024-05-16,West Office Campus,grid_electricity,cafeteria,132891.09,6232.95,12122.73,11474.51
-2025-04-23,Riverside Factory,natural_gas,warehouse_storage,73405.35,3432.52,47791.25,58199.71
-2024-10-23,Central Data Hub,solar_pv,cafeteria,28233.55,4773.92,43278.36,340.73
-2025-04-29,South Warehouse,natural_gas,production_floor,167014.64,8146.61,45535.9,17524.35
-2024-08-06,East Distribution Center,wind_power,office_area,196191.36,8713.1,55651.98,50314.29
-2024-03-17,Central Data Hub,solar_pv,loading_dock,138048.29,3294.85,42596.97,86222.13
-2024-12-11,South Warehouse,diesel_backup,cafeteria,30301.25,8802.13,50867.88,80865.81
-2024-03-25,North Plant,natural_gas,office_area,232219.8,7659.36,56434.03,1010.76
-2024-12-03,West Office Campus,diesel_backup,office_area,60625.85,76.17,59973.34,66387.11
-2025-02-18,East Distribution Center,wind_power,production_floor,239469.51,5359.97,21701.76,28601.71
-2024-04-26,Central Data Hub,diesel_backup,server_room,163748.39,5345.24,51407.38,89981.1
-2024-01-23,Central Data Hub,wind_power,warehouse_storage,80788.14,4033.24,3446.78,23523.95
-2024-10-18,Central Data Hub,wind_power,server_room,167217.54,2948.44,52655.89,70761.04
-2024-07-06,South Warehouse,grid_electricity,loading_dock,156665.12,4439.82,20191.88,79470.15
-2024-03-01,South Warehouse,grid_electricity,warehouse_storage,225002.0,7614.87,3868.64,59755.02
-2024-11-27,Riverside Factory,wind_power,server_room,244273.08,9141.33,28622.05,20076.53
-2024-03-11,Riverside Factory,solar_pv,production_floor,97195.37,4780.27,32015.09,29240.77
-2024-03-18,North Plant,diesel_backup,cafeteria,22212.14,5381.42,51123.77,88565.38
-2024-04-27,Central Data Hub,diesel_backup,cafeteria,157527.3,115.67,23602.1,85669.12
-2024-11-18,North Plant,grid_electricity,production_floor,110335.09,9215.37,58689.03,64991.67
-2024-12-17,West Office Campus,diesel_backup,server_room,158813.5,9493.09,5988.03,43746.91
-2025-04-10,Riverside Factory,wind_power,office_area,127521.3,1147.5,32477.97,40747.25
+shift_date,team_name,shift_type,site_location,scheduled_agent_count,logged_in_agent_count,average_handle_time_seconds,service_level_percent
+2025-03-21,Retention,Evening,Glasgow,143,141,708.83,69.66
+2024-12-21,Order Tracking,Evening,Belfast,208,180,1087.11,73.4
+2024-01-25,Order Tracking,Evening,Manchester,37,49,305.72,14.23
+2024-11-23,Technical Support,Night,London,127,81,90.29,99.29
+2024-09-06,Billing Support,Weekend,Glasgow,60,212,119.64,43.9
+2024-01-05,General Enquiries,Weekend,Remote,100,118,1050.44,77.91
+2024-11-16,Retention,Morning,Glasgow,84,187,549.14,75.6
+2024-02-21,Billing Support,Weekend,London,53,103,695.03,55.41
+2024-10-22,Sales,Morning,Manchester,56,151,1021.38,74.18
+2025-06-04,General Enquiries,Afternoon,Remote,165,87,805.13,46.99
+2025-01-24,Sales,Night,Manchester,48,182,398.05,40.42
+2024-12-17,General Enquiries,Weekend,Remote,174,96,91.06,27.33
+2024-02-16,Retention,Night,Glasgow,4,75,637.36,13.43
+2024-05-24,Order Tracking,Afternoon,Belfast,81,206,1183.67,19.05
+2025-03-02,General Enquiries,Weekend,Manchester,54,165,154.54,93.18
+2024-12-10,Billing Support,Afternoon,Belfast,112,47,122.13,1.23
+2024-04-19,Billing Support,Weekend,Manchester,79,168,69.19,42.17
+2024-03-09,Sales,Evening,Remote,239,190,887.04,47.32
+2024-07-28,General Enquiries,Weekend,Manchester,114,139,907.9,18.01
+2024-05-30,Retention,Afternoon,Glasgow,217,28,125.67,75.2
+2024-09-22,Sales,Afternoon,Glasgow,157,165,1072.89,36.67
+2025-02-15,Technical Support,Night,Remote,3,64,1129.22,94.18
+2024-02-22,Billing Support,Morning,Manchester,221,36,626.15,79.78
+2024-05-03,Retention,Evening,Remote,197,193,252.62,36.65
+2024-08-15,General Enquiries,Afternoon,Manchester,129,177,478.11,37.51
+2024-10-27,Billing Support,Night,Manchester,125,197,752.56,29.89
+2024-09-20,Technical Support,Morning,London,18,165,608.67,76.85
+2024-02-22,Order Tracking,Afternoon,Remote,229,136,304.1,67.45
+2025-06-08,Order Tracking,Morning,London,103,130,915.62,96.5
+2024-07-06,Technical Support,Morning,London,165,192,775.94,91.84
+2024-12-18,General Enquiries,Night,Remote,129,120,469.64,77.11
+2024-02-03,Billing Support,Weekend,Belfast,119,139,484.8,87.85
+2024-08-30,Billing Support,Evening,Manchester,78,101,665.67,62.86
+2025-01-01,Order Tracking,Night,London,140,29,958.56,88.59
+2024-01-10,Retention,Weekend,Glasgow,1,199,1115.31,91.88
+2024-10-23,Sales,Afternoon,London,19,53,580.22,37.9
+2024-10-22,Retention,Night,Remote,146,28,187.75,78.56
+2024-02-24,Retention,Morning,Remote,168,239,622.8,21.61
+2024-05-13,General Enquiries,Night,London,66,148,130.06,84.34
+2025-06-13,Retention,Afternoon,London,38,125,97.98,40.59
+2024-01-04,Billing Support,Weekend,Glasgow,145,65,889.26,51.86
+2024-06-18,Retention,Evening,Belfast,46,47,666.77,4.78
+2025-05-13,Retention,Night,Belfast,246,219,559.47,18.46
+2024-08-05,Retention,Afternoon,Glasgow,231,90,311.89,5.89
+2024-11-04,Technical Support,Night,Manchester,97,178,1133.58,40.01
+2025-03-22,General Enquiries,Morning,Belfast,3,100,1031.35,67.9
+2024-03-25,Retention,Afternoon,London,249,135,540.01,95.07
+2024-10-25,Sales,Morning,Belfast,93,119,1138.42,8.61
+2025-04-28,Billing Support,Morning,Remote,229,86,1110.73,0.54
+2025-02-21,Retention,Weekend,Glasgow,180,68,1199.04,3.67
+2024-08-03,General Enquiries,Night,Manchester,54,165,539.61,86.88
+2025-06-13,Order Tracking,Weekend,Remote,108,125,898.04,38.55
+2024-03-09,Retention,Night,Remote,197,87,245.09,83.34
+2024-10-29,Sales,Morning,Manchester,154,5,343.41,4.19
+2024-11-26,Billing Support,Afternoon,Belfast,66,118,973.96,37.95
+2024-04-09,Billing Support,Afternoon,London,74,12,1188.35,17.21
+2024-05-20,Billing Support,Evening,Glasgow,225,30,853.35,98.62
+2025-06-22,Billing Support,Morning,London,70,235,738.86,89.77
+2024-03-10,Billing Support,Morning,London,152,227,904.65,58.47
+2024-11-25,Billing Support,Evening,London,57,34,1071.51,26.37
+2025-05-31,General Enquiries,Night,Glasgow,204,195,257.46,74.98
+2024-01-25,Retention,Night,Remote,120,193,510.92,38.23
+2024-01-26,General Enquiries,Night,Glasgow,239,107,263.28,49.94
+2024-09-27,Retention,Evening,Glasgow,36,148,565.11,48.2
+2024-07-28,Order Tracking,Afternoon,London,105,161,274.69,80.15
+2024-09-12,Sales,Afternoon,Belfast,236,55,266.45,28.7
+2024-09-11,Order Tracking,Evening,London,79,2,593.31,67.47
+2024-10-15,General Enquiries,Morning,Belfast,185,95,1114.22,14.4
+2024-07-05,Retention,Afternoon,Belfast,3,67,614.25,46.44
+2024-09-10,Billing Support,Weekend,Remote,66,218,448.39,71.37
+2025-03-20,Billing Support,Morning,Remote,182,26,346.74,65.57
+2025-04-08,Retention,Morning,London,91,105,801.74,46.11
+2024-08-25,General Enquiries,Evening,Glasgow,56,143,346.36,13.98
+2024-05-22,General Enquiries,Weekend,Manchester,207,98,1012.87,96.33
+2025-06-12,Billing Support,Afternoon,Remote,194,81,237.83,12.05
+2024-10-14,Technical Support,Evening,London,78,171,1182.3,61.57
+2025-06-20,General Enquiries,Evening,Remote,76,61,1009.53,2.27
+2025-03-15,General Enquiries,Morning,Belfast,188,227,225.6,14.88
+2024-01-29,Technical Support,Night,London,148,36,852.38,0.77
+2024-03-23,Technical Support,Afternoon,London,53,33,792.91,61.48
+2025-05-03,Sales,Afternoon,Belfast,187,150,578.8,81.3
+2024-03-28,Sales,Afternoon,Belfast,179,202,691.39,57.46
+2024-06-01,Retention,Night,Remote,129,218,843.79,61.1
+2024-02-27,Billing Support,Weekend,Belfast,138,174,686.7,9.01
+2024-11-12,Technical Support,Night,London,106,158,327.7,73.04
+2024-03-11,Billing Support,Evening,Manchester,115,178,400.82,65.99
+2024-04-11,Retention,Weekend,Manchester,245,173,824.98,61.57
+2024-07-30,Sales,Weekend,Remote,249,186,1184.18,52.68
+2024-06-30,Order Tracking,Weekend,Remote,203,30,245.51,3.83
+2024-10-21,Billing Support,Weekend,Belfast,35,217,333.66,62.15
+2024-12-01,Order Tracking,Weekend,Remote,39,49,859.82,63.83
+2025-02-25,General Enquiries,Morning,Belfast,24,75,498.97,11.89
+2024-04-24,Sales,Weekend,London,42,152,1189.95,22.11
+2025-02-09,Retention,Weekend,Belfast,154,221,385.88,75.47
+2025-03-17,Billing Support,Morning,Remote,110,15,393.02,63.04
+2025-04-05,Sales,Weekend,Glasgow,64,11,263.37,61.31
+2025-04-26,General Enquiries,Night,Glasgow,13,235,788.91,32.2
+2024-07-10,General Enquiries,Weekend,Manchester,24,120,869.69,94.79
+2025-06-15,Order Tracking,Weekend,Manchester,230,149,930.49,76.78
+2024-06-07,Retention,Afternoon,London,170,46,947.92,86.82
+2024-10-05,Billing Support,Morning,Belfast,70,168,778.46,87.34
+2024-01-15,Technical Support,Weekend,London,59,82,880.44,15.5
+2025-06-06,Billing Support,Morning,London,121,176,819.39,85.79
+2025-02-24,Retention,Weekend,London,69,177,92.81,50.19
+2024-08-01,Retention,Morning,Belfast,59,170,972.2,50.15
+2024-04-04,Order Tracking,Night,Manchester,190,50,770.07,94.89
+2025-05-26,General Enquiries,Afternoon,Glasgow,10,81,178.65,10.49
+2024-10-30,Order Tracking,Afternoon,Remote,75,220,739.18,22.86
+2025-04-17,General Enquiries,Evening,Glasgow,91,102,688.96,44.48
+2024-07-11,Technical Support,Afternoon,Manchester,141,83,391.22,80.25
+2024-07-02,Order Tracking,Morning,Glasgow,168,136,661.88,3.86
+2024-06-26,Sales,Morning,Manchester,42,152,156.48,56.29
+2025-03-28,Sales,Morning,London,240,220,220.75,82.14
+2024-06-24,General Enquiries,Weekend,Remote,191,150,869.18,1.38
+2024-01-15,Order Tracking,Morning,Remote,94,153,1077.16,65.27
+2025-04-25,Order Tracking,Morning,Manchester,220,213,936.56,10.84
+2024-03-28,Retention,Morning,Manchester,88,193,651.39,23.51
+2025-05-29,Sales,Evening,London,30,92,73.91,93.42
+2025-05-15,Sales,Afternoon,Remote,46,10,1004.31,73.69
+2024-04-07,Order Tracking,Evening,Glasgow,192,37,288.31,41.88
+2025-05-31,General Enquiries,Weekend,Manchester,230,33,881.88,40.74
+2024-12-28,Sales,Morning,Belfast,94,14,1136.21,94.29
+2025-01-01,Order Tracking,Weekend,Manchester,213,44,548.56,96.58
+2025-05-23,Order Tracking,Afternoon,Glasgow,213,140,699.29,67.85
+2024-08-24,General Enquiries,Night,Manchester,192,212,953.53,40.09
+2025-02-08,Technical Support,Afternoon,Remote,86,133,579.32,40.88
+2024-09-13,Billing Support,Morning,Manchester,189,160,716.38,87.05
+2024-06-20,Technical Support,Night,Manchester,62,181,312.72,68.74
+2025-03-03,General Enquiries,Night,Belfast,246,136,822.96,34.58
+2024-05-17,General Enquiries,Weekend,London,176,193,497.85,48.21
+2024-11-04,Billing Support,Evening,London,196,204,1196.5,54.73
+2024-04-08,Order Tracking,Evening,London,210,218,947.64,82.45
+2024-09-24,Billing Support,Weekend,Manchester,19,202,517.78,47.13
+2024-08-06,Order Tracking,Morning,Glasgow,115,78,661.09,82.38
+2024-06-29,Billing Support,Evening,Glasgow,101,108,448.94,29.0
+2025-05-04,General Enquiries,Evening,Remote,41,236,912.82,51.16
+2024-02-24,Sales,Night,Manchester,208,208,845.82,42.24
+2025-06-19,General Enquiries,Evening,Manchester,225,196,1033.96,57.2
+2025-01-11,Sales,Afternoon,Remote,129,26,1096.18,96.36
+2024-07-20,Technical Support,Weekend,Belfast,123,163,960.3,61.13
+2025-05-21,Order Tracking,Weekend,Glasgow,8,116,638.15,76.42
+2025-01-09,Order Tracking,Night,Glasgow,29,62,594.46,10.95
+2024-06-23,General Enquiries,Weekend,London,218,65,139.94,22.08
+2024-04-20,Billing Support,Evening,Remote,51,210,1123.7,58.81
+2024-02-10,Retention,Night,Manchester,54,106,231.11,34.16
+2024-09-24,General Enquiries,Afternoon,Glasgow,201,236,327.55,78.26
+2024-10-18,Order Tracking,Morning,Belfast,216,117,963.74,26.47
+2025-03-13,Retention,Weekend,London,89,23,367.03,70.4
+2024-01-18,Billing Support,Morning,Glasgow,216,186,1151.34,77.39
+2025-04-04,General Enquiries,Morning,London,212,187,1106.83,73.17
+2024-03-30,General Enquiries,Afternoon,Glasgow,114,3,952.6,79.82
+2024-06-28,Technical Support,Afternoon,Remote,194,112,1097.75,40.26
+2024-06-30,General Enquiries,Night,London,236,116,588.67,27.74
+2024-11-24,General Enquiries,Weekend,Remote,141,4,262.36,36.83
+2024-01-07,Retention,Afternoon,Belfast,74,38,335.8,67.19
+2024-09-30,Order Tracking,Afternoon,Manchester,55,239,624.11,11.9
+2025-02-18,Billing Support,Weekend,Manchester,224,18,476.58,15.85
+2024-12-26,General Enquiries,Weekend,Manchester,131,91,569.88,95.33
+2025-04-28,Order Tracking,Afternoon,Remote,15,162,1089.93,30.73
+2024-01-27,Retention,Afternoon,Manchester,228,42,1069.73,12.16
+2024-09-23,General Enquiries,Weekend,London,19,215,151.66,61.31
+2025-06-14,Billing Support,Afternoon,Belfast,152,132,603.19,57.17
+2024-02-08,General Enquiries,Night,Glasgow,29,162,980.77,66.6
+2025-03-29,Technical Support,Weekend,Manchester,20,214,755.14,25.86
+2024-05-29,Sales,Evening,Glasgow,245,32,229.49,53.56
+2024-04-08,Retention,Afternoon,Remote,218,7,955.69,58.45
+2024-03-23,General Enquiries,Afternoon,Glasgow,127,24,456.72,22.85
+2024-01-19,Technical Support,Night,London,23,96,259.24,96.61
+2024-06-11,Sales,Weekend,Glasgow,29,141,789.95,81.81
+2024-11-22,Sales,Night,Remote,57,10,180.86,98.14
+2024-06-28,Order Tracking,Night,Glasgow,115,23,984.45,96.03
+2024-05-14,Order Tracking,Evening,Glasgow,34,69,416.92,76.17
+2024-03-14,Sales,Weekend,Belfast,164,199,1125.8,58.24
+2024-09-07,Sales,Afternoon,Belfast,0,158,81.56,67.07
+2025-03-21,Technical Support,Morning,Manchester,35,49,728.68,64.36
+2025-05-21,Sales,Night,Manchester,29,137,454.28,66.95
+2024-12-30,Retention,Afternoon,Glasgow,61,38,1193.68,42.95
+2024-09-15,Technical Support,Night,Remote,207,84,692.92,96.04
+2025-01-02,Order Tracking,Weekend,Remote,221,228,352.52,25.17
+2025-04-18,Billing Support,Evening,Manchester,210,113,350.77,33.76
+2024-03-01,Order Tracking,Weekend,Manchester,226,53,1123.37,50.19
+2025-04-13,Order Tracking,Morning,London,88,1,890.92,49.72
+2024-07-14,Order Tracking,Evening,London,54,62,852.77,40.94
+2024-01-15,Technical Support,Night,Manchester,101,39,598.03,97.49
+2025-03-31,Retention,Morning,Manchester,155,123,629.28,30.93
+2024-02-01,General Enquiries,Afternoon,London,153,72,1029.48,34.87
+2024-07-12,Technical Support,Afternoon,Remote,177,191,310.61,36.92
+2024-05-01,Billing Support,Night,Glasgow,178,140,690.69,28.63
+2024-11-27,Order Tracking,Morning,Remote,229,173,269.54,77.55
+2025-02-16,Technical Support,Afternoon,Remote,91,73,1002.58,31.9
+2025-02-04,Retention,Night,Glasgow,168,37,692.66,96.15
+2024-04-15,Billing Support,Weekend,Belfast,234,56,875.0,22.42
+2024-01-08,Retention,Morning,London,109,151,890.57,4.47
+2024-07-26,Technical Support,Weekend,Belfast,218,20,227.53,36.6
+2025-06-22,General Enquiries,Evening,Remote,38,145,1085.88,86.82
+2024-06-29,Order Tracking,Afternoon,Remote,90,175,237.64,51.18
+2024-07-25,Technical Support,Night,Glasgow,224,231,1041.46,93.31
+2024-11-03,Sales,Afternoon,Glasgow,204,225,901.2,42.6
+2025-03-21,General Enquiries,Afternoon,Manchester,54,225,888.79,10.87
+2025-01-15,Billing Support,Afternoon,Glasgow,195,7,748.24,98.36
+2024-06-23,Technical Support,Afternoon,Remote,53,17,970.98,49.65
+2024-09-01,Technical Support,Night,London,4,139,920.3,89.97
+2025-01-09,Technical Support,Evening,Glasgow,10,146,1010.01,95.47
+2025-01-20,Billing Support,Morning,Glasgow,184,123,842.25,66.79
+2025-02-05,Retention,Morning,Belfast,146,101,581.35,70.07
+2025-06-09,Sales,Morning,Belfast,130,104,1083.41,15.19
+2024-08-16,Billing Support,Afternoon,London,228,74,821.6,46.49
+2024-09-23,Sales,Morning,Remote,239,155,937.87,85.35
+2024-12-24,Sales,Weekend,Remote,181,137,848.64,75.91
+2024-06-01,Billing Support,Night,Belfast,154,170,515.23,8.14
+2024-05-01,Retention,Weekend,Remote,86,51,257.34,62.87
+2025-01-28,Billing Support,Evening,Glasgow,169,174,995.13,92.8
+2025-03-15,Order Tracking,Afternoon,Glasgow,3,116,771.18,99.36
+2024-08-21,Sales,Morning,Manchester,70,144,167.29,9.98
+2024-06-12,Sales,Weekend,Manchester,78,132,1150.95,95.68
+2024-05-01,Retention,Afternoon,Manchester,115,219,966.2,19.63
+2025-04-16,Billing Support,Morning,Remote,72,166,918.82,95.08
+2025-03-07,Billing Support,Night,Remote,9,178,720.11,70.89
+2024-02-09,General Enquiries,Night,Glasgow,72,90,1074.0,17.4
+2025-02-26,Technical Support,Afternoon,London,181,207,524.24,59.4
+2025-04-18,Billing Support,Afternoon,Manchester,108,122,182.49,97.85
+2024-11-06,Billing Support,Morning,Glasgow,173,234,839.11,5.71
+2024-01-08,General Enquiries,Afternoon,Belfast,232,95,939.05,78.89
+2024-01-21,Order Tracking,Night,London,136,18,1092.15,10.57
+2024-08-18,Order Tracking,Afternoon,London,109,64,1156.39,11.35
+2024-01-08,Billing Support,Afternoon,London,91,132,452.7,92.55
+2024-05-31,Technical Support,Night,Belfast,242,63,703.09,57.31
+2024-04-25,Technical Support,Night,Remote,94,0,65.87,78.1
+2025-01-21,Sales,Evening,Manchester,209,219,697.01,25.61
+2024-10-15,General Enquiries,Evening,London,32,64,350.17,13.99
+2024-05-07,Order Tracking,Weekend,London,212,161,105.63,18.43
+2025-05-15,Billing Support,Morning,Manchester,185,142,427.41,71.37
+2024-03-04,Sales,Night,Glasgow,113,95,1105.46,94.88
+2024-02-04,Sales,Evening,Remote,184,214,921.15,23.56
+2024-03-20,Technical Support,Night,Belfast,191,228,400.34,82.0
+2025-04-26,Sales,Night,Remote,155,163,682.5,4.16
+2024-10-28,Retention,Night,Manchester,229,101,715.38,85.42
+2025-04-05,Retention,Night,Belfast,162,103,441.78,8.41
+2025-01-29,Billing Support,Morning,Glasgow,160,55,311.3,31.53
+2024-05-11,Billing Support,Morning,Glasgow,70,68,670.12,64.2

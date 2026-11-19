@@ -1,241 +1,241 @@
-rdg_dt,dist_nm,cust_cls,meter_typ,tot_gal,peak_gpm,wtr_rev
-2024-02-05,South,Commercial,Automated Read,521876,13992.44,179412.42
-2025-01-04,East,Commercial,Estimated,2461789,10410.36,598102.35
-2025-03-18,Central,Industrial,Manual,1894656,8795.83,683662.71
-2024-09-09,Central,Industrial,Smart,2282524,13849.92,228671.83
-2025-04-19,Central,Industrial,Automated Read,1504827,8137.15,137529.86
-2025-03-30,North,Irrigation,Estimated,2163655,14206.4,521155.34
-2025-05-19,Central,Residential,Estimated,1167295,12748.38,246338.86
-2024-07-02,South,Irrigation,Automated Read,796984,3983.4,798476.89
-2024-05-23,South,Commercial,Manual,281175,12266.04,47070.04
-2024-07-31,East,Irrigation,Manual,1747293,12394.41,819222.38
-2024-12-04,Central,Commercial,Smart,1901758,4000.38,253566.15
-2024-03-25,Central,Commercial,Estimated,1460807,5186.95,809755.48
-2024-09-16,West,Industrial,Smart,2080577,8382.65,577334.06
-2024-08-19,North,Commercial,Estimated,2244102,8952.25,394329.91
-2024-07-03,North,Residential,Automated Read,1785191,4580.67,194565.0
-2025-01-27,West,Industrial,Estimated,1089390,13397.59,891273.13
-2025-03-09,East,Irrigation,Manual,1706611,12420.29,435880.85
-2024-06-06,West,Residential,Estimated,1775495,12476.61,185013.39
-2024-03-08,North,Irrigation,Estimated,1585888,6339.57,929504.11
-2024-07-01,South,Commercial,Smart,611508,8593.88,820597.11
-2024-04-22,North,Industrial,Manual,1306456,14436.76,102178.74
-2024-04-11,Central,Industrial,Smart,1363635,14322.64,250854.55
-2024-07-28,Central,Industrial,Estimated,1780086,6865.26,902582.1
-2024-09-17,Central,Irrigation,Manual,2265680,7974.01,567822.37
-2024-10-20,South,Irrigation,Estimated,1355814,12522.93,727747.5
-2025-05-27,Central,Residential,Manual,1761335,1236.66,717460.34
-2025-05-10,West,Commercial,Automated Read,2434569,14433.98,67364.55
-2025-06-03,Central,Irrigation,Smart,88083,834.53,224620.77
-2025-06-19,West,Irrigation,Automated Read,169910,6828.32,527586.65
-2024-10-23,South,Irrigation,Manual,622448,2166.68,296601.94
-2024-11-19,South,Residential,Estimated,1424541,5004.77,598241.09
-2024-12-14,South,Commercial,Smart,1498949,6160.2,304002.52
-2024-01-16,West,Residential,Estimated,823169,9310.85,259593.85
-2024-02-08,West,Commercial,Estimated,1839409,4772.92,163857.25
-2024-10-17,West,Industrial,Manual,159543,8740.85,454317.86
-2024-05-15,North,Residential,Automated Read,2456542,4627.78,401341.2
-2024-05-25,East,Irrigation,Estimated,1834211,6334.71,515791.52
-2024-10-26,East,Commercial,Manual,861121,10973.66,55038.5
-2024-12-04,Central,Industrial,Estimated,523678,11954.41,638969.18
-2024-09-23,East,Residential,Estimated,22907,11110.0,850951.95
-2025-05-08,East,Irrigation,Manual,66574,2799.57,932893.46
-2024-07-06,South,Industrial,Manual,761174,5439.73,52010.57
-2024-08-23,Central,Industrial,Automated Read,2376194,4067.53,285626.65
-2025-03-06,North,Irrigation,Smart,341444,6463.48,263305.54
-2025-02-25,South,Commercial,Manual,1253432,54.43,909693.74
-2025-06-02,Central,Residential,Estimated,2155743,5573.41,477695.02
-2025-06-17,North,Industrial,Manual,1214608,7431.57,432472.84
-2024-11-14,Central,Residential,Smart,1711073,8928.75,884289.38
-2025-01-26,West,Irrigation,Estimated,2487691,3758.53,412725.86
-2024-10-11,West,Industrial,Estimated,1618487,3021.94,479044.95
-2025-01-03,South,Residential,Smart,2325351,1263.59,820184.57
-2025-01-03,Central,Residential,Automated Read,68781,9157.52,215018.17
-2025-01-10,Central,Irrigation,Automated Read,104955,1308.63,823843.06
-2024-05-07,Central,Commercial,Manual,638012,5512.5,300914.08
-2024-02-15,North,Industrial,Estimated,2377337,4088.22,639529.56
-2025-04-30,North,Industrial,Automated Read,599844,9735.66,640737.84
-2024-04-24,Central,Irrigation,Manual,28884,14329.13,93309.65
-2025-04-08,South,Commercial,Manual,2451264,4744.54,805380.47
-2024-08-07,East,Industrial,Smart,2387385,12158.14,491491.78
-2025-02-09,Central,Commercial,Smart,1262092,12715.68,853395.14
-2025-03-26,West,Irrigation,Manual,269634,14227.1,302244.14
-2024-02-07,North,Industrial,Estimated,817136,2272.49,359828.44
-2025-05-19,West,Irrigation,Automated Read,1795645,4233.47,536438.16
-2025-02-20,Central,Residential,Smart,2051960,800.81,867467.41
-2024-08-09,East,Industrial,Automated Read,1671034,12518.15,85756.51
-2025-06-11,South,Commercial,Smart,933139,862.9,55882.19
-2024-07-29,South,Residential,Smart,2496992,12657.61,710731.38
-2024-09-23,West,Industrial,Automated Read,435189,7405.9,839712.28
-2024-09-24,West,Irrigation,Manual,565194,9877.7,645335.4
-2024-04-16,North,Commercial,Estimated,1349963,4243.67,52760.79
-2025-05-27,West,Irrigation,Smart,1745799,8784.34,222026.04
-2024-12-21,South,Industrial,Automated Read,602066,10396.9,940607.63
-2024-03-25,West,Industrial,Estimated,148651,4675.71,670224.4
-2024-11-30,Central,Industrial,Smart,604401,525.74,540098.65
-2024-08-27,West,Commercial,Smart,1563698,14360.1,602125.46
-2024-04-22,South,Industrial,Automated Read,1895662,2078.76,196093.34
-2024-12-14,East,Commercial,Estimated,1395377,7385.29,616141.94
-2025-05-20,South,Commercial,Manual,855910,3712.89,852275.78
-2024-12-23,Central,Commercial,Estimated,1756132,14981.97,354235.04
-2024-11-13,West,Commercial,Automated Read,366485,10553.55,304966.26
-2024-11-08,North,Irrigation,Smart,2090798,4993.98,763584.48
-2024-07-01,North,Residential,Smart,1446296,9824.22,82075.25
-2024-06-17,East,Commercial,Smart,2007198,13462.69,748188.75
-2024-03-22,West,Commercial,Estimated,2456719,9510.96,785300.26
-2024-07-19,South,Irrigation,Estimated,560940,3593.71,515690.61
-2025-01-12,South,Residential,Manual,2265002,8461.42,787044.65
-2024-02-27,Central,Irrigation,Manual,1977248,2416.94,139081.69
-2024-01-12,Central,Industrial,Manual,1221563,13791.01,684367.82
-2024-11-14,South,Irrigation,Smart,1880922,12788.73,890193.43
-2024-12-28,South,Commercial,Estimated,479248,2400.02,704670.87
-2024-10-20,East,Residential,Smart,1619997,825.0,741417.44
-2024-03-29,East,Industrial,Automated Read,178302,13878.34,343625.98
-2024-06-30,North,Industrial,Manual,365295,8510.09,743192.77
-2024-12-01,North,Commercial,Estimated,2334514,12188.64,438868.02
-2025-06-17,East,Residential,Smart,1223174,4254.67,872769.74
-2024-03-24,Central,Residential,Manual,273930,11497.3,481369.22
-2024-03-02,South,Irrigation,Smart,890941,11898.77,430796.45
-2024-06-11,East,Commercial,Smart,1071810,12134.57,533677.54
-2024-09-25,West,Commercial,Smart,1871605,12177.08,598173.57
-2024-12-14,Central,Industrial,Manual,1411995,6107.35,873413.61
-2024-05-09,Central,Commercial,Estimated,613835,8831.26,172748.63
-2024-11-24,Central,Commercial,Estimated,1915330,5174.14,620013.51
-2024-04-01,Central,Industrial,Smart,1383996,6429.19,846260.05
-2025-02-15,North,Residential,Manual,1215404,14810.31,889459.44
-2025-02-14,East,Commercial,Automated Read,1087721,6062.08,198265.31
-2024-11-17,South,Residential,Manual,2338902,9906.44,495368.42
-2024-03-23,Central,Irrigation,Manual,287650,13031.23,448465.12
-2024-04-20,North,Commercial,Estimated,47715,14541.41,633582.18
-2025-01-19,West,Industrial,Estimated,1336988,9186.6,683095.0
-2025-04-27,North,Commercial,Manual,713524,13249.07,4091.85
-2024-04-21,North,Industrial,Manual,1712985,5741.94,372364.31
-2024-05-19,West,Commercial,Manual,1517024,11450.94,530826.3
-2024-12-08,East,Industrial,Estimated,369140,13600.93,287123.15
-2024-11-22,East,Residential,Estimated,1863977,4098.98,449623.98
-2024-12-13,North,Residential,Estimated,2339441,10462.6,465329.84
-2024-05-22,East,Residential,Manual,482520,1499.8,360009.81
-2024-03-02,East,Industrial,Estimated,1941825,5802.6,77644.41
-2024-04-16,East,Residential,Smart,1959715,37.57,590746.92
-2025-03-03,North,Commercial,Smart,1790193,10666.31,156449.36
-2025-01-05,West,Irrigation,Manual,900589,14536.46,551460.0
-2024-07-14,South,Residential,Manual,1713849,10008.87,185833.58
-2024-08-17,North,Irrigation,Manual,2400289,6255.76,644453.5
-2024-05-09,Central,Industrial,Smart,1265155,6498.73,295397.89
-2024-03-31,South,Industrial,Smart,830157,3065.32,814479.85
-2024-11-05,South,Residential,Automated Read,454653,7655.8,823865.73
-2024-09-03,West,Irrigation,Estimated,2288336,9907.31,154829.63
-2024-12-11,West,Industrial,Estimated,1593641,647.07,584953.51
-2025-02-01,East,Irrigation,Manual,582592,9354.71,589038.29
-2024-12-09,West,Irrigation,Estimated,1164627,3292.78,429901.21
-2024-02-07,North,Irrigation,Automated Read,681038,2600.37,199395.44
-2024-02-18,Central,Irrigation,Estimated,1004931,12459.94,92258.32
-2025-04-01,North,Residential,Manual,630248,817.82,861222.46
-2024-12-21,West,Irrigation,Manual,706190,11340.87,184112.92
-2025-01-31,North,Irrigation,Smart,2304045,3059.46,839420.67
-2025-04-22,West,Irrigation,Smart,1747533,7276.23,132803.79
-2024-05-18,South,Commercial,Estimated,407154,13469.63,776575.79
-2025-01-13,West,Commercial,Manual,1315916,5502.07,484016.41
-2025-03-16,East,Residential,Estimated,2285888,11205.05,855601.56
-2024-12-14,North,Irrigation,Manual,2443379,10035.62,413835.15
-2025-02-22,North,Industrial,Automated Read,1805496,14977.76,257223.87
-2024-11-05,South,Residential,Estimated,1752695,4508.99,635272.76
-2025-04-06,North,Irrigation,Smart,1722283,9835.28,431485.06
-2025-05-16,West,Industrial,Manual,383892,11978.06,83520.04
-2025-03-30,East,Industrial,Automated Read,1705694,14865.45,317426.46
-2024-10-22,West,Industrial,Smart,2243146,1491.74,890467.18
-2024-02-15,West,Commercial,Manual,784762,11051.5,817836.67
-2024-11-23,East,Residential,Estimated,1432742,11478.6,847243.03
-2025-02-10,North,Commercial,Manual,1828381,348.62,678281.75
-2024-02-24,East,Commercial,Manual,1078396,2784.87,365639.85
-2024-12-18,West,Commercial,Estimated,830248,14683.18,125803.24
-2024-02-22,South,Irrigation,Automated Read,57239,3817.64,22377.13
-2025-01-09,South,Commercial,Estimated,542982,304.34,740894.58
-2024-12-23,North,Commercial,Smart,1545608,1577.49,4801.91
-2024-03-21,West,Industrial,Manual,352977,9462.14,74988.87
-2025-01-23,South,Irrigation,Manual,863908,12230.32,857671.46
-2024-05-06,West,Irrigation,Estimated,1934823,4964.84,592968.1
-2025-01-03,North,Industrial,Smart,1872332,13682.6,892414.06
-2024-01-25,North,Irrigation,Automated Read,840382,4335.38,224377.91
-2025-04-05,East,Residential,Smart,775388,1148.04,843734.99
-2025-03-03,North,Commercial,Smart,917085,6110.64,237551.38
-2024-10-15,South,Residential,Automated Read,102180,10433.5,738075.02
-2025-01-09,North,Residential,Estimated,2453953,12247.85,803712.37
-2024-09-27,West,Irrigation,Smart,2222642,7114.31,435704.4
-2025-03-07,South,Industrial,Manual,364822,6224.75,235696.09
-2024-04-05,East,Commercial,Smart,877850,9945.64,26572.8
-2025-05-03,East,Commercial,Estimated,1537396,11430.79,523961.02
-2024-11-27,Central,Industrial,Smart,2230943,9239.57,473621.98
-2024-06-18,North,Irrigation,Manual,59239,12548.99,483891.28
-2024-05-25,West,Residential,Estimated,1363200,14342.79,797479.74
-2024-02-22,West,Industrial,Smart,70893,8728.98,155122.68
-2024-02-01,East,Irrigation,Automated Read,2069046,2460.18,179939.71
-2024-08-23,East,Industrial,Automated Read,832571,6147.41,883349.49
-2025-01-22,South,Residential,Manual,1306792,13813.07,541727.35
-2025-04-16,West,Irrigation,Estimated,2028527,4411.05,328291.39
-2024-09-10,West,Residential,Automated Read,1427862,3341.49,93316.09
-2024-12-25,North,Commercial,Automated Read,134439,9563.08,795237.49
-2024-04-14,West,Irrigation,Manual,945643,14792.44,603527.29
-2025-02-17,North,Residential,Automated Read,1200047,13230.89,905980.76
-2024-03-08,Central,Residential,Smart,1391260,826.31,434251.92
-2025-01-19,South,Industrial,Automated Read,1987191,923.78,883274.46
-2024-03-31,South,Commercial,Smart,1553141,408.76,661194.7
-2024-01-09,East,Residential,Automated Read,1468879,3625.78,691505.16
-2025-06-02,North,Commercial,Manual,301657,5381.6,78352.12
-2025-02-27,North,Irrigation,Estimated,2356713,14662.88,12103.63
-2024-10-08,North,Irrigation,Manual,2167367,13522.14,24074.34
-2024-09-15,East,Irrigation,Automated Read,1531049,2056.35,204314.87
-2025-05-10,West,Commercial,Estimated,2156812,5778.4,523644.26
-2025-04-13,Central,Commercial,Automated Read,1921625,1893.79,593305.63
-2025-02-24,East,Irrigation,Estimated,1557865,11976.86,106510.98
-2024-01-14,Central,Irrigation,Automated Read,820697,4039.84,938362.78
-2025-03-12,South,Irrigation,Smart,1016548,8069.46,581000.58
-2024-07-18,South,Commercial,Estimated,2305048,4621.09,122581.29
-2024-12-21,North,Commercial,Automated Read,2429089,10933.66,121930.09
-2024-12-26,Central,Irrigation,Manual,141841,1019.18,875373.56
-2025-04-15,East,Residential,Estimated,655435,14152.74,602088.47
-2024-05-20,North,Residential,Smart,2176119,6515.08,684991.05
-2024-07-16,Central,Irrigation,Smart,886846,2344.72,383557.79
-2024-12-16,North,Residential,Estimated,1186538,4901.31,866016.31
-2024-02-03,West,Irrigation,Automated Read,1005644,1202.17,587513.61
-2024-06-02,East,Residential,Manual,1001339,4281.32,673693.12
-2025-06-02,Central,Irrigation,Smart,2048854,7969.47,894242.78
-2025-05-20,East,Irrigation,Estimated,2942,2385.09,63019.98
-2024-05-30,South,Commercial,Smart,518606,9802.45,680452.17
-2025-01-04,South,Industrial,Automated Read,1948944,747.7,763760.05
-2024-04-11,East,Irrigation,Automated Read,150380,11665.5,228412.47
-2024-07-31,South,Industrial,Smart,1959151,4805.22,368845.77
-2025-02-04,East,Residential,Smart,246868,6090.93,475961.0
-2024-05-26,Central,Irrigation,Automated Read,1114350,9875.97,418625.9
-2025-03-01,Central,Commercial,Manual,1329543,10759.5,607632.14
-2024-02-05,Central,Irrigation,Manual,1981981,2318.45,233765.88
-2024-04-14,West,Residential,Manual,1893371,4140.06,23657.44
-2024-10-17,West,Residential,Estimated,579051,7368.13,845699.27
-2024-02-27,Central,Commercial,Automated Read,687328,6656.57,272670.74
-2024-08-30,North,Industrial,Automated Read,366247,5535.8,892127.22
-2024-09-16,South,Industrial,Smart,1645220,8168.17,387985.17
-2024-02-16,North,Industrial,Automated Read,2339945,839.34,941204.66
-2025-02-27,West,Industrial,Smart,1071254,9258.7,582726.57
-2025-01-19,East,Residential,Manual,1607937,14746.96,222832.6
-2024-07-09,West,Irrigation,Manual,2230199,9443.8,217937.0
-2024-10-21,East,Industrial,Automated Read,2092664,3796.04,114160.6
-2024-09-02,East,Irrigation,Manual,2149671,4773.26,331868.74
-2024-05-02,West,Commercial,Estimated,269219,3275.23,768101.66
-2025-01-24,South,Irrigation,Manual,799111,13412.96,717811.64
-2024-03-10,South,Residential,Manual,2189503,14071.9,308583.55
-2024-05-08,North,Industrial,Estimated,1003494,3765.75,457968.1
-2025-05-15,North,Commercial,Manual,663638,13413.38,78783.54
-2024-11-11,North,Residential,Estimated,2341253,8994.75,441098.79
-2024-07-03,South,Residential,Estimated,629952,8083.49,227782.18
-2025-02-04,East,Residential,Smart,25129,8136.12,799766.87
-2024-05-13,West,Commercial,Manual,814884,2437.65,773662.65
-2024-10-10,West,Irrigation,Smart,2431467,1636.31,542618.77
-2024-11-24,East,Irrigation,Smart,132790,13689.97,856353.64
-2024-08-09,West,Irrigation,Estimated,1747332,12966.22,763652.87
-2024-05-01,Central,Residential,Automated Read,178962,1346.34,667486.59
-2024-10-14,Central,Irrigation,Smart,1360196,2288.96,128938.52
-2024-08-03,Central,Industrial,Estimated,36995,636.86,243896.0
-2024-10-23,East,Commercial,Automated Read,686932,10192.82,749535.0
-2024-10-19,Central,Irrigation,Smart,96437,7707.27,360870.42
-2024-01-20,East,Residential,Manual,1130843,13584.77,38651.68
-2024-06-24,North,Industrial,Estimated,2055781,12448.7,779986.3
+Application Date,Candidate Source,Job Family,Pipeline Stage,Days In Stage,Offer Salary,Interview Score
+2025-05-03,Job Board,Marketing,Phone Interview,37,86153.47,2.6
+2024-09-14,Careers Page,Finance,Onsite Interview,68,200295.58,1.07
+2024-10-26,LinkedIn,Engineering,Phone Interview,69,60013.66,1.22
+2025-02-15,Recruiting Agency,Customer Success,Rejected,87,96436.47,4.07
+2024-04-30,LinkedIn,Engineering,Hired,68,88492.84,2.4
+2024-09-05,LinkedIn,Operations,Phone Interview,87,79343.84,3.11
+2024-08-07,Recruiting Agency,Marketing,Onsite Interview,54,132802.26,2.49
+2025-01-17,University Program,Engineering,Onsite Interview,41,103328.25,4.54
+2024-09-21,LinkedIn,Operations,Screening,87,229292.61,1.46
+2024-04-18,Careers Page,Finance,Offer Extended,7,231587.84,2.86
+2024-04-02,University Program,Engineering,Screening,81,85951.05,1.31
+2024-04-20,Careers Page,Marketing,Rejected,18,108690.78,2.99
+2025-02-13,Job Board,Finance,Onsite Interview,54,85941.22,1.2
+2025-02-26,LinkedIn,Marketing,Applied,40,162585.35,4.67
+2024-09-23,Employee Referral,Marketing,Screening,15,174305.67,4.42
+2025-01-21,Careers Page,Sales,Onsite Interview,61,197063.3,2.24
+2024-01-15,Job Board,Customer Success,Applied,86,160241.47,2.39
+2025-01-07,Employee Referral,Operations,Phone Interview,6,62209.83,1.89
+2024-12-27,Recruiting Agency,Marketing,Offer Extended,60,239455.12,4.97
+2024-02-25,University Program,Engineering,Hired,1,63921.18,2.94
+2025-01-23,Careers Page,Sales,Applied,39,203467.28,2.1
+2025-05-06,Employee Referral,Finance,Offer Extended,77,55154.6,2.29
+2024-06-16,Careers Page,Marketing,Phone Interview,69,124652.17,1.02
+2024-06-19,LinkedIn,Operations,Offer Extended,73,166410.59,1.82
+2025-04-18,Careers Page,Marketing,Offer Extended,10,158735.0,2.08
+2024-10-07,University Program,Sales,Offer Extended,30,183293.46,4.11
+2024-02-17,Employee Referral,Engineering,Offer Extended,0,197127.88,4.47
+2024-08-10,Careers Page,Finance,Rejected,88,64223.97,3.01
+2025-01-13,Recruiting Agency,Sales,Phone Interview,11,183934.49,4.26
+2024-06-08,Recruiting Agency,Marketing,Rejected,76,179442.14,4.63
+2024-05-10,LinkedIn,Sales,Offer Extended,81,131965.43,4.92
+2025-02-16,Job Board,Engineering,Onsite Interview,12,185421.15,3.53
+2024-11-19,LinkedIn,Finance,Hired,80,204195.25,1.84
+2025-04-30,University Program,Engineering,Phone Interview,60,142606.95,4.85
+2025-05-03,University Program,Customer Success,Phone Interview,62,246320.17,3.07
+2025-06-12,Recruiting Agency,Sales,Hired,4,179439.61,1.09
+2024-11-07,LinkedIn,Engineering,Hired,36,97592.64,3.16
+2024-02-21,Job Board,Customer Success,Applied,81,87625.77,2.42
+2024-05-03,Job Board,Customer Success,Screening,82,178056.34,1.5
+2024-07-12,Job Board,Engineering,Applied,14,149474.08,4.34
+2024-10-22,Recruiting Agency,Finance,Screening,88,159472.8,3.58
+2025-04-25,Job Board,Sales,Onsite Interview,12,188167.1,3.49
+2024-07-03,Job Board,Engineering,Applied,58,196083.69,4.6
+2024-03-30,Recruiting Agency,Operations,Phone Interview,43,236101.01,4.64
+2025-04-09,LinkedIn,Sales,Phone Interview,31,238557.84,2.23
+2024-06-15,Employee Referral,Finance,Screening,64,58418.75,2.82
+2025-06-17,Careers Page,Engineering,Hired,39,194063.96,4.86
+2025-03-17,Job Board,Finance,Onsite Interview,69,232788.34,3.02
+2024-06-22,Recruiting Agency,Operations,Screening,47,228855.72,4.44
+2024-04-26,Recruiting Agency,Customer Success,Onsite Interview,48,118148.42,4.67
+2024-04-19,Careers Page,Marketing,Offer Extended,6,232489.82,3.11
+2024-08-10,LinkedIn,Sales,Phone Interview,79,186243.74,1.48
+2024-09-10,Recruiting Agency,Operations,Offer Extended,59,85565.52,3.29
+2025-02-12,Recruiting Agency,Engineering,Screening,15,113419.94,2.69
+2024-10-22,Job Board,Marketing,Hired,5,173951.71,2.24
+2024-05-07,LinkedIn,Operations,Hired,36,195045.79,3.36
+2025-03-18,Recruiting Agency,Sales,Rejected,16,181600.28,2.09
+2024-04-14,Job Board,Engineering,Rejected,82,186766.91,4.88
+2025-05-27,University Program,Engineering,Screening,48,71523.6,1.75
+2025-03-06,Employee Referral,Marketing,Applied,45,132127.21,4.62
+2025-03-11,Recruiting Agency,Marketing,Rejected,61,214796.91,1.31
+2025-01-08,Employee Referral,Marketing,Applied,24,85533.01,3.87
+2024-07-13,Job Board,Customer Success,Phone Interview,66,135951.43,2.52
+2025-05-14,Employee Referral,Finance,Rejected,70,123131.31,4.37
+2025-03-15,LinkedIn,Marketing,Hired,81,62399.99,4.13
+2024-08-04,University Program,Customer Success,Screening,46,118323.27,2.76
+2024-11-21,LinkedIn,Operations,Hired,19,69751.63,1.85
+2024-03-20,Employee Referral,Finance,Phone Interview,41,188867.11,3.81
+2024-11-18,Job Board,Finance,Rejected,21,145200.06,2.92
+2025-06-09,Job Board,Marketing,Rejected,29,206628.32,4.1
+2025-05-21,LinkedIn,Operations,Onsite Interview,72,55204.78,1.56
+2024-08-24,LinkedIn,Customer Success,Onsite Interview,8,233852.43,2.83
+2025-03-08,Careers Page,Finance,Phone Interview,5,167973.54,1.09
+2024-05-23,Employee Referral,Marketing,Applied,59,151553.78,4.45
+2024-03-12,Job Board,Finance,Phone Interview,25,217785.69,4.64
+2024-03-27,Job Board,Customer Success,Onsite Interview,47,184512.52,4.23
+2024-01-08,Careers Page,Customer Success,Offer Extended,73,73529.68,3.5
+2025-03-16,Job Board,Engineering,Rejected,70,97105.36,4.99
+2025-01-28,Recruiting Agency,Engineering,Offer Extended,66,164565.72,3.77
+2025-02-14,Recruiting Agency,Customer Success,Offer Extended,84,213557.26,3.49
+2024-12-06,Careers Page,Engineering,Hired,34,148713.98,1.7
+2025-04-26,Recruiting Agency,Marketing,Onsite Interview,51,166753.22,4.09
+2024-10-06,Recruiting Agency,Finance,Onsite Interview,33,186937.63,4.39
+2024-01-28,Job Board,Marketing,Phone Interview,85,95676.04,4.61
+2024-06-24,Careers Page,Finance,Screening,50,95804.23,3.36
+2024-07-21,Recruiting Agency,Marketing,Rejected,8,69668.55,4.18
+2025-04-13,Recruiting Agency,Marketing,Screening,46,132157.24,4.66
+2024-07-24,Job Board,Finance,Phone Interview,19,234934.69,1.55
+2025-01-21,LinkedIn,Finance,Hired,57,152868.93,4.51
+2024-08-16,Job Board,Finance,Rejected,9,179073.5,4.81
+2024-01-12,Recruiting Agency,Sales,Onsite Interview,25,218536.29,4.07
+2024-10-13,Recruiting Agency,Finance,Phone Interview,6,48688.24,2.7
+2024-04-07,Careers Page,Customer Success,Rejected,36,210351.61,4.4
+2024-12-25,LinkedIn,Operations,Hired,67,174264.76,3.75
+2025-05-08,Job Board,Sales,Phone Interview,15,152052.79,4.27
+2024-04-20,Careers Page,Customer Success,Offer Extended,23,167827.62,1.21
+2024-04-10,Careers Page,Marketing,Applied,20,57250.04,1.38
+2025-03-11,Recruiting Agency,Sales,Hired,57,244067.98,3.49
+2024-12-21,Employee Referral,Engineering,Hired,64,161458.24,4.22
+2024-10-06,Job Board,Marketing,Screening,13,155450.36,1.49
+2024-05-19,Job Board,Engineering,Rejected,38,70949.28,3.59
+2024-12-14,Careers Page,Finance,Rejected,32,216361.28,2.35
+2024-10-14,Recruiting Agency,Finance,Onsite Interview,11,93475.07,2.83
+2025-05-08,Recruiting Agency,Finance,Onsite Interview,72,146724.16,1.85
+2024-02-15,LinkedIn,Operations,Phone Interview,65,228632.94,2.48
+2024-07-29,University Program,Engineering,Screening,23,245336.61,3.4
+2024-12-19,University Program,Operations,Onsite Interview,57,116826.06,4.47
+2025-04-13,LinkedIn,Finance,Applied,84,222389.72,1.27
+2024-07-08,University Program,Finance,Onsite Interview,79,88490.57,4.9
+2024-12-08,Job Board,Finance,Onsite Interview,46,121367.38,2.54
+2024-06-13,Careers Page,Marketing,Offer Extended,3,70246.4,2.37
+2025-04-06,Careers Page,Operations,Offer Extended,88,63399.6,1.91
+2025-01-27,Employee Referral,Finance,Hired,17,217462.09,1.34
+2025-05-07,Recruiting Agency,Sales,Offer Extended,86,116368.88,1.76
+2024-12-05,University Program,Sales,Rejected,75,184912.16,4.08
+2025-05-07,Job Board,Marketing,Onsite Interview,51,108814.48,5.0
+2024-02-23,Employee Referral,Sales,Rejected,13,90654.52,4.48
+2024-12-29,Careers Page,Engineering,Rejected,54,83195.13,2.27
+2025-02-01,Careers Page,Marketing,Phone Interview,27,127616.61,2.14
+2025-06-14,Job Board,Engineering,Hired,72,59905.49,2.94
+2024-07-04,Job Board,Customer Success,Onsite Interview,71,131913.11,4.43
+2025-05-22,Careers Page,Customer Success,Rejected,79,122035.53,3.09
+2024-05-09,Job Board,Sales,Phone Interview,83,53357.88,2.05
+2024-08-18,Recruiting Agency,Marketing,Offer Extended,7,220163.11,3.31
+2025-05-19,Careers Page,Finance,Hired,23,202319.33,1.2
+2024-03-03,Job Board,Sales,Applied,21,120297.09,2.05
+2024-06-05,Job Board,Engineering,Rejected,20,69470.14,1.57
+2025-06-17,University Program,Sales,Applied,56,230370.13,4.43
+2024-12-11,Careers Page,Marketing,Offer Extended,1,64268.47,3.23
+2024-11-07,Employee Referral,Marketing,Rejected,87,183077.04,3.27
+2024-07-22,University Program,Sales,Offer Extended,23,195388.69,2.61
+2025-01-18,University Program,Sales,Screening,47,220579.97,1.23
+2025-05-31,Job Board,Marketing,Applied,31,104204.25,1.55
+2025-03-04,Employee Referral,Engineering,Rejected,51,50557.8,4.9
+2024-05-17,University Program,Marketing,Screening,88,108118.53,2.98
+2024-10-29,University Program,Engineering,Offer Extended,42,212710.97,2.82
+2024-11-20,University Program,Finance,Onsite Interview,51,211045.58,2.99
+2024-05-16,LinkedIn,Marketing,Hired,20,79931.77,4.02
+2024-01-30,Careers Page,Engineering,Applied,88,72853.32,3.78
+2025-03-05,Careers Page,Customer Success,Hired,79,177874.87,3.95
+2024-08-09,Recruiting Agency,Operations,Applied,81,246299.53,3.03
+2024-10-17,Recruiting Agency,Customer Success,Screening,66,123821.27,4.06
+2025-02-09,LinkedIn,Customer Success,Hired,71,65091.48,3.85
+2024-02-03,Job Board,Customer Success,Phone Interview,33,77049.2,3.1
+2024-10-05,LinkedIn,Operations,Phone Interview,25,122895.53,3.02
+2025-01-05,Recruiting Agency,Engineering,Phone Interview,7,182406.05,4.2
+2024-09-07,University Program,Engineering,Applied,53,230736.53,1.73
+2024-09-12,Recruiting Agency,Sales,Hired,37,99628.16,3.45
+2025-05-06,Careers Page,Customer Success,Screening,53,176440.09,3.69
+2024-12-03,Employee Referral,Marketing,Onsite Interview,68,216307.48,3.4
+2025-05-29,Recruiting Agency,Customer Success,Phone Interview,22,115470.68,2.09
+2024-02-16,LinkedIn,Finance,Rejected,14,106991.43,4.95
+2025-06-16,Recruiting Agency,Sales,Applied,10,166368.28,4.09
+2024-02-21,Recruiting Agency,Sales,Phone Interview,74,62267.46,2.76
+2024-03-05,University Program,Customer Success,Offer Extended,22,202580.94,4.36
+2024-08-29,LinkedIn,Finance,Phone Interview,19,58421.48,2.04
+2024-02-08,Job Board,Operations,Onsite Interview,31,120276.3,1.66
+2024-06-20,Recruiting Agency,Customer Success,Hired,14,49580.4,3.22
+2024-12-04,Employee Referral,Engineering,Screening,52,194092.08,4.44
+2024-05-06,Careers Page,Marketing,Hired,18,97495.45,3.54
+2024-08-10,Employee Referral,Engineering,Offer Extended,57,173425.44,2.03
+2025-04-16,Job Board,Sales,Screening,55,97290.64,2.54
+2024-11-24,Careers Page,Customer Success,Phone Interview,22,82080.45,3.71
+2024-10-23,Employee Referral,Sales,Onsite Interview,83,131281.74,2.46
+2024-11-30,LinkedIn,Customer Success,Offer Extended,74,226880.29,3.57
+2025-05-08,Careers Page,Sales,Applied,72,206843.29,1.57
+2024-07-01,Employee Referral,Sales,Offer Extended,31,209307.07,2.08
+2024-12-20,Recruiting Agency,Operations,Onsite Interview,73,65493.08,2.89
+2025-06-13,Employee Referral,Engineering,Offer Extended,4,228220.19,1.07
+2024-11-24,LinkedIn,Marketing,Hired,45,58915.97,3.24
+2024-02-18,Employee Referral,Engineering,Hired,0,152974.97,2.73
+2025-06-23,University Program,Sales,Hired,50,84151.69,1.62
+2024-05-19,University Program,Finance,Onsite Interview,36,143948.82,1.55
+2024-01-25,Careers Page,Marketing,Rejected,54,238053.76,4.77
+2024-04-03,Job Board,Finance,Hired,37,167412.51,3.9
+2024-03-23,Recruiting Agency,Engineering,Hired,65,217867.08,2.85
+2024-09-20,Job Board,Marketing,Rejected,69,107640.07,1.57
+2024-12-13,LinkedIn,Engineering,Rejected,12,138128.85,1.32
+2024-12-29,Job Board,Marketing,Hired,18,147234.35,1.73
+2025-06-16,LinkedIn,Sales,Onsite Interview,87,50674.06,1.83
+2025-04-01,LinkedIn,Operations,Onsite Interview,90,131850.59,2.03
+2024-05-12,University Program,Engineering,Offer Extended,23,134940.25,4.74
+2025-01-26,University Program,Sales,Onsite Interview,8,119940.79,4.91
+2025-05-09,Job Board,Engineering,Phone Interview,16,97047.02,3.18
+2024-08-19,LinkedIn,Sales,Offer Extended,36,208836.11,4.3
+2025-02-17,Job Board,Engineering,Onsite Interview,15,196623.37,1.08
+2024-01-17,LinkedIn,Finance,Screening,81,82218.36,4.75
+2024-07-16,Recruiting Agency,Finance,Screening,70,170271.85,4.3
+2024-01-01,Job Board,Marketing,Phone Interview,47,91863.52,4.46
+2024-05-23,Careers Page,Sales,Rejected,54,156370.13,3.92
+2025-03-01,University Program,Marketing,Applied,20,139725.88,4.41
+2024-02-05,Employee Referral,Finance,Hired,64,215270.11,4.12
+2024-11-14,Employee Referral,Customer Success,Phone Interview,80,83303.41,3.23
+2024-09-16,Careers Page,Engineering,Hired,32,109417.63,4.57
+2024-01-12,Recruiting Agency,Operations,Phone Interview,21,182160.62,1.53
+2024-02-08,University Program,Operations,Screening,4,62193.2,4.17
+2024-11-28,Job Board,Marketing,Phone Interview,32,171324.53,4.68
+2024-08-28,Employee Referral,Engineering,Onsite Interview,49,210354.58,2.03
+2025-01-17,Employee Referral,Customer Success,Screening,70,216867.66,3.72
+2024-06-09,Employee Referral,Finance,Phone Interview,78,145085.62,3.28
+2024-10-08,Job Board,Marketing,Applied,12,144467.94,2.24
+2024-01-31,LinkedIn,Finance,Hired,17,189170.86,1.51
+2024-08-30,University Program,Sales,Phone Interview,8,235146.92,4.59
+2024-08-03,Job Board,Sales,Applied,77,129160.52,3.6
+2025-03-07,Employee Referral,Finance,Applied,82,158084.88,3.78
+2024-05-31,LinkedIn,Customer Success,Rejected,6,123495.23,2.91
+2024-08-30,University Program,Marketing,Offer Extended,15,249818.25,1.03
+2024-02-09,LinkedIn,Finance,Onsite Interview,34,114215.05,3.56
+2024-11-29,LinkedIn,Operations,Hired,54,167941.81,3.41
+2025-02-06,LinkedIn,Finance,Screening,24,55369.74,4.56
+2025-03-06,University Program,Finance,Offer Extended,80,102567.66,3.12
+2025-05-03,Job Board,Finance,Applied,65,130237.62,2.96
+2024-01-04,Job Board,Finance,Onsite Interview,66,99032.98,2.21
+2024-03-18,Careers Page,Marketing,Applied,85,169436.17,4.28
+2024-02-28,LinkedIn,Engineering,Onsite Interview,17,122544.1,4.39
+2024-08-16,LinkedIn,Engineering,Applied,38,123458.86,2.36
+2025-06-13,Careers Page,Marketing,Screening,44,235077.88,2.94
+2025-04-24,LinkedIn,Marketing,Hired,18,207774.25,2.1
+2024-09-16,Job Board,Customer Success,Onsite Interview,50,46780.5,1.89
+2024-04-21,University Program,Customer Success,Hired,66,228448.4,2.75
+2025-02-05,University Program,Customer Success,Onsite Interview,87,213457.02,1.27
+2025-05-21,Job Board,Engineering,Phone Interview,21,209599.14,1.1
+2024-06-24,University Program,Sales,Offer Extended,19,81864.24,2.7
+2024-04-27,University Program,Sales,Hired,38,211411.04,3.29
+2024-03-01,Job Board,Sales,Phone Interview,50,156892.43,2.72
+2024-07-12,Employee Referral,Marketing,Phone Interview,71,165293.18,3.04
+2025-02-09,Recruiting Agency,Operations,Onsite Interview,15,248357.27,3.59
+2024-05-05,Careers Page,Marketing,Applied,49,230678.95,1.78
+2024-10-09,Recruiting Agency,Sales,Applied,15,69773.99,3.76
+2024-01-05,Job Board,Marketing,Screening,51,86085.57,1.4
+2024-10-09,LinkedIn,Operations,Screening,77,192811.87,3.53
+2025-02-22,LinkedIn,Customer Success,Screening,4,72563.95,3.85
+2025-04-06,University Program,Marketing,Hired,29,196191.86,4.07
+2024-05-26,Recruiting Agency,Customer Success,Rejected,84,193330.3,1.11
+2025-03-12,Careers Page,Marketing,Offer Extended,40,127769.43,2.86
+2024-11-30,University Program,Operations,Applied,39,143166.1,3.01
+2024-06-02,LinkedIn,Finance,Offer Extended,68,228639.47,4.97
+2024-05-30,Recruiting Agency,Customer Success,Rejected,6,222857.55,1.18
+2025-03-08,Recruiting Agency,Marketing,Phone Interview,38,86687.87,2.04
+2024-03-13,Job Board,Customer Success,Hired,11,157345.92,4.02

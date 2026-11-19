@@ -1,241 +1,241 @@
-Invoice Date,Project Phase,Cost Category,Vendor Region,Budgeted Cost,Actual Cost,Hours Logged
-2024-06-24,HVAC,Overhead,Midwest,44237.95,10351.32,519
-2025-04-06,Site Preparation,Labor,Northeast,99062.9,72927.77,215
-2024-05-13,HVAC,Overhead,Northeast,374918.14,91210.36,214
-2024-01-31,Electrical,Subcontractor,Midwest,190793.34,8989.86,452
-2024-11-13,Finishing,Permits,West Coast,431471.29,230143.97,1235
-2024-05-15,Framing,Permits,West Coast,202659.47,364643.06,503
-2024-03-17,Plumbing,Materials,Southwest,492867.16,470500.24,556
-2024-12-19,Foundation,Permits,West Coast,350295.13,529702.29,53
-2024-08-05,Framing,Materials,West Coast,179907.86,45835.52,451
-2024-11-07,Electrical,Permits,Southwest,453028.97,360633.57,139
-2024-07-10,Foundation,Materials,West Coast,103096.57,334849.56,109
-2024-10-30,Foundation,Materials,Northeast,413173.56,95153.89,1498
-2024-06-19,Landscaping,Overhead,Southeast,335115.96,359914.75,943
-2024-10-20,HVAC,Materials,Southeast,458534.74,245502.82,1391
-2025-06-08,Landscaping,Equipment Rental,Midwest,292536.19,3269.32,1011
-2024-07-20,Site Preparation,Materials,Northeast,436647.2,487171.9,1496
-2024-06-19,HVAC,Labor,Midwest,368510.66,430643.89,791
-2025-06-12,Framing,Subcontractor,Southeast,146110.56,171560.3,1107
-2024-07-23,Plumbing,Overhead,Mountain,487081.52,487136.89,631
-2024-12-14,Finishing,Materials,Southeast,74927.67,164238.05,548
-2024-11-15,Landscaping,Labor,Midwest,255795.37,74886.03,103
-2024-01-18,HVAC,Permits,West Coast,87461.93,118237.46,1358
-2025-06-11,Site Preparation,Permits,Midwest,25709.93,9044.36,861
-2024-09-11,Plumbing,Subcontractor,Southeast,50589.94,202739.83,894
-2025-01-24,Plumbing,Equipment Rental,Midwest,422817.35,148138.4,1219
-2024-07-05,HVAC,Labor,Mountain,107024.2,4644.48,977
-2024-12-09,Finishing,Overhead,Midwest,454691.08,135504.57,646
-2024-04-15,Plumbing,Materials,Southeast,447002.96,217044.57,753
-2024-03-23,Foundation,Overhead,Southeast,248506.97,407790.93,1247
-2024-10-29,Foundation,Overhead,Mountain,383489.2,448531.23,1009
-2025-04-02,Foundation,Labor,Midwest,422562.26,508784.54,22
-2024-07-13,Foundation,Materials,Midwest,5307.17,93037.65,347
-2024-11-26,Plumbing,Labor,Northeast,326160.98,145279.53,784
-2024-10-06,Foundation,Labor,Northeast,67037.51,7482.55,584
-2024-03-05,Foundation,Materials,Southeast,23029.95,235102.61,635
-2024-02-14,Landscaping,Permits,Northeast,223415.58,124059.6,464
-2024-11-09,Finishing,Labor,Mountain,371541.3,533945.7,166
-2024-03-06,Framing,Overhead,Southwest,76096.34,429208.78,1541
-2025-01-02,Plumbing,Overhead,Northeast,313622.5,278087.57,326
-2025-04-17,Plumbing,Subcontractor,Northeast,387684.9,342113.57,1043
-2024-05-29,Electrical,Equipment Rental,Mountain,463637.49,472319.55,249
-2024-03-15,HVAC,Labor,Midwest,133774.31,484844.79,321
-2024-01-16,Plumbing,Subcontractor,Southeast,117867.3,1034.16,1083
-2024-04-01,Finishing,Subcontractor,West Coast,471445.31,89736.1,497
-2024-07-15,Finishing,Equipment Rental,Southeast,508776.63,35634.95,1055
-2024-08-11,Framing,Equipment Rental,West Coast,85712.6,303894.21,1419
-2024-07-21,Plumbing,Labor,West Coast,423813.34,490827.11,1174
-2024-04-27,Foundation,Materials,Southeast,101624.3,362899.54,512
-2024-06-01,Electrical,Labor,Southwest,41825.97,498466.79,736
-2025-04-27,Framing,Equipment Rental,Mountain,325655.87,537291.44,456
-2024-02-19,Foundation,Equipment Rental,Midwest,336253.05,58442.9,946
-2024-11-23,Finishing,Permits,Northeast,124872.13,233816.06,385
-2024-07-20,Framing,Permits,West Coast,104117.78,150954.73,556
-2024-12-04,Landscaping,Equipment Rental,Southwest,270217.09,190167.85,283
-2025-05-27,Plumbing,Permits,Mountain,92668.4,264944.7,235
-2024-08-02,Landscaping,Overhead,Mountain,29824.66,506659.14,1142
-2025-01-08,Foundation,Overhead,Mountain,296709.09,48017.61,672
-2025-02-22,Framing,Materials,Midwest,190005.58,315097.38,505
-2025-02-16,Electrical,Subcontractor,Midwest,423979.13,219778.37,494
-2024-07-19,Framing,Overhead,Northeast,85620.45,531129.83,1472
-2024-03-25,Foundation,Subcontractor,Midwest,58930.92,339375.62,1279
-2024-03-03,Landscaping,Overhead,Midwest,197235.15,83007.9,1134
-2024-09-29,Framing,Overhead,Southeast,446968.22,425509.35,714
-2025-05-09,Site Preparation,Overhead,Northeast,347051.8,227266.23,433
-2024-05-04,Landscaping,Subcontractor,Southeast,413380.41,543815.14,194
-2024-12-29,Foundation,Materials,Southeast,5391.36,513973.92,1487
-2024-06-06,HVAC,Overhead,Midwest,290713.54,284447.74,362
-2024-06-12,HVAC,Materials,Southwest,120323.29,313600.24,937
-2024-03-05,Foundation,Subcontractor,West Coast,306369.21,397869.72,317
-2024-01-14,Site Preparation,Equipment Rental,Northeast,133546.27,328697.76,1152
-2024-09-25,Finishing,Overhead,Southwest,231238.27,97250.26,540
-2024-03-16,Finishing,Equipment Rental,Mountain,196433.02,246331.94,862
-2024-03-12,Landscaping,Overhead,Midwest,295008.27,459000.85,311
-2024-07-30,Foundation,Permits,Southeast,415421.36,259985.91,686
-2025-01-17,Plumbing,Materials,Southeast,193682.4,423037.64,784
-2024-05-16,Site Preparation,Equipment Rental,Southeast,182738.12,294975.0,40
-2024-03-21,Electrical,Labor,Midwest,347830.14,111777.13,1566
-2024-06-03,Finishing,Permits,Northeast,260572.43,278320.56,1169
-2024-01-05,Finishing,Permits,Midwest,199641.18,310828.46,374
-2024-05-14,Foundation,Permits,Southwest,290046.47,307088.36,7
-2024-09-19,Framing,Overhead,West Coast,124764.8,298706.53,783
-2024-04-09,Foundation,Subcontractor,Southeast,236991.59,30579.52,143
-2024-08-08,Site Preparation,Overhead,Southwest,139014.24,209774.49,639
-2024-04-08,HVAC,Overhead,Midwest,215356.12,187162.01,518
-2024-06-27,HVAC,Overhead,West Coast,359669.41,354578.59,1044
-2024-12-24,Plumbing,Permits,Southeast,287603.79,72465.29,852
-2024-03-18,Foundation,Permits,Mountain,382567.88,89002.37,1274
-2024-11-04,Site Preparation,Labor,Southwest,450530.79,430452.16,1336
-2024-05-24,Framing,Materials,Southwest,66262.89,245540.25,369
-2025-03-07,Plumbing,Labor,Midwest,138538.11,372355.83,321
-2024-01-25,Landscaping,Materials,Mountain,458944.42,19192.8,1202
-2025-04-25,Plumbing,Materials,West Coast,20611.33,431228.76,924
-2024-07-07,Plumbing,Equipment Rental,Southwest,420953.88,475428.97,1129
-2025-04-06,Landscaping,Materials,Mountain,277154.24,271160.81,1438
-2024-07-31,Plumbing,Permits,Southeast,120598.96,15559.2,1111
-2024-12-28,Site Preparation,Equipment Rental,Southeast,274090.94,383396.7,960
-2024-09-13,Finishing,Materials,Mountain,432148.4,12424.11,1565
-2025-06-07,Finishing,Materials,West Coast,369433.45,285860.82,323
-2024-09-08,Framing,Permits,Mountain,35750.55,184633.09,410
-2024-03-08,Site Preparation,Subcontractor,Southeast,228362.23,408365.5,211
-2024-04-01,Plumbing,Subcontractor,Northeast,499450.08,87903.88,75
-2024-11-10,Finishing,Overhead,Mountain,285105.15,287449.42,466
-2024-06-03,Landscaping,Permits,Southeast,111155.33,169642.53,990
-2024-08-25,Landscaping,Overhead,Midwest,443894.67,301071.59,677
-2024-07-09,Foundation,Equipment Rental,Northeast,392867.61,46224.55,680
-2024-06-01,Foundation,Permits,Mountain,323059.52,370748.2,830
-2025-01-19,Site Preparation,Overhead,Midwest,234121.88,29330.92,1406
-2025-06-14,Framing,Permits,Northeast,298985.42,155978.76,1064
-2025-01-06,Site Preparation,Labor,Southeast,187350.79,73262.13,1202
-2024-12-02,Framing,Materials,Southwest,218922.88,216111.85,76
-2024-10-12,HVAC,Equipment Rental,Southwest,62644.12,93660.49,1330
-2025-03-12,Site Preparation,Equipment Rental,Mountain,301968.49,132312.63,77
-2024-07-01,Landscaping,Subcontractor,Midwest,79229.21,71832.59,596
-2024-07-17,Landscaping,Equipment Rental,Northeast,273670.83,274896.0,437
-2024-11-08,Site Preparation,Overhead,Midwest,380307.64,332419.96,371
-2024-07-05,Site Preparation,Materials,Southeast,81111.72,304977.9,822
-2024-03-28,Finishing,Permits,Northeast,484587.58,17982.28,1495
-2024-07-17,Finishing,Materials,West Coast,493600.62,348559.28,858
-2024-06-13,HVAC,Subcontractor,Northeast,212808.18,275381.49,395
-2024-02-11,Landscaping,Permits,Midwest,377689.14,85262.04,368
-2024-08-09,Plumbing,Materials,Northeast,164295.04,307264.67,1439
-2025-04-19,Electrical,Equipment Rental,Southwest,247948.15,305844.23,1163
-2024-12-17,Finishing,Permits,West Coast,456801.41,125594.05,200
-2025-01-03,Framing,Subcontractor,Midwest,8976.39,543290.21,1169
-2024-04-05,Electrical,Subcontractor,Mountain,255830.15,541607.27,247
-2024-12-30,Site Preparation,Labor,Southeast,505478.14,72210.51,23
-2024-07-20,Foundation,Equipment Rental,Midwest,272370.32,240267.15,1111
-2025-01-18,Framing,Permits,Southwest,49816.99,212449.34,788
-2025-02-06,Finishing,Permits,Mountain,145019.56,36187.83,1226
-2024-04-13,Site Preparation,Materials,Southwest,405426.33,524710.59,529
-2025-04-04,Landscaping,Permits,Midwest,162798.36,427646.56,1399
-2024-11-19,Plumbing,Permits,Northeast,365054.06,236349.4,1217
-2024-10-11,Landscaping,Labor,Southeast,255763.42,100267.24,974
-2025-03-21,HVAC,Subcontractor,Mountain,404265.23,56565.83,414
-2024-02-12,Foundation,Materials,Mountain,440242.3,522966.44,1440
-2024-08-25,Plumbing,Equipment Rental,Southeast,491067.53,102110.18,1099
-2025-03-25,Finishing,Labor,Northeast,446175.55,263324.34,216
-2025-04-13,Landscaping,Equipment Rental,Southwest,276487.57,248605.35,371
-2025-02-03,Framing,Subcontractor,Midwest,216513.65,418569.69,1438
-2025-02-17,Site Preparation,Permits,Southeast,446116.18,268104.22,247
-2024-02-15,Finishing,Overhead,Southwest,162329.61,406027.16,364
-2024-06-11,Finishing,Subcontractor,Mountain,273164.04,219029.06,1096
-2024-07-03,Electrical,Subcontractor,West Coast,295526.4,331741.31,598
-2025-02-20,Foundation,Subcontractor,Southwest,472581.42,132734.02,951
-2024-09-29,HVAC,Materials,Mountain,127234.0,305007.66,940
-2024-03-17,Finishing,Overhead,Mountain,76485.92,260608.35,1414
-2025-02-20,Plumbing,Subcontractor,Southeast,102816.31,411397.57,876
-2024-09-09,Foundation,Subcontractor,Mountain,291664.06,65205.63,179
-2024-07-28,Framing,Materials,West Coast,256519.69,40899.28,1004
-2024-09-07,Site Preparation,Subcontractor,Mountain,354695.24,138151.34,976
-2024-11-15,HVAC,Materials,Midwest,14842.01,342142.88,1246
-2024-12-21,Framing,Equipment Rental,Northeast,5789.07,478797.8,1334
-2024-02-07,Finishing,Labor,West Coast,199691.39,346779.1,884
-2025-03-06,Framing,Labor,Mountain,306146.56,128701.98,98
-2024-05-02,Site Preparation,Materials,Midwest,217925.63,236650.93,1418
-2024-09-14,HVAC,Materials,Northeast,436628.35,491259.03,1535
-2024-12-12,Foundation,Materials,Midwest,109296.38,352682.25,569
-2024-01-16,Finishing,Materials,Midwest,486292.63,508557.08,1241
-2025-02-27,HVAC,Overhead,West Coast,420871.83,433678.12,1037
-2025-02-05,Site Preparation,Labor,Southeast,104863.66,336407.44,912
-2024-05-23,Electrical,Permits,West Coast,325540.51,219187.97,1455
-2025-04-02,Plumbing,Subcontractor,Midwest,331241.34,413420.96,1345
-2024-04-17,HVAC,Subcontractor,Northeast,352015.18,56737.68,1285
-2024-09-03,Plumbing,Materials,West Coast,227069.33,33272.02,164
-2024-06-02,Plumbing,Equipment Rental,West Coast,267759.44,137067.36,1513
-2024-01-06,Electrical,Materials,West Coast,487004.24,405522.24,1512
-2024-06-06,Landscaping,Labor,Southwest,104025.27,40698.74,232
-2024-01-12,Electrical,Permits,Southeast,161655.44,336110.63,289
-2024-03-10,Foundation,Equipment Rental,Northeast,292271.8,254997.78,146
-2024-01-14,Plumbing,Overhead,Southeast,390397.16,39304.91,742
-2024-10-04,Landscaping,Labor,Northeast,367170.59,258392.74,1367
-2024-05-12,Landscaping,Materials,West Coast,199420.25,169921.56,167
-2025-05-28,Foundation,Equipment Rental,West Coast,127720.91,485684.35,305
-2024-04-01,Framing,Subcontractor,Southwest,50387.38,343669.1,1578
-2024-02-14,Framing,Labor,West Coast,179917.14,382127.63,941
-2024-09-01,Electrical,Overhead,Mountain,308833.9,421796.53,1535
-2024-04-27,Finishing,Subcontractor,Southwest,456998.16,284332.57,1420
-2024-08-25,Foundation,Materials,Southwest,420104.41,252241.28,487
-2024-03-09,Landscaping,Labor,West Coast,335852.73,353676.92,958
-2024-02-10,Framing,Labor,Southeast,212690.0,135136.76,943
-2025-02-23,Electrical,Equipment Rental,Southeast,153898.68,108243.34,309
-2024-10-06,Site Preparation,Equipment Rental,Southeast,354777.42,318125.71,983
-2025-06-03,HVAC,Equipment Rental,Southwest,107503.46,349359.03,1153
-2024-06-08,Foundation,Labor,Southeast,477080.45,193284.25,408
-2025-03-28,Site Preparation,Labor,Southeast,75676.15,198151.21,338
-2024-08-06,Electrical,Permits,West Coast,235472.87,162120.35,720
-2024-05-24,Site Preparation,Labor,Southwest,402081.39,43046.76,1046
-2024-04-06,Electrical,Subcontractor,West Coast,389652.94,316835.15,417
-2025-02-21,Framing,Labor,Northeast,210995.09,319936.81,66
-2024-08-13,Electrical,Subcontractor,Mountain,206809.73,381733.22,1220
-2024-12-31,Landscaping,Subcontractor,Northeast,15841.24,142224.31,623
-2024-05-20,Foundation,Materials,Midwest,419358.15,395866.05,500
-2025-01-17,Electrical,Labor,Southeast,39947.82,281396.76,482
-2024-02-22,Site Preparation,Labor,Midwest,173722.84,422803.16,713
-2025-03-28,Finishing,Overhead,Southwest,101331.62,319999.06,830
-2024-06-07,Framing,Equipment Rental,Mountain,437464.65,306925.53,11
-2024-03-21,Framing,Permits,West Coast,369304.73,117347.87,473
-2024-05-29,Foundation,Subcontractor,West Coast,156049.76,18571.04,809
-2024-02-10,Site Preparation,Subcontractor,Southwest,82424.62,319879.44,885
-2024-09-05,Foundation,Subcontractor,Northeast,232770.57,67610.06,1155
-2025-06-07,Framing,Equipment Rental,Southeast,4064.82,264242.73,1055
-2024-10-15,Plumbing,Overhead,Midwest,42676.72,467815.39,39
-2024-01-23,Framing,Materials,Southwest,354018.39,346121.27,928
-2025-03-12,HVAC,Subcontractor,West Coast,33606.52,463548.19,1564
-2024-08-13,Landscaping,Subcontractor,West Coast,79346.16,3476.92,1538
-2024-06-17,Electrical,Overhead,Southeast,59501.12,189676.66,437
-2024-11-01,Finishing,Labor,Southwest,167336.77,267237.7,1155
-2024-04-25,Foundation,Permits,Southeast,109518.2,469852.85,1121
-2025-05-23,Foundation,Overhead,Northeast,354430.02,110472.68,361
-2024-11-25,Foundation,Permits,Northeast,6791.96,443947.14,212
-2024-12-21,Landscaping,Equipment Rental,Southwest,360501.68,521720.49,735
-2024-10-17,Electrical,Permits,Southeast,97043.82,300115.84,1310
-2024-08-30,Landscaping,Overhead,Northeast,455776.35,380883.77,345
-2024-03-18,Foundation,Equipment Rental,Southeast,446554.96,121535.83,13
-2024-12-04,Plumbing,Permits,Southwest,438063.13,231845.99,689
-2024-01-14,Site Preparation,Permits,Southeast,329872.9,543671.66,93
-2024-03-03,Landscaping,Permits,Southwest,319335.1,316355.27,580
-2024-05-15,HVAC,Labor,Northeast,351402.86,471525.51,938
-2025-03-22,Landscaping,Equipment Rental,Southeast,199418.17,392605.58,1512
-2024-03-06,Plumbing,Equipment Rental,Northeast,241668.93,475590.46,301
-2025-03-08,Landscaping,Subcontractor,Southeast,54191.0,33028.36,813
-2025-03-29,Foundation,Labor,Midwest,309977.94,387791.48,884
-2024-11-30,Landscaping,Equipment Rental,Southwest,381803.68,382093.52,164
-2024-04-15,Landscaping,Equipment Rental,Northeast,373407.57,257764.52,1010
-2024-10-08,Landscaping,Subcontractor,Mountain,392664.06,309853.34,42
-2024-09-09,Site Preparation,Labor,Mountain,77614.18,142428.62,1379
-2025-01-09,Foundation,Overhead,Northeast,491927.11,509101.44,202
-2024-08-31,Foundation,Subcontractor,Mountain,51567.99,146643.08,804
-2024-02-22,Foundation,Subcontractor,West Coast,328923.86,369388.55,474
-2024-05-21,Foundation,Overhead,Northeast,285047.58,408229.53,901
-2024-11-24,Electrical,Subcontractor,Northeast,406884.06,441007.85,696
-2024-07-14,HVAC,Materials,Midwest,84509.35,525095.84,617
-2024-03-05,Framing,Materials,Mountain,49904.35,483803.53,1027
-2024-07-01,Landscaping,Equipment Rental,Midwest,424928.39,256097.77,941
-2024-07-18,HVAC,Materials,Midwest,18105.57,146296.67,627
-2024-11-08,Electrical,Overhead,Southwest,339920.86,282905.61,1277
-2024-11-11,HVAC,Overhead,Southeast,324379.32,470880.91,895
-2024-12-24,Electrical,Subcontractor,Midwest,388854.03,539842.4,904
-2024-04-15,Framing,Materials,West Coast,174037.22,207502.3,200
-2024-03-24,Framing,Permits,Northeast,206219.5,20628.1,945
+Reporting Date,Loan Product,Region,Risk Grade,Outstanding Balance,Interest Income,Delinquent Loan Count
+2024-01-29,Mortgage,West Coast,Grade D,564509.02,17873.64,139
+2024-11-09,Credit Line,Southwest,Grade E,57341.31,7571.93,61
+2024-12-30,Auto Loan,Northeast,Grade C,642886.36,13717.81,426
+2024-10-11,Mortgage,Southwest,Grade E,94576.72,2903.97,34
+2025-02-27,Small Business Loan,Midwest,Grade E,518840.55,24358.87,423
+2025-04-12,Credit Line,Southwest,Grade C,273981.67,17966.07,123
+2024-08-13,Small Business Loan,Southwest,Grade D,363900.46,14591.99,372
+2025-01-31,Auto Loan,Southeast,Grade C,241424.16,14471.21,229
+2025-04-23,Student Loan,Southeast,Grade B,138182.09,6075.83,210
+2024-09-14,Auto Loan,Northeast,Grade A,650544.31,20739.33,258
+2025-01-14,Student Loan,Southeast,Grade B,329821.79,7741.51,409
+2025-03-17,Auto Loan,West Coast,Grade C,330641.43,4839.22,80
+2025-01-02,Small Business Loan,Southwest,Grade D,115072.99,12625.28,356
+2024-10-21,Credit Line,Northeast,Grade A,47526.4,16235.18,256
+2025-03-03,Mortgage,Southeast,Grade B,696363.61,17553.97,331
+2024-08-24,Mortgage,West Coast,Grade E,78877.57,13559.04,441
+2025-02-26,Credit Line,Mountain,Grade D,702713.99,21935.05,166
+2024-01-05,Mortgage,West Coast,Grade C,17258.52,4184.28,264
+2024-12-06,Personal Loan,Midwest,Grade C,225959.11,15747.33,141
+2025-01-01,Personal Loan,Northeast,Grade B,392824.14,24887.36,109
+2024-10-22,Student Loan,Mountain,Grade C,633877.99,8009.79,163
+2025-02-28,Personal Loan,Mountain,Grade E,685559.28,1302.64,202
+2024-01-13,Credit Line,Mountain,Grade A,77373.14,20620.59,137
+2025-01-16,Mortgage,West Coast,Grade E,747331.34,22618.46,153
+2024-03-19,Credit Line,West Coast,Grade E,20229.93,23036.35,253
+2025-06-03,Personal Loan,Southwest,Grade E,476165.55,2919.68,42
+2024-12-24,Student Loan,West Coast,Grade B,36861.52,16166.84,337
+2025-01-24,Mortgage,Mountain,Grade A,38181.25,9468.9,355
+2024-12-15,Personal Loan,Midwest,Grade E,19933.88,24447.2,351
+2024-01-07,Small Business Loan,Southeast,Grade D,557587.71,6129.19,95
+2024-10-06,Mortgage,West Coast,Grade B,720699.25,7940.85,349
+2025-05-15,Mortgage,Midwest,Grade E,662630.5,19869.5,103
+2024-04-02,Auto Loan,Midwest,Grade B,577920.31,23250.36,296
+2025-03-20,Credit Line,Southeast,Grade C,9141.78,10428.5,351
+2024-09-13,Small Business Loan,Southwest,Grade E,166027.29,7842.15,204
+2025-01-03,Personal Loan,West Coast,Grade B,174312.38,4122.52,297
+2024-05-14,Small Business Loan,Southeast,Grade E,684368.4,23157.88,3
+2025-01-31,Auto Loan,Southwest,Grade D,391711.87,20585.51,423
+2024-11-12,Credit Line,Northeast,Grade C,358140.12,1881.47,350
+2024-02-06,Small Business Loan,Mountain,Grade D,388478.02,13137.85,181
+2025-03-05,Credit Line,Mountain,Grade B,277533.49,20783.64,430
+2024-01-10,Mortgage,Northeast,Grade E,269529.15,4467.77,32
+2024-06-14,Auto Loan,Northeast,Grade A,562377.52,17380.89,441
+2024-10-17,Personal Loan,Southwest,Grade B,160110.72,24959.49,297
+2024-02-20,Small Business Loan,West Coast,Grade C,471154.65,4779.37,38
+2025-05-02,Personal Loan,Mountain,Grade B,595717.68,11566.74,363
+2024-08-07,Mortgage,Midwest,Grade B,400168.89,5308.56,326
+2025-01-24,Small Business Loan,West Coast,Grade D,100549.57,9778.49,35
+2025-03-21,Auto Loan,Southwest,Grade C,595986.4,19161.16,115
+2025-04-28,Student Loan,Mountain,Grade C,272926.96,250.95,173
+2024-06-13,Student Loan,Southwest,Grade C,528496.02,23712.63,319
+2024-06-07,Personal Loan,Southeast,Grade C,216848.19,15361.98,136
+2025-01-11,Credit Line,Midwest,Grade A,64687.73,20537.32,442
+2024-09-10,Credit Line,Mountain,Grade D,585995.71,15404.51,297
+2025-05-28,Auto Loan,Mountain,Grade D,285727.96,15216.98,443
+2024-06-03,Small Business Loan,Northeast,Grade A,299837.28,12222.9,34
+2025-01-08,Personal Loan,Southwest,Grade A,95779.67,1344.97,449
+2024-10-23,Student Loan,Southwest,Grade B,100909.7,6526.99,207
+2024-11-08,Small Business Loan,Northeast,Grade E,232755.4,2017.65,88
+2025-04-11,Personal Loan,Mountain,Grade C,168948.38,22292.38,248
+2024-02-09,Mortgage,Southeast,Grade C,381921.43,18835.89,267
+2024-10-12,Personal Loan,Mountain,Grade D,49065.09,13036.6,146
+2024-03-19,Student Loan,Northeast,Grade E,438672.99,10214.7,286
+2025-02-15,Student Loan,Southwest,Grade B,690744.64,10535.75,416
+2024-05-06,Small Business Loan,Northeast,Grade C,473835.89,5273.11,339
+2025-05-11,Auto Loan,Midwest,Grade A,693663.4,9335.55,270
+2025-01-19,Mortgage,Southeast,Grade E,362073.1,16993.59,121
+2024-08-30,Mortgage,Midwest,Grade E,74425.36,700.18,73
+2024-07-15,Personal Loan,Midwest,Grade B,575586.68,18048.87,364
+2024-10-04,Personal Loan,Southeast,Grade C,728264.1,15153.61,260
+2024-12-25,Auto Loan,West Coast,Grade C,85176.87,18241.12,90
+2024-10-23,Credit Line,Midwest,Grade E,226396.64,5078.15,281
+2024-08-10,Student Loan,Southwest,Grade A,422286.45,21758.14,13
+2024-09-17,Personal Loan,Northeast,Grade C,748913.8,8976.35,18
+2024-12-25,Small Business Loan,Southeast,Grade D,528433.87,4933.52,187
+2025-04-02,Auto Loan,Midwest,Grade A,332312.82,12135.83,81
+2024-01-29,Student Loan,Mountain,Grade E,87602.59,15803.65,310
+2024-10-08,Auto Loan,Mountain,Grade B,256898.7,20296.77,385
+2025-04-03,Credit Line,Midwest,Grade B,429768.28,6518.75,368
+2024-05-01,Auto Loan,West Coast,Grade C,278876.62,15678.5,129
+2024-02-03,Small Business Loan,West Coast,Grade C,65853.21,3497.09,374
+2024-09-16,Student Loan,Midwest,Grade B,172975.39,16565.27,401
+2024-09-30,Small Business Loan,Southwest,Grade E,584617.01,9909.84,423
+2024-03-03,Credit Line,Southeast,Grade C,734139.97,15522.33,439
+2024-05-29,Mortgage,Mountain,Grade D,516604.5,12718.48,210
+2024-10-20,Credit Line,Mountain,Grade B,328375.06,15778.83,327
+2025-06-14,Credit Line,Southeast,Grade B,742029.7,16833.92,79
+2024-10-06,Mortgage,Southeast,Grade C,636608.29,24830.67,437
+2024-03-24,Personal Loan,West Coast,Grade B,554165.07,10762.79,387
+2025-04-01,Student Loan,Southwest,Grade E,708145.23,15543.97,337
+2025-03-17,Student Loan,Midwest,Grade D,47966.63,12517.21,443
+2024-06-07,Student Loan,Southeast,Grade B,24818.67,10495.43,416
+2024-05-09,Small Business Loan,Midwest,Grade D,256861.26,15830.55,413
+2025-03-19,Small Business Loan,Southwest,Grade D,305422.88,20531.55,376
+2025-05-02,Personal Loan,Southeast,Grade E,137734.07,13929.54,230
+2024-03-30,Mortgage,Southeast,Grade D,591200.86,3160.5,69
+2024-10-29,Personal Loan,Midwest,Grade E,75452.48,8293.83,337
+2024-08-26,Small Business Loan,Southwest,Grade D,637856.17,23534.25,151
+2024-03-01,Auto Loan,West Coast,Grade E,343301.91,19593.39,443
+2025-03-24,Credit Line,West Coast,Grade C,119459.48,22592.16,4
+2024-09-04,Credit Line,Mountain,Grade E,378207.7,2987.21,63
+2024-06-30,Small Business Loan,Southwest,Grade B,20366.69,5040.69,444
+2024-08-18,Small Business Loan,West Coast,Grade C,735094.44,1663.39,80
+2024-08-28,Auto Loan,West Coast,Grade E,22449.96,5849.39,437
+2024-08-05,Personal Loan,Southwest,Grade D,609976.59,8236.49,430
+2025-02-03,Credit Line,West Coast,Grade C,604322.43,20361.23,256
+2024-08-29,Auto Loan,Northeast,Grade D,588007.79,7558.52,80
+2025-01-10,Auto Loan,Southwest,Grade A,226800.94,9066.98,279
+2024-08-28,Student Loan,Southeast,Grade A,531172.8,16025.84,263
+2024-02-08,Student Loan,Mountain,Grade D,40146.21,1735.47,192
+2024-12-14,Student Loan,Southeast,Grade D,629954.39,891.75,108
+2024-03-15,Mortgage,Southeast,Grade C,23439.76,21527.14,420
+2025-03-17,Auto Loan,Northeast,Grade C,247651.64,14431.96,262
+2024-03-10,Mortgage,Southeast,Grade B,2735.91,4405.88,269
+2024-03-25,Mortgage,Southeast,Grade E,632933.19,5148.74,248
+2024-11-09,Auto Loan,Northeast,Grade A,545983.19,5604.47,275
+2025-03-22,Small Business Loan,Northeast,Grade D,595552.15,11017.25,252
+2024-09-28,Mortgage,Southeast,Grade E,377453.66,19630.85,129
+2024-03-30,Auto Loan,Southwest,Grade C,358693.15,22066.02,126
+2025-05-07,Personal Loan,Midwest,Grade A,472173.31,21651.83,40
+2024-01-05,Auto Loan,Southeast,Grade E,409294.89,132.84,138
+2024-04-17,Small Business Loan,Midwest,Grade A,623629.9,9065.95,286
+2024-05-06,Small Business Loan,Midwest,Grade E,696381.35,19103.22,284
+2025-04-08,Personal Loan,Southeast,Grade C,318590.23,10530.59,115
+2025-04-30,Student Loan,Midwest,Grade B,622527.79,12585.46,6
+2025-03-28,Small Business Loan,Southwest,Grade D,502921.69,21852.56,333
+2024-12-17,Student Loan,West Coast,Grade E,740420.82,6353.38,118
+2024-11-30,Mortgage,Southwest,Grade D,399077.1,16510.07,366
+2025-01-05,Personal Loan,Southwest,Grade A,503164.26,17591.44,80
+2024-06-26,Personal Loan,Mountain,Grade D,605000.61,7853.53,251
+2024-09-16,Credit Line,West Coast,Grade E,545880.46,962.55,140
+2024-12-17,Small Business Loan,West Coast,Grade E,383404.95,21128.9,62
+2024-03-16,Mortgage,Mountain,Grade E,404107.62,8681.55,135
+2025-02-12,Student Loan,Southeast,Grade E,54421.61,13047.83,250
+2025-03-24,Mortgage,Northeast,Grade C,715838.41,9657.36,181
+2024-10-01,Personal Loan,Midwest,Grade B,566397.5,21456.71,265
+2024-06-04,Auto Loan,Midwest,Grade C,110529.3,2903.77,262
+2024-03-02,Credit Line,West Coast,Grade A,349057.36,16895.71,210
+2024-02-13,Personal Loan,Southeast,Grade D,529007.68,14467.09,34
+2024-12-10,Personal Loan,Mountain,Grade A,161563.31,14068.29,435
+2025-03-30,Mortgage,Mountain,Grade E,347752.89,14821.19,149
+2025-02-01,Personal Loan,Mountain,Grade A,499245.53,2165.56,63
+2024-06-28,Mortgage,Mountain,Grade D,68243.38,22079.47,12
+2024-05-24,Student Loan,Mountain,Grade D,615926.62,3039.59,319
+2024-04-29,Auto Loan,Northeast,Grade A,603162.52,20449.59,115
+2024-10-22,Student Loan,West Coast,Grade E,71066.21,3945.16,182
+2025-02-10,Small Business Loan,Southeast,Grade B,625627.14,10778.31,354
+2025-06-21,Student Loan,Mountain,Grade A,483849.67,12887.73,153
+2024-01-22,Mortgage,Midwest,Grade D,155809.71,2213.09,328
+2024-11-17,Small Business Loan,Southeast,Grade D,381667.73,3266.82,132
+2024-09-05,Credit Line,Southwest,Grade D,170539.3,6822.38,374
+2024-04-06,Personal Loan,Midwest,Grade C,715624.67,8099.55,79
+2024-07-12,Credit Line,Midwest,Grade A,561838.45,20365.37,292
+2024-04-13,Mortgage,Southwest,Grade E,373411.17,16149.09,104
+2024-11-04,Student Loan,Northeast,Grade E,42147.99,15347.92,249
+2024-03-25,Credit Line,Northeast,Grade B,483210.3,10947.08,96
+2025-05-21,Credit Line,Midwest,Grade C,305927.4,7000.7,280
+2025-01-11,Personal Loan,Midwest,Grade B,189033.89,5184.6,396
+2024-05-23,Mortgage,Mountain,Grade A,137818.5,20060.77,17
+2025-03-04,Credit Line,Mountain,Grade B,92050.43,24729.9,5
+2024-06-29,Personal Loan,Mountain,Grade E,730601.21,5805.0,276
+2025-03-07,Personal Loan,Northeast,Grade A,45990.21,5709.22,269
+2024-05-03,Personal Loan,West Coast,Grade A,302698.95,6263.29,426
+2024-03-11,Mortgage,Northeast,Grade B,407250.11,18114.74,200
+2024-12-27,Small Business Loan,Midwest,Grade A,521936.89,13407.09,322
+2024-11-14,Small Business Loan,Mountain,Grade D,407144.48,15269.01,264
+2025-01-12,Auto Loan,West Coast,Grade B,535235.75,3040.77,423
+2024-10-29,Student Loan,Northeast,Grade E,20442.42,10022.08,230
+2025-04-15,Student Loan,Midwest,Grade B,157488.24,15085.14,61
+2024-01-30,Small Business Loan,Southeast,Grade A,495422.17,23439.01,384
+2024-09-06,Credit Line,West Coast,Grade B,536017.42,18029.55,312
+2024-04-14,Credit Line,Northeast,Grade D,159500.48,6974.38,396
+2025-03-28,Credit Line,Southwest,Grade A,454207.04,10806.78,435
+2024-08-25,Small Business Loan,Mountain,Grade C,437952.17,11972.16,305
+2024-03-10,Credit Line,Northeast,Grade D,69823.19,17360.36,153
+2024-04-10,Student Loan,Southeast,Grade B,196975.09,14696.13,126
+2024-01-12,Small Business Loan,Southwest,Grade D,247781.34,21326.14,203
+2024-12-10,Auto Loan,West Coast,Grade C,38755.45,15362.16,432
+2025-02-17,Personal Loan,Southeast,Grade D,503987.05,3498.85,294
+2024-10-03,Credit Line,Mountain,Grade A,39452.55,6673.7,187
+2024-12-19,Personal Loan,West Coast,Grade D,277981.77,11541.79,279
+2024-07-30,Small Business Loan,Midwest,Grade C,310562.37,1328.4,306
+2024-12-07,Personal Loan,Mountain,Grade D,318932.41,18216.16,63
+2025-05-15,Small Business Loan,Mountain,Grade B,153117.12,21298.3,131
+2024-02-02,Personal Loan,Mountain,Grade C,466529.9,11167.19,62
+2024-01-04,Mortgage,Southeast,Grade A,512333.86,18392.49,284
+2025-03-02,Personal Loan,Northeast,Grade B,370052.1,18559.75,101
+2025-04-16,Student Loan,Midwest,Grade B,648961.68,9719.77,359
+2025-05-18,Credit Line,West Coast,Grade C,58657.98,24105.82,226
+2024-01-15,Mortgage,Mountain,Grade C,702918.68,1897.75,270
+2024-04-25,Small Business Loan,Northeast,Grade C,487433.98,20071.63,441
+2024-07-29,Mortgage,Mountain,Grade B,666572.75,9864.86,304
+2025-05-14,Auto Loan,Northeast,Grade B,112494.09,18016.82,126
+2024-06-20,Mortgage,Northeast,Grade D,112992.34,13945.09,415
+2024-06-16,Student Loan,Southwest,Grade E,360132.16,10698.72,137
+2025-05-01,Mortgage,West Coast,Grade A,89498.6,21486.18,157
+2024-10-27,Auto Loan,Northeast,Grade D,46053.46,5640.04,153
+2025-03-11,Small Business Loan,Mountain,Grade E,112102.89,22544.58,320
+2025-05-28,Credit Line,Northeast,Grade B,513307.39,14484.14,171
+2024-08-24,Auto Loan,Mountain,Grade A,596291.83,7189.07,342
+2025-05-10,Mortgage,Northeast,Grade E,236700.17,2622.72,149
+2024-01-29,Auto Loan,Northeast,Grade D,554790.64,4415.56,244
+2025-01-10,Small Business Loan,Midwest,Grade A,224909.16,16988.36,431
+2025-04-09,Mortgage,Southwest,Grade D,264671.04,19190.7,81
+2024-10-09,Personal Loan,Mountain,Grade E,676325.01,17040.98,158
+2025-01-28,Personal Loan,Southeast,Grade A,716035.86,14594.25,170
+2024-01-17,Credit Line,Southwest,Grade E,200137.86,4373.92,27
+2024-08-01,Mortgage,Southwest,Grade C,237938.97,9617.58,69
+2025-01-05,Credit Line,West Coast,Grade C,417635.06,7076.79,269
+2024-03-19,Personal Loan,Mountain,Grade D,295362.85,10218.43,172
+2024-09-21,Mortgage,Southeast,Grade A,368077.59,5085.87,88
+2024-11-02,Student Loan,Mountain,Grade C,683773.1,17727.71,102
+2025-06-08,Small Business Loan,Southeast,Grade B,485404.77,15910.18,334
+2025-04-04,Personal Loan,Midwest,Grade A,664380.4,14834.91,174
+2025-06-07,Credit Line,Southeast,Grade D,474689.27,24313.23,266
+2024-06-17,Student Loan,Midwest,Grade A,313738.17,21681.71,386
+2024-03-07,Auto Loan,Southwest,Grade E,303848.84,13130.98,81
+2024-08-06,Mortgage,Mountain,Grade C,701372.36,5108.66,274
+2024-12-25,Mortgage,Southeast,Grade A,315728.24,12339.23,368
+2025-02-09,Credit Line,Southwest,Grade B,132000.93,6972.02,283
+2024-10-10,Auto Loan,Mountain,Grade B,687924.02,847.22,12
+2024-04-04,Auto Loan,Southwest,Grade B,736159.9,346.09,376
+2024-03-03,Mortgage,Midwest,Grade A,17936.31,7287.24,228
+2025-02-07,Personal Loan,Mountain,Grade C,75370.54,3046.65,219
+2024-07-26,Mortgage,Southeast,Grade B,526883.1,19566.25,110
+2025-05-01,Personal Loan,Southeast,Grade C,681078.36,17639.77,218
+2024-07-19,Mortgage,Mountain,Grade E,296166.68,7524.32,78
+2024-09-28,Credit Line,West Coast,Grade E,456457.53,23858.86,263
+2024-12-25,Auto Loan,West Coast,Grade C,28416.51,4794.36,243
+2024-12-17,Credit Line,Northeast,Grade B,403090.02,22694.19,255
+2024-01-10,Student Loan,Southwest,Grade C,20245.06,9085.03,70
+2024-12-16,Student Loan,West Coast,Grade D,635151.24,4466.66,120
+2025-01-27,Auto Loan,Northeast,Grade A,652919.48,23997.96,292
+2024-10-27,Mortgage,Midwest,Grade E,124541.78,4251.2,225
+2025-02-04,Credit Line,West Coast,Grade A,416748.25,20553.19,383
+2024-11-20,Credit Line,Mountain,Grade C,54450.99,2091.3,255
+2025-01-18,Small Business Loan,Southeast,Grade D,290406.93,19494.53,398
+2025-02-11,Mortgage,Southwest,Grade E,197511.96,2970.47,17
+2025-04-25,Student Loan,Southwest,Grade C,717254.99,1860.77,397
+2024-07-11,Small Business Loan,Southeast,Grade B,31767.82,11907.35,406

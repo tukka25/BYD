@@ -1,241 +1,241 @@
-Grade Date,Course Code,Semester,Letter Grade,Enrolled Students,Average Score,Credit Hours
-2024-07-30,CHEM210,Spring,A,374,16.53,6
-2025-02-01,BIO150,Summer,D,306,13.7,5
-2025-02-13,CHEM210,Fall,A,381,52.84,3
-2025-06-22,CS101,Winter,B-,296,79.71,6
-2025-03-28,CS101,Spring,A,187,25.97,4
-2024-01-01,BIO150,Spring,D,59,81.14,3
-2024-11-14,HIST230,Fall,F,395,30.37,5
-2024-04-07,MATH201,Summer,C,187,39.94,5
-2024-05-21,MATH201,Fall,A-,330,93.62,2
-2024-10-18,ENG110,Spring,A-,292,96.39,2
-2025-04-09,ENG110,Spring,F,255,10.95,2
-2024-11-20,CS101,Summer,C+,171,14.24,6
-2024-02-27,CS101,Winter,C,93,80.0,3
-2024-07-26,CS101,Summer,B-,183,39.51,3
-2024-02-21,CS101,Spring,C+,250,57.7,3
-2024-06-07,HIST230,Fall,B-,80,94.19,1
-2024-01-05,ENG110,Winter,F,88,50.88,6
-2024-10-15,MATH201,Spring,C,89,4.22,2
-2025-01-13,CHEM210,Fall,A,366,70.35,4
-2025-02-23,CS101,Winter,C+,127,89.96,6
-2025-01-15,CHEM210,Summer,B+,31,5.47,3
-2025-02-01,CHEM210,Spring,C,251,15.41,4
-2025-01-16,CHEM210,Summer,D,23,39.39,4
-2024-08-05,MATH201,Winter,D,15,14.06,3
-2024-08-24,CS101,Spring,A-,235,33.35,5
-2024-02-14,MATH201,Winter,D,216,1.83,5
-2024-01-12,CS101,Winter,B-,158,54.18,4
-2025-03-16,ENG110,Summer,B,388,33.28,4
-2025-05-16,CHEM210,Winter,C+,52,47.53,1
-2024-11-26,MATH201,Spring,A-,349,96.27,3
-2024-10-03,HIST230,Fall,A,141,84.4,3
-2024-04-24,BIO150,Winter,F,311,58.82,2
-2024-01-11,HIST230,Winter,A,12,12.58,2
-2024-05-16,CHEM210,Spring,B-,31,23.92,4
-2025-01-06,CS101,Summer,B,227,41.29,1
-2024-03-22,CHEM210,Spring,F,8,32.14,2
-2024-12-19,ENG110,Summer,A,258,18.95,3
-2025-06-15,HIST230,Summer,C+,270,51.05,5
-2024-12-12,BIO150,Winter,B-,289,43.93,5
-2024-06-05,MATH201,Spring,B,48,20.13,2
-2024-03-21,BIO150,Fall,B,102,47.58,5
-2024-07-30,CHEM210,Fall,B-,49,48.84,2
-2024-10-20,CHEM210,Winter,F,221,67.55,3
-2025-05-23,HIST230,Fall,C,400,88.18,4
-2024-07-15,CHEM210,Winter,B+,294,19.69,2
-2024-04-24,MATH201,Summer,D,98,25.94,1
-2024-08-01,HIST230,Fall,C+,219,46.2,5
-2024-03-29,MATH201,Fall,A-,235,47.74,2
-2024-12-02,MATH201,Winter,C,124,1.1,3
-2025-04-04,HIST230,Winter,C+,229,81.49,6
-2024-03-31,HIST230,Spring,C+,349,89.31,3
-2025-01-16,BIO150,Spring,B+,46,43.2,6
-2024-03-20,BIO150,Summer,B+,219,35.35,2
-2024-03-14,MATH201,Spring,F,253,54.55,3
-2024-11-01,CS101,Summer,C,300,13.03,5
-2025-05-21,HIST230,Spring,C,235,50.02,1
-2024-01-14,CHEM210,Summer,C,146,91.99,4
-2024-07-19,ENG110,Fall,F,313,76.39,5
-2024-06-26,ENG110,Summer,B+,299,29.91,3
-2024-12-31,ENG110,Spring,C+,358,19.54,1
-2024-08-09,CHEM210,Winter,F,77,13.91,4
-2024-01-02,CHEM210,Winter,F,346,34.9,5
-2024-02-07,CHEM210,Summer,B,79,81.89,1
-2025-01-07,CS101,Spring,B+,349,32.74,6
-2024-03-20,MATH201,Spring,B+,219,52.6,4
-2025-05-18,CHEM210,Summer,B,14,26.91,2
-2024-01-25,CS101,Spring,B-,375,28.46,4
-2024-10-04,CS101,Winter,B-,25,4.29,3
-2024-04-14,BIO150,Summer,A-,106,87.53,3
-2025-03-07,ENG110,Fall,C+,368,27.2,4
-2024-06-16,CS101,Fall,C,206,62.76,2
-2024-03-24,ENG110,Summer,B+,354,63.67,2
-2024-09-24,CS101,Fall,A-,74,28.4,5
-2024-03-19,BIO150,Summer,C,227,14.02,4
-2024-05-11,ENG110,Fall,D,110,3.48,5
-2024-11-29,ENG110,Spring,C,91,5.06,4
-2025-06-17,HIST230,Winter,B,42,23.83,2
-2024-01-22,ENG110,Summer,B,331,92.99,4
-2025-01-13,HIST230,Winter,D,268,16.41,3
-2024-10-31,MATH201,Winter,B,89,2.97,3
-2024-08-16,MATH201,Fall,C+,130,85.11,4
-2025-06-19,MATH201,Spring,B,276,40.03,2
-2024-08-02,HIST230,Spring,B,263,81.77,1
-2024-04-13,ENG110,Spring,D,90,44.26,2
-2024-08-06,MATH201,Winter,D,365,72.47,5
-2024-05-12,MATH201,Winter,D,193,97.56,1
-2024-12-13,CS101,Fall,A,222,88.74,3
-2024-04-05,ENG110,Spring,B,370,71.22,3
-2024-03-05,ENG110,Fall,A-,299,0.45,3
-2024-07-15,HIST230,Spring,B+,216,70.91,3
-2024-11-13,CS101,Winter,F,106,11.1,3
-2024-11-23,BIO150,Fall,B,180,21.66,4
-2025-02-23,CS101,Summer,F,103,8.04,3
-2024-04-12,HIST230,Summer,C+,340,34.18,3
-2024-11-24,HIST230,Summer,C+,216,81.15,4
-2024-07-03,HIST230,Winter,B,240,78.89,1
-2025-01-04,ENG110,Summer,B+,285,37.47,6
-2024-12-12,HIST230,Winter,F,389,96.39,6
-2024-11-15,HIST230,Summer,F,340,86.73,4
-2024-08-12,ENG110,Winter,B-,305,59.37,3
-2025-03-15,MATH201,Winter,A,293,60.93,6
-2024-02-18,BIO150,Fall,B,215,48.95,4
-2024-10-14,ENG110,Spring,B-,175,31.6,3
-2024-12-16,CS101,Winter,B+,54,49.92,3
-2025-01-25,HIST230,Spring,B,290,75.04,3
-2024-10-20,CS101,Summer,B-,318,33.98,6
-2024-10-24,BIO150,Winter,A-,12,18.1,1
-2025-01-08,CS101,Summer,A-,41,46.18,5
-2024-11-08,CS101,Winter,A,234,33.13,6
-2024-10-17,CS101,Fall,C,397,31.51,4
-2025-03-27,HIST230,Summer,B,353,78.41,2
-2024-01-15,ENG110,Winter,D,398,28.83,2
-2024-07-10,CS101,Summer,B-,47,61.08,5
-2025-02-18,HIST230,Winter,F,395,63.82,3
-2025-05-02,CS101,Summer,B+,16,41.05,5
-2025-04-12,BIO150,Summer,C+,249,29.03,4
-2024-09-13,CS101,Summer,A,26,86.98,3
-2024-01-11,MATH201,Spring,B,253,79.96,5
-2024-11-20,HIST230,Winter,B,396,12.65,5
-2025-04-03,ENG110,Winter,F,119,31.4,5
-2025-02-14,BIO150,Winter,C+,233,81.68,5
-2024-07-07,MATH201,Spring,C+,69,39.18,4
-2024-11-01,MATH201,Spring,B+,109,96.09,1
-2024-08-04,ENG110,Winter,C,223,83.24,5
-2024-06-16,HIST230,Spring,A,142,68.12,4
-2024-10-23,ENG110,Spring,B+,331,48.38,4
-2024-02-18,ENG110,Summer,A-,287,52.04,5
-2025-03-25,HIST230,Fall,C+,75,14.59,2
-2024-07-31,ENG110,Winter,B+,14,0.11,3
-2024-01-22,MATH201,Spring,A,174,69.41,3
-2025-01-28,CS101,Summer,C+,332,99.22,2
-2024-04-22,MATH201,Fall,A-,61,45.16,6
-2025-04-16,CS101,Winter,B+,344,59.72,4
-2024-05-01,HIST230,Spring,F,317,41.02,2
-2025-04-30,HIST230,Winter,A-,89,62.58,5
-2024-11-23,BIO150,Spring,C,109,37.76,3
-2024-01-17,CS101,Summer,A-,302,93.91,2
-2025-05-03,HIST230,Winter,D,107,33.1,4
-2025-06-07,MATH201,Spring,D,95,47.78,2
-2024-09-09,CS101,Summer,F,375,24.96,3
-2025-03-10,BIO150,Winter,A,192,1.18,5
-2025-03-21,HIST230,Spring,B-,387,36.12,2
-2024-10-22,CS101,Summer,C+,94,40.06,3
-2025-01-06,CS101,Fall,B+,339,43.87,1
-2024-12-17,CS101,Fall,B+,326,91.54,2
-2024-03-12,HIST230,Fall,F,67,56.01,5
-2024-07-14,CHEM210,Fall,B+,50,58.55,1
-2024-07-02,CS101,Spring,B+,336,28.58,3
-2025-06-21,CS101,Fall,F,100,2.55,2
-2024-05-27,CHEM210,Spring,B,256,40.01,3
-2024-01-07,CS101,Summer,B-,323,64.19,5
-2024-04-13,BIO150,Winter,B+,374,78.29,2
-2025-06-19,CHEM210,Summer,B-,85,36.23,4
-2024-05-19,HIST230,Summer,C,92,40.07,4
-2024-11-07,CHEM210,Spring,A-,104,6.0,5
-2025-02-22,ENG110,Spring,A-,312,23.83,6
-2024-10-10,BIO150,Winter,A-,81,42.17,3
-2025-06-06,CHEM210,Fall,B+,334,12.49,5
-2024-05-22,ENG110,Fall,F,143,57.93,5
-2024-05-07,CS101,Fall,C+,79,74.2,2
-2025-05-15,HIST230,Spring,B-,269,37.8,1
-2024-11-09,MATH201,Spring,A,45,95.66,5
-2024-05-22,HIST230,Fall,F,270,72.41,1
-2025-04-24,CS101,Spring,A,86,26.15,2
-2025-06-15,HIST230,Fall,F,31,3.54,5
-2024-11-04,ENG110,Summer,D,360,43.75,1
-2025-03-13,BIO150,Spring,C,39,5.52,5
-2024-05-12,ENG110,Summer,A,137,66.33,6
-2024-08-08,CHEM210,Winter,C+,120,59.23,6
-2024-12-22,HIST230,Spring,D,355,6.94,2
-2024-11-13,MATH201,Winter,B-,207,58.03,3
-2024-11-26,CS101,Winter,A-,254,99.28,3
-2025-05-01,MATH201,Fall,A,247,67.34,4
-2024-05-28,CS101,Winter,B+,117,81.67,3
-2025-04-11,ENG110,Spring,B,180,43.51,2
-2025-06-19,MATH201,Summer,B+,165,60.75,6
-2025-03-25,BIO150,Winter,F,313,96.18,5
-2024-12-18,HIST230,Winter,A-,11,20.02,4
-2024-01-05,CHEM210,Spring,B,253,77.65,6
-2024-08-25,MATH201,Fall,B-,134,97.71,3
-2024-01-01,CHEM210,Summer,A,87,37.03,1
-2024-10-19,MATH201,Summer,A,241,82.42,3
-2024-02-13,CHEM210,Fall,B-,313,56.97,5
-2024-01-02,ENG110,Summer,A-,122,29.06,3
-2025-03-31,HIST230,Spring,D,52,61.68,2
-2024-03-22,ENG110,Spring,B+,150,92.3,4
-2025-01-26,HIST230,Winter,D,195,23.42,2
-2024-01-30,BIO150,Spring,C,391,54.41,2
-2024-01-08,BIO150,Summer,F,90,61.62,6
-2025-01-21,CHEM210,Fall,F,321,51.63,2
-2025-02-17,CS101,Fall,A-,222,8.67,3
-2024-08-25,ENG110,Summer,B,187,80.4,1
-2025-05-11,HIST230,Fall,A,331,86.27,2
-2025-03-23,CHEM210,Fall,B+,68,42.0,5
-2024-09-26,CHEM210,Summer,B,149,90.99,3
-2024-06-05,MATH201,Winter,C+,137,79.12,1
-2024-08-20,CS101,Winter,A-,212,99.5,6
-2024-12-14,BIO150,Spring,A-,71,90.33,5
-2024-09-29,CS101,Summer,A-,226,76.71,3
-2025-05-18,MATH201,Spring,C+,154,79.79,5
-2024-12-13,CS101,Winter,A,328,25.26,2
-2025-03-06,BIO150,Summer,A-,228,27.81,4
-2024-07-21,HIST230,Fall,A,84,63.84,5
-2024-10-27,CHEM210,Fall,C+,38,42.12,4
-2025-04-14,MATH201,Fall,C,230,8.16,6
-2024-08-03,CHEM210,Winter,D,65,91.9,2
-2024-11-20,HIST230,Summer,C,337,4.25,3
-2025-03-14,MATH201,Winter,D,97,41.9,6
-2024-06-28,CHEM210,Spring,C,194,18.99,2
-2025-04-10,HIST230,Summer,D,7,30.51,5
-2024-02-11,BIO150,Summer,B-,155,3.81,5
-2024-09-14,HIST230,Summer,A-,319,44.21,5
-2025-05-31,CHEM210,Winter,D,75,76.72,4
-2024-01-05,HIST230,Winter,D,172,37.38,1
-2025-04-05,CS101,Fall,D,16,45.89,3
-2024-08-17,CHEM210,Winter,C,143,26.2,3
-2025-04-30,ENG110,Spring,A-,300,41.17,5
-2024-04-04,BIO150,Summer,B,376,60.07,3
-2024-09-15,HIST230,Spring,F,377,90.25,4
-2024-11-06,CS101,Winter,B,388,64.82,5
-2024-08-24,HIST230,Summer,B+,235,42.62,3
-2024-04-17,BIO150,Summer,C+,142,71.67,6
-2024-11-17,ENG110,Fall,B,18,94.99,5
-2024-11-09,BIO150,Fall,B+,142,80.58,2
-2024-10-09,BIO150,Fall,D,373,59.74,3
-2024-01-13,CS101,Summer,B+,299,20.24,6
-2024-09-16,ENG110,Fall,A,140,45.23,3
-2024-11-25,CHEM210,Summer,B-,276,0.84,5
-2024-11-18,CHEM210,Winter,B,324,3.26,2
-2024-08-21,BIO150,Fall,A,231,50.01,4
-2024-03-17,ENG110,Fall,C+,118,68.22,6
-2024-02-14,BIO150,Summer,B,302,9.01,6
-2024-02-09,CHEM210,Winter,F,316,85.73,5
-2025-05-29,CHEM210,Summer,F,147,72.21,2
-2025-01-04,MATH201,Summer,F,198,32.23,4
-2024-11-24,ENG110,Winter,B+,244,59.28,2
-2024-07-12,MATH201,Winter,C+,206,13.7,4
-2025-03-09,BIO150,Winter,C,59,24.49,2
-2024-05-20,CHEM210,Spring,A,229,62.64,5
-2024-02-18,HIST230,Winter,B,357,95.78,4
+incident_report_date,incident_severity_level,incident_road_type,incident_weather_condition,incident_vehicles_involved,incident_injury_count,incident_response_minutes
+2024-09-03,Serious,Rural Road,Ice,12,4,182.88
+2024-10-29,Serious,Collector Road,Snow,10,13,205.12
+2025-05-10,Moderate,Highway,Snow,10,3,50.86
+2025-06-19,Serious,Arterial Road,High Wind,10,1,191.49
+2025-05-17,Moderate,Residential Street,Fog,5,15,61.27
+2024-04-16,Severe,Rural Road,Clear,8,19,222.37
+2024-11-03,Moderate,Collector Road,Ice,5,24,235.66
+2024-09-29,Minor,Collector Road,Snow,10,13,52.68
+2024-05-06,Serious,Arterial Road,Fog,11,12,6.95
+2024-04-18,Serious,Rural Road,Fog,3,23,170.66
+2024-12-23,Severe,Rural Road,Snow,2,7,145.22
+2024-04-03,Severe,Residential Street,Rain,2,30,69.14
+2024-06-17,Serious,Arterial Road,Clear,1,18,194.1
+2024-07-17,Moderate,Intersection,High Wind,5,10,99.99
+2024-03-11,Moderate,Arterial Road,High Wind,11,22,218.17
+2024-06-04,Fatal,Collector Road,Clear,7,10,171.05
+2024-06-19,Fatal,Residential Street,Clear,3,15,214.14
+2024-08-11,Moderate,Arterial Road,Ice,8,19,215.12
+2024-03-29,Severe,Residential Street,High Wind,3,10,98.39
+2025-06-18,Moderate,Collector Road,Rain,9,7,82.88
+2024-11-17,Minor,Intersection,Snow,9,29,168.36
+2024-09-24,Moderate,Rural Road,High Wind,3,0,176.62
+2024-04-16,Moderate,Residential Street,High Wind,8,21,24.05
+2024-09-20,Moderate,Highway,Ice,4,29,102.46
+2024-06-16,Minor,Collector Road,Ice,10,3,34.38
+2024-04-08,Serious,Rural Road,Snow,8,12,133.9
+2025-01-06,Minor,Intersection,Clear,4,1,88.32
+2024-07-21,Moderate,Arterial Road,High Wind,8,25,125.75
+2025-06-01,Fatal,Rural Road,Fog,9,16,135.32
+2024-06-30,Moderate,Highway,High Wind,10,24,141.02
+2024-03-31,Fatal,Highway,High Wind,7,6,44.67
+2024-06-22,Minor,Intersection,Ice,2,4,33.99
+2024-12-02,Minor,Residential Street,Clear,5,24,91.59
+2024-09-30,Minor,Highway,Rain,8,3,31.66
+2024-07-10,Moderate,Arterial Road,Ice,4,18,225.45
+2024-02-12,Serious,Rural Road,Ice,8,29,14.66
+2024-03-26,Fatal,Rural Road,Clear,1,25,119.44
+2025-02-25,Minor,Intersection,Snow,5,3,10.85
+2024-06-30,Fatal,Collector Road,Rain,4,13,200.61
+2024-07-25,Minor,Residential Street,Snow,3,9,28.25
+2025-01-09,Severe,Arterial Road,High Wind,10,1,150.55
+2024-07-25,Fatal,Collector Road,Fog,12,3,94.42
+2025-05-20,Moderate,Rural Road,Snow,8,25,120.27
+2025-04-15,Moderate,Collector Road,Snow,11,20,97.4
+2024-10-08,Minor,Arterial Road,Clear,5,4,191.2
+2024-03-17,Minor,Intersection,Clear,7,8,152.26
+2024-03-12,Severe,Collector Road,Fog,9,18,74.42
+2024-10-05,Moderate,Highway,Clear,10,8,80.54
+2024-11-04,Serious,Residential Street,Snow,4,12,204.11
+2024-05-26,Moderate,Rural Road,Rain,4,23,160.3
+2025-06-15,Serious,Collector Road,Clear,2,17,61.63
+2024-01-14,Minor,Residential Street,Rain,8,23,118.83
+2024-11-20,Severe,Highway,Fog,8,3,111.69
+2025-06-14,Moderate,Residential Street,Ice,11,29,145.41
+2025-06-20,Minor,Highway,Clear,12,13,226.06
+2024-08-14,Moderate,Intersection,Fog,2,22,213.92
+2024-04-08,Minor,Residential Street,Fog,6,3,119.91
+2024-09-19,Serious,Highway,Snow,7,3,237.37
+2024-11-18,Fatal,Highway,High Wind,1,1,235.21
+2025-03-05,Fatal,Highway,Snow,5,1,172.2
+2025-06-14,Serious,Intersection,Clear,6,15,180.74
+2025-04-02,Severe,Rural Road,Rain,10,24,41.03
+2024-07-02,Severe,Intersection,High Wind,1,1,8.11
+2024-09-18,Fatal,Residential Street,High Wind,9,12,57.96
+2025-06-06,Minor,Highway,Ice,12,6,239.86
+2024-12-05,Moderate,Rural Road,Snow,3,21,2.28
+2024-12-19,Fatal,Collector Road,Clear,10,29,39.7
+2024-11-09,Fatal,Rural Road,Fog,4,25,206.91
+2024-02-10,Fatal,Arterial Road,Snow,9,10,168.95
+2024-12-23,Minor,Arterial Road,High Wind,5,22,235.19
+2024-08-14,Minor,Rural Road,Ice,5,23,153.46
+2024-08-28,Severe,Highway,Snow,12,13,39.58
+2025-03-02,Severe,Arterial Road,Rain,11,18,212.53
+2024-04-15,Fatal,Collector Road,Snow,4,28,211.06
+2024-05-28,Severe,Highway,Clear,1,18,121.38
+2025-05-14,Serious,Collector Road,Rain,2,19,46.65
+2024-07-13,Moderate,Arterial Road,Rain,6,18,106.72
+2024-10-11,Minor,Residential Street,Fog,9,30,155.06
+2024-12-22,Severe,Collector Road,Clear,4,5,48.67
+2025-01-31,Moderate,Collector Road,High Wind,9,15,118.83
+2024-01-31,Fatal,Intersection,Ice,3,0,183.81
+2024-09-13,Minor,Highway,Snow,5,9,184.48
+2025-03-14,Fatal,Rural Road,Fog,2,7,228.73
+2024-08-06,Minor,Collector Road,Clear,8,14,103.72
+2025-03-18,Moderate,Residential Street,Ice,9,2,28.78
+2024-07-27,Minor,Rural Road,High Wind,9,26,183.71
+2024-10-17,Minor,Residential Street,Ice,6,15,181.68
+2025-06-15,Minor,Residential Street,Fog,8,1,93.76
+2024-07-19,Fatal,Residential Street,Rain,4,27,219.71
+2025-05-23,Fatal,Arterial Road,Ice,2,24,118.51
+2024-04-17,Severe,Rural Road,Clear,6,29,98.25
+2024-01-28,Severe,Residential Street,Rain,9,24,109.76
+2025-01-15,Serious,Highway,High Wind,7,29,82.56
+2024-02-14,Severe,Collector Road,High Wind,11,16,84.37
+2024-03-12,Minor,Rural Road,Ice,6,5,236.32
+2024-08-16,Minor,Highway,High Wind,5,28,14.66
+2025-04-18,Fatal,Rural Road,Fog,1,14,199.96
+2024-06-27,Severe,Highway,Ice,3,23,126.92
+2024-07-30,Serious,Highway,Clear,8,6,41.7
+2024-02-06,Fatal,Highway,Rain,8,17,124.26
+2024-10-25,Moderate,Collector Road,Rain,6,18,235.97
+2024-02-20,Moderate,Highway,High Wind,11,16,27.97
+2024-01-02,Fatal,Highway,Snow,6,19,140.94
+2024-12-31,Fatal,Rural Road,High Wind,11,10,45.4
+2024-05-15,Minor,Residential Street,Snow,10,9,25.58
+2025-02-23,Serious,Collector Road,Snow,7,20,84.9
+2024-05-17,Moderate,Arterial Road,High Wind,9,27,173.61
+2024-01-20,Minor,Highway,Clear,5,22,200.92
+2025-03-15,Fatal,Intersection,Snow,8,16,161.41
+2024-07-10,Fatal,Arterial Road,Fog,8,7,185.77
+2025-02-06,Serious,Intersection,Clear,6,28,137.38
+2024-03-29,Minor,Collector Road,Fog,11,1,216.56
+2024-07-31,Serious,Collector Road,Ice,5,5,214.59
+2025-02-28,Serious,Arterial Road,Fog,9,13,5.69
+2024-03-06,Moderate,Highway,Clear,3,1,8.87
+2024-02-09,Minor,Highway,High Wind,1,24,136.79
+2025-05-05,Severe,Residential Street,High Wind,8,30,168.93
+2025-01-04,Moderate,Collector Road,High Wind,11,4,187.15
+2025-06-15,Fatal,Residential Street,Snow,7,3,108.51
+2024-03-06,Moderate,Intersection,Ice,4,3,43.31
+2025-06-17,Serious,Rural Road,Clear,12,16,133.7
+2024-11-04,Moderate,Residential Street,Rain,11,19,8.88
+2025-03-04,Severe,Arterial Road,Fog,3,10,17.17
+2024-01-09,Moderate,Intersection,Snow,9,26,131.25
+2024-02-06,Severe,Residential Street,Ice,5,29,120.73
+2024-10-19,Minor,Highway,Fog,7,20,132.29
+2025-02-26,Fatal,Residential Street,Clear,2,26,160.1
+2025-06-08,Severe,Highway,High Wind,7,28,197.39
+2024-08-24,Severe,Rural Road,Rain,5,8,5.37
+2024-08-19,Fatal,Highway,Clear,8,0,213.55
+2024-10-17,Minor,Rural Road,Clear,9,17,22.42
+2024-10-13,Serious,Highway,Snow,2,8,92.01
+2024-03-13,Fatal,Arterial Road,Snow,9,28,117.58
+2024-06-06,Fatal,Rural Road,High Wind,2,3,3.85
+2025-01-14,Minor,Collector Road,Snow,10,6,185.14
+2024-10-28,Minor,Residential Street,Clear,12,23,139.06
+2025-06-07,Fatal,Rural Road,Rain,6,13,147.9
+2025-02-08,Moderate,Collector Road,Clear,8,28,108.08
+2025-03-11,Moderate,Residential Street,Ice,10,24,58.9
+2024-04-06,Severe,Arterial Road,Ice,9,19,221.8
+2024-07-25,Minor,Collector Road,Fog,8,24,114.7
+2025-05-30,Serious,Collector Road,High Wind,5,24,119.73
+2024-05-08,Serious,Rural Road,Rain,8,14,113.62
+2024-05-19,Serious,Residential Street,Ice,5,12,104.91
+2024-06-14,Fatal,Rural Road,Ice,7,10,126.02
+2025-03-23,Fatal,Intersection,High Wind,2,6,86.89
+2024-09-14,Severe,Arterial Road,Ice,5,4,164.47
+2024-02-12,Serious,Rural Road,Snow,6,11,141.22
+2024-10-25,Minor,Collector Road,Snow,1,15,172.99
+2025-02-13,Serious,Collector Road,High Wind,6,5,47.26
+2024-07-19,Serious,Intersection,High Wind,7,11,202.85
+2024-09-01,Serious,Collector Road,High Wind,8,7,149.41
+2025-06-14,Serious,Rural Road,Ice,6,2,219.16
+2024-10-28,Minor,Intersection,Snow,9,26,49.17
+2024-01-01,Serious,Collector Road,Fog,7,21,151.63
+2025-02-06,Moderate,Collector Road,High Wind,8,4,228.7
+2024-11-13,Severe,Rural Road,Fog,11,3,202.37
+2024-11-11,Serious,Rural Road,Rain,5,7,67.86
+2024-09-10,Severe,Residential Street,Rain,2,22,51.98
+2024-10-10,Severe,Residential Street,Ice,1,27,139.73
+2024-03-20,Fatal,Rural Road,Fog,4,2,152.84
+2024-04-24,Moderate,Arterial Road,High Wind,4,29,197.84
+2024-12-20,Serious,Collector Road,High Wind,6,4,156.59
+2025-03-14,Fatal,Intersection,Snow,10,14,192.68
+2024-03-16,Minor,Collector Road,High Wind,9,20,21.72
+2024-01-25,Moderate,Intersection,Rain,7,10,211.54
+2024-04-08,Moderate,Residential Street,Snow,9,25,72.4
+2024-01-15,Minor,Highway,Snow,10,18,162.68
+2025-03-12,Minor,Intersection,Snow,9,15,37.46
+2024-11-17,Moderate,Residential Street,Snow,11,4,109.95
+2024-11-09,Minor,Collector Road,Rain,9,16,71.48
+2024-08-10,Fatal,Arterial Road,Rain,5,8,39.08
+2024-09-24,Serious,Highway,Fog,9,0,231.81
+2025-06-14,Serious,Intersection,Rain,10,20,49.2
+2024-09-15,Serious,Intersection,High Wind,10,15,79.47
+2024-10-29,Moderate,Residential Street,Ice,4,19,213.89
+2025-01-24,Serious,Arterial Road,Rain,2,23,29.25
+2025-02-15,Fatal,Arterial Road,Rain,9,14,55.84
+2024-06-15,Severe,Collector Road,Snow,10,17,188.36
+2025-03-26,Fatal,Highway,Snow,10,18,9.09
+2025-05-22,Severe,Highway,Ice,4,4,236.63
+2024-10-08,Severe,Rural Road,High Wind,10,1,226.02
+2024-01-10,Severe,Arterial Road,Clear,11,26,229.77
+2025-04-06,Severe,Residential Street,Snow,8,6,90.42
+2024-08-26,Minor,Collector Road,Fog,6,21,210.62
+2024-03-25,Serious,Arterial Road,Ice,2,4,170.13
+2024-09-08,Moderate,Intersection,Fog,9,28,173.68
+2024-05-21,Fatal,Rural Road,Rain,8,23,105.24
+2024-12-26,Minor,Highway,Fog,1,4,201.21
+2025-04-17,Moderate,Intersection,Ice,3,11,42.09
+2024-09-22,Minor,Highway,Fog,7,4,52.3
+2024-11-29,Severe,Intersection,Fog,7,25,145.15
+2024-12-25,Minor,Highway,Snow,6,18,236.41
+2025-04-19,Minor,Arterial Road,Rain,6,17,69.59
+2024-01-31,Serious,Rural Road,Snow,7,18,220.88
+2025-04-19,Moderate,Highway,Fog,8,21,17.66
+2024-09-02,Minor,Residential Street,Fog,8,5,178.11
+2025-04-25,Fatal,Highway,Snow,6,26,61.73
+2024-06-19,Serious,Collector Road,Clear,11,4,47.94
+2025-05-21,Severe,Collector Road,Ice,6,1,175.82
+2024-11-14,Fatal,Residential Street,Rain,3,17,21.05
+2024-12-02,Serious,Rural Road,Ice,10,5,166.54
+2024-05-01,Minor,Highway,Rain,7,29,51.6
+2025-01-20,Fatal,Residential Street,Clear,10,22,58.75
+2024-08-04,Severe,Rural Road,Ice,9,23,74.46
+2024-05-11,Moderate,Intersection,Fog,1,29,236.0
+2024-02-04,Severe,Highway,Snow,5,30,75.6
+2025-03-07,Moderate,Arterial Road,High Wind,2,5,26.95
+2024-11-03,Moderate,Residential Street,Rain,8,7,239.49
+2024-02-14,Minor,Collector Road,Ice,7,3,216.54
+2024-12-28,Moderate,Residential Street,Ice,6,19,175.23
+2025-06-16,Serious,Residential Street,Ice,7,7,227.36
+2024-01-15,Minor,Highway,High Wind,11,5,35.02
+2025-06-15,Fatal,Intersection,High Wind,3,0,70.88
+2024-12-03,Minor,Collector Road,Rain,10,8,60.91
+2025-02-08,Serious,Arterial Road,Ice,3,7,109.58
+2025-05-24,Serious,Arterial Road,Clear,11,28,129.33
+2024-05-28,Serious,Highway,Fog,8,23,229.27
+2024-03-10,Serious,Rural Road,Snow,3,12,228.44
+2024-06-14,Severe,Rural Road,High Wind,4,21,121.76
+2025-04-11,Moderate,Highway,Rain,9,7,232.22
+2025-04-14,Fatal,Intersection,Clear,5,10,45.26
+2024-11-12,Fatal,Highway,High Wind,9,22,33.55
+2024-04-09,Serious,Intersection,High Wind,3,26,84.4
+2024-12-19,Severe,Intersection,Rain,5,27,14.29
+2024-03-26,Minor,Residential Street,Snow,11,26,130.3
+2024-01-02,Minor,Collector Road,Snow,4,18,208.05
+2025-06-23,Serious,Rural Road,Fog,11,22,104.42
+2024-09-20,Serious,Collector Road,High Wind,4,8,65.31
+2024-06-21,Fatal,Collector Road,High Wind,11,7,57.21
+2024-04-10,Moderate,Highway,Rain,3,29,181.92
+2025-04-15,Serious,Arterial Road,Snow,10,20,187.41
+2025-03-17,Minor,Rural Road,Rain,12,13,155.02
+2024-04-12,Severe,Arterial Road,Snow,8,16,200.79
+2024-07-30,Serious,Highway,Clear,5,13,30.66
+2024-01-26,Severe,Collector Road,Ice,8,15,71.17
+2024-01-26,Fatal,Highway,High Wind,4,16,74.08
+2024-05-02,Minor,Arterial Road,High Wind,8,29,43.75
+2024-01-15,Minor,Residential Street,Snow,6,12,35.63
+2025-03-23,Minor,Arterial Road,Fog,2,28,80.21

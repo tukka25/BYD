@@ -1,241 +1,241 @@
-sessionStartTime,playerRegion,platform,gameMode,sessionDurationMinutes,matchesPlayed,inGameSpend
-2024-10-26,NorthAmerica,Switch,CoOp,13.62,14,304.52
-2024-10-20,Europe,iOS,Campaign,93.1,26,297.81
-2024-06-27,AsiaPacific,PC,Casual,396.08,46,312.24
-2025-03-30,Europe,PlayStation,Casual,51.96,39,182.47
-2024-08-06,Europe,PC,Campaign,420.4,4,255.57
-2025-02-09,AsiaPacific,Xbox,Campaign,367.92,1,290.83
-2024-04-19,Oceania,Xbox,Campaign,138.34,18,81.48
-2024-06-28,Africa,Xbox,Arcade,381.76,28,279.17
-2024-01-05,MiddleEast,PC,Campaign,138.5,34,203.87
-2024-11-19,AsiaPacific,Switch,Ranked,266.37,14,490.58
-2024-01-07,NorthAmerica,Android,Competitive,158.34,11,28.46
-2024-04-15,MiddleEast,PlayStation,Casual,387.76,39,17.99
-2025-05-07,SouthAmerica,Xbox,CoOp,214.7,1,344.05
-2024-03-22,Europe,Android,Arcade,328.44,1,481.27
-2024-08-01,NorthAmerica,iOS,Casual,295.98,0,73.71
-2024-09-29,Oceania,PlayStation,Ranked,378.91,24,328.98
-2024-10-19,AsiaPacific,PlayStation,Arcade,249.77,43,80.4
-2024-10-20,SouthAmerica,PlayStation,CoOp,231.96,4,372.01
-2025-03-17,Oceania,Switch,Campaign,224.8,2,271.62
-2025-06-23,Oceania,Switch,Ranked,411.02,20,273.82
-2024-09-10,Africa,PC,Competitive,361.66,49,65.49
-2025-06-15,AsiaPacific,iOS,CoOp,144.0,42,40.45
-2024-05-11,Africa,PlayStation,Campaign,389.04,21,116.27
-2024-10-08,SouthAmerica,Android,Competitive,176.54,30,25.99
-2024-07-03,MiddleEast,Switch,Competitive,422.22,9,157.44
-2024-12-25,SouthAmerica,iOS,Arcade,243.51,12,269.02
-2025-03-23,Africa,Xbox,Casual,354.89,18,228.02
-2024-04-22,SouthAmerica,Xbox,Ranked,50.33,39,317.95
-2024-08-11,Europe,Android,Competitive,428.96,40,126.31
-2025-02-14,Africa,PlayStation,Casual,239.97,40,472.12
-2025-06-20,AsiaPacific,Switch,Ranked,275.03,25,194.98
-2025-03-07,AsiaPacific,iOS,Competitive,191.41,40,414.66
-2025-01-28,AsiaPacific,Xbox,Campaign,478.55,9,1.93
-2025-06-02,Africa,Switch,Competitive,220.38,13,25.25
-2024-09-28,Europe,Xbox,Casual,73.32,12,87.27
-2024-03-13,SouthAmerica,Android,Ranked,333.05,27,438.18
-2024-12-08,NorthAmerica,iOS,Competitive,315.56,14,245.16
-2024-08-29,Europe,PC,Ranked,292.55,43,409.7
-2024-01-24,SouthAmerica,Android,Arcade,221.18,26,123.29
-2024-12-12,SouthAmerica,Switch,Casual,280.25,1,186.36
-2025-06-21,Africa,iOS,Ranked,109.41,12,443.62
-2024-10-21,Africa,Xbox,Arcade,373.23,34,337.96
-2024-01-21,Africa,PC,Competitive,217.26,32,477.12
-2024-02-29,MiddleEast,Switch,Campaign,152.75,48,113.48
-2024-04-24,Europe,PC,Competitive,173.32,28,335.58
-2024-12-20,MiddleEast,Xbox,Arcade,43.89,50,331.72
-2024-07-26,NorthAmerica,Switch,Casual,301.24,20,457.37
-2025-02-16,SouthAmerica,PC,Campaign,39.59,39,294.49
-2025-02-17,NorthAmerica,Switch,Casual,237.92,36,449.71
-2025-04-23,MiddleEast,PlayStation,CoOp,255.1,19,412.43
-2024-06-10,Oceania,Xbox,Campaign,228.48,19,492.59
-2024-02-08,NorthAmerica,PlayStation,CoOp,441.29,6,416.18
-2025-03-14,NorthAmerica,PlayStation,Competitive,66.38,3,353.21
-2024-05-30,Oceania,Android,Casual,122.75,49,332.1
-2024-08-31,MiddleEast,Android,CoOp,131.82,6,127.22
-2025-04-29,AsiaPacific,PC,Arcade,2.5,16,166.96
-2024-06-10,Africa,PlayStation,Ranked,242.17,49,285.3
-2025-01-07,MiddleEast,PC,Arcade,369.84,21,334.55
-2025-05-12,Africa,Switch,Competitive,51.81,17,153.04
-2025-03-05,Africa,Switch,Arcade,294.88,3,346.55
-2024-07-10,Oceania,PC,Competitive,436.05,48,428.31
-2024-06-22,Oceania,Switch,CoOp,402.51,28,419.92
-2025-04-20,Europe,Xbox,Arcade,153.23,12,180.11
-2024-04-11,NorthAmerica,iOS,Ranked,184.93,21,495.5
-2024-03-04,AsiaPacific,Switch,Ranked,280.43,36,423.0
-2024-09-28,AsiaPacific,Xbox,Campaign,176.39,32,291.33
-2024-01-10,Europe,Xbox,Campaign,67.49,46,469.83
-2024-08-03,NorthAmerica,iOS,Campaign,350.86,49,459.19
-2024-03-04,Oceania,PlayStation,CoOp,93.84,16,100.8
-2024-05-23,Africa,Android,Competitive,43.36,11,73.96
-2024-01-11,Oceania,PC,Casual,77.45,35,312.58
-2024-09-30,Europe,Switch,Casual,395.63,30,240.59
-2024-06-05,NorthAmerica,Switch,Competitive,24.76,47,6.4
-2024-02-13,Africa,iOS,Ranked,117.19,29,333.25
-2025-05-01,SouthAmerica,PC,Arcade,106.67,17,299.99
-2025-06-05,AsiaPacific,iOS,CoOp,355.37,10,494.41
-2025-06-22,SouthAmerica,iOS,Casual,5.57,30,108.86
-2024-06-11,SouthAmerica,PlayStation,Competitive,121.82,41,137.58
-2024-11-13,Africa,PlayStation,CoOp,265.61,31,367.0
-2024-01-12,NorthAmerica,iOS,Ranked,105.63,12,133.63
-2024-04-11,MiddleEast,Android,Casual,101.07,5,129.36
-2025-03-13,Europe,Xbox,Arcade,182.45,11,399.81
-2025-04-15,Oceania,Switch,Arcade,468.01,26,366.89
-2024-04-27,MiddleEast,iOS,Campaign,121.58,5,150.24
-2025-02-07,Africa,iOS,CoOp,447.08,41,427.91
-2024-04-19,NorthAmerica,PlayStation,Arcade,9.01,10,300.91
-2024-10-09,Oceania,Xbox,Campaign,155.66,39,136.24
-2024-11-20,MiddleEast,Android,Campaign,383.52,28,430.01
-2024-08-20,Oceania,Xbox,Casual,377.68,8,330.62
-2024-07-10,Europe,PlayStation,Campaign,131.4,16,139.66
-2024-03-25,MiddleEast,Android,Campaign,213.67,49,212.07
-2024-08-23,SouthAmerica,Android,Ranked,121.47,49,279.62
-2025-03-08,MiddleEast,PC,Ranked,19.23,17,243.67
-2025-04-11,Europe,Xbox,CoOp,169.98,22,437.15
-2024-08-06,Oceania,PlayStation,CoOp,256.89,22,466.72
-2024-06-22,SouthAmerica,Xbox,CoOp,350.5,39,273.16
-2024-07-21,NorthAmerica,Xbox,Casual,433.21,21,387.86
-2025-05-09,SouthAmerica,PlayStation,Campaign,473.77,28,26.07
-2024-07-09,Africa,Xbox,Casual,305.19,9,94.14
-2024-03-17,AsiaPacific,Xbox,CoOp,123.98,48,147.01
-2025-04-14,NorthAmerica,PC,Ranked,373.67,42,408.7
-2024-05-29,MiddleEast,Switch,CoOp,309.36,40,483.29
-2024-12-08,SouthAmerica,Switch,Campaign,13.71,12,370.0
-2025-02-21,NorthAmerica,Android,Casual,49.4,19,441.65
-2024-06-27,Europe,Android,Arcade,352.74,4,405.67
-2025-03-27,MiddleEast,PC,Competitive,387.21,39,347.15
-2025-01-04,MiddleEast,Xbox,Campaign,471.81,17,496.47
-2025-02-05,SouthAmerica,iOS,Casual,412.99,29,8.16
-2024-04-12,Oceania,PlayStation,Ranked,69.88,34,169.5
-2024-01-04,NorthAmerica,Switch,Arcade,84.74,10,435.27
-2024-10-15,SouthAmerica,Switch,Campaign,354.04,6,212.63
-2024-12-29,AsiaPacific,PlayStation,Arcade,136.36,33,22.77
-2025-03-28,NorthAmerica,Xbox,Ranked,67.16,46,53.36
-2025-02-25,Oceania,PlayStation,Campaign,325.17,20,89.22
-2025-05-11,Africa,Switch,Arcade,25.02,34,455.73
-2024-03-25,AsiaPacific,Android,Ranked,341.08,25,298.12
-2025-01-03,MiddleEast,Xbox,CoOp,8.64,34,381.08
-2025-01-16,Europe,iOS,Casual,71.06,2,496.01
-2024-10-28,NorthAmerica,Android,Campaign,76.38,45,480.42
-2025-06-22,MiddleEast,Xbox,CoOp,139.01,8,338.15
-2025-01-25,SouthAmerica,PlayStation,Casual,41.96,0,273.4
-2024-01-13,Europe,Android,Ranked,279.35,44,204.66
-2024-08-17,Europe,PlayStation,Arcade,199.63,42,198.38
-2025-02-16,Africa,iOS,Competitive,359.39,18,344.25
-2025-06-05,Africa,PlayStation,Casual,453.13,7,496.89
-2025-02-13,Oceania,Xbox,Casual,2.13,35,385.04
-2025-05-09,AsiaPacific,Android,Ranked,280.64,44,194.24
-2024-03-26,AsiaPacific,PC,CoOp,317.75,3,305.3
-2025-06-21,Europe,Xbox,Arcade,410.09,9,354.44
-2024-01-11,SouthAmerica,Android,Campaign,54.78,26,478.78
-2025-02-04,AsiaPacific,iOS,Arcade,240.85,8,472.6
-2024-10-15,Europe,PlayStation,Campaign,276.75,8,108.31
-2025-04-16,SouthAmerica,Android,CoOp,163.65,36,397.52
-2024-04-27,SouthAmerica,Switch,Ranked,355.01,21,496.49
-2024-07-22,NorthAmerica,Xbox,Campaign,164.52,48,118.9
-2025-01-31,AsiaPacific,Android,Campaign,448.54,40,220.55
-2025-03-18,Europe,Switch,CoOp,449.35,5,292.27
-2025-03-04,NorthAmerica,PlayStation,Arcade,240.07,10,205.18
-2024-10-06,Oceania,Switch,Arcade,370.35,21,271.51
-2024-03-11,Europe,PlayStation,Campaign,65.5,25,468.41
-2024-01-26,MiddleEast,Switch,Campaign,228.03,39,63.66
-2024-02-27,AsiaPacific,iOS,Casual,355.77,24,122.16
-2025-03-04,Oceania,PC,Campaign,313.9,22,281.64
-2025-04-12,Africa,PC,Arcade,374.74,21,153.46
-2025-05-13,Africa,Android,CoOp,234.66,12,459.92
-2024-10-14,SouthAmerica,Xbox,Ranked,163.85,37,166.11
-2024-06-05,Africa,PlayStation,Competitive,155.26,21,454.15
-2024-05-12,SouthAmerica,Xbox,Casual,464.26,2,49.57
-2025-01-31,NorthAmerica,Switch,Arcade,73.8,30,109.78
-2025-03-07,Europe,PlayStation,Casual,166.51,3,98.53
-2025-02-01,Europe,Android,Campaign,409.3,6,103.02
-2025-02-28,NorthAmerica,iOS,CoOp,68.85,23,370.99
-2024-08-03,Europe,Xbox,Casual,347.61,1,23.27
-2025-05-25,Europe,Switch,Campaign,253.04,9,451.35
-2024-04-12,AsiaPacific,Xbox,Arcade,95.59,44,180.12
-2024-04-10,MiddleEast,Android,Casual,278.55,33,199.8
-2025-01-12,SouthAmerica,iOS,Arcade,314.47,30,178.54
-2025-04-29,SouthAmerica,iOS,Campaign,217.79,20,253.11
-2024-05-04,Oceania,iOS,Arcade,353.68,42,478.45
-2024-10-20,AsiaPacific,PC,Ranked,140.56,21,280.95
-2024-03-20,Europe,PC,Casual,109.83,18,172.43
-2024-01-11,MiddleEast,Xbox,Competitive,225.46,1,71.07
-2025-01-03,Europe,PC,Casual,429.07,27,415.72
-2024-02-15,Africa,iOS,Casual,377.88,44,271.49
-2024-08-18,Africa,iOS,CoOp,425.39,38,401.81
-2024-04-07,AsiaPacific,Android,CoOp,173.32,39,246.81
-2024-02-09,NorthAmerica,PlayStation,Competitive,364.56,13,185.83
-2025-01-06,SouthAmerica,Switch,Ranked,137.56,49,25.19
-2024-05-12,SouthAmerica,iOS,CoOp,19.44,43,213.86
-2024-10-29,Oceania,Android,Competitive,333.17,1,128.2
-2024-04-30,Africa,PlayStation,Arcade,353.15,39,226.0
-2024-02-26,MiddleEast,iOS,Arcade,88.06,35,449.73
-2025-03-21,NorthAmerica,PC,Arcade,131.77,16,269.44
-2024-06-19,MiddleEast,PC,Ranked,40.08,37,446.46
-2025-06-02,Oceania,Xbox,Competitive,187.88,48,213.82
-2025-04-21,NorthAmerica,PC,Ranked,342.16,40,272.43
-2025-06-04,Oceania,iOS,Casual,185.8,49,332.99
-2025-03-30,Oceania,Switch,Casual,42.8,35,125.73
-2025-01-02,Europe,iOS,Competitive,129.94,33,106.23
-2024-12-09,MiddleEast,Xbox,Campaign,89.58,48,76.64
-2024-07-23,SouthAmerica,Xbox,Ranked,447.53,49,409.43
-2024-11-25,NorthAmerica,PC,Competitive,381.33,0,92.98
-2024-02-08,SouthAmerica,Android,CoOp,348.36,22,0.29
-2025-01-25,Europe,PC,Competitive,78.23,4,484.92
-2025-03-08,Oceania,PlayStation,CoOp,258.58,27,262.26
-2024-02-12,Oceania,Android,Competitive,110.53,41,427.18
-2024-12-16,SouthAmerica,Xbox,Arcade,417.91,6,337.96
-2025-06-05,SouthAmerica,Switch,Arcade,205.1,22,415.94
-2025-06-23,NorthAmerica,Switch,Arcade,48.1,11,99.73
-2025-03-26,MiddleEast,PlayStation,Arcade,121.31,35,227.78
-2024-07-18,SouthAmerica,Xbox,Campaign,448.57,7,373.4
-2024-09-11,AsiaPacific,Android,Casual,433.47,45,185.15
-2025-01-02,MiddleEast,Switch,Competitive,46.28,39,255.85
-2025-01-19,NorthAmerica,Xbox,Ranked,223.15,14,156.24
-2025-01-01,AsiaPacific,Android,Arcade,252.41,12,252.48
-2024-12-12,NorthAmerica,Android,Campaign,413.55,40,79.39
-2024-11-03,MiddleEast,PlayStation,Arcade,122.61,42,355.57
-2025-01-26,Africa,Android,Arcade,287.39,7,259.49
-2024-03-16,Europe,iOS,CoOp,173.33,40,467.74
-2024-08-28,SouthAmerica,Xbox,Arcade,315.77,35,5.46
-2024-01-23,Africa,Switch,Campaign,320.74,46,166.1
-2024-08-30,MiddleEast,PC,CoOp,199.13,0,3.23
-2025-06-22,SouthAmerica,Switch,Arcade,368.39,45,32.63
-2025-06-12,AsiaPacific,Android,Casual,428.7,42,472.27
-2024-07-24,SouthAmerica,Xbox,Campaign,110.76,24,439.27
-2024-01-12,MiddleEast,Xbox,Arcade,247.09,44,9.6
-2024-12-28,Africa,PC,Campaign,415.18,38,46.92
-2024-05-20,Africa,PlayStation,Ranked,316.51,43,175.94
-2024-06-20,MiddleEast,PlayStation,Casual,109.31,43,98.1
-2025-04-21,Oceania,iOS,Casual,374.87,47,469.62
-2025-01-23,SouthAmerica,Android,Casual,414.84,32,241.7
-2025-01-27,Europe,Xbox,Arcade,331.94,45,93.8
-2024-04-17,MiddleEast,iOS,Competitive,239.72,14,294.77
-2024-01-05,Africa,iOS,Casual,423.02,28,404.6
-2024-09-23,Africa,iOS,Arcade,372.88,9,418.75
-2024-11-14,Oceania,iOS,Ranked,324.63,10,260.72
-2024-10-18,AsiaPacific,PC,Competitive,235.56,48,414.57
-2024-03-16,Africa,PlayStation,Competitive,374.82,33,436.68
-2024-06-10,SouthAmerica,Xbox,Campaign,397.73,26,311.78
-2025-03-10,NorthAmerica,PlayStation,Casual,3.98,6,171.88
-2025-02-20,NorthAmerica,PlayStation,Casual,172.71,39,138.5
-2024-05-25,SouthAmerica,iOS,Campaign,267.89,21,74.8
-2024-03-21,SouthAmerica,PC,CoOp,197.7,30,304.08
-2024-06-28,Oceania,PlayStation,CoOp,382.52,18,449.23
-2024-05-30,SouthAmerica,PlayStation,Casual,340.41,5,480.71
-2024-08-03,NorthAmerica,Xbox,CoOp,309.47,45,135.08
-2024-11-02,SouthAmerica,iOS,Campaign,225.75,34,348.52
-2025-04-23,Europe,iOS,Campaign,208.93,48,178.66
-2024-08-09,NorthAmerica,PlayStation,Competitive,321.73,42,195.07
-2024-07-29,Europe,PlayStation,Casual,284.93,9,443.25
-2024-05-05,Europe,Xbox,Campaign,246.95,31,50.07
-2024-02-09,AsiaPacific,PlayStation,Campaign,22.56,13,254.13
-2025-03-11,Africa,PC,Casual,172.82,21,420.63
-2024-08-03,NorthAmerica,PC,CoOp,137.84,10,112.75
-2024-06-29,Africa,iOS,Arcade,422.98,29,174.62
-2024-04-18,Europe,iOS,CoOp,436.95,22,478.34
-2024-09-20,NorthAmerica,PlayStation,Competitive,263.78,15,95.47
-2024-12-05,NorthAmerica,PlayStation,Ranked,138.49,14,206.05
-2025-04-09,Africa,PlayStation,Competitive,173.84,29,402.61
-2024-01-21,MiddleEast,iOS,Competitive,169.77,50,120.09
+Session Date,Traffic Source,Device Type,Landing Page,Sessions,Conversions,Total Revenue
+2024-11-11,Referral,Tablet,Blog,42194,2270,90150.0
+2025-06-13,Direct,Mobile,Product Listing,33412,3578,124041.46
+2025-05-01,Referral,Desktop,Product Listing,30771,1359,2822.43
+2024-11-18,Display Ads,Mobile,Checkout,23474,3432,246140.09
+2024-10-21,Email,Tablet,Home,5820,3640,172522.92
+2025-03-07,Social Media,Desktop,Blog,15632,4667,23288.03
+2025-05-12,Email,Mobile,Home,4838,131,27616.1
+2024-12-10,Organic Search,Desktop,Product Listing,1166,773,204758.26
+2025-06-09,Direct,Tablet,Product Listing,18946,1182,109292.4
+2024-03-27,Email,Mobile,Product Listing,29922,785,12251.96
+2024-04-21,Direct,Tablet,Checkout,8221,1035,78778.64
+2024-05-20,Referral,Mobile,Product Listing,48001,1253,107676.52
+2025-05-13,Display Ads,Mobile,Product Listing,46580,2937,96522.54
+2024-04-22,Direct,Desktop,Product Detail,29419,1941,53883.0
+2024-07-20,Social Media,Tablet,Blog,36623,3835,15605.86
+2024-03-06,Paid Search,Desktop,Sign Up,19922,4179,59629.29
+2025-03-11,Direct,Mobile,Home,38290,2930,162856.61
+2025-01-28,Display Ads,Tablet,Blog,17908,2479,116923.53
+2024-05-21,Organic Search,Desktop,Pricing,25398,846,248427.83
+2024-08-17,Direct,Mobile,Product Listing,35856,3107,124042.79
+2024-04-01,Social Media,Tablet,Checkout,45801,707,129092.58
+2025-03-27,Referral,Tablet,Pricing,47066,3283,167374.49
+2024-12-20,Social Media,Tablet,Checkout,41560,3958,166124.94
+2024-09-21,Direct,Mobile,Product Listing,11204,3297,48751.45
+2025-04-23,Direct,Mobile,Product Listing,20671,733,126886.84
+2024-07-16,Social Media,Tablet,Product Detail,44350,2352,174533.32
+2024-04-10,Referral,Tablet,Product Listing,26599,4272,209026.94
+2025-04-25,Display Ads,Mobile,Home,1742,3288,7784.19
+2024-05-07,Social Media,Mobile,Pricing,19389,4717,154401.68
+2024-12-30,Email,Mobile,Checkout,25568,3606,55256.4
+2024-08-23,Social Media,Tablet,Product Listing,19654,4585,674.2
+2024-08-05,Paid Search,Mobile,Product Detail,41174,3957,89394.08
+2024-03-02,Referral,Desktop,Checkout,42895,3914,184352.84
+2024-03-24,Social Media,Tablet,Checkout,28807,2832,86693.44
+2024-09-01,Direct,Desktop,Pricing,23928,4495,52461.25
+2025-01-30,Organic Search,Tablet,Checkout,21346,912,14649.6
+2024-08-24,Direct,Mobile,Home,25712,2934,246142.1
+2024-04-25,Display Ads,Desktop,Checkout,29869,2731,217133.68
+2024-01-09,Direct,Mobile,Blog,46161,4507,228040.17
+2024-01-17,Email,Mobile,Blog,22725,2292,206133.87
+2024-11-08,Referral,Desktop,Blog,24499,770,87237.87
+2024-09-09,Organic Search,Desktop,Sign Up,28505,676,168069.2
+2024-08-26,Display Ads,Desktop,Home,22235,3074,9683.23
+2025-03-13,Display Ads,Tablet,Pricing,26446,3497,142375.29
+2024-07-27,Email,Mobile,Sign Up,22341,227,9959.94
+2024-04-03,Direct,Desktop,Home,324,2781,109193.71
+2025-06-06,Display Ads,Mobile,Checkout,49125,1869,222962.84
+2025-05-30,Referral,Desktop,Checkout,23898,4610,131918.19
+2024-03-10,Display Ads,Mobile,Sign Up,41553,312,121736.83
+2024-04-04,Paid Search,Desktop,Home,12147,530,129017.08
+2024-04-10,Display Ads,Tablet,Home,6829,383,166396.28
+2024-03-09,Organic Search,Mobile,Product Listing,16804,3598,216358.78
+2024-01-20,Direct,Tablet,Pricing,17972,2897,60616.03
+2024-06-15,Display Ads,Mobile,Product Detail,13946,555,16348.63
+2024-09-02,Organic Search,Mobile,Checkout,8959,3950,83140.29
+2024-09-14,Social Media,Mobile,Pricing,34110,2377,72526.54
+2025-06-14,Display Ads,Tablet,Blog,6186,3818,229207.05
+2024-10-07,Social Media,Mobile,Product Detail,14471,4023,155831.08
+2024-11-08,Paid Search,Mobile,Product Detail,36377,2625,66602.63
+2024-06-11,Email,Mobile,Blog,17216,269,231937.7
+2025-04-26,Paid Search,Mobile,Sign Up,8842,1346,171052.65
+2025-01-15,Social Media,Tablet,Product Listing,36085,3121,177319.45
+2024-07-03,Email,Tablet,Sign Up,41500,2887,168041.47
+2025-03-02,Email,Tablet,Checkout,46159,2687,185232.29
+2024-03-14,Paid Search,Tablet,Sign Up,43648,25,172319.65
+2025-01-19,Social Media,Desktop,Pricing,17922,174,166269.09
+2024-04-29,Referral,Mobile,Pricing,38598,1439,111424.26
+2025-05-22,Social Media,Tablet,Checkout,4932,1234,240482.01
+2024-05-18,Direct,Desktop,Sign Up,48915,767,96378.41
+2024-04-23,Social Media,Mobile,Blog,44597,1047,29284.02
+2024-03-21,Referral,Tablet,Blog,34056,235,9087.52
+2024-12-04,Social Media,Tablet,Home,46045,1280,212216.19
+2025-01-30,Direct,Mobile,Pricing,9475,3655,197783.25
+2025-06-01,Direct,Mobile,Sign Up,5780,1190,174562.82
+2024-10-09,Referral,Tablet,Home,15775,3918,64356.51
+2024-06-26,Referral,Desktop,Pricing,40901,4097,220544.98
+2025-02-14,Social Media,Desktop,Sign Up,25767,1670,121259.97
+2024-05-26,Organic Search,Mobile,Pricing,38847,4226,107597.59
+2024-10-21,Social Media,Mobile,Product Listing,16926,4998,244528.62
+2024-07-10,Paid Search,Desktop,Product Detail,36673,3623,211538.14
+2024-12-04,Display Ads,Mobile,Pricing,35295,3467,223620.52
+2024-09-15,Direct,Tablet,Product Detail,37721,1677,217226.79
+2024-03-21,Organic Search,Tablet,Product Detail,22576,4290,145499.97
+2024-08-11,Referral,Tablet,Sign Up,20771,4764,123690.34
+2025-05-21,Paid Search,Tablet,Checkout,47408,4971,190742.96
+2025-01-30,Referral,Tablet,Checkout,5969,4466,200720.46
+2025-02-14,Paid Search,Tablet,Checkout,2990,2897,66088.97
+2025-01-22,Referral,Tablet,Sign Up,7408,3038,196861.3
+2024-08-22,Social Media,Mobile,Sign Up,8115,1700,26564.14
+2024-06-14,Email,Desktop,Pricing,23199,1378,105346.27
+2025-01-20,Social Media,Desktop,Product Listing,40802,1904,230649.71
+2025-04-03,Referral,Desktop,Home,1388,1150,49001.92
+2024-12-01,Social Media,Mobile,Product Listing,11369,3177,88670.61
+2024-08-22,Social Media,Mobile,Product Detail,30474,4595,5851.66
+2024-11-30,Display Ads,Mobile,Home,15564,2406,135565.18
+2024-10-28,Display Ads,Tablet,Product Listing,6064,4093,11430.94
+2025-02-13,Referral,Tablet,Pricing,16495,2646,164435.11
+2024-06-12,Organic Search,Tablet,Sign Up,11254,3619,153242.77
+2024-03-17,Social Media,Desktop,Blog,3661,2772,219223.52
+2024-07-21,Paid Search,Desktop,Pricing,20788,4451,69309.56
+2025-06-16,Display Ads,Desktop,Product Listing,45185,1718,76065.35
+2024-07-14,Display Ads,Tablet,Blog,20126,2190,233505.59
+2024-09-23,Display Ads,Desktop,Home,27705,1717,213810.59
+2024-01-05,Referral,Mobile,Sign Up,31752,292,120823.26
+2024-10-26,Direct,Tablet,Blog,8668,463,16069.33
+2025-04-14,Referral,Tablet,Checkout,24510,2309,214579.28
+2025-03-21,Organic Search,Desktop,Sign Up,25402,2358,151362.75
+2024-07-23,Social Media,Tablet,Home,36457,3690,96184.01
+2024-08-09,Organic Search,Desktop,Home,44255,1882,18123.72
+2024-07-27,Email,Desktop,Product Listing,13390,3646,24662.05
+2024-12-02,Paid Search,Mobile,Product Listing,16592,3276,28680.19
+2025-04-15,Organic Search,Mobile,Sign Up,15574,1870,243593.78
+2024-09-05,Email,Desktop,Sign Up,6096,944,186724.2
+2025-04-11,Referral,Tablet,Product Listing,21516,2478,49575.45
+2024-09-13,Organic Search,Desktop,Pricing,12506,3897,80353.63
+2024-08-13,Paid Search,Tablet,Home,10062,4323,114281.18
+2024-03-29,Organic Search,Tablet,Home,6608,1645,22831.66
+2024-07-08,Organic Search,Desktop,Sign Up,10963,1281,55925.76
+2024-09-24,Social Media,Desktop,Sign Up,41494,3927,2671.28
+2024-11-29,Direct,Tablet,Checkout,14650,3360,190343.71
+2025-04-24,Paid Search,Tablet,Home,20549,155,129679.28
+2024-01-27,Paid Search,Desktop,Home,37181,2201,88296.03
+2024-01-20,Social Media,Mobile,Product Listing,12433,4467,97034.63
+2024-05-09,Display Ads,Mobile,Pricing,31984,1913,153071.61
+2024-10-15,Paid Search,Desktop,Checkout,32421,4047,224600.14
+2024-12-23,Social Media,Desktop,Blog,47058,2125,244292.98
+2025-02-06,Referral,Mobile,Product Listing,35683,3379,114961.44
+2024-04-07,Social Media,Desktop,Home,47184,4189,80001.94
+2025-03-14,Direct,Mobile,Product Detail,17267,1358,110773.72
+2025-04-07,Social Media,Desktop,Blog,37340,3366,139204.53
+2024-07-27,Display Ads,Desktop,Sign Up,26794,3826,208382.33
+2024-12-04,Referral,Mobile,Product Listing,40362,4489,10732.52
+2024-05-21,Display Ads,Desktop,Home,12436,525,103425.2
+2024-04-02,Direct,Mobile,Product Listing,4119,4107,69614.99
+2025-03-29,Email,Desktop,Checkout,29620,949,146399.0
+2024-10-26,Paid Search,Tablet,Product Detail,32683,4600,228749.33
+2025-03-26,Social Media,Mobile,Blog,14186,765,128731.33
+2024-10-18,Paid Search,Desktop,Product Listing,30926,2428,8572.29
+2024-03-14,Email,Mobile,Product Detail,46293,2834,120599.5
+2025-02-20,Display Ads,Mobile,Product Listing,30094,4980,201052.5
+2024-04-07,Email,Mobile,Product Listing,31975,4962,112112.06
+2024-04-30,Direct,Tablet,Pricing,34878,4068,70729.91
+2024-03-17,Display Ads,Mobile,Home,14428,1092,229898.89
+2024-02-14,Display Ads,Mobile,Checkout,30170,4867,107196.56
+2024-03-14,Direct,Mobile,Sign Up,32523,561,82232.82
+2025-01-22,Referral,Desktop,Checkout,39748,1768,17902.58
+2024-02-07,Social Media,Desktop,Home,17620,3830,71228.06
+2025-04-10,Social Media,Mobile,Checkout,10433,4917,213932.8
+2025-06-13,Social Media,Mobile,Product Listing,47002,1583,107534.24
+2024-11-20,Email,Mobile,Product Listing,43980,2281,93695.67
+2024-05-08,Email,Desktop,Checkout,247,1155,230547.89
+2024-03-12,Email,Tablet,Pricing,37051,1663,80120.41
+2025-01-19,Organic Search,Tablet,Product Listing,33824,841,85302.76
+2024-07-28,Email,Desktop,Sign Up,269,58,102621.0
+2024-05-13,Organic Search,Desktop,Home,31386,4735,140198.76
+2024-10-02,Email,Desktop,Sign Up,15121,2596,227894.43
+2024-09-20,Referral,Desktop,Pricing,5157,2700,44047.64
+2024-02-26,Paid Search,Desktop,Blog,48637,273,179307.09
+2024-06-11,Social Media,Mobile,Product Detail,26403,4120,211384.48
+2024-07-15,Paid Search,Tablet,Checkout,34960,1538,6485.74
+2024-10-01,Display Ads,Tablet,Home,37261,1505,153832.78
+2024-04-15,Organic Search,Mobile,Pricing,30364,1368,208771.61
+2025-03-28,Display Ads,Desktop,Blog,42942,2130,147283.58
+2024-12-20,Paid Search,Tablet,Blog,40345,1842,25826.76
+2025-05-11,Paid Search,Tablet,Home,2102,4583,180987.94
+2024-01-02,Social Media,Tablet,Checkout,2269,980,100132.21
+2024-03-18,Referral,Desktop,Pricing,14343,4031,134285.86
+2025-04-12,Email,Tablet,Sign Up,44358,1310,204522.22
+2025-05-13,Email,Tablet,Home,20983,4419,30510.34
+2024-01-03,Paid Search,Mobile,Blog,14160,3888,55139.81
+2025-06-11,Organic Search,Mobile,Pricing,6912,2403,7972.34
+2024-11-24,Social Media,Mobile,Pricing,42382,3875,65898.45
+2024-06-16,Social Media,Mobile,Product Listing,4732,3427,156198.79
+2024-09-20,Social Media,Mobile,Sign Up,11346,4038,152132.81
+2024-06-08,Referral,Desktop,Product Listing,18769,405,32249.61
+2024-08-26,Email,Desktop,Home,29585,519,226141.78
+2024-11-21,Organic Search,Desktop,Pricing,17727,37,223568.88
+2025-03-07,Social Media,Mobile,Pricing,26920,654,238915.07
+2024-12-31,Organic Search,Desktop,Checkout,36186,3208,115882.41
+2024-09-27,Organic Search,Tablet,Home,40728,1423,131328.33
+2025-01-03,Paid Search,Tablet,Product Detail,47553,2307,49655.62
+2025-03-01,Organic Search,Mobile,Product Listing,22297,3978,44841.94
+2024-01-27,Direct,Desktop,Pricing,33830,2038,162868.57
+2025-03-09,Organic Search,Mobile,Product Detail,20137,1973,59699.53
+2024-01-26,Email,Mobile,Pricing,32961,516,56837.21
+2024-12-14,Referral,Desktop,Product Listing,1665,4337,141946.99
+2024-09-09,Email,Tablet,Product Listing,20051,4550,54283.52
+2024-03-11,Email,Tablet,Product Listing,32716,4315,118714.09
+2024-07-03,Direct,Tablet,Checkout,15508,4110,192178.28
+2025-01-05,Paid Search,Desktop,Product Detail,45346,3123,94202.79
+2024-10-26,Organic Search,Desktop,Product Detail,23495,3389,95218.11
+2025-03-07,Direct,Desktop,Sign Up,4253,2109,83011.57
+2024-06-13,Email,Tablet,Blog,2960,1231,205728.57
+2024-01-19,Organic Search,Tablet,Product Detail,11348,2486,202139.61
+2025-05-24,Display Ads,Desktop,Checkout,46736,3993,208194.75
+2024-08-04,Email,Tablet,Product Listing,5951,3616,210362.44
+2024-09-27,Display Ads,Desktop,Product Detail,15491,629,223430.42
+2025-01-23,Direct,Mobile,Product Detail,12721,385,73542.42
+2024-06-05,Referral,Mobile,Pricing,37447,1064,192545.06
+2024-03-22,Direct,Mobile,Product Detail,20314,1942,4540.37
+2024-11-30,Email,Mobile,Checkout,29217,3074,25626.75
+2024-08-10,Referral,Desktop,Blog,28730,343,70717.24
+2025-03-04,Display Ads,Mobile,Home,43731,2954,82975.53
+2025-06-20,Referral,Tablet,Product Detail,13475,854,221603.01
+2024-05-26,Email,Desktop,Checkout,28975,4375,78636.38
+2024-02-13,Social Media,Mobile,Pricing,7219,2386,55832.64
+2024-08-03,Referral,Desktop,Checkout,6431,532,166067.66
+2024-06-23,Display Ads,Desktop,Checkout,18689,4710,220330.67
+2024-01-01,Direct,Mobile,Pricing,42679,1947,244665.5
+2025-05-02,Organic Search,Tablet,Product Listing,46894,839,183006.6
+2024-05-09,Organic Search,Tablet,Product Listing,29899,389,156222.44
+2024-01-28,Organic Search,Tablet,Product Listing,42627,207,111809.83
+2024-09-21,Referral,Desktop,Product Listing,30597,4156,246021.19
+2024-06-17,Paid Search,Tablet,Sign Up,14086,2088,188936.84
+2025-02-02,Referral,Mobile,Blog,16273,4551,48478.23
+2024-12-24,Paid Search,Mobile,Product Listing,9005,736,157707.43
+2024-04-05,Paid Search,Mobile,Pricing,24298,1496,208246.58
+2024-07-28,Social Media,Desktop,Pricing,9499,433,124326.56
+2024-03-13,Social Media,Desktop,Product Listing,20795,4122,64293.21
+2024-04-16,Social Media,Desktop,Product Detail,33444,2950,5416.03
+2024-02-11,Social Media,Desktop,Home,13053,3788,173569.58
+2025-01-19,Email,Tablet,Sign Up,21036,3322,248791.18
+2024-11-20,Organic Search,Desktop,Product Listing,12128,3840,74132.6
+2025-05-07,Paid Search,Tablet,Product Detail,17294,4141,78558.37
+2025-06-03,Display Ads,Tablet,Blog,2350,1332,214635.46
+2024-08-24,Email,Desktop,Pricing,29225,2347,146507.84
+2024-12-04,Referral,Mobile,Blog,10983,920,201443.26
+2024-08-03,Direct,Tablet,Product Detail,16393,2441,48589.98
+2024-05-03,Paid Search,Tablet,Blog,37139,1086,245428.74
+2024-01-13,Paid Search,Mobile,Checkout,28744,3602,32109.26
+2024-12-22,Display Ads,Mobile,Home,43659,4450,162087.99
+2025-04-18,Paid Search,Desktop,Checkout,49091,319,6686.33
+2025-03-29,Referral,Desktop,Blog,24412,3926,169035.63
+2025-01-01,Paid Search,Mobile,Checkout,38084,2287,77799.35
+2025-05-02,Direct,Desktop,Sign Up,2310,2218,207804.06
+2025-02-12,Paid Search,Mobile,Product Listing,23326,2790,201308.75
+2024-03-10,Organic Search,Tablet,Sign Up,739,28,195737.97
+2024-11-15,Email,Tablet,Pricing,18602,3519,15558.01
+2024-09-04,Organic Search,Tablet,Product Listing,26652,4812,221490.99
+2025-02-01,Social Media,Tablet,Product Listing,18767,2465,220.95

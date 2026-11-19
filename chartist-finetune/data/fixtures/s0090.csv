@@ -1,241 +1,241 @@
-sale_date,store_region,product_category,payment_method,units_sold,unit_price,discount_amount,total_revenue
-2024-05-30,Mountain,Electronics,Gift Card,14,1558.53,166.37,1948.97
-2024-12-10,Southeast,Home and Garden,Credit Card,137,17.77,400.04,4764.11
-2025-06-19,Midwest,Beauty,Gift Card,118,791.86,184.45,5121.39
-2025-06-19,Southwest,Sporting Goods,Gift Card,50,989.39,236.83,4846.37
-2025-01-14,Northeast,Home and Garden,Credit Card,143,29.14,13.66,1625.19
-2024-02-22,West Coast,Sporting Goods,Gift Card,109,585.81,39.55,4126.27
-2024-12-12,Mountain,Beauty,Debit Card,207,882.01,43.0,6257.51
-2024-09-30,West Coast,Sporting Goods,Cash,3,1236.16,373.93,3109.77
-2024-09-16,Midwest,Home and Garden,Credit Card,120,1362.7,139.82,2862.81
-2024-08-02,Southwest,Beauty,Cash,198,903.17,77.23,3986.65
-2024-05-23,Northeast,Apparel,Mobile Wallet,90,1716.17,363.28,3131.96
-2024-04-21,Midwest,Electronics,Gift Card,144,1803.39,157.97,5133.7
-2025-01-04,West Coast,Beauty,Credit Card,182,1400.36,243.17,8528.58
-2025-04-22,Mountain,Beauty,Credit Card,146,777.69,157.32,5090.05
-2024-03-20,Mountain,Beauty,Cash,71,1684.65,110.61,5715.22
-2024-10-18,Mountain,Sporting Goods,Debit Card,71,1054.13,261.86,880.8
-2024-10-31,Mountain,Toys,Debit Card,113,620.38,117.09,3795.06
-2024-11-26,Southeast,Apparel,Mobile Wallet,169,1853.9,297.9,1083.27
-2024-05-10,Southwest,Electronics,Cash,24,1222.39,69.29,6417.23
-2024-06-03,Midwest,Sporting Goods,Cash,131,1752.53,194.38,5845.83
-2024-07-25,Midwest,Electronics,Gift Card,58,1389.1,448.88,6999.56
-2024-10-27,Southwest,Grocery,Gift Card,110,1888.83,380.94,6137.4
-2025-04-08,Southwest,Sporting Goods,Gift Card,26,1716.83,137.81,4667.88
-2025-01-31,Northeast,Grocery,Mobile Wallet,248,1577.64,184.5,5573.43
-2024-04-25,Midwest,Home and Garden,Credit Card,203,1821.84,358.01,5898.9
-2024-04-17,Southwest,Apparel,Cash,207,1865.85,399.83,6529.77
-2024-05-02,West Coast,Beauty,Mobile Wallet,35,739.58,345.97,7083.43
-2024-05-22,Midwest,Toys,Gift Card,207,1021.47,357.19,7398.96
-2025-03-03,West Coast,Sporting Goods,Cash,78,540.84,113.82,3550.51
-2024-06-24,Southwest,Apparel,Mobile Wallet,95,285.55,161.61,9307.97
-2024-05-15,Southeast,Toys,Cash,106,995.43,75.56,8843.85
-2024-10-04,Southeast,Toys,Credit Card,107,934.82,230.4,2760.63
-2025-02-25,Midwest,Home and Garden,Mobile Wallet,4,1233.88,158.09,2550.81
-2024-09-03,Mountain,Grocery,Mobile Wallet,215,5.83,218.36,7780.28
-2024-01-03,Midwest,Beauty,Gift Card,110,1025.0,53.97,4192.63
-2024-09-23,Northeast,Home and Garden,Debit Card,45,792.2,175.69,1924.89
-2024-07-28,West Coast,Electronics,Mobile Wallet,78,281.94,109.38,2472.02
-2024-11-20,Mountain,Toys,Mobile Wallet,220,1232.56,213.6,5175.26
-2025-05-02,Mountain,Apparel,Cash,55,788.15,226.28,8352.6
-2025-02-28,Southeast,Sporting Goods,Cash,88,765.35,351.99,6851.93
-2025-01-09,West Coast,Beauty,Debit Card,51,1704.14,13.56,6930.79
-2025-01-31,Mountain,Grocery,Debit Card,20,366.5,33.1,4581.68
-2024-07-23,Southwest,Electronics,Debit Card,49,612.7,13.57,6038.1
-2024-11-23,Mountain,Grocery,Mobile Wallet,99,1782.0,37.13,1260.81
-2024-02-08,West Coast,Sporting Goods,Gift Card,49,332.02,279.05,6695.63
-2025-03-09,Midwest,Toys,Credit Card,222,1668.29,394.26,5029.43
-2025-03-15,Southwest,Beauty,Mobile Wallet,112,1351.44,429.29,5027.94
-2024-07-24,Midwest,Beauty,Credit Card,197,1024.27,147.93,5079.63
-2024-09-19,Northeast,Home and Garden,Mobile Wallet,181,56.13,261.75,2416.15
-2024-07-08,West Coast,Toys,Credit Card,199,275.22,262.35,8319.63
-2024-08-24,Southwest,Sporting Goods,Credit Card,145,1656.04,258.64,5414.99
-2024-04-28,Midwest,Electronics,Mobile Wallet,164,1336.61,291.91,264.76
-2025-03-25,Midwest,Grocery,Cash,32,87.97,5.92,270.0
-2025-01-25,Southeast,Electronics,Gift Card,143,96.36,80.4,8918.31
-2024-03-13,Northeast,Sporting Goods,Mobile Wallet,156,930.63,427.11,3517.48
-2024-07-22,Southeast,Beauty,Mobile Wallet,185,518.57,54.93,2180.2
-2024-12-15,Southeast,Beauty,Credit Card,50,1058.39,418.59,1737.11
-2024-07-22,Northeast,Sporting Goods,Gift Card,95,28.69,291.48,2856.67
-2024-09-30,Midwest,Sporting Goods,Cash,207,628.75,25.2,5067.17
-2024-12-11,Northeast,Home and Garden,Gift Card,176,91.36,220.11,5972.65
-2025-01-16,Northeast,Grocery,Credit Card,33,488.91,187.42,6421.98
-2024-07-07,Southwest,Toys,Debit Card,144,1895.9,294.85,2766.73
-2024-01-07,Northeast,Sporting Goods,Credit Card,34,1089.83,191.39,5589.73
-2024-12-31,Mountain,Sporting Goods,Debit Card,146,381.28,251.93,7105.68
-2024-08-03,Southeast,Toys,Credit Card,240,303.45,403.24,1200.02
-2024-11-26,Southwest,Sporting Goods,Debit Card,116,744.8,124.9,4972.81
-2025-03-14,Southeast,Grocery,Gift Card,98,1638.85,32.95,4322.33
-2024-09-30,Northeast,Sporting Goods,Cash,87,458.33,379.3,3970.66
-2024-12-01,West Coast,Toys,Gift Card,168,262.85,332.08,4229.64
-2024-12-12,West Coast,Electronics,Debit Card,121,1749.03,17.8,6406.88
-2025-03-10,Midwest,Apparel,Debit Card,38,732.27,136.01,3159.25
-2024-12-07,Southeast,Beauty,Debit Card,23,1708.65,247.85,5410.13
-2024-02-23,Southeast,Apparel,Cash,250,1347.72,419.4,8577.4
-2024-07-01,Midwest,Toys,Mobile Wallet,4,1356.54,121.12,3422.46
-2024-03-03,Midwest,Apparel,Debit Card,55,61.32,329.59,7533.85
-2024-12-21,West Coast,Beauty,Cash,10,1200.66,5.86,5010.87
-2024-06-18,Southwest,Sporting Goods,Debit Card,45,966.32,118.93,8283.56
-2024-04-30,Southeast,Electronics,Cash,62,1199.39,133.73,7523.07
-2025-01-20,West Coast,Home and Garden,Gift Card,47,1598.42,212.78,1004.49
-2024-05-20,Midwest,Sporting Goods,Credit Card,28,1695.67,302.63,9470.95
-2024-08-09,West Coast,Sporting Goods,Credit Card,176,1751.4,322.84,8694.41
-2024-10-27,West Coast,Toys,Credit Card,87,737.17,311.35,3856.91
-2025-06-03,Southeast,Toys,Mobile Wallet,11,476.48,346.08,3442.44
-2024-03-30,Midwest,Home and Garden,Cash,75,1198.99,263.26,1247.03
-2024-12-12,Midwest,Grocery,Debit Card,2,1873.14,150.8,6432.81
-2024-11-16,Northeast,Sporting Goods,Credit Card,121,1600.13,92.57,6623.78
-2024-10-30,West Coast,Beauty,Cash,195,197.28,152.42,4061.51
-2025-04-09,Mountain,Apparel,Debit Card,157,627.48,164.78,5900.96
-2024-10-31,Northeast,Electronics,Cash,3,1722.73,311.65,7589.45
-2025-04-06,Southwest,Apparel,Gift Card,240,804.38,98.49,722.05
-2024-10-28,Mountain,Grocery,Debit Card,46,988.66,158.13,2373.29
-2024-06-21,Southwest,Sporting Goods,Mobile Wallet,83,42.35,229.54,7346.58
-2025-06-06,Northeast,Grocery,Cash,51,577.97,176.96,8485.82
-2024-03-25,Southwest,Apparel,Gift Card,67,308.73,65.71,8295.57
-2024-02-07,Southeast,Home and Garden,Cash,2,1608.76,284.4,5464.91
-2024-05-25,Northeast,Electronics,Credit Card,219,1052.65,28.97,6947.38
-2025-03-13,Mountain,Beauty,Gift Card,91,1858.37,221.02,2567.91
-2025-01-03,Southeast,Apparel,Gift Card,226,1124.06,167.54,7167.87
-2024-12-28,Southwest,Sporting Goods,Credit Card,140,373.83,289.47,2377.84
-2024-10-31,Southeast,Sporting Goods,Gift Card,30,264.91,66.61,573.0
-2024-03-18,Midwest,Sporting Goods,Cash,215,856.28,161.16,5763.81
-2024-10-21,Northeast,Electronics,Cash,20,1546.99,266.39,8123.6
-2024-02-24,Northeast,Toys,Mobile Wallet,16,1320.09,31.26,2591.49
-2025-03-08,Southeast,Sporting Goods,Gift Card,117,865.8,268.48,7601.01
-2025-01-09,Midwest,Electronics,Gift Card,78,51.09,51.15,296.85
-2024-01-18,West Coast,Sporting Goods,Gift Card,88,55.41,390.23,6882.14
-2025-04-10,Southeast,Apparel,Cash,168,467.38,72.3,6829.18
-2025-04-23,Midwest,Sporting Goods,Debit Card,19,200.14,170.53,9210.65
-2024-05-20,Mountain,Beauty,Credit Card,223,1456.08,182.97,545.29
-2024-09-20,Southwest,Electronics,Mobile Wallet,91,1036.18,45.55,2981.25
-2024-09-19,Southeast,Electronics,Debit Card,111,93.23,288.09,470.76
-2024-08-17,Southeast,Apparel,Cash,178,992.38,135.22,5243.47
-2024-03-19,Southeast,Electronics,Mobile Wallet,28,493.28,428.87,876.43
-2025-01-26,Mountain,Home and Garden,Debit Card,178,415.46,311.07,5197.27
-2024-10-18,West Coast,Beauty,Gift Card,32,1105.83,37.33,236.42
-2024-05-17,Southeast,Home and Garden,Cash,91,1037.48,159.03,6266.41
-2024-05-12,Southeast,Electronics,Cash,17,374.77,69.28,983.89
-2025-05-11,West Coast,Electronics,Debit Card,35,34.75,387.64,460.16
-2024-01-11,Southwest,Home and Garden,Credit Card,195,1803.56,197.88,5256.31
-2024-11-25,West Coast,Sporting Goods,Mobile Wallet,119,1384.23,204.06,4394.57
-2024-10-26,West Coast,Toys,Cash,93,1465.62,11.38,1015.97
-2025-03-22,Southwest,Sporting Goods,Credit Card,179,534.82,416.05,3950.51
-2025-03-13,West Coast,Apparel,Debit Card,109,253.3,284.09,157.15
-2024-02-17,Southeast,Toys,Cash,95,1831.26,311.74,8657.78
-2024-07-31,West Coast,Toys,Credit Card,71,1276.97,266.23,8817.6
-2024-03-18,Southwest,Toys,Debit Card,182,1828.06,300.25,8841.36
-2025-03-18,Midwest,Sporting Goods,Mobile Wallet,89,807.17,37.7,2373.79
-2025-05-03,Northeast,Toys,Cash,81,1563.42,236.7,5420.93
-2024-10-15,Northeast,Grocery,Debit Card,131,1450.47,225.72,1937.27
-2024-02-21,Mountain,Electronics,Credit Card,103,11.6,6.76,79.47
-2025-01-31,Southeast,Grocery,Debit Card,127,1169.17,162.29,5068.15
-2025-02-01,Southeast,Electronics,Credit Card,24,196.44,274.83,8582.42
-2024-06-16,Northeast,Sporting Goods,Mobile Wallet,85,1537.92,273.71,4706.55
-2024-01-07,Northeast,Grocery,Gift Card,56,1174.18,427.07,2223.38
-2024-06-03,Mountain,Toys,Gift Card,99,1771.26,408.8,8343.12
-2024-05-19,Midwest,Grocery,Gift Card,66,1782.21,10.21,3034.43
-2024-10-24,Midwest,Home and Garden,Credit Card,34,260.63,17.34,6419.11
-2024-05-28,Southwest,Home and Garden,Cash,224,1524.5,348.7,6183.25
-2024-09-05,Southwest,Apparel,Gift Card,22,1425.2,254.83,5899.66
-2025-03-30,Southwest,Apparel,Credit Card,197,1674.9,345.74,5220.09
-2024-02-19,Northeast,Toys,Mobile Wallet,176,1178.66,262.83,4032.3
-2024-06-17,Southwest,Home and Garden,Mobile Wallet,146,877.44,325.68,9325.07
-2024-09-23,Northeast,Home and Garden,Debit Card,73,1549.65,343.46,2389.11
-2024-04-26,Midwest,Beauty,Credit Card,42,1414.37,10.36,3901.18
-2025-05-18,Southeast,Grocery,Gift Card,39,400.61,176.26,5681.16
-2024-01-12,West Coast,Apparel,Debit Card,162,820.88,178.97,6418.04
-2024-12-15,Mountain,Toys,Cash,211,824.79,310.93,1415.19
-2024-06-06,West Coast,Apparel,Gift Card,194,489.28,288.84,7828.54
-2024-10-27,West Coast,Sporting Goods,Cash,71,1897.11,203.07,9226.7
-2025-04-14,Mountain,Apparel,Mobile Wallet,100,117.01,248.69,9442.13
-2024-06-03,Midwest,Electronics,Cash,21,30.64,441.26,4754.51
-2024-10-18,Northeast,Electronics,Mobile Wallet,53,1005.1,85.45,3269.56
-2024-11-26,Southeast,Electronics,Debit Card,205,170.19,44.36,7516.49
-2024-01-18,Mountain,Toys,Debit Card,13,272.64,318.65,6953.03
-2024-12-12,Mountain,Beauty,Gift Card,68,222.86,325.37,4702.62
-2024-02-17,Midwest,Grocery,Mobile Wallet,152,730.56,444.5,4253.64
-2024-03-09,Northeast,Grocery,Credit Card,249,632.84,416.14,513.09
-2024-05-22,Northeast,Beauty,Debit Card,130,372.78,225.94,8719.51
-2024-03-20,Southwest,Home and Garden,Gift Card,122,1725.62,285.2,6401.84
-2025-02-20,Mountain,Electronics,Debit Card,47,1396.8,364.64,1195.95
-2024-10-03,Midwest,Electronics,Cash,133,293.13,28.45,9027.65
-2024-04-16,Mountain,Apparel,Debit Card,186,94.46,345.26,4835.61
-2025-01-24,Midwest,Apparel,Debit Card,178,1507.7,251.46,3794.22
-2024-01-09,Northeast,Beauty,Mobile Wallet,40,934.27,89.52,25.38
-2025-02-20,Mountain,Home and Garden,Gift Card,69,622.46,295.29,4209.7
-2025-06-19,Southeast,Grocery,Debit Card,229,141.35,318.94,5098.34
-2024-10-23,Northeast,Toys,Gift Card,235,386.12,319.3,1816.59
-2025-05-30,Mountain,Toys,Mobile Wallet,30,604.19,258.78,3473.37
-2025-06-16,Mountain,Electronics,Credit Card,146,1817.38,21.63,6858.45
-2024-12-02,Mountain,Sporting Goods,Mobile Wallet,143,916.99,285.1,1308.44
-2024-06-18,Southwest,Electronics,Cash,32,490.25,425.95,3828.64
-2024-04-22,West Coast,Toys,Cash,142,417.4,417.33,1057.17
-2024-07-12,Southwest,Home and Garden,Mobile Wallet,73,1746.48,401.34,8308.14
-2024-11-12,Southwest,Grocery,Credit Card,202,600.52,344.25,6581.78
-2024-10-13,Midwest,Apparel,Credit Card,226,547.08,321.06,4366.51
-2024-05-06,Midwest,Home and Garden,Gift Card,245,70.97,255.66,8996.45
-2025-03-21,West Coast,Grocery,Credit Card,50,1218.52,367.98,4254.25
-2024-12-20,Southwest,Home and Garden,Credit Card,186,922.34,150.76,7459.01
-2025-01-16,Southwest,Apparel,Credit Card,232,386.2,95.34,7096.15
-2024-01-21,West Coast,Home and Garden,Cash,238,1587.11,280.91,2204.6
-2024-06-04,Mountain,Sporting Goods,Debit Card,176,358.78,294.13,2436.83
-2025-01-31,Southwest,Beauty,Credit Card,214,1221.19,39.91,8126.24
-2024-06-13,Southwest,Toys,Cash,40,960.25,227.79,3886.65
-2025-04-27,Mountain,Beauty,Debit Card,116,1192.35,339.03,6216.24
-2024-07-09,Southwest,Home and Garden,Debit Card,214,92.46,124.91,5385.29
-2025-03-10,Southwest,Grocery,Credit Card,91,537.64,256.62,5979.92
-2024-08-11,Southwest,Toys,Credit Card,189,143.73,348.23,2421.18
-2024-05-11,Midwest,Electronics,Debit Card,193,1418.46,89.35,663.33
-2024-11-04,Mountain,Electronics,Gift Card,32,18.79,195.53,2414.67
-2024-02-15,Southeast,Grocery,Credit Card,12,1169.5,63.79,1911.65
-2024-06-21,Southeast,Toys,Debit Card,84,580.59,378.27,7335.98
-2025-06-06,Mountain,Sporting Goods,Cash,177,282.3,438.13,7626.29
-2025-04-19,Southwest,Apparel,Mobile Wallet,108,249.07,189.88,2113.46
-2024-09-04,Midwest,Electronics,Credit Card,58,1350.97,344.35,2565.75
-2024-11-21,Mountain,Toys,Debit Card,77,1540.51,288.39,9066.15
-2025-02-06,Southwest,Electronics,Credit Card,177,1051.77,333.34,3927.59
-2024-03-09,Midwest,Beauty,Credit Card,38,1581.25,426.39,7099.88
-2025-05-25,Mountain,Home and Garden,Cash,15,1185.54,101.3,1137.42
-2025-05-10,West Coast,Sporting Goods,Credit Card,216,856.7,427.43,3432.67
-2024-05-19,Mountain,Home and Garden,Cash,247,1134.21,437.35,4874.88
-2025-05-22,Northeast,Apparel,Debit Card,44,360.42,128.8,2913.84
-2025-06-20,Northeast,Beauty,Mobile Wallet,80,1669.25,10.29,7391.72
-2025-05-11,Mountain,Home and Garden,Cash,137,569.93,395.81,8588.87
-2024-07-05,Northeast,Toys,Cash,151,1336.33,437.96,6069.56
-2025-01-05,Midwest,Apparel,Debit Card,41,416.81,408.03,7933.0
-2024-12-03,Southwest,Grocery,Cash,151,1489.64,164.01,6724.42
-2024-02-01,Southeast,Sporting Goods,Mobile Wallet,43,1489.25,266.44,7191.12
-2025-02-27,Southeast,Electronics,Credit Card,79,1821.77,186.01,5524.53
-2024-02-18,Midwest,Apparel,Credit Card,243,21.43,173.47,3387.77
-2024-10-22,Midwest,Electronics,Debit Card,166,731.38,415.19,9120.35
-2025-01-29,Northeast,Sporting Goods,Cash,58,1411.44,373.87,6700.15
-2025-01-02,Northeast,Electronics,Cash,191,1855.88,338.04,7435.78
-2025-05-08,Southeast,Grocery,Credit Card,147,317.51,374.12,6292.66
-2025-04-30,West Coast,Beauty,Cash,76,64.49,90.13,9443.08
-2025-02-27,Southeast,Beauty,Gift Card,181,803.85,430.29,3150.51
-2025-05-12,West Coast,Apparel,Debit Card,97,116.92,10.07,3308.33
-2025-06-23,Southwest,Toys,Gift Card,244,805.81,194.63,1039.2
-2024-08-06,Midwest,Electronics,Debit Card,1,1335.9,172.95,1184.13
-2025-02-21,Midwest,Beauty,Cash,11,859.87,60.63,2307.62
-2024-01-12,West Coast,Grocery,Credit Card,168,1189.67,383.94,4466.54
-2025-06-18,West Coast,Grocery,Cash,135,1246.69,262.95,3940.5
-2024-08-30,Northeast,Electronics,Mobile Wallet,112,373.02,277.81,3721.88
-2025-04-19,Mountain,Sporting Goods,Mobile Wallet,40,1590.52,418.15,3918.36
-2025-04-15,Midwest,Apparel,Mobile Wallet,125,1092.51,407.89,8759.88
-2024-08-02,Southwest,Apparel,Mobile Wallet,161,720.36,12.62,6972.82
-2024-01-13,Southeast,Home and Garden,Gift Card,115,689.27,424.25,9443.1
-2024-09-02,Southeast,Home and Garden,Cash,233,610.14,81.54,2443.04
-2025-02-07,Southeast,Apparel,Mobile Wallet,185,100.99,8.68,4291.89
-2024-01-24,Northeast,Apparel,Mobile Wallet,46,259.37,286.76,3842.97
-2024-06-05,Midwest,Sporting Goods,Cash,17,1761.1,4.1,4064.01
-2024-03-20,Mountain,Home and Garden,Gift Card,24,77.45,243.12,6191.09
-2025-02-03,Northeast,Sporting Goods,Debit Card,222,695.42,95.4,6744.36
-2024-11-13,Southwest,Toys,Gift Card,239,1115.48,55.54,5906.47
-2024-09-02,West Coast,Home and Garden,Gift Card,145,1835.79,384.69,4599.55
-2025-02-15,Mountain,Electronics,Cash,227,563.72,7.07,4354.57
-2025-02-16,Southeast,Home and Garden,Gift Card,231,454.82,392.52,2419.51
-2024-12-07,West Coast,Sporting Goods,Debit Card,205,971.18,70.71,3783.85
-2024-12-18,Midwest,Sporting Goods,Debit Card,224,758.9,64.39,4339.71
-2024-08-10,West Coast,Grocery,Debit Card,248,371.14,184.53,7379.29
-2024-03-13,Southeast,Apparel,Debit Card,250,623.46,229.49,4593.82
+trip_dt,veh_type,rgn_cd,drv_stat,trip_dist_km,fuel_used_l,stop_cnt,avg_spd_kph
+2025-04-07,box_truck,east,idle,208.42,17.11,30,23.57
+2024-03-18,ev_van,south,idle,15.47,98.27,118,64.65
+2024-03-27,sedan,north,off_duty,387.75,47.17,38,102.96
+2025-03-10,sedan,south,loading,271.38,68.43,114,37.53
+2024-03-25,refrigerated,west,off_duty,404.06,156.88,100,50.75
+2025-02-06,sedan,north,maintenance,227.87,88.73,33,58.04
+2024-11-25,box_truck,central,idle,358.52,52.04,111,11.51
+2025-04-21,box_truck,central,loading,152.86,22.84,106,84.98
+2024-03-09,sedan,east,off_duty,32.2,33.36,83,2.93
+2025-03-27,sedan,west,maintenance,399.27,139.97,34,21.58
+2024-02-11,box_truck,north,maintenance,50.58,38.64,56,25.62
+2024-11-25,van,west,off_duty,99.46,32.39,44,43.46
+2025-04-19,van,south,on_route,249.88,175.18,67,31.89
+2024-10-17,ev_van,east,on_route,118.04,123.29,77,55.97
+2024-02-19,box_truck,north,idle,2.62,7.55,48,62.31
+2025-05-22,sedan,west,loading,6.92,142.66,116,109.43
+2025-04-10,ev_van,central,on_route,234.37,151.55,119,22.87
+2025-06-07,ev_van,central,loading,409.06,106.11,3,1.02
+2024-04-08,box_truck,north,loading,406.13,68.86,27,56.06
+2024-06-06,cargo_bike,north,off_duty,159.3,148.39,9,11.64
+2024-11-14,cargo_bike,central,idle,232.27,6.83,67,62.68
+2025-06-16,van,west,on_route,268.09,136.4,34,63.87
+2024-01-12,box_truck,east,maintenance,311.55,18.96,44,97.93
+2025-06-06,sedan,west,loading,227.23,152.18,36,5.43
+2024-03-30,ev_van,central,loading,94.06,113.65,42,4.59
+2024-04-21,cargo_bike,east,loading,383.69,107.19,117,83.45
+2025-06-13,cargo_bike,east,maintenance,163.48,157.42,16,4.83
+2025-06-16,van,west,on_route,345.85,157.44,109,52.12
+2025-05-27,sedan,central,idle,188.15,167.66,87,80.49
+2024-11-17,box_truck,west,loading,46.53,15.7,88,32.66
+2025-05-05,sedan,east,maintenance,316.42,57.06,7,48.79
+2024-04-20,van,east,loading,301.58,66.32,10,100.45
+2024-01-26,van,south,maintenance,315.32,28.52,101,38.88
+2025-02-13,ev_van,north,maintenance,436.31,167.24,87,66.01
+2024-12-21,refrigerated,north,on_route,348.66,9.94,65,109.84
+2024-04-20,sedan,north,off_duty,445.99,173.39,56,97.19
+2024-12-13,box_truck,north,on_route,303.22,106.76,2,78.35
+2025-05-28,sedan,central,idle,246.24,101.52,1,95.49
+2025-01-27,refrigerated,west,idle,38.33,80.15,22,53.65
+2024-01-04,cargo_bike,east,on_route,403.72,177.19,74,92.28
+2025-02-19,ev_van,north,maintenance,397.4,156.57,10,38.99
+2025-02-13,box_truck,west,loading,4.62,94.71,41,51.03
+2025-05-12,ev_van,central,on_route,54.08,16.41,31,14.93
+2024-11-29,box_truck,central,off_duty,317.01,162.36,36,25.75
+2024-04-27,ev_van,south,off_duty,299.39,33.67,10,88.51
+2024-05-02,ev_van,south,idle,332.82,129.48,32,23.43
+2025-05-25,sedan,central,loading,110.49,177.44,113,58.77
+2025-03-09,sedan,west,maintenance,440.78,86.38,15,53.16
+2024-11-09,box_truck,east,maintenance,33.17,107.13,10,69.82
+2025-03-01,van,east,idle,336.72,33.69,83,51.94
+2024-07-29,refrigerated,south,idle,396.6,137.43,118,66.99
+2024-08-08,refrigerated,central,on_route,299.56,54.04,11,62.59
+2025-04-20,box_truck,north,maintenance,182.05,160.78,86,60.18
+2024-09-30,cargo_bike,west,on_route,115.77,25.83,117,42.98
+2024-05-06,cargo_bike,north,on_route,336.75,18.2,60,76.57
+2024-05-27,ev_van,central,on_route,111.7,145.88,114,54.9
+2024-06-27,box_truck,west,off_duty,255.33,135.2,51,30.57
+2024-04-25,ev_van,central,on_route,295.85,155.72,52,63.8
+2025-03-21,sedan,central,on_route,58.84,89.02,119,68.33
+2024-04-01,refrigerated,west,on_route,87.53,153.13,95,40.82
+2025-01-04,ev_van,east,loading,42.04,170.45,61,109.25
+2025-05-15,sedan,central,on_route,361.42,103.32,21,46.95
+2024-10-16,box_truck,west,maintenance,345.73,156.21,110,45.35
+2025-03-21,box_truck,west,off_duty,57.8,139.98,95,51.7
+2024-08-14,refrigerated,south,off_duty,385.01,123.32,40,34.93
+2024-08-25,box_truck,central,on_route,418.65,41.9,66,23.39
+2024-06-05,box_truck,east,off_duty,368.04,36.22,46,50.3
+2024-08-06,box_truck,north,off_duty,389.0,109.88,37,58.8
+2024-11-06,ev_van,north,off_duty,145.96,176.88,30,82.78
+2024-09-12,ev_van,south,maintenance,180.81,10.36,16,60.83
+2024-01-09,ev_van,north,on_route,338.16,120.06,94,80.53
+2024-02-21,van,central,maintenance,395.5,21.57,13,73.3
+2024-04-14,box_truck,east,off_duty,435.04,150.61,3,2.62
+2024-08-19,sedan,west,maintenance,171.68,113.46,59,46.96
+2024-05-03,refrigerated,east,loading,315.43,119.32,55,66.91
+2024-08-12,box_truck,central,idle,364.72,105.07,61,90.91
+2025-03-06,van,west,loading,208.35,48.35,84,14.05
+2024-10-27,van,north,maintenance,428.98,38.79,57,99.36
+2024-11-06,sedan,north,on_route,12.95,158.02,23,53.28
+2025-02-04,cargo_bike,central,loading,382.96,118.29,27,11.82
+2025-06-07,van,east,off_duty,340.17,98.46,102,97.42
+2024-09-25,sedan,east,on_route,135.8,60.39,67,97.74
+2024-11-17,ev_van,south,off_duty,125.17,33.94,55,105.22
+2024-09-27,refrigerated,west,idle,260.93,129.78,53,75.24
+2025-02-13,sedan,north,loading,270.32,159.29,44,48.85
+2025-01-08,refrigerated,east,idle,347.66,142.48,119,17.32
+2025-03-25,sedan,east,loading,213.67,140.94,40,85.87
+2024-06-21,sedan,east,idle,392.12,28.68,96,94.51
+2024-05-15,ev_van,central,on_route,86.18,31.46,57,41.22
+2025-02-07,box_truck,central,off_duty,192.84,31.06,95,78.62
+2025-06-12,cargo_bike,east,maintenance,90.9,120.94,108,107.87
+2025-05-21,sedan,east,idle,131.54,19.98,14,93.15
+2024-02-25,ev_van,central,maintenance,317.5,122.3,40,79.79
+2025-02-12,refrigerated,north,loading,377.13,14.12,115,46.55
+2024-05-17,cargo_bike,south,on_route,178.62,75.07,71,105.77
+2024-02-08,van,central,off_duty,98.41,124.94,33,41.32
+2025-03-10,cargo_bike,north,on_route,409.14,56.72,22,5.29
+2024-11-21,sedan,central,maintenance,194.17,50.13,60,33.91
+2024-03-17,cargo_bike,central,on_route,152.1,154.46,18,40.49
+2024-08-19,refrigerated,central,maintenance,308.38,30.28,72,50.75
+2024-12-28,refrigerated,central,idle,78.04,90.03,29,22.61
+2024-03-31,sedan,south,off_duty,232.1,131.37,114,26.71
+2024-05-22,sedan,south,maintenance,323.58,49.52,16,54.48
+2024-10-14,ev_van,central,idle,215.08,29.51,93,23.13
+2024-01-21,sedan,east,maintenance,419.74,72.14,19,7.31
+2024-03-25,ev_van,north,maintenance,280.01,34.72,92,79.79
+2024-07-02,box_truck,west,off_duty,262.82,136.79,58,99.22
+2025-01-12,sedan,east,idle,173.18,78.3,65,50.0
+2024-07-24,cargo_bike,east,maintenance,107.32,80.59,102,57.61
+2024-12-30,box_truck,west,off_duty,193.91,164.78,29,28.41
+2024-06-27,cargo_bike,north,on_route,52.58,56.69,98,72.5
+2024-06-27,van,east,idle,230.56,113.11,9,17.1
+2024-07-26,van,east,idle,195.28,149.44,25,82.51
+2025-04-19,sedan,central,off_duty,228.39,82.58,1,43.6
+2025-05-04,cargo_bike,west,loading,345.01,97.25,106,52.0
+2025-05-08,cargo_bike,south,idle,199.23,49.04,102,10.64
+2025-02-11,van,west,loading,165.01,75.84,96,40.49
+2024-11-08,refrigerated,north,on_route,117.66,30.87,38,106.39
+2025-06-10,refrigerated,central,on_route,129.1,2.71,23,71.35
+2024-03-31,refrigerated,north,loading,239.95,41.84,78,43.9
+2024-03-30,refrigerated,central,idle,134.13,108.65,115,4.34
+2024-07-07,ev_van,north,off_duty,327.92,155.06,86,82.13
+2025-03-28,sedan,north,on_route,25.01,139.74,77,16.43
+2025-02-02,van,west,on_route,374.77,48.84,33,10.32
+2024-05-04,van,central,idle,213.65,4.99,41,92.2
+2024-11-06,box_truck,north,maintenance,254.6,59.97,88,40.87
+2024-08-16,refrigerated,south,on_route,310.86,172.92,112,67.56
+2024-07-17,sedan,south,on_route,449.74,31.24,52,16.37
+2025-05-22,sedan,south,off_duty,156.72,155.46,69,80.73
+2024-04-06,refrigerated,central,idle,386.46,47.97,70,108.02
+2024-07-26,van,north,loading,256.04,125.75,26,78.38
+2024-11-28,sedan,east,off_duty,180.97,54.19,110,77.91
+2024-11-23,refrigerated,north,loading,342.11,173.49,24,91.5
+2024-04-25,cargo_bike,west,maintenance,92.49,159.88,102,83.02
+2025-06-07,ev_van,east,on_route,106.63,176.52,62,79.99
+2025-04-23,box_truck,south,on_route,151.58,78.84,48,13.9
+2024-02-02,refrigerated,south,maintenance,211.2,108.4,71,56.77
+2025-04-19,van,north,on_route,248.88,111.59,35,2.99
+2024-02-25,ev_van,east,loading,91.79,3.95,84,45.57
+2025-03-06,cargo_bike,south,on_route,445.97,150.14,110,56.19
+2024-06-15,ev_van,central,idle,392.26,139.82,95,81.98
+2024-10-20,refrigerated,south,maintenance,184.34,36.96,102,39.91
+2025-03-06,refrigerated,east,off_duty,226.81,171.33,68,13.71
+2024-09-11,cargo_bike,north,maintenance,368.74,55.29,111,50.17
+2024-02-29,ev_van,east,maintenance,113.43,119.71,20,22.71
+2024-04-27,cargo_bike,central,loading,415.53,57.09,96,76.47
+2024-07-03,sedan,central,maintenance,75.92,34.97,93,106.1
+2025-01-10,ev_van,south,maintenance,118.36,179.67,28,76.38
+2024-01-23,van,central,idle,103.92,132.42,73,76.54
+2025-04-02,cargo_bike,central,maintenance,153.08,18.81,75,67.47
+2025-06-10,refrigerated,west,loading,156.63,17.47,26,102.51
+2025-06-14,refrigerated,north,maintenance,437.6,20.4,60,54.13
+2024-08-28,van,south,maintenance,420.25,78.41,14,27.22
+2025-01-29,refrigerated,west,off_duty,351.27,24.31,15,33.67
+2025-02-25,sedan,north,on_route,443.25,36.16,28,55.51
+2024-05-18,ev_van,west,maintenance,274.12,10.16,14,53.22
+2024-12-01,box_truck,west,loading,311.13,33.14,73,96.07
+2025-05-09,van,north,on_route,188.1,145.47,101,44.85
+2024-04-03,box_truck,east,maintenance,108.66,83.26,45,74.45
+2025-04-18,cargo_bike,east,on_route,21.67,130.82,85,88.91
+2025-05-28,sedan,north,loading,130.87,9.38,93,103.25
+2024-08-28,box_truck,west,maintenance,432.27,30.87,5,90.43
+2025-03-09,sedan,east,maintenance,431.7,72.08,117,83.55
+2025-03-20,ev_van,central,off_duty,168.52,139.77,29,34.78
+2025-06-05,van,east,on_route,66.05,167.16,88,67.26
+2025-01-29,cargo_bike,central,off_duty,310.0,94.57,62,60.6
+2025-05-31,cargo_bike,central,idle,270.72,1.83,36,91.45
+2024-11-26,refrigerated,central,off_duty,333.28,82.01,1,109.22
+2024-09-10,refrigerated,west,on_route,91.68,98.3,110,27.86
+2025-02-01,cargo_bike,east,off_duty,266.81,116.72,70,73.21
+2024-07-10,sedan,west,on_route,210.19,161.28,66,16.53
+2025-05-04,box_truck,south,off_duty,266.44,140.31,55,38.88
+2025-05-07,van,south,maintenance,130.37,151.29,46,51.93
+2025-03-01,sedan,north,maintenance,373.61,31.55,43,64.1
+2024-02-08,box_truck,east,on_route,82.91,163.06,118,25.83
+2024-10-15,sedan,west,maintenance,417.64,115.63,55,56.12
+2024-05-22,box_truck,north,on_route,382.43,1.49,35,13.67
+2024-03-18,box_truck,north,idle,389.23,144.24,52,61.0
+2025-05-26,sedan,west,off_duty,260.56,22.25,18,65.46
+2024-07-28,refrigerated,east,off_duty,367.38,3.04,55,64.52
+2024-10-06,ev_van,south,off_duty,359.34,73.23,82,32.62
+2025-02-06,box_truck,north,idle,3.78,111.4,2,62.25
+2025-02-19,cargo_bike,south,loading,219.72,139.33,65,53.59
+2024-06-15,box_truck,west,on_route,424.38,15.17,83,32.0
+2024-10-09,refrigerated,central,loading,18.81,106.46,95,70.51
+2025-02-12,van,west,idle,344.62,99.37,61,74.8
+2024-09-11,box_truck,south,idle,294.95,105.99,61,80.92
+2024-04-06,box_truck,east,idle,264.92,94.52,23,10.24
+2025-02-24,van,north,idle,131.6,55.71,21,54.2
+2024-04-08,ev_van,east,off_duty,78.42,179.38,97,97.31
+2024-11-14,ev_van,east,on_route,295.05,53.19,25,29.57
+2024-02-23,van,south,maintenance,15.67,171.13,38,106.59
+2024-11-24,van,north,on_route,166.96,145.93,71,69.42
+2024-12-26,cargo_bike,south,loading,238.4,119.66,28,7.44
+2024-04-16,refrigerated,south,idle,306.22,81.57,94,7.17
+2024-12-14,sedan,central,off_duty,30.72,172.85,32,51.92
+2024-06-01,refrigerated,west,loading,322.67,125.46,38,12.51
+2025-01-25,van,east,off_duty,299.06,39.22,51,91.11
+2025-03-07,cargo_bike,central,maintenance,396.06,30.73,120,67.87
+2024-12-19,refrigerated,west,off_duty,324.49,63.92,99,93.5
+2024-12-10,sedan,east,maintenance,4.79,50.6,39,105.74
+2025-06-12,refrigerated,east,loading,198.79,15.38,13,66.49
+2025-06-21,refrigerated,east,off_duty,6.77,85.51,26,5.29
+2024-06-25,cargo_bike,east,maintenance,247.21,86.84,69,40.69
+2025-01-01,refrigerated,west,off_duty,430.94,82.02,74,85.52
+2024-08-22,refrigerated,south,maintenance,63.9,51.01,68,56.49
+2024-12-16,sedan,west,maintenance,421.12,123.2,53,39.69
+2024-06-03,refrigerated,west,loading,397.56,146.43,105,34.93
+2025-02-14,ev_van,north,maintenance,423.19,171.44,90,40.26
+2024-06-04,box_truck,central,loading,11.57,167.54,42,8.77
+2024-05-20,sedan,west,on_route,69.41,42.73,79,23.74
+2024-10-07,refrigerated,west,maintenance,82.17,132.8,8,88.17
+2025-06-21,van,east,maintenance,4.04,59.3,115,106.68
+2024-07-24,sedan,east,on_route,193.76,58.09,120,52.78
+2025-06-13,ev_van,south,off_duty,81.94,161.81,7,46.03
+2025-04-13,box_truck,central,maintenance,266.85,114.65,12,60.85
+2025-01-01,sedan,central,loading,435.22,93.47,4,2.41
+2024-11-16,box_truck,east,on_route,346.14,173.21,66,32.18
+2025-02-22,ev_van,central,idle,162.9,152.12,51,98.66
+2024-03-13,van,south,off_duty,86.91,18.87,29,39.45
+2025-01-13,ev_van,west,off_duty,252.28,121.34,48,105.64
+2024-10-20,box_truck,south,on_route,132.51,160.26,52,8.47
+2024-08-05,van,east,maintenance,3.0,55.54,7,14.99
+2024-12-30,ev_van,north,maintenance,27.93,158.31,32,95.15
+2025-01-16,refrigerated,north,maintenance,10.97,6.96,53,30.86
+2025-01-16,box_truck,north,maintenance,63.21,16.07,36,51.85
+2024-04-06,cargo_bike,west,off_duty,328.5,66.93,82,69.72
+2024-11-04,sedan,south,off_duty,186.85,69.59,2,4.7
+2024-07-06,ev_van,south,on_route,60.23,43.8,43,72.55
+2024-05-22,cargo_bike,north,loading,106.14,28.72,84,78.66
+2025-02-13,van,west,idle,304.2,68.57,111,83.33
+2024-06-07,van,east,loading,57.56,96.5,74,97.17
+2025-05-15,van,east,on_route,289.24,172.65,12,40.36
+2024-08-19,cargo_bike,central,maintenance,14.19,84.96,117,101.6
+2025-01-09,van,east,maintenance,408.85,111.02,105,12.7
+2024-06-13,box_truck,north,maintenance,368.69,13.06,84,103.31
+2024-11-21,sedan,north,maintenance,430.68,156.2,63,63.98
+2025-01-31,box_truck,east,idle,180.09,44.42,35,87.25
+2025-06-20,ev_van,west,off_duty,9.84,162.8,73,21.23
+2024-11-29,ev_van,central,idle,412.14,39.26,116,13.49
