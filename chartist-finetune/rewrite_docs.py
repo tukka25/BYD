@@ -228,7 +228,10 @@ QUESTION_SCHEMA = {
     "required": ["question"],
     "additionalProperties": False,
 }
-LEAK = re.compile(r"plotly|python|\bcode\b|\bexample|dataframe|\bdf\b", re.IGNORECASE)
+LEAK = re.compile(
+    r"plotly|python|\bcode\b|\bexample|dataframe|\bdf\b|focus on|details:|return only",
+    re.IGNORECASE,
+)
 
 
 def question_user_turn(item: dict) -> str:
@@ -275,12 +278,108 @@ def load_rows() -> list[dict]:
     return rows
 
 
+LIST_ARGS = {"x", "y", "z", "values", "labels", "lat", "lon", "open", "high", "low", "close"}
+MAX_PER_PAGE = 6
+
+
+def has_literal_data(chart: str) -> bool:
+    """True if any call still passes a literal list/tuple for a data argument."""
+    for node in ast.walk(ast.parse(chart)):
+        if isinstance(node, ast.Call):
+            for k in node.keywords:
+                if k.arg in LIST_ARGS and _literal_list(k.value) is not None:
+                    return True
+    return False
+
+
+def count_figure_constructors(chart: str) -> int:
+    n = 0
+    for node in ast.walk(ast.parse(chart)):
+        if (isinstance(node, ast.Assign) and any(
+                isinstance(t, ast.Name) and t.id == "fig" for t in node.targets)
+                and isinstance(node.value, ast.Call)):
+            f = node.value.func
+            if isinstance(f, ast.Attribute) and isinstance(f.value, ast.Name) and (
+                    f.value.id == "px" or (f.value.id == "go" and f.attr == "Figure")):
+                n += 1
+            elif isinstance(f, ast.Name) and f.id == "make_subplots":
+                n += 1
+            elif isinstance(f, ast.Attribute) and f.attr == "make_subplots":
+                n += 1
+    return n
+
+
+def _norm_code(chart: str) -> str:
+    return re.sub(r"\s+", "", ast.unparse(ast.parse(chart)))  # unparse drops comments
+
+
+def refilter(rows: list[dict]) -> tuple[list[dict], Counter]:
+    """Post-filter: partial lifts, multi-figure rows, duplicates, per-page cap.
+
+    Dedupe and cap walk rows rarest-figure_type first so exotic types survive.
+    """
+    reasons: Counter = Counter()
+    all_types = {r["figure_type"] for r in rows}
+    live = []
+    for r in rows:
+        chart = r["messages"][2]["content"]
+        lifted = "df['x']" in chart and list(pd.read_csv(r["fixture_csv"], nrows=1).columns) == ["x", "y"]
+        if lifted and has_literal_data(chart):
+            reasons["partial_lift"] += 1
+        elif count_figure_constructors(chart) > 1:
+            reasons["multiple_figures"] += 1
+        else:
+            live.append(r)
+    before_types = {r["figure_type"] for r in live}
+    print("types lost to partial_lift/multiple_figures (every row of the type failed):",
+          sorted(all_types - before_types))
+    freq = Counter(r["figure_type"] for r in live)
+    seen_q, seen_c, per_page, keep = set(), set(), Counter(), set()
+    for r in sorted(live, key=lambda r: (freq[r["figure_type"]], r["question_id"])):
+        q = " ".join(r["question"].lower().split())
+        c = _norm_code(r["messages"][2]["content"])
+        if q in seen_q:
+            reasons["duplicate_question"] += 1
+        elif c in seen_c:
+            reasons["duplicate_code"] += 1
+        elif per_page[r["schema_id"]] >= MAX_PER_PAGE:
+            reasons["page_cap"] += 1
+        else:
+            seen_q.add(q); seen_c.add(c); per_page[r["schema_id"]] += 1
+            keep.add(r["question_id"])
+    out = [r for r in rows if r["question_id"] in keep]
+    lost = before_types - {r["figure_type"] for r in out}
+    if lost:
+        raise SystemExit(f"dedupe/cap LOST figure types: {sorted(lost)}")
+    return out, reasons
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
+    parser.add_argument("--refilter", action="store_true",
+                        help="apply the post-filter to data/docs_rows.jsonl (no API calls)")
     parser.add_argument("--limit", type=int, default=None)
     parser.add_argument("--no-questions", action="store_true",
                         help="smoke mode: skip Haiku, write to runs/docs_rows_noq.jsonl")
     args = parser.parse_args()
+
+    if args.refilter:
+        src = Path("runs/docs_rows_prefix.jsonl")
+        rows = [json.loads(l) for l in src.read_text(encoding="utf-8").splitlines() if l]
+        out, why = refilter(rows)
+        Path("data/docs_rows.jsonl").write_text(
+            "".join(json.dumps(r, ensure_ascii=False, default=str) + "\n" for r in out),
+            encoding="utf-8")
+        live = {Path(r["fixture_csv"]).name for r in out}
+        for f in FIXTURE_DIR.glob("*.csv"):
+            if f.name not in live:
+                f.unlink()
+        pages = Counter(r["schema_id"] for r in out)
+        print(json.dumps({"before": len(rows), "kept": len(out), "drops": dict(why),
+                          "schemas": len(pages), "max_per_page": max(pages.values()),
+                          "types_before": len({r["figure_type"] for r in rows}),
+                          "types_after": len({r["figure_type"] for r in out})}, indent=2))
+        return
 
     rows = load_rows()
     if args.limit:
