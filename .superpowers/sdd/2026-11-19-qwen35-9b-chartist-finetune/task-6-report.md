@@ -120,3 +120,8 @@ data/targets.jsonl is built only from Stage A + B (pilot file moved to runs/pilo
 - `run_candidate` now always returns a CandidateResult: non-object stdout JSON -> `bad_output` (error names the type); post-parse block wrapped; empty traces -> `no_figure`; unreadable CSV -> `unreadable_input`. Static violations keep `failure_kind=None`.
 - Tests added: payloads 5 / [1,2] / null / "text", empty figure, unreadable CSV, and `run_candidates` on a mixed list (full-length result, other verdicts intact). They fail on the old executor and pass now; full suite green.
 - 30 random existing targets re-validated: verdicts and figure types unchanged. data/targets.jsonl untouched.
+
+## Fix round 2
+- executor.py: `run_candidate` is now a thin total wrapper (try/except Exception -> ok=False, failure_kind=runtime_error, error=type+message) around the previous body, renamed `_run_candidate` (signature line moved; body otherwise unchanged). Parse except widened to (ValueError, IndexError, RecursionError) -> bad_output (covers huge ints, deep nesting). Figure check: `data` must be a list; a non-empty list must start with a dict, else bad_output; untyped dict trace still defaults to scatter; empty list -> no_figure.
+- Tests added: non-UTF-8 stdout, 10k-digit integer, deep nesting, lone surrogate, patched OSError, five garbage figure shapes, untyped-dict default, run_candidates with a raising job (full-length list). Suite: 47 passed.
+- 30 existing targets re-validated: verdicts and figure types unchanged. targets.jsonl untouched.

@@ -69,6 +69,16 @@ _HALLUCINATION = re.compile(
 
 
 def run_candidate(code: str, df_csv: str, timeout_seconds: int = 20) -> CandidateResult:
+    """Total function: returns a verdict for any input, never raises."""
+    try:
+        return _run_candidate(code, df_csv, timeout_seconds)
+    except Exception as exc:  # noqa: BLE001 - one bad row must not sink a batch
+        return CandidateResult(
+            ok=False, error=f"{type(exc).__name__}: {exc}"[-400:], failure_kind="runtime_error"
+        )
+
+
+def _run_candidate(code: str, df_csv: str, timeout_seconds: int) -> CandidateResult:
     violations = [v.value for v in validate_chart_code(code)]
     if violations:
         return CandidateResult(ok=False, violations=violations)
@@ -112,7 +122,7 @@ def run_candidate(code: str, df_csv: str, timeout_seconds: int = 20) -> Candidat
     try:
         lines = [ln for ln in completed.stdout.splitlines() if ln.strip()]
         figure = json.loads(lines[-1])
-    except (json.JSONDecodeError, IndexError):
+    except (ValueError, IndexError, RecursionError):
         return CandidateResult(
             ok=False, error="stdout was not valid JSON", unknown_columns=unknown,
             failure_kind="bad_output",
@@ -124,16 +134,15 @@ def run_candidate(code: str, df_csv: str, timeout_seconds: int = 20) -> Candidat
             unknown_columns=unknown, failure_kind="bad_output",
         )
 
-    try:
-        traces = figure.get("data") or []
-        figure_type = traces[0].get("type") if traces and isinstance(traces[0], dict) else None
-        if figure_type is None and traces:
-            figure_type = "scatter"  # px.line omits an explicit type
-    except Exception as exc:  # noqa: BLE001 - contract: always return a result, never raise
+    traces = figure.get("data")
+    if not isinstance(traces, list) or (traces and not isinstance(traces[0], dict)):
         return CandidateResult(
-            ok=False, error=f"unexpected figure shape: {exc}", unknown_columns=unknown,
-            failure_kind="bad_output",
+            ok=False, error="figure 'data' is not a list of trace objects",
+            unknown_columns=unknown, failure_kind="bad_output",
         )
+    figure_type = None
+    if traces:
+        figure_type = traces[0].get("type") or "scatter"  # px.line omits an explicit type
     if figure_type is None:
         return CandidateResult(
             ok=False, error="figure has no traces (rendered nothing)", unknown_columns=unknown,

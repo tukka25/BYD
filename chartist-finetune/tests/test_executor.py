@@ -169,3 +169,58 @@ def test_run_candidates_survives_a_crashing_job(csv_path):
     results = run_candidates(jobs)
     assert [r.ok for r in results] == [True, False, True, False]
     assert [r.failure_kind for r in results] == [None, "bad_output", None, "bad_output"]
+
+
+def test_non_utf8_stdout_returns_verdict(csv_path):
+    code = _printing("{}").replace("print(fig.to_json())", "import sys; sys.stdout.buffer.write(b'\\xff\\xfe\\n')")
+    code += "\nprint(fig.to_json())\n"
+    result = run_candidate(code, csv_path)
+    assert result.ok is False
+
+
+def test_huge_integer_stdout_returns_verdict(csv_path):
+    result = run_candidate(_printing("9" * 10000), csv_path)
+    assert result.ok is False and result.failure_kind == "bad_output"
+
+
+def test_deeply_nested_json_returns_verdict(csv_path):
+    result = run_candidate(_printing("[" * 100000 + "]" * 100000), csv_path)
+    assert result.ok is False
+
+
+def test_surrogate_in_code_returns_verdict(csv_path):
+    result = run_candidate(COMPLIANT + "# \ud800\n", csv_path)
+    assert result.ok is False and result.failure_kind == "runtime_error"
+
+
+def test_subprocess_oserror_returns_verdict(csv_path, monkeypatch):
+    import executor
+
+    def boom(*a, **k):
+        raise OSError("fork failed")
+
+    monkeypatch.setattr(executor.subprocess, "run", boom)
+    result = run_candidate(COMPLIANT, csv_path)
+    assert result.ok is False and result.failure_kind == "runtime_error" and "OSError" in result.error
+
+
+@pytest.mark.parametrize("payload", ['{"data": "abc"}', '{"data": [[1]]}', '{"data": [null]}', '{"data": 5}', "{}"])
+def test_garbage_figure_is_not_a_render(csv_path, payload):
+    result = run_candidate(_printing(payload), csv_path)
+    assert result.ok is False and result.failure_kind in {"bad_output", "no_figure"}
+    assert result.figure_type is None
+
+
+def test_untyped_dict_trace_defaults_to_scatter(csv_path):
+    result = run_candidate(_printing('{"data": [{"x": [1]}]}'), csv_path)
+    assert result.ok is True and result.figure_type == "scatter"
+
+
+def test_run_candidates_full_length_with_raising_job(csv_path, tmp_path):
+    from executor import run_candidates
+
+    jobs = [(COMPLIANT, csv_path), (COMPLIANT + "# \ud800\n", csv_path),
+            (_printing("5"), csv_path), (COMPLIANT, csv_path)]
+    results = run_candidates(jobs)
+    assert len(results) == 4
+    assert [r.ok for r in results] == [True, False, False, True]
