@@ -27,6 +27,10 @@ _NOT_COLUMNS = {
     "presentation", "group", "stack", "overlay", "relative", "h", "v", "linear",
     "log", "date", "category", "outliers", "all", "sum", "mean", "count", "avg",
     "total", "value", "variable", "index", "none", "top", "bottom", "left", "right",
+    "red", "blue", "green", "black", "white", "grey", "gray", "orange", "purple",
+    "yellow", "cyan", "magenta", "brown", "pink", "teal", "navy", "olive", "maroon",
+    "lime", "aqua", "silver", "gold", "crimson", "indigo", "violet", "turquoise",
+    "salmon", "khaki", "beige", "ivory",
 }
 
 
@@ -49,7 +53,8 @@ def _unknown_columns(code: str, columns: list[str]) -> list[str]:
             continue
         if value.lower() in _NOT_COLUMNS:
             continue
-        out.append(value)
+        if re.fullmatch(r"[A-Za-z][A-Za-z0-9 _]{1,40}", value):  # skips '#ff0000', 'rgb(..)'
+            out.append(value)
     return out
 
 

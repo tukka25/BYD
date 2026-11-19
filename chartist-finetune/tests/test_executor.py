@@ -95,3 +95,24 @@ def test_xlsx_input(tmp_path):
     pd.DataFrame({"Category": ["A", "B"], "Value": [1, 2]}).to_excel(path, index=False)
     result = run_candidate(COMPLIANT, str(path))
     assert result.ok is True
+
+
+def test_css_colour_and_hex_are_not_columns(csv_path):
+    code = (
+        "import plotly.graph_objects as go\n"
+        "fig = go.Figure(go.Scatter(x=df['Category'], y=df['Value'], line=dict(color='blue'),"
+        " marker=dict(color='#ff0000')))\n"
+        "print(fig.to_json())\n"
+    )
+    result = run_candidate(code, csv_path)
+    assert result.ok is True
+    assert result.unknown_columns == []
+
+
+def test_wrong_column_still_caught_next_to_colour(csv_path):
+    code = (
+        "import plotly.express as px\n"
+        "fig = px.bar(df, x='Category', y='Revenue', color='red')\n"
+        "print(fig.to_json())\n"
+    )
+    assert run_candidate(code, csv_path).unknown_columns == ["Revenue"]
