@@ -119,13 +119,23 @@ Guides disagree on `convert` and `fuse` flags across mlx-lm versions. **The help
 cd chartist-finetune && for m in lora convert fuse generate; do .venv/bin/python -m mlx_lm.$m --help; done 2>&1 | tee runs/mlx_help.txt
 ```
 
-### 3. Convert and quantise the base model
+### 3. Get the base model — download the prebuilt 4-bit, don't convert
+
+```bash
+cd chartist-finetune && .venv/bin/hf download mlx-community/Qwen3.5-9B-MLX-4bit --local-dir models/qwen3.5-9b-4bit
+```
+
+**5.98 GB**, already 4-bit MLX, ships its own `chat_template.jinja`, and contains no vision weights. Measured against the alternative below, this is 3.2× less to download and skips the conversion step entirely.
+
+The convert-it-yourself path works too but costs `Qwen/Qwen3.5-9B` at **19.33 GB** of bf16 download, plus conversion time and transient disk, to arrive at the same ~6 GB result:
 
 ```bash
 cd chartist-finetune && .venv/bin/python -m mlx_lm.convert --hf-path Qwen/Qwen3.5-9B --mlx-path models/qwen3.5-9b-4bit -q --q-bits 4
 ```
 
-Qwen3.5-9B is a vision-language model and `mlx_lm.lora` is text-only. MLX text loaders skip vision weights, but if this fails on the vision tower, search Hugging Face for a text-only MLX conversion of Qwen3.5-9B and pass that repo id instead. Expect ~20 GB transient disk for the bf16 download and ~5–6 GB output.
+Use it only if you want control over the quantisation parameters, or if the community repo disappears. Neither repo carries vision weights, so the vision-tower concern noted in earlier drafts does not arise.
+
+**An `HF_TOKEN` will not make either download faster.** A token governs access, not bandwidth — it is needed for gated repos (Llama, some Gemma) and raises API rate limits, but both repos here are public. What does speed it up is `hf_xet`, which `huggingface-hub` 2.4.0 already installed as a dependency and uses automatically for Xet-backed repos. The real lever is picking the 6 GB artefact over the 19 GB one.
 
 ### 4. GATE — measure real token lengths before training
 
