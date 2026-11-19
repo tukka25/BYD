@@ -2398,7 +2398,7 @@ Document the three variables in `backend/.env.example`.
 - [ ] **Step 6: Fuse, re-quantize, serve**
 
 ```bash
-cd /Users/atukka/Desktop/BYD/chartist-finetune && .venv/bin/python -m mlx_lm.fuse --model models/qwen3.5-9b-4bit --adapter-path runs/lora-v1/adapters --save-path models/qwen3.5-9b-chartist --de-quantize
+cd /Users/atukka/Desktop/BYD/chartist-finetune && .venv/bin/python -m mlx_lm.fuse --model models/qwen3.5-9b-4bit --adapter-path runs/lora-v1/adapters --save-path models/qwen3.5-9b-chartist --dequantize
 ```
 
 ```bash
@@ -2409,7 +2409,7 @@ cd /Users/atukka/Desktop/BYD/chartist-finetune && .venv/bin/python -m mlx_lm.con
 cd /Users/atukka/Desktop/BYD/chartist-finetune && .venv/bin/python -m mlx_lm.server --model models/qwen3.5-9b-chartist-4bit --port 8080
 ```
 
-`--de-quantize` matters: training was QLoRA against quantized weights, so fuse to full precision before re-quantizing. GGUF/Ollama is the alternative but often fails for non-Llama architectures — only attempt it if everything must live in Ollama.
+`--dequantize` matters: training was QLoRA against quantized weights, so fuse to full precision before re-quantizing. GGUF/Ollama is the alternative but often fails for non-Llama architectures — only attempt it if everything must live in Ollama.
 
 - [ ] **Step 7: End-to-end check**
 
