@@ -116,3 +116,24 @@ def test_wrong_column_still_caught_next_to_colour(csv_path):
         "print(fig.to_json())\n"
     )
     assert run_candidate(code, csv_path).unknown_columns == ["Revenue"]
+
+
+def test_derived_column_is_not_rejected(csv_path):
+    code = (
+        "import plotly.express as px\n"
+        "g = df.groupby('Category').size().reset_index(name='n')\n"
+        "fig = px.bar(g, x='Category', y='n')\n"
+        "print(fig.to_json())\n"
+    )
+    result = run_candidate(code, csv_path)
+    assert result.ok is True and result.failure_kind is None
+
+
+def test_hallucinated_column_fails_at_execution(csv_path):
+    code = (
+        "import plotly.express as px\n"
+        "fig = px.bar(df, x='Category', y='Nope')\n"
+        "print(fig.to_json())\n"
+    )
+    result = run_candidate(code, csv_path)
+    assert result.ok is False and result.failure_kind == "hallucinated_column"

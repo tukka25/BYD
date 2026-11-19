@@ -1,0 +1,208 @@
+{
+  "train_questions": 1920,
+  "verified_targets": 1902,
+  "yield": 0.991,
+  "spend_usd": 5.0779,
+  "cost_per_verified_row": 0.00267,
+  "rejection_reasons": {
+    "runtime_error": 44,
+    "creates_dataframe": 6
+  },
+  "by_bucket": {
+    "bar": 285,
+    "line": 285,
+    "grouped_or_stacked_bar": 205,
+    "scatter": 177,
+    "area": 156,
+    "pie_or_donut": 152,
+    "box": 131,
+    "heatmap": 128,
+    "histogram": 126,
+    "time_series": 113,
+    "treemap_funnel_waterfall": 105,
+    "gauge_or_indicator": 39
+  },
+  "yield_by_bucket": {
+    "area": 0.994,
+    "bar": 0.997,
+    "box": 1.0,
+    "gauge_or_indicator": 1.0,
+    "grouped_or_stacked_bar": 1.0,
+    "heatmap": 1.0,
+    "histogram": 1.0,
+    "line": 1.0,
+    "pie_or_donut": 1.0,
+    "scatter": 0.922,
+    "time_series": 1.0,
+    "treemap_funnel_waterfall": 0.991
+  },
+  "hard_case_share": 0.386,
+  "refusals": 0,
+  "stages": [
+    {
+      "stage": "A",
+      "offset": 0,
+      "limit": 200,
+      "questions": 200,
+      "verified": 198,
+      "spend_usd": 0.9286,
+      "asked_by_bucket": {
+        "grouped_or_stacked_bar": 26,
+        "pie_or_donut": 13,
+        "time_series": 7,
+        "area": 13,
+        "box": 19,
+        "scatter": 23,
+        "line": 25,
+        "bar": 31,
+        "treemap_funnel_waterfall": 8,
+        "histogram": 21,
+        "heatmap": 10,
+        "gauge_or_indicator": 4
+      },
+      "rejection_reasons": {
+        "runtime_error": 10
+      },
+      "rounds": {
+        "targets-a1": {
+          "requests": 400,
+          "cost_usd": 0.9249,
+          "usage": {
+            "input": 368862,
+            "output": 111201,
+            "cache_read": 0,
+            "cache_write": 0
+          },
+          "refusals": 0,
+          "unparsed": 0,
+          "errored": 0,
+          "candidates_judged": 400,
+          "candidates_passed": 392,
+          "newly_kept": 198,
+          "reasons": {
+            "runtime_error": 8
+          },
+          "validation_seconds": 23.4
+        },
+        "targets-a2": {
+          "requests": 2,
+          "cost_usd": 0.0038,
+          "usage": {
+            "input": 1795,
+            "output": 392,
+            "cache_read": 0,
+            "cache_write": 0
+          },
+          "refusals": 0,
+          "unparsed": 0,
+          "errored": 0,
+          "candidates_judged": 2,
+          "candidates_passed": 0,
+          "newly_kept": 0,
+          "reasons": {
+            "runtime_error": 2
+          },
+          "validation_seconds": 0.5
+        }
+      },
+      "batches": [
+        {
+          "label": "targets-a1",
+          "batch_id": "msgbatch_018GQXJLiYN7bWixgKujmKjD",
+          "cost_usd": 0.9249
+        },
+        {
+          "label": "targets-a2",
+          "batch_id": "msgbatch_01G2S7XYRRb4eyimEAFUjoF8",
+          "cost_usd": 0.0038
+        }
+      ],
+      "refusals": 0,
+      "validation_seconds": 23.9
+    },
+    {
+      "stage": "B",
+      "offset": 200,
+      "limit": null,
+      "questions": 1720,
+      "verified": 1704,
+      "spend_usd": 4.1493,
+      "asked_by_bucket": {
+        "time_series": 106,
+        "line": 260,
+        "area": 144,
+        "bar": 255,
+        "scatter": 169,
+        "pie_or_donut": 139,
+        "grouped_or_stacked_bar": 179,
+        "box": 112,
+        "heatmap": 118,
+        "histogram": 105,
+        "treemap_funnel_waterfall": 98,
+        "gauge_or_indicator": 35
+      },
+      "rejection_reasons": {
+        "runtime_error": 34,
+        "creates_dataframe": 6
+      },
+      "rounds": {
+        "targets-a1": {
+          "requests": 1720,
+          "cost_usd": 4.086,
+          "usage": {
+            "input": 1580124,
+            "output": 501174,
+            "cache_read": 0,
+            "cache_write": 0
+          },
+          "refusals": 0,
+          "unparsed": 0,
+          "errored": 0,
+          "candidates_judged": 1720,
+          "candidates_passed": 1696,
+          "newly_kept": 1696,
+          "reasons": {
+            "runtime_error": 21,
+            "creates_dataframe": 3
+          },
+          "validation_seconds": 100.5
+        },
+        "targets-a2": {
+          "requests": 24,
+          "cost_usd": 0.0633,
+          "usage": {
+            "input": 22852,
+            "output": 8081,
+            "cache_read": 0,
+            "cache_write": 0
+          },
+          "refusals": 0,
+          "unparsed": 0,
+          "errored": 0,
+          "candidates_judged": 24,
+          "candidates_passed": 8,
+          "newly_kept": 8,
+          "reasons": {
+            "runtime_error": 13,
+            "creates_dataframe": 3
+          },
+          "validation_seconds": 1.6
+        }
+      },
+      "batches": [
+        {
+          "label": "targets-a1",
+          "batch_id": "msgbatch_01AtRMbJV5b9jpRJiPt4EBra",
+          "cost_usd": 4.086
+        },
+        {
+          "label": "targets-a2",
+          "batch_id": "msgbatch_012wF8dAetQLTtRLogq18aUh",
+          "cost_usd": 0.0633
+        }
+      ],
+      "refusals": 0,
+      "validation_seconds": 102.1
+    }
+  ]
+}

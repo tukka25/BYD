@@ -4,6 +4,7 @@ from __future__ import annotations
 import json
 import re
 import subprocess
+from concurrent.futures import ThreadPoolExecutor
 import sys
 from dataclasses import dataclass, field
 from pathlib import Path
@@ -40,7 +41,10 @@ class CandidateResult:
     violations: list[str] = field(default_factory=list)
     figure_type: str | None = None
     error: str | None = None
+    # Informational only: over-reports columns derived in code (groupby/agg/etc).
+    # Never use it as a gate; execution is the oracle.
     unknown_columns: list[str] = field(default_factory=list)
+    failure_kind: str | None = None  # hallucinated_column | runtime_error | timeout | bad_output
 
 
 def _unknown_columns(code: str, columns: list[str]) -> list[str]:
@@ -56,6 +60,12 @@ def _unknown_columns(code: str, columns: list[str]) -> list[str]:
         if re.fullmatch(r"[A-Za-z][A-Za-z0-9 _]{1,40}", value):  # skips '#ff0000', 'rgb(..)'
             out.append(value)
     return out
+
+
+_HALLUCINATION = re.compile(
+    r"KeyError|not in index|None of \[.*\] are in the \[columns\]"
+    r"|is not the name of a column|Could not interpret value"
+)
 
 
 def run_candidate(code: str, df_csv: str, timeout_seconds: int = 20) -> CandidateResult:
@@ -84,14 +94,17 @@ def run_candidate(code: str, df_csv: str, timeout_seconds: int = 20) -> Candidat
         )
     except subprocess.TimeoutExpired:
         return CandidateResult(
-            ok=False, error=f"timed out after {timeout_seconds}s", unknown_columns=unknown
+            ok=False, error=f"timed out after {timeout_seconds}s", unknown_columns=unknown,
+            failure_kind="timeout",
         )
 
     if completed.returncode != 0:
+        stderr = completed.stderr or ""
         return CandidateResult(
             ok=False,
-            error=(completed.stderr or "non-zero exit").strip()[-400:],
+            error=(stderr or "non-zero exit").strip()[-400:],
             unknown_columns=unknown,
+            failure_kind="hallucinated_column" if _HALLUCINATION.search(stderr) else "runtime_error",
         )
 
     try:
@@ -99,7 +112,8 @@ def run_candidate(code: str, df_csv: str, timeout_seconds: int = 20) -> Candidat
         figure = json.loads(lines[-1])
     except (json.JSONDecodeError, IndexError):
         return CandidateResult(
-            ok=False, error="stdout was not valid JSON", unknown_columns=unknown
+            ok=False, error="stdout was not valid JSON", unknown_columns=unknown,
+            failure_kind="bad_output",
         )
 
     traces = figure.get("data") or []
@@ -111,5 +125,22 @@ def run_candidate(code: str, df_csv: str, timeout_seconds: int = 20) -> Candidat
             ok=False, error="figure has no traces (rendered nothing)", unknown_columns=unknown
         )
     return CandidateResult(
-        ok=not unknown, figure_type=figure_type, unknown_columns=unknown
+        ok=True, figure_type=figure_type, unknown_columns=unknown
     )
+
+
+def run_candidates(
+    jobs: list[tuple[str, str]],
+    max_workers: int = 8,
+    timeout_seconds: int = 20,
+) -> list[CandidateResult]:
+    """Validate many candidates concurrently, preserving input order.
+
+    run_candidate blocks in subprocess.run, which releases the GIL, so threads
+    give near-linear speedup without multiprocessing. Each verdict depends only
+    on its own (code, csv) pair, so concurrency cannot change any result.
+    """
+    if not jobs:
+        return []
+    with ThreadPoolExecutor(max_workers=max_workers) as pool:
+        return list(pool.map(lambda job: run_candidate(job[0], job[1], timeout_seconds), jobs))
