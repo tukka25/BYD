@@ -278,16 +278,35 @@ def load_rows() -> list[dict]:
     return rows
 
 
-LIST_ARGS = {"x", "y", "z", "values", "labels", "lat", "lon", "open", "high", "low", "close"}
+LIST_ARGS = {"x", "y", "z", "values", "labels", "lat", "lon", "open", "high", "low", "close",
+             "a", "b", "c", "r", "theta", "parents", "ids"}
+
+
+def _literal_series(node: ast.AST) -> bool:
+    """A literal data series: a flat list of constants, or a list of such lists (2D grid)."""
+    if _literal_list(node) is not None:
+        return True
+    if isinstance(node, (ast.List, ast.Tuple)) and len(node.elts) >= 1:
+        return all(_literal_list(e) is not None for e in node.elts)
+    return False
 MAX_PER_PAGE = 6
 
 
-def has_literal_data(chart: str) -> bool:
+def has_literal_data(chart: str, columns: set | None = None) -> bool:
     """True if any call still passes a literal list/tuple for a data argument."""
-    for node in ast.walk(ast.parse(chart)):
-        if isinstance(node, ast.Call):
+    tree = ast.parse(chart)
+    skip: set[int] = set()  # table header/cell text is not data
+    for node in ast.walk(tree):
+        if isinstance(node, ast.Call) and getattr(node.func, "attr", getattr(node.func, "id", "")) == "Table":
+            skip.update(id(n) for n in ast.walk(node))
+    for node in ast.walk(tree):
+        if isinstance(node, ast.Call) and id(node) not in skip:
             for k in node.keywords:
-                if k.arg in LIST_ARGS and _literal_list(k.value) is not None:
+                if k.arg in LIST_ARGS and _literal_series(k.value):
+                    flat = _literal_list(k.value)
+                    # y=['gold', 'silver'] naming frame columns is a reference, not data
+                    if columns and flat and all(isinstance(v, str) and v in columns for v in flat):
+                        continue
                     return True
     return False
 
@@ -323,8 +342,9 @@ def refilter(rows: list[dict]) -> tuple[list[dict], Counter]:
     live = []
     for r in rows:
         chart = r["messages"][2]["content"]
-        lifted = "df['x']" in chart and list(pd.read_csv(r["fixture_csv"], nrows=1).columns) == ["x", "y"]
-        if lifted and has_literal_data(chart):
+        m = re.search(r"^columns: (\[.*\])$", r["messages"][1]["content"], re.M)
+        cols = set(ast.literal_eval(m.group(1))) if m else set()  # from the prompt: no fixture read
+        if has_literal_data(chart, cols):
             reasons["partial_lift"] += 1
         elif count_figure_constructors(chart) > 1:
             reasons["multiple_figures"] += 1
