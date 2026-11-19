@@ -25,7 +25,9 @@ Hard-case kinds, when requested:
 - date_parsing_and_resampling: needs the date column rolled up by month, quarter, or week.
 - grouped_or_faceted: needs a second dimension as colour, group, or facet.
 - missing_field: asks about something NOT in this table, so the answer must work with what is there.
-- ambiguous_question: genuinely underspecified, the kind a real user types."""
+- ambiguous_question: genuinely underspecified, the kind a real user types.
+
+Chart shape treemap_funnel_waterfall must be a HIERARCHY (two or more nesting levels), an ordered FUNNEL with stage-to-stage drop-off, or a WATERFALL of positive and negative contributions to a running total. A single-dimension breakdown or share-of-total question is a bar or pie question and must not be used for it."""
 
 SCHEMA = {
     "type": "object",
