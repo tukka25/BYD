@@ -1,5 +1,14 @@
 #!/usr/bin/env python3
-"""Freeze the evaluation set. No gold answers: execution is the oracle."""
+"""Freeze the evaluation set. No gold answers: execution is the oracle.
+
+Sampling is stratified by chart bucket (floor of 15 per bucket plus the remainder
+allocated by chart_types.QUOTA), then round-robin across schemas within a bucket.
+
+This set was re-frozen twice before any eval ran: once to add bucket stratification
+(the first version under-sampled area and gauge), and a second time to correct a
+schema-spread bug in the stratified selection. It must NOT be regenerated again
+once eval numbers exist.
+"""
 from __future__ import annotations
 
 import argparse
@@ -8,7 +17,24 @@ import json
 from collections import Counter
 from pathlib import Path
 
+from chart_types import QUOTA
 from contract import CHARTIST_USER_TEMPLATE
+
+BUCKET_FLOOR = 15
+
+
+def bucket_targets(size: int) -> dict[str, int]:
+    """Floor per bucket, remainder by QUOTA using largest-remainder rounding."""
+    rest = size - BUCKET_FLOOR * len(QUOTA)
+    assert rest >= 0, "size too small for the per-bucket floor"
+    raw = {k: rest * v for k, v in QUOTA.items()}
+    extra = {k: int(v) for k, v in raw.items()}
+    order = sorted(QUOTA, key=lambda k: -(raw[k] - extra[k]))
+    for k in order[: rest - sum(extra.values())]:
+        extra[k] += 1
+    targets = {k: BUCKET_FLOOR + extra[k] for k in QUOTA}
+    assert sum(targets.values()) == size, (sum(targets.values()), size)
+    return targets
 
 
 def main() -> None:
@@ -38,18 +64,35 @@ def main() -> None:
     import random
 
     random.Random(args.seed).shuffle(questions)
-    # Spread across schemas: round-robin so no schema dominates the eval.
-    by_schema: dict[str, list] = {}
+    targets = bucket_targets(args.size)
+    by_bucket: dict[str, dict[str, list]] = {}
     for q in questions:
-        by_schema.setdefault(q["schema_id"], []).append(q)
+        by_bucket.setdefault(q["chart_bucket"], {}).setdefault(q["schema_id"], []).append(q)
     picked = []
-    while len(picked) < args.size and any(by_schema.values()):
-        for key in list(by_schema):
-            if not by_schema[key]:
-                continue
-            picked.append(by_schema[key].pop())
-            if len(picked) >= args.size:
-                break
+    schema_ids = sorted({q["schema_id"] for q in questions})
+    random.Random(args.seed).shuffle(schema_ids)
+    rank = {k: i for i, k in enumerate(schema_ids)}
+    used = {k: 0 for k in schema_ids}
+    for bucket, want in targets.items():
+        pools = by_bucket.get(bucket, {})
+        supply = sum(len(v) for v in pools.values())
+        assert want <= supply, f"bucket {bucket}: target {want} exceeds supply {supply}"
+        chosen = 0
+        while chosen < want:
+            # Round-robin within the bucket, least-used schemas (globally) first so
+            # the whole set also spreads across as many schemas as possible.
+            ready = [k for k in pools if pools[k]]
+            ready.sort(key=lambda k: (used[k], rank[k]))
+            for key in ready:
+                if chosen < want:
+                    picked.append(pools[key].pop())
+                    used[key] += 1
+                    chosen += 1
+    random.Random(args.seed).shuffle(picked)
+
+    assert len(picked) == args.size
+    assert all(sum(1 for p in picked if p["chart_bucket"] == b) >= BUCKET_FLOOR for b in QUOTA)
+    assert len({p["schema_id"] for p in picked}) >= 55, "schema spread too narrow"
 
     rows = []
     for index, q in enumerate(picked):
