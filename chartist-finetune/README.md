@@ -139,16 +139,30 @@ Use it only if you want control over the quantisation parameters, or if the comm
 
 ### 4. GATE — measure real token lengths before training
 
-**Do not skip this.** The sizing below rests on a chars/4 estimate, which understates Python source: code, punctuation, indentation and column names tokenise at roughly 2.7–3.3 chars per token. The longest row is ~1,340 tokens by that estimate but plausibly **1,600–2,000 real tokens** against a 2,048 limit. If a row exceeds `--max-seq-length`, **mlx-lm silently truncates its tail** — cutting the closing `print(fig.to_json())` and training the model to omit the one line the contract requires.
+**Do not skip this.** If a row exceeds `--max-seq-length`, **mlx-lm silently truncates its tail** — cutting the closing `print(fig.to_json())` and training the model to omit the one line the contract requires. Nothing errors; you just get a worse model.
 
-Once the model is downloaded its tokenizer is local. Tokenise every row of `data/mlx/train.jsonl` and `valid.jsonl` and confirm none exceeds the limit including chat-template tokens. The longest row is 5,359 chars, i.e. 1,620–1,985 real tokens, which straddles 2,048, so **use `--max-seq-length 2560`** as the recommended value; raise it further rather than letting any row truncate.
+```bash
+cd chartist-finetune && .venv/bin/python check_token_lengths.py --model models/qwen3.5-9b-4bit --limit 4096
+```
+
+**Measured, and the estimate this plan was sized on was 2.25× low.** Run with a stand-in tokenizer while the model was still downloading:
+
+| | chars/4 estimate | measured |
+|---|---|---|
+| chars per token | 4.0 | **2.75** |
+| longest train row | ~1,340 tokens | **3,011 tokens** |
+| p50 / p99 | — | 753 / 1,268 |
+
+So `2048` would have truncated several rows and `2560` still truncated three. **Use `--max-seq-length 4096`.** The headroom is nearly free: mlx-lm pads each batch to its own longest sequence rather than to the limit, and p99 is 1,268, so only the rare long batch pays for it. If memory becomes a problem, `--grad-checkpoint` is the lever, or drop the three outlier rows.
+
+Re-run the gate with the real Qwen tokenizer once the model is on disk — its template differs from the stand-in and could move these numbers by roughly ±10%. The gate exits non-zero if any row is over, and `run_overnight.sh` runs it before launching.
 
 ### 5. Train
 
 Measured sizing: 1,929 train rows, 965 steps per epoch at batch size 2, so `--iters 1930` is two epochs.
 
 ```bash
-cd chartist-finetune && .venv/bin/python -m mlx_lm.lora --model models/qwen3.5-9b-4bit --train --data data/mlx --adapter-path runs/lora-v1/adapters --batch-size 2 --max-seq-length 2560 --iters 1930 --steps-per-report 25 --steps-per-eval 200 --save-every 200 2>&1 | tee runs/lora-v1/train.log
+cd chartist-finetune && .venv/bin/python -m mlx_lm lora --model models/qwen3.5-9b-4bit --train --data data/mlx --adapter-path runs/lora-v1/adapters --batch-size 2 --max-seq-length 4096 --iters 1930 --steps-per-report 25 --steps-per-eval 200 --save-every 200 2>&1 | tee runs/lora-v1/train.log
 ```
 
 QLoRA is automatic because `--model` points at a quantised model.
