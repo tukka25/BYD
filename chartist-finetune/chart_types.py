@@ -1,6 +1,8 @@
 """The chart mix we choose, rather than the one the Plotly docs happened to have."""
 from __future__ import annotations
 
+import re
+
 QUOTA: dict[str, float] = {
     "bar": 0.15,
     "line": 0.15,
@@ -51,3 +53,15 @@ def allocate(total: int) -> dict[str, int]:
     for key in sorted(QUOTA, key=lambda k: -QUOTA[k])[:shortfall]:
         counts[key] += 1
     return counts
+
+
+# TRACE_TYPES maps line, scatter, area and time_series all to {scatter, scattergl},
+# so the trace type alone cannot tell an area chart from a line chart. The
+# discriminator is in the code: every area target uses px.area, fill= or
+# stackgroup, and no line/scatter/time_series target does.
+_AREA_MARKERS = re.compile(r"\bpx\s*\.\s*area\s*\(|\bfill\s*=|\bstackgroup\s*=")
+
+
+def is_area_figure(code: str) -> bool:
+    """True if the code builds an area chart (px.area, a fill= or a stackgroup=)."""
+    return bool(_AREA_MARKERS.search(code or ""))

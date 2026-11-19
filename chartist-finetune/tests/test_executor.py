@@ -83,9 +83,10 @@ def test_subscript_hallucination_caught(csv_path):
     assert run_candidate(code, csv_path).unknown_columns == ["Nope"]
 
 
-def test_stray_print_tolerated(csv_path):
+def test_stray_print_rejected(csv_path):
+    # production json.loads all of stdout, so an extra line would break it
     result = run_candidate("print('hello')\n" + COMPLIANT, csv_path)
-    assert result.ok is True
+    assert result.ok is False and "extra_print" in result.violations
 
 
 def test_xlsx_input(tmp_path):

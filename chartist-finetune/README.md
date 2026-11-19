@@ -20,12 +20,11 @@ The original dataset (`web-crawler/dataset/`) was 970 rows scraped from plotly.c
 
 | File | Rows | What it is |
 |---|---|---|
-| `data/mlx/train.jsonl` | **1,924** | 1,664 synthetic + 260 docs |
-| `data/mlx/valid.jsonl` | **272** | 238 synthetic + 34 docs |
+| `data/mlx/train.jsonl` | **1,929** | 1,675 synthetic + 254 docs |
+| `data/mlx/valid.jsonl` | **260** | 222 synthetic + 38 docs |
 | `data/testset.jsonl` | **300** | **FROZEN.** 60 schemas, no gold answers — execution is the oracle |
 
-- 207 train schemas / 28 valid schemas / 60 test schemas, all disjoint.
-- Zero prompt-text overlap between train, valid and test.
+- 206 train schemas / 28 valid schemas / 60 test schemas. The frozen test set is genuinely clean: no schema id, schema block or question text is shared with train or valid. Train versus valid is disjoint **by schema id only**: 14 identical schema blocks appear under different `docs-*` ids across train and valid, and 2 questions repeat across them. Valid loss is therefore partly in-distribution, so any overfitting call made from it is optimistic.
 - 34 distinct Plotly trace types, including candlestick, sankey, funnel, waterfall, choropleth, violin, parcoords, splom, sunburst, icicle, ohlc.
 - Hard cases are ~39% of the synthetic rows: multi-column aggregation, date resampling, grouped/faceted, missing-field, ambiguous.
 
@@ -58,7 +57,7 @@ The API key is read from `<repo>/.env` as `CLAUDE_API_KEY` — not a name the An
 
 ### The oracle's environment is the contract
 
-`executor.py` decides what enters the dataset, so **whatever it can execute is what the model learns to emit.** It must stay in sync with the backend's execution environment at `backend/app/utils/code_runner.py`. Today neither has `statsmodels`, which is why 42 `trendline="ols"` targets were correctly rejected — that code would crash in production too. That alignment was luck, not design. If you add a plotting dependency to one, add it to the other, or the filter will start admitting code that crashes in production or rejecting code that works.
+`executor.py` decides what enters the dataset, so **whatever it can execute is what the model learns to emit.** It must stay in sync with the backend's execution environment at `backend/app/utils/executor.py`. Today neither has `statsmodels`, which is why 42 `trendline="ols"` targets were correctly rejected — that code would crash in production too. That alignment was luck, not design. If you add a plotting dependency to one, add it to the other, or the filter will start admitting code that crashes in production or rejecting code that works.
 
 ## Pipeline (stages 1–8, complete)
 
@@ -132,14 +131,14 @@ Qwen3.5-9B is a vision-language model and `mlx_lm.lora` is text-only. MLX text l
 
 **Do not skip this.** The sizing below rests on a chars/4 estimate, which understates Python source: code, punctuation, indentation and column names tokenise at roughly 2.7–3.3 chars per token. The longest row is ~1,340 tokens by that estimate but plausibly **1,600–2,000 real tokens** against a 2,048 limit. If a row exceeds `--max-seq-length`, **mlx-lm silently truncates its tail** — cutting the closing `print(fig.to_json())` and training the model to omit the one line the contract requires.
 
-Once the model is downloaded its tokenizer is local. Tokenise every row of `data/mlx/train.jsonl` and `valid.jsonl` and confirm none exceeds 2,048 including chat-template tokens. If any do, raise `--max-seq-length` rather than letting them truncate.
+Once the model is downloaded its tokenizer is local. Tokenise every row of `data/mlx/train.jsonl` and `valid.jsonl` and confirm none exceeds the limit including chat-template tokens. The longest row is 5,359 chars, i.e. 1,620–1,985 real tokens, which straddles 2,048, so **use `--max-seq-length 2560`** as the recommended value; raise it further rather than letting any row truncate.
 
 ### 5. Train
 
-Measured sizing: 1,924 train rows, 962 steps per epoch at batch size 2, so `--iters 1924` is two epochs.
+Measured sizing: 1,929 train rows, 965 steps per epoch at batch size 2, so `--iters 1930` is two epochs.
 
 ```bash
-cd chartist-finetune && .venv/bin/python -m mlx_lm.lora --model models/qwen3.5-9b-4bit --train --data data/mlx --adapter-path runs/lora-v1/adapters --batch-size 2 --max-seq-length 2048 --iters 1924 --steps-per-report 25 --steps-per-eval 200 --save-every 200 2>&1 | tee runs/lora-v1/train.log
+cd chartist-finetune && .venv/bin/python -m mlx_lm.lora --model models/qwen3.5-9b-4bit --train --data data/mlx --adapter-path runs/lora-v1/adapters --batch-size 2 --max-seq-length 2560 --iters 1930 --steps-per-report 25 --steps-per-eval 200 --save-every 200 2>&1 | tee runs/lora-v1/train.log
 ```
 
 QLoRA is automatic because `--model` points at a quantised model.
@@ -179,3 +178,11 @@ Stage 11 of the plan covers fusing with `--de-quantize`, re-quantising, running 
 | `gen_schemas.py` → `export_mlx.py` | The eight pipeline stages |
 | `data/fixtures/`, `data/fixtures_docs/` | ~474 CSVs, one per schema |
 | `runs/` | Logs, spend ledger, rejected candidates. Gitignored |
+
+## Eval note: use `is_area_figure`
+
+`chart_types.TRACE_TYPES` maps line, scatter, area and time_series all to `{scatter, scattergl}`, so a trace-type check alone scores any scatter-family output as the "right shape" on 107 of the 300 frozen test rows. The eval **must** also call `chart_types.is_area_figure(code)` (px.area, `fill=` or `stackgroup=`): area rows require it to be true, line/scatter/time_series rows require it to be false. This separates the two groups perfectly on the committed targets (tested).
+
+## Contract gates
+
+`validate_chart_code` mirrors the production `SafeExecutor.blocked_patterns` (`__import__`, `eval(`, `exec(`, `open(`, os/subprocess imports) and requires exactly one `print(fig.to_json())` as the final statement with no other `print` call, because production `json.loads` all of stdout. `export_mlx.py` re-runs it over every row and refuses to export on any violation. The oracle subprocess runs in a throwaway temp directory.

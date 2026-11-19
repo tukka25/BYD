@@ -5,7 +5,7 @@ from __future__ import annotations
 import argparse
 import json
 import random
-from contract import CHARTIST_SYSTEM_PROMPT
+from contract import CHARTIST_SYSTEM_PROMPT, validate_chart_code
 from collections import Counter, defaultdict
 from pathlib import Path
 
@@ -14,7 +14,7 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--inputs", nargs="+", default=["data/targets.jsonl", "data/docs_rows.jsonl"])
     parser.add_argument("--out-dir", default="data/mlx")
-    parser.add_argument("--valid-ratio", type=float, default=0.08)
+    parser.add_argument("--valid-ratio", type=float, default=0.12)
     parser.add_argument("--seed", type=int, default=42)
     args = parser.parse_args()
 
@@ -46,6 +46,15 @@ def main() -> None:
         if [m["role"] for m in r["messages"]] != ["system", "user", "assistant"]:
             raise SystemExit(f"bad roles in {r['question_id']}")
 
+    # The merge point is the only place both layers meet: gate every body here.
+    bad = [
+        (r["question_id"], [v.value for v in validate_chart_code(r["messages"][-1]["content"])])
+        for r in all_rows
+        if validate_chart_code(r["messages"][-1]["content"])
+    ]
+    if bad:
+        raise SystemExit(f"CONTRACT VIOLATION in {len(bad)} rows, refusing to export: {bad[:10]}")
+
     keys = sorted(grouped)
     random.Random(args.seed).shuffle(keys)
     n_valid = max(1, int(len(keys) * args.valid_ratio))
@@ -53,7 +62,7 @@ def main() -> None:
 
     out_dir = Path(args.out_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
-    manifest = {"seed": args.seed, "counts": {}, "schema_ids": {}, "sources": {}}
+    manifest = {"seed": args.seed, "valid_ratio": args.valid_ratio, "counts": {}, "schema_ids": {}, "sources": {}}
 
     for split, split_keys in splits.items():
         rows = [row for key in split_keys for row in grouped[key]]

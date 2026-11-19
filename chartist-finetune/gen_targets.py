@@ -2,9 +2,8 @@
 """Generate verified code targets with adaptive best-of-k.
 
 Round 1 sends k candidates per question. Every candidate is executed against the
-schema's real CSV; a candidate survives only if it runs, uses no unknown column,
-and yields a trace type in the requested chart bucket. Questions with no survivor
-get one extra attempt in round 2.
+schema's real CSV; a candidate survives only if it runs and yields a trace type in
+the requested chart bucket. Questions with no survivor get one extra attempt in round 2.
 """
 from __future__ import annotations
 

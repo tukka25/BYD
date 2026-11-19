@@ -2,8 +2,11 @@
 from __future__ import annotations
 
 import json
+import os
+import shutil
 import socket
 import sys
+import tempfile
 
 
 def main() -> int:
@@ -22,10 +25,15 @@ def main() -> int:
     import plotly.express as px
     import plotly.graph_objects as go
 
-    exec(
-        compile(job["code"], "<candidate>", "exec"),
-        {"df": df, "pd": pd, "px": px, "go": go, "json": json},
-    )
+    # Run from an empty temp dir so no relative path (../.env) reaches the repo.
+    code = compile(job["code"], "<candidate>", "exec")
+    workdir = tempfile.mkdtemp(prefix="candidate_")
+    try:
+        os.chdir(workdir)
+        exec(code, {"df": df, "pandas": pd, "pd": pd, "px": px, "go": go, "json": json})
+    finally:
+        os.chdir(tempfile.gettempdir())
+        shutil.rmtree(workdir, ignore_errors=True)
     return 0
 
 
