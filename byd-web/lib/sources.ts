@@ -9,6 +9,70 @@ export interface Source {
   file_size_bytes?: number | null;
   status?: string | null;
   created_at: string;
+
+  db_type?: string | null;
+  db_host?: string | null;
+  db_port?: number | null;
+  db_name?: string | null;
+  db_username?: string | null;
+}
+
+/** A database this server can actually reach — `available` is the driver. */
+export interface DatabaseKind {
+  id: string;
+  label: string;
+  default_port: number;
+  available: boolean;
+}
+
+export interface ConnectionInput {
+  display_name: string;
+  db_type: string;
+  db_host: string;
+  db_port: number;
+  db_name: string;
+  db_username: string;
+  db_password: string;
+}
+
+export interface ProbeResult {
+  ok: boolean;
+  error: string | null;
+  tables: string[];
+  table_count?: number;
+}
+
+export async function listDatabaseKinds(token: string): Promise<DatabaseKind[]> {
+  return authorizedFetch<DatabaseKind[]>("/api/v1/data-sources/database-kinds", token);
+}
+
+/** Connects for real and reports what is there, without storing anything. */
+export async function testConnection(
+  token: string,
+  input: ConnectionInput,
+): Promise<ProbeResult> {
+  return authorizedFetch<ProbeResult>("/api/v1/data-sources/db-connection/test", token, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(input),
+  });
+}
+
+/** The backend connects before it stores, so this fails loudly on bad details. */
+export async function createConnection(token: string, input: ConnectionInput): Promise<Source> {
+  return authorizedFetch<Source>("/api/v1/data-sources/db-connection", token, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(input),
+  });
+}
+
+export function sourceSubtitle(source: Source): string {
+  if (source.source_type === "db") {
+    const where = [source.db_host, source.db_port].filter(Boolean).join(":");
+    return [source.db_name, where].filter(Boolean).join(" · ");
+  }
+  return formatSize(source.file_size_bytes);
 }
 
 export const ALLOWED_EXTENSIONS = [".csv", ".xls", ".xlsx"];

@@ -8,6 +8,7 @@ import { Responsive, WidthProvider } from "react-grid-layout/legacy";
 import {
   AlertTriangle,
   ArrowUp,
+  ChevronDown,
   Code2,
   Database,
   Download,
@@ -21,6 +22,7 @@ import {
 } from "lucide-react";
 import { Plot } from "@/components/plot";
 import { RichText, RichTextEditor } from "@/components/rich-text";
+import { SourceDialog } from "@/components/sources";
 import { Button, Chip, EmptyState, IconButton, Panel, Segmented } from "@/components/ui";
 import {
   createBlock,
@@ -253,6 +255,8 @@ export function ReportCanvas({ report }: { report: Report }) {
   const [editingTitle, setEditingTitle] = useState(false);
   const [saveState, setSaveState] = useState<SaveState>("idle");
   const [savedAt, setSavedAt] = useState<string | null>(null);
+  const [sourceIds, setSourceIds] = useState<string[]>(report.dataSourceIds);
+  const [sourcesOpen, setSourcesOpen] = useState(false);
   const askRef = useRef<HTMLTextAreaElement | null>(null);
   const gridHost = useRef<HTMLDivElement | null>(null);
 
@@ -273,15 +277,14 @@ export function ReportCanvas({ report }: { report: Report }) {
   }, [report.id, token]);
 
   useEffect(() => {
-    if (!token || report.dataSourceIds.length === 0) return;
+    if (!token || sourceIds.length === 0) {
+      setSourceNames([]);
+      return;
+    }
     listSources(token)
-      .then((all) =>
-        setSourceNames(
-          all.filter((s) => report.dataSourceIds.includes(s.id)).map((s) => s.display_name),
-        ),
-      )
+      .then((all) => setSourceNames(all.filter((s) => sourceIds.includes(s.id)).map((s) => s.display_name)))
       .catch(() => setSourceNames([]));
-  }, [report.dataSourceIds, token]);
+  }, [sourceIds, token]);
 
   // Measured here rather than taken from the grid's own breakpoint callback,
   // which only fires on a change and so can leave the first render wrong.
@@ -475,10 +478,18 @@ export function ReportCanvas({ report }: { report: Report }) {
             </button>
           )}
           <div className="mt-1.5 flex flex-wrap items-center gap-2">
-            <Chip tone={sourceNames.length > 0 ? "violet" : "neutral"}>
-              <Database size={11} strokeWidth={2.25} />
-              {sourceNames.length > 0 ? sourceNames.join(", ") : "Any source"}
-            </Chip>
+            <button
+              type="button"
+              onClick={() => setSourcesOpen(true)}
+              title="Choose what this report can read"
+              className="rounded-[var(--r-pill)] transition-opacity duration-150 hover:opacity-80"
+            >
+              <Chip tone={sourceNames.length > 0 ? "violet" : "neutral"}>
+                <Database size={11} strokeWidth={2.25} />
+                {sourceNames.length > 0 ? sourceNames.join(", ") : "Any source"}
+                <ChevronDown size={11} strokeWidth={2.75} aria-hidden />
+              </Chip>
+            </button>
             <span className="text-sm text-muted">
               {blocks.length === 0
                 ? "Nothing on the canvas yet."
@@ -606,6 +617,21 @@ export function ReportCanvas({ report }: { report: Report }) {
       <p aria-live="polite" className="sr-only">
         {announcement}
       </p>
+
+      {sourcesOpen && token ? (
+        <SourceDialog
+          token={token}
+          selected={sourceIds}
+          onClose={() => setSourcesOpen(false)}
+          onSave={(ids) => {
+            setSourceIds(ids);
+            setSourcesOpen(false);
+            void track(() => updateReport(token, report.id, { dataSourceIds: ids })).then((ok) => {
+              if (ok === null) setError("That choice of data could not be saved.");
+            });
+          }}
+        />
+      ) : null}
 
       {/* The primary action, at the foot of the canvas rather than floating
           over it: the grid scrolls above it, so no block ever passes

@@ -12,6 +12,7 @@ from app.core.security import encrypt_secret
 from app.models.data_source import DataSource, DataSourceStatus, DataSourceType
 from app.models.user import User
 from app.schemas.data_source import DataSourceDBCreateRequest, DataSourceResponse
+from app.services import db_sources
 
 router = APIRouter()
 settings = get_settings()
@@ -75,12 +76,54 @@ def upload_data_file(
     return data_source
 
 
+@router.get("/database-kinds")
+def list_database_kinds():
+    """The databases this server can actually reach, for the connection form.
+
+    Driver availability is reported rather than assumed: offering an engine
+    whose driver is not installed produces a connection that cannot be made.
+    """
+    return db_sources.catalogue()
+
+
+@router.post("/db-connection/test")
+def test_db_connection(
+    payload: DataSourceDBCreateRequest,
+    current_user: User = Depends(get_current_user),
+):
+    """Connect for real and report back, without storing anything."""
+    return db_sources.probe(
+        db_type=payload.db_type,
+        host=payload.db_host,
+        port=payload.db_port,
+        database=payload.db_name,
+        username=payload.db_username,
+        password=payload.db_password,
+    )
+
+
 @router.post("/db-connection", response_model=DataSourceResponse, status_code=status.HTTP_201_CREATED)
 def create_db_connection(
     payload: DataSourceDBCreateRequest,
     current_user: User = Depends(get_current_user),
     db: Session = Depends(get_db),
 ):
+    # Saved only once it has connected. A stored connection that was never
+    # reached is a source the user believes in and the report cannot read.
+    probe = db_sources.probe(
+        db_type=payload.db_type,
+        host=payload.db_host,
+        port=payload.db_port,
+        database=payload.db_name,
+        username=payload.db_username,
+        password=payload.db_password,
+    )
+    if not probe["ok"]:
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST,
+            detail=f"Could not connect: {probe['error']}",
+        )
+
     data_source = DataSource(
         user_id=current_user.id,
         source_type=DataSourceType.DB,

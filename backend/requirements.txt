@@ -27,3 +27,4 @@ openpyxl==3.1.5
 # torch
 # accelerate
 # bitsandbytes
+pymysql>=1.1

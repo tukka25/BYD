@@ -1,13 +1,14 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
-import { AlertTriangle, Check, FileSpreadsheet, Upload } from "lucide-react";
+import { AlertTriangle } from "lucide-react";
 import { AppShell, PageHeader } from "@/components/app-shell";
 import { Button, Field, Panel, inputClass } from "@/components/ui";
 import { getAccessToken } from "@/lib/auth";
 import { createReport } from "@/lib/reports";
-import { ALLOWED_EXTENSIONS, formatSize, listSources, uploadSource, type Source } from "@/lib/sources";
+import { SourceManager } from "@/components/sources";
+import { listSources, type Source } from "@/lib/sources";
 
 export default function NewReportPage() {
   const router = useRouter();
@@ -16,17 +17,16 @@ export default function NewReportPage() {
   const [sources, setSources] = useState<Source[]>([]);
   const [selected, setSelected] = useState<string[]>([]);
   const [busy, setBusy] = useState(false);
-  const [uploading, setUploading] = useState(false);
   const [error, setError] = useState<string | null>(null);
-  const fileInput = useRef<HTMLInputElement | null>(null);
+
+  const token = typeof window !== "undefined" ? getAccessToken() : null;
 
   useEffect(() => {
-    const token = getAccessToken();
     if (!token) return;
     listSources(token)
       .then(setSources)
       .catch(() => setSources([]));
-  }, []);
+  }, [token]);
 
   function toggle(id: string) {
     setSelected((current) =>
@@ -34,21 +34,6 @@ export default function NewReportPage() {
     );
   }
 
-  async function upload(files: FileList | null) {
-    const token = getAccessToken();
-    if (!files?.length || !token) return;
-    setUploading(true);
-    setError(null);
-    try {
-      const created = await uploadSource(token, files[0]);
-      setSources((current) => [created, ...current]);
-      setSelected((current) => [...current, created.id]);
-    } catch (err) {
-      setError(err instanceof Error ? err.message : "Upload failed.");
-    } finally {
-      setUploading(false);
-    }
-  }
 
   async function submit() {
     const token = getAccessToken();
@@ -111,73 +96,19 @@ export default function NewReportPage() {
             </Field>
 
             <div>
-              <div className="mb-1.5 flex items-center justify-between">
-                <span className="text-[13px] font-semibold text-ink">Data for this report</span>
-                <button
-                  onClick={() => fileInput.current?.click()}
-                  disabled={uploading}
-                  className="inline-flex items-center gap-1.5 text-[13px] font-semibold text-violet disabled:opacity-50"
-                >
-                  <Upload size={14} strokeWidth={2.25} />
-                  {uploading ? "Uploading…" : "Upload new"}
-                </button>
-              </div>
-              <input
-                ref={fileInput}
-                type="file"
-                accept={ALLOWED_EXTENSIONS.join(",")}
-                className="sr-only"
-                onChange={(event) => {
-                  void upload(event.target.files);
-                  event.target.value = "";
-                }}
-              />
-
-              {sources.length === 0 ? (
-                <p className="rounded-[var(--r-card)] bg-sunken px-4 py-3 text-[13px] text-muted">
-                  No files yet. Upload one, or leave this empty and the report will search
-                  everything you have.
-                </p>
-              ) : (
-                <ul className="flex flex-col gap-2">
-                  {sources.map((source) => {
-                    const on = selected.includes(source.id);
-                    return (
-                      <li key={source.id}>
-                        <button
-                          onClick={() => toggle(source.id)}
-                          aria-pressed={on}
-                          className={[
-                            "flex w-full items-center gap-3 rounded-[var(--r-card)] px-3.5 py-3 text-left",
-                            "transition-colors duration-150 ease-[var(--ease-out)]",
-                            on ? "bg-violet-wash ring-1 ring-inset ring-violet" : "bg-sunken hover:bg-[#e0e0e7]",
-                          ].join(" ")}
-                        >
-                          <span
-                            className={[
-                              "grid size-5 shrink-0 place-items-center rounded-[6px]",
-                              on ? "bg-violet text-white" : "bg-surface ring-1 ring-inset ring-hairline-strong",
-                            ].join(" ")}
-                          >
-                            {on ? <Check size={13} strokeWidth={3} /> : null}
-                          </span>
-                          <FileSpreadsheet size={16} strokeWidth={2.25} className="shrink-0 text-muted" />
-                          <span className="min-w-0 flex-1">
-                            <span className="block truncate text-[13.5px] font-semibold text-ink">
-                              {source.display_name}
-                            </span>
-                            {formatSize(source.file_size_bytes) ? (
-                              <span className="block text-[12px] text-muted tabular">
-                                {formatSize(source.file_size_bytes)}
-                              </span>
-                            ) : null}
-                          </span>
-                        </button>
-                      </li>
-                    );
-                  })}
-                </ul>
-              )}
+              <span className="mb-1.5 block text-[13px] font-semibold text-ink">
+                Data for this report
+              </span>
+              {token ? (
+                <SourceManager
+                  token={token}
+                  sources={sources}
+                  onSourcesChange={setSources}
+                  selected={selected}
+                  onToggle={toggle}
+                  emptyNote="Nothing yet. Upload a file or connect a database — or leave this empty and the report searches everything you have."
+                />
+              ) : null}
               <p className="mt-2 text-[12px] text-muted">
                 Leave all unticked to let the report pick from every source you have.
               </p>

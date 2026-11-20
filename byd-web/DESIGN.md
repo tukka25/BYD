@@ -202,6 +202,10 @@ Default block sizes, in grid units: **chart 6×9**, **metric 4×4**,
 > dragging and resizing are off and the canvas says so in a line rather than
 > accepting gestures it will discard.
 
+The source chip under the report title is a control, not a label: it opens the
+picker for what this report may read, and that choice is enforced — a report
+that names its sources is answered only from those.
+
 The ask bar is the last child of the canvas column, capped at `max-w-3xl`. It
 is not a floating action button and not a fixed overlay: it is how every block
 on the canvas gets made, so it stays in one place, always visible, with the
@@ -213,11 +217,22 @@ grid scrolling above it.
 
 One authored moment: a block arrives on the canvas and settles into place —
 `block-settle`, 520ms on `--ease-out` (`cubic-bezier(.16,1,.3,1)`), from
-`translateY(10px) scale(.985) blur(6px)`. Everything else is a state change:
-150ms on colour, 200ms on the segmented pill, 300ms on the drawer.
+`translateY(10px) scale(.985)`. Everything else is a state change: 150ms on
+colour, 200ms on the segmented pill, 300ms on the drawer.
+
+**Opacity and transform only.** The settle originally animated a `filter:
+blur()` too. It looked good and cost real frames: a filter takes the block —
+chart SVG and all — off the compositor and makes it rasterise, which is felt
+most while dragging one. Nothing on the canvas animates a property that
+forces paint.
 
 Generation takes 13–15s, so the wait is a real state and gets `.generating` —
 a violet-tinted sweep across a sunken bar — rather than a spinner.
+
+> **Hard rule.** A drag handle must set `user-select: none` (and
+> `touch-action: none`). Without it, pressing the handle starts a text
+> selection that fights the pointer for the rest of the gesture — which does
+> not look like a selection bug, it looks like dragging is sticking.
 
 > **Hard rule.** `react-grid-layout` positions its items with `transform`.
 > An animation that touches `transform` must never sit on the grid item

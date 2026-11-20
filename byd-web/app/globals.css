@@ -304,21 +304,22 @@ a {
    One authored moment: a block arriving on the canvas settles into place.
    Everything else is a state change, not an entrance. */
 
+/* Opacity and transform only. A `filter` here looked nice and cost real
+   frames: it forces the block -- chart SVG and all -- to rasterise rather than
+   ride the compositor, which is felt most while dragging one. */
 @keyframes block-settle {
   from {
     opacity: 0;
     transform: translateY(10px) scale(0.985);
-    filter: blur(6px);
   }
   to {
     opacity: 1;
     transform: none;
-    filter: blur(0);
   }
 }
 
 .block-settle {
-  animation: block-settle 520ms var(--ease-out) both;
+  animation: block-settle 520ms var(--ease-out) backwards;
 }
 
 /* Guard rail: this animation moves an element with `transform`, and
@@ -386,6 +387,26 @@ a {
   z-index: 30;
   box-shadow: var(--lift-drag);
   cursor: grabbing;
+}
+
+/* The header IS the drag handle, so pressing on it must start a drag and not
+   a text selection: a selection fights the pointer for the rest of the
+   gesture, which is what makes dragging feel like it is sticking. */
+.block-drag {
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: none;
+}
+
+/* And nothing else on the canvas starts selecting mid-drag either. */
+.react-grid-layout:has(.react-draggable-dragging),
+.react-grid-layout:has(.resizing) {
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.react-grid-layout:has(.react-draggable-dragging) * {
+  cursor: grabbing !important;
 }
 
 .react-grid-item > .react-resizable-handle {

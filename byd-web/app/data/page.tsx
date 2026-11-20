@@ -1,15 +1,16 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { AlertTriangle, FileSpreadsheet, Trash2, Upload } from "lucide-react";
+import { AlertTriangle, Database, FileSpreadsheet, Trash2, Upload } from "lucide-react";
 import { AppShell, PageHeader } from "@/components/app-shell";
 import { Button, Chip, EmptyState, IconButton, Panel } from "@/components/ui";
 import { getAccessToken } from "@/lib/auth";
+import { ConnectDatabase } from "@/components/sources";
 import {
   ALLOWED_EXTENSIONS,
   deleteSource,
-  formatSize,
   listSources,
+  sourceSubtitle,
   uploadSource,
   type Source,
 } from "@/lib/sources";
@@ -19,7 +20,9 @@ export default function DataPage() {
   const [error, setError] = useState<string | null>(null);
   const [uploading, setUploading] = useState(false);
   const [dragging, setDragging] = useState(false);
+  const [connecting, setConnecting] = useState(false);
   const fileInput = useRef<HTMLInputElement | null>(null);
+  const token = typeof window !== "undefined" ? getAccessToken() : null;
 
   async function refresh() {
     const token = getAccessToken();
@@ -71,10 +74,16 @@ export default function DataPage() {
         title="Data sources"
         lead="Files stay on this machine. Nothing is uploaded anywhere else, and the model reads them locally."
         actions={
-          <Button variant="primary" onClick={() => fileInput.current?.click()} disabled={uploading}>
-            <Upload size={16} strokeWidth={2.25} />
-            {uploading ? "Uploading…" : "Upload file"}
-          </Button>
+          <>
+            <Button variant="secondary" onClick={() => setConnecting((v) => !v)}>
+              <Database size={16} strokeWidth={2.25} />
+              Connect a database
+            </Button>
+            <Button variant="primary" onClick={() => fileInput.current?.click()} disabled={uploading}>
+              <Upload size={16} strokeWidth={2.25} />
+              {uploading ? "Uploading…" : "Upload file"}
+            </Button>
+          </>
         }
       />
 
@@ -98,6 +107,19 @@ export default function DataPage() {
             <button onClick={() => setError(null)} className="font-semibold underline">
               Dismiss
             </button>
+          </div>
+        ) : null}
+
+        {connecting && token ? (
+          <div className="mb-6">
+            <ConnectDatabase
+              token={token}
+              onCancel={() => setConnecting(false)}
+              onConnected={(source) => {
+                setSources((current) => [source, ...(current ?? [])]);
+                setConnecting(false);
+              }}
+            />
           </div>
         ) : null}
 
@@ -142,11 +164,16 @@ export default function DataPage() {
             <EmptyState
               icon={<FileSpreadsheet size={20} strokeWidth={2.25} />}
               title="No data yet"
-              body="Upload a spreadsheet and it becomes available to every report you create."
+              body="Upload a spreadsheet or connect a database, and it becomes available to every report you create."
               action={
-                <Button variant="primary" onClick={() => fileInput.current?.click()}>
-                  Upload a file
-                </Button>
+                <div className="flex flex-wrap items-center justify-center gap-2">
+                  <Button variant="primary" onClick={() => fileInput.current?.click()}>
+                    Upload a file
+                  </Button>
+                  <Button variant="secondary" onClick={() => setConnecting(true)}>
+                    Connect a database
+                  </Button>
+                </div>
               }
             />
           </Panel>
@@ -156,21 +183,34 @@ export default function DataPage() {
               <li key={source.id}>
                 <Panel className="flex items-center gap-4 p-4">
                   <span className="grid size-11 shrink-0 place-items-center rounded-[var(--r-control)] bg-violet-wash text-violet">
-                    <FileSpreadsheet size={19} strokeWidth={2.25} />
+                    {source.source_type === "db" ? (
+                      <Database size={19} strokeWidth={2.25} />
+                    ) : (
+                      <FileSpreadsheet size={19} strokeWidth={2.25} />
+                    )}
                   </span>
                   <div className="min-w-0 flex-1">
                     <p className="truncate font-semibold text-[14.5px] text-ink">
                       {source.display_name}
                     </p>
                     <p className="mt-0.5 flex flex-wrap items-center gap-x-2 text-[12.5px] text-muted">
-                      {source.original_filename ? (
-                        <span className="font-mono">{source.original_filename}</span>
-                      ) : null}
-                      {formatSize(source.file_size_bytes) ? (
-                        <span className="tabular">{formatSize(source.file_size_bytes)}</span>
-                      ) : null}
+                      {source.source_type === "db" ? (
+                        <span className="font-mono">{sourceSubtitle(source)}</span>
+                      ) : (
+                        <>
+                          {source.original_filename ? (
+                            <span className="font-mono">{source.original_filename}</span>
+                          ) : null}
+                          {sourceSubtitle(source) ? (
+                            <span className="tabular">{sourceSubtitle(source)}</span>
+                          ) : null}
+                        </>
+                      )}
                     </p>
                   </div>
+                  <Chip tone={source.source_type === "db" ? "violet" : "neutral"}>
+                    {source.source_type === "db" ? (source.db_type ?? "database") : "File"}
+                  </Chip>
                   <Chip tone={source.status === "active" ? "teal" : "neutral"}>
                     {source.status === "active" ? "Ready" : (source.status ?? "unknown")}
                   </Chip>

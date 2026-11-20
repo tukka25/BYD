@@ -60,7 +60,7 @@ export function subscribeToReports(onChange: () => void): () => void {
 export async function updateReport(
   token: string,
   id: string,
-  input: { title?: string; description?: string | null },
+  input: { title?: string; description?: string | null; dataSourceIds?: string[] },
 ): Promise<Report> {
   const report = toReport(
     await authorizedFetch<BackendDashboard>(`/api/v1/dashboard/${id}`, token, {
@@ -69,6 +69,7 @@ export async function updateReport(
       body: JSON.stringify({
         title: input.title,
         description: input.description,
+        data_source_ids: input.dataSourceIds,
       }),
     }),
   );

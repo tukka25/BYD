@@ -34,6 +34,7 @@ from langgraph.graph import END, StateGraph
 
 from app.core.config import get_settings
 from app.services.agents.chartist import ChartistAgent
+from app.services import db_sources
 from app.services.agents.data_detective import DataDetective
 from app.services.agents.planner import PlannerAgent
 from app.services.llm import get_llm
@@ -97,6 +98,29 @@ def planning_node(state: AgentState) -> Dict[str, Any]:
     }
 
 
+def _db_schema(selected: Dict[str, Any]) -> Dict[str, Any]:
+    """Schema for a database table, in the same shape a file returns."""
+    from app.core.database import SessionLocal
+    from app.models.data_source import DataSource
+
+    session = SessionLocal()
+    try:
+        source = (
+            session.query(DataSource).filter(DataSource.id == selected.get("source_id")).first()
+        )
+        if source is None:
+            return {"error": "that database connection no longer exists"}
+        schema = db_sources.schema_of(source, str(selected.get("table")))
+        if "error" not in schema:
+            # Carried so the executor can load the same table without
+            # resolving the source a second time.
+            schema["source_id"] = source.id
+            schema["table"] = selected.get("table")
+        return schema
+    finally:
+        session.close()
+
+
 def data_sourcing_node(state: AgentState) -> Dict[str, Any]:
     _, detective, _, _ = _agents()
     query = state.get("user_query", "")
@@ -120,7 +144,10 @@ def data_sourcing_node(state: AgentState) -> Dict[str, Any]:
             "messages": [AIMessage(content="Could not resolve the data source.")],
         }
 
-    schema = detective.get_schema(selected.get("path") or selected.get("name"))
+    if selected.get("type") == "db":
+        schema = _db_schema(selected)
+    else:
+        schema = detective.get_schema(selected.get("path") or selected.get("name"))
     if "error" in schema:
         logger.error("[workflow/detective] schema error: %s", schema["error"])
         return {
@@ -173,6 +200,17 @@ def execution_node(state: AgentState) -> Dict[str, Any]:
     if not code:
         return {"error": "No chart code was generated."}
 
+    if data_context.get("source_id") and data_context.get("table"):
+        started = time.perf_counter()
+        try:
+            df = db_sources.load_table_by_id(
+                str(data_context["source_id"]), str(data_context["table"])
+            )
+        except Exception as exc:
+            logger.error("[workflow/executor] database load failed: %s", exc)
+            return {"error": f"Failed to read that table: {exc}"}
+        return _run_executor(executor, code, df, started)
+
     filepath = data_context.get("filepath")
     if not filepath:
         filename = data_context.get("filename")
@@ -192,6 +230,11 @@ def execution_node(state: AgentState) -> Dict[str, Any]:
         logger.error("[workflow/executor] load failed: %s", exc)
         return {"error": f"Failed to load data: {exc}"}
 
+    return _run_executor(executor, code, df, started)
+
+
+def _run_executor(executor: Any, code: str, df: "pd.DataFrame", started: float) -> Dict[str, Any]:
+    """Run the generated code against `df`, whatever the data came from."""
     result = executor.execute(code, df)
     if result.get("success"):
         logger.info("[workflow/executor] success in %.2fs", time.perf_counter() - started)

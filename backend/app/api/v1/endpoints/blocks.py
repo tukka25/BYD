@@ -18,6 +18,7 @@ from app.models.dashboard import Dashboard
 from app.models.data_source import DataSource, DataSourceStatus, DataSourceType
 from app.models.report_block import BlockKind, ReportBlock
 from app.models.user import User
+from app.services import db_sources
 from app.services.agents.workflow import run_agent_workflow
 from app.utils.figure_json import decode_typed_arrays
 
@@ -145,28 +146,49 @@ def _next_row(db: Session, dashboard_id: str) -> int:
     return max((b.y + b.h for b in rows), default=0)
 
 
-def _user_file_sources(db: Session, user_id: str) -> list[Dict[str, Any]]:
-    rows = (
-        db.query(DataSource)
-        .filter(
-            DataSource.user_id == user_id,
-            DataSource.status == DataSourceStatus.ACTIVE,
-            DataSource.source_type == DataSourceType.FILE,
-        )
-        .all()
-    )
-    sources = []
-    for row in rows:
-        path = row.file_path or row.original_filename or row.display_name
-        if path:
-            sources.append(
-                {
-                    "id": row.id,
-                    "name": row.original_filename or row.display_name,
-                    "type": "file",
-                    "path": path,
-                }
+# A connection can hold many tables; enumerating them costs a metadata query
+# each, so the per-question list is kept shorter than the one the UI shows.
+_CANDIDATE_TABLES = 20
+
+
+def _user_sources(db: Session, report: Dashboard) -> list[Dict[str, Any]]:
+    """What this report is allowed to read: its own sources, else everything.
+
+    A report that names its sources is answered only from those. Before this
+    the picker recorded a choice and generation ignored it, which made the
+    "Data for this report" step decorative.
+    """
+    chosen = list(report.data_sources or [])
+    if chosen:
+        rows = [row for row in chosen if row.status == DataSourceStatus.ACTIVE]
+    else:
+        rows = (
+            db.query(DataSource)
+            .filter(
+                DataSource.user_id == report.user_id,
+                DataSource.status == DataSourceStatus.ACTIVE,
             )
+            .all()
+        )
+
+    sources: list[Dict[str, Any]] = []
+    for row in rows:
+        if row.source_type == DataSourceType.FILE:
+            path = row.file_path or row.original_filename or row.display_name
+            if path:
+                sources.append(
+                    {
+                        "id": row.id,
+                        "name": row.original_filename or row.display_name,
+                        "type": "file",
+                        "path": path,
+                    }
+                )
+        elif row.source_type == DataSourceType.DB:
+            # A table is the candidate, not the connection: a chart is built
+            # from one table. An unreachable database contributes nothing
+            # rather than failing the whole question.
+            sources.extend(db_sources.candidates_for(row, max_tables=_CANDIDATE_TABLES))
     return sources
 
 
@@ -211,7 +233,7 @@ async def generate_block(
         run_agent_workflow,
         payload.prompt,
         payload.data_source or "",
-        _user_file_sources(db, current_user.id),
+        _user_sources(db, report),
     )
 
     if result.get("error"):

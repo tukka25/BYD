@@ -13,20 +13,20 @@ function cx(...parts: Array<string | false | null | undefined>) {
    A white surface on the grey canvas. Separated by value; it carries no border
    and only the faintest lift, because the contrast is already doing the work. */
 
-export function Panel({
-  className,
-  children,
-  ...rest
-}: HTMLAttributes<HTMLDivElement> & { children?: ReactNode }) {
+export const Panel = forwardRef<
+  HTMLDivElement,
+  HTMLAttributes<HTMLDivElement> & { children?: ReactNode }
+>(function Panel({ className, children, ...rest }, ref) {
   return (
     <div
+      ref={ref}
       className={cx("rounded-[var(--r-panel)] bg-surface shadow-[var(--lift-1)]", className)}
       {...rest}
     >
       {children}
     </div>
   );
-}
+});
 
 /* --- Button -------------------------------------------------------------- */
 
