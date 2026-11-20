@@ -24,6 +24,13 @@
 - Frontend backend URL resolution in `byd-web/app/api/dashboard/generate/route.ts`: `BACKEND_API_URL` -> `NEXT_PUBLIC_API_BASE_URL` -> `http://127.0.0.1:8000`.
 - General API helpers use `NEXT_PUBLIC_API_BASE_URL` with default `http://localhost:8000` in `byd-web/lib/backend.ts`.
 - Auth/session are localStorage-based (`promptdash_session_user`, `promptdash_access_token`) in `byd-web/lib/auth.ts`; no cookie/session middleware.
+- Routes after the UI rebuild: `/` reports home, `/reports/new`, `/reports/[id]` (the canvas), `/data` (sources), `/login`. The old `/dashboard/new`, `/dashboard/new-canvas` and `/settings/data-sources` are now redirects, not pages.
+- Canvas blocks are backend-owned (`backend/app/api/v1/endpoints/blocks.py`, table `report_blocks`), not localStorage. `POST /blocks/generate` runs the agent workflow; `PUT /blocks/layout` persists drag/resize.
+- An all-`indicator` Plotly figure is stored as a `metric` block at tile size and titled with the label the model wrote. That is the KPI stat-card path; there is no separate "make me a KPI" endpoint.
+- `byd-web/DESIGN.md` carries the design system (tokens, components, the Plotly re-theme contract). Read it before touching UI.
+- Plotly is bundled (`plotly.js-dist-min`, lazily imported in `components/plot.tsx`), never the CDN script — the CDN broke the local-only claim and pinned an old Plotly.
+- Gotcha: `react-grid-layout` positions items with `transform`. Any CSS animation that touches `transform` must sit on an element INSIDE the grid item; on the item itself, `animation-fill-mode: both` makes the keyframes' final `transform: none` beat the inline grid transform and all blocks pile up top-left. `globals.css` keeps a `.react-grid-item.block-settle { animation: none }` guard.
+- `react-grid-layout` v2's classic API lives at `react-grid-layout/legacy`; the root export is the new rewrite and has a different surface.
 
 ## Verification shortcuts
 - `make smoke` is the fastest real check: health, register, login, that `/generate` refuses an anonymous call, then a real chart with real data points. It fails if the chart came from the deterministic fallback rather than the model, so a green result means the model actually worked.

@@ -38,14 +38,14 @@ export default function HomePage() {
         actions={
           <Link href="/reports/new">
             <Button variant="primary">
-              <Plus size={16} strokeWidth={2.75} />
+              <Plus size={16} strokeWidth={2.25} />
               New report
             </Button>
           </Link>
         }
       />
 
-      <div className="px-8 pb-16">
+      <div className="app-scroll px-5 pb-16 sm:px-8">
         {reports === null ? (
           <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
             <div className="h-36 rounded-[var(--r-panel)] generating" />
@@ -55,7 +55,7 @@ export default function HomePage() {
         ) : reports.length === 0 ? (
           <Panel>
             <EmptyState
-              icon={<FileText size={20} strokeWidth={2.5} />}
+              icon={<FileText size={20} strokeWidth={2.25} />}
               title="No reports yet"
               body={
                 sources.length > 0
@@ -84,7 +84,7 @@ export default function HomePage() {
                       {report.title}
                     </h2>
                     <span className="mt-0.5 grid size-8 shrink-0 place-items-center rounded-full bg-sunken text-muted transition-colors duration-200 group-hover:bg-violet group-hover:text-white">
-                      <ArrowRight size={15} strokeWidth={2.5} />
+                      <ArrowRight size={15} strokeWidth={2.25} />
                     </span>
                   </div>
                   {report.description ? (
@@ -94,7 +94,7 @@ export default function HomePage() {
                   ) : null}
                   <div className="mt-auto flex items-center gap-2 pt-5">
                     <Chip tone={report.dataSourceIds.length > 0 ? "violet" : "neutral"}>
-                      <Database size={11} strokeWidth={2.75} />
+                      <Database size={11} strokeWidth={2.25} />
                       {report.dataSourceIds.length > 0
                         ? `${report.dataSourceIds.length} source${report.dataSourceIds.length === 1 ? "" : "s"}`
                         : "Any source"}

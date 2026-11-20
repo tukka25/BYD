@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
-import { useEffect, useState, type ReactNode } from "react";
+import { useEffect, useRef, useState, useSyncExternalStore, type ReactNode } from "react";
 import {
   ChartNoAxesColumn,
   Database,
@@ -14,7 +14,7 @@ import {
   Sparkles,
   X,
 } from "lucide-react";
-import { getAccessToken, loadCurrentUser, logoutUser, type AuthUser } from "@/lib/auth";
+import { getAccessToken, loadCurrentUser, logoutUser, noSession, subscribeToSession } from "@/lib/auth";
 import { fetchHealth, listReports, type LocalHealth, type Report } from "@/lib/reports";
 import { IconButton } from "@/components/ui";
 
@@ -29,16 +29,19 @@ function NavItem({
   children,
   active,
   muted,
+  onNavigate,
 }: {
   href: string;
   icon?: ReactNode;
   children: ReactNode;
   active: boolean;
   muted?: boolean;
+  onNavigate?: () => void;
 }) {
   return (
     <Link
       href={href}
+      onClick={onNavigate}
       aria-current={active ? "page" : undefined}
       className={[
         "group flex items-center gap-2.5 rounded-[var(--r-control)] px-3 py-2",
@@ -67,20 +70,30 @@ function GroupLabel({ children }: { children: ReactNode }) {
 export function AppShell({ children }: { children: ReactNode }) {
   const router = useRouter();
   const pathname = usePathname();
-  const [user, setUser] = useState<AuthUser | null>(null);
+  // The session lives in localStorage. Read as an external store rather than
+  // copied into state by an effect, so the shell renders the right session on
+  // its first client pass and follows a sign-out in another tab.
+  const user = useSyncExternalStore(subscribeToSession, loadCurrentUser, noSession);
   const [reports, setReports] = useState<Report[]>([]);
   const [health, setHealth] = useState<LocalHealth | null>(null);
   // Below lg the sidebar is a drawer: at 375px a fixed 248px rail leaves the
   // report a sliver of the screen and the title wraps to one word per line.
   const [drawer, setDrawer] = useState(false);
+  const menuButton = useRef<HTMLButtonElement | null>(null);
+
+  function closeDrawer() {
+    setDrawer(false);
+    menuButton.current?.focus();
+  }
 
   useEffect(() => {
-    const current = loadCurrentUser();
-    if (!current) {
+    // Read the store directly here, not the rendered `user`: during hydration
+    // that is still the server snapshot (null), which would bounce a signed-in
+    // visitor to /login.
+    if (!loadCurrentUser()) {
       router.replace("/login");
       return;
     }
-    setUser(current);
 
     const token = getAccessToken();
     if (token) {
@@ -89,7 +102,6 @@ export function AppShell({ children }: { children: ReactNode }) {
         .catch(() => setReports([]));
     }
     fetchHealth().then(setHealth);
-    setDrawer(false);
   }, [router, pathname]);
 
   if (!user) {
@@ -103,29 +115,36 @@ export function AppShell({ children }: { children: ReactNode }) {
   const initials = (user.name || user.email).slice(0, 2).toUpperCase();
 
   return (
-    <div className="flex min-h-dvh bg-canvas">
+    <div className="app-frame flex h-dvh overflow-hidden bg-canvas">
       {drawer ? (
         <button
           aria-label="Close navigation"
-          onClick={() => setDrawer(false)}
+          onClick={closeDrawer}
           className="fixed inset-0 z-40 bg-[rgb(18_18_22/0.45)] lg:hidden"
         />
       ) : null}
 
       <aside
+        onKeyDown={(event) => {
+          if (event.key === "Escape" && drawer) closeDrawer();
+        }}
         className={[
           "flex h-dvh w-[248px] shrink-0 flex-col bg-surface",
           "fixed inset-y-0 left-0 z-50 transition-transform duration-300 ease-[var(--ease-out)]",
-          drawer ? "translate-x-0 shadow-[var(--lift-2)]" : "-translate-x-full",
-          "lg:sticky lg:top-0 lg:z-auto lg:translate-x-0 lg:shadow-none",
+          drawer ? "translate-x-0 shadow-[var(--lift-2)]" : "invisible -translate-x-full",
+          "lg:visible lg:static lg:z-auto lg:translate-x-0 lg:shadow-none",
         ].join(" ")}
       >
         <div className="flex justify-end px-3 pt-3 lg:hidden">
-          <IconButton label="Close navigation" onClick={() => setDrawer(false)}>
-            <X size={17} strokeWidth={2.5} />
+          <IconButton label="Close navigation" onClick={closeDrawer}>
+            <X size={17} strokeWidth={2.25} />
           </IconButton>
         </div>
-        <Link href="/" className="flex items-center gap-2.5 px-5 pb-2 pt-6">
+        <Link
+          href="/"
+          onClick={() => setDrawer(false)}
+          className="flex items-center gap-2.5 px-5 pb-2 pt-6"
+        >
           <span className="grid size-8 place-items-center rounded-[10px] bg-violet text-white">
             <ChartNoAxesColumn size={17} strokeWidth={2.75} />
           </span>
@@ -148,6 +167,7 @@ export function AppShell({ children }: { children: ReactNode }) {
                   href={`/reports/${report.id}`}
                   icon={<FileText size={16} strokeWidth={2.25} />}
                   active={pathname === `/reports/${report.id}`}
+                  onNavigate={() => setDrawer(false)}
                 >
                   {report.title}
                 </NavItem>
@@ -155,9 +175,10 @@ export function AppShell({ children }: { children: ReactNode }) {
             )}
             <NavItem
               href="/reports/new"
-              icon={<Plus size={16} strokeWidth={2.5} />}
+              icon={<Plus size={16} strokeWidth={2.25} />}
               active={pathname === "/reports/new"}
               muted
+              onNavigate={() => setDrawer(false)}
             >
               New report
             </NavItem>
@@ -169,6 +190,7 @@ export function AppShell({ children }: { children: ReactNode }) {
               href="/data"
               icon={<Database size={16} strokeWidth={2.25} />}
               active={pathname.startsWith("/data")}
+              onNavigate={() => setDrawer(false)}
             >
               Data sources
             </NavItem>
@@ -178,7 +200,7 @@ export function AppShell({ children }: { children: ReactNode }) {
         {/* The product's claim, shown rather than asserted. */}
         <div className="mx-3 mb-3 rounded-[var(--r-card)] bg-sunken px-3 py-3">
           <div className="flex items-center gap-2 text-[12px] font-bold text-ink">
-            <ShieldCheck size={14} strokeWidth={2.5} className="text-teal" />
+            <ShieldCheck size={14} strokeWidth={2.25} className="text-teal" />
             Running on this machine
           </div>
           <p className="mt-1 text-[11.5px] leading-snug text-muted">
@@ -213,16 +235,16 @@ export function AppShell({ children }: { children: ReactNode }) {
         </div>
       </aside>
 
-      <div className="flex min-w-0 flex-1 flex-col">
-        <div className="sticky top-0 z-30 flex items-center gap-2 bg-canvas/85 px-4 py-3 backdrop-blur-sm lg:hidden print:hidden">
-          <IconButton label="Open navigation" onClick={() => setDrawer(true)}>
-            <Menu size={18} strokeWidth={2.5} />
+      <div className="flex min-h-0 min-w-0 flex-1 flex-col">
+        <div className="z-30 flex shrink-0 items-center gap-2 bg-canvas px-4 py-3 lg:hidden print:hidden">
+          <IconButton label="Open navigation" ref={menuButton} onClick={() => setDrawer(true)}>
+            <Menu size={18} strokeWidth={2.25} />
           </IconButton>
           <span className="font-display text-[15px] font-bold tracking-[-0.02em] text-ink">
             PromptDash
           </span>
         </div>
-        <main className="min-w-0 flex-1">{children}</main>
+        <main className="flex min-h-0 min-w-0 flex-1 flex-col">{children}</main>
       </div>
     </div>
   );
@@ -240,7 +262,7 @@ export function PageHeader({
   actions?: ReactNode;
 }) {
   return (
-    <header className="flex flex-wrap items-end justify-between gap-4 px-5 pb-6 pt-6 sm:px-8 sm:pt-8">
+    <header className="flex shrink-0 flex-wrap items-end justify-between gap-4 px-5 pb-6 pt-6 sm:px-8 sm:pt-8">
       <div className="min-w-0">
         <h1 className="font-display text-[26px] font-bold leading-[1.1] text-ink sm:text-[34px]">
           {title}

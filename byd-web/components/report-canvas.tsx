@@ -9,6 +9,7 @@ import {
   AlertTriangle,
   ArrowUp,
   Code2,
+  Database,
   Download,
   Eye,
   GripVertical,
@@ -18,7 +19,7 @@ import {
   Type,
 } from "lucide-react";
 import { Plot } from "@/components/plot";
-import { Button, Chip, EmptyState, IconButton, Panel, Segmented, inputClass } from "@/components/ui";
+import { Button, Chip, EmptyState, IconButton, Panel, Segmented } from "@/components/ui";
 import {
   createBlock,
   deleteBlock,
@@ -29,13 +30,33 @@ import {
   type Block,
 } from "@/lib/blocks";
 import { getAccessToken } from "@/lib/auth";
+import { listSources } from "@/lib/sources";
 import type { Report } from "@/lib/reports";
 
 const Grid = WidthProvider(Responsive);
 
+/* These thresholds are CONTAINER widths, not viewport widths: `WidthProvider`
+   measures the element it wraps, and the canvas sits inside a 248px sidebar
+   plus its own padding. Reading them as viewport widths is how a 1280px laptop
+   silently lands on a 6-column grid and writes that back as the layout. */
+const BREAKPOINTS = { lg: 900, md: 700, sm: 540, xs: 400, xxs: 0 };
 const COLS = { lg: 12, md: 12, sm: 6, xs: 4, xxs: 2 };
-const BREAKPOINTS = { lg: 1280, md: 996, sm: 768, xs: 480, xxs: 0 };
 const ROW_HEIGHT = 44;
+const STORED_COLS = 12;
+
+function columnsFor(width: number): number {
+  if (width >= BREAKPOINTS.lg) return COLS.lg;
+  if (width >= BREAKPOINTS.md) return COLS.md;
+  if (width >= BREAKPOINTS.sm) return COLS.sm;
+  if (width >= BREAKPOINTS.xs) return COLS.xs;
+  return COLS.xxs;
+}
+
+function clamp(value: number, min: number, max: number): number {
+  return Math.min(Math.max(value, min), max);
+}
+
+type Nudge = { dx?: number; dy?: number; dw?: number; dh?: number };
 
 type Mode = "view" | "edit";
 
@@ -51,28 +72,60 @@ function isIndicator(block: Block): boolean {
 function BlockFrame({
   block,
   mode,
+  arrangeable,
   onDelete,
   onRename,
+  onNudge,
   children,
 }: {
   block: Block;
   mode: Mode;
+  arrangeable: boolean;
   onDelete: () => void;
   onRename: (title: string) => void;
+  onNudge: (nudge: Nudge) => void;
   children: React.ReactNode;
 }) {
   const [showCode, setShowCode] = useState(false);
   const [editingTitle, setEditingTitle] = useState(false);
+  const grabbable = mode === "edit" && arrangeable;
+
+  /* The drag handle is a keyboard control too: arrows move the block, shift
+     and arrows resize it, both writing through the same save path as a drag.
+     Without this the canvas can only be arranged with a mouse, which PRODUCT.md
+     names as a requirement rather than a nicety. */
+  function onKeyDown(event: React.KeyboardEvent) {
+    if (!grabbable) return;
+    const sizing = event.shiftKey;
+    const map: Record<string, Nudge> = {
+      ArrowLeft: sizing ? { dw: -1 } : { dx: -1 },
+      ArrowRight: sizing ? { dw: 1 } : { dx: 1 },
+      ArrowUp: sizing ? { dh: -1 } : { dy: -1 },
+      ArrowDown: sizing ? { dh: 1 } : { dy: 1 },
+    };
+    const next = map[event.key];
+    if (!next) return;
+    event.preventDefault();
+    onNudge(next);
+  }
 
   return (
     <Panel className="flex h-full flex-col overflow-hidden">
       <header
+        tabIndex={grabbable ? 0 : undefined}
+        role={grabbable ? "button" : undefined}
+        aria-label={
+          grabbable
+            ? `${block.title || "Untitled"}. Arrow keys move this block, shift and arrow keys resize it.`
+            : undefined
+        }
+        onKeyDown={onKeyDown}
         className={[
-          "flex items-start gap-2 px-5 pt-4",
-          mode === "edit" ? "block-drag cursor-grab active:cursor-grabbing" : "",
+          "flex items-start gap-2 rounded-t-[var(--r-panel)] px-5 pt-4",
+          grabbable ? "block-drag cursor-grab active:cursor-grabbing" : "",
         ].join(" ")}
       >
-        {mode === "edit" ? (
+        {grabbable ? (
           <GripVertical size={16} className="mt-0.5 shrink-0 text-hairline-strong" aria-hidden />
         ) : null}
 
@@ -81,11 +134,13 @@ function BlockFrame({
             <input
               autoFocus
               defaultValue={block.title}
+              aria-label="Block title"
               onBlur={(event) => {
                 onRename(event.target.value.trim() || block.title);
                 setEditingTitle(false);
               }}
               onKeyDown={(event) => {
+                event.stopPropagation();
                 if (event.key === "Enter") event.currentTarget.blur();
                 if (event.key === "Escape") setEditingTitle(false);
               }}
@@ -105,7 +160,7 @@ function BlockFrame({
             ) : null}
             {block.used_fallback ? (
               <Chip tone="amber">
-                <AlertTriangle size={11} strokeWidth={2.5} />
+                <AlertTriangle size={11} strokeWidth={2.25} />
                 Fallback chart
               </Chip>
             ) : null}
@@ -162,7 +217,9 @@ function BlockBody({
       return (
         <textarea
           defaultValue={block.text_body ?? ""}
+          aria-label="Note text"
           placeholder="Write a note, a caption, or what this section shows…"
+          onKeyDown={(event) => event.stopPropagation()}
           onBlur={(event) => onText(event.target.value)}
           className="size-full resize-none rounded-[var(--r-card)] bg-sunken p-4 text-sm leading-relaxed text-body placeholder:text-muted focus:outline-none focus:ring-2 focus:ring-violet"
         />
@@ -201,9 +258,20 @@ export function ReportCanvas({ report }: { report: Report }) {
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);
+  const [sourceNames, setSourceNames] = useState<string[]>([]);
+  const [cols, setCols] = useState(STORED_COLS);
+  const [announcement, setAnnouncement] = useState("");
+  const [askFocused, setAskFocused] = useState(false);
   const askRef = useRef<HTMLTextAreaElement | null>(null);
+  const gridHost = useRef<HTMLDivElement | null>(null);
 
   const token = typeof window !== "undefined" ? getAccessToken() : null;
+
+  /* The stored layout is in 12 columns. At a narrower breakpoint the grid
+     clamps every block to fit, so writing that back would permanently squash a
+     report arranged on a wide screen. Arranging is therefore only offered
+     where the grid still has all 12 columns. */
+  const arrangeable = cols === STORED_COLS;
 
   useEffect(() => {
     if (!token) return;
@@ -212,6 +280,29 @@ export function ReportCanvas({ report }: { report: Report }) {
       .catch(() => setError("Could not load this report's blocks."))
       .finally(() => setLoading(false));
   }, [report.id, token]);
+
+  useEffect(() => {
+    if (!token || report.dataSourceIds.length === 0) return;
+    listSources(token)
+      .then((all) =>
+        setSourceNames(
+          all.filter((s) => report.dataSourceIds.includes(s.id)).map((s) => s.display_name),
+        ),
+      )
+      .catch(() => setSourceNames([]));
+  }, [report.dataSourceIds, token]);
+
+  // Measured here rather than taken from the grid's own breakpoint callback,
+  // which only fires on a change and so can leave the first render wrong.
+  useEffect(() => {
+    const node = gridHost.current;
+    if (!node) return;
+    const observer = new ResizeObserver(([entry]) => {
+      setCols(columnsFor(entry.contentRect.width));
+    });
+    observer.observe(node);
+    return () => observer.disconnect();
+  }, []);
 
   const layouts = useMemo(
     () => ({
@@ -223,23 +314,49 @@ export function ReportCanvas({ report }: { report: Report }) {
   // react-grid-layout hands back a readonly array, so the parameter matches it
   // rather than copying to satisfy the type.
   type GridItem = { i: string; x: number; y: number; w: number; h: number };
+
+  const save = useCallback(
+    (next: Array<{ id: string; x: number; y: number; w: number; h: number }>) => {
+      if (!token) return;
+      saveLayout(token, report.id, next).catch(() => setError("Layout could not be saved."));
+    },
+    [report.id, token],
+  );
+
   const persistLayout = useCallback(
     (next: readonly GridItem[]) => {
-      if (!token) return;
+      // Never write back a layout the grid clamped to fit a narrow screen.
+      if (!arrangeable) return;
       setBlocks((current) =>
         current.map((block) => {
           const item = next.find((n) => n.i === block.id);
           return item ? { ...block, x: item.x, y: item.y, w: item.w, h: item.h } : block;
         }),
       );
-      saveLayout(
-        token,
-        report.id,
-        next.map((n) => ({ id: n.i, x: n.x, y: n.y, w: n.w, h: n.h })),
-      ).catch(() => setError("Layout could not be saved."));
+      save(next.map((n) => ({ id: n.i, x: n.x, y: n.y, w: n.w, h: n.h })));
     },
-    [report.id, token],
+    [arrangeable, save],
   );
+
+  function nudge(id: string, by: Nudge) {
+    if (!arrangeable) return;
+    const target = blocks.find((b) => b.id === id);
+    if (!target) return;
+
+    const w = clamp(target.w + (by.dw ?? 0), 2, STORED_COLS);
+    const h = Math.max(3, target.h + (by.dh ?? 0));
+    const x = clamp(target.x + (by.dx ?? 0), 0, STORED_COLS - w);
+    const y = Math.max(0, target.y + (by.dy ?? 0));
+
+    const next = blocks.map((b) => (b.id === id ? { ...b, x, y, w, h } : b));
+    setBlocks(next);
+    save(next.map((b) => ({ id: b.id, x: b.x, y: b.y, w: b.w, h: b.h })));
+    setAnnouncement(
+      by.dw || by.dh
+        ? `${target.title || "Block"} resized to ${w} by ${h}`
+        : `${target.title || "Block"} moved to column ${x + 1}, row ${y + 1}`,
+    );
+  }
 
   async function ask() {
     const question = prompt.trim();
@@ -278,18 +395,24 @@ export function ReportCanvas({ report }: { report: Report }) {
   }
 
   return (
-    <div className="flex min-h-dvh flex-col">
-      <header className="flex flex-wrap items-center justify-between gap-4 px-5 pb-5 pt-6 sm:px-8 sm:pt-8 print:px-0">
+    <div className="flex min-h-0 flex-1 flex-col">
+      <header className="flex shrink-0 flex-wrap items-center justify-between gap-4 px-5 pb-5 pt-6 sm:px-8 sm:pt-8 print:px-0">
         <div className="min-w-0 basis-full sm:basis-auto">
           <h1 className="font-display text-[26px] font-bold leading-[1.1] text-ink sm:text-[34px]">
             {report.title}
           </h1>
-          <p className="mt-1 text-sm text-muted">
-            {blocks.length === 0
-              ? "Nothing on the canvas yet."
-              : `${blocks.length} block${blocks.length === 1 ? "" : "s"}`}
-            {report.description ? ` · ${report.description}` : ""}
-          </p>
+          <div className="mt-1.5 flex flex-wrap items-center gap-2">
+            <Chip tone={sourceNames.length > 0 ? "violet" : "neutral"}>
+              <Database size={11} strokeWidth={2.25} />
+              {sourceNames.length > 0 ? sourceNames.join(", ") : "Any source"}
+            </Chip>
+            <span className="text-sm text-muted">
+              {blocks.length === 0
+                ? "Nothing on the canvas yet."
+                : `${blocks.length} block${blocks.length === 1 ? "" : "s"}`}
+              {report.description ? ` · ${report.description}` : ""}
+            </span>
+          </div>
         </div>
 
         <div className="flex flex-wrap items-center gap-2 print:hidden">
@@ -297,24 +420,24 @@ export function ReportCanvas({ report }: { report: Report }) {
             value={mode}
             onChange={setMode}
             options={[
-              { value: "edit", label: "Edit", icon: <LayoutGrid size={14} strokeWidth={2.5} /> },
-              { value: "view", label: "View", icon: <Eye size={14} strokeWidth={2.5} /> },
+              { value: "edit", label: "Edit", icon: <LayoutGrid size={14} strokeWidth={2.25} /> },
+              { value: "view", label: "View", icon: <Eye size={14} strokeWidth={2.25} /> },
             ]}
           />
           <Button variant="secondary" onClick={addNote}>
-            <Type size={15} strokeWidth={2.5} />
+            <Type size={15} strokeWidth={2.25} />
             Note
           </Button>
           <Button variant="secondary" onClick={() => window.print()}>
-            <Download size={15} strokeWidth={2.5} />
+            <Download size={15} strokeWidth={2.25} />
             Export
           </Button>
         </div>
       </header>
 
       {error ? (
-        <div className="mx-5 mb-4 flex items-start sm:mx-8 gap-2 rounded-[var(--r-card)] bg-coral-wash px-4 py-3 text-[13px] text-[#b5301c] print:hidden">
-          <AlertTriangle size={16} strokeWidth={2.5} className="mt-px shrink-0" />
+        <div className="mx-5 mb-4 flex shrink-0 items-start gap-2 sm:mx-8 rounded-[var(--r-card)] bg-coral-wash px-4 py-3 text-[13px] text-[#b5301c] print:hidden">
+          <AlertTriangle size={16} strokeWidth={2.25} className="mt-px shrink-0" />
           <span className="flex-1">{error}</span>
           <button onClick={() => setError(null)} className="font-semibold underline">
             Dismiss
@@ -322,7 +445,14 @@ export function ReportCanvas({ report }: { report: Report }) {
         </div>
       ) : null}
 
-      <div className="flex-1 px-2 pb-44 sm:px-5 print:pb-0">
+      {mode === "edit" && !arrangeable && blocks.length > 0 ? (
+        <p className="mx-5 mb-3 shrink-0 text-[12.5px] text-muted sm:mx-8 print:hidden">
+          This window is too narrow to arrange blocks — they are stacked to fit. Widen it to move
+          and resize them; the layout you saved is kept.
+        </p>
+      ) : null}
+
+      <div ref={gridHost} className="app-scroll px-2 pb-6 sm:px-5">
         {loading ? (
           <div className="grid grid-cols-2 gap-4 px-3">
             <div className="h-64 rounded-[var(--r-panel)] generating" />
@@ -331,7 +461,7 @@ export function ReportCanvas({ report }: { report: Report }) {
         ) : blocks.length === 0 ? (
           <Panel className="mx-3">
             <EmptyState
-              icon={<ArrowUp size={20} strokeWidth={2.5} />}
+              icon={<ArrowUp size={20} strokeWidth={2.25} />}
               title="Ask a question to start"
               body="Describe the chart you want in plain English — “monthly revenue by plan tier”. It runs against your uploaded data on this machine, and the result lands here as a block you can move and resize."
               action={
@@ -349,8 +479,8 @@ export function ReportCanvas({ report }: { report: Report }) {
             cols={COLS}
             rowHeight={ROW_HEIGHT}
             margin={[16, 16]}
-            isDraggable={mode === "edit"}
-            isResizable={mode === "edit"}
+            isDraggable={mode === "edit" && arrangeable}
+            isResizable={mode === "edit" && arrangeable}
             draggableHandle=".block-drag"
             onDragStop={persistLayout}
             onResizeStop={persistLayout}
@@ -362,8 +492,10 @@ export function ReportCanvas({ report }: { report: Report }) {
                   <BlockFrame
                     block={block}
                     mode={mode}
+                    arrangeable={arrangeable}
                     onDelete={() => removeBlock(block.id)}
                     onRename={(title) => patch(block.id, { title })}
+                    onNudge={(by) => nudge(block.id, by)}
                   >
                     <BlockBody
                       block={block}
@@ -378,17 +510,30 @@ export function ReportCanvas({ report }: { report: Report }) {
         )}
       </div>
 
-      {/* The primary action. Anchored, not floating over a block: it is how
-          every block on this canvas gets made. */}
-      <div className="pointer-events-none fixed inset-x-0 bottom-0 z-20 px-4 pb-4 sm:px-8 sm:pb-6 lg:left-[248px] print:hidden">
-        <div className="pointer-events-auto mx-auto max-w-3xl">
-          <Panel className="shadow-[var(--lift-2)]">
+      <p aria-live="polite" className="sr-only">
+        {announcement}
+      </p>
+
+      {/* The primary action, at the foot of the canvas rather than floating
+          over it: the grid scrolls above it, so no block ever passes
+          underneath. It is how every block on this canvas gets made. */}
+      <div className="shrink-0 px-4 pb-4 sm:px-8 sm:pb-6 print:hidden">
+        <div className="mx-auto max-w-3xl">
+          <Panel
+            className={[
+              "shadow-[var(--lift-2)] transition-shadow",
+              askFocused ? "ring-2 ring-violet" : "",
+            ].join(" ")}
+          >
             <div className="flex items-end gap-2 p-2.5">
               <textarea
                 ref={askRef}
                 rows={1}
                 value={prompt}
                 disabled={busy}
+                aria-label="Ask for a chart"
+                onFocus={() => setAskFocused(true)}
+                onBlur={() => setAskFocused(false)}
                 onChange={(event) => setPrompt(event.target.value)}
                 onKeyDown={(event) => {
                   if (event.key === "Enter" && !event.shiftKey) {
@@ -397,11 +542,11 @@ export function ReportCanvas({ report }: { report: Report }) {
                   }
                 }}
                 placeholder="Ask for a chart…"
-                className={`${inputClass} max-h-32 min-h-11 resize-none py-3 ring-0 focus:ring-0`}
+                className="max-h-32 min-h-11 w-full resize-none rounded-[var(--r-control)] bg-surface px-3.5 py-3 text-sm text-ink placeholder:text-muted focus:outline-none"
               />
               <Button variant="primary" onClick={ask} disabled={busy || !prompt.trim()} className="shrink-0">
                 {busy ? "Working…" : "Add block"}
-                {busy ? null : <ArrowUp size={15} strokeWidth={2.75} />}
+                {busy ? null : <ArrowUp size={15} strokeWidth={2.25} />}
               </Button>
             </div>
             {busy ? (

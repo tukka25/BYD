@@ -132,7 +132,7 @@ export default function LoginPage() {
 
             {error ? (
               <div className="flex items-start gap-2 rounded-[var(--r-card)] bg-coral-wash px-3.5 py-2.5 text-[13px] text-[#b5301c]">
-                <AlertTriangle size={15} strokeWidth={2.5} className="mt-px shrink-0" />
+                <AlertTriangle size={15} strokeWidth={2.25} className="mt-px shrink-0" />
                 <span>{error}</span>
               </div>
             ) : null}
@@ -144,7 +144,7 @@ export default function LoginPage() {
         </Panel>
 
         <p className="mt-5 flex items-center justify-center gap-2 text-center text-[12.5px] text-muted">
-          <ShieldCheck size={14} strokeWidth={2.5} className="shrink-0 text-teal" />
+          <ShieldCheck size={14} strokeWidth={2.25} className="shrink-0 text-teal" />
           {health ? (
             <>
               <span className="font-mono">{health.model}</span> is running on this machine.

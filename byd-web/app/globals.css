@@ -196,6 +196,18 @@ a {
   text-decoration-thickness: from-font;
 }
 
+/* --- app scroll ----------------------------------------------------------
+   This is a console, not a document: the shell stays put and each route
+   scrolls inside its own region. That is what lets the canvas keep a static
+   Ask bar at its foot instead of a bar floating over the blocks. */
+
+.app-scroll {
+  min-height: 0;
+  flex: 1 1 auto;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+
 /* --- motion --------------------------------------------------------------
    One authored moment: a block arriving on the canvas settles into place.
    Everything else is a state change, not an entrance. */
@@ -261,6 +273,14 @@ a {
 /* --- react-grid-layout ---------------------------------------------------
    The library ships unstyled drag affordances; these are ours. */
 
+/* Thick, round-capped lines, as in the binding reference. Plotly has no
+   scatter line-cap option, so it is set here. */
+.js-plotly-plot .scatterlayer .js-line,
+.js-plotly-plot .scatterlayer .lines path {
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
 .react-grid-item.react-grid-placeholder {
   background: color-mix(in srgb, var(--violet) 12%, transparent);
   border: 1.5px dashed color-mix(in srgb, var(--violet) 45%, transparent);
@@ -323,7 +343,15 @@ a {
     display: none !important;
   }
 
-  main {
+  /* The shell clips to the viewport on screen; on paper everything flows. */
+  html,
+  body,
+  main,
+  .app-scroll,
+  .app-frame {
+    overflow: visible !important;
+    height: auto !important;
+    max-height: none !important;
     margin: 0 !important;
   }
 

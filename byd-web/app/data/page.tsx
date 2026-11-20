@@ -72,13 +72,13 @@ export default function DataPage() {
         lead="Files stay on this machine. Nothing is uploaded anywhere else, and the model reads them locally."
         actions={
           <Button variant="primary" onClick={() => fileInput.current?.click()} disabled={uploading}>
-            <Upload size={16} strokeWidth={2.5} />
+            <Upload size={16} strokeWidth={2.25} />
             {uploading ? "Uploading…" : "Upload file"}
           </Button>
         }
       />
 
-      <div className="px-8 pb-16">
+      <div className="app-scroll px-5 sm:px-8 pb-16">
         <input
           ref={fileInput}
           type="file"
@@ -93,7 +93,7 @@ export default function DataPage() {
 
         {error ? (
           <div className="mb-4 flex items-start gap-2 rounded-[var(--r-card)] bg-coral-wash px-4 py-3 text-[13px] text-[#b5301c]">
-            <AlertTriangle size={16} strokeWidth={2.5} className="mt-px shrink-0" />
+            <AlertTriangle size={16} strokeWidth={2.25} className="mt-px shrink-0" />
             <span className="flex-1">{error}</span>
             <button onClick={() => setError(null)} className="font-semibold underline">
               Dismiss
@@ -140,7 +140,7 @@ export default function DataPage() {
         ) : sources.length === 0 ? (
           <Panel>
             <EmptyState
-              icon={<FileSpreadsheet size={20} strokeWidth={2.5} />}
+              icon={<FileSpreadsheet size={20} strokeWidth={2.25} />}
               title="No data yet"
               body="Upload a spreadsheet and it becomes available to every report you create."
               action={

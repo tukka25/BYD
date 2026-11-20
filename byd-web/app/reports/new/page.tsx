@@ -75,10 +75,11 @@ export default function NewReportPage() {
         lead="Name it, choose which data it can read, then start asking questions on the canvas."
       />
 
-      <div className="max-w-2xl px-8 pb-24">
+      <div className="app-scroll px-5 pb-24 sm:px-8">
+        <div className="max-w-2xl">
         {error ? (
           <div className="mb-4 flex items-start gap-2 rounded-[var(--r-card)] bg-coral-wash px-4 py-3 text-[13px] text-[#b5301c]">
-            <AlertTriangle size={16} strokeWidth={2.5} className="mt-px shrink-0" />
+            <AlertTriangle size={16} strokeWidth={2.25} className="mt-px shrink-0" />
             <span className="flex-1">{error}</span>
           </div>
         ) : null}
@@ -117,7 +118,7 @@ export default function NewReportPage() {
                   disabled={uploading}
                   className="inline-flex items-center gap-1.5 text-[13px] font-semibold text-violet disabled:opacity-50"
                 >
-                  <Upload size={14} strokeWidth={2.5} />
+                  <Upload size={14} strokeWidth={2.25} />
                   {uploading ? "Uploading…" : "Upload new"}
                 </button>
               </div>
@@ -191,7 +192,8 @@ export default function NewReportPage() {
               </Button>
             </div>
           </div>
-        </Panel>
+          </Panel>
+        </div>
       </div>
     </AppShell>
   );
