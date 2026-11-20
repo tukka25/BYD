@@ -20,7 +20,15 @@ ap.add_argument("--lengths", default="512,768,1024,1280,1536")
 ap.add_argument("--num-layers", type=int, default=16)
 ap.add_argument("--checkpoint", action="store_true")
 ap.add_argument("--batch-size", type=int, default=1)
+ap.add_argument("--max-gb", type=float, default=None,
+                help="fail if peak memory exceeds this; pass the GPU working set, not RAM")
 args = ap.parse_args()
+
+if args.max_gb is None:
+    # 75% of the GPU working set. mlx allocates past it and lets the OS swap
+    # instead of raising, so an explicit budget is the only real check.
+    args.max_gb = mx.device_info()["max_recommended_working_set_size"] / 1024**3 * 0.75
+print(f"budget: {args.max_gb:.2f} GB", flush=True)
 
 model, tok = load(args.model)
 model.freeze()
@@ -49,6 +57,16 @@ for L in [int(x) for x in args.lengths.split(",")]:
         peak = mx.get_peak_memory() / 1024**3
         act = mx.get_active_memory() / 1024**3
         print(f"{L:>6} {peak:>9.2f} {peak-act:>18.2f} {(peak-act)*1024/L:>10.2f}", flush=True)
+        if args.max_gb is not None and peak > args.max_gb:
+            # Not an error from mlx's point of view -- it will happily allocate
+            # past the GPU working set and let the OS swap, which does not fail,
+            # it just crawls and then dies inside the real training loop.
+            print(
+                f"       OVER BUDGET: {peak:.2f} GB peak > {args.max_gb:.2f} GB allowed. "
+                "mlx did not raise because it spills to swap.",
+                flush=True,
+            )
+            sys.exit(1)
     except Exception as e:
         print(f"{L:>6}    OOM/err: {str(e)[:70]}", flush=True)
         # Non-zero exit so a caller can branch on "this config does not fit".

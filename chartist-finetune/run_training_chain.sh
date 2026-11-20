@@ -89,27 +89,33 @@ grep -E "^  (train|valid)|^PASS" "$CHAIN/01_token_gate.log" | tee -a "$CHAIN/cha
 # Each candidate is tested on a synthetic batch of exactly MAXLEN tokens, which
 # is the worst case the real run can hit. First one that fits wins.
 stage "memory gate (worst-case $MAXLEN-token batch)"
+# Budget = 75% of the GPU working set. mlx will allocate PAST the working set
+# and let the OS swap rather than raising, so "it did not crash" is not a pass:
+# the plain config measured 96.93 GB peak against a 24.96 GB GPU and still
+# returned 0, then OOMed inside the real training loop 13 minutes later.
 CHOSEN=""
 declare -a EXTRA_FLAGS
 try_config() {                       # $1 = label, $2.. = extra lora flags
     local label="$1"; shift
     local log="$CHAIN/02_mem_${label}.log"
     say "  trying: $label"
-    if "$PY" probe_mem.py --model "$MODEL" --lengths "$MAXLEN" --batch-size "$BATCH" \
+    if "$PY" -u probe_mem.py --model "$MODEL" --lengths "$MAXLEN" --batch-size "$BATCH" \
             "$@" > "$log" 2>&1; then
-        grep -E "^ *$MAXLEN|model loaded" "$log" | sed 's/^/      /' | tee -a "$CHAIN/chain.log"
+        grep -E "^ *$MAXLEN|model loaded|budget:" "$log" | sed 's/^/      /' | tee -a "$CHAIN/chain.log"
         CHOSEN="$label"; EXTRA_FLAGS=("$@"); return 0
     fi
-    say "      does not fit ($(grep -o 'OOM/err.*' "$log" | head -1 | cut -c1-60))"
+    say "      does not fit ($(grep -oE 'OOM/err.*|OVER BUDGET.*' "$log" | head -1 | cut -c1-72))"
     return 1
 }
-#   plain -> checkpointed -> checkpointed with half the LoRA layers.
-#   grad-checkpoint costs ~25% speed, so it is not the first choice; num-layers 8
-#   costs model capacity, so it is the last.
-try_config "plain"            --num-layers 16 \
-  || try_config "checkpoint"  --num-layers 16 --checkpoint \
-  || try_config "checkpoint8" --num-layers 8  --checkpoint \
-  || die "even 8 LoRA layers with checkpointing will not fit a $MAXLEN-token batch. Free more memory (README 4b) or lower MAXLEN via cap_dataset.py."
+#   --grad-checkpoint is FIRST, not a fallback. This is a hybrid model: 24 of its
+#   32 layers are linear attention, which carries a 2 MB recurrent state PER
+#   TIMESTEP (32 value heads x 128 x 128, fp32). Retained for the backward pass
+#   that is 3 GB per layer at 1536 tokens, ~74 GB across 24 layers. Checkpointing
+#   recomputes them one layer at a time and is the only thing that makes this fit.
+try_config "checkpoint"        --num-layers 16 --checkpoint \
+  || try_config "checkpoint8"  --num-layers 8  --checkpoint \
+  || try_config "checkpoint4"  --num-layers 4  --checkpoint \
+  || die "even 4 LoRA layers with checkpointing exceeds the budget at $MAXLEN tokens. Lower MAXLEN: .venv/bin/python cap_dataset.py --limit 1024 --out data/mlx_1024, then DATA=data/mlx_1024 MAXLEN=1024 ./run_training_chain.sh"
 say "chosen config: $CHOSEN"
 
 LORA_FLAGS=()
