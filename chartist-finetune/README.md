@@ -244,13 +244,38 @@ per-step memory, which is the cheapest insurance available. Remember that
 
 ### 5. Train
 
-Measured sizing: 1,929 train rows, 965 steps per epoch at batch size 2, so `--iters 1930` is two epochs.
+**Use the chain.** It gates worst-case memory, trains, summarises, then evaluates
+base and adapter, stopping at the first failure:
 
 ```bash
-cd chartist-finetune && .venv/bin/python -m mlx_lm lora --model models/qwen3.5-9b-4bit --train --data data/mlx --adapter-path runs/lora-v1/adapters --batch-size 2 --max-seq-length 4096 --iters 1930 --steps-per-report 25 --steps-per-eval 200 --save-every 200 2>&1 | tee runs/lora-v1/train.log
+cd /Users/atukka/Desktop/BYD/chartist-finetune && nohup caffeinate -ims ./run_training_chain.sh > runs/chain/nohup.log 2>&1 & disown
+```
+
+The equivalent single command, for a manual run:
+
+```bash
+cd chartist-finetune && .venv/bin/python -m mlx_lm lora --model models/qwen3.5-9b-4bit --train --data data/mlx_1536 --adapter-path runs/lora-v1/adapters --batch-size 1 --grad-accumulation-steps 2 --max-seq-length 1536 --iters 3852 --steps-per-report 25 --steps-per-eval 650 --save-every 200 --val-batches -1 --seed 42 --mask-prompt 2>&1 | tee runs/lora-v1/train.log
 ```
 
 QLoRA is automatic because `--model` points at a quantised model.
+
+Three things in that command are not obvious, and each one is a bug fixed:
+
+- **`--batch-size 1 --grad-accumulation-steps 2`, not `--batch-size 2`.** The
+  gradient is divided by the accumulation steps (`tuner/trainer.py:257`), so the
+  effective batch and the learning-rate semantics are identical, at half the peak
+  activation memory. `--batch-size 2 --max-seq-length 4096` OOMs on this machine.
+- **`--iters` counts MICRO-steps under accumulation.** 1,926 capped rows x 2 epochs
+  at batch 1 is **3,852**, which is 1,926 optimizer updates. Passing 1930 here
+  would train one epoch on half the data, not two epochs.
+- **`--data data/mlx_1536`, the capped copy.** No row in it exceeds the
+  `--max-seq-length`, so nothing is ever truncated and the loss cannot go nan.
+
+`--steps-per-eval 650` with `--val-batches -1` gives about seven full-validation
+points across the run. Full rather than sampled because mlx-lm reshuffles the
+validation order on every evaluation and does not reseed it, so a capped
+`--val-batches` would score a *different* random subset each time and add noise to
+the one signal the overfitting call depends on.
 
 **Read the validation loss, not the clock.** Falls then flattens → let it finish. Falls then **rises** → overfitting; note the iteration where it turned, stop, re-run with `--iters` just below it. Training loss barely moving → add `--learning-rate 1e-4`. On OOM, `sudo sysctl iogpu.wired_limit_mb=28000` (not persistent across reboots).
 
@@ -266,7 +291,7 @@ cd chartist-finetune && .venv/bin/python evaluate.py --label base --adapter-path
 cd chartist-finetune && .venv/bin/python evaluate.py --label lora-v1 --adapter-path runs/lora-v1/adapters
 ```
 
-`evaluate.py` does not exist yet — stage 11 of the plan specifies it. Run the **full 300 rows**, not a subset: at n=300 a ~16pp gap between the two arms is detectable, where n=40 would only show ≥31pp.
+`run_training_chain.sh` runs both of these for you. Run the **full 300 rows**, not a subset: at n=300 a ~16pp gap between the two arms is detectable, where n=40 would only show ≥31pp. `evaluate.py` loads the model once and batches generation through `mlx_lm.batch_generate`; the per-row shell-out in the original plan would have reloaded 6 GB three hundred times.
 
 Two things to know when reading the numbers. The frozen set is deliberately **not** production-mix — a 15-row floor per chart bucket puts `gauge_or_indicator` at 5.7% against a 2% quota — so the base-versus-tuned comparison is unbiased (both arms see the same rows) but any "what would production look like" figure must be quota-weighted. And the hallucination metric comes from `failure_kind == "hallucinated_column"`, classified from the execution error, not from a static column check; the static one was dropped as a gate because it rejected every chart that derives its own columns.
 

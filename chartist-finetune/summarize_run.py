@@ -23,8 +23,12 @@ ANSI = re.compile(r"\x1b\[[0-9;]*[A-Za-z]")
 # Formats from mlx_lm/cli_ui.py, with rich markup resolved:
 #   train: "  {it:>4}    {loss:>5.3f} ▼    {tok/s:>5,.0f}    {tokens:>5.1f}k"
 #   val:   "  {it:>4}    val {loss:>5.3f}    {secs:.2f}s"
-VAL = re.compile(r"^\s*(\d+)\s+val\s+([0-9]*\.?[0-9]+)")
-TRAIN = re.compile(r"^\s*(\d+)\s+([0-9]*\.?[0-9]+)\s*[▼▲]?\s+([\d,]+)")
+NUM = r"(nan|-?inf|[0-9]*\.?[0-9]+)"
+# nan must be matched, not skipped. A truncated row can make the loss nan
+# (see cap_dataset.py), and one nan gradient poisons the whole run -- the
+# single most important thing this report can tell you.
+VAL = re.compile(r"^\s*(\d+)\s+val\s+" + NUM)
+TRAIN = re.compile(r"^\s*(\d+)\s+" + NUM + r"\s*[▼▲]?\s+([\d,]+)")
 
 
 def main() -> int:
@@ -37,11 +41,19 @@ def main() -> int:
         print(f"no log at {path}")
         return 1
 
+    text = path.read_text(encoding="utf-8", errors="replace")
+    crashed = None
+    if "OutOfMemory" in text:
+        crashed = "ran out of GPU memory (Metal). See README section 4b."
+    elif "Traceback (most recent call last)" in text:
+        last = [l for l in text.splitlines() if l.strip() and not l.startswith(" ")]
+        crashed = f"crashed: {last[-1][:160]}" if last else "crashed (see the log)"
+
     train: list[tuple[int, float]] = []
     val: list[tuple[int, float]] = []
     saves: list[str] = []
 
-    for raw in path.read_text(encoding="utf-8", errors="replace").splitlines():
+    for raw in text.splitlines():
         line = ANSI.sub("", raw)
         m = VAL.match(line)
         if m:
@@ -55,9 +67,27 @@ def main() -> int:
             train.append((int(m.group(1)), float(m.group(2))))
 
     print(f"log: {path}")
+    if crashed:
+        print(f"\n  *** RUN DID NOT FINISH: {crashed}")
     print(f"  train reports : {len(train)}")
     print(f"  val reports   : {len(val)}")
     print(f"  checkpoints   : {len(saves)}")
+
+    def is_nan(x: float) -> bool:
+        return x != x or x in (float("inf"), float("-inf"))
+
+    bad = [(it, v) for it, v in train + val if is_nan(v)]
+    if bad:
+        first_bad = min(bad, key=lambda p: p[0])
+        print(
+            f"\n  *** LOSS WENT NON-FINITE at iter {first_bad[0]}. "
+            "Every weight after that point is poisoned;\n"
+            "      this adapter is worthless and must be retrained. The usual cause is a row\n"
+            "      whose prompt alone exceeds --max-seq-length: mlx-lm truncates it, the loss\n"
+            "      mask ends up empty, and ce = 0/0. Use cap_dataset.py to DROP those rows.\n"
+            f"      Check the log for: [WARNING] Some sequences are longer than"
+        )
+        return 1
 
     if not train and not val:
         print(

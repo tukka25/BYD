@@ -31,8 +31,8 @@ model.train()
 nparam = sum(v.size for _, v in tree_flatten(model.trainable_parameters()))
 mx.eval(model.parameters())
 base = mx.get_peak_memory() / 1024**3
-print(f"model loaded: trainable {nparam/1e6:.2f}M | weights resident ~{mx.get_active_memory()/1024**3:.2f} GB")
-print(f"checkpoint={args.checkpoint} num_layers={args.num_layers} batch={args.batch_size}\n")
+print(f"model loaded: trainable {nparam/1e6:.2f}M | weights resident ~{mx.get_active_memory()/1024**3:.2f} GB", flush=True)
+print(f"checkpoint={args.checkpoint} num_layers={args.num_layers} batch={args.batch_size}\n", flush=True)
 print(f"{'seq':>6} {'peak GB':>9} {'delta vs weights':>18} {'MB/token':>10}")
 print("-" * 50)
 
@@ -48,9 +48,12 @@ for L in [int(x) for x in args.lengths.split(",")]:
         mx.eval(lv, toks, grad)
         peak = mx.get_peak_memory() / 1024**3
         act = mx.get_active_memory() / 1024**3
-        print(f"{L:>6} {peak:>9.2f} {peak-act:>18.2f} {(peak-act)*1024/L:>10.2f}")
+        print(f"{L:>6} {peak:>9.2f} {peak-act:>18.2f} {(peak-act)*1024/L:>10.2f}", flush=True)
     except Exception as e:
-        print(f"{L:>6}    OOM/err: {str(e)[:70]}")
-        break
+        print(f"{L:>6}    OOM/err: {str(e)[:70]}", flush=True)
+        # Non-zero exit so a caller can branch on "this config does not fit".
+        sys.exit(1)
     del grad
     gc.collect()
+
+sys.exit(0)

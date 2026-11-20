@@ -10,6 +10,9 @@
 # Override via the environment:
 #   ITERS=1200 MAXLEN=2048 MASK_PROMPT=0 ./run_overnight.sh
 #
+# Defaults below are the config that FITS on a 32 GB M2 Pro. The original
+# batch 2 / max-seq-length 4096 / data/mlx combination OOMs -- README section 4b.
+# For the full unattended run including evaluation, prefer ./run_training_chain.sh
 # Flags below were checked against mlx-lm 0.32.2's own --help (runs/mlx_help.txt).
 # mlx-lm renders its own progress bar and loss lines (mlx_lm/cli_ui.py: TrainUI),
 # so nothing here wraps or re-implements that; output is redirected to a log.
@@ -18,11 +21,12 @@ set -euo pipefail
 cd "$(dirname "$0")"
 
 MODEL="${MODEL:-models/qwen3.5-9b-4bit}"
-DATA="${DATA:-data/mlx}"
+DATA="${DATA:-data/mlx_1536}"   # capped: no row is truncated (see cap_dataset.py)
 ADAPTERS="${ADAPTERS:-runs/lora-v1/adapters}"
-ITERS="${ITERS:-1930}"          # 965 steps/epoch at batch 2 -> two epochs
-BATCH="${BATCH:-2}"
-MAXLEN="${MAXLEN:-4096}"        # measured, not estimated: see check_token_lengths.py
+ITERS="${ITERS:-3852}"          # MICRO-steps: 1926 rows x 2 epochs at batch 1
+BATCH="${BATCH:-1}"
+ACCUM="${ACCUM:-2}"             # effective batch 2; halves peak memory
+MAXLEN="${MAXLEN:-1536}"        # 4096 OOMed on 32 GB; see README section 4b
 REPORT="${REPORT:-10}"
 EVAL_EVERY="${EVAL_EVERY:-150}"
 SAVE_EVERY="${SAVE_EVERY:-200}"
@@ -79,6 +83,7 @@ ARGS=(
     --data "$DATA"
     --adapter-path "$ADAPTERS"
     --batch-size "$BATCH"
+    --grad-accumulation-steps "$ACCUM"
     --max-seq-length "$MAXLEN"
     --iters "$ITERS"
     --steps-per-report "$REPORT"

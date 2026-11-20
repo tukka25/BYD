@@ -1,0 +1,44 @@
+{
+  "limit": 1536,
+  "source": "data/mlx",
+  "splits": {
+    "train": {
+      "kept": 1926,
+      "dropped": 3,
+      "dropped_pct": 0.156,
+      "dropped_rows": [
+        {
+          "question_id": "docs-0467",
+          "tokens": 2562,
+          "chart_bucket": null,
+          "hard_case": "easy"
+        },
+        {
+          "question_id": "docs-0832",
+          "tokens": 2892,
+          "chart_bucket": null,
+          "hard_case": "easy"
+        },
+        {
+          "question_id": "docs-0386",
+          "tokens": 2565,
+          "chart_bucket": null,
+          "hard_case": "easy"
+        }
+      ]
+    },
+    "valid": {
+      "kept": 259,
+      "dropped": 1,
+      "dropped_pct": 0.385,
+      "dropped_rows": [
+        {
+          "question_id": "docs-0668",
+          "tokens": 2231,
+          "chart_bucket": null,
+          "hard_case": "easy"
+        }
+      ]
+    }
+  }
+}
