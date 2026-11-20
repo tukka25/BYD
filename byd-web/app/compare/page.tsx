@@ -234,8 +234,14 @@ export default function ComparePage() {
   }
 
 
-  const scored = (engine: Engine) => cells.filter((c) => c.engine === engine && c.ok).length;
+  /* A chart drawn by the deterministic fallback is the harness working, not
+     the model. Counting it as a win overstated both sides -- Opus once scored
+     5/5 on a run where two of its answers had been rejected. */
+  const scored = (engine: Engine) =>
+    cells.filter((c) => c.engine === engine && c.ok && !c.used_fallback).length;
   const attempted = (engine: Engine) => cells.filter((c) => c.engine === engine).length;
+  const fellBack = (engine: Engine) =>
+    cells.filter((c) => c.engine === engine && c.used_fallback).length;
 
   return (
     <AppShell>
@@ -332,9 +338,17 @@ export default function ComparePage() {
                 <>
                   <span>·</span>
                   <span className="tabular">
-                    local {scored("slm")}/{attempted("slm")} · Opus {scored("opus")}/
-                    {attempted("opus")}
+                    own code — local {scored("slm")}/{attempted("slm")} · Opus{" "}
+                    {scored("opus")}/{attempted("opus")}
                   </span>
+                  {fellBack("slm") + fellBack("opus") > 0 ? (
+                    <>
+                      <span>·</span>
+                      <span className="tabular text-[#8a5a00]">
+                        fell back — local {fellBack("slm")} · Opus {fellBack("opus")}
+                      </span>
+                    </>
+                  ) : null}
                   <span>·</span>
                   <span className="tabular">Opus spend ${cost.toFixed(3)}</span>
                 </>

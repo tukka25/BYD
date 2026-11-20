@@ -40,6 +40,10 @@ class ChartistAgent:
         """
         self.llm = llm
         self.generator = generator
+        # Why the last generation fell back, if it did. Without this the
+        # fallback's own (valid) code is all anyone can inspect afterwards,
+        # and the reason the model's answer was rejected is gone.
+        self.last_violations: list[str] = []
 
         self.prompt = ChatPromptTemplate.from_messages([
             ("system", CHARTIST_SYSTEM_PROMPT),
@@ -139,6 +143,7 @@ class ChartistAgent:
         if ContractViolation.NO_JSON_PRINT in violations and "fig =" in code:
             code = f"{code}\nprint(fig.to_json())"
             violations = validate_chart_code(code)
+        self.last_violations = [v.value for v in violations]
         if violations:
             logger.warning("[chartist] contract violations %s, using fallback", violations)
             return self._fallback_plotly_code(data_context, viz_type)

@@ -102,7 +102,13 @@ def run_cell(
 
     result.code = code
     result.used_fallback = FALLBACK_MARKER in code
-    result.violations = [v.value for v in validate_chart_code(code)]
+    # On a fallback these are the reasons the MODEL's code was rejected, which
+    # is the interesting part; otherwise they describe the code that ran.
+    result.violations = (
+        list(getattr(chartist, "last_violations", []))
+        if result.used_fallback
+        else [v.value for v in validate_chart_code(code)]
+    )
 
     # The API model reports its own cost and latency; the local one is timed
     # by the same clock that wraps both.

@@ -40,9 +40,12 @@ logger = logging.getLogger(__name__)
 
 MODEL = "claude-opus-5-5"
 
-# A Plotly snippet is a few hundred tokens; the headroom is for thinking, which
-# is always on for this model. Non-streaming stays well inside the SDK timeout.
-MAX_TOKENS = 16000
+# Thinking is always on for this model and is billed as output, so it counts
+# against this budget. At 16000 a chart was truncated mid-generation after 155
+# seconds and its code was unusable -- which the comparison then scored as the
+# model failing, when it was this number failing. Streamed, so a budget this
+# size cannot hit the SDK's request timeout either.
+MAX_TOKENS = 32000
 
 
 class ClaudeUnavailable(RuntimeError):
@@ -89,7 +92,7 @@ class ClaudeGenerator:
 
         started = time.perf_counter()
         try:
-            response = self._client.messages.create(
+            with self._client.messages.stream(
                 model=MODEL,
                 max_tokens=MAX_TOKENS,
                 system=CHARTIST_SYSTEM_PROMPT,
@@ -97,7 +100,8 @@ class ClaudeGenerator:
                 # Thinking cannot be turned off on this model; effort is the
                 # only control, and the default is medium. Set, not assumed.
                 output_config={"effort": self._effort},
-            )
+            ) as stream:
+                response = stream.get_final_message()
         except anthropic.RateLimitError as exc:
             raise RuntimeError(f"Claude rate limited: {exc}") from exc
         except anthropic.APIStatusError as exc:
@@ -106,6 +110,19 @@ class ClaudeGenerator:
             raise RuntimeError(f"Could not reach Claude: {exc}") from exc
 
         elapsed = time.perf_counter() - started
+
+        if response.stop_reason == "max_tokens":
+            # Half a script is worse than none: say so rather than letting the
+            # truncated text fail the contract and look like a bad answer.
+            self.last = ClaudeCall(
+                text="",
+                input_tokens=response.usage.input_tokens,
+                output_tokens=response.usage.output_tokens,
+                seconds=elapsed,
+                refused="truncated at max_tokens",
+            )
+            logger.warning("[claude-chartist] truncated at %s tokens", MAX_TOKENS)
+            return ""
 
         if response.stop_reason == "refusal":
             category = getattr(response.stop_details, "category", None)
