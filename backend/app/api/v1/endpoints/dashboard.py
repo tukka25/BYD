@@ -270,6 +270,9 @@ async def generate_dashboard(
                 # The generated program, so a caller can tell whether the model
                 # wrote the chart or the deterministic fallback did.
                 "code": result.get("code", ""),
+                # The figure itself, so a client can render it with its own
+                # bundled Plotly instead of the CDN script in dashboard_html.
+                "figure": decode_typed_arrays(figure) if figure else None,
                 "used_fallback": "promptdash: deterministic fallback" in (result.get("code") or ""),
             }
         }

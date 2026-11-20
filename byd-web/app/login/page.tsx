@@ -2,8 +2,11 @@
 
 import { FormEvent, useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
+import { AlertTriangle, ChartNoAxesColumn, ShieldCheck } from "lucide-react";
 import { backendBaseUrl, fetchCurrentUser } from "@/lib/backend";
 import { loadCurrentUser, saveSession } from "@/lib/auth";
+import { fetchHealth, type LocalHealth } from "@/lib/reports";
+import { Button, Field, Panel, inputClass } from "@/components/ui";
 
 export default function LoginPage() {
   const router = useRouter();
@@ -12,9 +15,11 @@ export default function LoginPage() {
   const [password, setPassword] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [health, setHealth] = useState<LocalHealth | null>(null);
 
   useEffect(() => {
     if (loadCurrentUser()) router.replace("/");
+    fetchHealth().then(setHealth);
   }, [router]);
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
@@ -42,7 +47,7 @@ export default function LoginPage() {
           const body = (await registerResponse.json().catch(() => null)) as
             | { detail?: string }
             | null;
-          throw new Error(body?.detail ?? "Failed to register user");
+          throw new Error(body?.detail ?? "Could not create that account");
         }
         loginResponse = await fetch(`${baseUrl}/api/v1/auth/login`, {
           method: "POST",
@@ -53,7 +58,7 @@ export default function LoginPage() {
 
       if (!loginResponse.ok) {
         const body = (await loginResponse.json().catch(() => null)) as { detail?: string } | null;
-        throw new Error(body?.detail ?? "Failed to login");
+        throw new Error(body?.detail ?? "That email and password did not match");
       }
 
       const tokenData = (await loginResponse.json()) as { access_token: string };
@@ -61,67 +66,94 @@ export default function LoginPage() {
       saveSession(user, tokenData.access_token);
       router.push("/");
     } catch (err) {
-      setError(err instanceof Error ? err.message : "Failed to login");
+      setError(err instanceof Error ? err.message : "Could not sign in");
     } finally {
       setIsSubmitting(false);
     }
   }
 
   return (
-    <div className="app-shell px-6 py-10">
-      <div className="industrial-panel screw-corners mx-auto max-w-md p-8">
-        <p className="label-tech">Access Terminal</p>
-        <h1 className="text-embossed mt-2 font-heading text-3xl font-extrabold">Welcome to PromptDash</h1>
-        <p className="mt-2 max-w-[56ch] text-sm text-foreground-muted">
-          Sign in to access your personal data sources and dashboards.
+    <main className="grid min-h-dvh place-items-center bg-canvas px-6 py-12">
+      <div className="w-full max-w-[26rem]">
+        <div className="mb-7 flex items-center gap-2.5">
+          <span className="grid size-9 place-items-center rounded-[11px] bg-violet text-white">
+            <ChartNoAxesColumn size={19} strokeWidth={2.75} />
+          </span>
+          <span className="font-display text-[21px] font-bold tracking-[-0.03em] text-ink">
+            PromptDash
+          </span>
+        </div>
+
+        <h1 className="font-display text-[32px] font-bold leading-[1.1] text-ink">
+          Ask your data a question
+        </h1>
+        <p className="mt-2 text-[14.5px] leading-relaxed text-muted">
+          Sign in to build reports. If this email is new, an account is created for you.
         </p>
 
-        <form onSubmit={handleSubmit} className="mt-6 space-y-4">
-          <label className="block">
-            <span className="label-tech mb-1 block">Name</span>
-            <input
-              value={name}
-              onChange={(event) => setName(event.target.value)}
-              placeholder="Abdalrahman"
-              className="industrial-input"
-            />
-          </label>
+        <Panel className="mt-6 p-6">
+          <form onSubmit={handleSubmit} className="flex flex-col gap-4">
+            <Field label="Name" hint="Only used when creating a new account." htmlFor="name">
+              <input
+                id="name"
+                value={name}
+                onChange={(event) => setName(event.target.value)}
+                placeholder="Your name"
+                autoComplete="name"
+                className={inputClass}
+              />
+            </Field>
 
-          <label className="block">
-            <span className="label-tech mb-1 block">Email</span>
-            <input
-              type="email"
-              required
-              value={email}
-              onChange={(event) => setEmail(event.target.value)}
-              placeholder="name@company.com"
-              className="industrial-input"
-            />
-          </label>
+            <Field label="Email" htmlFor="email">
+              <input
+                id="email"
+                type="email"
+                required
+                value={email}
+                onChange={(event) => setEmail(event.target.value)}
+                placeholder="you@example.com"
+                autoComplete="email"
+                className={inputClass}
+              />
+            </Field>
 
-          <label className="block">
-            <span className="label-tech mb-1 block">Password</span>
-            <input
-              type="password"
-              required
-              value={password}
-              onChange={(event) => setPassword(event.target.value)}
-              placeholder="Enter any password"
-              className="industrial-input"
-            />
-          </label>
+            <Field label="Password" htmlFor="password">
+              <input
+                id="password"
+                type="password"
+                required
+                value={password}
+                onChange={(event) => setPassword(event.target.value)}
+                placeholder="Your password"
+                autoComplete="current-password"
+                className={inputClass}
+              />
+            </Field>
 
-          {error ? <p className="text-sm text-accent">{error}</p> : null}
+            {error ? (
+              <div className="flex items-start gap-2 rounded-[var(--r-card)] bg-coral-wash px-3.5 py-2.5 text-[13px] text-[#b5301c]">
+                <AlertTriangle size={15} strokeWidth={2.5} className="mt-px shrink-0" />
+                <span>{error}</span>
+              </div>
+            ) : null}
 
-          <button
-            type="submit"
-            disabled={isSubmitting}
-            className="btn-industrial-primary w-full"
-          >
-            {isSubmitting ? "Signing in..." : "Sign In"}
-          </button>
-        </form>
+            <Button type="submit" variant="primary" size="lg" disabled={isSubmitting} className="mt-1">
+              {isSubmitting ? "Signing in…" : "Sign in"}
+            </Button>
+          </form>
+        </Panel>
+
+        <p className="mt-5 flex items-center justify-center gap-2 text-center text-[12.5px] text-muted">
+          <ShieldCheck size={14} strokeWidth={2.5} className="shrink-0 text-teal" />
+          {health ? (
+            <>
+              <span className="font-mono">{health.model}</span> is running on this machine.
+            </>
+          ) : (
+            "Your data and the model stay on this machine."
+          )}
+        </p>
       </div>
-    </div>
+    </main>
   );
 }

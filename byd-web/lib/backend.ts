@@ -49,6 +49,18 @@ export async function authorizedFetch<T>(
     },
   });
 
+  if (response.status === 401) {
+    // The token no longer identifies anyone: expired, or issued against a
+    // different database. Either way the only recovery is signing in again, so
+    // do that rather than surfacing the backend's "User not found".
+    if (typeof window !== "undefined") {
+      window.localStorage.removeItem("promptdash_session_user");
+      window.localStorage.removeItem("promptdash_access_token");
+      window.location.href = "/login";
+    }
+    throw new Error("Your session has expired. Sign in again.");
+  }
+
   if (!response.ok) {
     const body = (await response.json().catch(() => null)) as { detail?: string } | null;
     throw new Error(body?.detail ?? `Request failed (${response.status})`);
