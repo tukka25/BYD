@@ -1,0 +1,713 @@
+{
+  "base": {
+    "label": "base",
+    "base": "Qwen/Qwen3.5-9B",
+    "adapter_path": "none",
+    "n": 300,
+    "render_rate": 0.0767,
+    "render_rate_quota_weighted": 0.0655,
+    "right_shape_rate": 0.0467,
+    "hallucinated_column_rate": 0.0,
+    "failure_kinds": {
+      "missing_json_print": 2,
+      "no_figure_assignment": 4,
+      "runtime_error": 4,
+      "syntax_error": 267
+    },
+    "by_bucket": {
+      "area": {
+        "n": 25,
+        "render_rate": 0.08,
+        "right_shape_rate": 0.0
+      },
+      "bar": {
+        "n": 33,
+        "render_rate": 0.03,
+        "right_shape_rate": 0.03
+      },
+      "box": {
+        "n": 23,
+        "render_rate": 0.043,
+        "right_shape_rate": 0.043
+      },
+      "gauge_or_indicator": {
+        "n": 17,
+        "render_rate": 0.353,
+        "right_shape_rate": 0.0
+      },
+      "grouped_or_stacked_bar": {
+        "n": 27,
+        "render_rate": 0.0,
+        "right_shape_rate": 0.0
+      },
+      "heatmap": {
+        "n": 23,
+        "render_rate": 0.043,
+        "right_shape_rate": 0.0
+      },
+      "histogram": {
+        "n": 24,
+        "render_rate": 0.208,
+        "right_shape_rate": 0.208
+      },
+      "line": {
+        "n": 33,
+        "render_rate": 0.121,
+        "right_shape_rate": 0.121
+      },
+      "pie_or_donut": {
+        "n": 25,
+        "render_rate": 0.04,
+        "right_shape_rate": 0.04
+      },
+      "scatter": {
+        "n": 27,
+        "render_rate": 0.0,
+        "right_shape_rate": 0.0
+      },
+      "time_series": {
+        "n": 22,
+        "render_rate": 0.091,
+        "right_shape_rate": 0.091
+      },
+      "treemap_funnel_waterfall": {
+        "n": 21,
+        "render_rate": 0.0,
+        "right_shape_rate": 0.0
+      }
+    },
+    "by_hard_case": {
+      "ambiguous_question": {
+        "n": 25,
+        "render_rate": 0.2
+      },
+      "date_parsing_and_resampling": {
+        "n": 19,
+        "render_rate": 0.053
+      },
+      "easy": {
+        "n": 186,
+        "render_rate": 0.054
+      },
+      "grouped_or_faceted": {
+        "n": 18,
+        "render_rate": 0.056
+      },
+      "missing_field": {
+        "n": 19,
+        "render_rate": 0.316
+      },
+      "multi_column_aggregation": {
+        "n": 33,
+        "render_rate": 0.0
+      }
+    },
+    "generation_minutes": 4.5,
+    "failures": [
+      {
+        "test_id": "t0000",
+        "bucket": "line",
+        "hard_case": null,
+        "failure_kind": null,
+        "violations": [
+          "syntax_error"
+        ],
+        "error": "",
+        "code": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Input:** A pandas DataFrame `df` with specific columns (`snap_dt`, `plan_tier`, `reg_chnl`, `cntry_cd`, `actv_usr_cnt`, `churn_cnt`, `mrr_usd`, `nrr_pct`).\n    *   **Task:** Create a Plotly figure showing the \"Monthly MRR trend for the whole business\".\n    *   **Constraints:**\n        *   `df` already exists (do not recreate).\n        *   Use only existing column names.\n        *   Assign figure to `fig`.\n        *   End with `print(fig.t"
+      },
+      {
+        "test_id": "t0001",
+        "bucket": "time_series",
+        "hard_case": "multi_column_aggregation",
+        "failure_kind": null,
+        "violations": [
+          "syntax_error"
+        ],
+        "error": "",
+        "code": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Input: A pandas DataFrame `df` with specific columns (`transaction_date`, `transaction_channel`, `transaction_type`, `transaction_region`, `transaction_count`, `transaction_total_amount`, `transaction_avg_amount`).\n    *   Task: Create a Plotly figure showing \"Daily total amount and average transaction count per channel over time\".\n    *   Constraints:\n        *   `df` already exists (do not reload).\n        *   Use only existing column nam"
+      },
+      {
+        "test_id": "t0002",
+        "bucket": "bar",
+        "hard_case": null,
+        "failure_kind": null,
+        "violations": [
+          "syntax_error"
+        ],
+        "error": "",
+        "code": "df_grouped = df.groupby('ROOM_TYPE_CD')['ADR_AMT'].mean().reset_index()\n    df_grouped.columns = ['ROOM_TYPE_CD', 'AVG_ADR']"
+      },
+      {
+        "test_id": "t0003",
+        "bucket": "bar",
+        "hard_case": null,
+        "failure_kind": null,
+        "violations": [
+          "syntax_error"
+        ],
+        "error": "",
+        "code": "import plotly.express as px\n\n    # Aggregate data\n    grouped = df.groupby('warehouse_region')['total_inventory_value'].sum().reset_index()\n\n    # Create figure\n    fig = px.bar(grouped, x='warehouse_region', y='total_inventory_value', title='Total Inventory Value by Warehouse Region')\n\n    print(fig.to_json())"
+      },
+      {
+        "test_id": "t0004",
+        "bucket": "box",
+        "hard_case": "grouped_or_faceted",
+        "failure_kind": null,
+        "violations": [
+          "syntax_error"
+        ],
+        "error": "",
+        "code": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Input: A pandas DataFrame `df` with specific columns and schema.\n    *   Task: Create a Plotly figure showing \"Response time spread by severity, grouped by road type\".\n    *   Constraints:\n        *   `df` already exists (do not recreate).\n        *   Use only existing column names.\n        *   Assign figure to `fig`.\n        *   End with `print(fig.to_json())`.\n        *   No `fig.show()`, no file saving, no matplotlib.\n        *   Output "
+      },
+      {
+        "test_id": "t0005",
+        "bucket": "gauge_or_indicator",
+        "hard_case": "grouped_or_faceted",
+        "failure_kind": null,
+        "violations": [
+          "syntax_error"
+        ],
+        "error": "",
+        "code": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Input: A pandas DataFrame `df` with specific columns (`Trip Date`, `Vehicle Type`, `Route Zone`, `Driver Shift`, `Stops Completed`, `Distance Driven`, `Fuel Consumed`, `Average Speed`).\n    *   Task: Create a Plotly figure showing the average speed for each vehicle type compared to the fleet average.\n    *   Constraints:\n        *   `df` already exists (do not recreate).\n        *   Use only existing column names.\n        *   Assign figure "
+      },
+      {
+        "test_id": "t0006",
+        "bucket": "line",
+        "hard_case": null,
+        "failure_kind": null,
+        "violations": [
+          "syntax_error"
+        ],
+        "error": "",
+        "code": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Input:** A pandas DataFrame `df` with specific columns (`shift_date`, `team_name`, `shift_type`, `site_location`, `scheduled_agent_count`, `logged_in_agent_count`, `average_handle_time_seconds`, `service_level_percent`).\n    *   **Task:** Track the monthly trend in scheduled agents for Sales.\n    *   **Constraints:**\n        *   `df` already exists (do not create/reload).\n        *   Use only existing column names.\n        *   Assign figu"
+      },
+      {
+        "test_id": "t0007",
+        "bucket": "line",
+        "hard_case": "ambiguous_question",
+        "failure_kind": null,
+        "violations": [
+          "syntax_error"
+        ],
+        "error": "",
+        "code": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Input: A pandas DataFrame `df` with specific columns (`shpmt_dt`, `carr_nm`, `svc_lvl`, `orig_rgn`, `wt_lbs`, `frt_chg_usd`, `transit_days`).\n    *   Task: Create a Plotly figure to answer \"How are carriers doing lately?\".\n    *   Constraints:\n        *   `df` already exists (do not recreate).\n        *   Use only existing column names.\n        *   Assign figure to `fig`.\n        *   End with `print(fig.to_json())`.\n        *   No `fig.show"
+      },
+      {
+        "test_id": "t0008",
+        "bucket": "treemap_funnel_waterfall",
+        "hard_case": "grouped_or_faceted",
+        "failure_kind": null,
+        "violations": [
+          "syntax_error"
+        ],
+        "error": "",
+        "code": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Input: A pandas DataFrame `df` with specific columns (`stayDate`, `propertyName`, `roomType`, `marketSegment`, `roomsAvailable`, `roomsSold`, `averageDailyRate`, `totalRoomRevenue`).\n    *   Task: Break down total room revenue from property to market segment to room type, with the biggest contributors on top.\n    *   Constraints:\n        *   `df` already exists (do not create/read).\n        *   Use only existing column names.\n        *   As"
+      },
+      {
+        "test_id": "t0009",
+        "bucket": "bar",
+        "hard_case": null,
+        "failure_kind": null,
+        "violations": [
+          "syntax_error"
+        ],
+        "error": "",
+        "code": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Input: A pandas DataFrame `df` with specific columns (`stay_date`, `property_name`, `room_type`, `distribution_channel`, `rooms_available`, `rooms_sold`, `average_daily_rate`, `total_room_revenue`).\n    *   Task: Identify which property sold the most room nights last year.\n    *   Constraints:\n        *   `df` already exists (do not create/reload).\n        *   Use only existing column names.\n        *   Assign figure to `fig`.\n        *   E"
+      },
+      {
+        "test_id": "t0010",
+        "bucket": "heatmap",
+        "hard_case": null,
+        "failure_kind": null,
+        "violations": [
+          "syntax_error"
+        ],
+        "error": "",
+        "code": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Input: A pandas DataFrame `df` with specific columns (`transaction_date`, `transaction_channel`, `transaction_type`, `transaction_region`, `transaction_count`, `transaction_total_amount`, `transaction_avg_amount`).\n    *   Task: Show transaction volume by region and channel as a colour grid.\n    *   Constraints:\n        *   `df` already exists (do not create/reload).\n        *   Use only existing column names.\n        *   Assign figure to `"
+      },
+      {
+        "test_id": "t0011",
+        "bucket": "scatter",
+        "hard_case": null,
+        "failure_kind": null,
+        "violations": [
+          "syntax_error"
+        ],
+        "error": "",
+        "code": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Input: A pandas DataFrame `df` with specific columns (`stay_dt`, `prop_cd`, `rm_typ`, `chn_src`, `rms_avl`, `rms_sold`, `adr_usd`, `tot_rev`).\n    *   Task: Create a Plotly figure showing \"Revenue versus rooms sold for each property\".\n    *   Constraints:\n        *   `df` already exists (do not recreate).\n        *   Use only existing column names.\n        *   Assign figure to `fig`.\n        *   End with `print(fig.to_json())`.\n        *   "
+      },
+      {
+        "test_id": "t0012",
+        "bucket": "scatter",
+        "hard_case": null,
+        "failure_kind": null,
+        "violations": [
+          "syntax_error"
+        ],
+        "error": "",
+        "code": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Input:** A pandas DataFrame `df` with specific columns (`snap_dt`, `plan_tier`, `reg_chnl`, `cntry_cd`, `actv_usr_cnt`, `churn_cnt`, `mrr_usd`, `nrr_pct`).\n    *   **Task:** Determine if there is a relationship between MRR (`mrr_usd`) and net retention (`nrr_pct`) by plan tier (`plan_tier`).\n    *   **Constraints:**\n        *   `df` already exists (do not create/read).\n        *   Use only existing column names.\n        *   Assign figure "
+      },
+      {
+        "test_id": "t0013",
+        "bucket": "area",
+        "hard_case": "missing_field",
+        "failure_kind": "runtime_error",
+        "violations": [],
+        "error": "File \"<candidate>\", line 7, in <module>\n  File \"/usr/local/lib/python3.12/dist-packages/pandas/core/frame.py\", line 4649, in __setitem__\n    self._set_item_frame_value(key, value)\n  File \"/usr/local/lib/python3.12/dist-packages/pandas/core/frame.py\", line 4834, in _set_item_frame_value\n    raise Val",
+        "code": "import plotly.express as px\n\n# Parse enrollment_date and group by year\ndf['year'] = pd.to_datetime(df['enrollment_date']).dt.year\n\n\ndf['total_credits'] = df.groupby('year')['credit_hours'].sum().reset_index()\nfig = px.line(df, x='year', y='total_credits', title='Tuition Revenue Growth (by Credit Hours)')\nprint(fig.to_json())"
+      },
+      {
+        "test_id": "t0014",
+        "bucket": "histogram",
+        "hard_case": null,
+        "failure_kind": null,
+        "violations": [
+          "syntax_error"
+        ],
+        "error": "",
+        "code": "import plotly.express as px\n        fig = px.histogram(df, x='avg_spd_kph', nbins=50)\n        print(fig.to_json())"
+      },
+      {
+        "test_id": "t0015",
+        "bucket": "scatter",
+        "hard_case": null,
+        "failure_kind": null,
+        "violations": [
+          "syntax_error"
+        ],
+        "error": "",
+        "code": "import plotly.express as px\n\nfig = px.scatter(df, x='ENROLL_CNT', y='GRADE_PTS_AVG', color='DEPT_CD', title='Class Size vs Academic Performance', labels={'EN"
+      },
+      {
+        "test_id": "t0016",
+        "bucket": "time_series",
+        "hard_case": null,
+        "failure_kind": null,
+        "violations": [
+          "syntax_error"
+        ],
+        "error": "",
+        "code": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Input: A pandas DataFrame `df` with specific columns (`snapshot_date`, `department_name`, `employment_type`, `work_location`, `headcount_total`, `employees_departed`, `attrition_rate_percent`, `average_tenure_years`).\n    *   Task: Visualize how total headcount has changed over time across all departments.\n    *   Constraints:\n        *   `df` already exists (do not create/reload).\n        *   Use only existing column names.\n        *   Ass"
+      },
+      {
+        "test_id": "t0017",
+        "bucket": "grouped_or_stacked_bar",
+        "hard_case": null,
+        "failure_kind": null,
+        "violations": [
+          "syntax_error"
+        ],
+        "error": "",
+        "code": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Input: A pandas DataFrame `df` with specific columns (`Movement Date`, `Warehouse Location`, `Product Category`, `Movement Type`, `Units Moved`, `Unit Cost`, `Total Movement Value`, `Days in Storage`).\n    *   Task: Create a Plotly figure showing \"Return to vendor versus outbound shipments by warehouse, side by side\".\n    *   Constraints:\n        *   `df` already exists (do not create/reload).\n        *   Use only existing column names.\n   "
+      },
+      {
+        "test_id": "t0018",
+        "bucket": "pie_or_donut",
+        "hard_case": null,
+        "failure_kind": null,
+        "violations": [
+          "syntax_error"
+        ],
+        "error": "",
+        "code": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Input: A pandas DataFrame `df` with specific schema (`svc_dt`, `rte_cd`, `mode_cd`, `fare_typ`, `tot_rdr`, `tot_rev`, `avg_wait_min`, `trip_cnt`).\n    *   Task: Calculate the share of total ridership from each fare type.\n    *   Output: A Plotly figure assigned to variable `fig`.\n    *   Constraints:\n        *   Do not create `df`.\n        *   Do not use `pd.read_*`, `px.data.*`, or URLs.\n        *   Use only existing column names.\n        "
+      },
+      {
+        "test_id": "t0019",
+        "bucket": "line",
+        "hard_case": null,
+        "failure_kind": null,
+        "violations": [
+          "syntax_error"
+        ],
+        "error": "",
+        "code": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Input: A pandas DataFrame `df` with specific schema (`txn_dt`, `rgn_cd`, `chnl_cd`, `txn_typ_cd`, `txn_cnt`, `txn_amt`).\n    *   Task: Show total daily transaction count over time.\n    *   Constraints:\n        *   `df` already exists (do not create/reload).\n        *   Use only existing column names.\n        *   Assign figure to `fig`.\n        *   End with `print(fig.to_json())`.\n        *   No `fig.show()`, no file saving, no matplotlib, n"
+      },
+      {
+        "test_id": "t0020",
+        "bucket": "time_series",
+        "hard_case": null,
+        "failure_kind": null,
+        "violations": [
+          "syntax_error"
+        ],
+        "error": "",
+        "code": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Input: A pandas DataFrame `df` with specific columns (`movement_date`, `warehouse_region`, `product_category`, `movement_type`, `units_moved`, `unit_cost`, `total_inventory_value`).\n    *   Task: Show total units moved by day across the period.\n    *   Constraints:\n        *   `df` already exists (do not create/reload).\n        *   Use only existing column names.\n        *   Assign figure to `fig`.\n        *   End with `print(fig.to_json())"
+      },
+      {
+        "test_id": "t0021",
+        "bucket": "grouped_or_stacked_bar",
+        "hard_case": null,
+        "failure_kind": null,
+        "violations": [
+          "syntax_error"
+        ],
+        "error": "",
+        "code": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Input: A pandas DataFrame `df` with specific columns (`STAY_DT`, `PROPERTY_CD`, `ROOM_TYPE_CD`, `CHANNEL_CD`, `ROOMS_AVL_CNT`, `ROOMS_SOLD_CNT`, `ADR_AMT`, `TOT_REV_AMT`).\n    *   Task: Compare rooms sold by channel for each property.\n    *   Constraints:\n        *   `df` already exists (do not create/read).\n        *   Use only existing column names.\n        *   Assign figure to `fig`.\n        *   End with `print(fig.to_json())`.\n        *"
+      },
+      {
+        "test_id": "t0022",
+        "bucket": "pie_or_donut",
+        "hard_case": null,
+        "failure_kind": null,
+        "violations": [
+          "syntax_error"
+        ],
+        "error": "",
+        "code": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Input: A pandas DataFrame `df` with specific columns (`scorecardDate`, `supplierName`, `sourceRegion`, `commodityType`, `onTimeDeliveryRate`, `defectRatePct`, `orderLeadTimeDays`, `totalOrderValue`).\n    *   Task: Create a Plotly figure showing the \"Share of scorecards by supplier, which ones dominate?\".\n    *   Constraints:\n        *   `df` already exists (do not recreate).\n        *   Use only existing column names.\n        *   Assign fig"
+      },
+      {
+        "test_id": "t0023",
+        "bucket": "grouped_or_stacked_bar",
+        "hard_case": null,
+        "failure_kind": null,
+        "violations": [
+          "syntax_error"
+        ],
+        "error": "",
+        "code": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Input: A pandas DataFrame `df` with specific columns (`enrollmentDate`, `departmentName`, `courseLevel`, `semesterTerm`, `studentCount`, `averageGradePoints`, `totalCreditHours`).\n    *   Task: Create a Plotly figure showing \"Students per course level, stacked by semester term\".\n    *   Constraints:\n        *   `df` already exists (do not recreate).\n        *   Use only existing column names.\n        *   Assign figure to `fig`.\n        *   "
+      },
+      {
+        "test_id": "t0024",
+        "bucket": "grouped_or_stacked_bar",
+        "hard_case": null,
+        "failure_kind": null,
+        "violations": [
+          "syntax_error"
+        ],
+        "error": "",
+        "code": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Input: A pandas DataFrame `df` with a specific schema.\n    *   Task: Compare dinner and lunch orders across each sales channel.\n    *   Constraints:\n        *   `df` already exists (do not create/reload).\n        *   Use only provided column names.\n        *   Assign figure to `fig`.\n        *   End with `print(fig.to_json())`.\n        *   No `fig.show()`, no file saving, no matplotlib, no markdown, no explanation.\n        *   Output execut"
+      }
+    ]
+  },
+  "lora-v1": {
+    "label": "lora-v1",
+    "base": "Qwen/Qwen3.5-9B",
+    "adapter_path": "/workspace/outputs/lora-v1",
+    "n": 300,
+    "render_rate": 0.9133,
+    "render_rate_quota_weighted": 0.9347,
+    "right_shape_rate": 0.81,
+    "hallucinated_column_rate": 0.0067,
+    "failure_kinds": {
+      "hallucinated_column": 2,
+      "no_figure": 1,
+      "runtime_error": 23
+    },
+    "by_bucket": {
+      "area": {
+        "n": 25,
+        "render_rate": 1.0,
+        "right_shape_rate": 0.68
+      },
+      "bar": {
+        "n": 33,
+        "render_rate": 1.0,
+        "right_shape_rate": 0.939
+      },
+      "box": {
+        "n": 23,
+        "render_rate": 1.0,
+        "right_shape_rate": 0.913
+      },
+      "gauge_or_indicator": {
+        "n": 17,
+        "render_rate": 0.824,
+        "right_shape_rate": 0.706
+      },
+      "grouped_or_stacked_bar": {
+        "n": 27,
+        "render_rate": 0.926,
+        "right_shape_rate": 0.889
+      },
+      "heatmap": {
+        "n": 23,
+        "render_rate": 0.913,
+        "right_shape_rate": 0.609
+      },
+      "histogram": {
+        "n": 24,
+        "render_rate": 0.958,
+        "right_shape_rate": 0.917
+      },
+      "line": {
+        "n": 33,
+        "render_rate": 0.97,
+        "right_shape_rate": 0.939
+      },
+      "pie_or_donut": {
+        "n": 25,
+        "render_rate": 1.0,
+        "right_shape_rate": 0.92
+      },
+      "scatter": {
+        "n": 27,
+        "render_rate": 1.0,
+        "right_shape_rate": 0.963
+      },
+      "time_series": {
+        "n": 22,
+        "render_rate": 0.955,
+        "right_shape_rate": 0.955
+      },
+      "treemap_funnel_waterfall": {
+        "n": 21,
+        "render_rate": 0.238,
+        "right_shape_rate": 0.048
+      }
+    },
+    "by_hard_case": {
+      "ambiguous_question": {
+        "n": 25,
+        "render_rate": 0.92
+      },
+      "date_parsing_and_resampling": {
+        "n": 19,
+        "render_rate": 0.842
+      },
+      "easy": {
+        "n": 186,
+        "render_rate": 0.941
+      },
+      "grouped_or_faceted": {
+        "n": 18,
+        "render_rate": 0.722
+      },
+      "missing_field": {
+        "n": 19,
+        "render_rate": 0.895
+      },
+      "multi_column_aggregation": {
+        "n": 33,
+        "render_rate": 0.909
+      }
+    },
+    "generation_minutes": 5.4,
+    "failures": [
+      {
+        "test_id": "t0005",
+        "bucket": "gauge_or_indicator",
+        "hard_case": "grouped_or_faceted",
+        "failure_kind": "runtime_error",
+        "violations": [],
+        "error": "ck (most recent call last):\n  File \"/workspace/chartist/_candidate_runner.py\", line 41, in <module>\n    sys.exit(main())\n             ^^^^^^\n  File \"/workspace/chartist/_candidate_runner.py\", line 33, in main\n    exec(code, {\"df\": df, \"pandas\": pd, \"pd\": pd, \"px\": px, \"go\": go, \"json\": json})\n  File",
+        "code": "import plotly.express as px\n\nagg = df.groupby('Vehicle Type', as_index=False)['Average Speed'].mean()\nagg['Vehicle Type'] = agg['Vehicle Type'].astype(str)\nagg['Label'] = agg['Vehicle Type'] + ' (Avg: ' + agg['Average Speed'].round(2).astype(str) + ')'\nfig = px.bar(agg, x='Vehicle Type', y='Average Speed', text='Label', title='Average Speed by Vehicle Type (Fleet Average: ' + round(df['Average Speed'].mean(), 2) + ')', labels={'Vehicle Type': 'Vehicle Type', 'Average Speed': 'Average Speed'})\nfi"
+      },
+      {
+        "test_id": "t0008",
+        "bucket": "treemap_funnel_waterfall",
+        "hard_case": "grouped_or_faceted",
+        "failure_kind": "runtime_error",
+        "violations": [],
+        "error": "py\", line 24, in <module>\n    from pyarrow._dataset import (  # noqa\n  File \"pyarrow/_dataset.pyx\", line 1, in init pyarrow._dataset\n  File \"pyarrow/_fs.pyx\", line 51, in init pyarrow._fs\n  File \"pyarrow/_fs.pyx\", line 38, in pyarrow._fs._init_ca_paths\n  File \"/usr/lib/python3.12/ssl.py\", line 944, ",
+        "code": "import plotly.express as px\n\nagg = df.groupby(['propertyName', 'marketSegment', 'roomType'], as_index=False)['totalRoomRevenue'].sum()\nagg = agg[agg['totalRoomRevenue'] > 0]\nagg['cumulativeRevenue'] = agg.groupby('propertyName')['totalRoomRevenue'].cumsum()\nagg = agg.sort_values(['propertyName', 'cumulativeRevenue'], ascending=[True, False])\n\nfig = px.treemap(\n    agg,\n    path=[px.Constant('All Properties'), 'propertyName', 'marketSegment', 'roomType'],\n    values='totalRoomRevenue',\n    color="
+      },
+      {
+        "test_id": "t0017",
+        "bucket": "grouped_or_stacked_bar",
+        "hard_case": null,
+        "failure_kind": "no_figure",
+        "violations": [],
+        "error": "figure has no traces (rendered nothing)",
+        "code": "import plotly.express as px\n\nd = df[df['Movement Type'].isin(['Return to vendor', 'Outbound shipment'])]\nagg = d.groupby(['Movement Type', 'Warehouse Location'], as_index=False)['Units Moved'].sum()\nfig = px.bar(agg, x='Warehouse Location', y='Units Moved', color='Movement Type', barmode='group', title='Return to Vendor vs Outbound Shipments by Warehouse')\nfig.update_layout(xaxis_title='Warehouse Location', yaxis_title='Units Moved', legend_title_text='Movement Type')\nprint(fig.to_json())"
+      },
+      {
+        "test_id": "t0061",
+        "bucket": "treemap_funnel_waterfall",
+        "hard_case": "date_parsing_and_resampling",
+        "failure_kind": "runtime_error",
+        "violations": [],
+        "error": "py\", line 24, in <module>\n    from pyarrow._dataset import (  # noqa\n  File \"pyarrow/_dataset.pyx\", line 1, in init pyarrow._dataset\n  File \"pyarrow/_fs.pyx\", line 51, in init pyarrow._fs\n  File \"pyarrow/_fs.pyx\", line 38, in pyarrow._fs._init_ca_paths\n  File \"/usr/lib/python3.12/ssl.py\", line 944, ",
+        "code": "import pandas as pd\nimport plotly.express as px\n\nd = df.copy()\nd['ridership_service_date'] = pd.to_datetime(d['ridership_service_date'])\nd['month'] = d['ridership_service_date'].dt.to_period('M').dt.to_timestamp()\nd['quarter'] = d['ridership_service_date'].dt.to_period('Q').astype(str)\nagg = d.groupby(['quarter', 'month', 'ridership_vehicle_type', 'ridership_fare_type'], as_index=False)['ridership_fare_revenue'].sum()\nagg = agg.sort_values('quarter')\nfig = px.treemap(agg, path=[px.Constant('All "
+      },
+      {
+        "test_id": "t0062",
+        "bucket": "treemap_funnel_waterfall",
+        "hard_case": null,
+        "failure_kind": "runtime_error",
+        "violations": [],
+        "error": "py\", line 24, in <module>\n    from pyarrow._dataset import (  # noqa\n  File \"pyarrow/_dataset.pyx\", line 1, in init pyarrow._dataset\n  File \"pyarrow/_fs.pyx\", line 51, in init pyarrow._fs\n  File \"pyarrow/_fs.pyx\", line 38, in pyarrow._fs._init_ca_paths\n  File \"/usr/lib/python3.12/ssl.py\", line 944, ",
+        "code": "import plotly.express as px\n\nagg = df.groupby(['customerSegment', 'subscriptionPlan'], as_index=False)['activeCustomers'].sum()\nfig = px.treemap(agg, path=[px.Constant('All Customers'), 'customerSegment', 'subscriptionPlan'], values='activeCustomers', color='activeCustomers', color_continuous_scale='Blues')\nfig.update_traces(textinfo='label+value+percent parent', root_color='lightgrey')\nfig.update_layout(title='Active Customers by Customer Segment and Subscription Plan', margin=dict(t=60, l=10, "
+      },
+      {
+        "test_id": "t0071",
+        "bucket": "treemap_funnel_waterfall",
+        "hard_case": "grouped_or_faceted",
+        "failure_kind": "runtime_error",
+        "violations": [],
+        "error": "py\", line 24, in <module>\n    from pyarrow._dataset import (  # noqa\n  File \"pyarrow/_dataset.pyx\", line 1, in init pyarrow._dataset\n  File \"pyarrow/_fs.pyx\", line 51, in init pyarrow._fs\n  File \"pyarrow/_fs.pyx\", line 38, in pyarrow._fs._init_ca_paths\n  File \"/usr/lib/python3.12/ssl.py\", line 944, ",
+        "code": "import plotly.express as px\n\nagg = df.groupby(['svc_pd', 'chan'], as_index=False)['tot_rev'].sum()\nfig = px.treemap(agg, path=[px.Constant('All Revenue'), 'svc_pd', 'chan'], values='tot_rev', color='tot_rev', color_continuous_scale='Blues')\nfig.update_traces(textinfo='label+value+percent parent', root_color='lightgrey')\nfig.update_layout(title='Revenue by Service Period and Channel', margin=dict(t=60, l=10, r=10, b=10))\nprint(fig.to_json())"
+      },
+      {
+        "test_id": "t0099",
+        "bucket": "treemap_funnel_waterfall",
+        "hard_case": null,
+        "failure_kind": "runtime_error",
+        "violations": [],
+        "error": "py\", line 24, in <module>\n    from pyarrow._dataset import (  # noqa\n  File \"pyarrow/_dataset.pyx\", line 1, in init pyarrow._dataset\n  File \"pyarrow/_fs.pyx\", line 51, in init pyarrow._fs\n  File \"pyarrow/_fs.pyx\", line 38, in pyarrow._fs._init_ca_paths\n  File \"/usr/lib/python3.12/ssl.py\", line 944, ",
+        "code": "import plotly.express as px\n\nagg = df.groupby(['mode_cd', 'fare_typ'], as_index=False).agg(tot_rdr=('tot_rdr', 'sum'), tot_rev=('tot_rev', 'sum'))\n\nfig = px.treemap(\n    agg,\n    path=[px.Constant('All Modes'), 'mode_cd', 'fare_typ'],\n    values='tot_rdr',\n    color='tot_rev',\n    color_continuous_scale='Blues',\n    title='Ridership and Revenue by Transport Mode and Fare Type'\n)\nfig.update_traces(\n    textinfo='label+value+percent parent',\n    texttemplate='%{label}<br>Riders: %{value:,.0f}<br>R"
+      },
+      {
+        "test_id": "t0115",
+        "bucket": "heatmap",
+        "hard_case": "missing_field",
+        "failure_kind": "runtime_error",
+        "violations": [],
+        "error": "sr/local/lib/python3.12/dist-packages/plotly/express/_core.py\", line 2533, in make_figure\n    args = build_dataframe(args, constructor)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/plotly/express/_core.py\", line 1661, in build_dataframe\n    raise Valu",
+        "code": "import pandas as pd\nimport plotly.express as px\n\nd = df.copy()\nd['appt_dt'] = pd.to_datetime(d['appt_dt'], errors='coerce')\nd = d.dropna(subset=['appt_dt'])\nd['weekday'] = d['appt_dt'].dt.day_name()\norder = ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday']\npivot = d.pivot_table(index='weekday', columns='spec_nm', values='wait_min', aggfunc='mean')\npivot = pivot.reindex(index=[w for w in order if w in pivot.index])\nfig = px.bar(pivot, x=pivot.columns, y=pivot.values, labels"
+      },
+      {
+        "test_id": "t0116",
+        "bucket": "treemap_funnel_waterfall",
+        "hard_case": "ambiguous_question",
+        "failure_kind": "runtime_error",
+        "violations": [],
+        "error": "py\", line 24, in <module>\n    from pyarrow._dataset import (  # noqa\n  File \"pyarrow/_dataset.pyx\", line 1, in init pyarrow._dataset\n  File \"pyarrow/_fs.pyx\", line 51, in init pyarrow._fs\n  File \"pyarrow/_fs.pyx\", line 38, in pyarrow._fs._init_ca_paths\n  File \"/usr/lib/python3.12/ssl.py\", line 944, ",
+        "code": "import plotly.express as px\n\nagg = df.groupby(['cropType', 'soilType'], as_index=False)['yieldKgPerHa'].mean()\nfig = px.treemap(agg, path=[px.Constant('All Crops'), 'cropType', 'soilType'], values='yieldKgPerHa', color='yieldKgPerHa', color_continuous_scale='Viridis')\nfig.update_traces(textinfo='label+value+percent parent', root_color='lightgrey')\nfig.update_layout(title='Average Yield (kg/ha) by Crop Type and Soil Type', margin=dict(t=60, l=10, r=10, b=10))\nprint(fig.to_json())"
+      },
+      {
+        "test_id": "t0152",
+        "bucket": "treemap_funnel_waterfall",
+        "hard_case": "multi_column_aggregation",
+        "failure_kind": "runtime_error",
+        "violations": [],
+        "error": "py\", line 24, in <module>\n    from pyarrow._dataset import (  # noqa\n  File \"pyarrow/_dataset.pyx\", line 1, in init pyarrow._dataset\n  File \"pyarrow/_fs.pyx\", line 51, in init pyarrow._fs\n  File \"pyarrow/_fs.pyx\", line 38, in pyarrow._fs._init_ca_paths\n  File \"/usr/lib/python3.12/ssl.py\", line 944, ",
+        "code": "import plotly.express as px\n\nagg = df.groupby(['sales_service_period', 'sales_channel'], as_index=False).agg(sales=('sales_subtotal_amount', 'sum'), tips=('sales_tip_amount', 'sum'))\n\nfig = px.treemap(\n    agg,\n    path=[px.Constant('All periods'), 'sales_service_period', 'sales_channel'],\n    values='sales',\n    color='tips',\n    color_continuous_scale='Blues',\n    title='Sales and Tips: Service Period to Channel'\n)\nfig.update_traces(\n    textinfo='label+value+percent parent',\n    texttemplate="
+      },
+      {
+        "test_id": "t0153",
+        "bucket": "histogram",
+        "hard_case": null,
+        "failure_kind": "runtime_error",
+        "violations": [],
+        "error": "sr/local/lib/python3.12/dist-packages/plotly/express/_core.py\", line 2533, in make_figure\n    args = build_dataframe(args, constructor)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/plotly/express/_core.py\", line 1661, in build_dataframe\n    raise Valu",
+        "code": "import pandas as pd\nimport plotly.express as px\n\nd = df.copy()\nd['stay_date'] = pd.to_datetime(d['stay_date'])\nd['day_of_week'] = d['stay_date'].dt.day_name()\norder = ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday']\npivot = d.pivot_table(index='day_of_week', columns='room_type', values='rooms_sold', aggfunc='mean')\npivot = pivot.reindex(index=[x for x in order if x in pivot.index])\nfig = px.bar(pivot, x=pivot.columns, y=pivot.values, labels={'room_type': 'Room Type', 'roo"
+      },
+      {
+        "test_id": "t0177",
+        "bucket": "line",
+        "hard_case": "multi_column_aggregation",
+        "failure_kind": "runtime_error",
+        "violations": [],
+        "error": "ib/python3.12/dist-packages/plotly/basedatatypes.py\", line 2343, in _set_trace_grid_position\n    return _set_trace_grid_reference(\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/plotly/_subplots.py\", line 1409, in _set_trace_grid_reference\n    raise Exception(\n",
+        "code": "import pandas as pd\nimport plotly.graph_objects as go\nfrom plotly.subplots import make_subplots\n\nd = df.copy()\nd['stayDate'] = pd.to_datetime(d['stayDate'])\nd['month'] = d['stayDate'].dt.to_period('M').dt.to_timestamp()\ng = d.groupby(['month', 'propertyName'], as_index=False).agg(avgRate=('averageDailyRate', 'mean'), roomsSold=('roomsSold', 'sum'))\ng = g.sort_values('month')\nmonths = g['month'].unique()\nn = len(months)\ncols = min(3, max(1, n))\nrows = (n + cols - 1) // cols\nfig = make_subplots(ro"
+      },
+      {
+        "test_id": "t0204",
+        "bucket": "treemap_funnel_waterfall",
+        "hard_case": null,
+        "failure_kind": "runtime_error",
+        "violations": [],
+        "error": "py\", line 24, in <module>\n    from pyarrow._dataset import (  # noqa\n  File \"pyarrow/_dataset.pyx\", line 1, in init pyarrow._dataset\n  File \"pyarrow/_fs.pyx\", line 51, in init pyarrow._fs\n  File \"pyarrow/_fs.pyx\", line 38, in pyarrow._fs._init_ca_paths\n  File \"/usr/lib/python3.12/ssl.py\", line 944, ",
+        "code": "import plotly.express as px\n\nagg = df.groupby(['academic_term', 'department_name'], as_index=False)['credit_hours'].sum()\nfig = px.treemap(agg, path=[px.Constant('All Terms'), 'academic_term', 'department_name'], values='credit_hours', color='credit_hours', color_continuous_scale='Blues')\nfig.update_traces(textinfo='label+value+percent parent', root_color='lightgrey')\nfig.update_layout(title='Total Credit Hours by Term and Department', margin=dict(t=60, l=10, r=10, b=10))\nprint(fig.to_json())"
+      },
+      {
+        "test_id": "t0208",
+        "bucket": "treemap_funnel_waterfall",
+        "hard_case": null,
+        "failure_kind": "runtime_error",
+        "violations": [],
+        "error": "py\", line 24, in <module>\n    from pyarrow._dataset import (  # noqa\n  File \"pyarrow/_dataset.pyx\", line 1, in init pyarrow._dataset\n  File \"pyarrow/_fs.pyx\", line 51, in init pyarrow._fs\n  File \"pyarrow/_fs.pyx\", line 38, in pyarrow._fs._init_ca_paths\n  File \"/usr/lib/python3.12/ssl.py\", line 944, ",
+        "code": "import plotly.express as px\nimport pandas as pd\n\nd = df.copy()\nd['REGION_CD'] = d['REGION_CD'].fillna('Unknown')\nd['PLAN_TIER_CD'] = d['PLAN_TIER_CD'].fillna('Unknown')\nd['MRR_LOST'] = d['MRR_AMT']\nagg = d.groupby(['REGION_CD', 'PLAN_TIER_CD'], as_index=False)['MRR_LOST'].sum()\nagg = agg[agg['MRR_LOST'] > 0]\nfig = px.treemap(agg, path=[px.Constant('All Regions'), 'REGION_CD', 'PLAN_TIER_CD'], values='MRR_LOST', color='MRR_LOST', color_continuous_scale='Reds')\nfig.update_traces(textinfo='label+va"
+      },
+      {
+        "test_id": "t0216",
+        "bucket": "gauge_or_indicator",
+        "hard_case": "date_parsing_and_resampling",
+        "failure_kind": "runtime_error",
+        "violations": [],
+        "error": "on3.12/dist-packages/pandas/core/accessor.py\", line 231, in __get__\n    return self._accessor(obj)\n           ^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/pandas/core/indexes/accessors.py\", line 883, in __new__\n    raise AttributeError(\"Can only use .dt accessor with datetimel",
+        "code": "import pandas as pd\nimport plotly.express as px\n\nd = df.copy()\nd['transactionDate'] = pd.to_datetime(d['transactionDate'], errors='coerce')\nd = d.dropna(subset=['transactionDate'])\ncurrent_year = pd.Timestamp.today().year\nd = d[d['transactionDate'].dt.year == current_year]\nif d.empty:\n    current_year = df['transactionDate'].dt.year.max()\n    d = df.copy()\n    d['transactionDate'] = pd.to_datetime(d['transactionDate'], errors='coerce')\n    d = d.dropna(subset=['transactionDate'])\n    d = d[d['tr"
+      },
+      {
+        "test_id": "t0223",
+        "bucket": "heatmap",
+        "hard_case": "grouped_or_faceted",
+        "failure_kind": "hallucinated_column",
+        "violations": [],
+        "error": "                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/plotly/express/_core.py\", line 1380, in process_args_into_dataframe\n    raise ValueError(err_msg)\nValueError: Value of 'color' is not the name of a column in 'data_frame'. Expected one of ['incide",
+        "code": "import plotly.express as px\n\ncounts = df.groupby(['incident_weather_condition', 'incident_road_type']).size().reset_index(name='incident_count')\nfig = px.bar(counts, x='incident_weather_condition', y='incident_count', color='incident_severity_level', barmode='stack', facet_col='incident_road_type', facet_col_wrap=2, labels={'incident_weather_condition': 'Weather Condition', 'incident_count': 'Incident Count', 'incident_severity_level': 'Severity', 'incident_road_type': 'Road Type'}, title='Incid"
+      },
+      {
+        "test_id": "t0234",
+        "bucket": "treemap_funnel_waterfall",
+        "hard_case": null,
+        "failure_kind": "runtime_error",
+        "violations": [],
+        "error": "py\", line 24, in <module>\n    from pyarrow._dataset import (  # noqa\n  File \"pyarrow/_dataset.pyx\", line 1, in init pyarrow._dataset\n  File \"pyarrow/_fs.pyx\", line 51, in init pyarrow._fs\n  File \"pyarrow/_fs.pyx\", line 38, in pyarrow._fs._init_ca_paths\n  File \"/usr/lib/python3.12/ssl.py\", line 944, ",
+        "code": "import plotly.express as px\n\nagg = df.groupby(['severityLevel', 'roadType']).size().reset_index(name='incidentCount')\nfig = px.treemap(agg, path=[px.Constant('All Incidents'), 'severityLevel', 'roadType'], values='incidentCount', color='incidentCount', color_continuous_scale='Blues')\nfig.update_traces(textinfo='label+value+percent parent', root_color='lightgrey')\nfig.update_layout(title='Incidents by Severity Level and Road Type', margin=dict(t=60, l=10, r=10, b=10))\nprint(fig.to_json())"
+      },
+      {
+        "test_id": "t0235",
+        "bucket": "treemap_funnel_waterfall",
+        "hard_case": null,
+        "failure_kind": "runtime_error",
+        "violations": [],
+        "error": "py\", line 24, in <module>\n    from pyarrow._dataset import (  # noqa\n  File \"pyarrow/_dataset.pyx\", line 1, in init pyarrow._dataset\n  File \"pyarrow/_fs.pyx\", line 51, in init pyarrow._fs\n  File \"pyarrow/_fs.pyx\", line 38, in pyarrow._fs._init_ca_paths\n  File \"/usr/lib/python3.12/ssl.py\", line 944, ",
+        "code": "import plotly.express as px\n\nagg = df.groupby(['clinic_location', 'appointment_type', 'insurance_provider'], as_index=False)['total_revenue'].sum()\nfig = px.treemap(agg, path=[px.Constant('All Clinics'), 'clinic_location', 'appointment_type', 'insurance_provider'], values='total_revenue', color='total_revenue', color_continuous_scale='Blues')\nfig.update_traces(textinfo='label+value+percent parent', root_color='lightgrey')\nfig.update_layout(title='Revenue Breakdown: Clinic Location > Appointment "
+      },
+      {
+        "test_id": "t0241",
+        "bucket": "time_series",
+        "hard_case": "multi_column_aggregation",
+        "failure_kind": "runtime_error",
+        "violations": [],
+        "error": "ackages/plotly/subplots.py\", line 304, in make_subplots\n    return _sub.make_subplots(\n           ^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/plotly/_subplots.py\", line 517, in make_subplots\n    raise ValueError(\nValueError: \nThe shared_yaxes argument to make_subplots must be",
+        "code": "import pandas as pd\nimport plotly.graph_objects as go\nfrom plotly.subplots import make_subplots\n\nd = df.copy()\nd['SERVICE_DT'] = pd.to_datetime(d['SERVICE_DT'])\nd['MONTH'] = d['SERVICE_DT'].dt.to_period('M').dt.to_timestamp()\ng = d.groupby(['MONTH', 'ROUTE_CD'], as_index=False)[['TOT_BOARD_CNT', 'TOT_REV_AMT']].sum()\ng = g.sort_values('MONTH')\n\nroutes = sorted(g['ROUTE_CD'].unique())\nn = len(routes)\ncols = min(2, n)\nrows = (n + cols - 1) // cols\nfig = make_subplots(rows=rows, cols=cols, shared_y"
+      },
+      {
+        "test_id": "t0248",
+        "bucket": "treemap_funnel_waterfall",
+        "hard_case": "date_parsing_and_resampling",
+        "failure_kind": "runtime_error",
+        "violations": [],
+        "error": "py\", line 24, in <module>\n    from pyarrow._dataset import (  # noqa\n  File \"pyarrow/_dataset.pyx\", line 1, in init pyarrow._dataset\n  File \"pyarrow/_fs.pyx\", line 51, in init pyarrow._fs\n  File \"pyarrow/_fs.pyx\", line 38, in pyarrow._fs._init_ca_paths\n  File \"/usr/lib/python3.12/ssl.py\", line 944, ",
+        "code": "import pandas as pd\nimport plotly.express as px\n\nd = df.copy()\nd['Snapshot Date'] = pd.to_datetime(d['Snapshot Date'], errors='coerce')\nd = d.dropna(subset=['Snapshot Date'])\nd['Quarter'] = d['Snapshot Date'].dt.to_period('Q').astype(str)\nagg = d.groupby(['Quarter', 'Customer Region', 'Churn Reason'], as_index=False)['Monthly Recurring Revenue'].sum()\nagg = agg.sort_values('Quarter')\nfig = px.treemap(agg, path=[px.Constant('All Quarters'), 'Quarter', 'Customer Region', 'Churn Reason'], values='M"
+      },
+      {
+        "test_id": "t0249",
+        "bucket": "treemap_funnel_waterfall",
+        "hard_case": "ambiguous_question",
+        "failure_kind": "runtime_error",
+        "violations": [],
+        "error": "py\", line 24, in <module>\n    from pyarrow._dataset import (  # noqa\n  File \"pyarrow/_dataset.pyx\", line 1, in init pyarrow._dataset\n  File \"pyarrow/_fs.pyx\", line 51, in init pyarrow._fs\n  File \"pyarrow/_fs.pyx\", line 38, in pyarrow._fs._init_ca_paths\n  File \"/usr/lib/python3.12/ssl.py\", line 944, ",
+        "code": "import plotly.express as px\n\nagg = df.groupby(['trip_route_zone', 'trip_vehicle_type'], as_index=False)['trip_distance_km'].sum()\nfig = px.treemap(agg, path=[px.Constant('All Zones'), 'trip_route_zone', 'trip_vehicle_type'], values='trip_distance_km', color='trip_distance_km', color_continuous_scale='Blues')\nfig.update_traces(textinfo='label+value+percent parent', root_color='lightgrey')\nfig.update_layout(title='Trips by Zone and Vehicle Type (total distance km)', margin=dict(t=60, l=10, r=10, b"
+      },
+      {
+        "test_id": "t0251",
+        "bucket": "treemap_funnel_waterfall",
+        "hard_case": null,
+        "failure_kind": "runtime_error",
+        "violations": [],
+        "error": "py\", line 24, in <module>\n    from pyarrow._dataset import (  # noqa\n  File \"pyarrow/_dataset.pyx\", line 1, in init pyarrow._dataset\n  File \"pyarrow/_fs.pyx\", line 51, in init pyarrow._fs\n  File \"pyarrow/_fs.pyx\", line 38, in pyarrow._fs._init_ca_paths\n  File \"/usr/lib/python3.12/ssl.py\", line 944, ",
+        "code": "import plotly.express as px\n\nagg = df.groupby(['regionCode', 'queueName'], as_index=False)['callsOffered'].sum()\nfig = px.treemap(agg, path=[px.Constant('All Regions'), 'regionCode', 'queueName'], values='callsOffered', color='callsOffered', color_continuous_scale='Blues')\nfig.update_traces(textinfo='label+value+percent parent', root_color='lightgrey')\nfig.update_layout(title='Calls Offered: Region to Queue Drill-down', margin=dict(t=60, l=10, r=10, b=10))\nprint(fig.to_json())"
+      },
+      {
+        "test_id": "t0260",
+        "bucket": "treemap_funnel_waterfall",
+        "hard_case": "missing_field",
+        "failure_kind": "runtime_error",
+        "violations": [],
+        "error": "py\", line 24, in <module>\n    from pyarrow._dataset import (  # noqa\n  File \"pyarrow/_dataset.pyx\", line 1, in init pyarrow._dataset\n  File \"pyarrow/_fs.pyx\", line 51, in init pyarrow._fs\n  File \"pyarrow/_fs.pyx\", line 38, in pyarrow._fs._init_ca_paths\n  File \"/usr/lib/python3.12/ssl.py\", line 944, ",
+        "code": "import plotly.express as px\n\nagg = df.groupby(['serviceShift', 'orderChannel', 'diningArea'], as_index=False)['totalRevenue'].sum()\nfig = px.treemap(agg, path=[px.Constant('All Revenue'), 'serviceShift', 'orderChannel', 'diningArea'], values='totalRevenue', color='totalRevenue', color_continuous_scale='Blues')\nfig.update_traces(textinfo='label+value+percent parent', root_color='lightgrey')\nfig.update_layout(title='Revenue by Service Shift, Order Channel and Dining Area', margin=dict(t=60, l=10, "
+      },
+      {
+        "test_id": "t0270",
+        "bucket": "gauge_or_indicator",
+        "hard_case": null,
+        "failure_kind": "hallucinated_column",
+        "violations": [],
+        "error": "bel\n    return self.obj.xs(label, axis=axis)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/pandas/core/generic.py\", line 4291, in xs\n    loc = index.get_loc(key)\n          ^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/pandas/core/indexe",
+        "code": "import pandas as pd\nimport plotly.graph_objects as go\n\nd = df.copy()\nd['snap_dt'] = pd.to_datetime(d['snap_dt'])\nlatest = d.loc[d['snap_dt'].max()]\nnrr = float(latest['nrr_pct'])\nfig = go.Figure(go.Indicator(\n    mode='gauge+number',\n    value=nrr,\n    number={'suffix': '%', 'valueformat': '.1f'},\n    title={'text': 'Latest Net Revenue Retention (%)'},\n    gauge={\n        'axis': {'range': [0, 120]},\n        'bar': {'color': '#1f77b4'},\n        'steps': [\n            {'range': [0, 50], 'color': "
+      },
+      {
+        "test_id": "t0294",
+        "bucket": "treemap_funnel_waterfall",
+        "hard_case": null,
+        "failure_kind": "runtime_error",
+        "violations": [],
+        "error": "py\", line 24, in <module>\n    from pyarrow._dataset import (  # noqa\n  File \"pyarrow/_dataset.pyx\", line 1, in init pyarrow._dataset\n  File \"pyarrow/_fs.pyx\", line 51, in init pyarrow._fs\n  File \"pyarrow/_fs.pyx\", line 38, in pyarrow._fs._init_ca_paths\n  File \"/usr/lib/python3.12/ssl.py\", line 944, ",
+        "code": "import plotly.express as px\n\nagg = df.groupby(['shift_team', 'shift_channel', 'shift_agent_tier'], as_index=False)['shift_calls_handled'].sum()\nfig = px.treemap(agg, path=[px.Constant('All Teams'), 'shift_team', 'shift_channel', 'shift_agent_tier'], values='shift_calls_handled', color='shift_calls_handled', color_continuous_scale='Blues')\nfig.update_traces(textinfo='label+value+percent parent', root_color='lightgrey')\nfig.update_layout(title='Calls Handled: Team > Channel > Agent Tier', margin=d"
+      }
+    ]
+  }
+}

@@ -87,3 +87,72 @@ iterate repeatedly.
 **Stop the pod the moment the run finishes** — it bills whether or not anything
 is using it. The network volume bills per allocated GB from creation until
 deleted, independently of the pod.
+
+## Results (frozen 300, execution-scored, 2026-11-20)
+
+Both arms greedy-decoded, scored by executing every generated script against its
+schema's real CSV through `executor.py` — the same oracle that gated the training
+data. `data/testset.sha256` verified on the pod before the run.
+
+| metric | base | lora-v1 | delta |
+|---|---|---|---|
+| render rate | 7.7% | **91.3%** | **+83.7 pp** |
+| render rate, quota-weighted | 6.6% | **93.5%** | +86.9 pp |
+| right chart shape | 4.7% | **81.0%** | +76.3 pp |
+| hallucinated column | 0.0% | 0.7% | +0.7 pp |
+
+At n=300 per arm the 95% CI half-width on a difference of proportions is ~11 pp,
+so +83.7 is far outside noise.
+
+Validation loss during training, 9 passes: **0.671 untrained → 0.2441 → 0.2194 →
+0.2016 → 0.1910 → 0.1889 → 0.1808 → 0.1771 → 0.1767 → 0.1767.** Flat on the last
+two points and tracking the training loss throughout: converged, no overfitting,
+so the final adapter is the one to serve rather than an earlier checkpoint.
+
+**Why the base scores only 7.7%:** 267 of its 277 failures are `syntax_error`,
+because it answers in prose ("Thinking Process:\n\n1. **Analyze the Request:**…")
+instead of bare Python. Both arms pass through the identical extractor (strip
+`</think>`, strip markdown fences), so the comparison is fair — but the number
+measures "follows the contract out of the box", not "can write Plotly at all". A
+more aggressive code-scraper would lift the base figure somewhat.
+
+### Where it is still weak — the agenda for the next run
+
+| bucket | n | base → lora render | right-shape |
+|---|---|---|---|
+| **treemap_funnel_waterfall** | 21 | 0% → **24%** | **5%** |
+| gauge_or_indicator | 17 | 35% → 82% | 71% |
+| heatmap | 23 | 4% → 91% | 61% |
+| area | 25 | 8% → 100% | 68% |
+| grouped_or_stacked_bar | 27 | 0% → 93% | 89% |
+| everything else (7 buckets) | 187 | 3–21% → 96–100% | 91–96% |
+
+Two distinct problems, and they need different fixes:
+
+1. **`treemap_funnel_waterfall` barely moved** (24% render, 5% right-shape). These
+   are the exotic constructors, and 21 test rows against a 2% quota means the
+   training set had very few of them. This wants targeted data generation, which
+   is what the remaining ~$24.53 of Claude budget is for.
+2. **`area` and `heatmap` render but are the wrong shape** (100%/68% and
+   91%/61%). The code runs and produces a figure, just not the figure that was
+   asked for — `is_area_figure` is catching scatter-family output where an area
+   chart was requested. That is a labelling/targeting problem in the training
+   data, not a syntax one, and it is cheaper to fix than (1).
+
+Remaining lora-v1 failures across all 300: `runtime_error` 23, `hallucinated_column` 2,
+`no_figure` 1.
+
+### Artifacts
+
+`cloud/artifacts/out-min/` (gitignored, 111 MB):
+`adapter_model.safetensors` + `adapter_config.json`. `cloud/eval_report.json` and
+`cloud/adapter_config.json` are tracked. The adapter is fp32 (29,097,984 params x
+4 bytes); cast to bf16 before shipping if size matters.
+
+### Cost
+
+Pod uptime 8,668 s (2 h 24 m) on the A100 at $2.19/hr. `list-pod-billing` reports
+**$3.134537** (GPU $3.126667 + disk $0.007870); elapsed-time arithmetic gives
+~$5.28, so the billing figure was still settling when read. Roughly half of that
+time went to avoidable debugging, itemised above. The 40 GB HIGH_PERFORMANCE
+network volume `cx8x2n8732` keeps billing until deleted, independently of the pod.
