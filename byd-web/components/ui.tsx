@@ -132,7 +132,8 @@ export function Chip({
     <span
       className={cx(
         "inline-flex items-center gap-1.5 rounded-[var(--r-pill)] px-2.5 py-1",
-        "text-[12px] font-semibold leading-none",
+        // A pill that wraps to two lines has stopped being a pill.
+        "whitespace-nowrap text-[12px] font-semibold leading-none",
         CHIP_TONE[tone],
         className,
       )}

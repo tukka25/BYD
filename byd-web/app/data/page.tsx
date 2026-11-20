@@ -181,7 +181,12 @@ export default function DataPage() {
           <ul className="flex flex-col gap-3">
             {sources.map((source) => (
               <li key={source.id}>
-                <Panel className="flex items-center gap-4 p-4">
+                {/* Below ~440px the two chips and the delete control leave the
+                    name about 100px and it ellipses to "Proper…". Letting the
+                    controls wrap to their own line gives the name the full
+                    width instead; on any normal width the row still fits on
+                    one line and looks exactly as it did. */}
+                <Panel className="flex flex-wrap items-center gap-x-4 gap-y-3 p-4">
                   <span className="grid size-11 shrink-0 place-items-center rounded-[var(--r-control)] bg-pine-wash text-pine">
                     {source.source_type === "db" ? (
                       <Database size={19} strokeWidth={2.25} />
@@ -189,34 +194,50 @@ export default function DataPage() {
                       <FileSpreadsheet size={19} strokeWidth={2.25} />
                     )}
                   </span>
-                  <div className="min-w-0 flex-1">
+                  <div className="min-w-0 flex-1 basis-44">
                     <p className="truncate font-semibold text-[14.5px] text-ink">
                       {source.display_name}
                     </p>
+                    {/* A filename is one unbreakable token, so without min-w-0
+                        and a truncate it sets its own min-content width, spills
+                        out of the min-w-0 column and paints under the chips at
+                        375px. The size can wrap to its own line; the name
+                        cannot, so it ellipses instead. */}
                     <p className="mt-0.5 flex flex-wrap items-center gap-x-2 text-[12.5px] text-muted">
                       {source.source_type === "db" ? (
-                        <span className="font-mono">{sourceSubtitle(source)}</span>
+                        <span className="min-w-0 truncate font-mono">{sourceSubtitle(source)}</span>
                       ) : (
                         <>
                           {source.original_filename ? (
-                            <span className="font-mono">{source.original_filename}</span>
+                            <span className="min-w-0 truncate font-mono">
+                              {source.original_filename}
+                            </span>
                           ) : null}
                           {sourceSubtitle(source) ? (
-                            <span className="tabular">{sourceSubtitle(source)}</span>
+                            <span className="shrink-0 tabular">{sourceSubtitle(source)}</span>
                           ) : null}
                         </>
                       )}
                     </p>
                   </div>
-                  <Chip tone={source.source_type === "db" ? "slate" : "neutral"}>
-                    {source.source_type === "db" ? (source.db_type ?? "database") : "File"}
-                  </Chip>
-                  <Chip tone={source.status === "active" ? "pine" : "neutral"}>
-                    {source.status === "active" ? "Ready" : (source.status ?? "unknown")}
-                  </Chip>
-                  <IconButton label={`Remove ${source.display_name}`} tone="danger" onClick={() => remove(source.id)}>
-                    <Trash2 size={16} strokeWidth={2.25} />
-                  </IconButton>
+                  {/* One group, so the controls wrap together rather than the
+                      delete button dropping away from its own row. They hold
+                      their size; the name column absorbs the squeeze. */}
+                  <div className="ml-auto flex shrink-0 items-center gap-3">
+                    <Chip tone={source.source_type === "db" ? "slate" : "neutral"}>
+                      {source.source_type === "db" ? (source.db_type ?? "database") : "File"}
+                    </Chip>
+                    <Chip tone={source.status === "active" ? "pine" : "neutral"}>
+                      {source.status === "active" ? "Ready" : (source.status ?? "unknown")}
+                    </Chip>
+                    <IconButton
+                      label={`Remove ${source.display_name}`}
+                      tone="danger"
+                      onClick={() => remove(source.id)}
+                    >
+                      <Trash2 size={16} strokeWidth={2.25} />
+                    </IconButton>
+                  </div>
                 </Panel>
               </li>
             ))}
