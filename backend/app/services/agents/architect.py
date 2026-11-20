@@ -36,7 +36,10 @@ MAX_GROUP_CARDINALITY = 25
 MIN_GROUP_CARDINALITY = 2
 SAMPLE_ROWS = 2000
 
-_ID_NAME = re.compile(r"(^|_)(id|uuid|guid|key|hash|index)($|_)|_id$|^id$", re.IGNORECASE)
+_ID_NAME = re.compile(
+    r"(^|_)(id|uuid|guid|key|hash|index|code)($|_)|_id$|_num$|_code$|^id$", re.IGNORECASE
+)
+_YEAR_NAME = re.compile(r"(^|_)year($|_)|^yr$", re.IGNORECASE)
 _TIME_NAME = re.compile(
     r"date|time|month|week|day|year|quarter|period|_at$|^created|^updated", re.IGNORECASE
 )
@@ -91,13 +94,23 @@ def _is_texty(series: pd.Series) -> bool:
 
 
 def _is_identifier(name: str, series: pd.Series) -> bool:
+    """A key, not a measure.
+
+    Uniqueness alone does not say so, in either dtype: a float measure is
+    naturally almost all-unique, and so is population. Both got thrown away by
+    a uniqueness test, which is how a dashboard loses the column it was about.
+    The name is the reliable signal; the only shape worth catching on top of it
+    is a row counter that climbs by one.
+    """
     if _ID_NAME.search(name):
         return True
-    # Only integers: a float measure is naturally almost all-unique, so the
-    # uniqueness test would throw away the very column worth charting.
     if not pd.api.types.is_integer_dtype(series):
         return False
-    return series.nunique(dropna=True) >= max(len(series) * 0.9, 1) and len(series) > 20
+    values = series.dropna()
+    if len(values) < 20:
+        return False
+    steps = values.diff().dropna()
+    return bool(len(steps)) and float((steps == 1).mean()) > 0.98
 
 
 def profile_frame(name: str, frame: pd.DataFrame) -> Profile:
@@ -114,6 +127,15 @@ def profile_frame(name: str, frame: pd.DataFrame) -> Profile:
         if _is_texty(series) and _TIME_NAME.search(label):
             parsed = _to_datetime(series)
             if parsed.notna().mean() > 0.8:
+                profile.time_columns.append(label)
+                continue
+
+        # A year is a time axis even when it is stored as an integer. Without
+        # this, a dataset keyed by year has no trend chart and `year` turns up
+        # as a measure to be summed, which is nonsense.
+        if pd.api.types.is_numeric_dtype(series) and _YEAR_NAME.search(label):
+            values = series.dropna()
+            if not values.empty and values.between(1800, 2200).mean() > 0.95:
                 profile.time_columns.append(label)
                 continue
 
@@ -142,7 +164,13 @@ def profile_frame(name: str, frame: pd.DataFrame) -> Profile:
 def _period_of(frame: pd.DataFrame, column: str) -> Optional[str]:
     """A human span for the intro text — real dates, not an invented range."""
     try:
-        values = _to_datetime(frame[column]).dropna()
+        column_values = frame[column]
+        if pd.api.types.is_numeric_dtype(column_values) and _YEAR_NAME.search(column):
+            years = column_values.dropna().astype(int)
+            if years.empty:
+                return None
+            return f"{years.min()} to {years.max()}" if years.min() != years.max() else str(years.min())
+        values = _to_datetime(column_values).dropna()
         if values.empty:
             return None
         first, last = values.min(), values.max()

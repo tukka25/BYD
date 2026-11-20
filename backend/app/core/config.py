@@ -14,6 +14,13 @@ class Settings(BaseSettings):
     # chartist adapter is served on Apple silicon.
     LLM_BACKEND: str = "ollama"
 
+    # Only for the side-by-side comparison against the local model. Nothing in
+    # the normal request path reads this, so the product still runs with no key
+    # and nothing leaves the machine unless a comparison is explicitly run.
+    CLAUDE_API_KEY: str = ""
+    ANTHROPIC_API_KEY: str = ""
+    CLAUDE_EFFORT: str = "medium"
+
     # One mlx_lm server can host one adapter, so the chartist (fine-tuned) and
     # the planner/detective (base weights) may live on different ports. Leave
     # MLX_CHARTIST_BASE_URL empty to use the same server for everything.
@@ -51,7 +58,14 @@ class Settings(BaseSettings):
     ALLOWED_UPLOAD_EXTENSIONS: tuple[str, ...] = (".csv", ".xls", ".xlsx")
     CORS_ORIGINS: list[str] = ["http://localhost:3000"]
 
-    model_config = SettingsConfigDict(env_file=".env", env_file_encoding="utf-8")
+    @property
+    def claude_api_key(self) -> str:
+        """Either spelling; the SDK's own variable wins if both are set."""
+        return self.ANTHROPIC_API_KEY or self.CLAUDE_API_KEY
+
+    model_config = SettingsConfigDict(
+        env_file=".env", env_file_encoding="utf-8", extra="ignore"
+    )
 
     @property
     def upload_dir_path(self) -> Path:

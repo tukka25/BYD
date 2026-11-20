@@ -76,3 +76,45 @@ export async function fetchCurrentUser(token: string): Promise<AuthUser> {
   return { id: me.id, email: me.email, name: me.full_name };
 }
 
+
+
+/* --- server-sent events ------------------------------------------------
+   Both the dashboard build and the model comparison stream over POST, so
+   `EventSource` is out (it is GET only) and the body is parsed here. */
+
+export async function streamEvents(
+  response: Response,
+  dispatch: (event: string, data: unknown) => void,
+): Promise<void> {
+  if (!response.body) throw new Error("The server sent no stream.");
+  const reader = response.body.getReader();
+  const decoder = new TextDecoder();
+  let buffer = "";
+
+  for (;;) {
+    const { done, value } = await reader.read();
+    if (done) break;
+    buffer += decoder.decode(value, { stream: true });
+
+    // An event ends at a blank line; what follows may still be arriving.
+    let split = buffer.indexOf("\n\n");
+    while (split !== -1) {
+      const chunk = buffer.slice(0, split);
+      buffer = buffer.slice(split + 2);
+      let event = "message";
+      let data = "";
+      for (const line of chunk.split("\n")) {
+        if (line.startsWith("event:")) event = line.slice(6).trim();
+        else if (line.startsWith("data:")) data += line.slice(5).trim();
+      }
+      if (data) {
+        try {
+          dispatch(event, JSON.parse(data));
+        } catch {
+          // A half-written event is not worth failing the stream over.
+        }
+      }
+      split = buffer.indexOf("\n\n");
+    }
+  }
+}

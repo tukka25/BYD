@@ -5,6 +5,7 @@ import { usePathname, useRouter } from "next/navigation";
 import { useEffect, useRef, useState, useSyncExternalStore, type ReactNode } from "react";
 import {
   ChartNoAxesColumn,
+  Cpu,
   Database,
   FileText,
   LogOut,
@@ -213,6 +214,14 @@ export function AppShell({ children }: { children: ReactNode }) {
               onNavigate={() => setDrawer(false)}
             >
               Data sources
+            </NavItem>
+            <NavItem
+              href="/compare"
+              icon={<Cpu size={16} strokeWidth={2.25} />}
+              active={pathname.startsWith("/compare")}
+              onNavigate={() => setDrawer(false)}
+            >
+              Compare models
             </NavItem>
           </div>
         </nav>

@@ -54,6 +54,12 @@ services:
       MLX_CHARTIST_MODEL: ${MLX_CHARTIST_MODEL:-}
       MLX_TIMEOUT_SECONDS: ${MLX_TIMEOUT_SECONDS:-600}
 
+      # Only read by the side-by-side comparison against the local model.
+      # Unset means the comparison is unavailable; nothing else changes.
+      CLAUDE_API_KEY: ${CLAUDE_API_KEY:-}
+      ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY:-}
+      CLAUDE_EFFORT: ${CLAUDE_EFFORT:-medium}
+
       OLLAMA_BASE_URL: ${OLLAMA_BASE_URL:-http://host.docker.internal:11434}
       OLLAMA_MODEL: ${OLLAMA_MODEL:-qwen3.5:4b}
       OLLAMA_TIMEOUT_SECONDS: 9000

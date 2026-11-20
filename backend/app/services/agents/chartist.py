@@ -30,15 +30,23 @@ class ChartistAgent:
     Agent responsible for generating Python code to visualize data.
     """
     
-    def __init__(self, llm):
+    def __init__(self, llm, generator=None):
+        """`generator` replaces only the text-generation step.
+
+        Anything with `.invoke(variables) -> str` can stand in for the chain,
+        which is how a different model is compared on this harness: the prompt,
+        the sanitiser, the contract and the fallback below are shared, so the
+        model is the only thing that differs.
+        """
         self.llm = llm
-        
+        self.generator = generator
+
         self.prompt = ChatPromptTemplate.from_messages([
             ("system", CHARTIST_SYSTEM_PROMPT),
             ("human", CHARTIST_USER_TEMPLATE),
         ])
-        
-        self.chain = self.prompt | self.llm | StrOutputParser()
+
+        self.chain = None if llm is None else self.prompt | self.llm | StrOutputParser()
 
     def _extract_code_block(self, raw: str) -> str:
         if not raw:
@@ -179,7 +187,10 @@ class ChartistAgent:
         """
         viz_type = task_plan.get("visualization_type", "bar")
         try:
-            raw = self.chain.invoke({
+            source = self.generator or self.chain
+            if source is None:
+                raise RuntimeError("chartist has neither a model nor a generator")
+            raw = source.invoke({
                 "task": self._task_description(user_query, task_plan, dataframe_plan),
                 "columns": str(data_context.get("columns", [])),
                 "dtypes": str(data_context.get("dtypes", {})),
