@@ -28,6 +28,7 @@ import pandas as pd
 from app.core.config import get_settings
 from app.services.agents.chartist import FALLBACK_MARKER, ChartistAgent
 from app.services.agents.chartist_contract import validate_chart_code
+from app.services.agents.workflow import _run_executor as run_executor
 from app.services.claude_chartist import ClaudeGenerator, ClaudeUnavailable
 from app.utils.figure_json import decode_typed_arrays
 
@@ -119,9 +120,22 @@ def run_cell(
         if call.refused:
             result.error = f"the model declined ({call.refused})"
 
-    # The DataFrame is copied so one model's code cannot mutate what the other
-    # is about to be run against.
-    execution = executor.execute(code, frame.copy())
+    # Run through the workflow's own runner, not the executor directly: the
+    # Plotly property repairs and the runtime fallback live there, and calling
+    # past them meant the comparison was not the harness it claims to share.
+    # The frame is copied so one model's code cannot disturb the other's.
+    plain = chartist._fallback_plotly_code(
+        data_context, task_plan.get("visualization_type", "bar")
+    )
+    outcome = run_executor(executor, code, frame.copy(), started, plain)
+    execution = outcome.get("execution_result") or {}
+    ran = outcome.get("code_run") or code
+    if ran != code:
+        result.code = ran
+        if FALLBACK_MARKER in ran:
+            result.used_fallback = True
+            result.violations = result.violations or ["runtime_error"]
+
     result.seconds = time.perf_counter() - started
 
     if execution.get("success") and execution.get("figure"):

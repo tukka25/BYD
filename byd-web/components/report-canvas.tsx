@@ -24,6 +24,7 @@ import {
 import { DotWave } from "@/components/dot-wave";
 import { Plot } from "@/components/plot";
 import { RichText, RichTextEditor } from "@/components/rich-text";
+import { exportReportToPdf } from "@/lib/export-pdf";
 import { SourceDialog } from "@/components/sources";
 import { Button, Chip, EmptyState, IconButton, Panel, Segmented, inputClass } from "@/components/ui";
 import {
@@ -278,6 +279,7 @@ export function ReportCanvas({ report }: { report: Report }) {
   const [building, setBuilding] = useState<Building | null>(null);
   const [planned, setPlanned] = useState<PlannedSection[]>([]);
   const [running, setRunning] = useState<number | null>(null);
+  const [exporting, setExporting] = useState(false);
   const [briefOpen, setBriefOpen] = useState(false);
   const [brief, setBrief] = useState("");
   const [skipped, setSkipped] = useState<string[]>([]);
@@ -433,6 +435,37 @@ export function ReportCanvas({ report }: { report: Report }) {
         );
       }
     });
+  }
+
+  /* Export is the app's own document now, not the browser's print dialog.
+     The charts are re-rendered by Plotly at their printed size, which takes a
+     moment on a full dashboard, so the button says so rather than appearing
+     to have done nothing. */
+  async function runExport() {
+    if (exporting || blocks.length === 0) return;
+    setExporting(true);
+    setError(null);
+    try {
+      const result = await exportReportToPdf({
+        title: title || "Report",
+        sources: sourceNames,
+        blocks,
+      });
+      setAnnouncement(
+        `Exported ${result.blocks} blocks to ${result.filename}, ${result.pages} pages.`,
+      );
+      if (result.chartsFailed > 0) {
+        setError(
+          result.chartsFailed === 1
+            ? "One chart could not be drawn and is marked in the PDF."
+            : `${result.chartsFailed} charts could not be drawn and are marked in the PDF.`,
+        );
+      }
+    } catch {
+      setError("Could not build the PDF.");
+    } finally {
+      setExporting(false);
+    }
   }
 
   const persistLayout = useCallback(
@@ -650,9 +683,9 @@ export function ReportCanvas({ report }: { report: Report }) {
             <Save size={15} strokeWidth={2.25} />
             Save
           </Button>
-          <Button variant="secondary" onClick={() => window.print()}>
+          <Button variant="secondary" onClick={runExport} disabled={exporting || blocks.length === 0}>
             <Download size={15} strokeWidth={2.25} />
-            Export
+            {exporting ? "Exporting…" : "Export"}
           </Button>
         </div>
 
@@ -787,7 +820,9 @@ export function ReportCanvas({ report }: { report: Report }) {
             ))}
 
             {blocks.map((block) => (
-              <div key={block.id}>
+              /* data-block-id is how lib/export-pdf.ts finds this block's
+                 Plotly graph div to re-render it into the PDF. */
+              <div key={block.id} data-block-id={block.id}>
                 <div className="block-settle h-full">
                   <BlockFrame
                     block={block}

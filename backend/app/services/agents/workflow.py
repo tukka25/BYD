@@ -23,6 +23,7 @@ Changes from the original, all of them things that bit:
 from __future__ import annotations
 
 import logging
+import os.path
 import re
 import time
 from functools import lru_cache
@@ -195,11 +196,14 @@ def coding_node(state: AgentState) -> Dict[str, Any]:
 
 
 def execution_node(state: AgentState) -> Dict[str, Any]:
-    _, _, _, executor = _agents()
+    _, _, chartist, executor = _agents()
     data_context = state.get("data_context") or {}
     code = state.get("code") or ""
     if not code:
         return {"error": "No chart code was generated."}
+
+    viz = (state.get("plan") or {}).get("visualization_type", "bar")
+    fallback_code = chartist._fallback_plotly_code(data_context, viz)
 
     if data_context.get("source_id") and data_context.get("table"):
         started = time.perf_counter()
@@ -210,7 +214,7 @@ def execution_node(state: AgentState) -> Dict[str, Any]:
         except Exception as exc:
             logger.error("[workflow/executor] database load failed: %s", exc)
             return {"error": f"Failed to read that table: {exc}"}
-        return _run_executor(executor, code, df, started)
+        return _run_executor(executor, code, df, started, fallback_code)
 
     filepath = data_context.get("filepath")
     if not filepath:
@@ -231,7 +235,7 @@ def execution_node(state: AgentState) -> Dict[str, Any]:
         logger.error("[workflow/executor] load failed: %s", exc)
         return {"error": f"Failed to load data: {exc}"}
 
-    return _run_executor(executor, code, df, started)
+    return _run_executor(executor, code, df, started, fallback_code)
 
 
 # Plotly names the property it rejected, which is enough to repair the code
@@ -251,14 +255,40 @@ _SUGGESTION = re.compile(r'Did you mean ["\']([A-Za-z_]\w*)["\']')
 
 
 def _has_key(code: str, name: str) -> bool:
-    return bool(re.search(rf"['\"]{re.escape(name)}['\"]\s*:", code))
+    """`'name':` or `name=` -- Plotly code is written both ways."""
+    return bool(
+        re.search(rf"['\"]{re.escape(name)}['\"]\s*:", code)
+        or re.search(rf"(?<![\w.]){re.escape(name)}\s*=", code)
+    )
+
+
+def _plausible_rename(wrong: str, right: str) -> bool:
+    """Is Plotly's suggestion a near miss, or just the nearest string?
+
+    It suggested "font" for a misplaced `value`, which shares not one letter
+    with it; taking that would have set the number's font to a population
+    count. A real near miss shares a head or a tail -- ticklabelformat and
+    tickformat share "tick", valueuffix and suffix share "uffix".
+    """
+    a, b = wrong.lower(), right.lower()
+    if a in b or b in a:
+        return True
+    prefix = len(os.path.commonprefix([a, b]))
+    suffix = len(os.path.commonprefix([a[::-1], b[::-1]]))
+    return prefix >= 3 or suffix >= 3
 
 
 def _rename_property(code: str, wrong: str, right: str) -> str:
-    return re.sub(
+    renamed = re.sub(
         rf"(['\"]){re.escape(wrong)}\1(\s*:)",
         lambda m: f"{m.group(1)}{right}{m.group(1)}{m.group(2)}",
         code,
+    )
+    # `update_xaxes(ticklabelformat=...)` is the other half of the problem.
+    return re.sub(
+        rf"(?<![\w.]){re.escape(wrong)}(\s*=)",
+        lambda m: f"{right}{m.group(1)}",
+        renamed,
     )
 
 
@@ -318,7 +348,13 @@ def _compiles(code: str) -> bool:
         return False
 
 
-def _run_executor(executor: Any, code: str, df: "pd.DataFrame", started: float) -> Dict[str, Any]:
+def _run_executor(
+    executor: Any,
+    code: str,
+    df: "pd.DataFrame",
+    started: float,
+    fallback_code: str | None = None,
+) -> Dict[str, Any]:
     """Run the generated code against `df`, whatever the data came from."""
     result = executor.execute(code, df)
 
@@ -341,7 +377,12 @@ def _run_executor(executor: Any, code: str, df: "pd.DataFrame", started: float) 
         # valueformat?" next to a real `valueformat`, and the rename produced a
         # duplicate key whose junk value won -- a KPI that silently lost its
         # number format. Where the target exists, the property is dropped.
-        if target and target != wrong and not _has_key(code, target):
+        if (
+            target
+            and target != wrong
+            and not _has_key(code, target)
+            and _plausible_rename(wrong, target)
+        ):
             repaired = _rename_property(code, wrong, target)
             action = f"renaming {wrong!r} to {target!r}"
         else:
@@ -364,12 +405,28 @@ def _run_executor(executor: Any, code: str, df: "pd.DataFrame", started: float) 
         logger.info("[workflow/executor] success in %.2fs", time.perf_counter() - started)
         return {
             "execution_result": result,
+            "code_run": code,
             "messages": [AIMessage(content="Chart rendered.")],
         }
+    # The static contract catches code that is wrong on its face. This catches
+    # code that is only wrong once Plotly sees it -- a property in the wrong
+    # place, say -- which otherwise reaches the user as a stack trace where a
+    # chart should be. A plain chart, marked as the fallback it is, beats that.
+    if fallback_code and fallback_code != code:
+        logger.info("[workflow/executor] runtime failure, using the deterministic chart")
+        attempt = executor.execute(fallback_code, df)
+        if attempt.get("success"):
+            return {
+                "execution_result": attempt,
+                "code_run": fallback_code,
+                "messages": [AIMessage(content="Chart rendered by the fallback.")],
+            }
+
     logger.error("[workflow/executor] failed: %s", result.get("error"))
     return {
         "error": result.get("error") or "Chart code failed to execute.",
         "execution_result": result,
+        "code_run": code,
         "messages": [AIMessage(content=f"Execution failed: {result.get('error')}")],
     }
 

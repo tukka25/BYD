@@ -367,7 +367,12 @@ def plan(profile: Profile, max_charts: int = 5, brief: str = "") -> List[Section
             )
         )
     if time and measure:
-        by = f"by {grain} of {time}" if grain else f"by {time}"
+        # "by year of year" is what you get when the date column is itself
+        # called year; say it once.
+        if grain and grain.lower() not in time.lower():
+            by = f"by {grain} of {time}"
+        else:
+            by = f"by {time}"
         charts.append(
             Section(kind="chart", prompt=f"{agg} {measure} {by} as a line chart", w=12, h=9)
         )
