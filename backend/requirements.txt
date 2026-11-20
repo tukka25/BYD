@@ -17,6 +17,9 @@ matplotlib
 seaborn
 plotly
 langchain-ollama
+# Required by LLM_BACKEND=mlx: mlx_lm server speaks the OpenAI chat API,
+# which is the only way to reach the fine-tuned LoRA adapter.
+langchain-openai
 openpyxl==3.1.5
 
 # For running local models (optional, depending on setup)
