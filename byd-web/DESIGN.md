@@ -299,6 +299,26 @@ every figure on the way in. What we override:
 What we leave alone: the data, the trace types, the value formats, the axis
 titles. Re-theming is not re-authoring.
 
+**Numbers are formatted here, not by the model.** A 9B model will not reliably
+remember d3 format strings, and a KPI that prints `583271495.17` has failed at
+the one job a KPI has. So every figure, from every model, gets:
+
+- thousands separators on a headline number, and the number in full — a
+  deliberate format the model chose is kept, but an SI one is not (`.0s`
+  renders 72,466 as "72k") and neither is a string that is not a d3 format at
+  all, which Plotly ignores in silence
+- the value above each bar, up to twelve bars, where the model did not label
+  them itself — reading a bar against a gridline is a guess
+- the currency, on the axis that holds the money
+
+**The currency comes from the data, never from a guess.** A field named
+`mrrUsd` or an axis titled "Revenue (EUR)" names its currency; `salePrice`
+does not, and printing a dollar sign on it would be a wrong number rather than
+a prettier one. Where nothing is named, `NEXT_PUBLIC_DEFAULT_CURRENCY` lets the
+operator assert one once (AED, USD, a symbol); unset means separators and no
+symbol. It is applied only to money-ish measures, so a count of orders stays a
+count.
+
 Not taken from the reference: its vertical gradient fills on bars. Plotly has
 no gradient fill for a bar trace, and the ways of faking one (per-point colour
 ramps, overlaid shapes) break as soon as the data changes. The flat series

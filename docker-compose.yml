@@ -102,6 +102,9 @@ services:
       # Browser-side calls go through the host's published port.
       NEXT_PUBLIC_API_BASE_URL: http://localhost:8000
       BACKEND_GENERATE_TIMEOUT_MS: ${BACKEND_GENERATE_TIMEOUT_MS:-900000}
+      # Currency for money columns that do not name one (AED, USD, EUR, or a
+      # symbol). Unset means separators but no symbol -- nothing is guessed.
+      NEXT_PUBLIC_DEFAULT_CURRENCY: ${NEXT_PUBLIC_DEFAULT_CURRENCY:-}
     ports:
       - "3000:3000"
     volumes:

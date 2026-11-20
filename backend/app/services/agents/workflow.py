@@ -243,6 +243,23 @@ def execution_node(state: AgentState) -> Dict[str, Any]:
 _INVALID_PROPERTY = re.compile(
     r"Invalid property specified for object of type [\w.]+: '([A-Za-z_]\w*)'"
 )
+# Plotly names the property it wanted whenever the mistake is a near miss
+# ("'valueuffix' Did you mean \"suffix\"?"). Taking the suggestion keeps what
+# the model meant -- the currency suffix on a KPI -- where dropping the
+# property throws it away and silently changes the chart.
+_SUGGESTION = re.compile(r'Did you mean ["\']([A-Za-z_]\w*)["\']')
+
+
+def _has_key(code: str, name: str) -> bool:
+    return bool(re.search(rf"['\"]{re.escape(name)}['\"]\s*:", code))
+
+
+def _rename_property(code: str, wrong: str, right: str) -> str:
+    return re.sub(
+        rf"(['\"]){re.escape(wrong)}\1(\s*:)",
+        lambda m: f"{m.group(1)}{right}{m.group(1)}{m.group(2)}",
+        code,
+    )
 
 
 def _drop_property(code: str, prop: str) -> str:
@@ -305,15 +322,44 @@ def _run_executor(executor: Any, code: str, df: "pd.DataFrame", started: float) 
     """Run the generated code against `df`, whatever the data came from."""
     result = executor.execute(code, df)
 
-    if not result.get("success"):
-        match = _INVALID_PROPERTY.search(str(result.get("error") or ""))
-        if match:
-            repaired = _drop_property(code, match.group(1))
-            if repaired != code and _compiles(repaired):
-                logger.info("[workflow/executor] dropping invented property %r", match.group(1))
-                result = executor.execute(repaired, df)
-                if result.get("success"):
-                    code = repaired
+    # At most two repairs, each from what Plotly actually said: take its
+    # suggested spelling first, and only drop the property if there was no
+    # suggestion or the rename did not help.
+    for _ in range(2):
+        if result.get("success"):
+            break
+        message = str(result.get("error") or "")
+        match = _INVALID_PROPERTY.search(message)
+        if not match:
+            break
+
+        wrong = match.group(1)
+        suggestion = _SUGGESTION.search(message)
+        target = suggestion.group(1) if suggestion else ""
+        # Never rename onto a key that is already there. Plotly suggests on
+        # spelling, not meaning: it answered `valuecolor` with "did you mean
+        # valueformat?" next to a real `valueformat`, and the rename produced a
+        # duplicate key whose junk value won -- a KPI that silently lost its
+        # number format. Where the target exists, the property is dropped.
+        if target and target != wrong and not _has_key(code, target):
+            repaired = _rename_property(code, wrong, target)
+            action = f"renaming {wrong!r} to {target!r}"
+        else:
+            repaired = _drop_property(code, wrong)
+            action = f"dropping invented property {wrong!r}"
+
+        if repaired == code or not _compiles(repaired):
+            break
+
+        logger.info("[workflow/executor] %s", action)
+        attempt = executor.execute(repaired, df)
+        if attempt.get("success"):
+            code = repaired
+            result = attempt
+            break
+        # The rename did not take; the next pass drops whatever it now names.
+        code = repaired
+        result = attempt
     if result.get("success"):
         logger.info("[workflow/executor] success in %.2fs", time.perf_counter() - started)
         return {

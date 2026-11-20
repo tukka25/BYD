@@ -40,13 +40,139 @@ const AXIS = {
 
 const DISPLAY = "var(--font-outfit), system-ui, sans-serif";
 
+/* --- money and magnitudes ------------------------------------------------
+   A 9B model will not reliably remember d3 format strings, and a figure that
+   prints 583271495.17 is harder to read than one that prints $583,271,495 --
+   the difference is the whole point of a KPI. So the formatting is applied
+   here, deterministically, to every figure from every model.
+
+   The currency is taken from what the DATA says, never guessed: a field named
+   `mrrUsd` or an axis titled "Revenue (EUR)" names its currency, and a field
+   named `salePrice` does not. Where no currency is named, numbers still get
+   their separators but no symbol is invented -- printing a dollar sign on a
+   column that never said dollars is a wrong number, not a prettier one. */
+
+const CURRENCIES: Array<[RegExp, string]> = [
+  [/\busd\b|\$/i, "$"],
+  [/\beur\b|€/i, "€"],
+  [/\bgbp\b|£/i, "£"],
+  [/\bjpy\b|¥/i, "¥"],
+  [/\bcny\b|\brmb\b/i, "¥"],
+  [/\binr\b|₹/i, "₹"],
+  [/\baed\b|د\.إ/i, "AED "],
+  [/\bsar\b/i, "SAR "],
+  [/\bqar\b/i, "QAR "],
+  [/\bkwd\b/i, "KWD "],
+  [/\bbhd\b/i, "BHD "],
+  [/\bomr\b/i, "OMR "],
+  [/\bjod\b/i, "JOD "],
+  [/\begp\b/i, "E£"],
+  [/\bchf\b/i, "CHF "],
+  [/\bcad\b/i, "CA$"],
+  [/\baud\b/i, "A$"],
+  [/\bbrl\b/i, "R$"],
+  [/\bkrw\b|₩/i, "₩"],
+  [/\btry\b|₺/i, "₺"],
+  [/\bzar\b/i, "R"],
+  [/\bmxn\b/i, "MX$"],
+  [/\bngn\b|₦/i, "₦"],
+];
+
+function textOf(value: unknown): string {
+  if (typeof value === "string") return value;
+  if (value && typeof value === "object" && "text" in value) {
+    return String((value as { text?: unknown }).text ?? "");
+  }
+  return "";
+}
+
+/** Every label the figure carries, with camelCase split so `mrrUsd` reads. */
+function figureWords(figure: PlotlyFigure): string {
+  const layout = (figure.layout ?? {}) as Record<string, unknown>;
+  const parts: string[] = [textOf(layout.title)];
+  for (const axis of ["xaxis", "yaxis"]) {
+    const value = layout[axis] as Record<string, unknown> | undefined;
+    if (value) parts.push(textOf(value.title));
+  }
+  for (const raw of (figure.data ?? []) as Array<Record<string, unknown>>) {
+    parts.push(String(raw.name ?? ""), textOf(raw.title));
+    const number = raw.number as Record<string, unknown> | undefined;
+    if (number) parts.push(String(number.prefix ?? ""), String(number.suffix ?? ""));
+  }
+  return parts.join(" ").replace(/([a-z0-9])([A-Z])/g, "$1 $2");
+}
+
+/* When the data names no currency, the app does not guess one -- but you can
+   say which it is, once, and have every unlabelled money column use it:
+   NEXT_PUBLIC_DEFAULT_CURRENCY=AED (or USD, EUR, or a literal symbol).
+   Unset means numbers get their separators and no symbol. */
+const DEFAULT_CURRENCY = symbolFor(process.env.NEXT_PUBLIC_DEFAULT_CURRENCY ?? "");
+
+function symbolFor(value: string): string {
+  const text = value.trim();
+  if (!text) return "";
+  for (const [pattern, symbol] of CURRENCIES) {
+    if (pattern.test(text)) return symbol;
+  }
+  // Something we have no code for: use it as written.
+  return text.length <= 3 ? text : `${text} `;
+}
+
+function detectCurrency(figure: PlotlyFigure): string {
+  const words = figureWords(figure);
+  for (const [pattern, symbol] of CURRENCIES) {
+    if (pattern.test(words)) return symbol;
+  }
+  // Only money-ish measures take the default; a count of orders is not money.
+  return MONEYISH.test(words) ? DEFAULT_CURRENCY : "";
+}
+
+/* A conservative read of d3's format mini-language: optional sign, symbol,
+   zero-fill, width, group separator, precision, trim, and one type letter --
+   and nothing after it. `#1f77b4` parses as far as `#1f` and then has `77b4`
+   left over, which is how we tell a colour from a format. */
+const D3_FORMAT = /^[-+( ]?[$#]?0?\d*,?(\.\d+)?~?[bcdefgnorsxX%]?$/;
+
+/** A separator-ed format that keeps decimals only where they mean something. */
+function numberFormat(value: unknown): string {
+  const magnitude = Math.abs(Number(value));
+  if (!Number.isFinite(magnitude)) return ",";
+  if (magnitude >= 1000) return ",.0f";
+  if (Number.isInteger(Number(value))) return ",";
+  return ",.2f";
+}
+
 function allIndicators(figure: PlotlyFigure): boolean {
   const data = (figure.data ?? []) as Array<{ type?: string }>;
   return data.length > 0 && data.every((trace) => trace?.type === "indicator");
 }
 
+const MONEYISH = /\b(price|revenue|sales|cost|amount|value|spend|mrr|arr|total|gmv|profit|margin|usd|eur|gbp|aed|sar|jpy|inr)\b/i;
+
+/** The currency belongs on the axis that holds the money, not on both.
+
+    Gated on the axis TITLE: a figure can plot money against a year, and a `$`
+    on the year axis is worse than no `$` at all. An untitled axis is left
+    alone for the same reason -- there is nothing to go on.
+
+    No tick format is set: Plotly's own magnitudes ("100k") are already right,
+    and forcing SI turns a year axis into "1.95k". */
+function measureAxis(figure: PlotlyFigure, axis: "xaxis" | "yaxis", currency: string) {
+  if (!currency) return {};
+  const layout = (figure.layout ?? {}) as Record<string, unknown>;
+  const title = textOf((layout[axis] as Record<string, unknown> | undefined)?.title).replace(
+    /([a-z0-9])([A-Z])/g,
+    "$1 $2",
+  );
+  return title && MONEYISH.test(title) ? { tickprefix: currency } : {};
+}
+
 function themed(figure: PlotlyFigure) {
   const kpi = allIndicators(figure);
+  const currency = detectCurrency(figure);
+  const horizontalBars = ((figure.data ?? []) as Array<{ type?: string; orientation?: string }>).some(
+    (t) => t?.type === "bar" && t?.orientation === "h",
+  );
   const layout: Record<string, unknown> = {
     ...(figure.layout ?? {}),
     colorway: SERIES,
@@ -72,8 +198,16 @@ function themed(figure: PlotlyFigure) {
       bordercolor: "#d8d8e0",
       font: { color: "#121216", size: 12, family: "var(--font-jakarta), sans-serif" },
     },
-    xaxis: { ...AXIS, ...((figure.layout?.xaxis as object) ?? {}) },
-    yaxis: { ...AXIS, ...((figure.layout?.yaxis as object) ?? {}) },
+    xaxis: {
+      ...AXIS,
+      ...(horizontalBars ? measureAxis(figure, "xaxis", currency) : {}),
+      ...((figure.layout?.xaxis as object) ?? {}),
+    },
+    yaxis: {
+      ...AXIS,
+      ...(horizontalBars ? {} : measureAxis(figure, "yaxis", currency)),
+      ...((figure.layout?.yaxis as object) ?? {}),
+    },
   };
 
   const data = (figure.data ?? []).map((raw) => {
@@ -85,16 +219,40 @@ function themed(figure: PlotlyFigure) {
       // capsule at any bar width; a fixed radius only rounds the corners.
       marker.cornerradius = "50%";
       trace.marker = marker;
+
+      // The value, above the bar. Reading a bar against a gridline is a
+      // guess; the number is the answer. Left off when the model labelled
+      // the bars itself, and above a dozen bars, where labels collide.
+      const horizontal = trace.orientation === "h";
+      const values = (horizontal ? trace.x : trace.y) as unknown[] | undefined;
+      if (!trace.text && !trace.texttemplate && values && values.length <= 12) {
+        trace.texttemplate = `${currency}%{${horizontal ? "x" : "y"}:,.3~s}`;
+        trace.textposition = "outside";
+        trace.cliponaxis = false;
+        trace.textfont = { family: DISPLAY, size: 11.5, color: "#3a3a44" };
+      }
     }
     if (trace.type === "indicator") {
       // The block header carries the label, so the figure does not repeat it.
       // No font size is set: Plotly then scales the number to the tile, which
       // is what a block you can drag-resize needs.
       trace.title = undefined;
-      trace.number = {
-        ...((trace.number as Record<string, unknown>) ?? {}),
-        font: { family: DISPLAY, color: "#121216" },
-      };
+      const number = { ...((trace.number as Record<string, unknown>) ?? {}) };
+      number.font = { family: DISPLAY, color: "#121216" };
+      /* A deliberate format the model chose is kept -- a percentage, a fixed
+         number of decimals. Three are not:
+
+         empty, so there is nothing to keep; an SI one, because a headline
+         number exists to be read exactly and `.0s` turns 72,466 into "72k",
+         which is the figure the KPI was supposed to tell you; and anything
+         that is not a d3 format at all, which Plotly ignores in silence --
+         a colour once arrived in this field and the number rendered raw. */
+      const chosen = String(number.valueformat ?? "");
+      if (!chosen || /s$/.test(chosen) || !D3_FORMAT.test(chosen)) {
+        number.valueformat = numberFormat(trace.value);
+      }
+      if (currency && !number.prefix && !number.suffix) number.prefix = currency;
+      trace.number = number;
       trace.delta = {
         ...((trace.delta as Record<string, unknown>) ?? {}),
         increasing: { color: "#0e9e8e" },
