@@ -223,27 +223,23 @@ def run_agent_workflow(
 ):
     """
     Runs the full agent workflow with the given query.
-    """
-    
-    # Temporary test defaults as requested.
-    test_file = "/app/uploads/abu_dhabi_population_density.csv"
-    forced_selected_source = test_file
-    forced_available_sources = [
-        {
-            "id": "abu_dhabi_population_density.csv",
-            "name": "abu_dhabi_population_density.csv",
-            "type": "file",
-            "path": test_file,
-        }
-    ]
 
-    print(f"[workflow] using forced selected_source='{forced_selected_source}'")
-    print(f"[workflow] using forced available_sources={forced_available_sources}")
+    Honours the caller's `selected_source` and `available_sources`. This used to
+    discard both and substitute a hardcoded
+    `/app/uploads/abu_dhabi_population_density.csv`, which made every request
+    chart that one file whatever the user picked.
+    """
+    sources = available_sources or []
+    logger.info(
+        "[workflow] selected_source=%r available_sources=%d",
+        selected_source,
+        len(sources),
+    )
 
     initial_state = {
         "user_query": query,
-        "selected_source": forced_selected_source,
-        "available_sources": forced_available_sources,
+        "selected_source": selected_source,
+        "available_sources": sources,
         "messages": [HumanMessage(content=query)],
         "plan": {},
         "source_decision": {},
