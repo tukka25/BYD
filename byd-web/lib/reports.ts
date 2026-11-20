@@ -42,6 +42,40 @@ export async function getReport(token: string, id: string): Promise<Report> {
   return toReport(await authorizedFetch<BackendDashboard>(`/api/v1/dashboard/${id}`, token));
 }
 
+/* The sidebar lists reports and the canvas can rename one, so a rename has to
+   reach a component that did not make the request. Same shape as the session
+   store: a window event, rather than threading a callback through the shell. */
+const REPORTS_EVENT = "promptdash:reports";
+
+export function announceReportsChanged(): void {
+  if (typeof window !== "undefined") window.dispatchEvent(new Event(REPORTS_EVENT));
+}
+
+export function subscribeToReports(onChange: () => void): () => void {
+  if (typeof window === "undefined") return () => {};
+  window.addEventListener(REPORTS_EVENT, onChange);
+  return () => window.removeEventListener(REPORTS_EVENT, onChange);
+}
+
+export async function updateReport(
+  token: string,
+  id: string,
+  input: { title?: string; description?: string | null },
+): Promise<Report> {
+  const report = toReport(
+    await authorizedFetch<BackendDashboard>(`/api/v1/dashboard/${id}`, token, {
+      method: "PUT",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        title: input.title,
+        description: input.description,
+      }),
+    }),
+  );
+  announceReportsChanged();
+  return report;
+}
+
 export async function createReport(
   token: string,
   input: { title: string; description?: string; dataSourceIds?: string[] },

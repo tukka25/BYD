@@ -15,7 +15,13 @@ import {
   X,
 } from "lucide-react";
 import { getAccessToken, loadCurrentUser, logoutUser, noSession, subscribeToSession } from "@/lib/auth";
-import { fetchHealth, listReports, type LocalHealth, type Report } from "@/lib/reports";
+import {
+  fetchHealth,
+  listReports,
+  subscribeToReports,
+  type LocalHealth,
+  type Report,
+} from "@/lib/reports";
 import { IconButton } from "@/components/ui";
 
 /* The persistent frame: a fixed sidebar carrying the real navigation, and a
@@ -103,6 +109,20 @@ export function AppShell({ children }: { children: ReactNode }) {
     }
     fetchHealth().then(setHealth);
   }, [router, pathname]);
+
+  // A report renamed on the canvas has to show up in this list, which did not
+  // make that request.
+  useEffect(
+    () =>
+      subscribeToReports(() => {
+        const token = getAccessToken();
+        if (!token) return;
+        listReports(token)
+          .then(setReports)
+          .catch(() => undefined);
+      }),
+    [],
+  );
 
   if (!user) {
     return (

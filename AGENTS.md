@@ -28,6 +28,7 @@
 - Canvas blocks are backend-owned (`backend/app/api/v1/endpoints/blocks.py`, table `report_blocks`), not localStorage. `POST /blocks/generate` runs the agent workflow; `PUT /blocks/layout` persists drag/resize.
 - An all-`indicator` Plotly figure is stored as a `metric` block at tile size and titled with the label the model wrote. That is the KPI stat-card path; there is no separate "make me a KPI" endpoint.
 - `byd-web/DESIGN.md` carries the design system (tokens, components, the Plotly re-theme contract). Read it before touching UI.
+- Note blocks store HTML, not plain text. `byd-web/lib/rich-text.ts` is the trust boundary: it sanitises on commit AND on render (allowlist of 14 tags, no attributes except a validated href). Never render `text_body` without it. Legacy plain-text bodies still render — `toHtml` handles both.
 - Plotly is bundled (`plotly.js-dist-min`, lazily imported in `components/plot.tsx`), never the CDN script — the CDN broke the local-only claim and pinned an old Plotly.
 - Gotcha: `react-grid-layout` positions items with `transform`. Any CSS animation that touches `transform` must sit on an element INSIDE the grid item; on the item itself, `animation-fill-mode: both` makes the keyframes' final `transform: none` beat the inline grid transform and all blocks pile up top-left. `globals.css` keeps a `.react-grid-item.block-settle { animation: none }` guard.
 - `react-grid-layout` v2's classic API lives at `react-grid-layout/legacy`; the root export is the new rewrite and has a different surface.

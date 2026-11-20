@@ -15,10 +15,12 @@ import {
   GripVertical,
   LayoutGrid,
   Pencil,
+  Save,
   Trash2,
   Type,
 } from "lucide-react";
 import { Plot } from "@/components/plot";
+import { RichText, RichTextEditor } from "@/components/rich-text";
 import { Button, Chip, EmptyState, IconButton, Panel, Segmented } from "@/components/ui";
 import {
   createBlock,
@@ -31,7 +33,7 @@ import {
 } from "@/lib/blocks";
 import { getAccessToken } from "@/lib/auth";
 import { listSources } from "@/lib/sources";
-import type { Report } from "@/lib/reports";
+import { updateReport, type Report } from "@/lib/reports";
 
 const Grid = WidthProvider(Responsive);
 
@@ -59,6 +61,11 @@ function clamp(value: number, min: number, max: number): number {
 type Nudge = { dx?: number; dy?: number; dw?: number; dh?: number };
 
 type Mode = "view" | "edit";
+
+/* Everything on this canvas writes as you go. The indicator exists so that is
+   visible rather than assumed, and the Save button is the explicit version of
+   the same write for anyone who would rather press something. */
+type SaveState = "idle" | "saving" | "saved" | "error";
 
 /* A Plotly `indicator` trace is already a metric card: one big number, no axes.
    The chartist was fine-tuned on that chart type, so a KPI can come back as a
@@ -214,30 +221,9 @@ function BlockBody({
 }) {
   if (block.kind === "text") {
     if (mode === "edit") {
-      return (
-        <textarea
-          defaultValue={block.text_body ?? ""}
-          aria-label="Note text"
-          placeholder="Write a note, a caption, or what this section shows…"
-          onKeyDown={(event) => event.stopPropagation()}
-          onBlur={(event) => onText(event.target.value)}
-          className="size-full resize-none rounded-[var(--r-card)] bg-sunken p-4 text-sm leading-relaxed text-body placeholder:text-muted focus:outline-none focus:ring-2 focus:ring-violet"
-        />
-      );
+      return <RichTextEditor value={block.text_body} onCommit={onText} />;
     }
-    return (
-      <div className="size-full overflow-auto px-2 py-1 text-sm leading-relaxed text-body">
-        {block.text_body?.trim() ? (
-          block.text_body.split("\n").map((line, i) => (
-            <p key={i} className={line.trim() ? "" : "h-3"}>
-              {line}
-            </p>
-          ))
-        ) : (
-          <span className="text-muted">Empty note</span>
-        )}
-      </div>
-    );
+    return <RichText value={block.text_body} />;
   }
 
   if (!block.figure) {
@@ -262,6 +248,11 @@ export function ReportCanvas({ report }: { report: Report }) {
   const [cols, setCols] = useState(STORED_COLS);
   const [announcement, setAnnouncement] = useState("");
   const [askFocused, setAskFocused] = useState(false);
+  const [title, setTitle] = useState(report.title);
+  const [draftTitle, setDraftTitle] = useState("");
+  const [editingTitle, setEditingTitle] = useState(false);
+  const [saveState, setSaveState] = useState<SaveState>("idle");
+  const [savedAt, setSavedAt] = useState<string | null>(null);
   const askRef = useRef<HTMLTextAreaElement | null>(null);
   const gridHost = useRef<HTMLDivElement | null>(null);
 
@@ -315,13 +306,58 @@ export function ReportCanvas({ report }: { report: Report }) {
   // rather than copying to satisfy the type.
   type GridItem = { i: string; x: number; y: number; w: number; h: number };
 
+  const track = useCallback(async <T,>(write: () => Promise<T>): Promise<T | null> => {
+    setSaveState("saving");
+    try {
+      const result = await write();
+      setSaveState("saved");
+      setSavedAt(new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" }));
+      return result;
+    } catch {
+      setSaveState("error");
+      return null;
+    }
+  }, []);
+
   const save = useCallback(
     (next: Array<{ id: string; x: number; y: number; w: number; h: number }>) => {
       if (!token) return;
-      saveLayout(token, report.id, next).catch(() => setError("Layout could not be saved."));
+      void track(() => saveLayout(token, report.id, next)).then((ok) => {
+        if (ok === null) setError("Layout could not be saved.");
+      });
     },
-    [report.id, token],
+    [report.id, token, track],
   );
+
+  async function commitTitle(next: string) {
+    const clean = next.trim();
+    setEditingTitle(false);
+    if (!token || !clean || clean === title) return;
+    setTitle(clean);
+    const saved = await track(() => updateReport(token, report.id, { title: clean }));
+    if (saved === null) {
+      setTitle(report.title);
+      setError("The report name could not be saved.");
+    }
+  }
+
+  /* The explicit Save: commit whatever is being edited right now (a note, the
+     title), then write the layout. It is a real write, not a reassurance. */
+  async function saveNow() {
+    const focused = document.activeElement;
+    if (focused instanceof HTMLElement) focused.blur();
+    if (!token) return;
+    await track(async () => {
+      await updateReport(token, report.id, { title });
+      if (blocks.length > 0) {
+        await saveLayout(
+          token,
+          report.id,
+          blocks.map((b) => ({ id: b.id, x: b.x, y: b.y, w: b.w, h: b.h })),
+        );
+      }
+    });
+  }
 
   const persistLayout = useCallback(
     (next: readonly GridItem[]) => {
@@ -391,16 +427,53 @@ export function ReportCanvas({ report }: { report: Report }) {
   async function patch(id: string, data: Partial<Block>) {
     if (!token) return;
     setBlocks((current) => current.map((b) => (b.id === id ? { ...b, ...data } : b)));
-    updateBlock(token, report.id, id, data).catch(() => setError("Could not save that change."));
+    const saved = await track(() => updateBlock(token, report.id, id, data));
+    if (saved === null) setError("Could not save that change.");
   }
 
   return (
     <div className="flex min-h-0 flex-1 flex-col">
       <header className="flex shrink-0 flex-wrap items-center justify-between gap-4 px-5 pb-5 pt-6 sm:px-8 sm:pt-8 print:px-0">
         <div className="min-w-0 basis-full sm:basis-auto">
-          <h1 className="font-display text-[26px] font-bold leading-[1.1] text-ink sm:text-[34px]">
-            {report.title}
-          </h1>
+          {editingTitle ? (
+            <input
+              autoFocus
+              aria-label="Report name"
+              value={draftTitle}
+              // Renaming starts with the old name selected, so typing replaces
+              // it instead of running on from the end of it.
+              onFocus={(event) => event.currentTarget.select()}
+              onChange={(event) => setDraftTitle(event.target.value)}
+              onBlur={(event) => void commitTitle(event.target.value)}
+              onKeyDown={(event) => {
+                if (event.key === "Enter") event.currentTarget.blur();
+                // Escape unmounts the field, so no blur fires and nothing is
+                // written: the name goes back to what it was.
+                if (event.key === "Escape") setEditingTitle(false);
+              }}
+              className="w-full max-w-xl rounded-[var(--r-control)] bg-surface px-2.5 py-0.5 font-display text-[26px] font-bold leading-[1.1] text-ink ring-1 ring-inset ring-hairline focus:outline-none focus:ring-2 focus:ring-violet sm:text-[34px]"
+            />
+          ) : (
+            <button
+              type="button"
+              title="Rename this report"
+              onClick={() => {
+                setDraftTitle(title);
+                setEditingTitle(true);
+              }}
+              className="group flex max-w-full items-center gap-2 rounded-[var(--r-control)] text-left"
+            >
+              <h1 className="truncate font-display text-[26px] font-bold leading-[1.1] text-ink sm:text-[34px]">
+                {title}
+              </h1>
+              <Pencil
+                size={16}
+                strokeWidth={2.25}
+                aria-hidden
+                className="shrink-0 text-muted opacity-0 transition-opacity duration-150 group-hover:opacity-100 group-focus-visible:opacity-100"
+              />
+            </button>
+          )}
           <div className="mt-1.5 flex flex-wrap items-center gap-2">
             <Chip tone={sourceNames.length > 0 ? "violet" : "neutral"}>
               <Database size={11} strokeWidth={2.25} />
@@ -428,11 +501,31 @@ export function ReportCanvas({ report }: { report: Report }) {
             <Type size={15} strokeWidth={2.25} />
             Note
           </Button>
+          <Button variant="secondary" onClick={saveNow} disabled={saveState === "saving"}>
+            <Save size={15} strokeWidth={2.25} />
+            Save
+          </Button>
           <Button variant="secondary" onClick={() => window.print()}>
             <Download size={15} strokeWidth={2.25} />
             Export
           </Button>
         </div>
+
+        <p
+          aria-live="polite"
+          className={[
+            "basis-full text-[12.5px] print:hidden",
+            saveState === "error" ? "text-[#b5301c]" : "text-muted",
+          ].join(" ")}
+        >
+          {saveState === "saving"
+            ? "Saving…"
+            : saveState === "error"
+              ? "Last change could not be saved."
+              : saveState === "saved"
+                ? `All changes saved${savedAt ? ` · ${savedAt}` : ""}`
+                : "Changes save as you make them."}
+        </p>
       </header>
 
       {error ? (

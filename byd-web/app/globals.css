@@ -208,6 +208,98 @@ a {
   overscroll-behavior: contain;
 }
 
+/* --- note blocks ---------------------------------------------------------
+   A note is authored and rendered as markup, so the handful of tags the
+   sanitiser allows need type of their own. Deliberately small: a note is a
+   caption on a dashboard, not an article. */
+
+.rich-text > :first-child {
+  margin-top: 0;
+}
+
+.rich-text > :last-child {
+  margin-bottom: 0;
+}
+
+.rich-text p {
+  margin: 0 0 0.5em;
+}
+
+.rich-text h2,
+.rich-text h3 {
+  font-family: var(--font-outfit), ui-sans-serif, system-ui, sans-serif;
+  color: var(--ink);
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+  margin: 0.9em 0 0.35em;
+}
+
+.rich-text h2 {
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+.rich-text h3 {
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.rich-text strong {
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.rich-text ul,
+.rich-text ol {
+  margin: 0 0 0.5em;
+  padding-left: 1.35em;
+}
+
+.rich-text ul {
+  list-style: disc;
+}
+
+.rich-text ol {
+  list-style: decimal;
+}
+
+.rich-text li {
+  margin: 0.15em 0;
+}
+
+.rich-text li::marker {
+  color: var(--muted);
+}
+
+.rich-text a {
+  color: var(--violet);
+  text-decoration: underline;
+}
+
+.rich-text code {
+  font-family: var(--font-jetbrains-mono), ui-monospace, monospace;
+  font-size: 0.9em;
+  background: var(--surface-sunken);
+  border-radius: 5px;
+  padding: 0.1em 0.35em;
+}
+
+.rich-text blockquote {
+  margin: 0 0 0.5em;
+  padding-left: 0.8em;
+  border-left: 2px solid var(--hairline-strong);
+  color: var(--muted);
+}
+
+/* The editor is empty when it holds nothing but the browser's trailing <br>,
+   which `:empty` does not catch. */
+.rich-text[data-empty]::before {
+  content: attr(data-placeholder);
+  color: var(--muted);
+  pointer-events: none;
+  display: block;
+}
+
 /* --- motion --------------------------------------------------------------
    One authored moment: a block arriving on the canvas settles into place.
    Everything else is a state change, not an entrance. */

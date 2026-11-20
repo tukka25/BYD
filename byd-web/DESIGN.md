@@ -279,7 +279,43 @@ scales it to the tile, which is what a block you can drag-resize needs.
 
 ---
 
-## 9. Export
+## 9. Notes, naming and saving
+
+**Notes are formatted text.** A note block is a contenteditable with a small
+toolbar — bold, italic, underline, heading, bulleted and numbered list, clear
+formatting — so bold text looks bold while you write it rather than looking
+like `**bold**`. The editor is deliberately *uncontrolled*: React owns the
+value at mount and at blur, the browser owns it in between. Writing the value
+back on every keystroke is what makes a contenteditable throw the caret to the
+start of the line.
+
+Fourteen tags are allowed and **no attribute at all** except a validated
+`href` (`https:`, `http:` or `mailto:`, rewritten with `rel="noreferrer
+noopener"`). `lib/rich-text.ts` sanitises on the way in *and* on the way out:
+on commit, so what is stored is clean, and on render, because a stored body
+arrives from the database, which is not the same trust boundary as the tab
+that wrote it. A paste goes through the same filter, so a note can pick up
+bold and lists from the clipboard and nothing else. The sanitiser is a
+tokeniser over an allowlist rather than a DOM pass, so it answers identically
+during server rendering, where `DOMParser` does not exist.
+
+Rendered notes get their own small type scale under `.rich-text` — a note is a
+caption on a dashboard, not an article.
+
+**The report name is edited in place.** Click the title, and the old name is
+selected so typing replaces it; Enter commits, Escape reverts (the field
+unmounts, so no blur fires and nothing is written). A rename has to reach the
+sidebar, which did not make the request, so `lib/reports.ts` announces it on a
+window event — the same shape as the session store.
+
+**Saving is visible.** Every write on the canvas goes through one tracker, so
+the header always says which of *saving / all changes saved · HH:MM / last
+change could not be saved* is true, in a live region. The Save button is the
+explicit version of the same write: it blurs whatever is being edited so that
+editor commits, then writes the name and the layout. It is a real write, not a
+reassurance — a button that only said "Saved" would be a lie.
+
+## 10. Export
 
 Export is print-to-PDF. No dependency, works offline, and gives the user the
 paper size and margins their OS already offers. `@media print` drops the
@@ -297,7 +333,7 @@ layout, and print styles resize the block but not the drawing inside it, so
 
 ---
 
-## 10. The floor
+## 11. The floor
 
 - Text never goes below `--muted`. Hairline is not a text colour.
 - Every icon-only control has an `aria-label` and a `title`.
