@@ -142,6 +142,25 @@ def create_db_connection(
     return data_source
 
 
+@router.get("/{data_source_id}/tables")
+def list_source_tables(
+    data_source_id: str,
+    current_user: User = Depends(get_current_user),
+    db: Session = Depends(get_db),
+):
+    """The tables behind a database source, so a caller can choose one."""
+    source = (
+        db.query(DataSource)
+        .filter(DataSource.id == data_source_id, DataSource.user_id == current_user.id)
+        .first()
+    )
+    if source is None:
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Data source not found")
+    if source.source_type != DataSourceType.DB:
+        return []
+    return [entry["table"] for entry in db_sources.tables_with_columns(source)]
+
+
 @router.delete("/{data_source_id}", status_code=status.HTTP_204_NO_CONTENT)
 def delete_data_source(
     data_source_id: str,

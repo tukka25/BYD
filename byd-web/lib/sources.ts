@@ -67,6 +67,11 @@ export async function createConnection(token: string, input: ConnectionInput): P
   });
 }
 
+/** The tables behind a database source; empty for a file. */
+export async function listTables(token: string, id: string): Promise<string[]> {
+  return authorizedFetch<string[]>(`/api/v1/data-sources/${id}/tables`, token);
+}
+
 export function sourceSubtitle(source: Source): string {
   if (source.source_type === "db") {
     const where = [source.db_host, source.db_port].filter(Boolean).join(":");

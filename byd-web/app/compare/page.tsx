@@ -6,8 +6,9 @@ import { AppShell, PageHeader } from "@/components/app-shell";
 import { DotWave } from "@/components/dot-wave";
 import { Plot } from "@/components/plot";
 import { Button, Chip, EmptyState, Panel, inputClass } from "@/components/ui";
+import { RichText } from "@/components/rich-text";
 import { getAccessToken } from "@/lib/auth";
-import { listSources, type Source } from "@/lib/sources";
+import { listSources, listTables, type Source } from "@/lib/sources";
 import {
   listEngines,
   opusCost,
@@ -16,18 +17,78 @@ import {
   type ComparisonPlan,
   type Engine,
   type EngineInfo,
+  type PlannedChart,
 } from "@/lib/comparison";
 
 /* Same question, same data, same contract, same executor — two sets of
    weights. The page exists to make that comparison legible, which means
    showing the failures as plainly as the charts. */
 
-function Cell({ cell }: { cell: CellResult | undefined }) {
+const ROW_HEIGHT = 30;
+
+/* A run takes minutes and costs real money, so it survives a reload. Kept in
+   sessionStorage rather than the database on purpose: a comparison is still an
+   experiment, and it should not outlive the tab it was run in. Figures can be
+   large, so a quota failure is ignored rather than allowed to break the page. */
+const CACHE_KEY = "promptdash_last_comparison";
+
+type Cached = { plan: ComparisonPlan; cells: CellResult[] };
+
+function readCache(): Cached | null {
+  try {
+    const raw = sessionStorage.getItem(CACHE_KEY);
+    return raw ? (JSON.parse(raw) as Cached) : null;
+  } catch {
+    return null;
+  }
+}
+
+function writeCache(value: Cached): void {
+  try {
+    sessionStorage.setItem(CACHE_KEY, JSON.stringify(value));
+  } catch {
+    // Over quota: the run is still on screen, it just will not come back.
+  }
+}
+
+/** One side's whole dashboard, laid out on the plan both sides were given. */
+function Dashboard({
+  sections,
+  cells,
+}: {
+  sections: PlannedChart[];
+  cells: Map<number, CellResult>;
+}) {
+  return (
+    <div className="grid grid-cols-12 gap-3">
+      {sections.map((section) => (
+        <div
+          key={section.index}
+          style={{
+            gridColumn: `span ${Math.min(12, section.w)} / span ${Math.min(12, section.w)}`,
+            minHeight: section.h * ROW_HEIGHT,
+          }}
+        >
+          <Panel className="flex h-full flex-col p-3">
+            <p className="mb-1.5 truncate text-[12px] font-semibold text-muted" title={section.question}>
+              {section.question}
+            </p>
+            <div className="min-h-0 flex-1">
+              <Cell cell={cells.get(section.index)} height={section.h * ROW_HEIGHT - 44} />
+            </div>
+          </Panel>
+        </div>
+      ))}
+    </div>
+  );
+}
+
+function Cell({ cell, height }: { cell: CellResult | undefined; height: number }) {
   const [showCode, setShowCode] = useState(false);
 
   if (!cell) {
     return (
-      <div className="h-[300px]">
+      <div style={{ height }}>
         <DotWave label="Working…" />
       </div>
     );
@@ -37,7 +98,7 @@ function Cell({ cell }: { cell: CellResult | undefined }) {
     <div className="flex h-full flex-col">
       <div className="mb-2 flex flex-wrap items-center gap-1.5">
         {cell.ok ? (
-          <Chip tone="teal">
+          <Chip tone="pine">
             <Check size={11} strokeWidth={3} />
             Rendered
           </Chip>
@@ -47,9 +108,9 @@ function Cell({ cell }: { cell: CellResult | undefined }) {
             Failed
           </Chip>
         )}
-        {cell.used_fallback ? <Chip tone="amber">Fallback</Chip> : null}
+        {cell.used_fallback ? <Chip tone="copper">Fallback</Chip> : null}
         {cell.violations.length > 0 ? (
-          <Chip tone="amber">{cell.violations.join(", ")}</Chip>
+          <Chip tone="copper">{cell.violations.join(", ")}</Chip>
         ) : null}
         <span className="text-[12px] text-muted tabular">{cell.seconds.toFixed(1)}s</span>
         {cell.output_tokens > 0 ? (
@@ -60,7 +121,7 @@ function Cell({ cell }: { cell: CellResult | undefined }) {
         {cell.code ? (
           <button
             onClick={() => setShowCode((v) => !v)}
-            className="ml-auto inline-flex items-center gap-1 text-[12px] font-semibold text-violet"
+            className="ml-auto inline-flex items-center gap-1 text-[12px] font-semibold text-pine"
           >
             <Code2 size={12} strokeWidth={2.25} />
             {showCode ? "Hide code" : "Code"}
@@ -78,7 +139,7 @@ function Cell({ cell }: { cell: CellResult | undefined }) {
             <Plot figure={cell.figure} />
           </div>
         ) : (
-          <div className="flex h-[300px] items-start gap-2 rounded-[var(--r-card)] bg-coral-wash p-4 text-[13px] text-[#b5301c]">
+          <div className="flex h-[300px] items-start gap-2 rounded-[var(--r-card)] bg-coral-wash p-4 text-[13px] text-coral-ink">
             <AlertTriangle size={15} strokeWidth={2.25} className="mt-px shrink-0" />
             <span className="break-words">{cell.error ?? "No figure was produced."}</span>
           </div>
@@ -92,6 +153,8 @@ export default function ComparePage() {
   const [sources, setSources] = useState<Source[]>([]);
   const [engines, setEngines] = useState<EngineInfo[]>([]);
   const [sourceId, setSourceId] = useState("");
+  const [tables, setTables] = useState<string[]>([]);
+  const [table, setTable] = useState("");
   const [brief, setBrief] = useState("");
   const [plan, setPlan] = useState<ComparisonPlan | null>(null);
   const [cells, setCells] = useState<CellResult[]>([]);
@@ -99,6 +162,14 @@ export default function ComparePage() {
   const [error, setError] = useState<string | null>(null);
 
   const token = typeof window !== "undefined" ? getAccessToken() : null;
+
+  // Restored before anything else, so a reload mid-run does not lose the run.
+  const [restored] = useState(() => (typeof window === "undefined" ? null : readCache()));
+  useEffect(() => {
+    if (!restored) return;
+    setPlan(restored.plan);
+    setCells(restored.cells);
+  }, [restored]);
 
   useEffect(() => {
     if (!token) return;
@@ -111,6 +182,23 @@ export default function ComparePage() {
     listEngines(token).then(setEngines).catch(() => setEngines([]));
   }, [token]);
 
+  // A database source holds many tables; a chart is built from one.
+  useEffect(() => {
+    if (!token || !sourceId) return;
+    const source = sources.find((s) => s.id === sourceId);
+    if (source?.source_type !== "db") {
+      setTables([]);
+      setTable("");
+      return;
+    }
+    listTables(token, sourceId)
+      .then((names) => {
+        setTables(names);
+        setTable((current) => (names.includes(current) ? current : (names[0] ?? "")));
+      })
+      .catch(() => setTables([]));
+  }, [token, sourceId, sources]);
+
   const opusReady = engines.find((e) => e.id === "opus")?.available ?? false;
   const cost = useMemo(() => opusCost(cells), [cells]);
 
@@ -120,13 +208,22 @@ export default function ComparePage() {
     setError(null);
     setPlan(null);
     setCells([]);
+    let latestPlan: ComparisonPlan | null = null;
+    const collected: CellResult[] = [];
     try {
       await runComparison(
         token,
-        { sourceId, brief },
+        { sourceId, table: table || undefined, brief },
         {
-          onPlan: setPlan,
-          onCell: (cell) => setCells((current) => [...current, cell]),
+          onPlan: (incoming) => {
+            latestPlan = incoming;
+            setPlan(incoming);
+          },
+          onCell: (cell) => {
+            collected.push(cell);
+            setCells([...collected]);
+            if (latestPlan) writeCache({ plan: latestPlan, cells: collected });
+          },
         },
       );
     } catch (err) {
@@ -136,8 +233,6 @@ export default function ComparePage() {
     }
   }
 
-  const cellFor = (index: number, engine: Engine) =>
-    cells.find((c) => c.index === index && c.engine === engine);
 
   const scored = (engine: Engine) => cells.filter((c) => c.engine === engine && c.ok).length;
   const attempted = (engine: Engine) => cells.filter((c) => c.engine === engine).length;
@@ -166,6 +261,23 @@ export default function ComparePage() {
             </select>
           </label>
 
+          {tables.length > 0 ? (
+            <label className="min-w-[11rem] flex-1">
+              <span className="mb-1.5 block text-[13px] font-semibold text-ink">Table</span>
+              <select
+                value={table}
+                onChange={(event) => setTable(event.target.value)}
+                className={inputClass}
+              >
+                {tables.map((name) => (
+                  <option key={name} value={name}>
+                    {name}
+                  </option>
+                ))}
+              </select>
+            </label>
+          ) : null}
+
           <label className="min-w-[15rem] flex-[2]">
             <span className="mb-1.5 block text-[13px] font-semibold text-ink">
               What should the charts be about?
@@ -188,7 +300,7 @@ export default function ComparePage() {
         </Panel>
 
         {!opusReady ? (
-          <div className="mb-5 flex items-start gap-2 rounded-[var(--r-card)] bg-amber-wash px-4 py-3 text-[13px] text-[#8a5a00]">
+          <div className="mb-5 flex items-start gap-2 rounded-[var(--r-card)] bg-copper-wash px-4 py-3 text-[13px] text-copper-ink">
             <AlertTriangle size={15} strokeWidth={2.25} className="mt-px shrink-0" />
             <span>
               Claude Opus 5.5 is not configured on the server, so only the local model could run.
@@ -198,7 +310,7 @@ export default function ComparePage() {
         ) : null}
 
         {error ? (
-          <div className="mb-5 flex items-start gap-2 rounded-[var(--r-card)] bg-coral-wash px-4 py-3 text-[13px] text-[#b5301c]">
+          <div className="mb-5 flex items-start gap-2 rounded-[var(--r-card)] bg-coral-wash px-4 py-3 text-[13px] text-coral-ink">
             <AlertTriangle size={16} strokeWidth={2.25} className="mt-px shrink-0" />
             <span className="flex-1">{error}</span>
           </div>
@@ -207,7 +319,7 @@ export default function ComparePage() {
         {plan ? (
           <Panel className="mb-5 p-4">
             <div className="flex flex-wrap items-center gap-2 text-[13px] text-body">
-              <Chip tone="violet">
+              <Chip tone="slate">
                 <Database size={11} strokeWidth={2.25} />
                 {plan.source}
               </Chip>
@@ -249,25 +361,42 @@ export default function ComparePage() {
           </Panel>
         ) : null}
 
-        {plan
-          ? plan.questions.map((question, index) => (
-              <div key={question} className="mb-5">
-                <p className="mb-2 font-display text-[15px] font-semibold text-ink">
-                  {index + 1}. {question}
+        {plan ? (
+          <>
+            {plan.intro ? (
+              <Panel className="mb-5 p-4">
+                <p className="mb-1.5 font-display text-[15px] font-semibold text-ink">
+                  {plan.intro_title || "About this data"}
                 </p>
-                <div className="grid gap-4 lg:grid-cols-2">
-                  {plan.engines.map((engine) => (
-                    <Panel key={engine.id} className="p-4">
-                      <p className="mb-2 text-[12.5px] font-bold uppercase tracking-[0.08em] text-muted">
-                        {engine.label}
-                      </p>
-                      <Cell cell={cellFor(index, engine.id)} />
-                    </Panel>
-                  ))}
-                </div>
-              </div>
-            ))
-          : null}
+                <RichText value={plan.intro} />
+                <p className="mt-2 text-[12px] text-muted">
+                  Composed from the data profile, not by a model — the same on both sides, so it
+                  is shown once.
+                </p>
+              </Panel>
+            ) : null}
+
+            <div className="grid gap-4 xl:grid-cols-2">
+              {plan.engines.map((engine) => (
+                <section key={engine.id}>
+                  <h2 className="mb-2 text-[12.5px] font-bold uppercase tracking-[0.08em] text-muted">
+                    {engine.label}
+                  </h2>
+                  <Dashboard
+                    sections={plan.sections}
+                    cells={
+                      new Map(
+                        cells
+                          .filter((c) => c.engine === engine.id)
+                          .map((c) => [c.index, c] as const),
+                      )
+                    }
+                  />
+                </section>
+              ))}
+            </div>
+          </>
+        ) : null}
       </div>
     </AppShell>
   );

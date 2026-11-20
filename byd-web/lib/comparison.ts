@@ -26,11 +26,24 @@ export interface CellResult {
   output_tokens: number;
 }
 
+export interface PlannedChart {
+  index: number;
+  question: string;
+  x: number;
+  y: number;
+  w: number;
+  h: number;
+}
+
 export interface ComparisonPlan {
   source: string;
   rows: number;
   columns: string[];
   questions: string[];
+  /** Composed from the data profile, not by a model: the same on both sides. */
+  intro: string;
+  intro_title: string;
+  sections: PlannedChart[];
   engines: Array<{ id: Engine; label: string }>;
 }
 

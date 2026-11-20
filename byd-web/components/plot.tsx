@@ -161,6 +161,12 @@ function detectCurrency(figure: PlotlyFigure): string {
    left over, which is how we tell a colour from a format. */
 const D3_FORMAT = /^[-+( ]?[$#]?0?\d*,?(\.\d+)?~?[bcdefgnorsxX%]?$/;
 
+/* The only endings that render a plain, readable number: fixed, integer,
+   percent, or bare grouping. A format with a precision and NO type letter
+   (`.0`) is the trap -- d3 falls back to general and prints `1e+6`. So are
+   `s` and `e`, for the same reason: a headline number is there to be read. */
+const READABLE_FORMAT = /[,df%]$/;
+
 /** A separator-ed format that keeps decimals only where they mean something. */
 function numberFormat(value: unknown): string {
   const magnitude = Math.abs(Number(value));
@@ -176,7 +182,7 @@ function allIndicators(figure: PlotlyFigure): boolean {
 }
 
 const MONEYISH =
-  /\b(price|revenue|sales|cost|amount|value|spend|mrr|arr|gmv|gdp|profit|margin|income|salary|fee|budget|total|usd|eur|gbp|aed|sar|jpy|inr)\b/i;
+  /\b(price|revenue|sales|cost|spend|mrr|arr|gmv|gdp|profit|margin|income|salary|fee|budget|usd|eur|gbp|aed|sar|jpy|inr)\b/i;
 
 /** The currency belongs on the axis that holds the money, not on both.
 
@@ -279,13 +285,13 @@ function themed(figure: PlotlyFigure) {
       /* A deliberate format the model chose is kept -- a percentage, a fixed
          number of decimals. Three are not:
 
-         empty, so there is nothing to keep; an SI one, because a headline
-         number exists to be read exactly and `.0s` turns 72,466 into "72k",
-         which is the figure the KPI was supposed to tell you; and anything
-         that is not a d3 format at all, which Plotly ignores in silence --
-         a colour once arrived in this field and the number rendered raw. */
+         empty, so there is nothing to keep; anything that does not end in a
+         readable type, because a headline number is there to be read and
+         `.0s`, `.0e` and bare `.0` print "72k", "1e+6" and "1e+6"; and
+         anything that is not a d3 format at all, which Plotly ignores in
+         silence -- a colour once arrived in this field and rendered raw. */
       const chosen = String(number.valueformat ?? "");
-      if (!chosen || /s$/.test(chosen) || !D3_FORMAT.test(chosen)) {
+      if (!chosen || !D3_FORMAT.test(chosen) || !READABLE_FORMAT.test(chosen)) {
         number.valueformat = numberFormat(trace.value);
       }
       if (currency && !number.prefix && !number.suffix) number.prefix = currency;

@@ -33,8 +33,8 @@ settings = get_settings()
 
 # Each question is one generation per engine, and the API side costs money, so
 # a run is bounded rather than however many the planner felt like.
-MAX_QUESTIONS = 4
-SAMPLE_ROWS = 5000
+MAX_QUESTIONS = 5
+SAMPLE_ROWS = 50_000
 
 
 class CompareRequest(BaseModel):
@@ -94,13 +94,18 @@ async def run_comparison(
 
     frame, source_label = await asyncio.to_thread(_load, source, payload.table)
     profile = architect.profile_frame(source_label, frame)
-    sections = [s for s in architect.plan(profile, brief=payload.brief) if s.kind == "chart"]
-    if not sections:
+    planned = architect.plan(profile, brief=payload.brief)
+    charts = [s for s in planned if s.kind == "chart"][:MAX_QUESTIONS]
+    if not charts:
         raise HTTPException(
             status_code=400,
             detail="Nothing chartable was found in that source.",
         )
-    questions = [s.prompt for s in sections][:MAX_QUESTIONS]
+    # The opening text block is composed from the profile, not by a model, so
+    # it is identical on both sides and is shown once rather than twice.
+    intro = next((s.text_body for s in planned if s.kind == "text"), "")
+    intro_title = next((s.title for s in planned if s.kind == "text"), "")
+    questions = [s.prompt for s in charts]
 
     # Built once and shared by both engines: identical columns, dtypes and rows.
     data_context = {
@@ -122,6 +127,14 @@ async def run_comparison(
                 "rows": int(len(frame)),
                 "columns": data_context["columns"],
                 "questions": questions,
+                "intro": intro,
+                "intro_title": intro_title,
+                # The same plan lays out both dashboards, so a difference on
+                # screen is the chart and never the arrangement.
+                "sections": [
+                    {"index": i, "question": s.prompt, "x": s.x, "y": s.y, "w": s.w, "h": s.h}
+                    for i, s in enumerate(charts)
+                ],
                 "engines": [
                     {"id": e, "label": comparison.ENGINE_LABELS[e]} for e in engines
                 ],
