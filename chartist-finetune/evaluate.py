@@ -39,19 +39,27 @@ import chart_types
 from executor import run_candidates
 
 FENCE = re.compile(r"```(?:python)?\s*(.*?)```", re.DOTALL | re.IGNORECASE)
+# Qwen3.5 is a thinking model: generation starts after "<think>\\n", so what it
+# returns begins "\\n</think>\\n\\n" before any code. Left in, every candidate is a
+# SyntaxError and the render rate reads 0% for a model that is working perfectly
+# -- observed exactly that on the first local run of the converted adapter.
+THINK_PREFIX = re.compile(r"^.*?</think>\s*", re.DOTALL)
 
 
 def strip_fence(text: str) -> str:
-    """Models wrap code in markdown even when told not to. Unwrap before scoring.
+    """Strip the reasoning block and any markdown fence, leaving bare Python.
 
-    The contract forbids fences, but the fence is a formatting artefact rather
-    than a modelling failure, and penalising it would conflate two different
-    things. The backend's own sanitizer strips them too, so stripping here
-    measures what the app would actually see.
+    Models wrap code in markdown even when told not to, and a thinking model
+    prefixes its answer with the close of its reasoning block. Both are
+    formatting artefacts rather than modelling failures, and the backend's own
+    sanitizer strips fences too, so removing them measures what the app would
+    actually see.
     """
+    if "</think>" in text:
+        text = THINK_PREFIX.sub("", text, count=1)
     match = FENCE.search(text)
     if match:
-        return match.group(1).strip()
+        text = match.group(1)
     return text.strip()
 
 
