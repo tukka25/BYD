@@ -5,9 +5,11 @@ import asyncio
 import json
 import logging
 import time
+from functools import lru_cache
 from typing import Any, Dict, Literal, Optional
 
 from fastapi import APIRouter, Depends, HTTPException, status
+from fastapi.responses import StreamingResponse
 from pydantic import BaseModel, Field
 from sqlalchemy.orm import Session
 
@@ -19,6 +21,9 @@ from app.models.data_source import DataSource, DataSourceStatus, DataSourceType
 from app.models.report_block import BlockKind, ReportBlock
 from app.models.user import User
 from app.services import db_sources
+from app.services.agents import architect
+from app.services.agents.narrator import Narrator
+from app.services.llm import get_llm
 from app.services.agents.workflow import run_agent_workflow
 from app.utils.figure_json import decode_typed_arrays
 
@@ -27,6 +32,12 @@ logger = logging.getLogger(__name__)
 settings = get_settings()
 
 FALLBACK_SIGNATURE = "promptdash: deterministic fallback"
+
+
+@lru_cache(maxsize=1)
+def _narrator() -> Narrator:
+    """Lazy, so importing this module does not reach for a model server."""
+    return Narrator(llm=get_llm("narrator"))
 
 # Grid units. The canvas is 12 columns wide; a chart wants half the width and
 # enough height to be read, a metric is small, a note is wide and short.
@@ -257,11 +268,19 @@ async def generate_block(
     kind = BlockKind.METRIC if is_metric else BlockKind.CHART
     width, height = DEFAULT_SIZE["metric" if is_metric else "chart"]
 
+    # The block is titled by the model, not by the sentence the user typed. A
+    # KPI already carries the label its own figure declares, so that one wins.
+    title = metric_label or await asyncio.to_thread(
+        _narrator().title_for,
+        payload.prompt,
+        data_context.get("columns") or [],
+    )
+
     block = ReportBlock(
         dashboard_id=report.id,
         user_id=current_user.id,
         kind=kind,
-        title=(metric_label or payload.prompt.strip())[:255],
+        title=(title or payload.prompt.strip())[:255],
         prompt=payload.prompt.strip(),
         code=code,
         # Decoded above, not in the browser: plotly serialises numeric columns
@@ -359,6 +378,141 @@ def save_layout(
             block.x, block.y, block.w, block.h = item.x, item.y, item.w, item.h
     db.commit()
     return [_to_response(b) for b in sorted(blocks.values(), key=lambda b: (b.y, b.x))]
+
+
+def _sse(event: str, data: Dict[str, Any]) -> str:
+    return f"event: {event}\ndata: {json.dumps(data)}\n\n"
+
+
+@router.post("/{dashboard_id}/blocks/dashboard")
+async def generate_whole_dashboard(
+    dashboard_id: str,
+    current_user: User = Depends(get_current_user),
+    db: Session = Depends(get_db),
+):
+    """Plan a dashboard from the data, then build it block by block.
+
+    Streamed, because this is five or six chart generations end to end — a
+    minute and a half of work. A single response would leave the user with a
+    spinner and no idea whether anything was happening; here each block is
+    reported the moment it exists, so the progress shown is the real count.
+    """
+    report = _owned_report(db, dashboard_id, current_user)
+    sources = _user_sources(db, report)
+    if not sources:
+        raise HTTPException(
+            status_code=400,
+            detail="This report has no data to plan from. Add a file or a database first.",
+        )
+
+    source = sources[0]
+    try:
+        frame = await asyncio.to_thread(
+            architect.sample_source, source, settings.UPLOAD_DIR
+        )
+    except Exception as exc:  # noqa: BLE001
+        logger.warning("[dashboard] could not sample %s: %s", source.get("name"), exc)
+        raise HTTPException(status_code=400, detail=f"Could not read that source: {exc}")
+
+    profile = architect.profile_frame(str(source.get("name")), frame)
+    sections = architect.plan(profile)
+    if not sections:
+        raise HTTPException(
+            status_code=400,
+            detail=(
+                "Nothing chartable was found in that source — it needs at least one numeric "
+                "column or one column with a small set of repeated values."
+            ),
+        )
+
+    base_row = _next_row(db, report.id)
+    source_hint = str(source.get("name") or "")
+
+    async def events():
+        yield _sse(
+            "plan",
+            {
+                "total": len(sections),
+                "source": profile.name,
+                "steps": [s.title or s.prompt for s in sections],
+            },
+        )
+
+        for index, section in enumerate(sections):
+            yield _sse(
+                "step",
+                {"index": index, "total": len(sections), "label": section.title or section.prompt},
+            )
+
+            try:
+                if section.kind == "text":
+                    block = ReportBlock(
+                        dashboard_id=report.id,
+                        user_id=current_user.id,
+                        kind=BlockKind.TEXT,
+                        title=section.title or "About this data",
+                        text_body=section.text_body,
+                        x=section.x,
+                        y=base_row + section.y,
+                        w=section.w,
+                        h=section.h,
+                    )
+                else:
+                    result = await asyncio.to_thread(
+                        run_agent_workflow, section.prompt, source_hint, sources
+                    )
+                    figure = (result.get("execution_result") or {}).get("figure")
+                    if result.get("error") or not figure:
+                        yield _sse(
+                            "skipped",
+                            {
+                                "index": index,
+                                "label": section.prompt,
+                                "reason": result.get("error") or "no figure was produced",
+                            },
+                        )
+                        continue
+
+                    figure = decode_typed_arrays(figure)
+                    metric_label = _indicator_title(figure)
+                    code = result.get("code") or ""
+                    context = result.get("data_context") or {}
+                    title = metric_label or await asyncio.to_thread(
+                        _narrator().title_for, section.prompt, context.get("columns") or []
+                    )
+                    block = ReportBlock(
+                        dashboard_id=report.id,
+                        user_id=current_user.id,
+                        kind=BlockKind.METRIC if metric_label is not None else BlockKind.CHART,
+                        title=(title or section.prompt)[:255],
+                        prompt=section.prompt,
+                        code=code,
+                        figure_json=json.dumps(figure),
+                        source_name=context.get("filename"),
+                        chart_type=(result.get("plan") or {}).get("visualization_type"),
+                        used_fallback=FALLBACK_SIGNATURE in code,
+                        x=section.x,
+                        y=base_row + section.y,
+                        w=section.w,
+                        h=section.h,
+                    )
+
+                db.add(block)
+                db.commit()
+                db.refresh(block)
+                yield _sse("block", _to_response(block).model_dump(mode="json"))
+            except Exception as exc:  # noqa: BLE001 - one bad block must not end the build
+                db.rollback()
+                logger.exception("[dashboard] block %s failed", index)
+                yield _sse("skipped", {"index": index, "label": section.prompt, "reason": str(exc)})
+
+        yield _sse("done", {"total": len(sections)})
+
+    return StreamingResponse(
+        events(),
+        media_type="text/event-stream",
+        headers={"Cache-Control": "no-cache", "X-Accel-Buffering": "no"},
+    )
 
 
 @router.delete("/{dashboard_id}/blocks/{block_id}", status_code=status.HTTP_204_NO_CONTENT)

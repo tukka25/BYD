@@ -226,8 +226,20 @@ chart SVG and all — off the compositor and makes it rasterise, which is felt
 most while dragging one. Nothing on the canvas animates a property that
 forces paint.
 
-Generation takes 13–15s, so the wait is a real state and gets `.generating` —
-a violet-tinted sweep across a sunken bar — rather than a spinner.
+Generation takes 13–15s a block, so the wait is a real state and gets a real
+treatment. `components/dot-wave.tsx` draws a field of violet dots with a pulse
+travelling through it, on a canvas rather than as several hundred elements —
+animating that many nodes through the DOM is a style write per dot per frame.
+A first frame is drawn synchronously, because a throttled tab may not run an
+animation frame for a while and an empty box is not a loading state.
+(`.generating`, a violet sweep across a sunken bar, remains for skeletons.)
+
+**What the loader says is true.** Building a whole dashboard streams, so it
+shows a real count — blocks finished out of blocks planned — as a percentage.
+A single block is one request that answers at the end, so there is no real
+number and none is shown: it names the stage instead, on the schedule those
+stages were measured at. A progress bar that is really a timer is a lie told
+with a number.
 
 > **Hard rule.** A drag handle must set `user-select: none` (and
 > `touch-action: none`). Without it, pressing the handle starts a text
@@ -295,6 +307,12 @@ scales it to the tile, which is what a block you can drag-resize needs.
 ---
 
 ## 9. Notes, naming and saving
+
+**Blocks are titled by the model.** A block used to be titled with the
+sentence the user typed, so a canvas read "Bar chart counting report blocks by
+kind". The narrator writes a short name for what the chart shows; a KPI keeps
+the label its own figure declares. The data source is not repeated under the
+title — the report header already says what this report reads.
 
 **Notes are formatted text.** A note block is a contenteditable with a small
 toolbar — bold, italic, underline, heading, bulleted and numbered list, clear

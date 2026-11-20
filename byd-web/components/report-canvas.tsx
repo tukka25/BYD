@@ -17,9 +17,11 @@ import {
   LayoutGrid,
   Pencil,
   Save,
+  Sparkles,
   Trash2,
   Type,
 } from "lucide-react";
+import { DotWave } from "@/components/dot-wave";
 import { Plot } from "@/components/plot";
 import { RichText, RichTextEditor } from "@/components/rich-text";
 import { SourceDialog } from "@/components/sources";
@@ -28,6 +30,7 @@ import {
   createBlock,
   deleteBlock,
   generateBlock,
+  generateDashboard,
   listBlocks,
   saveLayout,
   updateBlock,
@@ -68,6 +71,20 @@ type Mode = "view" | "edit";
    visible rather than assumed, and the Save button is the explicit version of
    the same write for anyone who would rather press something. */
 type SaveState = "idle" | "saving" | "saved" | "error";
+
+/* The pipeline's real stages, with the durations they were measured at
+   (planner 1.6s, detective effectively instant, chartist 13.3s). The label
+   advances on that schedule because the server answers once at the end and
+   cannot report a stage; no percentage is shown for a single block, because
+   there is no real number to show. */
+const PHASES: Array<{ at: number; label: string }> = [
+  { at: 0, label: "Choosing the chart" },
+  { at: 1.6, label: "Finding the data" },
+  { at: 2.2, label: "Writing the code" },
+  { at: 15, label: "Running it on your data" },
+];
+
+type Building = { done: number; total: number; label: string };
 
 /* A Plotly `indicator` trace is already a metric card: one big number, no axes.
    The chartist was fine-tuned on that chart type, so a KPI can come back as a
@@ -163,10 +180,7 @@ function BlockFrame({
               {block.title || "Untitled"}
             </h3>
           )}
-          <div className="mt-1 flex flex-wrap items-center gap-1.5">
-            {block.source_name ? (
-              <span className="font-mono text-[11px] text-muted">{block.source_name}</span>
-            ) : null}
+          <div className="mt-1 flex flex-wrap items-center gap-1.5 empty:mt-0">
             {block.used_fallback ? (
               <Chip tone="amber">
                 <AlertTriangle size={11} strokeWidth={2.25} />
@@ -257,6 +271,9 @@ export function ReportCanvas({ report }: { report: Report }) {
   const [savedAt, setSavedAt] = useState<string | null>(null);
   const [sourceIds, setSourceIds] = useState<string[]>(report.dataSourceIds);
   const [sourcesOpen, setSourcesOpen] = useState(false);
+  const [building, setBuilding] = useState<Building | null>(null);
+  const [skipped, setSkipped] = useState<string[]>([]);
+  const [phase, setPhase] = useState(PHASES[0].label);
   const askRef = useRef<HTMLTextAreaElement | null>(null);
   const gridHost = useRef<HTMLDivElement | null>(null);
 
@@ -297,6 +314,17 @@ export function ReportCanvas({ report }: { report: Report }) {
     observer.observe(node);
     return () => observer.disconnect();
   }, []);
+
+  useEffect(() => {
+    if (!busy) return;
+    const started = Date.now();
+    const timer = window.setInterval(() => {
+      const elapsed = (Date.now() - started) / 1000;
+      const current = [...PHASES].reverse().find((p) => elapsed >= p.at) ?? PHASES[0];
+      setPhase(current.label);
+    }, 400);
+    return () => window.clearInterval(timer);
+  }, [busy]);
 
   const layouts = useMemo(
     () => ({
@@ -414,6 +442,45 @@ export function ReportCanvas({ report }: { report: Report }) {
     }
   }
 
+  /* Plans a dashboard from the data and builds it block by block. The blocks
+     land on the canvas as they are finished rather than all at the end, so
+     what is on screen is always what exists. */
+  async function buildDashboard() {
+    if (!token || building || busy) return;
+    setSkipped([]);
+    setError(null);
+    setBuilding({ done: 0, total: 0, label: "Reading the data" });
+    let completed = 0;
+    try {
+      await generateDashboard(token, report.id, {
+        onPlan: (plan) =>
+          setBuilding({
+            done: 0,
+            total: plan.total,
+            label: `Planning ${plan.total} blocks from ${plan.source}`,
+          }),
+        onStep: (step) =>
+          setBuilding({ done: completed, total: step.total, label: step.label }),
+        onBlock: (block) => {
+          completed += 1;
+          setBlocks((current) => [...current, block]);
+          setBuilding((current) => (current ? { ...current, done: completed } : current));
+        },
+        onSkipped: (skip) => {
+          completed += 1;
+          setSkipped((current) => [...current, skip.label]);
+          setBuilding((current) => (current ? { ...current, done: completed } : current));
+        },
+      });
+      setSaveState("saved");
+      setSavedAt(new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" }));
+    } catch (err) {
+      setError(err instanceof Error ? err.message : "Could not build that dashboard.");
+    } finally {
+      setBuilding(null);
+    }
+  }
+
   async function addNote() {
     if (!token) return;
     const block = await createBlock(token, report.id, { kind: "text", title: "Note" });
@@ -508,6 +575,14 @@ export function ReportCanvas({ report }: { report: Report }) {
               { value: "view", label: "View", icon: <Eye size={14} strokeWidth={2.25} /> },
             ]}
           />
+          <Button
+            variant="primary"
+            onClick={buildDashboard}
+            disabled={Boolean(building) || busy}
+          >
+            <Sparkles size={15} strokeWidth={2.25} />
+            {building ? "Building…" : "Generate dashboard"}
+          </Button>
           <Button variant="secondary" onClick={addNote}>
             <Type size={15} strokeWidth={2.25} />
             Note
@@ -557,6 +632,27 @@ export function ReportCanvas({ report }: { report: Report }) {
       ) : null}
 
       <div ref={gridHost} className="app-scroll px-2 pb-6 sm:px-5">
+        {building || busy ? (
+          <div className="mb-4 px-3">
+            <Panel className="h-[260px] p-2">
+              <DotWave
+                label={building ? building.label : phase}
+                percent={
+                  building && building.total > 0
+                    ? (building.done / building.total) * 100
+                    : null
+                }
+              />
+            </Panel>
+            {skipped.length > 0 ? (
+              <p className="mt-2 text-[12.5px] text-muted">
+                {skipped.length} block{skipped.length === 1 ? "" : "s"} could not be drawn and
+                {skipped.length === 1 ? " was" : " were"} left out: {skipped.join(", ")}
+              </p>
+            ) : null}
+          </div>
+        ) : null}
+
         {loading ? (
           <div className="grid grid-cols-2 gap-4 px-3">
             <div className="h-64 rounded-[var(--r-panel)] generating" />
@@ -569,9 +665,15 @@ export function ReportCanvas({ report }: { report: Report }) {
               title="Ask a question to start"
               body="Describe the chart you want in plain English — “monthly revenue by plan tier”. It runs against your uploaded data on this machine, and the result lands here as a block you can move and resize."
               action={
-                <Button variant="primary" onClick={() => askRef.current?.focus()}>
-                  Write a question
-                </Button>
+                <div className="flex flex-wrap items-center justify-center gap-2">
+                  <Button variant="primary" onClick={buildDashboard} disabled={Boolean(building)}>
+                    <Sparkles size={15} strokeWidth={2.25} />
+                    Generate a dashboard
+                  </Button>
+                  <Button variant="secondary" onClick={() => askRef.current?.focus()}>
+                    Write a question
+                  </Button>
+                </div>
               }
             />
           </Panel>

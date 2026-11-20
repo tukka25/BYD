@@ -34,12 +34,13 @@ from app.core.config import get_settings
 
 logger = logging.getLogger(__name__)
 
-Role = Literal["planner", "chartist", "detective"]
+Role = Literal["planner", "chartist", "detective", "narrator"]
 
 # Greedy everywhere. These agents are infrastructure, not chat: the same
 # question should produce the same chart.
 _TEMPERATURE = 0.0
-_MAX_TOKENS = {"planner": 256, "chartist": 1024, "detective": 512}
+# A title is one short line; anything longer is the model talking to itself.
+_MAX_TOKENS = {"planner": 256, "chartist": 1024, "detective": 512, "narrator": 128}
 
 
 def _ollama(role: Role) -> BaseChatModel:

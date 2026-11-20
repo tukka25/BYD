@@ -1,4 +1,4 @@
-import { authorizedFetch } from "@/lib/backend";
+import { authorizedFetch, backendBaseUrl } from "@/lib/backend";
 
 export type BlockKind = "chart" | "metric" | "text";
 
@@ -86,5 +86,77 @@ export async function deleteBlock(token: string, reportId: string, blockId: stri
   );
   if (!response.ok && response.status !== 204) {
     throw new Error(`Could not delete the block (${response.status})`);
+  }
+}
+
+/* --- generating a whole dashboard --------------------------------------
+   Five or six chart generations end to end is a minute and a half, so the
+   server streams: each block is reported the moment it exists and the
+   progress shown is a real count rather than a timer pretending to be one.
+
+   Server-sent events over POST, so `EventSource` is out (it is GET only) and
+   the body is parsed here. */
+
+export interface DashboardProgress {
+  onPlan?: (plan: { total: number; source: string; steps: string[] }) => void;
+  onStep?: (step: { index: number; total: number; label: string }) => void;
+  onBlock?: (block: Block) => void;
+  onSkipped?: (skip: { index: number; label: string; reason: string }) => void;
+}
+
+export async function generateDashboard(
+  token: string,
+  reportId: string,
+  handlers: DashboardProgress,
+  signal?: AbortSignal,
+): Promise<void> {
+  const response = await fetch(
+    `${backendBaseUrl()}/api/v1/dashboard/${reportId}/blocks/dashboard`,
+    { method: "POST", headers: { Authorization: `Bearer ${token}` }, signal },
+  );
+
+  if (!response.ok) {
+    const detail = (await response.json().catch(() => null)) as { detail?: string } | null;
+    throw new Error(detail?.detail ?? `Could not plan this dashboard (${response.status})`);
+  }
+  if (!response.body) throw new Error("The server sent no dashboard stream.");
+
+  const reader = response.body.getReader();
+  const decoder = new TextDecoder();
+  let buffer = "";
+
+  const dispatch = (event: string, data: string) => {
+    let payload: unknown;
+    try {
+      payload = JSON.parse(data);
+    } catch {
+      return;
+    }
+    if (event === "plan") handlers.onPlan?.(payload as never);
+    else if (event === "step") handlers.onStep?.(payload as never);
+    else if (event === "block") handlers.onBlock?.(payload as Block);
+    else if (event === "skipped") handlers.onSkipped?.(payload as never);
+  };
+
+  for (;;) {
+    const { done, value } = await reader.read();
+    if (done) break;
+    buffer += decoder.decode(value, { stream: true });
+
+    // An event ends at a blank line; anything after it is the next one, which
+    // may still be arriving.
+    let split = buffer.indexOf("\n\n");
+    while (split !== -1) {
+      const chunk = buffer.slice(0, split);
+      buffer = buffer.slice(split + 2);
+      let event = "message";
+      let data = "";
+      for (const line of chunk.split("\n")) {
+        if (line.startsWith("event:")) event = line.slice(6).trim();
+        else if (line.startsWith("data:")) data += line.slice(5).trim();
+      }
+      if (data) dispatch(event, data);
+      split = buffer.indexOf("\n\n");
+    }
   }
 }
