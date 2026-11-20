@@ -450,19 +450,69 @@ reassurance — a button that only said "Saved" would be a lie.
 
 ## 10. Export
 
-Export is print-to-PDF. No dependency, works offline, and gives the user the
-paper size and margins their OS already offers. `@media print` drops the
-sidebar and every `print:hidden` control, flattens the absolutely-positioned
-grid into a stacked document in reading order, gives each block
-`break-inside: avoid`, and removes every shadow, and it releases the shell's
-scroll regions (`overflow: visible; height: auto`) so the whole report reaches
-the page rather than the slice that was on screen. A drag grid means nothing
-on paper.
+`lib/export-pdf.ts`. **The app builds the PDF and hands over the file.** Export
+used to be `window.print()`, so the deliverable came out of the browser's print
+dialog — its margins, its header and footer, and a "Save as PDF" step in the
+middle of what should be one click. The app was asking Chrome to produce its
+output and had no say in the result.
 
-Plotly writes explicit `width`/`height` onto its SVG from the last on-screen
-layout, and print styles resize the block but not the drawing inside it, so
-`components/plot.tsx` re-measures every figure on `beforeprint`, on the
-`matchMedia("print")` change, and again on `afterprint`.
+A4 landscape, because a 12-column dashboard is a wide thing. Blocks land at
+their real `x/y/w/h`: the arrangement is the user's work, and an export that
+stacks everything into one column is discarding it.
+
+**Charts are re-rendered, never screenshotted.** Every block is a live Plotly
+graph div, so `Plotly.toImage` lays the figure out *for the printed box* —
+axes, ticks and legend sized for that rectangle. html2canvas would give a
+stretched bitmap, lose SVG text, and add a second renderer to keep in step with
+`plot.tsx`. jsPDF is lazy-imported inside the click handler, the same way
+`plot.tsx` imports Plotly, so it stays out of the initial bundle. It makes no
+network request: the local-only rule is about runtime requests, not about npm.
+
+> **Row height comes from the page, not from the screen.** Mapping the canvas
+> 1:1 (a 1100px canvas onto a 273mm page) makes a row 10.9mm and preserves
+> every block's on-screen aspect ratio — and is wrong. A default 9-row chart
+> then eats 130mm of a 153mm page, so every block lands on a page of its own:
+> a five-block report measured **five** mostly-empty pages. A screen scrolls
+> and a page does not, so they cannot share a row height. The rule instead: a
+> 9-row chart takes 60% of a page's content height. The same report is now
+> three pages. Blocks come out wider than tall, which is the right shape for a
+> landscape page, and since Plotly relays the figure out for that box rather
+> than stretching it, nothing is distorted.
+
+> **Hard rule.** The figure font is `var(--font-jakarta)`, and `toImage`
+> renders into a detached tree where that custom property does not resolve — so
+> every exported chart came out in the browser's serif default while the rest
+> of the PDF was sans. The export reads the real family names off those
+> variables and substitutes them into a *copy* of the figure. Read them from
+> `document.body`, not `document.documentElement`: `next/font` declares them on
+> the body, and `:root` returns empty, which fails silently back to a generic
+> face.
+
+Pagination: blocks sorted by `(y, x)`; when one would cross the page bottom, a
+new page starts at that block's row, so blocks sharing rows stay side by side
+and none is ever sliced. A block taller than a whole page is clamped — with
+~7.7mm rows that is reachable, since the canvas lets a block be resized past
+a page.
+
+Notes are drawn as real text, not pictures of text, so an exported note stays
+selectable and searchable. The 14-tag allowlist is parsed into headings,
+paragraphs and lists, and inline `strong`/`em` survive as styled runs with
+manual word wrapping rather than being flattened to one style.
+
+On paper each block carries a hairline border. On screen this system separates
+surfaces by value and bans decorative borders — but a white card on white paper
+is invisible, so the hairline is the print equivalent of that value step, not
+decoration.
+
+The `@media print` rules below remain so ⌘P still produces something sane, but
+they are no longer the Export path. They drop the sidebar and every
+`print:hidden` control, flatten the absolutely-positioned grid into a stacked
+document, and release the shell's scroll regions
+(`overflow: visible; height: auto`) so the whole report reaches the page rather
+than the slice that was on screen. Plotly writes explicit `width`/`height` onto
+its SVG from the last on-screen layout, so `components/plot.tsx` re-measures
+every figure on `beforeprint`, on the `matchMedia("print")` change, and again
+on `afterprint`.
 
 ---
 
