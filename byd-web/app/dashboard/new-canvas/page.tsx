@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { ChangeEvent, FormEvent, useEffect, useMemo, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
-import { AuthUser, loadCurrentUser, logoutUser } from "@/lib/auth";
+import { AuthUser, getAccessToken, loadCurrentUser, logoutUser } from "@/lib/auth";
 import {
   bytesToSize,
   createId,
@@ -119,10 +119,23 @@ export default function DashboardCanvasPage() {
     setCharts((prev) => [{ id: chartId, prompt, isLoading: true }, ...prev]);
 
     try {
+      const token = getAccessToken();
+      if (!token) {
+        throw new Error("Your session expired. Sign in again to generate charts.");
+      }
       const response = await fetch("/api/dashboard/generate", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ prompt, request_id: requestId }),
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${token}`,
+        },
+        body: JSON.stringify({
+          prompt,
+          request_id: requestId,
+          // Tell the backend which source the user picked. Left empty when
+          // nothing is selected, so the detective ranks instead of guessing.
+          data_source: selectedSources[0]?.name ?? "",
+        }),
       });
 
       if (!response.ok) {

@@ -1,0 +1,105 @@
+# Runs the whole stack for local testing: Postgres, the FastAPI backend, and the
+# Next.js frontend.
+#
+# The LLM is NOT in here, deliberately. Both options run on the host:
+#   * mlx_lm server  — needs Metal, which a Linux container cannot reach. This is
+#                      the one that serves the fine-tuned chartist adapter.
+#   * Ollama         — conventionally a host service too.
+# The api container reaches either through host.docker.internal.
+#
+#   make up        start everything
+#   make serve-model   start the fine-tuned model on the host (separate terminal)
+#   make smoke     prove it end to end
+services:
+  postgres:
+    image: postgres:16
+    container_name: promptdash-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-promptdash}
+      POSTGRES_USER: ${POSTGRES_USER:-promptdash}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-promptdash}
+    ports:
+      - "5432:5432"
+    volumes:
+      - promptdash_pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-promptdash} -d ${POSTGRES_DB:-promptdash}"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  api:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: promptdash-api
+    restart: unless-stopped
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      DATABASE_URL: postgresql+psycopg2://${POSTGRES_USER:-promptdash}:${POSTGRES_PASSWORD:-promptdash}@postgres:5432/${POSTGRES_DB:-promptdash}
+      UPLOAD_DIR: /app/uploads
+      API_V1_STR: /api/v1
+      PROJECT_NAME: PromptDash API
+
+      # "mlx" serves the fine-tuned chartist; "ollama" is the original path.
+      LLM_BACKEND: ${LLM_BACKEND:-mlx}
+      MLX_BASE_URL: ${MLX_BASE_URL:-http://host.docker.internal:8080/v1}
+      MLX_MODEL: ${MLX_MODEL:-qwen3.5-9b-4bit}
+      MLX_CHARTIST_BASE_URL: ${MLX_CHARTIST_BASE_URL:-}
+      MLX_CHARTIST_MODEL: ${MLX_CHARTIST_MODEL:-}
+      MLX_TIMEOUT_SECONDS: ${MLX_TIMEOUT_SECONDS:-600}
+
+      OLLAMA_BASE_URL: ${OLLAMA_BASE_URL:-http://host.docker.internal:11434}
+      OLLAMA_MODEL: ${OLLAMA_MODEL:-qwen3.5:4b}
+      OLLAMA_TIMEOUT_SECONDS: 9000
+      WORKFLOW_TIMEOUT_SECONDS: ${WORKFLOW_TIMEOUT_SECONDS:-0}
+
+      # Both default to the placeholders committed in this repo, which are
+      # public. `make secrets` prints fresh ones; put them in .env.
+      SECRET_KEY: ${SECRET_KEY:-change-me-in-env}
+      ENCRYPTION_KEY: ${ENCRYPTION_KEY:-m3xwSeF4J38MxGfM9Tz11LeG5m8Wz8Y5w6rkaI0sD9A=}
+      JWT_ALGORITHM: HS256
+      ACCESS_TOKEN_EXPIRE_MINUTES: 1440
+      CORS_ORIGINS: '["http://localhost:3000"]'
+    ports:
+      - "8000:8000"
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload --reload-dir /app/app
+    volumes:
+      - ./backend/uploads:/app/uploads
+      - ./backend/app:/app/app
+      - ./backend/scripts:/app/scripts
+    healthcheck:
+      test: ["CMD-SHELL", "python -c \"import urllib.request,sys; sys.exit(0 if urllib.request.urlopen('http://127.0.0.1:8000/health', timeout=4).status==200 else 1)\""]
+      interval: 10s
+      timeout: 5s
+      retries: 12
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+  web:
+    build:
+      context: ./byd-web
+      dockerfile: Dockerfile
+    container_name: promptdash-web
+    restart: unless-stopped
+    depends_on:
+      api:
+        condition: service_started
+    environment:
+      # Server-side (the Next route handler) talks to the api service directly.
+      BACKEND_API_URL: http://api:8000
+      # Browser-side calls go through the host's published port.
+      NEXT_PUBLIC_API_BASE_URL: http://localhost:8000
+      BACKEND_GENERATE_TIMEOUT_MS: ${BACKEND_GENERATE_TIMEOUT_MS:-900000}
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./byd-web/app:/app/app
+      - ./byd-web/lib:/app/lib
+      - ./byd-web/components:/app/components
+
+volumes:
+  promptdash_pgdata:

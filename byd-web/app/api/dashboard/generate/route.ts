@@ -7,9 +7,25 @@ export const maxDuration = 9000;
 
 export async function POST(request: NextRequest) {
   try {
-    const body = (await request.json()) as { prompt?: string; request_id?: string };
+    const body = (await request.json()) as {
+      prompt?: string;
+      request_id?: string;
+      data_source?: string;
+    };
     const prompt = body.prompt?.trim();
     const requestId = (body.request_id || "").trim();
+    const dataSource = (body.data_source || "").trim();
+
+    // /generate requires authentication now, so the caller's bearer token has to
+    // reach the backend. This proxy previously dropped it, which is why the
+    // endpoint had to be left open to work at all.
+    const authorization = request.headers.get("authorization");
+    if (!authorization) {
+      return NextResponse.json(
+        { detail: "Not signed in. Sign in again and retry." },
+        { status: 401 },
+      );
+    }
     if (!prompt) {
       return NextResponse.json({ detail: "Prompt is required" }, { status: 400 });
     }
@@ -28,8 +44,14 @@ export async function POST(request: NextRequest) {
       // Important: do not retry this POST to multiple hosts, or we may start duplicate runs.
       response = await fetch(`${backendUrl}/api/v1/dashboard/generate`, {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ prompt, request_id: requestId }),
+        headers: { "Content-Type": "application/json", Authorization: authorization },
+        body: JSON.stringify({
+          prompt,
+          request_id: requestId,
+          // Empty string means "you decide" — the detective then ranks the
+          // caller's registered sources instead of being told which to use.
+          data_source: dataSource,
+        }),
         cache: "no-store",
         signal: controller.signal,
       });

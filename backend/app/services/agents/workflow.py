@@ -1,19 +1,47 @@
-from pathlib import Path
-from typing import TypedDict, Annotated, Sequence, Dict, Any, List, Optional
+"""The planner -> detective -> chartist -> executor graph.
+
+Changes from the original, all of them things that bit:
+
+* **The error path did not terminate.** The graph was a straight line, so when
+  the detective could not resolve a source it returned `{"error": ...}` and the
+  graph carried on regardless: the chartist produced fallback code against an
+  empty schema, then the executor did `data_context["filename"]` and raised
+  KeyError. A failed lookup crashed the request instead of reporting itself.
+  There are conditional edges now, and each node short-circuits on an error
+  already in state.
+* **Models and the graph were built at import time**, so importing this module
+  opened three chat clients. That made the module untestable and meant the
+  container had to be restarted to pick up a config change. Both are lazy now.
+* **`data_dir` was `Path("/app/uploads")` with a CWD-relative fallback**, which
+  ignored `UPLOAD_DIR` entirely and resolved differently depending on where
+  uvicorn was started. It comes from settings.
+* **Debug `print()` calls** interleaved with real logging, including one that
+  dumped the whole generated program to stdout.
+* The chartist now receives the user's question, which is what its fine-tune was
+  trained on. See `chartist._task_description`.
+"""
+from __future__ import annotations
+
 import logging
 import time
-from langchain_core.messages import BaseMessage, HumanMessage, AIMessage
-from langgraph.graph import StateGraph, END
-from app.services.agents.planner import PlannerAgent
-from app.services.agents.data_detective import DataDetective
-from app.services.agents.chartist import ChartistAgent
-from app.services.qwen_slm import LocalQwenChatModel
-from app.utils.executor import SafeExecutor
-from app.core.config import get_settings
-import pandas as pd
-import json
+from functools import lru_cache
+from pathlib import Path
+from typing import Any, Dict, List, Optional, Sequence, TypedDict
 
-# Define the state
+import pandas as pd
+from langchain_core.messages import AIMessage, BaseMessage, HumanMessage
+from langgraph.graph import END, StateGraph
+
+from app.core.config import get_settings
+from app.services.agents.chartist import ChartistAgent
+from app.services.agents.data_detective import DataDetective
+from app.services.agents.planner import PlannerAgent
+from app.services.llm import get_llm
+from app.utils.executor import SafeExecutor
+
+logger = logging.getLogger(__name__)
+
+
 class AgentState(TypedDict):
     user_query: str
     selected_source: str
@@ -26,217 +54,204 @@ class AgentState(TypedDict):
     execution_result: Dict[str, Any]
     error: str
 
-settings = get_settings()
-model_name = settings.OLLAMA_MODEL
-logger = logging.getLogger(__name__)
-data_dir = Path("/app/uploads")
-if not data_dir.exists():
-    data_dir = Path("backend/data")
 
-# Initialize components
-llm_json = LocalQwenChatModel(model=model_name, format="json")
-llm_code = LocalQwenChatModel(model=model_name)
-llm_tools = LocalQwenChatModel(model=model_name)
+def _data_dir() -> Path:
+    """Where uploads live, from settings rather than a hardcoded container path."""
+    path = get_settings().upload_dir_path
+    path.mkdir(parents=True, exist_ok=True)
+    return path
 
-planner = PlannerAgent(llm_json)
-detective = DataDetective(data_dir=str(data_dir), llm=llm_tools)
-chartist = ChartistAgent(llm_code)
-executor = SafeExecutor()
 
-# 1. Planner Node
-def planning_node(state: AgentState):
-    started_at = time.perf_counter()
-    query = state.get("user_query", "")
-    if not query:
-        query = state["messages"][-1].content
-    logger.info("[workflow/planner] start query=%s", query[:120])
-    
-    plan = planner.create_plan(query)
-
-    # Ensure it's a dict (Pydantic model -> dict)
-    if hasattr(plan, 'dict'):
-        plan = plan.dict()
-    
-    elapsed = time.perf_counter() - started_at
-    logger.info(
-        "[workflow/planner] done in %.2fs viz_type=%s",
-        elapsed,
-        plan.get("visualization_type"),
+@lru_cache(maxsize=1)
+def _agents() -> tuple[PlannerAgent, DataDetective, ChartistAgent, SafeExecutor]:
+    """Build the agents once, on first use rather than on import."""
+    return (
+        PlannerAgent(get_llm("planner")),
+        DataDetective(data_dir=str(_data_dir()), llm=get_llm("detective")),
+        ChartistAgent(get_llm("chartist")),
+        SafeExecutor(),
     )
 
+
+# --- nodes ---------------------------------------------------------------
+
+
+def planning_node(state: AgentState) -> Dict[str, Any]:
+    planner, _, _, _ = _agents()
+    query = state.get("user_query") or (state["messages"][-1].content if state.get("messages") else "")
+    started = time.perf_counter()
+    plan = planner.create_plan(query)
+    if hasattr(plan, "model_dump"):
+        plan = plan.model_dump()
+    elif hasattr(plan, "dict"):
+        plan = plan.dict()
+    logger.info(
+        "[workflow/planner] %.2fs chart=%s via=%s",
+        time.perf_counter() - started,
+        plan.get("visualization_type"),
+        plan.get("chart_type_source"),
+    )
     return {
-        "plan": plan, 
-        "messages": [AIMessage(content=f"Planning complete: {plan.get('steps')}")]
+        "plan": plan,
+        "messages": [AIMessage(content=f"Chart type: {plan.get('visualization_type')}")],
     }
 
-# 2. Data Detective Node
-def data_sourcing_node(state: AgentState):
-    started_at = time.perf_counter()
+
+def data_sourcing_node(state: AgentState) -> Dict[str, Any]:
+    _, detective, _, _ = _agents()
     query = state.get("user_query", "")
-    logger.info("[workflow/detective] start query=%s", query[:120])
-    print("[detective] Step 0: start data source resolution")
+    started = time.perf_counter()
 
-    selected_source = state.get("selected_source", "")
-    available_sources = state.get("available_sources", [])
-    plan = state.get("plan", {})
-    print(f"--------\nplan: {plan}\n--------\n")
-
-    # print(f"[detective] Step 1: explicit selected_source='{selected_source}'")
-    # print(f"[detective] Step 2: available_sources_count={len(available_sources)}")
-    # print("[detective] Step 3: running detect_source(query + plan)")
     decision = detective.detect_source(
         query=query,
-        plan=plan,
-        selected_source=selected_source,
-        available_sources=available_sources or None,
-    )
-    print(
-        "[detective] Step 4: decision reason=%s confidence=%.2f"
-        % (decision.get("reason"), float(decision.get("confidence", 0.0)))
+        plan=state.get("plan", {}),
+        selected_source=state.get("selected_source", "") or "",
+        available_sources=state.get("available_sources") or None,
     )
     selected = decision.get("selected")
     if not selected:
-        print("[detective] Step 5: no selected source, stopping detective node")
-        logger.warning(
-            "[workflow/detective] unresolved source reason=%s candidates=%s",
-            decision.get("reason"),
-            [c.get("name") for c in decision.get("candidates", [])],
-        )
+        logger.warning("[workflow/detective] unresolved: %s", decision.get("reason"))
         return {
             "error": (
-                f"Could not resolve data source ({decision.get('reason')}). "
-                "Please select a specific file/source."
+                f"Could not resolve a data source ({decision.get('reason')}). "
+                f"Upload a file or select one explicitly."
             ),
             "source_decision": decision,
-            "messages": [AIMessage(content="Could not confidently resolve the data source.")],
+            "messages": [AIMessage(content="Could not resolve the data source.")],
         }
 
-    print(f"[detective] Step 5: selected source='{selected.get('name')}'")
-    print("[detective] Step 6: loading schema for selected source")
     schema = detective.get_schema(selected.get("path") or selected.get("name"))
-    
     if "error" in schema:
-        print(f"[detective] Step 7: schema load failed error='{schema['error']}'")
         logger.error("[workflow/detective] schema error: %s", schema["error"])
-        return {"error": schema["error"], "messages": [AIMessage(content=f"Error reading schema: {schema['error']}")]}
-    print("[detective] Step 7: schema loaded successfully")
-    elapsed = time.perf_counter() - started_at
+        return {
+            "error": f"Could not read {selected.get('name')}: {schema['error']}",
+            "source_decision": decision,
+            "messages": [AIMessage(content=f"Error reading schema: {schema['error']}")],
+        }
+
     logger.info(
-        "[workflow/detective] done in %.2fs filename=%s confidence=%.2f reason=%s",
-        elapsed,
+        "[workflow/detective] %.2fs file=%s via=%s confidence=%.2f",
+        time.perf_counter() - started,
         schema.get("filename"),
-        float(decision.get("confidence", 0.0)),
         decision.get("reason"),
+        float(decision.get("confidence", 0.0)),
     )
-        
     return {
         "source_decision": decision,
         "data_context": schema,
-        "messages": [AIMessage(content=f"Found data in {schema.get('filename')}")]
+        "messages": [AIMessage(content=f"Using {schema.get('filename')}")],
     }
 
-# 3. Chartist Node
-def coding_node(state: AgentState):
-    started_at = time.perf_counter()
-    plan = state["plan"]
-    data_context = state["data_context"]
-    source_decision = state.get("source_decision", {})
-    dataframe_plan = source_decision.get("dataframe_plan", {})
-    logger.info(
-        "[workflow/chartist] start viz_type=%s columns=%s selected_columns=%s",
-        plan.get("visualization_type"),
-        len(data_context.get("columns", [])),
-        len(dataframe_plan.get("selected_columns", [])) if isinstance(dataframe_plan, dict) else 0,
-    )
-    
+
+def coding_node(state: AgentState) -> Dict[str, Any]:
+    _, _, chartist, _ = _agents()
+    data_context = state.get("data_context") or {}
+    if not data_context.get("columns"):
+        return {"error": "No schema available to chart against."}
+
+    dataframe_plan = (state.get("source_decision") or {}).get("dataframe_plan") or {}
+    started = time.perf_counter()
     code = chartist.generate_code(
-        plan,
-        data_context,
+        user_query=state.get("user_query", ""),
+        task_plan=state.get("plan") or {},
+        data_context=data_context,
         dataframe_plan=dataframe_plan if isinstance(dataframe_plan, dict) else {},
     )
-    print(f"code: {code}")
-    elapsed = time.perf_counter() - started_at
-    logger.info("[workflow/chartist] done in %.2fs code_length=%s", elapsed, len(code))
+    logger.info(
+        "[workflow/chartist] %.2fs code_chars=%d",
+        time.perf_counter() - started,
+        len(code),
+    )
+    logger.debug("[workflow/chartist] code:\n%s", code)
+    return {"code": code, "messages": [AIMessage(content="Generated chart code.")]}
 
-    return {
-        "code": code,
-        "messages": [AIMessage(content="Generated Python code for visualization.")]
-    }
 
-# 4. Executor Node
-def execution_node(state: AgentState):
-    started_at = time.perf_counter()
-    code = state["code"]
-    data_context = state["data_context"]
-    
-    # Load actual dataframe for execution
-    filepath = str(data_dir / data_context["filename"])
-    filepath = data_context.get("filepath", filepath)
+def execution_node(state: AgentState) -> Dict[str, Any]:
+    _, _, _, executor = _agents()
+    data_context = state.get("data_context") or {}
+    code = state.get("code") or ""
+    if not code:
+        return {"error": "No chart code was generated."}
+
+    filepath = data_context.get("filepath")
+    if not filepath:
+        filename = data_context.get("filename")
+        if not filename:
+            return {"error": "No data file to execute against."}
+        filepath = str(_data_dir() / filename)
+
+    started = time.perf_counter()
     try:
-        if filepath.endswith('.csv'):
+        if filepath.endswith(".csv"):
             df = pd.read_csv(filepath)
-        elif filepath.endswith(('.xlsx', '.xls')):
+        elif filepath.endswith((".xlsx", ".xls")):
             df = pd.read_excel(filepath)
         else:
-            raise ValueError("Unsupported format")
-    except Exception as e:
-        logger.error("[workflow/executor] data load failed: %s", e)
-        return {"error": f"Failed to load data: {e}"}
+            return {"error": f"Unsupported file format: {filepath}"}
+    except Exception as exc:
+        logger.error("[workflow/executor] load failed: %s", exc)
+        return {"error": f"Failed to load data: {exc}"}
 
     result = executor.execute(code, df)
-    
     if result.get("success"):
-        elapsed = time.perf_counter() - started_at
-        logger.info("[workflow/executor] success in %.2fs", elapsed)
+        logger.info("[workflow/executor] success in %.2fs", time.perf_counter() - started)
         return {
             "execution_result": result,
-            "messages": [AIMessage(content="Successfully executed visualization code.")]
+            "messages": [AIMessage(content="Chart rendered.")],
         }
-    else:
-        logger.error("[workflow/executor] failed: %s", result.get("error"))
-        return {
-            "error": result.get("error"),
-            "messages": [AIMessage(content=f"Execution failed: {result.get('error')}")]
-        }
+    logger.error("[workflow/executor] failed: %s", result.get("error"))
+    return {
+        "error": result.get("error") or "Chart code failed to execute.",
+        "execution_result": result,
+        "messages": [AIMessage(content=f"Execution failed: {result.get('error')}")],
+    }
 
-# Define the graph
-workflow = StateGraph(AgentState)
 
-workflow.add_node("planner", planning_node)
-workflow.add_node("detective", data_sourcing_node)
-workflow.add_node("chartist", coding_node)
-workflow.add_node("executor", execution_node)
+def _continue_or_stop(state: AgentState) -> str:
+    """Route to END as soon as a node reports an error.
 
-workflow.set_entry_point("planner")
+    Without this the graph ran every node regardless, so a failed source lookup
+    became a KeyError three nodes later instead of the message it already had.
+    """
+    return "stop" if state.get("error") else "continue"
 
-workflow.add_edge("planner", "detective")
-workflow.add_edge("detective", "chartist")
-workflow.add_edge("chartist", "executor")
-workflow.add_edge("executor", END)
 
-app = workflow.compile()
+@lru_cache(maxsize=1)
+def _graph():
+    builder = StateGraph(AgentState)
+    builder.add_node("planner", planning_node)
+    builder.add_node("detective", data_sourcing_node)
+    builder.add_node("chartist", coding_node)
+    builder.add_node("executor", execution_node)
+
+    builder.set_entry_point("planner")
+    builder.add_conditional_edges("planner", _continue_or_stop, {"continue": "detective", "stop": END})
+    builder.add_conditional_edges("detective", _continue_or_stop, {"continue": "chartist", "stop": END})
+    builder.add_conditional_edges("chartist", _continue_or_stop, {"continue": "executor", "stop": END})
+    builder.add_edge("executor", END)
+    return builder.compile()
+
 
 def run_agent_workflow(
     query: str,
     selected_source: str = "",
     available_sources: Optional[List[Dict[str, Any]]] = None,
-):
-    """
-    Runs the full agent workflow with the given query.
+) -> Dict[str, Any]:
+    """Run the full workflow for one question.
 
     Honours the caller's `selected_source` and `available_sources`. This used to
     discard both and substitute a hardcoded
-    `/app/uploads/abu_dhabi_population_density.csv`, which made every request
-    chart that one file whatever the user picked.
+    `/app/uploads/abu_dhabi_population_density.csv`, so every request charted
+    that one file whatever the user picked.
     """
     sources = available_sources or []
     logger.info(
-        "[workflow] selected_source=%r available_sources=%d",
+        "[workflow] start query=%r selected=%r candidates=%d",
+        (query or "")[:120],
         selected_source,
         len(sources),
     )
-
-    initial_state = {
+    initial_state: AgentState = {
         "user_query": query,
         "selected_source": selected_source,
         "available_sources": sources,
@@ -246,12 +261,13 @@ def run_agent_workflow(
         "data_context": {},
         "code": "",
         "execution_result": {},
-        "error": ""
+        "error": "",
     }
-    
-    started_at = time.perf_counter()
-    logger.info("[workflow] invoke start query=%s", query[:120])
-    result = app.invoke(initial_state)
-    elapsed = time.perf_counter() - started_at
-    logger.info("[workflow] invoke done in %.2fs error=%s", elapsed, bool(result.get("error")))
+    started = time.perf_counter()
+    result = _graph().invoke(initial_state)
+    logger.info(
+        "[workflow] done in %.2fs error=%s",
+        time.perf_counter() - started,
+        result.get("error") or None,
+    )
     return result

@@ -13,6 +13,13 @@ from app.services.agents.chartist_contract import (
 
 logger = logging.getLogger(__name__)
 
+# A thinking model (Qwen3.5) returns "\n</think>\n\n" before its code, because
+# generation begins after "<think>\n". _strip_prose_prefix happens to drop it
+# today, but only because "</think>" fails the looks-like-code test -- if the
+# model ever emits real reasoning whose lines look like code, that breaks. Strip
+# it explicitly instead of relying on an accident.
+THINK_PREFIX = re.compile(r"^.*?</think>\s*", re.DOTALL)
+
 class ChartistAgent:
     """
     Agent responsible for generating Python code to visualize data.
@@ -31,6 +38,8 @@ class ChartistAgent:
     def _extract_code_block(self, raw: str) -> str:
         if not raw:
             return ""
+        if "</think>" in raw:
+            raw = THINK_PREFIX.sub("", raw, count=1)
         fenced = re.findall(r"```(?:python)?\s*(.*?)```", raw, flags=re.DOTALL | re.IGNORECASE)
         if fenced:
             return fenced[0].strip()
@@ -104,39 +113,54 @@ class ChartistAgent:
 
     def _task_description(
         self,
+        user_query: str,
         task_plan: Dict[str, Any],
         dataframe_plan: Optional[Dict[str, Any]],
     ) -> str:
-        parts = [
-            f"Build a {task_plan.get('visualization_type', 'bar')} chart.",
-            f"Style: {task_plan.get('style_config', {})}.",
-        ]
+        """The `Task:` line of the prompt — the user's own question.
+
+        This used to synthesise metadata instead:
+
+            "Build a bar chart. Style: {'theme': 'plotly_white'}.
+             Prefer these columns: [...]. Suggested encoding: ..."
+
+        The fine-tuned chartist was trained on 1,926 rows whose Task line was a
+        natural dashboard question ("Monthly MRR trend for the whole business"),
+        paired with the same schema block that follows it. Replacing the question
+        with generated prose puts the prompt out of distribution and throws away
+        the only signal the model was taught to read. The chart type is inferred
+        from the question, exactly as in training, which is also why the planner
+        no longer needs to steer it.
+
+        The one hint kept is explicitly-unavailable fields, because `missing_field`
+        was an oversampled hard case in training and the note is short.
+        """
+        task = (user_query or "").strip() or str(task_plan.get("data_requirements", "")).strip()
         plan = dataframe_plan or {}
-        if plan.get("selected_columns"):
-            parts.append(f"Prefer these columns: {plan['selected_columns']}.")
-        if plan.get("plotly_ready_spec"):
-            parts.append(f"Suggested encoding: {plan['plotly_ready_spec']}.")
-        if plan.get("missing_fields"):
-            parts.append(f"Unavailable, do not use: {plan['missing_fields']}.")
-        return " ".join(parts)
+        missing = plan.get("missing_fields") or []
+        if missing:
+            task = f"{task}\n\nNot available in this data, do not use: {list(missing)}"
+        return task
 
     def generate_code(
         self,
+        user_query: str,
         task_plan: Dict[str, Any],
         data_context: Dict[str, Any],
         dataframe_plan: Optional[Dict[str, Any]] = None,
     ) -> str:
         """
-        Generates Python code based on the plan and data schema.
+        Generates Plotly code for the user's question against this schema.
         """
         viz_type = task_plan.get("visualization_type", "bar")
         try:
             raw = self.chain.invoke({
-                "task": self._task_description(task_plan, dataframe_plan),
+                "task": self._task_description(user_query, task_plan, dataframe_plan),
                 "columns": str(data_context.get("columns", [])),
                 "dtypes": str(data_context.get("dtypes", {})),
                 "sample_rows": str(data_context.get("sample", [])),
             })
             return self._sanitize_generated_code(raw, data_context, viz_type)
-        except Exception as e:
+        except Exception:
+            logger.exception("[chartist] generation failed, using deterministic fallback")
             return self._fallback_plotly_code(data_context, viz_type)

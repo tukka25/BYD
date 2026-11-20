@@ -11,7 +11,7 @@ from app.api.dependencies import get_current_user
 from app.core.config import get_settings
 from app.core.database import get_db
 from app.models.dashboard import Dashboard
-from app.models.data_source import DataSource
+from app.models.data_source import DataSource, DataSourceStatus, DataSourceType
 from app.models.user import User
 from app.schemas.dashboard import (
     DashboardCreateRequest,
@@ -23,6 +23,13 @@ from app.services.agents.workflow import run_agent_workflow
 router = APIRouter()
 logger = logging.getLogger(__name__)
 settings = get_settings()
+
+
+def _model_label() -> str:
+    """Which model actually served the request, not a hardcoded Ollama name."""
+    if (settings.LLM_BACKEND or "").lower() == "mlx":
+        return f"{settings.chartist_model} (mlx)"
+    return f"{settings.OLLAMA_MODEL} (ollama)"
 
 class DashboardRequest(BaseModel):
     prompt: str
@@ -152,22 +159,65 @@ def update_dashboard(
     db.refresh(dashboard)
     return _dashboard_to_response(dashboard)
 
+def _user_file_sources(db: Session, user_id: str) -> list[Dict[str, Any]]:
+    """The caller's registered file sources, as detective candidates.
+
+    The DB is authoritative here. The canvas keeps its own copy of the source
+    list in localStorage and never sent it, so the detective had nothing to rank
+    and fell back to scanning the upload directory.
+    """
+    rows = (
+        db.query(DataSource)
+        .filter(
+            DataSource.user_id == user_id,
+            DataSource.status == DataSourceStatus.ACTIVE,
+            DataSource.source_type == DataSourceType.FILE,
+        )
+        .all()
+    )
+    sources: list[Dict[str, Any]] = []
+    for row in rows:
+        path = row.file_path or row.original_filename or row.display_name
+        if not path:
+            continue
+        sources.append(
+            {
+                "id": row.id,
+                "name": row.original_filename or row.display_name,
+                "type": "file",
+                "path": path,
+            }
+        )
+    return sources
+
+
 @router.post("/generate", response_model=DashboardResponse)
-async def generate_dashboard(request: DashboardRequest):
+async def generate_dashboard(
+    request: DashboardRequest,
+    current_user: User = Depends(get_current_user),
+    db: Session = Depends(get_db),
+):
     """
     Generate a dashboard based on the user prompt using the multi-agent workflow.
+
+    Requires authentication. This endpoint was previously the only unauthenticated
+    route on the router, which left the most expensive operation in the API — a
+    multi-agent LLM run — open to anyone who could reach the port.
     """
     try:
         started_at = time.perf_counter()
         logger.info(
-            "[dashboard/generate] start request_id=%s prompt=%s",
+            "[dashboard/generate] start request_id=%s user=%s prompt=%s",
             request.request_id or "-",
+            current_user.id,
             request.prompt[:150],
         )
+        available_sources = _user_file_sources(db, current_user.id)
         workflow_call = asyncio.to_thread(
             run_agent_workflow,
             request.prompt,
             request.data_source or "",
+            available_sources,
         )
         if settings.WORKFLOW_TIMEOUT_SECONDS and settings.WORKFLOW_TIMEOUT_SECONDS > 0:
             result = await asyncio.wait_for(
@@ -209,7 +259,8 @@ async def generate_dashboard(request: DashboardRequest):
             "dashboard_html": html_content,
             "metadata": {
                 "request_id": request.request_id,
-                "model": f"{settings.OLLAMA_MODEL} (workflow)",
+                "model": _model_label(),
+                "llm_backend": settings.LLM_BACKEND,
                 "plan": result.get("plan", {}),
                 "data_context": result.get("data_context", {}),
                 "agent_steps": [m.content for m in result.get("messages", [])],
@@ -224,7 +275,8 @@ async def generate_dashboard(request: DashboardRequest):
             status_code=504,
             detail=(
                 f"Workflow timed out after {settings.WORKFLOW_TIMEOUT_SECONDS}s. "
-                "Check Ollama availability/model load and backend logs."
+                f"Check that the {settings.LLM_BACKEND} backend is reachable and the "
+                "model is loaded, then see the backend logs."
             ),
         ) from exc
     except HTTPException:
