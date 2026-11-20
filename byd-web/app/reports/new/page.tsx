@@ -63,7 +63,7 @@ export default function NewReportPage() {
       <div className="app-scroll px-5 pb-24 sm:px-8">
         <div className="max-w-2xl">
         {error ? (
-          <div className="mb-4 flex items-start gap-2 rounded-[var(--r-card)] bg-coral-wash px-4 py-3 text-[13px] text-[#b5301c]">
+          <div className="mb-4 flex items-start gap-2 rounded-[var(--r-card)] bg-coral-wash px-4 py-3 text-[13px] text-coral-ink">
             <AlertTriangle size={16} strokeWidth={2.25} className="mt-px shrink-0" />
             <span className="flex-1">{error}</span>
           </div>

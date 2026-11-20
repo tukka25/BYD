@@ -18,16 +18,44 @@ type PlotlyFigure = {
   layout?: Record<string, unknown>;
 };
 
+// Mirrors --series-1..8 in globals.css. Pine, copper and slate lead so a chart
+// looks like the rest of the app on sight; 4-8 extend without colliding in hue.
+// There is no purple in this sequence, by design.
 const SERIES = [
-  "#5b3df5",
-  "#f5a524",
-  "#f2563f",
-  "#0e9e8e",
-  "#9b5cf6",
-  "#2b7fff",
-  "#d9479b",
-  "#7a8699",
+  "#176b4e",
+  "#c2761b",
+  "#3b5b8f",
+  "#d23f2b",
+  "#2f8f86",
+  "#d9a93e",
+  "#b8486f",
+  "#6e7a8a",
 ];
+
+/* Plotly Express bakes an explicit colour onto every trace from its own default
+   qualitative sequence, and an explicit trace colour beats `layout.colorway`.
+   So a figure the model generated arrives wearing Plotly's blue/red/green no
+   matter what colorway we set -- which is why the charts kept their default
+   palette while the rest of the app was re-themed.
+
+   We swap those machine defaults for our series, by trace index, and leave any
+   other colour alone. A colour the model actually chose is authoring, and
+   re-theming is not re-authoring. */
+const PLOTLY_DEFAULT_COLORS = new Set([
+  // plotly, the default sequence for px
+  "#636efa", "#ef553b", "#00cc96", "#ab63fa", "#ffa15a",
+  "#19d3f3", "#ff6692", "#b6e880", "#ff97ff", "#fecb52",
+  // D3 / tab10, the other sequence px reaches for
+  "#1f77b4", "#ff7f0e", "#2ca02c", "#d62728", "#9467bd",
+  "#8c564b", "#e377c2", "#7f7f7f", "#bcbd22", "#17becf",
+]);
+
+function rethemedColor(value: unknown, index: number): string | undefined {
+  if (typeof value !== "string") return undefined;
+  return PLOTLY_DEFAULT_COLORS.has(value.trim().toLowerCase())
+    ? SERIES[index % SERIES.length]
+    : undefined;
+}
 
 const AXIS = {
   gridcolor: "#e7e7ec",
@@ -211,9 +239,15 @@ function themed(figure: PlotlyFigure) {
     },
   };
 
-  const data = (figure.data ?? []).map((raw) => {
+  const data = (figure.data ?? []).map((raw, index) => {
     const trace = { ...(raw as Record<string, unknown>) };
     const marker = { ...((trace.marker as Record<string, unknown>) ?? {}) };
+
+    const markerColor = rethemedColor(marker.color, index);
+    if (markerColor) {
+      marker.color = markerColor;
+      trace.marker = marker;
+    }
 
     if (trace.type === "bar") {
       // Pill caps, as in the binding reference. A percentage gives a true
@@ -258,13 +292,13 @@ function themed(figure: PlotlyFigure) {
       trace.number = number;
       trace.delta = {
         ...((trace.delta as Record<string, unknown>) ?? {}),
-        increasing: { color: "#0e9e8e" },
-        decreasing: { color: "#f2563f" },
+        increasing: { color: "#176b4e" },
+        decreasing: { color: "#d23f2b" },
         font: { family: DISPLAY },
       };
       if (trace.gauge) {
         const gauge = { ...(trace.gauge as Record<string, unknown>) };
-        gauge.bar = { ...((gauge.bar as Record<string, unknown>) ?? {}), color: "#5b3df5" };
+        gauge.bar = { ...((gauge.bar as Record<string, unknown>) ?? {}), color: "#176b4e" };
         gauge.bgcolor = "#e7e7ec";
         gauge.bordercolor = "rgba(0,0,0,0)";
         trace.gauge = gauge;
@@ -278,6 +312,8 @@ function themed(figure: PlotlyFigure) {
       line.width = line.width ?? 3.25;
       line.shape = line.shape ?? "spline";
       line.smoothing = 0.6;
+      const lineColor = rethemedColor(line.color, index);
+      if (lineColor) line.color = lineColor;
       trace.line = line;
     }
     return trace;

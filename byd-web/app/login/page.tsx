@@ -2,7 +2,8 @@
 
 import { FormEvent, useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
-import { AlertTriangle, ChartNoAxesColumn, ShieldCheck } from "lucide-react";
+import { AlertTriangle, ShieldCheck } from "lucide-react";
+import { Wordmark } from "@/components/logo";
 import { backendBaseUrl, fetchCurrentUser } from "@/lib/backend";
 import { loadCurrentUser, saveSession } from "@/lib/auth";
 import { fetchHealth, type LocalHealth } from "@/lib/reports";
@@ -75,14 +76,10 @@ export default function LoginPage() {
   return (
     <main className="grid min-h-dvh place-items-center bg-canvas px-6 py-12">
       <div className="w-full max-w-[26rem]">
-        <div className="mb-7 flex items-center gap-2.5">
-          <span className="grid size-9 place-items-center rounded-[11px] bg-violet text-white">
-            <ChartNoAxesColumn size={19} strokeWidth={2.75} />
-          </span>
-          <span className="font-display text-[21px] font-bold tracking-[-0.03em] text-ink">
-            PromptDash
-          </span>
-        </div>
+        {/* The one surface where the mark animates: it is the first thing on
+            the page and the draw-on says what the product does before the
+            headline does. */}
+        <Wordmark size={21} mark={30} animate className="mb-7" />
 
         <h1 className="font-display text-[32px] font-bold leading-[1.1] text-ink">
           Ask your data a question
@@ -131,7 +128,7 @@ export default function LoginPage() {
             </Field>
 
             {error ? (
-              <div className="flex items-start gap-2 rounded-[var(--r-card)] bg-coral-wash px-3.5 py-2.5 text-[13px] text-[#b5301c]">
+              <div className="flex items-start gap-2 rounded-[var(--r-card)] bg-coral-wash px-3.5 py-2.5 text-[13px] text-coral-ink">
                 <AlertTriangle size={15} strokeWidth={2.25} className="mt-px shrink-0" />
                 <span>{error}</span>
               </div>
@@ -144,7 +141,7 @@ export default function LoginPage() {
         </Panel>
 
         <p className="mt-5 flex items-center justify-center gap-2 text-center text-[12.5px] text-muted">
-          <ShieldCheck size={14} strokeWidth={2.25} className="shrink-0 text-teal" />
+          <ShieldCheck size={14} strokeWidth={2.25} className="shrink-0 text-pine" />
           {health ? (
             <>
               <span className="font-mono">{health.model}</span> is running on this machine.

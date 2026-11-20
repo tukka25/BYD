@@ -174,7 +174,7 @@ function BlockFrame({
                 if (event.key === "Enter") event.currentTarget.blur();
                 if (event.key === "Escape") setEditingTitle(false);
               }}
-              className="w-full rounded-[8px] bg-sunken px-2 py-1 font-display text-[15px] font-semibold text-ink focus:outline-none focus:ring-2 focus:ring-violet"
+              className="w-full rounded-[8px] bg-sunken px-2 py-1 font-display text-[15px] font-semibold text-ink focus:outline-none focus:ring-2 focus:ring-pine"
             />
           ) : (
             <h3
@@ -186,7 +186,7 @@ function BlockFrame({
           )}
           <div className="mt-1 flex flex-wrap items-center gap-1.5 empty:mt-0">
             {block.used_fallback ? (
-              <Chip tone="amber">
+              <Chip tone="copper">
                 <AlertTriangle size={11} strokeWidth={2.25} />
                 Fallback chart
               </Chip>
@@ -199,7 +199,7 @@ function BlockFrame({
             <IconButton
               label={showCode ? "Hide the code" : "Show the code that drew this"}
               onClick={() => setShowCode((v) => !v)}
-              className={showCode ? "bg-violet-wash text-violet" : undefined}
+              className={showCode ? "bg-pine-wash text-pine" : undefined}
             >
               <Code2 size={15} strokeWidth={2.25} />
             </IconButton>
@@ -578,7 +578,7 @@ export function ReportCanvas({ report }: { report: Report }) {
                 // written: the name goes back to what it was.
                 if (event.key === "Escape") setEditingTitle(false);
               }}
-              className="w-full max-w-xl rounded-[var(--r-control)] bg-surface px-2.5 py-0.5 font-display text-[26px] font-bold leading-[1.1] text-ink ring-1 ring-inset ring-hairline focus:outline-none focus:ring-2 focus:ring-violet sm:text-[34px]"
+              className="w-full max-w-xl rounded-[var(--r-control)] bg-surface px-2.5 py-0.5 font-display text-[26px] font-bold leading-[1.1] text-ink ring-1 ring-inset ring-hairline focus:outline-none focus:ring-2 focus:ring-pine sm:text-[34px]"
             />
           ) : (
             <button
@@ -608,7 +608,7 @@ export function ReportCanvas({ report }: { report: Report }) {
               title="Choose what this report can read"
               className="rounded-[var(--r-pill)] transition-opacity duration-150 hover:opacity-80"
             >
-              <Chip tone={sourceNames.length > 0 ? "violet" : "neutral"}>
+              <Chip tone={sourceNames.length > 0 ? "slate" : "neutral"}>
                 <Database size={11} strokeWidth={2.25} />
                 {sourceNames.length > 0 ? sourceNames.join(", ") : "Any source"}
                 <ChevronDown size={11} strokeWidth={2.75} aria-hidden />
@@ -660,7 +660,7 @@ export function ReportCanvas({ report }: { report: Report }) {
           aria-live="polite"
           className={[
             "basis-full text-[12.5px] print:hidden",
-            saveState === "error" ? "text-[#b5301c]" : "text-muted",
+            saveState === "error" ? "text-coral-ink" : "text-muted",
           ].join(" ")}
         >
           {saveState === "saving"
@@ -704,7 +704,7 @@ export function ReportCanvas({ report }: { report: Report }) {
       ) : null}
 
       {error ? (
-        <div className="mx-5 mb-4 flex shrink-0 items-start gap-2 sm:mx-8 rounded-[var(--r-card)] bg-coral-wash px-4 py-3 text-[13px] text-[#b5301c] print:hidden">
+        <div className="mx-5 mb-4 flex shrink-0 items-start gap-2 sm:mx-8 rounded-[var(--r-card)] bg-coral-wash px-4 py-3 text-[13px] text-coral-ink print:hidden">
           <AlertTriangle size={16} strokeWidth={2.25} className="mt-px shrink-0" />
           <span className="flex-1">{error}</span>
           <button onClick={() => setError(null)} className="font-semibold underline">
@@ -837,7 +837,7 @@ export function ReportCanvas({ report }: { report: Report }) {
           <Panel
             className={[
               "shadow-[var(--lift-2)] transition-shadow",
-              askFocused ? "ring-2 ring-violet" : "",
+              askFocused ? "ring-2 ring-pine" : "",
             ].join(" ")}
           >
             <div className="flex items-end gap-2 p-2.5">

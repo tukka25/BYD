@@ -13,9 +13,12 @@
      body   #3A3A44   9.8:1
      muted  #5E5E6B   5.6:1  <- the smallest text colour, still passes AA body
      hairline #D8D8E0        <- borders only; 1.3:1, never text
-     violet #5B3DF5   5.3:1  <- safe as text, and takes white text at 6.1:1
-     amber  #F5A524   fills only; carries INK text at 9.2:1
-     coral  #F2563F   fills only; white text only at large sizes (3.4:1)
+     pine   #176B4E   5.6:1  <- safe as text, and takes white text at 6.5:1
+     copper #C2761B   fills only; carries INK text at 5.3:1
+     coral  #D23F2B   takes white at 4.7:1, so a danger button needs no size rule
+     slate  #3B5B8F   5.9:1 as text; takes white at 6.8:1
+
+   There is no purple anywhere in this system, including the chart series.
    =========================================================================== */
 
 :root {
@@ -36,27 +39,35 @@
   --hairline: #d8d8e0;
   --hairline-strong: #c3c3cf;
 
-  /* Brand: violet leads, amber accents, coral is the third series / negative. */
-  --violet: #5b3df5;
-  --violet-press: #4a2fd8;
-  --violet-wash: #eeeaff;
-  --amber: #f5a524;
-  --amber-wash: #fff4e0;
-  --coral: #f2563f;
-  --coral-wash: #ffe9e5;
-  --teal: #0e9e8e;
-  --teal-wash: #e2f5f2;
+  /* Brand. Pine leads, copper is the warm counter, slate carries neutral
+     categories, coral is destructive. Pine is deliberately the same green that
+     means "running on this machine": the brand colour IS the product's claim.
+     Every -ink value is the darkened text pair for its own wash, so a 12px
+     badge still clears AA (measured 5.5-7.8:1). */
+  --pine: #176b4e;
+  --pine-press: #11543d;
+  --pine-wash: #e4f0ea;
+  --copper: #c2761b;
+  --copper-wash: #f8eedf;
+  --copper-ink: #8a5214;
+  --coral: #d23f2b;
+  --coral-wash: #fbe7e3;
+  --coral-ink: #a8331f;
+  --slate: #3b5b8f;
+  --slate-wash: #e7edf6;
+  --slate-ink: #2e4871;
 
-  /* Chart series order. Violet, amber, coral lead; the rest extend without
-     colliding in hue. Kept here so charts speak the same language as the UI. */
-  --series-1: #5b3df5;
-  --series-2: #f5a524;
-  --series-3: #f2563f;
-  --series-4: #0e9e8e;
-  --series-5: #9b5cf6;
-  --series-6: #2b7fff;
-  --series-7: #d9479b;
-  --series-8: #7a8699;
+  /* Chart series order. Pine, copper, slate lead so a chart looks like the rest
+     of the app on sight; 4-8 extend without colliding in hue. No purple: the
+     old series 5 was #9b5cf6 and it is gone. */
+  --series-1: #176b4e;
+  --series-2: #c2761b;
+  --series-3: #3b5b8f;
+  --series-4: #d23f2b;
+  --series-5: #2f8f86;
+  --series-6: #d9a93e;
+  --series-7: #b8486f;
+  --series-8: #6e7a8a;
 
   /* Radii. Large on panels, medium on controls, full on pills. */
   --r-panel: 24px;
@@ -67,9 +78,9 @@
   /* Elevation. Offset + blur, never a zero-offset halo. */
   --lift-1: 0 1px 2px rgb(18 18 22 / 0.04), 0 2px 8px rgb(18 18 22 / 0.04);
   --lift-2: 0 2px 4px rgb(18 18 22 / 0.06), 0 12px 28px rgb(18 18 22 / 0.10);
-  --lift-drag: 0 8px 16px rgb(18 18 22 / 0.10), 0 24px 56px rgb(91 61 245 / 0.18);
+  --lift-drag: 0 8px 16px rgb(18 18 22 / 0.10), 0 24px 56px rgb(23 107 78 / 0.20);
 
-  --ring: var(--violet);
+  --ring: var(--pine);
   --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
 }
 
@@ -88,15 +99,18 @@
   --color-hairline: var(--hairline);
   --color-hairline-strong: var(--hairline-strong);
 
-  --color-violet: var(--violet);
-  --color-violet-press: var(--violet-press);
-  --color-violet-wash: var(--violet-wash);
-  --color-amber: var(--amber);
-  --color-amber-wash: var(--amber-wash);
+  --color-pine: var(--pine);
+  --color-pine-press: var(--pine-press);
+  --color-pine-wash: var(--pine-wash);
+  --color-copper: var(--copper);
+  --color-copper-wash: var(--copper-wash);
+  --color-copper-ink: var(--copper-ink);
   --color-coral: var(--coral);
   --color-coral-wash: var(--coral-wash);
-  --color-teal: var(--teal);
-  --color-teal-wash: var(--teal-wash);
+  --color-coral-ink: var(--coral-ink);
+  --color-slate: var(--slate);
+  --color-slate-wash: var(--slate-wash);
+  --color-slate-ink: var(--slate-ink);
 
   --radius-panel: var(--r-panel);
   --radius-card: var(--r-card);
@@ -152,13 +166,13 @@ table th {
    scrollbars and focus rings ship with defaults that match no design system. */
 
 ::selection {
-  background: color-mix(in srgb, var(--violet) 22%, transparent);
+  background: color-mix(in srgb, var(--pine) 22%, transparent);
   color: var(--ink);
 }
 
 :root {
-  caret-color: var(--violet);
-  accent-color: var(--violet);
+  caret-color: var(--pine);
+  accent-color: var(--pine);
   scrollbar-color: var(--hairline-strong) transparent;
   scrollbar-width: thin;
 }
@@ -272,7 +286,7 @@ a {
 }
 
 .rich-text a {
-  color: var(--violet);
+  color: var(--pine);
   text-decoration: underline;
 }
 
@@ -331,6 +345,66 @@ a {
   animation: none;
 }
 
+/* --- the mark ------------------------------------------------------------
+   The logo's resting state is the finished drawing. The animation is opt-in,
+   per surface, and is never what makes the mark appear: a logo that is blank
+   for the first second of every page load is a broken logo, not an animated
+   one. It plays on the login screen, where the lockup is the first thing on
+   the page and has room to be a moment, and nowhere else.
+
+   The order is the product: the bars rise first (your data, already on this
+   machine), then the line draws itself through them (the model reading it),
+   then the nodes land (the answer). Transform and stroke-dashoffset only --
+   neither forces paint. */
+@keyframes logo-rise {
+  from {
+    transform: scaleY(0);
+  }
+  to {
+    transform: scaleY(1);
+  }
+}
+
+@keyframes logo-draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes logo-pop {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.logo-animate .logo-bar {
+  animation: logo-rise 560ms var(--ease-out) backwards;
+}
+
+/* 29 is the measured length of the polyline, so the draw finishes exactly when
+   the animation does rather than part-way through it. */
+.logo-animate .logo-line {
+  stroke-dasharray: 29;
+  stroke-dashoffset: 29;
+  animation: logo-draw 820ms var(--ease-out) 140ms forwards;
+}
+
+.logo-animate .logo-node {
+  animation: logo-pop 380ms var(--ease-out) backwards;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .logo-animate .logo-bar,
+  .logo-animate .logo-line,
+  .logo-animate .logo-node {
+    animation: none;
+    stroke-dashoffset: 0;
+  }
+}
+
 @keyframes sweep {
   from {
     background-position: 200% 0;
@@ -346,7 +420,7 @@ a {
   background-image: linear-gradient(
     110deg,
     var(--surface-sunken) 20%,
-    color-mix(in srgb, var(--violet) 10%, var(--surface-sunken)) 40%,
+    color-mix(in srgb, var(--pine) 10%, var(--surface-sunken)) 40%,
     var(--surface-sunken) 60%
   );
   background-size: 200% 100%;
@@ -375,8 +449,8 @@ a {
 }
 
 .react-grid-item.react-grid-placeholder {
-  background: color-mix(in srgb, var(--violet) 12%, transparent);
-  border: 1.5px dashed color-mix(in srgb, var(--violet) 45%, transparent);
+  background: color-mix(in srgb, var(--pine) 12%, transparent);
+  border: 1.5px dashed color-mix(in srgb, var(--pine) 45%, transparent);
   border-radius: var(--r-panel);
   opacity: 1;
   transition-duration: 120ms;
@@ -433,7 +507,7 @@ a {
 }
 
 .react-grid-item:hover > .react-resizable-handle::after {
-  border-color: var(--violet);
+  border-color: var(--pine);
 }
 
 /* --- print ---------------------------------------------------------------

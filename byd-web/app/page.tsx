@@ -83,7 +83,7 @@ export default function HomePage() {
                     <h2 className="font-display text-[19px] font-semibold leading-snug text-ink">
                       {report.title}
                     </h2>
-                    <span className="mt-0.5 grid size-8 shrink-0 place-items-center rounded-full bg-sunken text-muted transition-colors duration-200 group-hover:bg-violet group-hover:text-white">
+                    <span className="mt-0.5 grid size-8 shrink-0 place-items-center rounded-full bg-sunken text-muted transition-colors duration-200 group-hover:bg-pine group-hover:text-white">
                       <ArrowRight size={15} strokeWidth={2.25} />
                     </span>
                   </div>
@@ -93,7 +93,7 @@ export default function HomePage() {
                     </p>
                   ) : null}
                   <div className="mt-auto flex items-center gap-2 pt-5">
-                    <Chip tone={report.dataSourceIds.length > 0 ? "violet" : "neutral"}>
+                    <Chip tone={report.dataSourceIds.length > 0 ? "slate" : "neutral"}>
                       <Database size={11} strokeWidth={2.25} />
                       {report.dataSourceIds.length > 0
                         ? `${report.dataSourceIds.length} source${report.dataSourceIds.length === 1 ? "" : "s"}`

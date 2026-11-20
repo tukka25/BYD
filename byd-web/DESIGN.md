@@ -8,7 +8,9 @@ Surface mode: **Operate**. The visitor is here to finish a task — ask a
 question, read the answer, arrange a report. Brand lives in precision, not in
 expression. Scanability and native expectations outrank personality.
 
-Binding reference: `design/references/02-violet-amber-console.webp`.
+Binding reference for layout: `design/references/02-violet-amber-console.webp`
+— its **structure** only. Its violet/amber palette is superseded and is now an
+anti-reference for colour.
 `01-gilded-admin.webp` is kept for its information architecture only and is an
 **anti-reference** for surface treatment.
 
@@ -60,27 +62,44 @@ thumbs only; **never text, never an icon that carries meaning**.
 
 | Token | Value | Rules |
 |---|---|---|
-| `--violet` | `#5b3df5` | The one accent. 5.3:1 as text on canvas; takes white text at 6.1:1. Primary buttons, active state, focus ring, caret, selection, series 1. |
-| `--violet-wash` | `#eeeaff` | Active nav, chips, the avatar disc. |
-| `--amber` | `#f5a524` | Fills only. Carries `--ink` at 9.2:1, never white. |
-| `--coral` | `#f2563f` | Fills and destructive. White text only above ~18px (3.4:1). |
-| `--teal` | `#0e9e8e` | The "runs on this machine" mark, positive deltas. |
+| `--pine` | `#176b4e` | The one accent. 5.6:1 as text on canvas; takes white text at 6.5:1. Primary buttons, active state, focus ring, caret, selection, series 1. |
+| `--pine-wash` | `#e4f0ea` | Active nav, chips, the avatar disc. Pine on it measures 5.5:1. |
+| `--copper` | `#c2761b` | Fills and caution. Carries `--ink` at 5.3:1, never white. |
+| `--coral` | `#d23f2b` | Fills and destructive. Takes white at 4.7:1, so danger needs no size rule. |
+| `--slate` | `#3b5b8f` | Neutral categories — a source kind, a count. 5.9:1 as text; white at 6.8:1. |
+
+Pine is deliberately the same green that marks "running on this machine": the
+brand colour **is** the product's claim, so the thing that earns the accent is
+"this ran here". The old `--teal` is gone, absorbed into pine.
+
+**There is no purple in this system**, the chart series included. The previous
+build led on `--violet #5b3df5` with a second purple hiding at series 5
+(`#9b5cf6`); both are gone and neither comes back.
 
 Each has a `-wash` tint for chip and alert backgrounds. Alert text uses the
-darkened pairs `#b5301c` (coral), `#8a5a00` (amber), `#0a6b60` (teal) so a
-badge still reads at 12px.
+darkened pairs, now tokens rather than hex literals in components:
+`--coral-ink #a8331f` (5.6:1 on its wash), `--copper-ink #8a5214` (5.6:1) and
+`--slate-ink #2e4871` (7.8:1), so a badge still reads at 12px.
 
 ### Chart series
 
 ```
-1 #5b3df5   2 #f5a524   3 #f2563f   4 #0e9e8e
-5 #9b5cf6   6 #2b7fff   7 #d9479b   8 #7a8699
+1 #176b4e   2 #c2761b   3 #3b5b8f   4 #d23f2b
+5 #2f8f86   6 #d9a93e   7 #b8486f   8 #6e7a8a
 ```
 
-Violet, amber and coral lead so a chart looks like the rest of the app on
-sight; 5–8 extend without colliding in hue. This order is applied as Plotly's
-`colorway` in `components/plot.tsx`, so the model's own colour choices are
-overridden on every figure.
+Pine, copper and slate lead so a chart looks like the rest of the app on
+sight; 4–8 extend without colliding in hue, and none of them is purple. The
+order is applied as Plotly's `colorway` in `components/plot.tsx`.
+
+> **`colorway` alone does not re-theme a figure, and this doc used to claim it
+> did.** Plotly Express bakes an explicit colour onto every trace from its own
+> default sequence, and an explicit trace colour beats `layout.colorway`. So
+> every generated chart kept Plotly's `#636efa` blue while the rest of the app
+> was re-themed. `plot.tsx` now swaps a trace colour **only** when it matches a
+> known Plotly default (the `plotly` and `D3` sequences), replacing it with our
+> series by trace index. Any other colour is left alone: a colour the model
+> actually chose is authoring, and re-theming is not re-authoring.
 
 ---
 
@@ -131,7 +150,7 @@ logo tile, 8px on inline edit fields, 6px on checkboxes and bar caps.
 ```
 --lift-1     0 1px 2px / 0.04, 0 2px 8px / 0.04      resting cards
 --lift-2     0 2px 4px / 0.06, 0 12px 28px / 0.10    the ask bar, the drawer
---lift-drag  0 8px 16px / 0.10, 0 24px 56px violet/0.18   a block being dragged
+--lift-drag  0 8px 16px / 0.10, 0 24px 56px pine/0.20     a block being dragged
 ```
 
 A block picks up `--lift-drag` while it is dragged or resized, so the thing in
@@ -145,7 +164,7 @@ Every control in the app is built from these. A stock `<button>` or `<input>`
 never appears inside a committed surface.
 
 - **Panel** — `rounded-[24px] bg-surface shadow-[--lift-1]`. No border.
-- **Button** — variants `primary` (violet/white), `secondary` (white with a
+- **Button** — variants `primary` (pine/white), `secondary` (white with a
   hairline inset ring), `ghost`, `danger`. Sizes `sm` 32px / `md` 40px /
   `lg` 48px. `active:translate-y-px`; disabled drops to 45% and loses pointer
   events.
@@ -153,18 +172,70 @@ never appears inside a committed surface.
   coral for `tone="danger"`) on hover. Always carries `aria-label` and
   `title`; this is the only control that ships without a visible label.
 - **Chip** — pill, 12px semibold, five tones, each a wash with its darkened
-  text pair.
+  text pair. Each tone has a job: `pine` is live or succeeded, `slate` labels a
+  neutral category, `copper` cautions, `coral` failed, `neutral` is inert. Pine
+  is the only green, so a "Database" chip and an "Active" chip sitting side by
+  side stay readable as two different kinds of statement.
 - **Segmented** — `role="tablist"`, a sunken track with a white lifted pill on
   the active option. Used for Edit / View.
 - **Field** + `inputClass` — 44px tall, hairline inset ring, focus swaps to a
-  2px violet ring. Label 13px semibold ink above, hint 12px muted below.
+  2px pine ring. Label 13px semibold ink above, hint 12px muted below.
 - **EmptyState** — washed icon tile, 18px heading, muted body capped at
   `max-w-sm`, one action.
 
-**Icons** are lucide-react at **`strokeWidth={2.25}`**, everywhere. Two
-exceptions, both deliberate: the wordmark mark (2.75 — it is a logo, not an
-icon) and the 13px tick inside a filled checkbox (3 — it disappears at 2.25).
-A third weight is a bug, not a judgement call.
+**Icons** are lucide-react at **`strokeWidth={2.25}`**, everywhere. One
+exception, deliberate: the 13px tick inside a filled checkbox (3 — it
+disappears at 2.25). A third weight is a bug, not a judgement call. The logo is
+not in this system at all — it is drawn geometry, not a stroked icon, and it
+never takes a lucide weight.
+
+---
+
+## 5a. The mark
+
+`components/logo.tsx`. A dense field of thin bars is the raw data in your file;
+the bold node-and-line polyline crossing it is what the model found in that
+data, held off the field by a keyline so it stays readable wherever it sits.
+That is the product in one drawing: your data, and the answer drawn through it
+on this machine.
+
+What it replaced: lucide's `ChartNoAxesColumn` in a tinted rounded square. A
+stock icon in a coloured squircle is the default every tool arrives at, and the
+tile was doing the work the mark should do. **The mark now sits bare next to
+the wordmark — no tile behind it**, except on the favicon, where a tab needs
+the tile to separate the mark from the browser chrome.
+
+**Two cuts, not one scaled drawing.**
+
+| Cut | Contents | Where |
+|---|---|---|
+| `LogoMark` | 11 bars, 6 nodes | 28px and above: sidebar, login, mobile bar |
+| `LogoMarkCompact` | 4 bars, 3 nodes, heavier line | the favicon and anything under 28px |
+
+Eleven hairlines at 16px average out to grey mush, so the small size gets its
+own drawing. A logo that is only legible at one size is a logo with one size.
+
+The keyline colour is a prop, not a constant, because it has to match whatever
+sits behind the mark: `--surface` in the sidebar, `--canvas` on the mobile bar,
+pine on the favicon tile.
+
+`app/icon.svg` is the browser tab; `app/apple-icon.png` is the touch icon, and
+it is full-bleed and square on purpose — iOS applies its own corner mask, and
+Apple touch icons cannot be SVG.
+
+> **Hard rule.** The mark's resting state is the finished drawing. The
+> animation is opt-in per surface and is never what makes the mark appear: a
+> logo that is blank for the first second of every page load is a broken logo,
+> not an animated one. It plays on `/login`, where the lockup is the first
+> thing on the page, and nowhere else.
+
+The order of the animation is the product: the bars rise (your data, already on
+this machine), the line draws itself through them (the model reading it), then
+the nodes land (the answer). The keyline draws in step with the line it
+protects — drawn all at once it cuts a canvas-coloured swath through the field
+before the ink line arrives to fill it, which reads as a rendering fault.
+Transform and `stroke-dashoffset` only; neither forces paint.
+`prefers-reduced-motion: reduce` drops the whole thing to the finished state.
 
 ---
 
@@ -227,12 +298,12 @@ most while dragging one. Nothing on the canvas animates a property that
 forces paint.
 
 Generation takes 13–15s a block, so the wait is a real state and gets a real
-treatment. `components/dot-wave.tsx` draws a field of violet dots with a pulse
+treatment. `components/dot-wave.tsx` draws a field of pine dots with a pulse
 travelling through it, on a canvas rather than as several hundred elements —
 animating that many nodes through the DOM is a style write per dot per frame.
 A first frame is drawn synchronously, because a throttled tab may not run an
 animation frame for a while and an empty box is not a loading state.
-(`.generating`, a violet sweep across a sunken bar, remains for skeletons.)
+(`.generating`, a pine sweep across a sunken bar, remains for skeletons.)
 
 **One click lays the whole thing out.** Generating a dashboard puts a
 placeholder down for every planned block, in its final position and size, and
@@ -283,7 +354,8 @@ pinned the browser to a Plotly older than the one producing the figures.
 The model writes whatever Plotly it likes, so `components/plot.tsx` re-themes
 every figure on the way in. What we override:
 
-- `colorway` → our series; transparent paper and plot backgrounds
+- `colorway` → our series, plus a per-trace swap of Plotly's own default
+  palette (see §2); transparent paper and plot backgrounds
 - our font and `--body` as the default text colour
 - axes: `--surface-sunken` gridlines, `--hairline` zero and axis lines,
   `--muted` 11px ticks, `automargin`
@@ -398,7 +470,7 @@ layout, and print styles resize the block but not the drawing inside it, so
 
 - Text never goes below `--muted`. Hairline is not a text colour.
 - Every icon-only control has an `aria-label` and a `title`.
-- Focus is visible everywhere: 2px `--violet`, 2px offset, via
+- Focus is visible everywhere: 2px `--pine`, 2px offset, via
   `:focus-visible`.
 - Selection, caret, `accent-color` and scrollbars are themed. The parts not
   drawn by hand still belong to the design.

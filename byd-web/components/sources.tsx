@@ -63,7 +63,7 @@ export function SourceRow({
         <span
           className={[
             "grid size-5 shrink-0 place-items-center rounded-[6px]",
-            selected ? "bg-violet text-white" : "bg-surface ring-1 ring-inset ring-hairline-strong",
+            selected ? "bg-pine text-white" : "bg-surface ring-1 ring-inset ring-hairline-strong",
           ].join(" ")}
         >
           {selected ? <Check size={13} strokeWidth={3} /> : null}
@@ -78,7 +78,7 @@ export function SourceRow({
           <span className="block truncate text-[12px] text-muted">{subtitle}</span>
         ) : null}
       </span>
-      {source.source_type === "db" ? <Chip tone="violet">Database</Chip> : null}
+      {source.source_type === "db" ? <Chip tone="slate">Database</Chip> : null}
     </>
   );
 
@@ -91,7 +91,7 @@ export function SourceRow({
           className={[
             "flex min-w-0 flex-1 items-center gap-3 rounded-[var(--r-card)] px-3.5 py-3 text-left",
             "transition-colors duration-150 ease-[var(--ease-out)]",
-            selected ? "bg-violet-wash ring-1 ring-inset ring-violet" : "bg-sunken hover:bg-[#e0e0e7]",
+            selected ? "bg-pine-wash ring-1 ring-inset ring-pine" : "bg-sunken hover:bg-[#e0e0e7]",
           ].join(" ")}
         >
           {body}
@@ -196,12 +196,12 @@ export function ConnectDatabase({
   return (
     <div className="rounded-[var(--r-card)] bg-sunken p-4">
       <div className="mb-3 flex items-center gap-2">
-        <Plug size={15} strokeWidth={2.25} className="text-violet" />
+        <Plug size={15} strokeWidth={2.25} className="text-pine" />
         <h3 className="text-[13.5px] font-bold text-ink">Connect a database</h3>
       </div>
 
       {insecure ? (
-        <div className="mb-3 flex items-start gap-2 rounded-[var(--r-control)] bg-amber-wash px-3 py-2.5 text-[12.5px] text-[#8a5a00]">
+        <div className="mb-3 flex items-start gap-2 rounded-[var(--r-control)] bg-copper-wash px-3 py-2.5 text-[12.5px] text-copper-ink">
           <ShieldAlert size={14} strokeWidth={2.25} className="mt-px shrink-0" />
           <span>
             This server is still using the placeholder encryption key committed to the repository,
@@ -298,7 +298,7 @@ export function ConnectDatabase({
 
       {probe ? (
         probe.ok ? (
-          <div className="mt-3 rounded-[var(--r-control)] bg-teal-wash px-3 py-2.5 text-[12.5px] text-[#0a6b60]">
+          <div className="mt-3 rounded-[var(--r-control)] bg-pine-wash px-3 py-2.5 text-[12.5px] text-pine">
             <div className="flex items-center gap-2 font-semibold">
               <Check size={14} strokeWidth={3} />
               Connected. {probe.table_count ?? probe.tables.length} table
@@ -322,7 +322,7 @@ export function ConnectDatabase({
             ) : null}
           </div>
         ) : (
-          <div className="mt-3 flex items-start gap-2 rounded-[var(--r-control)] bg-coral-wash px-3 py-2.5 text-[12.5px] text-[#b5301c]">
+          <div className="mt-3 flex items-start gap-2 rounded-[var(--r-control)] bg-coral-wash px-3 py-2.5 text-[12.5px] text-coral-ink">
             <AlertTriangle size={14} strokeWidth={2.25} className="mt-px shrink-0" />
             <span className="break-words">{probe.error}</span>
           </div>
@@ -330,7 +330,7 @@ export function ConnectDatabase({
       ) : null}
 
       {error ? (
-        <div className="mt-3 flex items-start gap-2 rounded-[var(--r-control)] bg-coral-wash px-3 py-2.5 text-[12.5px] text-[#b5301c]">
+        <div className="mt-3 flex items-start gap-2 rounded-[var(--r-control)] bg-coral-wash px-3 py-2.5 text-[12.5px] text-coral-ink">
           <AlertTriangle size={14} strokeWidth={2.25} className="mt-px shrink-0" />
           <span className="break-words">{error}</span>
         </div>
@@ -441,7 +441,7 @@ export function SourceManager({
       ) : null}
 
       {error ? (
-        <div className="flex items-start gap-2 rounded-[var(--r-card)] bg-coral-wash px-3.5 py-2.5 text-[13px] text-[#b5301c]">
+        <div className="flex items-start gap-2 rounded-[var(--r-card)] bg-coral-wash px-3.5 py-2.5 text-[13px] text-coral-ink">
           <AlertTriangle size={15} strokeWidth={2.25} className="mt-px shrink-0" />
           <span className="flex-1">{error}</span>
         </div>

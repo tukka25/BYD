@@ -52,7 +52,7 @@ function ToolButton({
       onClick={onPress}
       className={[
         "inline-grid size-7 place-items-center rounded-[8px] transition-colors duration-150",
-        active ? "bg-violet-wash text-violet" : "text-muted hover:bg-sunken hover:text-ink",
+        active ? "bg-pine-wash text-pine" : "text-muted hover:bg-sunken hover:text-ink",
       ].join(" ")}
     >
       {children}

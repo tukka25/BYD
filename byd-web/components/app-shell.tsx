@@ -4,7 +4,6 @@ import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { useEffect, useRef, useState, useSyncExternalStore, type ReactNode } from "react";
 import {
-  ChartNoAxesColumn,
   Cpu,
   Database,
   FileText,
@@ -24,6 +23,7 @@ import {
   type Report,
 } from "@/lib/reports";
 import { IconButton } from "@/components/ui";
+import { Wordmark } from "@/components/logo";
 
 /* The persistent frame: a fixed sidebar carrying the real navigation, and a
    grey canvas for whatever route is open. Reports live under one group so a
@@ -54,7 +54,7 @@ function NavItem({
         "group flex items-center gap-2.5 rounded-[var(--r-control)] px-3 py-2",
         "text-[13.5px] font-semibold transition-colors duration-150 ease-[var(--ease-out)]",
         active
-          ? "bg-violet-wash text-violet"
+          ? "bg-pine-wash text-pine"
           : muted
             ? "text-muted hover:bg-sunken hover:text-ink"
             : "text-body hover:bg-sunken hover:text-ink",
@@ -166,12 +166,7 @@ export function AppShell({ children }: { children: ReactNode }) {
           onClick={() => setDrawer(false)}
           className="flex items-center gap-2.5 px-5 pb-2 pt-6"
         >
-          <span className="grid size-8 place-items-center rounded-[10px] bg-violet text-white">
-            <ChartNoAxesColumn size={17} strokeWidth={2.75} />
-          </span>
-          <span className="font-display text-[19px] font-bold tracking-[-0.03em] text-ink">
-            PromptDash
-          </span>
+          <Wordmark size={19} mark={26} keyline="var(--surface)" />
         </Link>
 
         <nav className="flex-1 overflow-y-auto px-3 pb-4">
@@ -229,7 +224,7 @@ export function AppShell({ children }: { children: ReactNode }) {
         {/* The product's claim, shown rather than asserted. */}
         <div className="mx-3 mb-3 rounded-[var(--r-card)] bg-sunken px-3 py-3">
           <div className="flex items-center gap-2 text-[12px] font-bold text-ink">
-            <ShieldCheck size={14} strokeWidth={2.25} className="text-teal" />
+            <ShieldCheck size={14} strokeWidth={2.25} className="text-pine" />
             Running on this machine
           </div>
           <p className="mt-1 text-[11.5px] leading-snug text-muted">
@@ -245,7 +240,7 @@ export function AppShell({ children }: { children: ReactNode }) {
         </div>
 
         <div className="flex items-center gap-2.5 border-t border-hairline px-4 py-3">
-          <span className="grid size-8 shrink-0 place-items-center rounded-full bg-violet-wash text-[11px] font-bold text-violet">
+          <span className="grid size-8 shrink-0 place-items-center rounded-full bg-pine-wash text-[11px] font-bold text-pine">
             {initials}
           </span>
           <span className="min-w-0 flex-1">
@@ -269,9 +264,7 @@ export function AppShell({ children }: { children: ReactNode }) {
           <IconButton label="Open navigation" ref={menuButton} onClick={() => setDrawer(true)}>
             <Menu size={18} strokeWidth={2.25} />
           </IconButton>
-          <span className="font-display text-[15px] font-bold tracking-[-0.02em] text-ink">
-            PromptDash
-          </span>
+          <Wordmark size={15} mark={22} keyline="var(--canvas)" />
         </div>
         <main className="flex min-h-0 min-w-0 flex-1 flex-col">{children}</main>
       </div>

@@ -34,12 +34,13 @@ type ButtonVariant = "primary" | "secondary" | "ghost" | "danger";
 type ButtonSize = "sm" | "md" | "lg";
 
 const BUTTON_VARIANT: Record<ButtonVariant, string> = {
-  // White on violet measures 6.1:1.
+  // White on pine measures 6.5:1.
   primary:
-    "bg-violet text-white hover:bg-[var(--violet-press)] active:bg-[var(--violet-press)] shadow-[var(--lift-1)]",
+    "bg-pine text-white hover:bg-[var(--pine-press)] active:bg-[var(--pine-press)] shadow-[var(--lift-1)]",
   secondary: "bg-surface text-ink ring-1 ring-inset ring-hairline hover:bg-sunken",
   ghost: "bg-transparent text-body hover:bg-sunken hover:text-ink",
-  // Coral carries white text only above ~18px, so this stays at text-sm+ weight 600.
+  // The retuned coral carries white at 4.7:1, so danger no longer needs a
+  // minimum size rule the way the old #f2563f (3.4:1) did.
   danger: "bg-coral text-white hover:brightness-95 shadow-[var(--lift-1)]",
 };
 
@@ -107,14 +108,18 @@ export const IconButton = forwardRef<
 
 /* --- Chip ---------------------------------------------------------------- */
 
-type ChipTone = "neutral" | "violet" | "amber" | "coral" | "teal";
+/* Four tones, each with a job: pine says live or succeeded, slate labels a
+   neutral category, copper cautions, coral failed. Pine is the only green, so
+   a "Database" chip and an "Active" chip sitting side by side stay legible as
+   two different kinds of statement. */
+type ChipTone = "neutral" | "pine" | "slate" | "copper" | "coral";
 
 const CHIP_TONE: Record<ChipTone, string> = {
   neutral: "bg-sunken text-body",
-  violet: "bg-violet-wash text-violet",
-  amber: "bg-amber-wash text-[#8a5a00]",
-  coral: "bg-coral-wash text-[#b5301c]",
-  teal: "bg-teal-wash text-[#0a6b60]",
+  pine: "bg-pine-wash text-pine",
+  slate: "bg-slate-wash text-slate-ink",
+  copper: "bg-copper-wash text-copper-ink",
+  coral: "bg-coral-wash text-coral-ink",
 };
 
 export function Chip({
@@ -208,7 +213,7 @@ export const inputClass =
   "w-full rounded-[var(--r-control)] bg-surface px-3.5 h-11 text-sm text-ink " +
   "ring-1 ring-inset ring-hairline placeholder:text-muted " +
   "transition-shadow duration-150 ease-[var(--ease-out)] " +
-  "focus:outline-none focus:ring-2 focus:ring-violet";
+  "focus:outline-none focus:ring-2 focus:ring-pine";
 
 /* --- Empty state --------------------------------------------------------- */
 
@@ -226,7 +231,7 @@ export function EmptyState({
   return (
     <div className="flex flex-col items-center justify-center px-6 py-16 text-center">
       {icon ? (
-        <div className="mb-4 grid size-12 place-items-center rounded-[var(--r-card)] bg-violet-wash text-violet">
+        <div className="mb-4 grid size-12 place-items-center rounded-[var(--r-card)] bg-pine-wash text-pine">
           {icon}
         </div>
       ) : null}

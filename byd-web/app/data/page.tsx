@@ -101,7 +101,7 @@ export default function DataPage() {
         />
 
         {error ? (
-          <div className="mb-4 flex items-start gap-2 rounded-[var(--r-card)] bg-coral-wash px-4 py-3 text-[13px] text-[#b5301c]">
+          <div className="mb-4 flex items-start gap-2 rounded-[var(--r-card)] bg-coral-wash px-4 py-3 text-[13px] text-coral-ink">
             <AlertTriangle size={16} strokeWidth={2.25} className="mt-px shrink-0" />
             <span className="flex-1">{error}</span>
             <button onClick={() => setError(null)} className="font-semibold underline">
@@ -137,7 +137,7 @@ export default function DataPage() {
           className={[
             "mb-6 rounded-[var(--r-panel)] border-2 border-dashed px-6 py-10 text-center",
             "transition-colors duration-200 ease-[var(--ease-out)]",
-            dragging ? "border-violet bg-violet-wash" : "border-hairline-strong bg-surface",
+            dragging ? "border-pine bg-pine-wash" : "border-hairline-strong bg-surface",
           ].join(" ")}
         >
           <p className="font-display text-[17px] font-semibold text-ink">
@@ -147,7 +147,7 @@ export default function DataPage() {
             {ALLOWED_EXTENSIONS.join(", ")} · or{" "}
             <button
               onClick={() => fileInput.current?.click()}
-              className="font-semibold text-violet underline underline-offset-2"
+              className="font-semibold text-pine underline underline-offset-2"
             >
               choose a file
             </button>
@@ -182,7 +182,7 @@ export default function DataPage() {
             {sources.map((source) => (
               <li key={source.id}>
                 <Panel className="flex items-center gap-4 p-4">
-                  <span className="grid size-11 shrink-0 place-items-center rounded-[var(--r-control)] bg-violet-wash text-violet">
+                  <span className="grid size-11 shrink-0 place-items-center rounded-[var(--r-control)] bg-pine-wash text-pine">
                     {source.source_type === "db" ? (
                       <Database size={19} strokeWidth={2.25} />
                     ) : (
@@ -208,10 +208,10 @@ export default function DataPage() {
                       )}
                     </p>
                   </div>
-                  <Chip tone={source.source_type === "db" ? "violet" : "neutral"}>
+                  <Chip tone={source.source_type === "db" ? "slate" : "neutral"}>
                     {source.source_type === "db" ? (source.db_type ?? "database") : "File"}
                   </Chip>
-                  <Chip tone={source.status === "active" ? "teal" : "neutral"}>
+                  <Chip tone={source.status === "active" ? "pine" : "neutral"}>
                     {source.status === "active" ? "Ready" : (source.status ?? "unknown")}
                   </Chip>
                   <IconButton label={`Remove ${source.display_name}`} tone="danger" onClick={() => remove(source.id)}>

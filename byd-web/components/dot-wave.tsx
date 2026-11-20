@@ -14,7 +14,7 @@ import { useEffect, useRef } from "react";
    mistake this canvas was built to avoid.
 
    Adapted from a dark reference to this product's light surface: the dots are
-   the brand violet over the sunken grey rather than blue on black. */
+   the brand pine over the sunken grey rather than blue on black. */
 
 const DOT_SPACING = 17;
 const DOT_MIN = 0.9;
@@ -97,7 +97,7 @@ export function DotWave({
 
     const start = () => {
       resize();
-      context.fillStyle = "#5b3df5";
+      context.fillStyle = "#176b4e";
       // Drawn once up front: a throttled tab may not run an animation frame
       // for a while, and an empty box is not a loading state.
       draw(0);
@@ -132,7 +132,7 @@ export function DotWave({
       ) : null}
 
       {typeof percent === "number" ? (
-        <span className="absolute bottom-4 right-5 rounded-[var(--r-pill)] bg-surface px-2.5 py-1 text-[12.5px] font-bold text-violet tabular">
+        <span className="absolute bottom-4 right-5 rounded-[var(--r-pill)] bg-surface px-2.5 py-1 text-[12.5px] font-bold text-pine tabular">
           {Math.round(percent)}%
         </span>
       ) : null}
