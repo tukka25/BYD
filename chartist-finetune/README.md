@@ -125,7 +125,11 @@ cd chartist-finetune && for m in lora convert fuse generate; do .venv/bin/python
 cd chartist-finetune && .venv/bin/hf download mlx-community/Qwen3.5-9B-MLX-4bit --local-dir models/qwen3.5-9b-4bit
 ```
 
-**5.98 GB**, already 4-bit MLX, ships its own `chat_template.jinja`, and contains no vision weights. Measured against the alternative below, this is 3.2× less to download and skips the conversion step entirely.
+**5.98 GB**, already 4-bit MLX, and ships its own `chat_template.jinja`. Measured against the alternative below, this is 3.2× less to download and skips the conversion step entirely.
+
+**It does carry a vision tower**, contrary to what earlier drafts of this file claimed: the shards hold 333 `vision_tower.*` tensors totalling **0.85 GB** of the 5.54 GB on disk, and `config.json` has a `vision_config`, `image_token_id` and `video_token_id`. The architecture is `Qwen3_5ForConditionalGeneration`.
+
+But mlx-lm does **not** load them: the loaded model's only top-level submodule is `language_model`, and a scan of its modules finds nothing matching `vision`. So the vision tower costs 0.85 GB of disk and **nothing** in GPU memory, and the 8,953.8M parameters mlx-lm reports are the language model alone. There is no memory to reclaim by stripping it — checked, because at this margin 0.85 GB would have mattered.
 
 The convert-it-yourself path works too but costs `Qwen/Qwen3.5-9B` at **19.33 GB** of bf16 download, plus conversion time and transient disk, to arrive at the same ~6 GB result:
 
@@ -133,13 +137,17 @@ The convert-it-yourself path works too but costs `Qwen/Qwen3.5-9B` at **19.33 GB
 cd chartist-finetune && .venv/bin/python -m mlx_lm.convert --hf-path Qwen/Qwen3.5-9B --mlx-path models/qwen3.5-9b-4bit -q --q-bits 4
 ```
 
-Use it only if you want control over the quantisation parameters, or if the community repo disappears. Neither repo carries vision weights, so the vision-tower concern noted in earlier drafts does not arise.
+Use it only if you want control over the quantisation parameters, or if the community repo disappears. Both repos carry the vision tower — converting it yourself does not avoid that.
 
 **An `HF_TOKEN` will not make either download faster.** A token governs access, not bandwidth — it is needed for gated repos (Llama, some Gemma) and raises API rate limits, but both repos here are public. What does speed it up is `hf_xet`, which `huggingface-hub` 2.4.0 already installed as a dependency and uses automatically for Xet-backed repos. The real lever is picking the 6 GB artefact over the 19 GB one.
 
 ### 4. GATE — measure real token lengths before training
 
-**Do not skip this.** If a row exceeds `--max-seq-length`, **mlx-lm silently truncates its tail** — cutting the closing `print(fig.to_json())` and training the model to omit the one line the contract requires. Nothing errors; you just get a worse model.
+**Do not skip this.** If a row exceeds `--max-seq-length`, **mlx-lm silently truncates its tail** — cutting the closing `print(fig.to_json())` and training the model to omit the one line the contract requires.
+
+And the real hazard is worse than a worse model. `iterate_batches` truncates the row and updates its *length* but never clamps the prompt **offset** (`tuner/trainer.py:166`), while `default_loss` computes `sum(ce * mask) / mask.sum()`. So any row whose prompt alone exceeds the cap yields an all-false mask, `ntoks == 0`, and a loss of `0/0 = nan` — and one nan gradient poisons every weight for the rest of the run. mlx-lm prints only `[WARNING]`. Measured: a probe at `--max-seq-length 512` reported a clean `val 0.567` at iter 1 and `nan` by iter 4.
+
+This is why over-length rows must be **dropped, not truncated** — what `cap_dataset.py` does.
 
 ```bash
 cd chartist-finetune && .venv/bin/python check_token_lengths.py --model models/qwen3.5-9b-4bit --limit 4096
@@ -156,6 +164,83 @@ cd chartist-finetune && .venv/bin/python check_token_lengths.py --model models/q
 So `2048` would have truncated several rows and `2560` still truncated three. **Use `--max-seq-length 4096`.** The headroom is nearly free: mlx-lm pads each batch to its own longest sequence rather than to the limit, and p99 is 1,268, so only the rare long batch pays for it. If memory becomes a problem, `--grad-checkpoint` is the lever, or drop the three outlier rows.
 
 Re-run the gate with the real Qwen tokenizer once the model is on disk — its template differs from the stand-in and could move these numbers by roughly ±10%. The gate exits non-zero if any row is over, and `run_overnight.sh` runs it before launching.
+
+### 4b. If training OOMs: read this before touching any flag
+
+The first real run died at iteration 1 with
+`[METAL] Command buffer execution failed: Insufficient Memory`. The iter-1
+validation pass had already completed (`val 0.672`), so the model and the forward
+pass fit; only the backward pass did not. **Measured diagnosis, in the order it was
+established:**
+
+| Check | Result |
+|---|---|
+| `--batch-size 1 --grad-accumulation-steps 2 --grad-checkpoint` | still OOM |
+| `--max-seq-length` sweep (batch 1 + checkpointing) | 512 trains, **1024 OOMs** |
+| mlx working-set ceiling (`mx.device_info()`) | `max_recommended_working_set_size` **24.96 GB**, mlx `memory_limit` 30.40 GB |
+| Physical memory (`vm_stat`) | free **0.06 GB**, compressed **13.07 GB**, wired 7.02 GB |
+| Swap (`sysctl vm.swapusage`) | **56.3 GB used of 57.3 GB — 98% full** |
+| Sum of all process RSS | only ~11 GB (Chrome 3.4, Claude 2.2, Docker 1.65, VS Code 0.9) |
+
+**So the ceiling was never mlx's.** mlx would happily use 24.96 GB; the GPU could
+not obtain physical pages, because the machine had essentially zero free pages and
+a saturated swap. Metal buffers must be wired into physical RAM and **cannot be
+served from swap**, so an oversubscribed machine fails hard rather than paging.
+
+The same pressure also destroys throughput: the iter-1 validation pass over 260
+rows took **851 seconds** (~200 tok/s for a forward-only pass on a 4-bit 9B).
+That is thrashing, not compute. Fixing memory is a prerequisite for the run
+*finishing*, not only for it starting.
+
+**The fix is to free physical memory, not to shrink the job.** Capping sequence
+length cannot rescue this: the ceiling (512-1024) sits below the dataset's median
+row (628 tokens), so any cap that fits would discard more than half the data.
+
+What the levers are actually worth:
+
+- **Reboot** — reclaims the 56 GB swap and 13 GB compressed. The only action that
+  restores a clean ~25 GB working set. Do this first.
+- **Quit Chrome / VS Code / Docker Desktop** — about 6 GB of RSS, but leaves swap
+  saturated, so it may not be enough on its own.
+- **`sudo sysctl iogpu.wired_limit_mb=28000`** — raises the wired cap. Pointless
+  here: the cap was 24.96 GB and the job never got near it. Not persistent across
+  reboots. Only reach for this once memory is genuinely free and a *large* run
+  still fails.
+- **Stripping the vision tower** — worth nothing in memory. mlx-lm never loads it
+  (verified: the loaded model's only top-level submodule is `language_model`).
+
+Memory needed, for sizing after a reboot: weights are 4.69 GB resident, and the
+per-token cost is dominated by the logits tensor at **vocab 248,320** — 0.95 GB in
+fp32 at 1,024 tokens, 2.68 GB at 2,892, each needing a gradient of the same size.
+`--grad-checkpoint` does not reduce it, because the LM head sits outside the
+checkpointed decoder layers. That is why checkpointing alone never fixed this.
+
+`probe_mem.py` measures peak memory per sequence length directly; run it once the
+machine is clean to get real numbers instead of these estimates.
+
+### 4c. Capping the dataset (only if you need headroom)
+
+`cap_dataset.py` writes a length-capped copy of `data/mlx` by **dropping**
+over-length rows, keeping `train.jsonl` and `train_fixtures.jsonl` in sync (they
+are positionally joined, and it refuses to run if their lengths disagree).
+
+```bash
+cd chartist-finetune && .venv/bin/python cap_dataset.py --limit 1536 --out data/mlx_1536
+```
+
+Measured cost of each cap, with the real Qwen tokenizer:
+
+| cap | train kept | dropped | valid dropped |
+|---|---|---|---|
+| 1024 | 1,909 | 20 (1.04%) | 3 |
+| 1280 | 1,916 | 13 (0.67%) | 1 |
+| **1536** | **1,926** | **3 (0.16%)** | 1 |
+| 2048 | 1,926 | 3 (0.16%) | 1 |
+| 2892 | 1,929 | 0 | 0 |
+
+A 1536 cap costs 0.16% of the data and buys a 1.9x reduction in worst-case
+per-step memory, which is the cheapest insurance available. Remember that
+`--iters` counts micro-steps, so re-derive it from the kept row count.
 
 ### 5. Train
 
