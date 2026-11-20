@@ -56,6 +56,7 @@ class Profile:
     measures: List[str] = field(default_factory=list)
     groups: List[str] = field(default_factory=list)
     period: Optional[str] = None
+    span_days: Optional[int] = None
 
     @property
     def can_plan(self) -> bool:
@@ -158,7 +159,50 @@ def profile_frame(name: str, frame: pd.DataFrame) -> Profile:
 
     if profile.time_columns:
         profile.period = _period_of(frame, profile.time_columns[0])
+        profile.span_days = _span_days(frame, profile.time_columns[0])
     return profile
+
+
+def _span_days(frame: pd.DataFrame, column: str) -> Optional[int]:
+    try:
+        values = frame[column]
+        if pd.api.types.is_numeric_dtype(values) and _YEAR_NAME.search(column):
+            years = values.dropna().astype(int)
+            return int((years.max() - years.min()) * 365) if not years.empty else None
+        parsed = _to_datetime(values).dropna()
+        return int((parsed.max() - parsed.min()).days) if not parsed.empty else None
+    except Exception:  # noqa: BLE001
+        return None
+
+
+# A measure you average rather than add. Summing a score, a rate or a
+# percentage produces a number with no meaning -- 1,394,650 "total popularity"
+# is not a fact about anything.
+_RATE_LIKE = re.compile(
+    r"pct|percent|rate|ratio|score|rating|popularity|index|avg|average|mean|"
+    r"danceability|energy|valence|tempo|loudness|speechiness|acousticness|"
+    r"liveness|instrumentalness|age|temperature|margin|share",
+    re.IGNORECASE,
+)
+
+
+def _aggregation(measure: str) -> str:
+    return "Average" if _RATE_LIKE.search(measure) else "Total"
+
+
+def _grain(span_days: Optional[int]) -> Optional[str]:
+    """How finely a trend should be grouped, from how long the data runs.
+
+    Without this the chartist is asked for a value "over" a date and plots one
+    point per row -- 32,833 of them on a line, which is a shape, not a trend.
+    """
+    if span_days is None:
+        return None
+    if span_days > 5 * 365:
+        return "year"
+    if span_days > 180:
+        return "month"
+    return "day"
 
 
 def _period_of(frame: pd.DataFrame, column: str) -> Optional[str]:
@@ -302,17 +346,35 @@ def plan(profile: Profile, max_charts: int = 5, brief: str = "") -> List[Section
     time = profile.time_columns[0] if profile.time_columns else None
 
     charts: List[Section] = []
+    # The planner profiled the data, so it knows what the chartist cannot see
+    # from three sample rows: how many rows share an x value, and whether this
+    # measure is added or averaged. Both go into the question.
+    agg = _aggregation(measure) if measure else "Total"
+    second_agg = "Average" if agg == "Total" else "Highest"
+    grain = _grain(profile.span_days)
 
     if measure:
-        charts.append(Section(kind="chart", prompt=f"Total {measure} as a single big KPI number", w=4, h=4))
+        charts.append(
+            Section(kind="chart", prompt=f"{agg} {measure} as a single big KPI number", w=4, h=4)
+        )
     if measure:
         charts.append(
-            Section(kind="chart", prompt=f"Average {measure} as a single big KPI number", w=4, h=4)
+            Section(
+                kind="chart",
+                prompt=f"{second_agg} {measure} as a single big KPI number",
+                w=4,
+                h=4,
+            )
         )
     if time and measure:
-        charts.append(Section(kind="chart", prompt=f"{measure} over {time} as a line chart", w=12, h=9))
+        by = f"by {grain} of {time}" if grain else f"by {time}"
+        charts.append(
+            Section(kind="chart", prompt=f"{agg} {measure} {by} as a line chart", w=12, h=9)
+        )
     if group and measure:
-        charts.append(Section(kind="chart", prompt=f"Total {measure} by {group} as a bar chart", w=6, h=9))
+        charts.append(
+            Section(kind="chart", prompt=f"{agg} {measure} by {group} as a bar chart", w=6, h=9)
+        )
     if other and measure:
         charts.append(
             Section(kind="chart", prompt=f"Share of {measure} by {other} as a pie chart", w=6, h=9)
@@ -323,7 +385,12 @@ def plan(profile: Profile, max_charts: int = 5, brief: str = "") -> List[Section
         )
     if second and group:
         charts.append(
-            Section(kind="chart", prompt=f"{second} by {group} as a bar chart", w=6, h=9)
+            Section(
+                kind="chart",
+                prompt=f"{_aggregation(second)} {second} by {group} as a bar chart",
+                w=6,
+                h=9,
+            )
         )
 
     charts = charts[:max_charts]
