@@ -32,7 +32,7 @@ const ROW_HEIGHT = 30;
    large, so a quota failure is ignored rather than allowed to break the page. */
 const CACHE_KEY = "promptdash_last_comparison";
 
-type Cached = { plan: ComparisonPlan; cells: CellResult[] };
+type Cached = { plan: ComparisonPlan; cells: CellResult[]; at?: string };
 
 function readCache(): Cached | null {
   try {
@@ -45,7 +45,7 @@ function readCache(): Cached | null {
 
 function writeCache(value: Cached): void {
   try {
-    sessionStorage.setItem(CACHE_KEY, JSON.stringify(value));
+    sessionStorage.setItem(CACHE_KEY, JSON.stringify({ ...value, at: new Date().toISOString() }));
   } catch {
     // Over quota: the run is still on screen, it just will not come back.
   }
@@ -165,10 +165,12 @@ export default function ComparePage() {
 
   // Restored before anything else, so a reload mid-run does not lose the run.
   const [restored] = useState(() => (typeof window === "undefined" ? null : readCache()));
+  const [showingCached, setShowingCached] = useState(false);
   useEffect(() => {
     if (!restored) return;
     setPlan(restored.plan);
     setCells(restored.cells);
+    setShowingCached(true);
   }, [restored]);
 
   useEffect(() => {
@@ -208,6 +210,7 @@ export default function ComparePage() {
     setError(null);
     setPlan(null);
     setCells([]);
+    setShowingCached(false);
     let latestPlan: ComparisonPlan | null = null;
     const collected: CellResult[] = [];
     try {
@@ -373,6 +376,33 @@ export default function ComparePage() {
               }
             />
           </Panel>
+        ) : null}
+
+        {showingCached && restored ? (
+          <div className="mb-5 flex flex-wrap items-center gap-2 rounded-[var(--r-card)] bg-amber-wash px-4 py-3 text-[13px] text-[#8a5a00]">
+            <AlertTriangle size={15} strokeWidth={2.25} className="shrink-0" />
+            <span className="flex-1">
+              This is an earlier run
+              {restored.at ? ` from ${new Date(restored.at).toLocaleString()}` : ""}, restored so a
+              reload does not lose it. It does not re-run itself, so it will not show any change
+              made since.
+            </span>
+            <Button
+              variant="secondary"
+              onClick={() => {
+                try {
+                  sessionStorage.removeItem(CACHE_KEY);
+                } catch {
+                  // Nothing to clear.
+                }
+                setShowingCached(false);
+                setPlan(null);
+                setCells([]);
+              }}
+            >
+              Clear
+            </Button>
+          </div>
         ) : null}
 
         {plan ? (
