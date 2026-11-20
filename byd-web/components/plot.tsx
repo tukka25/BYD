@@ -147,7 +147,8 @@ function allIndicators(figure: PlotlyFigure): boolean {
   return data.length > 0 && data.every((trace) => trace?.type === "indicator");
 }
 
-const MONEYISH = /\b(price|revenue|sales|cost|amount|value|spend|mrr|arr|total|gmv|profit|margin|usd|eur|gbp|aed|sar|jpy|inr)\b/i;
+const MONEYISH =
+  /\b(price|revenue|sales|cost|amount|value|spend|mrr|arr|gmv|gdp|profit|margin|income|salary|fee|budget|total|usd|eur|gbp|aed|sar|jpy|inr)\b/i;
 
 /** The currency belongs on the axis that holds the money, not on both.
 
@@ -226,7 +227,9 @@ function themed(figure: PlotlyFigure) {
       const horizontal = trace.orientation === "h";
       const values = (horizontal ? trace.x : trace.y) as unknown[] | undefined;
       if (!trace.text && !trace.texttemplate && values && values.length <= 12) {
-        trace.texttemplate = `${currency}%{${horizontal ? "x" : "y"}:,.3~s}`;
+        // Five significant figures, trailing zeros trimmed: 437.68M rather
+        // than 438M, and still 35.8k and 408 where that is the whole number.
+        trace.texttemplate = `${currency}%{${horizontal ? "x" : "y"}:.5~s}`;
         trace.textposition = "outside";
         trace.cliponaxis = false;
         trace.textfont = { family: DISPLAY, size: 11.5, color: "#3a3a44" };
