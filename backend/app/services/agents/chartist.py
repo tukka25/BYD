@@ -104,10 +104,28 @@ class ChartistAgent:
             "print(fig.to_json())"
         )
 
+    # Property names the model reliably gets wrong, mapped to the real ones.
+    # Measured, not guessed: `valueprefix` lost two of six blocks in a dashboard
+    # build, because Plotly's indicator number takes `prefix`/`suffix`. Keeping
+    # the list to names that cannot mean anything else keeps this a repair
+    # rather than a rewrite — anything subtler stays a contract violation and
+    # falls back, as before.
+    _PROPERTY_FIXES: tuple[tuple[str, str], ...] = (
+        ("valueprefix", "prefix"),
+        ("valuesuffix", "suffix"),
+        ("valueformat_", "valueformat"),
+    )
+
+    def _repair_properties(self, code: str) -> str:
+        for wrong, right in self._PROPERTY_FIXES:
+            code = re.sub(rf"(?<![A-Za-z_]){wrong}(?![A-Za-z_])", right, code)
+        return code
+
     def _sanitize_generated_code(self, raw: str, data_context: Dict[str, Any], viz_type: str) -> str:
         code = self._extract_code_block(raw)
         code = code.replace("“", "\"").replace("”", "\"").replace("’", "'").replace("‘", "'")
         code = self._strip_prose_prefix(code)
+        code = self._repair_properties(code)
 
         violations = validate_chart_code(code)
         if ContractViolation.NO_JSON_PRINT in violations and "fig =" in code:

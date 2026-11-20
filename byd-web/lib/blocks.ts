@@ -97,8 +97,24 @@ export async function deleteBlock(token: string, reportId: string, blockId: stri
    Server-sent events over POST, so `EventSource` is out (it is GET only) and
    the body is parsed here. */
 
+/** Where a planned block will land, known before it has been built. */
+export interface PlannedSection {
+  index: number;
+  kind: "chart" | "text";
+  label: string;
+  x: number;
+  y: number;
+  w: number;
+  h: number;
+}
+
 export interface DashboardProgress {
-  onPlan?: (plan: { total: number; source: string; steps: string[] }) => void;
+  onPlan?: (plan: {
+    total: number;
+    source: string;
+    brief: string;
+    sections: PlannedSection[];
+  }) => void;
   onStep?: (step: { index: number; total: number; label: string }) => void;
   onBlock?: (block: Block) => void;
   onSkipped?: (skip: { index: number; label: string; reason: string }) => void;
@@ -107,12 +123,18 @@ export interface DashboardProgress {
 export async function generateDashboard(
   token: string,
   reportId: string,
+  brief: string,
   handlers: DashboardProgress,
   signal?: AbortSignal,
 ): Promise<void> {
   const response = await fetch(
     `${backendBaseUrl()}/api/v1/dashboard/${reportId}/blocks/dashboard`,
-    { method: "POST", headers: { Authorization: `Bearer ${token}` }, signal },
+    {
+      method: "POST",
+      headers: { Authorization: `Bearer ${token}`, "Content-Type": "application/json" },
+      body: JSON.stringify({ brief }),
+      signal,
+    },
   );
 
   if (!response.ok) {

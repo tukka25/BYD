@@ -153,7 +153,15 @@ def _period_of(frame: pd.DataFrame, column: str) -> Optional[str]:
         return None
 
 
-def _intro(profile: Profile) -> str:
+def _headline(brief: str) -> str:
+    """The brief, as the opening block's title — it is what was asked for."""
+    cleaned = " ".join((brief or "").split())[:70].strip().rstrip(".")
+    if not cleaned:
+        return "About this data"
+    return cleaned[:1].upper() + cleaned[1:]
+
+
+def _intro(profile: Profile, brief: str = "") -> str:
     """An opening paragraph of facts, not of adjectives.
 
     Everything in it was measured from the sample, so none of it can be wrong
@@ -170,6 +178,9 @@ def _intro(profile: Profile) -> str:
         bits.append(profile.period)
 
     headline = " · ".join(bits)
+    asked = (
+        f"<p>Asked for: {_escape(brief.strip())}</p>" if brief and brief.strip() else ""
+    )
     follows = []
     if profile.measures:
         follows.append(f"measures {_join(profile.measures[:3])}")
@@ -180,7 +191,12 @@ def _intro(profile: Profile) -> str:
         if follows
         else "<p>Generated from the fields found in this source.</p>"
     )
-    return f"<p>{headline}</p>{tail}"
+    return f"<p>{headline}</p>{asked}{tail}"
+
+
+def _escape(text: str) -> str:
+    """The brief is the user's own text and is rendered as markup downstream."""
+    return text.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
 
 
 def _join(items: Sequence[str]) -> str:
@@ -190,20 +206,71 @@ def _join(items: Sequence[str]) -> str:
     return ", ".join(items[:-1]) + " and " + items[-1]
 
 
-def plan(profile: Profile, max_charts: int = 5) -> List[Section]:
+_WORDS = re.compile(r"[A-Z]+(?![a-z])|[A-Z]?[a-z]+|\d+")
+
+# Said in nearly every brief, so they separate nothing.
+_BRIEF_STOPWORDS = frozenset(
+    """a an and are as at by for from how in into is it of on or over per show me
+    the their this to us with what which dashboard report chart graph about make
+    build create focus""".split()
+)
+
+
+def _tokens(text: str) -> set[str]:
+    """camelCase-aware, so `mrrUsd` matches a brief that says "MRR"."""
+    out: set[str] = set()
+    for part in _WORDS.findall(text or ""):
+        word = part.lower()
+        if len(word) < 2:
+            continue
+        out.add(word)
+        # Enough stemming that a brief saying "churn" finds `churnedSeats`
+        # and "sales" finds `salePrice`. Not a stemmer, deliberately: the
+        # cost of a wrong match here is only a differently ordered dashboard.
+        if len(word) > 3 and word.endswith("s") and not word.endswith("ss"):
+            out.add(word[:-1])
+        for suffix in ("ed", "ing"):
+            if len(word) > len(suffix) + 2 and word.endswith(suffix):
+                out.add(word[: -len(suffix)])
+    return out
+
+
+def _steer(columns: List[str], brief_tokens: set[str]) -> List[str]:
+    """Move the columns the brief actually names to the front.
+
+    Deterministic overlap rather than asking the model which columns matter:
+    the answer has to be a real column name, and this cannot return one that
+    is not. The brief changes what leads; it cannot invent a field.
+    """
+    if not brief_tokens:
+        return columns
+    scored = sorted(
+        columns,
+        key=lambda column: -len(brief_tokens & _tokens(column)),
+    )
+    return scored
+
+
+def plan(profile: Profile, max_charts: int = 5, brief: str = "") -> List[Section]:
     """Compose the dashboard in reading order.
 
     Headline, then change over time, then the breakdown that explains it, then
     the detail. Sections whose data is not present are simply not planned —
     a dashboard with four real blocks beats six with two that cannot be drawn.
+
+    A brief does not rewrite that order; it decides which columns lead it.
     """
     if not profile.can_plan:
         return []
 
-    measure = profile.measures[0] if profile.measures else None
-    second = profile.measures[1] if len(profile.measures) > 1 else None
-    group = profile.groups[0] if profile.groups else None
-    other = profile.groups[1] if len(profile.groups) > 1 else None
+    brief_tokens = {t for t in _tokens(brief) if t not in _BRIEF_STOPWORDS}
+    measures = _steer(profile.measures, brief_tokens)
+    groups = _steer(profile.groups, brief_tokens)
+
+    measure = measures[0] if measures else None
+    second = measures[1] if len(measures) > 1 else None
+    group = groups[0] if groups else None
+    other = groups[1] if len(groups) > 1 else None
     time = profile.time_columns[0] if profile.time_columns else None
 
     charts: List[Section] = []
@@ -234,7 +301,13 @@ def plan(profile: Profile, max_charts: int = 5) -> List[Section]:
     charts = charts[:max_charts]
 
     sections: List[Section] = [
-        Section(kind="text", title="About this data", text_body=_intro(profile), w=12, h=3)
+        Section(
+            kind="text",
+            title=_headline(brief),
+            text_body=_intro(profile, brief),
+            w=12,
+            h=3,
+        )
     ]
     sections.extend(charts)
     return _lay_out(sections)

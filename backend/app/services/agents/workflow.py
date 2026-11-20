@@ -23,6 +23,7 @@ Changes from the original, all of them things that bit:
 from __future__ import annotations
 
 import logging
+import re
 import time
 from functools import lru_cache
 from pathlib import Path
@@ -233,9 +234,86 @@ def execution_node(state: AgentState) -> Dict[str, Any]:
     return _run_executor(executor, code, df, started)
 
 
+# Plotly names the property it rejected, which is enough to repair the code
+# without guessing: the model invents `value*` keys on an indicator's number
+# (`valuecolor`, `valuesize`) that carry no meaning, and dropping the one it
+# named is the whole fix. Done from the error rather than from a list, so a
+# newly invented name costs nothing. One retry only — if the second attempt
+# fails the chart is genuinely wrong, not decorated wrong.
+_INVALID_PROPERTY = re.compile(
+    r"Invalid property specified for object of type [\w.]+: '([A-Za-z_]\w*)'"
+)
+
+
+def _drop_property(code: str, prop: str) -> str:
+    """Remove `'prop': <value>` from a dict literal, whatever the value is.
+
+    Bracket- and quote-aware on purpose: a first attempt matched the value as
+    "everything up to a comma or brace", which cut `{'size': 48}` in half and
+    turned a bad property into a syntax error.
+    """
+    key = re.compile(rf"['\"]{re.escape(prop)}['\"]\s*:\s*")
+    out = code
+    while True:
+        match = key.search(out)
+        if not match:
+            return out
+
+        i = match.end()
+        depth = 0
+        quote = ""
+        while i < len(out):
+            ch = out[i]
+            if quote:
+                if ch == "\\":
+                    i += 2
+                    continue
+                if ch == quote:
+                    quote = ""
+            elif ch in "\"'":
+                quote = ch
+            elif ch in "([{":
+                depth += 1
+            elif ch in ")]}":
+                if depth == 0:
+                    break
+                depth -= 1
+            elif ch == "," and depth == 0:
+                break
+            i += 1
+
+        end = i
+        # Take the separating comma with it, so the dict stays well formed.
+        if end < len(out) and out[end] == ",":
+            end += 1
+        while end < len(out) and out[end] in " \t":
+            end += 1
+        out = out[: match.start()] + out[end:]
+
+
+def _compiles(code: str) -> bool:
+    """A repair that does not parse is not a repair."""
+    try:
+        compile(code, "<repair>", "exec")
+        return True
+    except SyntaxError:
+        logger.info("[workflow/executor] repair did not parse, keeping the original error")
+        return False
+
+
 def _run_executor(executor: Any, code: str, df: "pd.DataFrame", started: float) -> Dict[str, Any]:
     """Run the generated code against `df`, whatever the data came from."""
     result = executor.execute(code, df)
+
+    if not result.get("success"):
+        match = _INVALID_PROPERTY.search(str(result.get("error") or ""))
+        if match:
+            repaired = _drop_property(code, match.group(1))
+            if repaired != code and _compiles(repaired):
+                logger.info("[workflow/executor] dropping invented property %r", match.group(1))
+                result = executor.execute(repaired, df)
+                if result.get("success"):
+                    code = repaired
     if result.get("success"):
         logger.info("[workflow/executor] success in %.2fs", time.perf_counter() - started)
         return {

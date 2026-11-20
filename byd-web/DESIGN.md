@@ -234,6 +234,14 @@ A first frame is drawn synchronously, because a throttled tab may not run an
 animation frame for a while and an empty box is not a loading state.
 (`.generating`, a violet sweep across a sunken bar, remains for skeletons.)
 
+**One click lays the whole thing out.** Generating a dashboard puts a
+placeholder down for every planned block, in its final position and size, and
+each one loads in place with the dot field and the question it is answering.
+The dashboard assembles in front of you rather than growing a tile at a time,
+and nothing moves when a block arrives because its placeholder was already the
+right shape. Placeholders are pinned (`static`) and are filtered out of any
+layout save — they are not blocks.
+
 **What the loader says is true.** Building a whole dashboard streams, so it
 shows a real count — blocks finished out of blocks planned — as a percentage.
 A single block is one request that answers at the end, so there is no real

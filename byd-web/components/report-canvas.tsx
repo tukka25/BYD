@@ -25,12 +25,13 @@ import { DotWave } from "@/components/dot-wave";
 import { Plot } from "@/components/plot";
 import { RichText, RichTextEditor } from "@/components/rich-text";
 import { SourceDialog } from "@/components/sources";
-import { Button, Chip, EmptyState, IconButton, Panel, Segmented } from "@/components/ui";
+import { Button, Chip, EmptyState, IconButton, Panel, Segmented, inputClass } from "@/components/ui";
 import {
   createBlock,
   deleteBlock,
   generateBlock,
   generateDashboard,
+  type PlannedSection,
   listBlocks,
   saveLayout,
   updateBlock,
@@ -85,6 +86,9 @@ const PHASES: Array<{ at: number; label: string }> = [
 ];
 
 type Building = { done: number; total: number; label: string };
+
+const PLACEHOLDER_PREFIX = "__planned_";
+const SINGLE_PLACEHOLDER = "__planned_single__";
 
 /* A Plotly `indicator` trace is already a metric card: one big number, no axes.
    The chartist was fine-tuned on that chart type, so a KPI can come back as a
@@ -272,6 +276,10 @@ export function ReportCanvas({ report }: { report: Report }) {
   const [sourceIds, setSourceIds] = useState<string[]>(report.dataSourceIds);
   const [sourcesOpen, setSourcesOpen] = useState(false);
   const [building, setBuilding] = useState<Building | null>(null);
+  const [planned, setPlanned] = useState<PlannedSection[]>([]);
+  const [running, setRunning] = useState<number | null>(null);
+  const [briefOpen, setBriefOpen] = useState(false);
+  const [brief, setBrief] = useState("");
   const [skipped, setSkipped] = useState<string[]>([]);
   const [phase, setPhase] = useState(PHASES[0].label);
   const askRef = useRef<HTMLTextAreaElement | null>(null);
@@ -326,11 +334,48 @@ export function ReportCanvas({ report }: { report: Report }) {
     return () => window.clearInterval(timer);
   }, [busy]);
 
+  const nextRow = useMemo(
+    () => blocks.reduce((low, b) => Math.max(low, b.y + b.h), 0),
+    [blocks],
+  );
+
+  /* A placeholder sits where its block will land, so one click lays the whole
+     dashboard out and each tile fills itself in. */
+  const placeholders = useMemo(() => {
+    if (planned.length > 0) {
+      return planned.map((s) => ({
+        key: `${PLACEHOLDER_PREFIX}${s.index}__`,
+        label: s.label,
+        index: s.index,
+        x: s.x,
+        y: s.y,
+        w: s.w,
+        h: s.h,
+      }));
+    }
+    if (busy) {
+      return [
+        { key: SINGLE_PLACEHOLDER, label: phase, index: -1, x: 0, y: nextRow, w: 6, h: 9 },
+      ];
+    }
+    return [];
+  }, [planned, busy, phase, nextRow]);
+
   const layouts = useMemo(
     () => ({
-      lg: blocks.map((b) => ({ i: b.id, x: b.x, y: b.y, w: b.w, h: b.h, minW: 2, minH: 3 })),
+      lg: [
+        ...blocks.map((b) => ({ i: b.id, x: b.x, y: b.y, w: b.w, h: b.h, minW: 2, minH: 3 })),
+        ...placeholders.map((p) => ({
+          i: p.key,
+          x: p.x,
+          y: p.y,
+          w: p.w,
+          h: p.h,
+          static: true,
+        })),
+      ],
     }),
-    [blocks],
+    [blocks, placeholders],
   );
 
   // react-grid-layout hands back a readonly array, so the parameter matches it
@@ -394,13 +439,14 @@ export function ReportCanvas({ report }: { report: Report }) {
     (next: readonly GridItem[]) => {
       // Never write back a layout the grid clamped to fit a narrow screen.
       if (!arrangeable) return;
+      const real = next.filter((n) => !n.i.startsWith(PLACEHOLDER_PREFIX));
       setBlocks((current) =>
         current.map((block) => {
-          const item = next.find((n) => n.i === block.id);
+          const item = real.find((n) => n.i === block.id);
           return item ? { ...block, x: item.x, y: item.y, w: item.w, h: item.h } : block;
         }),
       );
-      save(next.map((n) => ({ id: n.i, x: n.x, y: n.y, w: n.w, h: n.h })));
+      save(real.map((n) => ({ id: n.i, x: n.x, y: n.y, w: n.w, h: n.h })));
     },
     [arrangeable, save],
   );
@@ -447,28 +493,37 @@ export function ReportCanvas({ report }: { report: Report }) {
      what is on screen is always what exists. */
   async function buildDashboard() {
     if (!token || building || busy) return;
+    setBriefOpen(false);
     setSkipped([]);
     setError(null);
+    setPlanned([]);
+    setRunning(null);
     setBuilding({ done: 0, total: 0, label: "Reading the data" });
     let completed = 0;
+    // Tracked here, not read from state: the handlers below close over the
+    // render that started the build, where `running` is still null.
+    let currentIndex = -1;
     try {
-      await generateDashboard(token, report.id, {
-        onPlan: (plan) =>
-          setBuilding({
-            done: 0,
-            total: plan.total,
-            label: `Planning ${plan.total} blocks from ${plan.source}`,
-          }),
-        onStep: (step) =>
-          setBuilding({ done: completed, total: step.total, label: step.label }),
+      await generateDashboard(token, report.id, brief, {
+        onPlan: (plan) => {
+          setPlanned(plan.sections);
+          setBuilding({ done: 0, total: plan.total, label: plan.source });
+        },
+        onStep: (step) => {
+          currentIndex = step.index;
+          setRunning(step.index);
+          setBuilding({ done: completed, total: step.total, label: step.label });
+        },
         onBlock: (block) => {
           completed += 1;
           setBlocks((current) => [...current, block]);
+          setPlanned((current) => current.filter((s) => s.index !== currentIndex));
           setBuilding((current) => (current ? { ...current, done: completed } : current));
         },
         onSkipped: (skip) => {
           completed += 1;
           setSkipped((current) => [...current, skip.label]);
+          setPlanned((current) => current.filter((s) => s.index !== skip.index));
           setBuilding((current) => (current ? { ...current, done: completed } : current));
         },
       });
@@ -478,6 +533,8 @@ export function ReportCanvas({ report }: { report: Report }) {
       setError(err instanceof Error ? err.message : "Could not build that dashboard.");
     } finally {
       setBuilding(null);
+      setPlanned([]);
+      setRunning(null);
     }
   }
 
@@ -577,11 +634,13 @@ export function ReportCanvas({ report }: { report: Report }) {
           />
           <Button
             variant="primary"
-            onClick={buildDashboard}
+            onClick={() => (building ? undefined : setBriefOpen((v) => !v))}
             disabled={Boolean(building) || busy}
           >
             <Sparkles size={15} strokeWidth={2.25} />
-            {building ? "Building…" : "Generate dashboard"}
+            {building
+              ? `Building ${building.done}/${building.total || "…"}`
+              : "Generate dashboard"}
           </Button>
           <Button variant="secondary" onClick={addNote}>
             <Type size={15} strokeWidth={2.25} />
@@ -614,6 +673,36 @@ export function ReportCanvas({ report }: { report: Report }) {
         </p>
       </header>
 
+      {briefOpen && !building ? (
+        <div className="shrink-0 px-5 pb-4 sm:px-8 print:hidden">
+          <Panel className="flex flex-wrap items-end gap-2 p-3">
+            <label className="min-w-[14rem] flex-1">
+              <span className="mb-1.5 block text-[13px] font-semibold text-ink">
+                What should this dashboard be about?
+              </span>
+              <input
+                autoFocus
+                value={brief}
+                onChange={(event) => setBrief(event.target.value)}
+                onKeyDown={(event) => {
+                  if (event.key === "Enter") void buildDashboard();
+                  if (event.key === "Escape") setBriefOpen(false);
+                }}
+                placeholder="e.g. churn by region — or leave empty and it plans from the data"
+                className={inputClass}
+              />
+            </label>
+            <Button variant="primary" onClick={buildDashboard}>
+              <Sparkles size={15} strokeWidth={2.25} />
+              Build it
+            </Button>
+            <Button variant="ghost" onClick={() => setBriefOpen(false)}>
+              Cancel
+            </Button>
+          </Panel>
+        </div>
+      ) : null}
+
       {error ? (
         <div className="mx-5 mb-4 flex shrink-0 items-start gap-2 sm:mx-8 rounded-[var(--r-card)] bg-coral-wash px-4 py-3 text-[13px] text-[#b5301c] print:hidden">
           <AlertTriangle size={16} strokeWidth={2.25} className="mt-px shrink-0" />
@@ -632,25 +721,11 @@ export function ReportCanvas({ report }: { report: Report }) {
       ) : null}
 
       <div ref={gridHost} className="app-scroll px-2 pb-6 sm:px-5">
-        {building || busy ? (
-          <div className="mb-4 px-3">
-            <Panel className="h-[260px] p-2">
-              <DotWave
-                label={building ? building.label : phase}
-                percent={
-                  building && building.total > 0
-                    ? (building.done / building.total) * 100
-                    : null
-                }
-              />
-            </Panel>
-            {skipped.length > 0 ? (
-              <p className="mt-2 text-[12.5px] text-muted">
-                {skipped.length} block{skipped.length === 1 ? "" : "s"} could not be drawn and
-                {skipped.length === 1 ? " was" : " were"} left out: {skipped.join(", ")}
-              </p>
-            ) : null}
-          </div>
+        {skipped.length > 0 ? (
+          <p className="mb-3 px-3 text-[12.5px] text-muted">
+            {skipped.length} block{skipped.length === 1 ? "" : "s"} could not be drawn and
+            {skipped.length === 1 ? " was" : " were"} left out: {skipped.join(", ")}
+          </p>
         ) : null}
 
         {loading ? (
@@ -658,7 +733,7 @@ export function ReportCanvas({ report }: { report: Report }) {
             <div className="h-64 rounded-[var(--r-panel)] generating" />
             <div className="h-64 rounded-[var(--r-panel)] generating" />
           </div>
-        ) : blocks.length === 0 ? (
+        ) : blocks.length === 0 && placeholders.length === 0 ? (
           <Panel className="mx-3">
             <EmptyState
               icon={<ArrowUp size={20} strokeWidth={2.25} />}
@@ -666,7 +741,11 @@ export function ReportCanvas({ report }: { report: Report }) {
               body="Describe the chart you want in plain English — “monthly revenue by plan tier”. It runs against your uploaded data on this machine, and the result lands here as a block you can move and resize."
               action={
                 <div className="flex flex-wrap items-center justify-center gap-2">
-                  <Button variant="primary" onClick={buildDashboard} disabled={Boolean(building)}>
+                  <Button
+                    variant="primary"
+                    onClick={() => setBriefOpen(true)}
+                    disabled={Boolean(building)}
+                  >
                     <Sparkles size={15} strokeWidth={2.25} />
                     Generate a dashboard
                   </Button>
@@ -692,6 +771,21 @@ export function ReportCanvas({ report }: { report: Report }) {
             onResizeStop={persistLayout}
             compactType="vertical"
           >
+            {placeholders.map((placeholder) => (
+              <div key={placeholder.key}>
+                <Panel className="h-full p-2">
+                  <DotWave
+                    label={placeholder.label}
+                    percent={
+                      building && building.total > 0 && placeholder.index === running
+                        ? (building.done / building.total) * 100
+                        : null
+                    }
+                  />
+                </Panel>
+              </div>
+            ))}
+
             {blocks.map((block) => (
               <div key={block.id}>
                 <div className="block-settle h-full">

@@ -384,9 +384,16 @@ def _sse(event: str, data: Dict[str, Any]) -> str:
     return f"event: {event}\ndata: {json.dumps(data)}\n\n"
 
 
+class DashboardBriefRequest(BaseModel):
+    """What the dashboard should be about. Empty means "plan it from the data"."""
+
+    brief: str = Field(default="", max_length=400)
+
+
 @router.post("/{dashboard_id}/blocks/dashboard")
 async def generate_whole_dashboard(
     dashboard_id: str,
+    payload: DashboardBriefRequest | None = None,
     current_user: User = Depends(get_current_user),
     db: Session = Depends(get_db),
 ):
@@ -414,8 +421,9 @@ async def generate_whole_dashboard(
         logger.warning("[dashboard] could not sample %s: %s", source.get("name"), exc)
         raise HTTPException(status_code=400, detail=f"Could not read that source: {exc}")
 
+    brief = (payload.brief if payload else "").strip()
     profile = architect.profile_frame(str(source.get("name")), frame)
-    sections = architect.plan(profile)
+    sections = architect.plan(profile, brief=brief)
     if not sections:
         raise HTTPException(
             status_code=400,
@@ -429,12 +437,27 @@ async def generate_whole_dashboard(
     source_hint = str(source.get("name") or "")
 
     async def events():
+        # The geometry goes out with the plan so the canvas can put every
+        # block's placeholder down at once, in its final position and size,
+        # instead of growing one tile at a time.
         yield _sse(
             "plan",
             {
                 "total": len(sections),
                 "source": profile.name,
-                "steps": [s.title or s.prompt for s in sections],
+                "brief": brief,
+                "sections": [
+                    {
+                        "index": i,
+                        "kind": s.kind,
+                        "label": s.title or s.prompt,
+                        "x": s.x,
+                        "y": base_row + s.y,
+                        "w": s.w,
+                        "h": s.h,
+                    }
+                    for i, s in enumerate(sections)
+                ],
             },
         )
 
