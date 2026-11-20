@@ -156,3 +156,51 @@ Pod uptime 8,668 s (2 h 24 m) on the A100 at $2.19/hr. `list-pod-billing` report
 ~$5.28, so the billing figure was still settling when read. Roughly half of that
 time went to avoidable debugging, itemised above. The 40 GB HIGH_PERFORMANCE
 network volume `cx8x2n8732` keeps billing until deleted, independently of the pod.
+
+## Serving it locally (the PEFT → MLX conversion)
+
+Training on CUDA produced a peft adapter; mlx-lm loads only adapters it made
+itself. The pod could not be restarted to merge the weights instead (a stopped
+pod resumes on its original host, and another renter had taken those GPUs), so
+`cloud/peft_to_mlx.py` translates the adapter. Verified after loading:
+**128/128 trained modules have non-zero `lora_b`, and all 120 `linear_attn` gate
+adapters are exactly zero** — mlx inits `lora_b` to zeros, so the gates it wraps
+but we never trained are exact identities rather than noise.
+
+```bash
+cd chartist-finetune && .venv/bin/python cloud/peft_to_mlx.py --peft cloud/artifacts/out-min --out runs/adapters-mlx
+```
+
+```bash
+cd chartist-finetune && .venv/bin/python -m mlx_lm server --model models/qwen3.5-9b-4bit --adapter-path runs/adapters-mlx --port 8080
+```
+
+No fusing is needed: `mlx_lm server` takes `--adapter-path` directly.
+
+**Measured after conversion**, locally on an M2 Pro, first 40 frozen-test rows:
+
+| | converted MLX 4-bit (n=40) | CUDA bf16 (n=300) |
+|---|---|---|
+| render rate | 87.5% | 91.3% |
+| right chart shape | 85.0% | 81.0% |
+
+At n=40 the 95% CI is ~±10 pp, so the gap is within noise: the conversion and
+4-bit quantisation cost nothing measurable. The subset is **not** stratified and
+is easier than the full set (78% `easy` versus 62%), so this is a conversion
+sanity check, not a re-measurement — 91.3% at n=300 stays the authoritative
+number. Local generation runs at 10.8 rows/min, so a full 300-row local eval
+takes about 28 minutes.
+
+### Still to do before the app works end to end
+
+1. **`qwen_slm.py` speaks the wrong protocol.** `LocalQwenChatModel` extends
+   `ChatOllama` (Ollama's `/api/chat`), while `mlx_lm server` is OpenAI-compatible
+   (`/v1/chat/completions`). Pointing `OLLAMA_BASE_URL` at the MLX server will not
+   work; it needs a `ChatOpenAI` path behind an `LLM_BACKEND` switch, which is what
+   the plan's Task 11 described but never built.
+2. Backend dependencies are not installed, and Postgres (docker compose) is not
+   running. `app/main.py` creates tables at startup, so the DB has to be up.
+3. Frontend dependencies.
+
+Fixed along the way: `run_agent_workflow` discarded the caller's `selected_source`
+and `available_sources` and charted a hardcoded CSV on every request (`a413539`).
