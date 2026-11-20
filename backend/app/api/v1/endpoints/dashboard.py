@@ -19,6 +19,7 @@ from app.schemas.dashboard import (
     DashboardUpdateRequest,
 )
 from app.services.agents.workflow import run_agent_workflow
+from app.utils.figure_json import decode_typed_arrays
 
 router = APIRouter()
 logger = logging.getLogger(__name__)
@@ -237,7 +238,9 @@ async def generate_dashboard(
             output = execution_result.get("output", "")
             html_content = f"<div>No graph generated. Output: {output}</div>"
         else:
-            figure_json = json.dumps(figure)
+            # plotly 7 encodes numeric columns as base64 typed arrays, which the
+            # CDN's plotly.js 2.35.2 cannot read -- the chart would render blank.
+            figure_json = json.dumps(decode_typed_arrays(figure))
             html_content = f"""
 <div id="promptdash-chart" style="width:100%;height:100%;min-height:420px;"></div>
 <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
@@ -264,6 +267,10 @@ async def generate_dashboard(
                 "plan": result.get("plan", {}),
                 "data_context": result.get("data_context", {}),
                 "agent_steps": [m.content for m in result.get("messages", [])],
+                # The generated program, so a caller can tell whether the model
+                # wrote the chart or the deterministic fallback did.
+                "code": result.get("code", ""),
+                "used_fallback": "promptdash: deterministic fallback" in (result.get("code") or ""),
             }
         }
     except asyncio.TimeoutError as exc:

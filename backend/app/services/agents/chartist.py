@@ -13,6 +13,11 @@ from app.services.agents.chartist_contract import (
 
 logger = logging.getLogger(__name__)
 
+# Stamped onto deterministically generated code. Without it a fallback chart is
+# indistinguishable from a model-written one in the response, and a smoke test
+# that only asks "did a figure render" reports success when the model failed.
+FALLBACK_MARKER = "# promptdash: deterministic fallback (model output unusable)"
+
 # A thinking model (Qwen3.5) returns "\n</think>\n\n" before its code, because
 # generation begins after "<think>\n". _strip_prose_prefix happens to drop it
 # today, but only because "</think>" fails the looks-like-code test -- if the
@@ -79,6 +84,7 @@ class ChartistAgent:
 
         if not x_col or not y_col:
             return (
+                f"{FALLBACK_MARKER}\n"
                 "import plotly.express as px\n"
                 "fig = px.histogram(df)\n"
                 "print(fig.to_json())"
@@ -92,6 +98,7 @@ class ChartistAgent:
             plot_call = f"px.bar(df, x='{x_col}', y='{y_col}'" + (f", color='{color_col}'" if color_col else "") + ")"
 
         return (
+            f"{FALLBACK_MARKER}\n"
             "import plotly.express as px\n"
             f"fig = {plot_call}\n"
             "print(fig.to_json())"

@@ -18,7 +18,16 @@ class Settings(BaseSettings):
     # the planner/detective (base weights) may live on different ports. Leave
     # MLX_CHARTIST_BASE_URL empty to use the same server for everything.
     MLX_BASE_URL: str = "http://localhost:8080/v1"
-    MLX_MODEL: str = "qwen3.5-9b-4bit"
+    # MUST be the literal "default_model" to get the fine-tuned adapter.
+    # mlx_lm server registers its --adapter-path under exactly that key
+    # (server.py: _adapter_map["default_model"] = cli_args.adapter_path) and then
+    # looks the adapter up BY MODEL ID. Any other id -- including the real model
+    # path -- loads the base weights with no adapter, and a HuggingFace repo id
+    # makes the server download that model instead. Measured difference on one
+    # chartist request: "default_model" returned valid Plotly in 15s and 186
+    # tokens; the repo id rambled for 1024 tokens, hit the token cap, and
+    # returned content=None.
+    MLX_MODEL: str = "default_model"
     MLX_CHARTIST_BASE_URL: str = ""
     MLX_CHARTIST_MODEL: str = ""
     MLX_API_KEY: str = "not-needed"

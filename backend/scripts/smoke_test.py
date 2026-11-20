@@ -110,6 +110,15 @@ def main() -> int:
     for step in meta.get("agent_steps") or []:
         print(f"     - {step}")
 
+    if meta.get("used_fallback"):
+        return fail(
+            "generate",
+            "a figure rendered, but from the DETERMINISTIC FALLBACK, not the model. "
+            "The chart is real; the model's output was rejected by the contract check. "
+            "Most likely MLX_MODEL is not 'default_model', so mlx_lm server served the "
+            "base weights without the adapter.\n--- code ---\n" + (meta.get("code") or ""),
+        )
+
     if "No graph generated" in html:
         return fail("generate", f"workflow ran but produced no figure: {html[:300]}")
     match = re.search(r"const fig = (\{.*?\});", html, re.DOTALL)
@@ -123,9 +132,36 @@ def main() -> int:
     traces = figure.get("data") or []
     if not traces:
         return fail("generate", "figure has no traces")
-    points = sum(len(t.get("x") or t.get("labels") or t.get("values") or t.get("z") or []) for t in traces)
+
+    # plotly 7 encodes numeric arrays as {"dtype","bdata"}; plotly.js 2.35.2
+    # cannot read that, so a chart carrying it renders blank in the browser even
+    # though the figure is valid. The backend decodes it, and finding any here
+    # means that decoding was skipped.
+    def find_binary(node) -> bool:
+        if isinstance(node, dict):
+            if isinstance(node.get("bdata"), str) and node.get("dtype"):
+                return True
+            return any(find_binary(v) for v in node.values())
+        if isinstance(node, list):
+            return any(find_binary(v) for v in node)
+        return False
+
+    if find_binary(figure):
+        return fail("generate", "figure still contains base64 typed arrays; the browser would render it blank")
+
+    def count(node) -> int:
+        """Data points in a trace field, descending into 2D grids like heatmap z."""
+        if isinstance(node, list):
+            return sum(count(v) for v in node) if node and isinstance(node[0], list) else len(node)
+        return 0
+
+    points = sum(
+        count(t.get("x")) or count(t.get("labels")) or count(t.get("values")) or count(t.get("z"))
+        for t in traces
+    )
     kinds = sorted({t.get("type") or "scatter" for t in traces})
     print(f"   figure: {len(traces)} trace(s) {kinds}, ~{points} points")
+    print(f"   code was written by the model ({len(meta.get('code') or '')} chars), not the fallback")
     if points == 0:
         return fail("generate", "figure rendered but contains no data points")
 
