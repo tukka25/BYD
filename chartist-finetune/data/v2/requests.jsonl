@@ -1,0 +1,660 @@
+{"request_id": "s0000-r0", "schema_id": "s0000", "split": "train", "request": "daily active users by platform"}
+{"request_id": "s0000-r1", "schema_id": "s0000", "split": "train", "request": "is engagement growing over time"}
+{"request_id": "s0000-r2", "schema_id": "s0000", "split": "train", "request": "compare acquisition channels by session length"}
+{"request_id": "s0000-r3", "schema_id": "s0000", "split": "train", "request": ""}
+{"request_id": "s0001-r0", "schema_id": "s0001", "split": "train", "request": "resolution time by priority"}
+{"request_id": "s0001-r1", "schema_id": "s0001", "split": "train", "request": "is support getting faster"}
+{"request_id": "s0001-r2", "schema_id": "s0001", "split": "train", "request": "compare channels by satisfaction score"}
+{"request_id": "s0001-r3", "schema_id": "s0001", "split": "train", "request": ""}
+{"request_id": "s0002-r0", "schema_id": "s0002", "split": "train", "request": "delay minutes by carrier"}
+{"request_id": "s0002-r1", "schema_id": "s0002", "split": "train", "request": "are cancellations getting worse over time"}
+{"request_id": "s0002-r2", "schema_id": "s0002", "split": "train", "request": "compare airlines by how often they get cancelled"}
+{"request_id": "s0002-r3", "schema_id": "s0002", "split": "train", "request": ""}
+{"request_id": "s0003-r0", "schema_id": "s0003", "split": "train", "request": "spend and revenue by channel"}
+{"request_id": "s0003-r1", "schema_id": "s0003", "split": "train", "request": "is campaign revenue growing"}
+{"request_id": "s0003-r2", "schema_id": "s0003", "split": "train", "request": "compare ad formats by conversions"}
+{"request_id": "s0003-r3", "schema_id": "s0003", "split": "train", "request": ""}
+{"request_id": "s0004-r0", "schema_id": "s0004", "split": "test", "request": "yield by crop type and soil"}
+{"request_id": "s0004-r1", "schema_id": "s0004", "split": "test", "request": "is harvest yield improving over time"}
+{"request_id": "s0004-r2", "schema_id": "s0004", "split": "test", "request": ""}
+{"request_id": "s0005-r0", "schema_id": "s0005", "split": "test", "request": "occupancy and room rate by property this year"}
+{"request_id": "s0005-r1", "schema_id": "s0005", "split": "test", "request": "is revenue growing across our hotels"}
+{"request_id": "s0005-r2", "schema_id": "s0005", "split": "test", "request": ""}
+{"request_id": "s0006-r0", "schema_id": "s0006", "split": "train", "request": "sessions and revenue by traffic source"}
+{"request_id": "s0006-r1", "schema_id": "s0006", "split": "train", "request": "is our conversion rate improving over time"}
+{"request_id": "s0006-r2", "schema_id": "s0006", "split": "train", "request": "compare devices by how much revenue they bring in"}
+{"request_id": "s0006-r3", "schema_id": "s0006", "split": "train", "request": ""}
+{"request_id": "s0007-r0", "schema_id": "s0007", "split": "train", "request": "claims payout by claim type"}
+{"request_id": "s0007-r1", "schema_id": "s0007", "split": "train", "request": "are approved amounts keeping up with claims"}
+{"request_id": "s0007-r2", "schema_id": "s0007", "split": "train", "request": "overview of claims for the monthly review"}
+{"request_id": "s0007-r3", "schema_id": "s0007", "split": "train", "request": ""}
+{"request_id": "s0008-r0", "schema_id": "s0008", "split": "train", "request": "on-time arrivals by carrier and origin airport"}
+{"request_id": "s0008-r1", "schema_id": "s0008", "split": "train", "request": "is departure delay getting worse over time"}
+{"request_id": "s0008-r2", "schema_id": "s0008", "split": "train", "request": "compare airlines by how late their flights arrive"}
+{"request_id": "s0008-r3", "schema_id": "s0008", "split": "train", "request": ""}
+{"request_id": "s0009-r0", "schema_id": "s0009", "split": "train", "request": "which channel brings the most revenue per dollar spent"}
+{"request_id": "s0009-r1", "schema_id": "s0009", "split": "train", "request": "is campaign revenue growing over time"}
+{"request_id": "s0009-r2", "schema_id": "s0009", "split": "train", "request": "overview of marketing results for the weekly review"}
+{"request_id": "s0009-r3", "schema_id": "s0009", "split": "train", "request": ""}
+{"request_id": "s0010-r0", "schema_id": "s0010", "split": "train", "request": "attendance rate by school"}
+{"request_id": "s0010-r1", "schema_id": "s0010", "split": "train", "request": "is attendance getting better over time"}
+{"request_id": "s0010-r2", "schema_id": "s0010", "split": "train", "request": "compare grade levels by absence minutes"}
+{"request_id": "s0010-r3", "schema_id": "s0010", "split": "train", "request": ""}
+{"request_id": "s0011-r0", "schema_id": "s0011", "split": "train", "request": "resolution time by district"}
+{"request_id": "s0011-r1", "schema_id": "s0011", "split": "train", "request": "are repair costs trending up"}
+{"request_id": "s0011-r2", "schema_id": "s0011", "split": "train", "request": "overview of service requests for the council meeting"}
+{"request_id": "s0011-r3", "schema_id": "s0011", "split": "train", "request": ""}
+{"request_id": "s0012-r0", "schema_id": "s0012", "split": "test", "request": "how busy our teams were each month"}
+{"request_id": "s0012-r1", "schema_id": "s0012", "split": "test", "request": "compare agent tiers by calls handled"}
+{"request_id": "s0012-r2", "schema_id": "s0012", "split": "test", "request": ""}
+{"request_id": "s0013-r0", "schema_id": "s0013", "split": "train", "request": "defect rate by line and shift"}
+{"request_id": "s0013-r1", "schema_id": "s0013", "split": "train", "request": "is our defect rate getting better"}
+{"request_id": "s0013-r2", "schema_id": "s0013", "split": "train", "request": "compare shifts by rework cost"}
+{"request_id": "s0013-r3", "schema_id": "s0013", "split": "train", "request": ""}
+{"request_id": "s0014-r0", "schema_id": "s0014", "split": "test", "request": "freight cost by carrier name"}
+{"request_id": "s0014-r1", "schema_id": "s0014", "split": "test", "request": "are transit days getting shorter over time"}
+{"request_id": "s0014-r2", "schema_id": "s0014", "split": "test", "request": ""}
+{"request_id": "s0015-r0", "schema_id": "s0015", "split": "test", "request": "transaction volume by channel and region"}
+{"request_id": "s0015-r1", "schema_id": "s0015", "split": "test", "request": "are failed transactions getting worse over time"}
+{"request_id": "s0015-r2", "schema_id": "s0015", "split": "test", "request": ""}
+{"request_id": "s0016-r0", "schema_id": "s0016", "split": "train", "request": "watch time by device type"}
+{"request_id": "s0016-r1", "schema_id": "s0016", "split": "train", "request": "is viewing time growing"}
+{"request_id": "s0016-r2", "schema_id": "s0016", "split": "train", "request": "compare genres by buffering events and watch time"}
+{"request_id": "s0016-r3", "schema_id": "s0016", "split": "train", "request": ""}
+{"request_id": "s0017-r0", "schema_id": "s0017", "split": "train", "request": "resolution hours by priority level"}
+{"request_id": "s0017-r1", "schema_id": "s0017", "split": "train", "request": "is our satisfaction score improving"}
+{"request_id": "s0017-r2", "schema_id": "s0017", "split": "train", "request": "compare queues by refund amounts and touches"}
+{"request_id": "s0017-r3", "schema_id": "s0017", "split": "train", "request": ""}
+{"request_id": "s0018-r0", "schema_id": "s0018", "split": "train", "request": "copay amounts by payer type"}
+{"request_id": "s0018-r1", "schema_id": "s0018", "split": "train", "request": "is dispensing volume growing over time"}
+{"request_id": "s0018-r2", "schema_id": "s0018", "split": "train", "request": "overview of dispensing for the monthly pharmacy review"}
+{"request_id": "s0018-r3", "schema_id": "s0018", "split": "train", "request": ""}
+{"request_id": "s0019-r0", "schema_id": "s0019", "split": "test", "request": "average final score by department"}
+{"request_id": "s0019-r1", "schema_id": "s0019", "split": "test", "request": "are grades improving over time"}
+{"request_id": "s0019-r2", "schema_id": "s0019", "split": "test", "request": ""}
+{"request_id": "s0020-r0", "schema_id": "s0020", "split": "train", "request": "fraud alerts by merchant type"}
+{"request_id": "s0020-r1", "schema_id": "s0020", "split": "train", "request": "are false positives going down"}
+{"request_id": "s0020-r2", "schema_id": "s0020", "split": "train", "request": "overview of card fraud for the weekly review"}
+{"request_id": "s0020-r3", "schema_id": "s0020", "split": "train", "request": ""}
+{"request_id": "s0021-r0", "schema_id": "s0021", "split": "test", "request": "severity by road type"}
+{"request_id": "s0021-r1", "schema_id": "s0021", "split": "test", "request": "are incidents getting worse over time"}
+{"request_id": "s0021-r2", "schema_id": "s0021", "split": "test", "request": ""}
+{"request_id": "s0022-r0", "schema_id": "s0022", "split": "train", "request": "revenue by region and product category"}
+{"request_id": "s0022-r1", "schema_id": "s0022", "split": "train", "request": "is sales volume growing over time"}
+{"request_id": "s0022-r2", "schema_id": "s0022", "split": "train", "request": "overview of store performance for the monthly review"}
+{"request_id": "s0022-r3", "schema_id": "s0022", "split": "train", "request": ""}
+{"request_id": "s0023-r0", "schema_id": "s0023", "split": "train", "request": "energy use by site last year"}
+{"request_id": "s0023-r1", "schema_id": "s0023", "split": "train", "request": "is our energy cost trending down"}
+{"request_id": "s0023-r2", "schema_id": "s0023", "split": "train", "request": "compare sites by carbon output and cost"}
+{"request_id": "s0023-r3", "schema_id": "s0023", "split": "train", "request": ""}
+{"request_id": "s0024-r0", "schema_id": "s0024", "split": "train", "request": "watch minutes by content type"}
+{"request_id": "s0024-r1", "schema_id": "s0024", "split": "train", "request": "is viewing time growing"}
+{"request_id": "s0024-r2", "schema_id": "s0024", "split": "train", "request": "compare devices by completion rate"}
+{"request_id": "s0024-r3", "schema_id": "s0024", "split": "train", "request": ""}
+{"request_id": "s0025-r0", "schema_id": "s0025", "split": "train", "request": "spending over budget by project site"}
+{"request_id": "s0025-r1", "schema_id": "s0025", "split": "train", "request": "are project costs trending up"}
+{"request_id": "s0025-r2", "schema_id": "s0025", "split": "train", "request": "compare cost categories by region"}
+{"request_id": "s0025-r3", "schema_id": "s0025", "split": "train", "request": ""}
+{"request_id": "s0026-r0", "schema_id": "s0026", "split": "test", "request": "no-show and cancellation rate by clinic"}
+{"request_id": "s0026-r1", "schema_id": "s0026", "split": "test", "request": "is our wait time getting longer"}
+{"request_id": "s0026-r2", "schema_id": "s0026", "split": "test", "request": ""}
+{"request_id": "s0027-r0", "schema_id": "s0027", "split": "train", "request": "default rate by region"}
+{"request_id": "s0027-r1", "schema_id": "s0027", "split": "train", "request": "are delinquencies getting worse over time"}
+{"request_id": "s0027-r2", "schema_id": "s0027", "split": "train", "request": "compare loan products by interest income and risk"}
+{"request_id": "s0027-r3", "schema_id": "s0027", "split": "train", "request": ""}
+{"request_id": "s0028-r0", "schema_id": "s0028", "split": "train", "request": "energy cost by site over time"}
+{"request_id": "s0028-r1", "schema_id": "s0028", "split": "train", "request": "is our power use trending down"}
+{"request_id": "s0028-r2", "schema_id": "s0028", "split": "train", "request": "compare sites by energy cost and emissions"}
+{"request_id": "s0028-r3", "schema_id": "s0028", "split": "train", "request": ""}
+{"request_id": "s0029-r0", "schema_id": "s0029", "split": "test", "request": "tip amount by dining area"}
+{"request_id": "s0029-r1", "schema_id": "s0029", "split": "test", "request": "are covers growing over time"}
+{"request_id": "s0029-r2", "schema_id": "s0029", "split": "test", "request": ""}
+{"request_id": "s0030-r0", "schema_id": "s0030", "split": "train", "request": "water use by district"}
+{"request_id": "s0030-r1", "schema_id": "s0030", "split": "train", "request": "is water usage going up"}
+{"request_id": "s0030-r2", "schema_id": "s0030", "split": "train", "request": "compare meter classes by revenue"}
+{"request_id": "s0030-r3", "schema_id": "s0030", "split": "train", "request": ""}
+{"request_id": "s0031-r0", "schema_id": "s0031", "split": "test", "request": "delay hours by carrier and transport mode"}
+{"request_id": "s0031-r1", "schema_id": "s0031", "split": "test", "request": "is freight spend per shipment rising"}
+{"request_id": "s0031-r2", "schema_id": "s0031", "split": "test", "request": ""}
+{"request_id": "s0032-r0", "schema_id": "s0032", "split": "train", "request": "patient wait times by department"}
+{"request_id": "s0032-r1", "schema_id": "s0032", "split": "train", "request": "is revenue growing at our clinics"}
+{"request_id": "s0032-r2", "schema_id": "s0032", "split": "train", "request": "compare visit types by how long patients wait"}
+{"request_id": "s0032-r3", "schema_id": "s0032", "split": "train", "request": ""}
+{"request_id": "s0033-r0", "schema_id": "s0033", "split": "test", "request": "fuel use by vehicle type"}
+{"request_id": "s0033-r1", "schema_id": "s0033", "split": "test", "request": "are our delivery trips getting more efficient"}
+{"request_id": "s0033-r2", "schema_id": "s0033", "split": "test", "request": ""}
+{"request_id": "s0034-r0", "schema_id": "s0034", "split": "train", "request": "spending per session by platform"}
+{"request_id": "s0034-r1", "schema_id": "s0034", "split": "train", "request": "are session lengths getting longer over time"}
+{"request_id": "s0034-r2", "schema_id": "s0034", "split": "train", "request": "overview of player sessions for the monthly review"}
+{"request_id": "s0034-r3", "schema_id": "s0034", "split": "train", "request": ""}
+{"request_id": "s0035-r0", "schema_id": "s0035", "split": "test", "request": "churn by customer segment"}
+{"request_id": "s0035-r1", "schema_id": "s0035", "split": "test", "request": "is retention getting better over time"}
+{"request_id": "s0035-r2", "schema_id": "s0035", "split": "test", "request": ""}
+{"request_id": "s0036-r0", "schema_id": "s0036", "split": "test", "request": "average handle time by team name"}
+{"request_id": "s0036-r1", "schema_id": "s0036", "split": "test", "request": "is scheduled hours coverage keeping up with calls offered"}
+{"request_id": "s0036-r2", "schema_id": "s0036", "split": "test", "request": ""}
+{"request_id": "s0037-r0", "schema_id": "s0037", "split": "train", "request": "daily sessions by platform"}
+{"request_id": "s0037-r1", "schema_id": "s0037", "split": "train", "request": "is in app revenue growing"}
+{"request_id": "s0037-r2", "schema_id": "s0037", "split": "train", "request": "compare user segments by screens viewed"}
+{"request_id": "s0037-r3", "schema_id": "s0037", "split": "train", "request": ""}
+{"request_id": "s0038-r0", "schema_id": "s0038", "split": "train", "request": "scrap by plant and shift"}
+{"request_id": "s0038-r1", "schema_id": "s0038", "split": "train", "request": "are we producing more units over time"}
+{"request_id": "s0038-r2", "schema_id": "s0038", "split": "train", "request": "compare lines on output and efficiency"}
+{"request_id": "s0038-r3", "schema_id": "s0038", "split": "train", "request": ""}
+{"request_id": "s0039-r0", "schema_id": "s0039", "split": "test", "request": "boardings by route for the last year"}
+{"request_id": "s0039-r1", "schema_id": "s0039", "split": "test", "request": "is fare revenue growing over time"}
+{"request_id": "s0039-r2", "schema_id": "s0039", "split": "test", "request": ""}
+{"request_id": "s0040-r0", "schema_id": "s0040", "split": "test", "request": "ridership by route and fare type"}
+{"request_id": "s0040-r1", "schema_id": "s0040", "split": "test", "request": "is revenue keeping up with rider growth"}
+{"request_id": "s0040-r2", "schema_id": "s0040", "split": "test", "request": ""}
+{"request_id": "s0041-r0", "schema_id": "s0041", "split": "train", "request": "revenue by plan tier"}
+{"request_id": "s0041-r1", "schema_id": "s0041", "split": "train", "request": "is recurring revenue growing"}
+{"request_id": "s0041-r2", "schema_id": "s0041", "split": "train", "request": "compare regions by total revenue"}
+{"request_id": "s0041-r3", "schema_id": "s0041", "split": "train", "request": ""}
+{"request_id": "s0042-r0", "schema_id": "s0042", "split": "train", "request": "tonnage by terminal over time"}
+{"request_id": "s0042-r1", "schema_id": "s0042", "split": "train", "request": "is cargo volume growing at our ports"}
+{"request_id": "s0042-r2", "schema_id": "s0042", "split": "train", "request": "compare terminals by dwell time"}
+{"request_id": "s0042-r3", "schema_id": "s0042", "split": "train", "request": ""}
+{"request_id": "s0043-r0", "schema_id": "s0043", "split": "train", "request": "tons collected by zone and waste stream"}
+{"request_id": "s0043-r1", "schema_id": "s0043", "split": "train", "request": "are we collecting more tons over time"}
+{"request_id": "s0043-r2", "schema_id": "s0043", "split": "train", "request": "compare vehicle types by stops completed"}
+{"request_id": "s0043-r3", "schema_id": "s0043", "split": "train", "request": ""}
+{"request_id": "s0044-r0", "schema_id": "s0044", "split": "train", "request": "revenue by service type each region"}
+{"request_id": "s0044-r1", "schema_id": "s0044", "split": "train", "request": "is late fee income growing"}
+{"request_id": "s0044-r2", "schema_id": "s0044", "split": "train", "request": "compare segments by billed usage and revenue"}
+{"request_id": "s0044-r3", "schema_id": "s0044", "split": "train", "request": ""}
+{"request_id": "s0045-r0", "schema_id": "s0045", "split": "train", "request": "watch time by device type"}
+{"request_id": "s0045-r1", "schema_id": "s0045", "split": "train", "request": "is viewing time growing"}
+{"request_id": "s0045-r2", "schema_id": "s0045", "split": "train", "request": "compare subscription tiers by completion"}
+{"request_id": "s0045-r3", "schema_id": "s0045", "split": "train", "request": ""}
+{"request_id": "s0046-r0", "schema_id": "s0046", "split": "train", "request": "how many days do potholes take to fix by district"}
+{"request_id": "s0046-r1", "schema_id": "s0046", "split": "train", "request": "is the number of water leak reports growing"}
+{"request_id": "s0046-r2", "schema_id": "s0046", "split": "train", "request": "overview of city service requests for the monthly council meeting"}
+{"request_id": "s0046-r3", "schema_id": "s0046", "split": "train", "request": ""}
+{"request_id": "s0047-r0", "schema_id": "s0047", "split": "train", "request": "on-time performance by airline"}
+{"request_id": "s0047-r1", "schema_id": "s0047", "split": "train", "request": "is our delay getting worse"}
+{"request_id": "s0047-r2", "schema_id": "s0047", "split": "train", "request": "compare airports by cancellations and delays"}
+{"request_id": "s0047-r3", "schema_id": "s0047", "split": "train", "request": ""}
+{"request_id": "s0048-r0", "schema_id": "s0048", "split": "train", "request": "watch time by genre"}
+{"request_id": "s0048-r1", "schema_id": "s0048", "split": "train", "request": "is viewing time growing"}
+{"request_id": "s0048-r2", "schema_id": "s0048", "split": "train", "request": "compare subscription tiers by completion"}
+{"request_id": "s0048-r3", "schema_id": "s0048", "split": "train", "request": ""}
+{"request_id": "s0049-r0", "schema_id": "s0049", "split": "test", "request": "freight cost by carrier"}
+{"request_id": "s0049-r1", "schema_id": "s0049", "split": "test", "request": "is shipping spend trending up"}
+{"request_id": "s0049-r2", "schema_id": "s0049", "split": "test", "request": ""}
+{"request_id": "s0050-r0", "schema_id": "s0050", "split": "train", "request": "energy use by region each month"}
+{"request_id": "s0050-r1", "schema_id": "s0050", "split": "train", "request": "is our power cost climbing over time"}
+{"request_id": "s0050-r2", "schema_id": "s0050", "split": "train", "request": "compare energy sources by total spending"}
+{"request_id": "s0050-r3", "schema_id": "s0050", "split": "train", "request": ""}
+{"request_id": "s0051-r0", "schema_id": "s0051", "split": "train", "request": "hiring speed by candidate source"}
+{"request_id": "s0051-r1", "schema_id": "s0051", "split": "train", "request": "are we getting more applicants lately"}
+{"request_id": "s0051-r2", "schema_id": "s0051", "split": "train", "request": "compare job families by offer acceptance"}
+{"request_id": "s0051-r3", "schema_id": "s0051", "split": "train", "request": ""}
+{"request_id": "s0052-r0", "schema_id": "s0052", "split": "train", "request": "cost overruns by project phase"}
+{"request_id": "s0052-r1", "schema_id": "s0052", "split": "train", "request": "are we over budget on subcontractors"}
+{"request_id": "s0052-r2", "schema_id": "s0052", "split": "train", "request": "compare vendor types by change orders"}
+{"request_id": "s0052-r3", "schema_id": "s0052", "split": "train", "request": ""}
+{"request_id": "s0053-r0", "schema_id": "s0053", "split": "train", "request": "tonnage by waste stream"}
+{"request_id": "s0053-r1", "schema_id": "s0053", "split": "train", "request": "is collection volume growing"}
+{"request_id": "s0053-r2", "schema_id": "s0053", "split": "train", "request": "compare vehicle types by stops completed"}
+{"request_id": "s0053-r3", "schema_id": "s0053", "split": "train", "request": ""}
+{"request_id": "s0054-r0", "schema_id": "s0054", "split": "test", "request": "occupancy by property this year"}
+{"request_id": "s0054-r1", "schema_id": "s0054", "split": "test", "request": "is our room rate growing"}
+{"request_id": "s0054-r2", "schema_id": "s0054", "split": "test", "request": ""}
+{"request_id": "s0055-r0", "schema_id": "s0055", "split": "train", "request": "daily active users by platform"}
+{"request_id": "s0055-r1", "schema_id": "s0055", "split": "train", "request": "is session length getting longer"}
+{"request_id": "s0055-r2", "schema_id": "s0055", "split": "train", "request": "compare user segments by revenue"}
+{"request_id": "s0055-r3", "schema_id": "s0055", "split": "train", "request": ""}
+{"request_id": "s0056-r0", "schema_id": "s0056", "split": "train", "request": "monthly recurring revenue by plan tier"}
+{"request_id": "s0056-r1", "schema_id": "s0056", "split": "train", "request": "is churned revenue getting worse"}
+{"request_id": "s0056-r2", "schema_id": "s0056", "split": "train", "request": "compare regions by discount depth and revenue"}
+{"request_id": "s0056-r3", "schema_id": "s0056", "split": "train", "request": ""}
+{"request_id": "s0057-r0", "schema_id": "s0057", "split": "train", "request": "defect costs by production line"}
+{"request_id": "s0057-r1", "schema_id": "s0057", "split": "train", "request": "are defects getting less frequent over time"}
+{"request_id": "s0057-r2", "schema_id": "s0057", "split": "train", "request": "overview of defects for the weekly quality meeting"}
+{"request_id": "s0057-r3", "schema_id": "s0057", "split": "train", "request": ""}
+{"request_id": "s0058-r0", "schema_id": "s0058", "split": "test", "request": "attrition rate by department"}
+{"request_id": "s0058-r1", "schema_id": "s0058", "split": "test", "request": "is headcount growing over time"}
+{"request_id": "s0058-r2", "schema_id": "s0058", "split": "test", "request": ""}
+{"request_id": "s0059-r0", "schema_id": "s0059", "split": "test", "request": "fuel use by vehicle type"}
+{"request_id": "s0059-r1", "schema_id": "s0059", "split": "test", "request": "are trips getting longer over time"}
+{"request_id": "s0059-r2", "schema_id": "s0059", "split": "test", "request": ""}
+{"request_id": "s0060-r0", "schema_id": "s0060", "split": "train", "request": "claims paid by state and claim type"}
+{"request_id": "s0060-r1", "schema_id": "s0060", "split": "train", "request": "is the payout gap widening"}
+{"request_id": "s0060-r2", "schema_id": "s0060", "split": "train", "request": "overview of claims for the weekly ops meeting"}
+{"request_id": "s0060-r3", "schema_id": "s0060", "split": "train", "request": ""}
+{"request_id": "s0061-r0", "schema_id": "s0061", "split": "test", "request": "revenue by dining area and shift"}
+{"request_id": "s0061-r1", "schema_id": "s0061", "split": "test", "request": "are covers growing month over month"}
+{"request_id": "s0061-r2", "schema_id": "s0061", "split": "test", "request": ""}
+{"request_id": "s0062-r0", "schema_id": "s0062", "split": "train", "request": "satisfaction by channel"}
+{"request_id": "s0062-r1", "schema_id": "s0062", "split": "train", "request": "are resolution times getting faster"}
+{"request_id": "s0062-r2", "schema_id": "s0062", "split": "train", "request": "overview for the monthly support review"}
+{"request_id": "s0062-r3", "schema_id": "s0062", "split": "train", "request": ""}
+{"request_id": "s0063-r0", "schema_id": "s0063", "split": "test", "request": "churn by plan tier"}
+{"request_id": "s0063-r1", "schema_id": "s0063", "split": "test", "request": "compare regions by churn reasons and revenue lost"}
+{"request_id": "s0063-r2", "schema_id": "s0063", "split": "test", "request": ""}
+{"request_id": "s0064-r0", "schema_id": "s0064", "split": "test", "request": "attrition by department this year"}
+{"request_id": "s0064-r1", "schema_id": "s0064", "split": "test", "request": "are we losing more people lately"}
+{"request_id": "s0064-r2", "schema_id": "s0064", "split": "test", "request": ""}
+{"request_id": "s0065-r0", "schema_id": "s0065", "split": "train", "request": "time to fill by department"}
+{"request_id": "s0065-r1", "schema_id": "s0065", "split": "train", "request": "which sourcing channel brings the most candidates"}
+{"request_id": "s0065-r2", "schema_id": "s0065", "split": "train", "request": "compare departments by offer salaries and hiring speed"}
+{"request_id": "s0065-r3", "schema_id": "s0065", "split": "train", "request": ""}
+{"request_id": "s0066-r0", "schema_id": "s0066", "split": "train", "request": "late fees by utility type"}
+{"request_id": "s0066-r1", "schema_id": "s0066", "split": "train", "request": "is billing growing over time"}
+{"request_id": "s0066-r2", "schema_id": "s0066", "split": "train", "request": "compare regions by energy use and cost"}
+{"request_id": "s0066-r3", "schema_id": "s0066", "split": "train", "request": ""}
+{"request_id": "s0067-r0", "schema_id": "s0067", "split": "test", "request": "attrition by department"}
+{"request_id": "s0067-r1", "schema_id": "s0067", "split": "test", "request": "are we losing more people each quarter"}
+{"request_id": "s0067-r2", "schema_id": "s0067", "split": "test", "request": ""}
+{"request_id": "s0068-r0", "schema_id": "s0068", "split": "train", "request": "rejects by plant region"}
+{"request_id": "s0068-r1", "schema_id": "s0068", "split": "train", "request": "is output improving over time"}
+{"request_id": "s0068-r2", "schema_id": "s0068", "split": "train", "request": "compare production lines by uptime"}
+{"request_id": "s0068-r3", "schema_id": "s0068", "split": "train", "request": ""}
+{"request_id": "s0069-r0", "schema_id": "s0069", "split": "train", "request": "attendance rate by school level"}
+{"request_id": "s0069-r1", "schema_id": "s0069", "split": "train", "request": "is attendance getting better over time"}
+{"request_id": "s0069-r2", "schema_id": "s0069", "split": "train", "request": "compare regions by how many students show up"}
+{"request_id": "s0069-r3", "schema_id": "s0069", "split": "train", "request": ""}
+{"request_id": "s0070-r0", "schema_id": "s0070", "split": "train", "request": "water use by district and customer type"}
+{"request_id": "s0070-r1", "schema_id": "s0070", "split": "train", "request": "is total water usage going up"}
+{"request_id": "s0070-r2", "schema_id": "s0070", "split": "train", "request": "compare water sources by cost per gallon"}
+{"request_id": "s0070-r3", "schema_id": "s0070", "split": "train", "request": ""}
+{"request_id": "s0071-r0", "schema_id": "s0071", "split": "train", "request": "revenue by order channel"}
+{"request_id": "s0071-r1", "schema_id": "s0071", "split": "train", "request": "is revenue growing"}
+{"request_id": "s0071-r2", "schema_id": "s0071", "split": "train", "request": "compare customer segments by discounts given"}
+{"request_id": "s0071-r3", "schema_id": "s0071", "split": "train", "request": ""}
+{"request_id": "s0072-r0", "schema_id": "s0072", "split": "train", "request": "tonnage by waste type"}
+{"request_id": "s0072-r1", "schema_id": "s0072", "split": "train", "request": "are collection routes getting more efficient"}
+{"request_id": "s0072-r2", "schema_id": "s0072", "split": "train", "request": "compare vehicle types by fuel use"}
+{"request_id": "s0072-r3", "schema_id": "s0072", "split": "train", "request": ""}
+{"request_id": "s0073-r0", "schema_id": "s0073", "split": "train", "request": "delinquent loans by borrower risk tier"}
+{"request_id": "s0073-r1", "schema_id": "s0073", "split": "train", "request": "is our loan book growing over time"}
+{"request_id": "s0073-r2", "schema_id": "s0073", "split": "train", "request": "overview of the portfolio for the monthly risk review"}
+{"request_id": "s0073-r3", "schema_id": "s0073", "split": "train", "request": ""}
+{"request_id": "s0074-r0", "schema_id": "s0074", "split": "train", "request": "resolution time by channel"}
+{"request_id": "s0074-r1", "schema_id": "s0074", "split": "train", "request": "are tickets getting resolved faster"}
+{"request_id": "s0074-r2", "schema_id": "s0074", "split": "train", "request": "compare channels by satisfaction score"}
+{"request_id": "s0074-r3", "schema_id": "s0074", "split": "train", "request": ""}
+{"request_id": "s0075-r0", "schema_id": "s0075", "split": "train", "request": "how long fixing city problems takes by neighborhood"}
+{"request_id": "s0075-r1", "schema_id": "s0075", "split": "train", "request": "are citizen complaints getting resolved faster lately"}
+{"request_id": "s0075-r2", "schema_id": "s0075", "split": "train", "request": "compare request channels by how satisfied residents feel"}
+{"request_id": "s0075-r3", "schema_id": "s0075", "split": "train", "request": ""}
+{"request_id": "s0076-r0", "schema_id": "s0076", "split": "train", "request": "defects by plant site"}
+{"request_id": "s0076-r1", "schema_id": "s0076", "split": "train", "request": "is output improving on our lines"}
+{"request_id": "s0076-r2", "schema_id": "s0076", "split": "train", "request": "compare shifts by units produced"}
+{"request_id": "s0076-r3", "schema_id": "s0076", "split": "train", "request": ""}
+{"request_id": "s0077-r0", "schema_id": "s0077", "split": "test", "request": "no-show rate by clinic location"}
+{"request_id": "s0077-r1", "schema_id": "s0077", "split": "test", "request": "is wait time getting better"}
+{"request_id": "s0077-r2", "schema_id": "s0077", "split": "test", "request": ""}
+{"request_id": "s0078-r0", "schema_id": "s0078", "split": "test", "request": "yield by crop type and soil"}
+{"request_id": "s0078-r1", "schema_id": "s0078", "split": "test", "request": "is our harvest improving over time"}
+{"request_id": "s0078-r2", "schema_id": "s0078", "split": "test", "request": ""}
+{"request_id": "s0079-r0", "schema_id": "s0079", "split": "train", "request": "average closing price by neighborhood"}
+{"request_id": "s0079-r1", "schema_id": "s0079", "split": "train", "request": "are sales prices rising over time"}
+{"request_id": "s0079-r2", "schema_id": "s0079", "split": "train", "request": "compare financing types by days on market"}
+{"request_id": "s0079-r3", "schema_id": "s0079", "split": "train", "request": ""}
+{"request_id": "s0080-r0", "schema_id": "s0080", "split": "test", "request": "on-time delivery by carrier"}
+{"request_id": "s0080-r1", "schema_id": "s0080", "split": "test", "request": "is freight cost per shipment rising"}
+{"request_id": "s0080-r2", "schema_id": "s0080", "split": "test", "request": ""}
+{"request_id": "s0081-r0", "schema_id": "s0081", "split": "test", "request": "churn by plan tier"}
+{"request_id": "s0081-r1", "schema_id": "s0081", "split": "test", "request": "is revenue growing across regions"}
+{"request_id": "s0081-r2", "schema_id": "s0081", "split": "test", "request": ""}
+{"request_id": "s0082-r0", "schema_id": "s0082", "split": "train", "request": "defects by plant site"}
+{"request_id": "s0082-r1", "schema_id": "s0082", "split": "train", "request": "is output improving over time"}
+{"request_id": "s0082-r2", "schema_id": "s0082", "split": "train", "request": "compare shifts by yield rate"}
+{"request_id": "s0082-r3", "schema_id": "s0082", "split": "train", "request": ""}
+{"request_id": "s0083-r0", "schema_id": "s0083", "split": "test", "request": "ferry boardings by route zone"}
+{"request_id": "s0083-r1", "schema_id": "s0083", "split": "test", "request": "is fare revenue growing"}
+{"request_id": "s0083-r2", "schema_id": "s0083", "split": "test", "request": ""}
+{"request_id": "s0084-r0", "schema_id": "s0084", "split": "test", "request": "on-time delivery by supplier"}
+{"request_id": "s0084-r1", "schema_id": "s0084", "split": "test", "request": "are our suppliers getting better over time"}
+{"request_id": "s0084-r2", "schema_id": "s0084", "split": "test", "request": ""}
+{"request_id": "s0085-r0", "schema_id": "s0085", "split": "train", "request": "attendance trend by school over time"}
+{"request_id": "s0085-r1", "schema_id": "s0085", "split": "train", "request": "is student attendance improving at each school"}
+{"request_id": "s0085-r2", "schema_id": "s0085", "split": "train", "request": "compare schools by absences and tardiness"}
+{"request_id": "s0085-r3", "schema_id": "s0085", "split": "train", "request": ""}
+{"request_id": "s0086-r0", "schema_id": "s0086", "split": "train", "request": "sales by region and product category"}
+{"request_id": "s0086-r1", "schema_id": "s0086", "split": "train", "request": "is revenue growing this year"}
+{"request_id": "s0086-r2", "schema_id": "s0086", "split": "train", "request": "overview of store performance for the weekly review"}
+{"request_id": "s0086-r3", "schema_id": "s0086", "split": "train", "request": ""}
+{"request_id": "s0087-r0", "schema_id": "s0087", "split": "train", "request": "attendance rate by school"}
+{"request_id": "s0087-r1", "schema_id": "s0087", "split": "train", "request": "is attendance getting better over time"}
+{"request_id": "s0087-r2", "schema_id": "s0087", "split": "train", "request": "compare schools by how many students show up"}
+{"request_id": "s0087-r3", "schema_id": "s0087", "split": "train", "request": ""}
+{"request_id": "s0088-r0", "schema_id": "s0088", "split": "train", "request": "sale price by property type and region"}
+{"request_id": "s0088-r1", "schema_id": "s0088", "split": "train", "request": "is the sold price keeping up with list price"}
+{"request_id": "s0088-r2", "schema_id": "s0088", "split": "train", "request": "compare regions by days on market"}
+{"request_id": "s0088-r3", "schema_id": "s0088", "split": "train", "request": ""}
+{"request_id": "s0089-r0", "schema_id": "s0089", "split": "test", "request": "mobile payments volume by region over time"}
+{"request_id": "s0089-r1", "schema_id": "s0089", "split": "test", "request": "is transaction volume growing across channels"}
+{"request_id": "s0089-r2", "schema_id": "s0089", "split": "test", "request": ""}
+{"request_id": "s0090-r0", "schema_id": "s0090", "split": "test", "request": "fuel use by vehicle type and region"}
+{"request_id": "s0090-r1", "schema_id": "s0090", "split": "test", "request": "are our trips getting longer over time"}
+{"request_id": "s0090-r2", "schema_id": "s0090", "split": "test", "request": ""}
+{"request_id": "s0091-r0", "schema_id": "s0091", "split": "train", "request": "tonnage by terminal"}
+{"request_id": "s0091-r1", "schema_id": "s0091", "split": "train", "request": "is port volume growing"}
+{"request_id": "s0091-r2", "schema_id": "s0091", "split": "train", "request": "overview for the weekly port meeting"}
+{"request_id": "s0091-r3", "schema_id": "s0091", "split": "train", "request": ""}
+{"request_id": "s0092-r0", "schema_id": "s0092", "split": "train", "request": "yield by city and property type"}
+{"request_id": "s0092-r1", "schema_id": "s0092", "split": "train", "request": "is rental income growing over time"}
+{"request_id": "s0092-r2", "schema_id": "s0092", "split": "train", "request": "overview of rental yields for the investor review"}
+{"request_id": "s0092-r3", "schema_id": "s0092", "split": "train", "request": ""}
+{"request_id": "s0093-r0", "schema_id": "s0093", "split": "train", "request": "revenue by sales channel"}
+{"request_id": "s0093-r1", "schema_id": "s0093", "split": "train", "request": "is sales revenue growing over time"}
+{"request_id": "s0093-r2", "schema_id": "s0093", "split": "train", "request": "compare regions by how much they sell"}
+{"request_id": "s0093-r3", "schema_id": "s0093", "split": "train", "request": ""}
+{"request_id": "s0094-r0", "schema_id": "s0094", "split": "train", "request": "session length by platform"}
+{"request_id": "s0094-r1", "schema_id": "s0094", "split": "train", "request": "are players spending more over time"}
+{"request_id": "s0094-r2", "schema_id": "s0094", "split": "train", "request": "compare game modes by purchases"}
+{"request_id": "s0094-r3", "schema_id": "s0094", "split": "train", "request": ""}
+{"request_id": "s0095-r0", "schema_id": "s0095", "split": "train", "request": "sale price by neighborhood zone"}
+{"request_id": "s0095-r1", "schema_id": "s0095", "split": "train", "request": "are property sales getting faster"}
+{"request_id": "s0095-r2", "schema_id": "s0095", "split": "train", "request": "compare property types by days on market"}
+{"request_id": "s0095-r3", "schema_id": "s0095", "split": "train", "request": ""}
+{"request_id": "s0096-r0", "schema_id": "s0096", "split": "test", "request": "how severe crashes differ by weather"}
+{"request_id": "s0096-r1", "schema_id": "s0096", "split": "test", "request": "compare road types by response time"}
+{"request_id": "s0096-r2", "schema_id": "s0096", "split": "test", "request": ""}
+{"request_id": "s0097-r0", "schema_id": "s0097", "split": "train", "request": "defects by production line"}
+{"request_id": "s0097-r1", "schema_id": "s0097", "split": "train", "request": "is our defect rate improving"}
+{"request_id": "s0097-r2", "schema_id": "s0097", "split": "train", "request": "compare shifts by rework cost"}
+{"request_id": "s0097-r3", "schema_id": "s0097", "split": "train", "request": ""}
+{"request_id": "s0098-r0", "schema_id": "s0098", "split": "train", "request": "delinquency by risk grade"}
+{"request_id": "s0098-r1", "schema_id": "s0098", "split": "train", "request": "are our loans getting riskier"}
+{"request_id": "s0098-r2", "schema_id": "s0098", "split": "train", "request": "compare loan products by past-due balances"}
+{"request_id": "s0098-r3", "schema_id": "s0098", "split": "train", "request": ""}
+{"request_id": "s0099-r0", "schema_id": "s0099", "split": "test", "request": "average grade points by department"}
+{"request_id": "s0099-r1", "schema_id": "s0099", "split": "test", "request": "are failing grades rising over terms"}
+{"request_id": "s0099-r2", "schema_id": "s0099", "split": "test", "request": ""}
+{"request_id": "s0100-r0", "schema_id": "s0100", "split": "train", "request": "defect rate by plant"}
+{"request_id": "s0100-r1", "schema_id": "s0100", "split": "train", "request": "are defects getting worse over time"}
+{"request_id": "s0100-r2", "schema_id": "s0100", "split": "train", "request": "compare product lines by scrap cost"}
+{"request_id": "s0100-r3", "schema_id": "s0100", "split": "train", "request": ""}
+{"request_id": "s0101-r0", "schema_id": "s0101", "split": "train", "request": "water use by district and customer type"}
+{"request_id": "s0101-r1", "schema_id": "s0101", "split": "train", "request": "is water usage growing across districts"}
+{"request_id": "s0101-r2", "schema_id": "s0101", "split": "train", "request": "compare districts by billed revenue per meter"}
+{"request_id": "s0101-r3", "schema_id": "s0101", "split": "train", "request": ""}
+{"request_id": "s0102-r0", "schema_id": "s0102", "split": "test", "request": "tip amounts by sales channel"}
+{"request_id": "s0102-r1", "schema_id": "s0102", "split": "test", "request": "is dinner revenue growing over time"}
+{"request_id": "s0102-r2", "schema_id": "s0102", "split": "test", "request": ""}
+{"request_id": "s0103-r0", "schema_id": "s0103", "split": "train", "request": "data use by region and plan"}
+{"request_id": "s0103-r1", "schema_id": "s0103", "split": "train", "request": "is network revenue growing"}
+{"request_id": "s0103-r2", "schema_id": "s0103", "split": "train", "request": "compare access technologies by latency"}
+{"request_id": "s0103-r3", "schema_id": "s0103", "split": "train", "request": ""}
+{"request_id": "s0104-r0", "schema_id": "s0104", "split": "train", "request": "containers handled by terminal last month"}
+{"request_id": "s0104-r1", "schema_id": "s0104", "split": "train", "request": "is port throughput growing over time"}
+{"request_id": "s0104-r2", "schema_id": "s0104", "split": "train", "request": "overview of cargo activity for the weekly ops meeting"}
+{"request_id": "s0104-r3", "schema_id": "s0104", "split": "train", "request": ""}
+{"request_id": "s0105-r0", "schema_id": "s0105", "split": "test", "request": "on-time delivery by supplier tier"}
+{"request_id": "s0105-r1", "schema_id": "s0105", "split": "test", "request": "are our suppliers getting more reliable"}
+{"request_id": "s0105-r2", "schema_id": "s0105", "split": "test", "request": ""}
+{"request_id": "s0106-r0", "schema_id": "s0106", "split": "test", "request": "revenue by service period and channel"}
+{"request_id": "s0106-r1", "schema_id": "s0106", "split": "test", "request": "are covers and revenue growing over time"}
+{"request_id": "s0106-r2", "schema_id": "s0106", "split": "test", "request": ""}
+{"request_id": "s0107-r0", "schema_id": "s0107", "split": "train", "request": "revenue by sales channel"}
+{"request_id": "s0107-r1", "schema_id": "s0107", "split": "train", "request": "are orders growing over time"}
+{"request_id": "s0107-r2", "schema_id": "s0107", "split": "train", "request": "compare customer segments by discount spend"}
+{"request_id": "s0107-r3", "schema_id": "s0107", "split": "train", "request": ""}
+{"request_id": "s0108-r0", "schema_id": "s0108", "split": "train", "request": "revenue by region for each drug class"}
+{"request_id": "s0108-r1", "schema_id": "s0108", "split": "train", "request": "are prescriptions growing over time"}
+{"request_id": "s0108-r2", "schema_id": "s0108", "split": "train", "request": "compare payer types by copay costs"}
+{"request_id": "s0108-r3", "schema_id": "s0108", "split": "train", "request": ""}
+{"request_id": "s0109-r0", "schema_id": "s0109", "split": "train", "request": "delinquency by loan product"}
+{"request_id": "s0109-r1", "schema_id": "s0109", "split": "train", "request": "is charge-off amount rising over time"}
+{"request_id": "s0109-r2", "schema_id": "s0109", "split": "train", "request": "compare regions by outstanding balance and delinquency"}
+{"request_id": "s0109-r3", "schema_id": "s0109", "split": "train", "request": ""}
+{"request_id": "s0110-r0", "schema_id": "s0110", "split": "test", "request": "yield by crop type and irrigation method"}
+{"request_id": "s0110-r1", "schema_id": "s0110", "split": "test", "request": "is our harvest yield improving over time"}
+{"request_id": "s0110-r2", "schema_id": "s0110", "split": "test", "request": ""}
+{"request_id": "s0111-r0", "schema_id": "s0111", "split": "train", "request": "ad spend by channel"}
+{"request_id": "s0111-r1", "schema_id": "s0111", "split": "train", "request": "is campaign revenue growing"}
+{"request_id": "s0111-r2", "schema_id": "s0111", "split": "train", "request": "compare regions by return on spend"}
+{"request_id": "s0111-r3", "schema_id": "s0111", "split": "train", "request": ""}
+{"request_id": "s0112-r0", "schema_id": "s0112", "split": "train", "request": "MRR by plan tier and region"}
+{"request_id": "s0112-r1", "schema_id": "s0112", "split": "train", "request": "is recurring revenue growing over time"}
+{"request_id": "s0112-r2", "schema_id": "s0112", "split": "train", "request": "compare billing cycles by revenue and discounts"}
+{"request_id": "s0112-r3", "schema_id": "s0112", "split": "train", "request": ""}
+{"request_id": "s0113-r0", "schema_id": "s0113", "split": "test", "request": "yield per hectare by crop type"}
+{"request_id": "s0113-r1", "schema_id": "s0113", "split": "test", "request": "is harvest yield improving over time"}
+{"request_id": "s0113-r2", "schema_id": "s0113", "split": "test", "request": ""}
+{"request_id": "s0114-r0", "schema_id": "s0114", "split": "train", "request": "yield by property type"}
+{"request_id": "s0114-r1", "schema_id": "s0114", "split": "train", "request": "are rental yields improving over time"}
+{"request_id": "s0114-r2", "schema_id": "s0114", "split": "train", "request": "compare tenancy types by yield and void days"}
+{"request_id": "s0114-r3", "schema_id": "s0114", "split": "train", "request": ""}
+{"request_id": "s0115-r0", "schema_id": "s0115", "split": "train", "request": "revenue by plan tier"}
+{"request_id": "s0115-r1", "schema_id": "s0115", "split": "train", "request": "is recurring revenue growing"}
+{"request_id": "s0115-r2", "schema_id": "s0115", "split": "train", "request": "compare billing cycles by churned revenue"}
+{"request_id": "s0115-r3", "schema_id": "s0115", "split": "train", "request": ""}
+{"request_id": "s0116-r0", "schema_id": "s0116", "split": "test", "request": "service level by queue and region"}
+{"request_id": "s0116-r1", "schema_id": "s0116", "split": "test", "request": "are we staffing enough agents for call volume"}
+{"request_id": "s0116-r2", "schema_id": "s0116", "split": "test", "request": ""}
+{"request_id": "s0117-r0", "schema_id": "s0117", "split": "train", "request": "sessions by channel for each device"}
+{"request_id": "s0117-r1", "schema_id": "s0117", "split": "train", "request": "is conversion improving over time"}
+{"request_id": "s0117-r2", "schema_id": "s0117", "split": "train", "request": "compare countries by revenue per session"}
+{"request_id": "s0117-r3", "schema_id": "s0117", "split": "train", "request": ""}
+{"request_id": "s0118-r0", "schema_id": "s0118", "split": "train", "request": "revenue by drug class across stores"}
+{"request_id": "s0118-r1", "schema_id": "s0118", "split": "train", "request": "is dispensing volume growing each month"}
+{"request_id": "s0118-r2", "schema_id": "s0118", "split": "train", "request": "compare payment types by revenue per script"}
+{"request_id": "s0118-r3", "schema_id": "s0118", "split": "train", "request": ""}
+{"request_id": "s0119-r0", "schema_id": "s0119", "split": "train", "request": "roas by platform"}
+{"request_id": "s0119-r1", "schema_id": "s0119", "split": "train", "request": "is ad revenue growing"}
+{"request_id": "s0119-r2", "schema_id": "s0119", "split": "train", "request": "compare campaign types by roas"}
+{"request_id": "s0119-r3", "schema_id": "s0119", "split": "train", "request": ""}
+{"request_id": "s0120-r0", "schema_id": "s0120", "split": "train", "request": "yield by property type"}
+{"request_id": "s0120-r1", "schema_id": "s0120", "split": "train", "request": "is rental income growing"}
+{"request_id": "s0120-r2", "schema_id": "s0120", "split": "train", "request": "compare regions by gross yield"}
+{"request_id": "s0120-r3", "schema_id": "s0120", "split": "train", "request": ""}
+{"request_id": "s0121-r0", "schema_id": "s0121", "split": "train", "request": "fraud flags by card type over time"}
+{"request_id": "s0121-r1", "schema_id": "s0121", "split": "train", "request": "which flag sources catch the most risky purchases"}
+{"request_id": "s0121-r2", "schema_id": "s0121", "split": "train", "request": "compare merchant categories by flagged transaction size"}
+{"request_id": "s0121-r3", "schema_id": "s0121", "split": "train", "request": ""}
+{"request_id": "s0122-r0", "schema_id": "s0122", "split": "train", "request": "data use by region this year"}
+{"request_id": "s0122-r1", "schema_id": "s0122", "split": "train", "request": "is call drop count rising"}
+{"request_id": "s0122-r2", "schema_id": "s0122", "split": "train", "request": "compare plans by revenue per subscriber"}
+{"request_id": "s0122-r3", "schema_id": "s0122", "split": "train", "request": ""}
+{"request_id": "s0123-r0", "schema_id": "s0123", "split": "test", "request": "average grade points by department"}
+{"request_id": "s0123-r1", "schema_id": "s0123", "split": "test", "request": "is our grading getting stronger each term"}
+{"request_id": "s0123-r2", "schema_id": "s0123", "split": "test", "request": ""}
+{"request_id": "s0124-r0", "schema_id": "s0124", "split": "test", "request": "average score by course code"}
+{"request_id": "s0124-r1", "schema_id": "s0124", "split": "test", "request": "are grades improving across semesters"}
+{"request_id": "s0124-r2", "schema_id": "s0124", "split": "test", "request": ""}
+{"request_id": "s0125-r0", "schema_id": "s0125", "split": "test", "request": "occupancy by property this year"}
+{"request_id": "s0125-r1", "schema_id": "s0125", "split": "test", "request": "is room revenue growing"}
+{"request_id": "s0125-r2", "schema_id": "s0125", "split": "test", "request": ""}
+{"request_id": "s0126-r0", "schema_id": "s0126", "split": "train", "request": "resolution time by service type"}
+{"request_id": "s0126-r1", "schema_id": "s0126", "split": "train", "request": "are requests getting faster to close"}
+{"request_id": "s0126-r2", "schema_id": "s0126", "split": "train", "request": "compare channels by how fast they're resolved"}
+{"request_id": "s0126-r3", "schema_id": "s0126", "split": "train", "request": ""}
+{"request_id": "s0127-r0", "schema_id": "s0127", "split": "train", "request": "time to hire by job family"}
+{"request_id": "s0127-r1", "schema_id": "s0127", "split": "train", "request": "are our hiring numbers improving"}
+{"request_id": "s0127-r2", "schema_id": "s0127", "split": "train", "request": "overview of recruiting for the monthly leadership review"}
+{"request_id": "s0127-r3", "schema_id": "s0127", "split": "train", "request": ""}
+{"request_id": "s0128-r0", "schema_id": "s0128", "split": "test", "request": "stock value by warehouse over time"}
+{"request_id": "s0128-r1", "schema_id": "s0128", "split": "test", "request": "compare warehouses by inventory movement"}
+{"request_id": "s0128-r2", "schema_id": "s0128", "split": "test", "request": ""}
+{"request_id": "s0129-r0", "schema_id": "s0129", "split": "test", "request": "severity by road type"}
+{"request_id": "s0129-r1", "schema_id": "s0129", "split": "test", "request": "are response times getting slower"}
+{"request_id": "s0129-r2", "schema_id": "s0129", "split": "test", "request": ""}
+{"request_id": "s0130-r0", "schema_id": "s0130", "split": "train", "request": "data usage by region for each plan tier"}
+{"request_id": "s0130-r1", "schema_id": "s0130", "split": "train", "request": "is data revenue growing over time"}
+{"request_id": "s0130-r2", "schema_id": "s0130", "split": "train", "request": "compare plans by latency and subscriber count"}
+{"request_id": "s0130-r3", "schema_id": "s0130", "split": "train", "request": ""}
+{"request_id": "s0131-r0", "schema_id": "s0131", "split": "train", "request": "average wait by department"}
+{"request_id": "s0131-r1", "schema_id": "s0131", "split": "train", "request": "is patient volume growing"}
+{"request_id": "s0131-r2", "schema_id": "s0131", "split": "train", "request": "compare visit types by wait time"}
+{"request_id": "s0131-r3", "schema_id": "s0131", "split": "train", "request": ""}
+{"request_id": "s0132-r0", "schema_id": "s0132", "split": "test", "request": "churn by plan tier"}
+{"request_id": "s0132-r1", "schema_id": "s0132", "split": "test", "request": "is retention improving over time"}
+{"request_id": "s0132-r2", "schema_id": "s0132", "split": "test", "request": ""}
+{"request_id": "s0133-r0", "schema_id": "s0133", "split": "train", "request": "average departure delay by airline"}
+{"request_id": "s0133-r1", "schema_id": "s0133", "split": "train", "request": "are flights getting more delayed over time"}
+{"request_id": "s0133-r2", "schema_id": "s0133", "split": "train", "request": "compare airports by how late flights arrive"}
+{"request_id": "s0133-r3", "schema_id": "s0133", "split": "train", "request": ""}
+{"request_id": "s0134-r0", "schema_id": "s0134", "split": "train", "request": "energy use by site last month"}
+{"request_id": "s0134-r1", "schema_id": "s0134", "split": "train", "request": "is energy spending going up"}
+{"request_id": "s0134-r2", "schema_id": "s0134", "split": "train", "request": "compare sites by electricity cost"}
+{"request_id": "s0134-r3", "schema_id": "s0134", "split": "train", "request": ""}
+{"request_id": "s0135-r0", "schema_id": "s0135", "split": "train", "request": "data usage by region"}
+{"request_id": "s0135-r1", "schema_id": "s0135", "split": "train", "request": "is mobile data use growing"}
+{"request_id": "s0135-r2", "schema_id": "s0135", "split": "train", "request": "compare plan tiers by call minutes"}
+{"request_id": "s0135-r3", "schema_id": "s0135", "split": "train", "request": ""}
+{"request_id": "s0136-r0", "schema_id": "s0136", "split": "train", "request": "roas by channel"}
+{"request_id": "s0136-r1", "schema_id": "s0136", "split": "train", "request": "is ad spend paying off"}
+{"request_id": "s0136-r2", "schema_id": "s0136", "split": "train", "request": "compare campaigns by return on spend"}
+{"request_id": "s0136-r3", "schema_id": "s0136", "split": "train", "request": ""}
+{"request_id": "s0137-r0", "schema_id": "s0137", "split": "train", "request": "rental yield by property type"}
+{"request_id": "s0137-r1", "schema_id": "s0137", "split": "train", "request": "is rental income growing across regions"}
+{"request_id": "s0137-r2", "schema_id": "s0137", "split": "train", "request": "compare areas by gross yield"}
+{"request_id": "s0137-r3", "schema_id": "s0137", "split": "train", "request": ""}
+{"request_id": "s0138-r0", "schema_id": "s0138", "split": "train", "request": "claimed amount by claim type"}
+{"request_id": "s0138-r1", "schema_id": "s0138", "split": "train", "request": "are claim payouts growing over time"}
+{"request_id": "s0138-r2", "schema_id": "s0138", "split": "train", "request": "an overview of claims for the monthly review"}
+{"request_id": "s0138-r3", "schema_id": "s0138", "split": "train", "request": ""}
+{"request_id": "s0139-r0", "schema_id": "s0139", "split": "test", "request": "no-shows by clinic location"}
+{"request_id": "s0139-r1", "schema_id": "s0139", "split": "test", "request": "is patient wait time getting better"}
+{"request_id": "s0139-r2", "schema_id": "s0139", "split": "test", "request": ""}
+{"request_id": "s0140-r0", "schema_id": "s0140", "split": "train", "request": "claim payouts by claim type"}
+{"request_id": "s0140-r1", "schema_id": "s0140", "split": "train", "request": "are claims getting settled faster"}
+{"request_id": "s0140-r2", "schema_id": "s0140", "split": "train", "request": "compare regions by denial rate"}
+{"request_id": "s0140-r3", "schema_id": "s0140", "split": "train", "request": ""}
+{"request_id": "s0141-r0", "schema_id": "s0141", "split": "train", "request": "which channel brings the most revenue per dollar spent"}
+{"request_id": "s0141-r1", "schema_id": "s0141", "split": "train", "request": "is campaign revenue growing over time"}
+{"request_id": "s0141-r2", "schema_id": "s0141", "split": "train", "request": "compare objectives by how much they earn back"}
+{"request_id": "s0141-r3", "schema_id": "s0141", "split": "train", "request": ""}
+{"request_id": "s0142-r0", "schema_id": "s0142", "split": "train", "request": "session length by platform"}
+{"request_id": "s0142-r1", "schema_id": "s0142", "split": "train", "request": "is in-app revenue growing"}
+{"request_id": "s0142-r2", "schema_id": "s0142", "split": "train", "request": "compare acquisition channels by active users"}
+{"request_id": "s0142-r3", "schema_id": "s0142", "split": "train", "request": ""}
+{"request_id": "s0143-r0", "schema_id": "s0143", "split": "train", "request": "session length by platform"}
+{"request_id": "s0143-r1", "schema_id": "s0143", "split": "train", "request": "is play time growing each month"}
+{"request_id": "s0143-r2", "schema_id": "s0143", "split": "train", "request": "compare game modes by revenue per session"}
+{"request_id": "s0143-r3", "schema_id": "s0143", "split": "train", "request": ""}
+{"request_id": "s0144-r0", "schema_id": "s0144", "split": "test", "request": "incidents by road type this year"}
+{"request_id": "s0144-r1", "schema_id": "s0144", "split": "test", "request": "are injuries going up over time"}
+{"request_id": "s0144-r2", "schema_id": "s0144", "split": "test", "request": ""}
+{"request_id": "s0145-r0", "schema_id": "s0145", "split": "train", "request": "which district uses the most water"}
+{"request_id": "s0145-r1", "schema_id": "s0145", "split": "train", "request": "is water usage rising over time"}
+{"request_id": "s0145-r2", "schema_id": "s0145", "split": "train", "request": "compare customer types by total charges"}
+{"request_id": "s0145-r3", "schema_id": "s0145", "split": "train", "request": ""}
+{"request_id": "s0146-r0", "schema_id": "s0146", "split": "train", "request": "tonnage by terminal"}
+{"request_id": "s0146-r1", "schema_id": "s0146", "split": "train", "request": "is container volume growing"}
+{"request_id": "s0146-r2", "schema_id": "s0146", "split": "train", "request": "compare cargo types by dwell time"}
+{"request_id": "s0146-r3", "schema_id": "s0146", "split": "train", "request": ""}
+{"request_id": "s0147-r0", "schema_id": "s0147", "split": "train", "request": "revenue by region last year"}
+{"request_id": "s0147-r1", "schema_id": "s0147", "split": "train", "request": "is store sales growing month over month"}
+{"request_id": "s0147-r2", "schema_id": "s0147", "split": "train", "request": "compare product categories by discount spend"}
+{"request_id": "s0147-r3", "schema_id": "s0147", "split": "train", "request": ""}
+{"request_id": "s0148-r0", "schema_id": "s0148", "split": "test", "request": "occupancy by property and room type"}
+{"request_id": "s0148-r1", "schema_id": "s0148", "split": "test", "request": "is average daily rate rising over time"}
+{"request_id": "s0148-r2", "schema_id": "s0148", "split": "test", "request": ""}
+{"request_id": "s0149-r0", "schema_id": "s0149", "split": "train", "request": "flagged transactions by merchant type"}
+{"request_id": "s0149-r1", "schema_id": "s0149", "split": "train", "request": "is suspicious activity rising over time"}
+{"request_id": "s0149-r2", "schema_id": "s0149", "split": "train", "request": "compare card types by fraud risk score"}
+{"request_id": "s0149-r3", "schema_id": "s0149", "split": "train", "request": ""}
+{"request_id": "s0150-r0", "schema_id": "s0150", "split": "test", "request": "service level by team each month"}
+{"request_id": "s0150-r1", "schema_id": "s0150", "split": "test", "request": "are we staffing enough agents on weekends"}
+{"request_id": "s0150-r2", "schema_id": "s0150", "split": "test", "request": ""}
+{"request_id": "s0151-r0", "schema_id": "s0151", "split": "test", "request": "no-show and cancellation rate by specialty"}
+{"request_id": "s0151-r1", "schema_id": "s0151", "split": "test", "request": "how are wait times trending over time"}
+{"request_id": "s0151-r2", "schema_id": "s0151", "split": "test", "request": ""}
+{"request_id": "s0152-r0", "schema_id": "s0152", "split": "train", "request": "actual spending versus plan by project phase"}
+{"request_id": "s0152-r1", "schema_id": "s0152", "split": "train", "request": "are our construction costs running over budget"}
+{"request_id": "s0152-r2", "schema_id": "s0152", "split": "train", "request": "overview of project costs for the weekly site meeting"}
+{"request_id": "s0152-r3", "schema_id": "s0152", "split": "train", "request": ""}
+{"request_id": "s0153-r0", "schema_id": "s0153", "split": "test", "request": "units moved by region and product type"}
+{"request_id": "s0153-r1", "schema_id": "s0153", "split": "test", "request": "is inventory value trending up over time"}
+{"request_id": "s0153-r2", "schema_id": "s0153", "split": "test", "request": ""}
+{"request_id": "s0154-r0", "schema_id": "s0154", "split": "train", "request": "conversions by traffic channel"}
+{"request_id": "s0154-r1", "schema_id": "s0154", "split": "train", "request": "is revenue growing"}
+{"request_id": "s0154-r2", "schema_id": "s0154", "split": "train", "request": "compare devices by conversions"}
+{"request_id": "s0154-r3", "schema_id": "s0154", "split": "train", "request": ""}
+{"request_id": "s0155-r0", "schema_id": "s0155", "split": "train", "request": "hires by source and department"}
+{"request_id": "s0155-r1", "schema_id": "s0155", "split": "train", "request": "are offers getting accepted over time"}
+{"request_id": "s0155-r2", "schema_id": "s0155", "split": "train", "request": "compare referral and job board candidates by how far they get"}
+{"request_id": "s0155-r3", "schema_id": "s0155", "split": "train", "request": ""}
+{"request_id": "s0156-r0", "schema_id": "s0156", "split": "train", "request": "charges by utility type"}
+{"request_id": "s0156-r1", "schema_id": "s0156", "split": "train", "request": "is late fee spending growing"}
+{"request_id": "s0156-r2", "schema_id": "s0156", "split": "train", "request": "compare regions by days past due"}
+{"request_id": "s0156-r3", "schema_id": "s0156", "split": "train", "request": ""}
+{"request_id": "s0157-r0", "schema_id": "s0157", "split": "test", "request": "boardings by route for the last year"}
+{"request_id": "s0157-r1", "schema_id": "s0157", "split": "test", "request": "is ridership recovering after the dip"}
+{"request_id": "s0157-r2", "schema_id": "s0157", "split": "test", "request": ""}
+{"request_id": "s0158-r0", "schema_id": "s0158", "split": "train", "request": "sales by channel over time"}
+{"request_id": "s0158-r1", "schema_id": "s0158", "split": "train", "request": "is revenue growing"}
+{"request_id": "s0158-r2", "schema_id": "s0158", "split": "train", "request": "an overview for the weekly ops meeting"}
+{"request_id": "s0158-r3", "schema_id": "s0158", "split": "train", "request": ""}
+{"request_id": "s0159-r0", "schema_id": "s0159", "split": "train", "request": "ROAS by channel for the last quarter"}
+{"request_id": "s0159-r1", "schema_id": "s0159", "split": "train", "request": "is ad return improving over time"}
+{"request_id": "s0159-r2", "schema_id": "s0159", "split": "train", "request": "compare channels by return on spend"}
+{"request_id": "s0159-r3", "schema_id": "s0159", "split": "train", "request": ""}
+{"request_id": "s0160-r0", "schema_id": "s0160", "split": "train", "request": "tons collected by route zone"}
+{"request_id": "s0160-r1", "schema_id": "s0160", "split": "train", "request": "is fuel use per stop getting better"}
+{"request_id": "s0160-r2", "schema_id": "s0160", "split": "train", "request": "compare vehicle types by stops completed"}
+{"request_id": "s0160-r3", "schema_id": "s0160", "split": "train", "request": ""}
+{"request_id": "s0161-r0", "schema_id": "s0161", "split": "test", "request": "attrition by department and region"}
+{"request_id": "s0161-r1", "schema_id": "s0161", "split": "test", "request": "is headcount shrinking over time"}
+{"request_id": "s0161-r2", "schema_id": "s0161", "split": "test", "request": ""}
+{"request_id": "s0162-r0", "schema_id": "s0162", "split": "train", "request": "prescription revenue by store region"}
+{"request_id": "s0162-r1", "schema_id": "s0162", "split": "train", "request": "are dispensing volumes growing over time"}
+{"request_id": "s0162-r2", "schema_id": "s0162", "split": "train", "request": "compare drug categories by copay paid by patients"}
+{"request_id": "s0162-r3", "schema_id": "s0162", "split": "train", "request": ""}
+{"request_id": "s0163-r0", "schema_id": "s0163", "split": "test", "request": "fuel use by vehicle type"}
+{"request_id": "s0163-r1", "schema_id": "s0163", "split": "test", "request": "is our fleet getting more efficient over time"}
+{"request_id": "s0163-r2", "schema_id": "s0163", "split": "test", "request": ""}
+{"request_id": "s0164-r0", "schema_id": "s0164", "split": "train", "request": "billed amount by service type"}
+{"request_id": "s0164-r1", "schema_id": "s0164", "split": "train", "request": "is late fee revenue growing"}
+{"request_id": "s0164-r2", "schema_id": "s0164", "split": "train", "request": "compare regions by average bill for commercial customers"}
+{"request_id": "s0164-r3", "schema_id": "s0164", "split": "train", "request": ""}
+{"request_id": "s0165-r0", "schema_id": "s0165", "split": "train", "request": "actual cost vs budget by project"}
+{"request_id": "s0165-r1", "schema_id": "s0165", "split": "train", "request": "are project costs running over budget"}
+{"request_id": "s0165-r2", "schema_id": "s0165", "split": "train", "request": "overview of spending for the monthly site review"}
+{"request_id": "s0165-r3", "schema_id": "s0165", "split": "train", "request": ""}
+{"request_id": "s0166-r0", "schema_id": "s0166", "split": "test", "request": "on-time delivery by supplier this year"}
+{"request_id": "s0166-r1", "schema_id": "s0166", "split": "test", "request": "are our suppliers getting better over time"}
+{"request_id": "s0166-r2", "schema_id": "s0166", "split": "test", "request": ""}
+{"request_id": "s0167-r0", "schema_id": "s0167", "split": "test", "request": "on-time delivery by supplier region"}
+{"request_id": "s0167-r1", "schema_id": "s0167", "split": "test", "request": "are our suppliers getting better over time"}
+{"request_id": "s0167-r2", "schema_id": "s0167", "split": "test", "request": ""}
+{"request_id": "s0168-r0", "schema_id": "s0168", "split": "train", "request": "flagged fraud by merchant type"}
+{"request_id": "s0168-r1", "schema_id": "s0168", "split": "train", "request": "is fraud risk rising over time"}
+{"request_id": "s0168-r2", "schema_id": "s0168", "split": "train", "request": "compare card networks by fraud score"}
+{"request_id": "s0168-r3", "schema_id": "s0168", "split": "train", "request": ""}
+{"request_id": "s0169-r0", "schema_id": "s0169", "split": "test", "request": "failed transactions by channel"}
+{"request_id": "s0169-r1", "schema_id": "s0169", "split": "test", "request": "is mobile app usage growing"}
+{"request_id": "s0169-r2", "schema_id": "s0169", "split": "test", "request": ""}
+{"request_id": "s0170-r0", "schema_id": "s0170", "split": "train", "request": "sold prices by neighborhood versus asking price"}
+{"request_id": "s0170-r1", "schema_id": "s0170", "split": "train", "request": "is the market getting faster for selling homes"}
+{"request_id": "s0170-r2", "schema_id": "s0170", "split": "train", "request": "overview of listings for the monthly sales review"}
+{"request_id": "s0170-r3", "schema_id": "s0170", "split": "train", "request": ""}
+{"request_id": "s0171-r0", "schema_id": "s0171", "split": "train", "request": "session length by platform"}
+{"request_id": "s0171-r1", "schema_id": "s0171", "split": "train", "request": "is revenue growing"}
+{"request_id": "s0171-r2", "schema_id": "s0171", "split": "train", "request": "compare game titles by spending"}
+{"request_id": "s0171-r3", "schema_id": "s0171", "split": "train", "request": ""}
+{"request_id": "s0172-r0", "schema_id": "s0172", "split": "test", "request": "units moved by warehouse location"}
+{"request_id": "s0172-r1", "schema_id": "s0172", "split": "test", "request": "is stock value shrinking over time"}
+{"request_id": "s0172-r2", "schema_id": "s0172", "split": "test", "request": ""}
+{"request_id": "s0173-r0", "schema_id": "s0173", "split": "test", "request": "how many transactions happen each month"}
+{"request_id": "s0173-r1", "schema_id": "s0173", "split": "test", "request": "compare channels by total amount moved"}
+{"request_id": "s0173-r2", "schema_id": "s0173", "split": "test", "request": ""}
+{"request_id": "s0174-r0", "schema_id": "s0174", "split": "train", "request": "wait times by clinic site"}
+{"request_id": "s0174-r1", "schema_id": "s0174", "split": "train", "request": "is patient volume growing"}
+{"request_id": "s0174-r2", "schema_id": "s0174", "split": "train", "request": "compare departments by no-shows and wait"}
+{"request_id": "s0174-r3", "schema_id": "s0174", "split": "train", "request": ""}
+{"request_id": "s0175-r0", "schema_id": "s0175", "split": "train", "request": "wait times by department"}
+{"request_id": "s0175-r1", "schema_id": "s0175", "split": "train", "request": "is patient volume growing"}
+{"request_id": "s0175-r2", "schema_id": "s0175", "split": "train", "request": "compare visit types by how long patients wait"}
+{"request_id": "s0175-r3", "schema_id": "s0175", "split": "train", "request": ""}
+{"request_id": "s0176-r0", "schema_id": "s0176", "split": "train", "request": "conversions by traffic source"}
+{"request_id": "s0176-r1", "schema_id": "s0176", "split": "train", "request": "are sales growing over time"}
+{"request_id": "s0176-r2", "schema_id": "s0176", "split": "train", "request": "compare devices by conversion rate"}
+{"request_id": "s0176-r3", "schema_id": "s0176", "split": "train", "request": ""}
+{"request_id": "s0177-r0", "schema_id": "s0177", "split": "test", "request": "stock value by warehouse region"}
+{"request_id": "s0177-r1", "schema_id": "s0177", "split": "test", "request": "is our inventory value growing"}
+{"request_id": "s0177-r2", "schema_id": "s0177", "split": "test", "request": ""}
+{"request_id": "s0178-r0", "schema_id": "s0178", "split": "train", "request": "ROAS by channel for the last six months"}
+{"request_id": "s0178-r1", "schema_id": "s0178", "split": "train", "request": "is our ad return improving over time"}
+{"request_id": "s0178-r2", "schema_id": "s0178", "split": "train", "request": "compare audience segments by return on spend"}
+{"request_id": "s0178-r3", "schema_id": "s0178", "split": "train", "request": ""}
+{"request_id": "s0179-r0", "schema_id": "s0179", "split": "train", "request": "revenue by region for each product category"}
+{"request_id": "s0179-r1", "schema_id": "s0179", "split": "train", "request": "is total revenue growing month over month"}
+{"request_id": "s0179-r2", "schema_id": "s0179", "split": "train", "request": "compare payment methods by average sale size"}
+{"request_id": "s0179-r3", "schema_id": "s0179", "split": "train", "request": ""}
