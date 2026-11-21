@@ -72,6 +72,7 @@
 - `GET /health` reports the active backend, model, upload dir and whether the committed placeholder secrets are in use.
 - There is no established Python test suite config (`pytest.ini`/`pyproject.toml` absent). `backend/test_agent.py` is a manual workflow script, not an isolated unit test.
 - See `docs/slm-harness-evaluation.md` for the prompt/harness review and the measured before/after numbers.
+- `chartist-finetune/measure_planning.py` scores the AI dashboard flow end to end on the frozen 120 planning requests (`data/v2/planning_testset.jsonl`, sha256 `8af1473a`). lora-v1 baseline (`data/v2/planning_eval_lora-v1.json`): analyst 98.3% usable, planner 100%, but 54% of dashboards need a planner retry (the slow planner call); 86.4% of planned charts render, 84.9% render as the planned kind; heatmap (12/38 fail), KPI (10/50) and line (11/78) are the weak kinds. Compare any new adapter on this set, not on ad-hoc dashboards.
 
 ## Data and generated artifacts
 - Scraper outputs (`web-crawler/*.jsonl`) and local uploads (`backend/uploads/`) can be large/noisy; avoid unnecessary edits.
