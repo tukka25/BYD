@@ -81,7 +81,16 @@ def main() -> int:
 
     rechecked = {"kept": 0, "dropped": 0}
 
+    seen_prompts: set[str] = set()
+    duplicates = 0
+
     def chartist(row: dict, prompt: str, form: str) -> None:
+        nonlocal duplicates
+        # Two answers to one identical prompt teach the model to be inconsistent.
+        if prompt in seen_prompts:
+            duplicates += 1
+            return
+        seen_prompts.add(prompt)
         rows.append({"schema_id": row["schema_id"], "row_id": f"{row['question_id']}:{form}", "role": "chartist",
                      "form": form, "fixture_csv": row.get("fixture_csv", ""),
                      "messages": [{"role": "system", "content": CHARTIST_SYSTEM_PROMPT},
@@ -104,7 +113,7 @@ def main() -> int:
             rechecked["dropped"] += 1
             continue
         chartist(row, row["messages"][1]["content"], "plan")
-    print(f"answer plans under today's check: {rechecked}")
+    print(f"answer plans under today's check: {rechecked}; duplicate prompts dropped: {duplicates}")
 
     stale_plans: list[str] = []
     for plan in _jsonl("data/v2/plans.jsonl"):
