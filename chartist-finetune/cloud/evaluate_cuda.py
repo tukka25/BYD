@@ -68,7 +68,10 @@ def main() -> int:
     ap.add_argument("--testset", default="data/testset.jsonl")
     ap.add_argument("--out", default="data/eval_report.json")
     ap.add_argument("--limit", type=int, default=None, help="smoke tests only; full 300 for real numbers")
-    ap.add_argument("--max-new-tokens", type=int, default=800)
+    # Must equal CHARTIST_MAX_TOKENS in backend/.../chartist_contract.py. Written
+    # as a literal only because the backend is not on the pod to import from.
+    # lora-v1's recorded 91.3% was measured at the old default of 800.
+    ap.add_argument("--max-new-tokens", type=int, default=1024)
     ap.add_argument("--batch-size", type=int, default=16)
     args = ap.parse_args()
 

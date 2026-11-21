@@ -29,6 +29,105 @@ first rows: {sample_rows}
 
 Write the Python now."""
 
+# The most tokens the chartist may generate. Production, the local eval and the
+# A/B harness all read it from here: the eval used to stop at 800 while the live
+# call allowed 1024, so a long but valid answer could fail in the eval and pass
+# in the app, and the eval would score a failure the user never saw.
+CHARTIST_MAX_TOKENS = 1024
+
+
+# The planner decides a chart type and, by default, nobody downstream is told.
+# `chart_type_hint` is the wire: it turns the planner's label into the exact text
+# appended to the Task line. Two forms, because a sentence and a metadata field
+# read differently and only measurement can say which a 9B model follows better:
+#
+#   "inline"     Task: <question> Show it as an area chart.
+#   "directive"  Task: <question>\n\nChart type: area
+#
+# These strings live here rather than in the agent so that the dataset exporter
+# can import the same ones through `chartist-finetune/contract.py`. A hint the
+# model was trained on and a hint the app sends must be byte-identical, or the
+# live prompt is a shape the fine-tune never saw -- which is the whole reason the
+# chart type was dropped from the prompt in the first place.
+#
+# Keys are the planner's closed label set (`planner.CHART_TYPES`). Nothing else
+# is accepted: an unrecognised label returns no hint rather than a guess.
+CHART_TYPE_PHRASE = {
+    "bar": "a bar chart",
+    "line": "a line chart",
+    "scatter": "a scatter plot",
+    "pie": "a pie chart",
+    "histogram": "a histogram",
+    "box": "a box plot",
+    "heatmap": "a heatmap",
+    "area": "an area chart",
+    "treemap": "a treemap",
+    "funnel": "a funnel chart",
+    "waterfall": "a waterfall chart",
+    "indicator": "a single-number KPI indicator",
+}
+
+CHART_TYPE_LABEL = {
+    "bar": "bar",
+    "line": "line",
+    "scatter": "scatter",
+    "pie": "pie",
+    "histogram": "histogram",
+    "box": "box",
+    "heatmap": "heatmap",
+    "area": "area",
+    "treemap": "treemap",
+    "funnel": "funnel",
+    "waterfall": "waterfall",
+    "indicator": "KPI indicator",
+}
+
+HINT_STYLES = ("off", "inline", "directive")
+
+# A question that already says which chart it wants. The architect writes every
+# dashboard question this way ("... as a line chart", "... as a single big KPI
+# number"), so without this check the dashboard path would be told twice -- and
+# when the planner falls back, told two different things ("as a line chart.
+# Show it as a bar chart."). Bare "line", "area" and "pie" are excluded on
+# purpose: "production line", "sales area" and "apple pie" are column words, and
+# 48 of the 82 training questions containing a chart word only used "line" in
+# that sense. A false positive here costs a skipped hint; a false negative costs
+# a contradictory prompt, so the pattern leans towards matching.
+_NAMES_A_CHART = re.compile(
+    r"\b(?:bar|line|area|pie|donut|doughnut|column|stacked)\s+(?:chart|graph|plot)s?\b"
+    r"|\b(?:scatter\s*plots?|scatterplots?|scatter|box\s*plots?|boxplots?|histograms?|"
+    r"heat\s*maps?|heatmaps?|treemaps?|sunbursts?|funnels?|waterfalls?|gauges?|kpis?|indicators?)\b",
+    re.IGNORECASE,
+)
+
+
+def names_a_chart(task: str) -> bool:
+    """True if the question itself already asks for a particular chart type."""
+    return bool(_NAMES_A_CHART.search(task or ""))
+
+
+def chart_type_hint(task: str, viz_type: str, style: str) -> str:
+    """Return `task` with the planner's chart type attached, per `style`.
+
+    Returns `task` unchanged for an unknown style, an empty task, a chart type
+    outside the planner's label set, or a question that already names its chart.
+    """
+    task = (task or "").strip()
+    key = (viz_type or "").strip().lower()
+    if style not in ("inline", "directive") or not task or names_a_chart(task):
+        return task
+    if style == "directive":
+        label = CHART_TYPE_LABEL.get(key)
+        return f"{task}\n\nChart type: {label}" if label else task
+    phrase = CHART_TYPE_PHRASE.get(key)
+    if not phrase:
+        return task
+    # A second sentence needs the first one to end, and most questions have no
+    # terminal punctuation ("Monthly MRR trend for the whole business").
+    if task[-1] not in ".?!":
+        task += "."
+    return f"{task} Show it as {phrase}."
+
 
 class ContractViolation(str, Enum):
     SYNTAX_ERROR = "syntax_error"

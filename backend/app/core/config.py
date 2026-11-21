@@ -40,6 +40,14 @@ class Settings(BaseSettings):
     MLX_API_KEY: str = "not-needed"
     MLX_TIMEOUT_SECONDS: int = 600
 
+    # Whether the planner's chart type is actually sent to the chartist, and in
+    # which form: "off", "inline" or "directive". See `chart_type_hint` in
+    # agents/chartist_contract.py for the exact text each one produces, and
+    # chartist-finetune/ab_planner_hint.py for the measurement behind the
+    # default. Only turn this on for a model trained with the same hint shape:
+    # lora-v1 saw bare questions, so a hint is a prompt it never trained on.
+    CHARTIST_CHART_TYPE_HINT: str = "off"
+
     OLLAMA_BASE_URL: str = "http://localhost:11434"
     OLLAMA_MODEL: str = "qwen3.5:4b"
     OLLAMA_TIMEOUT_SECONDS: int = 9000

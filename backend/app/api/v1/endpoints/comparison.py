@@ -149,7 +149,9 @@ async def run_comparison(
                 if hasattr(task_plan, "model_dump"):
                     task_plan = task_plan.model_dump()
             except Exception:  # noqa: BLE001
-                task_plan = {"visualization_type": "bar"}
+                # "default", so a planner crash is never sent to either model
+                # as an instruction to draw a bar chart.
+                task_plan = {"visualization_type": "bar", "chart_type_source": "default"}
 
             yield _sse("question", {"index": index, "question": question, "plan": task_plan})
 

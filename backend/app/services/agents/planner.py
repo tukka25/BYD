@@ -102,13 +102,20 @@ class TaskPlan(BaseModel):
     data_requirements: str = Field(default="")
 
 
-def _keyword_chart(query: str) -> str:
-    """Deterministic backstop. Beats defaulting to bar, and costs nothing."""
+def _keyword_chart(query: str) -> str | None:
+    """Deterministic backstop. Beats defaulting to bar, and costs nothing.
+
+    Returns None when no rule matched, so the caller can tell a real keyword hit
+    from the bare default. The two must not be reported the same way: once the
+    chart type can reach the chartist as an instruction, a "bar" that came from
+    nothing would tell the model to draw a bar chart for a question nobody asked
+    to see as one.
+    """
     text = f" {(query or '').lower()} "
     for chart, needles in _KEYWORD_RULES:
         if any(n in text for n in needles):
             return chart
-    return DEFAULT_CHART
+    return None
 
 
 def _parse_chart_type(raw: str) -> str | None:
@@ -160,6 +167,11 @@ class PlannerAgent:
         source = "llm"
         if chart is None:
             chart, source = _keyword_chart(user_query), "keywords"
+        if chart is None:
+            # Neither the model nor a keyword decided this. The default keeps the
+            # deterministic fallback renderer working; "default" keeps it from
+            # being passed downstream as though anyone had chosen it.
+            chart, source = DEFAULT_CHART, "default"
 
         logger.info("[planner] chart_type=%s via=%s", chart, source)
         return {

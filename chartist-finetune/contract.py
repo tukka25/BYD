@@ -24,3 +24,13 @@ CHARTIST_SYSTEM_PROMPT = _backend.CHARTIST_SYSTEM_PROMPT
 CHARTIST_USER_TEMPLATE = _backend.CHARTIST_USER_TEMPLATE
 ContractViolation = _backend.ContractViolation
 validate_chart_code = _backend.validate_chart_code
+# Re-exported so a dataset built with a chart-type hint uses the SAME wording
+# the live call sends. If these two ever diverge, the model is served a prompt
+# shape it was not trained on and the eval numbers stop meaning anything.
+CHART_TYPE_PHRASE = _backend.CHART_TYPE_PHRASE
+CHART_TYPE_LABEL = _backend.CHART_TYPE_LABEL
+chart_type_hint = _backend.chart_type_hint
+names_a_chart = _backend.names_a_chart
+# The generation cap the live chartist call uses, so an eval cannot fail a long
+# answer the app would have accepted.
+CHARTIST_MAX_TOKENS = _backend.CHARTIST_MAX_TOKENS

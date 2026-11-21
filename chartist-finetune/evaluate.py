@@ -36,6 +36,7 @@ from collections import Counter, defaultdict
 from pathlib import Path
 
 import chart_types
+from contract import CHARTIST_MAX_TOKENS
 from executor import run_candidates
 
 FENCE = re.compile(r"```(?:python)?\s*(.*?)```", re.DOTALL | re.IGNORECASE)
@@ -71,7 +72,9 @@ def main() -> int:
     parser.add_argument("--testset", default="data/testset.jsonl")
     parser.add_argument("--out", default="data/eval_report.json")
     parser.add_argument("--limit", type=int, default=None, help="for smoke tests only; full 300 for real numbers")
-    parser.add_argument("--max-tokens", type=int, default=800)
+    # The live cap, not a separate eval number: at 800 against production's
+    # 1024, a long but valid answer failed here and passed in the app.
+    parser.add_argument("--max-tokens", type=int, default=CHARTIST_MAX_TOKENS)
     parser.add_argument("--batch-size", type=int, default=8)
     args = parser.parse_args()
 

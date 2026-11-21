@@ -7,11 +7,18 @@ from langchain_core.output_parsers import StrOutputParser
 from app.services.agents.chartist_contract import (
     CHARTIST_SYSTEM_PROMPT,
     CHARTIST_USER_TEMPLATE,
+    HINT_STYLES,
     ContractViolation,
+    chart_type_hint,
     validate_chart_code,
 )
 
 logger = logging.getLogger(__name__)
+
+# The planner sources whose chart type counts as a decision. "default" -- the
+# bare "bar" used when neither the model nor a keyword decided -- does not, and
+# neither does a plan that records no source at all.
+_CHOSEN_BY = ("llm", "keywords")
 
 # Stamped onto deterministically generated code. Without it a fallback chart is
 # indistinguishable from a model-written one in the response, and a smoke test
@@ -30,16 +37,32 @@ class ChartistAgent:
     Agent responsible for generating Python code to visualize data.
     """
     
-    def __init__(self, llm, generator=None):
+    def __init__(self, llm, generator=None, chart_type_hint_style: str | None = None):
         """`generator` replaces only the text-generation step.
 
         Anything with `.invoke(variables) -> str` can stand in for the chain,
         which is how a different model is compared on this harness: the prompt,
         the sanitiser, the contract and the fallback below are shared, so the
         model is the only thing that differs.
+
+        `chart_type_hint_style` overrides `CHARTIST_CHART_TYPE_HINT` for this
+        agent, so one process can run both sides of that A/B at once. None means
+        take the setting.
         """
         self.llm = llm
         self.generator = generator
+        if chart_type_hint_style is None:
+            from app.core.config import get_settings
+
+            chart_type_hint_style = get_settings().CHARTIST_CHART_TYPE_HINT
+        self.chart_type_hint_style = (chart_type_hint_style or "off").strip().lower()
+        if self.chart_type_hint_style not in HINT_STYLES:
+            # Fail loudly, as llm.py does for LLM_BACKEND. Otherwise a typo such
+            # as "on" switches the hint off with no sign that anything is wrong.
+            raise ValueError(
+                f"CHARTIST_CHART_TYPE_HINT must be one of {HINT_STYLES}, "
+                f"got {chart_type_hint_style!r}"
+            )
         # Why the last generation fell back, if it did. Without this the
         # fallback's own (valid) code is all anyone can inspect afterwards,
         # and the reason the model's answer was rejected is gone.
@@ -166,14 +189,39 @@ class ChartistAgent:
         natural dashboard question ("Monthly MRR trend for the whole business"),
         paired with the same schema block that follows it. Replacing the question
         with generated prose puts the prompt out of distribution and throws away
-        the only signal the model was taught to read. The chart type is inferred
-        from the question, exactly as in training, which is also why the planner
-        no longer needs to steer it.
+        the only signal the model was taught to read.
 
-        The one hint kept is explicitly-unavailable fields, because `missing_field`
-        was an oversampled hard case in training and the note is short.
+        What that argument does NOT establish is that a *short* chart-type hint
+        hurts. It is one clause, not a paragraph of metadata, and whether a 9B
+        model follows it is a question for the eval rather than for a docstring.
+        `CHARTIST_CHART_TYPE_HINT` wires the planner's decision through, in the
+        exact wording `chart_type_hint` produces, so the training exporter and
+        the live call cannot drift. It defaults to "off": measured on the frozen
+        300 by `chartist-finetune/ab_planner_hint.py`, which is the only thing
+        that should ever move that default.
+
+        Two guards keep a hint from doing harm. It is sent only when the
+        planner's label was a decision -- the model's, or a keyword match --
+        never the bare "bar" it falls back to when nothing decided. And it is
+        never sent when the question already names its chart, which is every
+        question the dashboard architect writes ("... as a line chart"); there a
+        second instruction is redundant at best and, after a planner fallback,
+        contradicts the first.
+
+        The other hint is explicitly-unavailable fields. Note that this one is
+        also out of distribution — the phrase appears in 0 of 1,929 training
+        rows, despite `missing_field` being an oversampled hard case — so it is
+        a candidate for the same treatment and the same measurement.
         """
         task = (user_query or "").strip() or str(task_plan.get("data_requirements", "")).strip()
+        # Before the missing-fields note, so the hint sits against the question
+        # exactly as the A/B harness placed it.
+        if task_plan.get("chart_type_source") in _CHOSEN_BY:
+            task = chart_type_hint(
+                task,
+                str(task_plan.get("visualization_type", "")),
+                self.chart_type_hint_style,
+            )
         plan = dataframe_plan or {}
         missing = plan.get("missing_fields") or []
         if missing:

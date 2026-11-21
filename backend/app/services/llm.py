@@ -31,6 +31,7 @@ from typing import Literal
 from langchain_core.language_models.chat_models import BaseChatModel
 
 from app.core.config import get_settings
+from app.services.agents.chartist_contract import CHARTIST_MAX_TOKENS
 
 logger = logging.getLogger(__name__)
 
@@ -40,7 +41,13 @@ Role = Literal["planner", "chartist", "detective", "narrator"]
 # question should produce the same chart.
 _TEMPERATURE = 0.0
 # A title is one short line; anything longer is the model talking to itself.
-_MAX_TOKENS = {"planner": 256, "chartist": 1024, "detective": 512, "narrator": 128}
+_MAX_TOKENS = {
+    "planner": 256,
+    # Shared with the eval and the A/B harness, so they score what the app runs.
+    "chartist": CHARTIST_MAX_TOKENS,
+    "detective": 512,
+    "narrator": 128,
+}
 
 
 def _ollama(role: Role) -> BaseChatModel:
