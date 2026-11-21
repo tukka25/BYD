@@ -23,8 +23,15 @@ rows, the verdict is McNemar's exact test on the rows that disagree, not an
 unpaired interval -- at n=300 that is the difference between measuring a 6-point
 move and being unable to see it.
 
-    .venv/bin/python ab_planner_hint.py --limit 12     # smoke, ~2 min
-    .venv/bin/python ab_planner_hint.py                # full 300 x 3
+    .venv/bin/python ab_planner_hint.py --limit 12                 # smoke
+    .venv/bin/python ab_planner_hint.py                            # full 300 x 3
+    .venv/bin/python ab_planner_hint.py --arms A_control,B_inline \
+        --focus area,heatmap,gauge_or_indicator,treemap_funnel_waterfall \
+        --others-per-bucket 4                                      # focused, ~25 min
+    .venv/bin/python ab_planner_hint.py --summarize-only           # report from saved rows
+
+Rows are saved as they are scored (<out>.rows.jsonl), and the same command
+resumes a stopped run.
 """
 from __future__ import annotations
 
@@ -132,143 +139,82 @@ def mcnemar_exact(b: int, c: int) -> float:
     return min(1.0, 2 * tail)
 
 
-def main() -> int:
-    ap = argparse.ArgumentParser()
-    ap.add_argument("--model", default="models/qwen3.5-9b-4bit")
-    ap.add_argument("--adapter-path", default="runs/adapters-mlx")
-    ap.add_argument("--testset", default="data/testset.jsonl")
-    ap.add_argument("--out", default="data/ab_planner_hint.json")
-    ap.add_argument("--limit", type=int, default=None)
-    # The first full run (data/ab_planner_hint.json, 2026-11-21) used 800, the
-    # old eval default; every arm in a run shares one cap, so its arms are
-    # comparable with each other either way.
-    ap.add_argument("--max-tokens", type=int, default=CHARTIST_MAX_TOKENS)
-    ap.add_argument("--batch-size", type=int, default=8)
-    args = ap.parse_args()
+def select_rows(
+    rows: list[dict], focus: str = "", others_per_bucket: int = 0, limit: int | None = None
+) -> list[dict]:
+    """The sample, chosen the same way every time so separate scripts pair up.
 
-    rows = [
-        json.loads(l)
-        for l in Path(args.testset).read_text(encoding="utf-8").splitlines()
-        if l.strip()
-    ]
-    if args.limit:
-        rows = rows[: args.limit]
-    print(f"{len(rows)} rows x {len(ARMS)} arms = {len(rows)*len(ARMS)} generations")
+    `focus` buckets are taken whole; every other bucket contributes its first
+    `others_per_bucket` rows, as a check that a hint does not break what already
+    works. The frozen set's own order already mixes buckets, so a run stopped
+    part way still spans them.
+    """
+    if focus:
+        keep = {b.strip() for b in focus.split(",") if b.strip()}
+        seen: Counter = Counter()
+        picked = []
+        for r in rows:
+            b = r["chart_bucket"]
+            if b in keep:
+                picked.append(r)
+            elif seen[b] < others_per_bucket:
+                picked.append(r)
+                seen[b] += 1
+        rows = picked
+    return rows[:limit] if limit else rows
 
-    from mlx_lm import batch_generate, load
-    from mlx_lm.sample_utils import make_sampler
 
-    adapter = None if args.adapter_path in ("none", "") else args.adapter_path
-    print(f"loading {args.model}" + (f" + {adapter}" if adapter else " (base)"))
-    model, tokenizer = load(args.model, adapter_path=adapter)
-    sampler = make_sampler(temp=0.0)
+def record(arm: str, row: dict, code: str, verdict, max_tokens: int) -> dict:
+    return {
+        "arm": arm,
+        "test_id": row["test_id"],
+        "bucket": row["chart_bucket"],
+        "hard_case": row["hard_case"],
+        "ok": bool(verdict.ok),
+        "right_shape": bool(verdict.ok)
+        and is_right_shape(row["chart_bucket"], verdict.figure_type, code),
+        "figure_type": verdict.figure_type,
+        "failure_kind": verdict.failure_kind,
+        "error": (verdict.error or "")[:200],
+        "code": code[:600],
+        "max_tokens": max_tokens,
+    }
 
-    def tok(text: str) -> list[int]:
-        ids = tokenizer.apply_chat_template(
-            [
-                {"role": "system", "content": SYSTEM_FALLBACK},
-                {"role": "user", "content": text},
-            ],
-            tokenize=True,
-            add_generation_prompt=True,
-        )
-        if isinstance(ids, dict):
-            ids = ids.get("input_ids", [])
-        if ids and isinstance(ids[0], (list, tuple)):
-            ids = ids[0]
-        return list(ids)
 
-    results: dict[str, list] = {}
-    started = time.time()
-    total = len(rows) * len(ARMS)
-    done_all = 0
-
-    for arm in ARMS:
-        prompts = [tok(build_prompt(row, arm)) for row in rows]
-        if arm != "A_control":
-            changed = sum(
-                1 for r in rows if build_prompt(r, arm) != r["prompt"]
-            )
-            print(f"\n{arm}: {changed}/{len(rows)} prompts carry a hint")
-        else:
-            print(f"\n{arm}: prompts unchanged")
-
-        gens: list[str] = []
-        for start in range(0, len(prompts), args.batch_size):
-            resp = batch_generate(
-                model,
-                tokenizer,
-                prompts[start : start + args.batch_size],
-                max_tokens=args.max_tokens,
-                sampler=sampler,
-                verbose=False,
-            )
-            gens.extend(resp.texts)
-            done_all += len(resp.texts)
-            rate = done_all / max(1e-9, time.time() - started)
-            print(
-                f"  {done_all}/{total}  ({rate*60:.1f}/min, "
-                f"eta {(total-done_all)/max(1e-9,rate)/60:.1f} min)",
-                flush=True,
-            )
-
-        codes = [strip_fence(t) for t in gens]
-        print(f"  scoring {len(codes)} candidates by execution...")
-        verdicts = run_candidates(
-            [(c, r["fixture_csv"]) for c, r in zip(codes, rows)], max_workers=8
-        )
-        results[arm] = [
-            {
-                "test_id": r["test_id"],
-                "bucket": r["chart_bucket"],
-                "hard_case": r["hard_case"],
-                "ok": bool(v.ok),
-                "right_shape": bool(v.ok)
-                and is_right_shape(r["chart_bucket"], v.figure_type, c),
-                "figure_type": v.figure_type,
-                "failure_kind": v.failure_kind,
-                "error": (v.error or "")[:200],
-                "code": c[:600],
-            }
-            for r, c, v in zip(rows, codes, verdicts)
-        ]
-
-    # ---- report ----
-    n = len(rows)
-    summary = {}
-    for arm in ARMS:
-        rs = results[arm]
-        summary[arm] = {
+def summarize(rows: list[dict], arms: list[str]) -> dict:
+    """Score only the rows every arm has reached, so the comparison stays paired
+    even for a run that was stopped part way."""
+    by_arm = {a: {r["test_id"]: r for r in rows if r["arm"] == a} for a in arms}
+    common = set.intersection(*(set(d) for d in by_arm.values())) if by_arm else set()
+    n = len(common)
+    summary: dict = {}
+    per_bucket: dict = defaultdict(dict)
+    for a in arms:
+        rs = [by_arm[a][t] for t in common]
+        summary[a] = {
             "n": n,
-            "render_rate": sum(r["ok"] for r in rs) / n,
-            "right_shape_rate": sum(r["right_shape"] for r in rs) / n,
-            "failure_kinds": dict(
-                Counter(r["failure_kind"] for r in rs if not r["ok"])
-            ),
+            "render_rate": sum(r["ok"] for r in rs) / n if n else 0.0,
+            "right_shape_rate": sum(r["right_shape"] for r in rs) / n if n else 0.0,
+            "failure_kinds": dict(Counter(r["failure_kind"] for r in rs if not r["ok"])),
         }
-
-    per_bucket: dict[str, dict] = defaultdict(dict)
-    for arm in ARMS:
         agg: dict[str, Counter] = defaultdict(Counter)
-        for r in results[arm]:
+        for r in rs:
             agg[r["bucket"]]["n"] += 1
             agg[r["bucket"]]["ok"] += r["ok"]
             agg[r["bucket"]]["shape"] += r["right_shape"]
         for bucket, c in agg.items():
-            per_bucket[bucket][arm] = {
+            per_bucket[bucket][a] = {
                 "n": c["n"],
                 "render_rate": c["ok"] / c["n"],
                 "right_shape_rate": c["shape"] / c["n"],
             }
-
     paired = {}
+    control = arms[0]
     for metric in ("ok", "right_shape"):
-        for other in ARMS[1:]:
-            a = {r["test_id"]: r[metric] for r in results["A_control"]}
-            b = {r["test_id"]: r[metric] for r in results[other]}
-            gained = [t for t in a if not a[t] and b[t]]
-            lost = [t for t in a if a[t] and not b[t]]
-            paired[f"{metric}:A_vs_{other}"] = {
+        for other in arms[1:]:
+            gained = sorted(t for t in common if not by_arm[control][t][metric] and by_arm[other][t][metric])
+            lost = sorted(t for t in common if by_arm[control][t][metric] and not by_arm[other][t][metric])
+            paired[f"{metric}:{control}_vs_{other}"] = {
                 "gained": len(gained),
                 "lost": len(lost),
                 "net": len(gained) - len(lost),
@@ -276,33 +222,152 @@ def main() -> int:
                 "gained_ids": gained[:40],
                 "lost_ids": lost[:40],
             }
-
-    report = {
-        "model": args.model,
-        "adapter": args.adapter_path,
-        "max_tokens": args.max_tokens,
-        "n": n,
-        "minutes": (time.time() - started) / 60,
+    return {
+        "n_paired": n,
         "summary": summary,
-        "per_bucket": per_bucket,
+        "per_bucket": dict(per_bucket),
         "paired": paired,
-        "rows": results,
+        "rows": {a: [by_arm[a][t] for t in sorted(common)] for a in arms},
     }
+
+
+def main() -> int:
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--model", default="models/qwen3.5-9b-4bit")
+    ap.add_argument("--adapter-path", default="runs/adapters-mlx")
+    ap.add_argument("--testset", default="data/testset.jsonl")
+    ap.add_argument("--out", default="data/ab_planner_hint.json")
+    ap.add_argument("--arms", default=",".join(ARMS), help="comma-separated; the first is the control")
+    ap.add_argument("--focus", default="", help="buckets to take whole, comma-separated")
+    ap.add_argument("--others-per-bucket", type=int, default=0)
+    ap.add_argument("--limit", type=int, default=None)
+    ap.add_argument("--max-tokens", type=int, default=CHARTIST_MAX_TOKENS)
+    ap.add_argument("--batch-size", type=int, default=8)
+    ap.add_argument(
+        "--summarize-only",
+        action="store_true",
+        help="rebuild the report from the saved rows without generating anything",
+    )
+    args = ap.parse_args()
+
+    arms = [a.strip() for a in args.arms.split(",") if a.strip()]
+    unknown = [a for a in arms if a not in ARMS]
+    if unknown:
+        raise SystemExit(f"unknown arm(s) {unknown}; choose from {ARMS}")
+
+    rows = [
+        json.loads(l)
+        for l in Path(args.testset).read_text(encoding="utf-8").splitlines()
+        if l.strip()
+    ]
+    rows = select_rows(rows, args.focus, args.others_per_bucket, args.limit)
+
+    # Every scored row is appended here the moment it exists. The first full
+    # run kept everything in memory until the end, and stopping it at 452 of
+    # 900 generations threw all of them away. Now a stop keeps what it
+    # measured, and running the same command again resumes.
+    ckpt = Path(args.out).with_suffix(".rows.jsonl")
+    saved = (
+        [json.loads(l) for l in ckpt.read_text(encoding="utf-8").splitlines() if l.strip()]
+        if ckpt.exists()
+        else []
+    )
+    done = {(r["arm"], r["test_id"]) for r in saved}
+    started = time.time()
+
+    if not args.summarize_only:
+        todo_total = sum(1 for r in rows for a in arms if (a, r["test_id"]) not in done)
+        print(
+            f"{len(rows)} rows x {len(arms)} arms; {todo_total} generations to go "
+            f"({len(done)} already saved in {ckpt})"
+        )
+        from mlx_lm import batch_generate, load
+        from mlx_lm.sample_utils import make_sampler
+
+        adapter = None if args.adapter_path in ("none", "") else args.adapter_path
+        print(f"loading {args.model}" + (f" + {adapter}" if adapter else " (base)"))
+        model, tokenizer = load(args.model, adapter_path=adapter)
+        sampler = make_sampler(temp=0.0)
+
+        def tok(text: str) -> list[int]:
+            ids = tokenizer.apply_chat_template(
+                [
+                    {"role": "system", "content": SYSTEM_FALLBACK},
+                    {"role": "user", "content": text},
+                ],
+                tokenize=True,
+                add_generation_prompt=True,
+            )
+            if isinstance(ids, dict):
+                ids = ids.get("input_ids", [])
+            if ids and isinstance(ids[0], (list, tuple)):
+                ids = ids[0]
+            return list(ids)
+
+        generated = 0
+        # Arms inside the batch loop, not around it: every arm reaches the same
+        # rows before the run moves on, so stopping at any point leaves a paired
+        # comparison instead of one finished arm with nothing to compare it to.
+        for start in range(0, len(rows), args.batch_size):
+            batch = rows[start : start + args.batch_size]
+            for arm in arms:
+                todo = [r for r in batch if (arm, r["test_id"]) not in done]
+                if not todo:
+                    continue
+                resp = batch_generate(
+                    model,
+                    tokenizer,
+                    [tok(build_prompt(r, arm)) for r in todo],
+                    max_tokens=args.max_tokens,
+                    sampler=sampler,
+                    verbose=False,
+                )
+                codes = [strip_fence(t) for t in resp.texts]
+                verdicts = run_candidates(
+                    [(c, r["fixture_csv"]) for c, r in zip(codes, todo)], max_workers=8
+                )
+                with ckpt.open("a", encoding="utf-8") as fh:
+                    for r, c, v in zip(todo, codes, verdicts):
+                        rec = record(arm, r, c, v, args.max_tokens)
+                        fh.write(json.dumps(rec) + "\n")
+                        saved.append(rec)
+                        done.add((arm, r["test_id"]))
+                generated += len(todo)
+            rate = generated / max(1e-9, time.time() - started)
+            left = todo_total - generated
+            print(
+                f"  {generated}/{todo_total}  ({rate*60:.1f}/min, eta {left/max(1e-9, rate)/60:.1f} min)",
+                flush=True,
+            )
+
+    wanted = {r["test_id"] for r in rows}
+    report = summarize([r for r in saved if r["test_id"] in wanted and r["arm"] in arms], arms)
+    report.update(
+        {
+            "model": args.model,
+            "adapter": args.adapter_path,
+            "max_tokens": args.max_tokens,
+            "arms": arms,
+            "focus": args.focus,
+            "others_per_bucket": args.others_per_bucket,
+            "sample_size": len(rows),
+            "minutes_this_run": (time.time() - started) / 60,
+        }
+    )
     Path(args.out).write_text(json.dumps(report, indent=2), encoding="utf-8")
 
-    print(f"\n{'arm':14s} {'render':>9s} {'shape':>9s}")
-    for arm in ARMS:
-        s = summary[arm]
-        print(
-            f"{arm:14s} {s['render_rate']*100:8.1f}% {s['right_shape_rate']*100:8.1f}%"
-        )
+    print(f"\n{report['n_paired']} of {len(rows)} sampled rows reached by every arm")
+    print(f"{'arm':14s} {'render':>9s} {'shape':>9s}")
+    for a in arms:
+        s = report["summary"][a]
+        print(f"{a:14s} {s['render_rate']*100:8.1f}% {s['right_shape_rate']*100:8.1f}%")
     print("\npaired, vs the control:")
-    for key, p in paired.items():
+    for key, p in report["paired"].items():
         print(
-            f"  {key:28s} +{p['gained']:3d} / -{p['lost']:3d}  "
+            f"  {key:34s} +{p['gained']:3d} / -{p['lost']:3d}  "
             f"net {p['net']:+3d}   p={p['p_value']:.4f}"
         )
-    print(f"\nwrote {args.out}  ({report['minutes']:.1f} min)")
+    print(f"\nwrote {args.out}")
     return 0
 
 
