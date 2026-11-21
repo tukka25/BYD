@@ -89,11 +89,14 @@ effective batch).
 ## 7. Evaluate on the pod
 
 ```bash
-python cloud/evaluate_cuda.py --label lora-v2 --adapter-path /workspace/outputs/lora-v2 \
-  --out /workspace/eval_report_v2.json
+PYTHONPATH=/workspace/chartist python cloud/evaluate_cuda.py --label lora-v2 \
+  --adapter-path /workspace/outputs/lora-v2 --out /workspace/outputs/eval_report_v2.json
 ```
 
 The frozen 300, question form, at the production cap of 1024 tokens.
+`PYTHONPATH` is required: run as `cloud/evaluate_cuda.py`, Python searches
+`cloud/` for `chart_types` and `executor`, which live one folder up. The first
+v2 attempt failed on exactly that import.
 
 ## 8. Download, then delete everything
 
