@@ -47,7 +47,9 @@ def main() -> int:
             checked, _ = check_spec(spec, tables[p["schema_id"]])
             if checked is not None:
                 jobs.append((p, n, checked))
-    jobs = jobs[: args.max_charts]
+    # Round-robin by position, so a cut keeps every dashboard's first charts
+    # rather than every chart of the first dashboards.
+    jobs = sorted(jobs, key=lambda job: job[1])[: args.max_charts]
     print(f"{len(jobs)} chart plans to write code for")
 
     def prompt(p, spec):

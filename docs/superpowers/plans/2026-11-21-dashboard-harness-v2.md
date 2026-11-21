@@ -3637,3 +3637,16 @@ git commit -m "docs(finetune): v2 Runpod runbook; fail fast when pyarrow cannot 
 - [ ] **Step 2: Evaluate locally against v1, same harness** — `evaluate.py --adapter-path runs/adapters-mlx-v2` on the frozen 300 (question form); `measure_planning.py --label lora-v2 --adapter-path runs/adapters-mlx-v2` on the frozen planning set; `measure_roles.py --adapter-path runs/adapters-mlx-v2` for planner and narrator.
 - [ ] **Step 3: Switch the server only if v2 is at least as good on the frozen 300 and better on the planning set** — point `ADAPTER` in the Makefile at `runs/adapters-mlx-v2`.
 - [ ] **Step 4: Update `AGENTS.md` and `cloud/README.md` with the measured numbers, and commit.**
+
+---
+
+## Execution notes (deviations from the text above)
+
+- **Task 3:** `backend/tests/test_chartist_contract.py` already had 3 failing tests before this work (`test_rejects_write_html`, `test_rejects_to_csv`, `test_method_named_open_is_not_a_file_read`): their expectations predate commit ac39d4d, which aligned the contract with the production executor. Left untouched; every other backend test passes.
+- **Task 9:** the canvas stored a progress label but never showed it, so the build button now shows the stage label until a plan exists. The `plan` event also carries `attempts` (tries per planning call) and `dropped` (what the checks removed), logged by the endpoint and printed by the smoke.
+- **Task 11:** `gen_requests.py` refuses to overwrite `requests.jsonl`, because the frozen planning test set is drawn from it.
+- **Task 12:** the plan's test expected `plan_match_rate == 0.5`; that rate is measured over rendered charts (1 of 1 there), so the test now expects 1.0 and a new `right_chart_rate` (rendered AND the planned kind, over every chart attempted) carries the end-to-end 0.5.
+- **After the Task 14 pilot:** the shared check now rejects a `group` equal to `x` or `y` and `x` equal to `y`, and turns a count of the `x` column into a row count. Data generated before this is re-checked: `export_v2.py` falls back to question form for an answer plan that fails, drops an Opus example whole when its plan fails, and `gen_spec_code.py` renders the normalised plan.
+- **Task 15:** the Opus pilot kept 20/20 at about $0.019 per example, far under the estimate, so the full run plans every train request (480) instead of a budget-limited subset; `--chunk` sets the batch size.
+- **Task 16:** a `--max-charts` cut is round-robin by chart position, so every dashboard keeps its first charts.
+- **Task 18:** the pyarrow preflight fails only when pyarrow is installed but broken; absent is fine (pandas runs without it, as on the Mac).
