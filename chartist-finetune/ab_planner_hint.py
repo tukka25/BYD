@@ -89,11 +89,27 @@ LABEL = {
 
 ARMS = ("A_control", "B_inline", "C_directive")
 
+# Not a prompt variant: the control prompt on the BASE weights (every lora_b
+# zeroed in place, so the LoRA branch adds nothing) with the chat template's
+# thinking switched off. Base Qwen3.5 otherwise opens every answer with a
+# "Thinking Process:" essay -- 267 of its 277 failures were that prose -- and
+# the template's enable_thinking=False pre-closes the think block, which is
+# also the shape every fine-tuning target was rendered in. So this arm asks how
+# much of the fine-tune's gain a template flag already gets.
+PROMPT_STYLE = {
+    "A_control": "control",
+    "B_inline": "inline",
+    "C_directive": "directive",
+    "A_base_nothink": "control",
+}
+BASE_NOTHINK = {"A_base_nothink"}
+
 
 def build_prompt(row: dict, arm: str) -> str:
     """Rewrite the Task line only. Schema block is untouched and identical."""
     prompt = row["prompt"]
-    if arm == "A_control":
+    style = PROMPT_STYLE.get(arm, "control")
+    if style == "control":
         return prompt
     bucket = row["chart_bucket"]
     if bucket not in PHRASE:
@@ -103,7 +119,7 @@ def build_prompt(row: dict, arm: str) -> str:
         return prompt
     question = head[len("Task: ") :] if head.startswith("Task: ") else head
     question = question.rstrip()
-    if arm == "B_inline":
+    if style == "inline":
         # A second sentence needs the first one to end. Most questions do not.
         if question and question[-1] not in ".?!":
             question += "."
@@ -251,9 +267,9 @@ def main() -> int:
     args = ap.parse_args()
 
     arms = [a.strip() for a in args.arms.split(",") if a.strip()]
-    unknown = [a for a in arms if a not in ARMS]
+    unknown = [a for a in arms if a not in PROMPT_STYLE]
     if unknown:
-        raise SystemExit(f"unknown arm(s) {unknown}; choose from {ARMS}")
+        raise SystemExit(f"unknown arm(s) {unknown}; choose from {tuple(PROMPT_STYLE)}")
 
     rows = [
         json.loads(l)
@@ -289,7 +305,24 @@ def main() -> int:
         model, tokenizer = load(args.model, adapter_path=adapter)
         sampler = make_sampler(temp=0.0)
 
-        def tok(text: str) -> list[int]:
+        real_b = zero_b = None
+        if adapter and any(a in BASE_NOTHINK for a in arms):
+            import mlx.core as mx
+
+            tensors = mx.load(str(Path(adapter) / "adapters.safetensors"))
+            real_b = [(k, v) for k, v in tensors.items() if k.endswith("lora_b")]
+            zero_b = [(k, mx.zeros_like(v)) for k, v in real_b]
+
+        def set_weights(arm: str) -> None:
+            # In-place lora_b swap (~29 ms), not a reload: zeroed B makes the
+            # LoRA branch add exactly nothing, which is the base model.
+            if real_b is not None:
+                model.load_weights(zero_b if arm in BASE_NOTHINK else real_b, strict=False)
+
+        def tok(text: str, thinking: bool = True) -> list[int]:
+            # Only pass the flag to turn thinking OFF, so every other arm's
+            # prompt is byte-identical to what the server sends by default.
+            extra = {} if thinking else {"enable_thinking": False}
             ids = tokenizer.apply_chat_template(
                 [
                     {"role": "system", "content": SYSTEM_FALLBACK},
@@ -297,6 +330,7 @@ def main() -> int:
                 ],
                 tokenize=True,
                 add_generation_prompt=True,
+                **extra,
             )
             if isinstance(ids, dict):
                 ids = ids.get("input_ids", [])
@@ -314,10 +348,11 @@ def main() -> int:
                 todo = [r for r in batch if (arm, r["test_id"]) not in done]
                 if not todo:
                     continue
+                set_weights(arm)
                 resp = batch_generate(
                     model,
                     tokenizer,
-                    [tok(build_prompt(r, arm)) for r in todo],
+                    [tok(build_prompt(r, arm), thinking=arm not in BASE_NOTHINK) for r in todo],
                     max_tokens=args.max_tokens,
                     sampler=sampler,
                     verbose=False,

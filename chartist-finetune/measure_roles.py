@@ -72,6 +72,13 @@ ACCEPT = {
     "gauge_or_indicator": {"indicator"},
 }
 
+# Each arm is (chartist adapter on?, thinking left on?). "base_nothink" is the
+# base model with the chat template's enable_thinking=False, which pre-closes the
+# think block -- the server accepts it per request as chat_template_kwargs, so
+# it is a deployable alternative to giving a role an adapter.
+ARM_SPECS = {"adapter": (True, True), "base": (False, True), "base_nothink": (False, False)}
+THOUGHT = re.compile(r"thinking process", re.IGNORECASE)
+
 # "The adapter made this role write Python." Deliberately not the narrator's
 # _CODE_SHAPED, which also matches `{` and would flag every correct JSON reply.
 LOOKS_LIKE_CODE = re.compile(r"\bimport\s+\w|\bplotly\b|\bprint\s*\(|\bfig\s*=|\bpx\.\w+\s*\(")
@@ -132,6 +139,11 @@ def role_record(planner, narrator, arm: str, row: dict, praw: str, nraw: str) ->
         "narrator_title": title or narrator._from_question(row["question"]),
         "narrator_used_model": bool(title),
         "narrator_wrote_code": bool(LOOKS_LIKE_CODE.search(nraw)),
+        # A reply that began with the base model's reasoning essay. For the
+        # narrator this matters: _clean keeps the last line, so a reply cut off
+        # mid-essay can pass as a "title" ("* Name what the chart shows, not").
+        "planner_thought": bool(THOUGHT.search(praw)),
+        "narrator_thought": bool(THOUGHT.search(nraw)),
     }
 
 
@@ -147,7 +159,11 @@ def main() -> int:
     ap.add_argument("--limit", type=int, default=None)
     ap.add_argument("--batch-size", type=int, default=16)
     ap.add_argument("--summarize-only", action="store_true")
+    ap.add_argument("--arms", default="adapter,base", help=f"comma-separated, from {tuple(ARM_SPECS)}")
     args = ap.parse_args()
+    arms = [a.strip() for a in args.arms.split(",") if a.strip()]
+    if not arms or any(a not in ARM_SPECS for a in arms):
+        raise SystemExit(f"--arms must come from {tuple(ARM_SPECS)}")
 
     planner = _load_agent_module("planner")
     narrator = _load_agent_module("narrator")
@@ -176,8 +192,11 @@ def main() -> int:
         real_b = [(k, v) for k, v in adapter.items() if k.endswith("lora_b")]
         zero_b = [(k, mx.zeros_like(v)) for k, v in real_b]
 
-        def tokens(messages: list[dict]) -> list[int]:
-            ids = tokenizer.apply_chat_template(messages, tokenize=True, add_generation_prompt=True)
+        def tokens(messages: list[dict], thinking: bool = True) -> list[int]:
+            # The flag is passed only to turn thinking OFF, so the other arms'
+            # prompts stay byte-identical to the server's default rendering.
+            extra = {} if thinking else {"enable_thinking": False}
+            ids = tokenizer.apply_chat_template(messages, tokenize=True, add_generation_prompt=True, **extra)
             if isinstance(ids, dict):
                 ids = ids.get("input_ids", [])
             if ids and isinstance(ids[0], (list, tuple)):
@@ -202,15 +221,17 @@ def main() -> int:
                                   sampler=sampler, verbose=False)
             return [THINK_PREFIX.sub("", t, count=1) if "</think>" in t else t for t in resp.texts]
 
-        todo_total = sum(1 for r in rows for a in ("adapter", "base") if (a, r["test_id"]) not in done)
-        print(f"{len(rows)} rows x 2 arms; {todo_total} row-arms to go ({len(done)} saved in {ckpt})")
+        todo_total = sum(1 for r in rows for a in arms if (a, r["test_id"]) not in done)
+        print(f"{len(rows)} rows x {len(arms)} arms; {todo_total} row-arms to go ({len(done)} saved in {ckpt})")
         produced = 0
         started = time.perf_counter()
         # Both arms on each batch before moving on (the swap is ~29 ms), so a
         # stopped run is still a paired comparison.
         for start in range(0, len(rows), args.batch_size):
             batch = rows[start : start + args.batch_size]
-            for arm, weights in (("adapter", real_b), ("base", zero_b)):
+            for arm in arms:
+                use_adapter, thinking = ARM_SPECS[arm]
+                weights = real_b if use_adapter else zero_b
                 todo = [r for r in batch if (arm, r["test_id"]) not in done]
                 if not todo:
                     continue
@@ -218,9 +239,11 @@ def main() -> int:
                 model.load_weights(weights, strict=False)
                 mx.eval(model.parameters())
                 swap_ms.append((time.perf_counter() - t0) * 1000)
-                p_raw = generate([tokens(planner_messages(r["question"])) for r in todo], MAX_TOKENS["planner"])
+                p_raw = generate(
+                    [tokens(planner_messages(r["question"]), thinking) for r in todo], MAX_TOKENS["planner"]
+                )
                 n_raw = generate(
-                    [tokens(narrator_messages(r["question"], columns_of(r["prompt"]))) for r in todo],
+                    [tokens(narrator_messages(r["question"], columns_of(r["prompt"])), thinking) for r in todo],
                     MAX_TOKENS["narrator"],
                 )
                 with ckpt.open("a", encoding="utf-8") as fh:
@@ -238,13 +261,13 @@ def main() -> int:
     wanted = {r["test_id"] for r in rows}
     by_arm = {
         a: {r["test_id"]: r for r in saved if r["arm"] == a and r["test_id"] in wanted}
-        for a in ("adapter", "base")
+        for a in arms
     }
-    common = sorted(set(by_arm["adapter"]) & set(by_arm["base"]))
+    common = sorted(set.intersection(*(set(d) for d in by_arm.values())))
     results = {a: [by_arm[a][t] for t in common] for a in by_arm}
     n = len(common)
     if not n:
-        print("no row has both arms yet")
+        print("no row has every arm yet")
         return 1
 
     summary = {}
@@ -259,20 +282,28 @@ def main() -> int:
             "planner_wrote_code": sum(r["planner_wrote_code"] for r in rs) / n,
             "narrator_used_model": sum(r["narrator_used_model"] for r in rs) / n,
             "narrator_wrote_code": sum(r["narrator_wrote_code"] for r in rs) / n,
+            "planner_thought": sum(r.get("planner_thought", False) for r in rs) / n,
+            "narrator_thought": sum(r.get("narrator_thought", False) for r in rs) / n,
+            # A model title that did not come out of a truncated reasoning essay.
+            "narrator_clean_title": sum(
+                r["narrator_used_model"] and not r.get("narrator_thought", False) for r in rs
+            ) / n,
             "planner_accuracy_by_bucket": per_bucket,
         }
 
     paired = {}
-    for key in ("planner_correct", "narrator_used_model"):
-        a = {r["test_id"]: r[key] for r in results["adapter"]}
-        b = {r["test_id"]: r[key] for r in results["base"]}
-        base_better = sum(1 for t in a if b[t] and not a[t])
-        adapter_better = sum(1 for t in a if a[t] and not b[t])
-        paired[key] = {
-            "base_better": base_better,
-            "adapter_better": adapter_better,
-            "p_value": mcnemar_exact(base_better, adapter_better),
-        }
+    first = arms[0]
+    for other in arms[1:]:
+        for key in ("planner_correct", "narrator_used_model"):
+            a = {r["test_id"]: r[key] for r in results[first]}
+            b = {r["test_id"]: r[key] for r in results[other]}
+            other_better = sum(1 for t in a if b[t] and not a[t])
+            first_better = sum(1 for t in a if a[t] and not b[t])
+            paired[f"{key}:{first}_vs_{other}"] = {
+                f"{other}_better": other_better,
+                f"{first}_better": first_better,
+                "p_value": mcnemar_exact(other_better, first_better),
+            }
 
     # ---- what the hint is worth with THIS planner, not an oracle ----
     policy = {}
@@ -281,7 +312,7 @@ def main() -> int:
         ab = json.loads(ab_path.read_text(encoding="utf-8"))
         ab_rows = {arm: {r["test_id"]: r for r in rs} for arm, rs in ab.get("rows", {}).items()}
         control = ab_rows.get("A_control", {})
-        for planner_arm in ("adapter", "base"):
+        for planner_arm in arms:
             plan = {r["test_id"]: r for r in results[planner_arm]}
             for hint_arm in ("B_inline", "C_directive"):
                 hinted = ab_rows.get(hint_arm)
@@ -339,16 +370,18 @@ def main() -> int:
     }
     Path(args.out).write_text(json.dumps(report, indent=2), encoding="utf-8")
 
-    print(f"\n{n} rows with both arms")
+    print(f"\n{n} rows with every arm")
     print(f"{'':10s}{'planner acc':>12s}{'wrote code':>12s}{'narrator ok':>13s}{'wrote code':>12s}")
     for arm, s in summary.items():
         print(f"{arm:10s}{s['planner_accuracy']*100:11.1f}%{s['planner_wrote_code']*100:11.1f}%"
               f"{s['narrator_used_model']*100:12.1f}%{s['narrator_wrote_code']*100:11.1f}%")
     for arm, s in summary.items():
         print(f"  {arm} planner sources: {s['planner_sources']}")
+    for arm, s in summary.items():
+        print(f"  {arm}: planner thought {s['planner_thought']*100:.0f}%, narrator thought "
+              f"{s['narrator_thought']*100:.0f}%, clean narrator titles {s['narrator_clean_title']*100:.0f}%")
     for key, p in paired.items():
-        print(f"paired {key}: base better on {p['base_better']}, adapter better on "
-              f"{p['adapter_better']}, p={p['p_value']:.4f}")
+        print(f"paired {key}: " + ", ".join(f"{k}={v}" for k, v in p.items()))
     for k, v in policy.items():
         lo, hi = v["right_shape_rate_range"]
         print(f"policy {k:30s} n={v['n']} render {v['render_rate']*100:.1f}% (control "
