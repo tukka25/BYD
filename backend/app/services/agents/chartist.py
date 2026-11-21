@@ -10,6 +10,7 @@ from app.services.agents.chartist_contract import (
     HINT_STYLES,
     ContractViolation,
     chart_type_hint,
+    render_spec,
     validate_chart_code,
 )
 
@@ -234,17 +235,26 @@ class ChartistAgent:
         task_plan: Dict[str, Any],
         data_context: Dict[str, Any],
         dataframe_plan: Optional[Dict[str, Any]] = None,
+        spec: Optional[Dict[str, Any]] = None,
     ) -> str:
         """
         Generates Plotly code for the user's question against this schema.
+
+        With a `spec` (a chart plan from the dashboard planner) the task text is
+        the plan itself; the question-only path is unchanged for single blocks.
         """
         viz_type = task_plan.get("visualization_type", "bar")
         try:
             source = self.generator or self.chain
             if source is None:
                 raise RuntimeError("chartist has neither a model nor a generator")
+            task = (
+                render_spec(spec)
+                if spec
+                else self._task_description(user_query, task_plan, dataframe_plan)
+            )
             raw = source.invoke({
-                "task": self._task_description(user_query, task_plan, dataframe_plan),
+                "task": task,
                 "columns": str(data_context.get("columns", [])),
                 "dtypes": str(data_context.get("dtypes", {})),
                 "sample_rows": str(data_context.get("sample", [])),

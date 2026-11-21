@@ -238,3 +238,38 @@ def validate_chart_code(code: str) -> list[ContractViolation]:
     if "matplotlib" in lowered or re.search(r"\bplt\s*\.", lowered):
         violations.append(ContractViolation.USES_MATPLOTLIB)
     return violations
+
+
+def render_spec(spec: dict) -> str:
+    """The chartist's task text for one chart plan.
+
+    The dashboard planner hands the chartist an exact plan, so it no longer has
+    to guess the chart type and columns from a question. The v2 training rows are
+    built with this same function (re-exported by chartist-finetune/contract.py):
+    the plan a model was trained on and the plan the app sends are the same text.
+    """
+    lines = [str(spec.get("question") or spec.get("title") or "").strip(), "", "Chart plan:"]
+    lines.append(f"- chart: {spec['chart']}")
+    agg = str(spec.get("agg") or "")
+    for key in ("x", "y", "group"):
+        value = str(spec.get(key) or "").strip()
+        if not value:
+            continue
+        if key == "y" and agg not in ("", "none"):
+            lines.append(f"- y: {value} ({agg})")
+        else:
+            lines.append(f"- {key}: {value}")
+    if not str(spec.get("y") or "").strip() and agg == "count":
+        lines.append("- y: row count")
+    if spec.get("grain"):
+        lines.append(f"- time grain: {spec['grain']}")
+    sort, top = str(spec.get("sort") or ""), int(spec.get("top_n") or 0)
+    if sort or top:
+        parts = (["descending" if sort == "desc" else "ascending"] if sort else []) + (
+            [f"top {top}"] if top else []
+        )
+        lines.append(f"- order: {', '.join(parts)}")
+    title = str(spec.get("title") or "").strip()
+    if title:
+        lines.append(f"- title: {title}")
+    return "\n".join(lines)
