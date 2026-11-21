@@ -52,6 +52,10 @@ LR = float(os.environ.get("LR", "2e-4"))
 RANK = int(os.environ.get("RANK", "16"))
 # transformers 5.23 removed warmup_ratio; only warmup_steps exists.
 WARMUP = int(os.environ.get("WARMUP", "15"))
+# How often to measure validation loss and keep a checkpoint. lora-v1 used
+# 60/120 on 260 validation rows; v2 has 949, so it measures less often.
+EVAL_STEPS = int(os.environ.get("EVAL_STEPS", "60"))
+SAVE_STEPS = int(os.environ.get("SAVE_STEPS", "120"))
 
 # Attention and MLP only. See the module docstring for why linear_attn is absent.
 TARGET_MODULES = ["q_proj", "k_proj", "v_proj", "o_proj", "gate_proj", "up_proj", "down_proj"]
@@ -212,10 +216,16 @@ def main() -> int:
             gradient_checkpointing_kwargs={"use_reentrant": False},
             logging_steps=10,
             eval_strategy="steps",
-            eval_steps=60,
+            eval_steps=EVAL_STEPS,
             save_strategy="steps",
-            save_steps=120,
+            save_steps=SAVE_STEPS,
             save_total_limit=3,
+            # The adapter saved at the end is the checkpoint with the lowest
+            # validation loss, so a second epoch that starts to overfit cannot
+            # ship worse than the earlier checkpoint it overfit from.
+            load_best_model_at_end=True,
+            metric_for_best_model="eval_loss",
+            greater_is_better=False,
             report_to=[],
             seed=42,
             max_grad_norm=1.0,

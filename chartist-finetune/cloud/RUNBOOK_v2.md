@@ -73,8 +73,13 @@ the failure that cost lora-v1's eval 16 treemap rows.
 ```bash
 cd /workspace/chartist
 DATA=/workspace/chartist/data/mlx_v2_capped OUT=/workspace/outputs/lora-v2 \
-  MAXLEN=2048 EPOCHS=2 python cloud/train_lora.py
+  MAXLEN=2048 EPOCHS=2 EVAL_STEPS=150 SAVE_STEPS=300 python cloud/train_lora.py
 ```
+
+2 epochs is 1,830 optimizer steps; validation loss is measured every 150
+(about 12 points) and the adapter saved at the end is the lowest-validation-loss
+checkpoint (`load_best_model_at_end`). lora-v1's curve for the record: 0.191 at
+the end of epoch 1, 0.177 at the end of epoch 2, flat at the end.
 
 The script asserts that zero linear-attention modules were matched and exits
 on an empty split before loading the model. lora-v1 fit at MAXLEN 1536 with
