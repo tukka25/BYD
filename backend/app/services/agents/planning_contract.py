@@ -257,6 +257,12 @@ def check_spec(item: Any, tables: dict[str, dict[str, str]]) -> tuple[dict | Non
         problems.append(f"table '{table}' does not exist; tables are: {', '.join(tables)}")
         return None, problems
     kinds = tables[table]
+    if agg == "count" and y and y == x:
+        y = ""  # "count of the x column" is a row count per x value
+    if x and y and x == y:
+        problems.append("x and y must be different columns")
+    if group and group in (x, y):
+        problems.append("group must be a different column from x and y")
     for name, value in (("x", x), ("y", y), ("group", group)):
         if value and value not in kinds:
             problems.append(f"{name} '{value}' is not a column of '{table}'; its columns are: {', '.join(kinds)}")

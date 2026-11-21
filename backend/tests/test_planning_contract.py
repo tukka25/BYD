@@ -119,3 +119,13 @@ def test_render_directions():
     text = render_directions([{"question": "Where is churn highest?", "why": "asked for",
                                "table": "saas", "columns": ["cntry_cd", "churn_cnt"]}])
     assert text == "1. Where is churn highest? Why: asked for. Table: saas. Columns: cntry_cd, churn_cnt."
+
+
+def test_group_must_add_a_dimension():
+    valid, errors = check_specs({"charts": [spec(group="cntry_cd")]}, TABLES)
+    assert valid == [] and any("group must be a different column" in e for e in errors)
+
+
+def test_count_of_the_x_column_is_a_row_count():
+    valid, errors = check_specs({"charts": [spec(y="cntry_cd", agg="count")]}, TABLES)
+    assert errors == [] and valid[0]["y"] == ""

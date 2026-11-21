@@ -84,6 +84,7 @@ def main() -> int:
         chartist(row, row["messages"][1]["content"], "plan")
 
     profiles: dict[str, object] = {}
+    stale_plans: list[str] = []
     for plan in _jsonl("data/v2/plans.jsonl"):
         schema = schemas[plan["schema_id"]]
         if plan["schema_id"] not in profiles:
@@ -93,7 +94,10 @@ def main() -> int:
         directions, d_err = check_directions({"directions": plan["directions"]}, tables)
         charts, c_err = check_specs({"charts": plan["charts"]}, tables)
         if d_err or c_err:
-            raise SystemExit(f"plan {plan['request_id']} no longer passes the checks: {d_err or c_err}")
+            # Generated under an older, looser check: dropped whole, so the
+            # analyst and planner rows of one example always agree.
+            stale_plans.append(f"{plan['request_id']}: {(d_err or c_err)[0]}")
+            continue
         text = render_profiles([profile])
         rows.append({"schema_id": plan["schema_id"], "row_id": f"{plan['request_id']}:analyst", "role": "analyst",
                      "form": "analyst", "fixture_csv": schema["fixture_csv"],
@@ -110,6 +114,8 @@ def main() -> int:
                                   {"role": "assistant", "content": json.dumps({"charts": charts},
                                                                               ensure_ascii=False)}]})
 
+    if stale_plans:
+        print(f"dropped {len(stale_plans)} plans that fail the current checks, e.g. {stale_plans[:3]}")
     leaked = {r["schema_id"] for r in rows} & frozen
     if leaked:
         raise SystemExit(f"LEAK: rows from frozen test schemas: {sorted(leaked)[:5]}")

@@ -43,6 +43,7 @@ def main() -> int:
     ap.add_argument("--max-spend", type=float, default=22.00)
     ap.add_argument("--out", default="data/v2/plans.jsonl")
     ap.add_argument("--seed", type=int, default=20261121)
+    ap.add_argument("--chunk", type=int, default=CHUNK, help="requests per batch pair")
     args = ap.parse_args()
 
     schemas = {
@@ -79,8 +80,8 @@ def main() -> int:
         return result
 
     kept = 0
-    for start in range(0, len(rows), CHUNK):
-        chunk = rows[start:start + CHUNK]
+    for start in range(0, len(rows), args.chunk):
+        chunk = rows[start:start + args.chunk]
         profiles = {r["request_id"]: profile_table(schemas[r["schema_id"]]["table_name"],
                                                    pd.read_csv(schemas[r["schema_id"]]["fixture_csv"]))
                     for r in chunk}
