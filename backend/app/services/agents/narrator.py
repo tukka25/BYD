@@ -79,6 +79,19 @@ _FILLER = re.compile(
     re.IGNORECASE,
 )
 
+# A reply that is code, not a title. The narrator shares a model server with the
+# chartist adapter, and every contract-compliant answer that adapter writes ends
+# in `print(fig.to_json())` -- which is exactly the line `_clean` would keep,
+# since it takes the last line. Parentheses on their own are allowed ("Revenue
+# (USD) by region" is a fine title), and so are words like "Import", "Print" and
+# "Return", which open real titles; an empty call, an assignment, an index or
+# attribute access on the names the chartist always uses are not.
+_CODE_SHAPED = re.compile(
+    r"[=\[\]{}]"
+    r"|\(\s*\)"
+    r"|\b(?:fig|df|px|go|pd|np)\s*\."
+)
+
 # A title that ends on a preposition reads as if it was cut off, which after
 # truncating to seven words it usually was.
 _DANGLING = frozenset(
@@ -96,11 +109,17 @@ def _clean(text: str) -> str:
     if not lines:
         return ""
     title = lines[-1]
+    # Label before quotes: in `Title: "Monthly revenue"` the opening quote is not
+    # at the start until the label is gone, so stripping quotes first left it on.
+    title = re.sub(r"^(title|answer)\s*[:\-]\s*", "", title.strip(), flags=re.IGNORECASE)
     title = title.strip().strip("\"'`").strip()
-    title = re.sub(r"^(title|answer)\s*[:\-]\s*", "", title, flags=re.IGNORECASE)
     title = title.rstrip(".")
     title = re.sub(r"\s+", " ", title)
     if not title or len(title) > MAX_CHARS * 2:
+        return ""
+    # Code, or a bare closing bracket from the end of a multi-line call: either
+    # way not a title, so let the caller fall back to the question.
+    if _CODE_SHAPED.search(title) or not re.search(r"[A-Za-z]", title):
         return ""
     words = title.split()
     if len(words) > MAX_WORDS:
