@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Build the v2 dataset: one adapter, three jobs.
 
-- chartist, question form: the v1 prompt, so single blocks keep working
-- chartist, plan form: the same answers with render_spec(plan) as the task
+- chartist, question form: every v1 answer with its v1 prompt, so single blocks keep working
+- chartist, plan form: the same answers again with render_spec(plan) as the task
 - analyst: profile + request -> directions (Opus)
 - planner: profile + directions -> chart plans (Opus)
 
@@ -52,7 +52,8 @@ def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--out-dir", default="data/mlx_v2")
     ap.add_argument("--valid-ratio", type=float, default=0.12)
-    ap.add_argument("--plan-share", type=float, default=0.5, help="share of answers shown in plan form")
+    ap.add_argument("--plan-share", type=float, default=1.0,
+                    help="share of answers ALSO shown in plan form; every answer keeps its question form")
     ap.add_argument("--seed", type=int, default=42)
     args = ap.parse_args()
 
@@ -102,10 +103,12 @@ def main() -> int:
         spec = current(raw, row["schema_id"])
         if raw:
             rechecked["kept" if spec else "dropped"] += 1
+        # The question form is always kept, so v1's whole training set is still
+        # here and single-block questions (the frozen 300) cannot lose ground;
+        # the plan form is added on top, with the same answer.
+        chartist(row, row["messages"][1]["content"], "question")
         if spec and rng.random() < args.plan_share:
             chartist(row, spec_prompt(row["messages"][1]["content"], spec), "plan")
-        else:
-            chartist(row, row["messages"][1]["content"], "question")
     for row in _jsonl("data/docs_rows.jsonl"):
         chartist(row, row["messages"][1]["content"], "question")
     for row in _jsonl("data/v2/spec_targets.jsonl"):

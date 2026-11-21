@@ -12,7 +12,7 @@ import argparse
 import json
 from pathlib import Path
 
-from check_token_lengths import load_tokenizer
+from check_token_lengths import encoded_length, load_tokenizer
 
 
 def main() -> int:
@@ -31,7 +31,8 @@ def main() -> int:
             prompt = tokenizer.apply_chat_template(messages[:-1], tokenize=False, add_generation_prompt=True)
             if not full.startswith(prompt):
                 mismatched += 1
-            lengths.append(len(tokenizer(full, add_special_tokens=False)["input_ids"]))
+            # The same count cap_dataset.py caps on.
+            lengths.append(encoded_length(tokenizer, messages))
         lengths.sort()
 
         def pick(q: float) -> int:

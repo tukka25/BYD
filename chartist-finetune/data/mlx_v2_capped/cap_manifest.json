@@ -1,0 +1,44 @@
+{
+  "limit": 2048,
+  "source": "data/mlx_v2",
+  "splits": {
+    "train": {
+      "kept": 7321,
+      "dropped": 3,
+      "dropped_pct": 0.041,
+      "dropped_rows": [
+        {
+          "question_id": "docs-0467:question",
+          "tokens": 2562,
+          "chart_bucket": "?",
+          "hard_case": "?"
+        },
+        {
+          "question_id": "docs-0386:question",
+          "tokens": 2565,
+          "chart_bucket": "?",
+          "hard_case": "?"
+        },
+        {
+          "question_id": "docs-0832:question",
+          "tokens": 2892,
+          "chart_bucket": "?",
+          "hard_case": "?"
+        }
+      ]
+    },
+    "valid": {
+      "kept": 949,
+      "dropped": 1,
+      "dropped_pct": 0.105,
+      "dropped_rows": [
+        {
+          "question_id": "docs-0668:question",
+          "tokens": 2231,
+          "chart_bucket": "?",
+          "hard_case": "?"
+        }
+      ]
+    }
+  }
+}
