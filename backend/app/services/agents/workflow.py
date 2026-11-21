@@ -197,12 +197,30 @@ def coding_node(state: AgentState) -> Dict[str, Any]:
 
 def execution_node(state: AgentState) -> Dict[str, Any]:
     _, _, chartist, executor = _agents()
-    data_context = state.get("data_context") or {}
-    code = state.get("code") or ""
+    return run_chart_code(
+        state.get("data_context") or {},
+        state.get("code") or "",
+        (state.get("plan") or {}).get("visualization_type", "bar"),
+        chartist,
+        executor,
+    )
+
+
+def run_chart_code(
+    data_context: Dict[str, Any],
+    code: str,
+    viz: str,
+    chartist: ChartistAgent,
+    executor: SafeExecutor,
+) -> Dict[str, Any]:
+    """Run chart code against the data it was written for.
+
+    Shared by the question workflow and the dashboard's planned charts, so a
+    planned chart gets the same property repair and the same backup chart.
+    """
     if not code:
         return {"error": "No chart code was generated."}
 
-    viz = (state.get("plan") or {}).get("visualization_type", "bar")
     fallback_code = chartist._fallback_plotly_code(data_context, viz)
 
     if data_context.get("source_id") and data_context.get("table"):
