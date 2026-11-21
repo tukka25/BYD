@@ -118,6 +118,8 @@ export interface DashboardProgress {
   onStep?: (step: { index: number; total: number; label: string }) => void;
   onBlock?: (block: Block) => void;
   onSkipped?: (skip: { index: number; label: string; reason: string }) => void;
+  /** Planning stages before the plan exists ("Reading your data", ...). */
+  onStatus?: (status: { label: string }) => void;
 }
 
 export async function generateDashboard(
@@ -154,7 +156,13 @@ export async function generateDashboard(
     } catch {
       return;
     }
-    if (event === "plan") handlers.onPlan?.(payload as never);
+    if (event === "status") handlers.onStatus?.(payload as never);
+    else if (event === "error") {
+      // Thrown inside the read loop, so it leaves generateDashboard like an HTTP error.
+      throw new Error(
+        (payload as { detail?: string }).detail ?? "Could not plan this dashboard.",
+      );
+    } else if (event === "plan") handlers.onPlan?.(payload as never);
     else if (event === "step") handlers.onStep?.(payload as never);
     else if (event === "block") handlers.onBlock?.(payload as Block);
     else if (event === "skipped") handlers.onSkipped?.(payload as never);

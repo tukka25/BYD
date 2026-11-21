@@ -47,6 +47,10 @@ class Settings(BaseSettings):
     # default. Only turn this on for a model trained with the same hint shape:
     # lora-v1 saw bare questions, so a hint is a prompt it never trained on.
     CHARTIST_CHART_TYPE_HINT: str = "off"
+    # "ai": the dashboard is planned by the analyst and planner models and checked
+    # by code (agents/dashboard_flow.py). "rules": the old name-based architect,
+    # kept only as a switch to roll back to.
+    DASHBOARD_PLANNER: str = "ai"
 
     OLLAMA_BASE_URL: str = "http://localhost:11434"
     OLLAMA_MODEL: str = "qwen3.5:4b"

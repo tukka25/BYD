@@ -32,10 +32,11 @@ from langchain_core.language_models.chat_models import BaseChatModel
 
 from app.core.config import get_settings
 from app.services.agents.chartist_contract import CHARTIST_MAX_TOKENS
+from app.services.agents.planning_contract import ANALYST_MAX_TOKENS, PLANNER_MAX_TOKENS
 
 logger = logging.getLogger(__name__)
 
-Role = Literal["planner", "chartist", "detective", "narrator"]
+Role = Literal["planner", "chartist", "detective", "narrator", "analyst", "spec_planner"]
 
 # Greedy everywhere. These agents are infrastructure, not chat: the same
 # question should produce the same chart.
@@ -47,7 +48,19 @@ _MAX_TOKENS = {
     "chartist": CHARTIST_MAX_TOKENS,
     "detective": 512,
     "narrator": 128,
+    # The dashboard's planning calls write whole JSON plans; shared with the
+    # planning eval through planning_contract.
+    "analyst": ANALYST_MAX_TOKENS,
+    "spec_planner": PLANNER_MAX_TOKENS,
 }
+# The dashboard's planning calls answer in JSON with thinking switched off, per
+# request (mlx_lm server reads chat_template_kwargs). On base weights with
+# thinking on, Qwen3.5 opens with a reasoning essay and never reaches the JSON
+# inside the cap (measured for the planner, data/role_measure.json), and the
+# adapter was trained on answers that follow a closed think block, which is
+# exactly what this prompt ends with. measure_planning.py sends the same flag.
+_NO_THINKING = {"analyst", "spec_planner"}
+_JSON_ROLES = {"planner", "analyst", "spec_planner"}
 
 
 def _ollama(role: Role) -> BaseChatModel:
@@ -58,7 +71,7 @@ def _ollama(role: Role) -> BaseChatModel:
     return LocalQwenChatModel(
         model=settings.OLLAMA_MODEL,
         temperature=_TEMPERATURE,
-        format="json" if role == "planner" else "",
+        format="json" if role in _JSON_ROLES else "",
     )
 
 
@@ -70,6 +83,11 @@ def _mlx(role: Role) -> BaseChatModel:
     model = settings.chartist_model if role == "chartist" else settings.MLX_MODEL
     # No response_format here: mlx_lm server does not advertise JSON mode, so the
     # planner carries its schema in the prompt and parses leniently instead.
+    extra = (
+        {"extra_body": {"chat_template_kwargs": {"enable_thinking": False}}}
+        if role in _NO_THINKING
+        else {}
+    )
     return ChatOpenAI(
         model=model,
         base_url=base_url,
@@ -77,6 +95,7 @@ def _mlx(role: Role) -> BaseChatModel:
         temperature=_TEMPERATURE,
         max_tokens=_MAX_TOKENS[role],
         timeout=settings.MLX_TIMEOUT_SECONDS,
+        **extra,
     )
 
 

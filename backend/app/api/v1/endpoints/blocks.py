@@ -24,7 +24,8 @@ from app.services import db_sources
 from app.services.agents import architect
 from app.services.agents.narrator import Narrator
 from app.services.llm import get_llm
-from app.services.agents.workflow import run_agent_workflow
+from app.services.agents.dashboard_flow import build_dashboard
+from app.services.agents.workflow import _agents, run_agent_workflow
 from app.utils.figure_json import decode_typed_arrays
 
 router = APIRouter()
@@ -399,10 +400,10 @@ async def generate_whole_dashboard(
 ):
     """Plan a dashboard from the data, then build it block by block.
 
-    Streamed, because this is five or six chart generations end to end — a
-    minute and a half of work. A single response would leave the user with a
-    spinner and no idea whether anything was happening; here each block is
-    reported the moment it exists, so the progress shown is the real count.
+    Streamed, because this is several model calls and five to eight chart
+    generations end to end. A single response would leave the user with a
+    spinner and no idea whether anything was happening; here each stage and
+    each block is reported the moment it happens.
     """
     report = _owned_report(db, dashboard_id, current_user)
     sources = _user_sources(db, report)
@@ -411,7 +412,141 @@ async def generate_whole_dashboard(
             status_code=400,
             detail="This report has no data to plan from. Add a file or a database first.",
         )
+    brief = (payload.brief if payload else "").strip()
+    mode = (settings.DASHBOARD_PLANNER or "ai").strip().lower()
+    if mode == "rules":
+        return await _rules_dashboard(report, sources, brief, current_user, db)
+    if mode != "ai":
+        raise HTTPException(
+            status_code=500, detail=f"DASHBOARD_PLANNER must be 'ai' or 'rules', got {mode!r}"
+        )
+    return _ai_dashboard(report, sources, brief, current_user, db)
 
+
+def _ai_dashboard(report, sources, brief, current_user, db):
+    """The analyst proposes, the planner plans every chart at once, code checks
+    both against the real tables, and the chartist draws each chart from its plan
+    (agents/dashboard_flow.py). Nothing here reads a column name."""
+    base_row = _next_row(db, report.id)
+    flow = build_dashboard(
+        brief,
+        sources,
+        settings.UPLOAD_DIR,
+        get_llm("analyst"),
+        get_llm("spec_planner"),
+        _agents()[2],
+        top=base_row,
+    )
+
+    async def events():
+        iterator = iter(flow)
+        total = 0
+        while True:
+            # The flow is synchronous model calls; each step runs off the event loop.
+            event = await asyncio.to_thread(next, iterator, None)
+            if event is None:
+                break
+            if event.kind == "status":
+                yield _sse("status", event.data)
+            elif event.kind == "error":
+                yield _sse("error", event.data)
+                return
+            elif event.kind == "plan":
+                intro, placed = event.data["intro"], event.data["placed"]
+                total = len(placed) + 1
+                sections = [
+                    {"index": 0, "kind": "text", "label": "About this data",
+                     "x": intro["x"], "y": intro["y"], "w": intro["w"], "h": intro["h"]}
+                ]
+                sections += [
+                    {"index": n + 1, "kind": "chart", "label": p.spec["title"],
+                     "x": p.x, "y": p.y, "w": p.w, "h": p.h}
+                    for n, p in enumerate(placed)
+                ]
+                names = ", ".join(entry.label for entry in event.data["tables"])
+                logger.info(
+                    "[dashboard] planned %d charts from %s (tries: %s; dropped: %s)",
+                    len(placed), names, event.data["attempts"], event.data["dropped"],
+                )
+                yield _sse("plan", {"total": total, "source": names, "brief": brief, "sections": sections})
+                try:
+                    block = ReportBlock(
+                        dashboard_id=report.id,
+                        user_id=current_user.id,
+                        kind=BlockKind.TEXT,
+                        title="About this data",
+                        text_body=intro["text"],
+                        x=intro["x"],
+                        y=intro["y"],
+                        w=intro["w"],
+                        h=intro["h"],
+                    )
+                    db.add(block)
+                    db.commit()
+                    db.refresh(block)
+                    yield _sse("block", _to_response(block).model_dump(mode="json"))
+                except Exception as exc:  # noqa: BLE001 - one bad block must not end the build
+                    db.rollback()
+                    logger.exception("[dashboard] intro block failed")
+                    yield _sse("skipped", {"index": 0, "label": "About this data", "reason": str(exc)})
+            elif event.kind == "step":
+                placed = event.data["placed"]
+                yield _sse(
+                    "step",
+                    {"index": event.data["index"] + 1, "total": total, "label": placed.spec["title"]},
+                )
+            elif event.kind == "skipped":
+                placed = event.data["placed"]
+                yield _sse(
+                    "skipped",
+                    {"index": event.data["index"] + 1, "label": placed.spec["title"],
+                     "reason": event.data["reason"]},
+                )
+            elif event.kind == "chart":
+                placed, result = event.data["placed"], event.data["result"]
+                spec = placed.spec
+                try:
+                    figure = decode_typed_arrays(result["execution_result"]["figure"])
+                    code = result.get("code") or ""
+                    context = result.get("data_context") or {}
+                    block = ReportBlock(
+                        dashboard_id=report.id,
+                        user_id=current_user.id,
+                        kind=BlockKind.METRIC if _indicator_title(figure) is not None else BlockKind.CHART,
+                        title=spec["title"][:255],
+                        prompt=spec["question"],
+                        code=code,
+                        figure_json=json.dumps(figure),
+                        source_name=context.get("filename") or context.get("table"),
+                        chart_type=spec["chart"],
+                        used_fallback=FALLBACK_SIGNATURE in code,
+                        x=placed.x,
+                        y=placed.y,
+                        w=placed.w,
+                        h=placed.h,
+                    )
+                    db.add(block)
+                    db.commit()
+                    db.refresh(block)
+                    yield _sse("block", _to_response(block).model_dump(mode="json"))
+                except Exception as exc:  # noqa: BLE001 - one bad block must not end the build
+                    db.rollback()
+                    logger.exception("[dashboard] block %s failed", spec["title"])
+                    yield _sse(
+                        "skipped",
+                        {"index": event.data["index"] + 1, "label": spec["title"], "reason": str(exc)},
+                    )
+        yield _sse("done", {"total": total})
+
+    return StreamingResponse(
+        events(),
+        media_type="text/event-stream",
+        headers={"Cache-Control": "no-cache", "X-Accel-Buffering": "no"},
+    )
+
+
+async def _rules_dashboard(report, sources, brief, current_user, db):
+    """The previous name-based architect, kept behind DASHBOARD_PLANNER=rules."""
     source = sources[0]
     try:
         frame = await asyncio.to_thread(
@@ -421,7 +556,6 @@ async def generate_whole_dashboard(
         logger.warning("[dashboard] could not sample %s: %s", source.get("name"), exc)
         raise HTTPException(status_code=400, detail=f"Could not read that source: {exc}")
 
-    brief = (payload.brief if payload else "").strip()
     profile = architect.profile_frame(str(source.get("name")), frame)
     sections = architect.plan(profile, brief=brief)
     if not sections:

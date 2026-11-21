@@ -108,7 +108,12 @@ def build_dashboard(
 
     placed = lay_out(charts.items, top=top + INTRO_HEIGHT)
     intro = {"text": intro_html(profiles, brief, charts.items), "x": 0, "y": top, "w": 12, "h": INTRO_HEIGHT}
-    yield Event("plan", {"intro": intro, "placed": placed, "tables": tables})
+    yield Event("plan", {
+        "intro": intro, "placed": placed, "tables": tables,
+        # How hard planning was: tries per call, and what the checks dropped.
+        "attempts": {"analyst": directions.attempts, "planner": charts.attempts},
+        "dropped": directions.errors[:5] + charts.errors[:5],
+    })
 
     by_label = {entry.label: entry.source for entry in tables}
     for index, item in enumerate(placed):

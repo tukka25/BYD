@@ -538,6 +538,8 @@ export function ReportCanvas({ report }: { report: Report }) {
     let currentIndex = -1;
     try {
       await generateDashboard(token, report.id, brief, {
+        // The analyst and planner run before there is a plan to count.
+        onStatus: (status) => setBuilding({ done: 0, total: 0, label: status.label }),
         onPlan: (plan) => {
           setPlanned(plan.sections);
           setBuilding({ done: 0, total: plan.total, label: plan.source });
@@ -672,7 +674,9 @@ export function ReportCanvas({ report }: { report: Report }) {
           >
             <Sparkles size={15} strokeWidth={2.25} />
             {building
-              ? `Building ${building.done}/${building.total || "…"}`
+              ? building.total > 0
+                ? `Building ${building.done}/${building.total}`
+                : `${building.label}…`
               : "Generate dashboard"}
           </Button>
           <Button variant="secondary" onClick={addNote}>

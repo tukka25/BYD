@@ -51,6 +51,7 @@ def test_a_dashboard_is_planned_and_drawn(tmp_path):
     assert kinds == ["status", "status", "status", "plan", "step", "chart"]
     plan = events[3].data
     assert plan["intro"]["y"] == 5 and plan["placed"][0].y == 8
+    assert plan["attempts"] == {"analyst": 1, "planner": 1} and plan["dropped"] == []
     assert events[5].data["result"]["execution_result"]["figure"]
 
 
