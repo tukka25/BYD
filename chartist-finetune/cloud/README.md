@@ -104,6 +104,18 @@ data. `data/testset.sha256` verified on the pod before the run.
 At n=300 per arm the 95% CI half-width on a difference of proportions is ~11 pp,
 so +83.7 is far outside noise.
 
+**The lora-v1 column is a lower bound.** 16 of the 25 failures recorded in
+`eval_report.json` are one environment crash in the eval pod, not model errors:
+`pyarrow._fs._init_ca_paths` blowing up in `ssl.py` while pyarrow imported. All
+16 are in `treemap_funnel_waterfall` (`px.treemap` / `px.sunburst` reach a code
+path that imports pyarrow; nothing else in the suite does), and none is in any
+other bucket. The code itself was sound — one is a four-level `px.treemap` with
+`px.Constant` and a cumulative column. So 21 rows of that bucket scored 5
+passes and 16 crashes. The report keeps 25 failure samples of the 26 failures,
+so the unrecorded one may be a seventeenth: the real render rate is somewhere
+between 91.3% and 97.0%. Re-measure locally, where pyarrow imports, before
+quoting a final number.
+
 Validation loss during training, 9 passes: **0.671 untrained → 0.2441 → 0.2194 →
 0.2016 → 0.1910 → 0.1889 → 0.1808 → 0.1771 → 0.1767 → 0.1767.** Flat on the last
 two points and tracking the training loss throughout: converged, no overfitting,
@@ -129,15 +141,22 @@ more aggressive code-scraper would lift the base figure somewhat.
 
 Two distinct problems, and they need different fixes:
 
-1. **`treemap_funnel_waterfall` barely moved** (24% render, 5% right-shape). These
-   are the exotic constructors, and 21 test rows against a 2% quota means the
-   training set had very few of them. This wants targeted data generation, which
-   is what the remaining ~$24.53 of Claude budget is for.
+1. **`treemap_funnel_waterfall`'s 24% / 5% is mostly the pyarrow crash above**,
+   not the model. The bucket is not short of data either: it has 105 training
+   targets, more than `time_series`, which scores 96%. The real gap is inside
+   it. By `figure_type` those 105 are **103 treemaps, 2 waterfalls, 0 funnels and
+   0 sunbursts**, while the frozen test bucket covers all four. The question
+   generator was asked for "treemap, funnel or waterfall" and the answers came
+   back as treemaps. Re-score the bucket locally first (free), then generate
+   funnel, sunburst and waterfall targets as separate quota keys so it cannot
+   collapse to one type again.
 2. **`area` and `heatmap` render but are the wrong shape** (100%/68% and
    91%/61%). The code runs and produces a figure, just not the figure that was
-   asked for — `is_area_figure` is catching scatter-family output where an area
-   chart was requested. That is a labelling/targeting problem in the training
-   data, not a syntax one, and it is cheaper to fix than (1).
+   asked for. For area the cause is in the data: area, line, time series and
+   scatter targets all build a `scatter` trace (728 of the 1,897 synthetic
+   targets), so the trace type carries no signal that separates them and only
+   the question's wording does; `is_area_figure` is the scorer's tie-break.
+   That is a targeting problem, not a volume one.
 
 Remaining lora-v1 failures across all 300: `runtime_error` 23, `hallucinated_column` 2,
 `no_figure` 1.
@@ -151,11 +170,21 @@ Remaining lora-v1 failures across all 300: `runtime_error` 23, `hallucinated_col
 
 ### Cost
 
-Pod uptime 8,668 s (2 h 24 m) on the A100 at $2.19/hr. `list-pod-billing` reports
-**$3.134537** (GPU $3.126667 + disk $0.007870); elapsed-time arithmetic gives
-~$5.28, so the billing figure was still settling when read. Roughly half of that
-time went to avoidable debugging, itemised above. The 40 GB HIGH_PERFORMANCE
-network volume `cx8x2n8732` keeps billing until deleted, independently of the pod.
+Pod uptime 8,668 s (2 h 24 m) on the A100 at $2.19/hr. Settled billing, read on
+2026-11-21 with `list-pod-billing` and `list-network-volume-billing`:
+
+| line | amount |
+|---|---|
+| pod `kqjhyc60mcvzvs`, GPU | $5.291334 |
+| pod `kqjhyc60mcvzvs`, disk | $0.012963 |
+| network volume `cx8x2n8732` (40 GB HIGH_PERFORMANCE) | $0.031111 |
+| **cloud total** | **$5.335408** |
+
+The $3.134537 recorded here at first was read while billing was still settling;
+the elapsed-time estimate of ~$5.28 was the right one. Nothing billed on
+2026-11-21, so the pod and the volume are both gone. With $5.4708 of data
+generation, the whole fine-tune cost **$10.81**. Roughly half the GPU time went
+to avoidable debugging, itemised above.
 
 ## Serving it locally (the PEFT → MLX conversion)
 
@@ -187,8 +216,8 @@ No fusing is needed: `mlx_lm server` takes `--adapter-path` directly.
 At n=40 the 95% CI is ~±10 pp, so the gap is within noise: the conversion and
 4-bit quantisation cost nothing measurable. The subset is **not** stratified and
 is easier than the full set (78% `easy` versus 62%), so this is a conversion
-sanity check, not a re-measurement — 91.3% at n=300 stays the authoritative
-number. Local generation runs at 10.8 rows/min, so a full 300-row local eval
+sanity check, not a re-measurement. The n=300 figure is itself a lower bound
+because of the pyarrow crash described under the results. Local generation runs at 10.8 rows/min, so a full 300-row local eval
 takes about 28 minutes.
 
 ### Still to do before the app works end to end
