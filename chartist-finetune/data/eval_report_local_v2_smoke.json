@@ -1,0 +1,99 @@
+{
+  "lora-v2-smoke": {
+    "label": "lora-v2-smoke",
+    "model": "models/qwen3.5-9b-4bit",
+    "adapter_path": "runs/adapters-mlx-v2",
+    "n": 20,
+    "render_rate": 1.0,
+    "render_rate_quota_weighted": 1.0,
+    "right_shape_rate": 0.9,
+    "hallucinated_column_rate": 0.0,
+    "failure_kinds": {},
+    "by_bucket": {
+      "area": {
+        "n": 1,
+        "render_rate": 1.0,
+        "right_shape_rate": 0.0
+      },
+      "bar": {
+        "n": 3,
+        "render_rate": 1.0,
+        "right_shape_rate": 1.0
+      },
+      "box": {
+        "n": 1,
+        "render_rate": 1.0,
+        "right_shape_rate": 1.0
+      },
+      "gauge_or_indicator": {
+        "n": 1,
+        "render_rate": 1.0,
+        "right_shape_rate": 0.0
+      },
+      "grouped_or_stacked_bar": {
+        "n": 1,
+        "render_rate": 1.0,
+        "right_shape_rate": 1.0
+      },
+      "heatmap": {
+        "n": 1,
+        "render_rate": 1.0,
+        "right_shape_rate": 1.0
+      },
+      "histogram": {
+        "n": 1,
+        "render_rate": 1.0,
+        "right_shape_rate": 1.0
+      },
+      "line": {
+        "n": 4,
+        "render_rate": 1.0,
+        "right_shape_rate": 1.0
+      },
+      "pie_or_donut": {
+        "n": 1,
+        "render_rate": 1.0,
+        "right_shape_rate": 1.0
+      },
+      "scatter": {
+        "n": 3,
+        "render_rate": 1.0,
+        "right_shape_rate": 1.0
+      },
+      "time_series": {
+        "n": 2,
+        "render_rate": 1.0,
+        "right_shape_rate": 1.0
+      },
+      "treemap_funnel_waterfall": {
+        "n": 1,
+        "render_rate": 1.0,
+        "right_shape_rate": 1.0
+      }
+    },
+    "by_hard_case": {
+      "ambiguous_question": {
+        "n": 1,
+        "render_rate": 1.0
+      },
+      "easy": {
+        "n": 14,
+        "render_rate": 1.0
+      },
+      "grouped_or_faceted": {
+        "n": 3,
+        "render_rate": 1.0
+      },
+      "missing_field": {
+        "n": 1,
+        "render_rate": 1.0
+      },
+      "multi_column_aggregation": {
+        "n": 1,
+        "render_rate": 1.0
+      }
+    },
+    "generation_minutes": 2.0,
+    "failures": []
+  }
+}

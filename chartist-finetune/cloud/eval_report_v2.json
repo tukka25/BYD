@@ -1,0 +1,179 @@
+{
+  "lora-v2": {
+    "label": "lora-v2",
+    "base": "Qwen/Qwen3.5-9B",
+    "adapter_path": "/workspace/outputs/lora-v2",
+    "n": 300,
+    "render_rate": 0.9733,
+    "render_rate_quota_weighted": 0.9801,
+    "right_shape_rate": 0.87,
+    "hallucinated_column_rate": 0.0067,
+    "failure_kinds": {
+      "hallucinated_column": 2,
+      "runtime_error": 6
+    },
+    "by_bucket": {
+      "area": {
+        "n": 25,
+        "render_rate": 1.0,
+        "right_shape_rate": 0.68
+      },
+      "bar": {
+        "n": 33,
+        "render_rate": 1.0,
+        "right_shape_rate": 0.879
+      },
+      "box": {
+        "n": 23,
+        "render_rate": 0.957,
+        "right_shape_rate": 0.826
+      },
+      "gauge_or_indicator": {
+        "n": 17,
+        "render_rate": 0.882,
+        "right_shape_rate": 0.765
+      },
+      "grouped_or_stacked_bar": {
+        "n": 27,
+        "render_rate": 0.963,
+        "right_shape_rate": 0.889
+      },
+      "heatmap": {
+        "n": 23,
+        "render_rate": 0.913,
+        "right_shape_rate": 0.739
+      },
+      "histogram": {
+        "n": 24,
+        "render_rate": 1.0,
+        "right_shape_rate": 0.958
+      },
+      "line": {
+        "n": 33,
+        "render_rate": 1.0,
+        "right_shape_rate": 0.97
+      },
+      "pie_or_donut": {
+        "n": 25,
+        "render_rate": 1.0,
+        "right_shape_rate": 0.88
+      },
+      "scatter": {
+        "n": 27,
+        "render_rate": 1.0,
+        "right_shape_rate": 0.963
+      },
+      "time_series": {
+        "n": 22,
+        "render_rate": 1.0,
+        "right_shape_rate": 0.955
+      },
+      "treemap_funnel_waterfall": {
+        "n": 21,
+        "render_rate": 0.905,
+        "right_shape_rate": 0.857
+      }
+    },
+    "by_hard_case": {
+      "ambiguous_question": {
+        "n": 25,
+        "render_rate": 1.0
+      },
+      "date_parsing_and_resampling": {
+        "n": 19,
+        "render_rate": 1.0
+      },
+      "easy": {
+        "n": 186,
+        "render_rate": 0.984
+      },
+      "grouped_or_faceted": {
+        "n": 18,
+        "render_rate": 0.833
+      },
+      "missing_field": {
+        "n": 19,
+        "render_rate": 1.0
+      },
+      "multi_column_aggregation": {
+        "n": 33,
+        "render_rate": 0.939
+      }
+    },
+    "generation_minutes": 8.7,
+    "failures": [
+      {
+        "test_id": "t0005",
+        "bucket": "gauge_or_indicator",
+        "hard_case": "grouped_or_faceted",
+        "failure_kind": "runtime_error",
+        "violations": [],
+        "error": "ultiple bars.\n        width\n            Sets the plot's width (in px).\n        xaxis\n            :class:`plotly.graph_objects.layout.XAxis` instance or\n            dict with compatible properties\n        yaxis\n            :class:`plotly.graph_objects.layout.YAxis` instance or\n            dict with c",
+        "code": "import plotly.graph_objects as go\n\nagg = df.groupby('Vehicle Type', as_index=False)['Average Speed'].mean()\nfleet = agg['Average Speed'].mean()\nagg['Fleet Avg'] = fleet\nagg = agg.sort_values('Average Speed', ascending=False)\nfig = go.Figure(go.Funnel(y=agg['Vehicle Type'], x=agg['Average Speed'], textinfo='value+percent initial', hovertemplate='%{y}<br>Avg Speed: %{x:.2f}<br>Fleet Avg: %{reference}<extra></extra>'))\nfig.update_layout(title='Average Speed by Vehicle Type vs Fleet Average', yaxis_"
+      },
+      {
+        "test_id": "t0008",
+        "bucket": "treemap_funnel_waterfall",
+        "hard_case": "grouped_or_faceted",
+        "failure_kind": "runtime_error",
+        "violations": [],
+        "error": "ars.\n        width\n            Sets the plot's width (in px).\n        xaxis\n            :class:`plotly.graph_objects.layout.XAxis` instance or\n            dict with compatible properties\n        yaxis\n            :class:`plotly.graph_objects.layout.YAxis` instance or\n            dict with compatible",
+        "code": "import plotly.express as px\nimport plotly.graph_objects as go\n\nagg = df.groupby(['propertyName', 'marketSegment', 'roomType'], as_index=False)['totalRoomRevenue'].sum()\nagg = agg[agg['totalRoomRevenue'] > 0]\n\nfig = px.treemap(\n    agg,\n    path=[px.Constant('All Properties'), 'propertyName', 'marketSegment', 'roomType'],\n    values='totalRoomRevenue',\n    color='totalRoomRevenue',\n    color_continuous_scale='Blues',\n    title='Total Room Revenue: Property > Market Segment > Room Type'\n)\nfig.upda"
+      },
+      {
+        "test_id": "t0088",
+        "bucket": "box",
+        "hard_case": "multi_column_aggregation",
+        "failure_kind": "runtime_error",
+        "violations": [],
+        "error": "Traceback (most recent call last):\n  File \"/workspace/chartist/_candidate_runner.py\", line 41, in <module>\n    sys.exit(main())\n             ^^^^^^\n  File \"/workspace/chartist/_candidate_runner.py\", line 33, in main\n    exec(code, {\"df\": df, \"pandas\": pd, \"pd\": pd, \"px\": px, \"go\": go, \"json\": json})",
+        "code": "import plotly.express as px\nimport plotly.graph_objects as go\n\nagg = df.groupby('hr_employment_type', as_index=False).agg(total_headcount=('hr_headcount', 'sum'), avg_salary=('hr_avg_salary_usd', 'mean'))\nagg = agg.sort_values('total_headcount', ascending=False)\n\nfig = px.box(df, x='hr_employment_type', y='hr_avg_salary_usd', color='hr_employment_type', points='outliers', hover_data=['hr_department', 'hr_region', 'hr_headcount'], labels={'hr_employment_type': 'Employment Type', 'hr_avg_salary_us"
+      },
+      {
+        "test_id": "t0099",
+        "bucket": "treemap_funnel_waterfall",
+        "hard_case": null,
+        "failure_kind": "runtime_error",
+        "violations": [],
+        "error": "t_trace_grid_reference(\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/plotly/_subplots.py\", line 1436, in _set_trace_grid_reference\n    raise ValueError(\nValueError: Trace type 'pie' is not compatible with subplot type 'xy'\nat grid position (1, 1)\n\nSee the doc",
+        "code": "import plotly.graph_objects as go\nfrom plotly.subplots import make_subplots\n\nagg = df.groupby(['mode_cd', 'fare_typ'], as_index=False).agg(tot_rdr=('tot_rdr', 'sum'), tot_rev=('tot_rev', 'sum'))\nmodes = sorted(agg['mode_cd'].unique())\nfares = sorted(agg['fare_typ'].unique())\nmode_map = {m: i + 1 for i, m in enumerate(modes)}\nfare_map = {f: i + 1 for i, f in enumerate(fares)}\n\nfig = make_subplots(rows=1, cols=2, subplot_titles=('Total Ridership', 'Total Revenue'), horizontal_spacing=0.12)\nfor m i"
+      },
+      {
+        "test_id": "t0127",
+        "bucket": "gauge_or_indicator",
+        "hard_case": "multi_column_aggregation",
+        "failure_kind": "runtime_error",
+        "violations": [],
+        "error": "Error: \n    Invalid value of type 'builtins.str' received for the 'yref' property of layout.annotation\n        Received value: 'container'\n\n    The 'yref' property is an enumeration that may be specified as:\n      - One of the following enumeration values:\n            ['paper']\n      - A string that",
+        "code": "import plotly.express as px\n\ntotal = df['TXN_CNT'].sum()\nfailed = df['FAILED_TXN_CNT'].sum()\nshare = (failed / total * 100) if total else 0\n\nfig = px.pie(\n    df,\n    values='FAILED_TXN_CNT',\n    names='CHNL_CD',\n    title='Share of Failed Transactions by Channel (overall)'\n)\nfig.update_traces(textinfo='percent+label')\nfig.update_layout(annotations=[dict(text='Failed: ' + str(int(failed)), yref='container', y=0.5, xref='x', x=0.5, showarrow=False)])\nfig.update_layout(title_text='Overall Share of"
+      },
+      {
+        "test_id": "t0187",
+        "bucket": "heatmap",
+        "hard_case": null,
+        "failure_kind": "runtime_error",
+        "violations": [],
+        "error": "to see\n            multiple bars.\n        width\n            Sets the plot's width (in px).\n        xaxis\n            :class:`plotly.graph_objects.layout.XAxis` instance or\n            dict with compatible properties\n        yaxis\n            :class:`plotly.graph_objects.layout.YAxis` instance or\n   ",
+        "code": "import plotly.express as px\n\nfig = px.scatter_map(df, lat='PLOT_ID', lon='PLOT_ID', color='CROP_TYPE_CD', size='YIELD_BU_AC_QTY', hover_data=['IRRIG_METHOD_CD', 'HARVEST_AREA_AC_QTY', 'MOISTURE_PCT'], color_discrete_sequence=px.colors.sequential.Viridis, labels={'PLOT_ID': 'Plot ID', 'CROP_TYPE_CD': 'Crop Type', 'YIELD_BU_AC_QTY': 'Yield (bu/ac)'}, title='Yield Intensity Across Plots by Crop Type')\nfig.update_layout(map_style='open-street-map', zoom=10)\nprint(fig.to_json())"
+      },
+      {
+        "test_id": "t0211",
+        "bucket": "grouped_or_stacked_bar",
+        "hard_case": null,
+        "failure_kind": "hallucinated_column",
+        "violations": [],
+        "error": "taframe(\n                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/plotly/express/_core.py\", line 1380, in process_args_into_dataframe\n    raise ValueError(err_msg)\nValueError: Value of 'facet_col' is not the name of a column in 'data_frame'. Expected",
+        "code": "import plotly.express as px\n\ncounts = df.groupby(['appointment_channel', 'appointment_status']).size().reset_index(name='count')\nfig = px.bar(counts, x='appointment_channel', y='count', color='appointment_status', barmode='stack', facet_col='appointment_clinic_type', labels={'appointment_channel': 'Channel', 'count': 'Appointment Count', 'appointment_status': 'Status', 'appointment_clinic_type': 'Clinic Type'}, title='Appointment Status Counts by Channel, Stacked by Clinic Type')\nfig.update_layo"
+      },
+      {
+        "test_id": "t0223",
+        "bucket": "heatmap",
+        "hard_case": "grouped_or_faceted",
+        "failure_kind": "hallucinated_column",
+        "violations": [],
+        "error": "                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/plotly/express/_core.py\", line 1380, in process_args_into_dataframe\n    raise ValueError(err_msg)\nValueError: Value of 'color' is not the name of a column in 'data_frame'. Expected one of ['incide",
+        "code": "import plotly.express as px\n\ncounts = df.groupby(['incident_weather_condition', 'incident_road_type']).size().reset_index(name='incident_count')\nfig = px.bar(counts, x='incident_weather_condition', y='incident_count', color='incident_severity_level', barmode='stack', hover_data=['incident_road_type'], labels={'incident_weather_condition': 'Weather Condition', 'incident_count': 'Incident Count', 'incident_severity_level': 'Severity'}, title='Incident Counts by Weather and Road Type, Colored by Se"
+      }
+    ]
+  }
+}
