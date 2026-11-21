@@ -21,7 +21,7 @@ from pathlib import Path
 import pandas as pd
 
 from contract import (ANALYST_SYSTEM_PROMPT, ANALYST_USER_TEMPLATE, CHARTIST_SYSTEM_PROMPT, NO_REQUEST,
-                      PLANNER_SYSTEM_PROMPT, PLANNER_USER_TEMPLATE, check_directions, check_specs,
+                      PLANNER_SYSTEM_PROMPT, PLANNER_USER_TEMPLATE, check_directions, check_spec, check_specs,
                       columns_by_table, profile_table, render_directions, render_profiles, render_spec,
                       validate_chart_code)
 
@@ -64,6 +64,22 @@ def main() -> int:
     specs = {r["question_id"]: r["spec"] for r in _jsonl("data/v2/target_specs.jsonl")}
     rng = random.Random(args.seed)
     rows: list[dict] = []
+    profiles: dict[str, object] = {}
+
+    def profile_of(schema_id: str):
+        if schema_id not in profiles:
+            schema = schemas[schema_id]
+            profiles[schema_id] = profile_table(schema["table_name"], pd.read_csv(schema["fixture_csv"]))
+        return profiles[schema_id]
+
+    def current(spec: dict | None, schema_id: str) -> dict | None:
+        """The spec as today's check normalises it, or None if it no longer passes."""
+        if not spec or schema_id not in schemas:
+            return None
+        checked, _ = check_spec(spec, columns_by_table([profile_of(schema_id)]))
+        return checked
+
+    rechecked = {"kept": 0, "dropped": 0}
 
     def chartist(row: dict, prompt: str, form: str) -> None:
         rows.append({"schema_id": row["schema_id"], "row_id": f"{row['question_id']}:{form}", "role": "chartist",
@@ -73,7 +89,10 @@ def main() -> int:
                                   {"role": "assistant", "content": row["messages"][2]["content"]}]})
 
     for row in _jsonl("data/targets.jsonl") + _jsonl("data/v2/new_targets.jsonl"):
-        spec = row.get("spec") or specs.get(row["question_id"])
+        raw = row.get("spec") or specs.get(row["question_id"])
+        spec = current(raw, row["schema_id"])
+        if raw:
+            rechecked["kept" if spec else "dropped"] += 1
         if spec and rng.random() < args.plan_share:
             chartist(row, spec_prompt(row["messages"][1]["content"], spec), "plan")
         else:
@@ -81,15 +100,16 @@ def main() -> int:
     for row in _jsonl("data/docs_rows.jsonl"):
         chartist(row, row["messages"][1]["content"], "question")
     for row in _jsonl("data/v2/spec_targets.jsonl"):
+        if current(row.get("spec"), row["schema_id"]) is None:
+            rechecked["dropped"] += 1
+            continue
         chartist(row, row["messages"][1]["content"], "plan")
+    print(f"answer plans under today's check: {rechecked}")
 
-    profiles: dict[str, object] = {}
     stale_plans: list[str] = []
     for plan in _jsonl("data/v2/plans.jsonl"):
         schema = schemas[plan["schema_id"]]
-        if plan["schema_id"] not in profiles:
-            profiles[plan["schema_id"]] = profile_table(schema["table_name"], pd.read_csv(schema["fixture_csv"]))
-        profile = profiles[plan["schema_id"]]
+        profile = profile_of(plan["schema_id"])
         tables = columns_by_table([profile])
         directions, d_err = check_directions({"directions": plan["directions"]}, tables)
         charts, c_err = check_specs({"charts": plan["charts"]}, tables)

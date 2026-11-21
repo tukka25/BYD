@@ -13,7 +13,10 @@ import json
 from pathlib import Path
 
 import client
-from contract import CHARTIST_SYSTEM_PROMPT, CHARTIST_USER_TEMPLATE, render_spec, validate_chart_code
+import pandas as pd
+
+from contract import (CHARTIST_SYSTEM_PROMPT, CHARTIST_USER_TEMPLATE, check_spec, columns_by_table,
+                      profile_table, render_spec, validate_chart_code)
 from executor import run_candidates
 from extract_specs import columns_in_code, consistent
 
@@ -33,7 +36,19 @@ def main() -> int:
         for r in (json.loads(l) for l in Path("data/schemas.jsonl").read_text(encoding="utf-8").splitlines() if l)
     }
     plans = [json.loads(l) for l in Path("data/v2/plans.jsonl").read_text(encoding="utf-8").splitlines() if l.strip()]
-    jobs = [(p, n, spec) for p in plans for n, spec in enumerate(p["charts"])][: args.max_charts]
+    tables: dict[str, dict] = {}
+    jobs = []
+    for p in plans:
+        if p["schema_id"] not in tables:
+            s = schemas[p["schema_id"]]
+            tables[p["schema_id"]] = columns_by_table([profile_table(s["table_name"], pd.read_csv(s["fixture_csv"]))])
+        for n, spec in enumerate(p["charts"]):
+            # Today's check, normalised: the prompt shows exactly the plan that passes it.
+            checked, _ = check_spec(spec, tables[p["schema_id"]])
+            if checked is not None:
+                jobs.append((p, n, checked))
+    jobs = jobs[: args.max_charts]
+    print(f"{len(jobs)} chart plans to write code for")
 
     def prompt(p, spec):
         s = schemas[p["schema_id"]]
