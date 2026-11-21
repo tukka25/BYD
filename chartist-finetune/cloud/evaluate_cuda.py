@@ -61,6 +61,21 @@ def clean(text: str) -> str:
 
 
 def main() -> int:
+    # lora-v1's cloud eval lost 16 treemap rows to pyarrow failing to import
+    # (pyarrow._fs._init_ca_paths -> ssl.py). Fail here, before generation, not
+    # inside 16 candidates where it reads as a model error. Absent is fine
+    # (pandas runs without it, as it does locally); installed but broken is not.
+    try:
+        import pyarrow.fs  # noqa: F401
+    except Exception as exc:  # noqa: BLE001
+        absent = isinstance(exc, ModuleNotFoundError) and exc.name in ("pyarrow", "pyarrow.fs")
+        if not absent:
+            raise SystemExit(
+                f"pyarrow is installed but does not import ({exc!r}); fix it first: "
+                "pip install -U pyarrow certifi && export SSL_CERT_FILE=$(python -m certifi), "
+                "or pip uninstall -y pyarrow"
+            )
+
     ap = argparse.ArgumentParser()
     ap.add_argument("--base", default="Qwen/Qwen3.5-9B")
     ap.add_argument("--adapter-path", default="none", help='path, or "none" for the base model')
