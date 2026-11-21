@@ -29,7 +29,14 @@ def main() -> int:
     ap.add_argument("--max-charts", type=int, default=1000)
     ap.add_argument("--max-spend", type=float, default=4.00)
     ap.add_argument("--out", default="data/v2/spec_targets.jsonl")
+    ap.add_argument("--only-kinds", default="", help="comma list: write code only for these chart kinds")
+    ap.add_argument("--resume", action="store_true", help="skip plans already in --out and append to it")
     args = ap.parse_args()
+    only = {k.strip() for k in args.only_kinds.split(",") if k.strip()}
+    existing = (
+        {json.loads(l)["question_id"] for l in Path(args.out).read_text(encoding="utf-8").splitlines() if l.strip()}
+        if args.resume and Path(args.out).exists() else set()
+    )
 
     schemas = {
         r["schema_id"]: r
@@ -45,8 +52,11 @@ def main() -> int:
         for n, spec in enumerate(p["charts"]):
             # Today's check, normalised: the prompt shows exactly the plan that passes it.
             checked, _ = check_spec(spec, tables[p["schema_id"]])
-            if checked is not None:
-                jobs.append((p, n, checked))
+            if checked is None or f"{p['request_id']}-c{n}" in existing:
+                continue
+            if only and checked["chart"] not in only:
+                continue
+            jobs.append((p, n, checked))
     # Round-robin by position, so a cut keeps every dashboard's first charts
     # rather than every chart of the first dashboards.
     jobs = sorted(jobs, key=lambda job: job[1])[: args.max_charts]
@@ -71,7 +81,7 @@ def main() -> int:
     verdicts = run_candidates([(c[3], schemas[c[0]["schema_id"]]["fixture_csv"]) for c in candidates], max_workers=8)
     kept = 0
     reasons: dict[str, int] = {}
-    with Path(args.out).open("w", encoding="utf-8") as handle:
+    with Path(args.out).open("a" if args.resume else "w", encoding="utf-8") as handle:
         for (p, n, spec, code), verdict in zip(candidates, verdicts):
             reason = ("contract" if validate_chart_code(code)
                       else "does not run" if not verdict.ok
