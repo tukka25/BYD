@@ -19,14 +19,21 @@ ENV_FILE = REPO / ".env"
 
 SONNET = "claude-sonnet-5-5"
 HAIKU = "claude-haiku-5-5"
+OPUS = "claude-opus-5-5"
 
 # USD per 1M tokens: (input, output, cache_read, cache_write).
 # cache_write is 1.25x base input (5-minute TTL). Haiku's cache_read rate is a
-# 0.1x-of-base ESTIMATE, not a published figure from the plan.
+# 0.1x-of-base ESTIMATE, not a published figure from the plan. Opus 5.5 is from
+# the claude-api pricing table: $4 / $20, cache reads $0.20, writes $5.
 PRICES = {
     SONNET: (2.00, 10.00, 0.10, 2.50),
     HAIKU: (0.10, 0.50, 0.01, 0.125),
+    OPUS: (4.00, 20.00, 0.20, 5.00),
 }
+
+LEDGER = Path("runs/spend.jsonl")
+# The whole v2 data budget. The account holds about $40; this leaves room.
+V2_BUDGET = 35.0
 
 
 def _read_key() -> str:
@@ -148,7 +155,7 @@ def price(usage: dict, model: str, batched: bool = True) -> float:
 def record_spend(label: str, model: str, usage: dict, extra: dict | None = None) -> float:
     """Append a line to the ledger so the budget stays auditable."""
     cost = price(usage, model)
-    ledger = Path("runs/spend.jsonl")
+    ledger = LEDGER
     ledger.parent.mkdir(parents=True, exist_ok=True)
     with ledger.open("a", encoding="utf-8") as handle:
         handle.write(
@@ -160,3 +167,34 @@ def record_spend(label: str, model: str, usage: dict, extra: dict | None = None)
         )
     print(f"[{label}] cost ${cost:.4f} (batched)")
     return cost
+
+
+def phase_spend(phase: str = "v2", ledger: Path = LEDGER) -> float:
+    """What a phase has cost so far, from the ledger every batch writes to."""
+    if not ledger.is_file():
+        return 0.0
+    total = 0.0
+    for line in ledger.read_text(encoding="utf-8").splitlines():
+        if line.strip():
+            row = json.loads(line)
+            if row.get("phase") == phase:
+                total += float(row.get("cost_usd", 0.0))
+    return round(total, 6)
+
+
+def worst_case_cost(model: str, n: int, input_tokens: int, max_tokens: int) -> float:
+    """A batch's cost if every reply ran to max_tokens: the guard's default estimate."""
+    rate_in, rate_out, _, _ = PRICES[model]
+    return round(n * (input_tokens * rate_in + max_tokens * rate_out) / 1_000_000 * 0.5, 4)
+
+
+def guard(label: str, planned_cost: float, cap: float = V2_BUDGET, phase: str = "v2",
+          ledger: Path = LEDGER) -> None:
+    """Refuse to start a batch that could take the phase past its cap."""
+    spent = phase_spend(phase, ledger)
+    if spent + planned_cost > cap:
+        raise SystemExit(
+            f"[{label}] refusing: {phase} spend ${spent:.2f} + planned ${planned_cost:.2f} "
+            f"would pass the ${cap:.2f} cap"
+        )
+    print(f"[{label}] budget ok: {phase} spent ${spent:.2f}, planned up to ${planned_cost:.2f}, cap ${cap:.2f}")
