@@ -233,3 +233,21 @@ takes about 28 minutes.
 
 Fixed along the way: `run_agent_workflow` discarded the caller's `selected_source`
 and `available_sources` and charted a hardcoded CSV on every request (`a413539`).
+
+## lora-v2 (2026-11-21)
+
+| | |
+|---|---|
+| Data | `data/mlx_v2_capped`: 7,321 train / 949 valid, MAXLEN 2048, 4.5x v1's text (chartist question + plan forms, analyst, planner) |
+| Pod | A100 SXM 80GB, $2.19/hr, Secure Cloud, EU-RO-1 (no HIGH_PERFORMANCE data center had A100 stock that day) |
+| Volume | 20 GB STANDARD network volume at `/workspace` for data, checkpoints and logs; `HF_HOME=/root/hf-cache` on the 80 GB container disk, so the 18 GB base model loads from local disk in ~3 s (v1: ~6 min from the network volume) |
+| Training | 2 epochs, 1,832 steps, 3.3 h; validation loss 0.157 -> 0.145 -> 0.132 -> 0.131 -> **0.126 (step 1500)** -> 0.127 -> 0.127; `load_best_model_at_end` saved checkpoint-1500 |
+| Eval on the pod | frozen 300: render **97.3%**, right shape **87.0%**, invented columns 0.7% (v1's 91.3% / 81.0% there is a lower bound: 16 pyarrow crashes) |
+| Pod lifetime | 19:26 -> ~23:16 UTC, deleted with its volume after the adapter was verified locally; billing read at deletion: pod $6.37 + volume $0.01, not yet settled (3 h 50 m x $2.19 ~ $8.40) |
+
+What went wrong, so the next run avoids it:
+
+- **The fast linear-attention kernel produced NaN.** `flash-linear-attention` 0.6.0 does not import with torch 2.8's Triton 3.4; 0.4.2 imports and passes a toy forward/backward, but in training the loss read 0 and grad_norm NaN from the first logged step. Reverted to the reference kernels (same losses as before to the third decimal). Do not install fla on this stack without checking the first logged loss.
+- **Per-step time is set by row length.** v2 averaged ~6.5 s/step against v1's 4.35 s at MAXLEN 1536; estimate from tokens, not rows.
+- **`evaluate_cuda.py` needs `PYTHONPATH=/workspace/chartist`.** Run as `cloud/evaluate_cuda.py`, Python searches `cloud/` for `chart_types`; the first on-pod eval died on that import (fixed in `RUNBOOK_v2.md`).
+- **Self-stop backstop.** Pods carry `RUNPOD_API_KEY` and `RUNPOD_POD_ID`, so `runpodctl stop pod "$RUNPOD_POD_ID"` from inside the pod caps idle billing; a stop keeps the network volume. Kill helper processes by PID from a script file: `pkill -f name` inside `exec-pod` matches its own command line and kills the call.
