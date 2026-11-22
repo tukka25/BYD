@@ -430,13 +430,29 @@ def _lay_out(sections: List[Section]) -> List[Section]:
     return sections
 
 
+def spread_sample(frame: pd.DataFrame, rows: int) -> pd.DataFrame:
+    """At most `rows` rows drawn from the whole frame, kept in their original order.
+
+    The first rows of a table are not a sample of it: the Spotify table is stored
+    sorted by genre, and its first 2,000 rows told the planner there were 2 genres
+    when there are 6. The draw is seeded, so the profile built from it, and with
+    it the planner's prompt, is the same on every run.
+    """
+    if len(frame) <= rows:
+        return frame
+    return frame.sample(n=rows, random_state=0).sort_index().reset_index(drop=True)
+
+
 def sample_source(source: Dict[str, Any], data_dir: Any, rows: int = SAMPLE_ROWS) -> pd.DataFrame:
-    """A bounded sample of whichever kind of source this is."""
+    """A bounded sample of whichever kind of source this is, drawn from all of it.
+
+    Files are read whole to draw from: a chart reads the whole file anyway.
+    """
     if source.get("type") == "db":
         from app.services import db_sources
 
         frame = db_sources.load_table_by_id(str(source["source_id"]), str(source["table"]))
-        return frame.head(rows)
+        return spread_sample(frame, rows)
 
     from pathlib import Path
 
@@ -444,5 +460,5 @@ def sample_source(source: Dict[str, Any], data_dir: Any, rows: int = SAMPLE_ROWS
     if not path.exists():
         path = Path(str(data_dir)) / str(source.get("name"))
     if path.suffix.lower() in (".xlsx", ".xls"):
-        return pd.read_excel(path, nrows=rows)
-    return pd.read_csv(path, nrows=rows)
+        return spread_sample(pd.read_excel(path), rows)
+    return spread_sample(pd.read_csv(path), rows)

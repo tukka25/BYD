@@ -53,7 +53,8 @@ def _load(source: DataSource, table: Optional[str]) -> tuple[pd.DataFrame, str]:
         if not tables:
             raise HTTPException(status_code=400, detail="That database has no readable tables.")
         chosen = table if table in tables else tables[0]
-        return db_sources.load_table(source, chosen).head(SAMPLE_ROWS), f"{chosen} · {source.display_name}"
+        frame = architect.spread_sample(db_sources.load_table(source, chosen), SAMPLE_ROWS)
+        return frame, f"{chosen} · {source.display_name}"
 
     path = source.file_path or source.original_filename or source.display_name
     frame = architect.sample_source(
