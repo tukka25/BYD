@@ -226,6 +226,15 @@ def check_directions(payload: Any, tables: dict[str, dict[str, str]]) -> tuple[l
     return valid[:MAX_DIRECTIONS], errors
 
 
+def _categories(kinds: dict[str, str]) -> str:
+    """Where to look instead: the table's category columns, by name."""
+    names = [name for name, kind in kinds.items() if kind == "category"]
+    if not names:
+        return "this table has no category column"
+    more = f" (and {len(names) - 6} more)" if len(names) > 6 else ""
+    return f"use a category column: {', '.join(names[:6])}{more}"
+
+
 def check_spec(item: Any, tables: dict[str, dict[str, str]]) -> tuple[dict | None, list[str]]:
     """One chart plan: the normalised plan, or None and the reasons it failed."""
     if not isinstance(item, dict):
@@ -294,11 +303,11 @@ def check_spec(item: Any, tables: dict[str, dict[str, str]]) -> tuple[dict | Non
         else:
             need(kx in _DIMENSION, "a bar chart needs a category, date or year column on x")
         need(measure, "a bar chart needs a number column as y, or agg count")
-        need(agg != "none", "a bar chart needs an aggregation")
+        need(agg != "none", f"a bar chart needs agg: sum, mean or count (one bar per '{x}' value)")
     elif chart == "pie":
-        need(kx == "category", "a pie needs a category column on x for the slices")
+        need(kx == "category", f"a pie needs a category column on x for the slices; '{x}' is {kx or 'missing'}: {_categories(kinds)}")
         need(measure, "a pie needs a number column as y, or agg count")
-        need(agg != "none", "a pie needs an aggregation")
+        need(agg != "none", "a pie needs agg: sum, mean or count")
     elif chart == "scatter":
         need(kx in _NUMBER and ky in _NUMBER, "a scatter needs two number columns on x and y")
         need(agg == "none", "a scatter plots raw points: agg none")
@@ -308,27 +317,30 @@ def check_spec(item: Any, tables: dict[str, dict[str, str]]) -> tuple[dict | Non
         need(agg == "none", "a histogram counts raw values: agg none")
     elif chart == "box":
         need(ky in _NUMBER, "a box plot needs a number column on y")
-        need(not x or kx == "category", "a box plot's x, if any, must be a category")
+        need(not x or kx == "category", f"a box plot's x, if any, must be a category; '{x}' is {kx}: {_categories(kinds)}")
         need(agg == "none", "a box plot shows raw values: agg none")
     elif chart == "heatmap":
         need(kx in _DIMENSION and kg in _DIMENSION, "a heatmap needs two category or date columns, on x and group")
         need(measure, "a heatmap needs a number column as y, or agg count")
         need(agg != "none", "a heatmap needs an aggregation")
     elif chart in ("treemap", "sunburst"):
-        need(kx == "category", f"a {chart} needs a category column on x")
-        need(not group or kg == "category", f"a {chart}'s inner level (group) must be a category")
+        need(kx == "category", f"a {chart} needs a category column on x; '{x}' is {kx or 'missing'}: {_categories(kinds)}")
+        need(not group or kg == "category", f"a {chart}'s inner level (group) must be a category; '{group}' is {kg}: {_categories(kinds)}")
         need(measure, f"a {chart} needs a number column as y, or agg count")
-        need(agg != "none", f"a {chart} needs an aggregation")
+        need(agg != "none", f"a {chart} needs agg: sum, mean or count")
     elif chart == "funnel":
-        need(kx == "category", "a funnel needs the stage category on x")
+        need(kx == "category", f"a funnel needs the stage category on x; '{x}' is {kx or 'missing'}: {_categories(kinds)}")
         need(measure, "a funnel needs a number column as y, or agg count")
-        need(agg != "none", "a funnel needs an aggregation")
+        need(agg != "none", "a funnel needs agg: sum, mean or count")
     elif chart == "waterfall":
         need(kx in _DIMENSION, "a waterfall needs a category or period on x")
         need(ky in _NUMBER, "a waterfall needs a number column as y")
         need(agg != "none", "a waterfall needs an aggregation")
     if grain and kx != "date":
-        problems.append("grain is only for a date column on x")
+        if kx == "year":
+            problems.append(f"x '{x}' is already a year column: set grain to \"\"")
+        else:
+            problems.append(f"grain is only for a date column on x; '{x}' is {kx or 'missing'}: set grain to \"\"")
     if agg in ("sum", "mean", "median", "min", "max") and ky not in _NUMBER:
         problems.append(f"agg {agg} needs a number column as y; '{y or '(empty)'}' is not one")
     if problems:

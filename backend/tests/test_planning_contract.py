@@ -158,3 +158,29 @@ def test_a_bar_over_a_text_column_still_needs_a_short_top_n():
 def test_a_bar_over_an_id_column_is_refused_even_with_top_n():
     valid, errors = check_specs({"charts": [top_tracks(x="track_id")]}, TRACKS)
     assert valid == [] and errors
+
+
+SONGS = {"tracks": {"track_name": "text", "playlist_name": "text", "playlist_genre": "category",
+                    "playlist_subgenre": "category", "track_popularity": "number", "year": "year",
+                    "released": "date"}}
+
+
+def test_grain_on_a_year_column_says_to_remove_it():
+    # gapminder lost all three trend charts to this: grain=year on a year column, three tries
+    case = spec(table="tracks", chart="line", x="year", y="track_popularity", agg="mean",
+                grain="year", sort="", top_n=0)
+    valid, errors = check_specs({"charts": [case]}, SONGS)
+    assert valid == [] and "already a year column" in errors[0] and 'grain to ""' in errors[0]
+
+
+def test_a_treemap_over_free_text_names_the_category_columns():
+    case = spec(table="tracks", chart="treemap", x="playlist_genre", group="playlist_name",
+                y="track_popularity", agg="sum", sort="", top_n=0)
+    valid, errors = check_specs({"charts": [case]}, SONGS)
+    assert valid == [] and "'playlist_name' is text" in errors[0] and "playlist_subgenre" in errors[0]
+
+
+def test_a_bar_without_aggregation_says_which_to_use():
+    case = spec(table="tracks", x="playlist_genre", y="track_popularity", agg="none")
+    valid, errors = check_specs({"charts": [case]}, SONGS)
+    assert valid == [] and "sum, mean or count" in errors[0]
