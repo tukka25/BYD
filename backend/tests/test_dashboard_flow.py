@@ -60,3 +60,29 @@ def test_an_unusable_plan_is_an_error_event(tmp_path):
     events = list(build_dashboard("", [_source(tmp_path)], str(tmp_path),
                                   Scripted(bad, bad, bad), Scripted(), None))
     assert events[-1].kind == "error" and "what to show" in events[-1].data["detail"]
+
+
+def _status_labels(events):
+    return [e.data["label"] for e in events if e.kind == "status"]
+
+
+def test_an_analyst_retry_shows_on_screen(tmp_path):
+    # Retries took minutes behind one unchanging label, which read as a stuck build.
+    bad = json.dumps({"directions": [{"question": "q", "why": "", "table": "saas.csv", "columns": ["x"]}]})
+    chartist = ChartistAgent(llm=None, generator=Fixed(), chart_type_hint_style="off")
+    events = list(build_dashboard("churn by country", [_source(tmp_path)], str(tmp_path),
+                                  Scripted(bad, DIRECTIONS), Scripted(CHARTS), chartist, top=5))
+    labels = _status_labels(events)
+    assert len(labels) == 4 and labels[1] == "Choosing what to show" and labels[3] == "Planning the charts"
+    assert labels[2].startswith("Choosing what to show") and "try 2 of 3" in labels[2]
+
+
+def test_a_planner_retry_shows_on_screen(tmp_path):
+    bad = CHARTS.replace('"x": "cntry_cd"', '"x": "nope"')
+    chartist = ChartistAgent(llm=None, generator=Fixed(), chart_type_hint_style="off")
+    events = list(build_dashboard("churn by country", [_source(tmp_path)], str(tmp_path),
+                                  Scripted(DIRECTIONS), Scripted(bad, CHARTS), chartist, top=5))
+    labels = _status_labels(events)
+    assert len(labels) == 4 and labels[2] == "Planning the charts"
+    assert labels[3].startswith("Planning the charts") and "try 2 of 3" in labels[3]
+    assert events[-1].kind == "chart"

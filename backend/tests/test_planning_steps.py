@@ -1,4 +1,5 @@
 import json
+import logging
 
 import pandas as pd
 
@@ -60,3 +61,12 @@ def test_the_planner_gets_the_directions_and_returns_checked_plans():
     step = plan_charts(llm, directions, _profiles())
     assert step.errors == [] and step.items[0]["title"] == "Churn by country"
     assert "1. Where is churn highest?" in llm.calls[0][1].content
+
+
+def test_each_failed_try_is_logged_with_its_problems(caplog):
+    # A plan that needs retries was invisible in the api log: only the final plan was logged.
+    caplog.set_level(logging.INFO, logger="app.services.agents.planning")
+    propose_directions(Scripted(BAD, GOOD), "churn by country", _profiles())
+    lines = [r.getMessage() for r in caplog.records if r.name == "app.services.agents.planning"]
+    failed = [line for line in lines if "try 1 of 3" in line]
+    assert failed and "analyst" in failed[0] and "'country' not in table 'saas'" in failed[0]

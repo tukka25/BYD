@@ -6,6 +6,10 @@ reply is parsed, checked against the real tables by planning_contract, and any
 problem goes back to the model in plain words, at most twice more. The best
 attempt is kept, so a mostly-right plan still ships its good charts.
 
+Each failed try is logged with its problems, and each retry is announced before
+it starts (the `*_steps` variants yield a `Retry`), because a retry is another
+half-minute model call and the dashboard build shows it on screen.
+
 Messages are built as message objects, never through a prompt template: the
 prompts contain JSON braces, which a template would read as variables.
 """
@@ -13,7 +17,7 @@ from __future__ import annotations
 
 import logging
 from dataclasses import dataclass, field
-from typing import Any, Callable
+from typing import Any, Callable, Generator
 
 from langchain_core.messages import AIMessage, HumanMessage, SystemMessage
 
@@ -55,14 +59,25 @@ def _text(reply: Any) -> str:
     return str(content or "")
 
 
+@dataclass
+class Retry:
+    """A checked call is going back to the model: the try about to start, and why."""
+
+    attempt: int
+    of: int
+    errors: list[str]
+
+
 def run_checked(
     llm: Any,
     system: str,
     user: str,
     check: Check,
     tables: dict[str, dict[str, str]],
+    label: str = "planning",
     max_attempts: int = MAX_ATTEMPTS,
-) -> PlanStep:
+) -> Generator[Retry, None, PlanStep]:
+    """Call, check, and send problems back; yields a Retry before each retry, returns the PlanStep."""
     messages: list = [SystemMessage(content=system), HumanMessage(content=user)]
     best_items: list[dict] = []
     best_errors: list[str] = ["the model was not called"]
@@ -86,22 +101,50 @@ def run_checked(
             best_items, best_errors = items, errors
         if items and not errors:
             break
+        logger.info(
+            "[planning] %s try %d of %d: %d usable, %d problem(s): %s",
+            label, attempt, max_attempts, len(items), len(errors), "; ".join(errors[:10]),
+        )
+        if attempt == max_attempts:
+            break
         messages = messages + [
             AIMessage(content=raw),
             HumanMessage(content=FIX_PROMPT.format(errors="\n".join(f"- {e}" for e in errors[:10]))),
         ]
+        yield Retry(attempt + 1, max_attempts, errors)
     return PlanStep(best_items, best_errors, attempts, replies)
 
 
-def propose_directions(llm: Any, request: str, profiles: list[TableProfile]) -> PlanStep:
+def finish(steps: Generator[Retry, None, PlanStep]) -> PlanStep:
+    """Run a checked call to the end without announcing its retries."""
+    while True:
+        try:
+            next(steps)
+        except StopIteration as done:
+            return done.value
+
+
+def propose_directions_steps(
+    llm: Any, request: str, profiles: list[TableProfile]
+) -> Generator[Retry, None, PlanStep]:
     user = ANALYST_USER_TEMPLATE.format(
         request=(request or "").strip() or NO_REQUEST, profiles=render_profiles(profiles)
     )
-    return run_checked(llm, ANALYST_SYSTEM_PROMPT, user, check_directions, columns_by_table(profiles))
+    return run_checked(llm, ANALYST_SYSTEM_PROMPT, user, check_directions, columns_by_table(profiles), "analyst")
 
 
-def plan_charts(llm: Any, directions: list[dict], profiles: list[TableProfile]) -> PlanStep:
+def propose_directions(llm: Any, request: str, profiles: list[TableProfile]) -> PlanStep:
+    return finish(propose_directions_steps(llm, request, profiles))
+
+
+def plan_charts_steps(
+    llm: Any, directions: list[dict], profiles: list[TableProfile]
+) -> Generator[Retry, None, PlanStep]:
     user = PLANNER_USER_TEMPLATE.format(
         profiles=render_profiles(profiles), directions=render_directions(directions)
     )
-    return run_checked(llm, PLANNER_SYSTEM_PROMPT, user, check_specs, columns_by_table(profiles))
+    return run_checked(llm, PLANNER_SYSTEM_PROMPT, user, check_specs, columns_by_table(profiles), "planner")
+
+
+def plan_charts(llm: Any, directions: list[dict], profiles: list[TableProfile]) -> PlanStep:
+    return finish(plan_charts_steps(llm, directions, profiles))

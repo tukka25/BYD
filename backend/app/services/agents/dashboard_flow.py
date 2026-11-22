@@ -10,10 +10,10 @@ from __future__ import annotations
 import logging
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Any, Iterator
+from typing import Any, Generator, Iterator
 
 from app.services.agents.layout import INTRO_HEIGHT, intro_html, lay_out
-from app.services.agents.planning import plan_charts, propose_directions
+from app.services.agents.planning import PlanStep, Retry, plan_charts_steps, propose_directions_steps
 from app.services.agents.profiler import TableProfile, profile_table
 from app.services.agents.spec_runner import run_spec
 
@@ -77,6 +77,16 @@ def profile_sources(sources: list[dict], data_dir: str, brief: str = "") -> list
     return entries
 
 
+def _with_retry_status(steps: Generator[Retry, None, PlanStep], label: str) -> Generator[Event, None, PlanStep]:
+    """Run one checked planning call, turning each retry into a status line; returns its PlanStep."""
+    while True:
+        try:
+            retry = next(steps)
+        except StopIteration as done:
+            return done.value
+        yield Event("status", {"label": f"{label}, try {retry.attempt} of {retry.of}"})
+
+
 def build_dashboard(
     brief: str,
     sources: list[dict],
@@ -93,15 +103,17 @@ def build_dashboard(
         return
     profiles = [entry.profile for entry in tables]
 
-    yield Event("status", {"label": "Choosing what to show"})
-    directions = propose_directions(analyst_llm, brief, profiles)
+    choosing = "Choosing what to show"
+    yield Event("status", {"label": choosing})
+    directions = yield from _with_retry_status(propose_directions_steps(analyst_llm, brief, profiles), choosing)
     if not directions.items:
         yield Event("error", {"detail": "Could not work out what to show from this data: "
                                         + "; ".join(directions.errors[:3])})
         return
 
-    yield Event("status", {"label": "Planning the charts"})
-    charts = plan_charts(planner_llm, directions.items, profiles)
+    planning = "Planning the charts"
+    yield Event("status", {"label": planning})
+    charts = yield from _with_retry_status(plan_charts_steps(planner_llm, directions.items, profiles), planning)
     if not charts.items:
         yield Event("error", {"detail": "Could not plan charts for this data: " + "; ".join(charts.errors[:3])})
         return
