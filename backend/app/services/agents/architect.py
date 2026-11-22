@@ -443,16 +443,12 @@ def spread_sample(frame: pd.DataFrame, rows: int) -> pd.DataFrame:
     return frame.sample(n=rows, random_state=0).sort_index().reset_index(drop=True)
 
 
-def sample_source(source: Dict[str, Any], data_dir: Any, rows: int = SAMPLE_ROWS) -> pd.DataFrame:
-    """A bounded sample of whichever kind of source this is, drawn from all of it.
-
-    Files are read whole to draw from: a chart reads the whole file anyway.
-    """
+def load_frame(source: Dict[str, Any], data_dir: Any) -> pd.DataFrame:
+    """The whole of a source as a DataFrame: a database table, or a file read in full."""
     if source.get("type") == "db":
         from app.services import db_sources
 
-        frame = db_sources.load_table_by_id(str(source["source_id"]), str(source["table"]))
-        return spread_sample(frame, rows)
+        return db_sources.load_table_by_id(str(source["source_id"]), str(source["table"]))
 
     from pathlib import Path
 
@@ -460,5 +456,13 @@ def sample_source(source: Dict[str, Any], data_dir: Any, rows: int = SAMPLE_ROWS
     if not path.exists():
         path = Path(str(data_dir)) / str(source.get("name"))
     if path.suffix.lower() in (".xlsx", ".xls"):
-        return spread_sample(pd.read_excel(path), rows)
-    return spread_sample(pd.read_csv(path), rows)
+        return pd.read_excel(path)
+    return pd.read_csv(path)
+
+
+def sample_source(source: Dict[str, Any], data_dir: Any, rows: int = SAMPLE_ROWS) -> pd.DataFrame:
+    """A bounded sample of whichever kind of source this is, drawn from all of it.
+
+    Files are read whole to draw from: a chart reads the whole file anyway.
+    """
+    return spread_sample(load_frame(source, data_dir), rows)
