@@ -243,7 +243,45 @@ and `available_sources` and charted a hardcoded CSV on every request (`a413539`)
 | Volume | 20 GB STANDARD network volume at `/workspace` for data, checkpoints and logs; `HF_HOME=/root/hf-cache` on the 80 GB container disk, so the 18 GB base model loads from local disk in ~3 s (v1: ~6 min from the network volume) |
 | Training | 2 epochs, 1,832 steps, 3.3 h; validation loss 0.157 -> 0.145 -> 0.132 -> 0.131 -> **0.126 (step 1500)** -> 0.127 -> 0.127; `load_best_model_at_end` saved checkpoint-1500 |
 | Eval on the pod | frozen 300: render **97.3%**, right shape **87.0%**, invented columns 0.7% (v1's 91.3% / 81.0% there is a lower bound: 16 pyarrow crashes) |
-| Pod lifetime | 19:26 -> ~23:16 UTC, deleted with its volume after the adapter was verified locally; billing read at deletion: pod $6.37 + volume $0.01, not yet settled (3 h 50 m x $2.19 ~ $8.40) |
+| Pod lifetime | 19:26 -> ~23:16 UTC, deleted with its volume after the adapter was verified locally |
+| Cost (settled) | pod **$8.41** (GPU $8.37 + disk $0.04) + volume $0.01 = **$8.42**, read 2026-11-22 with `list-pod-billing` / `list-network-volume-billing`; nothing billed after the 21st. Claude API for the v2 data: $15.62. All of lora-v2: about $24 |
+
+Measured on the Mac, 4-bit base + MLX adapter, the same harness for both
+(`data/eval_report_local_v{1,2}.json`, `data/v2/planning_eval_lora-v{1,2}.json`,
+`data/role_measure{,_v2}.json`):
+
+| | lora-v1 | lora-v2 |
+|---|---|---|
+| Frozen 300: renders | 89.3% | **94.3%** |
+| Frozen 300: right kind of chart | 76.3% | **82.3%** |
+| Frozen 300: invented column | 1.7% | 1.7% |
+| Planning 120: dashboards needing a retry | 54.2% | **12.5%** |
+| Planning 120: drawn charts that render | 86.4% | **98.9%** |
+| Planning 120: drawn as the planned kind | 84.9% | **98.9%** |
+| Single-chart planner, 118 questions | 80.5% | 77.1% |
+| Narrator, usable titles | 100% | 100% |
+
+- Render on the frozen 300 is paired: 26 questions failed only on v1, 11 only
+  on v2 (exact McNemar p = 0.020). 4-bit costs v2 3 points of render against
+  bf16 on the pod (97.3% -> 94.3%).
+- Where v2 went the other way on the Mac: gauge/indicator 16 -> 13 of 17, box
+  22 -> 20 of 23. On the pod gauge went up (82.4% -> 88.2%) and box lost one
+  question (23 -> 22), so read these as small buckets plus quantization until
+  a bigger set says otherwise.
+- The planning eval draws only the first 3 charts of each dashboard, and v2
+  opens with KPIs far more often (112 of 357 drawn vs 50 of 352), so its drawn
+  mix is easier. Per kind it still wins wherever both have a sample: KPI
+  40/50 -> 112/112, line 67/78 -> 106/108, bar 132/138 -> 109/109, heatmap
+  26/38 -> 13/13. Dashboards whose 3 drawn charts all rendered: 78 -> 115 of
+  120 (p = 3e-9).
+- The single-chart planner's drop is not significant (9 lost, 5 gained,
+  p = 0.42). The losses are v2's new chart types leaking into its labels:
+  "cumulative ... building up" now reads as waterfall, "spread ... split by" as
+  heatmap. With `CHARTIST_CHART_TYPE_HINT=off` that label only picks the
+  deterministic fallback chart.
+- Dashboard smoke (s0016, "watch time by country"): 7 planned, 7 drawn by the
+  model, 0 by the backup chart, plans passed the checks first try, 125 s
+  (lora-v1: 3 of 7 by the backup, 204 s).
 
 What went wrong, so the next run avoids it:
 
