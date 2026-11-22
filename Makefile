@@ -23,9 +23,11 @@ BASE_MODEL   := models/qwen3.5-9b-4bit
 ADAPTER      := runs/adapters-mlx-v2
 PEFT         := cloud/artifacts/out-v2
 MLX_PORT     ?= 8080
-# 0.0.0.0 so the api CONTAINER can reach it via host.docker.internal. On an
-# untrusted network use MLX_HOST=127.0.0.1 and run the backend with `make dev-api`.
-MLX_HOST     ?= 0.0.0.0
+# 127.0.0.1: the server has no authentication, so it stays off the LAN. The api
+# CONTAINER still reaches it: Docker Desktop forwards host.docker.internal to the
+# Mac's loopback (checked 2026-11-22). On Linux Docker that name is the bridge
+# address instead, so there it needs MLX_HOST=0.0.0.0, on a trusted network only.
+MLX_HOST     ?= 127.0.0.1
 API_BASE     ?= http://localhost:8000
 PROMPT       ?= Monthly MRR trend by plan tier
 
