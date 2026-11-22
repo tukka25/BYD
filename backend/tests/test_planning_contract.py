@@ -129,3 +129,32 @@ def test_group_must_add_a_dimension():
 def test_count_of_the_x_column_is_a_row_count():
     valid, errors = check_specs({"charts": [spec(y="cntry_cd", agg="count")]}, TABLES)
     assert errors == [] and valid[0]["y"] == ""
+
+
+TRACKS = {"tracks": {"track_name": "text", "track_id": "id", "track_popularity": "number"}}
+
+
+def top_tracks(**overrides):
+    return spec(**{"title": "Most popular tracks", "question": "Which tracks are most popular?",
+                   "table": "tracks", "x": "track_name", "y": "track_popularity", "agg": "mean",
+                   "sort": "desc", "top_n": 10, **overrides})
+
+
+def test_a_bar_over_a_text_column_passes_when_top_n_limits_it():
+    # "Top 10 tracks" is the chart a "most listened songs" request needs; it was
+    # refused three times on the Spotify table and dropped from the dashboard.
+    valid, errors = check_specs({"charts": [top_tracks()]}, TRACKS)
+    assert errors == []
+    assert (valid[0]["x"], valid[0]["top_n"]) == ("track_name", 10)
+
+
+def test_a_bar_over_a_text_column_still_needs_a_short_top_n():
+    # Without a cut, a bar per track is thousands of bars; the message must say how to fix it.
+    for case in (top_tracks(top_n=0), top_tracks(top_n=500)):
+        valid, errors = check_specs({"charts": [case]}, TRACKS)
+        assert valid == [] and "top_n" in errors[0] and "track_name" in errors[0], case
+
+
+def test_a_bar_over_an_id_column_is_refused_even_with_top_n():
+    valid, errors = check_specs({"charts": [top_tracks(x="track_id")]}, TRACKS)
+    assert valid == [] and errors

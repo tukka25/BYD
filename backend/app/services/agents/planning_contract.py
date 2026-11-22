@@ -23,6 +23,9 @@ GRAINS = ("day", "week", "month", "quarter", "year")
 SORTS = ("asc", "desc")
 MAX_DIRECTIONS = 8
 MAX_TITLE = 80
+# A text column cut to its top N bars reads like a category, so the same cap as
+# the profiler's MAX_CATEGORIES.
+MAX_TOP_N = 30
 ANALYST_MAX_TOKENS = 1024
 PLANNER_MAX_TOKENS = 2048
 
@@ -285,7 +288,11 @@ def check_spec(item: Any, tables: dict[str, dict[str, str]]) -> tuple[dict | Non
         need(measure, f"a {chart} needs a number column as y, or agg count")
         need(not (kx in _TIME and agg == "none"), f"a {chart} over time needs an aggregation, so each period is one point")
     elif chart == "bar":
-        need(kx in _DIMENSION, "a bar chart needs a category, date or year column on x")
+        if kx == "text":
+            # A name column ("top 10 tracks") works once top_n keeps it short.
+            need(0 < top_n <= MAX_TOP_N, f"a bar chart over the text column '{x}' needs top_n between 1 and {MAX_TOP_N}")
+        else:
+            need(kx in _DIMENSION, "a bar chart needs a category, date or year column on x")
         need(measure, "a bar chart needs a number column as y, or agg count")
         need(agg != "none", "a bar chart needs an aggregation")
     elif chart == "pie":
