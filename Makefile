@@ -18,7 +18,10 @@ FINETUNE     := chartist-finetune
 PY           := $(BACKEND)/.venv/bin/python
 PIP          := $(BACKEND)/.venv/bin/pip
 BASE_MODEL   := models/qwen3.5-9b-4bit
-ADAPTER      := runs/adapters-mlx
+# lora-v2 since 2026-11-22 (measured against lora-v1 in chartist-finetune/cloud/README.md).
+# Back to lora-v1 without editing: make serve-model ADAPTER=runs/adapters-mlx
+ADAPTER      := runs/adapters-mlx-v2
+PEFT         := cloud/artifacts/out-v2
 MLX_PORT     ?= 8080
 # 0.0.0.0 so the api CONTAINER can reach it via host.docker.internal. On an
 # untrusted network use MLX_HOST=127.0.0.1 and run the backend with `make dev-api`.
@@ -62,10 +65,10 @@ sample-data: ## Generate sample CSVs into backend/uploads
 	@$(PY) $(BACKEND)/scripts/make_sample_data.py --out $(BACKEND)/uploads
 
 adapter: ## Convert the PEFT adapter to MLX format (needed once)
-	@test -d $(FINETUNE)/cloud/artifacts/out-min || \
-	  { echo "No trained adapter at $(FINETUNE)/cloud/artifacts/out-min"; exit 1; }
+	@test -d $(FINETUNE)/$(PEFT) || \
+	  { echo "No trained adapter at $(FINETUNE)/$(PEFT)"; exit 1; }
 	@cd $(FINETUNE) && .venv/bin/python cloud/peft_to_mlx.py \
-	  --peft cloud/artifacts/out-min --out $(ADAPTER)
+	  --peft $(PEFT) --out $(ADAPTER)
 
 serve-model: ## Serve the fine-tuned chartist on the host (blocks)
 	@test -d $(FINETUNE)/$(BASE_MODEL) || { echo "Base model missing: $(FINETUNE)/$(BASE_MODEL)"; exit 1; }
@@ -110,7 +113,7 @@ doctor: ## Check the things that are usually wrong
 	@echo "api health:    $$(curl -fsS $(API_BASE)/health >/dev/null 2>&1 && echo ok || echo unreachable)"
 	@echo "model server:  $$(curl -fsS http://localhost:$(MLX_PORT)/v1/models >/dev/null 2>&1 && echo ok || echo unreachable)"
 	@echo "sample CSVs:   $$(ls $(BACKEND)/uploads/*.csv 2>/dev/null | wc -l | tr -d ' ')"
-	@echo "mlx adapter:   $$(test -f $(FINETUNE)/$(ADAPTER)/adapters.safetensors && echo present || echo MISSING)"
+	@echo "mlx adapter:   $(ADAPTER) $$(test -f $(FINETUNE)/$(ADAPTER)/adapters.safetensors && echo present || echo MISSING)"
 	@echo "base model:    $$(test -d $(FINETUNE)/$(BASE_MODEL) && echo present || echo MISSING)"
 
 dev-api: ## Run the backend on the host, no docker
