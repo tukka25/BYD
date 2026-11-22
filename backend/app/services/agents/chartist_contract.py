@@ -29,6 +29,14 @@ first rows: {sample_rows}
 
 Write the Python now."""
 
+# The turn that sends failed code back to the model, after its own answer. Every
+# chart is the model's: when its code breaks the contract or fails to run, it is
+# shown what went wrong and fixes it itself. Nothing else ever draws the chart.
+CHARTIST_REPAIR_TEMPLATE = """That code did not work:
+{problem}
+
+Reply with the whole corrected code, ending with print(fig.to_json())."""
+
 # The most tokens the chartist may generate. Production, the local eval and the
 # A/B harness all read it from here: the eval used to stop at 800 while the live
 # call allowed 1024, so a long but valid answer could fail in the eval and pass
@@ -162,8 +170,9 @@ _WRITES_FILE = re.compile(
     r"|\bsavefig\s*\("
 )
 # Mirror of SafeExecutor.blocked_patterns in backend/app/utils/executor.py, which
-# rejects these (on lowercased code) AFTER the chartist's fallback decision has
-# been made. tests/test_contract_sync.py fails if the two lists drift apart.
+# rejects these (on lowercased code) again at run time, after this check has
+# already sent any match back to the model. tests/test_contract_sync.py fails if
+# the two lists drift apart.
 BLOCKED_PATTERNS = [
     r"\bimport\s+os\b",
     r"\bimport\s+subprocess\b",
@@ -238,6 +247,44 @@ def validate_chart_code(code: str) -> list[ContractViolation]:
     if "matplotlib" in lowered or re.search(r"\bplt\s*\.", lowered):
         violations.append(ContractViolation.USES_MATPLOTLIB)
     return violations
+
+
+# Each rule as the model is told it when its code breaks it: what is wrong and
+# what to do instead, never the bare enum value.
+VIOLATION_WORDS: dict[ContractViolation, str] = {
+    ContractViolation.SYNTAX_ERROR: "it is not valid Python",
+    ContractViolation.NO_FIGURE: "it never assigns the chart to `fig`",
+    ContractViolation.NO_JSON_PRINT: "it must end with print(fig.to_json()), printed exactly once",
+    ContractViolation.CALLS_SHOW: "it calls fig.show(); end with print(fig.to_json()) instead",
+    ContractViolation.READS_DATA: "it reads a file or a URL; use `df`, which is already loaded",
+    ContractViolation.USES_MATPLOTLIB: "it uses matplotlib; draw the chart with plotly",
+    ContractViolation.CREATES_DATAFRAME: "it builds a DataFrame from scratch; use the data in `df`",
+    ContractViolation.WRITES_FILE: "it writes a file; the only output allowed is print(fig.to_json())",
+    ContractViolation.BLOCKED_IMPORT: "it uses something that is not allowed (os, subprocess, open, eval, exec or __import__)",
+    ContractViolation.EXTRA_PRINT: "it prints something besides the figure; print(fig.to_json()) must be the only print",
+}
+
+
+def problems_with(code: str) -> list[str]:
+    """What breaks the contract, in words the model can act on; [] when nothing does."""
+    problems = []
+    for violation in validate_chart_code(code):
+        if violation is ContractViolation.SYNTAX_ERROR:
+            problems.append(_syntax_problem(code))
+        else:
+            problems.append(VIOLATION_WORDS[violation])
+    return problems
+
+
+def _syntax_problem(code: str) -> str:
+    text = (code or "").strip()
+    if not text:
+        return "the reply had no code"
+    try:
+        ast.parse(text)
+    except SyntaxError as exc:
+        return f"{VIOLATION_WORDS[ContractViolation.SYNTAX_ERROR]}: {exc.msg} (line {exc.lineno})"
+    return VIOLATION_WORDS[ContractViolation.SYNTAX_ERROR]
 
 
 def render_spec(spec: dict) -> str:

@@ -5,13 +5,12 @@ from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 
 from app.services.agents.chartist_contract import (
+    CHARTIST_REPAIR_TEMPLATE,
     CHARTIST_SYSTEM_PROMPT,
     CHARTIST_USER_TEMPLATE,
     HINT_STYLES,
-    ContractViolation,
     chart_type_hint,
     render_spec,
-    validate_chart_code,
 )
 
 logger = logging.getLogger(__name__)
@@ -21,10 +20,13 @@ logger = logging.getLogger(__name__)
 # neither does a plan that records no source at all.
 _CHOSEN_BY = ("llm", "keywords")
 
-# Stamped onto deterministically generated code. Without it a fallback chart is
-# indistinguishable from a model-written one in the response, and a smoke test
-# that only asks "did a figure render" reports success when the model failed.
-FALLBACK_MARKER = "# promptdash: deterministic fallback (model output unusable)"
+
+class ChartistUnavailable(RuntimeError):
+    """The model could not be asked: none is configured, or the call itself failed.
+
+    Raised, never papered over. A chart the model did not write is not shown:
+    there is no hardcoded stand-in, so the caller reports the failure instead.
+    """
 
 # A thinking model (Qwen3.5) returns "\n</think>\n\n" before its code, because
 # generation begins after "<think>\n". _strip_prose_prefix happens to drop it
@@ -43,8 +45,9 @@ class ChartistAgent:
 
         Anything with `.invoke(variables) -> str` can stand in for the chain,
         which is how a different model is compared on this harness: the prompt,
-        the sanitiser, the contract and the fallback below are shared, so the
-        model is the only thing that differs.
+        the reply reading, the contract and the repair turn are shared, so the
+        model is the only thing that differs. A repair request carries two more
+        variables, `previous_code` and `problem`.
 
         `chart_type_hint_style` overrides `CHARTIST_CHART_TYPE_HINT` for this
         agent, so one process can run both sides of that A/B at once. None means
@@ -64,17 +67,22 @@ class ChartistAgent:
                 f"CHARTIST_CHART_TYPE_HINT must be one of {HINT_STYLES}, "
                 f"got {chart_type_hint_style!r}"
             )
-        # Why the last generation fell back, if it did. Without this the
-        # fallback's own (valid) code is all anyone can inspect afterwards,
-        # and the reason the model's answer was rejected is gone.
-        self.last_violations: list[str] = []
-
         self.prompt = ChatPromptTemplate.from_messages([
             ("system", CHARTIST_SYSTEM_PROMPT),
             ("human", CHARTIST_USER_TEMPLATE),
         ])
+        # The same conversation, continued: the model's own code as its answer,
+        # then what went wrong with it. The code goes in as a variable's value,
+        # so its braces are never read as template fields.
+        self.repair_prompt = ChatPromptTemplate.from_messages([
+            ("system", CHARTIST_SYSTEM_PROMPT),
+            ("human", CHARTIST_USER_TEMPLATE),
+            ("ai", "{previous_code}"),
+            ("human", CHARTIST_REPAIR_TEMPLATE),
+        ])
 
         self.chain = None if llm is None else self.prompt | self.llm | StrOutputParser()
+        self.repair_chain = None if llm is None else self.repair_prompt | self.llm | StrOutputParser()
 
     def _extract_code_block(self, raw: str) -> str:
         if not raw:
@@ -104,74 +112,13 @@ class ChartistAgent:
                 break
         return "\n".join(lines[start_idx:]).strip()
 
-    def _fallback_plotly_code(self, data_context: Dict[str, Any], viz_type: str) -> str:
-        columns = data_context.get("columns", []) or []
-        dtypes = data_context.get("dtypes", {}) or {}
-        numeric_cols = [c for c in columns if "int" in str(dtypes.get(c, "")).lower() or "float" in str(dtypes.get(c, "")).lower()]
-        datetime_cols = [c for c in columns if "date" in c.lower() or "datetime" in str(dtypes.get(c, "")).lower()]
-
-        x_col = datetime_cols[0] if datetime_cols else (columns[0] if columns else None)
-        y_col = numeric_cols[0] if numeric_cols else (columns[1] if len(columns) > 1 else None)
-        color_col = None
-        for c in columns:
-            if c not in {x_col, y_col} and "category" in c.lower():
-                color_col = c
-                break
-
-        if not x_col or not y_col:
-            return (
-                f"{FALLBACK_MARKER}\n"
-                "import plotly.express as px\n"
-                "fig = px.histogram(df)\n"
-                "print(fig.to_json())"
-            )
-
-        if viz_type == "line":
-            plot_call = f"px.line(df, x='{x_col}', y='{y_col}'" + (f", color='{color_col}'" if color_col else "") + ")"
-        elif viz_type == "scatter":
-            plot_call = f"px.scatter(df, x='{x_col}', y='{y_col}'" + (f", color='{color_col}'" if color_col else "") + ")"
-        else:
-            plot_call = f"px.bar(df, x='{x_col}', y='{y_col}'" + (f", color='{color_col}'" if color_col else "") + ")"
-
-        return (
-            f"{FALLBACK_MARKER}\n"
-            "import plotly.express as px\n"
-            f"fig = {plot_call}\n"
-            "print(fig.to_json())"
-        )
-
-    # Property names the model reliably gets wrong, mapped to the real ones.
-    # Measured, not guessed: `valueprefix` lost two of six blocks in a dashboard
-    # build, because Plotly's indicator number takes `prefix`/`suffix`. Keeping
-    # the list to names that cannot mean anything else keeps this a repair
-    # rather than a rewrite — anything subtler stays a contract violation and
-    # falls back, as before.
-    _PROPERTY_FIXES: tuple[tuple[str, str], ...] = (
-        ("valueprefix", "prefix"),
-        ("valuesuffix", "suffix"),
-        ("valueformat_", "valueformat"),
-    )
-
-    def _repair_properties(self, code: str) -> str:
-        for wrong, right in self._PROPERTY_FIXES:
-            code = re.sub(rf"(?<![A-Za-z_]){wrong}(?![A-Za-z_])", right, code)
-        return code
-
-    def _sanitize_generated_code(self, raw: str, data_context: Dict[str, Any], viz_type: str) -> str:
+    def _read_code(self, raw: str) -> str:
+        """The code in the model's reply, as written: fences, a think prefix,
+        curly quotes and leading prose are removed, and nothing else is touched.
+        Whether it is any good is for the contract and the run to say."""
         code = self._extract_code_block(raw)
         code = code.replace("“", "\"").replace("”", "\"").replace("’", "'").replace("‘", "'")
-        code = self._strip_prose_prefix(code)
-        code = self._repair_properties(code)
-
-        violations = validate_chart_code(code)
-        if ContractViolation.NO_JSON_PRINT in violations and "fig =" in code:
-            code = f"{code}\nprint(fig.to_json())"
-            violations = validate_chart_code(code)
-        self.last_violations = [v.value for v in violations]
-        if violations:
-            logger.warning("[chartist] contract violations %s, using fallback", violations)
-            return self._fallback_plotly_code(data_context, viz_type)
-        return code
+        return self._strip_prose_prefix(code)
 
     def _task_description(
         self,
@@ -229,6 +176,49 @@ class ChartistAgent:
             task = f"{task}\n\nNot available in this data, do not use: {list(missing)}"
         return task
 
+    def prompt_variables(
+        self,
+        user_query: str,
+        task_plan: Dict[str, Any],
+        data_context: Dict[str, Any],
+        dataframe_plan: Optional[Dict[str, Any]] = None,
+        spec: Optional[Dict[str, Any]] = None,
+    ) -> Dict[str, str]:
+        """What the model is asked, kept so a repair continues the same conversation.
+
+        With a `spec` (a chart plan from the dashboard planner) the task text is
+        the plan itself; the question-only path is unchanged for single blocks.
+        """
+        task = (
+            render_spec(spec)
+            if spec
+            else self._task_description(user_query, task_plan, dataframe_plan)
+        )
+        return {
+            "task": task,
+            "columns": str(data_context.get("columns", [])),
+            "dtypes": str(data_context.get("dtypes", {})),
+            "sample_rows": str(data_context.get("sample", [])),
+        }
+
+    def write(self, variables: Dict[str, str], previous_code: str = "", problem: str = "") -> str:
+        """One model call: chart code for `variables`, or, given its `previous_code`
+        and what went wrong with it, the model's own fix. Raises ChartistUnavailable."""
+        repairing = bool(previous_code)
+        if self.generator is not None:
+            source = self.generator
+        else:
+            source = self.repair_chain if repairing else self.chain
+        if source is None:
+            raise ChartistUnavailable("the chartist has neither a model nor a generator")
+        payload = {**variables, "previous_code": previous_code, "problem": problem} if repairing else variables
+        try:
+            raw = source.invoke(payload)
+        except Exception as exc:  # noqa: BLE001 - reported to the caller, never replaced
+            logger.warning("[chartist] the model call failed: %s", exc)
+            raise ChartistUnavailable(str(exc) or type(exc).__name__) from exc
+        return self._read_code(raw)
+
     def generate_code(
         self,
         user_query: str,
@@ -237,29 +227,5 @@ class ChartistAgent:
         dataframe_plan: Optional[Dict[str, Any]] = None,
         spec: Optional[Dict[str, Any]] = None,
     ) -> str:
-        """
-        Generates Plotly code for the user's question against this schema.
-
-        With a `spec` (a chart plan from the dashboard planner) the task text is
-        the plan itself; the question-only path is unchanged for single blocks.
-        """
-        viz_type = task_plan.get("visualization_type", "bar")
-        try:
-            source = self.generator or self.chain
-            if source is None:
-                raise RuntimeError("chartist has neither a model nor a generator")
-            task = (
-                render_spec(spec)
-                if spec
-                else self._task_description(user_query, task_plan, dataframe_plan)
-            )
-            raw = source.invoke({
-                "task": task,
-                "columns": str(data_context.get("columns", [])),
-                "dtypes": str(data_context.get("dtypes", {})),
-                "sample_rows": str(data_context.get("sample", [])),
-            })
-            return self._sanitize_generated_code(raw, data_context, viz_type)
-        except Exception:
-            logger.exception("[chartist] generation failed, using deterministic fallback")
-            return self._fallback_plotly_code(data_context, viz_type)
+        """The model's Plotly code for the user's question against this schema."""
+        return self.write(self.prompt_variables(user_query, task_plan, data_context, dataframe_plan, spec))

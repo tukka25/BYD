@@ -23,7 +23,8 @@ model's answer is unusable.
 
 Note that the chart type no longer steers the chartist. The fine-tuned chartist
 infers the chart from the user's question, as it was trained to; this label is
-used for the deterministic fallback renderer and for response metadata.
+response metadata (and the optional `CHARTIST_CHART_TYPE_HINT`, off by default).
+It never draws anything: there is no hardcoded chart behind it.
 """
 from __future__ import annotations
 
@@ -168,9 +169,8 @@ class PlannerAgent:
         if chart is None:
             chart, source = _keyword_chart(user_query), "keywords"
         if chart is None:
-            # Neither the model nor a keyword decided this. The default keeps the
-            # deterministic fallback renderer working; "default" keeps it from
-            # being passed downstream as though anyone had chosen it.
+            # Neither the model nor a keyword decided this. "default" keeps the
+            # bare label from being passed downstream as though anyone had chosen it.
             chart, source = DEFAULT_CHART, "default"
 
         logger.info("[planner] chart_type=%s via=%s", chart, source)

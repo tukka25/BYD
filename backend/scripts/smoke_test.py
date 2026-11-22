@@ -110,15 +110,6 @@ def main() -> int:
     for step in meta.get("agent_steps") or []:
         print(f"     - {step}")
 
-    if meta.get("used_fallback"):
-        return fail(
-            "generate",
-            "a figure rendered, but from the DETERMINISTIC FALLBACK, not the model. "
-            "The chart is real; the model's output was rejected by the contract check. "
-            "Most likely MLX_MODEL is not 'default_model', so mlx_lm server served the "
-            "base weights without the adapter.\n--- code ---\n" + (meta.get("code") or ""),
-        )
-
     if "No graph generated" in html:
         return fail("generate", f"workflow ran but produced no figure: {html[:300]}")
     match = re.search(r"const fig = (\{.*?\});", html, re.DOTALL)
@@ -161,7 +152,7 @@ def main() -> int:
     )
     kinds = sorted({t.get("type") or "scatter" for t in traces})
     print(f"   figure: {len(traces)} trace(s) {kinds}, ~{points} points")
-    print(f"   code was written by the model ({len(meta.get('code') or '')} chars), not the fallback")
+    print(f"   code written by the model: {len(meta.get('code') or '')} chars (nothing else ever draws a chart)")
     if points == 0:
         return fail("generate", "figure rendered but contains no data points")
 

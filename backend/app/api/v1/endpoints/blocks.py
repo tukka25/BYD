@@ -32,7 +32,6 @@ router = APIRouter()
 logger = logging.getLogger(__name__)
 settings = get_settings()
 
-FALLBACK_SIGNATURE = "promptdash: deterministic fallback"
 
 
 @lru_cache(maxsize=1)
@@ -290,7 +289,6 @@ async def generate_block(
         figure_json=json.dumps(figure),
         source_name=data_context.get("filename"),
         chart_type=plan.get("visualization_type"),
-        used_fallback=FALLBACK_SIGNATURE in code,
         x=0,
         y=_next_row(db, report.id),
         w=width,
@@ -299,12 +297,7 @@ async def generate_block(
     db.add(block)
     db.commit()
     db.refresh(block)
-    logger.info(
-        "[blocks] created %s in %.2fs (fallback=%s)",
-        block.id,
-        time.perf_counter() - started,
-        block.used_fallback,
-    )
+    logger.info("[blocks] created %s in %.2fs", block.id, time.perf_counter() - started)
     return _to_response(block)
 
 
@@ -519,8 +512,7 @@ def _ai_dashboard(report, sources, brief, current_user, db):
                         figure_json=json.dumps(figure),
                         source_name=context.get("filename") or context.get("table"),
                         chart_type=spec["chart"],
-                        used_fallback=FALLBACK_SIGNATURE in code,
-                        x=placed.x,
+                                        x=placed.x,
                         y=placed.y,
                         w=placed.w,
                         h=placed.h,
@@ -647,8 +639,7 @@ async def _rules_dashboard(report, sources, brief, current_user, db):
                         figure_json=json.dumps(figure),
                         source_name=context.get("filename"),
                         chart_type=(result.get("plan") or {}).get("visualization_type"),
-                        used_fallback=FALLBACK_SIGNATURE in code,
-                        x=section.x,
+                                        x=section.x,
                         y=base_row + section.y,
                         w=section.w,
                         h=section.h,

@@ -267,13 +267,12 @@ async def generate_dashboard(
                 "plan": result.get("plan", {}),
                 "data_context": result.get("data_context", {}),
                 "agent_steps": [m.content for m in result.get("messages", [])],
-                # The generated program, so a caller can tell whether the model
-                # wrote the chart or the deterministic fallback did.
+                # The program that drew the chart: always the model's own, after
+                # any fixes it made when shown its errors.
                 "code": result.get("code", ""),
                 # The figure itself, so a client can render it with its own
                 # bundled Plotly instead of the CDN script in dashboard_html.
                 "figure": decode_typed_arrays(figure) if figure else None,
-                "used_fallback": "promptdash: deterministic fallback" in (result.get("code") or ""),
             }
         }
     except asyncio.TimeoutError as exc:

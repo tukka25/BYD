@@ -19,7 +19,7 @@ export interface CellResult {
   code: string;
   figure: Record<string, unknown> | null;
   error: string | null;
-  used_fallback: boolean;
+  repairs: number;
   violations: string[];
   seconds: number;
   input_tokens: number;

@@ -3,10 +3,10 @@
 The point of this module is that it changes exactly one thing. It sends the
 SAME system prompt and the SAME user template as the fine-tuned model gets --
 imported from `chartist_contract`, not copied -- and hands the raw reply back
-to the SAME `ChartistAgent._sanitize_generated_code`, which runs the same
-contract validation, the same deterministic fallback and the same property
-repair. The executor and the data are identical. Only the weights differ, which
-is the only way the comparison means anything.
+to the SAME `ChartistAgent`, which reads the code out of it the same way. The
+contract check, the executor, the data and the repair loop (failed code goes
+back to the model that wrote it, with the same repair turn) are identical. Only
+the weights differ, which is the only way the comparison means anything.
 
 Deliberate asymmetries, because they cannot be avoided and should be read with
 the numbers:
@@ -32,6 +32,7 @@ import anthropic
 
 from app.core.config import get_settings
 from app.services.agents.chartist_contract import (
+    CHARTIST_REPAIR_TEMPLATE,
     CHARTIST_SYSTEM_PROMPT,
     CHARTIST_USER_TEMPLATE,
 )
@@ -82,13 +83,24 @@ class ClaudeGenerator:
         self.last: Optional[ClaudeCall] = None
 
     def invoke(self, variables: Dict[str, Any]) -> str:
-        """Same inputs the SLM gets, rendered into the same two prompt strings."""
+        """Same inputs the SLM gets, rendered into the same prompt strings.
+
+        A repair request (`previous_code` and `problem` set) continues the same
+        conversation the SLM's repair chain does: its own code as its answer,
+        then what went wrong.
+        """
         user_text = CHARTIST_USER_TEMPLATE.format(
             task=variables.get("task", ""),
             columns=variables.get("columns", ""),
             dtypes=variables.get("dtypes", ""),
             sample_rows=variables.get("sample_rows", ""),
         )
+        messages = [{"role": "user", "content": user_text}]
+        if variables.get("previous_code"):
+            messages += [
+                {"role": "assistant", "content": variables["previous_code"]},
+                {"role": "user", "content": CHARTIST_REPAIR_TEMPLATE.format(problem=variables.get("problem", ""))},
+            ]
 
         started = time.perf_counter()
         try:
@@ -96,7 +108,7 @@ class ClaudeGenerator:
                 model=MODEL,
                 max_tokens=MAX_TOKENS,
                 system=CHARTIST_SYSTEM_PROMPT,
-                messages=[{"role": "user", "content": user_text}],
+                messages=messages,
                 # Thinking cannot be turned off on this model; effort is the
                 # only control, and the default is medium. Set, not assumed.
                 output_config={"effort": self._effort},

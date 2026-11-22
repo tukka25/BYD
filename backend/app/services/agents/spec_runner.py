@@ -2,19 +2,14 @@
 
 A plan already names the table and the columns, so the planner and the data
 detective, which exist to work those out from a question, are skipped. The
-code still goes through the same executor, the same property repair and the
-same backup chart as every other chart (`workflow.run_chart_code`).
+code goes through the same contract check, executor and repair loop as every
+other chart (`workflow.run_chart_code`): when it fails, the model is shown the
+error and fixes its own code; a chart it cannot fix is reported, never redrawn
+by anything else.
 """
 from __future__ import annotations
 
 from typing import Any
-
-_FALLBACK_KIND = {"line": "line", "area": "line", "scatter": "scatter"}
-
-
-def fallback_kind(chart: str) -> str:
-    """The backup chart's type: the deterministic renderer knows line, scatter and bar."""
-    return _FALLBACK_KIND.get(chart, "bar")
 
 
 def context_for(source: dict, data_dir: str) -> dict:
@@ -31,6 +26,7 @@ def context_for(source: dict, data_dir: str) -> dict:
 
 
 def run_spec(spec: dict, source: dict, chartist: Any, data_dir: str, executor: Any = None) -> dict[str, Any]:
+    from app.services.agents.chartist import ChartistUnavailable
     from app.services.agents.workflow import run_chart_code
     from app.utils.executor import SafeExecutor
 
@@ -40,19 +36,30 @@ def run_spec(spec: dict, source: dict, chartist: Any, data_dir: str, executor: A
             "code": "",
             "execution_result": {},
             "error": f"Could not read {source.get('name')}: {context['error']}",
-            "data_context": {},
+            "data_context": context,
+            "repairs": 0,
         }
-    kind = fallback_kind(spec["chart"])
-    code = chartist.generate_code(
-        user_query=spec["question"],
-        task_plan={"visualization_type": kind},
-        data_context=context,
-        spec=spec,
+    variables = chartist.prompt_variables(spec["question"], {}, context, spec=spec)
+    try:
+        code = chartist.write(variables)
+    except ChartistUnavailable as exc:
+        return {
+            "code": "",
+            "execution_result": {},
+            "error": f"The chart model could not be reached: {exc}",
+            "data_context": context,
+            "repairs": 0,
+        }
+    outcome = run_chart_code(
+        context,
+        code,
+        executor or SafeExecutor(),
+        repair=lambda previous, problem: chartist.write(variables, previous, problem),
     )
-    outcome = run_chart_code(context, code, kind, chartist, executor or SafeExecutor())
     return {
         "code": outcome.get("code_run") or code,
         "execution_result": outcome.get("execution_result") or {},
         "error": outcome.get("error") or "",
         "data_context": context,
+        "repairs": outcome.get("repairs", 0),
     }

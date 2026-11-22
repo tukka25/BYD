@@ -49,8 +49,9 @@ class ReportBlock(Base):
     text_body: Mapped[str | None] = mapped_column(Text, nullable=True)
     source_name: Mapped[str | None] = mapped_column(String(255), nullable=True)
     chart_type: Mapped[str | None] = mapped_column(String(40), nullable=True)
-    # True when the deterministic fallback drew this, not the model. Surfaced in
-    # the UI, because presenting a fallback as a model result would be a lie.
+    # True only on blocks saved before 2026-11-23, when a hardcoded backup chart
+    # could stand in for the model's. Nothing sets it now; it stays so those old
+    # blocks keep their label in the UI rather than passing as the model's.
     used_fallback: Mapped[bool] = mapped_column(default=False, nullable=False)
 
     # Grid position, in grid units.

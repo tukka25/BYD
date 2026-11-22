@@ -33,8 +33,8 @@ def main() -> int:
                       f"agg={s['agg']} grain={s['grain']!r} at ({p.x},{p.y},{p.w}x{p.h})")
         elif event.kind == "chart":
             rendered += 1
-            code = event.data["result"]["code"]
-            note = " (backup chart)" if "deterministic fallback" in code else ""
+            fixes = event.data["result"].get("repairs", 0)
+            note = f" (the model fixed its code {fixes}x)" if fixes else ""
             print(f"[{elapsed:5.1f}s] drew {event.data['placed'].spec['title']!r}{note}")
         elif event.kind == "skipped":
             print(f"[{elapsed:5.1f}s] skipped {event.data['placed'].spec['title']!r}: {event.data['reason'][:120]}")

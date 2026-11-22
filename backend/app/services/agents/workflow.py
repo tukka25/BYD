@@ -19,23 +19,27 @@ Changes from the original, all of them things that bit:
   dumped the whole generated program to stdout.
 * The chartist now receives the user's question, which is what its fine-tune was
   trained on. See `chartist._task_description`.
+* **A hardcoded chart stood in whenever the model's code failed** (since March,
+  removed 2026-11-23). It picked columns by name and plotted every row, so on a
+  32,833-row table it drew one bar per row of the wrong column under the planned
+  title and froze the report. Failed code now goes back to the model with the
+  error (`run_on_frame`), and a chart it cannot fix is reported as failed.
 """
 from __future__ import annotations
 
 import logging
-import os.path
-import re
 import time
 from functools import lru_cache
 from pathlib import Path
-from typing import Any, Dict, List, Optional, Sequence, TypedDict
+from typing import Any, Callable, Dict, List, Optional, Sequence, TypedDict
 
 import pandas as pd
 from langchain_core.messages import AIMessage, BaseMessage, HumanMessage
 from langgraph.graph import END, StateGraph
 
 from app.core.config import get_settings
-from app.services.agents.chartist import ChartistAgent
+from app.services.agents.chartist import ChartistAgent, ChartistUnavailable
+from app.services.agents.chartist_contract import problems_with
 from app.services import db_sources
 from app.services.agents.data_detective import DataDetective
 from app.services.agents.planner import PlannerAgent
@@ -54,6 +58,7 @@ class AgentState(TypedDict):
     source_decision: Dict[str, Any]
     data_context: Dict[str, Any]
     code: str
+    chart_prompt: Dict[str, Any]
     execution_result: Dict[str, Any]
     error: str
 
@@ -180,51 +185,57 @@ def coding_node(state: AgentState) -> Dict[str, Any]:
 
     dataframe_plan = (state.get("source_decision") or {}).get("dataframe_plan") or {}
     started = time.perf_counter()
-    code = chartist.generate_code(
+    variables = chartist.prompt_variables(
         user_query=state.get("user_query", ""),
         task_plan=state.get("plan") or {},
         data_context=data_context,
         dataframe_plan=dataframe_plan if isinstance(dataframe_plan, dict) else {},
     )
+    try:
+        code = chartist.write(variables)
+    except ChartistUnavailable as exc:
+        return {"error": f"The chart model could not be reached: {exc}"}
     logger.info(
         "[workflow/chartist] %.2fs code_chars=%d",
         time.perf_counter() - started,
         len(code),
     )
     logger.debug("[workflow/chartist] code:\n%s", code)
-    return {"code": code, "messages": [AIMessage(content="Generated chart code.")]}
+    return {"code": code, "chart_prompt": variables, "messages": [AIMessage(content="Generated chart code.")]}
 
 
 def execution_node(state: AgentState) -> Dict[str, Any]:
     _, _, chartist, executor = _agents()
-    return run_chart_code(
-        state.get("data_context") or {},
-        state.get("code") or "",
-        (state.get("plan") or {}).get("visualization_type", "bar"),
-        chartist,
-        executor,
-    )
+    variables = state.get("chart_prompt") or {}
+    repair = (lambda code, problem: chartist.write(variables, code, problem)) if variables else None
+    outcome = run_chart_code(state.get("data_context") or {}, state.get("code") or "", executor, repair)
+    if outcome.get("code_run"):
+        # The code that ran, which after a repair is the model's fix, not its first answer.
+        outcome["code"] = outcome["code_run"]
+    return outcome
+
+
+# Failed code goes back to the model this many times before the chart is
+# reported as failed: its first answer and two fixes, like the planner's three
+# tries. There is no hardcoded chart behind this, by design.
+MAX_REPAIRS = 2
+
+# How a caller lets the model fix its own code: (code, problem) -> its new code.
+Repair = Callable[[str, str], str]
 
 
 def run_chart_code(
     data_context: Dict[str, Any],
     code: str,
-    viz: str,
-    chartist: ChartistAgent,
     executor: SafeExecutor,
+    repair: Optional[Repair] = None,
 ) -> Dict[str, Any]:
-    """Run chart code against the data it was written for.
+    """Run the model's chart code against the data it was written for.
 
-    Shared by the question workflow and the dashboard's planned charts, so a
-    planned chart gets the same property repair and the same backup chart.
+    Shared by the question workflow and the dashboard's planned charts, so both
+    send failed code back to the model the same way (`run_on_frame`).
     """
-    if not code:
-        return {"error": "No chart code was generated."}
-
-    fallback_code = chartist._fallback_plotly_code(data_context, viz)
-
     if data_context.get("source_id") and data_context.get("table"):
-        started = time.perf_counter()
         try:
             df = db_sources.load_table_by_id(
                 str(data_context["source_id"]), str(data_context["table"])
@@ -232,7 +243,7 @@ def run_chart_code(
         except Exception as exc:
             logger.error("[workflow/executor] database load failed: %s", exc)
             return {"error": f"Failed to read that table: {exc}"}
-        return _run_executor(executor, code, df, started, fallback_code)
+        return run_on_frame(executor, code, df, repair)
 
     filepath = data_context.get("filepath")
     if not filepath:
@@ -241,7 +252,6 @@ def run_chart_code(
             return {"error": "No data file to execute against."}
         filepath = str(_data_dir() / filename)
 
-    started = time.perf_counter()
     try:
         if filepath.endswith(".csv"):
             df = pd.read_csv(filepath)
@@ -253,199 +263,77 @@ def run_chart_code(
         logger.error("[workflow/executor] load failed: %s", exc)
         return {"error": f"Failed to load data: {exc}"}
 
-    return _run_executor(executor, code, df, started, fallback_code)
+    return run_on_frame(executor, code, df, repair)
 
 
-# Plotly names the property it rejected, which is enough to repair the code
-# without guessing: the model invents `value*` keys on an indicator's number
-# (`valuecolor`, `valuesize`) that carry no meaning, and dropping the one it
-# named is the whole fix. Done from the error rather than from a list, so a
-# newly invented name costs nothing. One retry only — if the second attempt
-# fails the chart is genuinely wrong, not decorated wrong.
-_INVALID_PROPERTY = re.compile(
-    r"Invalid property specified for object of type [\w.]+: '([A-Za-z_]\w*)'"
-)
-# Plotly names the property it wanted whenever the mistake is a near miss
-# ("'valueuffix' Did you mean \"suffix\"?"). Taking the suggestion keeps what
-# the model meant -- the currency suffix on a KPI -- where dropping the
-# property throws it away and silently changes the chart.
-_SUGGESTION = re.compile(r'Did you mean ["\']([A-Za-z_]\w*)["\']')
+def _run_problem(result: Dict[str, Any]) -> str:
+    """Why a run failed, as the model will read it: Plotly's or pandas' own words."""
+    error = str(result.get("error") or "it produced no figure").strip()
+    if error == "Output is not valid JSON":
+        printed = str(result.get("output") or "").strip()[:200]
+        return f"it printed something that is not the figure's JSON: {printed!r}"
+    return f"it failed when it ran: {error[:1500]}"
 
 
-def _has_key(code: str, name: str) -> bool:
-    """`'name':` or `name=` -- Plotly code is written both ways."""
-    return bool(
-        re.search(rf"['\"]{re.escape(name)}['\"]\s*:", code)
-        or re.search(rf"(?<![\w.]){re.escape(name)}\s*=", code)
-    )
-
-
-def _plausible_rename(wrong: str, right: str) -> bool:
-    """Is Plotly's suggestion a near miss, or just the nearest string?
-
-    It suggested "font" for a misplaced `value`, which shares not one letter
-    with it; taking that would have set the number's font to a population
-    count. A real near miss shares a head or a tail -- ticklabelformat and
-    tickformat share "tick", valueuffix and suffix share "uffix".
-    """
-    a, b = wrong.lower(), right.lower()
-    if a in b or b in a:
-        return True
-    prefix = len(os.path.commonprefix([a, b]))
-    suffix = len(os.path.commonprefix([a[::-1], b[::-1]]))
-    return prefix >= 3 or suffix >= 3
-
-
-def _rename_property(code: str, wrong: str, right: str) -> str:
-    renamed = re.sub(
-        rf"(['\"]){re.escape(wrong)}\1(\s*:)",
-        lambda m: f"{m.group(1)}{right}{m.group(1)}{m.group(2)}",
-        code,
-    )
-    # `update_xaxes(ticklabelformat=...)` is the other half of the problem.
-    return re.sub(
-        rf"(?<![\w.]){re.escape(wrong)}(\s*=)",
-        lambda m: f"{right}{m.group(1)}",
-        renamed,
-    )
-
-
-def _drop_property(code: str, prop: str) -> str:
-    """Remove `'prop': <value>` from a dict literal, whatever the value is.
-
-    Bracket- and quote-aware on purpose: a first attempt matched the value as
-    "everything up to a comma or brace", which cut `{'size': 48}` in half and
-    turned a bad property into a syntax error.
-    """
-    key = re.compile(rf"['\"]{re.escape(prop)}['\"]\s*:\s*")
-    out = code
-    while True:
-        match = key.search(out)
-        if not match:
-            return out
-
-        i = match.end()
-        depth = 0
-        quote = ""
-        while i < len(out):
-            ch = out[i]
-            if quote:
-                if ch == "\\":
-                    i += 2
-                    continue
-                if ch == quote:
-                    quote = ""
-            elif ch in "\"'":
-                quote = ch
-            elif ch in "([{":
-                depth += 1
-            elif ch in ")]}":
-                if depth == 0:
-                    break
-                depth -= 1
-            elif ch == "," and depth == 0:
-                break
-            i += 1
-
-        end = i
-        # Take the separating comma with it, so the dict stays well formed.
-        if end < len(out) and out[end] == ",":
-            end += 1
-        while end < len(out) and out[end] in " \t":
-            end += 1
-        out = out[: match.start()] + out[end:]
-
-
-def _compiles(code: str) -> bool:
-    """A repair that does not parse is not a repair."""
-    try:
-        compile(code, "<repair>", "exec")
-        return True
-    except SyntaxError:
-        logger.info("[workflow/executor] repair did not parse, keeping the original error")
-        return False
-
-
-def _run_executor(
+def run_on_frame(
     executor: Any,
     code: str,
     df: "pd.DataFrame",
-    started: float,
-    fallback_code: str | None = None,
+    repair: Optional[Repair] = None,
+    max_repairs: int = MAX_REPAIRS,
 ) -> Dict[str, Any]:
-    """Run the generated code against `df`, whatever the data came from."""
-    result = executor.execute(code, df)
+    """Check and run the model's code; on any failure send the problem back to
+    the model for a fix, at most `max_repairs` times, then report the failure.
 
-    # At most two repairs, each from what Plotly actually said: take its
-    # suggested spelling first, and only drop the property if there was no
-    # suggestion or the rename did not help.
-    for _ in range(2):
-        if result.get("success"):
-            break
-        message = str(result.get("error") or "")
-        match = _INVALID_PROPERTY.search(message)
-        if not match:
-            break
-
-        wrong = match.group(1)
-        suggestion = _SUGGESTION.search(message)
-        target = suggestion.group(1) if suggestion else ""
-        # Never rename onto a key that is already there. Plotly suggests on
-        # spelling, not meaning: it answered `valuecolor` with "did you mean
-        # valueformat?" next to a real `valueformat`, and the rename produced a
-        # duplicate key whose junk value won -- a KPI that silently lost its
-        # number format. Where the target exists, the property is dropped.
-        if (
-            target
-            and target != wrong
-            and not _has_key(code, target)
-            and _plausible_rename(wrong, target)
-        ):
-            repaired = _rename_property(code, wrong, target)
-            action = f"renaming {wrong!r} to {target!r}"
+    The chart is always the model's own code. There is no deterministic
+    stand-in and no code-side patching: a hardcoded backup once drew 32,833 bars
+    of the wrong column under the planned title, froze the report it sat in and
+    hid that the model had failed. A chart the model cannot fix is reported.
+    """
+    started = time.perf_counter()
+    repairs = 0
+    result: Dict[str, Any] = {}
+    while True:
+        problems = problems_with(code)
+        if problems:
+            problem = "; ".join(problems)
         else:
-            repaired = _drop_property(code, wrong)
-            action = f"dropping invented property {wrong!r}"
-
-        if repaired == code or not _compiles(repaired):
+            result = executor.execute(code, df)
+            if result.get("success"):
+                logger.info(
+                    "[workflow/executor] success in %.2fs after %d fix(es)",
+                    time.perf_counter() - started,
+                    repairs,
+                )
+                return {
+                    "execution_result": result,
+                    "code_run": code,
+                    "repairs": repairs,
+                    "messages": [AIMessage(content="Chart rendered.")],
+                }
+            problem = _run_problem(result)
+        if repair is None or repairs >= max_repairs:
+            break
+        repairs += 1
+        logger.info(
+            "[workflow/executor] asking the model to fix its code (%d of %d): %s",
+            repairs,
+            max_repairs,
+            problem[:300],
+        )
+        try:
+            code = repair(code, problem)
+        except ChartistUnavailable as exc:
+            problem = f"the model could not be asked to fix it: {exc}"
             break
 
-        logger.info("[workflow/executor] %s", action)
-        attempt = executor.execute(repaired, df)
-        if attempt.get("success"):
-            code = repaired
-            result = attempt
-            break
-        # The rename did not take; the next pass drops whatever it now names.
-        code = repaired
-        result = attempt
-    if result.get("success"):
-        logger.info("[workflow/executor] success in %.2fs", time.perf_counter() - started)
-        return {
-            "execution_result": result,
-            "code_run": code,
-            "messages": [AIMessage(content="Chart rendered.")],
-        }
-    # The static contract catches code that is wrong on its face. This catches
-    # code that is only wrong once Plotly sees it -- a property in the wrong
-    # place, say -- which otherwise reaches the user as a stack trace where a
-    # chart should be. A plain chart, marked as the fallback it is, beats that.
-    if fallback_code and fallback_code != code:
-        logger.info("[workflow/executor] runtime failure, using the deterministic chart")
-        attempt = executor.execute(fallback_code, df)
-        if attempt.get("success"):
-            return {
-                "execution_result": attempt,
-                "code_run": fallback_code,
-                "messages": [AIMessage(content="Chart rendered by the fallback.")],
-            }
-
-    logger.error("[workflow/executor] failed: %s", result.get("error"))
+    logger.error("[workflow/executor] the model's code failed after %d fix(es): %s", repairs, problem[:300])
     return {
-        "error": result.get("error") or "Chart code failed to execute.",
+        "error": f"The model could not draw this chart: {problem}",
         "execution_result": result,
         "code_run": code,
-        "messages": [AIMessage(content=f"Execution failed: {result.get('error')}")],
+        "repairs": repairs,
+        "messages": [AIMessage(content=f"Chart failed: {problem}")],
     }
 
 
@@ -502,6 +390,7 @@ def run_agent_workflow(
         "source_decision": {},
         "data_context": {},
         "code": "",
+        "chart_prompt": {},
         "execution_result": {},
         "error": "",
     }

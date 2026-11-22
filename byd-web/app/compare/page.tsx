@@ -30,7 +30,9 @@ const ROW_HEIGHT = 30;
    sessionStorage rather than the database on purpose: a comparison is still an
    experiment, and it should not outlive the tab it was run in. Figures can be
    large, so a quota failure is ignored rather than allowed to break the page. */
-const CACHE_KEY = "promptdash_last_comparison";
+// v2: runs cached before 2026-11-23 could contain cells drawn by the removed
+// hardcoded backup chart; a new key leaves them unread.
+const CACHE_KEY = "promptdash_last_comparison_v2";
 
 type Cached = { plan: ComparisonPlan; cells: CellResult[]; at?: string };
 
@@ -108,7 +110,9 @@ function Cell({ cell, height }: { cell: CellResult | undefined; height: number }
             Failed
           </Chip>
         )}
-        {cell.used_fallback ? <Chip tone="copper">Fallback</Chip> : null}
+        {cell.repairs > 0 ? (
+          <Chip tone="copper">{cell.repairs === 1 ? "Fixed its code once" : `Fixed its code ${cell.repairs}×`}</Chip>
+        ) : null}
         {cell.violations.length > 0 ? (
           <Chip tone="copper">{cell.violations.join(", ")}</Chip>
         ) : null}
@@ -237,14 +241,13 @@ export default function ComparePage() {
   }
 
 
-  /* A chart drawn by the deterministic fallback is the harness working, not
-     the model. Counting it as a win overstated both sides -- Opus once scored
-     5/5 on a run where two of its answers had been rejected. */
-  const scored = (engine: Engine) =>
-    cells.filter((c) => c.engine === engine && c.ok && !c.used_fallback).length;
+  /* Every rendered cell is the model's own code: nothing hardcoded draws a
+     chart any more. A model that needed to see its error and fix its code is
+     counted too, and shown, because the fix cost it another call. */
+  const scored = (engine: Engine) => cells.filter((c) => c.engine === engine && c.ok).length;
   const attempted = (engine: Engine) => cells.filter((c) => c.engine === engine).length;
-  const fellBack = (engine: Engine) =>
-    cells.filter((c) => c.engine === engine && c.used_fallback).length;
+  const fixed = (engine: Engine) =>
+    cells.filter((c) => c.engine === engine && c.ok && c.repairs > 0).length;
 
   return (
     <AppShell>
@@ -344,11 +347,11 @@ export default function ComparePage() {
                     own code — local {scored("slm")}/{attempted("slm")} · Opus{" "}
                     {scored("opus")}/{attempted("opus")}
                   </span>
-                  {fellBack("slm") + fellBack("opus") > 0 ? (
+                  {fixed("slm") + fixed("opus") > 0 ? (
                     <>
                       <span>·</span>
                       <span className="tabular text-[#8a5a00]">
-                        fell back — local {fellBack("slm")} · Opus {fellBack("opus")}
+                        after fixing its code — local {fixed("slm")} · Opus {fixed("opus")}
                       </span>
                     </>
                   ) : null}
