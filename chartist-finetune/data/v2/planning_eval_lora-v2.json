@@ -1,0 +1,16 @@
+{
+  "label": "lora-v2",
+  "adapter": "runs/adapters-mlx-v2",
+  "summary": {
+    "rows": 120,
+    "analyst_ok_rate": 0.9916666666666667,
+    "mean_directions": 6.883333333333334,
+    "planner_ok_rate": 1.0,
+    "mean_charts": 6.92436974789916,
+    "rows_needing_retries": 0.125,
+    "charts_drawn": 357,
+    "render_rate": 0.988795518207283,
+    "plan_match_rate": 1.0,
+    "right_chart_rate": 0.988795518207283
+  }
+}

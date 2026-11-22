@@ -1,0 +1,339 @@
+{
+  "lora-v1": {
+    "label": "lora-v1",
+    "model": "models/qwen3.5-9b-4bit",
+    "adapter_path": "runs/adapters-mlx",
+    "n": 300,
+    "render_rate": 0.8933,
+    "render_rate_quota_weighted": 0.8874,
+    "right_shape_rate": 0.7633,
+    "hallucinated_column_rate": 0.0167,
+    "failure_kinds": {
+      "hallucinated_column": 5,
+      "runtime_error": 24,
+      "syntax_error": 3
+    },
+    "by_bucket": {
+      "area": {
+        "n": 25,
+        "render_rate": 0.84,
+        "right_shape_rate": 0.6
+      },
+      "bar": {
+        "n": 33,
+        "render_rate": 0.879,
+        "right_shape_rate": 0.818
+      },
+      "box": {
+        "n": 23,
+        "render_rate": 0.957,
+        "right_shape_rate": 0.826
+      },
+      "gauge_or_indicator": {
+        "n": 17,
+        "render_rate": 0.941,
+        "right_shape_rate": 0.647
+      },
+      "grouped_or_stacked_bar": {
+        "n": 27,
+        "render_rate": 0.963,
+        "right_shape_rate": 0.889
+      },
+      "heatmap": {
+        "n": 23,
+        "render_rate": 0.913,
+        "right_shape_rate": 0.522
+      },
+      "histogram": {
+        "n": 24,
+        "render_rate": 0.958,
+        "right_shape_rate": 0.792
+      },
+      "line": {
+        "n": 33,
+        "render_rate": 0.758,
+        "right_shape_rate": 0.727
+      },
+      "pie_or_donut": {
+        "n": 25,
+        "render_rate": 0.96,
+        "right_shape_rate": 0.84
+      },
+      "scatter": {
+        "n": 27,
+        "render_rate": 0.926,
+        "right_shape_rate": 0.926
+      },
+      "time_series": {
+        "n": 22,
+        "render_rate": 0.864,
+        "right_shape_rate": 0.864
+      },
+      "treemap_funnel_waterfall": {
+        "n": 21,
+        "render_rate": 0.81,
+        "right_shape_rate": 0.619
+      }
+    },
+    "by_hard_case": {
+      "ambiguous_question": {
+        "n": 25,
+        "render_rate": 0.88
+      },
+      "date_parsing_and_resampling": {
+        "n": 19,
+        "render_rate": 0.947
+      },
+      "easy": {
+        "n": 186,
+        "render_rate": 0.952
+      },
+      "grouped_or_faceted": {
+        "n": 18,
+        "render_rate": 0.833
+      },
+      "missing_field": {
+        "n": 19,
+        "render_rate": 0.684
+      },
+      "multi_column_aggregation": {
+        "n": 33,
+        "render_rate": 0.697
+      }
+    },
+    "generation_minutes": 32.6,
+    "failures": [
+      {
+        "test_id": "t0001",
+        "bucket": "time_series",
+        "hard_case": "multi_column_aggregation",
+        "failure_kind": "runtime_error",
+        "violations": [],
+        "error": "ubplots(\n           ~~~~~~~~~~~~~~~~~~^\n        rows,\n        ^^^^^\n    ...<17 lines>...\n        **kwargs,\n        ^^^^^^^^^\n    )\n    ^\n  File \"/Users/atukka/Desktop/BYD/chartist-finetune/.venv/lib/python3.13/site-packages/plotly/_subplots.py\", line 353, in make_subplots\n    raise TypeError(\n    ..",
+        "code": "import pandas as pd\nimport plotly.graph_objects as go\nfrom plotly.subplots import make_subplots\n\nd = df.copy()\nd['transaction_date'] = pd.to_datetime(d['transaction_date'])\nd = d.groupby(['transaction_date', 'transaction_channel'], as_index=False).agg(total_amount=('transaction_total_amount', 'sum'), avg_count=('transaction_count', 'mean'))\nd = d.sort_values('transaction_date')\nchannels = sorted(d['transaction_channel'].unique())\nfig = make_subplots(rows=2, cols=1, shared_xaxes=True, vertical_sp"
+      },
+      {
+        "test_id": "t0005",
+        "bucket": "gauge_or_indicator",
+        "hard_case": "grouped_or_faceted",
+        "failure_kind": "runtime_error",
+        "violations": [],
+        "error": "ng_shape_annotation\n    shape_dict = annotation_params_for_line(\n        shape_type, shape_args, annotation_position\n    )\n  File \"/Users/atukka/Desktop/BYD/chartist-finetune/.venv/lib/python3.13/site-packages/plotly/shapeannotation.py\", line 143, in annotation_params_for_line\n    raise ValueError('",
+        "code": "import plotly.express as px\n\nagg = df.groupby('Vehicle Type', as_index=False)['Average Speed'].mean()\nfig = px.bar(agg, x='Vehicle Type', y='Average Speed', title='Average Speed by Vehicle Type vs Fleet Average', labels={'Vehicle Type': 'Vehicle Type', 'Average Speed': 'Average Speed'})\nfig.add_hline(y=agg['Average Speed'].mean(), line_dash='dash', line_color='red', annotation_text='Fleet Average', annotation_position='top center')\nfig.update_layout(xaxis_title='Vehicle Type', yaxis_title='Avera"
+      },
+      {
+        "test_id": "t0007",
+        "bucket": "line",
+        "hard_case": "ambiguous_question",
+        "failure_kind": "runtime_error",
+        "violations": [],
+        "error": "as/core/indexes/datetimes.py\", line 1802, in to_period\n    arr = self._data.to_period(freq)\n  File \"/Users/atukka/Desktop/BYD/chartist-finetune/.venv/lib/python3.13/site-packages/pandas/core/arrays/datetimes.py\", line 1273, in to_period\n    raise ValueError(\n        \"You must pass a freq argument as",
+        "code": "import pandas as pd\nimport plotly.express as px\n\nd = df.copy()\nd['shpmt_dt'] = pd.to_datetime(d['shpmt_dt'], errors='coerce')\nd = d.dropna(subset=['shpmt_dt'])\nd['month'] = d['shpmt_dt'].dt.to_period().dt.to_timestamp()\nagg = d.groupby(['month', 'carr_nm']).agg(wt_lbs=('wt_lbs', 'sum'), frt_chg_usd=('frt_chg_usd', 'sum')).reset_index()\nagg['cost_per_lb'] = agg['frt_chg_usd'] / agg['wt_lbs']\nagg = agg.sort_values('month')\nfig = px.line(agg, x='month', y='cost_per_lb', color='carr_nm', markers=Tru"
+      },
+      {
+        "test_id": "t0037",
+        "bucket": "scatter",
+        "hard_case": null,
+        "failure_kind": "hallucinated_column",
+        "violations": [],
+        "error": "   ^\n  File \"/Users/atukka/Desktop/BYD/chartist-finetune/.venv/lib/python3.13/site-packages/plotly/express/_core.py\", line 1380, in process_args_into_dataframe\n    raise ValueError(err_msg)\nValueError: Value of 'y' is not the name of a column in 'data_frame'. Expected one of ['trip_dt', 'veh_type', ",
+        "code": "import plotly.express as px\n\nfig = px.scatter(df, x='trip_dist_km', y='fuel_l', color='veh_type', opacity=0.7, hover_data=['rgn_cd', 'drv_stat', 'stop_cnt', 'avg_spd_kph'], labels={'trip_dist_km': 'Trip distance (km)', 'fuel_l': 'Fuel used (L)', 'veh_type': 'Vehicle type'}, title='Trip Distance vs Fuel Used')\nfig.update_layout(template='plotly_white')\nprint(fig.to_json())"
+      },
+      {
+        "test_id": "t0038",
+        "bucket": "line",
+        "hard_case": "ambiguous_question",
+        "failure_kind": "runtime_error",
+        "violations": [],
+        "error": "as/core/indexes/datetimes.py\", line 1802, in to_period\n    arr = self._data.to_period(freq)\n  File \"/Users/atukka/Desktop/BYD/chartist-finetune/.venv/lib/python3.13/site-packages/pandas/core/arrays/datetimes.py\", line 1273, in to_period\n    raise ValueError(\n        \"You must pass a freq argument as",
+        "code": "import pandas as pd\nimport plotly.express as px\n\nd = df.copy()\nd['Snapshot Date'] = pd.to_datetime(d['Snapshot Date'], errors='coerce')\nd = d.dropna(subset=['Snapshot Date'])\nd['Month'] = d['Snapshot Date'].dt.to_period().dt.to_timestamp()\nagg = d.groupby('Month', as_index=False).agg({'Churn Reason': 'count'})\nagg = agg.sort_values('Month')\nfig = px.line(agg, x='Month', y='Churn Reason', markers=True, title='Total Churn Reason Records Over Time (closest available proxy for churn trend)', labels="
+      },
+      {
+        "test_id": "t0046",
+        "bucket": "line",
+        "hard_case": "multi_column_aggregation",
+        "failure_kind": "runtime_error",
+        "violations": [],
+        "error": "ubplots(\n           ~~~~~~~~~~~~~~~~~~^\n        rows,\n        ^^^^^\n    ...<17 lines>...\n        **kwargs,\n        ^^^^^^^^^\n    )\n    ^\n  File \"/Users/atukka/Desktop/BYD/chartist-finetune/.venv/lib/python3.13/site-packages/plotly/_subplots.py\", line 353, in make_subplots\n    raise TypeError(\n    ..",
+        "code": "import pandas as pd\nimport plotly.graph_objects as go\nfrom plotly.subplots import make_subplots\n\nd = df.copy()\nd['ship_date'] = pd.to_datetime(d['ship_date'])\nd['month'] = d['ship_date'].dt.to_period('M').dt.to_timestamp()\ng = d.groupby(['month', 'carrier_name']).agg(total_charge=('freight_charge_usd', 'sum'), avg_weight=('shipment_weight_kg', 'mean')).reset_index()\n\nfig = make_subplots(rows=2, cols=1, shared_xaxes=True, vertical_spacing=0.12, subplot_specs=[[{'colspan': 1}]] * 2)\n\nfig.add_trace"
+      },
+      {
+        "test_id": "t0047",
+        "bucket": "time_series",
+        "hard_case": "multi_column_aggregation",
+        "failure_kind": "runtime_error",
+        "violations": [],
+        "error": "ubplots(\n           ~~~~~~~~~~~~~~~~~~^\n        rows,\n        ^^^^^\n    ...<17 lines>...\n        **kwargs,\n        ^^^^^^^^^\n    )\n    ^\n  File \"/Users/atukka/Desktop/BYD/chartist-finetune/.venv/lib/python3.13/site-packages/plotly/_subplots.py\", line 353, in make_subplots\n    raise TypeError(\n    ..",
+        "code": "import pandas as pd\nimport plotly.graph_objects as go\nfrom plotly.subplots import make_subplots\n\nd = df.copy()\nd['Trip Date'] = pd.to_datetime(d['Trip Date'], errors='coerce')\nd = d.dropna(subset=['Trip Date'])\nd['Month'] = d['Trip Date'].dt.to_period('M').astype(str)\nm = d.groupby('Month', as_index=False)[['Distance Driven', 'Stops Completed']].sum().sort_values('Month')\n\nfig = make_subplots(rows=2, cols=1, shared_xaxes=True, vertical_spacing=0.1,\n                   subplot_specs={'row': [1, 2]"
+      },
+      {
+        "test_id": "t0061",
+        "bucket": "treemap_funnel_waterfall",
+        "hard_case": "date_parsing_and_resampling",
+        "failure_kind": null,
+        "violations": [
+          "syntax_error"
+        ],
+        "error": "",
+        "code": "import pandas as pd\nimport plotly.graph_objects as go\n\nd = df.copy()\nd['ridership_service_date'] = pd.to_datetime(d['ridership_service_date'], errors='coerce')\nd = d.dropna(subset=['ridership_service_date'])\nd['month'] = d['ridership_service_date'].dt.to_period('M').astype(str)\nd['quarter'] = d['ridership_service_date'].dt.to_period('Q').astype(str)\nd = d.groupby(['ridership_vehicle_type', 'ridership_fare_type', 'month', 'quarter'], as_index=False)['ridership_fare_revenue'].sum()\nd = d.pivot(ind"
+      },
+      {
+        "test_id": "t0066",
+        "bucket": "area",
+        "hard_case": null,
+        "failure_kind": null,
+        "violations": [
+          "syntax_error"
+        ],
+        "error": "",
+        "code": "import pandas as pd\nimport plotly.express as px\n\nd = df.copy()\nd['Semester'] = d['Semester'].astype(str)\nd['Grade Date'] = pd.to_datetime(d['Grade Date'], errors='coerce')\nd = d.dropna(subset=['Grade Date'])\nd = d.sort_values('Grade Date')\nd['Semester'] = d['Semester'].astype(str)\nd['Semester'] = d['Semester'].str.extract(r'(\\w+\\s+\\d{4})', expand=False)\nd['Semester'] = d['Semester'].fillna('Unknown')\nd['Semester'] = d['Semester'].astype(str)\nd['Semester'] = d['Semester'].str.upper()\nd['Semester'"
+      },
+      {
+        "test_id": "t0068",
+        "bucket": "bar",
+        "hard_case": "grouped_or_faceted",
+        "failure_kind": "hallucinated_column",
+        "violations": [],
+        "error": "lf._raise_if_missing(keyarr, indexer, axis_name)\n    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/atukka/Desktop/BYD/chartist-finetune/.venv/lib/python3.13/site-packages/pandas/core/indexes/base.py\", line 6606, in _raise_if_missing\n    raise KeyError(f\"None of [{key}] are in the",
+        "code": "import pandas as pd\nimport plotly.express as px\n\nagg = df.groupby(['regionCode', 'queueName'], as_index=False)['callsOffered'].sum()\nagg = agg[agg.groupby('regionCode')['callsOffered'].idxmax()]\nagg = agg.sort_values('regionCode')\n\nfig = px.bar(agg, x='regionCode', y='callsOffered', color='queueName', text='callsOffered', title='Queue with Highest Calls Offered by Region', labels={'regionCode': 'Region', 'callsOffered': 'Total Calls Offered', 'queueName': 'Queue'})\nfig.update_traces(textposition"
+      },
+      {
+        "test_id": "t0088",
+        "bucket": "box",
+        "hard_case": "multi_column_aggregation",
+        "failure_kind": "runtime_error",
+        "violations": [],
+        "error": "dators.py\", line 312, in raise_invalid_val\n            raise ValueError(\n    ...<11 lines>...\n            )\nValueError: \n    Invalid value of type 'builtins.dict' received for the 'boxmean' property of box\n        Received value: {'visible': True}\n\n    The 'boxmean' property is an enumeration that m",
+        "code": "import plotly.graph_objects as go\n\nagg = df.groupby('hr_employment_type', as_index=False).agg(total_headcount=('hr_headcount', 'sum'), avg_salary=('hr_avg_salary_usd', 'mean'))\n\nfig = go.Figure()\nfig.add_trace(go.Box(x=agg['hr_employment_type'], y=agg['avg_salary'], name='Average Salary', marker=dict(color='#1f77b4'), boxmean=dict(visible=True), line_color='white'))\nfig.add_trace(go.Bar(x=agg['hr_employment_type'], y=agg['total_headcount'], name='Total Headcount', marker=dict(color='#ff7f0e'), s"
+      },
+      {
+        "test_id": "t0096",
+        "bucket": "time_series",
+        "hard_case": "missing_field",
+        "failure_kind": "runtime_error",
+        "violations": [],
+        "error": "~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<candidate>\", line 12, in <module>\n  File \"/Users/atukka/Desktop/BYD/chartist-finetune/.venv/lib/python3.13/site-packages/pandas/core/generic.py\", line 1445, in __bool__\n    raise ValueError(\n    ...<2 lines>...\n  ",
+        "code": "import pandas as pd\nimport plotly.express as px\n\nd = df.copy()\nd['trip_start_date'] = pd.to_datetime(d['trip_start_date'], errors='coerce')\nd = d.dropna(subset=['trip_start_date'])\nend = d['trip_start_date'].max()\nstart = end - pd.DateOffset(months=6)\nd = d[d['trip_start_date'] > start]\nd['week'] = d['trip_start_date'].dt.to_period('W').dt.start_time\nagg = d.groupby('week', as_index=False).agg(total_distance_km=('trip_distance_km', 'sum'), total_fuel_liters=('trip_fuel_liters', 'sum'))\nagg['avg_"
+      },
+      {
+        "test_id": "t0099",
+        "bucket": "treemap_funnel_waterfall",
+        "hard_case": null,
+        "failure_kind": "runtime_error",
+        "violations": [],
+        "error": "'hsl(0deg 100% 50%)')\n      - hsla (e.g. 'hsla(0, 100%, 50%, 0.5)', 'hsla(0deg 100% 50% / 0.5)')\n      - hwb (e.g. 'hwb(0 0% 100%)')\n      - lab/lch/oklab/oklch (e.g. 'oklch(0.7 0.15 180)')\n      - color (e.g. 'color(display-p3 1 0 0)')\n      - named colors (full list: https://www.w3.org/TR/css-colo",
+        "code": "import plotly.graph_objects as go\nfrom plotly.subplots import make_subplots\n\nagg = df.groupby(['mode_cd', 'fare_typ'], as_index=False)[['tot_rdr', 'tot_rev']].sum()\n\nfig = make_subplots(rows=2, cols=1, shared_xaxes=True, vertical_spacing=0.12, subplot_titles=('Ridership', 'Revenue'))\n\nfor i, mode in enumerate(sorted(agg['mode_cd'].unique())):\n    sub = agg[agg['mode_cd'] == mode]\n    sub = sub[sub['fare_typ'].notna()]\n    sub = sub.sort_values('fare_typ')\n    sub['cum_rdr'] = sub['tot_rdr'].cums"
+      },
+      {
+        "test_id": "t0104",
+        "bucket": "area",
+        "hard_case": null,
+        "failure_kind": "runtime_error",
+        "violations": [],
+        "error": "as/core/indexes/datetimes.py\", line 1802, in to_period\n    arr = self._data.to_period(freq)\n  File \"/Users/atukka/Desktop/BYD/chartist-finetune/.venv/lib/python3.13/site-packages/pandas/core/arrays/datetimes.py\", line 1273, in to_period\n    raise ValueError(\n        \"You must pass a freq argument as",
+        "code": "import pandas as pd\nimport plotly.express as px\n\nd = df.copy()\nd['hv_dt'] = pd.to_datetime(d['hv_dt'])\nd['season'] = d['hv_dt'].dt.to_period().astype(str)\nagg = d.groupby(['crp_typ', 'season'], as_index=False)['hrv_area_ha'].sum()\nagg = agg.sort_values(['crp_typ', 'season'])\nagg['cum_hrv_area_ha'] = agg.groupby('crp_typ')['hrv_area_ha'].cumsum()\nfig = px.area(agg, x='season', y='cum_hrv_area_ha', color='crp_typ', title='Cumulative Harvested Area by Crop and Season', labels={'season': 'Season', '"
+      },
+      {
+        "test_id": "t0122",
+        "bucket": "bar",
+        "hard_case": null,
+        "failure_kind": "hallucinated_column",
+        "violations": [],
+        "error": "\n  File \"/Users/atukka/Desktop/BYD/chartist-finetune/.venv/lib/python3.13/site-packages/pandas/core/frame.py\", line 9330, in sort_values\n    k = self._get_label_or_level_values(by[0], axis=axis)\n  File \"/Users/atukka/Desktop/BYD/chartist-finetune/.venv/lib/python3.13/site-packages/pandas/core/generi",
+        "code": "import plotly.express as px\n\nagg = df.groupby('department_name', as_index=False).apply(lambda g: (g['average_tenure_years'] * g['headcount_total']).sum() / g['headcount_total'].sum() if g['headcount_total'].sum() > 0 else g['average_tenure_years'].mean(), include_groups=False).reset_index()\nagg = agg.rename(columns={'average_tenure_years': 'avg_tenure_years'})\nagg = agg.sort_values('avg_tenure_years', ascending=False)\nfig = px.bar(agg, x='department_name', y='avg_tenure_years', title='Average Te"
+      },
+      {
+        "test_id": "t0135",
+        "bucket": "histogram",
+        "hard_case": "multi_column_aggregation",
+        "failure_kind": "runtime_error",
+        "violations": [],
+        "error": "e(plotly_obj[key], val)\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/atukka/Desktop/BYD/chartist-finetune/.venv/lib/python3.13/site-packages/plotly/basedatatypes.py\", line 3859, in _perform_update\n    raise err\nValueError: only integers, slices (`:`), ellipsis (`...`), numpy.n",
+        "code": "import plotly.express as px\n\nagg = df.groupby(['PLAN_TIER_CD', 'REGION_CD'], as_index=False)['TOT_REV_AMT'].sum()\nfig = px.scatter(agg, x='PLAN_TIER_CD', y='REGION_CD', size='TOT_REV_AMT', color='PLAN_TIER_CD', hover_name='PLAN_TIER_CD', hover_data={'REGION_CD': ':.0f', 'TOT_REV_AMT': ':,.0f'}, labels={'PLAN_TIER_CD': 'Plan Tier', 'REGION_CD': 'Region', 'TOT_REV_AMT': 'Total Revenue'}, title='Total Revenue Distribution by Plan Tier and Region')\nfig.update_traces(marker=dict(size_max=20, sizemin="
+      },
+      {
+        "test_id": "t0154",
+        "bucket": "line",
+        "hard_case": "missing_field",
+        "failure_kind": "runtime_error",
+        "violations": [],
+        "error": "ys.exit(main())\n             ~~~~^^\n  File \"/Users/atukka/Desktop/BYD/chartist-finetune/_candidate_runner.py\", line 33, in main\n    exec(code, {\"df\": df, \"pandas\": pd, \"pd\": pd, \"px\": px, \"go\": go, \"json\": json})\n    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  ",
+        "code": "import pandas as pd\nimport plotly.express as px\n\ndata = df.copy()\ndata['ridership_service_date'] = pd.to_datetime(data['ridership_service_date'], errors='coerce')\ndata = data.dropna(subset=['ridership_service_date'])\ndata['year'] = data['ridership_service_date'].dt.year\nagg = data.groupby('year', as_index=False).agg(on_time_pct=('ridership_on_time_pct', 'mean'), avg_wait=('ridership_avg_wait_minutes', 'mean'), boardings=('ridership_boardings_count', 'sum'))\nagg = agg.sort_values('year')\nfig = px"
+      },
+      {
+        "test_id": "t0157",
+        "bucket": "line",
+        "hard_case": "missing_field",
+        "failure_kind": "runtime_error",
+        "violations": [],
+        "error": "as/core/indexes/datetimes.py\", line 1802, in to_period\n    arr = self._data.to_period(freq)\n  File \"/Users/atukka/Desktop/BYD/chartist-finetune/.venv/lib/python3.13/site-packages/pandas/core/arrays/datetimes.py\", line 1273, in to_period\n    raise ValueError(\n        \"You must pass a freq argument as",
+        "code": "import pandas as pd\nimport plotly.express as px\n\nd = df.copy()\nd['Shift Date'] = pd.to_datetime(d['Shift Date'], errors='coerce')\nd = d.dropna(subset=['Shift Date'])\nd['Month'] = d['Shift Date'].dt.to_period().dt.to_timestamp()\ng = d.groupby(['Month', 'Team Name'], as_index=False).agg(CallsOffered=('Calls Offered', 'sum'))\ng = g.sort_values('Month')\nagg = g.pivot(index='Team Name', columns='Month', values='CallsOffered')\nagg = agg.reindex(sorted(agg.columns), axis=1)\nfig = px.line(agg, x=agg.col"
+      },
+      {
+        "test_id": "t0169",
+        "bucket": "heatmap",
+        "hard_case": null,
+        "failure_kind": "runtime_error",
+        "violations": [],
+        "error": "packages/pandas/core/reshape/reshape.py\", line 184, in __init__\n    self._make_selectors()\n    ~~~~~~~~~~~~~~~~~~~~^^\n  File \"/Users/atukka/Desktop/BYD/chartist-finetune/.venv/lib/python3.13/site-packages/pandas/core/reshape/reshape.py\", line 265, in _make_selectors\n    raise ValueError(\"Index conta",
+        "code": "import pandas as pd\nimport plotly.graph_objects as go\n\nd = df.copy()\nd['ridership_service_date'] = pd.to_datetime(d['ridership_service_date'])\nd['month'] = d['ridership_service_date'].dt.to_period('M').dt.to_timestamp()\ng = d.groupby(['ridership_route_name', 'ridership_fare_type', 'month'], as_index=False)['ridership_boardings_count'].sum()\npivot = g.pivot(index='ridership_route_name', columns='ridership_fare_type', values='ridership_boardings_count')\npivot = pivot.reindex(sorted(pivot.columns),"
+      },
+      {
+        "test_id": "t0177",
+        "bucket": "line",
+        "hard_case": "multi_column_aggregation",
+        "failure_kind": "runtime_error",
+        "violations": [],
+        "error": "ubplots(\n           ~~~~~~~~~~~~~~~~~~^\n        rows,\n        ^^^^^\n    ...<17 lines>...\n        **kwargs,\n        ^^^^^^^^^\n    )\n    ^\n  File \"/Users/atukka/Desktop/BYD/chartist-finetune/.venv/lib/python3.13/site-packages/plotly/_subplots.py\", line 353, in make_subplots\n    raise TypeError(\n    ..",
+        "code": "import pandas as pd\nimport plotly.graph_objects as go\nfrom plotly.subplots import make_subplots\n\nd = df.copy()\nd['stayDate'] = pd.to_datetime(d['stayDate'], errors='coerce')\nd = d.dropna(subset=['stayDate'])\nd['month'] = d['stayDate'].dt.to_period('M').dt.to_timestamp()\ng = d.groupby(['month', 'propertyName']).agg(avgRate=('averageDailyRate', 'mean'), roomsSold=('roomsSold', 'sum')).reset_index()\nprops = sorted(g['propertyName'].unique())\nmonths = sorted(g['month'].unique())\nfig = make_subplots("
+      },
+      {
+        "test_id": "t0191",
+        "bucket": "heatmap",
+        "hard_case": "missing_field",
+        "failure_kind": "runtime_error",
+        "violations": [],
+        "error": "as/core/indexes/datetimes.py\", line 1802, in to_period\n    arr = self._data.to_period(freq)\n  File \"/Users/atukka/Desktop/BYD/chartist-finetune/.venv/lib/python3.13/site-packages/pandas/core/arrays/datetimes.py\", line 1273, in to_period\n    raise ValueError(\n        \"You must pass a freq argument as",
+        "code": "import pandas as pd\nimport plotly.graph_objects as go\n\nd = df.copy()\nd['Shift Date'] = pd.to_datetime(d['Shift Date'], errors='coerce')\nd = d.dropna(subset=['Shift Date'])\nd['Month'] = d['Shift Date'].dt.to_period().astype(str)\npivot = d.pivot_table(index='Team Name', columns='Month', values='Average Handle Time', aggfunc='mean')\npivot = pivot.reindex(sorted(pivot.columns), axis=1)\nfig = go.Figure(data=go.Heatmap(z=pivot.values, x=list(pivot.columns), y=list(pivot.index), colorscale='Viridis', c"
+      },
+      {
+        "test_id": "t0208",
+        "bucket": "treemap_funnel_waterfall",
+        "hard_case": null,
+        "failure_kind": null,
+        "violations": [
+          "syntax_error"
+        ],
+        "error": "",
+        "code": "import pandas as pd\nimport plotly.express as px\n\nd = df.copy()\nd = d[d['REGION_CD'].notna()]\nd['REGION'] = d['REGION_CD'].astype(str)\nd['PLAN_TIER'] = d['PLAN_TIER_CD'].astype(str)\nd['MRR'] = d['MRR_AMT']\nd['SEATS'] = d['ACTIVE_SEAT_CNT']\nd['W'] = d['MRR'] * d['SEATS']\nagg = d.groupby(['REGION', 'PLAN_TIER'], as_index=False).agg(W=('W', 'sum'), MRR=('MRR', 'sum'), SEATS=('SEATS', 'sum'))\nagg['MRR_PER_SEAT'] = agg['MRR'] / agg['SEATS']\nagg = agg.sort_values(['REGION', 'MRR_PER_SEAT'], ascending=["
+      },
+      {
+        "test_id": "t0240",
+        "bucket": "pie_or_donut",
+        "hard_case": null,
+        "failure_kind": "runtime_error",
+        "violations": [],
+        "error": ".venv/lib/python3.13/site-packages/_plotly_utils/basevalidators.py\", line 312, in raise_invalid_val\n            raise ValueError(\n    ...<11 lines>...\n            )\nValueError: \n    Invalid value of type 'builtins.str' received for the 'text' property of pie\n        Received value: 'Pick'\n\n    The '",
+        "code": "import plotly.express as px\n\nagg = df.groupby('mvmt_typ', as_index=False)['unit_qty'].sum()\nfig = px.pie(agg, names='mvmt_typ', values='unit_qty', hole=0.4, title='Share of Movements: Picks vs Putaways')\nfig.update_traces(textposition='inside', textinfo='percent+label')\nfor t in agg['mvmt_typ']:\n    label = t.lower()\n    if 'pick' in label:\n        fig.update_traces(text='Pick', textinfo='percent+label', name=t)\n    elif 'put' in label:\n        fig.update_traces(text='Putaway', textinfo='percent"
+      },
+      {
+        "test_id": "t0256",
+        "bucket": "area",
+        "hard_case": "multi_column_aggregation",
+        "failure_kind": "runtime_error",
+        "violations": [],
+        "error": "ubplots(\n           ~~~~~~~~~~~~~~~~~~^\n        rows,\n        ^^^^^\n    ...<17 lines>...\n        **kwargs,\n        ^^^^^^^^^\n    )\n    ^\n  File \"/Users/atukka/Desktop/BYD/chartist-finetune/.venv/lib/python3.13/site-packages/plotly/_subplots.py\", line 353, in make_subplots\n    raise TypeError(\n    ..",
+        "code": "import pandas as pd\nimport plotly.graph_objects as go\nfrom plotly.subplots import make_subplots\n\nd = df.copy()\nd['TERM_END_DT'] = pd.to_datetime(d['TERM_END_DT'])\nd['DEPT_CD'] = d['DEPT_CD'].astype(str)\ng = d.groupby(['TERM_END_DT', 'DEPT_CD'], as_index=False)[['CREDIT_HRS_QTY', 'ENROLL_CNT']].sum()\ng = g.sort_values('TERM_END_DT')\ndepts = sorted(g['DEPT_CD'].unique())\nfig = make_subplots(rows=2, cols=1, shared_xaxes=True, vertical_spacing=0.12, subplot_specs=[[1,1], [2,1]])\nfor i, dep in enumer"
+      },
+      {
+        "test_id": "t0260",
+        "bucket": "treemap_funnel_waterfall",
+        "hard_case": "missing_field",
+        "failure_kind": "hallucinated_column",
+        "violations": [],
+        "error": "n __init__\n    grouper, exclusions, obj = get_grouper(\n                               ~~~~~~~~~~~^\n        obj,\n        ^^^^\n    ...<4 lines>...\n        dropna=self.dropna,\n        ^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/Users/atukka/Desktop/BYD/chartist-finetune/.venv/lib/python3.13/site-packages/",
+        "code": "import plotly.express as px\n\nagg = df.groupby(['serviceShift', 'orderChannel', 'server'], as_index=False)['totalRevenue'].sum()\nagg = agg[agg['totalRevenue'] > 0]\nfig = px.treemap(agg, path=[px.Constant('All Revenue'), 'serviceShift', 'orderChannel', 'server'], values='totalRevenue', color='totalRevenue', color_continuous_scale='Blues')\nfig.update_traces(textinfo='label+value+percent parent', root_color='lightgrey')\nfig.update_layout(title='Revenue by Service Shift, Order Channel and Server', ma"
+      }
+    ]
+  }
+}
