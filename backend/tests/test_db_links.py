@@ -4,7 +4,7 @@ import pytest
 from sqlalchemy import Column, ForeignKey, Integer, MetaData, String, Table, create_engine
 
 from app.services import db_sources
-from app.services.db_sources import Link, links_on
+from app.services.db_sources import Link, links_on, load_joined_on
 
 ORDERS_CUSTOMERS = Link("orders", ("customer_id",), "customers", ("id",))
 
@@ -45,3 +45,22 @@ def test_a_key_to_a_table_outside_the_list_is_left_out():
 def test_a_link_survives_a_round_trip_through_a_dict():
     assert Link.from_dict(ORDERS_CUSTOMERS.to_dict()) == ORDERS_CUSTOMERS
     assert ORDERS_CUSTOMERS.label == "orders+customers"
+
+
+def test_a_joined_table_has_one_row_per_child_row_and_named_parent_columns():
+    with shop_engine().connect() as conn:
+        frame = load_joined_on(conn, ORDERS_CUSTOMERS)
+    assert len(frame) == 6  # every order, the one without a customer included
+    assert list(frame.columns) == ["id", "customer_id", "product_id", "revenue", "customers.id", "customers.region"]
+    assert frame.loc[frame["customer_id"] == 99, "customers.region"].isna().all()
+
+
+def test_a_joined_table_over_the_row_limit_is_refused(monkeypatch):
+    monkeypatch.setattr(db_sources, "MAX_ROWS", 3)
+    with shop_engine().connect() as conn, pytest.raises(ValueError, match="row limit"):
+        load_joined_on(conn, ORDERS_CUSTOMERS)
+
+
+def test_a_schema_read_takes_only_a_few_rows():
+    with shop_engine().connect() as conn:
+        assert len(load_joined_on(conn, ORDERS_CUSTOMERS, limit=2)) == 2

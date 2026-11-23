@@ -334,6 +334,72 @@ def schema_of(source: Any, table: str, sample_rows: int = 3) -> Dict[str, Any]:
         engine.dispose()
 
 
+def load_joined_on(connection: Any, link: Link, limit: Optional[int] = None) -> pd.DataFrame:
+    """The child table with its parent's columns: a left join on the declared
+    key, so one row per child row. Parent columns are named `parent.column`, so
+    nothing collides. Tables and columns come from reflection and are quoted by
+    SQLAlchemy, never interpolated."""
+    child = Table(link.child, MetaData(), autoload_with=connection)
+    parent = Table(link.parent, MetaData(), autoload_with=connection)
+    if limit is None:
+        rows = connection.execute(select(func.count()).select_from(child)).scalar_one()
+        if rows > MAX_ROWS:
+            raise ValueError(
+                f"{link.child} has {rows:,} rows, above the {MAX_ROWS:,} row limit for a chart. "
+                "Chart a view that aggregates it instead."
+            )
+    on = and_(*[child.c[c] == parent.c[p] for c, p in zip(link.child_columns, link.parent_columns)])
+    columns = [*child.c, *[column.label(f"{link.parent}.{column.name}") for column in parent.c]]
+    query = select(*columns).select_from(child.outerjoin(parent, on))
+    if limit is not None:
+        query = query.limit(limit)
+    return pd.read_sql(query, connection)
+
+
+def load_joined(source: Any, link: Link, limit: Optional[int] = None) -> pd.DataFrame:
+    """A joined table of a stored connection. Raises with a reason a user can act on."""
+    engine = engine_for_source(source)
+    try:
+        with engine.connect() as connection:
+            inspector = inspect(connection)
+            present = set(inspector.get_table_names()) | set(inspector.get_view_names())
+            for table in (link.child, link.parent):
+                if table not in present:
+                    raise ValueError(f"{table} is not a table in {source.db_name}")
+            return load_joined_on(connection, link, limit)
+    finally:
+        engine.dispose()
+
+
+def load_joined_by_id(source_id: str, link: Link, limit: Optional[int] = None) -> pd.DataFrame:
+    """Same, from a source id: for code that runs outside a request session."""
+    from app.core.database import SessionLocal
+    from app.models.data_source import DataSource
+
+    session = SessionLocal()
+    try:
+        source = session.query(DataSource).filter(DataSource.id == source_id).first()
+        if source is None:
+            raise ValueError("That database connection no longer exists")
+        return load_joined(source, link, limit)
+    finally:
+        session.close()
+
+
+def joined_schema(source: Any, link: Link, sample_rows: int = 3) -> Dict[str, Any]:
+    """Columns, dtypes and a few rows of a joined table, in schema_of's shape."""
+    try:
+        frame = load_joined(source, link, limit=5)
+    except Exception as exc:  # noqa: BLE001
+        return {"error": _readable(exc)}
+    return {
+        "filename": f"{link.label} · {source.display_name}",
+        "columns": list(frame.columns),
+        "dtypes": {column: str(dtype) for column, dtype in frame.dtypes.items()},
+        "sample": frame.head(sample_rows).to_dict(orient="records"),
+    }
+
+
 def split_candidate_id(candidate_id: str) -> Optional[tuple[str, str]]:
     """`<source id>:<table>` -> (source id, table), or None if it is not one."""
     if ":" not in candidate_id:
