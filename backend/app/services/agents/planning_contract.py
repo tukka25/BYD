@@ -387,6 +387,7 @@ def check_specs(
     payload: Any,
     tables: dict[str, dict[str, str]],
     validate: Callable[[dict], list[str]] | None = None,
+    required_kinds: tuple[str, ...] = (),
 ) -> tuple[list[dict], list[str]]:
     items = payload.get("charts") if isinstance(payload, dict) else None
     if not isinstance(items, list):
@@ -409,6 +410,9 @@ def check_specs(
             continue
         seen.add(key)
         valid.append(spec)
+    for kind in required_kinds:
+        if not any(spec["chart"] == kind for spec in valid):
+            errors.append(f"the user asked for a {kind}: make one of the charts a {kind}")
     if not valid:
         errors.append("no usable chart plans")
     return valid, errors

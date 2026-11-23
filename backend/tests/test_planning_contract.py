@@ -184,3 +184,13 @@ def test_a_bar_without_aggregation_says_which_to_use():
     case = spec(table="tracks", x="playlist_genre", y="track_popularity", agg="none")
     valid, errors = check_specs({"charts": [case]}, SONGS)
     assert valid == [] and "sum, mean or count" in errors[0]
+
+
+def test_a_requested_kind_must_be_among_the_charts():
+    valid, errors = check_specs({"charts": [spec()]}, TABLES, required_kinds=("treemap",))
+    assert valid and any("asked for a treemap" in error for error in errors)
+
+
+def test_a_requested_kind_that_is_there_passes():
+    tree = spec(chart="treemap", x="cntry_cd", group="plan_tier", sort="", top_n=0)
+    assert check_specs({"charts": [tree]}, TABLES, required_kinds=("treemap",))[1] == []

@@ -12,6 +12,7 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Any, Generator, Iterator
 
+from app.services.agents.chart_kinds import KIND_INFO
 from app.services.agents.data_tools import ToolBox
 from app.services.agents.discovery import Findings, Probe, discover
 from app.services.agents.layout import INTRO_HEIGHT, intro_html, lay_out
@@ -119,6 +120,7 @@ def build_dashboard(
     top: int = 0,
     explorer_llm: Any = None,
     memory: str = "",
+    required_kinds: tuple[str, ...] = (),
 ) -> Iterator[Event]:
     yield Event("status", {"label": "Reading your data"})
     tables = profile_sources(sources, data_dir, brief)
@@ -127,18 +129,22 @@ def build_dashboard(
         return
     profiles = [entry.profile for entry in tables]
     links = render_links([entry.source["join"] for entry in tables if entry.source.get("join")])
+    request = brief
+    if required_kinds:
+        labels = ", ".join(KIND_INFO[kind]["label"] for kind in required_kinds)
+        request = f"{brief}\nInclude these chart kinds: {labels}.".strip()
 
     facts, validate = "", None
     if explorer_llm is not None:
         toolbox = ToolBox({entry.label: entry.source for entry in tables}, data_dir)
         yield Event("status", {"label": "Checking the data"})
-        findings = yield from _with_probe_status(discover(explorer_llm, brief, profiles, toolbox))
+        findings = yield from _with_probe_status(discover(explorer_llm, request, profiles, toolbox))
         facts, validate = findings.note, toolbox.validate_spec
 
     choosing = "Choosing what to show"
     yield Event("status", {"label": choosing})
     directions = yield from _with_retry_status(
-        propose_directions_steps(analyst_llm, brief, profiles, facts, memory, links=links), choosing
+        propose_directions_steps(analyst_llm, request, profiles, facts, memory, links=links), choosing
     )
     if not directions.items:
         yield Event("error", {"detail": "Could not work out what to show from this data: "
@@ -148,7 +154,8 @@ def build_dashboard(
     planning = "Planning the charts"
     yield Event("status", {"label": planning})
     charts = yield from _with_retry_status(
-        plan_charts_steps(planner_llm, directions.items, profiles, facts, validate, links=links), planning
+        plan_charts_steps(planner_llm, directions.items, profiles, facts, validate, links=links,
+                           required_kinds=required_kinds), planning
     )
     if not charts.items:
         yield Event("error", {"detail": "Could not plan charts for this data: " + "; ".join(charts.errors[:3])})

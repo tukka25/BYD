@@ -150,13 +150,18 @@ def plan_charts_steps(
     facts: str = "",
     validate: Callable[[dict], list[str]] | None = None,
     links: str = "",
+    required_kinds: tuple[str, ...] = (),
 ) -> Generator[Retry, None, PlanStep]:
     user = with_context(
         PLANNER_USER_TEMPLATE.format(profiles=render_profiles(profiles), directions=render_directions(directions)),
         facts,
         links=links,
     )
-    check = check_specs if validate is None else (lambda payload, tables: check_specs(payload, tables, validate))
+    kinds = tuple(required_kinds)
+
+    def check(payload: Any, tables: dict[str, dict[str, str]]) -> tuple[list[dict], list[str]]:
+        return check_specs(payload, tables, validate, kinds)
+
     return run_checked(llm, PLANNER_SYSTEM_PROMPT, user, check, columns_by_table(profiles), "planner")
 
 
@@ -167,5 +172,6 @@ def plan_charts(
     facts: str = "",
     validate: Callable[[dict], list[str]] | None = None,
     links: str = "",
+    required_kinds: tuple[str, ...] = (),
 ) -> PlanStep:
-    return finish(plan_charts_steps(llm, directions, profiles, facts, validate, links))
+    return finish(plan_charts_steps(llm, directions, profiles, facts, validate, links, required_kinds))
