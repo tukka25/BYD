@@ -5,10 +5,10 @@
 **Goal:** Show the chart kinds the model can draw in a right-side panel, each with an example chart the model itself drew and its name. Let the user pick a kind by typing "/" in either prompt. The pick reaches the agent as a structured field, and the model plans and draws that kind.
 
 **Architecture:**
-- **One list of kinds.** The backend serves the list from `planning_contract.CHART_KINDS`, which the planner's checks already use, plus user-facing words, so the UI can never offer a kind the planner rejects.
-- **A pick is a field, not text.** A pick travels as `chart_kind` (one chart) or `chart_kinds` (a dashboard brief), never as prompt text.
+- **One list of kinds.** The kinds are a fixed set, so the frontend keeps them as a constant, `CHART_KINDS` in `byd-web/lib/chart-kinds.ts`, and the "/" menu and the panel never fetch it. A backend test reads that file as text and fails unless its ids and labels equal `planning_contract.CHART_KINDS` (the list the planner's checks use) and the labels in `agents/chart_kinds.KIND_INFO`, so the UI can never offer a kind the planner rejects.
+- **A pick travels as a field, not as typed text.** From the UI to the API a pick is `chart_kind` (one chart) or `chart_kinds` (a dashboard brief), never words added to the prompt. Inside the backend the analyst and planner are then told the kind in words, and the planner's checks hold the plan to it.
 - **One chart in a picked kind.** It takes the dashboard's path shrunk to one chart: the detective picks the table, and the planner writes one plan that must be that kind (checked and retried). The chartist reads it as the `Chart plan:` block lora-v2 was trained on, and draws it through the repair loop.
-- **Model-drawn examples.** The panel's thumbnails are figures the model drew through that same path on a seeded sample file. A kind with no example says so.
+- **Model-drawn examples.** The panel's thumbnails are figures the model drew through that same path on a seeded sample file. A kind with no example says so. If the examples file does not load, the panel says that, with the reason, instead of the thumbnails; a failed load never reads as "No example yet".
 - **The "/" menu is an ARIA combobox.** Focus stays in the field, the highlighted option goes through `aria-activedescendant`, and the list filters as you type. Up and Down move, Enter or Tab pick, Esc closes, and a pick shows as a removable chip.
 
 **Tech Stack:** FastAPI and pydantic v2, Next.js 16 with React 19, Tailwind 4, lucide-react, bundled Plotly (`plotly.js-dist-min`), pytest, and Node 24's built-in test runner (`node --test` with native TypeScript type stripping, so no test framework is added).
@@ -18,7 +18,7 @@
 ## Global Constraints
 
 - Never hardcode charts. The examples are charts the model drew; a kind it could not draw gets no image, never a stand-in, and icons label kinds in the menu only.
-- A picked kind is a structured field (`chart_kind`, `chart_kinds`), never prompt text, and is checked against `CHART_KINDS` at the API boundary (422 otherwise).
+- A picked kind travels from the UI to the API as a structured field (`chart_kind`, `chart_kinds`), never as text typed into the prompt, and is checked against `CHART_KINDS` at the API boundary (422 otherwise). Inside the backend the analyst and planner are told the kind in words: a brief gets "Include these chart kinds: ..." (Task 2), and a single chart's direction gives the reason "the user asked for a ..." (Task 3).
 - A brief takes at most 4 kinds; a single chart takes 1.
 - The chartist learns the kind only through the chart plan (`render_spec`), the form lora-v2 was trained on. `CHARTIST_CHART_TYPE_HINT` stays `off`.
 - UI follows `byd-web/DESIGN.md`:
@@ -33,27 +33,24 @@
 
 ## File Structure
 
-- Create `backend/app/services/agents/chart_kinds.py`: the user-facing words for each `CHART_KINDS` entry.
-- Create `backend/app/api/v1/endpoints/chart_kinds.py` and register it in `backend/app/api/v1/router.py`: `GET /api/v1/chart-kinds`.
+- Create `backend/app/services/agents/chart_kinds.py`: the user-facing words for each `CHART_KINDS` entry (the labels go into the analyst's sentence and the single chart's direction).
 - Modify `backend/app/services/agents/planning_contract.py`: `check_specs(..., required_kinds=())`.
 - Modify `backend/app/services/agents/planning.py`: a `required_kinds` parameter.
 - Modify `backend/app/services/agents/dashboard_flow.py`: `required_kinds`.
 - Create `backend/app/services/agents/kind_request.py`: one chart in a picked kind.
-- Modify `backend/app/api/v1/endpoints/blocks.py`: `chart_kind` and `chart_kinds` fields and routing.
+- Modify `backend/app/api/v1/endpoints/blocks.py`: `chart_kind` and `chart_kinds` fields and routing, and `chart_kind=` in the `[blocks] generate` log line.
 - Create `backend/scripts/make_chart_kind_examples.py` and the generated `byd-web/public/chart-kinds/examples.json`.
-- Create `byd-web/lib/slash-menu.ts` (pure logic), `byd-web/tests/slash-menu.test.mts`, `byd-web/lib/chart-kinds.ts`, `byd-web/components/kind-menu.tsx` and `byd-web/components/chart-kinds-panel.tsx`.
+- Create `byd-web/lib/slash-menu.ts` (pure logic), `byd-web/tests/slash-menu.test.mts`, `byd-web/lib/chart-kinds.ts` (the fixed list of kinds and the examples loader), `byd-web/components/kind-menu.tsx` and `byd-web/components/chart-kinds-panel.tsx`.
 - Modify `byd-web/lib/blocks.ts`, `byd-web/components/report-canvas.tsx`, `byd-web/components/plot.tsx`, `byd-web/tsconfig.json` and `byd-web/package.json`.
-- Tests: create `backend/tests/test_chart_kinds.py` and `backend/tests/test_kind_request.py`; modify `backend/tests/test_planning_contract.py` and `backend/tests/test_dashboard_flow.py`.
+- Tests: create `backend/tests/test_chart_kinds.py`, `backend/tests/test_kind_request.py` and `backend/tests/test_chart_kinds_frontend.py` (the frontend list equals the planner's); modify `backend/tests/test_planning_contract.py` and `backend/tests/test_dashboard_flow.py`.
 - Docs: `byd-web/DESIGN.md` and `AGENTS.md`.
 
 ---
 
-### Task 1: The chart kinds catalogue and its endpoint
+### Task 1: The chart kinds catalogue
 
 **Files:**
 - Create: `backend/app/services/agents/chart_kinds.py`
-- Create: `backend/app/api/v1/endpoints/chart_kinds.py`
-- Modify: `backend/app/api/v1/router.py`
 - Test: `backend/tests/test_chart_kinds.py`
 
 **Interfaces:**
@@ -61,13 +58,12 @@
 - Produces:
   - `KIND_INFO: dict[str, dict]` with keys `label`, `best_for`, `needs` and `aliases`.
   - `chart_kinds() -> list[dict]`, each item `{"kind", "label", "best_for", "needs", "aliases"}`, in `CHART_KINDS` order.
-  - `GET /api/v1/chart-kinds` (authenticated).
+- No endpoint serves this list. The frontend keeps its own constant copy (Task 6), and a test there keeps its ids and labels equal to these.
 
 - [ ] **Step 1: Write the failing tests** (`backend/tests/test_chart_kinds.py`)
 
 ```python
-"""The kinds the UI offers are exactly the kinds the planner accepts."""
-from app.api.v1.endpoints.chart_kinds import list_chart_kinds
+"""Every kind the planner accepts has words for the user, and nothing else does."""
 from app.services.agents.chart_kinds import KIND_INFO, chart_kinds
 from app.services.agents.planning_contract import CHART_KINDS
 
@@ -80,10 +76,6 @@ def test_the_list_follows_the_planner_order_and_carries_what_the_ui_shows():
     kinds = chart_kinds()
     assert [k["kind"] for k in kinds] == list(CHART_KINDS)
     assert all(k["label"] and k["best_for"] and k["needs"] and isinstance(k["aliases"], list) for k in kinds)
-
-
-def test_the_endpoint_returns_the_list():
-    assert list_chart_kinds(current_user=None) == chart_kinds()
 ```
 
 - [ ] **Step 2: Run them to see them fail**
@@ -98,8 +90,11 @@ Expected: ImportError.
 ```python
 """The chart kinds the model can draw, in the words the user sees.
 
-Keyed by planning_contract.CHART_KINDS, the list the planner's checks use, so
-the panel and the "/" menu can never offer a kind the planner would reject.
+Keyed by planning_contract.CHART_KINDS, the list the planner's checks use. The
+labels are how the analyst and planner are told which kind the user picked.
+The "/" menu and the chart kinds panel read a constant copy in
+byd-web/lib/chart-kinds.ts, and tests/test_chart_kinds_frontend.py keeps its ids
+and labels equal to these, so the UI can never offer a kind the planner rejects.
 """
 from __future__ import annotations
 
@@ -139,43 +134,19 @@ def chart_kinds() -> list[dict]:
     return [{"kind": kind, **KIND_INFO[kind]} for kind in CHART_KINDS]
 ```
 
-`backend/app/api/v1/endpoints/chart_kinds.py`:
-
-```python
-from fastapi import APIRouter, Depends
-
-from app.api.dependencies import get_current_user
-from app.models.user import User
-from app.services.agents.chart_kinds import chart_kinds
-
-router = APIRouter()
-
-
-@router.get("")
-def list_chart_kinds(current_user: User = Depends(get_current_user)) -> list[dict]:
-    """The kinds the "/" menu and the chart kinds panel offer."""
-    return chart_kinds()
-```
-
-In `router.py`, add `chart_kinds` to the endpoints import and add:
-
-```python
-api_router.include_router(chart_kinds.router, prefix="/chart-kinds", tags=["chart-kinds"])
-```
-
-- [ ] **Step 4: Run the tests and check the live route**
+- [ ] **Step 4: Run the tests**
 
 Run: `cd backend && .venv/bin/python -m pytest -q tests/test_chart_kinds.py`
-Expected: 3 passed.
-
-Run: `curl -s -o /dev/null -w "%{http_code}\n" http://localhost:8000/api/v1/chart-kinds`
-Expected: `401` (the route exists and wants a token).
+Expected: 2 passed.
 
 - [ ] **Step 5: Commit**
 
 ```bash
-git add backend/app/services/agents/chart_kinds.py backend/app/api/v1/endpoints/chart_kinds.py backend/app/api/v1/router.py backend/tests/test_chart_kinds.py
-git commit -m "feat(api): the chart kinds the model can draw, from the planner's own list
+git add backend/app/services/agents/chart_kinds.py backend/tests/test_chart_kinds.py
+git commit -m "feat(planning): the chart kinds the model can draw, in the user's words
+
+Keyed by the planner's own CHART_KINDS. The labels go into what the analyst
+and planner are told when the user picks a kind.
 
 Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>"
 ```
@@ -316,10 +287,11 @@ Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>"
 - Test: `backend/tests/test_kind_request.py`
 
 **Interfaces:**
-- Consumes: `plan_charts(..., required_kinds=)` (Task 2); `profile_sources`; `run_spec`; `KIND_INFO`; `workflow.data_sourcing_node(state)`, which returns `{"source_decision": {"selected": source}, "data_context": ...}` or `{"error": ...}`.
+- Consumes: `plan_charts(..., links="", required_kinds=())` (Task 2); `profile_sources`; `run_spec`; `KIND_INFO`; `workflow.data_sourcing_node(state)`, which returns `{"source_decision": {"selected": source}, "data_context": ...}` or `{"error": ...}`; `links.render_links(links: list[dict]) -> str` and the `"join"` dict a joined-table source carries (both from the database-relationships plan).
 - Produces:
-  - `run_kind_request(question, chart_kind, sources, selected_source, planner_llm, chartist, data_dir, detect=None) -> dict`, with keys `code`, `execution_result`, `error`, `data_context`, `repairs`, `spec` and `plan` (or `error` alone).
+  - `run_kind_request(question, chart_kind, sources, selected_source, planner_llm, chartist, data_dir, detect=None) -> dict`, with keys `code`, `execution_result`, `error`, `data_context`, `repairs`, `spec` and `plan` (or `error` and `plan` alone).
   - `GenerateBlockRequest.chart_kind: Optional[str]` and `DashboardBriefRequest.chart_kinds: list[str]` (at most 4).
+  - The `[blocks] generate` log line names the picked kind: `... chart_kind=<kind or -> prompt=...`.
 
 - [ ] **Step 1: Write the failing tests** (`backend/tests/test_kind_request.py`)
 
@@ -332,12 +304,14 @@ import pytest
 from pydantic import ValidationError
 
 from app.api.v1.endpoints.blocks import DashboardBriefRequest, GenerateBlockRequest
+from app.services import db_sources
 from app.services.agents.chartist import ChartistAgent
 from app.services.agents.kind_request import run_kind_request
 
 TREEMAP_CODE = ("import plotly.express as px\n"
                 "fig = px.treemap(df, path=['cntry_cd'], values='churn_cnt')\n"
                 "print(fig.to_json())\n")
+LINK = {"child": "orders", "child_columns": ["customer_id"], "parent": "customers", "parent_columns": ["id"]}
 
 
 class Recorder:
@@ -388,6 +362,18 @@ def test_a_kind_the_model_will_not_plan_is_an_error_not_a_different_chart(tmp_pa
     assert "could not plan a treemap" in result["error"] and "execution_result" not in result
 
 
+def test_a_joined_table_comes_with_its_join_line_as_on_a_dashboard(monkeypatch):
+    joined = pd.DataFrame({"revenue": [10, 20], "customers.region": ["North", "South"]})
+    monkeypatch.setattr(db_sources, "load_joined_by_id", lambda source_id, link, limit=None: joined)
+    source = {"id": "s1:orders+customers", "type": "db", "source_id": "s1", "table": "orders+customers",
+              "name": "orders+customers · Shop", "join": LINK}
+    planner = Recorder("{}", "{}", "{}")  # unusable on purpose: only the first message matters, and nothing is drawn
+    run_kind_request("revenue by region", "treemap", [source], "", planner, None, "",
+                     detect=lambda state: {"source_decision": {"selected": source}})
+    message = planner.seen[0][-1].content
+    assert "Joined tables you can use" in message and "orders.customer_id = customers.id" in message
+
+
 def test_unknown_kinds_are_refused_at_the_door():
     with pytest.raises(ValidationError):
         GenerateBlockRequest(prompt="x", chart_kind="sankey")
@@ -413,7 +399,8 @@ The pick travels as a field, not as words in the prompt, and reaches the
 chartist the way lora-v2 was trained to read a chart kind: inside a chart plan.
 So this is the dashboard's path shrunk to one chart. The detective picks the
 table, the planner writes one plan that must be that kind (checked, retried),
-and the chartist draws it through the same repair loop. Nothing here draws a chart.
+and the chartist draws it through the same repair loop. A joined table comes
+with the same join line build_dashboard gives the planner. Nothing here draws a chart.
 """
 from __future__ import annotations
 
@@ -421,6 +408,7 @@ from typing import Any, Callable
 
 from app.services.agents.chart_kinds import KIND_INFO
 from app.services.agents.dashboard_flow import profile_sources
+from app.services.agents.links import render_links
 from app.services.agents.planning import plan_charts
 from app.services.agents.spec_runner import run_spec
 
@@ -452,7 +440,8 @@ def run_kind_request(
     entry = entries[0]
     direction = {"question": question.strip(), "why": f"the user asked for a {label}", "table": entry.label,
                  "columns": [column.name for column in entry.profile.columns][:MAX_DIRECTION_COLUMNS]}
-    step = plan_charts(planner_llm, [direction], [entry.profile], required_kinds=(chart_kind,))
+    links = render_links([entry.source["join"]] if entry.source.get("join") else [])
+    step = plan_charts(planner_llm, [direction], [entry.profile], links=links, required_kinds=(chart_kind,))
     spec = next((s for s in step.items if s["chart"] == chart_kind), None)
     if spec is None:
         return {"error": f"The model could not plan a {label} for this question: " + "; ".join(step.errors[:3]),
@@ -469,7 +458,7 @@ In `blocks.py`:
 class GenerateBlockRequest(BaseModel):
     prompt: str = Field(min_length=1, max_length=2000)
     data_source: Optional[str] = None
-    # A kind picked with "/" in the ask bar: a field, never prompt text.
+    # A kind picked with "/" in the ask bar arrives as this field, never as text in the prompt.
     chart_kind: Optional[str] = None
 
     @field_validator("chart_kind")
@@ -497,7 +486,19 @@ class DashboardBriefRequest(BaseModel):
 
 Keep the existing `brief` field definition and comment if they differ only in wording.
 
-In `generate_block`, replace the `result = await asyncio.to_thread(run_agent_workflow, ...)` call with:
+In `generate_block`, replace the existing `logger.info("[blocks] generate report=%s user=%s prompt=%s", ...)` call with this one, so the log says which kind was picked (`-` when none). The kind goes before the prompt because the prompt is free text that runs to the end of the line:
+
+```python
+    logger.info(
+        "[blocks] generate report=%s user=%s chart_kind=%s prompt=%s",
+        dashboard_id,
+        current_user.id,
+        payload.chart_kind or "-",
+        payload.prompt[:150],
+    )
+```
+
+Then replace the `result = await asyncio.to_thread(run_agent_workflow, ...)` call with:
 
 ```python
     sources = _user_sources(db, report)
@@ -559,7 +560,7 @@ The rest of `_ai_dashboard` (the `events()` generator) is unchanged.
 - [ ] **Step 4: Run the tests and the suite**
 
 Run: `cd backend && .venv/bin/python -m pytest -q tests/test_kind_request.py && .venv/bin/python -m pytest -q tests`
-Expected: 3 passed, and only the 3 known failures in the suite.
+Expected: 4 passed, and only the 3 known failures in the suite.
 
 - [ ] **Step 5: Commit**
 
@@ -571,7 +572,8 @@ chart_kind (one chart) and chart_kinds (a brief, up to 4) arrive as
 checked fields. One chart in a picked kind is planned like a dashboard
 chart, as one plan that must be that kind, so the chartist reads the kind in
 the Chart plan block it was trained on. A kind the model will not plan is
-an error, never a different chart.
+an error, never a different chart. A joined table gets the same join line
+a dashboard's planner gets, and the generate log line names the picked kind.
 
 Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>"
 ```
@@ -804,23 +806,59 @@ Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>"
 - Create: `byd-web/components/kind-menu.tsx`
 - Modify: `byd-web/lib/blocks.ts` (`generateBlock`, `generateDashboard`)
 - Modify: `byd-web/components/report-canvas.tsx`
+- Test: `backend/tests/test_chart_kinds_frontend.py`
 
 **Interfaces:**
-- Consumes: Task 5's pure functions; `GET /api/v1/chart-kinds` (Task 1); the `chart_kind` and `chart_kinds` request fields (Task 3).
+- Consumes: Task 5's pure functions and `KindOption`; `KIND_INFO` (Task 1) and `planning_contract.CHART_KINDS`, which the new test compares against; the `chart_kind` and `chart_kinds` request fields (Task 3).
 - Produces:
-  - `listChartKinds(token) -> Promise<ChartKind[]>`.
-  - `loadKindExamples() -> Promise<Record<string, KindExample>>`.
-  - `useKindMenu(kinds, onPick)`.
+  - `CHART_KINDS: ChartKind[]`, the fixed list of kinds in `lib/chart-kinds.ts`, in the planner's order. Nothing fetches it.
+  - `ChartKind` (the same shape as `KindOption`) and `KindExample { kind; title; figure }`.
+  - `loadKindExamples() -> Promise<Record<string, KindExample>>`. It throws `Error("HTTP <status>")` when the examples file answers with a non-OK status, and never returns `{}` for a failed load.
+  - `useKindMenu(onPick)`, which reads `CHART_KINDS` itself.
   - `<KindMenu id options active onPick onHighlight placement>` and `<KindChip kind onRemove>`.
   - `KIND_ICONS`.
   - `generateBlock(token, reportId, { prompt, dataSource?, chartKind? })` and `generateDashboard(token, reportId, { brief, chartKinds? }, handlers, signal?)`.
 
-- [ ] **Step 1: Add the client helpers**
+- [ ] **Step 1: Write the failing test that keeps the two lists equal** (`backend/tests/test_chart_kinds_frontend.py`)
+
+The kinds are a fixed set, so the frontend keeps them as a constant and never fetches them. This test is what keeps it the planner's own list.
+
+```python
+"""The "/" menu and the chart kinds panel offer a fixed list kept in the frontend
+(byd-web/lib/chart-kinds.ts). It must be the planner's own list in the same
+words, so the UI can never offer a kind the planner rejects (a 422 at the API)."""
+import re
+from pathlib import Path
+
+from app.services.agents.chart_kinds import KIND_INFO
+from app.services.agents.planning_contract import CHART_KINDS
+
+FRONTEND_LIST = Path(__file__).resolve().parents[2] / "byd-web" / "lib" / "chart-kinds.ts"
+
+
+def _entries() -> list[tuple[str, str]]:
+    """(kind, label) for each entry of the frontend's CHART_KINDS, in file order."""
+    return re.findall(r'kind:\s*"([^"]+)",\s*label:\s*"([^"]+)"', FRONTEND_LIST.read_text(encoding="utf-8"))
+
+
+def test_the_frontend_offers_exactly_the_planner_kinds_in_its_order():
+    assert [kind for kind, _ in _entries()] == list(CHART_KINDS)
+
+
+def test_the_frontend_names_each_kind_as_the_backend_does():
+    assert [label for _, label in _entries()] == [KIND_INFO[kind]["label"] for kind in CHART_KINDS]
+```
+
+- [ ] **Step 2: Run it to see it fail**
+
+Run: `cd backend && .venv/bin/python -m pytest -q tests/test_chart_kinds_frontend.py`
+Expected: 2 failed, with `FileNotFoundError` on `byd-web/lib/chart-kinds.ts`.
+
+- [ ] **Step 3: Add the client helpers**
 
 `byd-web/lib/chart-kinds.ts`:
 
 ```ts
-import { authorizedFetch } from "@/lib/backend";
 import type { KindOption } from "@/lib/slash-menu";
 
 export type ChartKind = KindOption;
@@ -831,19 +869,56 @@ export interface KindExample {
   figure: Record<string, unknown>;
 }
 
-/** The kinds the planner accepts, from the backend, so the UI never offers one it rejects. */
-export async function listChartKinds(token: string): Promise<ChartKind[]> {
-  return authorizedFetch<ChartKind[]>("/api/v1/chart-kinds", token);
-}
+/* The kinds the model can draw. A fixed set, so it lives here and nothing
+   fetches it: the "/" menu and the chart kinds panel both read this constant.
+   Same kinds, same order and same labels as planning_contract.CHART_KINDS and
+   agents/chart_kinds.KIND_INFO in the backend, and
+   backend/tests/test_chart_kinds_frontend.py reads this file as text and fails
+   if they differ, so the UI can never offer a kind the planner rejects. Keep
+   `label` right after `kind` in every entry: that test reads the pair as text. */
+export const CHART_KINDS: ChartKind[] = [
+  { kind: "kpi", label: "KPI card", best_for: "One headline number", needs: "a measure",
+    aliases: ["number", "metric", "indicator", "card"] },
+  { kind: "bar", label: "Bar chart", best_for: "Comparing groups, or a top 10", needs: "a category and a measure",
+    aliases: ["column", "ranking", "top"] },
+  { kind: "line", label: "Line chart", best_for: "A trend over time", needs: "a date or year and a measure",
+    aliases: ["trend", "timeline"] },
+  { kind: "area", label: "Area chart", best_for: "A total building up over time",
+    needs: "a date or year and a measure", aliases: ["stacked", "cumulative"] },
+  { kind: "scatter", label: "Scatter plot", best_for: "How two measures relate", needs: "two measures",
+    aliases: ["correlation", "relationship", "dots"] },
+  { kind: "pie", label: "Pie chart", best_for: "Shares of a whole, few slices", needs: "a category and a measure",
+    aliases: ["donut", "share"] },
+  { kind: "histogram", label: "Histogram", best_for: "How one measure is spread", needs: "one measure",
+    aliases: ["distribution", "spread"] },
+  { kind: "box", label: "Box plot", best_for: "Spread and outliers by group",
+    needs: "a measure, optionally a category", aliases: ["boxplot", "outliers"] },
+  { kind: "heatmap", label: "Heatmap", best_for: "Two groupings at once",
+    needs: "two categories or dates and a measure", aliases: ["matrix", "grid"] },
+  { kind: "treemap", label: "Treemap", best_for: "Parts of a whole, nested",
+    needs: "one or two categories and a measure", aliases: ["hierarchy", "nested"] },
+  { kind: "sunburst", label: "Sunburst", best_for: "A hierarchy in rings", needs: "two categories and a measure",
+    aliases: ["rings", "radial"] },
+  { kind: "funnel", label: "Funnel", best_for: "Drop-off between stages", needs: "a stage category and a measure",
+    aliases: ["conversion", "stages"] },
+  { kind: "waterfall", label: "Waterfall", best_for: "How a total is built up step by step",
+    needs: "a category or period and amounts", aliases: ["bridge", "contribution"] },
+];
 
-/** Charts the model drew, one per kind it managed. A kind it did not draw has none. */
+/** Charts the model drew, one per kind it managed; a kind it did not draw has
+    none. A file that does not load throws, naming the HTTP status, so the
+    panel can say so: an empty result would read as "No example yet" for every
+    kind, which would be false. */
 export async function loadKindExamples(): Promise<Record<string, KindExample>> {
   const response = await fetch("/chart-kinds/examples.json", { cache: "no-store" });
-  if (!response.ok) return {};
+  if (!response.ok) throw new Error(`HTTP ${response.status}`);
   const examples = (await response.json()) as KindExample[];
   return Object.fromEntries(examples.map((example) => [example.kind, example]));
 }
 ```
+
+Run: `cd backend && .venv/bin/python -m pytest -q tests/test_chart_kinds_frontend.py`
+Expected: 2 passed.
 
 In `byd-web/lib/blocks.ts`, change `generateBlock`'s input type to `{ prompt: string; dataSource?: string; chartKind?: string }` and its body to:
 
@@ -861,7 +936,7 @@ Change `generateDashboard`'s third parameter from `brief: string` to `request: {
       body: JSON.stringify({ brief: request.brief, chart_kinds: request.chartKinds ?? [] }),
 ```
 
-- [ ] **Step 2: Add the menu component** (`byd-web/components/kind-menu.tsx`)
+- [ ] **Step 4: Add the menu component** (`byd-web/components/kind-menu.tsx`)
 
 ```tsx
 "use client";
@@ -885,7 +960,7 @@ import {
   type LucideIcon,
 } from "lucide-react";
 import { Chip } from "@/components/ui";
-import type { ChartKind } from "@/lib/chart-kinds";
+import { CHART_KINDS, type ChartKind } from "@/lib/chart-kinds";
 import { filterKinds, removeToken, slashTokenAt, type SlashToken } from "@/lib/slash-menu";
 
 /* One icon per kind, as a label in the menu. The chart kinds panel shows a
@@ -906,14 +981,12 @@ export const KIND_ICONS: Record<string, LucideIcon> = {
   waterfall: ChartBarStacked,
 };
 
-/** The "/" menu's state for one field. Focus never leaves the field: the
-    highlighted option is announced through aria-activedescendant. */
-export function useKindMenu(
-  kinds: ChartKind[],
-  onPick: (kind: ChartKind, next: { text: string; caret: number }) => void,
-) {
+/** The "/" menu's state for one field, over the fixed list of kinds
+    (CHART_KINDS). Focus never leaves the field: the highlighted option is
+    announced through aria-activedescendant. */
+export function useKindMenu(onPick: (kind: ChartKind, next: { text: string; caret: number }) => void) {
   const [state, setState] = useState<{ token: SlashToken; index: number } | null>(null);
-  const options = useMemo(() => (state ? filterKinds(kinds, state.token.query) : []), [kinds, state]);
+  const options = useMemo(() => (state ? filterKinds(CHART_KINDS, state.token.query) : []), [state]);
   const active = state && options.length ? options[Math.min(state.index, options.length - 1)] : null;
 
   function sync(text: string, caret: number) {
@@ -1043,32 +1116,26 @@ export function KindChip({ kind, onRemove }: { kind: ChartKind; onRemove: () => 
 }
 ```
 
-- [ ] **Step 3: Wire both prompts in `report-canvas.tsx`**
+- [ ] **Step 5: Wire both prompts in `report-canvas.tsx`**
 
-Imports: add `import { KindChip, KindMenu, useKindMenu } from "@/components/kind-menu";` and `import { listChartKinds, type ChartKind } from "@/lib/chart-kinds";`.
+Imports: add `import { KindChip, KindMenu, useKindMenu } from "@/components/kind-menu";` and `import type { ChartKind } from "@/lib/chart-kinds";`. The canvas holds no list of kinds: the menu reads the constant itself.
 
 State: add after `const [briefOpen, setBriefOpen] = useState(false);`:
 
 ```tsx
-  const [kinds, setKinds] = useState<ChartKind[]>([]);
   const [askKind, setAskKind] = useState<ChartKind | null>(null);
   const [briefKinds, setBriefKinds] = useState<ChartKind[]>([]);
-  const askMenu = useKindMenu(kinds, (picked, next) => {
+  const askMenu = useKindMenu((picked, next) => {
     setAskKind(picked);
     setPrompt(next.text);
     requestAnimationFrame(() => askRef.current?.setSelectionRange(next.caret, next.caret));
   });
-  const briefMenu = useKindMenu(kinds, (picked, next) => {
+  const briefMenu = useKindMenu((picked, next) => {
     setBriefKinds((current) =>
       current.some((k) => k.kind === picked.kind) ? current : [...current, picked].slice(0, 4),
     );
     setBrief(next.text);
   });
-
-  useEffect(() => {
-    if (!token) return;
-    listChartKinds(token).then(setKinds).catch(() => setKinds([]));
-  }, [token]);
 ```
 
 In `ask()`, send the kind and clear it after success:
@@ -1193,21 +1260,26 @@ Replace the ask bar's `<div className="flex items-end gap-2 p-2.5">` block (the 
             </div>
 ```
 
-- [ ] **Step 4: Typecheck, lint, test**
+- [ ] **Step 6: Typecheck, lint, test**
 
 Run: `cd byd-web && npm test && npx tsc --noEmit -p . && npx eslint components/kind-menu.tsx components/report-canvas.tsx lib/chart-kinds.ts lib/blocks.ts`
 Expected: tests pass; tsc and eslint print nothing.
 
-- [ ] **Step 5: Commit**
+Run: `cd backend && .venv/bin/python -m pytest -q tests/test_chart_kinds.py tests/test_chart_kinds_frontend.py`
+Expected: 4 passed.
+
+- [ ] **Step 7: Commit**
 
 ```bash
-git add byd-web/lib/chart-kinds.ts byd-web/components/kind-menu.tsx byd-web/lib/blocks.ts byd-web/components/report-canvas.tsx
+git add byd-web/lib/chart-kinds.ts byd-web/components/kind-menu.tsx byd-web/lib/blocks.ts byd-web/components/report-canvas.tsx backend/tests/test_chart_kinds_frontend.py
 git commit -m "feat(web): pick a chart kind with / in the ask bar and the brief
 
 Typing / opens a filtered list of the kinds the planner accepts; up and
 down move, Enter or Tab pick, Esc closes, and focus never leaves the
 field (aria-activedescendant). A pick becomes a removable chip and travels
-as chart_kind or chart_kinds, never as prompt text.
+to the API as chart_kind or chart_kinds, never as text in the prompt.
+The kinds are a fixed list in lib/chart-kinds.ts, and a backend test keeps
+its ids and labels equal to the planner's CHART_KINDS.
 
 Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>"
 ```
@@ -1222,9 +1294,9 @@ Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>"
 - Modify: `byd-web/components/report-canvas.tsx` (toolbar button and panel)
 
 **Interfaces:**
-- Consumes: `loadKindExamples` and `ChartKind` (Task 6); `Plot`.
+- Consumes: `CHART_KINDS`, `ChartKind`, `KindExample` and `loadKindExamples` from `lib/chart-kinds.ts` (Task 6). `loadKindExamples` throws `Error("HTTP <status>")` when the file does not load. Also `Plot`, and `askRef` and `setAskKind` in `report-canvas.tsx` (Task 6).
 - Produces:
-  - `<ChartKindsPanel kinds onClose onUse>`.
+  - `<ChartKindsPanel onClose onUse>`, which reads `CHART_KINDS` itself and takes no list of kinds.
   - `Plot({ figure, className, interactive = true, compact = false })`.
 
 - [ ] **Step 1: Give `Plot` a thumbnail mode**
@@ -1264,32 +1336,41 @@ Change the effect's closing `}, [figure]);` (line 403) to `}, [figure, interacti
 "use client";
 
 import { useEffect, useState } from "react";
-import { X } from "lucide-react";
+import { AlertTriangle, X } from "lucide-react";
 import { Plot } from "@/components/plot";
 import { IconButton } from "@/components/ui";
-import { loadKindExamples, type ChartKind, type KindExample } from "@/lib/chart-kinds";
+import { CHART_KINDS, loadKindExamples, type ChartKind, type KindExample } from "@/lib/chart-kinds";
 
-/* The chart kinds the model can draw. Each thumbnail is a real chart the model
-   drew from sample data (backend/scripts/make_chart_kind_examples.py). A kind it
-   has no example for says so rather than showing a stand-in. */
+/* What the examples file gave: nothing yet, the charts in it, or why it did not load. */
+type Examples =
+  | { status: "loading" }
+  | { status: "loaded"; byKind: Record<string, KindExample> }
+  | { status: "failed"; reason: string };
+
+/* The chart kinds the model can draw, from the fixed list in lib/chart-kinds.ts.
+   Each thumbnail is a real chart the model drew from sample data
+   (backend/scripts/make_chart_kind_examples.py). A kind missing from the file
+   says "No example yet" rather than showing a stand-in. A file that did not
+   load says so, with the reason, in place of the thumbnails: "No example yet"
+   on every kind would be false. */
 export function ChartKindsPanel({
-  kinds,
   onClose,
   onUse,
 }: {
-  kinds: ChartKind[];
   onClose: () => void;
   onUse: (kind: ChartKind) => void;
 }) {
-  const [examples, setExamples] = useState<Record<string, KindExample>>({});
+  const [examples, setExamples] = useState<Examples>({ status: "loading" });
 
   useEffect(() => {
     let live = true;
     loadKindExamples()
-      .then((found) => {
-        if (live) setExamples(found);
+      .then((byKind) => {
+        if (live) setExamples({ status: "loaded", byKind });
       })
-      .catch(() => undefined);
+      .catch((error: unknown) => {
+        if (live) setExamples({ status: "failed", reason: error instanceof Error ? error.message : String(error) });
+      });
     return () => {
       live = false;
     };
@@ -1319,9 +1400,18 @@ export function ChartKindsPanel({
           <X size={16} strokeWidth={2.25} />
         </IconButton>
       </header>
+      {examples.status === "failed" ? (
+        <p
+          role="alert"
+          className="mx-5 mb-3 flex items-start gap-2 rounded-[var(--r-control)] bg-coral-wash px-3 py-2.5 text-[12.5px] text-coral-ink"
+        >
+          <AlertTriangle size={14} strokeWidth={2.25} className="mt-px shrink-0" />
+          <span className="break-words">Could not load the examples ({examples.reason}).</span>
+        </p>
+      ) : null}
       <ul className="app-scroll flex-1 space-y-1.5 px-3 pb-5">
-        {kinds.map((kind) => {
-          const example = examples[kind.kind];
+        {CHART_KINDS.map((kind) => {
+          const example = examples.status === "loaded" ? examples.byKind[kind.kind] : undefined;
           return (
             <li key={kind.kind}>
               <button
@@ -1329,15 +1419,24 @@ export function ChartKindsPanel({
                 onClick={() => onUse(kind)}
                 className="flex w-full items-center gap-3 rounded-[var(--r-card)] p-2 text-left transition-colors hover:bg-sunken"
               >
-                <span className="block h-16 w-24 shrink-0 overflow-hidden rounded-[var(--r-control)] bg-canvas">
-                  {example ? (
-                    <Plot figure={example.figure} interactive={false} compact className="h-full w-full" />
-                  ) : (
-                    <span className="grid h-full place-items-center px-2 text-center text-[11px] text-muted">
-                      No example yet
-                    </span>
-                  )}
-                </span>
+                {/* A failed load shows one line above the list, not a box per kind;
+                    while loading, the box is a skeleton, never "No example yet". */}
+                {examples.status === "failed" ? null : (
+                  <span
+                    className={[
+                      "block h-16 w-24 shrink-0 overflow-hidden rounded-[var(--r-control)]",
+                      examples.status === "loading" ? "generating" : "bg-canvas",
+                    ].join(" ")}
+                  >
+                    {example ? (
+                      <Plot figure={example.figure} interactive={false} compact className="h-full w-full" />
+                    ) : examples.status === "loaded" ? (
+                      <span className="grid h-full place-items-center px-2 text-center text-[11px] text-muted">
+                        No example yet
+                      </span>
+                    ) : null}
+                  </span>
+                )}
                 <span className="min-w-0">
                   <span className="block text-[13px] font-semibold text-ink">{kind.label}</span>
                   <span className="block text-[12px] text-muted">{kind.best_for}</span>
@@ -1372,7 +1471,6 @@ Then add, just before the component's final closing `</div>`:
 ```tsx
       {kindsOpen ? (
         <ChartKindsPanel
-          kinds={kinds}
           onClose={() => setKindsOpen(false)}
           onUse={(k) => {
             setAskKind(k);
@@ -1395,8 +1493,9 @@ git add byd-web/components/chart-kinds-panel.tsx byd-web/components/plot.tsx byd
 git commit -m "feat(web): a chart kinds panel with the model's own examples
 
 A right-side panel lists every kind the planner accepts with a static
-thumbnail of a chart the model drew for it, or 'No example yet'. Picking
-one sets the ask bar's kind.
+thumbnail of a chart the model drew for it, or 'No example yet'. A failed
+load of the examples says so, with the reason, instead of passing for 'No
+example yet'. Picking one sets the ask bar's kind.
 
 Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>"
 ```
@@ -1411,12 +1510,27 @@ Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>"
 
 - [ ] **Step 1: Browser check** (in-app browser at `http://localhost:3000`, signed in with a test account on the local stack)
 
+On the docker compose stack, run `make up` from the repo root first, even if the stack is already up. Compose mounts `app/`, `lib/` and `components/` into the web container but not `public/`, so the web image has to be rebuilt (`make up` passes `--build`) before it serves `public/chart-kinds/examples.json` from Task 4. Without the rebuild, check 2 shows the load-failure line from check 7 instead of thumbnails, and that is the stack, not Task 7's code.
+
 1. Open a report.
 2. Click "Chart kinds". The panel lists 13 kinds, with thumbnails for those in `examples.json` and "No example yet" for the rest. Esc closes it.
 3. In the ask bar, type `/tre`. The list narrows to Treemap. Press Enter: a "Treemap" chip appears and `/tre` is gone from the text.
-4. Type "churn by country" and press Enter. A treemap block appears, and the api log shows `chart_kind` handled through the planner with `chart_type_source: user`.
+4. Type "churn by country" and press Enter. A treemap block appears. Then read the generate log line from the repo root:
+   Run: `docker compose logs api --since 10m --no-log-prefix | grep "\[blocks\] generate"`
+   Expected: the last line ends `chart_kind=treemap prompt=churn by country`. A question asked without a pick logs `chart_kind=-`.
 5. Use `read_page` to confirm the textarea has `role=combobox` with `aria-expanded` and the list has `role=listbox` and options.
 6. Open "Generate dashboard", type `/pie` and press Enter, then type "churn". The dashboard includes a pie.
+7. Check that a failed load of the examples says so. Close the panel, run this in the page with the browser's JavaScript tool, then click "Chart kinds" again:
+
+   ```js
+   const realFetch = window.fetch;
+   window.fetch = (input, init) =>
+     String(input).includes("/chart-kinds/examples.json")
+       ? Promise.resolve(new Response("", { status: 404 }))
+       : realFetch(input, init);
+   ```
+
+   The panel shows "Could not load the examples (HTTP 404)." above the list, the rows have no thumbnails, and no row says "No example yet". Reload the page to restore `fetch`.
 
 Write down any step that does not behave as described, and fix it in its task before going on.
 
@@ -1427,13 +1541,13 @@ Add to `byd-web/DESIGN.md` §5:
 ```markdown
 - **KindMenu** (`components/kind-menu.tsx`): the "/" menu. A listbox anchored to its field (above the ask bar, below the brief), filtered as you type; up/down move, Enter or Tab pick, Esc closes. Focus stays in the field and the highlighted option goes through `aria-activedescendant`. Icons label kinds here only.
 - **KindChip**: a pine chip with the kind's icon and a remove button; a picked kind always shows as one.
-- **ChartKindsPanel** (`components/chart-kinds-panel.tsx`): a 380px right-side panel. Each row is a static thumbnail of a chart the model drew (`public/chart-kinds/examples.json`), the kind's name, what it is best for and what it needs. A kind without an example says "No example yet"; nothing stands in.
+- **ChartKindsPanel** (`components/chart-kinds-panel.tsx`): a 380px right-side panel over the fixed list of kinds in `lib/chart-kinds.ts`. Each row is a static thumbnail of a chart the model drew (`public/chart-kinds/examples.json`), the kind's name, what it is best for and what it needs. A kind missing from that file says "No example yet"; nothing stands in. While the file loads, each thumbnail is a `.generating` skeleton. If it does not load, one coral line (`bg-coral-wash`, `text-coral-ink`) says "Could not load the examples" with the reason, in place of the thumbnails, so a failed load never reads as "No example yet".
 ```
 
 Add to `AGENTS.md` under "Frontend integration details":
 
 ```markdown
-- Chart kinds: `GET /api/v1/chart-kinds` serves `planning_contract.CHART_KINDS` with labels (`agents/chart_kinds.py`), so the "/" menu and the chart kinds panel can only offer kinds the planner accepts. A pick travels as `chart_kind` (one chart) or `chart_kinds` (a brief, up to 4), checked at the API (422 otherwise), never as prompt text. One chart in a picked kind goes through `agents/kind_request.py`: the detective picks the table, the planner writes one plan that must be that kind, and the chartist reads it as the `Chart plan:` block lora-v2 was trained on. The panel's thumbnails are figures the model drew (`backend/scripts/make_chart_kind_examples.py` -> `byd-web/public/chart-kinds/examples.json`); regenerate after an adapter change. Frontend logic tests run with `npm test` (Node's own runner, no framework).
+- Chart kinds: the "/" menu and the chart kinds panel read a fixed list in the frontend, `CHART_KINDS` in `byd-web/lib/chart-kinds.ts`; nothing fetches it. `backend/tests/test_chart_kinds_frontend.py` reads that file as text and fails unless its ids and labels equal `planning_contract.CHART_KINDS` and the labels in `agents/chart_kinds.py` (`KIND_INFO`), so the UI can only offer kinds the planner accepts; change both sides together. A pick travels from the UI to the API as `chart_kind` (one chart) or `chart_kinds` (a brief, up to 4), checked at the API (422 otherwise), never as text typed into the prompt; inside the backend the analyst and planner are told the kind in words. One chart in a picked kind goes through `agents/kind_request.py`: the detective picks the table, the planner writes one plan that must be that kind (a joined table comes with its join line, as on a dashboard), and the chartist reads it as the `Chart plan:` block lora-v2 was trained on. The `[blocks] generate` log line names the pick (`chart_kind=treemap`, or `-`). The panel's thumbnails are figures the model drew (`backend/scripts/make_chart_kind_examples.py` -> `byd-web/public/chart-kinds/examples.json`); regenerate after an adapter change, and on the compose stack run `make up` so the web image is rebuilt with it (compose does not mount `public/`). A file that does not load shows in the panel as "Could not load the examples (HTTP <status>)", never as "No example yet". Frontend logic tests run with `npm test` (Node's own runner, no framework).
 ```
 
 - [ ] **Step 3: Commit**
@@ -1444,3 +1558,10 @@ git commit -m "docs: the / menu, the chart kinds panel, and how a picked kind tr
 
 Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>"
 ```
+
+---
+
+## Open questions for the controller
+
+- With the endpoint gone, nothing in the backend reads `KIND_INFO`'s `best_for`, `needs` or `aliases`. `lib/chart-kinds.ts` holds a second copy of those words, and `test_chart_kinds_frontend.py` compares ids and labels only, so the two copies can drift. Should `KIND_INFO` be cut down to labels, or should the test compare every field? The plan keeps both copies as written.
+- Compose mounts `byd-web/app`, `lib` and `components` into the web container but not `public/`. So `examples.json` (Task 4) is served only after the web image is rebuilt, and Task 8 now says to run `make up` first. Should compose also mount `./byd-web/public:/app/public`?
