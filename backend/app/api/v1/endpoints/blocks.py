@@ -19,10 +19,12 @@ from app.core.database import get_db
 from app.models.dashboard import Dashboard
 from app.models.data_source import DataSource, DataSourceStatus, DataSourceType
 from app.models.report_block import BlockKind, ReportBlock
+from app.models.report_request import ReportRequest
 from app.models.user import User
 from app.services import db_sources
 from app.services.agents import architect
 from app.services.agents.narrator import Narrator
+from app.services.agents.report_memory import describe_report
 from app.services.llm import get_llm
 from app.services.agents.dashboard_flow import build_dashboard
 from app.services.agents.workflow import _agents, run_agent_workflow
@@ -157,6 +159,24 @@ def _next_row(db: Session, dashboard_id: str) -> int:
     return max((b.y + b.h for b in rows), default=0)
 
 
+def _record_request(db: Session, report: Dashboard, user: User, kind: str, text: str) -> None:
+    """Keep what the user asked, in their words, for the report's memory."""
+    db.add(ReportRequest(dashboard_id=report.id, user_id=user.id, kind=kind, text=(text or "").strip()[:2000]))
+    db.commit()
+
+
+def _report_memory(db: Session, report_id: str) -> str:
+    blocks = db.query(ReportBlock).filter(ReportBlock.dashboard_id == report_id).order_by(ReportBlock.created_at).all()
+    requests = (
+        db.query(ReportRequest).filter(ReportRequest.dashboard_id == report_id).order_by(ReportRequest.created_at).all()
+    )
+    return describe_report(
+        [{"kind": b.kind.value if hasattr(b.kind, "value") else str(b.kind), "title": b.title,
+          "chart_type": b.chart_type, "prompt": b.prompt} for b in blocks],
+        [{"kind": r.kind, "text": r.text} for r in requests],
+    )
+
+
 # A connection can hold many tables; enumerating them costs a metadata query
 # each, so the per-question list is kept shorter than the one the UI shows.
 _CANDIDATE_TABLES = 20
@@ -232,6 +252,7 @@ async def generate_block(
 ):
     """Run the agent workflow for one question and keep the result as a block."""
     report = _owned_report(db, dashboard_id, current_user)
+    _record_request(db, report, current_user, "chart", payload.prompt)
 
     started = time.perf_counter()
     logger.info(
@@ -413,14 +434,17 @@ async def generate_whole_dashboard(
         raise HTTPException(
             status_code=500, detail=f"DASHBOARD_PLANNER must be 'ai' or 'rules', got {mode!r}"
         )
-    return _ai_dashboard(report, sources, brief, current_user, db)
+    memory = _report_memory(db, report.id)  # before this request is recorded: it is the brief, not history
+    _record_request(db, report, current_user, "dashboard", brief)
+    return _ai_dashboard(report, sources, brief, current_user, db, memory)
 
 
-def _ai_dashboard(report, sources, brief, current_user, db):
+def _ai_dashboard(report, sources, brief, current_user, db, memory: str = ""):
     """The analyst proposes, the planner plans every chart at once, code checks
     both against the real tables, and the chartist draws each chart from its plan
     (agents/dashboard_flow.py). Nothing here reads a column name."""
     base_row = _next_row(db, report.id)
+    tools_on = (settings.PLANNER_TOOLS or "off").strip().lower() == "on"
     flow = build_dashboard(
         brief,
         sources,
@@ -429,6 +453,8 @@ def _ai_dashboard(report, sources, brief, current_user, db):
         get_llm("spec_planner"),
         _agents()[2],
         top=base_row,
+        explorer_llm=get_llm("explorer") if tools_on else None,
+        memory=memory,
     )
 
     async def events():
@@ -458,8 +484,8 @@ def _ai_dashboard(report, sources, brief, current_user, db):
                 ]
                 names = ", ".join(entry.label for entry in event.data["tables"])
                 logger.info(
-                    "[dashboard] planned %d charts from %s (tries: %s; dropped: %s)",
-                    len(placed), names, event.data["attempts"], event.data["dropped"],
+                    "[dashboard] planned %d charts from %s (tries: %s; dropped: %s; facts: %s)",
+                    len(placed), names, event.data["attempts"], event.data["dropped"], event.data.get("facts"),
                 )
                 yield _sse("plan", {"total": total, "source": names, "brief": brief, "sections": sections})
                 try:
