@@ -114,6 +114,23 @@ FIX_PROMPT = """Some of that did not check out:
 {errors}
 Reply again with the whole JSON, fixed."""
 
+# The tool step's own call: the adapter calls tools only when asked to (measured
+# 2026-11-23), so this asks. Its transcript never reaches the planning calls;
+# only the facts found do, as a short note.
+EXPLORER_SYSTEM_PROMPT = """You check facts about the user's tables before a dashboard is planned. You see only a short description of the data, so call the tools to check what would change the plan:
+- whether a column the request needs exists (find_columns),
+- whether names repeat, how dates are recorded, how a measure is spread (inspect_column),
+- whether two columns relate (relationship),
+- whether a question has a real answer (preview).
+Call at most 3 tools, one at a time. When you have checked what matters, reply DONE."""
+
+EXPLORER_USER_TEMPLATE = """Request: {request}
+
+Tables:
+{profiles}
+
+Check the facts this request depends on before anyone plans charts."""
+
 _DIRECTION_ITEM = {
     "type": "object",
     "properties": {

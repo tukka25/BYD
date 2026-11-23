@@ -36,7 +36,7 @@ from app.services.agents.planning_contract import ANALYST_MAX_TOKENS, PLANNER_MA
 
 logger = logging.getLogger(__name__)
 
-Role = Literal["planner", "chartist", "detective", "narrator", "analyst", "spec_planner"]
+Role = Literal["planner", "chartist", "detective", "narrator", "analyst", "spec_planner", "explorer"]
 
 # Greedy everywhere. These agents are infrastructure, not chat: the same
 # question should produce the same chart.
@@ -52,6 +52,8 @@ _MAX_TOKENS = {
     # planning eval through planning_contract.
     "analyst": ANALYST_MAX_TOKENS,
     "spec_planner": PLANNER_MAX_TOKENS,
+    # One tool call is a few words of JSON.
+    "explorer": 256,
 }
 # The dashboard's planning calls answer in JSON with thinking switched off, per
 # request (mlx_lm server reads chat_template_kwargs). On base weights with
@@ -59,7 +61,7 @@ _MAX_TOKENS = {
 # inside the cap (measured for the planner, data/role_measure.json), and the
 # adapter was trained on answers that follow a closed think block, which is
 # exactly what this prompt ends with. measure_planning.py sends the same flag.
-_NO_THINKING = {"analyst", "spec_planner"}
+_NO_THINKING = {"analyst", "spec_planner", "explorer"}
 _JSON_ROLES = {"planner", "analyst", "spec_planner"}
 
 
