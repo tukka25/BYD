@@ -102,24 +102,19 @@ def test_a_change_asked_goes_back_to_the_planner_once_in_the_retrys_form():
     assert revision[-1].content == FIX_PROMPT.format(errors="- Change agg to 'mean' so the line does not run back and forth")
 
 
-def test_only_lines_that_ask_for_a_change_count():
-    assert changes_asked("no changes") == [] and changes_asked("1. no changes\n2. No changes.") == []
-    assert changes_asked("") == [] and changes_asked("1) None") == []
-    assert changes_asked("1. Change agg to 'mean'\n2. no changes") == ["Change agg to 'mean'"]
-
-
-def test_natural_no_change_phrasings_count_as_no_change():
-    for reply in ("No changes needed.", "No change required", "Plan 1: no changes", "All plans look good",
-                  "2) Looks good.", "- fine", "Chart 3: OK", "Keep it as is", "Both plans are fine", "unchanged"):
+def test_only_the_no_change_reply_the_prompt_asks_for_counts_as_no_change():
+    for reply in ("no changes", "No changes.", "1. no changes", "Plan 1: no changes", "Chart 2: No change needed",
+                  "none", "1) None", "---", ""):
         assert changes_asked(reply) == [], reply
-    assert changes_asked("Plan 2: Change agg to 'mean'") == ["Change agg to 'mean'"]
+    assert changes_asked("1. no changes\n2. no changes") == []
 
 
-def test_a_change_request_that_opens_like_a_no_change_still_counts():
-    for reply in ("Correct the agg to 'mean'", "Fine, but change agg to 'mean'", "OK, but change agg to mean",
-                  "No change to the chart type, change agg to mean", "Change the chart"):
+def test_any_other_line_asks_for_a_change():
+    for reply in ("Correct the agg to 'mean'", "No, change it.", "OK, but change agg to mean",
+                  "No change to the chart type, change agg to mean", "Change agg to 'mean':", "Looks good to me"):
         assert changes_asked(reply) == [reply], reply
-    assert changes_asked("Here are my checks:\n1. Change agg to 'mean'") == ["Change agg to 'mean'"]
+    assert changes_asked("1. Change agg to 'mean'\n2. no changes") == ["Change agg to 'mean'"]
+    assert changes_asked("Plan 2: Change agg to 'mean'") == ["Change agg to 'mean'"]
 
 
 def test_a_revision_that_checks_worse_leaves_the_draft():
