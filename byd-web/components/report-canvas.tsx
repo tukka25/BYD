@@ -27,7 +27,8 @@ import { DotWave } from "@/components/dot-wave";
 import { KindChip, KindMenu, useKindMenu } from "@/components/kind-menu";
 import { Plot } from "@/components/plot";
 import { RichText, RichTextEditor } from "@/components/rich-text";
-import type { ChartKind } from "@/lib/chart-kinds";
+import { CHART_KINDS, type ChartKind } from "@/lib/chart-kinds";
+import { missingKindsNotice } from "@/lib/kind-notice";
 import { exportReportToPdf } from "@/lib/export-pdf";
 import { SourceDialog } from "@/components/sources";
 import { Button, Chip, EmptyState, IconButton, Panel, Segmented, inputClass } from "@/components/ui";
@@ -301,6 +302,7 @@ export function ReportCanvas({ report }: { report: Report }) {
   });
   const [brief, setBrief] = useState("");
   const [skipped, setSkipped] = useState<string[]>([]);
+  const [missingKinds, setMissingKinds] = useState<string[]>([]);
   const [phase, setPhase] = useState(PHASES[0].label);
   const askRef = useRef<HTMLTextAreaElement | null>(null);
   const gridHost = useRef<HTMLDivElement | null>(null);
@@ -547,6 +549,7 @@ export function ReportCanvas({ report }: { report: Report }) {
     if (!token || building || busy) return;
     setBriefOpen(false);
     setSkipped([]);
+    setMissingKinds([]);
     setError(null);
     setPlanned([]);
     setRunning(null);
@@ -560,6 +563,7 @@ export function ReportCanvas({ report }: { report: Report }) {
         // The analyst and planner run before there is a plan to count.
         onStatus: (status) => setBuilding({ done: 0, total: 0, label: status.label }),
         onPlan: (plan) => {
+          setMissingKinds(plan.missing_kinds ?? []);
           setPlanned(plan.sections);
           setBuilding({ done: 0, total: plan.total, label: plan.source });
         },
@@ -814,6 +818,12 @@ export function ReportCanvas({ report }: { report: Report }) {
       ) : null}
 
       <div ref={gridHost} className="app-scroll px-2 pb-6 sm:px-5">
+        {missingKinds.length > 0 ? (
+          <p role="status" className="mb-3 px-3 text-[12.5px] text-muted">
+            {missingKindsNotice(missingKinds, CHART_KINDS)}
+          </p>
+        ) : null}
+
         {skipped.length > 0 ? (
           <p className="mb-3 px-3 text-[12.5px] text-muted">
             {skipped.length} block{skipped.length === 1 ? "" : "s"} could not be drawn and

@@ -323,6 +323,14 @@ number and none is shown: it names the stage instead, on the schedule those
 stages were measured at. A progress bar that is really a timer is a lie told
 with a number.
 
+**A picked kind is never dropped without a word.** When a kind picked with "/"
+for a dashboard is still not in the plan after the planner's last try, the
+plan event names it (`missing_kinds`). The canvas then shows one muted line
+above the blocks (`text-[12.5px] text-muted`, `role="status"`), "Could not plan
+a pie chart for this data." (`lib/kind-notice.ts`), from the plan until the next
+build. It is not the skipped-block line: nothing was drawn and failed; the
+plan never had it.
+
 > **Hard rule.** A drag handle must set `user-select: none` (and
 > `touch-action: none`). Without it, pressing the handle starts a text
 > selection that fights the pointer for the rest of the gesture — which does

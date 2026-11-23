@@ -66,6 +66,7 @@
 - A kind picked for a dashboard is now told to the planner up front, in the analyst's words: `Include these chart kinds: Pie chart.` is appended to its message by `chart_kinds.include_kinds`. Before, it heard of the pick only in a retry message.
 - The planner's best try is now the one with the most picked kinds, then the most charts (`planning.run_checked(rank=...)`). Before, a try with 7 charts and no pie beat one with 6 charts including a valid pie. That was the final review's reproduction.
 - A kind still missing after the last try is named in the SSE `plan` event as `missing_kinds` and logged with the plan. It is not a `skipped` event, because that event counts as a finished block.
+- The canvas shows `missing_kinds` as one muted line above the blocks, "Could not plan a pie chart for this data." (`byd-web/lib/kind-notice.ts`, import-free so `npm test` loads it). It shows from the plan until the next build.
 - Example run, 2026-11-23 (lora-v2): `make_chart_kind_examples.py` drew 13 of 13 kinds in its one run, each the trace type it names (176,797 bytes).
 - Browser check, 2026-11-23 (lora-v2, `PLANNER_TOOLS=on`, shop demo): `/tre` + "revenue by product category" gave a treemap on `orders+products` whose values equal SQL (the api logged the block created 16.6 s after the request).
 - Same check: a dashboard brief with `/pie` included a pie among 7 charts, but the analyst needed 3 tries on it because it kept crossing the two joined tables (region and category), the one-parent join limit again.

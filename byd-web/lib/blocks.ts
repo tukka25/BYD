@@ -118,6 +118,8 @@ export interface DashboardProgress {
     source: string;
     brief: string;
     sections: PlannedSection[];
+    /** Kinds picked with "/" that the plan still lacks after every try. */
+    missing_kinds?: string[];
   }) => void;
   onStep?: (step: { index: number; total: number; label: string }) => void;
   onBlock?: (block: Block) => void;
