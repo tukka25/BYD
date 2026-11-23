@@ -110,9 +110,16 @@ def test_only_lines_that_ask_for_a_change_count():
 
 def test_natural_no_change_phrasings_count_as_no_change():
     for reply in ("No changes needed.", "No change required", "Plan 1: no changes", "All plans look good",
-                  "2) Looks good.", "- fine", "Chart 3: OK"):
+                  "2) Looks good.", "- fine", "Chart 3: OK", "Keep it as is", "Both plans are fine", "unchanged"):
         assert changes_asked(reply) == [], reply
     assert changes_asked("Plan 2: Change agg to 'mean'") == ["Change agg to 'mean'"]
+
+
+def test_a_change_request_that_opens_like_a_no_change_still_counts():
+    for reply in ("Correct the agg to 'mean'", "Fine, but change agg to 'mean'", "OK, but change agg to mean",
+                  "No change to the chart type, change agg to mean", "Change the chart"):
+        assert changes_asked(reply) == [reply], reply
+    assert changes_asked("Here are my checks:\n1. Change agg to 'mean'") == ["Change agg to 'mean'"]
 
 
 def test_a_revision_that_checks_worse_leaves_the_draft():

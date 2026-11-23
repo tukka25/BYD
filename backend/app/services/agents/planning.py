@@ -172,23 +172,32 @@ def _answer(llm: Any, messages: list) -> Any:
         return llm.invoke(plain)
 
 
-_MARKER = re.compile(r"^\s*(?:\d+[.)]|[-*\u2022])\s*")
-_PLAN_PREFIX = re.compile(r"^(?:plan|chart)\s*\d+\s*[:.)\-]\s*", re.I)
-_NO_CHANGE = re.compile(
-    r"^(?:no changes?|none|nothing to change|looks? good|all good|all (?:plans|charts) look good"
-    r"|fine|ok|okay|correct)\b")
+# Words a reply line may hold and still ask for nothing ("No changes needed",
+# "All plans look good", "Plan 2 is fine as is").
+_STANDS = frozenset(
+    "no change changes changed none nothing to needed need required necessary looks look good great all plan "
+    "plans chart charts fine ok okay correct is are as it they keep this the these here for thanks already "
+    "issues issue problems problem and both valid be can stay stays remain remains unchanged".split())
 
 
 def changes_asked(notes: str) -> list[str]:
-    """The lines of the checking turn's reply that ask for a change, without their
-    list marker or "Plan N:" prefix. A line that says no change is needed ("no
-    changes", "looks good", "ok", ...) and empty lines ask for nothing. [] means
-    the drafts stand."""
+    """The lines of the checking turn's reply that ask for a change, without a
+    list marker or "Plan N:" prefix. A line asks for nothing when every word in it
+    is a no-change word (_STANDS) and, if it says "change", it also says "no",
+    "none" or "nothing"; a heading (ending with ":") asks for nothing either.
+    [] means the drafts stand."""
     asked = []
     for line in notes.splitlines():
-        words = _PLAN_PREFIX.sub("", _MARKER.sub("", line)).strip()
-        if words and not _NO_CHANGE.match(re.sub(r"[^a-z ]", "", words.lower()).strip()):
-            asked.append(words)
+        words = re.sub(r"^\s*(\d+[.)]|[-*\u2022])\s*", "", line).strip()
+        words = re.sub(r"^(plan|chart)\s*\d+\s*[:.)-]\s*", "", words, flags=re.IGNORECASE).strip()
+        if not words or words.endswith(":"):
+            continue
+        tokens = re.findall(r"[a-z]+", words.lower())
+        says_change = any(t in ("change", "changes", "changed") for t in tokens)
+        negated = any(t in ("no", "none", "nothing") for t in tokens)
+        if tokens and set(tokens) <= _STANDS and (not says_change or negated):
+            continue
+        asked.append(words)
     return asked
 
 
