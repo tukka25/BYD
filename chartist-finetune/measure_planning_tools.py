@@ -47,7 +47,8 @@ SAMPLE_ROWS = 2000
 
 
 def first_try(r: dict) -> bool:
-    return r["planner_attempts"] == 1 and r["charts"] > 0
+    # a checking turn's revision is a second planner call
+    return r["planner_attempts"] == 1 and r["charts"] > 0 and not r.get("revisions", 0)
 
 
 def sign_test_p(a: int, b: int) -> float:
@@ -117,6 +118,9 @@ def summarize(rows: list[dict]) -> dict:
         "median_seconds": statistics.median(r["seconds"] for r in rows),
         "asked_rows": len(asked),
         "first_try_rate_counting_failures": sum(1 for r in asked if first_try(r)) / len(asked) if asked else 0.0,
+        "revisions_per_dashboard": statistics.mean(r.get("revisions", 0) for r in asked) if asked else 0.0,
+        "planner_calls_per_dashboard": (
+            statistics.mean(r["planner_attempts"] + r.get("revisions", 0) for r in asked) if asked else 0.0),
         "total_failure_rate": sum(1 for r in asked if r["charts"] == 0) / len(asked) if asked else 0.0,
         "charts_dropped_per_dashboard": statistics.mean(r["directions"] - r["charts"] for r in asked) if asked else 0.0,
         **draws,
@@ -262,7 +266,8 @@ def main() -> int:
             calls = [c.name for c in planner_box.calls]
         record = {
             "request_id": row["request_id"], "request": row["request"], "tools": args.tools,
-            "tool_calls": calls, "facts_chars": len(facts),
+            "tool_calls": calls, "revisions": planner_box.revisions if planner_box is not None else 0,
+            "facts_chars": len(facts),
             "directions": len(directions.items), "analyst_attempts": directions.attempts,
             "charts": len(charts.items) if charts else 0, "planner_attempts": charts.attempts if charts else 0,
             "dropped": sum(1 for e in (charts.errors if charts else []) if e.startswith("chart ")),

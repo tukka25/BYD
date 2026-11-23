@@ -183,18 +183,27 @@ _NO_CHANGE = re.compile(r"(no changes?|none)( (needed|required|necessary))?")
 
 
 def changes_asked(notes: str) -> list[str]:
-    """The lines of the checking turn's reply that ask for a change, without a
-    list marker or "Plan N:" prefix. Only "no changes" (or "none"), optionally
-    followed by "needed", "required" or "necessary", asks for nothing; so does a
-    line without a letter. [] means the drafts stand."""
+    """The lines of the checking turn's reply that ask for a change. A line's plan
+    number (a list number, or a "Plan N:"/"Chart N:" prefix) is kept as "chart N: ",
+    the form the retry's own problems use, so the planner knows which chart to change.
+    Only "no changes" (or "none"), optionally followed by "needed", "required" or
+    "necessary", asks for nothing; so does a line without a letter. [] means the
+    drafts stand."""
     asked = []
     for line in notes.splitlines():
-        words = re.sub(r"^\s*(\d+[.)]|[-*\u2022])\s*", "", line).strip()
-        words = re.sub(r"^(plan|chart)\s*\d+\s*[:.)-]\s*", "", words, flags=re.IGNORECASE).strip()
-        plain = " ".join(re.findall(r"[a-z]+", words.lower()))
+        number = None
+        marker = re.match(r"^\s*(?:(\d+)[.)]|[-*•])\s*", line)
+        if marker:
+            number = marker.group(1)
+            line = line[marker.end():]
+        words = line.strip()
+        prefix = re.match(r"^(?:plan|chart)\s*(\d+)\s*[:.)-]\s*", words, flags=re.IGNORECASE)
+        if prefix:
+            number, words = prefix.group(1), words[prefix.end():].strip()
+        plain = " ".join(re.findall(r"[^\W\d_]+", words.lower()))
         if not plain or _NO_CHANGE.fullmatch(plain):
             continue
-        asked.append(words)
+        asked.append(f"chart {number}: {words}" if number else words)
     return asked
 
 
@@ -207,9 +216,9 @@ def check_drafts(llm: Any, bound: Any, draft: str, context: str, toolbox: Any) -
     takes those numbers. A failed model call raises."""
     payload = extract_json(draft)
     plans = payload.get("charts") if isinstance(payload, dict) else None
-    toolbox.drafts = [plan for plan in plans if isinstance(plan, dict)] if isinstance(plans, list) else []
-    shown = ("\n".join(f"{n}. {json.dumps(plan, ensure_ascii=False)}" for n, plan in enumerate(toolbox.drafts, 1))
-             if toolbox.drafts else draft)
+    toolbox.drafts = list(plans) if isinstance(plans, list) else []
+    shown = "\n".join(f"{n}. {json.dumps(plan, ensure_ascii=False)}"
+                      for n, plan in enumerate(toolbox.drafts, 1) if isinstance(plan, dict)) or draft
     messages: list = [SystemMessage(content=CHECKER_SYSTEM_PROMPT),
                       HumanMessage(content=CHECKER_USER_TEMPLATE.format(context=context, drafts=shown))]
     reply = yield from run_tools(bound, messages, toolbox, compact=True)
@@ -249,6 +258,7 @@ def _checking_asker(llm: Any, toolbox: Any, context: str, judge: Callable[[str],
         logger.info("[planning] checking turn asked for %d change(s): %s", len(asked), "; ".join(asked[:7]))
         revision = messages + [AIMessage(content=draft),
                                HumanMessage(content=FIX_PROMPT.format(errors="\n".join(f"- {line}" for line in asked)))]
+        toolbox.revisions += 1
         try:
             revised = _text(llm.invoke(revision))
         except Exception as exc:  # noqa: BLE001 - the revision failed: the draft stands

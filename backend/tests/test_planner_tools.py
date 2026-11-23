@@ -82,6 +82,7 @@ def test_the_planner_drafts_plainly_and_a_separate_turn_checks_the_draft():
     model, toolbox = ToolPlanner(ANSWER, calls(PREVIEW), NO_CHANGES), box()
     step = plan(model, toolbox)
     assert step.items and step.errors == [] and step.items[0]["agg"] == "mean"
+    assert toolbox.revisions == 0
     assert kinds(model) == ["plain", "bound", "bound"] and [c.name for c in toolbox.calls] == ["preview_chart"]
     planner_user = model.seen[0][1][1].content
     assert not any(name in planner_user for name in PLANNER_TOOL_NAMES)
@@ -94,12 +95,14 @@ def test_the_planner_drafts_plainly_and_a_separate_turn_checks_the_draft():
 def test_a_change_asked_goes_back_to_the_planner_once_in_the_retrys_form():
     asked = "1. Change agg to 'mean' so the line does not run back and forth\n2. no changes"
     model = ToolPlanner(RAW_ANSWER, calls(PREVIEW), AIMessage(content=asked), ANSWER)
-    step = plan(model, box())
+    toolbox = box()
+    step = plan(model, toolbox)
+    assert toolbox.revisions == 1
     assert step.items and step.errors == [] and step.items[0]["agg"] == "mean"
     assert kinds(model) == ["plain", "bound", "bound", "plain"]
     revision = model.seen[3][1]
     assert revision[-2].content == RAW_ANSWER.content
-    assert revision[-1].content == FIX_PROMPT.format(errors="- Change agg to 'mean' so the line does not run back and forth")
+    assert revision[-1].content == FIX_PROMPT.format(errors="- chart 1: Change agg to 'mean' so the line does not run back and forth")
 
 
 def test_only_the_no_change_reply_the_prompt_asks_for_counts_as_no_change():
@@ -113,8 +116,9 @@ def test_any_other_line_asks_for_a_change():
     for reply in ("Correct the agg to 'mean'", "No, change it.", "OK, but change agg to mean",
                   "No change to the chart type, change agg to mean", "Change agg to 'mean':", "Looks good to me"):
         assert changes_asked(reply) == [reply], reply
-    assert changes_asked("1. Change agg to 'mean'\n2. no changes") == ["Change agg to 'mean'"]
-    assert changes_asked("Plan 2: Change agg to 'mean'") == ["Change agg to 'mean'"]
+    assert changes_asked("1. Change agg to 'mean'\n2. no changes") == ["chart 1: Change agg to 'mean'"]
+    assert changes_asked("Plan 2: Change agg to 'mean'") == ["chart 2: Change agg to 'mean'"]
+    assert changes_asked("Ändere agg") == ["Ändere agg"]
 
 
 def test_a_revision_that_checks_worse_leaves_the_draft():

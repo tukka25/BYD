@@ -1,4 +1,4 @@
-from measure_planning_tools import REPEATED_X_FIX, compare, compare_planner, draw_first, sign_test_p, summarize
+from measure_planning_tools import REPEATED_X_FIX, compare, compare_planner, draw_first, first_try, sign_test_p, summarize
 
 
 def _row(rid, directions=5, charts=5, planner_attempts=1, analyst_attempts=1, seconds=10.0):
@@ -167,3 +167,11 @@ def test_draw_scores_count_only_dashboards_that_drew():
             {**_row("b", directions=0, charts=0), "drawn": [], "draw_seconds": 0.0}]
     summary = summarize(rows)
     assert summary["repeated_x_per_dashboard"] == 2 and summary["median_draw_seconds"] == 9.0
+
+
+def test_a_revision_inside_the_first_try_is_a_second_planner_call():
+    revised = {**_row("a"), "revisions": 1}
+    assert first_try(_row("a")) and not first_try(revised)
+    summary = summarize([revised])
+    assert summary["revisions_per_dashboard"] == 1 and summary["planner_calls_per_dashboard"] == 2
+    assert summary["first_try_rate_counting_failures"] == 0.0

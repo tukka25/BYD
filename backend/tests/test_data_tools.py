@@ -307,3 +307,11 @@ def test_preview_chart_takes_the_checking_turns_draft_numbers():
     assert lines[0].startswith("2. line mean of bounceRatePct by hourOfDay: 24 points per line")
     assert lines[1].startswith("1. line bounceRatePct by hourOfDay: 168 points per line")
     assert lines[2] == "3. no draft plan 3; there are 2"
+
+
+def test_a_draft_number_that_is_not_a_plan_gets_its_own_line():
+    box = planner_box(web=GRID)
+    box.drafts = [RAW, "junk", {**RAW, "agg": "mean"}]
+    lines = box.call("preview_chart", {"plans": [3, 2]}, compact=True).splitlines()
+    assert lines[0].startswith("3. line mean of bounceRatePct by hourOfDay: 24 points per line")
+    assert lines[1] == "2. draft 2 is not a chart plan"

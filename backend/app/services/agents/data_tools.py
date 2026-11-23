@@ -520,7 +520,8 @@ class ToolBox:
         self._loader = loader
         self._frames: dict[str, pd.DataFrame] = {}
         self.calls: list[ToolCall] = []
-        self.drafts: list[dict] = []  # the checking turn's draft plans; preview_chart takes their numbers
+        self.drafts: list[Any] = []  # the checking turn's draft entries, by position; preview_chart takes their numbers
+        self.revisions = 0  # planner revisions the checking turn asked for (the measurement reads it)
 
     @property
     def specs(self) -> list[dict[str, Any]]:
@@ -624,7 +625,9 @@ class ToolBox:
         if not isinstance(number, int) or isinstance(number, bool):
             return plan, "", None
         if 1 <= number <= len(self.drafts):
-            return self.drafts[number - 1], "", number
+            if isinstance(self.drafts[number - 1], dict):
+                return self.drafts[number - 1], "", number
+            return None, f"draft {number} is not a chart plan", number
         return None, f"no draft plan {number}; there are {len(self.drafts)}", number
 
     def _preview_one(self, plan: Any) -> str:
