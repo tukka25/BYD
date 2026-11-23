@@ -1705,6 +1705,7 @@ Which traces count (the controller's ruling on this plan's open question, 2026-1
 - **Counted:** `scatter`/`scattergl` traces that Plotly draws with lines: a `mode` that contains `"lines"`, `stackgroup` set (an area), or no `mode` at all. Plotly's own reference for a scatter with no mode: under 20 points and not stacked it draws "lines+markers", otherwise "lines". So a trace with no mode is a line; its problem line adds "(it has no mode, so Plotly draws it as a line; for a scatter, set mode='markers')", unless it is a stacked area.
 - **Not counted:** markers-only traces (and `mode="none"`), which may repeat x, and a closed shape (`fill="toself"`, such as a confidence band), which goes back over its x by design.
 - **The problem:** one x value carrying more than one y value in the same trace. The same x with the same y (a fitted line over data whose x repeats) draws over itself and is not a problem.
+- **A staircase is fine** (controller ruling after the Task 6 review, 2026-11-23): x that never goes back with y that only rises or only falls, such as `px.ecdf` (x sorted with ties, cumulative y, drawn as steps) or a running total over sorted x. It never runs back and forth. A sorted x whose y jumps up and down at a repeated x is still a problem.
 - **Never a failure:** an x that is not a list or cannot be compared; a `y` that is not a list as long as `x` (a missing `y` is drawn along the row index, so it never runs back); points whose x or y is missing.
 
 - [ ] **Step 1: Write the failing tests** (`backend/tests/test_drawing_check.py`)
