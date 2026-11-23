@@ -16,6 +16,7 @@ prompts contain JSON braces, which a template would read as variables.
 from __future__ import annotations
 
 import logging
+import re
 from dataclasses import dataclass, field
 from typing import Any, Callable, Generator
 
@@ -26,10 +27,11 @@ from app.services.agents.discovery import Probe, run_tools
 from app.services.agents.planning_contract import (
     ANALYST_SYSTEM_PROMPT,
     ANALYST_USER_TEMPLATE,
+    CHECKER_SYSTEM_PROMPT,
+    CHECKER_USER_TEMPLATE,
     FIX_PROMPT,
     NO_REQUEST,
     PLANNER_SYSTEM_PROMPT,
-    PLANNER_TOOLS_NOTE,
     PLANNER_USER_TEMPLATE,
     check_directions,
     check_specs,
@@ -157,40 +159,81 @@ def propose_directions(
     return finish(propose_directions_steps(llm, request, profiles, facts, memory, links))
 
 
-def _tool_asker(llm: Any, toolbox: Any) -> Ask | None:
-    """How the planner answers when it holds the tools. On its first try it may
-    call them (at most toolbox.max_calls, each result its compact fact line);
-    when it stops, that reply is its answer, and when the budget runs out the
-    plain model answers. A retry is a plain call, as the planner was trained.
-    Tools that fail mean planning without them, never a failed build."""
+def _answer(llm: Any, messages: list) -> Any:
+    """The plain model's reply. A server that will not take tool turns without
+    tools offered gets the same messages without them."""
+    try:
+        return llm.invoke(messages)
+    except Exception as exc:  # noqa: BLE001 - retried once below, without the tool turns
+        plain = [m for m in messages if not isinstance(m, ToolMessage) and not getattr(m, "tool_calls", None)]
+        if len(plain) == len(messages):
+            raise
+        logger.warning("[planning] answering with the tool turns failed, answering without them: %s", exc)
+        return llm.invoke(plain)
+
+
+_NO_CHANGE = {"no changes", "no change", "none"}
+
+
+def changes_asked(notes: str) -> list[str]:
+    """The lines of the checking turn's reply that ask for a change, without their
+    list numbers: every line except empty ones and those that say only "no
+    changes" (or "none"). [] means the drafts stand."""
+    asked = []
+    for line in notes.splitlines():
+        words = re.sub(r"^\s*\d+[.)]\s*", "", line).strip()
+        if words and re.sub(r"[^a-z ]", "", words.lower()).strip() not in _NO_CHANGE:
+            asked.append(words)
+    return asked
+
+
+def check_drafts(llm: Any, bound: Any, draft: str, context: str, toolbox: Any) -> Generator[Probe, None, list[str]]:
+    """The checking turn: a separate call with its own system prompt holds the
+    tools and decides what to look at in the drafts (at most toolbox.max_calls,
+    each result its compact fact line), then says what to change. When the budget
+    runs out while it is still calling, the plain model answers. Returns the
+    lines that ask for a change. A failed model call raises."""
+    messages: list = [SystemMessage(content=CHECKER_SYSTEM_PROMPT),
+                      HumanMessage(content=CHECKER_USER_TEMPLATE.format(context=context, drafts=draft))]
+    reply = yield from run_tools(bound, messages, toolbox, compact=True)
+    if reply is None or getattr(reply, "tool_calls", None):
+        reply = _answer(llm, messages)
+    return changes_asked(_text(reply))
+
+
+def _checking_asker(llm: Any, toolbox: Any, context: str) -> Ask | None:
+    """How the planner answers when its drafts are checked (PLANNER_TOOLS=planner).
+    Every try starts with a plain call, as the planner was trained. After the
+    first, a checking turn holds the tools (`check_drafts`); the lines it asks to
+    change go back to the planner once, in the retry's own form (FIX_PROMPT).
+    A check or a revision that fails leaves the draft, never a failed build.
+    lora-v2's planner calls no tool while it plans (AGENTS.md), so the tools
+    live in this separate turn."""
     try:
         bound = llm.bind_tools(toolbox.specs)
-    except Exception as exc:  # noqa: BLE001 - no tools on this backend: plan without them
-        logger.warning("[planning] planner tools unavailable, planning without them: %s", exc)
+    except Exception as exc:  # noqa: BLE001 - no tools on this backend: plan without the check
+        logger.warning("[planning] checking turn unavailable, planning without it: %s", exc)
         return None
 
-    def answer(messages: list) -> Any:
-        """The plain model's reply. A server that will not take tool turns without
-        tools offered gets the same messages without them."""
-        try:
-            return llm.invoke(messages)
-        except Exception as exc:  # noqa: BLE001 - retried once below, without the tool turns
-            plain = [m for m in messages if not isinstance(m, ToolMessage) and not getattr(m, "tool_calls", None)]
-            if len(plain) == len(messages):
-                raise
-            logger.warning("[planning] answering with the tool turns failed, answering without them: %s", exc)
-            return llm.invoke(plain)
-
     def ask(messages: list, attempt: int) -> Generator[Probe, None, str]:
-        reply = None
-        if attempt == 1:
-            try:
-                reply = yield from run_tools(bound, messages, toolbox, compact=True)
-            except Exception as exc:  # noqa: BLE001 - the tool step failed: answer without it
-                logger.warning("[planning] planner tool step failed, planning without it: %s", exc)
-        if reply is None or getattr(reply, "tool_calls", None):
-            reply = answer(messages)
-        return _text(reply)
+        draft = _text(llm.invoke(messages))
+        if attempt != 1:
+            return draft
+        try:
+            asked = yield from check_drafts(llm, bound, draft, context, toolbox)
+        except Exception as exc:  # noqa: BLE001 - the check failed: the draft stands
+            logger.warning("[planning] checking turn failed, keeping the draft: %s", exc)
+            return draft
+        if not asked:
+            return draft
+        logger.info("[planning] checking turn asked for %d change(s): %s", len(asked), "; ".join(asked[:7]))
+        revision = messages + [AIMessage(content=draft),
+                               HumanMessage(content=FIX_PROMPT.format(errors="\n".join(f"- {line}" for line in asked)))]
+        try:
+            return _text(llm.invoke(revision))
+        except Exception as exc:  # noqa: BLE001 - the revision failed: the draft stands
+            logger.warning("[planning] revision after the check failed, keeping the draft: %s", exc)
+            return draft
 
     return ask
 
@@ -206,12 +249,13 @@ def plan_charts_steps(
     toolbox: Any = None,
 ) -> Generator[Retry | Probe, None, PlanStep]:
     kinds = tuple(required_kinds)
-    ask = _tool_asker(llm, toolbox) if toolbox is not None else None
+    context = render_profiles(profiles) + (f"\n\n{links}" if links else "")
+    ask = _checking_asker(llm, toolbox, context) if toolbox is not None else None
     user = with_context(
         PLANNER_USER_TEMPLATE.format(profiles=render_profiles(profiles), directions=render_directions(directions)),
         facts,
         links=links,
-        notes=(include_kinds(kinds), PLANNER_TOOLS_NOTE if ask is not None else ""),
+        notes=(include_kinds(kinds),),
     )
 
     def check(payload: Any, tables: dict[str, dict[str, str]]) -> tuple[list[dict], list[str]]:

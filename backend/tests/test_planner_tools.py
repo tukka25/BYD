@@ -1,5 +1,6 @@
-"""PLANNER_TOOLS=planner: the planner checks its own drafts with tools, at most
-3 calls on its first try, then answers in JSON that the usual checks read."""
+"""PLANNER_TOOLS=planner: the planner drafts with its trained prompt and no tools;
+on its first try a separate checking turn holds the tools (at most 3 calls),
+and the lines it asks to change go back to the planner once, as a retry would."""
 import json
 
 import pandas as pd
@@ -8,8 +9,8 @@ from langchain_core.messages import AIMessage, ToolMessage
 from app.services.agents.chartist import ChartistAgent
 from app.services.agents.dashboard_flow import build_dashboard
 from app.services.agents.data_tools import PLANNER_TOOL_NAMES, ToolBox, tool_specs
-from app.services.agents.planning import plan_charts
-from app.services.agents.planning_contract import PLANNER_TOOLS_NOTE
+from app.services.agents.planning import changes_asked, plan_charts
+from app.services.agents.planning_contract import CHECKER_SYSTEM_PROMPT, FIX_PROMPT
 from app.services.agents.profiler import profile_table
 
 WEEK = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
@@ -23,11 +24,14 @@ PLAN = {"title": "Bounce rate by hour", "question": "How does the bounce rate mo
         "grain": "", "sort": "", "top_n": 0}
 ANSWER = AIMessage(content=json.dumps({"charts": [PLAN]}))
 RAW_ANSWER = AIMessage(content=json.dumps({"charts": [{**PLAN, "agg": "none"}]}))
+NO_CHANGES = AIMessage(content="no changes")
+PREVIEW = ("preview_chart", {"plans": [{"chart": "line", "table": "web", "x": "hourOfDay", "y": "bounceRatePct",
+                                        "agg": "none"}]})
 
 
 class ToolPlanner:
-    """A stand-in planner model. Bound (tools offered) and plain calls read one
-    script in order; each call is recorded with which of the two it was."""
+    """A stand-in model. Bound (tools offered) and plain calls read one script in
+    order; each call is recorded with which of the two it was."""
 
     def __init__(self, *replies, bind_fails=False):
         self.replies, self.seen, self.bind_fails, self.specs = list(replies), [], bind_fails, None
@@ -70,66 +74,72 @@ def plan(model, toolbox):
     return plan_charts(model, DIRECTION, PROFILES, validate=toolbox.validate_spec, toolbox=toolbox)
 
 
-PREVIEW = ("preview_chart", {"plans": [{"chart": "line", "table": "web", "x": "hourOfDay", "y": "bounceRatePct",
-                                        "agg": "none"}]})
+def kinds(model):
+    return [kind for kind, _ in model.seen]
 
 
-def test_the_planner_previews_its_draft_then_answers():
-    model, toolbox = ToolPlanner(calls(PREVIEW), ANSWER), box()
+def test_the_planner_drafts_plainly_and_a_separate_turn_checks_the_draft():
+    model, toolbox = ToolPlanner(ANSWER, calls(PREVIEW), NO_CHANGES), box()
     step = plan(model, toolbox)
-    assert step.errors == [] and step.items[0]["agg"] == "mean" and step.attempts == 1
-    assert [kind for kind, _ in model.seen] == ["bound", "bound"]
-    assert [t["function"]["name"] for t in model.specs] == list(PLANNER_TOOL_NAMES)
-    first, second = model.seen[0][1], model.seen[1][1]
-    assert first[1].content.endswith(PLANNER_TOOLS_NOTE)
-    result = second[-1]
-    assert isinstance(result, ToolMessage) and result.content.startswith("1. line bounceRatePct by hourOfDay:")
-    assert "x repeats within a line" in result.content and not result.content.startswith("{")
+    assert step.items and step.errors == [] and step.items[0]["agg"] == "mean"
+    assert kinds(model) == ["plain", "bound", "bound"] and [c.name for c in toolbox.calls] == ["preview_chart"]
+    planner_user = model.seen[0][1][1].content
+    assert "preview_chart" not in planner_user and "tool" not in planner_user.lower()
+    check = model.seen[1][1]
+    assert check[0].content == CHECKER_SYSTEM_PROMPT and ANSWER.content in check[1].content
+    fact = [m for m in model.seen[2][1] if isinstance(m, ToolMessage)][0].content
+    assert fact.startswith("1. line bounceRatePct by hourOfDay: 168 points per line, x repeats within a line")
 
 
-def test_several_calls_in_one_reply_are_each_answered_and_charged():
-    model, toolbox = ToolPlanner(calls(("row_grain", {"table": "web"}),
-                                       ("inspect_column", {"table": "web", "column": "hourOfDay"})), ANSWER), box()
-    plan(model, toolbox)
-    assert [c.name for c in toolbox.calls] == ["row_grain", "inspect_column"]
-    results = [m for m in model.seen[1][1] if isinstance(m, ToolMessage)]
-    assert results[0].content.startswith("web: one row per weekday × hourOfDay")
+def test_a_change_asked_goes_back_to_the_planner_once_in_the_retrys_form():
+    asked = "1. Change agg to 'mean' so the line does not run back and forth\n2. no changes"
+    model = ToolPlanner(RAW_ANSWER, calls(PREVIEW), AIMessage(content=asked), ANSWER)
+    step = plan(model, box())
+    assert step.items and step.errors == [] and step.items[0]["agg"] == "mean"
+    assert kinds(model) == ["plain", "bound", "bound", "plain"]
+    revision = model.seen[3][1]
+    assert revision[-2].content == RAW_ANSWER.content
+    assert revision[-1].content == FIX_PROMPT.format(errors="- Change agg to 'mean' so the line does not run back and forth")
 
 
-def test_a_planner_that_keeps_calling_is_answered_by_the_plain_model_after_three():
-    model = ToolPlanner(calls(("row_grain", {"table": "web"})), calls(PREVIEW),
-                        calls(("inspect_column", {"table": "web", "column": "weekday"})), ANSWER)
-    toolbox = box()
+def test_only_lines_that_ask_for_a_change_count():
+    assert changes_asked("no changes") == [] and changes_asked("1. no changes\n2. No changes.") == []
+    assert changes_asked("") == [] and changes_asked("1) None") == []
+    assert changes_asked("1. Change agg to 'mean'\n2. no changes") == ["Change agg to 'mean'"]
+
+
+def test_the_check_runs_on_the_first_try_only_and_a_retry_is_plain():
+    model = ToolPlanner(RAW_ANSWER, NO_CHANGES, ANSWER)
+    step = plan(model, box())
+    assert step.items and step.errors == [] and step.attempts == 2
+    assert kinds(model) == ["plain", "bound", "plain"]
+    assert model.seen[2][1][-1].content.startswith("Some of that did not check out:")
+
+
+def test_a_check_that_keeps_calling_is_answered_by_the_plain_model_after_three():
+    model, toolbox = ToolPlanner(ANSWER, calls(PREVIEW), calls(PREVIEW), calls(PREVIEW), NO_CHANGES), box()
     step = plan(model, toolbox)
-    assert len(toolbox.calls) == 3 and [kind for kind, _ in model.seen] == ["bound", "bound", "bound", "plain"]
-    assert step.items and step.errors == []
+    assert step.items and len(toolbox.calls) == 3
+    assert kinds(model) == ["plain", "bound", "bound", "bound", "plain"]
+    assert model.seen[-1][1][0].content == CHECKER_SYSTEM_PROMPT
 
 
-def test_a_planner_that_calls_no_tool_answers_on_its_first_reply():
-    model, toolbox = ToolPlanner(ANSWER), box()
-    step = plan(model, toolbox)
-    assert step.items and toolbox.calls == [] and [kind for kind, _ in model.seen] == ["bound"]
+def test_without_tool_support_the_planner_plans_without_a_check():
+    model = ToolPlanner(ANSWER, bind_fails=True)
+    step = plan(model, box())
+    assert step.items and step.errors == [] and kinds(model) == ["plain"]
 
 
-def test_a_retry_is_a_plain_call_with_the_checks_words():
-    model, toolbox = ToolPlanner(RAW_ANSWER, ANSWER), box()
-    step = plan(model, toolbox)
-    assert step.attempts == 2 and step.items[0]["agg"] == "mean"
-    assert [kind for kind, _ in model.seen] == ["bound", "plain"]
-    assert "run back and forth" in model.seen[1][1][-1].content
+def test_a_check_that_fails_leaves_the_draft():
+    model = ToolPlanner(ANSWER, ConnectionError("model server went away"))
+    step = plan(model, box())
+    assert step.items and step.errors == [] and kinds(model) == ["plain", "bound"]
 
 
-def test_without_tool_support_the_planner_plans_without_them():
-    model, toolbox = ToolPlanner(ANSWER, bind_fails=True), box()
-    step = plan(model, toolbox)
-    assert step.items and toolbox.calls == []
-    assert PLANNER_TOOLS_NOTE not in model.seen[0][1][1].content
-
-
-def test_a_tool_step_that_fails_plans_without_it():
-    model, toolbox = ToolPlanner(ConnectionError("tools rejected"), ANSWER), box()
-    step = plan(model, toolbox)
-    assert step.items and [kind for kind, _ in model.seen] == ["bound", "plain"]
+def test_a_revision_that_fails_leaves_the_draft():
+    model = ToolPlanner(ANSWER, AIMessage(content="1. Give it a shorter title"), ConnectionError("gone"))
+    step = plan(model, box())
+    assert step.items and step.items[0]["title"] == PLAN["title"] and kinds(model) == ["plain", "bound", "plain"]
 
 
 class Fixed:
@@ -148,13 +158,14 @@ class Scripted:
         return type("Reply", (), {"content": self.replies.pop(0)})()
 
 
-def test_a_dashboard_with_planner_tools_has_no_explorer_step(tmp_path):
+def test_a_dashboard_in_planner_mode_shows_the_check_and_has_no_explorer_step(tmp_path):
     path = tmp_path / "web.csv"
     HOURS.to_csv(path, index=False)
     directions = json.dumps({"directions": [{**DIRECTION[0], "table": "web.csv"}]})
     preview = ("preview_chart", {"plans": [{"chart": "line", "table": "web.csv", "x": "hourOfDay",
                                             "y": "bounceRatePct", "agg": "mean"}]})
-    planner = ToolPlanner(calls(preview), AIMessage(content=json.dumps({"charts": [{**PLAN, "table": "web.csv"}]})))
+    planner = ToolPlanner(AIMessage(content=json.dumps({"charts": [{**PLAN, "table": "web.csv"}]})),
+                          calls(preview), NO_CHANGES)
     chartist = ChartistAgent(llm=None, generator=Fixed(), chart_type_hint_style="off")
     events = list(build_dashboard("bounce rate by hour", [{"type": "file", "name": "web.csv", "path": str(path)}],
                                   str(tmp_path), Scripted(directions), planner, chartist, planner_tools=True))
@@ -163,17 +174,15 @@ def test_a_dashboard_with_planner_tools_has_no_explorer_step(tmp_path):
     assert [e.kind for e in events][-1] == "chart"
 
 
-def test_what_the_planner_tools_add_to_the_prompt_is_capped_in_characters():
-    # A character cap standing in for tokens. Measured with the base model's chat template while
-    # this plan was written (2026-11-23): binding these five tools and this note adds ~850 tokens
-    # to the planner's prompt (Spotify table: 1,407 -> 2,262), and three compact results ~675 more
-    # (2,937); lora-v2 was trained at 2,048. The probe script prints the server's own counts.
+def test_the_checking_turns_prompt_and_tools_stay_small():
+    # Measured in the controller's runs (2026-11-23): the checking turn's prompt was 1,154-1,924 server
+    # tokens with two drafts; lora-v2 was trained at 2,048. These caps stand in for tokens.
     specs = json.dumps(tool_specs(["t"], PLANNER_TOOL_NAMES), separators=(",", ":"))
-    assert len(specs) <= 2000 and len(PLANNER_TOOLS_NOTE) <= 450
+    assert len(specs) <= 2000 and len(CHECKER_SYSTEM_PROMPT) <= 900
 
 
 class PickyPlanner(ToolPlanner):
-    """A server that refuses tool turns when no tools are offered (the plain call)."""
+    """A server that refuses tool turns when no tools are offered (a plain call)."""
 
     def invoke(self, messages):
         if any(isinstance(m, ToolMessage) for m in messages):
@@ -182,10 +191,10 @@ class PickyPlanner(ToolPlanner):
         return self.reply("plain", messages)
 
 
-def test_a_server_that_refuses_tool_turns_unbound_still_gets_an_answer():
-    model = PickyPlanner(calls(("row_grain", {"table": "web"})), calls(PREVIEW),
-                         calls(("inspect_column", {"table": "web", "column": "weekday"})), ANSWER)
+def test_a_server_that_refuses_tool_turns_unbound_still_gets_the_checks_answer():
+    model = PickyPlanner(ANSWER, calls(("row_grain", {"table": "web"})), calls(PREVIEW),
+                         calls(("inspect_column", {"table": "web", "column": "weekday"})), NO_CHANGES)
     step = plan(model, box())
     assert step.items and step.errors == []
-    assert [kind for kind, _ in model.seen][-2:] == ["plain refused", "plain"]
+    assert kinds(model)[-2:] == ["plain refused", "plain"]
     assert not any(isinstance(m, ToolMessage) for m in model.seen[-1][1])
