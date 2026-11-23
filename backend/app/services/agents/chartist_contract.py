@@ -276,6 +276,57 @@ def problems_with(code: str) -> list[str]:
     return problems
 
 
+# Said to the model when a line it drew runs back and forth. The planning
+# measurement counts repairs by these words, so change both together.
+REPEATED_X_FIX = "each x value should appear once per line: aggregate y for each x and sort by x"
+
+
+def _drawn_as_line(trace: dict) -> bool:
+    """A scatter trace that Plotly draws with lines: its mode includes "lines",
+    it is a stacked area, or it has no mode (Plotly's reference: "lines+markers"
+    under 20 points when not stacked, otherwise "lines"). Markers-only traces
+    may repeat x, and a closed shape (fill="toself", such as a band) goes back
+    over its x by design."""
+    if trace.get("type", "scatter") not in ("scatter", "scattergl") or trace.get("fill") == "toself":
+        return False
+    mode = trace.get("mode")
+    return bool(trace.get("stackgroup")) or mode is None or "lines" in str(mode)
+
+
+def figure_problems(figure: dict) -> list[str]:
+    """What a drawn figure gets wrong, in words the model can act on; [] when nothing does.
+
+    Expects plain lists: decode Plotly's typed arrays first, as
+    workflow.run_on_frame does. One rule today: a line on which one x value
+    carries more than one y value runs back and forth across the chart (rows of
+    two keys, drawn as one line over one of them). The same x with the same y
+    draws over itself and is fine. An x or y that cannot be read is not a problem.
+    """
+    problems = []
+    for n, trace in enumerate((figure or {}).get("data") or [], 1):
+        if not isinstance(trace, dict) or not _drawn_as_line(trace):
+            continue
+        xs, ys = trace.get("x"), trace.get("y")
+        if not isinstance(xs, list) or not isinstance(ys, list) or len(xs) != len(ys):
+            continue
+        points = [(x, y) for x, y in zip(xs, ys) if x is not None and y is not None]
+        seen: dict = {}
+        try:
+            for x, y in points:
+                seen.setdefault(tuple(x) if isinstance(x, list) else x, set()).add(
+                    tuple(y) if isinstance(y, list) else y)
+        except TypeError:
+            continue
+        if any(len(values) > 1 for values in seen.values()):
+            name = str(trace.get("name") or "").strip() or f"trace {n}"
+            problem = (f"the line '{name}' has {len(points):,} points but only {len(seen):,} x values, "
+                       f"so it runs back and forth: {REPEATED_X_FIX}")
+            if trace.get("mode") is None and not trace.get("stackgroup"):
+                problem += " (it has no mode, so Plotly draws it as a line; for a scatter, set mode='markers')"
+            problems.append(problem)
+    return problems
+
+
 def _syntax_problem(code: str) -> str:
     text = (code or "").strip()
     if not text:

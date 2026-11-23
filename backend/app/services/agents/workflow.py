@@ -39,12 +39,13 @@ from langgraph.graph import END, StateGraph
 
 from app.core.config import get_settings
 from app.services.agents.chartist import ChartistAgent, ChartistUnavailable
-from app.services.agents.chartist_contract import problems_with
+from app.services.agents.chartist_contract import figure_problems, problems_with
 from app.services import db_sources
 from app.services.agents.data_detective import DataDetective
 from app.services.agents.planner import PlannerAgent
 from app.services.llm import get_llm
 from app.utils.executor import SafeExecutor
+from app.utils.figure_json import decode_typed_arrays
 
 logger = logging.getLogger(__name__)
 
@@ -300,6 +301,10 @@ def run_on_frame(
     """Check and run the model's code; on any failure send the problem back to
     the model for a fix, at most `max_repairs` times, then report the failure.
 
+    A failure is code that breaks the contract, code that does not run, or a
+    figure that breaks it (`figure_problems`: a line whose x repeats runs back
+    and forth). `repair_reasons` lists the problem behind each fix asked for.
+
     The chart is always the model's own code. There is no deterministic
     stand-in and no code-side patching: a hardcoded backup once drew 32,833 bars
     of the wrong column under the planned title, froze the report it sat in and
@@ -307,6 +312,7 @@ def run_on_frame(
     """
     started = time.perf_counter()
     repairs = 0
+    reasons: List[str] = []
     result: Dict[str, Any] = {}
     while True:
         problems = problems_with(code)
@@ -314,7 +320,8 @@ def run_on_frame(
             problem = "; ".join(problems)
         else:
             result = executor.execute(code, df)
-            if result.get("success"):
+            drawn = figure_problems(decode_typed_arrays(result.get("figure") or {})) if result.get("success") else []
+            if result.get("success") and not drawn:
                 logger.info(
                     "[workflow/executor] success in %.2fs after %d fix(es)",
                     time.perf_counter() - started,
@@ -324,12 +331,19 @@ def run_on_frame(
                     "execution_result": result,
                     "code_run": code,
                     "repairs": repairs,
+                    "repair_reasons": reasons,
                     "messages": [AIMessage(content="Chart rendered.")],
                 }
-            problem = _run_problem(result)
+            if drawn:
+                problem = "; ".join(drawn)
+                # It ran, but what it drew breaks the contract: no caller may take it for a chart.
+                result = {**result, "success": False, "figure": None, "error": problem}
+            else:
+                problem = _run_problem(result)
         if repair is None or repairs >= max_repairs:
             break
         repairs += 1
+        reasons.append(problem)
         logger.info(
             "[workflow/executor] asking the model to fix its code (%d of %d): %s",
             repairs,
@@ -348,6 +362,7 @@ def run_on_frame(
         "execution_result": result,
         "code_run": code,
         "repairs": repairs,
+        "repair_reasons": reasons,
         "messages": [AIMessage(content=f"Chart failed: {problem}")],
     }
 

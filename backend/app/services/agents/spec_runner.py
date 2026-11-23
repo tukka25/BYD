@@ -38,6 +38,7 @@ def run_spec(spec: dict, source: dict, chartist: Any, data_dir: str, executor: A
             "error": f"Could not read {source.get('name')}: {context['error']}",
             "data_context": context,
             "repairs": 0,
+            "repair_reasons": [],
         }
     variables = chartist.prompt_variables(spec["question"], {}, context, spec=spec)
     try:
@@ -49,6 +50,7 @@ def run_spec(spec: dict, source: dict, chartist: Any, data_dir: str, executor: A
             "error": f"The chart model could not be reached: {exc}",
             "data_context": context,
             "repairs": 0,
+            "repair_reasons": [],
         }
     outcome = run_chart_code(
         context,
@@ -62,4 +64,5 @@ def run_spec(spec: dict, source: dict, chartist: Any, data_dir: str, executor: A
         "error": outcome.get("error") or "",
         "data_context": context,
         "repairs": outcome.get("repairs", 0),
+        "repair_reasons": outcome.get("repair_reasons", []),
     }
