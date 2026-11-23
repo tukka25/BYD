@@ -19,7 +19,7 @@ from dataclasses import dataclass
 from typing import Any, Dict, List, Optional
 
 import pandas as pd
-from sqlalchemy import MetaData, Table, create_engine, func, inspect, select
+from sqlalchemy import MetaData, Table, and_, create_engine, func, inspect, select
 from sqlalchemy.engine import Engine
 from sqlalchemy.engine.url import URL
 
@@ -178,6 +178,62 @@ def engine_for_source(source: Any) -> Engine:
         password=decrypt_secret(source.db_password_encrypted or ""),
     )
 
+
+# Joined tables offered per connection. Each is one more table the planner reads.
+MAX_JOINS = 6
+
+
+@dataclass(frozen=True)
+class Link:
+    """A declared foreign key: each child row points at one parent row."""
+
+    child: str
+    child_columns: tuple[str, ...]
+    parent: str
+    parent_columns: tuple[str, ...]
+
+    @property
+    def label(self) -> str:
+        """The joined table's name, as the planner and the checks see it."""
+        return f"{self.child}+{self.parent}"
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {"child": self.child, "child_columns": list(self.child_columns),
+                "parent": self.parent, "parent_columns": list(self.parent_columns)}
+
+    @classmethod
+    def from_dict(cls, data: Dict[str, Any]) -> "Link":
+        return cls(str(data["child"]), tuple(data["child_columns"]), str(data["parent"]), tuple(data["parent_columns"]))
+
+
+def links_on(connection: Any, tables: List[str]) -> List[Link]:
+    """Declared foreign keys among `tables`, child to parent. Only declared ones:
+    a join guessed from column names would be a name rule, and often wrong."""
+    inspector = inspect(connection)
+    known = set(tables)
+    found: List[Link] = []
+    for table in tables:
+        for fk in inspector.get_foreign_keys(table):
+            parent = fk.get("referred_table")
+            child_columns = fk.get("constrained_columns") or []
+            parent_columns = fk.get("referred_columns") or []
+            if (parent in known and parent != table and child_columns
+                    and len(child_columns) == len(parent_columns)):
+                found.append(Link(table, tuple(child_columns), parent, tuple(parent_columns)))
+    return found
+
+
+def foreign_keys(source: Any, tables: List[str]) -> List[Link]:
+    """Declared foreign keys of a stored connection; none if they cannot be read."""
+    engine = engine_for_source(source)
+    try:
+        with engine.connect() as connection:
+            return links_on(connection, tables)
+    except Exception as exc:  # noqa: BLE001 - a connection without readable keys still charts its tables
+        logger.warning("[db_sources] could not read foreign keys for %s: %s", source.id, exc)
+        return []
+    finally:
+        engine.dispose()
 
 def tables_with_columns(source: Any, limit: int = MAX_TABLES) -> List[Dict[str, Any]]:
     """Table names and their columns — metadata only, no rows read."""
