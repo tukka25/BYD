@@ -4,6 +4,7 @@ import pytest
 from sqlalchemy import Column, ForeignKey, Integer, MetaData, String, Table, create_engine
 
 from app.services import db_sources
+from app.services.agents.links import render_links
 from app.services.db_sources import Link, links_on, load_joined_on
 
 ORDERS_CUSTOMERS = Link("orders", ("customer_id",), "customers", ("id",))
@@ -107,3 +108,29 @@ def test_a_chart_runs_on_a_joined_table(monkeypatch):
     out = run_chart_code({"source_id": "s1", "table": "orders+customers", "join": ORDERS_CUSTOMERS.to_dict()},
                          code, SafeExecutor())
     assert out["execution_result"]["figure"]["data"][0]["type"] == "bar"
+
+
+def billing_shipping_engine():
+    """orders points at customers twice: who pays and who receives."""
+    engine = create_engine("sqlite://")
+    meta = MetaData()
+    Table("customers", meta, Column("id", Integer, primary_key=True), Column("region", String))
+    Table("orders", meta, Column("id", Integer, primary_key=True),
+          Column("billing_customer_id", Integer, ForeignKey("customers.id")),
+          Column("shipping_customer_id", Integer, ForeignKey("customers.id")))
+    meta.create_all(engine)
+    return engine
+
+
+def test_two_keys_between_the_same_tables_are_named_by_key():
+    with billing_shipping_engine().connect() as conn:
+        links = links_on(conn, ["customers", "orders"])
+    assert sorted(link.label for link in links) == [
+        "orders+customers_by_billing_customer_id", "orders+customers_by_shipping_customer_id"]
+
+
+def test_a_name_by_key_survives_the_dict_and_reaches_the_planner_line():
+    link = Link("orders", ("billing_customer_id",), "customers", ("id",), by_key=True)
+    assert Link.from_dict(link.to_dict()) == link
+    assert ("- orders+customers_by_billing_customer_id: joined on orders.billing_customer_id = customers.id"
+            in render_links([link.to_dict()]))

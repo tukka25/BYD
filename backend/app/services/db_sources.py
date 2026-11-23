@@ -15,7 +15,8 @@ table list before it is reflected at all.
 from __future__ import annotations
 
 import logging
-from dataclasses import dataclass
+from collections import Counter
+from dataclasses import dataclass, replace
 from typing import Any, Dict, List, Optional
 
 import pandas as pd
@@ -191,19 +192,24 @@ class Link:
     child_columns: tuple[str, ...]
     parent: str
     parent_columns: tuple[str, ...]
+    by_key: bool = False  # another declared key joins the same two tables
 
     @property
     def label(self) -> str:
-        """The joined table's name, as the planner and the checks see it."""
-        return f"{self.child}+{self.parent}"
+        """The joined table's name, as the planner and the checks see it. When two
+        keys join the same two tables (who pays, who receives), the child's key
+        columns tell the two apart."""
+        name = f"{self.child}+{self.parent}"
+        return f"{name}_by_{'_'.join(self.child_columns)}" if self.by_key else name
 
     def to_dict(self) -> Dict[str, Any]:
         return {"child": self.child, "child_columns": list(self.child_columns),
-                "parent": self.parent, "parent_columns": list(self.parent_columns)}
+                "parent": self.parent, "parent_columns": list(self.parent_columns), "by_key": self.by_key}
 
     @classmethod
     def from_dict(cls, data: Dict[str, Any]) -> "Link":
-        return cls(str(data["child"]), tuple(data["child_columns"]), str(data["parent"]), tuple(data["parent_columns"]))
+        return cls(str(data["child"]), tuple(data["child_columns"]), str(data["parent"]),
+                   tuple(data["parent_columns"]), bool(data.get("by_key", False)))
 
 
 def links_on(connection: Any, tables: List[str]) -> List[Link]:
@@ -220,7 +226,8 @@ def links_on(connection: Any, tables: List[str]) -> List[Link]:
             if (parent in known and parent != table and child_columns
                     and len(child_columns) == len(parent_columns)):
                 found.append(Link(table, tuple(child_columns), parent, tuple(parent_columns)))
-    return found
+    pairs = Counter((link.child, link.parent) for link in found)
+    return [replace(link, by_key=True) if pairs[(link.child, link.parent)] > 1 else link for link in found]
 
 
 def foreign_keys(source: Any, tables: List[str]) -> List[Link]:

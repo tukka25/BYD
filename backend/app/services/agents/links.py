@@ -7,6 +7,8 @@ the order's customer.
 """
 from __future__ import annotations
 
+from app.services.db_sources import Link
+
 MAX_LINKS = 4
 
 
@@ -17,6 +19,6 @@ def render_links(links: list[dict]) -> str:
     for link in links[:MAX_LINKS]:
         on = ", ".join(f"{link['child']}.{c} = {link['parent']}.{p}"
                        for c, p in zip(link["child_columns"], link["parent_columns"]))
-        lines.append(f"- {link['child']}+{link['parent']}: joined on {on}; "
+        lines.append(f"- {Link.from_dict(link).label}: joined on {on}; "
                      f"columns from {link['parent']} are named {link['parent']}.<column>")
     return "\n".join(lines)
