@@ -95,6 +95,7 @@ def summarize(rows: list[dict]) -> dict:
     planned = [r for r in rows if r["charts"]]
     asked = [r for r in rows if r["directions"]]
     drawn = [d for r in rows for d in r.get("drawn", [])]
+    drew = [r for r in rows if r.get("drawn")]
     rendered = [d for d in drawn if d["rendered"]]
     draws = {
         "charts_drawn": len(drawn),
@@ -102,8 +103,8 @@ def summarize(rows: list[dict]) -> dict:
         # Of the charts that rendered, how many are the kind that was planned (as measure_planning.py).
         "planned_kind_rate": sum(1 for d in rendered if d["kind_ok"]) / len(rendered) if rendered else 0.0,
         "repairs_per_chart": statistics.mean(d["repairs"] for d in drawn),
-        "repeated_x_per_dashboard": statistics.mean(sum(d["repeated_x"] for d in r.get("drawn", [])) for r in rows),
-        "median_draw_seconds": statistics.median(r.get("draw_seconds", 0.0) for r in rows),
+        "repeated_x_per_dashboard": statistics.mean(sum(d["repeated_x"] for d in r["drawn"]) for r in drew),
+        "median_draw_seconds": statistics.median(r.get("draw_seconds", 0.0) for r in drew),
     } if drawn else {}
     return {
         "rows": len(rows),
@@ -172,6 +173,8 @@ def compare_planner(on_rows: list[dict], planner_rows: list[dict]) -> dict:
         "median_seconds_rise_under_30": pl_s["median_seconds"] - on_s["median_seconds"] < 30,
         # A planner arm that calls no tool is the on flow minus the explorer; never the default.
         "planner_uses_tools": pl_s.get("tool_calls_per_dashboard", 0.0) > 0,
+        "dropped_not_higher": pl_s["charts_dropped_per_dashboard"] <= on_s["charts_dropped_per_dashboard"],
+        "both_drew_charts": on_s.get("charts_drawn", 0) > 0 and pl_s.get("charts_drawn", 0) > 0,
     }
     decision["planner_by_default"] = all(decision.values())
     return {
@@ -254,6 +257,8 @@ def main() -> int:
         charts = (plan_charts(planner, directions.items, profiles, facts, validate, toolbox=planner_box)
                   if directions.items else None)
         if planner_box is not None:
+            # Counted from planner_box.calls, wherever inside plan_charts they are made; a tool step run
+            # outside plan_charts would not be counted.
             calls = [c.name for c in planner_box.calls]
         record = {
             "request_id": row["request_id"], "request": row["request"], "tools": args.tools,

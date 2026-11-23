@@ -131,6 +131,7 @@ def test_compare_planner_applies_the_default_rule():
     assert result["decision"] == {"render_not_lower": True, "first_try_not_lower": True,
                                   "planned_kind_not_lower": True, "repeated_x_not_higher": True,
                                   "median_seconds_rise_under_30": True, "planner_uses_tools": True,
+                                  "dropped_not_higher": True, "both_drew_charts": True,
                                   "planner_by_default": True}
 
 
@@ -147,3 +148,22 @@ def test_compare_planner_keeps_on_when_the_planner_calls_no_tool():
     on, planner = _draw_arms()
     decision = compare_planner(on, [{**r, "tool_calls": []} for r in planner])["decision"]
     assert decision["planner_uses_tools"] is False and decision["planner_by_default"] is False
+
+
+def test_compare_planner_keeps_on_when_the_planner_drops_more_charts():
+    on, planner = _draw_arms()
+    decision = compare_planner(on, [{**r, "charts": 3} for r in planner])["decision"]
+    assert decision["dropped_not_higher"] is False and decision["planner_by_default"] is False
+
+
+def test_compare_planner_keeps_on_when_an_arm_drew_nothing():
+    on, planner = _draw_arms()
+    decision = compare_planner(on, [{**r, "drawn": []} for r in planner])["decision"]
+    assert decision["both_drew_charts"] is False and decision["planner_by_default"] is False
+
+
+def test_draw_scores_count_only_dashboards_that_drew():
+    rows = [{**_row("a"), "drawn": [_drawn(repeated_x=2)], "draw_seconds": 9.0},
+            {**_row("b", directions=0, charts=0), "drawn": [], "draw_seconds": 0.0}]
+    summary = summarize(rows)
+    assert summary["repeated_x_per_dashboard"] == 2 and summary["median_draw_seconds"] == 9.0
