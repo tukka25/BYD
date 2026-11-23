@@ -59,3 +59,17 @@ def test_bounded_marks_what_it_cut():
     parsed = json.loads(text)
     assert len(text) <= RESULT_CHARS and parsed["truncated"] is True
     assert len(parsed["values"]) + parsed["omitted"]["values"] == 1000
+
+
+def test_find_columns_matches_values_on_a_large_table():
+    # 6,000 rows: the value match runs on the 2,000-row sample, and a value on half the rows is in it.
+    big = pd.DataFrame({"city": ["Oslo", "Bergen"] * 3000, "amount": range(6000)})
+    found = find_columns({"big": big}, "oslo")
+    assert found["matches"][0]["column"] == "city"
+
+
+def test_distinct_counts_the_whole_column_not_the_sample():
+    # 5,000 unique codes on 6,000 rows: the sample holds fewer, but the reported count must be the true one.
+    big = pd.DataFrame({"code": [f"c{i}" for i in range(5000)] + ["c0"] * 1000})
+    found = find_columns({"big": big}, "code")
+    assert found["matches"][0]["distinct"] == 5000

@@ -75,16 +75,32 @@ def bounded(result: dict[str, Any], limit: int = RESULT_CHARS) -> str:
 
 
 def find_columns(tables: dict[str, pd.DataFrame], query: str, limit: int = 10) -> dict[str, Any]:
-    """Columns whose name or common values match the query, across every table."""
+    """Columns whose name or common values match the query, across every table.
+
+    Values are matched on the same 2,000-row sample the planner's profile reads, so a call stays fast on large tables.
+    """
+    from itertools import islice
+
+    from app.services.agents.architect import spread_sample
+
     wanted = _tokens(query)
     if not wanted:
         return {"fact": "Give a word to search for, such as 'country' or 'revenue'.", "matches": [], "total": 0}
+    kinds: dict[tuple[str, str], str] = {}
+
+    def kind_of(table: str, column: Any) -> str:
+        key = (table, str(column))
+        if key not in kinds:
+            kinds[key] = _kind(tables[table][column])
+        return kinds[key]
+
     found = []
     for table, frame in tables.items():
+        sample = spread_sample(frame, KIND_SAMPLE)
         for column in frame.columns:
             names = _tokens(column)
             score = sum(1 for w in wanted if any(n.startswith(w) or w.startswith(n) for n in names))
-            top = set(frame[column].dropna().astype(str).str.lower().value_counts().head(MAX_ITEMS).index)
+            top = set(sample[column].dropna().astype(str).str.lower().value_counts().head(MAX_ITEMS).index)
             score += sum(1 for w in wanted if w in top)
             if score:
                 found.append((score, table, str(column)))
@@ -92,7 +108,7 @@ def find_columns(tables: dict[str, pd.DataFrame], query: str, limit: int = 10) -
     shown = []
     for _, table, column in found[: min(limit, MAX_ITEMS)]:
         series = tables[table][column]
-        shown.append({"table": table, "column": column, "kind": _kind(series),
+        shown.append({"table": table, "column": column, "kind": kind_of(table, column),
                       "distinct": int(series.nunique()),
                       "examples": [_short(v) for v in series.dropna().unique()[:3]]})
     if shown:
@@ -100,7 +116,8 @@ def find_columns(tables: dict[str, pd.DataFrame], query: str, limit: int = 10) -
         more = f" ({len(found)} in all)" if len(found) > len(shown) else ""
         fact = f"Columns matching '{query}': {names}{more}"
     else:
-        measures = [f"{t}.{c}" for t, f in tables.items() for c in f.columns if _kind(f[c]) == "number"][:6]
+        measures = list(islice(
+            (f"{t}.{c}" for t, f in tables.items() for c in f.columns if kind_of(t, c) == "number"), 6))
         fact = f"No column matches '{query}'." + (f" Number columns: {', '.join(measures)}." if measures else "")
     return {"fact": fact, "matches": shown, "total": len(found)}
 
