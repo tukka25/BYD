@@ -182,6 +182,9 @@ never appears inside a committed surface.
   2px pine ring. Label 13px semibold ink above, hint 12px muted below.
 - **EmptyState** — washed icon tile, 18px heading, muted body capped at
   `max-w-sm`, one action.
+- **KindMenu** (`components/kind-menu.tsx`): the "/" menu. A listbox anchored to its field (above the ask bar, below the brief), filtered as you type; up/down move, Enter or Tab pick, Esc closes. Focus stays in the field and the highlighted option goes through `aria-activedescendant`. Icons label kinds here only.
+- **KindChip**: a pine chip with the kind's icon and a remove button; a picked kind always shows as one.
+- **ChartKindsPanel** (`components/chart-kinds-panel.tsx`): a 380px right-side panel over the fixed list of kinds in `lib/chart-kinds.ts`. Each row is a static thumbnail of a chart the model drew (`public/chart-kinds/examples.json`), the kind's name, what it is best for and what it needs. A kind missing from that file says "No example yet"; nothing stands in. While the file loads, each thumbnail is a `.generating` skeleton. If it does not load, one coral line (`bg-coral-wash`, `text-coral-ink`) says "Could not load the examples" with the reason, in place of the thumbnails, so a failed load never reads as "No example yet".
 
 **Icons** are lucide-react at **`strokeWidth={2.25}`**, everywhere. One
 exception, deliberate: the 13px tick inside a filled checkbox (3 — it
