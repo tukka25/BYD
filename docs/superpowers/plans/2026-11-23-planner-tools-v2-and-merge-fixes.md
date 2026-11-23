@@ -101,7 +101,7 @@ The sums below were measured by applying every task in a scratch copy of the rep
 | Task 7 | +6 (164 or 162) | 81 | 8 |
 | Task 8 | +6 (170 or 168) | 81 | 8 |
 | Task 9 | +13 (183 or 181) | 81 | 8 |
-| Task 10 | unchanged | 86 | 8 |
+| Task 10 | unchanged | 89 | 8 |
 
 ---
 
@@ -3705,7 +3705,7 @@ The user's goal is that the model decides what to look at. This task measures wh
 - Produces:
   - `draw_first(specs, source, chartist, data_dir, n, run=None) -> list[dict]`. Each dict has `chart`, `rendered`, `kind_ok`, `repairs`, `repeated_x`, `error` and `seconds`.
   - `summarize(rows)`. When rows carry `drawn`, it adds `charts_drawn`, `render_rate`, `planned_kind_rate` (of the rendered charts, as `measure_planning.py`), `repairs_per_chart`, `repeated_x_per_dashboard` and `median_draw_seconds`. Rows without `drawn` give exactly the old keys.
-  - `compare_planner(on_rows, planner_rows) -> dict`, with keys `paired_rows`, `on`, `planner`, `first_try`, `median_seconds_delta` and `decision`. `decision` holds `render_not_lower`, `first_try_not_lower`, `planned_kind_not_lower`, `repeated_x_not_higher`, `median_seconds_rise_under_30`, `planner_uses_tools` and `planner_by_default`. `planner_uses_tools` (controller, 2026-11-23) is true only when the planner arm made at least one tool call per dashboard on average above zero: a planner arm that calls no tool is the `on` flow minus the explorer, and must never become the default.
+  - `compare_planner(on_rows, planner_rows) -> dict`, with keys `paired_rows`, `on`, `planner`, `first_try`, `median_seconds_delta` and `decision`. `decision` holds `render_not_lower`, `first_try_not_lower`, `planned_kind_not_lower`, `repeated_x_not_higher`, `median_seconds_rise_under_30`, `planner_uses_tools`, `dropped_not_higher`, `both_drew_charts` and `planner_by_default`. After the Task 10 review (fix round 1): `dropped_not_higher` compares charts dropped per dashboard, so an arm that plans fewer charts is not rewarded by rates over drawn charts; `both_drew_charts` makes the draw checks count only when both arms drew charts; `repeated_x_per_dashboard` and `median_draw_seconds` are taken over the dashboards that drew at least one chart. `planner_uses_tools` (controller, 2026-11-23) is true only when the planner arm made at least one tool call per dashboard on average above zero: a planner arm that calls no tool is the `on` flow minus the explorer, and must never become the default.
   - CLI: `--tools {on,off,planner}`, `--draw N` and `--compare-planner`. A `--draw` run writes files labelled `tools-<arm>-draw<N>`, so the committed `tools-on`/`tools-off` rows, which already hold these 40 ids, are never resumed into. `compare` and its decision keys are unchanged.
 
 **Who does what.** An implementer does Steps 1-8 and stops after Step 8. Step 6 reads `backend/uploads/spotify_songs.csv`, which exists on this machine; download it only if it is missing. The controller runs Steps 9-14: they need Task 9's probe (its Step 13), the model server and the two background runs.
@@ -4087,7 +4087,7 @@ Summary of the changes against the old file:
 - [ ] **Step 4: Run the finetune suite**
 
 Run: `cd chartist-finetune && ../backend/.venv/bin/python -m pytest -q tests`
-Expected: 86 passed (81 + 5).
+Expected: 89 passed (81 + 8, with the Task 10 review's fix round).
 
 - [ ] **Step 5: Write the speed script** (`backend/scripts/time_planner_tools.py`)
 
@@ -4267,7 +4267,7 @@ Insert these bullets directly after the line that starts with `` - `PLANNER_TOOL
   - repairs per chart <x> against <y>;
   - median planning seconds <x> against <y>;
   - tool calls per dashboard <x> against <y>.
-- Default: `<on|planner>`, because <the failing keys | all six checks pass>.
+- Default: `<on|planner>`, because <the failing keys | all eight checks pass>.
 - Server probe (`backend/scripts/probe_planner_tools.py`): the planner offered its tools called <names | none>; `plans` arrived as <list | str>; a plain call after tool turns <answered with the plan JSON | raised, so planning answers again without the tool turns>.
 - Tool speed, median of 5 calls on an idle machine (`backend/scripts/time_planner_tools.py`), on 168 rows, 32,833 rows and 50,000 × 120: preview_chart <a>/<b>/<c> ms, row_grain <...>, inspect_column <...>, relationship <...>. find_columns <...> is not flat: on Spotify it parses dates while testing each matched text column's kind, about 30 ms each; on the wide table it scans every column's 2,000-row sample, about 1 ms per column.
 ```
@@ -4280,7 +4280,7 @@ git commit -m "data(planning): planner vs on on 40 frozen rows, 3 charts drawn e
 
 render: on X% -> planner Y%; first try: X% -> Y%; planned kind: X% -> Y%;
 lines drawn back and forth per dashboard: X -> Y; median planning s: X -> Y.
-Default: on|planner, because <the failing keys | all six checks pass>.
+Default: on|planner, because <the failing keys | all eight checks pass>.
 
 Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>"
 # Before running: put the measured numbers in place of every X and Y and the
@@ -4376,7 +4376,7 @@ Run: `cd backend && .venv/bin/python -m pytest -q tests`
 Expected: 183 tests with Task 4's fix (181 without); the only failures are the 3 known ones in `test_chartist_contract.py`.
 
 Run: `cd chartist-finetune && ../backend/.venv/bin/python -m pytest -q tests`
-Expected: 86 passed.
+Expected: 89 passed.
 
 Run: `cd byd-web && npm test && npx tsc --noEmit -p . && npx eslint lib/kind-notice.ts lib/blocks.ts components/report-canvas.tsx tests/kind-notice.test.mts`
 Expected: `pass 8`, and no output from tsc or eslint.
