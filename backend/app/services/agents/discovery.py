@@ -50,6 +50,29 @@ class Findings:
         return "\n".join(lines)
 
 
+def run_tools(bound: Any, messages: list, toolbox: ToolBox, compact: bool = False) -> Generator[Probe, None, Any]:
+    """The tool loop, shared by the explorer and the planner: the model calls
+    tools until it answers without one or the budget is used. Each turn is
+    appended to `messages`; every call is charged, and a call past the budget
+    gets an error result instead. Returns the model's last reply (None when the
+    budget was used before it was asked). A failed model call raises."""
+    reply = None
+    while not toolbox.exhausted:
+        reply = bound.invoke(messages)
+        requested = list(getattr(reply, "tool_calls", None) or [])
+        if not requested:
+            return reply
+        messages.append(reply)
+        for call in requested:
+            name, args, call_id = str(call.get("name", "")), dict(call.get("args") or {}), call.get("id") or ""
+            if toolbox.exhausted:
+                messages.append(ToolMessage(content='{"error":"tool budget used up"}', tool_call_id=call_id))
+                continue
+            yield Probe(name, args)
+            messages.append(ToolMessage(content=toolbox.call(name, args, compact=compact), tool_call_id=call_id))
+    return reply
+
+
 def discover(llm: Any, request: str, profiles: list[TableProfile], toolbox: ToolBox) -> Generator[Probe, None, Findings]:
     """Let the model call tools, at most toolbox.max_calls times; return what it found."""
     try:
@@ -62,23 +85,10 @@ def discover(llm: Any, request: str, profiles: list[TableProfile], toolbox: Tool
         HumanMessage(content=EXPLORER_USER_TEMPLATE.format(
             request=(request or "").strip() or NO_REQUEST, profiles=render_profiles(profiles))),
     ]
-    while not toolbox.exhausted:
-        try:
-            reply = bound.invoke(messages)
-        except Exception as exc:  # noqa: BLE001 - a failed step never fails the build
-            logger.warning("[discovery] model call failed: %s", exc)
-            break
-        requested = list(getattr(reply, "tool_calls", None) or [])
-        if not requested:
-            break
-        messages.append(reply)
-        for call in requested:
-            name, args, call_id = str(call.get("name", "")), dict(call.get("args") or {}), call.get("id") or ""
-            if toolbox.exhausted:
-                messages.append(ToolMessage(content='{"error":"tool budget used up"}', tool_call_id=call_id))
-                continue
-            yield Probe(name, args)
-            messages.append(ToolMessage(content=toolbox.call(name, args), tool_call_id=call_id))
+    try:
+        yield from run_tools(bound, messages, toolbox)
+    except Exception as exc:  # noqa: BLE001 - a failed step never fails the build
+        logger.warning("[discovery] model call failed: %s", exc)
     findings = Findings(facts=toolbox.facts(), calls=list(toolbox.calls))
     logger.info("[discovery] %d tool call(s): %s", len(findings.calls),
                 "; ".join(f"{c.name}({c.args})" for c in findings.calls))

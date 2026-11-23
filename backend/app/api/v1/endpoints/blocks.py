@@ -409,6 +409,18 @@ def save_layout(
     return [_to_response(b) for b in sorted(blocks.values(), key=lambda b: (b.y, b.x))]
 
 
+# "on": an explorer step checks facts first; "planner": the planner holds the
+# tools itself; "off": no tools and no data check. See config.PLANNER_TOOLS.
+PLANNER_TOOLS_MODES = ("on", "planner", "off")
+
+
+def _planner_tools_mode() -> str:
+    mode = (settings.PLANNER_TOOLS or "off").strip().lower()
+    if mode not in PLANNER_TOOLS_MODES:
+        raise HTTPException(status_code=500, detail=f"PLANNER_TOOLS must be 'on', 'planner' or 'off', got {mode!r}")
+    return mode
+
+
 def _sse(event: str, data: Dict[str, Any]) -> str:
     return f"event: {event}\ndata: {json.dumps(data)}\n\n"
 
@@ -458,6 +470,7 @@ async def generate_whole_dashboard(
         raise HTTPException(
             status_code=500, detail=f"DASHBOARD_PLANNER must be 'ai' or 'rules', got {mode!r}"
         )
+    _planner_tools_mode()  # a bad setting is a 500 before anything is recorded
     memory = _report_memory(db, report.id)  # before this request is recorded: it is the brief, not history
     _record_request(db, report, current_user, "dashboard", brief)
     kinds = list(payload.chart_kinds) if payload else []
@@ -469,7 +482,7 @@ def _ai_dashboard(report, sources, brief, current_user, db, memory: str = "", ch
     both against the real tables, and the chartist draws each chart from its plan
     (agents/dashboard_flow.py). Nothing here reads a column name."""
     base_row = _next_row(db, report.id)
-    tools_on = (settings.PLANNER_TOOLS or "off").strip().lower() == "on"
+    mode = _planner_tools_mode()
     flow = build_dashboard(
         brief,
         sources,
@@ -478,9 +491,10 @@ def _ai_dashboard(report, sources, brief, current_user, db, memory: str = "", ch
         get_llm("spec_planner"),
         _agents()[2],
         top=base_row,
-        explorer_llm=get_llm("explorer") if tools_on else None,
+        explorer_llm=get_llm("explorer") if mode == "on" else None,
         memory=memory,
         required_kinds=tuple(chart_kinds or ()),
+        planner_tools=mode == "planner",
     )
 
     async def events():

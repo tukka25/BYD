@@ -51,11 +51,14 @@ class Settings(BaseSettings):
     # by code (agents/dashboard_flow.py). "rules": the old name-based architect,
     # kept only as a switch to roll back to.
     DASHBOARD_PLANNER: str = "ai"
-    # "on": before a dashboard is planned, the model checks facts about the data
-    # with bounded tools (agents/data_tools.py, agents/discovery.py) and every
-    # final chart plan is checked against the real data. "on" by the no-harm rule
-    # on the first 40 frozen planning rows (chartist-finetune/measure_planning_tools.py,
-    # AGENTS.md); "off" rolls back.
+    # "on": before a dashboard is planned, an explorer call checks facts about the
+    # data with bounded tools (agents/data_tools.py, agents/discovery.py), and
+    # every final chart plan is checked against the real data. "planner": no
+    # explorer; the planner itself may call preview_chart, row_grain,
+    # inspect_column, find_columns and relationship (at most 3 calls) before its
+    # JSON, and the same data check runs. "off": neither. "on" by the no-harm
+    # rule on the first 40 frozen planning rows (chartist-finetune/measure_planning_tools.py,
+    # AGENTS.md); docker compose passes it through as ${PLANNER_TOOLS:-on}.
     PLANNER_TOOLS: str = "on"
 
     OLLAMA_BASE_URL: str = "http://localhost:11434"

@@ -64,6 +64,8 @@ services:
       OLLAMA_MODEL: ${OLLAMA_MODEL:-qwen3.5:4b}
       OLLAMA_TIMEOUT_SECONDS: 9000
       WORKFLOW_TIMEOUT_SECONDS: ${WORKFLOW_TIMEOUT_SECONDS:-0}
+      # "on" (explorer step), "planner" (the planner holds the tools) or "off".
+      PLANNER_TOOLS: ${PLANNER_TOOLS:-on}
 
       # Both default to the placeholders committed in this repo, which are
       # public. `make secrets` prints fresh ones; put them in .env.

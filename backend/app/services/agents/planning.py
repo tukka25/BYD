@@ -19,15 +19,17 @@ import logging
 from dataclasses import dataclass, field
 from typing import Any, Callable, Generator
 
-from langchain_core.messages import AIMessage, HumanMessage, SystemMessage
+from langchain_core.messages import AIMessage, HumanMessage, SystemMessage, ToolMessage
 
 from app.services.agents.chart_kinds import include_kinds
+from app.services.agents.discovery import Probe, run_tools
 from app.services.agents.planning_contract import (
     ANALYST_SYSTEM_PROMPT,
     ANALYST_USER_TEMPLATE,
     FIX_PROMPT,
     NO_REQUEST,
     PLANNER_SYSTEM_PROMPT,
+    PLANNER_TOOLS_NOTE,
     PLANNER_USER_TEMPLATE,
     check_directions,
     check_specs,
@@ -44,6 +46,9 @@ MAX_ATTEMPTS = 3
 Check = Callable[[Any, dict[str, dict[str, str]]], tuple[list[dict], list[str]]]
 # How two checked attempts compare: the one with the larger key is kept.
 Rank = Callable[[list[dict], list[str]], tuple]
+# How one try is answered when it is more than one model call (the planner with
+# tools): given the messages and the try number, yields tool calls, returns the reply text.
+Ask = Callable[[list, int], Generator[Probe, None, str]]
 
 
 def by_size(items: list[dict], errors: list[str]) -> tuple:
@@ -86,8 +91,10 @@ def run_checked(
     label: str = "planning",
     max_attempts: int = MAX_ATTEMPTS,
     rank: Rank = by_size,
-) -> Generator[Retry, None, PlanStep]:
-    """Call, check, and send problems back; yields a Retry before each retry, returns the PlanStep.
+    ask: Ask | None = None,
+) -> Generator[Retry | Probe, None, PlanStep]:
+    """Call, check, and send problems back; yields a Retry before each retry (and
+    a Probe for each tool call, when `ask` makes them), returns the PlanStep.
     The attempt kept is the one `rank` puts highest."""
     messages: list = [SystemMessage(content=system), HumanMessage(content=user)]
     best_items: list[dict] = []
@@ -97,7 +104,7 @@ def run_checked(
     for attempt in range(1, max_attempts + 1):
         attempts = attempt
         try:
-            raw = _text(llm.invoke(messages))
+            raw = _text(llm.invoke(messages)) if ask is None else (yield from ask(messages, attempt))
         except Exception as exc:  # noqa: BLE001 - a dead model is an error, not a 500
             logger.warning("[planning] model call failed: %s", exc)
             if not best_items:
@@ -123,7 +130,7 @@ def run_checked(
     return PlanStep(best_items, best_errors, attempts, replies)
 
 
-def finish(steps: Generator[Retry, None, PlanStep]) -> PlanStep:
+def finish(steps: Generator[Retry | Probe, None, PlanStep]) -> PlanStep:
     """Run a checked call to the end without announcing its retries."""
     while True:
         try:
@@ -150,6 +157,44 @@ def propose_directions(
     return finish(propose_directions_steps(llm, request, profiles, facts, memory, links))
 
 
+def _tool_asker(llm: Any, toolbox: Any) -> Ask | None:
+    """How the planner answers when it holds the tools. On its first try it may
+    call them (at most toolbox.max_calls, each result its compact fact line);
+    when it stops, that reply is its answer, and when the budget runs out the
+    plain model answers. A retry is a plain call, as the planner was trained.
+    Tools that fail mean planning without them, never a failed build."""
+    try:
+        bound = llm.bind_tools(toolbox.specs)
+    except Exception as exc:  # noqa: BLE001 - no tools on this backend: plan without them
+        logger.warning("[planning] planner tools unavailable, planning without them: %s", exc)
+        return None
+
+    def answer(messages: list) -> Any:
+        """The plain model's reply. A server that will not take tool turns without
+        tools offered gets the same messages without them."""
+        try:
+            return llm.invoke(messages)
+        except Exception as exc:  # noqa: BLE001 - retried once below, without the tool turns
+            plain = [m for m in messages if not isinstance(m, ToolMessage) and not getattr(m, "tool_calls", None)]
+            if len(plain) == len(messages):
+                raise
+            logger.warning("[planning] answering with the tool turns failed, answering without them: %s", exc)
+            return llm.invoke(plain)
+
+    def ask(messages: list, attempt: int) -> Generator[Probe, None, str]:
+        reply = None
+        if attempt == 1:
+            try:
+                reply = yield from run_tools(bound, messages, toolbox, compact=True)
+            except Exception as exc:  # noqa: BLE001 - the tool step failed: answer without it
+                logger.warning("[planning] planner tool step failed, planning without it: %s", exc)
+        if reply is None or getattr(reply, "tool_calls", None):
+            reply = answer(messages)
+        return _text(reply)
+
+    return ask
+
+
 def plan_charts_steps(
     llm: Any,
     directions: list[dict],
@@ -158,13 +203,15 @@ def plan_charts_steps(
     validate: Callable[[dict], list[str]] | None = None,
     links: str = "",
     required_kinds: tuple[str, ...] = (),
-) -> Generator[Retry, None, PlanStep]:
+    toolbox: Any = None,
+) -> Generator[Retry | Probe, None, PlanStep]:
     kinds = tuple(required_kinds)
+    ask = _tool_asker(llm, toolbox) if toolbox is not None else None
     user = with_context(
         PLANNER_USER_TEMPLATE.format(profiles=render_profiles(profiles), directions=render_directions(directions)),
         facts,
         links=links,
-        notes=(include_kinds(kinds),),
+        notes=(include_kinds(kinds), PLANNER_TOOLS_NOTE if ask is not None else ""),
     )
 
     def check(payload: Any, tables: dict[str, dict[str, str]]) -> tuple[list[dict], list[str]]:
@@ -175,7 +222,8 @@ def plan_charts_steps(
         present = sum(1 for kind in kinds if any(item["chart"] == kind for item in items))
         return (present, *by_size(items, errors))
 
-    return run_checked(llm, PLANNER_SYSTEM_PROMPT, user, check, columns_by_table(profiles), "planner", rank=rank)
+    return run_checked(llm, PLANNER_SYSTEM_PROMPT, user, check, columns_by_table(profiles), "planner",
+                       rank=rank, ask=ask)
 
 
 def plan_charts(
@@ -186,5 +234,6 @@ def plan_charts(
     validate: Callable[[dict], list[str]] | None = None,
     links: str = "",
     required_kinds: tuple[str, ...] = (),
+    toolbox: Any = None,
 ) -> PlanStep:
-    return finish(plan_charts_steps(llm, directions, profiles, facts, validate, links, required_kinds))
+    return finish(plan_charts_steps(llm, directions, profiles, facts, validate, links, required_kinds, toolbox))

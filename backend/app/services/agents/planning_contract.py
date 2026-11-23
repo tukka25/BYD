@@ -133,6 +133,15 @@ Check the facts this request depends on before anyone plans charts."""
 
 FACTS_HEADER = "Facts checked on the full data:"
 
+# Appended to the planner's message when it holds the tools itself
+# (PLANNER_TOOLS=planner). The trained system prompt stays as it is; this asks
+# in words, because the adapter calls tools only when asked (measured 2026-11-23).
+PLANNER_TOOLS_NOTE = """Before you reply, you may check your draft plans on the full data, with at most 3 tool calls, one at a time:
+- preview_chart: what up to 7 draft plans would draw (points per line and whether x repeats, bars, slices or cells, the value range, and any problem the checks would raise),
+- row_grain: which columns identify one row of a table,
+- inspect_column, find_columns, relationship: facts about columns.
+Then reply with the JSON only."""
+
 
 def with_context(text: str, facts: str = "", memory: str = "", links: str = "",
                  notes: tuple[str, ...] = ()) -> str:

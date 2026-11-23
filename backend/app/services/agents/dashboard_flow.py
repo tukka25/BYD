@@ -14,12 +14,12 @@ from pathlib import Path
 from typing import Any, Generator, Iterator
 
 from app.services.agents.chart_kinds import include_kinds
-from app.services.agents.data_tools import ToolBox
+from app.services.agents.data_tools import PLANNER_TOOL_NAMES, ToolBox
 from app.services.agents.discovery import Findings, Probe, discover
 from app.services.agents.layout import INTRO_HEIGHT, intro_html, lay_out
 from app.services.agents.links import render_links
 from app.services.agents.planning import PlanStep, Retry, plan_charts_steps, propose_directions_steps
-from app.services.agents.profiler import TableProfile, profile_table
+from app.services.agents.profiler import TableProfile, columns_by_table, profile_table
 from app.services.agents.spec_runner import run_spec
 
 logger = logging.getLogger(__name__)
@@ -82,14 +82,18 @@ def profile_sources(sources: list[dict], data_dir: str, brief: str = "") -> list
     return entries
 
 
-def _with_retry_status(steps: Generator[Retry, None, PlanStep], label: str) -> Generator[Event, None, PlanStep]:
-    """Run one checked planning call, turning each retry into a status line; returns its PlanStep."""
+def _with_retry_status(steps: Generator[Retry | Probe, None, PlanStep], label: str) -> Generator[Event, None, PlanStep]:
+    """Run one checked planning call, turning each retry, and each tool call the
+    planner makes, into a status line; returns its PlanStep."""
     while True:
         try:
-            retry = next(steps)
+            step = next(steps)
         except StopIteration as done:
             return done.value
-        yield Event("status", {"label": f"{label}, try {retry.attempt} of {retry.of}"})
+        if isinstance(step, Probe):
+            yield Event("status", {"label": f"Checking the data: {_probe_words(step)}"})
+        else:
+            yield Event("status", {"label": f"{label}, try {step.attempt} of {step.of}"})
 
 
 def _probe_words(probe: Probe) -> str:
@@ -98,6 +102,12 @@ def _probe_words(probe: Probe) -> str:
         return f"looking for '{args.get('query', '')}'"
     if probe.name == "relationship":
         return f"{args.get('a', '')} and {args.get('b', '')}"
+    if probe.name == "row_grain":
+        return f"what one row of {args.get('table', 'the table')} is"
+    if probe.name == "preview_chart":
+        plans = args.get("plans")
+        count = len(plans) if isinstance(plans, list) else 0
+        return f"previewing {count} draft plan{'' if count == 1 else 's'}"
     return str(args.get("column") or args.get("x") or probe.name)
 
 
@@ -122,6 +132,7 @@ def build_dashboard(
     explorer_llm: Any = None,
     memory: str = "",
     required_kinds: tuple[str, ...] = (),
+    planner_tools: bool = False,
 ) -> Iterator[Event]:
     yield Event("status", {"label": "Reading your data"})
     tables = profile_sources(sources, data_dir, brief)
@@ -132,8 +143,13 @@ def build_dashboard(
     links = render_links([entry.source["join"] for entry in tables if entry.source.get("join")])
     request = f"{brief}\n{include_kinds(required_kinds)}".strip() if required_kinds else brief
 
-    facts, validate = "", None
-    if explorer_llm is not None:
+    facts, validate, planner_box = "", None, None
+    if planner_tools:
+        # PLANNER_TOOLS=planner: the planner holds the tools itself, so there is no explorer step.
+        planner_box = ToolBox({entry.label: entry.source for entry in tables}, data_dir,
+                              tools=PLANNER_TOOL_NAMES, kinds=columns_by_table(profiles))
+        validate = planner_box.validate_spec
+    elif explorer_llm is not None:
         toolbox = ToolBox({entry.label: entry.source for entry in tables}, data_dir)
         yield Event("status", {"label": "Checking the data"})
         findings = yield from _with_probe_status(discover(explorer_llm, request, profiles, toolbox))
@@ -153,8 +169,11 @@ def build_dashboard(
     yield Event("status", {"label": planning})
     charts = yield from _with_retry_status(
         plan_charts_steps(planner_llm, directions.items, profiles, facts, validate, links=links,
-                           required_kinds=required_kinds), planning
+                           required_kinds=required_kinds, toolbox=planner_box), planning
     )
+    if planner_box is not None:
+        logger.info("[dashboard] planner tool calls (%d): %s", len(planner_box.calls),
+                    "; ".join(f"{call.name}({call.args})" for call in planner_box.calls))
     if not charts.items:
         yield Event("error", {"detail": "Could not plan charts for this data: " + "; ".join(charts.errors[:3])})
         return

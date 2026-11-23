@@ -4,6 +4,9 @@ import asyncio
 import json
 from types import SimpleNamespace
 
+import pytest
+from fastapi import HTTPException
+
 from app.api.v1.endpoints import blocks
 from app.api.v1.endpoints.blocks import DashboardBriefRequest
 from app.services.agents.dashboard_flow import Event
@@ -75,3 +78,28 @@ def test_picked_kinds_reach_the_build_and_a_missing_one_reaches_the_client(monke
     assert seen["required_kinds"] == ("pie",)
     assert [name for name, _ in events] == ["plan", "block", "done"]
     assert events[0][1]["missing_kinds"] == ["pie"]
+
+
+def test_planner_mode_gives_the_planner_the_tools_and_no_explorer(monkeypatch):
+    seen = {}
+    _wire(monkeypatch, seen)
+    monkeypatch.setattr(blocks.settings, "PLANNER_TOOLS", "planner")
+    _start(DashboardBriefRequest(brief="bounce rate by hour"))
+    assert seen["planner_tools"] is True and seen["explorer_llm"] is None
+
+
+def test_on_mode_keeps_the_explorer(monkeypatch):
+    seen = {}
+    _wire(monkeypatch, seen)
+    monkeypatch.setattr(blocks.settings, "PLANNER_TOOLS", "on")
+    _start(DashboardBriefRequest(brief=""))
+    assert seen["planner_tools"] is False and seen["explorer_llm"] == "explorer"
+
+
+def test_an_unknown_tools_mode_is_refused_before_anything_runs(monkeypatch):
+    seen = {}
+    _wire(monkeypatch, seen)
+    monkeypatch.setattr(blocks.settings, "PLANNER_TOOLS", "sometimes")
+    with pytest.raises(HTTPException) as refused:
+        _start(DashboardBriefRequest(brief=""))
+    assert refused.value.status_code == 500 and "PLANNER_TOOLS" in refused.value.detail and seen == {}
