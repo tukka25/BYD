@@ -5,7 +5,7 @@ import pandas as pd
 
 from app.services.agents import architect
 from app.services.agents.data_tools import (EXPLORER_TOOL_NAMES, MAX_PREVIEW_PLANS, PLANNER_TOOL_NAMES,
-                                            RESULT_CHARS, ToolBox, bounded, chart_shape, find_columns,
+                                            RESULT_CHARS, ToolBox, _fit_lines, bounded, chart_shape, find_columns,
                                             inspect_column, preview, relationship, repeated_x, row_grain)
 from app.services.agents.profiler import profile_table
 
@@ -277,6 +277,14 @@ def test_seven_long_plans_keep_a_line_each_within_the_cap():
     assert len(reply) <= RESULT_CHARS and len(lines) == MAX_PREVIEW_PLANS + 1
     assert all(line.endswith("…") for line in lines[:MAX_PREVIEW_PLANS])
     assert lines[-1] == "(only the first 7 of 9 plans were previewed)"
+
+
+def test_a_cut_line_keeps_what_the_planner_acts_on():
+    lines = ["1. line y by x: " + "s" * 300 + "; problem: set agg", "2. bar y by x: 7 bars; ok"] * 4
+    text = _fit_lines(lines, limit=400)
+    assert len(text) <= 400 and len(text.splitlines()) == 8
+    assert all(line.endswith("; problem: set agg") or line == "2. bar y by x: 7 bars; ok"
+               for line in text.splitlines())
 
 
 def test_compact_replies_are_the_fact_line_and_errors_stay_json():

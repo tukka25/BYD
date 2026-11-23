@@ -90,13 +90,40 @@ def _capped(text: str, limit: int = RESULT_CHARS) -> str:
 
 
 def _fit_lines(lines: list[str], limit: int = RESULT_CHARS - 40) -> str:
-    """The lines joined, each cut to an equal share when together they would
-    pass `limit`, so every line stays; a cut line ends with an ellipsis."""
+    """The lines joined; when together they would pass `limit`, every line
+    stays and only the long ones are cut. Lines that fit an equal share stay
+    whole, and the room they leave goes to the longer lines. A cut line keeps
+    its head (up to the first ": ") and its verdict ("; ok" or "; problem: ...",
+    what the planner acts on): the shape text between them is cut first, then
+    the verdict's end. Each cut is marked with an ellipsis."""
     text = "\n".join(lines)
     if len(text) <= limit:
         return text
-    share = max(40, limit // len(lines) - 1)
-    return "\n".join(line if len(line) <= share else line[: share - 1] + "…" for line in lines)
+    room = limit - (len(lines) - 1)
+    whole: set[int] = set()
+    left = sorted(range(len(lines)), key=lambda i: len(lines[i]))
+    while left and len(lines[left[0]]) <= max(40, room // len(left)):
+        whole.add(left[0])
+        room -= len(lines[left.pop(0)])
+    share = max(40, room // len(left)) if left else 0
+    return "\n".join(line if i in whole else _cut_line(line, share) for i, line in enumerate(lines))
+
+
+def _cut_line(line: str, width: int) -> str:
+    """`line` cut to `width`, keeping its head and its verdict when they fit."""
+    if len(line) <= width:
+        return line
+    at = line.find("; problem: ")
+    if at < 0 and line.endswith("; ok"):
+        at = len(line) - len("; ok")
+    colon = line.find(": ")
+    head_end = colon + 1 if colon > 0 else 0
+    if at <= head_end:
+        return line[: width - 1] + "…"
+    head, verdict = line[:head_end], line[at:]
+    if len(head) + 1 + len(verdict) <= width:
+        return line[: width - 1 - len(verdict)] + "…" + verdict
+    return (head + "…" + verdict)[: width - 1] + "…"
 
 
 def find_columns(tables: dict[str, pd.DataFrame], query: str, limit: int = 10) -> dict[str, Any]:
