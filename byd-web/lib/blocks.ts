@@ -28,12 +28,16 @@ export async function listBlocks(token: string, reportId: string): Promise<Block
 export async function generateBlock(
   token: string,
   reportId: string,
-  input: { prompt: string; dataSource?: string },
+  input: { prompt: string; dataSource?: string; chartKind?: string },
 ): Promise<Block> {
   return authorizedFetch<Block>(`/api/v1/dashboard/${reportId}/blocks/generate`, token, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ prompt: input.prompt, data_source: input.dataSource ?? null }),
+    body: JSON.stringify({
+      prompt: input.prompt,
+      data_source: input.dataSource ?? null,
+      chart_kind: input.chartKind ?? null,
+    }),
   });
 }
 
@@ -125,7 +129,7 @@ export interface DashboardProgress {
 export async function generateDashboard(
   token: string,
   reportId: string,
-  brief: string,
+  request: { brief: string; chartKinds?: string[] },
   handlers: DashboardProgress,
   signal?: AbortSignal,
 ): Promise<void> {
@@ -134,7 +138,7 @@ export async function generateDashboard(
     {
       method: "POST",
       headers: { Authorization: `Bearer ${token}`, "Content-Type": "application/json" },
-      body: JSON.stringify({ brief }),
+      body: JSON.stringify({ brief: request.brief, chart_kinds: request.chartKinds ?? [] }),
       signal,
     },
   );

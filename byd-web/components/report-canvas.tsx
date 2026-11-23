@@ -22,8 +22,10 @@ import {
   Type,
 } from "lucide-react";
 import { DotWave } from "@/components/dot-wave";
+import { KindChip, KindMenu, useKindMenu } from "@/components/kind-menu";
 import { Plot } from "@/components/plot";
 import { RichText, RichTextEditor } from "@/components/rich-text";
+import type { ChartKind } from "@/lib/chart-kinds";
 import { exportReportToPdf } from "@/lib/export-pdf";
 import { SourceDialog } from "@/components/sources";
 import { Button, Chip, EmptyState, IconButton, Panel, Segmented, inputClass } from "@/components/ui";
@@ -281,6 +283,19 @@ export function ReportCanvas({ report }: { report: Report }) {
   const [running, setRunning] = useState<number | null>(null);
   const [exporting, setExporting] = useState(false);
   const [briefOpen, setBriefOpen] = useState(false);
+  const [askKind, setAskKind] = useState<ChartKind | null>(null);
+  const [briefKinds, setBriefKinds] = useState<ChartKind[]>([]);
+  const askMenu = useKindMenu((picked, next) => {
+    setAskKind(picked);
+    setPrompt(next.text);
+    requestAnimationFrame(() => askRef.current?.setSelectionRange(next.caret, next.caret));
+  });
+  const briefMenu = useKindMenu((picked, next) => {
+    setBriefKinds((current) =>
+      current.some((k) => k.kind === picked.kind) ? current : [...current, picked].slice(0, 4),
+    );
+    setBrief(next.text);
+  });
   const [brief, setBrief] = useState("");
   const [skipped, setSkipped] = useState<string[]>([]);
   const [phase, setPhase] = useState(PHASES[0].label);
@@ -510,9 +525,10 @@ export function ReportCanvas({ report }: { report: Report }) {
     setBusy(true);
     setError(null);
     try {
-      const block = await generateBlock(token, report.id, { prompt: question });
+      const block = await generateBlock(token, report.id, { prompt: question, chartKind: askKind?.kind });
       setBlocks((current) => [...current, block]);
       setPrompt("");
+      setAskKind(null);
       askRef.current?.focus();
     } catch (err) {
       setError(err instanceof Error ? err.message : "Could not generate that chart.");
@@ -537,7 +553,7 @@ export function ReportCanvas({ report }: { report: Report }) {
     // render that started the build, where `running` is still null.
     let currentIndex = -1;
     try {
-      await generateDashboard(token, report.id, brief, {
+      await generateDashboard(token, report.id, { brief, chartKinds: briefKinds.map((k) => k.kind) }, {
         // The analyst and planner run before there is a plan to count.
         onStatus: (status) => setBuilding({ done: 0, total: 0, label: status.label }),
         onPlan: (plan) => {
@@ -563,6 +579,7 @@ export function ReportCanvas({ report }: { report: Report }) {
         },
       });
       setSaveState("saved");
+      setBriefKinds([]);
       setSavedAt(new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" }));
     } catch (err) {
       setError(err instanceof Error ? err.message : "Could not build that dashboard.");
@@ -713,22 +730,54 @@ export function ReportCanvas({ report }: { report: Report }) {
       {briefOpen && !building ? (
         <div className="shrink-0 px-5 pb-4 sm:px-8 print:hidden">
           <Panel className="flex flex-wrap items-end gap-2 p-3">
-            <label className="min-w-[14rem] flex-1">
-              <span className="mb-1.5 block text-[13px] font-semibold text-ink">
+            <div className="relative min-w-[14rem] flex-1">
+              <label htmlFor="brief-input" className="mb-1.5 block text-[13px] font-semibold text-ink">
                 What should this dashboard be about?
-              </span>
+              </label>
+              {briefKinds.length ? (
+                <div className="mb-2 flex flex-wrap gap-1.5">
+                  {briefKinds.map((k) => (
+                    <KindChip
+                      key={k.kind}
+                      kind={k}
+                      onRemove={() => setBriefKinds((current) => current.filter((c) => c.kind !== k.kind))}
+                    />
+                  ))}
+                </div>
+              ) : null}
               <input
+                id="brief-input"
                 autoFocus
                 value={brief}
-                onChange={(event) => setBrief(event.target.value)}
+                role="combobox"
+                aria-expanded={briefMenu.open}
+                aria-controls="brief-kinds"
+                aria-autocomplete="list"
+                aria-activedescendant={briefMenu.active ? `brief-kinds-${briefMenu.active.kind}` : undefined}
+                onChange={(event) => {
+                  setBrief(event.target.value);
+                  briefMenu.sync(event.target.value, event.target.selectionStart ?? event.target.value.length);
+                }}
+                onBlur={briefMenu.close}
                 onKeyDown={(event) => {
+                  if (briefMenu.keyDown(event, brief)) return;
                   if (event.key === "Enter") void buildDashboard();
                   if (event.key === "Escape") setBriefOpen(false);
                 }}
-                placeholder="e.g. churn by region — or leave empty and it plans from the data"
+                placeholder="e.g. churn by region — type / to ask for a chart kind"
                 className={inputClass}
               />
-            </label>
+              {briefMenu.open ? (
+                <KindMenu
+                  id="brief-kinds"
+                  options={briefMenu.options}
+                  active={briefMenu.active}
+                  onPick={(k) => briefMenu.pick(brief, k)}
+                  onHighlight={briefMenu.highlight}
+                  placement="below"
+                />
+              ) : null}
+            </div>
             <Button variant="primary" onClick={buildDashboard}>
               <Sparkles size={15} strokeWidth={2.25} />
               Build it
@@ -879,23 +928,52 @@ export function ReportCanvas({ report }: { report: Report }) {
               askFocused ? "ring-2 ring-pine" : "",
             ].join(" ")}
           >
-            <div className="flex items-end gap-2 p-2.5">
+            {askKind ? (
+              <div className="flex items-center gap-2 px-3 pt-2.5">
+                <KindChip kind={askKind} onRemove={() => setAskKind(null)} />
+                <span className="text-[12px] text-muted">
+                  The model will draw this as a {askKind.label.toLowerCase()}.
+                </span>
+              </div>
+            ) : null}
+            <div className="relative flex items-end gap-2 p-2.5">
+              {askMenu.open ? (
+                <KindMenu
+                  id="ask-kinds"
+                  options={askMenu.options}
+                  active={askMenu.active}
+                  onPick={(k) => askMenu.pick(prompt, k)}
+                  onHighlight={askMenu.highlight}
+                />
+              ) : null}
               <textarea
                 ref={askRef}
                 rows={1}
                 value={prompt}
                 disabled={busy}
                 aria-label="Ask for a chart"
+                role="combobox"
+                aria-expanded={askMenu.open}
+                aria-controls="ask-kinds"
+                aria-autocomplete="list"
+                aria-activedescendant={askMenu.active ? `ask-kinds-${askMenu.active.kind}` : undefined}
                 onFocus={() => setAskFocused(true)}
-                onBlur={() => setAskFocused(false)}
-                onChange={(event) => setPrompt(event.target.value)}
+                onBlur={() => {
+                  setAskFocused(false);
+                  askMenu.close();
+                }}
+                onChange={(event) => {
+                  setPrompt(event.target.value);
+                  askMenu.sync(event.target.value, event.target.selectionStart ?? event.target.value.length);
+                }}
                 onKeyDown={(event) => {
+                  if (askMenu.keyDown(event, prompt)) return;
                   if (event.key === "Enter" && !event.shiftKey) {
                     event.preventDefault();
                     void ask();
                   }
                 }}
-                placeholder="Ask for a chart…"
+                placeholder="Ask for a chart… type / to pick a chart kind"
                 className="max-h-32 min-h-11 w-full resize-none rounded-[var(--r-control)] bg-surface px-3.5 py-3 text-sm text-ink placeholder:text-muted focus:outline-none"
               />
               <Button variant="primary" onClick={ask} disabled={busy || !prompt.trim()} className="shrink-0">
