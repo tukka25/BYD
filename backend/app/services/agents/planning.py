@@ -126,20 +126,21 @@ def finish(steps: Generator[Retry, None, PlanStep]) -> PlanStep:
 
 
 def propose_directions_steps(
-    llm: Any, request: str, profiles: list[TableProfile], facts: str = "", memory: str = ""
+    llm: Any, request: str, profiles: list[TableProfile], facts: str = "", memory: str = "", links: str = ""
 ) -> Generator[Retry, None, PlanStep]:
     user = with_context(
         ANALYST_USER_TEMPLATE.format(request=(request or "").strip() or NO_REQUEST, profiles=render_profiles(profiles)),
         facts,
         memory,
+        links,
     )
     return run_checked(llm, ANALYST_SYSTEM_PROMPT, user, check_directions, columns_by_table(profiles), "analyst")
 
 
 def propose_directions(
-    llm: Any, request: str, profiles: list[TableProfile], facts: str = "", memory: str = ""
+    llm: Any, request: str, profiles: list[TableProfile], facts: str = "", memory: str = "", links: str = ""
 ) -> PlanStep:
-    return finish(propose_directions_steps(llm, request, profiles, facts, memory))
+    return finish(propose_directions_steps(llm, request, profiles, facts, memory, links))
 
 
 def plan_charts_steps(
@@ -148,10 +149,12 @@ def plan_charts_steps(
     profiles: list[TableProfile],
     facts: str = "",
     validate: Callable[[dict], list[str]] | None = None,
+    links: str = "",
 ) -> Generator[Retry, None, PlanStep]:
     user = with_context(
         PLANNER_USER_TEMPLATE.format(profiles=render_profiles(profiles), directions=render_directions(directions)),
         facts,
+        links=links,
     )
     check = check_specs if validate is None else (lambda payload, tables: check_specs(payload, tables, validate))
     return run_checked(llm, PLANNER_SYSTEM_PROMPT, user, check, columns_by_table(profiles), "planner")
@@ -163,5 +166,6 @@ def plan_charts(
     profiles: list[TableProfile],
     facts: str = "",
     validate: Callable[[dict], list[str]] | None = None,
+    links: str = "",
 ) -> PlanStep:
-    return finish(plan_charts_steps(llm, directions, profiles, facts, validate))
+    return finish(plan_charts_steps(llm, directions, profiles, facts, validate, links))

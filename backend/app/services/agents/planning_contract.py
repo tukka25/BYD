@@ -134,9 +134,12 @@ Check the facts this request depends on before anyone plans charts."""
 FACTS_HEADER = "Facts checked on the full data:"
 
 
-def with_context(text: str, facts: str = "", memory: str = "") -> str:
-    """A planning user message, with optional sections after the trained part."""
+def with_context(text: str, facts: str = "", memory: str = "", links: str = "") -> str:
+    """A planning user message, with optional sections after the trained part.
+    Links describe tables, so they come straight after them."""
     parts = [text]
+    if links:
+        parts.append(links)
     if facts:
         parts.append(f"{FACTS_HEADER}\n{facts}")
     if memory:

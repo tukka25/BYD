@@ -15,6 +15,7 @@ from typing import Any, Generator, Iterator
 from app.services.agents.data_tools import ToolBox
 from app.services.agents.discovery import Findings, Probe, discover
 from app.services.agents.layout import INTRO_HEIGHT, intro_html, lay_out
+from app.services.agents.links import render_links
 from app.services.agents.planning import PlanStep, Retry, plan_charts_steps, propose_directions_steps
 from app.services.agents.profiler import TableProfile, profile_table
 from app.services.agents.spec_runner import run_spec
@@ -125,6 +126,7 @@ def build_dashboard(
         yield Event("error", {"detail": "None of this report's sources could be read."})
         return
     profiles = [entry.profile for entry in tables]
+    links = render_links([entry.source["join"] for entry in tables if entry.source.get("join")])
 
     facts, validate = "", None
     if explorer_llm is not None:
@@ -136,7 +138,7 @@ def build_dashboard(
     choosing = "Choosing what to show"
     yield Event("status", {"label": choosing})
     directions = yield from _with_retry_status(
-        propose_directions_steps(analyst_llm, brief, profiles, facts, memory), choosing
+        propose_directions_steps(analyst_llm, brief, profiles, facts, memory, links=links), choosing
     )
     if not directions.items:
         yield Event("error", {"detail": "Could not work out what to show from this data: "
@@ -146,7 +148,7 @@ def build_dashboard(
     planning = "Planning the charts"
     yield Event("status", {"label": planning})
     charts = yield from _with_retry_status(
-        plan_charts_steps(planner_llm, directions.items, profiles, facts, validate), planning
+        plan_charts_steps(planner_llm, directions.items, profiles, facts, validate, links=links), planning
     )
     if not charts.items:
         yield Event("error", {"detail": "Could not plan charts for this data: " + "; ".join(charts.errors[:3])})
