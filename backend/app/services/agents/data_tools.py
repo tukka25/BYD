@@ -15,6 +15,7 @@ from typing import Any, Callable
 
 import pandas as pd
 
+from app.services.agents.planning_contract import check_spec
 from app.services.agents.profiler import profile_column
 
 logger = logging.getLogger(__name__)
@@ -82,6 +83,20 @@ def bounded(result: dict[str, Any], limit: int = RESULT_CHARS) -> str:
         out[key] = out[key][:keep]
         text = render()
     return text
+
+
+def _capped(text: str, limit: int = RESULT_CHARS) -> str:
+    return text if len(text) <= limit else text[: limit - 1] + "…"
+
+
+def _fit_lines(lines: list[str], limit: int = RESULT_CHARS - 40) -> str:
+    """The lines joined, each cut to an equal share when together they would
+    pass `limit`, so every line stays; a cut line ends with an ellipsis."""
+    text = "\n".join(lines)
+    if len(text) <= limit:
+        return text
+    share = max(40, limit // len(lines) - 1)
+    return "\n".join(line if len(line) <= share else line[: share - 1] + "…" for line in lines)
 
 
 def find_columns(tables: dict[str, pd.DataFrame], query: str, limit: int = 10) -> dict[str, Any]:
@@ -200,6 +215,8 @@ EXPLORER_TOOL_NAMES = ("find_columns", "inspect_column", "relationship", "previe
 GRAIN_COLUMNS = 8      # the label columns with the fewest values tried as parts of a key
 GRAIN_SIZE = 3         # the most columns a key may have
 GRAIN_CONFIRMS = 3     # candidate keys checked on the full table, one pass each
+MAX_PREVIEW_PLANS = 7  # draft plans one preview_chart call may hold
+PLANNER_TOOL_NAMES = ("preview_chart", "row_grain", "inspect_column", "find_columns", "relationship")
 
 
 def relationship(frame: pd.DataFrame, table: str, a: str, b: str) -> dict[str, Any]:
@@ -359,7 +376,7 @@ def _plan_head(spec: dict) -> str:
     """A plan in a few words: "line mean of bounceRatePct by hourOfDay"."""
     chart = str(spec.get("chart") or "")
     x, y, group = (str(spec.get(key) or "") for key in ("x", "y", "group"))
-    agg = str(spec.get("agg") or "sum")
+    agg = str(spec.get("agg") or "none")
     if agg == "count" or (not y and agg != "none"):
         measure = "row count"
     elif agg == "none":
@@ -379,7 +396,7 @@ def chart_shape(frame: pd.DataFrame, spec: dict) -> tuple[str, list[str]]:
     """
     chart = str(spec.get("chart") or "")
     x, y, group = (str(spec.get(key) or "") for key in ("x", "y", "group"))
-    agg = str(spec.get("agg") or "sum")
+    agg = str(spec.get("agg") or "none")
     head = _plan_head(spec)
     if chart == "kpi":
         if agg == "count" or not y:
@@ -440,6 +457,13 @@ def tool_specs(tables: list[str], names: tuple[str, ...] = EXPLORER_TOOL_NAMES) 
         spec("row_grain", "Which columns identify one row of a table, found from the values (for example one "
              "row per weekday and hour), so you know whether x repeats before you plan a line.",
              {"table": table}, ["table"]),
+        # Plan fields are named in words, not as a nested schema: the chat template
+        # prints every schema into the planner's prompt, and a nested one cost ~175 tokens more.
+        spec("preview_chart", "What up to 7 draft chart plans would draw on the full data, one line per plan: "
+             "points per line and whether x repeats, bars, slices or cells against the limits, the value "
+             "range, and any problem the plan check will raise. Each plan has chart, table, x, y, group, "
+             "agg, grain and top_n, as in your reply.",
+             {"plans": {"type": "array", "items": {"type": "object"}}}, ["plans"]),
     ]
     by_name = {tool["function"]["name"]: tool for tool in every}
     return [by_name[name] for name in names]
@@ -459,11 +483,13 @@ class ToolBox:
 
     def __init__(self, sources: dict[str, dict], data_dir: str, max_calls: int = MAX_CALLS,
                  loader: Callable[[dict, str], pd.DataFrame] | None = None,
-                 tools: tuple[str, ...] = EXPLORER_TOOL_NAMES):
+                 tools: tuple[str, ...] = EXPLORER_TOOL_NAMES,
+                 kinds: dict[str, dict[str, str]] | None = None):
         self.sources = sources
         self.data_dir = data_dir
         self.max_calls = max_calls
         self.tools = tools
+        self.kinds = kinds  # the profile's column kinds by table, so preview_chart runs the plan rules too
         self._loader = loader
         self._frames: dict[str, pd.DataFrame] = {}
         self.calls: list[ToolCall] = []
@@ -496,7 +522,10 @@ class ToolBox:
                 raise KeyError(f"'{column}' is not a column of '{table}'{hint}")
         return frame
 
-    def call(self, name: str, args: dict | None) -> str:
+    def call(self, name: str, args: dict | None, compact: bool = False) -> str:
+        """Run one tool and record it. The reply is the result as compact JSON or,
+        with `compact`, its fact line(s) alone: what the planner reads inside its
+        own prompt. An error is always the JSON."""
         if self.exhausted:
             return bounded({"error": f"the tool budget ({self.max_calls} calls) is used up: answer now"})
         args = dict(args or {})
@@ -509,8 +538,9 @@ class ToolBox:
             logger.warning("[tools] %s(%s) failed: %s", name, args, exc)
             result = {"error": f"{name} could not run: {exc}"}
         text = bounded(result)
-        self.calls.append(ToolCall(name, args, text, str(result.get("fact", ""))))
-        return text
+        call = ToolCall(name, args, text, str(result.get("fact", "")))
+        self.calls.append(call)
+        return _capped(call.fact) if compact and call.fact else text
 
     def _run(self, name: str, args: dict) -> dict[str, Any]:
         if name not in self.tools:
@@ -533,7 +563,48 @@ class ToolBox:
             return preview(frame, table, x, y, agg, group, int(args.get("top_n") or 0), str(args.get("grain") or ""))
         if name == "row_grain":
             return row_grain(self.frame(table), table)
+        if name == "preview_chart":
+            return self._preview_chart(args.get("plans"))
         raise ValueError(f"no tool '{name}'; tools are: {', '.join(self.tools)}")
+
+    def _preview_chart(self, plans: Any) -> dict[str, Any]:
+        """Each draft plan's shape on the full data, one line per plan, in one call."""
+        if isinstance(plans, str):  # a tool parser may hand the list over as its JSON text
+            try:
+                plans = json.loads(plans)
+            except json.JSONDecodeError:
+                pass
+        if not isinstance(plans, list) or not plans:
+            raise ValueError("give plans: a list of draft chart plans, each with chart, table, x, y, group, agg, "
+                             "grain, top_n")
+        lines = [f"{n}. {self._preview_one(plan)}" for n, plan in enumerate(plans[:MAX_PREVIEW_PLANS], 1)]
+        if len(plans) > MAX_PREVIEW_PLANS:
+            lines.append(f"(only the first {MAX_PREVIEW_PLANS} of {len(plans)} plans were previewed)")
+        return {"fact": _fit_lines(lines), "plans": min(len(plans), MAX_PREVIEW_PLANS)}
+
+    def _preview_one(self, plan: Any) -> str:
+        """One draft plan in one line: the plan rules first (when the kinds are known),
+        then chart_shape, the same function the check on the final plan runs."""
+        if not isinstance(plan, dict):
+            return "not a chart plan: give chart, table, x, y, group, agg, grain, top_n"
+        # A missing agg reads as "none", as check_spec reads it, so the preview and the check agree.
+        draft = {"title": "draft", "question": "", "x": "", "y": "", "group": "", "agg": "none", "grain": "",
+                 "sort": "", "top_n": 0, **plan}
+        try:
+            table = str(draft.get("table") or "")
+            frame = self._with(table, *(str(draft.get(key) or "") for key in ("x", "y", "group")))
+            spec = draft
+            if self.kinds is not None:
+                spec, rules = check_spec(draft, self.kinds)
+                if spec is None:
+                    return f"{_plan_head(draft)}: problem: {'; '.join(rules)}"
+            shape, problems = chart_shape(frame, spec)
+        except (KeyError, ValueError, TypeError) as exc:
+            return f"{_plan_head(draft)}: problem: {exc.args[0] if exc.args else exc}"
+        except Exception as exc:  # noqa: BLE001 - one draft that cannot be previewed must not cost the others
+            logger.warning("[tools] could not preview %s: %s", draft, exc)
+            return f"{_plan_head(draft)}: problem: it could not be previewed ({exc})"
+        return f"{shape}; problem: {'; '.join(problems)}" if problems else f"{shape}; ok"
 
     def facts(self) -> list[str]:
         return [call.fact for call in self.calls if call.fact]

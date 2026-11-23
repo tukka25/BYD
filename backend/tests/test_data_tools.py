@@ -4,9 +4,10 @@ import json
 import pandas as pd
 
 from app.services.agents import architect
-from app.services.agents.data_tools import (EXPLORER_TOOL_NAMES, RESULT_CHARS, ToolBox, bounded, chart_shape,
-                                            find_columns, inspect_column, preview, relationship, repeated_x,
-                                            row_grain)
+from app.services.agents.data_tools import (EXPLORER_TOOL_NAMES, MAX_PREVIEW_PLANS, PLANNER_TOOL_NAMES,
+                                            RESULT_CHARS, ToolBox, bounded, chart_shape, find_columns,
+                                            inspect_column, preview, relationship, repeated_x, row_grain)
+from app.services.agents.profiler import profile_table
 
 DAYS = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
 TRACKS = pd.DataFrame({
@@ -224,3 +225,68 @@ def test_row_grain_is_a_tool_only_where_it_is_offered():
                       tools=EXPLORER_TOOL_NAMES + ("row_grain",))
     assert json.loads(offered.call("row_grain", {"table": "web"}))["key"] == ["weekday", "hourOfDay"]
     assert "no tool 'row_grain'" in json.loads(toolbox(web=GRID).call("row_grain", {"table": "web"}))["error"]
+
+
+RAW = {"chart": "line", "table": "web", "x": "hourOfDay", "y": "bounceRatePct", "agg": "none"}
+
+
+def planner_box(**frames):
+    """A ToolBox as the planner holds it: its five tools, and the profile's kinds for the plan rules."""
+    return ToolBox({name: {"type": "file", "name": name} for name in frames}, "",
+                   loader=lambda source, data_dir: frames[source["name"]], tools=PLANNER_TOOL_NAMES,
+                   kinds={name: profile_table(name, frame).kinds() for name, frame in frames.items()})
+
+
+def test_preview_chart_gives_one_line_per_plan_with_the_checks_own_words():
+    box = planner_box(web=GRID)
+    plans = [RAW, {**RAW, "agg": "mean"}, {**RAW, "chart": "bar", "x": "weekday", "y": "sessions", "agg": "sum"}]
+    lines = box.call("preview_chart", {"plans": plans}, compact=True).splitlines()
+    assert len(lines) == 3 and len(box.calls) == 1
+    assert lines[0].startswith("1. line bounceRatePct by hourOfDay: 168 points per line, x repeats within a line")
+    assert lines[0].endswith("; problem: " + box.validate_spec({**RAW, "title": "t"})[0])
+    assert lines[1].startswith("2. line mean of bounceRatePct by hourOfDay: 24 points per line, x once per line")
+    assert lines[1].endswith("; ok")
+    assert lines[2].startswith("3. bar sum of sessions by weekday: 7 bars (limit 50), values ") and lines[2].endswith("; ok")
+
+
+def test_a_draft_without_agg_is_previewed_as_the_check_reads_it():
+    box = planner_box(web=GRID)
+    draft = {key: value for key, value in RAW.items() if key != "agg"}
+    line = box.call("preview_chart", {"plans": [draft]}, compact=True)
+    assert "x repeats within a line" in line
+    assert line.endswith("; problem: " + box.validate_spec({**draft, "title": "t"})[0])
+
+
+def test_a_bad_draft_gets_its_own_line_in_the_one_call():
+    box = planner_box(web=GRID)
+    plans = [{"chart": "pie", "table": "web", "x": "hourOfDay", "y": "sessions", "agg": "sum"},
+             {"chart": "bar", "table": "web", "x": "nope", "y": "sessions", "agg": "sum"},
+             "not a plan",
+             {"chart": "kpi", "table": "web", "y": "sessions", "agg": "sum"}]
+    lines = box.call("preview_chart", {"plans": plans}, compact=True).splitlines()
+    assert len(lines) == 4 and len(box.calls) == 1
+    assert "a pie needs a category column on x" in lines[0]
+    assert "'nope' is not a column of 'web'" in lines[1]
+    assert lines[2] == "3. not a chart plan: give chart, table, x, y, group, agg, grain, top_n"
+    assert lines[3].startswith("4. kpi sum of sessions: one number, ") and lines[3].endswith("; ok")
+
+
+def test_seven_long_plans_keep_a_line_each_within_the_cap():
+    reply = planner_box(web=GRID).call("preview_chart", {"plans": [RAW] * 9})
+    lines = json.loads(reply)["fact"].splitlines()
+    assert len(reply) <= RESULT_CHARS and len(lines) == MAX_PREVIEW_PLANS + 1
+    assert all(line.endswith("…") for line in lines[:MAX_PREVIEW_PLANS])
+    assert lines[-1] == "(only the first 7 of 9 plans were previewed)"
+
+
+def test_compact_replies_are_the_fact_line_and_errors_stay_json():
+    box = planner_box(web=GRID)
+    assert box.call("inspect_column", {"table": "web", "column": "hourOfDay"}, compact=True).startswith(
+        "web.hourOfDay: number, 24 distinct in 168 rows; each value appears about 7 times")
+    reply = box.call("inspect_column", {"table": "web", "column": "hour"}, compact=True)
+    assert "not a column of 'web'" in json.loads(reply)["error"]
+
+
+def test_the_planner_and_the_explorer_get_their_own_tools():
+    assert [t["function"]["name"] for t in planner_box(web=GRID).specs] == list(PLANNER_TOOL_NAMES)
+    assert [t["function"]["name"] for t in toolbox(web=GRID).specs] == list(EXPLORER_TOOL_NAMES)

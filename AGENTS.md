@@ -65,6 +65,10 @@
   - Run on the sample files: ecommerce_orders: orderId; gapminder: country × year; property_sales: no key found; saas_revenue: snapshotMonth × planTier; spotify_songs: no key found; web_traffic: weekday × hourOfDay.
 - `inspect_column` now says how often values repeat: "each value appears about 7 times".
 - The explorer keeps its four tools (`EXPLORER_TOOL_NAMES`), and a ToolBox refuses a tool it did not offer.
+- `preview_chart(plans)` previews up to 7 draft plans in one call, one line per plan.
+  - Each line gives points per line and whether x repeats; bars, slices or cells against the limits; the value range; and the problem the checks would raise.
+  - The plan rules come first (`check_spec`, with the profile's kinds), then `data_tools.chart_shape`, the function `validate_spec` calls. So a preview and the final check cannot disagree.
+  - A bad draft gets its own line. The result stays under 1,200 characters, with every plan keeping a line.
 - Database sources are real: `backend/app/services/db_sources.py` holds the whole path. PostgreSQL (psycopg2) and MySQL/MariaDB (pymysql) only — those are the two whose drivers install cleanly and spell `connect_timeout` the same way. `GET /data-sources/database-kinds` reports which drivers the server actually has.
 - A connection is probed before it is stored (`POST /data-sources/db-connection` connects first and 400s with the driver's own error). `POST /data-sources/db-connection/test` is the same probe without saving.
 - The agent sees TABLES, not connections: `candidates_for()` turns each table into a candidate `{id: "<source id>:<table>", type: "db", columns}`, the detective ranks it beside files, and the executor loads it with `load_table_by_id` into the same `df`. Nothing downstream knows the difference. Table names are never interpolated into SQL — tables are checked against the live list then reflected.
