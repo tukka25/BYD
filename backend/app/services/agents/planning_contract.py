@@ -155,7 +155,7 @@ def with_context(text: str, facts: str = "", memory: str = "", links: str = "",
                  notes: tuple[str, ...] = ()) -> str:
     """A planning user message: the trained part, then the optional sections in
     this order: join lines, the facts note, the report memory, then any notes
-    (the kinds the user picked, the planner's tool instructions). Empty ones are left out."""
+    (the kinds the user picked). Empty ones are left out."""
     parts = [text]
     if links:
         parts.append(links)

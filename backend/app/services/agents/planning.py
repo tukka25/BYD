@@ -172,17 +172,22 @@ def _answer(llm: Any, messages: list) -> Any:
         return llm.invoke(plain)
 
 
-_NO_CHANGE = {"no changes", "no change", "none"}
+_MARKER = re.compile(r"^\s*(?:\d+[.)]|[-*\u2022])\s*")
+_PLAN_PREFIX = re.compile(r"^(?:plan|chart)\s*\d+\s*[:.)\-]\s*", re.I)
+_NO_CHANGE = re.compile(
+    r"^(?:no changes?|none|nothing to change|looks? good|all good|all (?:plans|charts) look good"
+    r"|fine|ok|okay|correct)\b")
 
 
 def changes_asked(notes: str) -> list[str]:
     """The lines of the checking turn's reply that ask for a change, without their
-    list numbers: every line except empty ones and those that say only "no
-    changes" (or "none"). [] means the drafts stand."""
+    list marker or "Plan N:" prefix. A line that says no change is needed ("no
+    changes", "looks good", "ok", ...) and empty lines ask for nothing. [] means
+    the drafts stand."""
     asked = []
     for line in notes.splitlines():
-        words = re.sub(r"^\s*\d+[.)]\s*", "", line).strip()
-        if words and re.sub(r"[^a-z ]", "", words.lower()).strip() not in _NO_CHANGE:
+        words = _PLAN_PREFIX.sub("", _MARKER.sub("", line)).strip()
+        if words and not _NO_CHANGE.match(re.sub(r"[^a-z ]", "", words.lower()).strip()):
             asked.append(words)
     return asked
 
@@ -201,12 +206,15 @@ def check_drafts(llm: Any, bound: Any, draft: str, context: str, toolbox: Any) -
     return changes_asked(_text(reply))
 
 
-def _checking_asker(llm: Any, toolbox: Any, context: str) -> Ask | None:
+def _checking_asker(llm: Any, toolbox: Any, context: str, judge: Callable[[str], tuple]) -> Ask | None:
     """How the planner answers when its drafts are checked (PLANNER_TOOLS=planner).
     Every try starts with a plain call, as the planner was trained. After the
     first, a checking turn holds the tools (`check_drafts`); the lines it asks to
     change go back to the planner once, in the retry's own form (FIX_PROMPT).
-    A check or a revision that fails leaves the draft, never a failed build.
+    A check or a revision that fails leaves the draft, never a failed build. A
+    revision is kept only when `judge` (the rank of a reply under the same checks
+    the retry loop uses) puts it at least as high as the draft; code chooses between
+    two whole model answers, as run_checked does across tries, and never edits a plan.
     lora-v2's planner calls no tool while it plans (AGENTS.md), so the tools
     live in this separate turn."""
     try:
@@ -230,10 +238,14 @@ def _checking_asker(llm: Any, toolbox: Any, context: str) -> Ask | None:
         revision = messages + [AIMessage(content=draft),
                                HumanMessage(content=FIX_PROMPT.format(errors="\n".join(f"- {line}" for line in asked)))]
         try:
-            return _text(llm.invoke(revision))
+            revised = _text(llm.invoke(revision))
         except Exception as exc:  # noqa: BLE001 - the revision failed: the draft stands
             logger.warning("[planning] revision after the check failed, keeping the draft: %s", exc)
             return draft
+        if judge(revised) >= judge(draft):
+            return revised
+        logger.warning("[planning] the revision checked worse than the draft; keeping the draft")
+        return draft
 
     return ask
 
@@ -249,14 +261,6 @@ def plan_charts_steps(
     toolbox: Any = None,
 ) -> Generator[Retry | Probe, None, PlanStep]:
     kinds = tuple(required_kinds)
-    context = render_profiles(profiles) + (f"\n\n{links}" if links else "")
-    ask = _checking_asker(llm, toolbox, context) if toolbox is not None else None
-    user = with_context(
-        PLANNER_USER_TEMPLATE.format(profiles=render_profiles(profiles), directions=render_directions(directions)),
-        facts,
-        links=links,
-        notes=(include_kinds(kinds),),
-    )
 
     def check(payload: Any, tables: dict[str, dict[str, str]]) -> tuple[list[dict], list[str]]:
         return check_specs(payload, tables, validate, kinds)
@@ -266,7 +270,18 @@ def plan_charts_steps(
         present = sum(1 for kind in kinds if any(item["chart"] == kind for item in items))
         return (present, *by_size(items, errors))
 
-    return run_checked(llm, PLANNER_SYSTEM_PROMPT, user, check, columns_by_table(profiles), "planner",
+    tables = columns_by_table(profiles)
+    context = render_profiles(profiles) + (f"\n\n{links}" if links else "")
+    ask = (_checking_asker(llm, toolbox, context, lambda text: rank(*check(extract_json(text), tables)))
+           if toolbox is not None else None)
+    user = with_context(
+        PLANNER_USER_TEMPLATE.format(profiles=render_profiles(profiles), directions=render_directions(directions)),
+        facts,
+        links=links,
+        notes=(include_kinds(kinds),),
+    )
+
+    return run_checked(llm, PLANNER_SYSTEM_PROMPT, user, check, tables, "planner",
                        rank=rank, ask=ask)
 
 

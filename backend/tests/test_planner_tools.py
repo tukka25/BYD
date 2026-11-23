@@ -84,7 +84,7 @@ def test_the_planner_drafts_plainly_and_a_separate_turn_checks_the_draft():
     assert step.items and step.errors == [] and step.items[0]["agg"] == "mean"
     assert kinds(model) == ["plain", "bound", "bound"] and [c.name for c in toolbox.calls] == ["preview_chart"]
     planner_user = model.seen[0][1][1].content
-    assert "preview_chart" not in planner_user and "tool" not in planner_user.lower()
+    assert not any(name in planner_user for name in PLANNER_TOOL_NAMES)
     check = model.seen[1][1]
     assert check[0].content == CHECKER_SYSTEM_PROMPT and ANSWER.content in check[1].content
     fact = [m for m in model.seen[2][1] if isinstance(m, ToolMessage)][0].content
@@ -106,6 +106,27 @@ def test_only_lines_that_ask_for_a_change_count():
     assert changes_asked("no changes") == [] and changes_asked("1. no changes\n2. No changes.") == []
     assert changes_asked("") == [] and changes_asked("1) None") == []
     assert changes_asked("1. Change agg to 'mean'\n2. no changes") == ["Change agg to 'mean'"]
+
+
+def test_natural_no_change_phrasings_count_as_no_change():
+    for reply in ("No changes needed.", "No change required", "Plan 1: no changes", "All plans look good",
+                  "2) Looks good.", "- fine", "Chart 3: OK"):
+        assert changes_asked(reply) == [], reply
+    assert changes_asked("Plan 2: Change agg to 'mean'") == ["Change agg to 'mean'"]
+
+
+def test_a_revision_that_checks_worse_leaves_the_draft():
+    model = ToolPlanner(ANSWER, AIMessage(content="1. Give it a shorter title"), AIMessage(content="not json"))
+    step = plan(model, box())
+    assert step.items and step.items[0]["title"] == PLAN["title"] and step.attempts == 1
+    assert kinds(model) == ["plain", "bound", "plain"]
+
+
+def test_a_revision_that_checks_as_well_is_kept():
+    shorter = AIMessage(content=json.dumps({"charts": [{**PLAN, "title": "Bounce by hour"}]}))
+    model = ToolPlanner(ANSWER, AIMessage(content="1. Give it a shorter title"), shorter)
+    step = plan(model, box())
+    assert step.items and step.items[0]["title"] == "Bounce by hour"
 
 
 def test_the_check_runs_on_the_first_try_only_and_a_retry_is_plain():
