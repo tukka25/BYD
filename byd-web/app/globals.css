@@ -427,6 +427,24 @@ a {
   animation: sweep 1.8s linear infinite;
 }
 
+/* The planning loader's stage line: each stage the backend reports fades in
+   where the last one was, so a change of stage reads as news, not a jump. */
+@keyframes stage-in {
+  from {
+    opacity: 0;
+    transform: translateY(3px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.stage-in {
+  display: inline-block;
+  animation: stage-in 220ms var(--ease-out) both;
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,

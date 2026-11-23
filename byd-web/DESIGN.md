@@ -285,14 +285,23 @@ is not a floating action button and not a fixed overlay: it is how every block
 on the canvas gets made, so it stays in one place, always visible, with the
 grid scrolling above it.
 
+It stacks above the scroll region (`relative z-10` on its container). Grid
+items are positioned with transforms, so without that a block passing the
+bottom edge painted over the bar's rounded top, its focus ring and its shadow:
+the bar looked cut off while scrolling and whole only at the very bottom. A
+24px fade from transparent to `--canvas` sits just above the bar (`before:` on
+its container, stopping 12px short of the scrollbar), so a block dissolves into
+the canvas instead of being sliced flat against the bar.
+
 ---
 
 ## 7. Motion
 
-One authored moment: a block arrives on the canvas and settles into place —
-`block-settle`, 520ms on `--ease-out` (`cubic-bezier(.16,1,.3,1)`), from
-`translateY(10px) scale(.985)`. Everything else is a state change: 150ms on
-colour, 200ms on the segmented pill, 300ms on the drawer.
+Two authored moments. The first: a block arrives on the canvas and settles
+into place — `block-settle`, 520ms on `--ease-out` (`cubic-bezier(.16,1,.3,1)`),
+from `translateY(10px) scale(.985)`. The second is the planning loader, below.
+Everything else is a state change: 150ms on colour, 200ms on the segmented
+pill, 300ms on the drawer.
 
 **Opacity and transform only.** The settle originally animated a `filter:
 blur()` too. It looked good and cost real frames: a filter takes the block —
@@ -322,6 +331,22 @@ A single block is one request that answers at the end, so there is no real
 number and none is shown: it names the stage instead, on the schedule those
 stages were measured at. A progress bar that is really a timer is a lie told
 with a number.
+
+**Before there is a plan, one loader in the middle.** The analyst, the data
+checks and the planner take 30 to 120 seconds before a dashboard has a plan,
+and until then there is nothing to lay out. The canvas shows
+`components/build-loader.tsx`: the same pine dots as the placeholders, 36 of
+them on one canvas, walking through the shapes the model chooses between — a
+line, bars, a grid, a smooth line, an area (`lib/dot-shapes.ts`: each held
+1.5s, then morphed in 0.9s on a quartic ease-out, the left dots setting off
+first). Under it is the stage the backend reports (the SSE `status` label,
+fading in on each change, `.stage-in`) and the time since it started. There is
+no percentage, because nothing can be counted before a plan. On an empty
+report it sits in the middle of the canvas; on one with blocks it sits above
+them and scrolls itself into view. The Generate button says only "Building…",
+then "Building 3/7" once the plan lands: the stage is told once, in the middle.
+The loader pauses while off screen, and with reduced motion it holds the line
+still while the stage keeps updating.
 
 **A picked kind is never dropped without a word.** When a kind picked with "/"
 for a dashboard is still not in the plan after the planner's last try, the

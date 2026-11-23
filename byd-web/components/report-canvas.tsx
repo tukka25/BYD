@@ -22,6 +22,7 @@ import {
   Trash2,
   Type,
 } from "lucide-react";
+import { BuildLoader } from "@/components/build-loader";
 import { ChartKindsPanel } from "@/components/chart-kinds-panel";
 import { DotWave } from "@/components/dot-wave";
 import { KindChip, KindMenu, useKindMenu } from "@/components/kind-menu";
@@ -383,6 +384,12 @@ export function ReportCanvas({ report }: { report: Report }) {
     return [];
   }, [planned, busy, phase, nextRow]);
 
+  /* Before a dashboard has a plan there is nothing to lay out, so the canvas
+     shows one loader with the stage the backend reports. Once the plan lands,
+     the placeholders take over. */
+  const planningLabel =
+    building && building.total === 0 && placeholders.length === 0 ? building.label : null;
+
   const layouts = useMemo(
     () => ({
       lg: [
@@ -700,7 +707,7 @@ export function ReportCanvas({ report }: { report: Report }) {
             {building
               ? building.total > 0
                 ? `Building ${building.done}/${building.total}`
-                : `${building.label}…`
+                : "Building…"
               : "Generate dashboard"}
           </Button>
           <Button variant="secondary" onClick={() => setKindsOpen((open) => !open)} aria-expanded={kindsOpen}>
@@ -831,10 +838,20 @@ export function ReportCanvas({ report }: { report: Report }) {
           </p>
         ) : null}
 
+        {planningLabel !== null && blocks.length > 0 ? (
+          <div className="flex justify-center pb-8 pt-2">
+            <BuildLoader label={planningLabel} />
+          </div>
+        ) : null}
+
         {loading ? (
           <div className="grid grid-cols-2 gap-4 px-3">
             <div className="h-64 rounded-[var(--r-panel)] generating" />
             <div className="h-64 rounded-[var(--r-panel)] generating" />
+          </div>
+        ) : planningLabel !== null && blocks.length === 0 ? (
+          <div className="flex min-h-[55vh] items-center justify-center">
+            <BuildLoader label={planningLabel} />
           </div>
         ) : blocks.length === 0 && placeholders.length === 0 ? (
           <Panel className="mx-3">
@@ -936,8 +953,14 @@ export function ReportCanvas({ report }: { report: Report }) {
 
       {/* The primary action, at the foot of the canvas rather than floating
           over it: the grid scrolls above it, so no block ever passes
-          underneath. It is how every block on this canvas gets made. */}
-      <div className="shrink-0 px-4 pb-4 sm:px-8 sm:pb-6 print:hidden">
+          underneath. It is how every block on this canvas gets made.
+
+          It stacks above the scroll region (z-10). Grid items are positioned
+          with transforms, so without that a block passing the edge painted
+          over the bar's rounded top, its focus ring and its shadow. The 24px
+          fade above it lets that block dissolve into the canvas rather than
+          being sliced flat against the bar; it stops short of the scrollbar. */}
+      <div className="relative z-10 shrink-0 px-4 pb-4 pt-2 before:pointer-events-none before:absolute before:bottom-full before:left-0 before:right-3 before:h-6 before:bg-linear-to-t before:from-canvas before:to-transparent sm:px-8 sm:pb-6 print:hidden">
         <div className="mx-auto max-w-3xl">
           <Panel
             className={[
