@@ -15,9 +15,15 @@ from app.services.agents.chart_kinds import KIND_INFO
 from app.services.agents.dashboard_flow import profile_sources
 from app.services.agents.links import render_links
 from app.services.agents.planning import plan_charts
+from app.services.agents.profiler import TableProfile
 from app.services.agents.spec_runner import run_spec
 
 MAX_DIRECTION_COLUMNS = 12
+
+
+def direction_columns(question: str, profile: TableProfile) -> list[str]:
+    """The columns the one direction lists: the table's first 12, as profiled."""
+    return [column.name for column in profile.columns][:MAX_DIRECTION_COLUMNS]
 
 
 def run_kind_request(
@@ -44,7 +50,7 @@ def run_kind_request(
         return {"error": f"Could not read {selected.get('name', 'that source')}.", "plan": asked}
     entry = entries[0]
     direction = {"question": question.strip(), "why": f"the user asked for a {label}", "table": entry.label,
-                 "columns": [column.name for column in entry.profile.columns][:MAX_DIRECTION_COLUMNS]}
+                 "columns": direction_columns(question, entry.profile)}
     links = render_links([entry.source["join"]] if entry.source.get("join") else [])
     step = plan_charts(planner_llm, [direction], [entry.profile], links=links, required_kinds=(chart_kind,))
     spec = next((s for s in step.items if s["chart"] == chart_kind), None)
