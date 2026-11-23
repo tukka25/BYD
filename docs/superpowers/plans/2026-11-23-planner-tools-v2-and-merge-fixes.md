@@ -97,10 +97,10 @@ The sums below were measured by applying every task in a scratch copy of the rep
 | Task 3 | 139 | 81 | 8 |
 | Task 4 | 141 if the fix is applied, else 139 | 81 | 8 |
 | Task 5 | +6 (147 or 145) | 81 | 8 |
-| Task 6 | +8 (155 or 153) | 81 | 8 |
-| Task 7 | +6 (161 or 159) | 81 | 8 |
-| Task 8 | +5 (166 or 164) | 81 | 8 |
-| Task 9 | +13 (179 or 177) | 81 | 8 |
+| Task 6 | +11 (158 or 156) | 81 | 8 |
+| Task 7 | +6 (164 or 162) | 81 | 8 |
+| Task 8 | +6 (170 or 168) | 81 | 8 |
+| Task 9 | +13 (183 or 181) | 81 | 8 |
 | Task 10 | unchanged | 85 | 8 |
 
 ---
@@ -1002,6 +1002,8 @@ The fix in Steps 9–13 is **conditional** on Step 8.
 
 On names: ordering by overlap matches the user's own words to column names, and only to choose which columns a direction lists first. It decides no column's role, the model still picks every column, and the checks still read values. It is the brief matching the project already uses, and the user asked for it here.
 
+**Who does what.** An implementer does Steps 1-6 and stops after Step 6's commit. The controller runs Steps 7 and 8. Steps 9-12 go to an implementer only if Step 8 says the fix is needed, and the controller then runs Step 13. Steps 14 and 15 are written from the controller's Step 7 output (and Step 13's, if the fix ran). The later tasks' suite totals depend on Step 8; the counts table gives both.
+
 - [ ] **Step 1: Extract `direction_columns` (no behaviour change)**
 
 In `backend/app/services/agents/kind_request.py`, replace
@@ -1699,10 +1701,11 @@ A line-mode trace whose x values repeat is a contract problem. It goes back to t
   - `run_on_frame(...)` returns `"repair_reasons": list[str]`, the problem behind each repair asked for, on success and on failure. When the drawing check still fails after the last repair, `execution_result` is `{..., "success": False, "figure": None, "error": <problem>}`, so no caller can take it for a chart. `comparison.run_cell` decides `ok` from `execution_result["success"]`.
   - `run_spec(...)` returns `"repair_reasons"` too (`[]` on its early returns).
 
-Which traces count:
-- **Counted:** `scatter`/`scattergl` traces whose `mode` contains `"lines"`, or with `stackgroup` set (an area).
-- **Not counted:** markers-only traces, which may repeat x, and a trace with no `mode` at all. Plotly picks a mode for that last kind itself, and it is often a scatter that means no lines, so "aggregate y" would be the wrong advice. That trace is listed as an open question for the controller.
-- **Never a failure:** an x that is not a list, or cannot be compared.
+Which traces count (the controller's ruling on this plan's open question, 2026-11-23):
+- **Counted:** `scatter`/`scattergl` traces that Plotly draws with lines: a `mode` that contains `"lines"`, `stackgroup` set (an area), or no `mode` at all. Plotly's own reference for a scatter with no mode: under 20 points and not stacked it draws "lines+markers", otherwise "lines". So a trace with no mode is a line; its problem line adds "(it has no mode, so Plotly draws it as a line; for a scatter, set mode='markers')", unless it is a stacked area.
+- **Not counted:** markers-only traces (and `mode="none"`), which may repeat x, and a closed shape (`fill="toself"`, such as a confidence band), which goes back over its x by design.
+- **The problem:** one x value carrying more than one y value in the same trace. The same x with the same y (a fitted line over data whose x repeats) draws over itself and is not a problem.
+- **Never a failure:** an x that is not a list or cannot be compared; a `y` that is not a list as long as `x` (a missing `y` is drawn along the row index, so it never runs back); points whose x or y is missing.
 
 - [ ] **Step 1: Write the failing tests** (`backend/tests/test_drawing_check.py`)
 
@@ -1744,13 +1747,30 @@ def test_a_stacked_area_is_a_line():
     assert figure_problems(figure(stackgroup="1")) and figure_problems(figure(mode="lines+markers"))
 
 
-def test_markers_and_a_trace_with_no_mode_may_repeat_x():
-    assert figure_problems(figure(mode="markers")) == [] and figure_problems(figure()) == []
+def test_markers_may_repeat_x():
+    assert figure_problems(figure(mode="markers")) == [] and figure_problems(figure(mode="none")) == []
 
 
-def test_a_line_with_each_x_once_or_an_unreadable_x_is_fine():
+def test_a_trace_with_no_mode_is_drawn_as_a_line():
+    assert figure_problems(figure()) == [
+        "the line 'trace 1' has 4 points but only 2 x values, so it runs back and forth: " + REPEATED_X_FIX
+        + " (it has no mode, so Plotly draws it as a line; for a scatter, set mode='markers')"]
+
+
+def test_a_closed_shape_may_go_back_over_its_x():
+    band = figure(mode="lines", fill="toself", x=[0, 1, 2, 2, 1, 0], y=[3, 4, 5, 1, 2, 1])
+    assert figure_problems(band) == []
+
+
+def test_an_x_repeated_with_the_same_y_is_fine():
+    assert figure_problems(figure(mode="lines", y=[1, 2, 1, 2])) == []
+
+
+def test_a_line_with_each_x_once_or_unreadable_values_is_fine():
     assert figure_problems(figure(mode="lines", x=[0, 1, 2, 3])) == []
     assert figure_problems(figure(mode="lines", x={"dtype": "i1", "bdata": "!!"})) == []
+    assert figure_problems(figure(mode="lines", y={"dtype": "i1", "bdata": "!!"})) == []
+    assert figure_problems(figure(mode="lines", y=None)) == []
     assert figure_problems({"data": [{"type": "bar", "x": [0, 0]}]}) == []
 
 
@@ -1818,35 +1838,48 @@ REPEATED_X_FIX = "each x value should appear once per line: aggregate y for each
 
 
 def _drawn_as_line(trace: dict) -> bool:
-    """A scatter trace drawn with lines: its mode includes "lines", or it is a
-    stacked area. Markers-only traces may repeat x. A trace with no mode is not
-    counted: Plotly picks one itself, and a scatter often means no lines."""
-    if trace.get("type", "scatter") not in ("scatter", "scattergl"):
+    """A scatter trace that Plotly draws with lines: its mode includes "lines",
+    it is a stacked area, or it has no mode (Plotly's reference: "lines+markers"
+    under 20 points when not stacked, otherwise "lines"). Markers-only traces
+    may repeat x, and a closed shape (fill="toself", such as a band) goes back
+    over its x by design."""
+    if trace.get("type", "scatter") not in ("scatter", "scattergl") or trace.get("fill") == "toself":
         return False
-    return bool(trace.get("stackgroup")) or "lines" in str(trace.get("mode") or "")
+    mode = trace.get("mode")
+    return bool(trace.get("stackgroup")) or mode is None or "lines" in str(mode)
 
 
 def figure_problems(figure: dict) -> list[str]:
     """What a drawn figure gets wrong, in words the model can act on; [] when nothing does.
 
     Expects plain lists: decode Plotly's typed arrays first, as
-    workflow.run_on_frame does. One rule today: a line whose x values repeat
-    within the trace runs back and forth across the chart (rows of two keys,
-    drawn as one line over one of them). An x that cannot be read is not a problem.
+    workflow.run_on_frame does. One rule today: a line on which one x value
+    carries more than one y value runs back and forth across the chart (rows of
+    two keys, drawn as one line over one of them). The same x with the same y
+    draws over itself and is fine. An x or y that cannot be read is not a problem.
     """
     problems = []
     for n, trace in enumerate((figure or {}).get("data") or [], 1):
-        if not isinstance(trace, dict) or not _drawn_as_line(trace) or not isinstance(trace.get("x"), list):
+        if not isinstance(trace, dict) or not _drawn_as_line(trace):
             continue
+        xs, ys = trace.get("x"), trace.get("y")
+        if not isinstance(xs, list) or not isinstance(ys, list) or len(xs) != len(ys):
+            continue
+        points = [(x, y) for x, y in zip(xs, ys) if x is not None and y is not None]
+        seen: dict = {}
         try:
-            xs = [tuple(v) if isinstance(v, list) else v for v in trace["x"] if v is not None]
-            distinct = len(set(xs))
+            for x, y in points:
+                seen.setdefault(tuple(x) if isinstance(x, list) else x, set()).add(
+                    tuple(y) if isinstance(y, list) else y)
         except TypeError:
             continue
-        if distinct < len(xs):
+        if any(len(values) > 1 for values in seen.values()):
             name = str(trace.get("name") or "").strip() or f"trace {n}"
-            problems.append(f"the line '{name}' has {len(xs):,} points but only {distinct:,} x values, "
-                            f"so it runs back and forth: {REPEATED_X_FIX}")
+            problem = (f"the line '{name}' has {len(points):,} points but only {len(seen):,} x values, "
+                       f"so it runs back and forth: {REPEATED_X_FIX}")
+            if trace.get("mode") is None and not trace.get("stackgroup"):
+                problem += " (it has no mode, so Plotly draws it as a line; for a scatter, set mode='markers')"
+            problems.append(problem)
     return problems
 ```
 
@@ -2002,7 +2035,7 @@ Run: `cd backend && .venv/bin/python -m pytest -q tests/test_drawing_check.py te
 Expected: all pass.
 
 Run: `cd backend && .venv/bin/python -m pytest -q tests`
-Expected: 8 more tests than after Task 5 (155 with Task 4's fix, 153 without); the only failures are the 3 known ones.
+Expected: 11 more tests than after Task 5 (158 with Task 4's fix, 156 without); the only failures are the 3 known ones.
 
 Run: `cd chartist-finetune && ../backend/.venv/bin/python -m pytest -q tests`
 Expected: 81 passed (`chartist_contract.py` is loaded there by path and still imports only the standard library).
@@ -2013,8 +2046,8 @@ Insert this bullet directly after the line that starts with `- NO HARDCODED CHAR
 
 ```markdown
 - The drawing check (`chartist_contract.figure_problems`, called in `workflow.run_on_frame` after the figure is decoded) runs on every path: dashboard, ask bar, "/" kinds and the comparison.
-  - A line-mode trace (a mode with lines, or `stackgroup`) whose x repeats goes back to the model as a repair: "each x value should appear once per line: aggregate y for each x and sort by x". It counts against `MAX_REPAIRS`.
-  - Markers-only traces, and traces without a mode, are not checked.
+  - A trace Plotly draws with lines (a mode with lines, `stackgroup`, or no mode at all, which Plotly draws as a line) on which one x carries more than one y goes back to the model as a repair: "each x value should appear once per line: aggregate y for each x and sort by x". It counts against `MAX_REPAIRS`.
+  - Not checked: markers-only traces, closed shapes (`fill="toself"`, such as bands), and an x repeated with the same y (a fitted line draws over itself).
   - A line still drawn that way after two fixes is reported failed, with no figure.
   - `run_on_frame` and `run_spec` return `repair_reasons`, the problem behind each fix.
 ```
@@ -2046,7 +2079,7 @@ It works from values only:
 - **Confirmation.** Each candidate is confirmed on the full table in one pass, at most 3 candidates. A key the sample cannot see through is caught there, and the next candidate is tried.
 - **Measures.** A column with fractions is a measure and never part of a key. A whole number unique by chance is not an id unless it counts the rows.
 
-Tool sets also become per role in this task. The explorer keeps exactly its four tools, so the `on` arm measured in Task 10 is today's behaviour. A tool that was not offered is refused.
+Tool sets also become per role in this task. The explorer keeps exactly its four tools. Its results still change in this plan (Task 5 adds a series count and the value range to `preview`; this task adds how often values repeat to `inspect_column`), so the `on` arm measured in Task 10 is not exactly today's behaviour; both arms run the same code, so the comparison stays fair. A tool that was not offered is refused.
 
 **Files:**
 - Modify: `backend/app/services/agents/data_tools.py` (`inspect_column`, constants, `row_grain`, `tool_specs`, `ToolBox.__init__`, `ToolBox.specs`, `ToolBox._run`)
@@ -2094,7 +2127,7 @@ def test_row_grain_takes_an_id_that_counts_the_rows():
 def test_a_number_unique_by_chance_is_not_a_key():
     events = pd.DataFrame({"region": ["N", "S", "E", "W"] * 25, "sessions": [100 + 3 * i for i in range(100)]})
     assert row_grain(events, "events")["fact"] == (
-        "events: no key among up to 3 columns: each row is one event (100 rows)")
+        "events: no key found among the columns tried, alone or up to 3 together (100 rows)")
 
 
 def test_a_key_the_sample_misses_is_caught_on_the_full_table(monkeypatch):
@@ -2218,7 +2251,7 @@ def row_grain(frame: pd.DataFrame, table: str) -> dict[str, Any]:
     if key:
         fact = f"{table}: one row per {' × '.join(key)} ({rows:,} rows); other columns describe the row"
     else:
-        fact = f"{table}: no key among up to {GRAIN_SIZE} columns: each row is one event ({rows:,} rows)"
+        fact = f"{table}: no key found among the columns tried, alone or up to {GRAIN_SIZE} together ({rows:,} rows)"
     return {"table": table, "rows": rows, "key": key, "fact": fact}
 ```
 
@@ -2340,18 +2373,20 @@ Run: `cd backend && .venv/bin/python -m pytest -q tests/test_data_tools.py tests
 Expected: all pass. `test_discovery.py` still sees exactly the explorer's four tool names.
 
 Run: `cd backend && .venv/bin/python -m pytest -q tests`
-Expected: 6 more tests than after Task 6 (161 with Task 4's fix, 159 without); the only failures are the 3 known ones.
+Expected: 6 more tests than after Task 6 (164 with Task 4's fix, 162 without); the only failures are the 3 known ones.
 
 - [ ] **Step 5: Record it in AGENTS.md**
+
+First run `row_grain` on every CSV in `backend/uploads/` (a short loop: `pd.read_csv`, then `data_tools.row_grain(frame, name)`), and paste each printed fact into the report. The "Run on the sample files" line below is copied from that output, and nothing in angle brackets may remain.
 
 Insert these bullets directly after the line that starts with `- Every placed chart plan is logged with all its fields`, which Task 5 added:
 
 ```markdown
-- `data_tools.row_grain(table)` names, from values only, the columns that identify a row: "one row per weekday × hourOfDay (168 rows); other columns describe the row", or "no key among up to 3 columns: each row is one event".
+- `data_tools.row_grain(table)` names, from values only, the columns that identify a row: "one row per weekday × hourOfDay (168 rows); other columns describe the row", or "no key found among the columns tried, alone or up to 3 together". The search is bounded, so "no key found" does not mean every row is unique.
   - Search: the profile's 2,000-row sample; label columns with the fewest values first; keys of up to 3 columns, from at most 8 columns.
   - Confirmation: each candidate on the full table in one pass, at most 3 candidates.
   - A column with fractions is never part of a key, and a whole number is an id only if it counts the rows.
-  - Run on the sample files: weekday × hourOfDay, snapshotMonth × planTier, orderId, country × year (gapminder). Property sales and Spotify have no key.
+  - Run on the sample files: <one entry per CSV in `backend/uploads/`, `file: key` or `file: no key found`, copied from the run above>.
 - `inspect_column` now says how often values repeat: "each value appears about 7 times".
 - The explorer keeps its four tools (`EXPLORER_TOOL_NAMES`), and a ToolBox refuses a tool it did not offer.
 ```
@@ -2437,6 +2472,14 @@ def test_preview_chart_gives_one_line_per_plan_with_the_checks_own_words():
     assert lines[1].startswith("2. line mean of bounceRatePct by hourOfDay: 24 points per line, x once per line")
     assert lines[1].endswith("; ok")
     assert lines[2].startswith("3. bar sum of sessions by weekday: 7 bars (limit 50), values ") and lines[2].endswith("; ok")
+
+
+def test_a_draft_without_agg_is_previewed_as_the_check_reads_it():
+    box = planner_box(web=GRID)
+    draft = {key: value for key, value in RAW.items() if key != "agg"}
+    line = box.call("preview_chart", {"plans": [draft]}, compact=True)
+    assert "x repeats within a line" in line
+    assert line.endswith("; problem: " + box.validate_spec({**draft, "title": "t"})[0])
 
 
 def test_a_bad_draft_gets_its_own_line_in_the_one_call():
@@ -2637,7 +2680,8 @@ with
         then chart_shape, the same function the check on the final plan runs."""
         if not isinstance(plan, dict):
             return "not a chart plan: give chart, table, x, y, group, agg, grain, top_n"
-        draft = {"title": "draft", "question": "", "x": "", "y": "", "group": "", "agg": "sum", "grain": "",
+        # A missing agg reads as "none", as check_spec reads it, so the preview and the check agree.
+        draft = {"title": "draft", "question": "", "x": "", "y": "", "group": "", "agg": "none", "grain": "",
                  "sort": "", "top_n": 0, **plan}
         try:
             table = str(draft.get("table") or "")
@@ -2673,7 +2717,7 @@ Run: `cd backend && .venv/bin/python -m pytest -q tests/test_data_tools.py tests
 Expected: all pass.
 
 Run: `cd backend && .venv/bin/python -m pytest -q tests`
-Expected: 5 more tests than after Task 7 (166 with Task 4's fix, 164 without); the only failures are the 3 known ones.
+Expected: 6 more tests than after Task 7 (170 with Task 4's fix, 168 without); the only failures are the 3 known ones.
 
 - [ ] **Step 5: Record it in AGENTS.md**
 
@@ -2919,10 +2963,11 @@ def test_a_dashboard_with_planner_tools_has_no_explorer_step(tmp_path):
     assert [e.kind for e in events][-1] == "chart"
 
 
-def test_what_the_planner_tools_add_to_the_prompt_stays_as_measured():
-    # Measured with the base model's chat template (2026-11-23): binding these five tools and
-    # this note adds ~850 tokens to the planner's prompt (Spotify table: 1,407 -> 2,262), and
-    # three compact results ~675 more (2,937); lora-v2 was trained at 2,048. Growth here is prompt.
+def test_what_the_planner_tools_add_to_the_prompt_is_capped_in_characters():
+    # A character cap standing in for tokens. Measured with the base model's chat template while
+    # this plan was written (2026-11-23): binding these five tools and this note adds ~850 tokens
+    # to the planner's prompt (Spotify table: 1,407 -> 2,262), and three compact results ~675 more
+    # (2,937); lora-v2 was trained at 2,048. The probe script prints the server's own counts.
     specs = json.dumps(tool_specs(["t"], PLANNER_TOOL_NAMES), separators=(",", ":"))
     assert len(specs) <= 2000 and len(PLANNER_TOOLS_NOTE) <= 450
 
@@ -3444,7 +3489,7 @@ Run: `cd backend && .venv/bin/python -m pytest -q tests/test_planner_tools.py te
 Expected: all pass.
 
 Run: `cd backend && .venv/bin/python -m pytest -q tests`
-Expected: 13 more tests than after Task 8 (179 with Task 4's fix, 177 without); the only failures are the 3 known ones.
+Expected: 13 more tests than after Task 8 (183 with Task 4's fix, 181 without); the only failures are the 3 known ones.
 
 Run: `cd chartist-finetune && ../backend/.venv/bin/python -m pytest -q tests`
 Expected: 81 passed.
@@ -3514,9 +3559,16 @@ box = ToolBox({TABLE: {"type": "file", "name": TABLE}}, str(BACKEND / "uploads")
 planner = get_llm("spec_planner")
 messages = [SystemMessage(content=PLANNER_SYSTEM_PROMPT), HumanMessage(content=user)]
 
+def prompt_tokens(message) -> object:
+    """The server's own prompt token count, when it reports usage."""
+    usage = (getattr(message, "response_metadata", None) or {}).get("token_usage") or {}
+    return usage.get("prompt_tokens", "not reported")
+
+
 reply = planner.bind_tools(box.specs).invoke(messages)
 asked = list(getattr(reply, "tool_calls", None) or [])
 print("1. tool calls:", [call.get("name") for call in asked] or "none")
+print("   prompt tokens (server):", prompt_tokens(reply))
 for call in asked:
     if call.get("name") == "preview_chart":
         print("   preview_chart plans arrived as", type((call.get("args") or {}).get("plans")).__name__)
@@ -3532,6 +3584,7 @@ try:
     payload = extract_json(text)
     found = isinstance(payload, dict) and "charts" in payload
     print("2. plain call after tool turns:", "JSON with charts" if found else f"no plan JSON: {text[:200]!r}")
+    print("   prompt tokens (server):", prompt_tokens(answer))
 except Exception as exc:  # noqa: BLE001 - this is what the probe is for
     print("2. plain call after tool turns raised:", exc)
 ```
@@ -3569,14 +3622,17 @@ Expected, in this shape:
 
 ```
 1. tool calls: ['preview_chart']
+   prompt tokens (server): <n>
    preview_chart plans arrived as list
 2. plain call after tool turns: JSON with charts
+   prompt tokens (server): <n>
 ```
 
 Each line has a fallback outcome:
 - **"tool calls: none".** A finding: the planner did not take the offer.
 - **`plans` arrived as `str`.** Handled by the `json.loads` in `_preview_chart`.
 - **Line 2 "raised".** Every tool-using try then costs one failed call before `answer()` retries without the tool turns. Tell the user before Task 10's 3-hour run.
+- **Prompt tokens.** Add the two server counts to the AGENTS.md bullet from Step 10, labelled as the server's count on `web_traffic.csv` (the chat-template numbers there are on the Spotify table).
 
 Keep the three lines: Task 10 Step 13 records them.
 
@@ -3615,6 +3671,8 @@ The user's goal is that the model decides what to look at. This task measures wh
   - `summarize(rows)`. When rows carry `drawn`, it adds `charts_drawn`, `render_rate`, `planned_kind_rate` (of the rendered charts, as `measure_planning.py`), `repairs_per_chart`, `repeated_x_per_dashboard` and `median_draw_seconds`. Rows without `drawn` give exactly the old keys.
   - `compare_planner(on_rows, planner_rows) -> dict`, with keys `paired_rows`, `on`, `planner`, `first_try`, `median_seconds_delta` and `decision`. `decision` holds `render_not_lower`, `first_try_not_lower`, `planned_kind_not_lower`, `repeated_x_not_higher`, `median_seconds_rise_under_30` and `planner_by_default`.
   - CLI: `--tools {on,off,planner}`, `--draw N` and `--compare-planner`. A `--draw` run writes files labelled `tools-<arm>-draw<N>`, so the committed `tools-on`/`tools-off` rows, which already hold these 40 ids, are never resumed into. `compare` and its decision keys are unchanged.
+
+**Who does what.** An implementer does Steps 1-8 and stops after Step 8. Step 6 reads `backend/uploads/spotify_songs.csv`, which exists on this machine; download it only if it is missing. The controller runs Steps 9-14: they need Task 9's probe (its Step 13), the model server and the two background runs.
 
 - [ ] **Step 1: Write the failing tests** (append to `chartist-finetune/tests/test_measure_planning_tools.py`; `_row`, `summarize` and `sign_test_p` are already there)
 
@@ -4269,7 +4327,7 @@ Insert this bullet directly after the line that starts with `- The drawing check
 - [ ] **Step 7: Run every suite one last time**
 
 Run: `cd backend && .venv/bin/python -m pytest -q tests`
-Expected: 179 tests with Task 4's fix (177 without); the only failures are the 3 known ones in `test_chartist_contract.py`.
+Expected: 183 tests with Task 4's fix (181 without); the only failures are the 3 known ones in `test_chartist_contract.py`.
 
 Run: `cd chartist-finetune && ../backend/.venv/bin/python -m pytest -q tests`
 Expected: 85 passed.
