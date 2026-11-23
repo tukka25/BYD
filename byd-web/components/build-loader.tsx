@@ -8,10 +8,10 @@ import { DOTS, SHAPE_POINTS, dotAt, frameAt, type ShapeName } from "@/lib/dot-sh
    Before a dashboard has a plan (the analyst, the data checks and the
    planner: 30 to 120 seconds on this machine) there is nothing to lay out
    yet, so the canvas shows one loader in its middle. It is drawn in the same
-   pine dots as the block placeholders, walking through the shapes the model
-   chooses between (a line, bars, a grid, a smooth line, an area), with the
-   stage the backend reports underneath. There is no percentage because there
-   is nothing to count until a plan exists.
+   pine dots as the block placeholders, walking through every kind of chart
+   the model can draw (lib/dot-shapes.ts), with the stage the backend reports
+   underneath. There is no percentage because there is nothing to count until
+   a plan exists.
 
    One canvas and 36 dots, like `DotWave`: animating DOM nodes would be a
    style write per dot per frame. It draws its first frame at once (an empty
@@ -81,14 +81,18 @@ export function BuildLoader({ label }: { label: string }) {
       context.fillStyle = pine;
       for (let i = 0; i < DOTS; i += 1) {
         const p = dotAt(a[i], b[i], progress, i);
+        // A dot a shape does not use sits at weight 0, so it fades out and
+        // shrinks on the way to its parking spot and back on the way out.
+        const shown = Math.min(1, p.weight / 0.25);
+        if (shown <= 0) continue;
         // A slow brightness wave across the frame keeps a held shape alive.
         const pulse = reduced ? 0.5 : 0.5 + 0.5 * Math.sin(t * 2.2 - p.x * 7);
-        context.globalAlpha = Math.min(1, 0.3 + 0.55 * p.weight + 0.15 * pulse);
+        context.globalAlpha = shown * Math.min(1, 0.3 + 0.55 * p.weight + 0.15 * pulse);
         context.beginPath();
         context.arc(
           padX + p.x * (width - 2 * padX),
           padY + p.y * (height - 2 * padY),
-          1.6 + 1.9 * p.weight + 0.35 * pulse,
+          (1.6 + 1.9 * p.weight + 0.35 * pulse) * (0.4 + 0.6 * shown),
           0,
           Math.PI * 2,
         );

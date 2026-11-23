@@ -188,7 +188,15 @@ never appears inside a committed surface.
 
 **Icons** are lucide-react at **`strokeWidth={2.25}`**, everywhere. One
 exception, deliberate: the 13px tick inside a filled checkbox (3 — it
-disappears at 2.25). A third weight is a bug, not a judgement call. The logo is
+disappears at 2.25). A third weight is a bug, not a judgement call.
+
+One icon is authored rather than taken from lucide, and it is drawn the lucide
+way so the rule above still holds: `GenerateDashboardIcon`
+(`components/generate-icon.tsx`), a chart in a frame with the model's spark at
+the frame's open corner, on every Generate dashboard button. The user supplied
+it as a 24px bitmap; it is redrawn as stroked 24-unit paths in `currentColor`,
+so it takes the same 2.25 weight and colour as its neighbours instead of
+arriving with a weight of its own. The logo is
 not in this system at all — it is drawn geometry, not a stroked icon, and it
 never takes a lucide weight.
 
@@ -336,10 +344,14 @@ with a number.
 checks and the planner take 30 to 120 seconds before a dashboard has a plan,
 and until then there is nothing to lay out. The canvas shows
 `components/build-loader.tsx`: the same pine dots as the placeholders, 36 of
-them on one canvas, walking through the shapes the model chooses between — a
-line, bars, a grid, a smooth line, an area (`lib/dot-shapes.ts`: each held
-1.5s, then morphed in 0.9s on a quartic ease-out, the left dots setting off
-first). Under it is the stage the backend reports (the SSE `status` label,
+them on one canvas, walking through every kind of chart the model can draw —
+a line, bars, a donut, a scatter, a heatmap, a funnel, box plots, a treemap, a
+sunburst, a waterfall, a KPI gauge, a histogram, a smooth line and the area it
+fills (`lib/dot-shapes.ts`: one shape per kind in the "/" list, which a test
+keeps in step with `lib/chart-kinds.ts`; each held 1.5s, then morphed in 0.9s
+on a quartic ease-out, the left dots setting off first, ~34s for the round).
+A shape that needs fewer than 36 dots parks the rest at weight 0, so they fade
+out where one shape starts and back in where the next needs them. Under it is the stage the backend reports (the SSE `status` label,
 fading in on each change, `.stage-in`) and the time since it started. There is
 no percentage, because nothing can be counted before a plan. On an empty
 report it sits in the middle of the canvas; on one with blocks it sits above

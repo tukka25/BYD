@@ -18,13 +18,13 @@ import {
   Pencil,
   Save,
   Shapes,
-  Sparkles,
   Trash2,
   Type,
 } from "lucide-react";
 import { BuildLoader } from "@/components/build-loader";
 import { ChartKindsPanel } from "@/components/chart-kinds-panel";
 import { DotWave } from "@/components/dot-wave";
+import { GenerateDashboardIcon } from "@/components/generate-icon";
 import { KindChip, KindMenu, useKindMenu } from "@/components/kind-menu";
 import { Plot } from "@/components/plot";
 import { RichText, RichTextEditor } from "@/components/rich-text";
@@ -703,7 +703,7 @@ export function ReportCanvas({ report }: { report: Report }) {
             onClick={() => (building ? undefined : setBriefOpen((v) => !v))}
             disabled={Boolean(building) || busy}
           >
-            <Sparkles size={15} strokeWidth={2.25} />
+            <GenerateDashboardIcon size={15} />
             {building
               ? building.total > 0
                 ? `Building ${building.done}/${building.total}`
@@ -797,7 +797,7 @@ export function ReportCanvas({ report }: { report: Report }) {
               ) : null}
             </div>
             <Button variant="primary" onClick={buildDashboard}>
-              <Sparkles size={15} strokeWidth={2.25} />
+              <GenerateDashboardIcon size={15} />
               Build it
             </Button>
             <Button variant="ghost" onClick={() => setBriefOpen(false)}>
@@ -866,7 +866,7 @@ export function ReportCanvas({ report }: { report: Report }) {
                     onClick={() => setBriefOpen(true)}
                     disabled={Boolean(building)}
                   >
-                    <Sparkles size={15} strokeWidth={2.25} />
+                    <GenerateDashboardIcon size={15} />
                     Generate a dashboard
                   </Button>
                   <Button variant="secondary" onClick={() => askRef.current?.focus()}>
