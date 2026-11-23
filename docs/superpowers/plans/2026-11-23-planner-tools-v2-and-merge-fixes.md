@@ -3674,6 +3674,448 @@ Keep the three lines: Task 10 Step 13 records them.
 
 ---
 
+### Task 9b: The checking turn: the planner drafts as trained, a separate turn holds the tools
+
+Added 2026-11-23 by the user's decision ("Add a checking turn"), after Task 9's probe and the controller's experiments (AGENTS.md, the `PLANNER_TOOLS=planner` bullet's sub-bullets):
+- Under the trained `PLANNER_SYSTEM_PROMPT`, lora-v2's planner called no tool in 7 bound calls (the note as written, a note telling it to call `preview_chart` first, a second "check your drafts" turn). So Task 9's in-call tool loop never runs.
+- A separate turn with its own tool-oriented system prompt and the planner's drafts called `preview_chart` in 6 of 6 runs. On good drafts it replied "no changes"; on bad ones it named the fix ("Change agg to 'mean' (or add a group) so the line doesn't jump back and forth").
+
+This task keeps Task 9's shape: `PLANNER_TOOLS=planner`, no explorer step, the same `ToolBox` (built in `dashboard_flow.py` with `PLANNER_TOOL_NAMES`), `run_checked(ask=)`, `discovery.run_tools`, the 3-call budget and the status lines. It replaces only how the tools are used:
+- **Draft.** Every try starts with a plain planner call with the trained prompt and no tool text. The planner never holds the tools.
+- **Check (first try only).** A separate call with `CHECKER_SYSTEM_PROMPT` and the tables plus the draft holds the tools. It decides what to look at (at most `toolbox.max_calls`, each result its compact fact line), then replies one line per plan.
+- **Revise once.** The reply's lines that ask for a change go back to the planner once, in the retry's own form: the draft as its answer, then `FIX_PROMPT` with those lines as the list. No change asked: the draft stands, with no extra call.
+- **Failures.** A check that cannot bind, or fails, and a revision call that fails all leave the draft as it is. They never fail a build.
+- **Then the usual checks.** `run_checked` checks what the ask returns, with the same retries (plain calls) and the same best-attempt ranking.
+- **The harness needs no change.** It calls `plan_charts(..., toolbox=planner_box)` and counts `planner_box.calls`, so tool calls made in the checking turn are counted.
+
+**Files:**
+- Modify: `backend/app/services/agents/planning_contract.py`: remove `PLANNER_TOOLS_NOTE`; add `CHECKER_SYSTEM_PROMPT` and `CHECKER_USER_TEMPLATE`.
+- Modify: `backend/app/services/agents/planning.py`: `_answer`, `changes_asked`, `check_drafts`, and `_checking_asker` replacing `_tool_asker`; `plan_charts_steps` no longer appends a tool note.
+- Modify: `backend/scripts/probe_planner_tools.py`: probe the checking turn.
+- Test: rewrite `backend/tests/test_planner_tools.py` (11 tests replace Task 9's 10). `backend/tests/test_dashboard_endpoint.py` is unchanged.
+- Modify: `AGENTS.md`: the `PLANNER_TOOLS=planner` bullet and two of its sub-bullets.
+
+**Interfaces:**
+- Consumes (all exist): `Probe`, `run_tools(bound, messages, toolbox, compact=False)` (`discovery.py`); `run_checked(..., ask=)`, `Ask`, `_text`, `FIX_PROMPT`, `with_context(..., notes=)`, `include_kinds` (`planning.py` and its imports); `render_profiles`; `ToolBox(tools=PLANNER_TOOL_NAMES, kinds=...)`, `ToolBox.call(..., compact=True)`, `toolbox.max_calls`, `toolbox.exhausted`, `toolbox.calls`.
+- Produces:
+  - `planning_contract.CHECKER_SYSTEM_PROMPT: str` and `planning_contract.CHECKER_USER_TEMPLATE: str` (placeholders `{context}` and `{drafts}`).
+  - `planning.changes_asked(notes: str) -> list[str]`.
+  - `planning.check_drafts(llm, bound, draft: str, context: str, toolbox) -> Generator[Probe, None, list[str]]`.
+  - `planning._checking_asker(llm, toolbox, context: str) -> Ask | None`.
+  - `plan_charts_steps(..., toolbox=None)` and `plan_charts(..., toolbox=None)`: the same signatures. A ToolBox now means a checking turn.
+
+- [ ] **Step 1: Write the failing tests**
+
+Replace the whole of `backend/tests/test_planner_tools.py` with:
+
+```python
+"""PLANNER_TOOLS=planner: the planner drafts with its trained prompt and no tools;
+on its first try a separate checking turn holds the tools (at most 3 calls),
+and the lines it asks to change go back to the planner once, as a retry would."""
+import json
+
+import pandas as pd
+from langchain_core.messages import AIMessage, ToolMessage
+
+from app.services.agents.chartist import ChartistAgent
+from app.services.agents.dashboard_flow import build_dashboard
+from app.services.agents.data_tools import PLANNER_TOOL_NAMES, ToolBox, tool_specs
+from app.services.agents.planning import changes_asked, plan_charts
+from app.services.agents.planning_contract import CHECKER_SYSTEM_PROMPT, FIX_PROMPT
+from app.services.agents.profiler import profile_table
+
+WEEK = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+HOURS = pd.DataFrame({"weekday": [day for day in WEEK for _ in range(24)], "hourOfDay": list(range(24)) * 7,
+                      "bounceRatePct": [30.5 + (i * 7) % 40 for i in range(168)]})
+PROFILES = [profile_table("web", HOURS)]
+DIRECTION = [{"question": "How does the bounce rate move through the day?", "why": "asked", "table": "web",
+              "columns": ["hourOfDay", "bounceRatePct"]}]
+PLAN = {"title": "Bounce rate by hour", "question": "How does the bounce rate move through the day?",
+        "chart": "line", "table": "web", "x": "hourOfDay", "y": "bounceRatePct", "group": "", "agg": "mean",
+        "grain": "", "sort": "", "top_n": 0}
+ANSWER = AIMessage(content=json.dumps({"charts": [PLAN]}))
+RAW_ANSWER = AIMessage(content=json.dumps({"charts": [{**PLAN, "agg": "none"}]}))
+NO_CHANGES = AIMessage(content="no changes")
+PREVIEW = ("preview_chart", {"plans": [{"chart": "line", "table": "web", "x": "hourOfDay", "y": "bounceRatePct",
+                                        "agg": "none"}]})
+
+
+class ToolPlanner:
+    """A stand-in model. Bound (tools offered) and plain calls read one script in
+    order; each call is recorded with which of the two it was."""
+
+    def __init__(self, *replies, bind_fails=False):
+        self.replies, self.seen, self.bind_fails, self.specs = list(replies), [], bind_fails, None
+
+    def bind_tools(self, specs):
+        if self.bind_fails:
+            raise NotImplementedError("this backend has no tools")
+        self.specs = specs
+        return Bound(self)
+
+    def reply(self, kind, messages):
+        self.seen.append((kind, list(messages)))
+        reply = self.replies.pop(0)
+        if isinstance(reply, Exception):
+            raise reply
+        return reply
+
+    def invoke(self, messages):
+        return self.reply("plain", messages)
+
+
+class Bound:
+    def __init__(self, planner):
+        self.planner = planner
+
+    def invoke(self, messages):
+        return self.planner.reply("bound", messages)
+
+
+def calls(*items):
+    return AIMessage(content="", tool_calls=[{"name": n, "args": a, "id": f"c{i}"} for i, (n, a) in enumerate(items)])
+
+
+def box():
+    return ToolBox({"web": {"type": "file", "name": "web"}}, "", loader=lambda source, data_dir: HOURS,
+                   tools=PLANNER_TOOL_NAMES, kinds={"web": PROFILES[0].kinds()})
+
+
+def plan(model, toolbox):
+    return plan_charts(model, DIRECTION, PROFILES, validate=toolbox.validate_spec, toolbox=toolbox)
+
+
+def kinds(model):
+    return [kind for kind, _ in model.seen]
+
+
+def test_the_planner_drafts_plainly_and_a_separate_turn_checks_the_draft():
+    model, toolbox = ToolPlanner(ANSWER, calls(PREVIEW), NO_CHANGES), box()
+    step = plan(model, toolbox)
+    assert step.items and step.errors == [] and step.items[0]["agg"] == "mean"
+    assert kinds(model) == ["plain", "bound", "bound"] and [c.name for c in toolbox.calls] == ["preview_chart"]
+    planner_user = model.seen[0][1][1].content
+    assert "preview_chart" not in planner_user and "tool" not in planner_user.lower()
+    check = model.seen[1][1]
+    assert check[0].content == CHECKER_SYSTEM_PROMPT and ANSWER.content in check[1].content
+    fact = [m for m in model.seen[2][1] if isinstance(m, ToolMessage)][0].content
+    assert fact.startswith("1. line bounceRatePct by hourOfDay: 168 points per line, x repeats within a line")
+
+
+def test_a_change_asked_goes_back_to_the_planner_once_in_the_retrys_form():
+    asked = "1. Change agg to 'mean' so the line does not run back and forth\n2. no changes"
+    model = ToolPlanner(RAW_ANSWER, calls(PREVIEW), AIMessage(content=asked), ANSWER)
+    step = plan(model, box())
+    assert step.items and step.errors == [] and step.items[0]["agg"] == "mean"
+    assert kinds(model) == ["plain", "bound", "bound", "plain"]
+    revision = model.seen[3][1]
+    assert revision[-2].content == RAW_ANSWER.content
+    assert revision[-1].content == FIX_PROMPT.format(errors="- Change agg to 'mean' so the line does not run back and forth")
+
+
+def test_only_lines_that_ask_for_a_change_count():
+    assert changes_asked("no changes") == [] and changes_asked("1. no changes\n2. No changes.") == []
+    assert changes_asked("") == [] and changes_asked("1) None") == []
+    assert changes_asked("1. Change agg to 'mean'\n2. no changes") == ["Change agg to 'mean'"]
+
+
+def test_the_check_runs_on_the_first_try_only_and_a_retry_is_plain():
+    model = ToolPlanner(RAW_ANSWER, NO_CHANGES, ANSWER)
+    step = plan(model, box())
+    assert step.items and step.errors == [] and step.attempts == 2
+    assert kinds(model) == ["plain", "bound", "plain"]
+    assert model.seen[2][1][-1].content.startswith("Some of that did not check out:")
+
+
+def test_a_check_that_keeps_calling_is_answered_by_the_plain_model_after_three():
+    model, toolbox = ToolPlanner(ANSWER, calls(PREVIEW), calls(PREVIEW), calls(PREVIEW), NO_CHANGES), box()
+    step = plan(model, toolbox)
+    assert step.items and len(toolbox.calls) == 3
+    assert kinds(model) == ["plain", "bound", "bound", "bound", "plain"]
+    assert model.seen[-1][1][0].content == CHECKER_SYSTEM_PROMPT
+
+
+def test_without_tool_support_the_planner_plans_without_a_check():
+    model = ToolPlanner(ANSWER, bind_fails=True)
+    step = plan(model, box())
+    assert step.items and step.errors == [] and kinds(model) == ["plain"]
+
+
+def test_a_check_that_fails_leaves_the_draft():
+    model = ToolPlanner(ANSWER, ConnectionError("model server went away"))
+    step = plan(model, box())
+    assert step.items and step.errors == [] and kinds(model) == ["plain", "bound"]
+
+
+def test_a_revision_that_fails_leaves_the_draft():
+    model = ToolPlanner(ANSWER, AIMessage(content="1. Give it a shorter title"), ConnectionError("gone"))
+    step = plan(model, box())
+    assert step.items and step.items[0]["title"] == PLAN["title"] and kinds(model) == ["plain", "bound", "plain"]
+
+
+class Fixed:
+    def invoke(self, variables):
+        return ("import plotly.express as px\n"
+                "d = df.groupby('hourOfDay', as_index=False)['bounceRatePct'].mean()\n"
+                "fig = px.line(d, x='hourOfDay', y='bounceRatePct')\n"
+                "print(fig.to_json())\n")
+
+
+class Scripted:
+    def __init__(self, *replies):
+        self.replies = list(replies)
+
+    def invoke(self, messages):
+        return type("Reply", (), {"content": self.replies.pop(0)})()
+
+
+def test_a_dashboard_in_planner_mode_shows_the_check_and_has_no_explorer_step(tmp_path):
+    path = tmp_path / "web.csv"
+    HOURS.to_csv(path, index=False)
+    directions = json.dumps({"directions": [{**DIRECTION[0], "table": "web.csv"}]})
+    preview = ("preview_chart", {"plans": [{"chart": "line", "table": "web.csv", "x": "hourOfDay",
+                                            "y": "bounceRatePct", "agg": "mean"}]})
+    planner = ToolPlanner(AIMessage(content=json.dumps({"charts": [{**PLAN, "table": "web.csv"}]})),
+                          calls(preview), NO_CHANGES)
+    chartist = ChartistAgent(llm=None, generator=Fixed(), chart_type_hint_style="off")
+    events = list(build_dashboard("bounce rate by hour", [{"type": "file", "name": "web.csv", "path": str(path)}],
+                                  str(tmp_path), Scripted(directions), planner, chartist, planner_tools=True))
+    labels = [e.data["label"] for e in events if e.kind == "status"]
+    assert "Checking the data" not in labels and "Checking the data: previewing 1 draft plan" in labels
+    assert [e.kind for e in events][-1] == "chart"
+
+
+def test_the_checking_turns_prompt_and_tools_stay_small():
+    # Measured in the controller's runs (2026-11-23): the checking turn's prompt was 1,154-1,924 server
+    # tokens with two drafts; lora-v2 was trained at 2,048. These caps stand in for tokens.
+    specs = json.dumps(tool_specs(["t"], PLANNER_TOOL_NAMES), separators=(",", ":"))
+    assert len(specs) <= 2000 and len(CHECKER_SYSTEM_PROMPT) <= 900
+
+
+class PickyPlanner(ToolPlanner):
+    """A server that refuses tool turns when no tools are offered (a plain call)."""
+
+    def invoke(self, messages):
+        if any(isinstance(m, ToolMessage) for m in messages):
+            self.seen.append(("plain refused", list(messages)))
+            raise ValueError("tool messages need tools")
+        return self.reply("plain", messages)
+
+
+def test_a_server_that_refuses_tool_turns_unbound_still_gets_the_checks_answer():
+    model = PickyPlanner(ANSWER, calls(("row_grain", {"table": "web"})), calls(PREVIEW),
+                         calls(("inspect_column", {"table": "web", "column": "weekday"})), NO_CHANGES)
+    step = plan(model, box())
+    assert step.items and step.errors == []
+    assert kinds(model)[-2:] == ["plain refused", "plain"]
+    assert not any(isinstance(m, ToolMessage) for m in model.seen[-1][1])
+```
+
+- [ ] **Step 2: Run them to see them fail**
+
+Run: `cd backend && .venv/bin/python -m pytest -q tests/test_planner_tools.py`
+Expected: a collection error, `ImportError: cannot import name 'changes_asked' from 'app.services.agents.planning'` (or `CHECKER_SYSTEM_PROMPT`).
+
+- [ ] **Step 3: The checking prompt** (`planning_contract.py`)
+
+Replace the whole `PLANNER_TOOLS_NOTE = """..."""` assignment (from `PLANNER_TOOLS_NOTE = """Before you reply` down to its closing `Then reply with the JSON only."""`) with:
+
+```python
+# The checking turn's own call (PLANNER_TOOLS=planner). lora-v2's planner calls no
+# tool under its trained prompt (AGENTS.md, measured 2026-11-23), so the tools live
+# in this separate call, which called preview_chart in 6 of 6 runs.
+CHECKER_SYSTEM_PROMPT = (
+    "You check draft chart plans against the real data before they are drawn. The plans were written from a "
+    "profile of a 2,000-row sample; the full tables may differ. Use the tools to look at whatever could make a "
+    "plan wrong: preview_chart shows what up to 7 draft plans would draw and any problem the checks would raise; "
+    "row_grain says which columns identify one row of a table; inspect_column, find_columns and relationship "
+    "give facts about columns. Make at most 3 tool calls, one at a time. Then reply with one short line per plan "
+    "saying what to change, or 'no changes'.")
+
+CHECKER_USER_TEMPLATE = """Tables:
+{context}
+
+Draft plans:
+{drafts}"""
+```
+
+The wording is the one the controller's runs used; keep it exactly.
+
+- [ ] **Step 4: The checking turn** (`planning.py`)
+
+1. In the `from app.services.agents.planning_contract import (` block, replace `PLANNER_TOOLS_NOTE,` with `CHECKER_SYSTEM_PROMPT,` and `CHECKER_USER_TEMPLATE,` (keep the block's alphabetical order). Add `import re` to the module's imports if it is not there.
+
+2. Replace the whole `def _tool_asker(llm: Any, toolbox: Any) -> Ask | None:` function (down to its `return ask`) with:
+
+```python
+def _answer(llm: Any, messages: list) -> Any:
+    """The plain model's reply. A server that will not take tool turns without
+    tools offered gets the same messages without them."""
+    try:
+        return llm.invoke(messages)
+    except Exception as exc:  # noqa: BLE001 - retried once below, without the tool turns
+        plain = [m for m in messages if not isinstance(m, ToolMessage) and not getattr(m, "tool_calls", None)]
+        if len(plain) == len(messages):
+            raise
+        logger.warning("[planning] answering with the tool turns failed, answering without them: %s", exc)
+        return llm.invoke(plain)
+
+
+_NO_CHANGE = {"no changes", "no change", "none"}
+
+
+def changes_asked(notes: str) -> list[str]:
+    """The lines of the checking turn's reply that ask for a change, without their
+    list numbers: every line except empty ones and those that say only "no
+    changes" (or "none"). [] means the drafts stand."""
+    asked = []
+    for line in notes.splitlines():
+        words = re.sub(r"^\s*\d+[.)]\s*", "", line).strip()
+        if words and re.sub(r"[^a-z ]", "", words.lower()).strip() not in _NO_CHANGE:
+            asked.append(words)
+    return asked
+
+
+def check_drafts(llm: Any, bound: Any, draft: str, context: str, toolbox: Any) -> Generator[Probe, None, list[str]]:
+    """The checking turn: a separate call with its own system prompt holds the
+    tools and decides what to look at in the drafts (at most toolbox.max_calls,
+    each result its compact fact line), then says what to change. When the budget
+    runs out while it is still calling, the plain model answers. Returns the
+    lines that ask for a change. A failed model call raises."""
+    messages: list = [SystemMessage(content=CHECKER_SYSTEM_PROMPT),
+                      HumanMessage(content=CHECKER_USER_TEMPLATE.format(context=context, drafts=draft))]
+    reply = yield from run_tools(bound, messages, toolbox, compact=True)
+    if reply is None or getattr(reply, "tool_calls", None):
+        reply = _answer(llm, messages)
+    return changes_asked(_text(reply))
+
+
+def _checking_asker(llm: Any, toolbox: Any, context: str) -> Ask | None:
+    """How the planner answers when its drafts are checked (PLANNER_TOOLS=planner).
+    Every try starts with a plain call, as the planner was trained. After the
+    first, a checking turn holds the tools (`check_drafts`); the lines it asks to
+    change go back to the planner once, in the retry's own form (FIX_PROMPT).
+    A check or a revision that fails leaves the draft, never a failed build.
+    lora-v2's planner calls no tool while it plans (AGENTS.md), so the tools
+    live in this separate turn."""
+    try:
+        bound = llm.bind_tools(toolbox.specs)
+    except Exception as exc:  # noqa: BLE001 - no tools on this backend: plan without the check
+        logger.warning("[planning] checking turn unavailable, planning without it: %s", exc)
+        return None
+
+    def ask(messages: list, attempt: int) -> Generator[Probe, None, str]:
+        draft = _text(llm.invoke(messages))
+        if attempt != 1:
+            return draft
+        try:
+            asked = yield from check_drafts(llm, bound, draft, context, toolbox)
+        except Exception as exc:  # noqa: BLE001 - the check failed: the draft stands
+            logger.warning("[planning] checking turn failed, keeping the draft: %s", exc)
+            return draft
+        if not asked:
+            return draft
+        logger.info("[planning] checking turn asked for %d change(s): %s", len(asked), "; ".join(asked[:7]))
+        revision = messages + [AIMessage(content=draft),
+                               HumanMessage(content=FIX_PROMPT.format(errors="\n".join(f"- {line}" for line in asked)))]
+        try:
+            return _text(llm.invoke(revision))
+        except Exception as exc:  # noqa: BLE001 - the revision failed: the draft stands
+            logger.warning("[planning] revision after the check failed, keeping the draft: %s", exc)
+            return draft
+
+    return ask
+```
+
+3. In `plan_charts_steps`, replace
+
+```python
+    ask = _tool_asker(llm, toolbox) if toolbox is not None else None
+    user = with_context(
+        PLANNER_USER_TEMPLATE.format(profiles=render_profiles(profiles), directions=render_directions(directions)),
+        facts,
+        links=links,
+        notes=(include_kinds(kinds), PLANNER_TOOLS_NOTE if ask is not None else ""),
+    )
+```
+
+with
+
+```python
+    context = render_profiles(profiles) + (f"\n\n{links}" if links else "")
+    ask = _checking_asker(llm, toolbox, context) if toolbox is not None else None
+    user = with_context(
+        PLANNER_USER_TEMPLATE.format(profiles=render_profiles(profiles), directions=render_directions(directions)),
+        facts,
+        links=links,
+        notes=(include_kinds(kinds),),
+    )
+```
+
+`SystemMessage`, `HumanMessage`, `AIMessage`, `ToolMessage`, `Probe`, `run_tools`, `_text` and `FIX_PROMPT` are already imported in `planning.py` (check; import any that is missing from where the module already gets its siblings).
+
+- [ ] **Step 5: Run the tests**
+
+Run: `cd backend && .venv/bin/python -m pytest -q tests/test_planner_tools.py tests/test_dashboard_endpoint.py tests/test_planning_steps.py tests/test_planning_contract.py tests/test_dashboard_flow.py`
+Expected: all pass.
+
+Run: `cd backend && .venv/bin/python -m pytest --co -q tests` (sum the per-file counts) and `cd backend && .venv/bin/python -m pytest -q tests`
+Expected: 185 collected; the only failures are the 3 known ones.
+
+Run: `cd chartist-finetune && ../backend/.venv/bin/python -m pytest -q tests`
+Expected: 89 passed (`planning_contract.py` is loaded there by path and still imports only the standard library and pandas).
+
+- [ ] **Step 6: The probe asks the checking turn** (`backend/scripts/probe_planner_tools.py`)
+
+Rewrite the script so it probes what this mode now relies on, on `web_traffic.csv` as before, saving nothing:
+1. a plain planner call (trained prompt, the same direction as now, no notes) gives the draft; print `0. draft:` and `(chart, x, y, agg)` per plan, and its server prompt tokens;
+2. the checking turn: `planner.bind_tools(box.specs)` invoked on `[SystemMessage(CHECKER_SYSTEM_PROMPT), HumanMessage(CHECKER_USER_TEMPLATE.format(context=render_profiles([profile]), drafts=<draft text>))]`; print `1. tool calls:` with the names (or `none`), `preview_chart plans arrived as <type>` when it called preview_chart, and its server prompt tokens;
+3. after that call and its tool result(s) (`box.call(..., compact=True)` as `ToolMessage`s), a plain call (no tools offered) on the same messages; print `2. plain call after tool turns:` and the first 200 characters of its reply, or `raised: <error>`, and its server prompt tokens.
+Keep the module docstring honest about what it probes, keep the `prompt_tokens` helper, and import `CHECKER_SYSTEM_PROMPT`/`CHECKER_USER_TEMPLATE` instead of `PLANNER_TOOLS_NOTE`/`with_context`.
+
+Run: `cd backend && .venv/bin/python -m py_compile scripts/probe_planner_tools.py`
+Expected: no output. Do not run it against a server (the controller does).
+
+- [ ] **Step 7: AGENTS.md**
+
+In the bullet that starts with `` - `PLANNER_TOOLS=planner`: there is no explorer step``:
+1. Replace that first line with:
+
+```markdown
+- `PLANNER_TOOLS=planner`: there is no explorer step. The planner drafts with its trained prompt and no tools. On its first try a separate checking turn (`planning.check_drafts`, `CHECKER_SYSTEM_PROMPT`) holds `preview_chart`, `row_grain`, `inspect_column`, `find_columns` and `relationship`, decides what to look at (at most 3 calls, each result its fact line) and replies one line per plan; the lines that ask for a change go back to the planner once, as a retry (`FIX_PROMPT`). The tools live in that separate turn because lora-v2's planner calls no tool under its trained prompt (below).
+```
+
+2. Replace its sub-bullet that starts with `  - A retry is a plain call.` with:
+
+```markdown
+  - Retries are plain calls. When the budget runs out while the checking turn is still calling, the plain model answers for it. A check that cannot bind or fails, and a revision that fails, leave the draft. A server that refuses tool turns in a plain call is asked again without them.
+```
+
+3. Replace its sub-bullet that starts with `  - Binding the tools adds ~850 tokens` with:
+
+```markdown
+  - The planner's own prompt gets no tool text. The checking turn's prompt measured 1,154-1,924 server tokens with two drafts in the controller's runs. A test caps its system prompt (at most 900 chars) and the tool specs (at most 2,000).
+```
+
+Leave the other sub-bullets (the compose line, the probe, the three variants, the control) as they are.
+
+- [ ] **Step 8: Commit**
+
+```bash
+git add backend/app/services/agents/planning_contract.py backend/app/services/agents/planning.py \
+  backend/scripts/probe_planner_tools.py backend/tests/test_planner_tools.py AGENTS.md
+git commit -m "feat(planning): planner mode checks the drafts in a separate turn that holds the tools
+
+lora-v2's planner calls no tool under its trained prompt (0 in 7), so the
+in-call loop never ran. The planner now drafts as trained; on its first try a
+checking turn with its own prompt holds the tools, and the lines it asks to
+change go back once, as a retry. A failed check or revision keeps the draft.
+
+Co-Authored-By: <your own model's trailer>"
+```
+
+---
+
 ### Task 10: Measure `planner` against `on`, time the tools, and decide the default
 
 The user's goal is that the model decides what to look at. This task measures whether letting the planner hold the tools is at least as good as today's explorer step:
