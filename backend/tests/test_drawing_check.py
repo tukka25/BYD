@@ -108,3 +108,11 @@ def test_a_comparison_cell_with_a_line_never_fixed_is_not_a_chart():
                "sample": HOURS.head(3).to_dict("records")}
     cell = comparison.run_cell("slm", chartist, "Bounce rate by hour", {}, context, HOURS, SafeExecutor())
     assert not cell.ok and cell.figure is None and cell.repairs == 2 and "back and forth" in cell.error
+
+
+def test_a_staircase_that_never_turns_back_is_fine():
+    assert figure_problems(figure(mode="lines", x=[1, 1, 2, 3, 3, 3], y=[1, 2, 3, 4, 5, 6])) == []
+
+
+def test_a_sorted_x_whose_y_jumps_is_still_a_problem():
+    assert figure_problems(figure(mode="lines", x=[0, 0, 1, 1], y=[5, 1, 4, 2]))

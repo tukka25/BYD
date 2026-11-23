@@ -293,6 +293,17 @@ def _drawn_as_line(trace: dict) -> bool:
     return bool(trace.get("stackgroup")) or mode is None or "lines" in str(mode)
 
 
+def _is_staircase(points: list) -> bool:
+    """x never goes back and y only rises or only falls: a step line, not a line run back and forth."""
+    try:
+        xs, ys = [p[0] for p in points], [p[1] for p in points]
+        steps = list(zip(ys, ys[1:]))
+        return (all(a <= b for a, b in zip(xs, xs[1:]))
+                and (all(a <= b for a, b in steps) or all(a >= b for a, b in steps)))
+    except TypeError:
+        return False
+
+
 def figure_problems(figure: dict) -> list[str]:
     """What a drawn figure gets wrong, in words the model can act on; [] when nothing does.
 
@@ -300,7 +311,8 @@ def figure_problems(figure: dict) -> list[str]:
     workflow.run_on_frame does. One rule today: a line on which one x value
     carries more than one y value runs back and forth across the chart (rows of
     two keys, drawn as one line over one of them). The same x with the same y
-    draws over itself and is fine. An x or y that cannot be read is not a problem.
+    draws over itself and is fine, and so is a staircase (x never goes back, y only
+    rises or only falls, as px.ecdf draws). An x or y that cannot be read is not a problem.
     """
     problems = []
     for n, trace in enumerate((figure or {}).get("data") or [], 1):
@@ -317,7 +329,7 @@ def figure_problems(figure: dict) -> list[str]:
                     tuple(y) if isinstance(y, list) else y)
         except TypeError:
             continue
-        if any(len(values) > 1 for values in seen.values()):
+        if any(len(values) > 1 for values in seen.values()) and not _is_staircase(points):
             name = str(trace.get("name") or "").strip() or f"trace {n}"
             problem = (f"the line '{name}' has {len(points):,} points but only {len(seen):,} x values, "
                        f"so it runs back and forth: {REPEATED_X_FIX}")
