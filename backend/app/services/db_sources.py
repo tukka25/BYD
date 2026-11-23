@@ -295,21 +295,35 @@ def load_table_by_id(source_id: str, table: str) -> pd.DataFrame:
 
 
 def candidates_for(source: Any, max_tables: int = MAX_TABLES) -> List[Dict[str, Any]]:
-    """Each table of a connection, in the shape the data detective ranks.
+    """Each table of a connection, and each table joined to its parent through a
+    declared foreign key, in the shape the data detective ranks.
 
-    A connection is not itself a candidate: a chart is built from one table, so
-    the tables are what the detective chooses between.
+    A connection is not itself a candidate: a chart is built from one table (or
+    one joined table), so tables are what the detective and planner choose between.
     """
-    out: List[Dict[str, Any]] = []
-    for entry in tables_with_columns(source, limit=max_tables):
+    entries = tables_with_columns(source, limit=max_tables)
+    out: List[Dict[str, Any]] = [
+        {
+            "id": f"{source.id}:{entry['table']}",
+            "name": f"{entry['table']} · {source.display_name}",
+            "type": "db",
+            "source_id": source.id,
+            "table": entry["table"],
+            "columns": entry["columns"],
+        }
+        for entry in entries
+    ]
+    columns = {entry["table"]: entry["columns"] for entry in entries}
+    for link in foreign_keys(source, list(columns))[:MAX_JOINS]:
         out.append(
             {
-                "id": f"{source.id}:{entry['table']}",
-                "name": f"{entry['table']} · {source.display_name}",
+                "id": f"{source.id}:{link.label}",
+                "name": f"{link.label} · {source.display_name}",
                 "type": "db",
                 "source_id": source.id,
-                "table": entry["table"],
-                "columns": entry["columns"],
+                "table": link.label,
+                "join": link.to_dict(),
+                "columns": columns[link.child] + [f"{link.parent}.{c}" for c in columns[link.parent]],
             }
         )
     return out

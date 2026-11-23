@@ -117,12 +117,17 @@ def _db_schema(selected: Dict[str, Any]) -> Dict[str, Any]:
         )
         if source is None:
             return {"error": "that database connection no longer exists"}
-        schema = db_sources.schema_of(source, str(selected.get("table")))
+        if selected.get("join"):
+            schema = db_sources.joined_schema(source, db_sources.Link.from_dict(selected["join"]))
+        else:
+            schema = db_sources.schema_of(source, str(selected.get("table")))
         if "error" not in schema:
             # Carried so the executor can load the same table without
             # resolving the source a second time.
             schema["source_id"] = source.id
             schema["table"] = selected.get("table")
+            if selected.get("join"):
+                schema["join"] = selected["join"]
         return schema
     finally:
         session.close()
@@ -235,6 +240,16 @@ def run_chart_code(
     Shared by the question workflow and the dashboard's planned charts, so both
     send failed code back to the model the same way (`run_on_frame`).
     """
+    if data_context.get("source_id") and data_context.get("join"):
+        try:
+            df = db_sources.load_joined_by_id(
+                str(data_context["source_id"]), db_sources.Link.from_dict(data_context["join"])
+            )
+        except Exception as exc:
+            logger.error("[workflow/executor] joined table load failed: %s", exc)
+            return {"error": f"Failed to read that joined table: {exc}"}
+        return run_on_frame(executor, code, df, repair)
+
     if data_context.get("source_id") and data_context.get("table"):
         try:
             df = db_sources.load_table_by_id(

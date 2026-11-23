@@ -448,6 +448,8 @@ def load_frame(source: Dict[str, Any], data_dir: Any) -> pd.DataFrame:
     if source.get("type") == "db":
         from app.services import db_sources
 
+        if source.get("join"):
+            return db_sources.load_joined_by_id(str(source["source_id"]), db_sources.Link.from_dict(source["join"]))
         return db_sources.load_table_by_id(str(source["source_id"]), str(source["table"]))
 
     from pathlib import Path

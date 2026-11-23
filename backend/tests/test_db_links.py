@@ -64,3 +64,46 @@ def test_a_joined_table_over_the_row_limit_is_refused(monkeypatch):
 def test_a_schema_read_takes_only_a_few_rows():
     with shop_engine().connect() as conn:
         assert len(load_joined_on(conn, ORDERS_CUSTOMERS, limit=2)) == 2
+
+
+def test_a_connection_offers_each_joined_table(monkeypatch):
+    monkeypatch.setattr(db_sources, "tables_with_columns", lambda source, limit: [
+        {"table": "customers", "columns": ["id", "region"]},
+        {"table": "orders", "columns": ["id", "customer_id", "revenue"]}])
+    monkeypatch.setattr(db_sources, "foreign_keys", lambda source, tables: [ORDERS_CUSTOMERS])
+    source = type("Source", (), {"id": "s1", "display_name": "Shop"})()
+    joined = [c for c in db_sources.candidates_for(source) if c.get("join")]
+    assert [c["table"] for c in joined] == ["orders+customers"]
+    assert joined[0]["columns"] == ["id", "customer_id", "revenue", "customers.id", "customers.region"]
+    assert joined[0]["join"] == ORDERS_CUSTOMERS.to_dict() and joined[0]["id"] == "s1:orders+customers"
+
+
+def test_load_frame_reads_a_joined_table(monkeypatch):
+    from app.services.agents.architect import load_frame
+
+    seen = {}
+
+    def fake(source_id, link, limit=None):
+        seen.update(source_id=source_id, link=link)
+        return pd.DataFrame({"revenue": [1], "customers.region": ["North"]})
+
+    monkeypatch.setattr(db_sources, "load_joined_by_id", fake)
+    frame = load_frame({"type": "db", "source_id": "s1", "table": "orders+customers",
+                        "join": ORDERS_CUSTOMERS.to_dict()}, "")
+    assert list(frame.columns) == ["revenue", "customers.region"]
+    assert seen == {"source_id": "s1", "link": ORDERS_CUSTOMERS}
+
+
+def test_a_chart_runs_on_a_joined_table(monkeypatch):
+    from app.services.agents.workflow import run_chart_code
+    from app.utils.executor import SafeExecutor
+
+    joined = pd.DataFrame({"revenue": [10, 20, 30], "customers.region": ["North", "South", "North"]})
+    monkeypatch.setattr(db_sources, "load_joined_by_id", lambda source_id, link, limit=None: joined)
+    code = ("import plotly.express as px\n"
+            "d = df.groupby('customers.region', as_index=False)['revenue'].sum()\n"
+            "fig = px.bar(d, x='customers.region', y='revenue')\n"
+            "print(fig.to_json())\n")
+    out = run_chart_code({"source_id": "s1", "table": "orders+customers", "join": ORDERS_CUSTOMERS.to_dict()},
+                         code, SafeExecutor())
+    assert out["execution_result"]["figure"]["data"][0]["type"] == "bar"
