@@ -9,7 +9,8 @@ from __future__ import annotations
 
 import json
 import re
-from typing import Any
+from dataclasses import dataclass
+from typing import Any, Callable
 
 import pandas as pd
 
@@ -172,3 +173,208 @@ def inspect_column(frame: pd.DataFrame, table: str, column: str, detail: str = "
             facts.append(f"values have a natural order: {order}")
     out["fact"] = "; ".join(facts)
     return out
+
+
+MAX_CALLS = 3          # tool calls per dashboard build
+LINE_POINTS = 1000     # more points than this on one line chart is unreadable
+CAPS = {"bar": 50, "waterfall": 50, "pie": 12, "funnel": 12, "treemap": 200, "sunburst": 200, "heatmap": 2500}
+GRAIN_FREQ = {"day": "D", "week": "W", "month": "M", "quarter": "Q", "year": "Y"}
+AGGS = ("sum", "mean", "median", "count", "min", "max", "none")
+TOOL_NAMES = ("find_columns", "inspect_column", "relationship", "preview")
+
+
+def relationship(frame: pd.DataFrame, table: str, a: str, b: str) -> dict[str, Any]:
+    """How two columns relate: a correlation, a mean per group, or the combinations present."""
+    ka, kb = _kind(frame[a]), _kind(frame[b])
+    pair = frame[[a, b]].dropna()
+    out: dict[str, Any] = {"table": table, "a": a, "b": b, "kinds": [ka, kb], "rows": int(len(pair))}
+    if ka == "number" and kb == "number":
+        r = pair[a].corr(pair[b])
+        if pd.isna(r):
+            out["fact"] = f"{a} vs {b}: no correlation can be measured (a column is constant)"
+            return out
+        out["correlation"] = round(float(r), 2)
+        strength = "strong" if abs(r) >= 0.6 else "moderate" if abs(r) >= 0.3 else "weak"
+        out["fact"] = f"{a} vs {b}: {strength} correlation {r:.2f} over {len(pair):,} rows"
+    elif "number" in (ka, kb):
+        group, measure = (a, b) if kb == "number" else (b, a)
+        means = pair.groupby(group)[measure].agg(["mean", "size"]).sort_values("size", ascending=False)
+        out["groups"] = int(len(means))
+        out["means"] = [{"value": _short(key), "mean": _num(row["mean"]), "rows": int(row["size"])}
+                        for key, row in means.head(10).iterrows()]
+        out["fact"] = (f"mean {measure} by {group}: {_num(means['mean'].min())} to "
+                       f"{_num(means['mean'].max())} across {len(means):,} groups")
+    else:
+        combos = pair.groupby([a, b]).size().sort_values(ascending=False)
+        out["combinations"] = int(len(combos))
+        out["top_pairs"] = [{"pair": [_short(x), _short(y)], "rows": int(n)} for (x, y), n in combos.head(10).items()]
+        out["fact"] = f"{a} x {b}: {len(combos):,} combinations present"
+    return out
+
+
+def preview(frame: pd.DataFrame, table: str, x: str, y: str = "", agg: str = "sum", group: str = "",
+            top_n: int = 0, grain: str = "") -> dict[str, Any]:
+    """What a chart over these columns would show on the real data. Facts, not a chart."""
+    columns = [c for c in (x, y, group) if c]
+    data = frame[columns].dropna()
+    out: dict[str, Any] = {"table": table, "rows_used": int(len(data)),
+                           "rows_dropped_empty": int(len(frame) - len(data))}
+    if agg == "none" or not x:
+        out["points"] = out["shown"] = int(len(data))
+        dropped = f"; {out['rows_dropped_empty']:,} rows with empty values left out" if out["rows_dropped_empty"] else ""
+        out["fact"] = f"{len(data):,} raw points{dropped}"
+        return out
+    if grain in GRAIN_FREQ:
+        stamps = pd.to_datetime(data[x], errors="coerce", format="mixed")
+        data = data.assign(**{x: stamps.dt.to_period(GRAIN_FREQ[grain]).astype(str)})
+    keys = [x] + ([group] if group else [])
+    grouped = data.groupby(keys)
+    values = grouped.size() if (agg == "count" or not y) else getattr(grouped[y], agg)()
+    out["groups"] = int(len(values))
+    if top_n:
+        values = values.sort_values(ascending=False).head(top_n)
+    out["shown"] = int(len(values))
+    out["first"] = [{"key": [_short(k) for k in (key if isinstance(key, tuple) else (key,))], "value": _num(v)}
+                    for key, v in values.head(10).items()]
+    fact = f"{out['groups']:,} groups" + (f", top {out['shown']} shown" if top_n else "")
+    if y and agg == "sum" and _kind(frame[x]) in ("text", "id"):
+        per_x = data.groupby(x).size()
+        if int(per_x.max()) > 1:
+            out["rows_per_x"] = {"min": int(per_x.min()), "max": int(per_x.max())}
+            fact += f"; each {x} value sums {out['rows_per_x']['min']} to {out['rows_per_x']['max']} rows"
+    out["fact"] = fact
+    return out
+
+
+def tool_specs(tables: list[str]) -> list[dict[str, Any]]:
+    """The four tools in the OpenAI format mlx_lm server forwards to the chat template."""
+    table = {"type": "string", "enum": tables}
+    def spec(name: str, description: str, properties: dict, required: list[str]) -> dict:
+        return {"type": "function", "function": {"name": name, "description": description, "parameters": {
+            "type": "object", "properties": properties, "required": required}}}
+    return [
+        spec("find_columns", "Search every table for columns whose name or common values match a word. "
+             "Use it instead of listing columns; returns at most 10 matches and a total.",
+             {"query": {"type": "string"}}, ["query"]),
+        spec("inspect_column", "Facts about one column on the full table: kind, distinct values, empties, "
+             "quartiles, top values, whether values repeat, date precision, natural order.",
+             {"table": table, "column": {"type": "string"},
+              "detail": {"type": "string", "enum": ["concise", "detailed"]}}, ["table", "column"]),
+        spec("relationship", "How two columns of a table relate: correlation for two numbers, the mean per "
+             "group for a category and a number, the combinations present for two categories.",
+             {"table": table, "a": {"type": "string"}, "b": {"type": "string"}}, ["table", "a", "b"]),
+        spec("preview", "What a chart over these columns would show on the real data: rows used, groups, "
+             "the first values, and whether a sum adds up repeated rows.",
+             {"table": table, "x": {"type": "string"}, "y": {"type": "string"},
+              "agg": {"type": "string", "enum": list(AGGS)}, "group": {"type": "string"},
+              "top_n": {"type": "integer"},
+              "grain": {"type": "string", "enum": ["", *GRAIN_FREQ]}}, ["table", "x"]),
+    ]
+
+
+@dataclass
+class ToolCall:
+    name: str
+    args: dict
+    result: str
+    fact: str
+
+
+class ToolBox:
+    """One run's tools: the tables it may read (loaded once, on first use), its
+    call budget, and the facts found so far."""
+
+    def __init__(self, sources: dict[str, dict], data_dir: str, max_calls: int = MAX_CALLS,
+                 loader: Callable[[dict, str], pd.DataFrame] | None = None):
+        self.sources = sources
+        self.data_dir = data_dir
+        self.max_calls = max_calls
+        self._loader = loader
+        self._frames: dict[str, pd.DataFrame] = {}
+        self.calls: list[ToolCall] = []
+
+    @property
+    def specs(self) -> list[dict[str, Any]]:
+        return tool_specs(list(self.sources))
+
+    @property
+    def exhausted(self) -> bool:
+        return len(self.calls) >= self.max_calls
+
+    def frame(self, table: str) -> pd.DataFrame:
+        if table not in self.sources:
+            raise KeyError(f"no table '{table}'; tables are: {', '.join(self.sources)}")
+        if table not in self._frames:
+            load = self._loader
+            if load is None:
+                from app.services.agents.architect import load_frame as load
+            self._frames[table] = load(self.sources[table], self.data_dir)
+        return self._frames[table]
+
+    def _with(self, table: str, *columns: str) -> pd.DataFrame:
+        frame = self.frame(table)
+        for column in columns:
+            if column and column not in frame.columns:
+                near = [str(c) for c in frame.columns if set(_tokens(c)) & set(_tokens(column))][:5]
+                hint = (f"; columns like it: {', '.join(near)}" if near
+                        else f"; use find_columns to search its {len(frame.columns)} columns")
+                raise KeyError(f"'{column}' is not a column of '{table}'{hint}")
+        return frame
+
+    def call(self, name: str, args: dict | None) -> str:
+        if self.exhausted:
+            return bounded({"error": f"the tool budget ({self.max_calls} calls) is used up: answer now"})
+        args = dict(args or {})
+        try:
+            result = self._run(name, args)
+        except (KeyError, ValueError, TypeError) as exc:
+            # args[0], not str(exc): str() of a KeyError wraps the message in quotes.
+            result = {"error": str(exc.args[0]) if exc.args else str(exc)}
+        text = bounded(result)
+        self.calls.append(ToolCall(name, args, text, str(result.get("fact", ""))))
+        return text
+
+    def _run(self, name: str, args: dict) -> dict[str, Any]:
+        if name == "find_columns":
+            return find_columns({t: self.frame(t) for t in self.sources}, str(args.get("query", "")))
+        table = str(args.get("table", ""))
+        if name == "inspect_column":
+            column = str(args.get("column", ""))
+            return inspect_column(self._with(table, column), table, column, str(args.get("detail") or "concise"))
+        if name == "relationship":
+            a, b = str(args.get("a", "")), str(args.get("b", ""))
+            return relationship(self._with(table, a, b), table, a, b)
+        if name == "preview":
+            x, y, group = str(args.get("x", "")), str(args.get("y") or ""), str(args.get("group") or "")
+            agg = str(args.get("agg") or "sum")
+            if agg not in AGGS:
+                raise ValueError(f"agg '{agg}' is not one of: {', '.join(AGGS)}")
+            frame = self._with(table, x, y, group)
+            return preview(frame, table, x, y, agg, group, int(args.get("top_n") or 0), str(args.get("grain") or ""))
+        raise ValueError(f"no tool '{name}'; tools are: {', '.join(TOOL_NAMES)}")
+
+    def facts(self) -> list[str]:
+        return [call.fact for call in self.calls if call.fact]
+
+    def validate_spec(self, spec: dict) -> list[str]:
+        """Objective problems a planned chart would have on the real data. Not a
+        judgement of taste: only what cannot be drawn readably."""
+        chart = spec.get("chart")
+        if chart in ("kpi", "scatter", "histogram", "box"):
+            return []
+        try:
+            shown = preview(self.frame(spec["table"]), spec["table"], spec.get("x", ""), spec.get("y", ""),
+                            spec.get("agg", "sum"), spec.get("group", ""), int(spec.get("top_n") or 0),
+                            spec.get("grain", ""))
+        except Exception:  # noqa: BLE001 - a check that cannot run is not a problem with the plan
+            return []
+        if shown.get("rows_used") == 0:
+            return [f"'{spec.get('y') or spec.get('x')}' has no values to plot: every row is empty"]
+        n = int(shown.get("shown", 0))
+        if chart in ("line", "area") and n > LINE_POINTS:
+            return [f"would draw {n:,} points on a line: aggregate it (agg, or a grain for dates)"]
+        cap = CAPS.get(chart)
+        if cap and n > cap:
+            unit = "cells" if chart == "heatmap" else "bars" if chart in ("bar", "waterfall") else "pieces"
+            return [f"would draw {n:,} {unit}, more than {cap}: set top_n or use a coarser column"]
+        return []

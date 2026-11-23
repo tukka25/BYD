@@ -73,3 +73,56 @@ def test_distinct_counts_the_whole_column_not_the_sample():
     big = pd.DataFrame({"code": [f"c{i}" for i in range(5000)] + ["c0"] * 1000})
     found = find_columns({"big": big}, "code")
     assert found["matches"][0]["distinct"] == 5000
+
+
+from app.services.agents.data_tools import ToolBox, preview, relationship
+
+
+def toolbox(**frames):
+    return ToolBox({name: {"type": "file", "name": name} for name in frames}, "",
+                   loader=lambda source, data_dir: frames[source["name"]])
+
+
+def test_relationship_between_two_numbers_is_a_correlation():
+    frame = pd.DataFrame({"a": [1, 2, 3, 4, 5, 6], "b": [2, 4, 6, 8, 10, 13]})
+    facts = relationship(frame, "t", "a", "b")
+    assert facts["correlation"] > 0.99 and "strong correlation" in facts["fact"]
+
+
+def test_relationship_between_a_category_and_a_number_is_a_mean_per_group():
+    facts = relationship(TRACKS, "tracks", "playlist_genre", "track_popularity")
+    assert facts["groups"] == 4 and len(facts["means"]) == 4
+
+
+def test_preview_says_a_sum_adds_up_repeated_names():
+    facts = preview(TRACKS, "tracks", "track_name", "track_popularity", "sum", top_n=5)
+    assert facts["groups"] == 38 and facts["shown"] == 5
+    assert facts["rows_per_x"] == {"min": 1, "max": 3} and "sums 1 to 3 rows" in facts["fact"]
+
+
+def test_the_toolbox_teaches_when_a_column_is_wrong():
+    box = toolbox(tracks=TRACKS)
+    reply = json.loads(box.call("inspect_column", {"table": "tracks", "column": "genre"}))
+    assert "not a column of 'tracks'" in reply["error"] and "playlist_genre" in reply["error"]
+
+
+def test_the_toolbox_stops_at_its_budget():
+    box = toolbox(tracks=TRACKS)
+    for _ in range(3):
+        box.call("find_columns", {"query": "genre"})
+    reply = json.loads(box.call("find_columns", {"query": "genre"}))
+    assert box.exhausted and "budget" in reply["error"] and len(box.calls) == 3
+
+
+def test_validate_refuses_a_bar_per_row_and_accepts_it_cut_to_top_n():
+    names = pd.DataFrame({"name": [f"n{i}" for i in range(60)], "v": range(60)})
+    box = toolbox(t=names)
+    bar = {"chart": "bar", "table": "t", "x": "name", "y": "v", "agg": "sum", "group": "", "top_n": 0, "grain": ""}
+    assert "60 bars" in box.validate_spec(bar)[0]
+    assert box.validate_spec({**bar, "top_n": 20}) == []
+
+
+def test_validate_refuses_a_line_through_every_raw_row():
+    rows = pd.DataFrame({"t": range(1500), "v": range(1500)})
+    line = {"chart": "line", "table": "r", "x": "t", "y": "v", "agg": "none", "group": "", "top_n": 0, "grain": ""}
+    assert "1,500 points" in toolbox(r=rows).validate_spec(line)[0]
