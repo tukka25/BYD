@@ -12,7 +12,7 @@ and a failed check goes back to the model as a plain-language error.
 from __future__ import annotations
 
 import json
-from typing import Any
+from typing import Any, Callable
 
 CHART_KINDS = (
     "kpi", "bar", "line", "area", "scatter", "pie", "histogram", "box",
@@ -130,6 +130,18 @@ Tables:
 {profiles}
 
 Check the facts this request depends on before anyone plans charts."""
+
+FACTS_HEADER = "Facts checked on the full data:"
+
+
+def with_context(text: str, facts: str = "", memory: str = "") -> str:
+    """A planning user message, with optional sections after the trained part."""
+    parts = [text]
+    if facts:
+        parts.append(f"{FACTS_HEADER}\n{facts}")
+    if memory:
+        parts.append(memory)
+    return "\n\n".join(parts)
 
 _DIRECTION_ITEM = {
     "type": "object",
@@ -368,7 +380,11 @@ def check_spec(item: Any, tables: dict[str, dict[str, str]]) -> tuple[dict | Non
     }, []
 
 
-def check_specs(payload: Any, tables: dict[str, dict[str, str]]) -> tuple[list[dict], list[str]]:
+def check_specs(
+    payload: Any,
+    tables: dict[str, dict[str, str]],
+    validate: Callable[[dict], list[str]] | None = None,
+) -> tuple[list[dict], list[str]]:
     items = payload.get("charts") if isinstance(payload, dict) else None
     if not isinstance(items, list):
         return [], ['Reply with {"charts": [...]}.']
@@ -379,6 +395,10 @@ def check_specs(payload: Any, tables: dict[str, dict[str, str]]) -> tuple[list[d
         spec, problems = check_spec(item, tables)
         if spec is None:
             errors.extend(f"chart {n}: {problem}" for problem in problems)
+            continue
+        data_problems = validate(spec) if validate is not None else []
+        if data_problems:
+            errors.extend(f"chart {n}: {problem}" for problem in data_problems)
             continue
         key = (spec["chart"], spec["table"], spec["x"], spec["y"], spec["group"], spec["agg"], spec["grain"])
         if key in seen:

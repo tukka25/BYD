@@ -86,3 +86,73 @@ def test_a_planner_retry_shows_on_screen(tmp_path):
     assert len(labels) == 4 and labels[2] == "Planning the charts"
     assert labels[3].startswith("Planning the charts") and "try 2 of 3" in labels[3]
     assert events[-1].kind == "chart"
+
+
+from langchain_core.messages import AIMessage
+
+
+class Recorder(Scripted):
+    """Scripted, and keeps every message list it was sent."""
+
+    def __init__(self, *replies):
+        super().__init__(*replies)
+        self.seen = []
+
+    def invoke(self, messages):
+        self.seen.append(list(messages))
+        return super().invoke(messages)
+
+
+class Explorer:
+    def __init__(self, *replies):
+        self.replies = list(replies)
+
+    def bind_tools(self, specs):
+        return self
+
+    def invoke(self, messages):
+        return self.replies.pop(0)
+
+
+INSPECT = AIMessage(content="", tool_calls=[{"name": "inspect_column",
+                                             "args": {"table": "saas.csv", "column": "cntry_cd"}, "id": "c0"}])
+
+
+def test_with_tools_the_facts_reach_the_analyst_and_the_planner(tmp_path):
+    analyst, planner = Recorder(DIRECTIONS), Recorder(CHARTS)
+    chartist = ChartistAgent(llm=None, generator=Fixed(), chart_type_hint_style="off")
+    events = list(build_dashboard("churn by country", [_source(tmp_path)], str(tmp_path), analyst, planner,
+                                  chartist, top=5, explorer_llm=Explorer(INSPECT, AIMessage(content="DONE"))))
+    labels = [e.data["label"] for e in events if e.kind == "status"]
+    assert "Checking the data" in labels and any(label.startswith("Checking the data: ") for label in labels)
+    assert "Facts checked on the full data:" in analyst.seen[0][-1].content
+    assert "Facts checked on the full data:" in planner.seen[0][-1].content
+    plan = next(e for e in events if e.kind == "plan").data
+    assert plan["facts"] and "cntry_cd" in plan["facts"][0]
+
+
+def test_memory_reaches_the_analyst_and_not_the_planner(tmp_path):
+    analyst, planner = Recorder(DIRECTIONS), Recorder(CHARTS)
+    chartist = ChartistAgent(llm=None, generator=Fixed(), chart_type_hint_style="off")
+    memory = "Already on this report (do not repeat these; add what is missing):\n1. bar · Churn by country"
+    list(build_dashboard("", [_source(tmp_path)], str(tmp_path), analyst, planner, chartist, memory=memory))
+    assert memory in analyst.seen[0][-1].content and memory not in planner.seen[0][-1].content
+
+
+def test_a_plan_that_breaks_on_the_real_data_goes_back_to_the_planner(tmp_path):
+    # 60 names x 25 rows: the profile calls `name` a category (60 values, under 5% of
+    # 1,500 rows), so the bar passes the rules and only the data check can catch it.
+    path = tmp_path / "names.csv"
+    pd.DataFrame({"name": [f"n{i}" for i in range(60)] * 25, "v": [i % 7 for i in range(1500)]}).to_csv(path, index=False)
+    source = {"type": "file", "name": "names.csv", "path": str(path)}
+    directions = json.dumps({"directions": [{"question": "Which names score most?", "why": "asked",
+                                             "table": "names.csv", "columns": ["name", "v"]}]})
+    bar = {"title": "Top names", "question": "Which names score most?", "chart": "bar", "table": "names.csv",
+           "x": "name", "y": "v", "group": "", "agg": "sum", "grain": "", "sort": "desc", "top_n": 0}
+    planner = Recorder(json.dumps({"charts": [bar]}), json.dumps({"charts": [{**bar, "top_n": 20}]}))
+    chartist = ChartistAgent(llm=None, generator=Fixed(), chart_type_hint_style="off")
+    events = list(build_dashboard("", [source], str(tmp_path), Scripted(directions), planner, chartist,
+                                  explorer_llm=Explorer(AIMessage(content="DONE"))))
+    plan = next(e for e in events if e.kind == "plan").data
+    assert plan["attempts"]["planner"] == 2 and plan["placed"][0].spec["top_n"] == 20
+    assert "60 bars" in planner.seen[1][-1].content

@@ -32,6 +32,7 @@ from app.services.agents.planning_contract import (
     check_specs,
     extract_json,
     render_directions,
+    with_context,
 )
 from app.services.agents.profiler import TableProfile, columns_by_table, render_profiles
 
@@ -125,26 +126,42 @@ def finish(steps: Generator[Retry, None, PlanStep]) -> PlanStep:
 
 
 def propose_directions_steps(
-    llm: Any, request: str, profiles: list[TableProfile]
+    llm: Any, request: str, profiles: list[TableProfile], facts: str = "", memory: str = ""
 ) -> Generator[Retry, None, PlanStep]:
-    user = ANALYST_USER_TEMPLATE.format(
-        request=(request or "").strip() or NO_REQUEST, profiles=render_profiles(profiles)
+    user = with_context(
+        ANALYST_USER_TEMPLATE.format(request=(request or "").strip() or NO_REQUEST, profiles=render_profiles(profiles)),
+        facts,
+        memory,
     )
     return run_checked(llm, ANALYST_SYSTEM_PROMPT, user, check_directions, columns_by_table(profiles), "analyst")
 
 
-def propose_directions(llm: Any, request: str, profiles: list[TableProfile]) -> PlanStep:
-    return finish(propose_directions_steps(llm, request, profiles))
+def propose_directions(
+    llm: Any, request: str, profiles: list[TableProfile], facts: str = "", memory: str = ""
+) -> PlanStep:
+    return finish(propose_directions_steps(llm, request, profiles, facts, memory))
 
 
 def plan_charts_steps(
-    llm: Any, directions: list[dict], profiles: list[TableProfile]
+    llm: Any,
+    directions: list[dict],
+    profiles: list[TableProfile],
+    facts: str = "",
+    validate: Callable[[dict], list[str]] | None = None,
 ) -> Generator[Retry, None, PlanStep]:
-    user = PLANNER_USER_TEMPLATE.format(
-        profiles=render_profiles(profiles), directions=render_directions(directions)
+    user = with_context(
+        PLANNER_USER_TEMPLATE.format(profiles=render_profiles(profiles), directions=render_directions(directions)),
+        facts,
     )
-    return run_checked(llm, PLANNER_SYSTEM_PROMPT, user, check_specs, columns_by_table(profiles), "planner")
+    check = check_specs if validate is None else (lambda payload, tables: check_specs(payload, tables, validate))
+    return run_checked(llm, PLANNER_SYSTEM_PROMPT, user, check, columns_by_table(profiles), "planner")
 
 
-def plan_charts(llm: Any, directions: list[dict], profiles: list[TableProfile]) -> PlanStep:
-    return finish(plan_charts_steps(llm, directions, profiles))
+def plan_charts(
+    llm: Any,
+    directions: list[dict],
+    profiles: list[TableProfile],
+    facts: str = "",
+    validate: Callable[[dict], list[str]] | None = None,
+) -> PlanStep:
+    return finish(plan_charts_steps(llm, directions, profiles, facts, validate))

@@ -12,6 +12,8 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Any, Generator, Iterator
 
+from app.services.agents.data_tools import ToolBox
+from app.services.agents.discovery import Findings, Probe, discover
 from app.services.agents.layout import INTRO_HEIGHT, intro_html, lay_out
 from app.services.agents.planning import PlanStep, Retry, plan_charts_steps, propose_directions_steps
 from app.services.agents.profiler import TableProfile, profile_table
@@ -87,6 +89,25 @@ def _with_retry_status(steps: Generator[Retry, None, PlanStep], label: str) -> G
         yield Event("status", {"label": f"{label}, try {retry.attempt} of {retry.of}"})
 
 
+def _probe_words(probe: Probe) -> str:
+    args = probe.args
+    if probe.name == "find_columns":
+        return f"looking for '{args.get('query', '')}'"
+    if probe.name == "relationship":
+        return f"{args.get('a', '')} and {args.get('b', '')}"
+    return str(args.get("column") or args.get("x") or probe.name)
+
+
+def _with_probe_status(steps: Generator[Probe, None, Findings]) -> Generator[Event, None, Findings]:
+    """Run the tool step, turning each tool call into a status line; returns its Findings."""
+    while True:
+        try:
+            probe = next(steps)
+        except StopIteration as done:
+            return done.value
+        yield Event("status", {"label": f"Checking the data: {_probe_words(probe)}"})
+
+
 def build_dashboard(
     brief: str,
     sources: list[dict],
@@ -95,6 +116,8 @@ def build_dashboard(
     planner_llm: Any,
     chartist: Any,
     top: int = 0,
+    explorer_llm: Any = None,
+    memory: str = "",
 ) -> Iterator[Event]:
     yield Event("status", {"label": "Reading your data"})
     tables = profile_sources(sources, data_dir, brief)
@@ -103,9 +126,18 @@ def build_dashboard(
         return
     profiles = [entry.profile for entry in tables]
 
+    facts, validate = "", None
+    if explorer_llm is not None:
+        toolbox = ToolBox({entry.label: entry.source for entry in tables}, data_dir)
+        yield Event("status", {"label": "Checking the data"})
+        findings = yield from _with_probe_status(discover(explorer_llm, brief, profiles, toolbox))
+        facts, validate = findings.note, toolbox.validate_spec
+
     choosing = "Choosing what to show"
     yield Event("status", {"label": choosing})
-    directions = yield from _with_retry_status(propose_directions_steps(analyst_llm, brief, profiles), choosing)
+    directions = yield from _with_retry_status(
+        propose_directions_steps(analyst_llm, brief, profiles, facts, memory), choosing
+    )
     if not directions.items:
         yield Event("error", {"detail": "Could not work out what to show from this data: "
                                         + "; ".join(directions.errors[:3])})
@@ -113,7 +145,9 @@ def build_dashboard(
 
     planning = "Planning the charts"
     yield Event("status", {"label": planning})
-    charts = yield from _with_retry_status(plan_charts_steps(planner_llm, directions.items, profiles), planning)
+    charts = yield from _with_retry_status(
+        plan_charts_steps(planner_llm, directions.items, profiles, facts, validate), planning
+    )
     if not charts.items:
         yield Event("error", {"detail": "Could not plan charts for this data: " + "; ".join(charts.errors[:3])})
         return
@@ -125,6 +159,7 @@ def build_dashboard(
         # How hard planning was: tries per call, and what the checks dropped.
         "attempts": {"analyst": directions.attempts, "planner": charts.attempts},
         "dropped": directions.errors[:5] + charts.errors[:5],
+        "facts": facts.splitlines() if facts else [],
     })
 
     by_label = {entry.label: entry.source for entry in tables}
