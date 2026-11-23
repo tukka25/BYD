@@ -4122,6 +4122,184 @@ Co-Authored-By: <your own model's trailer>"
 
 ---
 
+### Task 9c: The checking turn previews the drafts by number
+
+Added 2026-11-23 by the controller, from a timed run of planner mode on one frozen request (`s0004-r0`, 7 directions, at 4128907):
+- analyst 29.9 s;
+- planner draft 48.0 s (694 tokens out);
+- checking turn's `preview_chart` call 53.9 s (716 tokens out: it re-typed all 7 draft plans as the tool's arguments);
+- its final reply 2.0 s ("no changes").
+
+The 2-row smoke test showed planner mode 43 s slower than `on` per dashboard (median 122.1 s against 79.2 s), against the decision rule's 30 s line. Almost all of that is the re-typing.
+
+The fix keeps the design: the checking turn already holds the drafts, so `preview_chart` also takes their numbers (`[1, 2, 3]`). The model still decides what to preview (which drafts, or a changed plan given whole), and the call shrinks to a few tokens. In a call given numbers, a line is labelled by its draft number, and a number with no draft behind it gets its own problem line.
+
+**Files:**
+- Modify: `backend/app/services/agents/data_tools.py` (`ToolBox.drafts`, the `preview_chart` spec, `_preview_chart`, new `_draft`)
+- Modify: `backend/app/services/agents/planning.py` (`check_drafts` sets `toolbox.drafts` and shows the drafts numbered)
+- Modify: `backend/app/services/agents/planning_contract.py` (three words in `CHECKER_SYSTEM_PROMPT`)
+- Test: `backend/tests/test_data_tools.py` and `backend/tests/test_planner_tools.py`
+- Modify: `AGENTS.md`
+
+**Interfaces:**
+- Consumes: `ToolBox`, `_preview_one`, `_fit_lines`, `MAX_PREVIEW_PLANS` (Task 8); `check_drafts`, `CHECKER_USER_TEMPLATE` (Task 9b); `extract_json`.
+- Produces: `ToolBox.drafts: list[dict]` (empty by default; the checking turn sets it) and `ToolBox._draft(plan) -> tuple[Any, str, int | None]`.
+
+- [ ] **Step 1: Write the failing tests**
+
+Append to `backend/tests/test_data_tools.py` (`planner_box`, `GRID` and `RAW` are already defined there by Task 8):
+
+```python
+def test_preview_chart_takes_the_checking_turns_draft_numbers():
+    box = planner_box(web=GRID)
+    box.drafts = [RAW, {**RAW, "agg": "mean"}]
+    lines = box.call("preview_chart", {"plans": [2, "1", 3]}, compact=True).splitlines()
+    assert lines[0].startswith("2. line mean of bounceRatePct by hourOfDay: 24 points per line")
+    assert lines[1].startswith("1. line bounceRatePct by hourOfDay: 168 points per line")
+    assert lines[2] == "3. no draft plan 3; there are 2"
+```
+
+In `backend/tests/test_planner_tools.py`:
+1. In `test_the_planner_drafts_plainly_and_a_separate_turn_checks_the_draft`, replace `ANSWER.content in check[1].content` with `f"1. {json.dumps(PLAN)}" in check[1].content`.
+2. Add:
+
+```python
+def test_the_checking_turn_numbers_the_drafts_and_previews_them_by_number():
+    model, toolbox = ToolPlanner(ANSWER, calls(("preview_chart", {"plans": [1]})), NO_CHANGES), box()
+    step = plan(model, toolbox)
+    assert step.items and toolbox.drafts == [PLAN]
+    assert f"1. {json.dumps(PLAN)}" in model.seen[1][1][1].content
+    fact = [m for m in model.seen[2][1] if isinstance(m, ToolMessage)][0].content
+    assert fact.startswith("1. line mean of bounceRatePct by hourOfDay: 24 points per line, x once per line")
+```
+
+- [ ] **Step 2: Run them to see them fail**
+
+Run: `cd backend && .venv/bin/python -m pytest -q tests/test_data_tools.py tests/test_planner_tools.py -k "draft_numbers or numbers_the_drafts or drafts_plainly"`
+Expected: 3 failed (`AttributeError`/assertion: `drafts` and the numbering do not exist yet).
+
+- [ ] **Step 3: Implement**
+
+In `backend/app/services/agents/data_tools.py`:
+
+1. In `ToolBox.__init__`, after `self.calls: list[ToolCall] = []`, add:
+
+```python
+        self.drafts: list[dict] = []  # the checking turn's draft plans; preview_chart takes their numbers
+```
+
+2. Replace the `preview_chart` spec:
+
+```python
+        spec("preview_chart", "What up to 7 draft chart plans would draw on the full data, one line per plan: "
+             "points per line and whether x repeats, bars, slices or cells against the limits, the value "
+             "range, and any problem the plan check will raise. Each plan has chart, table, x, y, group, "
+             "agg, grain and top_n, as in your reply.",
+             {"plans": {"type": "array", "items": {"type": "object"}}}, ["plans"]),
+```
+
+with
+
+```python
+        spec("preview_chart", "What up to 7 draft chart plans would draw on the full data, one line per plan: "
+             "points per line and whether x repeats, bars, slices or cells against the limits, the value "
+             "range, and any problem the plan check will raise. Give each plan as its draft number "
+             "(1 = first) or whole, with chart, table, x, y, group, agg, grain and top_n.",
+             {"plans": {"type": "array", "items": {"type": ["integer", "object"]}}}, ["plans"]),
+```
+
+3. In `_preview_chart`, change the docstring's first line to `"""Each draft plan's shape on the full data, one line per plan, in one call.` followed by a new line `A plan may be its number in the checking turn's drafts (self.drafts)."""`. Change the `ValueError` text to `"give plans: a list of draft plan numbers, or draft chart plans with chart, table, x, y, group, agg, grain, top_n"`. Replace
+
+```python
+        lines = [f"{n}. {self._preview_one(plan)}" for n, plan in enumerate(plans[:MAX_PREVIEW_PLANS], 1)]
+```
+
+with
+
+```python
+        lines = []
+        for n, plan in enumerate(plans[:MAX_PREVIEW_PLANS], 1):
+            resolved, problem, number = self._draft(plan)
+            lines.append(f"{number or n}. {problem or self._preview_one(resolved)}")
+```
+
+4. Add directly above `def _preview_one(`:
+
+```python
+    def _draft(self, plan: Any) -> tuple[Any, str, int | None]:
+        """A draft number (1 is the first) as that draft plan. Returns (plan, problem,
+        number): number is None for a plan given whole, and a number with no draft
+        behind it comes back as its problem."""
+        number = plan.strip() if isinstance(plan, str) else plan
+        if isinstance(number, str) and number.isdigit():
+            number = int(number)
+        if not isinstance(number, int) or isinstance(number, bool):
+            return plan, "", None
+        if 1 <= number <= len(self.drafts):
+            return self.drafts[number - 1], "", number
+        return None, f"no draft plan {number}; there are {len(self.drafts)}", number
+```
+
+In `backend/app/services/agents/planning.py`, in `check_drafts`, replace
+
+```python
+    messages: list = [SystemMessage(content=CHECKER_SYSTEM_PROMPT),
+                      HumanMessage(content=CHECKER_USER_TEMPLATE.format(context=context, drafts=draft))]
+```
+
+with
+
+```python
+    payload = extract_json(draft)
+    plans = payload.get("charts") if isinstance(payload, dict) else None
+    toolbox.drafts = [plan for plan in plans if isinstance(plan, dict)] if isinstance(plans, list) else []
+    shown = ("\n".join(f"{n}. {json.dumps(plan, ensure_ascii=False)}" for n, plan in enumerate(toolbox.drafts, 1))
+             if toolbox.drafts else draft)
+    messages: list = [SystemMessage(content=CHECKER_SYSTEM_PROMPT),
+                      HumanMessage(content=CHECKER_USER_TEMPLATE.format(context=context, drafts=shown))]
+```
+
+(add `import json` at the top if `planning.py` does not import it yet), and add one sentence to its docstring: `The drafts are shown numbered, and preview_chart takes those numbers.`
+
+In `backend/app/services/agents/planning_contract.py`, in `CHECKER_SYSTEM_PROMPT`, replace `"plan wrong: preview_chart shows what up to 7 draft plans would draw and any problem the checks would raise; "` with `"plan wrong: preview_chart shows what up to 7 draft plans (give their numbers) would draw and any problem the checks would raise; "`. Nothing else in that prompt changes.
+
+- [ ] **Step 4: Run the tests**
+
+Run: `cd backend && .venv/bin/python -m pytest -q tests/test_data_tools.py tests/test_planner_tools.py tests/test_dashboard_flow.py tests/test_planning_contract.py`
+Expected: all pass. `test_the_checking_turns_prompt_and_tools_stay_small` still holds the tool specs to at most 2,000 characters. If the new spec text passes that cap, shorten the description; never raise the cap.
+
+Run: the backend suite count (`--co -q`, summed) and the full suite.
+Expected: 190 collected; only the 3 known failures. Finetune suite: 89 passed.
+
+- [ ] **Step 5: AGENTS.md**
+
+In the `PLANNER_TOOLS=planner` bullet, insert this sub-bullet directly after its sub-bullet that starts with `  - The planner's own prompt gets no tool text.`:
+
+```markdown
+  - Timed on one frozen request (s0004-r0, 7 directions): analyst 29.9 s, draft 48.0 s (694 tokens out), checking turn's `preview_chart` call 53.9 s (716 tokens out: all 7 plans re-typed as arguments), its reply 2.0 s. So the checking turn shows the drafts numbered and `preview_chart` takes their numbers (`[1, 2, 3]`); a plan can still be given whole.
+```
+
+- [ ] **Step 6: Commit**
+
+```bash
+git add backend/app/services/agents/data_tools.py backend/app/services/agents/planning.py \
+  backend/app/services/agents/planning_contract.py backend/tests/test_data_tools.py \
+  backend/tests/test_planner_tools.py AGENTS.md
+git commit -m "perf(planning): the checking turn previews drafts by number
+
+Re-typing 7 draft plans as preview_chart's arguments took 53.9 s of the
+checking turn (716 tokens) on s0004-r0. The drafts are shown numbered and
+preview_chart takes their numbers; a plan can still be given whole.
+
+Co-Authored-By: <your own model's trailer>"
+```
+
+- [ ] **Step 7: Live check (controller)**
+
+Re-run the controller's timing script on s0004-r0: the checking turn's tool call should give numbers, be a few tokens, and take a few seconds.
+
+---
+
 ### Task 10: Measure `planner` against `on`, time the tools, and decide the default
 
 The user's goal is that the model decides what to look at. This task measures whether letting the planner hold the tools is at least as good as today's explorer step:
