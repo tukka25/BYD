@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState, type KeyboardEvent } from "react";
+import { useEffect, useMemo, useRef, useState, type KeyboardEvent } from "react";
 import {
   ChartArea,
   ChartBarStacked,
@@ -109,6 +109,12 @@ export function KindMenu({
   onHighlight: (index: number) => void;
   placement?: "above" | "below";
 }) {
+  const activeRow = useRef<HTMLLIElement | null>(null);
+  // Keep the highlighted row visible: the list scrolls and shows about five.
+  useEffect(() => {
+    activeRow.current?.scrollIntoView({ block: "nearest" });
+  }, [active?.kind]);
+
   return (
     <ul
       id={id}
@@ -125,6 +131,7 @@ export function KindMenu({
         return (
           <li
             key={option.kind}
+            ref={selected ? activeRow : undefined}
             id={`${id}-${option.kind}`}
             role="option"
             aria-selected={selected}

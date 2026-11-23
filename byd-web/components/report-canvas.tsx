@@ -764,7 +764,7 @@ export function ReportCanvas({ report }: { report: Report }) {
                   if (event.key === "Enter") void buildDashboard();
                   if (event.key === "Escape") setBriefOpen(false);
                 }}
-                placeholder="e.g. churn by region — type / to ask for a chart kind"
+                placeholder="e.g. churn by region, or leave empty · type / for a chart kind"
                 className={inputClass}
               />
               {briefMenu.open ? (
