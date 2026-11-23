@@ -2505,6 +2505,14 @@ def test_seven_long_plans_keep_a_line_each_within_the_cap():
     assert lines[-1] == "(only the first 7 of 9 plans were previewed)"
 
 
+def test_a_cut_line_keeps_what_the_planner_acts_on():
+    lines = ["1. line y by x: " + "s" * 300 + "; problem: set agg", "2. bar y by x: 7 bars; ok"] * 4
+    text = _fit_lines(lines, limit=400)
+    assert len(text) <= 400 and len(text.splitlines()) == 8
+    assert all(line.endswith("; problem: set agg") or line == "2. bar y by x: 7 bars; ok"
+               for line in text.splitlines())
+
+
 def test_compact_replies_are_the_fact_line_and_errors_stay_json():
     box = planner_box(web=GRID)
     assert box.call("inspect_column", {"table": "web", "column": "hourOfDay"}, compact=True).startswith(
@@ -2543,13 +2551,40 @@ def _capped(text: str, limit: int = RESULT_CHARS) -> str:
 
 
 def _fit_lines(lines: list[str], limit: int = RESULT_CHARS - 40) -> str:
-    """The lines joined, each cut to an equal share when together they would
-    pass `limit`, so every line stays; a cut line ends with an ellipsis."""
+    """The lines joined; when together they would pass `limit`, every line
+    stays and only the long ones are cut. Lines that fit an equal share stay
+    whole, and the room they leave goes to the longer lines. A cut line keeps
+    its head (up to the first ": ") and its verdict ("; ok" or "; problem: ...",
+    what the planner acts on): the shape text between them is cut first, then
+    the verdict's end. Each cut is marked with an ellipsis."""
     text = "\n".join(lines)
     if len(text) <= limit:
         return text
-    share = max(40, limit // len(lines) - 1)
-    return "\n".join(line if len(line) <= share else line[: share - 1] + "…" for line in lines)
+    room = limit - (len(lines) - 1)
+    whole: set[int] = set()
+    left = sorted(range(len(lines)), key=lambda i: len(lines[i]))
+    while left and len(lines[left[0]]) <= max(40, room // len(left)):
+        whole.add(left[0])
+        room -= len(lines[left.pop(0)])
+    share = max(40, room // len(left)) if left else 0
+    return "\n".join(line if i in whole else _cut_line(line, share) for i, line in enumerate(lines))
+
+
+def _cut_line(line: str, width: int) -> str:
+    """`line` cut to `width`, keeping its head and its verdict when they fit."""
+    if len(line) <= width:
+        return line
+    at = line.find("; problem: ")
+    if at < 0 and line.endswith("; ok"):
+        at = len(line) - len("; ok")
+    colon = line.find(": ")
+    head_end = colon + 1 if colon > 0 else 0
+    if at <= head_end:
+        return line[: width - 1] + "…"
+    head, verdict = line[:head_end], line[at:]
+    if len(head) + 1 + len(verdict) <= width:
+        return line[: width - 1 - len(verdict)] + "…" + verdict
+    return (head + "…" + verdict)[: width - 1] + "…"
 ```
 
 3. Add the constants. Directly after `GRAIN_CONFIRMS = 3     # candidate keys checked on the full table, one pass each`, add:
