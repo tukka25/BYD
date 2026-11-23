@@ -33,7 +33,7 @@
 
 ## File Structure
 
-- Create `backend/app/services/agents/chart_kinds.py`: the user-facing words for each `CHART_KINDS` entry (the labels go into the analyst's sentence and the single chart's direction).
+- Create `backend/app/services/agents/chart_kinds.py`: the label of each `CHART_KINDS` entry (it goes into the analyst's sentence, the single chart's direction and the example script; the menu's other words live in `byd-web/lib/chart-kinds.ts`).
 - Modify `backend/app/services/agents/planning_contract.py`: `check_specs(..., required_kinds=())`.
 - Modify `backend/app/services/agents/planning.py`: a `required_kinds` parameter.
 - Modify `backend/app/services/agents/dashboard_flow.py`: `required_kinds`.
@@ -56,26 +56,26 @@
 **Interfaces:**
 - Consumes: `planning_contract.CHART_KINDS`.
 - Produces:
-  - `KIND_INFO: dict[str, dict]` with keys `label`, `best_for`, `needs` and `aliases`.
-  - `chart_kinds() -> list[dict]`, each item `{"kind", "label", "best_for", "needs", "aliases"}`, in `CHART_KINDS` order.
-- No endpoint serves this list. The frontend keeps its own constant copy (Task 6), and a test there keeps its ids and labels equal to these.
+  - `KIND_INFO: dict[str, dict]` with the one key `label`. The backend reads nothing else; the menu's `best_for`, `needs` and `aliases` live only in the frontend list (Task 6).
+  - `chart_kinds() -> list[dict]`, each item `{"kind", "label"}`, in `CHART_KINDS` order.
+- No endpoint serves this list. The frontend keeps its own fixed list (Task 6), and a test there keeps its ids, order and labels equal to these.
 
 - [ ] **Step 1: Write the failing tests** (`backend/tests/test_chart_kinds.py`)
 
 ```python
-"""Every kind the planner accepts has words for the user, and nothing else does."""
+"""Every kind the planner accepts has a label for the user, and nothing else does."""
 from app.services.agents.chart_kinds import KIND_INFO, chart_kinds
 from app.services.agents.planning_contract import CHART_KINDS
 
 
-def test_every_planner_kind_has_words_for_the_user_and_nothing_else_does():
+def test_every_planner_kind_has_a_label_and_nothing_else_does():
     assert set(KIND_INFO) == set(CHART_KINDS)
 
 
-def test_the_list_follows_the_planner_order_and_carries_what_the_ui_shows():
+def test_the_list_follows_the_planner_order_with_a_label_each():
     kinds = chart_kinds()
     assert [k["kind"] for k in kinds] == list(CHART_KINDS)
-    assert all(k["label"] and k["best_for"] and k["needs"] and isinstance(k["aliases"], list) for k in kinds)
+    assert all(isinstance(k["label"], str) and k["label"] for k in kinds)
 ```
 
 - [ ] **Step 2: Run them to see them fail**
@@ -88,45 +88,34 @@ Expected: ImportError.
 `backend/app/services/agents/chart_kinds.py`:
 
 ```python
-"""The chart kinds the model can draw, in the words the user sees.
+"""The label of each chart kind the model can draw.
 
 Keyed by planning_contract.CHART_KINDS, the list the planner's checks use. The
 labels are how the analyst and planner are told which kind the user picked.
-The "/" menu and the chart kinds panel read a constant copy in
-byd-web/lib/chart-kinds.ts, and tests/test_chart_kinds_frontend.py keeps its ids
-and labels equal to these, so the UI can never offer a kind the planner rejects.
+The "/" menu and the chart kinds panel read the fixed list in
+byd-web/lib/chart-kinds.ts, which also holds what each kind is best for, what
+it needs and its aliases; tests/test_chart_kinds_frontend.py keeps that list's
+ids, order and labels equal to these, so the UI can never offer a kind the
+planner rejects.
 """
 from __future__ import annotations
 
 from app.services.agents.planning_contract import CHART_KINDS
 
 KIND_INFO: dict[str, dict] = {
-    "kpi": {"label": "KPI card", "best_for": "One headline number", "needs": "a measure",
-            "aliases": ["number", "metric", "indicator", "card"]},
-    "bar": {"label": "Bar chart", "best_for": "Comparing groups, or a top 10", "needs": "a category and a measure",
-            "aliases": ["column", "ranking", "top"]},
-    "line": {"label": "Line chart", "best_for": "A trend over time", "needs": "a date or year and a measure",
-             "aliases": ["trend", "timeline"]},
-    "area": {"label": "Area chart", "best_for": "A total building up over time", "needs": "a date or year and a measure",
-             "aliases": ["stacked", "cumulative"]},
-    "scatter": {"label": "Scatter plot", "best_for": "How two measures relate", "needs": "two measures",
-                "aliases": ["correlation", "relationship", "dots"]},
-    "pie": {"label": "Pie chart", "best_for": "Shares of a whole, few slices", "needs": "a category and a measure",
-            "aliases": ["donut", "share"]},
-    "histogram": {"label": "Histogram", "best_for": "How one measure is spread", "needs": "one measure",
-                  "aliases": ["distribution", "spread"]},
-    "box": {"label": "Box plot", "best_for": "Spread and outliers by group", "needs": "a measure, optionally a category",
-            "aliases": ["boxplot", "outliers"]},
-    "heatmap": {"label": "Heatmap", "best_for": "Two groupings at once", "needs": "two categories or dates and a measure",
-                "aliases": ["matrix", "grid"]},
-    "treemap": {"label": "Treemap", "best_for": "Parts of a whole, nested", "needs": "one or two categories and a measure",
-                "aliases": ["hierarchy", "nested"]},
-    "sunburst": {"label": "Sunburst", "best_for": "A hierarchy in rings", "needs": "two categories and a measure",
-                 "aliases": ["rings", "radial"]},
-    "funnel": {"label": "Funnel", "best_for": "Drop-off between stages", "needs": "a stage category and a measure",
-               "aliases": ["conversion", "stages"]},
-    "waterfall": {"label": "Waterfall", "best_for": "How a total is built up step by step",
-                  "needs": "a category or period and amounts", "aliases": ["bridge", "contribution"]},
+    "kpi": {"label": "KPI card"},
+    "bar": {"label": "Bar chart"},
+    "line": {"label": "Line chart"},
+    "area": {"label": "Area chart"},
+    "scatter": {"label": "Scatter plot"},
+    "pie": {"label": "Pie chart"},
+    "histogram": {"label": "Histogram"},
+    "box": {"label": "Box plot"},
+    "heatmap": {"label": "Heatmap"},
+    "treemap": {"label": "Treemap"},
+    "sunburst": {"label": "Sunburst"},
+    "funnel": {"label": "Funnel"},
+    "waterfall": {"label": "Waterfall"},
 }
 
 
@@ -143,7 +132,7 @@ Expected: 2 passed.
 
 ```bash
 git add backend/app/services/agents/chart_kinds.py backend/tests/test_chart_kinds.py
-git commit -m "feat(planning): the chart kinds the model can draw, in the user's words
+git commit -m "feat(planning): a label for each chart kind the model can draw
 
 Keyed by the planner's own CHART_KINDS. The labels go into what the analyst
 and planner are told when the user picks a kind.
@@ -1561,7 +1550,7 @@ Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>"
 
 ---
 
-## Open questions for the controller
+## Controller rulings on the amendment's open questions
 
-- With the endpoint gone, nothing in the backend reads `KIND_INFO`'s `best_for`, `needs` or `aliases`. `lib/chart-kinds.ts` holds a second copy of those words, and `test_chart_kinds_frontend.py` compares ids and labels only, so the two copies can drift. Should `KIND_INFO` be cut down to labels, or should the test compare every field? The plan keeps both copies as written.
-- Compose mounts `byd-web/app`, `lib` and `components` into the web container but not `public/`. So `examples.json` (Task 4) is served only after the web image is rebuilt, and Task 8 now says to run `make up` first. Should compose also mount `./byd-web/public:/app/public`?
+- `KIND_INFO` keeps only `label` (Task 1). The backend reads nothing else, so `best_for`, `needs` and `aliases` live only in `byd-web/lib/chart-kinds.ts`; `test_chart_kinds_frontend.py` compares ids, order and labels, which are the only words in both places.
+- Compose is not changed to mount `byd-web/public/`: Task 8 runs `make up` first, so the rebuilt web image carries `examples.json`.
