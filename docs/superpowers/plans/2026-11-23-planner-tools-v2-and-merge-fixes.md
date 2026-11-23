@@ -79,6 +79,7 @@ Every task's requirements include this section.
 - `byd-web/DESIGN.md`: the notice line (Task 3).
 - `chartist-finetune/measure_planning_tools.py`: `--tools planner`, `--draw N`, `draw_first` and `compare_planner` (Task 10).
 - `backend/scripts/time_planner_tools.py`: tool timings on three tables (Task 10).
+- `backend/scripts/probe_planner_tools.py`: the two server behaviours the planner's tool loop relies on (Task 9).
 - Tests:
   - create `backend/tests/test_dashboard_endpoint.py`, `backend/tests/test_drawing_check.py`, `backend/tests/test_planner_tools.py` and `byd-web/tests/kind-notice.test.mts`;
   - extend `test_db_links.py`, `test_planning_steps.py`, `test_planning_contract.py`, `test_dashboard_flow.py`, `test_kind_request.py`, `test_data_tools.py` and `chartist-finetune/tests/test_measure_planning_tools.py`.
@@ -99,7 +100,7 @@ The sums below were measured by applying every task in a scratch copy of the rep
 | Task 6 | +8 (155 or 153) | 81 | 8 |
 | Task 7 | +6 (161 or 159) | 81 | 8 |
 | Task 8 | +5 (166 or 164) | 81 | 8 |
-| Task 9 | +12 (178 or 176) | 81 | 8 |
+| Task 9 | +13 (179 or 177) | 81 | 8 |
 | Task 10 | unchanged | 85 | 8 |
 
 ---
@@ -2711,7 +2712,7 @@ With `on` (today's default), an explorer call checks up to 3 facts before planni
 
 The trained `PLANNER_SYSTEM_PROMPT` is untouched. The tool instructions are an appended user-message section, and the chat template adds the tool list to the system turn, as it does for the explorer. A tool or backend failure plans without tools, never fails a build. `on` stays the default until Task 10's measurement decides.
 
-**Design decisions (from the advisor review and the prompt measurement):**
+**Design decisions:**
 - **Fact lines only.** Each tool result in the planner's prompt is the compact fact line(s), not the JSON. Measured with the base model's chat template on the Spotify table (23 columns, 7 directions), the planner prompt is:
   - 1,407 tokens without tools;
   - 2,262 tokens with the five tools and the note bound, before any call;
@@ -2720,6 +2721,7 @@ The trained `PLANNER_SYSTEM_PROMPT` is untouched. The tool instructions are an a
   lora-v2 was trained at 2,048. A size test pins what the tools add.
 - **First try only.** Tools are offered on the first try only. A retry is a plain call with the check's words, as the planner was trained. The whole transcript is kept, so the retry still sees what the tools said.
 - **Answering after the budget.** When the model stops calling, that reply is its answer. When the 3-call budget runs out while it is still calling, the unbound model is asked once for the answer. So an empty, tool-only reply never reaches the check and costs a retry.
+- **Unbound calls after tool turns.** That unbound call (and a retry after a tool was used) sends the tool-call and tool-result turns without `tools`. If the server refuses that, the same call is made once more without the tool turns. `backend/scripts/probe_planner_tools.py` (Step 12) checks on the real server which of the two happens.
 - **Status lines.** The planner's tool calls appear as status lines ("Checking the data: previewing 3 draft plans"), through the same `_with_retry_status` that announces retries.
 
 **Files:**
@@ -2729,6 +2731,7 @@ The trained `PLANNER_SYSTEM_PROMPT` is untouched. The tool instructions are an a
 - Modify: `backend/app/services/agents/dashboard_flow.py` (`build_dashboard(planner_tools=)`, status lines)
 - Modify: `backend/app/api/v1/endpoints/blocks.py` (`PLANNER_TOOLS_MODES`, `_planner_tools_mode`)
 - Modify: `backend/app/core/config.py` (the comment on `PLANNER_TOOLS`), `docker-compose.yml` (api env)
+- Create: `backend/scripts/probe_planner_tools.py`
 - Test: create `backend/tests/test_planner_tools.py`; extend `backend/tests/test_dashboard_endpoint.py`
 - Modify: `AGENTS.md`
 
@@ -2922,6 +2925,25 @@ def test_what_the_planner_tools_add_to_the_prompt_stays_as_measured():
     # three compact results ~675 more (2,937); lora-v2 was trained at 2,048. Growth here is prompt.
     specs = json.dumps(tool_specs(["t"], PLANNER_TOOL_NAMES), separators=(",", ":"))
     assert len(specs) <= 2000 and len(PLANNER_TOOLS_NOTE) <= 450
+
+
+class PickyPlanner(ToolPlanner):
+    """A server that refuses tool turns when no tools are offered (the plain call)."""
+
+    def invoke(self, messages):
+        if any(isinstance(m, ToolMessage) for m in messages):
+            self.seen.append(("plain refused", list(messages)))
+            raise ValueError("tool messages need tools")
+        return self.reply("plain", messages)
+
+
+def test_a_server_that_refuses_tool_turns_unbound_still_gets_an_answer():
+    model = PickyPlanner(calls(("row_grain", {"table": "web"})), calls(PREVIEW),
+                         calls(("inspect_column", {"table": "web", "column": "weekday"})), ANSWER)
+    step = plan(model, box())
+    assert step.items and step.errors == []
+    assert [kind for kind, _ in model.seen][-2:] == ["plain refused", "plain"]
+    assert not any(isinstance(m, ToolMessage) for m in model.seen[-1][1])
 ```
 
 Append to `backend/tests/test_dashboard_endpoint.py`:
@@ -3036,7 +3058,13 @@ The explorer behaves exactly as before: same budget, same error results past the
 
 - [ ] **Step 5: Let the planner hold the tools** (`planning.py`)
 
-1. Add imports. Replace
+1. Add imports. Replace `from langchain_core.messages import AIMessage, HumanMessage, SystemMessage` with:
+
+```python
+from langchain_core.messages import AIMessage, HumanMessage, SystemMessage, ToolMessage
+```
+
+Then replace
 
 ```python
 from app.services.agents.chart_kinds import include_kinds
@@ -3116,6 +3144,18 @@ def _tool_asker(llm: Any, toolbox: Any) -> Ask | None:
         logger.warning("[planning] planner tools unavailable, planning without them: %s", exc)
         return None
 
+    def answer(messages: list) -> Any:
+        """The plain model's reply. A server that will not take tool turns without
+        tools offered gets the same messages without them."""
+        try:
+            return llm.invoke(messages)
+        except Exception as exc:  # noqa: BLE001 - retried once below, without the tool turns
+            plain = [m for m in messages if not isinstance(m, ToolMessage) and not getattr(m, "tool_calls", None)]
+            if len(plain) == len(messages):
+                raise
+            logger.warning("[planning] answering with the tool turns failed, answering without them: %s", exc)
+            return llm.invoke(plain)
+
     def ask(messages: list, attempt: int) -> Generator[Probe, None, str]:
         reply = None
         if attempt == 1:
@@ -3124,11 +3164,13 @@ def _tool_asker(llm: Any, toolbox: Any) -> Ask | None:
             except Exception as exc:  # noqa: BLE001 - the tool step failed: answer without it
                 logger.warning("[planning] planner tool step failed, planning without it: %s", exc)
         if reply is None or getattr(reply, "tool_calls", None):
-            reply = llm.invoke(messages)
+            reply = answer(messages)
         return _text(reply)
 
     return ask
 ```
+
+A plain call that fails with no tool turns in its messages still raises, as before: `run_checked` reports a dead model as an error, not a 500.
 
 6. Give `plan_charts_steps` a `toolbox`. Replace its signature tail and the start of its body,
 
@@ -3402,7 +3444,7 @@ Run: `cd backend && .venv/bin/python -m pytest -q tests/test_planner_tools.py te
 Expected: all pass.
 
 Run: `cd backend && .venv/bin/python -m pytest -q tests`
-Expected: 12 more tests than after Task 8 (178 with Task 4's fix, 176 without); the only failures are the 3 known ones.
+Expected: 13 more tests than after Task 8 (179 with Task 4's fix, 177 without); the only failures are the 3 known ones.
 
 Run: `cd chartist-finetune && ../backend/.venv/bin/python -m pytest -q tests`
 Expected: 81 passed.
@@ -3413,17 +3455,97 @@ Insert this bullet directly after the line that starts with `` - `preview_chart(
 
 ```markdown
 - `PLANNER_TOOLS=planner`: there is no explorer step. The planner itself may call `preview_chart`, `row_grain`, `inspect_column`, `find_columns` and `relationship`, at most 3 calls, on its first try only, with each result its fact line. It then answers in the same JSON, which the same checks read.
-  - A retry is a plain call. When the budget runs out the unbound model answers, and a tool failure plans without tools.
+  - A retry is a plain call. When the budget runs out the unbound model answers, and a tool failure plans without tools. A server that refuses tool turns in a plain call is asked again without them.
   - Binding the tools adds ~850 tokens to the planner's prompt, measured with the chat template on the Spotify table: 1,407 -> 2,262, and 2,937 after 3 calls. That is past the 2,048 lora-v2 was trained at. A test pins the tool specs (at most 2,000 chars) and the note (at most 450).
   - `docker-compose.yml` now passes `PLANNER_TOOLS` (default `on`), so `PLANNER_TOOLS=planner make up` works. An unknown value is a 500.
 ```
 
-- [ ] **Step 11: Commit**
+- [ ] **Step 11: Write the server probe** (`backend/scripts/probe_planner_tools.py`)
+
+The fakes above cannot show two server behaviours:
+- whether `preview_chart`'s `plans` arrives as a list;
+- whether a plain call carrying tool turns still answers.
+
+This script asks the real server, from the host, saving nothing.
+
+```python
+"""Probe the model server for two things PLANNER_TOOLS=planner relies on that
+the tests' fake models cannot show. Host-side, against `make serve-model`;
+it saves nothing and draws nothing.
+
+    cd backend && .venv/bin/python scripts/probe_planner_tools.py
+
+1. Offered the planner's tools and asked to check its draft, does the planner
+   call any, and does preview_chart's `plans` arrive as a list?
+2. After a tool call and its result, does a plain call (no tools offered)
+   still answer with the plan JSON? If it raises, planning.py answers again
+   without the tool turns, at the cost of one failed call per tool-using try.
+"""
+import os
+import sys
+from pathlib import Path
+
+BACKEND = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(BACKEND))
+os.environ.setdefault("LLM_BACKEND", "mlx")
+os.environ.setdefault("MLX_BASE_URL", "http://127.0.0.1:8080/v1")
+os.environ.setdefault("MLX_MODEL", "default_model")
+
+import pandas as pd  # noqa: E402
+from langchain_core.messages import AIMessage, HumanMessage, SystemMessage, ToolMessage  # noqa: E402
+
+from app.services.agents.data_tools import PLANNER_TOOL_NAMES, ToolBox  # noqa: E402
+from app.services.agents.planning_contract import (  # noqa: E402
+    PLANNER_SYSTEM_PROMPT, PLANNER_TOOLS_NOTE, PLANNER_USER_TEMPLATE, extract_json, render_directions,
+    with_context)
+from app.services.agents.profiler import profile_table, render_profiles  # noqa: E402
+from app.services.llm import get_llm  # noqa: E402
+
+TABLE = "web_traffic.csv"
+frame = pd.read_csv(BACKEND / "uploads" / TABLE)
+profile = profile_table(TABLE, frame)
+direction = [{"question": "How does the bounce rate move through the day?", "why": "asked", "table": TABLE,
+              "columns": ["hourOfDay", "bounceRatePct"]}]
+user = with_context(PLANNER_USER_TEMPLATE.format(profiles=render_profiles([profile]),
+                                                 directions=render_directions(direction)),
+                    notes=(PLANNER_TOOLS_NOTE,))
+box = ToolBox({TABLE: {"type": "file", "name": TABLE}}, str(BACKEND / "uploads"),
+              loader=lambda source, data_dir: frame, tools=PLANNER_TOOL_NAMES, kinds={TABLE: profile.kinds()})
+planner = get_llm("spec_planner")
+messages = [SystemMessage(content=PLANNER_SYSTEM_PROMPT), HumanMessage(content=user)]
+
+reply = planner.bind_tools(box.specs).invoke(messages)
+asked = list(getattr(reply, "tool_calls", None) or [])
+print("1. tool calls:", [call.get("name") for call in asked] or "none")
+for call in asked:
+    if call.get("name") == "preview_chart":
+        print("   preview_chart plans arrived as", type((call.get("args") or {}).get("plans")).__name__)
+
+draft = [{"chart": "line", "table": TABLE, "x": "hourOfDay", "y": "bounceRatePct", "agg": "none"}]
+turns = messages + [
+    AIMessage(content="", tool_calls=[{"name": "preview_chart", "args": {"plans": draft}, "id": "probe-1"}]),
+    ToolMessage(content=box.call("preview_chart", {"plans": draft}, compact=True), tool_call_id="probe-1"),
+]
+try:
+    answer = planner.invoke(turns)
+    text = str(getattr(answer, "content", "") or "")
+    payload = extract_json(text)
+    found = isinstance(payload, dict) and "charts" in payload
+    print("2. plain call after tool turns:", "JSON with charts" if found else f"no plan JSON: {text[:200]!r}")
+except Exception as exc:  # noqa: BLE001 - this is what the probe is for
+    print("2. plain call after tool turns raised:", exc)
+```
+
+Run: `cd backend && .venv/bin/python -m py_compile scripts/probe_planner_tools.py`
+Expected: no output.
+
+- [ ] **Step 12: Commit**
 
 ```bash
 git add backend/app/services/agents/planning_contract.py backend/app/services/agents/discovery.py \
   backend/app/services/agents/planning.py backend/app/services/agents/dashboard_flow.py \
   backend/app/api/v1/endpoints/blocks.py backend/app/core/config.py docker-compose.yml \
+  backend/scripts/probe_planner_tools.py \
   backend/tests/test_planner_tools.py backend/tests/test_dashboard_endpoint.py AGENTS.md
 git commit -m "feat(planning): PLANNER_TOOLS=planner lets the planner hold the tools itself
 
@@ -3436,6 +3558,27 @@ passes PLANNER_TOOLS (default on); an unknown value is a 500.
 
 Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>"
 ```
+
+- [ ] **Step 13: Probe the real server (controller)**
+
+The model server must be running on the host (`make serve-model MLX_HOST=127.0.0.1`, lora-v2), and `backend/uploads/web_traffic.csv` must exist (`make sample-data`).
+
+Run: `cd backend && .venv/bin/python scripts/probe_planner_tools.py`
+
+Expected, in this shape:
+
+```
+1. tool calls: ['preview_chart']
+   preview_chart plans arrived as list
+2. plain call after tool turns: JSON with charts
+```
+
+Each line has a fallback outcome:
+- **"tool calls: none".** A finding: the planner did not take the offer.
+- **`plans` arrived as `str`.** Handled by the `json.loads` in `_preview_chart`.
+- **Line 2 "raised".** Every tool-using try then costs one failed call before `answer()` retries without the tool turns. Tell the user before Task 10's 3-hour run.
+
+Keep the three lines: Task 10 Step 13 records them.
 
 ---
 
@@ -3937,10 +4080,11 @@ find_columns                        1.6 ms                  192.4 ms            
 relationship                        1.4 ms                    4.5 ms                    5.6 ms
 ```
 
-Expected:
-- every tool under 0.25 s on all three tables;
-- every tool except `find_columns` under 20 ms;
-- `find_columns` is the one that grows, because it reads the whole of each matched column.
+Expected: every tool under 0.25 s on all three tables, and every tool except `find_columns` under 20 ms.
+
+`find_columns` is not flat, for two reasons measured with cProfile in the scratch copy. Both are bounded by the 2,000-row sample, not the row count.
+- **Spotify.** Most of its ~190 ms is `profiler._parse_dates` (`pd.to_datetime(format="mixed")`). It runs while the kind of each matched text column is tested: "track" matches 7 columns, 5 of them text, at about 30 ms each.
+- **The 120-column table.** Its ~115 ms is the value scan of every column's sample (`astype(str)` and `value_counts`), about 1 ms per column.
 
 Keep the printed table for Step 13.
 
@@ -3966,7 +4110,7 @@ Expected: the two hashes match (`8af1473a...`).
 
 - [ ] **Step 9: Smoke-test both arms on 2 rows (controller)**
 
-The model server must be running on the host (`make serve-model MLX_HOST=127.0.0.1`, lora-v2).
+The model server must be running on the host (`make serve-model MLX_HOST=127.0.0.1`, lora-v2), and Task 9 Step 13's probe must have run. If its line 2 "raised", tell the user before the long runs: every tool-using try will cost one extra call.
 
 Run:
 
@@ -4020,7 +4164,8 @@ Insert these bullets directly after the line that starts with `` - `PLANNER_TOOL
   - median planning seconds <x> against <y>;
   - tool calls per dashboard <x> against <y>.
 - Default: `<on|planner>`, because <the failing keys | all five checks pass>.
-- Tool speed, median of 5 calls on an idle machine (`backend/scripts/time_planner_tools.py`), on 168 rows, 32,833 rows and 50,000 × 120: preview_chart <a>/<b>/<c> ms, row_grain <...>, inspect_column <...>, find_columns <...> (it reads every matched column whole), relationship <...>.
+- Server probe (`backend/scripts/probe_planner_tools.py`): the planner offered its tools called <names | none>; `plans` arrived as <list | str>; a plain call after tool turns <answered with the plan JSON | raised, so planning answers again without the tool turns>.
+- Tool speed, median of 5 calls on an idle machine (`backend/scripts/time_planner_tools.py`), on 168 rows, 32,833 rows and 50,000 × 120: preview_chart <a>/<b>/<c> ms, row_grain <...>, inspect_column <...>, relationship <...>. find_columns <...> is not flat: on Spotify it parses dates while testing each matched text column's kind, about 30 ms each; on the wide table it scans every column's 2,000-row sample, about 1 ms per column.
 ```
 
 - [ ] **Step 14: Commit**
@@ -4124,7 +4269,7 @@ Insert this bullet directly after the line that starts with `- The drawing check
 - [ ] **Step 7: Run every suite one last time**
 
 Run: `cd backend && .venv/bin/python -m pytest -q tests`
-Expected: 178 tests with Task 4's fix (176 without); the only failures are the 3 known ones in `test_chartist_contract.py`.
+Expected: 179 tests with Task 4's fix (177 without); the only failures are the 3 known ones in `test_chartist_contract.py`.
 
 Run: `cd chartist-finetune && ../backend/.venv/bin/python -m pytest -q tests`
 Expected: 85 passed.
