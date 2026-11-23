@@ -3704,6 +3704,11 @@ This task keeps Task 9's shape: `PLANNER_TOOLS=planner`, no explorer step, the s
   - `planning._checking_asker(llm, toolbox, context: str) -> Ask | None`.
   - `plan_charts_steps(..., toolbox=None)` and `plan_charts(..., toolbox=None)`: the same signatures. A ToolBox now means a checking turn.
 
+**Fix round 1 (after the Task 9b review, 2026-11-23):**
+- **Revision.** It is kept only when it ranks at least as high as the draft under the same checks and rank the retry loop uses (`judge`, built in `plan_charts_steps` as `rank(*check(extract_json(text), tables))`). Otherwise the draft stands, and that is logged. So an unparseable or worse revision never replaces a good draft. Code chooses between two whole model answers, as `run_checked` does across tries; it never edits a plan.
+- **No-change lines.** `changes_asked` reads the usual phrasings as no change, after stripping a list marker and a "Plan N:" prefix: "No changes needed.", "No change required", "Plan 1: no changes", "All plans look good", "Looks good.", "fine", "ok".
+- **Tidying.** The `with_context` docstring no longer mentions tool instructions. The planner-prompt test asserts that no tool name appears.
+
 - [ ] **Step 1: Write the failing tests**
 
 Replace the whole of `backend/tests/test_planner_tools.py` with:
