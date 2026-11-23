@@ -10,7 +10,7 @@ from typing import Any, Dict, Literal, Optional
 
 from fastapi import APIRouter, Depends, HTTPException, status
 from fastapi.responses import StreamingResponse
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, field_validator
 from sqlalchemy.orm import Session
 
 from app.api.dependencies import get_current_user
@@ -27,6 +27,8 @@ from app.services.agents.narrator import Narrator
 from app.services.agents.report_memory import describe_report
 from app.services.llm import get_llm
 from app.services.agents.dashboard_flow import build_dashboard
+from app.services.agents.kind_request import run_kind_request
+from app.services.agents.planning_contract import CHART_KINDS
 from app.services.agents.workflow import _agents, run_agent_workflow
 from app.utils.figure_json import decode_typed_arrays
 
@@ -90,6 +92,15 @@ class BlockResponse(BaseModel):
 class GenerateBlockRequest(BaseModel):
     prompt: str = Field(min_length=1, max_length=2000)
     data_source: Optional[str] = None
+    # A kind picked with "/" in the ask bar arrives as this field, never as text in the prompt.
+    chart_kind: Optional[str] = None
+
+    @field_validator("chart_kind")
+    @classmethod
+    def _known_kind(cls, value: Optional[str]) -> Optional[str]:
+        if value is not None and value not in CHART_KINDS:
+            raise ValueError(f"chart_kind must be one of: {', '.join(CHART_KINDS)}")
+        return value
 
 
 class CreateBlockRequest(BaseModel):
@@ -256,17 +267,20 @@ async def generate_block(
 
     started = time.perf_counter()
     logger.info(
-        "[blocks] generate report=%s user=%s prompt=%s",
+        "[blocks] generate report=%s user=%s chart_kind=%s prompt=%s",
         dashboard_id,
         current_user.id,
+        payload.chart_kind or "-",
         payload.prompt[:150],
     )
-    result = await asyncio.to_thread(
-        run_agent_workflow,
-        payload.prompt,
-        payload.data_source or "",
-        _user_sources(db, report),
-    )
+    sources = _user_sources(db, report)
+    if payload.chart_kind:
+        result = await asyncio.to_thread(
+            run_kind_request, payload.prompt, payload.chart_kind, sources, payload.data_source or "",
+            get_llm("spec_planner"), _agents()[2], settings.UPLOAD_DIR,
+        )
+    else:
+        result = await asyncio.to_thread(run_agent_workflow, payload.prompt, payload.data_source or "", sources)
 
     if result.get("error"):
         logger.warning("[blocks] workflow error: %s", result["error"])
@@ -291,7 +305,7 @@ async def generate_block(
 
     # The block is titled by the model, not by the sentence the user typed. A
     # KPI already carries the label its own figure declares, so that one wins.
-    title = metric_label or await asyncio.to_thread(
+    title = metric_label or (result.get("spec") or {}).get("title") or await asyncio.to_thread(
         _narrator().title_for,
         payload.prompt,
         data_context.get("columns") or [],
@@ -403,6 +417,16 @@ class DashboardBriefRequest(BaseModel):
     """What the dashboard should be about. Empty means "plan it from the data"."""
 
     brief: str = Field(default="", max_length=400)
+    # Kinds picked with "/" in the brief; the plan must include one of each.
+    chart_kinds: list[str] = Field(default_factory=list, max_length=4)
+
+    @field_validator("chart_kinds")
+    @classmethod
+    def _known_kinds(cls, value: list[str]) -> list[str]:
+        unknown = [kind for kind in value if kind not in CHART_KINDS]
+        if unknown:
+            raise ValueError(f"unknown chart kinds {unknown}; kinds are: {', '.join(CHART_KINDS)}")
+        return list(dict.fromkeys(value))
 
 
 @router.post("/{dashboard_id}/blocks/dashboard")
@@ -436,10 +460,11 @@ async def generate_whole_dashboard(
         )
     memory = _report_memory(db, report.id)  # before this request is recorded: it is the brief, not history
     _record_request(db, report, current_user, "dashboard", brief)
-    return _ai_dashboard(report, sources, brief, current_user, db, memory)
+    kinds = list(payload.chart_kinds) if payload else []
+    return _ai_dashboard(report, sources, brief, current_user, db, memory, kinds)
 
 
-def _ai_dashboard(report, sources, brief, current_user, db, memory: str = ""):
+def _ai_dashboard(report, sources, brief, current_user, db, memory: str = "", chart_kinds: list[str] | None = None):
     """The analyst proposes, the planner plans every chart at once, code checks
     both against the real tables, and the chartist draws each chart from its plan
     (agents/dashboard_flow.py). Nothing here reads a column name."""
@@ -455,6 +480,7 @@ def _ai_dashboard(report, sources, brief, current_user, db, memory: str = ""):
         top=base_row,
         explorer_llm=get_llm("explorer") if tools_on else None,
         memory=memory,
+        required_kinds=tuple(chart_kinds or ()),
     )
 
     async def events():
