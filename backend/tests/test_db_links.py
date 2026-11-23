@@ -134,3 +134,27 @@ def test_a_name_by_key_survives_the_dict_and_reaches_the_planner_line():
     assert Link.from_dict(link.to_dict()) == link
     assert ("- orders+customers_by_billing_customer_id: joined on orders.billing_customer_id = customers.id"
             in render_links([link.to_dict()]))
+
+
+class KeysOnly:
+    """An inspector that knows the default schema and some declared keys, nothing else."""
+
+    default_schema_name = "public"
+
+    def __init__(self, keys):
+        self.keys = keys
+
+    def get_foreign_keys(self, table):
+        return self.keys.get(table, [])
+
+
+def test_a_key_into_another_schema_is_left_out(monkeypatch):
+    # public.orders -> audit.customers: joining by the bare name would read public.customers instead.
+    def key(parent, schema, column):
+        return {"referred_table": parent, "referred_schema": schema,
+                "constrained_columns": [column], "referred_columns": ["id"]}
+    keys = {"orders": [key("customers", "audit", "customer_id"), key("products", "public", "product_id"),
+                       key("regions", None, "region_id")]}
+    monkeypatch.setattr(db_sources, "inspect", lambda connection: KeysOnly(keys))
+    links = links_on(object(), ["orders", "customers", "products", "regions"])
+    assert [link.parent for link in links] == ["products", "regions"]

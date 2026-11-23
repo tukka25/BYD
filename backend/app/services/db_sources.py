@@ -214,15 +214,23 @@ class Link:
 
 def links_on(connection: Any, tables: List[str]) -> List[Link]:
     """Declared foreign keys among `tables`, child to parent. Only declared ones:
-    a join guessed from column names would be a name rule, and often wrong."""
+    a join guessed from column names would be a name rule, and often wrong.
+
+    A key into another schema (Postgres) or another database (MySQL) is left
+    out. The parent is reflected by its bare name, so a same-named table here
+    would be joined instead: plausible, wrong numbers and no error."""
     inspector = inspect(connection)
+    home = inspector.default_schema_name
     known = set(tables)
     found: List[Link] = []
     for table in tables:
         for fk in inspector.get_foreign_keys(table):
             parent = fk.get("referred_table")
+            elsewhere = fk.get("referred_schema")
             child_columns = fk.get("constrained_columns") or []
             parent_columns = fk.get("referred_columns") or []
+            if elsewhere and elsewhere != home:
+                continue
             if (parent in known and parent != table and child_columns
                     and len(child_columns) == len(parent_columns)):
                 found.append(Link(table, tuple(child_columns), parent, tuple(parent_columns)))
