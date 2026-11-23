@@ -31,3 +31,11 @@ KIND_INFO: dict[str, dict] = {
 
 def chart_kinds() -> list[dict]:
     return [{"kind": kind, **KIND_INFO[kind]} for kind in CHART_KINDS]
+
+
+def include_kinds(kinds: tuple[str, ...] | list[str]) -> str:
+    """How the analyst and the planner are told the kinds the user picked, in the
+    same words; "" when none was picked."""
+    if not kinds:
+        return ""
+    return f"Include these chart kinds: {', '.join(KIND_INFO[kind]['label'] for kind in kinds)}."

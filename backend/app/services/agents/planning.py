@@ -21,6 +21,7 @@ from typing import Any, Callable, Generator
 
 from langchain_core.messages import AIMessage, HumanMessage, SystemMessage
 
+from app.services.agents.chart_kinds import include_kinds
 from app.services.agents.planning_contract import (
     ANALYST_SYSTEM_PROMPT,
     ANALYST_USER_TEMPLATE,
@@ -41,6 +42,13 @@ logger = logging.getLogger(__name__)
 MAX_ATTEMPTS = 3
 
 Check = Callable[[Any, dict[str, dict[str, str]]], tuple[list[dict], list[str]]]
+# How two checked attempts compare: the one with the larger key is kept.
+Rank = Callable[[list[dict], list[str]], tuple]
+
+
+def by_size(items: list[dict], errors: list[str]) -> tuple:
+    """The default best attempt: the most usable items, then the fewest problems."""
+    return (len(items), -len(errors))
 
 
 @dataclass
@@ -77,8 +85,10 @@ def run_checked(
     tables: dict[str, dict[str, str]],
     label: str = "planning",
     max_attempts: int = MAX_ATTEMPTS,
+    rank: Rank = by_size,
 ) -> Generator[Retry, None, PlanStep]:
-    """Call, check, and send problems back; yields a Retry before each retry, returns the PlanStep."""
+    """Call, check, and send problems back; yields a Retry before each retry, returns the PlanStep.
+    The attempt kept is the one `rank` puts highest."""
     messages: list = [SystemMessage(content=system), HumanMessage(content=user)]
     best_items: list[dict] = []
     best_errors: list[str] = ["the model was not called"]
@@ -95,10 +105,7 @@ def run_checked(
             break
         replies.append(raw)
         items, errors = check(extract_json(raw), tables)
-        better = len(items) > len(best_items) or (
-            len(items) == len(best_items) and len(errors) < len(best_errors)
-        )
-        if attempt == 1 or better:
+        if attempt == 1 or rank(items, errors) > rank(best_items, best_errors):
             best_items, best_errors = items, errors
         if items and not errors:
             break
@@ -152,17 +159,23 @@ def plan_charts_steps(
     links: str = "",
     required_kinds: tuple[str, ...] = (),
 ) -> Generator[Retry, None, PlanStep]:
+    kinds = tuple(required_kinds)
     user = with_context(
         PLANNER_USER_TEMPLATE.format(profiles=render_profiles(profiles), directions=render_directions(directions)),
         facts,
         links=links,
+        notes=(include_kinds(kinds),),
     )
-    kinds = tuple(required_kinds)
 
     def check(payload: Any, tables: dict[str, dict[str, str]]) -> tuple[list[dict], list[str]]:
         return check_specs(payload, tables, validate, kinds)
 
-    return run_checked(llm, PLANNER_SYSTEM_PROMPT, user, check, columns_by_table(profiles), "planner")
+    def rank(items: list[dict], errors: list[str]) -> tuple:
+        # An attempt with the kinds the user picked beats a bigger one without them.
+        present = sum(1 for kind in kinds if any(item["chart"] == kind for item in items))
+        return (present, *by_size(items, errors))
+
+    return run_checked(llm, PLANNER_SYSTEM_PROMPT, user, check, columns_by_table(profiles), "planner", rank=rank)
 
 
 def plan_charts(

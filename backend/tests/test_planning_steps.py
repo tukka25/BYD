@@ -70,3 +70,32 @@ def test_each_failed_try_is_logged_with_its_problems(caplog):
     lines = [r.getMessage() for r in caplog.records if r.name == "app.services.agents.planning"]
     failed = [line for line in lines if "try 1 of 3" in line]
     assert failed and "analyst" in failed[0] and "'country' not in table 'saas'" in failed[0]
+
+
+
+SAAS = pd.DataFrame({"cntry_cd": ["DE", "US", "BR", "FR"] * 50, "plan_tier": ["a", "b"] * 100,
+                     "mrr": [i % 37 * 1.5 for i in range(200)]})
+ONE_DIRECTION = [{"question": "q", "why": "w", "table": "saas", "columns": ["cntry_cd", "mrr"]}]
+
+
+def _chart(kind, x="cntry_cd", y="mrr", title="t"):
+    return {"title": title, "question": "q", "chart": kind, "table": "saas", "x": "" if kind == "kpi" else x,
+            "y": y, "group": "", "agg": "sum", "grain": "", "sort": "", "top_n": 0}
+
+
+def test_a_try_with_the_picked_kind_beats_a_bigger_try_without_it():
+    # The final review's reproduction: two bars without the pie used to be kept over a
+    # valid pie next to one broken chart, so a /pie brief could end with no pie.
+    two_bars = json.dumps({"charts": [_chart("bar", title="a"), _chart("bar", x="plan_tier", title="b")]})
+    pie_and_broken = json.dumps({"charts": [_chart("pie", title="p"), _chart("bar", y="no_such_column", title="x")]})
+    step = plan_charts(Scripted(two_bars, pie_and_broken, pie_and_broken), ONE_DIRECTION,
+                       [profile_table("saas", SAAS)], required_kinds=("pie",))
+    assert step.attempts == 3 and [s["chart"] for s in step.items] == ["pie"]
+    assert not any("asked for a pie" in e for e in step.errors)
+
+
+def test_the_planner_is_told_the_picked_kinds_up_front():
+    llm = Scripted(json.dumps({"charts": [_chart("pie", title="p"), _chart("kpi", title="k")]}))
+    step = plan_charts(llm, ONE_DIRECTION, [profile_table("saas", SAAS)], required_kinds=("pie", "kpi"))
+    assert step.attempts == 1 and step.errors == []
+    assert llm.calls[0][1].content.endswith("\n\nInclude these chart kinds: Pie chart, KPI card.")

@@ -509,11 +509,14 @@ def _ai_dashboard(report, sources, brief, current_user, db, memory: str = "", ch
                     for n, p in enumerate(placed)
                 ]
                 names = ", ".join(entry.label for entry in event.data["tables"])
+                missing = event.data.get("missing_kinds", [])
                 logger.info(
-                    "[dashboard] planned %d charts from %s (tries: %s; dropped: %s; facts: %s)",
+                    "[dashboard] planned %d charts from %s (tries: %s; dropped: %s; facts: %s; missing kinds: %s)",
                     len(placed), names, event.data["attempts"], event.data["dropped"], event.data.get("facts"),
+                    missing,
                 )
-                yield _sse("plan", {"total": total, "source": names, "brief": brief, "sections": sections})
+                yield _sse("plan", {"total": total, "source": names, "brief": brief, "sections": sections,
+                                    "missing_kinds": missing})
                 try:
                     block = ReportBlock(
                         dashboard_id=report.id,

@@ -167,3 +167,22 @@ def test_a_requested_kind_is_asked_for_and_must_be_in_the_plan(tmp_path):
     plan = next(e for e in events if e.kind == "plan").data
     assert plan["placed"][0].spec["chart"] == "pie"
     assert "Include these chart kinds: Pie chart." in analyst.seen[0][-1].content
+
+
+
+def test_a_kind_still_missing_after_every_try_is_named_in_the_plan(tmp_path):
+    planner = Recorder(CHARTS, CHARTS, CHARTS)  # three tries, never a pie
+    chartist = ChartistAgent(llm=None, generator=Fixed(), chart_type_hint_style="off")
+    events = list(build_dashboard("churn", [_source(tmp_path)], str(tmp_path), Scripted(DIRECTIONS), planner,
+                                  chartist, required_kinds=("pie",)))
+    plan = next(e for e in events if e.kind == "plan").data
+    assert plan["missing_kinds"] == ["pie"] and plan["attempts"]["planner"] == 3
+    assert planner.seen[0][-1].content.endswith("Include these chart kinds: Pie chart.")
+
+
+def test_a_plan_with_every_picked_kind_misses_none(tmp_path):
+    planner = Recorder(CHARTS.replace('"chart": "bar"', '"chart": "pie"'))
+    chartist = ChartistAgent(llm=None, generator=Fixed(), chart_type_hint_style="off")
+    events = list(build_dashboard("churn", [_source(tmp_path)], str(tmp_path), Scripted(DIRECTIONS), planner,
+                                  chartist, required_kinds=("pie",)))
+    assert next(e for e in events if e.kind == "plan").data["missing_kinds"] == []

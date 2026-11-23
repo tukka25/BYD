@@ -12,7 +12,7 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Any, Generator, Iterator
 
-from app.services.agents.chart_kinds import KIND_INFO
+from app.services.agents.chart_kinds import include_kinds
 from app.services.agents.data_tools import ToolBox
 from app.services.agents.discovery import Findings, Probe, discover
 from app.services.agents.layout import INTRO_HEIGHT, intro_html, lay_out
@@ -129,10 +129,7 @@ def build_dashboard(
         return
     profiles = [entry.profile for entry in tables]
     links = render_links([entry.source["join"] for entry in tables if entry.source.get("join")])
-    request = brief
-    if required_kinds:
-        labels = ", ".join(KIND_INFO[kind]["label"] for kind in required_kinds)
-        request = f"{brief}\nInclude these chart kinds: {labels}.".strip()
+    request = f"{brief}\n{include_kinds(required_kinds)}".strip() if required_kinds else brief
 
     facts, validate = "", None
     if explorer_llm is not None:
@@ -163,12 +160,17 @@ def build_dashboard(
 
     placed = lay_out(charts.items, top=top + INTRO_HEIGHT)
     intro = {"text": intro_html(profiles, brief, charts.items), "x": 0, "y": top, "w": 12, "h": INTRO_HEIGHT}
+    # A kind the user picked that is still not in the plan after every try: said, never dropped silently.
+    missing = [kind for kind in required_kinds if not any(spec["chart"] == kind for spec in charts.items)]
+    if missing:
+        logger.info("[dashboard] the plan has no %s, which the user asked for", ", ".join(missing))
     yield Event("plan", {
         "intro": intro, "placed": placed, "tables": tables,
         # How hard planning was: tries per call, and what the checks dropped.
         "attempts": {"analyst": directions.attempts, "planner": charts.attempts},
         "dropped": directions.errors[:5] + charts.errors[:5],
         "facts": facts.splitlines() if facts else [],
+        "missing_kinds": missing,
     })
 
     by_label = {entry.label: entry.source for entry in tables}

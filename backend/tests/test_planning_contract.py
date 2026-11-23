@@ -1,14 +1,20 @@
+import hashlib
 import json
 
 from app.services.agents.planning_contract import (
+    ANALYST_SYSTEM_PROMPT,
     CHART_KINDS,
     DIRECTIONS_SCHEMA,
+    EXPLORER_SYSTEM_PROMPT,
+    PLANNER_SYSTEM_PROMPT,
+    SPEC_RULES,
     KIND_TRACES,
     SPECS_SCHEMA,
     check_directions,
     check_specs,
     extract_json,
     render_directions,
+    with_context,
 )
 
 TABLES = {
@@ -194,3 +200,24 @@ def test_a_requested_kind_must_be_among_the_charts():
 def test_a_requested_kind_that_is_there_passes():
     tree = spec(chart="treemap", x="cntry_cd", group="plan_tier", sort="", top_n=0)
     assert check_specs({"charts": [tree]}, TABLES, required_kinds=("treemap",))[1] == []
+
+
+# sha256 of the prompts lora-v2 was trained on (and the explorer's), taken at dacbe60.
+TRAINED = {
+    "ANALYST_SYSTEM_PROMPT": "467c296ad922e5c1223427489111d41e272fafd29fb0430cc5d2ddb4ab305f96",
+    "PLANNER_SYSTEM_PROMPT": "b0e3819ba2824d672c27feb80885b71055de2feea01236e2a92ce6c73cc980b3",
+    "EXPLORER_SYSTEM_PROMPT": "f1c8f808f0c16544e8372d2dd1a7527dd51f56cf5ca7d421f3beb185bf535552",
+    "SPEC_RULES": "bcb5e7882a0b6e0de19eafd2f20756fefa5c3ba81970fbba6309e8c29b941c9f",
+}
+
+
+def test_the_trained_prompts_are_byte_identical():
+    # New context goes in appended user-message sections, never into these.
+    texts = {"ANALYST_SYSTEM_PROMPT": ANALYST_SYSTEM_PROMPT, "PLANNER_SYSTEM_PROMPT": PLANNER_SYSTEM_PROMPT,
+             "EXPLORER_SYSTEM_PROMPT": EXPLORER_SYSTEM_PROMPT, "SPEC_RULES": SPEC_RULES}
+    assert {name: hashlib.sha256(text.encode("utf-8")).hexdigest() for name, text in texts.items()} == TRAINED
+
+
+def test_notes_come_last_and_empty_ones_are_left_out():
+    text = with_context("T", facts="- f", links="L", notes=("", "N"))
+    assert text == "T\n\nL\n\nFacts checked on the full data:\n- f\n\nN"

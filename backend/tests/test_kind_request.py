@@ -55,6 +55,8 @@ def test_the_picked_kind_is_planned_and_drawn_by_the_model(tmp_path):
     assert result["spec"]["chart"] == "treemap"
     assert result["execution_result"]["figure"]["data"][0]["type"] == "treemap"
     assert "asked for a treemap" in planner.seen[1][-1].content
+    # Told up front too, in the dashboard's words, so a retry is the exception.
+    assert planner.seen[0][-1].content.endswith("Include these chart kinds: Treemap.")
 
 
 def test_a_kind_the_model_will_not_plan_is_an_error_not_a_different_chart(tmp_path):
