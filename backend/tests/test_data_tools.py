@@ -3,7 +3,7 @@ import json
 
 import pandas as pd
 
-from app.services.agents.data_tools import RESULT_CHARS, bounded, find_columns, inspect_column
+from app.services.agents.data_tools import RESULT_CHARS, bounded, chart_shape, find_columns, inspect_column, repeated_x
 
 DAYS = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
 TRACKS = pd.DataFrame({
@@ -140,3 +140,40 @@ def test_validate_counts_line_points_per_line_not_across_lines():
     months = pd.DataFrame({"m": list(range(150)) * 10, "s": [f"s{i}" for i in range(10) for _ in range(150)], "v": range(1500)})
     line = {"chart": "line", "table": "r", "x": "m", "y": "v", "agg": "sum", "group": "s", "top_n": 0, "grain": ""}
     assert toolbox(r=months).validate_spec(line) == []
+
+
+WEEK = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+HOURS = pd.DataFrame({"weekday": [day for day in WEEK for _ in range(24)], "hourOfDay": list(range(24)) * 7,
+                      "bounceRatePct": [30 + (i * 7) % 40 for i in range(168)]})
+RAW_LINE = {"chart": "line", "table": "web", "x": "hourOfDay", "y": "bounceRatePct", "agg": "none", "group": "",
+            "top_n": 0, "grain": ""}
+
+
+def test_a_raw_line_whose_x_repeats_goes_back_in_plain_words():
+    # 168 rows, one per weekday and hour, drawn over the hour alone: the line ran back and forth 7 times.
+    assert toolbox(web=HOURS).validate_spec(RAW_LINE) == [
+        "x 'hourOfDay' has 24 values over 168 rows (each appears 7 times), so one line would run back and "
+        "forth: set agg (mean for rates, sum for totals) or a group"]
+
+
+def test_the_line_is_fine_aggregated_or_split_by_its_other_key():
+    box = toolbox(web=HOURS)
+    assert box.validate_spec({**RAW_LINE, "agg": "mean"}) == []
+    assert box.validate_spec({**RAW_LINE, "group": "weekday"}) == []
+
+
+def test_a_grouped_line_that_still_repeats_names_its_group():
+    problem = repeated_x(HOURS.assign(device=["desktop", "mobile"] * 84), "hourOfDay", "device")
+    assert "(each appears 7 times within one 'device' line)" in problem and "or another group" in problem
+
+
+def test_markers_may_repeat_x():
+    assert toolbox(web=HOURS).validate_spec({**RAW_LINE, "chart": "scatter"}) == []
+
+
+def test_the_shape_line_and_the_plan_check_give_one_answer():
+    shape, problems = chart_shape(HOURS, RAW_LINE)
+    assert problems == toolbox(web=HOURS).validate_spec(RAW_LINE)
+    assert shape == "line bounceRatePct by hourOfDay: 168 points per line, x repeats within a line, values 30 to 69"
+    bars = {**RAW_LINE, "chart": "bar", "x": "weekday", "agg": "mean"}
+    assert chart_shape(HOURS, bars) == ("bar mean of bounceRatePct by weekday: 7 bars (limit 50), values 48.5 to 50.8", [])

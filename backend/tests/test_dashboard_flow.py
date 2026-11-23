@@ -1,4 +1,5 @@
 import json
+import logging
 
 import pandas as pd
 
@@ -186,3 +187,16 @@ def test_a_plan_with_every_picked_kind_misses_none(tmp_path):
     events = list(build_dashboard("churn", [_source(tmp_path)], str(tmp_path), Scripted(DIRECTIONS), planner,
                                   chartist, required_kinds=("pie",)))
     assert next(e for e in events if e.kind == "plan").data["missing_kinds"] == []
+
+
+def test_each_placed_plan_is_logged_with_every_field(tmp_path, caplog):
+    # A chart that draws badly can then be traced to its plan (say agg none) or to the code drawn from it.
+    caplog.set_level(logging.INFO, logger="app.services.agents.dashboard_flow")
+    chartist = ChartistAgent(llm=None, generator=Fixed(), chart_type_hint_style="off")
+    list(build_dashboard("churn by country", [_source(tmp_path)], str(tmp_path), Scripted(DIRECTIONS),
+                         Scripted(CHARTS), chartist))
+    lines = [r.getMessage() for r in caplog.records if r.getMessage().startswith("[dashboard] chart plan")]
+    assert len(lines) == 1 and lines[0].startswith("[dashboard] chart plan 1 of 1: ")
+    logged = json.loads(lines[0].split(": ", 1)[1])
+    assert set(logged) == {"title", "question", "chart", "table", "x", "y", "group", "agg", "grain", "sort", "top_n"}
+    assert (logged["chart"], logged["x"], logged["agg"]) == ("bar", "cntry_cd", "sum")

@@ -42,6 +42,12 @@ def _num(value: Any) -> float:
     return float(f"{float(value):.3g}")
 
 
+def _fmt(value: Any) -> str:
+    """A number inside a one-line fact: three significant figures, thousands separated."""
+    number = _num(value)
+    return f"{number:,.0f}" if abs(number) >= 1000 else f"{number:g}"
+
+
 def _tokens(text: Any) -> list[str]:
     spaced = re.sub(r"([a-z0-9])([A-Z])", r"\1 \2", str(text))
     words = re.split(r"[^A-Za-z0-9]+", spaced.lower())
@@ -181,6 +187,8 @@ def inspect_column(frame: pd.DataFrame, table: str, column: str, detail: str = "
 MAX_CALLS = 3          # tool calls per dashboard build
 LINE_POINTS = 1000     # more points than this on one line chart is unreadable
 CAPS = {"bar": 50, "waterfall": 50, "pie": 12, "funnel": 12, "treemap": 200, "sunburst": 200, "heatmap": 2500}
+UNITS = {"bar": "bars", "waterfall": "bars", "pie": "slices", "funnel": "stages", "treemap": "pieces",
+         "sunburst": "pieces", "heatmap": "cells"}
 GRAIN_FREQ = {"day": "D", "week": "W", "month": "M", "quarter": "Q", "year": "Y"}
 AGGS = ("sum", "mean", "median", "count", "min", "max", "none")
 TOOL_NAMES = ("find_columns", "inspect_column", "relationship", "preview")
@@ -225,6 +233,10 @@ def preview(frame: pd.DataFrame, table: str, x: str, y: str = "", agg: str = "su
     if agg == "none" or not x:
         out["points"] = out["shown"] = int(len(data))
         out["per_series"] = int(data.groupby(group).size().max()) if group and len(data) else int(len(data))
+        out["series"] = int(data[group].nunique()) if group else 1
+        measure = y or x
+        if measure and len(data) and pd.api.types.is_numeric_dtype(data[measure]):
+            out["low"], out["high"] = _num(data[measure].min()), _num(data[measure].max())
         dropped = f"; {out['rows_dropped_empty']:,} rows with empty values left out" if out["rows_dropped_empty"] else ""
         out["fact"] = f"{len(data):,} raw points{dropped}"
         return out
@@ -239,6 +251,9 @@ def preview(frame: pd.DataFrame, table: str, x: str, y: str = "", agg: str = "su
         values = values.sort_values(ascending=False).head(top_n)
     out["shown"] = int(len(values))
     out["per_series"] = int(values.groupby(level=1).size().max()) if group and len(values) else int(len(values))
+    out["series"] = int(values.index.get_level_values(1).nunique()) if group and len(values) else 1
+    if len(values) and pd.api.types.is_numeric_dtype(values):
+        out["low"], out["high"] = _num(values.min()), _num(values.max())
     out["first"] = [{"key": [_short(k) for k in (key if isinstance(key, tuple) else (key,))], "value": _num(v)}
                     for key, v in values.head(10).items()]
     fact = f"{out['groups']:,} groups" + (f", top {out['shown']} shown" if top_n else "")
@@ -249,6 +264,89 @@ def preview(frame: pd.DataFrame, table: str, x: str, y: str = "", agg: str = "su
             fact += f"; each {x} value sums {out['rows_per_x']['min']} to {out['rows_per_x']['max']} rows"
     out["fact"] = fact
     return out
+
+
+def repeated_x(frame: pd.DataFrame, x: str, group: str = "") -> str:
+    """The problem with drawing raw rows as a line when x repeats within one
+    line, in plain words; "" when each x value is once per line.
+
+    The one place this is decided: the plan check and the planner's
+    preview_chart both reach it through chart_shape, so they cannot disagree.
+    """
+    keys = [column for column in (x, group) if column]
+    if not x:
+        return ""
+    data = frame[keys].dropna()
+    if not len(data):
+        return ""
+    per_line = data.groupby(keys).size()
+    most = int(per_line.max())
+    if most <= 1:
+        return ""
+    times = f"each appears {most} times" if int(per_line.min()) == most else f"up to {most} times"
+    within = f" within one '{group}' line" if group else ""
+    fix = "or another group" if group else "or a group"
+    return (f"x '{x}' has {int(data[x].nunique()):,} values over {len(data):,} rows ({times}{within}), "
+            f"so one line would run back and forth: set agg (mean for rates, sum for totals) {fix}")
+
+
+def _plan_head(spec: dict) -> str:
+    """A plan in a few words: "line mean of bounceRatePct by hourOfDay"."""
+    chart = str(spec.get("chart") or "")
+    x, y, group = (str(spec.get(key) or "") for key in ("x", "y", "group"))
+    agg = str(spec.get("agg") or "sum")
+    if agg == "count" or (not y and agg != "none"):
+        measure = "row count"
+    elif agg == "none":
+        measure = y or x
+    else:
+        measure = f"{agg} of {y}"
+    return f"{chart} {measure}" + (f" by {x}" if x and measure != x else "") + (f" per {group}" if group else "")
+
+
+def chart_shape(frame: pd.DataFrame, spec: dict) -> tuple[str, list[str]]:
+    """What a chart plan would draw on the full data, in one line, and the
+    problems the plan check raises for it ([] when none).
+
+    ToolBox.validate_spec (the check on every final plan) and the planner's
+    preview_chart tool both call this, so a preview and the check cannot
+    disagree. Facts only: it never changes a plan, picks a column or draws.
+    """
+    chart = str(spec.get("chart") or "")
+    x, y, group = (str(spec.get(key) or "") for key in ("x", "y", "group"))
+    agg = str(spec.get("agg") or "sum")
+    head = _plan_head(spec)
+    if chart == "kpi":
+        if agg == "count" or not y:
+            return f"{head}: one number, {len(frame):,} rows", []
+        if agg in ("sum", "mean", "median", "min", "max"):
+            return f"{head}: one number, {_fmt(getattr(frame[y].dropna(), agg)())}", []
+        return f"{head}: one number", []
+    shown = preview(frame, str(spec.get("table") or ""), x, y, agg, group, int(spec.get("top_n") or 0),
+                    str(spec.get("grain") or ""))
+    if shown.get("rows_used") == 0:
+        return f"{head}: no rows with values", [f"'{y or x}' has no values to plot: every row is empty"]
+    problems: list[str] = []
+    n = int(shown.get("shown", 0))
+    if chart in ("line", "area"):
+        per_line = int(shown.get("per_series", n))
+        repeat = repeated_x(frame, x, group) if agg == "none" else ""
+        text = f"{per_line:,} points per line" + (f", {int(shown.get('series', 1)):,} lines" if group else "")
+        text += ", x repeats within a line" if repeat else ", x once per line"
+        if repeat:
+            problems.append(repeat)
+        if per_line > LINE_POINTS:
+            problems.append(f"would draw {per_line:,} points on one line: aggregate it (agg, or a grain for dates)")
+    elif chart in CAPS:
+        cap, unit = CAPS[chart], UNITS[chart]
+        text = f"{n:,} {unit} (limit {cap})"
+        if n > cap:
+            problems.append(f"would draw {n:,} {unit}, more than {cap}: set top_n or use a coarser column")
+    else:
+        text = f"{n:,} raw points"
+    if "low" in shown:
+        text += f", values {_fmt(shown['low'])} to {_fmt(shown['high'])}"
+    return f"{head}: {text}", problems
 
 
 def tool_specs(tables: list[str]) -> list[dict[str, Any]]:
@@ -366,26 +464,9 @@ class ToolBox:
 
     def validate_spec(self, spec: dict) -> list[str]:
         """Objective problems a planned chart would have on the real data. Not a
-        judgement of taste: only what cannot be drawn readably."""
-        chart = spec.get("chart")
-        if chart in ("kpi", "scatter", "histogram", "box"):
-            return []
+        judgement of taste: only what cannot be drawn readably (chart_shape)."""
         try:
-            shown = preview(self.frame(spec["table"]), spec["table"], spec.get("x", ""), spec.get("y", ""),
-                            spec.get("agg", "sum"), spec.get("group", ""), int(spec.get("top_n") or 0),
-                            spec.get("grain", ""))
+            return chart_shape(self.frame(spec["table"]), spec)[1]
         except Exception as exc:  # noqa: BLE001 - a check that cannot run is not a problem with the plan
             logger.warning("[tools] could not check chart plan %s: %s", spec.get("title"), exc)
             return []
-        if shown.get("rows_used") == 0:
-            return [f"'{spec.get('y') or spec.get('x')}' has no values to plot: every row is empty"]
-        n = int(shown.get("shown", 0))
-        if chart in ("line", "area"):
-            per_line = int(shown.get("per_series", n))
-            if per_line > LINE_POINTS:
-                return [f"would draw {per_line:,} points on one line: aggregate it (agg, or a grain for dates)"]
-        cap = CAPS.get(chart)
-        if cap and n > cap:
-            unit = "cells" if chart == "heatmap" else "bars" if chart in ("bar", "waterfall") else "pieces"
-            return [f"would draw {n:,} {unit}, more than {cap}: set top_n or use a coarser column"]
-        return []

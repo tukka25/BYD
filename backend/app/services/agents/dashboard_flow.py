@@ -7,6 +7,7 @@ stream and the saved blocks.
 """
 from __future__ import annotations
 
+import json
 import logging
 from dataclasses import dataclass
 from pathlib import Path
@@ -159,6 +160,9 @@ def build_dashboard(
         return
 
     placed = lay_out(charts.items, top=top + INTRO_HEIGHT)
+    for n, item in enumerate(placed, 1):
+        # Every field, so a bad chart can be traced to its plan or to the code drawn from it.
+        logger.info("[dashboard] chart plan %d of %d: %s", n, len(placed), json.dumps(item.spec, ensure_ascii=False))
     intro = {"text": intro_html(profiles, brief, charts.items), "x": 0, "y": top, "w": 12, "h": INTRO_HEIGHT}
     # A kind the user picked that is still not in the plan after every try: said, never dropped silently.
     missing = [kind for kind in required_kinds if not any(spec["chart"] == kind for spec in charts.items)]
