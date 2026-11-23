@@ -298,3 +298,12 @@ def test_compact_replies_are_the_fact_line_and_errors_stay_json():
 def test_the_planner_and_the_explorer_get_their_own_tools():
     assert [t["function"]["name"] for t in planner_box(web=GRID).specs] == list(PLANNER_TOOL_NAMES)
     assert [t["function"]["name"] for t in toolbox(web=GRID).specs] == list(EXPLORER_TOOL_NAMES)
+
+
+def test_preview_chart_takes_the_checking_turns_draft_numbers():
+    box = planner_box(web=GRID)
+    box.drafts = [RAW, {**RAW, "agg": "mean"}]
+    lines = box.call("preview_chart", {"plans": [2, "1", 3]}, compact=True).splitlines()
+    assert lines[0].startswith("2. line mean of bounceRatePct by hourOfDay: 24 points per line")
+    assert lines[1].startswith("1. line bounceRatePct by hourOfDay: 168 points per line")
+    assert lines[2] == "3. no draft plan 3; there are 2"

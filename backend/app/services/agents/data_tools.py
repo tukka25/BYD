@@ -488,9 +488,9 @@ def tool_specs(tables: list[str], names: tuple[str, ...] = EXPLORER_TOOL_NAMES) 
         # prints every schema into the planner's prompt, and a nested one cost ~175 tokens more.
         spec("preview_chart", "What up to 7 draft chart plans would draw on the full data, one line per plan: "
              "points per line and whether x repeats, bars, slices or cells against the limits, the value "
-             "range, and any problem the plan check will raise. Each plan has chart, table, x, y, group, "
-             "agg, grain and top_n, as in your reply.",
-             {"plans": {"type": "array", "items": {"type": "object"}}}, ["plans"]),
+             "range, and any problem the plan check will raise. Give each plan as its draft number "
+             "(1 = first) or whole, with chart, table, x, y, group, agg, grain and top_n.",
+             {"plans": {"type": "array", "items": {"type": ["integer", "object"]}}}, ["plans"]),
     ]
     by_name = {tool["function"]["name"]: tool for tool in every}
     return [by_name[name] for name in names]
@@ -520,6 +520,7 @@ class ToolBox:
         self._loader = loader
         self._frames: dict[str, pd.DataFrame] = {}
         self.calls: list[ToolCall] = []
+        self.drafts: list[dict] = []  # the checking turn's draft plans; preview_chart takes their numbers
 
     @property
     def specs(self) -> list[dict[str, Any]]:
@@ -595,19 +596,36 @@ class ToolBox:
         raise ValueError(f"no tool '{name}'; tools are: {', '.join(self.tools)}")
 
     def _preview_chart(self, plans: Any) -> dict[str, Any]:
-        """Each draft plan's shape on the full data, one line per plan, in one call."""
+        """Each draft plan's shape on the full data, one line per plan, in one call.
+        A plan may be its number in the checking turn's drafts (self.drafts)."""
         if isinstance(plans, str):  # a tool parser may hand the list over as its JSON text
             try:
                 plans = json.loads(plans)
             except json.JSONDecodeError:
                 pass
         if not isinstance(plans, list) or not plans:
-            raise ValueError("give plans: a list of draft chart plans, each with chart, table, x, y, group, agg, "
-                             "grain, top_n")
-        lines = [f"{n}. {self._preview_one(plan)}" for n, plan in enumerate(plans[:MAX_PREVIEW_PLANS], 1)]
+            raise ValueError("give plans: a list of draft plan numbers, or draft chart plans with chart, table, x, y, "
+                             "group, agg, grain, top_n")
+        lines = []
+        for n, plan in enumerate(plans[:MAX_PREVIEW_PLANS], 1):
+            resolved, problem, number = self._draft(plan)
+            lines.append(f"{number or n}. {problem or self._preview_one(resolved)}")
         if len(plans) > MAX_PREVIEW_PLANS:
             lines.append(f"(only the first {MAX_PREVIEW_PLANS} of {len(plans)} plans were previewed)")
         return {"fact": _fit_lines(lines), "plans": min(len(plans), MAX_PREVIEW_PLANS)}
+
+    def _draft(self, plan: Any) -> tuple[Any, str, int | None]:
+        """A draft number (1 is the first) as that draft plan. Returns (plan, problem,
+        number): number is None for a plan given whole, and a number with no draft
+        behind it comes back as its problem."""
+        number = plan.strip() if isinstance(plan, str) else plan
+        if isinstance(number, str) and number.isdigit():
+            number = int(number)
+        if not isinstance(number, int) or isinstance(number, bool):
+            return plan, "", None
+        if 1 <= number <= len(self.drafts):
+            return self.drafts[number - 1], "", number
+        return None, f"no draft plan {number}; there are {len(self.drafts)}", number
 
     def _preview_one(self, plan: Any) -> str:
         """One draft plan in one line: the plan rules first (when the kinds are known),

@@ -15,6 +15,7 @@ prompts contain JSON braces, which a template would read as variables.
 """
 from __future__ import annotations
 
+import json
 import logging
 import re
 from dataclasses import dataclass, field
@@ -202,9 +203,15 @@ def check_drafts(llm: Any, bound: Any, draft: str, context: str, toolbox: Any) -
     tools and decides what to look at in the drafts (at most toolbox.max_calls,
     each result its compact fact line), then says what to change. When the budget
     runs out while it is still calling, the plain model answers. Returns the
-    lines that ask for a change. A failed model call raises."""
+    lines that ask for a change. The drafts are shown numbered, and preview_chart
+    takes those numbers. A failed model call raises."""
+    payload = extract_json(draft)
+    plans = payload.get("charts") if isinstance(payload, dict) else None
+    toolbox.drafts = [plan for plan in plans if isinstance(plan, dict)] if isinstance(plans, list) else []
+    shown = ("\n".join(f"{n}. {json.dumps(plan, ensure_ascii=False)}" for n, plan in enumerate(toolbox.drafts, 1))
+             if toolbox.drafts else draft)
     messages: list = [SystemMessage(content=CHECKER_SYSTEM_PROMPT),
-                      HumanMessage(content=CHECKER_USER_TEMPLATE.format(context=context, drafts=draft))]
+                      HumanMessage(content=CHECKER_USER_TEMPLATE.format(context=context, drafts=shown))]
     reply = yield from run_tools(bound, messages, toolbox, compact=True)
     if reply is None or getattr(reply, "tool_calls", None):
         reply = _answer(llm, messages)

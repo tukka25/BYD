@@ -139,7 +139,7 @@ FACTS_HEADER = "Facts checked on the full data:"
 CHECKER_SYSTEM_PROMPT = (
     "You check draft chart plans against the real data before they are drawn. The plans were written from a "
     "profile of a 2,000-row sample; the full tables may differ. Use the tools to look at whatever could make a "
-    "plan wrong: preview_chart shows what up to 7 draft plans would draw and any problem the checks would raise; "
+    "plan wrong: preview_chart shows what up to 7 draft plans (give their numbers) would draw and any problem the checks would raise; "
     "row_grain says which columns identify one row of a table; inspect_column, find_columns and relationship "
     "give facts about columns. Make at most 3 tool calls, one at a time. Then reply with one short line per plan "
     "saying what to change, or 'no changes'.")

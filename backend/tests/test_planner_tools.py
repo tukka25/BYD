@@ -86,7 +86,7 @@ def test_the_planner_drafts_plainly_and_a_separate_turn_checks_the_draft():
     planner_user = model.seen[0][1][1].content
     assert not any(name in planner_user for name in PLANNER_TOOL_NAMES)
     check = model.seen[1][1]
-    assert check[0].content == CHECKER_SYSTEM_PROMPT and ANSWER.content in check[1].content
+    assert check[0].content == CHECKER_SYSTEM_PROMPT and f"1. {json.dumps(PLAN)}" in check[1].content
     fact = [m for m in model.seen[2][1] if isinstance(m, ToolMessage)][0].content
     assert fact.startswith("1. line bounceRatePct by hourOfDay: 168 points per line, x repeats within a line")
 
@@ -221,3 +221,12 @@ def test_a_server_that_refuses_tool_turns_unbound_still_gets_the_checks_answer()
     assert step.items and step.errors == []
     assert kinds(model)[-2:] == ["plain refused", "plain"]
     assert not any(isinstance(m, ToolMessage) for m in model.seen[-1][1])
+
+
+def test_the_checking_turn_numbers_the_drafts_and_previews_them_by_number():
+    model, toolbox = ToolPlanner(ANSWER, calls(("preview_chart", {"plans": [1]})), NO_CHANGES), box()
+    step = plan(model, toolbox)
+    assert step.items and toolbox.drafts == [PLAN]
+    assert f"1. {json.dumps(PLAN)}" in model.seen[1][1][1].content
+    fact = [m for m in model.seen[2][1] if isinstance(m, ToolMessage)][0].content
+    assert fact.startswith("1. line mean of bounceRatePct by hourOfDay: 24 points per line, x once per line")
