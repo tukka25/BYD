@@ -126,3 +126,17 @@ def test_validate_refuses_a_line_through_every_raw_row():
     rows = pd.DataFrame({"t": range(1500), "v": range(1500)})
     line = {"chart": "line", "table": "r", "x": "t", "y": "v", "agg": "none", "group": "", "top_n": 0, "grain": ""}
     assert "1,500 points" in toolbox(r=rows).validate_spec(line)[0]
+
+
+def test_a_tool_that_cannot_load_its_table_reports_instead_of_raising():
+    def broken(source, data_dir):
+        raise OSError("connection refused")
+    box = ToolBox({"t": {"type": "file", "name": "t"}}, "", loader=broken)
+    reply = json.loads(box.call("inspect_column", {"table": "t", "column": "x"}))
+    assert "connection refused" in reply["error"] and len(box.calls) == 1
+
+
+def test_validate_counts_line_points_per_line_not_across_lines():
+    months = pd.DataFrame({"m": list(range(150)) * 10, "s": [f"s{i}" for i in range(10) for _ in range(150)], "v": range(1500)})
+    line = {"chart": "line", "table": "r", "x": "m", "y": "v", "agg": "sum", "group": "s", "top_n": 0, "grain": ""}
+    assert toolbox(r=months).validate_spec(line) == []

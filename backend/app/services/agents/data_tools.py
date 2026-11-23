@@ -8,6 +8,7 @@ draw or choose a chart, and every chart stays the model's own code.
 from __future__ import annotations
 
 import json
+import logging
 import re
 from dataclasses import dataclass
 from typing import Any, Callable
@@ -15,6 +16,8 @@ from typing import Any, Callable
 import pandas as pd
 
 from app.services.agents.profiler import profile_column
+
+logger = logging.getLogger(__name__)
 
 MAX_ITEMS = 20         # the longest list any tool returns
 TEXT_CHARS = 40        # a longer text value is cut, with an ellipsis
@@ -221,6 +224,7 @@ def preview(frame: pd.DataFrame, table: str, x: str, y: str = "", agg: str = "su
                            "rows_dropped_empty": int(len(frame) - len(data))}
     if agg == "none" or not x:
         out["points"] = out["shown"] = int(len(data))
+        out["per_series"] = int(data.groupby(group).size().max()) if group and len(data) else int(len(data))
         dropped = f"; {out['rows_dropped_empty']:,} rows with empty values left out" if out["rows_dropped_empty"] else ""
         out["fact"] = f"{len(data):,} raw points{dropped}"
         return out
@@ -234,6 +238,7 @@ def preview(frame: pd.DataFrame, table: str, x: str, y: str = "", agg: str = "su
     if top_n:
         values = values.sort_values(ascending=False).head(top_n)
     out["shown"] = int(len(values))
+    out["per_series"] = int(values.groupby(level=1).size().max()) if group and len(values) else int(len(values))
     out["first"] = [{"key": [_short(k) for k in (key if isinstance(key, tuple) else (key,))], "value": _num(v)}
                     for key, v in values.head(10).items()]
     fact = f"{out['groups']:,} groups" + (f", top {out['shown']} shown" if top_n else "")
@@ -330,6 +335,9 @@ class ToolBox:
         except (KeyError, ValueError, TypeError) as exc:
             # args[0], not str(exc): str() of a KeyError wraps the message in quotes.
             result = {"error": str(exc.args[0]) if exc.args else str(exc)}
+        except Exception as exc:  # noqa: BLE001 - a failed tool is an error for the model, never a failed build
+            logger.warning("[tools] %s(%s) failed: %s", name, args, exc)
+            result = {"error": f"{name} could not run: {exc}"}
         text = bounded(result)
         self.calls.append(ToolCall(name, args, text, str(result.get("fact", ""))))
         return text
@@ -366,13 +374,16 @@ class ToolBox:
             shown = preview(self.frame(spec["table"]), spec["table"], spec.get("x", ""), spec.get("y", ""),
                             spec.get("agg", "sum"), spec.get("group", ""), int(spec.get("top_n") or 0),
                             spec.get("grain", ""))
-        except Exception:  # noqa: BLE001 - a check that cannot run is not a problem with the plan
+        except Exception as exc:  # noqa: BLE001 - a check that cannot run is not a problem with the plan
+            logger.warning("[tools] could not check chart plan %s: %s", spec.get("title"), exc)
             return []
         if shown.get("rows_used") == 0:
             return [f"'{spec.get('y') or spec.get('x')}' has no values to plot: every row is empty"]
         n = int(shown.get("shown", 0))
-        if chart in ("line", "area") and n > LINE_POINTS:
-            return [f"would draw {n:,} points on a line: aggregate it (agg, or a grain for dates)"]
+        if chart in ("line", "area"):
+            per_line = int(shown.get("per_series", n))
+            if per_line > LINE_POINTS:
+                return [f"would draw {per_line:,} points on one line: aggregate it (agg, or a grain for dates)"]
         cap = CAPS.get(chart)
         if cap and n > cap:
             unit = "cells" if chart == "heatmap" else "bars" if chart in ("bar", "waterfall") else "pieces"
