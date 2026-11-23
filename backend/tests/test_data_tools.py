@@ -3,7 +3,10 @@ import json
 
 import pandas as pd
 
-from app.services.agents.data_tools import RESULT_CHARS, bounded, chart_shape, find_columns, inspect_column, repeated_x
+from app.services.agents import architect
+from app.services.agents.data_tools import (EXPLORER_TOOL_NAMES, RESULT_CHARS, ToolBox, bounded, chart_shape,
+                                            find_columns, inspect_column, preview, relationship, repeated_x,
+                                            row_grain)
 
 DAYS = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
 TRACKS = pd.DataFrame({
@@ -75,7 +78,6 @@ def test_distinct_counts_the_whole_column_not_the_sample():
     assert found["matches"][0]["distinct"] == 5000
 
 
-from app.services.agents.data_tools import ToolBox, preview, relationship
 
 
 def toolbox(**frames):
@@ -177,3 +179,48 @@ def test_the_shape_line_and_the_plan_check_give_one_answer():
     assert shape == "line bounceRatePct by hourOfDay: 168 points per line, x repeats within a line, values 30 to 69"
     bars = {**RAW_LINE, "chart": "bar", "x": "weekday", "agg": "mean"}
     assert chart_shape(HOURS, bars) == ("bar mean of bounceRatePct by weekday: 7 bars (limit 50), values 48.5 to 50.8", [])
+
+
+DAYS7 = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+GRID = pd.DataFrame({"weekday": [day for day in DAYS7 for _ in range(24)], "hourOfDay": list(range(24)) * 7,
+                     "sessions": [100 + (i * 37) % 900 for i in range(168)],
+                     "bounceRatePct": [30.5 + (i * 7) % 40 for i in range(168)]})
+
+
+def test_row_grain_names_the_columns_that_identify_a_row():
+    assert row_grain(GRID, "web")["fact"] == (
+        "web: one row per weekday × hourOfDay (168 rows); other columns describe the row")
+
+
+def test_row_grain_takes_an_id_that_counts_the_rows():
+    orders = pd.DataFrame({"order_id": range(1, 301), "region": ["N", "S", "E"] * 100,
+                           "amount": [i * 1.5 for i in range(300)]})
+    assert row_grain(orders, "orders")["key"] == ["order_id"]
+
+
+def test_a_number_unique_by_chance_is_not_a_key():
+    events = pd.DataFrame({"region": ["N", "S", "E", "W"] * 25, "sessions": [100 + 3 * i for i in range(100)]})
+    assert row_grain(events, "events")["fact"] == (
+        "events: no key found among the columns tried, alone or up to 3 together (100 rows)")
+
+
+def test_a_key_the_sample_misses_is_caught_on_the_full_table(monkeypatch):
+    # The first 2,000 rows (the sample here) never repeat shop and day; the last 200 do,
+    # so that pair fails on the full table and the next candidate is tried.
+    monkeypatch.setattr(architect, "spread_sample", lambda frame, rows: frame.head(rows))
+    first = [{"shop": i // 200, "day": i % 200, "till": i % 3} for i in range(2000)]
+    extra = [{"shop": 0, "day": i % 200, "till": 3} for i in range(200)]
+    frame = pd.DataFrame(first + extra).assign(amount=[i * 0.5 for i in range(2200)])
+    assert row_grain(frame, "t")["key"] == ["shop", "day", "till"]
+
+
+def test_inspect_says_how_often_each_value_repeats():
+    facts = inspect_column(GRID, "web", "hourOfDay")
+    assert facts["rows_per_value"] == 7.0 and "each value appears about 7 times" in facts["fact"]
+
+
+def test_row_grain_is_a_tool_only_where_it_is_offered():
+    offered = ToolBox({"web": {"type": "file", "name": "web"}}, "", loader=lambda source, data_dir: GRID,
+                      tools=EXPLORER_TOOL_NAMES + ("row_grain",))
+    assert json.loads(offered.call("row_grain", {"table": "web"}))["key"] == ["weekday", "hourOfDay"]
+    assert "no tool 'row_grain'" in json.loads(toolbox(web=GRID).call("row_grain", {"table": "web"}))["error"]

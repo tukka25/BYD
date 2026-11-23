@@ -148,6 +148,11 @@ def inspect_column(frame: pd.DataFrame, table: str, column: str, detail: str = "
     out: dict[str, Any] = {"table": table, "column": column, "kind": kind, "rows": int(len(series)),
                            "nulls": int(series.isna().sum()), "distinct": int(values.nunique())}
     facts = [f"{table}.{column}: {kind}, {out['distinct']:,} distinct in {out['rows']:,} rows"]
+    if out["distinct"] and len(values) > out["distinct"]:
+        per_value = len(values) / out["distinct"]
+        out["rows_per_value"] = round(per_value, 1)
+        if per_value >= 1.5:
+            facts.append(f"each value appears about {per_value:.0f} times")
     if out["nulls"]:
         facts.append(f"{out['nulls']:,} empty")
     if kind in ("number", "year") and pd.api.types.is_numeric_dtype(values):
@@ -191,7 +196,10 @@ UNITS = {"bar": "bars", "waterfall": "bars", "pie": "slices", "funnel": "stages"
          "sunburst": "pieces", "heatmap": "cells"}
 GRAIN_FREQ = {"day": "D", "week": "W", "month": "M", "quarter": "Q", "year": "Y"}
 AGGS = ("sum", "mean", "median", "count", "min", "max", "none")
-TOOL_NAMES = ("find_columns", "inspect_column", "relationship", "preview")
+EXPLORER_TOOL_NAMES = ("find_columns", "inspect_column", "relationship", "preview")
+GRAIN_COLUMNS = 8      # the label columns with the fewest values tried as parts of a key
+GRAIN_SIZE = 3         # the most columns a key may have
+GRAIN_CONFIRMS = 3     # candidate keys checked on the full table, one pass each
 
 
 def relationship(frame: pd.DataFrame, table: str, a: str, b: str) -> dict[str, Any]:
@@ -264,6 +272,63 @@ def preview(frame: pd.DataFrame, table: str, x: str, y: str = "", agg: str = "su
             fact += f"; each {x} value sums {out['rows_per_x']['min']} to {out['rows_per_x']['max']} rows"
     out["fact"] = fact
     return out
+
+
+def row_grain(frame: pd.DataFrame, table: str) -> dict[str, Any]:
+    """The smallest set of columns whose values identify one row, from values only.
+
+    Searched on the profile's 2,000-row sample: first one column unique there,
+    then label columns (values that repeat), fewest values first, in twos and
+    threes. Each candidate is confirmed on the full table in one pass, at most
+    GRAIN_CONFIRMS of them. A column with fractions is a measure and never part
+    of a key, and a whole number unique by chance is not an id unless it counts
+    the rows: a measure is almost all-unique by nature.
+    """
+    from itertools import combinations, islice
+    from math import prod
+
+    from app.services.agents.architect import spread_sample
+
+    rows = int(len(frame))
+    sample = spread_sample(frame, KIND_SAMPLE)
+    n = len(sample)
+    position = {column: i for i, column in enumerate(frame.columns)}
+    singles: list[str] = []
+    labels: dict[str, int] = {}
+    for column in frame.columns:
+        values = sample[column]
+        if values.isna().any() or (pd.api.types.is_float_dtype(values) and not bool((values % 1 == 0).all())):
+            continue
+        distinct = int(values.nunique())
+        if distinct == n > 1:
+            singles.append(column)
+        elif distinct >= 2 and distinct * 2 <= n:
+            labels[column] = distinct
+
+    def candidates():
+        for column in singles:
+            whole = frame[column].dropna()
+            if pd.api.types.is_numeric_dtype(whole) and (
+                    len(whole) != rows or int(whole.max() - whole.min()) + 1 != rows):
+                continue
+            yield [column]
+        ordered = sorted(labels, key=lambda c: (labels[c], position[c]))[:GRAIN_COLUMNS]
+        for size in range(2, GRAIN_SIZE + 1):
+            for combo in sorted(combinations(ordered, size),
+                                key=lambda cs: (prod(labels[c] for c in cs), [position[c] for c in cs])):
+                if prod(labels[c] for c in combo) >= n and not sample.duplicated(subset=list(combo)).any():
+                    yield list(combo)
+
+    key: list[str] = []
+    for candidate in islice(candidates(), GRAIN_CONFIRMS):
+        if not frame.duplicated(subset=candidate).any():
+            key = sorted(candidate, key=position.__getitem__)
+            break
+    if key:
+        fact = f"{table}: one row per {' × '.join(key)} ({rows:,} rows); other columns describe the row"
+    else:
+        fact = f"{table}: no key found among the columns tried, alone or up to {GRAIN_SIZE} together ({rows:,} rows)"
+    return {"table": table, "rows": rows, "key": key, "fact": fact}
 
 
 def repeated_x(frame: pd.DataFrame, x: str, group: str = "") -> str:
@@ -349,13 +414,13 @@ def chart_shape(frame: pd.DataFrame, spec: dict) -> tuple[str, list[str]]:
     return f"{head}: {text}", problems
 
 
-def tool_specs(tables: list[str]) -> list[dict[str, Any]]:
-    """The four tools in the OpenAI format mlx_lm server forwards to the chat template."""
+def tool_specs(tables: list[str], names: tuple[str, ...] = EXPLORER_TOOL_NAMES) -> list[dict[str, Any]]:
+    """The named tools, in that order, in the OpenAI format mlx_lm server forwards to the chat template."""
     table = {"type": "string", "enum": tables}
     def spec(name: str, description: str, properties: dict, required: list[str]) -> dict:
         return {"type": "function", "function": {"name": name, "description": description, "parameters": {
             "type": "object", "properties": properties, "required": required}}}
-    return [
+    every = [
         spec("find_columns", "Search every table for columns whose name or common values match a word. "
              "Use it instead of listing columns; returns at most 10 matches and a total.",
              {"query": {"type": "string"}}, ["query"]),
@@ -372,7 +437,12 @@ def tool_specs(tables: list[str]) -> list[dict[str, Any]]:
               "agg": {"type": "string", "enum": list(AGGS)}, "group": {"type": "string"},
               "top_n": {"type": "integer"},
               "grain": {"type": "string", "enum": ["", *GRAIN_FREQ]}}, ["table", "x"]),
+        spec("row_grain", "Which columns identify one row of a table, found from the values (for example one "
+             "row per weekday and hour), so you know whether x repeats before you plan a line.",
+             {"table": table}, ["table"]),
     ]
+    by_name = {tool["function"]["name"]: tool for tool in every}
+    return [by_name[name] for name in names]
 
 
 @dataclass
@@ -388,17 +458,19 @@ class ToolBox:
     call budget, and the facts found so far."""
 
     def __init__(self, sources: dict[str, dict], data_dir: str, max_calls: int = MAX_CALLS,
-                 loader: Callable[[dict, str], pd.DataFrame] | None = None):
+                 loader: Callable[[dict, str], pd.DataFrame] | None = None,
+                 tools: tuple[str, ...] = EXPLORER_TOOL_NAMES):
         self.sources = sources
         self.data_dir = data_dir
         self.max_calls = max_calls
+        self.tools = tools
         self._loader = loader
         self._frames: dict[str, pd.DataFrame] = {}
         self.calls: list[ToolCall] = []
 
     @property
     def specs(self) -> list[dict[str, Any]]:
-        return tool_specs(list(self.sources))
+        return tool_specs(list(self.sources), self.tools)
 
     @property
     def exhausted(self) -> bool:
@@ -441,6 +513,8 @@ class ToolBox:
         return text
 
     def _run(self, name: str, args: dict) -> dict[str, Any]:
+        if name not in self.tools:
+            raise ValueError(f"no tool '{name}'; tools are: {', '.join(self.tools)}")
         if name == "find_columns":
             return find_columns({t: self.frame(t) for t in self.sources}, str(args.get("query", "")))
         table = str(args.get("table", ""))
@@ -457,7 +531,9 @@ class ToolBox:
                 raise ValueError(f"agg '{agg}' is not one of: {', '.join(AGGS)}")
             frame = self._with(table, x, y, group)
             return preview(frame, table, x, y, agg, group, int(args.get("top_n") or 0), str(args.get("grain") or ""))
-        raise ValueError(f"no tool '{name}'; tools are: {', '.join(TOOL_NAMES)}")
+        if name == "row_grain":
+            return row_grain(self.frame(table), table)
+        raise ValueError(f"no tool '{name}'; tools are: {', '.join(self.tools)}")
 
     def facts(self) -> list[str]:
         return [call.fact for call in self.calls if call.fact]
