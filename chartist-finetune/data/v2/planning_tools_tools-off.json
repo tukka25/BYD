@@ -1,0 +1,15 @@
+{
+  "label": "tools-off",
+  "rows": 40,
+  "analyst_usable_rate": 1.0,
+  "analyst_retry_rate": 0.0,
+  "planner_first_try_rate": 0.875,
+  "mean_charts": 6.925,
+  "dropped_per_dashboard": 0.05,
+  "tool_calls_per_dashboard": 0,
+  "median_seconds": 65.85,
+  "asked_rows": 40,
+  "first_try_rate_counting_failures": 0.875,
+  "total_failure_rate": 0.0,
+  "charts_dropped_per_dashboard": 0.025
+}

@@ -1,0 +1,21 @@
+{
+  "paired_rows": 40,
+  "first_try": {
+    "on_better": 2,
+    "off_better": 2,
+    "p": 1.0
+  },
+  "charts_dropped": {
+    "on_fewer": 1,
+    "off_fewer": 0,
+    "p": 1.0
+  },
+  "median_seconds_delta": 13.5,
+  "decision": {
+    "first_try_not_lower": true,
+    "dropped_not_higher": true,
+    "analyst_usable_not_lower": true,
+    "median_seconds_rise_under_30": true,
+    "tools_on_by_default": true
+  }
+}

@@ -53,9 +53,10 @@ class Settings(BaseSettings):
     DASHBOARD_PLANNER: str = "ai"
     # "on": before a dashboard is planned, the model checks facts about the data
     # with bounded tools (agents/data_tools.py, agents/discovery.py) and every
-    # final chart plan is checked against the real data. "off" until measured
-    # on the frozen planning set (chartist-finetune/measure_planning_tools.py).
-    PLANNER_TOOLS: str = "off"
+    # final chart plan is checked against the real data. "on" by the no-harm rule
+    # on the first 40 frozen planning rows (chartist-finetune/measure_planning_tools.py,
+    # AGENTS.md); "off" rolls back.
+    PLANNER_TOOLS: str = "on"
 
     OLLAMA_BASE_URL: str = "http://localhost:11434"
     OLLAMA_MODEL: str = "qwen3.5:4b"
