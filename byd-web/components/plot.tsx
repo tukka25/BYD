@@ -331,9 +331,13 @@ function themed(figure: PlotlyFigure) {
 export function Plot({
   figure,
   className,
+  interactive = true,
+  compact = false,
 }: {
   figure: PlotlyFigure | null | undefined;
   className?: string;
+  interactive?: boolean;
+  compact?: boolean;
 }) {
   const host = useRef<HTMLDivElement | null>(null);
   const [failed, setFailed] = useState<string | null>(null);
@@ -354,10 +358,20 @@ export function Plot({
           purge: (el: HTMLElement) => void;
         };
         const { data, layout } = themed(figure);
-        Plotly.react(host.current, data, layout, {
+        const shown = compact
+          ? {
+              ...layout,
+              margin: { l: 2, r: 2, t: 2, b: 2 },
+              showlegend: false,
+              xaxis: { ...((layout.xaxis as Record<string, unknown>) ?? {}), visible: false },
+              yaxis: { ...((layout.yaxis as Record<string, unknown>) ?? {}), visible: false },
+            }
+          : layout;
+        Plotly.react(host.current, data, shown, {
           displayModeBar: false,
           responsive: true,
           scrollZoom: false,
+          staticPlot: !interactive,
         }).catch((error: unknown) => {
           if (!cancelled) setFailed(error instanceof Error ? error.message : "Could not draw this chart");
         });
@@ -400,7 +414,7 @@ export function Plot({
         if (node) Plotly.purge(node);
       });
     };
-  }, [figure]);
+  }, [figure, interactive, compact]);
 
   if (failed) {
     return (

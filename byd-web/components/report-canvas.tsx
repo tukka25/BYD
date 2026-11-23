@@ -17,10 +17,12 @@ import {
   LayoutGrid,
   Pencil,
   Save,
+  Shapes,
   Sparkles,
   Trash2,
   Type,
 } from "lucide-react";
+import { ChartKindsPanel } from "@/components/chart-kinds-panel";
 import { DotWave } from "@/components/dot-wave";
 import { KindChip, KindMenu, useKindMenu } from "@/components/kind-menu";
 import { Plot } from "@/components/plot";
@@ -284,6 +286,7 @@ export function ReportCanvas({ report }: { report: Report }) {
   const [exporting, setExporting] = useState(false);
   const [briefOpen, setBriefOpen] = useState(false);
   const [askKind, setAskKind] = useState<ChartKind | null>(null);
+  const [kindsOpen, setKindsOpen] = useState(false);
   const [briefKinds, setBriefKinds] = useState<ChartKind[]>([]);
   const askMenu = useKindMenu((picked, next) => {
     setAskKind(picked);
@@ -696,6 +699,10 @@ export function ReportCanvas({ report }: { report: Report }) {
                 : `${building.label}…`
               : "Generate dashboard"}
           </Button>
+          <Button variant="secondary" onClick={() => setKindsOpen((open) => !open)} aria-expanded={kindsOpen}>
+            <Shapes size={15} strokeWidth={2.25} />
+            Chart kinds
+          </Button>
           <Button variant="secondary" onClick={addNote}>
             <Type size={15} strokeWidth={2.25} />
             Note
@@ -992,6 +999,16 @@ export function ReportCanvas({ report }: { report: Report }) {
           </Panel>
         </div>
       </div>
+      {kindsOpen ? (
+        <ChartKindsPanel
+          onClose={() => setKindsOpen(false)}
+          onUse={(k) => {
+            setAskKind(k);
+            setKindsOpen(false);
+            askRef.current?.focus();
+          }}
+        />
+      ) : null}
     </div>
   );
 }
