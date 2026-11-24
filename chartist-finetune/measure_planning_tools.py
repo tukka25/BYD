@@ -35,7 +35,7 @@ os.environ.setdefault("MLX_MODEL", "default_model")
 import pandas as pd  # noqa: E402
 
 from app.services.agents.architect import spread_sample  # noqa: E402
-from app.services.agents.chartist_contract import REPEATED_BAR_FIX, REPEATED_X_FIX  # noqa: E402
+from app.services.agents.chartist_contract import NUMBER_COLOUR_FIX, REPEATED_BAR_FIX, REPEATED_X_FIX  # noqa: E402
 from app.services.agents.data_tools import PLANNER_TOOL_NAMES, ToolBox  # noqa: E402
 from app.services.agents.discovery import discover  # noqa: E402
 from app.services.agents.planning import finish, plan_charts, propose_directions  # noqa: E402
@@ -86,8 +86,8 @@ def draw_first(specs: list[dict], source: dict, chartist, data_dir: str, n: int,
             "repairs": int(result.get("repairs") or 0),
             "repeated_x": sum(1 for reason in result.get("repair_reasons", []) if REPEATED_X_FIX in reason)
                           + (1 if REPEATED_X_FIX in error else 0),
-            "repeated_bars": sum(1 for reason in result.get("repair_reasons", []) if REPEATED_BAR_FIX in reason)
-                             + (1 if REPEATED_BAR_FIX in error else 0),
+            "repeated_bars": sum(1 for reason in result.get("repair_reasons", []) + [error]
+                                 if REPEATED_BAR_FIX in reason or NUMBER_COLOUR_FIX in reason),
             "error": error[:160],
             "seconds": round(time.perf_counter() - started, 1),
         })

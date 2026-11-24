@@ -53,7 +53,7 @@ os.environ.setdefault("MLX_MODEL", "default_model")
 import pandas as pd  # noqa: E402
 
 from app.services.agents.chartist_contract import (  # noqa: E402
-    CHARTIST_AGG_RULE, CHARTIST_USER_TEMPLATE, REPEATED_BAR_FIX, REPEATED_X_FIX, bar_repeats,
+    CHARTIST_AGG_RULE, CHARTIST_USER_TEMPLATE, NUMBER_COLOUR_FIX, REPEATED_BAR_FIX, REPEATED_X_FIX, bar_repeats,
 )
 from app.utils.figure_json import decode_typed_arrays  # noqa: E402
 from measure_planning import plan_matches  # noqa: E402
@@ -227,7 +227,7 @@ def score(spec: dict, frame: pd.DataFrame, result: dict) -> dict:
         "kind_ok": rendered and plan_matches(str(spec.get("chart")), figure_type, code),
         "repairs": int(result.get("repairs") or 0),
         "repeated_x": times_asked(REPEATED_X_FIX, reasons, error),
-        "repeated_bars": times_asked(REPEATED_BAR_FIX, reasons, error),
+        "repeated_bars": times_asked(REPEATED_BAR_FIX, reasons, error) + times_asked(NUMBER_COLOUR_FIX, reasons, error),
         "raw_bars": len(raw),
         "raw_bar_notes": raw[:3],
         "values_ok": values,

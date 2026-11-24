@@ -5,7 +5,7 @@ import pandas as pd
 
 from app.services import comparison
 from app.services.agents.chartist import ChartistAgent
-from app.services.agents.chartist_contract import REPEATED_BAR_FIX, REPEATED_X_FIX, figure_problems
+from app.services.agents.chartist_contract import NUMBER_COLOUR_FIX, REPEATED_BAR_FIX, REPEATED_X_FIX, figure_problems
 from app.services.agents.spec_runner import run_spec
 from app.services.agents.workflow import run_on_frame
 from app.utils.executor import SafeExecutor
@@ -170,7 +170,7 @@ def test_a_number_as_colour_is_one_series_and_the_model_is_told_to_colour_by_tex
                        "marker": {"color": [2, 3, 2, 3], "coloraxis": "coloraxis"}}]}
     assert figure_problems(split) == [
         "the bar series 'trace 1' has 4 bars on 2 categories because its colour is a number, which Plotly "
-        "draws as one series: " + REPEATED_BAR_FIX]
+        "draws as one series: " + NUMBER_COLOUR_FIX]
 
 
 def test_raw_rows_coloured_by_a_number_are_still_raw_rows():

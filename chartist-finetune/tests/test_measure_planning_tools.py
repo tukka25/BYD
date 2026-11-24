@@ -1,5 +1,5 @@
 from measure_planning_tools import (
-    REPEATED_BAR_FIX, REPEATED_X_FIX, compare, compare_planner, draw_first, first_try, sign_test_p, summarize,
+    NUMBER_COLOUR_FIX, REPEATED_BAR_FIX, REPEATED_X_FIX, compare, compare_planner, draw_first, first_try, sign_test_p, summarize,
 )
 
 
@@ -99,10 +99,10 @@ def test_draw_first_counts_bars_sent_back_for_stacking_rows():
 
     def run(spec, source, chartist, data_dir):
         return {"execution_result": {"figure": {"data": [{"type": "bar"}]}}, "error": "", "code": "fig = px.bar(d)",
-                "repairs": 1, "repair_reasons": [stacked]}
+                "repairs": 2, "repair_reasons": [stacked, "its colour is a number: " + NUMBER_COLOUR_FIX]}
 
     drawn = draw_first([{"chart": "bar"}], {}, None, "", 1, run=run)
-    assert (drawn[0]["repeated_bars"], drawn[0]["repeated_x"]) == (1, 0)
+    assert (drawn[0]["repeated_bars"], drawn[0]["repeated_x"]) == (2, 0)
 
 
 def test_summarize_counts_bars_sent_back_and_reads_rows_saved_before_the_count():

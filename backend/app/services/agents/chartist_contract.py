@@ -310,8 +310,12 @@ REPEATED_X_FIX = "each x value should appear once per line: aggregate y for each
 # measurements count repairs by these words, so change them together.
 REPEATED_BAR_FIX = ("each category should appear once per bar series: aggregate the values for each category "
                     "(and colour group) before drawing, with the aggregation the task asks for "
-                    "(the mean for averages and rates, the sum for totals); to split bars by a number such as "
-                    "a year, colour by it as text (.astype(str)) so each value is its own series")
+                    "(the mean for averages and rates, the sum for totals)")
+
+# Said instead when grouped bars share categories only because their colour is
+# a number. Kept apart from REPEATED_BAR_FIX: one sentence about colour added to
+# it made lora-v2 keep the raw rows of "Bounce Rate by Weekday" and fail it.
+NUMBER_COLOUR_FIX = "colour by that column as text (.astype(str)) so each of its values is its own series"
 
 
 def _drawn_as_line(trace: dict) -> bool:
@@ -352,8 +356,8 @@ def figure_problems(figure: dict) -> list[str]:
       Plotly does not aggregate, so a planned mean shows a sum. Every such series
       makes one problem together, so the fix asked for stays short. Grouped bars
       coloured by a number repeat categories too, because px draws a numeric
-      colour as one series; that problem says so, so the model colours by text
-      instead of grouping again what it already grouped.
+      colour as one series; that problem asks for a text colour
+      (NUMBER_COLOUR_FIX) instead of grouping again what is already grouped.
 
     An x or y that cannot be read is not a problem.
     """
@@ -385,9 +389,11 @@ def figure_problems(figure: dict) -> list[str]:
         what = f"the bar series '{name}' has {bars:,} bars on {kinds:,} {_categories(kinds)}"
         if len(repeated) > 1:
             what = f"{len(repeated)} bar series repeat a category ({what})"
-        why = (" because its colour is a number, which Plotly draws as one series" if split_by_number
-               else ", and Plotly stacks bars that share a category")
-        problems.append(f"{what}{why}: {REPEATED_BAR_FIX}")
+        if split_by_number:
+            problems.append(f"{what} because its colour is a number, which Plotly draws as one series: "
+                            f"{NUMBER_COLOUR_FIX}")
+        else:
+            problems.append(f"{what}, and Plotly stacks bars that share a category: {REPEATED_BAR_FIX}")
     return problems
 
 

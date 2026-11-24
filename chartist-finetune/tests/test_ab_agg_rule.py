@@ -112,6 +112,9 @@ def test_score_and_summary_count_bars_the_drawing_check_sent_back():
     failed = score(BAR_MEAN, WEB, result(None, error="The model could not draw this chart: " + stacked,
                                          reasons=[stacked, stacked]))
     assert failed["repeated_bars"] == 3
+    from app.services.agents.chartist_contract import NUMBER_COLOUR_FIX
+    by_number = f"the bar series 'trace 1' has 4 bars on 2 categories because its colour is a number: {NUMBER_COLOUR_FIX}"
+    assert score(BAR_MEAN, WEB, result(good, reasons=[by_number]))["repeated_bars"] == 1
     # Rows saved before the count existed count none.
     rows = [_row("a", on={"repeated_bars": 2}), _row("b")]
     assert summarize(rows, "on")["bars_sent_back"] == 2 and summarize(rows, "off")["bars_sent_back"] == 0
