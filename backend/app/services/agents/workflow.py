@@ -303,7 +303,8 @@ def run_on_frame(
 
     A failure is code that breaks the contract, code that does not run, or a
     figure that breaks it (`figure_problems`: a line whose x repeats runs back
-    and forth). `repair_reasons` lists the problem behind each fix asked for.
+    and forth, or bars that repeat a category stack raw rows). `repair_reasons`
+    lists the problem behind each fix asked for.
 
     The chart is always the model's own code. There is no deterministic
     stand-in and no code-side patching: a hardcoded backup once drew 32,833 bars

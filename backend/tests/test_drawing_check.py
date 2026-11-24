@@ -1,10 +1,11 @@
-"""A line the model draws back and forth goes back to the model, on every path
-that runs its code (dashboard, ask bar, "/" kinds, comparison)."""
+"""A line the model draws back and forth, or bars it draws on raw rows, go back
+to the model, on every path that runs its code (dashboard, ask bar, "/" kinds,
+comparison)."""
 import pandas as pd
 
 from app.services import comparison
 from app.services.agents.chartist import ChartistAgent
-from app.services.agents.chartist_contract import REPEATED_X_FIX, figure_problems
+from app.services.agents.chartist_contract import REPEATED_BAR_FIX, REPEATED_X_FIX, figure_problems
 from app.services.agents.spec_runner import run_spec
 from app.services.agents.workflow import run_on_frame
 from app.utils.executor import SafeExecutor
@@ -116,3 +117,54 @@ def test_a_staircase_that_never_turns_back_is_fine():
 
 def test_a_sorted_x_whose_y_jumps_is_still_a_problem():
     assert figure_problems(figure(mode="lines", x=[0, 0, 1, 1], y=[5, 1, 4, 2]))
+
+
+# "Bounce Rate by Weekday" in the live app: px.bar on 168 weekday x hour rows,
+# so each weekday's 24 rows stack into one bar of their sum under an "Average" axis.
+RAW_BARS = ("import plotly.express as px\n"
+            "fig = px.bar(df, x='weekday', y='bounceRatePct')\n"
+            "print(fig.to_json())\n")
+ONE_BAR_PER_DAY = ("import plotly.express as px\n"
+                   "d = df.groupby('weekday', as_index=False, sort=False)['bounceRatePct'].mean()\n"
+                   "fig = px.bar(d, x='weekday', y='bounceRatePct')\n"
+                   "print(fig.to_json())\n")
+
+
+def bars(**fields):
+    return {"data": [{"type": "bar", "x": ["Mon", "Mon", "Tue", "Tue"], "y": [1, 2, 3, 4], **fields}]}
+
+
+def test_bars_that_repeat_a_category_are_a_problem_the_model_can_act_on():
+    assert figure_problems(bars()) == [
+        "the bar series 'trace 1' has 4 bars on 2 categories, and Plotly stacks bars that share a category: "
+        + REPEATED_BAR_FIX]
+
+
+def test_several_bar_series_that_repeat_a_category_make_one_problem():
+    # px.bar(df, x='weekday', y='bounceRatePct', color='weekday') on the raw rows: a series per weekday.
+    per_day = {"data": [{"type": "bar", "name": day, "x": [day] * 24, "y": [50.0] * 24} for day in WEEK]}
+    assert figure_problems(per_day) == [
+        "7 bar series repeat a category (the bar series 'Mon' has 24 bars on 1 category), and Plotly stacks "
+        "bars that share a category: " + REPEATED_BAR_FIX]
+
+
+def test_one_bar_per_category_and_bars_with_no_value_are_fine():
+    assert figure_problems(bars(x=["Mon", "Tue", "Wed", "Thu"])) == []
+    # Plotly draws no bar for a missing value, so a category that repeats only there is drawn once.
+    assert figure_problems(bars(y=[1, None, 3, float("nan")])) == []
+    assert figure_problems(bars(orientation="h", y=["a", "b", "c", "d"], x=[1, 2, 3, 4])) == []
+
+
+def test_the_model_is_asked_to_fix_bars_drawn_on_raw_rows():
+    asked = []
+    outcome = run_on_frame(SafeExecutor(), RAW_BARS, HOURS,
+                           repair=lambda code, problem: asked.append(problem) or ONE_BAR_PER_DAY)
+    assert outcome["repairs"] == 1 and outcome["repair_reasons"] == asked
+    assert REPEATED_BAR_FIX in asked[0] and "168 bars on 7 categories" in asked[0]
+    assert outcome["execution_result"]["success"] and outcome["code_run"] == ONE_BAR_PER_DAY
+
+
+def test_bars_never_fixed_are_reported_failed_without_a_figure():
+    outcome = run_on_frame(SafeExecutor(), RAW_BARS, HOURS, repair=lambda code, problem: RAW_BARS)
+    assert outcome["repairs"] == 2 and "Plotly stacks bars" in outcome["error"]
+    assert outcome["execution_result"]["success"] is False and outcome["execution_result"]["figure"] is None

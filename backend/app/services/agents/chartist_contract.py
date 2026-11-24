@@ -7,6 +7,7 @@ chartist-finetune/contract.py loads this module by path so there is no copy.
 from __future__ import annotations
 
 import ast
+import math
 import re
 from collections import Counter
 from enum import Enum
@@ -305,6 +306,12 @@ def problems_with(code: str) -> list[str]:
 # measurement counts repairs by these words, so change both together.
 REPEATED_X_FIX = "each x value should appear once per line: aggregate y for each x and sort by x"
 
+# Said to the model when bars it drew stack rows that share a category. The
+# measurements count repairs by these words, so change them together.
+REPEATED_BAR_FIX = ("each category should appear once per bar series: aggregate the values for each category "
+                    "(and colour group) before drawing, with the aggregation the task asks for "
+                    "(the mean for averages and rates, the sum for totals)")
+
 
 def _drawn_as_line(trace: dict) -> bool:
     """A scatter trace that Plotly draws with lines: its mode includes "lines",
@@ -333,11 +340,18 @@ def figure_problems(figure: dict) -> list[str]:
     """What a drawn figure gets wrong, in words the model can act on; [] when nothing does.
 
     Expects plain lists: decode Plotly's typed arrays first, as
-    workflow.run_on_frame does. One rule today: a line on which one x value
-    carries more than one y value runs back and forth across the chart (rows of
-    two keys, drawn as one line over one of them). The same x with the same y
-    draws over itself and is fine, and so is a staircase (x never goes back, y only
-    rises or only falls, as px.ecdf draws). An x or y that cannot be read is not a problem.
+    workflow.run_on_frame does. Two rules today:
+
+    - A line on which one x value carries more than one y value runs back and
+      forth across the chart (rows of two keys, drawn as one line over one of
+      them). The same x with the same y draws over itself and is fine, and so is
+      a staircase (x never goes back, y only rises or only falls, as px.ecdf
+      draws).
+    - Bars that repeat a category within one series (`bar_repeats`) stack rows
+      Plotly does not aggregate, so a planned mean shows a sum. Every such series
+      makes one problem together, so the fix asked for stays short.
+
+    An x or y that cannot be read is not a problem.
     """
     problems = []
     for n, trace in enumerate((figure or {}).get("data") or [], 1):
@@ -361,7 +375,44 @@ def figure_problems(figure: dict) -> list[str]:
             if trace.get("mode") is None and not trace.get("stackgroup"):
                 problem += " (it has no mode, so Plotly draws it as a line; for a scatter, set mode='markers')"
             problems.append(problem)
+    repeated = _repeated_bars(figure)
+    if repeated:
+        name, bars, kinds, _ = repeated[0]
+        what = f"the bar series '{name}' has {bars:,} bars on {kinds:,} {_categories(kinds)}"
+        if len(repeated) > 1:
+            what = f"{len(repeated)} bar series repeat a category ({what})"
+        problems.append(f"{what}, and Plotly stacks bars that share a category: {REPEATED_BAR_FIX}")
     return problems
+
+
+def _categories(count: int) -> str:
+    return "category" if count == 1 else "categories"
+
+
+def _missing(value) -> bool:
+    return value is None or (isinstance(value, float) and math.isnan(value))
+
+
+def _repeated_bars(figure: dict) -> list[tuple[str, int, int, int]]:
+    """(name, bars drawn, categories, most bars on one category) for each bar
+    trace in which a category carries more than one drawn bar."""
+    found = []
+    for n, trace in enumerate((figure or {}).get("data") or [], 1):
+        if not isinstance(trace, dict) or trace.get("type") != "bar" or trace.get("base") is not None:
+            continue
+        horizontal = trace.get("orientation") == "h"
+        categories, values = trace.get("y" if horizontal else "x"), trace.get("x" if horizontal else "y")
+        if not isinstance(categories, list) or not isinstance(values, list) or len(categories) != len(values):
+            continue
+        drawn = [c for c, v in zip(categories, values) if c is not None and not _missing(v)]
+        try:
+            counts = Counter(tuple(c) if isinstance(c, list) else c for c in drawn)
+        except TypeError:
+            continue
+        if counts and max(counts.values()) > 1:
+            name = str(trace.get("name") or "").strip() or f"trace {n}"
+            found.append((name, len(drawn), len(counts), max(counts.values())))
+    return found
 
 
 def bar_repeats(figure: dict) -> list[str]:
@@ -371,31 +422,16 @@ def bar_repeats(figure: dict) -> list[str]:
     stack (or overlap) into one bar, so raw rows drawn as bars show their sum, not
     the plan's mean. The category is x, or y for horizontal bars. A category
     repeated with the same value still stacks, so occurrences are counted, not
-    distinct values. Bars with `base` (timelines) repeat a category by design, and
-    histograms are their own trace type and aggregate on purpose.
+    distinct values; a bar with no value is not drawn, so it is not counted. Bars
+    with `base` (timelines) repeat a category by design, and histograms are their
+    own trace type and aggregate on purpose.
 
-    Counted by chartist-finetune/ab_agg_rule.py. Deliberately not part of
-    figure_problems: a repair in either arm would hide the difference that A/B
-    measures. Expects plain lists, as figure_problems does.
+    The drawing check (figure_problems) sends these back to the model.
+    chartist-finetune/ab_agg_rule.py counts them on the figures that were kept.
+    Expects plain lists, as figure_problems does.
     """
-    found = []
-    for n, trace in enumerate((figure or {}).get("data") or [], 1):
-        if not isinstance(trace, dict) or trace.get("type") != "bar" or trace.get("base") is not None:
-            continue
-        horizontal = trace.get("orientation") == "h"
-        categories, values = trace.get("y" if horizontal else "x"), trace.get("x" if horizontal else "y")
-        if not isinstance(categories, list) or not isinstance(values, list) or len(categories) != len(values):
-            continue
-        try:
-            counts = Counter(tuple(c) if isinstance(c, list) else c for c in categories if c is not None)
-        except TypeError:
-            continue
-        if counts and max(counts.values()) > 1:
-            name = str(trace.get("name") or "").strip() or f"trace {n}"
-            kinds = len(counts)
-            found.append(f"bar trace '{name}': {len(categories):,} bars on {kinds:,} "
-                         f"{'category' if kinds == 1 else 'categories'}, one appears {max(counts.values()):,} times")
-    return found
+    return [f"bar trace '{name}': {bars:,} bars on {kinds:,} {_categories(kinds)}, one appears {most:,} times"
+            for name, bars, kinds, most in _repeated_bars(figure)]
 
 
 def _syntax_problem(code: str) -> str:

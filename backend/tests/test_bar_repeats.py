@@ -63,6 +63,12 @@ def test_unreadable_traces_are_skipped():
     assert bar_repeats({}) == []
 
 
-def test_it_counts_but_never_sends_a_chart_back():
-    # Measured, not enforced: a repair in either arm would hide what the A/B measures.
-    assert figure_problems(raw_rows_in_one_trace()) == []
+def test_a_repeat_with_no_value_is_not_drawn_so_it_is_not_counted():
+    assert bar_repeats({"data": [{"type": "bar", "x": ["a", "a", "b"], "y": [1, None, 2]}]}) == []
+
+
+def test_the_drawing_check_sends_back_exactly_what_it_counts():
+    assert len(figure_problems(raw_rows_in_one_trace())) == 1
+    assert figure_problems({"data": [{"type": "histogram", "x": ["a", "a", "b"]}]}) == []
+    assert figure_problems({"data": [{"type": "bar", "orientation": "h", "base": ["2024-01-01", "2024-02-01"],
+                                      "x": [1, 2], "y": ["task", "task"]}]}) == []
