@@ -19,7 +19,9 @@ This is part 1 of 3. Parts 2 and 3 get their own designs.
 2. **Open source:** remove old and unneeded files, scan the whole git history for secrets, choose a licence, rename the repository to `promptdash`, make it public.
 3. **Setup and README:** a setup that a person or an agent can follow end to end, and a README with the dot animation as an animated SVG.
 
-Until part 2 renames the repository, the page links to `github.com/tukka25/BYD`.
+The repository is private until part 2, so its links would not open for visitors. Until then the page is deployed as Vercel previews only. The public launch waits for part 2, when the repository is renamed and made public; until the rename the page links to `github.com/tukka25/BYD`.
+
+The work happens on the branch `feat/landing-page`. `main` is what Vercel deploys to production, so the page reaches `main` by merge.
 
 ## Decisions
 
@@ -38,9 +40,11 @@ Until part 2 renames the repository, the page links to `github.com/tukka25/BYD`.
 
 - Next.js (the version byd-web uses), `output: "export"`, TypeScript, Tailwind. No server and no API calls at run time: everything the page shows is in the build.
 - Visual language: `byd-web/DESIGN.md`. The same colour tokens, the same three typefaces served from the site's own origin through `next/font`, the same motion rules, the same chart re-theme.
-- Two pieces of code come from byd-web as byte-identical copies, and a test fails if a copy differs from its original:
-  - `byd-web/lib/dot-shapes.ts` → `site/lib/dot-shapes.ts`, the geometry of the dot animation.
-  - The chart re-theme. Today it lives inside `byd-web/components/plot.tsx`. It moves, with no change in behaviour, into an import-free module `byd-web/lib/plot-theme.ts` (a function from a figure and the theme's values to a re-themed figure) that the app keeps using. `site/lib/plot-theme.ts` is its copy.
+- Four pieces of code come from byd-web as byte-identical copies, and a test fails if a copy differs from its original. Two of them are first moved out of components into `lib/`, with no change in behaviour and the app using the moved code:
+  - `byd-web/lib/dot-shapes.ts`: the geometry of the dot animation, as it is.
+  - `byd-web/lib/dot-draw.ts` (new): the draw loop that today sits inside `components/build-loader.tsx`, which draws one frame of dots onto a canvas. `BuildLoader` keeps its label and timer and calls it, and the hero calls the copy, so the hero is the same animation, not a lookalike.
+  - `byd-web/lib/plot-theme.ts` (new): the chart re-theme from `components/plot.tsx` (`themed` and its helpers). Its one outside input, the default currency that `plot.tsx` reads from `NEXT_PUBLIC_DEFAULT_CURRENCY`, becomes a parameter.
+  - `byd-web/lib/rich-text.ts`: the app's HTML sanitiser, as it is, for the text block below.
 
 ### Data the page reads (`site/data/`)
 
@@ -52,7 +56,8 @@ Until part 2 renames the repository, the page links to `github.com/tukka25/BYD`.
 - **`dashboards/airbnb.json`, `spotify.json`, `netflix.json`:** one file per dashboard:
   - `prompt`: exactly as sent.
   - `sources`: name, kind (file or database), rows, URL, licence, note.
-  - `blocks`: kind, title, Plotly figure, grid `x`/`y`/`w`/`h`, chart type, exactly as the app saved them.
+  - `blocks`: kind, title, Plotly figure or `text_body`, grid `x`/`y`/`w`/`h`, chart type, exactly as the app saved them. Every build adds one text block: an introduction that the app's code (not the model) writes as HTML from the data profile. The page renders it through the sanitiser copy, as the app does.
+  - `currency`: the currency the source states for its money columns (Inside Airbnb gives prices in local currency, GBP for Edinburgh), passed to the re-theme the way the app's `NEXT_PUBLIC_DEFAULT_CURRENCY` is. Empty when the source states none: a currency is never invented.
   - `build`: charts planned, drawn and skipped, seconds, prompts tried.
   - `model`, `app_commit` and `generated_at`.
 
@@ -65,7 +70,7 @@ Each section is a few technical sentences and one figure, table or diagram.
 3. **Journey.** A strip of dated milestones read from `git log`, each citing its commit: the first commit (2026-03-07), the training data, lora-v1 (2026-11-20), lora-v2 and dashboards planned by the model (2026-11-21, `a91d276`), no hardcoded charts (2026-11-23, `7deeaa3`), the bar drawing check (2026-11-25, `2d7af93`).
 4. **The problem.**
    - Out of the box, Qwen3.5-9B answers with a reasoning essay, and 7.7% of its chart scripts run.
-   - With thinking off, 62.7% run, but only 23.7% draw the right chart (118 questions).
+   - With thinking off, 62.7% run, but only 23.7% draw the right chart. These are 118 questions weighted towards the four hardest chart types (every area, heatmap, gauge and treemap/funnel/waterfall question, plus 4 of each other type), where lora-v1 scores 91.5% and 68.6%.
    - The scraped Plotly docs taught the opposite of what the app needs. Table: 0% end with `print(fig.to_json())`, 96.1% call `fig.show()`, 46.9% read a file or URL, 3.3% of prompts mention columns.
 5. **The data.** A pipeline diagram:
    - 970 scraped rows, set aside as training data.
@@ -82,7 +87,7 @@ Each section is a few technical sentences and one figure, table or diagram.
 7. **Results.** One table. Each row names its test set and links to its source file on GitHub:
    - Frozen 300, full precision: renders 7.7% → 91.3% → 97.3%; right shape 4.7% → 81.0% → 87.0% (base → lora-v1 → lora-v2).
    - Frozen 300 on a Mac, 4-bit: lora-v1 89.3% / 76.3% → lora-v2 94.3% / 82.3% (paired p = 0.020).
-   - Base with thinking off against lora-v1, 118 questions: 62.7% / 23.7% against 91.5% / 68.6%.
+   - Base with thinking off against lora-v1, on the 118 questions weighted to the hardest chart types: 62.7% / 23.7% against 91.5% / 68.6%. This set is never set beside the frozen 300: no row reads 23.7% → 82.3%.
    - 120 frozen dashboard requests: needing a retry 54.2% → 12.5%; drawn charts that render 86.4% → 98.9%; drawn as the planned kind 84.9% → 98.9%.
    - A note: 7.7% measures the essay; 62.7% is the fair baseline.
 8. **How the app works.** One diagram: analyst → planner → plan checks against the real tables (up to 3 tries) → chartist writes Plotly code → sandbox runs it → drawing check (up to 2 fixes) → narrator writes the title. With the rule: no hardcoded charts; every chart is the model's own code or is reported failed.
@@ -109,11 +114,12 @@ A script, `backend/scripts/make_showcase.py` (`make showcase`). It follows the p
 
 | Dashboard | Source | Into the app as |
 |---|---|---|
-| Airbnb | The latest Edinburgh snapshot from Inside Airbnb: `listings`, `reviews`, `neighbourhoods` (CC BY 4.0) | Uploads: `listings.xlsx` (saved as Excel, which the page says), `reviews.csv`, `neighbourhoods.csv` |
+| Airbnb | The latest Edinburgh snapshot from Inside Airbnb: `listings` and `reviews` (CC BY 4.0). Its `neighbourhoods` file lists only names, so it is left out. | Uploads: `listings.xlsx` (saved as Excel, which the page says) and `reviews.csv` |
 | Spotify | The `spotify` Postgres database, table `tracks`: 32,833 songs. Rebuilt from the TidyTuesday 2020-01-21 file if missing. | A database connection |
 | Netflix | `netflix_titles.csv` from the TidyTuesday 2021-04-20 mirror of the Kaggle dataset. Kaggle itself needs a login. | An upload |
 
-- The app refuses tables over 500,000 rows. If a file is larger, the script keeps the most recent rows and the page says so.
+- Uploaded files have no row limit in the app (the 500,000-row limit is for database tables). The page states each source's row count.
+- Each licence and download URL is confirmed on the source's own page before the first download. A dataset whose terms do not clearly allow showing charts of it publicly is swapped. Spotify is checked hardest: its songs come from the Spotify Web API, whose developer terms apply. The fallback for the database dashboard is the shop demo, which also shows the app joining tables.
 - Downloads go to a gitignored folder under `backend/uploads/`. No third-party data is committed.
 - The first download needs the owner's OK, with each file's name, source and size.
 
@@ -159,10 +165,10 @@ A script, `backend/scripts/make_showcase.py` (`make showcase`). It follows the p
 ## Tests and checks
 
 - **`npm test` in `site/`** (Node's own runner, as in byd-web):
-  - the two copies are byte-identical to their originals;
+  - the four copies are byte-identical to their originals;
   - every entry in `stats.json` matches its source;
   - every dashboard file has a prompt, provenance, figures, grid positions within 12 columns, and stays under 1.5 MB.
-- **byd-web:** its tests still pass after the re-theme moves into `lib/plot-theme.ts`.
+- **byd-web:** its tests, lint and build still pass after the re-theme and the draw loop move into `lib/`, and the loader and the charts look the same in the running app.
 - **Build:** `npm run lint` and `npm run build` (the static export) in `site/`.
 - **In a browser:** desktop and phone widths, and with reduced motion. A performance check on the first Vercel preview.
 
@@ -186,4 +192,4 @@ The owner creates the project, since it needs their account. `site/README.md` gi
 ## Needs the owner's OK during the build
 
 - The first download of the source files.
-- Creating the Vercel project and the first deploy.
+- Pushing the branch, creating the Vercel project, and the first deploy.
