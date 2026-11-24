@@ -47,6 +47,12 @@ class Settings(BaseSettings):
     # default. Only turn this on for a model trained with the same hint shape:
     # lora-v1 saw bare questions, so a hint is a prompt it never trained on.
     CHARTIST_CHART_TYPE_HINT: str = "off"
+    # "on" appends one instruction to the chartist's system prompt: aggregate with
+    # the plan's aggregation before drawing, so each x appears once per series
+    # (CHARTIST_AGG_RULE and chartist_system_prompt in agents/chartist_contract.py).
+    # "off" sends the prompt lora-v2 was trained on, byte for byte. Measured by
+    # chartist-finetune/ab_agg_rule.py.
+    CHARTIST_AGG_RULE: str = "off"
     # "ai": the dashboard is planned by the analyst and planner models and checked
     # by code (agents/dashboard_flow.py). "rules": the old name-based architect,
     # kept only as a switch to roll back to.

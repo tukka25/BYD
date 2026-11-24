@@ -107,7 +107,9 @@ class ClaudeGenerator:
             with self._client.messages.stream(
                 model=MODEL,
                 max_tokens=MAX_TOKENS,
-                system=CHARTIST_SYSTEM_PROMPT,
+                # The system text ChartistAgent sends its own model, so the two
+                # sides of the comparison read the same rules.
+                system=variables.get("system") or CHARTIST_SYSTEM_PROMPT,
                 messages=messages,
                 # Thinking cannot be turned off on this model; effort is the
                 # only control, and the default is medium. Set, not assumed.

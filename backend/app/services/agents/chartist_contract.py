@@ -20,6 +20,30 @@ Hard rules:
 - Never call fig.show(). Never save a file. Never use matplotlib.
 - Output executable Python only. No markdown fences, no explanation, no commentary."""
 
+# One instruction appended to the system prompt when CHARTIST_AGG_RULE is "on".
+# Off by default: lora-v2 was trained without it. Every chartist training row
+# uses CHARTIST_SYSTEM_PROMPT byte for byte, and the exporters import that
+# constant through chartist-finetune/contract.py, so the constant stays as it is
+# and the rule is added only here. Written after a dashboard drew "Bounce Rate by
+# Weekday" as px.bar on 168 raw rows under a plan that said
+# `bounceRatePct (mean)`: Plotly stacked 24 rows per weekday into one bar.
+# chartist-finetune/ab_agg_rule.py measures it before it may be the default.
+CHARTIST_AGG_RULE = (
+    "- Plotly does not aggregate: px.bar stacks every row and a line runs back and forth. "
+    "When the task asks for a total, average or count (in a plan, y such as `sales (sum)` or "
+    "`rate (mean)`), first group df by x (and by the group, if any) with that aggregation, "
+    "so each x appears once per series. Scatter, box and histogram charts use the raw rows."
+)
+AGG_RULE_MODES = ("off", "on")
+
+
+def chartist_system_prompt(agg_rule: str = "off") -> str:
+    """The chartist's system text: the trained prompt, plus the aggregation rule when "on"."""
+    if agg_rule not in AGG_RULE_MODES:
+        raise ValueError(f"CHARTIST_AGG_RULE must be one of {AGG_RULE_MODES}, got {agg_rule!r}")
+    return CHARTIST_SYSTEM_PROMPT if agg_rule == "off" else f"{CHARTIST_SYSTEM_PROMPT}\n{CHARTIST_AGG_RULE}"
+
+
 CHARTIST_USER_TEMPLATE = """Task: {task}
 
 DataFrame `df` schema:

@@ -66,6 +66,8 @@ services:
       WORKFLOW_TIMEOUT_SECONDS: ${WORKFLOW_TIMEOUT_SECONDS:-0}
       # "on" (explorer step), "planner" (the planner holds the tools) or "off".
       PLANNER_TOOLS: ${PLANNER_TOOLS:-on}
+      # "on" appends the aggregation rule to the chartist's system prompt; "off" sends the trained prompt.
+      CHARTIST_AGG_RULE: ${CHARTIST_AGG_RULE:-off}
 
       # Both default to the placeholders committed in this repo, which are
       # public. `make secrets` prints fresh ones; put them in .env.

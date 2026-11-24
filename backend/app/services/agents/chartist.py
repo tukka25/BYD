@@ -5,11 +5,12 @@ from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 
 from app.services.agents.chartist_contract import (
+    AGG_RULE_MODES,
     CHARTIST_REPAIR_TEMPLATE,
-    CHARTIST_SYSTEM_PROMPT,
     CHARTIST_USER_TEMPLATE,
     HINT_STYLES,
     chart_type_hint,
+    chartist_system_prompt,
     render_spec,
 )
 
@@ -40,25 +41,41 @@ class ChartistAgent:
     Agent responsible for generating Python code to visualize data.
     """
     
-    def __init__(self, llm, generator=None, chart_type_hint_style: str | None = None):
+    def __init__(
+        self,
+        llm,
+        generator=None,
+        chart_type_hint_style: str | None = None,
+        agg_rule: str | None = None,
+    ):
         """`generator` replaces only the text-generation step.
 
         Anything with `.invoke(variables) -> str` can stand in for the chain,
         which is how a different model is compared on this harness: the prompt,
         the reply reading, the contract and the repair turn are shared, so the
         model is the only thing that differs. A repair request carries two more
-        variables, `previous_code` and `problem`.
+        variables, `previous_code` and `problem`, and every request carries
+        `system`, the system text this agent sends.
 
-        `chart_type_hint_style` overrides `CHARTIST_CHART_TYPE_HINT` for this
-        agent, so one process can run both sides of that A/B at once. None means
-        take the setting.
+        `chart_type_hint_style` overrides `CHARTIST_CHART_TYPE_HINT` and
+        `agg_rule` overrides `CHARTIST_AGG_RULE` for this agent, so one process
+        can run both sides of either A/B at once. None means take the setting.
         """
         self.llm = llm
         self.generator = generator
-        if chart_type_hint_style is None:
+        if chart_type_hint_style is None or agg_rule is None:
             from app.core.config import get_settings
 
-            chart_type_hint_style = get_settings().CHARTIST_CHART_TYPE_HINT
+            settings = get_settings()
+            if chart_type_hint_style is None:
+                chart_type_hint_style = settings.CHARTIST_CHART_TYPE_HINT
+            if agg_rule is None:
+                agg_rule = settings.CHARTIST_AGG_RULE
+        self.agg_rule = (agg_rule or "off").strip().lower()
+        if self.agg_rule not in AGG_RULE_MODES:
+            raise ValueError(f"CHARTIST_AGG_RULE must be one of {AGG_RULE_MODES}, got {agg_rule!r}")
+        # The first call, the repair turn and a stand-in generator all send this text.
+        self.system_prompt = chartist_system_prompt(self.agg_rule)
         self.chart_type_hint_style = (chart_type_hint_style or "off").strip().lower()
         if self.chart_type_hint_style not in HINT_STYLES:
             # Fail loudly, as llm.py does for LLM_BACKEND. Otherwise a typo such
@@ -68,14 +85,14 @@ class ChartistAgent:
                 f"got {chart_type_hint_style!r}"
             )
         self.prompt = ChatPromptTemplate.from_messages([
-            ("system", CHARTIST_SYSTEM_PROMPT),
+            ("system", self.system_prompt),
             ("human", CHARTIST_USER_TEMPLATE),
         ])
         # The same conversation, continued: the model's own code as its answer,
         # then what went wrong with it. The code goes in as a variable's value,
         # so its braces are never read as template fields.
         self.repair_prompt = ChatPromptTemplate.from_messages([
-            ("system", CHARTIST_SYSTEM_PROMPT),
+            ("system", self.system_prompt),
             ("human", CHARTIST_USER_TEMPLATE),
             ("ai", "{previous_code}"),
             ("human", CHARTIST_REPAIR_TEMPLATE),
@@ -212,6 +229,8 @@ class ChartistAgent:
         if source is None:
             raise ChartistUnavailable("the chartist has neither a model nor a generator")
         payload = {**variables, "previous_code": previous_code, "problem": problem} if repairing else variables
+        if self.generator is not None:
+            payload = {**payload, "system": self.system_prompt}
         try:
             raw = source.invoke(payload)
         except Exception as exc:  # noqa: BLE001 - reported to the caller, never replaced
