@@ -1,0 +1,66 @@
+{
+  "items": 23,
+  "baseline": "off arm of data/v2/ab_agg_rule_live.rows.jsonl",
+  "decision_rule": "passes when the baseline drew raw-row bars on at least one plan, every such plan now renders with the planned values after at least one bar repair, no plan that rendered in the baseline fails now, and bars with the planned values are not fewer than in the baseline",
+  "before": {
+    "charts": 23,
+    "render_rate": 1.0,
+    "planned_kind_rate": 1.0,
+    "repairs_per_chart": 0.17391304347826086,
+    "lines_back_and_forth": 1,
+    "bars_sent_back": 0,
+    "bar_plans": 8,
+    "raw_row_bar_charts": 2,
+    "bar_values_checked": 8,
+    "bar_values_ok": 6,
+    "median_seconds": 8.2
+  },
+  "after": {
+    "charts": 23,
+    "render_rate": 1.0,
+    "planned_kind_rate": 1.0,
+    "repairs_per_chart": 0.2608695652173913,
+    "lines_back_and_forth": 1,
+    "bars_sent_back": 2,
+    "bar_plans": 8,
+    "raw_row_bar_charts": 0,
+    "bar_values_checked": 8,
+    "bar_values_ok": 7,
+    "median_seconds": 8.0
+  },
+  "unchanged_code": 21,
+  "changed": [
+    {
+      "item_id": "live-10",
+      "chart": "bar",
+      "title": "Sessions by Weekday",
+      "before": "raw-row bars",
+      "after": "ok",
+      "repairs": 1,
+      "repeated_bars": 1,
+      "repair_reasons": [
+        "the bar series 'trace 1' has 168 bars on 7 categories, and Plotly stacks bars that share a category: each category should appear once per bar series: aggregate the values for each category (and colour group) before drawing, with the aggregation the task asks for (the mean for averages and rates, the"
+      ]
+    },
+    {
+      "item_id": "live-22",
+      "chart": "bar",
+      "title": "Bounce Rate by Weekday",
+      "before": "raw-row bars",
+      "after": "ok",
+      "repairs": 2,
+      "repeated_bars": 1,
+      "repair_reasons": [
+        "it failed when it ran: Invalid property specified for object of type plotly.graph_objs.bar.marker.Line: 'dash'\n\nDid you mean \"cauto\"?\n\n    Valid properties:\n        autocolorscale\n            Determines whether the colorscale is a default palette\n            (`autocolorscale: true`) or the palette d",
+        "7 bar series repeat a category (the bar series 'Mon' has 24 bars on 1 category), and Plotly stacks bars that share a category: each category should appear once per bar series: aggregate the values for each category (and colour group) before drawing, with the aggregation the task asks for (the mean f"
+      ]
+    }
+  ],
+  "decision": {
+    "baseline_drew_raw_bars": true,
+    "raw_bars_fixed_by_a_bar_repair": true,
+    "no_chart_lost": true,
+    "values_not_fewer": true,
+    "passes": true
+  }
+}
