@@ -27,7 +27,14 @@
     - One grouped bar was lost (x neighborhoodZone, mean salePrice, group listingStatus). Off drew it wrong: filtered to Sold, group dropped. On failed it: grouped by zone only, then coloured by a column it had dropped, twice.
     - The rule fixed before the run counts that as a lost chart, so the live set fails and the default stays `off`.
   - The prompt grows by 89 tokens (longest 758 -> 847, counted by the server, against lora-v2's 2,048).
-  - The frozen no-harm set (269 bar plans plus 83 of other kinds) has not been run.
+  - Frozen no-harm set (`data/v2/ab_agg_rule_frozen.json`, 2026-11-24, 109 min): every distinct bar plan of the lora-v2 planning evaluation (269, 35 with a group) and up to 10 seeded plans of each other kind (83). It fails four of its five checks (render, planned kind, bar values, collapse), so the default stays `off`. Every paired difference is small (p=0.625; collapse 2 against 0).
+    - Drawn: off 350 of 352, on 348 (3 lost, 1 gained). Bars with the planned values: 226 against 224 of 265 checked (1 better, 3 worse). Repairs: 9 in each arm.
+    - On collapsed 2 scatter plans with agg none by summing x and y per colour group (240 points -> 6, 159 -> 7). Off collapsed none.
+    - Neither arm drew a raw-row bar, so this set never shows the failure the rule targets and can only show harm.
+    - Grouped bars did not break: on drew 35 of 35, off 34 of 35, and both had the planned values on 25 of 32.
+    - On's losses repeat the live loss's pattern: its groupby keys stop matching what it draws. A line grouped by an extra `Semester` and still ran back and forth after two fixes. A heatmap grouped by three keys, then pivoted on two. The two scatters above. The third lost chart, a bar, still drew no figure after two fixes.
+    - The value check counts a filter or split the question asks for but the plan does not carry as other values (both arms filtered s0005-r0-c6 to 2024), so 226 of 265 compares the arms; it is not an error rate.
+    - `bar_repeats` flagged none of the 350 figures off drew here, and only the two weekday bars in the live set. So a bar drawing check would leave every chart in this set as drawn. Whether the model's repair then draws the weekday bars right is not measured.
 - `architect.profile_frame` (now only behind `DASHBOARD_PLANNER=rules`) only tries to parse a text column as a date when its NAME matches `_TIME_NAME`: across the 180 fixture tables it found no date in 57 (32%), and "churn by country" never finds `cntry_cd`. Its replacement, `agents/profiler.py`, reads values only and agrees with the generator's own column roles on all 1,382 fixture columns (180/180 dates). Never add name rules back; the model reads the examples the profiler prints.
 - `DataDetective.detect_source(plan=...)` accepts the planner's plan and never reads it.
 - `CHARTIST_MAX_TOKENS` (1024, `chartist_contract.py`) is the one generation cap for production, `evaluate.py` and the A/B harness. Evals used to stop at 800; lora-v1's recorded numbers were measured at 800.
