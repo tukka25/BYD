@@ -5,8 +5,8 @@ import numpy as np
 import pandas as pd
 
 from ab_agg_rule import (
-    compare, drawn_bar_values, expected_bar_values, frozen_decision, frozen_items, live_decision, live_items,
-    points_drawn, score, summarize, values_ok,
+    breakdown, compare, drawn_bar_values, expected_bar_values, frozen_decision, frozen_items, live_decision,
+    live_items, points_drawn, score, summarize, values_ok,
 )
 
 WEB = pd.DataFrame({
@@ -102,10 +102,10 @@ def test_score_records_points_only_for_raw_kinds_and_counts_line_repairs():
     assert line["repeated_x"] == 1 and line["repairs"] == 1
 
 
-def _row(item, chart="bar", agg="mean", off=None, on=None):
+def _row(item, chart="bar", agg="mean", off=None, on=None, group=""):
     base = {"rendered": True, "kind_ok": True, "repairs": 0, "repeated_x": 0, "raw_bars": 0, "values_ok": True,
-            "points": None, "seconds": 1.0}
-    return {"item_id": item, "spec": {"chart": chart, "agg": agg},
+            "points": None, "seconds": 1.0, "error": ""}
+    return {"item_id": item, "spec": {"chart": chart, "agg": agg, "group": group, "title": item.upper()},
             "arms": {"off": {**base, **(off or {})}, "on": {**base, **(on or {})}}}
 
 
@@ -133,6 +133,31 @@ def test_frozen_is_a_no_harm_rule():
     worse = rows + [_row("c", on={"values_ok": False}), _row("d", on={"values_ok": False})]
     assert not frozen_decision(worse)["bar_values_not_fewer"]
     assert not frozen_decision(rows + [_row("e", on={"rendered": False, "kind_ok": False})])["passes"]
+
+
+def test_breakdown_splits_grouped_bars_and_names_every_chart_one_arm_lost():
+    failed = {"rendered": False, "kind_ok": False, "values_ok": False}
+    rows = [
+        _row("plain"),
+        _row("lost", group="device", on={**failed, "error": "boom"}),
+        _row("fixed", group="device", off={"values_ok": False}),
+        _row("broke", on={"values_ok": False}),
+        _row("gained", chart="line", agg="none", off={**failed, "values_ok": None}, on={"values_ok": None}),
+    ]
+    b = breakdown(rows)
+    assert b["bars"]["grouped"]["off"] == {"plans": 2, "rendered": 2, "values_checked": 2, "values_ok": 1,
+                                           "raw_row_bar_charts": 0}
+    assert b["bars"]["grouped"]["on"] == {"plans": 2, "rendered": 1, "values_checked": 2, "values_ok": 1,
+                                          "raw_row_bar_charts": 0}
+    assert b["bars"]["ungrouped"]["on"]["values_ok"] == 1
+    assert b["lost_on"] == [{"item_id": "lost", "chart": "bar", "group": "device", "title": "LOST",
+                             "error": "boom"}]
+    assert [x["item_id"] for x in b["gained_on"]] == ["gained"]
+    # A value change counts only where both arms drew; a lost chart is listed once, as lost.
+    assert [x["item_id"] for x in b["values_better_on"]] == ["fixed"]
+    assert [x["item_id"] for x in b["values_worse_on"]] == ["broke"]
+    assert b["by_kind"]["line"] == {"off": {"plans": 1, "rendered": 0, "kind_ok": 0},
+                                    "on": {"plans": 1, "rendered": 1, "kind_ok": 1}}
 
 
 def test_a_collapse_is_a_raw_chart_drawn_with_under_half_the_other_arms_points():

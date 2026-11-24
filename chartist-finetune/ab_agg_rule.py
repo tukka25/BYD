@@ -313,6 +313,46 @@ def frozen_decision(rows: list[dict]) -> dict:
     return decision
 
 
+def breakdown(rows: list[dict]) -> dict:
+    """Outside the pre-registered decision: bar plans with and without a group, each kind, and every chart one
+    arm drew and the other did not (or drew with other values), so a net rate cannot hide a loss."""
+    def bar_counts(drawn: list[dict]) -> dict:
+        checked = [d for d in drawn if d.get("values_ok") is not None]
+        return {"plans": len(drawn), "rendered": sum(1 for d in drawn if d["rendered"]),
+                "values_checked": len(checked), "values_ok": sum(1 for d in checked if d["values_ok"]),
+                "raw_row_bar_charts": sum(1 for d in drawn if d["raw_bars"])}
+
+    def listed(row: dict, arm: str) -> dict:
+        return {"item_id": row["item_id"], "chart": row["spec"].get("chart"), "group": row["spec"].get("group") or "",
+                "title": row["spec"].get("title") or "", "error": row["arms"][arm].get("error") or ""}
+
+    bars = [row for row in rows if row["spec"].get("chart") == "bar"]
+    split = {"grouped": [row for row in bars if row["spec"].get("group")],
+             "ungrouped": [row for row in bars if not row["spec"].get("group")]}
+    by_kind: dict = {}
+    for row in rows:
+        kind = by_kind.setdefault(str(row["spec"].get("chart")),
+                                  {arm: {"plans": 0, "rendered": 0, "kind_ok": 0} for arm in ARMS})
+        for arm in ARMS:
+            kind[arm]["plans"] += 1
+            kind[arm]["rendered"] += int(bool(row["arms"][arm]["rendered"]))
+            kind[arm]["kind_ok"] += int(bool(row["arms"][arm]["kind_ok"]))
+    drew = lambda row, arm: bool(row["arms"][arm]["rendered"])  # noqa: E731
+    both = [row for row in rows if drew(row, "off") and drew(row, "on")]
+    return {
+        "note": "not part of the pre-registered decision",
+        "bars": {name: {arm: bar_counts([row["arms"][arm] for row in group]) for arm in ARMS}
+                 for name, group in split.items()},
+        "by_kind": dict(sorted(by_kind.items())),
+        "lost_on": [listed(row, "on") for row in rows if drew(row, "off") and not drew(row, "on")],
+        "gained_on": [listed(row, "off") for row in rows if drew(row, "on") and not drew(row, "off")],
+        "values_better_on": [listed(row, "on") for row in both
+                             if row["arms"]["on"]["values_ok"] is True and row["arms"]["off"]["values_ok"] is False],
+        "values_worse_on": [listed(row, "on") for row in both
+                            if row["arms"]["off"]["values_ok"] is True and row["arms"]["on"]["values_ok"] is False],
+    }
+
+
 def server_prompt_tokens(messages: list[dict]) -> int:
     """Prompt tokens as the model server counts them (its own chat template), from a one-token reply."""
     import urllib.request
@@ -404,7 +444,7 @@ def main() -> int:
     report = {
         "set": args.set, "items": len(rows), "rule": CHARTIST_AGG_RULE, "decision_rule": DECISION,
         "prompt_tokens": tokens, "off": summarize(rows, "off"), "on": summarize(rows, "on"),
-        "paired": compare(rows), "decision": decide(rows),
+        "paired": compare(rows), "decision": decide(rows), "breakdown": breakdown(rows),
     }
     out.write_text(json.dumps(report, indent=2), encoding="utf-8")
     print(json.dumps({key: report[key] for key in ("off", "on", "paired", "decision")}, indent=2))
