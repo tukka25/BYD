@@ -1,0 +1,23 @@
+{
+  "label": "tools-planner-draw3",
+  "rows": 40,
+  "analyst_usable_rate": 1.0,
+  "analyst_retry_rate": 0.0,
+  "planner_first_try_rate": 0.9,
+  "mean_charts": 6.925,
+  "dropped_per_dashboard": 0.05,
+  "tool_calls_per_dashboard": 0.95,
+  "median_seconds": 76.55000000000001,
+  "asked_rows": 40,
+  "first_try_rate_counting_failures": 0.85,
+  "revisions_per_dashboard": 0.1,
+  "planner_calls_per_dashboard": 1.225,
+  "total_failure_rate": 0.0,
+  "charts_dropped_per_dashboard": 0.025,
+  "charts_drawn": 120,
+  "render_rate": 1.0,
+  "planned_kind_rate": 1.0,
+  "repairs_per_chart": 0.008333333333333333,
+  "repeated_x_per_dashboard": 0,
+  "median_draw_seconds": 28.15
+}

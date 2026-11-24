@@ -1,0 +1,23 @@
+{
+  "label": "tools-on-draw3",
+  "rows": 40,
+  "analyst_usable_rate": 1.0,
+  "analyst_retry_rate": 0.025,
+  "planner_first_try_rate": 0.9,
+  "mean_charts": 6.95,
+  "dropped_per_dashboard": 0,
+  "tool_calls_per_dashboard": 3,
+  "median_seconds": 81.25,
+  "asked_rows": 40,
+  "first_try_rate_counting_failures": 0.9,
+  "revisions_per_dashboard": 0,
+  "planner_calls_per_dashboard": 1.125,
+  "total_failure_rate": 0.0,
+  "charts_dropped_per_dashboard": 0,
+  "charts_drawn": 120,
+  "render_rate": 1.0,
+  "planned_kind_rate": 1.0,
+  "repairs_per_chart": 0.008333333333333333,
+  "repeated_x_per_dashboard": 0,
+  "median_draw_seconds": 29.6
+}
