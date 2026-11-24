@@ -76,12 +76,21 @@
   - Bars that repeat a category within one series go back the same way (since 2d7af93). Plotly stacks bars that share a category, so raw rows show their sum (`REPEATED_BAR_FIX`: aggregate per category and colour group with the aggregation the task asks for).
     - Every such series in a figure makes one problem together, so a colour per weekday is one fix, not seven.
     - A bar with no value is not drawn, so it is not counted. Timelines (`base`) and histograms are left out.
-    - `ab_agg_rule.py` and `measure_planning_tools.py` count these repairs as `repeated_bars`.
+    - Grouped bars coloured by a number (`color='bedroomCount'`) repeat categories too, because px draws a numeric colour as one series with a colour scale. That problem says the colour is a number and ends in `NUMBER_COLOUR_FIX` (colour by it as text) instead (8b4f403). Told only to aggregate, lora-v2 sent its already grouped code back twice and the chart failed.
+    - Keep `REPEATED_BAR_FIX` byte for byte. One sentence about colouring by text added to it made lora-v2 keep the raw rows of "Bounce Rate by Weekday" (it only set a category order), and the chart failed after two fixes.
+    - `ab_agg_rule.py` and `measure_planning_tools.py` count both fixes as `repeated_bars`.
+    - Limits: only rows stacked in one series are caught. live-15 (a grouped bar filtered to Sold, its group dropped) still draws wrong values. A horizontal bar whose value axis holds text passes, because categories are read from y. The check shares the two-fix budget with every other problem.
+    - Blocks saved before the check are unchanged; it runs only when a chart is drawn.
   - Bar check acceptance (`chartist-finetune/check_bar_repairs.py`, `data/v2/bar_check_live.json`, 2026-11-25): the 23 live plans with the app's default chartist, against the off arm of `ab_agg_rule_live.rows.jsonl`. The decision fixed before the run passes.
     - Both raw-row weekday bars went back once and came back grouped by weekday with the planned values. Bars with the planned values went 6 -> 7 of 8. "Sessions by Weekday" is a sum, so its stacked heights were already right; now it is one bar per day.
     - The other 21 plans gave byte-identical code to the baseline, across a restart of the model server. Repairs went 4 -> 6.
     - "Bounce Rate by Weekday" used both repairs: one for an invalid `marker.line.dash`, one for the bars. One more problem would have failed it.
     - The 352-plan no-harm set had no such bars in any of the 350 figures kept, so the check would not have touched them.
+    - Rerun with the final text (8b4f403): the same result, and the decision passes. The text-colour sentence run in between failed it (above).
+  - Numeric-colour probe (`check_bar_repairs.py --probe`, `data/v2/bar_check_probe.json`): two grouped bar plans whose group is a number. None of the 36 grouped bar plans in the live and frozen sets has one. Its decision (both draw the planned values) fails.
+    - "Average Sale Price by Zone and Bedrooms" now draws 6 series with the planned values, after both fixes.
+    - "Average Life Expectancy by Continent and Year" first drew 1,704 raw rows and was sent back. The fix grouped right but drew `orientation='h'` with continent as the bar length, which the check passes (see Limits).
+  - In the app (2026-11-25): live-22's plan through `run_spec` inside the api container took the same two fixes and drew one bar per weekday at the true means (49.0-51.9). "Average bounce rate by weekday" sent to `POST /blocks/generate` with `chart_kind=bar` drew the right bars the first time, so the check did not fire there.
   - `run_on_frame` and `run_spec` return `repair_reasons`, the problem behind each fix.
 - Browser check, 2026-11-24 (lora-v2, `PLANNER_TOOLS=on`, a copy of `web_traffic.csv`, 168 weekday × hour rows):
   - "Bounce rate by hour" in the ask bar drew 3 lines, one per device, of 19, 24 and 21 points, each x once. The drawing check sent the code back once: the first figure drew 'desktop' as 43 points over 19 x values. The fix averaged per hour and device.

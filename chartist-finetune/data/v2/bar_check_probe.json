@@ -1,0 +1,75 @@
+{
+  "decision_rule": "passes when every probe plan renders with the planned values",
+  "plans": [
+    {
+      "chart": "bar",
+      "table": "property_sales.csv",
+      "x": "neighborhoodZone",
+      "y": "salePrice",
+      "group": "bedroomCount",
+      "agg": "mean",
+      "grain": "",
+      "sort": "",
+      "top_n": 0,
+      "title": "Average Sale Price by Zone and Bedrooms",
+      "question": "What is the average sale price in each neighborhood zone by bedroom count?"
+    },
+    {
+      "chart": "bar",
+      "table": "gapminder.csv",
+      "x": "continent",
+      "y": "lifeExp",
+      "group": "year",
+      "agg": "mean",
+      "grain": "",
+      "sort": "",
+      "top_n": 0,
+      "title": "Average Life Expectancy by Continent and Year",
+      "question": "How has average life expectancy changed by continent across the years?"
+    }
+  ],
+  "drawn": [
+    {
+      "rendered": true,
+      "kind_ok": true,
+      "repairs": 2,
+      "repeated_x": 0,
+      "repeated_bars": 2,
+      "raw_bars": 0,
+      "raw_bar_notes": [],
+      "values_ok": true,
+      "points": null,
+      "error": "",
+      "code": "import plotly.express as px\n\nagg = df.groupby(['neighborhoodZone', 'bedroomCount'], as_index=False)['salePrice'].mean()\nagg['bedroomCount'] = agg['bedroomCount'].astype(str)\nfig = px.bar(agg, x='neighborhoodZone', y='salePrice', color='bedroomCount', barmode='group', title='Average Sale Price by Zone and Bedrooms', labels={'neighborhoodZone': 'Neighborhood Zone', 'salePrice': 'Average Sale Price', 'bedroomCount': 'Bedroom Count'})\nfig.update_layout(legend_title_text='Bedroom Count')\nprint(fig.to_json())",
+      "title": "Average Sale Price by Zone and Bedrooms",
+      "seconds": 26.8,
+      "traces": 6,
+      "repair_reasons": [
+        "the bar series 'trace 1' has 30 bars on 5 categories because its colour is a number, which Plotly draws as one series: colour by that column as text (.astype(str)) so each of its values is its own series",
+        "the bar series 'trace 1' has 30 bars on 5 categories because its colour is a number, which Plotly draws as one series: colour by that column as text (.astype(str)) so each of its values is its own series"
+      ]
+    },
+    {
+      "rendered": true,
+      "kind_ok": true,
+      "repairs": 1,
+      "repeated_x": 0,
+      "repeated_bars": 1,
+      "raw_bars": 0,
+      "raw_bar_notes": [],
+      "values_ok": false,
+      "points": null,
+      "error": "",
+      "code": "import plotly.express as px\nagg = df.groupby(['continent', 'year'], as_index=False)['lifeExp'].mean()\nfig = px.bar(agg, x='continent', y='lifeExp', color='year', orientation='h', title='Average Life Expectancy by Continent and Year')\nfig.update_layout(xaxis_title='Continent', yaxis_title='Average Life Expectancy', coloraxis_colorscale=[(0.25, 'lightsteelblue'), (0.5, 'mediumseagreen'), (0.75, 'gold'), (1, 'crimson')])\nprint(fig.to_json())",
+      "title": "Average Life Expectancy by Continent and Year",
+      "seconds": 12.9,
+      "traces": 1,
+      "repair_reasons": [
+        "the bar series 'trace 1' has 1,704 bars on 1,626 categories, and Plotly stacks bars that share a category: each category should appear once per bar series: aggregate the values for each category (and colour group) before drawing, with the aggregation the task asks for (the mean for averages and rate"
+      ]
+    }
+  ],
+  "decision": {
+    "passes": false
+  }
+}
