@@ -84,18 +84,21 @@ def test_rejects_requests():
     }
 
 
+# The code must end with its one print(fig.to_json()) (7deeaa3), so each write goes before it.
 def test_rejects_write_html():
-    code = COMPLIANT + "fig.write_html('x.html')\n"
+    code = COMPLIANT.replace("print(fig.to_json())", "fig.write_html('x.html')\nprint(fig.to_json())")
     assert set(validate_chart_code(code)) == {ContractViolation.WRITES_FILE}
 
 
 def test_rejects_to_csv():
-    code = COMPLIANT + "df.to_csv('x.csv')\n"
+    code = _code("df.to_csv('x.csv')\n")
     assert set(validate_chart_code(code)) == {ContractViolation.WRITES_FILE}
 
 
-def test_method_named_open_is_not_a_file_read():
-    assert validate_chart_code(_code("x = obj.open(1)\ny = Open(2)\n")) == []
+def test_a_method_named_open_is_blocked_as_the_executor_blocks_it_but_is_not_reading_data():
+    # SafeExecutor rejects any `open(` in the lowercased code at run time, and the contract mirrors
+    # it (ac39d4d) so the model hears first. Reading data takes a bare `open(` only.
+    assert validate_chart_code(_code("x = obj.open(1)\ny = Open(2)\n")) == [ContractViolation.BLOCKED_IMPORT]
 
 
 def test_fig_to_json_is_not_a_file_write():
