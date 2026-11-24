@@ -1,0 +1,81 @@
+{
+  "set": "live",
+  "items": 23,
+  "rule": "- Plotly does not aggregate: px.bar stacks every row and a line runs back and forth. When the task asks for a total, average or count (in a plan, y such as `sales (sum)` or `rate (mean)`), first group df by x (and by the group, if any) with that aggregation, so each x appears once per series. Scatter, box and histogram charts use the raw rows.",
+  "decision_rule": {
+    "live": "passes when the off arm draws raw-row bars on at least one plan (otherwise this is not the app's path), the on arm draws none, the on arm's bars carry the planned values on at least as many plans, and no plan that renders off fails on",
+    "frozen": "passes when, against off, the on arm's render rate and planned-kind rate are not lower, its raw-row bar charts are not more, its bars with the planned values are not fewer, and it collapses no more agg-none charts (under half the other arm's points) than off does",
+    "default": "CHARTIST_AGG_RULE becomes 'on' only if both sets pass"
+  },
+  "prompt_tokens": {
+    "off": {
+      "longest_chars": 1870,
+      "max_tokens": 606,
+      "over_maxlen": 0,
+      "counted": 3
+    },
+    "on": {
+      "longest_chars": 2216,
+      "max_tokens": 695,
+      "over_maxlen": 0,
+      "counted": 3
+    }
+  },
+  "off": {
+    "charts": 23,
+    "render_rate": 1.0,
+    "planned_kind_rate": 1.0,
+    "repairs_per_chart": 0.17391304347826086,
+    "lines_back_and_forth": 1,
+    "bar_plans": 8,
+    "raw_row_bar_charts": 2,
+    "bar_values_checked": 8,
+    "bar_values_ok": 6,
+    "median_seconds": 8.2
+  },
+  "on": {
+    "charts": 23,
+    "render_rate": 0.9565217391304348,
+    "planned_kind_rate": 0.9565217391304348,
+    "repairs_per_chart": 0.08695652173913043,
+    "lines_back_and_forth": 0,
+    "bar_plans": 8,
+    "raw_row_bar_charts": 0,
+    "bar_values_checked": 8,
+    "bar_values_ok": 7,
+    "median_seconds": 8.0
+  },
+  "paired": {
+    "rendered": {
+      "on_better": 0,
+      "off_better": 1,
+      "p": 1.0
+    },
+    "kind_ok": {
+      "on_better": 0,
+      "off_better": 1,
+      "p": 1.0
+    },
+    "raw_bars": {
+      "on_better": 2,
+      "off_better": 0,
+      "p": 0.5
+    },
+    "bar_values": {
+      "on_better": 1,
+      "off_better": 0,
+      "p": 1.0
+    },
+    "collapsed": {
+      "on_collapsed": 0,
+      "off_collapsed": 0
+    }
+  },
+  "decision": {
+    "off_draws_raw_row_bars": true,
+    "on_draws_no_raw_row_bars": true,
+    "on_values_not_fewer": true,
+    "no_chart_lost": false,
+    "passes": false
+  }
+}
