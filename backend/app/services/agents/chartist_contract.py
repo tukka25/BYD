@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import ast
 import re
+from collections import Counter
 from enum import Enum
 
 CHARTIST_SYSTEM_PROMPT = """You are a Plotly code generator. You receive a pandas DataFrame named `df` that is already loaded, and its schema. You write Python that builds one Plotly figure from it.
@@ -361,6 +362,40 @@ def figure_problems(figure: dict) -> list[str]:
                 problem += " (it has no mode, so Plotly draws it as a line; for a scatter, set mode='markers')"
             problems.append(problem)
     return problems
+
+
+def bar_repeats(figure: dict) -> list[str]:
+    """Bar traces in which one category appears more than once, in words; [] when none.
+
+    Plotly does not aggregate bars: within one trace, rows with the same category
+    stack (or overlap) into one bar, so raw rows drawn as bars show their sum, not
+    the plan's mean. The category is x, or y for horizontal bars. A category
+    repeated with the same value still stacks, so occurrences are counted, not
+    distinct values. Bars with `base` (timelines) repeat a category by design, and
+    histograms are their own trace type and aggregate on purpose.
+
+    Counted by chartist-finetune/ab_agg_rule.py. Deliberately not part of
+    figure_problems: a repair in either arm would hide the difference that A/B
+    measures. Expects plain lists, as figure_problems does.
+    """
+    found = []
+    for n, trace in enumerate((figure or {}).get("data") or [], 1):
+        if not isinstance(trace, dict) or trace.get("type") != "bar" or trace.get("base") is not None:
+            continue
+        horizontal = trace.get("orientation") == "h"
+        categories, values = trace.get("y" if horizontal else "x"), trace.get("x" if horizontal else "y")
+        if not isinstance(categories, list) or not isinstance(values, list) or len(categories) != len(values):
+            continue
+        try:
+            counts = Counter(tuple(c) if isinstance(c, list) else c for c in categories if c is not None)
+        except TypeError:
+            continue
+        if counts and max(counts.values()) > 1:
+            name = str(trace.get("name") or "").strip() or f"trace {n}"
+            kinds = len(counts)
+            found.append(f"bar trace '{name}': {len(categories):,} bars on {kinds:,} "
+                         f"{'category' if kinds == 1 else 'categories'}, one appears {max(counts.values()):,} times")
+    return found
 
 
 def _syntax_problem(code: str) -> str:
