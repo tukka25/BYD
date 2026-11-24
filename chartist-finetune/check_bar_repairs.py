@@ -9,10 +9,16 @@ data/v2/ab_agg_rule_live.rows.jsonl: the same plan, path, prompt and model befor
 check existed. Scored as ab_agg_rule.score does, which also counts the bars the check
 sent back. The decision (DECISION) was fixed before the first call.
 
+--probe draws PROBE_PLANS instead: grouped bars whose group is a number, which px
+draws as one series with a colour scale (no baseline; PROBE_DECISION was fixed
+before its first call).
+
     ../backend/.venv/bin/python check_bar_repairs.py
+    ../backend/.venv/bin/python check_bar_repairs.py --probe
 """
 from __future__ import annotations
 
+import argparse
 import json
 import time
 from pathlib import Path
@@ -26,6 +32,20 @@ OUT = ROOT / "data/v2/bar_check_live.json"
 DECISION = ("passes when the baseline drew raw-row bars on at least one plan, every such plan now renders with the "
             "planned values after at least one bar repair, no plan that rendered in the baseline fails now, and bars "
             "with the planned values are not fewer than in the baseline")
+PROBE_OUT = ROOT / "data/v2/bar_check_probe.json"
+PROBE_DECISION = "passes when every probe plan renders with the planned values"
+# Found 2026-11-25: told only to aggregate, lora-v2 sent its already grouped bedrooms chart back unchanged twice.
+PROBE_PLANS = [
+    ("backend/uploads/property_sales.csv", {
+        "chart": "bar", "table": "property_sales.csv", "x": "neighborhoodZone", "y": "salePrice",
+        "group": "bedroomCount", "agg": "mean", "grain": "", "sort": "", "top_n": 0,
+        "title": "Average Sale Price by Zone and Bedrooms",
+        "question": "What is the average sale price in each neighborhood zone by bedroom count?"}),
+    ("backend/uploads/gapminder.csv", {
+        "chart": "bar", "table": "gapminder.csv", "x": "continent", "y": "lifeExp", "group": "year", "agg": "mean",
+        "grain": "", "sort": "", "top_n": 0, "title": "Average Life Expectancy by Continent and Year",
+        "question": "How has average life expectancy changed by continent across the years?"}),
+]
 
 
 def bar_check_decision(rows: list[dict]) -> dict:
@@ -45,20 +65,55 @@ def bar_check_decision(rows: list[dict]) -> dict:
     return decision
 
 
+def probe_decision(drawn: list[dict]) -> dict:
+    """PROBE_DECISION on the scored probe charts."""
+    return {"passes": bool(drawn) and all(d["rendered"] and d["values_ok"] is True for d in drawn)}
+
+
 def unchanged(rows: list[dict]) -> int:
     """Plans whose code is the same before and after: the check did not fire and the model answered alike."""
     return sum(1 for row in rows if row["arms"]["before"].get("code") == row["arms"]["after"].get("code"))
 
 
-def main() -> int:
+def _agent():
     from app.services.agents.chartist import ChartistAgent
-    from app.services.agents.spec_runner import run_spec
     from app.services.llm import get_llm
+
+    return ChartistAgent(get_llm("chartist"), chart_type_hint_style="off", agg_rule="off")
+
+
+def run_probe() -> int:
+    from app.services.agents.spec_runner import run_spec
+
+    agent, drawn = _agent(), []
+    for path, spec in PROBE_PLANS:
+        csv = str(ROOT.parent / path)
+        began = time.perf_counter()
+        result = run_spec(spec, {"type": "file", "name": Path(csv).name, "path": csv}, agent, str(ROOT))
+        figure = (result.get("execution_result") or {}).get("figure") or {}
+        drawn.append({**score(spec, pd.read_csv(csv), result), "title": spec["title"],
+                      "seconds": round(time.perf_counter() - began, 1), "traces": len(figure.get("data") or []),
+                      "repair_reasons": [str(reason)[:300] for reason in result.get("repair_reasons") or []]})
+        print(f"{spec['title']}: {_status(drawn[-1])}, repairs {drawn[-1]['repairs']}, "
+              f"bar repairs {drawn[-1]['repeated_bars']}, traces {drawn[-1]['traces']}", flush=True)
+    report = {"decision_rule": PROBE_DECISION, "plans": [spec for _, spec in PROBE_PLANS], "drawn": drawn,
+              "decision": probe_decision(drawn)}
+    PROBE_OUT.write_text(json.dumps(report, indent=2), encoding="utf-8")
+    print(json.dumps(report["decision"]))
+    return 0
+
+
+def main() -> int:
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--probe", action="store_true", help="draw PROBE_PLANS instead of the live plans")
+    if ap.parse_args().probe:
+        return run_probe()
+    from app.services.agents.spec_runner import run_spec
 
     baseline = {row["item_id"]: row["arms"]["off"] for row in read_rows(BASELINE)}
     ckpt = OUT.with_suffix(".rows.jsonl")
     done = {row["item_id"] for row in read_rows(ckpt)} if ckpt.exists() else set()
-    agent = ChartistAgent(get_llm("chartist"), chart_type_hint_style="off", agg_rule="off")
+    agent = _agent()
     items = live_items()
     print(f"{len(items)} plans, {len(items) - len(done)} to go", flush=True)
 

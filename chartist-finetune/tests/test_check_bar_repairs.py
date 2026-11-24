@@ -1,4 +1,12 @@
-from check_bar_repairs import bar_check_decision, unchanged
+from check_bar_repairs import PROBE_PLANS, bar_check_decision, probe_decision, unchanged
+
+
+def test_the_probe_plans_group_bars_by_a_number_and_pass_only_if_all_draw_the_planned_values():
+    assert [spec["group"] for _, spec in PROBE_PLANS] == ["bedroomCount", "year"]
+    good = {"rendered": True, "values_ok": True}
+    assert probe_decision([good, good])["passes"]
+    assert not probe_decision([good, {"rendered": True, "values_ok": False}])["passes"]
+    assert not probe_decision([good, {"rendered": False, "values_ok": False}])["passes"]
 
 
 def _pair(item, before=None, after=None, code_after="same"):
