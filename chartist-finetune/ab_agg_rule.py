@@ -53,7 +53,7 @@ os.environ.setdefault("MLX_MODEL", "default_model")
 import pandas as pd  # noqa: E402
 
 from app.services.agents.chartist_contract import (  # noqa: E402
-    CHARTIST_AGG_RULE, CHARTIST_USER_TEMPLATE, REPEATED_X_FIX, bar_repeats,
+    CHARTIST_AGG_RULE, CHARTIST_USER_TEMPLATE, REPEATED_BAR_FIX, REPEATED_X_FIX, bar_repeats,
 )
 from app.utils.figure_json import decode_typed_arrays  # noqa: E402
 from measure_planning import plan_matches  # noqa: E402
@@ -200,6 +200,11 @@ def points_drawn(figure: dict) -> int:
                for trace in (figure or {}).get("data") or [] if isinstance(trace, dict))
 
 
+def times_asked(fix: str, reasons: list[str], error: str) -> int:
+    """How many times the drawing check named this fix: each repair asked for, plus a final failure for it."""
+    return sum(1 for reason in reasons if fix in reason) + (1 if fix in error else 0)
+
+
 def score(spec: dict, frame: pd.DataFrame, result: dict) -> dict:
     """One drawn chart, scored as the app would show it."""
     figure = decode_typed_arrays((result.get("execution_result") or {}).get("figure") or {})
@@ -221,7 +226,8 @@ def score(spec: dict, frame: pd.DataFrame, result: dict) -> dict:
         "rendered": rendered,
         "kind_ok": rendered and plan_matches(str(spec.get("chart")), figure_type, code),
         "repairs": int(result.get("repairs") or 0),
-        "repeated_x": sum(1 for reason in reasons if REPEATED_X_FIX in reason) + (1 if REPEATED_X_FIX in error else 0),
+        "repeated_x": times_asked(REPEATED_X_FIX, reasons, error),
+        "repeated_bars": times_asked(REPEATED_BAR_FIX, reasons, error),
         "raw_bars": len(raw),
         "raw_bar_notes": raw[:3],
         "values_ok": values,
@@ -243,6 +249,8 @@ def summarize(rows: list[dict], arm: str) -> dict:
         "planned_kind_rate": sum(d["kind_ok"] for d in drawn) / n,
         "repairs_per_chart": sum(d["repairs"] for d in drawn) / n,
         "lines_back_and_forth": sum(d["repeated_x"] for d in drawn),
+        # Rows saved before bars were checked have no count, and had none sent back.
+        "bars_sent_back": sum(d.get("repeated_bars", 0) for d in drawn),
         "bar_plans": len(bars),
         "raw_row_bar_charts": sum(1 for d in drawn if d["raw_bars"]),
         "bar_values_checked": len(checked),

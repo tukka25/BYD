@@ -35,7 +35,7 @@ os.environ.setdefault("MLX_MODEL", "default_model")
 import pandas as pd  # noqa: E402
 
 from app.services.agents.architect import spread_sample  # noqa: E402
-from app.services.agents.chartist_contract import REPEATED_X_FIX  # noqa: E402
+from app.services.agents.chartist_contract import REPEATED_BAR_FIX, REPEATED_X_FIX  # noqa: E402
 from app.services.agents.data_tools import PLANNER_TOOL_NAMES, ToolBox  # noqa: E402
 from app.services.agents.discovery import discover  # noqa: E402
 from app.services.agents.planning import finish, plan_charts, propose_directions  # noqa: E402
@@ -67,8 +67,8 @@ def read_rows(path: Path) -> list[dict]:
 def draw_first(specs: list[dict], source: dict, chartist, data_dir: str, n: int, run=None) -> list[dict]:
     """Draw the first n plans through the app's own path and score each one:
     rendered, the planned kind, repairs used, and how many times the model drew
-    a line whose x repeats (each time the drawing check sent it back, plus a
-    final failure for it)."""
+    a line whose x repeats or bars that repeat a category (each time the
+    drawing check sent it back, plus a final failure for it)."""
     if run is None:
         from app.services.agents.spec_runner import run_spec as run
     drawn = []
@@ -86,6 +86,8 @@ def draw_first(specs: list[dict], source: dict, chartist, data_dir: str, n: int,
             "repairs": int(result.get("repairs") or 0),
             "repeated_x": sum(1 for reason in result.get("repair_reasons", []) if REPEATED_X_FIX in reason)
                           + (1 if REPEATED_X_FIX in error else 0),
+            "repeated_bars": sum(1 for reason in result.get("repair_reasons", []) if REPEATED_BAR_FIX in reason)
+                             + (1 if REPEATED_BAR_FIX in error else 0),
             "error": error[:160],
             "seconds": round(time.perf_counter() - started, 1),
         })
@@ -105,6 +107,9 @@ def summarize(rows: list[dict]) -> dict:
         "planned_kind_rate": sum(1 for d in rendered if d["kind_ok"]) / len(rendered) if rendered else 0.0,
         "repairs_per_chart": statistics.mean(d["repairs"] for d in drawn),
         "repeated_x_per_dashboard": statistics.mean(sum(d["repeated_x"] for d in r["drawn"]) for r in drew),
+        # Rows saved before bars were checked have no count, and drew none sent back.
+        "repeated_bars_per_dashboard": statistics.mean(
+            sum(d.get("repeated_bars", 0) for d in r["drawn"]) for r in drew),
         "median_draw_seconds": statistics.median(r.get("draw_seconds", 0.0) for r in drew),
     } if drawn else {}
     return {

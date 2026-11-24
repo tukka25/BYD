@@ -1,4 +1,6 @@
-from measure_planning_tools import REPEATED_X_FIX, compare, compare_planner, draw_first, first_try, sign_test_p, summarize
+from measure_planning_tools import (
+    REPEATED_BAR_FIX, REPEATED_X_FIX, compare, compare_planner, draw_first, first_try, sign_test_p, summarize,
+)
 
 
 def _row(rid, directions=5, charts=5, planner_attempts=1, analyst_attempts=1, seconds=10.0):
@@ -86,9 +88,28 @@ def test_compare_decision_turns_off_when_on_is_slow():
     assert d["tools_on_by_default"] is False
 
 
-def _drawn(rendered=True, kind_ok=True, repairs=0, repeated_x=0):
+def _drawn(rendered=True, kind_ok=True, repairs=0, repeated_x=0, repeated_bars=0):
     return {"chart": "line", "rendered": rendered, "kind_ok": kind_ok, "repairs": repairs,
-            "repeated_x": repeated_x, "error": "", "seconds": 5.0}
+            "repeated_x": repeated_x, "repeated_bars": repeated_bars, "error": "", "seconds": 5.0}
+
+
+def test_draw_first_counts_bars_sent_back_for_stacking_rows():
+    stacked = ("the bar series 'trace 1' has 168 bars on 7 categories, and Plotly stacks bars that share a category: "
+               + REPEATED_BAR_FIX)
+
+    def run(spec, source, chartist, data_dir):
+        return {"execution_result": {"figure": {"data": [{"type": "bar"}]}}, "error": "", "code": "fig = px.bar(d)",
+                "repairs": 1, "repair_reasons": [stacked]}
+
+    drawn = draw_first([{"chart": "bar"}], {}, None, "", 1, run=run)
+    assert (drawn[0]["repeated_bars"], drawn[0]["repeated_x"]) == (1, 0)
+
+
+def test_summarize_counts_bars_sent_back_and_reads_rows_saved_before_the_count():
+    old = {k: v for k, v in _drawn().items() if k != "repeated_bars"}
+    rows = [{**_row("a"), "drawn": [old], "draw_seconds": 1.0},
+            {**_row("b"), "drawn": [_drawn(repeated_bars=2)], "draw_seconds": 1.0}]
+    assert summarize(rows)["repeated_bars_per_dashboard"] == 1.0
 
 
 def test_summarize_adds_draw_scores_only_when_charts_were_drawn():

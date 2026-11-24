@@ -102,6 +102,21 @@ def test_score_records_points_only_for_raw_kinds_and_counts_line_repairs():
     assert line["repeated_x"] == 1 and line["repairs"] == 1
 
 
+def test_score_and_summary_count_bars_the_drawing_check_sent_back():
+    from app.services.agents.chartist_contract import REPEATED_BAR_FIX
+    stacked = ("the bar series 'trace 1' has 6 bars on 2 categories, and Plotly stacks bars that share a category: "
+               + REPEATED_BAR_FIX)
+    good = {"data": [{"type": "bar", "x": ["Mon", "Tue"], "y": typed([50.0, 20.0])}]}
+    scored = score(BAR_MEAN, WEB, result(good, reasons=[stacked]))
+    assert scored["repeated_bars"] == 1 and scored["repeated_x"] == 0 and scored["values_ok"] is True
+    failed = score(BAR_MEAN, WEB, result(None, error="The model could not draw this chart: " + stacked,
+                                         reasons=[stacked, stacked]))
+    assert failed["repeated_bars"] == 3
+    # Rows saved before the count existed count none.
+    rows = [_row("a", on={"repeated_bars": 2}), _row("b")]
+    assert summarize(rows, "on")["bars_sent_back"] == 2 and summarize(rows, "off")["bars_sent_back"] == 0
+
+
 def _row(item, chart="bar", agg="mean", off=None, on=None, group=""):
     base = {"rendered": True, "kind_ok": True, "repairs": 0, "repeated_x": 0, "raw_bars": 0, "values_ok": True,
             "points": None, "seconds": 1.0, "error": ""}
