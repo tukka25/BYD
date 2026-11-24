@@ -164,6 +164,48 @@ def test_the_model_is_asked_to_fix_bars_drawn_on_raw_rows():
     assert outcome["execution_result"]["success"] and outcome["code_run"] == ONE_BAR_PER_DAY
 
 
+def test_a_number_as_colour_is_one_series_and_the_model_is_told_to_colour_by_text():
+    # px draws a numeric `color` as one series with a colour scale, so grouped bars share categories.
+    split = {"data": [{"type": "bar", "x": ["N", "N", "S", "S"], "y": [100, 160, 100, 130],
+                       "marker": {"color": [2, 3, 2, 3], "coloraxis": "coloraxis"}}]}
+    assert figure_problems(split) == [
+        "the bar series 'trace 1' has 4 bars on 2 categories because its colour is a number, which Plotly "
+        "draws as one series: " + REPEATED_BAR_FIX]
+
+
+def test_raw_rows_coloured_by_a_number_are_still_raw_rows():
+    # A colour with about one value per bar groups nothing: these are the rows, not a split.
+    measure = {"data": [{"type": "bar", "x": ["N", "N", "S", "S"], "y": [100, 160, 100, 130],
+                         "marker": {"color": [100, 160, 100.5, 130]}}]}
+    assert "Plotly stacks bars that share a category" in figure_problems(measure)[0]
+    # Nor is a colour value repeated within one category.
+    twice = {"data": [{"type": "bar", "x": ["N", "N", "S", "S"], "y": [1, 2, 3, 4], "marker": {"color": [2, 2, 3, 3]}}]}
+    assert "Plotly stacks bars that share a category" in figure_problems(twice)[0]
+
+
+PROPERTY = pd.DataFrame({"zone": ["N", "N", "N", "S", "S", "S"], "bedrooms": [2, 3, 3, 2, 2, 3],
+                         "price": [100.0, 150.0, 170.0, 90.0, 110.0, 130.0]})
+NUMBER_COLOUR = ("import plotly.express as px\n"
+                 "d = df.groupby(['zone', 'bedrooms'], as_index=False)['price'].mean()\n"
+                 "fig = px.bar(d, x='zone', y='price', color='bedrooms', barmode='group')\n"
+                 "print(fig.to_json())\n")
+TEXT_COLOUR = ("import plotly.express as px\n"
+               "d = df.groupby(['zone', 'bedrooms'], as_index=False)['price'].mean()\n"
+               "d['bedrooms'] = d['bedrooms'].astype(str)\n"
+               "fig = px.bar(d, x='zone', y='price', color='bedrooms', barmode='group')\n"
+               "print(fig.to_json())\n")
+
+
+def test_grouped_bars_coloured_by_a_number_are_sent_back_to_colour_by_text():
+    # "Average Sale Price by Zone and Bedrooms": lora-v2 grouped right, coloured by bedroomCount, and the
+    # bars of each zone overlapped in one series. Told only to aggregate, it sent the same code back twice.
+    asked = []
+    outcome = run_on_frame(SafeExecutor(), NUMBER_COLOUR, PROPERTY,
+                           repair=lambda code, problem: asked.append(problem) or TEXT_COLOUR)
+    assert outcome["repairs"] == 1 and "because its colour is a number" in asked[0]
+    assert outcome["execution_result"]["success"] and outcome["code_run"] == TEXT_COLOUR
+
+
 def test_bars_never_fixed_are_reported_failed_without_a_figure():
     outcome = run_on_frame(SafeExecutor(), RAW_BARS, HOURS, repair=lambda code, problem: RAW_BARS)
     assert outcome["repairs"] == 2 and "Plotly stacks bars" in outcome["error"]

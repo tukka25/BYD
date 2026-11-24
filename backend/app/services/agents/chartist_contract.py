@@ -310,7 +310,8 @@ REPEATED_X_FIX = "each x value should appear once per line: aggregate y for each
 # measurements count repairs by these words, so change them together.
 REPEATED_BAR_FIX = ("each category should appear once per bar series: aggregate the values for each category "
                     "(and colour group) before drawing, with the aggregation the task asks for "
-                    "(the mean for averages and rates, the sum for totals)")
+                    "(the mean for averages and rates, the sum for totals); to split bars by a number such as "
+                    "a year, colour by it as text (.astype(str)) so each value is its own series")
 
 
 def _drawn_as_line(trace: dict) -> bool:
@@ -349,7 +350,10 @@ def figure_problems(figure: dict) -> list[str]:
       draws).
     - Bars that repeat a category within one series (`bar_repeats`) stack rows
       Plotly does not aggregate, so a planned mean shows a sum. Every such series
-      makes one problem together, so the fix asked for stays short.
+      makes one problem together, so the fix asked for stays short. Grouped bars
+      coloured by a number repeat categories too, because px draws a numeric
+      colour as one series; that problem says so, so the model colours by text
+      instead of grouping again what it already grouped.
 
     An x or y that cannot be read is not a problem.
     """
@@ -377,11 +381,13 @@ def figure_problems(figure: dict) -> list[str]:
             problems.append(problem)
     repeated = _repeated_bars(figure)
     if repeated:
-        name, bars, kinds, _ = repeated[0]
+        name, bars, kinds, _, split_by_number = repeated[0]
         what = f"the bar series '{name}' has {bars:,} bars on {kinds:,} {_categories(kinds)}"
         if len(repeated) > 1:
             what = f"{len(repeated)} bar series repeat a category ({what})"
-        problems.append(f"{what}, and Plotly stacks bars that share a category: {REPEATED_BAR_FIX}")
+        why = (" because its colour is a number, which Plotly draws as one series" if split_by_number
+               else ", and Plotly stacks bars that share a category")
+        problems.append(f"{what}{why}: {REPEATED_BAR_FIX}")
     return problems
 
 
@@ -393,9 +399,21 @@ def _missing(value) -> bool:
     return value is None or (isinstance(value, float) and math.isnan(value))
 
 
-def _repeated_bars(figure: dict) -> list[tuple[str, int, int, int]]:
-    """(name, bars drawn, categories, most bars on one category) for each bar
-    trace in which a category carries more than one drawn bar."""
+def _split_by_number(categories: list, colours: list) -> bool:
+    """Numeric colour values that give each bar of a category its own value and
+    are shared across categories: px draws a numeric `color` as one series, so
+    bars a text colour would put in separate series share categories. A colour
+    with about one value per bar (a measure on raw rows) splits nothing."""
+    if not colours or not all(isinstance(c, (int, float)) and not isinstance(c, bool) for c in colours):
+        return False
+    pairs = list(zip(categories, colours))
+    return len(set(pairs)) == len(pairs) and 2 * len(set(colours)) <= len(pairs)
+
+
+def _repeated_bars(figure: dict) -> list[tuple[str, int, int, int, bool]]:
+    """(name, bars drawn, categories, most bars on one category, split by a
+    numeric colour) for each bar trace in which a category carries more than
+    one drawn bar."""
     found = []
     for n, trace in enumerate((figure or {}).get("data") or [], 1):
         if not isinstance(trace, dict) or trace.get("type") != "bar" or trace.get("base") is not None:
@@ -404,14 +422,19 @@ def _repeated_bars(figure: dict) -> list[tuple[str, int, int, int]]:
         categories, values = trace.get("y" if horizontal else "x"), trace.get("x" if horizontal else "y")
         if not isinstance(categories, list) or not isinstance(values, list) or len(categories) != len(values):
             continue
-        drawn = [c for c, v in zip(categories, values) if c is not None and not _missing(v)]
+        keep = [i for i, (c, v) in enumerate(zip(categories, values)) if c is not None and not _missing(v)]
         try:
-            counts = Counter(tuple(c) if isinstance(c, list) else c for c in drawn)
+            drawn = [tuple(categories[i]) if isinstance(categories[i], list) else categories[i] for i in keep]
+            counts = Counter(drawn)
         except TypeError:
             continue
         if counts and max(counts.values()) > 1:
+            marker = trace.get("marker")
+            colours = marker.get("color") if isinstance(marker, dict) else None
+            split = (isinstance(colours, list) and len(colours) == len(categories)
+                     and _split_by_number(drawn, [colours[i] for i in keep]))
             name = str(trace.get("name") or "").strip() or f"trace {n}"
-            found.append((name, len(drawn), len(counts), max(counts.values())))
+            found.append((name, len(drawn), len(counts), max(counts.values()), split))
     return found
 
 
@@ -431,7 +454,7 @@ def bar_repeats(figure: dict) -> list[str]:
     Expects plain lists, as figure_problems does.
     """
     return [f"bar trace '{name}': {bars:,} bars on {kinds:,} {_categories(kinds)}, one appears {most:,} times"
-            for name, bars, kinds, most in _repeated_bars(figure)]
+            for name, bars, kinds, most, _ in _repeated_bars(figure)]
 
 
 def _syntax_problem(code: str) -> str:
