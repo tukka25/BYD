@@ -68,7 +68,7 @@ def excel_from_csv(csv_path: Path, xlsx_path: Path) -> tuple[int, list[str]]:
 
     Stops if `price` is not numeric: cleaning it would be editing the data, and
     the page would have to say so. That is the owner's decision."""
-    frame = pd.read_csv(csv_path)
+    frame = pd.read_csv(csv_path, keep_default_na=False, na_values=[""])
     if "price" in frame.columns and not pd.api.types.is_numeric_dtype(frame["price"]):
         sample = frame["price"].dropna().astype(str).head(3).tolist()
         raise ValueError(f"price is not numeric in {csv_path.name} (for example {sample}); cleaning it would edit the data")

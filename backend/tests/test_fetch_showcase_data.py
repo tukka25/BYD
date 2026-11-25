@@ -58,3 +58,18 @@ def test_a_manifest_entry_records_where_a_file_came_from(tmp_path):
     assert item["file"] == "reviews.csv" and item["rows"] == 1 and item["bytes"] == path.stat().st_size
     assert item["licence"] == "CC BY 4.0" and item["url"] == "https://example.org/reviews.csv"
     assert len(item["sha256"]) == 64 and item["fetched_at"].endswith("Z")
+
+
+def test_text_that_looks_missing_is_kept(tmp_path):
+    from openpyxl import load_workbook
+
+    source = tmp_path / "listings.csv"
+    pd.DataFrame({
+        "host_name": ["N/A", "NA", "null"],
+        "price": [120.0, None, 95.0],
+    }).to_csv(source, index=False)
+    rows, as_text = excel_from_csv(source, tmp_path / "listings.xlsx")
+    sheet = load_workbook(tmp_path / "listings.xlsx").active
+    assert rows == 3 and as_text == []
+    assert [sheet[f"A{r}"].value for r in (2, 3, 4)] == ["N/A", "NA", "null"]
+    assert sheet["B3"].value is None
