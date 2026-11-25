@@ -103,8 +103,8 @@ export function FineTuning() {
             loads on top of the base model and leaves the model itself unchanged.
           </Lede>
           <Lede>
-            I made two versions. <Name>lora-v1</Name> writes chart code and nothing else. <Name>lora-v2</Name> is one
-            adapter for three jobs: the analyst, the planner and the chartist.
+            I made two versions. <Name>lora-v1</Name> learned chart code alone. <Name>lora-v2</Name> is one adapter for
+            three jobs: the analyst, the planner and the chartist.
           </Lede>
         </div>
         <SpecCard />
