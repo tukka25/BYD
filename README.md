@@ -80,7 +80,7 @@ make up            # terminal 2: Postgres, the API and the web app
 make smoke         # terminal 2: draws one real chart to check it all works
 ```
 
-Open http://localhost:3000 and sign in with any email and password. The first sign-in creates the account in your local database. The API's docs are at http://localhost:8000/docs.
+Open http://localhost:3000 and sign in with an email address and a password. The first sign-in creates the account in your local database. The API's docs are at http://localhost:8000/docs.
 
 A dashboard takes minutes to build, because the model writes every plan and every chart. `make down` stops the app.
 
