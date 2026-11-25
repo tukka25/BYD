@@ -73,7 +73,7 @@ function PromptBox({ dashboard }: { dashboard: Dashboard }) {
 }
 
 const link =
-  "inline-flex items-center underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--ring)] max-md:min-h-11  decoration-hairline-strong underline-offset-4 hover:text-ink";
+  "inline-flex items-center underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--ring)] max-md:min-h-11 decoration-hairline-strong underline-offset-4 hover:text-ink";
 
 /* Where the data came from, as links only: "Data:", each source's name linked
    to its page, a short note where its licence asks for a change to be
