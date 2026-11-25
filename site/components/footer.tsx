@@ -3,7 +3,7 @@ import { DASHBOARDS } from "@/components/dashboards";
 import { GitHubMark } from "@/components/icons";
 import { MEASURE } from "@/components/section";
 import { LinkedInMark, RepoMark } from "@/components/social-icons";
-import { creditTag, dataName, type Dashboard } from "@/lib/dashboard";
+import { creditNames, creditTag, dataName, type Dashboard } from "@/lib/dashboard";
 import { AUTHOR, LINKEDIN_URL, REPO_URL } from "@/lib/site";
 
 const focus = "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--ring)]";
@@ -24,17 +24,16 @@ function External({ href, className, children }: { href: string; className: stri
    synthetic data, which has no source page and no licence link, gets its tag
    linked to the script that makes it. */
 function Credit({ dashboard }: { dashboard: Dashboard }) {
-  const [source] = dashboard.sources;
   const tag = creditTag(dashboard.sources);
-  const synthetic = !source.licence_url;
+  const linked = creditNames(dashboard.sources)[0].url;
   return (
     <li className="flex flex-wrap items-center gap-x-4 rounded-[var(--r-card)] bg-surface px-4 shadow-[var(--lift-1)]">
-      {synthetic ? (
-        <span className="inline-flex min-h-11 items-center font-semibold text-ink">{dataName(dashboard)}</span>
-      ) : (
-        <External href={source.url} className={nameLink}>
+      {linked ? (
+        <External href={linked} className={nameLink}>
           {dataName(dashboard)}
         </External>
+      ) : (
+        <span className="inline-flex min-h-11 items-center font-semibold text-ink">{dataName(dashboard)}</span>
       )}
       {tag ? (
         <External href={tag.url} className={tagLink}>

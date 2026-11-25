@@ -8,7 +8,9 @@ import {
   creditNames,
   creditTag,
   gridPlacement,
+  dataName,
   isIndicator,
+  namesDataset,
   type Dashboard,
 } from "@/lib/dashboard";
 import { toHtml } from "@/lib/rich-text";
@@ -82,11 +84,13 @@ const link =
 function Provenance({ dashboard }: { dashboard: Dashboard }) {
   const { sources, build } = dashboard;
   const tag = creditTag(sources);
+  const named = namesDataset(sources);
   const skipped = build.skipped;
   return (
     <div className="mt-5 space-y-2 px-1 text-[14px] leading-[1.6] text-body [&>*]:max-w-[42ch]">
       <p className="flex flex-wrap items-center gap-x-3">
         <span>Data:</span>
+        {named ? <span>{dataName(dashboard)},</span> : null}
         {creditNames(sources).map(({ name, url, note }) => {
           return (
             <span key={name} className="inline-flex flex-wrap items-center gap-x-1.5">

@@ -98,9 +98,9 @@ export function FineTuning() {
             , a Python charting library.
           </Lede>
           <Lede>
-            I trained LoRA adapters with Hugging Face&apos;s PEFT library on a rented GPU and converted them to MLX. A
-            LoRA adapter is a small set of extra weights that leaves the base model unchanged. On a Mac, mlx_lm runs
-            the <Name>4-bit</Name> base model with the adapter on top.
+            I trained LoRA adapters with Hugging Face&apos;s PEFT library. A LoRA adapter is a small set of extra
+            weights that leaves the base model unchanged. They run on a Mac through MLX at <Name>4-bit</Name>; the
+            Training section has the steps.
           </Lede>
           <Lede>
             I made two versions. <Name>lora-v1</Name> learned only chart code. <Name>lora-v2</Name> is one adapter for
@@ -164,6 +164,10 @@ export function FineTuning() {
       <ul className={`mt-5 space-y-2 ${MEASURE} ${CAPTION}`}>
         <li>Base is Qwen3.5-9B with no fine-tuning and thinking off, the better of its two settings.</li>
         <li>I did not run the base model on the dashboard requests.</li>
+        <li>
+          In the dashboard requests <Name>lora-v1</Name> also ran as the analyst and the planner, because the
+          evaluation runs the whole flow on one adapter.
+        </li>
         <li>
           A plan that needed another try failed the app&apos;s checks the first time, so lower is better on that row.
         </li>

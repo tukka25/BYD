@@ -44,14 +44,3 @@ export function Code({ children }: { children: ReactNode }) {
 export function Name({ children }: { children: ReactNode }) {
   return <span className="whitespace-nowrap">{children}</span>;
 }
-
-/* Text whose dates stay whole: "2021-04-20" never breaks at a hyphen. */
-export function KeepDates({ text }: { text: string }) {
-  return (
-    <>
-      {text
-        .split(/(\d{4}-\d{2}-\d{2})/)
-        .map((piece, index) => (index % 2 ? <Name key={index}>{piece}</Name> : piece))}
-    </>
-  );
-}

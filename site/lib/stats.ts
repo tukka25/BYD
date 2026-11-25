@@ -2,7 +2,7 @@
    The entries live in data/stats.json, and tests/stats.test.mts reads each one
    back from its source. Import-free, so Node's test runner can load it. */
 
-export type StatFormat = { kind: "percent" | "usd" | "number"; decimals: number } | { kind: "duration" };
+export type StatFormat = { kind: "percent" | "number"; decimals: number };
 
 export type StatSource =
   | { kind: "json"; file: string; path: (string | number)[] }
@@ -18,14 +18,8 @@ function grouped(value: number, decimals: number): string {
 /** The value as the page shows it. `decimals` shows fewer places: 94% from 0.9433. */
 export function formatStat(stat: Pick<Stat, "value" | "format">, decimals?: number): string {
   const { value, format } = stat;
-  if (format.kind === "duration") {
-    const hours = Math.floor(value / 3600);
-    const minutes = Math.round((value - hours * 3600) / 60);
-    return `${hours} h ${minutes} m`;
-  }
   const places = decimals ?? format.decimals;
   if (format.kind === "percent") return `${(value * 100).toFixed(places)}%`;
-  if (format.kind === "usd") return `$${grouped(value, places)}`;
   return grouped(value, places);
 }
 

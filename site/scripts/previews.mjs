@@ -407,6 +407,7 @@ async function capture(tab, base, { name, charts, sha256 }) {
   try {
     await viewport(900);
     const loaded = tab.event("Page.loadEventFired", left());
+    loaded.catch(() => {});
     const { errorText } = await tab.send("Page.navigate", { url: `${base}/dashboards/${name}/` }, left());
     if (errorText) throw new Error(`the page did not open (${errorText})`);
     await loaded;
@@ -512,7 +513,8 @@ async function main() {
 
 let stoppedBy = null;
 for (const signal of ["SIGINT", "SIGTERM"]) {
-  process.once(signal, () => {
+  process.on(signal, () => {
+    if (stoppedBy) return; // a repeat while cleaning up changes nothing
     stoppedBy = signal;
     console.error(`previews: stopped by ${signal}`);
     void cleanUp().finally(() => process.exit(130));

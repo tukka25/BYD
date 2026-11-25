@@ -26,8 +26,11 @@ export function RunIt() {
               README
             </a>{" "}
             walks through the setup: the model&apos;s Python environment, the base model, and where a trained adapter
-            goes. The adapter&apos;s weights are not in the repository; they come from a training run like the one in
-            part 2. Once it is set up, <Code>make serve-model</Code> starts the model, <Code>make up</Code> starts the
+            goes. The adapter&apos;s weights are not in the repository; they come from a training run, which the{" "}
+            <a href="#training" className={LINK}>
+              Training section
+            </a>{" "}
+            describes. Once it is set up, <Code>make serve-model</Code> starts the model, <Code>make up</Code> starts the
             app on localhost:3000, and <Code>make smoke</Code> checks the whole stack by drawing one real chart.
           </Lede>
           <Lede>

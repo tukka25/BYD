@@ -130,6 +130,13 @@ export function creditNames(sources: DashboardSource[]): { name: string; url: st
   });
 }
 
+/** Whether the data line opens with the dataset's own name: real data does
+    (CC BY asks for the creator to be named, and file names do not name it),
+    synthetic data, which has no licence link, is named by its files. */
+export function namesDataset(sources: DashboardSource[]): boolean {
+  return Boolean(sources[0]?.licence_url);
+}
+
 /** A change to the published file that its licence asks to be indicated, in at
     most five words: an Excel file whose note says it came from a CSV. Empty
     when nothing was changed. */

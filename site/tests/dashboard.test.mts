@@ -4,7 +4,6 @@ import { readFileSync, readdirSync, statSync } from "node:fs";
 import {
   blockHeight,
   buildLine,
-  capitalise,
   changeNote,
   creditNames,
   creditTag,
@@ -12,6 +11,7 @@ import {
   gridPlacement,
   isIndicator,
   licences,
+  namesDataset,
   ordinal,
   sourceKinds,
   validateDashboard,
@@ -81,10 +81,10 @@ test("an all-indicator figure is a stat card", () => {
   assert.equal(isIndicator(chart), false);
 });
 
-test("a tab names the kinds of source behind its dashboard", () => {
+test("the kinds of source behind a dashboard are named once each", () => {
   const file = sample().sources[0];
   assert.equal(sourceKinds({ sources: [{ ...file, name: "listings.xlsx" }, file] }), "Excel + CSV");
-  assert.equal(sourceKinds({ sources: [{ ...file, kind: "database", name: "spotify.tracks" }] }), "Postgres");
+  assert.equal(sourceKinds({ sources: [{ ...file, kind: "database", name: "shop.orders" }] }), "Postgres");
 });
 
 const DIR = new URL("../data/dashboards/", import.meta.url);
@@ -122,6 +122,8 @@ test("each dashboard's credit is read from its sources: a tag, a name, a change 
   assert.deepEqual(airbnb.map(changeNote), ["converted from the CSV", ""]);
   assert.ok(changeNote(airbnb[0]).split(" ").length <= 5);
   assert.equal(dataName(real("airbnb")), "Inside Airbnb");
+  assert.equal(namesDataset(airbnb), true);
+  assert.equal(namesDataset(real("shop").sources), false);
 
   // Synthetic data has no licence link: its tag is linked to the script that makes it.
   const shop = real("shop").sources;
@@ -157,7 +159,6 @@ test("one destination is one link: shop's four tables are plain text and the tag
 
 test("each dashboard names its licence once", () => {
   for (const name of ["airbnb", "shop", "netflix"]) assert.equal(licences(real(name).sources).length, 1, name);
-  assert.equal(capitalise(licences(real("shop").sources)[0].licence), "Synthetic, made for this project");
 });
 
 test("the line under a prompt says, in words, which try it was and whether every chart was drawn", () => {

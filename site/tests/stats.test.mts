@@ -19,13 +19,10 @@ function at(value: unknown, path: (string | number)[]): unknown {
   return path.reduce<unknown>((node, key) => (node as Record<string | number, unknown> | undefined)?.[key], value);
 }
 
-test("percent, money, counts and durations format as the page shows them", () => {
+test("percent and counts format as the page shows them", () => {
   assert.equal(formatStat({ value: 0.9433, format: { kind: "percent", decimals: 1 } }), "94.3%");
   assert.equal(formatStat({ value: 0.9433, format: { kind: "percent", decimals: 1 } }, 0), "94%");
-  assert.equal(formatStat({ value: 34.85, format: { kind: "usd", decimals: 0 } }), "$35");
-  assert.equal(formatStat({ value: 5.4708, format: { kind: "usd", decimals: 4 } }, 2), "$5.47");
   assert.equal(formatStat({ value: 1832, format: { kind: "number", decimals: 0 } }), "1,832");
-  assert.equal(formatStat({ value: 8668, format: { kind: "duration" } }), "2 h 24 m");
 });
 
 test("a value inside a longer number does not count as quoted", () => {

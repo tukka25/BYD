@@ -11,14 +11,13 @@ export function DashboardCard({ title, code, children }: { title: string; code: 
   const label = showCode ? "Hide the code" : "Show the code that drew this";
 
   return (
-    <section
-      aria-label={title}
+    <div
       className="flex h-full flex-col overflow-hidden rounded-[var(--r-panel)] bg-surface shadow-[var(--lift-1)]"
     >
       <header className="flex items-start gap-2 px-5 pt-4">
-        <h3 className="min-w-0 flex-1 truncate font-display text-[15px] font-semibold leading-tight text-ink" title={title}>
+        <h2 className="min-w-0 flex-1 truncate font-display text-[15px] font-semibold leading-tight text-ink" title={title}>
           {title}
-        </h3>
+        </h2>
         {code ? (
           <button
             type="button"
@@ -43,6 +42,6 @@ export function DashboardCard({ title, code, children }: { title: string; code: 
           children
         )}
       </div>
-    </section>
+    </div>
   );
 }

@@ -86,7 +86,7 @@ A dashboard takes minutes to build, because the model writes every plan and ever
 
 ## Privacy
 
-Dashboards and charts are built by the model on your Mac, and your data is not sent to any outside service. The only exception is the optional Compare models page, which sends the same chart questions to the local model and to Claude Opus 5.5, through Anthropic's API, and shows their charts side by side. It runs only when you set `CLAUDE_API_KEY` (or `ANTHROPIC_API_KEY`) in `.env`. For each chart it sends Claude the question or chart plan the app wrote for it, the table's column names and types, and three rows from the table. When Claude's code fails, it also sends that code back with the error message.
+Dashboards and charts are built by the model on your Mac, and your data is not sent to any outside service. The only exception is the optional Compare models page, which sends the same chart questions to the local model and to Claude Opus 5.5, through Anthropic's API, and shows their charts side by side. It runs only when you set `CLAUDE_API_KEY` (or `ANTHROPIC_API_KEY`) in `.env`. For each chart it sends Claude the question the app wrote for it, the table's column names and types, and three rows from the table. When Claude's code fails, it also sends that code back with the error message.
 
 ## What's in the repository
 
