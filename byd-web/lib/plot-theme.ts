@@ -102,6 +102,19 @@ const CURRENCIES: Array<[RegExp, string]> = [
   [/\bngn\b|₦/i, "₦"],
 ];
 
+/* A currency mark the model wrote itself ("$", "£", "USD ") says what the
+   model guessed, not what the data says: Edinburgh prices in pounds once came
+   back as "$215.00", and a shop whose data names no currency as dollars. The
+   data's currency (named in a title, an axis or a series, or the default
+   currency) replaces it, and with none it goes. Any other prefix or suffix
+   ("~", "+") is kept. */
+const CURRENCY_MARK =
+  /^\s*(?:[$€£¥₹₩₺₦]|E£|CA\$|A\$|R\$|MX\$|USD|EUR|GBP|JPY|CNY|RMB|INR|AED|SAR|QAR|KWD|BHD|OMR|JOD|EGP|CHF|CAD|AUD|BRL|KRW|TRY|ZAR|MXN|NGN)\s*$/i;
+
+function isCurrencyMark(value: unknown): boolean {
+  return typeof value === "string" && CURRENCY_MARK.test(value);
+}
+
 function textOf(value: unknown): string {
   if (typeof value === "string") return value;
   if (value && typeof value === "object" && "text" in value) {
@@ -120,8 +133,6 @@ function figureWords(figure: PlotlyFigure): string {
   }
   for (const raw of (figure.data ?? []) as Array<Record<string, unknown>>) {
     parts.push(String(raw.name ?? ""), textOf(raw.title));
-    const number = raw.number as Record<string, unknown> | undefined;
-    if (number) parts.push(String(number.prefix ?? ""), String(number.suffix ?? ""));
   }
   return parts.join(" ").replace(/([a-z0-9])([A-Z])/g, "$1 $2");
 }
@@ -238,6 +249,11 @@ export function themed(figure: PlotlyFigure, defaultCurrency = "") {
     },
   };
 
+  // An axis currency the model wrote gives way to the data's (see CURRENCY_MARK).
+  for (const axis of ["xaxis", "yaxis"] as const) {
+    const value = layout[axis] as Record<string, unknown>;
+    if (isCurrencyMark(value.tickprefix)) value.tickprefix = currency || undefined;
+  }
   const data = (figure.data ?? []).map((raw, index) => {
     const trace = { ...(raw as Record<string, unknown>) };
     const marker = { ...((trace.marker as Record<string, unknown>) ?? {}) };
@@ -283,10 +299,13 @@ export function themed(figure: PlotlyFigure, defaultCurrency = "") {
          `.0s`, `.0e` and bare `.0` print "72k", "1e+6" and "1e+6"; and
          anything that is not a d3 format at all, which Plotly ignores in
          silence -- a colour once arrived in this field and rendered raw. */
-      const chosen = String(number.valueformat ?? "");
-      if (!chosen || !D3_FORMAT.test(chosen) || !READABLE_FORMAT.test(chosen)) {
-        number.valueformat = numberFormat(trace.value);
-      }
+      // The model's own currency marks give way to the data's (see CURRENCY_MARK).
+      if (isCurrencyMark(number.prefix)) delete number.prefix;
+      if (isCurrencyMark(number.suffix)) delete number.suffix;
+      // d3's "$" flag prints a dollar sign: a currency mark like the others.
+      const chosen = String(number.valueformat ?? "").replace("$", "");
+      number.valueformat =
+        chosen && D3_FORMAT.test(chosen) && READABLE_FORMAT.test(chosen) ? chosen : numberFormat(trace.value);
       if (currency && !number.prefix && !number.suffix) number.prefix = currency;
       trace.number = number;
       trace.delta = {

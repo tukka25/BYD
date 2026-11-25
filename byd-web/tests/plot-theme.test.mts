@@ -58,3 +58,46 @@ test("a KPI keeps a readable format, replaces a broken one, and takes the named 
   assert.equal(at(themed(kpi(".1%")).data[0], "number", "valueformat"), ".1%");
   assert.equal(at(themed(kpi("")).data[0], "number", "prefix"), "$");
 });
+
+const priceKpi = (number: Record<string, unknown>, title = "Overall Median Nightly Price") => ({
+  data: [{ type: "indicator", mode: "number", value: 215, number }],
+  layout: { title: { text: title } },
+});
+
+test("a currency the model wrote on a KPI gives way to the data's currency", () => {
+  assert.equal(at(themed(priceKpi({ prefix: "$", valueformat: ",.2f" }), "GBP").data[0], "number", "prefix"), "£");
+});
+
+test("a currency the model wrote is dropped when the data names none", () => {
+  const { data } = themed(priceKpi({ prefix: "$", valueformat: ",.2f" }));
+  assert.equal(at(data[0], "number", "prefix"), undefined);
+  assert.equal(at(data[0], "number", "valueformat"), ",.2f");
+});
+
+test("a currency the data names is kept, whatever the model wrote", () => {
+  assert.equal(at(themed(priceKpi({ prefix: "$" }, "Total MRR (USD)")).data[0], "number", "prefix"), "$");
+  assert.equal(at(themed(priceKpi({ prefix: "€" }, "Total MRR (USD)")).data[0], "number", "prefix"), "$");
+});
+
+test("d3's $ flag in a KPI format is a currency mark too", () => {
+  const plain = themed(priceKpi({ valueformat: "$,.2f" }));
+  assert.equal(at(plain.data[0], "number", "valueformat"), ",.2f");
+  assert.equal(at(plain.data[0], "number", "prefix"), undefined);
+  assert.equal(at(themed(priceKpi({ valueformat: "$,.2f" }), "EUR").data[0], "number", "prefix"), "€");
+});
+
+test("a currency code the model wrote as a suffix goes the same way", () => {
+  const { data } = themed(priceKpi({ suffix: " USD" }), "GBP");
+  assert.equal(at(data[0], "number", "suffix"), undefined);
+  assert.equal(at(data[0], "number", "prefix"), "£");
+});
+
+test("a prefix that is not a currency stays", () => {
+  assert.equal(at(themed(priceKpi({ prefix: "~" })).data[0], "number", "prefix"), "~");
+});
+
+test("a currency tick prefix the model put on an axis gives way to the data's", () => {
+  const figure = { data: [bars(3)], layout: { yaxis: { title: { text: "Revenue" }, tickprefix: "$" } } };
+  assert.equal(at(themed(figure).layout, "yaxis", "tickprefix"), undefined);
+  assert.equal(at(themed(figure, "GBP").layout, "yaxis", "tickprefix"), "£");
+});

@@ -415,6 +415,7 @@ every figure on the way in. What we override:
   (`stroke-linecap: round` on `.scatterlayer`), because Plotly exposes no
   line-cap option on scatter traces
 - hover label: white, hairline border, ink text
+- a currency mark the model wrote itself (a KPI prefix or suffix, d3's `$` flag, an axis tick prefix) gives way to the data's currency, and goes when the data names none
 
 What we leave alone: the data, the trace types, the value formats, the axis
 titles. Re-theming is not re-authoring.
