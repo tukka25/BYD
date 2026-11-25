@@ -1,14 +1,11 @@
 import { Code, LINK, Lede, Section } from "@/components/section";
-import { REPO_URL, fileUrl } from "@/lib/site";
+import { fileUrl } from "@/lib/site";
 
-const COMMANDS = [
-  `git clone ${REPO_URL}.git`,
-  `cd ${REPO_URL.split("/").pop()}`,
-  "make setup",
-  "make serve-model   # terminal 1",
-  "make up            # terminal 2",
-  "make smoke",
-].join("\n");
+/* Only the commands that run after the README's setup. A fresh clone needs
+   that setup first: the model's Python environment (make setup does not make
+   it), the base model, a separate download, and the adapter, whose weights are
+   not in the repository. */
+const COMMANDS = ["make serve-model   # terminal 1", "make up            # terminal 2", "make smoke"].join("\n");
 
 /* What the Compare models page sends is read from comparison.py: the question,
    the column names and types, and three rows of the sampled table. */
@@ -19,8 +16,16 @@ export function RunIt() {
         <div className="space-y-5">
           <Lede>
             The model runs on the Mac itself with mlx_lm, which needs Apple Silicon, and the app runs in Docker beside
-            it. <Code>make serve-model</Code> starts the model, <Code>make up</Code> starts the app on localhost:3000,
-            and <Code>make smoke</Code> checks the whole stack by drawing one real chart.
+            it.
+          </Lede>
+          <Lede>
+            The{" "}
+            <a href={fileUrl("README.md")} className={LINK}>
+              README
+            </a>{" "}
+            walks through the setup: the model&apos;s Python environment, the base model and the adapter. After that,{" "}
+            <Code>make serve-model</Code> starts the model, <Code>make up</Code> starts the app on localhost:3000, and{" "}
+            <Code>make smoke</Code> checks the whole stack by drawing one real chart.
           </Lede>
           <Lede>
             Dashboards are built by the local model, so your data stays on your machine. The optional Compare models
@@ -28,15 +33,10 @@ export function RunIt() {
             charts with the local model&apos;s.
           </Lede>
           <Lede>
-            The{" "}
-            <a href={fileUrl("README.md")} className={LINK}>
-              README
-            </a>{" "}
-            has the setup, and{" "}
             <a href={fileUrl("AGENTS.md")} className={LINK}>
               AGENTS.md
             </a>{" "}
-            the measured decisions behind it.
+            has the measured decisions behind it.
           </Lede>
         </div>
         <pre className="self-start overflow-x-auto rounded-[var(--r-card)] bg-inverse p-5 font-mono text-[14px] leading-[1.7] text-on-dark sm:p-6">
