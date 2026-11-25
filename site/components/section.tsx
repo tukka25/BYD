@@ -12,9 +12,13 @@ export const BODY = "text-[17px] leading-[1.7] text-ink text-pretty sm:text-[18p
 export const MEASURE = "max-w-[42ch]";
 export const CAPTION = "text-[14px] leading-[1.6] text-body";
 
+/* A link inside the story's own text: pine, underlined, darker on hover. */
+export const LINK = "font-semibold text-pine underline underline-offset-2 hover:text-[var(--pine-press)]";
+
 /* One part of the story: a title, then its text and one figure, table or list.
-   No eyebrow above the title: byd-web/DESIGN.md bans them. */
-export function Section({ id, title, children }: { id: string; title: string; children: ReactNode }) {
+   No eyebrow above the title: byd-web/DESIGN.md bans them. The title may carry
+   a <Name>, so a hyphenated name in it never splits. */
+export function Section({ id, title, children }: { id: string; title: ReactNode; children: ReactNode }) {
   return (
     <section id={id} aria-labelledby={`${id}-title`} className="mx-auto max-w-6xl px-4 py-14 sm:px-8 sm:py-20">
       <h2 id={`${id}-title`} className="max-w-3xl font-display text-[28px] font-bold leading-tight sm:text-[36px]">

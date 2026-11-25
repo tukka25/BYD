@@ -1,17 +1,22 @@
 import { DotHero } from "@/components/dot-hero";
 import { GitHubMark } from "@/components/icons";
-import { stat } from "@/components/numbers";
-import { CAPTION, MEASURE, Name } from "@/components/section";
+import { MeterCard } from "@/components/meter-card";
+import { Num } from "@/components/num";
+import { CAPTION, LINK, MEASURE, Name } from "@/components/section";
 import { REPO_URL } from "@/lib/site";
 
+/* Before is the base model with thinking off and after is lora-v2, on the
+   same questions, the same Mac and the same 4-bit weights. The base model with
+   thinking on scores far lower, but on other hardware and mostly because of
+   its reasoning mode, so it belongs to the story, not to this comparison. */
 export function Hero() {
   return (
     <header className="mx-auto grid max-w-6xl items-center gap-10 px-4 pb-16 pt-12 sm:px-8 lg:grid-cols-[1.05fr_1fr] lg:gap-14 lg:pb-24 lg:pt-20">
       <div>
         <h1 className="font-display text-[44px] font-bold leading-[1.02] sm:text-[60px]">PromptDash</h1>
         <p className="mt-5 max-w-xl text-[19px] leading-[1.6] text-ink text-pretty sm:text-[21px]">
-          Ask for a dashboard in plain words. A 9B model, fine-tuned to write Plotly, draws every chart on your own
-          Mac.
+          A 9B model fine-tuned to build full dashboards and charts from one prompt. Your data never leaves your
+          device.
         </p>
         <div className="mt-8 flex flex-wrap gap-3">
           <a
@@ -28,33 +33,37 @@ export function Hero() {
             See the dashboards
           </a>
         </div>
-        <dl className="mt-10 grid max-w-xl gap-3 sm:grid-cols-2">
-          <Figure label="chart scripts that run" value={`${stat("base_render_mac", 0)} → ${stat("v2_render_mac", 0)}`} />
-          <Figure label="charts of the right kind" value={`${stat("base_shape_mac", 0)} → ${stat("v2_shape_mac", 0)}`} />
-        </dl>
+        <div className="mt-10 grid max-w-xl gap-3 sm:grid-cols-2">
+          <MeterCard
+            title="Code that ran and drew a chart"
+            note={
+              <>
+                <Num id="test_questions" /> chart questions it never saw in training
+              </>
+            }
+            meters={[
+              { label: "Before fine-tuning", id: "base_render_mac" },
+              { label: "After", id: "v2_render_mac", tuned: true },
+            ]}
+          />
+          <MeterCard
+            title="Charts of the kind asked for"
+            note="The same questions"
+            meters={[
+              { label: "Before fine-tuning", id: "base_shape_mac" },
+              { label: "After", id: "v2_shape_mac", tuned: true },
+            ]}
+          />
+        </div>
         <p className={`mt-3 ${MEASURE} ${CAPTION}`}>
-          Base <Name>Qwen3.5-9B</Name> with thinking off, then with <Name>lora-v2</Name>, on the same frozen test
-          questions, <Name>4-bit</Name> on a Mac.{" "}
-          <a href="#results" className="font-semibold text-pine underline underline-offset-2 hover:text-[var(--pine-press)]">
+          Before is the base <Name>Qwen3.5-9B</Name> with thinking off. After is my fine-tune, <Name>lora-v2</Name>.
+          Both ran <Name>4-bit</Name> on a Mac.{" "}
+          <a href="#results" className={LINK}>
             All the results
           </a>
         </p>
       </div>
       <DotHero />
     </header>
-  );
-}
-
-/* Label first in the DOM, as a definition list wants; on wider screens the
-   number shows above it. On a phone each figure is one row. A figure never
-   breaks across lines. */
-function Figure({ label, value }: { label: string; value: string }) {
-  return (
-    <div className="flex items-baseline justify-between gap-3 rounded-[var(--r-card)] bg-surface px-4 py-3 shadow-[var(--lift-1)] sm:flex-col-reverse sm:items-start sm:justify-end sm:py-4">
-      <dt className="text-[15px] leading-snug text-body">{label}</dt>
-      <dd className="whitespace-nowrap font-display text-[22px] font-bold leading-tight text-ink tabular sm:text-[26px]">
-        {value}
-      </dd>
-    </div>
   );
 }

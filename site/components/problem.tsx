@@ -1,25 +1,53 @@
-import { Code, Lede, Section } from "@/components/section";
+import { MeterCard } from "@/components/meter-card";
+import { CAPTION, Lede, MEASURE, Name, Section } from "@/components/section";
 
+const RAN = "Code that ran and drew a chart";
+const KIND = "Charts of the kind asked for";
+
+/* The base model under its two settings. Thinking on is how it ships, scored
+   on the rented GPU at 16-bit (bf16) when lora-v1 was; thinking off is its
+   better setting, scored on the Mac at 4-bit like both adapters. Most of the
+   gap between them is the reasoning mode, not missing skill, so the copy says
+   so rather than let the fine-tune take credit for the whole jump. */
 export function Problem() {
   return (
-    <Section id="problem" title="Out of the box, the model wrote essays">
+    <Section id="problem" title="The problem">
       <div className="space-y-5">
         <Lede>
-          PromptDash runs on Qwen3.5-9B. Asked for a chart, the base model answered with a &ldquo;Thinking
-          Process:&rdquo; essay where the app expected bare Python, so almost nothing it wrote would run.
+          Analysing sensitive or classified data with a cloud-hosted model, such as Claude or GPT, means sending that
+          data off your machine to someone else&apos;s servers.
         </Lede>
         <Lede>
-          With thinking switched off, the base model wrote code, and most of it ran. Most of the scripts that failed
-          broke at run time or asked for columns the table did not have, and many that ran still drew the wrong kind of
-          chart.
+          I wanted to know whether a small model that runs locally could do the analysis instead. As it ships,{" "}
+          <Name>Qwen3.5-9B</Name> could not.
         </Lede>
+      </div>
+      <div className="mt-8 grid max-w-3xl gap-3 md:grid-cols-2">
+        <MeterCard
+          title="Thinking on, as it ships"
+          note="16-bit weights, on a rented GPU"
+          meters={[
+            { label: RAN, id: "base_render_pod" },
+            { label: KIND, id: "base_shape_pod" },
+          ]}
+        />
+        <MeterCard
+          title="Thinking off"
+          note="4-bit weights, on a Mac"
+          meters={[
+            { label: RAN, id: "base_render_mac" },
+            { label: KIND, id: "base_shape_mac" },
+          ]}
+        />
+      </div>
+      <p className={`mt-3 ${MEASURE} ${CAPTION}`}>
+        Both cards show the base model with no fine-tuning, scored on the same chart questions.
+      </p>
+      <div className="mt-8">
         <Lede>
-          The first training data came from Plotly&apos;s own documentation, a Scrapy crawl of plotly.com/python, and
-          it taught nearly the opposite of what the app needs. Almost every example called <Code>fig.show()</Code>.
-          None ended with <Code>print(fig.to_json())</Code>, the line the app reads each chart from. Nearly half
-          loaded their data from a file or a URL, where the app hands the code a DataFrame. The prompts followed three
-          docs-page templates and hardly ever named a column, while every question in the app arrives with its
-          table&apos;s columns.
+          Most of the gap between the two cards is the thinking. With it on, the model writes out its reasoning before
+          any code, and the app cannot run prose. With it off, most of its code ran, but it drew the kind of chart
+          asked for less than half the time. Fine-tuning had to teach it to choose and build the right chart.
         </Lede>
       </div>
     </Section>
