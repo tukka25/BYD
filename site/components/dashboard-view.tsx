@@ -5,7 +5,7 @@ import { Name } from "@/components/section";
 import {
   blockHeight,
   buildLine,
-  changeNote,
+  creditNames,
   creditTag,
   gridPlacement,
   isIndicator,
@@ -72,7 +72,8 @@ function PromptBox({ dashboard }: { dashboard: Dashboard }) {
   );
 }
 
-const link = "inline-flex min-h-11 items-center underline decoration-hairline-strong underline-offset-4 hover:text-ink";
+const link =
+  "inline-flex items-center underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--ring)] max-md:min-h-11  decoration-hairline-strong underline-offset-4 hover:text-ink";
 
 /* Where the data came from, as links only: "Data:", each source's name linked
    to its page, a short note where its licence asks for a change to be
@@ -86,13 +87,16 @@ function Provenance({ dashboard }: { dashboard: Dashboard }) {
     <div className="mt-5 space-y-2 px-1 text-[14px] leading-[1.6] text-body [&>*]:max-w-[42ch]">
       <p className="flex flex-wrap items-center gap-x-3">
         <span>Data:</span>
-        {sources.map((source) => {
-          const note = changeNote(source);
+        {creditNames(sources).map(({ name, url, note }) => {
           return (
-            <span key={source.name} className="inline-flex flex-wrap items-center gap-x-1.5">
-              <a href={source.url} target="_blank" rel="noopener noreferrer" className={link}>
-                {source.name}
-              </a>
+            <span key={name} className="inline-flex flex-wrap items-center gap-x-1.5">
+              {url ? (
+                <a href={url} target="_blank" rel="noopener noreferrer" className={link}>
+                  {name}
+                </a>
+              ) : (
+                <span>{name}</span>
+              )}
               {note ? <span className="text-muted">({note})</span> : null}
             </span>
           );

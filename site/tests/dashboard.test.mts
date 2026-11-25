@@ -6,6 +6,7 @@ import {
   buildLine,
   capitalise,
   changeNote,
+  creditNames,
   creditTag,
   dataName,
   gridPlacement,
@@ -142,6 +143,16 @@ test("each dashboard's credit is read from its sources: a tag, a name, a change 
   assert.equal(creditTag([]), null);
   // An Excel file whose note does not say CSV carries no change note.
   assert.equal(changeNote({ name: "a.xlsx", note: "As published." }), "");
+});
+
+test("one destination is one link: shop's four tables are plain text and the tag carries the link", () => {
+  const shop = real("shop").sources;
+  const names = creditNames(shop);
+  assert.deepEqual(names.map((n) => n.url), ["", "", "", ""]);
+  assert.equal(names.filter((n) => n.url).length + (creditTag(shop) ? 1 : 0), 1);
+  const airbnb = creditNames(real("airbnb").sources);
+  assert.ok(airbnb.every((n) => n.url));
+  assert.ok(creditNames(real("netflix").sources)[0].url);
 });
 
 test("each dashboard names its licence once", () => {

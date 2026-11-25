@@ -119,6 +119,17 @@ export function creditTag(sources: DashboardSource[]): { text: string; url: stri
   return licence ? { text: licence.licence, url: licence.licence_url } : null;
 }
 
+/** The data line's names, each with the link it should carry. A name whose url
+    is shared with another source, or is the tag's own link, is plain text
+    (`url` ""), so one destination is one link: the tag's. */
+export function creditNames(sources: DashboardSource[]): { name: string; url: string; note: string }[] {
+  const tagUrl = creditTag(sources)?.url;
+  return sources.map((source) => {
+    const shared = source.url === tagUrl || sources.filter((other) => other.url === source.url).length > 1;
+    return { name: source.name, url: shared ? "" : source.url, note: changeNote(source) };
+  });
+}
+
 /** A change to the published file that its licence asks to be indicated, in at
     most five words: an Excel file whose note says it came from a CSV. Empty
     when nothing was changed. */
