@@ -45,8 +45,33 @@ test("an unnamed currency is never invented; the default currency fills a money 
 });
 
 test("a dozen bars or fewer get their values above them; more do not", () => {
-  assert.equal(at(themed({ data: [bars(12)] }).data[0], "texttemplate"), "%{y:.5~s}");
+  assert.equal(at(themed({ data: [bars(12)] }).data[0], "texttemplate"), "%{y:,.2~f}");
   assert.equal(at(themed({ data: [bars(13)] }).data[0], "texttemplate"), undefined);
+});
+
+const labelOf = (y: number[], extra: Record<string, unknown> = {}) =>
+  at(themed({ data: [{ type: "bar", x: y.map((_, i) => `c${i}`), y, ...extra }] }).data[0], "texttemplate");
+
+test("bar labels from 1,000 up keep five significant figures with an SI suffix", () => {
+  assert.equal(labelOf([35800, 437680000]), "%{y:.5~s}");
+  assert.equal(labelOf([408, 1000]), "%{y:.5~s}");
+});
+
+test("bar labels under 1,000 read as numbers with at most two decimals, never SI", () => {
+  assert.equal(labelOf([50.667, 120.5]), "%{y:,.2~f}");
+  assert.equal(labelOf([0.49, 0.51]), "%{y:,.2~f}");
+  assert.equal(labelOf([-999, 5]), "%{y:,.2~f}");
+  assert.equal(labelOf([-1500, 5]), "%{y:.5~s}");
+});
+
+test("the label format keeps the currency prefix, and the model's own text stays", () => {
+  const t = themed({
+    data: [{ type: "bar", x: ["a", "b"], y: [50.667, 3] }],
+    layout: { yaxis: { title: { text: "Price" } } },
+  }, "GBP");
+  assert.equal(at(t.data[0], "texttemplate"), "£%{y:,.2~f}");
+  assert.equal(labelOf([1, 2], { text: ["a", "b"] }), undefined);
+  assert.equal(labelOf([1, 2], { texttemplate: "%{y}!" }), "%{y}!");
 });
 
 test("a KPI keeps a readable format, replaces a broken one, and takes the named currency", () => {

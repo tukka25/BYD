@@ -276,9 +276,15 @@ export function themed(figure: PlotlyFigure, defaultCurrency = "") {
       const horizontal = trace.orientation === "h";
       const values = (horizontal ? trace.x : trace.y) as unknown[] | undefined;
       if (!trace.text && !trace.texttemplate && values && values.length <= 12) {
-        // Five significant figures, trailing zeros trimmed: 437.68M rather
-        // than 438M, and still 35.8k and 408 where that is the whole number.
-        trace.texttemplate = `${currency}%{${horizontal ? "x" : "y"}:.5~s}`;
+        // From the trace's own values. Up to the thousands, at most two
+        // decimals ("50.67", "0.49": SI would print 490m). From 1,000 up, five
+        // significant figures with an SI suffix, zeros trimmed: 437.68M, 35.8k.
+        const largest = Math.max(
+          0,
+          ...values.map((v) => (typeof v === "number" && Number.isFinite(v) ? Math.abs(v) : 0)),
+        );
+        const spec = largest >= 1000 ? ".5~s" : ",.2~f";
+        trace.texttemplate = `${currency}%{${horizontal ? "x" : "y"}:${spec}}`;
         trace.textposition = "outside";
         trace.cliponaxis = false;
         trace.textfont = { family: DISPLAY, size: 11.5, color: "#3a3a44" };
