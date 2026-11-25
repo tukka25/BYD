@@ -343,7 +343,7 @@ with a number.
 **Before there is a plan, one loader in the middle.** The analyst, the data
 checks and the planner take 30 to 120 seconds before a dashboard has a plan,
 and until then there is nothing to lay out. The canvas shows
-`components/build-loader.tsx`: the same pine dots as the placeholders, 36 of
+`components/build-loader.tsx` (drawn by `lib/dot-draw.ts`): the same pine dots as the placeholders, 36 of
 them on one canvas, walking through every kind of chart the model can draw —
 a line, bars, a donut, a scatter, a heatmap, a funnel, box plots, a treemap, a
 sunburst, a waterfall, a KPI gauge, a histogram, a smooth line and the area it
