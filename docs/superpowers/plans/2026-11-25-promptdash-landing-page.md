@@ -3836,44 +3836,104 @@ Spec: "Revision 2" at the end of the spec. Ledger: the "FINAL REVIEW" and "OWNER
 - Hero figures never wrap mid-figure at 1024 px.
 - Lint, test, build; check at desktop and 375 px (controller); commit.
 
-### Task B4: A preview of each dashboard on its card
+### Task B4: Image cards, each with a preview of its dashboard
 
-The owner's words: "for the cards, show like kind of a sneak peek photo of the graphs under it to know". Each landing card gets, under its title, a picture of the top of that dashboard, captured from the dashboard's own page. The dashboard pages themselves are unchanged: they still draw live Plotly charts and never show an image standing in for a chart.
+The owner asked twice:
+- "for the cards, show like kind of a sneak peek photo of the graphs under it to know";
+- then, with a screenshot of Kokonut UI's "carousel-cards": "show the cards this way ... it doesn't has to be carousel just the three there layout look something similar to this."
+
+The reference shows three tall image cards with rounded corners. Each has a small label chip at the top left of the image and a round icon button at the top right. The title and a one-line subtitle sit under the image, not inside a box. The middle card is larger and sits higher; the side cards are a little smaller, lower, and tilted outward by a degree or two.
+
+Build that look natively, in the site's own components and tokens. Do not run `npx shadcn` or install Kokonut UI or any other package. The site has no shadcn setup, and its init would rewrite `globals.css` and add a motion library to a page that loads nothing heavy. There is no carousel: no counter, no arrows, no autoplay.
+
+The dashboard pages themselves are unchanged. They still draw live Plotly charts, and they never show an image standing in for a chart.
 
 **Files:**
-- Create: `site/scripts/previews.mjs` (the capture script), `site/public/previews/{airbnb,shop,netflix}.webp` (generated and committed), `site/data/previews.json` (the record of what was captured), `site/tests/previews.test.mts`.
-- Modify: `site/components/dashboard-cards.tsx` (the image), `site/components/dashboard-view.tsx` (data attributes only, no visual change), `site/next.config.ts` (`images: { unoptimized: true }` if you use `next/image`), `site/package.json` (script `"previews": "node scripts/previews.mjs"`), `site/README.md`, `AGENTS.md` (one bullet in "Landing page (`site/`)").
+- Create:
+  - `site/scripts/previews.mjs`, the capture script;
+  - `site/public/previews/{airbnb,shop,netflix}.webp`, generated and committed;
+  - `site/data/previews.json`, the record of what was captured;
+  - `site/tests/previews.test.mts`.
+- Modify:
+  - `site/components/dashboard-cards.tsx`, the card;
+  - `site/components/dashboard-view.tsx`, data attributes only, no visual change;
+  - `site/next.config.ts`, `images: { unoptimized: true }` if you use `next/image`;
+  - `site/package.json`, script `"previews": "node scripts/previews.mjs"`;
+  - `site/README.md`;
+  - `AGENTS.md`, one bullet in "Landing page (`site/`)".
 
 **1. The capture script (`npm run previews`)**
-- Node 24 built-ins only (global `fetch` and `WebSocket`, `node:child_process`, `node:http`, `node:crypto`, `node:fs`). No npm dependency and no download.
-- Chrome: the `CHROME` environment variable, else `/Applications/Google Chrome.app/Contents/MacOS/Google Chrome`. A missing browser is an error that names both.
-- Launch with a fresh temporary `--user-data-dir` (removed afterwards; without it a running Chrome swallows the launch), `--headless=new`, a remote-debugging port, `--no-first-run`, `--no-default-browser-check`, `--hide-scrollbars`. Drive it over the DevTools protocol.
-- Serve `site/out/` itself on `127.0.0.1` with an ephemeral port (port 0): `/x/` resolves to `/x/index.html`, content types for html, js, css, json, woff2, webp, svg and png, and no path outside `out/`. Never use :3100 or :3101.
-- Refuse to run when `out/` is missing, or older than the newest file under `site/app`, `site/components`, `site/lib` or `site/data/dashboards`: tell the user to run `npm run build` first.
-- For each `site/data/dashboards/*.json`, sorted by name, open `/dashboards/<name>/`:
-  - viewport 1100 CSS px wide at device scale factor 1, then taller than the whole page (its `scrollHeight` plus 200 px). At a normal height the sticky prompt box floats over the charts and charts outside the 600 px observer margin never draw.
-  - Wait for `document.fonts.ready`, and until the page holds `build.charts_drawn` elements matching `.js-plotly-plot`, each with a `.main-svg`, and no chart shows a failure message. Time out after 60 s per dashboard with an error naming it.
-- The crop, one rule for all three (change the rule, never one dashboard): the grid's full width, from the top of its first block that is not a note, at an aspect of 16:10, cut at the grid's bottom if the grid is shorter. Find the grid and its blocks through data attributes added to `dashboard-view.tsx` (for example `data-preview-grid` and `data-block-kind`), not through class names.
-- Capture with `Page.captureScreenshot`, `format: "webp"`, quality 82, `captureBeyondViewport: true`, and a `clip` whose `scale` makes the output 720 px wide (about twice the card's image slot). If this Chrome refuses webp, fail with a message; never switch formats silently.
-- Write `site/public/previews/<name>.webp`, then `site/data/previews.json`: `{ "made_by": "scripts/previews.mjs", "viewport_width": 1100, "crop": "<the rule in words>", "dashboards": { "<name>": { "file": "/previews/<name>.webp", "width": 720, "height": <px>, "sha256": "<hex sha256 of the dashboard JSON file's bytes>" } } }`.
-- Exit non-zero on any failure. Always stop Chrome and the server and remove the temporary profile, including on failure.
+- **Built-ins only.** Use Node 24 built-ins: global `fetch` and `WebSocket`, `node:child_process`, `node:http`, `node:crypto`, `node:fs`. No npm dependency and no download.
+- **Chrome.** Use the `CHROME` environment variable, or else `/Applications/Google Chrome.app/Contents/MacOS/Google Chrome`. If neither exists, fail with an error that names both.
+- **Launch.**
+  - Give Chrome a fresh temporary `--user-data-dir`, and remove it afterwards. Without one, a running Chrome swallows the launch.
+  - Pass `--headless=new`, a remote-debugging port, `--no-first-run`, `--no-default-browser-check` and `--hide-scrollbars`.
+  - Drive it over the DevTools protocol.
+- **Server.** Serve `site/out/` from the script itself, on `127.0.0.1` with an ephemeral port (port 0).
+  - `/x/` resolves to `/x/index.html`.
+  - Send content types for html, js, css, json, woff2, webp, svg and png.
+  - Serve no path outside `out/`, and never use :3100 or :3101.
+- **Stale build.** Refuse to run when `out/` is missing, or is older than the newest file under `site/app`, `site/components`, `site/lib` or `site/data/dashboards`. Tell the user to run `npm run build` first.
+- **Each dashboard.** Take each `site/data/dashboards/*.json`, sorted by name, and open `/dashboards/<name>/`.
+  - Set the viewport 960 CSS px wide (the 12-column grid applies from 768 px) at device scale factor 1. Then make it taller than the whole page: its `scrollHeight` plus 200 px. At a normal height the sticky prompt box floats over the charts, and charts outside the 600 px observer margin never draw.
+  - Wait for `document.fonts.ready`. Then wait until the page holds `build.charts_drawn` elements matching `.js-plotly-plot`, each with a `.main-svg`, and no chart shows a failure message.
+  - Time out after 60 s per dashboard, with an error that names it.
+- **The crop.** Use one rule for all three. If one image looks wrong, change the rule, never one dashboard.
+  - Take the grid's full width, from the top of its first block that is not a note, at an aspect of 4:5 (height = width × 5/4).
+  - Cut at the grid's bottom if the grid is shorter.
+  - Find the grid and its blocks through data attributes added to `dashboard-view.tsx` (for example `data-preview-grid` and `data-block-kind`), not through class names.
+- **The capture.** Call `Page.captureScreenshot` with `format: "webp"`, quality 80, `captureBeyondViewport: true`, and a `clip` whose `scale` makes the output 640 px wide (about twice the card's image). If this Chrome refuses webp, fail with a message. Never switch formats silently.
+- **Output.** Write `site/public/previews/<name>.webp`. Then write `site/data/previews.json`:
+  `{ "made_by": "scripts/previews.mjs", "viewport_width": 960, "crop": "<the rule in words>", "dashboards": { "<name>": { "file": "/previews/<name>.webp", "width": 640, "height": <px>, "sha256": "<hex sha256 of the dashboard JSON file's bytes>" } } }`.
+- **Exit.** Exit non-zero on any failure. Always stop Chrome and the server and remove the temporary profile, including on failure.
 
 **2. The card (`dashboard-cards.tsx`)**
-- Under the title row (title and source kinds), above the quoted prompt: the preview at the full width of the card's content box, with its own `width` and `height` from `data/previews.json`, `loading="lazy"`, `decoding="async"` and `alt=""` (the link is already named by its h3).
-- The card radius of byd-web's design, a hairline ring, and the sunken surface behind it while it loads. Follow `antislop-ui`, `antislop-layoutmobile` and `byd-web/DESIGN.md`.
-- Keep `DashboardCards` a server component. At desktop width the three cards keep aligned rows (title, preview, prompt, link); at 375 px they stack with no horizontal scroll.
+- **One link per card.** It is named by its h3 (`aria-labelledby`, as now), and every part inside it is decorative or text.
+- **The image tile.**
+  - The preview fills a tall tile: aspect 4:5 from `md` up, and 4:3 below `md` with `object-fit: cover; object-position: top`.
+  - Give the tile the `--r-panel` radius, a hairline ring, the `--lift-2` shadow, and the sunken surface behind it while it loads.
+  - The image takes its own `width` and `height` from `data/previews.json`, with `loading="lazy"`, `decoding="async"` and `alt=""`.
+- **On the tile.**
+  - At the top left, a chip with the source kinds (`sourceKinds(dashboard)`: "Excel + CSV", "Postgres", "CSV"), legible over the image: a surface-coloured pill with a soft shadow.
+  - At the top right, a round surface-coloured chip with an arrow-up-right glyph, as an inline SVG or added to `components/icons.tsx`. It is `aria-hidden` and is not a button.
+  - No heart, no rating, no price, no counts.
+- **Under the tile, not boxed.**
+  - The title as the h3.
+  - The prompt in quotes, clamped to two lines.
+  - "Open the dashboard" with the arrow, as now.
+- **The row from `md` up.**
+  - Three cards in a row. The middle card is larger and sits higher.
+  - The side cards are a little smaller and lower, tilted outward by about 2 degrees: left negative, right positive.
+  - Hover and keyboard focus straighten and lift a card.
+  - Transitions animate `transform` only, at no more than 200 ms. Under `prefers-reduced-motion: reduce` there are no transitions. The resting tilt may stay.
+  - Keep the cards inside the content width, with no horizontal overflow at 768, 1024 and 1440 px.
+- **Below `md`.** One column, no tilt, no scale, all three the same size, and no horizontal scroll at 375 px.
+- **Keep the order.** The dashboard order stays as `DASHBOARDS` has it, so the shop card is in the middle.
+- **Skills and design.** Follow `antislop-ui`, `antislop-layoutmobile` and `byd-web/DESIGN.md`. Keep `DashboardCards` a server component.
 
 **3. What must stay true**
 - The landing page loads no Plotly: no chunk referenced by `site/out/index.html` contains "plotly".
 - The dashboard pages draw live charts; nothing there is an image of a chart.
-- `site/lib/{dot-shapes,dot-draw,plot-theme,rich-text}.ts` and `site/data/dashboards/*.json` are not touched.
+- These files are not touched: `site/lib/{dot-shapes,dot-draw,plot-theme,rich-text}.ts` and `site/data/dashboards/*.json`.
+- No new dependency.
 
 **4. The test (`tests/previews.test.mts`)**
-For every `site/data/dashboards/*.json`, `data/previews.json` has an entry whose `sha256` equals the sha256 of the file's current bytes (a mismatch fails with "run npm run build && npm run previews"); the image exists, is under 150 KB, and its WebP header's width and height equal the entry's (parse the RIFF container: `VP8 `, `VP8L` and `VP8X` chunks). No entry names a dashboard that does not exist.
+- For every `site/data/dashboards/*.json`, `data/previews.json` has an entry whose `sha256` equals the sha256 of the file's current bytes. A mismatch fails with "run npm run build && npm run previews".
+- The image exists and is under 150 KB.
+- Its WebP header's width and height equal the entry's. Parse the RIFF container's `VP8 `, `VP8L` and `VP8X` chunks.
+- No entry names a dashboard that does not exist.
 
 **5. Docs**
-- `site/README.md`: what the previews are, `npm run build && npm run previews` (Google Chrome, or `CHROME=<path>`), and that they must be re-captured after a dashboard changes or after a change to how dashboards are drawn (the test catches only the first).
+- `site/README.md` says:
+  - what the previews are;
+  - how to make them: `npm run build && npm run previews` (Google Chrome, or `CHROME=<path>`);
+  - that they must be captured again after a dashboard changes, or after a change to how dashboards are drawn. The test catches only the first.
 - `AGENTS.md`, "Landing page (`site/`)": one bullet saying the same in a line.
 
 **6. Order**
-Make the code changes, `npm run build`, `npm run previews`, look at the three images (Read shows them) and adjust the rule if one is mostly empty, `npm run build` again so the images are in `out/`, then `npm run lint && npm test`. Commit with the images.
+1. Make the code changes.
+2. Run `npm run build`, then `npm run previews`.
+3. Look at the three images (Read shows them). If one is mostly empty, adjust the rule.
+4. Run `npm run build` again so the images are in `out/`.
+5. Run `npm run lint && npm test`.
+6. Commit with the images.
