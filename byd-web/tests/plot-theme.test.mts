@@ -92,6 +92,15 @@ test("a currency code the model wrote as a suffix goes the same way", () => {
   assert.equal(at(data[0], "number", "prefix"), "£");
 });
 
+test("a currency kept next to a non-currency suffix still comes from the data", () => {
+  const kept = themed(priceKpi({ prefix: "$", suffix: "M" }, "Total MRR (USD)")).data[0];
+  assert.equal(at(kept, "number", "prefix"), "$");
+  assert.equal(at(kept, "number", "suffix"), "M");
+  const swapped = themed(priceKpi({ prefix: "$", suffix: "k" }), "GBP").data[0];
+  assert.equal(at(swapped, "number", "prefix"), "£");
+  assert.equal(at(swapped, "number", "suffix"), "k");
+});
+
 test("a prefix that is not a currency stays", () => {
   assert.equal(at(themed(priceKpi({ prefix: "~" })).data[0], "number", "prefix"), "~");
 });

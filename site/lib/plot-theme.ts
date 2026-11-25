@@ -300,13 +300,14 @@ export function themed(figure: PlotlyFigure, defaultCurrency = "") {
          anything that is not a d3 format at all, which Plotly ignores in
          silence -- a colour once arrived in this field and rendered raw. */
       // The model's own currency marks give way to the data's (see CURRENCY_MARK).
+      const hadMark = isCurrencyMark(number.prefix) || isCurrencyMark(number.suffix);
       if (isCurrencyMark(number.prefix)) delete number.prefix;
       if (isCurrencyMark(number.suffix)) delete number.suffix;
       // d3's "$" flag prints a dollar sign: a currency mark like the others.
       const chosen = String(number.valueformat ?? "").replace("$", "");
       number.valueformat =
         chosen && D3_FORMAT.test(chosen) && READABLE_FORMAT.test(chosen) ? chosen : numberFormat(trace.value);
-      if (currency && !number.prefix && !number.suffix) number.prefix = currency;
+      if (currency && !number.prefix && (hadMark || !number.suffix)) number.prefix = currency;
       trace.number = number;
       trace.delta = {
         ...((trace.delta as Record<string, unknown>) ?? {}),

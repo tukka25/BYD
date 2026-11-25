@@ -25,4 +25,4 @@ The owner does this once:
 1. Import the repository in Vercel.
 2. Set the root directory to `site`. The framework is Next.js.
 3. `vercel.json` skips the build for commits that do not touch `site/`.
-4. Deploy from `main`. Until the repository is public, use preview deployments only.
+4. Set the project's production branch to `launch` (a branch that does not exist yet), so pushes to `main` build preview deployments only. Create `launch` from `main` when the repository is public (part 2).

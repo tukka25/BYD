@@ -11,7 +11,8 @@ which git ignores, so no third-party data is committed:
     manifest.json       each file's URL, licence, rows, bytes, sha256 and fetch time
 
 The listings are saved as Excel so one dashboard is built from an Excel file and
-a CSV, as a user's might be. No value changes on the way.
+a CSV, as a user's might be. Values are kept to Excel's precision (about 16
+significant digits; long integer ids are written as text).
 
     backend/.venv/bin/python backend/scripts/fetch_showcase_data.py --airbnb-snapshot 2025-09-21
 """
@@ -59,7 +60,8 @@ def download(url: str, path: Path) -> None:
 
 
 def excel_from_csv(csv_path: Path, xlsx_path: Path) -> tuple[int, list[str]]:
-    """Save the listings as Excel, keeping every value. Returns the row count and
+    """Save the listings as Excel, with values kept to Excel's precision (about 16
+    significant digits; long integer ids are written as text). Returns the row count and
     the columns written as text.
 
     Excel stores numbers as doubles, which hold integers exactly only up to

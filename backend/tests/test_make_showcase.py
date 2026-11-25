@@ -1,12 +1,17 @@
 import email
+import io
+import json
 import sys
+import urllib.error
 from pathlib import Path
 
 import pytest
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
+import make_showcase  # noqa: E402
 from make_showcase import (  # noqa: E402
     SHOWCASES,
+    call,
     export_block,
     finished,
     model_record,
@@ -103,3 +108,31 @@ def test_a_build_is_finished_only_when_done_arrived():
     assert finished(events)
     assert not finished(events[:-1])
     assert not finished([])
+
+
+def test_a_dashboard_at_the_limit_is_refused(tmp_path):
+    text = '{"blocks":[{"title":"a"}]}'
+    with pytest.raises(ValueError):
+        write_dashboard(tmp_path / "a.json", {"blocks": [{"title": "a"}]}, limit=len(text))
+    assert write_dashboard(tmp_path / "b.json", {"blocks": [{"title": "a"}]}, limit=len(text) + 1) == len(text)
+
+
+@pytest.mark.parametrize("name", sorted(SHOWCASES))
+def test_the_prompt_and_tries_are_the_accepted_ones(name):
+    committed = json.loads((Path(__file__).resolve().parents[2] / "site/data/dashboards" / f"{name}.json").read_text())
+    assert SHOWCASES[name]["prompt"] == committed["prompt"]
+    assert SHOWCASES[name]["tries"] == committed["build"]["prompts_tried"]
+
+
+def test_an_http_error_never_copies_the_request_back(monkeypatch):
+    body = json.dumps({"detail": [{"loc": ["body", "password"], "msg": "too short", "input": "secret"}]})
+
+    def refuse(*args, **kwargs):
+        raise urllib.error.HTTPError("u", 422, "Unprocessable", {}, io.BytesIO(body.encode()))
+
+    monkeypatch.setattr(make_showcase, "request", refuse)
+    with pytest.raises(RuntimeError) as raised:
+        call("POST", "http://x/auth/register")
+    message = str(raised.value)
+    assert "422" in message and "too short" in message and "password" in message
+    assert "secret" not in message

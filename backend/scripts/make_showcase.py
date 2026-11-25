@@ -44,15 +44,15 @@ BLOCK_KEYS = ("kind", "title", "chart_type", "figure", "text_body", "code", "x",
 SHOWCASES: dict[str, dict[str, Any]] = {
     "airbnb": {
         "title": "Airbnb in Edinburgh",
-        "prompt": "thinking of renting out my flat in edinburgh on airbnb. which areas charge the most, "
-                  "entire place vs private room, and when are guests busiest?",
+        "prompt": "thinking of renting out my flat in edinburgh on airbnb. which neighbourhoods charge the most per night, entire place vs private room, and how many reviews do guests leave each month?",
+        "tries": 4,
         "files": ["listings.xlsx", "reviews.csv"],
         "currency": "GBP",  # Inside Airbnb states prices in local currency
     },
     "shop": {
         "title": "A demo shop",
-        "prompt": "how is my shop doing? revenue by month, which product categories sell best, "
-                  "and which customer regions spend the most",
+        "prompt": "how is my shop doing? revenue by month, which product categories sell best, and which customer regions spend the most",
+        "tries": 1,
         "database": {"display_name": "Shop demo", "db_name": "shop", "tables": ["orders", "customers", "products", "visits"]},
         "source": {"url": "https://github.com/tukka25/BYD/blob/main/backend/scripts/make_relational_demo.py",
                    "licence": "synthetic, made for this project", "licence_url": "",
@@ -61,8 +61,8 @@ SHOWCASES: dict[str, dict[str, Any]] = {
     },
     "netflix": {
         "title": "The Netflix catalogue",
-        "prompt": "how has netflix changed over the years? movies vs tv shows, which countries make the most "
-                  "content, and the most common ratings",
+        "prompt": "how has netflix changed over the years? movies vs tv shows, and the most common ratings",
+        "tries": 3,
         "files": ["netflix_titles.csv"],
         "currency": "",
     },
@@ -134,14 +134,14 @@ def multipart(field: str, filename: str, content: bytes) -> tuple[bytes, str]:
 def write_dashboard(path: Path, dashboard: dict, limit: int = MAX_BYTES) -> int:
     """Write compact JSON through a temporary file, so a failed run leaves no partial file.
 
-    A file over the limit is refused, naming its largest block: change the
+    A file at or over the limit is refused, naming its largest block: change the
     prompt, never the figure."""
     text = json.dumps(dashboard, separators=(",", ":"), ensure_ascii=False)
     size = len(text.encode("utf-8"))
-    if size > limit:
+    if size >= limit:
         largest = max(dashboard["blocks"], key=lambda block: len(json.dumps(block)))
         raise ValueError(
-            f"{path.name} would be {size:,} bytes, over {limit:,}. Its largest block is {largest['title']!r} "
+            f"{path.name} would be {size:,} bytes, at or over {limit:,}. Its largest block is {largest['title']!r} "
             f"({len(json.dumps(largest)):,} bytes): rephrase the prompt."
         )
     path.parent.mkdir(parents=True, exist_ok=True)
@@ -166,12 +166,24 @@ def request(method: str, url: str, *, token: str | None = None, body: dict | Non
     return urllib.request.urlopen(req, timeout=timeout)
 
 
+def _error_detail(body: bytes) -> str:
+    """Where a request went wrong, never what it held: a 422 body repeats the input, passwords included."""
+    try:
+        detail = json.loads(body.decode()).get("detail")
+    except (ValueError, AttributeError):
+        return ""
+    if isinstance(detail, list):
+        return ": " + "; ".join(f"{'.'.join(map(str, item.get('loc', [])))}: {item.get('msg')}"
+                                for item in detail if isinstance(item, dict))
+    return f": {detail}" if isinstance(detail, str) else ""
+
+
 def call(method: str, url: str, **kwargs) -> Any:
     try:
         with request(method, url, **kwargs) as response:
             return json.loads(response.read().decode() or "null")
     except urllib.error.HTTPError as exc:
-        raise RuntimeError(f"{method} {url} -> {exc.code}: {exc.read().decode()[:500]}") from None
+        raise RuntimeError(f"{method} {url} -> {exc.code}{_error_detail(exc.read())}") from None
 
 
 def login(api: str, password: str) -> str:
@@ -268,11 +280,13 @@ def main() -> int:
     parser.add_argument("--base", default="http://localhost:8000")
     parser.add_argument("--model-url", default="http://127.0.0.1:8080", help="where the model server listens")
     parser.add_argument("--prompt", default="", help="a rephrased prompt; the default is the approved one")
-    parser.add_argument("--tries", type=int, default=1, help="prompts tried for this dashboard, counting this one")
+    parser.add_argument("--tries", type=int, default=None,
+                        help="prompts tried for this dashboard, counting this one; default: the approved prompt's count")
     parser.add_argument("--out", default="site/data/dashboards")
     args = parser.parse_args()
     config = SHOWCASES[args.name]
     prompt = args.prompt or config["prompt"]
+    tries = args.tries if args.tries is not None else config["tries"]
     if len(prompt) > BRIEF_LIMIT:
         print(f"the prompt is {len(prompt)} characters; the brief takes at most {BRIEF_LIMIT}", file=sys.stderr)
         return 2
@@ -326,7 +340,7 @@ def main() -> int:
             "skipped": record["skipped"],
             "missing_kinds": record["missing_kinds"],
             "seconds": seconds,
-            "prompts_tried": args.tries,
+            "prompts_tried": tries,
         },
         "model": model_record(model),
         "app_commit": app_commit(),

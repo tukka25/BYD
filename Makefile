@@ -115,7 +115,7 @@ showcase: ## Build one landing-page dashboard with the running app: make showcas
 	@SHOWCASE_DB_USER="$$(docker exec promptdash-postgres printenv POSTGRES_USER)" \
 	 SHOWCASE_DB_PASSWORD="$$(docker exec promptdash-postgres printenv POSTGRES_PASSWORD)" \
 	 $(PY) $(BACKEND)/scripts/make_showcase.py --base $(API_BASE) --name "$(NAME)" \
-	   $(if $(SHOWCASE_PROMPT),--prompt "$(SHOWCASE_PROMPT)") --tries $(or $(SHOWCASE_TRIES),1)
+	   $(if $(SHOWCASE_PROMPT),--prompt "$(SHOWCASE_PROMPT)") $(if $(SHOWCASE_TRIES),--tries $(SHOWCASE_TRIES))
 
 doctor: ## Check the things that are usually wrong
 	@echo "docker:        $$(docker info >/dev/null 2>&1 && echo running || echo NOT-RUNNING)"
