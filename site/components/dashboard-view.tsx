@@ -1,15 +1,14 @@
 import type { CSSProperties } from "react";
 import { DashboardCard } from "@/components/dashboard-card";
 import { LazyChart } from "@/components/lazy-chart";
-import { KeepDates, Name } from "@/components/section";
+import { Name } from "@/components/section";
 import {
   blockHeight,
   buildLine,
-  capitalise,
+  changeNote,
+  creditTag,
   gridPlacement,
   isIndicator,
-  licences,
-  splitNotes,
   type Dashboard,
 } from "@/lib/dashboard";
 import { toHtml } from "@/lib/rich-text";
@@ -73,77 +72,37 @@ function PromptBox({ dashboard }: { dashboard: Dashboard }) {
   );
 }
 
-const link = "underline decoration-hairline-strong underline-offset-2 hover:text-ink";
+const link = "inline-flex min-h-11 items-center underline decoration-hairline-strong underline-offset-4 hover:text-ink";
 
-function LicenceText({ licence, licence_url }: { licence: string; licence_url: string }) {
-  const text = capitalise(licence);
-  return licence_url ? (
-    <a href={licence_url} className={link}>
-      {text}
-    </a>
-  ) : (
-    <>{text}</>
-  );
-}
-
-/* Where the data came from. A sentence every source's note shares is said
-   once, with a licence every source shares; what is left of each note sits
-   beside its own source. */
+/* Where the data came from, as links only: "Data:", each source's name linked
+   to its page, a short note where its licence asks for a change to be
+   indicated, and one licence (or "synthetic") tag. All read from the file's
+   sources. */
 function Provenance({ dashboard }: { dashboard: Dashboard }) {
   const { sources, build } = dashboard;
-  const { shared, own } = splitNotes(sources.map((source) => source.note));
-  const common = licences(sources);
-  const oneLicence = common.length === 1 ? common[0] : null;
+  const tag = creditTag(sources);
   const skipped = build.skipped;
-  const name = (index: number) => (
-    <a href={sources[index].url} className={link}>
-      {sources[index].name}
-    </a>
-  );
   return (
     <div className="mt-5 space-y-2 px-1 text-[14px] leading-[1.6] text-body [&>*]:max-w-[42ch]">
-      {shared || oneLicence ? (
-        <p>
-          <KeepDates text={shared} />
-          {shared && oneLicence ? " " : ""}
-          {oneLicence ? (
-            <>
-              <LicenceText {...oneLicence} />.
-            </>
-          ) : null}
-        </p>
-      ) : null}
-      {own.some(Boolean) || !oneLicence ? (
-        <ul className="space-y-1">
-          {sources.map((source, index) => (
-            <li key={source.name}>
-              {name(index)}
-              {oneLicence ? null : (
-                <>
-                  {" "}
-                  (<LicenceText {...source} />)
-                </>
-              )}
-              {own[index] ? (
-                <>
-                  : <KeepDates text={own[index]} />
-                </>
-              ) : null}
-            </li>
-          ))}
-        </ul>
-      ) : (
-        <p>
-          Data:{" "}
-          {sources.map((source, index) => (
-            <span key={source.name}>
-              {index > 0 ? ", " : ""}
-              {name(index)}
+      <p className="flex flex-wrap items-center gap-x-3">
+        <span>Data:</span>
+        {sources.map((source) => {
+          const note = changeNote(source);
+          return (
+            <span key={source.name} className="inline-flex flex-wrap items-center gap-x-1.5">
+              <a href={source.url} target="_blank" rel="noopener noreferrer" className={link}>
+                {source.name}
+              </a>
+              {note ? <span className="text-muted">({note})</span> : null}
             </span>
-          ))}
-          .
-        </p>
-      )}
+          );
+        })}
+        {tag ? (
+          <a href={tag.url} target="_blank" rel="noopener noreferrer" className={link}>
+            {tag.text}
+          </a>
+        ) : null}
+      </p>
       <p>
         Drawn by <Name>{dashboard.model.label}</Name>, unedited, on <Name>{dashboard.generated_at.slice(0, 10)}</Name>.
         {skipped.length

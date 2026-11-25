@@ -77,28 +77,6 @@ export function sourceKinds(dashboard: Pick<Dashboard, "sources">): string {
   return [...new Set(kinds)].join(" + ");
 }
 
-/** A note's sentences. A sentence ends at a full stop, question or exclamation
-    mark followed by a space and a capital, so `make_relational_demo.py:` stays
-    inside its sentence. */
-export function sentences(text: string): string[] {
-  return text
-    .split(/(?<=[.!?])\s+(?=[A-Z])/)
-    .map((sentence) => sentence.trim())
-    .filter(Boolean);
-}
-
-/** The sentences every note shares, to print once, and what is left of each
-    note, to print beside its own source. Both Airbnb notes open with "Inside
-    Airbnb, Edinburgh, snapshot 2026-09-19."; that sentence is said once. */
-export function splitNotes(notes: string[]): { shared: string; own: string[] } {
-  const split = notes.map(sentences);
-  const shared = (split[0] ?? []).filter((sentence) => split.every((list) => list.includes(sentence)));
-  return {
-    shared: shared.join(" "),
-    own: split.map((list) => list.filter((sentence) => !shared.includes(sentence)).join(" ")),
-  };
-}
-
 type Licence = Pick<DashboardSource, "licence" | "licence_url">;
 
 /** Each distinct licence once, in source order, so four tables under one licence credit it once. */
@@ -119,12 +97,33 @@ export function capitalise(text: string): string {
   return text.charAt(0).toUpperCase() + text.slice(1);
 }
 
-/** What a dashboard's data is, said once: what all its notes share, or, when
-    they share nothing, the first sentence of each, without repeats. */
-export function creditLine(sources: Pick<DashboardSource, "note">[]): string {
-  const { shared } = splitNotes(sources.map((source) => source.note));
-  if (shared) return shared;
-  return [...new Set(sources.map((source) => sentences(source.note)[0] ?? ""))].filter(Boolean).join(" ");
+/** What a dashboard's data is called, read from its own source records: the
+    words a note opens with, up to its first comma, " by " or full stop
+    ("Inside Airbnb", "Netflix Movies and TV Shows"); a database is named by
+    its schema ("Shop data"). */
+export function dataName(dashboard: Pick<Dashboard, "sources">): string {
+  const first = dashboard.sources[0];
+  if (first.kind === "database") return `${capitalise(first.name.split(".")[0])} data`;
+  return first.note.split(/,| by |\./)[0].trim();
+}
+
+/** The one tag a dashboard's credit carries, once: synthetic data, which has
+    no licence link, is tagged with its first word, linked to the script that
+    makes it (its source url); real data is tagged with its licence when the
+    licence needs naming (CC0 needs nothing), linked to the licence. */
+export function creditTag(sources: DashboardSource[]): { text: string; url: string } | null {
+  const [first] = sources;
+  if (!first) return null;
+  if (!first.licence_url) return { text: first.licence.split(",")[0], url: first.url };
+  const licence = licences(sources).find((l) => l.licence_url && !/^CC0/i.test(l.licence));
+  return licence ? { text: licence.licence, url: licence.licence_url } : null;
+}
+
+/** A change to the published file that its licence asks to be indicated, in at
+    most five words: an Excel file whose note says it came from a CSV. Empty
+    when nothing was changed. */
+export function changeNote(source: Pick<DashboardSource, "name" | "note">): string {
+  return /\.xlsx?$/i.test(source.name) && /\bCSV\b/.test(source.note) ? "converted from the CSV" : "";
 }
 
 const ORDINALS = ["first", "second", "third", "fourth", "fifth", "sixth", "seventh", "eighth", "ninth", "tenth"];
