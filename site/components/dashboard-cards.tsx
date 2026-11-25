@@ -7,7 +7,7 @@ import { DASHBOARD_TITLES } from "@/lib/site";
 
 type Preview = { file: string; width: number; height: number };
 
-/* A picture of the top of each dashboard, taken from its own page by
+/* A picture of each dashboard's first charts, taken from its own page by
    scripts/previews.mjs. It is the only image of a chart on the site: the
    dashboard pages draw theirs live. A dashboard with no picture yet keeps the
    sunken tile, so a new one can be built before it is captured;

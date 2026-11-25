@@ -1,5 +1,5 @@
-// npm run previews: a picture of the top of each dashboard, for its card on
-// the landing page. It serves the static build in out/ itself, drives the
+// npm run previews: a picture of each dashboard's first charts, for its card
+// on the landing page. It serves the static build in out/ itself, drives the
 // Google Chrome already on this machine over the DevTools protocol, and writes
 // public/previews/<name>.webp and data/previews.json.
 //

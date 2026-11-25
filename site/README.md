@@ -14,7 +14,7 @@ npm run previews  # the cards' pictures, taken from out/ (see below)
 
 ## The previews on the cards
 
-Each dashboard card on the landing page shows a picture of the top of its dashboard: `public/previews/<name>.webp`, listed with its size in `data/previews.json`. They are the only pictures of charts on the site. The landing page loads no Plotly, and the dashboard pages still draw every chart live.
+Each dashboard card on the landing page shows a picture of its dashboard's first charts: `public/previews/<name>.webp`, listed with its size in `data/previews.json`. They are the only pictures of charts on the site. The landing page loads no Plotly, and the dashboard pages still draw every chart live.
 
 `scripts/previews.mjs` takes them from the built pages. It serves `out/` itself, opens each dashboard in headless Google Chrome at 960 px, waits until every chart is drawn, and crops the grid from its first chart at 4:5. It uses Node's built-ins and the Chrome already installed, and downloads nothing.
 
