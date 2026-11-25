@@ -8,6 +8,13 @@ const stats: Stat[] = JSON.parse(readFileSync(new URL("../data/stats.json", impo
 const read = (file: string) => readFileSync(new URL(file, ROOT), "utf8");
 const squash = (text: string) => text.replace(/\s+/g, " ");
 
+/* The formatted value must stand on its own in the quote, not as part of a
+   longer number: "3" inside "3.3 h" or "1,832" does not count. */
+function quotes(quote: string, text: string): boolean {
+  const escaped = text.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  return new RegExp(`(?<![\\d.,])${escaped}(?![\\d]|[.,]\\d)`).test(quote);
+}
+
 function at(value: unknown, path: (string | number)[]): unknown {
   return path.reduce<unknown>((node, key) => (node as Record<string | number, unknown> | undefined)?.[key], value);
 }
@@ -19,6 +26,16 @@ test("percent, money, counts and durations format as the page shows them", () =>
   assert.equal(formatStat({ value: 5.4708, format: { kind: "usd", decimals: 4 } }, 2), "$5.47");
   assert.equal(formatStat({ value: 1832, format: { kind: "number", decimals: 0 } }), "1,832");
   assert.equal(formatStat({ value: 8668, format: { kind: "duration" } }), "2 h 24 m");
+});
+
+test("a value inside a longer number does not count as quoted", () => {
+  const quote = "2 epochs, 1,832 steps, 3.3 h";
+  assert.equal(quotes(quote, "2"), true);
+  assert.equal(quotes(quote, "1,832"), true);
+  assert.equal(quotes(quote, "3.3"), true);
+  assert.equal(quotes(quote, "3"), false);
+  assert.equal(quotes(quote, "1"), false);
+  assert.equal(quotes(quote, "32"), false);
 });
 
 test("ids are unique and every entry says what it measures", () => {
@@ -37,7 +54,7 @@ for (const stat of stats) {
       assert.equal(at(JSON.parse(read(source.file)), source.path), stat.value);
     } else if (source.kind === "quote") {
       assert.ok(squash(read(source.file)).includes(squash(source.quote)), `${source.file} lacks: ${source.quote}`);
-      assert.ok(source.quote.includes(formatStat(stat)), `the quote does not contain ${formatStat(stat)}`);
+      assert.ok(quotes(source.quote, formatStat(stat)), `the quote does not contain ${formatStat(stat)} on its own`);
     } else {
       const total = source.of.reduce((sum, id) => sum + findStat(stats, id).value, 0);
       assert.ok(Math.abs(total - stat.value) < 1e-9, `${stat.id} is ${stat.value}; its parts add up to ${total}`);
