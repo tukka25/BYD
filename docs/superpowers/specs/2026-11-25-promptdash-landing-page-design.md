@@ -65,12 +65,12 @@ The work happens on the branch `feat/landing-page`. `main` is what Vercel deploy
 
 Each section is a few technical sentences and one figure, table or diagram.
 
-1. **Hero.** Left: the name, one line on what PromptDash is (ask for a dashboard in plain words; a 9B model fine-tuned for Plotly writes every chart, on your own machine), a GitHub button and a link down to the dashboards. Three headline numbers: chart scripts that run and charts of the right kind, each as the base model's share → lora-v2's (94% and 82%), both on the frozen 300 at 4-bit on a Mac; and about $35 to train. Right: the dot animation, morphing through all 14 chart shapes without end.
+1. **Hero.** Left: the name, one line on what PromptDash is (ask for a dashboard in plain words; a 9B model fine-tuned for Plotly writes every chart, on your own machine), a GitHub button and a link down to the dashboards. Three headline numbers: chart scripts that run and charts of the right kind, each as the base model's share → lora-v2's (69% → 94% and 46% → 82%), both on the frozen 300 at 4-bit on a Mac; and about $35 to train. Right: the dot animation, morphing through all 14 chart shapes without end.
 2. **Three dashboards.** Each one live, styled like the app's view mode, with its prompt in a fixed box below it. Then the data source and its licence, and "drawn by lora-v2, unedited", with the date.
-3. **Journey.** A strip of dated milestones read from `git log`, each citing its commit: the first commit (2026-03-07), the training data, lora-v1 (2026-11-20), lora-v2 and dashboards planned by the model (2026-11-21, `a91d276`), no hardcoded charts (2026-11-23, `7deeaa3`), the bar drawing check (2026-11-25, `2d7af93`).
+3. **Journey.** A strip of dated milestones read from `git log`, each citing its commit: the first commit (2026-03-07, `35e0ce4`), the training data (2026-11-19, `ac9d3b2`), lora-v1 (2026-11-20, `a0fd4d0`), dashboards planned by the model (2026-11-21, `a91d276`), lora-v2 (2026-11-22, `7c8bdf1`; its commits are dated the 22nd, not the 21st), no hardcoded charts (2026-11-23, `7deeaa3`), the bar drawing check (2026-11-25, `2d7af93`).
 4. **The problem.**
    - Out of the box, Qwen3.5-9B answers with a reasoning essay, and 7.7% of its chart scripts run (frozen 300, full precision).
-   - With thinking off, on the same 300 questions at 4-bit on a Mac, more of its scripts run, but few draw the right kind of chart: the base row of the results table.
+   - With thinking off, on the same 300 questions at 4-bit on a Mac, 68.7% of its scripts run and 46.3% draw the right kind of chart, against lora-v2's 94.3% and 82.3%. Its failures are mostly runtime errors and invented columns, not formatting.
    - The scraped Plotly docs taught the opposite of what the app needs. Table: 0% end with `print(fig.to_json())`, 96.1% call `fig.show()`, 46.9% read a file or URL, 3.3% of prompts mention columns.
 5. **The data.** A pipeline diagram:
    - 970 scraped rows, set aside as training data.
@@ -86,7 +86,7 @@ Each section is a few technical sentences and one figure, table or diagram.
    - Converted from PEFT to MLX and served 4-bit on a Mac with `mlx_lm`. A validation-loss chart for both runs.
 7. **Results.** One table. Each row names its test set and links to its source file on GitHub:
    - Frozen 300, full precision: renders 7.7% → 91.3% → 97.3%; right shape 4.7% → 81.0% → 87.0% (base → lora-v1 → lora-v2).
-   - Frozen 300 on a Mac, 4-bit, one harness (`evaluate.py`, greedy, 1,024-token cap): base with thinking off → lora-v1 89.3% / 76.3% → lora-v2 94.3% / 82.3% (render / right kind; v1 → v2 paired p = 0.020). This is the headline row: same questions, same precision, same harness for all three.
+   - Frozen 300 on a Mac, 4-bit, one harness (`evaluate.py`, greedy, 1,024-token cap): base with thinking off 68.7% / 46.3% → lora-v1 89.3% / 76.3% → lora-v2 94.3% / 82.3% (render / right kind; v1 → v2 paired p = 0.020). This is the headline row: same questions, same precision, same harness for all three.
    - 120 frozen dashboard requests: needing a retry 54.2% → 12.5%; drawn charts that render 86.4% → 98.9%; drawn as the planned kind 84.9% → 98.9%.
    - A note: 7.7% measures the essay. The fair baseline is the base model with thinking off on the same 300 questions, its best setting.
    - The 118-question set of `ab_planner_hint.json` is not on the page: it is weighted to the hardest chart types, and the frozen 300 now has a base row of its own.
@@ -109,6 +109,8 @@ Each section is a few technical sentences and one figure, table or diagram.
 ### The baseline run
 
 Added at review, 2026-11-25. The base model, Qwen3.5-9B at 4-bit with no adapter and `enable_thinking=False`, scored on the frozen 300 by `evaluate.py`: the harness, test set (sha256 `bf385c59…`), token cap and decoding that produced lora-v1's and lora-v2's local reports. Base gets its best setting: with thinking on, its essay leaves almost no code inside the cap. Run on the Mac, under an hour, beside the idle model server.
+
+Result (`5d8e024`): 68.7% render, 46.3% right kind of chart. Of its 94 failures, 67 are runtime errors and 12 invented columns; 6 are syntax errors, so formatting is a small share. On the four hard buckets it agrees with the 118-question run within a row or two.
 
 ## Making the three dashboards
 
