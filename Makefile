@@ -32,7 +32,7 @@ API_BASE     ?= http://localhost:8000
 PROMPT       ?= Monthly MRR trend by plan tier
 
 .PHONY: help setup secrets sample-data adapter serve-model serve-base up down \
-        restart logs ps smoke doctor dev-api dev-web test lint
+        restart logs ps smoke showcase doctor dev-api dev-web test lint
 
 help: ## Show this help
 	@echo ""
@@ -109,6 +109,13 @@ ps: ## Show container status
 
 smoke: ## End-to-end test: health, auth, and a real chart
 	@$(PY) $(BACKEND)/scripts/smoke_test.py --base $(API_BASE) --prompt "$(PROMPT)"
+
+showcase: ## Build one landing-page dashboard with the running app: make showcase NAME=airbnb
+	@test -n "$(NAME)" || { echo "usage: make showcase NAME=airbnb|shop|netflix [SHOWCASE_PROMPT=\"...\" SHOWCASE_TRIES=2]"; exit 2; }
+	@SHOWCASE_DB_USER="$$(docker exec promptdash-postgres printenv POSTGRES_USER)" \
+	 SHOWCASE_DB_PASSWORD="$$(docker exec promptdash-postgres printenv POSTGRES_PASSWORD)" \
+	 $(PY) $(BACKEND)/scripts/make_showcase.py --base $(API_BASE) --name "$(NAME)" \
+	   $(if $(SHOWCASE_PROMPT),--prompt "$(SHOWCASE_PROMPT)") $(if $(SHOWCASE_TRIES),--tries $(SHOWCASE_TRIES))
 
 doctor: ## Check the things that are usually wrong
 	@echo "docker:        $$(docker info >/dev/null 2>&1 && echo running || echo NOT-RUNNING)"

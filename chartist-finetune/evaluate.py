@@ -24,6 +24,7 @@ Design notes that matter:
 
     .venv/bin/python evaluate.py --label base     --adapter-path none
     .venv/bin/python evaluate.py --label lora-v1  --adapter-path runs/lora-v1/adapters
+    .venv/bin/python evaluate.py --label base-nothink --adapter-path none --no-thinking
 """
 from __future__ import annotations
 
@@ -64,6 +65,27 @@ def strip_fence(text: str) -> str:
     return text.strip()
 
 
+def prompt_ids(tokenizer, row: dict, thinking: bool = True) -> list[int]:
+    """The row's chat prompt as token ids, for batch_generate.
+
+    ``thinking=False`` passes ``enable_thinking=False``, which makes Qwen3.5's chat
+    template pre-close the think block, as the app's analyst and planner calls do.
+    The flag is passed only to turn thinking off, so a run with it left on builds the
+    same prompts every earlier run built.
+    """
+    messages = [
+        {"role": "system", "content": row.get("system") or SYSTEM_FALLBACK},
+        {"role": "user", "content": row["prompt"]},
+    ]
+    extra = {} if thinking else {"enable_thinking": False}
+    ids = tokenizer.apply_chat_template(messages, tokenize=True, add_generation_prompt=True, **extra)
+    if isinstance(ids, dict):
+        ids = ids.get("input_ids", [])
+    if ids and isinstance(ids[0], (list, tuple)):
+        ids = ids[0]
+    return list(ids)
+
+
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--model", default="models/qwen3.5-9b-4bit")
@@ -76,6 +98,9 @@ def main() -> int:
     # 1024, a long but valid answer failed here and passed in the app.
     parser.add_argument("--max-tokens", type=int, default=CHARTIST_MAX_TOKENS)
     parser.add_argument("--batch-size", type=int, default=8)
+    # Base Qwen3.5 with thinking on opens every answer with a reasoning essay and seldom
+    # reaches code inside the cap; that is the 7.7% base figure. Off measures the model.
+    parser.add_argument("--no-thinking", action="store_true", help="pass enable_thinking=False to the chat template")
     args = parser.parse_args()
 
     rows = [json.loads(l) for l in Path(args.testset).read_text(encoding="utf-8").splitlines() if l.strip()]
@@ -93,18 +118,7 @@ def main() -> int:
     model, tokenizer = load(args.model, adapter_path=adapter)
 
     # Pre-tokenise: batch_generate takes token ids, not strings.
-    prompts: list[list[int]] = []
-    for row in rows:
-        messages = [
-            {"role": "system", "content": row.get("system") or SYSTEM_FALLBACK},
-            {"role": "user", "content": row["prompt"]},
-        ]
-        ids = tokenizer.apply_chat_template(messages, tokenize=True, add_generation_prompt=True)
-        if isinstance(ids, dict):
-            ids = ids.get("input_ids", [])
-        if ids and isinstance(ids[0], (list, tuple)):
-            ids = ids[0]
-        prompts.append(list(ids))
+    prompts = [prompt_ids(tokenizer, row, thinking=not args.no_thinking) for row in rows]
 
     sampler = make_sampler(temp=0.0)  # greedy: two runs of one adapter must agree
 
@@ -182,6 +196,7 @@ def main() -> int:
         "label": args.label,
         "model": args.model,
         "adapter_path": args.adapter_path,
+        "thinking": not args.no_thinking,
         "n": totals["n"],
         "render_rate": round(totals["renders"] / n, 4),
         "render_rate_quota_weighted": round(weighted / quota_covered, 4) if quota_covered else None,

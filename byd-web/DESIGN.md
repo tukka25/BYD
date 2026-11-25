@@ -90,13 +90,13 @@ darkened pairs, now tokens rather than hex literals in components:
 
 Pine, copper and slate lead so a chart looks like the rest of the app on
 sight; 4–8 extend without colliding in hue, and none of them is purple. The
-order is applied as Plotly's `colorway` in `components/plot.tsx`.
+order is applied as Plotly's `colorway` in `lib/plot-theme.ts`.
 
 > **`colorway` alone does not re-theme a figure, and this doc used to claim it
 > did.** Plotly Express bakes an explicit colour onto every trace from its own
 > default sequence, and an explicit trace colour beats `layout.colorway`. So
 > every generated chart kept Plotly's `#636efa` blue while the rest of the app
-> was re-themed. `plot.tsx` now swaps a trace colour **only** when it matches a
+> was re-themed. `lib/plot-theme.ts` now swaps a trace colour **only** when it matches a
 > known Plotly default (the `plotly` and `D3` sequences), replacing it with our
 > series by trace index. Any other colour is left alone: a colour the model
 > actually chose is authoring, and re-theming is not re-authoring.
@@ -343,7 +343,7 @@ with a number.
 **Before there is a plan, one loader in the middle.** The analyst, the data
 checks and the planner take 30 to 120 seconds before a dashboard has a plan,
 and until then there is nothing to lay out. The canvas shows
-`components/build-loader.tsx`: the same pine dots as the placeholders, 36 of
+`components/build-loader.tsx` (drawn by `lib/dot-draw.ts`): the same pine dots as the placeholders, 36 of
 them on one canvas, walking through every kind of chart the model can draw —
 a line, bars, a donut, a scatter, a heatmap, a funnel, box plots, a treemap, a
 sunburst, a waterfall, a KPI gauge, a histogram, a smooth line and the area it
@@ -399,7 +399,7 @@ Plotly is **bundled** (`plotly.js-dist-min`, imported lazily), not loaded from
 `cdn.plot.ly`. The CDN script broke the local-only claim on every chart and
 pinned the browser to a Plotly older than the one producing the figures.
 
-The model writes whatever Plotly it likes, so `components/plot.tsx` re-themes
+The model writes whatever Plotly it likes, so `lib/plot-theme.ts` re-themes
 every figure on the way in. What we override:
 
 - `colorway` → our series, plus a per-trace swap of Plotly's own default
@@ -415,6 +415,7 @@ every figure on the way in. What we override:
   (`stroke-linecap: round` on `.scatterlayer`), because Plotly exposes no
   line-cap option on scatter traces
 - hover label: white, hairline border, ink text
+- a currency mark the model wrote itself (a KPI prefix or suffix, d3's `$` flag, an axis tick prefix) gives way to the data's currency, and goes when the data names none
 
 What we leave alone: the data, the trace types, the value formats, the axis
 titles. Re-theming is not re-authoring.

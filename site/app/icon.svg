@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <!-- The compact cut on a pine tile. A browser tab renders this at 16px, where
+       the full eleven-bar field averages out to grey, so the favicon carries
+       four bars and a heavier three-node line instead. -->
+  <rect width="32" height="32" rx="8" fill="#176B4E"/>
+  <g transform="translate(4.16 4.16) scale(0.9867)">
+    <g fill="#8FD3B4">
+      <rect x="2.6" y="5.4" width="2.6" height="15.2" rx="1.3"/>
+      <rect x="8.5" y="2.2" width="2.6" height="19" rx="1.3"/>
+      <rect x="14.4" y="7.6" width="2.6" height="12.6" rx="1.3"/>
+      <rect x="20.3" y="3.6" width="2.6" height="17.4" rx="1.3"/>
+    </g>
+    <path d="M 4.2 17 L 12 12.4 L 19.8 6.6" fill="none" stroke="#176B4E" stroke-width="6.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="4.2" cy="17" r="4.3" fill="#176B4E"/>
+    <circle cx="12" cy="12.4" r="4.3" fill="#176B4E"/>
+    <circle cx="19.8" cy="6.6" r="4.3" fill="#176B4E"/>
+    <path d="M 4.2 17 L 12 12.4 L 19.8 6.6" fill="none" stroke="#FFFFFF" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="4.2" cy="17" r="3.1" fill="#FFFFFF"/>
+    <circle cx="12" cy="12.4" r="3.1" fill="#FFFFFF"/>
+    <circle cx="19.8" cy="6.6" r="3.1" fill="#FFFFFF"/>
+  </g>
+</svg>

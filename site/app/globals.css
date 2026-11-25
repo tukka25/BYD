@@ -1,0 +1,315 @@
+@import "tailwindcss";
+
+/* Tokens, base rules and note styles copied from byd-web/app/globals.css
+   (lines 24-212 and 225-316), so the page and the app share one visual
+   language. Copy them again if those blocks change. */
+
+:root {
+  /* Surfaces: value separation, lightest on top. */
+  --canvas: #efeff2;
+  --surface: #ffffff;
+  --surface-sunken: #e7e7ec;
+  --surface-inverse: #17171c;
+
+  /* Text */
+  --ink: #121216;
+  --body: #3a3a44;
+  --muted: #5e5e6b;
+  --on-dark: #f4f4f7;
+  --on-dark-muted: #a9a9b6;
+
+  /* Lines. Never used for text. */
+  --hairline: #d8d8e0;
+  --hairline-strong: #c3c3cf;
+
+  /* Brand. Pine leads, copper is the warm counter, slate carries neutral
+     categories, coral is destructive. Pine is deliberately the same green that
+     means "running on this machine": the brand colour IS the product's claim.
+     Every -ink value is the darkened text pair for its own wash, so a 12px
+     badge still clears AA (measured 5.5-7.8:1). */
+  --pine: #176b4e;
+  --pine-press: #11543d;
+  --pine-wash: #e4f0ea;
+  --copper: #c2761b;
+  --copper-wash: #f8eedf;
+  --copper-ink: #8a5214;
+  --coral: #d23f2b;
+  --coral-wash: #fbe7e3;
+  --coral-ink: #a8331f;
+  --slate: #3b5b8f;
+  --slate-wash: #e7edf6;
+  --slate-ink: #2e4871;
+
+  /* Chart series order. Pine, copper, slate lead so a chart looks like the rest
+     of the app on sight; 4-8 extend without colliding in hue. No purple: the
+     old series 5 was #9b5cf6 and it is gone. */
+  --series-1: #176b4e;
+  --series-2: #c2761b;
+  --series-3: #3b5b8f;
+  --series-4: #d23f2b;
+  --series-5: #2f8f86;
+  --series-6: #d9a93e;
+  --series-7: #b8486f;
+  --series-8: #6e7a8a;
+
+  /* Radii. Large on panels, medium on controls, full on pills. */
+  --r-panel: 24px;
+  --r-card: 18px;
+  --r-control: 12px;
+  --r-pill: 999px;
+
+  /* Elevation. Offset + blur, never a zero-offset halo. */
+  --lift-1: 0 1px 2px rgb(18 18 22 / 0.04), 0 2px 8px rgb(18 18 22 / 0.04);
+  --lift-2: 0 2px 4px rgb(18 18 22 / 0.06), 0 12px 28px rgb(18 18 22 / 0.10);
+  --lift-drag: 0 8px 16px rgb(18 18 22 / 0.10), 0 24px 56px rgb(23 107 78 / 0.20);
+
+  --ring: var(--pine);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@theme inline {
+  --color-canvas: var(--canvas);
+  --color-surface: var(--surface);
+  --color-sunken: var(--surface-sunken);
+  --color-inverse: var(--surface-inverse);
+
+  --color-ink: var(--ink);
+  --color-body: var(--body);
+  --color-muted: var(--muted);
+  --color-on-dark: var(--on-dark);
+  --color-on-dark-muted: var(--on-dark-muted);
+
+  --color-hairline: var(--hairline);
+  --color-hairline-strong: var(--hairline-strong);
+
+  --color-pine: var(--pine);
+  --color-pine-press: var(--pine-press);
+  --color-pine-wash: var(--pine-wash);
+  --color-copper: var(--copper);
+  --color-copper-wash: var(--copper-wash);
+  --color-copper-ink: var(--copper-ink);
+  --color-coral: var(--coral);
+  --color-coral-wash: var(--coral-wash);
+  --color-coral-ink: var(--coral-ink);
+  --color-slate: var(--slate);
+  --color-slate-wash: var(--slate-wash);
+  --color-slate-ink: var(--slate-ink);
+
+  --radius-panel: var(--r-panel);
+  --radius-card: var(--r-card);
+  --radius-control: var(--r-control);
+
+  --shadow-lift-1: var(--lift-1);
+  --shadow-lift-2: var(--lift-2);
+  --shadow-drag: var(--lift-drag);
+
+  --font-sans: var(--font-jakarta);
+  --font-display: var(--font-outfit);
+  --font-mono: var(--font-jetbrains-mono);
+}
+
+/* --- base ---------------------------------------------------------------- */
+
+* {
+  border-color: var(--hairline);
+}
+
+html {
+  background: var(--canvas);
+}
+
+body {
+  background: var(--canvas);
+  color: var(--body);
+  font-family: var(--font-jakarta), ui-sans-serif, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-outfit), ui-sans-serif, system-ui, sans-serif;
+  color: var(--ink);
+  letter-spacing: -0.028em;
+  text-wrap: balance;
+}
+
+/* Figures line up in columns and never jitter while a value updates. */
+.tabular,
+table td,
+table th {
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum" 1;
+}
+
+/* --- browser surfaces ----------------------------------------------------
+   The parts not drawn by hand still belong to the design: selection, caret,
+   scrollbars and focus rings ship with defaults that match no design system. */
+
+::selection {
+  background: color-mix(in srgb, var(--pine) 22%, transparent);
+  color: var(--ink);
+}
+
+:root {
+  caret-color: var(--pine);
+  accent-color: var(--pine);
+  scrollbar-color: var(--hairline-strong) transparent;
+  scrollbar-width: thin;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--hairline-strong);
+  border: 3px solid transparent;
+  background-clip: content-box;
+  border-radius: var(--r-pill);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--muted);
+  border: 3px solid transparent;
+  background-clip: content-box;
+}
+
+:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 2px;
+}
+
+a {
+  text-underline-offset: 0.18em;
+  text-decoration-thickness: from-font;
+}
+
+/* --- note blocks ---------------------------------------------------------
+   A note is authored and rendered as markup, so the handful of tags the
+   sanitiser allows need type of their own. Deliberately small: a note is a
+   caption on a dashboard, not an article. */
+
+.rich-text > :first-child {
+  margin-top: 0;
+}
+
+.rich-text > :last-child {
+  margin-bottom: 0;
+}
+
+.rich-text p {
+  margin: 0 0 0.5em;
+}
+
+.rich-text h2,
+.rich-text h3 {
+  font-family: var(--font-outfit), ui-sans-serif, system-ui, sans-serif;
+  color: var(--ink);
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+  margin: 0.9em 0 0.35em;
+}
+
+.rich-text h2 {
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+.rich-text h3 {
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.rich-text strong {
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.rich-text ul,
+.rich-text ol {
+  margin: 0 0 0.5em;
+  padding-left: 1.35em;
+}
+
+.rich-text ul {
+  list-style: disc;
+}
+
+.rich-text ol {
+  list-style: decimal;
+}
+
+.rich-text li {
+  margin: 0.15em 0;
+}
+
+.rich-text li::marker {
+  color: var(--muted);
+}
+
+.rich-text a {
+  color: var(--pine);
+  text-decoration: underline;
+}
+
+.rich-text code {
+  font-family: var(--font-jetbrains-mono), ui-monospace, monospace;
+  font-size: 0.9em;
+  background: var(--surface-sunken);
+  border-radius: 5px;
+  padding: 0.1em 0.35em;
+}
+
+.rich-text blockquote {
+  margin: 0 0 0.5em;
+  padding-left: 0.8em;
+  border-left: 2px solid var(--hairline-strong);
+  color: var(--muted);
+}
+
+/* The editor is empty when it holds nothing but the browser's trailing <br>,
+   which `:empty` does not catch. */
+.rich-text[data-empty]::before {
+  content: attr(data-placeholder);
+  color: var(--muted);
+  pointer-events: none;
+  display: block;
+}
+
+/* --- the landing page ------------------------------------------------------ */
+
+html {
+  scroll-padding-top: 24px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* As in the app: Plotly has no line-cap option for scatter traces. */
+.js-plotly-plot .scatterlayer .js-line,
+.js-plotly-plot .scatterlayer .lines path {
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* As in the app: reduced motion collapses every animation and transition. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
