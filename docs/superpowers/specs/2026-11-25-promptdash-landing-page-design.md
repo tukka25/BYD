@@ -31,7 +31,7 @@ The work happens on the branch `feat/landing-page`. `main` is what Vercel deploy
 | Where the page lives | `site/` on `main`, a separate Next.js app. No separate branch. |
 | Hosting | A Vercel project with root directory `site`. Commits that do not touch `site/` do not redeploy. |
 | Dashboards on the page | Live Plotly charts drawn from exported data, not screenshots |
-| The three datasets | Airbnb Edinburgh (Excel and CSV files), Spotify songs (Postgres), the Netflix catalogue (one CSV) |
+| The three datasets | Airbnb Edinburgh (Excel and CSV files), a demo shop (Postgres, synthetic), the Netflix catalogue (one CSV). The shop replaced Spotify songs on 2026-11-25, because Spotify's developer terms rule out showing its data. |
 | Credit | @tukka25 on GitHub |
 
 ## Architecture
@@ -92,7 +92,7 @@ Each section is a few technical sentences and one figure, table or diagram.
    - The 118-question set of `ab_planner_hint.json` is not on the page: it is weighted to the hardest chart types, and the frozen 300 now has a base row of its own.
 8. **How the app works.** One diagram: analyst → planner → plan checks against the real tables (up to 3 tries) → chartist writes Plotly code → sandbox runs it → drawing check (up to 2 fixes) → narrator writes the title. With the rule: no hardcoded charts; every chart is the model's own code or is reported failed.
 9. **Run it yourself.** Clone, `make setup`, `make serve-model`, `make up`. MLX needs Apple Silicon. Link to the README.
-10. **Footer.** Built by @tukka25. Data credits: Inside Airbnb (CC BY 4.0), Spotify songs through TidyTuesday, the Netflix catalogue by Shivam Bansal on Kaggle through TidyTuesday. Base model: Qwen3.5-9B. The repository's licence, once part 2 chooses it.
+10. **Footer.** Built by @tukka25. Data credits, read from the dashboard files: Inside Airbnb (CC BY 4.0), the demo shop (synthetic, made for this project), the Netflix catalogue by Shivam Bansal on Kaggle through TidyTuesday (CC0). Base model: Qwen3.5-9B. The repository's licence, once part 2 chooses it.
 
 ### Sources of the numbers
 
@@ -121,11 +121,11 @@ A script, `backend/scripts/make_showcase.py` (`make showcase`). It follows the p
 | Dashboard | Source | Into the app as |
 |---|---|---|
 | Airbnb | The latest Edinburgh snapshot from Inside Airbnb: `listings` and `reviews` (CC BY 4.0). Its `neighbourhoods` file lists only names, so it is left out. | Uploads: `listings.xlsx` (saved as Excel, which the page says) and `reviews.csv` |
-| Spotify | The `spotify` Postgres database, table `tracks`: 32,833 songs. Rebuilt from the TidyTuesday 2020-01-21 file if missing. | A database connection |
+| Shop | The `shop` Postgres database from `backend/scripts/make_relational_demo.py`: customers (200), orders (5,000), products (40), visits (2,000), seeded and synthetic. The app joins its tables by their declared keys. | A database connection |
 | Netflix | `netflix_titles.csv` from the TidyTuesday 2021-04-20 mirror of the Kaggle dataset. Kaggle itself needs a login. | An upload |
 
 - Uploaded files have no row limit in the app (the 500,000-row limit is for database tables). The page states each source's row count.
-- Each licence and download URL is confirmed on the source's own page before the first download. A dataset whose terms do not clearly allow showing charts of it publicly is swapped. Spotify is checked hardest: its songs come from the Spotify Web API, whose developer terms apply. The fallback for the database dashboard is the shop demo, which also shows the app joining tables.
+- Each licence and download URL is confirmed on the source's own page before the first download. A dataset whose terms do not clearly allow showing charts of it publicly is swapped. Spotify was checked hardest, and failed: its songs come from the Spotify Web API. Spotify's Developer Terms (version 10, effective 15 May 2025) count metadata as Spotify Content, say you "may not store, aggregate or create compilations or databases of Spotify Content", and keep Spotify's rights in derivative works. So the database dashboard uses the shop demo, which also shows the app joining tables (the owner's choice, 2026-11-25). The licences checked: Inside Airbnb states CC BY 4.0 on its get-the-data page; the Netflix dataset's Kaggle page states CC0.
 - Downloads go to a gitignored folder under `backend/uploads/`. No third-party data is committed.
 - The first download needs the owner's OK, with each file's name, source and size.
 
@@ -134,7 +134,7 @@ A script, `backend/scripts/make_showcase.py` (`make showcase`). It follows the p
 | Dashboard | Prompt |
 |---|---|
 | Airbnb | thinking of renting out my flat in edinburgh on airbnb. which areas charge the most, entire place vs private room, and when are guests busiest? |
-| Spotify | what makes a song popular? compare genres, energy vs danceability, and show me the top artists |
+| Shop | how is my shop doing? revenue by month, which product categories sell best, and which customer regions spend the most |
 | Netflix | how has netflix changed over the years? movies vs tv shows, which countries make the most content, and the most common ratings |
 
 ### Building
@@ -152,7 +152,7 @@ A script, `backend/scripts/make_showcase.py` (`make showcase`). It follows the p
 - If one falls short, the prompt changes the way a user would rephrase it, and the dashboard is built again. Charts are never edited.
 - The page shows the prompt that produced the dashboard, and `build.prompts_tried` records how many came before it.
 - A skipped chart is shown as such ("6 of 7 drawn"), never hidden.
-- Each dashboard file stays under 1.5 MB. If one is larger (a scatter over every Spotify song, say), the prompt changes; the figure does not.
+- Each dashboard file stays under 1.5 MB. If one is larger (a scatter over every row of a big table, say), the prompt changes; the figure does not.
 
 ## Rendering
 
