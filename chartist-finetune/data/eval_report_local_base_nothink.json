@@ -1,0 +1,343 @@
+{
+  "base-nothink": {
+    "label": "base-nothink",
+    "model": "models/qwen3.5-9b-4bit",
+    "adapter_path": "none",
+    "thinking": false,
+    "n": 300,
+    "render_rate": 0.6867,
+    "render_rate_quota_weighted": 0.6883,
+    "right_shape_rate": 0.4633,
+    "hallucinated_column_rate": 0.04,
+    "failure_kinds": {
+      "creates_dataframe": 3,
+      "hallucinated_column": 12,
+      "missing_json_print": 6,
+      "runtime_error": 67,
+      "syntax_error": 6
+    },
+    "by_bucket": {
+      "area": {
+        "n": 25,
+        "render_rate": 0.56,
+        "right_shape_rate": 0.0
+      },
+      "bar": {
+        "n": 33,
+        "render_rate": 0.697,
+        "right_shape_rate": 0.697
+      },
+      "box": {
+        "n": 23,
+        "render_rate": 0.826,
+        "right_shape_rate": 0.304
+      },
+      "gauge_or_indicator": {
+        "n": 17,
+        "render_rate": 0.529,
+        "right_shape_rate": 0.0
+      },
+      "grouped_or_stacked_bar": {
+        "n": 27,
+        "render_rate": 0.741,
+        "right_shape_rate": 0.704
+      },
+      "heatmap": {
+        "n": 23,
+        "render_rate": 0.783,
+        "right_shape_rate": 0.13
+      },
+      "histogram": {
+        "n": 24,
+        "render_rate": 0.875,
+        "right_shape_rate": 0.792
+      },
+      "line": {
+        "n": 33,
+        "render_rate": 0.485,
+        "right_shape_rate": 0.424
+      },
+      "pie_or_donut": {
+        "n": 25,
+        "render_rate": 0.84,
+        "right_shape_rate": 0.64
+      },
+      "scatter": {
+        "n": 27,
+        "render_rate": 0.778,
+        "right_shape_rate": 0.741
+      },
+      "time_series": {
+        "n": 22,
+        "render_rate": 0.727,
+        "right_shape_rate": 0.682
+      },
+      "treemap_funnel_waterfall": {
+        "n": 21,
+        "render_rate": 0.381,
+        "right_shape_rate": 0.143
+      }
+    },
+    "by_hard_case": {
+      "ambiguous_question": {
+        "n": 25,
+        "render_rate": 0.76
+      },
+      "date_parsing_and_resampling": {
+        "n": 19,
+        "render_rate": 0.474
+      },
+      "easy": {
+        "n": 186,
+        "render_rate": 0.758
+      },
+      "grouped_or_faceted": {
+        "n": 18,
+        "render_rate": 0.778
+      },
+      "missing_field": {
+        "n": 19,
+        "render_rate": 0.421
+      },
+      "multi_column_aggregation": {
+        "n": 33,
+        "render_rate": 0.455
+      }
+    },
+    "generation_minutes": 34.3,
+    "failures": [
+      {
+        "test_id": "t0000",
+        "bucket": "line",
+        "hard_case": null,
+        "failure_kind": "runtime_error",
+        "violations": [],
+        "error": "or.py\", line 231, in __get__\n    return self._accessor(obj)\n           ~~~~~~~~~~~~~~^^^^^\n  File \"/Users/atukka/Desktop/BYD/chartist-finetune/.venv/lib/python3.13/site-packages/pandas/core/indexes/accessors.py\", line 883, in __new__\n    raise AttributeError(\"Can only use .dt accessor with datetimel",
+        "code": "import pandas as pd\nimport plotly.express as px\n\n# Aggregate MRR by month (snap_dt) for the whole business\n# We group by the date part of snap_dt and sum the mrr_usd\nmonthly_mrr = df.groupby(df['snap_dt'].dt.to_period('M'))['mrr_usd'].sum().reset_index()\nmonthly_mrr.columns = ['Month', 'MRR']\n\n# Create the line chart\nfig = px.line(monthly_mrr, x='Month', y='MRR', title='Monthly MRR Trend for the Whole Business', labels={'MRR': 'Monthly Recurring Revenue (USD)'})\nfig.update_traces(line=dict(width"
+      },
+      {
+        "test_id": "t0007",
+        "bucket": "line",
+        "hard_case": "ambiguous_question",
+        "failure_kind": "runtime_error",
+        "violations": [],
+        "error": "^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/Users/atukka/Desktop/BYD/chartist-finetune/.venv/lib/python3.13/site-packages/plotly/express/_core.py\", line 2239, in infer_config\n    nw.to_py_scalar(df.get_column(args[\"size\"]).max()) / args[\"size_max\"] ** 2\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
+        "code": "import pandas as pd\nimport plotly.express as px\n\n# Calculate average freight charge and transit days for each carrier\ncarrier_stats = df.groupby('carr_nm').agg({\n    'frt_chg_usd': 'mean',\n    'transit_days': 'mean'\n}).reset_index()\n\n# Create a scatter plot to visualize carrier performance\n# X-axis: Average Freight Charge (Cost)\n# Y-axis: Average Transit Days (Speed)\n# Color: Carrier Name\n# Size: Number of shipments (to show volume impact)\nfig = px.scatter(\n    carrier_stats,\n    x='frt_chg_usd'"
+      },
+      {
+        "test_id": "t0008",
+        "bucket": "treemap_funnel_waterfall",
+        "hard_case": "grouped_or_faceted",
+        "failure_kind": "runtime_error",
+        "violations": [],
+        "error": "tiple bars.\n        width\n            Sets the plot's width (in px).\n        xaxis\n            :class:`plotly.graph_objects.layout.XAxis` instance or\n            dict with compatible properties\n        yaxis\n            :class:`plotly.graph_objects.layout.YAxis` instance or\n            dict with com",
+        "code": "import pandas as pd\nimport plotly.express as px\n\n# Group by property, market segment, and room type, summing the revenue\n# Then sort by total revenue in descending order to show biggest contributors on top\ngrouped_df = df.groupby(['propertyName', 'marketSegment', 'roomType'], as_index=False)['totalRoomRevenue'].sum()\ngrouped_df = grouped_df.sort_values(by='totalRoomRevenue', ascending=False)\n\n# Create a bar chart with the breakdown\n# x-axis: propertyName\n# y-axis: totalRoomRevenue\n# color: marke"
+      },
+      {
+        "test_id": "t0017",
+        "bucket": "grouped_or_stacked_bar",
+        "hard_case": null,
+        "failure_kind": "hallucinated_column",
+        "violations": [],
+        "error": "e \"/Users/atukka/Desktop/BYD/chartist-finetune/.venv/lib/python3.13/site-packages/plotly/express/_core.py\", line 1380, in process_args_into_dataframe\n    raise ValueError(err_msg)\nValueError: Value of 'y' is not the name of a column in 'data_frame'. Expected one of ['Inbound Receipt', 'Internal Tran",
+        "code": "import pandas as pd\nimport plotly.express as px\n\n# Pivot the data to create a side-by-side comparison\n# We group by Warehouse Location and Movement Type, summing the Units Moved\n# Then we pivot so each Movement Type becomes a column\npivoted_df = df.groupby(['Warehouse Location', 'Movement Type'])['Units Moved'].sum().reset_index()\npivoted_df = pivoted_df.pivot(index='Warehouse Location', columns='Movement Type', values='Units Moved')\n\n# Create the bar chart\nfig = px.bar(pivoted_df, x=pivoted_df."
+      },
+      {
+        "test_id": "t0029",
+        "bucket": "time_series",
+        "hard_case": null,
+        "failure_kind": "runtime_error",
+        "violations": [],
+        "error": " bars.\n        width\n            Sets the plot's width (in px).\n        xaxis\n            :class:`plotly.graph_objects.layout.XAxis` instance or\n            dict with compatible properties\n        yaxis\n            :class:`plotly.graph_objects.layout.YAxis` instance or\n            dict with compatib",
+        "code": "fig = px.line(df, x='mvmt_dt', y='unit_qty', color='whse_cd', title='Weekly trend of shipped units across all warehouses', labels={'unit_qty': 'Units', 'mvmt_dt': 'Date'})\nfig.update_traces(line=dict(width=2), marker=dict(size=8))\nfig.update_layout(xaxis_title='Date', yaxis_title='Units', hovertemplate='Date: %{x}<br>Warehouse: %{customdata}<br>Units: %{y}<extra></extra>')\nfig.update_layout(xaxis=dict(tickformat='%Y-%m-%d'))\nfig.data[0].customdata = df['whse_cd']\nprint(fig.to_json())"
+      },
+      {
+        "test_id": "t0031",
+        "bucket": "area",
+        "hard_case": null,
+        "failure_kind": "hallucinated_column",
+        "violations": [],
+        "error": "n3.13/site-packages/pandas/core/frame.py\", line 9311, in <genexpr>\n    keys = (self._get_label_or_level_values(x, axis=axis) for x in by)\n            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^\n  File \"/Users/atukka/Desktop/BYD/chartist-finetune/.venv/lib/python3.13/site-packages/pandas/core/gener",
+        "code": "import pandas as pd\nimport plotly.express as px\n\n# Ensure scorecard_date is datetime for proper time-based operations\ndf['scorecard_date'] = pd.to_datetime(df['scorecard_date'])\n\n# Calculate cumulative open purchase orders per region\n# We group by region and date, sum the open orders, then compute cumulative sum over time\ncumulative_df = df.groupby('supplier_region').apply(\n    lambda x: x.assign(cumulative_open_orders=x['open_purchase_orders'].cumsum())\n).reset_index(drop=True)\n\n# Sort by regio"
+      },
+      {
+        "test_id": "t0032",
+        "bucket": "box",
+        "hard_case": null,
+        "failure_kind": "hallucinated_column",
+        "violations": [],
+        "error": "  native_namespace,\n        ^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/Users/atukka/Desktop/BYD/chartist-finetune/.venv/lib/python3.13/site-packages/plotly/express/_core.py\", line 1380, in process_args_into_dataframe\n    raise ValueError(err_msg)\nValueError: Value of 'y' is not the name of a column in '",
+        "code": "import pandas as pd\nimport plotly.express as px\n\n# Aggregate data by department to get total enrollment and average grade points per department\n# We group by DEPT_CD to spread the grade points across departments\ndept_stats = df.groupby('DEPT_CD').agg({\n    'ENROLL_CNT': 'sum',\n    'GRADE_PTS_AVG': 'mean'\n}).reset_index()\n\n# Create a bar chart to visualize the spread of grade points across departments\nfig = px.bar(\n    dept_stats,\n    x='DEPT_CD',\n    y='GRADE_PPTS_AVG',\n    title='Spread of Grad"
+      },
+      {
+        "test_id": "t0034",
+        "bucket": "line",
+        "hard_case": null,
+        "failure_kind": "runtime_error",
+        "violations": [],
+        "error": " bars.\n        width\n            Sets the plot's width (in px).\n        xaxis\n            :class:`plotly.graph_objects.layout.XAxis` instance or\n            dict with compatible properties\n        yaxis\n            :class:`plotly.graph_objects.layout.YAxis` instance or\n            dict with compatib",
+        "code": "fig = px.line(df, x='transactionDate', y='transactionCount', title='Daily Transaction Count Trend for Mobile App', labels={'transactionDate': 'Date', 'transactionCount': 'Transaction Count'})\nfig.update_traces(line=dict(width=2), marker=dict(size=8))\nfig.update_layout(xaxis_title='Date', yaxis_title='Transaction Count', hovertemplate='Date: %{x}<br>Transaction Count: %{y}<extra></extra>')\nprint(fig.to_json())"
+      },
+      {
+        "test_id": "t0037",
+        "bucket": "scatter",
+        "hard_case": null,
+        "failure_kind": "hallucinated_column",
+        "violations": [],
+        "error": "   ^\n  File \"/Users/atukka/Desktop/BYD/chartist-finetune/.venv/lib/python3.13/site-packages/plotly/express/_core.py\", line 1380, in process_args_into_dataframe\n    raise ValueError(err_msg)\nValueError: Value of 'y' is not the name of a column in 'data_frame'. Expected one of ['trip_dt', 'veh_type', ",
+        "code": "import plotly.express as px\n\nfig = px.scatter(df, x='trip_dist_km', y='fuel_l', color='veh_type', size='fuel_l', hover_name='trip_dt', title='Trip Distance vs Fuel Used by Vehicle Type', labels={'trip_dist_km': 'Trip Distance (km)', 'fuel_l': 'Fuel Used (L)'})\n\nprint(fig.to_json())"
+      },
+      {
+        "test_id": "t0042",
+        "bucket": "line",
+        "hard_case": null,
+        "failure_kind": "runtime_error",
+        "violations": [],
+        "error": "or.py\", line 231, in __get__\n    return self._accessor(obj)\n           ~~~~~~~~~~~~~~^^^^^\n  File \"/Users/atukka/Desktop/BYD/chartist-finetune/.venv/lib/python3.13/site-packages/pandas/core/indexes/accessors.py\", line 883, in __new__\n    raise AttributeError(\"Can only use .dt accessor with datetimel",
+        "code": "import pandas as pd\nimport plotly.express as px\n\n# Group by month and calculate the average speed\nmonthly_avg_speed = df.groupby(df['trip_dt'].dt.to_period('M'))['avg_spd_kph'].mean().reset_index()\nmonthly_avg_speed.columns = ['Month', 'Average Speed']\n\n# Create the line chart\nfig = px.line(monthly_avg_speed, x='Month', y='Average Speed', title='Monthly Trend in Average Speed', labels={'Average Speed': 'Average Speed (kph)'})\n\nprint(fig.to_json())"
+      },
+      {
+        "test_id": "t0044",
+        "bucket": "grouped_or_stacked_bar",
+        "hard_case": null,
+        "failure_kind": "runtime_error",
+        "violations": [],
+        "error": "ve(ns.Series(data, name=name, **kwds), context=context)\n                           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/atukka/Desktop/BYD/chartist-finetune/.venv/lib/python3.13/site-packages/pandas/core/series.py\", line 485, in __init__\n    raise ValueError(\n    ...<2 lines>...\n    )\nV",
+        "code": "import pandas as pd\nimport plotly.express as px\n\n# Pivot the data to have departments as columns and employment types as the index\n# This creates a cross-tabulation where rows are employment types and columns are departments\npivoted_df = df.pivot_table(index='employmentType', columns='department', values='headcountEnd', aggfunc='sum').fillna(0)\n\n# Create a heatmap to visualize the counts\nfig = px.density_heatmap(\n    pivoted_df,\n    x=pivoted_df.columns,\n    y=pivoted_df.index,\n    z=pivoted_df,"
+      },
+      {
+        "test_id": "t0047",
+        "bucket": "time_series",
+        "hard_case": "multi_column_aggregation",
+        "failure_kind": "runtime_error",
+        "violations": [],
+        "error": "rn _json.JSONEncoder.default(self, obj)\n           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^\n  File \"/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/json/encoder.py\", line 180, in default\n    raise TypeError(f'Object of type {o.__class__.__name__} '\n      ",
+        "code": "import pandas as pd\nimport plotly.express as px\n\n# Ensure Trip Date is in datetime format for resampling\ndf['Trip Date'] = pd.to_datetime(df['Trip Date'])\n\n# Create a new column for the month\ndf['Month'] = df['Trip Date'].dt.to_period('M')\n\n# Aggregate data by month\n# Summing 'Distance Driven' and 'Stops Completed' as they are cumulative metrics over time\nmonthly_stats = df.groupby('Month').agg({\n    'Distance Driven': 'sum',\n    'Stops Completed': 'sum'\n}).reset_index()\n\n# Create the line chart"
+      },
+      {
+        "test_id": "t0050",
+        "bucket": "line",
+        "hard_case": null,
+        "failure_kind": "runtime_error",
+        "violations": [],
+        "error": " bars.\n        width\n            Sets the plot's width (in px).\n        xaxis\n            :class:`plotly.graph_objects.layout.XAxis` instance or\n            dict with compatible properties\n        yaxis\n            :class:`plotly.graph_objects.layout.YAxis` instance or\n            dict with compatib",
+        "code": "fig = px.line(df, x='incident_report_date', y='incident_injury_count', title='Monthly Incident Injury Count Trend', labels={'incident_injury_count': 'Injury Count'})\nfig.update_traces(line=dict(width=2), marker=dict(size=8))\nfig.update_layout(xaxis_title='Date', yaxis_title='Injury Count', hovertemplate='Date: %{x}<br>Injury Count: %{y}<extra></extra>')\nprint(fig.to_json())"
+      },
+      {
+        "test_id": "t0051",
+        "bucket": "treemap_funnel_waterfall",
+        "hard_case": "date_parsing_and_resampling",
+        "failure_kind": "runtime_error",
+        "violations": [],
+        "error": "module>\n    sys.exit(main())\n             ~~~~^^\n  File \"/Users/atukka/Desktop/BYD/chartist-finetune/_candidate_runner.py\", line 33, in main\n    exec(code, {\"df\": df, \"pandas\": pd, \"pd\": pd, \"px\": px, \"go\": go, \"json\": json})\n    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "code": "import pandas as pd\nimport plotly.express as px\n\n# Parse the harvest date to extract the quarter\ndf['yield_harvest_date'] = pd.to_datetime(df['yield_harvest_date'])\ndf['quarter'] = df['yield_harvest_date'].dt.to_period('Q').astype(str)\n\n# Pivot the data to have quarters as columns and the values as the row index\n# We need a cross-tabulation of Quarter vs Crop Type and Quarter vs Irrigation Method\npivot_crop = df.pivot_table(index='quarter', columns='yield_crop_type', values='yield_harvested_tonn"
+      },
+      {
+        "test_id": "t0054",
+        "bucket": "bar",
+        "hard_case": null,
+        "failure_kind": "hallucinated_column",
+        "violations": [],
+        "error": "hartist-finetune/.venv/lib/python3.13/site-packages/plotly/express/_core.py\", line 1380, in process_args_into_dataframe\n    raise ValueError(err_msg)\nValueError: Value of 'y' is not the name of a column in 'data_frame'. Expected one of ['INCIDENT_DT', 'INCIDENT_TYPE_CD', 'ROAD_CLASS_CD', 'WEATHER_CO",
+        "code": "import pandas as pd\nimport plotly.express as px\n\nfig = px.bar(df, x='ROAD_CLASS_CD', y='INCIDENT_CNT', title='Incidents by Road Class', labels={'INCIDENT_CNT': 'Total Incidents'})\nprint(fig.to_json())"
+      },
+      {
+        "test_id": "t0057",
+        "bucket": "gauge_or_indicator",
+        "hard_case": null,
+        "failure_kind": null,
+        "violations": [
+          "creates_dataframe"
+        ],
+        "error": "",
+        "code": "import pandas as pd\nimport plotly.express as px\n\n# Calculate the overall attrition rate by aggregating the 'Terminations' and 'Headcount' columns\n# We sum the terminations and headcount across all rows to get the overall figures\noverall_terminations = df['Terminations'].sum()\noverall_headcount = df['Headcount'].sum()\n\n# Calculate the actual overall attrition rate\nactual_overall_rate = (overall_terminations / overall_headcount) * 100\n\n# Define the ceiling\nceiling = 45.0\n\n# Create a simple bar cha"
+      },
+      {
+        "test_id": "t0060",
+        "bucket": "line",
+        "hard_case": "date_parsing_and_resampling",
+        "failure_kind": "runtime_error",
+        "violations": [],
+        "error": "rn _json.JSONEncoder.default(self, obj)\n           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^\n  File \"/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/json/encoder.py\", line 180, in default\n    raise TypeError(f'Object of type {o.__class__.__name__} '\n      ",
+        "code": "import pandas as pd\nimport plotly.express as px\n\n# Ensure the date column is in datetime format for proper time-based operations\ndf['SCORECARD_DT'] = pd.to_datetime(df['SCORECARD_DT'])\n\n# Filter for the past two years relative to the latest date in the dataset\nlatest_date = df['SCORECARD_DT'].max()\ncutoff_date = latest_date - pd.Timedelta(days=730)\ndf_filtered = df[df['SCORECARD_DT'] >= cutoff_date]\n\n# Group by month and calculate the average ON_TIME_DELIV_PCT\n# We extract the year and month fro"
+      },
+      {
+        "test_id": "t0061",
+        "bucket": "treemap_funnel_waterfall",
+        "hard_case": "date_parsing_and_resampling",
+        "failure_kind": null,
+        "violations": [
+          "syntax_error"
+        ],
+        "error": "",
+        "code": "import pandas as pd\nimport plotly.express as px\n\n# Group by vehicle type, fare type, and quarter (derived from service_date)\n# Calculate total fare revenue for each group\ngrouped_df = df.groupby(['ridership_vehicle_type', 'ridership_fare_type', 'ridership_service_date']).agg(\n    total_revenue=('ridership_fare_revenue', 'sum')\n).reset_index()\n\n# Extract quarter from the date string\ngrouped_df['quarter'] = grouped_df['ridership_service_date'].str.extract(r'(\\d{4})-(\\d{2})').apply(\n    lambda x: f"
+      },
+      {
+        "test_id": "t0062",
+        "bucket": "treemap_funnel_waterfall",
+        "hard_case": null,
+        "failure_kind": "hallucinated_column",
+        "violations": [],
+        "error": "Search'), ('monthlyRecurringRevenue', 'PaidSocial'), ('monthlyRecurringRevenue', 'PartnerReseller'), ('monthlyRecurringRevenue', 'Referral'), ('netRetentionRate', 'ContentMarketing'), ('netRetentionRate', 'DirectSales'), ('netRetentionRate', 'OrganicSearch'), ('netRetentionRate', 'PaidSocial'), ('ne",
+        "code": "import pandas as pd\nimport plotly.express as px\n\n# Pivot the data to have customerSegment and subscriptionPlan as indices\n# This stacks the rows so each unique combination of segment and plan is a single row\npivoted_df = df.pivot_table(\n    index=['customerSegment', 'subscriptionPlan'],\n    columns='acquisitionChannel',\n    values=['activeCustomers', 'churnedCustomers', 'monthlyRecurringRevenue', 'netRetentionRate'],\n    aggfunc='sum'\n)\n\n# Reset index to make segment and plan columns for plottin"
+      },
+      {
+        "test_id": "t0064",
+        "bucket": "gauge_or_indicator",
+        "hard_case": null,
+        "failure_kind": "runtime_error",
+        "violations": [],
+        "error": "s.exit(main())\n             ~~~~^^\n  File \"/Users/atukka/Desktop/BYD/chartist-finetune/_candidate_runner.py\", line 33, in main\n    exec(code, {\"df\": df, \"pandas\": pd, \"pd\": pd, \"px\": px, \"go\": go, \"json\": json})\n    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  F",
+        "code": "import pandas as pd\nimport plotly.express as px\n\n# Calculate the average totalRevenue per order\navg_spend = df['totalRevenue'].mean()\n\n# Create a simple text figure to display the result\nfig = px_figure = px.imshow(\n    data=[[avg_spend]],\n    labels={\"x\": \"Average Spend\", \"y\": \"Value\"},\n    color_continuous_scale=\"Blues\",\n    title=f\"Average Spend per Order: {avg_spend:.2f}\",\n    width=400,\n    height=200\n)\n\nprint(fig.to_json())"
+      },
+      {
+        "test_id": "t0066",
+        "bucket": "area",
+        "hard_case": null,
+        "failure_kind": null,
+        "violations": [
+          "missing_json_print",
+          "extra_print"
+        ],
+        "error": "",
+        "code": "import pandas as pd\nimport plotly.express as px\n\n# Aggregate credit hours by semester to get the total for each term\nsemester_totals = df.groupby('Semester')['Credit Hours'].sum().reset_index()\n\n# Sort by semester to ensure chronological order for the cumulative plot\nsemester_totals = semester_totals.sort_values('Semester')\n\n# Create the cumulative line chart\nfig = px.line(\n    semester_totals,\n    x='Semester',\n    y='Credit Hours',\n    title='Cumulative Credit Hours Across Semesters',\n    labe"
+      },
+      {
+        "test_id": "t0067",
+        "bucket": "line",
+        "hard_case": null,
+        "failure_kind": "runtime_error",
+        "violations": [],
+        "error": "    how=self.how,\n        ^^^^^^^^^^^^^\n    ...<4 lines>...\n        **kwargs,\n        ^^^^^^^^^\n    )\n    ^\n  File \"/Users/atukka/Desktop/BYD/chartist-finetune/.venv/lib/python3.13/site-packages/pandas/core/arrays/base.py\", line 3080, in _groupby_op\n    raise TypeError(\n        f\"dtype '{self.dtype}",
+        "code": "import pandas as pd\nimport plotly.express as px\n\n# Ensure 'Trip Date' is treated as datetime for resampling\ndf['Trip Date'] = pd.to_datetime(df['Trip Date'])\n\n# Calculate the weekly average speed\n# We group by the week (using 'Trip Date') and take the mean of 'Average Speed'\nweekly_avg_speed = df.groupby(df['Trip Date'].dt.to_period('W')).mean()['Average Speed'].reset_index()\nweekly_avg_speed.rename(columns={'Trip Date': 'Week'}, inplace=True)\n\n# Create the line chart\nfig = px.line(weekly_avg_sp"
+      },
+      {
+        "test_id": "t0068",
+        "bucket": "bar",
+        "hard_case": "grouped_or_faceted",
+        "failure_kind": "runtime_error",
+        "violations": [],
+        "error": ".py\", line 1342, in __getitem__\n    return self._getitem_axis(maybe_callable, axis=axis)\n           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/atukka/Desktop/BYD/chartist-finetune/.venv/lib/python3.13/site-packages/pandas/core/indexing.py\", line 1921, in _getitem_axis\n    raise Val",
+        "code": "import pandas as pd\nimport plotly.express as px\n\n# Group by region and queue to get the total calls offered for each combination\ngrouped = df.groupby(['regionCode', 'queueName'])['callsOffered'].sum().reset_index()\ngrouped.columns = ['regionCode', 'queueName', 'totalCallsOffered']\n\n# Sort by region and total calls offered to ensure the highest is at the top for each region\ngrouped = grouped.sort_values(['regionCode', 'totalCallsOffered'], ascending=[True, False])\n\n# Select only the top row for e"
+      },
+      {
+        "test_id": "t0069",
+        "bucket": "area",
+        "hard_case": "missing_field",
+        "failure_kind": "runtime_error",
+        "violations": [],
+        "error": "rn _json.JSONEncoder.default(self, obj)\n           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^\n  File \"/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/json/encoder.py\", line 180, in default\n    raise TypeError(f'Object of type {o.__class__.__name__} '\n      ",
+        "code": "import pandas as pd\nimport plotly.express as px\n\n# Ensure the date column is in datetime format for proper time-based analysis\ndf['shift_date'] = pd.to_datetime(df['shift_date'])\n\n# Filter for the current year (2025) based on the first row example\ncurrent_year = 2025\ndf_filtered = df[df['shift_date'].dt.year == current_year]\n\n# Calculate the monthly average satisfaction score\nmonthly_avg_satisfaction = df_filtered.groupby(df_filtered['shift_date'].dt.to_period('M'))['service_level_percent'].mean"
+      },
+      {
+        "test_id": "t0074",
+        "bucket": "bar",
+        "hard_case": "ambiguous_question",
+        "failure_kind": "runtime_error",
+        "violations": [],
+        "error": " bars.\n        width\n            Sets the plot's width (in px).\n        xaxis\n            :class:`plotly.graph_objects.layout.XAxis` instance or\n            dict with compatible properties\n        yaxis\n            :class:`plotly.graph_objects.layout.YAxis` instance or\n            dict with compatib",
+        "code": "import pandas as pd\nimport plotly.express as px\n\n# Calculate churn rate as a percentage for each customer segment\n# Churn Rate = (Churned Customers / Active Customers) * 100\ndf['churnRate'] = (df['churnedCustomers'] / df['activeCustomers']) * 100\n\n# Create a bar chart to visualize the average churn rate per customer segment\n# We use mean to get the overall performance of each segment\nfig = px.bar(\n    df,\n    x='customerSegment',\n    y='churnRate',\n    title='Customer Segment Churn Rate',\n    la"
+      }
+    ]
+  }
+}
