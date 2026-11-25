@@ -1,7 +1,7 @@
 import type { ReactNode } from "react";
 import { DASHBOARDS } from "@/components/dashboards";
 import { GitHubMark } from "@/components/icons";
-import { CAPTION, MEASURE } from "@/components/section";
+import { MEASURE } from "@/components/section";
 import { LinkedInMark, RepoMark } from "@/components/social-icons";
 import { capitalise, licences, type Dashboard } from "@/lib/dashboard";
 import { AUTHOR, LINKEDIN_URL, REPO_URL } from "@/lib/site";
@@ -66,7 +66,7 @@ export function Footer() {
     <footer className="mt-10 border-t">
       <div className="mx-auto grid max-w-6xl gap-8 px-4 py-10 sm:px-8 md:grid-cols-[1fr_auto] md:items-start md:gap-16">
         <div className="space-y-4">
-          <p className={`${CAPTION} ${MEASURE} text-muted`}>Built by {AUTHOR.handle} on Qwen3.5-9B.</p>
+          <p className={`text-[14px] leading-[1.6] text-muted ${MEASURE}`}>Built by {AUTHOR.handle} on Qwen3.5-9B.</p>
           <ul className="flex flex-wrap gap-3">
             <li>
               <External href={AUTHOR.url} className={pill}>
@@ -91,7 +91,7 @@ export function Footer() {
           </ul>
         </div>
         <div className="space-y-3">
-          <p className={`${CAPTION} text-muted`}>Data</p>
+          <p className="text-[14px] leading-[1.6] text-muted">Data</p>
           <ul className="flex flex-col gap-2 text-[14px] sm:flex-row sm:flex-wrap md:flex-col">
             {DASHBOARDS.map((dashboard) => (
               <Credit key={dashboard.name} dashboard={dashboard} />

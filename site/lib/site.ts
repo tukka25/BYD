@@ -3,7 +3,7 @@
 export const REPO_URL = "https://github.com/tukka25/BYD";
 /* The owner's LinkedIn profile. Empty until it is known: the footer draws the
    link only when this is set, and never a guessed address. */
-export const LINKEDIN_URL = "";
+export const LINKEDIN_URL = "https://www.linkedin.com/in/abdalrahman-tukka/";
 export const AUTHOR = { handle: "@tukka25", url: "https://github.com/tukka25" };
 
 export const fileUrl = (path: string): string => `${REPO_URL}/blob/main/${path}`;
