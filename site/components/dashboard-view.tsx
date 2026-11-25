@@ -97,7 +97,7 @@ function Provenance({ dashboard }: { dashboard: Dashboard }) {
     </a>
   );
   return (
-    <div className="mt-5 space-y-2 px-1 text-[14px] leading-[1.6] text-body">
+    <div className="mt-5 space-y-2 px-1 text-[14px] leading-[1.6] text-body [&>*]:max-w-[42ch]">
       {shared || oneLicence ? (
         <p>
           <KeepDates text={shared} />

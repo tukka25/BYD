@@ -9,8 +9,9 @@ export function Problem() {
           Process:&rdquo; essay where the app expected bare Python, so almost nothing it wrote would run.
         </Lede>
         <Lede>
-          With thinking switched off, the base model wrote code, and most of it ran. The scripts that failed broke at
-          run time or asked for columns the table did not have, and many that ran still drew the wrong kind of chart.
+          With thinking switched off, the base model wrote code, and most of it ran. Most of the scripts that failed
+          broke at run time or asked for columns the table did not have, and many that ran still drew the wrong kind of
+          chart.
         </Lede>
         <Lede>
           The first training data came from Plotly&apos;s own documentation, a Scrapy crawl of plotly.com/python, and

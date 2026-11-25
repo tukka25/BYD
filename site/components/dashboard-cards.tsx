@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { sourceKinds, type Dashboard } from "@/lib/dashboard";
+import { MEASURE } from "@/components/section";
 import { DASHBOARD_TITLES } from "@/lib/site";
 
 /* The three dashboards as cards: the title, what the data is, the prompt, and
@@ -26,7 +27,7 @@ export function DashboardCards({ dashboards }: { dashboards: Dashboard[] }) {
                   {sourceKinds(dashboard)}
                 </span>
               </p>
-              <p className="mt-4 flex-1 text-[16px] leading-relaxed text-ink">&ldquo;{dashboard.prompt}&rdquo;</p>
+              <p className={`mt-4 flex-1 text-[16px] leading-relaxed text-ink ${MEASURE}`}>&ldquo;{dashboard.prompt}&rdquo;</p>
               <span className="mt-5 text-[15px] font-semibold text-pine group-hover:underline group-hover:underline-offset-2">
                 Open the dashboard <span aria-hidden="true">→</span>
               </span>

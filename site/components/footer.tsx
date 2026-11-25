@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { DASHBOARDS } from "@/components/dashboards";
-import { KeepDates } from "@/components/section";
+import { KeepDates, MEASURE } from "@/components/section";
 import { capitalise, creditLine, licences } from "@/lib/dashboard";
 import { AUTHOR, REPO_URL } from "@/lib/site";
 
@@ -12,7 +12,7 @@ export function Footer() {
   return (
     <footer className="mt-10 border-t">
       <div className="mx-auto max-w-6xl space-y-4 px-4 py-10 text-[14px] leading-[1.6] text-body sm:px-8">
-        <p>
+        <p className={MEASURE}>
           Built by{" "}
           <a href={AUTHOR.url} className={link}>
             {AUTHOR.handle}
@@ -23,7 +23,7 @@ export function Footer() {
           </a>
           .
         </p>
-        <ul className="max-w-[48rem] space-y-1.5">
+        <ul className={`space-y-1.5 ${MEASURE}`}>
           {DASHBOARDS.map((dashboard) => (
             <li key={dashboard.name}>
               <Link href={`/dashboards/${dashboard.name}/`} className={`font-semibold text-ink ${link}`}>

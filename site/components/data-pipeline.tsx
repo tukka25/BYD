@@ -83,8 +83,8 @@ export function DataPipeline() {
     <Section id="data" title="Training data, written by Claude and checked by the app">
       <Lede>
         Every training example is a job the app gives the model, paired with an answer that passed the app&apos;s
-        own checks. Claude wrote most of them, in steps, so the adapter is distilled from that work: Claude
-        Haiku&apos;s table schemas and questions, Claude Sonnet&apos;s code, and Claude Opus&apos;s dashboard plans.
+        own checks. Claude wrote most of them: Claude Haiku the table schemas and questions, Claude Sonnet the code,
+        and Claude Opus the dashboard plans. The adapter is distilled from that work.
       </Lede>
 
       <dl className="mt-10 space-y-7">
@@ -128,7 +128,7 @@ export function DataPipeline() {
    the header row is hidden, and stays for screen readers above that. */
 function Cell({ label, children }: { label: string; children: ReactNode }) {
   return (
-    <dd className="text-[16px] leading-relaxed text-ink">
+    <dd className={`text-[16px] leading-relaxed text-ink ${MEASURE}`}>
       <span className="font-semibold text-body lg:sr-only">{label}: </span>
       {children}
     </dd>

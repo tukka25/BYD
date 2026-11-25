@@ -66,7 +66,7 @@ const SHORT: ReactNode[] = [
   "The model reads a profile built from a sample of rows.",
   "Tool results are cut to a fixed size and marked where they were cut. The analyst and the planner see only a short note of what the tools found.",
   "One reply plans every chart on the dashboard.",
-  "Thinking is off for the analyst and the planner. With thinking on, Qwen3.5 opens every reply with an essay.",
+  "Thinking is off for the analyst and the planner. With thinking on, the base model opens every reply with an essay.",
   "A fix sends back the model's own code and what went wrong, in plain words.",
   <>
     In the checking turn, the drafts are numbered, and <Code>preview_chart</Code> takes their numbers, so the model
@@ -82,27 +82,29 @@ export function HowItWorks() {
         passes: first the plan for every chart, then each chart drawn from its plan.
       </Lede>
 
-      <div className="mt-10 grid gap-4 lg:grid-cols-[1.15fr_1fr] lg:gap-6">
+      <div className="mt-10 grid max-w-[44rem] gap-4 lg:max-w-none lg:grid-cols-[1.15fr_1fr] lg:gap-6">
         <Phase title="Planning" steps={PLANNING} start={1} />
         <div className="flex flex-col gap-4 lg:gap-6">
           <Phase title="Drawing each chart" steps={DRAWING} start={PLANNING.length + 1} />
           <p className={`rounded-[var(--r-card)] bg-pine-wash px-6 py-5 ${BODY}`}>
-            <strong className="font-semibold">No hardcoded charts.</strong> Every chart on a dashboard is the
-            model&apos;s own code. A chart gets two fixes at most; if it still fails, the app reports it as failed,
-            with the reason, and no template stands in for it.
+            <span className={`block ${MEASURE}`}>
+              <strong className="font-semibold">No hardcoded charts.</strong> Every chart on a dashboard is the
+              model&apos;s own code. A chart gets two fixes at most; if it still fails, the app reports it as failed,
+              with the reason, and no template stands in for it.
+            </span>
           </p>
         </div>
       </div>
 
-      <div className="mt-14 grid gap-12 lg:grid-cols-2 lg:gap-10">
+      <div className="mt-14 grid max-w-[44rem] gap-12 lg:max-w-none lg:grid-cols-2 lg:gap-10">
         <div>
           <h3 className="font-display text-[22px] font-semibold leading-tight sm:text-[24px]">The tools</h3>
-          <p className={`mt-3 ${BODY}`}>
-            By default an explore step holds the first four tools. The other mode,{" "}
-            <Code>PLANNER_TOOLS=planner</Code>, lets the planner draft with no tools, because lora-v2&apos;s planner
-            calls none under the prompt it was trained on. A separate checking turn then holds five tools and sends back
-            only the plans that need a change. On the same frozen dashboard requests the two modes tied on quality, and
-            the default stayed.
+          <p className={`mt-3 ${MEASURE} ${BODY}`}>
+            By default an explore step holds the first four tools. The other mode, <Code>PLANNER_TOOLS=planner</Code>,
+            drops the explore step. Its planner drafts with no tools, because lora-v2&apos;s planner calls none under
+            the prompt it was trained on, and a separate checking turn then holds five tools and sends back only the
+            plans that need a change. Compared on part of the frozen dashboard requests, the two modes tied on quality,
+            and the default stayed.
           </p>
           <dl className="mt-5 overflow-hidden rounded-[var(--r-card)] bg-surface shadow-[var(--lift-1)]">
             {TOOLS.map((tool) => (
@@ -111,7 +113,7 @@ export function HowItWorks() {
                   <code className="font-mono text-[15px] font-medium text-ink">{tool.name}</code>
                   <span className="text-[14px] text-body">{tool.where}</span>
                 </dt>
-                <dd className="mt-1 text-[16px] leading-relaxed text-ink">{tool.answers}</dd>
+                <dd className={`mt-1 text-[16px] leading-relaxed text-ink ${MEASURE}`}>{tool.answers}</dd>
               </div>
             ))}
           </dl>
@@ -148,7 +150,7 @@ function Phase({ title, steps, start }: { title: string; steps: Step[]; start: n
             </span>
             <div>
               <p className="font-display text-[18px] font-semibold leading-snug text-ink">{step.name}</p>
-              <p className="mt-1 text-[16px] leading-relaxed text-ink sm:text-[17px]">{step.text}</p>
+              <p className={`mt-1 ${MEASURE} ${BODY}`}>{step.text}</p>
             </div>
           </li>
         ))}

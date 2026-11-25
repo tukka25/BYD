@@ -1,7 +1,7 @@
 import { DotHero } from "@/components/dot-hero";
 import { GitHubMark } from "@/components/icons";
 import { stat } from "@/components/numbers";
-import { CAPTION, Name } from "@/components/section";
+import { CAPTION, MEASURE, Name } from "@/components/section";
 import { REPO_URL } from "@/lib/site";
 
 export function Hero() {
@@ -32,7 +32,7 @@ export function Hero() {
           <Figure label="chart scripts that run" value={`${stat("base_render_mac", 0)} → ${stat("v2_render_mac", 0)}`} />
           <Figure label="charts of the right kind" value={`${stat("base_shape_mac", 0)} → ${stat("v2_shape_mac", 0)}`} />
         </dl>
-        <p className={`mt-3 max-w-xl ${CAPTION}`}>
+        <p className={`mt-3 ${MEASURE} ${CAPTION}`}>
           Base <Name>Qwen3.5-9B</Name> with thinking off, then with <Name>lora-v2</Name>, on the same frozen test
           questions, <Name>4-bit</Name> on a Mac.{" "}
           <a href="#results" className="font-semibold text-pine underline underline-offset-2 hover:text-[var(--pine-press)]">

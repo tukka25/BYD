@@ -1,10 +1,15 @@
 import type { ReactNode } from "react";
 
 /* The page's type scale for reading at length. Body text is 17px, 18px from
-   `sm`, in --ink at a 1.7 line height, held to about 70 characters a line;
-   captions are 14px in --body, and no story text is smaller. */
+   `sm`, in --ink at a 1.7 line height; captions are 14px in --body, and no
+   story text is smaller.
+   MEASURE holds a line near 70 characters at any size. In Plus Jakarta Sans
+   1ch is the wide "0", about 1.58 average characters (measured in Chrome:
+   13.18px against 8.35px at 18px), so 42ch fits about 66 on average and the
+   longest line about 70. Put it on the element that holds the text, so ch
+   follows that element's own font size. */
 export const BODY = "text-[17px] leading-[1.7] text-ink text-pretty sm:text-[18px]";
-export const MEASURE = "max-w-[36.5rem]";
+export const MEASURE = "max-w-[42ch]";
 export const CAPTION = "text-[14px] leading-[1.6] text-body";
 
 /* One part of the story: a title, then its text and one figure, table or list.

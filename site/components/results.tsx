@@ -1,21 +1,31 @@
+import type { ReactNode } from "react";
 import { Num } from "@/components/num";
-import { stat } from "@/components/numbers";
 import { CAPTION, MEASURE, Section } from "@/components/section";
 
 type Row = { measure: string; ids: [string | null, string, string] };
 
 /* The page's one table of figures: the same tests before and after each
    adapter. Every value comes from data/stats.json and links to its source. */
-const GROUPS: Array<{ test: string; rows: Row[] }> = [
+const GROUPS: Array<{ key: string; test: ReactNode; rows: Row[] }> = [
   {
-    test: `${stat("test_questions")} frozen chart questions, 4-bit on a Mac`,
+    key: "chart",
+    test: (
+      <>
+        <Num id="test_questions" /> frozen chart questions, 4-bit on a Mac
+      </>
+    ),
     rows: [
       { measure: "Chart scripts that run", ids: ["base_render_mac", "v1_render_mac", "v2_render_mac"] },
       { measure: "Charts of the right kind", ids: ["base_shape_mac", "v1_shape_mac", "v2_shape_mac"] },
     ],
   },
   {
-    test: `${stat("plan_requests")} frozen dashboard requests`,
+    key: "dashboard",
+    test: (
+      <>
+        <Num id="plan_requests" /> frozen dashboard requests
+      </>
+    ),
     rows: [
       { measure: "Plans that needed a retry", ids: [null, "plan_retry_v1", "plan_retry_v2"] },
       { measure: "Drawn charts that render", ids: [null, "plan_render_v1", "plan_render_v2"] },
@@ -48,7 +58,7 @@ export function Results() {
             </tr>
           </thead>
           {GROUPS.map((group) => (
-            <tbody key={group.test} className="border-b last:border-0">
+            <tbody key={group.key} className="border-b last:border-0">
               <tr>
                 <th
                   scope="rowgroup"
