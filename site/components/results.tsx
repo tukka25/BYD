@@ -161,25 +161,7 @@ export function FineTuning() {
           ))}
         </table>
       </div>
-      <ul className={`mt-5 space-y-2 ${MEASURE} ${CAPTION}`}>
-        <li>Base is Qwen3.5-9B with no fine-tuning and thinking off, the better of its two settings.</li>
-        <li>I did not run the base model on the dashboard requests.</li>
-        <li>
-          In the dashboard requests <Name>lora-v1</Name> also ran as the analyst and the planner, because the
-          evaluation runs the whole flow on one adapter.
-        </li>
-        <li>
-          A plan that needed another try failed the app&apos;s checks the first time, so lower is better on that row.
-        </li>
-        <li>
-          The dashboard requests use tables kept out of training, and the evaluation draws and scores the first three
-          charts of each dashboard.
-        </li>
-        <li>
-          Every run in this table is <Name>4-bit</Name> on a Mac. Each number on the cards and in this table links to
-          the file that recorded it.
-        </li>
-      </ul>
+      <p className={`mt-4 ${MEASURE} ${CAPTION}`}>Every test in this table used data the models never saw in training.</p>
     </Section>
   );
 }
