@@ -199,3 +199,15 @@ The owner creates the project, since it needs their account. `site/README.md` gi
 
 - The first download of the source files.
 - Pushing the branch, creating the Vercel project, and the first deploy.
+
+## Revision 2 (2026-11-25, the owner, after the first build)
+
+Replaces the parts above where they disagree.
+
+- **No journey section.**
+- **Dashboards as three cards** on the landing page: "Airbnb Dashboard", "Shop Dashboard", "Netflix Dashboard". Each card opens its own page (`/dashboards/<name>/`) with the full dashboard, a back link at the top left, and the frozen prompt at the bottom, as before. The landing page itself loads no Plotly.
+- **No money anywhere.** Runpod and Claude may be named. Only before-and-after results stay as numbers: the hero's two improvements and one short results table, each still checked against its source. The story reads without figures, so the loss charts go.
+- **The story** tells how the first data was gathered (a crawl of the Plotly docs that taught the wrong habits), how Claude Haiku, Sonnet and Opus were used to distil better data, that lora-v2 is one adapter trained for three jobs (writing chart code, the analyst, the planner), and how the app harnesses the model: the steps, the tools by name (`find_columns`, `inspect_column`, `relationship`, `preview_chart`, `row_grain`), the checks and repairs, and how it keeps the model's prompts short. Technical but readable, not jargon.
+- **Wording** follows the `no-ai-slop` and `antislop-copywriting` skills; **layout** follows `antislop`, `antislop-ui` and `antislop-layoutmobile`.
+- **Readability:** larger, darker body text.
+- The final review's fixes ship with this revision (plan Part B).

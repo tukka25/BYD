@@ -3794,3 +3794,44 @@ Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>"
 
 - **Part 2 (open source)** renames the repository: change `REPO_URL` in `site/lib/site.ts`. If it rewrites history, update the hashes in `site/data/journey.json`. If it edits a quoted README line, update `site/data/stats.json`. Add the licence to the footer.
 - **Part 3 (setup and README)** may change the commands in `site/components/run-it.tsx`.
+
+---
+
+# Part B: the owner's redesign and the final review's fixes
+
+Spec: "Revision 2" at the end of the spec. Ledger: the "FINAL REVIEW" and "OWNER REDESIGN REQUEST" entries. Global Constraints above still hold.
+
+### Task B1: The final review's correctness fixes
+
+**Files:** `byd-web/lib/plot-theme.ts` (+ `npm run sync-lib` in `site/`), `byd-web/tests/plot-theme.test.mts`, `backend/scripts/make_showcase.py`, `backend/tests/test_make_showcase.py`, `backend/scripts/fetch_showcase_data.py`, `site/README.md`.
+
+- [ ] **Currency with a kept suffix (I1).** In the indicator branch, note whether a currency mark was removed: `const hadMark = isCurrencyMark(number.prefix) || isCurrencyMark(number.suffix);` before the two deletions, and change the last line to `if (currency && !number.prefix && (hadMark || !number.suffix)) number.prefix = currency;`. Add tests first (watch them fail): prefix `"$"` + suffix `"M"` with title `"Total MRR (USD)"` gives prefix `"$"` and suffix `"M"`; prefix `"$"` + suffix `"k"` with default `"GBP"` gives prefix `"£"`. Then `cd site && npm run sync-lib && npm test`.
+- [ ] **Accepted prompts (I4).** In `SHOWCASES`, set each `prompt` to the prompt in its committed dashboard file (`site/data/dashboards/<name>.json`, field `prompt`) and add `"tries"` with that file's `build.prompts_tried`; make `--tries` default to the entry's `tries`. Add a test that each `SHOWCASES[name]["prompt"]` and `["tries"]` equal the committed file's `prompt` and `build.prompts_tried`.
+- [ ] **No secret in an error (review minor).** `call()` must not copy a request body back: on an HTTP error, print the status and, for a JSON body with `detail` as a list, only each item's `loc` and `msg`; never `input`. Test with a fake 422 body holding `"input": "secret"`.
+- [ ] **Size limit (review minor).** `write_dashboard` refuses `size >= limit` (the site refuses `>=`). Update its test.
+- [ ] **Wording (L44).** `fetch_showcase_data.py` lines 14 and 62: say values are kept to Excel's precision (about 16 significant digits; long integer ids are written as text).
+- [ ] **README deploy step (I2).** Replace step 4 with: "Set the project's production branch to `launch` (a branch that does not exist yet), so pushes to `main` build preview deployments only. Create `launch` from `main` when the repository is public (part 2)."
+- [ ] Run byd-web, backend (`tests/test_make_showcase.py`, `tests/test_fetch_showcase_data.py`) and site tests; commit.
+
+### Task B2: Dashboards as three cards with their own pages; no journey, no money
+
+**Files:** `site/next.config.ts` (`trailingSlash: true`), new `site/app/dashboards/[name]/page.tsx`, new `site/components/dashboard-cards.tsx`, `site/components/dashboards.tsx`, `site/components/dashboard-view.tsx`, `site/app/page.tsx`, `site/components/hero.tsx`; delete `site/components/journey.tsx`, `site/data/journey.json`, `site/tests/journey.test.mts`, `site/components/dashboard-tabs.tsx`, `site/components/training.tsx`'s loss charts (`site/components/loss-chart.tsx`, `site/data/loss.json`, `site/tests/loss.test.mts`); `site/data/stats.json` (remove every money entry: `v1_data_cost`, `v2_data_cost`, `gpu_rate`, `v1_cloud_cost`, `v1_total_cost`, `v2_cloud_cost`, `total_cost`); `AGENTS.md` landing-page section (drop the journey line, mention the dashboard pages).
+
+- Card titles: `airbnb` "Airbnb Dashboard", `shop` "Shop Dashboard", `netflix` "Netflix Dashboard" (a map in `site/lib/site.ts`, `DASHBOARD_TITLES`). Each card: the title, what the data is (source kinds, e.g. "Excel + CSV"), the prompt in quotes, and an "Open" affordance; the whole card links to `/dashboards/<name>/`. No chart counts or other numbers on the cards. The landing page loads no Plotly (no `LazyChart` there).
+- The dashboard page: `generateStaticParams` returns the three names; `dynamicParams = false`. Top-left back link "← All dashboards" to `/#dashboards`; the title; the `DashboardView` grid with lazy charts; the frozen prompt box at the bottom (sticky only from `md` up: `md:sticky md:bottom-4`); provenance. Its `<title>` names the dashboard.
+- Hero: remove the cost figure; keep the two improvement figures.
+- Tests: `dashboard.test.mts` keeps validating the three files; add a check that every committed dashboard name has a title in `DASHBOARD_TITLES` and a key in `DASHBOARD_DATA`. Build must export `out/dashboards/{airbnb,shop,netflix}/index.html`.
+- Copy is not rewritten here (Task B3), but no removed section or money may remain.
+- Lint, test, build; commit.
+
+### Task B3: The story, readable and without AI slop
+
+**Files:** the section components (`problem.tsx`, `data-pipeline.tsx`, `training.tsx`, `how-it-works.tsx`, `results.tsx`, `run-it.tsx`, `footer.tsx`, `hero.tsx`, `dashboard-cards.tsx`, `section.tsx`), `site/app/globals.css` (type scale only), `site/data/stats.json` only to remove entries no section uses any more.
+
+- Load and follow the skills `no-ai-slop`, `antislop`, `antislop-copywriting`, `antislop-ui`, `antislop-layoutmobile` (installed in `~/.claude/skills/`), within byd-web's visual language (`byd-web/DESIGN.md`).
+- The story, in order: the problem (a capable base model that writes essays; docs scraped from plotly.com that taught the wrong habits), the data (the crawl; Claude Haiku writing table schemas and questions; Claude Sonnet writing code answers, kept only if they ran in the app's own sandbox; Claude Opus distilling the analyst and planner; a frozen test set the model never saw; lora-v2 as one adapter for three jobs), training (LoRA on a rented A100 on Runpod, converted to MLX, served 4-bit on a Mac), the harness (the analyst, the planner and its tools by name, the checks against the real tables, the chartist, the sandbox, the drawing check and the repairs; how prompts stay short: a short facts note instead of whole tables, a profile from a sample, drafts referred to by number), the results (one short table, base with thinking off vs lora-v2 at 4-bit on a Mac, plus the dashboard-planning results; numbers only from `stats.json` via `<Num>`), run it, footer.
+- No money and no figures in the story text; facts must stay true to `AGENTS.md`, `chartist-finetune/README.md`, `chartist-finetune/cloud/README.md` and `chartist-finetune/export_v2.py`.
+- Readability: body text at least 17-18 px with generous line height, in `--ink` rather than `--body`; captions no smaller than 14 px; line length about 65-75 characters.
+- Footer: each source credited once (no repeated Airbnb note; capitalised licence lines).
+- Hero figures never wrap mid-figure at 1024 px.
+- Lint, test, build; check at desktop and 375 px (controller); commit.
