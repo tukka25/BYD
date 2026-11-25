@@ -29,7 +29,7 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   title: "PromptDash · dashboards from plain words",
   description:
-    "Ask for a dashboard in plain words. A 9B model fine-tuned to write Plotly draws every chart, on your own machine.",
+    "A 9B model fine-tuned to build full dashboards and charts from one prompt. Your data never leaves your device.",
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

@@ -29,7 +29,7 @@ Take them again whenever a dashboard changes, and whenever the way dashboards ar
 
 - `lib/dot-shapes.ts`, `lib/dot-draw.ts`, `lib/plot-theme.ts` and `lib/rich-text.ts` are byte-identical copies of byd-web's. Change byd-web's file, then run `npm run sync-lib`.
 - Every number on the page is in `data/stats.json` with its source: a JSON path, an exact quote, or a sum. A number with no recorded source does not go on the page. Editing a quoted line in a README breaks the test on purpose: update the quote, or the number.
-- The story itself carries no figures and no money. The only numbers are the hero's two before-and-after results and the results table, and a test fails if `data/stats.json` holds an entry no component shows.
+- Numbers sit only in cards and the results table: the hero's before-and-after cards, the base-model cards, the model's spec card and the table. There is no money anywhere, and a test fails if `data/stats.json` holds an entry no component shows.
 - `data/dashboards/*.json` are the app's own output, unedited. Make them with `backend/scripts/fetch_showcase_data.py`, then `make showcase NAME=...` from the repository root. A dashboard that falls short is rebuilt from a rephrased prompt; its charts are never edited.
 
 ## Deploying on Vercel
