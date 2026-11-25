@@ -54,7 +54,7 @@ const GROUPS: Array<{ key: string; test: ReactNode; rows: Row[] }> = [
     ),
     rows: [
       { measure: "Code that ran and drew a chart", ids: ["base_render_mac", "v1_render_mac", "v2_render_mac"] },
-      { measure: "Charts of the kind asked for", ids: ["base_shape_mac", "v1_shape_mac", "v2_shape_mac"] },
+      { measure: "Charts of the right kind", ids: ["base_shape_mac", "v1_shape_mac", "v2_shape_mac"] },
     ],
   },
   {
@@ -98,12 +98,12 @@ export function FineTuning() {
             , a Python charting library.
           </Lede>
           <Lede>
-            I trained LoRA adapters with Hugging Face&apos;s PEFT library on a rented GPU, converted them to MLX, and
-            now run them <Name>4-bit</Name> on a Mac with mlx_lm. A LoRA adapter is a small set of extra weights that
-            loads on top of the base model and leaves the model itself unchanged.
+            I trained LoRA adapters with Hugging Face&apos;s PEFT library on a rented GPU and converted them to MLX. A
+            LoRA adapter is a small set of extra weights that leaves the base model unchanged. On a Mac, mlx_lm runs
+            the <Name>4-bit</Name> base model with the adapter on top.
           </Lede>
           <Lede>
-            I made two versions. <Name>lora-v1</Name> learned chart code alone. <Name>lora-v2</Name> is one adapter for
+            I made two versions. <Name>lora-v1</Name> learned only chart code. <Name>lora-v2</Name> is one adapter for
             three jobs: the analyst, the planner and the chartist.
           </Lede>
         </div>
@@ -172,8 +172,8 @@ export function FineTuning() {
           charts of each dashboard.
         </li>
         <li>
-          Every run is <Name>4-bit</Name> on a Mac. Each number on the cards and in this table links to the file that
-          recorded it.
+          Every run in this table is <Name>4-bit</Name> on a Mac. Each number on the cards and in this table links to
+          the file that recorded it.
         </li>
       </ul>
     </Section>

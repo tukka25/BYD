@@ -65,7 +65,7 @@ const SHORT: string[] = [
   "Tool results are cut to a fixed size and marked where they were cut.",
   "The analyst and the planner see only a short note of what the tools found.",
   "One reply plans every chart on the dashboard.",
-  "Thinking is off for the analyst and the planner.",
+  "Thinking is off for the analyst and the planner, so a reply is the answer alone, with no reasoning written out first.",
   "A fix sends back the model's own code and what went wrong, in plain words.",
 ];
 
@@ -73,8 +73,8 @@ export function HowItWorks() {
   return (
     <Section id="how" title="3. Harness">
       <Lede>
-        This is the code around the model. It builds every prompt, checks every answer against the real data, and
-        sends mistakes back to the model.
+        This is the code around the model. It builds the prompts, and it checks the plans and the charts against the
+        real data.
       </Lede>
 
       <div className="mt-10 grid max-w-[44rem] gap-4 lg:max-w-none lg:grid-cols-[1.15fr_1fr] lg:gap-6">

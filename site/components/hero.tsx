@@ -47,7 +47,7 @@ export function Hero() {
             ]}
           />
           <MeterCard
-            title="Charts of the kind asked for"
+            title="Charts of the right kind"
             note="The same questions"
             meters={[
               { label: "Before fine-tuning", id: "base_shape_mac" },

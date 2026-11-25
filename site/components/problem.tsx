@@ -2,7 +2,9 @@ import { MeterCard } from "@/components/meter-card";
 import { CAPTION, Lede, MEASURE, Name, Section } from "@/components/section";
 
 const RAN = "Code that ran and drew a chart";
-const KIND = "Charts of the kind asked for";
+/* Scored against the chart kind each test question was written for
+   (evaluate.py, chart_bucket); few questions name a kind themselves. */
+const KIND = "Charts of the right kind";
 
 /* The base model under its two settings. Thinking on is how it ships, scored
    on the rented GPU at 16-bit (bf16) when lora-v1 was; thinking off is its
@@ -46,8 +48,8 @@ export function Problem() {
       <div className="mt-8">
         <Lede>
           Most of the gap between the two cards is the thinking. With it on, the model writes out its reasoning before
-          any code, and the app cannot run prose. With it off, most of its code ran, but it drew the kind of chart
-          asked for less than half the time. Fine-tuning had to teach it to choose and build the right chart.
+          any code, and the app cannot run prose. With it off, most of its code ran, but it drew the right kind of
+          chart less than half the time. Fine-tuning had to teach it to choose and build the right chart.
         </Lede>
       </div>
     </Section>
