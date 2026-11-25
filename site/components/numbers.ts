@@ -13,3 +13,8 @@ export function statSource(id: string): string | null {
   const source = findStat(ALL, id).source;
   return source.kind === "sum" ? null : source.file;
 }
+
+/** What a number measures, for the title of its link. */
+export function statLabel(id: string): string {
+  return findStat(ALL, id).label;
+}
