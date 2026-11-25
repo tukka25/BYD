@@ -588,3 +588,787 @@ Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>"
 ```
 
 ---
+### Task 4: Download the file sources: `backend/scripts/fetch_showcase_data.py`
+
+Downloads Inside Airbnb's two Edinburgh summary files and the Netflix catalogue into `backend/uploads/showcase/`, which git ignores. Saves the listings as Excel without changing them, and writes a manifest of where each file came from. It runs only after Task 1's OK.
+
+**Files:**
+- Create: `backend/scripts/fetch_showcase_data.py`
+- Test: `backend/tests/test_fetch_showcase_data.py`
+
+**Interfaces:**
+- Produces: `backend/uploads/showcase/` holding `listings.xlsx`, `reviews.csv`, `netflix_titles.csv` and `manifest.json`. `manifest.json` is a list of `{"file", "url", "licence", "licence_url", "rows", "bytes", "sha256", "fetched_at", "note"}`, which Task 5 reads.
+- Functions: `airbnb_urls(snapshot: str) -> dict[str, str]`, `excel_from_csv(csv_path: Path, xlsx_path: Path) -> int`, `entry(path: Path, url: str, licence: tuple[str, str], rows: int, note: str) -> dict`.
+
+- [ ] **Step 1: Write the failing test** `backend/tests/test_fetch_showcase_data.py`:
+
+```python
+import sys
+from pathlib import Path
+
+import pandas as pd
+import pytest
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
+from fetch_showcase_data import airbnb_urls, entry, excel_from_csv  # noqa: E402
+
+CC_BY = ("CC BY 4.0", "https://creativecommons.org/licenses/by/4.0/")
+
+
+def test_airbnb_urls_point_at_one_snapshot():
+    urls = airbnb_urls("2025-09-21")
+    assert urls["listings.csv"] == (
+        "https://data.insideairbnb.com/united-kingdom/scotland/edinburgh/2025-09-21/visualisations/listings.csv"
+    )
+    assert urls["reviews.csv"].endswith("/2025-09-21/visualisations/reviews.csv")
+
+
+def test_a_snapshot_must_be_a_date():
+    with pytest.raises(ValueError, match="2025-09-21"):
+        airbnb_urls("latest")
+
+
+def test_the_excel_copy_keeps_every_value(tmp_path):
+    source = tmp_path / "listings.csv"
+    pd.DataFrame({
+        "id": [1234567890123456789, 42],
+        "room_type": ["Entire home/apt", "Private room"],
+        "price": [120.0, None],
+    }).to_csv(source, index=False)
+    rows = excel_from_csv(source, tmp_path / "listings.xlsx")
+    back = pd.read_excel(tmp_path / "listings.xlsx")
+    assert rows == 2
+    assert back["id"].tolist() == [1234567890123456789, 42]
+    assert back["room_type"].tolist() == ["Entire home/apt", "Private room"]
+    assert back["price"].iloc[0] == 120.0 and pd.isna(back["price"].iloc[1])
+
+
+def test_a_price_stored_as_text_stops_the_conversion(tmp_path):
+    source = tmp_path / "listings.csv"
+    pd.DataFrame({"price": ["$120.00", "$95.00"]}).to_csv(source, index=False)
+    with pytest.raises(ValueError, match="price is not numeric"):
+        excel_from_csv(source, tmp_path / "listings.xlsx")
+
+
+def test_a_manifest_entry_records_where_a_file_came_from(tmp_path):
+    path = tmp_path / "reviews.csv"
+    path.write_text("listing_id,date\n1,2024-01-01\n", encoding="utf-8")
+    item = entry(path, "https://example.org/reviews.csv", CC_BY, 1, "As published.")
+    assert item["file"] == "reviews.csv" and item["rows"] == 1 and item["bytes"] == path.stat().st_size
+    assert item["licence"] == "CC BY 4.0" and item["url"] == "https://example.org/reviews.csv"
+    assert len(item["sha256"]) == 64 and item["fetched_at"].endswith("Z")
+```
+
+- [ ] **Step 2: Run it and watch it fail**
+
+Run: `cd backend && .venv/bin/python -m pytest -q tests/test_fetch_showcase_data.py`
+Expected: FAIL with `ModuleNotFoundError: No module named 'fetch_showcase_data'`.
+
+- [ ] **Step 3: Write `backend/scripts/fetch_showcase_data.py`.** If Task 1 recorded a licence that differs from `AIRBNB_LICENCE` or `NETFLIX_LICENCE`, use the recorded one.
+
+```python
+#!/usr/bin/env python3
+"""Download the landing page's file sources and record where each came from.
+
+Run once from the repository root, after the owner has agreed to the downloads
+(each file's name, source and size). The files go to backend/uploads/showcase/,
+which git ignores, so no third-party data is committed:
+
+    listings.xlsx       Inside Airbnb's Edinburgh listings summary, saved as Excel
+    reviews.csv         Inside Airbnb's Edinburgh reviews summary, as published
+    netflix_titles.csv  the Netflix catalogue, as TidyTuesday mirrors it
+    manifest.json       each file's URL, licence, rows, bytes, sha256 and fetch time
+
+The listings are saved as Excel so one dashboard is built from an Excel file and
+a CSV, as a user's might be. No value changes on the way.
+
+    backend/.venv/bin/python backend/scripts/fetch_showcase_data.py --airbnb-snapshot 2025-09-21
+"""
+from __future__ import annotations
+
+import argparse
+import hashlib
+import json
+import re
+import shutil
+import sys
+import urllib.request
+from datetime import datetime, timezone
+from pathlib import Path
+
+import pandas as pd
+
+AIRBNB_FILE = "https://data.insideairbnb.com/united-kingdom/scotland/edinburgh/{snapshot}/visualisations/{name}"
+AIRBNB_LICENCE = ("CC BY 4.0", "https://creativecommons.org/licenses/by/4.0/")
+NETFLIX_URL = (
+    "https://raw.githubusercontent.com/rfordatascience/tidytuesday/main/data/2021/2021-04-20/netflix_titles.csv"
+)
+NETFLIX_LICENCE = ("CC0 1.0", "https://creativecommons.org/publicdomain/zero/1.0/")
+USER_AGENT = "promptdash-showcase/1.0"
+SNAPSHOT = re.compile(r"^\d{4}-\d{2}-\d{2}$")
+
+
+def airbnb_urls(snapshot: str) -> dict[str, str]:
+    """The two summary files of one Edinburgh snapshot, by file name."""
+    if not SNAPSHOT.match(snapshot):
+        raise ValueError(
+            f"the snapshot is a date such as 2025-09-21, from insideairbnb.com/get-the-data; got {snapshot!r}"
+        )
+    return {name: AIRBNB_FILE.format(snapshot=snapshot, name=name) for name in ("listings.csv", "reviews.csv")}
+
+
+def download(url: str, path: Path) -> None:
+    """Fetch through a .part file, so an interrupted download leaves no file behind."""
+    path.parent.mkdir(parents=True, exist_ok=True)
+    partial = path.with_name(path.name + ".part")
+    request = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
+    with urllib.request.urlopen(request, timeout=120) as response, partial.open("wb") as out:
+        shutil.copyfileobj(response, out)
+    partial.replace(path)
+
+
+def excel_from_csv(csv_path: Path, xlsx_path: Path) -> int:
+    """Save the listings as Excel, unchanged, and return the row count.
+
+    Stops if `price` is not numeric: cleaning it would be editing the data, and
+    the page would have to say so. That is the owner's decision."""
+    frame = pd.read_csv(csv_path)
+    if "price" in frame.columns and not pd.api.types.is_numeric_dtype(frame["price"]):
+        sample = frame["price"].dropna().astype(str).head(3).tolist()
+        raise ValueError(f"price is not numeric in {csv_path.name} (for example {sample}); cleaning it would edit the data")
+    xlsx_path.parent.mkdir(parents=True, exist_ok=True)
+    frame.to_excel(xlsx_path, index=False)
+    return len(frame)
+
+
+def entry(path: Path, url: str, licence: tuple[str, str], rows: int, note: str) -> dict:
+    """One manifest line: where the file came from, under what licence, and what it holds."""
+    return {
+        "file": path.name,
+        "url": url,
+        "licence": licence[0],
+        "licence_url": licence[1],
+        "rows": rows,
+        "bytes": path.stat().st_size,
+        "sha256": hashlib.sha256(path.read_bytes()).hexdigest(),
+        "fetched_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "note": note,
+    }
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser(description="Download the landing page's file sources.")
+    parser.add_argument("--airbnb-snapshot", required=True, help="the Edinburgh snapshot date on insideairbnb.com")
+    parser.add_argument("--out", default="backend/uploads/showcase")
+    args = parser.parse_args()
+    out = Path(args.out)
+    raw = out / "raw"
+
+    airbnb = airbnb_urls(args.airbnb_snapshot)
+    for name, url in {**airbnb, "netflix_titles.csv": NETFLIX_URL}.items():
+        print(f"downloading {name} from {url}", file=sys.stderr)
+        download(url, raw / name)
+
+    snapshot = f"Inside Airbnb, Edinburgh, snapshot {args.airbnb_snapshot}."
+    listings_rows = excel_from_csv(raw / "listings.csv", out / "listings.xlsx")
+    shutil.copyfile(raw / "reviews.csv", out / "reviews.csv")
+    shutil.copyfile(raw / "netflix_titles.csv", out / "netflix_titles.csv")
+    manifest = [
+        entry(out / "listings.xlsx", airbnb["listings.csv"], AIRBNB_LICENCE, listings_rows,
+              f"{snapshot} Saved as Excel from the published CSV."),
+        entry(out / "reviews.csv", airbnb["reviews.csv"], AIRBNB_LICENCE, len(pd.read_csv(out / "reviews.csv")),
+              f"{snapshot} As published."),
+        entry(out / "netflix_titles.csv", NETFLIX_URL, NETFLIX_LICENCE, len(pd.read_csv(out / "netflix_titles.csv")),
+              "Netflix Movies and TV Shows by Shivam Bansal on Kaggle, as mirrored by TidyTuesday (2021-04-20)."),
+    ]
+    (out / "manifest.json").write_text(json.dumps(manifest, indent=2), encoding="utf-8")
+    for item in manifest:
+        print(f"{item['file']}: {item['rows']:,} rows, {item['bytes']:,} bytes", file=sys.stderr)
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())
+```
+
+- [ ] **Step 4: Run the tests**
+
+Run: `cd backend && .venv/bin/python -m pytest -q tests/test_fetch_showcase_data.py`
+Expected: 5 passed.
+
+- [ ] **Step 5: Commit**
+
+```bash
+git add backend/scripts/fetch_showcase_data.py backend/tests/test_fetch_showcase_data.py
+git commit -m "feat(showcase): download the landing page's file sources with their provenance
+
+Inside Airbnb's Edinburgh summaries and the Netflix catalogue go to the
+gitignored backend/uploads/showcase/. The listings are saved as Excel
+without changing a value (a 19-digit id survives the round trip); a price
+stored as text stops the run, since cleaning it would edit the data.
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>"
+```
+
+- [ ] **Step 6 (controller): Download.** Only after Task 1's yes, from the repository root, with the snapshot date Task 1 recorded:
+
+Run: `backend/.venv/bin/python backend/scripts/fetch_showcase_data.py --airbnb-snapshot <recorded date>`
+Expected: three `downloading` lines, then one line per file with its rows and bytes. `git status --short` shows nothing new, because `backend/uploads/` is ignored. If it stops on `price is not numeric`, ask the owner whether to clean the price (and say so on the page) or to choose another Inside Airbnb file.
+
+---
+
+### Task 5: Build and export one dashboard: `backend/scripts/make_showcase.py`
+
+Builds a dashboard the way a person does: a new, empty report with its sources, then the prompt sent as the dashboard brief. Exports the blocks the app saved, unedited. Runs from the repository root, on the host, against the running stack. It uses the standard library for HTTP, like `smoke_test.py`.
+
+**Files:**
+- Create: `backend/scripts/make_showcase.py`
+- Modify: `Makefile` (target `showcase`)
+- Test: `backend/tests/test_make_showcase.py`
+
+**Interfaces:**
+- Consumes: `backend/uploads/showcase/manifest.json` (Task 4). The app's API:
+  - `POST /api/v1/auth/register` `{email, full_name, password}` (409 if the account exists), then `POST /api/v1/auth/login` `{email, password}` returns `{access_token}`.
+  - `POST /api/v1/data-sources/upload`: multipart field `file`; returns `{id, ...}`.
+  - `GET /api/v1/data-sources`; `POST /api/v1/data-sources/db-connection` `{display_name, db_type: "postgresql", db_host, db_port, db_name, db_username, db_password}`; `GET /api/v1/data-sources/{id}/tables` returns table names.
+  - `POST /api/v1/dashboard` `{title, data_source_ids}` returns `{id, ...}`. A report with `data_source_ids` builds only from those sources.
+  - `POST /api/v1/dashboard/{id}/blocks/dashboard` `{brief}` streams SSE: `status`, `plan` (`total` counts the intro text block), `block` (a saved block), `step`, `skipped` (`{index, label, reason}`), `error`, `done`. The brief is at most 400 characters.
+  - `GET /api/v1/dashboard/{id}/blocks` returns the saved blocks.
+- Produces: `site/data/dashboards/<name>.json` in the shared dashboard format. Functions: `parse_sse(lines) -> Iterator[tuple[str, dict]]`, `summarize_build(events) -> dict` (`charts_planned`, `skipped`, `missing_kinds`), `export_block(block) -> dict`, `served_model(ps_output) -> dict | None`, `model_record(model) -> dict`, `multipart(field, filename, content) -> tuple[bytes, str]`, `write_dashboard(path, dashboard, limit=MAX_BYTES) -> int`.
+
+- [ ] **Step 1: Write the failing test** `backend/tests/test_make_showcase.py`:
+
+```python
+import email
+import sys
+from pathlib import Path
+
+import pytest
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
+from make_showcase import (  # noqa: E402
+    SHOWCASES,
+    export_block,
+    model_record,
+    multipart,
+    parse_sse,
+    served_model,
+    summarize_build,
+    write_dashboard,
+)
+
+STREAM = [
+    b"event: status\n", b'data: {"label": "Planning the charts"}\n', b"\n",
+    b"event: plan\n", b'data: {"total": 4, "sections": [], "missing_kinds": []}\n', b"\n",
+    b"event: block\n", b'data: {"kind": "text", "title": "About this data"}\n', b"\n",
+    b"event: skipped\n", b'data: {"index": 2, "label": "Top artists", "reason": "no figure"}\n', b"\n",
+    b"event: block\n", b'data: {"kind": "chart", "title": "Popularity by genre"}\n', b"\n",
+    b"event: done\n", b'data: {"total": 4}\n', b"\n",
+]
+
+
+def test_each_event_comes_with_its_data():
+    events = list(parse_sse(STREAM))
+    assert [name for name, _ in events] == ["status", "plan", "block", "skipped", "block", "done"]
+    assert events[1][1]["total"] == 4
+
+
+def test_crlf_lines_read_the_same():
+    assert list(parse_sse(["event: done\r\n", 'data: {"total": 1}\r\n', "\r\n"])) == [("done", {"total": 1})]
+
+
+def test_the_plans_total_counts_the_intro_block():
+    assert summarize_build(list(parse_sse(STREAM))) == {
+        "charts_planned": 3,
+        "skipped": [{"label": "Top artists", "reason": "no figure"}],
+        "missing_kinds": [],
+    }
+
+
+def test_a_build_with_no_plan_is_an_error():
+    with pytest.raises(RuntimeError, match="no plan"):
+        summarize_build([("status", {"label": "Planning"}), ("error", {"message": "the checks failed"})])
+
+
+def test_the_export_keeps_what_the_app_saved_and_nothing_else():
+    saved = {"id": "b1", "kind": "chart", "title": "T", "prompt": "q", "code": "c", "figure": {"data": []},
+             "text_body": None, "source_name": "s", "chart_type": "bar", "used_fallback": False,
+             "x": 0, "y": 3, "w": 6, "h": 8}
+    assert export_block(saved) == {"kind": "chart", "title": "T", "chart_type": "bar", "figure": {"data": []},
+                                   "text_body": None, "code": "c", "x": 0, "y": 3, "w": 6, "h": 8}
+
+
+def test_the_served_model_is_read_from_the_server_command():
+    ps = ("/bin/zsh\n"
+          "Python -m mlx_lm server --model models/qwen3.5-9b-4bit --adapter-path runs/adapters-mlx-v2 "
+          "--host 127.0.0.1 --port 8080\n")
+    model = served_model(ps)
+    assert model == {"base": "models/qwen3.5-9b-4bit", "adapter": "runs/adapters-mlx-v2"}
+    assert model_record(model)["label"] == "lora-v2"
+    assert model_record({"base": "models/qwen3.5-9b-4bit", "adapter": "runs/adapters-mlx"})["label"] == "runs/adapters-mlx"
+    assert served_model("/bin/zsh\n") is None
+
+
+def test_an_upload_carries_the_file_unchanged():
+    body, content_type = multipart("file", "listings.xlsx", b"\x00\x01binary")
+    message = email.message_from_bytes(b"Content-Type: " + content_type.encode() + b"\r\n\r\n" + body)
+    (part,) = message.get_payload()
+    assert part.get_param("name", header="content-disposition") == "file"
+    assert part.get_filename() == "listings.xlsx"
+    assert part.get_payload(decode=True) == b"\x00\x01binary"
+
+
+def test_a_dashboard_is_written_compact_and_whole(tmp_path):
+    path = tmp_path / "netflix.json"
+    size = write_dashboard(path, {"blocks": [{"title": "a"}]})
+    assert path.read_text(encoding="utf-8") == '{"blocks":[{"title":"a"}]}'
+    assert size == path.stat().st_size
+    assert not list(tmp_path.glob("*.tmp"))
+
+
+def test_a_dashboard_over_the_limit_is_refused_naming_its_largest_block(tmp_path):
+    path = tmp_path / "spotify.json"
+    blocks = [{"title": "Energy vs danceability", "figure": "x" * 200}, {"title": "small"}]
+    with pytest.raises(ValueError, match="Energy vs danceability"):
+        write_dashboard(path, {"blocks": blocks}, limit=100)
+    assert not path.exists()
+
+
+def test_every_prompt_fits_the_brief_field():
+    assert all(len(config["prompt"]) <= 400 for config in SHOWCASES.values())
+```
+
+- [ ] **Step 2: Run it and watch it fail**
+
+Run: `cd backend && .venv/bin/python -m pytest -q tests/test_make_showcase.py`
+Expected: FAIL with `ModuleNotFoundError: No module named 'make_showcase'`.
+
+- [ ] **Step 3: Write `backend/scripts/make_showcase.py`.** The Spotify `source` line holds Task 1's default; if Task 1 recorded another licence, use that. If Task 1 chose the shop demo, the `shop` entry is the database dashboard.
+
+```python
+#!/usr/bin/env python3
+"""Build one of the landing page's dashboards with the running app, and export it unedited.
+
+The dashboard is built the way a person builds one: a new, empty report with its
+sources, then the prompt sent as the dashboard brief to
+POST /api/v1/dashboard/{id}/blocks/dashboard, the endpoint behind the app's
+"Build it". The blocks the app saved are exported as it stored them; nothing here
+edits a chart. When a dashboard falls short, build it again from a rephrased
+--prompt, and count the prompts tried with --tries.
+
+Needs `make up`, `make serve-model`, the files from fetch_showcase_data.py, and
+SHOWCASE_PASSWORD in the environment: the password of this script's own local
+account (any value; keep it for reruns). Run from the repository root.
+`make showcase NAME=...` passes the database login from the postgres container
+without printing it.
+
+    SHOWCASE_PASSWORD=... make showcase NAME=airbnb
+    SHOWCASE_PASSWORD=... make showcase NAME=airbnb SHOWCASE_PROMPT="..." SHOWCASE_TRIES=2
+"""
+from __future__ import annotations
+
+import argparse
+import hashlib
+import json
+import os
+import re
+import subprocess
+import sys
+import time
+import urllib.error
+import urllib.request
+import uuid
+from datetime import datetime, timezone
+from pathlib import Path
+from typing import Any, Iterable, Iterator
+
+MAX_BYTES = 1_500_000
+BRIEF_LIMIT = 400  # DashboardBriefRequest.brief in blocks.py
+EMAIL = "showcase@example.com"
+UPLOADS = Path("backend/uploads/showcase")
+LORA_V2 = "runs/adapters-mlx-v2"
+BLOCK_KEYS = ("kind", "title", "chart_type", "figure", "text_body", "code", "x", "y", "w", "h")
+SPOTIFY_DATA = "https://github.com/rfordatascience/tidytuesday/tree/main/data/2020/2020-01-21"
+
+SHOWCASES: dict[str, dict[str, Any]] = {
+    "airbnb": {
+        "title": "Airbnb in Edinburgh",
+        "prompt": "thinking of renting out my flat in edinburgh on airbnb. which areas charge the most, "
+                  "entire place vs private room, and when are guests busiest?",
+        "files": ["listings.xlsx", "reviews.csv"],
+        "currency": "GBP",  # Inside Airbnb states prices in local currency
+    },
+    "spotify": {
+        "title": "Spotify songs",
+        "prompt": "what makes a song popular? compare genres, energy vs danceability, and show me the top artists",
+        "database": {"display_name": "Spotify tracks (Postgres)", "db_name": "spotify", "tables": ["tracks"]},
+        "source": {"url": SPOTIFY_DATA, "licence": "CC0 1.0 (TidyTuesday)",
+                   "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+                   "note": "TidyTuesday 2020-01-21, collected from the Spotify Web API with spotifyr."},
+        "currency": "",
+    },
+    "shop": {  # the database dashboard if Task 1 rules Spotify out
+        "title": "A demo shop",
+        "prompt": "how is my shop doing? revenue by month, which product categories sell best, "
+                  "and which customer regions spend the most",
+        "database": {"display_name": "Shop demo", "db_name": "shop", "tables": ["orders", "customers", "products"]},
+        "source": {"url": "https://github.com/tukka25/BYD/blob/main/backend/scripts/make_relational_demo.py",
+                   "licence": "synthetic, made for this project", "licence_url": "",
+                   "note": "Seeded by backend/scripts/make_relational_demo.py; the app joins orders to customers and products."},
+        "currency": "",
+    },
+    "netflix": {
+        "title": "The Netflix catalogue",
+        "prompt": "how has netflix changed over the years? movies vs tv shows, which countries make the most "
+                  "content, and the most common ratings",
+        "files": ["netflix_titles.csv"],
+        "currency": "",
+    },
+}
+
+
+# --- pure parts -------------------------------------------------------------
+
+def parse_sse(lines: Iterable[bytes | str]) -> Iterator[tuple[str, dict]]:
+    """Server-sent events as (event, data) pairs. The app sends one data line per event."""
+    event, data = "message", []
+    for raw in lines:
+        line = (raw.decode("utf-8") if isinstance(raw, bytes) else raw).rstrip("\r\n")
+        if not line:
+            if data:
+                yield event, json.loads("\n".join(data))
+            event, data = "message", []
+        elif line.startswith("event:"):
+            event = line[len("event:"):].strip()
+        elif line.startswith("data:"):
+            data.append(line[len("data:"):].lstrip())
+    if data:
+        yield event, json.loads("\n".join(data))
+
+
+def summarize_build(events: list[tuple[str, dict]]) -> dict:
+    """What the build planned and skipped. The plan's total counts the intro text block."""
+    plan = next((data for name, data in events if name == "plan"), None)
+    if plan is None:
+        errors = [data for name, data in events if name == "error"]
+        raise RuntimeError(f"the build made no plan: {errors or events[-1:]}")
+    return {
+        "charts_planned": int(plan["total"]) - 1,
+        "skipped": [{"label": data["label"], "reason": data["reason"]} for name, data in events if name == "skipped"],
+        "missing_kinds": list(plan.get("missing_kinds") or []),
+    }
+
+
+def export_block(block: dict) -> dict:
+    """A saved block as the page needs it, unchanged."""
+    return {key: block.get(key) for key in BLOCK_KEYS}
+
+
+def served_model(ps_output: str) -> dict | None:
+    """The running mlx_lm server's --model and --adapter-path, from `ps -axo command`."""
+    for line in ps_output.splitlines():
+        if re.search(r"mlx_lm[. ]server", line):
+            model = re.search(r"--model\s+(\S+)", line)
+            adapter = re.search(r"--adapter-path\s+(\S+)", line)
+            return {"base": model.group(1) if model else "unknown", "adapter": adapter.group(1) if adapter else "none"}
+    return None
+
+
+def model_record(model: dict) -> dict:
+    """The model behind the dashboard. The page says lora-v2 only when the server ran it."""
+    return {**model, "label": "lora-v2" if model["adapter"] == LORA_V2 else model["adapter"]}
+
+
+def multipart(field: str, filename: str, content: bytes) -> tuple[bytes, str]:
+    """A multipart/form-data body with one file, and its Content-Type."""
+    boundary = uuid.uuid4().hex
+    head = (
+        f'--{boundary}\r\nContent-Disposition: form-data; name="{field}"; filename="{filename}"\r\n'
+        "Content-Type: application/octet-stream\r\n\r\n"
+    ).encode()
+    return head + content + f"\r\n--{boundary}--\r\n".encode(), f"multipart/form-data; boundary={boundary}"
+
+
+def write_dashboard(path: Path, dashboard: dict, limit: int = MAX_BYTES) -> int:
+    """Write compact JSON through a temporary file, so a failed run leaves no partial file.
+
+    A file over the limit is refused, naming its largest block: change the
+    prompt, never the figure."""
+    text = json.dumps(dashboard, separators=(",", ":"), ensure_ascii=False)
+    size = len(text.encode("utf-8"))
+    if size > limit:
+        largest = max(dashboard["blocks"], key=lambda block: len(json.dumps(block)))
+        raise ValueError(
+            f"{path.name} would be {size:,} bytes, over {limit:,}. Its largest block is {largest['title']!r} "
+            f"({len(json.dumps(largest)):,} bytes): rephrase the prompt."
+        )
+    path.parent.mkdir(parents=True, exist_ok=True)
+    temporary = path.with_name(path.name + ".tmp")
+    temporary.write_text(text, encoding="utf-8")
+    temporary.replace(path)
+    return size
+
+
+# --- talking to the app -------------------------------------------------------
+
+def request(method: str, url: str, *, token: str | None = None, body: dict | None = None,
+            raw: bytes | None = None, content_type: str | None = None, timeout: float = 60):
+    data = json.dumps(body).encode() if body is not None else raw
+    req = urllib.request.Request(url, data=data, method=method)
+    if body is not None:
+        req.add_header("Content-Type", "application/json")
+    elif content_type:
+        req.add_header("Content-Type", content_type)
+    if token:
+        req.add_header("Authorization", f"Bearer {token}")
+    return urllib.request.urlopen(req, timeout=timeout)
+
+
+def call(method: str, url: str, **kwargs) -> Any:
+    try:
+        with request(method, url, **kwargs) as response:
+            return json.loads(response.read().decode() or "null")
+    except urllib.error.HTTPError as exc:
+        raise RuntimeError(f"{method} {url} -> {exc.code}: {exc.read().decode()[:500]}") from None
+
+
+def login(api: str, password: str) -> str:
+    try:
+        call("POST", f"{api}/auth/register",
+             body={"email": EMAIL, "full_name": "PromptDash showcase", "password": password})
+    except RuntimeError as exc:
+        if "-> 409" not in str(exc):
+            raise
+    return call("POST", f"{api}/auth/login", body={"email": EMAIL, "password": password})["access_token"]
+
+
+def file_sources(api: str, token: str, names: list[str]) -> tuple[list[str], list[dict]]:
+    manifest = {item["file"]: item for item in json.loads((UPLOADS / "manifest.json").read_text(encoding="utf-8"))}
+    ids, sources = [], []
+    for name in names:
+        item = manifest[name]
+        content = (UPLOADS / name).read_bytes()
+        if hashlib.sha256(content).hexdigest() != item["sha256"]:
+            raise RuntimeError(f"{name} changed since it was fetched; run fetch_showcase_data.py again")
+        body, content_type = multipart("file", name, content)
+        created = call("POST", f"{api}/data-sources/upload", token=token, raw=body,
+                       content_type=content_type, timeout=300)
+        ids.append(created["id"])
+        sources.append({"name": name, "kind": "file", "rows": item["rows"], "url": item["url"],
+                        "licence": item["licence"], "licence_url": item["licence_url"], "note": item["note"]})
+    return ids, sources
+
+
+def count_rows(database: str, table: str, user: str, password: str) -> int:
+    import psycopg2
+    from psycopg2 import sql
+
+    connection = psycopg2.connect(host="localhost", port=5432, dbname=database, user=user, password=password)
+    try:
+        with connection.cursor() as cursor:
+            cursor.execute(sql.SQL("SELECT count(*) FROM {}").format(sql.Identifier(table)))
+            return int(cursor.fetchone()[0])
+    finally:
+        connection.close()
+
+
+def database_source(api: str, token: str, config: dict) -> tuple[list[str], list[dict]]:
+    db = config["database"]
+    user, password = os.environ["SHOWCASE_DB_USER"], os.environ["SHOWCASE_DB_PASSWORD"]
+    existing = [s for s in call("GET", f"{api}/data-sources", token=token) if s["display_name"] == db["display_name"]]
+    if existing:
+        source_id = existing[0]["id"]
+    else:
+        # The api container makes this connection, so the host is the compose service name.
+        source_id = call("POST", f"{api}/data-sources/db-connection", token=token, body={
+            "display_name": db["display_name"], "db_type": "postgresql",
+            "db_host": os.environ.get("SHOWCASE_DB_HOST", "postgres"), "db_port": 5432,
+            "db_name": db["db_name"], "db_username": user, "db_password": password,
+        })["id"]
+    tables = call("GET", f"{api}/data-sources/{source_id}/tables", token=token)
+    missing = [table for table in db["tables"] if table not in tables]
+    if missing:
+        raise RuntimeError(f"the {db['db_name']} database has no {missing}; AGENTS.md says how to rebuild it")
+    sources = [{"name": f"{db['db_name']}.{table}", "kind": "database",
+                "rows": count_rows(db["db_name"], table, user, password), **config["source"]}
+               for table in db["tables"]]
+    return [source_id], sources
+
+
+def build(api: str, token: str, report_id: str, prompt: str) -> tuple[list[tuple[str, dict]], float]:
+    started = time.monotonic()
+    events: list[tuple[str, dict]] = []
+    with request("POST", f"{api}/dashboard/{report_id}/blocks/dashboard", token=token,
+                 body={"brief": prompt}, timeout=900) as response:
+        for name, data in parse_sse(response):
+            events.append((name, data))
+            print(f"  [{name}] {data.get('label') or data.get('title') or ''}"[:160], file=sys.stderr)
+            if name in ("done", "error"):
+                break
+    return events, round(time.monotonic() - started, 1)
+
+
+def app_commit() -> str:
+    head = subprocess.run(["git", "rev-parse", "--short", "HEAD"], capture_output=True, text=True, check=True)
+    dirty = subprocess.run(["git", "status", "--porcelain", "--", "backend/app"], capture_output=True, text=True,
+                           check=True)
+    return head.stdout.strip() + ("-dirty" if dirty.stdout.strip() else "")
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser(description="Build one landing-page dashboard with the running app.")
+    parser.add_argument("--name", required=True, choices=sorted(SHOWCASES))
+    parser.add_argument("--base", default="http://localhost:8000")
+    parser.add_argument("--prompt", default="", help="a rephrased prompt; the default is the approved one")
+    parser.add_argument("--tries", type=int, default=1, help="prompts tried for this dashboard, counting this one")
+    parser.add_argument("--out", default="site/data/dashboards")
+    args = parser.parse_args()
+    config = SHOWCASES[args.name]
+    prompt = args.prompt or config["prompt"]
+    if len(prompt) > BRIEF_LIMIT:
+        print(f"the prompt is {len(prompt)} characters; the brief takes at most {BRIEF_LIMIT}", file=sys.stderr)
+        return 2
+    password = os.environ.get("SHOWCASE_PASSWORD")
+    if not password:
+        print("set SHOWCASE_PASSWORD: the password of this script's own local account", file=sys.stderr)
+        return 2
+    base = args.base.rstrip("/")
+    api = f"{base}/api/v1"
+
+    health = call("GET", f"{base}/health")
+    model = served_model(subprocess.run(["ps", "-axo", "command"], capture_output=True, text=True, check=True).stdout)
+    if model is None:
+        print("the model server is not running: make serve-model", file=sys.stderr)
+        return 2
+    print(f"api: {health.get('llm_backend')}; model server: {model['base']} + {model['adapter']}", file=sys.stderr)
+
+    token = login(api, password)
+    ids, sources = (database_source(api, token, config) if "database" in config
+                    else file_sources(api, token, config["files"]))
+    report = call("POST", f"{api}/dashboard", token=token,
+                  body={"title": f"Showcase: {config['title']}", "data_source_ids": ids})
+    events, seconds = build(api, token, report["id"], prompt)
+    if events and events[-1][0] == "error":
+        raise RuntimeError(f"the build failed: {events[-1][1]}")
+    record = summarize_build(events)
+    saved = call("GET", f"{api}/dashboard/{report['id']}/blocks", token=token)
+    blocks = sorted((export_block(block) for block in saved), key=lambda block: (block["y"], block["x"]))
+    dashboard = {
+        "name": args.name,
+        "title": config["title"],
+        "prompt": prompt,
+        "currency": config["currency"],
+        "sources": sources,
+        "blocks": blocks,
+        "build": {
+            "charts_planned": record["charts_planned"],
+            "charts_drawn": sum(1 for block in blocks if block["kind"] in ("chart", "metric")),
+            "skipped": record["skipped"],
+            "missing_kinds": record["missing_kinds"],
+            "seconds": seconds,
+            "prompts_tried": args.tries,
+        },
+        "model": model_record(model),
+        "app_commit": app_commit(),
+        "generated_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+    }
+    path = Path(args.out) / f"{args.name}.json"
+    size = write_dashboard(path, dashboard)
+    built = dashboard["build"]
+    print(f"wrote {path}: {size:,} bytes; {built['charts_drawn']} of {built['charts_planned']} charts drawn "
+          f"in {seconds} s; report {report['id']}", file=sys.stderr)
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())
+```
+
+- [ ] **Step 4: Run the tests**
+
+Run: `cd backend && .venv/bin/python -m pytest -q tests/test_make_showcase.py`
+Expected: 10 passed.
+
+- [ ] **Step 5: Add the Make target.** In `Makefile`, add `showcase` to the `.PHONY` list, and add this target after `smoke`. Recipe lines start with a tab.
+
+```make
+showcase: ## Build one landing-page dashboard with the running app: make showcase NAME=airbnb
+	@test -n "$(NAME)" || { echo "usage: make showcase NAME=airbnb|spotify|netflix [SHOWCASE_PROMPT=\"...\" SHOWCASE_TRIES=2]"; exit 2; }
+	@SHOWCASE_DB_USER="$$(docker exec promptdash-postgres printenv POSTGRES_USER)" \
+	 SHOWCASE_DB_PASSWORD="$$(docker exec promptdash-postgres printenv POSTGRES_PASSWORD)" \
+	 $(PY) $(BACKEND)/scripts/make_showcase.py --base $(API_BASE) --name "$(NAME)" \
+	   $(if $(SHOWCASE_PROMPT),--prompt "$(SHOWCASE_PROMPT)") --tries $(or $(SHOWCASE_TRIES),1)
+```
+
+Run: `make showcase`
+Expected: the usage line and exit code 2. (Nothing is built without `NAME`.)
+
+- [ ] **Step 6: Commit**
+
+```bash
+git add backend/scripts/make_showcase.py backend/tests/test_make_showcase.py Makefile
+git commit -m "feat(showcase): build a landing-page dashboard through the app's API and export it
+
+A new, empty report with its sources, then the prompt sent as the brief,
+as the app's Build it does. The saved blocks are exported unedited, with
+their sources, the build's events, the served adapter and the commit. A
+file over 1.5 MB is refused, naming its largest block: the prompt changes,
+the figure does not. make showcase passes the database login from the
+postgres container without printing it.
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>"
+```
+
+---
+
+### Task 6: Build the three dashboards (controller)
+
+**Files:**
+- Create: `site/data/dashboards/airbnb.json`, `site/data/dashboards/netflix.json`, and `site/data/dashboards/spotify.json` (or `shop.json`, if Task 1 chose the shop demo)
+
+- [ ] **Step 1: Check the preconditions.**
+  - `pgrep -f evaluate.py` prints nothing. An eval would share the GPU and inflate the recorded seconds.
+  - `make doctor` passes.
+  - `ps -axo command | grep "mlx_lm server"` shows `--adapter-path runs/adapters-mlx-v2`.
+  - `backend/uploads/showcase/manifest.json` exists (Task 4).
+- [ ] **Step 2: Make the account's password once and keep it out of sight:**
+
+```bash
+SP=<the controller's scratchpad directory>
+[ -s "$SP/showcase-password.txt" ] || openssl rand -hex 16 > "$SP/showcase-password.txt"
+export SHOWCASE_PASSWORD="$(cat "$SP/showcase-password.txt")"
+```
+
+- [ ] **Step 3: Build Airbnb:** `make showcase NAME=airbnb`. It takes 2 to 4 minutes. Expected: one `[status]`, `[plan]` and `[block]` line per event, then `wrote site/data/dashboards/airbnb.json: … bytes; 7 of 7 charts drawn in … s`.
+- [ ] **Step 4: Hold it to the quality bar.**
+  - Log in to http://localhost:3000 as `showcase@example.com`. This is a local test account made in this session; type its password into the page from the file, never into chat. Open "Showcase: Airbnb in Edinburgh" in View mode.
+  - Accept only if every planned chart renders and none is visibly wrong: no stacked raw rows, no empty chart, no title that does not match its chart.
+  - Check one number against the source, for example average price by room type, and compare it with the chart's hover values:
+
+```bash
+backend/.venv/bin/python -c "import pandas as pd; d = pd.read_excel('backend/uploads/showcase/listings.xlsx'); print(d.groupby('room_type')['price'].mean().round(1))"
+```
+
+- [ ] **Step 5: If it falls short, rephrase the prompt as a user would and build again.** Never edit the JSON.
+
+```bash
+make showcase NAME=airbnb SHOWCASE_PROMPT="<the rephrased prompt>" SHOWCASE_TRIES=2
+```
+
+  Each attempt starts a new, empty report, so no earlier request reaches the planner.
+- [ ] **Step 6: Build the database dashboard and Netflix the same way:** `make showcase NAME=spotify` (or `NAME=shop`), then `make showcase NAME=netflix`. Expected snags:
+  - **Spotify:** "energy vs danceability" may be drawn as a scatter of all 32,833 songs. `write_dashboard` then refuses the file and names that block. A user's rephrasing: "what makes a song popular? compare genres, how energy and danceability relate to popularity, and show me the top artists".
+  - **Netflix:** `country` holds lists such as "United States, India". A chart that counts "United States, India" as one country is visibly wrong: rephrase.
+- [ ] **Step 7: Show the owner the three dashboards** (a screenshot of each in View mode), then commit:
+
+```bash
+git add site/data/dashboards/
+git commit -m "data(site): three showcase dashboards drawn by lora-v2, unedited
+
+<For each dashboard: its charts drawn of planned, the seconds, and the
+prompts tried, with the reason for any rephrasing.>
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>"
+```
+
+---
