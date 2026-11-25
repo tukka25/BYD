@@ -10,13 +10,24 @@
 
 **Spec:** `docs/superpowers/specs/2026-11-25-promptdash-landing-page-design.md`
 
+## Departures from the spec
+
+Decided while planning. Reviewers should not flag these; the owner can overrule any of them.
+
+- **One dashboard at a time, behind tabs** (Task 10). The spec does not say how the three sit. Tabs keep the page short and load one dashboard's charts at a time. Stacking all three is a small change in `dashboard-tabs.tsx`.
+- **A "Show the code that drew this" button on each chart** (Task 10), as the app's View mode has. It shows that every chart is the model's own code, and the dashboard files carry `code` for it.
+- **No "Build it" button in the prompt box** (Task 10). The box is read-only and says what the build drew. A button that does nothing would invite clicks.
+- **On a dashboard, the planner titles the charts** (Task 11). The spec's diagram ended with the narrator, which titles single charts from the ask bar. The page says so in one line.
+- **The data story counts the 254 docs rows** (Task 11). The scraped examples were not set aside: 254 of lora-v1's 1,929 rows are docs examples rewritten to the app's contract.
+- **A fallback prompt for the shop demo** (Task 5), used only if Task 1 rules Spotify out, and approved by the owner in Task 1 if so.
+
 ## Global Constraints
 
 - Work in the main checkout, `/Users/atukka/Desktop/BYD`, on branch `feat/landing-page`, not in a worktree. The showcase needs the running stack (containers `promptdash-api`, `promptdash-postgres`, `promptdash-web`), the model server (`make serve-model`, 127.0.0.1:8080, lora-v2) and gitignored files (`backend/uploads/`, `chartist-finetune/models/`, the venvs).
 - byd-web on :3000 hot-reloads this checkout's `byd-web/app`, `lib` and `components`. Every byd-web commit leaves the app working.
 - A number with no recorded source does not go on the page.
 - Charts are never edited. When a dashboard falls short, the prompt changes the way a user would rephrase it, and the dashboard is built again. No hardcoded charts: every chart on the page is the app's unedited output.
-- Downloads need the owner's OK first, with each file's name, source and size.
+- Downloads need the owner's OK first, with each file's name, source and size. Task 1 asks once for all of them: the data files (Task 4) and `site/`'s npm packages (Task 7).
 - Never rebuild or restart a Docker container, push a branch, or create the Vercel project without the owner's OK.
 - Never print, log or commit a secret: `CLAUDE_API_KEY`, the Postgres password, the showcase account's password, access tokens.
 - Never modify or train on `chartist-finetune/data/testset.jsonl` (sha256 `bf385c59…`) or the planning test set.
@@ -113,7 +124,12 @@ Nothing here is code. It produces values that Tasks 4 and 5 use, recorded in the
 
   If the terms are unclear, recommend the shop demo.
 - [ ] **Step 4: Sizes, without downloading:** `curl -sIL <url> | grep -i '^content-length'` for each of the three files.
-- [ ] **Step 5: Ask the owner in one message:** each file's name, source URL and size, each licence with its link, and the Spotify decision. Wait for a clear yes. Anything the owner changes overrides the defaults below.
+- [ ] **Step 5: Ask the owner in one message,** and wait for a clear yes:
+  - each file's name, source URL and size, and each licence with its link;
+  - the Spotify decision (if it is the shop demo, the shop prompt in Task 5 too);
+  - Task 7's `npm install` in `site/`: the packages byd-web already uses (next 16.1.6, react 19.2.3, plotly.js-dist-min 4.3.0, Tailwind 4, ESLint 9, TypeScript 5), from the npm registry.
+
+  Anything the owner changes overrides the defaults below.
 - [ ] **Step 6: Record in the ledger:** the Airbnb snapshot date, the three URLs, each licence and its URL, and the Spotify decision. Where a recorded value differs from a constant in Task 4's or Task 5's code, that task's implementer uses the recorded value.
 
 ---
@@ -367,8 +383,8 @@ export function animateDots(node: HTMLCanvasElement, { logicalWidth }: DotOption
 
 - [ ] **Step 6: Run the checks**
 
-Run: `cd byd-web && npm test && npm run lint && npx tsc --noEmit`
-Expected: every test passes, including the 3 new ones; lint and tsc print no errors.
+Run: `cd byd-web && npm test && npm run lint && npx tsc --noEmit && npm run build`
+Expected: every test passes, including the 3 new ones; lint and tsc print no errors; the build ends with the route table. The build matters here: `lib/dot-draw.ts` is byd-web's first explicit `.ts` import, and only Turbopack proves it resolves. The app on :3000 hot-reloads this commit.
 
 - [ ] **Step 7: Commit**
 
@@ -1493,7 +1509,7 @@ cp byd-web/tsconfig.json byd-web/eslint.config.mjs byd-web/postcss.config.mjs si
 next-env.d.ts
 ```
 
-- [ ] **Step 3: Install, copy the four files, and run the test**
+- [ ] **Step 3: Install, copy the four files, and run the test.** The install is covered by the owner's OK in Task 1.
 
 Run: `cd site && npm install && mkdir -p lib && npm run sync-lib && npm test`
 Expected: 4 tests pass. Then break one copy to see the test catch it, and restore it:
@@ -2446,7 +2462,7 @@ export const DASHBOARD_DATA: Record<string, () => Promise<Dashboard>> = {
 
 import { useEffect, useRef, useState } from "react";
 import { DASHBOARD_DATA } from "@/components/dashboard-data";
-import { loadPlotly } from "@/components/plotly";
+import { loadPlotly, type PlotlyApi } from "@/components/plotly";
 import { themed } from "@/lib/plot-theme";
 
 type View = { phase: "waiting" } | { phase: "drawn" } | { phase: "failed"; message: string };
@@ -2473,6 +2489,7 @@ export function LazyChart({
     if (!node) return;
     let cancelled = false;
     let sizes: ResizeObserver | null = null;
+    let drawnWith: PlotlyApi | null = null;
 
     const draw = async () => {
       const loaded = await Promise.all([loadPlotly(), DASHBOARD_DATA[dashboard]()]).catch(() => null);
@@ -2503,11 +2520,15 @@ export function LazyChart({
         () => true,
         () => false,
       );
-      if (cancelled) return;
+      if (cancelled) {
+        if (drawn) Plotly.purge(node);
+        return;
+      }
       if (!drawn) {
         setView({ phase: "failed", message: "This chart could not be drawn" });
         return;
       }
+      drawnWith = Plotly;
       setView({ phase: "drawn" });
       sizes = new ResizeObserver(() => Plotly.Plots.resize(node));
       sizes.observe(node);
@@ -2527,9 +2548,9 @@ export function LazyChart({
       cancelled = true;
       seen.disconnect();
       sizes?.disconnect();
-      loadPlotly()
-        .then((Plotly) => Plotly.purge(node))
-        .catch(() => {});
+      // Purge only a chart this instance drew. Loading Plotly just to clean up
+      // would load it at page load, under React's development double mount.
+      drawnWith?.purge(node);
     };
   }, [dashboard, index, currency]);
 
