@@ -23,8 +23,8 @@ export function RunIt() {
             and <Code>make smoke</Code> checks the whole stack by drawing one real chart.
           </Lede>
           <Lede>
-            Dashboards are built by the local model, so your data stays on your machine. Only the optional Compare
-            models page sends anything out, to Claude.
+            Dashboards are built by the local model, so your data stays on your machine. The optional Compare models
+            page also runs the same question on Claude.
           </Lede>
           <Lede>
             The{" "}

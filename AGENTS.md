@@ -160,7 +160,7 @@
 
 ## Landing page (`site/`)
 - A static Next.js export (`output: "export"`), deployed by Vercel with root directory `site`; `site/vercel.json` skips commits that do not touch `site/`. Previews only until the repository is public (part 2).
-- Every number is in `site/data/stats.json` with its source (a JSON path, an exact quote or a sum), and `npm test` in `site/` reads each one back. Editing a quoted line in a README or here breaks that test on purpose.
+- Every number is in `site/data/stats.json` with its source (a JSON path, an exact quote or a sum), and `npm test` in `site/` reads each one back. Editing a line an entry quotes (today one, in `chartist-finetune/README.md`) breaks that test on purpose. The story carries no money and no figures (the owner's revision 2): the only numbers are the hero's two before-and-after results and the results table, and a test fails on an entry no component names.
 - `site/lib/{dot-shapes,dot-draw,plot-theme,rich-text}.ts` are byte-identical copies of byd-web's. Change byd-web's, then run `npm run sync-lib`.
 - The three dashboards are the app's own output: `backend/scripts/fetch_showcase_data.py` downloads the files into the gitignored `backend/uploads/showcase/`, then `SHOWCASE_PASSWORD=... make showcase NAME=airbnb|shop|netflix` builds each one through the API. Charts are never edited; a dashboard that falls short is rebuilt from a rephrased prompt.
 - Each dashboard has its own page at `/dashboards/<name>/` (`site/app/dashboards/[name]/page.tsx`, titles in `DASHBOARD_TITLES` in `site/lib/site.ts`); the landing page shows three cards and loads no Plotly. `trailingSlash: true` makes the export write `out/dashboards/<name>/index.html`.

@@ -83,7 +83,8 @@ export function DataPipeline() {
     <Section id="data" title="Training data, written by Claude and checked by the app">
       <Lede>
         Every training example is a job the app gives the model, paired with an answer that passed the app&apos;s
-        own checks. Claude wrote most of them, in steps.
+        own checks. Claude wrote most of them, in steps, so the adapter is distilled from that work: Claude
+        Haiku&apos;s table schemas and questions, Claude Sonnet&apos;s code, and Claude Opus&apos;s dashboard plans.
       </Lede>
 
       <dl className="mt-10 space-y-7">

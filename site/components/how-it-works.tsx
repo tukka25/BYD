@@ -66,7 +66,7 @@ const SHORT: ReactNode[] = [
   "The model reads a profile built from a sample of rows.",
   "Tool results are cut to a fixed size and marked where they were cut. The analyst and the planner see only a short note of what the tools found.",
   "One reply plans every chart on the dashboard.",
-  "Thinking is off for the analyst and the planner. With thinking on, the base model spent the planner's whole budget on an essay.",
+  "Thinking is off for the analyst and the planner. With thinking on, Qwen3.5 opens every reply with an essay.",
   "A fix sends back the model's own code and what went wrong, in plain words.",
   <>
     In the checking turn, the drafts are numbered, and <Code>preview_chart</Code> takes their numbers, so the model
