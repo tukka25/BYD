@@ -1,6 +1,14 @@
+<p align="center">
+  <a href="https://promptdash.abdalrahmantukka.tech">
+    <img src="docs/assets/promptdash.gif" width="480" alt="PromptDash: a fine-tuned small language model that analyzes your data on your own computer. Dots morph from a line chart into a bar chart, a pie chart and other chart types.">
+  </a>
+</p>
+
 # PromptDash
 
 A 9B model fine-tuned to build full dashboards and charts from one prompt. It runs on your Mac, and your data stays there.
+
+Three dashboards it built, and how it was made, are at [promptdash.abdalrahmantukka.tech](https://promptdash.abdalrahmantukka.tech).
 
 ## What it does
 
@@ -22,6 +30,16 @@ Code checks every chart plan against your real tables. A plan that names a colum
 [AGENTS.md](AGENTS.md) records the measured decisions behind this design, and [chartist-finetune/README.md](chartist-finetune/README.md) covers the fine-tune.
 
 ## Quick start on a Mac
+
+### Set it up with a coding agent
+
+If you use a coding agent such as Claude Code or Codex, paste this into it:
+
+```text
+Set up PromptDash on this Mac from https://github.com/tukka25/BYD. Clone it, read README.md and AGENTS.md, then follow the README's "Quick start on a Mac" in order and finish with make smoke. Run make doctor first and tell me what is missing. Ask me before installing anything system-wide (Docker Desktop, Python, Node.js) or downloading more than the 6 GB base model. The trained adapter is not in the repository: if chartist-finetune/cloud/artifacts/out-v2/ is empty, stop there and tell me. Put the two lines make secrets prints into .env, and never print or commit that file.
+```
+
+Or follow the steps yourself.
 
 ### What you need
 
