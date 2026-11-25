@@ -1,31 +1,31 @@
-import { Code, Lede, Section } from "@/components/section";
+import { Code, LINK, Lede, Name, Section } from "@/components/section";
 
-/* From the rented GPU to the Mac, in the order the adapter travels. */
+const RUNPOD_URL = "https://www.runpod.io";
+
+/* From the rented GPU to the Mac, in the order the adapter travels
+   (chartist-finetune/cloud/README.md). */
 const PATH = [
   { what: "LoRA training", where: "an A100 rented on Runpod" },
   { what: "PEFT adapter", where: "what the training writes" },
-  { what: "MLX adapter", where: <>translated by <Code>cloud/peft_to_mlx.py</Code></> },
+  { what: "MLX adapter", where: <>converted by <Code>cloud/peft_to_mlx.py</Code></> },
   { what: "mlx_lm server", where: "the 4-bit base model with the adapter, on the Mac" },
 ];
 
 export function Training() {
   return (
-    <Section id="training" title="Trained on a rented A100, served on a Mac">
+    <Section id="training" title="2. Training">
       <div className="space-y-5">
         <Lede>
-          The plan was to train on the Mac with MLX, and it ran out of memory. Qwen3.5 mixes ordinary attention with
-          linear-attention layers that keep a running state, and training stores that state for every token. The peak
-          was far beyond what the Mac&apos;s GPU could hold.
+          Training on my Mac ran out of memory. Qwen3.5&apos;s linear-attention layers keep a running state for every
+          token, and training needed far more than the Mac&apos;s GPU could hold.
         </Lede>
         <Lede>
-          So both adapters were trained with LoRA, each on a single A100 rented on Runpod. The adapter leaves the linear-attention
-          gates alone. Those gates scale the running state at every token, so even a small change to them compounds over a
-          long answer.
-        </Lede>
-        <Lede>
-          Training on the GPU writes a PEFT adapter, and mlx-lm loads only adapters it made itself, so a script
-          translates one into the other. On the Mac, mlx_lm&apos;s server loads the 4-bit base model with the adapter
-          on top, and the app&apos;s analyst, planner and chartist all call that one server.
+          I trained each adapter instead on a single A100 GPU rented on{" "}
+          <a href={RUNPOD_URL} className={LINK}>
+            Runpod
+          </a>
+          , with LoRA and PEFT. Training writes a PEFT adapter, which mlx_lm cannot load, so a script converts it to
+          MLX. On the Mac, mlx_lm&apos;s server runs the <Name>4-bit</Name> base model with the adapter on top.
         </Lede>
       </div>
 

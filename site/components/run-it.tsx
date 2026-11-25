@@ -1,4 +1,4 @@
-import { Code, Lede, Section } from "@/components/section";
+import { Code, LINK, Lede, Section } from "@/components/section";
 import { REPO_URL, fileUrl } from "@/lib/site";
 
 const COMMANDS = [
@@ -10,8 +10,8 @@ const COMMANDS = [
   "make smoke",
 ].join("\n");
 
-const link = "font-semibold text-pine underline underline-offset-2 hover:text-[var(--pine-press)]";
-
+/* What the Compare models page sends is read from comparison.py: the question,
+   the column names and types, and three rows of the sampled table. */
 export function RunIt() {
   return (
     <Section id="run" title="Run it on your Mac">
@@ -24,15 +24,16 @@ export function RunIt() {
           </Lede>
           <Lede>
             Dashboards are built by the local model, so your data stays on your machine. The optional Compare models
-            page also runs the same question on Claude.
+            page sends the question, the column names and types, and a few sample rows to Claude, to compare its
+            charts with the local model&apos;s.
           </Lede>
           <Lede>
             The{" "}
-            <a href={fileUrl("README.md")} className={link}>
+            <a href={fileUrl("README.md")} className={LINK}>
               README
             </a>{" "}
             has the setup, and{" "}
-            <a href={fileUrl("AGENTS.md")} className={link}>
+            <a href={fileUrl("AGENTS.md")} className={LINK}>
               AGENTS.md
             </a>{" "}
             the measured decisions behind it.

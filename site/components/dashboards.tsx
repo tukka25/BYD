@@ -18,9 +18,8 @@ export function Dashboards() {
   return (
     <Section id="dashboards" title="Three prompts, three dashboards">
       <Lede>
-        Each dashboard is the app&apos;s own output, unedited. One prompt went in, typed the way a person would type
-        it, and lora-v2 planned and drew every chart. When a build fell short, the prompt was reworded and the
-        dashboard built again; each page says whether the prompt shown was the first one tried.
+        Each dashboard below came out of one run of PromptDash. The model planned every chart and wrote the code
+        that drew it, and I edited nothing by hand.
       </Lede>
       <DashboardCards dashboards={DASHBOARDS} />
     </Section>

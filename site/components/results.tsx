@@ -1,45 +1,119 @@
 import type { ReactNode } from "react";
 import { Num } from "@/components/num";
-import { CAPTION, MEASURE, Section } from "@/components/section";
+import { CAPTION, LINK, Lede, MEASURE, Name, Section } from "@/components/section";
+import { fileUrl } from "@/lib/site";
+
+const QWEN_URL = "https://huggingface.co/Qwen/Qwen3.5-9B";
+const PLOTLY_URL = "https://plotly.com/python/";
+
+/* The base model's specs, each from a repository file the stats test reads:
+   the parameter count from chartist-finetune/README.md, the layer mix from
+   cloud/README.md (24 Gated DeltaNet layers; 8 attention layers with 4
+   projections each), and the 4-bit download from chartist-finetune/README.md. */
+const SPECS: Array<{ key: string; value: ReactNode; label: string }> = [
+  {
+    key: "parameters",
+    value: (
+      <>
+        <Num id="qwen_params" />M
+      </>
+    ),
+    label: "parameters in the language model",
+  },
+  {
+    key: "layers",
+    value: (
+      <>
+        <Num id="qwen_linear_layers" /> + <Num id="qwen_attention_layers" />
+      </>
+    ),
+    label: "linear-attention and full-attention layers",
+  },
+  {
+    key: "download",
+    value: (
+      <>
+        <Num id="base_4bit_gb" /> GB
+      </>
+    ),
+    label: "to download the 4-bit build the Mac runs",
+  },
+];
 
 type Row = { measure: string; ids: [string | null, string, string] };
 
-/* The page's one table of figures: the same tests before and after each
+/* The page's one table of results: the same tests for the base model and each
    adapter. Every value comes from data/stats.json and links to its source. */
 const GROUPS: Array<{ key: string; test: ReactNode; rows: Row[] }> = [
   {
     key: "chart",
     test: (
       <>
-        <Num id="test_questions" /> frozen chart questions, 4-bit on a Mac
+        <Num id="test_questions" /> chart questions
       </>
     ),
     rows: [
-      { measure: "Chart scripts that run", ids: ["base_render_mac", "v1_render_mac", "v2_render_mac"] },
-      { measure: "Charts of the right kind", ids: ["base_shape_mac", "v1_shape_mac", "v2_shape_mac"] },
+      { measure: "Code that ran and drew a chart", ids: ["base_render_mac", "v1_render_mac", "v2_render_mac"] },
+      { measure: "Charts of the kind asked for", ids: ["base_shape_mac", "v1_shape_mac", "v2_shape_mac"] },
     ],
   },
   {
     key: "dashboard",
     test: (
       <>
-        <Num id="plan_requests" /> frozen dashboard requests
+        <Num id="plan_requests" /> dashboard requests
       </>
     ),
     rows: [
-      { measure: "Plans that needed a retry", ids: [null, "plan_retry_v1", "plan_retry_v2"] },
-      { measure: "Drawn charts that render", ids: [null, "plan_render_v1", "plan_render_v2"] },
-      { measure: "Drawn as the planned kind", ids: [null, "plan_kind_v1", "plan_kind_v2"] },
+      { measure: "Plans that needed another try", ids: [null, "plan_retry_v1", "plan_retry_v2"] },
+      { measure: "Code that ran and drew a chart", ids: [null, "plan_render_v1", "plan_render_v2"] },
+      { measure: "Charts of the kind planned", ids: [null, "plan_kind_v1", "plan_kind_v2"] },
     ],
   },
 ];
 
 const cell = "px-2.5 py-3 sm:px-4";
 
-export function Results() {
+export function FineTuning() {
   return (
-    <Section id="results" title="Measured on questions it never saw">
-      <div className="max-w-3xl overflow-x-auto rounded-[var(--r-card)] bg-surface shadow-[var(--lift-1)]">
+    <Section
+      id="fine-tuning"
+      title={
+        <>
+          <Name>Fine-tuning</Name> <Name>Qwen3.5-9B</Name>
+        </>
+      }
+    >
+      <div className="grid gap-8 lg:grid-cols-[minmax(0,1fr)_minmax(0,21rem)] lg:gap-12">
+        <div className="space-y-5">
+          <Lede>
+            So I fine-tuned{" "}
+            <a href={QWEN_URL} className={`${LINK} whitespace-nowrap`}>
+              Qwen3.5-9B
+            </a>{" "}
+            to write chart code in{" "}
+            <a href={PLOTLY_URL} className={LINK}>
+              Plotly
+            </a>
+            , a Python charting library.
+          </Lede>
+          <Lede>
+            I trained LoRA adapters with Hugging Face&apos;s PEFT library on a rented GPU, converted them to MLX, and
+            now run them <Name>4-bit</Name> on a Mac with mlx_lm. A LoRA adapter is a small set of extra weights that
+            loads on top of the base model and leaves the model itself unchanged.
+          </Lede>
+          <Lede>
+            I made two versions. <Name>lora-v1</Name> writes chart code and nothing else. <Name>lora-v2</Name> is one
+            adapter for three jobs: the analyst, the planner and the chartist.
+          </Lede>
+        </div>
+        <SpecCard />
+      </div>
+
+      <h3 id="results" className="mt-14 font-display text-[22px] font-semibold leading-tight sm:text-[24px]">
+        Results
+      </h3>
+      <div className="mt-5 max-w-3xl overflow-x-auto rounded-[var(--r-card)] bg-surface shadow-[var(--lift-1)]">
         <table className="w-full text-left text-[15px] text-ink sm:text-[16px]">
           <thead>
             <tr className="border-b text-[14px] text-body">
@@ -88,17 +162,53 @@ export function Results() {
         </table>
       </div>
       <ul className={`mt-5 space-y-2 ${MEASURE} ${CAPTION}`}>
+        <li>Base is Qwen3.5-9B with no fine-tuning and thinking off, the better of its two settings.</li>
+        <li>I did not run the base model on the dashboard requests.</li>
         <li>
-          Base is Qwen3.5-9B with no adapter and thinking off, its best setting. With thinking on, it answers in prose,
-          and nearly every script fails before it runs.
+          A plan that needed another try failed the app&apos;s checks the first time, so lower is better on that row.
         </li>
-        <li>The base model was not run on the dashboard requests.</li>
         <li>
-          The dashboard requests use tables kept out of training, and the first three charts of each dashboard are
-          drawn and scored.
+          The dashboard requests use tables kept out of training, and the evaluation draws and scores the first three
+          charts of each dashboard.
         </li>
-        <li>Every number links to the file that recorded it.</li>
+        <li>
+          Every run is <Name>4-bit</Name> on a Mac. Each number on the cards and in this table links to the file that
+          recorded it.
+        </li>
       </ul>
     </Section>
+  );
+}
+
+/* The base model at a glance, beside the method. Each label comes first in
+   the DOM, as a definition list wants, and shows under its number. Between
+   `sm` and `lg` the card spans the column, so its figures sit in a row; from
+   `lg` it is a narrow sidebar and they stack. */
+function SpecCard() {
+  return (
+    <div className="self-start rounded-[var(--r-card)] bg-surface p-5 shadow-[var(--lift-1)] sm:p-6">
+      <p className="font-display text-[17px] font-semibold leading-snug text-ink">The base model</p>
+      <dl className="mt-4 grid gap-4 sm:grid-cols-3 sm:gap-6 lg:grid-cols-1 lg:gap-4">
+        {SPECS.map((spec) => (
+          <div key={spec.key} className="flex flex-col-reverse">
+            <dt className="mt-1.5 text-[15px] leading-snug text-body">{spec.label}</dt>
+            <dd className="whitespace-nowrap font-display text-[24px] font-bold leading-none text-ink">
+              {spec.value}
+            </dd>
+          </div>
+        ))}
+      </dl>
+      <p className={`mt-5 ${CAPTION}`}>
+        From{" "}
+        <a href={fileUrl("chartist-finetune/README.md")} className={LINK}>
+          chartist-finetune/README.md
+        </a>{" "}
+        and{" "}
+        <a href={fileUrl("chartist-finetune/cloud/README.md")} className={LINK}>
+          cloud/README.md
+        </a>
+        .
+      </p>
+    </div>
   );
 }
