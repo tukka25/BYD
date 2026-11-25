@@ -1822,6 +1822,7 @@ export function findStat(stats: readonly Stat[], id: string): Stat {
   {"id": "v2_render_pod", "value": 0.9733, "format": {"kind": "percent", "decimals": 1}, "label": "lora-v2: chart scripts that run, frozen 300, full precision", "source": {"kind": "json", "file": "chartist-finetune/cloud/eval_report_v2.json", "path": ["lora-v2", "render_rate"]}},
   {"id": "v2_shape_pod", "value": 0.87, "format": {"kind": "percent", "decimals": 1}, "label": "lora-v2: the right kind of chart, frozen 300, full precision", "source": {"kind": "json", "file": "chartist-finetune/cloud/eval_report_v2.json", "path": ["lora-v2", "right_shape_rate"]}},
   {"id": "plan_requests", "value": 120, "format": {"kind": "number", "decimals": 0}, "label": "Frozen dashboard requests in the planning evaluation", "source": {"kind": "json", "file": "chartist-finetune/data/v2/planning_eval_lora-v2.json", "path": ["summary", "rows"]}},
+  {"id": "plan_drawn_per_dashboard", "value": 3, "format": {"kind": "number", "decimals": 0}, "label": "Charts drawn per dashboard in the planning evaluation, the first ones planned", "source": {"kind": "quote", "file": "AGENTS.md", "quote": "It draws only the FIRST 3 plans of each dashboard"}},
   {"id": "plan_retry_v1", "value": 0.5416666666666666, "format": {"kind": "percent", "decimals": 1}, "label": "lora-v1: dashboards whose plan needed a retry", "source": {"kind": "json", "file": "chartist-finetune/data/v2/planning_eval_lora-v1.json", "path": ["summary", "rows_needing_retries"]}},
   {"id": "plan_retry_v2", "value": 0.125, "format": {"kind": "percent", "decimals": 1}, "label": "lora-v2: dashboards whose plan needed a retry", "source": {"kind": "json", "file": "chartist-finetune/data/v2/planning_eval_lora-v2.json", "path": ["summary", "rows_needing_retries"]}},
   {"id": "plan_render_v1", "value": 0.8636363636363636, "format": {"kind": "percent", "decimals": 1}, "label": "lora-v1: planned charts that render", "source": {"kind": "json", "file": "chartist-finetune/data/v2/planning_eval_lora-v1.json", "path": ["summary", "render_rate"]}},
@@ -1840,6 +1841,8 @@ export function findStat(stats: readonly Stat[], id: string): Stat {
   {"id": "test_questions", "value": 300, "format": {"kind": "number", "decimals": 0}, "label": "Frozen test questions", "source": {"kind": "quote", "file": "chartist-finetune/README.md", "quote": "| `data/testset.jsonl` | **300** |"}},
   {"id": "test_schemas", "value": 60, "format": {"kind": "number", "decimals": 0}, "label": "Schemas behind the frozen test questions, none seen in training", "source": {"kind": "quote", "file": "chartist-finetune/README.md", "quote": "**FROZEN.** 60 schemas, no gold answers"}},
   {"id": "v1_train_rows", "value": 1929, "format": {"kind": "number", "decimals": 0}, "label": "lora-v1 training rows", "source": {"kind": "quote", "file": "chartist-finetune/README.md", "quote": "| `data/mlx/train.jsonl` | **1,929** |"}},
+  {"id": "v1_synthetic_rows", "value": 1675, "format": {"kind": "number", "decimals": 0}, "label": "lora-v1 training rows from the synthetic pipeline", "source": {"kind": "quote", "file": "chartist-finetune/README.md", "quote": "| `data/mlx/train.jsonl` | **1,929** | 1,675 synthetic + 254 docs |"}},
+  {"id": "v1_docs_rows", "value": 254, "format": {"kind": "number", "decimals": 0}, "label": "lora-v1 training rows rewritten from the Plotly docs to the app's contract", "source": {"kind": "quote", "file": "chartist-finetune/README.md", "quote": "| `data/mlx/train.jsonl` | **1,929** | 1,675 synthetic + 254 docs |"}},
   {"id": "v2_train_rows", "value": 7321, "format": {"kind": "number", "decimals": 0}, "label": "lora-v2 training rows", "source": {"kind": "quote", "file": "AGENTS.md", "quote": "0 of lora-v2's 7,321"}},
   {"id": "v1_data_cost", "value": 5.4708, "format": {"kind": "usd", "decimals": 4}, "label": "Claude API cost of lora-v1's data", "source": {"kind": "quote", "file": "chartist-finetune/README.md", "quote": "| **Total** | | **$5.4708** |"}},
   {"id": "v2_data_cost", "value": 15.62, "format": {"kind": "usd", "decimals": 2}, "label": "Claude API cost of lora-v2's data", "source": {"kind": "quote", "file": "chartist-finetune/cloud/README.md", "quote": "Claude API for the v2 data: $15.62"}},
@@ -2788,7 +2791,8 @@ import { DashboardTabs } from "@/components/dashboard-tabs";
 import { DashboardView } from "@/components/dashboard-view";
 import { sourceKinds, validateDashboard, type Dashboard } from "@/lib/dashboard";
 
-const DASHBOARDS = [airbnb, spotify, netflix] as unknown as Dashboard[];
+// The footer credits the data from these files too.
+export const DASHBOARDS = [airbnb, spotify, netflix] as unknown as Dashboard[];
 
 // A broken file fails the build, as the tests would.
 for (const dashboard of DASHBOARDS) {
@@ -2861,3 +2865,737 @@ Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>"
 ```
 
 ---
+### Task 11: The story: journey, problem, data, training, results, how it works, run it, footer
+
+Each section is a few technical sentences and one figure, table or diagram. Every number comes from `stat()` or `<Num>`, so it comes from `stats.json`; milestones come from `journey.json`, and loss points from `loss.json`.
+
+Two corrections to the spec's outline, both true to the code:
+- **How it works:** on a dashboard the planner writes each chart's title. The narrator titles a single chart asked for in the ask bar. The diagram shows the dashboard path and says this in one line.
+- **The data:** the scraped docs were not set aside. 254 of lora-v1's 1,929 rows are docs examples rewritten to the app's contract, and the pipeline says so.
+
+**Files:**
+- Create: `site/components/section.tsx`, `site/components/num.tsx`, `site/components/journey.tsx`, `site/components/problem.tsx`, `site/components/data-pipeline.tsx`, `site/components/loss-chart.tsx`, `site/components/training.tsx`, `site/components/results.tsx`, `site/components/how-it-works.tsx`, `site/components/run-it.tsx`, `site/components/footer.tsx`
+- Modify: `site/components/numbers.ts` (add `statLabel`), `site/app/page.tsx`
+
+**Interfaces:**
+- Consumes: `stat`, `statSource` (Task 9); `fileUrl`, `commitUrl`, `REPO_URL`, `AUTHOR` (Task 9); `DASHBOARDS` (Task 10); `data/journey.json`, `data/loss.json` (Task 8).
+- Produces: `statLabel(id: string): string`; `<Num id decimals? />`; `<Section id kicker title>` and `<Lede>`; one component per section.
+
+The validation-loss charts follow the chart rules:
+- one series each, so no legend; the caption names it;
+- a 2 px line, and 8 px markers with a 2 px surface ring;
+- only the highest and lowest values labelled, in ink colours, never the series colour;
+- a native tooltip on a 22 px hit target per point, and the values again as a table for screen readers.
+
+The two runs score against different validation sets, so each gets its own chart and axis, and the text says the curves do not compare.
+
+- [ ] **Step 1: A label lookup.** Append to `site/components/numbers.ts`:
+
+```ts
+/** What a number measures, for the title of its link. */
+export function statLabel(id: string): string {
+  return findStat(ALL, id).label;
+}
+```
+
+- [ ] **Step 2: Shared pieces.** `site/components/section.tsx`:
+
+```tsx
+import type { ReactNode } from "react";
+
+/* One part of the story: a short title, a few technical sentences, then one
+   figure, table or diagram. */
+export function Section({ id, kicker, title, children }: { id: string; kicker: string; title: string; children: ReactNode }) {
+  return (
+    <section id={id} className="mx-auto max-w-6xl px-4 py-14 sm:px-8 sm:py-16">
+      <p className="font-mono text-[12px] uppercase tracking-[0.14em] text-pine">{kicker}</p>
+      <h2 className="mt-3 max-w-3xl font-display text-[28px] font-bold leading-tight sm:text-[34px]">{title}</h2>
+      <div className="mt-6">{children}</div>
+    </section>
+  );
+}
+
+export function Lede({ children }: { children: ReactNode }) {
+  return <p className="max-w-3xl text-[16px] leading-relaxed">{children}</p>;
+}
+```
+
+`site/components/num.tsx`:
+
+```tsx
+import { stat, statLabel, statSource } from "@/components/numbers";
+import { fileUrl } from "@/lib/site";
+
+/* A number that links to the file that recorded it; its title says what it measures. */
+export function Num({ id, decimals }: { id: string; decimals?: number }) {
+  const file = statSource(id);
+  const text = stat(id, decimals);
+  if (!file) return <span title={statLabel(id)}>{text}</span>;
+  return (
+    <a
+      href={fileUrl(file)}
+      title={statLabel(id)}
+      className="underline decoration-hairline-strong decoration-dotted underline-offset-4 transition-colors hover:decoration-pine"
+    >
+      {text}
+    </a>
+  );
+}
+```
+
+- [ ] **Step 3: Journey.** `site/components/journey.tsx`:
+
+```tsx
+import journey from "@/data/journey.json";
+import { Section } from "@/components/section";
+import { commitUrl } from "@/lib/site";
+
+type Milestone = { date: string; commit: string; subject: string; title: string; text: string };
+
+export function Journey() {
+  return (
+    <Section id="journey" kicker="Journey" title="From a first commit to a fine-tuned chartist">
+      <ol className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+        {(journey as Milestone[]).map((milestone) => (
+          <li key={milestone.commit} className="rounded-[var(--r-card)] bg-surface p-4 shadow-[var(--lift-1)]">
+            <p className="font-mono text-[11.5px] text-muted tabular">{milestone.date}</p>
+            <h3 className="mt-2 font-display text-[16px] font-semibold leading-snug">{milestone.title}</h3>
+            <p className="mt-1.5 text-[13.5px] leading-relaxed">{milestone.text}</p>
+            <a
+              href={commitUrl(milestone.commit)}
+              className="mt-3 inline-block font-mono text-[11.5px] text-pine underline decoration-pine/30 underline-offset-2"
+            >
+              {milestone.commit}
+            </a>
+          </li>
+        ))}
+      </ol>
+    </Section>
+  );
+}
+```
+
+- [ ] **Step 4: The problem.** `site/components/problem.tsx`:
+
+```tsx
+import type { ReactNode } from "react";
+import { stat } from "@/components/numbers";
+import { Lede, Section } from "@/components/section";
+
+const code = (text: string) => <code className="font-mono text-[12.5px]">{text}</code>;
+
+export function Problem() {
+  const rows: Array<[ReactNode, string, string]> = [
+    [<>ends with {code("print(fig.to_json())")}</>, stat("scraped_json_print"), "every time"],
+    [<>calls {code("fig.show()")}</>, stat("scraped_show"), "never"],
+    ["reads a file or URL", stat("scraped_reads"), "never"],
+    ["the prompt names the columns", stat("scraped_columns"), "every time"],
+  ];
+  return (
+    <Section id="problem" kicker="The problem" title="A capable model that writes essays, not charts">
+      <div className="grid gap-8 lg:grid-cols-2 lg:gap-12">
+        <div className="space-y-4">
+          <Lede>
+            Out of the box, Qwen3.5-9B opens every answer with a reasoning essay. On the {stat("test_questions")} frozen
+            test questions, at full precision, {stat("base_render_pod")} of its chart scripts run.
+          </Lede>
+          <Lede>
+            With thinking off it writes code: on a Mac at 4-bit, {stat("base_render_mac")} of its scripts run and{" "}
+            {stat("base_shape_mac")} draw the right kind of chart. Most of the rest fail at run time or ask for columns
+            that do not exist.
+          </Lede>
+          <Lede>
+            And the examples to hand taught the opposite of what the app needs: {stat("scraped_rows")} rows scraped from
+            plotly.com/python, measured against the app&apos;s contract.
+          </Lede>
+        </div>
+        <div className="self-start overflow-x-auto rounded-[var(--r-card)] bg-surface shadow-[var(--lift-1)]">
+          <table className="w-full text-left text-[14px]">
+            <thead>
+              <tr className="border-b text-[12px] uppercase tracking-wide text-muted">
+                <th className="px-4 py-3 font-semibold">In the scraped examples</th>
+                <th className="px-4 py-3 text-right font-semibold">Share</th>
+                <th className="px-4 py-3 font-semibold">The app needs</th>
+              </tr>
+            </thead>
+            <tbody>
+              {rows.map(([what, share, need]) => (
+                <tr key={share + need} className="border-b last:border-0">
+                  <td className="px-4 py-3">{what}</td>
+                  <td className="px-4 py-3 text-right font-semibold text-ink tabular">{share}</td>
+                  <td className="px-4 py-3 text-muted">{need}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </Section>
+  );
+}
+```
+
+- [ ] **Step 5: The data.** `site/components/data-pipeline.tsx`:
+
+```tsx
+import { stat } from "@/components/numbers";
+import { Section } from "@/components/section";
+
+export function DataPipeline() {
+  const steps = [
+    {
+      title: "Schemas and questions",
+      text: `Claude Haiku wrote ${stat("schemas")} business table schemas, each with a real CSV, and ${stat("questions")} questions a person might ask of them.`,
+    },
+    {
+      title: "Code answers",
+      text: `Claude Sonnet wrote a Plotly answer for each of ${stat("targets_attempted")} training questions.`,
+    },
+    {
+      title: "Kept only if it renders",
+      text: `Every answer ran in the app's own sandbox against its CSV. ${stat("targets_kept")} rendered and were kept.`,
+    },
+    {
+      title: "A frozen test set",
+      text: `${stat("test_questions")} questions on ${stat("test_schemas")} schemas never seen in training, frozen before the first training run.`,
+    },
+    {
+      title: "Two training sets",
+      text: `lora-v1: ${stat("v1_train_rows")} rows, ${stat("v1_synthetic_rows")} from this pipeline and ${stat("v1_docs_rows")} docs examples rewritten to the app's contract. lora-v2: ${stat("v2_train_rows")}, adding analyst and planner examples distilled from Claude Opus 5.5.`,
+    },
+  ];
+  return (
+    <Section id="data" kicker="The data" title="Training data the app's own sandbox approved">
+      <ol className="grid gap-3 md:grid-cols-2 lg:grid-cols-5">
+        {steps.map((step, index) => (
+          <li key={step.title} className="rounded-[var(--r-card)] bg-surface p-4 shadow-[var(--lift-1)]">
+            <p className="font-mono text-[11.5px] text-pine tabular">{String(index + 1).padStart(2, "0")}</p>
+            <h3 className="mt-2 font-display text-[16px] font-semibold leading-snug">{step.title}</h3>
+            <p className="mt-1.5 text-[13.5px] leading-relaxed">{step.text}</p>
+          </li>
+        ))}
+      </ol>
+      <p className="mt-4 text-[13px] text-muted">
+        The Claude API cost of the data: {stat("v1_data_cost", 2)} for lora-v1, {stat("v2_data_cost")} for lora-v2.
+      </p>
+    </Section>
+  );
+}
+```
+
+- [ ] **Step 6: The loss chart.** `site/components/loss-chart.tsx`:
+
+```tsx
+/* A validation-loss curve as an inline SVG: the page's own figure, drawn from
+   data/loss.json, which tests/loss.test.mts checks against the training
+   records. Not a model's chart. One series, so no legend: the caption names
+   it. A 2 px line, 8 px markers with a surface ring, only the highest and
+   lowest values labelled, a native tooltip per point, and the values again as
+   a table for screen readers. */
+export function LossChart({
+  label,
+  points,
+  names,
+  caption,
+}: {
+  label: string;
+  points: number[];
+  names: string[];
+  caption: string;
+}) {
+  const width = 300;
+  const height = 160;
+  const pad = { left: 46, right: 14, top: 16, bottom: 22 };
+  const max = Math.max(...points);
+  const min = Math.min(...points);
+  const x = (i: number) => pad.left + (i / (points.length - 1)) * (width - pad.left - pad.right);
+  const y = (v: number) => pad.top + ((max - v) / (max - min || 1)) * (height - pad.top - pad.bottom);
+  const path = points.map((v, i) => `${i ? "L" : "M"}${x(i).toFixed(1)} ${y(v).toFixed(1)}`).join(" ");
+
+  return (
+    <figure className="rounded-[var(--r-card)] bg-surface p-4 shadow-[var(--lift-1)]">
+      <figcaption className="flex flex-wrap items-baseline justify-between gap-x-3">
+        <span className="font-display text-[15px] font-semibold text-ink">{label} · validation loss</span>
+        <span className="text-[12px] text-muted">{caption}</span>
+      </figcaption>
+      <svg
+        viewBox={`0 0 ${width} ${height}`}
+        className="mt-3 w-full"
+        role="img"
+        aria-label={`${label} validation loss, from ${points[0]} to ${points[points.length - 1]}`}
+      >
+        <line
+          x1={pad.left}
+          x2={width - pad.right}
+          y1={height - pad.bottom}
+          y2={height - pad.bottom}
+          stroke="var(--hairline)"
+          strokeWidth={1}
+        />
+        <text x={pad.left - 8} y={y(max) + 4} textAnchor="end" fontSize={11} fill="var(--muted)">
+          {max}
+        </text>
+        <text x={pad.left - 8} y={y(min) + 4} textAnchor="end" fontSize={11} fill="var(--muted)">
+          {min}
+        </text>
+        <path d={path} fill="none" stroke="var(--pine)" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" />
+        {points.map((v, i) => (
+          <g key={names[i]}>
+            <circle cx={x(i)} cy={y(v)} r={4} fill="var(--pine)" stroke="var(--surface)" strokeWidth={2} />
+            <circle cx={x(i)} cy={y(v)} r={11} fill="transparent">
+              <title>{`${names[i]}: ${v}`}</title>
+            </circle>
+          </g>
+        ))}
+      </svg>
+      <table className="sr-only">
+        <caption>{label} validation loss</caption>
+        <tbody>
+          {points.map((v, i) => (
+            <tr key={names[i]}>
+              <th scope="row">{names[i]}</th>
+              <td>{v}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </figure>
+  );
+}
+```
+
+- [ ] **Step 7: Training.** `site/components/training.tsx`:
+
+```tsx
+import loss from "@/data/loss.json";
+import { LossChart } from "@/components/loss-chart";
+import { stat } from "@/components/numbers";
+import { Lede, Section } from "@/components/section";
+
+export function Training() {
+  const v1Names = loss.v1.points.map((_, i) => (i === 0 ? "before training" : `evaluation ${i}`));
+  const v2Names = loss.v2.steps.map((step) => `step ${step.toLocaleString("en-US")}`);
+  return (
+    <Section id="training" kicker="Training" title="LoRA on one rented A100">
+      <div className="grid gap-8 lg:grid-cols-[1fr_1.15fr] lg:gap-12">
+        <div className="space-y-4">
+          <Lede>
+            LoRA adapters on Qwen3.5-9B, trained on one A100 80 GB on Runpod at {stat("gpu_rate")} an hour.
+          </Lede>
+          <Lede>
+            lora-v1: {stat("v1_pod_time")} of pod time, validation loss {stat("v1_loss_start")} →{" "}
+            {stat("v1_loss_end")}, {stat("v1_cloud_cost", 2)} of cloud time.
+          </Lede>
+          <Lede>
+            lora-v2: {stat("v2_epochs")} epochs, {stat("v2_steps")} steps, {stat("v2_hours")} h, validation loss{" "}
+            {stat("v2_loss_start")} → {stat("v2_loss_end")}, {stat("v2_cloud_cost")} of cloud time. The two runs score
+            against different validation sets, so their curves do not compare.
+          </Lede>
+          <Lede>Each adapter is converted from PEFT to MLX and served at 4-bit on a Mac with mlx_lm, beside the app.</Lede>
+        </div>
+        <div className="grid gap-3 sm:grid-cols-2">
+          <LossChart
+            label={loss.v1.label}
+            points={loss.v1.points}
+            names={v1Names}
+            caption={`before training, then ${loss.v1.points.length - 1} evaluations`}
+          />
+          <LossChart
+            label={loss.v2.label}
+            points={loss.v2.points}
+            names={v2Names}
+            caption={`${v2Names[0]} to ${v2Names[v2Names.length - 1]}`}
+          />
+        </div>
+      </div>
+    </Section>
+  );
+}
+```
+
+- [ ] **Step 8: Results.** `site/components/results.tsx`:
+
+```tsx
+import { Num } from "@/components/num";
+import { stat } from "@/components/numbers";
+import { Section } from "@/components/section";
+
+type Row = { measure: string; ids: [string | null, string, string] };
+
+export function Results() {
+  const groups: Array<{ test: string; rows: Row[] }> = [
+    {
+      test: `Frozen ${stat("test_questions")} questions, 4-bit on a Mac`,
+      rows: [
+        { measure: "Chart scripts that run", ids: ["base_render_mac", "v1_render_mac", "v2_render_mac"] },
+        { measure: "The right kind of chart", ids: ["base_shape_mac", "v1_shape_mac", "v2_shape_mac"] },
+      ],
+    },
+    {
+      test: `Frozen ${stat("test_questions")} questions, full precision`,
+      rows: [
+        { measure: "Chart scripts that run", ids: ["base_render_pod", "v1_render_pod", "v2_render_pod"] },
+        { measure: "The right kind of chart", ids: ["base_shape_pod", "v1_shape_pod", "v2_shape_pod"] },
+      ],
+    },
+    {
+      test: `${stat("plan_requests")} frozen dashboard requests`,
+      rows: [
+        { measure: "Plans that needed a retry", ids: [null, "plan_retry_v1", "plan_retry_v2"] },
+        { measure: "Drawn charts that render", ids: [null, "plan_render_v1", "plan_render_v2"] },
+        { measure: "Drawn as the planned kind", ids: [null, "plan_kind_v1", "plan_kind_v2"] },
+      ],
+    },
+  ];
+  return (
+    <Section id="results" kicker="Results" title="Measured on questions it never saw">
+      <div className="overflow-x-auto rounded-[var(--r-card)] bg-surface shadow-[var(--lift-1)]">
+        <table className="w-full min-w-[620px] text-left text-[14px]">
+          <thead>
+            <tr className="border-b text-[12px] uppercase tracking-wide text-muted">
+              <th className="px-4 py-3 font-semibold">Test</th>
+              <th className="px-4 py-3 font-semibold">Measure</th>
+              <th className="px-4 py-3 text-right font-semibold">Base</th>
+              <th className="px-4 py-3 text-right font-semibold">lora-v1</th>
+              <th className="px-4 py-3 text-right font-semibold">lora-v2</th>
+            </tr>
+          </thead>
+          <tbody>
+            {groups.flatMap((group) =>
+              group.rows.map((row, index) => (
+                <tr
+                  key={`${group.test} ${row.measure}`}
+                  className={index === group.rows.length - 1 ? "border-b last:border-0" : ""}
+                >
+                  {index === 0 ? (
+                    <th scope="rowgroup" rowSpan={group.rows.length} className="px-4 py-3 align-top font-semibold text-ink">
+                      {group.test}
+                    </th>
+                  ) : null}
+                  <td className="px-4 py-3">{row.measure}</td>
+                  {row.ids.map((id, column) => (
+                    <td
+                      key={column}
+                      className={`px-4 py-3 text-right tabular ${column === 2 ? "font-semibold text-ink" : ""}`}
+                    >
+                      {id ? <Num id={id} /> : <span className="text-muted">not run</span>}
+                    </td>
+                  ))}
+                </tr>
+              )),
+            )}
+          </tbody>
+        </table>
+      </div>
+      <ul className="mt-4 space-y-1.5 text-[13px] leading-relaxed text-muted">
+        <li>
+          Base on the Mac runs with thinking off, its best setting. At full precision it ran with thinking on, so{" "}
+          {stat("base_render_pod")} measures its essay, not its charts.
+        </li>
+        <li>lora-v1 against lora-v2 on the Mac, chart scripts that run: exact McNemar p = {stat("v1_v2_p")}.</li>
+        <li>
+          Dashboard requests: schemas kept out of training, and the first {stat("plan_drawn_per_dashboard")} charts of
+          each dashboard drawn.
+        </li>
+        <li>Each number links to the file that recorded it.</li>
+      </ul>
+    </Section>
+  );
+}
+```
+
+- [ ] **Step 9: How it works.** `site/components/how-it-works.tsx`:
+
+```tsx
+import { stat } from "@/components/numbers";
+import { Section } from "@/components/section";
+
+export function HowItWorks() {
+  const steps = [
+    { name: "Analyst", text: "Reads a profile of every table, from its values alone, and proposes what to show." },
+    { name: "Planner", text: "Writes every chart's plan in one call: kind, table, columns, aggregation and title." },
+    {
+      name: "Plan checks",
+      text: `Test every column against the real tables. Problems go back in plain words, up to ${stat("plan_tries")} tries.`,
+    },
+    { name: "Chartist", text: "The fine-tuned model writes the Plotly code for each plan." },
+    { name: "Sandbox", text: "Runs the code on the data. Code that fails goes back to the model." },
+    {
+      name: "Drawing check",
+      text: `Lines that run back and forth and bars that stack raw rows go back too. A chart gets at most ${stat("max_repairs")} fixes.`,
+    },
+  ];
+  return (
+    <Section id="how" kicker="How the app works" title="Every chart is the model's own code">
+      <ol className="grid gap-3 md:grid-cols-3 lg:grid-cols-6">
+        {steps.map((step, index) => (
+          <li key={step.name} className="rounded-[var(--r-card)] bg-surface p-4 shadow-[var(--lift-1)]">
+            <p className="font-mono text-[11.5px] text-pine tabular">{String(index + 1).padStart(2, "0")}</p>
+            <h3 className="mt-2 font-display text-[16px] font-semibold leading-snug">{step.name}</h3>
+            <p className="mt-1.5 text-[13.5px] leading-relaxed">{step.text}</p>
+          </li>
+        ))}
+      </ol>
+      <p className="mt-4 rounded-[var(--r-card)] bg-pine-wash px-5 py-4 text-[14px] leading-relaxed text-ink">
+        <strong>No hardcoded charts.</strong> A chart the model cannot draw after {stat("max_repairs")} fixes is reported
+        as failed, never replaced by a template.
+      </p>
+      <p className="mt-3 text-[13px] text-muted">
+        A single chart asked for in plain words takes the same path, with a detective to pick its table and a narrator to
+        title it.
+      </p>
+    </Section>
+  );
+}
+```
+
+- [ ] **Step 10: Run it.** `site/components/run-it.tsx`. These are AGENTS.md's known-good commands; part 3 (setup and README) may change them, and this section changes with it.
+
+```tsx
+import { Lede, Section } from "@/components/section";
+import { REPO_URL, fileUrl } from "@/lib/site";
+
+const COMMANDS = [
+  `git clone ${REPO_URL}.git`,
+  `cd ${REPO_URL.split("/").pop()}`,
+  "make setup",
+  "make serve-model   # terminal 1: the model",
+  "make up            # terminal 2: the app, on localhost:3000",
+  "make smoke         # an end-to-end check",
+].join("\n");
+
+export function RunIt() {
+  return (
+    <Section id="run" kicker="Run it" title="Run it on your Mac">
+      <div className="grid gap-6 lg:grid-cols-2 lg:gap-12">
+        <div className="space-y-4">
+          <Lede>
+            The model runs on the host with mlx_lm, which needs Apple Silicon; the app runs in Docker beside it. Your data
+            and the model stay on your machine.
+          </Lede>
+          <Lede>
+            The{" "}
+            <a href={fileUrl("README.md")} className="text-pine underline underline-offset-2">
+              README
+            </a>{" "}
+            has the details, and{" "}
+            <a href={fileUrl("AGENTS.md")} className="text-pine underline underline-offset-2">
+              AGENTS.md
+            </a>{" "}
+            the measured decisions behind them.
+          </Lede>
+        </div>
+        <pre className="overflow-x-auto rounded-[var(--r-card)] bg-inverse p-5 font-mono text-[13px] leading-relaxed text-on-dark">
+          <code>{COMMANDS}</code>
+        </pre>
+      </div>
+    </Section>
+  );
+}
+```
+
+- [ ] **Step 11: Footer.** `site/components/footer.tsx`. Its data credits come from the dashboard files, so they follow Task 1's decisions.
+
+```tsx
+import { DASHBOARDS } from "@/components/dashboards";
+import { AUTHOR, REPO_URL } from "@/lib/site";
+
+const link = "underline decoration-hairline-strong underline-offset-2 hover:text-ink";
+
+export function Footer() {
+  return (
+    <footer className="mt-10 border-t">
+      <div className="mx-auto max-w-6xl space-y-3 px-4 py-10 text-[13px] leading-relaxed text-muted sm:px-8">
+        <p>
+          Built by{" "}
+          <a href={AUTHOR.url} className={link}>
+            {AUTHOR.handle}
+          </a>
+          . Base model: Qwen3.5-9B.{" "}
+          <a href={REPO_URL} className={link}>
+            The code is on GitHub
+          </a>
+          .
+        </p>
+        <ul className="space-y-1">
+          {DASHBOARDS.map((dashboard) => (
+            <li key={dashboard.name}>
+              <span className="text-body">{dashboard.title}:</span>{" "}
+              {[...new Set(dashboard.sources.map((source) => source.note))].join(" ")}{" "}
+              {[...new Set(dashboard.sources.map((source) => source.licence))].join(", ")}.
+            </li>
+          ))}
+        </ul>
+      </div>
+    </footer>
+  );
+}
+```
+
+- [ ] **Step 12: The whole page, in the spec's order.** `site/app/page.tsx`:
+
+```tsx
+import { Dashboards } from "@/components/dashboards";
+import { DataPipeline } from "@/components/data-pipeline";
+import { Footer } from "@/components/footer";
+import { Hero } from "@/components/hero";
+import { HowItWorks } from "@/components/how-it-works";
+import { Journey } from "@/components/journey";
+import { Problem } from "@/components/problem";
+import { Results } from "@/components/results";
+import { RunIt } from "@/components/run-it";
+import { Training } from "@/components/training";
+
+export default function Home() {
+  return (
+    <>
+      <main>
+        <Hero />
+        <Dashboards />
+        <Journey />
+        <Problem />
+        <DataPipeline />
+        <Training />
+        <Results />
+        <HowItWorks />
+        <RunIt />
+      </main>
+      <Footer />
+    </>
+  );
+}
+```
+
+- [ ] **Step 13: Lint, test and build**
+
+Run: `cd site && npm run lint && npm test && npm run build && grep -c "undefined\|NaN" out/index.html`
+Expected: no lint errors; all tests pass; the build exports `/`; the grep prints `0`.
+
+- [ ] **Step 14 (controller): Read the page in the browser,** at desktop width and with the `mobile` preset:
+  - every section renders, and each number is the one in the spec;
+  - the result numbers link to their files;
+  - each journey commit opens on GitHub (with the owner signed in while the repository is private);
+  - the loss charts show a tooltip on each point;
+  - nothing scrolls sideways at phone width, except the results table inside its own box.
+
+  Reset the viewport to `desktop` afterwards.
+
+- [ ] **Step 15: Commit**
+
+```bash
+git add site/components site/app/page.tsx
+git commit -m "feat(site): the story, from scraped docs to a measured adapter
+
+Journey, problem, data, training, results, how it works and how to run
+it, each a few sentences and one figure. Every number comes from
+stats.json and the results link each one to its file. The loss curves
+are the page's own SVG from the checked loss.json; the footer credits the
+data from the dashboard files.
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>"
+```
+
+---
+
+### Task 12: Deploy files, notes, and the final checks
+
+**Files:**
+- Create: `site/vercel.json`, `site/README.md`
+- Modify: `AGENTS.md` (a short landing page section)
+
+- [ ] **Step 1: Vercel config.** `site/vercel.json`. With the project's root directory set to `site`, `.` is `site/`:
+
+```json
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": "nextjs",
+  "ignoreCommand": "git diff --quiet HEAD^ HEAD -- ."
+}
+```
+
+- [ ] **Step 2: `site/README.md`:**
+
+````markdown
+# PromptDash landing page
+
+A static Next.js site (`output: "export"`) that tells how PromptDash's chartist was fine-tuned and shows three dashboards the app drew. Everything it shows is in `data/`; nothing is fetched from an API at run time.
+
+## Run it
+
+```bash
+npm install
+npm run dev     # http://localhost:3100
+npm test        # the copies, every number, the loss curves, the milestones, the dashboards
+npm run build   # the static site, in out/
+```
+
+## What the tests keep true
+
+- `lib/dot-shapes.ts`, `lib/dot-draw.ts`, `lib/plot-theme.ts` and `lib/rich-text.ts` are byte-identical copies of byd-web's. Change byd-web's file, then run `npm run sync-lib`.
+- Every number on the page is in `data/stats.json` with its source: a JSON path, an exact quote, or a sum. A number with no recorded source does not go on the page. Editing a quoted line in a README breaks the test on purpose: update the quote, or the number.
+- `data/loss.json` matches the training records, and `data/journey.json` cites a commit for each milestone. If the history is rewritten, find each new hash by its subject.
+- `data/dashboards/*.json` are the app's own output, unedited. Make them with `backend/scripts/fetch_showcase_data.py`, then `make showcase NAME=...` from the repository root. A dashboard that falls short is rebuilt from a rephrased prompt; its charts are never edited.
+
+## Deploying on Vercel
+
+The owner does this once:
+
+1. Import the repository in Vercel.
+2. Set the root directory to `site`. The framework is Next.js.
+3. `vercel.json` skips the build for commits that do not touch `site/`.
+4. Deploy from `main`. Until the repository is public, use preview deployments only.
+````
+
+- [ ] **Step 3: Notes for the next agent.** In `AGENTS.md`, add this section after "Frontend integration details":
+
+```markdown
+## Landing page (`site/`)
+- A static Next.js export (`output: "export"`), deployed by Vercel with root directory `site`; `site/vercel.json` skips commits that do not touch `site/`. Previews only until the repository is public (part 2).
+- Every number is in `site/data/stats.json` with its source (a JSON path, an exact quote or a sum), and `npm test` in `site/` reads each one back. Editing a quoted line in a README or here breaks that test on purpose.
+- `site/lib/{dot-shapes,dot-draw,plot-theme,rich-text}.ts` are byte-identical copies of byd-web's. Change byd-web's, then run `npm run sync-lib`.
+- The three dashboards are the app's own output: `backend/scripts/fetch_showcase_data.py` downloads the files into the gitignored `backend/uploads/showcase/`, then `SHOWCASE_PASSWORD=... make showcase NAME=airbnb|spotify|netflix` builds each one through the API. Charts are never edited; a dashboard that falls short is rebuilt from a rephrased prompt.
+- `site/data/journey.json` cites commit hashes. A history rewrite changes them, and its test says so.
+```
+
+- [ ] **Step 4: Every check, from a clean state**
+
+Run:
+
+```bash
+cd byd-web && npm test && npm run lint && npm run build && cd ..
+cd backend && .venv/bin/python -m pytest -q tests && cd ..
+cd site && npm test && npm run lint && npm run build && cd ..
+```
+
+Expected: everything passes. Report any failure with its output; do not hide it.
+
+- [ ] **Step 5 (controller): The exported site, without a dev server.** Run `python3 -m http.server 3101 -d site/out` in the background, open http://localhost:3101 in the browser pane, and check:
+  - the fonts and chunks load from the export;
+  - the hero animates;
+  - all three tabs draw their charts;
+  - the GitHub and source links point at `https://github.com/tukka25/BYD/...`;
+  - the page reads well with the `mobile` preset.
+
+  Then use `read_network_requests` to confirm that, before scrolling, neither Plotly nor a dashboard chunk has loaded. Note the total transferred. Stop the server and reset the viewport.
+- [ ] **Step 6 (controller): Design pass.** Run the `impeccable` skill's critique on the running page at desktop and phone widths. Fix what it finds within the spec, in byd-web's visual language, then repeat Step 4.
+- [ ] **Step 7: Commit**
+
+```bash
+git add site/vercel.json site/README.md AGENTS.md
+git commit -m "docs(site): how the landing page is built, checked and deployed
+
+vercel.json skips commits that do not touch site/; the README says what
+the tests keep true and how the owner sets up Vercel. AGENTS.md gets the
+rules a later change has to keep.
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>"
+```
+
+- [ ] **Step 8 (controller): Hand over to the owner.** Show screenshots of the page at desktop and phone widths, and of each dashboard. Then ask for the OK to push `feat/landing-page` and open a pull request. The owner creates the Vercel project, following `site/README.md`; the first deploy is a preview while the repository is private. Once that preview exists, open it in the browser pane and repeat Step 5's load check against it (what loads before scrolling, and the total transferred). That is the spec's performance check.
+
+---
+
+## After this plan
+
+- **Part 2 (open source)** renames the repository: change `REPO_URL` in `site/lib/site.ts`. If it rewrites history, update the hashes in `site/data/journey.json`. If it edits a quoted README line, update `site/data/stats.json`. Add the licence to the footer.
+- **Part 3 (setup and README)** may change the commands in `site/components/run-it.tsx`.
