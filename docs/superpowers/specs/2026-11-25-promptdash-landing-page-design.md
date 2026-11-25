@@ -65,12 +65,12 @@ The work happens on the branch `feat/landing-page`. `main` is what Vercel deploy
 
 Each section is a few technical sentences and one figure, table or diagram.
 
-1. **Hero.** Left: the name, one line on what PromptDash is (ask for a dashboard in plain words; a 9B model fine-tuned for Plotly writes every chart, on your own machine), a GitHub button and a link down to the dashboards. Three headline numbers: 94% of chart scripts run and 82% draw the right kind of chart (lora-v2, 4-bit, on a Mac), and about $35 to train. Right: the dot animation, morphing through all 14 chart shapes without end.
+1. **Hero.** Left: the name, one line on what PromptDash is (ask for a dashboard in plain words; a 9B model fine-tuned for Plotly writes every chart, on your own machine), a GitHub button and a link down to the dashboards. Three headline numbers: chart scripts that run and charts of the right kind, each as the base model's share → lora-v2's (94% and 82%), both on the frozen 300 at 4-bit on a Mac; and about $35 to train. Right: the dot animation, morphing through all 14 chart shapes without end.
 2. **Three dashboards.** Each one live, styled like the app's view mode, with its prompt in a fixed box below it. Then the data source and its licence, and "drawn by lora-v2, unedited", with the date.
 3. **Journey.** A strip of dated milestones read from `git log`, each citing its commit: the first commit (2026-03-07), the training data, lora-v1 (2026-11-20), lora-v2 and dashboards planned by the model (2026-11-21, `a91d276`), no hardcoded charts (2026-11-23, `7deeaa3`), the bar drawing check (2026-11-25, `2d7af93`).
 4. **The problem.**
-   - Out of the box, Qwen3.5-9B answers with a reasoning essay, and 7.7% of its chart scripts run.
-   - With thinking off, 62.7% run, but only 23.7% draw the right chart. These are 118 questions weighted towards the four hardest chart types (every area, heatmap, gauge and treemap/funnel/waterfall question, plus 4 of each other type), where lora-v1 scores 91.5% and 68.6%.
+   - Out of the box, Qwen3.5-9B answers with a reasoning essay, and 7.7% of its chart scripts run (frozen 300, full precision).
+   - With thinking off, on the same 300 questions at 4-bit on a Mac, more of its scripts run, but few draw the right kind of chart: the base row of the results table.
    - The scraped Plotly docs taught the opposite of what the app needs. Table: 0% end with `print(fig.to_json())`, 96.1% call `fig.show()`, 46.9% read a file or URL, 3.3% of prompts mention columns.
 5. **The data.** A pipeline diagram:
    - 970 scraped rows, set aside as training data.
@@ -86,10 +86,10 @@ Each section is a few technical sentences and one figure, table or diagram.
    - Converted from PEFT to MLX and served 4-bit on a Mac with `mlx_lm`. A validation-loss chart for both runs.
 7. **Results.** One table. Each row names its test set and links to its source file on GitHub:
    - Frozen 300, full precision: renders 7.7% → 91.3% → 97.3%; right shape 4.7% → 81.0% → 87.0% (base → lora-v1 → lora-v2).
-   - Frozen 300 on a Mac, 4-bit: lora-v1 89.3% / 76.3% → lora-v2 94.3% / 82.3% (paired p = 0.020).
-   - Base with thinking off against lora-v1, on the 118 questions weighted to the hardest chart types: 62.7% / 23.7% against 91.5% / 68.6%. This set is never set beside the frozen 300: no row reads 23.7% → 82.3%.
+   - Frozen 300 on a Mac, 4-bit, one harness (`evaluate.py`, greedy, 1,024-token cap): base with thinking off → lora-v1 89.3% / 76.3% → lora-v2 94.3% / 82.3% (render / right kind; v1 → v2 paired p = 0.020). This is the headline row: same questions, same precision, same harness for all three.
    - 120 frozen dashboard requests: needing a retry 54.2% → 12.5%; drawn charts that render 86.4% → 98.9%; drawn as the planned kind 84.9% → 98.9%.
-   - A note: 7.7% measures the essay; 62.7% is the fair baseline.
+   - A note: 7.7% measures the essay. The fair baseline is the base model with thinking off on the same 300 questions, its best setting.
+   - The 118-question set of `ab_planner_hint.json` is not on the page: it is weighted to the hardest chart types, and the frozen 300 now has a base row of its own.
 8. **How the app works.** One diagram: analyst → planner → plan checks against the real tables (up to 3 tries) → chartist writes Plotly code → sandbox runs it → drawing check (up to 2 fixes) → narrator writes the title. With the rule: no hardcoded charts; every chart is the model's own code or is reported failed.
 9. **Run it yourself.** Clone, `make setup`, `make serve-model`, `make up`. MLX needs Apple Silicon. Link to the README.
 10. **Footer.** Built by @tukka25. Data credits: Inside Airbnb (CC BY 4.0), Spotify songs through TidyTuesday, the Netflix catalogue by Shivam Bansal on Kaggle through TidyTuesday. Base model: Qwen3.5-9B. The repository's licence, once part 2 chooses it.
@@ -100,11 +100,15 @@ Each section is a few technical sentences and one figure, table or diagram.
 |---|---|
 | Frozen 300, full precision (base, lora-v1, lora-v2) | `chartist-finetune/cloud/README.md`, `cloud/eval_report.json`, `cloud/eval_report_v2.json` |
 | Frozen 300 on a Mac | `chartist-finetune/data/eval_report_local_v1.json`, `eval_report_local_v2.json`; p = 0.020 from `cloud/README.md` |
-| Base with thinking off, 118 questions | `chartist-finetune/data/ab_planner_hint.json` (`summary.A_base_nothink`) |
+| Frozen 300 on a Mac, base with thinking off | `chartist-finetune/data/eval_report_local_base_nothink.json` (key `base-nothink`), from `evaluate.py --no-thinking` (`c416ee1`) |
 | 120 dashboard requests | `chartist-finetune/data/v2/planning_eval_lora-v1.json`, `planning_eval_lora-v2.json` |
 | Scraped docs table, dataset sizes, data cost | `chartist-finetune/README.md`, `chartist-finetune/cloud/README.md`, `AGENTS.md` |
 | Training time, loss, GPU cost | `chartist-finetune/cloud/README.md` |
 | About $35 in all | sum of lora-v1 ($10.81) and lora-v2 ($15.62 data + $8.42 cloud) |
+
+### The baseline run
+
+Added at review, 2026-11-25. The base model, Qwen3.5-9B at 4-bit with no adapter and `enable_thinking=False`, scored on the frozen 300 by `evaluate.py`: the harness, test set (sha256 `bf385c59…`), token cap and decoding that produced lora-v1's and lora-v2's local reports. Base gets its best setting: with thinking on, its essay leaves almost no code inside the cap. Run on the Mac, under an hour, beside the idle model server.
 
 ## Making the three dashboards
 
