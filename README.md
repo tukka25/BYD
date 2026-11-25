@@ -36,7 +36,7 @@ Code checks every chart plan against your real tables. A plan that names a colum
 If you use a coding agent such as Claude Code or Codex, paste this into it:
 
 ```text
-Set up PromptDash on this Mac from https://github.com/tukka25/BYD. Clone it, read README.md and AGENTS.md, then follow the README's "Quick start on a Mac" in order and finish with make smoke. Run make doctor first and tell me what is missing. Ask me before installing anything system-wide (Docker Desktop, Python, Node.js) or downloading more than the 6 GB base model. The trained adapter is not in the repository: if chartist-finetune/cloud/artifacts/out-v2/ is empty, stop there and tell me. Put the two lines make secrets prints into .env, and never print or commit that file.
+Set up PromptDash on this Mac from https://github.com/tukka25/promptdash. Clone it, read README.md and AGENTS.md, then follow the README's "Quick start on a Mac" in order and finish with make smoke. Run make doctor first and tell me what is missing. Ask me before installing anything system-wide (Docker Desktop, Python, Node.js) or downloading more than the 6 GB base model. The trained adapter is not in the repository: if chartist-finetune/cloud/artifacts/out-v2/ is empty, stop there and tell me. Put the two lines make secrets prints into .env, and never print or commit that file.
 ```
 
 Or follow the steps yourself.
@@ -52,8 +52,8 @@ Or follow the steps yourself.
 ### 1. Clone and install
 
 ```bash
-git clone https://github.com/tukka25/BYD.git
-cd BYD
+git clone https://github.com/tukka25/promptdash.git
+cd promptdash
 make setup
 ```
 
