@@ -90,13 +90,13 @@ darkened pairs, now tokens rather than hex literals in components:
 
 Pine, copper and slate lead so a chart looks like the rest of the app on
 sight; 4–8 extend without colliding in hue, and none of them is purple. The
-order is applied as Plotly's `colorway` in `components/plot.tsx`.
+order is applied as Plotly's `colorway` in `lib/plot-theme.ts`.
 
 > **`colorway` alone does not re-theme a figure, and this doc used to claim it
 > did.** Plotly Express bakes an explicit colour onto every trace from its own
 > default sequence, and an explicit trace colour beats `layout.colorway`. So
 > every generated chart kept Plotly's `#636efa` blue while the rest of the app
-> was re-themed. `plot.tsx` now swaps a trace colour **only** when it matches a
+> was re-themed. `lib/plot-theme.ts` now swaps a trace colour **only** when it matches a
 > known Plotly default (the `plotly` and `D3` sequences), replacing it with our
 > series by trace index. Any other colour is left alone: a colour the model
 > actually chose is authoring, and re-theming is not re-authoring.
@@ -399,7 +399,7 @@ Plotly is **bundled** (`plotly.js-dist-min`, imported lazily), not loaded from
 `cdn.plot.ly`. The CDN script broke the local-only claim on every chart and
 pinned the browser to a Plotly older than the one producing the figures.
 
-The model writes whatever Plotly it likes, so `components/plot.tsx` re-themes
+The model writes whatever Plotly it likes, so `lib/plot-theme.ts` re-themes
 every figure on the way in. What we override:
 
 - `colorway` → our series, plus a per-trace swap of Plotly's own default
