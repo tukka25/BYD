@@ -54,7 +54,7 @@ SHOWCASES: dict[str, dict[str, Any]] = {
         "prompt": "how is my shop doing? revenue by month, which product categories sell best, and which customer regions spend the most",
         "tries": 1,
         "database": {"display_name": "Shop demo", "db_name": "shop", "tables": ["orders", "customers", "products", "visits"]},
-        "source": {"url": "https://github.com/tukka25/BYD/blob/main/backend/scripts/make_relational_demo.py",
+        "source": {"url": "https://github.com/tukka25/promptdash/blob/main/backend/scripts/make_relational_demo.py",
                    "licence": "synthetic, made for this project", "licence_url": "",
                    "note": "Seeded by backend/scripts/make_relational_demo.py: four tables, joined by their declared keys."},
         "currency": "",
