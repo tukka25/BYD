@@ -3835,3 +3835,45 @@ Spec: "Revision 2" at the end of the spec. Ledger: the "FINAL REVIEW" and "OWNER
 - Footer: each source credited once (no repeated Airbnb note; capitalised licence lines).
 - Hero figures never wrap mid-figure at 1024 px.
 - Lint, test, build; check at desktop and 375 px (controller); commit.
+
+### Task B4: A preview of each dashboard on its card
+
+The owner's words: "for the cards, show like kind of a sneak peek photo of the graphs under it to know". Each landing card gets, under its title, a picture of the top of that dashboard, captured from the dashboard's own page. The dashboard pages themselves are unchanged: they still draw live Plotly charts and never show an image standing in for a chart.
+
+**Files:**
+- Create: `site/scripts/previews.mjs` (the capture script), `site/public/previews/{airbnb,shop,netflix}.webp` (generated and committed), `site/data/previews.json` (the record of what was captured), `site/tests/previews.test.mts`.
+- Modify: `site/components/dashboard-cards.tsx` (the image), `site/components/dashboard-view.tsx` (data attributes only, no visual change), `site/next.config.ts` (`images: { unoptimized: true }` if you use `next/image`), `site/package.json` (script `"previews": "node scripts/previews.mjs"`), `site/README.md`, `AGENTS.md` (one bullet in "Landing page (`site/`)").
+
+**1. The capture script (`npm run previews`)**
+- Node 24 built-ins only (global `fetch` and `WebSocket`, `node:child_process`, `node:http`, `node:crypto`, `node:fs`). No npm dependency and no download.
+- Chrome: the `CHROME` environment variable, else `/Applications/Google Chrome.app/Contents/MacOS/Google Chrome`. A missing browser is an error that names both.
+- Launch with a fresh temporary `--user-data-dir` (removed afterwards; without it a running Chrome swallows the launch), `--headless=new`, a remote-debugging port, `--no-first-run`, `--no-default-browser-check`, `--hide-scrollbars`. Drive it over the DevTools protocol.
+- Serve `site/out/` itself on `127.0.0.1` with an ephemeral port (port 0): `/x/` resolves to `/x/index.html`, content types for html, js, css, json, woff2, webp, svg and png, and no path outside `out/`. Never use :3100 or :3101.
+- Refuse to run when `out/` is missing, or older than the newest file under `site/app`, `site/components`, `site/lib` or `site/data/dashboards`: tell the user to run `npm run build` first.
+- For each `site/data/dashboards/*.json`, sorted by name, open `/dashboards/<name>/`:
+  - viewport 1100 CSS px wide at device scale factor 1, then taller than the whole page (its `scrollHeight` plus 200 px). At a normal height the sticky prompt box floats over the charts and charts outside the 600 px observer margin never draw.
+  - Wait for `document.fonts.ready`, and until the page holds `build.charts_drawn` elements matching `.js-plotly-plot`, each with a `.main-svg`, and no chart shows a failure message. Time out after 60 s per dashboard with an error naming it.
+- The crop, one rule for all three (change the rule, never one dashboard): the grid's full width, from the top of its first block that is not a note, at an aspect of 16:10, cut at the grid's bottom if the grid is shorter. Find the grid and its blocks through data attributes added to `dashboard-view.tsx` (for example `data-preview-grid` and `data-block-kind`), not through class names.
+- Capture with `Page.captureScreenshot`, `format: "webp"`, quality 82, `captureBeyondViewport: true`, and a `clip` whose `scale` makes the output 720 px wide (about twice the card's image slot). If this Chrome refuses webp, fail with a message; never switch formats silently.
+- Write `site/public/previews/<name>.webp`, then `site/data/previews.json`: `{ "made_by": "scripts/previews.mjs", "viewport_width": 1100, "crop": "<the rule in words>", "dashboards": { "<name>": { "file": "/previews/<name>.webp", "width": 720, "height": <px>, "sha256": "<hex sha256 of the dashboard JSON file's bytes>" } } }`.
+- Exit non-zero on any failure. Always stop Chrome and the server and remove the temporary profile, including on failure.
+
+**2. The card (`dashboard-cards.tsx`)**
+- Under the title row (title and source kinds), above the quoted prompt: the preview at the full width of the card's content box, with its own `width` and `height` from `data/previews.json`, `loading="lazy"`, `decoding="async"` and `alt=""` (the link is already named by its h3).
+- The card radius of byd-web's design, a hairline ring, and the sunken surface behind it while it loads. Follow `antislop-ui`, `antislop-layoutmobile` and `byd-web/DESIGN.md`.
+- Keep `DashboardCards` a server component. At desktop width the three cards keep aligned rows (title, preview, prompt, link); at 375 px they stack with no horizontal scroll.
+
+**3. What must stay true**
+- The landing page loads no Plotly: no chunk referenced by `site/out/index.html` contains "plotly".
+- The dashboard pages draw live charts; nothing there is an image of a chart.
+- `site/lib/{dot-shapes,dot-draw,plot-theme,rich-text}.ts` and `site/data/dashboards/*.json` are not touched.
+
+**4. The test (`tests/previews.test.mts`)**
+For every `site/data/dashboards/*.json`, `data/previews.json` has an entry whose `sha256` equals the sha256 of the file's current bytes (a mismatch fails with "run npm run build && npm run previews"); the image exists, is under 150 KB, and its WebP header's width and height equal the entry's (parse the RIFF container: `VP8 `, `VP8L` and `VP8X` chunks). No entry names a dashboard that does not exist.
+
+**5. Docs**
+- `site/README.md`: what the previews are, `npm run build && npm run previews` (Google Chrome, or `CHROME=<path>`), and that they must be re-captured after a dashboard changes or after a change to how dashboards are drawn (the test catches only the first).
+- `AGENTS.md`, "Landing page (`site/`)": one bullet saying the same in a line.
+
+**6. Order**
+Make the code changes, `npm run build`, `npm run previews`, look at the three images (Read shows them) and adjust the rule if one is mostly empty, `npm run build` again so the images are in `out/`, then `npm run lint && npm test`. Commit with the images.

@@ -211,3 +211,10 @@ Replaces the parts above where they disagree.
 - **Wording** follows the `no-ai-slop` and `antislop-copywriting` skills; **layout** follows `antislop`, `antislop-ui` and `antislop-layoutmobile`.
 - **Readability:** larger, darker body text.
 - The final review's fixes ship with this revision (plan Part B).
+
+## Revision 3 (2026-11-25, the owner, after the story rewrite)
+
+Replaces the parts above where they disagree.
+
+- **A preview on each card.** The owner asked for "a sneak peek photo of the graphs" on each dashboard card. Under its title, each card shows a picture of the top of that dashboard, captured from the dashboard's own page in headless Chrome by `site/scripts/previews.mjs` and committed as WebP. The "not screenshots" and "never an image standing in for the chart" rules now apply to the dashboard pages only: those still draw live Plotly charts. The landing page still loads no Plotly. A test fails when a dashboard file changes without a new preview.
+- **Tool names, corrected.** The default explore step (`PLANNER_TOOLS=on`) offers `find_columns`, `inspect_column`, `relationship` and `preview`; `preview_chart` and `row_grain` belong to the optional checking turn (`PLANNER_TOOLS=planner`). The page names all six with their modes.
