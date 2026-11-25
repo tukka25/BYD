@@ -77,6 +77,78 @@ export function sourceKinds(dashboard: Pick<Dashboard, "sources">): string {
   return [...new Set(kinds)].join(" + ");
 }
 
+/** A note's sentences. A sentence ends at a full stop, question or exclamation
+    mark followed by a space and a capital, so `make_relational_demo.py:` stays
+    inside its sentence. */
+export function sentences(text: string): string[] {
+  return text
+    .split(/(?<=[.!?])\s+(?=[A-Z])/)
+    .map((sentence) => sentence.trim())
+    .filter(Boolean);
+}
+
+/** The sentences every note shares, to print once, and what is left of each
+    note, to print beside its own source. Both Airbnb notes open with "Inside
+    Airbnb, Edinburgh, snapshot 2026-09-19."; that sentence is said once. */
+export function splitNotes(notes: string[]): { shared: string; own: string[] } {
+  const split = notes.map(sentences);
+  const shared = (split[0] ?? []).filter((sentence) => split.every((list) => list.includes(sentence)));
+  return {
+    shared: shared.join(" "),
+    own: split.map((list) => list.filter((sentence) => !shared.includes(sentence)).join(" ")),
+  };
+}
+
+type Licence = Pick<DashboardSource, "licence" | "licence_url">;
+
+/** Each distinct licence once, in source order, so four tables under one licence credit it once. */
+export function licences(sources: Licence[]): Licence[] {
+  const seen = new Set<string>();
+  return sources
+    .filter((source) => {
+      const key = `${source.licence}\n${source.licence_url}`;
+      if (seen.has(key)) return false;
+      seen.add(key);
+      return true;
+    })
+    .map(({ licence, licence_url }) => ({ licence, licence_url }));
+}
+
+/** The first letter as a capital: "synthetic, made for this project" opens a sentence on the page. */
+export function capitalise(text: string): string {
+  return text.charAt(0).toUpperCase() + text.slice(1);
+}
+
+/** What a dashboard's data is, said once: what all its notes share, or, when
+    they share nothing, the first sentence of each, without repeats. */
+export function creditLine(sources: Pick<DashboardSource, "note">[]): string {
+  const { shared } = splitNotes(sources.map((source) => source.note));
+  if (shared) return shared;
+  return [...new Set(sources.map((source) => sentences(source.note)[0] ?? ""))].filter(Boolean).join(" ");
+}
+
+const ORDINALS = ["first", "second", "third", "fourth", "fifth", "sixth", "seventh", "eighth", "ninth", "tenth"];
+
+/** 1 -> "first" ... 10 -> "tenth", then 11th, 12th, 21st, 22nd. */
+export function ordinal(n: number): string {
+  if (Number.isInteger(n) && n >= 1 && n <= ORDINALS.length) return ORDINALS[n - 1];
+  const teen = n % 100 >= 11 && n % 100 <= 13;
+  const suffix = teen ? "th" : (["th", "st", "nd", "rd"][n % 10] ?? "th");
+  return `${n}${suffix}`;
+}
+
+/** The line under a dashboard's prompt, from its build record: whether the
+    prompt shown was the first one tried, and whether every planned chart was
+    drawn. Only a shortfall is given as a count. */
+export function buildLine(build: Pick<Dashboard["build"], "prompts_tried" | "charts_planned" | "charts_drawn">): string {
+  const tried = `Sent as typed, the ${ordinal(build.prompts_tried)} prompt tried.`;
+  const drawn =
+    build.charts_drawn >= build.charts_planned
+      ? "Every planned chart was drawn."
+      : `${build.charts_drawn} of ${build.charts_planned} planned charts were drawn.`;
+  return `${tried} ${drawn}`;
+}
+
 /** What is wrong with a dashboard file, in words. Empty when it is fit to show. */
 export function validateDashboard(value: unknown, bytes: number): string[] {
   if (!value || typeof value !== "object") return ["not a JSON object"];

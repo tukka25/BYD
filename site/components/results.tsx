@@ -1,85 +1,93 @@
 import { Num } from "@/components/num";
 import { stat } from "@/components/numbers";
-import { Section } from "@/components/section";
+import { CAPTION, MEASURE, Section } from "@/components/section";
 
 type Row = { measure: string; ids: [string | null, string, string] };
 
+/* The page's one table of figures: the same tests before and after each
+   adapter. Every value comes from data/stats.json and links to its source. */
+const GROUPS: Array<{ test: string; rows: Row[] }> = [
+  {
+    test: `${stat("test_questions")} frozen chart questions, 4-bit on a Mac`,
+    rows: [
+      { measure: "Chart scripts that run", ids: ["base_render_mac", "v1_render_mac", "v2_render_mac"] },
+      { measure: "Charts of the right kind", ids: ["base_shape_mac", "v1_shape_mac", "v2_shape_mac"] },
+    ],
+  },
+  {
+    test: `${stat("plan_requests")} frozen dashboard requests`,
+    rows: [
+      { measure: "Plans that needed a retry", ids: [null, "plan_retry_v1", "plan_retry_v2"] },
+      { measure: "Drawn charts that render", ids: [null, "plan_render_v1", "plan_render_v2"] },
+      { measure: "Drawn as the planned kind", ids: [null, "plan_kind_v1", "plan_kind_v2"] },
+    ],
+  },
+];
+
+const cell = "px-2.5 py-3 sm:px-4";
+
 export function Results() {
-  const groups: Array<{ test: string; rows: Row[] }> = [
-    {
-      test: `Frozen ${stat("test_questions")} questions, 4-bit on a Mac`,
-      rows: [
-        { measure: "Chart scripts that run", ids: ["base_render_mac", "v1_render_mac", "v2_render_mac"] },
-        { measure: "The right kind of chart", ids: ["base_shape_mac", "v1_shape_mac", "v2_shape_mac"] },
-      ],
-    },
-    {
-      test: `Frozen ${stat("test_questions")} questions, full precision`,
-      rows: [
-        { measure: "Chart scripts that run", ids: ["base_render_pod", "v1_render_pod", "v2_render_pod"] },
-        { measure: "The right kind of chart", ids: ["base_shape_pod", "v1_shape_pod", "v2_shape_pod"] },
-      ],
-    },
-    {
-      test: `${stat("plan_requests")} frozen dashboard requests`,
-      rows: [
-        { measure: "Plans that needed a retry", ids: [null, "plan_retry_v1", "plan_retry_v2"] },
-        { measure: "Drawn charts that render", ids: [null, "plan_render_v1", "plan_render_v2"] },
-        { measure: "Drawn as the planned kind", ids: [null, "plan_kind_v1", "plan_kind_v2"] },
-      ],
-    },
-  ];
   return (
-    <Section id="results" kicker="Results" title="Measured on questions it never saw">
-      <div className="overflow-x-auto rounded-[var(--r-card)] bg-surface shadow-[var(--lift-1)]">
-        <table className="w-full min-w-[620px] text-left text-[14px]">
+    <Section id="results" title="Measured on questions it never saw">
+      <div className="max-w-3xl overflow-x-auto rounded-[var(--r-card)] bg-surface shadow-[var(--lift-1)]">
+        <table className="w-full text-left text-[15px] text-ink sm:text-[16px]">
           <thead>
-            <tr className="border-b text-[12px] uppercase tracking-wide text-muted">
-              <th className="px-4 py-3 font-semibold">Test</th>
-              <th className="px-4 py-3 font-semibold">Measure</th>
-              <th className="px-4 py-3 text-right font-semibold">Base</th>
-              <th className="px-4 py-3 text-right font-semibold">lora-v1</th>
-              <th className="px-4 py-3 text-right font-semibold">lora-v2</th>
+            <tr className="border-b text-[14px] text-body">
+              <th scope="col" className={`${cell} font-semibold`}>
+                Measure
+              </th>
+              <th scope="col" className={`${cell} whitespace-nowrap text-right font-semibold`}>
+                Base
+              </th>
+              <th scope="col" className={`${cell} whitespace-nowrap text-right font-semibold`}>
+                lora-v1
+              </th>
+              <th scope="col" className={`${cell} whitespace-nowrap text-right font-semibold`}>
+                lora-v2
+              </th>
             </tr>
           </thead>
-          <tbody>
-            {groups.flatMap((group) =>
-              group.rows.map((row, index) => (
-                <tr
-                  key={`${group.test} ${row.measure}`}
-                  className={index === group.rows.length - 1 ? "border-b last:border-0" : ""}
+          {GROUPS.map((group) => (
+            <tbody key={group.test} className="border-b last:border-0">
+              <tr>
+                <th
+                  scope="rowgroup"
+                  colSpan={4}
+                  className={`${cell} bg-sunken/60 font-display text-[15px] font-semibold text-ink sm:text-[16px]`}
                 >
-                  {index === 0 ? (
-                    <th scope="rowgroup" rowSpan={group.rows.length} className="px-4 py-3 align-top font-semibold text-ink">
-                      {group.test}
-                    </th>
-                  ) : null}
-                  <td className="px-4 py-3">{row.measure}</td>
+                  {group.test}
+                </th>
+              </tr>
+              {group.rows.map((row) => (
+                <tr key={row.measure}>
+                  <th scope="row" className={`${cell} font-normal`}>
+                    {row.measure}
+                  </th>
                   {row.ids.map((id, column) => (
                     <td
                       key={column}
-                      className={`px-4 py-3 text-right tabular ${column === 2 ? "font-semibold text-ink" : ""}`}
+                      className={`${cell} whitespace-nowrap text-right tabular ${column === 2 ? "font-semibold" : ""}`}
                     >
-                      {id ? <Num id={id} /> : <span className="text-muted">not run</span>}
+                      {id ? <Num id={id} /> : <span className="text-[14px] text-body">not run</span>}
                     </td>
                   ))}
                 </tr>
-              )),
-            )}
-          </tbody>
+              ))}
+            </tbody>
+          ))}
         </table>
       </div>
-      <ul className="mt-4 space-y-1.5 text-[13px] leading-relaxed text-muted">
+      <ul className={`mt-5 space-y-2 ${MEASURE} ${CAPTION}`}>
         <li>
-          Base on the Mac runs with thinking off, its best setting. At full precision it ran with thinking on, so{" "}
-          {stat("base_render_pod")} measures its essay, not its charts.
+          Base is Qwen3.5-9B with no adapter and thinking off, its best setting. With thinking on, it answers in prose,
+          and nearly every script fails before it runs.
         </li>
-        <li>lora-v1 against lora-v2 on the Mac, chart scripts that run: exact McNemar p = {stat("v1_v2_p")}.</li>
+        <li>The base model was not run on the dashboard requests.</li>
         <li>
-          Dashboard requests: schemas kept out of training, and the first {stat("plan_drawn_per_dashboard")} charts of
-          each dashboard drawn.
+          The dashboard requests use tables kept out of training, and the first three charts of each dashboard are
+          drawn and scored.
         </li>
-        <li>Each number links to the file that recorded it.</li>
+        <li>Every number links to the file that recorded it.</li>
       </ul>
     </Section>
   );

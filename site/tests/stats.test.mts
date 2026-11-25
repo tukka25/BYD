@@ -1,6 +1,6 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { readFileSync } from "node:fs";
+import { readFileSync, readdirSync } from "node:fs";
 import { findStat, formatStat, type Stat } from "../lib/stats.ts";
 
 const ROOT = new URL("../../", import.meta.url);
@@ -45,6 +45,22 @@ test("ids are unique and every entry says what it measures", () => {
 
 test("an unknown id fails loudly", () => {
   assert.throws(() => findStat(stats, "no_such_stat"), /no stat with id no_such_stat/);
+});
+
+/* An id the page asks for and the file lacks fails the build (findStat throws).
+   The other way round: an entry no component names is a number the page no
+   longer shows, and it goes. */
+test("every entry is shown somewhere on the page", () => {
+  const sources = ["../components/", "../app/"].flatMap((dir) =>
+    (readdirSync(new URL(dir, import.meta.url), { recursive: true }) as string[])
+      .filter((name) => /\.tsx?$/.test(name))
+      .map((name) => readFileSync(new URL(dir + name, import.meta.url), "utf8")),
+  );
+  const unused = stats.filter((stat) => !sources.some((text) => text.includes(`"${stat.id}"`)));
+  assert.deepEqual(
+    unused.map((stat) => stat.id),
+    [],
+  );
 });
 
 for (const stat of stats) {

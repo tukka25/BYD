@@ -3,9 +3,16 @@ import assert from "node:assert/strict";
 import { readFileSync, readdirSync, statSync } from "node:fs";
 import {
   blockHeight,
+  buildLine,
+  capitalise,
+  creditLine,
   gridPlacement,
   isIndicator,
+  licences,
+  ordinal,
+  sentences,
   sourceKinds,
+  splitNotes,
   validateDashboard,
   type Dashboard,
 } from "../lib/dashboard.ts";
@@ -104,4 +111,66 @@ test("every committed dashboard has a title and a data loader", () => {
     assert.match(loaders, new RegExp(`^  ${name}: `, "m"), `${name} has no key in DASHBOARD_DATA`);
   }
   assert.deepEqual(Object.keys(DASHBOARD_TITLES).sort(), files.map((f) => f.replace(/\.json$/, "")).sort());
+});
+
+const real = (name: string): Dashboard => JSON.parse(readFileSync(new URL(`${name}.json`, DIR), "utf8"));
+
+test("a note splits at a full stop and a capital, never inside a file name", () => {
+  assert.deepEqual(sentences("Inside Airbnb, Edinburgh, snapshot 2026-09-19. As published."), [
+    "Inside Airbnb, Edinburgh, snapshot 2026-09-19.",
+    "As published.",
+  ]);
+  const seeded = "Seeded by backend/scripts/make_relational_demo.py: four tables, joined by their declared keys.";
+  assert.deepEqual(sentences(seeded), [seeded]);
+});
+
+test("a sentence every source's note shares is said once, and the rest stays with its source", () => {
+  const airbnb = splitNotes(real("airbnb").sources.map((source) => source.note));
+  assert.equal(airbnb.shared, "Inside Airbnb, Edinburgh, snapshot 2026-09-19.");
+  assert.deepEqual(airbnb.own, [
+    "Saved as Excel from the published CSV; id, host_id, host_profile_id stored as text to keep every digit.",
+    "As published.",
+  ]);
+
+  const shop = splitNotes(real("shop").sources.map((source) => source.note));
+  assert.equal(shop.shared, "Seeded by backend/scripts/make_relational_demo.py: four tables, joined by their declared keys.");
+  assert.deepEqual(shop.own, ["", "", "", ""]);
+
+  const netflix = real("netflix");
+  assert.deepEqual(splitNotes(netflix.sources.map((source) => source.note)), {
+    shared: netflix.sources[0].note,
+    own: [""],
+  });
+
+  assert.deepEqual(splitNotes(["One thing. Two.", "Three."]), { shared: "", own: ["One thing. Two.", "Three."] });
+});
+
+test("each dashboard credits its data and its licence once", () => {
+  for (const name of ["airbnb", "shop", "netflix"]) {
+    const { sources } = real(name);
+    assert.equal(licences(sources).length, 1, name);
+    assert.equal(creditLine(sources).includes("  "), false, name);
+  }
+  assert.equal(creditLine(real("airbnb").sources), "Inside Airbnb, Edinburgh, snapshot 2026-09-19.");
+  assert.equal(capitalise(licences(real("shop").sources)[0].licence), "Synthetic, made for this project");
+  // Sources that share nothing are each credited by their first sentence, without repeats.
+  const file = sample().sources[0];
+  assert.equal(
+    creditLine([{ ...file, note: "A. Kept." }, { ...file, note: "B. Other." }, { ...file, note: "A. Again." }]),
+    "A. B.",
+  );
+});
+
+test("the line under a prompt says, in words, which try it was and whether every chart was drawn", () => {
+  assert.equal(buildLine(real("shop").build), "Sent as typed, the first prompt tried. Every planned chart was drawn.");
+  assert.equal(buildLine(real("netflix").build), "Sent as typed, the third prompt tried. Every planned chart was drawn.");
+  assert.equal(buildLine(real("airbnb").build), "Sent as typed, the fourth prompt tried. Every planned chart was drawn.");
+  assert.equal(
+    buildLine({ prompts_tried: 2, charts_planned: 7, charts_drawn: 6 }),
+    "Sent as typed, the second prompt tried. 6 of 7 planned charts were drawn.",
+  );
+  assert.deepEqual(
+    [10, 11, 12, 13, 21, 22, 23, 24, 101, 111].map(ordinal),
+    ["tenth", "11th", "12th", "13th", "21st", "22nd", "23rd", "24th", "101st", "111th"],
+  );
 });

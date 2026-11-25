@@ -17,8 +17,8 @@ export default function Home() {
         <Problem />
         <DataPipeline />
         <Training />
-        <Results />
         <HowItWorks />
+        <Results />
         <RunIt />
       </main>
       <Footer />

@@ -101,7 +101,7 @@ export function LazyChart({
         <div className="absolute inset-0 rounded-[var(--r-card)] bg-sunken/50" aria-hidden />
       ) : null}
       {view.phase === "failed" ? (
-        <p className="absolute inset-0 grid place-items-center p-4 text-center text-[13px] text-muted">
+        <p className="absolute inset-0 grid place-items-center p-4 text-center text-[14px] text-body">
           {view.message}
         </p>
       ) : null}
