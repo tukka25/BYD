@@ -1372,3 +1372,259 @@ Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>"
 ```
 
 ---
+### Task 7: Scaffold `site/` with the four byte-identical copies
+
+A separate Next.js app with byd-web's versions, configs, fonts and tokens. It builds as a static export. A test fails when a `lib/` copy differs from its byd-web original.
+
+**Files:**
+- Create: `site/package.json`, `site/next.config.ts`, `site/tsconfig.json`, `site/eslint.config.mjs`, `site/postcss.config.mjs`, `site/.gitignore`
+- Create: `site/app/layout.tsx`, `site/app/globals.css`, `site/app/page.tsx` (a stub that Task 9 replaces), `site/app/icon.svg` (a copy of `byd-web/app/icon.svg`)
+- Create: `site/lib/dot-shapes.ts`, `site/lib/dot-draw.ts`, `site/lib/plot-theme.ts`, `site/lib/rich-text.ts` (copies made by `npm run sync-lib`)
+- Test: `site/tests/copies.test.mts`
+
+**Interfaces:**
+- Consumes: Task 2's `byd-web/lib/dot-draw.ts` and Task 3's `byd-web/lib/plot-theme.ts` must be committed first.
+- Produces:
+  - `npm test`: Node's runner over `site/tests/*.test.mts`.
+  - `npm run sync-lib`: copies the four files from byd-web.
+  - `npm run dev`: port 3100, so it never collides with the app on 3000.
+  - The `@/` alias maps to `site/`.
+  - CSS tokens as Tailwind colours (`bg-canvas`, `bg-surface`, `bg-sunken`, `bg-inverse`, `text-ink`, `text-body`, `text-muted`, `text-on-dark`, `text-pine`, `bg-pine`, `bg-pine-wash`, `ring-hairline`), `font-display`, `font-mono`, and the `.rich-text` and `.tabular` classes.
+
+- [ ] **Step 1: Write the failing test** `site/tests/copies.test.mts`:
+
+```ts
+import { test } from "node:test";
+import assert from "node:assert/strict";
+import { readFileSync } from "node:fs";
+
+/* The hero animation, the chart re-theme and the note sanitiser are the app's
+   own code, not lookalikes: each file here must be byte-identical to its
+   byd-web original. Change the original, then run `npm run sync-lib`. */
+const COPIES = ["dot-shapes.ts", "dot-draw.ts", "plot-theme.ts", "rich-text.ts"];
+
+for (const name of COPIES) {
+  test(`lib/${name} is byte-identical to byd-web/lib/${name}`, () => {
+    const copy = readFileSync(new URL(`../lib/${name}`, import.meta.url));
+    const original = readFileSync(new URL(`../../byd-web/lib/${name}`, import.meta.url));
+    assert.ok(copy.equals(original), `site/lib/${name} differs from byd-web/lib/${name}: run npm run sync-lib`);
+  });
+}
+```
+
+- [ ] **Step 2: Create the package and its configs.**
+
+`site/package.json`:
+
+```json
+{
+  "name": "promptdash-site",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": "24.x"
+  },
+  "scripts": {
+    "dev": "next dev --port 3100",
+    "build": "next build",
+    "lint": "eslint",
+    "test": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --test tests/*.test.mts",
+    "sync-lib": "cp ../byd-web/lib/dot-shapes.ts ../byd-web/lib/dot-draw.ts ../byd-web/lib/plot-theme.ts ../byd-web/lib/rich-text.ts lib/"
+  },
+  "dependencies": {
+    "next": "16.1.6",
+    "plotly.js-dist-min": "4.3.0",
+    "react": "19.2.3",
+    "react-dom": "19.2.3"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.1.6",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}
+```
+
+`site/next.config.ts`:
+
+```ts
+import path from "node:path";
+import { fileURLToPath } from "node:url";
+import type { NextConfig } from "next";
+
+const projectDir = path.dirname(fileURLToPath(import.meta.url));
+
+const nextConfig: NextConfig = {
+  // A static site: everything the page shows is in the build (site/data/).
+  output: "export",
+  // site/ is one project inside a larger repository, like byd-web. Pin the
+  // workspace root here, or Turbopack walks up to the git root and resolves
+  // dependencies from a node_modules that does not exist there.
+  turbopack: {
+    root: projectDir,
+  },
+  outputFileTracingRoot: projectDir,
+};
+
+export default nextConfig;
+```
+
+`site/tsconfig.json`, `site/eslint.config.mjs` and `site/postcss.config.mjs`: copy byd-web's unchanged.
+
+```bash
+cp byd-web/tsconfig.json byd-web/eslint.config.mjs byd-web/postcss.config.mjs site/
+```
+
+`site/.gitignore`:
+
+```gitignore
+/node_modules
+/.next/
+/out/
+.DS_Store
+.env*
+.vercel
+*.tsbuildinfo
+next-env.d.ts
+```
+
+- [ ] **Step 3: Install, copy the four files, and run the test**
+
+Run: `cd site && npm install && mkdir -p lib && npm run sync-lib && npm test`
+Expected: 4 tests pass. Then break one copy to see the test catch it, and restore it:
+
+Run: `echo "// drift" >> lib/rich-text.ts && npm test; npm run sync-lib && npm test`
+Expected: the first run fails with `site/lib/rich-text.ts differs from byd-web/lib/rich-text.ts`; after `sync-lib` all 4 pass.
+
+- [ ] **Step 4: Fonts and layout.** `site/app/layout.tsx`:
+
+```tsx
+import type { Metadata } from "next";
+import { JetBrains_Mono, Outfit, Plus_Jakarta_Sans } from "next/font/google";
+import "./globals.css";
+
+// The app's three faces under the app's variable names: the chart re-theme
+// (lib/plot-theme.ts) asks for --font-outfit and --font-jakarta. next/font
+// fetches them at build time and serves them from this site's own origin.
+const outfit = Outfit({
+  variable: "--font-outfit",
+  subsets: ["latin"],
+  weight: ["500", "600", "700", "800"],
+  display: "swap",
+});
+
+const jakarta = Plus_Jakarta_Sans({
+  variable: "--font-jakarta",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  display: "swap",
+});
+
+const jetbrainsMono = JetBrains_Mono({
+  variable: "--font-jetbrains-mono",
+  subsets: ["latin"],
+  weight: ["400", "500"],
+  display: "swap",
+});
+
+export const metadata: Metadata = {
+  title: "PromptDash · dashboards from plain words",
+  description:
+    "Ask for a dashboard in plain words. A 9B model fine-tuned to write Plotly draws every chart, on your own machine.",
+};
+
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+  return (
+    <html lang="en">
+      <body className={`${outfit.variable} ${jakarta.variable} ${jetbrainsMono.variable} antialiased`}>
+        {children}
+      </body>
+    </html>
+  );
+}
+```
+
+- [ ] **Step 5: Styles.** Build `site/app/globals.css` from byd-web's tokens, base rules and note styles, then the page's own rules. First check the boundaries:
+
+Run: `sed -n '24p;212p;225p;316p' byd-web/app/globals.css`
+Expected: `:root {`, an empty line, `/* --- note blocks ---…`, an empty line. If they differ, find the same blocks by those first lines: from `:root {` to the end of the `a { … }` rule, and from `/* --- note blocks` to the end of the `.rich-text[data-empty]::before { … }` rule.
+
+```bash
+cd site
+{
+  printf '@import "tailwindcss";\n\n'
+  printf '/* Tokens, base rules and note styles copied from byd-web/app/globals.css\n   (lines 24-212 and 225-316), so the page and the app share one visual\n   language. Copy them again if those blocks change. */\n\n'
+  sed -n '24,212p' ../byd-web/app/globals.css
+  sed -n '225,316p' ../byd-web/app/globals.css
+  cat <<'EOF'
+/* --- the landing page ------------------------------------------------------ */
+
+html {
+  scroll-padding-top: 24px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* As in the app: Plotly has no line-cap option for scatter traces. */
+.js-plotly-plot .scatterlayer .js-line,
+.js-plotly-plot .scatterlayer .lines path {
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* As in the app: reduced motion collapses every animation and transition. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+EOF
+} > app/globals.css
+cp ../byd-web/app/icon.svg app/icon.svg
+```
+
+- [ ] **Step 6: A stub page, so the app builds.** `site/app/page.tsx` (Task 9 replaces it):
+
+```tsx
+export default function Home() {
+  return (
+    <main className="mx-auto max-w-6xl px-4 py-16 sm:px-8">
+      <h1 className="font-display text-5xl font-bold">PromptDash</h1>
+    </main>
+  );
+}
+```
+
+- [ ] **Step 7: Lint and build**
+
+Run: `cd site && npm run lint && npm run build && ls out/index.html`
+Expected: no lint errors; the build lists `/` as static (○); `out/index.html` exists.
+
+- [ ] **Step 8: Commit**
+
+```bash
+git add site/package.json site/package-lock.json site/next.config.ts site/tsconfig.json site/eslint.config.mjs \
+  site/postcss.config.mjs site/.gitignore site/app site/lib site/tests
+git commit -m "feat(site): scaffold the landing page with byte-identical copies of byd-web's lib
+
+A static Next.js export with byd-web's versions, fonts and tokens. The dot
+animation, the chart re-theme and the note sanitiser are copied, not
+rewritten; a test fails when a copy drifts from its original.
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>"
+```
+
+---
