@@ -614,7 +614,7 @@ Downloads Inside Airbnb's two Edinburgh summary files and the Netflix catalogue 
 
 **Interfaces:**
 - Produces: `backend/uploads/showcase/` holding `listings.xlsx`, `reviews.csv`, `netflix_titles.csv` and `manifest.json`. `manifest.json` is a list of `{"file", "url", "licence", "licence_url", "rows", "bytes", "sha256", "fetched_at", "note"}`, which Task 5 reads.
-- Functions: `airbnb_urls(snapshot: str) -> dict[str, str]`, `excel_from_csv(csv_path: Path, xlsx_path: Path) -> int`, `entry(path: Path, url: str, licence: tuple[str, str], rows: int, note: str) -> dict`.
+- Functions: `airbnb_urls(snapshot: str) -> dict[str, str]`, `excel_from_csv(csv_path: Path, xlsx_path: Path) -> tuple[int, list[str]]` (rows, and the columns written as text), `entry(path: Path, url: str, licence: tuple[str, str], rows: int, note: str) -> dict`.
 
 - [ ] **Step 1: Write the failing test** `backend/tests/test_fetch_showcase_data.py`:
 
@@ -651,10 +651,13 @@ def test_the_excel_copy_keeps_every_value(tmp_path):
         "room_type": ["Entire home/apt", "Private room"],
         "price": [120.0, None],
     }).to_csv(source, index=False)
-    rows = excel_from_csv(source, tmp_path / "listings.xlsx")
+    rows, as_text = excel_from_csv(source, tmp_path / "listings.xlsx")
     back = pd.read_excel(tmp_path / "listings.xlsx")
     assert rows == 2
-    assert back["id"].tolist() == [1234567890123456789, 42]
+    # Excel stores numbers as doubles, exact only up to 2**53, so a 19-digit id
+    # goes in as text and comes back digit for digit.
+    assert as_text == ["id"]
+    assert back["id"].tolist() == ["1234567890123456789", "42"]
     assert back["room_type"].tolist() == ["Entire home/apt", "Private room"]
     assert back["price"].iloc[0] == 120.0 and pd.isna(back["price"].iloc[1])
 
@@ -743,8 +746,13 @@ def download(url: str, path: Path) -> None:
     partial.replace(path)
 
 
-def excel_from_csv(csv_path: Path, xlsx_path: Path) -> int:
-    """Save the listings as Excel, unchanged, and return the row count.
+def excel_from_csv(csv_path: Path, xlsx_path: Path) -> tuple[int, list[str]]:
+    """Save the listings as Excel, keeping every value. Returns the row count and
+    the columns written as text.
+
+    Excel stores numbers as doubles, which hold integers exactly only up to
+    2**53: a 19-digit listing id would come back with other digits. Such a column
+    is written as text, digit for digit, and the manifest says so.
 
     Stops if `price` is not numeric: cleaning it would be editing the data, and
     the page would have to say so. That is the owner's decision."""
@@ -752,9 +760,15 @@ def excel_from_csv(csv_path: Path, xlsx_path: Path) -> int:
     if "price" in frame.columns and not pd.api.types.is_numeric_dtype(frame["price"]):
         sample = frame["price"].dropna().astype(str).head(3).tolist()
         raise ValueError(f"price is not numeric in {csv_path.name} (for example {sample}); cleaning it would edit the data")
+    as_text = [
+        name for name in frame.columns
+        if pd.api.types.is_integer_dtype(frame[name]) and frame[name].abs().max() > 2**53
+    ]
+    for name in as_text:
+        frame[name] = frame[name].astype(str)
     xlsx_path.parent.mkdir(parents=True, exist_ok=True)
     frame.to_excel(xlsx_path, index=False)
-    return len(frame)
+    return len(frame), as_text
 
 
 def entry(path: Path, url: str, licence: tuple[str, str], rows: int, note: str) -> dict:
@@ -786,12 +800,13 @@ def main() -> int:
         download(url, raw / name)
 
     snapshot = f"Inside Airbnb, Edinburgh, snapshot {args.airbnb_snapshot}."
-    listings_rows = excel_from_csv(raw / "listings.csv", out / "listings.xlsx")
+    listings_rows, as_text = excel_from_csv(raw / "listings.csv", out / "listings.xlsx")
+    kept = f"; {', '.join(as_text)} stored as text to keep every digit" if as_text else ""
     shutil.copyfile(raw / "reviews.csv", out / "reviews.csv")
     shutil.copyfile(raw / "netflix_titles.csv", out / "netflix_titles.csv")
     manifest = [
         entry(out / "listings.xlsx", airbnb["listings.csv"], AIRBNB_LICENCE, listings_rows,
-              f"{snapshot} Saved as Excel from the published CSV."),
+              f"{snapshot} Saved as Excel from the published CSV{kept}."),
         entry(out / "reviews.csv", airbnb["reviews.csv"], AIRBNB_LICENCE, len(pd.read_csv(out / "reviews.csv")),
               f"{snapshot} As published."),
         entry(out / "netflix_titles.csv", NETFLIX_URL, NETFLIX_LICENCE, len(pd.read_csv(out / "netflix_titles.csv")),
@@ -820,8 +835,10 @@ git commit -m "feat(showcase): download the landing page's file sources with the
 
 Inside Airbnb's Edinburgh summaries and the Netflix catalogue go to the
 gitignored backend/uploads/showcase/. The listings are saved as Excel
-without changing a value (a 19-digit id survives the round trip); a price
-stored as text stops the run, since cleaning it would edit the data.
+without changing a value: an integer too long for an Excel number (the
+19-digit listing ids) is written as text, digit for digit, and the manifest
+says so. A price stored as text stops the run, since cleaning it would edit
+the data.
 
 Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>"
 ```
