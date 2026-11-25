@@ -1,0 +1,9 @@
+[
+  {"date": "2026-03-07", "commit": "35e0ce4", "subject": "add: README.md", "title": "First commit", "text": "A FastAPI backend and a Next.js front end that ask a model for a chart."},
+  {"date": "2026-11-19", "commit": "ac9d3b2", "subject": "feat(finetune): generate execution-verified code targets with best-of-k", "title": "Training data", "text": "Claude writes the code answers; the app's own sandbox keeps only the ones that render."},
+  {"date": "2026-11-20", "commit": "a0fd4d0", "subject": "feat(finetune): LoRA adapter trained and scored — render rate 7.7% to 91.3%", "title": "lora-v1", "text": "The first adapter, trained on a rented A100 and scored on the frozen test set."},
+  {"date": "2026-11-21", "commit": "a91d276", "subject": "feat(dashboard): plan dashboards with the analyst and planner, checked by code", "title": "Dashboards planned by the model", "text": "An analyst and a planner plan whole dashboards; code checks every column against the real tables."},
+  {"date": "2026-11-22", "commit": "7c8bdf1", "subject": "data(finetune): lora-v2 on the frozen 300 - 97.3% render, 87.0% right shape", "title": "lora-v2", "text": "Retrained with planning examples added; it plans and draws better than lora-v1."},
+  {"date": "2026-11-23", "commit": "7deeaa3", "subject": "feat(chartist): no hardcoded charts; failed code goes back to the model", "title": "No hardcoded charts", "text": "Code that fails goes back to the model to fix; nothing else ever draws a chart."},
+  {"date": "2026-11-25", "commit": "2d7af93", "subject": "feat(chartist): the drawing check sends back bars that repeat a category", "title": "The drawing check", "text": "Bars that stack raw rows go back to the model to be aggregated."}
+]
