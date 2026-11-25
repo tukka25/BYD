@@ -219,3 +219,17 @@ Replaces the parts above where they disagree.
 - **A preview on each card.** The owner asked for "a sneak peek photo of the graphs" on each dashboard card. Under its title, each card shows a picture of the top of that dashboard, captured from the dashboard's own page in headless Chrome by `site/scripts/previews.mjs` and committed as WebP. The "not screenshots" and "never an image standing in for the chart" rules now apply to the dashboard pages only: those still draw live Plotly charts. The landing page still loads no Plotly. A test fails when a dashboard file changes without a new preview.
 - **The card look** follows the owner's reference (Kokonut UI's carousel cards), built natively with no new dependency and no carousel: a tall rounded image tile with the source kinds in a chip at its top left and an arrow chip at its top right, the title and the prompt under it, the middle card larger and higher, the side cards smaller, lower and tilted a little outward; one column on phones.
 - **Tool names, corrected.** The default explore step (`PLANNER_TOOLS=on`) offers `find_columns`, `inspect_column`, `relationship` and `preview`; `preview_chart` and `row_grain` belong to the optional checking turn (`PLANNER_TOOLS=planner`). The page names all six with their modes.
+
+## Revision 4 (2026-11-25, the owner, after reading the rewritten story)
+
+Replaces the parts above where they disagree.
+
+- **The page is a first-person story, like a blog post.** Order: hero, the three dashboards, the problem, fine-tuning and its results, 1. How the data was gathered, 2. Training, 3. Harness, Run it on your Mac, footer.
+- **Hero:** the hook is the owner's line, a 9B model fine-tuned to build full dashboards and charts from one prompt, with your data never leaving your device. The before/after cards say in plain words what was measured, on what, and before and after what.
+- **The problem** is privacy: analysing sensitive data with a cloud-hosted model sends it off the machine. Could a small local model do it? KPI cards show the base model's results, each labelled with its condition (thinking on at full precision; thinking off at 4-bit on a Mac). The old essay and scraped-habits paragraphs go.
+- **Numbers are back** as KPI cards and the results table only, every one still read back from its source by the stats test. Money stays out.
+- **The dashboards intro** says each dashboard came out of one run, plan to every chart, nothing edited. It does not say "first shot": two of the three prompts were reworded before the run shown, and each dashboard page says so.
+- **Links:** Qwen3.5-9B's model page, Plotly, Runpod.
+- **Footer:** GitHub profile, LinkedIn (shown once its URL is set), and the repository; data credits as links only, with the CC BY licence tag kept beside the Inside Airbnb link because that licence requires it.
+- **The root README** is rewritten to be readable and to the point, with the setup the page points to.
+- Tasks B5 (story), B6 (footer) and B7 (README) ran in parallel worktrees beside B4 (cards), then merged.
