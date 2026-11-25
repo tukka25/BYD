@@ -25,16 +25,15 @@ export function Hero() {
             href="#dashboards"
             className="inline-flex h-11 items-center rounded-[var(--r-pill)] bg-surface px-5 text-[15px] font-semibold text-ink ring-1 ring-inset ring-hairline transition-colors hover:bg-sunken"
           >
-            See three dashboards
+            See the dashboards
           </a>
         </div>
-        <dl className="mt-10 grid max-w-xl gap-3 sm:grid-cols-3">
+        <dl className="mt-10 grid max-w-xl gap-3 sm:grid-cols-2">
           <Figure label="of chart scripts run" value={`${stat("base_render_mac", 0)} → ${stat("v2_render_mac", 0)}`} />
           <Figure
             label="draw the right kind of chart"
             value={`${stat("base_shape_mac", 0)} → ${stat("v2_shape_mac", 0)}`}
           />
-          <Figure label="for the data and both training runs" value={`≈ ${stat("total_cost")}`} />
         </dl>
         <p className="mt-3 max-w-xl text-[12px] leading-relaxed text-muted">
           Base Qwen3.5-9B with thinking off → lora-v2, on the same {stat("test_questions")} frozen test questions,

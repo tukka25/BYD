@@ -163,7 +163,7 @@
 - Every number is in `site/data/stats.json` with its source (a JSON path, an exact quote or a sum), and `npm test` in `site/` reads each one back. Editing a quoted line in a README or here breaks that test on purpose.
 - `site/lib/{dot-shapes,dot-draw,plot-theme,rich-text}.ts` are byte-identical copies of byd-web's. Change byd-web's, then run `npm run sync-lib`.
 - The three dashboards are the app's own output: `backend/scripts/fetch_showcase_data.py` downloads the files into the gitignored `backend/uploads/showcase/`, then `SHOWCASE_PASSWORD=... make showcase NAME=airbnb|shop|netflix` builds each one through the API. Charts are never edited; a dashboard that falls short is rebuilt from a rephrased prompt.
-- `site/data/journey.json` cites commit hashes. A history rewrite changes them, and its test says so.
+- Each dashboard has its own page at `/dashboards/<name>/` (`site/app/dashboards/[name]/page.tsx`, titles in `DASHBOARD_TITLES` in `site/lib/site.ts`); the landing page shows three cards and loads no Plotly. `trailingSlash: true` makes the export write `out/dashboards/<name>/index.html`.
 
 ## Fine-tune facts that change decisions (`chartist-finetune/`)
 - lora-v1's recorded 91.3% render / 81.0% right shape (`cloud/eval_report.json`) is a lower bound. 16 of its 25 recorded failures are a `pyarrow` import crash in the eval pod (`pyarrow._fs._init_ca_paths` -> `ssl.py`), all in the treemap/funnel/waterfall bucket — an environment failure, not a model error. Re-measure locally before spending money on that bucket. Re-scored locally with a working pyarrow (`data/ab_planner_hint.json`), lora-v1 renders 86% of that bucket.

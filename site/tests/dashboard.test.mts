@@ -9,6 +9,7 @@ import {
   validateDashboard,
   type Dashboard,
 } from "../lib/dashboard.ts";
+import { DASHBOARD_TITLES } from "../lib/site.ts";
 
 function sample(): Dashboard {
   return {
@@ -94,3 +95,13 @@ for (const name of files) {
     assert.deepEqual(validateDashboard(JSON.parse(readFileSync(path, "utf8")), statSync(path).size), []);
   });
 }
+
+test("every committed dashboard has a title and a data loader", () => {
+  const loaders = readFileSync(new URL("../components/dashboard-data.ts", import.meta.url), "utf8");
+  for (const file of files) {
+    const name = file.replace(/\.json$/, "");
+    assert.ok(DASHBOARD_TITLES[name], `${name} has no entry in DASHBOARD_TITLES`);
+    assert.match(loaders, new RegExp(`^  ${name}: `, "m"), `${name} has no key in DASHBOARD_DATA`);
+  }
+  assert.deepEqual(Object.keys(DASHBOARD_TITLES).sort(), files.map((f) => f.replace(/\.json$/, "")).sort());
+});

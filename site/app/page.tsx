@@ -3,7 +3,6 @@ import { DataPipeline } from "@/components/data-pipeline";
 import { Footer } from "@/components/footer";
 import { Hero } from "@/components/hero";
 import { HowItWorks } from "@/components/how-it-works";
-import { Journey } from "@/components/journey";
 import { Problem } from "@/components/problem";
 import { Results } from "@/components/results";
 import { RunIt } from "@/components/run-it";
@@ -15,7 +14,6 @@ export default function Home() {
       <main>
         <Hero />
         <Dashboards />
-        <Journey />
         <Problem />
         <DataPipeline />
         <Training />

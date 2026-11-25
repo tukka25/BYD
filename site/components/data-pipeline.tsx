@@ -35,9 +35,6 @@ export function DataPipeline() {
           </li>
         ))}
       </ol>
-      <p className="mt-4 text-[13px] text-muted">
-        The Claude API cost of the data: {stat("v1_data_cost", 2)} for lora-v1, {stat("v2_data_cost")} for lora-v2.
-      </p>
     </Section>
   );
 }

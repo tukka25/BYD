@@ -43,12 +43,12 @@ export function DashboardView({ dashboard }: { dashboard: Dashboard }) {
 }
 
 /* The prompt, frozen below its dashboard: the app's brief box, read-only. It
-   stays in view while you scroll through the dashboard it built. */
+   stays in view from tablet width up while you scroll through the dashboard it built. */
 function PromptBox({ dashboard }: { dashboard: Dashboard }) {
   const { build } = dashboard;
   const rephrased = build.prompts_tried - 1;
   return (
-    <div className="sticky bottom-4 z-10 mt-6">
+    <div className="z-10 mt-6 md:sticky md:bottom-4">
       <div className="mx-auto max-w-3xl rounded-[var(--r-panel)] bg-surface p-3 shadow-[var(--lift-2)]">
         <p className="px-1 text-[13px] font-semibold text-ink">What should this dashboard be about?</p>
         <p className="mt-1.5 rounded-[var(--r-control)] px-3.5 py-3 text-sm text-ink ring-1 ring-inset ring-hairline">
