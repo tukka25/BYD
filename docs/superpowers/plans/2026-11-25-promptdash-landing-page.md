@@ -4096,3 +4096,84 @@ The owner: "make sure the read me is nicely designed and to the point so it can 
 
 **Worktree setup** (you run in an isolated git worktree): first print `git rev-parse --abbrev-ref HEAD` and `git rev-parse HEAD`. No build is needed. Commit on your worktree branch, with the message ending in `Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>`.
 
+
+### Task B8: The dashboard pages' credits as links
+
+**Files you own:**
+- `site/components/dashboard-view.tsx`, the `Provenance` part only. The grid, the cards and the prompt box stay as they are.
+- `site/lib/dashboard.ts`, the credit helpers.
+- `site/tests/dashboard.test.mts`.
+- `site/components/footer.tsx`, only to share one helper with the dashboard pages; nothing visible changes.
+
+**Do not touch:** everything else. Another agent is rewriting the story sections in a separate worktree.
+
+**What the credits say**, under each dashboard:
+- **Data line.** "Data:", then each source's name linked to its `url`.
+  - Where the licence requires attribution (CC BY), add the licence's short name linked to its `licence_url`, once per dashboard.
+  - For the synthetic shop data, add a "synthetic" tag linked to its generating script in the repository, as the footer does. Reuse the footer's logic.
+  - Airbnb's `listings.xlsx` was converted from the published CSV. CC BY asks that changes are indicated, so keep a note of at most five words beside that source, such as "converted from the CSV".
+  - No other sentences. No snapshot or mirror details, no row counts.
+- **Unchanged.** The "Drawn by …, unedited, on <date>" line and the skipped-chart disclosure (none today) stay as they are.
+
+**Rules**
+- **Derive everything** from the dashboard files' `sources` (`name`, `url`, `licence`, `licence_url`, `note`, `kind`). Never hand-write per-dataset strings, and never edit `site/data/dashboards/*.json`.
+- **Helpers** stay import-free in `lib/dashboard.ts`, so Node's test runner loads them. Update the tests to the new behaviour on the three real files, plus one case with a single source and no licence that requires attribution.
+- **Display.** Text is 14px or more with `MEASURE`. External links get `rel="noopener noreferrer"` if they open a new tab, and tap targets are 44px on phones.
+- **Verify.** Run `cd /Users/atukka/Desktop/BYD/site && npm run lint && npm test && npm run build`. Do not run `npm run previews`; the controller re-captures the pictures after the story merges.
+- **Commit.** Commit on feat/landing-page, in the main checkout, staging only your files by path. Every message ends with `Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>`.
+
+### Task B9: Bar value labels that read as numbers
+
+**Files:** `byd-web/lib/plot-theme.ts` (the bar-label branch only), its test in byd-web (find where plot-theme is tested; `npm test` in byd-web is Node's own runner), then `cd site && npm run sync-lib` so `site/lib/plot-theme.ts` matches.
+
+**Rule** (one rule, from the trace's own values):
+- When the largest absolute value among the bar's values is 1,000 or more, keep `.5~s`: "35.8k", "437.68M" and "408" stay as now.
+- Otherwise use at most two decimals with trailing zeros trimmed (`,.2~f`): 50.667 -> "50.67", 408 -> "408", 0.49 -> "0.49".
+- The currency prefix stays as now.
+- Leave every other branch of the file unchanged: indicators, axes and colours.
+
+**Tests:** labels for [50.667, 120.5] use the two-decimal format; for [35800, 437680000] keep `.5~s`; for [0.49, 0.51] use the two-decimal format, never SI "m"; a trace that already has `text` or `texttemplate`, or more than 12 bars, is untouched as before.
+
+**Rules:**
+- Do not touch anything in `site/` except via `npm run sync-lib`. Run `cd site && npm test` so the copies test passes.
+- Another agent is editing other `site/` files at the same time. Stage only `byd-web/lib/plot-theme.ts`, its test file and `site/lib/plot-theme.ts`, by path, and never use `git add -A`.
+- Verify with `cd byd-web && npm test && npm run lint`, then `cd site && npm test`.
+- Do not run `npm run previews` or rebuild Docker images.
+- Commit on feat/landing-page in the main checkout. The message ends with `Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>`.
+
+### Final fixes
+
+**Important**
+1. The Airbnb dashboard page never names Inside Airbnb, which CC BY 4.0 attribution requires (§3(a)(1)(A)(i)).
+   - Today the page reads "Data: listings.xlsx (converted from the CSV) reviews.csv CC BY 4.0", and both links go to raw CSV files.
+   - Put `dataName(dashboard)` (already derived and tested in `site/lib/dashboard.ts`) first on the data line for real data that is not synthetic. For example: "Data: Inside Airbnb, listings.xlsx (converted from the CSV), reviews.csv · CC BY 4.0".
+   - Add a test that the Airbnb credit includes "Inside Airbnb".
+   - While there, use ONE rule for "is this credit name a link". Today the footer uses `!source.licence_url` (`footer.tsx:29`) and the dashboard pages use `creditNames`.
+
+**Fix before merge**
+2. In `site/app/globals.css:185-189`, delete `border-radius: 4px` from the global `:focus-visible` rule. It is unlayered, so it beats the Tailwind utilities and squares off focused pills, including "View on GitHub" and the footer pills. The outline follows each element's own radius without it.
+3. `README.md:89` says Compare models sends "the question or chart plan". `services/comparison.py:97` calls `prompt_variables(question, task_plan, data_context)` with no chart plan, so it sends the question only. Drop "or chart plan".
+
+**Cleanups the review listed (Minor, do them)**
+4. Dead code and stale text:
+   - `commitUrl` (`site/lib/site.ts:10`) is unused.
+   - `KeepDates` (`site/components/section.tsx:48-57`) is unused.
+   - The `usd` and `duration` formats (`site/lib/stats.ts`) go, with their test asserts (`tests/stats.test.mts:22-29`). This removes the last path by which money could reach the page.
+   - The comment at `site.ts:4-5` still says LinkedIn is empty.
+   - `tests/dashboard.test.mts:84,87` still say "a tab" and use a `spotify.tracks` fixture; rename them to something true.
+   - `tests/dashboard.test.mts:158-161` tests capitalised licence text that nothing prints. Delete it, or make it test what is printed.
+5. The dashboard pages jump from h1 to h3: the card heading in `site/components/dashboard-card.tsx:19` should be an h2. Also consider whether each block needs to be a `<section aria-label>` (8-11 landmarks per page). A `<div>` with the h2 is enough.
+6. In `site/scripts/previews.mjs:409-412`, attach `loaded.catch(() => {})` as soon as the page-load wait is created. Use `process.on` rather than `process.once` for the signals, ignoring repeats while cleanup runs, so a second Ctrl-C still cleans up (`:514-520`).
+7. Copy:
+   - `run-it.tsx:29-30` says "a training run like the one in part 2", which collides with the project's own "part 2". Link to the Training section (`#training`) in words instead.
+   - `training.tsx:22-29` repeats the PEFT -> MLX -> 4-bit chain from `results.tsx:100-104`. The owner asked for a minimal Training section, so keep the chain in Training and cut the repeat from the fine-tuning paragraph without losing the method (LoRA with PEFT, MLX, 4-bit on a Mac).
+   - The results table shows lora-v1's dashboard-planning results while the copy says it "learned only chart code". Add one results note saying that lora-v1 also ran as the analyst and the planner in that evaluation. Check this against AGENTS.md and `chartist-finetune/data/v2/planning_eval_lora-v1.json` before writing it.
+
+**Leave as they are:** the 11.5px code view (it copies the app), and the grey "before" bar (a design call, hidden from screen readers, with the figure printed).
+
+Rules:
+- Facts only from AGENTS.md, chartist-finetune/README.md, chartist-finetune/cloud/README.md and the code.
+- No money, and numbers only through stats.json.
+- Do not touch `site/lib/{dot-shapes,dot-draw,plot-theme,rich-text}.ts`, `site/data/dashboards/*.json` or `byd-web/`. Another agent is changing `byd-web/lib/plot-theme.ts` and syncing it into `site/lib/plot-theme.ts` at the same time.
+- Do not run `npm run previews`; the controller captures the pictures again at the end.
+- Verify with `cd site && npm run lint && npm test && npm run build`. Commit by path on feat/landing-page, in the main checkout, and never use `git add -A`. Every message ends with `Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>`.

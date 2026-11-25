@@ -233,3 +233,12 @@ Replaces the parts above where they disagree.
 - **Footer:** GitHub profile, LinkedIn (shown once its URL is set), and the repository; data credits as links only, with the CC BY licence tag kept beside the Inside Airbnb link because that licence requires it.
 - **The root README** is rewritten to be readable and to the point, with the setup the page points to.
 - Tasks B5 (story), B6 (footer) and B7 (README) ran in parallel worktrees beside B4 (cards), then merged.
+
+## Notes after the final review (2026-11-25)
+
+Changes made by the controller and the review loop, not by the owner; recorded so the spec matches the code.
+
+- **Card pictures** start at the dashboard's first chart, not its first block that is not a note: a KPI tile at the top left sat under the source chip. One rule for all three (`site/data/previews.json` states it).
+- **Dashboard-page credits** are links, like the footer's, and name the dataset first ("Data: Inside Airbnb, listings.xlsx (converted from the CSV), reviews.csv · CC BY 4.0"): CC BY 4.0 requires naming the creator on the page that shows the material. Synthetic data links once, to its generating script.
+- **Bar value labels** in the app's re-theme (`byd-web/lib/plot-theme.ts`, copied to the site) follow the bars' own largest value: SI with five significant figures from 1,000, at most two decimals from 1, two significant figures under 1. The showcase's "£50.667" now reads "£50.67". This changes every bar chart in the app.
+- **Focus rings** follow each element's own radius (the global `:focus-visible` rule no longer sets one).
