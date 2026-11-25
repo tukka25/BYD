@@ -22,7 +22,7 @@ export default async function DashboardPage({ params }: { params: Promise<{ name
   if (!dashboard) notFound();
   return (
     <main className="mx-auto max-w-6xl px-4 pb-10 pt-6 sm:px-8">
-      <Link href="/#dashboards" className="inline-flex h-10 items-center text-[14px] font-semibold text-pine hover:underline">
+      <Link href="/#dashboards" className="inline-flex h-11 items-center text-[15px] font-semibold text-pine hover:underline">
         ← All dashboards
       </Link>
       <h1 className="mt-2 font-display text-[32px] font-bold leading-tight sm:text-[40px]">

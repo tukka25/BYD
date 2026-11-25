@@ -26,7 +26,7 @@ export function DashboardCard({ title, code, children }: { title: string; code: 
             aria-pressed={showCode}
             aria-label={label}
             title={label}
-            className={`grid size-8 shrink-0 place-items-center rounded-[var(--r-control)] transition-colors ${
+            className={`relative grid size-8 shrink-0 cursor-pointer place-items-center rounded-[var(--r-control)] transition-colors after:absolute after:-inset-1.5 ${
               showCode ? "bg-pine-wash text-pine" : "text-muted hover:bg-sunken hover:text-ink"
             }`}
           >
