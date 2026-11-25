@@ -1628,3 +1628,1236 @@ Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>"
 ```
 
 ---
+### Task 8: Every number, loss point and milestone, checked against its source
+
+`stats.json` holds every number on the page as the raw value its source recorded. `loss.json` holds the two validation-loss curves, and `journey.json` the dated milestones. Three tests read each value back from the file or commit that recorded it. Every quote below was checked against its file when this plan was written.
+
+**Files:**
+- Create: `site/lib/stats.ts`
+- Create: `site/data/stats.json`, `site/data/loss.json`, `site/data/journey.json`
+- Test: `site/tests/stats.test.mts`, `site/tests/loss.test.mts`, `site/tests/journey.test.mts`
+
+**Interfaces:**
+- Produces:
+  - `type StatFormat = { kind: "percent" | "usd" | "number"; decimals: number } | { kind: "duration" }`
+  - `type StatSource = { kind: "json"; file: string; path: (string | number)[] } | { kind: "quote"; file: string; quote: string } | { kind: "sum"; of: string[] }`
+  - `type Stat = { id: string; value: number; format: StatFormat; label: string; source: StatSource }`
+  - `formatStat(stat: Pick<Stat, "value" | "format">, decimals?: number): string`
+  - `findStat(stats: readonly Stat[], id: string): Stat`, which throws on an unknown id, so a missing number fails the build.
+  - `loss.json`: `{ v1: { label, points: number[], source: { file, quote } }, v2: { label, steps: number[], points: number[], source: { file } } }`.
+  - `journey.json`: `Array<{ date, commit, subject, title, text }>`.
+  - The stat ids used by Tasks 9 and 11 are the `id`s in `stats.json` below.
+
+- [ ] **Step 1: Write the failing tests.**
+
+`site/tests/stats.test.mts`:
+
+```ts
+import { test } from "node:test";
+import assert from "node:assert/strict";
+import { readFileSync } from "node:fs";
+import { findStat, formatStat, type Stat } from "../lib/stats.ts";
+
+const ROOT = new URL("../../", import.meta.url);
+const stats: Stat[] = JSON.parse(readFileSync(new URL("../data/stats.json", import.meta.url), "utf8"));
+const read = (file: string) => readFileSync(new URL(file, ROOT), "utf8");
+const squash = (text: string) => text.replace(/\s+/g, " ");
+
+function at(value: unknown, path: (string | number)[]): unknown {
+  return path.reduce<unknown>((node, key) => (node as Record<string | number, unknown> | undefined)?.[key], value);
+}
+
+test("percent, money, counts and durations format as the page shows them", () => {
+  assert.equal(formatStat({ value: 0.9433, format: { kind: "percent", decimals: 1 } }), "94.3%");
+  assert.equal(formatStat({ value: 0.9433, format: { kind: "percent", decimals: 1 } }, 0), "94%");
+  assert.equal(formatStat({ value: 34.85, format: { kind: "usd", decimals: 0 } }), "$35");
+  assert.equal(formatStat({ value: 5.4708, format: { kind: "usd", decimals: 4 } }, 2), "$5.47");
+  assert.equal(formatStat({ value: 1832, format: { kind: "number", decimals: 0 } }), "1,832");
+  assert.equal(formatStat({ value: 8668, format: { kind: "duration" } }), "2 h 24 m");
+});
+
+test("ids are unique and every entry says what it measures", () => {
+  assert.equal(new Set(stats.map((stat) => stat.id)).size, stats.length);
+  for (const stat of stats) assert.ok(stat.label.length > 10, `${stat.id} needs a label`);
+});
+
+test("an unknown id fails loudly", () => {
+  assert.throws(() => findStat(stats, "no_such_stat"), /no stat with id no_such_stat/);
+});
+
+for (const stat of stats) {
+  test(`${stat.id} matches its source`, () => {
+    const source = stat.source;
+    if (source.kind === "json") {
+      assert.equal(at(JSON.parse(read(source.file)), source.path), stat.value);
+    } else if (source.kind === "quote") {
+      assert.ok(squash(read(source.file)).includes(squash(source.quote)), `${source.file} lacks: ${source.quote}`);
+      assert.ok(source.quote.includes(formatStat(stat)), `the quote does not contain ${formatStat(stat)}`);
+    } else {
+      const total = source.of.reduce((sum, id) => sum + findStat(stats, id).value, 0);
+      assert.ok(Math.abs(total - stat.value) < 1e-9, `${stat.id} is ${stat.value}; its parts add up to ${total}`);
+    }
+  });
+}
+```
+
+`site/tests/loss.test.mts`:
+
+```ts
+import { test } from "node:test";
+import assert from "node:assert/strict";
+import { readFileSync } from "node:fs";
+
+const ROOT = new URL("../../", import.meta.url);
+const loss = JSON.parse(readFileSync(new URL("../data/loss.json", import.meta.url), "utf8"));
+const squash = (text: string) => text.replace(/\s+/g, " ");
+
+test("lora-v1's validation losses are the ones its run recorded", () => {
+  const readme = squash(readFileSync(new URL(loss.v1.source.file, ROOT), "utf8"));
+  assert.ok(readme.includes(loss.v1.source.quote));
+  assert.deepEqual(loss.v1.points, (loss.v1.source.quote.match(/\d+\.\d+/g) ?? []).map(Number));
+});
+
+test("lora-v2's validation losses are the trainer's own log, to four places", () => {
+  const state = JSON.parse(readFileSync(new URL(loss.v2.source.file, ROOT), "utf8"));
+  const evals = state.log_history.filter((entry: { eval_loss?: number }) => entry.eval_loss !== undefined);
+  assert.deepEqual(loss.v2.steps, evals.map((entry: { step: number }) => entry.step));
+  assert.deepEqual(
+    loss.v2.points,
+    evals.map((entry: { eval_loss: number }) => Math.round(entry.eval_loss * 1e4) / 1e4),
+  );
+});
+```
+
+`site/tests/journey.test.mts`:
+
+```ts
+import { test } from "node:test";
+import assert from "node:assert/strict";
+import { execFileSync } from "node:child_process";
+import { readFileSync } from "node:fs";
+
+type Milestone = { date: string; commit: string; subject: string; title: string; text: string };
+const journey: Milestone[] = JSON.parse(readFileSync(new URL("../data/journey.json", import.meta.url), "utf8"));
+
+/* If part 2 rewrites the history, these hashes change. Find each milestone's
+   new hash by its subject: git log --format='%h %ad %s' --date=short */
+for (const milestone of journey) {
+  test(`${milestone.date} "${milestone.title}" is commit ${milestone.commit}`, () => {
+    const shown = execFileSync("git", ["show", "-s", "--format=%ad%x09%s", "--date=short", milestone.commit], {
+      encoding: "utf8",
+    }).trim();
+    assert.equal(shown, `${milestone.date}\t${milestone.subject}`);
+  });
+}
+
+test("the milestones run in date order", () => {
+  const dates = journey.map((milestone) => milestone.date);
+  assert.deepEqual(dates, [...dates].sort());
+});
+```
+
+- [ ] **Step 2: Run them and watch them fail**
+
+Run: `cd site && npm test`
+Expected: FAIL: `Cannot find module '.../lib/stats.ts'`, and `ENOENT` for the three data files.
+
+- [ ] **Step 3: Write `site/lib/stats.ts`:**
+
+```ts
+/* Every number on the page, formatted from the raw value its source recorded.
+   The entries live in data/stats.json, and tests/stats.test.mts reads each one
+   back from its source. Import-free, so Node's test runner can load it. */
+
+export type StatFormat = { kind: "percent" | "usd" | "number"; decimals: number } | { kind: "duration" };
+
+export type StatSource =
+  | { kind: "json"; file: string; path: (string | number)[] }
+  | { kind: "quote"; file: string; quote: string }
+  | { kind: "sum"; of: string[] };
+
+export type Stat = { id: string; value: number; format: StatFormat; label: string; source: StatSource };
+
+function grouped(value: number, decimals: number): string {
+  return value.toLocaleString("en-US", { minimumFractionDigits: decimals, maximumFractionDigits: decimals });
+}
+
+/** The value as the page shows it. `decimals` shows fewer places: 94% from 0.9433. */
+export function formatStat(stat: Pick<Stat, "value" | "format">, decimals?: number): string {
+  const { value, format } = stat;
+  if (format.kind === "duration") {
+    const hours = Math.floor(value / 3600);
+    const minutes = Math.round((value - hours * 3600) / 60);
+    return `${hours} h ${minutes} m`;
+  }
+  const places = decimals ?? format.decimals;
+  if (format.kind === "percent") return `${(value * 100).toFixed(places)}%`;
+  if (format.kind === "usd") return `$${grouped(value, places)}`;
+  return grouped(value, places);
+}
+
+/** The entry with this id. Throws, so a missing number fails the build instead of printing nothing. */
+export function findStat(stats: readonly Stat[], id: string): Stat {
+  const found = stats.find((stat) => stat.id === id);
+  if (!found) throw new Error(`no stat with id ${id} in data/stats.json`);
+  return found;
+}
+```
+
+- [ ] **Step 4: Write `site/data/stats.json`:**
+
+```json
+[
+  {"id": "base_render_mac", "value": 0.6867, "format": {"kind": "percent", "decimals": 1}, "label": "Base Qwen3.5-9B, thinking off: chart scripts that run, frozen 300, 4-bit on a Mac", "source": {"kind": "json", "file": "chartist-finetune/data/eval_report_local_base_nothink.json", "path": ["base-nothink", "render_rate"]}},
+  {"id": "base_shape_mac", "value": 0.4633, "format": {"kind": "percent", "decimals": 1}, "label": "Base Qwen3.5-9B, thinking off: the right kind of chart, frozen 300, 4-bit on a Mac", "source": {"kind": "json", "file": "chartist-finetune/data/eval_report_local_base_nothink.json", "path": ["base-nothink", "right_shape_rate"]}},
+  {"id": "v1_render_mac", "value": 0.8933, "format": {"kind": "percent", "decimals": 1}, "label": "lora-v1: chart scripts that run, frozen 300, 4-bit on a Mac", "source": {"kind": "json", "file": "chartist-finetune/data/eval_report_local_v1.json", "path": ["lora-v1", "render_rate"]}},
+  {"id": "v1_shape_mac", "value": 0.7633, "format": {"kind": "percent", "decimals": 1}, "label": "lora-v1: the right kind of chart, frozen 300, 4-bit on a Mac", "source": {"kind": "json", "file": "chartist-finetune/data/eval_report_local_v1.json", "path": ["lora-v1", "right_shape_rate"]}},
+  {"id": "v2_render_mac", "value": 0.9433, "format": {"kind": "percent", "decimals": 1}, "label": "lora-v2: chart scripts that run, frozen 300, 4-bit on a Mac", "source": {"kind": "json", "file": "chartist-finetune/data/eval_report_local_v2.json", "path": ["lora-v2", "render_rate"]}},
+  {"id": "v2_shape_mac", "value": 0.8233, "format": {"kind": "percent", "decimals": 1}, "label": "lora-v2: the right kind of chart, frozen 300, 4-bit on a Mac", "source": {"kind": "json", "file": "chartist-finetune/data/eval_report_local_v2.json", "path": ["lora-v2", "right_shape_rate"]}},
+  {"id": "v1_v2_p", "value": 0.02, "format": {"kind": "number", "decimals": 3}, "label": "lora-v1 against lora-v2 on the Mac, scripts that run: exact McNemar p", "source": {"kind": "quote", "file": "chartist-finetune/cloud/README.md", "quote": "exact McNemar p = 0.020"}},
+  {"id": "base_render_pod", "value": 0.0767, "format": {"kind": "percent", "decimals": 1}, "label": "Base Qwen3.5-9B, thinking on: chart scripts that run, frozen 300, full precision", "source": {"kind": "json", "file": "chartist-finetune/cloud/eval_report.json", "path": ["base", "render_rate"]}},
+  {"id": "base_shape_pod", "value": 0.0467, "format": {"kind": "percent", "decimals": 1}, "label": "Base Qwen3.5-9B, thinking on: the right kind of chart, frozen 300, full precision", "source": {"kind": "json", "file": "chartist-finetune/cloud/eval_report.json", "path": ["base", "right_shape_rate"]}},
+  {"id": "v1_render_pod", "value": 0.9133, "format": {"kind": "percent", "decimals": 1}, "label": "lora-v1: chart scripts that run, frozen 300, full precision", "source": {"kind": "json", "file": "chartist-finetune/cloud/eval_report.json", "path": ["lora-v1", "render_rate"]}},
+  {"id": "v1_shape_pod", "value": 0.81, "format": {"kind": "percent", "decimals": 1}, "label": "lora-v1: the right kind of chart, frozen 300, full precision", "source": {"kind": "json", "file": "chartist-finetune/cloud/eval_report.json", "path": ["lora-v1", "right_shape_rate"]}},
+  {"id": "v2_render_pod", "value": 0.9733, "format": {"kind": "percent", "decimals": 1}, "label": "lora-v2: chart scripts that run, frozen 300, full precision", "source": {"kind": "json", "file": "chartist-finetune/cloud/eval_report_v2.json", "path": ["lora-v2", "render_rate"]}},
+  {"id": "v2_shape_pod", "value": 0.87, "format": {"kind": "percent", "decimals": 1}, "label": "lora-v2: the right kind of chart, frozen 300, full precision", "source": {"kind": "json", "file": "chartist-finetune/cloud/eval_report_v2.json", "path": ["lora-v2", "right_shape_rate"]}},
+  {"id": "plan_requests", "value": 120, "format": {"kind": "number", "decimals": 0}, "label": "Frozen dashboard requests in the planning evaluation", "source": {"kind": "json", "file": "chartist-finetune/data/v2/planning_eval_lora-v2.json", "path": ["summary", "rows"]}},
+  {"id": "plan_retry_v1", "value": 0.5416666666666666, "format": {"kind": "percent", "decimals": 1}, "label": "lora-v1: dashboards whose plan needed a retry", "source": {"kind": "json", "file": "chartist-finetune/data/v2/planning_eval_lora-v1.json", "path": ["summary", "rows_needing_retries"]}},
+  {"id": "plan_retry_v2", "value": 0.125, "format": {"kind": "percent", "decimals": 1}, "label": "lora-v2: dashboards whose plan needed a retry", "source": {"kind": "json", "file": "chartist-finetune/data/v2/planning_eval_lora-v2.json", "path": ["summary", "rows_needing_retries"]}},
+  {"id": "plan_render_v1", "value": 0.8636363636363636, "format": {"kind": "percent", "decimals": 1}, "label": "lora-v1: planned charts that render", "source": {"kind": "json", "file": "chartist-finetune/data/v2/planning_eval_lora-v1.json", "path": ["summary", "render_rate"]}},
+  {"id": "plan_render_v2", "value": 0.988795518207283, "format": {"kind": "percent", "decimals": 1}, "label": "lora-v2: planned charts that render", "source": {"kind": "json", "file": "chartist-finetune/data/v2/planning_eval_lora-v2.json", "path": ["summary", "render_rate"]}},
+  {"id": "plan_kind_v1", "value": 0.8494318181818182, "format": {"kind": "percent", "decimals": 1}, "label": "lora-v1: planned charts drawn as the planned kind", "source": {"kind": "json", "file": "chartist-finetune/data/v2/planning_eval_lora-v1.json", "path": ["summary", "right_chart_rate"]}},
+  {"id": "plan_kind_v2", "value": 0.988795518207283, "format": {"kind": "percent", "decimals": 1}, "label": "lora-v2: planned charts drawn as the planned kind", "source": {"kind": "json", "file": "chartist-finetune/data/v2/planning_eval_lora-v2.json", "path": ["summary", "right_chart_rate"]}},
+  {"id": "scraped_rows", "value": 970, "format": {"kind": "number", "decimals": 0}, "label": "Rows scraped from plotly.com/python", "source": {"kind": "quote", "file": "chartist-finetune/README.md", "quote": "was 970 rows scraped from plotly.com/python"}},
+  {"id": "scraped_json_print", "value": 0, "format": {"kind": "percent", "decimals": 0}, "label": "Scraped rows that end with print(fig.to_json())", "source": {"kind": "quote", "file": "chartist-finetune/README.md", "quote": "| ends with `print(fig.to_json())` | 0% |"}},
+  {"id": "scraped_show", "value": 0.961, "format": {"kind": "percent", "decimals": 1}, "label": "Scraped rows that call fig.show()", "source": {"kind": "quote", "file": "chartist-finetune/README.md", "quote": "| calls `fig.show()` | 96.1% |"}},
+  {"id": "scraped_reads", "value": 0.469, "format": {"kind": "percent", "decimals": 1}, "label": "Scraped rows that read a file or URL", "source": {"kind": "quote", "file": "chartist-finetune/README.md", "quote": "| reads a file or URL | 46.9% |"}},
+  {"id": "scraped_columns", "value": 0.033, "format": {"kind": "percent", "decimals": 1}, "label": "Scraped prompts that mention columns", "source": {"kind": "quote", "file": "chartist-finetune/README.md", "quote": "| prompts mentioning columns | 3.3% |"}},
+  {"id": "schemas", "value": 180, "format": {"kind": "number", "decimals": 0}, "label": "Table schemas Claude Haiku wrote", "source": {"kind": "quote", "file": "chartist-finetune/README.md", "quote": "| Schemas (180) |"}},
+  {"id": "questions", "value": 2880, "format": {"kind": "number", "decimals": 0}, "label": "Questions Claude Haiku wrote", "source": {"kind": "quote", "file": "chartist-finetune/README.md", "quote": "| Questions (2,880) |"}},
+  {"id": "targets_attempted", "value": 1920, "format": {"kind": "number", "decimals": 0}, "label": "Training questions Claude Sonnet wrote code answers for", "source": {"kind": "quote", "file": "AGENTS.md", "quote": "1,897 kept of 1,920 attempted"}},
+  {"id": "targets_kept", "value": 1897, "format": {"kind": "number", "decimals": 0}, "label": "Code answers that rendered in the sandbox and were kept", "source": {"kind": "quote", "file": "AGENTS.md", "quote": "1,897 kept of 1,920 attempted"}},
+  {"id": "test_questions", "value": 300, "format": {"kind": "number", "decimals": 0}, "label": "Frozen test questions", "source": {"kind": "quote", "file": "chartist-finetune/README.md", "quote": "| `data/testset.jsonl` | **300** |"}},
+  {"id": "test_schemas", "value": 60, "format": {"kind": "number", "decimals": 0}, "label": "Schemas behind the frozen test questions, none seen in training", "source": {"kind": "quote", "file": "chartist-finetune/README.md", "quote": "**FROZEN.** 60 schemas, no gold answers"}},
+  {"id": "v1_train_rows", "value": 1929, "format": {"kind": "number", "decimals": 0}, "label": "lora-v1 training rows", "source": {"kind": "quote", "file": "chartist-finetune/README.md", "quote": "| `data/mlx/train.jsonl` | **1,929** |"}},
+  {"id": "v2_train_rows", "value": 7321, "format": {"kind": "number", "decimals": 0}, "label": "lora-v2 training rows", "source": {"kind": "quote", "file": "AGENTS.md", "quote": "0 of lora-v2's 7,321"}},
+  {"id": "v1_data_cost", "value": 5.4708, "format": {"kind": "usd", "decimals": 4}, "label": "Claude API cost of lora-v1's data", "source": {"kind": "quote", "file": "chartist-finetune/README.md", "quote": "| **Total** | | **$5.4708** |"}},
+  {"id": "v2_data_cost", "value": 15.62, "format": {"kind": "usd", "decimals": 2}, "label": "Claude API cost of lora-v2's data", "source": {"kind": "quote", "file": "chartist-finetune/cloud/README.md", "quote": "Claude API for the v2 data: $15.62"}},
+  {"id": "gpu_rate", "value": 2.19, "format": {"kind": "usd", "decimals": 2}, "label": "Hourly price of the A100 80 GB on Runpod", "source": {"kind": "quote", "file": "chartist-finetune/cloud/README.md", "quote": "| Pod | A100 SXM 80GB, **$2.19/hr**"}},
+  {"id": "v1_pod_time", "value": 8668, "format": {"kind": "duration"}, "label": "lora-v1 pod time", "source": {"kind": "quote", "file": "chartist-finetune/cloud/README.md", "quote": "Pod uptime 8,668 s (2 h 24 m)"}},
+  {"id": "v1_loss_start", "value": 0.671, "format": {"kind": "number", "decimals": 3}, "label": "lora-v1 validation loss before training", "source": {"kind": "quote", "file": "chartist-finetune/cloud/README.md", "quote": "**0.671 untrained"}},
+  {"id": "v1_loss_end", "value": 0.1767, "format": {"kind": "number", "decimals": 4}, "label": "lora-v1 final validation loss", "source": {"kind": "quote", "file": "chartist-finetune/cloud/README.md", "quote": "0.1771 → 0.1767 → 0.1767.**"}},
+  {"id": "v1_cloud_cost", "value": 5.335408, "format": {"kind": "usd", "decimals": 6}, "label": "lora-v1 cloud cost, settled", "source": {"kind": "quote", "file": "chartist-finetune/cloud/README.md", "quote": "| **cloud total** | **$5.335408** |"}},
+  {"id": "v1_total_cost", "value": 10.81, "format": {"kind": "usd", "decimals": 2}, "label": "lora-v1 in all: data and cloud", "source": {"kind": "quote", "file": "chartist-finetune/cloud/README.md", "quote": "the whole fine-tune cost **$10.81**"}},
+  {"id": "v2_epochs", "value": 2, "format": {"kind": "number", "decimals": 0}, "label": "lora-v2 training epochs", "source": {"kind": "quote", "file": "chartist-finetune/cloud/README.md", "quote": "2 epochs, 1,832 steps, 3.3 h"}},
+  {"id": "v2_steps", "value": 1832, "format": {"kind": "number", "decimals": 0}, "label": "lora-v2 training steps", "source": {"kind": "quote", "file": "chartist-finetune/cloud/README.md", "quote": "2 epochs, 1,832 steps, 3.3 h"}},
+  {"id": "v2_hours", "value": 3.3, "format": {"kind": "number", "decimals": 1}, "label": "lora-v2 training hours", "source": {"kind": "quote", "file": "chartist-finetune/cloud/README.md", "quote": "2 epochs, 1,832 steps, 3.3 h"}},
+  {"id": "v2_loss_start", "value": 0.157, "format": {"kind": "number", "decimals": 3}, "label": "lora-v2 validation loss at the first evaluation", "source": {"kind": "quote", "file": "chartist-finetune/cloud/README.md", "quote": "validation loss 0.157 -> 0.145"}},
+  {"id": "v2_loss_end", "value": 0.126, "format": {"kind": "number", "decimals": 3}, "label": "lora-v2 best validation loss, the checkpoint kept", "source": {"kind": "quote", "file": "chartist-finetune/cloud/README.md", "quote": "**0.126 (step 1500)**"}},
+  {"id": "v2_cloud_cost", "value": 8.42, "format": {"kind": "usd", "decimals": 2}, "label": "lora-v2 cloud cost, settled", "source": {"kind": "quote", "file": "chartist-finetune/cloud/README.md", "quote": "= **$8.42**"}},
+  {"id": "total_cost", "value": 34.85, "format": {"kind": "usd", "decimals": 0}, "label": "About this much made the data and trained both adapters", "source": {"kind": "sum", "of": ["v1_total_cost", "v2_data_cost", "v2_cloud_cost"]}},
+  {"id": "max_repairs", "value": 2, "format": {"kind": "number", "decimals": 0}, "label": "Fixes the model gets for a chart before it is reported failed", "source": {"kind": "quote", "file": "AGENTS.md", "quote": "at most `MAX_REPAIRS` = 2 times"}},
+  {"id": "plan_tries", "value": 3, "format": {"kind": "number", "decimals": 0}, "label": "Tries the planner gets to pass the checks", "source": {"kind": "quote", "file": "AGENTS.md", "quote": "(at most 3 tries, best attempt kept)"}}
+]
+```
+
+- [ ] **Step 5: Write `site/data/loss.json`:**
+
+```json
+{
+  "v1": {
+    "label": "lora-v1",
+    "points": [0.671, 0.2441, 0.2194, 0.2016, 0.191, 0.1889, 0.1808, 0.1771, 0.1767, 0.1767],
+    "source": {
+      "file": "chartist-finetune/cloud/README.md",
+      "quote": "0.671 untrained → 0.2441 → 0.2194 → 0.2016 → 0.1910 → 0.1889 → 0.1808 → 0.1771 → 0.1767 → 0.1767"
+    }
+  },
+  "v2": {
+    "label": "lora-v2",
+    "steps": [300, 600, 900, 1200, 1500, 1800, 1832],
+    "points": [0.1573, 0.1448, 0.1318, 0.1308, 0.1257, 0.1267, 0.1267],
+    "source": {"file": "chartist-finetune/cloud/trainer_state_v2.json"}
+  }
+}
+```
+
+- [ ] **Step 6: Write `site/data/journey.json`.** Milestone texts carry no numbers; the numbers live in `stats.json`.
+
+```json
+[
+  {"date": "2026-03-07", "commit": "35e0ce4", "subject": "add: README.md", "title": "First commit", "text": "A FastAPI backend and a Next.js front end that ask a model for a chart."},
+  {"date": "2026-11-19", "commit": "ac9d3b2", "subject": "feat(finetune): generate execution-verified code targets with best-of-k", "title": "Training data", "text": "Claude writes the code answers; the app's own sandbox keeps only the ones that render."},
+  {"date": "2026-11-20", "commit": "a0fd4d0", "subject": "feat(finetune): LoRA adapter trained and scored — render rate 7.7% to 91.3%", "title": "lora-v1", "text": "The first adapter, trained on a rented A100 and scored on the frozen test set."},
+  {"date": "2026-11-21", "commit": "a91d276", "subject": "feat(dashboard): plan dashboards with the analyst and planner, checked by code", "title": "Dashboards planned by the model", "text": "An analyst and a planner plan whole dashboards; code checks every column against the real tables."},
+  {"date": "2026-11-22", "commit": "7c8bdf1", "subject": "data(finetune): lora-v2 on the frozen 300 - 97.3% render, 87.0% right shape", "title": "lora-v2", "text": "Retrained with planning examples added; it plans and draws better than lora-v1."},
+  {"date": "2026-11-23", "commit": "7deeaa3", "subject": "feat(chartist): no hardcoded charts; failed code goes back to the model", "title": "No hardcoded charts", "text": "Code that fails goes back to the model to fix; nothing else ever draws a chart."},
+  {"date": "2026-11-25", "commit": "2d7af93", "subject": "feat(chartist): the drawing check sends back bars that repeat a category", "title": "The drawing check", "text": "Bars that stack raw rows go back to the model to be aggregated."}
+]
+```
+
+- [ ] **Step 7: Run the tests**
+
+Run: `cd site && npm test`
+Expected: all pass: the 4 copies, 3 stats tests plus one per entry, 2 loss tests, and 7 journey tests plus the order test.
+
+- [ ] **Step 8: Commit**
+
+```bash
+git add site/lib/stats.ts site/data/stats.json site/data/loss.json site/data/journey.json site/tests
+git commit -m "feat(site): every number on the page, checked against the file that recorded it
+
+stats.json keeps each raw value with its source: a JSON path, an exact
+quote, or a sum. The page formats them; the tests read every value back.
+The loss curves come from the run's README and the trainer's own log, and
+each milestone from its commit.
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>"
+```
+
+---
+### Task 9: The hero: the app's own dot animation, drawing without end
+
+**Files:**
+- Create: `site/lib/site.ts`, `site/components/numbers.ts`, `site/components/icons.tsx`, `site/components/dot-hero.tsx`, `site/components/hero.tsx`
+- Modify: `site/app/page.tsx` (replace the stub)
+- Local only: `.claude/launch.json` (the `site` dev server, for the browser check). Nothing under `.claude/` is tracked, so it is not committed.
+
+**Interfaces:**
+- Consumes: `animateDots` from `site/lib/dot-draw.ts` (Task 7's copy of Task 2's file); `findStat` and `formatStat` from `site/lib/stats.ts`, and the ids in `site/data/stats.json` (Task 8).
+- Produces:
+  - `site/lib/site.ts`: `REPO_URL`, `AUTHOR = { handle, url }`, `fileUrl(path: string): string`, `commitUrl(hash: string): string`.
+  - `site/components/numbers.ts`: `stat(id: string, decimals?: number): string` and `statSource(id: string): string | null`.
+  - `site/components/icons.tsx`: `GitHubMark`, `CodeIcon` (props `size?`).
+  - `<Hero />` and `<DotHero />`.
+
+The page's components are presentational and are checked by build, lint and the browser. The logic they use (`formatStat`, `animateDots`'s per-frame `drawDots`) is unit-tested in Tasks 2 and 8.
+
+- [ ] **Step 1: Links in one place.** `site/lib/site.ts`:
+
+```ts
+/* Where the page links. Part 2 (open source) renames the repository: change
+   REPO_URL then, and every link follows. Import-free. */
+export const REPO_URL = "https://github.com/tukka25/BYD";
+export const AUTHOR = { handle: "@tukka25", url: "https://github.com/tukka25" };
+
+export const fileUrl = (path: string): string => `${REPO_URL}/blob/main/${path}`;
+export const commitUrl = (hash: string): string => `${REPO_URL}/commit/${hash}`;
+```
+
+- [ ] **Step 2: Numbers for components.** `site/components/numbers.ts`:
+
+```ts
+import stats from "@/data/stats.json";
+import { findStat, formatStat, type Stat } from "@/lib/stats";
+
+const ALL = stats as unknown as Stat[];
+
+/** A number from data/stats.json as the page shows it; `decimals` shows fewer places. */
+export function stat(id: string, decimals?: number): string {
+  return formatStat(findStat(ALL, id), decimals);
+}
+
+/** The repository file a number came from, for a link beside it. A sum has none of its own. */
+export function statSource(id: string): string | null {
+  const source = findStat(ALL, id).source;
+  return source.kind === "sum" ? null : source.file;
+}
+```
+
+- [ ] **Step 3: Icons.** `site/components/icons.tsx`:
+
+```tsx
+import type { SVGProps } from "react";
+
+type IconProps = Omit<SVGProps<SVGSVGElement>, "width" | "height"> & { size?: number };
+
+/* GitHub's mark (Octicons mark-github, MIT), on the repository link. */
+export function GitHubMark({ size = 16, ...props }: IconProps) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" {...props}>
+      <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" />
+    </svg>
+  );
+}
+
+/* lucide's code-xml, as the app's "Show the code that drew this" button draws it. */
+export function CodeIcon({ size = 15, ...props }: IconProps) {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth={2.25}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+      {...props}
+    >
+      <path d="m18 16 4-4-4-4" />
+      <path d="m6 8-4 4 4 4" />
+      <path d="m14.5 4-5 16" />
+    </svg>
+  );
+}
+```
+
+- [ ] **Step 4: The animation.** `site/components/dot-hero.tsx`:
+
+```tsx
+"use client";
+
+import { useEffect, useRef } from "react";
+import { animateDots } from "@/lib/dot-draw";
+
+/* The build loader's animation (lib/dot-draw.ts, byte-identical to byd-web's),
+   drawn larger and looping through every chart shape without end. It draws as
+   if 320 px wide, the loader's size, then scales up, so the dots keep their
+   proportions. It pauses off screen and in a hidden tab; with reduced motion it
+   holds one still shape. */
+export function DotHero() {
+  const canvas = useRef<HTMLCanvasElement | null>(null);
+
+  useEffect(() => {
+    const node = canvas.current;
+    if (!node) return;
+    return animateDots(node, { logicalWidth: 320 });
+  }, []);
+
+  return (
+    <div className="aspect-[5/3] w-full overflow-hidden rounded-[var(--r-panel)] bg-surface shadow-[var(--lift-1)]">
+      <canvas ref={canvas} className="size-full" aria-hidden />
+    </div>
+  );
+}
+```
+
+- [ ] **Step 5: The hero.** `site/components/hero.tsx`:
+
+```tsx
+import { DotHero } from "@/components/dot-hero";
+import { GitHubMark } from "@/components/icons";
+import { stat } from "@/components/numbers";
+import { REPO_URL } from "@/lib/site";
+
+export function Hero() {
+  return (
+    <header className="mx-auto grid max-w-6xl items-center gap-10 px-4 pb-16 pt-12 sm:px-8 lg:grid-cols-[1.05fr_1fr] lg:gap-14 lg:pb-24 lg:pt-20">
+      <div>
+        <p className="font-mono text-[12px] uppercase tracking-[0.14em] text-pine">Fine-tuned · runs on your Mac</p>
+        <h1 className="mt-4 font-display text-[44px] font-bold leading-[1.02] sm:text-[60px]">PromptDash</h1>
+        <p className="mt-5 max-w-xl text-[17px] leading-relaxed sm:text-[19px]">
+          Ask for a dashboard in plain words. A 9B model fine-tuned to write Plotly draws every chart, on your own
+          machine.
+        </p>
+        <div className="mt-8 flex flex-wrap gap-3">
+          <a
+            href={REPO_URL}
+            className="inline-flex h-11 items-center gap-2 rounded-[var(--r-pill)] bg-pine px-5 text-[15px] font-semibold text-white shadow-[var(--lift-1)] transition-colors hover:bg-[var(--pine-press)]"
+          >
+            <GitHubMark />
+            View on GitHub
+          </a>
+          <a
+            href="#dashboards"
+            className="inline-flex h-11 items-center rounded-[var(--r-pill)] bg-surface px-5 text-[15px] font-semibold text-ink ring-1 ring-inset ring-hairline transition-colors hover:bg-sunken"
+          >
+            See three dashboards
+          </a>
+        </div>
+        <dl className="mt-10 grid max-w-xl gap-3 sm:grid-cols-3">
+          <Figure label="of chart scripts run" value={`${stat("base_render_mac", 0)} → ${stat("v2_render_mac", 0)}`} />
+          <Figure
+            label="draw the right kind of chart"
+            value={`${stat("base_shape_mac", 0)} → ${stat("v2_shape_mac", 0)}`}
+          />
+          <Figure label="for the data and both training runs" value={`≈ ${stat("total_cost")}`} />
+        </dl>
+        <p className="mt-3 max-w-xl text-[12px] leading-relaxed text-muted">
+          Base Qwen3.5-9B with thinking off → lora-v2, on the same {stat("test_questions")} frozen test questions,
+          4-bit on a Mac.
+        </p>
+      </div>
+      <DotHero />
+    </header>
+  );
+}
+
+/* Label first in the DOM, as a definition list wants; on wider screens the
+   number shows above it. On a phone each figure is one row. */
+function Figure({ label, value }: { label: string; value: string }) {
+  return (
+    <div className="flex items-baseline justify-between gap-3 rounded-[var(--r-card)] bg-surface px-4 py-3 shadow-[var(--lift-1)] sm:flex-col-reverse sm:items-start sm:justify-end sm:py-4">
+      <dt className="text-[12.5px] leading-snug text-muted">{label}</dt>
+      <dd className="font-display text-[20px] font-bold leading-tight text-ink tabular sm:text-[24px]">{value}</dd>
+    </div>
+  );
+}
+```
+
+- [ ] **Step 6: The page.** Replace `site/app/page.tsx`:
+
+```tsx
+import { Hero } from "@/components/hero";
+
+export default function Home() {
+  return (
+    <main>
+      <Hero />
+    </main>
+  );
+}
+```
+
+- [ ] **Step 7: Lint, test and build**
+
+Run: `cd site && npm run lint && npm test && npm run build`
+Expected: no lint errors, every test passes, and the build exports `/`.
+
+- [ ] **Step 8 (controller): Look at it.** Add the dev server to `.claude/launch.json` (create the file if it does not exist):
+
+```json
+{
+  "version": "0.0.1",
+  "configurations": [
+    { "name": "site", "runtimeExecutable": "npm", "runtimeArgs": ["--prefix", "site", "run", "dev"], "port": 3100 }
+  ]
+}
+```
+
+  Start it with `preview_start` (name `site`). Check at desktop width and with the `mobile` preset:
+  - the dots morph through the shapes without stopping, and are crisp;
+  - the three figures read `<base> → 94%`, `<base> → 82%` and `≈ $35`;
+  - nothing scrolls sideways at phone width.
+
+  Reset the viewport to `desktop` afterwards. Reduced motion cannot be emulated in the pane: its path is unit-tested (Task 2), and the owner can confirm it with macOS Reduce Motion on.
+
+- [ ] **Step 9: Commit**
+
+```bash
+git add site/lib/site.ts site/components site/app/page.tsx
+git commit -m "feat(site): the hero, with the build loader's own dot animation
+
+The canvas runs a byte-identical copy of byd-web's lib/dot-draw.ts, drawn
+at the loader's 320 px and scaled up, so it is the same animation. The
+three headline numbers come from stats.json: base with thinking off to
+lora-v2 on the frozen 300, and the cost of both adapters.
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>"
+```
+
+---
+### Task 10: The three dashboards, live, in the app's View mode
+
+The section's HTML comes from the build: each card's title and frame at its saved size, the intro note, the prompt and the provenance. Each chart's figure and Plotly load when the card first comes within 600 px of the screen. One dashboard shows at a time, behind tabs.
+
+**Files:**
+- Create: `site/lib/dashboard.ts`
+- Create: `site/components/plotly.ts`, `site/components/dashboard-data.ts`, `site/components/lazy-chart.tsx`, `site/components/dashboard-card.tsx`, `site/components/dashboard-view.tsx`, `site/components/dashboard-tabs.tsx`, `site/components/dashboards.tsx`
+- Modify: `site/app/page.tsx`
+- Test: `site/tests/dashboard.test.mts`
+
+**Interfaces:**
+- Consumes: the dashboard files from Task 6 (shared format above); `themed` from `site/lib/plot-theme.ts`; `toHtml` from `site/lib/rich-text.ts`; `CodeIcon` from Task 9.
+- Produces:
+  - `site/lib/dashboard.ts`: `type Dashboard`, `type DashboardBlock`, `type DashboardSource`, `COLUMNS = 12`, `ROW_HEIGHT = 44`, `GAP = 16`, `MAX_BYTES = 1_500_000`, `gridPlacement(block)`, `blockHeight(h)`, `isIndicator(block)`, `sourceKinds(dashboard)`, `validateDashboard(value: unknown, bytes: number): string[]`.
+  - `<Dashboards />`: the section, with anchor `#dashboards`.
+- If Task 1 chose the shop demo, use `shop.json` in place of `spotify.json` in `dashboards.tsx` and `dashboard-data.ts`.
+
+What the four copies do not carry, and this task supplies: the canvas grid (rows of 44 px, gaps of 16 px, from `report-canvas.tsx`) as a CSS grid. The app's vertical compaction is not reproduced. The saved layout is already packed by the app's `lay_out`, so its positions are drawn as they are.
+
+- [ ] **Step 1: Write the failing test** `site/tests/dashboard.test.mts`:
+
+```ts
+import { test } from "node:test";
+import assert from "node:assert/strict";
+import { readFileSync, readdirSync, statSync } from "node:fs";
+import {
+  blockHeight,
+  gridPlacement,
+  isIndicator,
+  sourceKinds,
+  validateDashboard,
+  type Dashboard,
+} from "../lib/dashboard.ts";
+
+function sample(): Dashboard {
+  return {
+    name: "sample",
+    title: "Sample",
+    prompt: "show me sales",
+    currency: "",
+    sources: [
+      { name: "sales.csv", kind: "file", rows: 10, url: "https://example.org/sales.csv", licence: "CC0 1.0",
+        licence_url: "", note: "A test file." },
+    ],
+    blocks: [
+      { kind: "text", title: "About this data", chart_type: null, figure: null, text_body: "<p>Ten rows.</p>",
+        code: null, x: 0, y: 0, w: 12, h: 3 },
+      { kind: "chart", title: "Sales by month", chart_type: "line", figure: { data: [{ type: "scatter" }] },
+        text_body: null, code: "fig = px.line(df)", x: 0, y: 3, w: 8, h: 8 },
+      { kind: "metric", title: "Total sales", chart_type: "kpi", figure: { data: [{ type: "indicator" }] },
+        text_body: null, code: "fig = go.Figure()", x: 8, y: 3, w: 4, h: 3 },
+    ],
+    build: { charts_planned: 2, charts_drawn: 2, skipped: [], missing_kinds: [], seconds: 60, prompts_tried: 1 },
+    model: { base: "models/qwen3.5-9b-4bit", adapter: "runs/adapters-mlx-v2", label: "lora-v2" },
+    app_commit: "abc1234",
+    generated_at: "2026-11-26T09:30:00Z",
+  };
+}
+
+const problems = (dashboard: Dashboard, bytes = 1000) => validateDashboard(dashboard, bytes).join("; ");
+
+test("a well-formed dashboard has no problems", () => {
+  assert.equal(problems(sample()), "");
+});
+
+test("a broken file is refused, in words", () => {
+  const overflow = sample();
+  overflow.blocks[2].w = 5;
+  assert.match(problems(overflow), /Total sales: outside the 12-column grid/);
+
+  const empty = sample();
+  empty.blocks[1].figure = null;
+  assert.match(problems(empty), /Sales by month: no figure/);
+
+  const miscounted = sample();
+  miscounted.build.charts_drawn = 3;
+  assert.match(problems(miscounted), /build says 3 charts drawn; the file holds 2/);
+
+  const unsourced = sample();
+  unsourced.sources[0].licence = "";
+  assert.match(problems(unsourced), /source sales.csv has no licence/);
+
+  assert.match(problems(sample(), 1_500_000), /at or over 1500000 bytes/);
+});
+
+test("blocks sit where the app saved them, at the canvas's row height and gap", () => {
+  assert.deepEqual(gridPlacement({ x: 8, y: 3, w: 4, h: 3 }), { gridColumn: "9 / span 4", gridRow: "4 / span 3" });
+  assert.equal(blockHeight(8), 8 * 44 + 7 * 16);
+});
+
+test("an all-indicator figure is a stat card", () => {
+  const [, chart, metric] = sample().blocks;
+  assert.equal(isIndicator(metric), true);
+  assert.equal(isIndicator(chart), false);
+});
+
+test("a tab names the kinds of source behind its dashboard", () => {
+  const file = sample().sources[0];
+  assert.equal(sourceKinds({ sources: [{ ...file, name: "listings.xlsx" }, file] }), "Excel + CSV");
+  assert.equal(sourceKinds({ sources: [{ ...file, kind: "database", name: "spotify.tracks" }] }), "Postgres");
+});
+
+const DIR = new URL("../data/dashboards/", import.meta.url);
+const files = readdirSync(DIR).filter((name) => name.endsWith(".json"));
+
+test("three dashboards are on the page, each drawn by lora-v2", () => {
+  assert.equal(files.length, 3, files.join(", "));
+  for (const name of files) {
+    assert.equal(JSON.parse(readFileSync(new URL(name, DIR), "utf8")).model.label, "lora-v2", name);
+  }
+});
+
+for (const name of files) {
+  test(`${name} is fit to show`, () => {
+    const path = new URL(name, DIR);
+    assert.deepEqual(validateDashboard(JSON.parse(readFileSync(path, "utf8")), statSync(path).size), []);
+  });
+}
+```
+
+- [ ] **Step 2: Run it and watch it fail**
+
+Run: `cd site && npm test`
+Expected: FAIL: `Cannot find module '.../lib/dashboard.ts'`.
+
+- [ ] **Step 3: Write `site/lib/dashboard.ts`:**
+
+```ts
+/* The dashboard files the page shows (data/dashboards/*.json, written by
+   backend/scripts/make_showcase.py), and where their blocks sit. Import-free,
+   so Node's test runner can load it. */
+
+export type BlockKind = "text" | "chart" | "metric";
+
+export type DashboardBlock = {
+  kind: BlockKind;
+  title: string;
+  chart_type: string | null;
+  figure: { data?: unknown[]; layout?: Record<string, unknown> } | null;
+  text_body: string | null;
+  code: string | null;
+  x: number;
+  y: number;
+  w: number;
+  h: number;
+};
+
+export type DashboardSource = {
+  name: string;
+  kind: "file" | "database";
+  rows: number;
+  url: string;
+  licence: string;
+  licence_url: string;
+  note: string;
+};
+
+export type Dashboard = {
+  name: string;
+  title: string;
+  prompt: string;
+  currency: string;
+  sources: DashboardSource[];
+  blocks: DashboardBlock[];
+  build: {
+    charts_planned: number;
+    charts_drawn: number;
+    skipped: { label: string; reason: string }[];
+    missing_kinds: string[];
+    seconds: number;
+    prompts_tried: number;
+  };
+  model: { base: string; adapter: string; label: string };
+  app_commit: string;
+  generated_at: string;
+};
+
+export const COLUMNS = 12;
+export const ROW_HEIGHT = 44; // the canvas's react-grid-layout rowHeight (report-canvas.tsx)
+export const GAP = 16; // and its margin
+export const MAX_BYTES = 1_500_000;
+
+/** Where a block sits in the 12-column grid: the app's saved x, y, w and h. */
+export function gridPlacement(block: Pick<DashboardBlock, "x" | "y" | "w" | "h">) {
+  return { gridColumn: `${block.x + 1} / span ${block.w}`, gridRow: `${block.y + 1} / span ${block.h}` };
+}
+
+/** A block's height in pixels, as the canvas draws it: h rows and the gaps between them. */
+export function blockHeight(h: number): number {
+  return h * ROW_HEIGHT + (h - 1) * GAP;
+}
+
+/** An all-indicator figure is a stat card, drawn without plot chrome, as in the app. */
+export function isIndicator(block: Pick<DashboardBlock, "figure">): boolean {
+  const data = (block.figure?.data ?? []) as Array<{ type?: string }>;
+  return data.length > 0 && data.every((trace) => trace?.type === "indicator");
+}
+
+/** "Excel + CSV", "Postgres", "CSV": what a dashboard was built from. */
+export function sourceKinds(dashboard: Pick<Dashboard, "sources">): string {
+  const kinds = dashboard.sources.map((source) => {
+    if (source.kind === "database") return "Postgres";
+    return /\.xlsx?$/i.test(source.name) ? "Excel" : "CSV";
+  });
+  return [...new Set(kinds)].join(" + ");
+}
+
+/** What is wrong with a dashboard file, in words. Empty when it is fit to show. */
+export function validateDashboard(value: unknown, bytes: number): string[] {
+  if (!value || typeof value !== "object") return ["not a JSON object"];
+  const d = value as Partial<Dashboard>;
+  const problems: string[] = [];
+  if (bytes >= MAX_BYTES) problems.push(`${bytes} bytes, at or over ${MAX_BYTES} bytes`);
+  for (const key of ["name", "title", "prompt", "app_commit", "generated_at"] as const) {
+    if (typeof d[key] !== "string" || !d[key]) problems.push(`no ${key}`);
+  }
+  if (typeof d.currency !== "string") problems.push("no currency (an empty string when the source names none)");
+  if (!Array.isArray(d.sources) || d.sources.length === 0) problems.push("no sources");
+  for (const source of d.sources ?? []) {
+    for (const key of ["name", "url", "licence", "note"] as const) {
+      if (!source[key]) problems.push(`source ${source.name || "?"} has no ${key}`);
+    }
+    if (!(source.rows > 0)) problems.push(`source ${source.name} has no row count`);
+    if (source.kind !== "file" && source.kind !== "database") problems.push(`source ${source.name} is a ${source.kind}`);
+  }
+  if (!Array.isArray(d.blocks) || d.blocks.length === 0) problems.push("no blocks");
+  for (const block of d.blocks ?? []) {
+    const name = block.title || "an untitled block";
+    if (!["text", "chart", "metric"].includes(block.kind)) problems.push(`${name}: kind ${block.kind}`);
+    if (block.kind === "text" && !block.text_body) problems.push(`${name}: a note with no text`);
+    if (block.kind !== "text" && !Array.isArray(block.figure?.data)) problems.push(`${name}: no figure`);
+    const inside = block.x >= 0 && block.y >= 0 && block.w >= 1 && block.h >= 1 && block.x + block.w <= COLUMNS;
+    if (!inside) problems.push(`${name}: outside the 12-column grid`);
+  }
+  if (!d.build) {
+    problems.push("no build record");
+  } else {
+    const drawn = (d.blocks ?? []).filter((block) => block.kind !== "text").length;
+    if (d.build.charts_drawn !== drawn) {
+      problems.push(`build says ${d.build.charts_drawn} charts drawn; the file holds ${drawn}`);
+    }
+    if (!(d.build.prompts_tried >= 1)) problems.push("build.prompts_tried is under 1");
+  }
+  if (!d.model?.label) problems.push("no model label");
+  return problems;
+}
+```
+
+- [ ] **Step 4: Run the tests**
+
+Run: `cd site && npm test`
+Expected: all pass, including the three real dashboard files from Task 6.
+
+- [ ] **Step 5: Plotly, loaded once.** `site/components/plotly.ts`:
+
+```ts
+/* Plotly, imported once, when the first chart comes near the screen: it is the
+   largest thing on the page, and a visitor reads the top first. */
+export type PlotlyApi = {
+  react: (el: HTMLElement, data: unknown[], layout: unknown, config: unknown) => Promise<unknown>;
+  Plots: { resize: (el: HTMLElement) => void };
+  purge: (el: HTMLElement) => void;
+};
+
+let loading: Promise<PlotlyApi> | null = null;
+
+export function loadPlotly(): Promise<PlotlyApi> {
+  loading ??= import("plotly.js-dist-min").then((mod) => (mod.default ?? mod) as unknown as PlotlyApi);
+  return loading;
+}
+```
+
+- [ ] **Step 6: The figures, as separate chunks.** `site/components/dashboard-data.ts`:
+
+```ts
+import type { Dashboard } from "@/lib/dashboard";
+
+/* Each dashboard file becomes its own chunk, fetched when one of its charts
+   first nears the screen, so the figures stay out of the page's first load.
+   The cards themselves are in the HTML from the build. */
+export const DASHBOARD_DATA: Record<string, () => Promise<Dashboard>> = {
+  airbnb: () => import("@/data/dashboards/airbnb.json").then((mod) => mod.default as unknown as Dashboard),
+  spotify: () => import("@/data/dashboards/spotify.json").then((mod) => mod.default as unknown as Dashboard),
+  netflix: () => import("@/data/dashboards/netflix.json").then((mod) => mod.default as unknown as Dashboard),
+};
+```
+
+- [ ] **Step 7: One chart.** `site/components/lazy-chart.tsx`:
+
+```tsx
+"use client";
+
+import { useEffect, useRef, useState } from "react";
+import { DASHBOARD_DATA } from "@/components/dashboard-data";
+import { loadPlotly } from "@/components/plotly";
+import { themed } from "@/lib/plot-theme";
+
+type View = { phase: "waiting" } | { phase: "drawn" } | { phase: "failed"; message: string };
+
+/* One chart of a dashboard, drawn with the app's re-theme, with hover on and
+   zoom and the mode bar off. Until it is drawn, its card shows an empty frame
+   of the right size, never an image standing in for the chart. */
+export function LazyChart({
+  dashboard,
+  index,
+  currency,
+  indicator,
+}: {
+  dashboard: string;
+  index: number;
+  currency: string;
+  indicator: boolean;
+}) {
+  const host = useRef<HTMLDivElement | null>(null);
+  const [view, setView] = useState<View>({ phase: "waiting" });
+
+  useEffect(() => {
+    const node = host.current;
+    if (!node) return;
+    let cancelled = false;
+    let sizes: ResizeObserver | null = null;
+
+    const draw = async () => {
+      const loaded = await Promise.all([loadPlotly(), DASHBOARD_DATA[dashboard]()]).catch(() => null);
+      if (cancelled) return;
+      if (!loaded) {
+        setView({ phase: "failed", message: "Charts could not load" });
+        return;
+      }
+      const [Plotly, data] = loaded;
+      const figure = data.blocks[index]?.figure;
+      if (!figure) {
+        setView({ phase: "failed", message: "This chart could not be drawn" });
+        return;
+      }
+      const { data: traces, layout } = themed(figure, currency);
+      const still = {
+        ...layout,
+        dragmode: false,
+        xaxis: { ...((layout.xaxis as Record<string, unknown>) ?? {}), fixedrange: true },
+        yaxis: { ...((layout.yaxis as Record<string, unknown>) ?? {}), fixedrange: true },
+      };
+      const drawn = await Plotly.react(node, traces, still, {
+        displayModeBar: false,
+        responsive: true,
+        scrollZoom: false,
+        doubleClick: false,
+      }).then(
+        () => true,
+        () => false,
+      );
+      if (cancelled) return;
+      if (!drawn) {
+        setView({ phase: "failed", message: "This chart could not be drawn" });
+        return;
+      }
+      setView({ phase: "drawn" });
+      sizes = new ResizeObserver(() => Plotly.Plots.resize(node));
+      sizes.observe(node);
+    };
+
+    const seen = new IntersectionObserver(
+      ([entry]) => {
+        if (!entry?.isIntersecting) return;
+        seen.disconnect();
+        void draw();
+      },
+      { rootMargin: "600px 0px" },
+    );
+    seen.observe(node);
+
+    return () => {
+      cancelled = true;
+      seen.disconnect();
+      sizes?.disconnect();
+      loadPlotly()
+        .then((Plotly) => Plotly.purge(node))
+        .catch(() => {});
+    };
+  }, [dashboard, index, currency]);
+
+  return (
+    <div className="relative size-full">
+      <div ref={host} className={`size-full ${indicator ? "[&_.cartesianlayer]:hidden" : ""}`} />
+      {view.phase === "waiting" ? (
+        <div className="absolute inset-0 rounded-[var(--r-card)] bg-sunken/50" aria-hidden />
+      ) : null}
+      {view.phase === "failed" ? (
+        <p className="absolute inset-0 grid place-items-center p-4 text-center text-[13px] text-muted">
+          {view.message}
+        </p>
+      ) : null}
+    </div>
+  );
+}
+```
+
+- [ ] **Step 8: A card, as the app's View mode draws it.** `site/components/dashboard-card.tsx`:
+
+```tsx
+"use client";
+
+import { useState, type ReactNode } from "react";
+import { CodeIcon } from "@/components/icons";
+
+/* A block as the app's View mode draws it (BlockFrame in report-canvas.tsx):
+   the title, the chart or note, and the button that shows the code the model
+   wrote. As in the app, showing the code replaces the chart until it is hidden. */
+export function DashboardCard({ title, code, children }: { title: string; code: string | null; children: ReactNode }) {
+  const [showCode, setShowCode] = useState(false);
+  const label = showCode ? "Hide the code" : "Show the code that drew this";
+
+  return (
+    <section
+      aria-label={title}
+      className="flex h-full flex-col overflow-hidden rounded-[var(--r-panel)] bg-surface shadow-[var(--lift-1)]"
+    >
+      <header className="flex items-start gap-2 px-5 pt-4">
+        <h3 className="min-w-0 flex-1 truncate font-display text-[15px] font-semibold leading-tight text-ink" title={title}>
+          {title}
+        </h3>
+        {code ? (
+          <button
+            type="button"
+            onClick={() => setShowCode((shown) => !shown)}
+            aria-pressed={showCode}
+            aria-label={label}
+            title={label}
+            className={`grid size-8 shrink-0 place-items-center rounded-[var(--r-control)] transition-colors ${
+              showCode ? "bg-pine-wash text-pine" : "text-muted hover:bg-sunken hover:text-ink"
+            }`}
+          >
+            <CodeIcon />
+          </button>
+        ) : null}
+      </header>
+      <div className="min-h-0 flex-1 px-3 pb-3 pt-2">
+        {showCode && code ? (
+          <pre className="size-full overflow-auto rounded-[var(--r-card)] bg-inverse p-4 font-mono text-[11.5px] leading-relaxed text-on-dark">
+            <code>{code}</code>
+          </pre>
+        ) : (
+          children
+        )}
+      </div>
+    </section>
+  );
+}
+```
+
+- [ ] **Step 9: A dashboard, its prompt and its provenance.** `site/components/dashboard-view.tsx`:
+
+```tsx
+import type { CSSProperties } from "react";
+import { DashboardCard } from "@/components/dashboard-card";
+import { LazyChart } from "@/components/lazy-chart";
+import { blockHeight, gridPlacement, isIndicator, type Dashboard } from "@/lib/dashboard";
+import { toHtml } from "@/lib/rich-text";
+
+/* The saved 12-column grid at the canvas's row height and gap. Under 768 px it
+   is one column in the saved order, each chart at full width and its saved
+   height; notes take the height their text needs. */
+export function DashboardView({ dashboard }: { dashboard: Dashboard }) {
+  return (
+    <div>
+      <div className="flex flex-col gap-4 md:grid md:auto-rows-[44px] md:grid-cols-12">
+        {dashboard.blocks.map((block, index) => (
+          <div
+            key={`${block.y}-${block.x}`}
+            style={{ ...gridPlacement(block), "--block-h": `${blockHeight(block.h)}px` } as CSSProperties}
+            className={block.kind === "text" ? "md:h-auto" : "h-[var(--block-h)] md:h-auto"}
+          >
+            <DashboardCard title={block.title} code={block.code}>
+              {block.kind === "text" ? (
+                <div
+                  className="rich-text size-full overflow-auto px-2 py-1 text-sm leading-relaxed text-body"
+                  // Sanitised by the app's own sanitiser (lib/rich-text.ts), as the app does on render.
+                  dangerouslySetInnerHTML={{ __html: toHtml(block.text_body) }}
+                />
+              ) : (
+                <LazyChart
+                  dashboard={dashboard.name}
+                  index={index}
+                  currency={dashboard.currency}
+                  indicator={isIndicator(block)}
+                />
+              )}
+            </DashboardCard>
+          </div>
+        ))}
+      </div>
+      <PromptBox dashboard={dashboard} />
+      <Provenance dashboard={dashboard} />
+    </div>
+  );
+}
+
+/* The prompt, frozen below its dashboard: the app's brief box, read-only. It
+   stays in view while you scroll through the dashboard it built. */
+function PromptBox({ dashboard }: { dashboard: Dashboard }) {
+  const { build } = dashboard;
+  const rephrased = build.prompts_tried - 1;
+  return (
+    <div className="sticky bottom-4 z-10 mt-6">
+      <div className="mx-auto max-w-3xl rounded-[var(--r-panel)] bg-surface p-3 shadow-[var(--lift-2)]">
+        <p className="px-1 text-[13px] font-semibold text-ink">What should this dashboard be about?</p>
+        <p className="mt-1.5 rounded-[var(--r-control)] px-3.5 py-3 text-sm text-ink ring-1 ring-inset ring-hairline">
+          {dashboard.prompt}
+        </p>
+        <p className="mt-2 px-1 text-[12px] text-muted tabular">
+          Sent as typed · {build.charts_drawn} of {build.charts_planned} charts drawn · {Math.round(build.seconds)} s on
+          a Mac
+          {rephrased > 0 ? ` · after ${rephrased} rephrasing${rephrased > 1 ? "s" : ""}` : ""}
+        </p>
+      </div>
+    </div>
+  );
+}
+
+function Provenance({ dashboard }: { dashboard: Dashboard }) {
+  const notes = [...new Set(dashboard.sources.map((source) => source.note))].join(" ");
+  const skipped = dashboard.build.skipped;
+  const link = "underline decoration-hairline-strong underline-offset-2 hover:text-ink";
+  return (
+    <div className="mt-4 space-y-1 px-1 text-[12.5px] leading-relaxed text-muted">
+      <p>
+        Data:{" "}
+        {dashboard.sources.map((source, i) => (
+          <span key={source.name}>
+            {i > 0 ? "; " : ""}
+            <a href={source.url} className={link}>
+              {source.name}
+            </a>{" "}
+            ({source.rows.toLocaleString("en-US")} rows,{" "}
+            {source.licence_url ? (
+              <a href={source.licence_url} className={link}>
+                {source.licence}
+              </a>
+            ) : (
+              source.licence
+            )}
+            )
+          </span>
+        ))}
+        . {notes}
+      </p>
+      <p>
+        Drawn by {dashboard.model.label}, unedited, on {dashboard.generated_at.slice(0, 10)}.
+        {skipped.length
+          ? ` ${skipped.length} planned chart${skipped.length > 1 ? "s" : ""} could not be drawn: ${skipped
+              .map((item) => item.label)
+              .join(", ")}.`
+          : ""}
+      </p>
+    </div>
+  );
+}
+```
+
+- [ ] **Step 10: Tabs.** `site/components/dashboard-tabs.tsx`:
+
+```tsx
+"use client";
+
+import { useRef, useState, type KeyboardEvent, type ReactNode } from "react";
+
+export type Tab = { id: string; label: string; detail: string };
+
+/* One dashboard at a time. The hidden ones stay in the page's HTML, and their
+   charts load the first time their tab opens. Arrow keys move between tabs. */
+export function DashboardTabs({ tabs, children }: { tabs: Tab[]; children: ReactNode[] }) {
+  const [active, setActive] = useState(0);
+  const buttons = useRef<(HTMLButtonElement | null)[]>([]);
+
+  function onKeyDown(event: KeyboardEvent) {
+    const step = event.key === "ArrowRight" ? 1 : event.key === "ArrowLeft" ? -1 : 0;
+    if (!step) return;
+    event.preventDefault();
+    const next = (active + step + tabs.length) % tabs.length;
+    setActive(next);
+    buttons.current[next]?.focus();
+  }
+
+  return (
+    <div>
+      <div
+        role="tablist"
+        aria-label="Dashboards"
+        onKeyDown={onKeyDown}
+        className="inline-flex max-w-full gap-1 overflow-x-auto rounded-[var(--r-pill)] bg-sunken p-1"
+      >
+        {tabs.map((tab, index) => (
+          <button
+            key={tab.id}
+            ref={(node) => {
+              buttons.current[index] = node;
+            }}
+            type="button"
+            role="tab"
+            id={`tab-${tab.id}`}
+            aria-controls={`panel-${tab.id}`}
+            aria-selected={index === active}
+            tabIndex={index === active ? 0 : -1}
+            onClick={() => setActive(index)}
+            className={`whitespace-nowrap rounded-[var(--r-pill)] px-4 py-2 text-[13.5px] font-semibold transition-colors ${
+              index === active ? "bg-surface text-ink shadow-[var(--lift-1)]" : "text-muted hover:text-ink"
+            }`}
+          >
+            {tab.label} <span className="font-normal text-muted">· {tab.detail}</span>
+          </button>
+        ))}
+      </div>
+      {children.map((child, index) => (
+        <div
+          key={tabs[index].id}
+          role="tabpanel"
+          id={`panel-${tabs[index].id}`}
+          aria-labelledby={`tab-${tabs[index].id}`}
+          hidden={index !== active}
+          className="mt-6"
+        >
+          {child}
+        </div>
+      ))}
+    </div>
+  );
+}
+```
+
+- [ ] **Step 11: The section.** `site/components/dashboards.tsx`:
+
+```tsx
+import airbnb from "@/data/dashboards/airbnb.json";
+import netflix from "@/data/dashboards/netflix.json";
+import spotify from "@/data/dashboards/spotify.json";
+import { DashboardTabs } from "@/components/dashboard-tabs";
+import { DashboardView } from "@/components/dashboard-view";
+import { sourceKinds, validateDashboard, type Dashboard } from "@/lib/dashboard";
+
+const DASHBOARDS = [airbnb, spotify, netflix] as unknown as Dashboard[];
+
+// A broken file fails the build, as the tests would.
+for (const dashboard of DASHBOARDS) {
+  const problems = validateDashboard(dashboard, new TextEncoder().encode(JSON.stringify(dashboard)).length);
+  if (problems.length) throw new Error(`data/dashboards/${dashboard.name}.json: ${problems.join("; ")}`);
+}
+
+export function Dashboards() {
+  return (
+    <section id="dashboards" className="mx-auto max-w-6xl px-4 py-16 sm:px-8">
+      <h2 className="font-display text-[30px] font-bold leading-tight sm:text-[36px]">Three prompts, three dashboards</h2>
+      <p className="mt-3 max-w-2xl text-[16px] leading-relaxed">
+        Each is the app&apos;s own output, unedited: one prompt typed as a person would, and every chart lora-v2
+        planned and drew from it. The code button on a chart shows what the model wrote.
+      </p>
+      <div className="mt-8">
+        <DashboardTabs tabs={DASHBOARDS.map((d) => ({ id: d.name, label: d.title, detail: sourceKinds(d) }))}>
+          {DASHBOARDS.map((d) => (
+            <DashboardView key={d.name} dashboard={d} />
+          ))}
+        </DashboardTabs>
+      </div>
+    </section>
+  );
+}
+```
+
+- [ ] **Step 12: Put it on the page.** `site/app/page.tsx`:
+
+```tsx
+import { Dashboards } from "@/components/dashboards";
+import { Hero } from "@/components/hero";
+
+export default function Home() {
+  return (
+    <main>
+      <Hero />
+      <Dashboards />
+    </main>
+  );
+}
+```
+
+- [ ] **Step 13: Lint, test and build**
+
+Run: `cd site && npm run lint && npm test && npm run build`
+Expected: no lint errors; all tests pass; the build exports `/`. In `out/_next/static/chunks/`, the dashboards' figures and Plotly are separate chunks, not in the page's first chunk. Check with `ls -S out/_next/static/chunks | head`.
+
+- [ ] **Step 14 (controller): Look at it** with `preview_start` (name `site`):
+  - Plotly is requested only as the dashboards section comes near: check with `read_network_requests`.
+  - In each tab, every chart draws. Hover shows values; dragging does not zoom; there is no mode bar.
+  - KPI blocks read as the app's stat cards. The code button shows the model's code.
+  - The prompt box stays in view while scrolling through a dashboard.
+  - Compare one dashboard with the same report in the app's View mode (account `showcase@example.com`): same charts, colours and number formats.
+  - With the `mobile` preset: one column, nothing scrolls sideways. Reset the viewport to `desktop` afterwards.
+
+- [ ] **Step 15: Commit**
+
+```bash
+git add site/lib/dashboard.ts site/components site/app/page.tsx site/tests/dashboard.test.mts
+git commit -m "feat(site): the three dashboards, live, in the app's View mode
+
+The build writes each card's title, frame and note into the HTML; the
+figure and Plotly load when the card nears the screen, drawn with the
+app's re-theme, hover on and zoom off. The prompt sits below its dashboard,
+frozen, with what the build drew and how long it took. A broken file fails
+the build and the tests.
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>"
+```
+
+---
