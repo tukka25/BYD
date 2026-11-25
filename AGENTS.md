@@ -158,6 +158,13 @@
 - The panel's pie thumbnail spills its labels past the 96x64 box.
 - Gotcha that cost real time: after `make up` rebuilt the web image, every page answered 500 with Turbopack's `next/font/google queries have exactly one entry` (`Can't resolve '@vercel/turbopack-next/internal/font/google/font'`) for JetBrains Mono; the fresh container's first font fetch probably cached a `fonts.gstatic.com/l/font?kit=...&skey=...` URL that Turbopack cannot parse (not reproducible from the host, where Google served the usual `/s/` URLs). `layout.tsx` was not the cause. Fix: `docker exec promptdash-web rm -rf /app/.next/dev` then `docker compose restart web`.
 
+## Landing page (`site/`)
+- A static Next.js export (`output: "export"`), deployed by Vercel with root directory `site`; `site/vercel.json` skips commits that do not touch `site/`. Previews only until the repository is public (part 2).
+- Every number is in `site/data/stats.json` with its source (a JSON path, an exact quote or a sum), and `npm test` in `site/` reads each one back. Editing a quoted line in a README or here breaks that test on purpose.
+- `site/lib/{dot-shapes,dot-draw,plot-theme,rich-text}.ts` are byte-identical copies of byd-web's. Change byd-web's, then run `npm run sync-lib`.
+- The three dashboards are the app's own output: `backend/scripts/fetch_showcase_data.py` downloads the files into the gitignored `backend/uploads/showcase/`, then `SHOWCASE_PASSWORD=... make showcase NAME=airbnb|shop|netflix` builds each one through the API. Charts are never edited; a dashboard that falls short is rebuilt from a rephrased prompt.
+- `site/data/journey.json` cites commit hashes. A history rewrite changes them, and its test says so.
+
 ## Fine-tune facts that change decisions (`chartist-finetune/`)
 - lora-v1's recorded 91.3% render / 81.0% right shape (`cloud/eval_report.json`) is a lower bound. 16 of its 25 recorded failures are a `pyarrow` import crash in the eval pod (`pyarrow._fs._init_ca_paths` -> `ssl.py`), all in the treemap/funnel/waterfall bucket — an environment failure, not a model error. Re-measure locally before spending money on that bucket. Re-scored locally with a working pyarrow (`data/ab_planner_hint.json`), lora-v1 renders 86% of that bucket.
 - The 7.7% base figure is with thinking ON. Against the base model with thinking OFF, on the same 118 questions: renders 62.7% vs lora-v1 91.5%, right kind of chart 23.7% vs 68.6% (lora-v1 better on 54, worse on 1). Most of "7.7% -> 91.3%" is the reasoning essay, not the fine-tune; what the fine-tune bought is choosing the right chart, and that knowledge also lifts the planner (58.5% -> 80.5%).
