@@ -1408,6 +1408,160 @@ Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>"
 ```
 
 ---
+### Task 6b: The re-theme owns the currency (added 2026-11-25, the owner's choice)
+
+Found while showing the three dashboards: the model wrote a `$` prefix into three KPI cards (Airbnb's median nightly price, in pounds; the shop's total revenue and average order, whose data names no currency). Today's re-theme keeps a prefix the model chose, and worse, `figureWords` reads the number's own prefix and suffix, so the model's `$` convinces the app the data is in dollars. The app's rule (AGENTS.md) is "never invent a currency for an unlabelled column": it must hold for the model's marks too. No chart is edited or rebuilt: this is the render layer, in the app and (through Task 7's copy) the landing page.
+
+**Files:**
+- Modify: `byd-web/lib/plot-theme.ts`
+- Modify: `byd-web/tests/plot-theme.test.mts` (add tests)
+- Modify: `byd-web/DESIGN.md` (one bullet), `AGENTS.md` (one sentence)
+
+**Interfaces:** `themed(figure, defaultCurrency = "")` keeps its signature. Behaviour change only:
+- The data's currency is read from the figure's words without the model's own marks: `figureWords` no longer includes an indicator's `number.prefix` and `number.suffix`.
+- A currency mark the model wrote (an indicator's `number.prefix` or `number.suffix`, d3's `$` flag in `number.valueformat`, an axis `tickprefix`) gives way to the data's currency, or goes when the data names none. Any other prefix or suffix (such as `~` or `+`) is kept.
+
+- [ ] **Step 1: Write the failing tests.** Append to `byd-web/tests/plot-theme.test.mts` (it already has `at`, `bars` and the imports):
+
+```ts
+const priceKpi = (number: Record<string, unknown>, title = "Overall Median Nightly Price") => ({
+  data: [{ type: "indicator", mode: "number", value: 215, number }],
+  layout: { title: { text: title } },
+});
+
+test("a currency the model wrote on a KPI gives way to the data's currency", () => {
+  assert.equal(at(themed(priceKpi({ prefix: "$", valueformat: ",.2f" }), "GBP").data[0], "number", "prefix"), "£");
+});
+
+test("a currency the model wrote is dropped when the data names none", () => {
+  const { data } = themed(priceKpi({ prefix: "$", valueformat: ",.2f" }));
+  assert.equal(at(data[0], "number", "prefix"), undefined);
+  assert.equal(at(data[0], "number", "valueformat"), ",.2f");
+});
+
+test("a currency the data names is kept, whatever the model wrote", () => {
+  assert.equal(at(themed(priceKpi({ prefix: "$" }, "Total MRR (USD)")).data[0], "number", "prefix"), "$");
+  assert.equal(at(themed(priceKpi({ prefix: "€" }, "Total MRR (USD)")).data[0], "number", "prefix"), "$");
+});
+
+test("d3's $ flag in a KPI format is a currency mark too", () => {
+  const plain = themed(priceKpi({ valueformat: "$,.2f" }));
+  assert.equal(at(plain.data[0], "number", "valueformat"), ",.2f");
+  assert.equal(at(plain.data[0], "number", "prefix"), undefined);
+  assert.equal(at(themed(priceKpi({ valueformat: "$,.2f" }), "EUR").data[0], "number", "prefix"), "€");
+});
+
+test("a currency code the model wrote as a suffix goes the same way", () => {
+  const { data } = themed(priceKpi({ suffix: " USD" }), "GBP");
+  assert.equal(at(data[0], "number", "suffix"), undefined);
+  assert.equal(at(data[0], "number", "prefix"), "£");
+});
+
+test("a prefix that is not a currency stays", () => {
+  assert.equal(at(themed(priceKpi({ prefix: "~" })).data[0], "number", "prefix"), "~");
+});
+
+test("a currency tick prefix the model put on an axis gives way to the data's", () => {
+  const figure = { data: [bars(3)], layout: { yaxis: { title: { text: "Revenue" }, tickprefix: "$" } } };
+  assert.equal(at(themed(figure).layout, "yaxis", "tickprefix"), undefined);
+  assert.equal(at(themed(figure, "GBP").layout, "yaxis", "tickprefix"), "£");
+});
+```
+
+- [ ] **Step 2: Run them and watch them fail**
+
+Run: `cd byd-web && npm test`
+Expected: the new tests fail (for example the first gets `"$"` where it expects `"£"`); the earlier 22 pass.
+
+- [ ] **Step 3: Implement in `byd-web/lib/plot-theme.ts`.**
+
+  1. In `figureWords`, delete these two lines (they read the model's own marks as if they were the data's words):
+
+  ```ts
+      const number = raw.number as Record<string, unknown> | undefined;
+      if (number) parts.push(String(number.prefix ?? ""), String(number.suffix ?? ""));
+  ```
+
+  2. After the `CURRENCIES` list, add:
+
+  ```ts
+  /* A currency mark the model wrote itself ("$", "£", "USD ") says what the
+     model guessed, not what the data says: Edinburgh prices in pounds once came
+     back as "$215.00", and a shop whose data names no currency as dollars. The
+     data's currency (named in a title, an axis or a series, or the default
+     currency) replaces it, and with none it goes. Any other prefix or suffix
+     ("~", "+") is kept. */
+  const CURRENCY_MARK =
+    /^\s*(?:[$€£¥₹₩₺₦]|E£|CA\$|A\$|R\$|MX\$|USD|EUR|GBP|JPY|CNY|RMB|INR|AED|SAR|QAR|KWD|BHD|OMR|JOD|EGP|CHF|CAD|AUD|BRL|KRW|TRY|ZAR|MXN|NGN)\s*$/i;
+
+  function isCurrencyMark(value: unknown): boolean {
+    return typeof value === "string" && CURRENCY_MARK.test(value);
+  }
+  ```
+
+  3. In `themed`, right after the `const layout: Record<string, unknown> = { ... };` statement and before `const data = (figure.data ?? []).map(`, add:
+
+  ```ts
+    // An axis currency the model wrote gives way to the data's (see CURRENCY_MARK).
+    for (const axis of ["xaxis", "yaxis"] as const) {
+      const value = layout[axis] as Record<string, unknown>;
+      if (isCurrencyMark(value.tickprefix)) value.tickprefix = currency || undefined;
+    }
+  ```
+
+  4. In the indicator branch, replace
+
+  ```ts
+      const chosen = String(number.valueformat ?? "");
+      if (!chosen || !D3_FORMAT.test(chosen) || !READABLE_FORMAT.test(chosen)) {
+        number.valueformat = numberFormat(trace.value);
+      }
+      if (currency && !number.prefix && !number.suffix) number.prefix = currency;
+  ```
+
+  with
+
+  ```ts
+      // The model's own currency marks give way to the data's (see CURRENCY_MARK).
+      if (isCurrencyMark(number.prefix)) delete number.prefix;
+      if (isCurrencyMark(number.suffix)) delete number.suffix;
+      // d3's "$" flag prints a dollar sign: a currency mark like the others.
+      const chosen = String(number.valueformat ?? "").replace("$", "");
+      number.valueformat =
+        chosen && D3_FORMAT.test(chosen) && READABLE_FORMAT.test(chosen) ? chosen : numberFormat(trace.value);
+      if (currency && !number.prefix && !number.suffix) number.prefix = currency;
+  ```
+
+  Keep the long comment block above `const chosen` that explains which formats are kept; it still holds.
+
+- [ ] **Step 4: Run the checks**
+
+Run: `cd byd-web && npm test && npm run lint && npx tsc --noEmit && npm run build`
+Expected: all tests pass (22 earlier + 7 new = 29), lint and tsc clean, the build ends with the route table.
+
+- [ ] **Step 5: Docs.**
+  - `byd-web/DESIGN.md`, in the "What we override" list of section 8, after the bullet `- hover label: white, hairline border, ink text`, add: `- a currency mark the model wrote itself (a KPI prefix or suffix, d3's \`$\` flag, an axis tick prefix) gives way to the data's currency, and goes when the data names none`
+  - `AGENTS.md`, at the end of the bullet that starts `Number formatting is a RENDER-layer job`, add: ` A currency mark the model writes itself (a KPI prefix or suffix, d3's \`$\` flag, an axis tick prefix) gives way to the data's currency, or goes when the data names none: on 2026-11-25 it wrote \`$\` for Edinburgh prices in pounds and for a shop whose data names no currency.`
+
+- [ ] **Step 6: Commit**
+
+```bash
+git add byd-web/lib/plot-theme.ts byd-web/tests/plot-theme.test.mts byd-web/DESIGN.md AGENTS.md
+git commit -m "fix(web): a currency the model writes gives way to the data's, or goes
+
+The model wrote \$ on three KPI cards: Edinburgh prices in pounds, and a
+shop whose data names no currency. The re-theme kept it, and read it back
+as the data's own currency. Now only the data's words decide the currency;
+a mark the model wrote (KPI prefix or suffix, d3's \$ flag, an axis tick
+prefix) takes the data's currency or goes. Other prefixes stay.
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>"
+```
+
+- [ ] **Step 7 (controller): Live check.** The Bounce-rate report's fingerprint (ledger) stays the same for charts with no currency mark; the showcase Airbnb KPI shows the machine's default currency instead of `$`.
+
+---
+
 ### Task 7: Scaffold `site/` with the four byte-identical copies
 
 A separate Next.js app with byd-web's versions, configs, fonts and tokens. It builds as a static export. A test fails when a `lib/` copy differs from its byd-web original.
