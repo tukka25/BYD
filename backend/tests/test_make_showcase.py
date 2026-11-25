@@ -8,6 +8,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 from make_showcase import (  # noqa: E402
     SHOWCASES,
     export_block,
+    finished,
     model_record,
     multipart,
     parse_sse,
@@ -95,3 +96,10 @@ def test_a_dashboard_over_the_limit_is_refused_naming_its_largest_block(tmp_path
 
 def test_every_prompt_fits_the_brief_field():
     assert all(len(config["prompt"]) <= 400 for config in SHOWCASES.values())
+
+
+def test_a_build_is_finished_only_when_done_arrived():
+    events = list(parse_sse(STREAM))
+    assert finished(events)
+    assert not finished(events[:-1])
+    assert not finished([])

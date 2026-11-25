@@ -250,6 +250,11 @@ def build(api: str, token: str, report_id: str, prompt: str) -> tuple[list[tuple
     return events, round(time.monotonic() - started, 1)
 
 
+def finished(events: list[tuple[str, dict]]) -> bool:
+    """True only when the stream ended with its done event."""
+    return bool(events) and events[-1][0] == "done"
+
+
 def app_commit() -> str:
     head = subprocess.run(["git", "rev-parse", "--short", "HEAD"], capture_output=True, text=True, check=True)
     dirty = subprocess.run(["git", "status", "--porcelain", "--", "backend/app"], capture_output=True, text=True,
@@ -261,6 +266,7 @@ def main() -> int:
     parser = argparse.ArgumentParser(description="Build one landing-page dashboard with the running app.")
     parser.add_argument("--name", required=True, choices=sorted(SHOWCASES))
     parser.add_argument("--base", default="http://localhost:8000")
+    parser.add_argument("--model-url", default="http://127.0.0.1:8080", help="where the model server listens")
     parser.add_argument("--prompt", default="", help="a rephrased prompt; the default is the approved one")
     parser.add_argument("--tries", type=int, default=1, help="prompts tried for this dashboard, counting this one")
     parser.add_argument("--out", default="site/data/dashboards")
@@ -277,10 +283,20 @@ def main() -> int:
     base = args.base.rstrip("/")
     api = f"{base}/api/v1"
 
-    health = call("GET", f"{base}/health")
+    try:
+        health = call("GET", f"{base}/health", timeout=10)
+    except (OSError, RuntimeError) as exc:
+        print(f"the app does not answer at {base}: make up ({exc})", file=sys.stderr)
+        return 2
     model = served_model(subprocess.run(["ps", "-axo", "command"], capture_output=True, text=True, check=True).stdout)
     if model is None:
         print("the model server is not running: make serve-model", file=sys.stderr)
+        return 2
+    model_url = args.model_url.rstrip("/")
+    try:
+        call("GET", f"{model_url}/v1/models", timeout=10)
+    except (OSError, RuntimeError, ValueError) as exc:
+        print(f"the model server does not answer at {model_url}: make serve-model ({exc})", file=sys.stderr)
         return 2
     print(f"api: {health.get('llm_backend')}; model server: {model['base']} + {model['adapter']}", file=sys.stderr)
 
@@ -292,6 +308,8 @@ def main() -> int:
     events, seconds = build(api, token, report["id"], prompt)
     if events and events[-1][0] == "error":
         raise RuntimeError(f"the build failed: {events[-1][1]}")
+    if not finished(events):
+        raise RuntimeError("the stream ended before done; nothing was written")
     record = summarize_build(events)
     saved = call("GET", f"{api}/dashboard/{report['id']}/blocks", token=token)
     blocks = sorted((export_block(block) for block in saved), key=lambda block: (block["y"], block["x"]))
