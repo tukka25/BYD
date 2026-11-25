@@ -624,6 +624,7 @@ from pathlib import Path
 
 import pandas as pd
 import pytest
+from openpyxl import load_workbook
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 from fetch_showcase_data import airbnb_urls, entry, excel_from_csv  # noqa: E402
@@ -655,9 +656,11 @@ def test_the_excel_copy_keeps_every_value(tmp_path):
     back = pd.read_excel(tmp_path / "listings.xlsx")
     assert rows == 2
     # Excel stores numbers as doubles, exact only up to 2**53, so a 19-digit id
-    # goes in as text and comes back digit for digit.
+    # is stored as a text cell, and pandas reads every digit back.
     assert as_text == ["id"]
-    assert back["id"].tolist() == ["1234567890123456789", "42"]
+    sheet = load_workbook(tmp_path / "listings.xlsx").active
+    assert [sheet["A2"].value, sheet["A3"].value] == ["1234567890123456789", "42"]
+    assert back["id"].astype(str).tolist() == ["1234567890123456789", "42"]
     assert back["room_type"].tolist() == ["Entire home/apt", "Private room"]
     assert back["price"].iloc[0] == 120.0 and pd.isna(back["price"].iloc[1])
 
