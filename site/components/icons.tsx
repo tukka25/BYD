@@ -11,6 +11,28 @@ export function GitHubMark({ size = 16, ...props }: IconProps) {
   );
 }
 
+/* lucide's arrow-up-right at the app's 2.25 stroke: the corner chip on a
+   dashboard card, which says the picture opens that dashboard's page. */
+export function ArrowUpRightIcon({ size = 16, ...props }: IconProps) {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth={2.25}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+      {...props}
+    >
+      <path d="M7 7h10v10" />
+      <path d="M7 17 17 7" />
+    </svg>
+  );
+}
+
 /* lucide's code-xml, as the app's "Show the code that drew this" button draws it. */
 export function CodeIcon({ size = 15, ...props }: IconProps) {
   return (

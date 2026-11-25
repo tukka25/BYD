@@ -16,14 +16,18 @@ import { toHtml } from "@/lib/rich-text";
 
 /* The saved 12-column grid at the canvas's row height and gap. Under 768 px it
    is one column in the saved order, each chart at full width and its saved
-   height; notes take the height their text needs. */
+   height; notes take the height their text needs.
+   data-preview-grid and data-block-kind change nothing on screen: they are how
+   scripts/previews.mjs finds the grid and its blocks for the landing page's
+   pictures. */
 export function DashboardView({ dashboard }: { dashboard: Dashboard }) {
   return (
     <div>
-      <div className="flex flex-col gap-4 md:grid md:auto-rows-[44px] md:grid-cols-12">
+      <div data-preview-grid="" className="flex flex-col gap-4 md:grid md:auto-rows-[44px] md:grid-cols-12">
         {dashboard.blocks.map((block, index) => (
           <div
             key={`${block.y}-${block.x}`}
+            data-block-kind={block.kind}
             style={{ ...gridPlacement(block), "--block-h": `${blockHeight(block.h)}px` } as CSSProperties}
             className={block.kind === "text" ? "md:h-auto" : "h-[var(--block-h)] md:h-auto"}
           >

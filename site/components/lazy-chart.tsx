@@ -94,8 +94,11 @@ export function LazyChart({
     };
   }, [dashboard, index, currency]);
 
+  // data-chart (waiting, drawn or failed) changes nothing on screen:
+  // scripts/previews.mjs reads it to take its pictures only once every chart
+  // is drawn and unveiled, and to stop on a chart that failed.
   return (
-    <div className="relative size-full">
+    <div data-chart={view.phase} className="relative size-full">
       <div ref={host} className={`size-full ${indicator ? "[&_.cartesianlayer]:hidden" : ""}`} />
       {view.phase === "waiting" ? (
         <div className="absolute inset-0 rounded-[var(--r-card)] bg-sunken/50" aria-hidden />

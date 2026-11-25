@@ -1,0 +1,25 @@
+{
+  "made_by": "scripts/previews.mjs",
+  "viewport_width": 960,
+  "crop": "the dashboard grid's full width, from the top of its first chart (notes and KPI tiles are skipped), at 4:5 (height = width × 5/4) or to the grid's bottom if that comes first, scaled to 640 px wide",
+  "dashboards": {
+    "airbnb": {
+      "file": "/previews/airbnb.webp",
+      "width": 640,
+      "height": 800,
+      "sha256": "ccf8f65cfb61a2916024b3ad07333445eeb75b8f9f943b1f8bedf60bfafb44f7"
+    },
+    "netflix": {
+      "file": "/previews/netflix.webp",
+      "width": 640,
+      "height": 800,
+      "sha256": "8afaf25e2d63b1c136aaba5564f618698ec8efbed572ea554685f471f2ecb5b6"
+    },
+    "shop": {
+      "file": "/previews/shop.webp",
+      "width": 640,
+      "height": 800,
+      "sha256": "c46667260c8dd02171734e168f267b46aad09a3f1ec9dbfe4e6831948789376e"
+    }
+  }
+}

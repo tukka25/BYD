@@ -8,6 +8,7 @@
   "scripts": {
     "dev": "next dev --port 3100",
     "build": "next build",
+    "previews": "node scripts/previews.mjs",
     "lint": "eslint",
     "test": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --test tests/*.test.mts",
     "sync-lib": "cp ../byd-web/lib/dot-shapes.ts ../byd-web/lib/dot-draw.ts ../byd-web/lib/plot-theme.ts ../byd-web/lib/rich-text.ts lib/"
