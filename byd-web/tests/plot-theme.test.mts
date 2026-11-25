@@ -59,9 +59,24 @@ test("bar labels from 1,000 up keep five significant figures with an SI suffix",
 
 test("bar labels under 1,000 read as numbers with at most two decimals, never SI", () => {
   assert.equal(labelOf([50.667, 120.5]), "%{y:,.2~f}");
-  assert.equal(labelOf([0.49, 0.51]), "%{y:,.2~f}");
+  assert.equal(labelOf([1, 2.5]), "%{y:,.2~f}");
   assert.equal(labelOf([-999, 5]), "%{y:,.2~f}");
   assert.equal(labelOf([-1500, 5]), "%{y:.5~s}");
+});
+
+test("bar labels of values under 1 keep two significant figures, so a tiny rate is not zero", () => {
+  assert.equal(labelOf([0.49, 0.51]), "%{y:.2~r}");
+  assert.equal(labelOf([0.6867, 0.2]), "%{y:.2~r}");
+  assert.equal(labelOf([0.004, 0.003]), "%{y:.2~r}");
+});
+
+test("horizontal bars choose the format from x, and a null is ignored", () => {
+  const h = (x: (number | null)[]) =>
+    at(themed({ data: [{ type: "bar", orientation: "h", y: x.map((_, i) => `c${i}`), x }] }).data[0], "texttemplate");
+  assert.equal(h([0.004, 0.003]), "%{x:.2~r}");
+  assert.equal(h([50.667, 120.5]), "%{x:,.2~f}");
+  assert.equal(h([35800, 5]), "%{x:.5~s}");
+  assert.equal(labelOf([null as unknown as number, 2]), "%{y:,.2~f}");
 });
 
 test("the label format keeps the currency prefix, and the model's own text stays", () => {
