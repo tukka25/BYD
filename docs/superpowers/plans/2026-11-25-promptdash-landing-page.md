@@ -1027,10 +1027,10 @@ SHOWCASES: dict[str, dict[str, Any]] = {
         "title": "A demo shop",
         "prompt": "how is my shop doing? revenue by month, which product categories sell best, "
                   "and which customer regions spend the most",
-        "database": {"display_name": "Shop demo", "db_name": "shop", "tables": ["orders", "customers", "products"]},
+        "database": {"display_name": "Shop demo", "db_name": "shop", "tables": ["orders", "customers", "products", "visits"]},
         "source": {"url": "https://github.com/tukka25/BYD/blob/main/backend/scripts/make_relational_demo.py",
                    "licence": "synthetic, made for this project", "licence_url": "",
-                   "note": "Seeded by backend/scripts/make_relational_demo.py; the app joins orders to customers and products."},
+                   "note": "Seeded by backend/scripts/make_relational_demo.py: four tables, joined by their declared keys."},
         "currency": "",
     },
     "netflix": {
