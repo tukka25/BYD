@@ -1,5 +1,4 @@
 import { MeterCard } from "@/components/meter-card";
-import { Num } from "@/components/num";
 import { CAPTION, Lede, MEASURE, Name, Section } from "@/components/section";
 
 const RAN = "Code that ran and drew a chart";
@@ -42,7 +41,7 @@ export function Problem() {
         />
       </div>
       <p className={`mt-3 ${MEASURE} ${CAPTION}`}>
-        Both cards show the base model with no fine-tuning, on the same <Num id="test_questions" /> chart questions.
+        Both cards show the base model with no fine-tuning, scored on the same chart questions.
       </p>
       <div className="mt-8">
         <Lede>

@@ -62,8 +62,8 @@ export function DataPipeline() {
       <div className="space-y-5">
         <Lede>
           The first training data came from Plotly&apos;s own documentation, a Scrapy crawl of plotly.com/python.
-          Those examples are written for people reading the docs. Almost all of them end by showing the chart on
-          screen, and none prints it as JSON, the only form the app can read.
+          Those examples are written for people reading the docs. Almost all of them show the chart on screen, and
+          none prints it as JSON, the only form the app can read.
         </Lede>
         <Lede>
           I distilled new training data from Claude instead, and kept only what passed the app&apos;s own checks.
